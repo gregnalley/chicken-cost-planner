@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Egg Profit Calculator | Backyard Chicken Egg Income Tool</title>
 
-    <title>Egg Profit Calculator | Backyard Chicken Egg Income & Profit Estimator</title>
-
-    <meta name="description" content="Calculate egg profit from backyard chickens including egg production, feed costs, pricing per dozen, and monthly profit estimates. Free egg income calculator.">
+    <meta name="description" content="Calculate backyard chicken egg profit including feed cost, egg production, and monthly income estimates.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,7 +19,7 @@
         }
 
         .banner {
-            background: linear-gradient(90deg, #FF9800, #F57C00);
+            background: linear-gradient(90deg, #ff9800, #f57c00);
             color: white;
             padding: 25px;
             border-radius: 12px;
@@ -29,50 +28,60 @@
         }
 
         .section {
-            margin-top: 20px;
-            padding: 18px;
-            background: #ffffff;
-            border: 1px solid #e6e6e6;
+            background: white;
+            padding: 20px;
             border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
         }
 
         label {
-            font-weight: bold;
             display: block;
             margin-top: 12px;
+            font-weight: bold;
         }
 
         input {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            font-size: 16px;
-            border: 1px solid #ddd;
             border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
         }
 
         button {
             margin-top: 20px;
-            padding: 12px;
             width: 100%;
-            background: #FF9800;
-            color: white;
+            padding: 12px;
+            background: #ff9800;
             border: none;
+            color: white;
             font-size: 16px;
-            cursor: pointer;
             border-radius: 6px;
+            cursor: pointer;
         }
 
         button:hover {
-            background: #F57C00;
+            background: #f57c00;
         }
 
         .result {
             margin-top: 20px;
             padding: 15px;
             background: #fff;
-            border-radius: 8px;
             border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #2e7d32;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,7 +90,7 @@
 
 <div class="banner">
     <h1>🥚 Egg Profit Calculator</h1>
-    <p>Estimate how much money your backyard chickens can make from egg production</p>
+    <p>Estimate how much your backyard chickens can earn from egg production</p>
 </div>
 
 <div class="section">
@@ -93,9 +102,9 @@
     <input id="eggsPerWeek" type="number" value="5">
 
     <label>Egg Price ($ per dozen):</label>
-    <input id="eggPrice" type="number" value="4.00">
+    <input id="eggPrice" type="number" value="4">
 
-    <label>Feed Cost per Month ($):</label>
+    <label>Monthly Feed Cost ($):</label>
     <input id="feedCost" type="number" value="30">
 
     <label>Other Monthly Costs ($):</label>
@@ -105,6 +114,14 @@
 
     <div class="result" id="result"></div>
 
+</div>
+
+<!-- IMPORTANT NAV LINK BACK -->
+<div class="section">
+    <h3>🐔 Back to Feed Calculator</h3>
+    <p>Go back to estimate feed costs and flock expenses.</p>
+
+    <a href="index.html">← Return to Chicken Feed Cost Calculator</a>
 </div>
 
 <script>
@@ -133,19 +150,7 @@ function calculate() {
     `;
 }
 
-<div class="section">
-    <h2>🐔 Need to Estimate Feed Costs?</h2>
-    <p>
-        Use our main tool to calculate chicken feed costs and overall flock expenses.
-    </p>
-
-    <a href="index.html">
-        👉 Go to Chicken Feed Cost Calculator
-    </a>
-</div>
-
 </script>
 
 </body>
-    
 </html>
