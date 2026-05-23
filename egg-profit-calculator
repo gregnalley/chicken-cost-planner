@@ -133,6 +133,17 @@ function calculate() {
     `;
 }
 
+<div class="section">
+    <h2>🐔 Need to Estimate Feed Costs?</h2>
+    <p>
+        Use our main tool to calculate chicken feed costs and overall flock expenses.
+    </p>
+
+    <a href="index.html">
+        👉 Go to Chicken Feed Cost Calculator
+    </a>
+</div>
+
 </script>
 
 </body>
