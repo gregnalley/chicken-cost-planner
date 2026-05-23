@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Chicken Feed Cost Calculator | Backyard Chicken Cost & Flock Planner</title>
+
+    <meta name="description" content="Estimate the real cost of raising backyard chickens including feed, coop setup, fencing, startup costs, and egg production income. Free chicken cost calculator and planner.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f7f9fb;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            color: #444;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .result {
+            margin-top: 25px;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            line-height: 1.6;
+            border: 1px solid #e6e6e6;
+        }
+
+        .section {
+            margin-top: 20px;
+            padding: 18px;
+            background: #ffffff;
+            border: 1px solid #e6e6e6;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .toggle {
+            cursor: pointer;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* 🌟 HEADER BANNER */
+        .banner {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .banner p {
+            margin: 6px 0 0 0;
+            font-size: 14px;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🌟 BANNER -->
+<div class="banner">
+    <h1>🐔 Chicken Cost Planner</h1>
+    <p>Estimate feed costs, startup expenses, and egg income in seconds</p>
+</div>
+
+<!-- INTRO -->
+<p style="text-align:center;">
+    This tool helps you estimate the true cost of raising backyard chickens including feed, startup costs, coop setup, fencing, and optional egg production income.
+</p>
+
+<!-- ================= CORE INPUTS ================= -->
+
+<div class="section">
+
+    <h2>📊 Core Cost Planner</h2>
+
+    <label>Number of Chickens:</label>
+    <input id="chickens" type="number" placeholder="e.g. 6">
+
+    <label>Feed Store:</label>
+    <select id="store" onchange="updatePrice()">
+        <option value="18.99">Tractor Supply ($18.99)</option>
+        <option value="17.49">Walmart ($17.49)</option>
+        <option value="16.99">Rural King ($16.99)</option>
+        <option value="19.99">Local Feed Store ($19.99)</option>
+        <option value="0">Custom Price</option>
+    </select>
+
+    <label>Feed Price per 50lb bag ($):</label>
+    <input id="bagCost" type="number" value="18.99">
+
+    <label>Chicken Type:</label>
+    <select id="chickenType">
+        <option value="1.0">Layer Hens</option>
+        <option value="1.3">Meat Birds (Broilers)</option>
+        <option value="0.7">Bantams</option>
+        <option value="1.1">Dual Purpose</option>
+    </select>
+
+    <label>Living Conditions:</label>
+    <select id="environment">
+        <option value="1.0">Confined Coop/Run</option>
+        <option value="0.75">Partial Free Range</option>
+        <option value="0.6">Mostly Free Range</option>
+    </select>
+
+    <label>Season:</label>
+    <select id="season">
+        <option value="1.0">Spring / Fall</option>
+        <option value="1.15">Winter</option>
+        <option value="0.95">Summer</option>
+    </select>
+
+</div>
+
+<!-- ================= STARTUP COST ================= -->
+
+<div class="toggle" onclick="toggleSection('startup')">
+    🏗 Show Startup Cost Planner ▼
+</div>
+
+<div id="startup" class="section hidden">
+
+    <label>Coop Type:</label>
+    <select id="coopCost">
+        <option value="0">No Coop Cost Included</option>
+        <option value="150">DIY Coop ($150)</option>
+        <option value="500">Basic Prebuilt Coop ($500)</option>
+        <option value="1200">Premium Coop ($1200)</option>
+    </select>
+
+    <label>Fencing Type:</label>
+    <select id="fenceCost">
+        <option value="0">Free Range (No Fence)</option>
+        <option value="100">Wire Fence ($100)</option>
+        <option value="300">Heavy Wire Fence ($300)</option>
+        <option value="600">Electric Net Fencing ($600)</option>
+    </select>
+
+    <label>Equipment (Feeders, Waterers, Storage):</label>
+    <select id="equipCost">
+        <option value="0">None</option>
+        <option value="75">Basic ($75)</option>
+        <option value="150">Standard ($150)</option>
+        <option value="300">Full Setup ($300)</option>
+    </select>
+
+</div>
+
+<!-- ================= BUSINESS MODE ================= -->
+
+<div class="toggle" onclick="toggleSection('business')">
+    💼 Show Egg Business Mode ▼
+</div>
+
+<div id="business" class="section hidden">
+
+    <label>Egg Production Level:</label>
+    <select id="eggRate">
+        <option value="5">Low (5 eggs/week)</option>
+        <option value="6">Average (6 eggs/week)</option>
+        <option value="7">High (7 eggs/week)</option>
+    </select>
+
+    <label>Egg Value ($ per egg):</label>
+    <input id="eggValue" type="number" value="0.35">
+
+    <label>Packaging Costs:</label>
+    <select id="packagingCost">
+        <option value="0">None</option>
+        <option value="10">Small Scale ($10/month)</option>
+        <option value="25">Medium Scale ($25/month)</option>
+        <option value="50">Regular Selling ($50/month)</option>
+    </select>
+
+</div>
+
+<button onclick="calculate()">Calculate Full Chicken Plan</button>
+
+<div class="result" id="result"></div>
+
+<!-- SEO FOOTER -->
+<div style="margin-top:40px; font-size:14px; color:#666;">
+    <h3>About This Chicken Cost Calculator</h3>
+    <p>
+        This chicken feed cost calculator helps backyard chicken keepers estimate monthly and yearly costs including feed, coop setup, fencing, and egg production value. It is designed for homesteaders, backyard chicken owners, and small flock planners.
+    </p>
+</div>
+
+<script>
+
+const baseFeed = 0.25;
+const bagWeight = 50;
+
+function updatePrice() {
+    let storePrice = document.getElementById("store").value;
+    if (storePrice > 0) {
+        document.getElementById("bagCost").value = storePrice;
+    }
+}
+
+function toggleSection(id) {
+    document.getElementById(id).classList.toggle("hidden");
+}
+
+function calculate() {
+
+    let chickens = parseFloat(document.getElementById("chickens").value);
+    let bagCost = parseFloat(document.getElementById("bagCost").value);
+
+    let chickenType = parseFloat(document.getElementById("chickenType").value);
+    let environment = parseFloat(document.getElementById("environment").value);
+    let season = parseFloat(document.getElementById("season").value);
+
+    let coopCost = parseFloat(document.getElementById("coopCost").value || 0);
+    let fenceCost = parseFloat(document.getElementById("fenceCost").value || 0);
+    let equipCost = parseFloat(document.getElementById("equipCost").value || 0);
+
+    let startupTotal = coopCost + fenceCost + equipCost;
+
+    let businessVisible = !document.getElementById("business").classList.contains("hidden");
+
+    let eggRate = 0;
+    let eggValue = 0;
+    let packagingCost = 0;
+
+    if (businessVisible) {
+        eggRate = parseFloat(document.getElementById("eggRate").value);
+        eggValue = parseFloat(document.getElementById("eggValue").value);
+        packagingCost = parseFloat(document.getElementById("packagingCost").value);
+    }
+
+    if (!chickens || chickens <= 0) {
+        document.getElementById("result").innerHTML = "Enter valid number of chickens.";
+        return;
+    }
+
+    let adjustedFeed = baseFeed * chickenType * environment * season;
+    let dailyFeed = chickens * adjustedFeed;
+
+    let bagDays = bagWeight / dailyFeed;
+    let dailyCost = bagCost / bagDays;
+
+    let monthlyFeedCost = dailyCost * 30;
+    let yearlyFeedCost = dailyCost * 365;
+
+    let eggsPerMonth = chickens * eggRate * 4;
+    let eggRevenue = eggsPerMonth * eggValue;
+
+    let netMonthly = eggRevenue - monthlyFeedCost - packagingCost;
+
+    let costPerDozen = (monthlyFeedCost / (eggsPerMonth / 12)) || 0;
+
+    document.getElementById("result").innerHTML = `
+
+        <div class="highlight">📊 CORE RESULTS</div><br>
+
+        🐔 Feed bag lasts: <b>${bagDays.toFixed(1)} days</b><br>
+        💰 Monthly feed cost: <b>$${monthlyFeedCost.toFixed(2)}</b><br>
+        📆 Yearly feed cost: <b>$${yearlyFeedCost.toFixed(2)}</b><br><br>
+
+        <div class="highlight">🏗 STARTUP COST</div><br>
+        One-time cost: <b>$${startupTotal.toFixed(2)}</b><br><br>
+
+        ${businessVisible ? `
+        <div class="highlight">💼 BUSINESS MODE</div><br>
+
+        🥚 Eggs/month: <b>${eggsPerMonth.toFixed(0)}</b><br>
+        💰 Revenue/month: <b>$${eggRevenue.toFixed(2)}</b><br>
+        📦 Packaging: <b>$${packagingCost.toFixed(2)}</b><br>
+        📦 Cost per dozen eggs: <b>$${costPerDozen.toFixed(2)}</b><br><br>
+
+        <b>Net Monthly:</b>
+        <b style="color:${netMonthly >= 0 ? 'green' : 'red'}">
+            $${netMonthly.toFixed(2)}
+        </b>
+        ` : ``}
+
+    `;
+}
+
+</script>
+
+</body>
+</html>
