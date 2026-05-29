@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title><title>Chicken Coop Cost Calculator | Build, Buy & Estimate Backyard Coop Prices</title></title>
+    <title>Chicken Coop Cost & Size Calculator | Coop and Run Planner</title>
 
     <meta name="description" content="Estimate the cost of building or buying a chicken coop including fencing, equipment, and setup costs for backyard chickens. Free coop cost calculator.">
 
@@ -113,8 +113,6 @@
 
 </div>
 
-<!-- Chicken coop cost estimator tool for backyard chicken setup planning -->
-
 <div class="banner">
     <h1>🏠 Chicken Coop Cost Estimator | Backyard Chicken Coop Build & Startup Cost Calculator</h1>
     <p>Estimate total startup cost for your backyard chicken setup</p>
@@ -183,9 +181,17 @@ function calculate() {
     let total = coop + fence + equipment;
     let perChicken = total / chickens;
 
+    let coopSize = chickens * 4;
+    let runSize = chickens * 10;
+    let nestingBoxes = Math.ceil(chickens / 4);
+
     document.getElementById("result").innerHTML = `
         🏠 Total Startup Cost: $${total.toFixed(2)}<br>
-        🐔 Cost per Chicken: $${perChicken.toFixed(2)}
+        🐔 Cost per Chicken: $${perChicken.toFixed(2)}<br><br>
+
+        📏 Recommended Coop Size: ${coopSize} sq ft<br>
+        🌳 Recommended Outdoor Run Size: ${runSize} sq ft<br>
+        📦 Recommended Nesting Boxes: ${nestingBoxes}
     `;
 }
 
@@ -193,11 +199,24 @@ function calculate() {
 
 <div class="section">
 
-    <h3>Planning Your Chicken Setup</h3>
+    <h3>Chicken Coop and Run Size Guidelines</h3>
 
     <p>
-        Most backyard chicken setups include coop construction, fencing, feeders, waterers, and nesting boxes.
-        Total costs vary widely depending on materials, flock size, and whether you build or buy a pre-made coop.
+        Most backyard chicken owners provide at least 4 square feet of indoor coop space per bird and 8–10 square feet of outdoor run space per bird. Larger runs help reduce overcrowding and improve flock health.
+    </p>
+
+</div>
+
+<div class="section">
+
+    <h3>Chicken Coop Size Calculator FAQs</h3>
+
+    <p>
+        How big should a chicken coop be?<br>
+        How much run space does each chicken need?<br>
+        What is the minimum coop size for backyard chickens?<br>
+        How large should a chicken run be?<br>
+        How many chickens can fit in a coop?
     </p>
 
 </div>
@@ -208,37 +227,12 @@ function calculate() {
 
 <div class="section">
     <h2>🐔 Back to Chicken Flock Planner</h2>
-    <a href="backyard-chicken-flock-planner.html">🐔 Backyard Chicken Flock Planner</a></p>
+    <a href="backyard-chicken-flock-planner.html">🐔 Backyard Chicken Flock Planner</a>
 </div>
 
 <div class="section">
     <h2>🐔 Back to Feed Calculator</h2>
     <a href="index.html">← Return to Chicken Feed Cost Calculator</a>
-</div>
-
-<div class="section">
-    <p>
-        Related searches: chicken feed cost calculator, backyard chicken feed cost, how much does it cost to raise chickens, chicken coop cost, egg profit calculator, backyard chicken egg income.
-    </p>
-</div>
-
-<div class="section">
-    <p>
-        Plan your backyard chicken setup with free tools for feed cost, egg profit, and coop building expenses.
-    </p>
-</div>
-
-<div class="section">
-
-    <h3>Common Questions</h3>
-
-    <p>
-        How much does it cost to build a chicken coop?<br>
-        Is it cheaper to build or buy a chicken coop?<br>
-        What size coop do I need for backyard chickens?<br>
-        How much space do chickens need in a coop?<br>
-    </p>
-
 </div>
 
 </body>
