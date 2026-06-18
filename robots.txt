@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gregnalley.github.io/chicken-cost-planner/sitemap.xml
