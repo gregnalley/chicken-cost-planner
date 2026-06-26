@@ -2,347 +2,1608 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
-    <meta name="google-site-verification" content="GD-53KXSMjePOkqVs1yyylH8yE1g_7iWCzPjvub8A9o" />
+header{
 
-    <title>Chicken Feed Cost Calculator | Backyard Chicken Cost & Flock Planner</title>
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
 
-    <meta name="description" content="Estimate the real cost of raising backyard chickens including feed, coop setup, fencing, startup costs, and egg production income. Free chicken cost calculator and planner.">
+url("images/hero-chickens.jpg");
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+background-size:cover;
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #f7f9fb;
-        }
+background-position:center;
 
-        .banner {
-            background: linear-gradient(90deg, #4CAF50, #2E7D32);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+background-repeat:no-repeat;
 
-        .banner h1 {
-            margin: 0;
-            font-size: 26px;
-        }
+color:white;
 
-        .banner p {
-            margin: 6px 0 0 0;
-            font-size: 14px;
-            color: #f1f1f1;
-        }
+padding:110px 20px;
 
-        h2 {
-            margin-top: 25px;
-        }
+text-align:center;
 
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 12px;
-        }
+box-shadow:0 3px 12px rgba(0,0,0,.25);
 
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-        }
+}
 
-        button {
-            margin-top: 20px;
-            padding: 12px;
-            width: 100%;
-            background: #4CAF50;
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 6px;
-        }
+<meta charset="UTF-8">
 
-        button:hover {
-            background: #45a049;
-        }
+<meta name="google-site-verification"
+content="GD-53KXSMjePOkqVs1yyylH8yE1g_7iWCzPjvub8A9o" />
 
-        .result {
-            margin-top: 25px;
-            padding: 15px;
-            background: #ffffff;
-            border-radius: 8px;
-            border: 1px solid #e6e6e6;
-        }
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        .section {
-            margin-top: 20px;
-            padding: 18px;
-            background: #ffffff;
-            border: 1px solid #e6e6e6;
-            border-radius: 10px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
+<title>
+Backyard Chicken Planner | Free Chicken Calculators, Guides & Planning Tools
+</title>
 
-        .toggle {
-            cursor: pointer;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-top: 20px;
-        }
+<meta name="description"
+content="Free backyard chicken calculators, flock planning tools, chicken breed comparisons, coop cost estimators, feed calculators, and practical guides for raising healthy backyard chickens.">
 
-        .hidden {
-            display: none;
-        }
+<meta name="keywords"
+content="backyard chickens, chicken calculator, chicken feed calculator, chicken coop calculator, coop size calculator, backyard flock planner, chicken breeds, raising chickens">
 
-        .highlight {
-            font-weight: bold;
-            font-size: 18px;
-        }
-    </style>
+<meta name="author"
+content="Greg Nalley">
+
+<meta name="robots"
+content="index,follow,max-image-preview:large">
+
+<link rel="canonical"
+href="https://gregnalley.github.io/chicken-cost-planner/">
+
+<meta property="og:title"
+content="Backyard Chicken Planner">
+
+<meta property="og:description"
+content="Free calculators and planning tools for backyard chicken keepers.">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:url"
+content="https://gregnalley.github.io/chicken-cost-planner/">
+
+<meta property="og:image"
+content="https://gregnalley.github.io/chicken-cost-planner/images/hero-chickens.jpg">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial,Helvetica,sans-serif;
+
+background:#f4f7f1;
+
+color:#333;
+
+line-height:1.7;
+
+}
+
+header{
+
+background:linear-gradient(135deg,#2E7D32,#1B5E20);
+
+color:white;
+
+padding:45px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<!-- BANNER -->
-<div class="banner">
-    <h1>🐔 <h1>Chicken Feed Cost Calculator | Backyard Chicken Feed & Monthly Cost Estimator</h1></h1>
-    <p>Estimate feed costs, startup expenses, and egg income in seconds</p>
-</div>
+<header>
 
-<!-- INTRO -->
-<p style="text-align:center;">
-    This tool helps you estimate the true cost of raising backyard chickens including feed, startup costs, coop setup, fencing, and optional egg production income.
+<h1>
+
+🐔 Backyard Chicken Planner
+
+</h1>
+
+<h2 style="margin-top:20px;font-size:30px;font-weight:normal;">
+
+Plan Your Perfect Backyard Flock
+
+</h2>
+
+<p>
+
+Free calculators, practical planning tools, and detailed guides to help you choose the right chicken breeds, estimate feed costs, design your coop, and confidently build a healthy backyard flock.
+
 </p>
 
-<!-- 🔥 STEP 10 INTENT LINE -->
-<p style="text-align:center; font-weight:bold; color:#333;">
-    Instantly calculate chicken feed costs, monthly expenses, startup setup costs, and egg production value for your backyard flock.
+<div style="margin-top:40px;">
+
+<a class="button"
+
+href="#feed-calculator">
+
+Start Planning →
+
+</a>
+
+<a class="button"
+
+style="background:white;color:#1B5E20;margin-left:15px;"
+
+href="tools.html">
+
+Browse All Tools
+
+</a>
+
+</div>
+
+<div style="margin-top:50px;
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+font-size:18px;">
+
+<div>
+
+<strong>6+</strong><br>
+
+Free Planning Tools
+
+</div>
+
+<div>
+
+<strong>2</strong><br>
+
+In-Depth Guides
+
+</div>
+
+<div>
+
+<strong>100%</strong><br>
+
+Free to Use
+
+</div>
+
+<div>
+
+<strong>Growing</strong><br>
+
+Every Month
+
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="tools.html">All Tools</a>
+
+<a href="chicken-coop-estimator.html">Coop Cost</a>
+
+<a href="backyard-chicken-flock-planner.html">Flock Planner</a>
+
+<a href="best-chicken-breeds-for-eggs.html">Best Egg Breeds</a>
+
+<a href="chicken-coop-size-guide.html">Coop Size Guide</a>
+
+</nav>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>Everything You Need to Plan Your Backyard Chicken Flock</h2>
+
+<p>
+
+Whether you're raising your very first chickens or expanding an existing flock, our free planning tools make it easier to estimate costs, choose the best breeds, determine coop size, and calculate feed requirements.
+
 </p>
 
-<!-- 🔥 STEP 12 AUTHORITY BLOCK -->
-<div style="text-align:center; margin-top:10px; font-size:14px; color:#444;">
-    A free calculator to estimate chicken feed costs, monthly expenses, startup costs, and egg production value for backyard flocks in the United States.
-</div>
+<p>
 
-<!-- CORE TOOL -->
-<div class="section">
+Instead of searching dozens of websites for conflicting information, you'll find calculators, planning guides, and practical articles all in one place.
 
-    <h2>📊 Chicken Feed Cost Calculator & Flock Planner</h2>
+</p>
 
-    <!-- 🔥 STEP 12 STRUCTURE SIGNAL -->
-    <p style="font-size:14px; color:#666;">
-        Plan your backyard chicken costs with real-world feed prices, flock size, and optional startup expenses.
-    </p>
+<a class="button" href="#feed-calculator">
 
-    <label>Number of Chickens:</label>
-    <input id="chickens" type="number" placeholder="e.g. 6">
+Start Planning Your Flock →
 
-    <label>Feed Store:</label>
-    <select id="store" onchange="updatePrice()">
-        <option value="18.99">Tractor Supply ($18.99)</option>
-        <option value="17.49">Walmart ($17.49)</option>
-        <option value="16.99">Rural King ($16.99)</option>
-        <option value="19.99">Local Feed Store ($19.99)</option>
-        <option value="0">Custom Price</option>
-    </select>
-
-    <label>Feed Price per 50lb bag ($):</label>
-    <input id="bagCost" type="number" value="18.99">
-
-    <label>Chicken Type:</label>
-    <select id="chickenType">
-        <option value="1.0">Layer Hens</option>
-        <option value="1.3">Meat Birds (Broilers)</option>
-        <option value="0.7">Bantams</option>
-        <option value="1.1">Dual Purpose</option>
-    </select>
-
-    <label>Living Conditions:</label>
-    <select id="environment">
-        <option value="1.0">Confined Coop/Run</option>
-        <option value="0.75">Partial Free Range</option>
-        <option value="0.6">Mostly Free Range</option>
-    </select>
-
-    <label>Season:</label>
-    <select id="season">
-        <option value="1.0">Spring / Fall</option>
-        <option value="1.15">Winter</option>
-        <option value="0.95">Summer</option>
-    </select>
+</a>
 
 </div>
 
-<!-- STARTUP -->
-<div class="toggle" onclick="toggleSection('startup')">
-    🏗 Show Startup Cost Planner ▼
+<div class="hero-box">
+
+<h3>✔ Free Planning Tools</h3>
+
+<ul>
+
+<li>Chicken Feed Cost Calculator</li>
+
+<li>Chicken Coop Cost Estimator</li>
+
+<li>Backyard Flock Planner</li>
+
+<li>Chicken Breed Guides</li>
+
+<li>Coop Size Planning</li>
+
+<li>Growing Resource Library</li>
+
+</ul>
+
 </div>
 
-<div id="startup" class="section hidden">
+</section>
 
-    <label>Coop Type:</label>
-    <select id="coopCost">
-        <option value="0">No Coop Cost Included</option>
-        <option value="150">DIY Coop ($150)</option>
-        <option value="500">Basic Prebuilt Coop ($500)</option>
-        <option value="1200">Premium Coop ($1200)</option>
-    </select>
+<!-- ===================================== -->
+<!-- WHY PEOPLE USE OUR TOOLS -->
+<!-- ===================================== -->
 
-    <label>Fencing Type:</label>
-    <select id="fenceCost">
-        <option value="0">Free Range</option>
-        <option value="100">Wire Fence ($100)</option>
-        <option value="600">Electric Net ($600)</option>
-    </select>
+<section>
 
-    <label>Equipment:</label>
-    <select id="equipCost">
-        <option value="0">None</option>
-        <option value="75">Basic ($75)</option>
-        <option value="150">Standard ($150)</option>
-    </select>
+<h2 class="section-title">
+
+Why Thousands of Backyard Chicken Keepers Love Planning First
+
+</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<div class="feature-icon">
+
+🧮
+
 </div>
 
+<h3>
 
-<div class="section">
-    <h2>🥚 Want to Estimate Egg Profits?</h2>
-    <p>
-        Use our companion tool to estimate how much money your chickens can make from egg production.
-    </p>
+Free Calculators
 
-    <a href="egg-profit-calculator.html">
-        👉 Go to Egg Profit Calculator
-    </a>
+</h3>
+
+<p>
+
+Estimate feed costs, startup expenses, coop sizes, and flock requirements in seconds.
+
+</p>
+
 </div>
 
-<div class="section">
-    <h2>🏠 Planning a Coop?</h2>
-    <p>Estimate the full startup cost of building or buying a chicken coop.</p>
-    <a href="chicken-coop-estimator.html">👉 Chicken Coop Cost Estimator</a>
+<div class="feature">
+
+<div class="feature-icon">
+
+📚
+
 </div>
 
-<p><a href="backyard-chicken-flock-planner.html">🐔 Backyard Chicken Flock Planner</a></p>
+<h3>
 
-<div class="section">
-    <a href="tools.html">🔗 View All Chicken Tools</a>
+Practical Guides
+
+</h3>
+
+<p>
+
+Easy-to-understand articles written specifically for backyard chicken owners.
+
+</p>
+
 </div>
 
-<!-- FAQ SECTION -->
-<div class="section">
+<div class="feature">
 
-    <h2>❓ Frequently Asked Questions</h2>
+<div class="feature-icon">
 
-    <h3>How much does it cost to feed backyard chickens?</h3>
-    <p>
-        Most backyard chickens cost between $10 and $30 per month in feed depending on feed prices, breed, and feeding conditions.
-    </p>
+💰
 
-    <h3>How many chickens should a beginner start with?</h3>
-    <p>
-        A good starting point is 4 to 6 chickens for manageable care and steady egg production.
-    </p>
+</div>
 
-    <h3>What is the biggest cost of raising chickens?</h3>
-    <p>
-        Feed is typically the largest ongoing expense, followed by coop and fencing setup.
-    </p>
+<h3>
+
+Save Money
+
+</h3>
+
+<p>
+
+Plan before you buy and avoid expensive beginner mistakes when starting your flock.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+🐔
+
+</div>
+
+<h3>
+
+Growing Resource Library
+
+</h3>
+
+<p>
+
+New calculators, comparison guides, planning tools, and educational articles are added regularly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ============================= -->
+<!-- START HERE ROADMAP -->
+<!-- ============================= -->
+
+<section>
+
+<h2 class="section-title">
+
+🐣 Start Here: Build Your Backyard Flock in 5 Simple Steps
+
+</h2>
+
+<div class="notice">
+
+<p style="font-size:20px; margin-bottom:30px;">
+
+Whether you're buying your very first chicks or planning to expand your flock, following these five steps can save money, prevent common mistakes, and help you build a healthy, productive backyard flock.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>① Choose the Right Chicken Breed</h3>
+
+<p>
+
+Compare the most popular egg-laying breeds based on egg production, temperament, broodiness, cold hardiness, friendliness, and ease of care.
+
+</p>
+
+<a href="best-chicken-breeds-for-eggs.html">
+
+View Breed Guide →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>② Estimate Feed Costs</h3>
+
+<p>
+
+Calculate realistic monthly and yearly feed expenses so you know what it will cost to maintain your flock.
+
+</p>
+
+<a href="#feed-calculator">
+
+Use Feed Calculator →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>③ Plan Your Coop Size</h3>
+
+<p>
+
+Determine how much indoor coop space, outdoor run space, and how many nesting boxes your chickens will need.
+
+</p>
+
+<a href="chicken-coop-size-guide.html">
+
+Read Coop Size Guide →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>④ Estimate Startup Costs</h3>
+
+<p>
+
+Compare DIY, prefab, premium, and custom coop costs before purchasing materials or equipment.
+
+</p>
+
+<a href="chicken-coop-estimator.html">
+
+Estimate Coop Cost →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>⑤ Build Your Complete Flock Plan</h3>
+
+<p>
+
+Bring everything together by planning flock size, housing requirements, nesting boxes, and outdoor run dimensions.
+
+</p>
+
+<a href="backyard-chicken-flock-planner.html">
+
+Open Flock Planner →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🎯 Continue Learning</h3>
+
+<p>
+
+Explore our growing library of calculators, planning guides, and educational articles designed to help backyard chicken keepers make smarter decisions.
+
+</p>
+
+<a href="tools.html">
+
+Browse All Resources →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="notice">
+
+<h2>Why Backyard Chicken Planner?</h2>
+
+<p>
+
+Our goal is simple: provide backyard chicken keepers with accurate, easy-to-use planning tools backed by practical recommendations. Whether you're deciding between a DIY or prefab coop, comparing egg-laying breeds, or estimating annual feed costs, every calculator and guide is designed to help you make informed decisions before spending your money.
+
+</p>
+
+</div>
+
+<h2 class="section-title">
+
+Featured Chicken Calculators
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🐔 Chicken Feed Cost Calculator</h3>
+
+<p>
+
+Estimate monthly and yearly feed expenses based on flock size, feed prices, and laying hens.
+
+</p>
+
+<a href="#feed-calculator">
+
+Open Calculator
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏠 Chicken Coop Cost Calculator</h3>
+
+<p>
+
+Compare DIY, prefab, premium, and custom-built coop costs while calculating recommended coop space.
+
+</p>
+
+<a href="chicken-coop-estimator.html">
+
+Estimate Coop Cost
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📋 Backyard Chicken Flock Planner</h3>
+
+<p>
+
+Plan the size of your flock, nesting boxes, coop dimensions, and outdoor run requirements.
+
+</p>
+
+<a href="backyard-chicken-flock-planner.html">
+
+Plan My Flock
+
+</a>
+
+</div>
+
+</div>
+
+<h2 class="section-title">
+
+Popular Chicken Guides
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🥚 Best Chicken Breeds for Eggs</h3>
+
+<p>
+
+Compare popular laying breeds by egg production, temperament, broodiness, cold hardiness, friendliness, and more.
+
+</p>
+
+<a href="best-chicken-breeds-for-eggs.html">
+
+Read Guide
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📏 Chicken Coop Size Guide</h3>
+
+<p>
+
+Learn exactly how much indoor coop space, outdoor run space, and nesting boxes your flock needs.
+
+</p>
+
+<a href="chicken-coop-size-guide.html">
+
+Read Guide
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🧰 Browse All Chicken Tools</h3>
+
+<p>
+
+Explore every calculator and planning resource available on Backyard Chicken Planner.
+
+</p>
+
+<a href="tools.html">
+
+View All Tools
+
+</a>
+
+</div>
+
+</div>
+
+<!-- ============================= -->
+<!-- CHICKEN FEED CALCULATOR -->
+<!-- ============================= -->
+
+<section id="feed-calculator">
+
+<h2 class="section-title">
+
+🐔 Chicken Feed Cost Calculator
+
+</h2>
+
+<div class="notice">
+
+<h2>Estimate the True Cost of Feeding Your Chickens</h2>
+
+<p>
+
+Feed is one of the largest ongoing expenses for backyard chicken keepers. Whether you have three hens or a flock of thirty, understanding your monthly and yearly feed costs can help you budget more accurately and avoid surprises.
+
+</p>
+
+<p>
+
+Use the calculator below to estimate feed expenses based on your flock size, average daily feed consumption, and the current cost of feed in your area. While actual costs vary depending on breed, age, climate, and whether your birds free-range, this calculator provides a realistic starting point for planning.
+
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Typical Feed Consumption</h3>
+
+<p>
+
+• Adult laying hen: <strong>0.25 lb/day</strong><br>
+
+• 50 lb bag feeds about <strong>200 hen-days</strong><br>
+
+• 6 hens consume approximately one 50 lb bag every month.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Factors That Affect Feed Costs</h3>
+
+<p>
+
+✔ Breed size<br>
+
+✔ Free-ranging opportunities<br>
+
+✔ Feed quality<br>
+
+✔ Seasonal weather<br>
+
+✔ Food scraps and supplemental feeding
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Planning Tip</h3>
+
+<p>
+
+Many first-time chicken owners underestimate feed costs. It's usually better to budget a little extra each month so you're prepared for seasonal price increases or larger-than-expected appetites.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2 style="text-align:center;color:#1B5E20;">
+
+Feed Cost Calculator
+
+</h2>
+
+<br>
+
+<label><strong>Number of Chickens</strong></label>
+
+<input
+type="number"
+id="birds"
+value="6"
+min="1">
+
+<br><br>
+
+<label><strong>Average Feed Consumed Per Chicken Per Day (lbs)</strong></label>
+
+<input
+type="number"
+id="feedPerDay"
+step="0.01"
+value="0.25">
+
+<br><br>
+
+<label><strong>Price Per 50 lb Bag of Feed ($)</strong></label>
+
+<input
+type="number"
+id="bagPrice"
+step="0.01"
+value="25">
+
+<br><br>
+
+<button onclick="calculateFeed()">
+
+Calculate Feed Cost
+
+</button>
+
+<div
+id="feedResults"
+style="margin-top:30px;">
+
+</div>
+
+</div>
+
+<div class="notice">
+
+<h2>How We Calculate Feed Costs</h2>
+
+<p>
+
+Our calculator estimates feed usage by multiplying the number of chickens by the average amount of feed each bird consumes per day. That daily total is projected into monthly and annual feed requirements and then converted into the number of 50-pound feed bags needed each year.
+
+</p>
+
+<p>
+
+This approach provides a practical estimate for most backyard flocks and works well for planning purposes. Keep in mind that growing chicks, meat birds, heavy breeds, and winter feeding may require additional feed.
+
+</p>
 
 </div>
 
 <script>
 
-const baseFeed = 0.25;
-const bagWeight = 50;
+function calculateFeed(){
 
-function updatePrice() {
-    let storePrice = document.getElementById("store").value;
-    if (storePrice > 0) {
-        document.getElementById("bagCost").value = storePrice;
-    }
-}
+let birds=parseFloat(document.getElementById("birds").value);
 
-function toggleSection(id) {
-    document.getElementById(id).classList.toggle("hidden");
-}
+let feed=parseFloat(document.getElementById("feedPerDay").value);
 
-function calculate() {
+let bagPrice=parseFloat(document.getElementById("bagPrice").value);
 
-    let chickens = parseFloat(document.getElementById("chickens").value);
-    let bagCost = parseFloat(document.getElementById("bagCost").value);
+let dailyFeed=birds*feed;
 
-    let chickenType = parseFloat(document.getElementById("chickenType").value);
-    let environment = parseFloat(document.getElementById("environment").value);
-    let season = parseFloat(document.getElementById("season").value);
+let monthlyFeed=dailyFeed*30;
 
-    let coopCost = parseFloat(document.getElementById("coopCost").value || 0);
-    let fenceCost = parseFloat(document.getElementById("fenceCost").value || 0);
-    let equipCost = parseFloat(document.getElementById("equipCost").value || 0);
+let yearlyFeed=dailyFeed*365;
 
-    let eggRate = 0;
-    let eggValue = 0;
-    let packagingCost = 0;
+let bagsNeeded=yearlyFeed/50;
 
-    if (!document.getElementById("business").classList.contains("hidden")) {
-        eggRate = parseFloat(document.getElementById("eggRate").value);
-        eggValue = parseFloat(document.getElementById("eggValue").value);
-        packagingCost = parseFloat(document.getElementById("packagingCost").value);
-    }
+let yearlyCost=bagsNeeded*bagPrice;
 
-    let adjustedFeed = baseFeed * chickenType * environment * season;
-    let dailyFeed = chickens * adjustedFeed;
+let monthlyCost=yearlyCost/12;
 
-    let bagDays = bagWeight / dailyFeed;
-    let dailyCost = bagCost / bagDays;
+document.getElementById("feedResults").innerHTML=
 
-    let monthlyFeedCost = dailyCost * 30;
-    let startup = coopCost + fenceCost + equipCost;
+`
 
-    let eggsPerMonth = chickens * eggRate * 4;
-    let revenue = eggsPerMonth * eggValue;
+<div style="padding:20px;background:#f8fff8;border-radius:10px;border:1px solid #cfe8cf;">
 
-    let net = revenue - monthlyFeedCost - packagingCost;
+<h3 style="color:#1B5E20;">Estimated Feed Costs</h3>
 
-    document.getElementById("result").innerHTML = `
-        🐔 Feed lasts: ${bagDays.toFixed(1)} days<br>
-        💰 Monthly cost: $${monthlyFeedCost.toFixed(2)}<br>
-        🏗 Startup: $${startup.toFixed(2)}<br>
-        💼 Net: $${net.toFixed(2)}
-    `;
+<p><strong>Daily Feed:</strong> ${dailyFeed.toFixed(2)} lbs</p>
+
+<p><strong>Monthly Feed:</strong> ${monthlyFeed.toFixed(1)} lbs</p>
+
+<p><strong>Yearly Feed:</strong> ${yearlyFeed.toFixed(1)} lbs</p>
+
+<p><strong>50 lb Bags Needed Per Year:</strong> ${bagsNeeded.toFixed(1)}</p>
+
+<hr>
+
+<p style="font-size:22px;color:#1B5E20;">
+
+<strong>Estimated Monthly Cost:</strong>
+
+$${monthlyCost.toFixed(2)}
+
+</p>
+
+<p style="font-size:26px;color:#1B5E20;">
+
+<strong>Estimated Annual Cost:</strong>
+
+$${yearlyCost.toFixed(2)}
+
+</p>
+
+</div>
+
+`;
+
 }
 
 </script>
 
-<div class="section">
-    <p>
-        Related searches: chicken feed cost calculator, backyard chicken feed cost, how much does it cost to raise chickens, chicken coop cost, egg profit calculator, backyard chicken egg income.
-    </p>
+<section class="notice">
+
+<h2>Looking Beyond Feed Costs?</h2>
+
+<p>
+
+Once you've estimated your annual feed budget, the next step is planning the rest of your flock. Be sure to check out our Chicken Coop Cost Calculator, Backyard Chicken Flock Planner, and Chicken Coop Size Guide to estimate startup costs, housing requirements, and the space your birds will need.
+
+</p>
+
+<p>
+
+Planning everything together before buying your first chicks can save hundreds of dollars and help avoid common beginner mistakes.
+
+</p>
+
+</section>
+
+<!-- ====================================== -->
+<!-- WHY TRUST US -->
+<!-- ====================================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Why Backyard Chicken Planner?
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📊 Accurate Planning Tools</h3>
+
+<p>
+
+Our calculators are designed around commonly accepted backyard poultry recommendations for feed consumption, coop sizing, nesting box requirements, and flock planning. They're intended to provide realistic estimates that help you make informed decisions before spending money.
+
+</p>
+
 </div>
 
-<div class="section">
-    <p>
-        Plan your backyard chicken setup with free tools for feed cost, egg profit, and coop building expenses.
-    </p>
+<div class="card">
+
+<h3>📚 Practical Information</h3>
+
+<p>
+
+Instead of simply providing numbers, we explain why those numbers matter. Every calculator is supported by guides and educational content so you understand the reasoning behind each recommendation.
+
+</p>
+
 </div>
 
-<div class="section">
-    <h3>Common Questions</h3>
-    <p>
-        How much does it cost to raise backyard chickens?<br>
-        How much chicken feed do I need per month?<br>
-        Is it cheaper to build or buy a chicken coop?<br>
-        How profitable are backyard chickens for eggs?<br>
-    </p>
+<div class="card">
+
+<h3>🐔 Built for Backyard Chicken Keepers</h3>
+
+<p>
+
+Whether you're raising three hens for fresh eggs or managing a larger backyard flock, our tools are designed specifically for small-scale poultry owners—not commercial farms.
+
+</p>
+
 </div>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- COMMON MISTAKES -->
+<!-- ====================================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Common Mistakes New Chicken Owners Make
+
+</h2>
+
+<div class="notice">
+
+<h2>Planning Ahead Can Save Hundreds of Dollars</h2>
+
+<p>
+
+One of the biggest mistakes new chicken keepers make is underestimating the total cost of raising chickens. While chicks themselves are relatively inexpensive, the coop, fencing, feeders, waterers, bedding, feed, and predator protection often cost far more than expected.
+
+</p>
+
+<p>
+
+Other common mistakes include purchasing too many birds before building an appropriately sized coop, choosing breeds that don't fit their climate, and forgetting to budget for ongoing expenses like feed and bedding.
+
+</p>
+
+<p>
+
+Our calculators were created to help backyard chicken keepers avoid those surprises by estimating expenses and housing requirements before bringing home their first flock.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- FEATURED ARTICLES -->
+<!-- ====================================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Popular Chicken Resources
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🥚 Best Chicken Breeds for Eggs</h3>
+
+<p>
+
+Compare egg production, temperament, broodiness, cold hardiness, friendliness, and more for the most popular backyard breeds.
+
+</p>
+
+<a href="best-chicken-breeds-for-eggs.html">
+
+Read Article →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📏 Chicken Coop Size Guide</h3>
+
+<p>
+
+Find recommended coop dimensions, run sizes, nesting box requirements, and planning recommendations based on flock size.
+
+</p>
+
+<a href="chicken-coop-size-guide.html">
+
+Read Guide →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏠 Chicken Coop Cost Estimator</h3>
+
+<p>
+
+Estimate startup costs for DIY, prefab, premium, and custom-built coops while calculating recommended housing space.
+
+</p>
+
+<a href="chicken-coop-estimator.html">
+
+Estimate Costs →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- FAQ -->
+<!-- ====================================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="card">
+
+<h3>How much does it cost to raise backyard chickens?</h3>
+
+<p>
+
+The answer depends on flock size, coop type, feed prices, and equipment. Many backyard chicken owners spend several hundred dollars getting started, followed by recurring monthly feed costs. Using planning calculators before purchasing your birds helps establish a more realistic budget.
+
+</p>
+
+<hr><br>
+
+<h3>How much feed does a laying hen eat each day?</h3>
+
+<p>
+
+A healthy adult laying hen typically eats about one-quarter pound (0.25 lb) of feed each day. Larger breeds and colder weather may increase consumption slightly.
+
+</p>
+
+<hr><br>
+
+<h3>How much coop space does each chicken need?</h3>
+
+<p>
+
+A commonly recommended guideline is approximately 4 square feet of indoor coop space and 8 to 10 square feet of outdoor run space per chicken. Larger runs generally promote healthier birds and reduce behavioral issues.
+
+</p>
+
+<hr><br>
+
+<h3>Which chicken breeds lay the most eggs?</h3>
+
+<p>
+
+Popular high-producing breeds include White Leghorns, ISA Browns, Rhode Island Reds, Golden Comets, Australorps, and Plymouth Rocks. Each breed differs in temperament, broodiness, cold hardiness, and expected annual egg production.
+
+</p>
+
+<hr><br>
+
+<h3>Can I raise chickens in a small backyard?</h3>
+
+<p>
+
+Yes. Many municipalities allow small backyard flocks, but local ordinances and HOA rules vary. Always verify local regulations before purchasing birds or constructing a coop.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ====================================== -->
+<!-- CONTINUE EXPLORING -->
+<!-- ====================================== -->
+
+<section>
+
+<h2 class="section-title">
+
+Continue Planning Your Backyard Flock
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🐔 Backyard Chicken Flock Planner</h3>
+
+<p>
+
+Estimate flock size, nesting boxes, coop dimensions, and outdoor run requirements.
+
+</p>
+
+<a href="backyard-chicken-flock-planner.html">
+
+Open Planner
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🧰 Browse All Chicken Tools</h3>
+
+<p>
+
+Explore every calculator and planning guide currently available on Backyard Chicken Planner.
+
+</p>
+
+<a href="tools.html">
+
+View All Tools
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📖 Growing Resource Library</h3>
+
+<p>
+
+We're continually adding new calculators, comparison guides, printable resources, and backyard chicken articles.
+
+</p>
+
+<a href="best-chicken-breeds-for-eggs.html">
+
+Explore Articles
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>
+
+🐔 Backyard Chicken Planner
+
+</h2>
+
+<br>
+
+<p>
+
+Helping backyard chicken keepers make smarter decisions through free planning tools, calculators, and practical guides.
+
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html">Home</a> |
+
+<a href="tools.html">All Tools</a> |
+
+<a href="chicken-coop-estimator.html">Coop Cost</a> |
+
+<a href="backyard-chicken-flock-planner.html">Flock Planner</a> |
+
+<a href="best-chicken-breeds-for-eggs.html">Breed Guide</a> |
+
+<a href="chicken-coop-size-guide.html">Coop Size Guide</a>
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Backyard Chicken Planner
+
+</p>
+
+</footer>
+
+<!-- ===================================== -->
+<!-- WEBSITE SCHEMA -->
+<!-- ===================================== -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Backyard Chicken Planner",
+  "url":"https://gregnalley.github.io/chicken-cost-planner/",
+  "description":"Free backyard chicken calculators, flock planning tools, chicken breed guides, and coop planning resources.",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://gregnalley.github.io/chicken-cost-planner/tools.html",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Backyard Chicken Planner",
+  "url":"https://gregnalley.github.io/chicken-cost-planner/",
+  "logo":"https://gregnalley.github.io/chicken-cost-planner/images/logo.png"
+}
+</script>
 
 </body>
+
+<section>
+
+<h2 class="section-title">
+
+Our Mission
+
+</h2>
+
+<div class="notice">
+
+<p>
+
+Backyard Chicken Planner was created to make raising chickens simpler, more affordable, and less confusing.
+
+Whether you're planning your very first coop or expanding an existing flock, our goal is to provide practical calculators, trustworthy planning tools, and easy-to-understand guides that help you make informed decisions with confidence.
+
+As our resource library grows, we'll continue adding new calculators, comparison guides, and educational articles designed specifically for backyard chicken keepers.
+
+</p>
+
+</div>
+
+</section>
+
 </html>
