@@ -65,4 +65,11 @@
 <priority>0.8</priority>
 </url>
 
+<url>
+<loc>https://gregnalley.github.io/chicken-cost-planner/chicken-breeds.html</loc>
+<lastmod>2026-06-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+
 </urlset>
