@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Chicken Equipment & Supplies | Backyard Chicken Planner</title>
+
+<meta name="description" content="Compare the best chicken feeders, waterers, nesting boxes, brooders, fencing, coop accessories, and other backyard chicken equipment.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f7f9fb;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("images/hero-chickens.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:white;
+
+padding:110px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+/* ===========================
+   ARTICLE SECTIONS
+=========================== */
+
+.section{
+    background:#ffffff;
+    padding:35px;
+    margin:35px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1B5E20;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.section p{
+    line-height:1.7;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"CollectionPage",
+"name":"Chicken Equipment & Supplies",
+"description":"Buying guides and equipment recommendations for backyard chicken keepers.",
+"url":"https://gregnalley.github.io/chicken-cost-planner/chicken-supplies.html"
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+
+Free calculators, planning tools, practical guides, and equipment recommendations for backyard chicken keepers.
+
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<div style="max-width:900px; margin:40px auto;">
+
+<div class="content">
+
+<div class="banner">
+
+<h1>🛒 Chicken Equipment & Supplies</h1>
+
+<p>
+
+Choosing the right equipment can make raising backyard chickens easier, cleaner, and more enjoyable. Our buying guides compare popular products, explain what to look for, and help you decide what equipment is worth your money.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Why We Created This Equipment Library</h2>
+
+<p>
+
+There are hundreds of chicken products on the market, ranging from inexpensive plastic feeders to professional automatic coop systems. While having choices is great, it can also be overwhelming—especially if you're new to raising chickens.
+
+</p>
+
+<p>
+
+Instead of simply listing products, Backyard Chicken Planner compares equipment based on durability, ease of cleaning, value, practicality, and suitability for different types of backyard flocks.
+
+</p>
+
+<p>
+
+Whenever possible, we explain <strong>why</strong> we recommend a product and which situations it works best for.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">🧰 Browse Equipment Categories</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🐥 Feeders</h3>
+
+<p>
+
+Compare hanging feeders, treadle feeders, gravity feeders, PVC feeders, and more.
+
+</p>
+
+<a href="best-chicken-feeders.html">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>💧 Waterers</h3>
+
+<p>
+
+Find the best gravity waterers, nipple systems, heated waterers, and automatic watering options.
+
+</p>
+
+<a href="best-chicken-waterers.html">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏠 Chicken Coops</h3>
+
+<p>
+
+Compare prefab coops, DIY kits, portable tractors, and permanent backyard coops.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🥚 Nesting Boxes</h3>
+
+<p>
+
+Find nesting boxes that are easy to clean, durable, and comfortable for laying hens.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🚪 Automatic Coop Doors</h3>
+
+<p>
+
+Compare solar, battery, and electric automatic coop doors.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🛡️ Predator Protection</h3>
+
+<p>
+
+Electric fencing, hardware cloth, trail cameras, and predator deterrents.
+
+</p>
+
+<a href="#">
+
+Coming Soon →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🐣 New to Backyard Chickens?</h2>
+
+<p>
+
+If you're just getting started, you don't need to buy everything at once.
+
+</p>
+
+<p>
+
+In fact, most beginners can successfully start with just a few essential items:
+
+</p>
+
+<ul>
+
+<li>✔ Quality feeder</li>
+
+<li>✔ Reliable waterer</li>
+
+<li>✔ Secure coop</li>
+
+<li>✔ Nesting boxes</li>
+
+<li>✔ Appropriate chicken feed</li>
+
+<li>✔ Grit and oyster shell (when appropriate)</li>
+
+<li>✔ Predator-proof fencing</li>
+
+</ul>
+
+<p>
+
+As your flock grows, you can gradually upgrade equipment based on your needs and experience.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>⭐ Backyard Chicken Planner Product Score</h2>
+
+<p>
+As we build our equipment guides, we will evaluate products using a consistent rating system. This helps readers compare feeders, waterers, nesting boxes, coop accessories, and other chicken supplies more easily.
+</p>
+
+<p>
+Our goal is not to recommend the most expensive product. Our goal is to identify equipment that is practical, durable, easy to use, and worth the money for backyard chicken keepers.
+</p>
+
+<table>
+
+<tr>
+<th>Rating Category</th>
+<th>What It Means</th>
+</tr>
+
+<tr>
+<td>Durability</td>
+<td>How well the product holds up to weather, chickens, cleaning, and daily use.</td>
+</tr>
+
+<tr>
+<td>Ease of Use</td>
+<td>How simple it is to fill, clean, move, install, or operate.</td>
+</tr>
+
+<tr>
+<td>Beginner Friendliness</td>
+<td>Whether a first-time chicken owner can use it without confusion or extra setup problems.</td>
+</tr>
+
+<tr>
+<td>Flock Suitability</td>
+<td>How well it works for different flock sizes and backyard setups.</td>
+</tr>
+
+<tr>
+<td>Maintenance</td>
+<td>How much cleaning, adjustment, repair, or replacement it may require over time.</td>
+</tr>
+
+<tr>
+<td>Value for Money</td>
+<td>Whether the product provides enough usefulness and reliability for its price.</td>
+</tr>
+
+</table>
+
+<p>
+Each future product guide may include a score such as:
+</p>
+
+<table>
+
+<tr>
+<th>Example Product Score</th>
+<th>Rating</th>
+</tr>
+
+<tr>
+<td>Durability</td>
+<td>★★★★★</td>
+</tr>
+
+<tr>
+<td>Ease of Use</td>
+<td>★★★★☆</td>
+</tr>
+
+<tr>
+<td>Beginner Friendliness</td>
+<td>★★★★★</td>
+</tr>
+
+<tr>
+<td>Maintenance</td>
+<td>★★★★☆</td>
+</tr>
+
+<tr>
+<td>Value</td>
+<td>★★★★★</td>
+</tr>
+
+<tr>
+<td><strong>Overall Backyard Chicken Planner Score</strong></td>
+<td><strong>94 / 100</strong></td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🤝 A Note About Product Recommendations</h2>
+
+<p>
+Some future equipment guides may include affiliate links. If you purchase through those links, Backyard Chicken Planner may earn a small commission at no additional cost to you.
+</p>
+
+<p>
+Affiliate relationships do not control our recommendations. Products will be selected based on usefulness, quality, practicality, and value for backyard chicken keepers.
+</p>
+
+<p>
+You can read more on our <a href="affiliate-disclosure.html">Affiliate Disclosure</a> page.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🔗 Helpful Planning Resources</h2>
+
+<ul>
+<li><a href="index.html">Chicken Feed Cost Calculator</a></li>
+<li><a href="chicken-coop-estimator.html">Chicken Coop Cost Estimator</a></li>
+<li><a href="backyard-chicken-flock-planner.html">Backyard Chicken Flock Planner</a></li>
+<li><a href="chicken-coop-size-guide.html">Chicken Coop Size Guide</a></li>
+<li><a href="chicken-breeds.html">Chicken Breeds Guide</a></li>
+<li><a href="tools.html">View All Chicken Tools</a></li>
+</ul>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+<script src="scripts/load-components.js"></script>
+
+</body>
+</html>
