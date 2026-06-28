@@ -629,49 +629,15 @@ As the site grows, we plan to continue adding helpful guides covering chicken br
 
 </div>
 
-<footer style="background:#1B5E20;color:white;margin-top:60px;padding:40px 20px;border-radius:12px 12px 0 0;">
+<div id="footer"></div>
 
-<div style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;">
-
-<div>
-<h3 style="color:white;">🐔 Backyard Chicken Planner</h3>
-<p>
-Free calculators, planning tools, and practical guides for backyard chicken keepers.
-</p>
-</div>
-
-<div>
-<h3 style="color:white;">Popular Tools</h3>
-<p><a href="index.html" style="color:#C8E6C9;">Feed Calculator</a></p>
-<p><a href="chicken-coop-estimator.html" style="color:#C8E6C9;">Coop Cost Estimator</a></p>
-<p><a href="backyard-chicken-flock-planner.html" style="color:#C8E6C9;">Flock Planner</a></p>
-<p><a href="tools.html" style="color:#C8E6C9;">All Tools</a></p>
-</div>
-
-<div>
-<h3 style="color:white;">Chicken Guides</h3>
-<p><a href="chicken-breeds.html" style="color:#C8E6C9;">Chicken Breeds Hub</a></p>
-<p><a href="best-chicken-breeds-for-eggs.html" style="color:#C8E6C9;">Best Egg Breeds</a></p>
-<p><a href="best-chickens-for-beginners.html" style="color:#C8E6C9;">Beginner Chickens</a></p>
-<p><a href="best-dual-purpose-chickens.html" style="color:#C8E6C9;">Dual Purpose Chickens</a></p>
-<p><a href="best-chickens-for-cold-weather.html" style="color:#C8E6C9;">Cold Weather Chickens</a></p>
-</div>
-
-<div>
-<h3 style="color:white;">Planning Resources</h3>
-<p><a href="chicken-coop-size-guide.html" style="color:#C8E6C9;">Coop Size Guide</a></p>
-<p><a href="chicken-breeds.html" style="color:#C8E6C9;">Choose a Breed</a></p>
-<p><a href="about.html" style="color:#C8E6C9;">About</a></p>
-<p><a href="tools.html" style="color:#C8E6C9;">Resource Library</a></p>
-</div>
-
-</div>
-
-<div style="max-width:1000px;margin:30px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.25);text-align:center;font-size:14px;">
-<p>© 2026 Backyard Chicken Planner. All rights reserved.</p>
-</div>
-
-</footer>
+<script>
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('footer').innerHTML = data;
+});
+</script>
 
 </div>
 
