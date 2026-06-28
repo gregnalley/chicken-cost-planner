@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Privacy Policy | Backyard Chicken Planner</title>
+
+<meta name="description" content="Read the Backyard Chicken Planner Privacy Policy to learn how we collect, use, and protect information while you use our website.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f7f9fb;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("images/hero-chickens.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:white;
+
+padding:110px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+/* ===========================
+   ARTICLE SECTIONS
+=========================== */
+
+.section{
+    background:#ffffff;
+    padding:35px;
+    margin:35px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1B5E20;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.section p{
+    line-height:1.7;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebPage",
+"name":"Privacy Policy",
+"description":"Privacy Policy for Backyard Chicken Planner.",
+"url":"https://gregnalley.github.io/chicken-cost-planner/privacy-policy.html"
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+
+Free calculators, planning tools, and practical guides for backyard chicken keepers.
+
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<div style="max-width:900px; margin:40px auto;">
+
+<div class="content">
+
+<div class="banner">
+
+<h1>🔒 Privacy Policy</h1>
+
+<p>
+
+Your privacy matters. This page explains what information Backyard Chicken Planner collects, how it is used, and the choices you have while using our website.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Our Commitment to Your Privacy</h2>
+
+<p>
+
+At Backyard Chicken Planner, we believe privacy should be simple to understand. We only collect information that helps us improve the website, understand how visitors use our tools, and provide a better experience.
+
+</p>
+
+<p>
+
+We do not sell your personal information to third parties.
+
+</p>
+
+<p>
+
+As Backyard Chicken Planner continues to grow, this Privacy Policy may be updated to reflect new features, tools, or services. The most recent version will always be available on this page.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Information We May Collect</h2>
+
+<p>
+
+Depending on how you use the website, we may collect limited information such as:
+
+</p>
+
+<ul>
+
+<li>Basic website usage information (pages viewed, time spent on the site, browser type, and device type).</li>
+
+<li>Anonymous analytics information used to improve the website.</li>
+
+<li>Information you voluntarily provide through future contact forms or email communications.</li>
+
+<li>Technical information necessary for website performance and security.</li>
+
+</ul>
+
+<p>
+
+Most visitors can browse Backyard Chicken Planner without providing any personally identifiable information.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>How We Use Information</h2>
+
+<p>
+
+Information collected may be used to:
+
+</p>
+
+<ul>
+
+<li>Improve our calculators and planning tools.</li>
+
+<li>Create better educational content.</li>
+
+<li>Understand which guides visitors find most helpful.</li>
+
+<li>Maintain website security and performance.</li>
+
+<li>Respond to questions or feedback submitted by visitors.</li>
+
+</ul>
+
+<p>
+
+Our goal is to continually improve Backyard Chicken Planner based on how visitors use the site—not to collect unnecessary personal information.
+
+</p>
+
+</div>
+
+```html
+<div class="section">
+
+<h2>🍪 Cookies</h2>
+
+<p>
+
+Like many websites, Backyard Chicken Planner may use cookies and similar technologies to improve your browsing experience. Cookies are small text files stored on your device that help websites remember preferences, measure performance, and understand how visitors use the site.
+
+</p>
+
+<p>
+
+Cookies may be used to:
+
+</p>
+
+<ul>
+
+<li>Remember basic website preferences.</li>
+
+<li>Measure website traffic and visitor behavior.</li>
+
+<li>Improve website performance and user experience.</li>
+
+<li>Help us understand which calculators and guides are most useful.</li>
+
+</ul>
+
+<p>
+
+You can choose to disable cookies through your web browser at any time. Please note that disabling cookies may affect how some websites function.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>📊 Analytics</h2>
+
+<p>
+
+Backyard Chicken Planner may use website analytics services, such as Google Analytics, to better understand how visitors use the site.
+
+</p>
+
+<p>
+
+Analytics services may collect anonymous information including:
+
+</p>
+
+<ul>
+
+<li>Pages visited</li>
+
+<li>Time spent on the website</li>
+
+<li>General geographic region</li>
+
+<li>Browser type</li>
+
+<li>Device type</li>
+
+<li>Referring websites or search engines</li>
+
+</ul>
+
+<p>
+
+This information helps us improve our calculators, articles, and planning resources. Analytics information is aggregated and is not used to personally identify individual visitors.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>🤝 Third-Party Services</h2>
+
+<p>
+
+Backyard Chicken Planner may use trusted third-party services to help operate and improve the website.
+
+</p>
+
+<p>
+
+These services may include:
+
+</p>
+
+<ul>
+
+<li>Google Search Console</li>
+
+<li>Google Analytics</li>
+
+<li>GitHub Pages (website hosting)</li>
+
+<li>Future affiliate partners</li>
+
+</ul>
+
+<p>
+
+Each third-party service operates under its own privacy policy. We encourage visitors to review those policies if they wish to learn more about how those services collect and use information.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>🛒 Affiliate Links</h2>
+
+<p>
+
+As Backyard Chicken Planner grows, some pages may include affiliate links to products and equipment that we believe may be helpful to backyard chicken keepers.
+
+</p>
+
+<p>
+
+If you choose to purchase a product through one of these links, we may earn a small commission at no additional cost to you.
+
+</p>
+
+<p>
+
+Any affiliate recommendations will always be clearly disclosed, and our goal is to recommend products based on usefulness and value—not simply because they are available through an affiliate program.
+
+</p>
+
+</div>
+```
+<div class="section">
+
+<h2>🛡️ Your Choices</h2>
+
+<p>
+
+You have control over many of the ways information is collected while browsing the internet. Depending on your browser and device settings, you can:
+
+</p>
+
+<ul>
+
+<li>Disable or delete cookies.</li>
+
+<li>Limit certain browser tracking features.</li>
+
+<li>Control privacy settings within your web browser.</li>
+
+<li>Choose whether to share information through future contact forms or email communications.</li>
+
+</ul>
+
+<p>
+
+Please note that disabling certain browser features may affect how some websites function, although most areas of Backyard Chicken Planner should continue to work normally.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>🔄 Changes to This Privacy Policy</h2>
+
+<p>
+
+As Backyard Chicken Planner continues to grow, we may update this Privacy Policy to reflect new calculators, guides, website features, affiliate relationships, or legal requirements.
+
+</p>
+
+<p>
+
+Whenever significant changes are made, this page will be updated to reflect the most current version of our Privacy Policy.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>📧 Contact Us</h2>
+
+<p>
+
+If you have questions about this Privacy Policy or how information is handled while using Backyard Chicken Planner, you're welcome to contact us.
+
+</p>
+
+<p>
+
+As additional contact methods become available, they will be listed here.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>📅 Last Updated</h2>
+
+<p>
+
+This Privacy Policy was last updated on <strong>June 28, 2026</strong>.
+
+</p>
+
+<p>
+
+Backyard Chicken Planner is committed to maintaining a transparent, informative, and trustworthy experience for every visitor.
+
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>🐔 Thank You for Visiting</h2>
+
+<p>
+
+Thank you for using Backyard Chicken Planner. Whether you're raising your very first backyard chickens or expanding an established flock, we appreciate the opportunity to help you make informed decisions through practical calculators, planning tools, and educational resources.
+
+</p>
+
+<p>
+
+We hope our growing collection of guides and tools makes backyard chicken keeping easier, more enjoyable, and more successful.
+
+</p>
+
+<p style="text-align:center;margin-top:30px;">
+
+<a class="button" href="index.html">🏠 Return to Home</a>
+
+&nbsp;&nbsp;
+
+<a class="button" href="tools.html">🧰 Browse All Tools</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div id="footer"></div>
+
+</div>
+
+<script src="scripts/load-components.js"></script>
+
+</body>
+</html>
