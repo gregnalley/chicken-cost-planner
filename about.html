@@ -430,17 +430,15 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 </header>
 
-<nav>
+<div id="navigation"></div>
 
-<a href="index.html">Home</a>
-
-<a href="tools.html">All Tools</a>
-
-<a href="chicken-breeds.html">Chicken Breeds</a>
-
-<a href="about.html">About</a>
-
-</nav>
+<script>
+fetch('nav.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('navigation').innerHTML = data;
+});
+</script>
 
 <div style="max-width:900px; margin:40px auto;">
 
