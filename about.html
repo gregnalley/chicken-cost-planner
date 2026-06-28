@@ -432,14 +432,6 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('navigation').innerHTML = data;
-});
-</script>
-
 <div style="max-width:900px; margin:40px auto;">
 
 <div class="content">
@@ -629,15 +621,9 @@ As the site grows, we plan to continue adding helpful guides covering chicken br
 
 <div id="footer"></div>
 
-<script>
-fetch('footer.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('footer').innerHTML = data;
-});
-</script>
-
 </div>
+
+<script src="scripts/load-components.js"></script>
 
 </body>
 </html>
