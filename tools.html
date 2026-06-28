@@ -16,13 +16,6 @@
 
 <div id="navigation"></div>
 
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('navigation').innerHTML = data;
-});
-</script>
 
 <body>
 
@@ -94,15 +87,10 @@ Not sure how much space your chickens need? Use our complete sizing guide to lea
 
 <div id="footer"></div>
 
-<script>
-fetch('footer.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('footer').innerHTML = data;
-});
-</script>
 
 </div>
+
+<script src="scripts/load-components.js"></script>
 
 </body>
 </html>

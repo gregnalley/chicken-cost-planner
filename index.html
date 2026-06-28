@@ -507,13 +507,6 @@ Every Month
 
 <div id="navigation"></div>
 
-<script>
-fetch('nav.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('navigation').innerHTML = data;
-});
-</script>
 
 <div class="container">
 
@@ -1560,6 +1553,8 @@ Helping backyard chicken keepers make smarter decisions through free planning to
 }
 </script>
 
+<script src="scripts/load-components.js"></script>
+
 </body>
 
 <section>
@@ -1584,13 +1579,6 @@ As our resource library grows, we'll continue adding new calculators, comparison
 
 <div id="footer"></div>
 
-<script>
-fetch('footer.html')
-.then(response => response.text())
-.then(data => {
-document.getElementById('footer').innerHTML = data;
-});
-</script>
 
 </div>
 
