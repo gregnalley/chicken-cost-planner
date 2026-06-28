@@ -505,23 +505,15 @@ Every Month
 
 </header>
 
-<nav>
+<div id="navigation"></div>
 
-<a href="index.html">Home</a>
-
-<a href="tools.html">All Tools</a>
-
-<a href="chicken-coop-estimator.html">Coop Cost</a>
-
-<a href="backyard-chicken-flock-planner.html">Flock Planner</a>
-
-<a href="chicken-breeds.html">Chicken Breeds</a>
-
-<a href="best-chicken-breeds-for-eggs.html">Best Egg Breeds</a>
-
-<a href="chicken-coop-size-guide.html">Coop Size Guide</a>
-
-</nav>
+<script>
+fetch('nav.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('navigation').innerHTML = data;
+});
+</script>
 
 <div class="container">
 

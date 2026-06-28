@@ -436,23 +436,15 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 </header>
 
-<nav>
+<div id="navigation"></div>
 
-<a href="index.html">Feed Calculator</a>
-
-<a href="chicken-coop-estimator.html">Coop Cost</a>
-
-<a href="backyard-chicken-flock-planner.html">Flock Planner</a>
-
-<a href="best-chicken-breeds-for-eggs.html">Best Egg Breeds</a>
-
-<a href="best-chickens-for-beginners.html">Beginner Chickens</a>
-
-<a href="best-dual-purpose-chickens.html">Dual Purpose</a>
-
-<a href="tools.html">All Tools</a>
-
-</nav>
+<script>
+fetch('nav.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('navigation').innerHTML = data;
+});
+</script>
 
 <div style="max-width:900px; margin:40px auto;">
 
