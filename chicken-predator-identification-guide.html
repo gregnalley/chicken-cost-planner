@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Chicken Predator Identification Guide | What Attacked My Chickens?</title>
+
+<meta name="description" content="Use this chicken predator identification guide to help determine what attacked your chickens based on missing birds, feathers, eggs, wounds, tracks, and coop damage.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f7f9fb;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("images/hero-chickens.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:white;
+
+padding:110px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+/* ===========================
+   ARTICLE SECTIONS
+=========================== */
+
+.section{
+    background:#ffffff;
+    padding:35px;
+    margin:35px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1B5E20;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.section p{
+    line-height:1.7;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.tip-box{
+
+background:#F4FAEE;
+
+border-left:6px solid #4CAF50;
+
+padding:22px;
+
+margin:40px 0;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.tip-box h3{
+
+margin-top:0;
+
+color:#2E7D32;
+
+font-size:24px;
+
+}
+
+.tip-box p{
+
+margin-bottom:0;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Article",
+"headline":"Chicken Predator Identification Guide",
+"description":"A practical guide to help backyard chicken keepers identify likely predators based on attack signs.",
+"author":{
+"@type":"Person",
+"name":"Greg Nalley"
+},
+"publisher":{
+"@type":"Organization",
+"name":"Backyard Chicken Planner"
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Free calculators, planning tools, practical guides, and equipment recommendations for backyard chicken keepers.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<div style="max-width:900px; margin:40px auto;">
+
+<div class="content">
+
+<div class="banner">
+
+<h1>🦊 Chicken Predator Identification Guide</h1>
+
+<p>
+Trying to figure out what attacked your chickens? This guide helps you compare clues such as missing birds, scattered feathers, damaged fencing, missing eggs, wounds, tracks, and timing of the attack.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚨 First: Secure the Remaining Flock</h2>
+
+<p>
+If you believe a predator attacked your chickens, secure the surviving birds before investigating too deeply. Predators often return once they discover an easy food source.
+</p>
+
+<ul>
+<li>Lock the remaining chickens inside a secure coop or garage if needed.</li>
+<li>Inspect doors, vents, windows, and fencing for damage.</li>
+<li>Remove or secure spilled feed.</li>
+<li>Do not leave injured birds outside overnight.</li>
+<li>Check again at dusk and early morning.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🔎 Quick Predator Clue Finder</h2>
+
+<table>
+<tr>
+<th>What You Found</th>
+<th>Possible Predator</th>
+</tr>
+
+<tr>
+<td>Chicken completely missing with scattered feathers</td>
+<td>Fox, coyote, hawk, dog</td>
+</tr>
+
+<tr>
+<td>Head missing</td>
+<td>Raccoon, owl, weasel</td>
+</tr>
+
+<tr>
+<td>Multiple birds killed but not eaten</td>
+<td>Dog, weasel, raccoon</td>
+</tr>
+
+<tr>
+<td>Eggs missing</td>
+<td>Snake, rat, raccoon, opossum</td>
+</tr>
+
+<tr>
+<td>Small chicks missing</td>
+<td>Snake, rat, weasel, raccoon</td>
+</tr>
+
+<tr>
+<td>Fence dug under</td>
+<td>Fox, coyote, dog</td>
+</tr>
+
+<tr>
+<td>Latch opened or disturbed</td>
+<td>Raccoon</td>
+</tr>
+
+<tr>
+<td>Attack during daytime</td>
+<td>Hawk, dog, fox</td>
+</tr>
+
+<tr>
+<td>Attack at night</td>
+<td>Raccoon, fox, coyote, owl, opossum, weasel</td>
+</tr>
+</table>
+
+</div>
+
+<div class="tip-box">
+
+<h3>💡 Backyard Chicken Planner Tip</h3>
+
+<p>
+Do not rely on one clue alone. Timing, tracks, entry point, wounds, missing eggs, and feather patterns together give you a much better idea of what predator was involved.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🦝 Raccoon Attack Signs</h2>
+
+<p>
+Raccoons are strong, clever, and common around backyard chicken coops. They can open simple latches, reach through wire, and attack birds through openings.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Head or neck injuries<br>
+Birds pulled against wire<br>
+Opened or disturbed latches<br>
+Nighttime attack
+</td>
+<td>
+Upgrade to locking latches<br>
+Use 1/2-inch hardware cloth<br>
+Secure doors and vents<br>
+Consider an automatic coop door
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🦊 Fox Attack Signs</h2>
+
+<p>
+Foxes often grab chickens and carry them away. They are most active around dawn and dusk but may also hunt during the day if hungry or raising young.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Missing chicken<br>
+Scattered feathers<br>
+Possible digging under fence<br>
+Attack near dawn or dusk
+</td>
+<td>
+Add buried wire apron<br>
+Use electric poultry netting<br>
+Secure free-range areas<br>
+Supervise dawn and dusk ranging
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🐺 Coyote Attack Signs</h2>
+
+<p>
+Coyotes can take chickens quickly and may leave very little behind. They are especially common in rural areas, wooded edges, and open fields.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Missing birds<br>
+Large tracks nearby<br>
+Digging or fence damage<br>
+Night or early morning attack
+</td>
+<td>
+Strengthen perimeter fencing<br>
+Use electric fencing if needed<br>
+Lock flock inside at night<br>
+Avoid leaving birds unattended in open areas
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🦅 Hawk or Owl Attack Signs</h2>
+
+<p>
+Hawks usually attack during the day, while owls are more active at night or near dusk. Aerial predators often target smaller birds or isolated chickens.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Feathers in open area<br>
+Bird missing or partially eaten<br>
+Attack during day or dusk<br>
+No obvious fence damage
+</td>
+<td>
+Add overhead netting<br>
+Provide shrubs and shelters<br>
+Use covered runs<br>
+Supervise free ranging
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🐍 Snake Attack Signs</h2>
+
+<p>
+Snakes usually target eggs or chicks rather than full-grown hens. They often enter through small gaps and may be attracted by rodents around feed.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Missing eggs<br>
+Missing chicks<br>
+No major coop damage<br>
+Small gaps around coop
+</td>
+<td>
+Seal openings<br>
+Use 1/2-inch hardware cloth<br>
+Secure feed<br>
+Reduce rodent activity
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🐕 Dog Attack Signs</h2>
+
+<p>
+Dogs can cause serious losses quickly, even when they are not trying to eat the chickens. Chasing alone can injure or kill birds.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Multiple birds dead<br>
+Birds scattered around yard<br>
+Fence pushed in or damaged<br>
+Daytime attack
+</td>
+<td>
+Repair fencing immediately<br>
+Add stronger gates<br>
+Supervise free ranging<br>
+Consider electric netting where appropriate
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🐀 Rat or Weasel Attack Signs</h2>
+
+<p>
+Rats and weasels are especially dangerous to chicks, eggs, and small birds. Weasels may kill multiple birds in one attack and enter through very small openings.
+</p>
+
+<table>
+<tr><th>Common Signs</th><th>What to Do Next</th></tr>
+<tr>
+<td>
+Small chicks missing or dead<br>
+Eggs damaged or missing<br>
+Small entry holes<br>
+Multiple birds killed
+</td>
+<td>
+Seal small gaps<br>
+Use hardware cloth<br>
+Secure feed storage<br>
+Inspect brooder and coop corners
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>📷 When You Are Not Sure</h2>
+
+<p>
+If the clues are unclear, a trail camera or coop camera can help identify what is visiting your coop at night. This can prevent you from spending money on the wrong solution.
+</p>
+
+<p>
+Look for tracks, droppings, dig marks, loose feathers, disturbed latches, and damaged wire. Take photos before cleaning up if you want to compare signs later.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>✅ What to Do After a Predator Attack</h2>
+
+<ol>
+<li><strong>Secure surviving chickens immediately.</strong></li>
+<li><strong>Inspect every opening in the coop and run.</strong></li>
+<li><strong>Repair damaged fencing before nightfall.</strong></li>
+<li><strong>Upgrade weak wire to hardware cloth.</strong></li>
+<li><strong>Remove spilled feed and secure feed storage.</strong></li>
+<li><strong>Consider a camera if the predator is unknown.</strong></li>
+<li><strong>Expect the predator to return.</strong></li>
+</ol>
+
+</div>
+
+<div class="section">
+
+<h2>🔗 Related Predator Protection Resources</h2>
+
+<ul>
+<li><a href="best-chicken-predator-protection.html">🦊 Best Chicken Predator Protection</a></li>
+<li><a href="best-automatic-chicken-coop-doors.html">🚪 Best Automatic Chicken Coop Doors</a></li>
+<li><a href="best-chicken-coops.html">🏠 Best Chicken Coops</a></li>
+<li><a href="chicken-supplies.html">🛒 Chicken Equipment & Supplies Hub</a></li>
+<li><a href="chicken-coop-size-guide.html">📏 Chicken Coop Size Guide</a></li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🏁 Final Thoughts</h2>
+
+<p>
+A predator attack is frustrating and upsetting, but the clues left behind can help you understand what happened. Once you identify the likely predator, you can focus on the right protection instead of guessing.
+</p>
+
+<p>
+Predators often return, so act quickly. Secure the flock, repair weak points, and build multiple layers of protection before the next night.
+</p>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+<script src="scripts/load-components.js"></script>
+
+</body>
+</html>
