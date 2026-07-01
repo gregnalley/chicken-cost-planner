@@ -11,6 +11,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Paste your existing working <style> section here -->
+
 <style>
 
 *{
@@ -395,6 +397,145 @@ color:#555;
     font-size:18px;
 }
 
+.tip-box{
+
+background:#F4FAEE;
+
+border-left:6px solid #4CAF50;
+
+padding:22px;
+
+margin:40px 0;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.tip-box h3{
+
+margin-top:0;
+
+color:#2E7D32;
+
+font-size:24px;
+
+}
+
+.tip-box p{
+
+margin-bottom:0;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+</style>
+
+<style>
+.calculator-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+.calc-panel{
+background:white;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
+overflow:hidden;
+}
+
+.calc-panel h2{
+background:#145A32;
+color:white;
+padding:18px 24px;
+font-size:24px;
+margin:0;
+}
+
+.calc-body{
+padding:28px;
+}
+
+.calc-field{
+margin-bottom:22px;
+}
+
+.calc-field label{
+display:block;
+font-weight:bold;
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.calc-field select{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:8px;
+background:white;
+}
+
+.calc-help{
+font-size:14px;
+color:#666;
+margin-top:6px;
+}
+
+.calc-button{
+width:100%;
+padding:16px;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:8px;
+background:#2E7D32;
+color:white;
+cursor:pointer;
+}
+
+.calc-button:hover{
+background:#1B5E20;
+}
+
+.result-card{
+background:#f4f9f4;
+padding:22px;
+border-radius:12px;
+margin-bottom:18px;
+border-left:6px solid #2E7D32;
+}
+
+.result-card h3{
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.result-number{
+font-size:30px;
+font-weight:bold;
+color:#145A32;
+}
+
+.calc-note{
+background:#fff8e1;
+padding:18px;
+border-radius:10px;
+margin-top:20px;
+border-left:6px solid #fbc02d;
+}
+
+@media(max-width:800px){
+.calculator-grid{
+grid-template-columns:1fr;
+}
+}
 </style>
 
 <script type="application/ld+json">
@@ -409,7 +550,7 @@ color:#555;
 },
 "publisher":{
 "@type":"Organization",
-"name":"Chicken Cost Planner"
+"name":"Backyard Chicken Planner"
 }
 }
 </script>
@@ -418,32 +559,28 @@ color:#555;
 
 <body>
 
-    <header class="site-header">
+<header class="site-header">
 
 <h1>🐔 Backyard Chicken Planner</h1>
 
 <p>
-Free calculators, planning tools, and practical guides
-for backyard chicken keepers.
+Free calculators, planning tools, practical guides, and equipment recommendations for backyard chicken keepers.
 </p>
 
 </header>
 
 <div id="navigation"></div>
 
-
 <div style="max-width:900px; margin:40px auto;">
 
-    <div class="banner">
+<div class="content">
 
-<h1>
-🏠 Chicken Coop Cost Calculator & Complete Cost Guide
-</h1>
+<div class="banner">
+
+<h1>🏠 Chicken Coop Cost Calculator & Complete Cost Guide</h1>
 
 <p>
-
-Learn how much it really costs to build or buy a chicken coop, compare DIY and prefab options, discover hidden expenses, and estimate startup costs for your flock.
-
+Estimate the startup cost of building or buying a backyard chicken coop, including coop type, fencing, equipment, coop space, run space, and nesting boxes.
 </p>
 
 </div>
@@ -453,62 +590,140 @@ Learn how much it really costs to build or buy a chicken coop, compare DIY and p
 <h2>🐔 How Much Does a Chicken Coop Cost?</h2>
 
 <p>
-
 The cost of a chicken coop can vary dramatically depending on flock size, materials, predator protection, and whether you build the coop yourself or purchase a prebuilt model.
+</p>
 
-While some backyard chicken owners spend less than $200 on a simple DIY coop, others invest several thousand dollars in large walk-in structures with automatic doors, electricity, and enclosed runs.
+<p>
+Some backyard chicken owners spend less than $300 on a simple DIY setup, while others invest several thousand dollars in large walk-in coops with enclosed runs, automatic doors, electricity, and premium predator protection.
+</p>
 
-This guide explains the major costs involved, common mistakes beginners make, and provides a free calculator to help estimate the startup expenses for your own flock.
-
+<p>
+This guide explains the major cost factors, common beginner mistakes, hidden expenses, and realistic startup budgets. Use the calculator below to estimate your own coop setup before you begin buying materials or equipment.
 </p>
 
 </div>
 
 <div class="section">
 
-<div class="toc">
+<h2>🧮 Chicken Coop Cost Calculator</h2>
 
-<h2>📋 Table of Contents</h2>
+<p>
+Use this calculator to estimate your basic startup cost based on flock size, coop type, fencing, and equipment package. These numbers are estimates, but they can help you compare different setup options before spending money.
+</p>
 
-<ul>
+<div class="calculator-grid">
 
-<li>Typical Chicken Coop Cost Ranges</li>
+<div class="calc-panel">
 
-<li>Factors That Affect Chicken Coop Costs</li>
+<h2>🏠 Your Coop Setup</h2>
 
-<li>DIY vs Prebuilt Chicken Coops</li>
+<div class="calc-body">
 
-<li>Hidden Costs Many Beginners Forget</li>
+<div class="calc-field">
+<label for="chickens">🐔 Number of Chickens</label>
+<select id="chickens">
+<option value="4">4 chickens</option>
+<option value="6">6 chickens</option>
+<option value="8">8 chickens</option>
+<option value="10">10 chickens</option>
+<option value="12">12 chickens</option>
+</select>
+<div class="calc-help">Choose the approximate size of your starter flock.</div>
+</div>
 
-<li>Annual Maintenance Costs</li>
+<div class="calc-field">
+<label for="coop">🏠 Coop Type</label>
+<select id="coop">
+<option value="150">DIY Basic Coop ($150)</option>
+<option value="500">Prebuilt Basic Coop ($500)</option>
+<option value="1200">Large Premium Coop ($1,200)</option>
+<option value="2500">Custom Walk-In Coop ($2,500)</option>
+</select>
+<div class="calc-help">DIY is usually cheaper, while prefab and walk-in coops save time or add convenience.</div>
+</div>
 
-<li>Example Budgets for Different Flock Sizes</li>
+<div class="calc-field">
+<label for="fence">🛡️ Fencing Type</label>
+<select id="fence">
+<option value="0">Free Range / No Fence ($0)</option>
+<option value="120">Basic Wire Fence ($120)</option>
+<option value="600">Electric Poultry Netting ($600)</option>
+</select>
+<div class="calc-help">Predator protection and run fencing can become a major part of total cost.</div>
+</div>
 
-<li>Chicken Coop Cost Calculator</li>
+<div class="calc-field">
+<label for="equipment">🧰 Equipment Package</label>
+<select id="equipment">
+<option value="75">Starter Kit ($75)</option>
+<option value="150">Standard Kit ($150)</option>
+<option value="300">Premium Kit ($300)</option>
+</select>
+<div class="calc-help">Includes estimated feeders, waterers, bedding starter supplies, and basic accessories.</div>
+</div>
 
-<li>Frequently Asked Questions</li>
+<button class="calc-button" onclick="calculate()">Calculate Startup Cost</button>
 
-<li>Related Chicken Tools</li>
+<div class="calc-note">
+<strong>Planning your flock size?</strong><br>
+Use the <a href="backyard-chicken-flock-planner.html">Backyard Chicken Flock Planner</a> first if you are not sure how many hens you need.
+</div>
 
-</ul>
+</div>
+
+</div>
+
+<div class="calc-panel">
+
+<h2>📊 Estimated Coop Plan</h2>
+
+<div class="calc-body">
+
+<div class="result-card">
+<h3>💰 Total Startup Cost</h3>
+<div class="result-number" id="totalResult">$0.00</div>
+<p>Estimated coop, fencing, and equipment cost.</p>
+</div>
+
+<div class="result-card">
+<h3>🐔 Cost Per Chicken</h3>
+<div class="result-number" id="perChickenResult">$0.00</div>
+<p>Estimated startup cost divided by flock size.</p>
+</div>
+
+<div class="result-card">
+<h3>🏠 Suggested Coop Space</h3>
+<div class="result-number" id="coopSizeResult">0 sq ft</div>
+<p>Based on about 4 square feet per chicken.</p>
+</div>
+
+<div class="result-card">
+<h3>🌿 Suggested Run Space</h3>
+<div class="result-number" id="runSizeResult">0 sq ft</div>
+<p>Based on about 10 square feet per chicken.</p>
+</div>
+
+<div class="result-card">
+<h3>🥚 Nesting Boxes</h3>
+<div class="result-number" id="nestBoxResult">0</div>
+<p>Estimated nesting boxes needed.</p>
+</div>
+
+</div>
 
 </div>
 
 </div>
 
-<div class="section">
+</div>
 
 <div class="tip-box">
 
-<h3>💡 Pro Tip</h3>
+<h3>💡 Backyard Chicken Planner Tip</h3>
 
 <p>
-
-Many experienced chicken keepers consider predator protection one of the most important investments. Spending more on quality hardware cloth instead of ordinary chicken wire can save both money and frustration in the long run.
-
+Many first-time chicken keepers underestimate predator protection. Spending more on quality hardware cloth, strong latches, and secure fencing usually saves money and frustration over the long run.
 </p>
-
-</div>
 
 </div>
 
@@ -516,14 +731,7 @@ Many experienced chicken keepers consider predator protection one of the most im
 
 <h2>💲 Typical Chicken Coop Cost Ranges</h2>
 
-<p>
-
-One of the most common questions new chicken owners ask is how much they should expect to spend on housing. The answer depends largely on whether you build the coop yourself, buy a prefabricated model, or invest in a larger walk-in structure.
-
-</p>
-
 <table>
-
 <tr>
 <th>Coop Type</th>
 <th>Typical Cost</th>
@@ -553,13 +761,10 @@ One of the most common questions new chicken owners ask is how much they should 
 <td>$2,500 - $10,000+</td>
 <td>Serious hobbyists</td>
 </tr>
-
 </table>
 
 <p>
-
 Many first-time chicken owners underestimate the importance of predator protection, ventilation, and ease of cleaning. Spending slightly more upfront often saves money later by reducing repairs and maintenance.
-
 </p>
 
 </div>
@@ -568,51 +773,20 @@ Many first-time chicken owners underestimate the importance of predator protecti
 
 <h2>📋 What Affects Chicken Coop Cost?</h2>
 
-<p>
-
-Chicken coop costs vary significantly because every flock and property is different. Several major factors influence the final price.
-
-</p>
-
 <h3>🐔 Number of Chickens</h3>
+<p>Larger flocks require more interior floor space, larger outdoor runs, additional nesting boxes, and stronger framing materials.</p>
 
-<p>
-
-Larger flocks require more interior floor space, larger outdoor runs, additional nesting boxes, and stronger framing materials.
-
-</p>
-
-<h3>🛡 Predator Protection</h3>
-
-<p>
-
-Hardware cloth, buried wire, stronger latches, and secure roofing increase costs but provide much better protection against raccoons, foxes, dogs, and hawks.
-
-</p>
+<h3>🛡️ Predator Protection</h3>
+<p>Hardware cloth, buried wire, stronger latches, and secure roofing increase costs but provide much better protection against raccoons, foxes, dogs, and hawks.</p>
 
 <h3>🏠 Building Materials</h3>
-
-<p>
-
-Pressure-treated lumber, metal roofing, and quality fasteners can dramatically increase durability but also increase construction costs.
-
-</p>
+<p>Pressure-treated lumber, metal roofing, quality fasteners, roofing panels, and weather-resistant siding can dramatically affect the final price.</p>
 
 <h3>⚡ Convenience Features</h3>
+<p>Automatic doors, electricity, lighting, heated water systems, and walk-in access increase cost but can make daily chicken care much easier.</p>
 
-<p>
-
-Automatic doors, electricity, lighting, and heated water systems are popular upgrades that increase both cost and convenience.
-
-</p>
-
-<h3>🌳 Outdoor Run Size</h3>
-
-<p>
-
-Larger runs require additional fencing and hardware cloth, which often becomes one of the largest expenses in the project.
-
-</p>
+<h3>🌿 Outdoor Run Size</h3>
+<p>Larger runs require additional fencing, posts, hardware cloth, roofing, or netting, which often becomes one of the largest expenses in the project.</p>
 
 </div>
 
@@ -621,13 +795,10 @@ Larger runs require additional fencing and hardware cloth, which often becomes o
 <h2>🔨 DIY vs Prefabricated Chicken Coops</h2>
 
 <p>
-
-Should you build your own chicken coop or buy one? Both options have advantages and disadvantages.
-
+Should you build your own chicken coop or buy one? Both options can work, but they fit different kinds of chicken keepers.
 </p>
 
 <table>
-
 <tr>
 <th>Feature</th>
 <th>DIY Coop</th>
@@ -649,84 +820,39 @@ Should you build your own chicken coop or buy one? Both options have advantages 
 <tr>
 <td>Time Required</td>
 <td>Higher</td>
-<td>Minimal</td>
-</tr>
-
-<tr>
-<td>Construction Skills Needed</td>
-<td>Moderate</td>
-<td>Very Low</td>
-</tr>
-
-<tr>
-<td>Convenience</td>
 <td>Lower</td>
-<td>Excellent</td>
 </tr>
 
+<tr>
+<td>Construction Skills</td>
+<td>Moderate</td>
+<td>Low</td>
+</tr>
+
+<tr>
+<td>Long-Term Durability</td>
+<td>Excellent when built well</td>
+<td>Varies by model</td>
+</tr>
 </table>
 
 <p>
-
-Many backyard chicken keepers choose a middle ground by modifying a prefab coop or converting existing sheds and outbuildings into chicken housing.
-
+Many backyard chicken keepers choose a middle ground by modifying a prefab coop, converting an existing shed, or building a basic structure from plans.
 </p>
 
 </div>
 
 <div class="section">
 
-<h2>🐓 Real-World Lessons From Chicken Owners</h2>
+<h2>⚠️ Common Coop Budget Mistakes</h2>
 
-<p>
-
-Many new chicken keepers focus heavily on the cost of the coop itself while overlooking the importance of long-term durability and predator protection.
-
-</p>
-
-<p>
-
-One of the most common mistakes is using ordinary chicken wire where hardware cloth would provide much better protection. Chicken wire is designed primarily to keep chickens contained, while hardware cloth is far more effective at keeping predators out.
-
-</p>
-
-<p>
-
-Another mistake is building too small. Most people who begin with four or six chickens eventually expand their flock, and many owners find themselves wishing they had built a larger coop from the beginning.
-
-</p>
-
-<p>
-
-Planning for future growth often saves money compared to rebuilding or expanding later.
-
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>⚠ Common Mistakes First-Time Chicken Owners Make</h2>
-
-<ul>
-
-<li>Building a coop that is too small.</li>
-
-<li>Underestimating predator pressure.</li>
-
-<li>Choosing cheap materials that require early replacement.</li>
-
-<li>Forgetting ventilation requirements.</li>
-
-<li>Ignoring future flock expansion.</li>
-
-<li>Buying feeders and waterers that are too small.</li>
-
-<li>Neglecting drainage around the coop.</li>
-
-<li>Failing to budget for fencing and hardware cloth.</li>
-
-</ul>
+<ol>
+<li><strong>Buying too small.</strong> Many people wish they had built a larger coop once their flock grows.</li>
+<li><strong>Forgetting the run.</strong> Outdoor space and fencing can cost as much as the coop itself.</li>
+<li><strong>Using chicken wire for predator protection.</strong> Hardware cloth is stronger and safer for permanent coops.</li>
+<li><strong>Ignoring ventilation.</strong> Poor airflow can create moisture, odor, and health problems.</li>
+<li><strong>Not budgeting for accessories.</strong> Feeders, waterers, bedding, nest boxes, and latches all add to the total cost.</li>
+</ol>
 
 </div>
 
@@ -735,13 +861,10 @@ Planning for future growth often saves money compared to rebuilding or expanding
 <h2>💸 Hidden Costs Many New Chicken Owners Forget</h2>
 
 <p>
-
-The chicken coop itself is only part of the total investment. Many first-time chicken owners focus on lumber and fencing while overlooking several smaller expenses that add up over time.
-
+The chicken coop itself is only part of the total investment. Many beginners budget for lumber or a prefab coop but forget the smaller items that make the setup safe, clean, and practical.
 </p>
 
 <table>
-
 <tr>
 <th>Item</th>
 <th>Typical Cost</th>
@@ -753,13 +876,13 @@ The chicken coop itself is only part of the total investment. Many first-time ch
 </tr>
 
 <tr>
-<td>Brooder Supplies</td>
-<td>$40 - $150</td>
+<td>Feeders and Waterers</td>
+<td>$25 - $150</td>
 </tr>
 
 <tr>
-<td>Additional Feeders and Waterers</td>
-<td>$25 - $100</td>
+<td>Nesting Boxes</td>
+<td>$25 - $200+</td>
 </tr>
 
 <tr>
@@ -768,26 +891,23 @@ The chicken coop itself is only part of the total investment. Many first-time ch
 </tr>
 
 <tr>
-<td>Mite and Parasite Treatments</td>
-<td>$20 - $75 annually</td>
+<td>Hardware Cloth and Latches</td>
+<td>$50 - $300+</td>
 </tr>
 
 <tr>
-<td>Replacement Equipment</td>
-<td>$25 - $150 annually</td>
+<td>Automatic Coop Door</td>
+<td>$150 - $400+</td>
 </tr>
 
 <tr>
 <td>Predator Repairs</td>
 <td>Varies</td>
 </tr>
-
 </table>
 
 <p>
-
-These expenses are usually not large individually, but they can surprise beginners who only budget for the coop itself.
-
+These expenses are not always large individually, but together they can significantly change your real startup cost.
 </p>
 
 </div>
@@ -797,13 +917,10 @@ These expenses are usually not large individually, but they can surprise beginne
 <h2>🔧 Annual Chicken Coop Maintenance Costs</h2>
 
 <p>
-
-Owning chickens is relatively inexpensive compared to many hobbies, but there are ongoing costs that should be considered.
-
+A well-built chicken coop can last for many years, but every coop requires some ongoing maintenance. Budgeting for small repairs helps avoid bigger problems later.
 </p>
 
 <table>
-
 <tr>
 <th>Expense</th>
 <th>Estimated Annual Cost</th>
@@ -830,17 +947,10 @@ Owning chickens is relatively inexpensive compared to many hobbies, but there ar
 </tr>
 
 <tr>
-<td>Paint and Wood Protection</td>
+<td>Paint, Stain, or Wood Protection</td>
 <td>$20 - $100</td>
 </tr>
-
 </table>
-
-<p>
-
-A well-built coop can last for many years, making higher-quality materials a worthwhile investment for many backyard chicken keepers.
-
-</p>
 
 </div>
 
@@ -849,17 +959,14 @@ A well-built coop can last for many years, making higher-quality materials a wor
 <h2>🐔 Example Chicken Coop Budgets</h2>
 
 <p>
-
-The following examples provide realistic estimates for common flock sizes.
-
+These examples give a rough idea of what different flock sizes may cost. Actual prices vary depending on local material costs, whether you build or buy, and how much predator protection you add.
 </p>
 
 <table>
-
 <tr>
 <th>Flock Size</th>
 <th>Estimated Startup Cost</th>
-<th>Typical Coop Size</th>
+<th>Typical Coop Space</th>
 </tr>
 
 <tr>
@@ -885,178 +992,28 @@ The following examples provide realistic estimates for common flock sizes.
 <td>$800 - $2,500+</td>
 <td>48 sq ft</td>
 </tr>
-
 </table>
 
 <p>
-
-Building slightly larger than your current needs often saves money because many chicken owners eventually increase the size of their flock.
-
+Building slightly larger than your current needs can save money if you expect to expand your flock later.
 </p>
 
 </div>
-
-<div class="section">
-
-<h2>🧮 Chicken Coop Cost Calculator</h2>
-
-<p>
-
-Use the calculator below to estimate your total startup costs based on flock size, coop type, fencing, and equipment package.
-
-These numbers are estimates and actual costs will vary depending on local material prices, labor, and optional upgrades.
-
-</p>
-
-</div>
-
-
-<div class="section">
-
-    <h2>🏠 Chicken Coop Cost Calculator</h2>
-
-    <p>
-        Estimate the total cost of building or buying a backyard chicken coop, including materials, fencing, and basic setup equipment.
-        This tool helps you plan realistic startup costs before getting chickens.
-    </p>
-
-</div>
-
-<div class="section">
-
-    <h3>Build vs Buy Chicken Coop Cost Comparison</h3>
-
-    <p>
-        Building your own coop is usually cheaper but requires time and basic construction skills.
-        Buying a prebuilt coop is more expensive but saves time and ensures consistent design quality.
-        If you are on a budget and have basic tools, building your own coop is usually the best option.
-        If you want speed and convenience, buying a prebuilt coop may be worth the higher cost.
-    </p>
-
-</div>
-
-<div class="banner">
-    <h1>🏠 Chicken Coop Cost Estimator | Backyard Chicken Coop Build & Startup Cost Calculator</h1>
-    <p>Estimate total startup cost for your backyard chicken setup</p>
-</div>
-
-<div class="section">
-
-    <h3>Typical Chicken Coop Cost Ranges</h3>
-
-    <p>
-        DIY Basic Coop: $150 – $600<br>
-        Prebuilt Coop: $500 – $1,500<br>
-        Large Walk-in Coop: $1,200 – $3,000+<br>
-    </p>
-
-</div>
-
-<div class="section">
-
-    <label>Number of Chickens:</label>
-    <select id="chickens">
-        <option value="4">4</option>
-        <option value="6">6</option>
-        <option value="8">8</option>
-        <option value="10">10</option>
-        <option value="12">12</option>
-    </select>
-
-    <label>Coop Type:</label>
-    <select id="coop">
-        <option value="150">DIY Basic Coop ($150)</option>
-        <option value="500">Prebuilt Basic Coop ($500)</option>
-        <option value="1200">Large Premium Coop ($1200)</option>
-        <option value="2500">Custom Walk-in Coop ($2500)</option>
-    </select>
-
-    <label>Fencing Type:</label>
-    <select id="fence">
-        <option value="0">Free Range (No Fence)</option>
-        <option value="120">Basic Wire Fence ($120)</option>
-        <option value="600">Electric Net Fence ($600)</option>
-    </select>
-
-    <label>Equipment Package:</label>
-    <select id="equipment">
-        <option value="75">Starter Kit ($75)</option>
-        <option value="150">Standard Kit ($150)</option>
-        <option value="300">Premium Kit ($300)</option>
-    </select>
-
-    <button onclick="calculate()">Calculate Startup Cost</button>
-
-    <div class="result" id="result"></div>
-
-</div>
-
-<script>
-
-function calculate() {
-
-    let chickens = parseFloat(document.getElementById("chickens").value);
-    let coop = parseFloat(document.getElementById("coop").value);
-    let fence = parseFloat(document.getElementById("fence").value);
-    let equipment = parseFloat(document.getElementById("equipment").value);
-
-    let total = coop + fence + equipment;
-    let perChicken = total / chickens;
-
-    let coopSize = chickens * 4;
-    let runSize = chickens * 10;
-    let nestingBoxes = Math.ceil(chickens / 4);
-
-    document.getElementById("result").innerHTML = `
-        🏠 Total Startup Cost: $${total.toFixed(2)}<br>
-        🐔 Cost per Chicken: $${perChicken.toFixed(2)}<br><br>
-
-        
-    `;
-}
-
-</script>
 
 <div class="section">
 
 <h2>📈 Is Raising Chickens Worth the Cost?</h2>
 
 <p>
-
-For many families, raising chickens provides benefits that extend beyond egg production. Backyard chickens can provide fresh eggs, natural pest control, compost material, and a rewarding hobby.
-
+For many families, raising chickens provides value beyond simple egg savings. Backyard chickens can provide fresh eggs, compost material, pest control, family education, and a rewarding hobby.
 </p>
 
 <p>
-
-Although the initial investment can seem expensive, many owners find that a well-built coop and healthy flock provide years of enjoyment and food production.
-
+From a strictly financial standpoint, startup costs can take time to recover. But a well-built coop and healthy flock can provide years of enjoyment and food production.
 </p>
 
 <p>
-
-The true value of raising chickens often comes from self-sufficiency, food quality, and the satisfaction of caring for animals rather than purely financial savings.
-
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>🔗 Related Chicken Tools</h2>
-
-<p>
-
-<a href="index.html">🐔 Chicken Feed Cost Calculator</a><br><br>
-
-<a href="egg-profit-calculator.html">🥚 Egg Profit Calculator</a><br><br>
-
-<a href="backyard-chicken-flock-planner.html">📋 Backyard Chicken Flock Planner</a><br><br>
-
-<a href="chicken-coop-size-guide.html">📏 Chicken Coop Size Guide</a><br><br>
-
-<a href="tools.html">🛠 View All Chicken Tools</a>
-
+If your goal is to offset costs, pair this calculator with our <a href="egg-profit-calculator.html">Egg Profit Calculator</a> to estimate how much egg income your flock may produce.
 </p>
 
 </div>
@@ -1068,133 +1025,187 @@ The true value of raising chickens often comes from self-sufficiency, food quali
 <h3>How much does it cost to build a chicken coop?</h3>
 
 <p>
-A simple DIY chicken coop can cost between $150 and $600, while larger walk-in coops may cost $1,200 to $3,000 or more depending on materials and features.
+A simple DIY chicken coop may cost as little as $150 to $600 using basic materials, while larger or custom-built coops often range from $1,500 to well over $5,000 depending on size and features.
 </p>
 
 <h3>Is it cheaper to build or buy a chicken coop?</h3>
 
 <p>
-Building your own coop is usually cheaper, especially if you already own tools and have basic carpentry skills. Prefabricated coops offer convenience but often cost more.
+If you already own basic tools and enjoy DIY projects, building your own coop is usually the least expensive option. Purchasing a prefab coop saves time but often costs considerably more for the same amount of usable space.
 </p>
 
-<h3>How much should I budget for six chickens?</h3>
+<h3>How much space does each chicken need?</h3>
 
 <p>
-Most people spend between $400 and $1,200 for a complete setup including the coop, fencing, feeders, and waterers.
-</p>
-
-<h3>How big should a chicken coop be?</h3>
-
-<p>
-Most experts recommend approximately four square feet of indoor space per bird, with eight to ten square feet of outdoor run space per chicken.
-</p>
-
-<h3>Do I need hardware cloth or chicken wire?</h3>
-
-<p>
-Hardware cloth provides significantly better predator protection than standard chicken wire and is recommended for most permanent coops.
-</p>
-
-<h3>What is the most expensive part of building a chicken coop?</h3>
-
-<p>
-For many owners, lumber and predator-proof fencing represent the largest portion of the budget.
-</p>
-
-<h3>How long will a chicken coop last?</h3>
-
-<p>
-A well-built coop constructed with quality materials can easily last 10 to 20 years with proper maintenance.
-</p>
-
-<h3>Can I convert a shed into a chicken coop?</h3>
-
-<p>
-Yes. Many backyard chicken keepers successfully convert small sheds into coops, which can save both time and construction costs.
+Most backyard flocks benefit from about <strong>4 square feet of indoor coop space</strong> and at least <strong>10 square feet of outdoor run space per chicken</strong>. Larger breeds generally appreciate additional room.
 </p>
 
 <h3>How many nesting boxes do I need?</h3>
 
 <p>
-Most flocks need one nesting box for every three to four hens.
+Most backyard flocks only require one nesting box for every three to four hens. Chickens naturally prefer to share nesting boxes, so adding more than necessary usually provides little benefit.
 </p>
 
-<h3>Should I build larger than I currently need?</h3>
+<h3>Should I build a larger coop than I currently need?</h3>
 
 <p>
-Many chicken owners eventually expand their flocks, so building slightly larger often prevents costly upgrades later.
+In many cases, yes. New chicken keepers often discover they want to expand their flock after the first year. Building slightly larger now is usually less expensive than replacing the entire coop later.
+</p>
+
+</div>
+
+<div class="tip-box">
+
+<h3>💡 Backyard Chicken Planner Tip</h3>
+
+<p>
+If your budget allows, spend your extra money on predator protection before decorative features. Strong hardware cloth, quality latches, and a secure run will protect your flock far better than paint colors or decorative trim.
 </p>
 
 </div>
 
 <div class="section">
 
-<h2>🐓 Final Thoughts</h2>
+<h2>🔗 Continue Planning Your Backyard Flock</h2>
 
 <p>
-
-Whether you are planning for four hens or a larger backyard flock, investing in a quality chicken coop can provide years of enjoyment and fresh eggs.
-
-Although costs vary widely, careful planning and realistic budgeting can help you avoid common mistakes and build a setup that meets your needs both now and in the future.
-
-Use the calculator above to estimate your startup costs and explore our additional chicken tools to help plan every aspect of your flock.
-
+Now that you've estimated your coop budget, continue planning the rest of your backyard chicken setup with these free tools and guides.
 </p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🐥 Backyard Chicken Flock Planner</h3>
+
+<p>
+Estimate the ideal flock size based on your family's egg consumption, winter production, feed costs, and future growth.
+</p>
+
+<a href="backyard-chicken-flock-planner.html">
+Open Flock Planner →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🥚 Egg Profit Calculator</h3>
+
+<p>
+Estimate monthly egg production, egg income, feed costs, and possible profit from your backyard flock.
+</p>
+
+<a href="egg-profit-calculator.html">
+Calculate Egg Profit →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📏 Chicken Coop Size Guide</h3>
+
+<p>
+Learn recommended coop space, run size, nesting boxes, roost space, and planning recommendations for healthy chickens.
+</p>
+
+<a href="chicken-coop-size-guide.html">
+Read Coop Size Guide →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🛒 Recommended Equipment Guides</h2>
+
+<p>
+Once you've decided on your coop budget, the next step is choosing quality equipment that fits your flock and your management style.
+</p>
+
+<ul>
+
+<li><a href="best-chicken-feeders.html">🥣 Best Chicken Feeders</a></li>
+
+<li><a href="best-chicken-waterers.html">💧 Best Chicken Waterers</a></li>
+
+<li><a href="best-chicken-nesting-boxes.html">🥚 Best Chicken Nesting Boxes</a></li>
+
+<li><a href="best-automatic-chicken-coop-doors.html">🚪 Best Automatic Chicken Coop Doors</a></li>
+
+<li><a href="best-chicken-predator-protection.html">🦊 Best Chicken Predator Protection</a></li>
+
+<li><a href="chicken-predator-identification-guide.html">🔍 Chicken Predator Identification Guide</a></li>
+
+<li><a href="chicken-supplies.html">🛒 Chicken Supplies Hub</a></li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Final Thoughts</h2>
+
+<p>
+A well-designed chicken coop is one of the best investments you can make for your flock. Whether you choose a simple DIY build or invest in a premium walk-in coop, careful planning today can save hundreds of dollars—and countless hours of work—later.
+</p>
+
+<p>
+Use the Backyard Chicken Planner tools together to estimate flock size, coop costs, feed expenses, and long-term egg production so you can build a setup that fits both your budget and your goals.
+</p>
+
+</div>
+
+</div>
 
 <div id="footer"></div>
 
-
 </div>
 
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
+<script>
 
-{
-"@type":"Question",
-"name":"How much does it cost to build a chicken coop?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"A simple DIY chicken coop can cost between $150 and $600, while larger walk-in coops may cost $1,200 to $3,000 or more."
-}
-},
+function calculate(){
 
-{
-"@type":"Question",
-"name":"Is it cheaper to build or buy a chicken coop?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Building your own coop is usually cheaper, while prefabricated coops offer convenience and save time."
-}
-},
+let chickens=parseInt(document.getElementById("chickens").value);
 
-{
-"@type":"Question",
-"name":"How much should I budget for six chickens?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Most people spend between $400 and $1,200 for a complete setup including the coop, fencing, feeders, and waterers."
-}
-},
+let coop=parseFloat(document.getElementById("coop").value);
 
-{
-"@type":"Question",
-"name":"How long will a chicken coop last?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"A well-built coop can last 10 to 20 years with proper maintenance."
-}
+let fence=parseFloat(document.getElementById("fence").value);
+
+let equipment=parseFloat(document.getElementById("equipment").value);
+
+let total=coop+fence+equipment;
+
+let costPerChicken=total/chickens;
+
+let coopSpace=chickens*4;
+
+let runSpace=chickens*10;
+
+let nestBoxes=Math.ceil(chickens/4);
+
+document.getElementById("totalResult").innerHTML="$"+total.toFixed(2);
+
+document.getElementById("perChickenResult").innerHTML="$"+costPerChicken.toFixed(2);
+
+document.getElementById("coopSizeResult").innerHTML=coopSpace+" sq ft";
+
+document.getElementById("runSizeResult").innerHTML=runSpace+" sq ft";
+
+document.getElementById("nestBoxResult").innerHTML=nestBoxes;
+
 }
 
-]
-}
 </script>
-
-</div>
 
 <script src="scripts/load-components.js"></script>
 
 </body>
+
 </html>
