@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
-    <title>Backyard Chicken Flock Planner | Flock Size, Feed Cost & Egg Production Calculator</title>
+<meta charset="UTF-8">
 
-    <meta name="description" content="Plan your backyard chicken flock with this free flock planner. Estimate flock size, egg production, feed costs, coop size, and startup planning needs.">
+<title>Backyard Chicken Flock Planner | Flock Size, Feed Cost & Egg Production Calculator</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Plan your backyard chicken flock with this free flock planner. Estimate flock size, egg production, feed costs, coop size, nesting boxes, and startup planning needs.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
 
 <style>
 
@@ -394,6 +397,146 @@ color:#555;
     font-size:18px;
 }
 
+.tip-box{
+
+background:#F4FAEE;
+
+border-left:6px solid #4CAF50;
+
+padding:22px;
+
+margin:40px 0;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.tip-box h3{
+
+margin-top:0;
+
+color:#2E7D32;
+
+font-size:24px;
+
+}
+
+.tip-box p{
+
+margin-bottom:0;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+</style>
+
+<style>
+.calculator-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+.calc-panel{
+background:white;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
+overflow:hidden;
+}
+
+.calc-panel h2{
+background:#145A32;
+color:white;
+padding:18px 24px;
+font-size:24px;
+margin:0;
+}
+
+.calc-body{
+padding:28px;
+}
+
+.calc-field{
+margin-bottom:22px;
+}
+
+.calc-field label{
+display:block;
+font-weight:bold;
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.calc-field input,
+.calc-field select{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:8px;
+background:white;
+}
+
+.calc-help{
+font-size:14px;
+color:#666;
+margin-top:6px;
+}
+
+.calc-button{
+width:100%;
+padding:16px;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:8px;
+background:#2E7D32;
+color:white;
+cursor:pointer;
+}
+
+.calc-button:hover{
+background:#1B5E20;
+}
+
+.result-card{
+background:#f4f9f4;
+padding:22px;
+border-radius:12px;
+margin-bottom:18px;
+border-left:6px solid #2E7D32;
+}
+
+.result-card h3{
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.result-number{
+font-size:30px;
+font-weight:bold;
+color:#145A32;
+}
+
+.calc-note{
+background:#fff8e1;
+padding:18px;
+border-radius:10px;
+margin-top:20px;
+border-left:6px solid #fbc02d;
+}
+
+@media(max-width:800px){
+.calculator-grid{
+grid-template-columns:1fr;
+}
+}
 </style>
 
 </head>
@@ -405,8 +548,7 @@ color:#555;
 <h1>🐔 Backyard Chicken Planner</h1>
 
 <p>
-Free calculators, planning tools, and practical guides
-for backyard chicken keepers.
+Free calculators, planning tools, practical guides, and equipment recommendations for backyard chicken keepers.
 </p>
 
 </header>
@@ -415,108 +557,219 @@ for backyard chicken keepers.
 
 <div style="max-width:900px; margin:40px auto;">
 
+<div class="content">
+
 <div class="banner">
 
-    <h1>🐔 Backyard Chicken Flock Planner</h1>
-
-    <p>
-        Plan your ideal flock size, egg production, feed costs, and coop requirements.
-    </p>
-
-</div>
-
-<div class="section">
-
-    <h2>🥚 Flock Planning Inputs</h2>
-
-    <label>How many eggs does your household use per week?</label>
-    <input id="eggsNeeded" type="number" value="12">
-
-    <label>Average eggs produced per hen per week:</label>
-    <input id="eggsPerHen" type="number" value="5">
-
-    <label>Expected winter egg production reduction (%)</label>
-    <input id="winterReduction" type="number" value="25">
-
-    <label>Extra egg buffer desired (%)</label>
-    <input id="surplus" type="number" value="20">
-
-    <label>Feed bag price ($)</label>
-    <input id="feedBagPrice" type="number" value="22">
-
-    <label>Feed bag weight (lbs)</label>
-    <input id="feedBagWeight" type="number" value="50">
-
-    <label>Free range or confined flock?</label>
-    <select id="rangeType">
-        <option value="0.85">Mostly Free Range</option>
-        <option value="1" selected>Mixed Feed & Foraging</option>
-        <option value="1.2">Mostly Confined</option>
-    </select>
-
-    <button onclick="calculate()">Calculate Flock Plan</button>
-
-    <div class="result" id="result"></div>
-
-</div>
-
-<div class="section">
-
-    <h3>🐔 Why Flock Planning Matters</h3>
-
-    <p>
-        Proper flock planning helps estimate feed costs, coop size, egg production, nesting boxes, and long-term backyard chicken expenses.
-    </p>
-
-</div>
-
-<div class="section">
-
-    <h3>Common Questions</h3>
-
-    <p>
-        How many chickens does a family need?<br>
-        How much feed do backyard chickens consume?<br>
-        How much coop space do chickens need?<br>
-        How many eggs will hens produce in winter?<br>
-        How much does it cost to feed chickens monthly?<br>
-    </p>
-
-</div>
-
-<div class="section">
-
-    <p>
-        Related searches: backyard chicken flock planner, how many chickens do I need, flock size calculator, chicken feed estimator, backyard egg production calculator, coop planning tool.
-    </p>
-
-</div>
-
-<div class="section">
-
-    <h2>🔗 Related Chicken Planning Tools</h2>
-
-    <p><a href="index.html">🐔 Chicken Feed Cost Calculator</a></p>
-
-    <p><a href="egg-profit-calculator.html">🥚 Egg Profit Calculator</a></p>
-
-    <p><a href="chicken-coop-estimator.html">🏠 Chicken Coop Cost Estimator</a></p>
-
-    <p><a href="tools.html">📚 View All Chicken Tools</a></p>
-
-</div>
-
-<div class="section">
-
-<h3>📏 Chicken Coop Size Guide</h3>
+<h1>🐔 Backyard Chicken Flock Planner</h1>
 
 <p>
-Not sure how much space your chickens need? Use our complete sizing guide to learn coop dimensions, run space requirements, nesting boxes, and planning tips.
+Estimate how many hens you need, how many eggs they may produce, how much feed they may eat, and how much coop space your flock may require.
 </p>
 
-<a href="chicken-coop-size-guide.html">
-👉 View Chicken Coop Size Guide
-</a>
+</div>
+
+<div class="section">
+
+<h2>🐥 Plan Your Flock Before You Buy Chickens</h2>
+
+<p>
+One of the most common beginner mistakes is buying chickens before estimating egg needs, coop space, feed costs, and seasonal laying changes. This planner helps you think through those numbers before you commit to a flock size.
+</p>
+
+<p>
+Use this tool to estimate a practical starting flock based on your household egg needs, expected winter slowdown, desired egg buffer, feed cost, and whether your chickens will mostly forage or stay confined.
+</p>
+
+</div>
+
+<div class="section">
+
+<div class="calculator-grid">
+
+<div class="calc-panel">
+
+<h2>🧮 Your Flock Planning Inputs</h2>
+
+<div class="calc-body">
+
+<div class="calc-field">
+<label for="eggsNeeded">🥚 Eggs Needed Per Week</label>
+<input id="eggsNeeded" type="number" value="12">
+<div class="calc-help">Estimate how many eggs your household uses weekly.</div>
+</div>
+
+<div class="calc-field">
+<label for="eggsPerHen">🐔 Eggs Per Hen Per Week</label>
+<input id="eggsPerHen" type="number" value="5">
+<div class="calc-help">Many productive hens average 4–6 eggs weekly during good laying seasons.</div>
+</div>
+
+<div class="calc-field">
+<label for="winterReduction">❄️ Winter Egg Reduction (%)</label>
+<input id="winterReduction" type="number" value="25">
+<div class="calc-help">Egg production often drops in winter or during shorter daylight periods.</div>
+</div>
+
+<div class="calc-field">
+<label for="surplus">📦 Extra Egg Buffer Desired (%)</label>
+<input id="surplus" type="number" value="20">
+<div class="calc-help">Add a cushion for slow weeks, seasonal changes, or sharing eggs.</div>
+</div>
+
+<div class="calc-field">
+<label for="feedBagPrice">🌾 Feed Bag Price ($)</label>
+<input id="feedBagPrice" type="number" value="22">
+<div class="calc-help">Enter the price of one bag of chicken feed.</div>
+</div>
+
+<div class="calc-field">
+<label for="feedBagWeight">⚖️ Feed Bag Weight (lbs)</label>
+<input id="feedBagWeight" type="number" value="50">
+<div class="calc-help">Most common feed bags are 40 or 50 pounds.</div>
+</div>
+
+<div class="calc-field">
+<label for="rangeType">🌿 Feeding Style</label>
+<select id="rangeType">
+<option value="0.85">Mostly Free Range</option>
+<option value="1" selected>Mixed Feed & Foraging</option>
+<option value="1.2">Mostly Confined</option>
+</select>
+<div class="calc-help">Confined chickens usually rely more heavily on purchased feed.</div>
+</div>
+
+<button class="calc-button" onclick="calculate()">Calculate Flock Plan</button>
+
+<div class="calc-note">
+<strong>Planning a coop?</strong><br>
+After calculating flock size, use the <a href="chicken-coop-estimator.html">Chicken Coop Cost Estimator</a> to estimate setup costs.
+</div>
+
+</div>
+
+</div>
+
+<div class="calc-panel">
+
+<h2>📊 Recommended Flock Plan</h2>
+
+<div class="calc-body">
+
+<div class="result-card">
+<h3>🐔 Recommended Hens</h3>
+<div class="result-number" id="hensResult">0</div>
+<p>Estimated number of hens needed.</p>
+</div>
+
+<div class="result-card">
+<h3>🥚 Weekly Eggs</h3>
+<div class="result-number" id="eggsResult">0</div>
+<p>Estimated weekly eggs after winter adjustment.</p>
+</div>
+
+<div class="result-card">
+<h3>🌾 Monthly Feed Use</h3>
+<div class="result-number" id="feedResult">0 lbs</div>
+<p>Estimated feed needed per month.</p>
+</div>
+
+<div class="result-card">
+<h3>💰 Monthly Feed Cost</h3>
+<div class="result-number" id="costResult">$0.00</div>
+<p>Estimated monthly feed expense.</p>
+</div>
+
+<div class="result-card">
+<h3>🏠 Coop Space</h3>
+<div class="result-number" id="coopResult">0 sq ft</div>
+<p>Suggested indoor coop space.</p>
+</div>
+
+<div class="result-card">
+<h3>📦 Nesting Boxes</h3>
+<div class="result-number" id="nestResult">0</div>
+<p>Estimated nesting boxes needed.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📌 How to Use This Flock Planner</h2>
+
+<ul>
+<li><strong>Start with weekly egg needs.</strong> Estimate how many eggs your household realistically uses.</li>
+<li><strong>Use realistic egg production.</strong> Most hens do not lay every day year-round.</li>
+<li><strong>Account for winter slowdowns.</strong> Shorter daylight and colder weather can reduce production.</li>
+<li><strong>Add a buffer.</strong> A small surplus helps cover slow weeks or extra eggs for friends and family.</li>
+<li><strong>Estimate feed costs.</strong> Feed costs vary based on bag price, flock size, and how much your birds forage.</li>
+</ul>
+
+</div>
+
+<div class="tip-box">
+
+<h3>💡 Backyard Chicken Planner Tip</h3>
+
+<p>
+If this is your first flock, it is usually better to start slightly smaller than you think you need. You can always expand later, but overcrowding a coop from the beginning can create stress, odor, health problems, and extra feed waste.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🐔 Why Flock Planning Matters</h2>
+
+<p>
+Flock size affects nearly every part of backyard chicken keeping. More hens means more eggs, but it also means more feed, more bedding, more coop space, more manure, and more daily management.
+</p>
+
+<p>
+A well-planned flock helps you avoid buying too many chickens, undersizing your coop, or underestimating monthly feed costs.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚠️ Common Flock Planning Mistakes</h2>
+
+<ol>
+<li><strong>Buying too many chicks.</strong> Chickens grow quickly and need enough coop and run space.</li>
+<li><strong>Assuming every hen lays daily.</strong> Egg production varies by breed, age, season, and health.</li>
+<li><strong>Ignoring winter production drops.</strong> Many hens slow down during shorter daylight months.</li>
+<li><strong>Forgetting nesting boxes.</strong> Most flocks need about one nesting box for every 3–4 hens.</li>
+<li><strong>Underestimating feed costs.</strong> Feed is usually one of the largest recurring expenses.</li>
+</ol>
+
+</div>
+
+<div class="section">
+
+<h2>🔗 Related Chicken Planning Tools</h2>
+
+<ul>
+<li><a href="index.html">🐔 Chicken Feed Cost Calculator</a></li>
+<li><a href="egg-profit-calculator.html">🥚 Egg Profit Calculator</a></li>
+<li><a href="chicken-coop-estimator.html">🏠 Chicken Coop Cost Estimator</a></li>
+<li><a href="chicken-coop-size-guide.html">📏 Chicken Coop Size Guide</a></li>
+<li><a href="best-chickens-for-beginners.html">🐥 Best Chickens for Beginners</a></li>
+<li><a href="tools.html">🧰 View All Chicken Tools</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
 
 </div>
 
@@ -524,57 +777,48 @@ Not sure how much space your chickens need? Use our complete sizing guide to lea
 
 function calculate() {
 
-    let eggsNeeded = parseFloat(document.getElementById("eggsNeeded").value);
+let eggsNeeded = parseFloat(document.getElementById("eggsNeeded").value);
+let eggsPerHen = parseFloat(document.getElementById("eggsPerHen").value);
+let winterReduction = parseFloat(document.getElementById("winterReduction").value) / 100;
+let surplus = parseFloat(document.getElementById("surplus").value) / 100;
+let feedBagPrice = parseFloat(document.getElementById("feedBagPrice").value);
+let feedBagWeight = parseFloat(document.getElementById("feedBagWeight").value);
+let rangeType = parseFloat(document.getElementById("rangeType").value);
 
-    let eggsPerHen = parseFloat(document.getElementById("eggsPerHen").value);
+if (isNaN(eggsNeeded) || eggsNeeded <= 0) {
+alert("Please enter how many eggs your household needs per week.");
+return;
+}
 
-    let winterReduction = parseFloat(document.getElementById("winterReduction").value) / 100;
+if (isNaN(eggsPerHen) || eggsPerHen <= 0) eggsPerHen = 5;
+if (isNaN(winterReduction)) winterReduction = 0.25;
+if (isNaN(surplus)) surplus = 0.20;
+if (isNaN(feedBagPrice)) feedBagPrice = 0;
+if (isNaN(feedBagWeight) || feedBagWeight <= 0) feedBagWeight = 50;
+if (isNaN(rangeType)) rangeType = 1;
 
-    let surplus = parseFloat(document.getElementById("surplus").value) / 100;
+let adjustedEggsPerHen = eggsPerHen * (1 - winterReduction);
+let targetEggs = eggsNeeded * (1 + surplus);
+let hensNeeded = Math.ceil(targetEggs / adjustedEggsPerHen);
+let weeklyEggs = hensNeeded * adjustedEggsPerHen;
 
-    let feedBagPrice = parseFloat(document.getElementById("feedBagPrice").value);
+let poundsFeedPerMonth = hensNeeded * 6 * rangeType;
+let bagsPerMonth = poundsFeedPerMonth / feedBagWeight;
+let monthlyFeedCost = bagsPerMonth * feedBagPrice;
 
-    let feedBagWeight = parseFloat(document.getElementById("feedBagWeight").value);
+let coopSize = hensNeeded * 4;
+let nestingBoxes = Math.ceil(hensNeeded / 4);
 
-    let rangeType = parseFloat(document.getElementById("rangeType").value);
+document.getElementById("hensResult").innerHTML = hensNeeded;
+document.getElementById("eggsResult").innerHTML = weeklyEggs.toFixed(1);
+document.getElementById("feedResult").innerHTML = poundsFeedPerMonth.toFixed(1) + " lbs";
+document.getElementById("costResult").innerHTML = "$" + monthlyFeedCost.toFixed(2);
+document.getElementById("coopResult").innerHTML = coopSize + " sq ft";
+document.getElementById("nestResult").innerHTML = nestingBoxes;
 
-    let adjustedEggsPerHen = eggsPerHen * (1 - winterReduction);
-
-    let targetEggs = eggsNeeded * (1 + surplus);
-
-    let hensNeeded = Math.ceil(targetEggs / adjustedEggsPerHen);
-
-    let poundsFeedPerMonth = hensNeeded * 6 * rangeType;
-
-    let bagsPerMonth = poundsFeedPerMonth / feedBagWeight;
-
-    let monthlyFeedCost = bagsPerMonth * feedBagPrice;
-
-    let coopSize = hensNeeded * 4;
-
-    let nestingBoxes = Math.ceil(hensNeeded / 4);
-
-    document.getElementById("result").innerHTML = `
-        🐔 Recommended Hens: <strong>${hensNeeded}</strong><br><br>
-
-        🥚 Estimated Weekly Eggs (Winter Adjusted): <strong>${(hensNeeded * adjustedEggsPerHen).toFixed(1)}</strong><br><br>
-
-        🌾 Estimated Feed Usage Per Month: <strong>${poundsFeedPerMonth.toFixed(1)} lbs</strong><br><br>
-
-        💰 Estimated Monthly Feed Cost: <strong>$${monthlyFeedCost.toFixed(2)}</strong><br><br>
-
-        🏠 Suggested Coop Space: <strong>${coopSize} sq ft</strong><br><br>
-
-        📦 Recommended Nesting Boxes: <strong>${nestingBoxes}</strong>
-    `;
 }
 
 </script>
-
-<div id="footer"></div>
-
-
-</div>
 
 <script src="scripts/load-components.js"></script>
 
