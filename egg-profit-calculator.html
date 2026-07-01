@@ -435,6 +435,122 @@ line-height:1.7;
 
 </style>
 
+<style>
+.calculator-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+.calc-panel{
+background:white;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
+overflow:hidden;
+}
+
+.calc-panel h2{
+background:#145A32;
+color:white;
+padding:18px 24px;
+font-size:24px;
+margin:0;
+}
+
+.calc-body{
+padding:28px;
+}
+
+.calc-field{
+margin-bottom:22px;
+}
+
+.calc-field label{
+display:block;
+font-weight:bold;
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.calc-field input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.calc-help{
+font-size:14px;
+color:#666;
+margin-top:6px;
+}
+
+.calc-button{
+width:100%;
+padding:16px;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:8px;
+background:#2E7D32;
+color:white;
+cursor:pointer;
+}
+
+.calc-button:hover{
+background:#1B5E20;
+}
+
+.result-card{
+background:#f4f9f4;
+padding:22px;
+border-radius:12px;
+margin-bottom:18px;
+border-left:6px solid #2E7D32;
+}
+
+.result-card h3{
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.result-number{
+font-size:30px;
+font-weight:bold;
+color:#145A32;
+}
+
+.profit-positive{
+background:#E8F5E9;
+border-left-color:#2E7D32;
+}
+
+.profit-negative{
+background:#FFEBEE;
+border-left-color:#C62828;
+}
+
+.profit-negative .result-number{
+color:#C62828;
+}
+
+.calc-note{
+background:#fff8e1;
+padding:18px;
+border-radius:10px;
+margin-top:20px;
+border-left:6px solid #fbc02d;
+}
+
+@media(max-width:800px){
+.calculator-grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+
 </head>
 
 <body>
@@ -451,7 +567,7 @@ Free calculators, planning tools, practical guides, and equipment recommendation
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto;">
+
 
 <div class="content">
 
@@ -474,33 +590,103 @@ Backyard chickens are usually raised for fresh eggs, enjoyment, self-reliance, a
 </p>
 
 <p>
-This calculator helps estimate how much egg income your flock may produce based on flock size, egg production, feed costs, egg price, and other monthly expenses.
+Use this calculator to estimate how much egg income your flock may produce based on flock size, egg production, feed costs, egg price, and other monthly expenses.
 </p>
 
 </div>
 
 <div class="section">
 
-<h2>🧮 Egg Profit Calculator</h2>
+<div class="calculator-grid">
 
-<label>Number of Chickens:</label>
+<div class="calc-panel">
+
+<h2>🧮 Your Egg Profit Calculator</h2>
+
+<div class="calc-body">
+
+<div class="calc-field">
+<label for="chickens">🐔 Number of Chickens</label>
 <input id="chickens" type="number" placeholder="e.g. 6">
+<div class="calc-help">Enter the number of laying hens in your flock.</div>
+</div>
 
-<label>Eggs per Chicken per Week:</label>
+<div class="calc-field">
+<label for="eggsPerWeek">🥚 Eggs per Chicken per Week</label>
 <input id="eggsPerWeek" type="number" value="5">
+<div class="calc-help">Many productive hens average 4–6 eggs per week.</div>
+</div>
 
-<label>Egg Price ($ per dozen):</label>
+<div class="calc-field">
+<label for="eggPrice">💵 Egg Price ($ per dozen)</label>
 <input id="eggPrice" type="number" value="4">
+<div class="calc-help">Enter your local selling price per dozen eggs.</div>
+</div>
 
-<label>Monthly Feed Cost ($):</label>
+<div class="calc-field">
+<label for="feedCost">🌾 Monthly Feed Cost ($)</label>
 <input id="feedCost" type="number" value="30">
+<div class="calc-help">Use your estimated monthly feed expense.</div>
+</div>
 
-<label>Other Monthly Costs ($):</label>
+<div class="calc-field">
+<label for="otherCost">🏷️ Other Monthly Costs ($)</label>
 <input id="otherCost" type="number" value="0">
+<div class="calc-help">Bedding, cartons, oyster shell, supplements, etc.</div>
+</div>
 
-<button onclick="calculate()">Calculate Profit</button>
+<button class="calc-button" onclick="calculate()">Calculate Profit</button>
 
-<div class="result" id="result"></div>
+<div class="calc-note">
+<strong>Don’t know your feed cost?</strong><br>
+Use the <a href="index.html">Chicken Feed Cost Calculator</a> first, then return here.
+</div>
+
+</div>
+
+</div>
+
+<div class="calc-panel">
+
+<h2>📊 Estimated Monthly Results</h2>
+
+<div class="calc-body">
+
+<div class="result-card">
+<h3>🥚 Eggs per Month</h3>
+<div class="result-number" id="eggsResult">0</div>
+<p>Total eggs your flock may produce.</p>
+</div>
+
+<div class="result-card">
+<h3>📦 Dozens per Month</h3>
+<div class="result-number" id="dozensResult">0.0</div>
+<p>Total dozens of eggs.</p>
+</div>
+
+<div class="result-card">
+<h3>💰 Revenue</h3>
+<div class="result-number" id="revenueResult">$0.00</div>
+<p>Estimated monthly egg income.</p>
+</div>
+
+<div class="result-card">
+<h3>💸 Total Costs</h3>
+<div class="result-number" id="costResult">$0.00</div>
+<p>Feed plus other monthly expenses.</p>
+</div>
+
+<div class="result-card" id="profitCard">
+<h3>📈 Estimated Profit</h3>
+<div class="result-number" id="profitResult">$0.00</div>
+<p>Revenue minus monthly costs.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -510,17 +696,17 @@ This calculator helps estimate how much egg income your flock may produce based 
 
 <ul>
 <li><strong>Number of chickens:</strong> Enter the number of laying hens in your flock.</li>
-<li><strong>Eggs per chicken per week:</strong> Many hens average 4–6 eggs per week depending on breed, age, season, and health.</li>
+<li><strong>Eggs per chicken per week:</strong> Use a realistic average, not a perfect week.</li>
 <li><strong>Egg price:</strong> Enter your local selling price per dozen eggs.</li>
-<li><strong>Monthly feed cost:</strong> Use your estimated monthly feed expense.</li>
+<li><strong>Monthly feed cost:</strong> Use your actual or estimated monthly feed expense.</li>
 <li><strong>Other costs:</strong> Add bedding, cartons, supplements, oyster shell, or other recurring expenses.</li>
 </ul>
 
 </div>
 
-<div class="section">
+<div class="tip-box">
 
-<h2>💡 Backyard Chicken Planner Tip</h2>
+<h3>💡 Backyard Chicken Planner Tip</h3>
 
 <p>
 Egg profit usually depends more on feed cost and egg price than flock size alone. A smaller flock with strong egg layers and low feed waste may perform better financially than a larger flock with high monthly expenses.
@@ -533,7 +719,7 @@ Egg profit usually depends more on feed cost and egg price than flock size alone
 <h2>📊 Example Egg Profit Estimate</h2>
 
 <p>
-For example, a flock of 6 hens laying 5 eggs per week each would produce about 120 eggs per month, or roughly 10 dozen eggs.
+A flock of 6 hens laying 5 eggs per week each would produce about 120 eggs per month, or roughly 10 dozen eggs.
 </p>
 
 <p>
@@ -564,37 +750,12 @@ This does not include startup costs such as the coop, feeders, waterers, fencing
 
 <h2>🐔 Improve Your Egg Profit</h2>
 
-<p>
-To improve your numbers, focus on productive breeds, reduce feed waste, keep birds healthy, and choose equipment that supports efficient flock care.
-</p>
-
 <ul>
 <li><a href="best-chicken-breeds-for-eggs.html">🥚 Best Chicken Breeds for Eggs</a></li>
 <li><a href="best-chicken-feeders.html">🥣 Best Chicken Feeders</a></li>
 <li><a href="best-chicken-waterers.html">💧 Best Chicken Waterers</a></li>
 <li><a href="backyard-chicken-flock-planner.html">🐔 Backyard Chicken Flock Planner</a></li>
 </ul>
-
-</div>
-
-<div class="section">
-
-<h2>❓ Common Questions</h2>
-
-<h3>Are backyard chickens profitable?</h3>
-<p>
-Backyard chickens can help offset food costs, but they are not always profitable once feed, coop, fencing, bedding, and equipment are included.
-</p>
-
-<h3>How many eggs does a chicken lay per week?</h3>
-<p>
-Many productive laying hens average 4–6 eggs per week during peak laying seasons, though this varies by breed, age, season, and care.
-</p>
-
-<h3>What affects egg profit the most?</h3>
-<p>
-Feed cost, egg price, flock productivity, seasonal laying changes, and startup costs all affect profitability.
-</p>
 
 </div>
 
@@ -611,8 +772,6 @@ Feed cost, egg price, flock productivity, seasonal laying changes, and startup c
 
 </div>
 
-</div>
-
 <div id="footer"></div>
 
 </div>
@@ -621,31 +780,44 @@ Feed cost, egg price, flock productivity, seasonal laying changes, and startup c
 
 function calculate() {
 
-    let chickens = parseFloat(document.getElementById("chickens").value);
-    let eggsPerWeek = parseFloat(document.getElementById("eggsPerWeek").value);
-    let eggPrice = parseFloat(document.getElementById("eggPrice").value);
-    let feedCost = parseFloat(document.getElementById("feedCost").value);
-    let otherCost = parseFloat(document.getElementById("otherCost").value);
+let chickens = parseFloat(document.getElementById("chickens").value);
+let eggsPerWeek = parseFloat(document.getElementById("eggsPerWeek").value);
+let eggPrice = parseFloat(document.getElementById("eggPrice").value);
+let feedCost = parseFloat(document.getElementById("feedCost").value);
+let otherCost = parseFloat(document.getElementById("otherCost").value);
 
-    if (isNaN(chickens) || chickens <= 0) {
-        document.getElementById("result").innerHTML = "Please enter the number of chickens.";
-        return;
-    }
+if (isNaN(chickens) || chickens <= 0) {
+alert("Please enter the number of chickens.");
+return;
+}
 
-    let eggsPerMonth = chickens * eggsPerWeek * 4;
-    let dozens = eggsPerMonth / 12;
-    let revenue = dozens * eggPrice;
-    let totalCosts = feedCost + otherCost;
-    let profit = revenue - totalCosts;
+if (isNaN(eggsPerWeek)) eggsPerWeek = 0;
+if (isNaN(eggPrice)) eggPrice = 0;
+if (isNaN(feedCost)) feedCost = 0;
+if (isNaN(otherCost)) otherCost = 0;
 
-    document.getElementById("result").innerHTML = `
-        <h3>Estimated Monthly Results</h3>
-        🥚 Eggs per month: ${eggsPerMonth.toFixed(0)}<br>
-        📦 Dozens per month: ${dozens.toFixed(1)}<br>
-        💰 Revenue: $${revenue.toFixed(2)}<br>
-        💸 Costs: $${totalCosts.toFixed(2)}<br>
-        📈 Estimated Profit: $${profit.toFixed(2)}
-    `;
+let eggsPerMonth = chickens * eggsPerWeek * 4;
+let dozens = eggsPerMonth / 12;
+let revenue = dozens * eggPrice;
+let totalCosts = feedCost + otherCost;
+let profit = revenue - totalCosts;
+
+document.getElementById("eggsResult").innerHTML = eggsPerMonth.toFixed(0);
+document.getElementById("dozensResult").innerHTML = dozens.toFixed(1);
+document.getElementById("revenueResult").innerHTML = "$" + revenue.toFixed(2);
+document.getElementById("costResult").innerHTML = "$" + totalCosts.toFixed(2);
+document.getElementById("profitResult").innerHTML = "$" + profit.toFixed(2);
+
+let profitCard = document.getElementById("profitCard");
+
+if (profit >= 0) {
+profitCard.classList.remove("profit-negative");
+profitCard.classList.add("profit-positive");
+} else {
+profitCard.classList.remove("profit-positive");
+profitCard.classList.add("profit-negative");
+}
+
 }
 
 </script>
