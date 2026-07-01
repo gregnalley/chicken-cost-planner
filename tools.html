@@ -2,91 +2,592 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
-    <title>Backyard Chicken Cost & Planning Tools | Feed, Egg & Coop Calculators</title>
+<meta charset="UTF-8">
 
-    <meta name="description" content="Free backyard chicken planning tools including feed cost calculator, egg profit estimator, and coop cost calculator. Plan your flock and estimate real costs easily.">
+<title>Backyard Chicken Tools | Free Chicken Calculators & Planning Guides</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free backyard chicken tools including feed cost calculators, coop cost estimators, flock planners, breed guides, coop size guides, and chicken supply resources.">
 
-    <link rel="stylesheet" href="style.css">
-    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f7f9fb;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("images/hero-chickens.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:white;
+
+padding:110px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+/* ===========================
+   ARTICLE SECTIONS
+=========================== */
+
+.section{
+    background:#ffffff;
+    padding:35px;
+    margin:35px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1B5E20;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.section p{
+    line-height:1.7;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.tip-box{
+
+background:#F4FAEE;
+
+border-left:6px solid #4CAF50;
+
+padding:22px;
+
+margin:40px 0;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.tip-box h3{
+
+margin-top:0;
+
+color:#2E7D32;
+
+font-size:24px;
+
+}
+
+.tip-box p{
+
+margin-bottom:0;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+</style>
+
 </head>
-
-<div id="navigation"></div>
-
 
 <body>
 
-<h1>🐔 Backyard Chicken Cost & Planning Tools</h1>
+<header class="site-header">
 
-<p class="intro">
-Free calculators to estimate the real cost of raising backyard chickens including feed, eggs, and coop setup expenses.
-</p>
+<h1>🐔 Backyard Chicken Planner</h1>
 
 <p>
-These tools help answer real-world questions like how much it costs to raise chickens, how to estimate egg income, and how to plan a backyard coop budget.
+Free calculators, planning tools, practical guides, and equipment recommendations for backyard chicken keepers.
 </p>
 
-<p class="highlight">
-Start with the Feed Cost Calculator, then explore related tools to plan your flock more accurately.
-</p>
+</header>
 
-<div class="section">
-    <h2>🐔 Feed Cost Calculator</h2>
-    <p>Estimate monthly feed costs and flock expenses.</p>
-    <a href="index.html">Open Tool →</a>
-</div>
+<div id="navigation"></div>
 
-<div class="section">
+<div style="max-width:900px; margin:40px auto;">
 
-<h2>🐔 Chicken Breed Guides</h2>
+<div class="content">
+
+<div class="banner">
+
+<h1>🧰 Backyard Chicken Tools & Planning Guides</h1>
 
 <p>
-Explore our chicken breed hub to compare the best breeds for eggs, beginners, cold weather, dual purpose flocks, and more.
+Plan your flock, estimate costs, compare breeds, choose equipment, and build a better backyard chicken setup with our free calculators and practical guides.
 </p>
 
-<a href="chicken-breeds.html">View Chicken Breeds Guide</a>
-
-</div>
-
-<div class="section">
-    <h2>🥚 Egg Profit Calculator</h2>
-    <p>Estimate how much money your chickens can make from eggs.</p>
-    <a href="egg-profit-calculator.html">Open Tool →</a>
-</div>
-
-<div class="section">
-    <h2>🏠 Chicken Coop Cost Estimator</h2>
-    <p>Estimate startup cost for building or buying a chicken coop.</p>
-    <a href="chicken-coop-estimator.html">Open Tool →</a>
-</div>
-
-<div class="section">
-    <h2>🐔 Backyard Chicken Flock Planner</h2>
-
-    <p>
-        Plan flock size, egg production, feed costs, and coop requirements for your backyard chickens.
-    </p>
-
-    <a href="backyard-chicken-flock-planner.html">Open Tool →</a>
 </div>
 
 <div class="section">
 
-<h3>📏 Chicken Coop Size Guide</h3>
+<h2>Start Planning Your Backyard Flock</h2>
 
 <p>
-Not sure how much space your chickens need? Use our complete sizing guide to learn coop dimensions, run space requirements, nesting boxes, and planning tips.
+Whether you're raising chickens for eggs, building your first coop, comparing breeds, or estimating startup costs, these tools are designed to help you make better decisions before you spend money.
 </p>
 
-<a href="chicken-coop-size-guide.html">
-👉 View Chicken Coop Size Guide
-</a>
+</div>
+
+<div class="section">
+
+<h2 class="section-title">🧮 Free Chicken Calculators</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🐔 Feed Cost Calculator</h3>
+<p>Estimate monthly feed costs based on flock size, feed price, and feeding needs.</p>
+<a href="index.html">Open Calculator →</a>
+</div>
+
+<div class="card">
+<h3>🥚 Egg Profit Calculator</h3>
+<p>Estimate egg income, feed expenses, and potential profit from backyard egg sales.</p>
+<a href="egg-profit-calculator.html">Open Calculator →</a>
+</div>
+
+<div class="card">
+<h3>🏠 Coop Cost Estimator</h3>
+<p>Estimate startup costs for DIY, prefab, or custom chicken coop setups.</p>
+<a href="chicken-coop-estimator.html">Open Calculator →</a>
+</div>
+
+<div class="card">
+<h3>🐥 Flock Planner</h3>
+<p>Plan flock size, egg production, feed needs, coop space, and basic care requirements.</p>
+<a href="backyard-chicken-flock-planner.html">Open Planner →</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">🐔 Chicken Breed Resources</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🐔 Chicken Breeds Hub</h3>
+<p>Compare chicken breeds by egg production, temperament, climate, beginner friendliness, and more.</p>
+<a href="chicken-breeds.html">View Breed Hub →</a>
+</div>
+
+<div class="card">
+<h3>🥚 Best Egg Breeds</h3>
+<p>Find the best chicken breeds for dependable egg production.</p>
+<a href="best-chicken-breeds-for-eggs.html">Read Guide →</a>
+</div>
+
+<div class="card">
+<h3>🐥 Best Beginner Chickens</h3>
+<p>Compare calm, friendly, low-maintenance breeds for first-time chicken keepers.</p>
+<a href="best-chickens-for-beginners.html">Read Guide →</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">🏠 Coop & Equipment Guides</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📏 Coop Size Guide</h3>
+<p>Learn how much coop space, run space, nesting space, and roosting room your chickens need.</p>
+<a href="chicken-coop-size-guide.html">Read Guide →</a>
+</div>
+
+<div class="card">
+<h3>🛒 Chicken Supplies Hub</h3>
+<p>Browse equipment guides for feeders, waterers, coops, nesting boxes, predator protection, and more.</p>
+<a href="chicken-supplies.html">View Supplies Hub →</a>
+</div>
+
+<div class="card">
+<h3>🦊 Predator Protection</h3>
+<p>Learn how to protect your flock from raccoons, foxes, coyotes, hawks, snakes, dogs, and other predators.</p>
+<a href="best-chicken-predator-protection.html">Read Guide →</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>💡 Not Sure Where to Start?</h2>
+
+<p>
+If you're brand new to backyard chickens, start with the <a href="backyard-chicken-flock-planner.html">Backyard Chicken Flock Planner</a>, then use the <a href="chicken-coop-estimator.html">Coop Cost Estimator</a> and <a href="chicken-breeds.html">Chicken Breeds Hub</a> to narrow down your setup.
+</p>
+
+<p style="text-align:center;margin-top:30px;">
+
+<a class="button" href="backyard-chicken-flock-planner.html">🐥 Start With the Flock Planner</a>
+
+&nbsp;&nbsp;
+
+<a class="button" href="chicken-supplies.html">🛒 Browse Supplies</a>
+
+</p>
+
+</div>
+
+</div>
 
 <div id="footer"></div>
-
 
 </div>
 
