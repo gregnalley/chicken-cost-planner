@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Chicken Feed Cost Calculator | Estimate Monthly Chicken Feed Costs</title>
+
+<meta name="description" content="Use this free chicken feed cost calculator to estimate monthly chicken feed costs, feed usage, cost per chicken, and next steps for planning your backyard flock.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f7f9fb;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("images/hero-chickens.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:white;
+
+padding:110px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+/* ===========================
+   ARTICLE SECTIONS
+=========================== */
+
+.section{
+    background:#ffffff;
+    padding:35px;
+    margin:35px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1B5E20;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.section p{
+    line-height:1.7;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.tip-box{
+
+background:#F4FAEE;
+
+border-left:6px solid #4CAF50;
+
+padding:22px;
+
+margin:40px 0;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.tip-box h3{
+
+margin-top:0;
+
+color:#2E7D32;
+
+font-size:24px;
+
+}
+
+.tip-box p{
+
+margin-bottom:0;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+</style>
+
+<style>
+.calculator-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+.calc-panel{
+background:white;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
+overflow:hidden;
+}
+
+.calc-panel h2{
+background:#145A32;
+color:white;
+padding:18px 24px;
+font-size:24px;
+margin:0;
+}
+
+.calc-body{
+padding:28px;
+}
+
+.calc-field{
+margin-bottom:22px;
+}
+
+.calc-field label{
+display:block;
+font-weight:bold;
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.calc-field input,
+.calc-field select{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:8px;
+background:white;
+}
+
+.calc-help{
+font-size:14px;
+color:#666;
+margin-top:6px;
+}
+
+.calc-button{
+width:100%;
+padding:16px;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:8px;
+background:#2E7D32;
+color:white;
+cursor:pointer;
+}
+
+.calc-button:hover{
+background:#1B5E20;
+}
+
+.result-card{
+background:#f4f9f4;
+padding:22px;
+border-radius:12px;
+margin-bottom:18px;
+border-left:6px solid #2E7D32;
+}
+
+.result-card h3{
+margin-bottom:8px;
+color:#1B5E20;
+}
+
+.result-number{
+font-size:30px;
+font-weight:bold;
+color:#145A32;
+}
+
+.calc-note{
+background:#fff8e1;
+padding:18px;
+border-radius:10px;
+margin-top:20px;
+border-left:6px solid #fbc02d;
+}
+
+@media(max-width:800px){
+.calculator-grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebApplication",
+"name":"Chicken Feed Cost Calculator",
+"description":"Estimate monthly chicken feed costs, feed usage, and cost per chicken for a backyard flock.",
+"applicationCategory":"Calculator",
+"operatingSystem":"All",
+"author":{
+"@type":"Person",
+"name":"Greg Nalley"
+},
+"publisher":{
+"@type":"Organization",
+"name":"Backyard Chicken Planner"
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Free calculators, planning tools, practical guides, and equipment recommendations for backyard chicken keepers.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<div style="max-width:900px; margin:40px auto;">
+
+<div class="content">
+
+<div class="banner">
+
+<h1>🌾 Chicken Feed Cost Calculator</h1>
+
+<p>
+Estimate how much feed your chickens may eat each month, how much it may cost, and what your next planning steps should be.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🌾 How Much Does Chicken Feed Cost Per Month?</h2>
+
+<p>
+Feed is one of the biggest recurring expenses of keeping backyard chickens. Your actual cost depends on flock size, feed price, bag weight, breed type, season, waste, and whether your chickens are confined or able to forage.
+</p>
+
+<p>
+This calculator gives you a practical estimate of monthly feed usage, monthly feed cost, annual feed cost, and cost per chicken so you can plan your flock more realistically.
+</p>
+
+</div>
+
+<div class="section">
+
+<div class="calculator-grid">
+
+<div class="calc-panel">
+
+<h2>🧮 Your Feed Cost Inputs</h2>
+
+<div class="calc-body">
+
+<div class="calc-field">
+<label for="chickens">🐔 Number of Chickens</label>
+<input id="chickens" type="number" value="6">
+<div class="calc-help">Enter the number of chickens in your flock.</div>
+</div>
+
+<div class="calc-field">
+<label for="feedPerChicken">🌾 Feed Per Chicken Per Day</label>
+<select id="feedPerChicken">
+<option value="0.20">Light / Foraging Birds (0.20 lb/day)</option>
+<option value="0.25" selected>Average Laying Hens (0.25 lb/day)</option>
+<option value="0.30">Large or Confined Birds (0.30 lb/day)</option>
+</select>
+<div class="calc-help">A common estimate for laying hens is about 1/4 pound of feed per bird per day.</div>
+</div>
+
+<div class="calc-field">
+<label for="feedBagPrice">💵 Feed Bag Price ($)</label>
+<input id="feedBagPrice" type="number" value="22">
+<div class="calc-help">Enter the price of one bag of feed.</div>
+</div>
+
+<div class="calc-field">
+<label for="feedBagWeight">⚖️ Feed Bag Weight (lbs)</label>
+<input id="feedBagWeight" type="number" value="50">
+<div class="calc-help">Most feed bags are commonly 40 or 50 pounds.</div>
+</div>
+
+<div class="calc-field">
+<label for="wasteFactor">📉 Feed Waste Estimate</label>
+<select id="wasteFactor">
+<option value="1">Low Waste</option>
+<option value="1.10" selected>Average Waste (+10%)</option>
+<option value="1.25">High Waste (+25%)</option>
+</select>
+<div class="calc-help">Poor feeders, spills, rodents, and wet feed can increase real feed costs.</div>
+</div>
+
+<button class="calc-button" onclick="calculate()">Calculate Feed Cost</button>
+
+<div class="calc-note">
+<strong>Want more accurate planning?</strong><br>
+Use this result with the <a href="egg-profit-calculator.html">Egg Profit Calculator</a> to compare feed costs with possible egg income.
+</div>
+
+</div>
+
+</div>
+
+<div class="calc-panel">
+
+<h2>📊 Estimated Feed Results</h2>
+
+<div class="calc-body">
+
+<div class="result-card">
+<h3>🌾 Feed Per Month</h3>
+<div class="result-number" id="monthlyFeedResult">0 lbs</div>
+<p>Estimated total feed used each month.</p>
+</div>
+
+<div class="result-card">
+<h3>📦 Bags Per Month</h3>
+<div class="result-number" id="bagsResult">0.0</div>
+<p>Estimated feed bags needed monthly.</p>
+</div>
+
+<div class="result-card">
+<h3>💰 Monthly Feed Cost</h3>
+<div class="result-number" id="monthlyCostResult">$0.00</div>
+<p>Estimated feed cost each month.</p>
+</div>
+
+<div class="result-card">
+<h3>📅 Annual Feed Cost</h3>
+<div class="result-number" id="annualCostResult">$0.00</div>
+<p>Estimated feed cost per year.</p>
+</div>
+
+<div class="result-card">
+<h3>🐔 Cost Per Chicken</h3>
+<div class="result-number" id="perChickenResult">$0.00</div>
+<p>Estimated monthly feed cost per bird.</p>
+</div>
+
+<div class="result-card" id="nextStepsCard" style="display:none;">
+
+<h3>✅ Your Personalized Next Steps</h3>
+
+<p id="nextStepsIntro">
+After calculating feed cost, use these next steps to continue planning your backyard flock.
+</p>
+
+<ul id="nextStepsList"></ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📌 How to Use This Calculator</h2>
+
+<ul>
+<li><strong>Number of chickens:</strong> Enter your current or planned flock size.</li>
+<li><strong>Feed per chicken:</strong> Choose the estimate that best fits your flock.</li>
+<li><strong>Feed bag price:</strong> Use your local price for layer feed, grower feed, or all-flock feed.</li>
+<li><strong>Feed bag weight:</strong> Enter the bag size you normally buy.</li>
+<li><strong>Feed waste:</strong> Include extra waste if feed is often spilled, scratched out, wet, or stolen by rodents.</li>
+</ul>
+
+</div>
+
+<div class="tip-box">
+
+<h3>💡 Backyard Chicken Planner Tip</h3>
+
+<p>
+Feed waste can quietly become one of the biggest hidden costs of raising chickens. A better feeder, secure feed storage, and dry feeding area can lower monthly costs without reducing the quality of care.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚠️ Common Feed Cost Mistakes</h2>
+
+<ol>
+<li><strong>Only calculating feed for perfect conditions.</strong> Real-world waste, rain, and rodents can increase costs.</li>
+<li><strong>Using the wrong feed type.</strong> Chicks, growers, layers, and mixed flocks may need different feed.</li>
+<li><strong>Ignoring seasonal changes.</strong> Birds may eat more in cold weather and drink more in hot weather.</li>
+<li><strong>Buying cheap feeders that waste feed.</strong> Feed waste can erase savings from cheaper equipment.</li>
+<li><strong>Forgetting storage.</strong> Feed should stay dry and protected from rodents.</li>
+</ol>
+
+</div>
+
+<div class="section">
+
+<h2>🔗 Related Chicken Planning Tools</h2>
+
+<ul>
+<li><a href="backyard-chicken-flock-planner.html">🐥 Backyard Chicken Flock Planner</a></li>
+<li><a href="egg-profit-calculator.html">🥚 Egg Profit Calculator</a></li>
+<li><a href="chicken-coop-estimator.html">🏠 Chicken Coop Cost Estimator</a></li>
+<li><a href="best-chicken-feeders.html">🥣 Best Chicken Feeders</a></li>
+<li><a href="best-chicken-waterers.html">💧 Best Chicken Waterers</a></li>
+<li><a href="tools.html">🧰 View All Chicken Tools</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+<script>
+
+function calculate(){
+
+let chickens = parseFloat(document.getElementById("chickens").value);
+let feedPerChicken = parseFloat(document.getElementById("feedPerChicken").value);
+let feedBagPrice = parseFloat(document.getElementById("feedBagPrice").value);
+let feedBagWeight = parseFloat(document.getElementById("feedBagWeight").value);
+let wasteFactor = parseFloat(document.getElementById("wasteFactor").value);
+
+if (isNaN(chickens) || chickens <= 0) {
+alert("Please enter the number of chickens.");
+return;
+}
+
+if (isNaN(feedPerChicken)) feedPerChicken = 0.25;
+if (isNaN(feedBagPrice)) feedBagPrice = 0;
+if (isNaN(feedBagWeight) || feedBagWeight <= 0) feedBagWeight = 50;
+if (isNaN(wasteFactor)) wasteFactor = 1;
+
+let monthlyFeed = chickens * feedPerChicken * 30 * wasteFactor;
+let bagsPerMonth = monthlyFeed / feedBagWeight;
+let monthlyCost = bagsPerMonth * feedBagPrice;
+let annualCost = monthlyCost * 12;
+let perChickenCost = monthlyCost / chickens;
+
+document.getElementById("monthlyFeedResult").innerHTML = monthlyFeed.toFixed(1) + " lbs";
+document.getElementById("bagsResult").innerHTML = bagsPerMonth.toFixed(1);
+document.getElementById("monthlyCostResult").innerHTML = "$" + monthlyCost.toFixed(2);
+document.getElementById("annualCostResult").innerHTML = "$" + annualCost.toFixed(2);
+document.getElementById("perChickenResult").innerHTML = "$" + perChickenCost.toFixed(2);
+
+let nextStepsIntro = document.getElementById("nextStepsIntro");
+let nextStepsList = document.getElementById("nextStepsList");
+let nextStepsCard = document.getElementById("nextStepsCard");
+
+nextStepsIntro.innerHTML = `
+Based on your estimate of <strong>${chickens}</strong> chickens, your flock may use about <strong>${monthlyFeed.toFixed(1)} lbs</strong> of feed each month at an estimated cost of <strong>$${monthlyCost.toFixed(2)}</strong>.
+`;
+
+nextStepsList.innerHTML = `
+<li>Reduce feed waste by choosing the right feeder for your flock. <a href="best-chicken-feeders.html">Compare Chicken Feeders →</a></li>
+
+<li>Estimate whether egg income may offset your feed costs. <a href="egg-profit-calculator.html">Use the Egg Profit Calculator →</a></li>
+
+<li>Plan your ideal flock size based on weekly egg needs. <a href="backyard-chicken-flock-planner.html">Use the Flock Planner →</a></li>
+
+<li>Compare productive egg-laying breeds. <a href="best-chicken-breeds-for-eggs.html">See Best Egg Breeds →</a></li>
+
+<li>Browse feed-related supplies, waterers, coops, and predator protection. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
+`;
+
+nextStepsCard.style.display = "block";
+
+}
+
+</script>
+
+<script src="scripts/load-components.js"></script>
+
+</body>
+</html>
