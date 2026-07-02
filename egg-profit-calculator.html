@@ -682,6 +682,18 @@ Use the <a href="index.html">Chicken Feed Cost Calculator</a> first, then return
 <p>Revenue minus monthly costs.</p>
 </div>
 
+<div class="result-card" id="nextStepsCard" style="display:none;">
+
+<h3>✅ Your Personalized Next Steps</h3>
+
+<p id="nextStepsIntro">
+After calculating your egg profit, use these next steps to improve your flock plan.
+</p>
+
+<ul id="nextStepsList"></ul>
+
+</div>
+
 </div>
 
 </div>
@@ -819,6 +831,34 @@ profitCard.classList.add("profit-positive");
 profitCard.classList.remove("profit-positive");
 profitCard.classList.add("profit-negative");
 }
+
+let nextStepsIntro = document.getElementById("nextStepsIntro");
+let nextStepsList = document.getElementById("nextStepsList");
+let nextStepsCard = document.getElementById("nextStepsCard");
+
+let profitMessage = "";
+
+if (profit >= 0) {
+profitMessage = `Your flock is estimated to produce a monthly profit of <strong>$${profit.toFixed(2)}</strong>. Your next goal is to protect that profit by reducing feed waste and choosing productive breeds.`;
+} else {
+profitMessage = `Your flock is estimated to run at a monthly loss of <strong>$${Math.abs(profit).toFixed(2)}</strong>. That is common for backyard chickens, especially when feed costs are high or egg prices are low.`;
+}
+
+nextStepsIntro.innerHTML = profitMessage;
+
+nextStepsList.innerHTML = `
+<li>Reduce feed waste with a better feeder setup. <a href="best-chicken-feeders.html">Compare Chicken Feeders →</a></li>
+
+<li>Choose productive breeds that lay consistently. <a href="best-chicken-breeds-for-eggs.html">See Best Egg Breeds →</a></li>
+
+<li>Estimate your full setup cost, not just monthly expenses. <a href="chicken-coop-estimator.html">Use the Coop Cost Estimator →</a></li>
+
+<li>Plan the right flock size for your household egg needs. <a href="backyard-chicken-flock-planner.html">Use the Flock Planner →</a></li>
+
+<li>Browse equipment that can help reduce chores and waste. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
+`;
+
+nextStepsCard.style.display = "block";
 
 }
 
