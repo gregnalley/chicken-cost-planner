@@ -692,6 +692,18 @@ After calculating flock size, use the <a href="chicken-coop-estimator.html">Chic
 <p>Estimated nesting boxes needed.</p>
 </div>
 
+<div class="result-card" id="nextStepsCard" style="display:none;">
+
+<h3>✅ Your Personalized Next Steps</h3>
+
+<p id="nextStepsIntro">
+After calculating your flock size, use these next steps to plan your coop, equipment, breeds, and long-term setup.
+</p>
+
+<ul id="nextStepsList"></ul>
+
+</div>
+
 </div>
 
 </div>
@@ -807,6 +819,7 @@ let bagsPerMonth = poundsFeedPerMonth / feedBagWeight;
 let monthlyFeedCost = bagsPerMonth * feedBagPrice;
 
 let coopSize = hensNeeded * 4;
+let runSize = hensNeeded * 10;
 let nestingBoxes = Math.ceil(hensNeeded / 4);
 
 document.getElementById("hensResult").innerHTML = hensNeeded;
@@ -815,6 +828,28 @@ document.getElementById("feedResult").innerHTML = poundsFeedPerMonth.toFixed(1) 
 document.getElementById("costResult").innerHTML = "$" + monthlyFeedCost.toFixed(2);
 document.getElementById("coopResult").innerHTML = coopSize + " sq ft";
 document.getElementById("nestResult").innerHTML = nestingBoxes;
+
+let nextStepsIntro = document.getElementById("nextStepsIntro");
+let nextStepsList = document.getElementById("nextStepsList");
+let nextStepsCard = document.getElementById("nextStepsCard");
+
+nextStepsIntro.innerHTML = `
+Based on your estimate of <strong>${hensNeeded} hens</strong>, here are the next planning steps that make the most sense for your backyard flock.
+`;
+
+nextStepsList.innerHTML = `
+<li>Plan for about <strong>${coopSize} sq ft</strong> of indoor coop space and about <strong>${runSize} sq ft</strong> of outdoor run space. <a href="chicken-coop-size-guide.html">Check the Coop Size Guide →</a></li>
+
+<li>Estimate your startup budget for a coop, run, fencing, and equipment. <a href="chicken-coop-estimator.html">Use the Coop Cost Estimator →</a></li>
+
+<li>Choose breeds that match your goals for eggs, temperament, and climate. <a href="chicken-breeds.html">Browse Chicken Breed Guides →</a></li>
+
+<li>Compare feeders, waterers, coops, nesting boxes, and predator protection. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
+
+<li>Estimate possible egg income from your flock. <a href="egg-profit-calculator.html">Try the Egg Profit Calculator →</a></li>
+`;
+
+nextStepsCard.style.display = "block";
 
 }
 
