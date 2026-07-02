@@ -709,6 +709,18 @@ Use the <a href="backyard-chicken-flock-planner.html">Backyard Chicken Flock Pla
 <p>Estimated nesting boxes needed.</p>
 </div>
 
+<div class="result-card" id="nextStepsCard" style="display:none;">
+
+<h3>✅ Your Personalized Next Steps</h3>
+
+<p id="nextStepsIntro">
+After estimating your coop cost, use these next steps to plan the rest of your backyard chicken setup.
+</p>
+
+<ul id="nextStepsList"></ul>
+
+</div>
+
 </div>
 
 </div>
@@ -1199,6 +1211,28 @@ document.getElementById("coopSizeResult").innerHTML=coopSpace+" sq ft";
 document.getElementById("runSizeResult").innerHTML=runSpace+" sq ft";
 
 document.getElementById("nestBoxResult").innerHTML=nestBoxes;
+
+let nextStepsIntro = document.getElementById("nextStepsIntro");
+let nextStepsList = document.getElementById("nextStepsList");
+let nextStepsCard = document.getElementById("nextStepsCard");
+
+nextStepsIntro.innerHTML = `
+Based on your estimate of <strong>${chickens} chickens</strong> and a startup budget of <strong>$${total.toFixed(2)}</strong>, here are the next steps that make the most sense.
+`;
+
+nextStepsList.innerHTML = `
+<li>Confirm that your coop provides about <strong>${coopSpace} sq ft</strong> of indoor space and <strong>${runSpace} sq ft</strong> of outdoor run space. <a href="chicken-coop-size-guide.html">Check the Coop Size Guide →</a></li>
+
+<li>Compare coop styles before committing to a build or purchase. <a href="best-chicken-coops.html">Read Best Chicken Coops →</a></li>
+
+<li>Plan your feeder, waterer, nesting box, and predator protection setup. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
+
+<li>Protect your investment with secure latches, hardware cloth, and predator planning. <a href="best-chicken-predator-protection.html">View Predator Protection Guide →</a></li>
+
+<li>Estimate monthly feed expenses after startup costs. <a href="index.html">Use the Feed Cost Calculator →</a></li>
+`;
+
+nextStepsCard.style.display = "block";
 
 }
 
