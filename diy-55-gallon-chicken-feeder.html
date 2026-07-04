@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>DIY 55-Gallon Chicken Feeder | Build a Gravity Barrel Feeder</title>
+
+<meta name="description" content="Build a DIY 55-gallon gravity chicken feeder using a plastic barrel and poultry feeder ports. Includes materials, tools, feed capacity, refill estimates, project tips, and photo placeholders.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Paste your existing working <style> section here -->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f7f9fb;
+}
+
+header{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("images/hero-chickens.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+color:white;
+
+padding:110px 20px;
+
+text-align:center;
+
+box-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+font-size:46px;
+
+margin-bottom:12px;
+
+}
+
+header p{
+
+font-size:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+nav{
+
+background:#145A32;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+padding:18px 24px;
+
+font-weight:bold;
+
+transition:.25s;
+
+}
+
+nav a:hover{
+
+background:#2E7D32;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+margin-bottom:50px;
+
+}
+
+.hero-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+.hero-text p{
+
+font-size:19px;
+
+margin-bottom:25px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#2E7D32;
+
+color:white;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#1B5E20;
+
+}
+
+.hero-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.hero-box h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.hero-box ul{
+
+padding-left:20px;
+
+}
+
+.hero-box li{
+
+margin-bottom:12px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:34px;
+
+margin:50px 0 30px;
+
+color:#1B5E20;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-bottom:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1B5E20;
+
+}
+
+.card p{
+
+margin-bottom:20px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#2E7D32;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+.card a:hover{
+
+background:#1B5E20;
+
+}
+
+.notice{
+
+background:white;
+
+padding:35px;
+
+border-left:8px solid #2E7D32;
+
+margin-bottom:50px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.notice h2{
+
+margin-bottom:20px;
+
+color:#1B5E20;
+
+}
+
+/* ===========================
+   FEATURE BADGES
+=========================== */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin:20px 0 45px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.feature-icon{
+
+font-size:42px;
+
+margin-bottom:12px;
+
+}
+
+.feature h3{
+
+color:#1B5E20;
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+font-size:15px;
+
+color:#555;
+
+}
+
+/* ===========================
+   ARTICLE SECTIONS
+=========================== */
+
+.section{
+    background:#ffffff;
+    padding:35px;
+    margin:35px 0;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1B5E20;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.section p{
+    line-height:1.7;
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.tip-box{
+
+background:#F4FAEE;
+
+border-left:6px solid #4CAF50;
+
+padding:22px;
+
+margin:40px 0;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.tip-box h3{
+
+margin-top:0;
+
+color:#2E7D32;
+
+font-size:24px;
+
+}
+
+.tip-box p{
+
+margin-bottom:0;
+
+font-size:18px;
+
+line-height:1.7;
+
+}
+
+</style>
+
+<style>
+
+.project-hero{
+background:white;
+padding:35px;
+border-radius:14px;
+box-shadow:0 4px 14px rgba(0,0,0,.08);
+margin:35px 0;
+text-align:center;
+}
+
+.project-label{
+display:inline-block;
+background:#145A32;
+color:white;
+padding:8px 16px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:18px;
+}
+
+.project-subtitle{
+font-size:22px;
+color:#555;
+max-width:850px;
+margin:15px auto 0;
+}
+
+.project-summary{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin:30px 0;
+}
+
+.summary-box{
+background:#f4f9f4;
+border-left:6px solid #2E7D32;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.06);
+}
+
+.summary-box strong{
+display:block;
+color:#1B5E20;
+font-size:18px;
+margin-bottom:6px;
+}
+
+.photo-placeholder,
+.video-placeholder{
+background:#eef3ee;
+border:2px dashed #9ab69a;
+border-radius:14px;
+padding:45px 20px;
+text-align:center;
+color:#456;
+margin:25px 0;
+}
+
+.photo-placeholder h3,
+.video-placeholder h3{
+color:#1B5E20;
+margin-bottom:10px;
+}
+
+.project-table{
+width:100%;
+border-collapse:collapse;
+margin:25px 0;
+background:white;
+}
+
+.project-table th,
+.project-table td{
+border:1px solid #ddd;
+padding:14px;
+text-align:left;
+}
+
+.project-table th{
+background:#145A32;
+color:white;
+}
+
+.callout{
+background:#fff8e1;
+border-left:7px solid #fbc02d;
+padding:24px;
+border-radius:10px;
+margin:30px 0;
+}
+
+.callout h3{
+color:#1B5E20;
+margin-bottom:10px;
+}
+
+.checklist{
+columns:2;
+column-gap:40px;
+}
+
+.checklist li{
+break-inside:avoid;
+margin-bottom:10px;
+}
+
+@media(max-width:700px){
+.checklist{
+columns:1;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Plan smarter. Build better. Raise healthier chickens.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<div style="max-width:900px; margin:40px auto;">
+
+<div class="content">
+
+<div class="project-hero">
+
+<div class="project-label">BCP-001 Backyard Chicken Project</div>
+
+<h1>🛠️ DIY 55-Gallon Gravity Chicken Feeder</h1>
+
+<p class="project-subtitle">
+Build a high-capacity gravity feeder using a plastic barrel and poultry feeder ports so you can reduce refills, cut down on waste, and make daily chicken chores easier.
+</p>
+
+<div class="photo-placeholder">
+<h3>📸 Hero Photo Placeholder</h3>
+<p>Add a finished photo of the completed 55-gallon feeder here.</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>⭐ Backyard Chicken Planner Project Rating</h2>
+
+<div class="project-summary">
+
+<div class="summary-box">
+<strong>Difficulty</strong>
+Easy to Moderate
+</div>
+
+<div class="summary-box">
+<strong>Estimated Time</strong>
+1–2 Hours
+</div>
+
+<div class="summary-box">
+<strong>Estimated Cost</strong>
+$40–$90 excluding barrel
+</div>
+
+<div class="summary-box">
+<strong>Best For</strong>
+Medium to Large Flocks
+</div>
+
+<div class="summary-box">
+<strong>Maintenance</strong>
+Very Low
+</div>
+
+<div class="summary-box">
+<strong>Recommendation</strong>
+Highly Recommended
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Why I Built This Feeder</h2>
+
+<p>
+As a chicken flock grows, daily feeding can become one of the most repetitive chores. Small feeders work fine for a few hens, but larger flocks can empty them quickly, waste feed, or require refilling more often than you would like.
+</p>
+
+<p>
+This project uses a plastic barrel and gravity feeder ports to create a larger feeder that can be adapted to different flock sizes. The same basic idea works with a 5-gallon bucket, a 20- or 30-gallon barrel, or a full 55-gallon drum.
+</p>
+
+<p>
+I currently use a similar setup with 50-gallon barrels. I do not usually fill mine completely. Instead, I normally add one 50-pound bag of feed at a time to help keep feed fresher and reduce the chance of moisture problems.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Is This Project Right for You?</h2>
+
+<p>
+A 55-gallon chicken feeder is not necessary for every backyard flock. If you only have a few chickens, a smaller bucket feeder may be easier to move, clean, and manage. But if you have a larger flock, want fewer refills, or already have a food-grade barrel available, this project can be a very practical upgrade.
+</p>
+
+<table class="project-table">
+<tr>
+<th>Flock Size</th>
+<th>Recommended Feeder Size</th>
+</tr>
+
+<tr>
+<td>4–8 chickens</td>
+<td>5-gallon bucket feeder</td>
+</tr>
+
+<tr>
+<td>8–20 chickens</td>
+<td>20–30 gallon barrel feeder</td>
+</tr>
+
+<tr>
+<td>20–40 chickens</td>
+<td>30–55 gallon barrel feeder</td>
+</tr>
+
+<tr>
+<td>40+ chickens</td>
+<td>55-gallon barrel feeder</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>Materials Needed</h2>
+
+<ul class="checklist">
+<li>55-gallon plastic barrel or food-grade drum</li>
+<li>4–6 poultry feeder ports</li>
+<li>Hole saw sized for your feeder ports</li>
+<li>Drill</li>
+<li>Tape measure</li>
+<li>Marker</li>
+<li>Level</li>
+<li>Silicone sealant, optional</li>
+<li>Stainless screws, if required by your feeder ports</li>
+<li>Concrete blocks, wood stand, or PVC stand, optional</li>
+</ul>
+
+<div class="callout">
+<h3>💡 Builder’s Tip</h3>
+<p>
+If possible, use a food-grade plastic barrel that previously held food-safe material. Avoid barrels that stored chemicals, cleaners, fuel, pesticides, or unknown liquids.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Tools Needed</h2>
+
+<table class="project-table">
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Drill</td>
+<td>Used with the hole saw to cut openings for the feeder ports.</td>
+</tr>
+
+<tr>
+<td>Hole Saw</td>
+<td>Creates clean, consistent holes for the feeder ports.</td>
+</tr>
+
+<tr>
+<td>Tape Measure</td>
+<td>Helps keep feeder ports level and evenly spaced.</td>
+</tr>
+
+<tr>
+<td>Marker</td>
+<td>Used to mark hole locations before drilling.</td>
+</tr>
+
+<tr>
+<td>Level</td>
+<td>Helps keep the ports aligned around the barrel.</td>
+</tr>
+
+<tr>
+<td>Utility Knife or Deburring Tool</td>
+<td>Used to clean rough plastic edges after drilling.</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>How Much Feed Will a 55-Gallon Barrel Hold?</h2>
+
+<p>
+A full 55-gallon drum can hold a large amount of chicken feed, but the exact weight depends on the feed type. Pellets, crumbles, mash, and grains all settle differently.
+</p>
+
+<table class="project-table">
+<tr>
+<th>Container Size</th>
+<th>Approximate Feed Capacity</th>
+<th>Best For</th>
+</tr>
+
+<tr>
+<td>5-gallon bucket</td>
+<td>About 25–35 lbs</td>
+<td>Small backyard flocks</td>
+</tr>
+
+<tr>
+<td>20-gallon barrel</td>
+<td>About 80–120 lbs</td>
+<td>Small to medium flocks</td>
+</tr>
+
+<tr>
+<td>30-gallon barrel</td>
+<td>About 120–170 lbs</td>
+<td>Medium flocks</td>
+</tr>
+
+<tr>
+<td>55-gallon drum</td>
+<td>About 220–300 lbs</td>
+<td>Large flocks or long refill intervals</td>
+</tr>
+</table>
+
+<div class="callout">
+<h3>💡 Real-World Feeding Tip</h3>
+<p>
+Even though a 55-gallon drum can hold several hundred pounds of feed, I usually only add one 50-pound bag at a time. This helps keep feed fresher, reduces the risk of moisture problems, and makes the feeder easier to move if needed.
+</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>How Long Will One 50-Pound Bag Last?</h2>
+
+<p>
+The table below uses a general estimate for adult laying hens. Actual feed use will vary based on breed size, weather, free-ranging, feed waste, age, and overall flock condition.
+</p>
+
+<table class="project-table">
+<tr>
+<th>Number of Chickens</th>
+<th>Approximate Days Per 50 lb Bag</th>
+</tr>
+
+<tr>
+<td>6 chickens</td>
+<td>About 30–40 days</td>
+</tr>
+
+<tr>
+<td>10 chickens</td>
+<td>About 18–24 days</td>
+</tr>
+
+<tr>
+<td>20 chickens</td>
+<td>About 9–12 days</td>
+</tr>
+
+<tr>
+<td>30 chickens</td>
+<td>About 6–8 days</td>
+</tr>
+
+<tr>
+<td>50 chickens</td>
+<td>About 4–5 days</td>
+</tr>
+</table>
+
+<p>
+For a more personalized estimate, use the <a href="chicken-feed-cost-calculator.html">Chicken Feed Cost Calculator</a> to estimate monthly feed usage and feed cost based on your actual flock size.
+</p>
+
+</div>
+
+<!-- ========================================= -->
+<!-- Build Instructions -->
+<!-- ========================================= -->
+
+<section class="content-section">
+
+<h2>Step-by-Step Build Instructions</h2>
+
+<p>
+Building this gravity feeder requires only a few basic tools and can usually be completed in an afternoon. The concept is simple: a weather-resistant container stores the feed while gravity keeps the feeding ports supplied as chickens eat.
+</p>
+
+<p>
+Our design uses a standard 55-gallon plastic food-grade barrel, although the same process works with smaller containers such as 5-gallon buckets, 15-gallon barrels, or 30-gallon drums.
+</p>
+
+</section>
+
+<section class="step-card">
+
+<h3>Step 1 – Choose Your Container</h3>
+
+<p>
+Select a clean food-grade plastic barrel whenever possible. Avoid barrels that previously contained chemicals, pesticides, or petroleum products.
+</p>
+
+<ul>
+
+<li>✔ 5-gallon bucket (small backyard flocks)</li>
+
+<li>✔ 15-30 gallon barrel (medium flocks)</li>
+
+<li>✔ 55-gallon barrel (large flocks)</li>
+
+</ul>
+
+<div class="placeholder-image">
+
+PHOTO PLACEHOLDER
+
+Recommended Barrel Types
+
+</div>
+
+</section>
+
+<section class="step-card">
+
+<h3>Step 2 – Mark the Feed Ports</h3>
+
+<p>
+Measure equal spacing around the bottom portion of the barrel approximately 3–4 inches above the bottom. This provides enough feed reserve while keeping the ports low enough for gravity to continuously refill them.
+</p>
+
+<p>
+Most 55-gallon feeders use 4 to 6 feeding ports depending on flock size.
+</p>
+
+<div class="placeholder-image">
+
+PHOTO PLACEHOLDER
+
+Marking Feed Port Locations
+
+</div>
+
+</section>
+
+<section class="step-card">
+
+<h3>Step 3 – Drill the Mounting Holes</h3>
+
+<p>
+Using the hole saw recommended by your feeder manufacturer, drill each mounting hole slowly to avoid cracking the plastic.
+</p>
+
+<p>
+Remove any burrs with a utility knife or sandpaper before installing the feeder cups.
+</p>
+
+<div class="placeholder-image">
+
+PHOTO PLACEHOLDER
+
+Drilling the Barrel
+
+</div>
+
+</section>
+
+<section class="step-card">
+
+<h3>Step 4 – Install the Feed Ports</h3>
+
+<p>
+Install each gravity feeder according to the manufacturer's instructions. Most systems use a threaded body and retaining nut with a rubber gasket to prevent moisture intrusion.
+</p>
+
+<p>
+Do not overtighten the retaining nut, as excessive force can distort the barrel wall.
+</p>
+
+<div class="placeholder-image">
+
+PHOTO PLACEHOLDER
+
+Installing Feed Ports
+
+</div>
+
+</section>
+
+<section class="step-card">
+
+<h3>Step 5 – Add a Secure Lid</h3>
+
+<p>
+Keeping feed dry is one of the most important aspects of long-term feed storage. Use a tight-fitting removable lid to keep rain, rodents, insects, and wild birds out of the feeder.
+</p>
+
+<p>
+Even moisture from high humidity can cause feed to spoil over time.
+</p>
+
+<div class="placeholder-image">
+
+PHOTO PLACEHOLDER
+
+Finished Lid Installation
+
+</div>
+
+</section>
+
+<section class="step-card">
+
+<h3>Step 6 – Fill With Feed</h3>
+
+<p>
+Although a 55-gallon barrel can hold significantly more than one 50-pound bag of feed, we generally recommend adding only one bag at a time.
+</p>
+
+<p>
+Keeping less feed inside the barrel reduces the chance of spoilage from humidity, condensation, or accidental water intrusion while still greatly reducing the number of trips required to refill traditional feeders.
+</p>
+
+<div class="placeholder-image">
+
+PHOTO PLACEHOLDER
+
+Adding Feed
+
+</div>
+
+</section>
+
+<section class="tip-box">
+
+<h3>💡 Builder's Tip</h3>
+
+<p>
+Many people assume they should completely fill a 55-gallon barrel. In our experience, using a single 50-pound bag at a time strikes an excellent balance between convenience and feed freshness. Unless your flock is very large, smaller refills help reduce waste and minimize the risk of moisture damage.
+</p>
+
+</section>
+
+<div class="section">
+
+<h2>Real-World Results</h2>
+
+<p>
+This project is not just about building the largest feeder possible. The real benefit is reducing daily chores, lowering feed waste, and creating a feeder system that can be scaled to your flock size.
+</p>
+
+<table class="project-table">
+<tr>
+<th>Feature</th>
+<th>Result</th>
+</tr>
+
+<tr>
+<td>Feed Capacity</td>
+<td>Can hold far more than a standard hanging feeder</td>
+</tr>
+
+<tr>
+<td>Refill Frequency</td>
+<td>Reduced compared to small feeders</td>
+</tr>
+
+<tr>
+<td>Best Feed Type</td>
+<td>Pellets or crumbles</td>
+</tr>
+
+<tr>
+<td>Feed Waste</td>
+<td>Low when ports are installed correctly</td>
+</tr>
+
+<tr>
+<td>Best Placement</td>
+<td>Covered run, coop overhang, or protected feeding area</td>
+</tr>
+
+<tr>
+<td>Portability</td>
+<td>Low once filled with feed</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>Estimated Cost Savings</h2>
+
+<p>
+Large-capacity commercial feeders can be expensive, especially for bigger flocks. Building your own barrel feeder may save money if you already have access to a clean barrel or can find one locally.
+</p>
+
+<table class="project-table">
+<tr>
+<th>Option</th>
+<th>Estimated Cost</th>
+</tr>
+
+<tr>
+<td>Commercial large-capacity feeder</td>
+<td>$150–$350+</td>
+</tr>
+
+<tr>
+<td>DIY barrel feeder, excluding barrel</td>
+<td>$40–$90</td>
+</tr>
+
+<tr>
+<td>DIY barrel feeder, including used barrel</td>
+<td>$60–$130</td>
+</tr>
+
+<tr>
+<td>Potential savings</td>
+<td>$75–$250+</td>
+</tr>
+</table>
+
+<p>
+Prices vary depending on feeder ports, barrel availability, hardware, and whether you build a stand.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Advantages of a 55-Gallon Gravity Feeder</h2>
+
+<ul>
+<li>Greatly reduces how often you need to refill feed.</li>
+<li>Works well for medium and large flocks.</li>
+<li>Can be adapted to different barrel or bucket sizes.</li>
+<li>Reduces feed waste compared to open pans or trays.</li>
+<li>Uses simple gravity feed with very few moving parts.</li>
+<li>Can be built less expensively than many commercial large-capacity feeders.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Things to Consider Before Building</h2>
+
+<ul>
+<li>A full 55-gallon feeder can become extremely heavy.</li>
+<li>The barrel needs to stay dry inside.</li>
+<li>It is not ideal for small flocks unless you only add small amounts of feed.</li>
+<li>Feed ports must be installed at the correct height.</li>
+<li>The barrel should be placed where chickens can access it easily without exposing feed to heavy rain.</li>
+<li>If rodents are a problem, additional feed storage and predator control may be needed.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Common Mistakes to Avoid</h2>
+
+<table class="project-table">
+<tr>
+<th>Mistake</th>
+<th>Why It Matters</th>
+</tr>
+
+<tr>
+<td>Installing ports too low</td>
+<td>Chickens may scratch bedding, dirt, or moisture into the feeder.</td>
+</tr>
+
+<tr>
+<td>Installing ports too high</td>
+<td>Smaller chickens may struggle to reach the feed.</td>
+</tr>
+
+<tr>
+<td>Using a dirty or unknown barrel</td>
+<td>Barrels that held chemicals should never be used for feed.</td>
+</tr>
+
+<tr>
+<td>Leaving the feeder exposed to rain</td>
+<td>Moisture can cause feed to clump, mold, or spoil.</td>
+</tr>
+
+<tr>
+<td>Overfilling the barrel</td>
+<td>Feed can sit too long and lose freshness.</td>
+</tr>
+
+<tr>
+<td>Skipping a secure lid</td>
+<td>Rodents, insects, rain, and wild birds may access the feed.</td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>Maintenance Tips</h2>
+
+<ul>
+<li>Check the feeder ports weekly for clogs or damp feed.</li>
+<li>Inspect the lid after heavy rain.</li>
+<li>Clean spilled feed around the barrel to discourage rodents.</li>
+<li>Do not allow old feed to sit at the bottom for long periods.</li>
+<li>Periodically empty the barrel completely and wipe out dust or crumbs.</li>
+<li>Move the feeder under cover if rain frequently blows into the ports.</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>What I Would Do Differently Next Time</h2>
+
+<p>
+If I were building another one, I would pay extra attention to placement before filling the barrel. Once feed is added, a large barrel feeder becomes much harder to move.
+</p>
+
+<p>
+I would also consider adding some type of simple rain shield above the feeding ports if the feeder will sit in an exposed area.
+</p>
+
+<div class="photo-placeholder">
+<h3>📸 Improvement Photo Placeholder</h3>
+<p>Add photos here later showing any rain shield, stand, or placement improvements.</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can I build this feeder using a 5-gallon bucket?</h3>
+
+<p>
+Absolutely. The same gravity feeder ports work well with 5-gallon buckets for smaller backyard flocks. The construction process is nearly identical, with the primary difference being feed capacity.
+</p>
+
+<h3>How many feed ports should I install?</h3>
+
+<p>
+Most builders use four to six feed ports on a 55-gallon barrel. Smaller containers may only need two or three ports depending on flock size.
+</p>
+
+<h3>Can I leave the feeder outside?</h3>
+
+<p>
+Yes, but placing it under a roof, coop overhang, or covered run will help keep feed dry and extend the life of the feeder.
+</p>
+
+<h3>Will chickens waste less feed?</h3>
+
+<p>
+In our experience, gravity feeder ports generally reduce feed waste compared to open pans and trough feeders, especially when installed at the proper height.
+</p>
+
+<h3>Can rodents get into the feeder?</h3>
+
+<p>
+A properly sealed lid greatly reduces the chance of rodents accessing stored feed, although spilled feed around the base should always be cleaned up promptly.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Video Walkthrough</h2>
+
+<div class="video-placeholder">
+
+<h3>🎥 Video Placeholder</h3>
+
+<p>
+A complete build video will be added after the project is photographed and documented.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Project Gallery</h2>
+
+<div class="photo-placeholder">
+
+<h3>📸 Photo Gallery Placeholder</h3>
+
+<p>
+
+Finished Project
+
+<br><br>
+
+Side View
+
+<br><br>
+
+Feed Ports
+
+<br><br>
+
+Stand Construction
+
+<br><br>
+
+Inside Barrel
+
+<br><br>
+
+Installation Photos
+
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Recommended Products Used In This Project</h2>
+
+<table class="project-table">
+
+<tr>
+
+<th>Product</th>
+
+<th>Purpose</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Riverbend Resources Poultry Pro Feed Ports</td>
+
+<td>Gravity Feed Ports</td>
+
+<td>★★★★★ Personally Recommended</td>
+
+</tr>
+
+<tr>
+
+<td>55-Gallon Food Grade Barrel</td>
+
+<td>Feed Storage</td>
+
+<td>Recommended</td>
+
+</tr>
+
+<tr>
+
+<td>Hole Saw</td>
+
+<td>Installation</td>
+
+<td>Required</td>
+
+</tr>
+
+<tr>
+
+<td>PVC Stand Materials</td>
+
+<td>Optional Stand</td>
+
+<td>Optional</td>
+
+</tr>
+
+</table>
+
+<p>
+
+Affiliate links will be added to recommended products as they become available.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Related Backyard Chicken Projects</h2>
+
+<ul>
+
+<li><strong>BCP-002</strong> — DIY 55-Gallon Gravity Chicken Waterer <em>(Coming Soon)</em></li>
+
+<li><strong>BCP-003</strong> — Roll-Away Nest Box <em>(Coming Soon)</em></li>
+
+<li><strong>BCP-004</strong> — Predator-Proof Coop Door <em>(Coming Soon)</em></li>
+
+<li><strong>BCP-005</strong> — PVC Automatic Watering System <em>(Coming Soon)</em></li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Helpful Planning Tools</h2>
+
+<div class="project-summary">
+
+<div class="summary-box">
+
+<strong>🐔 Feed Cost Calculator</strong>
+
+<p>
+
+Estimate monthly feed costs based on your flock size.
+
+</p>
+
+<a href="chicken-feed-cost-calculator.html">Open Calculator →</a>
+
+</div>
+
+<div class="summary-box">
+
+<strong>🥚 Egg Profit Calculator</strong>
+
+<p>
+
+Estimate egg production and potential income.
+
+</p>
+
+<a href="egg-profit-calculator.html">Open Calculator →</a>
+
+</div>
+
+<div class="summary-box">
+
+<strong>🏠 Coop Cost Estimator</strong>
+
+<p>
+
+Estimate the cost of building or buying a coop.
+
+</p>
+
+<a href="chicken-coop-estimator.html">Open Calculator →</a>
+
+</div>
+
+<div class="summary-box">
+
+<strong>📋 Backyard Flock Planner</strong>
+
+<p>
+
+Plan the ideal flock size for your property.
+
+</p>
+
+<a href="backyard-chicken-flock-planner.html">Open Planner →</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="callout">
+
+<h2>What Happens Next?</h2>
+
+<p>
+
+Now that you've built your feeder, the next step is making sure your chickens always have clean water, enough coop space, and an accurate estimate of monthly feed costs.
+
+Explore the calculators and upcoming DIY projects to continue building a healthier, more efficient backyard flock.
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<hr>
+
+<p style="text-align:center;">
+
+© 2026 Backyard Chicken Planner
+
+<br><br>
+
+Helping backyard chicken keepers plan smarter, build better, and raise healthier chickens.
+
+</p>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
