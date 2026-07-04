@@ -62,3 +62,34 @@ July 2026
 
 This is the prototype project for all future Backyard Chicken Planner DIY projects.
 
+Project ID
+
+BCP-001
+
+Category
+
+DIY Projects
+
+Difficulty
+
+Intermediate
+
+Estimated Build
+
+2–3 Hours
+
+Affiliate Products
+
+4
+
+Calculator Links
+
+4
+
+Photo Count
+
+0
+
+Video Status
+
+Pending
