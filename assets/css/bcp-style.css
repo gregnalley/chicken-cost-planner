@@ -505,10 +505,14 @@ nav a:hover{
    AFFILIATE / PRODUCT CARDS
 =========================== */
 
+/* ===========================
+   AFFILIATE / PRODUCT CARDS
+=========================== */
+
 .affiliate-card{
     background:#ffffff;
     border:2px solid #e6e6e6;
-    border-radius:14px;
+    border-radius:16px;
     padding:26px;
     margin:30px 0;
     box-shadow:0 4px 12px rgba(0,0,0,.08);
@@ -516,7 +520,7 @@ nav a:hover{
 
 .affiliate-card h3{
     color:#1B5E20;
-    margin-bottom:14px;
+    margin-bottom:12px;
     font-size:26px;
 }
 
@@ -532,6 +536,24 @@ nav a:hover{
 
 .affiliate-card li{
     margin-bottom:8px;
+}
+
+.affiliate-badge{
+    display:inline-block;
+    background:#f4f9f4;
+    color:#1B5E20;
+    border:1px solid #b8d8b8;
+    padding:7px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:14px;
+}
+
+.affiliate-note{
+    font-size:14px;
+    color:#666;
+    margin-top:12px;
 }
 
 .affiliate-button{
