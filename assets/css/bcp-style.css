@@ -604,6 +604,55 @@ break-inside:avoid;
 margin-bottom:10px;
 }
 
+/* ===========================
+   AFFILIATE / PRODUCT CARDS
+=========================== */
+
+.affiliate-card{
+    background:#ffffff;
+    border:2px solid #e6e6e6;
+    border-radius:14px;
+    padding:26px;
+    margin:30px 0;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.affiliate-card h3{
+    color:#1B5E20;
+    margin-bottom:14px;
+    font-size:26px;
+}
+
+.affiliate-card p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:16px;
+}
+
+.affiliate-card ul{
+    margin:15px 0 22px 22px;
+}
+
+.affiliate-card li{
+    margin-bottom:8px;
+}
+
+.affiliate-button{
+    display:inline-block;
+    background:#ff9900;
+    color:white;
+    padding:14px 26px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.affiliate-button:hover{
+    background:#e48a00;
+    transform:translateY(-2px);
+}
+
 @media(max-width:700px){
 .checklist{
 columns:1;
