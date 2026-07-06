@@ -74,5 +74,95 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-006": {
+    category: "Waterers",
+    badge: "5 Gallon Chicken Waterer",
+    title: "Rent A Coop 5 Gallon Bucket Waterer",
+    description: "A dedicated poultry waterer helps keep your flock’s water cleaner than an open bowl and makes daily chicken care easier, especially for beginners. Easy to fill and easy to clean, and a bonus Anti roosting cone for the top.",
+    bullets: [
+      "Excellent for small to medium flocks",
+      "Anti roosting cone on top to keep chickens off",
+      "Easy to fill and clean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4p9531l",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
-};
+"PRD-007": {
+    category: "Waterers",
+    badge: "5 Gallon Chicken Waterer",
+    title: "Farm Tuff 5 Gallon  Waterer",
+    description: "A dedicated poultry waterer helps keep your flock’s water cleaner than an open bowl and makes daily chicken care easier, especially for beginners. Easy to fill from the bottom through a removalable plug, and easy to clean.",
+    bullets: [
+      "Excellent for small to medium flocks",
+      "Great Value",
+      "Easy to fill and clean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4fjjtZf",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-008": {
+    category: "Waterers",
+    badge: "Simple Gravity Waterer",
+    title: "Little Giant Gravity Waterer",
+    description: "A dedicated poultry waterer helps keep your flock’s water cleaner than an open bowl and makes daily chicken care easier, especially for beginners. Easy to fill and easy to clean.",
+    bullets: [
+      "Excellent for small flocks",
+      "Great Value",
+      "Easy to fill and clean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4p68tSp",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-009": {
+    category: "Waterers",
+    badge: "Simple Gravity Waterer",
+    title: "Horizontal Nipple Waterer",
+    description: "A dedicated poultry waterer helps keep your flock’s water cleaner than an open bowl and makes daily chicken care easier, especially for beginners. Great for medium to larger flocks but can be a little messy right under the waterer as the nipples can drip onto the ground as the chickens get their water.",
+    bullets: [
+      "Excellent for small flocks",
+      "Great Value",
+      "Easy to fill and clean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/3QJmclz",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-010": {
+    category: "Waterers",
+    badge: "Heated Gravity Waterer",
+    title: "Premier 1 All Season Heated Waterer",
+    description: "One of the best heated poultry waterers on the market. With built in thermostat that kicks on when outside temp is below 40 degrees. Keeps water from freezing so chickens have access to water at any time in cold weather.",
+    bullets: [
+      "Excellent for small flocks",
+      "Great Value",
+      "Easy to fill and clean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4aDCza5",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-011": {
+    category: "Waterers",
+    badge: "Watering Cups",
+    title: "Premier 1 All Season Heated Waterer",
+    description: "Chicken watering cups or horizontal poultry nipples are a good fit for DIY bucket and barrel waterer builds. They allow chickens to drink from a larger enclosed water supply while helping reduce dirt, bedding, and debris in the water.",
+    bullets: [
+      "Excellent for small, medium, or large flocks",
+      "Very Adaptable",
+      "Works well for future BCP-002 style projects"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/3SK6MOy",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
+}
