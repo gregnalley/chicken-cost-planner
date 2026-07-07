@@ -224,6 +224,49 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-016": {
+    category: "Nesting Boxes",
+    badge: "Best Overall: Roll Away",
+    title: "Roll Away Nesting Boxes",
+    description: "Nesting boxes are essential as chickens can lay eggs almost daily. By using nesting boxes and getting your chickens to lay in them it makes it much easier to retrieve the eggs rather than having a 'Easter Egg Hunt' every day.",
+    bullets: [
+      "Excellent for larger flocks up to 30 chickens",
+      "Best for outdoor coops - Shed Style Coops",
+      "Plenty of room for lots of chickens and eggs"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4y7rqrV",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
+"PRD-017": {
+    category: "Nesting Boxes",
+    badge: "Best Budget Choice",
+    title: "Little Giant Plastic Nesting Box",
+    description: "Nesting boxes are essential as chickens can lay eggs almost daily. By using nesting boxes and getting your chickens to lay in them it makes it much easier to retrieve the eggs rather than having a 'Easter Egg Hunt' every day.",
+    bullets: [
+      "Excellent for smaller flocks",
+      "Easy to attach",
+      "Easy to cean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4f2b7nI",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-018": {
+    category: "Nesting Boxes",
+    badge: "Best For Beginners",
+    title: "Little Giant Single Nesting Box",
+    description: "Nesting boxes are essential as chickens can lay eggs almost daily. By using nesting boxes and getting your chickens to lay in them it makes it much easier to retrieve the eggs rather than having a 'Easter Egg Hunt' every day.",
+    bullets: [
+      "Excellent for smaller flocks",
+      "Easy to attach",
+      "Easy to cean"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4vhs97w",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
 }
