@@ -374,6 +374,34 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-026": {
+    category: "Predator Protection",
+    badge: "Trail Camera",
+    title: "Spypoint Twin Pack Cellular Cameras",
+    description: "If you are having an issue with predators but don't know what might be the cause and the signs are there, then get a trail camera and see for yourself.",
+    bullets: [
+      "Multi Funtion Capture",
+      "Get photos instantly on your phone with their user friendly app",
+      "Free Photo Transmission plan up to 100 photos - Upgradable"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4y8zfh8",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
+"PRD-027": {
+    category: "Predator Protection",
+    badge: "microSD card for Trail Camera",
+    title: "microSD Card",
+    description: "If you are getting a trail camera you will also need a microSD card.",
+    bullets: [
+      "High speed memory card",
+      "Ultra Durable",
+      "Comes with SD Adapter"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4v9ycux",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
 }
