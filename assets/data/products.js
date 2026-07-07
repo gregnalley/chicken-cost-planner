@@ -404,4 +404,21 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-028": {
+    category: "Hot Weather Protection",
+    badge: "Shade Cloth",
+    title: "Shade Cloth",
+    description: "In hot weather it is imperative to provide adequate shade for your chickens.",
+    bullets: [
+      "Provides up to 90% shade",
+      "Very Durable",
+      "Comes in a variety of sizes to accomodate your yard"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4aI0NQl",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
+
 }
