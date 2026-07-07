@@ -164,5 +164,66 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-012": {
+    category: "Chicken Coops",
+    badge: "Walk-in Coop",
+    title: "Pawhut Large Chicken Coop",
+    description: "Full Walk-in Chicken Coops can be pricey and they do take some time, skill, and tools to assemble. Most also come with integrated nesting boxes. They will be cheaper than custom built units and with proper care and cleaning should provide years of protection for you flock. Some people even upgrade their walk-in coops with other items such as: heavier gauge chicken wire, automatic chicken coop door, and heavier gauge metal roofing.",
+    bullets: [
+      "Excellent for small to medium flocks",
+      "A bit Pricey but great entry coop",
+      "Great for heavy predator areas when properly built"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4eKxbnU",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-013": {
+    category: "Chicken Coops",
+    badge: "Best Budjet Choice",
+    title: "Small Pre Fab Chicken Coop",
+    description: "Small prefab chicken coops are one of the best way to get into raising chickens. Start small with 2 to 4 chickens and once you are ready expand your flock and purchase a larger coop or build your own. Keep in mind thought that these are not really intended to be forever coops. They are mearly starter coops to get your feet wet with raising chickens.",
+    bullets: [
+      "Excellent for small flocks 2 to 4 chickens",
+      "Easy to assemlbe with good instructions",
+      "Nice starter coop, but look to upgrade"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/44ffo23",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-014": {
+    category: "Chicken Coops",
+    badge: "Rotational Grazing : Chicken Tractor",
+    title: "Chicken Tractor - Coop",
+    description: "These work great when you can move them around your yard every few days and provide new areas for your chickens to graze on grass and bugs, which can help keep feed costs down a bit. Keep in mind though that this is just a starter kind of tractor and if you like the way it works you may want to have a larger one built or build it yourself.",
+    bullets: [
+      "Excellent for small flocks 6 to 8 chickens",
+      "Easy to assemlbe with good instructions",
+      "Great coop to help reduce feed costs"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4vOHP3a",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-015": {
+    category: "Chicken Coops",
+    badge: "Shed Type Chicken Coop",
+    title: "Shed Chicken Coop",
+    description: "These shed style coops are great for larger flocks but do lack some essential items like nesting boxes but those can be built or purchased as needed. I would make a suggestion though and that would be to upgrade the hardware cloth that most of these come with to a higher gauge 1 inch chicken wire to help with predator protection and replace the cover that is provided with a heavy duty tarp or even one of those used billboard vinyls you can find online. They are faily cheap depending on the size and last really well.",
+    bullets: [
+      "Excellent for flocks up to 30 chickens",
+      "Fairly easy to assemble espcially with a second person",
+      "Good choice for larger yards"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/3T311vk",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
 
 }
