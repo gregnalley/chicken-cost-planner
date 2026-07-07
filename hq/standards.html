@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Standards Manual | BCP Headquarters</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/bcp-style.css">
+</head>
+
+<body>
+
+<div style="max-width:1100px; margin:40px auto;">
+<div class="content">
+
+<div class="banner">
+<h1>📖 BCP Standards Manual</h1>
+<p>The operating rules for building, organizing, and maintaining Backyard Chicken Planner.</p>
+</div>
+
+<div id="hq-nav"></div>
+
+<div class="section">
+<h2>🏗 Core Build Philosophy</h2>
+
+<ul>
+<li>Build systems before building dozens of pages.</li>
+<li>Use one source of truth whenever possible.</li>
+<li>Make pages polished Version 1.0 assets, not rough drafts.</li>
+<li>Use Search Console data to guide improvements.</li>
+<li>Helpful content comes before product promotion.</li>
+<li>Every page should belong to a content cluster.</li>
+<li>Every page should give the reader a clear next step.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>🏷 Naming Standards</h2>
+
+<table>
+<tr>
+<th>Type</th>
+<th>Prefix</th>
+<th>Example</th>
+</tr>
+
+<tr>
+<td>Product</td>
+<td>PRD</td>
+<td>PRD-001</td>
+</tr>
+
+<tr>
+<td>DIY Project</td>
+<td>BCP</td>
+<td>BCP-001</td>
+</tr>
+
+<tr>
+<td>Calculator</td>
+<td>CALC</td>
+<td>CALC-001</td>
+</tr>
+
+<tr>
+<td>Guide / Article</td>
+<td>GUIDE</td>
+<td>GUIDE-001</td>
+</tr>
+
+<tr>
+<td>Decision</td>
+<td>DEC</td>
+<td>DEC-001</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>📦 Product Card Standard</h2>
+
+<p>
+Product recommendations should be managed through <strong>assets/data/products.js</strong> and displayed using <strong>scripts/product-loader.js</strong>.
+</p>
+
+<p>
+To insert a product card, use:
+</p>
+
+<pre>
+&lt;div data-product="PRD-001"&gt;&lt;/div&gt;
+</pre>
+
+<ul>
+<li>Use generic product categories in page headings when possible.</li>
+<li>Do not overuse product cards on informational pages.</li>
+<li>Product recommendations should solve a real reader problem.</li>
+<li>Amazon links can be replaced later with better affiliate programs.</li>
+<li>Update the product once in products.js instead of editing every page.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>📚 Content Cluster Standard</h2>
+
+<p>
+Every new article should strengthen one of the main content clusters.
+</p>
+
+<table>
+<tr>
+<th>Cluster</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Chicken Breeds</td>
+<td>Help readers choose chickens</td>
+</tr>
+
+<tr>
+<td>Baby Chicks</td>
+<td>Help new owners raise chicks successfully</td>
+</tr>
+
+<tr>
+<td>Chicken Health</td>
+<td>Help readers identify, prevent, and respond to health issues</td>
+</tr>
+
+<tr>
+<td>Eggs & Incubation</td>
+<td>Help readers manage eggs, laying, incubation, and hatching</td>
+</tr>
+
+<tr>
+<td>Chicken Supplies</td>
+<td>Help readers choose useful equipment</td>
+</tr>
+
+<tr>
+<td>Coops</td>
+<td>Help readers build, buy, size, and improve coops</td>
+</tr>
+
+<tr>
+<td>Predator Protection</td>
+<td>Help readers protect their flock</td>
+</tr>
+
+<tr>
+<td>DIY Projects</td>
+<td>Provide hands-on project builds</td>
+</tr>
+
+<tr>
+<td>Calculators</td>
+<td>Provide interactive planning tools</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>🧱 Standard Page Blueprint</h2>
+
+<ol>
+<li>SEO title</li>
+<li>Meta description</li>
+<li>Article schema or FAQ schema when appropriate</li>
+<li>Banner intro</li>
+<li>Quick answer section</li>
+<li>Main educational content</li>
+<li>Comparison table or chart when useful</li>
+<li>Detailed sections</li>
+<li>Common mistakes or warnings</li>
+<li>Related products only when natural</li>
+<li>Related calculators, guides, or projects</li>
+<li>FAQ section</li>
+<li>Final thoughts / next step</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>🔗 Internal Linking Rules</h2>
+
+<ul>
+<li>Every new guide should link to at least three related pages when possible.</li>
+<li>Hub pages should link to all major supporting pages in their cluster.</li>
+<li>Supporting pages should link back to the hub.</li>
+<li>Buyer’s guides should link to related educational guides.</li>
+<li>Project pages should link to products, guides, and calculators.</li>
+<li>Do not add random internal links; every link should help the reader.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>🚀 Publishing Checklist</h2>
+
+<table>
+<tr>
+<th>Task</th>
+<th>Complete?</th>
+</tr>
+
+<tr>
+<td>Page belongs to a content cluster</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Search intent is clear</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>SEO title written</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Meta description written</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Internal links added</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Product opportunities reviewed</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>FAQ added when appropriate</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Schema added when appropriate</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Mobile layout checked</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>sitemap.xml updated</td>
+<td>☐</td>
+</tr>
+
+<tr>
+<td>Search Console indexing requested</td>
+<td>☐</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>🧭 Versioning Standard</h2>
+
+<table>
+<tr>
+<th>Version</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>v1.0</td>
+<td>Polished first public version</td>
+</tr>
+
+<tr>
+<td>v1.1</td>
+<td>Small improvements, links, products, or cleanup</td>
+</tr>
+
+<tr>
+<td>v2.0</td>
+<td>Major authority upgrade based on Search Console data or new strategy</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>🧠 Decision Standard</h2>
+
+<p>
+Any major structural decision should be added to the Decision Log if it changes how the site will be built, maintained, monetized, or expanded.
+</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

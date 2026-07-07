@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Catalog | BCP Headquarters</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/bcp-style.css">
+</head>
+
+<body>
+
+<div style="max-width:1100px; margin:40px auto;">
+<div class="content">
+
+<div class="banner">
+
+<h1>📦 Product Catalog</h1>
+
+<p>
+Manage all products used throughout Backyard Chicken Planner.
+The actual product data lives in
+<strong>assets/data/products.js</strong>.
+This page serves as the management dashboard.
+</p>
+
+</div>
+
+<div id="hq-nav"></div>
+
+<div class="section">
+
+<h2>📊 Product Summary</h2>
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>Current</th>
+<th>Goal</th>
+</tr>
+
+<tr>
+<td>Total Products</td>
+<td>27</td>
+<td>250+</td>
+</tr>
+
+<tr>
+<td>Categories</td>
+<td>Feeders, Waterers, Coops, Nesting Boxes</td>
+<td>20+ Categories</td>
+</tr>
+
+<tr>
+<td>Affiliate Programs</td>
+<td>Amazon</td>
+<td>Amazon + Tractor Supply + Premier 1 + Others</td>
+</tr>
+
+<tr>
+<td>Product System</td>
+<td>products.js</td>
+<td>Single Source of Truth</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>📋 Product Categories</h2>
+
+<table>
+
+<tr>
+<th>Category</th>
+<th>Status</th>
+<th>Products</th>
+<th>Notes</th>
+</tr>
+
+<tr>
+<td>Feeders</td>
+<td>Established</td>
+<td>✓</td>
+<td>Continue expanding as needed.</td>
+</tr>
+
+<tr>
+<td>Waterers</td>
+<td>Established</td>
+<td>✓</td>
+<td>Will support BCP-002.</td>
+</tr>
+
+<tr>
+<td>Coops</td>
+<td>Established</td>
+<td>✓</td>
+<td>Add ventilation and summer products later.</td>
+</tr>
+
+<tr>
+<td>Nesting Boxes</td>
+<td>Established</td>
+<td>✓</td>
+<td>Add roll-away options later.</td>
+</tr>
+
+<tr>
+<td>Predator Protection</td>
+<td>Future</td>
+<td>—</td>
+<td>Hardware cloth, fencing, cameras.</td>
+</tr>
+
+<tr>
+<td>Baby Chicks</td>
+<td>Future</td>
+<td>—</td>
+<td>Brooders, feeders, waterers, heat plates.</td>
+</tr>
+
+<tr>
+<td>Chicken Health</td>
+<td>Future</td>
+<td>—</td>
+<td>Electrolytes, vitamins, first aid.</td>
+</tr>
+
+<tr>
+<td>Egg Collection</td>
+<td>Future</td>
+<td>—</td>
+<td>Baskets, cartons, storage.</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>🧱 Product Standards</h2>
+
+<ul>
+
+<li>Every product receives a unique Product ID.</li>
+
+<li>Products are managed only inside <strong>products.js</strong>.</li>
+
+<li>Pages should never contain hard-coded affiliate cards.</li>
+
+<li>Pages should insert products using:</li>
+
+</ul>
+
+<pre>
+&lt;div data-product="PRD-001"&gt;&lt;/div&gt;
+</pre>
+
+<ul>
+
+<li>Headings should remain generic whenever possible.</li>
+
+<li>Products should solve a reader problem instead of simply promoting an item.</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🎯 Current Priorities</h2>
+
+<ol>
+
+<li>Add Baby Chick product category.</li>
+
+<li>Add Predator Protection products.</li>
+
+<li>Add Chicken Health products.</li>
+
+<li>Add Egg Collection products.</li>
+
+<li>Expand beyond Amazon as affiliate approvals are received.</li>
+
+</ol>
+
+</div>
+
+<div class="section">
+
+<h2>🚀 Future Product System</h2>
+
+<p>
+
+Future versions of the Product System may include:
+
+</p>
+
+<ul>
+
+<li>Multiple affiliate programs per product.</li>
+
+<li>Automatic retailer selection.</li>
+
+<li>Product images loaded automatically.</li>
+
+<li>Price update reminders.</li>
+
+<li>Product usage tracking.</li>
+
+<li>Automatic "Used On" reporting.</li>
+
+<li>Dashboard integration with products.js.</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🧠 Notes</h2>
+
+<p>
+
+The Product System is the backbone of affiliate management on Backyard Chicken Planner.
+
+All public pages should reference products through <strong>products.js</strong> so that one update automatically updates every page where that product appears.
+
+</p>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
