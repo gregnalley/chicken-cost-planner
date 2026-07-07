@@ -21,15 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("");
 
     slot.innerHTML = `
-      <div class="section product-collection" data-collection-id="${collectionId}">
-        <h2>${collection.title}</h2>
-        <p>${collection.description}</p>
-        ${productCards}
-      </div>
+      <h2>${collection.title}</h2>
+      <p>${collection.description}</p>
+      ${productCards}
     `;
-
-    if (typeof renderProductCards === "function") {
-      renderProductCards(slot);
-    }
   });
+
+  if (typeof renderProductCards === "function") {
+    renderProductCards();
+  }
 });
