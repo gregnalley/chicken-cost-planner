@@ -344,6 +344,36 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-024": {
+    category: "Predator Protection",
+    badge: "Poultry Electric Netting",
+    title: "Rent A Coop - 48 inches x 169 feet",
+    description: "Protect Against Common Predators | This electric chicken fence helps create a strong boundary between your flock and common ground-level predators. Ideal for backyard chickens, ducks, and turkeys, the 48 inches height and electrified netting help support safer outdoor access for poultry 4 weeks and older.",
+    bullets: [
+      "Fast and Easy set up",
+      "Reliable protection",
+      "Must also have an Energizer"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4bv7mpI",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-025": {
+    category: "Predator Protection",
+    badge: "Electric Netting - Energizer",
+    title: "Rent A Coop - Solar Energizer",
+    description: "Protect your chickens with an all-inclusive energizer package making your setup truly mobile.",
+    bullets: [
+      "Will energize up to 840 feet of poultry netting",
+      "Provides 0.38 joules of power to the netting",
+      "Comes with everything including a 3 foot ground rod"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4f1ilZ7",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
 
 
 }
