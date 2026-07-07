@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!collection) {
       slot.innerHTML = `
-        <div class="section">
-          <p><strong>Collection not found:</strong> ${collectionId}</p>
-        </div>
+        <p><strong>Collection not found:</strong> ${collectionId}</p>
       `;
       return;
     }
@@ -27,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   });
 
-  if (typeof renderProductCards === "function") {
-    renderProductCards();
-  }
+  setTimeout(function () {
+    if (typeof window.renderProductCards === "function") {
+      window.renderProductCards();
+    }
+  }, 50);
 });
