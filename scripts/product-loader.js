@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const productSlots = document.querySelectorAll("[data-product]");
+window.renderProductCards = function (container = document) {
+  const productSlots = container.querySelectorAll("[data-product]");
 
   productSlots.forEach(function (slot) {
+    if (slot.dataset.rendered === "true") return;
+
     const productId = slot.getAttribute("data-product");
     const product = BCP_PRODUCTS[productId];
 
@@ -11,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <p><strong>Product not found:</strong> ${productId}</p>
         </div>
       `;
+      slot.dataset.rendered = "true";
       return;
     }
 
@@ -21,7 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("");
 
     slot.innerHTML = `
-      <div class="affiliate-card" data-product-id="${productId}" data-product-category="${product.category}">
+      <div class="affiliate-card"
+           data-product-id="${productId}"
+           data-product-category="${product.category}">
+
         <span class="affiliate-badge">${product.badge}</span>
 
         <h3>${product.title}</h3>
@@ -40,7 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
         </a>
 
         <p class="affiliate-note">${product.note}</p>
+
       </div>
     `;
+
+    slot.dataset.rendered = "true";
   });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.renderProductCards();
 });
