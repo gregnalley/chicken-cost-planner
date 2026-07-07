@@ -419,6 +419,37 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-029": {
+    category: "Brooder Products",
+    badge: "Brooder All-Inclusive System",
+    title: "Rent A Coop Brooder",
+    description: "Our foldable Big Red Barn Brooder comfortably raises up to 8 chicks for their first 6 weeks. Sets up in minutes, tool-free assembly, includes an LED Light with 3 color settings, liners for every stage.",
+    bullets: [
+      "All-Inclusive",
+      "Super Easy to clean",
+      "Raise up to 8 chicks through their fist 6 weeks"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4yeBpvO",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-030": {
+    category: "Brooder Products",
+    badge: "Brooder Bedding",
+    title: "Pine Shaving Bedding",
+    description: "Pine shavings are a must for brooders as little chicks will eat and poop all the time so constant cleaning is necessary for healthy chicks.",
+    bullets: [
+      "100% pine and bio-degradable and compostable",
+      "Fresh smell",
+      "Low dust and super absorbent"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4f1Y1a5",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
 
 
 }
