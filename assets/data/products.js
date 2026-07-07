@@ -269,4 +269,81 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-019": {
+    category: "Automatic Coop Door",
+    badge: "Best Overall Automatic Coop Door",
+    title: "Chickgaurd Automatic Coop Door",
+    description: "Keep your flock secure from dusk till dawn with the ChickenGuard PRO. Featuring a built-in light sensor and LCD screen, this automatic chicken door ensures your chickens and ducks are safe even when you’re away.",
+    bullets: [
+      "Excellent to keep chickens safe",
+      "Dual Power Options",
+      "Vertatile for any coop"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/3SDSzmj",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-020": {
+    category: "Automatic Coop Door",
+    badge: "Best Budget Automatic Coop Door",
+    title: "FarmLite Automatic Coop Door",
+    description: "Americna owned brand that stands behind their products and promises help whether you've had their product for 2 months or 2 years.",
+    bullets: [
+      "Infrared motion sensor to protect chickens",
+      "Weather Resistant",
+      "Vertatile - Use light sensor or timer"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/3T5anXs",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-021": {
+    category: "Automatic Coop Door",
+    badge: "Battery-Powered Automatic Coop Door",
+    title: "Budsom Battery Powered Automatic Coop Door",
+    description: "When you aren't ready for a top of the line automatic door this battery option is the perfect entry model to see if auto doors are what you need.",
+    bullets: [
+      "Easy to install",
+      "Easy to program",
+      "Battery operated so no extra wiring needed"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4eLYPB0",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-022": {
+    category: "Automatic Coop Door",
+    badge: "Smart Automatic Coop Door",
+    title: "Smart Automatic Coop Door with Camera",
+    description: "Top of the line smart automatic coop door that connects to your phone, solar powered, and 1080 camera.",
+    bullets: [
+      "Smart Motion Alert System",
+      "Upgraded 7W solar panel",
+      "1080P UHD CAMERA FOR 24/7 ULTIMATE MONITORING"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4vRM65S",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-023": {
+    category: "Automatic Coop Door",
+    badge: "ADOR1 Automatic Coop Door",
+    title: "ADOR1 Automatic Steel Coop Door",
+    description: "Top of the line steel automatic door designed to weather the elements of extreme cold.",
+    bullets: [
+      "Made from Galvanized Steel",
+      "Direct drive sproket keeps door locked",
+      "Self adapts times to the seasons"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4f7seob",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
+
 }
