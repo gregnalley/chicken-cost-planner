@@ -108,6 +108,19 @@ const BCP_COLLECTIONS = {
   ]
 },
 
+"COLLECTION-BABY-CHICK-STARTER": {
+  title: "🐣 Baby Chick Starter Essentials",
+  description: "Everything you'll need before bringing your new baby chicks home. These basic supplies help create a warm, safe, and healthy brooder from day one.",
+
+  products: [
+    "PRD-029",   // Chick Brooder
+    "PRD-035",   // Chick Starter Feed
+    "PRD-034",   // Electrolytes
+    "PRD-030",   // Pine Shavings
+    "PRD-033"    // Brooder Thermometer
+  ]
+},
+
 
 
 };
