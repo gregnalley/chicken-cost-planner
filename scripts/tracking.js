@@ -70,12 +70,6 @@ document.addEventListener("click", function (event) {
   });
 });
 
-let scrollTracked = {
-  25: false,
-  50: false,
-  75: false,
-  90: false
-};
 
 let scrollTracked = {
   25: false,
