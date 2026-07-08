@@ -509,5 +509,37 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-035": {
+    category: "Baby Chick Care",
+    badge: "Chick Starter Feed",
+    title: "Medicated Chick Starter Feed",
+    description: "Manna Pro Medicated Chick Starter Grower Feed, Dried High Protein Chicken Food Crumbles with Amprolium for Coccidiosis Prevention, Complete Chicken Feed for Baby Chicks, 5 lb Bag.",
+    bullets: [
+      "5 lb bag - may want to purchase a couple of bags depending on number of chicks",
+      "Medicated to provide superior health support",
+      "Good Value"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4foryfh",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-036": {
+    category: "Baby Chick Care",
+    badge: "Small Chick Feeder and Waterer Combo",
+    title: "Small Chick Feeder and Waterer Combo",
+    description: "These are great starter units for your first little puff balls.  NOTE: You may want to set them up on something to keep out pine shavings and scratch.",
+    bullets: [
+      "Perfect combo for beginners",
+      "Easy to fill and clean",
+      "Excellent Value"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4f2OIq6",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
+
 
 }

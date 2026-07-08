@@ -17,8 +17,17 @@ const BCP_COLLECTIONS = {
       "PRD-033",
       "PRD-034"
     ]
-  }
+  },
 
-
+"COLLECTION-DAILY-CHICK-CARE": {
+  title: "🐥 Daily Baby Chick Care Essentials",
+  description: "Everything you need to feed, water, and care for your chicks during their first few weeks at home.",
+  products: [
+    "PRD-035",   // Chick Starter Feed
+    "PRD-036",   // Chick Feeder and Waterer Combo
+    "PRD-030",   // Pine Shavings
+    "PRD-034"    // Electrolytes & Probiotics
+  ]
+}
 
 };
