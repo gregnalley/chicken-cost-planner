@@ -657,6 +657,21 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-045": {
+    category: "Predator Protection",
+    badge: "Hardware Cloth",
+    title: "1/2 inch Hardware Cloth",
+    description: "This is a must to close up those areas to prevent predator intrusion into a certain area.  Make sure that you secure it well with fence staples (also known as 'U' nails).",
+    bullets: [
+      "Great for keeping out predators",
+      "Hot dipped galvanized for rust protection",
+      "1/2 inch squares to keep out pests"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4paq2Rd",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
 
 
 
