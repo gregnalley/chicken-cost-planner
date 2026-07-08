@@ -1,3 +1,4 @@
+/* Affiliate Click Tracking */
 document.addEventListener("click", function (event) {
   const affiliateLink = event.target.closest(".affiliate-button");
 
@@ -30,6 +31,7 @@ document.addEventListener("click", function (event) {
   });
 });
 
+/* Internal Link Tracking */
 document.addEventListener("click", function (event) {
   const internalLink = event.target.closest("a");
 
@@ -51,6 +53,7 @@ document.addEventListener("click", function (event) {
   });
 });
 
+/* CTA/Button Tracking */
 document.addEventListener("click", function (event) {
   const button = event.target.closest(".card a, .affiliate-button");
 
@@ -70,7 +73,7 @@ document.addEventListener("click", function (event) {
   });
 });
 
-
+/* Scroll Depth Tracking */
 let scrollTracked = {
   25: false,
   50: false,
