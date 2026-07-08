@@ -42,6 +42,20 @@ const BCP_COLLECTIONS = {
     "PRD-024",   // Portable Poultry Netting
     "PRD-025"    // Portable Poultry Netting Energizer
   ]
+},
+
+"COLLECTION-WEAK-CHICK-SUPPORT": {
+  title: "🐥 Weak Chick Support Supplies",
+  description: "Helpful supplies for checking warmth, hydration, weight, and safe temporary protection when a baby chick seems weak or is being pushed away from the group.",
+
+  products: [
+    "PRD-034",   // Chick Electrolytes
+    "PRD-033",   // Brooder Thermometer
+    "PRD-036",   // Small Chick Waterer
+    "PRD-038",   // Recovery Brooder / Small Isolation Pen
+    "PRD-039"    // Digital Kitchen Scale
+  ]
 }
+
 
 };

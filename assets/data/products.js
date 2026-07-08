@@ -556,16 +556,29 @@ const BCP_PRODUCTS = {
 
 "PRD-038": {
     category: "Baby Chick Care",
-    badge: "Poultry Netting",
-    title: "Poultry Netting 1 inch",
-    description: "Made from strong yet lightweight 20‑gauge galvanized steel designed to endure outdoor conditions and long‑term farm use.",
+    badge: "Small Isolation Pen",
+    title: "Small Isolation Pen",
+    description: "No one that I can find makes a specific small isolation pen.  Most people just use a makeshift plastic tote, or even a medium sized cardboard box lined on the bottom with plastic and filled with small sized pine shavings.  ",
     bullets: [
-      "1 inch netting provides secure containment",
-      "Flexible and easy to install",
-      "Enhanced corrosion resistance"
+      "Best as a DIY option since it is mostly temporary",
+      "Many options such as small plastic totes or medium cardboard boxes",
+      "Cheap to make"
+    ],
+    
+  },
+
+"PRD-037": {
+    category: "Baby Chick Care",
+    badge: "Small Kitchen Scale",
+    title: "Small Kitchen Scale",
+    description: "Sall Kitchen Scales are great for checking the weight of your chick as you care for it and make sure that its weight is going up and not down.",
+    bullets: [
+      "Small and sleak",
+      "Uses only 2 AA batteries",
+      "Easy to clean"
     ],
     buttonText: "View Current Price on Amazon →",
-    url: "https://amzn.to/3ToMU3B",
+    url: "https://amzn.to/4veJ5LB",
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
