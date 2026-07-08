@@ -50,3 +50,53 @@ document.addEventListener("click", function (event) {
     url: internalLink.href
   });
 });
+
+document.addEventListener("click", function (event) {
+  const button = event.target.closest(".card a, .affiliate-button");
+
+  if (!button) return;
+
+  if (typeof gtag === "function") {
+    gtag("event", "cta_click", {
+      link_text: button.innerText,
+      link_url: button.href,
+      page_location: window.location.href
+    });
+  }
+
+  console.log("CTA click tracked:", {
+    text: button.innerText,
+    url: button.href
+  });
+});
+
+let scrollTracked = {
+  25: false,
+  50: false,
+  75: false,
+  90: false
+};
+
+window.addEventListener("scroll", function () {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+  if (docHeight <= 0) return;
+
+  const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+  [25, 50, 75, 90].forEach(function (mark) {
+    if (scrollPercent >= mark && !scrollTracked[mark]) {
+      scrollTracked[mark] = true;
+
+      if (typeof gtag === "function") {
+        gtag("event", "scroll_depth", {
+          scroll_percent: mark,
+          page_location: window.location.href
+        });
+      }
+
+      console.log("Scroll depth tracked:", mark + "%");
+    }
+  });
+});
