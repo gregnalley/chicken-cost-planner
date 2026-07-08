@@ -82,6 +82,19 @@ const BCP_COLLECTIONS = {
   ]
 },
 
+"COLLECTION-SPLAY-LEG-SUPPORT": {
+  title: "🦵 Splay Leg Support Supplies",
+  description: "Helpful supplies for improving brooder footing, monitoring chick comfort, and protecting a chick that is struggling to stand or walk.",
+
+  products: [
+    "PRD-041",   // Non-Slip Brooder Liner / Paper Towels
+    "PRD-033",   // Brooder Thermometer
+    "PRD-034",   // Chick Electrolytes
+    "PRD-038",   // Recovery Brooder / Small Isolation Pen
+    "PRD-039"    // Digital Kitchen Scale
+  ]
+},
+
 
 
 };

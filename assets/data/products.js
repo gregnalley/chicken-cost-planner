@@ -597,6 +597,21 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-041": {
+    category: "Chick Health",
+    badge: "Pasty Butt",
+    title: "Non-slip Brooder Liner",
+    description: "These great liners are great as a non-slip option, and the cabon infusion helps keep ordors down to a minimum.",
+    bullets: [
+      "Can be cut to size to fit your isolation pen",
+      "Helps control odors",
+      "Great value"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/44jtXld",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
 
 
 
