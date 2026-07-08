@@ -1,0 +1,31 @@
+document.addEventListener("click", function (event) {
+  const affiliateLink = event.target.closest(".affiliate-button");
+
+  if (!affiliateLink) return;
+
+  const productCard = affiliateLink.closest(".affiliate-card");
+  const collection = affiliateLink.closest("[data-collection-id]");
+
+  const productId = productCard ? productCard.getAttribute("data-product-id") : "unknown";
+  const productCategory = productCard ? productCard.getAttribute("data-product-category") : "unknown";
+  const collectionId = collection ? collection.getAttribute("data-collection-id") : "none";
+  const productTitle = productCard ? productCard.querySelector("h3")?.innerText : affiliateLink.innerText;
+
+  if (typeof gtag === "function") {
+    gtag("event", "affiliate_click", {
+      product_id: productId,
+      product_category: productCategory,
+      product_title: productTitle,
+      collection_id: collectionId,
+      page_location: window.location.href,
+      link_url: affiliateLink.href
+    });
+  }
+
+  console.log("Affiliate click tracked:", {
+    productId,
+    productCategory,
+    productTitle,
+    collectionId
+  });
+});
