@@ -36,9 +36,3 @@ function loadHealthDisclaimer() {
     })
     .catch(error => console.error("Error loading health disclaimer:", error));
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  loadNavigation();
-  loadFooter();
-  loadHealthDisclaimer();
-});
