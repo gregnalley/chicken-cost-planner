@@ -29,3 +29,24 @@ document.addEventListener("click", function (event) {
     collectionId
   });
 });
+
+document.addEventListener("click", function (event) {
+  const internalLink = event.target.closest("a");
+
+  if (!internalLink) return;
+  if (internalLink.classList.contains("affiliate-button")) return;
+  if (internalLink.hostname !== window.location.hostname) return;
+
+  if (typeof gtag === "function") {
+    gtag("event", "internal_link_click", {
+      link_text: internalLink.innerText,
+      link_url: internalLink.href,
+      page_location: window.location.href
+    });
+  }
+
+  console.log("Internal link tracked:", {
+    text: internalLink.innerText,
+    url: internalLink.href
+  });
+});
