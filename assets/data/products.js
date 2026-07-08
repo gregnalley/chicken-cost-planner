@@ -571,7 +571,7 @@ const BCP_PRODUCTS = {
     category: "Baby Chick Care",
     badge: "Small Kitchen Scale",
     title: "Small Kitchen Scale",
-    description: "Sall Kitchen Scales are great for checking the weight of your chick as you care for it and make sure that its weight is going up and not down.",
+    description: "Small Kitchen Scales are great for checking the weight of your chick as you care for it and make sure that its weight is going up and not down.",
     bullets: [
       "Small and sleak",
       "Uses only 2 AA batteries",
@@ -579,6 +579,21 @@ const BCP_PRODUCTS = {
     ],
     buttonText: "View Current Price on Amazon →",
     url: "https://amzn.to/4veJ5LB",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-040": {
+    category: "Chick Health",
+    badge: "Probiotics",
+    title: "Probiotics",
+    description: "A great addition to either a weak chick or just as a boost for better digestion on new chicks.",
+    bullets: [
+      "Easy to use and/or add to food or water",
+      "Convient premeasured packets",
+      "Simple and effective for chick health"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4b9tANW",
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 

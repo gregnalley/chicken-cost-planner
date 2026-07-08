@@ -55,6 +55,18 @@ const BCP_COLLECTIONS = {
     "PRD-038",   // Recovery Brooder / Small Isolation Pen
     "PRD-039"    // Digital Kitchen Scale
   ]
+},
+
+"COLLECTION-CHICK-HEALTH-ESSENTIALS": {
+  title: "🩺 Chick Health Essentials",
+  description: "Helpful supplies for monitoring chick health, supporting hydration, managing brooder conditions, and being prepared when a baby chick does not look right.",
+
+  products: [
+    "PRD-034",   // Chick Electrolytes
+    "PRD-040",   // Chick Probiotics
+    "PRD-033",   // Brooder Thermometer
+    "PRD-036"   // Small Chick Waterer
+  ]
 }
 
 
