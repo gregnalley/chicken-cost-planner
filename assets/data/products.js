@@ -498,7 +498,7 @@ const BCP_PRODUCTS = {
     category: "Brooder Supplies",
     badge: "Electrolytes",
     title: "Sav-A-Chick Electrolyte Supplement",
-    description: "Adding an Electrolyte Supplement to your chicks water give them a step up in health and vitality.",
+    description: "Adding an Electrolyte Supplement to your chicks water gives them a step up in health and vitality.",
     bullets: [
       "9 Pack Deal",
       "Supports hydration and overall health",
