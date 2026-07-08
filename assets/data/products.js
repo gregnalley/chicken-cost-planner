@@ -627,6 +627,37 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-042": {
+    category: "First Aid",
+    badge: "Disposable Gloves",
+    title: "Disposable Gloves",
+    description: "Disposable gloves are a must when dealing with sick chicks, and if used properly can keep from spreading germs to your healthy chicks.",
+    bullets: [
+      "Suitable barrier between you and your sick chick",
+      "Nitrile - Latex Free",
+      "100 count box"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4byS8jx",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-043": {
+    category: "First Aid",
+    badge: "Syringe",
+    title: "Syringe",
+    description: "These are essential for giving oral medications and water to sick chicks and can even be used to measure how much water a chick is taking to keep it hydrated.",
+    bullets: [
+      "Excellent Oral Medication delivery system",
+      "1 ml for small dosages - 20 count",
+      "Excellent Value"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4go7VVP",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
 
 
 

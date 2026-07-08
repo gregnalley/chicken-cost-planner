@@ -121,6 +121,19 @@ const BCP_COLLECTIONS = {
   ]
 },
 
+"COLLECTION-CHICK-FIRST-AID": {
+  title: "🚑 Baby Chick First Aid Kit Essentials",
+  description: "Build a simple first aid kit so you're prepared if a baby chick becomes weak, dehydrated, stressed, or needs supportive care while you seek additional guidance.",
+
+  products: [
+    "PRD-034",   // Chick Electrolytes
+    "PRD-040",   // Chick Probiotics
+    "PRD-043",   // Disposable Nitrile Gloves
+    "PRD-042",   // Sterile Gauze Pads / Soft Cotton Pads
+    "PRD-044"    // Needleless Oral Syringe
+  ]
+}
+
 
 
 };
