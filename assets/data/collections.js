@@ -67,7 +67,21 @@ const BCP_COLLECTIONS = {
     "PRD-033",   // Brooder Thermometer
     "PRD-036"   // Small Chick Waterer
   ]
-}
+},
+
+"COLLECTION-PASTY-BUTT-CARE": {
+  title: "🚽 Pasty Butt Care Essentials",
+  description: "Helpful supplies for preventing stress, maintaining proper brooder conditions, and supporting healthy baby chicks during recovery.",
+
+  products: [
+    "PRD-034",   // Chick Electrolytes
+    "PRD-040",   // Chick Probiotics
+    "PRD-036",   // Small Chick Waterer
+    "PRD-030",   // Pine Shavings
+    "PRD-033"    // Brooder Thermometer
+  ]
+},
+
 
 
 };
