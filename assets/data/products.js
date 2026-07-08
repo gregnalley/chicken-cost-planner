@@ -612,6 +612,21 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-042": {
+    category: "Chick Health",
+    badge: "Disinfecting Wipes",
+    title: "Disinfecting Wipes",
+    description: "These great wipes are hospital grade and work well in sanitizing your brooder, isolation pen, feeder, and waterer.",
+    bullets: [
+      "Powerful germ killer",
+      "Unscented best for small chicks",
+      "Wipes out those pesky germs"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4y9iJgJ",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
 
 
 

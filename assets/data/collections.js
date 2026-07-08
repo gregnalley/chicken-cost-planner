@@ -95,6 +95,19 @@ const BCP_COLLECTIONS = {
   ]
 },
 
+"COLLECTION-COCCIDIOSIS-PREVENTION": {
+  title: "🦠 Coccidiosis Prevention & Brooder Care Supplies",
+  description: "Helpful supplies for keeping the brooder dry, supporting hydration, maintaining cleaner water, and reducing conditions that can make chick health problems worse.",
+
+  products: [
+    "PRD-034",   // Chick Electrolytes
+    "PRD-040",   // Chick Probiotics
+    "PRD-030",   // Pine Shavings / Brooder Bedding
+    "PRD-036",   // Small Chick Waterer
+    "PRD-042"    // Disinfecting Wipes
+  ]
+},
+
 
 
 };
