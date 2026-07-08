@@ -77,13 +77,28 @@ let scrollTracked = {
   90: false
 };
 
-window.addEventListener("scroll", function () {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+let scrollTracked = {
+  25: false,
+  50: false,
+  75: false,
+  90: false
+};
 
-  if (docHeight <= 0) return;
+function trackScrollDepth() {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const windowHeight = window.innerHeight;
+  const docHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+  );
 
-  const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+  const scrollableHeight = docHeight - windowHeight;
+
+  if (scrollableHeight <= 0) return;
+
+  const scrollPercent = Math.round(
+    ((scrollTop + windowHeight) / docHeight) * 100
+  );
 
   [25, 50, 75, 90].forEach(function (mark) {
     if (scrollPercent >= mark && !scrollTracked[mark]) {
@@ -99,4 +114,7 @@ window.addEventListener("scroll", function () {
       console.log("Scroll depth tracked:", mark + "%");
     }
   });
-});
+}
+
+window.addEventListener("scroll", trackScrollDepth);
+window.addEventListener("load", trackScrollDepth);
