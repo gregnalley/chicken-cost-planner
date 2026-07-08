@@ -727,3 +727,22 @@ nav a:hover{
     text-align: center;
   }
 }
+
+/* Health Disclaimer */
+
+.health-disclaimer {
+  background: #fff7e8;
+  border-left: 6px solid #d78b00;
+  padding: 22px;
+  margin: 28px 0;
+  border-radius: 12px;
+}
+
+.health-disclaimer h2 {
+  margin-top: 0;
+  color: #9b5d00;
+}
+
+.health-disclaimer p {
+  line-height: 1.7;
+}
