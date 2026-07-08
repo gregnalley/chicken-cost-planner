@@ -567,7 +567,7 @@ const BCP_PRODUCTS = {
     
   },
 
-"PRD-037": {
+"PRD-039": {
     category: "Baby Chick Care",
     badge: "Small Kitchen Scale",
     title: "Small Kitchen Scale",
