@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+function renderCollections() {
   const collectionSlots = document.querySelectorAll("[data-collection]");
 
   collectionSlots.forEach(function (slot) {
+    if (slot.dataset.rendered === "true") return;
+
     const collectionId = slot.getAttribute("data-collection");
     const collection = BCP_COLLECTIONS[collectionId];
 
@@ -9,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slot.innerHTML = `
         <p><strong>Collection not found:</strong> ${collectionId}</p>
       `;
+      slot.dataset.rendered = "true";
       return;
     }
 
@@ -19,15 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("");
 
     slot.innerHTML = `
-      <h2>${collection.title}</h2>
-      <p>${collection.description}</p>
-      ${productCards}
+      <div class="section product-collection" data-collection-id="${collectionId}">
+        <h2>${collection.title}</h2>
+        <p>${collection.description}</p>
+        ${productCards}
+      </div>
     `;
+
+    slot.dataset.rendered = "true";
   });
 
-  setTimeout(function () {
-    if (typeof window.renderProductCards === "function") {
-      window.renderProductCards();
-    }
-  }, 50);
-});
+  if (typeof window.renderProductCards === "function") {
+    window.renderProductCards();
+  }
+}

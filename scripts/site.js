@@ -23,6 +23,7 @@ async function loadSiteScripts() {
     if (typeof loadNavigation === "function") loadNavigation();
     if (typeof loadFooter === "function") loadFooter();
     if (typeof loadHealthDisclaimer === "function") loadHealthDisclaimer();
+    if (typeof renderCollections === "function") renderCollections();
     if (typeof window.renderProductCards === "function") window.renderProductCards();
 
   } catch (error) {
