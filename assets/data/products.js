@@ -539,6 +539,38 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-037": {
+    category: "Baby Chick Care",
+    badge: "Poultry Grit",
+    title: "Poultry Grit",
+    description: "Made from natural granite, this grit provides the necessary means of grinding up more adult feed, grasses, bugs, and whatever your growing chick will need as it reaches adulthood.",
+    bullets: [
+      "Made from natrual washed granite",
+      "Supports healthy digestion and absorption",
+      "High Quality and Value"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4aGba7i",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-038": {
+    category: "Baby Chick Care",
+    badge: "Poultry Netting",
+    title: "Poultry Netting 1 inch",
+    description: "Made from strong yet lightweight 20‑gauge galvanized steel designed to endure outdoor conditions and long‑term farm use.",
+    bullets: [
+      "1 inch netting provides secure containment",
+      "Flexible and easy to install",
+      "Enhanced corrosion resistance"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/3ToMU3B",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+
+
 
 
 

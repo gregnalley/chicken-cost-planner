@@ -28,6 +28,20 @@ const BCP_COLLECTIONS = {
     "PRD-030",   // Pine Shavings
     "PRD-034"    // Electrolytes & Probiotics
   ]
+},
+
+"COLLECTION-OUTDOOR-TRANSITION": {
+  title: "🌿 Outdoor Transition Essentials",
+  description: "Help your growing chicks make a safe transition from the brooder to the outdoors with these recommended supplies.",
+
+  products: [
+    "PRD-003",   // Outdoor Feeder
+    "PRD-007",   // Large Gravity Waterer
+    "PRD-037",   // Poultry Grit
+    "PRD-038",   // Hardware Cloth
+    "PRD-024",   // Portable Poultry Netting
+    "PRD-025"    // Portable Poultry Netting Energizer
+  ]
 }
 
 };
