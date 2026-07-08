@@ -449,7 +449,65 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
+"PRD-031": {
+    category: "Brooder Heating",
+    badge: "Brooder Heating Plate",
+    title: "Rent A Coop Brooder Plate",
+    description: "Radiant heat teaches chicks to regulate their body temperature naturally, just as they would under a mother hen! This heat plate is great for chicks.",
+    bullets: [
+      "Adjustable feet grows with your chicks",
+      "Energy efficient - only 15 watts per hour",
+      "Anti Roosting Cone an added bonus"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4ys7ssn",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
+"PRD-032": {
+    category: "Brooder Heating",
+    badge: "Heat Lamp",
+    title: "300 Watt Brooder Heat Lamp",
+    description: "Provides a good directional heat for a chicken brooder and even a coop.",
+    bullets: [
+      "2 Adjustable setting temperatures",
+      "Dissipates heat over a wider range",
+      "Heavy duty grill protects bulb and chicks"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4ys7ssn",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-033": {
+    category: "Brooder Heating",
+    badge: "Digital Thermometer",
+    title: "Temp Pro Digial Thermometer",
+    description: "A thermometer is a must have for brooders so you can always know if you need to adjust the temps so you don't cook you little chicks.",
+    bullets: [
+      "Fast Refresh Rate",
+      "Large easy to read display",
+      "High rating and reviews"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4wx83ag",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
+
+"PRD-034": {
+    category: "Brooder Supplies",
+    badge: "Electrolytes",
+    title: "Sav-A-Chick Electrolyte Supplement",
+    description: "Adding an Electrolyte Supplement to your chicks water give them a step up in health and vitality.",
+    bullets: [
+      "9 Pack Deal",
+      "Supports hydration and overall health",
+      "Convienent premeasured packets"
+    ],
+    buttonText: "View Current Price on Amazon →",
+    url: "https://amzn.to/4gwEjFT",
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
+  },
 
 
 }
