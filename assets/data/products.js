@@ -627,7 +627,7 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
-"PRD-042": {
+"PRD-043": {
     category: "First Aid",
     badge: "Disposable Gloves",
     title: "Disposable Gloves",
@@ -642,7 +642,7 @@ const BCP_PRODUCTS = {
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
 
-"PRD-043": {
+"PRD-044": {
     category: "First Aid",
     badge: "Syringe",
     title: "Syringe",
