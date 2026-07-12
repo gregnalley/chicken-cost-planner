@@ -14,10 +14,12 @@ async function loadSiteScripts() {
   try {
     await loadScript("assets/data/products.js");
     await loadScript("assets/data/collections.js");
+    await loadScript("assets/data/messages.js");
 
     await loadScript("scripts/load-components.js");
     await loadScript("scripts/product-loader.js");
     await loadScript("scripts/collection-loader.js");
+    await loadScript("scripts/message-loader.js");
     await loadScript("scripts/tracking.js");
 
     if (typeof loadNavigation === "function") loadNavigation();
@@ -25,6 +27,10 @@ async function loadSiteScripts() {
     if (typeof loadHealthDisclaimer === "function") loadHealthDisclaimer();
     if (typeof renderCollections === "function") renderCollections();
     if (typeof window.renderProductCards === "function") window.renderProductCards();
+
+    if (typeof loadFooterMessage === "function") {
+  setTimeout(loadFooterMessage, 150);
+}
 
   } catch (error) {
     console.error("Site script loading error:", error);
