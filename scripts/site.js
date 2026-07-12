@@ -28,9 +28,6 @@ async function loadSiteScripts() {
     if (typeof renderCollections === "function") renderCollections();
     if (typeof window.renderProductCards === "function") window.renderProductCards();
 
-    if (typeof loadFooterMessage === "function") {
-  setTimeout(loadFooterMessage, 150);
-}
 
   } catch (error) {
     console.error("Site script loading error:", error);
