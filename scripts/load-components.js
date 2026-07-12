@@ -16,11 +16,15 @@ function loadFooter() {
 
   if (!footer) return;
 
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      footer.innerHTML = data;
-    })
+fetch('footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('footer').innerHTML = data;
+
+    if (typeof loadFooterMessage === "function") {
+        loadFooterMessage();
+    }
+})
     .catch(error => console.error("Error loading footer:", error));
 }
 
