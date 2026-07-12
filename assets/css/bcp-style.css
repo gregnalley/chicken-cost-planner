@@ -746,3 +746,23 @@ nav a:hover{
 .health-disclaimer p {
   line-height: 1.7;
 }
+
+/* Rotating Footer Message */
+
+.footer-message {
+  max-width: 900px;
+  margin: 0 auto 34px;
+  padding: 18px 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+}
+
+.footer-message p {
+  margin: 0;
+  color: #f2c078;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
