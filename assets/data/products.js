@@ -271,8 +271,8 @@ const BCP_PRODUCTS = {
 
 "PRD-019": {
     category: "Automatic Coop Door",
-    badge: "Best Overall Automatic Coop Door",
-    title: "Chickgaurd Automatic Coop Door",
+    badge: "Best All-Around Conventional System",
+    title: "ChickenGuard Automatic Coop Door",
     description: "Keep your flock secure from dusk till dawn with the ChickenGuard PRO. Featuring a built-in light sensor and LCD screen, this automatic chicken door ensures your chickens and ducks are safe even when you’re away.",
     bullets: [
       "Excellent to keep chickens safe",
@@ -286,13 +286,13 @@ const BCP_PRODUCTS = {
 
 "PRD-020": {
     category: "Automatic Coop Door",
-    badge: "Best Budget Automatic Coop Door",
+    badge: "Best Flexible Power Option",
     title: "FarmLite Automatic Coop Door",
-    description: "Americna owned brand that stands behind their products and promises help whether you've had their product for 2 months or 2 years.",
+    description: "American owned brand that stands behind their products and promises help whether you've had their product for 2 months or 2 years.",
     bullets: [
       "Infrared motion sensor to protect chickens",
       "Weather Resistant",
-      "Vertatile - Use light sensor or timer"
+      "Versatile - Use light sensor or timer"
     ],
     buttonText: "View Current Price on Amazon →",
     url: "https://amzn.to/3T5anXs",
@@ -301,7 +301,7 @@ const BCP_PRODUCTS = {
 
 "PRD-021": {
     category: "Automatic Coop Door",
-    badge: "Battery-Powered Automatic Coop Door",
+    badge: "Best Entry-Level Battery Door",
     title: "Budsom Battery Powered Automatic Coop Door",
     description: "When you aren't ready for a top of the line automatic door this battery option is the perfect entry model to see if auto doors are what you need.",
     bullets: [
@@ -316,8 +316,8 @@ const BCP_PRODUCTS = {
 
 "PRD-022": {
     category: "Automatic Coop Door",
-    badge: "Smart Automatic Coop Door",
-    title: "Smart Automatic Coop Door with Camera",
+    badge: "Best Smart Door With Camera",
+    title: "CHAMUTY Smart Automatic Coop Door with Camera",
     description: "Top of the line smart automatic coop door that connects to your phone, solar powered, and 1080 camera.",
     bullets: [
       "Smart Motion Alert System",
@@ -331,12 +331,12 @@ const BCP_PRODUCTS = {
 
 "PRD-023": {
     category: "Automatic Coop Door",
-    badge: "ADOR1 Automatic Coop Door",
+    badge: "Best Heavy-Duty Steel Door",
     title: "ADOR1 Automatic Steel Coop Door",
     description: "Top of the line steel automatic door designed to weather the elements of extreme cold.",
     bullets: [
       "Made from Galvanized Steel",
-      "Direct drive sproket keeps door locked",
+      "Direct drive sprocket keeps door locked",
       "Self adapts times to the seasons"
     ],
     buttonText: "View Current Price on Amazon →",
