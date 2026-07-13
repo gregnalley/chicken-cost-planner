@@ -72,6 +72,8 @@ Use this tool to estimate a practical starting flock based on your household egg
 
 <div class="section">
 
+  <div class="section calculator-shell">
+
 <div class="calculator-grid">
 
 <div class="calc-panel">
@@ -82,37 +84,82 @@ Use this tool to estimate a practical starting flock based on your household egg
 
 <div class="calc-field">
 <label for="eggsNeeded">🥚 Eggs Needed Per Week</label>
-<input id="eggsNeeded" type="number" value="12">
+<input
+  id="eggsNeeded"
+  type="number"
+  value="12"
+  min="1"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Estimate how many eggs your household uses weekly.</div>
 </div>
 
 <div class="calc-field">
 <label for="eggsPerHen">🐔 Eggs Per Hen Per Week</label>
-<input id="eggsPerHen" type="number" value="5">
+<input
+  id="eggsPerHen"
+  type="number"
+  value="5"
+  min="0.1"
+  max="7"
+  step="0.1"
+  inputmode="decimal"
+>
 <div class="calc-help">Many productive hens average 4–6 eggs weekly during good laying seasons.</div>
 </div>
 
 <div class="calc-field">
 <label for="winterReduction">❄️ Winter Egg Reduction (%)</label>
-<input id="winterReduction" type="number" value="25">
+<input
+  id="winterReduction"
+  type="number"
+  value="25"
+  min="0"
+  max="90"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Egg production often drops in winter or during shorter daylight periods.</div>
 </div>
 
 <div class="calc-field">
 <label for="surplus">📦 Extra Egg Buffer Desired (%)</label>
-<input id="surplus" type="number" value="20">
+<input
+  id="surplus"
+  type="number"
+  value="20"
+  min="0"
+  max="200"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Add a cushion for slow weeks, seasonal changes, or sharing eggs.</div>
 </div>
 
 <div class="calc-field">
 <label for="feedBagPrice">🌾 Feed Bag Price ($)</label>
-<input id="feedBagPrice" type="number" value="22">
+<input
+  id="feedBagPrice"
+  type="number"
+  value="22"
+  min="0"
+  step="0.01"
+  inputmode="decimal"
+>
 <div class="calc-help">Enter the price of one bag of chicken feed.</div>
 </div>
 
 <div class="calc-field">
 <label for="feedBagWeight">⚖️ Feed Bag Weight (lbs)</label>
-<input id="feedBagWeight" type="number" value="50">
+<input
+  id="feedBagWeight"
+  type="number"
+  value="50"
+  min="1"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Most common feed bags are 40 or 50 pounds.</div>
 </div>
 
@@ -126,7 +173,9 @@ Use this tool to estimate a practical starting flock based on your household egg
 <div class="calc-help">Confined chickens usually rely more heavily on purchased feed.</div>
 </div>
 
-<button class="calc-button" onclick="calculate()">Calculate Flock Plan</button>
+<button class="calc-button" type="button" onclick="calculate()">
+  🐔 Build My Flock Plan
+</button>
 
 <div class="calc-note">
 <strong>Planning a coop?</strong><br>
@@ -171,6 +220,12 @@ After calculating flock size, use the <a href="chicken-coop-estimator.html">Chic
 <h3>🏠 Coop Space</h3>
 <div class="result-number" id="coopResult">0 sq ft</div>
 <p>Suggested indoor coop space.</p>
+</div>
+
+<div class="result-card">
+<h3>🌿 Run Space</h3>
+<div class="result-number" id="runResult">0 sq ft</div>
+<p>Suggested outdoor run space.</p>
 </div>
 
 <div class="result-card">
@@ -276,69 +331,197 @@ A well-planned flock helps you avoid buying too many chickens, undersizing your 
 
 function calculate() {
 
-let eggsNeeded = parseFloat(document.getElementById("eggsNeeded").value);
-let eggsPerHen = parseFloat(document.getElementById("eggsPerHen").value);
-let winterReduction = parseFloat(document.getElementById("winterReduction").value) / 100;
-let surplus = parseFloat(document.getElementById("surplus").value) / 100;
-let feedBagPrice = parseFloat(document.getElementById("feedBagPrice").value);
-let feedBagWeight = parseFloat(document.getElementById("feedBagWeight").value);
-let rangeType = parseFloat(document.getElementById("rangeType").value);
+  let eggsNeeded = parseFloat(
+    document.getElementById("eggsNeeded").value
+  );
 
-if (isNaN(eggsNeeded) || eggsNeeded <= 0) {
-alert("Please enter how many eggs your household needs per week.");
-return;
+  let eggsPerHen = parseFloat(
+    document.getElementById("eggsPerHen").value
+  );
+
+  let winterReduction = parseFloat(
+    document.getElementById("winterReduction").value
+  );
+
+  let surplus = parseFloat(
+    document.getElementById("surplus").value
+  );
+
+  let feedBagPrice = parseFloat(
+    document.getElementById("feedBagPrice").value
+  );
+
+  let feedBagWeight = parseFloat(
+    document.getElementById("feedBagWeight").value
+  );
+
+  let rangeType = parseFloat(
+    document.getElementById("rangeType").value
+  );
+
+  if (!Number.isFinite(eggsNeeded) || eggsNeeded <= 0) {
+    alert("Please enter how many eggs your household needs per week.");
+    return;
+  }
+
+  if (!Number.isFinite(eggsPerHen) || eggsPerHen <= 0) {
+    eggsPerHen = 5;
+  }
+
+  if (eggsPerHen > 7) {
+    eggsPerHen = 7;
+  }
+
+  if (!Number.isFinite(winterReduction) || winterReduction < 0) {
+    winterReduction = 25;
+  }
+
+  if (winterReduction > 90) {
+    winterReduction = 90;
+  }
+
+  if (!Number.isFinite(surplus) || surplus < 0) {
+    surplus = 20;
+  }
+
+  if (!Number.isFinite(feedBagPrice) || feedBagPrice < 0) {
+    feedBagPrice = 0;
+  }
+
+  if (!Number.isFinite(feedBagWeight) || feedBagWeight <= 0) {
+    feedBagWeight = 50;
+  }
+
+  if (!Number.isFinite(rangeType) || rangeType <= 0) {
+    rangeType = 1;
+  }
+
+  const winterRate = winterReduction / 100;
+  const surplusRate = surplus / 100;
+
+  let adjustedEggsPerHen =
+    eggsPerHen * (1 - winterRate);
+
+  if (adjustedEggsPerHen <= 0) {
+    adjustedEggsPerHen = 0.1;
+  }
+
+  let targetEggs =
+    eggsNeeded * (1 + surplusRate);
+
+  let hensNeeded =
+    Math.ceil(targetEggs / adjustedEggsPerHen);
+
+  let weeklyEggs =
+    hensNeeded * adjustedEggsPerHen;
+
+  let poundsFeedPerMonth =
+    hensNeeded * 7.5 * rangeType;
+
+  let bagsPerMonth =
+    poundsFeedPerMonth / feedBagWeight;
+
+  let monthlyFeedCost =
+    bagsPerMonth * feedBagPrice;
+
+  let coopSize =
+    hensNeeded * 4;
+
+  let runSize =
+    hensNeeded * 10;
+
+  let nestingBoxes =
+    Math.ceil(hensNeeded / 4);
+
+  document.getElementById("hensResult").textContent =
+    hensNeeded;
+
+  document.getElementById("eggsResult").textContent =
+    weeklyEggs.toFixed(1);
+
+  document.getElementById("feedResult").textContent =
+    poundsFeedPerMonth.toFixed(1) + " lbs";
+
+  document.getElementById("costResult").textContent =
+    "$" + monthlyFeedCost.toFixed(2);
+
+  document.getElementById("coopResult").textContent =
+    coopSize + " sq ft";
+
+  document.getElementById("runResult").textContent =
+    runSize + " sq ft";
+
+  document.getElementById("nestResult").textContent =
+    nestingBoxes;
+
+  const nextStepsIntro =
+    document.getElementById("nextStepsIntro");
+
+  const nextStepsList =
+    document.getElementById("nextStepsList");
+
+  const nextStepsCard =
+    document.getElementById("nextStepsCard");
+
+  nextStepsIntro.innerHTML = `
+    Based on your weekly egg needs,
+    this planner recommends starting with
+    <strong>${hensNeeded} hens</strong>.
+    That flock may produce about
+    <strong>${weeklyEggs.toFixed(1)} eggs per week</strong>
+    after the selected winter reduction,
+    while using approximately
+    <strong>${poundsFeedPerMonth.toFixed(1)} pounds of feed per month</strong>.
+  `;
+
+  nextStepsList.innerHTML = `
+    <li>
+      Plan for about <strong>${coopSize} sq ft</strong>
+      of indoor coop space and
+      <strong>${runSize} sq ft</strong>
+      of outdoor run space.
+      <a href="chicken-coop-size-guide.html">
+        Check the Coop Size Guide →
+      </a>
+    </li>
+
+    <li>
+      Estimate your startup budget for a coop,
+      run, fencing, and equipment.
+      <a href="chicken-coop-estimator.html">
+        Use the Coop Cost Estimator →
+      </a>
+    </li>
+
+    <li>
+      Choose breeds that match your egg goals,
+      temperament preferences, and climate.
+      <a href="chicken-breeds.html">
+        Browse Chicken Breed Guides →
+      </a>
+    </li>
+
+    <li>
+      Compare feeders, waterers, coops,
+      nesting boxes, and predator protection.
+      <a href="chicken-supplies.html">
+        Browse Chicken Supplies →
+      </a>
+    </li>
+
+    <li>
+      Estimate possible egg income from your flock.
+      <a href="egg-profit-calculator.html">
+        Try the Egg Profit Calculator →
+      </a>
+    </li>
+  `;
+
+  nextStepsCard.style.display = "block";
 }
 
-if (isNaN(eggsPerHen) || eggsPerHen <= 0) eggsPerHen = 5;
-if (isNaN(winterReduction)) winterReduction = 0.25;
-if (isNaN(surplus)) surplus = 0.20;
-if (isNaN(feedBagPrice)) feedBagPrice = 0;
-if (isNaN(feedBagWeight) || feedBagWeight <= 0) feedBagWeight = 50;
-if (isNaN(rangeType)) rangeType = 1;
-
-let adjustedEggsPerHen = eggsPerHen * (1 - winterReduction);
-let targetEggs = eggsNeeded * (1 + surplus);
-let hensNeeded = Math.ceil(targetEggs / adjustedEggsPerHen);
-let weeklyEggs = hensNeeded * adjustedEggsPerHen;
-
-let poundsFeedPerMonth = hensNeeded * 6 * rangeType;
-let bagsPerMonth = poundsFeedPerMonth / feedBagWeight;
-let monthlyFeedCost = bagsPerMonth * feedBagPrice;
-
-let coopSize = hensNeeded * 4;
-let runSize = hensNeeded * 10;
-let nestingBoxes = Math.ceil(hensNeeded / 4);
-
-document.getElementById("hensResult").innerHTML = hensNeeded;
-document.getElementById("eggsResult").innerHTML = weeklyEggs.toFixed(1);
-document.getElementById("feedResult").innerHTML = poundsFeedPerMonth.toFixed(1) + " lbs";
-document.getElementById("costResult").innerHTML = "$" + monthlyFeedCost.toFixed(2);
-document.getElementById("coopResult").innerHTML = coopSize + " sq ft";
-document.getElementById("nestResult").innerHTML = nestingBoxes;
-
-let nextStepsIntro = document.getElementById("nextStepsIntro");
-let nextStepsList = document.getElementById("nextStepsList");
-let nextStepsCard = document.getElementById("nextStepsCard");
-
-nextStepsIntro.innerHTML = `
-Based on your estimate of <strong>${hensNeeded} hens</strong>, here are the next planning steps that make the most sense for your backyard flock.
-`;
-
-nextStepsList.innerHTML = `
-<li>Plan for about <strong>${coopSize} sq ft</strong> of indoor coop space and about <strong>${runSize} sq ft</strong> of outdoor run space. <a href="chicken-coop-size-guide.html">Check the Coop Size Guide →</a></li>
-
-<li>Estimate your startup budget for a coop, run, fencing, and equipment. <a href="chicken-coop-estimator.html">Use the Coop Cost Estimator →</a></li>
-
-<li>Choose breeds that match your goals for eggs, temperament, and climate. <a href="chicken-breeds.html">Browse Chicken Breed Guides →</a></li>
-
-<li>Compare feeders, waterers, coops, nesting boxes, and predator protection. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
-
-<li>Estimate possible egg income from your flock. <a href="egg-profit-calculator.html">Try the Egg Profit Calculator →</a></li>
-`;
-
-nextStepsCard.style.display = "block";
-
-}
+// Automatically calculate using the default values
+window.addEventListener("load", calculate);
 
 </script>
 
