@@ -99,6 +99,8 @@ This guide explains the major cost factors, common beginner mistakes, hidden exp
 Use this calculator to estimate your basic startup cost based on flock size, coop type, fencing, and equipment package. These numbers are estimates, but they can help you compare different setup options before spending money.
 </p>
 
+<div class="calculator-shell">
+
 <div class="calculator-grid">
 
 <div class="calc-panel">
@@ -112,7 +114,7 @@ Use this calculator to estimate your basic startup cost based on flock size, coo
 <select id="chickens">
 <option value="2">2 chickens</option>
 <option value="4">4 chickens</option>
-<option value="6">6 chickens</option>
+<option value="6" selected>6 chickens</option>
 <option value="8">8 chickens</option>
 <option value="10">10 chickens</option>
 <option value="12">12 chickens</option>
@@ -128,7 +130,7 @@ Use this calculator to estimate your basic startup cost based on flock size, coo
 <label for="coop">🏠 Coop Type</label>
 <select id="coop">
 <option value="150">DIY Budget Coop ($150)</option>
-<option value="400">DIY Standard Coop ($400)</option>
+<option value="400" selected>DIY Standard Coop ($400)</option>
 <option value="800">DIY Walk-In Coop ($800)</option>
 <option value="500">Small Prefab Coop ($500)</option>
 <option value="1200">Large Prefab Coop ($1,200)</option>
@@ -143,7 +145,7 @@ Use this calculator to estimate your basic startup cost based on flock size, coo
 <select id="fence">
 <option value="0">Free Range / No Dedicated Fence ($0)</option>
 <option value="150">Basic Wire Run ($150)</option>
-<option value="300">Hardware Cloth Run Upgrade ($300)</option>
+<option value="300" selected>Hardware Cloth Run Upgrade ($300)</option>
 <option value="600">Electric Poultry Netting ($600)</option>
 <option value="1000">Large Predator-Protected Run ($1,000)</option>
 </select>
@@ -154,14 +156,16 @@ Use this calculator to estimate your basic startup cost based on flock size, coo
 <label for="equipment">🧰 Equipment Package</label>
 <select id="equipment">
 <option value="75">Starter Equipment Kit ($75)</option>
-<option value="150">Standard Equipment Kit ($150)</option>
+<option value="150" selected>Standard Equipment Kit ($150)</option>
 <option value="300">Premium Equipment Kit ($300)</option>
 <option value="500">Large Flock Equipment Kit ($500)</option>
 </select>
 <div class="calc-help">Includes estimated feeders, waterers, bedding starter supplies, and basic accessories.</div>
 </div>
 
-<button class="calc-button" onclick="calculate()">Calculate Startup Cost</button>
+<button class="calc-button" type="button" onclick="calculate()">
+  🏠 Calculate My Coop Cost
+</button>
 
 <div class="calc-note">
 <strong>Planning your flock size?</strong><br>
@@ -565,6 +569,8 @@ In many cases, yes. New chicken keepers often discover they want to expand their
 
 </div>
 
+</div>
+
 <div class="tip-box">
 
 <h3>💡 Backyard Chicken Planner Tip</h3>
@@ -681,59 +687,125 @@ Use the Backyard Chicken Planner tools together to estimate flock size, coop cos
 
 <script>
 
-function calculate(){
+function calculate() {
 
-let chickens=parseInt(document.getElementById("chickens").value);
+  const chickens = parseInt(
+    document.getElementById("chickens").value,
+    10
+  );
 
-let coop=parseFloat(document.getElementById("coop").value);
+  const coop = parseFloat(
+    document.getElementById("coop").value
+  );
 
-let fence=parseFloat(document.getElementById("fence").value);
+  const fence = parseFloat(
+    document.getElementById("fence").value
+  );
 
-let equipment=parseFloat(document.getElementById("equipment").value);
+  const equipment = parseFloat(
+    document.getElementById("equipment").value
+  );
 
-let total=coop+fence+equipment;
+  if (!Number.isFinite(chickens) || chickens <= 0) {
+    alert("Please select a valid flock size.");
+    return;
+  }
 
-let costPerChicken=total/chickens;
+  const safeCoop = Number.isFinite(coop) && coop >= 0 ? coop : 0;
+  const safeFence = Number.isFinite(fence) && fence >= 0 ? fence : 0;
+  const safeEquipment =
+    Number.isFinite(equipment) && equipment >= 0
+      ? equipment
+      : 0;
 
-let coopSpace=chickens*4;
+  const total = safeCoop + safeFence + safeEquipment;
+  const costPerChicken = total / chickens;
+  const coopSpace = chickens * 4;
+  const runSpace = chickens * 10;
+  const nestBoxes = Math.ceil(chickens / 4);
 
-let runSpace=chickens*10;
+  document.getElementById("totalResult").textContent =
+    "$" + total.toFixed(2);
 
-let nestBoxes=Math.ceil(chickens/4);
+  document.getElementById("perChickenResult").textContent =
+    "$" + costPerChicken.toFixed(2);
 
-document.getElementById("totalResult").innerHTML="$"+total.toFixed(2);
+  document.getElementById("coopSizeResult").textContent =
+    coopSpace + " sq ft";
 
-document.getElementById("perChickenResult").innerHTML="$"+costPerChicken.toFixed(2);
+  document.getElementById("runSizeResult").textContent =
+    runSpace + " sq ft";
 
-document.getElementById("coopSizeResult").innerHTML=coopSpace+" sq ft";
+  document.getElementById("nestBoxResult").textContent =
+    nestBoxes;
 
-document.getElementById("runSizeResult").innerHTML=runSpace+" sq ft";
+  const nextStepsIntro =
+    document.getElementById("nextStepsIntro");
 
-document.getElementById("nestBoxResult").innerHTML=nestBoxes;
+  const nextStepsList =
+    document.getElementById("nextStepsList");
 
-let nextStepsIntro = document.getElementById("nextStepsIntro");
-let nextStepsList = document.getElementById("nextStepsList");
-let nextStepsCard = document.getElementById("nextStepsCard");
+  const nextStepsCard =
+    document.getElementById("nextStepsCard");
 
-nextStepsIntro.innerHTML = `
-Based on your estimate of <strong>${chickens} chickens</strong> and a startup budget of <strong>$${total.toFixed(2)}</strong>, here are the next steps that make the most sense.
-`;
+  nextStepsIntro.innerHTML = `
+    Based on a planned flock of
+    <strong>${chickens} chickens</strong>,
+    your estimated startup budget is
+    <strong>$${total.toFixed(2)}</strong>.
+    Plan for at least
+    <strong>${coopSpace} square feet</strong>
+    of indoor coop space,
+    <strong>${runSpace} square feet</strong>
+    of outdoor run space, and approximately
+    <strong>${nestBoxes} nesting ${nestBoxes === 1 ? "box" : "boxes"}</strong>.
+  `;
 
-nextStepsList.innerHTML = `
-<li>Confirm that your coop provides about <strong>${coopSpace} sq ft</strong> of indoor space and <strong>${runSpace} sq ft</strong> of outdoor run space. <a href="chicken-coop-size-guide.html">Check the Coop Size Guide →</a></li>
+  nextStepsList.innerHTML = `
+    <li>
+      Confirm that your coop provides about
+      <strong>${coopSpace} sq ft</strong> of indoor space
+      and <strong>${runSpace} sq ft</strong> of outdoor run space.
+      <a href="chicken-coop-size-guide.html">
+        Check the Coop Size Guide →
+      </a>
+    </li>
 
-<li>Compare coop styles before committing to a build or purchase. <a href="best-chicken-coops.html">Read Best Chicken Coops →</a></li>
+    <li>
+      Compare coop styles before committing to a build or purchase.
+      <a href="best-chicken-coops.html">
+        Read Best Chicken Coops →
+      </a>
+    </li>
 
-<li>Plan your feeder, waterer, nesting box, and predator protection setup. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
+    <li>
+      Plan your feeder, waterer, nesting box, and predator-protection setup.
+      <a href="chicken-supplies.html">
+        Browse Chicken Supplies →
+      </a>
+    </li>
 
-<li>Protect your investment with secure latches, hardware cloth, and predator planning. <a href="best-chicken-predator-protection.html">View Predator Protection Guide →</a></li>
+    <li>
+      Protect your investment with secure latches,
+      hardware cloth, and a complete predator plan.
+      <a href="best-chicken-predator-protection.html">
+        View Predator Protection Guide →
+      </a>
+    </li>
 
-<li>Estimate monthly feed expenses after startup costs. <a href="index.html">Use the Feed Cost Calculator →</a></li>
-`;
+    <li>
+      Estimate the monthly feed cost after calculating startup expenses.
+      <a href="chicken-feed-cost-calculator.html">
+        Use the Feed Cost Calculator →
+      </a>
+    </li>
+  `;
 
-nextStepsCard.style.display = "block";
-
+  nextStepsCard.style.display = "block";
 }
+
+// Automatically calculate using the default selections
+window.addEventListener("load", calculate);
 
 </script>
 
