@@ -314,11 +314,29 @@ let monthlyCost = bagsPerMonth * feedBagPrice;
 let annualCost = monthlyCost * 12;
 let perChickenCost = monthlyCost / chickens;
 
-document.getElementById("monthlyFeedResult").innerHTML = monthlyFeed.toFixed(1) + " lbs";
-document.getElementById("bagsResult").innerHTML = bagsPerMonth.toFixed(1);
-document.getElementById("monthlyCostResult").innerHTML = "$" + monthlyCost.toFixed(2);
-document.getElementById("annualCostResult").innerHTML = "$" + annualCost.toFixed(2);
-document.getElementById("perChickenResult").innerHTML = "$" + perChickenCost.toFixed(2);
+setAnimatedResult("monthlyFeedResult", monthlyFeed, {
+  decimals: 1,
+  suffix: " lbs"
+});
+
+setAnimatedResult("bagsResult", bagsPerMonth, {
+  decimals: 1
+});
+
+setAnimatedResult("monthlyCostResult", monthlyCost, {
+  decimals: 2,
+  prefix: "$"
+});
+
+setAnimatedResult("annualCostResult", annualCost, {
+  decimals: 2,
+  prefix: "$"
+});
+
+setAnimatedResult("perChickenResult", perChickenCost, {
+  decimals: 2,
+  prefix: "$"
+});
 
 let nextStepsIntro = document.getElementById("nextStepsIntro");
 let nextStepsList = document.getElementById("nextStepsList");
@@ -341,6 +359,8 @@ nextStepsList.innerHTML = `
 `;
 
 nextStepsCard.style.display = "block";
+
+animateCalculatorResults();
 
 // Automatically calculate using the default values
 window.addEventListener("load", calculate);
