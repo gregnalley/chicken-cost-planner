@@ -784,3 +784,312 @@ nav a:hover{
 .guide-button:hover {
   background: #ffd493;
 }
+
+/* ==================================================
+   SHARED CALCULATOR DESIGN
+   Used across Backyard Chicken Planner calculators
+================================================== */
+
+.calculator-shell {
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(242, 192, 120, 0.16), transparent 35%),
+    linear-gradient(145deg, #ffffff, #f8fbf7);
+  border: 1px solid rgba(29, 105, 52, 0.18);
+  border-radius: 24px;
+  box-shadow:
+    0 22px 55px rgba(24, 65, 34, 0.13),
+    0 6px 18px rgba(24, 65, 34, 0.08);
+}
+
+.calculator-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  border-top: 5px solid #1f6b35;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+
+.calc-panel {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(29, 105, 52, 0.15);
+  border-radius: 20px;
+  box-shadow:
+    0 14px 34px rgba(30, 70, 40, 0.09),
+    0 4px 12px rgba(30, 70, 40, 0.06);
+}
+
+.calc-panel > h2 {
+  margin: 0;
+  padding: 22px 24px;
+  color: #ffffff;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  background:
+    linear-gradient(135deg, #175c2d, #287a3f);
+  border-bottom: 4px solid #f2c078;
+}
+
+.calc-body {
+  padding: 24px;
+}
+
+.calc-field {
+  margin-bottom: 21px;
+}
+
+.calc-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #163e22;
+  font-size: 1rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.calc-field input,
+.calc-field select {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 13px;
+  color: #243128;
+  font: inherit;
+  font-size: 1rem;
+  background: #fbfdfb;
+  border: 1px solid #b9cbbb;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.calc-field input:hover,
+.calc-field select:hover {
+  border-color: #6c9c75;
+  background: #ffffff;
+}
+
+.calc-field input:focus,
+.calc-field select:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #1f6b35;
+  box-shadow: 0 0 0 4px rgba(31, 107, 53, 0.14);
+}
+
+.calc-help {
+  margin-top: 7px;
+  color: #647269;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.calc-button {
+  display: block;
+  width: 100%;
+  min-height: 54px;
+  margin: 8px 0 20px;
+  padding: 14px 20px;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+  background:
+    linear-gradient(135deg, #1d7438, #15592b);
+  border: 0;
+  border-radius: 12px;
+  box-shadow:
+    0 10px 20px rgba(22, 95, 45, 0.24),
+    inset 0 1px rgba(255, 255, 255, 0.22);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    filter 0.18s ease;
+}
+
+.calc-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow:
+    0 14px 25px rgba(22, 95, 45, 0.3),
+    inset 0 1px rgba(255, 255, 255, 0.22);
+}
+
+.calc-button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 6px 12px rgba(22, 95, 45, 0.22),
+    inset 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.calc-note {
+  padding: 16px 18px;
+  color: #4c412d;
+  line-height: 1.55;
+  background: #fff8e9;
+  border: 1px solid #ecd4a6;
+  border-left: 5px solid #d99b35;
+  border-radius: 12px;
+}
+
+.calc-note a {
+  color: #196232;
+  font-weight: 750;
+}
+
+.result-card {
+  position: relative;
+  margin-bottom: 17px;
+  padding: 19px 20px;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, #ffffff, #f5faf5);
+  border: 1px solid #d9e6da;
+  border-radius: 15px;
+  box-shadow:
+    0 8px 20px rgba(38, 78, 46, 0.07);
+}
+
+.result-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: linear-gradient(#267b40, #e0a54c);
+}
+
+.result-card h3 {
+  margin: 0 0 8px;
+  color: #184d29;
+  font-size: 1.05rem;
+}
+
+.result-number {
+  margin: 4px 0 7px;
+  color: #1d6d37;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.result-card p {
+  margin: 0;
+  color: #617067;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+#nextStepsCard {
+  padding: 22px;
+  background:
+    linear-gradient(145deg, #eef8ef, #ffffff);
+  border-color: #b9d6bc;
+}
+
+#nextStepsCard h3 {
+  font-size: 1.2rem;
+}
+
+#nextStepsCard ul {
+  margin: 16px 0 0;
+  padding-left: 21px;
+}
+
+#nextStepsCard li {
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+#nextStepsCard a {
+  color: #17632f;
+  font-weight: 750;
+}
+
+/* Make the results side visually distinct */
+
+.calculator-grid .calc-panel:nth-child(2) {
+  background:
+    linear-gradient(180deg, #f7fbf7, #ffffff);
+}
+
+.calculator-grid .calc-panel:nth-child(2) > h2 {
+  background:
+    linear-gradient(135deg, #244d2f, #3e7650);
+}
+
+/* Calculator tip box refinement */
+
+.tip-box {
+  margin: 30px 0;
+  padding: 22px 24px;
+  background:
+    linear-gradient(135deg, #fff8e8, #fffdf7);
+  border: 1px solid #ead3a3;
+  border-left: 6px solid #d99b35;
+  border-radius: 15px;
+  box-shadow: 0 9px 24px rgba(95, 72, 28, 0.08);
+}
+
+.tip-box h3 {
+  margin-top: 0;
+  color: #775014;
+}
+
+.tip-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile calculator layout */
+
+@media (max-width: 760px) {
+  .calculator-shell {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .calc-panel {
+    border-radius: 16px;
+  }
+
+  .calc-panel > h2 {
+    padding: 18px;
+    font-size: 1.3rem;
+  }
+
+  .calc-body {
+    padding: 18px;
+  }
+
+  .calc-field input,
+  .calc-field select {
+    min-height: 50px;
+    font-size: 16px;
+  }
+
+  .result-card {
+    padding: 17px 18px;
+  }
+}
