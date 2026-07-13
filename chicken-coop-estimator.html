@@ -724,20 +724,29 @@ function calculate() {
   const runSpace = chickens * 10;
   const nestBoxes = Math.ceil(chickens / 4);
 
-  document.getElementById("totalResult").textContent =
-    "$" + total.toFixed(2);
+setAnimatedResult("totalResult", total, {
+  decimals: 2,
+  prefix: "$"
+});
 
-  document.getElementById("perChickenResult").textContent =
-    "$" + costPerChicken.toFixed(2);
+setAnimatedResult("perChickenResult", costPerChicken, {
+  decimals: 2,
+  prefix: "$"
+});
 
-  document.getElementById("coopSizeResult").textContent =
-    coopSpace + " sq ft";
+setAnimatedResult("coopSizeResult", coopSpace, {
+  decimals: 0,
+  suffix: " sq ft"
+});
 
-  document.getElementById("runSizeResult").textContent =
-    runSpace + " sq ft";
+setAnimatedResult("runSizeResult", runSpace, {
+  decimals: 0,
+  suffix: " sq ft"
+});
 
-  document.getElementById("nestBoxResult").textContent =
-    nestBoxes;
+setAnimatedResult("nestBoxResult", nestBoxes, {
+  decimals: 0
+});
 
   const nextStepsIntro =
     document.getElementById("nextStepsIntro");
@@ -802,6 +811,8 @@ function calculate() {
   `;
 
   nextStepsCard.style.display = "block";
+
+  animateCalculatorResults();
 }
 
 // Automatically calculate using the default selections
