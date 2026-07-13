@@ -1093,3 +1093,31 @@ nav a:hover{
     padding: 17px 18px;
   }
 }
+
+/* Egg Profit Calculator result states */
+
+.result-card.profit-positive {
+  background: linear-gradient(145deg, #eef9ef, #ffffff);
+  border-color: #9fc9a4;
+}
+
+.result-card.profit-positive::before {
+  background: linear-gradient(#1f7a3b, #66a96f);
+}
+
+.result-card.profit-positive .result-number {
+  color: #176631;
+}
+
+.result-card.profit-negative {
+  background: linear-gradient(145deg, #fff3f1, #ffffff);
+  border-color: #dfb3aa;
+}
+
+.result-card.profit-negative::before {
+  background: linear-gradient(#b84834, #d77a66);
+}
+
+.result-card.profit-negative .result-number {
+  color: #a63a29;
+}
