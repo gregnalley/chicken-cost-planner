@@ -433,26 +433,37 @@ function calculate() {
   let nestingBoxes =
     Math.ceil(hensNeeded / 4);
 
-  document.getElementById("hensResult").textContent =
-    hensNeeded;
+ setAnimatedResult("hensResult", hensNeeded, {
+  decimals: 0
+});
 
-  document.getElementById("eggsResult").textContent =
-    weeklyEggs.toFixed(1);
+setAnimatedResult("eggsResult", weeklyEggs, {
+  decimals: 1
+});
 
-  document.getElementById("feedResult").textContent =
-    poundsFeedPerMonth.toFixed(1) + " lbs";
+setAnimatedResult("feedResult", poundsFeedPerMonth, {
+  decimals: 1,
+  suffix: " lbs"
+});
 
-  document.getElementById("costResult").textContent =
-    "$" + monthlyFeedCost.toFixed(2);
+setAnimatedResult("costResult", monthlyFeedCost, {
+  decimals: 2,
+  prefix: "$"
+});
 
-  document.getElementById("coopResult").textContent =
-    coopSize + " sq ft";
+setAnimatedResult("coopResult", coopSize, {
+  decimals: 0,
+  suffix: " sq ft"
+});
 
-  document.getElementById("runResult").textContent =
-    runSize + " sq ft";
+setAnimatedResult("runResult", runSize, {
+  decimals: 0,
+  suffix: " sq ft"
+});
 
-  document.getElementById("nestResult").textContent =
-    nestingBoxes;
+setAnimatedResult("nestResult", nestingBoxes, {
+  decimals: 0
+});
 
   const nextStepsIntro =
     document.getElementById("nextStepsIntro");
@@ -518,6 +529,8 @@ function calculate() {
   `;
 
   nextStepsCard.style.display = "block";
+
+  animateCalculatorResults();
 }
 
 // Automatically calculate using the default values
