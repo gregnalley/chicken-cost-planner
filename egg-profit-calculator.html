@@ -335,20 +335,37 @@ function calculate() {
   let totalCosts = feedCost + otherCost;
   let profit = revenue - totalCosts;
 
-  document.getElementById("eggsResult").textContent =
-    eggsPerMonth.toFixed(0);
+setAnimatedResult("hensResult", hensNeeded, {
+  decimals: 0
+});
 
-  document.getElementById("dozensResult").textContent =
-    dozens.toFixed(1);
+setAnimatedResult("eggsResult", weeklyEggs, {
+  decimals: 1
+});
 
-  document.getElementById("revenueResult").textContent =
-    "$" + revenue.toFixed(2);
+setAnimatedResult("feedResult", poundsFeedPerMonth, {
+  decimals: 1,
+  suffix: " lbs"
+});
 
-  document.getElementById("costResult").textContent =
-    "$" + totalCosts.toFixed(2);
+setAnimatedResult("costResult", monthlyFeedCost, {
+  decimals: 2,
+  prefix: "$"
+});
 
-  document.getElementById("profitResult").textContent =
-    (profit < 0 ? "-$" : "$") + Math.abs(profit).toFixed(2);
+setAnimatedResult("coopResult", coopSize, {
+  decimals: 0,
+  suffix: " sq ft"
+});
+
+setAnimatedResult("runResult", runSize, {
+  decimals: 0,
+  suffix: " sq ft"
+});
+
+setAnimatedResult("nestResult", nestingBoxes, {
+  decimals: 0
+});
 
   const profitCard = document.getElementById("profitCard");
 
@@ -417,6 +434,8 @@ function calculate() {
   `;
 
   nextStepsCard.style.display = "block";
+
+  animateCalculatorResults();
 }
 
 // Automatically calculate using the default values
