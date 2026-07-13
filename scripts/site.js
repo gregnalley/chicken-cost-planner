@@ -20,6 +20,7 @@ async function loadSiteScripts() {
     await loadScript("scripts/product-loader.js");
     await loadScript("scripts/collection-loader.js");
     await loadScript("scripts/message-loader.js");
+    await loadScript("scripts/calculator-effects.js");
     await loadScript("scripts/tracking.js");
 
     if (typeof loadNavigation === "function") loadNavigation();
