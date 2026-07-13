@@ -91,6 +91,8 @@ This calculator gives you a practical estimate of monthly feed usage, monthly fe
 
 <div class="section">
 
+ <div class="section calculator-shell">
+
 <div class="calculator-grid">
 
 <div class="calc-panel">
@@ -101,7 +103,14 @@ This calculator gives you a practical estimate of monthly feed usage, monthly fe
 
 <div class="calc-field">
 <label for="chickens">🐔 Number of Chickens</label>
-<input id="chickens" type="number" value="6">
+<input
+  id="chickens"
+  type="number"
+  value="6"
+  min="1"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Enter the number of chickens in your flock.</div>
 </div>
 
@@ -117,13 +126,27 @@ This calculator gives you a practical estimate of monthly feed usage, monthly fe
 
 <div class="calc-field">
 <label for="feedBagPrice">💵 Feed Bag Price ($)</label>
-<input id="feedBagPrice" type="number" value="22">
+<input
+  id="feedBagPrice"
+  type="number"
+  value="22"
+  min="0"
+  step="0.01"
+  inputmode="decimal"
+>
 <div class="calc-help">Enter the price of one bag of feed.</div>
 </div>
 
 <div class="calc-field">
 <label for="feedBagWeight">⚖️ Feed Bag Weight (lbs)</label>
-<input id="feedBagWeight" type="number" value="50">
+<input
+  id="feedBagWeight"
+  type="number"
+  value="50"
+  min="1"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Most feed bags are commonly 40 or 50 pounds.</div>
 </div>
 
@@ -137,7 +160,9 @@ This calculator gives you a practical estimate of monthly feed usage, monthly fe
 <div class="calc-help">Poor feeders, spills, rodents, and wet feed can increase real feed costs.</div>
 </div>
 
-<button class="calc-button" onclick="calculate()">Calculate Feed Cost</button>
+<button class="calc-button" type="button" onclick="calculate()">
+  🌾 Calculate My Feed Cost
+</button>
 
 <div class="calc-note">
 <strong>Want more accurate planning?</strong><br>
@@ -316,6 +341,9 @@ nextStepsList.innerHTML = `
 `;
 
 nextStepsCard.style.display = "block";
+
+// Automatically calculate using the default values
+window.addEventListener("load", calculate);
 
 }
 
