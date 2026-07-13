@@ -1121,3 +1121,30 @@ nav a:hover{
 .result-card.profit-negative .result-number {
   color: #a63a29;
 }
+
+/* ==================================================
+   CALCULATOR RESULT ANIMATIONS
+================================================== */
+
+.calculator-result-animated {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.calculator-result-animated.calculator-result-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced-motion accessibility settings */
+
+@media (prefers-reduced-motion: reduce) {
+  .calculator-result-animated {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
