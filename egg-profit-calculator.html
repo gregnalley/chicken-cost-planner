@@ -74,6 +74,8 @@ Use this calculator to estimate how much egg income your flock may produce based
 
 <div class="calculator-grid">
 
+    <div class="section calculator-shell">
+
 <div class="calc-panel">
 
 <h2>🧮 Your Egg Profit Calculator</h2>
@@ -82,35 +84,73 @@ Use this calculator to estimate how much egg income your flock may produce based
 
 <div class="calc-field">
 <label for="chickens">🐔 Number of Chickens</label>
-<input id="chickens" type="number" placeholder="e.g. 6">
+<input
+  id="chickens"
+  type="number"
+  value="6"
+  min="1"
+  step="1"
+  inputmode="numeric"
+>
 <div class="calc-help">Enter the number of laying hens in your flock.</div>
 </div>
 
 <div class="calc-field">
 <label for="eggsPerWeek">🥚 Eggs per Chicken per Week</label>
-<input id="eggsPerWeek" type="number" value="5">
+<input
+  id="eggsPerWeek"
+  type="number"
+  value="5"
+  min="0"
+  max="7"
+  step="0.1"
+  inputmode="decimal"
+>
 <div class="calc-help">Many productive hens average 4–6 eggs per week.</div>
 </div>
 
 <div class="calc-field">
 <label for="eggPrice">💵 Egg Price ($ per dozen)</label>
-<input id="eggPrice" type="number" value="4">
+<input
+  id="eggPrice"
+  type="number"
+  value="4"
+  min="0"
+  step="0.01"
+  inputmode="decimal"
+>
 <div class="calc-help">Enter your local selling price per dozen eggs.</div>
 </div>
 
 <div class="calc-field">
 <label for="feedCost">🌾 Monthly Feed Cost ($)</label>
-<input id="feedCost" type="number" value="30">
+<input
+  id="feedCost"
+  type="number"
+  value="30"
+  min="0"
+  step="0.01"
+  inputmode="decimal"
+>
 <div class="calc-help">Use your estimated monthly feed expense.</div>
 </div>
 
 <div class="calc-field">
 <label for="otherCost">🏷️ Other Monthly Costs ($)</label>
-<input id="otherCost" type="number" value="0">
+<input
+  id="otherCost"
+  type="number"
+  value="0"
+  min="0"
+  step="0.01"
+  inputmode="decimal"
+>
 <div class="calc-help">Bedding, cartons, oyster shell, supplements, etc.</div>
 </div>
 
-<button class="calc-button" onclick="calculate()">Calculate Profit</button>
+<button class="calc-button" type="button" onclick="calculate()">
+  🥚 Calculate My Egg Profit
+</button>
 
 <div class="calc-note">
 <strong>Don’t know your feed cost?</strong><br>
@@ -269,73 +309,118 @@ This does not include startup costs such as the coop, feeders, waterers, fencing
 
 function calculate() {
 
-let chickens = parseFloat(document.getElementById("chickens").value);
-let eggsPerWeek = parseFloat(document.getElementById("eggsPerWeek").value);
-let eggPrice = parseFloat(document.getElementById("eggPrice").value);
-let feedCost = parseFloat(document.getElementById("feedCost").value);
-let otherCost = parseFloat(document.getElementById("otherCost").value);
+  let chickens = parseFloat(document.getElementById("chickens").value);
+  let eggsPerWeek = parseFloat(document.getElementById("eggsPerWeek").value);
+  let eggPrice = parseFloat(document.getElementById("eggPrice").value);
+  let feedCost = parseFloat(document.getElementById("feedCost").value);
+  let otherCost = parseFloat(document.getElementById("otherCost").value);
 
-if (isNaN(chickens) || chickens <= 0) {
-alert("Please enter the number of chickens.");
-return;
+  if (isNaN(chickens) || chickens <= 0) {
+    alert("Please enter the number of chickens.");
+    return;
+  }
+
+  if (isNaN(eggsPerWeek) || eggsPerWeek < 0) eggsPerWeek = 0;
+  if (eggsPerWeek > 7) eggsPerWeek = 7;
+
+  if (isNaN(eggPrice) || eggPrice < 0) eggPrice = 0;
+  if (isNaN(feedCost) || feedCost < 0) feedCost = 0;
+  if (isNaN(otherCost) || otherCost < 0) otherCost = 0;
+
+  const weeksPerMonth = 52 / 12;
+
+  let eggsPerMonth = chickens * eggsPerWeek * weeksPerMonth;
+  let dozens = eggsPerMonth / 12;
+  let revenue = dozens * eggPrice;
+  let totalCosts = feedCost + otherCost;
+  let profit = revenue - totalCosts;
+
+  document.getElementById("eggsResult").textContent =
+    eggsPerMonth.toFixed(0);
+
+  document.getElementById("dozensResult").textContent =
+    dozens.toFixed(1);
+
+  document.getElementById("revenueResult").textContent =
+    "$" + revenue.toFixed(2);
+
+  document.getElementById("costResult").textContent =
+    "$" + totalCosts.toFixed(2);
+
+  document.getElementById("profitResult").textContent =
+    (profit < 0 ? "-$" : "$") + Math.abs(profit).toFixed(2);
+
+  const profitCard = document.getElementById("profitCard");
+
+  if (profit >= 0) {
+    profitCard.classList.remove("profit-negative");
+    profitCard.classList.add("profit-positive");
+  } else {
+    profitCard.classList.remove("profit-positive");
+    profitCard.classList.add("profit-negative");
+  }
+
+  const nextStepsIntro = document.getElementById("nextStepsIntro");
+  const nextStepsList = document.getElementById("nextStepsList");
+  const nextStepsCard = document.getElementById("nextStepsCard");
+
+  let profitMessage = "";
+
+  if (profit >= 0) {
+    profitMessage = `
+      Your flock is estimated to produce about
+      <strong>${eggsPerMonth.toFixed(0)} eggs</strong> per month,
+      with estimated revenue of <strong>$${revenue.toFixed(2)}</strong>
+      and a possible monthly profit of
+      <strong>$${profit.toFixed(2)}</strong>.
+      Your next goal is to protect that margin by reducing feed waste
+      and choosing productive breeds.
+    `;
+  } else {
+    profitMessage = `
+      Your flock is estimated to produce about
+      <strong>${eggsPerMonth.toFixed(0)} eggs</strong> per month,
+      but may run at an estimated monthly loss of
+      <strong>$${Math.abs(profit).toFixed(2)}</strong>.
+      That is common for backyard flocks, especially when feed costs
+      are high or egg prices are low.
+    `;
+  }
+
+  nextStepsIntro.innerHTML = profitMessage;
+
+  nextStepsList.innerHTML = `
+    <li>
+      Reduce feed waste with a better feeder setup.
+      <a href="best-chicken-feeders.html">Compare Chicken Feeders →</a>
+    </li>
+
+    <li>
+      Choose productive breeds that lay consistently.
+      <a href="best-chicken-breeds-for-eggs.html">See Best Egg Breeds →</a>
+    </li>
+
+    <li>
+      Estimate your full setup cost, not just monthly expenses.
+      <a href="chicken-coop-estimator.html">Use the Coop Cost Estimator →</a>
+    </li>
+
+    <li>
+      Plan the right flock size for your household egg needs.
+      <a href="backyard-chicken-flock-planner.html">Use the Flock Planner →</a>
+    </li>
+
+    <li>
+      Browse equipment that can help reduce chores and waste.
+      <a href="chicken-supplies.html">Browse Chicken Supplies →</a>
+    </li>
+  `;
+
+  nextStepsCard.style.display = "block";
 }
 
-if (isNaN(eggsPerWeek)) eggsPerWeek = 0;
-if (isNaN(eggPrice)) eggPrice = 0;
-if (isNaN(feedCost)) feedCost = 0;
-if (isNaN(otherCost)) otherCost = 0;
-
-let eggsPerMonth = chickens * eggsPerWeek * 4;
-let dozens = eggsPerMonth / 12;
-let revenue = dozens * eggPrice;
-let totalCosts = feedCost + otherCost;
-let profit = revenue - totalCosts;
-
-document.getElementById("eggsResult").innerHTML = eggsPerMonth.toFixed(0);
-document.getElementById("dozensResult").innerHTML = dozens.toFixed(1);
-document.getElementById("revenueResult").innerHTML = "$" + revenue.toFixed(2);
-document.getElementById("costResult").innerHTML = "$" + totalCosts.toFixed(2);
-document.getElementById("profitResult").innerHTML = "$" + profit.toFixed(2);
-
-let profitCard = document.getElementById("profitCard");
-
-if (profit >= 0) {
-profitCard.classList.remove("profit-negative");
-profitCard.classList.add("profit-positive");
-} else {
-profitCard.classList.remove("profit-positive");
-profitCard.classList.add("profit-negative");
-}
-
-let nextStepsIntro = document.getElementById("nextStepsIntro");
-let nextStepsList = document.getElementById("nextStepsList");
-let nextStepsCard = document.getElementById("nextStepsCard");
-
-let profitMessage = "";
-
-if (profit >= 0) {
-profitMessage = `Your flock is estimated to produce a monthly profit of <strong>$${profit.toFixed(2)}</strong>. Your next goal is to protect that profit by reducing feed waste and choosing productive breeds.`;
-} else {
-profitMessage = `Your flock is estimated to run at a monthly loss of <strong>$${Math.abs(profit).toFixed(2)}</strong>. That is common for backyard chickens, especially when feed costs are high or egg prices are low.`;
-}
-
-nextStepsIntro.innerHTML = profitMessage;
-
-nextStepsList.innerHTML = `
-<li>Reduce feed waste with a better feeder setup. <a href="best-chicken-feeders.html">Compare Chicken Feeders →</a></li>
-
-<li>Choose productive breeds that lay consistently. <a href="best-chicken-breeds-for-eggs.html">See Best Egg Breeds →</a></li>
-
-<li>Estimate your full setup cost, not just monthly expenses. <a href="chicken-coop-estimator.html">Use the Coop Cost Estimator →</a></li>
-
-<li>Plan the right flock size for your household egg needs. <a href="backyard-chicken-flock-planner.html">Use the Flock Planner →</a></li>
-
-<li>Browse equipment that can help reduce chores and waste. <a href="chicken-supplies.html">Browse Chicken Supplies →</a></li>
-`;
-
-nextStepsCard.style.display = "block";
-
-}
+// Automatically calculate using the default values
+window.addEventListener("load", calculate);
 
 </script>
 
