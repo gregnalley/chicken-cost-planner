@@ -335,36 +335,27 @@ function calculate() {
   let totalCosts = feedCost + otherCost;
   let profit = revenue - totalCosts;
 
-setAnimatedResult("hensResult", hensNeeded, {
+setAnimatedResult("eggsResult", eggsPerMonth, {
   decimals: 0
 });
 
-setAnimatedResult("eggsResult", weeklyEggs, {
+setAnimatedResult("dozensResult", dozens, {
   decimals: 1
 });
 
-setAnimatedResult("feedResult", poundsFeedPerMonth, {
-  decimals: 1,
-  suffix: " lbs"
-});
-
-setAnimatedResult("costResult", monthlyFeedCost, {
+setAnimatedResult("revenueResult", revenue, {
   decimals: 2,
   prefix: "$"
 });
 
-setAnimatedResult("coopResult", coopSize, {
-  decimals: 0,
-  suffix: " sq ft"
+setAnimatedResult("costResult", totalCosts, {
+  decimals: 2,
+  prefix: "$"
 });
 
-setAnimatedResult("runResult", runSize, {
-  decimals: 0,
-  suffix: " sq ft"
-});
-
-setAnimatedResult("nestResult", nestingBoxes, {
-  decimals: 0
+setAnimatedResult("profitResult", Math.abs(profit), {
+  decimals: 2,
+  prefix: profit < 0 ? "-$" : "$"
 });
 
   const profitCard = document.getElementById("profitCard");
