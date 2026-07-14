@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Feed Crop Research Dashboard | Backyard Chicken Planner HQ</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="stylesheet" href="../assets/css/bcp-style.css">
+
+<style>
+
+.feed-research-header {
+  margin-bottom: 28px;
+  padding: 28px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #174f2a, #2f7944);
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(24, 74, 39, 0.18);
+}
+
+.feed-research-header h1 {
+  margin: 0 0 10px;
+}
+
+.feed-research-header p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.research-status {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px 13px;
+  color: #183823;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: #f5d28b;
+  border-radius: 999px;
+}
+
+.crop-selector {
+  margin-bottom: 26px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #d4e0d6;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(32, 71, 41, 0.08);
+}
+
+.crop-selector label {
+  display: block;
+  margin-bottom: 9px;
+  color: #194b29;
+  font-weight: 750;
+}
+
+.crop-selector select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 13px;
+  font: inherit;
+  background: #fbfdfb;
+  border: 1px solid #b8cbb9;
+  border-radius: 10px;
+}
+
+.crop-summary-card {
+  margin-bottom: 25px;
+  padding: 24px;
+  background: linear-gradient(145deg, #ffffff, #f7fbf7);
+  border: 1px solid #d3e2d5;
+  border-left: 6px solid #2c7a43;
+  border-radius: 16px;
+  box-shadow: 0 9px 24px rgba(30, 76, 40, 0.08);
+}
+
+.crop-summary-card h2 {
+  margin-top: 0;
+  color: #174d29;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.research-panel {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #d6e2d7;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(32, 72, 41, 0.07);
+}
+
+.research-panel h2 {
+  margin-top: 0;
+  padding-bottom: 9px;
+  color: #194f2a;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #e8efe9;
+}
+
+.research-panel dl {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1.2fr);
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.research-panel dt {
+  color: #47584b;
+  font-weight: 750;
+}
+
+.research-panel dd {
+  margin: 0;
+  color: #26352b;
+  overflow-wrap: anywhere;
+}
+
+.pending-value {
+  color: #916518;
+  font-style: italic;
+}
+
+.research-list {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.research-list li {
+  margin-bottom: 9px;
+  line-height: 1.5;
+}
+
+.full-width-panel {
+  grid-column: 1 / -1;
+}
+
+.source-entry {
+  margin-bottom: 12px;
+  padding: 13px 15px;
+  background: #f7faf7;
+  border: 1px solid #dce6dd;
+  border-radius: 10px;
+}
+
+.empty-state {
+  color: #6c746e;
+  font-style: italic;
+}
+
+@media (max-width: 760px) {
+
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-panel dl {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .research-panel dd {
+    margin-bottom: 12px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner HQ</h1>
+
+<p>
+Private research, planning, analytics, and content-development tools.
+</p>
+
+</header>
+
+<div style="max-width:1100px; margin:40px auto; padding:0 18px;">
+
+<div class="feed-research-header">
+
+<h1>🌱 Chicken Feed Crop Research Dashboard</h1>
+
+<p>
+This private dashboard displays the master research data used to evaluate crops for the future Backyard Chicken Feed Garden Planner.
+</p>
+
+<span class="research-status">Research system under development</span>
+
+</div>
+
+<div id="databaseSummary" class="crop-selector">
+  <strong>Loading crop database summary...</strong>
+</div>
+
+<div class="crop-selector">
+
+<label for="cropSelect">Select a crop record</label>
+
+<select id="cropSelect">
+<option value="">Choose a crop...</option>
+</select>
+
+</div>
+
+<div id="cropDashboard">
+
+<div class="crop-summary-card">
+
+<h2>Start by selecting a crop</h2>
+
+<p>
+The crop’s growing information, nutritional research, chicken usefulness, yield estimates, economics, safety notes, and evidence sources will appear here.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../assets/data/feed-crops.js"></script>
+
+<script>
+
+function displayValue(value) {
+
+  if (
+    value === null ||
+    value === undefined ||
+    value === ""
+  ) {
+    return '<span class="pending-value">Research pending</span>';
+  }
+
+  if (typeof value === "boolean") {
+    return value ? "Yes" : "No";
+  }
+
+  return String(value);
+}
+
+function displayRange(minimum, maximum, suffix = "") {
+
+  const minimumMissing =
+    minimum === null ||
+    minimum === undefined ||
+    minimum === "";
+
+  const maximumMissing =
+    maximum === null ||
+    maximum === undefined ||
+    maximum === "";
+
+  if (minimumMissing && maximumMissing) {
+    return '<span class="pending-value">Research pending</span>';
+  }
+
+  if (minimumMissing) {
+    return `Up to ${displayValue(maximum)}${suffix}`;
+  }
+
+  if (maximumMissing) {
+    return `${displayValue(minimum)}${suffix} or more`;
+  }
+
+  if (minimum === maximum) {
+    return `${displayValue(minimum)}${suffix}`;
+  }
+
+  return `${displayValue(minimum)}–${displayValue(maximum)}${suffix}`;
+}
+
+function displayList(items) {
+
+  if (!Array.isArray(items) || items.length === 0) {
+    return '<p class="empty-state">No information entered yet.</p>';
+  }
+
+  return `
+    <ul class="research-list">
+      ${items.map(item => `<li>${item}</li>`).join("")}
+    </ul>
+  `;
+}
+
+function renderDatabaseSummary() {
+
+  const summary = document.getElementById("databaseSummary");
+
+  if (
+    typeof BCP_FEED_CROPS === "undefined" ||
+    !BCP_FEED_CROPS
+  ) {
+    summary.innerHTML =
+      '<span class="pending-value">Crop database could not be loaded.</span>';
+
+    return;
+  }
+
+  const crops = Object.values(BCP_FEED_CROPS);
+
+  const annualCount = crops.filter(
+    crop =>
+      typeof crop.cropType === "string" &&
+      crop.cropType.toLowerCase().includes("annual")
+  ).length;
+
+  const perennialCount = crops.filter(
+    crop =>
+      typeof crop.cropType === "string" &&
+      crop.cropType.toLowerCase().includes("perennial")
+  ).length;
+
+  const warmSeasonCount = crops.filter(
+    crop => crop.seasonType === "Warm Season"
+  ).length;
+
+  const coolSeasonCount = crops.filter(
+    crop => crop.seasonType === "Cool Season"
+  ).length;
+
+  summary.innerHTML = `
+    <strong>Database Summary</strong>
+
+    <p style="margin:10px 0 0; line-height:1.7;">
+      <strong>${crops.length}</strong> crop records
+      &nbsp;•&nbsp;
+      <strong>${annualCount}</strong> annual crops
+      &nbsp;•&nbsp;
+      <strong>${perennialCount}</strong> perennial crops
+      &nbsp;•&nbsp;
+      <strong>${warmSeasonCount}</strong> warm-season crops
+      &nbsp;•&nbsp;
+      <strong>${coolSeasonCount}</strong> cool-season crops
+    </p>
+  `;
+}
+
+function populateCropSelector() {
+
+  const cropSelect = document.getElementById("cropSelect");
+
+  if (
+    typeof BCP_FEED_CROPS === "undefined" ||
+    !BCP_FEED_CROPS
+  ) {
+    cropSelect.innerHTML =
+      '<option value="">Crop data could not be loaded</option>';
+
+    return;
+  }
+
+  const crops = Object.values(BCP_FEED_CROPS);
+
+  crops
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .forEach(crop => {
+
+      const option = document.createElement("option");
+
+      option.value = crop.id;
+      option.textContent = crop.name;
+
+      cropSelect.appendChild(option);
+    });
+
+  if (crops.length > 0) {
+    cropSelect.value = crops[0].id;
+    renderCrop(crops[0].id);
+  }
+}
+
+function renderCrop(cropId) {
+
+  const dashboard = document.getElementById("cropDashboard");
+  const crop = BCP_FEED_CROPS[cropId];
+
+  if (!crop) {
+
+    dashboard.innerHTML = `
+      <div class="crop-summary-card">
+        <h2>Crop record not found</h2>
+        <p>Please select another crop.</p>
+      </div>
+    `;
+
+    return;
+  }
+
+  dashboard.innerHTML = `
+
+    <div class="crop-summary-card">
+
+      <h2>🌻 ${crop.name}</h2>
+
+      <p>
+        <strong>Scientific name:</strong>
+        ${displayValue(crop.scientificName)}
+      </p>
+
+      <p>
+        <strong>Category:</strong>
+        ${displayValue(crop.category)}
+      </p>
+
+      <p>
+        <strong>Crop type:</strong>
+        ${displayValue(crop.cropType)}
+      </p>
+
+      <p>
+        <strong>Season:</strong>
+        ${displayValue(crop.seasonType)}
+      </p>
+
+      <p>
+        <strong>Status:</strong>
+        ${displayValue(crop.status)}
+      </p>
+
+      <p>${displayValue(crop.summary)}</p>
+
+    </div>
+
+    <div class="research-grid">
+
+      <div class="research-panel">
+
+        <h2>🐔 Chicken Use</h2>
+
+        <dl>
+          <dt>Supplement only</dt>
+          <dd>${displayValue(crop.chickenUse.supplementOnly)}</dd>
+
+          <dt>Preparation</dt>
+          <dd>${displayValue(crop.chickenUse.preparationNotes)}</dd>
+
+          <dt>Safety notes</dt>
+          <dd>${displayValue(crop.chickenUse.safetyNotes)}</dd>
+        </dl>
+
+        <h3>Edible Parts</h3>
+        ${displayList(crop.chickenUse.edibleParts)}
+
+        <h3>Primary Value</h3>
+        ${displayList(crop.chickenUse.primaryValue)}
+
+        <h3>Feeding Forms</h3>
+        ${displayList(crop.chickenUse.feedingForms)}
+
+        <h3>Best For</h3>
+        ${displayList(crop.chickenUse.bestFor)}
+
+      </div>
+
+      <div class="research-panel">
+
+        <h2>🥗 Nutrition</h2>
+
+        <dl>
+          <dt>Data basis</dt>
+          <dd>${displayValue(crop.nutrition.basis)}</dd>
+
+          <dt>Crude protein</dt>
+          <dd>${displayValue(crop.nutrition.crudeProteinPercent)}</dd>
+
+          <dt>Fat</dt>
+          <dd>${displayValue(crop.nutrition.fatPercent)}</dd>
+
+          <dt>Fiber</dt>
+          <dd>${displayValue(crop.nutrition.fiberPercent)}</dd>
+
+          <dt>Calcium</dt>
+          <dd>${displayValue(crop.nutrition.calciumPercent)}</dd>
+
+          <dt>Phosphorus</dt>
+          <dd>${displayValue(crop.nutrition.phosphorusPercent)}</dd>
+        </dl>
+
+        <h3>Notable Nutrients</h3>
+        ${displayList(crop.nutrition.notableNutrients)}
+
+        <h3>Limitations</h3>
+        ${displayList(crop.nutrition.limitations)}
+
+      </div>
+
+           <div class="research-panel">
+
+        <h2>🌱 Growing Requirements</h2>
+
+        <dl>
+          <dt>Sunlight</dt>
+          <dd>${displayValue(crop.growing.sunlight)}</dd>
+
+          <dt>Minimum soil temperature</dt>
+          <dd>${displayValue(crop.growing.soilTemperatureMinimumF)}</dd>
+
+          <dt>Ideal soil temperature</dt>
+          <dd>${displayValue(crop.growing.idealSoilTemperatureF)}</dd>
+
+          <dt>Frost tolerance</dt>
+          <dd>${displayValue(crop.growing.frostTolerance)}</dd>
+
+          <dt>Heat tolerance</dt>
+          <dd>${displayValue(crop.growing.heatTolerance)}</dd>
+
+          <dt>Drought tolerance</dt>
+          <dd>${displayValue(crop.growing.droughtTolerance)}</dd>
+
+          <dt>Minimum soil pH</dt>
+          <dd>${displayValue(crop.growing.soilPHMinimum)}</dd>
+
+          <dt>Maximum soil pH</dt>
+          <dd>${displayValue(crop.growing.soilPHMaximum)}</dd>
+
+          <dt>Water needs</dt>
+          <dd>${displayValue(crop.growing.waterNeeds)}</dd>
+
+          <dt>Direct sow</dt>
+          <dd>${displayValue(crop.growing.directSow)}</dd>
+
+          <dt>Transplant recommended</dt>
+          <dd>${displayValue(crop.growing.transplantRecommended)}</dd>
+
+          <dt>Plant spacing</dt>
+          <dd>${displayValue(crop.growing.plantSpacingInches)}</dd>
+
+          <dt>Row spacing</dt>
+          <dd>${displayValue(crop.growing.rowSpacingInches)}</dd>
+
+          <dt>Planting depth</dt>
+          <dd>${displayValue(crop.growing.plantingDepthInches)}</dd>
+
+          <dt>Days to first harvest</dt>
+          <dd>
+            ${displayRange(
+              crop.growing.daysToFirstHarvestMinimum,
+              crop.growing.daysToFirstHarvestMaximum,
+              " days"
+            )}
+          </dd>
+
+          <dt>Days to maturity</dt>
+          <dd>
+            ${displayRange(
+              crop.growing.daysToMaturityMinimum,
+              crop.growing.daysToMaturityMaximum,
+              " days"
+            )}
+          </dd>
+
+          <dt>Succession planting</dt>
+          <dd>${displayValue(crop.growing.successionPlanting)}</dd>
+
+          <dt>Regrows after harvest</dt>
+          <dd>${displayValue(crop.growing.regrowthAfterHarvest)}</dd>
+        </dl>
+
+      </div>
+
+            <div class="research-panel">
+
+        <h2>📐 Space and Yield</h2>
+
+        <dl>
+          <dt>Plants per 10 sq ft</dt>
+          <dd>${displayValue(crop.spaceAndYield.plantsPer10SquareFeet)}</dd>
+
+          <dt>Plants per 50 sq ft</dt>
+          <dd>${displayValue(crop.spaceAndYield.plantsPer50SquareFeet)}</dd>
+
+          <dt>Plants per 100 sq ft</dt>
+          <dd>${displayValue(crop.spaceAndYield.plantsPer100SquareFeet)}</dd>
+
+          <dt>Yield per plant</dt>
+          <dd>
+            ${displayRange(
+              crop.spaceAndYield.expectedYieldPerPlantMinimumLbs,
+              crop.spaceAndYield.expectedYieldPerPlantMaximumLbs,
+              " lbs"
+            )}
+          </dd>
+
+          <dt>Yield per 100 sq ft</dt>
+          <dd>
+            ${displayRange(
+              crop.spaceAndYield.expectedYieldPer100SquareFeetMinimumLbs,
+              crop.spaceAndYield.expectedYieldPer100SquareFeetMaximumLbs,
+              " lbs"
+            )}
+          </dd>
+
+          <dt>Edible yield</dt>
+          <dd>${displayValue(crop.spaceAndYield.edibleYieldPercent)}</dd>
+
+          <dt>Storage life</dt>
+          <dd>${displayValue(crop.spaceAndYield.storageLife)}</dd>
+
+          <dt>Storage method</dt>
+          <dd>${displayValue(crop.spaceAndYield.storageMethod)}</dd>
+
+          <dt>Yield notes</dt>
+          <dd>${displayValue(crop.spaceAndYield.yieldNotes)}</dd>
+        </dl>
+
+      </div>
+
+      <div class="research-panel">
+
+        <h2>💰 Economics</h2>
+
+        <dl>
+          <dt>Seed cost</dt>
+          <dd>${displayValue(crop.economics.seedCostEstimate)}</dd>
+
+          <dt>Equipment cost</dt>
+          <dd>${displayValue(crop.economics.equipmentCostEstimate)}</dd>
+
+          <dt>Irrigation cost</dt>
+          <dd>${displayValue(crop.economics.irrigationCostLevel)}</dd>
+
+          <dt>Labor level</dt>
+          <dd>${displayValue(crop.economics.laborLevel)}</dd>
+
+          <dt>Potential savings</dt>
+          <dd>${displayValue(crop.economics.potentialFeedSavings)}</dd>
+
+          <dt>Economic notes</dt>
+          <dd>${displayValue(crop.economics.economicNotes)}</dd>
+        </dl>
+
+      </div>
+
+      <div class="research-panel">
+
+        <h2>⭐ Scores and Rankings</h2>
+
+        <dl>
+          <dt>Ease of growing</dt>
+          <dd>${displayValue(crop.scores.easeOfGrowing)}</dd>
+
+          <dt>Yield per square foot</dt>
+          <dd>${displayValue(crop.scores.yieldPerSquareFoot)}</dd>
+
+          <dt>Nutritional usefulness</dt>
+          <dd>${displayValue(crop.scores.nutritionalUsefulness)}</dd>
+
+          <dt>Protein contribution</dt>
+          <dd>${displayValue(crop.scores.proteinContribution)}</dd>
+
+          <dt>Energy contribution</dt>
+          <dd>${displayValue(crop.scores.energyContribution)}</dd>
+
+          <dt>Storage value</dt>
+          <dd>${displayValue(crop.scores.storageValue)}</dd>
+
+          <dt>Small-space suitability</dt>
+          <dd>${displayValue(crop.scores.smallSpaceSuitability)}</dd>
+
+          <dt>Heat tolerance</dt>
+          <dd>${displayValue(crop.scores.heatTolerance)}</dd>
+
+          <dt>Cold tolerance</dt>
+          <dd>${displayValue(crop.scores.coldTolerance)}</dd>
+
+          <dt>Labor efficiency</dt>
+          <dd>${displayValue(crop.scores.laborEfficiency)}</dd>
+
+          <dt>Economic potential</dt>
+          <dd>${displayValue(crop.scores.economicPotential)}</dd>
+
+          <dt>Safety simplicity</dt>
+          <dd>${displayValue(crop.scores.safetySimplicity)}</dd>
+        </dl>
+
+        <h3>Calculated Rankings</h3>
+
+        <dl>
+          <dt>Practical score</dt>
+          <dd>${displayValue(crop.rankings.practicalScore)}</dd>
+
+          <dt>Nutritional score</dt>
+          <dd>${displayValue(crop.rankings.nutritionalScore)}</dd>
+
+          <dt>BCP Feed Score</dt>
+          <dd>${displayValue(crop.rankings.bcpFeedScore)}</dd>
+        </dl>
+
+      </div>
+
+      <div class="research-panel full-width-panel">
+
+        <h2>🗺 Regional Planting Guidance</h2>
+
+        <dl>
+          <dt>Cold North</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.coldNorth.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.coldNorth.harvestWindow)}
+          </dd>
+
+          <dt>Midwest and Northeast</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.midwestNortheast.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.midwestNortheast.harvestWindow)}
+          </dd>
+
+          <dt>Upper South</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.upperSouth.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.upperSouth.harvestWindow)}
+          </dd>
+
+          <dt>Deep South</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.deepSouth.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.deepSouth.harvestWindow)}
+          </dd>
+
+          <dt>Southwest</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.southwest.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.southwest.harvestWindow)}
+          </dd>
+
+          <dt>Pacific Northwest</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.pacificNorthwest.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.pacificNorthwest.harvestWindow)}
+          </dd>
+
+          <dt>Coastal West</dt>
+          <dd>
+            Plant: ${displayValue(crop.regionalPlanting.coastalWest.plantingWindow)}
+            <br>
+            Harvest: ${displayValue(crop.regionalPlanting.coastalWest.harvestWindow)}
+          </dd>
+        </dl>
+
+      </div>
+
+      <div class="research-panel full-width-panel">
+
+        <h2>📚 Evidence and Sources</h2>
+
+        <dl>
+          <dt>Evidence strength</dt>
+          <dd>${displayValue(crop.evidence.evidenceStrength)}</dd>
+
+          <dt>Last reviewed</dt>
+          <dd>${displayValue(crop.evidence.lastReviewed)}</dd>
+        </dl>
+
+        <h3>Sources</h3>
+
+        ${
+          Array.isArray(crop.evidence.sources) &&
+          crop.evidence.sources.length > 0
+
+           ? crop.evidence.sources.map(source => `
+    <div class="source-entry">
+
+      <strong>
+        ${
+          source.url
+            ? `<a href="${source.url}" target="_blank" rel="noopener">
+                 ${displayValue(source.title)}
+               </a>`
+            : displayValue(source.title)
+        }
+      </strong>
+
+      <br>
+
+      <span>
+        ${displayValue(source.organization)}
+      </span>
+
+      <br>
+
+      <small>
+        <strong>Used for:</strong>
+        ${displayValue(source.use)}
+      </small>
+
+    </div>
+  `).join("")
+
+            : '<p class="empty-state">No sources entered yet.</p>'
+        }
+
+        <h3>Research Notes</h3>
+
+        ${displayList(crop.evidence.researchNotes)}
+
+      </div>
+
+    </div>
+  `;
+}
+
+document
+  .getElementById("cropSelect")
+  .addEventListener("change", function () {
+
+    if (this.value) {
+      renderCrop(this.value);
+    }
+  });
+
+renderDatabaseSummary();
+populateCropSelector();
+
+</script>
+
+</body>
+</html>
