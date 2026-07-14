@@ -186,7 +186,26 @@
         id: "utilities",
         label: "Engine utility functions available",
         passed: true
-      }
+      },
+
+      {
+  id: "utilities",
+  label: "Engine utility functions available",
+  passed: true
+},
+
+{
+  id: "data-adapter",
+  label: "Planner data adapter available",
+  passed: Boolean(
+    namespace.data &&
+    typeof namespace.data
+      .registerCropCollection === "function" &&
+    typeof namespace.data
+      .getCropById === "function"
+  )
+}
+
     ];
 
     return {
