@@ -759,6 +759,18 @@ function createCropCard(crop) {
 
     </div>
 
+        ${
+      crop.id === "CROP-SUNFLOWER"
+        ? `
+          <p style="margin:0 0 15px;">
+            <a href="growing-sunflowers-for-chickens.html">
+              Read Full Sunflower Growing Guide →
+            </a>
+          </p>
+        `
+        : ""
+    }
+
     <button
       type="button"
       class="crop-toggle-button"
