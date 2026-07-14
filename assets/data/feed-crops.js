@@ -178,9 +178,9 @@ const BCP_FEED_CROPS = {
     },
 
     spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
+      plantsPer10SquareFeet: 4,
+      plantsPer50SquareFeet: 18,
+      plantsPer100SquareFeet: 36,
 
       expectedYieldPerPlantMinimumLbs: null,
       expectedYieldPerPlantMaximumLbs: null,
@@ -197,7 +197,7 @@ const BCP_FEED_CROPS = {
         "Dry seed heads or cleaned seeds thoroughly. Store in a cool, dry, dark location inside a sealed rodent-resistant container. Inspect periodically for moisture, mold, insects, or rancid odor.",
 
       yieldNotes:
-        "Reliable backyard yield estimates are still under research. Yield depends strongly on variety, spacing, pollination, fertility, moisture, bird pressure, and whether results are measured as whole heads, unshelled seeds, or kernels."
+        "Plant-density estimates are calculated from University of Georgia Extension guidance recommending approximately 12 to 15 inches between plants and 2 to 3 feet between rows. Using midpoint spacing of approximately 13.5 inches by 30 inches produces an estimated population of about 4 plants per 10 square feet, 18 plants per 50 square feet, and 36 plants per 100 square feet. These values represent practical planting-density estimates rather than measured backyard seed yield. Actual seed production depends strongly on variety, pollination, fertility, moisture, bird pressure, head size, harvest timing, and whether results are measured as whole heads, unshelled seeds, or kernels."
     },
 
     economics: {
@@ -285,7 +285,9 @@ const BCP_FEED_CROPS = {
         "Determine reasonable plants-per-square-foot ranges for oilseed varieties.",
         "Research seed losses from wild birds and methods such as netting or bagging heads.",
         "Research poultry-specific guidance for laying hens before suggesting a percentage of total diet.",
-        "Calculate scores only after comparable records exist for several crops."
+        "Calculate scores only after comparable records exist for several crops.",
+        "Plant-density estimates use midpoint spacing of approximately 13.5 inches between plants and 30 inches between rows, based on University of Georgia Extension home-garden guidance."
+      
       ]
     }
 
@@ -487,9 +489,9 @@ const BCP_FEED_CROPS = {
     },
 
     spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
+      plantsPer10SquareFeet: 38,
+      plantsPer50SquareFeet: 192,
+      plantsPer100SquareFeet: 384,
 
       expectedYieldPerPlantMinimumLbs: null,
       expectedYieldPerPlantMaximumLbs: null,
@@ -506,7 +508,7 @@ const BCP_FEED_CROPS = {
         "Allow pods and seeds to mature and dry thoroughly. Shell and clean the seed, then store it in a cool, dry, dark location inside a sealed food-safe and rodent-resistant container. Inspect periodically for insects, condensation, mold, or off odors.",
 
       yieldNotes:
-        "USDA plant guidance reports roughly 2,500 to 4,500 pounds of forage dry matter per acre per year under cover-crop or forage conditions. That figure should not be converted directly into backyard edible-seed yield. Seed yield per plant and per 100 square feet remain unverified because they vary greatly by cultivar, growth habit, spacing, fertility, moisture, pest pressure, harvest stage, and whether the crop is managed for forage or grain."
+        "Plant-density estimates are calculated from approximately 1.5 inches between plants and a midpoint row spacing of 25 inches, based on University of Minnesota Extension guidance for closely planted cowpeas. This produces estimated populations of approximately 38 plants per 10 square feet, 192 plants per 50 square feet, and 384 plants per 100 square feet. These figures are most appropriate for compact, erect, or semi-erect varieties managed in rows. Spreading, trailing, climbing, forage-oriented, or widely branched varieties may require substantially more room. USDA plant guidance reports roughly 2,500 to 4,500 pounds of forage dry matter per acre per year under cover-crop or forage conditions, but that figure should not be converted directly into backyard edible-seed yield. Seed yield remains unverified because it varies greatly by cultivar, growth habit, fertility, moisture, pest pressure, harvest stage, and whether the crop is managed for forage or grain."
     },
 
     economics: {
@@ -631,7 +633,8 @@ const BCP_FEED_CROPS = {
         "Determine practical small-batch processing methods that reliably reduce antinutritional factors.",
         "Compare the cost and labor of cooked or roasted cowpeas with purchased complete poultry feed.",
         "Research cowpea curculio, aphids, mites, beetles, and other regionally important pests.",
-        "Calculate scores only after multiple crops have comparable evidence and complete data."
+        "Calculate scores only after multiple crops have comparable evidence and complete data.",
+        "Plant-density estimates use approximately 1.5 inches between plants and a midpoint row spacing of 25 inches; these values are intended for compact or semi-erect row-grown varieties rather than spreading or climbing cowpeas.",
       ]
     }
   
@@ -852,7 +855,8 @@ const BCP_FEED_CROPS = {
         "Harvest mature heads when most seed has hardened. Dry thoroughly, thresh and clean the grain if desired, and store it in a cool, dry, dark place inside a sealed food-safe and rodent-resistant container.",
 
       yieldNotes:
-        "Commercial grain yields are sometimes reported between roughly 2.5 and 4.5 metric tons per hectare under favorable conditions. Those field-scale figures should not be converted directly into backyard yield without accounting for variety, spacing, harvest loss, threshing efficiency, bird pressure, fertility, and garden management. Backyard yield per square foot remains null until better small-plot evidence is identified."
+        "Proso millet is normally broadcast or densely drilled rather than planted as individually spaced garden plants. Production recommendations are generally expressed as seed weight per acre, seeds per area, or target stand rather than a dependable number of mature plants per square foot. Germination percentage, emergence, row width, seeding method, variety, tillering, soil moisture, and weed pressure can substantially change the final stand. For that reason, plants-per-area values remain null rather than implying false precision. Commercial grain yields are sometimes reported between roughly 2.5 and 4.5 metric tons per hectare under favorable conditions, but those field-scale figures should not be converted directly into backyard yield without accounting for variety, harvest loss, threshing efficiency, bird pressure, fertility, and garden management."
+
     },
 
     economics: {
@@ -967,7 +971,8 @@ const BCP_FEED_CROPS = {
         "Find credible small-plot grain yield data before assigning yield per square foot.",
         "Evaluate bird-loss prevention methods such as netting or harvesting heads before full shattering.",
         "Compare hand-threshing labor with the market value of purchased millet grain.",
-        "Calculate scores only after multiple crops have comparable evidence and complete data."
+        "Calculate scores only after multiple crops have comparable evidence and complete data.",
+        "Plant-density fields remain null because proso millet is normally broadcast or drilled by seeding rate, and tillering and establishment losses prevent a reliable conversion to mature individual plants per square foot.",
       ]
     }
   },
@@ -1196,7 +1201,8 @@ const BCP_FEED_CROPS = {
         "Harvest mature fruit with a portion of stem attached when practical. Cure only varieties that benefit from curing, then store sound fruit in a dry, well-ventilated location at the temperature recommended for that squash type. Avoid stacking fruit deeply and inspect regularly for soft spots, mold, or leakage.",
 
       yieldNotes:
-        "Pumpkin and winter-squash yield varies too widely to assign one reliable backyard figure. Small pie pumpkins, large field pumpkins, bush squash, storage squash, and giant pumpkins differ greatly in plant population, fruit number, fruit weight, vine spread, and edible fraction. Yield values should remain null until separate variety groups are established."
+        "Plants-per-area values remain null because this combined record includes bush, semi-bush, and long-vining pumpkins and winter squash with substantially different space requirements. Compact varieties may be spaced approximately 2 to 4 feet apart, while large vining types may require rows or growing areas 6 to 10 feet wide or more. A single plant-density value would therefore produce misleading garden-planning results. Pumpkin and winter-squash yield also varies widely by species, cultivar, vine habit, fruit number, fruit weight, pollination, pest pressure, and whether the crop is grown on open ground, trained along an edge, or trellised. Separate density and yield estimates should be developed later for compact bush squash, small-fruited vines, standard storage squash, and large pumpkins."
+
     },
 
     economics: {
@@ -1323,7 +1329,9 @@ const BCP_FEED_CROPS = {
         "Compare direct feeding of whole fruit with cooked, chopped, dried, or fermented forms.",
         "Research squash vine borer resistance, especially the relative resilience of Cucurbita moschata varieties.",
         "Find regional planting dates from state extension sources before publishing location-specific calendars.",
-        "Calculate scores only after several crops have comparable evidence and complete data."
+        "Calculate scores only after several crops have comparable evidence and complete data.",
+        "Plant-density fields remain null because bush, semi-bush, and long-vining Cucurbita varieties cannot be represented accurately by one plants-per-square-foot estimate.",
+
       ]
     }
   },
@@ -1557,7 +1565,8 @@ const BCP_FEED_CROPS = {
         "For fresh use, cool leaves promptly and refrigerate them in a breathable or loosely sealed container that limits drying without trapping excessive moisture. For longer storage, blanch and freeze plain leaves or dry them thoroughly before sealed storage.",
 
       yieldNotes:
-        "Repeated-harvest yield varies substantially with cultivar, spacing, soil fertility, season length, pest pressure, leaf size, harvest frequency, and whether the crop is managed for baby leaves or mature foliage. Fresh-weight yield also overstates feed value because the leaves contain substantial water."
+        "Plants-per-area values remain null because this combined record includes baby-leaf kale, mature kale, and full-sized collard production systems with substantially different spacing. Smaller kale plants may be maintained approximately 8 to 12 inches apart, while mature kale and collards may require approximately 12 to 24 inches between plants and 18 to 36 inches between rows. Dense baby-leaf plantings may contain many more plants but produce smaller repeated harvests, while widely spaced mature plants produce larger individual leaves over a longer period. A single plant-density figure would therefore create misleading garden-planning results. Separate density and yield estimates should eventually be developed for baby-leaf greens, mature kale, and mature collards."
+
     },
 
     economics: {
@@ -1673,360 +1682,13 @@ const BCP_FEED_CROPS = {
         "Assess pest-control costs for cabbage worms, loopers, aphids, flea beetles, slugs, black rot, and clubroot.",
         "Compare direct flock grazing with cut-and-carry harvesting.",
         "Research container production and baby-leaf density for small-space users.",
-        "Calculate scores only after several crops have comparable evidence and complete data."
+        "Calculate scores only after several crops have comparable evidence and complete data.",
+        "Plant-density fields remain null because baby-leaf kale, mature kale, and mature collards use substantially different planting densities and should eventually be modeled as separate production systems.",
+
       ]
     }
   },
 
-    "CROP-KALE-COLLARDS": {
-    id: "CROP-KALE-COLLARDS",
-
-    name: "Kale and Collard Greens",
-    scientificName:
-      "Brassica oleracea Acephala Group and Brassica oleracea var. viridis",
-
-    category: "Leafy Green and Repeated-Harvest Crop",
-    cropType:
-      "Biennial commonly grown as an annual",
-    seasonType: "Cool Season",
-
-    status: "Initial Research Complete",
-
-    summary:
-      "Kale and collard greens are cool-season leafy brassicas that can provide repeated harvests of nutrient-rich foliage, carotenoid-containing greens, flock enrichment, and productive use of spring, fall, or mild-winter garden space. Their fresh leaves are moisture-rich and low in energy, so they should supplement rather than replace balanced poultry feed.",
-
-    chickenUse: {
-      edibleParts: [
-        "Fresh leaves",
-        "Tender stems",
-        "Baby greens",
-        "Outer leaves removed during household harvest",
-        "Plain cooked leaves"
-      ],
-
-      primaryValue: [
-        "Leafy-green enrichment",
-        "Carotenoids",
-        "Vitamin-rich plant material",
-        "Moisture",
-        "Repeated harvests",
-        "Cool-season garden production"
-      ],
-
-      feedingForms: [
-        "Whole fresh leaves hung for pecking",
-        "Chopped fresh leaves",
-        "Limited access to established plants",
-        "Plain cooked and cooled greens",
-        "Dried and crumbled leaves in small amounts",
-        "Household garden trimmings from untreated plants"
-      ],
-
-      bestFor: [
-        "Adult chickens as a leafy supplement",
-        "Cool-season feed gardens",
-        "Small and medium garden spaces",
-        "Spring and fall production",
-        "Mild-winter growing regions",
-        "Owners wanting repeated leaf harvests"
-      ],
-
-      supplementOnly: true,
-
-      preparationNotes:
-        "Wash soil and visible contaminants from harvested leaves. Tough mature leaves may be chopped, torn, or hung for pecking enrichment. Cooked greens should be plain, cooled, and free from salt, grease, seasonings, onions, or other unsuitable ingredients.",
-
-      safetyNotes:
-        "Use only sound leaves from plants grown without unsafe pesticide residues. Avoid moldy, slimy, fermented, frost-damaged-and-rotting, or heavily contaminated material. Brassica greens contain glucosinolates and should not dominate the diet. They do not provide enough energy, balanced protein, or calcium to replace complete poultry feed."
-    },
-
-    nutrition: {
-      basis:
-        "Approximate fresh raw-leaf values. Kale and collards differ by cultivar, maturity, growing conditions, and preparation. Fresh-weight values contain substantial water and should not be compared directly with dry poultry feed.",
-
-      crudeProteinPercent:
-        "Approximately 3% to 4% on an as-fed fresh basis; the dry-matter percentage is much higher because fresh leaves are mostly water",
-
-      fatPercent:
-        "Generally about 1% or less on an as-fed fresh basis",
-
-      fiberPercent:
-        "Generally a few percent on an as-fed basis, with higher fiber in older leaves and stems",
-
-      calciumPercent:
-        "Fresh leaves contain measurable calcium, but the amount is not sufficient to meet laying-hen requirements when used as a primary feed",
-
-      phosphorusPercent:
-        "Relatively low compared with concentrated grain or seed ingredients",
-
-      notableNutrients: [
-        "Beta-carotene and vitamin A precursors",
-        "Lutein and zeaxanthin",
-        "Vitamin K",
-        "Vitamin C",
-        "Folate",
-        "Manganese",
-        "Calcium",
-        "Potassium",
-        "Magnesium",
-        "Antioxidant plant compounds"
-      ],
-
-      limitations: [
-        "Fresh leaves contain substantial water and little concentrated dietary energy",
-        "Protein percentage on a fresh basis is low",
-        "Brassica greens contain glucosinolates and related compounds",
-        "Very large dietary amounts may dilute energy, amino acids, calcium, vitamins, and minerals supplied by complete feed",
-        "Calcium in leafy greens does not remove the need for correctly formulated layer feed or an appropriate calcium source",
-        "Older leaves and stems may be fibrous and less palatable",
-        "Kale and collards should not be assumed to have identical nutrient composition",
-        "Fresh, cooked, frozen, and dried leaves have different nutrient concentrations"
-      ]
-    },
-
-    growing: {
-      sunlight:
-        "Full sun is preferred; partial shade may be useful in warm climates or during shoulder seasons",
-
-      soilTemperatureMinimumF:
-        "Approximately 40°F to 45°F for germination, though emergence is usually faster in warmer soil",
-
-      idealSoilTemperatureF:
-        "Approximately 55°F to 75°F for establishment and cool-season growth",
-
-      frostTolerance:
-        "Moderate to High, depending on variety, plant maturity, wind exposure, and duration of freezing temperatures",
-
-      heatTolerance:
-        "Kale is generally low to moderate; collards are often somewhat more heat tolerant",
-
-      droughtTolerance:
-        "Low to Moderate; consistent moisture supports tender leaf growth",
-
-      soilPHMinimum: 6.0,
-      soilPHMaximum: 7.5,
-
-      waterNeeds:
-        "Moderate. Maintain reasonably consistent soil moisture, commonly around 1 to 1.5 inches of water per week from rain and irrigation, while avoiding waterlogged soil.",
-
-      directSow: true,
-
-      transplantRecommended:
-        "Optional and often useful for early spring, fall, or short-season plantings",
-
-      daysToFirstHarvestMinimum: 20,
-      daysToFirstHarvestMaximum: 45,
-
-      daysToMaturityMinimum: 50,
-      daysToMaturityMaximum: 85,
-
-      plantSpacingInches:
-        "Approximately 8 to 12 inches for smaller kale plants or frequent baby-leaf harvest; approximately 12 to 24 inches for mature kale and collards",
-
-      rowSpacingInches:
-        "Approximately 18 to 36 inches, depending on cultivar, harvest method, and mature plant size",
-
-      plantingDepthInches:
-        "Approximately 1/4 to 1/2 inch",
-
-      successionPlanting:
-        "Yes, particularly for baby leaves or staggered spring and fall harvests",
-
-      regrowthAfterHarvest:
-        "Yes, when lower or outer leaves are harvested while the central growing point remains intact"
-    },
-
-    regionalPlanting: {
-      coldNorth: {
-        plantingWindow:
-          "Start indoors approximately 4 to 8 weeks before the final spring frost or direct sow as soon as workable soil and weather permit. Sow again in midsummer for fall harvest.",
-        harvestWindow:
-          "Late spring into early summer and again from fall until severe winter conditions stop growth."
-      },
-
-      midwestNortheast: {
-        plantingWindow:
-          "Plant in early spring for a late-spring crop and again from midsummer into late summer for fall harvest.",
-        harvestWindow:
-          "Spring through early summer and fall into early winter, depending on protection and variety."
-      },
-
-      upperSouth: {
-        plantingWindow:
-          "Plant in late winter or early spring and again from late summer through early fall.",
-        harvestWindow:
-          "Spring and fall through winter; protected plants may continue producing during mild winters."
-      },
-
-      deepSouth: {
-        plantingWindow:
-          "Plant primarily from late summer through fall and again in late winter where appropriate. Avoid relying on peak summer production.",
-        harvestWindow:
-          "Fall through spring, with the strongest quality often occurring during cooler weather."
-      },
-
-      southwest: {
-        plantingWindow:
-          "Plant during cool seasons, often in late summer or fall for winter harvest and again before spring heat. Use irrigation and afternoon shade where necessary.",
-        harvestWindow:
-          "Fall through spring, depending on elevation and winter severity."
-      },
-
-      pacificNorthwest: {
-        plantingWindow:
-          "Plant in spring and again during summer for fall and winter harvest. Select hardy varieties for overwintering.",
-        harvestWindow:
-          "Late spring through winter in many locations, particularly with row covers or other protection."
-      },
-
-      coastalWest: {
-        plantingWindow:
-          "Mild coastal areas may support extended or nearly year-round planting, with strongest growth during cooler months.",
-        harvestWindow:
-          "Much of the year, depending on local heat, fog, rainfall, and variety."
-      }
-    },
-
-    spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
-
-      expectedYieldPerPlantMinimumLbs: null,
-      expectedYieldPerPlantMaximumLbs: null,
-
-      expectedYieldPer100SquareFeetMinimumLbs: null,
-      expectedYieldPer100SquareFeetMaximumLbs: null,
-
-      edibleYieldPercent: null,
-
-      storageLife:
-        "Fresh leaves generally store for several days to roughly one week under refrigeration, while blanched frozen greens may store for several months",
-
-      storageMethod:
-        "For fresh use, cool leaves promptly and refrigerate them in a breathable or loosely sealed container that limits drying without trapping excessive moisture. For longer storage, blanch and freeze plain leaves or dry them thoroughly before sealed storage.",
-
-      yieldNotes:
-        "Repeated-harvest yield varies substantially with cultivar, spacing, soil fertility, season length, pest pressure, leaf size, harvest frequency, and whether the crop is managed for baby leaves or mature foliage. Fresh-weight yield also overstates feed value because the leaves contain substantial water."
-    },
-
-    economics: {
-      seedCostEstimate:
-        "Generally low. One seed packet can produce many plants, and seed may also be purchased in bulk for baby-leaf production.",
-
-      equipmentCostEstimate:
-        "Low to moderate. Possible costs include seed-starting supplies, irrigation, mulch, compost, row covers, insect netting, containers, and cold-protection materials.",
-
-      irrigationCostLevel: "Low to Moderate",
-
-      laborLevel:
-        "Low to Moderate, although regular harvesting, washing, pest inspection, and repeated planting increase labor",
-
-      potentialFeedSavings: null,
-
-      economicNotes:
-        "Kale and collards may provide strong garden value because outer leaves can be harvested repeatedly and household-quality produce can be shared between people and chickens. Their direct feed-savings value is limited by high moisture and low energy density. They are better evaluated as nutrient-rich greens and enrichment than as replacements for purchased feed."
-    },
-
-    scores: {
-      easeOfGrowing: null,
-      yieldPerSquareFoot: null,
-      nutritionalUsefulness: null,
-      proteinContribution: null,
-      energyContribution: null,
-      storageValue: null,
-      smallSpaceSuitability: null,
-      heatTolerance: null,
-      coldTolerance: null,
-      laborEfficiency: null,
-      economicPotential: null,
-      safetySimplicity: null
-    },
-
-    rankings: {
-      practicalScore: null,
-      nutritionalScore: null,
-      bcpFeedScore: null
-    },
-
-    evidence: {
-      evidenceStrength:
-        "Strong for general cultivation, nutrient composition, cool-season production, repeated harvesting, and human-food use; moderate for use as poultry enrichment and supplemental greens; limited for poultry-specific feeding amounts, feed replacement, and backyard yield per square foot",
-
-      sources: [
-        {
-          title:
-            "FoodData Central",
-          organization:
-            "United States Department of Agriculture, Agricultural Research Service",
-          url:
-            "https://fdc.nal.usda.gov/",
-          use:
-            "Fresh kale and collard moisture, protein, fat, fiber, calcium, vitamins, minerals, and carotenoid context"
-        },
-
-        {
-          title:
-            "Growing Kale in Home Gardens",
-          organization:
-            "University Cooperative Extension horticulture guidance",
-          url:
-            "https://extension.umn.edu/vegetables/growing-kale",
-          use:
-            "Cool-season production, starting dates, transplanting, spacing, harvest, watering, and pest management"
-        },
-
-        {
-          title:
-            "Home Garden Collards",
-          organization:
-            "University of Georgia Cooperative Extension",
-          url:
-            "https://extension.uga.edu/publications/",
-          use:
-            "Southern planting seasons, variety selection, spacing, fertility, watering, harvest, pests, and diseases"
-        },
-
-        {
-          title:
-            "Kale and Collards in the Garden",
-          organization:
-            "Utah State University Extension",
-          url:
-            "https://extension.usu.edu/yardandgarden/",
-          use:
-            "Planting, soil, irrigation, spacing, harvest, and cool-weather production"
-        },
-
-        {
-          title:
-            "Glucosinolates in Brassica Vegetables",
-          organization:
-            "USDA Agricultural Research Service and peer-reviewed plant-science literature",
-          url:
-            "https://www.ars.usda.gov/",
-          use:
-            "Glucosinolate content, variation among brassica crops, and reasons to avoid treating unlimited leafy-brassica intake as nutritionally neutral"
-        }
-      ],
-
-      lastReviewed: "2026-07-13",
-
-      researchNotes: [
-        "Separate kale and collards into individual records if meaningful differences emerge in yield, spacing, climate performance, or poultry value.",
-        "Identify cultivars that perform especially well under repeated leaf harvesting.",
-        "Research whether dinosaur, curly, Russian, forage, and tree kale differ meaningfully in dry-matter yield.",
-        "Find poultry-specific studies on kale, collards, or mixed brassica forage.",
-        "Do not interpret human vitamin values as direct poultry requirements or guaranteed absorption.",
-        "Determine dry-matter yield per plant and per square foot before estimating feed contribution.",
-        "Research glucosinolate concentrations by cultivar, season, and plant maturity.",
-        "Assess pest-control costs for cabbage worms, loopers, aphids, flea beetles, slugs, black rot, and clubroot.",
-        "Compare direct flock grazing with cut-and-carry harvesting.",
-        "Research container production and baby-leaf density for small-space users.",
-        "Calculate scores only after several crops have comparable evidence and complete data."
-      ]
-    }
-  },
 
   "CROP-WHITE-CLOVER": {
     id: "CROP-WHITE-CLOVER",
@@ -2268,7 +1930,8 @@ const BCP_FEED_CROPS = {
         "Use fresh cut forage promptly, or dry it rapidly and completely with good airflow. Store dried material in a cool, dry, dark, pest-resistant location and discard any material that becomes damp, moldy, dusty, or musty.",
 
       yieldNotes:
-        "Field-scale forage yield cannot yet be converted responsibly into backyard chicken-feed yield. Actual usable production depends on cultivar, moisture, fertility, grass competition, mowing height, grazing pressure, season, and how much of the stand survives chicken scratching and traffic."
+        "Plants-per-area values remain null because white clover is normally broadcast or drilled according to seed weight rather than planted as individually spaced garden plants. After establishment, creeping stolons root at their nodes and form a spreading mat, making the number of distinct mature plants difficult to define. Final stand density also depends on seeding rate, germination, soil contact, moisture, competition, grazing pressure, and the proportion of clover in a mixed pasture. A future feed-garden calculator should use a seeding-rate-per-area field and estimated forage biomass rather than individual plant counts."
+
     },
 
     economics: {
@@ -2386,7 +2049,9 @@ const BCP_FEED_CROPS = {
         "Quantify the percentage of total feed intake obtained from white-clover pasture by laying hens.",
         "Evaluate temporary grazing frames or protected forage beds that prevent scratching damage.",
         "Research whether frequent mowing improves tender regrowth and flock use.",
-        "Calculate scores only after multiple perennial and annual forage crops have comparable data."
+        "Calculate scores only after multiple perennial and annual forage crops have comparable data.",
+        "Plant-density fields remain null because white clover is established by seeding rate and spreads through rooted stolons, making individual mature plants per square foot an unreliable measurement."
+
       ]
     }
   },
@@ -2636,7 +2301,8 @@ const BCP_FEED_CROPS = {
         "Dry harvested material rapidly with good airflow while preserving as many leaves as possible. Store only fully dried forage in a cool, dark, dry, pest-resistant location. Discard material that smells musty, heats in storage, becomes damp, or develops visible mold.",
 
       yieldNotes:
-        "Field-scale hay yield should not be converted directly into backyard chicken-feed yield. A small plot may experience greater harvest loss, leaf shatter, weed competition, chicken damage, and inefficient drying. Usable leaf yield per 100 square feet remains null until suitable small-plot data are available."
+        "Plants-per-area values remain null because alfalfa is established by seeding rate rather than permanent individual plant spacing. Stand density changes naturally over the life of the planting as seedlings compete, weaker plants die, and surviving crowns enlarge. Productive mature stands may contain far fewer plants than newly established seedings while maintaining excellent forage production. Yield is influenced more by crown health, stem density, harvest frequency, fertility, irrigation, and stand age than by counting individual plants. A future feed-garden calculator should estimate production from seeding rate and forage biomass rather than mature plants per square foot."
+
     },
 
     economics: {
@@ -2767,7 +2433,9 @@ const BCP_FEED_CROPS = {
         "Assess stand survival under chicken scratching, compaction, and concentrated manure.",
         "Compare protected forage frames with rotational pasture systems.",
         "Identify cultivars adapted to the cold North, transition zone, humid South, and arid West.",
-        "Calculate scores only after multiple perennial forage crops have comparable data."
+        "Calculate scores only after multiple perennial forage crops have comparable data.",
+        "Plant-density fields remain null because productive alfalfa stands are managed by seeding rate and stand density rather than permanent individual plant counts, which naturally decline as crowns mature."
+
       ]
     }
   },
@@ -3021,7 +2689,8 @@ const BCP_FEED_CROPS = {
         "Use ripe fruit promptly, refrigerate briefly, freeze, or process without added ingredients. Dry leaves rapidly with airflow and store only when fully dry in a cool, dark, moisture-proof and pest-resistant container.",
 
       yieldNotes:
-        "Mulberry yield cannot be expressed responsibly as one number. Fruit production differs greatly by species, sex, cultivar, tree age, pruning system, pollination, irrigation, and bird pressure. Leaf yield also differs between orchard trees, hedges, coppiced shrubs, and intensively pruned fodder systems."
+        "Plants-per-area values remain null because mulberries range from compact shrubs and dwarf cultivars to trees approximately 30 to 60 feet tall or larger. Their useful footprint also depends on whether they are managed as full-sized fruit trees, pollarded trees, coppiced stools, hedges, or repeatedly cut forage shrubs. A single plants-per-square-foot value would therefore be misleading. Future planning tools should model mulberry by mature canopy footprint, row or hedge spacing, pruning system, and years to establishment rather than by ordinary garden plant density. Fruit and leaf yields should also be treated separately."
+
     },
 
     economics: {
@@ -3166,7 +2835,9 @@ const BCP_FEED_CROPS = {
         "Measure fruit loss to wild birds and determine whether natural fruit drop is sufficient for practical chicken use.",
         "Research staining, fly attraction, fermentation, and sanitation concerns beneath fruiting trees.",
         "Compare the mature land footprint with annual crop yield over a 10-year period.",
-        "Calculate scores only after other perennial tree and shrub crops have comparable evidence."
+        "Calculate scores only after other perennial tree and shrub crops have comparable evidence.",
+        "Plant-density fields remain null because mulberry size and spacing vary substantially among full-sized trees, dwarf cultivars, hedges, pollards, and coppiced forage systems."
+
       ]
     }
   },
@@ -3374,9 +3045,9 @@ const BCP_FEED_CROPS = {
     },
 
     spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
+      plantsPer10SquareFeet: 4,
+      plantsPer50SquareFeet: 21,
+      plantsPer100SquareFeet: 43,
 
       expectedYieldPerPlantMinimumLbs: null,
       expectedYieldPerPlantMaximumLbs: null,
@@ -3393,7 +3064,8 @@ const BCP_FEED_CROPS = {
         "Dry ears or shelled kernels thoroughly with strong airflow. Store only clean, cool grain in a dry, food-safe, rodent-resistant container. Avoid sealing grain while it is still warm or damp. Inspect periodically for condensation, heating, insects, musty odor, caking, discoloration, or visible mold. Crack or grind only the amount that will be used promptly.",
 
       yieldNotes:
-        "Commercial corn yield is often expressed in bushels per acre, but those figures should not be converted directly into backyard yield. Small-plot production is strongly affected by block size, pollination, plant population, hybrid choice, fertility, water, weeds, wildlife, earworms, disease, lodging, harvest loss, shelling efficiency, and final grain moisture. Yield per plant and per 100 square feet remain null until credible small-plot grain data are identified."
+        "Plant-density estimates are calculated from midpoint garden spacing of approximately 10 inches between plants and 33 inches between rows, based on Extension guidance recommending approximately 8 to 12 inches between corn plants and 30 to 36 inches between rows. This produces practical estimates of approximately 4 plants per 10 square feet, 21 plants per 50 square feet, and 43 plants per 100 square feet. Corn should be planted in a compact block of at least four rows rather than one long row to improve wind pollination, so very small areas may not produce fully filled ears even when the calculated number of plants fits. Commercial corn yield figures should not be converted directly into backyard yield because small-plot production is strongly affected by pollination, block dimensions, hybrid choice, fertility, water, weeds, wildlife, earworms, disease, lodging, harvest loss, shelling efficiency, and final grain moisture."
+
     },
 
     economics: {
@@ -3526,7 +3198,9 @@ const BCP_FEED_CROPS = {
         "Determine whether whole kernels should be limited by bird age or size and when cracking improves practical consumption.",
         "Do not recommend a fixed dietary inclusion percentage until the complete ration, flock age, production status, and nutrient balance are known.",
         "Compare field corn with sorghum, millet, oats, wheat, and purchased scratch grain on energy, protein, labor, water, storage, and cost.",
-        "Calculate scores only after multiple grain crops have comparable evidence and complete data."
+        "Calculate scores only after multiple grain crops have comparable evidence and complete data.",
+        "Plant-density estimates use midpoint spacing of approximately 10 inches between plants and 33 inches between rows; successful grain production also requires a compact block arrangement for dependable wind pollination."
+
       ]
     }
   },
@@ -3737,9 +3411,9 @@ const BCP_FEED_CROPS = {
     },
 
     spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
+      plantsPer10SquareFeet: 14,
+      plantsPer50SquareFeet: 72,
+      plantsPer100SquareFeet: 144,
 
       expectedYieldPerPlantMinimumLbs: null,
       expectedYieldPerPlantMaximumLbs: null,
@@ -3756,7 +3430,8 @@ const BCP_FEED_CROPS = {
         "Dry harvested seed heads thoroughly with strong airflow before threshing or storage. Clean shelled grain and store it in a cool, dry, dark location inside a sealed food-safe and rodent-resistant container. Avoid sealing grain while it is warm or damp. Inspect periodically for condensation, heating, insects, webbing, musty odor, discoloration, caking, or visible mold.",
 
       yieldNotes:
-        "Commercial grain-sorghum yield is commonly reported in bushels per acre, but those figures should not be converted directly into backyard yield. Small-plot production depends on variety, plant population, row spacing, soil fertility, rainfall, irrigation, temperature, weeds, birds, lodging, insects, disease, harvest timing, threshing efficiency, and final grain moisture. Yield per plant and per 100 square feet remain null until credible small-plot evidence is identified."
+        "Plant-density estimates are calculated from midpoint spacing of approximately 4 inches between plants and 25 inches between rows, based on the practical spacing range used in this record. This produces estimated populations of approximately 14 plants per 10 square feet, 72 plants per 50 square feet, and 144 plants per 100 square feet. These values represent a manageable row-grown backyard planting rather than a maximum commercial population. Appropriate density varies with variety, rainfall, irrigation, soil fertility, row spacing, temperature, tillering, and expected drought stress. Commercial grain-sorghum yields should not be converted directly into backyard yield because small-plot production is also affected by weeds, birds, lodging, insects, disease, harvest timing, threshing efficiency, and final grain moisture."
+
     },
 
     economics: {
@@ -3908,7 +3583,9 @@ const BCP_FEED_CROPS = {
         "Do not apply commercial broiler or layer inclusion percentages directly to backyard supplementation without considering the complete ration.",
         "Compare sorghum directly with field corn and proso millet for energy value, drought tolerance, growing season, labor, storage, bird pressure, and cost.",
         "Research whether home-scale sprouting changes practical feeding value or introduces unacceptable mold and sanitation risks.",
-        "Calculate scores only after multiple grain crops have comparable evidence and complete data."
+        "Calculate scores only after multiple grain crops have comparable evidence and complete data.",
+        "Plant-density estimates use midpoint spacing of approximately 4 inches between plants and 25 inches between rows; lower populations may be preferable under dry conditions, while irrigated or highly productive plots may support denser stands."
+        
       ]
     }
    }
