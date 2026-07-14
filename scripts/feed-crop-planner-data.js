@@ -86,113 +86,194 @@
       : null;
   }
 
-  function registerCropCollection(cropCollection) {
-    rawCropRecords = [];
-    cropRecordsById = new Map();
-    registrationReport =
-      createEmptyRegistrationReport();
+ function registerCropCollection(cropCollection) {
+  rawCropRecords = [];
+  cropRecordsById = new Map();
+  registrationReport =
+    createEmptyRegistrationReport();
 
-    if (!Array.isArray(cropCollection)) {
-      registrationReport.errors.push(
-        "The crop collection must be an array."
-      );
+  let normalizedCropRecords = [];
 
-      return getRegistrationReport();
-    }
+  /*
+    The crop database may be supplied as either:
 
-    registrationReport.totalRecordsReceived =
-      cropCollection.length;
+    1. An array of crop records
 
-    const duplicateIds = new Set();
+       [
+         { id: "CROP-SUNFLOWER" }
+       ]
 
-    cropCollection.forEach(
-      (cropRecord, index) => {
+    2. An object keyed by crop ID
 
-        const cropId =
-          extractCropId(cropRecord);
+       {
+         "CROP-SUNFLOWER": {
+           id: "CROP-SUNFLOWER"
+         }
+       }
 
-        if (!cropId) {
-          registrationReport
-            .missingIdIndexes
-            .push(index);
+    The current Backyard Chicken Planner database uses
+    the second form.
+  */
 
-          registrationReport.warnings.push(
-            `Crop record at index ${index} does not have a valid ID.`
-          );
-
-          return;
-        }
-
-        registrationReport.validIdCount += 1;
-
-        if (cropRecordsById.has(cropId)) {
-          duplicateIds.add(cropId);
-
-          registrationReport.warnings.push(
-            `Duplicate crop ID found: ${cropId}`
-          );
-
-          return;
-        }
-
-        cropRecordsById.set(
-          cropId,
-          cropRecord
-        );
-      }
+  if (Array.isArray(cropCollection)) {
+    normalizedCropRecords =
+      [...cropCollection];
+  } else if (
+    cropCollection &&
+    typeof cropCollection === "object"
+  ) {
+    normalizedCropRecords =
+      Object.entries(cropCollection)
+        .map(([objectKey, cropRecord]) => {
+          return {
+            objectKey,
+            cropRecord
+          };
+        });
+  } else {
+    registrationReport.errors.push(
+      "The crop collection must be an array or a keyed object."
     );
-
-    rawCropRecords = [...cropCollection];
-
-    registrationReport.duplicateIds =
-      [...duplicateIds];
-
-    registrationReport.uniqueIdCount =
-      cropRecordsById.size;
-
-    const expectedIds =
-      getExpectedCropIds();
-
-    const expectedIdSet =
-      new Set(expectedIds);
-
-    registrationReport.expectedIdsFound =
-      expectedIds.filter(
-        cropId => cropRecordsById.has(cropId)
-      );
-
-    registrationReport.expectedIdsMissing =
-      expectedIds.filter(
-        cropId => !cropRecordsById.has(cropId)
-      );
-
-    registrationReport.unexpectedIds =
-      [...cropRecordsById.keys()]
-        .filter(
-          cropId => !expectedIdSet.has(cropId)
-        );
-
-    if (
-      registrationReport.expectedIdsMissing.length > 0
-    ) {
-      registrationReport.warnings.push(
-        `${registrationReport.expectedIdsMissing.length} expected crop ID(s) were not found.`
-      );
-    }
-
-    if (
-      registrationReport.unexpectedIds.length > 0
-    ) {
-      registrationReport.warnings.push(
-        `${registrationReport.unexpectedIds.length} unexpected crop ID(s) were found.`
-      );
-    }
-
-    registrationReport.registered =
-      registrationReport.errors.length === 0;
 
     return getRegistrationReport();
   }
+
+  registrationReport.totalRecordsReceived =
+    normalizedCropRecords.length;
+
+  const duplicateIds = new Set();
+
+  normalizedCropRecords.forEach(
+    (entry, index) => {
+
+      const isKeyedObjectEntry =
+        Boolean(
+          entry &&
+          Object.prototype.hasOwnProperty.call(
+            entry,
+            "cropRecord"
+          )
+        );
+
+      const cropRecord =
+        isKeyedObjectEntry
+          ? entry.cropRecord
+          : entry;
+
+      const objectKey =
+        isKeyedObjectEntry
+          ? entry.objectKey
+          : null;
+
+      const cropId =
+        extractCropId(cropRecord);
+
+      if (!cropId) {
+        registrationReport
+          .missingIdIndexes
+          .push(index);
+
+        registrationReport.warnings.push(
+          `Crop record at index ${index} does not have a valid ID.`
+        );
+
+        return;
+      }
+
+      registrationReport.validIdCount += 1;
+
+      /*
+        When using a keyed object, confirm that the object
+        key agrees with the ID inside the crop record.
+      */
+      if (
+        objectKey &&
+        objectKey !== cropId
+      ) {
+        registrationReport.warnings.push(
+          `Crop object key "${objectKey}" does not match record ID "${cropId}".`
+        );
+      }
+
+      if (cropRecordsById.has(cropId)) {
+        duplicateIds.add(cropId);
+
+        registrationReport.warnings.push(
+          `Duplicate crop ID found: ${cropId}`
+        );
+
+        return;
+      }
+
+      cropRecordsById.set(
+        cropId,
+        cropRecord
+      );
+    }
+  );
+
+  rawCropRecords =
+    normalizedCropRecords.map(entry => {
+      return (
+        entry &&
+        Object.prototype.hasOwnProperty.call(
+          entry,
+          "cropRecord"
+        )
+      )
+        ? entry.cropRecord
+        : entry;
+    });
+
+  registrationReport.duplicateIds =
+    [...duplicateIds];
+
+  registrationReport.uniqueIdCount =
+    cropRecordsById.size;
+
+  const expectedIds =
+    getExpectedCropIds();
+
+  const expectedIdSet =
+    new Set(expectedIds);
+
+  registrationReport.expectedIdsFound =
+    expectedIds.filter(
+      cropId => cropRecordsById.has(cropId)
+    );
+
+  registrationReport.expectedIdsMissing =
+    expectedIds.filter(
+      cropId => !cropRecordsById.has(cropId)
+    );
+
+  registrationReport.unexpectedIds =
+    [...cropRecordsById.keys()]
+      .filter(
+        cropId => !expectedIdSet.has(cropId)
+      );
+
+  if (
+    registrationReport.expectedIdsMissing.length > 0
+  ) {
+    registrationReport.warnings.push(
+      `${registrationReport.expectedIdsMissing.length} expected crop ID(s) were not found.`
+    );
+  }
+
+  if (
+    registrationReport.unexpectedIds.length > 0
+  ) {
+    registrationReport.warnings.push(
+      `${registrationReport.unexpectedIds.length} unexpected crop ID(s) were found.`
+    );
+  }
+
+  registrationReport.registered =
+    registrationReport.errors.length === 0;
+
+  return getRegistrationReport();
+}
 
   function clearCropCollection() {
     rawCropRecords = [];
