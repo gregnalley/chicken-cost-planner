@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Best Crops to Grow for Chickens | Chicken Feed Crop Guide</title>
+
+<meta
+  name="description"
+  content="Explore beginner-friendly crops you can grow to supplement chicken feed, including sunflowers, cowpeas, corn, sorghum, millet, pumpkins, greens, clover, alfalfa, and mulberry."
+>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link
+  rel="canonical"
+  href="https://gregnalley.github.io/chicken-cost-planner/chicken-feed-crops.html"
+>
+
+<link rel="stylesheet" href="assets/css/bcp-style.css">
+
+<style>
+
+.feed-crop-controls {
+  margin-bottom: 28px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #d7e3d8;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(31, 72, 40, 0.08);
+}
+
+.feed-control-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(180px, 0.8fr);
+  gap: 16px;
+}
+
+.feed-control-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #194b29;
+  font-weight: 750;
+}
+
+.feed-control-group input,
+.feed-control-group select {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 13px;
+  font: inherit;
+  background: #fbfdfb;
+  border: 1px solid #b8cbb9;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.feed-control-summary {
+  margin: 16px 0 0;
+  color: #55645a;
+  font-size: 0.95rem;
+}
+
+.feed-crop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feed-crop-card {
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  background: linear-gradient(145deg, #ffffff, #f7fbf7);
+  border: 1px solid #d5e2d6;
+  border-top: 5px solid #2e7b45;
+  border-radius: 16px;
+  box-shadow: 0 9px 24px rgba(30, 76, 40, 0.08);
+}
+
+.feed-crop-card h3 {
+  margin: 0 0 7px;
+  color: #174d29;
+  font-size: 1.3rem;
+}
+
+.crop-scientific-name {
+  margin: 0 0 14px;
+  color: #68726b;
+  font-size: 0.93rem;
+  font-style: italic;
+}
+
+.crop-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+
+.crop-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #245335;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #e8f3ea;
+  border-radius: 999px;
+}
+
+.crop-summary {
+  flex-grow: 1;
+  margin: 0 0 17px;
+  line-height: 1.65;
+}
+
+.crop-best-value {
+  margin: 0 0 17px;
+  padding: 13px;
+  background: #f6faf6;
+  border-left: 4px solid #75a982;
+  border-radius: 8px;
+}
+
+.crop-best-value strong {
+  color: #194f2a;
+}
+
+.crop-details {
+  display: none;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dbe5dc;
+}
+
+.crop-details.is-open {
+  display: block;
+}
+
+.crop-details h4 {
+  margin: 16px 0 7px;
+  color: #1c542e;
+}
+
+.crop-details h4:first-child {
+  margin-top: 0;
+}
+
+.crop-details ul {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.crop-details li {
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+
+.crop-warning {
+  margin-top: 15px;
+  padding: 13px;
+  color: #5d4217;
+  background: #fff8e8;
+  border: 1px solid #ead7aa;
+  border-radius: 9px;
+}
+
+.crop-toggle-button {
+  width: 100%;
+  min-height: 44px;
+  margin-top: auto;
+  padding: 10px 14px;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 750;
+  background: #2d7442;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.crop-toggle-button:hover,
+.crop-toggle-button:focus {
+  background: #205b32;
+}
+
+.feed-crop-empty {
+  grid-column: 1 / -1;
+  padding: 28px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #d5e2d6;
+  border-radius: 14px;
+}
+
+.feed-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feed-category-card {
+  padding: 18px;
+  background: #f8fbf8;
+  border: 1px solid #d9e5da;
+  border-radius: 12px;
+}
+
+.feed-category-card h3 {
+  margin: 0 0 8px;
+  color: #194f2a;
+}
+
+.feed-category-card p {
+  margin: 0;
+}
+
+.feed-safety-notice {
+  padding: 20px;
+  color: #5d4217;
+  background: #fff8e8;
+  border: 1px solid #ead7aa;
+  border-left: 6px solid #c99735;
+  border-radius: 12px;
+}
+
+.feed-coming-soon {
+  padding: 20px;
+  background: #f5f9f5;
+  border: 1px dashed #9fbaa4;
+  border-radius: 12px;
+}
+
+@media (max-width: 760px) {
+
+  .feed-control-grid,
+  .feed-crop-grid,
+  .feed-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+<!-- Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-88486JDN1Z">
+</script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag("js", new Date());
+gtag("config", "G-88486JDN1Z");
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "headline": "Best Crops to Grow for Chickens",
+  "description": "A research-based guide to beginner-friendly crops that can be grown as supplemental food, forage, enrichment, and stored feed for backyard chickens.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyard Chicken Planner"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gregnalley.github.io/chicken-cost-planner/chicken-feed-crops.html"
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Free calculators, planning tools, and practical guides for backyard chicken keepers.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+
+<div class="content">
+
+<div class="banner">
+
+<h1>🌱 Chicken Feed Crop Guide</h1>
+
+<p>
+Explore practical crops you can grow to provide your chickens with seasonal forage, enrichment, energy, protein-oriented ingredients, leafy greens, and food that can be stored for later use.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🐣 Start Here: Can You Grow Chicken Feed at Home?</h2>
+
+<p>
+You do not need to replace commercial chicken feed to make a feed garden worthwhile. Even a small garden can provide useful seasonal supplements, enrichment, and food that allows chickens to express natural pecking and foraging behaviors.
+</p>
+
+<p>
+Some crops produce energy-rich seeds or grain. Others provide fresh leaves, forage, fruit, or vegetables. A few can be harvested and stored for use during fall and winter.
+</p>
+
+<p>
+The best crop for your flock depends on your available space, climate, water supply, growing experience, storage options, and whether your main goal is energy, protein, fresh forage, or enrichment.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚠️ Supplemental Crops Do Not Replace Balanced Feed</h2>
+
+<div class="feed-safety-notice">
+
+<p style="margin-top:0;">
+<strong>Homegrown crops should normally be used as supplements—not as a complete poultry ration.</strong>
+</p>
+
+<p>
+Laying hens require a carefully balanced combination of energy, protein, amino acids, calcium, phosphorus, vitamins, minerals, and other nutrients. Feeding too much grain, fruit, vegetables, or forage can dilute the nutrition supplied by complete chicken feed.
+</p>
+
+<p style="margin-bottom:0;">
+Never feed moldy, spoiled, fermented, chemically contaminated, or improperly stored crops. Some seeds and plants also require special preparation before they are suitable for poultry.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🌾 Main Types of Chicken Feed Crops</h2>
+
+<div class="feed-category-grid">
+
+<div class="feed-category-card">
+<h3>Energy Crops</h3>
+<p>
+Corn, sorghum, millet, and sunflower seeds can provide concentrated carbohydrate or fat energy.
+</p>
+</div>
+
+<div class="feed-category-card">
+<h3>Protein-Oriented Crops</h3>
+<p>
+Cowpeas, alfalfa, clover, and some oilseeds can contribute protein, but they do not provide a complete amino-acid balance by themselves.
+</p>
+</div>
+
+<div class="feed-category-card">
+<h3>Leafy Forage</h3>
+<p>
+Kale, collards, clover, alfalfa, and mulberry leaves can provide fresh greens and foraging enrichment.
+</p>
+</div>
+
+<div class="feed-category-card">
+<h3>Storage Crops</h3>
+<p>
+Dried grains, seeds, pumpkins, and winter squash may remain usable after the main growing season.
+</p>
+</div>
+
+<div class="feed-category-card">
+<h3>Repeated-Harvest Crops</h3>
+<p>
+Leafy greens, forage plants, and some perennial crops can be harvested more than once.
+</p>
+</div>
+
+<div class="feed-category-card">
+<h3>Perennial Crops</h3>
+<p>
+Mulberry, clover, and alfalfa can provide recurring value without being replanted every year.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>⭐ Explore the Feed Crop Database</h2>
+
+<p>
+Search the current collection or filter crops by growing season. Select “View Crop Summary” to see key uses, preparation notes, and safety information.
+</p>
+
+<div class="feed-crop-controls">
+
+<div class="feed-control-grid">
+
+<div class="feed-control-group">
+
+<label for="cropSearch">Search crops</label>
+
+<input
+  type="search"
+  id="cropSearch"
+  placeholder="Search corn, forage, protein, storage..."
+>
+
+</div>
+
+<div class="feed-control-group">
+
+<label for="seasonFilter">Growing season</label>
+
+<select id="seasonFilter">
+
+<option value="">All seasons</option>
+<option value="Warm Season">Warm season</option>
+<option value="Cool Season">Cool season</option>
+<option value="Perennial">Perennial</option>
+
+</select>
+
+</div>
+
+</div>
+
+<p id="cropResultSummary" class="feed-control-summary">
+Loading crop records...
+</p>
+
+</div>
+
+<div id="feedCropGrid" class="feed-crop-grid">
+
+<div class="feed-crop-empty">
+Loading the feed crop database...
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🌻 Good First Crops for Beginners</h2>
+
+<p>
+The easiest choice depends on climate and garden space, but these crops are practical starting points for many first-time growers:
+</p>
+
+<table>
+
+<tr>
+<th>Goal</th>
+<th>Crop to Consider</th>
+<th>Why</th>
+</tr>
+
+<tr>
+<td>Easy seed crop</td>
+<td>Sunflowers</td>
+<td>Direct-sown, recognizable, and useful for enrichment and stored seeds.</td>
+</tr>
+
+<tr>
+<td>Hot-weather protein-oriented crop</td>
+<td>Cowpeas</td>
+<td>Heat tolerant, drought tolerant after establishment, and able to produce leaves, pods, and mature seeds.</td>
+</tr>
+
+<tr>
+<td>Cool-season greens</td>
+<td>Kale and Collards</td>
+<td>Can provide repeated leaf harvests during spring, fall, and mild winters.</td>
+</tr>
+
+<tr>
+<td>Fall enrichment and storage</td>
+<td>Pumpkins and Winter Squash</td>
+<td>Produce large fruits that can be split open for pecking and enrichment.</td>
+</tr>
+
+<tr>
+<td>Hot, dry climate grain</td>
+<td>Grain Sorghum</td>
+<td>Generally handles heat and limited moisture better than field corn.</td>
+</tr>
+
+<tr>
+<td>Long-term perennial value</td>
+<td>Mulberry</td>
+<td>Can provide fruit, leaves, shade, and recurring seasonal enrichment after establishment.</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>📐 Think About Space Before Planting</h2>
+
+<p>
+Not every feed crop is suited to every backyard. Pumpkins and winter squash may produce substantial fresh weight but require a large vine area. Corn needs a block of plants for dependable pollination. Clover, alfalfa, and millet are better planned by seeding rate than by counting individual plants.
+</p>
+
+<p>
+A small garden may benefit more from repeated-harvest greens, cowpeas, or a few sunflowers than from trying to produce a large amount of grain.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🧰 Helpful Chicken Planning Tools</h2>
+
+<ul>
+<li><a href="chicken-feed-cost-calculator.html">Chicken Feed Cost Calculator</a></li>
+<li><a href="backyard-chicken-flock-planner.html">Backyard Chicken Flock Planner</a></li>
+<li><a href="chicken-coop-estimator.html">Chicken Coop Cost Estimator</a></li>
+<li><a href="chicken-coop-size-guide.html">Chicken Coop Size Guide</a></li>
+<li><a href="chicken-supplies.html">Chicken Equipment and Supplies Guides</a></li>
+<li><a href="tools.html">View All Chicken Planning Tools</a></li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>🔬 How This Guide Is Being Built</h2>
+
+<p>
+The Backyard Chicken Planner feed crop database is being developed from agricultural Extension publications, university research, government resources, established animal-feed databases, and poultry-nutrition references.
+</p>
+
+<p>
+Values that cannot be verified responsibly are left incomplete rather than guessed. Crop recommendations will continue to improve as additional yield, climate, nutrition, and backyard-production evidence becomes available.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🚧 Feed Crop Tools Coming Next</h2>
+
+<div class="feed-coming-soon">
+
+<p>
+This guide is the foundation for several future Backyard Chicken Planner tools:
+</p>
+
+<ul>
+<li>Individual chicken feed crop growing guides</li>
+<li>Side-by-side crop comparison</li>
+<li>Best crops by climate and growing region</li>
+<li>Best crops for small spaces</li>
+<li>Feed garden planting recommendations</li>
+<li>Seasonal planting and harvest calendars</li>
+<li>Estimated garden space and crop-combination planning</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+<script src="assets/data/feed-crops.js"></script>
+
+<script>
+
+const FEED_CROP_DISPLAY_ORDER = [
+  "CROP-SUNFLOWER",
+  "CROP-COWPEA",
+  "CROP-PROSO-MILLET",
+  "CROP-PUMPKIN-WINTER-SQUASH",
+  "CROP-KALE-COLLARDS",
+  "CROP-WHITE-CLOVER",
+  "CROP-ALFALFA",
+  "CROP-MULBERRY",
+  "CROP-FIELD-CORN",
+  "CROP-GRAIN-SORGHUM"
+];
+
+function escapeHTML(value) {
+
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function getCropIcon(cropId) {
+
+  const cropIcons = {
+    "CROP-SUNFLOWER": "🌻",
+    "CROP-COWPEA": "🫘",
+    "CROP-PROSO-MILLET": "🌾",
+    "CROP-PUMPKIN-WINTER-SQUASH": "🎃",
+    "CROP-KALE-COLLARDS": "🥬",
+    "CROP-WHITE-CLOVER": "☘️",
+    "CROP-ALFALFA": "🌿",
+    "CROP-MULBERRY": "🌳",
+    "CROP-FIELD-CORN": "🌽",
+    "CROP-GRAIN-SORGHUM": "🌾"
+  };
+
+  return cropIcons[cropId] || "🌱";
+}
+
+function getFeedCrops() {
+
+  if (
+    typeof BCP_FEED_CROPS === "undefined" ||
+    !BCP_FEED_CROPS
+  ) {
+    return [];
+  }
+
+  const orderedCrops = FEED_CROP_DISPLAY_ORDER
+    .map(cropId => BCP_FEED_CROPS[cropId])
+    .filter(Boolean);
+
+  const includedIds = new Set(
+    orderedCrops.map(crop => crop.id)
+  );
+
+  const additionalCrops = Object.values(BCP_FEED_CROPS)
+    .filter(crop => !includedIds.has(crop.id))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  return [...orderedCrops, ...additionalCrops];
+}
+
+function matchesSeasonFilter(crop, selectedSeason) {
+
+  if (!selectedSeason) {
+    return true;
+  }
+
+  if (selectedSeason === "Perennial") {
+
+    const cropType = String(crop.cropType || "").toLowerCase();
+    const seasonType = String(crop.seasonType || "").toLowerCase();
+
+    return (
+      cropType.includes("perennial") ||
+      seasonType.includes("perennial")
+    );
+  }
+
+  return crop.seasonType === selectedSeason;
+}
+
+function cropMatchesSearch(crop, searchTerm) {
+
+  if (!searchTerm) {
+    return true;
+  }
+
+  const searchableContent = [
+    crop.name,
+    crop.scientificName,
+    crop.category,
+    crop.cropType,
+    crop.seasonType,
+    crop.summary,
+    ...(crop.chickenUse?.primaryValue || []),
+    ...(crop.chickenUse?.bestFor || [])
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return searchableContent.includes(searchTerm);
+}
+
+function createCropCard(crop) {
+
+  const primaryValues =
+    Array.isArray(crop.chickenUse?.primaryValue)
+      ? crop.chickenUse.primaryValue.slice(0, 4)
+      : [];
+
+  const bestFor =
+    Array.isArray(crop.chickenUse?.bestFor)
+      ? crop.chickenUse.bestFor.slice(0, 4)
+      : [];
+
+  const feedingForms =
+    Array.isArray(crop.chickenUse?.feedingForms)
+      ? crop.chickenUse.feedingForms.slice(0, 4)
+      : [];
+
+  const card = document.createElement("article");
+
+  card.className = "feed-crop-card";
+  card.id = crop.id.toLowerCase();
+
+  card.innerHTML = `
+
+    <h3>
+      ${getCropIcon(crop.id)}
+      ${escapeHTML(crop.name)}
+    </h3>
+
+    <p class="crop-scientific-name">
+      ${escapeHTML(crop.scientificName)}
+    </p>
+
+    <div class="crop-tags">
+
+      <span class="crop-tag">
+        ${escapeHTML(crop.seasonType)}
+      </span>
+
+      <span class="crop-tag">
+        ${escapeHTML(crop.cropType)}
+      </span>
+
+    </div>
+
+    <p class="crop-summary">
+      ${escapeHTML(crop.summary)}
+    </p>
+
+    <div class="crop-best-value">
+
+      <strong>Primary value:</strong>
+
+      ${
+        primaryValues.length > 0
+          ? escapeHTML(primaryValues.join(", "))
+          : "Supplemental crop value"
+      }
+
+    </div>
+
+    <button
+      type="button"
+      class="crop-toggle-button"
+      aria-expanded="false"
+    >
+      View Crop Summary
+    </button>
+
+    <div class="crop-details">
+
+      <h4>Best For</h4>
+
+      ${
+        bestFor.length > 0
+          ? `
+            <ul>
+              ${bestFor
+                .map(item => `<li>${escapeHTML(item)}</li>`)
+                .join("")}
+            </ul>
+          `
+          : "<p>Additional recommendations are being researched.</p>"
+      }
+
+      <h4>Feeding Forms</h4>
+
+      ${
+        feedingForms.length > 0
+          ? `
+            <ul>
+              ${feedingForms
+                .map(item => `<li>${escapeHTML(item)}</li>`)
+                .join("")}
+            </ul>
+          `
+          : "<p>Preparation information is being researched.</p>"
+      }
+
+      <h4>Preparation</h4>
+
+      <p>
+        ${escapeHTML(
+          crop.chickenUse?.preparationNotes ||
+          "Preparation information is being researched."
+        )}
+      </p>
+
+      <div class="crop-warning">
+
+        <strong>Safety:</strong>
+
+        ${escapeHTML(
+          crop.chickenUse?.safetyNotes ||
+          "Use only sound, properly identified crops and continue feeding a balanced poultry ration."
+        )}
+
+      </div>
+
+    </div>
+  `;
+
+  const button = card.querySelector(".crop-toggle-button");
+  const details = card.querySelector(".crop-details");
+
+  button.addEventListener("click", function () {
+
+    const isOpen = details.classList.toggle("is-open");
+
+    button.setAttribute(
+      "aria-expanded",
+      isOpen ? "true" : "false"
+    );
+
+    button.textContent =
+      isOpen
+        ? "Hide Crop Summary"
+        : "View Crop Summary";
+  });
+
+  return card;
+}
+
+function renderFeedCropCards() {
+
+  const grid = document.getElementById("feedCropGrid");
+  const summary = document.getElementById("cropResultSummary");
+
+  const searchTerm = document
+    .getElementById("cropSearch")
+    .value
+    .trim()
+    .toLowerCase();
+
+  const selectedSeason =
+    document.getElementById("seasonFilter").value;
+
+  const crops = getFeedCrops();
+
+  if (crops.length === 0) {
+
+    grid.innerHTML = `
+      <div class="feed-crop-empty">
+        The feed crop database could not be loaded.
+      </div>
+    `;
+
+    summary.textContent = "No crop records are available.";
+
+    return;
+  }
+
+  const filteredCrops = crops.filter(crop => {
+
+    return (
+      cropMatchesSearch(crop, searchTerm) &&
+      matchesSeasonFilter(crop, selectedSeason)
+    );
+  });
+
+  grid.innerHTML = "";
+
+  if (filteredCrops.length === 0) {
+
+    grid.innerHTML = `
+      <div class="feed-crop-empty">
+        No crops matched your search. Try a broader word or choose a different season.
+      </div>
+    `;
+
+    summary.textContent =
+      `Showing 0 of ${crops.length} crop records.`;
+
+    return;
+  }
+
+  filteredCrops.forEach(crop => {
+    grid.appendChild(createCropCard(crop));
+  });
+
+  summary.textContent =
+    `Showing ${filteredCrops.length} of ${crops.length} crop records.`;
+}
+
+document
+  .getElementById("cropSearch")
+  .addEventListener("input", renderFeedCropCards);
+
+document
+  .getElementById("seasonFilter")
+  .addEventListener("change", renderFeedCropCards);
+
+renderFeedCropCards();
+
+</script>
+
+<script src="scripts/site.js"></script>
+
+</body>
+</html>
