@@ -698,7 +698,28 @@ function cropMatchesSearch(crop, searchTerm) {
   return searchableContent.includes(searchTerm);
 }
 
+function getCropGuide(cropId) {
+
+  const cropGuides = {
+
+    "CROP-SUNFLOWER": {
+      url: "growing-sunflowers-for-chickens.html",
+      label: "Read Full Sunflower Growing Guide →"
+    },
+
+    "CROP-COWPEA": {
+      url: "growing-cowpeas-for-chickens.html",
+      label: "Read Full Cowpea Growing Guide →"
+    }
+
+  };
+
+  return cropGuides[cropId] || null;
+}
+
 function createCropCard(crop) {
+
+  const cropGuide = getCropGuide(crop.id);
 
   const primaryValues =
     Array.isArray(crop.chickenUse?.primaryValue)
@@ -759,12 +780,12 @@ function createCropCard(crop) {
 
     </div>
 
-        ${
-      crop.id === "CROP-SUNFLOWER"
+         ${
+      cropGuide
         ? `
           <p style="margin:0 0 15px;">
-            <a href="growing-sunflowers-for-chickens.html">
-              Read Full Sunflower Growing Guide →
+            <a href="${escapeHTML(cropGuide.url)}">
+              ${escapeHTML(cropGuide.label)}
             </a>
           </p>
         `
