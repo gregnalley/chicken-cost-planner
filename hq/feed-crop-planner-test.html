@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Feed Crop Planner Development Test | Backyard Chicken Planner HQ</title>
+
+<meta
+  name="description"
+  content="Private development and validation page for the Backyard Chicken Planner Feed Crop Planner."
+>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link
+  rel="stylesheet"
+  href="../assets/css/bcp-style.css"
+>
+
+<style>
+
+.planner-test-shell {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.planner-test-banner {
+  padding: 28px;
+  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      #194f2a,
+      #3f8053
+    );
+  border-radius: 18px;
+  box-shadow:
+    0 14px 34px
+    rgba(25, 79, 42, 0.18);
+}
+
+.planner-test-banner h1 {
+  margin-top: 0;
+}
+
+.planner-test-banner p:last-child {
+  margin-bottom: 0;
+}
+
+.development-notice {
+  margin-top: 20px;
+  padding: 17px;
+  color: #674814;
+  background: #fff8e8;
+  border: 1px solid #ead5a4;
+  border-left: 6px solid #c48a27;
+  border-radius: 11px;
+}
+
+.foundation-status {
+  margin: 18px 0;
+  padding: 18px;
+  font-weight: 750;
+  border-radius: 11px;
+}
+
+.foundation-status-success {
+  color: #174c28;
+  background: #eff9f1;
+  border: 1px solid #bddfc5;
+  border-left: 6px solid #38844d;
+}
+
+.foundation-status-error {
+  color: #6b2929;
+  background: #fff1f1;
+  border: 1px solid #e5bebe;
+  border-left: 6px solid #a84545;
+}
+
+.test-card-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.test-card {
+  padding: 19px;
+  background: #f8fbf8;
+  border: 1px solid #d7e3d9;
+  border-radius: 12px;
+}
+
+.test-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #194f2a;
+}
+
+.foundation-check-list {
+  margin-bottom: 0;
+  padding-left: 22px;
+}
+
+.foundation-check-list li {
+  margin-bottom: 9px;
+}
+
+.next-session-box {
+  padding: 19px;
+  background: #f6f8fb;
+  border: 1px solid #d8dfe8;
+  border-left: 6px solid #5273a2;
+  border-radius: 11px;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+
+  .test-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-test-banner {
+    padding: 22px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner HQ</h1>
+
+<p>
+Private owner tools, research databases, and development testing.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<main class="planner-test-shell">
+
+<div class="planner-test-banner">
+
+<h1>🌾 Feed Crop Planner Development Test</h1>
+
+<p>
+This page verifies that the isolated Feed Crop Planner development files are loading correctly.
+</p>
+
+</div>
+
+<div class="development-notice">
+
+<strong>Development page only</strong>
+
+<p>
+This page does not yet load, validate, or score the live feed-crop database. It only confirms that the planner configuration, engine foundation, and interface foundation are working.
+</p>
+
+<p style="margin-bottom:0;">
+The page is marked <code>noindex, nofollow</code> and should not be added to the public navigation or sitemap.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Foundation Status</h2>
+
+<div
+  id="planner-foundation-status"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Checking planner files...
+</div>
+
+<ul
+  id="planner-foundation-details"
+  class="foundation-check-list"
+>
+<li>Waiting for JavaScript...</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Planner Versions</h2>
+
+<div class="test-card-grid">
+
+<div class="test-card">
+
+<strong>Planner Version</strong>
+
+<span id="planner-version">
+Checking...
+</span>
+
+</div>
+
+<div class="test-card">
+
+<strong>Crop Schema Version</strong>
+
+<span id="planner-schema-version">
+Checking...
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Work Session 1 Scope</h2>
+
+<ul>
+<li>Protected backup created</li>
+<li>Planner namespace created</li>
+<li>Shared rating constants created</li>
+<li>Allowed enum values created</li>
+<li>Preliminary category weights created</li>
+<li>Recommendation tiers created</li>
+<li>Basic engine utilities created</li>
+<li>HQ development page created</li>
+</ul>
+
+<p>
+No crop scoring, database validation, questionnaire, or public results are active yet.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Next Development Session</h2>
+
+<div class="next-session-box">
+
+<strong>Work Session 2: Crop Schema Validator</strong>
+
+<p>
+The next session will create a validator that examines each crop record and reports errors and warnings without changing the crop data.
+</p>
+
+<p style="margin-bottom:0;">
+The expected initial result will be that all ten crops are missing <code>plannerData</code>. That will be correct until we begin the controlled Sunflower migration.
+</p>
+
+</div>
+
+</div>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../scripts/site.js"></script>
+
+<script src="../scripts/feed-crop-planner-config.js"></script>
+
+<script src="../scripts/feed-crop-planner-engine.js"></script>
+
+<script src="../scripts/feed-crop-planner-ui.js"></script>
+
+<script>
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+
+    if (
+      window.BCPFeedCropPlanner &&
+      window.BCPFeedCropPlanner.ui
+    ) {
+      window.BCPFeedCropPlanner.ui
+        .initializeDevelopmentPage();
+    }
+
+  }
+);
+</script>
+
+</body>
+</html>
