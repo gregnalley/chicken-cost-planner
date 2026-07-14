@@ -218,6 +218,44 @@ Checking...
 
 </div>
 
+<div class="section">
+
+<h2>Crop Database Registration</h2>
+
+<div
+  id="crop-registration-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Checking crop database...
+</div>
+
+<div id="crop-registration-details"></div>
+
+</div>
+
+<div class="section">
+
+<h2>Planner Schema Validation</h2>
+
+<p>
+The validator checks whether each crop is ready to participate in the Feed Crop Planner. At this stage, the expected result is that all ten crops are missing <code>plannerData</code>.
+</p>
+
+<div
+  id="crop-validation-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Waiting for crop validation...
+</div>
+
+<div id="crop-validation-results"></div>
+
+</div>
+
 <div class="test-card">
 
 <strong>Crop Schema Version</strong>
@@ -280,6 +318,8 @@ The expected initial result will be that all ten crops are missing <code>planner
 
 <script src="../scripts/site.js"></script>
 
+<script src="../assets/data/feed-crops.js"></script>
+
 <script src="../scripts/feed-crop-planner-config.js"></script>
 
 <script src="../scripts/feed-crop-planner-data.js"></script>
@@ -293,11 +333,24 @@ document.addEventListener(
   "DOMContentLoaded",
   function () {
 
+    const planner =
+      window.BCPFeedCropPlanner;
+
     if (
-      window.BCPFeedCropPlanner &&
-      window.BCPFeedCropPlanner.ui
+      planner &&
+      planner.data &&
+      typeof BCP_FEED_CROPS !== "undefined"
     ) {
-      window.BCPFeedCropPlanner.ui
+      planner.data.registerCropCollection(
+        BCP_FEED_CROPS
+      );
+    }
+
+    if (
+      planner &&
+      planner.ui
+    ) {
+      planner.ui
         .initializeDevelopmentPage();
     }
 
