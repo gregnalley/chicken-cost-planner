@@ -57,6 +57,13 @@
     "missing"
   ]);
 
+  const PLANNER_DATA_STATUSES = Object.freeze([
+  "skeleton",
+  "research-in-progress",
+  "testing",
+  "ready"
+]);
+
   const GROWTH_CYCLES = Object.freeze([
     "annual",
     "biennial",
@@ -323,6 +330,7 @@
       workloadLevels: WORKLOAD_LEVELS,
       costLevels: COST_LEVELS,
       evidenceStatuses: EVIDENCE_STATUSES,
+      plannerDataStatuses: PLANNER_DATA_STATUSES,
       growthCycles: GROWTH_CYCLES,
       cropCategories: CROP_CATEGORIES,
       primaryFeedCategories: PRIMARY_FEED_CATEGORIES,

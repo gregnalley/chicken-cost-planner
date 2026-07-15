@@ -310,6 +310,27 @@
     );
   }
 
+  const allowedPlannerDataStatuses =
+  namespace.config?.enums?.plannerDataStatuses ||
+  [];
+
+if (
+  typeof plannerData.developmentStatus !== "string" ||
+  !allowedPlannerDataStatuses.includes(
+    plannerData.developmentStatus
+  )
+) {
+  errors.push(
+    "plannerData.developmentStatus is missing or invalid."
+  );
+} else if (
+  plannerData.developmentStatus !== "ready"
+) {
+  errors.push(
+    `Planner development status is "${plannerData.developmentStatus}", not "ready".`
+  );
+}
+
   const requiredSections = [
     "identity",
     "lifecycle",
@@ -335,15 +356,160 @@
     }
   });
 
-  if (!Array.isArray(plannerData.usePaths)) {
+  if (isPlainObject(plannerData.identity)) {
+  const requiredIdentityFields = [
+    "plannerName",
+    "shortLabel",
+    "icon",
+    "cropCategory",
+    "primaryFeedCategory",
+    "guideUrl"
+  ];
+
+  requiredIdentityFields.forEach(fieldName => {
+    const value =
+      plannerData.identity[fieldName];
+
+    if (
+      typeof value !== "string" ||
+      value.trim() === ""
+    ) {
+      errors.push(
+        `plannerData.identity.${fieldName} is missing.`
+      );
+    }
+  });
+}
+
+if (isPlainObject(plannerData.lifecycle)) {
+  const lifecycle =
+    plannerData.lifecycle;
+
+  if (
+    typeof lifecycle.growthCycle !== "string" ||
+    !namespace.config.enums.growthCycles.includes(
+      lifecycle.growthCycle
+    )
+  ) {
     errors.push(
-      "plannerData.usePaths must be an array."
-    );
-  } else if (plannerData.usePaths.length === 0) {
-    warnings.push(
-      "plannerData.usePaths does not contain any use paths."
+      "plannerData.lifecycle.growthCycle is missing or invalid."
     );
   }
+
+  const requiredLifecycleBooleans = [
+    "isAnnual",
+    "isBiennial",
+    "isPerennial",
+    "isTreeOrShrub",
+    "regrowsAfterHarvest",
+    "permanentPlantingRequired",
+    "reversibleAfterOneSeason"
+  ];
+
+  requiredLifecycleBooleans.forEach(
+    fieldName => {
+      if (
+        typeof lifecycle[fieldName] !==
+        "boolean"
+      ) {
+        errors.push(
+          `plannerData.lifecycle.${fieldName} must be true or false.`
+        );
+      }
+    }
+  );
+}
+
+if (!Array.isArray(plannerData.usePaths)) {
+  errors.push(
+    "plannerData.usePaths must be an array."
+  );
+} else if (plannerData.usePaths.length === 0) {
+  errors.push(
+    "plannerData.usePaths must contain at least one use path."
+  );
+} else {
+  const usePathIds = new Set();
+
+  plannerData.usePaths.forEach(
+    (usePath, index) => {
+
+      if (!isPlainObject(usePath)) {
+        errors.push(
+          `Use path at index ${index} must be an object.`
+        );
+
+        return;
+      }
+
+      if (
+        typeof usePath.id !== "string" ||
+        usePath.id.trim() === ""
+      ) {
+        errors.push(
+          `Use path at index ${index} is missing an ID.`
+        );
+      } else if (
+        usePathIds.has(usePath.id)
+      ) {
+        errors.push(
+          `Duplicate use-path ID: ${usePath.id}`
+        );
+      } else {
+        usePathIds.add(usePath.id);
+      }
+
+      if (
+        typeof usePath.label !== "string" ||
+        usePath.label.trim() === ""
+      ) {
+        errors.push(
+          `Use path at index ${index} is missing a label.`
+        );
+      }
+
+      if (
+        !Array.isArray(
+          usePath.harvestProducts
+        )
+      ) {
+        errors.push(
+          `Use path "${usePath.id || index}" must include a harvestProducts array.`
+        );
+      }
+
+      if (
+        !Array.isArray(
+          usePath.suitableFeedingMethods
+        )
+      ) {
+        errors.push(
+          `Use path "${usePath.id || index}" must include a suitableFeedingMethods array.`
+        );
+      }
+
+      if (
+        !Array.isArray(
+          usePath.requiredProcessingTasks
+        )
+      ) {
+        errors.push(
+          `Use path "${usePath.id || index}" must include a requiredProcessingTasks array.`
+        );
+      }
+
+      if (
+        !Array.isArray(
+          usePath.safetyWarnings
+        )
+      ) {
+        errors.push(
+          `Use path "${usePath.id || index}" must include a safetyWarnings array.`
+        );
+      }
+    }
+  );
+}
 
   return {
     cropId,
