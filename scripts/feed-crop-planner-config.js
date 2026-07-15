@@ -1828,9 +1828,8 @@ goalPriorities: [
 
       harvestStorage: {
         desiredHarvestProducts: [
-          "fresh-greens",
-          "fresh-forage",
-          "kale-collard-leaves"
+          "living-forage",
+          "fresh-greens"
         ],
 
         harvestPatternPreference:
@@ -2206,9 +2205,8 @@ goalPriorities: [
 
       harvestStorage: {
         desiredHarvestProducts: [
-          "whole-millet-panicles",
-          "whole-seed-heads",
-          "stored-enrichment"
+          "millet-panicles",
+          "dried-seed-heads"
         ],
 
         harvestPatternPreference:
