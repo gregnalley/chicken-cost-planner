@@ -136,6 +136,54 @@ code {
 
 }
 
+.sunflower-test-result {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d8e3da;
+  border-radius: 13px;
+  box-shadow:
+    0 7px 20px
+    rgba(29, 65, 38, 0.07);
+}
+
+.sunflower-test-result h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
+
+.test-score-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.test-score-chip {
+  padding: 7px 11px;
+  background: #edf5ee;
+  border: 1px solid #ceddcf;
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+.use-path-test-card {
+  margin-top: 10px;
+  padding: 13px;
+  background: #f7faf7;
+  border: 1px solid #dde7de;
+  border-radius: 9px;
+}
+
+.use-path-test-card strong {
+  color: #194f2a;
+}
+
+.use-path-failure {
+  background: #fff3f3;
+  border-color: #e3c2c2;
+}
+
 </style>
 
 </head>
@@ -250,6 +298,27 @@ The validator checks whether each crop is ready to participate in the Feed Crop 
   aria-live="polite"
 >
 Waiting for crop validation...
+</div>
+
+<div class="section">
+
+<h2>Sunflower Sample Profile Tests</h2>
+
+<p>
+These tests run the first recommendation logic against five fixed visitor profiles. They do not yet compare Sunflower with the other nine crops.
+</p>
+
+<div
+  id="sunflower-test-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Waiting for Sunflower tests...
+</div>
+
+<div id="sunflower-test-results"></div>
+
 </div>
 
 <div id="crop-validation-results"></div>
