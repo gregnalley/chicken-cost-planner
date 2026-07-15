@@ -332,6 +332,11 @@ const HARVEST_FREQUENCY_CATEGORIES =
     "CROP-GRAIN-SORGHUM"
   ]);
 
+  // ==================================================
+  // Profile 1
+  // ==================================================
+
+
   const SAMPLE_USER_PROFILES = Object.freeze([
   Object.freeze({
     id: "PROFILE-BEGINNER-RAISED-BED",
@@ -445,6 +450,10 @@ const HARVEST_FREQUENCY_CATEGORIES =
       }
     }
   }),
+
+  // ==================================================
+  // Profile 2
+  // ==================================================
 
   Object.freeze({
     id: "PROFILE-HOT-DRY",
@@ -566,6 +575,10 @@ const HARVEST_FREQUENCY_CATEGORIES =
       }
     }
   }),
+
+  // ==================================================
+  // Profile 3
+  // ==================================================
 
   Object.freeze({
     id: "PROFILE-HUMID-SOUTHERN",
@@ -712,6 +725,10 @@ preferences: {
 }
     }
   }),
+
+  // ==================================================
+  // Profile 4
+  // ==================================================
 
   Object.freeze({
     id: "PROFILE-CONTAINER-RENTAL",
@@ -860,6 +877,10 @@ harvestStorage: {
     }
   }),
 
+  // ==================================================
+  // Profile 5
+  // ==================================================
+
   Object.freeze({
     id: "PROFILE-WINTER-STORAGE",
 
@@ -995,6 +1016,10 @@ harvestStorage: {
       }
     }
   }),
+
+  // ==================================================
+  // Profile 6
+  // ==================================================
 
   Object.freeze({
     id: "PROFILE-SUMMER-PROTEIN-GREENS",
@@ -1137,6 +1162,10 @@ harvestStorage: {
       }
     }
   }),
+
+  // ==================================================
+  // Profile 7
+  // ==================================================
 
   Object.freeze({
     id: "PROFILE-DRY-LEGUME-STORAGE",
@@ -1302,6 +1331,10 @@ harvestStorage: {
 
   }),
 
+  // ==================================================
+  // Profile 8
+  // ==================================================
+
   Object.freeze({
     id:
       "PROFILE-COOL-SEASON-SMALL-GARDEN",
@@ -1454,6 +1487,10 @@ harvestStorage: {
       }
     }
   }),
+
+  // ==================================================
+  // Profile 9
+  // ==================================================
 
   Object.freeze({
     id:
@@ -1632,6 +1669,10 @@ harvestStorage: {
     }
   }),
 
+  // ==================================================
+  // Profile 10
+  // ==================================================
+
     Object.freeze({
     id:
       "PROFILE-PUMPKIN-SMALL-NO-OVERFLOW",
@@ -1768,7 +1809,7 @@ goalPriorities: [
     }
   }),
 
-   // ==================================================
+  // ==================================================
   // Profile 11
   // ==================================================
 
@@ -4964,6 +5005,17 @@ notes:
       })
 
   });
+
+const PLANNER_CONFIG = Object.freeze({
+  plannerVersion: "1.0.0",
+
+  cropSchemaVersion: "1.0.0",
+
+  releaseStatus: "stable",
+
+  releaseNotes:
+    "Initial stable feed-crop recommendation engine with 10 crops and 23 passing regression profiles.",
+});
 
 const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
