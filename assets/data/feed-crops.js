@@ -326,13 +326,243 @@ const BCP_FEED_CROPS = {
         reversibleAfterOneSeason: true
       },
 
-      climate: {},
+      climate: {
+  suitableClimateTypes: [
+    "cool-moderate-summer",
+    "temperate",
+    "hot-humid",
+    "hot-dry",
+    "mild-winter"
+  ],
 
-      site: {},
+  preferredClimateTypes: [
+    "temperate",
+    "hot-dry"
+  ],
 
-      soil: {},
+  challengingClimateTypes: [
+    "cold-short-summer",
+    "high-elevation"
+  ],
 
-      water: {},
+  minimumFrostFreeDays: null,
+  preferredFrostFreeDays: null,
+
+  minimumSoilTemperatureF: null,
+  preferredSoilTemperatureF: null,
+
+  daysToMaturityMinimum: null,
+  daysToMaturityMaximum: null,
+
+  dryDownBufferDays: null,
+
+  heatToleranceScore: null,
+  droughtClimateToleranceScore: null,
+  humidityToleranceScore: null,
+  coolSummerToleranceScore: null,
+
+  frostSensitivityScore: null,
+
+  winterHardinessRequired: false,
+
+  seasonExtensionBenefits: [
+    "Indoor seed starting may help in short-season areas, but sunflowers generally transplant best before becoming root-bound.",
+    "Selecting an earlier-maturing seed variety is usually more useful than relying on late-season frost protection for mature seed production."
+  ],
+
+  indoorSeedStartingBenefitScore: null,
+
+  directFacts: {
+    seasonType: "warm-season",
+    frostSensitive: true,
+    plantAfterFrostDanger: true,
+
+    notes: [
+      "Annual sunflowers are normally planted after the danger of damaging spring frost has passed.",
+      "Warm soil supports faster and more dependable germination.",
+      "Variety selection strongly affects the time required for flowering and mature seed harvest.",
+      "Seed production requires enough frost-free time for flowering, pollination, seed filling, and head dry-down."
+    ]
+  }
+},
+
+      site: {
+  absoluteMinimumSunHours: null,
+
+  productiveMinimumSunHours: 6,
+
+  preferredSunHours: 8,
+
+  shadeToleranceScore: null,
+
+  afternoonShadeBenefitInHeat: null,
+
+  windToleranceScore: null,
+  lodgingRiskScore: null,
+
+  reflectedHeatToleranceScore: null,
+
+  airflowRequirementScore: null,
+
+  frostPocketSensitivityScore: null,
+
+  treeRootCompetitionToleranceScore: null,
+
+  hardscapeConflictRiskScore: null,
+
+  structureConflictRiskScore: null,
+
+  utilityConflictRiskScore: null,
+
+  fruitDropMessRiskScore: null,
+
+  stainingRiskScore: null,
+
+  directFacts: {
+    preferredLight: "full-sun",
+
+    productiveSunGuidance:
+      "At least 6 hours of direct sunlight, with approximately 8 hours preferred for strong growth and seed production.",
+
+    windExposureConcern: true,
+
+    notes: [
+      "Reduced sunlight may produce weaker stems, smaller heads, and lower seed production.",
+      "Tall or large-headed varieties may require a sheltered site or support where strong winds are common.",
+      "Good airflow is useful, but severe wind exposure may increase leaning, stalk breakage, or lodging.",
+      "Variety height strongly affects wind and structural risk."
+    ]
+  }
+},
+
+      soil: {
+  textureScores: {
+    heavyClay: null,
+    clayLoam: null,
+    loam: null,
+    sandyLoam: null,
+    verySandy: null,
+    rocky: null
+  },
+
+  drainageRequirementScore: null,
+
+  temporaryWetToleranceScore: null,
+
+  waterloggingSensitivityScore: null,
+
+  minimumSoilDepthIn: null,
+  preferredSoilDepthIn: null,
+
+  compactionToleranceScore: null,
+
+  establishmentInSodDifficultyScore: null,
+
+  preferredPHMinimum: 6.0,
+  preferredPHMaximum: 7.5,
+
+  survivalPHMinimum: null,
+  survivalPHMaximum: null,
+
+  fertilityRequirementScore: null,
+
+  nitrogenRequirementScore: null,
+  phosphorusRequirementScore: null,
+  potassiumRequirementScore: null,
+
+  benefitsFromInoculation: false,
+  inoculantType: null,
+
+  saltToleranceScore: null,
+
+  amendmentEffortScore: null,
+
+  directFacts: {
+    preferredDrainage: "well-drained",
+
+    adaptableTextures: [
+      "clay",
+      "loam",
+      "sandy soil"
+    ],
+
+    preferredTexture:
+      "Fertile, well-drained loam or similar productive garden soil.",
+
+    waterloggedSoilSuitable: false,
+
+    notes: [
+      "Sunflowers can grow in several soil textures when drainage and rooting conditions are adequate.",
+      "Standing water and persistently saturated soil increase root and disease problems.",
+      "Deep or unrestricted soil supports the crop's taproot and improves access to moisture.",
+      "Compacted soil, shallow barriers, and strong tree-root competition may restrict root development.",
+      "The stored pH values represent a commonly recommended productive range, not absolute survival limits."
+    ]
+  }
+},
+
+      water: {
+  overallWaterRequirementLevel: null,
+
+  germinationWaterNeedLevel: null,
+
+  establishmentWaterNeedLevel: null,
+
+  matureWaterNeedLevel: null,
+
+  floweringWaterNeedLevel: null,
+
+  harvestDevelopmentWaterNeedLevel: null,
+
+  droughtSurvivalScore: null,
+
+  droughtYieldRetentionScore: null,
+
+  criticalGrowthStages: [
+    "germination",
+    "seedling-establishment",
+    "bud-development",
+    "flowering",
+    "seed-filling"
+  ],
+
+  criticalStageWaterImportanceScore: null,
+
+  overwateringSensitivityScore: null,
+
+  waterloggingSensitivityScore: null,
+
+  dripIrrigationBenefitScore: null,
+
+  mulchBenefitScore: null,
+
+  suitableForRainfallOnlyScore: null,
+
+  suitableForLimitedIrrigationScore: null,
+
+  containerDryingRiskScore: null,
+
+  establishmentYearsRequiringExtraWater: 0,
+
+  directFacts: {
+    droughtTolerantAfterEstablishment: true,
+
+    establishmentMoistureImportant: true,
+
+    regularMoistureImprovesProduction: true,
+
+    standingWaterSuitable: false,
+
+    notes: [
+      "Seed and young plants need dependable moisture during germination and establishment.",
+      "Established sunflowers can tolerate dry periods better than many common garden crops.",
+      "Drought tolerance does not mean that seed yield is unaffected by moisture stress.",
+      "Moisture during bud formation, flowering, and seed filling supports stronger production.",
+      "Soil should remain adequately moist but not continuously saturated.",
+      "Container-grown plants normally require more frequent watering than in-ground plants."
+    ]
+  }
+},
 
       space: {},
 
@@ -433,20 +663,35 @@ const BCP_FEED_CROPS = {
 
         verifiedFields: [
           "identity",
-          "lifecycle"
+          "lifecycle",
+          "site.productiveMinimumSunHours",
+          "site.preferredSunHours",
+          "soil.preferredPHMinimum",
+          "soil.preferredPHMaximum",
+          "soil.directFacts.preferredDrainage",
+          "water.directFacts.droughtTolerantAfterEstablishment",
+          "water.directFacts.establishmentMoistureImportant"
         ],
 
         derivedFields: [],
 
         uncertainFields: [
-          "usePaths.whole-dried-seed-head"
+             "climate.minimumFrostFreeDays",
+             "climate.preferredFrostFreeDays",
+             "climate.minimumSoilTemperatureF",
+             "climate.preferredSoilTemperatureF",
+             "climate.daysToMaturityMinimum",
+             "climate.daysToMaturityMaximum",
+             "climate.dryDownBufferDays",
+             "usePaths.whole-dried-seed-head"
         ],
 
         missingFields: [
-          "climate",
-          "site",
-          "soil",
-          "water",
+          "climate.plannerRatings",
+          "site.plannerRatings",
+          "soil.textureScores",
+          "soil.plannerRatings",
+          "water.plannerRatings",
           "space",
           "flock",
           "labor",
@@ -464,7 +709,10 @@ const BCP_FEED_CROPS = {
         notes: [
           "Planner skeleton created before detailed planner-specific research.",
           "The whole-dried-seed-head use path is a structural prototype and is not yet fully scored.",
-          "Do not change developmentStatus to ready until every required section and use path has been researched, validated, and tested."
+          "Do not change developmentStatus to ready until every required section and use path has been researched, validated, and tested.",
+          "Direct climate, sunlight, soil, and water facts were added during the first planner research pass.",
+          "Planner suitability and risk ratings remain null until the rating pass compares Sunflower consistently with the other crops.",
+          "Generic days-to-flower figures were not used as mature-seed harvest requirements."
         ]
        }
     }
