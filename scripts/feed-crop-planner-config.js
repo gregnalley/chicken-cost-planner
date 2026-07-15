@@ -1667,8 +1667,8 @@ const HARVEST_FREQUENCY_CATEGORIES =
       harvestStorage: {
         desiredHarvestProducts: [
           "fresh-greens",
-          "fresh-forage",
-          "fresh-produce"
+          "fresh-forage"
+        
         ],
         harvestPatternPreference:
           "continuous",
@@ -1683,28 +1683,28 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
       preferences: {
         plannerGoals: [
-          "enrichment",
-          "edible-landscape",
-          "fast-value"
-        ],
+  "fresh-greens",
+  "fast-value",
+  "enrichment"
+],
 
-        goalPriorities: [
-          {
-            goal:
-              "enrichment",
-            rank: 1
-          },
-          {
-            goal:
-              "edible-landscape",
-            rank: 2
-          },
-          {
-            goal:
-              "fast-value",
-            rank: 3
-          }
-        ],
+goalPriorities: [
+  {
+    goal:
+      "fresh-greens",
+    rank: 1
+  },
+  {
+    goal:
+      "fast-value",
+    rank: 2
+  },
+  {
+    goal:
+      "enrichment",
+    rank: 3
+  }
+],
 
         preferredNutritionalRole:
           "enrichment",
