@@ -885,7 +885,7 @@ const actualLeader =
                   actualLeader
                     ?.bestUsePath
                     ?.label ||
-                  "No eligible recommendation"
+                  "Unavailable"
                 }
               </td>
 
