@@ -1586,7 +1586,7 @@ const HARVEST_FREQUENCY_CATEGORIES =
     }
   }),
 
-  Object.freeze({
+    Object.freeze({
     id:
       "PROFILE-PUMPKIN-SMALL-NO-OVERFLOW",
 
@@ -1600,33 +1600,26 @@ const HARVEST_FREQUENCY_CATEGORIES =
       climate: {
         climateType:
           "temperate",
-
         frostFreeSeasonRange:
           "150-179"
       },
 
       flock: {
         flockSize: 5,
-
         primaryFlockPurpose:
           "pets-enrichment",
-
         forageAccess:
           "none"
       },
 
       space: {
         totalGrowingAreaSqFt: 32,
-
         availableSpaceTypes: [
           "raised-bed"
         ],
-
         largestAreaShape:
           "small-beds",
-
         overflowOptions: [],
-
         plantBehaviorRestrictions: [
           "no-vines-outside-bed"
         ]
@@ -1634,7 +1627,6 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
       site: {
         directSunHoursExact: 8,
-
         windExposure:
           "low"
       },
@@ -1642,10 +1634,8 @@ const HARVEST_FREQUENCY_CATEGORIES =
       soil: {
         primaryGrowingMedium:
           "raised-bed-mix",
-
         soilTexture:
           "loam",
-
         soilDrainage:
           "well-drained"
       },
@@ -1653,13 +1643,10 @@ const HARVEST_FREQUENCY_CATEGORIES =
       water: {
         waterReliability:
           "usually-reliable",
-
         wateringFrequencyPreference:
           "every-2-3-days",
-
         waterConservationPriority:
           "moderate",
-
         criticalStageWaterAvailability:
           "reliable"
       },
@@ -1667,17 +1654,13 @@ const HARVEST_FREQUENCY_CATEGORIES =
       labor: {
         gardeningExperience:
           "beginner",
-
         weeklyCropTime:
           "30-60-min",
-
         acceptedProcessingTasks: [
           "chop"
         ],
-
         dryingCapability:
           "none",
-
         ownedEquipment: []
       },
 
@@ -1686,18 +1669,13 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "fresh-fruit",
           "pumpkin-squash-flesh"
         ],
-
         harvestPatternPreference:
           "several",
-
         minimalPreparationPriority:
           "top",
-
         desiredStorageDuration:
           "immediate",
-
         dryStorageLocations: [],
-
         rodentProtection:
           "none"
       },
@@ -1713,21 +1691,16 @@ const HARVEST_FREQUENCY_CATEGORIES =
           {
             goal:
               "enrichment",
-
             rank: 1
           },
-
           {
             goal:
               "edible-landscape",
-
             rank: 2
           },
-
           {
             goal:
               "fast-value",
-
             rank: 3
           }
         ],
@@ -1746,8 +1719,11 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
-  })
-]);
+  }),
+
+  // ==================================================
+  // Profile 11
+  // ==================================================
 
   Object.freeze({
     id:
@@ -1760,152 +1736,13 @@ const HARVEST_FREQUENCY_CATEGORIES =
       "A backyard keeper in a mild-winter climate who wants protected living greens through fall with low processing and repeated flock access.",
 
     answers: {
-      climate: {
-        climateType:
-          "mild-winter",
-
-        frostFreeSeasonRange:
-          "180-209"
-      },
-
-      flock: {
-        flockSize: 8,
-
-        primaryFlockPurpose:
-          "pets-enrichment",
-
-        forageAccess:
-          "none"
-      },
-
-      space: {
-        totalGrowingAreaSqFt: 48,
-
-        availableSpaceTypes: [
-          "forage-frame",
-          "raised-bed"
-        ],
-
-        largestAreaShape:
-          "wide-rectangle"
-      },
-
-      site: {
-        directSunHoursExact: 6,
-
-        windExposure:
-          "moderate"
-      },
-
-      soil: {
-        primaryGrowingMedium:
-          "improved-garden",
-
-        soilTexture:
-          "clay-loam",
-
-        soilDrainage:
-          "well-drained"
-      },
-
-      water: {
-        waterReliability:
-          "usually-reliable",
-
-        wateringFrequencyPreference:
-          "twice-weekly",
-
-        waterConservationPriority:
-          "moderate",
-
-        criticalStageWaterAvailability:
-          "reliable"
-      },
-
-      labor: {
-        gardeningExperience:
-          "intermediate",
-
-        weeklyCropTime:
-          "1-2-hours",
-
-        acceptedProcessingTasks: [],
-
-        dryingCapability:
-          "none",
-
-        ownedEquipment: [
-          "forage-frame",
-          "row-cover"
-        ]
-      },
-
-      harvestStorage: {
-        desiredHarvestProducts: [
-          "living-forage",
-          "fresh-greens"
-        ],
-
-        harvestPatternPreference:
-          "continuous",
-
-        minimalPreparationPriority:
-          "top",
-
-        dryStorageLocations: [],
-
-        rodentProtection:
-          "none"
-      },
-
-      preferences: {
-        plannerGoals: [
-          "living-forage",
-          "fresh-greens",
-          "enrichment",
-          "cool-season-production"
-        ],
-
-        goalPriorities: [
-          {
-            goal:
-              "living-forage",
-
-            rank: 1
-          },
-
-          {
-            goal:
-              "fresh-greens",
-
-            rank: 2
-          },
-
-          {
-            goal:
-              "enrichment",
-
-            rank: 3
-          }
-        ],
-
-        preferredNutritionalRole:
-          "fresh-green",
-
-        beginnerFriendlinessPriority:
-          "high",
-
-        wildlifePestPressure: [
-          "rabbits",
-          "deer"
-        ],
-
-        desiredRecommendationFormat:
-          "top-three"
-      }
+      /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
     }
+  }),
 
-      }),
+  // ==================================================
+  // Profile 12
+  // ==================================================
 
   Object.freeze({
     id:
@@ -1918,175 +1755,13 @@ const HARVEST_FREQUENCY_CATEGORIES =
       "A grower with a short frost-free season, sandy soil, limited irrigation, and a goal of producing a storable energy grain.",
 
     answers: {
-      climate: {
-        climateType:
-          "cold-short-summer",
-
-        frostFreeSeasonRange:
-          "90-119"
-      },
-
-      flock: {
-        flockSize: 10,
-
-        primaryFlockPurpose:
-          "homestead",
-
-        forageAccess:
-          "limited-weekly"
-      },
-
-      space: {
-        totalGrowingAreaSqFt: 300,
-
-        availableSpaceTypes: [
-          "in-ground",
-          "open-field"
-        ],
-
-        largestAreaShape:
-          "wide-rectangle"
-      },
-
-      site: {
-        directSunHoursExact: 9,
-
-        windExposure:
-          "moderate"
-      },
-
-      soil: {
-        primaryGrowingMedium:
-          "native-soil",
-
-        soilTexture:
-          "sandy-loam",
-
-        soilDrainage:
-          "very-fast"
-      },
-
-      water: {
-        waterReliability:
-          "frequently-limited",
-
-        wateringFrequencyPreference:
-          "weekly",
-
-        waterConservationPriority:
-          "top-priority",
-
-        criticalStageWaterAvailability:
-          "occasional"
-      },
-
-      labor: {
-        gardeningExperience:
-          "intermediate",
-
-        weeklyCropTime:
-          "1-2-hours",
-
-        acceptedProcessingTasks: [
-          "dry",
-          "thresh",
-          "winnow",
-          "clean-sort"
-        ],
-
-        dryingCapability:
-          "large-covered",
-
-        dryingFacilities: [
-          "barn-shed",
-          "fans",
-          "screens-trays"
-        ],
-
-        ownedEquipment: [
-          "drying-screen",
-          "fan",
-          "food-safe-bucket"
-        ]
-      },
-
-      harvestStorage: {
-        desiredHarvestProducts: [
-          "dry-grain",
-          "millet-grain"
-        ],
-
-        harvestPatternPreference:
-          "major",
-
-        desiredStorageDuration:
-          "6-12-months",
-
-        minimalPreparationPriority:
-          "low",
-
-        dryStorageLocations: [
-          "barn-shed"
-        ],
-
-        storageHumidity:
-          "consistently-dry",
-
-        dryCropContainerType:
-          "airtight-food-safe",
-
-        rodentProtection:
-          "rodent-proof-containers"
-      },
-
-      preferences: {
-        plannerGoals: [
-          "short-season",
-          "limited-irrigation",
-          "high-energy",
-          "winter-storage",
-          "self-reliance"
-        ],
-
-        goalPriorities: [
-          {
-            goal:
-              "short-season",
-
-            rank: 1
-          },
-
-          {
-            goal:
-              "limited-irrigation",
-
-            rank: 2
-          },
-
-          {
-            goal:
-              "high-energy",
-
-            rank: 3
-          }
-        ],
-
-        preferredNutritionalRole:
-          "energy",
-
-        beginnerFriendlinessPriority:
-          "moderate",
-
-        wildlifePestPressure: [
-          "wild-birds",
-          "rodents"
-        ],
-
-        desiredRecommendationFormat:
-          "top-three"
-      }
+      /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
     }
   }),
+
+  // ==================================================
+  // Profile 13
+  // ==================================================
 
   Object.freeze({
     id:
@@ -2099,167 +1774,11 @@ const HARVEST_FREQUENCY_CATEGORIES =
       "A beginner who wants easy flock enrichment from whole seed heads and is willing to dry panicles but does not want to thresh or winnow grain.",
 
     answers: {
-      climate: {
-        climateType:
-          "temperate",
-
-        frostFreeSeasonRange:
-          "150-179"
-      },
-
-      flock: {
-        flockSize: 6,
-
-        primaryFlockPurpose:
-          "pets-enrichment",
-
-        forageAccess:
-          "none"
-      },
-
-      space: {
-        totalGrowingAreaSqFt: 100,
-
-        availableSpaceTypes: [
-          "in-ground"
-        ],
-
-        largestAreaShape:
-          "wide-rectangle"
-      },
-
-      site: {
-        directSunHoursExact: 8,
-
-        windExposure:
-          "low"
-      },
-
-      soil: {
-        primaryGrowingMedium:
-          "improved-garden",
-
-        soilTexture:
-          "loam",
-
-        soilDrainage:
-          "well-drained"
-      },
-
-      water: {
-        waterReliability:
-          "usually-reliable",
-
-        wateringFrequencyPreference:
-          "weekly",
-
-        waterConservationPriority:
-          "moderate",
-
-        criticalStageWaterAvailability:
-          "reliable"
-      },
-
-      labor: {
-        gardeningExperience:
-          "beginner",
-
-        weeklyCropTime:
-          "1-2-hours",
-
-        acceptedProcessingTasks: [
-          "dry",
-          "clean-sort"
-        ],
-
-        dryingCapability:
-          "small-racks",
-
-        dryingFacilities: [
-          "covered-rack",
-          "screens-trays"
-        ],
-
-        ownedEquipment: [
-          "hand-pruners",
-          "drying-rack",
-          "drying-screen"
-        ]
-      },
-
-      harvestStorage: {
-        desiredHarvestProducts: [
-          "dried-seed-heads",
-          "millet-panicles"
-        ],
-
-        harvestPatternPreference:
-          "major",
-
-        desiredStorageDuration:
-          "3-6-months",
-
-        minimalPreparationPriority:
-          "high",
-
-        dryStorageLocations: [
-          "garage"
-        ],
-
-        storageHumidity:
-          "usually-dry",
-
-        rodentProtection:
-          "rodent-proof-containers"
-      },
-
-      preferences: {
-        plannerGoals: [
-          "enrichment",
-          "winter-storage",
-          "high-energy",
-          "fast-value"
-        ],
-
-        goalPriorities: [
-          {
-            goal:
-              "enrichment",
-
-            rank: 1
-          },
-
-          {
-            goal:
-              "winter-storage",
-
-            rank: 2
-          },
-
-          {
-            goal:
-              "fast-value",
-
-            rank: 3
-          }
-        ],
-
-        preferredNutritionalRole:
-          "enrichment",
-
-        beginnerFriendlinessPriority:
-          "high",
-
-        wildlifePestPressure: [
-          "wild-birds"
-        ],
-
-        desiredRecommendationFormat:
-          "top-three"
-      }
+      /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
     }
+  })
 
-  });
+]);
 
   const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
