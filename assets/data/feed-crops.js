@@ -10579,7 +10579,7 @@ plannerData: {
   schemaVersion: "1.0.0",
 
   developmentStatus:
-    "ready",
+    "testing",
 
   identity: {
     plannerName:
@@ -12630,11 +12630,1803 @@ plannerData: {
         "Calculate scores only after multiple perennial forage crops have comparable data.",
         "Plant-density fields remain null because productive alfalfa stands are managed by seeding rate and stand density rather than permanent individual plant counts, which naturally decline as crowns mature."
 
-      ]
+       ]
+    },
+
+    plannerData: {
+      schemaVersion:
+        "1.0.0",
+
+      developmentStatus:
+        "testing",
+
+      identity: {
+        plannerName:
+          "Alfalfa",
+
+        shortLabel:
+          "Alfalfa",
+
+        icon:
+          "🌿",
+
+        cropCategory:
+          "perennial-legume",
+
+        primaryFeedCategory:
+          "protein-oriented-forage",
+
+        guideUrl:
+          "growing-alfalfa-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "perennial",
+
+        isAnnual: false,
+        isBiennial: false,
+        isPerennial: true,
+        isTreeOrShrub: false,
+
+        yearsToFirstUsefulHarvest: 0,
+
+        yearsToFullProduction: 1,
+
+        expectedUsefulLifeYears:
+          null,
+
+        regrowsAfterHarvest: true,
+
+        permanentPlantingRequired: true,
+
+        reversibleAfterOneSeason: false
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "hot-dry"
+        ],
+
+        challengingClimateTypes: [
+          "hot-humid"
+        ],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          null,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore: 4,
+
+        droughtClimateToleranceScore: 5,
+
+        humidityToleranceScore: 2,
+
+        coolSummerToleranceScore: 5,
+
+        frostSensitivityScore: 2,
+
+        winterHardinessRequired: true,
+
+        seasonExtensionBenefits: [
+          "Spring establishment can provide time for root and crown development before winter.",
+          "Late-summer establishment may reduce weed pressure where sufficient rooting time remains before hard freezing.",
+          "Temporary irrigation can improve establishment during dry weather.",
+          "Protected drying space may be more valuable than season-extension structures in humid climates."
+        ],
+
+        indoorSeedStartingBenefitScore: 1,
+
+        directFacts: {
+          seasonType:
+            "cool-season-perennial",
+
+          frostSensitive: false,
+
+          commonlyDirectSeeded: true,
+
+          winterDormancyPossible:
+            true,
+
+          summerGrowthPossible:
+            true,
+
+          deepRootedPerennial:
+            true,
+
+          establishmentTimingHighlyRegional:
+            true,
+
+          notes: [
+            "Alfalfa is a perennial cool-season forage legume.",
+            "Established plants develop deep taproots that improve access to stored soil moisture.",
+            "Growth begins from a persistent crown after winter dormancy or cutting.",
+            "Winter survival varies by variety, fall dormancy rating, soil drainage, cutting management, and region.",
+            "Hot dry climates can support Alfalfa where irrigation or stored soil moisture is available.",
+            "Hot humid climates may increase disease, drying, and stand-persistence challenges.",
+            "Exact planting windows should follow regional forage guidance.",
+            "Days-to-maturity are not used because Alfalfa is harvested repeatedly as forage rather than grown for one mature seed harvest."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours: 5,
+
+        productiveMinimumSunHours: 6,
+
+        preferredSunHours: 8,
+
+        shadeToleranceScore: 2,
+
+        afternoonShadeBenefitInHeat: 2,
+
+        windToleranceScore: 5,
+
+        lodgingRiskScore: 2,
+
+        reflectedHeatToleranceScore: 4,
+
+        airflowRequirementScore: 5,
+
+        frostPocketSensitivityScore: 2,
+
+        treeRootCompetitionToleranceScore: 2,
+
+        hardscapeConflictRiskScore: 2,
+
+        structureConflictRiskScore: 2,
+
+        utilityConflictRiskScore: 2,
+
+        fruitDropMessRiskScore: 1,
+
+        stainingRiskScore: 1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "At least 6 hours of direct sunlight, with approximately 8 hours preferred for strong forage production, crown development, and drying.",
+
+          windExposureConcern:
+            false,
+
+          growthHabit:
+            "upright-multistemmed-crown-forming",
+
+          matureHeightFtMinimum: 1,
+
+          matureHeightFtMaximum: 3,
+
+          floweringPollinatorTraffic:
+            true,
+
+          notes: [
+            "Alfalfa performs best in full sun.",
+            "Shade reduces stem density, root reserves, stand persistence, and forage production.",
+            "Good airflow helps foliage dry after rain and supports hay or dried-forage production.",
+            "The plant is shorter than Corn, Sorghum, Sunflower, and Mulberry and creates relatively few structural conflicts.",
+            "Established tree roots can compete strongly for light, water, and nutrients.",
+            "Flowering Alfalfa can attract bees and other pollinating insects."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay: 2,
+          clayLoam: 4,
+          loam: 5,
+          sandyLoam: 5,
+          verySandy: 3,
+          rocky: 2
+        },
+
+        drainageRequirementScore: 5,
+
+        temporaryWetToleranceScore: 1,
+
+        waterloggingSensitivityScore: 5,
+
+        minimumSoilDepthIn:
+          null,
+
+        preferredSoilDepthIn: 36,
+
+        compactionToleranceScore: 1,
+
+        establishmentInSodDifficultyScore: 5,
+
+        preferredPHMinimum: 6.5,
+
+        preferredPHMaximum: 7.5,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore: 4,
+
+        nitrogenRequirementScore: 1,
+
+        phosphorusRequirementScore: 5,
+
+        potassiumRequirementScore: 5,
+
+        benefitsFromInoculation: true,
+
+        inoculantType:
+          "Alfalfa-group Rhizobium inoculant compatible with Medicago sativa",
+
+        saltToleranceScore: 2,
+
+        amendmentEffortScore: 4,
+
+        directFacts: {
+          preferredDrainage:
+            "deep-and-well-drained",
+
+          preferredTextures: [
+            "loam",
+            "sandy loam",
+            "well-drained clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            true,
+
+          inoculationMayImproveNodulation:
+            true,
+
+          deepTaprooted:
+            true,
+
+          waterloggedSoilSuitable:
+            false,
+
+          acidicSoilConcern:
+            true,
+
+          notes: [
+            "Deep, well-drained soil is one of the most important Alfalfa requirements.",
+            "Prolonged saturation can damage roots and crowns and shorten stand life.",
+            "Compaction, shallow rock, hardpan, and poor drainage restrict taproot development.",
+            "Productive stands generally need soil near neutral pH.",
+            "Lime may need to be applied well before seeding where soil is too acidic.",
+            "Alfalfa can fix atmospheric nitrogen when compatible rhizobia and suitable soil conditions are present.",
+            "Alfalfa-group inoculant may improve nodulation where compatible bacteria are absent.",
+            "Nitrogen fertilizer is generally unnecessary for a well-nodulated stand.",
+            "Phosphorus, potassium, sulfur, boron, and other nutrient deficiencies may still reduce production and persistence.",
+            "The stored pH range represents a productive planning range rather than absolute survival limits."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "high",
+
+        establishmentWaterNeedLevel:
+          "high",
+
+        matureWaterNeedLevel:
+          "moderate",
+
+        floweringWaterNeedLevel:
+          "moderate",
+
+        harvestDevelopmentWaterNeedLevel:
+          "moderate",
+
+        droughtSurvivalScore: 5,
+
+        droughtYieldRetentionScore: 4,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "crown-establishment",
+          "post-cutting-regrowth",
+          "summer-production"
+        ],
+
+        criticalStageWaterImportanceScore: 5,
+
+        overwateringSensitivityScore: 4,
+
+        waterloggingSensitivityScore: 5,
+
+        dripIrrigationBenefitScore: 4,
+
+        mulchBenefitScore: 1,
+
+        suitableForRainfallOnlyScore: 4,
+
+        suitableForLimitedIrrigationScore: 4,
+
+        containerDryingRiskScore: 5,
+
+        establishmentYearsRequiringExtraWater: 1,
+
+        directFacts: {
+          establishmentMoistureImportant:
+            true,
+
+          deepRootsImproveDroughtSurvival:
+            true,
+
+          postCuttingMoistureImportant:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          irrigationCanIncreaseProduction:
+            true,
+
+          notes: [
+            "Small seed and young seedlings require dependable surface moisture during establishment.",
+            "Deep established roots improve drought survival and access to stored soil moisture.",
+            "Drought survival does not guarantee maximum forage production.",
+            "Moisture supports rapid regrowth after cutting or grazing.",
+            "Supplemental irrigation can increase forage production in dry climates.",
+            "Alfalfa is poorly suited to prolonged saturated soil or standing water.",
+            "Frequent shallow irrigation may encourage weaker surface rooting and disease where drainage is poor."
+          ]
+        }
+      },
+
+      space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore: 3,
+
+        mediumSpaceScore: 5,
+
+        largeSpaceScore: 5,
+
+        layoutScores: {
+          squareBlock: 5,
+          wideRectangle: 5,
+          longStrip: 5,
+          irregular: 4,
+          smallBeds: 3,
+          openField: 5
+        },
+
+        spaceTypeScores: {
+          inGround: 5,
+          raisedBed: 2,
+          container: 1,
+          fenceLine: 4,
+          buildingEdge: 3,
+          unusedLawn: 4,
+          openField: 5,
+          orchard: 3,
+          forageFrame: 3,
+          rotationalPaddock: 5,
+          greenhouse: 1,
+          hedgerow: 3
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Alfalfa can grow temporarily in deep containers, but restricted rooting volume, rapid drying, and limited harvest make containers inefficient for meaningful flock forage.",
+
+        minimumRaisedBedDepthIn:
+          null,
+
+        vineSpreadRequired: false,
+
+        verticalSupportBenefitScore: 1,
+
+        blockPlantingRequired: false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred: true,
+
+        heightCategory:
+          "low-medium",
+
+        matureWidthCategory:
+          "upright-dense-stand",
+
+        overflowSpaceBenefitScore: 3,
+
+        directFacts: {
+          denseStandSuitable:
+            true,
+
+          mixedPastureSuitable:
+            true,
+
+          rotationalPaddockSuitable:
+            true,
+
+          cutAndCarryPlotSuitable:
+            true,
+
+          forageFrameSuitable:
+            "limited",
+
+          containerFeedProductionEfficient:
+            false,
+
+          notes: [
+            "Alfalfa is most useful as a dense perennial forage stand rather than isolated plants.",
+            "Medium and large plots produce more useful cut-and-carry forage than small decorative beds.",
+            "Rotational paddocks and dedicated harvest plots are strong uses.",
+            "A protected forage frame can preserve crowns, but upright stems may be less accessible through low wire than White Clover or Kale.",
+            "Containers and shallow raised beds restrict the deep taproot.",
+            "Alfalfa does not spread through creeping stolons like White Clover.",
+            "Minimum useful area remains null until backyard yield and flock-demand relationships are tested."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens: true,
+
+        suitableForYoungChicks: false,
+
+        flockPurposeScores: {
+          eggs: 5,
+          meat: 4,
+          breeding: 4,
+          petsEnrichment: 4,
+          homestead: 5,
+          mixed: 5
+        },
+
+        feedingMethodScores: {
+          livingGrazing: 4,
+          cutAndCarry: 5,
+          wholeProduce: 1,
+          wholeSeedHeads: 1,
+          wholeGrain: 1,
+          processedGrain: 1,
+          heatTreated: 1,
+          driedForage: 5,
+          winterStorage: 4
+        },
+
+        directRunSuitabilityScore: 2,
+
+        forageFrameSuitabilityScore: 3,
+
+        rotationalPaddockSuitabilityScore: 5,
+
+        confinedFlockValueScore: 5,
+
+        pasturedFlockValueScore: 5,
+
+        treatDilutionRiskScore: 3,
+
+        highEnergySupplement: false,
+
+        highFiberSupplement: true,
+
+        concentratedFatSource: false,
+
+        primaryFlockUses: [
+          "Fresh cut-and-carry forage",
+          "Rotational living forage",
+          "Dried leafy forage",
+          "Protein-oriented green supplementation",
+          "Carotenoid-rich supplemental forage",
+          "Soil-building pasture diversity"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "High-energy grain supplementation",
+          "Unrestricted permanent-run access",
+          "Primary young-chick feed",
+          "Whole dry grain storage"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Fresh leaves",
+            "Tender stems",
+            "Flowers",
+            "Properly dried leafy forage"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "moderate-only-under-controlled-rotational-pressure",
+
+          directAccessTiming:
+            "Allow crowns and roots to establish before controlled access, and remove birds before repeated scratching destroys crowns or exposes soil.",
+
+          nutritionalOrientation: [
+            "protein-oriented",
+            "fresh-green",
+            "living-forage",
+            "fiber",
+            "carotenoids",
+            "dried-forage"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          notes: [
+            "Alfalfa is primarily a protein- and fiber-oriented forage rather than an energy crop.",
+            "Tender leaves provide more practical poultry value than coarse mature stems.",
+            "Fresh cut-and-carry forage is useful for confined flocks.",
+            "Rotational grazing can provide fresh forage where enough recovery area exists.",
+            "Dehydrated Alfalfa products are used in some poultry diets, including as a source of pigments and forage nutrients.",
+            "Drying concentrates the material but increases mold, leaf-loss, dust, and storage concerns.",
+            "Chicken scratching can damage crowns even when the foliage tolerates cutting.",
+            "Alfalfa should supplement rather than replace complete poultry feed.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore: 3,
+
+        plantingEaseScore: 3,
+
+        establishmentEaseScore: 2,
+
+        routineMaintenanceEaseScore: 4,
+
+        weedControlEaseScore: 2,
+
+        wildlifeProtectionEaseScore: 3,
+
+        harvestEaseScore: 4,
+
+        freshForageProcessingEaseScore: 5,
+
+        driedForageProcessingEaseScore: 2,
+
+        pastureManagementEaseScore: 3,
+
+        dryingEaseScore: 2,
+
+        storageMonitoringEaseScore: 3,
+
+        perennialMaintenanceEaseScore: 4,
+
+        physicalAccessibilityScore: 4,
+
+        heavyLiftingRiskScore: 2,
+
+        weeklyLaborLevel:
+          "low",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "repeated-seasonal",
+
+        requiredPlantingTasks: [
+          "prepare-seedbed",
+          "broadcast-small-seed"
+        ],
+
+        optionalPlantingTasks: [
+          "inoculate-legume-seed",
+          "install-irrigation",
+          "apply-lime"
+        ],
+
+        requiredMaintenanceTasks: [
+          "hand-weed"
+        ],
+
+        optionalMaintenanceTasks: [
+          "protect-from-wildlife",
+          "soil-test",
+          "fertility-maintenance"
+        ],
+
+        requiredHarvestTasks: [
+          "cut-leaves"
+        ],
+
+        usePathProcessingTasks: {
+          rotationalLivingForage: [],
+
+          freshCutAndCarry: [
+            "cut-leaves"
+          ],
+
+          driedLeafyForage: [
+            "cut-leaves",
+            "dry",
+            "clean-sort"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "inspect-moisture",
+          "inspect-mold",
+          "inspect-insects"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "fencing",
+          "hand-pruners",
+          "sickle",
+          "basket",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "food-safe-bucket",
+          "moisture-meter",
+          "drip-irrigation"
+        ],
+
+        suitableForLowTimeUsersScore: 3,
+
+        suitableForSoloGrowersScore: 4,
+
+        directFacts: {
+          seedSize:
+            "very-small",
+
+          directSeedingSuitable:
+            true,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          majorLaborBottlenecks: [
+            "Correcting soil pH and drainage before planting",
+            "Preparing a firm weed-free seedbed",
+            "Maintaining surface moisture during establishment",
+            "Controlling weeds while seedlings are small",
+            "Managing repeated harvests or grazing rotations",
+            "Drying leafy forage without mold or excessive leaf loss",
+            "Preventing crown damage from chickens"
+          ],
+
+          notes: [
+            "Alfalfa seed is small and should not be planted deeply.",
+            "Successful establishment depends on seed-to-soil contact, suitable pH, drainage, and weed control.",
+            "Once established, routine labor is moderate.",
+            "Fresh cut-and-carry use requires little processing.",
+            "Dried-forage production creates concentrated harvest and drying labor.",
+            "Leaves dry faster and may shatter away from coarse stems.",
+            "Small backyard plots can be harvested manually."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "low",
+
+        soilPreparationCostLevel:
+          "moderate-high",
+
+        irrigationCostLevel:
+          "moderate",
+
+        protectionCostLevel:
+          "moderate",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageCostLevel:
+          "low",
+
+        annualRecurringCostLevel:
+          "low",
+
+        longTermValueScore: 5,
+
+        lowestCostUsePath:
+          "fresh-cut-and-carry",
+
+        highestCostUsePath:
+          "dried-leafy-forage",
+
+        likelyCostDrivers: [
+          "Soil testing",
+          "Lime application",
+          "Phosphorus and potassium correction",
+          "Alfalfa-group inoculant",
+          "Irrigation during establishment",
+          "Temporary fencing",
+          "Drying racks, screens, or fans",
+          "Rodent-resistant storage"
+        ],
+
+        costReductionOptions: [
+          "Test and correct soil before planting rather than attempting to rescue a weak stand.",
+          "Begin with a small dedicated cut-and-carry plot.",
+          "Use fresh forage instead of producing dried forage.",
+          "Use existing fencing for rotational access.",
+          "Use hand harvesting at backyard scale.",
+          "Maintain crown health so the perennial stand persists."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          notes: [
+            "Seed itself is generally not the largest cost.",
+            "Correcting acidic soil, drainage, or fertility may be the primary establishment expense.",
+            "A persistent stand can produce forage for multiple years.",
+            "Fresh use avoids most drying and storage expenses.",
+            "Cost classifications are qualitative rather than current retail estimates."
+          ]
+        }
+      },
+
+      goals: {
+        feedReductionScore: 4,
+
+        energyProductionScore: 1,
+
+        proteinOrientedScore: 5,
+
+        freshGreensScore: 5,
+
+        livingForageScore: 4,
+
+        winterStorageScore: 4,
+
+        enrichmentScore: 4,
+
+        resilienceScore: 5,
+
+        soilImprovementScore: 5,
+
+        nitrogenFixationScore: 5,
+
+        groundCoverScore: 3,
+
+        erosionControlScore: 4,
+
+        shadeScore: 1,
+
+        privacyScreeningScore: 1,
+
+        pollinatorSupportScore: 5,
+
+        compostBiomassScore: 5,
+
+        householdFoodScore: 1,
+
+        seedSavingScore: 2,
+
+        selfRelianceScore: 5,
+
+        multipurposeValueScore: 5,
+
+        visualAppealScore: 3,
+
+        productionReliabilityScore: 4,
+
+        fastestValueScore: 3,
+
+        nonElectricStorageScore: 4,
+
+        smallFlockValueScore: 4,
+
+        largeFlockValueScore: 5,
+
+        primaryGoalMatches: [
+          "protein-oriented",
+          "fresh-greens",
+          "living-forage",
+          "winter-storage",
+          "soil-improvement",
+          "nitrogen-fixation",
+          "erosion-control",
+          "pollinators",
+          "compost-biomass",
+          "self-reliance"
+        ],
+
+        weakGoalMatches: [
+          "high-energy",
+          "dry-grain",
+          "whole-produce",
+          "privacy-screening",
+          "container-feed-production",
+          "deep-shade"
+        ],
+
+        directFacts: {
+          nitrogenFixingLegume:
+            true,
+
+          perennialForage:
+            true,
+
+          repeatedHarvestPotential:
+            true,
+
+          pollinatorBenefit:
+            true,
+
+          driedForagePotential:
+            true,
+
+          notes: [
+            "Alfalfa is one of the strongest protein-oriented forage crops in the initial planner database.",
+            "Its perennial habit can reduce yearly replanting.",
+            "Nitrogen fixation supports soil-building goals.",
+            "Deep roots improve drought resilience and soil exploration.",
+            "Flowering stands support insect pollinators.",
+            "Fresh foliage and dried leafy forage provide different labor and storage options.",
+            "Alfalfa is not an energy grain.",
+            "Stand persistence depends heavily on drainage, soil chemistry, cutting management, and crown protection."
+          ]
+        }
+      },
+
+      risks: {
+        wildlife: {
+          wildBirds: 1,
+          deer: 5,
+          raccoons: 1,
+          squirrels: 1,
+          rabbits: 5,
+          rodents: 2,
+          groundhogs: 5
+        },
+
+        insectsRiskScore: 4,
+
+        diseaseRiskScore: 4,
+
+        lodgingRiskScore: 2,
+
+        fieldMoldRiskScore: 3,
+
+        dryingMoldRiskScore: 5,
+
+        storageMoldRiskScore: 4,
+
+        storedInsectRiskScore: 3,
+
+        spoilageSpeedRiskScore: 5,
+
+        invasivenessConcernRiskScore: 2,
+
+        selfSeedingRiskScore: 2,
+
+        fruitDropRiskScore: 1,
+
+        cropFailureRiskScore: 4,
+
+        stormDamageRiskScore: 2,
+
+        shadingOtherCropsRiskScore: 2,
+
+        overfeedingRiskScore: 3,
+
+        treatedSeedRiskScore: 5,
+
+        primaryRisks: [
+          {
+            id:
+              "poor-drainage-and-root-disease",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "establishment",
+              "crown-development",
+              "established-stand",
+              "winter"
+            ],
+
+            mitigationOptions: [
+              "Choose well-drained soil",
+              "Correct compaction",
+              "Avoid low wet areas",
+              "Use raised shaping where regionally appropriate",
+              "Select adapted disease-resistant varieties"
+            ],
+
+            note:
+              "Wet soil can damage roots and crowns and sharply shorten stand life."
+          },
+
+          {
+            id:
+              "chicken-crown-damage",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "seedling",
+              "crown-establishment",
+              "post-grazing-regrowth"
+            ],
+
+            mitigationOptions: [
+              "Exclude chickens during establishment",
+              "Use rotational paddocks",
+              "Rest grazed sections",
+              "Use temporary fencing",
+              "Harvest through cut-and-carry"
+            ],
+
+            note:
+              "Repeated scratching can expose or destroy Alfalfa crowns even when foliage regrows after cutting."
+          },
+
+          {
+            id:
+              "acidic-or-unbalanced-soil",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "establishment",
+              "root-development",
+              "nodulation",
+              "stand-persistence"
+            ],
+
+            mitigationOptions: [
+              "Test soil before planting",
+              "Apply lime early when needed",
+              "Correct phosphorus and potassium deficiencies",
+              "Use appropriate inoculant"
+            ],
+
+            note:
+              "Poor pH, fertility, or nodulation can create a weak short-lived stand."
+          },
+
+          {
+            id:
+              "weed-competition-during-establishment",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "germination",
+              "seedling",
+              "early-crown-development"
+            ],
+
+            mitigationOptions: [
+              "Prepare a clean seedbed",
+              "Control perennial weeds before planting",
+              "Plant at an appropriate density",
+              "Hand weed early",
+              "Avoid severely weedy ground"
+            ],
+
+            note:
+              "Small seedlings compete poorly with established weeds."
+          },
+
+          {
+            id:
+              "wet-forage-and-drying-mold",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "harvest",
+              "drying",
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Harvest during suitable weather",
+              "Dry thinly with airflow",
+              "Avoid compact wet piles",
+              "Do not seal damp forage",
+              "Inspect for heating, odor, or mold"
+            ],
+
+            note:
+              "Dense leafy forage can heat, ferment, or mold when drying is slow."
+          },
+
+          {
+            id:
+              "leaf-loss-during-drying",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "drying",
+              "handling",
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Handle gently",
+              "Avoid overdrying",
+              "Use screens or tarps",
+              "Store leaves and fine material carefully"
+            ],
+
+            note:
+              "Nutrient-rich leaves may shatter away from coarse stems during excessive drying or rough handling."
+          },
+
+          {
+            id:
+              "fresh-forage-spoilage",
+
+            severity:
+              "moderate",
+
+            affectedStages: [
+              "harvest",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Feed soon after cutting",
+              "Avoid wet compacted piles",
+              "Discard slimy or moldy material",
+              "Harvest clean untreated forage"
+            ],
+
+            note:
+              "Fresh cut Alfalfa deteriorates rapidly when left in warm wet piles."
+          },
+
+          {
+            id:
+              "chemically-treated-seed",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "planting",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use untreated seed where poultry may access planting material",
+              "Keep treated seed separated and labeled"
+            ],
+
+            note:
+              "Chemically treated planting seed must never be fed."
+          }
+        ],
+
+        directFacts: {
+          poultryCrownDamageConcern:
+            true,
+
+          waterloggingConcern:
+            true,
+
+          soilPHConcern:
+            true,
+
+          establishmentCompetitionConcern:
+            true,
+
+          dryingMoldConcern:
+            true,
+
+          leafShatterConcern:
+            true,
+
+          freshForageSpoilageConcern:
+            true,
+
+          notes: [
+            "Poor drainage and crown damage are among the most important backyard persistence risks.",
+            "Alfalfa tolerates repeated cutting better than uncontrolled scratching.",
+            "Hot humid weather can make dried-forage production difficult.",
+            "Fresh forage should be clean and free from pesticide residues unsuitable for poultry.",
+            "Moldy, musty, heated, slimy, or otherwise questionable forage should not be fed."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        earlySpring: true,
+
+        lateSpring: true,
+
+        summer: true,
+
+        lateSummer: true,
+
+        fall: true,
+
+        winterStorage: true,
+
+        perennial: true,
+
+        plantingWindows: [
+          {
+            id:
+              "spring-establishment",
+
+            trigger:
+              "early-spring",
+
+            offsetWeeksMinimum: 0,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "firm-well-drained-and-workable",
+
+            method:
+              "broadcast-small-seed",
+
+            note:
+              "Spring establishment is practical where seedlings can root before severe heat and weed pressure."
+          },
+
+          {
+            id:
+              "late-summer-establishment",
+
+            trigger:
+              "late-summer",
+
+            offsetWeeksMinimum: 0,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "moist-with-time-for-crown-development-before-winter",
+
+            method:
+              "broadcast-small-seed",
+
+            note:
+              "Late-summer establishment may reduce spring weed competition but requires adequate moisture and winter preparation."
+          }
+        ],
+
+        harvestWindows: [
+          {
+            id:
+              "rotational-living-forage",
+
+            trigger:
+              "established-crown-and-adequate-height",
+
+            usePathId:
+              "rotational-living-forage",
+
+            note:
+              "Allow controlled flock access, then remove birds while sufficient leaf area and intact crowns remain."
+          },
+
+          {
+            id:
+              "fresh-cut-and-carry",
+
+            trigger:
+              "healthy-vegetative-to-early-bud-growth",
+
+            usePathId:
+              "fresh-cut-and-carry",
+
+            note:
+              "Cut tender leafy growth and offer it promptly."
+          },
+
+          {
+            id:
+              "dried-leafy-forage",
+
+            trigger:
+              "healthy-forage-with-suitable-drying-weather",
+
+            usePathId:
+              "dried-leafy-forage",
+
+            note:
+              "Cut and dry thinly under protected ventilated conditions."
+          }
+        ],
+
+        cropSequenceRoles: [
+          "Perennial protein-oriented forage",
+          "Rotational poultry pasture",
+          "Cut-and-carry forage plot",
+          "Dried leafy forage crop",
+          "Nitrogen-fixing soil-building crop",
+          "Pollinator-supporting perennial"
+        ],
+
+        seasonalLimitations: [
+          "Winter dormancy may stop fresh production",
+          "Wet weather complicates drying",
+          "New seedlings cannot withstand chicken pressure",
+          "Repeated late fall cutting may weaken winter survival",
+          "Poor drainage can destroy perennial crowns"
+        ],
+
+        directFacts: {
+          coolSeasonPerennial:
+            true,
+
+          springEstablishmentPossible:
+            true,
+
+          lateSummerEstablishmentPossible:
+            true,
+
+          repeatedHarvestPossible:
+            true,
+
+          winterDormancyPossible:
+            true,
+
+          postharvestDryingPossible:
+            true,
+
+          notes: [
+            "Alfalfa can produce multiple forage harvests during a growing season.",
+            "Peak growth varies by climate, moisture, variety, and cutting schedule.",
+            "Recovery periods allow root reserves and crown growth to rebuild.",
+            "Fresh forage may be available from spring through fall.",
+            "Properly dried leafy forage can extend usefulness beyond the growing season."
+          ]
+        }
+      },
+
+      usePaths: [
+        {
+          id:
+            "rotational-living-forage",
+
+          label:
+            "Rotational Alfalfa Forage",
+
+          description:
+            "An established Alfalfa or Alfalfa-grass stand accessed by chickens for short controlled periods followed by sufficient crown and foliage recovery.",
+
+          primaryFeedRole:
+            "protein-oriented-living-forage",
+
+          harvestProducts: [
+            "living-forage",
+            "fresh-greens",
+            "pasture-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "living-grazing",
+            "rotational-paddock",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [],
+
+          optionalProcessingTasks: [],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "fencing",
+            "temporary-fencing",
+            "drip-irrigation"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "rotational",
+
+          storageMethods: [
+            "living-crop"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: false,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: false,
+
+          moldRiskScore: 1,
+
+          rodentRiskScore: 1,
+
+          storedInsectRiskScore: 1,
+
+          harvestEaseScore: 4,
+
+          preparationEaseScore: 5,
+
+          beginnerSuitabilityScore: 3,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Exclude chickens while the stand establishes.",
+            "Remove birds before scratching exposes or destroys crowns.",
+            "Do not use forage treated with chemicals unsuitable for poultry access.",
+            "Living forage remains supplemental to complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-ground-access",
+            "cannot-rotate-flock",
+            "requires-long-term-storage",
+            "requires-annual-reversibility"
+          ]
+        },
+
+        {
+          id:
+            "fresh-cut-and-carry",
+
+          label:
+            "Fresh Cut-and-Carry Alfalfa",
+
+          description:
+            "Clean tender Alfalfa foliage harvested from a protected plot and offered promptly as a fresh protein-oriented green supplement.",
+
+          primaryFeedRole:
+            "fresh-green-protein-oriented",
+
+          harvestProducts: [
+            "fresh-greens",
+            "fresh-forage",
+            "alfalfa-foliage"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-supplement",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves"
+          ],
+
+          optionalProcessingTasks: [
+            "chop"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "basket"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "several-weekly",
+
+          storageMethods: [
+            "short-term-fresh"
+          ],
+
+          preferredStorageMethod:
+            "feed-soon-after-harvest",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable: false,
+
+          refrigerationSuitable: true,
+
+          freezingSuitable: false,
+
+          dryingRequired: false,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 2,
+
+          rodentRiskScore: 1,
+
+          storedInsectRiskScore: 1,
+
+          harvestEaseScore: 5,
+
+          preparationEaseScore: 5,
+
+          beginnerSuitabilityScore: 4,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Harvest only clean healthy Alfalfa from an untreated and uncontaminated area.",
+            "Do not feed moldy, slimy, fermented, manure-contaminated, or roadside forage.",
+            "Avoid leaving fresh wet Alfalfa in a compacted pile.",
+            "Fresh Alfalfa remains supplemental to a complete poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-storage",
+            "has-no-time-for-fresh-harvest",
+            "wants-dry-grain-only"
+          ]
+        },
+
+        {
+          id:
+            "dried-leafy-forage",
+
+          label:
+            "Dried Leafy Alfalfa Forage",
+
+          description:
+            "Leafy Alfalfa harvested, dried thoroughly with protected airflow, and stored for measured supplemental feeding.",
+
+          primaryFeedRole:
+            "dried-protein-oriented-forage",
+
+          harvestProducts: [
+            "dried-forage",
+            "dried-leaves",
+            "alfalfa-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "dried-forage",
+            "measured-supplement",
+            "winter-storage"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves",
+            "dry",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "grind"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "food-safe-bucket",
+            "moisture-meter"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "repeated-seasonal",
+
+          storageMethods: [
+            "dried-forage"
+          ],
+
+          preferredStorageMethod:
+            "dry-dark-ventilated-and-rodent-protected",
+
+          storageDurationCategory:
+            "medium-long",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: true,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 5,
+
+          rodentRiskScore: 3,
+
+          storedInsectRiskScore: 3,
+
+          harvestEaseScore: 3,
+
+          preparationEaseScore: 2,
+
+          beginnerSuitabilityScore: 2,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 4,
+
+          safetyWarnings: [
+            "Dry forage thoroughly before enclosed storage.",
+            "Do not store material that feels damp, heats, smells musty, or shows visible mold.",
+            "Protect dried forage from rodents, insects, moisture, and contamination.",
+            "Handle gently to reduce loss of nutrient-rich leaves.",
+            "Do not feed dusty, moldy, musty, or otherwise questionable forage.",
+            "Dried Alfalfa remains supplemental to complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "has-no-protected-drying-area",
+            "requires-minimal-processing",
+            "has-no-dry-storage"
+          ]
+        }
+      ],
+
+      dataQuality: {
+        overallConfidence: 0.79,
+
+        verifiedFields: [
+          "identity",
+          "lifecycle",
+          "climate.directFacts.seasonType",
+          "climate.directFacts.deepRootedPerennial",
+          "site.directFacts.preferredLight",
+          "soil.directFacts.nitrogenFixingLegume",
+          "soil.directFacts.deepTaprooted",
+          "soil.directFacts.waterloggedSoilSuitable",
+          "soil.directFacts.acidicSoilConcern",
+          "water.directFacts.establishmentMoistureImportant",
+          "water.directFacts.deepRootsImproveDroughtSurvival",
+          "space.directFacts.rotationalPaddockSuitable",
+          "space.directFacts.cutAndCarryPlotSuitable",
+          "flock.directFacts.edibleFeedParts",
+          "flock.directFacts.nutritionalOrientation",
+          "risks.directFacts.poultryCrownDamageConcern",
+          "risks.directFacts.waterloggingConcern",
+          "risks.directFacts.dryingMoldConcern",
+          "seasonalRoles.directFacts.coolSeasonPerennial",
+          "seasonalRoles.directFacts.repeatedHarvestPossible"
+        ],
+
+        derivedFields: [
+          "climate",
+          "site",
+          "soil.textureScores",
+          "water",
+          "space.smallSpaceScore",
+          "space.mediumSpaceScore",
+          "space.largeSpaceScore",
+          "space.layoutScores",
+          "space.spaceTypeScores",
+          "flock.flockPurposeScores",
+          "flock.feedingMethodScores",
+          "labor",
+          "cost",
+          "goals",
+          "risks.wildlife",
+          "usePaths.rotational-living-forage",
+          "usePaths.fresh-cut-and-carry",
+          "usePaths.dried-leafy-forage"
+        ],
+
+        uncertainFields: [
+          "lifecycle.expectedUsefulLifeYears",
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.minimumSoilTemperatureF",
+          "climate.preferredSoilTemperatureF",
+          "soil.minimumSoilDepthIn",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance",
+          "usePaths.rotational-living-forage.sustainableStockingPressure",
+          "usePaths.fresh-cut-and-carry.exactStorageDuration",
+          "usePaths.dried-leafy-forage.exactStorageDuration"
+        ],
+
+        missingFields: [
+          "lifecycle.expectedUsefulLifeYears",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "flock.portionGuidance",
+          "flock.usePathTesting"
+        ],
+
+        lastReviewed:
+          "2026-07-15",
+
+        primarySources: [
+          {
+            title:
+              "Alfalfa Production and Management",
+
+            organization:
+              "University and Cooperative Extension forage resources",
+
+            sourceType:
+              "extension-forage-guide",
+
+            use:
+              "Establishment, soil pH, drainage, fertility, inoculation, root development, cutting, drought tolerance, and stand persistence"
+          },
+
+          {
+            title:
+              "Alfalfa Plant and Forage Resources",
+
+            organization:
+              "United States Department of Agriculture",
+
+            sourceType:
+              "government-plant-guide",
+
+            use:
+              "Botany, perennial lifecycle, nitrogen fixation, forage value, adaptation, erosion control, and wildlife use"
+          },
+
+          {
+            title:
+              "Alfalfa in Poultry Nutrition",
+
+            organization:
+              "Poultry-feed and animal-nutrition research resources",
+
+            sourceType:
+              "feed-nutrition-reference",
+
+            use:
+              "Dehydrated Alfalfa meal, carotenoids, pigmentation, protein, fiber, and supplemental poultry-feed use"
+          },
+
+          {
+            title:
+              "Hay Drying and Storage",
+
+            organization:
+              "University Cooperative Extension resources",
+
+            sourceType:
+              "extension-storage-guide",
+
+            use:
+              "Moisture control, leaf loss, mold prevention, heating, ventilation, and dry-forage storage"
+          }
+        ],
+
+        notes: [
+          "Alfalfa plannerData is specific to Medicago sativa grown as perennial forage.",
+          "The record treats fresh cut-and-carry forage, rotational living forage, and dried leafy forage as separate use paths.",
+          "Fresh leafy growth is more practical for backyard poultry than coarse mature stems.",
+          "The record does not treat Alfalfa as an energy grain or complete poultry ration.",
+          "No exact sustainable chicken stocking density has been assigned.",
+          "No exact flock feeding portion has been assigned.",
+          "No medicinal claims are made.",
+          "The crop should remain in testing until deep-soil, drought, protein-forage, dried-forage, rotational-grazing, and poor-drainage profiles are evaluated."
+        ]
+      }
     }
   },
 
-    "CROP-MULBERRY": {
+  "CROP-MULBERRY": {
     id: "CROP-MULBERRY",
 
     name: "Mulberry",
