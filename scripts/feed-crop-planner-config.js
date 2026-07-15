@@ -2716,7 +2716,6 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
     harvestStorage: {
       desiredHarvestProducts: [
-        "fresh-fruit",
         "fallen-fruit",
         "mulberries",
         "mulberry-leaves",
@@ -2789,10 +2788,7 @@ const HARVEST_FREQUENCY_CATEGORIES =
         "permanent-planting-allowed",
 
       wildlifePestPressure: [
-        "wild-birds",
-        "deer",
-        "raccoons",
-        "squirrels"
+        "deer"
       ],
 
       desiredRecommendationFormat:
