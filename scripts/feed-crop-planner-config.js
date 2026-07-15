@@ -1776,7 +1776,399 @@ const HARVEST_FREQUENCY_CATEGORIES =
     answers: {
       /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
     }
+
+      }),
+
+  // ==================================================
+  // WHITE CLOVER TEST PROFILES
+  // ==================================================
+
+  // --------------------------------------------------
+  // Profile 14: Rotational Orchard and Pasture Clover
+  // ID: PROFILE-CLOVER-ROTATIONAL-ORCHARD
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-CLOVER-ROTATIONAL-ORCHARD",
+
+    label:
+      "Rotational Orchard and Pasture Clover Plan",
+
+    description:
+      "A homestead grower with an established orchard and rotational paddocks who wants perennial living forage, nitrogen fixation, ground cover, and pollinator support.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 14,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "rotational-paddock"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 1200,
+
+        availableSpaceTypes: [
+          "orchard",
+          "rotational-paddock",
+          "unused-lawn",
+          "in-ground"
+        ],
+
+        largestAreaShape:
+          "irregular",
+
+        overflowOptions: [
+          "unused-lawn",
+          "orchard-floor"
+        ],
+
+        plantBehaviorRestrictions: []
+      },
+
+      site: {
+        directSunHoursExact: 6,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "intermediate",
+
+        weeklyCropTime:
+          "1-2-hours",
+
+        acceptedProcessingTasks: [],
+
+        dryingCapability:
+          "none",
+
+        dryingFacilities: [],
+
+        ownedEquipment: [
+          "fencing",
+          "drip-irrigation"
+        ],
+
+        equipmentPurchaseWillingness: [
+          "temporary-fencing"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "living-forage",
+          "pasture-forage",
+          "fresh-greens"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        desiredStorageDuration:
+          "immediate",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        storageHumidity:
+          "usually-dry",
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "living-forage",
+          "fresh-greens",
+          "soil-improvement",
+          "nitrogen-fixation",
+          "ground-cover",
+          "erosion-control",
+          "pollinators",
+          "self-reliance",
+          "use-unused-space"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "living-forage",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "nitrogen-fixation",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "ground-cover",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "moderate",
+
+        annualPerennialPreference:
+          "perennial-preferred",
+
+        reversibilityRequirement:
+          "permanent-planting-allowed",
+
+        wildlifePestPressure: [
+          "deer",
+          "rabbits",
+          "groundhogs"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  // --------------------------------------------------
+  // Profile 15: Protected Chicken-Run Forage Frame
+  // ID: PROFILE-CLOVER-PROTECTED-FORAGE-FRAME
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-CLOVER-PROTECTED-FORAGE-FRAME",
+
+    label:
+      "Protected Chicken-Run Forage-Frame Plan",
+
+    description:
+      "A beginner with a confined flock, a protected forage frame, dependable watering, partial sun, and a desire for low-maintenance living greens that can survive repeated flock use.",
+
+    answers: {
+      climate: {
+        climateType:
+          "mild-winter",
+
+        frostFreeSeasonRange:
+          "210-plus"
+      },
+
+      flock: {
+        flockSize: 7,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 48,
+
+        availableSpaceTypes: [
+          "forage-frame",
+          "in-ground"
+        ],
+
+        largestAreaShape:
+          "small-beds",
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "must-remain-low-growing"
+        ]
+      },
+
+      site: {
+        directSunHoursExact: 5,
+
+        windExposure:
+          "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "clay-loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [],
+
+        dryingCapability:
+          "none",
+
+        dryingFacilities: [],
+
+        ownedEquipment: [
+          "forage-frame",
+          "drip-irrigation"
+        ],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "living-forage",
+          "fresh-greens"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        desiredStorageDuration:
+          "immediate",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        storageHumidity:
+          "often-humid",
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "living-forage",
+          "fresh-greens",
+          "enrichment",
+          "ground-cover",
+          "soil-improvement",
+          "nitrogen-fixation",
+          "pollinators",
+          "fast-value"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "living-forage",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "enrichment",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "perennial-preferred",
+
+        reversibilityRequirement:
+          "permanent-planting-allowed",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
+
+  // ==================================================
+  // END OF SAMPLE USER PROFILES
+  // ==================================================
 
 ]);
 
