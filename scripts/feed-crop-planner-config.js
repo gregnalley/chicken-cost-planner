@@ -2164,6 +2164,422 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
+  }),
+
+  // ==================================================
+  // ALFALFA TEST PROFILES
+  // ==================================================
+
+  // --------------------------------------------------
+  // Profile 16: Deep Well-Drained Protein Forage
+  // ID: PROFILE-ALFALFA-DEEP-PROTEIN-FORAGE
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-ALFALFA-DEEP-PROTEIN-FORAGE",
+
+    label:
+      "Deep Well-Drained Protein Forage Plan",
+
+    description:
+      "An experienced grower with deep well-drained soil, full sun, dependable water, a large perennial forage plot, and the ability to produce both fresh and dried protein-oriented forage.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 18,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "rotational-paddock"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 1600,
+
+        availableSpaceTypes: [
+          "open-field",
+          "rotational-paddock",
+          "in-ground"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle",
+
+        overflowOptions: [
+          "open-field"
+        ],
+
+        plantBehaviorRestrictions: []
+      },
+
+      site: {
+        directSunHoursExact: 9,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "sandy-loam",
+
+        soilDrainage:
+          "well-drained",
+
+        soilDepthCategory:
+          "deep",
+
+        soilPHCategory:
+          "near-neutral"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+
+        weeklyCropTime:
+          "3-5-hours",
+
+        acceptedProcessingTasks: [
+          "cut-leaves",
+          "dry",
+          "clean-sort",
+          "chop"
+        ],
+
+        dryingCapability:
+          "large-covered",
+
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays",
+          "rodent-proof"
+        ],
+
+        ownedEquipment: [
+          "fencing",
+          "temporary-fencing",
+          "hand-pruners",
+          "sickle",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "food-safe-bucket"
+        ],
+
+        equipmentPurchaseWillingness: [
+          "moisture-meter"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-forage",
+          "alfalfa-foliage",
+          "dried-forage",
+          "dried-leaves",
+          "alfalfa-forage"
+        ],
+
+        harvestPatternPreference:
+          "mixed",
+
+        desiredStorageDuration:
+          "3-6-months",
+
+        minimalPreparationPriority:
+          "low",
+
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        dryCropContainerType:
+          "airtight-food-safe",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "protein-oriented",
+          "fresh-greens",
+          "living-forage",
+          "winter-storage",
+          "soil-improvement",
+          "nitrogen-fixation",
+          "compost-biomass",
+          "self-reliance"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "protein-oriented",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "living-forage",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "winter-storage",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "protein-oriented",
+
+        beginnerFriendlinessPriority:
+          "low",
+
+        annualPerennialPreference:
+          "perennial-preferred",
+
+        reversibilityRequirement:
+          "permanent-planting-allowed",
+
+        wildlifePestPressure: [
+          "deer",
+          "rabbits",
+          "groundhogs"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  // --------------------------------------------------
+  // Profile 17: Wet Acidic Clay Backyard
+  // ID: PROFILE-ALFALFA-WET-ACIDIC-CLAY
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-ALFALFA-WET-ACIDIC-CLAY",
+
+    label:
+      "Wet Acidic Clay Backyard Plan",
+
+    description:
+      "A beginner with a small humid backyard, heavy acidic clay, poor drainage, no drying capacity, and a goal of producing simple fresh greens with very little processing.",
+
+    answers: {
+      climate: {
+        climateType:
+          "hot-humid",
+
+        frostFreeSeasonRange:
+          "210-plus"
+      },
+
+      flock: {
+        flockSize: 6,
+
+        primaryFlockPurpose:
+          "eggs",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 48,
+
+        availableSpaceTypes: [
+          "raised-bed",
+          "in-ground"
+        ],
+
+        largestAreaShape:
+          "small-beds",
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "no-permanent-large-stand"
+        ]
+      },
+
+      site: {
+        directSunHoursExact: 6,
+
+        windExposure:
+          "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "heavy-clay",
+
+        soilDrainage:
+          "poor",
+
+        soilDepthCategory:
+          "shallow",
+
+        soilPHCategory:
+          "acidic"
+      },
+
+      water: {
+        waterReliability:
+          "rainfall-only",
+
+        wateringFrequencyPreference:
+          "as-needed",
+
+        waterConservationPriority:
+          "low",
+
+        criticalStageWaterAvailability:
+          "unreliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "cut-leaves"
+        ],
+
+        dryingCapability:
+          "none",
+
+        dryingFacilities: [],
+
+        ownedEquipment: [
+          "hand-pruners"
+        ],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-forage"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        desiredStorageDuration:
+          "immediate",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        storageHumidity:
+          "often-humid",
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "enrichment",
+          "fast-value"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "fast-value",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "enrichment",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "no-preference",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
 
   // ==================================================
@@ -2171,6 +2587,7 @@ const HARVEST_FREQUENCY_CATEGORIES =
   // ==================================================
 
 ]);
+
 
 // ==================================================
 // PROFILE MATRIX EXPECTATIONS
