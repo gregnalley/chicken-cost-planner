@@ -10573,8 +10573,1681 @@ plannerData: {
         "Plant-density fields remain null because white clover is established by seeding rate and spreads through rooted stolons, making individual mature plants per square foot an unreliable measurement."
 
       ]
+    },
+
+   plannerData: {
+  schemaVersion: "1.0.0",
+
+  developmentStatus:
+    "testing",
+
+  identity: {
+    plannerName:
+      "White Clover",
+
+    shortLabel:
+      "White Clover",
+
+    icon:
+      "☘️",
+
+    cropCategory:
+      "perennial-legume",
+
+    primaryFeedCategory:
+      "living-forage",
+
+    guideUrl:
+      "growing-white-clover-for-chickens.html"
+  },
+
+  lifecycle: {
+    growthCycle:
+      "perennial",
+
+    isAnnual: false,
+    isBiennial: false,
+    isPerennial: true,
+    isTreeOrShrub: false,
+
+    yearsToFirstUsefulHarvest: 0,
+    yearsToFullProduction: 1,
+    expectedUsefulLifeYears: null,
+
+    regrowsAfterHarvest: true,
+
+    permanentPlantingRequired: true,
+    reversibleAfterOneSeason: false
+  },
+
+  climate: {
+    suitableClimateTypes: [
+      "cold-short-summer",
+      "cool-moderate-summer",
+      "temperate",
+      "mild-winter",
+      "high-elevation"
+    ],
+
+    preferredClimateTypes: [
+      "cool-moderate-summer",
+      "temperate",
+      "mild-winter"
+    ],
+
+    challengingClimateTypes: [
+      "hot-dry",
+      "hot-humid"
+    ],
+
+    minimumFrostFreeDays: null,
+    preferredFrostFreeDays: null,
+
+    minimumSoilTemperatureF: null,
+    preferredSoilTemperatureF: null,
+
+    daysToMaturityMinimum: null,
+    daysToMaturityMaximum: null,
+
+    dryDownBufferDays: null,
+
+    heatToleranceScore: 2,
+
+    droughtClimateToleranceScore: 2,
+
+    humidityToleranceScore: 4,
+
+    coolSummerToleranceScore: 5,
+
+    frostSensitivityScore: 1,
+
+    winterHardinessRequired: true,
+
+    seasonExtensionBenefits: [
+      "Early fall establishment can allow rooting before winter in suitable climates.",
+      "Spring seeding can avoid severe summer establishment stress.",
+      "Temporary irrigation can greatly improve establishment during dry weather.",
+      "Protected run sections can allow stands to establish before chickens gain access."
+    ],
+
+    indoorSeedStartingBenefitScore: 1,
+
+    directFacts: {
+      seasonType:
+        "cool-season-perennial",
+
+      frostSensitive: false,
+
+      commonlyDirectSeeded: true,
+
+      winterDormancyPossible: true,
+
+      heatDormancyPossible: true,
+
+      stoloniferousPerennial: true,
+
+      establishmentTimingHighlyRegional:
+        true,
+
+      notes: [
+        "White Clover is a cool-season perennial forage legume.",
+        "It spreads through creeping stolons that root at nodes and form a low mat.",
+        "Established stands tolerate freezing weather better than frost-sensitive annual crops.",
+        "Growth may slow or stop during winter dormancy.",
+        "Hot dry summer conditions can reduce growth, leaf production, and stand persistence.",
+        "Southern plantings may perform best during cooler portions of the year or where moisture remains dependable.",
+        "Exact establishment windows should be based on regional forage guidance rather than a single national calendar.",
+        "The planner does not use days-to-maturity because White Clover is managed as a persistent living stand rather than a one-time mature harvest."
+      ]
     }
   },
+
+  site: {
+    absoluteMinimumSunHours: 3,
+
+    productiveMinimumSunHours: 4,
+
+    preferredSunHours: 6,
+
+    shadeToleranceScore: 4,
+
+    afternoonShadeBenefitInHeat: 5,
+
+    windToleranceScore: 5,
+
+    lodgingRiskScore: 1,
+
+    reflectedHeatToleranceScore: 2,
+
+    airflowRequirementScore: 3,
+
+    frostPocketSensitivityScore: 1,
+
+    treeRootCompetitionToleranceScore: 3,
+
+    hardscapeConflictRiskScore: 2,
+
+    structureConflictRiskScore: 1,
+
+    utilityConflictRiskScore: 1,
+
+    fruitDropMessRiskScore: 1,
+
+    stainingRiskScore: 2,
+
+    directFacts: {
+      preferredLight:
+        "full-sun-to-partial-shade",
+
+      productiveSunGuidance:
+        "Approximately 4 to 6 or more hours of direct sunlight, with adequate moisture becoming increasingly important in exposed hot sites.",
+
+      windExposureConcern:
+        false,
+
+      growthHabit:
+        "low-creeping-stoloniferous",
+
+      floweringPollinatorTraffic:
+        true,
+
+      notes: [
+        "White Clover can remain productive under more partial shade than most grain crops.",
+        "Full sun generally supports the strongest flowering and biomass where moisture is sufficient.",
+        "Afternoon shade can improve summer persistence in hot regions.",
+        "Very dense tree shade and severe root competition can reduce stand density.",
+        "Its low growth habit creates little wind or structural conflict.",
+        "Flowering stands attract bees and other pollinating insects.",
+        "Bee activity should be considered where barefoot children, pets, or frequently handled chickens use the same area."
+      ]
+    }
+  },
+
+  soil: {
+    textureScores: {
+      heavyClay: 3,
+      clayLoam: 5,
+      loam: 5,
+      sandyLoam: 4,
+      verySandy: 2,
+      rocky: 2
+    },
+
+    drainageRequirementScore: 4,
+
+    temporaryWetToleranceScore: 3,
+
+    waterloggingSensitivityScore: 4,
+
+    minimumSoilDepthIn: null,
+    preferredSoilDepthIn: 12,
+
+    compactionToleranceScore: 3,
+
+    establishmentInSodDifficultyScore: 4,
+
+    preferredPHMinimum: 6.0,
+    preferredPHMaximum: 7.0,
+
+    survivalPHMinimum: null,
+    survivalPHMaximum: null,
+
+    fertilityRequirementScore: 3,
+
+    nitrogenRequirementScore: 1,
+    phosphorusRequirementScore: 4,
+    potassiumRequirementScore: 4,
+
+    benefitsFromInoculation: true,
+
+    inoculantType:
+      "Clover-group Rhizobium inoculant",
+
+    saltToleranceScore: null,
+
+    amendmentEffortScore: 3,
+
+    directFacts: {
+      preferredDrainage:
+        "well-drained-to-moderately-moist",
+
+      preferredTextures: [
+        "loam",
+        "clay loam",
+        "moist sandy loam"
+      ],
+
+      nitrogenFixingLegume:
+        true,
+
+      inoculationMayImproveNodulation:
+        true,
+
+      shallowRooted:
+        true,
+
+      waterloggedSoilSuitable:
+        false,
+
+      notes: [
+        "White Clover performs best in fertile soil with dependable moisture and suitable drainage.",
+        "Loam and clay-loam soils commonly provide a favorable balance of moisture retention and drainage.",
+        "Very sandy soil may dry too rapidly for dependable summer persistence.",
+        "Persistently saturated soil can cause poor rooting, disease, and stand loss.",
+        "White Clover can fix atmospheric nitrogen when compatible rhizobia and suitable soil conditions are present.",
+        "Clover-group inoculant may improve nodulation where compatible clovers have not recently grown.",
+        "Nitrogen fertilizer is generally unnecessary for the Clover itself and may encourage competing grasses.",
+        "Phosphorus, potassium, sulfur, soil pH, and other nutrient limitations can still restrict Clover establishment and production.",
+        "The stored pH values represent a productive planning range rather than absolute survival limits."
+      ]
+    }
+  },
+
+  water: {
+    overallWaterRequirementLevel:
+      "moderate",
+
+    germinationWaterNeedLevel:
+      "high",
+
+    establishmentWaterNeedLevel:
+      "high",
+
+    matureWaterNeedLevel:
+      "moderate",
+
+    floweringWaterNeedLevel:
+      "moderate",
+
+    harvestDevelopmentWaterNeedLevel:
+      "moderate",
+
+    droughtSurvivalScore: 3,
+
+    droughtYieldRetentionScore: 2,
+
+    criticalGrowthStages: [
+      "germination",
+      "seedling-establishment",
+      "stolon-establishment",
+      "post-grazing-regrowth",
+      "summer-stress"
+    ],
+
+    criticalStageWaterImportanceScore: 5,
+
+    overwateringSensitivityScore: 3,
+
+    waterloggingSensitivityScore: 4,
+
+    dripIrrigationBenefitScore: 4,
+
+    mulchBenefitScore: 1,
+
+    suitableForRainfallOnlyScore: 4,
+
+    suitableForLimitedIrrigationScore: 3,
+
+    containerDryingRiskScore: 5,
+
+    establishmentYearsRequiringExtraWater: 1,
+
+    directFacts: {
+      establishmentMoistureImportant:
+        true,
+
+      shallowRootsIncreaseDroughtRisk:
+        true,
+
+      postGrazingMoistureImportant:
+        true,
+
+      standingWaterSuitable:
+        false,
+
+      irrigationCanImproveSummerPersistence:
+        true,
+
+      notes: [
+        "White Clover seed and young seedlings require dependable surface moisture because seed is small and planted shallowly.",
+        "New stands can fail when the soil surface dries repeatedly during germination.",
+        "Established White Clover can survive moderate dry periods, but shallow roots limit forage production during prolonged drought.",
+        "Moisture supports stolon rooting and regrowth after grazing or cutting.",
+        "Rainfall-only production is practical in many cool or humid regions.",
+        "Supplemental irrigation can materially improve summer persistence in hot or seasonally dry locations.",
+        "Saturated soil and prolonged standing water remain undesirable."
+      ]
+    }
+  },
+
+  space: {
+    minimumTrialAreaSqFt: null,
+
+    minimumUsefulAreaSqFt: null,
+
+    preferredProductionAreaSqFt: null,
+
+    smallSpaceScore: 4,
+
+    mediumSpaceScore: 5,
+
+    largeSpaceScore: 5,
+
+    layoutScores: {
+      squareBlock: 5,
+      wideRectangle: 5,
+      longStrip: 5,
+      irregular: 5,
+      smallBeds: 4,
+      openField: 5
+    },
+
+    spaceTypeScores: {
+      inGround: 5,
+      raisedBed: 3,
+      container: 1,
+      fenceLine: 4,
+      buildingEdge: 3,
+      unusedLawn: 5,
+      openField: 5,
+      orchard: 5,
+      forageFrame: 5,
+      rotationalPaddock: 5,
+      greenhouse: 1,
+      hedgerow: 3
+    },
+
+    minimumContainerGallons: null,
+
+    containerUseLimitation:
+      "White Clover can grow in containers, but shallow containers dry quickly and provide little useful living forage for a flock.",
+
+    minimumRaisedBedDepthIn: null,
+
+    vineSpreadRequired: false,
+
+    verticalSupportBenefitScore: 1,
+
+    blockPlantingRequired: false,
+
+    minimumBlockRows: null,
+
+    continuousStandPreferred: true,
+
+    heightCategory:
+      "very-low",
+
+    matureWidthCategory:
+      "spreading-ground-cover",
+
+    overflowSpaceBenefitScore: 5,
+
+    directFacts: {
+      denseStandSuitable: true,
+
+      mixedPastureSuitable: true,
+
+      lawnOverseedingSuitable:
+        true,
+
+      orchardFloorSuitable:
+        true,
+
+      forageFrameSuitable:
+        true,
+
+      rotationalPaddockSuitable:
+        true,
+
+      containerFeedProductionEfficient:
+        false,
+
+      notes: [
+        "White Clover is most useful as a continuous living stand rather than isolated individual plants.",
+        "It can be incorporated into lawns, orchards, pasture mixtures, protected chicken areas, and rotational paddocks.",
+        "Irregular sites and unused lawn areas can be productive Clover spaces.",
+        "Forage frames can protect crowns and stolons while allowing chickens to reach foliage.",
+        "Mixed Clover-and-grass stands may provide stronger ground stability than pure Clover.",
+        "Containers provide poor feed value relative to watering effort.",
+        "The crop spreads laterally and may move beyond the intended planting boundary.",
+        "Minimum useful area remains null until flock pressure, stand recovery, and rotation length are tested."
+      ]
+    }
+  },
+
+  flock: {
+    suitableForAdultChickens: true,
+
+    suitableForYoungChicks: false,
+
+    flockPurposeScores: {
+      eggs: 4,
+      meat: 4,
+      breeding: 4,
+      petsEnrichment: 5,
+      homestead: 5,
+      mixed: 5
+    },
+
+    feedingMethodScores: {
+      livingGrazing: 5,
+      cutAndCarry: 4,
+      wholeProduce: 1,
+      wholeSeedHeads: 1,
+      wholeGrain: 1,
+      processedGrain: 1,
+      heatTreated: 1,
+      driedForage: 2,
+      winterStorage: 1
+    },
+
+    directRunSuitabilityScore: 3,
+
+    forageFrameSuitabilityScore: 5,
+
+    rotationalPaddockSuitabilityScore: 5,
+
+    confinedFlockValueScore: 4,
+
+    pasturedFlockValueScore: 5,
+
+    treatDilutionRiskScore: 2,
+
+    highEnergySupplement: false,
+
+    highFiberSupplement: true,
+
+    concentratedFatSource: false,
+
+    primaryFlockUses: [
+      "Rotational living forage",
+      "Protected forage-frame greens",
+      "Fresh cut-and-carry forage",
+      "Mixed pasture diversity",
+      "Run and orchard ground cover"
+    ],
+
+    unsuitablePrimaryUses: [
+      "Complete-ration replacement",
+      "Long-term dry feed storage",
+      "High-energy supplementation",
+      "Unrestricted access to a new stand",
+      "Primary young-chick feed"
+    ],
+
+    directFacts: {
+      edibleFeedParts: [
+        "Fresh leaves",
+        "Tender petioles",
+        "Flowers",
+        "Tender stolon growth"
+      ],
+
+      preferredBirdStage:
+        "Established adult chickens",
+
+      cropSurvivalWithDirectChickenAccess:
+        "moderate-after-establishment-and-low-to-moderate-grazing-pressure",
+
+      directAccessTiming:
+        "Allow a dense rooted stand to establish before controlled access, and rotate birds away before crowns and stolons are destroyed.",
+
+      nutritionalOrientation: [
+        "living-forage",
+        "fresh-green",
+        "protein-oriented-forage",
+        "fiber",
+        "enrichment",
+        "soil-building"
+      ],
+
+      balancedFeedReplacement:
+        false,
+
+      notes: [
+        "White Clover is primarily valuable as living forage rather than harvested concentrated feed.",
+        "Its low stolon-forming growth habit helps it recover from close grazing better than many upright legumes.",
+        "Chicken scratching can still uproot seedlings, expose stolons, and destroy crowns.",
+        "Rotational access is more sustainable than permanent unrestricted access.",
+        "Forage frames can preserve roots and growing points in small chicken runs.",
+        "Fresh cut Clover can provide greens to confined flocks when harvested from a clean untreated area.",
+        "White Clover contains substantial moisture and fiber and should not replace complete poultry feed.",
+        "Young chicks should continue receiving an age-appropriate complete starter ration.",
+        "The planner does not assign a medicinal use or disease-treatment claim to White Clover."
+      ]
+    }
+  },
+
+  labor: {
+    beginnerFriendlinessScore: 4,
+
+    plantingEaseScore: 3,
+
+    establishmentEaseScore: 3,
+
+    routineMaintenanceEaseScore: 5,
+
+    weedControlEaseScore: 3,
+
+    wildlifeProtectionEaseScore: 4,
+
+    harvestEaseScore: 5,
+
+    freshForageProcessingEaseScore: 5,
+
+    pastureManagementEaseScore: 3,
+
+    storageMonitoringEaseScore: 5,
+
+    perennialMaintenanceEaseScore: 5,
+
+    physicalAccessibilityScore: 5,
+
+    heavyLiftingRiskScore: 1,
+
+    weeklyLaborLevel:
+      "very-low",
+
+    peakWorkloadLevel:
+      "moderate",
+
+    harvestFrequencyCategory:
+      "continuous",
+
+    requiredPlantingTasks: [
+      "prepare-seedbed",
+      "broadcast-small-seed"
+    ],
+
+    optionalPlantingTasks: [
+      "inoculate-legume-seed",
+      "install-irrigation"
+    ],
+
+    requiredMaintenanceTasks: [
+      "hand-weed"
+    ],
+
+    optionalMaintenanceTasks: [
+      "protect-from-wildlife"
+    ],
+
+    requiredHarvestTasks: [
+      "cut-leaves"
+    ],
+
+    usePathProcessingTasks: {
+      rotationalLivingForage: [],
+
+      protectedForageFrame: [],
+
+      freshCutAndCarry: [
+        "cut-leaves"
+      ]
+    },
+
+    requiredStorageTasks: [],
+
+    specializedEquipmentRequired: [],
+
+    specializedEquipmentHelpful: [
+      "forage-frame",
+      "fencing",
+      "hand-pruners",
+      "basket",
+      "drip-irrigation"
+    ],
+
+    suitableForLowTimeUsersScore: 5,
+
+    suitableForSoloGrowersScore: 5,
+
+    directFacts: {
+      seedSize:
+        "very-small",
+
+      directSeedingSuitable: true,
+
+      specializedHarvestEquipmentRequiredForBackyardScale:
+        false,
+
+      majorLaborBottlenecks: [
+        "Preparing seed-to-soil contact for very small seed",
+        "Maintaining surface moisture during establishment",
+        "Controlling weeds before the stand closes",
+        "Protecting seedlings from chickens",
+        "Managing grazing rotations",
+        "Preventing unwanted spread into neighboring beds"
+      ],
+
+      notes: [
+        "White Clover seed is small and should not be planted deeply.",
+        "Successful establishment depends on seed-to-soil contact and moisture near the surface.",
+        "Once established, the crop requires little routine labor.",
+        "The most important ongoing management task is controlling flock access so plants can recover.",
+        "Fresh cut-and-carry forage requires only simple hand harvesting.",
+        "No specialized processing or storage equipment is needed for the main use paths."
+      ]
+    }
+  },
+
+  cost: {
+    seedOrPlantCostLevel:
+      "low",
+
+    soilPreparationCostLevel:
+      "low",
+
+    irrigationCostLevel:
+      "low",
+
+    protectionCostLevel:
+      "moderate",
+
+    processingEquipmentCostLevel:
+      "very-low",
+
+    storageCostLevel:
+      "very-low",
+
+    annualRecurringCostLevel:
+      "very-low",
+
+    longTermValueScore: 5,
+
+    lowestCostUsePath:
+      "rotational-living-forage",
+
+    highestCostUsePath:
+      "protected-forage-frame",
+
+    likelyCostDrivers: [
+      "Clover-group inoculant",
+      "Irrigation during establishment",
+      "Forage-frame construction",
+      "Temporary fencing",
+      "Seedbed preparation",
+      "Reseeding damaged areas"
+    ],
+
+    costReductionOptions: [
+      "Overseed an existing suitable lawn or pasture.",
+      "Use rotational access rather than building multiple permanent protected beds.",
+      "Use existing poultry fencing to divide recovery areas.",
+      "Start with a small trial section.",
+      "Maintain soil fertility and pH to improve stand persistence."
+    ],
+
+    directFacts: {
+      specializedPlantingEquipmentRequired:
+        false,
+
+      specializedBackyardHarvestEquipmentRequired:
+        false,
+
+      specializedProcessingEquipmentRequired:
+        false,
+
+      notes: [
+        "White Clover seed is generally inexpensive relative to establishing trees or large annual grain plots.",
+        "The crop can provide value for multiple years when the stand persists.",
+        "Protection and establishment failures are more likely to drive cost than harvesting equipment.",
+        "The main products are consumed fresh, so drying and storage costs are minimal.",
+        "Cost classifications are qualitative rather than current retail-price estimates."
+      ]
+    }
+  },
+
+  goals: {
+    feedReductionScore: 3,
+
+    energyProductionScore: 1,
+
+    proteinOrientedScore: 4,
+
+    freshGreensScore: 5,
+
+    livingForageScore: 5,
+
+    winterStorageScore: 1,
+
+    enrichmentScore: 5,
+
+    resilienceScore: 4,
+
+    soilImprovementScore: 5,
+
+    nitrogenFixationScore: 5,
+
+    groundCoverScore: 5,
+
+    erosionControlScore: 5,
+
+    shadeScore: 1,
+
+    privacyScreeningScore: 1,
+
+    pollinatorSupportScore: 5,
+
+    compostBiomassScore: 3,
+
+    householdFoodScore: 1,
+
+    seedSavingScore: 2,
+
+    selfRelianceScore: 5,
+
+    multipurposeValueScore: 5,
+
+    visualAppealScore: 4,
+
+    productionReliabilityScore: 4,
+
+    fastestValueScore: 3,
+
+    nonElectricStorageScore: 1,
+
+    smallFlockValueScore: 5,
+
+    largeFlockValueScore: 5,
+
+    primaryGoalMatches: [
+      "living-forage",
+      "fresh-greens",
+      "soil-improvement",
+      "nitrogen-fixation",
+      "ground-cover",
+      "erosion-control",
+      "pollinators",
+      "enrichment",
+      "self-reliance",
+      "use-unused-space"
+    ],
+
+    weakGoalMatches: [
+      "high-energy",
+      "winter-storage",
+      "dry-grain",
+      "whole-produce",
+      "privacy-screening",
+      "large-household-food-harvest"
+    ],
+
+    directFacts: {
+      nitrogenFixingLegume: true,
+
+      perennialGroundCover:
+        true,
+
+      repeatedGrazingPotential:
+        true,
+
+      pollinatorBenefit: true,
+
+      lawnIntegrationPotential:
+        true,
+
+      orchardIntegrationPotential:
+        true,
+
+      notes: [
+        "White Clover is among the strongest living-forage and soil-building crops in the initial planner database.",
+        "Its perennial habit can reduce yearly replanting.",
+        "Nitrogen fixation can support companion grasses and future crops.",
+        "Flowering stands provide valuable bee forage.",
+        "The crop provides ground cover and erosion protection.",
+        "Its best feed value comes from repeated fresh grazing or cutting rather than storage.",
+        "It is not an energy grain or a long-term stored feed.",
+        "Persistence depends on moisture, soil fertility, competition, climate, and grazing management."
+      ]
+    }
+  },
+
+  risks: {
+    wildlife: {
+      wildBirds: 1,
+      deer: 5,
+      raccoons: 1,
+      squirrels: 1,
+      rabbits: 5,
+      rodents: 2,
+      groundhogs: 5
+    },
+
+    insectsRiskScore: 2,
+
+    diseaseRiskScore: 3,
+
+    lodgingRiskScore: 1,
+
+    fieldMoldRiskScore: 2,
+
+    dryingMoldRiskScore: 1,
+
+    storageMoldRiskScore: 1,
+
+    storedInsectRiskScore: 1,
+
+    spoilageSpeedRiskScore: 4,
+
+    invasivenessConcernRiskScore: 4,
+
+    selfSeedingRiskScore: 4,
+
+    fruitDropRiskScore: 1,
+
+    cropFailureRiskScore: 3,
+
+    stormDamageRiskScore: 1,
+
+    shadingOtherCropsRiskScore: 2,
+
+    overfeedingRiskScore: 2,
+
+    treatedSeedRiskScore: 5,
+
+    primaryRisks: [
+      {
+        id:
+          "chicken-overgrazing-and-scratching",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "germination",
+          "seedling",
+          "stolon-establishment",
+          "post-grazing-regrowth"
+        ],
+
+        mitigationOptions: [
+          "Exclude chickens during establishment",
+          "Use rotational paddocks",
+          "Use forage frames",
+          "Rest grazed sections",
+          "Maintain multiple forage areas"
+        ],
+
+        note:
+          "Even grazing-tolerant Clover can be destroyed when chickens continuously scratch, uproot, and graze the same small area."
+      },
+
+      {
+        id:
+          "summer-drought-decline",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "vegetative-growth",
+          "flowering",
+          "post-grazing-regrowth"
+        ],
+
+        mitigationOptions: [
+          "Provide irrigation",
+          "Use partial afternoon shade",
+          "Reduce grazing during drought",
+          "Maintain companion grasses",
+          "Reseed damaged areas"
+        ],
+
+        note:
+          "Shallow roots limit White Clover production and recovery during prolonged hot dry weather."
+      },
+
+      {
+        id:
+          "poor-seedling-establishment",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "germination",
+          "seedling"
+        ],
+
+        mitigationOptions: [
+          "Prepare a firm seedbed",
+          "Plant shallowly",
+          "Maintain seed-to-soil contact",
+          "Keep the soil surface moist",
+          "Control competing weeds",
+          "Exclude poultry"
+        ],
+
+        note:
+          "Tiny seed and small seedlings are vulnerable to drying, burial, weed competition, and poultry disturbance."
+      },
+
+      {
+        id:
+          "unwanted-spread",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "established-stand",
+          "flowering",
+          "seed-production"
+        ],
+
+        mitigationOptions: [
+          "Use defined planting areas",
+          "Mow boundaries",
+          "Remove spreading stolons",
+          "Avoid allowing excessive seed production",
+          "Monitor neighboring beds"
+        ],
+
+        note:
+          "Creeping stolons and seed can move White Clover into lawns, paths, and beds where it is not wanted."
+      },
+
+      {
+        id:
+          "bee-traffic-in-flowering-stands",
+
+        severity:
+          "moderate",
+
+        affectedStages: [
+          "flowering"
+        ],
+
+        mitigationOptions: [
+          "Mow selected high-traffic areas",
+          "Keep flowering sections away from barefoot play zones",
+          "Use nonflowering access paths",
+          "Avoid disturbing active pollinators"
+        ],
+
+        note:
+          "White Clover flowers attract bees, creating a sting concern in heavily trafficked areas."
+      },
+
+      {
+        id:
+          "fresh-forage-spoilage",
+
+        severity:
+          "moderate",
+
+        affectedStages: [
+          "harvest",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Feed soon after cutting",
+          "Avoid piling wet forage",
+          "Discard slimy or moldy material",
+          "Harvest only clean untreated plants"
+        ],
+
+        note:
+          "Fresh cut Clover heats and deteriorates when left in dense wet piles."
+      },
+
+      {
+        id:
+          "chemically-treated-seed",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "planting",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use untreated seed for poultry forage",
+          "Keep treated seed separated and labeled"
+        ],
+
+        note:
+          "Chemically treated planting seed must never be fed to chickens."
+      }
+    ],
+
+    directFacts: {
+      poultryOvergrazingConcern:
+        true,
+
+      shallowRootDroughtConcern:
+        true,
+
+      establishmentCompetitionConcern:
+        true,
+
+      unwantedSpreadConcern:
+        true,
+
+      pollinatorStingConcern:
+        true,
+
+      freshForageSpoilageConcern:
+        true,
+
+      notes: [
+        "The largest backyard risk is usually stand destruction from excessive chicken pressure.",
+        "White Clover’s ability to tolerate close grazing does not mean it tolerates unlimited scratching.",
+        "Hot drought can sharply reduce forage production.",
+        "Dense competing grass may suppress Clover when fertility or grazing management favors the grass.",
+        "Fresh forage should be free from mold, manure contamination, roadside contamination, and pesticide residues not approved for the intended use.",
+        "White Clover should not be confused with White Sweetclover, which is a different species with different growth and feed-safety considerations."
+      ]
+    }
+  },
+
+  seasonalRoles: {
+    earlySpring: true,
+
+    lateSpring: true,
+
+    summer: true,
+
+    lateSummer: true,
+
+    fall: true,
+
+    winterStorage: false,
+
+    perennial: true,
+
+    plantingWindows: [
+      {
+        id:
+          "spring-establishment",
+
+        trigger:
+          "early-spring",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        soilCondition:
+          "moist-firm-and-workable",
+
+        method:
+          "broadcast-small-seed",
+
+        note:
+          "Spring establishment can succeed where moisture remains dependable before summer heat."
+      },
+
+      {
+        id:
+          "late-summer-fall-establishment",
+
+        trigger:
+          "late-summer",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        soilCondition:
+          "moist-with-time-to-root-before-winter",
+
+        method:
+          "broadcast-small-seed",
+
+        note:
+          "Late-summer or early-fall seeding may reduce summer weed pressure, but plants need enough time to establish before severe cold."
+      },
+
+      {
+        id:
+          "overseed-existing-turf",
+
+        trigger:
+          "cool-moist-growing-period",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        method:
+          "broadcast-small-seed",
+
+        note:
+          "Existing grass should be short and opened enough to provide seed-to-soil contact."
+      }
+    ],
+
+    harvestWindows: [
+      {
+        id:
+          "rotational-living-forage",
+
+        trigger:
+          "dense-established-stand",
+
+        usePathId:
+          "rotational-living-forage",
+
+        note:
+          "Allow controlled grazing, then remove chickens before the stand is stripped to exposed soil."
+      },
+
+      {
+        id:
+          "protected-forage-frame",
+
+        trigger:
+          "foliage-reaches-through-protection",
+
+        usePathId:
+          "protected-forage-frame",
+
+        note:
+          "Allow birds to reach leaves through the frame while roots, stolons, and crowns remain protected."
+      },
+
+      {
+        id:
+          "fresh-cut-and-carry",
+
+        trigger:
+          "healthy-vegetative-growth",
+
+        usePathId:
+          "fresh-cut-and-carry",
+
+        note:
+          "Cut clean healthy forage and offer it promptly without creating a wet compacted pile."
+      }
+    ],
+
+    cropSequenceRoles: [
+      "Perennial living forage",
+      "Pasture-mixture legume",
+      "Chicken-run forage-frame crop",
+      "Orchard-floor ground cover",
+      "Nitrogen-fixing lawn component",
+      "Pollinator-supporting ground cover"
+    ],
+
+    seasonalLimitations: [
+      "Summer drought may reduce or stop growth",
+      "Winter dormancy may eliminate fresh forage temporarily",
+      "New seedlings cannot withstand chicken pressure",
+      "Fresh forage cannot provide long-term winter storage"
+    ],
+
+    directFacts: {
+      coolSeasonPerennial: true,
+
+      springEstablishmentPossible:
+        true,
+
+      fallEstablishmentPossible:
+        true,
+
+      repeatedGrazingPossible:
+        true,
+
+      winterDormancyPossible:
+        true,
+
+      summerDormancyPossible:
+        true,
+
+      notes: [
+        "White Clover can produce forage over multiple seasons where stands persist.",
+        "Peak production commonly occurs during cool moist weather.",
+        "Growth may slow during winter cold and summer drought.",
+        "Rotational rest periods allow leaves and stolons to recover.",
+        "The crop fills a living-forage role rather than a winter-storage role."
+      ]
+    }
+  },
+
+  usePaths: [
+    {
+      id:
+        "rotational-living-forage",
+
+      label:
+        "Rotational White Clover Forage",
+
+      description:
+        "An established Clover or Clover-grass stand grazed by chickens for limited periods, followed by a recovery period without flock access.",
+
+      primaryFeedRole:
+        "living-forage",
+
+      harvestProducts: [
+        "living-forage",
+        "fresh-greens",
+        "pasture-forage"
+      ],
+
+      suitableFeedingMethods: [
+        "living-grazing",
+        "rotational-paddock",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [],
+
+      optionalProcessingTasks: [],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "fencing",
+        "drip-irrigation"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "rotational",
+
+      storageMethods: [
+        "living-crop"
+      ],
+
+      preferredStorageMethod:
+        "not-applicable",
+
+      storageDurationCategory:
+        "immediate",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: false,
+
+      moldRiskScore: 1,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 4,
+
+      householdFoodValueScore: 1,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Do not allow chickens to remain until the stand is reduced to bare soil.",
+        "Exclude birds during establishment and recovery.",
+        "Do not use forage treated with chemicals unsuitable for poultry access.",
+        "Living forage remains supplemental to complete poultry feed.",
+        "Provide grit appropriate to the flock’s feeding system."
+      ],
+
+      incompatibleUserTraits: [
+        "has-no-ground-access",
+        "cannot-rotate-flock",
+        "requires-long-term-storage",
+        "requires-annual-reversibility"
+      ]
+    },
+
+    {
+      id:
+        "protected-forage-frame",
+
+      label:
+        "Protected White Clover Forage Frame",
+
+      description:
+        "A low Clover stand protected beneath wire or another suitable forage frame so chickens can reach foliage while roots and stolons remain protected.",
+
+      primaryFeedRole:
+        "protected-living-forage",
+
+      harvestProducts: [
+        "living-forage",
+        "fresh-greens"
+      ],
+
+      suitableFeedingMethods: [
+        "forage-frame",
+        "living-grazing",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [],
+
+      optionalProcessingTasks: [],
+
+      requiredEquipment: [
+        "forage-frame"
+      ],
+
+      helpfulEquipment: [
+        "fencing",
+        "drip-irrigation"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "continuous",
+
+      storageMethods: [
+        "living-crop"
+      ],
+
+      preferredStorageMethod:
+        "not-applicable",
+
+      storageDurationCategory:
+        "immediate",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: false,
+
+      moldRiskScore: 1,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 1,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "The frame must prevent chickens from reaching and scratching out crowns, stolons, and roots.",
+        "Use secure wire and framing without sharp edges.",
+        "Avoid manure accumulation that smothers the stand.",
+        "Living forage remains supplemental to balanced poultry feed."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-building-protection",
+        "has-no-run-space",
+        "requires-harvested-storage-feed"
+      ]
+    },
+
+    {
+      id:
+        "fresh-cut-and-carry",
+
+      label:
+        "Fresh Cut-and-Carry White Clover",
+
+      description:
+        "Clean healthy Clover foliage harvested from outside the chicken area and offered promptly as a fresh supplemental green.",
+
+      primaryFeedRole:
+        "fresh-green-protein-oriented",
+
+      harvestProducts: [
+        "fresh-greens",
+        "fresh-forage"
+      ],
+
+      suitableFeedingMethods: [
+        "cut-and-carry",
+        "fresh-supplement",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-leaves"
+      ],
+
+      optionalProcessingTasks: [
+        "chop"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "basket"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "several-weekly",
+
+      storageMethods: [
+        "short-term-fresh"
+      ],
+
+      preferredStorageMethod:
+        "feed-soon-after-harvest",
+
+      storageDurationCategory:
+        "very-short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: true,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 2,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 1,
+      flockValueScore: 4,
+
+      safetyWarnings: [
+        "Harvest only clean healthy Clover from an untreated and uncontaminated area.",
+        "Do not feed moldy, slimy, fermented, manure-contaminated, or roadside forage.",
+        "Avoid leaving fresh wet Clover in a compacted pile.",
+        "Introduce fresh forage gradually.",
+        "Fresh Clover remains supplemental to a complete poultry ration."
+      ],
+
+      incompatibleUserTraits: [
+        "requires-long-term-storage",
+        "has-no-time-for-fresh-harvest",
+        "wants-dry-grain-only"
+      ]
+    }
+  ],
+
+  dataQuality: {
+    overallConfidence:
+      0.79,
+
+    verifiedFields: [
+      "identity",
+      "lifecycle",
+      "climate.directFacts.seasonType",
+      "climate.directFacts.stoloniferousPerennial",
+      "site.directFacts.preferredLight",
+      "site.directFacts.growthHabit",
+      "soil.directFacts.nitrogenFixingLegume",
+      "soil.directFacts.inoculationMayImproveNodulation",
+      "soil.directFacts.shallowRooted",
+      "water.directFacts.establishmentMoistureImportant",
+      "water.directFacts.shallowRootsIncreaseDroughtRisk",
+      "space.directFacts.mixedPastureSuitable",
+      "space.directFacts.lawnOverseedingSuitable",
+      "space.directFacts.forageFrameSuitable",
+      "space.directFacts.rotationalPaddockSuitable",
+      "flock.directFacts.edibleFeedParts",
+      "flock.directFacts.nutritionalOrientation",
+      "risks.directFacts.poultryOvergrazingConcern",
+      "risks.directFacts.shallowRootDroughtConcern",
+      "risks.directFacts.unwantedSpreadConcern",
+      "seasonalRoles.directFacts.coolSeasonPerennial",
+      "seasonalRoles.directFacts.repeatedGrazingPossible"
+    ],
+
+    derivedFields: [
+      "climate.heatToleranceScore",
+      "climate.droughtClimateToleranceScore",
+      "climate.humidityToleranceScore",
+      "climate.coolSummerToleranceScore",
+      "climate.frostSensitivityScore",
+      "site",
+      "soil.textureScores",
+      "soil.drainageRequirementScore",
+      "water",
+      "space.smallSpaceScore",
+      "space.mediumSpaceScore",
+      "space.largeSpaceScore",
+      "space.layoutScores",
+      "space.spaceTypeScores",
+      "flock.flockPurposeScores",
+      "flock.feedingMethodScores",
+      "flock.directRunSuitabilityScore",
+      "flock.forageFrameSuitabilityScore",
+      "flock.rotationalPaddockSuitabilityScore",
+      "labor",
+      "cost",
+      "goals",
+      "risks.wildlife",
+      "usePaths.rotational-living-forage",
+      "usePaths.protected-forage-frame",
+      "usePaths.fresh-cut-and-carry"
+    ],
+
+    uncertainFields: [
+      "lifecycle.expectedUsefulLifeYears",
+      "climate.minimumFrostFreeDays",
+      "climate.preferredFrostFreeDays",
+      "climate.minimumSoilTemperatureF",
+      "climate.preferredSoilTemperatureF",
+      "soil.minimumSoilDepthIn",
+      "soil.saltToleranceScore",
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "space.minimumRaisedBedDepthIn",
+      "flock.portionGuidance",
+      "usePaths.rotational-living-forage.sustainableStockingPressure",
+      "usePaths.protected-forage-frame.regrowthRate",
+      "usePaths.fresh-cut-and-carry.exactStorageDuration"
+    ],
+
+    missingFields: [
+      "lifecycle.expectedUsefulLifeYears",
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "flock.portionGuidance",
+      "flock.usePathTesting"
+    ],
+
+    lastReviewed:
+      "2026-07-15",
+
+    primarySources: [
+      {
+        title:
+          "Plant Guide for White Clover (Trifolium repens)",
+
+        organization:
+          "USDA Natural Resources Conservation Service",
+
+        sourceType:
+          "government-plant-guide",
+
+        use:
+          "Botany, perennial growth, stolons, forage value, soil adaptation, nitrogen fixation, erosion control, wildlife use, establishment, and management"
+      },
+
+      {
+        title:
+          "White Clover Establishment and Management Guide",
+
+        organization:
+          "University of Georgia Cooperative Extension",
+
+        sourceType:
+          "extension-forage-guide",
+
+        use:
+          "Southern adaptation, soil fertility, inoculation, establishment, grazing, drought limitations, and stand persistence"
+      },
+
+      {
+        title:
+          "Growing White Clover",
+
+        organization:
+          "University of Kentucky Cooperative Extension",
+
+        sourceType:
+          "extension-forage-guide",
+
+        use:
+          "Variety types, pasture establishment, fertility, grazing tolerance, mixtures, persistence, and forage management"
+      },
+
+      {
+        title:
+          "White Clover Forage Management",
+
+        organization:
+          "Penn State Extension",
+
+        sourceType:
+          "extension-forage-guide",
+
+        use:
+          "Temperate adaptation, pasture mixtures, grazing behavior, forage quality, soil conditions, and stand management"
+      }
+    ],
+
+    notes: [
+      "White Clover plannerData is specific to Trifolium repens and must not be applied to White Sweetclover, Red Clover, Crimson Clover, Subterranean Clover, or other species.",
+      "The record treats White Clover primarily as living forage rather than harvested dry feed.",
+      "The three planner use paths are rotational grazing, protected forage-frame access, and fresh cut-and-carry forage.",
+      "No exact sustainable chicken stocking density has been assigned because flock pressure depends on stand area, soil moisture, plant density, rotation length, and scratching behavior.",
+      "No exact flock feeding portion has been assigned.",
+      "The record does not make medicinal claims.",
+      "The crop should remain in testing until perennial forage, rotational grazing, forage-frame, partial-shade, lawn-conversion, and drought-stress profiles are evaluated."
+    ]
+  }
+}, 
 
     "CROP-ALFALFA": {
     id: "CROP-ALFALFA",
@@ -12109,4 +13782,4 @@ plannerData: {
       ]
     }
 }
-  };
+}};
