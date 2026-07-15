@@ -2926,11 +2926,59 @@ const PROFILE_MATRIX_EXPECTATIONS =
 
         notes:
           "White Clover and Kale may both perform well. White Clover should benefit from its low-growing perennial habit, spreading ground cover, nitrogen fixation, and forage-frame suitability."
+         }),
+
+    // ==================================================
+    // ALFALFA PROFILE MATRIX EXPECTATIONS
+    // ==================================================
+
+    "PROFILE-ALFALFA-DEEP-PROTEIN-FORAGE":
+      Object.freeze({
+        profileNumber: 16,
+
+        purpose:
+          "Tests ideal Alfalfa conditions: deep well-drained soil, full sun, dependable water, a large perennial forage plot, protein-oriented goals, rotational access, and protected drying capability.",
+
+        expectedTopCropIds: [
+          "CROP-ALFALFA"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-ALFALFA",
+          "CROP-WHITE-CLOVER",
+          "CROP-COWPEA"
+        ],
+
+        notes:
+          "Alfalfa should lead because the profile combines deep soil, strong drainage, protein-oriented forage, perennial management, repeated cutting, nitrogen fixation, and the ability to produce dried leafy forage."
+      }),
+
+    "PROFILE-ALFALFA-WET-ACIDIC-CLAY":
+      Object.freeze({
+        profileNumber: 17,
+
+        purpose:
+          "Tests conditions that should strongly reduce Alfalfa: hot humidity, shallow heavy acidic clay, poor drainage, a small reversible planting area, no drying capability, and very low labor.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-WHITE-CLOVER",
+          "CROP-COWPEA"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-WHITE-CLOVER",
+          "CROP-COWPEA"
+        ],
+
+        notes:
+          "Alfalfa should not lead. Poor drainage, shallow acidic soil, humidity, limited space, and the one-season reversibility requirement should favor simpler fresh-green crops."
       })
 
   });
 
-  const PLANNER_CONFIG = Object.freeze({
+const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
     cropSchemaVersion: "1.0.0",
 
