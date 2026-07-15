@@ -2467,7 +2467,50 @@ const PROFILE_MATRIX_EXPECTATIONS =
 
         notes:
           "Millet and Sunflower may rank closely. Millet loose grain must remain ineligible when threshing is rejected."
+        }),
+
+    "PROFILE-CLOVER-ROTATIONAL-ORCHARD":
+      Object.freeze({
+        profileNumber: 14,
+
+        purpose:
+          "Tests perennial rotational forage, orchard-floor integration, partial shade, nitrogen fixation, ground cover, erosion control, and repeated flock access.",
+
+        expectedTopCropIds: [
+          "CROP-WHITE-CLOVER"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-WHITE-CLOVER",
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA"
+        ],
+
+        notes:
+          "White Clover should lead because the profile emphasizes perennial living forage, orchard use, rotational paddocks, nitrogen fixation, and persistent ground cover."
+      }),
+
+    "PROFILE-CLOVER-PROTECTED-FORAGE-FRAME":
+      Object.freeze({
+        profileNumber: 15,
+
+        purpose:
+          "Tests a low-growing perennial forage crop inside a protected chicken-run frame with partial sun, dependable water, minimal labor, and no processing.",
+
+        expectedTopCropIds: [
+          "CROP-WHITE-CLOVER",
+          "CROP-KALE-COLLARDS"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-WHITE-CLOVER",
+          "CROP-KALE-COLLARDS"
+        ],
+
+        notes:
+          "White Clover and Kale may both perform well. White Clover should benefit from its low-growing perennial habit, spreading ground cover, nitrogen fixation, and forage-frame suitability."
       })
+
   });
 
   const PLANNER_CONFIG = Object.freeze({
