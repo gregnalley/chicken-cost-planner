@@ -14856,7 +14856,7 @@ plannerData: {
 
       lifecycle: {
         growthCycle:
-          "perennial-tree",
+          "perennial",
 
         isAnnual: false,
         isBiennial: false,
