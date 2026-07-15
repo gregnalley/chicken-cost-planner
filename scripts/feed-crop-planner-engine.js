@@ -3471,6 +3471,124 @@ function analyzeHarvestProductMatch(
   };
 }
 
+function getUsePathCapabilityGate(
+  usePath,
+  answers,
+  productMatchAnalysis
+) {
+  const hardFailures = [];
+  const limitations = [];
+  const strengths = [];
+
+  const harvestStorage =
+    answers.harvestStorage || {};
+
+  const desiredStorageDuration =
+    harvestStorage
+      .desiredStorageDuration;
+
+  const harvestPatternPreference =
+    harvestStorage
+      .harvestPatternPreference;
+
+  const frequency =
+    usePath
+      .harvestFrequencyCategory;
+
+  /*
+   * CAPABILITY GATE 1
+   *
+   * When the visitor requests one or more
+   * crop-specific harvest products, a use
+   * path that produces none of them cannot
+   * become the winning path merely through
+   * generic space, climate, or goal scores.
+   */
+  if (
+    productMatchAnalysis
+      .hasSpecificDesiredProducts &&
+    !productMatchAnalysis
+      .hasSpecificMatch
+  ) {
+    hardFailures.push(
+      `This use path cannot produce any of the requested specific harvest products: ${productMatchAnalysis.specificDesiredProducts.join(", ")}.`
+    );
+  }
+
+  /*
+   * CAPABILITY GATE 2
+   *
+   * A visitor asking for continuous,
+   * immediate production should not receive
+   * a once-per-season mature grain or major
+   * storage harvest as the leading use path.
+   */
+  const immediateContinuousUseRequested =
+    desiredStorageDuration ===
+      "immediate" &&
+    harvestPatternPreference ===
+      "continuous";
+
+  const seasonalHarvestFrequencies =
+    new Set([
+      "single-seasonal",
+      "major",
+      "annual-major",
+      "once-per-season",
+      "process-in-small-batches"
+    ]);
+
+  if (
+    immediateContinuousUseRequested &&
+    seasonalHarvestFrequencies.has(
+      frequency
+    )
+  ) {
+    hardFailures.push(
+      "The visitor wants continuous immediate production, but this use path depends on a mature seasonal harvest."
+    );
+  }
+
+  /*
+   * A less explicit immediate-use request
+   * receives a strong penalty rather than a
+   * hard failure.
+   */
+  const immediateUseRequested =
+    desiredStorageDuration ===
+      "immediate";
+
+  if (
+    immediateUseRequested &&
+    !immediateContinuousUseRequested &&
+    seasonalHarvestFrequencies.has(
+      frequency
+    )
+  ) {
+    limitations.push(
+      "This use path provides a seasonal mature harvest rather than frequent immediate production."
+    );
+  }
+
+  if (
+    productMatchAnalysis
+      .hasSpecificMatch
+  ) {
+    strengths.push(
+      "This use path produces at least one specifically requested harvest product."
+    );
+  }
+
+  return {
+    hardFailure:
+      hardFailures.length > 0,
+
+    hardFailures,
+    limitations,
+    strengths
+  };
+}
+
 function scoreGenericUsePath(
   crop,
   usePath,
@@ -3544,6 +3662,39 @@ function scoreGenericUsePath(
       harvestProducts,
       desiredProducts
     );
+
+      const capabilityGate =
+    getUsePathCapabilityGate(
+      usePath,
+      answers,
+      productMatchAnalysis
+    );
+
+  capabilityGate
+    .hardFailures
+    .forEach(message => {
+      hardFailures.push(
+        message
+      );
+    });
+
+  capabilityGate
+    .limitations
+    .forEach(message => {
+      score -= 18;
+
+      limitations.push(
+        message
+      );
+    });
+
+  capabilityGate
+    .strengths
+    .forEach(message => {
+      strengths.push(
+        message
+      );
+    });
 
   if (
     !productMatchAnalysis
@@ -3901,6 +4052,8 @@ function scoreGenericUsePath(
       .hasAnyMatch,
 
   productMatchAnalysis,
+
+  capabilityGate,
 
   storageFit,
 
