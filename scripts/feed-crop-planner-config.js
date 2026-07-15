@@ -1722,7 +1722,7 @@ goalPriorities: [
     }
   }),
 
-  // ==================================================
+   // ==================================================
   // Profile 11
   // ==================================================
 
@@ -1737,7 +1737,167 @@ goalPriorities: [
       "A backyard keeper in a mild-winter climate who wants protected living greens through fall with low processing and repeated flock access.",
 
     answers: {
-      /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 8,
+
+        primaryFlockPurpose:
+          "eggs",
+
+        forageAccess:
+          "protected-forage-frame"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 48,
+
+        availableSpaceTypes: [
+          "raised-bed",
+          "forage-frame"
+        ],
+
+        largestAreaShape:
+          "small-beds",
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "must-remain-small"
+        ]
+      },
+
+      site: {
+        directSunHoursExact: 5,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "raised-bed-mix",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "cut-leaves"
+        ],
+
+        dryingCapability:
+          "none",
+
+        ownedEquipment: [
+          "forage-frame"
+        ],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-forage",
+          "kale-collard-leaves"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        minimalPreparationPriority:
+          "top",
+
+        desiredStorageDuration:
+          "immediate",
+
+        storageHumidity:
+          "often-humid",
+
+        dryStorageLocations: [],
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "living-forage",
+          "cool-season-production"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 1
+          },
+          {
+            goal:
+              "living-forage",
+
+            rank: 2
+          },
+          {
+            goal:
+              "cool-season-production",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
     }
   }),
 
@@ -1756,7 +1916,186 @@ goalPriorities: [
       "A grower with a short frost-free season, sandy soil, limited irrigation, and a goal of producing a storable energy grain.",
 
     answers: {
-      /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
+      climate: {
+        climateType:
+          "continental",
+
+        frostFreeSeasonRange:
+          "90-119"
+      },
+
+      flock: {
+        flockSize: 12,
+
+        primaryFlockPurpose:
+          "eggs",
+
+        forageAccess:
+          "limited"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 600,
+
+        availableSpaceTypes: [
+          "in-ground",
+          "open-field"
+        ],
+
+        largestAreaShape:
+          "long-row",
+
+        overflowOptions: [
+          "unused-lawn"
+        ],
+
+        plantBehaviorRestrictions: [
+          "no-block-planting"
+        ],
+
+        blockPlantingAvailable:
+          false,
+
+        availableBlockRows:
+          2
+      },
+
+      site: {
+        directSunHoursExact: 9,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "sandy",
+
+        soilDrainage:
+          "fast-draining"
+      },
+
+      water: {
+        waterReliability:
+          "limited",
+
+        wateringFrequencyPreference:
+          "weekly-or-less",
+
+        waterConservationPriority:
+          "high",
+
+        criticalStageWaterAvailability:
+          "limited"
+      },
+
+      labor: {
+        gardeningExperience:
+          "intermediate",
+
+        weeklyCropTime:
+          "2-4-hours",
+
+        acceptedProcessingTasks: [
+          "cut-seed-heads",
+          "dry",
+          "thresh"
+        ],
+
+        dryingCapability:
+          "protected-air-drying",
+
+        ownedEquipment: [
+          "tarps",
+          "buckets"
+        ],
+
+        equipmentPurchaseWillingness: [
+          "grain-screen"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "millet-grain",
+          "loose-millet-grain",
+          "whole-millet-panicles",
+          "stored-grain"
+        ],
+
+        harvestPatternPreference:
+          "single-seasonal",
+
+        minimalPreparationPriority:
+          "low",
+
+        desiredStorageDuration:
+          "long-term",
+
+        storageHumidity:
+          "usually-dry",
+
+        dryStorageLocations: [
+          "indoor-pantry",
+          "sealed-storage-room"
+        ],
+
+        rodentProtection:
+          "strong"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "high-energy",
+          "short-season",
+          "limited-irrigation",
+          "winter-storage"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "high-energy",
+
+            rank: 1
+          },
+          {
+            goal:
+              "short-season",
+
+            rank: 2
+          },
+          {
+            goal:
+              "limited-irrigation",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "energy",
+
+        beginnerFriendlinessPriority:
+          "helpful",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "wild-birds",
+          "rodents"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
     }
   }),
 
@@ -1775,10 +2114,173 @@ goalPriorities: [
       "A beginner who wants easy flock enrichment from whole seed heads and is willing to dry panicles but does not want to thresh or winnow grain.",
 
     answers: {
-      /* KEEP YOUR EXISTING PROFILE EXACTLY AS IT IS */
-    }
+      climate: {
+        climateType:
+          "temperate",
 
-      }),
+        frostFreeSeasonRange:
+          "120-149"
+      },
+
+      flock: {
+        flockSize: 8,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "limited"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 180,
+
+        availableSpaceTypes: [
+          "in-ground",
+          "raised-bed"
+        ],
+
+        largestAreaShape:
+          "long-row",
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "no-vines-outside-bed"
+        ]
+      },
+
+      site: {
+        directSunHoursExact: 8,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "sandy-loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "1-2-hours",
+
+        acceptedProcessingTasks: [
+          "cut-seed-heads",
+          "dry"
+        ],
+
+        dryingCapability:
+          "protected-air-drying",
+
+        ownedEquipment: [
+          "tarps"
+        ],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "whole-millet-panicles",
+          "whole-seed-heads",
+          "stored-enrichment"
+        ],
+
+        harvestPatternPreference:
+          "single-seasonal",
+
+        minimalPreparationPriority:
+          "top",
+
+        desiredStorageDuration:
+          "medium-term",
+
+        storageHumidity:
+          "usually-dry",
+
+        dryStorageLocations: [
+          "covered-porch",
+          "shed"
+        ],
+
+        rodentProtection:
+          "moderate"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "enrichment",
+          "fast-value",
+          "seed-saving"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "enrichment",
+
+            rank: 1
+          },
+          {
+            goal:
+              "fast-value",
+
+            rank: 2
+          },
+          {
+            goal:
+              "seed-saving",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "enrichment",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "wild-birds"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
 
   // ==================================================
   // WHITE CLOVER TEST PROFILES
