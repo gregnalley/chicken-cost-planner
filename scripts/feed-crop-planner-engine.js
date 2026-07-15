@@ -2595,6 +2595,17 @@ function scoreGenericUsePath(
   }
 
   if (
+  usePath.threshingRequired &&
+  !acceptedProcessing.includes(
+    "thresh"
+  )
+) {
+  hardFailures.push(
+    "This use path requires threshing, but threshing was not accepted."
+  );
+}
+
+  if (
     minimalPreparation === "top"
   ) {
     if (
