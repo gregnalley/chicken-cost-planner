@@ -4731,7 +4731,1797 @@ const BCP_FEED_CROPS = {
         "Plant-density fields remain null because bush, semi-bush, and long-vining Cucurbita varieties cannot be represented accurately by one plants-per-square-foot estimate.",
 
       ]
+    },
+
+plannerData: {
+  schemaVersion: "1.0.0",
+
+  developmentStatus:
+    "testing",
+
+  identity: {
+    plannerName:
+      "Pumpkins and Winter Squash",
+
+    shortLabel:
+      "Pumpkin & Squash",
+
+    icon:
+      "🎃",
+
+    cropCategory:
+      "storage-vegetable",
+
+    primaryFeedCategory:
+      "storage-produce",
+
+    guideUrl:
+      "growing-pumpkins-winter-squash-for-chickens.html"
+  },
+
+  lifecycle: {
+    growthCycle:
+      "annual",
+
+    isAnnual: true,
+    isBiennial: false,
+    isPerennial: false,
+    isTreeOrShrub: false,
+
+    yearsToFirstUsefulHarvest: 0,
+    yearsToFullProduction: 0,
+    expectedUsefulLifeYears: 1,
+
+    regrowsAfterHarvest: false,
+
+    permanentPlantingRequired: false,
+    reversibleAfterOneSeason: true
+  },
+
+  climate: {
+    suitableClimateTypes: [
+      "cool-moderate-summer",
+      "temperate",
+      "hot-humid",
+      "hot-dry",
+      "mild-winter"
+    ],
+
+    preferredClimateTypes: [
+      "temperate",
+      "hot-humid",
+      "mild-winter"
+    ],
+
+    challengingClimateTypes: [
+      "cold-short-summer",
+      "high-elevation"
+    ],
+
+    minimumFrostFreeDays: null,
+    preferredFrostFreeDays: null,
+
+    minimumSoilTemperatureF: 60,
+    preferredSoilTemperatureF: 70,
+
+    daysToMaturityMinimum: 80,
+    daysToMaturityMaximum: 120,
+
+    dryDownBufferDays: null,
+
+    heatToleranceScore: 4,
+
+    droughtClimateToleranceScore: 2,
+
+    humidityToleranceScore: 3,
+
+    coolSummerToleranceScore: 3,
+
+    frostSensitivityScore: 5,
+
+    winterHardinessRequired: false,
+
+    seasonExtensionBenefits: [
+      "Indoor seed starting can help varieties mature in shorter growing seasons.",
+      "Black plastic or other soil-warming methods may improve early establishment.",
+      "Floating row cover can protect young plants from cool weather and insect pests before flowering.",
+      "Early-maturing or compact varieties may improve success where the frost-free season is limited."
+    ],
+
+    indoorSeedStartingBenefitScore: 4,
+
+    directFacts: {
+      seasonType:
+        "warm-season",
+
+      frostSensitive: true,
+
+      plantAfterFrostDanger: true,
+
+      warmSoilRequired: true,
+
+      germinationSoilTemperatureFMinimum:
+        60,
+
+      preferredGerminationSoilTemperatureF:
+        70,
+
+      maturityHighlyVarietyDependent:
+        true,
+
+      speciesAndCultivarVariation:
+        true,
+
+      notes: [
+        "Pumpkins and Winter Squash are frost-sensitive warm-season crops.",
+        "Cold wet soil can delay germination and increase seed-decay risk.",
+        "Compact, bush, short-vine, and full-vining cultivars may differ greatly in maturity and space requirements.",
+        "Small-fruited varieties often mature earlier than giant or very large-fruited varieties.",
+        "Hot weather generally supports vine growth when water remains available.",
+        "High humidity can increase powdery mildew, downy mildew, fruit rot, and other disease concerns.",
+        "Exact frost-free-season requirements remain null because maturity varies substantially among species and cultivars.",
+        "The stored maturity range is a broad planning range rather than a guarantee for every Pumpkin or Winter Squash variety."
+      ]
     }
+  },
+
+  site: {
+    absoluteMinimumSunHours: null,
+
+    productiveMinimumSunHours: 6,
+
+    preferredSunHours: 8,
+
+    shadeToleranceScore: 2,
+
+    afternoonShadeBenefitInHeat: 2,
+
+    windToleranceScore: 3,
+
+    lodgingRiskScore: 1,
+
+    reflectedHeatToleranceScore: 4,
+
+    airflowRequirementScore: 5,
+
+    frostPocketSensitivityScore: 5,
+
+    treeRootCompetitionToleranceScore: 2,
+
+    hardscapeConflictRiskScore: 4,
+
+    structureConflictRiskScore: 4,
+
+    utilityConflictRiskScore: 3,
+
+    fruitDropMessRiskScore: 2,
+
+    stainingRiskScore: 1,
+
+    directFacts: {
+      preferredLight:
+        "full-sun",
+
+      productiveSunGuidance:
+        "At least 6 hours of direct sunlight, with approximately 8 hours preferred for strong vine growth, flowering, fruit set, and fruit maturation.",
+
+      windExposureConcern:
+        true,
+
+      growthHabits: [
+        "bush",
+        "semi-bush",
+        "short-vine",
+        "full-vining"
+      ],
+
+      vineLengthHighlyVariable:
+        true,
+
+      pollinatorAccessImportant:
+        true,
+
+      notes: [
+        "Full sun generally supports the strongest flowering and fruit production.",
+        "Partial shade may produce excessive foliage with fewer or smaller mature fruits.",
+        "Good airflow helps foliage dry after rain or irrigation.",
+        "Vines can spread across paths, lawns, neighboring beds, fencing, and utility areas.",
+        "Fruit resting on pavement or extremely hot hardscape may overheat or become damaged.",
+        "A site should allow access by bees and other pollinating insects.",
+        "Strong wind may damage large leaves or move unsupported vines, although the plants do not lodge like tall grain crops.",
+        "Avoid frost pockets where early fall cold could end the season before fruit fully matures."
+      ]
+    }
+  },
+
+  soil: {
+    textureScores: {
+      heavyClay: 2,
+      clayLoam: 4,
+      loam: 5,
+      sandyLoam: 4,
+      verySandy: 2,
+      rocky: 2
+    },
+
+    drainageRequirementScore: 5,
+
+    temporaryWetToleranceScore: 2,
+
+    waterloggingSensitivityScore: 5,
+
+    minimumSoilDepthIn: 12,
+    preferredSoilDepthIn: 18,
+
+    compactionToleranceScore: 2,
+
+    establishmentInSodDifficultyScore: 5,
+
+    preferredPHMinimum: 6.0,
+    preferredPHMaximum: 7.0,
+
+    survivalPHMinimum: null,
+    survivalPHMaximum: null,
+
+    fertilityRequirementScore: 5,
+
+    nitrogenRequirementScore: 4,
+    phosphorusRequirementScore: 4,
+    potassiumRequirementScore: 5,
+
+    benefitsFromInoculation: false,
+
+    inoculantType: null,
+
+    saltToleranceScore: null,
+
+    amendmentEffortScore: 4,
+
+    directFacts: {
+      preferredDrainage:
+        "well-drained",
+
+      preferredTextures: [
+        "loam",
+        "sandy loam",
+        "well-drained clay loam"
+      ],
+
+      organicMatterBenefit:
+        true,
+
+      heavyFeedingCrop:
+        true,
+
+      waterloggedSoilSuitable:
+        false,
+
+      notes: [
+        "Pumpkins and Winter Squash favor fertile, well-drained soil with substantial organic matter.",
+        "Loam offers a useful balance of drainage, moisture retention, fertility, and root development.",
+        "Sandy loam can perform well but may require more frequent watering and fertility management.",
+        "Heavy clay is a poor fit when it remains saturated, compacts easily, or restricts roots.",
+        "Very sandy soil may dry too quickly during flowering and fruit development.",
+        "The crop removes meaningful nutrients when large fruits and vines are harvested.",
+        "Excessive nitrogen can promote vines and leaves at the expense of flowering and fruit development.",
+        "Adequate potassium supports fruit growth and quality.",
+        "The stored pH values represent a productive planning range rather than absolute survival limits."
+      ]
+    }
+  },
+
+  water: {
+    overallWaterRequirementLevel:
+      "high",
+
+    germinationWaterNeedLevel:
+      "moderate",
+
+    establishmentWaterNeedLevel:
+      "moderate",
+
+    matureWaterNeedLevel:
+      "high",
+
+    floweringWaterNeedLevel:
+      "high",
+
+    harvestDevelopmentWaterNeedLevel:
+      "high",
+
+    droughtSurvivalScore: 2,
+
+    droughtYieldRetentionScore: 2,
+
+    criticalGrowthStages: [
+      "germination",
+      "seedling-establishment",
+      "vine-development",
+      "flowering",
+      "fruit-setting",
+      "fruit-expansion"
+    ],
+
+    criticalStageWaterImportanceScore: 5,
+
+    overwateringSensitivityScore: 4,
+
+    waterloggingSensitivityScore: 5,
+
+    dripIrrigationBenefitScore: 5,
+
+    mulchBenefitScore: 5,
+
+    suitableForRainfallOnlyScore: 2,
+
+    suitableForLimitedIrrigationScore: 2,
+
+    containerDryingRiskScore: 5,
+
+    establishmentYearsRequiringExtraWater: 0,
+
+    directFacts: {
+      consistentMoistureImportant:
+        true,
+
+      floweringMoistureImportant:
+        true,
+
+      fruitExpansionMoistureImportant:
+        true,
+
+      standingWaterSuitable:
+        false,
+
+      typicalWeeklyWaterInchesMinimum:
+        1,
+
+      typicalWeeklyWaterInchesMaximum:
+        2,
+
+      reduceWaterNearFinalMaturity:
+        true,
+
+      notes: [
+        "Consistent moisture supports vine growth, flowering, fruit set, and fruit expansion.",
+        "Severe drought can cause flower loss, poor fruit set, small fruit, or premature plant decline.",
+        "Large leaves and extensive vines can use substantial water during hot weather.",
+        "Drip irrigation or soaker hoses help deliver water while keeping foliage and fruit drier.",
+        "Mulch conserves water, suppresses weeds, and helps keep fruit away from bare wet soil.",
+        "Standing water and saturated soil increase root, crown, and fruit-rot risk.",
+        "Large fluctuations between very dry and very wet soil may contribute to irregular growth or fruit damage.",
+        "Water may be reduced as mature fruit approaches harvest, but plants should not be allowed to collapse prematurely.",
+        "Container-grown plants dry much faster than vines rooted in open soil."
+      ]
+    }
+  },
+
+  space: {
+    minimumTrialAreaSqFt: null,
+
+    minimumUsefulAreaSqFt: null,
+
+    preferredProductionAreaSqFt: null,
+
+    smallSpaceScore: 2,
+
+    mediumSpaceScore: 4,
+
+    largeSpaceScore: 5,
+
+    layoutScores: {
+      squareBlock: 3,
+      wideRectangle: 5,
+      longStrip: 5,
+      irregular: 4,
+      smallBeds: 2,
+      openField: 5
+    },
+
+    spaceTypeScores: {
+      inGround: 5,
+      raisedBed: 3,
+      container: 2,
+      fenceLine: 4,
+      buildingEdge: 3,
+      unusedLawn: 5,
+      openField: 5,
+      orchard: 2,
+      forageFrame: 1,
+      rotationalPaddock: 2,
+      greenhouse: 2,
+      hedgerow: 2
+    },
+
+    minimumContainerGallons: null,
+
+    containerUseLimitation:
+      "Compact or bush varieties may grow in very large containers, but water demand, root volume, vine spread, and fruit weight make container production inefficient for most feed-crop plans.",
+
+    minimumRaisedBedDepthIn: 12,
+
+    vineSpreadRequired: true,
+
+    verticalSupportBenefitScore: 3,
+
+    blockPlantingRequired: false,
+
+    minimumBlockRows: null,
+
+    continuousStandPreferred: false,
+
+    heightCategory:
+      "low-vining",
+
+    matureWidthCategory:
+      "very-wide-variety-dependent",
+
+    overflowSpaceBenefitScore: 5,
+
+    directFacts: {
+      layoutFlexibleWithOverflow:
+        true,
+
+      blockPollinationRequired: false,
+
+      bushVarietiesAvailable: true,
+
+      shortVineVarietiesAvailable: true,
+
+      fullViningVarietiesAvailable:
+        true,
+
+      trellisPossibleForSmallFruit:
+        true,
+
+      largeFruitTrellisLimitation:
+        true,
+
+      vineSpreadFtMinimum:
+        4,
+
+      vineSpreadFtMaximum:
+        15,
+
+      notes: [
+        "Most Pumpkins and Winter Squash require substantially more room than leafy crops or upright seed crops.",
+        "Full-sized vines may spread many feet beyond the planting bed.",
+        "Unused lawn, garden edges, fence lines, and open-field areas can provide valuable overflow space.",
+        "Bush and compact cultivars improve suitability for smaller gardens.",
+        "Small-fruited varieties may be trained onto a sturdy trellis.",
+        "Large or heavy fruits are poor candidates for unsupported vertical growing.",
+        "Raised beds can work when vines are allowed to trail outside the bed.",
+        "Containers are horticulturally possible with compact cultivars but generally inefficient for meaningful flock production.",
+        "Minimum useful and production areas remain null because cultivar size, fruit count, flock size, and harvest goals vary substantially."
+      ]
+    }
+  },
+
+  flock: {
+    suitableForAdultChickens: true,
+
+    suitableForYoungChicks: false,
+
+    flockPurposeScores: {
+      eggs: 4,
+      meat: 3,
+      breeding: 3,
+      petsEnrichment: 5,
+      homestead: 5,
+      mixed: 5
+    },
+
+    feedingMethodScores: {
+      livingGrazing: 1,
+      cutAndCarry: 2,
+      wholeProduce: 5,
+      wholeSeedHeads: 1,
+      wholeGrain: 2,
+      processedGrain: 2,
+      heatTreated: 4,
+      driedForage: 1,
+      winterStorage: 5
+    },
+
+    directRunSuitabilityScore: 1,
+
+    forageFrameSuitabilityScore: 1,
+
+    rotationalPaddockSuitabilityScore: 2,
+
+    confinedFlockValueScore: 5,
+
+    pasturedFlockValueScore: 4,
+
+    treatDilutionRiskScore: 3,
+
+    highEnergySupplement: false,
+
+    highFiberSupplement: true,
+
+    concentratedFatSource: false,
+
+    primaryFlockUses: [
+      "Whole-fruit pecking enrichment",
+      "Fresh split Pumpkin or Squash",
+      "Stored winter produce",
+      "Plain cooked household leftovers",
+      "Shared household-and-flock harvest"
+    ],
+
+    unsuitablePrimaryUses: [
+      "Complete-ration replacement",
+      "Living forage",
+      "Permanent-run planting",
+      "Concentrated protein crop",
+      "High-energy grain replacement",
+      "Primary young-chick feed"
+    ],
+
+    directFacts: {
+      edibleFeedParts: [
+        "Mature flesh",
+        "Mature seeds",
+        "Soft internal pulp",
+        "Plain cooked flesh"
+      ],
+
+      preferredBirdStage:
+        "Established adult chickens",
+
+      cropSurvivalWithDirectChickenAccess:
+        "poor-before-fruit-maturity",
+
+      directAccessTiming:
+        "Protect vines and developing fruit from chickens, then offer harvested mature fruit after splitting or opening it.",
+
+      nutritionalOrientation: [
+        "storage-produce",
+        "fresh-produce",
+        "fiber",
+        "carotenoid-rich-plant-material",
+        "enrichment",
+        "household-food"
+      ],
+
+      balancedFeedReplacement:
+        false,
+
+      notes: [
+        "Mature sound fruit provides a useful whole-produce supplementation path.",
+        "Splitting or opening the fruit gives chickens easier access to the flesh, pulp, and seeds.",
+        "Whole fruit can provide prolonged pecking enrichment.",
+        "Pumpkin and Winter Squash flesh contains substantial moisture and is not a concentrated dry feed.",
+        "Seeds contain more concentrated nutrients than the flesh but remain only one portion of the fruit.",
+        "The crop should remain supplemental to an age-appropriate complete poultry feed.",
+        "The planner does not treat Pumpkin seeds as a proven deworming medication.",
+        "Young chicks should continue receiving a complete starter ration.",
+        "Growing vines should generally be protected from unrestricted chicken access."
+      ]
+    }
+  },
+
+  labor: {
+    beginnerFriendlinessScore: 4,
+
+    plantingEaseScore: 4,
+
+    establishmentEaseScore: 4,
+
+    routineMaintenanceEaseScore: 3,
+
+    weedControlEaseScore: 4,
+
+    wildlifeProtectionEaseScore: 3,
+
+    harvestEaseScore: 3,
+
+    wholeFruitProcessingEaseScore: 5,
+
+    curingEaseScore: 3,
+
+    cookingEaseScore: 4,
+
+    storageMonitoringEaseScore: 4,
+
+    perennialMaintenanceEaseScore: 5,
+
+    physicalAccessibilityScore: 3,
+
+    heavyLiftingRiskScore: 4,
+
+    weeklyLaborLevel:
+      "moderate",
+
+    peakWorkloadLevel:
+      "moderate",
+
+    harvestFrequencyCategory:
+      "once-twice",
+
+    requiredPlantingTasks: [
+      "prepare-seedbed",
+      "plant-large-seed"
+    ],
+
+    optionalPlantingTasks: [
+      "start-indoors",
+      "transplant",
+      "install-irrigation"
+    ],
+
+    requiredMaintenanceTasks: [
+      "hand-weed",
+      "protect-from-wildlife"
+    ],
+
+    optionalMaintenanceTasks: [
+      "mulch",
+      "trellis"
+    ],
+
+    requiredHarvestTasks: [
+      "harvest-heavy-fruit"
+    ],
+
+    usePathProcessingTasks: {
+      freshSplitFruit: [
+        "harvest-heavy-fruit",
+        "chop"
+      ],
+
+      curedWholeStorageFruit: [
+        "harvest-heavy-fruit",
+        "cure",
+        "inspect-mold"
+      ],
+
+      cookedPlainFlesh: [
+        "harvest-heavy-fruit",
+        "chop",
+        "cook"
+      ]
+    },
+
+    requiredStorageTasks: [
+      "inspect-mold",
+      "rotate-stored-produce"
+    ],
+
+    specializedEquipmentRequired: [],
+
+    specializedEquipmentHelpful: [
+      "hand-pruners",
+      "cart",
+      "trellis",
+      "drip-irrigation",
+      "cool-storage",
+      "food-safe-container"
+    ],
+
+    suitableForLowTimeUsersScore: 3,
+
+    suitableForSoloGrowersScore: 3,
+
+    directFacts: {
+      seedSize:
+        "large-and-easy-to-handle",
+
+      directSeedingSuitable: true,
+
+      transplantingSuitable: true,
+
+      specializedHarvestEquipmentRequiredForBackyardScale:
+        false,
+
+      majorLaborBottlenecks: [
+        "Managing long vines",
+        "Monitoring Squash bugs and vine borers",
+        "Maintaining water during flowering and fruit development",
+        "Hand pollination when natural pollination is poor",
+        "Lifting and moving heavy fruit",
+        "Curing fruit properly",
+        "Inspecting stored fruit for soft spots and decay"
+      ],
+
+      notes: [
+        "Large seeds make planting straightforward.",
+        "Direct seeding is practical where the growing season is sufficiently long.",
+        "Transplants can help short-season growers but should be handled carefully to reduce root disturbance.",
+        "Vines suppress some weeds after the canopy closes.",
+        "Large leaves and tangled vines can make pest inspection difficult.",
+        "Small and medium fruit can usually be harvested by one person.",
+        "Large and giant fruit may require a cart, assistance, or modified harvest plan.",
+        "Fresh split-fruit use requires very little processing.",
+        "Long storage requires curing, careful handling, and regular inspection."
+      ]
+    }
+  },
+
+  cost: {
+    seedOrPlantCostLevel:
+      "low",
+
+    soilPreparationCostLevel:
+      "moderate",
+
+    irrigationCostLevel:
+      "moderate",
+
+    protectionCostLevel:
+      "moderate",
+
+    processingEquipmentCostLevel:
+      "very-low",
+
+    storageCostLevel:
+      "low",
+
+    annualRecurringCostLevel:
+      "moderate",
+
+    longTermValueScore: 5,
+
+    lowestCostUsePath:
+      "fresh-split-fruit",
+
+    highestCostUsePath:
+      "cured-whole-storage-fruit",
+
+    likelyCostDrivers: [
+      "Compost and fertility amendments",
+      "Irrigation or soaker hoses",
+      "Mulch",
+      "Insect protection",
+      "Sturdy trellis for small-fruited vertical varieties",
+      "Cart for heavy fruit",
+      "Suitable curing area",
+      "Cool dry storage shelves"
+    ],
+
+    costReductionOptions: [
+      "Choose a productive medium-sized variety rather than a giant variety.",
+      "Allow vines to spread into unused lawn or garden-edge space.",
+      "Use whole split fruit instead of processing seeds separately.",
+      "Use existing sheds, shelves, or spare rooms for storage when temperature and airflow are suitable.",
+      "Share the harvest between the household and flock.",
+      "Save seed only from suitable open-pollinated varieties after learning cross-pollination requirements."
+    ],
+
+    directFacts: {
+      specializedPlantingEquipmentRequired:
+        false,
+
+      specializedBackyardHarvestEquipmentRequired:
+        false,
+
+      specializedProcessingEquipmentRequired:
+        false,
+
+      notes: [
+        "Seed is generally inexpensive, but soil preparation and fertility needs may be greater than for low-input legumes.",
+        "Watering infrastructure may materially affect success in hot or dry regions.",
+        "Fresh-fruit use needs almost no specialized equipment.",
+        "Cured storage requires suitable space but not necessarily electricity.",
+        "Cost classifications are qualitative rather than current retail estimates."
+      ]
+    }
+  },
+
+  goals: {
+    feedReductionScore: 3,
+
+    energyProductionScore: 2,
+
+    proteinOrientedScore: 2,
+
+    freshGreensScore: 1,
+
+    livingForageScore: 1,
+
+    winterStorageScore: 5,
+
+    enrichmentScore: 5,
+
+    resilienceScore: 4,
+
+    soilImprovementScore: 2,
+
+    nitrogenFixationScore: 1,
+
+    groundCoverScore: 5,
+
+    erosionControlScore: 4,
+
+    shadeScore: 2,
+
+    privacyScreeningScore: 2,
+
+    pollinatorSupportScore: 5,
+
+    compostBiomassScore: 5,
+
+    householdFoodScore: 5,
+
+    seedSavingScore: 3,
+
+    selfRelianceScore: 5,
+
+    multipurposeValueScore: 5,
+
+    visualAppealScore: 5,
+
+    productionReliabilityScore: 4,
+
+    fastestValueScore: 2,
+
+    nonElectricStorageScore: 5,
+
+    smallFlockValueScore: 5,
+
+    largeFlockValueScore: 4,
+
+    primaryGoalMatches: [
+      "winter-storage",
+      "enrichment",
+      "household-food",
+      "non-electric-storage",
+      "self-reliance",
+      "pollinators",
+      "compost-biomass",
+      "ground-cover",
+      "edible-landscape",
+      "use-unused-space"
+    ],
+
+    weakGoalMatches: [
+      "fresh-greens",
+      "living-forage",
+      "nitrogen-fixation",
+      "protein-oriented",
+      "high-energy",
+      "small-container-production",
+      "fast-first-harvest"
+    ],
+
+    directFacts: {
+      wholeFruitStoragePotential:
+        true,
+
+      humanFoodPotential:
+        true,
+
+      pollinatorBenefit: true,
+
+      broadGroundCoverPotential:
+        true,
+
+      highCompostBiomassPotential:
+        true,
+
+      seedSavingPossible: true,
+
+      notes: [
+        "Pumpkins and Winter Squash are among the strongest non-electric winter-storage crops in the initial planner database.",
+        "Whole fruit provides substantial flock-enrichment value.",
+        "The crop is highly useful for shared household-and-flock harvests.",
+        "Large flowers provide pollen and nectar resources for Squash bees, bumblebees, honeybees, and other pollinators.",
+        "Vines provide strong seasonal ground coverage.",
+        "Spent vines and damaged fruit can contribute substantial compost biomass when disease and pest concerns allow.",
+        "The crop does not fix nitrogen and is not a concentrated protein source.",
+        "Seed saving is complicated because Squash varieties within compatible species may cross-pollinate.",
+        "The crop's strongest planner role is stored whole produce rather than major balanced-feed replacement."
+      ]
+    }
+  },
+
+  risks: {
+    wildlife: {
+      wildBirds: 2,
+      deer: 4,
+      raccoons: 4,
+      squirrels: 3,
+      rabbits: 3,
+      rodents: 5,
+      groundhogs: 4
+    },
+
+    insectsRiskScore: 5,
+
+    diseaseRiskScore: 5,
+
+    lodgingRiskScore: 1,
+
+    fieldMoldRiskScore: 4,
+
+    dryingMoldRiskScore: 1,
+
+    storageMoldRiskScore: 4,
+
+    storedInsectRiskScore: 1,
+
+    spoilageSpeedRiskScore: 3,
+
+    invasivenessConcernRiskScore: 1,
+
+    selfSeedingRiskScore: 2,
+
+    fruitDropRiskScore: 1,
+
+    cropFailureRiskScore: 4,
+
+    stormDamageRiskScore: 3,
+
+    shadingOtherCropsRiskScore: 5,
+
+    overfeedingRiskScore: 3,
+
+    treatedSeedRiskScore: 5,
+
+    primaryRisks: [
+      {
+        id:
+          "squash-vine-borer",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "vine-development",
+          "flowering",
+          "fruit-development"
+        ],
+
+        mitigationOptions: [
+          "Select resistant or less-susceptible species and cultivars",
+          "Use row cover before flowering",
+          "Remove row cover when pollination is needed",
+          "Inspect stems regularly",
+          "Rotate planting locations"
+        ],
+
+        note:
+          "Squash vine borers can cause sudden vine wilting and plant collapse, especially in susceptible Cucurbita pepo and Cucurbita maxima types."
+      },
+
+      {
+        id:
+          "squash-bugs",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "seedling",
+          "vine-development",
+          "flowering",
+          "fruit-development"
+        ],
+
+        mitigationOptions: [
+          "Inspect leaf undersides",
+          "Remove eggs and young nymphs",
+          "Use row cover before flowering",
+          "Remove plant debris after harvest",
+          "Rotate planting locations"
+        ],
+
+        note:
+          "Squash bugs can weaken plants by feeding on leaves and vines."
+      },
+
+      {
+        id:
+          "cucumber-beetles",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "seedling",
+          "vine-development",
+          "flowering"
+        ],
+
+        mitigationOptions: [
+          "Row cover during establishment",
+          "Regular inspection",
+          "Remove heavily damaged plants",
+          "Use resistant varieties where available"
+        ],
+
+        note:
+          "Cucumber beetles damage foliage and flowers and may transmit bacterial wilt in susceptible Cucurbit crops."
+      },
+
+      {
+        id:
+          "powdery-and-downy-mildew",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "vine-development",
+          "flowering",
+          "fruit-development"
+        ],
+
+        mitigationOptions: [
+          "Choose resistant varieties",
+          "Provide adequate spacing",
+          "Use drip irrigation",
+          "Improve airflow",
+          "Rotate crops",
+          "Remove severely diseased debris"
+        ],
+
+        note:
+          "Dense foliage and humid conditions can support serious foliar disease."
+      },
+
+      {
+        id:
+          "poor-pollination",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "flowering",
+          "fruit-setting"
+        ],
+
+        mitigationOptions: [
+          "Protect pollinator habitat",
+          "Avoid insecticide exposure during bloom",
+          "Grow multiple flowers simultaneously",
+          "Hand pollinate where necessary"
+        ],
+
+        note:
+          "Poor pollination may cause young fruit to yellow, shrivel, or abort."
+      },
+
+      {
+        id:
+          "storage-rot",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "harvest",
+          "curing",
+          "storage"
+        ],
+
+        mitigationOptions: [
+          "Harvest only mature sound fruit",
+          "Leave a suitable stem attached",
+          "Avoid bruising and cuts",
+          "Cure appropriate varieties",
+          "Store with airflow",
+          "Inspect regularly",
+          "Remove deteriorating fruit promptly"
+        ],
+
+        note:
+          "Bruised, immature, frost-damaged, or poorly cured fruit may decay rapidly in storage."
+      },
+
+      {
+        id:
+          "heavy-fruit-injury",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "harvest",
+          "transport",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Choose manageable fruit sizes",
+          "Use a cart",
+          "Lift with assistance",
+          "Cut fruit on a stable surface"
+        ],
+
+        note:
+          "Large Pumpkins may create lifting, dropping, and knife-handling hazards."
+      },
+
+      {
+        id:
+          "balanced-feed-displacement",
+
+        severity:
+          "moderate",
+
+        affectedStages: [
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Offer as a supplemental food",
+          "Continue complete poultry feed",
+          "Remove spoiled leftovers"
+        ],
+
+        note:
+          "Large amounts of watery produce may reduce consumption of balanced feed without supplying equivalent concentrated nutrition."
+      },
+
+      {
+        id:
+          "chemically-treated-seed",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "planting",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use untreated seed for crops intended as feed",
+          "Keep treated planting seed separated"
+        ],
+
+        note:
+          "Chemically treated planting seed must never be fed."
+      }
+    ],
+
+    directFacts: {
+      squashBugConcern:
+        true,
+
+      squashVineBorerConcern:
+        true,
+
+      cucumberBeetleConcern:
+        true,
+
+      powderyMildewConcern:
+        true,
+
+      downyMildewConcern:
+        true,
+
+      pollinationRequired:
+        true,
+
+      storageRotConcern:
+        true,
+
+      fruitBruisingConcern:
+        true,
+
+      notes: [
+        "Pest and disease pressure can be one of the largest barriers to reliable Pumpkin and Winter Squash production.",
+        "Species and cultivar choice strongly affect vine-borer and disease susceptibility.",
+        "Row cover can protect young plants but must be removed or opened when female flowers require pollination.",
+        "Avoid overhead irrigation when possible because wet foliage can favor disease.",
+        "Fruit intended for storage should be mature, sound, clean, and free from serious cuts or bruises.",
+        "Fruit with mold, soft rot, fermentation, frost damage, or foul odor should not be fed.",
+        "Stored fruit should be separated enough to allow inspection and airflow.",
+        "The planner does not make medicinal or deworming claims for Pumpkin seeds."
+      ]
+    }
+  },
+
+  seasonalRoles: {
+    earlySpring: false,
+
+    lateSpring: true,
+
+    summer: true,
+
+    lateSummer: true,
+
+    fall: true,
+
+    winterStorage: true,
+
+    perennial: false,
+
+    plantingWindows: [
+      {
+        id:
+          "indoor-start-short-season",
+
+        trigger:
+          "before-last-frost",
+
+        offsetWeeksMinimum: 2,
+        offsetWeeksMaximum: 4,
+
+        method:
+          "start-indoors",
+
+        note:
+          "Start indoors only early enough to gain time without allowing plants to become root-bound."
+      },
+
+      {
+        id:
+          "direct-seed-warm-soil",
+
+        trigger:
+          "after-last-frost",
+
+        offsetWeeksMinimum: 1,
+        offsetWeeksMaximum: 3,
+
+        soilCondition:
+          "warm-and-well-drained",
+
+        method:
+          "direct-seed",
+
+        note:
+          "Direct-seed after frost danger has passed and the soil is warm enough for dependable germination."
+      }
+    ],
+
+    harvestWindows: [
+      {
+        id:
+          "fresh-mature-fruit",
+
+        trigger:
+          "fruit-mature-and-rind-hardened",
+
+        usePathId:
+          "fresh-split-fruit",
+
+        note:
+          "Harvest mature sound fruit and split it for immediate or near-immediate flock use."
+      },
+
+      {
+        id:
+          "cured-storage-fruit",
+
+        trigger:
+          "fruit-mature-before-hard-frost",
+
+        usePathId:
+          "cured-whole-storage-fruit",
+
+        note:
+          "Harvest mature undamaged fruit before hard frost, cure appropriate varieties, and move them into suitable storage."
+      },
+
+      {
+        id:
+          "cooked-household-flesh",
+
+        trigger:
+          "mature-fruit-selected-for-household-use",
+
+        usePathId:
+          "plain-cooked-flesh",
+
+        note:
+          "Reserve plain unseasoned cooked flesh and seeds for limited supplemental flock use."
+      }
+    ],
+
+    cropSequenceRoles: [
+      "Warm-season annual",
+      "Summer ground-cover crop",
+      "Pollinator-supporting crop",
+      "Fall whole-fruit harvest",
+      "Non-electric winter-storage crop",
+      "Shared household-and-flock crop"
+    ],
+
+    seasonalLimitations: [
+      "Not frost tolerant",
+      "Requires warm soil",
+      "Long-season varieties may not mature in short climates",
+      "Wet fall weather can interfere with curing and harvest",
+      "Hard frost can damage fruit intended for storage"
+    ],
+
+    directFacts: {
+      warmSeasonAnnual: true,
+
+      commonlyDirectSeeded: true,
+
+      indoorStartingPossible:
+        true,
+
+      matureFruitHarvestBeforeHardFrost:
+        true,
+
+      curingMayImproveStorage:
+        true,
+
+      curingRequirementsVaryByType:
+        true,
+
+      notes: [
+        "Pumpkins and Winter Squash are planted after frost danger declines and soil warms.",
+        "Vines grow through summer and fruits generally mature in late summer or fall.",
+        "Maturity indicators include full cultivar color, hard rind, and drying or corking stems.",
+        "Fruit intended for storage should be harvested before damaging hard frost.",
+        "Some Winter Squash types benefit from curing, while certain thin-skinned types may not.",
+        "Cured sound fruit can extend the crop's usefulness well into winter."
+      ]
+    }
+  },
+
+  usePaths: [
+    {
+      id:
+        "fresh-split-fruit",
+
+      label:
+        "Fresh Split Pumpkin or Winter Squash",
+
+      description:
+        "A mature sound fruit cut or split open and offered relatively soon after harvest for flock enrichment and supplemental consumption.",
+
+      primaryFeedRole:
+        "whole-produce-enrichment",
+
+      harvestProducts: [
+        "whole-storage-vegetables",
+        "fresh-fruit",
+        "pumpkin-squash-flesh"
+      ],
+
+      suitableFeedingMethods: [
+        "whole-produce",
+        "fresh-supplement",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [
+        "harvest-heavy-fruit",
+        "chop"
+      ],
+
+      optionalProcessingTasks: [],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "cart",
+        "food-safe-container"
+      ],
+
+      harvestPattern:
+        "several",
+
+      harvestFrequencyCategory:
+        "seasonal",
+
+      storageMethods: [
+        "short-term-fresh"
+      ],
+
+      preferredStorageMethod:
+        "feed-soon-after-opening",
+
+      storageDurationCategory:
+        "very-short",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: true,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 3,
+      rodentRiskScore: 3,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 4,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Use only mature sound fruit without mold, soft rot, fermentation, frost damage, or foul odor.",
+        "Cut large fruit on a stable surface using an appropriate tool.",
+        "Remove uneaten opened fruit before it spoils.",
+        "Fresh fruit remains supplemental and should not replace balanced poultry feed.",
+        "Do not feed decorative fruit that has been painted, treated, waxed with unknown products, or exposed to contamination."
+      ],
+
+      incompatibleUserTraits: [
+        "requires-long-term-storage-after-opening",
+        "cannot-safely-cut-heavy-fruit",
+        "wants-dry-grain-only"
+      ]
+    },
+
+    {
+      id:
+        "cured-whole-storage-fruit",
+
+      label:
+        "Cured Whole Pumpkin or Winter Squash",
+
+      description:
+        "Mature undamaged fruit cured when appropriate and stored whole in a cool, dry, ventilated location for later winter feeding.",
+
+      primaryFeedRole:
+        "winter-storage-produce",
+
+      harvestProducts: [
+        "whole-storage-vegetables",
+        "winter-storage-produce"
+      ],
+
+      suitableFeedingMethods: [
+        "whole-produce",
+        "winter-storage",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [
+        "harvest-heavy-fruit",
+        "cure"
+      ],
+
+      optionalProcessingTasks: [
+        "clean-sort"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "cart",
+        "cool-storage"
+      ],
+
+      harvestPattern:
+        "major",
+
+      harvestFrequencyCategory:
+        "once-twice",
+
+      storageMethods: [
+        "cured-whole",
+        "cool-dry-ventilated"
+      ],
+
+      preferredStorageMethod:
+        "cool-dry-ventilated-whole-fruit",
+
+      storageDurationCategory:
+        "medium-long",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: true,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 4,
+      rodentRiskScore: 4,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 3,
+      preparationEaseScore: 4,
+      beginnerSuitabilityScore: 4,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Store only mature, sound, undamaged fruit.",
+        "Do not store badly bruised, punctured, frost-damaged, soft, moldy, or immature fruit.",
+        "Curing needs vary by Squash type; not every variety should be cured identically.",
+        "Inspect stored fruit regularly and remove any fruit developing soft spots, leakage, mold, or foul odor.",
+        "Do not allow fruit to freeze during storage.",
+        "Open fruit only when it can be used before spoilage."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-curing",
+        "has-no-cool-dry-storage",
+        "cannot-monitor-stored-produce",
+        "cannot-handle-heavy-fruit"
+      ]
+    },
+
+    {
+      id:
+        "plain-cooked-flesh",
+
+      label:
+        "Plain Cooked Pumpkin or Squash",
+
+      description:
+        "Plain unseasoned cooked flesh or seed-containing pulp reserved from household preparation and offered as a measured supplemental food.",
+
+      primaryFeedRole:
+        "shared-household-food",
+
+      harvestProducts: [
+        "cooked-produce",
+        "household-food-leftovers",
+        "pumpkin-squash-flesh"
+      ],
+
+      suitableFeedingMethods: [
+        "heat-treated",
+        "measured-supplement",
+        "shared-household-food"
+      ],
+
+      requiredProcessingTasks: [
+        "harvest-heavy-fruit",
+        "chop",
+        "cook"
+      ],
+
+      optionalProcessingTasks: [
+        "freeze"
+      ],
+
+      requiredEquipment: [
+        "cooking-equipment"
+      ],
+
+      helpfulEquipment: [
+        "food-safe-container",
+        "refrigerator",
+        "freezer"
+      ],
+
+      harvestPattern:
+        "several",
+
+      harvestFrequencyCategory:
+        "seasonal",
+
+      storageMethods: [
+        "refrigerated",
+        "frozen"
+      ],
+
+      preferredStorageMethod:
+        "refrigerate-briefly-or-freeze",
+
+      storageDurationCategory:
+        "short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: true,
+      freezingSuitable: true,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: true,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 2,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 3,
+      preparationEaseScore: 3,
+      beginnerSuitabilityScore: 4,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 4,
+
+      safetyWarnings: [
+        "Offer only plain unseasoned cooked Squash.",
+        "Do not feed pie filling, sweetened Pumpkin, heavily salted food, buttered dishes, sauces, or foods containing unsafe ingredients.",
+        "Refrigerate cooked material promptly and discard spoiled leftovers.",
+        "Cooked Squash remains supplemental to complete poultry feed."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-cooking",
+        "has-no-refrigeration-or-freezer",
+        "requires-minimal-preparation"
+      ]
+    }
+  ],
+
+  dataQuality: {
+    overallConfidence:
+      0.81,
+
+    verifiedFields: [
+      "identity",
+      "lifecycle",
+      "climate.directFacts.seasonType",
+      "climate.directFacts.frostSensitive",
+      "climate.directFacts.warmSoilRequired",
+      "climate.daysToMaturityMinimum",
+      "climate.daysToMaturityMaximum",
+      "site.directFacts.preferredLight",
+      "site.directFacts.vineLengthHighlyVariable",
+      "site.directFacts.pollinatorAccessImportant",
+      "soil.directFacts.organicMatterBenefit",
+      "soil.directFacts.heavyFeedingCrop",
+      "water.directFacts.consistentMoistureImportant",
+      "water.directFacts.floweringMoistureImportant",
+      "water.directFacts.fruitExpansionMoistureImportant",
+      "space.directFacts.bushVarietiesAvailable",
+      "space.directFacts.fullViningVarietiesAvailable",
+      "space.directFacts.trellisPossibleForSmallFruit",
+      "space.directFacts.largeFruitTrellisLimitation",
+      "flock.directFacts.edibleFeedParts",
+      "risks.directFacts.squashBugConcern",
+      "risks.directFacts.squashVineBorerConcern",
+      "risks.directFacts.cucumberBeetleConcern",
+      "risks.directFacts.powderyMildewConcern",
+      "risks.directFacts.pollinationRequired",
+      "risks.directFacts.storageRotConcern",
+      "seasonalRoles.directFacts.warmSeasonAnnual",
+      "seasonalRoles.directFacts.matureFruitHarvestBeforeHardFrost",
+      "seasonalRoles.directFacts.curingMayImproveStorage"
+    ],
+
+    derivedFields: [
+      "climate.heatToleranceScore",
+      "climate.droughtClimateToleranceScore",
+      "climate.humidityToleranceScore",
+      "climate.coolSummerToleranceScore",
+      "climate.frostSensitivityScore",
+      "site",
+      "soil.textureScores",
+      "soil.drainageRequirementScore",
+      "soil.waterloggingSensitivityScore",
+      "water",
+      "space.smallSpaceScore",
+      "space.mediumSpaceScore",
+      "space.largeSpaceScore",
+      "space.layoutScores",
+      "space.spaceTypeScores",
+      "flock.flockPurposeScores",
+      "flock.feedingMethodScores",
+      "flock.directRunSuitabilityScore",
+      "flock.confinedFlockValueScore",
+      "labor",
+      "cost",
+      "goals",
+      "risks.wildlife",
+      "usePaths.fresh-split-fruit",
+      "usePaths.cured-whole-storage-fruit",
+      "usePaths.plain-cooked-flesh"
+    ],
+
+    uncertainFields: [
+      "climate.minimumFrostFreeDays",
+      "climate.preferredFrostFreeDays",
+      "climate.dryDownBufferDays",
+      "soil.saltToleranceScore",
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "flock.portionGuidance",
+      "usePaths.fresh-split-fruit.exactStorageDuration",
+      "usePaths.cured-whole-storage-fruit.exactStorageDuration",
+      "usePaths.plain-cooked-flesh.exactStorageDuration",
+      "risks.wildlife.wildBirds",
+      "risks.wildlife.squirrels"
+    ],
+
+    missingFields: [
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "flock.portionGuidance",
+      "flock.usePathTesting"
+    ],
+
+    lastReviewed:
+      "2026-07-14",
+
+    primarySources: [
+      {
+        title:
+          "Growing Pumpkins and Winter Squash",
+
+        organization:
+          "University Cooperative Extension resources",
+
+        sourceType:
+          "extension-home-garden-guide",
+
+        use:
+          "Warm-season planting, sunlight, soil, spacing, water, flowering, pollination, harvest maturity, pests, and diseases"
+      },
+
+      {
+        title:
+          "Pumpkin and Winter Squash Production Guide",
+
+        organization:
+          "University and Cooperative Extension production resources",
+
+        sourceType:
+          "extension-production-guide",
+
+        use:
+          "Cultivar types, plant populations, fertility, irrigation, pollination, pest management, disease management, harvest, and postharvest handling"
+      },
+
+      {
+        title:
+          "Storing Pumpkins and Winter Squash",
+
+        organization:
+          "University Cooperative Extension postharvest resources",
+
+        sourceType:
+          "extension-storage-guide",
+
+        use:
+          "Maturity, curing, storage temperature, airflow, relative humidity, variety-dependent storage life, and spoilage monitoring"
+      },
+
+      {
+        title:
+          "Pumpkin and Winter Squash in Poultry and Livestock Feeding",
+
+        organization:
+          "Poultry nutrition and agricultural research resources",
+
+        sourceType:
+          "feed-and-nutrition-research",
+
+        use:
+          "Flesh, seed, seed-meal, carotenoid, fiber, supplemental feeding, and complete-ration limitations"
+      }
+    ],
+
+    notes: [
+      "Pumpkin and Winter Squash plannerData combines multiple mature Cucurbita fruit types because they share warm-season growth, vine management, mature-fruit harvest, and storage-oriented planner roles.",
+      "Cultivar differences are substantial; bush Acorn Squash, Butternut Squash, pie Pumpkins, field Pumpkins, and giant Pumpkins should not be assumed to have identical maturity, spacing, storage, pest, or handling characteristics.",
+      "The record separates fresh split fruit, cured whole storage fruit, and plain cooked household-use fruit into distinct use paths.",
+      "The planner does not make medicinal or deworming claims for Pumpkin seeds.",
+      "Mature fruit remains a supplemental food rather than a complete poultry ration.",
+      "Minimum useful area, exact storage life, and flock feeding portions remain intentionally null.",
+      "The crop should remain in testing until the shared engine evaluates vine-space, winter-storage, enrichment, heavy-fruit handling, and low-processing profiles."
+    ]
+  }
+}
+
+
   },
 
     "CROP-KALE-COLLARDS": {
