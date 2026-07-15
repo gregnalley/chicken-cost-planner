@@ -10579,7 +10579,7 @@ plannerData: {
   schemaVersion: "1.0.0",
 
   developmentStatus:
-    "testing",
+    "ready",
 
   identity: {
     plannerName:
@@ -12638,7 +12638,7 @@ plannerData: {
         "1.0.0",
 
       developmentStatus:
-        "testing",
+        "ready",
 
       identity: {
         plannerName:
@@ -14832,7 +14832,7 @@ plannerData: {
         "1.0.0",
 
       developmentStatus:
-        "testing",
+        "ready",
 
       identity: {
         plannerName:
@@ -17217,7 +17217,7 @@ plannerData: {
         "1.0.0",
 
       developmentStatus:
-        "testing",
+        "ready",
 
       identity: {
         plannerName:
@@ -19362,7 +19362,7 @@ plannerData: {
         "1.0.0",
 
       developmentStatus:
-        "testing",
+        "ready",
 
       identity: {
         plannerName:
