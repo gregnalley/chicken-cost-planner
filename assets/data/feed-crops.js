@@ -12247,6 +12247,7 @@ plannerData: {
       "The crop should remain in testing until perennial forage, rotational grazing, forage-frame, partial-shade, lawn-conversion, and drought-stress profiles are evaluated."
     ]
   }
+  }
 }, 
 
     "CROP-ALFALFA": {
@@ -13782,4 +13783,4 @@ plannerData: {
       ]
     }
 }
-}};
+};
