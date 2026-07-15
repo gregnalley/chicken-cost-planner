@@ -2461,6 +2461,19 @@ if (
   );
 }
 
+if (
+  usePath.curingRequired &&
+  !acceptedProcessing.includes(
+    "cure"
+  )
+) {
+  score -= 18;
+
+  limitations.push(
+    "This use path requires curing, but curing was not selected."
+  );
+}
+
   if (
     usePath.dryingRequired &&
     dryingCapability === "none"
