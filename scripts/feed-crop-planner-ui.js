@@ -97,6 +97,7 @@
     renderCropRegistrationReport();
     renderCropValidationReport();
     renderSunflowerSampleTests();
+    renderMultiCropSampleTests();
 
   }
 
@@ -516,11 +517,169 @@ function renderSunflowerSampleTests() {
       .join("");
 }
 
+function renderMultiCropSampleTests() {
+  const summaryElement =
+    document.getElementById(
+      "multi-crop-test-summary"
+    );
+
+  const resultsElement =
+    document.getElementById(
+      "multi-crop-test-results"
+    );
+
+  if (
+    !namespace.engine ||
+    typeof namespace.engine
+      .runMultiCropSampleTests !==
+      "function"
+  ) {
+    if (summaryElement) {
+      summaryElement.textContent =
+        "Multi-crop test engine is unavailable.";
+
+      summaryElement.className =
+        "foundation-status foundation-status-error";
+    }
+
+    return;
+  }
+
+  const testRun =
+    namespace.engine
+      .runMultiCropSampleTests();
+
+  if (!testRun.success) {
+    if (summaryElement) {
+      summaryElement.textContent =
+        testRun.error ||
+        "Multi-crop tests could not run.";
+
+      summaryElement.className =
+        "foundation-status foundation-status-error";
+    }
+
+    return;
+  }
+
+  if (summaryElement) {
+    summaryElement.textContent =
+      `${testRun.cropCount} crops were compared across ${testRun.profileCount} sample profiles.`;
+
+    summaryElement.className =
+      "foundation-status foundation-status-success";
+  }
+
+  if (!resultsElement) {
+    return;
+  }
+
+  resultsElement.innerHTML =
+    testRun.results
+      .map(profileResult => {
+        const cropCards =
+          profileResult.cropResults
+            .map(
+              (cropResult, index) => {
+                const bestUsePath =
+                  cropResult.bestUsePath
+                    ?.label ||
+                  "No eligible use path";
+
+                const tierLabel =
+                  cropResult.tier
+                    ?.label ||
+                  "Unavailable";
+
+                const categoryChips =
+                  Object.entries(
+                    cropResult
+                      .categoryResults
+                  )
+                    .map(
+                      ([
+                        category,
+                        result
+                      ]) => {
+                        const score =
+                          Number.isFinite(
+                            result.score
+                          )
+                            ? Math.round(
+                                result.score
+                              )
+                            : "N/A";
+
+                        return `
+                          <span class="test-score-chip">
+                            ${category}: ${score}
+                          </span>
+                        `;
+                      }
+                    )
+                    .join("");
+
+                return `
+                  <div class="multi-crop-card">
+
+                    <h4>
+                      #${index + 1}
+                      ${cropResult.cropName}
+                    </h4>
+
+                    <p>
+                      <strong>Overall Score:</strong>
+                      ${cropResult.finalScore}%
+                    </p>
+
+                    <p>
+                      <strong>Tier:</strong>
+                      ${tierLabel}
+                    </p>
+
+                    <p>
+                      <strong>Best Use Path:</strong>
+                      ${bestUsePath}
+                    </p>
+
+                    <p>
+                      <strong>Wildlife Penalty:</strong>
+                      ${cropResult.wildlife.penalty}
+                    </p>
+
+                    <div class="test-score-row">
+                      ${categoryChips}
+                    </div>
+
+                  </div>
+                `;
+              }
+            )
+            .join("");
+
+        return `
+          <article class="multi-profile-result">
+
+            <h3>
+              ${profileResult.profileLabel}
+            </h3>
+
+            <div class="multi-crop-ranking">
+              ${cropCards}
+            </div>
+
+          </article>
+        `;
+      })
+      .join("");
+}
+
   namespace.ui = Object.freeze({
     initializeDevelopmentPage,
     renderCropRegistrationReport,
     renderCropValidationReport,
-    renderSunflowerSampleTests
+    renderSunflowerSampleTests,
+    renderMultiCropSampleTests
   });
 
 })(window);

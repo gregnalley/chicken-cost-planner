@@ -1554,6 +1554,1270 @@ function runSunflowerSampleTests() {
   };
 }
 
+function getCropGoalFieldName(goalId) {
+  const goalFieldMap = {
+    "reduce-feed-use":
+      "feedReductionScore",
+
+    "high-energy":
+      "energyProductionScore",
+
+    "protein-oriented":
+      "proteinOrientedScore",
+
+    "fresh-greens":
+      "freshGreensScore",
+
+    "living-forage":
+      "livingForageScore",
+
+    "winter-storage":
+      "winterStorageScore",
+
+    "enrichment":
+      "enrichmentScore",
+
+    "resilience-feed":
+      "resilienceScore",
+
+    "soil-improvement":
+      "soilImprovementScore",
+
+    "nitrogen-fixation":
+      "nitrogenFixationScore",
+
+    "ground-cover":
+      "groundCoverScore",
+
+    "erosion-control":
+      "erosionControlScore",
+
+    "shade":
+      "shadeScore",
+
+    "privacy-screening":
+      "privacyScreeningScore",
+
+    "pollinators":
+      "pollinatorSupportScore",
+
+    "compost-biomass":
+      "compostBiomassScore",
+
+    "shared-household-food":
+      "householdFoodScore",
+
+    "seed-saving":
+      "seedSavingScore",
+
+    "self-reliance":
+      "selfRelianceScore",
+
+    "edible-landscape":
+      "visualAppealScore",
+
+    "use-unused-space":
+      "multipurposeValueScore"
+  };
+
+  return goalFieldMap[goalId] || null;
+}
+
+function scoreGenericGoalFit(
+  crop,
+  answers
+) {
+  const selectedGoals =
+    answers.preferences?.plannerGoals ||
+    [];
+
+  const priorities =
+    answers.preferences
+      ?.goalPriorities ||
+    [];
+
+  const goalData =
+    crop.plannerData?.goals || {};
+
+  const priorityWeights = {
+    1: 1,
+    2: 0.7,
+    3: 0.45
+  };
+
+  const factors = [];
+
+  selectedGoals.forEach(goalId => {
+    const fieldName =
+      getCropGoalFieldName(goalId);
+
+    if (!fieldName) {
+      return;
+    }
+
+    const cropScore =
+      convertFivePointToPercent(
+        goalData[fieldName]
+      );
+
+    if (!Number.isFinite(cropScore)) {
+      return;
+    }
+
+    const priorityRecord =
+      priorities.find(
+        record =>
+          record.goal === goalId
+      );
+
+    const weight =
+      priorityRecord
+        ? priorityWeights[
+            priorityRecord.rank
+          ] || 0.2
+        : 0.2;
+
+    factors.push({
+      value: cropScore,
+      weight
+    });
+  });
+
+  const score =
+    weightedAverageKnown(factors);
+
+  return {
+    score: clampScore(score),
+
+    reason:
+      factors.length > 0
+        ? "The crop was scored against the visitor's selected and ranked goals."
+        : "No compatible crop-goal ratings were available."
+  };
+}
+
+function scoreGenericClimateFit(
+  crop,
+  answers
+) {
+  const climateType =
+    answers.climate?.climateType;
+
+  const climate =
+    crop.plannerData?.climate;
+
+  if (!climate) {
+    return {
+      score: null,
+      reason:
+        "Climate data is unavailable."
+    };
+  }
+
+  let score = 60;
+
+  if (
+    climate.preferredClimateTypes
+      ?.includes(climateType)
+  ) {
+    score = 100;
+  } else if (
+    climate.suitableClimateTypes
+      ?.includes(climateType)
+  ) {
+    score = 82;
+  } else if (
+    climate.challengingClimateTypes
+      ?.includes(climateType)
+  ) {
+    score = 40;
+  }
+
+  return {
+    score,
+
+    reason:
+      score >= 90
+        ? `${crop.name} is strongly adapted to the selected climate type.`
+        : score >= 70
+          ? `${crop.name} is generally suitable for the selected climate.`
+          : `${crop.name} may face climate limitations under the selected conditions.`
+  };
+}
+
+function scoreGenericSunlightFit(
+  crop,
+  answers
+) {
+  const sunHours =
+    answers.site?.directSunHoursExact;
+
+  const site =
+    crop.plannerData?.site;
+
+  if (
+    !site ||
+    !Number.isFinite(sunHours)
+  ) {
+    return {
+      score: null,
+      reason:
+        "Direct sunlight information is incomplete."
+    };
+  }
+
+  if (
+    Number.isFinite(
+      site.preferredSunHours
+    ) &&
+    sunHours >= site.preferredSunHours
+  ) {
+    return {
+      score: 100,
+      reason:
+        `${sunHours} hours of direct sun meets the crop's preferred light level.`
+    };
+  }
+
+  if (
+    Number.isFinite(
+      site.productiveMinimumSunHours
+    ) &&
+    sunHours >=
+      site.productiveMinimumSunHours
+  ) {
+    return {
+      score: 80,
+      reason:
+        `${sunHours} hours of direct sunlight should support useful production.`
+    };
+  }
+
+  if (sunHours >= 4) {
+    return {
+      score: 40,
+      reason:
+        "Sunlight is below the crop's productive target."
+    };
+  }
+
+  return {
+    score: 10,
+    reason:
+      "The site is too shaded for dependable production."
+  };
+}
+
+function getSpaceTypePlannerKey(
+  spaceType
+) {
+  const map = {
+    "in-ground": "inGround",
+    "raised-bed": "raisedBed",
+    "containers": "container",
+    "fence-line": "fenceLine",
+    "building-edge": "buildingEdge",
+    "unused-lawn": "unusedLawn",
+    "open-field": "openField",
+    "orchard": "orchard",
+    "forage-frame": "forageFrame",
+
+    "rotational-paddock":
+      "rotationalPaddock",
+
+    "greenhouse": "greenhouse",
+    "hedgerow": "hedgerow"
+  };
+
+  return map[spaceType] || null;
+}
+
+function getLayoutPlannerKey(shape) {
+  const map = {
+    "square-block": "squareBlock",
+
+    "wide-rectangle":
+      "wideRectangle",
+
+    "long-strip": "longStrip",
+
+    "irregular": "irregular",
+
+    "small-beds": "smallBeds",
+
+    "open-field": "openField"
+  };
+
+  return map[shape] || null;
+}
+
+function scoreGenericSpaceFit(
+  crop,
+  answers
+) {
+  const spaceData =
+    crop.plannerData?.space;
+
+  if (!spaceData) {
+    return {
+      score: null,
+      reason:
+        "Space data is unavailable."
+    };
+  }
+
+  const spaceTypes =
+    answers.space
+      ?.availableSpaceTypes ||
+    [];
+
+  const shape =
+    answers.space
+      ?.largestAreaShape;
+
+  const totalArea =
+    answers.space
+      ?.totalGrowingAreaSqFt;
+
+  const typeScores =
+    spaceTypes
+      .map(spaceType => {
+        const key =
+          getSpaceTypePlannerKey(
+            spaceType
+          );
+
+        return convertFivePointToPercent(
+          spaceData
+            .spaceTypeScores?.[key]
+        );
+      })
+      .filter(Number.isFinite);
+
+  const bestTypeScore =
+    typeScores.length > 0
+      ? Math.max(...typeScores)
+      : null;
+
+  const layoutKey =
+    getLayoutPlannerKey(shape);
+
+  const layoutScore =
+    convertFivePointToPercent(
+      spaceData
+        .layoutScores?.[layoutKey]
+    );
+
+  let areaScaleScore = null;
+
+  if (Number.isFinite(totalArea)) {
+    if (totalArea < 25) {
+      areaScaleScore =
+        convertFivePointToPercent(
+          spaceData.smallSpaceScore
+        );
+    } else if (totalArea <= 250) {
+      areaScaleScore =
+        convertFivePointToPercent(
+          spaceData.mediumSpaceScore
+        );
+    } else {
+      areaScaleScore =
+        convertFivePointToPercent(
+          spaceData.largeSpaceScore
+        );
+    }
+  }
+
+  const score =
+    weightedAverageKnown([
+      {
+        value: bestTypeScore,
+        weight: 0.45
+      },
+      {
+        value: layoutScore,
+        weight: 0.30
+      },
+      {
+        value: areaScaleScore,
+        weight: 0.25
+      }
+    ]);
+
+  return {
+    score: clampScore(score),
+
+    reason:
+      score >= 85
+        ? "The crop fits the selected space type, layout, and growing scale well."
+        : score >= 60
+          ? "The crop can fit, but the available space creates some limitations."
+          : "The selected space is a weak fit for this crop."
+  };
+}
+
+function getSoilTexturePlannerKey(
+  soilTexture
+) {
+  const map = {
+    "heavy-clay": "heavyClay",
+    "clay-loam": "clayLoam",
+    "loam": "loam",
+    "sandy-loam": "sandyLoam",
+    "very-sandy": "verySandy",
+    "rocky": "rocky"
+  };
+
+  return map[soilTexture] || null;
+}
+
+function scoreGenericSoilFit(
+  crop,
+  answers
+) {
+  const soilData =
+    crop.plannerData?.soil;
+
+  if (!soilData) {
+    return {
+      score: null,
+      reason:
+        "Soil data is unavailable."
+    };
+  }
+
+  const soilTexture =
+    answers.soil?.soilTexture;
+
+  const drainage =
+    answers.soil?.soilDrainage;
+
+  let textureScore = null;
+
+  if (
+    soilTexture ===
+      "commercial-mix" ||
+    soilTexture ===
+      "raised-bed-mix"
+  ) {
+    textureScore = 80;
+  } else {
+    const textureKey =
+      getSoilTexturePlannerKey(
+        soilTexture
+      );
+
+    textureScore =
+      convertFivePointToPercent(
+        soilData
+          .textureScores?.[
+            textureKey
+          ]
+      );
+  }
+
+  const drainageScores = {
+    "very-fast": 70,
+    "well-drained": 100,
+    "moist": 75,
+    "slow": 40,
+    "waterlogged": 10,
+    "standing-water": 0
+  };
+
+  const drainageScore =
+    drainageScores[drainage] ??
+    null;
+
+  const score =
+    weightedAverageKnown([
+      {
+        value: textureScore,
+        weight: 0.40
+      },
+      {
+        value: drainageScore,
+        weight: 0.60
+      }
+    ]);
+
+  return {
+    score: clampScore(score),
+
+    reason:
+      drainage === "well-drained"
+        ? "The selected soil has favorable drainage."
+        : drainage === "very-fast"
+          ? "Rapid drainage may require more dependable moisture management."
+          : "Slow or saturated drainage lowers crop suitability."
+  };
+}
+
+function scoreGenericWaterFit(
+  crop,
+  answers
+) {
+  const waterData =
+    crop.plannerData?.water;
+
+  if (!waterData) {
+    return {
+      score: null,
+      reason:
+        "Water data is unavailable."
+    };
+  }
+
+  const reliability =
+    answers.water?.waterReliability;
+
+  const frequency =
+    answers.water
+      ?.wateringFrequencyPreference;
+
+  const criticalWater =
+    answers.water
+      ?.criticalStageWaterAvailability;
+
+  const reliabilityScores = {
+    "very-reliable": 100,
+    "usually-reliable": 85,
+
+    "occasionally-limited":
+      70,
+
+    "frequently-limited":
+      50,
+
+    "emergency-only": 30,
+    "rainfall-only": 50,
+    "unknown": null
+  };
+
+  const frequencyScores = {
+    "daily": 100,
+    "every-2-3-days": 95,
+    "twice-weekly": 90,
+    "weekly": 72,
+    "drought-only": 50,
+    "establishment-only": 55,
+
+    "rainfall-dependent":
+      45
+  };
+
+  const criticalScores = {
+    "reliable": 100,
+    "occasional": 72,
+    "emergency": 40,
+    "none": 20,
+
+    "needs-guidance":
+      55
+  };
+
+  let capabilityScore =
+    weightedAverageKnown([
+      {
+        value:
+          reliabilityScores[
+            reliability
+          ] ?? null,
+
+        weight: 0.45
+      },
+      {
+        value:
+          frequencyScores[
+            frequency
+          ] ?? null,
+
+        weight: 0.30
+      },
+      {
+        value:
+          criticalScores[
+            criticalWater
+          ] ?? null,
+
+        weight: 0.25
+      }
+    ]);
+
+  const limitedWaterSuitability =
+    convertFivePointToPercent(
+      waterData
+        .suitableForLimitedIrrigationScore
+    );
+
+  if (
+    [
+      "occasionally-limited",
+      "frequently-limited",
+      "rainfall-only"
+    ].includes(reliability)
+  ) {
+    capabilityScore =
+      weightedAverageKnown([
+        {
+          value: capabilityScore,
+          weight: 0.60
+        },
+        {
+          value:
+            limitedWaterSuitability,
+          weight: 0.40
+        }
+      ]);
+  }
+
+  return {
+    score:
+      clampScore(capabilityScore),
+
+    reason:
+      reliability ===
+        "frequently-limited"
+        ? `${crop.name} was adjusted for limited water and its crop-specific drought suitability.`
+        : "The watering setup was compared with the crop's moisture needs."
+  };
+}
+
+function scoreGenericLaborFit(
+  crop,
+  answers
+) {
+  const laborData =
+    crop.plannerData?.labor;
+
+  if (!laborData) {
+    return {
+      score: null,
+      reason:
+        "Labor data is unavailable."
+    };
+  }
+
+  const experience =
+    answers.labor
+      ?.gardeningExperience;
+
+  const weeklyTime =
+    answers.labor?.weeklyCropTime;
+
+  const experienceScores = {
+    none: 55,
+    beginner: 75,
+    intermediate: 90,
+    experienced: 100,
+    advanced: 100
+  };
+
+  const weeklyTimeScores = {
+    "under-30-min": 45,
+    "30-60-min": 65,
+    "1-2-hours": 85,
+    "3-5-hours": 100,
+    "6-10-hours": 100,
+    "over-10-hours": 100,
+    seasonal: 85
+  };
+
+  const beginnerFit =
+    convertFivePointToPercent(
+      laborData
+        .beginnerFriendlinessScore
+    );
+
+  const lowTimeFit =
+    convertFivePointToPercent(
+      laborData
+        .suitableForLowTimeUsersScore
+    );
+
+  const score =
+    weightedAverageKnown([
+      {
+        value:
+          experienceScores[
+            experience
+          ] ?? null,
+
+        weight: 0.25
+      },
+      {
+        value:
+          weeklyTimeScores[
+            weeklyTime
+          ] ?? null,
+
+        weight: 0.25
+      },
+      {
+        value: beginnerFit,
+        weight: 0.25
+      },
+      {
+        value: lowTimeFit,
+        weight: 0.25
+      }
+    ]);
+
+  return {
+    score: clampScore(score),
+
+    reason:
+      "The crop's beginner friendliness and workload were compared with the visitor's experience and available time."
+  };
+}
+
+function getGenericWildlifePenalty(
+  crop,
+  answers
+) {
+  const pressures =
+    answers.preferences
+      ?.wildlifePestPressure ||
+    [];
+
+  const wildlife =
+    crop.plannerData
+      ?.risks?.wildlife ||
+    {};
+
+  const pressureFieldMap = {
+    "wild-birds": "wildBirds",
+    deer: "deer",
+    raccoons: "raccoons",
+    squirrels: "squirrels",
+    rabbits: "rabbits",
+    rodents: "rodents",
+    groundhogs: "groundhogs"
+  };
+
+  const riskPenaltyMap = {
+    1: 0,
+    2: 3,
+    3: 7,
+    4: 12,
+    5: 18
+  };
+
+  let penalty = 0;
+
+  const matchedPressures = [];
+
+  pressures.forEach(pressure => {
+    const field =
+      pressureFieldMap[pressure];
+
+    const riskScore =
+      wildlife[field];
+
+    if (Number.isFinite(riskScore)) {
+      penalty +=
+        riskPenaltyMap[riskScore] ||
+        0;
+
+      matchedPressures.push(
+        pressure
+      );
+    }
+  });
+
+  return {
+    penalty:
+      Math.min(30, penalty),
+
+    reason:
+      matchedPressures.length > 0
+        ? `Reported wildlife pressure affects this crop: ${matchedPressures.join(", ")}.`
+        : "No reported wildlife pressure reduced the score."
+  };
+}
+
+function scoreGenericUsePath(
+  crop,
+  usePath,
+  answers
+) {
+  let score = 70;
+
+  const strengths = [];
+  const limitations = [];
+  const hardFailures = [];
+
+  const desiredProducts =
+    answers.harvestStorage
+      ?.desiredHarvestProducts ||
+    [];
+
+  const acceptedProcessing =
+    answers.labor
+      ?.acceptedProcessingTasks ||
+    [];
+
+  const dryingCapability =
+    answers.labor
+      ?.dryingCapability;
+
+  const minimalPreparation =
+    answers.harvestStorage
+      ?.minimalPreparationPriority;
+
+  const productMatch =
+    arrayIncludesAny(
+      usePath.harvestProducts,
+      desiredProducts
+    );
+
+  if (productMatch) {
+    score += 15;
+
+    strengths.push(
+      "Matches a desired harvest product."
+    );
+  } else {
+    score -= 8;
+
+    limitations.push(
+      "Does not directly match the selected harvest products."
+    );
+  }
+
+  const automaticallyAcceptedTasks =
+    new Set([
+      "cut-seed-heads",
+      "cut-leaves",
+      "pick-produce"
+    ]);
+
+  const missingRequiredTasks =
+    usePath.requiredProcessingTasks
+      .filter(task => {
+        if (
+          automaticallyAcceptedTasks
+            .has(task)
+        ) {
+          return false;
+        }
+
+        return !acceptedProcessing
+          .includes(task);
+      });
+
+  if (
+    missingRequiredTasks.length > 0
+  ) {
+    score -=
+      missingRequiredTasks.length * 13;
+
+    limitations.push(
+      `Required tasks were not accepted: ${missingRequiredTasks.join(", ")}.`
+    );
+  }
+
+  if (
+    usePath.dryingRequired &&
+    dryingCapability === "none"
+  ) {
+    hardFailures.push(
+      "This use path requires drying, but no drying capability was selected."
+    );
+  }
+
+  if (
+    usePath.cookingRequired &&
+    !acceptedProcessing.includes(
+      "cook"
+    )
+  ) {
+    hardFailures.push(
+      "This use path requires cooking, but cooking was not accepted."
+    );
+  }
+
+  if (
+    usePath.shellingRequired &&
+    !acceptedProcessing.includes(
+      "shell-beans"
+    ) &&
+    !acceptedProcessing.includes(
+      "shell-corn"
+    )
+  ) {
+    hardFailures.push(
+      "This use path requires shelling, but shelling was not accepted."
+    );
+  }
+
+  if (
+    minimalPreparation === "top"
+  ) {
+    if (
+      usePath
+        .preparationEaseScore >= 4
+    ) {
+      score += 10;
+
+      strengths.push(
+        "Strong match for minimal preparation."
+      );
+    } else {
+      score -= 15;
+
+      limitations.push(
+        "Requires more preparation than the visitor prefers."
+      );
+    }
+  } else if (
+    minimalPreparation === "high" &&
+    usePath.preparationEaseScore >= 4
+  ) {
+    score += 6;
+  }
+
+  const storageHumidity =
+    answers.harvestStorage
+      ?.storageHumidity;
+
+  if (
+    usePath.dryingRequired &&
+    storageHumidity ===
+      "often-humid"
+  ) {
+    score -= 15;
+
+    limitations.push(
+      "Humid storage conditions increase drying and mold risk."
+    );
+  }
+
+  const rodentProtection =
+    answers.harvestStorage
+      ?.rodentProtection;
+
+  if (
+    usePath.rodentRiskScore >= 4 &&
+    [
+      "none",
+      "common-problem"
+    ].includes(rodentProtection)
+  ) {
+    score -= 15;
+
+    limitations.push(
+      "Rodent protection is weak for this storage path."
+    );
+  }
+
+  const finalScore =
+    hardFailures.length > 0
+      ? 0
+      : clampScore(score);
+
+  return {
+    cropId: crop.id,
+
+    usePathId: usePath.id,
+
+    label: usePath.label,
+
+    score: finalScore,
+
+    hardFailure:
+      hardFailures.length > 0,
+
+    hardFailures,
+    strengths,
+    limitations
+  };
+}
+
+function scoreGenericCropProfile(
+  crop,
+  profile
+) {
+  const answers =
+    profile?.answers || {};
+
+  const categoryResults = {
+    climate:
+      scoreGenericClimateFit(
+        crop,
+        answers
+      ),
+
+    sunlight:
+      scoreGenericSunlightFit(
+        crop,
+        answers
+      ),
+
+    space:
+      scoreGenericSpaceFit(
+        crop,
+        answers
+      ),
+
+    soil:
+      scoreGenericSoilFit(
+        crop,
+        answers
+      ),
+
+    water:
+      scoreGenericWaterFit(
+        crop,
+        answers
+      ),
+
+    labor:
+      scoreGenericLaborFit(
+        crop,
+        answers
+      ),
+
+    goals:
+      scoreGenericGoalFit(
+        crop,
+        answers
+      )
+  };
+
+  const baseScore =
+    weightedAverageKnown([
+      {
+        value:
+          categoryResults
+            .climate.score,
+
+        weight: 0.16
+      },
+      {
+        value:
+          categoryResults
+            .sunlight.score,
+
+        weight: 0.14
+      },
+      {
+        value:
+          categoryResults
+            .space.score,
+
+        weight: 0.16
+      },
+      {
+        value:
+          categoryResults
+            .soil.score,
+
+        weight: 0.12
+      },
+      {
+        value:
+          categoryResults
+            .water.score,
+
+        weight: 0.14
+      },
+      {
+        value:
+          categoryResults
+            .labor.score,
+
+        weight: 0.12
+      },
+      {
+        value:
+          categoryResults
+            .goals.score,
+
+        weight: 0.16
+      }
+    ]);
+
+  const wildlife =
+    getGenericWildlifePenalty(
+      crop,
+      answers
+    );
+
+  const usePathResults =
+    crop.plannerData.usePaths
+      .map(usePath =>
+        scoreGenericUsePath(
+          crop,
+          usePath,
+          answers
+        )
+      )
+      .sort(
+        (a, b) =>
+          b.score - a.score
+      );
+
+  const bestUsePath =
+    usePathResults.find(
+      result =>
+        !result.hardFailure
+    ) || null;
+
+  const usePathModifier =
+    bestUsePath
+      ? (
+          bestUsePath.score - 70
+        ) * 0.20
+      : -25;
+
+  const finalScore =
+    clampScore(
+      baseScore -
+      wildlife.penalty +
+      usePathModifier
+    );
+
+  const knownCategoryCount =
+    Object.values(categoryResults)
+      .filter(result =>
+        Number.isFinite(
+          result.score
+        )
+      )
+      .length;
+
+  const confidenceScore =
+    clampScore(
+      45 +
+      knownCategoryCount * 7
+    );
+
+  return {
+    profileId:
+      profile.id,
+
+    profileLabel:
+      profile.label,
+
+    cropId:
+      crop.id,
+
+    cropName:
+      crop.name,
+
+    finalScore:
+      Math.round(finalScore),
+
+    tier:
+      getRecommendationTier(
+        finalScore
+      ),
+
+    confidenceScore:
+      Math.round(
+        confidenceScore
+      ),
+
+    confidenceLabel:
+      getConfidenceLabel(
+        confidenceScore
+      ),
+
+    categoryResults,
+
+    wildlife,
+
+    usePathResults,
+
+    bestUsePath
+  };
+}
+
+function runMultiCropSampleTests() {
+  const profiles =
+    namespace.config
+      ?.testing
+      ?.sampleUserProfiles ||
+    [];
+
+  const eligibleStatuses =
+    new Set([
+      "testing",
+      "ready"
+    ]);
+
+  const eligibleCrops =
+    namespace.data
+      ?.getAllUniqueCrops()
+      ?.filter(crop => {
+        return (
+          crop.plannerData &&
+          eligibleStatuses.has(
+            crop.plannerData
+              .developmentStatus
+          )
+        );
+      }) || [];
+
+  if (eligibleCrops.length === 0) {
+    return {
+      success: false,
+
+      error:
+        "No testing or ready crops are available.",
+
+      results: []
+    };
+  }
+
+  const profileResults =
+    profiles.map(profile => {
+      const cropResults =
+        eligibleCrops
+          .map(crop =>
+            scoreGenericCropProfile(
+              crop,
+              profile
+            )
+          )
+          .sort(
+            (a, b) =>
+              b.finalScore -
+              a.finalScore
+          );
+
+      return {
+        profileId:
+          profile.id,
+
+        profileLabel:
+          profile.label,
+
+        cropResults
+      };
+    });
+
+  return {
+    success: true,
+
+    cropCount:
+      eligibleCrops.length,
+
+    profileCount:
+      profiles.length,
+
+    testedCropIds:
+      eligibleCrops.map(
+        crop => crop.id
+      ),
+
+    results:
+      profileResults
+  };
+}
+
 namespace.engine = Object.freeze({
   getConfig,
   isConfigLoaded,
@@ -1571,7 +2835,23 @@ namespace.engine = Object.freeze({
 
   scoreSunflowerUsePath,
   scoreSunflowerProfile,
-  runSunflowerSampleTests
+  runSunflowerSampleTests,
+
+  getCropGoalFieldName,
+
+  scoreGenericGoalFit,
+  scoreGenericClimateFit,
+  scoreGenericSunlightFit,
+  scoreGenericSpaceFit,
+  scoreGenericSoilFit,
+  scoreGenericWaterFit,
+  scoreGenericLaborFit,
+
+  getGenericWildlifePenalty,
+
+  scoreGenericUsePath,
+  scoreGenericCropProfile,
+  runMultiCropSampleTests
 });
 
 })(window);

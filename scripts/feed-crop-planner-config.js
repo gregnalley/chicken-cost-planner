@@ -947,6 +947,311 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
+  }),
+
+  Object.freeze({
+    id: "PROFILE-SUMMER-PROTEIN-GREENS",
+
+    label:
+      "Summer Protein-Oriented Greens Grower",
+
+    description:
+      "A beginner with a sunny garden who wants fresh greens, tender produce, soil improvement, and minimal processing.",
+
+    answers: {
+      climate: {
+        climateType: "hot-humid",
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 8,
+        primaryFlockPurpose:
+          "eggs",
+        forageAccess: "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 80,
+
+        availableSpaceTypes: [
+          "in-ground",
+          "raised-bed"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 8,
+        windExposure: "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "sandy-loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "twice-weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "1-2-hours",
+
+        acceptedProcessingTasks: [
+          "cut-leaves",
+          "pick-produce",
+          "chop"
+        ],
+
+        dryingCapability:
+          "none"
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "tender-pods",
+          "fresh-vegetables"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "protein-oriented",
+          "fresh-greens",
+          "soil-improvement",
+          "nitrogen-fixation",
+          "shared-household-food"
+        ],
+
+        goalPriorities: [
+          {
+            goal: "protein-oriented",
+            rank: 1
+          },
+          {
+            goal: "fresh-greens",
+            rank: 2
+          },
+          {
+            goal: "soil-improvement",
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "protein-oriented",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        wildlifePestPressure: [
+          "deer",
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id: "PROFILE-DRY-LEGUME-STORAGE",
+
+    label:
+      "Experienced Dry-Legume Storage Grower",
+
+    description:
+      "An experienced grower who accepts drying, shelling, cooking, and protected storage for a protein-oriented winter supplement.",
+
+    answers: {
+      climate: {
+        climateType: "hot-dry",
+        frostFreeSeasonRange:
+          "210-plus"
+      },
+
+      flock: {
+        flockSize: 16,
+        primaryFlockPurpose:
+          "homestead",
+        forageAccess:
+          "limited-weekly"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 400,
+
+        availableSpaceTypes: [
+          "in-ground",
+          "open-field"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 9,
+        windExposure: "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "sandy-loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "occasionally-limited",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "high",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+
+        weeklyCropTime:
+          "3-5-hours",
+
+        acceptedProcessingTasks: [
+          "pick-produce",
+          "dry",
+          "shell-beans",
+          "clean-sort",
+          "cook",
+          "chop"
+        ],
+
+        dryingCapability:
+          "large-covered",
+
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays",
+          "rodent-proof"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dry-legumes"
+        ],
+
+        harvestPatternPreference:
+          "major",
+
+        desiredStorageDuration:
+          "6-12-months",
+
+        minimalPreparationPriority:
+          "none",
+
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        dryCropContainerType:
+          "airtight-food-safe",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "protein-oriented",
+          "winter-storage",
+          "self-reliance",
+          "seed-saving",
+          "resilience-feed"
+        ],
+
+        goalPriorities: [
+          {
+            goal: "protein-oriented",
+            rank: 1
+          },
+          {
+            goal: "winter-storage",
+            rank: 2
+          },
+          {
+            goal: "self-reliance",
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "protein-oriented",
+
+        beginnerFriendlinessPriority:
+          "not-needed",
+
+        wildlifePestPressure: [
+          "deer",
+          "rodents",
+          "insects"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
 ]);
 
