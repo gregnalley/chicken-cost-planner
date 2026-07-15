@@ -1517,15 +1517,22 @@ function runSunflowerSampleTests() {
     };
   }
 
+  const allowedTestStatuses = [
+    "testing",
+    "ready"
+  ];
+
   if (
     !sunflower.plannerData ||
-    sunflower.plannerData
-      .developmentStatus !== "testing"
+    !allowedTestStatuses.includes(
+      sunflower.plannerData
+        .developmentStatus
+    )
   ) {
     return {
       success: false,
       error:
-        "Sunflower plannerData is not in testing status.",
+        "Sunflower plannerData must be in testing or ready status before sample tests can run.",
       results: []
     };
   }
