@@ -294,7 +294,7 @@ const BCP_FEED_CROPS = {
         plannerData: {
       schemaVersion: "1.0.0",
 
-      developmentStatus: "skeleton",
+      developmentStatus: "research-in-progress",
 
       identity: {
         plannerName: "Sunflowers",
@@ -660,7 +660,100 @@ const BCP_FEED_CROPS = {
   }
 },
 
-      flock: {},
+      flock: {
+  suitableForAdultChickens: true,
+
+  suitableForYoungChicks: false,
+
+  flockPurposeScores: {
+    eggs: 4,
+    meat: 3,
+    breeding: 3,
+    petsEnrichment: 5,
+    homestead: 4,
+    mixed: 4
+  },
+
+  feedingMethodScores: {
+    livingGrazing: 1,
+    cutAndCarry: 1,
+    wholeProduce: 2,
+    wholeSeedHeads: 5,
+    wholeGrain: 4,
+    processedGrain: 3,
+    heatTreated: 1,
+    driedForage: 1,
+    winterStorage: 4
+  },
+
+  directRunSuitabilityScore: 1,
+
+  forageFrameSuitabilityScore: 1,
+
+  rotationalPaddockSuitabilityScore: 2,
+
+  confinedFlockValueScore: 5,
+
+  pasturedFlockValueScore: 3,
+
+  treatDilutionRiskScore: 4,
+
+  highEnergySupplement: true,
+
+  highFiberSupplement: false,
+
+  concentratedFatSource: true,
+
+  primaryFlockUses: [
+    "Whole-head pecking enrichment",
+    "Seasonal mature-seed supplementation",
+    "Stored winter enrichment",
+    "Energy- and fat-oriented supplemental feeding"
+  ],
+
+  unsuitablePrimaryUses: [
+    "Living forage",
+    "Protected forage-frame grazing",
+    "Primary protein crop",
+    "Complete-ration replacement",
+    "Young-chick staple feed"
+  ],
+
+  directFacts: {
+    edibleFeedParts: [
+      "Mature whole seeds",
+      "Mature dried seed heads",
+      "Dehulled kernels"
+    ],
+
+    preferredBirdStage:
+      "Established adult chickens",
+
+    cropSurvivalWithDirectChickenAccess:
+      "poor-before-maturity",
+
+    directAccessTiming:
+      "Offer harvested mature heads or seeds rather than allowing unrestricted access to growing plants.",
+
+    nutritionalOrientation: [
+      "energy",
+      "fat",
+      "moderate-protein",
+      "enrichment"
+    ],
+
+    notes: [
+      "Sunflower is most useful to backyard chickens through its mature seeds and seed heads rather than through leaves or stems.",
+      "Oilseed Sunflower varieties generally provide smaller, oil-rich seeds, while nonoilseed or confection types generally produce larger in-shell seeds.",
+      "Whole heads encourage pecking and natural feed-seeking behavior.",
+      "Loose mature seed is easier to measure than a whole head but requires additional handling and storage.",
+      "Unprotected chickens may damage seedlings, foliage, stems, or developing heads before the crop reaches useful seed maturity.",
+      "Sunflower seed is energy- and fat-dense and should remain supplemental to an age-appropriate balanced poultry feed.",
+      "The crop does not provide the complete amino-acid, vitamin, mineral, and calcium balance required as a stand-alone poultry ration.",
+      "Young chicks should continue receiving an age-appropriate complete starter feed rather than relying on whole Sunflower seed or heads."
+    ]
+  }
+},
 
       labor: {},
 
@@ -673,84 +766,302 @@ const BCP_FEED_CROPS = {
       seasonalRoles: {},
 
       usePaths: [
-        {
-          id: "whole-dried-seed-head",
+  {
+    id: "fresh-mature-seed-head",
 
-          label:
-            "Whole Dried Sunflower Seed Head",
+    label:
+      "Fresh Mature Sunflower Seed Head",
 
-          description:
-            "A temporary prototype use path representing mature sunflower heads dried and offered whole for flock enrichment and supplemental seed consumption.",
+    description:
+      "A mature seed-filled head harvested and offered relatively soon after cutting, primarily for pecking enrichment and immediate seed consumption.",
 
-          primaryFeedRole:
-            "energy-enrichment",
+    primaryFeedRole:
+      "energy-enrichment",
 
-          harvestProducts: [
-            "dried-seed-heads"
-          ],
+    harvestProducts: [
+      "fresh-seed-heads"
+    ],
 
-          suitableFeedingMethods: [
-            "whole-seed-heads",
-            "winter-storage"
-          ],
+    suitableFeedingMethods: [
+      "whole-seed-heads",
+      "immediate-feeding",
+      "seasonal-enrichment"
+    ],
 
-          requiredProcessingTasks: [
-            "dry"
-          ],
+    requiredProcessingTasks: [
+      "cut-seed-heads"
+    ],
 
-          optionalProcessingTasks: [],
+    optionalProcessingTasks: [
+      "partial-dry"
+    ],
 
-          requiredEquipment: [],
+    requiredEquipment: [
+      "hand-pruners"
+    ],
 
-          helpfulEquipment: [
-            "drying-rack",
-            "drying-screen",
-            "bird-netting",
-            "food-safe-bucket"
-          ],
+    helpfulEquipment: [
+      "bird-netting",
+      "stakes"
+    ],
 
-          storageMethods: [
-            "dried-whole"
-          ],
+    harvestPattern:
+      "several",
 
-          preferredStorageMethod:
-            "dried-whole",
+    harvestFrequencyCategory:
+      "seasonal",
 
-          storageDurationCategory: null,
+    storageMethods: [
+      "short-term-fresh"
+    ],
 
-          nonElectricStorageSuitable: true,
+    preferredStorageMethod:
+      "short-term-fresh",
 
-          refrigerationSuitable: false,
-          freezingSuitable: false,
+    storageDurationCategory:
+      "very-short",
 
-          dryingRequired: true,
-          curingRequired: false,
-          shellingRequired: false,
-          threshingRequired: false,
-          cookingRequired: false,
-          grindingRequired: false,
+    nonElectricStorageSuitable: false,
 
-          moistureSensitive: true,
+    refrigerationSuitable: false,
+    freezingSuitable: false,
 
-          moldRiskScore: null,
-          rodentRiskScore: null,
-          storedInsectRiskScore: null,
+    dryingRequired: false,
+    curingRequired: false,
+    shellingRequired: false,
+    threshingRequired: false,
+    cookingRequired: false,
+    grindingRequired: false,
 
-          preparationEaseScore: null,
-          beginnerSuitabilityScore: null,
+    moistureSensitive: true,
 
-          householdFoodValueScore: null,
-          flockValueScore: null,
+    moldRiskScore: 3,
+    rodentRiskScore: 3,
+    storedInsectRiskScore: 2,
 
-          safetyWarnings: [
-            "Do not store sunflower heads until they are adequately dry.",
-            "Do not feed moldy, musty, heated, or otherwise questionable seed heads.",
-            "Do not feed seed intended for planting if it has been chemically treated."
-          ],
+    harvestEaseScore: 5,
+    preparationEaseScore: 5,
+    beginnerSuitabilityScore: 5,
 
-          incompatibleUserTraits: []
-        }
-      ],
+    householdFoodValueScore: 2,
+    flockValueScore: 5,
+
+    safetyWarnings: [
+      "Use only mature, sound heads that show no mold, decay, musty odor, or abnormal heating.",
+      "A freshly harvested head still contains moisture and should not be sealed for storage.",
+      "Do not offer chemically treated planting seed."
+    ],
+
+    incompatibleUserTraits: [
+      "requires-long-term-storage",
+      "wants-loose-measured-seed-only"
+    ]
+  },
+
+  {
+    id: "whole-dried-seed-head",
+
+    label:
+      "Whole Dried Sunflower Seed Head",
+
+    description:
+      "A mature Sunflower head dried under protected, ventilated conditions and stored whole for later flock enrichment.",
+
+    primaryFeedRole:
+      "energy-enrichment",
+
+    harvestProducts: [
+      "dried-seed-heads"
+    ],
+
+    suitableFeedingMethods: [
+      "whole-seed-heads",
+      "winter-storage",
+      "seasonal-enrichment"
+    ],
+
+    requiredProcessingTasks: [
+      "cut-seed-heads",
+      "dry"
+    ],
+
+    optionalProcessingTasks: [
+      "clean-sort"
+    ],
+
+    requiredEquipment: [
+      "hand-pruners"
+    ],
+
+    helpfulEquipment: [
+      "drying-rack",
+      "drying-screen",
+      "fan",
+      "bird-netting",
+      "food-safe-bucket",
+      "metal-grain-can"
+    ],
+
+    harvestPattern:
+      "several",
+
+    harvestFrequencyCategory:
+      "seasonal",
+
+    storageMethods: [
+      "dried-whole"
+    ],
+
+    preferredStorageMethod:
+      "dried-whole",
+
+    storageDurationCategory:
+      "medium-long",
+
+    nonElectricStorageSuitable: true,
+
+    refrigerationSuitable: false,
+    freezingSuitable: false,
+
+    dryingRequired: true,
+    curingRequired: false,
+    shellingRequired: false,
+    threshingRequired: false,
+    cookingRequired: false,
+    grindingRequired: false,
+
+    moistureSensitive: true,
+
+    moldRiskScore: 4,
+    rodentRiskScore: 4,
+    storedInsectRiskScore: 3,
+
+    harvestEaseScore: 4,
+    preparationEaseScore: 4,
+    beginnerSuitabilityScore: 4,
+
+    householdFoodValueScore: 2,
+    flockValueScore: 5,
+
+    safetyWarnings: [
+      "Dry heads thoroughly before placing them in enclosed storage.",
+      "Do not store heads that feel damp, show condensation, smell musty, or develop visible mold.",
+      "Inspect stored heads regularly for insects, rodents, moisture, heating, and decay.",
+      "Do not feed moldy, musty, heated, or otherwise questionable seed heads.",
+      "Do not feed chemically treated planting seed."
+    ],
+
+    incompatibleUserTraits: [
+      "declines-drying",
+      "has-no-protected-drying-area",
+      "has-no-rodent-protected-storage"
+    ]
+  },
+
+  {
+    id: "loose-dried-seed",
+
+    label:
+      "Loose Dried Sunflower Seed",
+
+    description:
+      "Mature seed removed from adequately dried heads, cleaned, and stored in a dry protected container for measured supplemental feeding.",
+
+    primaryFeedRole:
+      "energy-fat",
+
+    harvestProducts: [
+      "dry-seeds"
+    ],
+
+    suitableFeedingMethods: [
+      "whole-grain",
+      "measured-supplement",
+      "winter-storage"
+    ],
+
+    requiredProcessingTasks: [
+      "cut-seed-heads",
+      "dry",
+      "remove-seed",
+      "clean-sort"
+    ],
+
+    optionalProcessingTasks: [
+      "winnow"
+    ],
+
+    requiredEquipment: [
+      "hand-pruners"
+    ],
+
+    helpfulEquipment: [
+      "drying-rack",
+      "drying-screen",
+      "fan",
+      "food-safe-bucket",
+      "metal-grain-can",
+      "moisture-meter"
+    ],
+
+    harvestPattern:
+      "major",
+
+    harvestFrequencyCategory:
+      "seasonal",
+
+    storageMethods: [
+      "dried-shelled"
+    ],
+
+    preferredStorageMethod:
+      "airtight-after-adequate-drying",
+
+    storageDurationCategory:
+      "medium-long",
+
+    nonElectricStorageSuitable: true,
+
+    refrigerationSuitable: false,
+    freezingSuitable: false,
+
+    dryingRequired: true,
+    curingRequired: false,
+    shellingRequired: false,
+    threshingRequired: false,
+    cookingRequired: false,
+    grindingRequired: false,
+
+    moistureSensitive: true,
+
+    moldRiskScore: 4,
+    rodentRiskScore: 5,
+    storedInsectRiskScore: 4,
+
+    harvestEaseScore: 3,
+    preparationEaseScore: 3,
+    beginnerSuitabilityScore: 3,
+
+    householdFoodValueScore: 3,
+    flockValueScore: 4,
+
+    safetyWarnings: [
+      "Seed must be adequately dried before it is sealed in an airtight container.",
+      "Do not mix questionable seed with sound seed.",
+      "Inspect stored seed regularly for insects, rodents, moisture, heating, and mold.",
+      "Discard moldy, musty, heated, or otherwise questionable seed.",
+      "Do not feed salted, flavored, seasoned, candy-coated, or chemically treated seed."
+    ],
+
+    incompatibleUserTraits: [
+      "declines-drying",
+      "declines-seed-removal",
+      "requires-minimal-processing",
+      "has-no-dry-storage",
+      "has-no-rodent-protected-storage"
+    ]
+  }
+],
 
       dataQuality: {
         overallConfidence: null,
@@ -766,10 +1077,15 @@ const BCP_FEED_CROPS = {
           "water.directFacts.droughtTolerantAfterEstablishment",
           "water.directFacts.establishmentMoistureImportant",
           "space.directFacts.layoutFlexible",
-         "space.directFacts.blockPollinationRequired",
-         "space.directFacts.suitableForRowPlanting",
-         "space.directFacts.suitableForCloselySpacedStands",
-         "space.directFacts.commercialPlantPopulationRange"
+          "space.directFacts.blockPollinationRequired",
+          "space.directFacts.suitableForRowPlanting",
+          "space.directFacts.suitableForCloselySpacedStands",
+          "space.directFacts.commercialPlantPopulationRange",
+          "flock.directFacts.edibleFeedParts",
+          "flock.directFacts.nutritionalOrientation",
+          "usePaths.fresh-mature-seed-head.harvestProducts",
+          "usePaths.whole-dried-seed-head.harvestProducts",
+          "usePaths.loose-dried-seed.harvestProducts"
         ],
 
         derivedFields: [
@@ -781,7 +1097,24 @@ const BCP_FEED_CROPS = {
           "space.verticalSupportBenefitScore",
           "space.overflowSpaceBenefitScore",
           "space.heightCategory",
-          "space.matureWidthCategory"
+          "space.matureWidthCategory",
+          "flock.flockPurposeScores",
+          "flock.feedingMethodScores",
+          "flock.directRunSuitabilityScore",
+          "flock.forageFrameSuitabilityScore",
+          "flock.rotationalPaddockSuitabilityScore",
+          "flock.confinedFlockValueScore",
+          "flock.pasturedFlockValueScore",
+          "flock.treatDilutionRiskScore",
+          "usePaths.fresh-mature-seed-head.harvestEaseScore",
+          "usePaths.fresh-mature-seed-head.preparationEaseScore",
+          "usePaths.fresh-mature-seed-head.beginnerSuitabilityScore",
+          "usePaths.whole-dried-seed-head.harvestEaseScore",
+          "usePaths.whole-dried-seed-head.preparationEaseScore",
+          "usePaths.whole-dried-seed-head.beginnerSuitabilityScore",
+          "usePaths.loose-dried-seed.harvestEaseScore",
+          "usePaths.loose-dried-seed.preparationEaseScore",
+          "usePaths.loose-dried-seed.beginnerSuitabilityScore"
         ],
 
         uncertainFields: [
@@ -798,7 +1131,13 @@ const BCP_FEED_CROPS = {
              "space.spaceTypeScores.container",
              "space.minimumContainerGallons",
              "space.minimumRaisedBedDepthIn",
-             "usePaths.whole-dried-seed-head"
+             "usePaths.fresh-mature-seed-head.storageDurationCategory",
+             "usePaths.whole-dried-seed-head.storageDurationCategory",
+             "usePaths.loose-dried-seed.storageDurationCategory",
+             "usePaths.fresh-mature-seed-head.moldRiskScore",
+             "usePaths.whole-dried-seed-head.moldRiskScore",
+             "usePaths.loose-dried-seed.moldRiskScore",
+             "usePaths.loose-dried-seed.storedInsectRiskScore"
         ],
 
         missingFields: [
@@ -809,7 +1148,8 @@ const BCP_FEED_CROPS = {
           "water.plannerRatings",
           "space.minimumAreaResearch",
           "space.containerResearch",
-          "flock",
+          "flock.portionGuidance",
+          "flock.usePathTesting",
           "labor",
           "cost",
           "goals",
@@ -832,7 +1172,11 @@ const BCP_FEED_CROPS = {
           "Space and layout ratings were added as internal planner derivations based on Sunflower spacing flexibility, plant form, pollination behavior, and backyard harvest usefulness.",
           "Commercial plant populations were retained only as reference facts and were not converted into backyard yield or minimum-area claims.",
           "Container suitability and minimum container volume remain null pending cultivar-specific research.",
-          "Minimum trial, useful, and production areas remain null because no defensible backyard flock threshold has been established."
+          "Minimum trial, useful, and production areas remain null because no defensible backyard flock threshold has been established.",
+          "Flock suitability was separated from crop-growing suitability because Sunflower plants are poor living forage but harvested mature heads have strong enrichment value.",
+          "Fresh-head, dried-head, and loose-seed paths are scored separately because they require different processing, storage, labor, and equipment.",
+          "Sunflower is classified as an energy- and fat-oriented supplement rather than a complete poultry ration.",
+          "Exact feeding portions remain outside the planner record until defensible backyard supplementation guidance is established."
         ]
        }
     }
