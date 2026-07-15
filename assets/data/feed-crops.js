@@ -755,15 +755,616 @@ const BCP_FEED_CROPS = {
   }
 },
 
-      labor: {},
+      labor: {
+  beginnerFriendlinessScore: 4,
 
-      cost: {},
+  plantingEaseScore: 5,
 
-      goals: {},
+  establishmentEaseScore: 4,
 
-      risks: {},
+  routineMaintenanceEaseScore: 4,
 
-      seasonalRoles: {},
+  weedControlEaseScore: 3,
+
+  wildlifeProtectionEaseScore: 2,
+
+  harvestEaseScore: 4,
+
+  wholeHeadProcessingEaseScore: 4,
+
+  looseSeedProcessingEaseScore: 3,
+
+  dryingEaseScore: 3,
+
+  storageMonitoringEaseScore: 3,
+
+  perennialMaintenanceEaseScore: 5,
+
+  physicalAccessibilityScore: 4,
+
+  heavyLiftingRiskScore: 1,
+
+  weeklyLaborLevel:
+    "low",
+
+  peakWorkloadLevel:
+    "moderate",
+
+  harvestFrequencyCategory:
+    "seasonal",
+
+  requiredPlantingTasks: [
+    "prepare-seedbed",
+    "plant-large-seed"
+  ],
+
+  requiredMaintenanceTasks: [
+    "hand-weed",
+    "protect-from-wildlife"
+  ],
+
+  optionalMaintenanceTasks: [
+    "mulch",
+    "stake"
+  ],
+
+  requiredHarvestTasks: [
+    "cut-seed-heads"
+  ],
+
+  usePathProcessingTasks: {
+    freshMatureSeedHead: [
+      "cut-seed-heads"
+    ],
+
+    wholeDriedSeedHead: [
+      "cut-seed-heads",
+      "dry"
+    ],
+
+    looseDriedSeed: [
+      "cut-seed-heads",
+      "dry",
+      "remove-seed",
+      "clean-sort"
+    ]
+  },
+
+  requiredStorageTasks: [
+    "inspect-moisture",
+    "inspect-insects",
+    "inspect-mold"
+  ],
+
+  specializedEquipmentRequired: [],
+
+  specializedEquipmentHelpful: [
+    "hand-pruners",
+    "stakes",
+    "bird-netting",
+    "drying-rack",
+    "drying-screen",
+    "fan",
+    "food-safe-bucket",
+    "metal-grain-can",
+    "moisture-meter"
+  ],
+
+  suitableForLowTimeUsersScore: 4,
+
+  suitableForSoloGrowersScore: 5,
+
+  directFacts: {
+    seedSize:
+      "large-and-easy-to-handle",
+
+    directSeedingSuitable: true,
+
+    indoorStartingPossible: true,
+
+    specializedHarvestEquipmentRequiredForBackyardScale:
+      false,
+
+    majorLaborBottlenecks: [
+      "Protecting developing seed heads from birds",
+      "Cutting and handling mature heads",
+      "Drying heads or seed safely",
+      "Removing seed when loose storage is desired",
+      "Inspecting stored heads or seed"
+    ],
+
+    notes: [
+      "Large seed makes Sunflower straightforward to plant by hand.",
+      "Direct seeding is practical for most backyard plantings.",
+      "Routine crop care is generally modest after establishment where weeds, water, and wildlife remain manageable.",
+      "Whole-head use requires less processing than loose-seed use.",
+      "Bird protection may become the most time-consuming management task as seed matures.",
+      "Harvest work is concentrated into one or several seasonal periods rather than requiring daily picking.",
+      "Very tall varieties may make harvesting less accessible than dwarf or medium-height varieties.",
+      "Large commercial plantings require specialized harvesting and drying systems, but small backyard plantings can be cut and handled manually."
+    ]
+  }
+},
+
+      cost: {
+  seedOrPlantCostLevel:
+    "low",
+
+  soilPreparationCostLevel:
+    "low",
+
+  irrigationCostLevel:
+    "low",
+
+  protectionCostLevel:
+    "moderate",
+
+  processingEquipmentCostLevel:
+    "low",
+
+  storageCostLevel:
+    "low",
+
+  annualRecurringCostLevel:
+    "low",
+
+  longTermValueScore: 4,
+
+  lowestCostUsePath:
+    "fresh-mature-seed-head",
+
+  highestCostUsePath:
+    "loose-dried-seed",
+
+  likelyCostDrivers: [
+    "Bird netting or seed-head protection",
+    "Stakes for tall varieties",
+    "Drying racks or screens",
+    "Rodent-resistant storage containers",
+    "Optional fan or moisture meter"
+  ],
+
+  costReductionOptions: [
+    "Begin with a small direct-seeded trial.",
+    "Use whole heads instead of removing and cleaning loose seed.",
+    "Use existing fencing or supports where suitable.",
+    "Build simple drying screens from materials already available.",
+    "Save suitable open-pollinated seed only when isolation and seed quality are understood."
+  ],
+
+  directFacts: {
+    specializedPlantingEquipmentRequired:
+      false,
+
+    specializedBackyardHarvestEquipmentRequired:
+      false,
+
+    specializedProcessingEquipmentRequired:
+      false,
+
+    notes: [
+      "Seed and ordinary hand-tool costs are generally modest for a backyard planting.",
+      "Bird protection may become the largest optional setup expense.",
+      "Whole-head feeding avoids the need for a sheller, thresher, or grinder.",
+      "Dry storage requires suitable containers but not necessarily powered equipment.",
+      "Cost levels are qualitative planner ratings rather than current retail-price estimates."
+    ]
+  }
+},
+
+      goals: {
+  feedReductionScore: 3,
+
+  energyProductionScore: 4,
+
+  proteinOrientedScore: 3,
+
+  freshGreensScore: 1,
+
+  livingForageScore: 1,
+
+  winterStorageScore: 4,
+
+  enrichmentScore: 5,
+
+  resilienceScore: 4,
+
+  soilImprovementScore: 2,
+
+  nitrogenFixationScore: 1,
+
+  groundCoverScore: 2,
+
+  erosionControlScore: 2,
+
+  shadeScore: 3,
+
+  privacyScreeningScore: 4,
+
+  pollinatorSupportScore: 5,
+
+  compostBiomassScore: 3,
+
+  householdFoodScore: 4,
+
+  seedSavingScore: 4,
+
+  selfRelianceScore: 4,
+
+  multipurposeValueScore: 5,
+
+  visualAppealScore: 5,
+
+  productionReliabilityScore: 4,
+
+  fastestValueScore: 4,
+
+  nonElectricStorageScore: 4,
+
+  smallFlockValueScore: 5,
+
+  largeFlockValueScore: 3,
+
+  primaryGoalMatches: [
+    "enrichment",
+    "high-energy",
+    "winter-storage",
+    "pollinators",
+    "shared-household-food",
+    "self-reliance",
+    "seed-saving",
+    "privacy-screening",
+    "edible-landscape"
+  ],
+
+  weakGoalMatches: [
+    "living-forage",
+    "fresh-greens",
+    "nitrogen-fixation",
+    "permanent-ground-cover",
+    "primary-protein-production"
+  ],
+
+  directFacts: {
+    oilseedOrientation: true,
+
+    pollinatorBenefit: true,
+
+    humanFoodPotential: true,
+
+    annualScreeningPotential: true,
+
+    seedSavingPossible: true,
+
+    notes: [
+      "Mature seed provides concentrated oil, energy, and moderate protein.",
+      "Whole seed heads provide unusually strong flock-enrichment value.",
+      "Sunflowers provide abundant visible flowers and can benefit insect pollinators.",
+      "Current hybrids may set seed through self-compatibility, but pollinator activity can improve seed set and yield.",
+      "Tall varieties can provide temporary seasonal screening or partial shade.",
+      "Sunflower does not fix nitrogen and is not a persistent ground-cover crop.",
+      "Human-food value depends on variety, handling, cleanliness, and intended seed type.",
+      "Open-pollinated seed may be saved, while hybrid offspring may not reliably reproduce the parent variety."
+    ]
+  }
+},
+
+      risks: {
+  wildlife: {
+    wildBirds: 5,
+    deer: 4,
+    raccoons: 2,
+    squirrels: 4,
+    rabbits: 3,
+    rodents: 4,
+    groundhogs: 3
+  },
+
+  insectsRiskScore: 3,
+
+  diseaseRiskScore: 3,
+
+  lodgingRiskScore: 3,
+
+  fieldMoldRiskScore: 3,
+
+  dryingMoldRiskScore: 4,
+
+  storageMoldRiskScore: 4,
+
+  storedInsectRiskScore: 3,
+
+  spoilageSpeedRiskScore: 3,
+
+  invasivenessConcernRiskScore: 1,
+
+  selfSeedingRiskScore: 3,
+
+  fruitDropRiskScore: 2,
+
+  cropFailureRiskScore: 3,
+
+  stormDamageRiskScore: 3,
+
+  shadingOtherCropsRiskScore: 4,
+
+  overfeedingRiskScore: 4,
+
+  treatedSeedRiskScore: 5,
+
+  primaryRisks: [
+    {
+      id: "wild-bird-loss",
+      severity: "very-high",
+
+      affectedStages: [
+        "late-flowering",
+        "seed-filling",
+        "maturity"
+      ],
+
+      mitigationOptions: [
+        "Bird netting",
+        "Individual head bags",
+        "Early monitoring",
+        "Timely harvest",
+        "Protected drying"
+      ],
+
+      note:
+        "Exposed seed and the large head make Sunflower especially vulnerable to feeding birds."
+    },
+
+    {
+      id: "wet-head-mold",
+      severity: "high",
+
+      affectedStages: [
+        "late-maturity",
+        "harvest",
+        "drying",
+        "storage"
+      ],
+
+      mitigationOptions: [
+        "Harvest only sound heads",
+        "Dry with good ventilation",
+        "Avoid sealed storage while damp",
+        "Inspect regularly",
+        "Discard questionable material"
+      ],
+
+      note:
+        "Large heads and densely packed seed can retain moisture, particularly under humid conditions."
+    },
+
+    {
+      id: "lodging-and-breakage",
+      severity: "moderate",
+
+      affectedStages: [
+        "late-vegetative-growth",
+        "flowering",
+        "seed-filling"
+      ],
+
+      mitigationOptions: [
+        "Select shorter varieties",
+        "Avoid excessive plant density",
+        "Use stakes where necessary",
+        "Choose a sheltered location"
+      ],
+
+      note:
+        "Tall plants and heavy heads may lean or break under strong wind, storms, or weak rooting conditions."
+    },
+
+    {
+      id: "balanced-feed-displacement",
+      severity: "high",
+
+      affectedStages: [
+        "feeding"
+      ],
+
+      mitigationOptions: [
+        "Offer as a measured supplement",
+        "Continue complete poultry feed",
+        "Avoid unrestricted overfeeding"
+      ],
+
+      note:
+        "Oil-rich seed can displace balanced feed when offered too generously."
+    },
+
+    {
+      id: "chemically-treated-seed",
+      severity: "very-high",
+
+      affectedStages: [
+        "planting",
+        "feeding"
+      ],
+
+      mitigationOptions: [
+        "Use untreated seed for any material that may be fed",
+        "Keep treated planting seed clearly separated"
+      ],
+
+      note:
+        "Planting seed treated with pesticides or other chemicals must not be fed."
+    }
+  ],
+
+  directFacts: {
+    exceptionallyAttractiveToWildBirds:
+      true,
+
+    exposedSeedAccessibleToBirds:
+      true,
+
+    matureHeadProvidesBirdPerch:
+      true,
+
+    multipleDiseasesPossible:
+      true,
+
+    moistureControlImportantDuringStorage:
+      true,
+
+    timelyHarvestCanReduceFieldLoss:
+      true,
+
+    notes: [
+      "Wild birds may begin feeding soon after petals wilt and may continue until harvest.",
+      "Small isolated backyard plantings may be highly visible and easy for birds to exploit.",
+      "Several insects and diseases can affect Sunflower, though backyard severity varies by region and variety.",
+      "Short crop rotations can magnify some disease risks.",
+      "Physiological maturity occurs when the head back turns yellow and bracts turn brown.",
+      "Earlier harvest can reduce prolonged exposure to birds and late-season weather, but harvested material may then require additional drying.",
+      "Stored seed should be adequately dried and cooled before enclosed storage.",
+      "Questionable, moldy, heat-damaged, or musty material should not be fed."
+    ]
+  }
+},
+
+      seasonalRoles: {
+  earlySpring: false,
+
+  lateSpring: true,
+
+  summer: true,
+
+  lateSummer: true,
+
+  fall: true,
+
+  winterStorage: true,
+
+  perennial: false,
+
+  plantingWindows: [
+    {
+      id: "direct-seed-after-frost",
+
+      trigger:
+        "after-last-frost",
+
+      offsetWeeksMinimum: 0,
+      offsetWeeksMaximum: 3,
+
+      soilCondition:
+        "warming-and-workable",
+
+      method:
+        "direct-seed",
+
+      note:
+        "Plant after damaging frost danger has passed and soil conditions support dependable germination."
+    },
+
+    {
+      id: "optional-indoor-start",
+
+      trigger:
+        "before-last-frost",
+
+      offsetWeeksMinimum: 2,
+      offsetWeeksMaximum: 4,
+
+      method:
+        "start-indoors",
+
+      note:
+        "Indoor starting may help short-season growers, but transplant before plants become crowded or root-bound."
+    }
+  ],
+
+  harvestWindows: [
+    {
+      id: "fresh-mature-head",
+
+      trigger:
+        "physiological-maturity",
+
+      usePathId:
+        "fresh-mature-seed-head",
+
+      note:
+        "Harvest sound mature seed-filled heads for immediate or near-immediate flock use."
+    },
+
+    {
+      id: "whole-dried-head",
+
+      trigger:
+        "mature-head-before-prolonged-field-loss",
+
+      usePathId:
+        "whole-dried-seed-head",
+
+      note:
+        "Cut mature heads and finish drying under protected, ventilated conditions when necessary."
+    },
+
+    {
+      id: "loose-dried-seed",
+
+      trigger:
+        "head-and-seed-adequately-dry",
+
+      usePathId:
+        "loose-dried-seed",
+
+      note:
+        "Remove and clean seed only after the head and seed have reached an appropriate dry condition."
+    }
+  ],
+
+  cropSequenceRoles: [
+    "Warm-season annual",
+    "Summer pollinator crop",
+    "Late-summer and fall seed crop",
+    "Winter-storage enrichment crop",
+    "Temporary seasonal screen"
+  ],
+
+  seasonalLimitations: [
+    "Not a cool-season living-forage crop",
+    "Not frost-hardy during early growth",
+    "Mature seed harvest may extend into wet fall weather",
+    "Late planting may leave insufficient time for seed filling and dry-down"
+  ],
+
+  directFacts: {
+    warmSeasonAnnual: true,
+
+    commonlyDirectSeeded: true,
+
+    physiologicalMaturityStage:
+      "R9",
+
+    maturityIndicators: [
+      "Back of head changes from green to yellow",
+      "Bracts turn yellow and brown"
+    ],
+
+    approximatePhysiologicalMaturityAfterBloomDaysMinimum:
+      30,
+
+    approximatePhysiologicalMaturityAfterBloomDaysMaximum:
+      45,
+
+    notes: [
+      "The crop is primarily planted during late spring after frost risk declines.",
+      "Vegetative growth, flowering, and seed filling occur through summer.",
+      "Mature heads are generally harvested in late summer or fall depending on planting date, climate, and variety.",
+      "Physiological maturity is distinct from safe long-term storage dryness.",
+      "Harvested heads or seed may require additional drying before storage.",
+      "Stored whole heads or loose seed can extend the crop's usefulness into winter."
+    ]
+  }
+},
 
       usePaths: [
   {
@@ -1085,7 +1686,20 @@ const BCP_FEED_CROPS = {
           "flock.directFacts.nutritionalOrientation",
           "usePaths.fresh-mature-seed-head.harvestProducts",
           "usePaths.whole-dried-seed-head.harvestProducts",
-          "usePaths.loose-dried-seed.harvestProducts"
+          "usePaths.loose-dried-seed.harvestProducts",
+          "labor.directFacts.seedSize",
+"labor.directFacts.directSeedingSuitable",
+"risks.directFacts.exceptionallyAttractiveToWildBirds",
+"risks.directFacts.exposedSeedAccessibleToBirds",
+"risks.directFacts.matureHeadProvidesBirdPerch",
+"risks.directFacts.multipleDiseasesPossible",
+"risks.directFacts.moistureControlImportantDuringStorage",
+"risks.directFacts.timelyHarvestCanReduceFieldLoss",
+"seasonalRoles.directFacts.warmSeasonAnnual",
+"seasonalRoles.directFacts.physiologicalMaturityStage",
+"seasonalRoles.directFacts.maturityIndicators",
+"seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMinimum",
+"seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMaximum"
         ],
 
         derivedFields: [
@@ -1114,7 +1728,33 @@ const BCP_FEED_CROPS = {
           "usePaths.whole-dried-seed-head.beginnerSuitabilityScore",
           "usePaths.loose-dried-seed.harvestEaseScore",
           "usePaths.loose-dried-seed.preparationEaseScore",
-          "usePaths.loose-dried-seed.beginnerSuitabilityScore"
+          "usePaths.loose-dried-seed.beginnerSuitabilityScore",
+          "labor.beginnerFriendlinessScore",
+"labor.plantingEaseScore",
+"labor.establishmentEaseScore",
+"labor.routineMaintenanceEaseScore",
+"labor.weedControlEaseScore",
+"labor.wildlifeProtectionEaseScore",
+"labor.harvestEaseScore",
+"labor.wholeHeadProcessingEaseScore",
+"labor.looseSeedProcessingEaseScore",
+"labor.dryingEaseScore",
+"labor.storageMonitoringEaseScore",
+"labor.suitableForLowTimeUsersScore",
+"labor.suitableForSoloGrowersScore",
+"cost",
+"goals",
+"risks.wildlife",
+"risks.insectsRiskScore",
+"risks.diseaseRiskScore",
+"risks.lodgingRiskScore",
+"risks.fieldMoldRiskScore",
+"risks.dryingMoldRiskScore",
+"risks.storageMoldRiskScore",
+"risks.storedInsectRiskScore",
+"risks.cropFailureRiskScore",
+"seasonalRoles.plantingWindows",
+"seasonalRoles.harvestWindows"
         ],
 
         uncertainFields: [
@@ -1137,7 +1777,21 @@ const BCP_FEED_CROPS = {
              "usePaths.fresh-mature-seed-head.moldRiskScore",
              "usePaths.whole-dried-seed-head.moldRiskScore",
              "usePaths.loose-dried-seed.moldRiskScore",
-             "usePaths.loose-dried-seed.storedInsectRiskScore"
+             "usePaths.loose-dried-seed.storedInsectRiskScore",
+             "labor.wildlifeProtectionEaseScore",
+"cost.protectionCostLevel",
+"goals.feedReductionScore",
+"goals.productionReliabilityScore",
+"risks.wildlife.deer",
+"risks.wildlife.raccoons",
+"risks.wildlife.squirrels",
+"risks.wildlife.rabbits",
+"risks.wildlife.rodents",
+"risks.wildlife.groundhogs",
+"risks.insectsRiskScore",
+"risks.diseaseRiskScore",
+"risks.fieldMoldRiskScore",
+"risks.spoilageSpeedRiskScore"
         ],
 
         missingFields: [
@@ -1149,12 +1803,8 @@ const BCP_FEED_CROPS = {
           "space.minimumAreaResearch",
           "space.containerResearch",
           "flock.portionGuidance",
-          "flock.usePathTesting",
-          "labor",
-          "cost",
-          "goals",
-          "risks",
-          "seasonalRoles"
+          "flock.usePathTesting"
+        
         ],
 
         lastReviewed:
@@ -1176,7 +1826,13 @@ const BCP_FEED_CROPS = {
           "Flock suitability was separated from crop-growing suitability because Sunflower plants are poor living forage but harvested mature heads have strong enrichment value.",
           "Fresh-head, dried-head, and loose-seed paths are scored separately because they require different processing, storage, labor, and equipment.",
           "Sunflower is classified as an energy- and fat-oriented supplement rather than a complete poultry ration.",
-          "Exact feeding portions remain outside the planner record until defensible backyard supplementation guidance is established."
+          "Exact feeding portions remain outside the planner record until defensible backyard supplementation guidance is established.",
+          "Labor ratings distinguish easy direct seeding from the greater work required for bird protection, drying, loose-seed removal, and storage.",
+          "Cost values are qualitative first-season planner categories rather than current retail-price estimates.",
+          "Goal ratings measure practical backyard usefulness rather than laboratory nutrient concentration alone.",
+          "Wild-bird risk is treated as one of Sunflower's strongest and best-supported limitations.",
+          "Seasonal harvest timing uses physiological maturity as a crop-development marker and does not treat it as proof of safe storage dryness.",
+          "Remaining climate, soil, water, container, minimum-area, and feeding-portion fields require additional research or cross-crop comparison."
         ]
        }
     }
