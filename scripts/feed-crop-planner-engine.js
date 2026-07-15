@@ -2400,22 +2400,51 @@ function scoreGenericUsePath(
       ?.dryingCapability;
 
   const ownedEquipment =
-  answers.labor
-    ?.ownedEquipment ||
-  [];
+    answers.labor
+      ?.ownedEquipment ||
+    [];
 
   const purchaseWillingness =
-  answers.labor
-    ?.equipmentPurchaseWillingness ||
-  [];
+    answers.labor
+      ?.equipmentPurchaseWillingness ||
+    [];
 
   const minimalPreparation =
     answers.harvestStorage
       ?.minimalPreparationPriority;
 
+  const storageHumidity =
+    answers.harvestStorage
+      ?.storageHumidity;
+
+  const rodentProtection =
+    answers.harvestStorage
+      ?.rodentProtection;
+
+  const dryStorageLocations =
+    answers.harvestStorage
+      ?.dryStorageLocations ||
+    [];
+
+  const requiredProcessingTasks =
+    usePath.requiredProcessingTasks ||
+    [];
+
+  const requiredEquipment =
+    usePath.requiredEquipment ||
+    [];
+
+  const storageMethods =
+    usePath.storageMethods ||
+    [];
+
+  const harvestProducts =
+    usePath.harvestProducts ||
+    [];
+
   const productMatch =
     arrayIncludesAny(
-      usePath.harvestProducts,
+      harvestProducts,
       desiredProducts
     );
 
@@ -2437,22 +2466,26 @@ function scoreGenericUsePath(
     new Set([
       "cut-seed-heads",
       "cut-leaves",
-      "pick-produce"
+      "pick-produce",
+      "harvest-heavy-fruit"
     ]);
 
   const missingRequiredTasks =
-    usePath.requiredProcessingTasks
-      .filter(task => {
+    requiredProcessingTasks.filter(
+      task => {
         if (
-          automaticallyAcceptedTasks
-            .has(task)
+          automaticallyAcceptedTasks.has(
+            task
+          )
         ) {
           return false;
         }
 
-        return !acceptedProcessing
-          .includes(task);
-      });
+        return !acceptedProcessing.includes(
+          task
+        );
+      }
+    );
 
   if (
     missingRequiredTasks.length > 0
@@ -2466,61 +2499,68 @@ function scoreGenericUsePath(
   }
 
   const missingRequiredEquipment =
-  (
-    usePath.requiredEquipment ||
-    []
-  ).filter(equipmentId => {
-    return (
-      !ownedEquipment.includes(
-        equipmentId
-      ) &&
-      !purchaseWillingness.includes(
-        equipmentId
-      )
+    requiredEquipment.filter(
+      equipmentId => {
+        return (
+          !ownedEquipment.includes(
+            equipmentId
+          ) &&
+          !purchaseWillingness.includes(
+            equipmentId
+          )
+        );
+      }
     );
-  });
 
-if (
-  missingRequiredEquipment.length > 0
-) {
-  score -=
-    missingRequiredEquipment.length *
-    15;
+  if (
+    missingRequiredEquipment.length > 0
+  ) {
+    score -=
+      missingRequiredEquipment.length *
+      15;
 
-  limitations.push(
-    `Required equipment is unavailable: ${missingRequiredEquipment.join(", ")}.`
-  );
-}
+    limitations.push(
+      `Required equipment is unavailable: ${missingRequiredEquipment.join(", ")}.`
+    );
+  }
 
-if (
-  usePath.requiredProcessingTasks
-    ?.includes(
+  if (
+    requiredProcessingTasks.includes(
       "harvest-heavy-fruit"
     ) &&
-  !ownedEquipment.includes(
-    "cart"
-  )
-) {
-  score -= 5;
+    !ownedEquipment.includes("cart")
+  ) {
+    score -= 5;
 
-  limitations.push(
-    "Heavy fruit may be harder to move without a cart or assistance."
-  );
-}
+    limitations.push(
+      "Heavy fruit may be harder to move without a cart or assistance."
+    );
+  }
 
-if (
-  usePath.curingRequired &&
-  usePath.storageMethods?.includes(
-    "cool-dry-ventilated"
-  ) &&
-  dryStorageLocations.length === 0
-) {
-  score -= 18;
+  if (
+    usePath.curingRequired &&
+    !acceptedProcessing.includes("cure")
+  ) {
+    score -= 18;
 
-  limitations.push(
-    "This storage path needs a suitable cool, dry, ventilated location."
-  );
-}
+    limitations.push(
+      "This use path requires curing, but curing was not selected."
+    );
+  }
+
+  if (
+    usePath.curingRequired &&
+    storageMethods.includes(
+      "cool-dry-ventilated"
+    ) &&
+    dryStorageLocations.length === 0
+  ) {
+    score -= 18;
+
+    limitations.push(
+      "This storage path needs a suitable cool, dry, ventilated location."
+    );
+  }
 
   if (
     usePath.dryingRequired &&
@@ -2533,9 +2573,7 @@ if (
 
   if (
     usePath.cookingRequired &&
-    !acceptedProcessing.includes(
-      "cook"
-    )
+    !acceptedProcessing.includes("cook")
   ) {
     hardFailures.push(
       "This use path requires cooking, but cooking was not accepted."
@@ -2560,8 +2598,7 @@ if (
     minimalPreparation === "top"
   ) {
     if (
-      usePath
-        .preparationEaseScore >= 4
+      usePath.preparationEaseScore >= 4
     ) {
       score += 10;
 
@@ -2582,14 +2619,9 @@ if (
     score += 6;
   }
 
-  const storageHumidity =
-    answers.harvestStorage
-      ?.storageHumidity;
-
   if (
     usePath.dryingRequired &&
-    storageHumidity ===
-      "often-humid"
+    storageHumidity === "often-humid"
   ) {
     score -= 15;
 
@@ -2597,10 +2629,6 @@ if (
       "Humid storage conditions increase drying and mold risk."
     );
   }
-
-  const rodentProtection =
-    answers.harvestStorage
-      ?.rodentProtection;
 
   if (
     usePath.rodentRiskScore >= 4 &&
@@ -2615,11 +2643,6 @@ if (
       "Rodent protection is weak for this storage path."
     );
   }
-
-  const dryStorageLocations =
-  answers.harvestStorage
-    ?.dryStorageLocations ||
-  [];
 
   const finalScore =
     hardFailures.length > 0
