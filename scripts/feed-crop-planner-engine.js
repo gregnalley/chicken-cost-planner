@@ -4579,19 +4579,48 @@ function runMultiCropSampleTests() {
 
   const profileResults =
     profiles.map(profile => {
-      const cropResults =
-        eligibleCrops
-          .map(crop =>
-            scoreGenericCropProfile(
-              crop,
-              profile
-            )
+      const allCropResults =
+        eligibleCrops.map(crop =>
+          scoreGenericCropProfile(
+            crop,
+            profile
           )
+        );
+
+      const eligibleCropResults =
+        allCropResults
+          .filter(result => {
+            return (
+              result.bestUsePath !== null &&
+              result.noEligibleUsePath !== true &&
+              result.finalScore > 0
+            );
+          })
           .sort(
             (a, b) =>
               b.finalScore -
               a.finalScore
           );
+
+      const ineligibleCropResults =
+        allCropResults
+          .filter(result => {
+            return (
+              result.bestUsePath === null ||
+              result.noEligibleUsePath === true ||
+              result.finalScore <= 0
+            );
+          })
+          .sort(
+            (a, b) =>
+              b.finalScore -
+              a.finalScore
+          );
+
+      const cropResults = [
+        ...eligibleCropResults,
+        ...ineligibleCropResults
+      ];
 
       return {
         profileId:
@@ -4599,6 +4628,15 @@ function runMultiCropSampleTests() {
 
         profileLabel:
           profile.label,
+
+        eligibleCropCount:
+          eligibleCropResults.length,
+
+        ineligibleCropCount:
+          ineligibleCropResults.length,
+
+        hasEligibleLeader:
+          eligibleCropResults.length > 0,
 
         cropResults
       };
