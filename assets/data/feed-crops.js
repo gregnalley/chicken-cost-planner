@@ -4372,7 +4372,1688 @@ const BCP_FEED_CROPS = {
         "Calculate scores only after multiple crops have comparable evidence and complete data.",
         "Plant-density fields remain null because proso millet is normally broadcast or drilled by seeding rate, and tillering and establishment losses prevent a reliable conversion to mature individual plants per square foot.",
       ]
+    },
+
+plannerData: {
+  schemaVersion: "1.0.0",
+
+  developmentStatus:
+    "testing",
+
+  identity: {
+    plannerName:
+      "Proso Millet",
+
+    shortLabel:
+      "Millet",
+
+    icon:
+      "🌾",
+
+    cropCategory:
+      "grain",
+
+    primaryFeedCategory:
+      "energy",
+
+    guideUrl:
+      "growing-proso-millet-for-chickens.html"
+  },
+
+  lifecycle: {
+    growthCycle:
+      "annual",
+
+    isAnnual: true,
+    isBiennial: false,
+    isPerennial: false,
+    isTreeOrShrub: false,
+
+    yearsToFirstUsefulHarvest: 0,
+    yearsToFullProduction: 0,
+    expectedUsefulLifeYears: 1,
+
+    regrowsAfterHarvest: false,
+
+    permanentPlantingRequired: false,
+    reversibleAfterOneSeason: true
+  },
+
+  climate: {
+    suitableClimateTypes: [
+      "cold-short-summer",
+      "cool-moderate-summer",
+      "temperate",
+      "hot-dry",
+      "mild-winter"
+    ],
+
+    preferredClimateTypes: [
+      "cool-moderate-summer",
+      "temperate",
+      "hot-dry"
+    ],
+
+    challengingClimateTypes: [
+      "hot-humid"
+    ],
+
+    minimumFrostFreeDays: 60,
+    preferredFrostFreeDays: 90,
+
+    minimumSoilTemperatureF: 50,
+    preferredSoilTemperatureF: 60,
+
+    daysToMaturityMinimum: 60,
+    daysToMaturityMaximum: 100,
+
+    dryDownBufferDays: null,
+
+    heatToleranceScore: 4,
+
+    droughtClimateToleranceScore: 5,
+
+    humidityToleranceScore: 2,
+
+    coolSummerToleranceScore: 4,
+
+    frostSensitivityScore: 5,
+
+    winterHardinessRequired: false,
+
+    seasonExtensionBenefits: [
+      "The naturally short growth cycle makes major season-extension infrastructure unnecessary in many climates.",
+      "Early-maturing varieties can improve success in short-season areas.",
+      "Planting after the soil warms encourages faster emergence and stronger early growth.",
+      "Protected drying space may be more valuable than spring season extension in humid climates."
+    ],
+
+    indoorSeedStartingBenefitScore: 1,
+
+    directFacts: {
+      seasonType:
+        "warm-season",
+
+      frostSensitive: true,
+
+      commonlyDirectSeeded: true,
+
+      shortSeasonGrain: true,
+
+      maturityHighlyVarietyDependent:
+        true,
+
+      approximateMaturityDaysMinimum:
+        60,
+
+      approximateMaturityDaysMaximum:
+        100,
+
+      notes: [
+        "Proso Millet is one of the shortest-season grain crops in the initial planner database.",
+        "Some early varieties may mature grain in approximately 60 days, while other varieties and conditions require substantially longer.",
+        "The crop is frost sensitive and is normally planted after spring frost danger declines.",
+        "It can mature in cooler and shorter-season regions where Field Corn or Grain Sorghum may be less dependable.",
+        "Dry weather near maturity improves harvest and grain quality.",
+        "High humidity and prolonged wet weather may complicate panicle drying and increase grain-quality risks.",
+        "Indoor starting provides little practical benefit because Millet is readily direct-seeded as a dense grain stand."
+      ]
     }
+  },
+
+  site: {
+    absoluteMinimumSunHours: null,
+
+    productiveMinimumSunHours: 6,
+
+    preferredSunHours: 8,
+
+    shadeToleranceScore: 2,
+
+    afternoonShadeBenefitInHeat: 2,
+
+    windToleranceScore: 4,
+
+    lodgingRiskScore: 3,
+
+    reflectedHeatToleranceScore: 4,
+
+    airflowRequirementScore: 5,
+
+    frostPocketSensitivityScore: 5,
+
+    treeRootCompetitionToleranceScore: 2,
+
+    hardscapeConflictRiskScore: 2,
+
+    structureConflictRiskScore: 2,
+
+    utilityConflictRiskScore: 1,
+
+    fruitDropMessRiskScore: 2,
+
+    stainingRiskScore: 1,
+
+    directFacts: {
+      preferredLight:
+        "full-sun",
+
+      productiveSunGuidance:
+        "At least 6 hours of direct sunlight, with approximately 8 hours preferred for strong grain production and even dry-down.",
+
+      windExposureConcern:
+        true,
+
+      growthHabit:
+        "upright-tillering-grass",
+
+      matureHeightFtMinimum: 2,
+      matureHeightFtMaximum: 4,
+
+      notes: [
+        "Full sun supports compact growth, panicle production, grain filling, and dry-down.",
+        "Partial shade may encourage weaker plants and reduce grain production.",
+        "Good airflow helps foliage and panicles dry after rain.",
+        "Mature plants generally tolerate wind reasonably well, but dense or overly fertile stands may lodge.",
+        "Plants are shorter and create fewer structural conflicts than Corn, Sunflower, or Grain Sorghum.",
+        "Avoid severe tree-root competition and heavily shaded orchard conditions."
+      ]
+    }
+  },
+
+  soil: {
+    textureScores: {
+      heavyClay: 2,
+      clayLoam: 4,
+      loam: 5,
+      sandyLoam: 5,
+      verySandy: 4,
+      rocky: 2
+    },
+
+    drainageRequirementScore: 5,
+
+    temporaryWetToleranceScore: 1,
+
+    waterloggingSensitivityScore: 5,
+
+    minimumSoilDepthIn: null,
+    preferredSoilDepthIn: 18,
+
+    compactionToleranceScore: 2,
+
+    establishmentInSodDifficultyScore: 5,
+
+    preferredPHMinimum: 5.5,
+    preferredPHMaximum: 7.5,
+
+    survivalPHMinimum: null,
+    survivalPHMaximum: null,
+
+    fertilityRequirementScore: 2,
+
+    nitrogenRequirementScore: 3,
+    phosphorusRequirementScore: 3,
+    potassiumRequirementScore: 3,
+
+    benefitsFromInoculation: false,
+
+    inoculantType: null,
+
+    saltToleranceScore: null,
+
+    amendmentEffortScore: 2,
+
+    directFacts: {
+      preferredDrainage:
+        "well-drained",
+
+      preferredTextures: [
+        "sandy loam",
+        "loam",
+        "well-drained clay loam"
+      ],
+
+      lowFertilityAdaptation:
+        true,
+
+      sandySoilAdaptation:
+        true,
+
+      waterloggedSoilSuitable:
+        false,
+
+      fineFirmSeedbedHelpful:
+        true,
+
+      notes: [
+        "Proso Millet performs particularly well in well-drained loam and sandy-loam soils.",
+        "The crop can produce on relatively low-fertility ground but responds to balanced fertility.",
+        "Heavy clay is a poor fit where crusting, compaction, or slow drainage delays emergence.",
+        "A fine, firm seedbed supports shallow planting and more even emergence.",
+        "Excess nitrogen may increase lodging and delay maturity.",
+        "Proso Millet does not fix nitrogen and does not benefit from legume inoculation.",
+        "The pH range is a practical planning range rather than an absolute survival range."
+      ]
+    }
+  },
+
+  water: {
+    overallWaterRequirementLevel:
+      "low",
+
+    germinationWaterNeedLevel:
+      "moderate",
+
+    establishmentWaterNeedLevel:
+      "moderate",
+
+    matureWaterNeedLevel:
+      "low",
+
+    floweringWaterNeedLevel:
+      "moderate",
+
+    harvestDevelopmentWaterNeedLevel:
+      "moderate",
+
+    droughtSurvivalScore: 5,
+
+    droughtYieldRetentionScore: 4,
+
+    criticalGrowthStages: [
+      "germination",
+      "seedling-establishment",
+      "panicle-initiation",
+      "flowering",
+      "grain-filling"
+    ],
+
+    criticalStageWaterImportanceScore: 4,
+
+    overwateringSensitivityScore: 4,
+
+    waterloggingSensitivityScore: 5,
+
+    dripIrrigationBenefitScore: 3,
+
+    mulchBenefitScore: 2,
+
+    suitableForRainfallOnlyScore: 5,
+
+    suitableForLimitedIrrigationScore: 5,
+
+    containerDryingRiskScore: 4,
+
+    establishmentYearsRequiringExtraWater: 0,
+
+    directFacts: {
+      droughtTolerantAfterEstablishment:
+        true,
+
+      establishmentMoistureImportant:
+        true,
+
+      grainFillMoistureImportant:
+        true,
+
+      lowWaterRequirementGrain:
+        true,
+
+      standingWaterSuitable:
+        false,
+
+      notes: [
+        "Proso Millet is among the strongest low-water grain crops in the initial planner database.",
+        "Seed requires adequate moisture for timely germination and establishment.",
+        "Established plants can complete a crop with less water than many longer-season grains.",
+        "Severe drought during panicle formation, flowering, and grain filling can still reduce yield.",
+        "Waterlogging and prolonged saturated soil are major limitations.",
+        "Supplemental irrigation may improve production during critical stages but is often unnecessary where rainfall and stored soil moisture are adequate.",
+        "Dry conditions near maturity generally help grain dry-down and harvest quality."
+      ]
+    }
+  },
+
+  space: {
+    minimumTrialAreaSqFt: null,
+
+    minimumUsefulAreaSqFt: null,
+
+    preferredProductionAreaSqFt: null,
+
+    smallSpaceScore: 3,
+
+    mediumSpaceScore: 5,
+
+    largeSpaceScore: 5,
+
+    layoutScores: {
+      squareBlock: 5,
+      wideRectangle: 5,
+      longStrip: 4,
+      irregular: 3,
+      smallBeds: 3,
+      openField: 5
+    },
+
+    spaceTypeScores: {
+      inGround: 5,
+      raisedBed: 3,
+      container: 1,
+      fenceLine: 3,
+      buildingEdge: 3,
+      unusedLawn: 4,
+      openField: 5,
+      orchard: 2,
+      forageFrame: 1,
+      rotationalPaddock: 2,
+      greenhouse: 1,
+      hedgerow: 2
+    },
+
+    minimumContainerGallons: null,
+
+    containerUseLimitation:
+      "Millet can grow in containers, but dense grain production, rapid container drying, and low harvest per container make this an inefficient chicken-feed system.",
+
+    minimumRaisedBedDepthIn: null,
+
+    vineSpreadRequired: false,
+
+    verticalSupportBenefitScore: 1,
+
+    blockPlantingRequired: false,
+
+    minimumBlockRows: null,
+
+    continuousStandPreferred: true,
+
+    heightCategory:
+      "medium",
+
+    matureWidthCategory:
+      "narrow-dense-stand",
+
+    overflowSpaceBenefitScore: 2,
+
+    directFacts: {
+      denseStandSuitable: true,
+
+      narrowRowsSuitable: true,
+
+      broadcastPlantingPossible:
+        true,
+
+      blockPollinationRequired: false,
+
+      containerFeedProductionEfficient:
+        false,
+
+      notes: [
+        "Proso Millet is most useful when planted as a dense stand rather than as isolated individual plants.",
+        "It does not require Corn-style block planting for pollination.",
+        "Medium and large plots provide better grain usefulness than a few plants in a decorative bed.",
+        "A small bed can still provide whole panicles for enrichment, but loose-grain yield may be modest.",
+        "Open fields and broad rectangular plots simplify planting, weed management, harvest, and bird protection.",
+        "Containers are a poor use of soil volume and watering effort for meaningful grain production.",
+        "Minimum useful area remains null until grain yield and flock-size relationships are tested."
+      ]
+    }
+  },
+
+  flock: {
+    suitableForAdultChickens: true,
+
+    suitableForYoungChicks: false,
+
+    flockPurposeScores: {
+      eggs: 4,
+      meat: 4,
+      breeding: 3,
+      petsEnrichment: 5,
+      homestead: 5,
+      mixed: 5
+    },
+
+    feedingMethodScores: {
+      livingGrazing: 1,
+      cutAndCarry: 2,
+      wholeProduce: 1,
+      wholeSeedHeads: 5,
+      wholeGrain: 5,
+      processedGrain: 4,
+      heatTreated: 2,
+      driedForage: 1,
+      winterStorage: 5
+    },
+
+    directRunSuitabilityScore: 1,
+
+    forageFrameSuitabilityScore: 1,
+
+    rotationalPaddockSuitabilityScore: 2,
+
+    confinedFlockValueScore: 5,
+
+    pasturedFlockValueScore: 4,
+
+    treatDilutionRiskScore: 3,
+
+    highEnergySupplement: true,
+
+    highFiberSupplement: false,
+
+    concentratedFatSource: false,
+
+    primaryFlockUses: [
+      "Whole mature panicle enrichment",
+      "Loose whole grain",
+      "Stored winter grain",
+      "Small-grain energy supplementation",
+      "Scatter-feeding enrichment"
+    ],
+
+    unsuitablePrimaryUses: [
+      "Complete-ration replacement",
+      "Living forage",
+      "Primary protein crop",
+      "Permanent run planting",
+      "Primary young-chick feed"
+    ],
+
+    directFacts: {
+      edibleFeedParts: [
+        "Mature grain",
+        "Whole dried panicles"
+      ],
+
+      preferredBirdStage:
+        "Established adult chickens",
+
+      cropSurvivalWithDirectChickenAccess:
+        "poor-before-grain-maturity",
+
+      directAccessTiming:
+        "Protect plants while growing and offer harvested mature panicles or clean grain after maturity.",
+
+      nutritionalOrientation: [
+        "energy",
+        "grain",
+        "moderate-protein",
+        "enrichment",
+        "winter-storage"
+      ],
+
+      balancedFeedReplacement:
+        false,
+
+      notes: [
+        "Proso Millet is historically used as poultry feed and bird seed.",
+        "Whole mature panicles allow chickens to remove grain naturally and provide pecking enrichment.",
+        "Loose grain is easier to measure but requires threshing and cleaning.",
+        "Millet is primarily an energy grain and does not supply a complete amino-acid, vitamin, mineral, or calcium balance.",
+        "The grain is notably limited in lysine and should not be treated as a stand-alone poultry ration.",
+        "Growing plants should be protected from chickens and wild birds until harvest.",
+        "Young chicks should continue receiving an age-appropriate complete starter ration."
+      ]
+    }
+  },
+
+  labor: {
+    beginnerFriendlinessScore: 3,
+
+    plantingEaseScore: 4,
+
+    establishmentEaseScore: 3,
+
+    routineMaintenanceEaseScore: 3,
+
+    weedControlEaseScore: 2,
+
+    wildlifeProtectionEaseScore: 2,
+
+    harvestEaseScore: 3,
+
+    wholePanicleProcessingEaseScore: 4,
+
+    looseGrainProcessingEaseScore: 2,
+
+    dryingEaseScore: 3,
+
+    storageMonitoringEaseScore: 3,
+
+    perennialMaintenanceEaseScore: 5,
+
+    physicalAccessibilityScore: 4,
+
+    heavyLiftingRiskScore: 1,
+
+    weeklyLaborLevel:
+      "low",
+
+    peakWorkloadLevel:
+      "high",
+
+    harvestFrequencyCategory:
+      "once-twice",
+
+    requiredPlantingTasks: [
+      "prepare-seedbed",
+      "broadcast-small-seed"
+    ],
+
+    requiredMaintenanceTasks: [
+      "hand-weed",
+      "protect-from-wildlife"
+    ],
+
+    optionalMaintenanceTasks: [
+      "cultivate",
+      "install-irrigation"
+    ],
+
+    requiredHarvestTasks: [
+      "cut-seed-heads"
+    ],
+
+    usePathProcessingTasks: {
+      wholeDriedPanicles: [
+        "cut-seed-heads",
+        "dry"
+      ],
+
+      looseDriedGrain: [
+        "cut-seed-heads",
+        "dry",
+        "thresh",
+        "winnow",
+        "clean-sort"
+      ],
+
+      immediateMaturePanicles: [
+        "cut-seed-heads"
+      ]
+    },
+
+    requiredStorageTasks: [
+      "inspect-moisture",
+      "inspect-insects",
+      "inspect-mold"
+    ],
+
+    specializedEquipmentRequired: [],
+
+    specializedEquipmentHelpful: [
+      "hand-pruners",
+      "bird-netting",
+      "drying-rack",
+      "drying-screen",
+      "fan",
+      "grain-thresher",
+      "food-safe-bucket",
+      "metal-grain-can",
+      "moisture-meter"
+    ],
+
+    suitableForLowTimeUsersScore: 3,
+
+    suitableForSoloGrowersScore: 4,
+
+    directFacts: {
+      seedSize:
+        "very-small",
+
+      directSeedingSuitable: true,
+
+      specializedHarvestEquipmentRequiredForBackyardScale:
+        false,
+
+      unevenMaturityConcern:
+        true,
+
+      majorLaborBottlenecks: [
+        "Preparing a fine seedbed",
+        "Maintaining weed control during slow early development",
+        "Protecting grain from wild birds",
+        "Choosing harvest timing when panicles mature unevenly",
+        "Drying panicles",
+        "Threshing and winnowing loose grain",
+        "Monitoring stored grain for moisture and insects"
+      ],
+
+      notes: [
+        "Small seed requires more careful planting than Sunflower, Cowpea, Pumpkin, or Corn.",
+        "Early weed competition is one of the crop's most important management challenges.",
+        "The crop becomes more competitive after the stand closes.",
+        "Whole-panicle use avoids most threshing and winnowing labor.",
+        "Loose-grain production creates a concentrated seasonal workload.",
+        "Small backyard stands can be harvested manually without commercial machinery.",
+        "Uneven grain maturity can make harvest timing difficult."
+      ]
+    }
+  },
+
+  cost: {
+    seedOrPlantCostLevel:
+      "low",
+
+    soilPreparationCostLevel:
+      "low",
+
+    irrigationCostLevel:
+      "very-low",
+
+    protectionCostLevel:
+      "moderate",
+
+    processingEquipmentCostLevel:
+      "moderate",
+
+    storageCostLevel:
+      "low",
+
+    annualRecurringCostLevel:
+      "low",
+
+    longTermValueScore: 4,
+
+    lowestCostUsePath:
+      "fresh-mature-panicles",
+
+    highestCostUsePath:
+      "loose-dried-grain",
+
+    likelyCostDrivers: [
+      "Bird netting",
+      "Fine seedbed preparation",
+      "Drying racks or screens",
+      "Optional grain thresher",
+      "Rodent-resistant storage containers",
+      "Moisture meter"
+    ],
+
+    costReductionOptions: [
+      "Use whole mature or dried panicles instead of threshing loose grain.",
+      "Plant a small trial before expanding the grain area.",
+      "Use existing screens, tarps, fans, and containers.",
+      "Harvest and thresh manually at small scale.",
+      "Use an adapted short-season variety to reduce crop-failure risk."
+    ],
+
+    directFacts: {
+      specializedPlantingEquipmentRequired:
+        false,
+
+      specializedBackyardHarvestEquipmentRequired:
+        false,
+
+      specializedProcessingEquipmentRequired:
+        false,
+
+      notes: [
+        "Seed and growing inputs are generally inexpensive.",
+        "The crop's low water requirement may reduce irrigation costs.",
+        "Wild-bird protection can become the largest optional growing expense.",
+        "Whole-panicle use avoids purchasing threshing or milling equipment.",
+        "Cost ratings are qualitative rather than current retail estimates."
+      ]
+    }
+  },
+
+  goals: {
+    feedReductionScore: 4,
+
+    energyProductionScore: 5,
+
+    proteinOrientedScore: 3,
+
+    freshGreensScore: 1,
+
+    livingForageScore: 1,
+
+    winterStorageScore: 5,
+
+    enrichmentScore: 5,
+
+    resilienceScore: 5,
+
+    soilImprovementScore: 2,
+
+    nitrogenFixationScore: 1,
+
+    groundCoverScore: 4,
+
+    erosionControlScore: 3,
+
+    shadeScore: 1,
+
+    privacyScreeningScore: 2,
+
+    pollinatorSupportScore: 2,
+
+    compostBiomassScore: 3,
+
+    householdFoodScore: 4,
+
+    seedSavingScore: 5,
+
+    selfRelianceScore: 5,
+
+    multipurposeValueScore: 4,
+
+    visualAppealScore: 3,
+
+    productionReliabilityScore: 4,
+
+    fastestValueScore: 5,
+
+    nonElectricStorageScore: 5,
+
+    smallFlockValueScore: 4,
+
+    largeFlockValueScore: 4,
+
+    primaryGoalMatches: [
+      "high-energy",
+      "winter-storage",
+      "resilience-feed",
+      "limited-irrigation",
+      "short-season",
+      "seed-saving",
+      "self-reliance",
+      "enrichment",
+      "non-electric-storage"
+    ],
+
+    weakGoalMatches: [
+      "fresh-greens",
+      "living-forage",
+      "nitrogen-fixation",
+      "major-soil-improvement",
+      "shade",
+      "large-household-vegetable-harvest"
+    ],
+
+    directFacts: {
+      shortSeasonGrain:
+        true,
+
+      poultryFeedHistory:
+        true,
+
+      birdSeedHistory:
+        true,
+
+      humanFoodPotential:
+        true,
+
+      seedSavingPossible:
+        true,
+
+      notes: [
+        "Proso Millet is one of the strongest short-season grain options in the initial planner database.",
+        "It offers strong energy, drought resilience, winter storage, and self-reliance value.",
+        "Whole panicles provide strong enrichment without requiring loose-grain processing.",
+        "The crop is not useful as living poultry forage.",
+        "It does not fix nitrogen.",
+        "Human-food use generally requires additional cleaning, dehulling, or milling.",
+        "Its primary planner value is mature grain rather than foliage or forage."
+      ]
+    }
+  },
+
+  risks: {
+    wildlife: {
+      wildBirds: 5,
+      deer: 2,
+      raccoons: 1,
+      squirrels: 3,
+      rabbits: 2,
+      rodents: 5,
+      groundhogs: 2
+    },
+
+    insectsRiskScore: 3,
+
+    diseaseRiskScore: 3,
+
+    lodgingRiskScore: 3,
+
+    fieldMoldRiskScore: 3,
+
+    dryingMoldRiskScore: 4,
+
+    storageMoldRiskScore: 4,
+
+    storedInsectRiskScore: 4,
+
+    spoilageSpeedRiskScore: 2,
+
+    invasivenessConcernRiskScore: 3,
+
+    selfSeedingRiskScore: 5,
+
+    fruitDropRiskScore: 3,
+
+    cropFailureRiskScore: 3,
+
+    stormDamageRiskScore: 3,
+
+    shadingOtherCropsRiskScore: 2,
+
+    overfeedingRiskScore: 3,
+
+    treatedSeedRiskScore: 5,
+
+    primaryRisks: [
+      {
+        id:
+          "wild-bird-grain-loss",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "grain-filling",
+          "maturity",
+          "field-drying"
+        ],
+
+        mitigationOptions: [
+          "Bird netting",
+          "Timely harvest",
+          "Protected drying",
+          "Larger consolidated planting",
+          "Individual panicle bags for small trials"
+        ],
+
+        note:
+          "Small exposed grain stands may attract heavy wild-bird feeding."
+      },
+
+      {
+        id:
+          "early-weed-competition",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "emergence",
+          "seedling",
+          "early-tillering"
+        ],
+
+        mitigationOptions: [
+          "Prepare a clean seedbed",
+          "Plant at an appropriate density",
+          "Cultivate or hand weed early",
+          "Avoid severely weedy ground",
+          "Use stale-seedbed preparation where practical"
+        ],
+
+        note:
+          "Proso Millet can be a weak early competitor and may suffer major yield loss from weeds."
+      },
+
+      {
+        id:
+          "uneven-grain-maturity",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "maturity",
+          "harvest"
+        ],
+
+        mitigationOptions: [
+          "Monitor upper and lower panicles",
+          "Harvest when most grain is mature",
+          "Finish drying after harvest",
+          "Use multiple harvests in very small plantings"
+        ],
+
+        note:
+          "Grain within and among panicles may not mature simultaneously."
+      },
+
+      {
+        id:
+          "seed-shattering-and-self-seeding",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "late-maturity",
+          "harvest",
+          "following-seasons"
+        ],
+
+        mitigationOptions: [
+          "Harvest promptly",
+          "Clean spilled grain",
+          "Monitor volunteer plants",
+          "Avoid allowing mature panicles to remain indefinitely"
+        ],
+
+        note:
+          "Mature grain may shatter and create volunteer Millet plants."
+      },
+
+      {
+        id:
+          "wet-grain-storage",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "harvest",
+          "drying",
+          "storage"
+        ],
+
+        mitigationOptions: [
+          "Dry thoroughly",
+          "Use airflow",
+          "Do not seal damp grain",
+          "Inspect for heating and musty odors",
+          "Use moisture-resistant storage after adequate drying"
+        ],
+
+        note:
+          "Small grain can mold or heat when enclosed before it is sufficiently dry."
+      },
+
+      {
+        id:
+          "rodents-and-stored-insects",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "drying",
+          "storage"
+        ],
+
+        mitigationOptions: [
+          "Use rodent-proof containers",
+          "Clean storage areas",
+          "Inspect regularly",
+          "Store only dry clean grain"
+        ],
+
+        note:
+          "Loose Millet grain is highly attractive to rodents and may support stored-product insects."
+      },
+
+      {
+        id:
+          "balanced-feed-displacement",
+
+        severity:
+          "moderate",
+
+        affectedStages: [
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use as a measured supplement",
+          "Continue complete poultry feed",
+          "Avoid unrestricted grain feeding"
+        ],
+
+        note:
+          "Millet grain is energy-oriented and can displace nutritionally balanced feed when overused."
+      },
+
+      {
+        id:
+          "chemically-treated-seed",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "planting",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use untreated planting seed",
+          "Keep treated seed separated and labeled"
+        ],
+
+        note:
+          "Chemically treated planting seed must never be fed."
+      }
+    ],
+
+    directFacts: {
+      wildBirdConcern:
+        true,
+
+      earlyWeedCompetitionConcern:
+        true,
+
+      unevenMaturityConcern:
+        true,
+
+      shatteringConcern:
+        true,
+
+      volunteerPlantConcern:
+        true,
+
+      grainMoistureStorageConcern:
+        true,
+
+      notes: [
+        "Wild birds and weeds are among the most important backyard production risks.",
+        "Dry weather at maturity improves harvest conditions.",
+        "Wet or humid weather can delay dry-down and increase mold risk.",
+        "Volunteer Millet may become a weed in following crops.",
+        "Stored grain should be protected from rodents, insects, and moisture.",
+        "Moldy, musty, heated, heavily insect-damaged, or otherwise questionable grain should not be fed."
+      ]
+    }
+  },
+
+  seasonalRoles: {
+    earlySpring: false,
+
+    lateSpring: true,
+
+    summer: true,
+
+    lateSummer: true,
+
+    fall: true,
+
+    winterStorage: true,
+
+    perennial: false,
+
+    plantingWindows: [
+      {
+        id:
+          "direct-seed-after-frost",
+
+        trigger:
+          "after-last-frost",
+
+        offsetWeeksMinimum: 1,
+        offsetWeeksMaximum: 5,
+
+        soilCondition:
+          "warming-firm-and-weed-free",
+
+        method:
+          "direct-seed",
+
+        note:
+          "Plant after frost danger declines and the seedbed has warmed enough for rapid emergence."
+      },
+
+      {
+        id:
+          "late-short-season-planting",
+
+        trigger:
+          "warm-soil",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        method:
+          "direct-seed",
+
+        note:
+          "The short maturity period may allow later planting than Corn or Sorghum where sufficient warm days remain."
+      }
+    ],
+
+    harvestWindows: [
+      {
+        id:
+          "fresh-mature-panicles",
+
+        trigger:
+          "grain-mature-before-prolonged-field-loss",
+
+        usePathId:
+          "fresh-mature-panicles",
+
+        note:
+          "Cut mature sound panicles for immediate flock enrichment before extended field exposure."
+      },
+
+      {
+        id:
+          "whole-dried-panicles",
+
+        trigger:
+          "majority-of-grain-mature",
+
+        usePathId:
+          "whole-dried-panicles",
+
+        note:
+          "Cut panicles and finish drying under protected ventilated conditions."
+      },
+
+      {
+        id:
+          "loose-dried-grain",
+
+        trigger:
+          "panicles-adequately-dry",
+
+        usePathId:
+          "loose-dried-grain",
+
+        note:
+          "Thresh, winnow, and clean grain after panicles are adequately dry."
+      }
+    ],
+
+    cropSequenceRoles: [
+      "Short-season warm-season grain",
+      "Limited-water grain crop",
+      "Late-planted emergency grain",
+      "Fall grain harvest",
+      "Winter-storage energy crop"
+    ],
+
+    seasonalLimitations: [
+      "Not frost tolerant",
+      "Weak early weed competition",
+      "Wet weather complicates maturity and drying",
+      "Mature grain may shatter or attract birds"
+    ],
+
+    directFacts: {
+      warmSeasonAnnual: true,
+
+      commonlyDirectSeeded: true,
+
+      shortSeasonPlantingPossible:
+        true,
+
+      unevenMaturityPossible:
+        true,
+
+      postharvestDryingMayBeRequired:
+        true,
+
+      notes: [
+        "Proso Millet can mature more quickly than most grain crops.",
+        "Its short season can make it useful after a delayed spring or failed early crop.",
+        "Planting too early into cold soil slows establishment.",
+        "Harvest timing balances immature lower grain against shattering and bird loss from mature upper grain.",
+        "Whole or loose grain can extend usefulness through winter after adequate drying and protected storage."
+      ]
+    }
+  },
+
+  usePaths: [
+    {
+      id:
+        "fresh-mature-panicles",
+
+      label:
+        "Fresh Mature Millet Panicles",
+
+      description:
+        "Mature grain-filled panicles cut and offered relatively soon after harvest for immediate pecking enrichment.",
+
+      primaryFeedRole:
+        "grain-enrichment",
+
+      harvestProducts: [
+        "fresh-seed-heads",
+        "millet-panicles"
+      ],
+
+      suitableFeedingMethods: [
+        "whole-seed-heads",
+        "immediate-feeding",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-seed-heads"
+      ],
+
+      optionalProcessingTasks: [],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "bird-netting"
+      ],
+
+      harvestPattern:
+        "several",
+
+      harvestFrequencyCategory:
+        "seasonal",
+
+      storageMethods: [
+        "short-term-fresh"
+      ],
+
+      preferredStorageMethod:
+        "feed-soon-after-harvest",
+
+      storageDurationCategory:
+        "very-short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 3,
+      rodentRiskScore: 3,
+      storedInsectRiskScore: 2,
+
+      harvestEaseScore: 4,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 4,
+
+      householdFoodValueScore: 2,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Use only mature sound panicles without mold, decay, musty odor, or abnormal heating.",
+        "Freshly cut panicles still contain moisture and should not be sealed for storage.",
+        "Do not feed chemically treated planting seed.",
+        "Millet remains supplemental to complete poultry feed."
+      ],
+
+      incompatibleUserTraits: [
+        "requires-long-term-storage",
+        "wants-loose-measured-grain-only"
+      ]
+    },
+
+    {
+      id:
+        "whole-dried-panicles",
+
+      label:
+        "Whole Dried Millet Panicles",
+
+      description:
+        "Mature Millet panicles dried under protected ventilated conditions and stored whole for later flock enrichment.",
+
+      primaryFeedRole:
+        "grain-enrichment-storage",
+
+      harvestProducts: [
+        "dried-seed-heads",
+        "millet-panicles"
+      ],
+
+      suitableFeedingMethods: [
+        "whole-seed-heads",
+        "winter-storage",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-seed-heads",
+        "dry"
+      ],
+
+      optionalProcessingTasks: [
+        "clean-sort"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "drying-rack",
+        "drying-screen",
+        "fan",
+        "bird-netting",
+        "food-safe-bucket"
+      ],
+
+      harvestPattern:
+        "major",
+
+      harvestFrequencyCategory:
+        "once-twice",
+
+      storageMethods: [
+        "dried-whole"
+      ],
+
+      preferredStorageMethod:
+        "dry-ventilated-rodent-protected",
+
+      storageDurationCategory:
+        "medium-long",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: true,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 4,
+      rodentRiskScore: 5,
+      storedInsectRiskScore: 3,
+
+      harvestEaseScore: 4,
+      preparationEaseScore: 4,
+      beginnerSuitabilityScore: 4,
+
+      householdFoodValueScore: 2,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Dry panicles thoroughly before enclosed storage.",
+        "Do not store damp, musty, heated, or visibly moldy panicles.",
+        "Protect stored panicles from rodents and insects.",
+        "Inspect stored material regularly.",
+        "Do not feed chemically treated planting seed."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-drying",
+        "has-no-protected-drying-area",
+        "has-no-rodent-protected-storage"
+      ]
+    },
+
+    {
+      id:
+        "loose-dried-grain",
+
+      label:
+        "Loose Dried Proso Millet Grain",
+
+      description:
+        "Mature grain dried, threshed, winnowed, cleaned, and stored for measured supplemental feeding.",
+
+      primaryFeedRole:
+        "energy-grain-storage",
+
+      harvestProducts: [
+        "dry-grain",
+        "millet-grain"
+      ],
+
+      suitableFeedingMethods: [
+        "whole-grain",
+        "measured-supplement",
+        "winter-storage",
+        "scatter-feeding"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-seed-heads",
+        "dry",
+        "thresh",
+        "winnow",
+        "clean-sort"
+      ],
+
+      optionalProcessingTasks: [
+        "grind"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "drying-rack",
+        "drying-screen",
+        "fan",
+        "grain-thresher",
+        "food-safe-bucket",
+        "metal-grain-can",
+        "moisture-meter"
+      ],
+
+      harvestPattern:
+        "major",
+
+      harvestFrequencyCategory:
+        "once-twice",
+
+      storageMethods: [
+        "dried-threshed"
+      ],
+
+      preferredStorageMethod:
+        "airtight-after-adequate-drying",
+
+      storageDurationCategory:
+        "long",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: true,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: true,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 4,
+      rodentRiskScore: 5,
+      storedInsectRiskScore: 4,
+
+      harvestEaseScore: 2,
+      preparationEaseScore: 2,
+      beginnerSuitabilityScore: 2,
+
+      householdFoodValueScore: 4,
+      flockValueScore: 4,
+
+      safetyWarnings: [
+        "Grain must be adequately dry before being placed in airtight storage.",
+        "Do not mix questionable grain with clean sound grain.",
+        "Inspect regularly for insects, rodents, moisture, heating, and mold.",
+        "Discard moldy, musty, heated, or heavily insect-damaged grain.",
+        "Do not feed chemically treated planting seed.",
+        "Keep Millet supplemental to a complete poultry ration."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-drying",
+        "declines-threshing",
+        "declines-winnowing",
+        "requires-minimal-processing",
+        "has-no-dry-storage",
+        "has-no-rodent-protected-storage"
+      ]
+    }
+  ],
+
+  dataQuality: {
+    overallConfidence:
+      0.78,
+
+    verifiedFields: [
+      "identity",
+      "lifecycle",
+      "climate.directFacts.shortSeasonGrain",
+      "climate.directFacts.approximateMaturityDaysMinimum",
+      "climate.directFacts.approximateMaturityDaysMaximum",
+      "site.directFacts.preferredLight",
+      "soil.directFacts.lowFertilityAdaptation",
+      "soil.directFacts.sandySoilAdaptation",
+      "soil.directFacts.fineFirmSeedbedHelpful",
+      "water.directFacts.lowWaterRequirementGrain",
+      "water.directFacts.droughtTolerantAfterEstablishment",
+      "space.directFacts.denseStandSuitable",
+      "space.directFacts.blockPollinationRequired",
+      "flock.directFacts.edibleFeedParts",
+      "flock.directFacts.nutritionalOrientation",
+      "labor.directFacts.unevenMaturityConcern",
+      "risks.directFacts.wildBirdConcern",
+      "risks.directFacts.earlyWeedCompetitionConcern",
+      "risks.directFacts.unevenMaturityConcern",
+      "risks.directFacts.shatteringConcern",
+      "seasonalRoles.directFacts.shortSeasonPlantingPossible"
+    ],
+
+    derivedFields: [
+      "climate",
+      "site",
+      "soil.textureScores",
+      "water",
+      "space.smallSpaceScore",
+      "space.mediumSpaceScore",
+      "space.largeSpaceScore",
+      "space.layoutScores",
+      "space.spaceTypeScores",
+      "flock.flockPurposeScores",
+      "flock.feedingMethodScores",
+      "labor",
+      "cost",
+      "goals",
+      "risks.wildlife",
+      "usePaths.fresh-mature-panicles",
+      "usePaths.whole-dried-panicles",
+      "usePaths.loose-dried-grain"
+    ],
+
+    uncertainFields: [
+      "climate.dryDownBufferDays",
+      "soil.minimumSoilDepthIn",
+      "soil.saltToleranceScore",
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "space.minimumRaisedBedDepthIn",
+      "flock.portionGuidance",
+      "usePaths.fresh-mature-panicles.exactStorageDuration",
+      "usePaths.whole-dried-panicles.exactStorageDuration",
+      "usePaths.loose-dried-grain.exactStorageDuration",
+      "risks.wildlife.deer",
+      "risks.wildlife.squirrels"
+    ],
+
+    missingFields: [
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "flock.portionGuidance",
+      "flock.usePathTesting"
+    ],
+
+    lastReviewed:
+      "2026-07-15",
+
+    primarySources: [
+      {
+        title:
+          "Proso Millet Production",
+
+        organization:
+          "University Cooperative Extension production resources",
+
+        sourceType:
+          "extension-production-guide",
+
+        use:
+          "Short-season growth, planting, soil, water, fertility, weed management, harvest, shattering, and grain drying"
+      },
+
+      {
+        title:
+          "Alternative Uses of Proso Millet",
+
+        organization:
+          "University of Nebraska–Lincoln Extension",
+
+        sourceType:
+          "extension-crop-and-feed-guide",
+
+        use:
+          "Poultry feed, bird seed, human-food use, grain composition, processing, and alternative markets"
+      },
+
+      {
+        title:
+          "Proso Millet and Its Potential for Cultivation in the Pacific Northwest",
+
+        organization:
+          "Peer-reviewed crop-science researchers",
+
+        sourceType:
+          "peer-reviewed-review",
+
+        use:
+          "Crop history, short maturity, drought adaptation, production systems, grain quality, and food/feed uses"
+      },
+
+      {
+        title:
+          "Grain Drying, Handling, and Storage",
+
+        organization:
+          "University Cooperative Extension resources",
+
+        sourceType:
+          "extension-storage-guide",
+
+        use:
+          "Grain moisture, drying, cooling, insects, rodents, mold, and safe storage"
+      }
+    ],
+
+    notes: [
+      "Proso Millet plannerData is specific to Panicum miliaceum grown for mature grain.",
+      "It should not be confused with Pearl Millet, Foxtail Millet, Japanese Millet, Browntop Millet, or other crops commonly called Millet.",
+      "The record separates fresh mature panicles, whole dried panicles, and loose dried grain into separate use paths.",
+      "Whole-panicle use is substantially easier than loose-grain threshing and cleaning.",
+      "The crop is classified as an energy grain rather than a complete poultry ration.",
+      "Its short season and low water requirement are major strengths.",
+      "Wild-bird loss, early weed competition, uneven maturity, shattering, and postharvest processing are major limitations.",
+      "Minimum useful area, exact storage duration, and flock feeding portions remain intentionally null.",
+      "The crop should remain in testing until short-season, limited-water, whole-panicle, and loose-grain profiles are evaluated."
+    ]
+  }
+}
+
   },
 
     "CROP-PUMPKIN-WINTER-SQUASH": {
