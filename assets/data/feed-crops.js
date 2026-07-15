@@ -564,7 +564,101 @@ const BCP_FEED_CROPS = {
   }
 },
 
-      space: {},
+      space: {
+  minimumTrialAreaSqFt: null,
+
+  minimumUsefulAreaSqFt: null,
+
+  preferredProductionAreaSqFt: null,
+
+  smallSpaceScore: 4,
+  mediumSpaceScore: 4,
+  largeSpaceScore: 4,
+
+  layoutScores: {
+    squareBlock: 4,
+    wideRectangle: 5,
+    longStrip: 5,
+    irregular: 4,
+    smallBeds: 4,
+    openField: 5
+  },
+
+  spaceTypeScores: {
+    inGround: 5,
+    raisedBed: 4,
+    container: null,
+    fenceLine: 5,
+    buildingEdge: 4,
+    unusedLawn: 4,
+    openField: 5,
+    orchard: 2,
+    forageFrame: 1,
+    rotationalPaddock: 2,
+    greenhouse: 2,
+    hedgerow: 4
+  },
+
+  minimumContainerGallons: null,
+
+  minimumRaisedBedDepthIn: null,
+
+  vineSpreadRequired: false,
+
+  verticalSupportBenefitScore: 2,
+
+  blockPlantingRequired: false,
+
+  minimumBlockRows: null,
+
+  continuousStandPreferred: false,
+
+  heightCategory:
+    "variety-dependent-tall",
+
+  matureWidthCategory:
+    "moderate",
+
+  overflowSpaceBenefitScore: 1,
+
+  directFacts: {
+    layoutFlexible: true,
+
+    blockPollinationRequired: false,
+
+    suitableForRowPlanting: true,
+
+    suitableForCloselySpacedStands: true,
+
+    suitableForSingleOrSmallGroupPlanting: true,
+
+    varietySizeHighlyVariable: true,
+
+    commercialPlantPopulationRange: {
+      oilseedPlantsPerAcreMinimum: 18000,
+      oilseedPlantsPerAcreMaximum: 24000,
+
+      nonoilseedPlantsPerAcreMinimum: 14000,
+      nonoilseedPlantsPerAcreMaximum: 20000,
+
+      backyardUseWarning:
+        "Commercial plant populations should not be converted directly into backyard yield promises or minimum useful-area rules."
+    },
+
+    notes: [
+      "Sunflowers can be grown in conventional rows, closely spaced stands, borders, and small groups.",
+      "Unlike Field Corn, Sunflower does not require a square block with several neighboring rows for wind pollination.",
+      "Modern Sunflower hybrids possess substantial self-compatibility, although insect pollination may improve seed set and yield.",
+      "Even plant spacing helps reduce excessive competition and improves access to sunlight, nutrients, and water.",
+      "Lower plant populations tend to produce larger heads and seeds, while higher populations tend to produce smaller heads.",
+      "Higher plant populations may increase lodging and stalk-breakage risk.",
+      "Tall and large-headed varieties need more wind protection and physical clearance than dwarf or compact varieties.",
+      "Sunflowers work especially well along sunny fence lines, garden edges, and the backs of beds where they will not shade shorter crops.",
+      "Sunflowers are not suitable as an unprotected living crop inside a permanent chicken run because chickens may damage seedlings and leaves before seed heads mature.",
+      "The best planting layout depends on variety height, head size, water availability, desired harvest form, and wildlife protection."
+    ]
+  }
+},
 
       flock: {},
 
@@ -670,10 +764,25 @@ const BCP_FEED_CROPS = {
           "soil.preferredPHMaximum",
           "soil.directFacts.preferredDrainage",
           "water.directFacts.droughtTolerantAfterEstablishment",
-          "water.directFacts.establishmentMoistureImportant"
+          "water.directFacts.establishmentMoistureImportant",
+          "space.directFacts.layoutFlexible",
+         "space.directFacts.blockPollinationRequired",
+         "space.directFacts.suitableForRowPlanting",
+         "space.directFacts.suitableForCloselySpacedStands",
+         "space.directFacts.commercialPlantPopulationRange"
         ],
 
-        derivedFields: [],
+        derivedFields: [
+          "space.smallSpaceScore",
+          "space.mediumSpaceScore",
+          "space.largeSpaceScore",
+          "space.layoutScores",
+          "space.spaceTypeScores",
+          "space.verticalSupportBenefitScore",
+          "space.overflowSpaceBenefitScore",
+          "space.heightCategory",
+          "space.matureWidthCategory"
+        ],
 
         uncertainFields: [
              "climate.minimumFrostFreeDays",
@@ -683,6 +792,12 @@ const BCP_FEED_CROPS = {
              "climate.daysToMaturityMinimum",
              "climate.daysToMaturityMaximum",
              "climate.dryDownBufferDays",
+             "space.minimumTrialAreaSqFt",
+             "space.minimumUsefulAreaSqFt",
+             "space.preferredProductionAreaSqFt",
+             "space.spaceTypeScores.container",
+             "space.minimumContainerGallons",
+             "space.minimumRaisedBedDepthIn",
              "usePaths.whole-dried-seed-head"
         ],
 
@@ -692,7 +807,8 @@ const BCP_FEED_CROPS = {
           "soil.textureScores",
           "soil.plannerRatings",
           "water.plannerRatings",
-          "space",
+          "space.minimumAreaResearch",
+          "space.containerResearch",
           "flock",
           "labor",
           "cost",
@@ -712,7 +828,11 @@ const BCP_FEED_CROPS = {
           "Do not change developmentStatus to ready until every required section and use path has been researched, validated, and tested.",
           "Direct climate, sunlight, soil, and water facts were added during the first planner research pass.",
           "Planner suitability and risk ratings remain null until the rating pass compares Sunflower consistently with the other crops.",
-          "Generic days-to-flower figures were not used as mature-seed harvest requirements."
+          "Generic days-to-flower figures were not used as mature-seed harvest requirements.",
+          "Space and layout ratings were added as internal planner derivations based on Sunflower spacing flexibility, plant form, pollination behavior, and backyard harvest usefulness.",
+          "Commercial plant populations were retained only as reference facts and were not converted into backyard yield or minimum-area claims.",
+          "Container suitability and minimum container volume remain null pending cultivar-specific research.",
+          "Minimum trial, useful, and production areas remain null because no defensible backyard flock threshold has been established."
         ]
        }
     }
