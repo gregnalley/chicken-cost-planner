@@ -5,15 +5,14 @@
 
 <meta charset="UTF-8">
 
-<title>Feed Crop Planner Development Test | Backyard Chicken Planner HQ</title>
+<title>Feed Crop Planner Development Dashboard | Backyard Chicken Planner HQ</title>
 
 <meta
   name="description"
-  content="Private development and validation page for the Backyard Chicken Planner Feed Crop Planner."
+  content="Private development dashboard, validation tools, regression matrix, and recommendation tests for the Backyard Chicken Planner Feed Crop Planner."
 >
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="robots" content="noindex, nofollow">
 
 <link
@@ -23,14 +22,35 @@
 
 <style>
 
-.planner-test-shell {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 16px;
+:root {
+  --dashboard-green-dark: #194f2a;
+  --dashboard-green: #2f7245;
+  --dashboard-green-soft: #edf6ef;
+  --dashboard-border: #d7e3d9;
+  --dashboard-text-muted: #56645a;
+  --dashboard-shadow:
+    0 10px 28px rgba(25, 79, 42, 0.08);
 }
 
-.planner-test-banner {
-  padding: 28px;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.planner-dashboard-shell {
+  width: min(1600px, calc(100% - 32px));
+  margin: 36px auto 60px;
+}
+
+.planner-dashboard-banner {
+  padding: 34px;
   color: #ffffff;
   background:
     linear-gradient(
@@ -38,28 +58,143 @@
       #194f2a,
       #3f8053
     );
-  border-radius: 18px;
+  border-radius: 20px;
   box-shadow:
-    0 14px 34px
-    rgba(25, 79, 42, 0.18);
+    0 16px 38px
+    rgba(25, 79, 42, 0.20);
 }
 
-.planner-test-banner h1 {
-  margin-top: 0;
+.planner-dashboard-banner h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
 }
 
-.planner-test-banner p:last-child {
-  margin-bottom: 0;
+.planner-dashboard-banner p {
+  max-width: 900px;
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
 }
 
 .development-notice {
-  margin-top: 20px;
-  padding: 17px;
+  margin-top: 18px;
+  padding: 16px 18px;
   color: #674814;
   background: #fff8e8;
   border: 1px solid #ead5a4;
   border-left: 6px solid #c48a27;
   border-radius: 11px;
+}
+
+.development-notice p {
+  margin: 7px 0 0;
+}
+
+.dashboard-quick-nav {
+  position: sticky;
+  top: 10px;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--dashboard-border);
+  border-radius: 13px;
+  box-shadow: var(--dashboard-shadow);
+  backdrop-filter: blur(8px);
+}
+
+.dashboard-quick-nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  color: var(--dashboard-green-dark);
+  background: var(--dashboard-green-soft);
+  border: 1px solid #cfe0d2;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dashboard-quick-nav a:hover,
+.dashboard-quick-nav a:focus {
+  background: #dfeee2;
+}
+
+.dashboard-summary-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.dashboard-summary-card {
+  min-width: 0;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid var(--dashboard-border);
+  border-radius: 13px;
+  box-shadow: var(--dashboard-shadow);
+}
+
+.dashboard-summary-card strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--dashboard-green-dark);
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dashboard-summary-card span {
+  display: block;
+  color: #1e2b22;
+  font-size: 1.18rem;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-section {
+  margin-top: 24px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid var(--dashboard-border);
+  border-radius: 16px;
+  box-shadow: var(--dashboard-shadow);
+  scroll-margin-top: 88px;
+}
+
+.dashboard-section > h2,
+.dashboard-section-heading h2 {
+  margin: 0;
+  color: var(--dashboard-green-dark);
+  font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+}
+
+.dashboard-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-section-heading p,
+.dashboard-section > p {
+  color: var(--dashboard-text-muted);
+}
+
+.section-kicker {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--dashboard-green);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .foundation-status {
@@ -100,7 +235,7 @@
 .test-card strong {
   display: block;
   margin-bottom: 6px;
-  color: #194f2a;
+  color: var(--dashboard-green-dark);
 }
 
 .foundation-check-list {
@@ -112,31 +247,139 @@
   margin-bottom: 9px;
 }
 
-.next-session-box {
-  padding: 19px;
-  background: #f6f8fb;
-  border: 1px solid #d8dfe8;
-  border-left: 6px solid #5273a2;
+.dashboard-details {
+  margin-top: 24px;
+  background: #ffffff;
+  border: 1px solid var(--dashboard-border);
+  border-radius: 16px;
+  box-shadow: var(--dashboard-shadow);
+  scroll-margin-top: 88px;
+}
+
+.dashboard-details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 21px 24px;
+  color: var(--dashboard-green-dark);
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 800;
+  list-style: none;
+}
+
+.dashboard-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.dashboard-details > summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: var(--dashboard-green-soft);
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+.dashboard-details[open] > summary::after {
+  content: "−";
+}
+
+.dashboard-details-content {
+  padding: 0 24px 24px;
+  border-top: 1px solid #e6eee7;
+}
+
+.dashboard-details-content > p:first-child {
+  color: var(--dashboard-text-muted);
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--dashboard-border);
   border-radius: 11px;
 }
 
-code {
-  overflow-wrap: anywhere;
+.profile-matrix-table {
+  width: 100%;
+  min-width: 1180px;
+  border-collapse: collapse;
+  background: #ffffff;
 }
 
-@media (max-width: 700px) {
-
-  .test-card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .planner-test-banner {
-    padding: 22px;
-  }
-
+.profile-matrix-table th,
+.profile-matrix-table td {
+  padding: 12px;
+  border-right: 1px solid #d8e3da;
+  border-bottom: 1px solid #d8e3da;
+  text-align: left;
+  vertical-align: top;
 }
 
-.sunflower-test-result {
+.profile-matrix-table th:last-child,
+.profile-matrix-table td:last-child {
+  border-right: 0;
+}
+
+.profile-matrix-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.profile-matrix-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  color: var(--dashboard-green-dark);
+  background: #eaf3ec;
+}
+
+.profile-matrix-table tbody tr:nth-child(even) {
+  background: #f8faf8;
+}
+
+.profile-matrix-pass {
+  color: #165525;
+  background: #e7f6ea;
+  font-weight: 800;
+}
+
+.profile-matrix-review {
+  color: #715100;
+  background: #fff4d8;
+  font-weight: 800;
+}
+
+.profile-matrix-fail {
+  color: #7a1e1e;
+  background: #fde8e8;
+  font-weight: 800;
+}
+
+.profile-matrix-na {
+  color: #50555a;
+  background: #f0f1f2;
+  font-weight: 800;
+}
+
+.profile-purpose {
+  min-width: 280px;
+}
+
+.profile-expected {
+  min-width: 190px;
+}
+
+.profile-actual {
+  min-width: 180px;
+}
+
+.sunflower-test-result,
+.multi-profile-result {
   margin-bottom: 20px;
   padding: 20px;
   background: #ffffff;
@@ -147,9 +390,10 @@ code {
     rgba(29, 65, 38, 0.07);
 }
 
-.sunflower-test-result h3 {
+.sunflower-test-result h3,
+.multi-profile-result h3 {
   margin-top: 0;
-  color: #194f2a;
+  color: var(--dashboard-green-dark);
 }
 
 .test-score-row {
@@ -176,7 +420,7 @@ code {
 }
 
 .use-path-test-card strong {
-  color: #194f2a;
+  color: var(--dashboard-green-dark);
 }
 
 .use-path-failure {
@@ -184,24 +428,10 @@ code {
   border-color: #e3c2c2;
 }
 
-.multi-profile-result {
-  margin-bottom: 24px;
-  padding: 20px;
-  background: #ffffff;
-  border: 1px solid #d8e3da;
-  border-radius: 13px;
-  box-shadow:
-    0 7px 20px
-    rgba(29, 65, 38, 0.07);
-}
-
-.multi-profile-result h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
 .multi-crop-ranking {
   display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
 }
 
@@ -219,73 +449,59 @@ code {
 
 .multi-crop-card h4 {
   margin: 0 0 8px;
-  color: #194f2a;
+  color: var(--dashboard-green-dark);
 }
 
-.table-scroll {
-  width: 100%;
-  overflow-x: auto;
+.next-session-box {
+  padding: 19px;
+  background: #f6f8fb;
+  border: 1px solid #d8dfe8;
+  border-left: 6px solid #5273a2;
+  border-radius: 11px;
 }
 
-.profile-matrix-table {
-  width: 100%;
-  min-width: 1050px;
-  border-collapse: collapse;
-  margin-top: 18px;
-  background: #ffffff;
+code {
+  overflow-wrap: anywhere;
 }
 
-.profile-matrix-table th,
-.profile-matrix-table td {
-  padding: 12px;
-  border: 1px solid #d8e3da;
-  text-align: left;
-  vertical-align: top;
+@media (max-width: 1100px) {
+
+  .dashboard-summary-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
 }
 
-.profile-matrix-table th {
-  background: #edf5ee;
-  color: #194f2a;
-}
+@media (max-width: 700px) {
 
-.profile-matrix-table tbody tr:nth-child(even) {
-  background: #f8faf8;
-}
+  .planner-dashboard-shell {
+    width: min(100% - 18px, 1600px);
+    margin-top: 18px;
+  }
 
-.profile-matrix-pass {
-  background: #e7f6ea;
-  color: #165525;
-  font-weight: 700;
-}
+  .planner-dashboard-banner {
+    padding: 23px;
+  }
 
-.profile-matrix-review {
-  background: #fff4d8;
-  color: #715100;
-  font-weight: 700;
-}
+  .dashboard-quick-nav {
+    position: static;
+  }
 
-.profile-matrix-fail {
-  background: #fde8e8;
-  color: #7a1e1e;
-  font-weight: 700;
-}
+  .dashboard-summary-grid,
+  .test-card-grid {
+    grid-template-columns: 1fr;
+  }
 
-.profile-matrix-na {
-  background: #f0f1f2;
-  color: #50555a;
-  font-weight: 700;
-}
+  .dashboard-section,
+  .dashboard-details-content {
+    padding: 19px;
+  }
 
-.profile-purpose {
-  min-width: 260px;
-}
+  .dashboard-details > summary {
+    padding: 18px 19px;
+  }
 
-.profile-expected {
-  min-width: 180px;
-}
-
-.profile-actual {
-  min-width: 170px;
 }
 
 </style>
@@ -306,61 +522,89 @@ Private owner tools, research databases, and development testing.
 
 <div id="navigation"></div>
 
-<main class="planner-test-shell">
+<main class="planner-dashboard-shell">
 
-<div class="planner-test-banner">
+<section class="planner-dashboard-banner">
 
-<h1>🌾 Feed Crop Planner Development Test</h1>
+<h1>🌾 Feed Crop Planner Development Dashboard</h1>
 
 <p>
-This page verifies that the isolated Feed Crop Planner development files are loading correctly.
+Monitor crop readiness, schema validation, sample-profile regressions, and recommendation behavior from one private development dashboard.
 </p>
 
-</div>
+</section>
 
 <div class="development-notice">
 
-<strong>Development page only</strong>
+<strong>Private development dashboard</strong>
 
 <p>
-This page does not yet load, validate, or score the live feed-crop database. It only confirms that the planner configuration, data adapter, engine foundation, and interface foundation are working.
-</p>
-
-<p style="margin-bottom:0;">
-The page is marked <code>noindex, nofollow</code> and should not be added to the public navigation or sitemap.
+This page is marked <code>noindex, nofollow</code> and should not be added to the public navigation or sitemap. Results shown here are development tests, not public feeding recommendations.
 </p>
 
 </div>
 
-<div class="section">
-
-<h2>Foundation Status</h2>
-
-<div
-  id="planner-foundation-status"
-  class="foundation-status"
-  role="status"
-  aria-live="polite"
+<nav
+  class="dashboard-quick-nav"
+  aria-label="Dashboard sections"
 >
-Checking planner files...
+
+<a href="#dashboard-summary">
+Summary
+</a>
+
+<a href="#regression-matrix">
+Regression Matrix
+</a>
+
+<a href="#crop-registration">
+Crop Readiness
+</a>
+
+<a href="#crop-validation">
+Validation
+</a>
+
+<a href="#multi-crop-comparison">
+Comparisons
+</a>
+
+<a href="#sample-profiles">
+Profiles
+</a>
+
+<a href="#individual-tests">
+Individual Tests
+</a>
+
+<a href="#foundation-status-section">
+Foundation
+</a>
+
+</nav>
+
+<section
+  id="dashboard-summary"
+  class="dashboard-section"
+>
+
+<div class="dashboard-section-heading">
+
+<div>
+
+<span class="section-kicker">
+At-a-glance system status
+</span>
+
+<h2>Planner Summary</h2>
+
 </div>
 
-<ul
-  id="planner-foundation-details"
-  class="foundation-check-list"
->
-<li>Waiting for JavaScript...</li>
-</ul>
-
 </div>
 
-<div class="section">
+<div class="dashboard-summary-grid">
 
-<h2>Planner Versions</h2>
-
-<div class="test-card-grid">
-
-<div class="test-card">
+<div class="dashboard-summary-card">
 
 <strong>Planner Version</strong>
 
@@ -370,75 +614,67 @@ Checking...
 
 </div>
 
-<div class="section">
+<div class="dashboard-summary-card">
 
-<h2>Crop Database Registration</h2>
+<strong>Crop Schema Version</strong>
 
-<div
-  id="crop-registration-summary"
-  class="foundation-status"
-  role="status"
-  aria-live="polite"
+<span id="planner-schema-version">
+Checking...
+</span>
+
+</div>
+
+<div class="dashboard-summary-card">
+
+<strong>Crop Database</strong>
+
+<span>
+10 planned crop records
+</span>
+
+</div>
+
+<div class="dashboard-summary-card">
+
+<strong>Regression Profiles</strong>
+
+<span>
+Live count shown below
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+  id="regression-matrix"
+  class="dashboard-section"
 >
-Checking crop database...
+
+<div class="dashboard-section-heading">
+
+<div>
+
+<span class="section-kicker">
+Primary regression check
+</span>
+
+<h2>
+🧪 Sample Profile Regression Matrix
+</h2>
+
 </div>
 
-<div id="crop-registration-details"></div>
-
 </div>
-
-<div class="section">
-
-<h2>Planner Schema Validation</h2>
 
 <p>
-The validator checks whether each crop is ready to participate in the Feed Crop Planner. At this stage, the expected result is that all ten crops are missing <code>plannerData</code>.
-</p>
-
-<div
-  id="crop-validation-summary"
-  class="foundation-status"
-  role="status"
-  aria-live="polite"
->
-Waiting for crop validation...
-</div>
-
-<div class="section">
-
-<h2>Sunflower Sample Profile Tests</h2>
-
-<p>
-These tests run the first recommendation logic against five fixed visitor profiles. They do not yet compare Sunflower with the other nine crops.
-</p>
-
-<div
-  id="sunflower-test-summary"
-  class="foundation-status"
-  role="status"
-  aria-live="polite"
->
-Waiting for Sunflower tests...
-</div>
-
-<div id="sunflower-test-results"></div>
-
-</div>
-
-<div class="section">
-
-<h2>Loaded Sample Profiles</h2>
-
-<div class="section">
-
-<h2>🧪 Sample Profile Regression Matrix</h2>
-
-<p>
-This matrix compares the intended purpose of each sample profile with the live rankings produced by the shared recommendation engine.
+This matrix compares the intended purpose of every sample profile with the live leader produced by the shared recommendation engine.
 </p>
 
 <p>
-A passing result does not mean the scoring system is permanently final. It means the current winner is among the crops that the profile was designed to favor.
+A passing result means the current winner is among the crops the profile was designed to favor. A review result identifies a ranking that should be inspected before engine changes are accepted.
 </p>
 
 <div
@@ -451,32 +687,157 @@ Waiting for profile matrix...
 </div>
 
 <div class="table-scroll">
-  <table class="profile-matrix-table">
 
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Sample Profile</th>
-        <th>Primary Test Purpose</th>
-        <th>Expected Leader</th>
-        <th>Actual Leader</th>
-        <th>Best Use Path</th>
-        <th>Result</th>
-      </tr>
-    </thead>
+<table class="profile-matrix-table">
 
-    <tbody id="profile-matrix-body">
-      <tr>
-        <td colspan="7">
-          Loading profile matrix...
-        </td>
-      </tr>
-    </tbody>
+<thead>
 
-  </table>
+<tr>
+<th>#</th>
+<th>Sample Profile</th>
+<th>Primary Test Purpose</th>
+<th>Expected Leader</th>
+<th>Actual Leader</th>
+<th>Best Use Path</th>
+<th>Result</th>
+</tr>
+
+</thead>
+
+<tbody id="profile-matrix-body">
+
+<tr>
+
+<td colspan="7">
+Loading profile matrix...
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section
+  id="crop-registration"
+  class="dashboard-section"
+>
+
+<div class="dashboard-section-heading">
+
+<div>
+
+<span class="section-kicker">
+Crop readiness board
+</span>
+
+<h2>
+🌱 Crop Database Registration
+</h2>
+
 </div>
 
 </div>
+
+<p>
+Review all registered crops and their current planner-development status.
+</p>
+
+<div
+  id="crop-registration-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Checking crop database...
+</div>
+
+<div id="crop-registration-details"></div>
+
+</section>
+
+<section
+  id="crop-validation"
+  class="dashboard-section"
+>
+
+<div class="dashboard-section-heading">
+
+<div>
+
+<span class="section-kicker">
+Schema and record integrity
+</span>
+
+<h2>
+✅ Planner Schema Validation
+</h2>
+
+</div>
+
+</div>
+
+<p>
+The validator checks whether each crop has the required planner structure and whether its development status allows it to participate in recommendation testing.
+</p>
+
+<div
+  id="crop-validation-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Waiting for crop validation...
+</div>
+
+<div id="crop-validation-results"></div>
+
+</section>
+
+<details
+  id="multi-crop-comparison"
+  class="dashboard-details"
+>
+
+<summary>
+📊 Multi-Crop Profile Comparison
+</summary>
+
+<div class="dashboard-details-content">
+
+<p>
+This detailed view compares every crop currently marked <code>testing</code> or <code>ready</code> across all loaded sample profiles.
+</p>
+
+<div
+  id="multi-crop-test-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Waiting for multi-crop tests...
+</div>
+
+<div id="multi-crop-test-results"></div>
+
+</div>
+
+</details>
+
+<details
+  id="sample-profiles"
+  class="dashboard-details"
+>
+
+<summary>
+📁 Loaded Sample Profiles
+</summary>
+
+<div class="dashboard-details-content">
 
 <p>
 This list shows every sample profile currently loaded from the planner configuration.
@@ -495,88 +856,138 @@ Checking sample profiles...
 
 </div>
 
-<div class="section">
+</details>
 
-<h2>Multi-Crop Profile Comparison</h2>
+<details
+  id="individual-tests"
+  class="dashboard-details"
+>
+
+<summary>
+🔬 Individual Sunflower Sample Tests
+</summary>
+
+<div class="dashboard-details-content">
 
 <p>
-This test compares every crop currently marked
-<code>testing</code> or <code>ready</code>
-using the shared recommendation engine.
+These original development tests exercise Sunflower use-path logic against the first five fixed visitor profiles. The multi-crop comparison is now the primary shared-engine test.
 </p>
 
 <div
-  id="multi-crop-test-summary"
+  id="sunflower-test-summary"
   class="foundation-status"
   role="status"
   aria-live="polite"
 >
-Waiting for multi-crop tests...
+Waiting for Sunflower tests...
 </div>
 
-<div id="multi-crop-test-results"></div>
+<div id="sunflower-test-results"></div>
 
 </div>
 
-<div id="crop-validation-results"></div>
+</details>
+
+<details
+  id="foundation-status-section"
+  class="dashboard-details"
+>
+
+<summary>
+⚙️ Planner Foundation Status
+</summary>
+
+<div class="dashboard-details-content">
+
+<p>
+These checks confirm that the planner namespace, configuration, data adapter, engine, interface, and registered crop collection loaded successfully.
+</p>
+
+<div
+  id="planner-foundation-status"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Checking planner files...
+</div>
+
+<ul
+  id="planner-foundation-details"
+  class="foundation-check-list"
+>
+
+<li>
+Waiting for JavaScript...
+</li>
+
+</ul>
+
+</div>
+
+</details>
+
+<details class="dashboard-details">
+
+<summary>
+🗂️ Development History and Next Steps
+</summary>
+
+<div class="dashboard-details-content">
+
+<div class="test-card-grid">
+
+<div class="test-card">
+
+<strong>
+Foundation Work Completed
+</strong>
+
+<ul>
+<li>Protected crop-data backup</li>
+<li>Planner namespace and shared configuration</li>
+<li>Crop database adapter</li>
+<li>Schema validator</li>
+<li>Use-path scoring</li>
+<li>Shared multi-crop engine</li>
+<li>Sample-profile regression testing</li>
+</ul>
 
 </div>
 
 <div class="test-card">
 
-<strong>Crop Schema Version</strong>
+<strong>
+Current Migration Workflow
+</strong>
 
-<span id="planner-schema-version">
-Checking...
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Work Session 1 Scope</h2>
-
-<ul>
-<li>Protected backup created</li>
-<li>Planner namespace created</li>
-<li>Shared rating constants created</li>
-<li>Allowed enum values created</li>
-<li>Preliminary category weights created</li>
-<li>Recommendation tiers created</li>
-<li>Basic engine utilities created</li>
-<li>Planner data adapter created</li>
-<li>HQ development page created</li>
-</ul>
-
-<p>
-No crop scoring, database validation, questionnaire, or public results are active yet.
-</p>
+<ol>
+<li>Add complete crop <code>plannerData</code>.</li>
+<li>Validate the crop record.</li>
+<li>Add focused sample profiles.</li>
+<li>Review rankings and use paths.</li>
+<li>Change status from <code>testing</code> to <code>ready</code>.</li>
+</ol>
 
 </div>
 
-<div class="section">
-
-<h2>Next Development Session</h2>
+</div>
 
 <div class="next-session-box">
 
-<strong>Work Session 2: Crop Schema Validator</strong>
-
-<p>
-The next session will create a validator that examines each crop record and reports errors and warnings without changing the crop data.
-</p>
+<strong>
+Next crop migration
+</strong>
 
 <p style="margin-bottom:0;">
-The expected initial result will be that all ten crops are missing <code>plannerData</code>. That will be correct until we begin the controlled Sunflower migration.
+Continue with White Clover, then validate its perennial living-forage, ground-cover, grazing-pressure, and forage-frame behavior against the existing regression profiles.
 </p>
 
 </div>
 
 </div>
+
+</details>
 
 </main>
 
@@ -595,6 +1006,7 @@ The expected initial result will be that all ten crops are missing <code>planner
 <script src="../scripts/feed-crop-planner-ui.js"></script>
 
 <script>
+
 document.addEventListener(
   "DOMContentLoaded",
   function () {
@@ -622,6 +1034,7 @@ document.addEventListener(
 
   }
 );
+
 </script>
 
 </body>
