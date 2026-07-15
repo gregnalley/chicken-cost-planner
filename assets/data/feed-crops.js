@@ -294,7 +294,7 @@ const BCP_FEED_CROPS = {
         plannerData: {
       schemaVersion: "1.0.0",
 
-      developmentStatus: "research-in-progress",
+      developmentStatus: "testing",
 
       identity: {
         plannerName: "Sunflowers",
@@ -348,40 +348,63 @@ const BCP_FEED_CROPS = {
   minimumFrostFreeDays: null,
   preferredFrostFreeDays: null,
 
-  minimumSoilTemperatureF: null,
+  minimumSoilTemperatureF: 50,
   preferredSoilTemperatureF: null,
 
   daysToMaturityMinimum: null,
   daysToMaturityMaximum: null,
 
+  referenceDaysToPhysiologicalMaturity: 119,
+
   dryDownBufferDays: null,
 
-  heatToleranceScore: null,
-  droughtClimateToleranceScore: null,
-  humidityToleranceScore: null,
-  coolSummerToleranceScore: null,
+  heatToleranceScore: 4,
 
-  frostSensitivityScore: null,
+  droughtClimateToleranceScore: 4,
+
+  humidityToleranceScore: 3,
+
+  coolSummerToleranceScore: 3,
+
+  frostSensitivityScore: 5,
 
   winterHardinessRequired: false,
 
   seasonExtensionBenefits: [
-    "Indoor seed starting may help in short-season areas, but sunflowers generally transplant best before becoming root-bound.",
-    "Selecting an earlier-maturing seed variety is usually more useful than relying on late-season frost protection for mature seed production."
+    "Indoor seed starting may help in short-season areas, but Sunflowers should be transplanted before becoming crowded or root-bound.",
+    "Selecting an earlier-maturing seed-producing variety is generally more dependable than relying on late frost protection.",
+    "Biodegradable starting containers may reduce root disturbance during transplanting."
   ],
 
-  indoorSeedStartingBenefitScore: null,
+  indoorSeedStartingBenefitScore: 3,
 
   directFacts: {
-    seasonType: "warm-season",
+    seasonType:
+      "warm-season",
+
     frostSensitive: true,
+
     plantAfterFrostDanger: true,
 
+    germinationSoilTemperatureF:
+      50,
+
+    referencePhysiologicalMaturityDays:
+      119,
+
+    maturityReferenceScope:
+      "Average growth-stage reference from a Northern Great Plains production guide; not a universal cultivar guarantee.",
+
+    baseGrowingDegreeTemperatureF:
+      44,
+
     notes: [
-      "Annual sunflowers are normally planted after the danger of damaging spring frost has passed.",
-      "Warm soil supports faster and more dependable germination.",
-      "Variety selection strongly affects the time required for flowering and mature seed harvest.",
-      "Seed production requires enough frost-free time for flowering, pollination, seed filling, and head dry-down."
+      "Annual Sunflowers are normally direct-seeded after danger of damaging spring frost has passed.",
+      "Soil near 50°F supports germination, while uniform moisture supports consistent emergence.",
+      "Sunflower development varies with genetics, cultivar, temperature, planting date, and growing environment.",
+      "The 119-day R9 figure is retained only as a reference value and should not replace cultivar-specific maturity information.",
+      "Short-season growers should prioritize early seed-producing varieties and allow time for seed filling and postharvest drying.",
+      "Humid climates can support vigorous growth but may increase disease, head-drying, and storage challenges."
     ]
   }
 },
@@ -393,70 +416,81 @@ const BCP_FEED_CROPS = {
 
   preferredSunHours: 8,
 
-  shadeToleranceScore: null,
+  shadeToleranceScore: 2,
 
-  afternoonShadeBenefitInHeat: null,
+  afternoonShadeBenefitInHeat: 2,
 
-  windToleranceScore: null,
-  lodgingRiskScore: null,
+  windToleranceScore: 3,
 
-  reflectedHeatToleranceScore: null,
+  lodgingRiskScore: 3,
 
-  airflowRequirementScore: null,
+  reflectedHeatToleranceScore: 4,
 
-  frostPocketSensitivityScore: null,
+  airflowRequirementScore: 4,
 
-  treeRootCompetitionToleranceScore: null,
+  frostPocketSensitivityScore: 4,
 
-  hardscapeConflictRiskScore: null,
+  treeRootCompetitionToleranceScore: 2,
 
-  structureConflictRiskScore: null,
+  hardscapeConflictRiskScore: 2,
 
-  utilityConflictRiskScore: null,
+  structureConflictRiskScore: 3,
 
-  fruitDropMessRiskScore: null,
+  utilityConflictRiskScore: 2,
 
-  stainingRiskScore: null,
+  fruitDropMessRiskScore: 1,
+
+  stainingRiskScore: 1,
 
   directFacts: {
-    preferredLight: "full-sun",
+    preferredLight:
+      "full-sun",
 
     productiveSunGuidance:
-      "At least 6 hours of direct sunlight, with approximately 8 hours preferred for strong growth and seed production.",
+      "At least 6 hours of direct sunlight, with approximately 8 hours preferred for stronger plant and seed-head production.",
 
     windExposureConcern: true,
 
+    varietyHeightRange:
+      "Dwarf cultivars may remain below approximately 3 feet, while giant cultivars may exceed 8 feet.",
+
+    stakingMayBeNeeded: true,
+
     notes: [
-      "Reduced sunlight may produce weaker stems, smaller heads, and lower seed production.",
-      "Tall or large-headed varieties may require a sheltered site or support where strong winds are common.",
-      "Good airflow is useful, but severe wind exposure may increase leaning, stalk breakage, or lodging.",
-      "Variety height strongly affects wind and structural risk."
+      "Sunflowers perform best in full sun.",
+      "Reduced light may weaken stems and reduce flower-head and seed production.",
+      "Dwarf and semi-dwarf varieties create less structural conflict than giant varieties.",
+      "Giant cultivars and plants carrying large seed heads may require staking or wind protection.",
+      "Good airflow can help leaf and head drying, but severe wind raises leaning and breakage risk.",
+      "Avoid placing tall Sunflowers where they will shade smaller crops or interfere with walkways, windows, utility access, or roof drainage.",
+      "Established tree roots can compete strongly for sunlight, water, nutrients, and rooting space."
     ]
   }
 },
 
       soil: {
   textureScores: {
-    heavyClay: null,
-    clayLoam: null,
-    loam: null,
-    sandyLoam: null,
-    verySandy: null,
-    rocky: null
+    heavyClay: 2,
+    clayLoam: 4,
+    loam: 5,
+    sandyLoam: 4,
+    verySandy: 3,
+    rocky: 2
   },
 
-  drainageRequirementScore: null,
+  drainageRequirementScore: 5,
 
-  temporaryWetToleranceScore: null,
+  temporaryWetToleranceScore: 2,
 
-  waterloggingSensitivityScore: null,
+  waterloggingSensitivityScore: 4,
 
   minimumSoilDepthIn: null,
-  preferredSoilDepthIn: null,
 
-  compactionToleranceScore: null,
+  preferredSoilDepthIn: 48,
 
-  establishmentInSodDifficultyScore: null,
+  compactionToleranceScore: 2,
+
+  establishmentInSodDifficultyScore: 4,
 
   preferredPHMinimum: 6.0,
   preferredPHMaximum: 7.5,
@@ -464,59 +498,95 @@ const BCP_FEED_CROPS = {
   survivalPHMinimum: null,
   survivalPHMaximum: null,
 
-  fertilityRequirementScore: null,
+  fertilityRequirementScore: 3,
 
-  nitrogenRequirementScore: null,
-  phosphorusRequirementScore: null,
-  potassiumRequirementScore: null,
+  nitrogenRequirementScore: 3,
+  phosphorusRequirementScore: 2,
+  potassiumRequirementScore: 3,
 
   benefitsFromInoculation: false,
   inoculantType: null,
 
   saltToleranceScore: null,
 
-  amendmentEffortScore: null,
+  amendmentEffortScore: 3,
 
   directFacts: {
-    preferredDrainage: "well-drained",
+    preferredDrainage:
+      "well-drained",
 
     adaptableTextures: [
-      "clay",
+      "clay loam",
+      "silty clay loam",
       "loam",
-      "sandy soil"
+      "sandy loam"
     ],
 
     preferredTexture:
-      "Fertile, well-drained loam or similar productive garden soil.",
+      "Well-drained soil with good water-holding capacity and unrestricted rooting depth.",
 
-    waterloggedSoilSuitable: false,
+    waterloggedSoilSuitable:
+      false,
+
+    effectiveRootDepthIn:
+      48,
+
+    deeperWaterExtractionPossible:
+      true,
+
+    soilPHSourceRanges: [
+      {
+        sourceContext:
+          "Northern Great Plains field production",
+
+        minimum: 6.5,
+        maximum: 7.5
+      },
+
+      {
+        sourceContext:
+          "Minnesota home garden guidance",
+
+        minimum: 6.0,
+        maximum: 6.8
+      }
+    ],
 
     notes: [
-      "Sunflowers can grow in several soil textures when drainage and rooting conditions are adequate.",
-      "Standing water and persistently saturated soil increase root and disease problems.",
-      "Deep or unrestricted soil supports the crop's taproot and improves access to moisture.",
-      "Compacted soil, shallow barriers, and strong tree-root competition may restrict root development.",
-      "The stored pH values represent a commonly recommended productive range, not absolute survival limits."
+      "Sunflower is adapted to several soil textures but performs best where drainage and water-holding capacity are both favorable.",
+      "Loam, silt loam, clay loam, and silty clay loam can provide strong water-holding capacity for the deep root system.",
+      "Sandy loam can perform well but may require more dependable watering and fertility management.",
+      "Heavy clay receives a low score when slow drainage, crusting, or compaction restricts establishment and roots.",
+      "An effective rooting depth of approximately 4 feet helps established plants reach stored soil moisture.",
+      "Shallow rock, hardpan, dense compaction, and established tree roots can reduce the benefit of deep rooting.",
+      "The stored productive pH range of 6.0 to 7.5 combines compatible Extension guidance; it is not an absolute survival range.",
+      "Sunflower does not require legume inoculation."
     ]
   }
 },
 
-      water: {
-  overallWaterRequirementLevel: null,
+     water: {
+  overallWaterRequirementLevel:
+    "moderate",
 
-  germinationWaterNeedLevel: null,
+  germinationWaterNeedLevel:
+    "moderate",
 
-  establishmentWaterNeedLevel: null,
+  establishmentWaterNeedLevel:
+    "moderate",
 
-  matureWaterNeedLevel: null,
+  matureWaterNeedLevel:
+    "moderate",
 
-  floweringWaterNeedLevel: null,
+  floweringWaterNeedLevel:
+    "high",
 
-  harvestDevelopmentWaterNeedLevel: null,
+  harvestDevelopmentWaterNeedLevel:
+    "high",
 
-  droughtSurvivalScore: null,
+  droughtSurvivalScore: 4,
 
-  droughtYieldRetentionScore: null,
+  droughtYieldRetentionScore: 3,
 
   criticalGrowthStages: [
     "germination",
@@ -526,40 +596,62 @@ const BCP_FEED_CROPS = {
     "seed-filling"
   ],
 
-  criticalStageWaterImportanceScore: null,
+  criticalStageWaterImportanceScore: 4,
 
-  overwateringSensitivityScore: null,
+  overwateringSensitivityScore: 3,
 
-  waterloggingSensitivityScore: null,
+  waterloggingSensitivityScore: 4,
 
-  dripIrrigationBenefitScore: null,
+  dripIrrigationBenefitScore: 4,
 
-  mulchBenefitScore: null,
+  mulchBenefitScore: 4,
 
-  suitableForRainfallOnlyScore: null,
+  suitableForRainfallOnlyScore: 3,
 
-  suitableForLimitedIrrigationScore: null,
+  suitableForLimitedIrrigationScore: 4,
 
-  containerDryingRiskScore: null,
+  containerDryingRiskScore: 4,
 
   establishmentYearsRequiringExtraWater: 0,
 
   directFacts: {
-    droughtTolerantAfterEstablishment: true,
+    droughtTolerantAfterEstablishment:
+      true,
 
-    establishmentMoistureImportant: true,
+    establishmentMoistureImportant:
+      true,
 
-    regularMoistureImprovesProduction: true,
+    regularMoistureImprovesProduction:
+      true,
 
-    standingWaterSuitable: false,
+    standingWaterSuitable:
+      false,
+
+    effectiveRootDepthIn:
+      48,
+
+    irrigatedSeasonalWaterUseInches:
+      19,
+
+    irrigationResponse:
+      "Yield can respond to irrigation, particularly during hot and dry seasons.",
+
+    irrigationDiseaseTradeoff:
+      "Additional irrigation may increase some disease risks, including white mold under conducive conditions.",
+
+    criticalWaterWindow:
+      "Regular watering around flowering supports root growth and top-heavy flowering plants; productive seed filling also benefits from adequate moisture.",
 
     notes: [
-      "Seed and young plants need dependable moisture during germination and establishment.",
-      "Established sunflowers can tolerate dry periods better than many common garden crops.",
-      "Drought tolerance does not mean that seed yield is unaffected by moisture stress.",
-      "Moisture during bud formation, flowering, and seed filling supports stronger production.",
-      "Soil should remain adequately moist but not continuously saturated.",
-      "Container-grown plants normally require more frequent watering than in-ground plants."
+      "Sunflower is widely described as drought tolerant because its deep roots can explore a large soil volume.",
+      "Drought survival does not guarantee maximum seed yield.",
+      "The crop can use substantial seasonal water when it is available.",
+      "Sunflower generally uses less seasonal water than Corn under the NDSU comparison but more than short-season small grains.",
+      "Dryland plants use stored soil moisture and growing-season rainfall.",
+      "Irrigation can increase yield in dry years, although the response varies and excessive moisture may increase disease risk.",
+      "Moisture conservation through weed control, mulch, residue, and good infiltration supports production.",
+      "Container-grown plants have less accessible soil volume and may dry much faster than in-ground plants.",
+      "Soil should remain adequately moist during key stages without remaining continuously saturated."
     ]
   }
 },
@@ -587,7 +679,7 @@ const BCP_FEED_CROPS = {
   spaceTypeScores: {
     inGround: 5,
     raisedBed: 4,
-    container: null,
+    container: 2,
     fenceLine: 5,
     buildingEdge: 4,
     unusedLawn: 4,
@@ -600,6 +692,9 @@ const BCP_FEED_CROPS = {
   },
 
   minimumContainerGallons: null,
+
+  containerUseLimitation:
+  "Dwarf cultivars may grow successfully in containers, but container production is generally inefficient for substantial chicken-feed seed harvests.",
 
   minimumRaisedBedDepthIn: null,
 
@@ -1699,7 +1794,15 @@ const BCP_FEED_CROPS = {
 "seasonalRoles.directFacts.physiologicalMaturityStage",
 "seasonalRoles.directFacts.maturityIndicators",
 "seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMinimum",
-"seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMaximum"
+"seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMaximum",
+"climate.minimumSoilTemperatureF",
+"climate.referenceDaysToPhysiologicalMaturity",
+"climate.directFacts.baseGrowingDegreeTemperatureF",
+"soil.directFacts.effectiveRootDepthIn",
+"soil.directFacts.soilPHSourceRanges",
+"water.directFacts.irrigatedSeasonalWaterUseInches",
+"water.directFacts.irrigationResponse",
+"space.directFacts.containerCultivarFeasibility"
         ],
 
         derivedFields: [
@@ -1754,7 +1857,49 @@ const BCP_FEED_CROPS = {
 "risks.storedInsectRiskScore",
 "risks.cropFailureRiskScore",
 "seasonalRoles.plantingWindows",
-"seasonalRoles.harvestWindows"
+"seasonalRoles.harvestWindows",
+"climate.heatToleranceScore",
+"climate.droughtClimateToleranceScore",
+"climate.humidityToleranceScore",
+"climate.coolSummerToleranceScore",
+"climate.frostSensitivityScore",
+"climate.indoorSeedStartingBenefitScore",
+"site.shadeToleranceScore",
+"site.afternoonShadeBenefitInHeat",
+"site.windToleranceScore",
+"site.lodgingRiskScore",
+"site.reflectedHeatToleranceScore",
+"site.airflowRequirementScore",
+"site.frostPocketSensitivityScore",
+"site.treeRootCompetitionToleranceScore",
+"soil.textureScores",
+"soil.drainageRequirementScore",
+"soil.temporaryWetToleranceScore",
+"soil.waterloggingSensitivityScore",
+"soil.preferredSoilDepthIn",
+"soil.compactionToleranceScore",
+"soil.establishmentInSodDifficultyScore",
+"soil.fertilityRequirementScore",
+"soil.nitrogenRequirementScore",
+"soil.phosphorusRequirementScore",
+"soil.potassiumRequirementScore",
+"water.overallWaterRequirementLevel",
+"water.germinationWaterNeedLevel",
+"water.establishmentWaterNeedLevel",
+"water.matureWaterNeedLevel",
+"water.floweringWaterNeedLevel",
+"water.harvestDevelopmentWaterNeedLevel",
+"water.droughtSurvivalScore",
+"water.droughtYieldRetentionScore",
+"water.criticalStageWaterImportanceScore",
+"water.overwateringSensitivityScore",
+"water.waterloggingSensitivityScore",
+"water.dripIrrigationBenefitScore",
+"water.mulchBenefitScore",
+"water.suitableForRainfallOnlyScore",
+"water.suitableForLimitedIrrigationScore",
+"water.containerDryingRiskScore",
+"space.spaceTypeScores.container"
         ],
 
         uncertainFields: [
@@ -1771,6 +1916,9 @@ const BCP_FEED_CROPS = {
              "space.spaceTypeScores.container",
              "space.minimumContainerGallons",
              "space.minimumRaisedBedDepthIn",
+             "soil.minimumSoilDepthIn",
+             "soil.saltToleranceScore",
+             "flock.portionGuidance",
              "usePaths.fresh-mature-seed-head.storageDurationCategory",
              "usePaths.whole-dried-seed-head.storageDurationCategory",
              "usePaths.loose-dried-seed.storageDurationCategory",
@@ -1779,31 +1927,29 @@ const BCP_FEED_CROPS = {
              "usePaths.loose-dried-seed.moldRiskScore",
              "usePaths.loose-dried-seed.storedInsectRiskScore",
              "labor.wildlifeProtectionEaseScore",
-"cost.protectionCostLevel",
-"goals.feedReductionScore",
-"goals.productionReliabilityScore",
-"risks.wildlife.deer",
-"risks.wildlife.raccoons",
-"risks.wildlife.squirrels",
-"risks.wildlife.rabbits",
-"risks.wildlife.rodents",
-"risks.wildlife.groundhogs",
-"risks.insectsRiskScore",
-"risks.diseaseRiskScore",
-"risks.fieldMoldRiskScore",
-"risks.spoilageSpeedRiskScore"
+             "cost.protectionCostLevel",
+             "goals.feedReductionScore",
+             "goals.productionReliabilityScore",
+             "risks.wildlife.deer",
+             "risks.wildlife.raccoons",
+             "risks.wildlife.squirrels",
+             "risks.wildlife.rabbits",
+             "risks.wildlife.rodents",
+             "risks.wildlife.groundhogs",
+             "risks.insectsRiskScore",
+             "risks.diseaseRiskScore",
+             "risks.fieldMoldRiskScore",
+             "risks.spoilageSpeedRiskScore"
         ],
 
         missingFields: [
-          "climate.plannerRatings",
-          "site.plannerRatings",
-          "soil.textureScores",
-          "soil.plannerRatings",
-          "water.plannerRatings",
-          "space.minimumAreaResearch",
-          "space.containerResearch",
-          "flock.portionGuidance",
-          "flock.usePathTesting"
+         "space.minimumTrialAreaSqFt",
+  "space.minimumUsefulAreaSqFt",
+  "space.preferredProductionAreaSqFt",
+  "space.minimumContainerGallons",
+  "space.minimumRaisedBedDepthIn",
+  "flock.portionGuidance",
+  "flock.usePathTesting"
         
         ],
 
