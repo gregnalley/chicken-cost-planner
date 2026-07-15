@@ -4503,18 +4503,19 @@ const PROFILE_MATRIX_EXPECTATIONS =
           "Tests long hot-humid seasons, drying difficulty, disease pressure, bird pressure, and access to multiple harvest forms.",
 
         expectedTopCropIds: [
-          "CROP-COWPEA",
-          "CROP-SUNFLOWER"
-        ],
+  "CROP-COWPEA",
+  "CROP-KALE-COLLARDS",
+  "CROP-SUNFLOWER"
+],
 
-        expectedTopThreeCropIds: [
-          "CROP-COWPEA",
-          "CROP-SUNFLOWER",
-          "CROP-PUMPKIN-WINTER-SQUASH"
-        ],
+expectedTopThreeCropIds: [
+  "CROP-COWPEA",
+  "CROP-KALE-COLLARDS",
+  "CROP-SUNFLOWER"
+],
 
-        notes:
-          "Cowpea should remain agronomically strong. Humidity should reduce confidence in dried grain and seed-head paths."
+notes:
+  "Cowpeas or Kale and Collard Greens should normally lead. Hot-humid conditions and the lack of dependable drying should reduce confidence in stored grain and dried seed-head paths. Sunflowers may remain competitive through an immediate fresh-head path."
       }),
 
     "PROFILE-CONTAINER-RENTAL":
