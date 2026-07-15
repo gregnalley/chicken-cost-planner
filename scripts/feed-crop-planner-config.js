@@ -5007,17 +5007,6 @@ notes:
   });
 
 const PLANNER_CONFIG = Object.freeze({
-  plannerVersion: "1.0.0",
-
-  cropSchemaVersion: "1.0.0",
-
-  releaseStatus: "stable",
-
-  releaseNotes:
-    "Initial stable feed-crop recommendation engine with 10 crops and 23 passing regression profiles.",
-});
-
-const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
     cropSchemaVersion: "1.0.0",
 
