@@ -2034,7 +2034,8 @@ function scoreGenericGoalFit(
   answers
 ) {
   const selectedGoals =
-    answers.preferences?.plannerGoals ||
+    answers.preferences
+      ?.plannerGoals ||
     [];
 
   const priorities =
@@ -2043,15 +2044,24 @@ function scoreGenericGoalFit(
     [];
 
   const goalData =
-    crop.plannerData?.goals || {};
+    crop.plannerData
+      ?.goals ||
+    {};
 
   const priorityWeights = {
-    1: 1,
-    2: 0.7,
-    3: 0.45
+    1: 6,
+    2: 3,
+    3: 1.5
   };
 
+  const unrankedGoalWeight =
+    0.35;
+
   const factors = [];
+
+  const matchedGoals = [];
+
+  const weakPriorityGoals = [];
 
   selectedGoals.forEach(goalId => {
     const fieldName =
@@ -2061,12 +2071,17 @@ function scoreGenericGoalFit(
       return;
     }
 
+    const rawCropScore =
+      goalData[fieldName];
+
     const cropScore =
       convertFivePointToPercent(
-        goalData[fieldName]
+        rawCropScore
       );
 
-    if (!Number.isFinite(cropScore)) {
+    if (
+      !Number.isFinite(cropScore)
+    ) {
       return;
     }
 
@@ -2076,29 +2091,139 @@ function scoreGenericGoalFit(
           record.goal === goalId
       );
 
+    const rank =
+      priorityRecord?.rank;
+
     const weight =
       priorityRecord
-        ? priorityWeights[
-            priorityRecord.rank
-          ] || 0.2
-        : 0.2;
+        ? (
+            priorityWeights[rank] ||
+            unrankedGoalWeight
+          )
+        : unrankedGoalWeight;
 
     factors.push({
       value: cropScore,
       weight
     });
+
+    matchedGoals.push({
+      goalId,
+      rank:
+        Number.isFinite(rank)
+          ? rank
+          : null,
+      cropScore,
+      weight
+    });
+
+    if (
+      Number.isFinite(rank) &&
+      rank <= 2 &&
+      rawCropScore <= 2
+    ) {
+      weakPriorityGoals.push({
+        goalId,
+        rank,
+        rawCropScore
+      });
+    }
   });
 
-  const score =
-    weightedAverageKnown(factors);
+  let score =
+    weightedAverageKnown(
+      factors
+    );
+
+  if (
+    !Number.isFinite(score)
+  ) {
+    return {
+      score: null,
+
+      reason:
+        "No compatible crop-goal ratings were available.",
+
+      matchedGoals: [],
+
+      weakPriorityGoals: []
+    };
+  }
+
+  const rankOneGoal =
+    matchedGoals.find(
+      goal =>
+        goal.rank === 1
+    );
+
+  const rankTwoGoal =
+    matchedGoals.find(
+      goal =>
+        goal.rank === 2
+    );
+
+  if (rankOneGoal) {
+    if (
+      rankOneGoal.cropScore >= 80
+    ) {
+      score += 6;
+    } else if (
+      rankOneGoal.cropScore <= 40
+    ) {
+      score -= 18;
+    }
+  }
+
+  if (rankTwoGoal) {
+    if (
+      rankTwoGoal.cropScore >= 80
+    ) {
+      score += 3;
+    } else if (
+      rankTwoGoal.cropScore <= 40
+    ) {
+      score -= 8;
+    }
+  }
+
+  if (
+    weakPriorityGoals.length > 0
+  ) {
+    const priorityMismatchPenalty =
+      weakPriorityGoals.reduce(
+        (
+          total,
+          goal
+        ) => {
+          if (goal.rank === 1) {
+            return total + 12;
+          }
+
+          if (goal.rank === 2) {
+            return total + 6;
+          }
+
+          return total;
+        },
+        0
+      );
+
+    score -=
+      priorityMismatchPenalty;
+  }
 
   return {
-    score: clampScore(score),
+    score:
+      clampScore(score),
 
     reason:
       factors.length > 0
-        ? "The crop was scored against the visitor's selected and ranked goals."
-        : "No compatible crop-goal ratings were available."
+        ? "The crop was scored primarily against the visitor's ranked goals, with much lower influence from unranked goals."
+        : "No compatible crop-goal ratings were available.",
+
+    matchedGoals,
+
+    weakPriorityGoals
   };
 }
 
