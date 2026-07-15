@@ -4457,14 +4457,15 @@ const PROFILE_MATRIX_EXPECTATIONS =
           "Tests beginner friendliness, sunny raised-bed suitability, enrichment, pollinator value, and low-processing whole-head harvests.",
 
         expectedTopCropIds: [
-          "CROP-SUNFLOWER",
-          "CROP-KALE-COLLARDS"
+          "CROP-COWPEA",
+          "CROP-KALE-COLLARDS",
+          "CROP-SUNFLOWER"
         ],
 
         expectedTopThreeCropIds: [
-          "CROP-SUNFLOWER",
+          "CROP-COWPEA",
           "CROP-KALE-COLLARDS",
-          "CROP-COWPEA"
+          "CROP-SUNFLOWER"
         ],
 
         notes:
