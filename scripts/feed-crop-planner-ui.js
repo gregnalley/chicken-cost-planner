@@ -830,9 +830,19 @@ function renderProfileMatrix() {
             profileResult.profileId
           ];
 
-        const actualLeader =
-          profileResult.cropResults[0] ||
-          null;
+        const eligibleCropResults =
+  profileResult.cropResults
+    .filter(cropResult => {
+      return (
+        cropResult.finalScore > 0 &&
+        cropResult.bestUsePath !== null &&
+        cropResult.noEligibleUsePath !== true
+      );
+    });
+
+const actualLeader =
+  eligibleCropResults[0] ||
+  null;
 
         if (!expectation) {
           unavailableCount += 1;
@@ -866,7 +876,7 @@ function renderProfileMatrix() {
                 ${
                   actualLeader
                     ? `${actualLeader.cropName} (${actualLeader.finalScore}%)`
-                    : "Unavailable"
+                    : "No eligible recommendation"
                 }
               </td>
 
@@ -875,7 +885,7 @@ function renderProfileMatrix() {
                   actualLeader
                     ?.bestUsePath
                     ?.label ||
-                  "Unavailable"
+                  "No eligible recommendation"
                 }
               </td>
 
@@ -902,11 +912,11 @@ function renderProfileMatrix() {
           null;
 
         const actualTopThreeIds =
-          profileResult.cropResults
-            .slice(0, 3)
-            .map(result =>
-              result.cropId
-            );
+  eligibleCropResults
+    .slice(0, 3)
+    .map(result =>
+      result.cropId
+    );
 
         const leaderPasses =
           actualLeaderId &&
