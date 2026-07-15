@@ -2989,6 +2989,448 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
+  }),
+
+  // ==================================================
+  // FIELD CORN TEST PROFILES
+  // ==================================================
+
+  // --------------------------------------------------
+  // Profile 20: Large Irrigated Field-Corn Grain Block
+  // ID: PROFILE-FIELD-CORN-LARGE-GRAIN-BLOCK
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-FIELD-CORN-LARGE-GRAIN-BLOCK",
+
+    label:
+      "Large Irrigated Field-Corn Grain Block",
+
+    description:
+      "An experienced homestead grower with a large sunny field, fertile deep soil, dependable irrigation, compact block planting, protected drying space, shelling equipment, and long-term grain-storage goals.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 24,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 2400,
+
+        availableSpaceTypes: [
+          "open-field",
+          "in-ground",
+          "unused-lawn"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle",
+
+        overflowOptions: [
+          "open-field"
+        ],
+
+        plantBehaviorRestrictions: [],
+
+        blockPlantingAvailable:
+          true,
+
+        availableBlockRows: 8
+      },
+
+      site: {
+        directSunHoursExact: 10,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "clay-loam",
+
+        soilDrainage:
+          "well-drained",
+
+        soilDepthCategory:
+          "deep",
+
+        soilPHCategory:
+          "near-neutral",
+
+        fertilityLevel:
+          "high"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "very-reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+
+        weeklyCropTime:
+          "5-plus-hours",
+
+        acceptedProcessingTasks: [
+          "harvest-ears",
+          "dry",
+          "shell-corn",
+          "clean-sort",
+          "winnow",
+          "crack-grain"
+        ],
+
+        dryingCapability:
+          "large-covered",
+
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays",
+          "rodent-proof"
+        ],
+
+        ownedEquipment: [
+          "fencing",
+          "bird-netting",
+          "corn-sheller",
+          "grain-cracker",
+          "drying-rack",
+          "fan",
+          "moisture-meter",
+          "metal-grain-can",
+          "food-safe-bucket",
+          "drip-irrigation"
+        ],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dried-corn-ears",
+          "whole-corn-ears",
+          "dry-grain",
+          "corn-kernels",
+          "whole-grain",
+          "stored-grain",
+          "cracked-grain",
+          "processed-corn"
+        ],
+
+        harvestPatternPreference:
+          "major",
+
+        desiredStorageDuration:
+          "6-12-months",
+
+        minimalPreparationPriority:
+          "low",
+
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        dryCropContainerType:
+          "metal-grain-can",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "reduce-feed-use",
+          "high-energy",
+          "winter-storage",
+          "enrichment",
+          "seed-saving",
+          "self-reliance",
+          "compost-biomass"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "high-energy",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "winter-storage",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "reduce-feed-use",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "energy",
+
+        beginnerFriendlinessPriority:
+          "low",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "raccoons",
+          "deer",
+          "wild-birds",
+          "rodents"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  // --------------------------------------------------
+  // Profile 21: Small Limited-Water Corn Rejection Plan
+  // ID: PROFILE-FIELD-CORN-SMALL-LIMITED-WATER
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-FIELD-CORN-SMALL-LIMITED-WATER",
+
+    label:
+      "Small Limited-Water Corn Rejection Plan",
+
+    description:
+      "A beginner with a very small narrow planting area, no compact block, limited irrigation, sandy soil, little labor, and a need for fast low-processing chicken feed.",
+
+    answers: {
+      climate: {
+        climateType:
+          "hot-dry",
+
+        frostFreeSeasonRange:
+          "150-179"
+      },
+
+      flock: {
+        flockSize: 5,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 40,
+
+        availableSpaceTypes: [
+          "containers",
+          "raised-bed",
+          "fence-line"
+        ],
+
+        largestAreaShape:
+          "long-strip",
+
+        containerCount: 4,
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "must-remain-small",
+          "no-block-planting",
+          "no-tall-screening"
+        ],
+
+        blockPlantingAvailable:
+          false,
+
+        availableBlockRows: 1
+      },
+
+      site: {
+        directSunHoursExact: 7,
+
+        windExposure:
+          "high"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "very-sandy",
+
+        soilDrainage:
+          "very-fast",
+
+        soilDepthCategory:
+          "shallow",
+
+        soilPHCategory:
+          "unknown",
+
+        fertilityLevel:
+          "low"
+      },
+
+      water: {
+        waterReliability:
+          "limited",
+
+        wateringFrequencyPreference:
+          "weekly-or-less",
+
+        waterConservationPriority:
+          "very-high",
+
+        criticalStageWaterAvailability:
+          "unreliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "pick-produce",
+          "cut-leaves"
+        ],
+
+        dryingCapability:
+          "none",
+
+        dryingFacilities: [],
+
+        ownedEquipment: [],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-forage",
+          "fresh-produce"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        desiredStorageDuration:
+          "immediate",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        storageHumidity:
+          "usually-dry",
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "fast-value",
+          "limited-irrigation",
+          "enrichment"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "limited-irrigation",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "fast-value",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
 
   // ==================================================
@@ -2996,6 +3438,7 @@ const HARVEST_FREQUENCY_CATEGORIES =
   // ==================================================
 
 ]);
+
 
 
 
@@ -3432,10 +3875,58 @@ const PROFILE_MATRIX_EXPECTATIONS =
 
         notes:
           "Mulberry should not lead. Permanent-tree requirements, long establishment time, mature size, and poor container efficiency should favor fast reversible fresh-green crops."
+ 
+                }),
+
+    // ==================================================
+    // FIELD CORN PROFILE MATRIX EXPECTATIONS
+    // ==================================================
+
+    "PROFILE-FIELD-CORN-LARGE-GRAIN-BLOCK":
+      Object.freeze({
+        profileNumber: 20,
+
+        purpose:
+          "Tests a large, fertile, full-sun Field Corn block with dependable irrigation, compact wind-pollination layout, protected drying, shelling equipment, grain processing, and long-term energy-storage goals.",
+
+        expectedTopCropIds: [
+          "CROP-FIELD-CORN"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-FIELD-CORN",
+          "CROP-PROSO-MILLET",
+          "CROP-GRAIN-SORGHUM"
+        ],
+
+        notes:
+          "Field Corn should lead because the profile provides the area, block layout, fertility, irrigation, drying capability, shelling equipment, pest-resistant storage, and high-energy grain goals needed for successful backyard Corn production."
+      }),
+
+    "PROFILE-FIELD-CORN-SMALL-LIMITED-WATER":
+      Object.freeze({
+        profileNumber: 21,
+
+        purpose:
+          "Tests conditions that should strongly reject Field Corn: only forty square feet, a narrow one-row layout, no compact pollination block, sandy shallow soil, high wind, limited irrigation, no drying capability, little labor, and a need for immediate fresh feed.",
+
+        expectedTopCropIds: [
+          "CROP-COWPEA",
+          "CROP-KALE-COLLARDS",
+          "CROP-PROSO-MILLET"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-COWPEA",
+          "CROP-KALE-COLLARDS",
+          "CROP-PROSO-MILLET"
+        ],
+
+        notes:
+          "Field Corn should not lead. Its block-pollination requirement, tall growth, water demand during tasseling and silking, grain-drying needs, and poor container efficiency should favor smaller or more drought-tolerant crops."
       })
 
   });
-
 
 const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
