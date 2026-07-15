@@ -8592,6 +8592,8 @@ plannerData: {
     isPerennial: false,
     isTreeOrShrub: false,
 
+    commonlyGrownAsAnnual: true,
+
     yearsToFirstUsefulHarvest: 0,
     yearsToFullProduction: 0,
     expectedUsefulLifeYears: 1,
