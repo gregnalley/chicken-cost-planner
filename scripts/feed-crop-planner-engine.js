@@ -1577,6 +1577,12 @@ function getCropGoalFieldName(goalId) {
     "fast-value":
       "fastestValueScore",
 
+    "short-season":
+      "fastestValueScore",
+
+    "limited-irrigation":
+      "resilienceScore", 
+
     "cool-season-production":
       "productionReliabilityScore",  
 

@@ -1904,7 +1904,361 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
-    
+
+      }),
+
+  Object.freeze({
+    id:
+      "PROFILE-MILLET-SHORT-SEASON-DRY",
+
+    label:
+      "Short-Season Limited-Water Grain Plan",
+
+    description:
+      "A grower with a short frost-free season, sandy soil, limited irrigation, and a goal of producing a storable energy grain.",
+
+    answers: {
+      climate: {
+        climateType:
+          "cold-short-summer",
+
+        frostFreeSeasonRange:
+          "90-119"
+      },
+
+      flock: {
+        flockSize: 10,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "limited-weekly"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 300,
+
+        availableSpaceTypes: [
+          "in-ground",
+          "open-field"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 9,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "sandy-loam",
+
+        soilDrainage:
+          "very-fast"
+      },
+
+      water: {
+        waterReliability:
+          "frequently-limited",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "top-priority",
+
+        criticalStageWaterAvailability:
+          "occasional"
+      },
+
+      labor: {
+        gardeningExperience:
+          "intermediate",
+
+        weeklyCropTime:
+          "1-2-hours",
+
+        acceptedProcessingTasks: [
+          "dry",
+          "thresh",
+          "winnow",
+          "clean-sort"
+        ],
+
+        dryingCapability:
+          "large-covered",
+
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays"
+        ],
+
+        ownedEquipment: [
+          "drying-screen",
+          "fan",
+          "food-safe-bucket"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dry-grain",
+          "millet-grain"
+        ],
+
+        harvestPatternPreference:
+          "major",
+
+        desiredStorageDuration:
+          "6-12-months",
+
+        minimalPreparationPriority:
+          "low",
+
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        dryCropContainerType:
+          "airtight-food-safe",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "short-season",
+          "limited-irrigation",
+          "high-energy",
+          "winter-storage",
+          "self-reliance"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "short-season",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "limited-irrigation",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "high-energy",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "energy",
+
+        beginnerFriendlinessPriority:
+          "moderate",
+
+        wildlifePestPressure: [
+          "wild-birds",
+          "rodents"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id:
+      "PROFILE-MILLET-WHOLE-PANICLE",
+
+    label:
+      "Low-Processing Whole-Panicle Plan",
+
+    description:
+      "A beginner who wants easy flock enrichment from whole seed heads and is willing to dry panicles but does not want to thresh or winnow grain.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "150-179"
+      },
+
+      flock: {
+        flockSize: 6,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 100,
+
+        availableSpaceTypes: [
+          "in-ground"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 8,
+
+        windExposure:
+          "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "1-2-hours",
+
+        acceptedProcessingTasks: [
+          "dry",
+          "clean-sort"
+        ],
+
+        dryingCapability:
+          "small-racks",
+
+        dryingFacilities: [
+          "covered-rack",
+          "screens-trays"
+        ],
+
+        ownedEquipment: [
+          "hand-pruners",
+          "drying-rack",
+          "drying-screen"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dried-seed-heads",
+          "millet-panicles"
+        ],
+
+        harvestPatternPreference:
+          "major",
+
+        desiredStorageDuration:
+          "3-6-months",
+
+        minimalPreparationPriority:
+          "high",
+
+        dryStorageLocations: [
+          "garage"
+        ],
+
+        storageHumidity:
+          "usually-dry",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "enrichment",
+          "winter-storage",
+          "high-energy",
+          "fast-value"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "enrichment",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "winter-storage",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "fast-value",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "enrichment",
+
+        beginnerFriendlinessPriority:
+          "high",
+
+        wildlifePestPressure: [
+          "wild-birds"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+
   });
 
   const PLANNER_CONFIG = Object.freeze({
