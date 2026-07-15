@@ -3657,6 +3657,34 @@ function scoreGenericUsePath(
     usePath.harvestProducts ||
     [];
 
+    const cropSpaceData =
+    crop.plannerData
+      ?.space ||
+    {};
+
+  const plantBehaviorRestrictions =
+    answers.space
+      ?.plantBehaviorRestrictions ||
+    [];
+
+  const overflowOptions =
+    answers.space
+      ?.overflowOptions ||
+    [];
+
+  if (
+    cropSpaceData
+      .vineSpreadRequired === true &&
+    plantBehaviorRestrictions.includes(
+      "no-vines-outside-bed"
+    ) &&
+    overflowOptions.length === 0
+  ) {
+    hardFailures.push(
+      "This crop requires vine-spread space, but the visitor prohibits vines outside the planting bed and has no overflow area."
+    );
+  }
+
     const productMatchAnalysis =
     analyzeHarvestProductMatch(
       harvestProducts,
