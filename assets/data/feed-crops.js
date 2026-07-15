@@ -294,7 +294,7 @@ const BCP_FEED_CROPS = {
         plannerData: {
       schemaVersion: "1.0.0",
 
-      developmentStatus: "testing",
+      developmentStatus: "ready",
 
       identity: {
         plannerName: "Sunflowers",
