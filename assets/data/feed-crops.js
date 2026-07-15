@@ -14824,11 +14824,2033 @@ plannerData: {
         "Calculate scores only after other perennial tree and shrub crops have comparable evidence.",
         "Plant-density fields remain null because mulberry size and spacing vary substantially among full-sized trees, dwarf cultivars, hedges, pollards, and coppiced forage systems."
 
-      ]
+        ]
+    },
+
+    plannerData: {
+      schemaVersion:
+        "1.0.0",
+
+      developmentStatus:
+        "testing",
+
+      identity: {
+        plannerName:
+          "Mulberry",
+
+        shortLabel:
+          "Mulberry",
+
+        icon:
+          "🌳",
+
+        cropCategory:
+          "perennial-tree-forage",
+
+        primaryFeedCategory:
+          "tree-forage-and-fruit",
+
+        guideUrl:
+          "growing-mulberry-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "perennial-tree",
+
+        isAnnual: false,
+        isBiennial: false,
+        isPerennial: true,
+        isTreeOrShrub: true,
+
+        yearsToFirstUsefulHarvest: 1,
+
+        yearsToFullProduction: 5,
+
+        expectedUsefulLifeYears:
+          null,
+
+        regrowsAfterHarvest: true,
+
+        permanentPlantingRequired: true,
+
+        reversibleAfterOneSeason: false
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "temperate",
+          "hot-humid",
+          "mild-winter"
+        ],
+
+        challengingClimateTypes: [],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          null,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore: 4,
+
+        droughtClimateToleranceScore: 4,
+
+        humidityToleranceScore: 4,
+
+        coolSummerToleranceScore: 4,
+
+        frostSensitivityScore: 2,
+
+        winterHardinessRequired: true,
+
+        seasonExtensionBenefits: [
+          "Dormant nursery trees can be planted during suitable fall, winter, or early-spring windows.",
+          "Temporary irrigation improves establishment during the first growing seasons.",
+          "Young trees may benefit from trunk guards and temporary protection from severe cold, rodents, deer, and poultry.",
+          "Cultivar selection is more important than temporary season extension for long-term success."
+        ],
+
+        indoorSeedStartingBenefitScore: 1,
+
+        directFacts: {
+          seasonType:
+            "deciduous-perennial-tree",
+
+          frostSensitive:
+            false,
+
+          commonlyDirectSeeded:
+            false,
+
+          winterDormancyPossible:
+            true,
+
+          heatDormancyPossible:
+            false,
+
+          longLivedPerennial:
+            true,
+
+          cultivarAdaptationHighlyVariable:
+            true,
+
+          notes: [
+            "Mulberries are deciduous perennial trees or large shrubs.",
+            "Cold hardiness varies substantially among species, hybrids, and named cultivars.",
+            "Native red Mulberry, White Mulberry, Black Mulberry, and hybrids should not be treated as identical.",
+            "Established trees tolerate summer heat well in many regions.",
+            "Young trees require more dependable moisture and protection than established trees.",
+            "Dormant trees tolerate winter cold better than active new growth.",
+            "Late spring frost can damage tender growth or flowers even when the tree survives.",
+            "The planner does not use frost-free days or annual days-to-maturity because Mulberry is managed as a permanent woody crop.",
+            "Local cultivar performance should be verified before planting."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours: 4,
+
+        productiveMinimumSunHours: 6,
+
+        preferredSunHours: 8,
+
+        shadeToleranceScore: 3,
+
+        afternoonShadeBenefitInHeat: 2,
+
+        windToleranceScore: 4,
+
+        lodgingRiskScore: 1,
+
+        reflectedHeatToleranceScore: 4,
+
+        airflowRequirementScore: 3,
+
+        frostPocketSensitivityScore: 3,
+
+        treeRootCompetitionToleranceScore: 4,
+
+        hardscapeConflictRiskScore: 5,
+
+        structureConflictRiskScore: 5,
+
+        utilityConflictRiskScore: 5,
+
+        fruitDropMessRiskScore: 5,
+
+        stainingRiskScore: 5,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight, with full sun preferred for dependable fruiting, dense foliage, and strong annual growth.",
+
+          windExposureConcern:
+            true,
+
+          growthHabit:
+            "deciduous-tree-or-large-shrub",
+
+          matureHeightFtMinimum: 10,
+
+          matureHeightFtMaximum: 60,
+
+          floweringPollinatorTraffic:
+            false,
+
+          fruitDropTrafficConcern:
+            true,
+
+          notes: [
+            "Full sun supports the strongest fruit and leaf production.",
+            "Partial shade may support survival and foliage but can reduce fruiting.",
+            "Tree size varies from compact dwarf cultivars to trees exceeding 30 to 60 feet.",
+            "Mulberry should be located away from foundations, roofs, septic systems, power lines, vehicles, patios, sidewalks, and other conflict areas.",
+            "Dark fruit can stain pavement, furniture, vehicles, clothing, and poultry structures.",
+            "Fallen fruit can attract flies, wasps, wildlife, and other animals.",
+            "Branches and fruit may fall beyond the original planting footprint.",
+            "Pruning, pollarding, coppicing, or dwarf cultivar selection can reduce—but not eliminate—space conflicts.",
+            "The mature site should be evaluated before planting rather than after the tree becomes established."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay: 3,
+          clayLoam: 4,
+          loam: 5,
+          sandyLoam: 5,
+          verySandy: 3,
+          rocky: 2
+        },
+
+        drainageRequirementScore: 4,
+
+        temporaryWetToleranceScore: 2,
+
+        waterloggingSensitivityScore: 4,
+
+        minimumSoilDepthIn:
+          null,
+
+        preferredSoilDepthIn: 36,
+
+        compactionToleranceScore: 3,
+
+        establishmentInSodDifficultyScore: 3,
+
+        preferredPHMinimum: 5.5,
+
+        preferredPHMaximum: 7.5,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore: 3,
+
+        nitrogenRequirementScore: 3,
+
+        phosphorusRequirementScore: 3,
+
+        potassiumRequirementScore: 4,
+
+        benefitsFromInoculation: false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          null,
+
+        amendmentEffortScore: 3,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "loam",
+            "sandy loam",
+            "well-drained clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          deepRooted:
+            true,
+
+          waterloggedSoilSuitable:
+            false,
+
+          notes: [
+            "Mulberry is adaptable to several soil textures but generally performs best in deep, well-drained soil.",
+            "Established trees may tolerate less-than-ideal soil better than many annual garden crops.",
+            "Persistently saturated soil can cause root decline and poor establishment.",
+            "Deep soil supports long-term root development and drought resilience.",
+            "Compacted urban soil, shallow rock, hardpan, and construction debris can restrict growth.",
+            "The stored pH range represents a broad productive planning range rather than an absolute survival range.",
+            "Mulberry does not fix atmospheric nitrogen.",
+            "Legume inoculant provides no benefit to Mulberry.",
+            "Soil testing remains useful before planting a permanent tree."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "not-applicable",
+
+        establishmentWaterNeedLevel:
+          "high",
+
+        matureWaterNeedLevel:
+          "low-moderate",
+
+        floweringWaterNeedLevel:
+          "moderate",
+
+        harvestDevelopmentWaterNeedLevel:
+          "moderate",
+
+        droughtSurvivalScore: 4,
+
+        droughtYieldRetentionScore: 3,
+
+        criticalGrowthStages: [
+          "transplant-establishment",
+          "first-year-root-development",
+          "spring-leaf-growth",
+          "flowering",
+          "fruit-development",
+          "post-pruning-regrowth"
+        ],
+
+        criticalStageWaterImportanceScore: 4,
+
+        overwateringSensitivityScore: 3,
+
+        waterloggingSensitivityScore: 4,
+
+        dripIrrigationBenefitScore: 5,
+
+        mulchBenefitScore: 5,
+
+        suitableForRainfallOnlyScore: 4,
+
+        suitableForLimitedIrrigationScore: 4,
+
+        containerDryingRiskScore: 5,
+
+        establishmentYearsRequiringExtraWater: 2,
+
+        directFacts: {
+          establishmentMoistureImportant:
+            true,
+
+          matureTreesRelativelyDroughtTolerant:
+            true,
+
+          postPruningMoistureImportant:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          irrigationCanImproveFruitAndLeafProduction:
+            true,
+
+          notes: [
+            "Young Mulberry trees need dependable moisture while roots establish.",
+            "Established trees may survive moderate drought, but fruit retention and leaf growth can decline.",
+            "Supplemental irrigation can improve regrowth after heavy pruning or leaf harvest.",
+            "Mulch can conserve moisture and reduce competition, but mulch should be kept away from the trunk.",
+            "Drip irrigation is preferable to chronic trunk wetting or saturated soil.",
+            "Container trees dry rapidly and remain limited by root volume.",
+            "Standing water and prolonged saturation remain undesirable."
+          ]
+        }
+      },
+
+      space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore: 1,
+
+        mediumSpaceScore: 3,
+
+        largeSpaceScore: 5,
+
+        layoutScores: {
+          squareBlock: 3,
+          wideRectangle: 4,
+          longStrip: 4,
+          irregular: 5,
+          smallBeds: 1,
+          openField: 5
+        },
+
+        spaceTypeScores: {
+          inGround: 5,
+          raisedBed: 1,
+          container: 1,
+          fenceLine: 3,
+          buildingEdge: 1,
+          unusedLawn: 5,
+          openField: 5,
+          orchard: 5,
+          forageFrame: 1,
+          rotationalPaddock: 5,
+          greenhouse: 1,
+          hedgerow: 5
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Dwarf Mulberry cultivars may survive in very large containers for a time, but restricted roots, rapid drying, limited yield, and long-term maintenance make containers a poor chicken-feed production strategy.",
+
+        minimumRaisedBedDepthIn:
+          null,
+
+        vineSpreadRequired: false,
+
+        verticalSupportBenefitScore: 1,
+
+        blockPlantingRequired: false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred: false,
+
+        heightCategory:
+          "tree",
+
+        matureWidthCategory:
+          "large-canopy",
+
+        overflowSpaceBenefitScore: 5,
+
+        directFacts: {
+          orchardSuitable:
+            true,
+
+          silvopastureSuitable:
+            true,
+
+          rotationalPaddockSuitable:
+            true,
+
+          hedgeOrPollardSuitable:
+            true,
+
+          coppiceManagementPossible:
+            true,
+
+          containerFeedProductionEfficient:
+            false,
+
+          notes: [
+            "Mulberry requires more long-term space than annual feed crops.",
+            "Full-sized fruit trees need substantial canopy and root clearance.",
+            "Dwarf trees, hedges, pollards, and coppiced forage systems may reduce the footprint.",
+            "Orchards, unused lawn areas, pasture edges, and silvopasture systems are strong uses.",
+            "Mulberry is unsuitable for ordinary raised beds and most rental-property gardens.",
+            "Naturally fallen fruit is most useful where chickens can safely access the area beneath the canopy.",
+            "Individual plants-per-square-foot values are inappropriate because mature size varies dramatically.",
+            "Minimum useful area remains null until tree form and management system are selected."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens: true,
+
+        suitableForYoungChicks: false,
+
+        flockPurposeScores: {
+          eggs: 4,
+          meat: 4,
+          breeding: 4,
+          petsEnrichment: 5,
+          homestead: 5,
+          mixed: 5
+        },
+
+        feedingMethodScores: {
+          livingGrazing: 4,
+          cutAndCarry: 5,
+          wholeProduce: 5,
+          wholeSeedHeads: 1,
+          wholeGrain: 1,
+          processedGrain: 1,
+          heatTreated: 1,
+          driedForage: 4,
+          winterStorage: 3
+        },
+
+        directRunSuitabilityScore: 3,
+
+        forageFrameSuitabilityScore: 1,
+
+        rotationalPaddockSuitabilityScore: 5,
+
+        confinedFlockValueScore: 5,
+
+        pasturedFlockValueScore: 5,
+
+        treatDilutionRiskScore: 4,
+
+        highEnergySupplement: false,
+
+        highFiberSupplement: true,
+
+        concentratedFatSource: false,
+
+        primaryFlockUses: [
+          "Naturally fallen seasonal fruit",
+          "Harvested fresh fruit",
+          "Fresh cut-and-carry leafy branches",
+          "Dried leafy forage",
+          "Summer shade",
+          "Orchard and silvopasture enrichment"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "High-energy grain production",
+          "Primary young-chick feed",
+          "Temporary one-season planting",
+          "Small container feed production",
+          "Unmanaged access to spoiled fallen fruit"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Ripe fruit",
+            "Fresh leaves",
+            "Tender young shoots",
+            "Properly dried leaves"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "good-after-tree-establishment-with-trunk-and-root-zone-protection",
+
+          directAccessTiming:
+            "Protect young trees from scratching, bark damage, and root exposure. Established trees may support controlled flock access beneath the canopy.",
+
+          nutritionalOrientation: [
+            "fresh-fruit",
+            "fresh-green",
+            "protein-oriented-forage",
+            "fiber",
+            "carbohydrate",
+            "enrichment",
+            "shade"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          notes: [
+            "Mulberry fruit and leaves are nutritionally different feed materials.",
+            "Ripe fruit provides water, sugar, carbohydrates, pigments, and enrichment.",
+            "Leaves provide more protein and fiber than fruit on a dry-matter basis.",
+            "Fresh fruit should be treated as a supplemental treat rather than concentrated feed.",
+            "Tender leaves are generally more useful than coarse woody stems.",
+            "Cut branches may be hung for pecking enrichment.",
+            "Young tree trunks and roots require protection from scratching and pecking.",
+            "Spoiled, moldy, fermented, contaminated, or unripe fruit should not be fed intentionally.",
+            "Mulberry remains supplemental to complete poultry feed.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore: 3,
+
+        plantingEaseScore: 3,
+
+        establishmentEaseScore: 3,
+
+        routineMaintenanceEaseScore: 4,
+
+        weedControlEaseScore: 4,
+
+        wildlifeProtectionEaseScore: 2,
+
+        harvestEaseScore: 4,
+
+        freshFruitHarvestEaseScore: 5,
+
+        freshForageProcessingEaseScore: 4,
+
+        driedForageProcessingEaseScore: 2,
+
+        pruningEaseScore: 3,
+
+        dryingEaseScore: 2,
+
+        storageMonitoringEaseScore: 3,
+
+        perennialMaintenanceEaseScore: 4,
+
+        physicalAccessibilityScore: 3,
+
+        heavyLiftingRiskScore: 3,
+
+        weeklyLaborLevel:
+          "very-low",
+
+        peakWorkloadLevel:
+          "moderate-high",
+
+        harvestFrequencyCategory:
+          "seasonal-and-repeated",
+
+        requiredPlantingTasks: [
+          "plant-tree",
+          "water-transplant",
+          "protect-young-trunk"
+        ],
+
+        optionalPlantingTasks: [
+          "install-irrigation",
+          "install-tree-guard",
+          "stake-tree",
+          "mulch-root-zone"
+        ],
+
+        requiredMaintenanceTasks: [
+          "inspect-tree-health",
+          "manage-fruit-drop"
+        ],
+
+        optionalMaintenanceTasks: [
+          "prune",
+          "pollard",
+          "coppice",
+          "protect-from-wildlife",
+          "remove-unwanted-seedlings"
+        ],
+
+        requiredHarvestTasks: [
+          "pick-produce",
+          "cut-leaves"
+        ],
+
+        usePathProcessingTasks: {
+          naturallyFallenFruit: [],
+
+          harvestedFreshFruit: [
+            "pick-produce"
+          ],
+
+          freshCutAndCarryLeaves: [
+            "cut-leaves"
+          ],
+
+          driedLeafyForage: [
+            "cut-leaves",
+            "dry",
+            "clean-sort"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "inspect-moisture",
+          "inspect-mold",
+          "inspect-insects"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "tree-guard",
+          "fencing",
+          "hand-pruners",
+          "loppers",
+          "pruning-saw",
+          "harvest-sheet",
+          "basket",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "food-safe-bucket",
+          "moisture-meter",
+          "drip-irrigation"
+        ],
+
+        suitableForLowTimeUsersScore: 4,
+
+        suitableForSoloGrowersScore: 4,
+
+        directFacts: {
+          propagationMethodPreferred:
+            "named-nursery-tree-or-rooted-cutting",
+
+          directSeedingSuitable:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          majorLaborBottlenecks: [
+            "Selecting an appropriate species, cultivar, and mature size",
+            "Protecting young trunks and roots",
+            "Watering during establishment",
+            "Managing pruning height",
+            "Collecting or cleaning fallen fruit",
+            "Protecting fruit from wildlife",
+            "Drying leafy forage without mold",
+            "Preventing unwanted seedlings or invasive spread"
+          ],
+
+          notes: [
+            "Planting a named cultivar is more predictable than growing from seed.",
+            "Naturally fallen fruit requires almost no harvest labor but may create sanitation and staining problems.",
+            "Hand-harvested fruit is highly perishable.",
+            "Fresh leaf forage requires pruning or branch cutting.",
+            "Dried leaf production creates substantial handling and drying labor.",
+            "Tall full-sized trees may make fruit and leaf harvest difficult.",
+            "Pollarding, coppicing, hedging, or dwarf cultivar selection can improve accessibility.",
+            "Long-term placement decisions are more important than weekly maintenance."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "moderate",
+
+        soilPreparationCostLevel:
+          "moderate",
+
+        irrigationCostLevel:
+          "moderate",
+
+        protectionCostLevel:
+          "moderate",
+
+        processingEquipmentCostLevel:
+          "low-moderate",
+
+        storageCostLevel:
+          "low",
+
+        annualRecurringCostLevel:
+          "very-low",
+
+        longTermValueScore: 5,
+
+        lowestCostUsePath:
+          "naturally-fallen-fresh-fruit",
+
+        highestCostUsePath:
+          "dried-mulberry-leaf-forage",
+
+        likelyCostDrivers: [
+          "Named nursery tree or rooted cultivar",
+          "Shipping",
+          "Tree guards",
+          "Temporary fencing",
+          "Irrigation during establishment",
+          "Pruning tools",
+          "Fruit collection sheets",
+          "Drying racks, screens, or fans",
+          "Removal if planted in the wrong location"
+        ],
+
+        costReductionOptions: [
+          "Choose a locally adapted cultivar before purchase.",
+          "Plant in a location that can accommodate the mature canopy.",
+          "Use naturally fallen fruit rather than hand harvesting.",
+          "Use fresh leafy branches rather than dried leaf meal.",
+          "Maintain a low pollard or coppice system where appropriate.",
+          "Protect young trees so establishment is not lost to poultry or wildlife."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          notes: [
+            "The initial tree cost is higher than a packet of annual seed.",
+            "A healthy tree may provide value for decades.",
+            "Annual replanting is unnecessary once established.",
+            "Incorrect placement can create substantial future removal or property-repair expense.",
+            "Fresh fruit and leaves require little specialized equipment.",
+            "Dried leaf production raises equipment and labor costs.",
+            "Cost classifications are qualitative rather than current retail estimates."
+          ]
+        }
+      },
+
+      goals: {
+        feedReductionScore: 4,
+
+        energyProductionScore: 3,
+
+        proteinOrientedScore: 4,
+
+        freshGreensScore: 5,
+
+        livingForageScore: 4,
+
+        winterStorageScore: 3,
+
+        enrichmentScore: 5,
+
+        resilienceScore: 5,
+
+        soilImprovementScore: 3,
+
+        nitrogenFixationScore: 0,
+
+        groundCoverScore: 1,
+
+        erosionControlScore: 3,
+
+        shadeScore: 5,
+
+        privacyScreeningScore: 5,
+
+        pollinatorSupportScore: 3,
+
+        compostBiomassScore: 5,
+
+        householdFoodScore: 5,
+
+        seedSavingScore: 2,
+
+        selfRelianceScore: 5,
+
+        multipurposeValueScore: 5,
+
+        visualAppealScore: 5,
+
+        productionReliabilityScore: 4,
+
+        fastestValueScore: 1,
+
+        nonElectricStorageScore: 3,
+
+        smallFlockValueScore: 5,
+
+        largeFlockValueScore: 5,
+
+        primaryGoalMatches: [
+          "fresh-greens",
+          "living-forage",
+          "enrichment",
+          "shade",
+          "privacy-screening",
+          "compost-biomass",
+          "shared-household-food",
+          "self-reliance",
+          "use-unused-space",
+          "edible-landscape"
+        ],
+
+        weakGoalMatches: [
+          "fast-value",
+          "short-season",
+          "annual-reversibility",
+          "container-production",
+          "dry-grain",
+          "nitrogen-fixation",
+          "ground-cover"
+        ],
+
+        directFacts: {
+          nitrogenFixingLegume:
+            false,
+
+          permanentTreeCrop:
+            true,
+
+          repeatedLeafHarvestPotential:
+            true,
+
+          seasonalFruitProduction:
+            true,
+
+          householdFoodPotential:
+            true,
+
+          shadePotential:
+            true,
+
+          privacyScreeningPotential:
+            true,
+
+          notes: [
+            "Mulberry is among the strongest long-term multipurpose crops in the initial planner database.",
+            "Fruit, leaves, shade, biomass, household food, and flock enrichment can come from one planting.",
+            "The tree can produce for decades when properly located and managed.",
+            "Leaf forage provides stronger protein-oriented value than fruit.",
+            "Fruit provides seasonal carbohydrate-oriented enrichment.",
+            "Mulberry is not a nitrogen-fixing crop.",
+            "It is not a fast annual feed solution.",
+            "Its mature footprint and permanent nature make it inappropriate for many small or temporary sites."
+          ]
+        }
+      },
+
+      risks: {
+        wildlife: {
+          wildBirds: 5,
+          deer: 5,
+          raccoons: 5,
+          squirrels: 5,
+          rabbits: 2,
+          rodents: 3,
+          groundhogs: 2
+        },
+
+        insectsRiskScore: 3,
+
+        diseaseRiskScore: 3,
+
+        lodgingRiskScore: 1,
+
+        fieldMoldRiskScore: 3,
+
+        dryingMoldRiskScore: 5,
+
+        storageMoldRiskScore: 4,
+
+        storedInsectRiskScore: 3,
+
+        spoilageSpeedRiskScore: 5,
+
+        invasivenessConcernRiskScore: 5,
+
+        selfSeedingRiskScore: 5,
+
+        fruitDropRiskScore: 5,
+
+        cropFailureRiskScore: 3,
+
+        stormDamageRiskScore: 3,
+
+        shadingOtherCropsRiskScore: 5,
+
+        overfeedingRiskScore: 4,
+
+        treatedSeedRiskScore: 1,
+
+        primaryRisks: [
+          {
+            id:
+              "wrong-tree-location",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "planting",
+              "mature-tree"
+            ],
+
+            mitigationOptions: [
+              "Verify mature size before planting",
+              "Select dwarf or compact cultivars where needed",
+              "Avoid foundations and utilities",
+              "Avoid pavement and vehicle areas",
+              "Plan the permanent canopy footprint"
+            ],
+
+            note:
+              "A long-lived tree planted in the wrong location may create structural, utility, shade, staining, and removal problems."
+          },
+
+          {
+            id:
+              "fruit-drop-mess-and-fermentation",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "fruit-ripening",
+              "fruit-drop",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Locate the tree over soil or pasture",
+              "Allow controlled flock cleanup",
+              "Remove excessive spoiled fruit",
+              "Avoid planting over pavement",
+              "Maintain sanitation beneath the canopy"
+            ],
+
+            note:
+              "Large quantities of fallen fruit may stain, ferment, attract insects, smell, and create slippery or unsanitary conditions."
+          },
+
+          {
+            id:
+              "wildlife-fruit-loss",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "fruit-development",
+              "fruit-ripening",
+              "fruit-drop"
+            ],
+
+            mitigationOptions: [
+              "Accept wildlife sharing",
+              "Use timely harvest",
+              "Use temporary netting where practical",
+              "Choose high-producing cultivars",
+              "Allow chickens access during fruit drop"
+            ],
+
+            note:
+              "Birds, squirrels, raccoons, deer, and other wildlife may consume substantial fruit."
+          },
+
+          {
+            id:
+              "young-tree-chicken-damage",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "planting",
+              "first-year-establishment",
+              "young-tree"
+            ],
+
+            mitigationOptions: [
+              "Install a trunk guard",
+              "Fence the root zone",
+              "Exclude chickens",
+              "Maintain mulch without exposing the trunk",
+              "Prevent scratching around shallow new roots"
+            ],
+
+            note:
+              "Chickens can expose roots, damage bark, and disturb young trees before establishment."
+          },
+
+          {
+            id:
+              "invasive-white-mulberry-spread",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "cultivar-selection",
+              "fruiting",
+              "seed-dispersal"
+            ],
+
+            mitigationOptions: [
+              "Check state and local guidance",
+              "Prefer suitable native or noninvasive cultivars",
+              "Avoid invasive White Mulberry where restricted or discouraged",
+              "Remove unwanted seedlings",
+              "Protect native Red Mulberry populations"
+            ],
+
+            note:
+              "White Mulberry may be invasive and may hybridize with native Red Mulberry."
+          },
+
+          {
+            id:
+              "unripe-fruit-or-sap-irritation",
+
+            severity:
+              "moderate",
+
+            affectedStages: [
+              "pruning",
+              "fruit-development",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use ripe fruit",
+              "Avoid intentionally feeding unripe fruit",
+              "Wash hands after pruning",
+              "Keep sap away from eyes and sensitive skin"
+            ],
+
+            note:
+              "Unripe fruit and milky sap may cause irritation and should not be intentionally used as poultry feed."
+          },
+
+          {
+            id:
+              "fresh-fruit-spoilage",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "harvest",
+              "short-term-storage",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Feed promptly",
+              "Refrigerate briefly",
+              "Discard moldy or fermented fruit",
+              "Avoid compact piles",
+              "Maintain clean collection areas"
+            ],
+
+            note:
+              "Ripe Mulberries are highly perishable."
+          },
+
+          {
+            id:
+              "dried-leaf-mold",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "harvest",
+              "drying",
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Dry leaves thinly",
+              "Use strong airflow",
+              "Separate thick stems",
+              "Do not seal damp leaves",
+              "Inspect for musty odor, heating, or mold"
+            ],
+
+            note:
+              "Leafy material may mold when drying is slow or enclosed storage begins too early."
+          },
+
+          {
+            id:
+              "balanced-feed-displacement",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Continue complete poultry feed",
+              "Limit heavy fruit intake",
+              "Use leaves and fruit as supplements",
+              "Monitor flock condition"
+            ],
+
+            note:
+              "Large amounts of sugary fruit or fibrous leaves may displace balanced poultry feed."
+          }
+        ],
+
+        directFacts: {
+          fruitDropMessConcern:
+            true,
+
+          stainingConcern:
+            true,
+
+          wildlifeAttractionConcern:
+            true,
+
+          youngTreePoultryDamageConcern:
+            true,
+
+          invasiveSpeciesConcern:
+            true,
+
+          dryingMoldConcern:
+            true,
+
+          freshFruitSpoilageConcern:
+            true,
+
+          notes: [
+            "Permanent-site selection is one of the most important Mulberry decisions.",
+            "Wildlife loss does not necessarily eliminate flock value because large trees may produce heavily.",
+            "White Mulberry should not be recommended without checking regional invasive-plant guidance.",
+            "Dark-fruited cultivars can create severe staining.",
+            "Fruitless male landscape cultivars provide leaves and shade but no fruit.",
+            "Fresh fruit and leaves should be clean and free from unsuitable pesticide residues.",
+            "Moldy, spoiled, fermented, contaminated, or questionable material should not be fed."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        earlySpring: true,
+
+        lateSpring: true,
+
+        summer: true,
+
+        lateSummer: true,
+
+        fall: true,
+
+        winterStorage: true,
+
+        perennial: true,
+
+        plantingWindows: [
+          {
+            id:
+              "dormant-tree-planting",
+
+            trigger:
+              "dormant-season",
+
+            offsetWeeksMinimum: 0,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "workable-and-not-waterlogged",
+
+            method:
+              "plant-nursery-tree",
+
+            note:
+              "Dormant fall, winter, or early-spring planting is preferred where regional weather allows root establishment."
+          },
+
+          {
+            id:
+              "spring-container-tree-planting",
+
+            trigger:
+              "after-severe-freeze-risk",
+
+            offsetWeeksMinimum: 0,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "moist-and-workable",
+
+            method:
+              "plant-container-tree",
+
+            note:
+              "Container-grown trees can be planted in spring with dependable establishment watering."
+          }
+        ],
+
+        harvestWindows: [
+          {
+            id:
+              "naturally-fallen-fruit",
+
+            trigger:
+              "ripe-fruit-drop",
+
+            usePathId:
+              "naturally-fallen-fresh-fruit",
+
+            note:
+              "Allow chickens controlled access to sound ripe fruit while removing excessive spoiled material."
+          },
+
+          {
+            id:
+              "harvested-fresh-fruit",
+
+            trigger:
+              "fully-ripe-fruit",
+
+            usePathId:
+              "harvested-fresh-fruit",
+
+            note:
+              "Harvest fully ripe sound fruit and use promptly."
+          },
+
+          {
+            id:
+              "fresh-cut-and-carry-leaves",
+
+            trigger:
+              "healthy-leafy-growth",
+
+            usePathId:
+              "fresh-cut-and-carry-leaves",
+
+            note:
+              "Cut manageable leafy branches without removing so much canopy that the tree is weakened."
+          },
+
+          {
+            id:
+              "dried-leafy-forage",
+
+            trigger:
+              "healthy-leaves-with-suitable-drying-weather",
+
+            usePathId:
+              "dried-mulberry-leaf-forage",
+
+            note:
+              "Dry clean leaves rapidly with airflow and store only after they are fully dry."
+          }
+        ],
+
+        cropSequenceRoles: [
+          "Permanent orchard feed tree",
+          "Silvopasture shade tree",
+          "Seasonal fruit-drop crop",
+          "Cut-and-carry leaf forage",
+          "Dried leafy forage crop",
+          "Household fruit tree",
+          "Long-term biomass crop"
+        ],
+
+        seasonalLimitations: [
+          "Fruit production requires establishment time",
+          "Winter dormancy stops fresh leaf production",
+          "Fruit harvest is highly seasonal",
+          "Fresh fruit stores poorly",
+          "Heavy pruning requires recovery time",
+          "Young trees require protection"
+        ],
+
+        directFacts: {
+          deciduousPerennialTree:
+            true,
+
+          dormantPlantingPossible:
+            true,
+
+          repeatedLeafHarvestPossible:
+            true,
+
+          seasonalFruitProduction:
+            true,
+
+          winterDormancyPossible:
+            true,
+
+          driedLeafStoragePossible:
+            true,
+
+          notes: [
+            "Mulberry leaves emerge during spring and remain available through much of the warm season.",
+            "Fruit timing varies by species, cultivar, and climate.",
+            "Fruit may ripen over several weeks rather than all at once.",
+            "Fresh leaf harvest can continue after fruiting when tree health and pruning management allow.",
+            "Winter dormancy eliminates fresh leaf and fruit production.",
+            "Dried leaves may extend forage availability into winter."
+          ]
+        }
+      },
+
+      usePaths: [
+        {
+          id:
+            "naturally-fallen-fresh-fruit",
+
+          label:
+            "Naturally Fallen Fresh Mulberries",
+
+          description:
+            "Ripe Mulberries fall beneath an established tree where chickens consume sound fruit as seasonal orchard enrichment.",
+
+          primaryFeedRole:
+            "fresh-fruit-enrichment",
+
+          harvestProducts: [
+            "fresh-fruit",
+            "fallen-fruit",
+            "mulberries"
+          ],
+
+          suitableFeedingMethods: [
+            "orchard-grazing",
+            "rotational-paddock",
+            "seasonal-enrichment",
+            "whole-produce"
+          ],
+
+          requiredProcessingTasks: [],
+
+          optionalProcessingTasks: [
+            "clean-sort"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "fencing",
+            "harvest-sheet"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "seasonal-drop",
+
+          storageMethods: [
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: false,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 4,
+
+          rodentRiskScore: 4,
+
+          storedInsectRiskScore: 1,
+
+          harvestEaseScore: 5,
+
+          preparationEaseScore: 5,
+
+          beginnerSuitabilityScore: 4,
+
+          householdFoodValueScore: 3,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Allow only sound ripe fruit to remain available.",
+            "Remove moldy, rotten, fermented, or contaminated fruit.",
+            "Do not permit large spoiled piles to accumulate.",
+            "Fruit remains supplemental to complete poultry feed.",
+            "Protect young tree trunks and roots from chickens."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-ground-access",
+            "requires-immediate-first-year-production",
+            "requires-annual-reversibility",
+            "cannot-manage-fallen-fruit"
+          ]
+        },
+
+        {
+          id:
+            "harvested-fresh-fruit",
+
+          label:
+            "Harvested Fresh Mulberries",
+
+          description:
+            "Fully ripe sound Mulberries are harvested and offered promptly as a measured seasonal fruit supplement.",
+
+          primaryFeedRole:
+            "fresh-fruit-enrichment",
+
+          harvestProducts: [
+            "fresh-fruit",
+            "mulberries",
+            "fresh-produce"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-produce",
+            "fresh-supplement",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "pick-produce"
+          ],
+
+          optionalProcessingTasks: [
+            "clean-sort",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "basket",
+            "harvest-sheet"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "seasonal-frequent",
+
+          storageMethods: [
+            "short-term-fresh"
+          ],
+
+          preferredStorageMethod:
+            "feed-promptly-or-refrigerate-briefly",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable: false,
+
+          refrigerationSuitable: true,
+
+          freezingSuitable: true,
+
+          dryingRequired: false,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 4,
+
+          rodentRiskScore: 2,
+
+          storedInsectRiskScore: 1,
+
+          harvestEaseScore: 4,
+
+          preparationEaseScore: 5,
+
+          beginnerSuitabilityScore: 4,
+
+          householdFoodValueScore: 5,
+
+          flockValueScore: 4,
+
+          safetyWarnings: [
+            "Use only fully ripe, sound fruit.",
+            "Do not intentionally feed unripe fruit.",
+            "Discard moldy, fermented, spoiled, or contaminated fruit.",
+            "Fresh Mulberries are highly perishable.",
+            "Offer as a supplement rather than a complete feed."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-room-temperature-storage",
+            "has-no-time-for-frequent-seasonal-harvest",
+            "wants-dry-grain-only"
+          ]
+        },
+
+        {
+          id:
+            "fresh-cut-and-carry-leaves",
+
+          label:
+            "Fresh Cut-and-Carry Mulberry Leaves",
+
+          description:
+            "Clean leafy Mulberry branches are harvested from a managed tree, pollard, hedge, or coppice and offered promptly as fresh forage.",
+
+          primaryFeedRole:
+            "fresh-green-protein-oriented",
+
+          harvestProducts: [
+            "fresh-greens",
+            "fresh-forage",
+            "mulberry-leaves",
+            "leafy-branches"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-supplement",
+            "hanging-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "strip-leaves"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "loppers",
+            "pruning-saw",
+            "basket"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "repeated-seasonal",
+
+          storageMethods: [
+            "short-term-fresh"
+          ],
+
+          preferredStorageMethod:
+            "feed-soon-after-cutting",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable: false,
+
+          refrigerationSuitable: true,
+
+          freezingSuitable: false,
+
+          dryingRequired: false,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 2,
+
+          rodentRiskScore: 1,
+
+          storedInsectRiskScore: 1,
+
+          harvestEaseScore: 4,
+
+          preparationEaseScore: 4,
+
+          beginnerSuitabilityScore: 4,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Harvest only correctly identified Mulberry leaves.",
+            "Use clean healthy foliage from an untreated area.",
+            "Avoid coarse woody branches that birds cannot use safely.",
+            "Do not feed moldy, slimy, contaminated, or roadside foliage.",
+            "Avoid compact piles of wet leaves.",
+            "Fresh leaves remain supplemental to complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-storage",
+            "cannot-prune-or-harvest-branches",
+            "has-no-permanent-tree-space",
+            "wants-dry-grain-only"
+          ]
+        },
+
+        {
+          id:
+            "dried-mulberry-leaf-forage",
+
+          label:
+            "Dried Mulberry Leaf Forage",
+
+          description:
+            "Clean Mulberry leaves are separated from coarse stems, dried thoroughly with protected airflow, and stored for measured supplemental feeding.",
+
+          primaryFeedRole:
+            "dried-protein-oriented-forage",
+
+          harvestProducts: [
+            "dried-forage",
+            "dried-leaves",
+            "mulberry-leaf-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "dried-forage",
+            "measured-supplement",
+            "winter-storage"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves",
+            "dry",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [
+            "strip-leaves",
+            "crumble",
+            "grind"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "loppers",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "food-safe-bucket",
+            "moisture-meter"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "repeated-seasonal",
+
+          storageMethods: [
+            "dried-forage"
+          ],
+
+          preferredStorageMethod:
+            "dry-dark-moisture-proof-and-pest-resistant",
+
+          storageDurationCategory:
+            "medium-long",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: true,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 5,
+
+          rodentRiskScore: 3,
+
+          storedInsectRiskScore: 3,
+
+          harvestEaseScore: 3,
+
+          preparationEaseScore: 2,
+
+          beginnerSuitabilityScore: 2,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 4,
+
+          safetyWarnings: [
+            "Dry leaves thoroughly before enclosed storage.",
+            "Remove coarse woody material where practical.",
+            "Do not seal leaves that remain flexible, cool-damp, or unevenly dried.",
+            "Inspect stored leaves for mold, insects, rodents, heating, and musty odor.",
+            "Discard moldy, dusty, contaminated, or questionable material.",
+            "Dried leaf forage remains supplemental to complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "has-no-protected-drying-area",
+            "requires-minimal-processing",
+            "has-no-dry-storage",
+            "has-no-permanent-tree-space"
+          ]
+        }
+      ],
+
+      dataQuality: {
+        overallConfidence: 0.77,
+
+        verifiedFields: [
+          "identity",
+          "lifecycle",
+          "climate.directFacts.seasonType",
+          "climate.directFacts.longLivedPerennial",
+          "site.directFacts.preferredLight",
+          "site.directFacts.growthHabit",
+          "soil.directFacts.nitrogenFixingLegume",
+          "soil.directFacts.deepRooted",
+          "water.directFacts.establishmentMoistureImportant",
+          "water.directFacts.matureTreesRelativelyDroughtTolerant",
+          "space.directFacts.orchardSuitable",
+          "space.directFacts.silvopastureSuitable",
+          "space.directFacts.coppiceManagementPossible",
+          "flock.directFacts.edibleFeedParts",
+          "flock.directFacts.nutritionalOrientation",
+          "risks.directFacts.fruitDropMessConcern",
+          "risks.directFacts.wildlifeAttractionConcern",
+          "risks.directFacts.invasiveSpeciesConcern",
+          "seasonalRoles.directFacts.deciduousPerennialTree",
+          "seasonalRoles.directFacts.repeatedLeafHarvestPossible"
+        ],
+
+        derivedFields: [
+          "climate",
+          "site",
+          "soil.textureScores",
+          "water",
+          "space.smallSpaceScore",
+          "space.mediumSpaceScore",
+          "space.largeSpaceScore",
+          "space.layoutScores",
+          "space.spaceTypeScores",
+          "flock.flockPurposeScores",
+          "flock.feedingMethodScores",
+          "labor",
+          "cost",
+          "goals",
+          "risks.wildlife",
+          "usePaths.naturally-fallen-fresh-fruit",
+          "usePaths.harvested-fresh-fruit",
+          "usePaths.fresh-cut-and-carry-leaves",
+          "usePaths.dried-mulberry-leaf-forage"
+        ],
+
+        uncertainFields: [
+          "lifecycle.expectedUsefulLifeYears",
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.minimumSoilTemperatureF",
+          "climate.preferredSoilTemperatureF",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance",
+          "usePaths.naturally-fallen-fresh-fruit.productionPerTree",
+          "usePaths.fresh-cut-and-carry-leaves.sustainablePruningFrequency",
+          "usePaths.dried-mulberry-leaf-forage.exactStorageDuration"
+        ],
+
+        missingFields: [
+          "lifecycle.expectedUsefulLifeYears",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "flock.portionGuidance",
+          "flock.usePathTesting"
+        ],
+
+        lastReviewed:
+          "2026-07-15",
+
+        primarySources: [
+          {
+            title:
+              "White Mulberry",
+
+            organization:
+              "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+            sourceType:
+              "international-feed-reference",
+
+            use:
+              "Leaf composition, protein, fiber, minerals, forage yield, digestibility, repeated harvest, and livestock-feed use"
+          },
+
+          {
+            title:
+              "Morus alba L.",
+
+            organization:
+              "Food and Agriculture Organization of the United Nations",
+
+            sourceType:
+              "international-crop-reference",
+
+            use:
+              "Cultivation, fodder systems, pruning, coppicing, climate adaptation, and perennial production"
+          },
+
+          {
+            title:
+              "Mulberry Plant Profiles",
+
+            organization:
+              "United States Department of Agriculture",
+
+            sourceType:
+              "government-plant-reference",
+
+            use:
+              "Taxonomy, distribution, introduced status, native Red Mulberry, and regional occurrence"
+          },
+
+          {
+            title:
+              "White Mulberry Invasive Species Information",
+
+            organization:
+              "United States Forest Service and state invasive-plant resources",
+
+            sourceType:
+              "government-invasive-species-reference",
+
+            use:
+              "Invasive spread, ecological concerns, naturalization, and hybridization with native Red Mulberry"
+          },
+
+          {
+            title:
+              "Mulberry Leaf Meal in Poultry Nutrition",
+
+            organization:
+              "Peer-reviewed poultry-nutrition literature",
+
+            sourceType:
+              "poultry-feed-research",
+
+            use:
+              "Experimental use of processed leaf meal, flock performance, pigmentation, egg traits, antioxidant effects, protein, and fiber limitations"
+          },
+
+          {
+            title:
+              "Mulberry Fruit Nutrient Data",
+
+            organization:
+              "USDA FoodData Central",
+
+            sourceType:
+              "government-food-composition-reference",
+
+            use:
+              "Fruit moisture, carbohydrates, sugar, fiber, vitamins, minerals, and pigment context"
+          }
+        ],
+
+        notes: [
+          "Mulberry plannerData covers Morus species and hybrids only at a broad planning level.",
+          "Species, cultivar, mature size, fruit color, invasiveness, cold hardiness, and productivity must be verified locally.",
+          "Fruit and leaf forage are separate products and should not be scored as nutritionally interchangeable.",
+          "The four use paths are naturally fallen fruit, harvested fresh fruit, fresh cut-and-carry leaves, and dried leafy forage.",
+          "Orchard and silvopasture use are treated as site-management systems rather than separate harvested products.",
+          "No exact sustainable pruning rate has been assigned.",
+          "No exact flock feeding portion has been assigned.",
+          "No medicinal claims are made.",
+          "The crop should remain in testing until permanent-space, orchard, long-establishment, fruit-drop, fresh-leaf, dried-leaf, rental-property, and wildlife-pressure profiles are evaluated."
+        ]
+      }
     }
   },
 
-    "CROP-FIELD-CORN": {
+  "CROP-FIELD-CORN": {
     id: "CROP-FIELD-CORN",
 
     name: "Field Corn",
