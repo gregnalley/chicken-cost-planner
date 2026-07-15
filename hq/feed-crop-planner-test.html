@@ -184,6 +184,44 @@ code {
   border-color: #e3c2c2;
 }
 
+.multi-profile-result {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d8e3da;
+  border-radius: 13px;
+  box-shadow:
+    0 7px 20px
+    rgba(29, 65, 38, 0.07);
+}
+
+.multi-profile-result h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
+
+.multi-crop-ranking {
+  display: grid;
+  gap: 12px;
+}
+
+.multi-crop-card {
+  padding: 15px;
+  background: #f7faf7;
+  border: 1px solid #dce7dd;
+  border-radius: 10px;
+}
+
+.multi-crop-card:first-child {
+  background: #eef8ef;
+  border-color: #bcd8c0;
+}
+
+.multi-crop-card h4 {
+  margin: 0 0 8px;
+  color: #194f2a;
+}
+
 </style>
 
 </head>
@@ -318,6 +356,29 @@ Waiting for Sunflower tests...
 </div>
 
 <div id="sunflower-test-results"></div>
+
+</div>
+
+<div class="section">
+
+<h2>Multi-Crop Profile Comparison</h2>
+
+<p>
+This test compares every crop currently marked
+<code>testing</code> or <code>ready</code>
+using the shared recommendation engine.
+</p>
+
+<div
+  id="multi-crop-test-summary"
+  class="foundation-status"
+  role="status"
+  aria-live="polite"
+>
+Waiting for multi-crop tests...
+</div>
+
+<div id="multi-crop-test-results"></div>
 
 </div>
 
