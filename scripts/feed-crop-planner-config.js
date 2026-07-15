@@ -329,6 +329,625 @@ const HARVEST_FREQUENCY_CATEGORIES =
     "CROP-GRAIN-SORGHUM"
   ]);
 
+  const SAMPLE_USER_PROFILES = Object.freeze([
+  Object.freeze({
+    id: "PROFILE-BEGINNER-RAISED-BED",
+
+    label:
+      "Beginner with a Sunny 4-by-8 Raised Bed",
+
+    description:
+      "Six laying hens, reliable water, minimal processing, and a strong interest in enrichment and pollinators.",
+
+    answers: {
+      climate: {
+        climateType: "temperate",
+        frostFreeSeasonRange: "150-179"
+      },
+
+      flock: {
+        flockSize: 6,
+        primaryFlockPurpose: "eggs",
+        forageAccess: "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 32,
+        availableSpaceTypes: [
+          "raised-bed"
+        ],
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 8,
+        windExposure: "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "raised-bed-mix",
+        soilTexture: "loam",
+        soilDrainage: "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+        wateringFrequencyPreference:
+          "every-2-3-days",
+        waterConservationPriority:
+          "moderate"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+        weeklyCropTime:
+          "1-2-hours",
+        acceptedProcessingTasks: [
+          "dry"
+        ],
+        dryingCapability:
+          "small-racks"
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-seed-heads",
+          "dried-seed-heads"
+        ],
+        harvestPatternPreference:
+          "several",
+        minimalPreparationPriority:
+          "high",
+        dryStorageLocations: [
+          "garage"
+        ],
+        rodentProtection:
+          "partial"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "enrichment",
+          "pollinators",
+          "shared-household-food"
+        ],
+        goalPriorities: [
+          {
+            goal: "enrichment",
+            rank: 1
+          },
+          {
+            goal: "pollinators",
+            rank: 2
+          },
+          {
+            goal:
+              "shared-household-food",
+            rank: 3
+          }
+        ],
+        preferredNutritionalRole:
+          "enrichment",
+        beginnerFriendlinessPriority:
+          "high",
+        wildlifePestPressure: [
+          "wild-birds"
+        ],
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id: "PROFILE-HOT-DRY",
+
+    label:
+      "Hot and Dry with Limited Irrigation",
+
+    description:
+      "A larger in-ground plot, strong heat, restricted watering, and a desire for resilient supplemental crops.",
+
+    answers: {
+      climate: {
+        climateType: "hot-dry",
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 12,
+        primaryFlockPurpose:
+          "homestead",
+        forageAccess:
+          "limited-weekly"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 300,
+        availableSpaceTypes: [
+          "in-ground"
+        ],
+        largestAreaShape:
+          "long-strip"
+      },
+
+      site: {
+        directSunHoursExact: 9,
+        windExposure: "high"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+        soilTexture:
+          "sandy-loam",
+        soilDrainage:
+          "very-fast"
+      },
+
+      water: {
+        waterReliability:
+          "frequently-limited",
+        wateringFrequencyPreference:
+          "weekly",
+        waterConservationPriority:
+          "top-priority",
+        criticalStageWaterAvailability:
+          "occasional"
+      },
+
+      labor: {
+        gardeningExperience:
+          "intermediate",
+        weeklyCropTime:
+          "1-2-hours",
+        acceptedProcessingTasks: [
+          "dry",
+          "clean-sort"
+        ],
+        dryingCapability:
+          "large-covered"
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dried-seed-heads",
+          "dry-seeds"
+        ],
+        harvestPatternPreference:
+          "major",
+        minimalPreparationPriority:
+          "moderate",
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "resilience-feed",
+          "high-energy",
+          "winter-storage"
+        ],
+        goalPriorities: [
+          {
+            goal: "resilience-feed",
+            rank: 1
+          },
+          {
+            goal: "high-energy",
+            rank: 2
+          },
+          {
+            goal: "winter-storage",
+            rank: 3
+          }
+        ],
+        preferredNutritionalRole:
+          "energy",
+        beginnerFriendlinessPriority:
+          "moderate",
+        wildlifePestPressure: [
+          "wild-birds",
+          "deer"
+        ],
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id: "PROFILE-HUMID-SOUTHERN",
+
+    label:
+      "Humid Southern Homestead",
+
+    description:
+      "Long growing season, high humidity, reliable hose water, strong bird pressure, and concern about drying grain safely.",
+
+    answers: {
+      climate: {
+        climateType: "hot-humid",
+        frostFreeSeasonRange:
+          "210-plus"
+      },
+
+      flock: {
+        flockSize: 18,
+        primaryFlockPurpose:
+          "mixed",
+        forageAccess:
+          "occasional"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 500,
+        availableSpaceTypes: [
+          "in-ground",
+          "fence-line"
+        ],
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 8,
+        windExposure: "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+        soilTexture:
+          "clay-loam",
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+        wateringFrequencyPreference:
+          "twice-weekly",
+        waterConservationPriority:
+          "low"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+        weeklyCropTime:
+          "3-5-hours",
+        acceptedProcessingTasks: [
+          "dry",
+          "remove-seed",
+          "clean-sort"
+        ],
+        dryingCapability:
+          "small-racks",
+        dryingFacilities: [
+          "covered-rack",
+          "fans"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-seed-heads",
+          "dried-seed-heads",
+          "dry-seeds"
+        ],
+        harvestPatternPreference:
+          "mixed",
+        minimalPreparationPriority:
+          "moderate",
+        dryStorageLocations: [
+          "garage"
+        ],
+        storageHumidity:
+          "often-humid",
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "enrichment",
+          "winter-storage",
+          "pollinators"
+        ],
+        goalPriorities: [
+          {
+            goal: "winter-storage",
+            rank: 1
+          },
+          {
+            goal: "enrichment",
+            rank: 2
+          },
+          {
+            goal: "pollinators",
+            rank: 3
+          }
+        ],
+        preferredNutritionalRole:
+          "diversified",
+        beginnerFriendlinessPriority:
+          "low",
+        wildlifePestPressure: [
+          "wild-birds",
+          "squirrels",
+          "disease"
+        ],
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id: "PROFILE-CONTAINER-RENTAL",
+
+    label:
+      "Container-Only Rental Property",
+
+    description:
+      "A renter with four containers, no permanent planting, limited storage, and a preference for simple crops.",
+
+    answers: {
+      climate: {
+        climateType: "temperate",
+        frostFreeSeasonRange:
+          "150-179"
+      },
+
+      flock: {
+        flockSize: 4,
+        primaryFlockPurpose:
+          "pets-enrichment",
+        forageAccess: "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 20,
+        availableSpaceTypes: [
+          "containers"
+        ],
+        largestAreaShape:
+          "small-beds",
+        containerCount: 4,
+        permanentContainersAllowed:
+          false
+      },
+
+      site: {
+        directSunHoursExact: 7,
+        windExposure: "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "commercial-mix",
+        soilTexture:
+          "commercial-mix",
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+        wateringFrequencyPreference:
+          "every-2-3-days",
+        waterConservationPriority:
+          "moderate"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+        weeklyCropTime:
+          "30-60-min",
+        acceptedProcessingTasks: [],
+        dryingCapability:
+          "none"
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-seed-heads"
+        ],
+        harvestPatternPreference:
+          "several",
+        minimalPreparationPriority:
+          "top",
+        dryStorageLocations: [],
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "enrichment",
+          "pollinators",
+          "edible-landscape"
+        ],
+        goalPriorities: [
+          {
+            goal: "enrichment",
+            rank: 1
+          },
+          {
+            goal: "edible-landscape",
+            rank: 2
+          },
+          {
+            goal: "pollinators",
+            rank: 3
+          }
+        ],
+        preferredNutritionalRole:
+          "enrichment",
+        beginnerFriendlinessPriority:
+          "essential",
+        annualPerennialPreference:
+          "annual-only",
+        reversibilityRequirement:
+          "one-season",
+        wildlifePestPressure: [
+          "wild-birds"
+        ],
+        desiredRecommendationFormat:
+          "single"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id: "PROFILE-WINTER-STORAGE",
+
+    label:
+      "Experienced Winter-Storage Grower",
+
+    description:
+      "An experienced gardener with protected drying and rodent-proof storage who wants shelf-stable chicken supplements.",
+
+    answers: {
+      climate: {
+        climateType: "temperate",
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 10,
+        primaryFlockPurpose:
+          "eggs",
+        forageAccess:
+          "rotational-paddock"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 250,
+        availableSpaceTypes: [
+          "in-ground",
+          "fence-line"
+        ],
+        largestAreaShape:
+          "long-strip"
+      },
+
+      site: {
+        directSunHoursExact: 8,
+        windExposure: "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+        soilTexture: "loam",
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+        wateringFrequencyPreference:
+          "weekly",
+        waterConservationPriority:
+          "moderate",
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+        weeklyCropTime:
+          "3-5-hours",
+        acceptedProcessingTasks: [
+          "dry",
+          "remove-seed",
+          "clean-sort",
+          "winnow"
+        ],
+        dryingCapability:
+          "grain-moisture-skilled",
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays",
+          "rodent-proof"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dried-seed-heads",
+          "dry-seeds"
+        ],
+        harvestPatternPreference:
+          "major",
+        desiredStorageDuration:
+          "6-12-months",
+        minimalPreparationPriority:
+          "none",
+        dryStorageLocations: [
+          "climate-controlled"
+        ],
+        storageHumidity:
+          "consistently-dry",
+        dryCropContainerType:
+          "airtight-food-safe",
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "winter-storage",
+          "high-energy",
+          "self-reliance",
+          "seed-saving"
+        ],
+        goalPriorities: [
+          {
+            goal: "winter-storage",
+            rank: 1
+          },
+          {
+            goal: "self-reliance",
+            rank: 2
+          },
+          {
+            goal: "high-energy",
+            rank: 3
+          }
+        ],
+        preferredNutritionalRole:
+          "energy",
+        beginnerFriendlinessPriority:
+          "not-needed",
+        wildlifePestPressure: [
+          "wild-birds",
+          "rodents"
+        ],
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  })
+]);
+
   const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
     cropSchemaVersion: "1.0.0",
@@ -368,7 +987,11 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
     crops: Object.freeze({
       expectedCropIds: EXPECTED_CROP_IDS
-    })
+    }),
+    testing: Object.freeze({
+  sampleUserProfiles:
+    SAMPLE_USER_PROFILES
+})
   });
 
   /*

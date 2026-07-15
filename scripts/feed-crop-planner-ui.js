@@ -96,6 +96,7 @@
 
     renderCropRegistrationReport();
     renderCropValidationReport();
+    renderSunflowerSampleTests();
 
   }
 
@@ -306,10 +307,220 @@ function renderCropValidationReport() {
       .join("");
 }
 
+function renderSunflowerSampleTests() {
+  const summaryElement =
+    document.getElementById(
+      "sunflower-test-summary"
+    );
+
+  const resultsElement =
+    document.getElementById(
+      "sunflower-test-results"
+    );
+
+  if (
+    !namespace.engine ||
+    typeof namespace.engine
+      .runSunflowerSampleTests !==
+      "function"
+  ) {
+    if (summaryElement) {
+      summaryElement.textContent =
+        "Sunflower test engine is unavailable.";
+
+      summaryElement.className =
+        "foundation-status foundation-status-error";
+    }
+
+    return;
+  }
+
+  const testRun =
+    namespace.engine
+      .runSunflowerSampleTests();
+
+  if (!testRun.success) {
+    if (summaryElement) {
+      summaryElement.textContent =
+        testRun.error ||
+        "Sunflower tests could not run.";
+
+      summaryElement.className =
+        "foundation-status foundation-status-error";
+    }
+
+    return;
+  }
+
+  if (summaryElement) {
+    summaryElement.textContent =
+      `${testRun.profileCount} Sunflower profile tests completed successfully.`;
+
+    summaryElement.className =
+      "foundation-status foundation-status-success";
+  }
+
+  if (!resultsElement) {
+    return;
+  }
+
+  resultsElement.innerHTML =
+    testRun.results
+      .map(result => {
+        const categoryChips =
+          Object.entries(
+            result.categoryResults
+          )
+            .map(
+              ([category, categoryResult]) => {
+                const score =
+                  Number.isFinite(
+                    categoryResult.score
+                  )
+                    ? Math.round(
+                        categoryResult.score
+                      )
+                    : "N/A";
+
+                return `
+                  <span class="test-score-chip">
+                    ${category}: ${score}
+                  </span>
+                `;
+              }
+            )
+            .join("");
+
+        const usePaths =
+          result.usePathResults
+            .map(usePath => {
+              const failureClass =
+                usePath.hardFailure
+                  ? " use-path-failure"
+                  : "";
+
+              return `
+                <div class="use-path-test-card${failureClass}">
+
+                  <strong>
+                    ${usePath.label}
+                  </strong>
+
+                  <p>
+                    Score:
+                    ${Math.round(usePath.score)}
+                  </p>
+
+                  <p>
+                    Status:
+                    ${
+                      usePath.hardFailure
+                        ? "❌ Hard Failure"
+                        : "✅ Eligible"
+                    }
+                  </p>
+
+                  ${
+                    usePath.strengths.length > 0
+                      ? `
+                        <p>
+                          <strong>Strengths:</strong>
+                          ${usePath.strengths.join(" ")}
+                        </p>
+                      `
+                      : ""
+                  }
+
+                  ${
+                    usePath.limitations.length > 0
+                      ? `
+                        <p>
+                          <strong>Limitations:</strong>
+                          ${usePath.limitations.join(" ")}
+                        </p>
+                      `
+                      : ""
+                  }
+
+                  ${
+                    usePath.hardFailures.length > 0
+                      ? `
+                        <p>
+                          <strong>Failures:</strong>
+                          ${usePath.hardFailures.join(" ")}
+                        </p>
+                      `
+                      : ""
+                  }
+
+                </div>
+              `;
+            })
+            .join("");
+
+        return `
+          <article class="sunflower-test-result">
+
+            <h3>
+              ${result.profileLabel}
+            </h3>
+
+            <p>
+              <strong>Overall Sunflower Score:</strong>
+              ${result.finalScore}%
+            </p>
+
+            <p>
+              <strong>Tier:</strong>
+              ${
+                result.tier?.label ||
+                "Unavailable"
+              }
+            </p>
+
+            <p>
+              <strong>Confidence:</strong>
+              ${
+                result.confidenceLabel
+                  ?.label ||
+                "Unavailable"
+              }
+              (${result.confidenceScore}%)
+            </p>
+
+            <p>
+              <strong>Best Use Path:</strong>
+              ${
+                result.bestUsePath
+                  ?.label ||
+                "No eligible use path"
+              }
+            </p>
+
+            <div class="test-score-row">
+              ${categoryChips}
+            </div>
+
+            <p>
+              <strong>Wildlife Penalty:</strong>
+              ${result.wildlife.penalty} points
+            </p>
+
+            <h4>Use-Path Results</h4>
+
+            ${usePaths}
+
+          </article>
+        `;
+      })
+      .join("");
+}
+
   namespace.ui = Object.freeze({
     initializeDevelopmentPage,
     renderCropRegistrationReport,
-    renderCropValidationReport
+    renderCropValidationReport,
+    renderSunflowerSampleTests
   });
 
 })(window);
