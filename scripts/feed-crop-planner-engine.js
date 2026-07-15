@@ -4459,19 +4459,25 @@ function scoreGenericCropProfile(
       : -25;
 
   const lifecycleFailure =
-    lifecycleAdjustment
-      .hardFailure === true;
+  lifecycleAdjustment
+    .hardFailure === true;
 
-  const finalScore =
-    lifecycleFailure
-      ? 0
-      : clampScore(
-          baseScore -
-          wildlife.penalty +
-          usePathModifier +
-          lifecycleAdjustment
-            .adjustment
-        );
+const noEligibleUsePath =
+  bestUsePath === null;
+
+const finalScore =
+  (
+    lifecycleFailure ||
+    noEligibleUsePath
+  )
+    ? 0
+    : clampScore(
+        baseScore -
+        wildlife.penalty +
+        usePathModifier +
+        lifecycleAdjustment
+          .adjustment
+      );
 
   const knownCategoryCount =
     Object.values(categoryResults)
@@ -4527,7 +4533,10 @@ function scoreGenericCropProfile(
 
     usePathResults,
 
-    bestUsePath
+    bestUsePath,
+
+    noEligibleUsePath
+
   };
 }
 
