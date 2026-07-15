@@ -1885,6 +1885,16 @@ function scoreGenericSpaceFit(
     answers.space
       ?.totalGrowingAreaSqFt;
 
+  const plantBehaviorRestrictions =
+  answers.space
+    ?.plantBehaviorRestrictions ||
+  [];
+
+  const overflowOptions =
+  answers.space
+    ?.overflowOptions ||
+  [];
+
   const typeScores =
     spaceTypes
       .map(spaceType => {
@@ -1935,7 +1945,7 @@ function scoreGenericSpaceFit(
     }
   }
 
-  const score =
+  let score =
     weightedAverageKnown([
       {
         value: bestTypeScore,
@@ -1951,15 +1961,36 @@ function scoreGenericSpaceFit(
       }
     ]);
 
+    if (
+  spaceData.vineSpreadRequired === true &&
+  plantBehaviorRestrictions.includes(
+    "no-vines-outside-bed"
+  ) &&
+  overflowOptions.length === 0
+) {
+  score =
+    Number.isFinite(score)
+      ? score - 35
+      : 35;
+}
+
   return {
     score: clampScore(score),
 
     reason:
-      score >= 85
-        ? "The crop fits the selected space type, layout, and growing scale well."
-        : score >= 60
-          ? "The crop can fit, but the available space creates some limitations."
-          : "The selected space is a weak fit for this crop."
+  (
+    spaceData.vineSpreadRequired === true &&
+    plantBehaviorRestrictions.includes(
+      "no-vines-outside-bed"
+    ) &&
+    overflowOptions.length === 0
+  )
+    ? "This crop requires vine-spread space, but the visitor does not allow vines outside the planting bed."
+    : score >= 85
+      ? "The crop fits the selected space type, layout, and growing scale well."
+      : score >= 60
+        ? "The crop can fit, but the available space creates some limitations."
+        : "The selected space is a weak fit for this crop."
   };
 }
 
@@ -2462,15 +2493,32 @@ if (
 }
 
 if (
-  usePath.curingRequired &&
-  !acceptedProcessing.includes(
-    "cure"
+  usePath.requiredProcessingTasks
+    ?.includes(
+      "harvest-heavy-fruit"
+    ) &&
+  !ownedEquipment.includes(
+    "cart"
   )
+) {
+  score -= 5;
+
+  limitations.push(
+    "Heavy fruit may be harder to move without a cart or assistance."
+  );
+}
+
+if (
+  usePath.curingRequired &&
+  usePath.storageMethods?.includes(
+    "cool-dry-ventilated"
+  ) &&
+  dryStorageLocations.length === 0
 ) {
   score -= 18;
 
   limitations.push(
-    "This use path requires curing, but curing was not selected."
+    "This storage path needs a suitable cool, dry, ventilated location."
   );
 }
 
@@ -2567,6 +2615,11 @@ if (
       "Rodent protection is weak for this storage path."
     );
   }
+
+  const dryStorageLocations =
+  answers.harvestStorage
+    ?.dryStorageLocations ||
+  [];
 
   const finalScore =
     hardFailures.length > 0

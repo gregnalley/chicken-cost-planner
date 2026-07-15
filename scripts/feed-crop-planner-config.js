@@ -1411,6 +1411,346 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
   Object.freeze({
     id:
+      "PROFILE-PUMPKIN-WINTER-STORAGE",
+
+    label:
+      "Large Garden Winter-Squash Storage Plan",
+
+    description:
+      "A homestead grower with unused lawn space, reliable irrigation, a long warm season, and cool dry storage for whole Squash and Pumpkins.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 12,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "limited-weekly"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 600,
+
+        availableSpaceTypes: [
+          "in-ground",
+          "unused-lawn",
+          "open-field"
+        ],
+
+        largestAreaShape:
+          "long-strip"
+      },
+
+      site: {
+        directSunHoursExact: 9,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+
+        wateringFrequencyPreference:
+          "twice-weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "intermediate",
+
+        weeklyCropTime:
+          "3-5-hours",
+
+        acceptedProcessingTasks: [
+          "harvest-heavy-fruit",
+          "chop",
+          "cure",
+          "clean-sort"
+        ],
+
+        dryingCapability:
+          "none",
+
+        ownedEquipment: [
+          "cart",
+          "hand-pruners",
+          "cool-storage"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "whole-storage-vegetables",
+          "winter-storage-produce",
+          "pumpkin-squash-flesh"
+        ],
+
+        harvestPatternPreference:
+          "major",
+
+        desiredStorageDuration:
+          "3-6-months",
+
+        minimalPreparationPriority:
+          "moderate",
+
+        dryStorageLocations: [
+          "cool-storage",
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        rodentProtection:
+          "rodent-proof-room"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "winter-storage",
+          "enrichment",
+          "shared-household-food",
+          "self-reliance",
+          "use-unused-space",
+          "pollinators"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "winter-storage",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "shared-household-food",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "self-reliance",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "storage-produce",
+
+        beginnerFriendlinessPriority:
+          "moderate",
+
+        wildlifePestPressure: [
+          "deer",
+          "rodents",
+          "groundhogs"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id:
+      "PROFILE-PUMPKIN-SMALL-NO-OVERFLOW",
+
+    label:
+      "Small Raised Bed with No Vine Overflow",
+
+    description:
+      "A beginner with one small raised bed, no lawn or fence-line overflow, limited weekly time, and no storage area.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "150-179"
+      },
+
+      flock: {
+        flockSize: 5,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 32,
+
+        availableSpaceTypes: [
+          "raised-bed"
+        ],
+
+        largestAreaShape:
+          "small-beds",
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "no-vines-outside-bed"
+        ]
+      },
+
+      site: {
+        directSunHoursExact: 8,
+
+        windExposure:
+          "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "raised-bed-mix",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "chop"
+        ],
+
+        dryingCapability:
+          "none",
+
+        ownedEquipment: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-fruit",
+          "pumpkin-squash-flesh"
+        ],
+
+        harvestPatternPreference:
+          "several",
+
+        minimalPreparationPriority:
+          "top",
+
+        desiredStorageDuration:
+          "immediate",
+
+        dryStorageLocations: [],
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "enrichment",
+          "edible-landscape",
+          "fast-value"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "enrichment",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "edible-landscape",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "fast-value",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "enrichment",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  })
+]);
+
+  Object.freeze({
+    id:
       "PROFILE-FALL-FORAGE-FRAME",
 
     label:
@@ -1564,9 +1904,8 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
-  })
-
-]);
+    
+  });
 
   const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
