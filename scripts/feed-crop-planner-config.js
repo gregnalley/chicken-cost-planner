@@ -2580,6 +2580,444 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
+  }),
+
+  // ==================================================
+  // MULBERRY TEST PROFILES
+  // ==================================================
+
+  // --------------------------------------------------
+  // Profile 18: Established Orchard and Silvopasture
+  // ID: PROFILE-MULBERRY-ORCHARD-SILVOPASTURE
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-MULBERRY-ORCHARD-SILVOPASTURE",
+
+    label:
+      "Established Orchard and Silvopasture Plan",
+
+    description:
+      "A long-term homestead grower with ample permanent space, an orchard and rotational paddocks, established tree-care skills, and goals centered on shade, fresh fruit, leafy forage, household food, and durable perennial production.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 20,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "rotational-paddock"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 5000,
+
+        availableSpaceTypes: [
+          "orchard",
+          "rotational-paddock",
+          "unused-lawn",
+          "open-field",
+          "hedgerow"
+        ],
+
+        largestAreaShape:
+          "irregular",
+
+        overflowOptions: [
+          "orchard-floor",
+          "unused-lawn",
+          "open-field"
+        ],
+
+        plantBehaviorRestrictions: []
+      },
+
+      site: {
+        directSunHoursExact: 9,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained",
+
+        soilDepthCategory:
+          "deep",
+
+        soilPHCategory:
+          "near-neutral"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+
+        weeklyCropTime:
+          "3-5-hours",
+
+        acceptedProcessingTasks: [
+          "pick-produce",
+          "cut-leaves",
+          "clean-sort",
+          "dry",
+          "chop"
+        ],
+
+        dryingCapability:
+          "large-covered",
+
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays",
+          "rodent-proof"
+        ],
+
+        ownedEquipment: [
+          "fencing",
+          "temporary-fencing",
+          "tree-guard",
+          "hand-pruners",
+          "loppers",
+          "pruning-saw",
+          "harvest-sheet",
+          "basket",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "food-safe-bucket",
+          "drip-irrigation"
+        ],
+
+        equipmentPurchaseWillingness: [
+          "moisture-meter"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-fruit",
+          "fallen-fruit",
+          "mulberries",
+          "fresh-greens",
+          "fresh-forage",
+          "mulberry-leaves",
+          "dried-forage",
+          "dried-leaves",
+          "mulberry-leaf-forage"
+        ],
+
+        harvestPatternPreference:
+          "mixed",
+
+        desiredStorageDuration:
+          "3-6-months",
+
+        minimalPreparationPriority:
+          "low",
+
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        dryCropContainerType:
+          "airtight-food-safe",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "living-forage",
+          "winter-storage",
+          "enrichment",
+          "shade",
+          "privacy-screening",
+          "compost-biomass",
+          "shared-household-food",
+          "self-reliance",
+          "edible-landscape",
+          "use-unused-space"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "self-reliance",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "shared-household-food",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "shade",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "diversified",
+
+        beginnerFriendlinessPriority:
+          "low",
+
+        annualPerennialPreference:
+          "perennial-preferred",
+
+        reversibilityRequirement:
+          "permanent-planting-allowed",
+
+        wildlifePestPressure: [
+          "wild-birds",
+          "deer",
+          "raccoons",
+          "squirrels"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  // --------------------------------------------------
+  // Profile 19: Temporary Small Rental Garden
+  // ID: PROFILE-MULBERRY-TEMPORARY-RENTAL
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-MULBERRY-TEMPORARY-RENTAL",
+
+    label:
+      "Temporary Small Rental Garden Plan",
+
+    description:
+      "A beginner renting a property with only a few containers and one small raised bed, no permission for permanent trees, very little labor, and a need for fast, reversible fresh chicken greens.",
+
+    answers: {
+      climate: {
+        climateType:
+          "temperate",
+
+        frostFreeSeasonRange:
+          "150-179"
+      },
+
+      flock: {
+        flockSize: 4,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 28,
+
+        availableSpaceTypes: [
+          "containers",
+          "raised-bed"
+        ],
+
+        largestAreaShape:
+          "small-beds",
+
+        containerCount: 4,
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "no-trees",
+          "no-permanent-plantings",
+          "must-remain-small"
+        ]
+      },
+
+      site: {
+        directSunHoursExact: 6,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "commercial-mix",
+
+        soilTexture:
+          "commercial-mix",
+
+        soilDrainage:
+          "well-drained",
+
+        soilDepthCategory:
+          "shallow",
+
+        soilPHCategory:
+          "unknown"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "cut-leaves",
+          "pick-produce"
+        ],
+
+        dryingCapability:
+          "none",
+
+        dryingFacilities: [],
+
+        ownedEquipment: [],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-forage",
+          "fresh-vegetables"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        desiredStorageDuration:
+          "immediate",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        storageHumidity:
+          "usually-dry",
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "enrichment",
+          "fast-value",
+          "edible-landscape"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "fast-value",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "enrichment",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "annual-only",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
 
   // ==================================================
@@ -2587,6 +3025,7 @@ const HARVEST_FREQUENCY_CATEGORIES =
   // ==================================================
 
 ]);
+
 
 
 // ==================================================
@@ -2974,9 +3413,58 @@ const PROFILE_MATRIX_EXPECTATIONS =
 
         notes:
           "Alfalfa should not lead. Poor drainage, shallow acidic soil, humidity, limited space, and the one-season reversibility requirement should favor simpler fresh-green crops."
+         }),
+
+    // ==================================================
+    // MULBERRY PROFILE MATRIX EXPECTATIONS
+    // ==================================================
+
+    "PROFILE-MULBERRY-ORCHARD-SILVOPASTURE":
+      Object.freeze({
+        profileNumber: 18,
+
+        purpose:
+          "Tests a permanent orchard and silvopasture system with ample space, full sun, deep well-drained soil, tree-management skills, fresh fruit, leafy forage, household food, shade, and long-term self-reliance goals.",
+
+        expectedTopCropIds: [
+          "CROP-MULBERRY"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-MULBERRY",
+          "CROP-ALFALFA",
+          "CROP-WHITE-CLOVER"
+        ],
+
+        notes:
+          "Mulberry should lead because this profile rewards permanent tree space, orchard integration, seasonal fruit, cut-and-carry leaves, household food, shade, biomass, and long-term multipurpose production."
+      }),
+
+    "PROFILE-MULBERRY-TEMPORARY-RENTAL":
+      Object.freeze({
+        profileNumber: 19,
+
+        purpose:
+          "Tests conditions that should strongly reject Mulberry: a rental property, containers and one small raised bed, no permission for trees, annual-only planting, one-season reversibility, minimal labor, and a need for immediate fresh greens.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA",
+          "CROP-WHITE-CLOVER"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA",
+          "CROP-WHITE-CLOVER"
+        ],
+
+        notes:
+          "Mulberry should not lead. Permanent-tree requirements, long establishment time, mature size, and poor container efficiency should favor fast reversible fresh-green crops."
       })
 
   });
+
 
 const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
