@@ -2719,9 +2719,6 @@ const HARVEST_FREQUENCY_CATEGORIES =
         "fresh-fruit",
         "fallen-fruit",
         "mulberries",
-        "fresh-produce",
-        "fresh-greens",
-        "fresh-forage",
         "mulberry-leaves",
         "leafy-branches"
       ],
@@ -2746,8 +2743,6 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
     preferences: {
       plannerGoals: [
-        "fresh-greens",
-        "living-forage",
         "enrichment",
         "shade",
         "privacy-screening",
