@@ -2328,7 +2328,1712 @@ const BCP_FEED_CROPS = {
         "Calculate scores only after multiple crops have comparable evidence and complete data.",
         "Plant-density estimates use approximately 1.5 inches between plants and a midpoint row spacing of 25 inches; these values are intended for compact or semi-erect row-grown varieties rather than spreading or climbing cowpeas.",
       ]
+    },
+
+    plannerData: {
+  schemaVersion: "1.0.0",
+
+  developmentStatus:
+    "testing",
+
+  identity: {
+    plannerName:
+      "Cowpeas",
+
+    shortLabel:
+      "Cowpea",
+
+    icon:
+      "🫘",
+
+    cropCategory:
+      "legume",
+
+    primaryFeedCategory:
+      "protein-oriented",
+
+    guideUrl:
+      "growing-cowpeas-for-chickens.html"
+  },
+
+  lifecycle: {
+    growthCycle:
+      "annual",
+
+    isAnnual: true,
+    isBiennial: false,
+    isPerennial: false,
+    isTreeOrShrub: false,
+
+    yearsToFirstUsefulHarvest: 0,
+    yearsToFullProduction: 0,
+    expectedUsefulLifeYears: 1,
+
+    regrowsAfterHarvest: true,
+
+    permanentPlantingRequired: false,
+    reversibleAfterOneSeason: true
+  },
+
+  climate: {
+    suitableClimateTypes: [
+      "temperate",
+      "hot-humid",
+      "hot-dry",
+      "mild-winter"
+    ],
+
+    preferredClimateTypes: [
+      "hot-humid",
+      "hot-dry"
+    ],
+
+    challengingClimateTypes: [
+      "cold-short-summer",
+      "cool-moderate-summer",
+      "high-elevation"
+    ],
+
+    minimumFrostFreeDays: null,
+    preferredFrostFreeDays: null,
+
+    minimumSoilTemperatureF: 65,
+    preferredSoilTemperatureF: 70,
+
+    daysToMaturityMinimum: null,
+    daysToMaturityMaximum: null,
+
+    dryDownBufferDays: null,
+
+    heatToleranceScore: 5,
+
+    droughtClimateToleranceScore: 5,
+
+    humidityToleranceScore: 4,
+
+    coolSummerToleranceScore: 2,
+
+    frostSensitivityScore: 5,
+
+    winterHardinessRequired: false,
+
+    seasonExtensionBenefits: [
+      "Black plastic or other soil-warming methods may improve establishment in cool spring conditions.",
+      "Selecting an early bush variety may improve mature-seed success in shorter growing seasons.",
+      "Indoor starting may provide limited benefit, but Cowpeas are generally straightforward to direct-seed after the soil warms."
+    ],
+
+    indoorSeedStartingBenefitScore: 2,
+
+    directFacts: {
+      seasonType:
+        "warm-season",
+
+      frostSensitive: true,
+
+      plantAfterFrostDanger: true,
+
+      warmSoilRequired: true,
+
+      germinationSoilTemperatureFMinimum:
+        65,
+
+      preferredGerminationSoilTemperatureF:
+        70,
+
+      optimumGrowthTemperatureFApproximate:
+        86,
+
+      maturityHighlyVarietyDependent:
+        true,
+
+      notes: [
+        "Cowpeas are heat-loving warm-season legumes.",
+        "Cold soil can delay germination and increase seed-decay risk.",
+        "The crop performs especially well during hot summer weather.",
+        "Cowpeas tolerate drought better than many garden legumes after establishment.",
+        "Drought during flowering and pod filling can still reduce pod and mature-seed production.",
+        "Bush, semi-vining, and trailing cultivars can differ considerably in maturity and space use.",
+        "Exact maturity ranges remain null until the planner separates leaf, fresh-pod, and dry-seed production by variety."
+      ]
     }
+  },
+
+  site: {
+    absoluteMinimumSunHours: null,
+
+    productiveMinimumSunHours: 6,
+
+    preferredSunHours: 8,
+
+    shadeToleranceScore: 2,
+
+    afternoonShadeBenefitInHeat: 2,
+
+    windToleranceScore: 4,
+
+    lodgingRiskScore: 2,
+
+    reflectedHeatToleranceScore: 5,
+
+    airflowRequirementScore: 4,
+
+    frostPocketSensitivityScore: 5,
+
+    treeRootCompetitionToleranceScore: 3,
+
+    hardscapeConflictRiskScore: 2,
+
+    structureConflictRiskScore: 2,
+
+    utilityConflictRiskScore: 1,
+
+    fruitDropMessRiskScore: 1,
+
+    stainingRiskScore: 1,
+
+    directFacts: {
+      preferredLight:
+        "full-sun",
+
+      productiveSunGuidance:
+        "At least 6 hours of direct sunlight, with approximately 8 hours preferred for dense growth, flowering, and pod production.",
+
+      windExposureConcern:
+        false,
+
+      growthHabits: [
+        "bush",
+        "semi-vining",
+        "trailing",
+        "climbing"
+      ],
+
+      notes: [
+        "Cowpeas perform best in full sun.",
+        "Reduced light can lower flowering, pod production, and stand density.",
+        "Bush cultivars are easier to contain in beds and rows.",
+        "Trailing and climbing cultivars may use fences or trellises but can spread into nearby crops.",
+        "Cowpeas tolerate reflected summer heat better than most cool-season garden crops.",
+        "Good airflow is valuable in humid regions because dense foliage can retain moisture.",
+        "The crop is highly frost sensitive and should not be placed in cold low spots when the growing season is marginal."
+      ]
+    }
+  },
+
+  soil: {
+    textureScores: {
+      heavyClay: 2,
+      clayLoam: 4,
+      loam: 5,
+      sandyLoam: 5,
+      verySandy: 4,
+      rocky: 2
+    },
+
+    drainageRequirementScore: 5,
+
+    temporaryWetToleranceScore: 2,
+
+    waterloggingSensitivityScore: 4,
+
+    minimumSoilDepthIn: null,
+    preferredSoilDepthIn: 18,
+
+    compactionToleranceScore: 2,
+
+    establishmentInSodDifficultyScore: 4,
+
+    preferredPHMinimum: 5.5,
+    preferredPHMaximum: 7.0,
+
+    survivalPHMinimum: null,
+    survivalPHMaximum: null,
+
+    fertilityRequirementScore: 2,
+
+    nitrogenRequirementScore: 1,
+    phosphorusRequirementScore: 3,
+    potassiumRequirementScore: 3,
+
+    benefitsFromInoculation: true,
+
+    inoculantType:
+      "Cowpea-group Bradyrhizobium inoculant",
+
+    saltToleranceScore: null,
+
+    amendmentEffortScore: 2,
+
+    directFacts: {
+      preferredDrainage:
+        "well-drained",
+
+      preferredTextures: [
+        "sandy loam",
+        "loam",
+        "well-drained clay loam"
+      ],
+
+      poorSoilAdaptation:
+        true,
+
+      sandySoilAdaptation:
+        true,
+
+      waterloggedSoilSuitable:
+        false,
+
+      nitrogenFixingLegume:
+        true,
+
+      inoculationMayImproveNodulation:
+        true,
+
+      notes: [
+        "Cowpeas are notably adaptable to sandy and relatively low-fertility soils.",
+        "Well-drained loam or sandy loam is especially suitable.",
+        "Heavy or compacted clay receives a low rating when drainage and root development are restricted.",
+        "Cowpeas can obtain much of their nitrogen through symbiotic nitrogen fixation when compatible bacteria are present.",
+        "Cowpea-group inoculant may improve nodulation where Cowpeas or compatible legumes have not recently grown.",
+        "Nitrogen fixation does not remove the crop's need for suitable phosphorus, potassium, sulfur, pH, and general soil health.",
+        "Large nitrogen applications can encourage foliage while reducing the plant's reliance on biological nitrogen fixation.",
+        "The stored pH range is a productive planning range rather than an absolute survival boundary."
+      ]
+    }
+  },
+
+  water: {
+    overallWaterRequirementLevel:
+      "low",
+
+    germinationWaterNeedLevel:
+      "moderate",
+
+    establishmentWaterNeedLevel:
+      "moderate",
+
+    matureWaterNeedLevel:
+      "low",
+
+    floweringWaterNeedLevel:
+      "moderate",
+
+    harvestDevelopmentWaterNeedLevel:
+      "moderate",
+
+    droughtSurvivalScore: 5,
+
+    droughtYieldRetentionScore: 4,
+
+    criticalGrowthStages: [
+      "germination",
+      "seedling-establishment",
+      "flowering",
+      "pod-setting",
+      "seed-filling"
+    ],
+
+    criticalStageWaterImportanceScore: 4,
+
+    overwateringSensitivityScore: 4,
+
+    waterloggingSensitivityScore: 4,
+
+    dripIrrigationBenefitScore: 4,
+
+    mulchBenefitScore: 4,
+
+    suitableForRainfallOnlyScore: 4,
+
+    suitableForLimitedIrrigationScore: 5,
+
+    containerDryingRiskScore: 4,
+
+    establishmentYearsRequiringExtraWater: 0,
+
+    directFacts: {
+      droughtTolerantAfterEstablishment:
+        true,
+
+      establishmentMoistureImportant:
+        true,
+
+      floweringMoistureImportant:
+        true,
+
+      podFillMoistureImportant:
+        true,
+
+      standingWaterSuitable:
+        false,
+
+      notes: [
+        "Cowpeas are among the strongest limited-irrigation crops in the initial planner database.",
+        "Seed needs moisture for germination and early establishment.",
+        "Established plants can tolerate extended dry periods better than many common vegetables.",
+        "Severe moisture stress during flowering, pod set, and seed filling can reduce usable harvest.",
+        "Excess irrigation and saturated soil can increase root and disease problems.",
+        "Drip irrigation can provide critical-stage water while keeping foliage drier in humid climates.",
+        "Mulch can conserve moisture, but extremely thick wet mulch should not remain against stems.",
+        "Container-grown Cowpeas may dry considerably faster than plants rooted in open soil."
+      ]
+    }
+  },
+
+  space: {
+    minimumTrialAreaSqFt: null,
+
+    minimumUsefulAreaSqFt: null,
+
+    preferredProductionAreaSqFt: null,
+
+    smallSpaceScore: 5,
+
+    mediumSpaceScore: 5,
+
+    largeSpaceScore: 4,
+
+    layoutScores: {
+      squareBlock: 4,
+      wideRectangle: 5,
+      longStrip: 5,
+      irregular: 4,
+      smallBeds: 5,
+      openField: 5
+    },
+
+    spaceTypeScores: {
+      inGround: 5,
+      raisedBed: 5,
+      container: 4,
+      fenceLine: 5,
+      buildingEdge: 4,
+      unusedLawn: 4,
+      openField: 5,
+      orchard: 3,
+      forageFrame: 3,
+      rotationalPaddock: 4,
+      greenhouse: 2,
+      hedgerow: 4
+    },
+
+    minimumContainerGallons: null,
+
+    containerUseLimitation:
+      "Bush or compact Cowpeas can produce leaves and some pods in containers, but container volume and frequent watering limit larger feed harvests.",
+
+    minimumRaisedBedDepthIn: null,
+
+    vineSpreadRequired: false,
+
+    verticalSupportBenefitScore: 4,
+
+    blockPlantingRequired: false,
+
+    minimumBlockRows: null,
+
+    continuousStandPreferred: false,
+
+    heightCategory:
+      "variety-dependent-low-to-vining",
+
+    matureWidthCategory:
+      "variety-dependent",
+
+    overflowSpaceBenefitScore: 4,
+
+    directFacts: {
+      layoutFlexible: true,
+
+      blockPollinationRequired: false,
+
+      bushVarietiesAvailable: true,
+
+      viningVarietiesAvailable: true,
+
+      trellisOptionalByVariety: true,
+
+      suitableForSuccessiveHarvest:
+        true,
+
+      notes: [
+        "Cowpeas can be planted in beds, rows, long strips, containers, or larger field stands.",
+        "Bush cultivars provide the strongest small-bed and container fit.",
+        "Trailing cultivars can cover open soil and suppress weeds but require more lateral space.",
+        "Climbing or semi-vining cultivars may be trained along fences or trellises.",
+        "The crop does not require Corn-style block planting.",
+        "Plants grown for foliage can be planted and managed differently from plants grown for dry seed.",
+        "Unprotected plants inside a chicken run may be eaten or scratched out before they establish.",
+        "Protected strips, rotational paddocks, or cut-and-carry beds are more practical than permanent unrestricted run planting.",
+        "Minimum useful and production areas remain null until tested against flock size and harvest form."
+      ]
+    }
+  },
+
+  flock: {
+    suitableForAdultChickens: true,
+
+    suitableForYoungChicks: false,
+
+    flockPurposeScores: {
+      eggs: 4,
+      meat: 4,
+      breeding: 3,
+      petsEnrichment: 4,
+      homestead: 5,
+      mixed: 5
+    },
+
+    feedingMethodScores: {
+      livingGrazing: 3,
+      cutAndCarry: 5,
+      wholeProduce: 4,
+      wholeSeedHeads: 1,
+      wholeGrain: 2,
+      processedGrain: 4,
+      heatTreated: 5,
+      driedForage: 3,
+      winterStorage: 4
+    },
+
+    directRunSuitabilityScore: 2,
+
+    forageFrameSuitabilityScore: 3,
+
+    rotationalPaddockSuitabilityScore: 4,
+
+    confinedFlockValueScore: 5,
+
+    pasturedFlockValueScore: 4,
+
+    treatDilutionRiskScore: 3,
+
+    highEnergySupplement: false,
+
+    highFiberSupplement: true,
+
+    concentratedFatSource: false,
+
+    primaryFlockUses: [
+      "Fresh cut-and-carry foliage",
+      "Tender immature pods",
+      "Cooked mature seed",
+      "Summer forage diversity",
+      "Protein-oriented supplemental plant material"
+    ],
+
+    unsuitablePrimaryUses: [
+      "Complete-ration replacement",
+      "Unrestricted raw dry-seed feeding",
+      "Permanent unprotected run forage",
+      "Primary young-chick feed",
+      "High-energy grain replacement"
+    ],
+
+    directFacts: {
+      edibleFeedParts: [
+        "Fresh leaves",
+        "Tender vine tips",
+        "Tender immature pods",
+        "Properly prepared mature seed"
+      ],
+
+      preferredBirdStage:
+        "Established adult chickens",
+
+      cropSurvivalWithDirectChickenAccess:
+        "poor-to-moderate-before-establishment",
+
+      directAccessTiming:
+        "Allow plants to establish before controlled grazing, or harvest foliage outside the run for cut-and-carry feeding.",
+
+      nutritionalOrientation: [
+        "protein-oriented",
+        "fresh-forage",
+        "fiber",
+        "household-food",
+        "soil-building"
+      ],
+
+      balancedFeedReplacement:
+        false,
+
+      notes: [
+        "Cowpea foliage and tender pods offer a different use path from mature dry seed.",
+        "Fresh plant material is best introduced as a supplemental forage rather than a complete feed.",
+        "Mature dry seed is more concentrated but requires greater processing and portion control.",
+        "The planner uses a conservative cooked-seed path because dry Cowpea seeds contain antinutritional compounds whose activity can be reduced through appropriate preparation.",
+        "Cowpea seed is protein-oriented but does not provide a complete poultry amino-acid, vitamin, mineral, and calcium balance.",
+        "Young chicks should continue receiving an age-appropriate complete starter ration.",
+        "Direct unrestricted access can destroy a small Cowpea planting before it produces pods or seed."
+      ]
+    }
+  },
+
+  labor: {
+    beginnerFriendlinessScore: 4,
+
+    plantingEaseScore: 5,
+
+    establishmentEaseScore: 4,
+
+    routineMaintenanceEaseScore: 4,
+
+    weedControlEaseScore: 4,
+
+    wildlifeProtectionEaseScore: 3,
+
+    harvestEaseScore: 4,
+
+    freshFoliageProcessingEaseScore: 5,
+
+    tenderPodProcessingEaseScore: 5,
+
+    matureSeedProcessingEaseScore: 2,
+
+    dryingEaseScore: 3,
+
+    storageMonitoringEaseScore: 3,
+
+    perennialMaintenanceEaseScore: 5,
+
+    physicalAccessibilityScore: 4,
+
+    heavyLiftingRiskScore: 1,
+
+    weeklyLaborLevel:
+      "low",
+
+    peakWorkloadLevel:
+      "moderate",
+
+    harvestFrequencyCategory:
+      "several-weekly",
+
+    requiredPlantingTasks: [
+      "prepare-seedbed",
+      "plant-large-seed"
+    ],
+
+    optionalPlantingTasks: [
+      "inoculate-legume-seed",
+      "install-irrigation"
+    ],
+
+    requiredMaintenanceTasks: [
+      "hand-weed"
+    ],
+
+    optionalMaintenanceTasks: [
+      "mulch",
+      "trellis",
+      "protect-from-wildlife"
+    ],
+
+    requiredHarvestTasks: [
+      "cut-leaves",
+      "pick-produce"
+    ],
+
+    usePathProcessingTasks: {
+      freshFoliage: [
+        "cut-leaves"
+      ],
+
+      tenderImmaturePods: [
+        "pick-produce"
+      ],
+
+      matureCookedSeed: [
+        "pick-produce",
+        "dry",
+        "shell-beans",
+        "clean-sort",
+        "cook"
+      ]
+    },
+
+    requiredStorageTasks: [
+      "inspect-moisture",
+      "inspect-insects",
+      "inspect-mold"
+    ],
+
+    specializedEquipmentRequired: [],
+
+    specializedEquipmentHelpful: [
+      "hand-pruners",
+      "trellis",
+      "stakes",
+      "drip-irrigation",
+      "drying-screen",
+      "fan",
+      "food-safe-bucket",
+      "metal-grain-can"
+    ],
+
+    suitableForLowTimeUsersScore: 4,
+
+    suitableForSoloGrowersScore: 5,
+
+    directFacts: {
+      seedSize:
+        "large-and-easy-to-handle",
+
+      directSeedingSuitable: true,
+
+      specializedHarvestEquipmentRequiredForBackyardScale:
+        false,
+
+      majorLaborBottlenecks: [
+        "Repeated foliage or pod harvesting",
+        "Protecting plants from deer, rabbits, and insects",
+        "Drying mature pods",
+        "Shelling dry beans",
+        "Cooking mature seed before the planner recommends feeding it",
+        "Monitoring stored seed for insects and moisture"
+      ],
+
+      notes: [
+        "Large seeds make Cowpeas easy to direct-seed.",
+        "Bush varieties require little structural management.",
+        "Vining varieties may need trellising or redirection.",
+        "Fresh foliage and tender pods require almost no processing.",
+        "Mature dry seed creates a much larger harvest and processing workload.",
+        "Harvest can be continuous for foliage and tender pods or concentrated for mature seed.",
+        "Small backyard plots can be managed entirely with ordinary hand tools."
+      ]
+    }
+  },
+
+  cost: {
+    seedOrPlantCostLevel:
+      "low",
+
+    soilPreparationCostLevel:
+      "low",
+
+    irrigationCostLevel:
+      "low",
+
+    protectionCostLevel:
+      "moderate",
+
+    processingEquipmentCostLevel:
+      "low",
+
+    storageCostLevel:
+      "low",
+
+    annualRecurringCostLevel:
+      "low",
+
+    longTermValueScore: 5,
+
+    lowestCostUsePath:
+      "fresh-foliage",
+
+    highestCostUsePath:
+      "mature-cooked-seed",
+
+    likelyCostDrivers: [
+      "Optional legume inoculant",
+      "Trellis or fence support for vining varieties",
+      "Deer or rabbit protection",
+      "Drying screens",
+      "Rodent-resistant storage containers",
+      "Cooking fuel or electricity"
+    ],
+
+    costReductionOptions: [
+      "Choose a bush variety for beds or containers.",
+      "Grow fresh foliage and tender pods rather than storing mature seed.",
+      "Use an existing fence for vining varieties.",
+      "Begin with a small direct-seeded trial.",
+      "Save seed from suitable open-pollinated varieties after learning isolation and selection requirements."
+    ],
+
+    directFacts: {
+      specializedPlantingEquipmentRequired:
+        false,
+
+      specializedBackyardHarvestEquipmentRequired:
+        false,
+
+      specializedProcessingEquipmentRequired:
+        false,
+
+      notes: [
+        "Cowpeas can be established inexpensively from seed.",
+        "Fertility requirements are generally modest where soil conditions and nodulation are suitable.",
+        "The fresh-use paths require little equipment.",
+        "The mature-seed path adds drying, shelling, cooking, and protected-storage costs.",
+        "Cost classifications are qualitative rather than current retail-price estimates."
+      ]
+    }
+  },
+
+  goals: {
+    feedReductionScore: 4,
+
+    energyProductionScore: 3,
+
+    proteinOrientedScore: 5,
+
+    freshGreensScore: 5,
+
+    livingForageScore: 3,
+
+    winterStorageScore: 4,
+
+    enrichmentScore: 4,
+
+    resilienceScore: 5,
+
+    soilImprovementScore: 5,
+
+    nitrogenFixationScore: 5,
+
+    groundCoverScore: 5,
+
+    erosionControlScore: 4,
+
+    shadeScore: 2,
+
+    privacyScreeningScore: 3,
+
+    pollinatorSupportScore: 4,
+
+    compostBiomassScore: 5,
+
+    householdFoodScore: 5,
+
+    seedSavingScore: 5,
+
+    selfRelianceScore: 5,
+
+    multipurposeValueScore: 5,
+
+    visualAppealScore: 3,
+
+    productionReliabilityScore: 4,
+
+    fastestValueScore: 5,
+
+    nonElectricStorageScore: 4,
+
+    smallFlockValueScore: 5,
+
+    largeFlockValueScore: 4,
+
+    primaryGoalMatches: [
+      "protein-oriented",
+      "fresh-greens",
+      "resilience-feed",
+      "soil-improvement",
+      "nitrogen-fixation",
+      "ground-cover",
+      "compost-biomass",
+      "shared-household-food",
+      "seed-saving",
+      "self-reliance",
+      "use-unused-space"
+    ],
+
+    weakGoalMatches: [
+      "high-energy",
+      "winter-living-forage",
+      "permanent-ground-cover",
+      "shade-tree",
+      "no-processing-dry-seed"
+    ],
+
+    directFacts: {
+      nitrogenFixingLegume: true,
+
+      humanFoodPotential: true,
+
+      pollinatorBenefit: true,
+
+      groundCoverPotential: true,
+
+      warmSeasonBiomassProduction:
+        true,
+
+      seedSavingPossible: true,
+
+      notes: [
+        "Cowpeas combine flock supplementation, human-food production, soil cover, biomass, and nitrogen fixation.",
+        "Fresh foliage and pods provide rapid first-season value.",
+        "Dry seed provides a storable protein-oriented product but requires more processing.",
+        "The crop is better suited to protein-oriented goals than to concentrated energy production.",
+        "Dense trailing stands can suppress weeds and protect soil.",
+        "Nitrogen fixed by the crop does not all become immediately available to the following crop, especially when most biomass is removed.",
+        "Open-pollinated varieties can support seed saving, although variety purity and seed health still require attention."
+      ]
+    }
+  },
+
+  risks: {
+    wildlife: {
+      wildBirds: 3,
+      deer: 5,
+      raccoons: 2,
+      squirrels: 2,
+      rabbits: 4,
+      rodents: 4,
+      groundhogs: 4
+    },
+
+    insectsRiskScore: 4,
+
+    diseaseRiskScore: 4,
+
+    lodgingRiskScore: 2,
+
+    fieldMoldRiskScore: 3,
+
+    dryingMoldRiskScore: 4,
+
+    storageMoldRiskScore: 4,
+
+    storedInsectRiskScore: 5,
+
+    spoilageSpeedRiskScore: 3,
+
+    invasivenessConcernRiskScore: 1,
+
+    selfSeedingRiskScore: 2,
+
+    fruitDropRiskScore: 1,
+
+    cropFailureRiskScore: 3,
+
+    stormDamageRiskScore: 2,
+
+    shadingOtherCropsRiskScore: 3,
+
+    overfeedingRiskScore: 3,
+
+    treatedSeedRiskScore: 5,
+
+    primaryRisks: [
+      {
+        id:
+          "deer-and-rabbit-damage",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "seedling",
+          "vegetative-growth",
+          "flowering"
+        ],
+
+        mitigationOptions: [
+          "Fencing",
+          "Protected beds",
+          "Row cover during establishment",
+          "Grow near regular human activity"
+        ],
+
+        note:
+          "Tender Cowpea foliage can be highly attractive to browsing wildlife."
+      },
+
+      {
+        id:
+          "cowpea-insect-pressure",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "vegetative-growth",
+          "flowering",
+          "pod-setting",
+          "storage"
+        ],
+
+        mitigationOptions: [
+          "Inspect plants regularly",
+          "Use locally adapted resistant varieties",
+          "Rotate crops",
+          "Harvest promptly",
+          "Store dry seed in suitable protected containers"
+        ],
+
+        note:
+          "Cowpeas can be affected by aphids, pod-feeding insects, weevils, beetles, and stored-seed pests."
+      },
+
+      {
+        id:
+          "humid-weather-disease",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "establishment",
+          "vegetative-growth",
+          "flowering",
+          "pod-development"
+        ],
+
+        mitigationOptions: [
+          "Use well-drained soil",
+          "Provide airflow",
+          "Avoid overhead watering late in the day",
+          "Rotate crop families",
+          "Choose resistant varieties"
+        ],
+
+        note:
+          "Warm humid conditions can increase foliar, root, and pod disease pressure."
+      },
+
+      {
+        id:
+          "dry-seed-antinutritional-factors",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "processing",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use the planner's cooked-seed path",
+          "Avoid unrestricted raw dry-bean feeding",
+          "Keep mature seed supplemental",
+          "Continue complete poultry feed"
+        ],
+
+        note:
+          "Mature dry Cowpea seed contains antinutritional compounds; appropriate preparation improves its practical feeding suitability."
+      },
+
+      {
+        id:
+          "stored-seed-insects",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "drying",
+          "storage"
+        ],
+
+        mitigationOptions: [
+          "Dry thoroughly",
+          "Clean and inspect seed",
+          "Use tightly sealed containers after adequate drying",
+          "Monitor for insects and heating",
+          "Discard questionable material"
+        ],
+
+        note:
+          "Stored Cowpea seed is vulnerable to bruchid and other stored-product insect damage."
+      },
+
+      {
+        id:
+          "chemically-treated-seed",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "planting",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use untreated seed for crops intended as feed",
+          "Keep treated planting seed separated and labeled"
+        ],
+
+        note:
+          "Chemically treated planting seed must not be fed to chickens."
+      }
+    ],
+
+    directFacts: {
+      highlyAttractiveToDeer:
+        true,
+
+      storedSeedInsectConcern:
+        true,
+
+      antinutritionalFactorsInDrySeed:
+        true,
+
+      heatAndDroughtAdapted:
+        true,
+
+      waterloggingConcern:
+        true,
+
+      multipleDiseasesPossible:
+        true,
+
+      notes: [
+        "Wildlife risk varies strongly by location, but deer and rabbits may severely damage small plots.",
+        "Insect pressure can be substantial in warm regions.",
+        "Stored dry Cowpeas require monitoring for insects and moisture.",
+        "Moldy, musty, heated, insect-damaged, or otherwise questionable seed should not be fed.",
+        "Dense wet foliage and poorly drained soil can increase disease risk.",
+        "Appropriate variety selection is one of the most important pest- and disease-management tools.",
+        "Fresh plant material should be sound and free from pesticide residues not labeled for feed use."
+      ]
+    }
+  },
+
+  seasonalRoles: {
+    earlySpring: false,
+
+    lateSpring: true,
+
+    summer: true,
+
+    lateSummer: true,
+
+    fall: true,
+
+    winterStorage: true,
+
+    perennial: false,
+
+    plantingWindows: [
+      {
+        id:
+          "direct-seed-warm-soil",
+
+        trigger:
+          "after-last-frost",
+
+        offsetWeeksMinimum: 2,
+        offsetWeeksMaximum: 5,
+
+        soilCondition:
+          "warm-and-well-drained",
+
+        method:
+          "direct-seed",
+
+        note:
+          "Plant after frost danger has passed and soil has warmed sufficiently for rapid germination."
+      },
+
+      {
+        id:
+          "successive-summer-sowing",
+
+        trigger:
+          "warm-soil",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        method:
+          "direct-seed",
+
+        note:
+          "Additional sowings may extend fresh-leaf and tender-pod harvest where the remaining warm season is long enough."
+      },
+
+      {
+        id:
+          "late-summer-cover-crop",
+
+        trigger:
+          "late-summer",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        method:
+          "direct-seed",
+
+        note:
+          "A late planting may provide biomass, soil cover, and tender foliage even when insufficient time remains for mature dry seed."
+      }
+    ],
+
+    harvestWindows: [
+      {
+        id:
+          "fresh-foliage",
+
+        trigger:
+          "established-vegetative-growth",
+
+        usePathId:
+          "fresh-foliage",
+
+        note:
+          "Harvest modest amounts of healthy leaves and tender vine tips after plants are well established."
+      },
+
+      {
+        id:
+          "tender-immature-pods",
+
+        trigger:
+          "pods-tender-before-seed-hardening",
+
+        usePathId:
+          "tender-immature-pods",
+
+        note:
+          "Pick green pods while tender for household or supplemental flock use."
+      },
+
+      {
+        id:
+          "mature-dry-seed",
+
+        trigger:
+          "pods-dry-and-seed-mature",
+
+        usePathId:
+          "mature-cooked-seed",
+
+        note:
+          "Harvest mature pods, dry and shell the seed, then cook before the planner recommends feeding it."
+      }
+    ],
+
+    cropSequenceRoles: [
+      "Warm-season annual legume",
+      "Summer fresh-forage crop",
+      "Tender-pod household crop",
+      "Late-summer soil-cover crop",
+      "Nitrogen-fixing rotation crop",
+      "Dry-seed winter-storage crop"
+    ],
+
+    seasonalLimitations: [
+      "Not frost tolerant",
+      "Poor germination in cold soil",
+      "Short seasons may not allow mature dry seed",
+      "Wet fall weather can complicate pod drying",
+      "Fresh foliage ends with frost"
+    ],
+
+    directFacts: {
+      warmSeasonAnnual: true,
+
+      commonlyDirectSeeded: true,
+
+      repeatedFreshHarvestPossible:
+        true,
+
+      drySeedRequiresFullSeason:
+        true,
+
+      notes: [
+        "Cowpeas are generally planted after the soil has warmed in late spring or early summer.",
+        "Fresh foliage can provide value before pod production.",
+        "Tender pods may be harvested repeatedly.",
+        "Mature seed harvest occurs later and requires dry-down.",
+        "Late-summer plantings may still provide cover and foliage even when they cannot mature dry seed.",
+        "Stored mature seed can extend usefulness into winter after drying, shelling, protected storage, and cooking."
+      ]
+    }
+  },
+
+  usePaths: [
+    {
+      id:
+        "fresh-foliage",
+
+      label:
+        "Fresh Cowpea Foliage",
+
+      description:
+        "Healthy leaves and tender vine tips harvested from established plants for limited cut-and-carry flock supplementation.",
+
+      primaryFeedRole:
+        "fresh-green-protein-oriented",
+
+      harvestProducts: [
+        "fresh-greens",
+        "whole-plant-enrichment"
+      ],
+
+      suitableFeedingMethods: [
+        "cut-and-carry",
+        "fresh-supplement",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-leaves"
+      ],
+
+      optionalProcessingTasks: [
+        "chop"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "basket"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "several-weekly",
+
+      storageMethods: [
+        "short-term-fresh"
+      ],
+
+      preferredStorageMethod:
+        "feed-soon-after-harvest",
+
+      storageDurationCategory:
+        "very-short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: true,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 2,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 3,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Offer only healthy, clean foliage free from mold, decay, and unapproved pesticide residues.",
+        "Avoid stripping so much foliage that plant growth and pod production collapse.",
+        "Introduce unfamiliar fresh plant material gradually.",
+        "Fresh foliage remains supplemental and should not replace balanced poultry feed."
+      ],
+
+      incompatibleUserTraits: [
+        "requires-long-term-storage",
+        "wants-dry-grain-only",
+        "requires-permanent-run-survival"
+      ]
+    },
+
+    {
+      id:
+        "tender-immature-pods",
+
+      label:
+        "Tender Immature Cowpea Pods",
+
+      description:
+        "Young green pods harvested before the seeds fully harden, suitable for household use and limited fresh flock supplementation.",
+
+      primaryFeedRole:
+        "fresh-produce-protein-oriented",
+
+      harvestProducts: [
+        "tender-pods",
+        "fresh-vegetables"
+      ],
+
+      suitableFeedingMethods: [
+        "whole-produce",
+        "fresh-supplement",
+        "measured-supplement"
+      ],
+
+      requiredProcessingTasks: [
+        "pick-produce"
+      ],
+
+      optionalProcessingTasks: [
+        "chop"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "basket"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "several-weekly",
+
+      storageMethods: [
+        "short-term-fresh",
+        "refrigerated"
+      ],
+
+      preferredStorageMethod:
+        "feed-fresh-or-refrigerate-briefly",
+
+      storageDurationCategory:
+        "short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: true,
+      freezingSuitable: true,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 2,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 4,
+
+      safetyWarnings: [
+        "Use only sound, tender pods without mold, decay, or unapproved pesticide residues.",
+        "Discard slimy, fermented, spoiled, or questionable pods.",
+        "Tender pods are supplemental and should not displace complete poultry feed."
+      ],
+
+      incompatibleUserTraits: [
+        "requires-long-term-room-temperature-storage",
+        "wants-dry-seed-only"
+      ]
+    },
+
+    {
+      id:
+        "mature-cooked-seed",
+
+      label:
+        "Mature Cooked Cowpea Seed",
+
+      description:
+        "Fully mature Cowpea seed harvested from dry pods, adequately dried and stored, then cooked before being offered as a measured supplemental food.",
+
+      primaryFeedRole:
+        "protein-oriented-storage",
+
+      harvestProducts: [
+        "dry-legumes"
+      ],
+
+      suitableFeedingMethods: [
+        "heat-treated",
+        "measured-supplement",
+        "winter-storage"
+      ],
+
+      requiredProcessingTasks: [
+        "pick-produce",
+        "dry",
+        "shell-beans",
+        "clean-sort",
+        "cook"
+      ],
+
+      optionalProcessingTasks: [
+        "chop"
+      ],
+
+      requiredEquipment: [
+        "cooking-equipment"
+      ],
+
+      helpfulEquipment: [
+        "drying-screen",
+        "fan",
+        "food-safe-bucket",
+        "metal-grain-can",
+        "moisture-meter"
+      ],
+
+      harvestPattern:
+        "major",
+
+      harvestFrequencyCategory:
+        "once-twice",
+
+      storageMethods: [
+        "dried-shelled"
+      ],
+
+      preferredStorageMethod:
+        "airtight-after-adequate-drying",
+
+      storageDurationCategory:
+        "long",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: true,
+
+      dryingRequired: true,
+      curingRequired: false,
+      shellingRequired: true,
+      threshingRequired: false,
+      cookingRequired: true,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 4,
+      rodentRiskScore: 5,
+      storedInsectRiskScore: 5,
+
+      harvestEaseScore: 3,
+      preparationEaseScore: 2,
+      beginnerSuitabilityScore: 2,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 4,
+
+      safetyWarnings: [
+        "The planner does not recommend unrestricted feeding of raw mature dry Cowpea seed.",
+        "Dry seed thoroughly before enclosed storage.",
+        "Cook mature seed before using this planner feeding path.",
+        "Do not feed moldy, musty, heated, insect-damaged, or otherwise questionable seed.",
+        "Do not feed salted, seasoned, flavored, canned-with-additives, or chemically treated seed.",
+        "Keep cooked Cowpeas supplemental to a complete poultry ration."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-drying",
+        "declines-shelling",
+        "declines-cooking",
+        "requires-minimal-processing",
+        "has-no-dry-storage",
+        "has-no-rodent-protected-storage"
+      ]
+    }
+  ],
+
+  dataQuality: {
+    overallConfidence:
+      0.76,
+
+    verifiedFields: [
+      "identity",
+      "lifecycle",
+      "climate.directFacts.seasonType",
+      "climate.directFacts.frostSensitive",
+      "climate.directFacts.warmSoilRequired",
+      "site.directFacts.preferredLight",
+      "soil.directFacts.poorSoilAdaptation",
+      "soil.directFacts.sandySoilAdaptation",
+      "soil.directFacts.nitrogenFixingLegume",
+      "soil.directFacts.inoculationMayImproveNodulation",
+      "water.directFacts.droughtTolerantAfterEstablishment",
+      "water.directFacts.floweringMoistureImportant",
+      "space.directFacts.bushVarietiesAvailable",
+      "space.directFacts.viningVarietiesAvailable",
+      "flock.directFacts.edibleFeedParts",
+      "flock.directFacts.nutritionalOrientation",
+      "risks.directFacts.storedSeedInsectConcern",
+      "risks.directFacts.antinutritionalFactorsInDrySeed",
+      "seasonalRoles.directFacts.warmSeasonAnnual",
+      "seasonalRoles.directFacts.repeatedFreshHarvestPossible"
+    ],
+
+    derivedFields: [
+      "climate.heatToleranceScore",
+      "climate.droughtClimateToleranceScore",
+      "climate.humidityToleranceScore",
+      "climate.coolSummerToleranceScore",
+      "climate.frostSensitivityScore",
+      "site",
+      "soil.textureScores",
+      "soil.drainageRequirementScore",
+      "soil.waterloggingSensitivityScore",
+      "water",
+      "space.smallSpaceScore",
+      "space.mediumSpaceScore",
+      "space.largeSpaceScore",
+      "space.layoutScores",
+      "space.spaceTypeScores",
+      "flock.flockPurposeScores",
+      "flock.feedingMethodScores",
+      "flock.directRunSuitabilityScore",
+      "flock.forageFrameSuitabilityScore",
+      "flock.rotationalPaddockSuitabilityScore",
+      "labor",
+      "cost",
+      "goals",
+      "risks.wildlife",
+      "usePaths.fresh-foliage",
+      "usePaths.tender-immature-pods",
+      "usePaths.mature-cooked-seed"
+    ],
+
+    uncertainFields: [
+      "climate.minimumFrostFreeDays",
+      "climate.preferredFrostFreeDays",
+      "climate.daysToMaturityMinimum",
+      "climate.daysToMaturityMaximum",
+      "climate.dryDownBufferDays",
+      "soil.minimumSoilDepthIn",
+      "soil.saltToleranceScore",
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "space.minimumRaisedBedDepthIn",
+      "flock.portionGuidance",
+      "usePaths.fresh-foliage.exactStorageDuration",
+      "usePaths.tender-immature-pods.exactStorageDuration",
+      "usePaths.mature-cooked-seed.exactStorageDuration",
+      "risks.wildlife.raccoons",
+      "risks.wildlife.squirrels"
+    ],
+
+    missingFields: [
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "space.minimumRaisedBedDepthIn",
+      "flock.portionGuidance",
+      "flock.usePathTesting"
+    ],
+
+    lastReviewed:
+      "2026-07-14",
+
+    primarySources: [
+      {
+        title:
+          "Plant Guide for Cowpea (Vigna unguiculata)",
+
+        organization:
+          "USDA Natural Resources Conservation Service",
+
+        sourceType:
+          "government-plant-guide",
+
+        use:
+          "Lifecycle, adaptation, growth habit, soil, drought tolerance, forage, wildlife, and nitrogen-fixation context"
+      },
+
+      {
+        title:
+          "Managing Cover Crops Profitably — Cowpeas",
+
+        organization:
+          "Sustainable Agriculture Research and Education",
+
+        sourceType:
+          "agricultural-production-guide",
+
+        use:
+          "Warm-season cover-crop use, heat tolerance, biomass, weed suppression, nitrogen contribution, and management"
+      },
+
+      {
+        title:
+          "Cowpea Production and Alternative Field Crops Guidance",
+
+        organization:
+          "University Cooperative Extension resources",
+
+        sourceType:
+          "extension-production-guide",
+
+        use:
+          "Planting, warm-soil needs, variety growth habits, maturity, fertility, pests, and harvesting"
+      },
+
+      {
+        title:
+          "Cowpea Research",
+
+        organization:
+          "International Institute of Tropical Agriculture",
+
+        sourceType:
+          "international-crop-research",
+
+        use:
+          "Heat and drought adaptation, food value, production constraints, insects, disease, and varietal diversity"
+      },
+
+      {
+        title:
+          "Consensus Document on Compositional Considerations for New Varieties of Cowpea",
+
+        organization:
+          "Organisation for Economic Co-operation and Development",
+
+        sourceType:
+          "international-feed-and-food-composition",
+
+        use:
+          "Seed nutrients, antinutritional constituents, compositional variability, and food/feed safety context"
+      },
+
+      {
+        title:
+          "Cowpea Post-Harvest Operations",
+
+        organization:
+          "Food and Agriculture Organization of the United Nations",
+
+        sourceType:
+          "international-postharvest-guide",
+
+        use:
+          "Mature-seed harvesting, drying, shelling, stored-seed insects, and storage management"
+      }
+    ],
+
+    notes: [
+      "Cowpea plannerData was created as the second complete crop migration after Sunflower.",
+      "The record separates fresh foliage, tender pods, and mature dry seed into distinct use paths.",
+      "Mature seed uses a conservative cooked-seed planner policy because dry Cowpeas contain antinutritional compounds and require substantially more preparation than fresh foliage or pods.",
+      "Cooking is stored as a required planner task for the mature-seed path; it should not be interpreted as a universal commercial poultry-ration standard.",
+      "Heat and drought ratings are strong, but drought-yield retention is lower than drought survival because flowering and pod fill remain moisture sensitive.",
+      "Nitrogen-fixation benefits depend on compatible rhizobia, soil conditions, crop management, and how much biomass is removed.",
+      "Commercial yield and plant-population data were not converted into backyard minimum-area or feed-replacement promises.",
+      "Minimum useful area, exact storage duration, and feeding portions remain intentionally null.",
+      "Cowpea should remain in testing status until the shared multi-crop engine compares it with Sunflower across the fixed sample profiles."
+    ]
+  }
+}
 
     },
     
