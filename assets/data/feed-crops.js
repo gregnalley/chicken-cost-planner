@@ -636,9 +636,187 @@ const BCP_FEED_CROPS = {
         "Calculate scores only after multiple crops have comparable evidence and complete data.",
         "Plant-density estimates use approximately 1.5 inches between plants and a midpoint row spacing of 25 inches; these values are intended for compact or semi-erect row-grown varieties rather than spreading or climbing cowpeas.",
       ]
-    }
-  
-},
+    },
+
+
+    plannerData: {
+      schemaVersion: "1.0.0",
+
+      developmentStatus: "skeleton",
+
+      identity: {
+        plannerName: "Sunflowers",
+        shortLabel: "Sunflower",
+        icon: "🌻",
+
+        cropCategory: "oilseed",
+        primaryFeedCategory: "energy",
+
+        guideUrl:
+          "growing-sunflowers-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle: "annual",
+
+        isAnnual: true,
+        isBiennial: false,
+        isPerennial: false,
+        isTreeOrShrub: false,
+
+        yearsToFirstUsefulHarvest: 0,
+        yearsToFullProduction: 0,
+        expectedUsefulLifeYears: 1,
+
+        regrowsAfterHarvest: false,
+
+        permanentPlantingRequired: false,
+        reversibleAfterOneSeason: true
+      },
+
+      climate: {},
+
+      site: {},
+
+      soil: {},
+
+      water: {},
+
+      space: {},
+
+      flock: {},
+
+      labor: {},
+
+      cost: {},
+
+      goals: {},
+
+      risks: {},
+
+      seasonalRoles: {},
+
+      usePaths: [
+        {
+          id: "whole-dried-seed-head",
+
+          label:
+            "Whole Dried Sunflower Seed Head",
+
+          description:
+            "A temporary prototype use path representing mature sunflower heads dried and offered whole for flock enrichment and supplemental seed consumption.",
+
+          primaryFeedRole:
+            "energy-enrichment",
+
+          harvestProducts: [
+            "dried-seed-heads"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "winter-storage"
+          ],
+
+          requiredProcessingTasks: [
+            "dry"
+          ],
+
+          optionalProcessingTasks: [],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "drying-rack",
+            "drying-screen",
+            "bird-netting",
+            "food-safe-bucket"
+          ],
+
+          storageMethods: [
+            "dried-whole"
+          ],
+
+          preferredStorageMethod:
+            "dried-whole",
+
+          storageDurationCategory: null,
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+          freezingSuitable: false,
+
+          dryingRequired: true,
+          curingRequired: false,
+          shellingRequired: false,
+          threshingRequired: false,
+          cookingRequired: false,
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: null,
+          rodentRiskScore: null,
+          storedInsectRiskScore: null,
+
+          preparationEaseScore: null,
+          beginnerSuitabilityScore: null,
+
+          householdFoodValueScore: null,
+          flockValueScore: null,
+
+          safetyWarnings: [
+            "Do not store sunflower heads until they are adequately dry.",
+            "Do not feed moldy, musty, heated, or otherwise questionable seed heads.",
+            "Do not feed seed intended for planting if it has been chemically treated."
+          ],
+
+          incompatibleUserTraits: []
+        }
+      ],
+
+      dataQuality: {
+        overallConfidence: null,
+
+        verifiedFields: [
+          "identity",
+          "lifecycle"
+        ],
+
+        derivedFields: [],
+
+        uncertainFields: [
+          "usePaths.whole-dried-seed-head"
+        ],
+
+        missingFields: [
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles"
+        ],
+
+        lastReviewed:
+          "2026-07-14",
+
+        primarySources: [],
+
+        notes: [
+          "Planner skeleton created before detailed planner-specific research.",
+          "The whole-dried-seed-head use path is a structural prototype and is not yet fully scored.",
+          "Do not change developmentStatus to ready until every required section and use path has been researched, validated, and tested."
+        ]
+       }
+      }
+    },
 
   "CROP-PROSO-MILLET": {
     id: "CROP-PROSO-MILLET",
@@ -3585,8 +3763,8 @@ const BCP_FEED_CROPS = {
         "Research whether home-scale sprouting changes practical feeding value or introduces unacceptable mold and sanitation risks.",
         "Calculate scores only after multiple grain crops have comparable evidence and complete data.",
         "Plant-density estimates use midpoint spacing of approximately 4 inches between plants and 25 inches between rows; lower populations may be preferable under dry conditions, while irrigated or highly productive plots may support denser stands."
-        
+
       ]
     }
-   }
+}
   };
