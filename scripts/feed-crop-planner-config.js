@@ -218,6 +218,7 @@ const HARVEST_FREQUENCY_CATEGORIES =
     "moisture-meter",
 
     "food-safe-bucket",
+    "food-safe-container",
     "metal-grain-can",
     "rodent-proof-room",
     "refrigerator",
