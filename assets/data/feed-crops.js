@@ -2334,7 +2334,7 @@ const BCP_FEED_CROPS = {
   schemaVersion: "1.0.0",
 
   developmentStatus:
-    "testing",
+    "ready",
 
   identity: {
     plannerName:
