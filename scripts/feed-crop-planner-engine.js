@@ -1574,6 +1574,12 @@ function getCropGoalFieldName(goalId) {
     "winter-storage":
       "winterStorageScore",
 
+    "fast-value":
+      "fastestValueScore",
+
+    "cool-season-production":
+      "productionReliabilityScore",  
+
     "enrichment":
       "enrichmentScore",
 
@@ -2362,6 +2368,16 @@ function scoreGenericUsePath(
     answers.labor
       ?.dryingCapability;
 
+  const ownedEquipment =
+  answers.labor
+    ?.ownedEquipment ||
+  [];
+
+  const purchaseWillingness =
+  answers.labor
+    ?.equipmentPurchaseWillingness ||
+  [];
+
   const minimalPreparation =
     answers.harvestStorage
       ?.minimalPreparationPriority;
@@ -2417,6 +2433,33 @@ function scoreGenericUsePath(
       `Required tasks were not accepted: ${missingRequiredTasks.join(", ")}.`
     );
   }
+
+  const missingRequiredEquipment =
+  (
+    usePath.requiredEquipment ||
+    []
+  ).filter(equipmentId => {
+    return (
+      !ownedEquipment.includes(
+        equipmentId
+      ) &&
+      !purchaseWillingness.includes(
+        equipmentId
+      )
+    );
+  });
+
+if (
+  missingRequiredEquipment.length > 0
+) {
+  score -=
+    missingRequiredEquipment.length *
+    15;
+
+  limitations.push(
+    `Required equipment is unavailable: ${missingRequiredEquipment.join(", ")}.`
+  );
+}
 
   if (
     usePath.dryingRequired &&

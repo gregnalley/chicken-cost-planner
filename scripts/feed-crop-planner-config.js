@@ -1253,7 +1253,319 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
+
+  }),
+
+  Object.freeze({
+    id:
+      "PROFILE-COOL-SEASON-SMALL-GARDEN",
+
+    label:
+      "Small Partial-Shade Cool-Season Garden",
+
+    description:
+      "A beginner with a small raised bed, partial sun, reliable water, and a goal of producing fresh greens with almost no processing.",
+
+    answers: {
+      climate: {
+        climateType:
+          "cool-moderate-summer",
+
+        frostFreeSeasonRange:
+          "120-149"
+      },
+
+      flock: {
+        flockSize: 5,
+
+        primaryFlockPurpose:
+          "eggs",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 32,
+
+        availableSpaceTypes: [
+          "raised-bed"
+        ],
+
+        largestAreaShape:
+          "small-beds"
+      },
+
+      site: {
+        directSunHoursExact: 5,
+
+        windExposure:
+          "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "raised-bed-mix",
+
+        soilTexture:
+          "loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "cut-leaves",
+          "chop"
+        ],
+
+        dryingCapability:
+          "none"
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-leaves"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "fast-value",
+          "shared-household-food",
+          "edible-landscape"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "fast-value",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "shared-household-food",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  Object.freeze({
+    id:
+      "PROFILE-FALL-FORAGE-FRAME",
+
+    label:
+      "Protected Fall Forage-Frame Plan",
+
+    description:
+      "A backyard keeper in a mild-winter climate who wants protected living greens through fall with low processing and repeated flock access.",
+
+    answers: {
+      climate: {
+        climateType:
+          "mild-winter",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 8,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 48,
+
+        availableSpaceTypes: [
+          "forage-frame",
+          "raised-bed"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle"
+      },
+
+      site: {
+        directSunHoursExact: 6,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "clay-loam",
+
+        soilDrainage:
+          "well-drained"
+      },
+
+      water: {
+        waterReliability:
+          "usually-reliable",
+
+        wateringFrequencyPreference:
+          "twice-weekly",
+
+        waterConservationPriority:
+          "moderate",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "intermediate",
+
+        weeklyCropTime:
+          "1-2-hours",
+
+        acceptedProcessingTasks: [],
+
+        dryingCapability:
+          "none",
+
+        ownedEquipment: [
+          "forage-frame",
+          "row-cover"
+        ]
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "living-forage",
+          "fresh-greens"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "living-forage",
+          "fresh-greens",
+          "enrichment",
+          "cool-season-production"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "living-forage",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "enrichment",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "high",
+
+        wildlifePestPressure: [
+          "rabbits",
+          "deer"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
+
 ]);
 
   const PLANNER_CONFIG = Object.freeze({
