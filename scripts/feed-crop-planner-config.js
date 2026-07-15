@@ -797,14 +797,14 @@ preferences: {
 harvestStorage: {
   desiredHarvestProducts: [
     "fresh-greens",
-    "fresh-seed-heads"
+    "fresh-leaves"
   ],
 
   harvestPatternPreference:
-    "mixed",
+    "continuous",
 
   minimalPreparationPriority:
-    "moderate",
+    "top",
 
   desiredStorageDuration:
     "immediate",
@@ -815,7 +815,7 @@ harvestStorage: {
     "often-humid",
 
   rodentProtection:
-    "rodent-proof-containers"
+    "none"
 },
 
       preferences: {
