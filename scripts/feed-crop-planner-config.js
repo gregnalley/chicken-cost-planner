@@ -108,6 +108,18 @@
     "mixed"
   ]);
 
+const HARVEST_FREQUENCY_CATEGORIES =
+  Object.freeze([
+    "daily",
+    "several-weekly",
+    "weekly",
+    "every-few-weeks",
+    "seasonal",
+    "once-twice",
+    "continuous",
+    "not-applicable"
+  ]);
+
   const PLANTING_TASK_IDS = Object.freeze([
     "prepare-seedbed",
     "broadcast-small-seed",
@@ -336,6 +348,7 @@
       primaryFeedCategories: PRIMARY_FEED_CATEGORIES,
       storageDurationCategories: STORAGE_DURATION_CATEGORIES,
       harvestPatterns: HARVEST_PATTERNS,
+      harvestFrequencyCategories: HARVEST_FREQUENCY_CATEGORIES,
 
       plantingTaskIds: PLANTING_TASK_IDS,
       maintenanceTaskIds: MAINTENANCE_TASK_IDS,
