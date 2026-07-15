@@ -1554,6 +1554,406 @@ function runSunflowerSampleTests() {
   };
 }
 
+function normalizePlannerText(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase();
+}
+
+function getFrostFreeSeasonMaximumDays(
+  frostFreeSeasonRange
+) {
+  const rangeMaximumMap = {
+    "under-60": 59,
+    "60-89": 89,
+    "90-119": 119,
+    "120-149": 149,
+    "150-179": 179,
+    "180-209": 209,
+    "210-plus": 240
+  };
+
+  return (
+    rangeMaximumMap[
+      frostFreeSeasonRange
+    ] ?? null
+  );
+}
+
+function scoreGenericShortSeasonFit(
+  crop,
+  answers
+) {
+  const selectedGoals =
+    answers.preferences
+      ?.plannerGoals ||
+    [];
+
+  if (
+    !selectedGoals.includes(
+      "short-season"
+    )
+  ) {
+    return {
+      score: null,
+
+      reason:
+        "Short-season production was not selected as a goal."
+    };
+  }
+
+  const climate =
+    crop.plannerData?.climate ||
+    {};
+
+  const availableDays =
+    getFrostFreeSeasonMaximumDays(
+      answers.climate
+        ?.frostFreeSeasonRange
+    );
+
+  const minimumMaturityDays =
+    climate.daysToMaturityMinimum;
+
+  const maximumMaturityDays =
+    climate.daysToMaturityMaximum;
+
+  if (
+    !Number.isFinite(availableDays) ||
+    (
+      !Number.isFinite(
+        minimumMaturityDays
+      ) &&
+      !Number.isFinite(
+        maximumMaturityDays
+      )
+    )
+  ) {
+    return {
+      score: null,
+
+      reason:
+        "Comparable maturity information is unavailable."
+    };
+  }
+
+  let score;
+
+  if (
+    Number.isFinite(
+      maximumMaturityDays
+    ) &&
+    maximumMaturityDays <=
+      availableDays - 14
+  ) {
+    score = 100;
+  } else if (
+    Number.isFinite(
+      maximumMaturityDays
+    ) &&
+    maximumMaturityDays <=
+      availableDays
+  ) {
+    score = 88;
+  } else if (
+    Number.isFinite(
+      minimumMaturityDays
+    ) &&
+    minimumMaturityDays <=
+      availableDays
+  ) {
+    score = 68;
+  } else {
+    score = 25;
+  }
+
+  return {
+    score,
+
+    reason:
+      score >= 88
+        ? `${crop.name} has a maturity range that fits the selected frost-free season well.`
+        : score >= 60
+          ? `${crop.name} may fit only with an early variety or favorable conditions.`
+          : `${crop.name} is unlikely to complete its intended harvest reliably within the selected season.`
+  };
+}
+
+function scoreGenericLimitedIrrigationFit(
+  crop,
+  answers
+) {
+  const selectedGoals =
+    answers.preferences
+      ?.plannerGoals ||
+    [];
+
+  if (
+    !selectedGoals.includes(
+      "limited-irrigation"
+    )
+  ) {
+    return {
+      score: null,
+
+      reason:
+        "Limited irrigation was not selected as a goal."
+    };
+  }
+
+  const water =
+    crop.plannerData?.water ||
+    {};
+
+  const limitedIrrigationScore =
+    convertFivePointToPercent(
+      water
+        .suitableForLimitedIrrigationScore
+    );
+
+  const droughtYieldScore =
+    convertFivePointToPercent(
+      water.droughtYieldRetentionScore
+    );
+
+  const score =
+    weightedAverageKnown([
+      {
+        value:
+          limitedIrrigationScore,
+
+        weight: 0.65
+      },
+      {
+        value:
+          droughtYieldScore,
+
+        weight: 0.35
+      }
+    ]);
+
+  return {
+    score: clampScore(score),
+
+    reason:
+      Number.isFinite(score)
+        ? `${crop.name} was scored using its limited-irrigation suitability and drought-yield retention.`
+        : "Comparable limited-irrigation information is unavailable."
+  };
+}
+
+function getStorageDurationLevel(
+  duration
+) {
+  const durationMap = {
+    immediate: 0,
+    "very-short": 0,
+    short: 1,
+    "1-4-weeks": 1,
+    medium: 2,
+    "1-3-months": 2,
+    "medium-long": 3,
+    "3-6-months": 3,
+    long: 4,
+    "6-12-months": 4,
+    "over-12-months": 5
+  };
+
+  return (
+    durationMap[duration] ??
+    null
+  );
+}
+
+function scoreUsePathStorageFit(
+  usePath,
+  answers
+) {
+  const desiredDuration =
+    answers.harvestStorage
+      ?.desiredStorageDuration;
+
+  if (!desiredDuration) {
+    return {
+      score: null,
+      reason:
+        "No specific storage duration was requested."
+    };
+  }
+
+  const desiredLevel =
+    getStorageDurationLevel(
+      desiredDuration
+    );
+
+  const pathLevel =
+    getStorageDurationLevel(
+      usePath.storageDurationCategory
+    );
+
+  if (
+    !Number.isFinite(desiredLevel) ||
+    !Number.isFinite(pathLevel)
+  ) {
+    return {
+      score: null,
+      reason:
+        "Storage-duration information is incomplete."
+    };
+  }
+
+  const difference =
+    pathLevel - desiredLevel;
+
+  let score;
+
+  if (difference >= 0) {
+    score = 100;
+  } else if (difference === -1) {
+    score = 60;
+  } else if (difference === -2) {
+    score = 25;
+  } else {
+    score = 0;
+  }
+
+  return {
+    score,
+
+    reason:
+      score === 100
+        ? "The use path can meet or exceed the requested storage period."
+        : score >= 50
+          ? "The use path falls somewhat short of the requested storage period."
+          : "The use path cannot reasonably meet the requested storage period."
+  };
+}
+
+function getNutritionalRoleTerms(
+  crop,
+  usePath
+) {
+  const terms =
+    new Set();
+
+  const addTerm = value => {
+    const normalized =
+      normalizePlannerText(value);
+
+    if (normalized) {
+      terms.add(normalized);
+    }
+  };
+
+  addTerm(
+    crop.plannerData
+      ?.identity
+      ?.primaryFeedCategory
+  );
+
+  addTerm(
+    usePath?.primaryFeedRole
+  );
+
+  (
+    crop.plannerData
+      ?.flock
+      ?.directFacts
+      ?.nutritionalOrientation ||
+    []
+  ).forEach(addTerm);
+
+  return Array.from(terms);
+}
+
+function scoreUsePathNutritionalFit(
+  crop,
+  usePath,
+  answers
+) {
+  const preferredRole =
+    normalizePlannerText(
+      answers.preferences
+        ?.preferredNutritionalRole
+    );
+
+  if (
+    !preferredRole ||
+    preferredRole === "diversified"
+  ) {
+    return {
+      score: null,
+
+      reason:
+        "No single nutritional role was required."
+    };
+  }
+
+  const roleTerms =
+    getNutritionalRoleTerms(
+      crop,
+      usePath
+    );
+
+  const roleAliases = {
+    energy: [
+      "energy",
+      "grain",
+      "high-energy"
+    ],
+
+    "protein-oriented": [
+      "protein-oriented",
+      "protein"
+    ],
+
+    "fresh-green": [
+      "fresh-green",
+      "fresh-greens",
+      "fresh-forage",
+      "living-forage"
+    ],
+
+    "storage-produce": [
+      "storage-produce",
+      "winter-storage-produce",
+      "whole-produce"
+    ],
+
+    enrichment: [
+      "enrichment",
+      "grain-enrichment",
+      "whole-produce-enrichment"
+    ]
+  };
+
+  const acceptedTerms =
+    roleAliases[preferredRole] ||
+    [preferredRole];
+
+  const matches =
+    roleTerms.some(term => {
+      return acceptedTerms.some(
+        acceptedTerm =>
+          term.includes(
+            acceptedTerm
+          ) ||
+          acceptedTerm.includes(
+            term
+          )
+      );
+    });
+
+  return {
+    score: matches ? 100 : 25,
+
+    reason:
+      matches
+        ? "The use path matches the visitor's preferred nutritional role."
+        : "The use path does not closely match the visitor's preferred nutritional role."
+  };
+}
+
 function getCropGoalFieldName(goalId) {
   const goalFieldMap = {
     "reduce-feed-use":
@@ -1577,16 +1977,10 @@ function getCropGoalFieldName(goalId) {
     "fast-value":
       "fastestValueScore",
 
-    "short-season":
-      "fastestValueScore",
-
-    "limited-irrigation":
-      "resilienceScore", 
-
     "cool-season-production":
-      "productionReliabilityScore",  
+      "productionReliabilityScore",
 
-    "enrichment":
+    enrichment:
       "enrichmentScore",
 
     "resilience-feed":
@@ -1604,13 +1998,13 @@ function getCropGoalFieldName(goalId) {
     "erosion-control":
       "erosionControlScore",
 
-    "shade":
+    shade:
       "shadeScore",
 
     "privacy-screening":
       "privacyScreeningScore",
 
-    "pollinators":
+    pollinators:
       "pollinatorSupportScore",
 
     "compost-biomass":
@@ -2329,6 +2723,32 @@ function getGenericWildlifePenalty(
       ?.risks?.wildlife ||
     {};
 
+  const ownedEquipment =
+    answers.labor
+      ?.ownedEquipment ||
+    [];
+
+  const purchaseWillingness =
+    answers.labor
+      ?.equipmentPurchaseWillingness ||
+    [];
+
+  const dryingFacilities =
+    answers.labor
+      ?.dryingFacilities ||
+    [];
+
+  const rodentProtection =
+    answers.harvestStorage
+      ?.rodentProtection;
+
+  const availableProtection =
+    new Set([
+      ...ownedEquipment,
+      ...purchaseWillingness,
+      ...dryingFacilities
+    ]);
+
   const pressureFieldMap = {
     "wild-birds": "wildBirds",
     deer: "deer",
@@ -2347,9 +2767,52 @@ function getGenericWildlifePenalty(
     5: 18
   };
 
+  const mitigationMap = {
+    "wild-birds": [
+      "bird-netting",
+      "row-cover"
+    ],
+
+    deer: [
+      "fencing",
+      "protected-bed",
+      "row-cover"
+    ],
+
+    rabbits: [
+      "fencing",
+      "protected-bed",
+      "row-cover",
+      "forage-frame"
+    ],
+
+    groundhogs: [
+      "fencing",
+      "protected-bed"
+    ],
+
+    raccoons: [
+      "fencing",
+      "protected-storage"
+    ],
+
+    squirrels: [
+      "bird-netting",
+      "protected-storage"
+    ],
+
+    rodents: [
+      "rodent-proof",
+      "food-safe-bucket",
+      "metal-grain-can",
+      "protected-storage"
+    ]
+  };
+
   let penalty = 0;
 
   const matchedPressures = [];
+  const mitigatedPressures = [];
 
   pressures.forEach(pressure => {
     const field =
@@ -2358,25 +2821,72 @@ function getGenericWildlifePenalty(
     const riskScore =
       wildlife[field];
 
-    if (Number.isFinite(riskScore)) {
-      penalty +=
-        riskPenaltyMap[riskScore] ||
-        0;
+    if (!Number.isFinite(riskScore)) {
+      return;
+    }
 
-      matchedPressures.push(
+    let pressurePenalty =
+      riskPenaltyMap[riskScore] ||
+      0;
+
+    const mitigationOptions =
+      mitigationMap[pressure] ||
+      [];
+
+    const hasEquipmentMitigation =
+      mitigationOptions.some(
+        option =>
+          availableProtection.has(
+            option
+          )
+      );
+
+    const hasRodentMitigation =
+      pressure === "rodents" &&
+      [
+        "rodent-proof-containers",
+        "rodent-proof-room"
+      ].includes(
+        rodentProtection
+      );
+
+    if (
+      hasEquipmentMitigation ||
+      hasRodentMitigation
+    ) {
+      pressurePenalty *= 0.35;
+
+      mitigatedPressures.push(
         pressure
       );
     }
+
+    penalty += pressurePenalty;
+
+    matchedPressures.push(
+      pressure
+    );
   });
+
+  const roundedPenalty =
+    Math.round(
+      Math.min(30, penalty)
+    );
 
   return {
     penalty:
-      Math.min(30, penalty),
+      roundedPenalty,
+
+    matchedPressures,
+
+    mitigatedPressures,
 
     reason:
-      matchedPressures.length > 0
-        ? `Reported wildlife pressure affects this crop: ${matchedPressures.join(", ")}.`
-        : "No reported wildlife pressure reduced the score."
+      matchedPressures.length === 0
+        ? "No reported wildlife pressure reduced the score."
+        : mitigatedPressures.length > 0
+          ? `Reported wildlife pressure affects this crop, but selected protection reduces part of the penalty. Mitigated: ${mitigatedPressures.join(", ")}.`
+          : `Reported wildlife pressure affects this crop: ${matchedPressures.join(", ")}.`
   };
 }
 
@@ -2385,7 +2895,7 @@ function scoreGenericUsePath(
   usePath,
   answers
 ) {
-  let score = 70;
+  let score = 55;
 
   const strengths = [];
   const limitations = [];
@@ -2449,22 +2959,24 @@ function scoreGenericUsePath(
     [];
 
   const productMatch =
-    arrayIncludesAny(
-      harvestProducts,
-      desiredProducts
-    );
+    desiredProducts.length === 0
+      ? null
+      : arrayIncludesAny(
+          harvestProducts,
+          desiredProducts
+        );
 
-  if (productMatch) {
-    score += 15;
+  if (productMatch === true) {
+    score += 30;
 
     strengths.push(
-      "Matches a desired harvest product."
+      "Directly matches a desired harvest product."
     );
-  } else {
-    score -= 8;
+  } else if (productMatch === false) {
+    score -= 28;
 
     limitations.push(
-      "Does not directly match the selected harvest products."
+      "Does not match any selected harvest product."
     );
   }
 
@@ -2497,7 +3009,7 @@ function scoreGenericUsePath(
     missingRequiredTasks.length > 0
   ) {
     score -=
-      missingRequiredTasks.length * 13;
+      missingRequiredTasks.length * 12;
 
     limitations.push(
       `Required tasks were not accepted: ${missingRequiredTasks.join(", ")}.`
@@ -2523,7 +3035,7 @@ function scoreGenericUsePath(
   ) {
     score -=
       missingRequiredEquipment.length *
-      15;
+      14;
 
     limitations.push(
       `Required equipment is unavailable: ${missingRequiredEquipment.join(", ")}.`
@@ -2534,7 +3046,9 @@ function scoreGenericUsePath(
     requiredProcessingTasks.includes(
       "harvest-heavy-fruit"
     ) &&
-    !ownedEquipment.includes("cart")
+    !ownedEquipment.includes(
+      "cart"
+    )
   ) {
     score -= 5;
 
@@ -2545,7 +3059,9 @@ function scoreGenericUsePath(
 
   if (
     usePath.curingRequired &&
-    !acceptedProcessing.includes("cure")
+    !acceptedProcessing.includes(
+      "cure"
+    )
   ) {
     score -= 18;
 
@@ -2564,7 +3080,7 @@ function scoreGenericUsePath(
     score -= 18;
 
     limitations.push(
-      "This storage path needs a suitable cool, dry, ventilated location."
+      "This path requires a suitable cool, dry, ventilated storage location."
     );
   }
 
@@ -2579,7 +3095,9 @@ function scoreGenericUsePath(
 
   if (
     usePath.cookingRequired &&
-    !acceptedProcessing.includes("cook")
+    !acceptedProcessing.includes(
+      "cook"
+    )
   ) {
     hardFailures.push(
       "This use path requires cooking, but cooking was not accepted."
@@ -2601,29 +3119,93 @@ function scoreGenericUsePath(
   }
 
   if (
-  usePath.threshingRequired &&
-  !acceptedProcessing.includes(
-    "thresh"
-  )
-) {
-  hardFailures.push(
-    "This use path requires threshing, but threshing was not accepted."
-  );
-}
+    usePath.threshingRequired &&
+    !acceptedProcessing.includes(
+      "thresh"
+    )
+  ) {
+    hardFailures.push(
+      "This use path requires threshing, but threshing was not accepted."
+    );
+  }
+
+  const storageFit =
+    scoreUsePathStorageFit(
+      usePath,
+      answers
+    );
+
+  if (
+    Number.isFinite(
+      storageFit.score
+    )
+  ) {
+    if (storageFit.score >= 90) {
+      score += 15;
+
+      strengths.push(
+        storageFit.reason
+      );
+    } else if (
+      storageFit.score >= 50
+    ) {
+      score -= 8;
+
+      limitations.push(
+        storageFit.reason
+      );
+    } else {
+      score -= 30;
+
+      limitations.push(
+        storageFit.reason
+      );
+    }
+  }
+
+  const nutritionalFit =
+    scoreUsePathNutritionalFit(
+      crop,
+      usePath,
+      answers
+    );
+
+  if (
+    Number.isFinite(
+      nutritionalFit.score
+    )
+  ) {
+    if (
+      nutritionalFit.score >= 90
+    ) {
+      score += 15;
+
+      strengths.push(
+        nutritionalFit.reason
+      );
+    } else {
+      score -= 18;
+
+      limitations.push(
+        nutritionalFit.reason
+      );
+    }
+  }
 
   if (
     minimalPreparation === "top"
   ) {
     if (
-      usePath.preparationEaseScore >= 4
+      usePath
+        .preparationEaseScore >= 4
     ) {
-      score += 10;
+      score += 8;
 
       strengths.push(
         "Strong match for minimal preparation."
       );
     } else {
-      score -= 15;
+      score -= 12;
 
       limitations.push(
         "Requires more preparation than the visitor prefers."
@@ -2633,12 +3215,13 @@ function scoreGenericUsePath(
     minimalPreparation === "high" &&
     usePath.preparationEaseScore >= 4
   ) {
-    score += 6;
+    score += 5;
   }
 
   if (
     usePath.dryingRequired &&
-    storageHumidity === "often-humid"
+    storageHumidity ===
+      "often-humid"
   ) {
     score -= 15;
 
@@ -2652,7 +3235,9 @@ function scoreGenericUsePath(
     [
       "none",
       "common-problem"
-    ].includes(rodentProtection)
+    ].includes(
+      rodentProtection
+    )
   ) {
     score -= 15;
 
@@ -2667,13 +3252,23 @@ function scoreGenericUsePath(
       : clampScore(score);
 
   return {
-    cropId: crop.id,
+    cropId:
+      crop.id,
 
-    usePathId: usePath.id,
+    usePathId:
+      usePath.id,
 
-    label: usePath.label,
+    label:
+      usePath.label,
 
-    score: finalScore,
+    score:
+      finalScore,
+
+    productMatch,
+
+    storageFit,
+
+    nutritionalFit,
 
     hardFailure:
       hardFailures.length > 0,
@@ -2732,6 +3327,18 @@ function scoreGenericCropProfile(
       scoreGenericGoalFit(
         crop,
         answers
+      ),
+
+    shortSeason:
+      scoreGenericShortSeasonFit(
+        crop,
+        answers
+      ),
+
+    limitedIrrigation:
+      scoreGenericLimitedIrrigationFit(
+        crop,
+        answers
       )
   };
 
@@ -2742,49 +3349,63 @@ function scoreGenericCropProfile(
           categoryResults
             .climate.score,
 
-        weight: 0.16
+        weight: 0.14
       },
       {
         value:
           categoryResults
             .sunlight.score,
 
-        weight: 0.14
+        weight: 0.10
       },
       {
         value:
           categoryResults
             .space.score,
 
-        weight: 0.16
+        weight: 0.14
       },
       {
         value:
           categoryResults
             .soil.score,
 
-        weight: 0.12
+        weight: 0.09
       },
       {
         value:
           categoryResults
             .water.score,
 
-        weight: 0.14
+        weight: 0.12
       },
       {
         value:
           categoryResults
             .labor.score,
 
-        weight: 0.12
+        weight: 0.09
       },
       {
         value:
           categoryResults
             .goals.score,
 
-        weight: 0.16
+        weight: 0.14
+      },
+      {
+        value:
+          categoryResults
+            .shortSeason.score,
+
+        weight: 0.10
+      },
+      {
+        value:
+          categoryResults
+            .limitedIrrigation.score,
+
+        weight: 0.08
       }
     ]);
 
@@ -2795,7 +3416,11 @@ function scoreGenericCropProfile(
     );
 
   const usePathResults =
-    crop.plannerData.usePaths
+    (
+      crop.plannerData
+        ?.usePaths ||
+      []
+    )
       .map(usePath =>
         scoreGenericUsePath(
           crop,
@@ -2808,24 +3433,107 @@ function scoreGenericCropProfile(
           b.score - a.score
       );
 
-  const bestUsePath =
-    usePathResults.find(
+  const eligibleUsePaths =
+    usePathResults.filter(
       result =>
         !result.hardFailure
-    ) || null;
+    );
 
-  const usePathModifier =
+  const matchingUsePaths =
+    eligibleUsePaths.filter(
+      result =>
+        result.productMatch === true
+    );
+
+  const desiredProducts =
+    answers.harvestStorage
+      ?.desiredHarvestProducts ||
+    [];
+
+  const bestMatchingUsePath =
+    matchingUsePaths[0] ||
+    null;
+
+  const bestEligibleUsePath =
+    eligibleUsePaths[0] ||
+    null;
+
+  const bestUsePath =
+    bestMatchingUsePath ||
+    bestEligibleUsePath;
+
+  let usePathComponent = 0;
+
+  if (bestUsePath) {
+    usePathComponent =
+      (
+        bestUsePath.score - 50
+      ) * 0.55;
+  } else {
+    usePathComponent = -35;
+  }
+
+  let productCompatibilityPenalty = 0;
+
+  if (
+    desiredProducts.length > 0 &&
+    matchingUsePaths.length === 0
+  ) {
+    productCompatibilityPenalty = 24;
+  }
+
+  const requestedStorageDuration =
+    answers.harvestStorage
+      ?.desiredStorageDuration;
+
+  let storageCompatibilityPenalty = 0;
+
+  if (
+    requestedStorageDuration &&
+    bestUsePath &&
+    Number.isFinite(
+      bestUsePath
+        .storageFit
+        ?.score
+    ) &&
+    bestUsePath.storageFit.score < 50
+  ) {
+    storageCompatibilityPenalty = 18;
+  }
+
+  const preferredRole =
+    answers.preferences
+      ?.preferredNutritionalRole;
+
+  let nutritionalCompatibilityPenalty =
+    0;
+
+  if (
+    preferredRole &&
+    preferredRole !==
+      "diversified" &&
+    bestUsePath &&
+    Number.isFinite(
+      bestUsePath
+        .nutritionalFit
+        ?.score
+    ) &&
     bestUsePath
-      ? (
-          bestUsePath.score - 70
-        ) * 0.20
-      : -25;
+      .nutritionalFit
+      .score < 50
+  ) {
+    nutritionalCompatibilityPenalty =
+      14;
+  }
 
   const finalScore =
     clampScore(
       baseScore -
       wildlife.penalty +
-      usePathModifier
+      usePathComponent -
+      productCompatibilityPenalty -
+      storageCompatibilityPenalty -
+      nutritionalCompatibilityPenalty
     );
 
   const knownCategoryCount =
@@ -2839,8 +3547,13 @@ function scoreGenericCropProfile(
 
   const confidenceScore =
     clampScore(
-      45 +
-      knownCategoryCount * 7
+      40 +
+      knownCategoryCount * 6 +
+      (
+        bestMatchingUsePath
+          ? 8
+          : 0
+      )
     );
 
   return {
@@ -2880,7 +3593,15 @@ function scoreGenericCropProfile(
 
     usePathResults,
 
-    bestUsePath
+    bestUsePath,
+
+    bestMatchingUsePath,
+
+    productCompatibilityPenalty,
+
+    storageCompatibilityPenalty,
+
+    nutritionalCompatibilityPenalty
   };
 }
 
