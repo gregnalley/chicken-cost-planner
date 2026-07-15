@@ -3279,6 +3279,225 @@ function scoreGenericUsePath(
   };
 }
 
+function getGenericLifecycleAdjustment(
+  crop,
+  answers
+) {
+  const lifecycle =
+    crop.plannerData
+      ?.lifecycle ||
+    {};
+
+  const goals =
+    answers.preferences
+      ?.plannerGoals ||
+    [];
+
+  const annualPerennialPreference =
+    answers.preferences
+      ?.annualPerennialPreference;
+
+  const reversibilityRequirement =
+    answers.preferences
+      ?.reversibilityRequirement;
+
+  const desiredStorageDuration =
+    answers.harvestStorage
+      ?.desiredStorageDuration;
+
+  const plantBehaviorRestrictions =
+    answers.space
+      ?.plantBehaviorRestrictions ||
+    [];
+
+  const yearsToFirstUsefulHarvest =
+    Number.isFinite(
+      lifecycle.yearsToFirstUsefulHarvest
+    )
+      ? lifecycle
+          .yearsToFirstUsefulHarvest
+      : null;
+
+  const isAnnual =
+    lifecycle.isAnnual === true;
+
+  const isPerennial =
+    lifecycle.isPerennial === true;
+
+  const permanentPlantingRequired =
+    lifecycle
+      .permanentPlantingRequired ===
+    true;
+
+  let adjustment = 0;
+
+  const strengths = [];
+  const limitations = [];
+  const hardFailures = [];
+
+  const permanentPlantingRejected =
+    reversibilityRequirement ===
+      "one-season" ||
+    annualPerennialPreference ===
+      "annual-only" ||
+    plantBehaviorRestrictions.includes(
+      "no-permanent-plantings"
+    ) ||
+    plantBehaviorRestrictions.includes(
+      "no-trees"
+    );
+
+  if (
+    permanentPlantingRequired &&
+    permanentPlantingRejected
+  ) {
+    adjustment -= 38;
+
+    limitations.push(
+      "This crop requires a permanent planting, but the visitor requires a temporary or one-season crop."
+    );
+  }
+
+  if (
+    permanentPlantingRequired &&
+    plantBehaviorRestrictions.includes(
+      "must-remain-small"
+    )
+  ) {
+    adjustment -= 12;
+
+    limitations.push(
+      "The crop's permanent mature footprint conflicts with the requirement to remain small."
+    );
+  }
+
+  if (
+    annualPerennialPreference ===
+      "annual-preferred"
+  ) {
+    if (isAnnual) {
+      adjustment += 6;
+
+      strengths.push(
+        "Matches the visitor's preference for an annual crop."
+      );
+    } else if (isPerennial) {
+      adjustment -= 10;
+
+      limitations.push(
+        "The visitor prefers an annual crop, but this crop is perennial."
+      );
+    }
+  }
+
+  if (
+    annualPerennialPreference ===
+      "perennial-preferred"
+  ) {
+    if (isPerennial) {
+      adjustment += 10;
+
+      strengths.push(
+        "Matches the visitor's preference for a perennial crop."
+      );
+    } else if (isAnnual) {
+      adjustment -= 5;
+
+      limitations.push(
+        "The visitor prefers a perennial crop, but this crop must be replanted."
+      );
+    }
+  }
+
+  if (
+    reversibilityRequirement ===
+      "permanent-planting-allowed" &&
+    isPerennial
+  ) {
+    adjustment += 4;
+
+    strengths.push(
+      "The visitor allows a permanent planting."
+    );
+  }
+
+  const fastValueRequested =
+    goals.includes("fast-value") ||
+    goals.includes("short-season");
+
+  if (
+    fastValueRequested &&
+    yearsToFirstUsefulHarvest !== null &&
+    yearsToFirstUsefulHarvest > 0
+  ) {
+    const delayPenalty =
+      Math.min(
+        28,
+        yearsToFirstUsefulHarvest *
+          14
+      );
+
+    adjustment -= delayPenalty;
+
+    limitations.push(
+      `The visitor wants fast value, but this crop may require approximately ${yearsToFirstUsefulHarvest} year${yearsToFirstUsefulHarvest === 1 ? "" : "s"} before its first useful harvest.`
+    );
+  }
+
+  const immediateProductionRequested =
+    desiredStorageDuration ===
+      "immediate";
+
+  const longTermPlantingAccepted =
+    reversibilityRequirement ===
+      "permanent-planting-allowed" ||
+    annualPerennialPreference ===
+      "perennial-preferred";
+
+  if (
+    immediateProductionRequested &&
+    !longTermPlantingAccepted &&
+    yearsToFirstUsefulHarvest !== null &&
+    yearsToFirstUsefulHarvest > 0
+  ) {
+    const immediateUsePenalty =
+      Math.min(
+        20,
+        yearsToFirstUsefulHarvest *
+          10
+      );
+
+    adjustment -=
+      immediateUsePenalty;
+
+    limitations.push(
+      "The visitor wants immediate production, but this crop has an establishment delay."
+    );
+  }
+
+  if (
+    yearsToFirstUsefulHarvest === 0 &&
+    fastValueRequested
+  ) {
+    adjustment += 6;
+
+    strengths.push(
+      "Can provide useful production during the planting year."
+    );
+  }
+
+  return {
+    adjustment,
+
+    hardFailure:
+      hardFailures.length > 0,
+
+    hardFailures,
+    strengths,
+    limitations
+  };
+}
+
 function scoreGenericCropProfile(
   crop,
   profile
@@ -3327,18 +3546,6 @@ function scoreGenericCropProfile(
       scoreGenericGoalFit(
         crop,
         answers
-      ),
-
-    shortSeason:
-      scoreGenericShortSeasonFit(
-        crop,
-        answers
-      ),
-
-    limitedIrrigation:
-      scoreGenericLimitedIrrigationFit(
-        crop,
-        answers
       )
   };
 
@@ -3349,63 +3556,49 @@ function scoreGenericCropProfile(
           categoryResults
             .climate.score,
 
-        weight: 0.14
+        weight: 0.16
       },
       {
         value:
           categoryResults
             .sunlight.score,
 
-        weight: 0.10
+        weight: 0.14
       },
       {
         value:
           categoryResults
             .space.score,
 
-        weight: 0.14
+        weight: 0.16
       },
       {
         value:
           categoryResults
             .soil.score,
 
-        weight: 0.09
+        weight: 0.12
       },
       {
         value:
           categoryResults
             .water.score,
 
-        weight: 0.12
+        weight: 0.14
       },
       {
         value:
           categoryResults
             .labor.score,
 
-        weight: 0.09
+        weight: 0.12
       },
       {
         value:
           categoryResults
             .goals.score,
 
-        weight: 0.14
-      },
-      {
-        value:
-          categoryResults
-            .shortSeason.score,
-
-        weight: 0.10
-      },
-      {
-        value:
-          categoryResults
-            .limitedIrrigation.score,
-
-        weight: 0.08
+        weight: 0.16
       }
     ]);
 
@@ -3415,12 +3608,14 @@ function scoreGenericCropProfile(
       answers
     );
 
+  const lifecycleAdjustment =
+    getGenericLifecycleAdjustment(
+      crop,
+      answers
+    );
+
   const usePathResults =
-    (
-      crop.plannerData
-        ?.usePaths ||
-      []
-    )
+    crop.plannerData.usePaths
       .map(usePath =>
         scoreGenericUsePath(
           crop,
@@ -3433,108 +3628,33 @@ function scoreGenericCropProfile(
           b.score - a.score
       );
 
-  const eligibleUsePaths =
-    usePathResults.filter(
+  const bestUsePath =
+    usePathResults.find(
       result =>
         !result.hardFailure
-    );
+    ) || null;
 
-  const matchingUsePaths =
-    eligibleUsePaths.filter(
-      result =>
-        result.productMatch === true
-    );
-
-  const desiredProducts =
-    answers.harvestStorage
-      ?.desiredHarvestProducts ||
-    [];
-
-  const bestMatchingUsePath =
-    matchingUsePaths[0] ||
-    null;
-
-  const bestEligibleUsePath =
-    eligibleUsePaths[0] ||
-    null;
-
-  const bestUsePath =
-    bestMatchingUsePath ||
-    bestEligibleUsePath;
-
-  let usePathComponent = 0;
-
-  if (bestUsePath) {
-    usePathComponent =
-      (
-        bestUsePath.score - 50
-      ) * 0.55;
-  } else {
-    usePathComponent = -35;
-  }
-
-  let productCompatibilityPenalty = 0;
-
-  if (
-    desiredProducts.length > 0 &&
-    matchingUsePaths.length === 0
-  ) {
-    productCompatibilityPenalty = 24;
-  }
-
-  const requestedStorageDuration =
-    answers.harvestStorage
-      ?.desiredStorageDuration;
-
-  let storageCompatibilityPenalty = 0;
-
-  if (
-    requestedStorageDuration &&
-    bestUsePath &&
-    Number.isFinite(
-      bestUsePath
-        .storageFit
-        ?.score
-    ) &&
-    bestUsePath.storageFit.score < 50
-  ) {
-    storageCompatibilityPenalty = 18;
-  }
-
-  const preferredRole =
-    answers.preferences
-      ?.preferredNutritionalRole;
-
-  let nutritionalCompatibilityPenalty =
-    0;
-
-  if (
-    preferredRole &&
-    preferredRole !==
-      "diversified" &&
-    bestUsePath &&
-    Number.isFinite(
-      bestUsePath
-        .nutritionalFit
-        ?.score
-    ) &&
+  const usePathModifier =
     bestUsePath
-      .nutritionalFit
-      .score < 50
-  ) {
-    nutritionalCompatibilityPenalty =
-      14;
-  }
+      ? (
+          bestUsePath.score - 70
+        ) * 0.20
+      : -25;
+
+  const lifecycleFailure =
+    lifecycleAdjustment
+      .hardFailure === true;
 
   const finalScore =
-    clampScore(
-      baseScore -
-      wildlife.penalty +
-      usePathComponent -
-      productCompatibilityPenalty -
-      storageCompatibilityPenalty -
-      nutritionalCompatibilityPenalty
-    );
+    lifecycleFailure
+      ? 0
+      : clampScore(
+          baseScore -
+          wildlife.penalty +
+          usePathModifier +
+          lifecycleAdjustment
+            .adjustment
+        );
 
   const knownCategoryCount =
     Object.values(categoryResults)
@@ -3547,13 +3667,8 @@ function scoreGenericCropProfile(
 
   const confidenceScore =
     clampScore(
-      40 +
-      knownCategoryCount * 6 +
-      (
-        bestMatchingUsePath
-          ? 8
-          : 0
-      )
+      45 +
+      knownCategoryCount * 7
     );
 
   return {
@@ -3591,17 +3706,11 @@ function scoreGenericCropProfile(
 
     wildlife,
 
+    lifecycleAdjustment,
+
     usePathResults,
 
-    bestUsePath,
-
-    bestMatchingUsePath,
-
-    productCompatibilityPenalty,
-
-    storageCompatibilityPenalty,
-
-    nutritionalCompatibilityPenalty
+    bestUsePath
   };
 }
 
