@@ -208,6 +208,8 @@ const HARVEST_FREQUENCY_CATEGORIES =
     "drying-screen",
     "fan",
     "dehydrator",
+    "basket",
+    "cooking-equipment",
 
     "corn-sheller",
     "grain-thresher",
