@@ -17209,11 +17209,1771 @@ plannerData: {
         "Calculate scores only after multiple grain crops have comparable evidence and complete data.",
         "Plant-density estimates use midpoint spacing of approximately 10 inches between plants and 33 inches between rows; successful grain production also requires a compact block arrangement for dependable wind pollination."
 
-      ]
+         ]
+    },
+
+    plannerData: {
+      schemaVersion:
+        "1.0.0",
+
+      developmentStatus:
+        "testing",
+
+      identity: {
+        plannerName:
+          "Field Corn",
+
+        shortLabel:
+          "Field Corn",
+
+        icon:
+          "🌽",
+
+        cropCategory:
+          "annual-grain",
+
+        primaryFeedCategory:
+          "high-energy-grain",
+
+        guideUrl:
+          "growing-field-corn-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual: true,
+        isBiennial: false,
+        isPerennial: false,
+        isTreeOrShrub: false,
+
+        yearsToFirstUsefulHarvest: 0,
+
+        yearsToFullProduction: 0,
+
+        expectedUsefulLifeYears: 1,
+
+        regrowsAfterHarvest: false,
+
+        permanentPlantingRequired: false,
+
+        reversibleAfterOneSeason: true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter"
+        ],
+
+        preferredClimateTypes: [
+          "temperate",
+          "hot-humid",
+          "mild-winter"
+        ],
+
+        challengingClimateTypes: [
+          "cold-short-summer",
+          "high-elevation"
+        ],
+
+        minimumFrostFreeDays: 90,
+
+        preferredFrostFreeDays: 120,
+
+        minimumSoilTemperatureF: 50,
+
+        preferredSoilTemperatureF: 60,
+
+        daysToMaturityMinimum: 85,
+
+        daysToMaturityMaximum: 130,
+
+        dryDownBufferDays: 21,
+
+        heatToleranceScore: 4,
+
+        droughtClimateToleranceScore: 3,
+
+        humidityToleranceScore: 4,
+
+        coolSummerToleranceScore: 2,
+
+        frostSensitivityScore: 5,
+
+        winterHardinessRequired: false,
+
+        seasonExtensionBenefits: [
+          "Warm soil at planting improves emergence.",
+          "Selecting an early-maturing variety can improve reliability in short-season regions.",
+          "Starting transplants is possible on a tiny scale but is generally inefficient for a grain block.",
+          "A longer frost-free period provides more time for kernels and ears to dry before harvest.",
+          "Protected postharvest drying can reduce dependence on perfect field-drying weather."
+        ],
+
+        indoorSeedStartingBenefitScore: 1,
+
+        directFacts: {
+          seasonType:
+            "warm-season-annual",
+
+          frostSensitive: true,
+
+          commonlyDirectSeeded: true,
+
+          winterDormancyPossible: false,
+
+          heatDormancyPossible: false,
+
+          windPollinated: true,
+
+          blockPollinationImportant: true,
+
+          notes: [
+            "Field Corn is a frost-sensitive warm-season annual.",
+            "Seed is normally planted directly after soil warms.",
+            "Corn relies on wind to move pollen from tassels to silks.",
+            "Compact blocks generally pollinate more reliably than one or two long rows.",
+            "The crop needs enough frost-free time for grain maturity plus field or protected drying.",
+            "Early varieties can improve reliability in northern and high-elevation gardens.",
+            "Heat is usually tolerated when water is available during critical growth stages.",
+            "Drought during tasseling, silking, and kernel fill can sharply reduce yield."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours: 6,
+
+        productiveMinimumSunHours: 7,
+
+        preferredSunHours: 9,
+
+        shadeToleranceScore: 1,
+
+        afternoonShadeBenefitInHeat: 1,
+
+        windToleranceScore: 3,
+
+        lodgingRiskScore: 4,
+
+        reflectedHeatToleranceScore: 4,
+
+        airflowRequirementScore: 4,
+
+        frostPocketSensitivityScore: 5,
+
+        treeRootCompetitionToleranceScore: 1,
+
+        hardscapeConflictRiskScore: 2,
+
+        structureConflictRiskScore: 3,
+
+        utilityConflictRiskScore: 3,
+
+        fruitDropMessRiskScore: 1,
+
+        stainingRiskScore: 1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "At least 7 hours of direct sunlight, with approximately 8 to 10 hours preferred for dependable grain yield and strong stalk development.",
+
+          windExposureConcern: true,
+
+          growthHabit:
+            "tall-upright-single-stalk",
+
+          matureHeightFtMinimum: 5,
+
+          matureHeightFtMaximum: 12,
+
+          floweringPollinatorTraffic:
+            false,
+
+          notes: [
+            "Field Corn performs poorly in meaningful shade.",
+            "Tall stalks may lodge or break during severe wind and storms.",
+            "The crop can shade shorter plants and nearby beds.",
+            "A sunny open block supports both photosynthesis and wind pollination.",
+            "Planting immediately beside trees can create strong root and light competition.",
+            "Corn should not obstruct windows, paths, road visibility, utility access, or solar equipment.",
+            "Airflow helps foliage and ears dry after rain, but exposed sites may increase lodging."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay: 3,
+          clayLoam: 5,
+          loam: 5,
+          sandyLoam: 4,
+          verySandy: 2,
+          rocky: 1
+        },
+
+        drainageRequirementScore: 4,
+
+        temporaryWetToleranceScore: 2,
+
+        waterloggingSensitivityScore: 4,
+
+        minimumSoilDepthIn: 18,
+
+        preferredSoilDepthIn: 30,
+
+        compactionToleranceScore: 2,
+
+        establishmentInSodDifficultyScore: 5,
+
+        preferredPHMinimum: 5.8,
+
+        preferredPHMaximum: 7.0,
+
+        survivalPHMinimum: null,
+
+        survivalPHMaximum: null,
+
+        fertilityRequirementScore: 5,
+
+        nitrogenRequirementScore: 5,
+
+        phosphorusRequirementScore: 4,
+
+        potassiumRequirementScore: 5,
+
+        benefitsFromInoculation: false,
+
+        inoculantType: null,
+
+        saltToleranceScore: 2,
+
+        amendmentEffortScore: 4,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained-and-moisture-retentive",
+
+          preferredTextures: [
+            "loam",
+            "clay loam",
+            "fertile sandy loam"
+          ],
+
+          nitrogenFixingLegume: false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          fibrousRooted: true,
+
+          waterloggedSoilSuitable:
+            false,
+
+          notes: [
+            "Field Corn is a relatively heavy feeder.",
+            "Deep fertile soil supports tall plants and grain fill.",
+            "Nitrogen availability strongly affects growth and yield.",
+            "Phosphorus and potassium remain important for root growth, stalk strength, and grain production.",
+            "Poor drainage and saturated soil can reduce root function and stand strength.",
+            "Compaction and shallow rock restrict the root system.",
+            "Very sandy soil may require more frequent irrigation and nutrient management.",
+            "Corn does not fix nitrogen.",
+            "Soil testing is preferable to applying fertilizer by guesswork."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate-high",
+
+        germinationWaterNeedLevel:
+          "moderate",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "moderate-high",
+
+        floweringWaterNeedLevel:
+          "very-high",
+
+        harvestDevelopmentWaterNeedLevel:
+          "high",
+
+        droughtSurvivalScore: 3,
+
+        droughtYieldRetentionScore: 2,
+
+        criticalGrowthStages: [
+          "germination",
+          "rapid-vegetative-growth",
+          "tasseling",
+          "silking",
+          "pollination",
+          "kernel-fill"
+        ],
+
+        criticalStageWaterImportanceScore: 5,
+
+        overwateringSensitivityScore: 3,
+
+        waterloggingSensitivityScore: 4,
+
+        dripIrrigationBenefitScore: 5,
+
+        mulchBenefitScore: 4,
+
+        suitableForRainfallOnlyScore: 3,
+
+        suitableForLimitedIrrigationScore: 2,
+
+        containerDryingRiskScore: 5,
+
+        establishmentYearsRequiringExtraWater: 0,
+
+        directFacts: {
+          establishmentMoistureImportant:
+            true,
+
+          tasselingAndSilkingWaterCritical:
+            true,
+
+          kernelFillWaterImportant:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          irrigationCanProtectYield:
+            true,
+
+          notes: [
+            "Corn needs dependable moisture during rapid growth.",
+            "Water stress near tasseling and silking can cause incomplete pollination and poorly filled ears.",
+            "Kernel fill also requires adequate moisture.",
+            "Established plants may survive moderate drought while producing little usable grain.",
+            "Drip or soaker irrigation can supply water without constantly wetting foliage.",
+            "Mulch can reduce evaporation after soil warms.",
+            "Prolonged saturated soil remains harmful.",
+            "Field Corn is generally less reliable than Sorghum or Millet where irrigation is severely limited."
+          ]
+        }
+      },
+
+      space: {
+        minimumTrialAreaSqFt: 64,
+
+        minimumUsefulAreaSqFt: 100,
+
+        preferredProductionAreaSqFt: 300,
+
+        smallSpaceScore: 1,
+
+        mediumSpaceScore: 4,
+
+        largeSpaceScore: 5,
+
+        layoutScores: {
+          squareBlock: 5,
+          wideRectangle: 5,
+          longStrip: 2,
+          irregular: 2,
+          smallBeds: 2,
+          openField: 5
+        },
+
+        spaceTypeScores: {
+          inGround: 5,
+          raisedBed: 2,
+          container: 1,
+          fenceLine: 1,
+          buildingEdge: 2,
+          unusedLawn: 4,
+          openField: 5,
+          orchard: 1,
+          forageFrame: 1,
+          rotationalPaddock: 2,
+          greenhouse: 1,
+          hedgerow: 1
+        },
+
+        minimumContainerGallons: null,
+
+        containerUseLimitation:
+          "Corn may produce decorative or limited ears in very large containers, but restricted roots, high water demand, poor block pollination, and low yield make containers inefficient for chicken-feed grain.",
+
+        minimumRaisedBedDepthIn: 18,
+
+        vineSpreadRequired: false,
+
+        verticalSupportBenefitScore: 1,
+
+        blockPlantingRequired: true,
+
+        minimumBlockRows: 4,
+
+        continuousStandPreferred: true,
+
+        heightCategory:
+          "very-tall",
+
+        matureWidthCategory:
+          "narrow-upright-block",
+
+        overflowSpaceBenefitScore: 5,
+
+        directFacts: {
+          denseStandSuitable: true,
+
+          compactBlockRequired:
+            true,
+
+          windPollinationImportant:
+            true,
+
+          containerFeedProductionEfficient:
+            false,
+
+          raisedBedFeedProductionEfficient:
+            false,
+
+          notes: [
+            "Corn should generally be planted in a compact block rather than one isolated row.",
+            "Four or more short rows are preferable to one long row for wind pollination.",
+            "The crop requires more useful area than Kale, Cowpea, or container crops.",
+            "A small trial block can demonstrate growth but may produce little grain for a flock.",
+            "Open in-ground plots are the strongest fit.",
+            "Tall stalks may shade nearby vegetables.",
+            "The estimated area values are planning thresholds rather than guaranteed feed-production levels.",
+            "Actual useful yield depends on spacing, population, fertility, pollination, water, variety, and wildlife losses."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens: true,
+
+        suitableForYoungChicks: false,
+
+        flockPurposeScores: {
+          eggs: 4,
+          meat: 4,
+          breeding: 3,
+          petsEnrichment: 4,
+          homestead: 5,
+          mixed: 5
+        },
+
+        feedingMethodScores: {
+          livingGrazing: 1,
+          cutAndCarry: 1,
+          wholeProduce: 3,
+          wholeSeedHeads: 5,
+          wholeGrain: 5,
+          processedGrain: 5,
+          heatTreated: 2,
+          driedForage: 1,
+          winterStorage: 5
+        },
+
+        directRunSuitabilityScore: 1,
+
+        forageFrameSuitabilityScore: 1,
+
+        rotationalPaddockSuitabilityScore: 1,
+
+        confinedFlockValueScore: 5,
+
+        pasturedFlockValueScore: 3,
+
+        treatDilutionRiskScore: 5,
+
+        highEnergySupplement: true,
+
+        highFiberSupplement: false,
+
+        concentratedFatSource: false,
+
+        primaryFlockUses: [
+          "Whole dried ears for enrichment",
+          "Shelled whole dry kernels",
+          "Cracked or coarsely ground grain",
+          "High-energy winter supplementation",
+          "Shelf-stable homestead grain"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Primary protein supplement",
+          "Living forage",
+          "Fresh leafy greens",
+          "Primary young-chick feed",
+          "Feeding moldy or inadequately dried grain"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Mature dry kernels",
+            "Whole dried ears",
+            "Properly cracked or ground dry grain"
+          ],
+
+          preferredBirdStage:
+            "Adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor",
+
+          directAccessTiming:
+            "Keep chickens out of the growing block until harvest because they may damage seedlings, roots, ears, and soil structure.",
+
+          nutritionalOrientation: [
+            "energy",
+            "high-carbohydrate",
+            "grain",
+            "winter-storage",
+            "enrichment"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          notes: [
+            "Field Corn is primarily an energy grain.",
+            "It is relatively low in several amino acids and does not constitute a balanced poultry ration by itself.",
+            "Whole dry kernels may be consumed by adult chickens when appropriately sized and accompanied by grit.",
+            "Cracking or coarse grinding may improve access but increases surface area and storage risk.",
+            "Whole dried ears provide pecking enrichment.",
+            "Corn should be offered as a measured supplement rather than free-choice replacement for complete feed.",
+            "Young chicks should continue receiving a complete age-appropriate ration.",
+            "Moldy, musty, insect-damaged, heated, or questionable grain should not be fed."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore: 3,
+
+        plantingEaseScore: 4,
+
+        establishmentEaseScore: 3,
+
+        routineMaintenanceEaseScore: 3,
+
+        weedControlEaseScore: 3,
+
+        wildlifeProtectionEaseScore: 2,
+
+        harvestEaseScore: 3,
+
+        grainProcessingEaseScore: 2,
+
+        dryingEaseScore: 2,
+
+        storageMonitoringEaseScore: 3,
+
+        physicalAccessibilityScore: 3,
+
+        heavyLiftingRiskScore: 3,
+
+        weeklyLaborLevel:
+          "moderate",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "major",
+
+        requiredPlantingTasks: [
+          "prepare-seedbed",
+          "plant-large-seed",
+          "plant-compact-block"
+        ],
+
+        optionalPlantingTasks: [
+          "install-irrigation",
+          "apply-fertilizer",
+          "install-wildlife-protection"
+        ],
+
+        requiredMaintenanceTasks: [
+          "weed",
+          "monitor-water",
+          "monitor-pollination"
+        ],
+
+        optionalMaintenanceTasks: [
+          "side-dress-nitrogen",
+          "hill-soil",
+          "protect-from-wildlife"
+        ],
+
+        requiredHarvestTasks: [
+          "harvest-ears"
+        ],
+
+        usePathProcessingTasks: {
+          wholeDriedEars: [
+            "harvest-ears",
+            "dry"
+          ],
+
+          shelledWholeGrain: [
+            "harvest-ears",
+            "dry",
+            "shell-corn",
+            "clean-sort"
+          ],
+
+          crackedOrGroundGrain: [
+            "harvest-ears",
+            "dry",
+            "shell-corn",
+            "clean-sort",
+            "crack-grain"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "inspect-moisture",
+          "inspect-mold",
+          "inspect-insects",
+          "inspect-rodents"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "fencing",
+          "bird-netting",
+          "corn-sheller",
+          "grain-cracker",
+          "grain-mill",
+          "drying-rack",
+          "fan",
+          "moisture-meter",
+          "metal-grain-can",
+          "food-safe-bucket",
+          "drip-irrigation"
+        ],
+
+        suitableForLowTimeUsersScore: 2,
+
+        suitableForSoloGrowersScore: 3,
+
+        directFacts: {
+          seedSize:
+            "large",
+
+          directSeedingSuitable: true,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          majorLaborBottlenecks: [
+            "Preparing enough block area",
+            "Maintaining fertility",
+            "Supplying water during tasseling and silking",
+            "Protecting ears from wildlife",
+            "Harvesting and handling bulky ears",
+            "Drying grain safely",
+            "Shelling kernels",
+            "Cracking or grinding if desired",
+            "Protecting stored grain from insects and rodents"
+          ],
+
+          notes: [
+            "Planting individual kernels is straightforward.",
+            "The primary difficulty is producing enough well-pollinated grain to justify the area.",
+            "Harvest and processing occur in a concentrated seasonal workload.",
+            "Whole-ear feeding requires less processing than shelled grain.",
+            "A hand sheller can reduce labor at moderate backyard scale.",
+            "Grinding equipment is optional unless the selected use path requires it.",
+            "Storage management is essential because grain can mold or attract pests."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "low",
+
+        soilPreparationCostLevel:
+          "moderate",
+
+        irrigationCostLevel:
+          "moderate-high",
+
+        protectionCostLevel:
+          "moderate-high",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageCostLevel:
+          "moderate",
+
+        annualRecurringCostLevel:
+          "moderate",
+
+        longTermValueScore: 3,
+
+        lowestCostUsePath:
+          "whole-dried-field-corn-ears",
+
+        highestCostUsePath:
+          "cracked-or-ground-field-corn",
+
+        likelyCostDrivers: [
+          "Fertilizer or compost",
+          "Irrigation",
+          "Wildlife protection",
+          "Drying equipment",
+          "Corn sheller",
+          "Grain cracker or mill",
+          "Moisture meter",
+          "Rodent-proof containers",
+          "Annual seed and soil preparation"
+        ],
+
+        costReductionOptions: [
+          "Feed whole dried ears rather than shelling every kernel.",
+          "Use an adapted open-pollinated variety where seed saving is a goal.",
+          "Use existing irrigation and fencing.",
+          "Plant a trial block before committing a large area.",
+          "Store whole dry kernels rather than grinding far in advance.",
+          "Compare home production costs with purchased grain."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          notes: [
+            "Field Corn seed is inexpensive, but the full production system may not be.",
+            "Fertility, water, protection, drying, processing, and storage can exceed the seed cost.",
+            "Corn must be replanted every year.",
+            "Whole-ear use lowers processing expense.",
+            "Purchased grain may cost less than home production where land or water is scarce.",
+            "Cost classifications are qualitative rather than current retail-price estimates."
+          ]
+        }
+      },
+
+      goals: {
+        feedReductionScore: 5,
+
+        energyProductionScore: 5,
+
+        proteinOrientedScore: 2,
+
+        freshGreensScore: 1,
+
+        livingForageScore: 1,
+
+        winterStorageScore: 5,
+
+        enrichmentScore: 5,
+
+        resilienceScore: 3,
+
+        soilImprovementScore: 2,
+
+        nitrogenFixationScore: 0,
+
+        groundCoverScore: 2,
+
+        erosionControlScore: 2,
+
+        shadeScore: 2,
+
+        privacyScreeningScore: 4,
+
+        pollinatorSupportScore: 1,
+
+        compostBiomassScore: 5,
+
+        householdFoodScore: 2,
+
+        seedSavingScore: 5,
+
+        selfRelianceScore: 5,
+
+        multipurposeValueScore: 4,
+
+        visualAppealScore: 3,
+
+        productionReliabilityScore: 4,
+
+        fastestValueScore: 2,
+
+        nonElectricStorageScore: 5,
+
+        smallFlockValueScore: 4,
+
+        largeFlockValueScore: 5,
+
+        primaryGoalMatches: [
+          "reduce-feed-use",
+          "high-energy",
+          "winter-storage",
+          "enrichment",
+          "seed-saving",
+          "self-reliance",
+          "compost-biomass"
+        ],
+
+        weakGoalMatches: [
+          "protein-oriented",
+          "fresh-greens",
+          "living-forage",
+          "nitrogen-fixation",
+          "pollinators",
+          "container-production",
+          "partial-shade"
+        ],
+
+        directFacts: {
+          nitrogenFixingLegume: false,
+
+          annualEnergyGrain: true,
+
+          wholeEarEnrichmentPotential:
+            true,
+
+          longTermDryStoragePotential:
+            true,
+
+          seedSavingPotential:
+            true,
+
+          notes: [
+            "Field Corn is among the strongest high-energy grain crops in the initial planner database.",
+            "Whole dry kernels and ears can store for extended periods when moisture is controlled.",
+            "The crop can contribute substantially to self-reliance where adequate land, fertility, water, labor, and storage are available.",
+            "It is not a protein-oriented crop.",
+            "It does not fix nitrogen.",
+            "Stalks and leaves can contribute compost biomass after harvest.",
+            "The large area and annual input requirements reduce its suitability for many small gardens."
+          ]
+        }
+      },
+
+      risks: {
+        wildlife: {
+          wildBirds: 5,
+          deer: 5,
+          raccoons: 5,
+          squirrels: 5,
+          rabbits: 2,
+          rodents: 5,
+          groundhogs: 4
+        },
+
+        insectsRiskScore: 5,
+
+        diseaseRiskScore: 4,
+
+        lodgingRiskScore: 4,
+
+        fieldMoldRiskScore: 5,
+
+        dryingMoldRiskScore: 5,
+
+        storageMoldRiskScore: 5,
+
+        storedInsectRiskScore: 5,
+
+        spoilageSpeedRiskScore: 2,
+
+        invasivenessConcernRiskScore: 1,
+
+        selfSeedingRiskScore: 2,
+
+        fruitDropRiskScore: 1,
+
+        cropFailureRiskScore: 4,
+
+        stormDamageRiskScore: 5,
+
+        shadingOtherCropsRiskScore: 5,
+
+        overfeedingRiskScore: 5,
+
+        treatedSeedRiskScore: 5,
+
+        primaryRisks: [
+          {
+            id:
+              "poor-block-pollination",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "tasseling",
+              "silking",
+              "pollination",
+              "kernel-development"
+            ],
+
+            mitigationOptions: [
+              "Plant at least four short rows",
+              "Use a compact block",
+              "Plant one variety together",
+              "Avoid highly staggered planting",
+              "Hand-pollinate a tiny block if necessary"
+            ],
+
+            note:
+              "Sparse or single-row planting can produce ears with many missing kernels."
+          },
+
+          {
+            id:
+              "water-stress-at-pollination",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "tasseling",
+              "silking",
+              "pollination",
+              "kernel-fill"
+            ],
+
+            mitigationOptions: [
+              "Irrigate during dry weather",
+              "Mulch after soil warms",
+              "Maintain soil organic matter",
+              "Select an adapted maturity class",
+              "Reduce plant population under severe water limits"
+            ],
+
+            note:
+              "Drought at tasseling and silking can sharply reduce grain yield."
+          },
+
+          {
+            id:
+              "wildlife-ear-loss",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "milk-stage",
+              "dough-stage",
+              "grain-maturity"
+            ],
+
+            mitigationOptions: [
+              "Use fencing",
+              "Use electric fencing where appropriate",
+              "Use netting or exclusion",
+              "Harvest promptly",
+              "Monitor frequently"
+            ],
+
+            note:
+              "Raccoons, squirrels, deer, birds, and rodents may destroy ears before harvest."
+          },
+
+          {
+            id:
+              "field-and-storage-mold",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "ear-development",
+              "field-dry-down",
+              "postharvest-drying",
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Use adapted disease-resistant varieties",
+              "Harvest damaged ears separately",
+              "Dry promptly",
+              "Measure moisture",
+              "Store only sound dry grain",
+              "Inspect regularly"
+            ],
+
+            note:
+              "Mold and associated toxins can make grain unsafe even when damage is not dramatic."
+          },
+
+          {
+            id:
+              "incomplete-drying",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "harvest",
+              "drying",
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Dry ears with airflow",
+              "Shell only after adequate drying",
+              "Use a moisture meter when possible",
+              "Do not seal warm or damp grain",
+              "Recheck stored grain"
+            ],
+
+            note:
+              "Grain stored too wet may heat, mold, and spoil."
+          },
+
+          {
+            id:
+              "stored-grain-insects-and-rodents",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Use pest-resistant containers",
+              "Clean storage areas",
+              "Cool dry grain",
+              "Inspect frequently",
+              "Discard contaminated grain"
+            ],
+
+            note:
+              "Dry Corn remains attractive to insects and rodents."
+          },
+
+          {
+            id:
+              "lodging-and-storm-damage",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "rapid-growth",
+              "tasseling",
+              "grain-fill",
+              "maturity"
+            ],
+
+            mitigationOptions: [
+              "Avoid excessive nitrogen",
+              "Use adapted varieties",
+              "Maintain potassium",
+              "Avoid overly dense stands",
+              "Harvest after maturity without unnecessary delay"
+            ],
+
+            note:
+              "Tall plants and grain-filled ears can lodge during storms."
+          },
+
+          {
+            id:
+              "treated-seed",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "planting",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use untreated seed where poultry could access it",
+              "Keep treated seed labeled and secured",
+              "Never feed planting seed"
+            ],
+
+            note:
+              "Chemically treated seed must never be fed to chickens."
+          },
+
+          {
+            id:
+              "balanced-feed-displacement",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Continue complete poultry feed",
+              "Measure supplemental grain",
+              "Avoid unrestricted scratch-grain feeding",
+              "Monitor body condition and egg production"
+            ],
+
+            note:
+              "Excess Corn can dilute protein, vitamins, minerals, and amino-acid balance."
+          }
+        ],
+
+        directFacts: {
+          pollinationConcern: true,
+
+          droughtAtSilkingConcern: true,
+
+          wildlifeEarLossConcern: true,
+
+          mycotoxinConcern: true,
+
+          storagePestConcern: true,
+
+          lodgingConcern: true,
+
+          notes: [
+            "Field Corn combines significant production potential with substantial pollination, wildlife, drying, and storage risks.",
+            "Sound appearance alone does not prove freedom from harmful mold toxins.",
+            "Damaged, moldy, musty, heated, insect-contaminated, or questionable grain should not be fed.",
+            "Whole grain should remain supplemental to balanced poultry feed.",
+            "The crop is most suitable for growers prepared to manage an actual grain-production and storage system."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        earlySpring: false,
+
+        lateSpring: true,
+
+        summer: true,
+
+        lateSummer: true,
+
+        fall: true,
+
+        winterStorage: true,
+
+        perennial: false,
+
+        plantingWindows: [
+          {
+            id:
+              "warm-soil-direct-seeding",
+
+            trigger:
+              "after-frost-and-soil-warming",
+
+            offsetWeeksMinimum: 1,
+
+            offsetWeeksMaximum: 4,
+
+            soilCondition:
+              "warm-moist-and-workable",
+
+            method:
+              "direct-seed-compact-block",
+
+            note:
+              "Plant after frost danger when soil temperature supports rapid emergence."
+          }
+        ],
+
+        harvestWindows: [
+          {
+            id:
+              "whole-dried-ears",
+
+            trigger:
+              "physiological-maturity-and-dry-down",
+
+            usePathId:
+              "whole-dried-field-corn-ears",
+
+            note:
+              "Harvest mature ears and continue drying under cover before storage or feeding."
+          },
+
+          {
+            id:
+              "shelled-whole-grain",
+
+            trigger:
+              "fully-dried-ears",
+
+            usePathId:
+              "shelled-whole-field-corn",
+
+            note:
+              "Shell only after ears and kernels are adequately dry."
+          },
+
+          {
+            id:
+              "cracked-or-ground-grain",
+
+            trigger:
+              "clean-dry-shelled-grain",
+
+            usePathId:
+              "cracked-or-ground-field-corn",
+
+            note:
+              "Process small quantities and protect the increased exposed surface area from moisture and rancidity."
+          }
+        ],
+
+        cropSequenceRoles: [
+          "Warm-season energy grain",
+          "Winter-storage crop",
+          "Whole-ear enrichment crop",
+          "Annual self-reliance grain",
+          "Postharvest compost-biomass crop"
+        ],
+
+        seasonalLimitations: [
+          "Frost kills active plants",
+          "Short seasons may not allow full grain maturity",
+          "Pollination requires synchronized tassels and silks",
+          "Wet autumn weather complicates dry-down",
+          "Stored grain requires year-round monitoring"
+        ],
+
+        directFacts: {
+          warmSeasonAnnual: true,
+
+          directSeedingPreferred: true,
+
+          compactBlockPollinationRequired:
+            true,
+
+          grainDryDownRequired: true,
+
+          winterStoragePossible: true,
+
+          notes: [
+            "Field Corn is planted after soil warms.",
+            "Vegetative growth accelerates during warm summer weather.",
+            "Tasseling and silking must overlap for good pollination.",
+            "Ears mature in late summer or fall depending on variety and planting date.",
+            "Field drying may need to be completed under cover.",
+            "Dry grain can provide winter value after the annual crop dies."
+          ]
+        }
+      },
+
+      usePaths: [
+        {
+          id:
+            "whole-dried-field-corn-ears",
+
+          label:
+            "Whole Dried Field-Corn Ears",
+
+          description:
+            "Mature Field-Corn ears are harvested, dried thoroughly, inspected, and offered whole for adult-chicken pecking enrichment.",
+
+          primaryFeedRole:
+            "whole-ear-energy-enrichment",
+
+          harvestProducts: [
+            "dried-corn-ears",
+            "whole-corn-ears",
+            "whole-seed-heads",
+            "stored-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "whole-produce",
+            "pecking-enrichment",
+            "winter-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-ears",
+            "dry"
+          ],
+
+          optionalProcessingTasks: [
+            "remove-husks",
+            "clean-sort"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "drying-rack",
+            "fan",
+            "moisture-meter",
+            "rodent-proof-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "dry-whole-ears"
+          ],
+
+          preferredStorageMethod:
+            "cool-dry-ventilated-and-rodent-protected",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: true,
+
+          curingRequired: false,
+
+          shellingRequired: false,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 5,
+
+          rodentRiskScore: 5,
+
+          storedInsectRiskScore: 4,
+
+          harvestEaseScore: 4,
+
+          preparationEaseScore: 4,
+
+          beginnerSuitabilityScore: 3,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Dry ears thoroughly before storage.",
+            "Inspect cobs and kernels for mold, insects, rodent contamination, heating, and musty odor.",
+            "Discard questionable ears.",
+            "Whole ears are supplemental enrichment, not complete feed.",
+            "Provide appropriate grit."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-drying-capability",
+            "has-no-rodent-protection",
+            "requires-immediate-fresh-greens",
+            "has-no-block-growing-space"
+          ]
+        },
+
+        {
+          id:
+            "shelled-whole-field-corn",
+
+          label:
+            "Shelled Whole Field-Corn Grain",
+
+          description:
+            "Fully dried ears are shelled, cleaned, and stored as whole dry kernels for measured adult-chicken supplementation.",
+
+          primaryFeedRole:
+            "whole-energy-grain",
+
+          harvestProducts: [
+            "dry-grain",
+            "corn-kernels",
+            "whole-grain",
+            "stored-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "winter-storage"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-ears",
+            "dry",
+            "shell-corn",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [
+            "winnow"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "corn-sheller",
+            "fan",
+            "moisture-meter",
+            "metal-grain-can",
+            "food-safe-bucket"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "dry-whole-grain"
+          ],
+
+          preferredStorageMethod:
+            "cool-dry-airtight-and-pest-resistant",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: true,
+
+          curingRequired: false,
+
+          shellingRequired: true,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: false,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 5,
+
+          rodentRiskScore: 5,
+
+          storedInsectRiskScore: 5,
+
+          harvestEaseScore: 3,
+
+          preparationEaseScore: 2,
+
+          beginnerSuitabilityScore: 2,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Shell only fully dried ears.",
+            "Store only clean, sound, dry kernels.",
+            "Inspect for mold, insects, rodents, moisture, and heating.",
+            "Do not feed damaged or questionable grain.",
+            "Whole Corn is supplemental to complete poultry feed.",
+            "Provide appropriate grit."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-shelling",
+            "has-no-drying-capability",
+            "has-no-dry-storage",
+            "has-no-rodent-protection",
+            "requires-minimal-processing"
+          ]
+        },
+
+        {
+          id:
+            "cracked-or-ground-field-corn",
+
+          label:
+            "Cracked or Coarsely Ground Field Corn",
+
+          description:
+            "Clean, fully dried, shelled Field Corn is cracked or coarsely ground shortly before feeding as a measured energy supplement.",
+
+          primaryFeedRole:
+            "processed-energy-grain",
+
+          harvestProducts: [
+            "cracked-grain",
+            "ground-grain",
+            "processed-corn",
+            "dry-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "measured-supplement",
+            "ration-ingredient"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-ears",
+            "dry",
+            "shell-corn",
+            "clean-sort",
+            "crack-grain"
+          ],
+
+          optionalProcessingTasks: [
+            "winnow"
+          ],
+
+          requiredEquipment: [
+            "grain-cracker"
+          ],
+
+          helpfulEquipment: [
+            "corn-sheller",
+            "grain-mill",
+            "fan",
+            "moisture-meter",
+            "food-safe-bucket"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "process-in-small-batches",
+
+          storageMethods: [
+            "dry-whole-grain-before-processing",
+            "short-term-processed-grain"
+          ],
+
+          preferredStorageMethod:
+            "store-whole-and-process-small-batches",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable: true,
+
+          refrigerationSuitable: false,
+
+          freezingSuitable: false,
+
+          dryingRequired: true,
+
+          curingRequired: false,
+
+          shellingRequired: true,
+
+          threshingRequired: false,
+
+          cookingRequired: false,
+
+          grindingRequired: true,
+
+          moistureSensitive: true,
+
+          moldRiskScore: 5,
+
+          rodentRiskScore: 5,
+
+          storedInsectRiskScore: 4,
+
+          harvestEaseScore: 2,
+
+          preparationEaseScore: 1,
+
+          beginnerSuitabilityScore: 2,
+
+          householdFoodValueScore: 1,
+
+          flockValueScore: 5,
+
+          safetyWarnings: [
+            "Process only sound dry grain.",
+            "Grinding does not make moldy or contaminated grain safe.",
+            "Store whole grain and process smaller batches where practical.",
+            "Protect processed grain from moisture and pests.",
+            "Use only as part of an appropriately balanced feeding program."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-shelling",
+            "declines-grinding",
+            "has-no-grain-cracker",
+            "has-no-drying-capability",
+            "requires-minimal-processing"
+          ]
+        }
+      ],
+
+      dataQuality: {
+        overallConfidence: 0.82,
+
+        verifiedFields: [
+          "identity",
+          "lifecycle",
+          "climate.directFacts.seasonType",
+          "climate.directFacts.windPollinated",
+          "climate.directFacts.blockPollinationImportant",
+          "site.directFacts.preferredLight",
+          "soil.directFacts.nitrogenFixingLegume",
+          "water.directFacts.tasselingAndSilkingWaterCritical",
+          "space.directFacts.compactBlockRequired",
+          "space.directFacts.windPollinationImportant",
+          "flock.directFacts.edibleFeedParts",
+          "flock.directFacts.nutritionalOrientation",
+          "risks.directFacts.pollinationConcern",
+          "risks.directFacts.mycotoxinConcern",
+          "risks.directFacts.storagePestConcern",
+          "seasonalRoles.directFacts.warmSeasonAnnual",
+          "seasonalRoles.directFacts.grainDryDownRequired"
+        ],
+
+        derivedFields: [
+          "climate",
+          "site",
+          "soil.textureScores",
+          "water",
+          "space",
+          "flock.flockPurposeScores",
+          "flock.feedingMethodScores",
+          "labor",
+          "cost",
+          "goals",
+          "risks.wildlife",
+          "usePaths.whole-dried-field-corn-ears",
+          "usePaths.shelled-whole-field-corn",
+          "usePaths.cracked-or-ground-field-corn"
+        ],
+
+        uncertainFields: [
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.daysToMaturityMinimum",
+          "climate.daysToMaturityMaximum",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "flock.portionGuidance",
+          "usePaths.whole-dried-field-corn-ears.exactStorageDuration",
+          "usePaths.shelled-whole-field-corn.exactStorageDuration"
+        ],
+
+        missingFields: [
+          "flock.portionGuidance",
+          "flock.usePathTesting"
+        ],
+
+        lastReviewed:
+          "2026-07-15",
+
+        primarySources: [
+          {
+            title:
+              "Corn Production and Management",
+
+            organization:
+              "University Cooperative Extension crop-production resources",
+
+            sourceType:
+              "extension-grain-guide",
+
+            use:
+              "Planting temperature, population, fertility, pollination, irrigation, maturity, harvest, and grain production"
+          },
+
+          {
+            title:
+              "Corn Growth and Development",
+
+            organization:
+              "United States Department of Agriculture and land-grant universities",
+
+            sourceType:
+              "government-and-extension-reference",
+
+            use:
+              "Growth stages, tasseling, silking, kernel development, physiological maturity, and drought-sensitive stages"
+          },
+
+          {
+            title:
+              "Corn in Poultry Nutrition",
+
+            organization:
+              "Poultry-feed and animal-nutrition references",
+
+            sourceType:
+              "feed-nutrition-reference",
+
+            use:
+              "Energy value, protein limitations, amino-acid balance, whole and processed grain, and ration-dilution concerns"
+          },
+
+          {
+            title:
+              "Grain Drying, Handling, and Storage",
+
+            organization:
+              "University Cooperative Extension stored-grain resources",
+
+            sourceType:
+              "extension-storage-guide",
+
+            use:
+              "Moisture, drying, cooling, mold, mycotoxins, insect control, rodent protection, and storage monitoring"
+          }
+        ],
+
+        notes: [
+          "Field Corn plannerData is specific to Zea mays grown for mature dry grain rather than Sweet Corn harvested at the eating stage.",
+          "The three use paths are whole dried ears, shelled whole grain, and cracked or coarsely ground grain.",
+          "The crop is treated primarily as a high-energy supplement rather than a protein crop.",
+          "Compact block planting is essential to its space scoring.",
+          "No exact safe flock inclusion rate has been assigned.",
+          "No medicinal claims are made.",
+          "The crop should remain in testing until block-pollination, large-space grain, limited-water, whole-ear, shelling, processing, wildlife-loss, and humid-storage profiles are evaluated."
+        ]
+      }
     }
   },
 
-    "CROP-GRAIN-SORGHUM": {
+  "CROP-GRAIN-SORGHUM": {
     id: "CROP-GRAIN-SORGHUM",
 
     name: "Grain Sorghum (Milo)",
