@@ -1666,11 +1666,12 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
       harvestStorage: {
         desiredHarvestProducts: [
-          "fresh-fruit",
-          "pumpkin-squash-flesh"
+          "fresh-greens",
+          "fresh-forage",
+          "fresh-produce"
         ],
         harvestPatternPreference:
-          "several",
+          "continuous",
         minimalPreparationPriority:
           "top",
         desiredStorageDuration:
