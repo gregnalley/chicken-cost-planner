@@ -97,6 +97,7 @@
     renderCropRegistrationReport();
     renderCropValidationReport();
     renderSunflowerSampleTests();
+    renderSampleProfileList();
     renderMultiCropSampleTests();
 
   }
@@ -674,11 +675,71 @@ function renderMultiCropSampleTests() {
       .join("");
 }
 
+function renderSampleProfileList() {
+  const summaryElement =
+    document.getElementById(
+      "sample-profile-summary"
+    );
+
+  const listElement =
+    document.getElementById(
+      "sample-profile-list"
+    );
+
+  const profiles =
+    namespace.config
+      ?.testing
+      ?.sampleUserProfiles ||
+    [];
+
+  if (summaryElement) {
+    summaryElement.textContent =
+      `${profiles.length} sample profiles are currently loaded.`;
+
+    summaryElement.className =
+      profiles.length === 13
+        ? "foundation-status foundation-status-success"
+        : "foundation-status";
+  }
+
+  if (!listElement) {
+    return;
+  }
+
+  if (profiles.length === 0) {
+    listElement.innerHTML =
+      "<p>No sample profiles were found.</p>";
+
+    return;
+  }
+
+  listElement.innerHTML = `
+    <ol>
+      ${profiles
+        .map(profile => {
+          return `
+            <li>
+              <strong>
+                ${profile.label || "Unnamed profile"}
+              </strong>
+              <br>
+              <code>
+                ${profile.id || "Missing ID"}
+              </code>
+            </li>
+          `;
+        })
+        .join("")}
+    </ol>
+  `;
+}
+
   namespace.ui = Object.freeze({
     initializeDevelopmentPage,
     renderCropRegistrationReport,
     renderCropValidationReport,
     renderSunflowerSampleTests,
+    renderSampleProfileList,
     renderMultiCropSampleTests
   });
 
