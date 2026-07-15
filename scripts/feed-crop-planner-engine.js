@@ -3382,6 +3382,95 @@ function getGenericWildlifePenalty(
   };
 }
 
+function analyzeHarvestProductMatch(
+  usePathProducts,
+  desiredProducts
+) {
+  const genericProductIds =
+    new Set([
+      "fresh-greens",
+      "fresh-forage",
+      "fresh-produce",
+      "fresh-fruit",
+      "fallen-fruit",
+      "dried-forage",
+      "dried-leaves",
+      "dry-grain",
+      "whole-grain",
+      "stored-grain",
+      "cracked-grain",
+      "ground-grain",
+      "whole-seed-heads",
+      "stored-enrichment"
+    ]);
+
+  const safeUsePathProducts =
+    Array.isArray(
+      usePathProducts
+    )
+      ? usePathProducts
+      : [];
+
+  const safeDesiredProducts =
+    Array.isArray(
+      desiredProducts
+    )
+      ? desiredProducts
+      : [];
+
+  const allMatches =
+    safeDesiredProducts.filter(
+      productId =>
+        safeUsePathProducts.includes(
+          productId
+        )
+    );
+
+  const specificDesiredProducts =
+    safeDesiredProducts.filter(
+      productId =>
+        !genericProductIds.has(
+          productId
+        )
+    );
+
+  const specificMatches =
+    specificDesiredProducts.filter(
+      productId =>
+        safeUsePathProducts.includes(
+          productId
+        )
+    );
+
+  const genericMatches =
+    allMatches.filter(
+      productId =>
+        genericProductIds.has(
+          productId
+        )
+    );
+
+  return {
+    hasAnyDesiredProducts:
+      safeDesiredProducts.length > 0,
+
+    hasSpecificDesiredProducts:
+      specificDesiredProducts.length >
+      0,
+
+    hasAnyMatch:
+      allMatches.length > 0,
+
+    hasSpecificMatch:
+      specificMatches.length > 0,
+
+    allMatches,
+    specificMatches,
+    genericMatches,
+    specificDesiredProducts
+  };
+}
+
 function scoreGenericUsePath(
   crop,
   usePath,
@@ -3450,25 +3539,76 @@ function scoreGenericUsePath(
     usePath.harvestProducts ||
     [];
 
-  const productMatch =
-    desiredProducts.length === 0
-      ? null
-      : arrayIncludesAny(
-          harvestProducts,
-          desiredProducts
+    const productMatchAnalysis =
+    analyzeHarvestProductMatch(
+      harvestProducts,
+      desiredProducts
+    );
+
+  if (
+    !productMatchAnalysis
+      .hasAnyDesiredProducts
+  ) {
+    limitations.push(
+      "The visitor did not select a specific harvest product."
+    );
+  } else if (
+    productMatchAnalysis
+      .hasSpecificDesiredProducts
+  ) {
+    if (
+      productMatchAnalysis
+        .hasSpecificMatch
+    ) {
+      const specificMatchBonus =
+        Math.min(
+          32,
+          22 +
+            (
+              productMatchAnalysis
+                .specificMatches
+                .length -
+              1
+            ) *
+            5
         );
 
-  if (productMatch === true) {
-    score += 30;
+      score +=
+        specificMatchBonus;
+
+      strengths.push(
+        `Directly matches the requested crop-specific products: ${productMatchAnalysis.specificMatches.join(", ")}.`
+      );
+    } else if (
+      productMatchAnalysis
+        .hasAnyMatch
+    ) {
+      score -= 12;
+
+      limitations.push(
+        "Matches only a broad product category, not the visitor's crop-specific harvest products."
+      );
+    } else {
+      score -= 30;
+
+      limitations.push(
+        `Does not produce the requested specific harvest products: ${productMatchAnalysis.specificDesiredProducts.join(", ")}.`
+      );
+    }
+  } else if (
+    productMatchAnalysis
+      .hasAnyMatch
+  ) {
+    score += 12;
 
     strengths.push(
-      "Directly matches a desired harvest product."
+      `Matches the requested general harvest products: ${productMatchAnalysis.allMatches.join(", ")}.`
     );
-  } else if (productMatch === false) {
-    score -= 28;
+  } else {
+    score -= 14;
 
     limitations.push(
-      "Does not match any selected harvest product."
+      "Does not directly match the selected harvest products."
     );
   }
 
