@@ -3431,6 +3431,446 @@ const HARVEST_FREQUENCY_CATEGORIES =
           "top-three"
       }
     }
+  }),
+
+  // ==================================================
+  // GRAIN SORGHUM TEST PROFILES
+  // ==================================================
+
+  // --------------------------------------------------
+  // Profile 22: Hot Dry Limited-Irrigation Milo Plan
+  // ID: PROFILE-SORGHUM-HOT-DRY-LIMITED-WATER
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-SORGHUM-HOT-DRY-LIMITED-WATER",
+
+    label:
+      "Hot Dry Limited-Irrigation Milo Plan",
+
+    description:
+      "An experienced grower in a hot, drought-prone climate with a medium-sized sunny plot, limited irrigation, warm sandy-loam soil, protected drying space, and goals centered on drought-resilient energy grain and winter storage.",
+
+    answers: {
+      climate: {
+        climateType:
+          "hot-dry",
+
+        frostFreeSeasonRange:
+          "180-209"
+      },
+
+      flock: {
+        flockSize: 14,
+
+        primaryFlockPurpose:
+          "homestead",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 600,
+
+        availableSpaceTypes: [
+          "open-field",
+          "in-ground",
+          "unused-lawn"
+        ],
+
+        largestAreaShape:
+          "wide-rectangle",
+
+        overflowOptions: [
+          "open-field"
+        ],
+
+        plantBehaviorRestrictions: [],
+
+        blockPlantingAvailable:
+          false,
+
+        availableBlockRows: 3
+      },
+
+      site: {
+        directSunHoursExact: 10,
+
+        windExposure:
+          "moderate"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "native-soil",
+
+        soilTexture:
+          "sandy-loam",
+
+        soilDrainage:
+          "well-drained",
+
+        soilDepthCategory:
+          "deep",
+
+        soilPHCategory:
+          "near-neutral",
+
+        fertilityLevel:
+          "moderate"
+      },
+
+      water: {
+        waterReliability:
+          "limited",
+
+        wateringFrequencyPreference:
+          "weekly-or-less",
+
+        waterConservationPriority:
+          "very-high",
+
+        criticalStageWaterAvailability:
+          "usually-reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "experienced",
+
+        weeklyCropTime:
+          "3-5-hours",
+
+        acceptedProcessingTasks: [
+          "cut-seed-heads",
+          "dry",
+          "thresh",
+          "winnow",
+          "clean-sort"
+        ],
+
+        dryingCapability:
+          "large-covered",
+
+        dryingFacilities: [
+          "barn-shed",
+          "fans",
+          "screens-trays",
+          "rodent-proof"
+        ],
+
+        ownedEquipment: [
+          "bird-netting",
+          "hand-pruners",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "threshing-bag",
+          "moisture-meter",
+          "metal-grain-can",
+          "food-safe-bucket",
+          "drip-irrigation"
+        ],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "dried-seed-heads",
+          "whole-sorghum-heads",
+          "sorghum-panicles",
+          "dry-grain",
+          "sorghum-grain",
+          "milo-grain",
+          "whole-grain",
+          "stored-grain"
+        ],
+
+        harvestPatternPreference:
+          "major",
+
+        desiredStorageDuration:
+          "6-12-months",
+
+        minimalPreparationPriority:
+          "medium",
+
+        dryStorageLocations: [
+          "barn-shed"
+        ],
+
+        storageHumidity:
+          "consistently-dry",
+
+        dryCropContainerType:
+          "metal-grain-can",
+
+        rodentProtection:
+          "rodent-proof-containers"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "reduce-feed-use",
+          "high-energy",
+          "winter-storage",
+          "limited-irrigation",
+          "resilience-feed",
+          "enrichment",
+          "seed-saving",
+          "self-reliance"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "limited-irrigation",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "high-energy",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "winter-storage",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "energy",
+
+        beginnerFriendlinessPriority:
+          "moderate",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "wild-birds",
+          "rodents"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
+  }),
+
+  // --------------------------------------------------
+  // Profile 23: Cool Humid Short-Season Sorghum Rejection
+  // ID: PROFILE-SORGHUM-COOL-HUMID-SHORT-SEASON
+  // --------------------------------------------------
+
+  Object.freeze({
+    id:
+      "PROFILE-SORGHUM-COOL-HUMID-SHORT-SEASON",
+
+    label:
+      "Cool Humid Short-Season Sorghum Rejection Plan",
+
+    description:
+      "A beginner in a cool, humid, short-season climate with a small partly shaded garden, no protected drying space, minimal processing tolerance, and a need for quick fresh supplemental feed rather than mature dry grain.",
+
+    answers: {
+      climate: {
+        climateType:
+          "cold-short-summer",
+
+        frostFreeSeasonRange:
+          "60-89"
+      },
+
+      flock: {
+        flockSize: 5,
+
+        primaryFlockPurpose:
+          "pets-enrichment",
+
+        forageAccess:
+          "none"
+      },
+
+      space: {
+        totalGrowingAreaSqFt: 60,
+
+        availableSpaceTypes: [
+          "raised-bed",
+          "small-beds",
+          "containers"
+        ],
+
+        largestAreaShape:
+          "small-beds",
+
+        containerCount: 3,
+
+        overflowOptions: [],
+
+        plantBehaviorRestrictions: [
+          "must-remain-small",
+          "no-tall-screening",
+          "no-permanent-plantings"
+        ],
+
+        blockPlantingAvailable:
+          false,
+
+        availableBlockRows: 1
+      },
+
+      site: {
+        directSunHoursExact: 5,
+
+        windExposure:
+          "low"
+      },
+
+      soil: {
+        primaryGrowingMedium:
+          "improved-garden",
+
+        soilTexture:
+          "clay-loam",
+
+        soilDrainage:
+          "moderately-drained",
+
+        soilDepthCategory:
+          "shallow",
+
+        soilPHCategory:
+          "near-neutral",
+
+        fertilityLevel:
+          "moderate"
+      },
+
+      water: {
+        waterReliability:
+          "very-reliable",
+
+        wateringFrequencyPreference:
+          "every-2-3-days",
+
+        waterConservationPriority:
+          "low",
+
+        criticalStageWaterAvailability:
+          "reliable"
+      },
+
+      labor: {
+        gardeningExperience:
+          "beginner",
+
+        weeklyCropTime:
+          "30-60-min",
+
+        acceptedProcessingTasks: [
+          "cut-leaves",
+          "pick-produce"
+        ],
+
+        dryingCapability:
+          "none",
+
+        dryingFacilities: [],
+
+        ownedEquipment: [],
+
+        equipmentPurchaseWillingness: []
+      },
+
+      harvestStorage: {
+        desiredHarvestProducts: [
+          "fresh-greens",
+          "fresh-forage",
+          "fresh-produce"
+        ],
+
+        harvestPatternPreference:
+          "continuous",
+
+        desiredStorageDuration:
+          "immediate",
+
+        minimalPreparationPriority:
+          "top",
+
+        dryStorageLocations: [],
+
+        storageHumidity:
+          "often-humid",
+
+        rodentProtection:
+          "none"
+      },
+
+      preferences: {
+        plannerGoals: [
+          "fresh-greens",
+          "fast-value",
+          "short-season",
+          "enrichment"
+        ],
+
+        goalPriorities: [
+          {
+            goal:
+              "short-season",
+
+            rank: 1
+          },
+
+          {
+            goal:
+              "fast-value",
+
+            rank: 2
+          },
+
+          {
+            goal:
+              "fresh-greens",
+
+            rank: 3
+          }
+        ],
+
+        preferredNutritionalRole:
+          "fresh-green",
+
+        beginnerFriendlinessPriority:
+          "essential",
+
+        annualPerennialPreference:
+          "annual-preferred",
+
+        reversibilityRequirement:
+          "one-season",
+
+        wildlifePestPressure: [
+          "rabbits"
+        ],
+
+        desiredRecommendationFormat:
+          "top-three"
+      }
+    }
   })
 
   // ==================================================
@@ -3438,7 +3878,6 @@ const HARVEST_FREQUENCY_CATEGORIES =
   // ==================================================
 
 ]);
-
 
 
 
@@ -3924,6 +4363,55 @@ const PROFILE_MATRIX_EXPECTATIONS =
 
         notes:
           "Field Corn should not lead. Its block-pollination requirement, tall growth, water demand during tasseling and silking, grain-drying needs, and poor container efficiency should favor smaller or more drought-tolerant crops."
+ 
+      }),
+
+    // ==================================================
+    // GRAIN SORGHUM PROFILE MATRIX EXPECTATIONS
+    // ==================================================
+
+    "PROFILE-SORGHUM-HOT-DRY-LIMITED-WATER":
+      Object.freeze({
+        profileNumber: 22,
+
+        purpose:
+          "Tests Grain Sorghum under its strongest conditions: hot dry weather, limited irrigation, a medium open-ground plot, no Corn-style block-pollination requirement, protected drying, threshing capability, bird protection, and long-term energy-grain storage.",
+
+        expectedTopCropIds: [
+          "CROP-GRAIN-SORGHUM"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-GRAIN-SORGHUM",
+          "CROP-PROSO-MILLET",
+          "CROP-FIELD-CORN"
+        ],
+
+        notes:
+          "Grain Sorghum should lead because the profile emphasizes heat, drought resilience, limited irrigation, energy production, whole-head or threshed grain, winter storage, and a plot that is large enough for useful production but does not provide Field Corn's preferred block layout."
+      }),
+
+    "PROFILE-SORGHUM-COOL-HUMID-SHORT-SEASON":
+      Object.freeze({
+        profileNumber: 23,
+
+        purpose:
+          "Tests conditions that should strongly reject Grain Sorghum: a cool humid climate, only 60 to 89 frost-free days, partial sun, shallow small beds and containers, no drying capability, minimal processing, and a need for immediate fresh greens.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA",
+          "CROP-WHITE-CLOVER"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA",
+          "CROP-WHITE-CLOVER"
+        ],
+
+        notes:
+          "Grain Sorghum should not lead. Its warm-soil requirement, 90-to-120-day grain maturity, full-sun preference, tall growth, drying requirement, and grain-processing workload should favor fast fresh-feed crops."
       })
 
   });
