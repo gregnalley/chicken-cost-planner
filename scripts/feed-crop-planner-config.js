@@ -2592,239 +2592,219 @@ const HARVEST_FREQUENCY_CATEGORIES =
   // --------------------------------------------------
 
   Object.freeze({
-    id:
-      "PROFILE-MULBERRY-ORCHARD-SILVOPASTURE",
+  id:
+    "PROFILE-MULBERRY-ORCHARD-SILVOPASTURE",
 
-    label:
-      "Established Orchard and Silvopasture Plan",
+  label:
+    "Established Orchard and Silvopasture Plan",
 
-    description:
-      "A long-term homestead grower with ample permanent space, an orchard and rotational paddocks, established tree-care skills, and goals centered on shade, fresh fruit, leafy forage, household food, and durable perennial production.",
+  description:
+    "A long-term homestead grower with ample permanent orchard space who wants naturally fallen fruit, fresh household fruit, leafy tree forage, shade, edible landscaping, and durable multipurpose production.",
 
-    answers: {
-      climate: {
-        climateType:
-          "temperate",
+  answers: {
+    climate: {
+      climateType:
+        "temperate",
 
-        frostFreeSeasonRange:
-          "180-209"
-      },
+      frostFreeSeasonRange:
+        "180-209"
+    },
 
-      flock: {
-        flockSize: 20,
+    flock: {
+      flockSize: 20,
 
-        primaryFlockPurpose:
-          "homestead",
+      primaryFlockPurpose:
+        "homestead",
 
-        forageAccess:
-          "rotational-paddock"
-      },
+      forageAccess:
+        "rotational-paddock"
+    },
 
-      space: {
-        totalGrowingAreaSqFt: 5000,
+    space: {
+      totalGrowingAreaSqFt: 5000,
 
-        availableSpaceTypes: [
-          "orchard",
-          "rotational-paddock",
-          "unused-lawn",
-          "open-field",
-          "hedgerow"
-        ],
+      availableSpaceTypes: [
+        "orchard",
+        "rotational-paddock",
+        "unused-lawn",
+        "open-field",
+        "hedgerow"
+      ],
 
-        largestAreaShape:
-          "irregular",
+      largestAreaShape:
+        "irregular",
 
-        overflowOptions: [
-          "orchard-floor",
-          "unused-lawn",
-          "open-field"
-        ],
+      overflowOptions: [
+        "orchard-floor",
+        "unused-lawn",
+        "open-field"
+      ],
 
-        plantBehaviorRestrictions: []
-      },
+      plantBehaviorRestrictions: []
+    },
 
-      site: {
-        directSunHoursExact: 9,
+    site: {
+      directSunHoursExact: 9,
 
-        windExposure:
-          "moderate"
-      },
+      windExposure:
+        "moderate"
+    },
 
-      soil: {
-        primaryGrowingMedium:
-          "native-soil",
+    soil: {
+      primaryGrowingMedium:
+        "native-soil",
 
-        soilTexture:
-          "loam",
+      soilTexture:
+        "loam",
 
-        soilDrainage:
-          "well-drained",
+      soilDrainage:
+        "well-drained",
 
-        soilDepthCategory:
-          "deep",
+      soilDepthCategory:
+        "deep",
 
-        soilPHCategory:
-          "near-neutral"
-      },
+      soilPHCategory:
+        "near-neutral"
+    },
 
-      water: {
-        waterReliability:
-          "usually-reliable",
+    water: {
+      waterReliability:
+        "usually-reliable",
 
-        wateringFrequencyPreference:
-          "weekly",
+      wateringFrequencyPreference:
+        "weekly",
 
-        waterConservationPriority:
-          "moderate",
+      waterConservationPriority:
+        "moderate",
 
-        criticalStageWaterAvailability:
-          "reliable"
-      },
+      criticalStageWaterAvailability:
+        "reliable"
+    },
 
-      labor: {
-        gardeningExperience:
-          "experienced",
+    labor: {
+      gardeningExperience:
+        "experienced",
 
-        weeklyCropTime:
-          "3-5-hours",
+      weeklyCropTime:
+        "1-2-hours",
 
-        acceptedProcessingTasks: [
-          "pick-produce",
-          "cut-leaves",
-          "clean-sort",
-          "dry",
-          "chop"
-        ],
+      acceptedProcessingTasks: [
+        "pick-produce",
+        "cut-leaves",
+        "clean-sort"
+      ],
 
-        dryingCapability:
-          "large-covered",
+      dryingCapability:
+        "none",
 
-        dryingFacilities: [
-          "barn-shed",
-          "fans",
-          "screens-trays",
-          "rodent-proof"
-        ],
+      dryingFacilities: [],
 
-        ownedEquipment: [
-          "fencing",
-          "temporary-fencing",
-          "tree-guard",
-          "hand-pruners",
-          "loppers",
-          "pruning-saw",
-          "harvest-sheet",
-          "basket",
-          "drying-rack",
-          "drying-screen",
-          "fan",
-          "food-safe-bucket",
-          "drip-irrigation"
-        ],
+      ownedEquipment: [
+        "fencing",
+        "temporary-fencing",
+        "tree-guard",
+        "hand-pruners",
+        "loppers",
+        "pruning-saw",
+        "harvest-sheet",
+        "basket",
+        "drip-irrigation"
+      ],
 
-        equipmentPurchaseWillingness: [
-          "moisture-meter"
-        ]
-      },
+      equipmentPurchaseWillingness: []
+    },
 
-      harvestStorage: {
-        desiredHarvestProducts: [
-          "fresh-fruit",
-          "fallen-fruit",
-          "mulberries",
-          "fresh-greens",
-          "fresh-forage",
-          "mulberry-leaves",
-          "dried-forage",
-          "dried-leaves",
-          "mulberry-leaf-forage"
-        ],
+    harvestStorage: {
+      desiredHarvestProducts: [
+        "fresh-fruit",
+        "fallen-fruit",
+        "mulberries",
+        "fresh-produce",
+        "fresh-greens",
+        "fresh-forage",
+        "mulberry-leaves",
+        "leafy-branches"
+      ],
 
-        harvestPatternPreference:
-          "mixed",
+      harvestPatternPreference:
+        "mixed",
 
-        desiredStorageDuration:
-          "3-6-months",
+      desiredStorageDuration:
+        "immediate",
 
-        minimalPreparationPriority:
-          "low",
+      minimalPreparationPriority:
+        "high",
 
-        dryStorageLocations: [
-          "barn-shed"
-        ],
+      dryStorageLocations: [],
 
-        storageHumidity:
-          "consistently-dry",
+      storageHumidity:
+        "usually-dry",
 
-        dryCropContainerType:
-          "airtight-food-safe",
+      rodentProtection:
+        "none"
+    },
 
-        rodentProtection:
-          "rodent-proof-containers"
-      },
+    preferences: {
+      plannerGoals: [
+        "fresh-greens",
+        "living-forage",
+        "enrichment",
+        "shade",
+        "privacy-screening",
+        "compost-biomass",
+        "shared-household-food",
+        "self-reliance",
+        "edible-landscape",
+        "use-unused-space"
+      ],
 
-      preferences: {
-        plannerGoals: [
-          "fresh-greens",
-          "living-forage",
-          "winter-storage",
-          "enrichment",
-          "shade",
-          "privacy-screening",
-          "compost-biomass",
-          "shared-household-food",
-          "self-reliance",
-          "edible-landscape",
-          "use-unused-space"
-        ],
+      goalPriorities: [
+        {
+          goal:
+            "shared-household-food",
 
-        goalPriorities: [
-          {
-            goal:
-              "self-reliance",
+          rank: 1
+        },
 
-            rank: 1
-          },
+        {
+          goal:
+            "shade",
 
-          {
-            goal:
-              "shared-household-food",
+          rank: 2
+        },
 
-            rank: 2
-          },
+        {
+          goal:
+            "edible-landscape",
 
-          {
-            goal:
-              "shade",
+          rank: 3
+        }
+      ],
 
-            rank: 3
-          }
-        ],
+      preferredNutritionalRole:
+        "diversified",
 
-        preferredNutritionalRole:
-          "diversified",
+      beginnerFriendlinessPriority:
+        "low",
 
-        beginnerFriendlinessPriority:
-          "low",
+      annualPerennialPreference:
+        "perennial-preferred",
 
-        annualPerennialPreference:
-          "perennial-preferred",
+      reversibilityRequirement:
+        "permanent-planting-allowed",
 
-        reversibilityRequirement:
-          "permanent-planting-allowed",
+      wildlifePestPressure: [
+        "wild-birds",
+        "deer",
+        "raccoons",
+        "squirrels"
+      ],
 
-        wildlifePestPressure: [
-          "wild-birds",
-          "deer",
-          "raccoons",
-          "squirrels"
-        ],
-
-        desiredRecommendationFormat:
-          "top-three"
-      }
+      desiredRecommendationFormat:
+        "top-three"
     }
-  }),
+  }
+}),
 
   // --------------------------------------------------
   // Profile 19: Temporary Small Rental Garden
