@@ -643,56 +643,73 @@ const HARVEST_FREQUENCY_CATEGORIES =
       },
 
       harvestStorage: {
-        desiredHarvestProducts: [
-          "fresh-seed-heads",
-          "dried-seed-heads",
-          "dry-seeds"
-        ],
-        harvestPatternPreference:
-          "mixed",
-        minimalPreparationPriority:
-          "moderate",
-        dryStorageLocations: [
-          "garage"
-        ],
-        storageHumidity:
-          "often-humid",
-        rodentProtection:
-          "rodent-proof-containers"
-      },
+  desiredHarvestProducts: [
+    "fresh-greens",
+    "fresh-leaves"
+  ],
 
-      preferences: {
-        plannerGoals: [
-          "enrichment",
-          "winter-storage",
-          "pollinators"
-        ],
-        goalPriorities: [
-          {
-            goal: "winter-storage",
-            rank: 1
-          },
-          {
-            goal: "enrichment",
-            rank: 2
-          },
-          {
-            goal: "pollinators",
-            rank: 3
-          }
-        ],
-        preferredNutritionalRole:
-          "diversified",
-        beginnerFriendlinessPriority:
-          "low",
-        wildlifePestPressure: [
-          "wild-birds",
-          "squirrels",
-          "disease"
-        ],
-        desiredRecommendationFormat:
-          "top-three"
-      }
+  harvestPatternPreference:
+    "continuous",
+
+  minimalPreparationPriority:
+    "top",
+
+  desiredStorageDuration:
+    "immediate",
+
+  dryStorageLocations: [],
+
+  storageHumidity:
+    "often-humid",
+
+  rodentProtection:
+    "none"
+},
+
+preferences: {
+  plannerGoals: [
+    "fresh-greens",
+    "fast-value",
+    "enrichment"
+  ],
+
+  goalPriorities: [
+    {
+      goal:
+        "fresh-greens",
+      rank: 1
+    },
+    {
+      goal:
+        "fast-value",
+      rank: 2
+    },
+    {
+      goal:
+        "enrichment",
+      rank: 3
+    }
+  ],
+
+  preferredNutritionalRole:
+    "fresh-green",
+
+  beginnerFriendlinessPriority:
+    "essential",
+
+  annualPerennialPreference:
+    "annual-only",
+
+  reversibilityRequirement:
+    "one-season",
+
+  wildlifePestPressure: [
+    "wild-birds"
+  ],
+
+  desiredRecommendationFormat:
+    "single"
+}
     }
   }),
 
@@ -755,62 +772,91 @@ const HARVEST_FREQUENCY_CATEGORIES =
       },
 
       labor: {
-        gardeningExperience:
-          "beginner",
-        weeklyCropTime:
-          "30-60-min",
-        acceptedProcessingTasks: [],
-        dryingCapability:
-          "none"
-      },
+  gardeningExperience:
+    "experienced",
 
-      harvestStorage: {
-        desiredHarvestProducts: [
-          "fresh-seed-heads"
-        ],
-        harvestPatternPreference:
-          "several",
-        minimalPreparationPriority:
-          "top",
-        dryStorageLocations: [],
-        rodentProtection:
-          "none"
-      },
+  weeklyCropTime:
+    "3-5-hours",
+
+  acceptedProcessingTasks: [
+    "cut-leaves",
+    "cut-seed-heads",
+    "pick-produce"
+  ],
+
+  dryingCapability:
+    "none",
+
+  dryingFacilities: [],
+
+  ownedEquipment: [],
+
+  equipmentPurchaseWillingness: []
+},
+
+harvestStorage: {
+  desiredHarvestProducts: [
+    "fresh-greens",
+    "fresh-seed-heads"
+  ],
+
+  harvestPatternPreference:
+    "mixed",
+
+  minimalPreparationPriority:
+    "moderate",
+
+  desiredStorageDuration:
+    "immediate",
+
+  dryStorageLocations: [],
+
+  storageHumidity:
+    "often-humid",
+
+  rodentProtection:
+    "rodent-proof-containers"
+},
 
       preferences: {
-        plannerGoals: [
-          "enrichment",
-          "pollinators",
-          "edible-landscape"
-        ],
-        goalPriorities: [
-          {
-            goal: "enrichment",
-            rank: 1
-          },
-          {
-            goal: "edible-landscape",
-            rank: 2
-          },
-          {
-            goal: "pollinators",
-            rank: 3
-          }
-        ],
-        preferredNutritionalRole:
-          "enrichment",
-        beginnerFriendlinessPriority:
-          "essential",
-        annualPerennialPreference:
-          "annual-only",
-        reversibilityRequirement:
-          "one-season",
-        wildlifePestPressure: [
-          "wild-birds"
-        ],
-        desiredRecommendationFormat:
-          "single"
-      }
+  plannerGoals: [
+    "fresh-greens",
+    "enrichment",
+    "pollinators"
+  ],
+
+  goalPriorities: [
+    {
+      goal:
+        "fresh-greens",
+      rank: 1
+    },
+    {
+      goal:
+        "enrichment",
+      rank: 2
+    },
+    {
+      goal:
+        "pollinators",
+      rank: 3
+    }
+  ],
+
+  preferredNutritionalRole:
+    "diversified",
+
+  beginnerFriendlinessPriority:
+    "low",
+
+  wildlifePestPressure: [
+    "wild-birds",
+    "squirrels"
+  ],
+
+  desiredRecommendationFormat:
+    "top-three"
+}
     }
   }),
 
