@@ -2034,8 +2034,7 @@ function scoreGenericGoalFit(
   answers
 ) {
   const selectedGoals =
-    answers.preferences
-      ?.plannerGoals ||
+    answers.preferences?.plannerGoals ||
     [];
 
   const priorities =
@@ -2044,24 +2043,15 @@ function scoreGenericGoalFit(
     [];
 
   const goalData =
-    crop.plannerData
-      ?.goals ||
-    {};
+    crop.plannerData?.goals || {};
 
   const priorityWeights = {
-    1: 6,
-    2: 3,
-    3: 1.5
+    1: 1,
+    2: 0.7,
+    3: 0.45
   };
 
-  const unrankedGoalWeight =
-    0.35;
-
   const factors = [];
-
-  const matchedGoals = [];
-
-  const weakPriorityGoals = [];
 
   selectedGoals.forEach(goalId => {
     const fieldName =
@@ -2071,17 +2061,12 @@ function scoreGenericGoalFit(
       return;
     }
 
-    const rawCropScore =
-      goalData[fieldName];
-
     const cropScore =
       convertFivePointToPercent(
-        rawCropScore
+        goalData[fieldName]
       );
 
-    if (
-      !Number.isFinite(cropScore)
-    ) {
+    if (!Number.isFinite(cropScore)) {
       return;
     }
 
@@ -2091,139 +2076,29 @@ function scoreGenericGoalFit(
           record.goal === goalId
       );
 
-    const rank =
-      priorityRecord?.rank;
-
     const weight =
       priorityRecord
-        ? (
-            priorityWeights[rank] ||
-            unrankedGoalWeight
-          )
-        : unrankedGoalWeight;
+        ? priorityWeights[
+            priorityRecord.rank
+          ] || 0.2
+        : 0.2;
 
     factors.push({
       value: cropScore,
       weight
     });
-
-    matchedGoals.push({
-      goalId,
-      rank:
-        Number.isFinite(rank)
-          ? rank
-          : null,
-      cropScore,
-      weight
-    });
-
-    if (
-      Number.isFinite(rank) &&
-      rank <= 2 &&
-      rawCropScore <= 2
-    ) {
-      weakPriorityGoals.push({
-        goalId,
-        rank,
-        rawCropScore
-      });
-    }
   });
 
-  let score =
-    weightedAverageKnown(
-      factors
-    );
-
-  if (
-    !Number.isFinite(score)
-  ) {
-    return {
-      score: null,
-
-      reason:
-        "No compatible crop-goal ratings were available.",
-
-      matchedGoals: [],
-
-      weakPriorityGoals: []
-    };
-  }
-
-  const rankOneGoal =
-    matchedGoals.find(
-      goal =>
-        goal.rank === 1
-    );
-
-  const rankTwoGoal =
-    matchedGoals.find(
-      goal =>
-        goal.rank === 2
-    );
-
-  if (rankOneGoal) {
-    if (
-      rankOneGoal.cropScore >= 80
-    ) {
-      score += 6;
-    } else if (
-      rankOneGoal.cropScore <= 40
-    ) {
-      score -= 18;
-    }
-  }
-
-  if (rankTwoGoal) {
-    if (
-      rankTwoGoal.cropScore >= 80
-    ) {
-      score += 3;
-    } else if (
-      rankTwoGoal.cropScore <= 40
-    ) {
-      score -= 8;
-    }
-  }
-
-  if (
-    weakPriorityGoals.length > 0
-  ) {
-    const priorityMismatchPenalty =
-      weakPriorityGoals.reduce(
-        (
-          total,
-          goal
-        ) => {
-          if (goal.rank === 1) {
-            return total + 12;
-          }
-
-          if (goal.rank === 2) {
-            return total + 6;
-          }
-
-          return total;
-        },
-        0
-      );
-
-    score -=
-      priorityMismatchPenalty;
-  }
+  const score =
+    weightedAverageKnown(factors);
 
   return {
-    score:
-      clampScore(score),
+    score: clampScore(score),
 
     reason:
       factors.length > 0
-        ? "The crop was scored primarily against the visitor's ranked goals, with much lower influence from unranked goals."
-        : "No compatible crop-goal ratings were available.",
-
-    matchedGoals,
-
-    weakPriorityGoals
+        ? "The crop was scored against the visitor's selected and ranked goals."
+        : "No compatible crop-goal ratings were available."
   };
 }
 
@@ -2392,35 +2267,61 @@ function scoreGenericSpaceFit(
   if (!spaceData) {
     return {
       score: null,
+
       reason:
-        "Space data is unavailable."
+        "Space data is unavailable.",
+
+      adjustments: [],
+      limitations: []
     };
   }
 
+  const answerSpace =
+    answers.space || {};
+
   const spaceTypes =
-    answers.space
-      ?.availableSpaceTypes ||
+    answerSpace
+      .availableSpaceTypes ||
     [];
 
   const shape =
-    answers.space
-      ?.largestAreaShape;
+    answerSpace
+      .largestAreaShape;
 
   const totalArea =
-    answers.space
-      ?.totalGrowingAreaSqFt;
+    answerSpace
+      .totalGrowingAreaSqFt;
 
   const plantBehaviorRestrictions =
-  answers.space
-    ?.plantBehaviorRestrictions ||
-  [];
+    answerSpace
+      .plantBehaviorRestrictions ||
+    [];
 
   const overflowOptions =
-  answers.space
-    ?.overflowOptions ||
-  [];
+    answerSpace
+      .overflowOptions ||
+    [];
 
-  const typeScores =
+  const blockPlantingAvailable =
+    answerSpace
+      .blockPlantingAvailable;
+
+  const availableBlockRows =
+    answerSpace
+      .availableBlockRows;
+
+  const minimumUsefulArea =
+    spaceData
+      .minimumUsefulAreaSqFt;
+
+  const heightCategory =
+    spaceData
+      .heightCategory;
+
+  const adjustments = [];
+  const limitations = [];
+
+  const scoredSpaceTypes =
     spaceTypes
       .map(spaceType => {
         const key =
@@ -2428,44 +2329,91 @@ function scoreGenericSpaceFit(
             spaceType
           );
 
-        return convertFivePointToPercent(
+        const rawScore =
           spaceData
-            .spaceTypeScores?.[key]
-        );
+            .spaceTypeScores?.[key];
+
+        return {
+          spaceType,
+          key,
+
+          rawScore,
+
+          percentScore:
+            convertFivePointToPercent(
+              rawScore
+            )
+        };
       })
-      .filter(Number.isFinite);
+      .filter(result =>
+        Number.isFinite(
+          result.percentScore
+        )
+      );
 
   const bestTypeScore =
-    typeScores.length > 0
-      ? Math.max(...typeScores)
+    scoredSpaceTypes.length > 0
+      ? Math.max(
+          ...scoredSpaceTypes.map(
+            result =>
+              result.percentScore
+          )
+        )
+      : null;
+
+  const averageTypeScore =
+    scoredSpaceTypes.length > 0
+      ? scoredSpaceTypes.reduce(
+          (
+            total,
+            result
+          ) =>
+            total +
+            result.percentScore,
+          0
+        ) /
+        scoredSpaceTypes.length
       : null;
 
   const layoutKey =
-    getLayoutPlannerKey(shape);
+    getLayoutPlannerKey(
+      shape
+    );
 
   const layoutScore =
     convertFivePointToPercent(
       spaceData
-        .layoutScores?.[layoutKey]
+        .layoutScores?.[
+          layoutKey
+        ]
     );
 
   let areaScaleScore = null;
 
-  if (Number.isFinite(totalArea)) {
+  if (
+    Number.isFinite(
+      totalArea
+    )
+  ) {
     if (totalArea < 25) {
       areaScaleScore =
         convertFivePointToPercent(
-          spaceData.smallSpaceScore
+          spaceData
+            .smallSpaceScore
         );
-    } else if (totalArea <= 250) {
+    } else if (
+      totalArea <= 250
+    ) {
       areaScaleScore =
         convertFivePointToPercent(
-          spaceData.mediumSpaceScore
+          spaceData
+            .mediumSpaceScore
         );
     } else {
       areaScaleScore =
         convertFivePointToPercent(
-          spaceData.largeSpaceScore
+          spaceData
+            .largeSpaceScore
         );
     }
   }
@@ -2473,49 +2421,468 @@ function scoreGenericSpaceFit(
   let score =
     weightedAverageKnown([
       {
-        value: bestTypeScore,
-        weight: 0.45
+        value:
+          bestTypeScore,
+
+        weight: 0.25
       },
       {
-        value: layoutScore,
-        weight: 0.30
+        value:
+          averageTypeScore,
+
+        weight: 0.25
       },
       {
-        value: areaScaleScore,
+        value:
+          layoutScore,
+
+        weight: 0.25
+      },
+      {
+        value:
+          areaScaleScore,
+
         weight: 0.25
       }
     ]);
 
+  if (
+    !Number.isFinite(score)
+  ) {
+    score = 50;
+  }
+
+  const containsContainers =
+    spaceTypes.includes(
+      "containers"
+    );
+
+  const containsRaisedBed =
+    spaceTypes.includes(
+      "raised-bed"
+    );
+
+  const containsInGround =
+    spaceTypes.includes(
+      "in-ground"
+    );
+
+  const containsOpenField =
+    spaceTypes.includes(
+      "open-field"
+    );
+
+  const containsOrchard =
+    spaceTypes.includes(
+      "orchard"
+    );
+
+  const containsForageFrame =
+    spaceTypes.includes(
+      "forage-frame"
+    );
+
+  const containsRotationalPaddock =
+    spaceTypes.includes(
+      "rotational-paddock"
+    );
+
+  const containerOnly =
+    containsContainers &&
+    !containsInGround &&
+    !containsOpenField &&
+    !containsOrchard &&
+    !containsRotationalPaddock;
+
+  const raisedBedOrContainerOnly =
+    (
+      containsContainers ||
+      containsRaisedBed
+    ) &&
+    spaceTypes.every(
+      type =>
+        [
+          "containers",
+          "raised-bed",
+          "small-beds"
+        ].includes(type)
+    );
+
+  const containerPlannerScore =
+    spaceData
+      .spaceTypeScores
+      ?.container;
+
+  if (
+    containerOnly &&
+    Number.isFinite(
+      containerPlannerScore
+    )
+  ) {
     if (
-  spaceData.vineSpreadRequired === true &&
-  plantBehaviorRestrictions.includes(
-    "no-vines-outside-bed"
-  ) &&
-  overflowOptions.length === 0
-) {
-  score =
-    Number.isFinite(score)
-      ? score - 35
-      : 35;
-}
+      containerPlannerScore <= 1
+    ) {
+      score -= 35;
+
+      limitations.push(
+        "The visitor has container-only growing space, but this crop is poorly suited to meaningful container production."
+      );
+    } else if (
+      containerPlannerScore === 2
+    ) {
+      score -= 18;
+
+      limitations.push(
+        "Containers significantly limit this crop's useful production."
+      );
+    } else if (
+      containerPlannerScore >= 4
+    ) {
+      score += 8;
+
+      adjustments.push(
+        "The crop is well suited to container production."
+      );
+    }
+  }
+
+  const raisedBedPlannerScore =
+    spaceData
+      .spaceTypeScores
+      ?.raisedBed;
+
+  if (
+    raisedBedOrContainerOnly &&
+    containsRaisedBed &&
+    Number.isFinite(
+      raisedBedPlannerScore
+    )
+  ) {
+    if (
+      raisedBedPlannerScore <= 1
+    ) {
+      score -= 28;
+
+      limitations.push(
+        "The available raised-bed space is a very poor fit for this crop."
+      );
+    } else if (
+      raisedBedPlannerScore === 2
+    ) {
+      score -= 14;
+
+      limitations.push(
+        "Raised-bed production is possible only with substantial limitations."
+      );
+    } else if (
+      raisedBedPlannerScore >= 4
+    ) {
+      score += 6;
+
+      adjustments.push(
+        "The crop is strongly suited to raised-bed production."
+      );
+    }
+  }
+
+  if (
+    Number.isFinite(
+      minimumUsefulArea
+    ) &&
+    Number.isFinite(
+      totalArea
+    ) &&
+    totalArea <
+      minimumUsefulArea
+  ) {
+    const areaRatio =
+      totalArea /
+      minimumUsefulArea;
+
+    let areaPenalty = 0;
+
+    if (areaRatio < 0.25) {
+      areaPenalty = 35;
+    } else if (
+      areaRatio < 0.5
+    ) {
+      areaPenalty = 24;
+    } else if (
+      areaRatio < 0.75
+    ) {
+      areaPenalty = 14;
+    } else {
+      areaPenalty = 7;
+    }
+
+    score -= areaPenalty;
+
+    limitations.push(
+      `The available ${totalArea}-square-foot area is below this crop's approximate ${minimumUsefulArea}-square-foot useful-production threshold.`
+    );
+  }
+
+  if (
+    spaceData
+      .blockPlantingRequired ===
+      true
+  ) {
+    const minimumBlockRows =
+      Number.isFinite(
+        spaceData
+          .minimumBlockRows
+      )
+        ? spaceData
+            .minimumBlockRows
+        : 4;
+
+    if (
+      blockPlantingAvailable ===
+        false ||
+      (
+        Number.isFinite(
+          availableBlockRows
+        ) &&
+        availableBlockRows <
+          minimumBlockRows
+      ) ||
+      plantBehaviorRestrictions
+        .includes(
+          "no-block-planting"
+        )
+    ) {
+      score -= 40;
+
+      limitations.push(
+        `This crop requires a compact planting block of approximately ${minimumBlockRows} or more rows, but the available layout does not provide it.`
+      );
+    } else if (
+      blockPlantingAvailable ===
+        true &&
+      Number.isFinite(
+        availableBlockRows
+      ) &&
+      availableBlockRows >=
+        minimumBlockRows
+    ) {
+      score += 10;
+
+      adjustments.push(
+        "The available layout satisfies the crop's block-planting requirement."
+      );
+    }
+  }
+
+  if (
+    spaceData
+      .vineSpreadRequired ===
+      true &&
+    plantBehaviorRestrictions
+      .includes(
+        "no-vines-outside-bed"
+      ) &&
+    overflowOptions.length === 0
+  ) {
+    score -= 40;
+
+    limitations.push(
+      "This crop requires vine-spread space, but the visitor does not allow vines outside the planting bed."
+    );
+  }
+
+  const isTallCrop =
+    [
+      "tall",
+      "very-tall",
+      "tree"
+    ].includes(
+      heightCategory
+    );
+
+  if (
+    isTallCrop &&
+    plantBehaviorRestrictions
+      .includes(
+        "no-tall-screening"
+      )
+  ) {
+    score -= 24;
+
+    limitations.push(
+      "The crop's mature height conflicts with the visitor's height restriction."
+    );
+  }
+
+  if (
+    isTallCrop &&
+    plantBehaviorRestrictions
+      .includes(
+        "must-remain-small"
+      )
+  ) {
+    score -= 20;
+
+    limitations.push(
+      "The crop is too tall or large for a space that must remain compact."
+    );
+  }
+
+  if (
+    plantBehaviorRestrictions
+      .includes("no-trees") &&
+    heightCategory === "tree"
+  ) {
+    score -= 45;
+
+    limitations.push(
+      "Trees are prohibited in the available growing space."
+    );
+  }
+
+  if (
+    containsForageFrame
+  ) {
+    const forageFrameScore =
+      spaceData
+        .spaceTypeScores
+        ?.forageFrame;
+
+    if (
+      Number.isFinite(
+        forageFrameScore
+      )
+    ) {
+      if (
+        forageFrameScore >= 4
+      ) {
+        score += 12;
+
+        adjustments.push(
+          "The crop is strongly suited to protected forage-frame production."
+        );
+      } else if (
+        forageFrameScore <= 2
+      ) {
+        score -= 20;
+
+        limitations.push(
+          "The crop is poorly suited to the selected protected forage-frame system."
+        );
+      }
+    }
+  }
+
+  if (
+    containsRotationalPaddock
+  ) {
+    const paddockScore =
+      spaceData
+        .spaceTypeScores
+        ?.rotationalPaddock;
+
+    if (
+      Number.isFinite(
+        paddockScore
+      )
+    ) {
+      if (
+        paddockScore >= 4
+      ) {
+        score += 8;
+
+        adjustments.push(
+          "The crop is well suited to rotational-paddock production."
+        );
+      } else if (
+        paddockScore <= 2
+      ) {
+        score -= 12;
+
+        limitations.push(
+          "The crop is a weak fit for rotational-paddock use."
+        );
+      }
+    }
+  }
+
+  if (
+    containsOrchard
+  ) {
+    const orchardScore =
+      spaceData
+        .spaceTypeScores
+        ?.orchard;
+
+    if (
+      Number.isFinite(
+        orchardScore
+      )
+    ) {
+      if (
+        orchardScore >= 4
+      ) {
+        score += 8;
+
+        adjustments.push(
+          "The crop is strongly suited to orchard integration."
+        );
+      } else if (
+        orchardScore <= 2
+      ) {
+        score -= 12;
+
+        limitations.push(
+          "The crop is poorly suited to orchard integration."
+        );
+      }
+    }
+  }
+
+  const finalScore =
+    clampScore(score);
+
+  let reason =
+    "The crop was scored against the available space types, layout, area, and physical growing restrictions.";
+
+  if (
+    limitations.length > 0
+  ) {
+    reason =
+      limitations.join(" ");
+  } else if (
+    finalScore >= 85
+  ) {
+    reason =
+      "The crop fits the selected space types, layout, and growing scale very well.";
+  } else if (
+    finalScore >= 60
+  ) {
+    reason =
+      "The crop can fit the available space, although some limitations remain.";
+  } else {
+    reason =
+      "The selected growing space is a weak fit for this crop.";
+  }
 
   return {
-    score: clampScore(score),
+    score:
+      finalScore,
 
-    reason:
-  (
-    spaceData.vineSpreadRequired === true &&
-    plantBehaviorRestrictions.includes(
-      "no-vines-outside-bed"
-    ) &&
-    overflowOptions.length === 0
-  )
-    ? "This crop requires vine-spread space, but the visitor does not allow vines outside the planting bed."
-    : score >= 85
-      ? "The crop fits the selected space type, layout, and growing scale well."
-      : score >= 60
-        ? "The crop can fit, but the available space creates some limitations."
-        : "The selected space is a weak fit for this crop."
+    reason,
+
+    adjustments,
+    limitations,
+
+    diagnostics: {
+      bestTypeScore,
+      averageTypeScore,
+      layoutScore,
+      areaScaleScore,
+      minimumUsefulArea,
+      totalArea,
+      containerOnly,
+      raisedBedOrContainerOnly
+    }
   };
 }
 
