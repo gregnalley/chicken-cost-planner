@@ -3883,24 +3883,28 @@ function scoreGenericUsePath(
       ? 0
       : clampScore(score);
 
-  return {
-    cropId:
-      crop.id,
+ return {
+  cropId:
+    crop.id,
 
-    usePathId:
-      usePath.id,
+  usePathId:
+    usePath.id,
 
-    label:
-      usePath.label,
+  label:
+    usePath.label,
 
-    score:
-      finalScore,
+  score:
+    finalScore,
 
-    productMatch,
+  productMatch:
+    productMatchAnalysis
+      .hasAnyMatch,
 
-    storageFit,
+  productMatchAnalysis,
 
-    nutritionalFit,
+  storageFit,
+
+  nutritionalFit,
 
     hardFailure:
       hardFailures.length > 0,
