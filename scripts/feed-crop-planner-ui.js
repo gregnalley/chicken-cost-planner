@@ -98,6 +98,7 @@
     renderCropValidationReport();
     renderSunflowerSampleTests();
     renderSampleProfileList();
+    renderProfileMatrix();
     renderMultiCropSampleTests();
 
   }
@@ -734,12 +735,333 @@ function renderSampleProfileList() {
   `;
 }
 
+function renderProfileMatrix() {
+  const summaryElement =
+    document.getElementById(
+      "profile-matrix-summary"
+    );
+
+  const bodyElement =
+    document.getElementById(
+      "profile-matrix-body"
+    );
+
+  if (
+    !summaryElement ||
+    !bodyElement
+  ) {
+    return;
+  }
+
+  const expectations =
+    namespace.config
+      ?.testing
+      ?.profileMatrixExpectations ||
+    {};
+
+  if (
+    !namespace.engine ||
+    typeof namespace.engine
+      .runMultiCropSampleTests !==
+      "function"
+  ) {
+    summaryElement.textContent =
+      "The shared multi-crop test engine is unavailable.";
+
+    summaryElement.className =
+      "foundation-status foundation-status-error";
+
+    bodyElement.innerHTML = `
+      <tr>
+        <td colspan="7">
+          Profile matrix could not run.
+        </td>
+      </tr>
+    `;
+
+    return;
+  }
+
+  const testRun =
+    namespace.engine
+      .runMultiCropSampleTests();
+
+  if (!testRun.success) {
+    summaryElement.textContent =
+      testRun.error ||
+      "Profile matrix tests could not run.";
+
+    summaryElement.className =
+      "foundation-status foundation-status-error";
+
+    bodyElement.innerHTML = `
+      <tr>
+        <td colspan="7">
+          Profile matrix could not run.
+        </td>
+      </tr>
+    `;
+
+    return;
+  }
+
+  const cropNameById = {};
+
+  testRun.results.forEach(
+    profileResult => {
+      profileResult.cropResults
+        .forEach(cropResult => {
+          cropNameById[
+            cropResult.cropId
+          ] = cropResult.cropName;
+        });
+    }
+  );
+
+  let passCount = 0;
+  let reviewCount = 0;
+  let unavailableCount = 0;
+
+  const rows =
+    testRun.results
+      .map(profileResult => {
+        const expectation =
+          expectations[
+            profileResult.profileId
+          ];
+
+        const actualLeader =
+          profileResult.cropResults[0] ||
+          null;
+
+        if (!expectation) {
+          unavailableCount += 1;
+
+          return `
+            <tr>
+
+              <td>—</td>
+
+              <td>
+                <strong>
+                  ${profileResult.profileLabel}
+                </strong>
+
+                <br>
+
+                <code>
+                  ${profileResult.profileId}
+                </code>
+              </td>
+
+              <td class="profile-purpose">
+                No matrix expectation has been defined.
+              </td>
+
+              <td class="profile-expected">
+                Not configured
+              </td>
+
+              <td class="profile-actual">
+                ${
+                  actualLeader
+                    ? `${actualLeader.cropName} (${actualLeader.finalScore}%)`
+                    : "Unavailable"
+                }
+              </td>
+
+              <td>
+                ${
+                  actualLeader
+                    ?.bestUsePath
+                    ?.label ||
+                  "Unavailable"
+                }
+              </td>
+
+              <td class="profile-matrix-na">
+                Not Configured
+              </td>
+
+            </tr>
+          `;
+        }
+
+        const expectedTopCropIds =
+          expectation
+            .expectedTopCropIds ||
+          [];
+
+        const expectedTopThreeCropIds =
+          expectation
+            .expectedTopThreeCropIds ||
+          [];
+
+        const actualLeaderId =
+          actualLeader?.cropId ||
+          null;
+
+        const actualTopThreeIds =
+          profileResult.cropResults
+            .slice(0, 3)
+            .map(result =>
+              result.cropId
+            );
+
+        const leaderPasses =
+          actualLeaderId &&
+          expectedTopCropIds.includes(
+            actualLeaderId
+          );
+
+        const expectedTopThreePresent =
+          expectedTopThreeCropIds
+            .filter(cropId =>
+              testRun.testedCropIds
+                .includes(cropId)
+            )
+            .every(cropId =>
+              actualTopThreeIds
+                .includes(cropId)
+            );
+
+        let statusLabel;
+        let statusClass;
+
+        if (leaderPasses) {
+          passCount += 1;
+
+          statusLabel =
+            expectedTopThreePresent
+              ? "Pass"
+              : "Leader Pass";
+
+          statusClass =
+            "profile-matrix-pass";
+        } else {
+          reviewCount += 1;
+
+          statusLabel =
+            "Review";
+
+          statusClass =
+            "profile-matrix-review";
+        }
+
+        const expectedNames =
+          expectedTopCropIds
+            .map(cropId => {
+              return (
+                cropNameById[cropId] ||
+                cropId
+              );
+            })
+            .join(" or ");
+
+        return `
+          <tr>
+
+            <td>
+              ${expectation.profileNumber}
+            </td>
+
+            <td>
+              <strong>
+                ${profileResult.profileLabel}
+              </strong>
+
+              <br>
+
+              <code>
+                ${profileResult.profileId}
+              </code>
+            </td>
+
+            <td class="profile-purpose">
+              ${expectation.purpose}
+
+              ${
+                expectation.notes
+                  ? `
+                    <p>
+                      <small>
+                        ${expectation.notes}
+                      </small>
+                    </p>
+                  `
+                  : ""
+              }
+            </td>
+
+            <td class="profile-expected">
+              ${expectedNames}
+            </td>
+
+            <td class="profile-actual">
+              ${
+                actualLeader
+                  ? `
+                    <strong>
+                      ${actualLeader.cropName}
+                    </strong>
+
+                    <br>
+
+                    ${actualLeader.finalScore}%
+
+                    <br>
+
+                    ${
+                      actualLeader
+                        .tier
+                        ?.label ||
+                      "No tier"
+                    }
+                  `
+                  : "Unavailable"
+              }
+            </td>
+
+            <td>
+              ${
+                actualLeader
+                  ?.bestUsePath
+                  ?.label ||
+                "No eligible use path"
+              }
+            </td>
+
+            <td class="${statusClass}">
+              ${statusLabel}
+            </td>
+
+          </tr>
+        `;
+      })
+      .join("");
+
+  bodyElement.innerHTML = rows;
+
+  const totalConfigured =
+    passCount + reviewCount;
+
+  summaryElement.textContent =
+    `${passCount} of ${totalConfigured} configured profile expectations currently pass. ${reviewCount} require review. ${unavailableCount} have no matrix expectation.`;
+
+  summaryElement.className =
+    reviewCount === 0 &&
+    unavailableCount === 0
+      ? "foundation-status foundation-status-success"
+      : "foundation-status";
+}
+
   namespace.ui = Object.freeze({
     initializeDevelopmentPage,
     renderCropRegistrationReport,
     renderCropValidationReport,
     renderSunflowerSampleTests,
     renderSampleProfileList,
+    renderProfileMatrix,
     renderMultiCropSampleTests
   });
 

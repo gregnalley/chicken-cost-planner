@@ -1780,6 +1780,304 @@ const HARVEST_FREQUENCY_CATEGORIES =
 
 ]);
 
+// ==================================================
+// PROFILE MATRIX EXPECTATIONS
+// ==================================================
+//
+// This developer-only matrix documents what each
+// sample profile is intended to test.
+//
+// expectedTopCropIds:
+// Any crop listed here may reasonably rank first.
+//
+// expectedTopThreeCropIds:
+// These crops are expected to appear somewhere in
+// the first three positions once they are eligible.
+//
+// These expectations are regression-test guidance,
+// not public recommendations.
+//
+
+const PROFILE_MATRIX_EXPECTATIONS =
+  Object.freeze({
+
+    "PROFILE-BEGINNER-RAISED-BED":
+      Object.freeze({
+        profileNumber: 1,
+
+        purpose:
+          "Tests beginner friendliness, sunny raised-bed suitability, enrichment, pollinator value, and low-processing whole-head harvests.",
+
+        expectedTopCropIds: [
+          "CROP-SUNFLOWER",
+          "CROP-KALE-COLLARDS"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-SUNFLOWER",
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA"
+        ],
+
+        notes:
+          "Sunflower should benefit from the requested seed-head products and pollinator goal. Kale may compete because it is highly beginner-friendly and strong in raised beds."
+      }),
+
+    "PROFILE-HOT-DRY":
+      Object.freeze({
+        profileNumber: 2,
+
+        purpose:
+          "Tests heat tolerance, drought resilience, limited irrigation, full sun, and dry-storage potential.",
+
+        expectedTopCropIds: [
+          "CROP-COWPEA",
+          "CROP-PROSO-MILLET",
+          "CROP-SUNFLOWER"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-COWPEA",
+          "CROP-PROSO-MILLET",
+          "CROP-SUNFLOWER"
+        ],
+
+        notes:
+          "Cowpea, Millet, and Sunflower should normally dominate. Pumpkin and Kale should be lowered by water or climate limitations."
+      }),
+
+    "PROFILE-HUMID-SOUTHERN":
+      Object.freeze({
+        profileNumber: 3,
+
+        purpose:
+          "Tests long hot-humid seasons, drying difficulty, disease pressure, bird pressure, and access to multiple harvest forms.",
+
+        expectedTopCropIds: [
+          "CROP-COWPEA",
+          "CROP-SUNFLOWER"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-COWPEA",
+          "CROP-SUNFLOWER",
+          "CROP-PUMPKIN-WINTER-SQUASH"
+        ],
+
+        notes:
+          "Cowpea should remain agronomically strong. Humidity should reduce confidence in dried grain and seed-head paths."
+      }),
+
+    "PROFILE-CONTAINER-RENTAL":
+      Object.freeze({
+        profileNumber: 4,
+
+        purpose:
+          "Tests container-only growing, rental-property reversibility, minimal processing, limited storage, and a very small flock.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA",
+          "CROP-SUNFLOWER"
+        ],
+
+        notes:
+          "Kale should be one of the strongest container crops. Sunflower may remain eligible only through a limited fresh-head trial."
+      }),
+
+    "PROFILE-WINTER-STORAGE":
+      Object.freeze({
+        profileNumber: 5,
+
+        purpose:
+          "Tests experienced handling, protected drying, rodent-proof storage, energy supplementation, and long shelf life.",
+
+        expectedTopCropIds: [
+          "CROP-SUNFLOWER",
+          "CROP-PROSO-MILLET",
+          "CROP-PUMPKIN-WINTER-SQUASH"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-SUNFLOWER",
+          "CROP-PROSO-MILLET",
+          "CROP-PUMPKIN-WINTER-SQUASH"
+        ],
+
+        notes:
+          "The strongest storage crops should lead. Fresh leafy crops should rank lower."
+      }),
+
+    "PROFILE-SUMMER-PROTEIN-GREENS":
+      Object.freeze({
+        profileNumber: 6,
+
+        purpose:
+          "Tests hot-season fresh greens, protein-oriented supplementation, nitrogen fixation, soil improvement, and minimal processing.",
+
+        expectedTopCropIds: [
+          "CROP-COWPEA"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-COWPEA",
+          "CROP-KALE-COLLARDS"
+        ],
+
+        notes:
+          "Cowpea should clearly lead because the profile combines heat, fresh greens, protein orientation, and nitrogen fixation."
+      }),
+
+    "PROFILE-DRY-LEGUME-STORAGE":
+      Object.freeze({
+        profileNumber: 7,
+
+        purpose:
+          "Tests mature dry legumes, shelling, cooking, protected storage, protein orientation, and experienced processing.",
+
+        expectedTopCropIds: [
+          "CROP-COWPEA"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-COWPEA",
+          "CROP-PROSO-MILLET",
+          "CROP-SUNFLOWER"
+        ],
+
+        notes:
+          "Cowpea should lead, and its Mature Cooked Cowpea Seed path should be eligible."
+      }),
+
+    "PROFILE-COOL-SEASON-SMALL-GARDEN":
+      Object.freeze({
+        profileNumber: 8,
+
+        purpose:
+          "Tests cool-season production, partial shade, small raised beds, fresh greens, beginner use, and minimal preparation.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS"
+        ],
+
+        notes:
+          "Kale and Collards should clearly lead. Warm-season grain crops should lose climate and sunlight points."
+      }),
+
+    "PROFILE-PUMPKIN-WINTER-STORAGE":
+      Object.freeze({
+        profileNumber: 9,
+
+        purpose:
+          "Tests extensive vine space, unused lawn, reliable irrigation, heavy-fruit handling, curing, and non-electric winter storage.",
+
+        expectedTopCropIds: [
+          "CROP-PUMPKIN-WINTER-SQUASH"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-PUMPKIN-WINTER-SQUASH",
+          "CROP-SUNFLOWER",
+          "CROP-PROSO-MILLET"
+        ],
+
+        notes:
+          "Pumpkin and Winter Squash should lead because the visitor has the space, water, equipment, curing ability, and storage needed."
+      }),
+
+    "PROFILE-PUMPKIN-SMALL-NO-OVERFLOW":
+      Object.freeze({
+        profileNumber: 10,
+
+        purpose:
+          "Tests a small raised bed with an explicit ban on vines leaving the bed, little labor, immediate use, and no storage.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS",
+          "CROP-COWPEA",
+          "CROP-SUNFLOWER"
+        ],
+
+        notes:
+          "Pumpkin should be reduced sharply by the no-vine-overflow restriction."
+      }),
+
+    "PROFILE-FALL-FORAGE-FRAME":
+      Object.freeze({
+        profileNumber: 11,
+
+        purpose:
+          "Tests cool-season protected living forage, repeated flock access, forage-frame ownership, mild winters, and no processing.",
+
+        expectedTopCropIds: [
+          "CROP-KALE-COLLARDS"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-KALE-COLLARDS"
+        ],
+
+        notes:
+          "Kale and Collards should lead through the Protected Kale or Collard Forage use path."
+      }),
+
+    "PROFILE-MILLET-SHORT-SEASON-DRY":
+      Object.freeze({
+        profileNumber: 12,
+
+        purpose:
+          "Tests a short frost-free season, limited irrigation, sandy soil, energy-grain production, threshing, and long storage.",
+
+        expectedTopCropIds: [
+          "CROP-PROSO-MILLET"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-PROSO-MILLET",
+          "CROP-COWPEA",
+          "CROP-SUNFLOWER"
+        ],
+
+        notes:
+          "Proso Millet should lead or be very close to first because of its short season and limited-water strength."
+      }),
+
+    "PROFILE-MILLET-WHOLE-PANICLE":
+      Object.freeze({
+        profileNumber: 13,
+
+        purpose:
+          "Tests whole-panicle enrichment, drying without threshing, beginner use, fast maturity, and moderate storage.",
+
+        expectedTopCropIds: [
+          "CROP-PROSO-MILLET",
+          "CROP-SUNFLOWER"
+        ],
+
+        expectedTopThreeCropIds: [
+          "CROP-PROSO-MILLET",
+          "CROP-SUNFLOWER"
+        ],
+
+        notes:
+          "Millet and Sunflower may rank closely. Millet loose grain must remain ineligible when threshing is rejected."
+      })
+  });
+
   const PLANNER_CONFIG = Object.freeze({
     plannerVersion: "1.0.0",
     cropSchemaVersion: "1.0.0",
@@ -1822,7 +2120,10 @@ const HARVEST_FREQUENCY_CATEGORIES =
     }),
     testing: Object.freeze({
   sampleUserProfiles:
-    SAMPLE_USER_PROFILES
+    SAMPLE_USER_PROFILES,
+
+  profileMatrixExpectations:
+    PROFILE_MATRIX_EXPECTATIONS
 })
   });
 
