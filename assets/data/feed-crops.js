@@ -5084,7 +5084,1658 @@ const BCP_FEED_CROPS = {
         "Plant-density fields remain null because baby-leaf kale, mature kale, and mature collards use substantially different planting densities and should eventually be modeled as separate production systems.",
 
       ]
+    },
+
+plannerData: {
+  schemaVersion: "1.0.0",
+
+  developmentStatus:
+    "testing",
+
+  identity: {
+    plannerName:
+      "Kale and Collard Greens",
+
+    shortLabel:
+      "Kale & Collards",
+
+    icon:
+      "🥬",
+
+    cropCategory:
+      "leafy-green",
+
+    primaryFeedCategory:
+      "fresh-green",
+
+    guideUrl:
+      "growing-kale-collards-for-chickens.html"
+  },
+
+  lifecycle: {
+    growthCycle:
+      "biennial",
+
+    isAnnual: false,
+    isBiennial: true,
+    isPerennial: false,
+    isTreeOrShrub: false,
+
+    yearsToFirstUsefulHarvest: 0,
+    yearsToFullProduction: 0,
+    expectedUsefulLifeYears: 1,
+
+    regrowsAfterHarvest: true,
+
+    permanentPlantingRequired: false,
+    reversibleAfterOneSeason: true
+  },
+
+  climate: {
+    suitableClimateTypes: [
+      "cold-short-summer",
+      "cool-moderate-summer",
+      "temperate",
+      "mild-winter",
+      "high-elevation"
+    ],
+
+    preferredClimateTypes: [
+      "cool-moderate-summer",
+      "temperate",
+      "mild-winter"
+    ],
+
+    challengingClimateTypes: [
+      "hot-humid",
+      "hot-dry"
+    ],
+
+    minimumFrostFreeDays: null,
+    preferredFrostFreeDays: null,
+
+    minimumSoilTemperatureF: null,
+    preferredSoilTemperatureF: 60,
+
+    daysToMaturityMinimum: 50,
+    daysToMaturityMaximum: 75,
+
+    dryDownBufferDays: null,
+
+    heatToleranceScore: 2,
+
+    droughtClimateToleranceScore: 2,
+
+    humidityToleranceScore: 3,
+
+    coolSummerToleranceScore: 5,
+
+    frostSensitivityScore: 1,
+
+    winterHardinessRequired: false,
+
+    seasonExtensionBenefits: [
+      "Row cover can protect young plants from frost and insect pests.",
+      "Low tunnels and cold frames can extend fall and winter harvest.",
+      "Mulch can cool soil and reduce moisture stress during warm weather.",
+      "Transplants can provide earlier harvest than direct seeding."
+    ],
+
+    indoorSeedStartingBenefitScore: 4,
+
+    directFacts: {
+      seasonType:
+        "cool-season",
+
+      frostSensitive: false,
+
+      plantBeforeLastFrostPossible:
+        true,
+
+      youngPlantColdToleranceF:
+        25,
+
+      preferredMaximumGrowingTemperatureF:
+        75,
+
+      maturityRangeDays:
+        "approximately-50-to-75-variety-dependent",
+
+      notes: [
+        "Kale and Collards are generally grown as cool-season leafy vegetables.",
+        "They can be planted before the final spring frost and again for fall harvest.",
+        "Mature Kale plants can tolerate substantial cold, although exact hardiness varies by cultivar and plant condition.",
+        "Light frost can improve flavor and eating quality.",
+        "High summer temperatures reduce growth and may produce tougher or more bitter leaves.",
+        "Collards generally tolerate Southern heat somewhat better than many Kale varieties, but both perform best during cooler periods.",
+        "Maturity varies by cultivar, transplant age, harvest size, and whether baby or full-sized leaves are desired."
+      ]
     }
+  },
+
+  site: {
+    absoluteMinimumSunHours: 3,
+
+    productiveMinimumSunHours: 4,
+
+    preferredSunHours: 6,
+
+    shadeToleranceScore: 4,
+
+    afternoonShadeBenefitInHeat: 5,
+
+    windToleranceScore: 4,
+
+    lodgingRiskScore: 1,
+
+    reflectedHeatToleranceScore: 2,
+
+    airflowRequirementScore: 4,
+
+    frostPocketSensitivityScore: 1,
+
+    treeRootCompetitionToleranceScore: 3,
+
+    hardscapeConflictRiskScore: 1,
+
+    structureConflictRiskScore: 1,
+
+    utilityConflictRiskScore: 1,
+
+    fruitDropMessRiskScore: 1,
+
+    stainingRiskScore: 1,
+
+    directFacts: {
+      preferredLight:
+        "full-sun-to-partial-shade",
+
+      productiveSunGuidance:
+        "Approximately 4 to 6 or more hours of direct sun, with fuller sun preferred in cool weather and afternoon shade useful in hot climates.",
+
+      windExposureConcern:
+        false,
+
+      growthHabit:
+        "upright-leafy-rosette",
+
+      notes: [
+        "Full sun generally provides the fastest and fullest growth.",
+        "Partial shade can still support useful leaf production.",
+        "Afternoon shade can reduce heat stress in hot climates.",
+        "Dense plantings need adequate airflow to reduce prolonged leaf wetness and disease pressure.",
+        "The plants are relatively low and structurally stable compared with tall grain crops.",
+        "Kale and Collards can fit near walkways, patios, structures, and raised beds without major height conflicts.",
+        "Avoid sites where dense tree roots create severe competition for moisture and nutrients."
+      ]
+    }
+  },
+
+  soil: {
+    textureScores: {
+      heavyClay: 3,
+      clayLoam: 4,
+      loam: 5,
+      sandyLoam: 4,
+      verySandy: 2,
+      rocky: 2
+    },
+
+    drainageRequirementScore: 4,
+
+    temporaryWetToleranceScore: 2,
+
+    waterloggingSensitivityScore: 4,
+
+    minimumSoilDepthIn: 8,
+    preferredSoilDepthIn: 12,
+
+    compactionToleranceScore: 2,
+
+    establishmentInSodDifficultyScore: 5,
+
+    preferredPHMinimum: 6.0,
+    preferredPHMaximum: 7.5,
+
+    survivalPHMinimum: null,
+    survivalPHMaximum: null,
+
+    fertilityRequirementScore: 4,
+
+    nitrogenRequirementScore: 5,
+    phosphorusRequirementScore: 3,
+    potassiumRequirementScore: 4,
+
+    benefitsFromInoculation: false,
+
+    inoculantType: null,
+
+    saltToleranceScore: null,
+
+    amendmentEffortScore: 3,
+
+    directFacts: {
+      preferredDrainage:
+        "well-drained",
+
+      preferredTextures: [
+        "loam",
+        "clay loam",
+        "sandy loam with added organic matter"
+      ],
+
+      organicMatterBenefit:
+        true,
+
+      highNitrogenLeafCrop:
+        true,
+
+      waterloggedSoilSuitable:
+        false,
+
+      notes: [
+        "Kale and Collards favor fertile, well-drained soil rich in organic matter.",
+        "Leaf production responds strongly to adequate nitrogen.",
+        "Very sandy soil can dry rapidly and may require more frequent irrigation and fertility management.",
+        "Heavy clay can work when drainage and compaction are corrected.",
+        "Standing water and persistently saturated soil increase root and disease problems.",
+        "Soil testing should guide fertilizer and amendment decisions.",
+        "The stored pH range is a productive planning range rather than an absolute survival boundary."
+      ]
+    }
+  },
+
+  water: {
+    overallWaterRequirementLevel:
+      "moderate",
+
+    germinationWaterNeedLevel:
+      "moderate",
+
+    establishmentWaterNeedLevel:
+      "moderate",
+
+    matureWaterNeedLevel:
+      "moderate",
+
+    floweringWaterNeedLevel:
+      "not-applicable",
+
+    harvestDevelopmentWaterNeedLevel:
+      "moderate",
+
+    droughtSurvivalScore: 2,
+
+    droughtYieldRetentionScore: 2,
+
+    criticalGrowthStages: [
+      "germination",
+      "transplant-establishment",
+      "rapid-leaf-growth",
+      "repeated-harvest-regrowth"
+    ],
+
+    criticalStageWaterImportanceScore: 4,
+
+    overwateringSensitivityScore: 3,
+
+    waterloggingSensitivityScore: 4,
+
+    dripIrrigationBenefitScore: 5,
+
+    mulchBenefitScore: 5,
+
+    suitableForRainfallOnlyScore: 2,
+
+    suitableForLimitedIrrigationScore: 2,
+
+    containerDryingRiskScore: 4,
+
+    establishmentYearsRequiringExtraWater: 0,
+
+    directFacts: {
+      evenMoistureImportant:
+        true,
+
+      moistureStressReducesQuality:
+        true,
+
+      standingWaterSuitable:
+        false,
+
+      typicalWeeklyWaterInchesMinimum:
+        1,
+
+      typicalWeeklyWaterInchesMaximum:
+        2,
+
+      notes: [
+        "Consistent soil moisture supports tender leaves and steady regrowth.",
+        "Moisture fluctuations can produce tough leaves and undesirable flavor.",
+        "Kale guidance commonly recommends approximately 1 to 2 inches of water per week depending on weather and soil.",
+        "Drip irrigation helps conserve water and keeps foliage drier.",
+        "Mulch reduces evaporation, suppresses weeds, and cools soil during warm weather.",
+        "Containers and shallow raised beds dry faster than in-ground soil.",
+        "The crop is not a strong choice where irrigation is frequently unavailable."
+      ]
+    }
+  },
+
+  space: {
+    minimumTrialAreaSqFt: null,
+
+    minimumUsefulAreaSqFt: null,
+
+    preferredProductionAreaSqFt: null,
+
+    smallSpaceScore: 5,
+
+    mediumSpaceScore: 5,
+
+    largeSpaceScore: 4,
+
+    layoutScores: {
+      squareBlock: 5,
+      wideRectangle: 5,
+      longStrip: 5,
+      irregular: 5,
+      smallBeds: 5,
+      openField: 4
+    },
+
+    spaceTypeScores: {
+      inGround: 5,
+      raisedBed: 5,
+      container: 5,
+      fenceLine: 4,
+      buildingEdge: 5,
+      unusedLawn: 3,
+      openField: 4,
+      orchard: 3,
+      forageFrame: 5,
+      rotationalPaddock: 3,
+      greenhouse: 5,
+      hedgerow: 2
+    },
+
+    minimumContainerGallons: null,
+
+    containerUseLimitation:
+      "Containers can provide useful repeated leaf harvests, but smaller containers dry quickly and support fewer plants.",
+
+    minimumRaisedBedDepthIn: 8,
+
+    vineSpreadRequired: false,
+
+    verticalSupportBenefitScore: 1,
+
+    blockPlantingRequired: false,
+
+    minimumBlockRows: null,
+
+    continuousStandPreferred: false,
+
+    heightCategory:
+      "low-to-medium",
+
+    matureWidthCategory:
+      "moderate",
+
+    overflowSpaceBenefitScore: 1,
+
+    directFacts: {
+      layoutFlexible: true,
+
+      blockPollinationRequired: false,
+
+      containerSuitable: true,
+
+      raisedBedSuitable: true,
+
+      forageFrameSuitable: true,
+
+      repeatedHarvestSuitable: true,
+
+      approximatePlantSpacingInMinimum:
+        12,
+
+      approximatePlantSpacingInMaximum:
+        18,
+
+      approximateRowSpacingIn:
+        24,
+
+      notes: [
+        "Kale and Collards fit small beds, containers, raised beds, borders, and larger rows.",
+        "Plants commonly receive approximately 12 to 18 inches of spacing depending on cultivar and desired leaf size.",
+        "Closer spacing can produce smaller leaves but may reduce airflow.",
+        "The crop does not require block planting or a trellis.",
+        "Forage frames can protect low plants while allowing chickens to reach leaves through wire.",
+        "Small plantings can provide repeated harvests for a small flock.",
+        "Production-scale usefulness still depends on flock size, planting area, season length, and harvest frequency."
+      ]
+    }
+  },
+
+  flock: {
+    suitableForAdultChickens: true,
+
+    suitableForYoungChicks: false,
+
+    flockPurposeScores: {
+      eggs: 4,
+      meat: 3,
+      breeding: 3,
+      petsEnrichment: 4,
+      homestead: 5,
+      mixed: 5
+    },
+
+    feedingMethodScores: {
+      livingGrazing: 3,
+      cutAndCarry: 5,
+      wholeProduce: 4,
+      wholeSeedHeads: 1,
+      wholeGrain: 1,
+      processedGrain: 1,
+      heatTreated: 2,
+      driedForage: 2,
+      winterStorage: 2
+    },
+
+    directRunSuitabilityScore: 2,
+
+    forageFrameSuitabilityScore: 5,
+
+    rotationalPaddockSuitabilityScore: 3,
+
+    confinedFlockValueScore: 5,
+
+    pasturedFlockValueScore: 3,
+
+    treatDilutionRiskScore: 2,
+
+    highEnergySupplement: false,
+
+    highFiberSupplement: true,
+
+    concentratedFatSource: false,
+
+    primaryFlockUses: [
+      "Fresh cut-and-carry leaves",
+      "Protected living forage",
+      "Seasonal green enrichment",
+      "Household-and-flock shared harvest",
+      "Cool-season fresh supplementation"
+    ],
+
+    unsuitablePrimaryUses: [
+      "Complete-ration replacement",
+      "High-energy supplement",
+      "Long-term dry storage",
+      "Unprotected permanent-run planting",
+      "Primary young-chick feed"
+    ],
+
+    directFacts: {
+      edibleFeedParts: [
+        "Fresh leaves",
+        "Tender stems",
+        "Small whole plants"
+      ],
+
+      preferredBirdStage:
+        "Established adult chickens",
+
+      cropSurvivalWithDirectChickenAccess:
+        "poor-under-continuous-unrestricted-access",
+
+      directAccessTiming:
+        "Use controlled grazing, forage frames, or cut-and-carry harvest rather than unrestricted access to a small planting.",
+
+      nutritionalOrientation: [
+        "fresh-green",
+        "fiber",
+        "vitamin-rich-plant-material",
+        "household-food",
+        "enrichment"
+      ],
+
+      balancedFeedReplacement:
+        false,
+
+      notes: [
+        "Kale and Collard leaves are best treated as fresh supplemental greens.",
+        "The crop is especially useful for confined flocks lacking access to vegetation.",
+        "A forage frame can protect plant crowns and roots from scratching.",
+        "Repeated harvesting is possible when outer leaves are removed and the growing center remains intact.",
+        "The crop is low in concentrated energy and should not be treated as a replacement for grain or balanced poultry feed.",
+        "Young chicks should continue receiving an age-appropriate complete starter ration.",
+        "Large quantities of any supplemental green can reduce consumption of complete feed if offered without restraint."
+      ]
+    }
+  },
+
+  labor: {
+    beginnerFriendlinessScore: 5,
+
+    plantingEaseScore: 4,
+
+    establishmentEaseScore: 4,
+
+    routineMaintenanceEaseScore: 4,
+
+    weedControlEaseScore: 4,
+
+    wildlifeProtectionEaseScore: 3,
+
+    harvestEaseScore: 5,
+
+    freshLeafProcessingEaseScore: 5,
+
+    refrigeratedStorageEaseScore: 4,
+
+    dryingEaseScore: 2,
+
+    storageMonitoringEaseScore: 4,
+
+    perennialMaintenanceEaseScore: 5,
+
+    physicalAccessibilityScore: 5,
+
+    heavyLiftingRiskScore: 1,
+
+    weeklyLaborLevel:
+      "low",
+
+    peakWorkloadLevel:
+      "low",
+
+    harvestFrequencyCategory:
+      "several-weekly",
+
+    requiredPlantingTasks: [
+      "prepare-seedbed"
+    ],
+
+    optionalPlantingTasks: [
+      "start-indoors",
+      "transplant",
+      "install-irrigation"
+    ],
+
+    requiredMaintenanceTasks: [
+      "hand-weed"
+    ],
+
+    optionalMaintenanceTasks: [
+      "mulch",
+      "protect-from-wildlife"
+    ],
+
+    requiredHarvestTasks: [
+      "cut-leaves"
+    ],
+
+    usePathProcessingTasks: {
+      freshCutLeaves: [
+        "cut-leaves"
+      ],
+
+      protectedLivingForage: [],
+
+      refrigeratedLeaves: [
+        "cut-leaves",
+        "refrigerate"
+      ]
+    },
+
+    requiredStorageTasks: [],
+
+    specializedEquipmentRequired: [],
+
+    specializedEquipmentHelpful: [
+      "hand-pruners",
+      "row-cover",
+      "forage-frame",
+      "drip-irrigation",
+      "refrigerator"
+    ],
+
+    suitableForLowTimeUsersScore: 5,
+
+    suitableForSoloGrowersScore: 5,
+
+    directFacts: {
+      seedSize:
+        "small",
+
+      directSeedingSuitable: true,
+
+      transplantingSuitable: true,
+
+      specializedHarvestEquipmentRequiredForBackyardScale:
+        false,
+
+      majorLaborBottlenecks: [
+        "Monitoring cabbage worms and loopers",
+        "Protecting seedlings from flea beetles",
+        "Maintaining moisture during warm weather",
+        "Repeated leaf harvesting",
+        "Protecting plants from chickens and browsing wildlife"
+      ],
+
+      notes: [
+        "Kale and Collards are generally beginner-friendly crops.",
+        "Transplants can simplify establishment and provide earlier harvest.",
+        "Harvest is simple and can be repeated by removing mature outer leaves.",
+        "Pest inspection may become the most regular management task.",
+        "Small plantings require no specialized tools.",
+        "The plants are lightweight and accessible for most hand-harvest systems."
+      ]
+    }
+  },
+
+  cost: {
+    seedOrPlantCostLevel:
+      "low",
+
+    soilPreparationCostLevel:
+      "low",
+
+    irrigationCostLevel:
+      "low",
+
+    protectionCostLevel:
+      "low",
+
+    processingEquipmentCostLevel:
+      "very-low",
+
+    storageCostLevel:
+      "very-low",
+
+    annualRecurringCostLevel:
+      "low",
+
+    longTermValueScore: 5,
+
+    lowestCostUsePath:
+      "fresh-cut-leaves",
+
+    highestCostUsePath:
+      "protected-living-forage",
+
+    likelyCostDrivers: [
+      "Transplants rather than seed",
+      "Row cover",
+      "Forage-frame materials",
+      "Drip irrigation",
+      "Compost or fertility amendments"
+    ],
+
+    costReductionOptions: [
+      "Start plants from seed.",
+      "Use direct seeding where conditions allow.",
+      "Harvest fresh leaves instead of storing them.",
+      "Build a forage frame from existing wire and lumber.",
+      "Use mulch to reduce watering and weed pressure."
+    ],
+
+    directFacts: {
+      specializedPlantingEquipmentRequired:
+        false,
+
+      specializedBackyardHarvestEquipmentRequired:
+        false,
+
+      specializedProcessingEquipmentRequired:
+        false,
+
+      notes: [
+        "Kale and Collards are inexpensive to establish from seed.",
+        "Fresh use requires almost no processing equipment.",
+        "A protected forage frame may be the largest optional infrastructure expense.",
+        "Fertility and irrigation costs depend on the existing garden.",
+        "Cost values are qualitative rather than current retail estimates."
+      ]
+    }
+  },
+
+  goals: {
+    feedReductionScore: 2,
+
+    energyProductionScore: 1,
+
+    proteinOrientedScore: 2,
+
+    freshGreensScore: 5,
+
+    livingForageScore: 4,
+
+    winterStorageScore: 2,
+
+    enrichmentScore: 4,
+
+    resilienceScore: 4,
+
+    soilImprovementScore: 2,
+
+    nitrogenFixationScore: 1,
+
+    groundCoverScore: 3,
+
+    erosionControlScore: 2,
+
+    shadeScore: 1,
+
+    privacyScreeningScore: 1,
+
+    pollinatorSupportScore: 1,
+
+    compostBiomassScore: 4,
+
+    householdFoodScore: 5,
+
+    seedSavingScore: 2,
+
+    selfRelianceScore: 4,
+
+    multipurposeValueScore: 5,
+
+    visualAppealScore: 4,
+
+    productionReliabilityScore: 4,
+
+    fastestValueScore: 5,
+
+    nonElectricStorageScore: 1,
+
+    smallFlockValueScore: 5,
+
+    largeFlockValueScore: 3,
+
+    primaryGoalMatches: [
+      "fresh-greens",
+      "living-forage",
+      "cool-season-production",
+      "household-food",
+      "beginner-friendly",
+      "small-space",
+      "container-growing",
+      "forage-frame",
+      "fast-value",
+      "edible-landscape"
+    ],
+
+    weakGoalMatches: [
+      "high-energy",
+      "dry-grain-storage",
+      "nitrogen-fixation",
+      "pollinator-crop",
+      "long-term-non-electric-storage",
+      "major-feed-replacement"
+    ],
+
+    directFacts: {
+      repeatedLeafHarvest:
+        true,
+
+      humanFoodPotential:
+        true,
+
+      coolSeasonProduction:
+        true,
+
+      containerSuitable:
+        true,
+
+      forageFramePotential:
+        true,
+
+      notes: [
+        "Kale and Collards are among the strongest fresh-green crops in the initial planner database.",
+        "They offer rapid household and flock value from a small area.",
+        "Repeated leaf harvest improves usefulness over a longer season.",
+        "They are not strong concentrated-energy or dry-storage crops.",
+        "Flowering is normally not the production goal, so pollinator value is limited in typical management.",
+        "Seed saving is possible but more complicated because Brassica varieties can cross and plants normally flower in their second year.",
+        "Their best planner role is fresh seasonal supplementation rather than major purchased-feed replacement."
+      ]
+    }
+  },
+
+  risks: {
+    wildlife: {
+      wildBirds: 2,
+      deer: 5,
+      raccoons: 1,
+      squirrels: 1,
+      rabbits: 5,
+      rodents: 2,
+      groundhogs: 4
+    },
+
+    insectsRiskScore: 5,
+
+    diseaseRiskScore: 4,
+
+    lodgingRiskScore: 1,
+
+    fieldMoldRiskScore: 2,
+
+    dryingMoldRiskScore: 2,
+
+    storageMoldRiskScore: 2,
+
+    storedInsectRiskScore: 1,
+
+    spoilageSpeedRiskScore: 4,
+
+    invasivenessConcernRiskScore: 1,
+
+    selfSeedingRiskScore: 2,
+
+    fruitDropRiskScore: 1,
+
+    cropFailureRiskScore: 3,
+
+    stormDamageRiskScore: 2,
+
+    shadingOtherCropsRiskScore: 2,
+
+    overfeedingRiskScore: 2,
+
+    treatedSeedRiskScore: 5,
+
+    primaryRisks: [
+      {
+        id:
+          "brassica-caterpillars",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "seedling",
+          "vegetative-growth",
+          "harvest"
+        ],
+
+        mitigationOptions: [
+          "Row cover",
+          "Regular leaf inspection",
+          "Hand removal",
+          "Appropriate biological controls",
+          "Crop rotation"
+        ],
+
+        note:
+          "Cabbage worms and loopers can rapidly remove leaf tissue and contaminate harvested leaves."
+      },
+
+      {
+        id:
+          "flea-beetle-seedling-damage",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "emergence",
+          "seedling"
+        ],
+
+        mitigationOptions: [
+          "Row cover",
+          "Healthy transplants",
+          "Rapid establishment",
+          "Regular inspection"
+        ],
+
+        note:
+          "Flea beetles can severely damage or kill small seedlings."
+      },
+
+      {
+        id:
+          "aphid-pressure",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "vegetative-growth",
+          "harvest"
+        ],
+
+        mitigationOptions: [
+          "Inspect leaf undersides",
+          "Use strong water spray",
+          "Remove heavily infested leaves",
+          "Encourage beneficial insects"
+        ],
+
+        note:
+          "Aphids may cluster inside curled leaves and make harvesting difficult."
+      },
+
+      {
+        id:
+          "deer-rabbit-browsing",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "seedling",
+          "vegetative-growth",
+          "harvest"
+        ],
+
+        mitigationOptions: [
+          "Fencing",
+          "Protected beds",
+          "Row cover",
+          "Forage-frame protection"
+        ],
+
+        note:
+          "Tender leafy Brassicas are highly attractive to deer and rabbits."
+      },
+
+      {
+        id:
+          "summer-heat-quality-loss",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "vegetative-growth",
+          "harvest"
+        ],
+
+        mitigationOptions: [
+          "Grow during spring and fall",
+          "Use afternoon shade",
+          "Mulch",
+          "Maintain even moisture",
+          "Choose heat-tolerant Collard varieties"
+        ],
+
+        note:
+          "High temperatures reduce growth and may make leaves tougher or more bitter."
+      },
+
+      {
+        id:
+          "fresh-leaf-spoilage",
+
+        severity:
+          "high",
+
+        affectedStages: [
+          "postharvest",
+          "storage",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Feed soon after harvest",
+          "Refrigerate briefly",
+          "Discard slimy or decayed leaves",
+          "Avoid sealing wet warm leaves"
+        ],
+
+        note:
+          "Fresh leaves are perishable and are not suitable for long room-temperature storage."
+      },
+
+      {
+        id:
+          "chemically-treated-seed",
+
+        severity:
+          "very-high",
+
+        affectedStages: [
+          "planting",
+          "feeding"
+        ],
+
+        mitigationOptions: [
+          "Use untreated seed for crops intended for feed",
+          "Keep treated planting seed separated"
+        ],
+
+        note:
+          "Chemically treated planting seed must never be fed."
+      }
+    ],
+
+    directFacts: {
+      cabbageWormConcern:
+        true,
+
+      cabbageLooperConcern:
+        true,
+
+      aphidConcern:
+        true,
+
+      fleaBeetleConcern:
+        true,
+
+      deerRabbitConcern:
+        true,
+
+      heatQualityConcern:
+        true,
+
+      freshStorageLimited:
+        true,
+
+      notes: [
+        "Brassica insects are among the crop's most important management limitations.",
+        "Regular inspection is especially important because harvested leaves are the desired product.",
+        "Row cover can protect against insects but must be installed before pests reach the plants.",
+        "Warm humid conditions may increase several foliar diseases.",
+        "Crop rotation and clean plant material reduce some disease carryover.",
+        "Leaves with mold, decay, slime, heavy insect contamination, or unapproved pesticide residue should not be fed.",
+        "Fresh leaves should be used promptly or refrigerated."
+      ]
+    }
+  },
+
+  seasonalRoles: {
+    earlySpring: true,
+
+    lateSpring: true,
+
+    summer: false,
+
+    lateSummer: true,
+
+    fall: true,
+
+    winterStorage: false,
+
+    perennial: false,
+
+    plantingWindows: [
+      {
+        id:
+          "early-spring-direct-seed",
+
+        trigger:
+          "before-last-frost",
+
+        offsetWeeksMinimum: 4,
+        offsetWeeksMaximum: 5,
+
+        soilCondition:
+          "workable-and-cool",
+
+        method:
+          "direct-seed",
+
+        note:
+          "Kale may be seeded several weeks before the final spring frost where soil can be worked."
+      },
+
+      {
+        id:
+          "early-spring-transplant",
+
+        trigger:
+          "before-last-frost",
+
+        offsetWeeksMinimum: 4,
+        offsetWeeksMaximum: 5,
+
+        method:
+          "transplant",
+
+        note:
+          "Transplants can provide earlier spring harvest."
+      },
+
+      {
+        id:
+          "late-summer-fall-planting",
+
+        trigger:
+          "late-summer",
+
+        offsetWeeksMinimum: 0,
+        offsetWeeksMaximum: null,
+
+        method:
+          "direct-seed-or-transplant",
+
+        note:
+          "Plant early enough to establish before short days and severe cold; maturity may occur after the first fall frost."
+      }
+    ],
+
+    harvestWindows: [
+      {
+        id:
+          "baby-leaf-harvest",
+
+        trigger:
+          "young-leaves-usable",
+
+        usePathId:
+          "fresh-cut-leaves",
+
+        note:
+          "Young leaves can be harvested before plants reach full size."
+      },
+
+      {
+        id:
+          "repeated-outer-leaf-harvest",
+
+        trigger:
+          "outer-leaves-full-size",
+
+        usePathId:
+          "fresh-cut-leaves",
+
+        note:
+          "Remove mature outer leaves while preserving the central growing point."
+      },
+
+      {
+        id:
+          "protected-living-forage",
+
+        trigger:
+          "plants-established",
+
+        usePathId:
+          "protected-living-forage",
+
+        note:
+          "Allow controlled access through a forage frame after plants are established."
+      }
+    ],
+
+    cropSequenceRoles: [
+      "Early-spring leafy crop",
+      "Fall leafy crop",
+      "Protected winter green in mild climates",
+      "Cool-season forage-frame crop",
+      "Fast household-food crop"
+    ],
+
+    seasonalLimitations: [
+      "Summer heat reduces quality",
+      "Fresh leaves have limited storage life",
+      "Severe winter conditions may require protection",
+      "Brassica pests may remain active during mild weather"
+    ],
+
+    directFacts: {
+      coolSeasonCrop: true,
+
+      springPlantingPossible:
+        true,
+
+      fallPlantingPossible:
+        true,
+
+      repeatedLeafHarvestPossible:
+        true,
+
+      winterGardenPotential:
+        true,
+
+      notes: [
+        "Kale and Collards can provide harvests during spring and fall when warm-season crops are unavailable.",
+        "In mild climates or under protection, harvest may continue into winter.",
+        "Repeated outer-leaf harvest can extend production.",
+        "Fall crops often produce high-quality leaves after frost.",
+        "The crop's main seasonal weakness is hot summer weather."
+      ]
+    }
+  },
+
+  usePaths: [
+    {
+      id:
+        "fresh-cut-leaves",
+
+      label:
+        "Fresh Cut Kale or Collard Leaves",
+
+      description:
+        "Healthy leaves harvested from established plants and offered promptly as a fresh supplemental green.",
+
+      primaryFeedRole:
+        "fresh-green",
+
+      harvestProducts: [
+        "fresh-greens",
+        "fresh-leaves"
+      ],
+
+      suitableFeedingMethods: [
+        "cut-and-carry",
+        "fresh-supplement",
+        "seasonal-enrichment",
+        "whole-produce"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-leaves"
+      ],
+
+      optionalProcessingTasks: [
+        "chop"
+      ],
+
+      requiredEquipment: [],
+
+      helpfulEquipment: [
+        "hand-pruners",
+        "basket"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "several-weekly",
+
+      storageMethods: [
+        "short-term-fresh"
+      ],
+
+      preferredStorageMethod:
+        "feed-soon-after-harvest",
+
+      storageDurationCategory:
+        "very-short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: true,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 2,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "Offer only clean, healthy leaves without mold, decay, slime, or unapproved pesticide residues.",
+        "Introduce unfamiliar fresh greens gradually.",
+        "Fresh leaves remain supplemental and should not replace balanced poultry feed.",
+        "Discard spoiled or questionable plant material."
+      ],
+
+      incompatibleUserTraits: [
+        "requires-long-term-room-temperature-storage",
+        "wants-dry-grain-only",
+        "has-no-fresh-harvest-time"
+      ]
+    },
+
+    {
+      id:
+        "protected-living-forage",
+
+      label:
+        "Protected Kale or Collard Forage",
+
+      description:
+        "Established plants protected beneath a forage frame so chickens can reach leaves while roots and crowns remain protected from scratching.",
+
+      primaryFeedRole:
+        "living-forage",
+
+      harvestProducts: [
+        "living-forage",
+        "fresh-greens"
+      ],
+
+      suitableFeedingMethods: [
+        "forage-frame",
+        "controlled-grazing",
+        "seasonal-enrichment"
+      ],
+
+      requiredProcessingTasks: [],
+
+      optionalProcessingTasks: [],
+
+      requiredEquipment: [
+        "forage-frame"
+      ],
+
+      helpfulEquipment: [
+        "fencing",
+        "drip-irrigation",
+        "row-cover"
+      ],
+
+      harvestPattern:
+        "continuous",
+
+      harvestFrequencyCategory:
+        "continuous",
+
+      storageMethods: [
+        "living-crop"
+      ],
+
+      preferredStorageMethod:
+        "not-applicable",
+
+      storageDurationCategory:
+        "immediate",
+
+      nonElectricStorageSuitable: true,
+
+      refrigerationSuitable: false,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: false,
+
+      moldRiskScore: 1,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 5,
+      beginnerSuitabilityScore: 4,
+
+      householdFoodValueScore: 3,
+      flockValueScore: 5,
+
+      safetyWarnings: [
+        "The frame must prevent chickens from scratching out roots and crowns.",
+        "Avoid using sharp, loose, or damaged wire that could injure birds.",
+        "Do not allow manure buildup to contaminate leaves intended for household use.",
+        "The living crop remains supplemental and does not replace complete feed."
+      ],
+
+      incompatibleUserTraits: [
+        "declines-building-protection",
+        "has-no-run-space",
+        "requires-household-and-flock-use-from-same-unprotected-bed"
+      ]
+    },
+
+    {
+      id:
+        "refrigerated-fresh-leaves",
+
+      label:
+        "Briefly Refrigerated Kale or Collard Leaves",
+
+      description:
+        "Freshly harvested leaves cooled and refrigerated for short-term household and flock use.",
+
+      primaryFeedRole:
+        "fresh-green-short-storage",
+
+      harvestProducts: [
+        "fresh-greens",
+        "refrigerated-leaves"
+      ],
+
+      suitableFeedingMethods: [
+        "cut-and-carry",
+        "fresh-supplement",
+        "measured-supplement"
+      ],
+
+      requiredProcessingTasks: [
+        "cut-leaves",
+        "refrigerate"
+      ],
+
+      optionalProcessingTasks: [
+        "chop"
+      ],
+
+      requiredEquipment: [
+        "refrigerator"
+      ],
+
+      helpfulEquipment: [
+        "basket",
+        "food-safe-container"
+      ],
+
+      harvestPattern:
+        "several",
+
+      harvestFrequencyCategory:
+        "weekly",
+
+      storageMethods: [
+        "refrigerated"
+      ],
+
+      preferredStorageMethod:
+        "cold-high-humidity-short-term",
+
+      storageDurationCategory:
+        "short",
+
+      nonElectricStorageSuitable: false,
+
+      refrigerationSuitable: true,
+      freezingSuitable: false,
+
+      dryingRequired: false,
+      curingRequired: false,
+      shellingRequired: false,
+      threshingRequired: false,
+      cookingRequired: false,
+      grindingRequired: false,
+
+      moistureSensitive: true,
+
+      moldRiskScore: 2,
+      rodentRiskScore: 1,
+      storedInsectRiskScore: 1,
+
+      harvestEaseScore: 5,
+      preparationEaseScore: 4,
+      beginnerSuitabilityScore: 5,
+
+      householdFoodValueScore: 5,
+      flockValueScore: 4,
+
+      safetyWarnings: [
+        "Cool leaves promptly after harvest.",
+        "Discard wilted, slimy, moldy, foul-smelling, or decayed leaves.",
+        "Do not seal warm wet leaves in storage.",
+        "Refrigerated leaves remain supplemental to complete poultry feed."
+      ],
+
+      incompatibleUserTraits: [
+        "has-no-refrigerator",
+        "requires-non-electric-storage",
+        "requires-storage-beyond-several-weeks"
+      ]
+    }
+  ],
+
+  dataQuality: {
+    overallConfidence:
+      0.82,
+
+    verifiedFields: [
+      "identity",
+      "lifecycle",
+      "climate.directFacts.seasonType",
+      "climate.directFacts.youngPlantColdToleranceF",
+      "climate.directFacts.preferredMaximumGrowingTemperatureF",
+      "climate.daysToMaturityMinimum",
+      "climate.daysToMaturityMaximum",
+      "site.directFacts.preferredLight",
+      "soil.directFacts.organicMatterBenefit",
+      "soil.directFacts.highNitrogenLeafCrop",
+      "water.directFacts.evenMoistureImportant",
+      "water.directFacts.typicalWeeklyWaterInchesMinimum",
+      "water.directFacts.typicalWeeklyWaterInchesMaximum",
+      "space.directFacts.containerSuitable",
+      "space.directFacts.raisedBedSuitable",
+      "space.directFacts.repeatedHarvestSuitable",
+      "labor.directFacts.directSeedingSuitable",
+      "labor.directFacts.transplantingSuitable",
+      "risks.directFacts.cabbageWormConcern",
+      "risks.directFacts.cabbageLooperConcern",
+      "risks.directFacts.aphidConcern",
+      "risks.directFacts.fleaBeetleConcern",
+      "risks.directFacts.heatQualityConcern",
+      "seasonalRoles.directFacts.coolSeasonCrop",
+      "seasonalRoles.directFacts.repeatedLeafHarvestPossible"
+    ],
+
+    derivedFields: [
+      "climate.heatToleranceScore",
+      "climate.droughtClimateToleranceScore",
+      "climate.humidityToleranceScore",
+      "climate.coolSummerToleranceScore",
+      "climate.frostSensitivityScore",
+      "site",
+      "soil.textureScores",
+      "soil.drainageRequirementScore",
+      "soil.waterloggingSensitivityScore",
+      "water",
+      "space.smallSpaceScore",
+      "space.mediumSpaceScore",
+      "space.largeSpaceScore",
+      "space.layoutScores",
+      "space.spaceTypeScores",
+      "flock.flockPurposeScores",
+      "flock.feedingMethodScores",
+      "flock.directRunSuitabilityScore",
+      "flock.forageFrameSuitabilityScore",
+      "labor",
+      "cost",
+      "goals",
+      "risks.wildlife",
+      "usePaths.fresh-cut-leaves",
+      "usePaths.protected-living-forage",
+      "usePaths.refrigerated-fresh-leaves"
+    ],
+
+    uncertainFields: [
+      "climate.minimumFrostFreeDays",
+      "climate.preferredFrostFreeDays",
+      "climate.minimumSoilTemperatureF",
+      "soil.saltToleranceScore",
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "flock.portionGuidance",
+      "usePaths.fresh-cut-leaves.exactStorageDuration",
+      "usePaths.protected-living-forage.regrowthUnderChickenPressure",
+      "usePaths.refrigerated-fresh-leaves.exactStorageDuration",
+      "risks.wildlife.raccoons",
+      "risks.wildlife.squirrels"
+    ],
+
+    missingFields: [
+      "space.minimumTrialAreaSqFt",
+      "space.minimumUsefulAreaSqFt",
+      "space.preferredProductionAreaSqFt",
+      "space.minimumContainerGallons",
+      "flock.portionGuidance",
+      "flock.usePathTesting"
+    ],
+
+    lastReviewed:
+      "2026-07-14",
+
+    primarySources: [
+      {
+        title:
+          "How to Grow Kale in Your Garden",
+
+        organization:
+          "Utah State University Extension",
+
+        sourceType:
+          "peer-reviewed-extension-fact-sheet",
+
+        use:
+          "Climate, cold tolerance, temperature, planting dates, spacing, soil, water, fertility, pest pressure, repeated harvest, and refrigerated storage"
+      },
+
+      {
+        title:
+          "Growing Cole Crops in the Home Garden",
+
+        organization:
+          "University Cooperative Extension resources",
+
+        sourceType:
+          "extension-home-garden-guide",
+
+        use:
+          "Kale and Collard production, cool-season scheduling, fertility, irrigation, row cover, insect pressure, and disease management"
+      },
+
+      {
+        title:
+          "Commercial and Home-Garden Collard Production Guidance",
+
+        organization:
+          "Southern Cooperative Extension resources",
+
+        sourceType:
+          "extension-production-guide",
+
+        use:
+          "Collard heat adaptation, spacing, repeated harvest, Southern planting windows, pests, and cultivar differences"
+      }
+    ],
+
+    notes: [
+      "Kale and Collards were combined because they share Brassica oleracea ancestry, leafy harvest use, cool-season management, and similar planner roles.",
+      "The record recognizes that Collards may tolerate warm Southern conditions better than some Kale varieties, but both remain classified primarily as cool-season crops.",
+      "The planner separates fresh cut leaves, protected living forage, and brief refrigerated storage into distinct use paths.",
+      "Fresh leafy material is treated as supplemental rather than a complete poultry ration.",
+      "No exact flock feeding portions were assigned.",
+      "Minimum useful area and production area remain intentionally null.",
+      "The crop should remain in testing until the shared engine compares it with Sunflower and Cowpea across cool-season and fresh-green profiles."
+    ]
+  }
+}
+
   },
 
 
