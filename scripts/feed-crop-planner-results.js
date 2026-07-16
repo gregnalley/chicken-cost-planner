@@ -795,9 +795,9 @@
   if (
     typeof BCP_FEED_CROPS ===
       "undefined" ||
-    !Array.isArray(
-      BCP_FEED_CROPS
-    )
+    BCP_FEED_CROPS === null ||
+    typeof BCP_FEED_CROPS !==
+      "object"
   ) {
     return {
       registered:
@@ -813,11 +813,22 @@
       BCP_FEED_CROPS
     );
 
+    const registeredCrops =
+      dataAdapter.getAllUniqueCrops();
+
     return {
       registered:
-        dataAdapter
-          .getAllUniqueCrops()
-          .length > 0,
+        Array.isArray(
+          registeredCrops
+        ) &&
+        registeredCrops.length > 0,
+
+      cropCount:
+        Array.isArray(
+          registeredCrops
+        )
+          ? registeredCrops.length
+          : 0,
 
       reason:
         null
