@@ -1336,13 +1336,13 @@ nav a:hover{
 
 #navigation {
   padding:
-    14px 18px;
+    15px 18px;
 
   background:
     linear-gradient(
       135deg,
-      #184a2a,
-      #2f7444
+      #1d5b34,
+      #347c49
     );
 
   border-top:
@@ -1360,7 +1360,7 @@ nav a:hover{
       0,
       0,
       0,
-      0.14
+      0.12
     );
 
   box-shadow:
@@ -1373,6 +1373,10 @@ nav a:hover{
     );
 }
 
+/*
+  Explicitly removes the older dark-green nav band.
+*/
+
 #navigation nav {
   display:
     flex;
@@ -1381,7 +1385,7 @@ nav a:hover{
     wrap;
 
   gap:
-    10px;
+    12px;
 
   align-items:
     stretch;
@@ -1397,6 +1401,21 @@ nav a:hover{
 
   margin:
     0 auto;
+
+  padding:
+    0;
+
+  background:
+    transparent !important;
+
+  border:
+    0 !important;
+
+  border-radius:
+    0 !important;
+
+  box-shadow:
+    none !important;
 }
 
 #navigation nav a {
@@ -1404,7 +1423,10 @@ nav a:hover{
     inline-flex;
 
   min-height:
-    48px;
+    54px;
+
+  gap:
+    9px;
 
   align-items:
     center;
@@ -1413,7 +1435,7 @@ nav a:hover{
     center;
 
   padding:
-    10px 15px;
+    9px 15px;
 
   color:
     #21432a;
@@ -1423,7 +1445,7 @@ nav a:hover{
       255,
       255,
       255,
-      0.95
+      0.96
     );
 
   border:
@@ -1432,19 +1454,19 @@ nav a:hover{
       255,
       255,
       255,
-      0.72
+      0.82
     );
 
   border-radius:
-    11px;
+    13px;
 
   box-shadow:
-    0 5px 13px
+    0 5px 14px
     rgba(
       0,
       0,
       0,
-      0.12
+      0.13
     );
 
   font-size:
@@ -1479,42 +1501,91 @@ nav a:hover{
     #173f25;
 
   background:
-    #f4faf4;
+    #f7fbf7;
 
   border-color:
-    #c9ddcc;
+    #d0e0d2;
 
   box-shadow:
-    0 9px 20px
+    0 10px 22px
     rgba(
       0,
       0,
       0,
-      0.16
+      0.17
     );
 
   transform:
     translateY(
-      -2px
+      -3px
     );
-}
-
-#navigation nav a:focus-visible {
-  outline:
-    3px solid
-    rgba(
-      255,
-      224,
-      139,
-      0.75
-    );
-
-  outline-offset:
-    3px;
 }
 
 /*
-  Featured planner button
+  Icon badge
+*/
+
+#navigation .nav-icon {
+  display:
+    inline-grid;
+
+  width:
+    31px;
+
+  height:
+    31px;
+
+  flex:
+    0 0 auto;
+
+  place-items:
+    center;
+
+  background:
+    #e9f4eb;
+
+  border:
+    1px solid
+    #d0e2d3;
+
+  border-radius:
+    50%;
+
+  font-size:
+    1rem;
+
+  line-height:
+    1;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+#navigation nav a:hover
+.nav-icon,
+#navigation nav a:focus-visible
+.nav-icon {
+  background:
+    #dceddf;
+
+  border-color:
+    #bcd4c1;
+
+  transform:
+    scale(
+      1.1
+    );
+}
+
+#navigation .nav-label {
+  display:
+    inline-block;
+}
+
+/*
+  Featured Crop Planner button
 */
 
 #navigation nav a.nav-featured {
@@ -1524,21 +1595,30 @@ nav a:hover{
   background:
     linear-gradient(
       135deg,
-      #fff4cf,
-      #ffe29a
+      #fff6dc,
+      #ffe39a
     );
 
   border-color:
-    #f0ca65;
+    #edc963;
 
   box-shadow:
-    0 6px 15px
+    0 6px 16px
     rgba(
       112,
       74,
       5,
-      0.2
+      0.22
     );
+}
+
+#navigation nav a.nav-featured
+.nav-icon {
+  background:
+    #fff0bd;
+
+  border-color:
+    #e8c75e;
 }
 
 #navigation nav a.nav-featured:hover,
@@ -1549,12 +1629,50 @@ nav a:hover{
   background:
     linear-gradient(
       135deg,
-      #fff8df,
-      #ffd978
+      #fff9e8,
+      #ffd975
     );
 
   border-color:
-    #dba93a;
+    #d9a835;
+
+  box-shadow:
+    0 11px 24px
+    rgba(
+      112,
+      74,
+      5,
+      0.25
+    );
+}
+
+#navigation nav a.nav-featured:hover
+.nav-icon,
+#navigation nav a.nav-featured:focus-visible
+.nav-icon {
+  background:
+    #ffe59b;
+
+  border-color:
+    #d9a835;
+}
+
+/*
+  Keyboard focus
+*/
+
+#navigation nav a:focus-visible {
+  outline:
+    3px solid
+    rgba(
+      255,
+      225,
+      137,
+      0.82
+    );
+
+  outline-offset:
+    3px;
 }
 
 /*
@@ -1566,10 +1684,10 @@ nav a:hover{
 
   #navigation nav a {
     flex:
-      1 1 135px;
+      1 1 145px;
 
     max-width:
-      190px;
+      195px;
 
     white-space:
       normal;
@@ -1603,7 +1721,7 @@ nav a:hover{
       );
 
     gap:
-      8px;
+      9px;
   }
 
   #navigation nav a {
@@ -1614,13 +1732,27 @@ nav a:hover{
       none;
 
     min-height:
-      46px;
+      54px;
 
     padding:
-      9px 8px;
+      8px 9px;
 
     font-size:
       0.82rem;
+
+    white-space:
+      normal;
+  }
+
+  #navigation .nav-icon {
+    width:
+      29px;
+
+    height:
+      29px;
+
+    font-size:
+      0.94rem;
   }
 
 }
