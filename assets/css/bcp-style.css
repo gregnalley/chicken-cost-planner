@@ -2044,3 +2044,218 @@ nav a:hover{
   }
 
 }
+
+/*
+  ==================================================
+  Crop Guide Planner Callout
+  ==================================================
+*/
+
+.crop-planner-guide-callout {
+  display:
+    grid;
+
+  grid-template-columns:
+    auto minmax(
+      0,
+      1fr
+    );
+
+  gap:
+    18px;
+
+  align-items:
+    start;
+
+  margin:
+    26px 0;
+
+  padding:
+    22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #edf7ee,
+      #ffffff
+    );
+
+  border:
+    1px solid
+    #c9ddcc;
+
+  border-left:
+    6px solid
+    #2f7444;
+
+  border-radius:
+    15px;
+
+  box-shadow:
+    0 8px 22px
+    rgba(
+      35,
+      82,
+      45,
+      0.08
+    );
+}
+
+.crop-planner-guide-icon {
+  display:
+    grid;
+
+  width:
+    52px;
+
+  height:
+    52px;
+
+  place-items:
+    center;
+
+  background:
+    #dceddf;
+
+  border:
+    1px solid
+    #bfd6c3;
+
+  border-radius:
+    14px;
+
+  font-size:
+    1.75rem;
+}
+
+.crop-planner-guide-kicker {
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  color:
+    #9a6712;
+
+  font-size:
+    0.74rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.05em;
+
+  text-transform:
+    uppercase;
+}
+
+.crop-planner-guide-content h2 {
+  margin:
+    0 0 8px;
+
+  color:
+    #194f2a;
+
+  font-size:
+    1.35rem;
+}
+
+.crop-planner-guide-content p {
+  margin:
+    0 0 14px;
+
+  color:
+    #5b685f;
+
+  font-size:
+    0.94rem;
+
+  line-height:
+    1.6;
+}
+
+.crop-planner-guide-button {
+  display:
+    inline-flex;
+
+  min-height:
+    44px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    10px 16px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2f7444,
+      #1e5b33
+    );
+
+  border-radius:
+    10px;
+
+  font-weight:
+    850;
+
+  text-decoration:
+    none;
+
+  box-shadow:
+    0 7px 16px
+    rgba(
+      35,
+      103,
+      56,
+      0.2
+    );
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.crop-planner-guide-button:hover,
+.crop-planner-guide-button:focus-visible {
+  transform:
+    translateY(
+      -2px
+    );
+
+  box-shadow:
+    0 10px 20px
+    rgba(
+      35,
+      103,
+      56,
+      0.26
+    );
+}
+
+@media
+(max-width: 560px) {
+
+  .crop-planner-guide-callout {
+    grid-template-columns:
+      1fr;
+
+    padding:
+      19px;
+  }
+
+  .crop-planner-guide-button {
+    width:
+      100%;
+  }
+
+}
