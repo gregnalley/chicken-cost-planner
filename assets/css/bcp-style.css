@@ -1792,3 +1792,255 @@ nav a:hover{
   }
 
 }
+
+/*
+  ==================================================
+  Compact Shared Site Header
+  ==================================================
+
+  Keeps the existing chicken background image and
+  dark overlay, but gives the page content much more
+  room above the fold.
+
+  These selectors intentionally use .site-header so
+  they do not affect article headers or other future
+  header elements.
+*/
+
+.site-header {
+  position:
+    relative;
+
+  display:
+    flex;
+
+  min-height:
+    190px;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    40px 20px;
+
+  overflow:
+    hidden;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      rgba(
+        0,
+        0,
+        0,
+        0.56
+      ),
+      rgba(
+        0,
+        0,
+        0,
+        0.56
+      )
+    ),
+    url("../images/hero-chickens.jpg");
+
+  background-size:
+    cover;
+
+  background-position:
+    center 44%;
+
+  background-repeat:
+    no-repeat;
+
+  text-align:
+    center;
+
+  box-shadow:
+    0 3px 12px
+    rgba(
+      0,
+      0,
+      0,
+      0.25
+    );
+}
+
+.site-header::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  pointer-events:
+    none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(
+        20,
+        74,
+        42,
+        0.08
+      ),
+      rgba(
+        20,
+        74,
+        42,
+        0.18
+      )
+    );
+}
+
+.site-header h1,
+.site-header p {
+  position:
+    relative;
+
+  z-index:
+    1;
+}
+
+.site-header h1 {
+  margin:
+    0 0 8px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      2.65rem
+    );
+
+  line-height:
+    1.1;
+
+  text-shadow:
+    0 3px 12px
+    rgba(
+      0,
+      0,
+      0,
+      0.48
+    );
+}
+
+.site-header p {
+  max-width:
+    760px;
+
+  margin:
+    0 auto;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.94
+    );
+
+  font-size:
+    1rem;
+
+  line-height:
+    1.5;
+
+  text-shadow:
+    0 2px 8px
+    rgba(
+      0,
+      0,
+      0,
+      0.46
+    );
+}
+
+/*
+  Tablet
+*/
+
+@media
+(max-width: 760px) {
+
+  .site-header {
+    min-height:
+      165px;
+
+    padding:
+      30px 18px;
+
+    background-position:
+      center;
+  }
+
+  .site-header h1 {
+    font-size:
+      clamp(
+        1.8rem,
+        7vw,
+        2.25rem
+      );
+  }
+
+  .site-header p {
+    max-width:
+      620px;
+
+    font-size:
+      0.93rem;
+
+    line-height:
+      1.45;
+  }
+
+}
+
+/*
+  Mobile
+*/
+
+@media
+(max-width: 480px) {
+
+  .site-header {
+    min-height:
+      145px;
+
+    padding:
+      25px 15px;
+  }
+
+  .site-header h1 {
+    margin-bottom:
+      6px;
+
+    font-size:
+      1.75rem;
+  }
+
+  .site-header p {
+    font-size:
+      0.85rem;
+
+    line-height:
+      1.4;
+  }
+
+}
