@@ -1336,7 +1336,7 @@ nav a:hover{
 
 #navigation {
   padding:
-    15px 18px;
+    14px 12px;
 
   background:
     linear-gradient(
@@ -1374,7 +1374,7 @@ nav a:hover{
 }
 
 /*
-  Explicitly removes the older dark-green nav band.
+  Remove any older styling from the inner nav.
 */
 
 #navigation nav {
@@ -1382,10 +1382,10 @@ nav a:hover{
     flex;
 
   flex-wrap:
-    wrap;
+    nowrap;
 
   gap:
-    12px;
+    9px;
 
   align-items:
     stretch;
@@ -1395,7 +1395,7 @@ nav a:hover{
 
   width:
     min(
-      1180px,
+      1360px,
       100%
     );
 
@@ -1418,15 +1418,25 @@ nav a:hover{
     none !important;
 }
 
+/*
+  Navigation buttons
+*/
+
 #navigation nav a {
   display:
     inline-flex;
 
+  min-width:
+    0;
+
   min-height:
-    54px;
+    52px;
+
+  flex:
+    0 1 auto;
 
   gap:
-    9px;
+    7px;
 
   align-items:
     center;
@@ -1435,7 +1445,7 @@ nav a:hover{
     center;
 
   padding:
-    9px 15px;
+    8px 12px;
 
   color:
     #21432a;
@@ -1458,7 +1468,7 @@ nav a:hover{
     );
 
   border-radius:
-    13px;
+    12px;
 
   box-shadow:
     0 5px 14px
@@ -1470,7 +1480,7 @@ nav a:hover{
     );
 
   font-size:
-    0.9rem;
+    0.84rem;
 
   font-weight:
     800;
@@ -1522,7 +1532,7 @@ nav a:hover{
 }
 
 /*
-  Icon badge
+  Circular icon badges
 */
 
 #navigation .nav-icon {
@@ -1530,10 +1540,10 @@ nav a:hover{
     inline-grid;
 
   width:
-    31px;
+    29px;
 
   height:
-    31px;
+    29px;
 
   flex:
     0 0 auto;
@@ -1552,7 +1562,7 @@ nav a:hover{
     50%;
 
   font-size:
-    1rem;
+    0.94rem;
 
   line-height:
     1;
@@ -1586,21 +1596,26 @@ nav a:hover{
 
 /*
   Featured Crop Planner button
+
+  It keeps the same white background as the other
+  buttons, but uses a gold border and icon badge.
 */
 
 #navigation nav a.nav-featured {
   color:
-    #5d4007;
+    #21432a;
 
   background:
-    linear-gradient(
-      135deg,
-      #fff6dc,
-      #ffe39a
+    rgba(
+      255,
+      255,
+      255,
+      0.96
     );
 
-  border-color:
-    #edc963;
+  border:
+    2px solid
+    #d6a83e;
 
   box-shadow:
     0 6px 16px
@@ -1608,7 +1623,7 @@ nav a:hover{
       112,
       74,
       5,
-      0.22
+      0.16
     );
 }
 
@@ -1618,31 +1633,27 @@ nav a:hover{
     #fff0bd;
 
   border-color:
-    #e8c75e;
+    #e4c35e;
 }
 
 #navigation nav a.nav-featured:hover,
 #navigation nav a.nav-featured:focus-visible {
   color:
-    #4d3303;
+    #173f25;
 
   background:
-    linear-gradient(
-      135deg,
-      #fff9e8,
-      #ffd975
-    );
+    #fffaf0;
 
   border-color:
-    #d9a835;
+    #c89222;
 
   box-shadow:
-    0 11px 24px
+    0 10px 22px
     rgba(
       112,
       74,
       5,
-      0.25
+      0.2
     );
 }
 
@@ -1677,17 +1688,28 @@ nav a:hover{
 
 /*
   Tablet
+
+  Allow wrapping only once the screen becomes narrow
+  enough that eight buttons no longer fit comfortably.
 */
 
 @media
 (max-width: 900px) {
 
+  #navigation nav {
+    flex-wrap:
+      wrap;
+
+    gap:
+      9px;
+  }
+
   #navigation nav a {
     flex:
-      1 1 145px;
+      1 1 150px;
 
     max-width:
-      195px;
+      210px;
 
     white-space:
       normal;
