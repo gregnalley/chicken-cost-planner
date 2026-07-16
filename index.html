@@ -31,6 +31,570 @@
 
 /*
   ==================================================
+  Compact Homepage Layout
+  ==================================================
+*/
+
+.home-shell {
+  display:
+    grid;
+
+  gap:
+    24px;
+}
+
+/*
+  ==================================================
+  Compact Homepage Hero
+  ==================================================
+*/
+
+.home-intro {
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      0,
+      1.35fr
+    )
+    minmax(
+      220px,
+      0.65fr
+    );
+
+  gap:
+    26px;
+
+  align-items:
+    center;
+
+  padding:
+    30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4faf4
+    );
+
+  border:
+    1px solid
+    #d5e4d7;
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 10px 28px
+    rgba(
+      32,
+      75,
+      42,
+      0.09
+    );
+}
+
+.home-intro::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    -100px;
+
+  right:
+    -90px;
+
+  width:
+    250px;
+
+  height:
+    250px;
+
+  background:
+    rgba(
+      46,
+      125,
+      50,
+      0.07
+    );
+
+  border-radius:
+    50%;
+}
+
+.home-intro-content,
+.home-intro-points {
+  position:
+    relative;
+
+  z-index:
+    1;
+}
+
+.home-intro-kicker {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+
+  margin-bottom:
+    9px;
+
+  padding:
+    5px 10px;
+
+  color:
+    #23653a;
+
+  background:
+    #e7f3e9;
+
+  border:
+    1px solid
+    #c9dfcd;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    850;
+
+  letter-spacing:
+    0.04em;
+
+  text-transform:
+    uppercase;
+}
+
+.home-intro h1 {
+  margin:
+    0 0 11px;
+
+  color:
+    #174d29;
+
+  font-size:
+    clamp(
+      1.8rem,
+      4vw,
+      2.65rem
+    );
+
+  line-height:
+    1.12;
+}
+
+.home-intro-lead {
+  margin:
+    0 0 18px;
+
+  color:
+    #56635a;
+
+  font-size:
+    1rem;
+
+  line-height:
+    1.65;
+}
+
+.home-intro-actions {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    10px;
+}
+
+.home-primary-button,
+.home-secondary-button {
+  display:
+    inline-flex;
+
+  min-height:
+    44px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    10px 16px;
+
+  border-radius:
+    10px;
+
+  font-size:
+    0.9rem;
+
+  font-weight:
+    800;
+
+  text-decoration:
+    none;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.home-primary-button {
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #23733d,
+      #175a2d
+    );
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      30,
+      106,
+      53,
+      0.2
+    );
+}
+
+.home-secondary-button {
+  color:
+    #245333;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    #bcd2c0;
+}
+
+.home-primary-button:hover,
+.home-secondary-button:hover {
+  transform:
+    translateY(
+      -2px
+    );
+}
+
+.home-intro-points {
+  display:
+    grid;
+
+  gap:
+    9px;
+}
+
+.home-intro-point {
+  display:
+    grid;
+
+  grid-template-columns:
+    34px 1fr;
+
+  gap:
+    10px;
+
+  align-items:
+    center;
+
+  padding:
+    10px 12px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.9
+    );
+
+  border:
+    1px solid
+    #d9e6db;
+
+  border-radius:
+    11px;
+}
+
+.home-intro-point span {
+  display:
+    grid;
+
+  width:
+    32px;
+
+  height:
+    32px;
+
+  place-items:
+    center;
+
+  background:
+    #eaf5ec;
+
+  border-radius:
+    50%;
+}
+
+.home-intro-point strong {
+  color:
+    #214b2d;
+
+  font-size:
+    0.87rem;
+}
+
+/*
+  ==================================================
+  Homepage Section Headings
+  ==================================================
+*/
+
+.home-section {
+  padding:
+    25px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    #dce6dd;
+
+  border-radius:
+    17px;
+
+  box-shadow:
+    0 8px 23px
+    rgba(
+      32,
+      75,
+      42,
+      0.07
+    );
+}
+
+.home-section-heading {
+  max-width:
+    720px;
+
+  margin-bottom:
+    18px;
+}
+
+.home-section-heading h2 {
+  margin:
+    0 0 6px;
+
+  color:
+    #174d29;
+
+  font-size:
+    clamp(
+      1.35rem,
+      3vw,
+      1.8rem
+    );
+}
+
+.home-section-heading p {
+  margin:
+    0;
+
+  color:
+    #5c6960;
+
+  font-size:
+    0.93rem;
+
+  line-height:
+    1.55;
+}
+
+/*
+  ==================================================
+  Compact Pathway Tiles
+  ==================================================
+*/
+
+.home-pathway-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+}
+
+.home-pathway-card {
+  position:
+    relative;
+
+  display:
+    grid;
+
+  min-height:
+    145px;
+
+  grid-template-rows:
+    auto auto 1fr auto;
+
+  padding:
+    16px;
+
+  color:
+    inherit;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f7fbf7
+    );
+
+  border:
+    1px solid
+    #d5e3d7;
+
+  border-radius:
+    14px;
+
+  text-decoration:
+    none;
+
+  box-shadow:
+    0 5px 15px
+    rgba(
+      35,
+      74,
+      43,
+      0.06
+    );
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.home-pathway-card:hover,
+.home-pathway-card:focus-visible {
+  border-color:
+    #9fc5a6;
+
+  box-shadow:
+    0 10px 22px
+    rgba(
+      35,
+      74,
+      43,
+      0.11
+    );
+
+  transform:
+    translateY(
+      -3px
+    );
+}
+
+.home-pathway-icon {
+  display:
+    grid;
+
+  width:
+    40px;
+
+  height:
+    40px;
+
+  margin-bottom:
+    8px;
+
+  place-items:
+    center;
+
+  background:
+    #e8f3ea;
+
+  border-radius:
+    11px;
+
+  font-size:
+    1.35rem;
+}
+
+.home-pathway-card h3 {
+  margin:
+    0 0 5px;
+
+  color:
+    #194f2a;
+
+  font-size:
+    1rem;
+}
+
+.home-pathway-card p {
+  margin:
+    0 0 10px;
+
+  color:
+    #647067;
+
+  font-size:
+    0.82rem;
+
+  line-height:
+    1.45;
+}
+
+.home-pathway-link {
+  color:
+    #26703b;
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    850;
+}
+
+/*
+  ==================================================
   Featured Feed Crop Planner
   ==================================================
 */
@@ -43,7 +607,7 @@
     hidden;
 
   padding:
-    34px;
+    30px;
 
   color:
     #ffffff;
@@ -57,15 +621,15 @@
     );
 
   border-radius:
-    20px;
+    19px;
 
   box-shadow:
-    0 16px 36px
+    0 15px 34px
     rgba(
       23,
       63,
       37,
-      0.18
+      0.17
     );
 }
 
@@ -100,37 +664,6 @@
     50%;
 }
 
-.feed-crop-feature::after {
-  content:
-    "";
-
-  position:
-    absolute;
-
-  right:
-    170px;
-
-  bottom:
-    -135px;
-
-  width:
-    260px;
-
-  height:
-    260px;
-
-  background:
-    rgba(
-      255,
-      215,
-      110,
-      0.12
-    );
-
-  border-radius:
-    50%;
-}
-
 .feed-crop-feature-grid {
   position:
     relative;
@@ -147,12 +680,12 @@
       1.45fr
     )
     minmax(
-      240px,
-      0.7fr
+      235px,
+      0.65fr
     );
 
   gap:
-    28px;
+    25px;
 
   align-items:
     center;
@@ -169,10 +702,10 @@
     7px;
 
   margin-bottom:
-    12px;
+    10px;
 
   padding:
-    6px 11px;
+    5px 10px;
 
   color:
     #fff0bd;
@@ -198,7 +731,7 @@
     999px;
 
   font-size:
-    0.78rem;
+    0.74rem;
 
   font-weight:
     900;
@@ -212,16 +745,16 @@
 
 .feed-crop-feature h2 {
   margin:
-    0 0 12px;
+    0 0 10px;
 
   color:
     #ffffff;
 
   font-size:
     clamp(
-      1.75rem,
+      1.6rem,
       4vw,
-      2.5rem
+      2.25rem
     );
 
   line-height:
@@ -230,7 +763,7 @@
 
 .feed-crop-feature-lead {
   margin:
-    0 0 20px;
+    0 0 17px;
 
   color:
     rgba(
@@ -241,10 +774,10 @@
     );
 
   font-size:
-    1.02rem;
+    0.95rem;
 
   line-height:
-    1.7;
+    1.62;
 }
 
 .feed-crop-feature-actions {
@@ -255,7 +788,7 @@
     wrap;
 
   gap:
-    11px;
+    10px;
 }
 
 .feed-crop-feature-primary,
@@ -264,7 +797,7 @@
     inline-flex;
 
   min-height:
-    46px;
+    44px;
 
   align-items:
     center;
@@ -273,20 +806,19 @@
     center;
 
   padding:
-    10px 17px;
+    9px 15px;
 
   border-radius:
-    11px;
+    10px;
+
+  font-size:
+    0.86rem;
 
   font-weight:
     850;
 
   text-decoration:
     none;
-
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease;
 }
 
 .feed-crop-feature-primary {
@@ -295,15 +827,6 @@
 
   background:
     #ffe39a;
-
-  box-shadow:
-    0 8px 18px
-    rgba(
-      0,
-      0,
-      0,
-      0.15
-    );
 }
 
 .feed-crop-feature-secondary {
@@ -328,14 +851,6 @@
     );
 }
 
-.feed-crop-feature-primary:hover,
-.feed-crop-feature-secondary:hover {
-  transform:
-    translateY(
-      -2px
-    );
-}
-
 .feed-crop-feature-highlights {
   display:
     grid;
@@ -350,15 +865,27 @@
     );
 
   gap:
-    10px;
+    9px;
 }
 
 .feed-crop-feature-highlight {
   min-height:
-    105px;
+    85px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
 
   padding:
-    14px;
+    10px;
 
   color:
     #173f25;
@@ -371,29 +898,11 @@
       0.94
     );
 
-  border:
-    1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.5
-    );
-
   border-radius:
-    15px;
+    13px;
 
   text-align:
     center;
-
-  box-shadow:
-    0 8px 20px
-    rgba(
-      0,
-      0,
-      0,
-      0.1
-    );
 }
 
 .feed-crop-feature-highlight span {
@@ -401,30 +910,27 @@
     block;
 
   margin-bottom:
-    5px;
+    4px;
 
   font-size:
-    1.8rem;
+    1.55rem;
 }
 
 .feed-crop-feature-highlight strong {
-  display:
-    block;
-
   font-size:
-    0.86rem;
+    0.76rem;
 
   line-height:
-    1.3;
+    1.25;
 }
 
-.feed-crop-feature-proof {
-  position:
-    relative;
+/*
+  ==================================================
+  Popular Resources
+  ==================================================
+*/
 
-  z-index:
-    1;
-
+.home-popular-grid {
   display:
     grid;
 
@@ -438,76 +944,289 @@
     );
 
   gap:
+    12px;
+}
+
+.home-popular-card {
+  display:
+    grid;
+
+  min-height:
+    130px;
+
+  grid-template-columns:
+    42px minmax(
+      0,
+      1fr
+    );
+
+  gap:
+    11px;
+
+  align-content:
+    start;
+
+  padding:
+    15px;
+
+  color:
+    inherit;
+
+  background:
+    #f8fbf8;
+
+  border:
+    1px solid
+    #d8e5da;
+
+  border-radius:
+    13px;
+
+  text-decoration:
+    none;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.home-popular-card:hover,
+.home-popular-card:focus-visible {
+  border-color:
+    #a6c9ac;
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      35,
+      74,
+      43,
+      0.09
+    );
+
+  transform:
+    translateY(
+      -2px
+    );
+}
+
+.home-popular-icon {
+  display:
+    grid;
+
+  width:
+    40px;
+
+  height:
+    40px;
+
+  place-items:
+    center;
+
+  background:
+    #e5f1e7;
+
+  border-radius:
     10px;
 
-  margin-top:
-    24px;
+  font-size:
+    1.25rem;
+}
 
-  padding-top:
+.home-popular-card h3 {
+  margin:
+    1px 0 4px;
+
+  color:
+    #194f2a;
+
+  font-size:
+    0.94rem;
+}
+
+.home-popular-card p {
+  grid-column:
+    2;
+
+  margin:
+    0;
+
+  color:
+    #667168;
+
+  font-size:
+    0.79rem;
+
+  line-height:
+    1.4;
+}
+
+/*
+  ==================================================
+  Trust Strip
+  ==================================================
+*/
+
+.home-trust {
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      0,
+      1fr
+    )
+    auto;
+
+  gap:
     20px;
 
-  border-top:
-    1px solid
-    rgba(
-      255,
-      255,
-      255,
-      0.22
-    );
-}
-
-.feed-crop-feature-proof div {
-  text-align:
+  align-items:
     center;
-}
 
-.feed-crop-feature-proof strong {
-  display:
-    block;
+  padding:
+    22px 25px;
 
-  color:
-    #ffe39a;
-
-  font-size:
-    1.05rem;
-}
-
-.feed-crop-feature-proof span {
-  color:
-    rgba(
-      255,
-      255,
-      255,
-      0.82
+  background:
+    linear-gradient(
+      135deg,
+      #f3f8f3,
+      #ffffff
     );
 
-  font-size:
-    0.78rem;
+  border:
+    1px solid
+    #d4e2d6;
+
+  border-left:
+    6px solid
+    #2f7444;
+
+  border-radius:
+    15px;
 }
+
+.home-trust h2 {
+  margin:
+    0 0 6px;
+
+  color:
+    #194f2a;
+
+  font-size:
+    1.2rem;
+}
+
+.home-trust p {
+  margin:
+    0;
+
+  color:
+    #5f6b62;
+
+  font-size:
+    0.88rem;
+
+  line-height:
+    1.55;
+}
+
+.home-trust a {
+  display:
+    inline-flex;
+
+  min-height:
+    42px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    9px 15px;
+
+  color:
+    #ffffff;
+
+  background:
+    #2f7444;
+
+  border-radius:
+    9px;
+
+  font-size:
+    0.85rem;
+
+  font-weight:
+    800;
+
+  text-decoration:
+    none;
+
+  white-space:
+    nowrap;
+}
+
+/*
+  ==================================================
+  Responsive Homepage
+  ==================================================
+*/
 
 @media
 (max-width: 760px) {
 
-  .feed-crop-feature {
-    padding:
-      25px 20px;
-  }
-
+  .home-intro,
   .feed-crop-feature-grid {
     grid-template-columns:
       1fr;
   }
 
-  .feed-crop-feature-highlights {
-    max-width:
-      460px;
+  .home-pathway-grid,
+  .home-popular-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+  .home-trust {
+    grid-template-columns:
+      1fr;
+  }
+
+  .home-trust a {
+    width:
+      fit-content;
   }
 
 }
 
 @media
-(max-width: 480px) {
+(max-width: 520px) {
 
+  .home-intro,
+  .home-section,
+  .feed-crop-feature {
+    padding:
+      20px;
+  }
+
+  .home-pathway-grid,
+  .home-popular-grid,
+  .feed-crop-feature-highlights {
+    grid-template-columns:
+      1fr;
+  }
+
+  .home-intro-actions,
   .feed-crop-feature-actions {
     align-items:
       stretch;
@@ -516,16 +1235,17 @@
       column;
   }
 
+  .home-primary-button,
+  .home-secondary-button,
   .feed-crop-feature-primary,
   .feed-crop-feature-secondary {
     width:
       100%;
   }
 
-  .feed-crop-feature-highlights,
-  .feed-crop-feature-proof {
-    grid-template-columns:
-      1fr;
+  .home-trust a {
+    width:
+      100%;
   }
 
 }
@@ -558,16 +1278,251 @@ Free calculators, chick care guides, breed comparisons, supply recommendations, 
 <div style="max-width:900px; margin:40px auto;">
 <div class="content">
 
-<div class="banner">
-<h1>Plan, Raise, and Care for Backyard Chickens With Confidence</h1>
-<p>
-Whether you are buying baby chicks, choosing breeds, planning a coop, estimating costs, or trying to solve a chicken care problem, Backyard Chicken Planner helps you make better decisions before problems get expensive.
+<div class="home-shell">
+
+<!-- COMPACT INTRO -->
+
+<section class="home-intro">
+
+<div class="home-intro-content">
+
+<span class="home-intro-kicker">
+🐔 Practical Backyard Chicken Planning
+</span>
+
+<h1>
+Plan, Raise, and Care for Chickens With Confidence
+</h1>
+
+<p class="home-intro-lead">
+Use free planners, calculators, care guides, breed comparisons, crop recommendations, and equipment resources to build a healthier and more practical backyard flock.
 </p>
+
+<div class="home-intro-actions">
+
+<a
+  class="home-primary-button"
+  href="backyard-chicken-flock-planner.html"
+>
+🐔 Start With the Flock Planner
+</a>
+
+<a
+  class="home-secondary-button"
+  href="tools.html"
+>
+🧰 Explore All Tools
+</a>
+
 </div>
 
-<div class="section">
+</div>
 
-<div class="feed-crop-feature">
+<div class="home-intro-points">
+
+<div class="home-intro-point">
+
+<span aria-hidden="true">
+✓
+</span>
+
+<strong>
+Free planning tools and calculators
+</strong>
+
+</div>
+
+<div class="home-intro-point">
+
+<span aria-hidden="true">
+✓
+</span>
+
+<strong>
+Beginner-friendly care guidance
+</strong>
+
+</div>
+
+<div class="home-intro-point">
+
+<span aria-hidden="true">
+✓
+</span>
+
+<strong>
+Practical recommendations for real backyards
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAIN PATHWAYS -->
+
+<section class="home-section">
+
+<div class="home-section-heading">
+
+<h2>
+What Do You Need Help With?
+</h2>
+
+<p>
+Choose the area that best matches where you are in your chicken-keeping journey.
+</p>
+
+</div>
+
+<div class="home-pathway-grid">
+
+<a
+  class="home-pathway-card"
+  href="baby-chicks.html"
+>
+
+<span class="home-pathway-icon">
+🐥
+</span>
+
+<h3>
+Raise Baby Chicks
+</h3>
+
+<p>
+Brooder setup, temperatures, feeding, health, and moving chicks outside.
+</p>
+
+<span class="home-pathway-link">
+Open Chick Care Hub →
+</span>
+
+</a>
+
+<a
+  class="home-pathway-card"
+  href="tools.html"
+>
+
+<span class="home-pathway-icon">
+🧮
+</span>
+
+<h3>
+Plan Costs and Space
+</h3>
+
+<p>
+Estimate feed use, flock size, egg income, coop space, and startup costs.
+</p>
+
+<span class="home-pathway-link">
+Browse Planning Tools →
+</span>
+
+</a>
+
+<a
+  class="home-pathway-card"
+  href="chicken-breeds.html"
+>
+
+<span class="home-pathway-icon">
+🐔
+</span>
+
+<h3>
+Choose Chicken Breeds
+</h3>
+
+<p>
+Compare breeds for eggs, beginners, climate, temperament, and flock goals.
+</p>
+
+<span class="home-pathway-link">
+Explore Breed Guides →
+</span>
+
+</a>
+
+<a
+  class="home-pathway-card"
+  href="chicken-feed-crops.html"
+>
+
+<span class="home-pathway-icon">
+🌾
+</span>
+
+<h3>
+Grow Supplemental Feed
+</h3>
+
+<p>
+Explore grains, greens, forage, storage crops, and perennial plants.
+</p>
+
+<span class="home-pathway-link">
+Explore Feed Crops →
+</span>
+
+</a>
+
+<a
+  class="home-pathway-card"
+  href="chicken-coop-size-guide.html"
+>
+
+<span class="home-pathway-icon">
+🏠
+</span>
+
+<h3>
+Plan a Coop
+</h3>
+
+<p>
+Estimate coop size, run space, nesting boxes, roosting space, and costs.
+</p>
+
+<span class="home-pathway-link">
+Open Coop Guide →
+</span>
+
+</a>
+
+<a
+  class="home-pathway-card"
+  href="chicken-supplies.html"
+>
+
+<span class="home-pathway-icon">
+🛒
+</span>
+
+<h3>
+Choose Equipment
+</h3>
+
+<p>
+Compare feeders, waterers, coops, nesting boxes, doors, and protection.
+</p>
+
+<span class="home-pathway-link">
+Browse Supplies →
+</span>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FEATURED FEED CROP PLANNER -->
+
+<section class="feed-crop-feature">
 
 <div class="feed-crop-feature-grid">
 
@@ -578,11 +1533,11 @@ Whether you are buying baby chicks, choosing breeds, planning a coop, estimating
 </span>
 
 <h2>
-Find the Best Feed Crops for Your Flock and Property
+Find Feed Crops That Fit Your Flock and Property
 </h2>
 
 <p class="feed-crop-feature-lead">
-Answer questions about your chickens, climate, growing space, sunlight, soil, water, available time, equipment, harvest preferences, and goals. The Feed Crop Planner compares your answers with every production-ready crop in our research database and builds a personalized recommendation report.
+Answer questions about your chickens, climate, growing space, sunlight, soil, water, labor, equipment, harvest preferences, and goals. The planner compares your answers with every production-ready crop in the research database.
 </p>
 
 <div class="feed-crop-feature-actions">
@@ -598,17 +1553,14 @@ Answer questions about your chickens, climate, growing space, sunlight, soil, wa
   class="feed-crop-feature-secondary"
   href="chicken-feed-crops.html"
 >
-Explore the Feed Crop Library
+Browse the Crop Library
 </a>
 
 </div>
 
 </div>
 
-<div
-  class="feed-crop-feature-highlights"
-  aria-label="Feed Crop Planner features"
->
+<div class="feed-crop-feature-highlights">
 
 <div class="feed-crop-feature-highlight">
 
@@ -662,350 +1614,189 @@ Creates a Custom Report
 
 </div>
 
-<div class="feed-crop-feature-proof">
+</section>
 
-<div>
+<!-- POPULAR RESOURCES -->
 
-<strong>
-10 Crops
-</strong>
+<section class="home-section">
 
-<span>
-Production-ready research profiles
+<div class="home-section-heading">
+
+<h2>
+⭐ Most Useful Places to Start
+</h2>
+
+<p>
+These tools and guides cover the most common questions backyard chicken keepers face.
+</p>
+
+</div>
+
+<div class="home-popular-grid">
+
+<a
+  class="home-popular-card"
+  href="backyard-chicken-flock-planner.html"
+>
+
+<span class="home-popular-icon">
+🐔
 </span>
 
-</div>
-
 <div>
-
-<strong>
-7 Planning Areas
-</strong>
-
-<span>
-From climate to storage
-</span>
-
-</div>
-
-<div>
-
-<strong>
-Personalized Results
-</strong>
-
-<span>
-Top match and strong alternatives
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
-<h2 class="section-title">🐣 Start Here: Choose Your Chicken-Keeping Path</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🐥 Raising Baby Chicks</h3>
-<p>Start with brooder setup, chick temperatures, feeding, health checks, and when chicks can move outside.</p>
-<a href="baby-chicks.html">Start Baby Chick Guide →</a>
-</div>
-
-<div class="card">
-<h3>① Plan Your Flock Size</h3>
-<p>Estimate how many hens you need based on weekly egg needs, winter slowdown, feed costs, and coop space.</p>
-<a href="backyard-chicken-flock-planner.html">Open Flock Planner →</a>
-</div>
-
-<div class="card">
-<h3>② Choose Chicken Breeds</h3>
-<p>Compare breeds for eggs, beginners, cold weather, hot weather, and dual-purpose flocks.</p>
-<a href="chicken-breeds.html">Browse Breed Guides →</a>
-</div>
-
-<div class="card">
-<h3>③ Estimate Feed Costs</h3>
-<p>Calculate monthly feed use, annual feed cost, cost per chicken, and next steps for your flock.</p>
-<a href="chicken-feed-cost-calculator.html">Use Feed Calculator →</a>
-</div>
-
-<div class="card">
 
 <h3>
-🌱 Grow Supplemental Feed
+Backyard Flock Planner
 </h3>
 
 <p>
-Use the personalized planner to find crops that fit your flock and property, or browse the full feed-crop learning library.
+Estimate flock size, egg needs, feed use, and coop space.
 </p>
 
-<a href="feed-crop-planner.html">
-Use Feed Crop Planner →
+</div>
+
 </a>
 
-<br><br>
+<a
+  class="home-popular-card"
+  href="chicken-feed-cost-calculator.html"
+>
 
-<a href="chicken-feed-crops.html">
-Browse Feed Crop Library →
-</a>
+<span class="home-popular-icon">
+🥣
+</span>
 
-</div>
-
-<div class="card">
-<h3>④ Estimate Coop Costs</h3>
-<p>Compare DIY, prefab, walk-in, fencing, equipment, and startup cost estimates.</p>
-<a href="chicken-coop-estimator.html">Estimate Coop Cost →</a>
-</div>
-
-<div class="card">
-<h3>⑤ Choose Supplies</h3>
-<p>Compare feeders, waterers, coops, nesting boxes, automatic doors, and predator protection.</p>
-<a href="chicken-supplies.html">Browse Supplies →</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2 class="section-title">🐥 Baby Chick Care Guides</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🐥 Baby Chick Care Hub</h3>
-<p>A complete starting point for first-time chick owners.</p>
-<a href="baby-chicks.html">Open Hub →</a>
-</div>
-
-<div class="card">
-<h3>🌡 Baby Chick Temperature Chart</h3>
-<p>Week-by-week brooder temperatures and behavior signs.</p>
-<a href="baby-chick-temperature-chart.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>🏠 Brooder Setup Guide</h3>
-<p>Set up a safe brooder with heat, bedding, feed, water, and space.</p>
-<a href="baby-chick-brooder-setup.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>🔥 Heat Lamp vs Brooder Plate</h3>
-<p>Compare chick heating options, safety, cost, and beginner-friendliness.</p>
-<a href="heat-lamp-vs-brooder-plate.html">Read Guide →</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2 class="section-title">🩺 Chick Health & Problem Solving</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🩺 Baby Chick Health Guide</h3>
-<p>Learn warning signs, common chick problems, prevention, and when to get help.</p>
-<a href="chick-health.html">Open Health Guide →</a>
-</div>
-
-<div class="card">
-<h3>🚽 Pasty Butt in Baby Chicks</h3>
-<p>Learn how to spot, clean, and help prevent pasted vent.</p>
-<a href="pasty-butt-in-baby-chicks.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>🐥 Why Is My Baby Chick Weak?</h3>
-<p>Troubleshoot weak, sleepy, cold, isolated, injured, or struggling chicks.</p>
-<a href="why-is-my-baby-chick-weak.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>🎒 Baby Chick First Aid Kit</h3>
-<p>Build a simple chick care kit before problems happen.</p>
-<a href="baby-chick-first-aid-kit.html">Read Guide →</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2 class="section-title">🧮 Featured Chicken Calculators</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🌾 Chicken Feed Cost Calculator</h3>
-<p>Estimate monthly feed usage, annual feed cost, bags needed, and cost per chicken.</p>
-<a href="chicken-feed-cost-calculator.html">Open Calculator →</a>
-</div>
-
-<div class="card">
-<h3>🥚 Egg Profit Calculator</h3>
-<p>Estimate egg production, egg income, monthly costs, and possible backyard egg profit.</p>
-<a href="egg-profit-calculator.html">Open Calculator →</a>
-</div>
-
-<div class="card">
-<h3>🏠 Coop Cost Estimator</h3>
-<p>Estimate startup costs for coops, fencing, equipment, coop space, run space, and nesting boxes.</p>
-<a href="chicken-coop-estimator.html">Open Calculator →</a>
-</div>
-
-<div class="card">
-<h3>🐥 Backyard Flock Planner</h3>
-<p>Plan flock size, egg needs, feed use, coop space, and personalized next steps.</p>
-<a href="backyard-chicken-flock-planner.html">Open Planner →</a>
-</div>
-
-<div class="card">
+<div>
 
 <h3>
-🌾 Feed Crop Planner
+Feed Cost Calculator
 </h3>
 
 <p>
-Compare supplemental feed crops using your flock size, climate, space, soil, water, labor, equipment, storage, and goals.
+Estimate monthly feed use, bags needed, and annual cost.
 </p>
 
-<a href="feed-crop-planner.html">
-Build My Crop Plan →
+</div>
+
+</a>
+
+<a
+  class="home-popular-card"
+  href="feed-crop-planner.html"
+>
+
+<span class="home-popular-icon">
+🧭
+</span>
+
+<div>
+
+<h3>
+Feed Crop Planner
+</h3>
+
+<p>
+Find supplemental crops suited to your property and goals.
+</p>
+
+</div>
+
+</a>
+
+<a
+  class="home-popular-card"
+  href="baby-chicks.html"
+>
+
+<span class="home-popular-icon">
+🐥
+</span>
+
+<div>
+
+<h3>
+Baby Chick Care Hub
+</h3>
+
+<p>
+Start with brooder setup, feeding, temperatures, and health.
+</p>
+
+</div>
+
+</a>
+
+<a
+  class="home-popular-card"
+  href="chicken-breeds.html"
+>
+
+<span class="home-popular-icon">
+🥚
+</span>
+
+<div>
+
+<h3>
+Chicken Breed Hub
+</h3>
+
+<p>
+Compare breeds for eggs, beginners, weather, and temperament.
+</p>
+
+</div>
+
+</a>
+
+<a
+  class="home-popular-card"
+  href="chicken-predator-identification-guide.html"
+>
+
+<span class="home-popular-icon">
+🦊
+</span>
+
+<div>
+
+<h3>
+Predator Identification Guide
+</h3>
+
+<p>
+Use attack clues to determine what may have targeted your flock.
+</p>
+
+</div>
+
 </a>
 
 </div>
 
-</div>
-</div>
+</section>
 
-<div class="section">
-<h2 class="section-title">🐔 Popular Chicken Breed Guides</h2>
+<!-- TRUST -->
 
-<div class="cards">
+<section class="home-trust">
 
-<div class="card">
-<h3>🥚 Best Chicken Breeds for Eggs</h3>
-<p>Compare dependable egg-laying breeds for backyard flocks.</p>
-<a href="best-chicken-breeds-for-eggs.html">Read Guide →</a>
-</div>
+<div>
 
-<div class="card">
-<h3>🐥 Best Chickens for Beginners</h3>
-<p>Find calm, friendly, low-maintenance breeds for first-time chicken keepers.</p>
-<a href="best-chickens-for-beginners.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>❄️ Cold Weather Chickens</h3>
-<p>Choose breeds that handle freezing temperatures and winter conditions better.</p>
-<a href="best-chickens-for-cold-weather.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>☀️ Hot Weather Chickens</h3>
-<p>Compare chicken breeds that tolerate southern heat and humidity.</p>
-<a href="best-chickens-for-hot-weather.html">Read Guide →</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2 class="section-title">🛒 Equipment & Supplies Guides</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🥣 Best Chicken Feeders</h3>
-<p>Compare feeder types, reduce feed waste, and choose the right setup for your flock.</p>
-<a href="best-chicken-feeders.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>💧 Best Chicken Waterers</h3>
-<p>Compare gravity waterers, bucket systems, nipple waterers, and winter options.</p>
-<a href="best-chicken-waterers.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>🏠 Best Chicken Coops</h3>
-<p>Compare prefab, DIY, walk-in, shed-style, and chicken tractor coop options.</p>
-<a href="best-chicken-coops.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>🦊 Predator Protection</h3>
-<p>Learn how to protect chickens from raccoons, foxes, coyotes, hawks, snakes, and dogs.</p>
-<a href="best-chicken-predator-protection.html">Read Guide →</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2 class="section-title">🦊 Predator Protection & Emergency Guides</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🔍 What Attacked My Chickens?</h3>
-<p>Use clues like missing birds, scattered feathers, damaged fencing, missing eggs, and attack timing.</p>
-<a href="chicken-predator-identification-guide.html">Use Predator ID Guide →</a>
-</div>
-
-<div class="card">
-<h3>🦊 Protect Your Flock</h3>
-<p>Learn how hardware cloth, electric netting, automatic doors, cameras, and secure latches help protect chickens.</p>
-<a href="best-chicken-predator-protection.html">View Protection Guide →</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2>Why Use Backyard Chicken Planner?</h2>
+<h2>
+Why Backyard Chicken Planner?
+</h2>
 
 <p>
-Backyard Chicken Planner was created to make raising chickens easier, less confusing, and more affordable. Instead of guessing how many chickens to get, how much feed will cost, how large your coop should be, what supplies matter, or how to care for baby chicks, you can use our calculators and guides to build a more realistic plan.
-</p>
-
-<p>
-Our goal is to help beginners avoid expensive mistakes while giving experienced chicken keepers practical tools for improving their setup.
+Backyard Chicken Planner combines practical guides with interactive tools that help chicken keepers make better decisions before problems become expensive. The site is built to make planning clearer, reduce guesswork, and give beginners a dependable place to start.
 </p>
 
 </div>
 
-<div class="section">
-<h2 class="section-title">Continue Planning</h2>
+<a href="tools.html">
+Explore All Resources →
+</a>
 
-<div class="cards">
-
-<div class="card">
-<h3>🧰 All Tools</h3>
-<p>Browse every calculator, planning tool, and guide currently available.</p>
-<a href="tools.html">View Tools →</a>
-</div>
-
-<div class="card">
-<h3>📏 Coop Size Guide</h3>
-<p>Learn indoor coop space, run space, nesting box, and roosting recommendations.</p>
-<a href="chicken-coop-size-guide.html">Read Guide →</a>
-</div>
-
-<div class="card">
-<h3>📖 About This Site</h3>
-<p>Learn more about Backyard Chicken Planner and why this resource was created.</p>
-<a href="about.html">About Backyard Chicken Planner →</a>
-</div>
-
-</div>
-</div>
+</section>
 
 </div>
 
