@@ -792,48 +792,53 @@
   */
 
   function registerCropDatabase() {
-    if (
-      typeof global.BCP_FEED_CROPS ===
+  if (
+    typeof BCP_FEED_CROPS ===
       "undefined" ||
-      !Array.isArray(
-        global.BCP_FEED_CROPS
-      )
-    ) {
-      return {
-        registered:
-          false,
+    !Array.isArray(
+      BCP_FEED_CROPS
+    )
+  ) {
+    return {
+      registered:
+        false,
 
-        reason:
-          "crop-collection-unavailable"
-      };
-    }
-
-    try {
-      dataAdapter.registerCropCollection(
-        global.BCP_FEED_CROPS
-      );
-
-      return {
-        registered:
-          dataAdapter
-            .getAllUniqueCrops()
-            .length > 0,
-
-        reason:
-          null
-      };
-    } catch (error) {
-      return {
-        registered:
-          false,
-
-        reason:
-          "crop-registration-failed",
-
-        error
-      };
-    }
+      reason:
+        "crop-collection-unavailable"
+    };
   }
+
+  try {
+    dataAdapter.registerCropCollection(
+      BCP_FEED_CROPS
+    );
+
+    return {
+      registered:
+        dataAdapter
+          .getAllUniqueCrops()
+          .length > 0,
+
+      reason:
+        null
+    };
+  } catch (error) {
+    console.error(
+      "Feed Crop Planner crop registration failed:",
+      error
+    );
+
+    return {
+      registered:
+        false,
+
+      reason:
+        "crop-registration-failed",
+
+      error
+    };
+  }
+}
 
   /*
     ==================================================
