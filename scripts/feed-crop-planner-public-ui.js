@@ -193,6 +193,72 @@
     );
   }
 
+  /*
+  Determine whether changing an answer can alter the
+  currently rendered collection of questions.
+
+  A full section render is required when the answer:
+  - controls another question's visibility
+  - supplies options to a ranking question
+*/
+
+function answerChangeAffectsQuestionStructure(
+  answerPath
+) {
+  if (
+    typeof answerPath !== "string" ||
+    answerPath.trim() === ""
+  ) {
+    return false;
+  }
+
+  return stateManager
+    .getAllQuestions()
+    .some(candidateQuestion => {
+      const visibilityDependsOnAnswer =
+        candidateQuestion.visibility &&
+        candidateQuestion.visibility
+          .answerPath ===
+          answerPath;
+
+      const rankingDependsOnAnswer =
+        candidateQuestion
+          .sourceAnswerPath ===
+        answerPath;
+
+      return (
+        visibilityDependsOnAnswer ||
+        rankingDependsOnAnswer
+      );
+    });
+}
+
+/*
+  Refresh the progress display without rebuilding
+  the questionnaire section and its form controls.
+*/
+
+function refreshProgressDisplay() {
+  const section =
+    getCurrentSection();
+
+  if (
+    !section ||
+    !elements.progress
+  ) {
+    return;
+  }
+
+  renderer.renderProgressInto(
+    elements.progress,
+    questionnaireState,
+    {
+      currentSectionId:
+        section.id
+    }
+  );
+}
+
   function getPreviousSection(
     sectionId
   ) {
@@ -738,120 +804,163 @@
   }
 
   function handleQuestionnaireChange(
-    event
-  ) {
-    const input =
-      event.target.closest(
-        '[data-answer-input="true"]'
-      );
-
-    if (!input) {
-      return;
-    }
-
-    const questionElement =
-      input.closest(
-        "[data-question-id]"
-      );
-
-    if (!questionElement) {
-      return;
-    }
-
-    const questionId =
-      questionElement.dataset.questionId;
-
-    const question =
-      stateManager.getQuestion(
-        questionId
-      );
-
-    if (!question) {
-      setStatusMessage(
-        "The changed questionnaire field could not be identified.",
-        "error"
-      );
-
-      return;
-    }
-
-    let value =
-      renderer.readQuestionValue(
-        question,
-        questionElement
-      );
-
-    if (
-      question.type ===
-      questionnaire.questionTypes.RANKING
-    ) {
-      value =
-        normalizeRankingSelection(
-          question,
-          value,
-          input
-        );
-    }
-
-    updateQuestionAnswer(
-      question,
-      value
+  event
+) {
+  const input =
+    event.target.closest(
+      '[data-answer-input="true"]'
     );
+
+  if (!input) {
+    return;
   }
+
+  const questionElement =
+    input.closest(
+      "[data-question-id]"
+    );
+
+  if (!questionElement) {
+    return;
+  }
+
+  const questionId =
+    questionElement.dataset
+      .questionId;
+
+  const question =
+    stateManager.getQuestion(
+      questionId
+    );
+
+  if (!question) {
+    setStatusMessage(
+      "The changed questionnaire field could not be identified.",
+      "error"
+    );
+
+    return;
+  }
+
+  let value =
+    renderer.readQuestionValue(
+      question,
+      questionElement
+    );
+
+  if (
+    question.type ===
+    questionnaire.questionTypes
+      .RANKING
+  ) {
+    value =
+      normalizeRankingSelection(
+        question,
+        value,
+        input
+      );
+  }
+
+  updateQuestionAnswer(
+    question,
+    value,
+    {
+      input,
+      questionElement
+    }
+  );
+}
 
   function updateQuestionAnswer(
-    question,
-    value
-  ) {
-    const section =
-      getSectionForQuestion(
-        question.id
-      );
+  question,
+  value,
+  options = {}
+) {
+  const section =
+    getSectionForQuestion(
+      question.id
+    );
 
+  questionnaireState =
+    stateManager.updateAnswer(
+      questionnaireState,
+      question.answerPath,
+      value,
+      {
+        save:
+          false
+      }
+    );
+
+  if (section) {
     questionnaireState =
-      stateManager.updateAnswer(
+      invalidateCompletedSectionsFrom(
         questionnaireState,
-        question.answerPath,
-        value,
-        {
-          save:
-            false
-        }
+        section.id
       );
+  }
 
-    if (section) {
-      questionnaireState =
-        invalidateCompletedSectionsFrom(
-          questionnaireState,
-          section.id
-        );
-    }
+  const saveResult =
+    stateManager.saveState(
+      questionnaireState
+    );
 
-    const saveResult =
-      stateManager.saveState(
-        questionnaireState
-      );
+  questionnaireState =
+    saveResult.state;
 
-    questionnaireState =
-      saveResult.state;
+  currentErrors =
+    currentErrors.filter(
+      error =>
+        error.questionId !==
+          question.id &&
+        error.answerPath !==
+          question.answerPath
+    );
 
-    currentErrors =
-      currentErrors.filter(
-        error =>
-          error.questionId !==
-            question.id &&
-          error.answerPath !==
-            question.answerPath
-      );
+  clearStatusMessage();
 
-    clearStatusMessage();
+  /*
+    A full render is necessary only when the changed
+    answer can show, hide, or repopulate questions.
 
+    Ranking questions also receive a full render so
+    duplicate goal selections can be normalized safely.
+  */
+
+  const requiresFullSectionRender =
+    answerChangeAffectsQuestionStructure(
+      question.answerPath
+    ) ||
+    question.type ===
+      questionnaire.questionTypes
+        .RANKING;
+
+  if (requiresFullSectionRender) {
     renderQuestionnaireMode();
 
-    renderer.refreshChoiceCardStates(
-      elements.questionnaire
+    return;
+  }
+
+  /*
+    Ordinary answers remain in the existing DOM.
+    This prevents the visible flicker caused by
+    destroying and recreating the entire section.
+  */
+
+  if (options.input) {
+    clearQuestionErrorByElement(
+      options.input
     );
   }
+
+  if (options.questionElement) {
+    renderer.refreshChoiceCardStates(
+      options.questionElement
+    );
+  }
+
+  refreshProgressDisplay();
+}
 
   function clearQuestionErrorByElement(
     input
