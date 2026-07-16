@@ -1327,3 +1327,314 @@ nav a:hover{
   }
 
 }
+
+/*
+  ==================================================
+  Shared Card-Style Navigation
+  ==================================================
+*/
+
+#navigation {
+  padding:
+    14px 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #184a2a,
+      #2f7444
+    );
+
+  border-top:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+
+  border-bottom:
+    1px solid
+    rgba(
+      0,
+      0,
+      0,
+      0.14
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(
+      24,
+      74,
+      42,
+      0.14
+    );
+}
+
+#navigation nav {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    10px;
+
+  align-items:
+    stretch;
+
+  justify-content:
+    center;
+
+  width:
+    min(
+      1180px,
+      100%
+    );
+
+  margin:
+    0 auto;
+}
+
+#navigation nav a {
+  display:
+    inline-flex;
+
+  min-height:
+    48px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    10px 15px;
+
+  color:
+    #21432a;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.95
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.72
+    );
+
+  border-radius:
+    11px;
+
+  box-shadow:
+    0 5px 13px
+    rgba(
+      0,
+      0,
+      0,
+      0.12
+    );
+
+  font-size:
+    0.9rem;
+
+  font-weight:
+    800;
+
+  line-height:
+    1.2;
+
+  text-align:
+    center;
+
+  text-decoration:
+    none;
+
+  white-space:
+    nowrap;
+
+  transition:
+    color 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+#navigation nav a:hover,
+#navigation nav a:focus-visible {
+  color:
+    #173f25;
+
+  background:
+    #f4faf4;
+
+  border-color:
+    #c9ddcc;
+
+  box-shadow:
+    0 9px 20px
+    rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+
+  transform:
+    translateY(
+      -2px
+    );
+}
+
+#navigation nav a:focus-visible {
+  outline:
+    3px solid
+    rgba(
+      255,
+      224,
+      139,
+      0.75
+    );
+
+  outline-offset:
+    3px;
+}
+
+/*
+  Featured planner button
+*/
+
+#navigation nav a.nav-featured {
+  color:
+    #5d4007;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff4cf,
+      #ffe29a
+    );
+
+  border-color:
+    #f0ca65;
+
+  box-shadow:
+    0 6px 15px
+    rgba(
+      112,
+      74,
+      5,
+      0.2
+    );
+}
+
+#navigation nav a.nav-featured:hover,
+#navigation nav a.nav-featured:focus-visible {
+  color:
+    #4d3303;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff8df,
+      #ffd978
+    );
+
+  border-color:
+    #dba93a;
+}
+
+/*
+  Tablet
+*/
+
+@media
+(max-width: 900px) {
+
+  #navigation nav a {
+    flex:
+      1 1 135px;
+
+    max-width:
+      190px;
+
+    white-space:
+      normal;
+  }
+
+}
+
+/*
+  Mobile
+*/
+
+@media
+(max-width: 560px) {
+
+  #navigation {
+    padding:
+      12px;
+  }
+
+  #navigation nav {
+    display:
+      grid;
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+
+    gap:
+      8px;
+  }
+
+  #navigation nav a {
+    width:
+      100%;
+
+    max-width:
+      none;
+
+    min-height:
+      46px;
+
+    padding:
+      9px 8px;
+
+    font-size:
+      0.82rem;
+  }
+
+}
+
+/*
+  Very small screens
+*/
+
+@media
+(max-width: 340px) {
+
+  #navigation nav {
+    grid-template-columns:
+      1fr;
+  }
+
+}
