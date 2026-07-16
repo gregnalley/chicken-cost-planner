@@ -1,0 +1,3013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feed Crop Planner for Backyard Chickens | Find Crops That Fit Your Flock</title>
+
+<meta
+  name="description"
+  content="Use the free Backyard Chicken Feed Crop Planner to find grains, greens, forage crops, storage crops, and perennial plants suited to your flock, climate, space, soil, water, time, and harvest goals."
+>
+
+<meta
+  name="robots"
+  content="index,follow,max-image-preview:large"
+>
+
+<link
+  rel="canonical"
+  href="https://gregnalley.github.io/chicken-cost-planner/feed-crop-planner.html"
+>
+
+<meta
+  property="og:title"
+  content="Feed Crop Planner for Backyard Chickens"
+>
+
+<meta
+  property="og:description"
+  content="Answer a few questions about your flock and growing conditions to find supplemental feed crops that fit your property and goals."
+>
+
+<meta
+  property="og:type"
+  content="website"
+>
+
+<meta
+  property="og:url"
+  content="https://gregnalley.github.io/chicken-cost-planner/feed-crop-planner.html"
+>
+
+<meta
+  property="og:image"
+  content="https://gregnalley.github.io/chicken-cost-planner/assets/images/hero-chickens.jpg"
+>
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<link
+  rel="stylesheet"
+  href="assets/css/bcp-style.css"
+>
+
+<!-- Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-88486JDN1Z"
+></script>
+
+<script>
+window.dataLayer =
+  window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag(
+  "js",
+  new Date()
+);
+
+gtag(
+  "config",
+  "G-88486JDN1Z"
+);
+</script>
+
+<style>
+
+/*
+  ==================================================
+  Feed Crop Planner Page
+  ==================================================
+*/
+
+:root {
+  --feed-green-dark:
+    #174a2a;
+
+  --feed-green:
+    #2f7444;
+
+  --feed-green-medium:
+    #4f9461;
+
+  --feed-green-light:
+    #eaf5eb;
+
+  --feed-green-pale:
+    #f5faf5;
+
+  --feed-gold:
+    #d69b2d;
+
+  --feed-gold-dark:
+    #a96e0f;
+
+  --feed-gold-light:
+    #fff3d6;
+
+  --feed-soil:
+    #765338;
+
+  --feed-soil-light:
+    #f3ece5;
+
+  --feed-sky:
+    #e9f5fb;
+
+  --feed-red:
+    #a74242;
+
+  --feed-red-light:
+    #fff0f0;
+
+  --feed-border:
+    #d4e2d6;
+
+  --feed-text:
+    #26342a;
+
+  --feed-muted:
+    #5b685f;
+
+  --feed-white:
+    #ffffff;
+
+  --feed-shadow:
+    0 12px 30px
+    rgba(31, 72, 43, 0.1);
+
+  --feed-shadow-strong:
+    0 18px 44px
+    rgba(23, 74, 42, 0.16);
+}
+
+.feed-crop-page-shell {
+  width:
+    min(
+      calc(100% - 28px),
+      1040px
+    );
+
+  margin:
+    40px auto;
+}
+
+.feed-crop-page-content {
+  overflow:
+    hidden;
+
+  background:
+    var(--feed-white);
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    22px;
+
+  box-shadow:
+    var(--feed-shadow);
+}
+
+/*
+  ==================================================
+  Hero
+  ==================================================
+*/
+
+.feed-crop-hero {
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  padding:
+    48px 44px 42px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #173f25 0%,
+      #2d7141 58%,
+      #4b8f58 100%
+    );
+}
+
+.feed-crop-hero::before {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    -110px;
+
+  right:
+    -80px;
+
+  width:
+    280px;
+
+  height:
+    280px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-hero::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  right:
+    50px;
+
+  bottom:
+    -115px;
+
+  width:
+    260px;
+
+  height:
+    260px;
+
+  background:
+    rgba(
+      255,
+      219,
+      131,
+      0.12
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-hero-grid {
+  position:
+    relative;
+
+  z-index:
+    1;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      0,
+      1.5fr
+    )
+    minmax(
+      260px,
+      0.7fr
+    );
+
+  gap:
+    34px;
+
+  align-items:
+    center;
+}
+
+.feed-crop-hero-kicker {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  margin-bottom:
+    14px;
+
+  padding:
+    7px 12px;
+
+  color:
+    #fff4ce;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.2
+    );
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.86rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.03em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-hero h1 {
+  max-width:
+    700px;
+
+  margin:
+    0 0 16px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    clamp(
+      2rem,
+      5vw,
+      3.3rem
+    );
+
+  line-height:
+    1.08;
+}
+
+.feed-crop-hero-lead {
+  max-width:
+    720px;
+
+  margin:
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  font-size:
+    1.08rem;
+
+  line-height:
+    1.7;
+}
+
+.feed-crop-hero-art {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+}
+
+.feed-crop-hero-art-card {
+  display:
+    flex;
+
+  min-height:
+    108px;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    15px;
+
+  color:
+    #173f25;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.5
+    );
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(
+      0,
+      0,
+      0,
+      0.1
+    );
+
+  text-align:
+    center;
+
+  transform:
+    rotate(
+      -1deg
+    );
+}
+
+.feed-crop-hero-art-card:nth-child(2),
+.feed-crop-hero-art-card:nth-child(3) {
+  transform:
+    rotate(
+      1deg
+    );
+}
+
+.feed-crop-hero-art-icon {
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  font-size:
+    2rem;
+}
+
+.feed-crop-hero-art-card strong {
+  font-size:
+    0.92rem;
+}
+
+/*
+  ==================================================
+  Intro Journey
+  ==================================================
+*/
+
+.feed-crop-intro {
+  padding:
+    34px 40px 8px;
+}
+
+.feed-crop-intro-heading {
+  max-width:
+    760px;
+
+  margin:
+    0 auto 26px;
+
+  text-align:
+    center;
+}
+
+.feed-crop-intro-heading h2 {
+  margin:
+    0 0 10px;
+
+  color:
+    var(--feed-green-dark);
+}
+
+.feed-crop-intro-heading p {
+  margin:
+    0;
+
+  color:
+    var(--feed-muted);
+
+  line-height:
+    1.7;
+}
+
+.feed-crop-journey {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      5,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+
+  margin-bottom:
+    24px;
+}
+
+.feed-crop-journey-card {
+  position:
+    relative;
+
+  min-height:
+    148px;
+
+  padding:
+    20px 14px;
+
+  background:
+    var(--feed-green-pale);
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    16px;
+
+  text-align:
+    center;
+}
+
+.feed-crop-journey-card::after {
+  content:
+    "→";
+
+  position:
+    absolute;
+
+  top:
+    50%;
+
+  right:
+    -12px;
+
+  z-index:
+    2;
+
+  display:
+    grid;
+
+  width:
+    24px;
+
+  height:
+    24px;
+
+  place-items:
+    center;
+
+  color:
+    var(--feed-green);
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    50%;
+
+  font-weight:
+    900;
+
+  transform:
+    translateY(
+      -50%
+    );
+}
+
+.feed-crop-journey-card:last-child::after {
+  display:
+    none;
+}
+
+.feed-crop-journey-icon {
+  display:
+    block;
+
+  margin-bottom:
+    8px;
+
+  font-size:
+    1.85rem;
+}
+
+.feed-crop-journey-card strong {
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  color:
+    var(--feed-green-dark);
+}
+
+.feed-crop-journey-card span:last-child {
+  display:
+    block;
+
+  color:
+    var(--feed-muted);
+
+  font-size:
+    0.86rem;
+
+  line-height:
+    1.45;
+}
+
+.feed-crop-expectation-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    14px;
+
+  margin:
+    22px 0;
+}
+
+.feed-crop-expectation {
+  padding:
+    18px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-left:
+    5px solid
+    var(--feed-gold);
+
+  border-radius:
+    13px;
+}
+
+.feed-crop-expectation strong {
+  display:
+    block;
+
+  margin-bottom:
+    4px;
+
+  color:
+    var(--feed-green-dark);
+}
+
+.feed-crop-expectation p {
+  margin:
+    0;
+
+  color:
+    var(--feed-muted);
+
+  font-size:
+    0.92rem;
+
+  line-height:
+    1.55;
+}
+
+.feed-crop-notice {
+  display:
+    grid;
+
+  grid-template-columns:
+    auto 1fr;
+
+  gap:
+    14px;
+
+  align-items:
+    start;
+
+  margin:
+    24px 0;
+
+  padding:
+    18px 20px;
+
+  color:
+    #5e4718;
+
+  background:
+    var(--feed-gold-light);
+
+  border:
+    1px solid
+    #ecd49b;
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-notice-icon {
+  font-size:
+    1.65rem;
+}
+
+.feed-crop-notice strong {
+  display:
+    block;
+
+  margin-bottom:
+    4px;
+}
+
+.feed-crop-notice p {
+  margin:
+    0;
+
+  line-height:
+    1.6;
+}
+
+/*
+  ==================================================
+  Planner Application
+  ==================================================
+*/
+
+.feed-crop-planner-wrap {
+  padding:
+    24px 40px 42px;
+}
+
+.feed-crop-planner-app {
+  position:
+    relative;
+
+  padding:
+    28px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbf8 0%,
+      #ffffff 100%
+    );
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    20px;
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(
+      255,
+      255,
+      255,
+      0.8
+    );
+}
+
+.feed-crop-planner-topper {
+  display:
+    flex;
+
+  gap:
+    18px;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  margin-bottom:
+    22px;
+
+  padding-bottom:
+    20px;
+
+  border-bottom:
+    1px solid
+    var(--feed-border);
+}
+
+.feed-crop-planner-topper-text {
+  min-width:
+    0;
+}
+
+.feed-crop-planner-topper h2 {
+  margin:
+    0 0 5px;
+
+  color:
+    var(--feed-green-dark);
+}
+
+.feed-crop-planner-topper p {
+  margin:
+    0;
+
+  color:
+    var(--feed-muted);
+
+  font-size:
+    0.93rem;
+}
+
+.feed-crop-session-badge {
+  flex:
+    0 0 auto;
+
+  padding:
+    9px 12px;
+
+  color:
+    var(--feed-green-dark);
+
+  background:
+    var(--feed-green-light);
+
+  border:
+    1px solid
+    #cce1cf;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.82rem;
+
+  font-weight:
+    800;
+}
+
+/*
+  ==================================================
+  Progress
+  ==================================================
+*/
+
+.feed-crop-progress {
+  margin-bottom:
+    26px;
+}
+
+.feed-crop-progress-summary {
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  margin-bottom:
+    8px;
+
+  color:
+    var(--feed-green-dark);
+
+  font-size:
+    0.9rem;
+
+  font-weight:
+    800;
+}
+
+.feed-crop-progress-track {
+  overflow:
+    hidden;
+
+  height:
+    12px;
+
+  background:
+    #dce8de;
+
+  border-radius:
+    999px;
+}
+
+.feed-crop-progress-fill {
+  height:
+    100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--feed-gold),
+      #efbd4e,
+      var(--feed-green-medium)
+    );
+
+  border-radius:
+    inherit;
+
+  transition:
+    width 0.35s ease;
+}
+
+.feed-crop-progress-steps {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      7,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    7px;
+
+  margin:
+    16px 0 0;
+
+  padding:
+    0;
+
+  list-style:
+    none;
+}
+
+.feed-crop-progress-step {
+  display:
+    flex;
+
+  min-width:
+    0;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  gap:
+    5px;
+
+  color:
+    #6a776d;
+
+  font-size:
+    0.72rem;
+
+  text-align:
+    center;
+}
+
+.feed-crop-progress-step-number {
+  display:
+    grid;
+
+  width:
+    30px;
+
+  height:
+    30px;
+
+  place-items:
+    center;
+
+  color:
+    #657168;
+
+  background:
+    #ffffff;
+
+  border:
+    2px solid
+    #cedbcf;
+
+  border-radius:
+    50%;
+
+  font-weight:
+    900;
+}
+
+.feed-crop-progress-step.is-current
+.feed-crop-progress-step-number {
+  color:
+    #ffffff;
+
+  background:
+    var(--feed-green);
+
+  border-color:
+    var(--feed-green);
+}
+
+.feed-crop-progress-step.is-completed
+.feed-crop-progress-step-number {
+  color:
+    #ffffff;
+
+  background:
+    var(--feed-gold-dark);
+
+  border-color:
+    var(--feed-gold-dark);
+}
+
+.feed-crop-progress-step-label {
+  overflow:
+    hidden;
+
+  max-width:
+    100%;
+
+  text-overflow:
+    ellipsis;
+}
+
+.feed-crop-progress-step.is-current
+.feed-crop-progress-step-label {
+  color:
+    var(--feed-green-dark);
+
+  font-weight:
+    800;
+}
+
+/*
+  ==================================================
+  Status Messages
+  ==================================================
+*/
+
+.feed-crop-status {
+  margin:
+    0 0 20px;
+
+  padding:
+    14px 16px;
+
+  border-radius:
+    12px;
+
+  font-weight:
+    750;
+
+  line-height:
+    1.5;
+}
+
+.feed-crop-status-information {
+  color:
+    #28566a;
+
+  background:
+    var(--feed-sky);
+
+  border:
+    1px solid
+    #bedce8;
+}
+
+.feed-crop-status-success {
+  color:
+    #225b31;
+
+  background:
+    var(--feed-green-light);
+
+  border:
+    1px solid
+    #bfdcc4;
+}
+
+.feed-crop-status-error {
+  color:
+    #772929;
+
+  background:
+    var(--feed-red-light);
+
+  border:
+    1px solid
+    #e2baba;
+}
+
+/*
+  ==================================================
+  Section Header
+  ==================================================
+*/
+
+.feed-crop-questionnaire-section {
+  animation:
+    feedCropSectionEnter
+    0.28s ease;
+}
+
+@keyframes feedCropSectionEnter {
+  from {
+    opacity:
+      0;
+
+    transform:
+      translateY(
+        8px
+      );
+  }
+
+  to {
+    opacity:
+      1;
+
+    transform:
+      translateY(
+        0
+      );
+  }
+}
+
+.feed-crop-section-header {
+  margin-bottom:
+    22px;
+
+  padding:
+    24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--feed-green-light),
+      #ffffff
+    );
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    17px;
+}
+
+.feed-crop-section-step {
+  display:
+    inline-block;
+
+  margin-bottom:
+    7px;
+
+  padding:
+    5px 10px;
+
+  color:
+    var(--feed-gold-dark);
+
+  background:
+    var(--feed-gold-light);
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.04em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-section-title {
+  margin:
+    0 0 7px;
+
+  color:
+    var(--feed-green-dark);
+}
+
+.feed-crop-section-description {
+  margin:
+    0;
+
+  color:
+    var(--feed-muted);
+
+  line-height:
+    1.6;
+}
+
+/*
+  ==================================================
+  Question Cards
+  ==================================================
+*/
+
+.feed-crop-section-questions {
+  display:
+    grid;
+
+  gap:
+    19px;
+}
+
+.feed-crop-question-card {
+  padding:
+    23px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    17px;
+
+  box-shadow:
+    0 7px 20px
+    rgba(
+      31,
+      72,
+      43,
+      0.06
+    );
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.feed-crop-question-card:hover {
+  border-color:
+    #adcdb4;
+
+  box-shadow:
+    0 10px 26px
+    rgba(
+      31,
+      72,
+      43,
+      0.09
+    );
+
+  transform:
+    translateY(
+      -1px
+    );
+}
+
+.feed-crop-question-card.has-error {
+  border-color:
+    #d49191;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      167,
+      66,
+      66,
+      0.08
+    );
+}
+
+.feed-crop-question-label-row {
+  display:
+    flex;
+
+  gap:
+    12px;
+
+  align-items:
+    flex-start;
+
+  justify-content:
+    space-between;
+}
+
+.feed-crop-question-label {
+  margin:
+    0;
+
+  color:
+    var(--feed-green-dark);
+
+  font-size:
+    1.12rem;
+
+  line-height:
+    1.35;
+}
+
+.feed-crop-required-marker,
+.feed-crop-optional-marker {
+  flex:
+    0 0 auto;
+
+  padding:
+    4px 8px;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.7rem;
+
+  font-weight:
+    850;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-required-marker {
+  color:
+    #6e4b08;
+
+  background:
+    var(--feed-gold-light);
+}
+
+.feed-crop-optional-marker {
+  color:
+    #526158;
+
+  background:
+    #eef2ee;
+}
+
+.feed-crop-question-help {
+  margin:
+    8px 0 0;
+
+  color:
+    var(--feed-muted);
+
+  font-size:
+    0.92rem;
+
+  line-height:
+    1.6;
+}
+
+.feed-crop-question-control {
+  margin-top:
+    18px;
+}
+
+/*
+  ==================================================
+  Number Controls
+  ==================================================
+*/
+
+.feed-crop-number-control {
+  display:
+    flex;
+
+  max-width:
+    390px;
+
+  gap:
+    10px;
+
+  align-items:
+    center;
+}
+
+.feed-crop-number-input {
+  width:
+    100%;
+
+  min-height:
+    48px;
+
+  padding:
+    10px 13px;
+
+  color:
+    var(--feed-text);
+
+  background:
+    #ffffff;
+
+  border:
+    2px solid
+    #cbd9cd;
+
+  border-radius:
+    11px;
+
+  font:
+    inherit;
+}
+
+.feed-crop-number-input:focus {
+  outline:
+    none;
+
+  border-color:
+    var(--feed-green);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      47,
+      116,
+      68,
+      0.12
+    );
+}
+
+.feed-crop-input-suffix {
+  color:
+    var(--feed-muted);
+
+  font-weight:
+    750;
+
+  white-space:
+    nowrap;
+}
+
+/*
+  ==================================================
+  Choice Cards
+  ==================================================
+*/
+
+.feed-crop-choice-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    11px;
+}
+
+.feed-crop-choice-card {
+  position:
+    relative;
+
+  display:
+    flex;
+
+  min-height:
+    78px;
+
+  gap:
+    12px;
+
+  align-items:
+    flex-start;
+
+  padding:
+    15px;
+
+  cursor:
+    pointer;
+
+  background:
+    var(--feed-green-pale);
+
+  border:
+    2px solid
+    #d4e2d6;
+
+  border-radius:
+    13px;
+
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.feed-crop-choice-card:hover {
+  background:
+    #eef7ef;
+
+  border-color:
+    #a9cbb0;
+
+  transform:
+    translateY(
+      -1px
+    );
+}
+
+.feed-crop-choice-card.is-selected {
+  background:
+    #e3f2e5;
+
+  border-color:
+    var(--feed-green);
+}
+
+.feed-crop-choice-input {
+  width:
+    19px;
+
+  height:
+    19px;
+
+  flex:
+    0 0 auto;
+
+  margin-top:
+    2px;
+
+  accent-color:
+    var(--feed-green);
+}
+
+.feed-crop-choice-content {
+  display:
+    block;
+}
+
+.feed-crop-choice-title {
+  display:
+    block;
+
+  color:
+    var(--feed-green-dark);
+
+  font-weight:
+    850;
+
+  line-height:
+    1.3;
+}
+
+.feed-crop-choice-description {
+  display:
+    block;
+
+  margin-top:
+    4px;
+
+  color:
+    var(--feed-muted);
+
+  font-size:
+    0.84rem;
+
+  line-height:
+    1.45;
+}
+
+.feed-crop-empty-selection-note {
+  grid-column:
+    1 / -1;
+
+  margin:
+    2px 0 0;
+
+  color:
+    var(--feed-muted);
+
+  font-size:
+    0.82rem;
+
+  font-style:
+    italic;
+}
+
+/*
+  ==================================================
+  Ranking
+  ==================================================
+*/
+
+.feed-crop-ranking-control {
+  display:
+    grid;
+
+  max-width:
+    650px;
+
+  gap:
+    12px;
+}
+
+.feed-crop-ranking-row {
+  display:
+    grid;
+
+  grid-template-columns:
+    130px minmax(
+      0,
+      1fr
+    );
+
+  gap:
+    12px;
+
+  align-items:
+    center;
+
+  padding:
+    13px;
+
+  background:
+    var(--feed-green-pale);
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    12px;
+}
+
+.feed-crop-ranking-label {
+  color:
+    var(--feed-green-dark);
+
+  font-weight:
+    850;
+}
+
+.feed-crop-ranking-select {
+  width:
+    100%;
+
+  min-height:
+    44px;
+
+  padding:
+    8px 11px;
+
+  color:
+    var(--feed-text);
+
+  background:
+    #ffffff;
+
+  border:
+    2px solid
+    #cbd9cd;
+
+  border-radius:
+    9px;
+
+  font:
+    inherit;
+}
+
+.feed-crop-ranking-select:focus {
+  outline:
+    none;
+
+  border-color:
+    var(--feed-green);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      47,
+      116,
+      68,
+      0.12
+    );
+}
+
+/*
+  ==================================================
+  Validation
+  ==================================================
+*/
+
+.feed-crop-question-error {
+  display:
+    none;
+
+  margin-top:
+    13px;
+
+  padding:
+    10px 12px;
+
+  color:
+    #7a2828;
+
+  background:
+    var(--feed-red-light);
+
+  border:
+    1px solid
+    #e2baba;
+
+  border-radius:
+    9px;
+
+  font-size:
+    0.88rem;
+
+  font-weight:
+    750;
+}
+
+.feed-crop-question-error.is-visible {
+  display:
+    block;
+}
+
+/*
+  ==================================================
+  Navigation
+  ==================================================
+*/
+
+.feed-crop-navigation {
+  display:
+    flex;
+
+  gap:
+    12px;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  margin-top:
+    26px;
+
+  padding-top:
+    20px;
+
+  border-top:
+    1px solid
+    var(--feed-border);
+}
+
+.feed-crop-navigation button,
+.feed-crop-reset-button,
+.feed-crop-review-edit-button {
+  min-height:
+    46px;
+
+  padding:
+    11px 18px;
+
+  cursor:
+    pointer;
+
+  border-radius:
+    11px;
+
+  font:
+    inherit;
+
+  font-weight:
+    850;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.feed-crop-navigation button:hover,
+.feed-crop-reset-button:hover,
+.feed-crop-review-edit-button:hover {
+  transform:
+    translateY(
+      -1px
+    );
+}
+
+#feed-crop-back-button {
+  color:
+    var(--feed-green-dark);
+
+  background:
+    #ffffff;
+
+  border:
+    2px solid
+    #b8cdbb;
+}
+
+#feed-crop-next-button,
+#feed-crop-submit-button {
+  margin-left:
+    auto;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--feed-green),
+      #3d8951
+    );
+
+  border:
+    0;
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      47,
+      116,
+      68,
+      0.2
+    );
+}
+
+#feed-crop-submit-button {
+  background:
+    linear-gradient(
+      135deg,
+      var(--feed-gold-dark),
+      var(--feed-gold)
+    );
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      169,
+      110,
+      15,
+      0.22
+    );
+}
+
+.feed-crop-reset-row {
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  margin-top:
+    18px;
+}
+
+.feed-crop-reset-button {
+  min-height:
+    38px;
+
+  padding:
+    7px 12px;
+
+  color:
+    #6d5344;
+
+  background:
+    transparent;
+
+  border:
+    1px solid
+    #d5c9c0;
+
+  font-size:
+    0.82rem;
+}
+
+/*
+  ==================================================
+  Review Screen
+  ==================================================
+*/
+
+.feed-crop-review {
+  animation:
+    feedCropSectionEnter
+    0.28s ease;
+}
+
+.feed-crop-review-header {
+  margin-bottom:
+    22px;
+
+  padding:
+    24px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--feed-green-dark),
+      var(--feed-green)
+    );
+
+  border-radius:
+    17px;
+}
+
+.feed-crop-review-kicker {
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  color:
+    #ffe5a1;
+
+  font-size:
+    0.77rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.06em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-review-title {
+  margin:
+    0 0 7px;
+
+  color:
+    #ffffff;
+}
+
+.feed-crop-review-description {
+  margin:
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.9
+    );
+}
+
+.feed-crop-review-section {
+  margin-bottom:
+    18px;
+
+  padding:
+    20px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--feed-border);
+
+  border-radius:
+    15px;
+}
+
+.feed-crop-review-section-heading {
+  display:
+    flex;
+
+  gap:
+    12px;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  margin-bottom:
+    13px;
+
+  padding-bottom:
+    11px;
+
+  border-bottom:
+    1px solid
+    var(--feed-border);
+}
+
+.feed-crop-review-section-title {
+  margin:
+    0;
+
+  color:
+    var(--feed-green-dark);
+
+  font-size:
+    1.08rem;
+}
+
+.feed-crop-review-edit-button {
+  min-height:
+    34px;
+
+  padding:
+    6px 11px;
+
+  color:
+    var(--feed-green-dark);
+
+  background:
+    var(--feed-green-light);
+
+  border:
+    1px solid
+    #bfd7c3;
+
+  font-size:
+    0.8rem;
+}
+
+.feed-crop-review-list {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    11px;
+
+  margin:
+    0;
+}
+
+.feed-crop-review-item {
+  padding:
+    12px;
+
+  background:
+    var(--feed-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    10px;
+}
+
+.feed-crop-review-label {
+  margin-bottom:
+    4px;
+
+  color:
+    var(--feed-green-dark);
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    850;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-review-value {
+  margin:
+    0;
+
+  color:
+    var(--feed-text);
+
+  line-height:
+    1.5;
+}
+
+/*
+  ==================================================
+  Supporting Content
+  ==================================================
+*/
+
+.feed-crop-support {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    16px;
+
+  padding:
+    0 40px 42px;
+}
+
+.feed-crop-support-card {
+  padding:
+    22px;
+
+  background:
+    var(--feed-soil-light);
+
+  border:
+    1px solid
+    #dfd1c5;
+
+  border-radius:
+    16px;
+}
+
+.feed-crop-support-card:nth-child(2) {
+  background:
+    var(--feed-green-light);
+
+  border-color:
+    #c9ddcc;
+}
+
+.feed-crop-support-card h2 {
+  margin:
+    0 0 8px;
+
+  color:
+    var(--feed-green-dark);
+
+  font-size:
+    1.15rem;
+}
+
+.feed-crop-support-card p {
+  margin:
+    0 0 12px;
+
+  color:
+    var(--feed-muted);
+
+  line-height:
+    1.65;
+}
+
+.feed-crop-support-card p:last-child {
+  margin-bottom:
+    0;
+}
+
+.feed-crop-support-card a {
+  font-weight:
+    800;
+}
+
+/*
+  ==================================================
+  Accessibility and Utility
+  ==================================================
+*/
+
+[hidden] {
+  display:
+    none !important;
+}
+
+.feed-crop-noscript {
+  margin:
+    20px 0;
+
+  padding:
+    18px;
+
+  color:
+    #772929;
+
+  background:
+    var(--feed-red-light);
+
+  border:
+    1px solid
+    #e2baba;
+
+  border-radius:
+    12px;
+}
+
+/*
+  ==================================================
+  Responsive Layout
+  ==================================================
+*/
+
+@media
+(max-width: 900px) {
+
+  .feed-crop-hero-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-hero-art {
+    max-width:
+      520px;
+  }
+
+  .feed-crop-journey {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+  .feed-crop-journey-card::after {
+    display:
+      none;
+  }
+
+  .feed-crop-journey-card:last-child {
+    grid-column:
+      1 / -1;
+  }
+
+  .feed-crop-expectation-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-progress-steps {
+    grid-template-columns:
+      repeat(
+        4,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+}
+
+@media
+(max-width: 700px) {
+
+  .feed-crop-page-shell {
+    width:
+      min(
+        calc(100% - 18px),
+        1040px
+      );
+
+    margin:
+      20px auto;
+  }
+
+  .feed-crop-page-content {
+    border-radius:
+      16px;
+  }
+
+  .feed-crop-hero {
+    padding:
+      32px 22px;
+  }
+
+  .feed-crop-hero-art {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+  .feed-crop-intro,
+  .feed-crop-planner-wrap,
+  .feed-crop-support {
+    padding-left:
+      18px;
+
+    padding-right:
+      18px;
+  }
+
+  .feed-crop-intro {
+    padding-top:
+      26px;
+  }
+
+  .feed-crop-planner-wrap {
+    padding-bottom:
+      28px;
+  }
+
+  .feed-crop-planner-app {
+    padding:
+      18px;
+  }
+
+  .feed-crop-planner-topper {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+  }
+
+  .feed-crop-choice-grid,
+  .feed-crop-review-list,
+  .feed-crop-support {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-progress-steps {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+  .feed-crop-progress-step {
+    flex-direction:
+      row;
+
+    justify-content:
+      flex-start;
+
+    text-align:
+      left;
+  }
+
+  .feed-crop-progress-step-number {
+    width:
+      26px;
+
+    height:
+      26px;
+
+    flex:
+      0 0 auto;
+  }
+
+  .feed-crop-section-header,
+  .feed-crop-question-card,
+  .feed-crop-review-header,
+  .feed-crop-review-section {
+    padding:
+      18px;
+  }
+
+  .feed-crop-ranking-row {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-navigation {
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+  }
+
+  .feed-crop-navigation button {
+    width:
+      100%;
+
+    margin-left:
+      0 !important;
+  }
+
+  .feed-crop-support {
+    padding-bottom:
+      28px;
+  }
+
+}
+
+@media
+(max-width: 430px) {
+
+  .feed-crop-hero-art {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-journey {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-journey-card:last-child {
+    grid-column:
+      auto;
+  }
+
+  .feed-crop-number-control {
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+  }
+
+}
+
+/*
+  ==================================================
+  Reduced Motion
+  ==================================================
+*/
+
+@media
+(prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior:
+      auto !important;
+
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.01ms !important;
+  }
+
+}
+
+/*
+  ==================================================
+  Print
+  ==================================================
+*/
+
+@media print {
+
+  #navigation,
+  #footer,
+  .feed-crop-hero-art,
+  .feed-crop-navigation,
+  .feed-crop-reset-row,
+  .feed-crop-review-edit-button,
+  .feed-crop-support {
+    display:
+      none !important;
+  }
+
+  .feed-crop-page-shell {
+    width:
+      100%;
+
+    margin:
+      0;
+  }
+
+  .feed-crop-page-content,
+  .feed-crop-planner-app,
+  .feed-crop-question-card,
+  .feed-crop-review-section {
+    box-shadow:
+      none !important;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Free calculators, chick care guides, breed comparisons, supply recommendations, and planning tools for backyard chicken keepers.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<main class="feed-crop-page-shell">
+
+<div class="feed-crop-page-content">
+
+<section class="feed-crop-hero">
+
+<div class="feed-crop-hero-grid">
+
+<div>
+
+<span class="feed-crop-hero-kicker">
+🌾 Interactive Crop-Matching Tool
+</span>
+
+<h1>
+Find Feed Crops That Actually Fit Your Flock and Property
+</h1>
+
+<p class="feed-crop-hero-lead">
+Tell us about your chickens, climate, growing space, soil, water, available time, and harvest goals. The planner will compare your answers with every eligible crop and help you identify the strongest supplemental-feed options for your setup.
+</p>
+
+</div>
+
+<div
+  class="feed-crop-hero-art"
+  aria-label="Planner topics"
+>
+
+<div class="feed-crop-hero-art-card">
+
+<span class="feed-crop-hero-art-icon">
+🐔
+</span>
+
+<strong>
+Your Flock
+</strong>
+
+</div>
+
+<div class="feed-crop-hero-art-card">
+
+<span class="feed-crop-hero-art-icon">
+🌱
+</span>
+
+<strong>
+Your Growing Space
+</strong>
+
+</div>
+
+<div class="feed-crop-hero-art-card">
+
+<span class="feed-crop-hero-art-icon">
+🧺
+</span>
+
+<strong>
+Your Harvest Goals
+</strong>
+
+</div>
+
+<div class="feed-crop-hero-art-card">
+
+<span class="feed-crop-hero-art-icon">
+🏆
+</span>
+
+<strong>
+Your Best Matches
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="feed-crop-intro">
+
+<div class="feed-crop-intro-heading">
+
+<h2>
+🌻 From Backyard Space to Practical Crop Plan
+</h2>
+
+<p>
+This planner looks beyond a simple list of chicken-safe plants. It considers whether a crop can grow in your conditions, whether you have enough room, whether its harvest path matches your equipment and labor, and whether the finished crop supports the outcomes that matter most to you.
+</p>
+
+</div>
+
+<div class="feed-crop-journey">
+
+<div class="feed-crop-journey-card">
+
+<span class="feed-crop-journey-icon">
+🐓
+</span>
+
+<strong>
+Meet Your Flock
+</strong>
+
+<span>
+Flock size, purpose, forage access, and nutritional priorities.
+</span>
+
+</div>
+
+<div class="feed-crop-journey-card">
+
+<span class="feed-crop-journey-icon">
+☀️
+</span>
+
+<strong>
+Map Your Conditions
+</strong>
+
+<span>
+Climate, growing season, sunlight, soil, water, and wind.
+</span>
+
+</div>
+
+<div class="feed-crop-journey-card">
+
+<span class="feed-crop-journey-icon">
+🛠️
+</span>
+
+<strong>
+Choose Your Effort
+</strong>
+
+<span>
+Available time, processing tasks, drying ability, and equipment.
+</span>
+
+</div>
+
+<div class="feed-crop-journey-card">
+
+<span class="feed-crop-journey-icon">
+🧺
+</span>
+
+<strong>
+Plan the Harvest
+</strong>
+
+<span>
+Fresh forage, grains, greens, produce, storage, and preparation.
+</span>
+
+</div>
+
+<div class="feed-crop-journey-card">
+
+<span class="feed-crop-journey-icon">
+🌟
+</span>
+
+<strong>
+Compare Your Matches
+</strong>
+
+<span>
+See your strongest recommendation and practical alternatives.
+</span>
+
+</div>
+
+</div>
+
+<div class="feed-crop-expectation-grid">
+
+<div class="feed-crop-expectation">
+
+<strong>
+⏱️ Take Your Time
+</strong>
+
+<p>
+There are seven short sections. Careful answers produce more useful recommendations.
+</p>
+
+</div>
+
+<div class="feed-crop-expectation">
+
+<strong>
+💾 Progress Is Saved
+</strong>
+
+<p>
+Your answers are stored in this browser tab during your current session.
+</p>
+
+</div>
+
+<div class="feed-crop-expectation">
+
+<strong>
+🌾 Built for Real Use
+</strong>
+
+<p>
+The planner checks space, labor, equipment, processing, storage, and eligible harvest paths.
+</p>
+
+</div>
+
+</div>
+
+<div class="feed-crop-notice">
+
+<div
+  class="feed-crop-notice-icon"
+  aria-hidden="true"
+>
+🥣
+</div>
+
+<div>
+
+<strong>
+Supplemental feed, not a complete ration
+</strong>
+
+<p>
+Homegrown crops can provide enrichment, fresh greens, seasonal produce, forage, seeds, or stored ingredients. They should be used as supplements to an age-appropriate complete poultry feed unless a qualified poultry nutrition professional has formulated a balanced ration.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="feed-crop-planner-wrap">
+
+<div
+  id="feed-crop-planner-app"
+  class="feed-crop-planner-app"
+  data-results-url="feed-crop-planner-results.html"
+>
+
+<div class="feed-crop-planner-topper">
+
+<div class="feed-crop-planner-topper-text">
+
+<h2>
+🌿 Build Your Feed Crop Plan
+</h2>
+
+<p>
+Choose the answers that most closely match what you can realistically grow, harvest, process, and store.
+</p>
+
+</div>
+
+<div class="feed-crop-session-badge">
+🔒 Saved in this session
+</div>
+
+</div>
+
+<noscript>
+
+<div class="feed-crop-noscript">
+
+<strong>
+JavaScript is required for this planner.
+</strong>
+
+<p>
+Please enable JavaScript in your browser and reload the page to use the interactive Feed Crop Planner.
+</p>
+
+</div>
+
+</noscript>
+
+<div id="feed-crop-progress"></div>
+
+<div
+  id="feed-crop-status"
+  class="feed-crop-status"
+  role="status"
+  aria-live="polite"
+  hidden
+></div>
+
+<div id="feed-crop-questionnaire"></div>
+
+<div
+  id="feed-crop-review"
+  hidden
+></div>
+
+<div class="feed-crop-navigation">
+
+<button
+  id="feed-crop-back-button"
+  type="button"
+  hidden
+>
+Previous
+</button>
+
+<button
+  id="feed-crop-next-button"
+  type="button"
+>
+Next
+</button>
+
+<button
+  id="feed-crop-submit-button"
+  type="button"
+  hidden
+>
+See My Crop Recommendations
+</button>
+
+</div>
+
+<div class="feed-crop-reset-row">
+
+<button
+  id="feed-crop-reset-button"
+  type="button"
+  class="feed-crop-reset-button"
+>
+Start Over and Clear My Answers
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="feed-crop-support">
+
+<div class="feed-crop-support-card">
+
+<h2>
+🌱 Still Learning About Feed Crops?
+</h2>
+
+<p>
+Explore the crop guide first to learn how grains, greens, forage plants, storage produce, and perennial crops can contribute to a backyard flock.
+</p>
+
+<p>
+<a href="chicken-feed-crops.html">
+Explore Chicken Feed Crops →
+</a>
+</p>
+
+</div>
+
+<div class="feed-crop-support-card">
+
+<h2>
+🐔 Planning More Than Crops?
+</h2>
+
+<p>
+Use the Backyard Flock Planner to estimate flock size, egg needs, coop space, feed use, and other practical requirements.
+</p>
+
+<p>
+<a href="backyard-chicken-flock-planner.html">
+Open the Backyard Flock Planner →
+</a>
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+<div id="footer"></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Backyard Chicken Feed Crop Planner",
+  "url": "https://gregnalley.github.io/chicken-cost-planner/feed-crop-planner.html",
+  "description": "An interactive recommendation tool that helps backyard chicken keepers identify supplemental feed crops suited to their flock, climate, growing space, soil, water, labor, harvest, storage, and practical goals.",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyard Chicken Planner",
+    "url": "https://gregnalley.github.io/chicken-cost-planner/"
+  }
+}
+</script>
+
+<script src="scripts/site.js"></script>
+
+<script src="scripts/feed-crop-planner-questionnaire.js"></script>
+
+<script src="scripts/feed-crop-planner-state.js"></script>
+
+<script src="scripts/feed-crop-planner-renderer.js"></script>
+
+<script src="scripts/feed-crop-planner-public-ui.js"></script>
+
+</body>
+
+</html>

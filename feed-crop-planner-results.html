@@ -1,0 +1,3810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Your Personalized Chicken Feed Crop Plan | Backyard Chicken Planner</title>
+
+<meta
+  name="description"
+  content="View your personalized backyard chicken feed crop recommendations, strongest crop matches, harvest paths, processing needs, storage guidance, limitations, and practical next steps."
+>
+
+<meta
+  name="robots"
+  content="noindex,follow"
+>
+
+<link
+  rel="canonical"
+  href="https://gregnalley.github.io/chicken-cost-planner/feed-crop-planner-results.html"
+>
+
+<meta
+  property="og:title"
+  content="Your Personalized Chicken Feed Crop Plan"
+>
+
+<meta
+  property="og:description"
+  content="A personalized supplemental feed crop report based on your flock, property, climate, growing conditions, labor, harvest goals, and storage setup."
+>
+
+<meta
+  property="og:type"
+  content="website"
+>
+
+<meta
+  property="og:url"
+  content="https://gregnalley.github.io/chicken-cost-planner/feed-crop-planner-results.html"
+>
+
+<meta
+  property="og:image"
+  content="https://gregnalley.github.io/chicken-cost-planner/assets/images/hero-chickens.jpg"
+>
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<link
+  rel="stylesheet"
+  href="assets/css/bcp-style.css"
+>
+
+<!-- Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-88486JDN1Z"
+></script>
+
+<script>
+window.dataLayer =
+  window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag(
+  "js",
+  new Date()
+);
+
+gtag(
+  "config",
+  "G-88486JDN1Z"
+);
+</script>
+
+<style>
+
+/*
+  ==================================================
+  Feed Crop Planner Results Page
+  ==================================================
+*/
+
+:root {
+  --results-green-dark:
+    #173f25;
+
+  --results-green:
+    #2f7444;
+
+  --results-green-medium:
+    #4f9461;
+
+  --results-green-light:
+    #eaf5eb;
+
+  --results-green-pale:
+    #f6faf6;
+
+  --results-gold:
+    #d59a2c;
+
+  --results-gold-dark:
+    #a86c0c;
+
+  --results-gold-light:
+    #fff3d6;
+
+  --results-blue:
+    #4d7991;
+
+  --results-blue-light:
+    #edf6fa;
+
+  --results-soil:
+    #77533b;
+
+  --results-soil-light:
+    #f5eee8;
+
+  --results-red:
+    #9f4141;
+
+  --results-red-light:
+    #fff1f1;
+
+  --results-orange:
+    #b56826;
+
+  --results-orange-light:
+    #fff4e8;
+
+  --results-border:
+    #d5e1d7;
+
+  --results-border-dark:
+    #b8cbbb;
+
+  --results-text:
+    #26342a;
+
+  --results-muted:
+    #5c6960;
+
+  --results-white:
+    #ffffff;
+
+  --results-shadow:
+    0 14px 34px
+    rgba(
+      30,
+      73,
+      42,
+      0.1
+    );
+
+  --results-shadow-strong:
+    0 22px 52px
+    rgba(
+      23,
+      63,
+      37,
+      0.16
+    );
+}
+
+* {
+  box-sizing:
+    border-box;
+}
+
+html {
+  scroll-behavior:
+    smooth;
+}
+
+body {
+  color:
+    var(--results-text);
+}
+
+.feed-crop-results-page {
+  width:
+    min(
+      calc(100% - 28px),
+      1120px
+    );
+
+  margin:
+    38px auto 54px;
+}
+
+.feed-crop-results-shell {
+  overflow:
+    hidden;
+
+  background:
+    var(--results-white);
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    24px;
+
+  box-shadow:
+    var(--results-shadow);
+}
+
+/*
+  ==================================================
+  Results Hero
+  ==================================================
+*/
+
+.feed-crop-results-hero {
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  padding:
+    46px 46px 42px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #153d23 0%,
+      #2c7141 58%,
+      #4d9159 100%
+    );
+}
+
+.feed-crop-results-hero::before {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    -120px;
+
+  right:
+    -70px;
+
+  width:
+    310px;
+
+  height:
+    310px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-results-hero::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  right:
+    150px;
+
+  bottom:
+    -135px;
+
+  width:
+    280px;
+
+  height:
+    280px;
+
+  background:
+    rgba(
+      255,
+      217,
+      119,
+      0.13
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-results-hero-grid {
+  position:
+    relative;
+
+  z-index:
+    1;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      0,
+      1.45fr
+    )
+    minmax(
+      280px,
+      0.7fr
+    );
+
+  gap:
+    38px;
+
+  align-items:
+    center;
+}
+
+.feed-crop-results-hero-kicker {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  margin-bottom:
+    15px;
+
+  padding:
+    7px 13px;
+
+  color:
+    #fff1bd;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.22
+    );
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.06em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-results-hero h1 {
+  margin:
+    0 0 14px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    clamp(
+      2rem,
+      5vw,
+      3.25rem
+    );
+
+  line-height:
+    1.08;
+}
+
+.feed-crop-results-hero-lead {
+  max-width:
+    720px;
+
+  margin:
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  font-size:
+    1.06rem;
+
+  line-height:
+    1.7;
+}
+
+.feed-crop-results-hero-art {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+}
+
+.feed-crop-results-hero-card {
+  display:
+    flex;
+
+  min-height:
+    112px;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    16px;
+
+  color:
+    var(--results-green-dark);
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.94
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.55
+    );
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 10px 26px
+    rgba(
+      0,
+      0,
+      0,
+      0.11
+    );
+
+  text-align:
+    center;
+}
+
+.feed-crop-results-hero-card:nth-child(1),
+.feed-crop-results-hero-card:nth-child(4) {
+  transform:
+    rotate(
+      -1deg
+    );
+}
+
+.feed-crop-results-hero-card:nth-child(2),
+.feed-crop-results-hero-card:nth-child(3) {
+  transform:
+    rotate(
+      1deg
+    );
+}
+
+.feed-crop-results-hero-card span {
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  font-size:
+    2rem;
+}
+
+.feed-crop-results-hero-card strong {
+  font-size:
+    0.9rem;
+}
+
+/*
+  ==================================================
+  Toolbar
+  ==================================================
+*/
+
+.feed-crop-results-toolbar {
+  display:
+    flex;
+
+  gap:
+    12px;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  padding:
+    18px 38px;
+
+  background:
+    #f8fbf8;
+
+  border-bottom:
+    1px solid
+    var(--results-border);
+}
+
+.feed-crop-results-toolbar-message {
+  min-width:
+    0;
+
+  color:
+    var(--results-muted);
+
+  font-size:
+    0.9rem;
+
+  line-height:
+    1.5;
+}
+
+.feed-crop-results-toolbar-message strong {
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-results-toolbar-actions {
+  display:
+    flex;
+
+  flex:
+    0 0 auto;
+
+  gap:
+    9px;
+}
+
+.feed-crop-results-toolbar button,
+.feed-crop-results-primary-button,
+.feed-crop-results-secondary-button {
+  display:
+    inline-flex;
+
+  min-height:
+    44px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    7px;
+
+  padding:
+    10px 16px;
+
+  cursor:
+    pointer;
+
+  border-radius:
+    11px;
+
+  font:
+    inherit;
+
+  font-weight:
+    850;
+
+  text-decoration:
+    none;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.feed-crop-results-toolbar button:hover,
+.feed-crop-results-primary-button:hover,
+.feed-crop-results-secondary-button:hover {
+  transform:
+    translateY(
+      -1px
+    );
+}
+
+.feed-crop-results-toolbar-secondary,
+.feed-crop-results-secondary-button {
+  color:
+    var(--results-green-dark);
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--results-border-dark);
+}
+
+.feed-crop-results-toolbar-primary,
+.feed-crop-results-primary-button {
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--results-green),
+      #438954
+    );
+
+  border:
+    0;
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      47,
+      116,
+      68,
+      0.2
+    );
+}
+
+.feed-crop-results-toolbar-danger {
+  color:
+    #764040;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    #dfc0c0;
+}
+
+/*
+  ==================================================
+  Main Results Application
+  ==================================================
+*/
+
+.feed-crop-results-app {
+  padding:
+    34px 38px 44px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbfdfb 0%,
+      #ffffff 30%
+    );
+}
+
+.feed-crop-results-loading {
+  display:
+    grid;
+
+  min-height:
+    360px;
+
+  place-items:
+    center;
+
+  text-align:
+    center;
+}
+
+.feed-crop-results-loading-card {
+  max-width:
+    560px;
+
+  padding:
+    34px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    20px;
+
+  box-shadow:
+    var(--results-shadow);
+}
+
+.feed-crop-results-loading-icon {
+  display:
+    inline-grid;
+
+  width:
+    74px;
+
+  height:
+    74px;
+
+  margin-bottom:
+    16px;
+
+  place-items:
+    center;
+
+  background:
+    var(--results-green-light);
+
+  border-radius:
+    50%;
+
+  font-size:
+    2.2rem;
+
+  animation:
+    feedCropPulse
+    1.3s ease-in-out
+    infinite;
+}
+
+@keyframes feedCropPulse {
+
+  0%,
+  100% {
+    transform:
+      scale(
+        1
+      );
+  }
+
+  50% {
+    transform:
+      scale(
+        1.08
+      );
+  }
+
+}
+
+.feed-crop-results-loading h2 {
+  margin:
+    0 0 9px;
+
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-results-loading p {
+  margin:
+    0;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.65;
+}
+
+/*
+  ==================================================
+  Error State
+  ==================================================
+*/
+
+.feed-crop-results-error {
+  max-width:
+    680px;
+
+  margin:
+    30px auto;
+
+  padding:
+    34px;
+
+  background:
+    var(--results-red-light);
+
+  border:
+    1px solid
+    #e2bdbd;
+
+  border-radius:
+    18px;
+
+  text-align:
+    center;
+}
+
+.feed-crop-results-error-icon {
+  margin-bottom:
+    10px;
+
+  font-size:
+    2.7rem;
+}
+
+.feed-crop-results-error h2 {
+  margin:
+    0 0 10px;
+
+  color:
+    #702d2d;
+}
+
+.feed-crop-results-error p {
+  max-width:
+    560px;
+
+  margin:
+    0 auto 20px;
+
+  color:
+    #704a4a;
+
+  line-height:
+    1.65;
+}
+
+/*
+  ==================================================
+  Shared Section Heading
+  ==================================================
+*/
+
+.feed-crop-results-section-heading {
+  max-width:
+    780px;
+
+  margin-bottom:
+    22px;
+}
+
+.feed-crop-results-kicker {
+  display:
+    block;
+
+  margin-bottom:
+    6px;
+
+  color:
+    var(--results-gold-dark);
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.07em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-results-section-heading h2 {
+  margin:
+    0 0 7px;
+
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-results-section-heading p {
+  margin:
+    0;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.65;
+}
+
+/*
+  ==================================================
+  Plan Summary
+  ==================================================
+*/
+
+.feed-crop-results-plan-summary {
+  margin-bottom:
+    28px;
+
+  padding:
+    25px;
+
+  background:
+    var(--results-green-pale);
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    18px;
+}
+
+.feed-crop-results-summary-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+}
+
+.feed-crop-results-summary-card {
+  display:
+    grid;
+
+  grid-template-columns:
+    auto 1fr;
+
+  gap:
+    3px 10px;
+
+  align-items:
+    center;
+
+  padding:
+    15px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    13px;
+}
+
+.feed-crop-results-summary-icon {
+  grid-row:
+    1 / span 2;
+
+  font-size:
+    1.7rem;
+}
+
+.feed-crop-results-summary-label {
+  color:
+    var(--results-muted);
+
+  font-size:
+    0.75rem;
+
+  font-weight:
+    850;
+
+  letter-spacing:
+    0.03em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-results-summary-card strong {
+  color:
+    var(--results-green-dark);
+
+  line-height:
+    1.35;
+}
+
+/*
+  ==================================================
+  Top Recommendation
+  ==================================================
+*/
+
+.feed-crop-top-recommendation {
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  margin-bottom:
+    24px;
+
+  padding:
+    29px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #173f25 0%,
+      #2e7443 62%,
+      #4e915b 100%
+    );
+
+  border-radius:
+    22px;
+
+  box-shadow:
+    var(--results-shadow-strong);
+}
+
+.feed-crop-top-recommendation::before {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    -100px;
+
+  right:
+    -70px;
+
+  width:
+    260px;
+
+  height:
+    260px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-top-badge {
+  position:
+    relative;
+
+  z-index:
+    1;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+
+  margin-bottom:
+    18px;
+
+  padding:
+    7px 12px;
+
+  color:
+    #624105;
+
+  background:
+    #ffe5a0;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.04em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-top-grid {
+  position:
+    relative;
+
+  z-index:
+    1;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      0,
+      1.5fr
+    )
+    minmax(
+      240px,
+      0.55fr
+    );
+
+  gap:
+    28px;
+
+  align-items:
+    center;
+}
+
+.feed-crop-top-title-row {
+  display:
+    flex;
+
+  gap:
+    16px;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    14px;
+}
+
+.feed-crop-top-icon {
+  display:
+    grid;
+
+  width:
+    68px;
+
+  height:
+    68px;
+
+  flex:
+    0 0 auto;
+
+  place-items:
+    center;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.14
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.24
+    );
+
+  border-radius:
+    18px;
+
+  font-size:
+    2.25rem;
+}
+
+.feed-crop-top-eyebrow {
+  display:
+    block;
+
+  margin-bottom:
+    3px;
+
+  color:
+    #ffe5a0;
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.06em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-top-recommendation h1 {
+  margin:
+    0;
+
+  color:
+    #ffffff;
+
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3rem
+    );
+}
+
+.feed-crop-top-message {
+  max-width:
+    680px;
+
+  margin:
+    0 0 18px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  font-size:
+    1.03rem;
+
+  line-height:
+    1.7;
+}
+
+.feed-crop-top-meta {
+  display:
+    grid;
+
+  gap:
+    8px;
+
+  margin-bottom:
+    18px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.9
+    );
+
+  font-size:
+    0.92rem;
+}
+
+.feed-crop-top-meta strong {
+  color:
+    #ffffff;
+}
+
+.feed-crop-top-harvest {
+  padding:
+    16px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.1
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.18
+    );
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-top-harvest > strong {
+  display:
+    block;
+
+  margin-bottom:
+    9px;
+
+  color:
+    #ffffff;
+}
+
+.feed-crop-top-score-panel {
+  display:
+    grid;
+
+  gap:
+    11px;
+}
+
+.feed-crop-score-ring {
+  --feed-crop-score:
+    0;
+
+  display:
+    grid;
+
+  width:
+    190px;
+
+  height:
+    190px;
+
+  place-items:
+    center;
+
+  margin:
+    0 auto 8px;
+
+  background:
+    conic-gradient(
+      #f2c45b
+      calc(
+        var(--feed-crop-score) *
+        1%
+      ),
+      rgba(
+        255,
+        255,
+        255,
+        0.17
+      )
+      0
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-score-ring::before {
+  content:
+    "";
+
+  grid-area:
+    1 / 1;
+
+  width:
+    148px;
+
+  height:
+    148px;
+
+  background:
+    #235e37;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.2
+    );
+
+  border-radius:
+    50%;
+}
+
+.feed-crop-score-ring > div {
+  z-index:
+    1;
+
+  grid-area:
+    1 / 1;
+
+  text-align:
+    center;
+}
+
+.feed-crop-score-ring strong {
+  display:
+    block;
+
+  color:
+    #ffffff;
+
+  font-size:
+    2.15rem;
+}
+
+.feed-crop-score-ring span {
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.85
+    );
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    800;
+}
+
+.feed-crop-score-detail {
+  padding:
+    12px 14px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.1
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.17
+    );
+
+  border-radius:
+    11px;
+}
+
+.feed-crop-score-detail span {
+  display:
+    block;
+
+  margin-bottom:
+    2px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.72
+    );
+
+  font-size:
+    0.74rem;
+
+  font-weight:
+    800;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-score-detail strong {
+  color:
+    #ffffff;
+}
+
+/*
+  ==================================================
+  Pill Lists
+  ==================================================
+*/
+
+.feed-crop-results-pill-list {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    7px;
+}
+
+.feed-crop-results-pill {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  min-height:
+    30px;
+
+  padding:
+    5px 10px;
+
+  color:
+    var(--results-green-dark);
+
+  background:
+    var(--results-green-light);
+
+  border:
+    1px solid
+    #c8ddcc;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    800;
+}
+
+.feed-crop-top-recommendation
+.feed-crop-results-pill {
+  color:
+    #173f25;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.91
+    );
+
+  border-color:
+    rgba(
+      255,
+      255,
+      255,
+      0.7
+    );
+}
+
+.feed-crop-results-muted {
+  color:
+    var(--results-muted);
+
+  font-style:
+    italic;
+}
+
+/*
+  ==================================================
+  Strengths and Limitations
+  ==================================================
+*/
+
+.feed-crop-results-two-column {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    16px;
+
+  margin-bottom:
+    28px;
+}
+
+.feed-crop-results-insight-card {
+  padding:
+    22px;
+
+  border-radius:
+    17px;
+}
+
+.feed-crop-results-insight-card h2 {
+  margin:
+    0 0 13px;
+
+  font-size:
+    1.16rem;
+}
+
+.feed-crop-results-insight-card.is-strength {
+  background:
+    var(--results-green-light);
+
+  border:
+    1px solid
+    #bfd9c4;
+}
+
+.feed-crop-results-insight-card.is-strength h2 {
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-results-insight-card.is-limitation {
+  background:
+    var(--results-orange-light);
+
+  border:
+    1px solid
+    #ead0b5;
+}
+
+.feed-crop-results-insight-card.is-limitation h2 {
+  color:
+    #7b451d;
+}
+
+.feed-crop-results-list {
+  display:
+    grid;
+
+  gap:
+    9px;
+
+  margin:
+    0;
+
+  padding:
+    0;
+
+  list-style:
+    none;
+}
+
+.feed-crop-results-list li {
+  display:
+    grid;
+
+  grid-template-columns:
+    24px 1fr;
+
+  gap:
+    8px;
+
+  align-items:
+    start;
+
+  line-height:
+    1.55;
+}
+
+.feed-crop-results-list-icon {
+  display:
+    grid;
+
+  width:
+    22px;
+
+  height:
+    22px;
+
+  place-items:
+    center;
+
+  color:
+    var(--results-green-dark);
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.72
+    );
+
+  border-radius:
+    50%;
+
+  font-size:
+    0.75rem;
+
+  font-weight:
+    900;
+}
+
+.is-limitation
+.feed-crop-results-list-icon {
+  color:
+    #7b451d;
+}
+
+.feed-crop-results-empty-note {
+  margin:
+    0;
+
+  color:
+    var(--results-muted);
+
+  font-style:
+    italic;
+
+  line-height:
+    1.55;
+}
+
+/*
+  ==================================================
+  Harvest Plan
+  ==================================================
+*/
+
+.feed-crop-results-harvest-plan,
+.feed-crop-results-category-section,
+.feed-crop-results-alternatives,
+.feed-crop-results-goal-section,
+.feed-crop-results-combination,
+.feed-crop-results-next-steps {
+  margin-bottom:
+    28px;
+
+  padding:
+    25px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 8px 22px
+    rgba(
+      31,
+      72,
+      43,
+      0.06
+    );
+}
+
+.feed-crop-results-harvest-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    13px;
+}
+
+.feed-crop-results-detail-card {
+  padding:
+    18px;
+
+  background:
+    var(--results-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-results-detail-icon {
+  display:
+    block;
+
+  margin-bottom:
+    7px;
+
+  font-size:
+    1.8rem;
+}
+
+.feed-crop-results-detail-card h3 {
+  margin:
+    0 0 8px;
+
+  color:
+    var(--results-green-dark);
+
+  font-size:
+    0.98rem;
+}
+
+.feed-crop-results-detail-card > strong {
+  display:
+    block;
+
+  margin-bottom:
+    10px;
+
+  color:
+    var(--results-text);
+
+  line-height:
+    1.45;
+}
+
+.feed-crop-results-detail-card p {
+  margin:
+    0 0 8px;
+
+  color:
+    var(--results-muted);
+
+  font-size:
+    0.88rem;
+
+  line-height:
+    1.5;
+}
+
+.feed-crop-results-detail-card p:last-child {
+  margin-bottom:
+    0;
+}
+
+.feed-crop-results-detail-note {
+  margin-top:
+    12px !important;
+}
+
+.feed-crop-results-safety-box {
+  margin-top:
+    18px;
+
+  padding:
+    19px;
+
+  color:
+    #684710;
+
+  background:
+    var(--results-gold-light);
+
+  border:
+    1px solid
+    #ead298;
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-results-safety-box h3 {
+  margin:
+    0 0 10px;
+
+  color:
+    #6d490d;
+}
+
+/*
+  ==================================================
+  Category Breakdown
+  ==================================================
+*/
+
+.feed-crop-category-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    13px;
+}
+
+.feed-crop-category-card {
+  padding:
+    17px;
+
+  background:
+    var(--results-green-pale);
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-category-heading {
+  display:
+    grid;
+
+  grid-template-columns:
+    auto 1fr auto;
+
+  gap:
+    8px;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    10px;
+}
+
+.feed-crop-category-icon {
+  font-size:
+    1.35rem;
+}
+
+.feed-crop-category-heading strong {
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-category-score {
+  font-weight:
+    900;
+}
+
+.feed-crop-category-track {
+  overflow:
+    hidden;
+
+  height:
+    8px;
+
+  margin-bottom:
+    10px;
+
+  background:
+    #dce7de;
+
+  border-radius:
+    999px;
+}
+
+.feed-crop-category-track span {
+  display:
+    block;
+
+  height:
+    100%;
+
+  background:
+    var(--results-green-medium);
+
+  border-radius:
+    inherit;
+}
+
+.feed-crop-category-card.is-excellent
+.feed-crop-category-track span {
+  background:
+    #3b874e;
+}
+
+.feed-crop-category-card.is-strong
+.feed-crop-category-track span {
+  background:
+    #72a34e;
+}
+
+.feed-crop-category-card.is-moderate
+.feed-crop-category-track span {
+  background:
+    var(--results-gold);
+}
+
+.feed-crop-category-card.is-limited
+.feed-crop-category-track span {
+  background:
+    #b9633b;
+}
+
+.feed-crop-category-card p {
+  margin:
+    0;
+
+  color:
+    var(--results-muted);
+
+  font-size:
+    0.87rem;
+
+  line-height:
+    1.55;
+}
+
+/*
+  ==================================================
+  Alternatives
+  ==================================================
+*/
+
+.feed-crop-alternative-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    16px;
+}
+
+.feed-crop-alternative-card {
+  position:
+    relative;
+
+  padding:
+    22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbf8,
+      #ffffff
+    );
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    17px;
+}
+
+.feed-crop-alternative-rank {
+  position:
+    absolute;
+
+  top:
+    13px;
+
+  right:
+    13px;
+
+  display:
+    grid;
+
+  width:
+    38px;
+
+  height:
+    38px;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--results-gold-dark);
+
+  border-radius:
+    50%;
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    900;
+}
+
+.feed-crop-alternative-heading {
+  display:
+    grid;
+
+  grid-template-columns:
+    auto 1fr auto;
+
+  gap:
+    11px;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    13px;
+
+  padding-right:
+    40px;
+}
+
+.feed-crop-alternative-icon {
+  display:
+    grid;
+
+  width:
+    48px;
+
+  height:
+    48px;
+
+  place-items:
+    center;
+
+  background:
+    var(--results-green-light);
+
+  border-radius:
+    13px;
+
+  font-size:
+    1.75rem;
+}
+
+.feed-crop-alternative-heading h3 {
+  margin:
+    0 0 2px;
+
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-alternative-heading div span {
+  color:
+    var(--results-muted);
+
+  font-size:
+    0.8rem;
+}
+
+.feed-crop-alternative-score {
+  color:
+    var(--results-green-dark);
+
+  font-size:
+    1.15rem;
+}
+
+.feed-crop-alternative-path {
+  margin:
+    0 0 13px;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.5;
+}
+
+.feed-crop-alternative-insights {
+  display:
+    grid;
+
+  gap:
+    12px;
+
+  margin:
+    15px 0;
+}
+
+.feed-crop-alternative-insights > div {
+  padding:
+    13px;
+
+  background:
+    var(--results-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    11px;
+}
+
+.feed-crop-alternative-insights > div > strong {
+  display:
+    block;
+
+  margin-bottom:
+    7px;
+
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-results-text-link {
+  font-weight:
+    850;
+
+  text-decoration:
+    none;
+}
+
+/*
+  ==================================================
+  Goal Table
+  ==================================================
+*/
+
+.feed-crop-results-table-wrap {
+  overflow-x:
+    auto;
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-results-table {
+  width:
+    100%;
+
+  border-collapse:
+    collapse;
+}
+
+.feed-crop-results-table th,
+.feed-crop-results-table td {
+  padding:
+    14px;
+
+  border-bottom:
+    1px solid
+    var(--results-border);
+
+  text-align:
+    left;
+
+  vertical-align:
+    middle;
+}
+
+.feed-crop-results-table th {
+  color:
+    var(--results-green-dark);
+
+  background:
+    var(--results-green-light);
+
+  font-size:
+    0.8rem;
+
+  letter-spacing:
+    0.03em;
+
+  text-transform:
+    uppercase;
+}
+
+.feed-crop-results-table tr:last-child td {
+  border-bottom:
+    0;
+}
+
+.feed-crop-goal-rank {
+  display:
+    inline-grid;
+
+  width:
+    28px;
+
+  height:
+    28px;
+
+  margin-right:
+    7px;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--results-gold-dark);
+
+  border-radius:
+    50%;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    900;
+}
+
+/*
+  ==================================================
+  Combination Plan
+  ==================================================
+*/
+
+.feed-crop-combination-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    14px;
+}
+
+.feed-crop-combination-card {
+  position:
+    relative;
+
+  min-height:
+    210px;
+
+  padding:
+    21px;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--results-green-light),
+      #ffffff
+    );
+
+  border:
+    1px solid
+    #c7dccb;
+
+  border-radius:
+    16px;
+
+  text-align:
+    center;
+}
+
+.feed-crop-combination-number {
+  position:
+    absolute;
+
+  top:
+    12px;
+
+  left:
+    12px;
+
+  display:
+    grid;
+
+  width:
+    28px;
+
+  height:
+    28px;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--results-green);
+
+  border-radius:
+    50%;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    900;
+}
+
+.feed-crop-combination-icon {
+  display:
+    block;
+
+  margin:
+    8px 0 9px;
+
+  font-size:
+    2.25rem;
+}
+
+.feed-crop-combination-card h3 {
+  margin:
+    0 0 8px;
+
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-combination-card p {
+  margin:
+    0 0 8px;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.55;
+}
+
+.feed-crop-combination-season {
+  display:
+    inline-block;
+
+  padding:
+    5px 9px;
+
+  color:
+    var(--results-green-dark);
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    #cadece;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.75rem;
+}
+
+.feed-crop-combination-note {
+  margin-top:
+    16px;
+
+  padding:
+    15px 17px;
+
+  color:
+    #614411;
+
+  background:
+    var(--results-gold-light);
+
+  border:
+    1px solid
+    #ecd399;
+
+  border-radius:
+    12px;
+
+  line-height:
+    1.55;
+}
+
+/*
+  ==================================================
+  Ineligible Crops
+  ==================================================
+*/
+
+.feed-crop-results-excluded {
+  margin-bottom:
+    28px;
+}
+
+.feed-crop-results-excluded details {
+  overflow:
+    hidden;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--results-border);
+
+  border-radius:
+    16px;
+}
+
+.feed-crop-results-excluded summary {
+  display:
+    flex;
+
+  gap:
+    12px;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  padding:
+    18px 20px;
+
+  cursor:
+    pointer;
+
+  color:
+    var(--results-green-dark);
+
+  background:
+    var(--results-green-pale);
+
+  font-weight:
+    850;
+}
+
+.feed-crop-results-excluded summary span {
+  display:
+    grid;
+
+  min-width:
+    30px;
+
+  height:
+    30px;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--results-red);
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.75rem;
+}
+
+.feed-crop-results-excluded-body {
+  padding:
+    20px;
+}
+
+.feed-crop-results-excluded-body > p {
+  margin:
+    0 0 16px;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.6;
+}
+
+.feed-crop-excluded-grid {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    13px;
+}
+
+.feed-crop-excluded-card {
+  padding:
+    17px;
+
+  background:
+    var(--results-red-light);
+
+  border:
+    1px solid
+    #e2c1c1;
+
+  border-radius:
+    13px;
+}
+
+.feed-crop-excluded-heading {
+  display:
+    flex;
+
+  gap:
+    9px;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    11px;
+}
+
+.feed-crop-excluded-heading span {
+  font-size:
+    1.55rem;
+}
+
+.feed-crop-excluded-heading h3 {
+  margin:
+    0;
+
+  color:
+    #743131;
+}
+
+/*
+  ==================================================
+  Next Steps
+  ==================================================
+*/
+
+.feed-crop-results-step-list {
+  display:
+    grid;
+
+  gap:
+    12px;
+
+  margin:
+    0;
+
+  padding:
+    0;
+
+  list-style:
+    none;
+}
+
+.feed-crop-results-step-list li {
+  display:
+    grid;
+
+  grid-template-columns:
+    34px 1fr;
+
+  gap:
+    12px;
+
+  align-items:
+    start;
+
+  padding:
+    15px;
+
+  background:
+    var(--results-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    12px;
+
+  counter-increment:
+    feed-crop-step;
+}
+
+.feed-crop-results-step-list {
+  counter-reset:
+    feed-crop-step;
+}
+
+.feed-crop-results-step-list li > span {
+  display:
+    grid;
+
+  width:
+    32px;
+
+  height:
+    32px;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--results-green);
+
+  border-radius:
+    50%;
+
+  font-weight:
+    900;
+}
+
+.feed-crop-results-step-list li > span::before {
+  content:
+    counter(
+      feed-crop-step
+    );
+}
+
+.feed-crop-results-step-list p {
+  margin:
+    3px 0 0;
+
+  line-height:
+    1.6;
+}
+
+.feed-crop-results-action-row {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    11px;
+
+  align-items:
+    center;
+
+  margin-top:
+    20px;
+}
+
+/*
+  ==================================================
+  No Match State
+  ==================================================
+*/
+
+.feed-crop-results-no-match {
+  padding:
+    34px;
+
+  text-align:
+    center;
+}
+
+.feed-crop-results-no-match-icon {
+  margin-bottom:
+    12px;
+
+  font-size:
+    3.2rem;
+}
+
+.feed-crop-results-no-match h1 {
+  max-width:
+    760px;
+
+  margin:
+    0 auto 14px;
+
+  color:
+    var(--results-green-dark);
+}
+
+.feed-crop-results-no-match > p {
+  max-width:
+    740px;
+
+  margin:
+    0 auto 13px;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.7;
+}
+
+.feed-crop-results-no-match
+.feed-crop-results-action-row {
+  justify-content:
+    center;
+
+  margin-bottom:
+    28px;
+}
+
+/*
+  ==================================================
+  Supporting Footer Content
+  ==================================================
+*/
+
+.feed-crop-results-support {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    15px;
+
+  padding:
+    0 38px 42px;
+}
+
+.feed-crop-results-support-card {
+  padding:
+    21px;
+
+  background:
+    var(--results-soil-light);
+
+  border:
+    1px solid
+    #dfd2c7;
+
+  border-radius:
+    16px;
+}
+
+.feed-crop-results-support-card:nth-child(2) {
+  background:
+    var(--results-green-light);
+
+  border-color:
+    #c8ddcc;
+}
+
+.feed-crop-results-support-card:nth-child(3) {
+  background:
+    var(--results-blue-light);
+
+  border-color:
+    #c9dde7;
+}
+
+.feed-crop-results-support-card span {
+  display:
+    block;
+
+  margin-bottom:
+    8px;
+
+  font-size:
+    1.9rem;
+}
+
+.feed-crop-results-support-card h2 {
+  margin:
+    0 0 8px;
+
+  color:
+    var(--results-green-dark);
+
+  font-size:
+    1.08rem;
+}
+
+.feed-crop-results-support-card p {
+  margin:
+    0 0 11px;
+
+  color:
+    var(--results-muted);
+
+  line-height:
+    1.6;
+}
+
+.feed-crop-results-support-card p:last-child {
+  margin-bottom:
+    0;
+}
+
+.feed-crop-results-support-card a {
+  font-weight:
+    850;
+}
+
+/*
+  ==================================================
+  Disclaimer
+  ==================================================
+*/
+
+.feed-crop-results-disclaimer {
+  display:
+    grid;
+
+  grid-template-columns:
+    auto 1fr;
+
+  gap:
+    14px;
+
+  align-items:
+    start;
+
+  margin:
+    0 38px 38px;
+
+  padding:
+    18px 20px;
+
+  color:
+    #624710;
+
+  background:
+    var(--results-gold-light);
+
+  border:
+    1px solid
+    #ead298;
+
+  border-radius:
+    14px;
+}
+
+.feed-crop-results-disclaimer-icon {
+  font-size:
+    1.7rem;
+}
+
+.feed-crop-results-disclaimer strong {
+  display:
+    block;
+
+  margin-bottom:
+    4px;
+}
+
+.feed-crop-results-disclaimer p {
+  margin:
+    0;
+
+  line-height:
+    1.6;
+}
+
+/*
+  ==================================================
+  Utilities
+  ==================================================
+*/
+
+[hidden] {
+  display:
+    none !important;
+}
+
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline:
+    3px solid
+    rgba(
+      213,
+      154,
+      44,
+      0.45
+    );
+
+  outline-offset:
+    3px;
+}
+
+/*
+  ==================================================
+  Responsive
+  ==================================================
+*/
+
+@media
+(max-width: 950px) {
+
+  .feed-crop-results-hero-grid,
+  .feed-crop-top-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-results-hero-art {
+    max-width:
+      520px;
+  }
+
+  .feed-crop-top-score-panel {
+    grid-template-columns:
+      auto 1fr 1fr;
+
+    align-items:
+      center;
+  }
+
+  .feed-crop-score-ring {
+    width:
+      150px;
+
+    height:
+      150px;
+
+    margin:
+      0;
+  }
+
+  .feed-crop-score-ring::before {
+    width:
+      116px;
+
+    height:
+      116px;
+  }
+
+  .feed-crop-results-harvest-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+  .feed-crop-results-support {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+@media
+(max-width: 760px) {
+
+  .feed-crop-results-page {
+    width:
+      min(
+        calc(100% - 18px),
+        1120px
+      );
+
+    margin:
+      20px auto 34px;
+  }
+
+  .feed-crop-results-shell {
+    border-radius:
+      17px;
+  }
+
+  .feed-crop-results-hero {
+    padding:
+      32px 22px;
+  }
+
+  .feed-crop-results-toolbar {
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+
+    padding:
+      16px 18px;
+  }
+
+  .feed-crop-results-toolbar-actions {
+    display:
+      grid;
+
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-results-app {
+    padding:
+      24px 18px 30px;
+  }
+
+  .feed-crop-results-summary-grid,
+  .feed-crop-results-two-column,
+  .feed-crop-category-grid,
+  .feed-crop-alternative-grid,
+  .feed-crop-combination-grid,
+  .feed-crop-excluded-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-results-harvest-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-top-recommendation,
+  .feed-crop-results-plan-summary,
+  .feed-crop-results-harvest-plan,
+  .feed-crop-results-category-section,
+  .feed-crop-results-alternatives,
+  .feed-crop-results-goal-section,
+  .feed-crop-results-combination,
+  .feed-crop-results-next-steps {
+    padding:
+      19px;
+  }
+
+  .feed-crop-top-score-panel {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-score-ring {
+    margin:
+      0 auto;
+  }
+
+  .feed-crop-results-support {
+    padding:
+      0 18px 28px;
+  }
+
+  .feed-crop-results-disclaimer {
+    margin:
+      0 18px 28px;
+  }
+
+}
+
+@media
+(max-width: 480px) {
+
+  .feed-crop-results-hero-art {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-top-title-row {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+  }
+
+  .feed-crop-top-icon {
+    width:
+      56px;
+
+    height:
+      56px;
+  }
+
+  .feed-crop-results-summary-card {
+    grid-template-columns:
+      auto 1fr;
+  }
+
+  .feed-crop-results-action-row {
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+  }
+
+  .feed-crop-results-action-row a,
+  .feed-crop-results-action-row button {
+    width:
+      100%;
+  }
+
+  .feed-crop-results-table th,
+  .feed-crop-results-table td {
+    padding:
+      11px;
+
+    font-size:
+      0.84rem;
+  }
+
+}
+
+/*
+  ==================================================
+  Reduced Motion
+  ==================================================
+*/
+
+@media
+(prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior:
+      auto !important;
+
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.01ms !important;
+  }
+
+}
+
+/*
+  ==================================================
+  Print / Save as PDF
+  ==================================================
+*/
+
+@media print {
+
+  @page {
+    size:
+      auto;
+
+    margin:
+      0.55in;
+  }
+
+  body {
+    color:
+      #000000;
+
+    background:
+      #ffffff;
+  }
+
+  .site-header,
+  #navigation,
+  #footer,
+  .feed-crop-results-toolbar,
+  .feed-crop-results-hero-art,
+  .feed-crop-results-support,
+  .feed-crop-results-action-row,
+  .feed-crop-results-disclaimer {
+    display:
+      none !important;
+  }
+
+  .feed-crop-results-page {
+    width:
+      100%;
+
+    margin:
+      0;
+  }
+
+  .feed-crop-results-shell {
+    overflow:
+      visible;
+
+    border:
+      0;
+
+    border-radius:
+      0;
+
+    box-shadow:
+      none;
+  }
+
+  .feed-crop-results-hero {
+    padding:
+      0 0 22px;
+
+    color:
+      #000000;
+
+    background:
+      none;
+  }
+
+  .feed-crop-results-hero::before,
+  .feed-crop-results-hero::after {
+    display:
+      none;
+  }
+
+  .feed-crop-results-hero h1,
+  .feed-crop-results-hero-lead {
+    color:
+      #000000;
+  }
+
+  .feed-crop-results-hero-kicker {
+    padding:
+      0;
+
+    color:
+      #000000;
+
+    background:
+      none;
+
+    border:
+      0;
+  }
+
+  .feed-crop-results-app {
+    padding:
+      0;
+
+    background:
+      none;
+  }
+
+  .feed-crop-top-recommendation {
+    color:
+      #000000;
+
+    background:
+      #f4f4f4;
+
+    border:
+      1px solid
+      #999999;
+
+    box-shadow:
+      none;
+  }
+
+  .feed-crop-top-recommendation h1,
+  .feed-crop-top-message,
+  .feed-crop-top-meta,
+  .feed-crop-top-meta strong,
+  .feed-crop-top-harvest > strong,
+  .feed-crop-score-detail strong,
+  .feed-crop-score-detail span {
+    color:
+      #000000;
+  }
+
+  .feed-crop-top-badge,
+  .feed-crop-top-harvest,
+  .feed-crop-score-detail {
+    color:
+      #000000;
+
+    background:
+      #ffffff;
+
+    border-color:
+      #999999;
+  }
+
+  .feed-crop-score-ring {
+    background:
+      none;
+
+    border:
+      8px solid
+      #666666;
+  }
+
+  .feed-crop-score-ring::before {
+    background:
+      #ffffff;
+
+    border-color:
+      #999999;
+  }
+
+  .feed-crop-score-ring strong,
+  .feed-crop-score-ring span {
+    color:
+      #000000;
+  }
+
+  .feed-crop-results-plan-summary,
+  .feed-crop-results-insight-card,
+  .feed-crop-results-harvest-plan,
+  .feed-crop-results-category-section,
+  .feed-crop-results-alternatives,
+  .feed-crop-results-goal-section,
+  .feed-crop-results-combination,
+  .feed-crop-results-next-steps,
+  .feed-crop-alternative-card,
+  .feed-crop-combination-card,
+  .feed-crop-results-detail-card,
+  .feed-crop-category-card,
+  .feed-crop-results-review-section,
+  .feed-crop-results-excluded details {
+    break-inside:
+      avoid;
+
+    box-shadow:
+      none !important;
+  }
+
+  .feed-crop-results-excluded details:not([open]) {
+    display:
+      none;
+  }
+
+  a {
+    color:
+      #000000;
+
+    text-decoration:
+      none;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Free calculators, chick care guides, breed comparisons, supply recommendations, and planning tools for backyard chicken keepers.
+</p>
+
+</header>
+
+<div id="navigation"></div>
+
+<main class="feed-crop-results-page">
+
+<div class="feed-crop-results-shell">
+
+<section class="feed-crop-results-hero">
+
+<div class="feed-crop-results-hero-grid">
+
+<div>
+
+<span class="feed-crop-results-hero-kicker">
+🌾 Personalized Feed Crop Report
+</span>
+
+<h1>
+Your Backyard Chicken Feed Crop Plan
+</h1>
+
+<p class="feed-crop-results-hero-lead">
+Your flock, property, climate, labor, harvest preferences, and priorities have been compared against every production-ready crop in the Feed Crop Research Database.
+</p>
+
+</div>
+
+<div
+  class="feed-crop-results-hero-art"
+  aria-label="Report contents"
+>
+
+<div class="feed-crop-results-hero-card">
+
+<span>
+🏆
+</span>
+
+<strong>
+Best Overall Match
+</strong>
+
+</div>
+
+<div class="feed-crop-results-hero-card">
+
+<span>
+🧺
+</span>
+
+<strong>
+Harvest Plan
+</strong>
+
+</div>
+
+<div class="feed-crop-results-hero-card">
+
+<span>
+📊
+</span>
+
+<strong>
+Score Breakdown
+</strong>
+
+</div>
+
+<div class="feed-crop-results-hero-card">
+
+<span>
+🗺️
+</span>
+
+<strong>
+Practical Next Steps
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="feed-crop-results-toolbar">
+
+<div class="feed-crop-results-toolbar-message">
+
+<strong>
+Your report is stored only in this browser session.
+</strong>
+
+You may print it, save it as a PDF, or return to the questionnaire to change your answers.
+
+</div>
+
+<div class="feed-crop-results-toolbar-actions">
+
+<button
+  id="feed-crop-results-edit"
+  type="button"
+  class="feed-crop-results-toolbar-secondary"
+>
+✏️ Edit Answers
+</button>
+
+<button
+  id="feed-crop-results-print"
+  type="button"
+  class="feed-crop-results-toolbar-primary"
+>
+🖨️ Print or Save as PDF
+</button>
+
+<button
+  id="feed-crop-results-restart"
+  type="button"
+  class="feed-crop-results-toolbar-danger"
+>
+↻ Start New Plan
+</button>
+
+</div>
+
+</div>
+
+<div
+  id="feed-crop-results-app"
+  class="feed-crop-results-app"
+  data-questionnaire-url="feed-crop-planner.html"
+>
+
+<div
+  id="feed-crop-results-loading"
+  class="feed-crop-results-loading"
+>
+
+<div class="feed-crop-results-loading-card">
+
+<div
+  class="feed-crop-results-loading-icon"
+  aria-hidden="true"
+>
+🌱
+</div>
+
+<h2>
+Growing Your Personalized Report
+</h2>
+
+<p>
+The planner is registering the crop database, validating the ready crops, comparing your answers, testing eligible harvest paths, and ranking the strongest matches.
+</p>
+
+</div>
+
+</div>
+
+<div
+  id="feed-crop-results-error"
+  class="feed-crop-results-error"
+  role="alert"
+  hidden
+></div>
+
+<div
+  id="feed-crop-results-report"
+  class="feed-crop-results-report"
+  hidden
+></div>
+
+</div>
+
+<section class="feed-crop-results-support">
+
+<article class="feed-crop-results-support-card">
+
+<span aria-hidden="true">
+🌱
+</span>
+
+<h2>
+Explore the Feed Crop Library
+</h2>
+
+<p>
+Learn how grains, greens, legumes, storage produce, forage crops, shrubs, and trees may support a backyard flock.
+</p>
+
+<p>
+<a href="chicken-feed-crops.html">
+Explore Chicken Feed Crops →
+</a>
+</p>
+
+</article>
+
+<article class="feed-crop-results-support-card">
+
+<span aria-hidden="true">
+🐓
+</span>
+
+<h2>
+Plan the Rest of Your Flock
+</h2>
+
+<p>
+Estimate flock size, expected egg production, coop space, feed needs, and other practical backyard chicken requirements.
+</p>
+
+<p>
+<a href="backyard-chicken-flock-planner.html">
+Open the Backyard Flock Planner →
+</a>
+</p>
+
+</article>
+
+<article class="feed-crop-results-support-card">
+
+<span aria-hidden="true">
+🥣
+</span>
+
+<h2>
+Estimate Purchased Feed Costs
+</h2>
+
+<p>
+Homegrown crops are supplemental. Use the feed calculator to estimate the complete poultry feed your flock may still require.
+</p>
+
+<p>
+<a href="chicken-feed-cost-calculator.html">
+Open the Feed Cost Calculator →
+</a>
+</p>
+
+</article>
+
+</section>
+
+<aside class="feed-crop-results-disclaimer">
+
+<div
+  class="feed-crop-results-disclaimer-icon"
+  aria-hidden="true"
+>
+🛡️
+</div>
+
+<div>
+
+<strong>
+Important poultry nutrition reminder
+</strong>
+
+<p>
+This report recommends supplemental crops and practical harvest paths. It does not formulate a complete poultry ration or determine safe inclusion percentages. Continue providing an age-appropriate complete poultry feed unless a qualified poultry nutrition professional has formulated and evaluated an alternative ration.
+</p>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<div id="footer"></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Backyard Chicken Feed Crop Planner Results",
+  "url": "https://gregnalley.github.io/chicken-cost-planner/feed-crop-planner-results.html",
+  "description": "A personalized supplemental feed crop report for backyard chicken keepers, including crop rankings, harvest paths, strengths, limitations, storage guidance, and practical next steps.",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Backyard Chicken Planner",
+    "url": "https://gregnalley.github.io/chicken-cost-planner/"
+  }
+}
+</script>
+
+<script src="scripts/site.js"></script>
+
+<script src="assets/data/feed-crops.js"></script>
+
+<script src="scripts/feed-crop-planner-config.js"></script>
+
+<script src="scripts/feed-crop-planner-data.js"></script>
+
+<script src="scripts/feed-crop-planner-engine.js"></script>
+
+<script src="scripts/feed-crop-planner-questionnaire.js"></script>
+
+<script src="scripts/feed-crop-planner-results.js"></script>
+
+</body>
+
+</html>
