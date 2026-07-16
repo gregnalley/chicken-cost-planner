@@ -86,6 +86,237 @@
   font-size: 1.3rem;
 }
 
+/*
+==================================================
+Feed Crop Planner Callout
+==================================================
+*/
+
+.feed-planner-callout {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  padding:
+    28px;
+
+  margin:
+    24px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1d5d35,
+      #3b8551
+    );
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 12px 28px
+    rgba(
+      28,
+      79,
+      43,
+      0.18
+    );
+}
+
+.feed-planner-callout::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  right:
+    -70px;
+
+  top:
+    -70px;
+
+  width:
+    220px;
+
+  height:
+    220px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.07
+    );
+
+}
+
+.feed-planner-callout-grid {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  display:
+    grid;
+
+  grid-template-columns:
+      minmax(0,1.5fr)
+      250px;
+
+  gap:
+    24px;
+
+  align-items:
+    center;
+}
+
+.feed-planner-callout h2 {
+
+  color:
+    #ffffff;
+
+  margin:
+    0 0 12px;
+}
+
+.feed-planner-callout p {
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      .93
+    );
+
+  line-height:
+    1.7;
+}
+
+.feed-planner-actions{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-top:20px;
+}
+
+.feed-planner-primary{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  min-height:48px;
+
+  padding:12px 20px;
+
+  background:#ffe49f;
+
+  color:#254328;
+
+  font-weight:800;
+
+  text-decoration:none;
+
+  border-radius:10px;
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      0,
+      0,
+      0,
+      .16
+    );
+}
+
+.feed-planner-secondary{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  min-height:48px;
+
+  padding:12px 18px;
+
+  border-radius:10px;
+
+  border:1px solid
+    rgba(
+      255,
+      255,
+      255,
+      .28
+    );
+
+  color:#fff;
+
+  text-decoration:none;
+}
+
+.feed-planner-features{
+
+  display:grid;
+
+  gap:12px;
+}
+
+.feed-planner-feature{
+
+  padding:14px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      .92
+    );
+
+  border-radius:12px;
+
+  text-align:center;
+}
+
+.feed-planner-feature strong{
+
+  display:block;
+
+  color:#1b4d2b;
+
+  margin-top:4px;
+}
+
+@media(max-width:760px){
+
+.feed-planner-callout-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 .crop-scientific-name {
   margin: 0 0 14px;
   color: #68726b;
@@ -324,6 +555,108 @@ Some crops produce energy-rich seeds or grain. Others provide fresh leaves, fora
 <p>
 The best crop for your flock depends on your available space, climate, water supply, growing experience, storage options, and whether your main goal is energy, protein, fresh forage, or enrichment.
 </p>
+
+</div>
+
+<div class="section">
+
+<div class="feed-planner-callout">
+
+<div class="feed-planner-callout-grid">
+
+<div>
+
+<h2>
+🧭 Not Sure Which Feed Crops Are Best?
+</h2>
+
+<p>
+
+Every backyard is different.
+
+The best crop for your chickens depends on your climate, available space, soil, sunlight, water, harvest goals, storage plans, and how much work you're willing to do.
+
+Instead of guessing, let the Backyard Chicken Planner compare all of our research-backed feed crops and recommend the ones that best fit your situation.
+
+</p>
+
+<div class="feed-planner-actions">
+
+<a
+class="feed-planner-primary"
+href="feed-crop-planner.html">
+
+🌱 Build My Feed Crop Plan →
+
+</a>
+
+<a
+class="feed-planner-secondary"
+href="tools.html">
+
+🧰 View All Planning Tools
+
+</a>
+
+</div>
+
+</div>
+
+<div class="feed-planner-features">
+
+<div class="feed-planner-feature">
+
+🌎
+
+<strong>
+
+Matches Your Climate
+
+</strong>
+
+</div>
+
+<div class="feed-planner-feature">
+
+🐔
+
+<strong>
+
+Built Around Your Flock
+
+</strong>
+
+</div>
+
+<div class="feed-planner-feature">
+
+🌾
+
+<strong>
+
+Ranks the Best Crops
+
+</strong>
+
+</div>
+
+<div class="feed-planner-feature">
+
+📄
+
+<strong>
+
+Creates a Personalized Report
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
