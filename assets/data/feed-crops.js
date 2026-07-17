@@ -1,5 +1,18 @@
 const BCP_FEED_CROPS = {
 
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - SUNFLOWER
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
+
+
   "CROP-SUNFLOWER": {
     id: "CROP-SUNFLOWER",
 
@@ -1984,6 +1997,18 @@ const BCP_FEED_CROPS = {
     }
 
 },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - COWPEAS
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
 
   "CROP-COWPEA": {
     id: "CROP-COWPEA",
@@ -4036,6 +4061,18 @@ const BCP_FEED_CROPS = {
 }
 
     },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - MILLET
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
     
 
   "CROP-PROSO-MILLET": {
@@ -6055,6 +6092,18 @@ plannerData: {
 }
 
   },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - PUMPKIN-WINTER-SQUASH
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
 
     "CROP-PUMPKIN-WINTER-SQUASH": {
     id: "CROP-PUMPKIN-WINTER-SQUASH",
@@ -8205,6 +8254,18 @@ plannerData: {
 
   },
 
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - KALE-COLLARDS
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
+
     "CROP-KALE-COLLARDS": {
     id: "CROP-KALE-COLLARDS",
 
@@ -10210,6 +10271,18 @@ plannerData: {
 }
 
   },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - WHITE CLOVER
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
 
 
   "CROP-WHITE-CLOVER": {
@@ -12251,6 +12324,19 @@ plannerData: {
   }
   }
 }, 
+
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - ALFALFA
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
 
     "CROP-ALFALFA": {
     id: "CROP-ALFALFA",
@@ -14427,6 +14513,18 @@ plannerData: {
       }
     }
   },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - MULBERRY
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
 
   "CROP-MULBERRY": {
     id: "CROP-MULBERRY",
@@ -16852,6 +16950,18 @@ plannerData: {
     }
   },
 
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - FIELD CORN
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
+
   "CROP-FIELD-CORN": {
     id: "CROP-FIELD-CORN",
 
@@ -18974,6 +19084,18 @@ plannerData: {
       }
     }
   },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - SORGHUM
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
 
   "CROP-GRAIN-SORGHUM": {
     id: "CROP-GRAIN-SORGHUM",
@@ -21131,6 +21253,19 @@ plannerData: {
       }
     }
   },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - OATS
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
+
 
   "CROP-OATS": {
     id:
@@ -24008,8 +24143,870 @@ plannerData: {
           "No medicinal claims are made.",
           "The crop must remain in testing until targeted profiles and the public growing guide are complete."
         ]
+
       }
+      }
+    },
+
+    ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - WHEAT
+    //
+    //
+    //
+    //
+    //////////////////////////////////////////////
+
+  "CROP-WHEAT": {
+    "id": "CROP-WHEAT",
+    "name": "Wheat",
+    "scientificName": "Triticum aestivum",
+    "category": "Cool-Season Grain, Forage, and Cover Crop",
+    "cropType": "Annual",
+    "seasonType": "Cool Season",
+    "status": "Initial Research Complete",
+    "summary": "Wheat is a cool-season annual cereal that can provide controlled young forage, whole mature seed heads, or dry stored grain for adult chickens. Mature wheat grain is a relatively low-fiber, energy-oriented cereal with more protein than corn, while winter wheat can also provide erosion control, nutrient scavenging, weed suppression, and seasonal ground cover. It remains a supplemental crop rather than a complete poultry ration.",
+
+    "chickenUse": {
+      "edibleParts": [
+        "Young vegetative leaves and shoots",
+        "Mature wheat kernels",
+        "Whole mature seed heads",
+        "Threshed whole grain",
+        "Cracked or coarsely ground grain"
+      ],
+
+      "primaryValue": [
+        "Cool-season fresh forage",
+        "Concentrated carbohydrate energy",
+        "Moderate protein",
+        "Pecking and foraging enrichment",
+        "Dry grain storage",
+        "Seasonal ground cover"
+      ],
+
+      "feedingForms": [
+        "Protected living forage",
+        "Cut-and-carry young greens",
+        "Whole dried seed heads",
+        "Threshed whole grain",
+        "Cracked or coarsely ground grain",
+        "A measured ingredient in a properly balanced poultry ration"
+      ],
+
+      "bestFor": [
+        "Adult chickens receiving a complete base ration",
+        "Cool-season feed gardens",
+        "Protected forage frames",
+        "Rotational chicken areas",
+        "Small-flock enrichment",
+        "Dry winter grain storage",
+        "Growers seeking a dual-purpose forage and grain crop"
+      ],
+
+      "supplementOnly": true,
+
+      "preparationNotes": "For forage use, provide controlled access to young vegetative growth or harvest clean young leaves for cut-and-carry feeding. Where grain harvest is intended, stop grazing or cutting before stem jointing so the growing point and future grain yield are not damaged. Harvest mature heads after the kernels have filled, then dry thoroughly before storing whole heads or threshed grain. Whole grain may be fed as a measured supplement to adult chickens; cracking or coarse grinding can improve handling but is not required for every adult flock.",
+
+      "safetyNotes": "Wheat must supplement rather than replace an age-appropriate complete poultry ration. Do not feed moldy, musty, sprouted, heat-damaged, ergot-contaminated, chemically treated, or otherwise questionable grain or forage. Keep planting seed treated with fungicides or insecticides completely separate from feed. Avoid unrestricted access to mature standing wheat if the crop is expected to produce grain."
+    },
+
+    "nutrition": {
+      "basis": "Approximate values for dry hard and soft wheat grain used as poultry-feed ingredients. Composition varies by wheat class, cultivar, growing environment, test weight, damage, and analytical method. Fresh forage and wheat by-products are not nutritionally equivalent to whole grain.",
+
+      "crudeProteinPercent": "Approximately 10.8% to 13.5% for soft and hard wheat grain",
+
+      "fatPercent": "Approximately 1.7% to 1.9%",
+
+      "fiberPercent": "Approximately 2.8% to 3.0%",
+
+      "calciumPercent": "Approximately 0.05%",
+
+      "phosphorusPercent": "Approximately 0.30% to 0.41% total phosphorus",
+
+      "notableNutrients": [
+        "Starch-based energy",
+        "Moderate protein",
+        "More lysine and tryptophan than corn",
+        "Low crude fiber relative to ordinary hulled oats",
+        "Phosphorus",
+        "Gluten-forming proteins"
+      ],
+
+      "limitations": [
+        "Wheat is an energy grain rather than a complete poultry feed",
+        "Protein level and amino-acid balance vary among hard and soft wheat classes",
+        "Calcium is very low for laying-hen requirements",
+        "Most phosphorus is not fully available to poultry because much occurs as phytate",
+        "Large supplemental amounts can dilute vitamins, minerals, calcium, and balanced amino acids from complete feed",
+        "Fresh forage, whole grain, bran, middlings, screenings, and other wheat products must not be treated as nutritionally identical",
+        "Damaged, moldy, sprouted, ergot-contaminated, or chemically treated wheat is unsuitable for flock use"
+      ]
+    },
+
+    "growing": {
+      "sunlight": "Full sun",
+
+      "soilTemperatureMinimumF": null,
+
+      "idealSoilTemperatureF": null,
+
+      "frostTolerance": "Moderate to High for adapted winter-wheat varieties; variety- and growth-stage-dependent",
+
+      "heatTolerance": "Low to Moderate during reproductive growth",
+
+      "droughtTolerance": "Moderate after establishment, but moisture stress can reduce tillering, head development, and grain fill",
+
+      "soilPHMinimum": 6.0,
+
+      "soilPHMaximum": 7.0,
+
+      "waterNeeds": "Moderate; dependable moisture is important for germination, establishment, tillering, stem elongation, heading, flowering, and grain filling, while saturated soil and poor drainage raise disease and root-loss risk",
+
+      "directSow": true,
+
+      "transplantRecommended": false,
+
+      "daysToFirstHarvestMinimum": null,
+
+      "daysToFirstHarvestMaximum": null,
+
+      "daysToMaturityMinimum": null,
+
+      "daysToMaturityMaximum": null,
+
+      "plantSpacingInches": "Normally planted as a dense drilled or broadcast stand rather than individually spaced plants",
+
+      "rowSpacingInches": "Approximately 6 to 7.5 inches for drilled production; backyard layouts may vary",
+
+      "plantingDepthInches": "Approximately 0.75 to 1.5 inches; avoid planting deeper than about 1.5 to 2 inches",
+
+      "successionPlanting": false,
+
+      "regrowthAfterHarvest": false
+    },
+
+    "regionalPlanting": {
+      "coldNorth": {
+        "plantingWindow": "Plant locally adapted winter wheat in late summer or early fall early enough to establish before winter, or plant spring wheat as soon as soil is workable where winter wheat is unreliable. Use regional variety recommendations because winter hardiness and vernalization requirements vary.",
+
+        "harvestWindow": "Late spring through summer, depending on winter versus spring type and local climate."
+      },
+
+      "midwestNortheast": {
+        "plantingWindow": "Plant winter wheat during the locally recommended fall window, commonly after summer crops are removed. Spring wheat may be planted early in spring in regions where it is adapted.",
+
+        "harvestWindow": "Late spring through midsummer, depending on wheat class, planting date, and latitude."
+      },
+
+      "upperSouth": {
+        "plantingWindow": "Plant winter wheat in fall near the locally recommended grain-planting window. Earlier planting may increase fall forage but can also increase insect, disease, and grain-yield risks.",
+
+        "harvestWindow": "Late spring to early summer."
+      },
+
+      "deepSouth": {
+        "plantingWindow": "Plant adapted winter wheat during the regional fall window after temperatures moderate. Select varieties with appropriate vernalization, disease resistance, and maturity for the location.",
+
+        "harvestWindow": "Spring to early summer."
+      },
+
+      "southwest": {
+        "plantingWindow": "Plant adapted winter or spring wheat according to elevation, winter temperatures, irrigation availability, and local production guidance. Avoid placing grain fill in extreme heat where possible.",
+
+        "harvestWindow": "Late spring through summer, depending on elevation and wheat type."
+      },
+
+      "pacificNorthwest": {
+        "plantingWindow": "Plant locally adapted winter wheat in fall or spring wheat early in spring, depending on rainfall zone, winter hardiness, disease pressure, and local production system.",
+
+        "harvestWindow": "Summer."
+      },
+
+      "coastalWest": {
+        "plantingWindow": "Plant during the locally recommended cool-season window, often fall through winter in mild climates. Variety selection and disease management are important where winters are wet.",
+
+        "harvestWindow": "Late spring through summer."
+      }
+    },
+
+    "spaceAndYield": {
+      "plantsPer10SquareFeet": null,
+
+      "plantsPer50SquareFeet": null,
+
+      "plantsPer100SquareFeet": null,
+
+      "expectedYieldPerPlantMinimumLbs": null,
+
+      "expectedYieldPerPlantMaximumLbs": null,
+
+      "expectedYieldPer100SquareFeetMinimumLbs": null,
+
+      "expectedYieldPer100SquareFeetMaximumLbs": null,
+
+      "edibleYieldPercent": null,
+
+      "storageLife": "Potentially many months when grain is clean, sound, adequately dried, cooled, protected from insects and rodents, and monitored under suitable storage conditions",
+
+      "storageMethod": "Thresh and clean mature grain, dry it to a safe moisture level for the intended storage duration and climate, cool it before sealing, and store it in a dry rodent-resistant container. Inspect regularly for condensation, heating, insects, off odors, sprouting, and mold. Whole heads require more storage volume and careful drying.",
+
+      "yieldNotes": "No backyard yield estimate is assigned. Commercial wheat yields depend on wheat class, cultivar, planting date, stand density, soil fertility, winter survival, rainfall or irrigation, weeds, insects, diseases, lodging, bird loss, harvest timing, and whether the crop is also grazed. Commercial seeding rates and field yields should not be converted directly into a guaranteed backyard yield per square foot."
+    },
+
+    "economics": {
+      "seedCostEstimate": "Usually low to moderate, depending on certified seed, wheat class, variety, and quantity",
+
+      "equipmentCostEstimate": "Low for a small hand-sown trial; optional costs include a seed drill or spreader, irrigation, fencing or forage frames, bird protection, sickle or shears, threshing screens, winnowing equipment, drying equipment, and grain-storage containers",
+
+      "irrigationCostLevel": "Low to Moderate",
+
+      "laborLevel": "Moderate",
+
+      "potentialFeedSavings": "Not yet quantified. Economic value depends on usable grain or forage yield, land, labor, processing losses, storage losses, and the cost of purchased complete feed. Homegrown wheat should not be valued pound-for-pound as a replacement for complete ration.",
+
+      "economicNotes": "Wheat can provide value beyond chicken feed through erosion control, nutrient scavenging, weed suppression, soil cover, straw, and possible household grain use. Small plantings may be most economical when used as protected forage or whole-head enrichment, because threshing, cleaning, drying, and storing loose grain add labor."
+    },
+
+    "scores": {
+      "easeOfGrowing": null,
+
+      "yieldPerSquareFoot": null,
+
+      "nutritionalUsefulness": null,
+
+      "proteinContribution": null,
+
+      "energyContribution": null,
+
+      "storageValue": null,
+
+      "smallSpaceSuitability": null,
+
+      "heatTolerance": null,
+
+      "coldTolerance": null,
+
+      "laborEfficiency": null,
+
+      "economicPotential": null,
+
+      "safetySimplicity": null
+    },
+
+    "rankings": {
+      "practicalScore": null,
+
+      "nutritionalScore": null,
+
+      "bcpFeedScore": null
+    },
+
+        "evidence": {
+      "evidenceStrength": "Strong for commercial cultivation, forage management, grain storage, and wheat use in poultry diets; limited for backyard-scale grain yield, flock-specific forage intake, and direct feed-savings estimates",
+      "sources": [
+        {
+          "title": "Wheat in Poultry Diets",
+          "organization": "Small and Backyard Poultry Extension",
+          "url": "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/wheat-in-poultry-diets/",
+          "use": "Poultry-feed value, hard and soft wheat nutrient composition, energy comparison with corn, fiber, protein, amino acids, calcium, phosphorus, and wheat by-product distinctions"
+        },
+        {
+          "title": "Planting Guide for Row Crops in Georgia",
+          "organization": "University of Georgia Cooperative Extension",
+          "url": "https://extension.uga.edu/publications/detail.html?number=C813",
+          "use": "Wheat planting windows, seeding rate, row density, planting-depth limit, harvest period, and certified-seed guidance"
+        },
+        {
+          "title": "Southern Small Grains Resource Management Handbook",
+          "organization": "University of Georgia Cooperative Extension",
+          "url": "https://extension.uga.edu/publications/detail.html?number=B1190",
+          "use": "Southern wheat planting, forage-versus-grain timing, establishment, tillering, winter damage, disease, harvest, and storage management"
+        },
+        {
+          "title": "Georgia Forages: Grass Species",
+          "organization": "University of Georgia Cooperative Extension",
+          "url": "https://extension.uga.edu/publications/detail.html?number=B1351",
+          "use": "Wheat winter hardiness, forage timing, grazing and silage value, and removal before jointing when grain production is intended"
+        },
+        {
+          "title": "Winter Wheat as a Cover Crop",
+          "organization": "Penn State Extension",
+          "url": "https://extension.psu.edu/winter-wheat-as-a-cover-crop",
+          "use": "Winter hardiness, vernalization, erosion control, nutrient scavenging, organic matter, weed suppression, seeding depth, row spacing, and cover-crop management"
+        },
+        {
+          "title": "Impact of Grazing on Wheat Grain Yield",
+          "organization": "Oklahoma State University Extension",
+          "url": "https://extension.okstate.edu/fact-sheets/impact-of-grazing-on-wheat-grain-yield",
+          "use": "Effect of grazing and planting date on subsequent grain yield and importance of ending grazing by first hollow stem"
+        },
+        {
+          "title": "Grain Harvest – Timely Info",
+          "organization": "University of Georgia Cooperative Extension",
+          "url": "https://site.extension.uga.edu/plowpoints/2022/05/grain-harvest-timely-info/",
+          "use": "Wheat drying and safe long-term storage moisture guidance for Georgia conditions"
+        }
+      ],
+      "lastReviewed": "2026-07-17",
+      "researchNotes": [
+        "Keep winter wheat and spring wheat planting logic distinct in future regional profiles.",
+        "Do not treat wheat forage, whole grain, bran, middlings, screenings, or flour as nutritionally interchangeable.",
+        "Do not assign a backyard grain yield until a defensible small-plot source or measured trials are available.",
+        "Do not assign an exact flock inclusion percentage without formulation context and poultry-stage-specific guidance.",
+        "Research backyard threshing and winnowing methods before recommending equipment.",
+        "Research awned versus awnless varieties for whole-head flock use.",
+        "Research local disease-resistant varieties before building state-level recommendations.",
+        "Retain treated-seed, ergot, mold, sprouting, and storage-insect warnings in every public guide.",
+        "Calculate comparative scores only after Wheat is tested against Oats, Barley, Rye, Triticale, Millet, Sorghum, and Corn under the same scoring rules."
+      ]
+    },
+
+    "plannerData": {
+      "schemaVersion": "1.0.0",
+      "developmentStatus": "ready",
+
+      "identity": {
+        "plannerName": "Wheat",
+        "shortLabel": "Wheat",
+        "icon": "🌾",
+        "cropCategory": "grain",
+        "primaryFeedCategory": "energy",
+        "guideUrl": "growing-wheat-for-chickens.html"
+      },
+
+      "lifecycle": {
+        "growthCycle": "annual",
+        "isAnnual": true,
+        "isBiennial": false,
+        "isPerennial": false,
+        "isTreeOrShrub": false,
+        "yearsToFirstUsefulHarvest": 0,
+        "yearsToFullProduction": 0,
+        "expectedUsefulLifeYears": 1,
+        "regrowsAfterHarvest": false,
+        "permanentPlantingRequired": false,
+        "reversibleAfterOneSeason": true
+      },
+
+      "climate": {
+        "suitableClimateTypes": [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        "preferredClimateTypes": [
+          "cool-moderate-summer",
+          "temperate"
+        ],
+
+        "challengingClimateTypes": [
+          "extreme-heat-during-grain-fill",
+          "waterlogged-winter"
+        ],
+
+        "minimumFrostFreeDays": null,
+        "preferredFrostFreeDays": null,
+        "minimumSoilTemperatureF": null,
+        "preferredSoilTemperatureF": null,
+        "daysToMaturityMinimum": null,
+        "daysToMaturityMaximum": null,
+        "referenceDaysToPhysiologicalMaturity": null,
+        "dryDownBufferDays": null,
+        "heatToleranceScore": 3,
+        "droughtClimateToleranceScore": 3,
+        "humidityToleranceScore": 3,
+        "coolSummerToleranceScore": 5,
+        "frostSensitivityScore": 2,
+        "winterHardinessRequired": true,
+
+        "seasonExtensionBenefits": [
+          "Locally adapted winter wheat can occupy the cool season and protect soil while warm-season beds are otherwise unused.",
+          "Spring wheat can provide an alternative where winter wheat is unreliable or the fall planting window was missed.",
+          "Earlier fall planting can increase forage production but may raise insect, disease, and later grain-yield risks.",
+          "Variety selection is more dependable than relying on temporary frost protection."
+        ],
+
+        "indoorSeedStartingBenefitScore": 1,
+
+        "directFacts": {
+          "seasonType": "cool-season",
+          "winterAndSpringTypesExist": true,
+          "winterWheatRequiresVernalizationForNormalHeading": true,
+          "winterHardinessVarietyDependent": true,
+          "plantingSeasonVariesByWheatType": true,
+
+          "notes": [
+            "Triticum aestivum includes winter and spring growth habits that must not be assigned the same planting calendar.",
+            "Winter wheat is planted in fall and resumes growth in spring after winter dormancy.",
+            "Spring wheat is normally planted early in spring where it is adapted.",
+            "Winter wheat planted in spring may grow vegetatively but may fail to produce normal seed heads because it lacks adequate vernalization.",
+            "Heat during flowering and grain filling can reduce productive performance.",
+            "Regional variety recommendations are essential because winter hardiness, maturity, disease resistance, and vernalization needs vary."
+          ]
+        }
+      },
+
+      "site": {
+        "absoluteMinimumSunHours": null,
+        "productiveMinimumSunHours": 6,
+        "preferredSunHours": 8,
+        "shadeToleranceScore": 2,
+        "afternoonShadeBenefitInHeat": 2,
+        "windToleranceScore": 3,
+        "lodgingRiskScore": 3,
+        "reflectedHeatToleranceScore": 2,
+        "airflowRequirementScore": 4,
+        "frostPocketSensitivityScore": 2,
+        "treeRootCompetitionToleranceScore": 2,
+        "hardscapeConflictRiskScore": 1,
+        "structureConflictRiskScore": 1,
+        "utilityConflictRiskScore": 1,
+        "fruitDropMessRiskScore": 2,
+        "stainingRiskScore": 1,
+
+        "directFacts": {
+          "preferredLight": "full-sun",
+          "productiveSunGuidance": "Full sun is preferred for dense vegetative growth, tillering, head development, and grain filling.",
+          "windExposureConcern": true,
+          "lodgingPossible": true,
+
+          "notes": [
+            "Low light can reduce tillering, biomass, stand density, and grain production.",
+            "Dense, tall, overfertilized, or storm-exposed stands may lodge.",
+            "Good airflow helps foliage and heads dry after rain or dew.",
+            "Avoid tree-root competition and locations that remain shaded or saturated through winter.",
+            "The mature crop is not usually a major structural conflict, but dry heads and straw can shed material near paths."
+          ]
+        }
+      },
+
+      "soil": {
+        "textureScores": {
+          "heavyClay": 2,
+          "clayLoam": 4,
+          "loam": 5,
+          "sandyLoam": 4,
+          "verySandy": 2,
+          "rocky": 2
+        },
+
+        "drainageRequirementScore": 5,
+        "temporaryWetToleranceScore": 2,
+        "waterloggingSensitivityScore": 4,
+        "minimumSoilDepthIn": null,
+        "preferredSoilDepthIn": null,
+        "compactionToleranceScore": 2,
+        "establishmentInSodDifficultyScore": 4,
+        "preferredPHMinimum": 6.0,
+        "preferredPHMaximum": 7.0,
+        "survivalPHMinimum": null,
+        "survivalPHMaximum": null,
+        "fertilityRequirementScore": 4,
+        "nitrogenRequirementScore": 4,
+        "phosphorusRequirementScore": 3,
+        "potassiumRequirementScore": 3,
+        "benefitsFromInoculation": false,
+        "inoculantType": null,
+        "saltToleranceScore": null,
+        "amendmentEffortScore": 3,
+
+        "directFacts": {
+          "preferredDrainage": "well-drained",
+
+          "adaptableTextures": [
+            "loam",
+            "silt loam",
+            "clay loam",
+            "sandy loam"
+          ],
+
+          "preferredTexture": "A fertile, well-drained loam or silt loam with good seed-to-soil contact and adequate water-holding capacity.",
+          "waterloggedSoilSuitable": false,
+          "soilTestRecommended": true,
+          "nitrogenFixing": false,
+
+          "notes": [
+            "Wheat performs poorly where prolonged saturation limits roots or increases disease.",
+            "A firm, fine seedbed and good seed-to-soil contact support uniform emergence.",
+            "Very sandy soil may require more dependable water and nutrient management.",
+            "Dense clay, crusting, compaction, hardpan, and shallow rock can restrict establishment and rooting.",
+            "Wheat does not fix nitrogen and fertility should be based on a soil test and production goal.",
+            "The stored pH range is a productive target rather than a universal survival boundary."
+          ]
+        }
+      },
+
+      "water": {
+        "overallWaterRequirementLevel": "moderate",
+        "germinationWaterNeedLevel": "moderate",
+        "establishmentWaterNeedLevel": "moderate",
+        "matureWaterNeedLevel": "moderate",
+        "floweringWaterNeedLevel": "high",
+        "harvestDevelopmentWaterNeedLevel": "high",
+        "droughtSurvivalScore": 3,
+        "droughtYieldRetentionScore": 2,
+
+        "criticalGrowthStages": [
+          "germination",
+          "seedling-establishment",
+          "tillering",
+          "stem-elongation",
+          "heading",
+          "flowering",
+          "grain-filling"
+        ],
+
+        "criticalStageWaterImportanceScore": 5,
+        "overwateringSensitivityScore": 3,
+        "waterloggingSensitivityScore": 4,
+        "dripIrrigationBenefitScore": 3,
+        "mulchBenefitScore": 2,
+        "suitableForRainfallOnlyScore": 4,
+        "suitableForLimitedIrrigationScore": 3,
+        "containerDryingRiskScore": 4,
+        "establishmentYearsRequiringExtraWater": 0,
+
+        "directFacts": {
+          "establishmentMoistureImportant": true,
+          "regularMoistureImprovesProduction": true,
+          "standingWaterSuitable": false,
+          "droughtCanReduceTilleringAndGrainFill": true,
+          "lateRainCanDelayHarvestAndReduceQuality": true,
+
+          "notes": [
+            "Uniform moisture supports emergence and fall or spring establishment.",
+            "Water stress during stem elongation, heading, flowering, and grain filling can reduce yield and kernel development.",
+            "Wheat can survive moderate dry periods better than continuously saturated soil, but drought survival does not imply high grain yield.",
+            "Wet foliage and heads can increase disease, sprouting, and harvest-quality risks.",
+            "Irrigation needs are region-, soil-, rainfall-, and production-system-dependent; no universal seasonal water amount is stored."
+          ]
+        }
+      },
+
+      "space": {
+        "minimumTrialAreaSqFt": null,
+        "minimumUsefulAreaSqFt": null,
+        "preferredProductionAreaSqFt": null,
+        "smallSpaceScore": 3,
+        "mediumSpaceScore": 5,
+        "largeSpaceScore": 5,
+
+        "layoutScores": {
+          "squareBlock": 5,
+          "wideRectangle": 5,
+          "longStrip": 5,
+          "irregular": 3,
+          "smallBeds": 4,
+          "openField": 5
+        },
+
+        "spaceTypeScores": {
+          "inGround": 5,
+          "raisedBed": 4,
+          "container": 2,
+          "fenceLine": 3,
+          "buildingEdge": 3,
+          "unusedLawn": 4,
+          "openField": 5,
+          "orchard": 2,
+          "forageFrame": 5,
+          "rotationalPaddock": 5,
+          "greenhouse": 1,
+          "hedgerow": 2
+        },
+
+        "minimumContainerGallons": null,
+
+        "containerUseLimitation": "Wheat can be grown densely in containers for short-lived forage, but container grain production is generally inefficient because root volume, moisture, stand area, threshing effort, and total grain yield are limiting.",
+
+        "minimumRaisedBedDepthIn": null,
+        "vineSpreadRequired": false,
+        "verticalSupportBenefitScore": 1,
+        "blockPlantingRequired": false,
+        "minimumBlockRows": null,
+        "continuousStandPreferred": true,
+        "heightCategory": "medium",
+        "matureWidthCategory": "narrow-upright",
+        "overflowSpaceBenefitScore": 1,
+
+        "directFacts": {
+          "layoutFlexible": true,
+          "blockPollinationRequired": false,
+          "suitableForRowPlanting": true,
+          "suitableForCloselySpacedStands": true,
+          "suitableForSingleOrSmallGroupPlanting": false,
+          "denseStandPreferredForProduction": true,
+
+          "commercialSeedingGuidance": {
+            "georgiaGrainSeedingRateLbsPerAcreMinimum": 60,
+            "georgiaGrainSeedingRateLbsPerAcreMaximum": 90,
+            "georgiaIntensiveManagementLbsPerAcreMinimum": 120,
+            "georgiaIntensiveManagementLbsPerAcreMaximum": 150,
+            "drilledRowWidthInchesMinimum": 6,
+            "drilledRowWidthInchesMaximum": 7.5,
+            "backyardUseWarning": "Commercial field seeding rates are reference data and must not be converted directly into guaranteed backyard yield."
+          },
+
+          "notes": [
+            "Wheat is normally grown as a dense stand rather than as individually spaced plants.",
+            "Small beds can provide meaningful forage or enrichment, but loose-grain production becomes more efficient as area increases.",
+            "Protected forage frames can keep chickens from uprooting or overgrazing the stand.",
+            "A rectangular strip or block simplifies sowing, exclusion, cutting, and harvest.",
+            "Wheat does not require a square pollination block like field corn.",
+            "Single isolated plants provide little practical feed value."
+          ]
+        }
+      },
+
+      "flock": {
+        "suitableForAdultChickens": true,
+        "suitableForYoungChicks": false,
+
+        "flockPurposeScores": {
+          "eggs": 4,
+          "meat": 4,
+          "breeding": 3,
+          "petsEnrichment": 4,
+          "homestead": 5,
+          "mixed": 5
+        },
+
+        "feedingMethodScores": {
+          "livingGrazing": 4,
+          "cutAndCarry": 4,
+          "wholeProduce": 1,
+          "wholeSeedHeads": 4,
+          "wholeGrain": 5,
+          "processedGrain": 5,
+          "heatTreated": 1,
+          "driedForage": 2,
+          "winterStorage": 5
+        },
+
+        "directRunSuitabilityScore": 2,
+        "forageFrameSuitabilityScore": 5,
+        "rotationalPaddockSuitabilityScore": 5,
+        "confinedFlockValueScore": 5,
+        "pasturedFlockValueScore": 4,
+        "treatDilutionRiskScore": 4,
+        "highEnergySupplement": true,
+        "highFiberSupplement": false,
+                "highProteinSupplement": false,
+        "scratchGrainValueScore": 5,
+        "winterFeedValueScore": 5,
+        "summerFeedValueScore": 2,
+        "freeChoiceSuitable": false,
+        "completeFeedReplacement": false,
+
+        "directFacts": {
+          "supplementOnly": true,
+          "wholeGrainSuitableForAdultChickens": true,
+          "crackedGrainSuitable": true,
+          "freshForageSuitable": true,
+          "seedHeadsSuitable": true,
+          "requiresBalancedRation": true,
+          "treatedSeedMustNeverBeFed": true,
+
+          "notes": [
+            "Wheat is best used as a measured supplement to a nutritionally complete poultry ration.",
+            "Whole mature grain provides scratching enrichment and concentrated energy.",
+            "Young vegetative forage may be offered in moderation.",
+            "Whole seed heads provide behavioral enrichment while reducing waste.",
+            "Do not allow unrestricted consumption of mature grain because nutritional balance can be diluted.",
+            "Never feed moldy, sprouted, chemically treated, or ergot-contaminated grain."
+          ]
+        }
+      },
+
+      "labor": {
+        "overallLaborRequirement": "moderate",
+
+        "establishmentDifficultyScore": 2,
+        "maintenanceDifficultyScore": 2,
+        "harvestDifficultyScore": 3,
+        "processingDifficultyScore": 4,
+        "storageDifficultyScore": 3,
+
+        "mechanizationBenefitScore": 4,
+
+        "directFacts": {
+          "easyToBroadcastSeed": true,
+          "handHarvestPossible": true,
+          "requiresThreshingForLooseGrain": true,
+          "requiresDryingBeforeStorage": true,
+          "forageHarvestSimplerThanGrainHarvest": true,
+
+          "notes": [
+            "Broadcast seeding or simple drilling is straightforward for small plots.",
+            "Forage production requires substantially less labor than grain production.",
+            "Threshing, winnowing, drying, and cleaning increase labor before storage.",
+            "Whole seed heads may reduce processing requirements compared with loose grain.",
+            "Stored grain should be inspected regularly for insects, moisture, and mold."
+          ]
+        }
+      },
+
+      "cost": {
+        "seedCostScore": 2,
+        "fertilityCostScore": 3,
+        "waterCostScore": 2,
+        "equipmentCostScore": 3,
+        "processingCostScore": 4,
+        "storageCostScore": 3,
+
+        "directFacts": {
+          "seedGenerallyAffordable": true,
+          "majorCostsIncreaseWithGrainHarvest": true,
+          "forageProductionLowestCost": true,
+
+          "notes": [
+            "Seed is generally inexpensive compared with many specialty forage crops.",
+            "Grain production becomes more expensive when drying, threshing, cleaning, and storage equipment are added.",
+            "Protected forage production can often be accomplished with minimal equipment.",
+            "Bird protection may become necessary as heads mature."
+          ]
+        }
+      },
+
+      "goals": {
+        "primaryGoals": [
+          "Supplemental Feed",
+          "Winter Forage",
+          "Stored Grain",
+          "Cover Crop",
+          "Soil Protection",
+          "Scratch Grain",
+          "Crop Rotation"
+        ],
+
+        "secondaryGoals": [
+          "Organic Matter",
+          "Erosion Reduction",
+          "Nutrient Scavenging",
+          "Weed Suppression"
+        ],
+
+        "notRecommendedFor": [
+          "Complete Feed Replacement",
+          "Tiny Decorative Containers"
+        ]
+      },
+
+      "risks": {
+        "overallRiskScore": 3,
+
+        "poultryRisks": [
+          "Mold and mycotoxins",
+          "Ergot contamination",
+          "Chemically treated planting seed",
+          "Diet dilution if overfed"
+        ],
+
+        "gardenRisks": [
+          "Rust diseases",
+          "Powdery mildew",
+          "Lodging",
+          "Bird damage near maturity"
+        ],
+
+        "humanSafetyConcerns": [
+          "Dust during threshing",
+          "Safe grain storage required"
+        ],
+
+        "directFacts": {
+          "treatedSeedUnsafe": true,
+          "moldUnsafe": true,
+          "ergotUnsafe": true,
+          "standingWaterIncreasesDisease": true,
+
+          "notes": [
+            "Storage quality is just as important as production quality.",
+            "Never assume all harvested grain remains safe after storage.",
+            "Monitor grain regularly for insects, heating, condensation, odors, and mold."
+          ]
+        }
+      },
+
+      "seasonalRoles": {
+        "spring": [
+          "Rapid vegetative growth",
+          "Tillering",
+          "Stem elongation"
+        ],
+
+        "summer": [
+          "Heading",
+          "Grain fill",
+          "Harvest"
+        ],
+
+        "fall": [
+          "Winter wheat planting",
+          "Seedling establishment",
+          "Root development"
+        ],
+
+        "winter": [
+          "Dormancy",
+          "Ground cover",
+          "Soil protection"
+        ]
+      },
+
+      "usePaths": {
+        "livingForage": true,
+        "cutAndCarry": true,
+        "wholeSeedHeads": true,
+        "wholeGrain": true,
+        "crackedGrain": true,
+        "storedGrain": true,
+        "seedSaving": true,
+        "coverCrop": true,
+        "soilImprovement": true,
+        "compostMaterial": true,
+        "mulchMaterial": true
+      },
+
+      "dataQuality": {
+        "overallConfidence": "High",
+
+        "verifiedSections": [
+          "Nutrition",
+          "Growing",
+          "Planting Windows",
+          "Storage",
+          "Cover Crop",
+          "Forage",
+          "Poultry Feeding",
+          "Research Sources"
+        ],
+
+        "remainingUnknowns": [
+          "Small backyard yield values",
+          "Planner scoring calibration",
+          "Maximum practical dietary inclusion for Backyard Chicken Planner calculations"
+        ],
+
+        "futureResearch": [
+          "Backyard yield trials",
+          "Hard versus soft wheat comparison",
+          "Awned versus awnless performance",
+          "Regional variety recommendations",
+          "BCP scoring normalization"
+        ]
+      }
+
     }
   }
 
-};
+  };
