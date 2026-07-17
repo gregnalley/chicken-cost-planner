@@ -660,7 +660,10 @@ function renderMultiCropSampleTests() {
             .join("");
 
         return `
-          <article class="multi-profile-result">
+          <article
+          class="multi-profile-result"
+          data-profile-result="${profileResult.profileId}"
+          >
 
             <h3>
               ${profileResult.profileLabel}
@@ -773,7 +776,7 @@ function renderProfileMatrix() {
 
     bodyElement.innerHTML = `
       <tr>
-        <td colspan="7">
+        <td colspan="9">
           Profile matrix could not run.
         </td>
       </tr>
@@ -796,7 +799,7 @@ function renderProfileMatrix() {
 
     bodyElement.innerHTML = `
       <tr>
-        <td colspan="7">
+        <td colspan="9">
           Profile matrix could not run.
         </td>
       </tr>
@@ -873,25 +876,60 @@ const actualLeader =
               </td>
 
               <td class="profile-actual">
-                ${
-                  actualLeader
-                    ? `${actualLeader.cropName} (${actualLeader.finalScore}%)`
-                    : "No eligible recommendation"
-                }
-              </td>
+  ${
+    actualLeader
+      ? `${actualLeader.cropName} (${actualLeader.finalScore}%)`
+      : "No eligible recommendation"
+  }
+</td>
 
-              <td>
-                ${
-                  actualLeader
-                    ?.bestUsePath
-                    ?.label ||
-                  "Unavailable"
-                }
-              </td>
+<td class="profile-top-three">
+  ${
+    eligibleCropResults.length > 0
+      ? `
+        <ol class="profile-top-three-list">
+          ${eligibleCropResults
+            .slice(0, 3)
+            .map(result => {
+              return `
+                <li>
+                  <strong>
+                    ${result.cropName}
+                  </strong>
 
-              <td class="profile-matrix-na">
-                Not Configured
-              </td>
+                  — ${result.finalScore}%
+                </li>
+              `;
+            })
+            .join("")}
+        </ol>
+      `
+      : "No eligible recommendations"
+  }
+</td>
+
+<td>
+  ${
+    actualLeader
+      ?.bestUsePath
+      ?.label ||
+    "Unavailable"
+  }
+</td>
+
+<td class="profile-matrix-na">
+  Not Configured
+</td>
+
+<td class="profile-diagnostics">
+  <button
+    type="button"
+    class="profile-analyze-button"
+    data-analyze-profile="${profileResult.profileId}"
+  >
+    Analyze
+  </button>
+</td>
 
             </tr>
           `;
@@ -917,6 +955,42 @@ const actualLeader =
     .map(result =>
       result.cropId
     );
+
+    const actualTopThreeResults =
+  eligibleCropResults
+    .slice(0, 3);
+
+const topThreeMarkup =
+  actualTopThreeResults.length > 0
+    ? `
+      <ol class="profile-top-three-list">
+        ${actualTopThreeResults
+          .map(result => {
+            return `
+              <li>
+                <strong>
+                  ${result.cropName}
+                </strong>
+
+                — ${result.finalScore}%
+
+                ${
+                  result.bestUsePath?.label
+                    ? `
+                      <br>
+                      <small>
+                        ${result.bestUsePath.label}
+                      </small>
+                    `
+                    : ""
+                }
+              </li>
+            `;
+          })
+          .join("")}
+      </ol>
+    `
+    : "No eligible recommendations";
 
         const leaderPasses =
           actualLeaderId &&
@@ -1008,49 +1082,120 @@ const actualLeader =
             </td>
 
             <td class="profile-actual">
-              ${
-                actualLeader
-                  ? `
-                    <strong>
-                      ${actualLeader.cropName}
-                    </strong>
+  ${
+    actualLeader
+      ? `
+        <strong>
+          ${actualLeader.cropName}
+        </strong>
 
-                    <br>
+        <br>
 
-                    ${actualLeader.finalScore}%
+        ${actualLeader.finalScore}%
 
-                    <br>
+        <br>
 
-                    ${
-                      actualLeader
-                        .tier
-                        ?.label ||
-                      "No tier"
-                    }
-                  `
-                  : "Unavailable"
-              }
-            </td>
+        ${
+          actualLeader
+            .tier
+            ?.label ||
+          "No tier"
+        }
+      `
+      : "Unavailable"
+  }
+</td>
 
-            <td>
-              ${
-                actualLeader
-                  ?.bestUsePath
-                  ?.label ||
-                "No eligible use path"
-              }
-            </td>
+<td class="profile-top-three">
+  ${topThreeMarkup}
+</td>
 
-            <td class="${statusClass}">
-              ${statusLabel}
-            </td>
+<td>
+  ${
+    actualLeader
+      ?.bestUsePath
+      ?.label ||
+    "No eligible use path"
+  }
+</td>
 
-          </tr>
+<td class="${statusClass}">
+  ${statusLabel}
+</td>
+
+<td class="profile-diagnostics">
+  <button
+    type="button"
+    class="profile-analyze-button"
+    data-analyze-profile="${profileResult.profileId}"
+  >
+    Analyze
+  </button>
+</td>
         `;
       })
       .join("");
 
   bodyElement.innerHTML = rows;
+
+  bodyElement
+  .querySelectorAll(
+    "[data-analyze-profile]"
+  )
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      function () {
+
+        const profileId =
+          button.dataset
+            .analyzeProfile;
+
+        const comparisonSection =
+          document.getElementById(
+            "multi-crop-comparison"
+          );
+
+        const profileResultElement =
+          document.querySelector(
+            `[data-profile-result="${profileId}"]`
+          );
+
+        if (comparisonSection) {
+          comparisonSection.open = true;
+        }
+
+        if (!profileResultElement) {
+          return;
+        }
+
+        profileResultElement
+          .classList.remove(
+            "profile-analysis-highlight"
+          );
+
+        /*
+          Force the browser to recognize the
+          removed class before adding it again.
+          This allows the animation to replay.
+        */
+        void profileResultElement.offsetWidth;
+
+        profileResultElement
+          .classList.add(
+            "profile-analysis-highlight"
+          );
+
+        profileResultElement
+          .scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+      }
+    );
+
+  });
 
   const totalConfigured =
     passCount + reviewCount;
@@ -1071,8 +1216,9 @@ const actualLeader =
     renderCropValidationReport,
     renderSunflowerSampleTests,
     renderSampleProfileList,
-    renderProfileMatrix,
-    renderMultiCropSampleTests
+    renderMultiCropSampleTests,
+    renderProfileMatrix
+    
   });
 
 })(window);
