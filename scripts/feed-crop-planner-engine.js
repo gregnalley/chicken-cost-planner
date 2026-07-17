@@ -3388,20 +3388,27 @@ function analyzeHarvestProductMatch(
 ) {
   const genericProductIds =
     new Set([
-      "fresh-greens",
-      "fresh-forage",
-      "fresh-produce",
-      "fresh-fruit",
-      "fallen-fruit",
-      "dried-forage",
-      "dried-leaves",
-      "dry-grain",
-      "whole-grain",
-      "stored-grain",
-      "cracked-grain",
-      "ground-grain",
-      "whole-seed-heads",
-      "stored-enrichment"
+    "fresh-greens",
+    "fresh-forage",
+    "fresh-produce",
+    "fresh-fruit",
+    "fallen-fruit",
+
+    "fresh-seed-heads",
+    "dried-seed-heads",
+    "whole-seed-heads",
+
+    "dried-forage",
+    "dried-leaves",
+
+    "dry-seeds",
+    "dry-grain",
+    "whole-grain",
+    "stored-grain",
+    "cracked-grain",
+    "ground-grain",
+
+    "stored-enrichment"
     ]);
 
   const safeUsePathProducts =
