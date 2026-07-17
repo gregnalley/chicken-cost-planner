@@ -2143,34 +2143,103 @@ function scoreGenericClimateFit(
     };
   }
 
-  let score = 60;
+  let categoryScore = 60;
 
   if (
     climate.preferredClimateTypes
       ?.includes(climateType)
   ) {
-    score = 100;
+    categoryScore = 100;
   } else if (
     climate.suitableClimateTypes
       ?.includes(climateType)
   ) {
-    score = 82;
+    categoryScore = 82;
   } else if (
     climate.challengingClimateTypes
       ?.includes(climateType)
   ) {
-    score = 40;
+    categoryScore = 40;
   }
 
+  let traitScore = null;
+
+  if (climateType === "hot-dry") {
+    traitScore =
+      weightedAverageKnown([
+        {
+          value:
+            convertFivePointToPercent(
+              climate.heatToleranceScore
+            ),
+          weight: 0.50
+        },
+        {
+          value:
+            convertFivePointToPercent(
+              climate
+                .droughtClimateToleranceScore
+            ),
+          weight: 0.50
+        }
+      ]);
+  } else if (
+    climateType === "hot-humid"
+  ) {
+    traitScore =
+      weightedAverageKnown([
+        {
+          value:
+            convertFivePointToPercent(
+              climate.heatToleranceScore
+            ),
+          weight: 0.50
+        },
+        {
+          value:
+            convertFivePointToPercent(
+              climate.humidityToleranceScore
+            ),
+          weight: 0.50
+        }
+      ]);
+  } else if (
+    [
+      "cold-short-summer",
+      "cool-moderate-summer",
+      "high-elevation"
+    ].includes(climateType)
+  ) {
+    traitScore =
+      convertFivePointToPercent(
+        climate.coolSummerToleranceScore
+      );
+  }
+
+  const finalScore =
+    weightedAverageKnown([
+      {
+        value: categoryScore,
+        weight: 0.60
+      },
+      {
+        value: traitScore,
+        weight: 0.40
+      }
+    ]);
+
   return {
-    score,
+    score:
+      clampScore(finalScore),
 
     reason:
-      score >= 90
-        ? `${crop.name} is strongly adapted to the selected climate type.`
-        : score >= 70
-          ? `${crop.name} is generally suitable for the selected climate.`
-          : `${crop.name} may face climate limitations under the selected conditions.`
+      Number.isFinite(traitScore)
+        ? `${crop.name} was evaluated using both its general climate classification and its crop-specific climate tolerance ratings.`
+        : categoryScore >= 90
+          ? `${crop.name} is strongly adapted to the selected climate type.`
+          : categoryScore >= 70
+            ? `${crop.name} is generally suitable for the selected climate.`
+            : `${crop.name} may face climate limitations under the selected conditions.`
   };
 }
 
