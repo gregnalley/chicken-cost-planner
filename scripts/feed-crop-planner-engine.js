@@ -4618,50 +4618,116 @@ const finalScore =
       knownCategoryCount * 7
     );
 
-  return {
-    profileId:
-      profile.id,
+return {
+  profileId:
+    profile.id,
 
-    profileLabel:
-      profile.label,
+  profileLabel:
+    profile.label,
 
-    cropId:
-      crop.id,
+  cropId:
+    crop.id,
 
-    cropName:
-      crop.name,
+  cropName:
+    crop.name,
 
-    finalScore:
-      Math.round(finalScore),
+  finalScore:
+    Math.round(finalScore),
 
-    tier:
-      getRecommendationTier(
-        finalScore
-      ),
+  rawFinalScore:
+    Number.isFinite(finalScore)
+      ? Number(finalScore.toFixed(2))
+      : null,
 
-    confidenceScore:
-      Math.round(
-        confidenceScore
-      ),
+  baseScore:
+    Number.isFinite(baseScore)
+      ? Number(baseScore.toFixed(2))
+      : null,
 
-    confidenceLabel:
-      getConfidenceLabel(
-        confidenceScore
-      ),
+  usePathModifier:
+    Number.isFinite(usePathModifier)
+      ? Number(usePathModifier.toFixed(2))
+      : null,
 
-    categoryResults,
+  wildlifePenalty:
+    Number.isFinite(wildlife?.penalty)
+      ? wildlife.penalty
+      : 0,
 
-    wildlife,
+  lifecycleModifier:
+    Number.isFinite(
+      lifecycleAdjustment?.adjustment
+    )
+      ? lifecycleAdjustment.adjustment
+      : 0,
 
-    lifecycleAdjustment,
+  tier:
+    getRecommendationTier(
+      finalScore
+    ),
 
-    usePathResults,
+  confidenceScore:
+    Math.round(
+      confidenceScore
+    ),
 
-    bestUsePath,
+  confidenceLabel:
+    getConfidenceLabel(
+      confidenceScore
+    ),
 
-    noEligibleUsePath
+  categoryResults,
 
-  };
+  wildlife,
+
+  lifecycleAdjustment,
+
+  usePathResults,
+
+  bestUsePath,
+
+  noEligibleUsePath,
+
+  diagnostics: {
+    baseScore:
+      Number.isFinite(baseScore)
+        ? Number(baseScore.toFixed(2))
+        : null,
+
+    wildlifePenalty:
+      Number.isFinite(wildlife?.penalty)
+        ? wildlife.penalty
+        : 0,
+
+    usePathScore:
+      Number.isFinite(
+        bestUsePath?.score
+      )
+        ? bestUsePath.score
+        : null,
+
+    usePathModifier:
+      Number.isFinite(usePathModifier)
+        ? Number(
+            usePathModifier.toFixed(2)
+          )
+        : null,
+
+    lifecycleModifier:
+      Number.isFinite(
+        lifecycleAdjustment?.adjustment
+      )
+        ? lifecycleAdjustment.adjustment
+        : 0,
+
+    rawFinalScore:
+      Number.isFinite(finalScore)
+        ? Number(
+            finalScore.toFixed(2)
+          )
+        : null
+  }
+};
 }
 
 function runMultiCropSampleTests() {
