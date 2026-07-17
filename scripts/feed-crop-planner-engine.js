@@ -1845,23 +1845,47 @@ function getNutritionalRoleTerms(
     }
   };
 
-  addTerm(
-    crop.plannerData
-      ?.identity
-      ?.primaryFeedCategory
-  );
+  /*
+   * Nutritional matching should describe the
+   * selected use path, not every possible use
+   * of the crop.
+   *
+   * Example:
+   * A grain crop may have one enrichment path,
+   * one whole-grain path, and one fresh-forage
+   * path. Those paths should not automatically
+   * inherit the same nutritional role merely
+   * because they belong to the same crop.
+   */
 
-  addTerm(
-    usePath?.primaryFeedRole
-  );
+  const usePathPrimaryRole =
+    usePath?.primaryFeedRole;
 
-  (
-    crop.plannerData
-      ?.flock
-      ?.directFacts
-      ?.nutritionalOrientation ||
-    []
-  ).forEach(addTerm);
+  if (usePathPrimaryRole) {
+    addTerm(
+      usePathPrimaryRole
+    );
+  } else {
+    /*
+     * Crop-level information remains a fallback
+     * for older or incomplete use paths that do
+     * not yet define their own primary role.
+     */
+
+    addTerm(
+      crop.plannerData
+        ?.identity
+        ?.primaryFeedCategory
+    );
+
+    (
+      crop.plannerData
+        ?.flock
+        ?.directFacts
+        ?.nutritionalOrientation ||
+      []
+    ).forEach(addTerm);
+  }
 
   return Array.from(terms);
 }
