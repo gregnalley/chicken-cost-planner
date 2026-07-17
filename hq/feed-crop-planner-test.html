@@ -437,24 +437,37 @@ body {
 }
 
 .profile-analyze-button {
-  width: 100%;
-  max-width: 92px;
-  padding: 8px 7px;
-  font-size: 0.86rem;
-}
-
-.profile-analyze-button {
   display: inline-block;
-  padding: 9px 14px;
+
+  width: auto;
+  min-width: 72px;
+
+  padding: 6px 10px;
+
   color: #ffffff;
   background: var(--dashboard-green);
+
   border: 0;
   border-radius: 8px;
-  font: inherit;
-  font-weight: 750;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+
+  white-space: nowrap;
+
   cursor: pointer;
 }
 
+.profile-analyze-button:hover,
+.profile-analyze-button:focus {
+  background: var(--dashboard-green-dark);
+}
+
+.profile-analyze-button:focus-visible {
+  outline: 3px solid rgba(47, 114, 69, 0.28);
+  outline-offset: 3px;
+}
 .profile-analyze-button:hover,
 .profile-analyze-button:focus {
   background: var(--dashboard-green-dark);
