@@ -378,6 +378,78 @@ body {
   min-width: 180px;
 }
 
+.profile-top-three {
+  min-width: 220px;
+}
+
+.profile-top-three-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.profile-top-three-list li {
+  margin-bottom: 5px;
+}
+
+.profile-top-three-list li:last-child {
+  margin-bottom: 0;
+}
+
+.profile-diagnostics {
+  min-width: 125px;
+  text-align: center;
+}
+
+.profile-analyze-button {
+  display: inline-block;
+  padding: 9px 14px;
+  color: #ffffff;
+  background: var(--dashboard-green);
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.profile-analyze-button:hover,
+.profile-analyze-button:focus {
+  background: var(--dashboard-green-dark);
+}
+
+.profile-analyze-button:focus-visible {
+  outline: 3px solid rgba(47, 114, 69, 0.28);
+  outline-offset: 3px;
+}
+
+.profile-analysis-highlight {
+  animation:
+    profile-analysis-pulse
+    1.8s ease;
+}
+
+@keyframes profile-analysis-pulse {
+
+  0% {
+    box-shadow:
+      0 0 0 0
+      rgba(47, 114, 69, 0.45);
+  }
+
+  45% {
+    box-shadow:
+      0 0 0 8px
+      rgba(47, 114, 69, 0.14);
+  }
+
+  100% {
+    box-shadow:
+      0 7px 20px
+      rgba(29, 65, 38, 0.07);
+  }
+
+}
+
 .sunflower-test-result,
 .multi-profile-result {
   margin-bottom: 20px;
@@ -696,8 +768,10 @@ Waiting for profile matrix...
 <th>Primary Test Purpose</th>
 <th>Expected Leader</th>
 <th>Actual Leader</th>
+<th>Top 3 Rankings</th>
 <th>Best Use Path</th>
 <th>Result</th>
+<th>Diagnostics</th>
 </tr>
 
 </thead>
@@ -706,7 +780,7 @@ Waiting for profile matrix...
 
 <tr>
 
-<td colspan="7">
+<td colspan="9">
 Loading profile matrix...
 </td>
 
