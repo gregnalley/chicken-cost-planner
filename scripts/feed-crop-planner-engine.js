@@ -175,10 +175,10 @@
         passed: Boolean(
           config &&
           config.crops &&
-          Array.isArray(
-            config.crops.expectedCropIds
-          ) &&
-          config.crops.expectedCropIds.length === 10
+        Array.isArray(
+          config.crops.expectedCropIds
+        ) &&
+          config.crops.expectedCropIds.length > 0
         )
       },
 
@@ -187,12 +187,6 @@
         label: "Engine utility functions available",
         passed: true
       },
-
-      {
-  id: "utilities",
-  label: "Engine utility functions available",
-  passed: true
-},
 
 {
   id: "data-adapter",
@@ -218,12 +212,17 @@
 
 {
   id: "crop-count",
-  label: "Ten unique crop records detected",
+  label: "Expected unique crop records detected",
   passed: Boolean(
     namespace.data &&
+    config &&
+    Array.isArray(
+      config.crops?.expectedCropIds
+    ) &&
     namespace.data
       .getAllUniqueCrops()
-      .length === 10
+      .length ===
+        config.crops.expectedCropIds.length
   )
 }
 
