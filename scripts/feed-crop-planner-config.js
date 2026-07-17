@@ -329,7 +329,8 @@ const HARVEST_FREQUENCY_CATEGORIES =
     "CROP-ALFALFA",
     "CROP-MULBERRY",
     "CROP-FIELD-CORN",
-    "CROP-GRAIN-SORGHUM"
+    "CROP-GRAIN-SORGHUM",
+    "CROP-OATS"
   ]);
 
   // ==================================================
