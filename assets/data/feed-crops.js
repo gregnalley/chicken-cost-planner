@@ -23455,10 +23455,10 @@ plannerData: {
             3,
 
           harvestEaseScore:
-            4,
+            3,
 
           preparationEaseScore:
-            4,
+            3,
 
           beginnerSuitabilityScore:
             4,
@@ -23467,7 +23467,7 @@ plannerData: {
             2,
 
           flockValueScore:
-            5,
+            4,
 
           safetyWarnings: [
             "Dry heads thoroughly before enclosed storage.",
