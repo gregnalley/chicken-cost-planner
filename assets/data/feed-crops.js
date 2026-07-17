@@ -23367,7 +23367,7 @@ plannerData: {
             "Mature oat seed heads cut and dried under protected, ventilated conditions for later whole-head flock enrichment.",
 
           primaryFeedRole:
-            "grain-enrichment",
+            "stored-enrichment",
 
           harvestProducts: [
             "dried-seed-heads"
