@@ -626,11 +626,9 @@ Checking...
 
 <div class="dashboard-summary-card">
 
-<strong>Crop Database</strong>
-
-<span>
-10 planned crop records
-</span>
+<strong id="planner-summary-crop-count">
+  Loading crop count...
+</strong>
 
 </div>
 
@@ -1032,8 +1030,30 @@ document.addEventListener(
         .initializeDevelopmentPage();
     }
 
-  }
-);
+  
+
+  const cropCountElement =
+  document.getElementById(
+    "planner-summary-crop-count"
+  );
+
+const expectedCropCount =
+  window.BCPFeedCropPlanner
+    ?.config
+    ?.crops
+    ?.expectedCropIds
+    ?.length;
+
+if (
+  cropCountElement &&
+  Number.isInteger(expectedCropCount)
+) {
+  cropCountElement.textContent =
+    `${expectedCropCount} planned crop records`;
+}
+
+
+});
 
 </script>
 
