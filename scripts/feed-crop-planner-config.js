@@ -4499,19 +4499,18 @@ const PROFILE_MATRIX_EXPECTATIONS =
           "Tests beginner friendliness, sunny raised-bed suitability, enrichment, pollinator value, and low-processing whole-head harvests.",
 
         expectedTopCropIds: [
-          "CROP-COWPEA",
-          "CROP-KALE-COLLARDS",
+          "CROP-OATS",
           "CROP-SUNFLOWER"
         ],
 
         expectedTopThreeCropIds: [
-          "CROP-COWPEA",
-          "CROP-KALE-COLLARDS",
-          "CROP-SUNFLOWER"
-        ],
+          "CROP-OATS",
+          "CROP-SUNFLOWER",
+          "CROP-PROSO-MILLET"
+],
 
-        notes:
-          "Sunflower should benefit from the requested seed-head products and pollinator goal. Kale may compete because it is highly beginner-friendly and strong in raised beds."
+notes:
+  "Oats and Sunflowers should be strongest because the visitor explicitly wants low-processing seed-head enrichment in a sunny raised bed. Oats may lead through whole dried heads, while Sunflowers benefit from the pollinator and shared-household-food goals."
       }),
 
     "PROFILE-HOT-DRY":
