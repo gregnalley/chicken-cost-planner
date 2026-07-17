@@ -24963,19 +24963,560 @@ plannerData: {
         ]
       },
 
-      "usePaths": {
-        "livingForage": true,
-        "cutAndCarry": true,
-        "wholeSeedHeads": true,
-        "wholeGrain": true,
-        "crackedGrain": true,
-        "storedGrain": true,
-        "seedSaving": true,
-        "coverCrop": true,
-        "soilImprovement": true,
-        "compostMaterial": true,
-        "mulchMaterial": true
-      },
+           "usePaths": [
+        {
+          "id": "fresh-young-wheat-forage",
+
+          "label": "Fresh Young Wheat Forage",
+
+          "description":
+            "Established young vegetative wheat used through protected living access, controlled rotational grazing, or cut-and-carry harvesting before the stand advances into stem elongation and grain production.",
+
+          "primaryFeedRole":
+            "fresh-green-forage",
+
+          "harvestProducts": [
+            "fresh-greens",
+            "living-forage"
+          ],
+
+          "suitableFeedingMethods": [
+            "living-grazing",
+            "cut-and-carry"
+          ],
+
+          "requiredProcessingTasks": [],
+
+          "optionalProcessingTasks": [
+            "chop"
+          ],
+
+          "requiredEquipment": [],
+
+          "helpfulEquipment": [
+            "fencing",
+            "forage-frame",
+            "basket",
+            "hand-pruners"
+          ],
+
+          "harvestPattern":
+            "continuous",
+
+          "harvestFrequencyCategory":
+            "several-weekly",
+
+          "storageMethods": [
+            "short-term-fresh"
+          ],
+
+          "preferredStorageMethod":
+            "immediate-feeding",
+
+          "storageDurationCategory":
+            "immediate",
+
+          "nonElectricStorageSuitable":
+            false,
+
+          "refrigerationSuitable":
+            true,
+
+          "freezingSuitable":
+            false,
+
+          "dryingRequired":
+            false,
+
+          "curingRequired":
+            false,
+
+          "shellingRequired":
+            false,
+
+          "threshingRequired":
+            false,
+
+          "cookingRequired":
+            false,
+
+          "grindingRequired":
+            false,
+
+          "moistureSensitive":
+            true,
+
+          "moldRiskScore":
+            2,
+
+          "rodentRiskScore":
+            1,
+
+          "storedInsectRiskScore":
+            1,
+
+          "harvestEaseScore":
+            5,
+
+          "preparationEaseScore":
+            5,
+
+          "beginnerSuitabilityScore":
+            5,
+
+          "householdFoodValueScore":
+            1,
+
+          "flockValueScore":
+            5,
+
+          "safetyWarnings": [
+            "Allow the stand to establish before permitting flock access.",
+            "Use controlled grazing or a forage frame to prevent uprooting and destruction.",
+            "Stop grazing or cutting before stem jointing when the same stand is expected to produce mature grain.",
+            "Offer only clean, fresh growth that is free from mold, decay, chemical contamination, and excessive soil contamination.",
+            "Fresh wheat forage remains supplemental to an age-appropriate complete poultry ration.",
+            "Do not use chemically treated seed where the resulting plants or leftover seed may be fed."
+          ],
+
+          "incompatibleUserTraits": [
+            "requires-long-term-storage",
+            "wants-dry-grain-only",
+            "has-no-way-to-protect-establishing-crop"
+          ]
+        },
+
+        {
+          "id":
+            "whole-dried-wheat-seed-heads",
+
+          "label":
+            "Whole Dried Wheat Seed Heads",
+
+          "description":
+            "Mature wheat seed heads are cut, dried thoroughly under protected and ventilated conditions, inspected, and offered whole as measured adult-chicken pecking enrichment.",
+
+          "primaryFeedRole":
+            "stored-energy-enrichment",
+
+          "harvestProducts": [
+            "dried-seed-heads",
+            "whole-wheat-heads",
+            "stored-enrichment"
+          ],
+
+          "suitableFeedingMethods": [
+            "whole-seed-heads",
+            "pecking-enrichment",
+            "winter-supplement"
+          ],
+
+          "requiredProcessingTasks": [
+            "cut-seed-heads",
+            "dry"
+          ],
+
+          "optionalProcessingTasks": [
+            "clean-sort"
+          ],
+
+          "requiredEquipment": [],
+
+          "helpfulEquipment": [
+            "hand-pruners",
+            "basket",
+            "bird-netting",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "moisture-meter",
+            "food-safe-container",
+            "metal-grain-can"
+          ],
+
+          "harvestPattern":
+            "major",
+
+          "harvestFrequencyCategory":
+            "seasonal",
+
+          "storageMethods": [
+            "dried-whole"
+          ],
+
+          "preferredStorageMethod":
+            "cool-dry-ventilated-and-rodent-protected",
+
+          "storageDurationCategory":
+            "medium",
+
+          "nonElectricStorageSuitable":
+            true,
+
+          "refrigerationSuitable":
+            false,
+
+          "freezingSuitable":
+            false,
+
+          "dryingRequired":
+            true,
+
+          "curingRequired":
+            false,
+
+          "shellingRequired":
+            false,
+
+          "threshingRequired":
+            false,
+
+          "cookingRequired":
+            false,
+
+          "grindingRequired":
+            false,
+
+          "moistureSensitive":
+            true,
+
+          "moldRiskScore":
+            5,
+
+          "rodentRiskScore":
+            5,
+
+          "storedInsectRiskScore":
+            4,
+
+          "harvestEaseScore":
+            4,
+
+          "preparationEaseScore":
+            4,
+
+          "beginnerSuitabilityScore":
+            4,
+
+          "householdFoodValueScore":
+            2,
+
+          "flockValueScore":
+            5,
+
+          "safetyWarnings": [
+            "Dry seed heads thoroughly before enclosed storage.",
+            "Do not seal heads while they remain warm or damp.",
+            "Inspect stored heads for condensation, heating, insects, rodents, musty odor, visible mold, sprouting, or discoloration.",
+            "Discard moldy, musty, sprouted, ergot-contaminated, insect-damaged, rodent-contaminated, or otherwise questionable heads.",
+            "Awned varieties may be less convenient for whole-head flock use and require additional observation.",
+            "Whole seed heads remain supplemental to complete poultry feed.",
+            "Do not feed chemically treated planting seed."
+          ],
+
+          "incompatibleUserTraits": [
+            "declines-drying",
+            "has-no-protected-drying-area",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
+        },
+
+        {
+          "id":
+            "loose-dried-whole-wheat-grain",
+
+          "label":
+            "Loose Dried Whole Wheat Grain",
+
+          "description":
+            "Fully mature wheat heads are dried, threshed, winnowed, cleaned, and stored as intact whole grain for measured adult-chicken supplementation.",
+
+          "primaryFeedRole":
+            "whole-energy-grain",
+
+          "harvestProducts": [
+            "dry-grain",
+            "wheat-kernels",
+            "whole-grain",
+            "stored-grain"
+          ],
+
+          "suitableFeedingMethods": [
+            "whole-grain",
+            "measured-supplement",
+            "winter-storage"
+          ],
+
+          "requiredProcessingTasks": [
+            "cut-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort"
+          ],
+
+          "optionalProcessingTasks": [
+            "portion"
+          ],
+
+          "requiredEquipment": [],
+
+          "helpfulEquipment": [
+            "hand-pruners",
+            "basket",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "grain-thresher",
+            "winnowing-screen",
+            "moisture-meter",
+            "food-safe-bucket",
+            "food-safe-container",
+            "metal-grain-can"
+          ],
+
+          "harvestPattern":
+            "major",
+
+          "harvestFrequencyCategory":
+            "seasonal",
+
+          "storageMethods": [
+            "dried-threshed"
+          ],
+
+          "preferredStorageMethod":
+            "airtight-after-adequate-drying",
+
+          "storageDurationCategory":
+            "long",
+
+          "nonElectricStorageSuitable":
+            true,
+
+          "refrigerationSuitable":
+            false,
+
+          "freezingSuitable":
+            false,
+
+          "dryingRequired":
+            true,
+
+          "curingRequired":
+            false,
+
+          "shellingRequired":
+            false,
+
+          "threshingRequired":
+            true,
+
+          "cookingRequired":
+            false,
+
+          "grindingRequired":
+            false,
+
+          "moistureSensitive":
+            true,
+
+          "moldRiskScore":
+            5,
+
+          "rodentRiskScore":
+            5,
+
+          "storedInsectRiskScore":
+            5,
+
+          "harvestEaseScore":
+            3,
+
+          "preparationEaseScore":
+            2,
+
+          "beginnerSuitabilityScore":
+            3,
+
+          "householdFoodValueScore":
+            4,
+
+          "flockValueScore":
+            5,
+
+          "safetyWarnings": [
+            "Grain must be adequately dried and cooled before airtight storage.",
+            "Do not combine questionable grain with clean sound grain.",
+            "Inspect stored grain regularly for insects, webbing, rodents, condensation, heating, caking, musty odor, sprouting, discoloration, and mold.",
+            "Discard moldy, musty, heated, sprouted, ergot-contaminated, heavily insect-damaged, or rodent-contaminated grain.",
+            "Whole wheat is an energy-oriented supplement and must not replace complete poultry feed.",
+            "Provide suitable grit when adult chickens consume whole grain.",
+            "Do not feed chemically treated planting seed."
+          ],
+
+          "incompatibleUserTraits": [
+            "declines-drying",
+            "declines-threshing",
+            "declines-winnowing",
+            "requires-minimal-processing",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
+        },
+
+        {
+          "id":
+            "cracked-or-ground-wheat-grain",
+
+          "label":
+            "Cracked or Coarsely Ground Wheat Grain",
+
+          "description":
+            "Sound, fully dried, threshed, cleaned wheat grain is cracked or coarsely ground for measured supplementation or use as one ingredient in a properly balanced poultry ration.",
+
+          "primaryFeedRole":
+            "processed-energy-grain",
+
+          "harvestProducts": [
+            "cracked-grain",
+            "coarsely-ground-grain",
+            "processed-wheat",
+            "stored-grain"
+          ],
+
+          "suitableFeedingMethods": [
+            "processed-grain",
+            "measured-supplement",
+            "balanced-ration-ingredient"
+          ],
+
+          "requiredProcessingTasks": [
+            "cut-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "grind"
+          ],
+
+          "optionalProcessingTasks": [
+            "portion",
+            "mix-feed"
+          ],
+
+          "requiredEquipment": [
+            "grain-mill"
+          ],
+
+          "helpfulEquipment": [
+            "hand-pruners",
+            "basket",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "grain-thresher",
+            "winnowing-screen",
+            "feed-grinder",
+            "moisture-meter",
+            "food-safe-bucket",
+            "food-safe-container",
+            "metal-grain-can"
+          ],
+
+          "harvestPattern":
+            "major",
+
+          "harvestFrequencyCategory":
+            "seasonal",
+
+          "storageMethods": [
+            "dried-ground"
+          ],
+
+          "preferredStorageMethod":
+            "shorter-term-airtight-after-grinding",
+
+          "storageDurationCategory":
+            "medium",
+
+          "nonElectricStorageSuitable":
+            true,
+
+          "refrigerationSuitable":
+            false,
+
+          "freezingSuitable":
+            true,
+
+          "dryingRequired":
+            true,
+
+          "curingRequired":
+            false,
+
+          "shellingRequired":
+            false,
+
+          "threshingRequired":
+            true,
+
+          "cookingRequired":
+            false,
+
+          "grindingRequired":
+            true,
+
+          "moistureSensitive":
+            true,
+
+          "moldRiskScore":
+            5,
+
+          "rodentRiskScore":
+            5,
+
+          "storedInsectRiskScore":
+            4,
+
+          "harvestEaseScore":
+            3,
+
+          "preparationEaseScore":
+            1,
+
+          "beginnerSuitabilityScore":
+            2,
+
+          "householdFoodValueScore":
+            4,
+
+          "flockValueScore":
+            5,
+
+          "safetyWarnings": [
+            "Process only clean, sound, adequately dried wheat.",
+            "Grinding exposes more grain surface to oxygen, humidity, contamination, and quality loss.",
+            "Store cracked or ground wheat for a shorter period than intact whole grain.",
+            "Cracking or grinding does not correct wheat's low calcium or make it a complete poultry ration.",
+            "Do not feed moldy, musty, heated, sprouted, ergot-contaminated, insect-damaged, or rodent-contaminated grain.",
+            "Do not feed chemically treated planting seed."
+          ],
+
+          "incompatibleUserTraits": [
+            "declines-drying",
+            "declines-threshing",
+            "declines-winnowing",
+            "declines-grinding",
+            "requires-minimal-processing",
+            "owns-no-grinding-equipment",
+            "will-not-purchase-required-equipment",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
+        }
+      ],
 
       "dataQuality": {
         "overallConfidence": "High",
