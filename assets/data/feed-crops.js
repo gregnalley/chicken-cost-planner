@@ -21130,5 +21130,2886 @@ plannerData: {
         ]
       }
     }
+  },
+
+  "CROP-OATS": {
+    id:
+      "CROP-OATS",
+
+    name:
+      "Oats",
+
+    scientificName:
+      "Avena sativa",
+
+    category:
+      "Cool-Season Grain, Forage, and Cover Crop",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Cool Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Oats are a cool-season annual cereal that can provide fresh vegetative forage, whole mature seed heads, or dry stored grain for adult chickens. They are easy to establish in suitable climates and also provide cover-crop, erosion-control, and soil-building value, but ordinary hulled oats are relatively high in fiber and lower in usable poultry energy than corn, millet, or grain sorghum.",
+
+    chickenUse: {
+      edibleParts: [
+        "Young vegetative leaves and shoots",
+        "Mature oat grain",
+        "Whole mature seed heads",
+        "Threshed whole grain",
+        "Coarsely ground grain"
+      ],
+
+      primaryValue: [
+        "Cool-season fresh forage",
+        "Moderate carbohydrate energy",
+        "Moderate protein",
+        "Pecking and foraging enrichment",
+        "Dry grain storage",
+        "Seasonal ground cover"
+      ],
+
+      feedingForms: [
+        "Protected living forage",
+        "Cut-and-carry young greens",
+        "Whole dried seed heads",
+        "Threshed whole grain",
+        "Coarsely ground grain",
+        "A measured ingredient in a properly balanced poultry ration"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving a complete base ration",
+        "Cool-season feed gardens",
+        "Protected forage frames",
+        "Rotational chicken areas",
+        "Small-flock enrichment",
+        "Dry winter grain storage",
+        "Growers seeking a dual-purpose forage and grain crop"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "For fresh forage, allow oats to establish before permitting controlled access and use the crop while growth remains leafy and vegetative. For grain, allow seed heads to mature, harvest promptly when grain is dry enough to handle safely, finish drying under cover with good airflow, and thresh, clean, or grind only when the chosen use path requires it.",
+
+      safetyNotes:
+        "Oats should supplement rather than replace an age-appropriate complete poultry ration. Ordinary hulled oats are relatively high in fiber, and large amounts may dilute dietary energy, amino acids, calcium, vitamins, and minerals. Do not feed chemically treated planting seed or grain that is moldy, musty, damp, heated, insect-damaged, rodent-contaminated, rancid, or otherwise questionable."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate values for ordinary whole hulled oat grain. Composition varies with variety, hull percentage, climate, fertility, grain quality, and processing. Naked oats, oat groats, rolled oats, and oat hulls are nutritionally different products.",
+
+      crudeProteinPercent:
+        "Approximately 11% for ordinary whole hulled oats",
+
+      fatPercent:
+        "Approximately 4%",
+
+      fiberPercent:
+        "Approximately 10.5% crude fiber on average, with substantial variation caused largely by hull percentage",
+
+      calciumPercent:
+        "Approximately 0.10%",
+
+      phosphorusPercent:
+        "Approximately 0.25% total phosphorus; available phosphorus may be substantially lower",
+
+      notableNutrients: [
+        "Starch",
+        "Moderate protein",
+        "Unsaturated fat",
+        "Linoleic acid",
+        "Beta-glucans",
+        "Phosphorus",
+        "Manganese",
+        "Magnesium"
+      ],
+
+      limitations: [
+        "The hull raises fiber and reduces usable energy for poultry",
+        "Poultry digest fiber less efficiently than many grazing livestock",
+        "Beta-glucans may reduce nutrient availability and increase digestive viscosity",
+        "Ordinary oats provide less usable energy than corn or grain sorghum",
+        "Oats are low in calcium and do not provide a balanced layer ration",
+        "Naked oats and oat groats should not be compared directly with ordinary whole hulled oats",
+        "Grinding does not correct the grain's mineral or amino-acid imbalance",
+        "Large amounts may displace nutritionally complete poultry feed"
+      ]
+    },
+
+    growing: {
+      sunlight:
+        "Full sun is preferred; approximately 6 or more hours of direct sunlight supports useful forage and grain production",
+
+      soilTemperatureMinimumF:
+        null,
+
+      idealSoilTemperatureF:
+        "Cool, workable soil; oats are commonly planted very early in spring in northern regions or during fall in mild-winter regions",
+
+      frostTolerance:
+        "Moderate during vegetative growth, but winter hardiness varies significantly by variety and oats are generally less winter-hardy than rye or wheat",
+
+      heatTolerance:
+        "Low to Moderate",
+
+      droughtTolerance:
+        "Low to Moderate; oats generally perform best under cool conditions with dependable moisture",
+
+      soilPHMinimum:
+        5.5,
+
+      soilPHMaximum:
+        7.0,
+
+      waterNeeds:
+        "Moderate; dependable moisture supports germination, tillering, stem development, heading, and grain filling",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      plantSpacingInches:
+        "Normally planted as a broadcast or drilled stand rather than as individually spaced plants",
+
+      rowSpacingInches:
+        "Drill, broadcast, and garden-row spacing vary by intended forage or grain use",
+
+      plantingDepthInches:
+        "Approximately 1 to 1.5 inches in moist soil",
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        true
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant spring oats as soon as soil is workable and field conditions permit. Fall-planted ordinary oats frequently winter-kill unless a locally adapted winter-hardy variety and suitable conditions are available.",
+
+        harvestWindow:
+          "Young forage may be used during spring and early summer. Grain is generally harvested during summer after heads mature and grain dries."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Plant spring oats early, commonly as soon as the seedbed can be prepared without causing compaction. Early planting helps the crop develop before summer heat.",
+
+        harvestWindow:
+          "Vegetative forage may be cut during spring. Mature grain is generally harvested during midsummer, depending on planting date and variety."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Plant during fall at the locally recommended date for winter forage or spring grain. Variety winter hardiness is important because severe cold may damage or kill the stand.",
+
+        harvestWindow:
+          "Forage may be available during fall, winter warm periods, and spring. Grain generally matures during late spring or early summer."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant during fall for winter and spring growth. Planting dates vary by latitude and intended forage or grain use, with forage generally planted earlier than grain.",
+
+        harvestWindow:
+          "Fresh forage may be available from fall through spring. Grain is generally harvested during late spring before prolonged heat and wet weather reduce quality."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant during the coolest practical season where irrigation or dependable seasonal moisture is available. Avoid timing grain filling for extreme heat.",
+
+        harvestWindow:
+          "Harvest forage during cool vegetative growth or grain after spring maturity and adequate dry-down."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Plant spring oats early where winters are severe. In milder western areas, locally adapted fall planting may be possible.",
+
+        harvestWindow:
+          "Forage may be used during spring and early summer. Grain generally matures in summer."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during the cool rainy season in mild climates or during early spring in colder locations. Local disease pressure and harvest humidity should guide timing.",
+
+        harvestWindow:
+          "Use vegetative forage during the cool growing period and harvest mature grain before prolonged moisture damages seed quality."
+      }
+    },
+
+    spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Potentially several months when mature grain is adequately dried, cooled, and protected from moisture, heat, insects, rodents, and rancidity",
+
+      storageMethod:
+        "Dry mature heads or threshed grain thoroughly with good airflow. Store only cool, sound grain in a dry, dark, food-safe and rodent-resistant container. Inspect periodically for condensation, heating, insects, webbing, rodent contamination, musty odor, caking, discoloration, or visible mold.",
+
+      yieldNotes:
+        "Oats are normally established by seeding rate as a continuous stand rather than as individual plants, so plants-per-area fields remain null. Commercial bushels-per-acre and forage-tonnage figures should not be converted directly into backyard yield promises. Small-plot output depends on variety, planting date, stand density, fertility, weeds, moisture, disease, lodging, bird pressure, harvest timing, threshing efficiency, hull percentage, and final grain moisture."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Usually low when purchased as suitable untreated agricultural seed, although named food-grade, winter-hardy, organic, or hull-less varieties may cost more",
+
+      equipmentCostEstimate:
+        "Low for a small forage planting. Grain production may add optional costs for wildlife protection, drying screens, fans, threshing, grinding, moisture testing, and rodent-resistant storage.",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Low to Moderate for living forage; Moderate to High when grain is harvested, dried, threshed, cleaned, ground, and stored manually",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Oats may provide value through cool-season forage, enrichment, erosion control, nitrogen capture, organic matter, and stored grain. On very small plots, the labor required to harvest and process clean grain may exceed its direct market value, while protected forage or whole-head use may remain worthwhile."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for commercial grain and forage cultivation, general oat-grain composition, cool-season use, winter-hardiness limitations, and harvest moisture; moderate for general poultry-feed use; limited for backyard laying-hen supplementation rates and small-plot grain yield",
+
+      sources: [
+        {
+          title:
+            "Southern Small Grains Resource Management Handbook",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/publications/detail.html?number=B1190&title=southern-small-grains-resource-management-handbook",
+
+          use:
+            "Oat adaptation, grain and forage uses, planting periods, winter hardiness, variety selection, disease, harvest, drying, and storage"
+        },
+
+        {
+          title:
+            "Planting Guide for Row Crops in Georgia",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/publications/detail.html?number=C813",
+
+          use:
+            "Regional planting dates, seeding rate, harvest dates, and certified-seed guidance"
+        },
+
+        {
+          title:
+            "Organic Oat Production",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/small-grains-crop-and-variety-selection/organic-oat-production",
+
+          use:
+            "Soil drainage, soil pH, fertility, field selection, and production management"
+        },
+
+        {
+          title:
+            "Oats in Poultry Diets",
+
+          organization:
+            "Small and Backyard Poultry Extension",
+
+          url:
+            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/oats-in-poultry-diets/",
+
+          use:
+            "Poultry nutrient values, hull variation, fiber, beta-glucans, energy limitations, fat, naked-oat distinctions, and ration context"
+        },
+
+        {
+          title:
+            "Cereals in Poultry Diets",
+
+          organization:
+            "Small and Backyard Poultry Extension",
+
+          url:
+            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/",
+
+          use:
+            "Cereal-grain structure, oat hull proportion, groat distinctions, fiber, protein, and energy context"
+        },
+
+        {
+          title:
+            "Georgia Forages: Grass Species",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/publications/detail.html?number=B1351",
+
+          use:
+            "Winter forage use, seasonal production, grazing tolerance, spring forage growth, and winter-kill risk"
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-16",
+
+      researchNotes: [
+        "Keep the record centered on Avena sativa grown for ordinary hulled grain or vegetative forage.",
+        "Do not combine ordinary whole oats, naked oats, oat groats, rolled oats, and oat hulls as though they have identical poultry value.",
+        "Do not apply commercial formulated-feed inclusion percentages directly to backyard supplementation.",
+        "No exact safe percentage of a backyard flock's diet has been assigned.",
+        "Research poultry-specific consumption of whole mature oat heads at backyard scale.",
+        "Research whether adult laying hens consume ordinary whole oat grain readily enough to justify a whole-grain path without grinding.",
+        "Research practical flock damage and recovery under protected forage-frame and rotational-access systems.",
+        "Find credible small-plot grain-yield data before estimating yield per square foot.",
+        "Do not convert commercial bushels-per-acre or forage-tonnage figures directly into backyard yield.",
+        "Research oat varieties suitable for northern spring planting, southern winter planting, disease resistance, lodging resistance, and home grain use.",
+        "Evaluate whether a separate future record is justified for naked or hull-less oats.",
+        "Calculate general research-layer scores only after additional comparable crops are complete."
+      ]
+    },
+
+    plannerData: {
+      schemaVersion:
+        "1.0.0",
+
+      developmentStatus:
+        "testing",
+
+      identity: {
+        plannerName:
+          "Oats",
+
+        shortLabel:
+          "Oats",
+
+        icon:
+          "🌾",
+
+        cropCategory:
+          "grain",
+
+        primaryFeedCategory:
+          "energy",
+
+        guideUrl:
+          "growing-oats-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual:
+          true,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          true,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "mild-winter"
+        ],
+
+        challengingClimateTypes: [
+          "hot-dry"
+        ],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          null,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          2,
+
+        droughtClimateToleranceScore:
+          2,
+
+        humidityToleranceScore:
+          4,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          3,
+
+        winterHardinessRequired:
+          true,
+
+        seasonExtensionBenefits: [
+          "Very early spring planting helps northern growers use cool soil and spring moisture before summer heat.",
+          "Fall planting extends cool-season production in mild-winter regions.",
+          "Selecting a locally adapted winter-hardy variety reduces winter-kill risk in fall-planted systems.",
+          "Protected forage frames may extend flock access while preventing complete stand destruction."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "cool-season",
+
+          springPlantingSuitable:
+            true,
+
+          fallPlantingSuitable:
+            true,
+
+          fallPlantingRegionDependent:
+            true,
+
+          winterHardinessHighlyVarietyDependent:
+            true,
+
+          generallyLessWinterHardyThanRyeOrWheat:
+            true,
+
+          severeColdCanCauseWinterKill:
+            true,
+
+          southernYieldLossTemperatureReferenceF:
+            20,
+
+          heatDuringGrainFillConcern:
+            true,
+
+          notes: [
+            "Oats grow best during cool conditions.",
+            "Northern grain production commonly relies on spring-planted oats.",
+            "Southern grain and forage production commonly relies on fall planting.",
+            "Ordinary oats are generally less winter-hardy than rye or wheat.",
+            "Some oat varieties are substantially more winter-hardy than others.",
+            "Plants that establish and tiller before severe cold may survive better than late weak seedlings.",
+            "Winter-killed oats may retain cover-crop value but will not produce the intended grain harvest.",
+            "High temperature during heading and grain filling can reduce crop performance."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          null,
+
+        productiveMinimumSunHours:
+          6,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          3,
+
+        afternoonShadeBenefitInHeat:
+          3,
+
+        windToleranceScore:
+          3,
+
+        lodgingRiskScore:
+          4,
+
+        reflectedHeatToleranceScore:
+          2,
+
+        airflowRequirementScore:
+          4,
+
+        frostPocketSensitivityScore:
+          3,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          1,
+
+        structureConflictRiskScore:
+          1,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          1,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight, with stronger forage and grain production expected under longer full-sun exposure.",
+
+          windExposureConcern:
+            true,
+
+          lodgingPossible:
+            true,
+
+          goodAirflowHelpful:
+            true,
+
+          notes: [
+            "Full sun supports stronger tillering, forage growth, stem strength, and grain filling.",
+            "Partial sun may still produce vegetative cover, but grain yield and stand strength may decline.",
+            "Tall, lush, overfertilized, disease-weakened, or storm-exposed stands may lodge.",
+            "Good airflow helps foliage and mature seed heads dry after rain or dew.",
+            "Oats create fewer long-term structure, utility, and hardscape conflicts than tall grain crops or permanent perennials.",
+            "Established tree roots can reduce water, nutrients, sunlight, and rooting space."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            4,
+
+          verySandy:
+            2,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          4,
+
+        temporaryWetToleranceScore:
+          3,
+
+        waterloggingSensitivityScore:
+          4,
+
+        minimumSoilDepthIn:
+          null,
+
+        preferredSoilDepthIn:
+          null,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          3,
+
+        preferredPHMinimum:
+          5.5,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          3,
+
+        nitrogenRequirementScore:
+          4,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          null,
+
+        amendmentEffortScore:
+          3,
+
+        directFacts: {
+          preferredDrainage:
+            "moderately-well-drained-to-well-drained",
+
+          adaptableTextures: [
+            "loam",
+            "silt loam",
+            "clay loam",
+            "sandy loam"
+          ],
+
+          preferredTexture:
+            "A productive, moderately well-drained to well-drained soil with adequate moisture-holding capacity.",
+
+          waterloggedSoilSuitable:
+            false,
+
+          soilPHSourceRanges: [
+            {
+              sourceContext:
+                "Minnesota oat production",
+
+              minimum:
+                5.5,
+
+              maximum:
+                7.0
+            },
+
+            {
+              sourceContext:
+                "Southern small-grain production",
+
+              minimum:
+                5.8,
+
+              maximum:
+                6.5
+            }
+          ],
+
+          notes: [
+            "Oats perform well on moderately well-drained to well-drained soils.",
+            "Loam and clay-loam soils can supply dependable moisture when compaction and waterlogging are controlled.",
+            "Sandy-loam soils may perform well but can require more dependable water and fertility.",
+            "Very sandy soils raise drought and nutrient-leaching risk.",
+            "Heavy clay receives a low score where slow drainage, crusting, or compaction restricts establishment.",
+            "Oats may tolerate somewhat more soil acidity than some other cereal grains, but productive pH still matters.",
+            "Oats do not fix nitrogen and do not require legume inoculation.",
+            "Excess nitrogen may increase lush growth, lodging, and disease risk."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "moderate",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "moderate",
+
+        floweringWaterNeedLevel:
+          "moderate",
+
+        harvestDevelopmentWaterNeedLevel:
+          "high",
+
+        droughtSurvivalScore:
+          2,
+
+        droughtYieldRetentionScore:
+          2,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "tillering",
+          "stem-elongation",
+          "heading",
+          "flowering",
+          "grain-filling"
+        ],
+
+        criticalStageWaterImportanceScore:
+          4,
+
+        overwateringSensitivityScore:
+          3,
+
+        waterloggingSensitivityScore:
+          4,
+
+        dripIrrigationBenefitScore:
+          3,
+
+        mulchBenefitScore:
+          2,
+
+        suitableForRainfallOnlyScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          2,
+
+        containerDryingRiskScore:
+          4,
+
+        establishmentYearsRequiringExtraWater:
+          0,
+
+        directFacts: {
+          droughtTolerantAfterEstablishment:
+            false,
+
+          establishmentMoistureImportant:
+            true,
+
+          regularMoistureImprovesProduction:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          coolSeasonMoistureUse:
+            true,
+
+          grainFillMoistureImportant:
+            true,
+
+          notes: [
+            "Oats generally perform best where cool-season rainfall or irrigation is dependable.",
+            "Adequate moisture supports germination, tillering, canopy formation, heading, and grain filling.",
+            "The crop is less drought-resilient than Proso Millet or Grain Sorghum.",
+            "Water stress during heading and grain filling can reduce grain size and yield.",
+            "Temporary cool wet conditions may be tolerated better than prolonged saturation.",
+            "Standing water, poor aeration, and compacted wet soil can damage roots and reduce stand health.",
+            "Rainfall-only production is practical in many suitable cool-season climates.",
+            "Hot, dry regions may require irrigation and careful seasonal timing."
+          ]
+        }
+      },
+
+      space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          4,
+
+        mediumSpaceScore:
+          5,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            5,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            4,
+
+          smallBeds:
+            4,
+
+          openField:
+            5
+        },
+
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            4,
+
+          container:
+            2,
+
+          fenceLine:
+            3,
+
+          buildingEdge:
+            3,
+
+          unusedLawn:
+            5,
+
+          openField:
+            5,
+
+          orchard:
+            3,
+
+          forageFrame:
+            5,
+
+          rotationalPaddock:
+            5,
+
+          greenhouse:
+            2,
+
+          hedgerow:
+            2
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Oats can grow in containers or trays, but container production is generally inefficient for meaningful mature grain harvest. Small containers are more appropriate for temporary green forage than for stored grain.",
+
+        minimumRaisedBedDepthIn:
+          null,
+
+        vineSpreadRequired:
+          false,
+
+        verticalSupportBenefitScore:
+          1,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          true,
+
+        heightCategory:
+          "medium",
+
+        matureWidthCategory:
+          "narrow-upright",
+
+        overflowSpaceBenefitScore:
+          2,
+
+        directFacts: {
+          layoutFlexible:
+            true,
+
+          blockPollinationRequired:
+            false,
+
+          suitableForRowPlanting:
+            true,
+
+          suitableForBroadcastStand:
+            true,
+
+          suitableForCloselySpacedStands:
+            true,
+
+          suitableForSingleOrSmallGroupPlanting:
+            false,
+
+          continuousStandMostPractical:
+            true,
+
+          notes: [
+            "Oats are normally planted as a drilled, broadcast, or closely spaced continuous stand.",
+            "The crop does not require Corn-style block planting for pollination.",
+            "Small beds can produce forage or whole heads for enrichment.",
+            "Medium and large plots are more efficient for producing measurable loose grain.",
+            "Unused lawn and open-field areas can support seasonal cover and grain production.",
+            "Forage frames can protect young growth from complete flock destruction.",
+            "Rotational paddocks may permit controlled grazing after establishment.",
+            "Containers are inefficient for substantial grain production.",
+            "Minimum useful area remains null until small-plot yield and flock-use relationships are tested."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            4,
+
+          meat:
+            3,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            5,
+
+          homestead:
+            5,
+
+          mixed:
+            5
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            4,
+
+          cutAndCarry:
+            4,
+
+          wholeProduce:
+            1,
+
+          wholeSeedHeads:
+            5,
+
+          wholeGrain:
+            4,
+
+          processedGrain:
+            4,
+
+          heatTreated:
+            1,
+
+          driedForage:
+            2,
+
+          winterStorage:
+            4
+        },
+
+        directRunSuitabilityScore:
+          2,
+
+        forageFrameSuitabilityScore:
+          5,
+
+        rotationalPaddockSuitabilityScore:
+          4,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          5,
+
+        treatDilutionRiskScore:
+          4,
+
+        highEnergySupplement:
+          false,
+
+        highFiberSupplement:
+          true,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Protected cool-season living forage",
+          "Cut-and-carry young oat greens",
+          "Whole dried seed heads for pecking enrichment",
+          "Threshed whole grain",
+          "Coarsely ground grain",
+          "Stored cool-season grain",
+          "Seasonal pasture diversity"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Highest-energy grain production",
+          "Primary protein production",
+          "Unrestricted permanent-run planting",
+          "Primary young-chick feed",
+          "Feeding moldy or inadequately dried grain",
+          "Assuming naked-oat nutrition applies to ordinary hulled oats"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Young vegetative leaves and shoots",
+            "Mature whole grain",
+            "Whole mature seed heads",
+            "Coarsely ground mature grain"
+          ],
+
+          preferredBirdStage:
+            "Adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor-with-unrestricted-access",
+
+          directAccessTiming:
+            "Allow the stand to establish before controlled grazing, or keep chickens away until mature seed heads are harvested.",
+
+          nutritionalOrientation: [
+            "moderate-energy",
+            "grain",
+            "high-fiber",
+            "fresh-green",
+            "living-forage",
+            "enrichment",
+            "winter-storage"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          ordinaryHulledOatsBaseline:
+            true,
+
+          nakedOatsNutritionallyDifferent:
+            true,
+
+          gritImportantForWholeGrain:
+            true,
+
+          notes: [
+            "Young vegetative oats can provide fresh green forage and flock enrichment.",
+            "Unrestricted chickens may uproot seedlings, overgraze leaves, scratch soil, and prevent grain formation.",
+            "Protected forage frames or rotational access improve stand persistence.",
+            "Whole mature seed heads encourage pecking and natural feed-seeking behavior.",
+            "Loose grain is easier to measure but requires threshing and cleaning.",
+            "Ordinary hulled oats contain more fiber and less usable energy than Corn or Grain Sorghum.",
+            "Oats contain beta-glucans that may reduce nutrient availability.",
+            "Coarse grinding may improve physical access but does not create a complete ration.",
+            "Oats are low in calcium and should not displace complete layer feed.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore:
+          4,
+
+        plantingEaseScore:
+          4,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          4,
+
+        weedControlEaseScore:
+          3,
+
+        wildlifeProtectionEaseScore:
+          3,
+
+        harvestEaseScore:
+          3,
+
+        wholeHeadProcessingEaseScore:
+          4,
+
+        looseSeedProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          4,
+
+        heavyLiftingRiskScore:
+          1,
+
+        weeklyLaborLevel:
+          "low",
+
+        peakWorkloadLevel:
+          "moderate",
+
+        harvestFrequencyCategory:
+          "mixed",
+
+        requiredPlantingTasks: [
+          "prepare-seedbed",
+          "broadcast-small-seed"
+        ],
+
+        requiredMaintenanceTasks: [
+          "hand-weed",
+          "protect-from-wildlife"
+        ],
+
+        optionalMaintenanceTasks: [
+          "cultivate",
+          "mow-clip",
+          "rotate-grazing"
+        ],
+
+        requiredHarvestTasks: [],
+
+        usePathProcessingTasks: {
+          freshYoungForage: [
+            "cut-forage"
+          ],
+
+          wholeDriedSeedHeads: [
+            "cut-seed-heads",
+            "dry"
+          ],
+
+          looseDriedWholeGrain: [
+            "cut-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort"
+          ],
+
+          groundOatGrain: [
+            "cut-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "grind"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "inspect-moisture",
+          "inspect-insects",
+          "inspect-mold"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "hoe",
+          "rake",
+          "hand-pruners",
+          "fencing",
+          "bird-netting",
+          "forage-frame",
+          "basket",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "grain-thresher",
+          "grain-mill",
+          "feed-grinder",
+          "moisture-meter",
+          "food-safe-bucket",
+          "food-safe-container",
+          "metal-grain-can",
+          "rodent-proof-room"
+        ],
+
+        suitableForLowTimeUsersScore:
+          4,
+
+        suitableForSoloGrowersScore:
+          4,
+
+        directFacts: {
+          seedSize:
+            "medium-small",
+
+          directSeedingSuitable:
+            true,
+
+          indoorStartingPossible:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          majorLaborBottlenecks: [
+            "Preparing an even seedbed",
+            "Controlling weeds during establishment",
+            "Preventing premature flock access",
+            "Protecting maturing grain from birds",
+            "Cutting and handling mature seed heads",
+            "Drying heads and grain safely",
+            "Threshing and winnowing loose grain",
+            "Monitoring stored grain"
+          ],
+
+          notes: [
+            "Oats are straightforward to direct-seed by broadcasting or drilling.",
+            "A dense healthy stand can suppress some later weeds, but early competition remains important.",
+            "Fresh-forage use requires less processing than grain use.",
+            "Whole-head use avoids threshing and winnowing.",
+            "Loose-grain production concentrates substantial hand labor around harvest.",
+            "Grinding adds equipment and labor but is optional for many adult-flock uses.",
+            "Commercial plantings use combines and grain-handling systems, but small backyard plots can be cut and processed manually."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "low",
+
+        soilPreparationCostLevel:
+          "low",
+
+        irrigationCostLevel:
+          "low",
+
+        protectionCostLevel:
+          "low",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageCostLevel:
+          "low",
+
+        annualRecurringCostLevel:
+          "low",
+
+        longTermValueScore:
+          4,
+
+        lowestCostUsePath:
+          "fresh-young-oat-forage",
+
+        highestCostUsePath:
+          "ground-oat-grain",
+
+        likelyCostDrivers: [
+          "Seedbed preparation",
+          "Fencing or forage-frame protection",
+          "Bird netting",
+          "Drying racks or screens",
+          "Optional grain thresher",
+          "Optional grain mill or feed grinder",
+          "Moisture meter",
+          "Rodent-resistant storage containers"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small protected forage or whole-head trial.",
+          "Broadcast by hand on a prepared small plot.",
+          "Use whole heads instead of threshing loose grain.",
+          "Thresh and winnow manually at small scale.",
+          "Use existing screens, fans, buckets, and metal containers.",
+          "Choose a locally adapted variety to reduce winter-kill, disease, and lodging risk.",
+          "Use the crop as both seasonal cover and flock forage."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          notes: [
+            "Seed is generally inexpensive.",
+            "Fresh-forage production can be accomplished with ordinary garden tools.",
+            "Whole-head use minimizes equipment requirements.",
+            "Loose-grain processing may justify a thresher, screens, or mill only at larger backyard scale.",
+            "Rodent-resistant storage is important for dry grain.",
+            "Cost classifications are qualitative rather than current retail estimates."
+          ]
+        }
+      },
+
+      goals: {
+        feedReductionScore:
+          3,
+
+        energyProductionScore:
+          3,
+
+        proteinOrientedScore:
+          2,
+
+        freshGreensScore:
+          4,
+
+        livingForageScore:
+          4,
+
+        winterStorageScore:
+          4,
+
+        enrichmentScore:
+          5,
+
+        resilienceScore:
+          3,
+
+        soilImprovementScore:
+          4,
+
+        nitrogenFixationScore:
+          0,
+
+        groundCoverScore:
+          5,
+
+        erosionControlScore:
+          5,
+
+        shadeScore:
+          1,
+
+        privacyScreeningScore:
+          1,
+
+        pollinatorSupportScore:
+          1,
+
+        compostBiomassScore:
+          4,
+
+        householdFoodScore:
+          4,
+
+        seedSavingScore:
+          4,
+
+        selfRelianceScore:
+          4,
+
+        multipurposeValueScore:
+          5,
+
+        visualAppealScore:
+          3,
+
+        productionReliabilityScore:
+          4,
+
+        fastestValueScore:
+          4,
+
+        nonElectricStorageScore:
+          4,
+
+        smallFlockValueScore:
+          5,
+
+        largeFlockValueScore:
+          4,
+
+        primaryGoalMatches: [
+          "fresh-greens",
+          "living-forage",
+          "cool-season-production",
+          "winter-storage",
+          "enrichment",
+          "ground-cover",
+          "erosion-control",
+          "soil-improvement",
+          "compost-biomass",
+          "shared-household-food",
+          "self-reliance",
+          "seed-saving",
+          "use-unused-space"
+        ],
+
+        weakGoalMatches: [
+          "highest-energy",
+          "primary-protein-production",
+          "nitrogen-fixation",
+          "pollinators",
+          "shade",
+          "privacy-screening",
+          "permanent-ground-cover",
+          "hot-season-production",
+          "extreme-drought-resilience",
+          "container-production"
+        ],
+
+        directFacts: {
+          coolSeasonAnnual:
+            true,
+
+          dualForageAndGrainPotential:
+            true,
+
+          coverCropPotential:
+            true,
+
+          erosionControlPotential:
+            true,
+
+          nitrogenCapturePotential:
+            true,
+
+          greenManurePotential:
+            true,
+
+          humanFoodPotential:
+            true,
+
+          seedSavingPossible:
+            true,
+
+          notes: [
+            "Oats add a cool-season production role that differs from the planner's warm-season grains.",
+            "Young growth can provide fresh greens and living-forage value.",
+            "Mature heads and grain provide enrichment and dry-storage value.",
+            "Dense stands protect soil and reduce erosion.",
+            "Oats can capture residual soil nitrogen but do not fix atmospheric nitrogen.",
+            "Crop residue can contribute organic matter and compost biomass.",
+            "Ordinary oats are not the planner's strongest high-energy grain.",
+            "The crop offers strong multipurpose value where both flock use and soil cover matter."
+          ]
+        }
+      },
+
+      risks: {
+        wildlife: {
+          wildBirds:
+            4,
+
+          deer:
+            4,
+
+          raccoons:
+            1,
+
+          squirrels:
+            2,
+
+          rabbits:
+            4,
+
+          rodents:
+            4,
+
+          groundhogs:
+            3
+        },
+
+        insectsRiskScore:
+          3,
+
+        diseaseRiskScore:
+          4,
+
+        lodgingRiskScore:
+          4,
+
+        fieldMoldRiskScore:
+          4,
+
+        dryingMoldRiskScore:
+          4,
+
+        storageMoldRiskScore:
+          4,
+
+        storedInsectRiskScore:
+          4,
+
+        spoilageSpeedRiskScore:
+          2,
+
+        invasivenessConcernRiskScore:
+          1,
+
+        selfSeedingRiskScore:
+          2,
+
+        fruitDropRiskScore:
+          1,
+
+        cropFailureRiskScore:
+          3,
+
+        stormDamageRiskScore:
+          4,
+
+        shadingOtherCropsRiskScore:
+          2,
+
+        overfeedingRiskScore:
+          4,
+
+        treatedSeedRiskScore:
+          5,
+
+        primaryRisks: [
+          {
+            id:
+              "winter-kill",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "seedling-establishment",
+              "tillering",
+              "winter-dormancy"
+            ],
+
+            mitigationOptions: [
+              "Choose a locally adapted winter-hardy variety",
+              "Plant at the recommended regional date",
+              "Establish the crop before severe cold",
+              "Use spring oats where winter survival is unreliable",
+              "Avoid poorly drained frost pockets"
+            ],
+
+            note:
+              "Oats are generally less winter-hardy than rye or wheat, and variety, growth stage, soil, and weather strongly affect survival."
+          },
+
+          {
+            id:
+              "lodging",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "stem-elongation",
+              "heading",
+              "grain-filling",
+              "maturity"
+            ],
+
+            mitigationOptions: [
+              "Choose a variety with good straw strength",
+              "Avoid excessive nitrogen",
+              "Avoid excessive stand density",
+              "Maintain balanced fertility",
+              "Harvest promptly after maturity"
+            ],
+
+            note:
+              "Tall or lush stands may lean or flatten under wind, rain, disease, or excessive fertility."
+          },
+
+          {
+            id:
+              "disease-and-rust",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "vegetative-growth",
+              "stem-elongation",
+              "heading",
+              "grain-filling"
+            ],
+
+            mitigationOptions: [
+              "Choose resistant adapted varieties",
+              "Use suitable crop rotation",
+              "Plant clean untreated seed intended for the chosen use",
+              "Maintain airflow",
+              "Avoid excessive nitrogen",
+              "Monitor regional Extension alerts"
+            ],
+
+            note:
+              "Crown rust, smuts, leaf diseases, and other pathogens can reduce forage, lodging resistance, grain yield, and grain quality."
+          },
+
+          {
+            id:
+              "wet-grain-and-field-weathering",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "maturity",
+              "harvest",
+              "drying"
+            ],
+
+            mitigationOptions: [
+              "Harvest promptly near appropriate grain moisture",
+              "Avoid prolonged exposure to rain and dew",
+              "Finish drying under cover",
+              "Provide strong airflow",
+              "Discard visibly damaged or questionable grain"
+            ],
+
+            note:
+              "Rain and dew after maturity can discolor grain and increase field-weathering, sprouting, and mold risk."
+          },
+
+          {
+            id:
+              "storage-mold-and-heating",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "drying",
+              "storage"
+            ],
+
+            mitigationOptions: [
+              "Dry grain adequately before sealing",
+              "Cool grain before enclosed storage",
+              "Use dry food-safe containers",
+              "Inspect for condensation and heating",
+              "Control insects and rodents",
+              "Discard musty or moldy material"
+            ],
+
+            note:
+              "Damp or warm oats may heat, mold, cake, or support insects during storage."
+          },
+
+          {
+            id:
+              "unrestricted-flock-damage",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "germination",
+              "seedling-establishment",
+              "vegetative-growth",
+              "heading"
+            ],
+
+            mitigationOptions: [
+              "Use a forage frame",
+              "Use temporary fencing",
+              "Rotate access",
+              "Allow the stand to establish",
+              "Protect grain plots until harvest"
+            ],
+
+            note:
+              "Chickens can uproot seedlings, overgraze leaves, scratch the soil, and prevent mature grain production."
+          },
+
+          {
+            id:
+              "balanced-feed-displacement",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Offer oats as a measured supplement",
+              "Continue complete poultry feed",
+              "Limit scratch-grain use",
+              "Avoid assuming whole oats provide a balanced ration"
+            ],
+
+            note:
+              "High-fiber oat grain can dilute usable energy, amino acids, calcium, vitamins, and minerals when overfed."
+          },
+
+          {
+            id:
+              "chemically-treated-seed",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "planting",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use untreated seed where the crop or leftover seed may be fed",
+              "Keep treated seed clearly separated",
+              "Follow seed-label restrictions"
+            ],
+
+            note:
+              "Chemically treated planting seed must not be fed to chickens."
+          }
+        ],
+
+        directFacts: {
+          winterKillPossible:
+            true,
+
+          lodgingPossible:
+            true,
+
+          crownRustConcern:
+            true,
+
+          looseSmutConcern:
+            true,
+
+          cerealLeafBeetlePreference:
+            true,
+
+          wetWeatherCanReduceGrainQuality:
+            true,
+
+          promptHarvestImportant:
+            true,
+
+          moistureControlImportantDuringStorage:
+            true,
+
+          notes: [
+            "Winter survival varies strongly by variety, establishment, soil, temperature, and duration of cold.",
+            "Oats may suffer substantial yield loss when southern winter temperatures fall below approximately 20°F.",
+            "Disease resistance is an important variety-selection criterion.",
+            "Cereal leaf beetle may strongly prefer oats among available small-grain hosts.",
+            "Rain and dew after maturity may discolor grain and reduce quality.",
+            "Wild birds, deer, rabbits, and rodents may consume forage or mature grain.",
+            "Adequate drying and protected storage are essential.",
+            "Questionable, musty, moldy, heated, rancid, or contaminated oats should not be fed."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        earlySpring:
+          true,
+
+        lateSpring:
+          true,
+
+        summer:
+          true,
+
+        lateSummer:
+          false,
+
+        fall:
+          true,
+
+        winterStorage:
+          true,
+
+        perennial:
+          false,
+
+        plantingWindows: [
+          {
+            id:
+              "early-spring-oats",
+
+            trigger:
+              "soil-workable",
+
+            offsetWeeksMinimum:
+              null,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "cool-moist-and-workable",
+
+            method:
+              "direct-seed",
+
+            note:
+              "Plant spring oats as early as practical without working soil while excessively wet."
+          },
+
+          {
+            id:
+              "fall-oats-mild-winter",
+
+            trigger:
+              "regional-fall-planting-window",
+
+            offsetWeeksMinimum:
+              null,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "moist-and-workable",
+
+            method:
+              "direct-seed",
+
+            note:
+              "Use locally recommended fall dates and an adapted variety where winter survival is expected."
+          }
+        ],
+
+        harvestWindows: [
+          {
+            id:
+              "young-oat-forage",
+
+            trigger:
+              "established-vegetative-growth",
+
+            usePathId:
+              "fresh-young-oat-forage",
+
+            note:
+              "Use leafy vegetative growth before excessive stem and seed-head development reduces forage tenderness."
+          },
+
+          {
+            id:
+              "whole-dried-oat-heads",
+
+            trigger:
+              "mature-seed-heads",
+
+            usePathId:
+              "whole-dried-oat-seed-heads",
+
+            note:
+              "Cut mature heads and finish drying under protected, ventilated conditions."
+          },
+
+          {
+            id:
+              "loose-dried-oat-grain",
+
+            trigger:
+              "grain-mature-and-adequately-dry",
+
+            usePathId:
+              "loose-dried-whole-oat-grain",
+
+            note:
+              "Thresh and clean mature grain after the seed heads have reached a suitable dry condition."
+          },
+
+          {
+            id:
+              "ground-oat-grain",
+
+            trigger:
+              "clean-dry-grain-available",
+
+            usePathId:
+              "ground-oat-grain",
+
+            note:
+              "Grind only sound, adequately dried grain and use the processed grain before quality declines."
+          }
+        ],
+
+        cropSequenceRoles: [
+          "Early spring grain",
+          "Fall-planted winter annual",
+          "Cool-season living forage",
+          "Protected forage-frame crop",
+          "Seasonal rotational-paddock forage",
+          "Cover crop",
+          "Erosion-control crop",
+          "Nitrogen catch crop",
+          "Green-manure crop",
+          "Dry winter-storage grain"
+        ],
+
+        seasonalLimitations: [
+          "Ordinary oats may winter-kill in severe cold",
+          "Winter hardiness varies substantially by variety",
+          "Summer heat can reduce grain performance",
+          "Forage quality declines as stems and seed heads mature",
+          "Heavy grazing may prevent grain production",
+          "Wet weather near maturity can damage grain quality",
+          "Stored grain requires adequate drying"
+        ],
+
+        directFacts: {
+          coolSeasonAnnual:
+            true,
+
+          springAndFallPlantingPossible:
+            true,
+
+          southernForagePlantingOftenEarlierThanGrainPlanting:
+            true,
+
+          forageQualityDeclinesWithMaturity:
+            true,
+
+          grainHarvestMoistureReferencePercent:
+            13,
+
+          notes: [
+            "Spring oats allow northern growers to produce a cool-season crop without relying on winter survival.",
+            "Fall oats provide winter and spring growth in suitable southern and mild-winter climates.",
+            "Forage planting is often earlier than grain planting in the South.",
+            "Vegetative forage use and mature grain production compete with one another when the same stand is heavily grazed.",
+            "Grain should be harvested promptly after reaching suitable maturity and moisture.",
+            "Stored whole grain extends the crop's usefulness beyond the growing season."
+          ]
+        }
+      },
+
+      usePaths: [
+        {
+          id:
+            "fresh-young-oat-forage",
+
+          label:
+            "Fresh Young Oat Forage",
+
+          description:
+            "Established young vegetative oats used through protected living access, controlled rotational grazing, or cut-and-carry harvesting before the stand becomes mature and stemmy.",
+
+          primaryFeedRole:
+            "fresh-green-forage",
+
+          harvestProducts: [
+            "fresh-greens",
+            "living-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "living-grazing",
+            "cut-and-carry"
+          ],
+
+          requiredProcessingTasks: [],
+
+          optionalProcessingTasks: [
+            "chop"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "fencing",
+            "forage-frame",
+            "basket",
+            "hand-pruners"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "several-weekly",
+
+          storageMethods: [
+            "short-term-fresh"
+          ],
+
+          preferredStorageMethod:
+            "immediate-feeding",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Allow the crop to establish before permitting flock access.",
+            "Avoid unrestricted grazing that uproots or destroys the stand.",
+            "Use clean fresh growth rather than slimy, moldy, contaminated, or badly decayed forage.",
+            "Do not treat fresh forage as a replacement for complete poultry feed.",
+            "Do not use chemically treated seed where plants or leftover seed may be fed."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-storage",
+            "wants-dry-grain-only",
+            "has-no-way-to-protect-establishing-crop"
+          ]
+        },
+
+        {
+          id:
+            "whole-dried-oat-seed-heads",
+
+          label:
+            "Whole Dried Oat Seed Heads",
+
+          description:
+            "Mature oat seed heads cut and dried under protected, ventilated conditions for later whole-head flock enrichment.",
+
+          primaryFeedRole:
+            "grain-enrichment",
+
+          harvestProducts: [
+            "dried-seed-heads"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "winter-storage",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "dry"
+          ],
+
+          optionalProcessingTasks: [
+            "clean-sort"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "basket",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "food-safe-container",
+            "metal-grain-can"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [
+            "dried-whole"
+          ],
+
+          preferredStorageMethod:
+            "dried-whole",
+
+          storageDurationCategory:
+            "medium-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Dry heads thoroughly before enclosed storage.",
+            "Do not seal heads while they remain warm or damp.",
+            "Inspect stored heads for condensation, insects, rodents, heating, musty odor, and mold.",
+            "Do not feed damaged, moldy, musty, rancid, or contaminated heads.",
+            "Do not feed chemically treated planting seed."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "has-no-protected-drying-area",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
+        },
+
+        {
+          id:
+            "loose-dried-whole-oat-grain",
+
+          label:
+            "Loose Dried Whole Oat Grain",
+
+          description:
+            "Mature oat grain threshed from adequately dried seed heads, winnowed, cleaned, and stored whole for measured supplemental feeding.",
+
+          primaryFeedRole:
+            "moderate-energy-grain",
+
+          harvestProducts: [
+            "dry-seeds"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "winter-storage"
+          ],
+
+          requiredProcessingTasks: [
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "grain-thresher",
+            "moisture-meter",
+            "food-safe-bucket",
+            "food-safe-container",
+            "metal-grain-can",
+            "rodent-proof-room"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [
+            "dried-shelled"
+          ],
+
+          preferredStorageMethod:
+            "airtight-after-adequate-drying",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Grain must be adequately dried and cooled before airtight storage.",
+            "Provide suitable grit when adult chickens consume whole grain.",
+            "Do not assume whole oats provide the energy or nutrient balance of complete poultry feed.",
+            "Inspect regularly for moisture, heating, insects, rodents, rancidity, and mold.",
+            "Discard musty, moldy, heated, rancid, sprouted-in-storage, or contaminated grain.",
+            "Do not feed chemically treated planting seed."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "declines-threshing",
+            "declines-winnowing",
+            "requires-minimal-processing",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
+        },
+
+        {
+          id:
+            "ground-oat-grain",
+
+          label:
+            "Ground or Coarsely Processed Oat Grain",
+
+          description:
+            "Sound mature oat grain dried, threshed, cleaned, and ground or coarsely processed for measured supplemental use or incorporation into a properly balanced ration.",
+
+          primaryFeedRole:
+            "processed-grain",
+
+          harvestProducts: [
+            "dry-seeds"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "measured-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "grind"
+          ],
+
+          optionalProcessingTasks: [],
+
+          requiredEquipment: [
+            "grain-mill"
+          ],
+
+          helpfulEquipment: [
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "grain-thresher",
+            "feed-grinder",
+            "moisture-meter",
+            "food-safe-bucket",
+            "food-safe-container",
+            "metal-grain-can",
+            "rodent-proof-room"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [
+            "dried-shelled"
+          ],
+
+          preferredStorageMethod:
+            "shorter-term-airtight-after-grinding",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Process only sound, clean, adequately dried grain.",
+            "Grinding exposes more grain surface to oxygen, moisture, contamination, and quality loss.",
+            "Store processed oats for a shorter period than intact whole grain.",
+            "Grinding does not make oats a complete poultry ration.",
+            "Do not feed moldy, musty, heated, rancid, insect-damaged, or rodent-contaminated material.",
+            "Do not feed chemically treated planting seed."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "declines-threshing",
+            "declines-winnowing",
+            "declines-grinding",
+            "requires-minimal-processing",
+            "owns-no-grinding-equipment",
+            "will-not-purchase-required-equipment",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
+        }
+      ],
+
+      dataQuality: {
+        overallConfidence:
+          null,
+
+        verifiedFields: [
+          "identity",
+          "lifecycle",
+          "climate.directFacts.seasonType",
+          "climate.directFacts.springPlantingSuitable",
+          "climate.directFacts.fallPlantingSuitable",
+          "climate.directFacts.winterHardinessHighlyVarietyDependent",
+          "climate.directFacts.generallyLessWinterHardyThanRyeOrWheat",
+          "climate.directFacts.severeColdCanCauseWinterKill",
+          "climate.directFacts.southernYieldLossTemperatureReferenceF",
+          "soil.preferredPHMinimum",
+          "soil.preferredPHMaximum",
+          "soil.directFacts.preferredDrainage",
+          "soil.directFacts.soilPHSourceRanges",
+          "water.directFacts.establishmentMoistureImportant",
+          "water.directFacts.regularMoistureImprovesProduction",
+          "space.directFacts.layoutFlexible",
+          "space.directFacts.blockPollinationRequired",
+          "space.directFacts.suitableForBroadcastStand",
+          "space.directFacts.continuousStandMostPractical",
+          "flock.directFacts.edibleFeedParts",
+          "flock.directFacts.nutritionalOrientation",
+          "flock.directFacts.balancedFeedReplacement",
+          "flock.directFacts.ordinaryHulledOatsBaseline",
+          "flock.directFacts.nakedOatsNutritionallyDifferent",
+          "labor.directFacts.directSeedingSuitable",
+          "goals.directFacts.coolSeasonAnnual",
+          "goals.directFacts.dualForageAndGrainPotential",
+          "goals.directFacts.coverCropPotential",
+          "goals.directFacts.erosionControlPotential",
+          "goals.directFacts.nitrogenCapturePotential",
+          "goals.directFacts.greenManurePotential",
+          "risks.directFacts.winterKillPossible",
+          "risks.directFacts.lodgingPossible",
+          "risks.directFacts.crownRustConcern",
+          "risks.directFacts.looseSmutConcern",
+          "risks.directFacts.cerealLeafBeetlePreference",
+          "risks.directFacts.wetWeatherCanReduceGrainQuality",
+          "risks.directFacts.promptHarvestImportant",
+          "risks.directFacts.moistureControlImportantDuringStorage",
+          "seasonalRoles.directFacts.coolSeasonAnnual",
+          "seasonalRoles.directFacts.springAndFallPlantingPossible",
+          "seasonalRoles.directFacts.forageQualityDeclinesWithMaturity",
+          "seasonalRoles.directFacts.grainHarvestMoistureReferencePercent",
+          "usePaths.fresh-young-oat-forage.harvestProducts",
+          "usePaths.whole-dried-oat-seed-heads.harvestProducts",
+          "usePaths.loose-dried-whole-oat-grain.harvestProducts",
+          "usePaths.ground-oat-grain.harvestProducts"
+        ],
+
+        derivedFields: [
+          "climate.suitableClimateTypes",
+          "climate.preferredClimateTypes",
+          "climate.challengingClimateTypes",
+          "climate.heatToleranceScore",
+          "climate.droughtClimateToleranceScore",
+          "climate.humidityToleranceScore",
+          "climate.coolSummerToleranceScore",
+          "climate.frostSensitivityScore",
+          "climate.indoorSeedStartingBenefitScore",
+          "site",
+          "soil.textureScores",
+          "soil.drainageRequirementScore",
+          "soil.temporaryWetToleranceScore",
+          "soil.waterloggingSensitivityScore",
+          "soil.compactionToleranceScore",
+          "soil.establishmentInSodDifficultyScore",
+          "soil.fertilityRequirementScore",
+          "soil.nitrogenRequirementScore",
+          "soil.phosphorusRequirementScore",
+          "soil.potassiumRequirementScore",
+          "water",
+          "space",
+          "flock.flockPurposeScores",
+          "flock.feedingMethodScores",
+          "flock.directRunSuitabilityScore",
+          "flock.forageFrameSuitabilityScore",
+          "flock.rotationalPaddockSuitabilityScore",
+          "flock.confinedFlockValueScore",
+          "flock.pasturedFlockValueScore",
+          "flock.treatDilutionRiskScore",
+          "labor",
+          "cost",
+          "goals",
+          "risks.wildlife",
+          "risks.insectsRiskScore",
+          "risks.diseaseRiskScore",
+          "risks.lodgingRiskScore",
+          "risks.fieldMoldRiskScore",
+          "risks.dryingMoldRiskScore",
+          "risks.storageMoldRiskScore",
+          "risks.storedInsectRiskScore",
+          "seasonalRoles.plantingWindows",
+          "seasonalRoles.harvestWindows",
+          "usePaths.fresh-young-oat-forage.harvestEaseScore",
+          "usePaths.fresh-young-oat-forage.preparationEaseScore",
+          "usePaths.fresh-young-oat-forage.beginnerSuitabilityScore",
+          "usePaths.whole-dried-oat-seed-heads.harvestEaseScore",
+          "usePaths.whole-dried-oat-seed-heads.preparationEaseScore",
+          "usePaths.whole-dried-oat-seed-heads.beginnerSuitabilityScore",
+          "usePaths.loose-dried-whole-oat-grain.harvestEaseScore",
+          "usePaths.loose-dried-whole-oat-grain.preparationEaseScore",
+          "usePaths.loose-dried-whole-oat-grain.beginnerSuitabilityScore",
+          "usePaths.ground-oat-grain.harvestEaseScore",
+          "usePaths.ground-oat-grain.preparationEaseScore",
+          "usePaths.ground-oat-grain.beginnerSuitabilityScore"
+        ],
+
+        uncertainFields: [
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.minimumSoilTemperatureF",
+          "climate.preferredSoilTemperatureF",
+          "climate.daysToMaturityMinimum",
+          "climate.daysToMaturityMaximum",
+          "climate.dryDownBufferDays",
+          "site.absoluteMinimumSunHours",
+          "soil.minimumSoilDepthIn",
+          "soil.preferredSoilDepthIn",
+          "soil.survivalPHMinimum",
+          "soil.survivalPHMaximum",
+          "soil.saltToleranceScore",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance",
+          "usePaths.fresh-young-oat-forage.storageDurationCategory",
+          "usePaths.whole-dried-oat-seed-heads.storageDurationCategory",
+          "usePaths.loose-dried-whole-oat-grain.storageDurationCategory",
+          "usePaths.ground-oat-grain.storageDurationCategory",
+          "economics.potentialFeedSavings",
+          "spaceAndYield.expectedYieldPer100SquareFeetMinimumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMaximumLbs"
+        ],
+
+        missingFields: [],
+
+        assumptions: [
+          "Planner scoring represents ordinary hulled oats unless a field explicitly says otherwise.",
+          "Fresh-forage scoring assumes controlled access after establishment rather than unrestricted permanent-run exposure.",
+          "Whole-head feeding is treated as a practical enrichment path but has limited direct backyard poultry research.",
+          "Adult chickens are assumed to have access to appropriate grit when consuming whole grain.",
+          "The stored-grain paths assume adequate drying, cooling, pest control, and rodent protection.",
+          "The ground-grain path uses the existing general grind task rather than introducing a crop-specific cracking task.",
+          "Crop-category and feed-category values use the existing shared configuration enums.",
+          "No exact safe dietary inclusion percentage is assigned."
+        ],
+
+        validationNotes: [
+          "The crop remains in testing until schema validation, regression testing, and targeted oat profiles are complete.",
+          "The public guide page must exist before developmentStatus changes to ready.",
+          "Test living-forage, forage-frame, cool-season, winter-kill, whole-head, threshing, grinding, humid-storage, and limited-water scenarios.",
+          "Confirm that the four use paths use only active task and equipment IDs.",
+          "Confirm that no existing 23-profile expected leader changes unintentionally."
+        ]
+      },
+
+      sources: {
+        primarySources: [
+          {
+            title:
+              "Southern Small Grains Resource Management Handbook",
+
+            organization:
+              "University of Georgia Cooperative Extension",
+
+            sourceType:
+              "extension-production-guide",
+
+            use:
+              "Oat adaptation, uses, planting, winter hardiness, forage, diseases, harvest moisture, drying, and storage"
+          },
+
+          {
+            title:
+              "Planting Guide for Row Crops in Georgia",
+
+            organization:
+              "University of Georgia Cooperative Extension",
+
+            sourceType:
+              "extension-planting-guide",
+
+            use:
+              "Regional planting dates, harvest dates, seeding rate, and certified-seed guidance"
+          },
+
+          {
+            title:
+              "Organic Oat Production",
+
+            organization:
+              "University of Minnesota Extension",
+
+            sourceType:
+              "extension-production-guide",
+
+            use:
+              "Soil drainage, pH, fertility, field selection, and crop management"
+          },
+
+          {
+            title:
+              "Oats in Poultry Diets",
+
+            organization:
+              "Small and Backyard Poultry Extension",
+
+            sourceType:
+              "poultry-feed-reference",
+
+            use:
+              "Nutrient composition, hull variation, fiber, beta-glucans, energy limitations, naked-oat distinction, and poultry-ration context"
+          },
+
+          {
+            title:
+              "Georgia Forages: Grass Species",
+
+            organization:
+              "University of Georgia Cooperative Extension",
+
+            sourceType:
+              "extension-forage-guide",
+
+            use:
+              "Cool-season forage growth, winter-kill risk, grazing tolerance, and spring production"
+          }
+        ],
+
+        notes: [
+          "Oats plannerData applies to Avena sativa grown for ordinary hulled grain or vegetative forage.",
+          "It does not treat naked oats, groats, rolled oats, oat hulls, or commercial oat by-products as nutritionally identical.",
+          "The four use paths are fresh young forage, whole dried seed heads, loose dried whole grain, and ground grain.",
+          "Fresh forage is modeled as controlled access, forage-frame use, rotational grazing, or cut-and-carry harvest.",
+          "The crop is treated as a moderate-energy, high-fiber grain rather than a concentrated high-energy crop.",
+          "No exact safe flock inclusion rate has been assigned.",
+          "No medicinal claims are made.",
+          "The crop must remain in testing until targeted profiles and the public growing guide are complete."
+        ]
+      }
+    }
   }
+
 };
