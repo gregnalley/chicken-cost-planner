@@ -776,7 +776,7 @@ function renderProfileMatrix() {
 
     bodyElement.innerHTML = `
       <tr>
-        <td colspan="9">
+        <td colspan="8">
           Profile matrix could not run.
         </td>
       </tr>
@@ -799,7 +799,7 @@ function renderProfileMatrix() {
 
     bodyElement.innerHTML = `
       <tr>
-        <td colspan="9">
+        <td colspan="8">
           Profile matrix could not run.
         </td>
       </tr>
@@ -878,7 +878,27 @@ const actualLeader =
               <td class="profile-actual">
   ${
     actualLeader
-      ? `${actualLeader.cropName} (${actualLeader.finalScore}%)`
+      ? `
+        <strong>
+          ${actualLeader.cropName}
+        </strong>
+
+        <br>
+
+        ${actualLeader.finalScore}%
+
+        <br>
+
+        <small>
+          <strong>Use:</strong>
+          ${
+            actualLeader
+              .bestUsePath
+              ?.label ||
+            "Unavailable"
+          }
+        </small>
+      `
       : "No eligible recommendation"
   }
 </td>
@@ -908,14 +928,6 @@ const actualLeader =
   }
 </td>
 
-<td>
-  ${
-    actualLeader
-      ?.bestUsePath
-      ?.label ||
-    "Unavailable"
-  }
-</td>
 
 <td class="profile-matrix-na">
   Not Configured
@@ -1101,6 +1113,18 @@ const topThreeMarkup =
             ?.label ||
           "No tier"
         }
+
+        <br>
+
+        <small>
+          <strong>Use:</strong>
+          ${
+            actualLeader
+              .bestUsePath
+              ?.label ||
+            "No eligible use path"
+          }
+        </small>
       `
       : "Unavailable"
   }
@@ -1110,14 +1134,6 @@ const topThreeMarkup =
   ${topThreeMarkup}
 </td>
 
-<td>
-  ${
-    actualLeader
-      ?.bestUsePath
-      ?.label ||
-    "No eligible use path"
-  }
-</td>
 
 <td class="${statusClass}">
   ${statusLabel}
