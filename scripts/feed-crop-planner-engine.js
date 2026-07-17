@@ -3523,6 +3523,31 @@ function getUsePathCapabilityGate(
   }
 
   /*
+ * CAPABILITY GATE 1B
+ *
+ * When the visitor has selected one or more
+ * desired harvest products, a use path that
+ * produces none of those products is not an
+ * eligible recommendation path.
+ *
+ * This applies to general products as well as
+ * crop-specific products. It prevents unrelated
+ * paths, such as leafy forage, from winning when
+ * the visitor explicitly requested seed heads
+ * or dry grain.
+ */
+if (
+  productMatchAnalysis
+    .hasAnyDesiredProducts &&
+  !productMatchAnalysis
+    .hasAnyMatch
+) {
+  hardFailures.push(
+    "This use path does not produce any of the visitor's selected harvest products."
+  );
+}
+
+  /*
    * CAPABILITY GATE 2
    *
    * A visitor asking for continuous,
