@@ -23410,10 +23410,10 @@ plannerData: {
           ],
 
           preferredStorageMethod:
-            "dried-whole",
+            "protected-shorter-term-dried-whole",
 
           storageDurationCategory:
-            "medium-long",
+            "medium",
 
           nonElectricStorageSuitable:
             true,
