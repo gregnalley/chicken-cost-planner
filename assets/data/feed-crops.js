@@ -21584,7 +21584,7 @@ plannerData: {
         "1.0.0",
 
       developmentStatus:
-        "testing",
+        "ready",
 
       identity: {
         plannerName:
