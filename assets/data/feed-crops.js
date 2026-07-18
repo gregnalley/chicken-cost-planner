@@ -31805,7 +31805,7 @@ usePaths: [
         "2.0.0",
 
       developmentStatus:
-        "testing",
+        "ready",
 
       identity: {
         plannerName:
