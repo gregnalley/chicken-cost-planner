@@ -224,6 +224,9 @@
   `;
 }
 
+
+// Displays planner-readiness errors and warnings for every registered crop.
+
 function renderCropValidationReport() {
   const summaryElement =
     document.getElementById(
@@ -336,6 +339,8 @@ function renderCropValidationReport() {
       })
       .join("");
 }
+
+// Displays detailed Sunflower scoring results for every sample profile.
 
 function renderSunflowerSampleTests() {
   const summaryElement =
@@ -546,6 +551,8 @@ function renderSunflowerSampleTests() {
       .join("");
 }
 
+// Displays the full crop ranking for each sample user profile.
+
 function renderMultiCropSampleTests() {
   const summaryElement =
     document.getElementById(
@@ -706,6 +713,8 @@ function renderMultiCropSampleTests() {
       .join("");
 }
 
+  // Displays the sample profiles currently available to the test engine.
+
 function renderSampleProfileList() {
   const summaryElement =
     document.getElementById(
@@ -764,6 +773,15 @@ function renderSampleProfileList() {
     </ol>
   `;
 }
+
+  /*
+    ============================================================
+    3. SHARED FORMATTING HELPERS
+    ============================================================
+  */
+
+
+  // Converts stored answer IDs into readable title-case labels.
 
 function formatProfileValue(value) {
   if (
