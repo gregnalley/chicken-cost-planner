@@ -31269,5 +31269,4897 @@ usePaths: [
     }
   }, 
 
-  };
+  ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - AMARANTH
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
+
+  "CROP-AMARANTH": {
+    id:
+      "CROP-AMARANTH",
+
+    name:
+      "Amaranth",
+
+    scientificName:
+      "Amaranthus cruentus, Amaranthus hypochondriacus, and Amaranthus caudatus",
+
+    category:
+      "Warm-Season Grain, Leafy Green, and Multipurpose Annual Crop",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Warm Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Amaranth is a warm-season broadleaf annual grown for small protein-rich grain, edible young leaves, ornamental seed heads, pollinator activity, and household food. Cultivated grain amaranths can tolerate heat and temporary dry conditions after establishment, produce substantial biomass, and provide several distinct poultry-supplement pathways. Mature grain may contribute energy, protein, fat, minerals, and enrichment, while young tender leaves may provide limited seasonal greens. Raw grain, heat-treated grain, ground grain, leafy material, and whole seed heads should be treated as separate products because their nutritional characteristics, processing requirements, storage risks, and safe poultry uses differ. Amaranth should remain supplemental to a complete poultry ration, and controlled poultry-study inclusion levels should not be copied directly into an unbalanced backyard feed mixture.",
+
+    chickenUse: {
+      edibleParts: [
+        "Clean mature grain from cultivated food-grade amaranth varieties",
+        "Properly dried whole grain",
+        "Heat-treated mature grain",
+        "Cracked or ground mature grain",
+        "Clean fully dried seed heads containing mature grain",
+        "Tender young leaves",
+        "Tender young shoots",
+        "Limited clean cut foliage",
+        "Sound postharvest grain remaining in a managed production area"
+      ],
+
+      primaryValue: [
+        "Protein-rich supplemental grain compared with many common cereal grains",
+        "Energy-oriented mature grain",
+        "Useful lysine contribution compared with most cereal grains",
+        "Supplemental fat and minerals",
+        "Tender seasonal greens",
+        "Whole-seed-head pecking enrichment",
+        "Dry grain storage",
+        "Household-food and flock-feed dual use",
+        "Heat- and drought-resilient annual production",
+        "Pollinator and ornamental value"
+      ],
+
+      feedingForms: [
+        "Small measured portions of clean mature whole grain",
+        "Heat-treated mature grain",
+        "Cracked or coarsely ground grain",
+        "Grain included as a measured ingredient in a properly formulated poultry ration",
+        "Fully dried mature seed heads offered for supervised pecking enrichment",
+        "Small amounts of tender young leaves through cut-and-carry feeding",
+        "Limited controlled postharvest flock access",
+        "Household-food processing residues that remain clean, sound, and appropriate for poultry"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving an age-appropriate complete base ration",
+        "Backyard growers seeking a multipurpose grain and leafy crop",
+        "Warm-season gardens with full sun",
+        "Hot-summer climates",
+        "Households interested in both human food and poultry supplementation",
+        "Growers willing to dry, thresh, clean, and store very small grain",
+        "Flocks that benefit from seed-head pecking enrichment",
+        "Properties needing a tall ornamental annual crop",
+        "Self-reliance systems seeking storable homegrown grain",
+        "Small flocks where modest harvest quantities remain practical"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Harvest grain only from positively identified cultivated food-grade amaranth varieties. Allow seed heads and grain to mature adequately, then cut, dry, thresh, winnow, and clean the grain before storage. Grain intended for long-term storage must be fully dry, cool, and free from mold, insects, condensation, and plant debris. Because raw amaranth grain contains antinutritional compounds and poultry responses vary with species, variety, processing, ration composition, and inclusion level, heat-treated grain is a distinct use path and may be more suitable than unrestricted raw grain. Young leaves should be harvested while tender, inspected carefully, and offered fresh in limited quantities. Avoid feeding coarse mature stems or large amounts of mature foliage. Introduce every form gradually and observe appetite, crop fill, manure condition, egg production, and overall flock health.",
+
+      safetyNotes:
+        "Amaranth must supplement rather than replace an age-appropriate complete poultry ration. Do not assume that its relatively high protein content makes it a complete protein concentrate or balanced poultry feed. Raw grain may contain phytate, tannins, oxalates, saponins, protease inhibitors, and other compounds that can reduce nutrient availability or performance. Leaves and stems may accumulate nitrates or oxalates, particularly under excessive nitrogen fertility, drought stress, interrupted growth, or other unfavorable conditions. Do not feed moldy, damp, fermented, insect-damaged, rodent-contaminated, chemically treated, or unidentified amaranth material. Do not harvest unknown pigweed or weedy Amaranthus species for poultry use merely because they resemble cultivated amaranth. Avoid unrestricted feeding of raw grain, mature foliage, or whole seed heads. Young chicks should continue receiving a complete age-appropriate starter ration rather than substantial amaranth supplements."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate composition of mature amaranth grain, primarily reported on a dry-matter basis, with separate qualitative consideration of fresh young leaves. Composition varies by species, cultivar, environment, maturity, harvest method, processing method, analytical method, and whether results are reported on an as-fed or dry-matter basis.",
+
+      crudeProteinPercent:
+        "Mature grain commonly contains approximately 14% to 18% crude protein on a dry-matter basis; Feedipedia reports an average near 15.4% for Amaranthus caudatus grain",
+
+      fatPercent:
+        "Moderate for a grain crop; commonly approximately 5% to 8% depending on species, cultivar, and analytical basis",
+
+      fiberPercent:
+        "Feedipedia reports approximately 6.9% crude fiber on a dry-matter basis for Amaranthus caudatus grain, with substantial variation among samples; leafy material becomes increasingly fibrous as plants mature",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      notableNutrients: [
+        "Relatively high crude protein compared with many conventional cereal grains",
+        "Lysine at a higher concentration than in many cereal grains",
+        "Starch and other digestible carbohydrates",
+        "Moderate grain fat",
+        "Essential amino acids",
+        "Iron",
+        "Magnesium",
+        "Phosphorus",
+        "Manganese",
+        "Potassium",
+        "Vitamin and mineral contribution from young leaves",
+        "Natural pigments in colored varieties",
+        "Dietary fiber"
+      ],
+
+      limitations: [
+        "Amaranth grain is not a complete poultry ration",
+        "Crude-protein percentage does not guarantee a balanced poultry amino-acid profile",
+        "Protein quality, energy availability, and bird performance depend partly on processing",
+        "Raw grain may contain antinutritional compounds that reduce nutrient availability",
+        "Phytate can reduce mineral availability",
+        "Tannins and other phenolic compounds may reduce palatability or nutrient utilization in some varieties",
+        "Protease-inhibiting activity has been reported in raw amaranth grain",
+        "Saponins, oxalates, nitrates, and other compounds vary among species, plant parts, cultivars, and growing conditions",
+        "Young leaves and mature grain are nutritionally different feed products",
+        "Mature stems and older foliage become increasingly fibrous",
+        "Leaves grown under excessive nitrogen fertility or environmental stress may accumulate undesirable nitrate concentrations",
+        "Oxalate concentration may limit unrestricted use of leafy material",
+        "Tiny grain can pass through unsuitable feeders or be wasted in bedding and soil",
+        "Whole raw grain, heat-treated grain, popped grain, cracked grain, and ground meal should not be treated as nutritionally identical",
+        "Heat processing may improve the practical feeding value of grain but excessive heating can damage nutrients",
+        "Published poultry inclusion rates come from formulated experimental diets and should not be copied directly into home rations",
+        "The crop does not supply the calcium concentration required by laying hens",
+        "Amaranth supplements must not displace excessive amounts of complete poultry feed"
+      ]
+    },
+
+    growing: {
+      sunlight:
+        "Full sun is preferred. Approximately 6 or more hours of direct sunlight supports usable production, while 8 or more hours is preferred for strong growth, large seed heads, grain maturity, and dependable harvest.",
+
+      soilTemperatureMinimumF:
+        60,
+
+      idealSoilTemperatureF:
+        "Approximately 65°F to 75°F for reliable warm-season germination and vigorous early growth, although exact optimum temperatures vary by species and cultivar",
+
+      frostTolerance:
+        "Low. Amaranth is frost-sensitive, and freezing temperatures can damage or kill active growth.",
+
+      heatTolerance:
+        "High after establishment",
+
+      droughtTolerance:
+        "Moderate to High after establishment, although drought during germination, flowering, pollination, and grain filling can reduce yield and quality",
+
+      soilPHMinimum:
+        6.0,
+
+      soilPHMaximum:
+        7.0,
+
+      waterNeeds:
+        "Low to moderate after establishment. Maintain consistent surface moisture during germination because the seed is extremely small and planted shallowly. Established plants tolerate temporary dry periods, but prolonged drought can reduce leaf quality, seed-head development, grain filling, and total yield.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      daysToFirstHarvestMinimum:
+        30,
+
+      daysToFirstHarvestMaximum:
+        60,
+
+      daysToMaturityMinimum:
+        90,
+
+      daysToMaturityMaximum:
+        120,
+
+      plantSpacingInches:
+        "Approximately 8 to 12 inches for individual grain or multipurpose plants; closer spacing may be used for baby-leaf production, while larger ornamental or branching varieties may require additional room",
+
+      rowSpacingInches:
+        "Approximately 12 to 24 inches for garden production, with wider spacing potentially useful for access, airflow, weed control, large varieties, and seed harvest",
+
+      plantingDepthInches:
+        "Very shallow; barely cover the small seed, generally no deeper than approximately 1/8 to 1/4 inch",
+
+      successionPlanting:
+        true,
+
+      regrowthAfterHarvest:
+        true
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Direct sow after frost danger has passed and soil has warmed to approximately 60°F or warmer. Starting transplants indoors may help early or long-season grain varieties complete development in short-summer locations.",
+
+        harvestWindow:
+          "Harvest young leaves during summer. Harvest mature seed heads from late summer through early autumn when grain is mature but before severe frost, prolonged wet weather, lodging, or extensive seed shattering causes loss."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Direct sow from late spring into early summer after frost danger has passed and soil reaches approximately 60°F. Use shallow sowing, careful moisture management, and early weed control.",
+
+        harvestWindow:
+          "Harvest tender leaves through summer and mature seed heads from late summer into autumn. Grain harvest timing depends on cultivar maturity, planting date, rainfall, and frost timing."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Direct sow from mid-spring through early summer after frost danger has passed and the soil is thoroughly warm. A second planting may be possible where enough frost-free growing time remains.",
+
+        harvestWindow:
+          "Harvest leaves from late spring through summer and mature seed heads from midsummer into autumn. Monitor mature heads closely during humid or stormy weather."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant during a warm frost-free period while avoiding the most stressful combination of extreme heat, saturated soil, and severe humidity where possible. Spring and late-summer plantings may perform better than a single midsummer planting in some locations.",
+
+        harvestWindow:
+          "Harvest young leaves while tender and before prolonged heat or pest damage lowers quality. Harvest mature seed heads promptly during dry weather to reduce mold, sprouting, lodging, and shattering losses."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Direct sow after frost danger has passed and soil has warmed. Irrigate carefully during germination and establishment, then maintain enough moisture to protect flowering and grain filling.",
+
+        harvestWindow:
+          "Harvest greens during active growth and grain after heads mature and dry. Protect harvested material from sudden monsoon rain, irrigation splash, wind loss, birds, and rodents."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Plant after frost danger has passed and soil has warmed adequately. Use the warmest sunny location available and favor early-maturing cultivars in cool-summer or maritime areas.",
+
+        harvestWindow:
+          "Harvest leaves during summer and grain before persistent autumn rainfall. Cut mature heads and finish drying under cover when outdoor conditions become cool or damp."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during the warmest dependable frost-free period. Inland warm sites generally support grain production more reliably than cool foggy coastal locations.",
+
+        harvestWindow:
+          "Harvest young foliage during active growth and mature heads during dry weather. In cooler coastal areas, grain maturity may be delayed or incomplete."
+      }
+    },
+
+    spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Properly cleaned and thoroughly dried grain may store for an extended period under cool, dry, dark, airtight, insect-resistant, and rodent-resistant conditions. Exact safe storage life depends on moisture content, temperature, sanitation, processing, packaging, and monitoring.",
+
+      storageMethod:
+        "Dry mature seed heads under cover with strong airflow and protection from rain, birds, rodents, and contamination. Thresh and winnow only after the seed heads and grain are adequately dry. Store clean grain in food-safe airtight containers in a cool, dark, dry location. Check regularly for condensation, clumping, heating, insects, webbing, mold, off odors, and rodent damage. Whole unthreshed heads require more storage space and may retain plant moisture longer than cleaned grain.",
+
+      yieldNotes:
+        "Backyard plants-per-area and yield fields remain null because amaranth production varies substantially with species, cultivar, plant spacing, intended product, fertility, temperature, water, weed competition, lodging, bird pressure, harvest timing, shattering, drying, and threshing efficiency. Field-scale reports of more than 1,000 pounds of grain per acre under suitable conditions should not be converted into a guaranteed backyard yield per plant or per 100 square feet. Closely spaced leafy-green production and widely spaced grain production are different systems and cannot share a single dependable plants-per-area value."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Usually low for a packet or small quantity of seed, although named grain varieties, certified organic seed, rare colors, specialty landraces, and bulk quantities may cost more",
+
+      equipmentCostEstimate:
+        "Low for fresh-leaf or whole-seed-head use; low to moderate for grain production because drying screens, tarps, threshing containers, fans, fine sieves, airtight storage containers, a grain mill, or heat-processing equipment may be useful",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Moderate to High when producing clean stored grain; low to moderate when using tender leaves or whole dried seed heads",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Amaranth may provide long-term seasonal value through household grain, edible leaves, poultry supplementation, seed saving, ornament, pollinator support, biomass, and enrichment. Its tiny seed can make planting, weed control, threshing, cleaning, and storage more labor-intensive than its apparent yield suggests. Whole-seed-head feeding may reduce processing labor but increases waste, ration uncertainty, and monitoring requirements. Clean stored grain may have higher household value than direct poultry-feed value. Exact feed savings remain null because yield, processing loss, ration suitability, labor, equipment, and the amount of complete feed safely displaced have not been established for typical backyard systems."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for cultivated amaranth identity, warm-season annual growth, planting temperature, shallow seeding, garden spacing, leaf and grain maturity ranges, grain composition, household-food use, field-scale production, and the existence of poultry-feeding research; moderate for heat treatment, raw-grain limitations, seed-head use, storage, drought response, and leafy-forage considerations; limited for unrestricted backyard-chicken access, exact home-ration inclusion percentages, backyard yield per square foot, flock feed savings, and long-term use of mature foliage",
+
+      sources: [
+        {
+          title:
+            "Growing Staple Vegetables from Around the World in Minnesota",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/vegetables/growing-staple-vegetables-around-world-minnesota",
+
+          use:
+            "Cultivated amaranth species and uses, soil temperature, direct seeding and transplanting, shallow planting, plant and row spacing, leaf-harvest timing, grain maturity, soil pH, fertility guidance, and competitive growth habit"
+        },
+
+        {
+          title:
+            "Foxtail Amaranth (Amaranthus caudatus), Grain",
+
+          organization:
+            "Feedipedia",
+
+          url:
+            "https://www.feedipedia.org/node/573",
+
+          use:
+            "Amaranth grain dry matter, crude protein, crude fiber, neutral detergent fiber, acid detergent fiber, lignin, and feed-composition context"
+        },
+
+        {
+          title:
+            "Amaranth",
+
+          organization:
+            "University of Wisconsin Alternative Field Crops Manual",
+
+          url:
+            "https://corn.aae.wisc.edu/Crops/Amaranth.aspx",
+
+          use:
+            "Major grain-amaranth species, crop growth, field production, grain yield context, harvest concerns, and distinction between cultivated grain amaranths and related pigweeds"
+        },
+
+        {
+          title:
+            "Amaranth Grain Production in Nebraska",
+
+          organization:
+            "University of Nebraska Cooperative Extension",
+
+          url:
+            "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1405&context=extensionhist",
+
+          use:
+            "Grain-production practices, establishment difficulty caused by small seed, weed-management importance, field production, harvest, and postharvest context"
+        },
+
+        {
+          title:
+            "Production Guide of Vegetable Amaranth for Florida",
+
+          organization:
+            "University of Florida IFAS Extension",
+
+          url:
+            "https://ask.ifas.ufl.edu/publication/HS1407",
+
+          use:
+            "Vegetable-amaranth establishment, tiny seed size, planting depth, row spacing, thinning, warm-climate production, and leafy-harvest context"
+        },
+
+        {
+          title:
+            "Nutrient Composition of Amaranth, Kamut, Quinoa, Spelt and Teff Grains and Flours",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=210713",
+
+          use:
+            "Human-food nutrient composition, grain protein, fat, fiber, vitamin, mineral, and comparative ancient-grain context"
+        },
+
+        {
+          title:
+            "Evaluation of Amaranth Flour Processing for Noodle Making",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=378816",
+
+          use:
+            "Amaranth grain protein context, drought-tolerant crop description, and evidence that dry roasting and other heat-processing methods materially change the product"
+        },
+
+        {
+          title:
+            "Nutritional Characterization of Amaranth Leaves",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=334617",
+
+          use:
+            "Mineral and vitamin value of amaranth leaves, species variation, and evidence supporting treatment of leafy amaranth as a nutritionally distinct product from mature grain"
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-18",
+
+      researchNotes: [
+        "Model Amaranth as a multipurpose warm-season annual rather than only as a grain crop.",
+        "Use cultivated grain amaranths as the primary crop identity, especially Amaranthus cruentus, Amaranthus hypochondriacus, and Amaranthus caudatus.",
+        "Do not treat every plant in the Amaranthus genus as equivalent or suitable for feeding.",
+        "Do not encourage harvesting unidentified pigweed, Palmer amaranth, waterhemp, or roadside amaranth for poultry.",
+        "Keep mature grain, heat-treated grain, cracked or ground grain, seed heads, and leafy foliage as separate use paths.",
+        "Do not assign a universal backyard raw-grain feeding percentage.",
+        "Do not copy experimental poultry-diet inclusion levels into an unbalanced home ration.",
+        "Model heat processing as potentially useful but not as a guarantee that every antinutritional concern has been eliminated.",
+        "Avoid claiming that amaranth is a complete protein feed merely because its lysine level is favorable compared with cereal grains.",
+        "Model crude protein separately from usable amino-acid balance and complete-ration adequacy.",
+        "Do not assign exact calcium or phosphorus values across all cultivated species and products.",
+        "Treat young leaves separately from mature foliage because fiber, palatability, nitrate, oxalate, and moisture conditions change with maturity.",
+        "Model excessive nitrogen fertility and environmental stress as potential leafy-feed risk factors.",
+        "Do not recommend coarse mature stems as useful poultry forage.",
+        "Keep backyard plants-per-area and yield-per-square-foot values null until suitable small-plot evidence supports dependable estimates.",
+        "Do not convert field-scale pounds per acre directly into guaranteed backyard grain yield.",
+        "Account for shattering, birds, rodents, wind, lodging, rain, threshing loss, and cleaning loss when evaluating usable harvest.",
+        "Model the extremely small seed as both a planting challenge and a feed-handling challenge.",
+        "Distinguish direct-seeded garden production from transplanted short-season production.",
+        "Model frost sensitivity separately from heat and drought tolerance.",
+        "Drought survival should not be interpreted as full grain-yield retention.",
+        "Model whole dried seed heads primarily as enrichment and low-processing supplemental feed rather than as a precise ration ingredient.",
+        "Model cleaned dry grain as the strongest long-term storage path.",
+        "Model household-food value as a major economic advantage because cleaned grain may be more valuable for people than as bulk poultry feed.",
+        "Treat seed saving as practical only when the grower can preserve varietal identity and prevent unwanted crossing or contamination.",
+        "Model volunteer seedlings and accidental seed spread as management concerns without equating cultivated grain amaranth automatically with invasive Palmer amaranth.",
+        "Do not make medicinal, disease-treatment, egg-enhancement, meat-quality, or productivity guarantees.",
+        "Continue requiring an age-appropriate complete poultry ration for all flock stages."
+      ]
+    },
+
+        plannerData: {
+      schemaVersion:
+        "2.0.0",
+
+      developmentStatus:
+        "testing",
+
+      identity: {
+        plannerName:
+          "Amaranth",
+
+        shortLabel:
+          "Amaranth",
+
+        icon:
+          "🌾",
+
+        cropCategory:
+          "grain-and-greens",
+
+        primaryFeedCategory:
+          "multipurpose",
+
+        guideUrl:
+          "growing-amaranth-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual:
+          true,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          true,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter"
+        ],
+
+        challengingClimateTypes: [
+          "cold-short-summer",
+          "cool-foggy-coastal",
+          "waterlogged-summer-soil"
+        ],
+
+        minimumFrostFreeDays:
+          90,
+
+        preferredFrostFreeDays:
+          120,
+
+        minimumSoilTemperatureF:
+          60,
+
+        preferredSoilTemperatureF:
+          70,
+
+        daysToMaturityMinimum:
+          90,
+
+        daysToMaturityMaximum:
+          120,
+
+        dryDownBufferDays:
+          10,
+
+        heatToleranceScore:
+          5,
+
+        droughtClimateToleranceScore:
+          4,
+
+        humidityToleranceScore:
+          3,
+
+        coolSummerToleranceScore:
+          2,
+
+        frostSensitivityScore:
+          5,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Starting transplants indoors may help grain varieties mature in short-season climates.",
+          "Using black plastic, dark mulch, or a warm south-facing site can improve early soil warming.",
+          "Low tunnels may protect young plants during cool spring weather but should be removed before excessive heat develops.",
+          "Row cover can reduce early insect damage and protect seedlings while they establish.",
+          "Protected drying space can help finish mature seed heads during wet autumn weather.",
+          "Succession planting can extend the young-leaf harvest period.",
+          "Early-maturing varieties can improve grain reliability where autumn frost arrives quickly.",
+          "Supplemental irrigation during flowering and grain filling may protect yield during drought."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          3,
+
+        directFacts: {
+          seasonType:
+            "warm-season-annual",
+
+          frostSensitive:
+            true,
+
+          commonlyDirectSeeded:
+            true,
+
+          winterDormancyPossible:
+            false,
+
+          heatDormancyPossible:
+            false,
+
+          longLivedPerennial:
+            false,
+
+          dormantTubersColdHardy:
+            false,
+
+          activeTopGrowthFrostSensitive:
+            true,
+
+          droughtRecoveryPotential:
+            true,
+
+          notes: [
+            "Amaranth is a frost-sensitive warm-season annual.",
+            "Direct sowing is common after the soil reaches approximately 60°F.",
+            "Very small seed and shallow planting make early moisture management important.",
+            "Cool soil can delay germination and increase seedling loss.",
+            "The crop generally performs best during warm sunny weather.",
+            "Established plants tolerate heat better than many cool-season leafy crops.",
+            "Short dry periods may be tolerated after establishment.",
+            "Drought during flowering and grain filling may reduce seed yield.",
+            "The crop does not survive winter as a perennial planting.",
+            "Volunteer seedlings may appear in later seasons where mature grain is dropped.",
+            "Long-season grain varieties may fail to mature in short or cool summers.",
+            "Indoor starting is more useful for short-season grain production than for large direct-seeded plots.",
+            "Persistent autumn rain may prevent clean field drying even when the grain has matured.",
+            "The planner should separate biological grain maturity from the additional time needed for safe drying and storage."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          5,
+
+        productiveMinimumSunHours:
+          6,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          2,
+
+        afternoonShadeBenefitInHeat:
+          2,
+
+        windToleranceScore:
+          3,
+
+        lodgingRiskScore:
+          4,
+
+        reflectedHeatToleranceScore:
+          5,
+
+        airflowRequirementScore:
+          4,
+
+        frostPocketSensitivityScore:
+          5,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          1,
+
+        structureConflictRiskScore:
+          2,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          3,
+
+        stainingRiskScore:
+          2,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight can support usable production, while 8 or more hours is preferred for vigorous growth, strong seed-head development, grain filling, and dependable drying.",
+
+          windExposureConcern:
+            true,
+
+          growthHabit:
+            "upright-tall-broadleaf-annual",
+
+          matureHeightFtMinimum:
+            3,
+
+          matureHeightFtMaximum:
+            8,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            true,
+
+          undergroundSpreadConcern:
+            false,
+
+          notes: [
+            "Full sun is preferred for grain, foliage, biomass, and ornamental production.",
+            "Partial shade may produce usable leaves but generally reduces grain production and drying reliability.",
+            "Large grain and ornamental varieties may become several feet tall.",
+            "Tall plants with heavy mature seed heads can lodge during wind, rain, or storms.",
+            "Wind exposure is more concerning late in the season after seed heads gain weight.",
+            "Good airflow helps foliage dry after rain and reduces the time mature heads remain damp.",
+            "Dense planting can increase competition, stem elongation, and lodging.",
+            "A sunny fence line or rear garden border can provide seasonal screening.",
+            "Amaranth should not be planted where tall growth will shade shorter sun-loving crops.",
+            "Dropped grain may create volunteer seedlings in paths, beds, gravel, compost, or disturbed soil.",
+            "Seed heads may shed small grain and chaff around harvest areas.",
+            "The crop does not normally create foundation or underground utility conflicts because it is annual and non-tuberous.",
+            "Planting beside poultry areas may attract birds before the intended harvest date.",
+            "A protected drying site should be considered part of site planning when grain production is the primary goal."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            5,
+
+          verySandy:
+            3,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          2,
+
+        waterloggingSensitivityScore:
+          5,
+
+        minimumSoilDepthIn:
+          8,
+
+        preferredSoilDepthIn:
+          18,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          5,
+
+        preferredPHMinimum:
+          6.0,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          3,
+
+        nitrogenRequirementScore:
+          3,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          2,
+
+        amendmentEffortScore:
+          2,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "loam",
+            "sandy loam",
+            "friable clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          notes: [
+            "Amaranth grows best in fertile, reasonably loose, well-drained soil.",
+            "Loam and sandy loam provide strong establishment and root development.",
+            "Clay loam can be productive when surface crusting and drainage are managed.",
+            "Dense heavy clay can reduce emergence because tiny seedlings struggle through crusted soil.",
+            "Rocky or cloddy seedbeds make shallow uniform sowing difficult.",
+            "A fine, firm, weed-free seedbed improves establishment.",
+            "Amaranth seed should remain close to the soil surface rather than being buried deeply.",
+            "Chronically saturated soil increases root stress, disease, lodging, and crop failure.",
+            "The crop does not fix atmospheric nitrogen.",
+            "Moderate fertility supports growth, but excessive nitrogen can create overly lush foliage and weak stems.",
+            "Excessive nitrogen may increase nitrate accumulation in leafy material under some growing conditions.",
+            "Heavy nitrogen fertility may delay grain maturity or increase lodging.",
+            "Soil testing is preferable to guessing at fertilizer rates.",
+            "Overly rich soil may create very tall plants that require more support.",
+            "Very sandy soil may require more frequent irrigation and careful fertility management.",
+            "Established plants may tolerate moderate soil limitations better than newly germinating seedlings.",
+            "Compost can improve soil structure, moisture retention, and gradual nutrient availability.",
+            "Fresh high-nitrogen manure should not be applied in direct contact with seed or young roots.",
+            "Growing amaranth in active sod is difficult because grass competition can overwhelm tiny seedlings.",
+            "Early weed control is especially important before plants become tall enough to shade competing weeds."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "low-moderate",
+
+        germinationWaterNeedLevel:
+          "high",
+
+        establishmentWaterNeedLevel:
+          "moderate-high",
+
+        matureWaterNeedLevel:
+          "low-moderate",
+
+        floweringWaterNeedLevel:
+          "moderate",
+
+        harvestDevelopmentWaterNeedLevel:
+          "moderate",
+
+        droughtSurvivalScore:
+          4,
+
+        droughtYieldRetentionScore:
+          3,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "rapid-vegetative-growth",
+          "flowering",
+          "pollination",
+          "grain-filling"
+        ],
+
+        criticalStageWaterImportanceScore:
+          4,
+
+        overwateringSensitivityScore:
+          4,
+
+        waterloggingSensitivityScore:
+          5,
+
+        dripIrrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          3,
+
+        suitableForRainfallOnlyScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          4,
+
+        containerDryingRiskScore:
+          4,
+
+        establishmentYearsRequiringExtraWater:
+          1,
+
+        directFacts: {
+          establishmentMoistureImportant:
+            true,
+
+          droughtPauseAndRecoveryPossible:
+            true,
+
+          tuberBulkingMoistureImportant:
+            false,
+
+          standingWaterSuitable:
+            false,
+
+          irrigationCanProtectYield:
+            true,
+
+          notes: [
+            "The seed is extremely small and planted shallowly, so the upper soil surface must remain evenly moist during germination.",
+            "Heavy irrigation can wash seed away, bury it unevenly, or create surface crusting.",
+            "Fine misting, gentle watering, drip irrigation, or careful overhead irrigation may improve establishment.",
+            "Seedlings have limited roots and are more drought-sensitive than established plants.",
+            "Once established, amaranth tolerates short dry periods better than many conventional leafy vegetables.",
+            "Established plants may wilt temporarily during severe heat and recover after moisture returns.",
+            "Temporary drought survival does not guarantee acceptable leaf tenderness or grain yield.",
+            "Drought during rapid vegetative growth can reduce plant size and biomass.",
+            "Drought during flowering, pollination, and grain filling may reduce seed number, seed size, and harvest quality.",
+            "Consistent moisture may improve young-leaf tenderness and reduce premature stress.",
+            "Excess irrigation can promote shallow rooting, lodging, disease, and nutrient leaching.",
+            "Standing water and chronically saturated soil are unsuitable.",
+            "Drip irrigation can reduce wet foliage and deliver water without disturbing shallowly planted seed.",
+            "Mulch is useful after seedlings are established but may interfere with emergence if applied too early or too heavily.",
+            "Very sandy soil may require more frequent irrigation than loam.",
+            "Containers dry more quickly and may require regular watering during hot weather.",
+            "Avoid wetting mature seed heads unnecessarily as harvest approaches.",
+            "Rain or irrigation on mature heads can increase sprouting, mold, staining, lodging, and drying difficulty.",
+            "Water should generally be reduced as the crop reaches final grain dry-down, while avoiding severe premature stress.",
+            "The planner should score germination-water demand separately from mature-plant drought tolerance."
+          ]
+        }
+      },
+
+            space: {
+        productionStyles: [
+          "in-ground-row",
+          "raised-bed",
+          "wide-row",
+          "intensive-leaf-bed",
+          "ornamental-border",
+          "fence-line",
+          "small-grain-plot",
+          "large-container",
+          "mixed-household-food-garden",
+          "controlled-poultry-forage-area"
+        ],
+
+        suitableForInGroundBeds:
+          true,
+
+        suitableForRaisedBeds:
+          true,
+
+        suitableForContainers:
+          true,
+
+        suitableForVerticalGrowing:
+          false,
+
+        suitableForInterplanting:
+          true,
+
+        suitableForOrchardUnderstory:
+          false,
+
+        suitableForPastureIntegration:
+          false,
+
+        suitableForFenceLinePlanting:
+          true,
+
+        suitableForFoodForestEdge:
+          true,
+
+        suitableForDedicatedFeedPlot:
+          true,
+
+        suitableForSmallSpaces:
+          true,
+
+        suitableForLargeScalePlanting:
+          true,
+
+        minimumContainerVolumeGallons:
+          5,
+
+        preferredContainerVolumeGallons:
+          10,
+
+        preferredContainerDepthIn:
+          12,
+
+        maturePlantWidthInMinimum:
+          8,
+
+        maturePlantWidthInMaximum:
+          30,
+
+        maturePlantHeightFtMinimum:
+          3,
+
+        maturePlantHeightFtMaximum:
+          8,
+
+        recommendedPlantSpacingInMinimum:
+          8,
+
+        recommendedPlantSpacingInMaximum:
+          12,
+
+        recommendedRowSpacingInMinimum:
+          12,
+
+        recommendedRowSpacingInMaximum:
+          24,
+
+        spaceEfficiencyScore:
+          4,
+
+        smallSpaceSuitabilityScore:
+          4,
+
+        containerSuitabilityScore:
+          3,
+
+        raisedBedSuitabilityScore:
+          5,
+
+        fieldScaleSuitabilityScore:
+          4,
+
+        interplantingCompatibilityScore:
+          3,
+
+        poultryAreaCompatibilityScore:
+          2,
+
+        seasonalScreenValueScore:
+          5,
+
+        ornamentalValueScore:
+          5,
+
+        harvestAccessRequirementScore:
+          4,
+
+        spreadControlRequirementScore:
+          2,
+
+        rootCompetitionScore:
+          3,
+
+        shadingImpactScore:
+          4,
+
+        directFacts: {
+          uprightGrowthHabit:
+            true,
+
+          undergroundSpread:
+            false,
+
+          selfSeedingPossible:
+            true,
+
+          maturePlantsMayShadeNeighbors:
+            true,
+
+          containerProductionPossible:
+            true,
+
+          dedicatedHarvestAccessHelpful:
+            true,
+
+          notes: [
+            "Amaranth can produce useful grain, leaves, biomass, and ornamental value in relatively small garden areas.",
+            "Spacing should reflect the intended product rather than using one universal arrangement.",
+            "Plants grown for large grain heads generally need more space than plants grown for repeated young-leaf harvest.",
+            "Dense sowing can be useful for baby greens but is not ideal for maximum grain-head development.",
+            "Widely spaced plants may branch more heavily and produce larger individual seed heads.",
+            "Close spacing may encourage taller thinner stems and increase lodging risk.",
+            "Rows wide enough for access simplify weeding, inspection, harvesting, and seed-head collection.",
+            "Tall plants can shade shorter vegetables and should usually be positioned on the north side of sun-loving crops in the Northern Hemisphere.",
+            "Amaranth works well as a rear border or temporary summer privacy screen.",
+            "Large containers can support one or several plants, depending on cultivar and intended harvest.",
+            "Container-grown plants require more frequent irrigation and may remain smaller than in-ground plants.",
+            "Small containers may tip when mature seed heads become heavy.",
+            "The crop does not require permanent bed space because it completes its lifecycle in one season.",
+            "Dropped seed may germinate in later seasons, but the crop does not spread through underground runners or tubers.",
+            "Volunteer seedlings are generally easier to remove than perennial underground spread.",
+            "A dedicated grain plot improves uniform harvest timing and simplifies drying and threshing.",
+            "Mixed plantings may complicate seed-head harvest and increase contamination with unrelated plant debris.",
+            "Planting directly inside an active chicken run is usually unsuitable because seedlings are highly vulnerable to scratching and grazing.",
+            "Plants beside a run may need fencing until seed heads are intentionally offered.",
+            "Whole mature plants can become awkward to move through narrow garden paths.",
+            "Harvest pathways should remain wide enough to carry cut seed heads without excessive shattering.",
+            "A drying area may require as much planning as the growing area when clean grain is the primary goal.",
+            "Exact plants-per-square-foot values remain dependent on cultivar, spacing, and whether the goal is leaves, grain, ornament, or biomass."
+          ]
+        }
+      },
+
+      flock: {
+        suitableFlockStages: [
+          "adult-maintenance",
+          "laying-hens",
+          "breeding-flock",
+          "mature-roosters",
+          "molting-adults"
+        ],
+
+        unsuitableOrRestrictedFlockStages: [
+          "newly-hatched-chicks",
+          "young-chicks-dependent-on-starter-feed",
+          "birds-with-active-crop-disorders",
+          "birds-requiring-strict-veterinary-diets"
+        ],
+
+        suitableFlockSizes: [
+          "very-small",
+          "small",
+          "medium"
+        ],
+
+        largeFlockSuitabilityScore:
+          2,
+
+        smallFlockSuitabilityScore:
+          5,
+
+        chickSuitabilityScore:
+          1,
+
+        pulletSuitabilityScore:
+          2,
+
+        adultHenSuitabilityScore:
+          4,
+
+        roosterSuitabilityScore:
+          4,
+
+        moltingFlockSuitabilityScore:
+          3,
+
+        layingFlockSuitabilityScore:
+          3,
+
+        broilerSuitabilityScore:
+          2,
+
+        breedingFlockSuitabilityScore:
+          3,
+
+        freeRangeCompatibilityScore:
+          3,
+
+        confinementEnrichmentScore:
+          5,
+
+        cutAndCarrySuitabilityScore:
+          4,
+
+        controlledGrazingSuitabilityScore:
+          2,
+
+        directFeedingSimplicityScore:
+          2,
+
+        rationFormulationNeedScore:
+          5,
+
+        gradualIntroductionRequired:
+          true,
+
+        completeFeedDisplacementRiskScore:
+          4,
+
+        flockCompetitionRiskScore:
+          3,
+
+        chokingOrObstructionRiskScore:
+          1,
+
+        cropImpactionRiskScore:
+          2,
+
+        spoilageExposureRiskScore:
+          4,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        directFacts: {
+          completeRationReplacement:
+            false,
+
+          suitableAsSupplement:
+            true,
+
+          suitableForUnrestrictedAccess:
+            false,
+
+          matureGrainUsable:
+            true,
+
+          youngLeavesUsable:
+            true,
+
+          matureStemsRecommended:
+            false,
+
+          wholeSeedHeadsCanProvideEnrichment:
+            true,
+
+          processingChangesFeedValue:
+            true,
+
+          notes: [
+            "Amaranth is best treated as a supplemental crop rather than a replacement for complete poultry feed.",
+            "Adult chickens are the most appropriate flock stage for experimental homegrown amaranth supplements.",
+            "Newly hatched and rapidly growing chicks should continue receiving a complete age-appropriate starter ration.",
+            "Mature whole grain, heat-treated grain, cracked grain, ground meal, seed heads, and young leaves are different feeding products.",
+            "Heat treatment may improve practical grain use but does not make an unbalanced ration complete.",
+            "Whole grain can be offered in measured quantities where birds have access to appropriate grit.",
+            "Very small grain may be difficult to measure accurately and can be lost in litter or soil.",
+            "Ground amaranth should be blended into a balanced feed rather than offered as a dusty free-choice powder.",
+            "Fine meal may separate from coarser feed ingredients.",
+            "Whole dried seed heads provide pecking activity but make actual intake difficult to quantify.",
+            "Seed-head enrichment should be supervised initially to evaluate waste and aggressive flock competition.",
+            "Tender young leaves may be offered in small amounts as seasonal greens.",
+            "Older foliage and coarse stems become increasingly fibrous and are less suitable.",
+            "Raw leafy material from drought-stressed or heavily fertilized plants deserves additional caution because nitrate concentration may increase.",
+            "Amaranth grown with unknown pesticide, herbicide, or roadside exposure should not be fed.",
+            "Unknown pigweed species should not be substituted for positively identified cultivated amaranth.",
+            "Birds may selectively consume grain while leaving less desirable material.",
+            "Highly preferred grain can reduce consumption of balanced feed when offered excessively.",
+            "Measured supplemental feeding is more appropriate than unlimited free-choice feeding.",
+            "Any new form should be introduced gradually.",
+            "Observe manure consistency, appetite, body condition, egg production, and flock behavior after introduction.",
+            "A small flock can use modest garden harvests more efficiently than a large flock.",
+            "Large-flock use would require substantially more production, processing, storage, and ration control.",
+            "Household grain harvest should generally receive priority before feeding residues or surplus to poultry.",
+            "No fixed universal feeding percentage should be assigned without a properly formulated ration."
+          ]
+        }
+      },
+
+      labor: {
+        establishmentLaborLevel:
+          "moderate",
+
+        routineMaintenanceLaborLevel:
+          "low-moderate",
+
+        harvestLaborLevel:
+          "moderate-high",
+
+        processingLaborLevel:
+          "high",
+
+        storageLaborLevel:
+          "moderate",
+
+        totalLaborScore:
+          4,
+
+        plantingDifficultyScore:
+          4,
+
+        thinningDifficultyScore:
+          4,
+
+        weedingDifficultyScore:
+          4,
+
+        irrigationManagementDifficultyScore:
+          3,
+
+        fertilityManagementDifficultyScore:
+          3,
+
+        pestMonitoringDifficultyScore:
+          3,
+
+        harvestDifficultyScore:
+          4,
+
+        processingDifficultyScore:
+          5,
+
+        dryingDifficultyScore:
+          4,
+
+        threshingDifficultyScore:
+          5,
+
+        cleaningDifficultyScore:
+          5,
+
+        storageMonitoringDifficultyScore:
+          3,
+
+        seedSavingDifficultyScore:
+          4,
+
+        mechanizationBenefitScore:
+          4,
+
+        handToolCompatibilityScore:
+          5,
+
+        lowLaborUsePaths: [
+          "fresh-young-amaranth-leaves",
+          "dried-amaranth-seed-heads",
+          "controlled-postharvest-amaranth-access"
+        ],
+
+        highLaborUsePaths: [
+          "whole-dry-amaranth-grain",
+          "heat-treated-amaranth-grain",
+          "cracked-or-ground-amaranth-grain",
+          "household-and-flock-dual-purpose-amaranth"
+        ],
+
+        recurringTasks: [
+          "Prepare a fine weed-free seedbed",
+          "Sow seed very shallowly",
+          "Maintain even surface moisture during germination",
+          "Protect emerging seedlings from crusting, washing, birds, and scratching animals",
+          "Thin crowded seedlings",
+          "Control weeds during early growth",
+          "Monitor soil moisture during rapid growth and flowering",
+          "Inspect for chewing insects and leaf damage",
+          "Monitor plant height and lodging risk",
+          "Support or shelter tall plants when necessary",
+          "Harvest young leaves while tender",
+          "Check grain maturity repeatedly",
+          "Cut seed heads before excessive shattering",
+          "Dry seed heads under cover",
+          "Turn or spread drying heads to improve airflow",
+          "Thresh mature grain",
+          "Winnow and screen grain",
+          "Inspect grain for debris, moisture, insects, and mold",
+          "Heat-treat grain when using a processed-grain feeding path",
+          "Crack or grind only the quantity needed when using meal",
+          "Store grain in sealed containers",
+          "Monitor stored grain periodically",
+          "Remove volunteer seedlings where unwanted",
+          "Clean harvest and processing equipment"
+        ],
+
+        laborBottlenecks: [
+          "Very small seed is difficult to sow uniformly",
+          "Shallow planting requires careful moisture management",
+          "Tiny seedlings compete poorly with weeds",
+          "Dense emergence may require substantial thinning",
+          "Grain heads may mature unevenly",
+          "Small grain can shatter before or during harvest",
+          "Birds may remove grain before harvest",
+          "Rain can delay harvest and drying",
+          "Tall plants may lodge before grain is collected",
+          "Seed heads contain substantial chaff and plant debris",
+          "Hand threshing can be slow",
+          "Winnowing very small grain requires calm conditions or controlled airflow",
+          "Fine screens and repeated cleaning may be needed",
+          "Grain moisture is difficult to judge without suitable equipment",
+          "Whole heads require significant protected drying space",
+          "Processing a small harvest may take more time than expected",
+          "Fine meal can create dust and feeder separation",
+          "Heat processing adds time and fuel requirements",
+          "Stored grain requires insect and moisture monitoring"
+        ],
+
+        laborReducingStrategies: [
+          "Use pelleted or precision-seeded planting where practical",
+          "Mix tiny seed with a dry carrier to improve hand distribution",
+          "Sow into a smooth firm seedbed",
+          "Use drip irrigation or gentle misting during emergence",
+          "Plant in rows to simplify weeding and thinning",
+          "Use stale-seedbed weed control before planting",
+          "Mulch only after seedlings are established",
+          "Choose an early and relatively uniform grain cultivar",
+          "Avoid excessive nitrogen that produces weak overly tall stems",
+          "Provide wind protection without reducing sunlight",
+          "Harvest seed heads into bags or over tarps to capture shattered grain",
+          "Cut heads during dry weather",
+          "Dry heads on screens or breathable racks",
+          "Use labeled batches to separate cultivars and harvest dates",
+          "Thresh inside a clean container or enclosed area",
+          "Use screens sized for amaranth grain",
+          "Use a fan with controlled airflow for winnowing",
+          "Process household grain and poultry grain in the same session where sanitation allows",
+          "Offer fully dried seed heads when precise grain cleaning is not worth the labor",
+          "Store only thoroughly dry grain",
+          "Use airtight food-safe containers",
+          "Grind small batches shortly before use",
+          "Prioritize the highest-value use path rather than processing every plant identically"
+        ],
+
+        directFacts: {
+          tinySeedIncreasesPlantingLabor:
+            true,
+
+          earlyWeedControlCritical:
+            true,
+
+          matureGrainRequiresDrying:
+            true,
+
+          matureGrainRequiresThreshing:
+            true,
+
+          matureGrainRequiresCleaning:
+            true,
+
+          heatTreatedUseRequiresAdditionalProcessing:
+            true,
+
+          wholeSeedHeadUseReducesProcessing:
+            true,
+
+          notes: [
+            "Amaranth is relatively easy to maintain after establishment but can be labor-intensive to establish and process.",
+            "The tiny seed creates the greatest planting challenge.",
+            "Uniform shallow sowing is difficult in rough, cloddy, or crust-prone soil.",
+            "Seedlings require close attention until they become established.",
+            "Early weed competition can substantially reduce yield.",
+            "Mature plants often suppress weeds after the canopy develops.",
+            "Young-leaf harvest is substantially simpler than clean grain production.",
+            "Whole-seed-head feeding avoids threshing and winnowing but reduces intake precision and increases waste.",
+            "Clean grain production requires cutting, drying, threshing, winnowing, screening, and storage.",
+            "Hand processing is practical for small household quantities but becomes burdensome at larger scale.",
+            "Grain may continue shedding during handling, so tarps and enclosed containers reduce losses.",
+            "Drying cannot be skipped because damp grain can mold or heat in storage.",
+            "Rainy harvest weather can create repeated handling and extended drying labor.",
+            "Heat treatment adds a separate processing step.",
+            "Grinding adds equipment, cleaning, and dust-control labor.",
+            "The most labor-efficient poultry use may be supervised offering of thoroughly dried seed heads.",
+            "The most storage-efficient use is clean dry grain.",
+            "The highest household-value path may justify the labor better than direct poultry feeding alone.",
+            "Labor scoring should account for the intended use path rather than treating all amaranth production as equally demanding.",
+            "Seed saving requires keeping selected heads dry, labeled, and protected from unintended mixing."
+          ]
+        }
+      },
+
+            cost: {
+        seedCostLevel:
+          "low",
+
+        establishmentCostLevel:
+          "low",
+
+        annualInputCostLevel:
+          "low-moderate",
+
+        irrigationCostLevel:
+          "low-moderate",
+
+        fertilityCostLevel:
+          "low-moderate",
+
+        pestManagementCostLevel:
+          "low",
+
+        harvestEquipmentCostLevel:
+          "low-moderate",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageEquipmentCostLevel:
+          "low-moderate",
+
+        preservationEnergyCostLevel:
+          "moderate",
+
+        totalStartupCostScore:
+          2,
+
+        annualOperatingCostScore:
+          2,
+
+        seedCostScore:
+          1,
+
+        irrigationCostScore:
+          2,
+
+        fertilityCostScore:
+          2,
+
+        pestManagementCostScore:
+          2,
+
+        harvestEquipmentCostScore:
+          2,
+
+        processingEquipmentCostScore:
+          3,
+
+        storageEquipmentCostScore:
+          2,
+
+        preservationEnergyCostScore:
+          3,
+
+        reusableInfrastructureBenefitScore:
+          4,
+
+        householdFoodValueScore:
+          5,
+
+        poultryFeedValueScore:
+          3,
+
+        ornamentalValueScore:
+          5,
+
+        pollinatorValueScore:
+          4,
+
+        seedSavingValueScore:
+          5,
+
+        marketValuePotentialScore:
+          4,
+
+        feedCostReductionPotentialScore:
+          2,
+
+        costEfficiencyScore:
+          3,
+
+        paybackSpeedScore:
+          3,
+
+        humanFoodPriorityScore:
+          5,
+
+        poultryFeedPriorityScore:
+          3,
+
+        estimatedFeedSavings:
+          null,
+
+        estimatedAnnualValue:
+          null,
+
+        requiredPurchases: [
+          "Cultivated food-grade amaranth seed",
+          "Basic soil-preparation materials when the existing seedbed is unsuitable",
+          "Food-safe storage containers when mature grain will be stored"
+        ],
+
+        optionalPurchases: [
+          "Fine seed-starting mix",
+          "Seed trays or cell trays",
+          "Drip-irrigation equipment",
+          "Fine misting nozzle",
+          "Row cover",
+          "Insect netting",
+          "Plant supports",
+          "Harvest tarps",
+          "Drying screens",
+          "Breathable drying racks",
+          "Paper collection bags",
+          "Threshing tubs",
+          "Fine grain screens",
+          "Winnowing fan",
+          "Moisture meter suitable for small grain",
+          "Food-safe airtight buckets",
+          "Grain mill",
+          "Spice grinder",
+          "Roasting pan",
+          "Popping or heat-processing equipment",
+          "Rodent-resistant storage cabinet"
+        ],
+
+        costReducingStrategies: [
+          "Begin with a small packet of a dependable cultivated grain variety.",
+          "Direct sow after the soil is warm instead of starting unnecessary transplants.",
+          "Prepare a smooth seedbed using existing hand tools.",
+          "Use reusable trays, screens, tarps, and containers already available.",
+          "Harvest tender leaves without purchasing grain-processing equipment.",
+          "Offer thoroughly dried whole seed heads when precise grain processing is not required.",
+          "Thresh grain inside clean household containers rather than purchasing specialized equipment.",
+          "Use natural airflow and screened drying racks instead of powered dehydrators when weather permits.",
+          "Save seed from healthy correctly identified plants when varietal purity is not essential.",
+          "Use household-food processing equipment for small grain batches when it can be cleaned adequately.",
+          "Grow only the amount that can be harvested and processed efficiently.",
+          "Prioritize household grain use before assigning clean grain to poultry.",
+          "Use poultry supplements from surplus, damaged-but-sound, or lower-priority clean grain rather than replacing valuable household food.",
+          "Store grain properly to prevent the loss of the entire harvest.",
+          "Avoid excessive fertilizer applications that increase cost, lodging, and leafy-feed risk."
+        ],
+
+        economicLimitations: [
+          "Tiny seed may create establishment losses when planted too deeply or watered aggressively.",
+          "Poor early weed control can reduce the value of the entire crop.",
+          "Hand harvesting and processing clean grain can require substantial labor.",
+          "Bird feeding, shattering, lodging, and rain can reduce recoverable yield.",
+          "The crop may produce less usable grain than its visual biomass suggests.",
+          "Specialized screens or mills may cost more than the poultry-feed value of a small harvest.",
+          "Heat processing requires time, fuel, and equipment.",
+          "Whole-seed-head feeding may waste grain.",
+          "Unmeasured intake makes precise ration savings difficult to calculate.",
+          "Clean grain may have greater value as household food than as poultry feed.",
+          "The crop cannot safely replace a complete commercial ration.",
+          "Exact feed-cost reduction remains unknown for backyard production.",
+          "Wet or improperly stored grain can lose all economic value.",
+          "A small flock may use the crop efficiently, while production for a large flock may become impractical."
+        ],
+
+        directFacts: {
+          lowSeedQuantityRequired:
+            true,
+
+          annualSeedPurchaseRequired:
+            false,
+
+          seedSavingPossible:
+            true,
+
+          specializedHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentHelpful:
+            true,
+
+          airtightStorageHelpful:
+            true,
+
+          householdAndPoultryDualUse:
+            true,
+
+          exactFeedSavingsKnown:
+            false,
+
+          notes: [
+            "The financial cost of establishing amaranth is generally modest.",
+            "Labor rather than seed cost is often the largest practical expense.",
+            "Fresh-leaf production requires less equipment than clean grain production.",
+            "Whole-seed-head use reduces threshing expense but increases waste and ration uncertainty.",
+            "Clean grain production becomes more economical when the grain is also used as household food.",
+            "Reusable drying screens, tarps, storage containers, and processing tools improve long-term value.",
+            "Saved seed can reduce future planting cost.",
+            "Varieties may cross with compatible nearby amaranths, reducing seed purity.",
+            "Volunteer seedlings may provide free future plants but should not replace deliberate variety selection.",
+            "Feed savings cannot be calculated reliably without dependable backyard yield, processing-loss, and safe-displacement data.",
+            "Amaranth should not be valued as though every harvested pound can replace one pound of complete poultry feed.",
+            "The strongest economic case is multipurpose production rather than poultry feed alone."
+          ]
+        }
+      },
+
+      goals: {
+        supportedGoals: [
+          "produce-homegrown-supplemental-grain",
+          "produce-seasonal-fresh-greens",
+          "produce-storable-winter-supplements",
+          "increase-household-food-production",
+          "grow-a-dual-purpose-human-and-poultry-crop",
+          "increase-homegrown-protein-contribution",
+          "increase-homegrown-energy-contribution",
+          "provide-flock-enrichment",
+          "provide-whole-seed-head-pecking-activity",
+          "support-pollinators",
+          "add-ornamental-value",
+          "create-seasonal-privacy",
+          "grow-in-hot-summer-conditions",
+          "grow-with-limited-irrigation-after-establishment",
+          "save-seed",
+          "reduce-dependence-on-purchased-grain",
+          "produce-cut-and-carry-greens",
+          "use-a-small-dedicated-feed-plot",
+          "grow-a-reversible-annual-crop",
+          "produce-multiple-products-from-one-planting",
+          "build-household-food-resilience",
+          "use-surplus-household-crop-production-for-poultry"
+        ],
+
+        poorlySupportedGoals: [
+          "replace-complete-poultry-feed",
+          "provide-a-balanced-poultry-ration",
+          "provide-layer-calcium",
+          "provide-unlimited-free-choice-feed",
+          "provide-low-labor-clean-grain",
+          "provide-immediate-early-spring-feed",
+          "provide-winter-living-forage",
+          "establish-a-permanent-pasture",
+          "grow-in-deep-shade",
+          "grow-in-waterlogged-soil",
+          "produce-high-yield-grain-in-a-cold-short-summer",
+          "feed-large-flocks-from-a-small-garden",
+          "eliminate-processing-labor",
+          "guarantee-measurable-feed-cost-savings",
+          "provide-unrestricted-chick-feed",
+          "provide-coarse-mature-stem-forage"
+        ],
+
+        goalScores: {
+          supplementalGrain:
+            4,
+
+          supplementalProtein:
+            4,
+
+          supplementalEnergy:
+            4,
+
+          freshGreens:
+            4,
+
+          storedWinterFeed:
+            4,
+
+          directGrazing:
+            2,
+
+          cutAndCarry:
+            4,
+
+          flockEnrichment:
+            5,
+
+          householdFood:
+            5,
+
+          dualPurposeProduction:
+            5,
+
+          pollinatorSupport:
+            4,
+
+          ornamentalValue:
+            5,
+
+          seasonalPrivacy:
+            5,
+
+          heatResilience:
+            5,
+
+          droughtResilience:
+            4,
+
+          coldClimateProduction:
+            2,
+
+          smallSpaceProduction:
+            4,
+
+          largeFlockProduction:
+            2,
+
+          lowLaborProduction:
+            2,
+
+          seedSaving:
+            4,
+
+          immediateFeedSavings:
+            2,
+
+          longTermResilience:
+            4
+        },
+
+        goalConflicts: [
+          {
+            goalA:
+              "maximum-young-leaf-harvest",
+
+            goalB:
+              "maximum-mature-grain-harvest",
+
+            explanation:
+              "Repeated removal of substantial foliage can reduce plant growth, seed-head development, and final grain yield."
+          },
+
+          {
+            goalA:
+              "maximum-household-food-value",
+
+            goalB:
+              "maximum-direct-poultry-feeding",
+
+            explanation:
+              "Clean processed grain may have greater household value than poultry-feed value, so assigning it directly to chickens may reduce total crop value."
+          },
+
+          {
+            goalA:
+              "minimum-labor",
+
+            goalB:
+              "clean-storable-grain",
+
+            explanation:
+              "Clean stored grain requires harvest timing, drying, threshing, winnowing, screening, and storage monitoring."
+          },
+
+          {
+            goalA:
+              "maximum-plant-density",
+
+            goalB:
+              "large-individual-seed-heads",
+
+            explanation:
+              "Very dense planting can increase competition and reduce branching and individual seed-head size."
+          },
+
+          {
+            goalA:
+              "maximum-foliage-growth",
+
+            goalB:
+              "strong-lodging-resistant-grain-plants",
+
+            explanation:
+              "Excessive nitrogen and overly lush growth may produce tall weak plants that lodge before grain harvest."
+          },
+
+          {
+            goalA:
+              "unrestricted-flock-access",
+
+            goalB:
+              "dependable-grain-harvest",
+
+            explanation:
+              "Chickens may scratch seedlings, damage plants, consume immature grain, and scatter mature seed before harvest."
+          },
+
+          {
+            goalA:
+              "maximum-raw-grain-feeding",
+
+            goalB:
+              "simplified-safety-management",
+
+            explanation:
+              "Raw grain has greater antinutritional uncertainty than carefully processed grain and requires stricter intake control."
+          },
+
+          {
+            goalA:
+              "maximum-seed-saving-purity",
+
+            goalB:
+              "growing-many-amaranth-varieties-together",
+
+            explanation:
+              "Compatible amaranth varieties and nearby related plants may cross, reducing confidence in saved-seed identity."
+          }
+        ],
+
+        directFacts: {
+          strongestPrimaryGoals: [
+            "dual-purpose household and poultry production",
+            "warm-season grain production",
+            "seasonal greens",
+            "stored grain",
+            "ornamental and enrichment value"
+          ],
+
+          completeFeedReplacementGoalSupported:
+            false,
+
+          permanentPastureGoalSupported:
+            false,
+
+          householdFoodGoalSupported:
+            true,
+
+          seedSavingGoalSupported:
+            true,
+
+          smallSpaceGoalSupported:
+            true,
+
+          notes: [
+            "Amaranth supports more planner goals than a single-purpose feed crop.",
+            "Its strongest role is as a multipurpose annual crop.",
+            "The crop is valuable where household-food production and poultry supplementation are both important.",
+            "It is not the strongest crop for growers seeking immediate direct grazing.",
+            "It is not a low-labor stored-grain crop when all processing is performed by hand.",
+            "Whole seed heads improve enrichment value but reduce ration precision.",
+            "Young leaves and mature grain should be scored as separate goal pathways.",
+            "A household may reasonably reserve the best cleaned grain for people and use surplus or lower-priority sound material for poultry.",
+            "The planner should not recommend amaranth solely because the user selected a high-protein goal.",
+            "Climate, processing tolerance, harvest labor, and complete-feed displacement risk must also affect recommendations."
+          ]
+        }
+      },
+
+      risks: {
+        overallRiskLevel:
+          "moderate",
+
+        establishmentFailureRiskScore:
+          4,
+
+        weedCompetitionRiskScore:
+          5,
+
+        droughtEstablishmentRiskScore:
+          4,
+
+        matureDroughtRiskScore:
+          3,
+
+        waterloggingRiskScore:
+          5,
+
+        heatDamageRiskScore:
+          1,
+
+        frostDamageRiskScore:
+          5,
+
+        stormDamageRiskScore:
+          4,
+
+        lodgingRiskScore:
+          4,
+
+        shatteringRiskScore:
+          5,
+
+        birdLossRiskScore:
+          4,
+
+        wildlifePressureScore:
+          3,
+
+        deerBrowsingRiskScore:
+          3,
+
+        rabbitBrowsingRiskScore:
+          3,
+
+        rodentAttractionScore:
+          4,
+
+        insectDamageRiskScore:
+          3,
+
+        diseaseRiskScore:
+          3,
+
+        moldRiskScore:
+          4,
+
+        harvestWeatherRiskScore:
+          5,
+
+        postHarvestLossRiskScore:
+          5,
+
+        storagePestRiskScore:
+          4,
+
+        storageMoistureRiskScore:
+          5,
+
+        contaminationRiskScore:
+          4,
+
+        misidentificationRiskScore:
+          4,
+
+        chemicalExposureRiskScore:
+          4,
+
+        nitrateAccumulationRiskScore:
+          4,
+
+        oxalateConcernScore:
+          3,
+
+        antinutritionalFactorRiskScore:
+          4,
+
+        completeFeedDisplacementRiskScore:
+          4,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        flockOverconsumptionRiskScore:
+          3,
+
+        selfSeedingRiskScore:
+          3,
+
+        invasivenessRiskScore:
+          2,
+
+        crossPollinationRiskScore:
+          4,
+
+        allergenOrDustExposureRiskScore:
+          2,
+
+        mechanicalHarvestSuitabilityScore:
+          3,
+
+        mechanicalProcessingSuitabilityScore:
+          3,
+
+        riskFactors: [
+          {
+            id:
+              "tiny-seed-establishment-failure",
+
+            category:
+              "establishment",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Very small seed may be buried too deeply, washed away, dried out, or prevented from emerging by soil crusting.",
+
+            mitigation: [
+              "Prepare a fine firm seedbed.",
+              "Plant very shallowly.",
+              "Use gentle irrigation.",
+              "Maintain even surface moisture.",
+              "Avoid heavy mulch until seedlings emerge.",
+              "Thin only after enough seedlings are established."
+            ]
+          },
+
+          {
+            id:
+              "early-weed-competition",
+
+            category:
+              "establishment",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Small amaranth seedlings compete poorly with rapidly growing weeds during early development.",
+
+            mitigation: [
+              "Use a stale seedbed.",
+              "Plant in visible rows.",
+              "Cultivate weeds while they are small.",
+              "Thin and weed promptly.",
+              "Apply mulch only after amaranth seedlings are established.",
+              "Avoid planting directly into active sod."
+            ]
+          },
+
+          {
+            id:
+              "frost-injury",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Amaranth is frost-sensitive and may be killed by freezing temperatures.",
+
+            mitigation: [
+              "Plant after frost danger has passed.",
+              "Use transplants only when they can be protected.",
+              "Select early cultivars in short-season climates.",
+              "Harvest grain before severe autumn frost.",
+              "Use temporary row cover for unexpected cold events."
+            ]
+          },
+
+          {
+            id:
+              "lodging-and-storm-damage",
+
+            category:
+              "weather",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Tall plants carrying heavy seed heads may bend, break, or lodge during wind and heavy rain.",
+
+            mitigation: [
+              "Avoid excessive nitrogen.",
+              "Provide adequate plant spacing.",
+              "Choose shorter or lodging-resistant varieties.",
+              "Plant in a sheltered but sunny site.",
+              "Stake or support small high-value plantings.",
+              "Harvest mature heads before major storms."
+            ]
+          },
+
+          {
+            id:
+              "grain-shattering",
+
+            category:
+              "harvest",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Mature grain may fall from seed heads before or during harvest, reducing recoverable yield and increasing volunteers.",
+
+            mitigation: [
+              "Inspect heads frequently as maturity approaches.",
+              "Harvest before extensive seed loss begins.",
+              "Cut heads into bags or over tarps.",
+              "Handle mature plants gently.",
+              "Dry harvested heads in contained areas.",
+              "Collect fallen grain only when it remains clean and dry."
+            ]
+          },
+
+          {
+            id:
+              "bird-and-wildlife-loss",
+
+            category:
+              "wildlife",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Wild birds, poultry, rodents, deer, rabbits, and other animals may damage plants or consume grain before harvest.",
+
+            mitigation: [
+              "Use netting where practical.",
+              "Fence young plants.",
+              "Keep poultry away until intentional access begins.",
+              "Harvest promptly at maturity.",
+              "Dry heads in a protected location.",
+              "Store grain in rodent-resistant containers."
+            ]
+          },
+
+          {
+            id:
+              "wet-harvest-and-mold",
+
+            category:
+              "postharvest",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Rain, humidity, trapped plant moisture, or inadequate airflow may cause mold, sprouting, heating, and storage loss.",
+
+            mitigation: [
+              "Harvest during dry weather.",
+              "Dry heads under cover with strong airflow.",
+              "Spread material in shallow layers.",
+              "Turn drying heads regularly.",
+              "Thresh only after adequate drying.",
+              "Store only clean thoroughly dry grain.",
+              "Inspect stored grain for condensation and odors."
+            ]
+          },
+
+          {
+            id:
+              "stored-insect-and-rodent-loss",
+
+            category:
+              "storage",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Stored grain may attract insects and rodents or become contaminated by droppings, urine, nesting material, or damaged containers.",
+
+            mitigation: [
+              "Use food-safe airtight containers.",
+              "Store containers above the floor.",
+              "Use rodent-resistant cabinets or rooms.",
+              "Inspect stored grain regularly.",
+              "Clean spills immediately.",
+              "Discard contaminated grain."
+            ]
+          },
+
+          {
+            id:
+              "raw-grain-antinutritional-factors",
+
+            category:
+              "feeding",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Raw amaranth grain may contain compounds that reduce nutrient availability, palatability, digestion, or poultry performance.",
+
+            mitigation: [
+              "Keep raw grain supplemental.",
+              "Use measured quantities.",
+              "Maintain a complete base ration.",
+              "Consider appropriate heat processing.",
+              "Introduce gradually.",
+              "Do not copy experimental ration percentages into backyard mixtures.",
+              "Observe flock condition and feed intake."
+            ]
+          },
+
+          {
+            id:
+              "nitrate-accumulation-in-foliage",
+
+            category:
+              "feeding",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Leafy material may accumulate elevated nitrates under excessive nitrogen fertility, drought, interrupted growth, or other stressful conditions.",
+
+            mitigation: [
+              "Avoid excessive nitrogen fertilizer.",
+              "Do not harvest heavily stressed foliage for unrestricted feeding.",
+              "Use tender healthy leaves in limited amounts.",
+              "Maintain balanced irrigation.",
+              "Avoid relying on amaranth foliage as primary forage.",
+              "Seek laboratory testing when there is a specific reason to suspect nitrate accumulation."
+            ]
+          },
+
+          {
+            id:
+              "oxalate-and-mature-foliage-concern",
+
+            category:
+              "feeding",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Amaranth leaves may contain oxalates, and older foliage becomes increasingly fibrous and less suitable as poultry forage.",
+
+            mitigation: [
+              "Use young tender leaves.",
+              "Feed only limited supplemental quantities.",
+              "Avoid coarse stems and large amounts of mature foliage.",
+              "Rotate with other safe green supplements.",
+              "Continue providing complete poultry feed."
+            ]
+          },
+
+          {
+            id:
+              "unknown-amaranthus-identification",
+
+            category:
+              "identification",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Cultivated amaranth may be confused with unknown pigweeds or problematic weedy Amaranthus species.",
+
+            mitigation: [
+              "Plant labeled cultivated food-grade seed.",
+              "Maintain crop labels.",
+              "Do not harvest roadside or field weeds for poultry.",
+              "Do not assume all Amaranthus species have identical feeding value.",
+              "Remove suspicious off-type plants before seed production.",
+              "Use reliable botanical identification when volunteers are retained."
+            ]
+          },
+
+          {
+            id:
+              "complete-feed-displacement",
+
+            category:
+              "ration-balance",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Highly palatable grain supplements may reduce consumption of balanced poultry feed and create nutrient deficiencies.",
+
+            mitigation: [
+              "Offer amaranth only as a measured supplement.",
+              "Provide complete feed first.",
+              "Avoid filling free-choice feeders with amaranth grain.",
+              "Monitor body condition and egg production.",
+              "Do not use crude-protein percentage as proof of ration adequacy.",
+              "Consult a poultry nutrition professional when formulating substantial home rations."
+            ]
+          },
+
+          {
+            id:
+              "cross-pollination-and-seed-purity",
+
+            category:
+              "seed-saving",
+
+            severityScore:
+              2,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Compatible cultivated and wild amaranths may cross, producing saved seed that does not remain true to type.",
+
+            mitigation: [
+              "Isolate seed-saving plants where practical.",
+              "Grow one primary seed variety.",
+              "Remove nearby unwanted Amaranthus plants before flowering.",
+              "Label seed heads.",
+              "Save seed only from healthy representative plants.",
+              "Purchase fresh commercial seed when varietal purity matters."
+            ]
+          }
+        ],
+
+        incompatibleUserTraits: [
+          "requires-zero-processing",
+          "cannot-maintain-shallow-seed-moisture",
+          "cannot-control-early-weeds",
+          "needs-guaranteed-yield",
+          "needs-guaranteed-feed-savings",
+          "requires-complete-feed-replacement",
+          "wants-unrestricted-flock-access",
+          "cannot-dry-harvested-grain",
+          "cannot-protect-grain-from-rodents",
+          "cannot-monitor-stored-feed",
+          "needs-maximum-low-labor-production",
+          "has-only-deep-shade",
+          "has-chronically-waterlogged-soil",
+          "has-an-extremely-short-cool-growing-season",
+          "cannot-distinguish-cultivated-amaranth-from-weedy-relatives"
+        ],
+
+        directFacts: {
+          primaryProductionRisks: [
+            "poor seedling establishment",
+            "early weed competition",
+            "frost injury",
+            "lodging",
+            "grain shattering",
+            "bird loss",
+            "wet harvest weather",
+            "postharvest mold",
+            "storage pests"
+          ],
+
+          primaryFeedingRisks: [
+            "raw-grain antinutritional factors",
+            "complete-feed displacement",
+            "nitrate accumulation in stressed foliage",
+            "oxalate exposure from excessive leafy feeding",
+            "feeding unidentified Amaranthus species",
+            "mold or storage contamination"
+          ],
+
+          riskCanBeReducedThroughProcessing:
+            true,
+
+          unrestrictedAccessRecommended:
+            false,
+
+          positiveIdentificationRequired:
+            true,
+
+          storageMonitoringRequired:
+            true,
+
+          notes: [
+            "Amaranth is not an inherently high-danger crop, but its many possible use forms create different risk profiles.",
+            "Fresh leaves, raw grain, heat-treated grain, ground meal, and whole seed heads should not share one safety score.",
+            "Most production risks can be reduced through good timing, sanitation, drying, and storage.",
+            "The greatest ration risk is excessive displacement of complete poultry feed.",
+            "The greatest leafy-feed concern is unrestricted use of stressed or heavily fertilized material.",
+            "The greatest postharvest concern is storing grain before it is fully dry.",
+            "The greatest identification concern is treating unknown pigweeds as equivalent to cultivated food-grade amaranth."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        earlySpring: {
+          availabilityScore:
+            1,
+
+          primaryRoles: [],
+
+          limitations: [
+            "Soil is commonly too cold for dependable germination.",
+            "Frost-sensitive plants cannot tolerate normal early-spring freezes.",
+            "Indoor seed starting may begin, but outdoor feed production is not yet available."
+          ]
+        },
+
+        lateSpring: {
+          availabilityScore:
+            3,
+
+          primaryRoles: [
+            "direct-seeding",
+            "transplant-establishment",
+            "early-young-leaf-production",
+            "weed-control",
+            "stand-thinning"
+          ],
+
+          limitations: [
+            "Planting must wait until frost danger has passed and soil is warm.",
+            "Shallow seed can dry rapidly.",
+            "Seedlings are vulnerable to weeds, birds, crusting, and scratching animals."
+          ]
+        },
+
+        summer: {
+          availabilityScore:
+            5,
+
+          primaryRoles: [
+            "young-leaf-harvest",
+            "cut-and-carry-greens",
+            "rapid-biomass-production",
+            "ornamental-display",
+            "pollinator-support",
+            "seasonal-privacy",
+            "seed-head-development",
+            "heat-resilient-garden-production"
+          ],
+
+          limitations: [
+            "Drought may reduce leaf tenderness and grain development.",
+            "Excessive foliage harvest may reduce final grain yield.",
+            "Tall plants may require storm protection.",
+            "Heavily fertilized or drought-stressed foliage should not be fed unrestricted."
+          ]
+        },
+
+        earlyFall: {
+          availabilityScore:
+            5,
+
+          primaryRoles: [
+            "mature-seed-head-harvest",
+            "grain-harvest",
+            "seed-head-enrichment",
+            "threshing",
+            "winnowing",
+            "grain-drying",
+            "seed-saving",
+            "controlled-postharvest-access"
+          ],
+
+          limitations: [
+            "Mature grain may shatter.",
+            "Wild birds may consume grain.",
+            "Storms may lodge plants.",
+            "Rain and humidity may interfere with drying.",
+            "Frost may arrive before long-season varieties mature."
+          ]
+        },
+
+        lateFall: {
+          availabilityScore:
+            3,
+
+          primaryRoles: [
+            "protected-seed-head-drying",
+            "grain-cleaning",
+            "heat-processing",
+            "grain-storage",
+            "saved-seed-selection",
+            "limited-postharvest-residue-use"
+          ],
+
+          limitations: [
+            "Living plants are normally killed by frost.",
+            "Field drying becomes unreliable in wet climates.",
+            "Remaining outdoor material may mold or become contaminated.",
+            "Stored grain requires moisture and pest monitoring."
+          ]
+        },
+
+        winter: {
+          availabilityScore:
+            3,
+
+          primaryRoles: [
+            "stored-whole-grain-supplement",
+            "heat-treated-grain-supplement",
+            "cracked-or-ground-grain-ingredient",
+            "stored-seed-head-enrichment",
+            "household-food-use",
+            "planting-planning",
+            "seed-inventory"
+          ],
+
+          limitations: [
+            "No living outdoor forage is normally available.",
+            "Stored supply is limited by the previous harvest.",
+            "Grain remains supplemental rather than a complete ration.",
+            "Stored heads occupy more space and may harbor insects.",
+            "Ground grain has a shorter practical quality window than intact dry grain."
+          ]
+        },
+
+        seasonalContinuityScore:
+          4,
+
+        livingForageContinuityScore:
+          2,
+
+        storedFeedContinuityScore:
+          4,
+
+        harvestConcentrationScore:
+          4,
+
+        seasonalGapRiskScore:
+          3,
+
+        directFacts: {
+          primaryGrowingSeason:
+            "late-spring-through-early-fall",
+
+          primaryLeafHarvestSeason:
+            "summer",
+
+          primaryGrainHarvestSeason:
+            "late-summer-through-early-fall",
+
+          winterUseDependsOnStorage:
+            true,
+
+          successionPlantingCanExtendLeaves:
+            true,
+
+          frostEndsLivingProduction:
+            true,
+
+          notes: [
+            "Amaranth provides fresh products mainly during warm weather.",
+            "Young leaves become available substantially earlier than mature grain.",
+            "The principal grain harvest is concentrated near the end of the warm season.",
+            "Stored grain can extend crop value through winter.",
+            "Whole dried seed heads can also provide winter enrichment.",
+            "The crop does not provide permanent living winter forage.",
+            "Succession planting can extend leafy harvest but may not allow late grain plantings to mature.",
+            "A planner recommendation should distinguish users wanting immediate summer greens from users wanting stored winter grain."
+          ]
+        }
+      },
+
+            usePaths: [
+        {
+          id:
+            "heat-treated-amaranth-grain",
+
+          label:
+            "Heat-Treated Amaranth Grain",
+
+          description:
+            "Clean mature amaranth grain is harvested, dried, threshed, winnowed, inspected, and subjected to an appropriate heat-processing method before being used as a measured supplemental ingredient for established adult chickens.",
+
+          primaryFeedRole:
+            "processed-protein-and-energy-grain-supplement",
+
+          harvestProducts: [
+            "mature-amaranth-grain",
+            "heat-treated-amaranth-grain",
+            "processed-whole-grain",
+            "stored-supplemental-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-supplement",
+            "mixed-feed",
+            "supplemental-ration",
+            "winter-storage",
+            "controlled-scatter-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-mature-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "heat-treat",
+            "cool-before-storage-or-feeding"
+          ],
+
+          optionalProcessingTasks: [
+            "remove-light-seed",
+            "portion",
+            "freeze-for-insect-control",
+            "crack-after-heat-treatment",
+            "grind-after-heat-treatment"
+          ],
+
+          requiredEquipment: [
+            "heat-processing-equipment"
+          ],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-bag",
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "box-fan",
+            "threshing-tub",
+            "grain-screen",
+            "fine-sieve",
+            "winnowing-fan",
+            "moisture-meter",
+            "roasting-pan",
+            "heavy-skillet",
+            "food-safe-container",
+            "food-safe-bucket",
+            "rodent-proof-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "sealed-food-safe-container",
+            "cool-dry-storage",
+            "rodent-resistant-storage",
+            "small-batch-frozen-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-clean-whole-grain-dry-and-heat-treat-in-manageable-batches",
+
+          storageDurationCategory:
+            "medium-long",
+
+          estimatedShelfLifeCategory:
+            "medium-long-when-whole-dry-and-protected",
+
+          shelfLifeAfterProcessingCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            true,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "grain shattering before harvest",
+            "grain lost while moving seed heads",
+            "incomplete threshing",
+            "grain lost during winnowing",
+            "small seed passing through unsuitable screens",
+            "grain retained in chaff",
+            "bird consumption before harvest",
+            "stored-insect damage",
+            "rodent contamination",
+            "scorching during heat treatment",
+            "spillage during cooling or transfer"
+          ],
+
+          preservationOptions: [
+            "store-as-clean-whole-dry-grain",
+            "freeze-small-batches-for-insect-control",
+            "heat-treat-before-short-to-medium-term-use",
+            "heat-treat-and-grind-in-small-batches"
+          ],
+
+          preservationLimitations: [
+            "Grain must be fully dry before sealed storage.",
+            "Heat-treated grain should be cooled completely before being placed in an airtight container.",
+            "Heat processing may shorten quality retention compared with intact untreated whole grain.",
+            "Excessive heating may scorch grain or reduce nutritional quality.",
+            "Ground heat-treated grain deteriorates faster than intact grain.",
+            "Damp or warm grain must not be sealed."
+          ],
+
+          storageWarnings: [
+            "Do not store grain that feels damp, warm, clumped, or soft.",
+            "Do not seal recently heated grain until it has cooled fully.",
+            "Inspect storage containers for condensation.",
+            "Discard grain with visible mold, musty odor, heating, webbing, insects, rodent contamination, or chemical contamination.",
+            "Store away from feed-room moisture and direct sunlight.",
+            "Label containers with crop, variety, harvest date, processing date, and treatment method."
+          ],
+
+          safetyWarnings: [
+            "Heat treatment may reduce some antinutritional concerns but should not be described as eliminating every possible antinutritional compound.",
+            "Use only clean mature grain from positively identified cultivated food-grade amaranth.",
+            "Do not heat-treat moldy, damp, spoiled, chemically contaminated, or rodent-contaminated grain in an attempt to make it safe.",
+            "Avoid burning, charring, or heavily scorching the grain.",
+            "Allow processed grain to cool fully before feeding or storage.",
+            "Offer only measured supplemental quantities.",
+            "Do not copy poultry-research inclusion percentages directly into a backyard feed mixture.",
+            "Heat-treated grain remains nutritionally incomplete.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Provide appropriate insoluble grit when adult chickens consume intact grain."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-zero-processing",
+            "has-no-drying-capability",
+            "has-no-threshing-capability",
+            "has-no-safe-heat-processing-method",
+            "cannot-monitor-processing-temperature",
+            "has-no-protected-storage",
+            "has-no-rodent-protection",
+            "cannot-monitor-stored-grain",
+            "requires-immediate-fresh-feed",
+            "requires-complete-feed-replacement",
+            "requires-exact-backyard-inclusion-percentage",
+            "keeps-only-young-chicks"
+          ],
+
+          directFacts: {
+            heatTreatmentRequiredForThisPath:
+              true,
+
+            rawGrainPathEquivalent:
+              false,
+
+            grainStoredWholeWhenPossible:
+              true,
+
+            processingBeforeLongTermStorageRequired:
+              false,
+
+            processingShortlyBeforeUsePreferred:
+              true,
+
+            preciseMeasurementPossible:
+              true,
+
+            notes: [
+              "This path provides greater processing control than feeding raw grain or whole seed heads.",
+              "The principal tradeoff is additional labor, fuel, equipment use, and processing risk.",
+              "The exact heat method, time, and temperature should not be universalized without validated poultry-feed processing guidance.",
+              "Whole clean dry grain is generally the strongest form for storage.",
+              "Heat treatment can be performed in manageable batches instead of processing the entire harvest at once.",
+              "Household-food use may take priority over poultry feeding because clean processed amaranth grain has substantial human-food value.",
+              "The planner should reward users who accept drying, threshing, cleaning, heat processing, precise measurement, and protected storage."
+            ]
+          }
+        },
+
+        {
+          id:
+            "whole-dry-amaranth-grain",
+
+          label:
+            "Whole Dry Amaranth Grain",
+
+          description:
+            "Mature amaranth seed heads are harvested and dried, after which the tiny grain is threshed, winnowed, cleaned, inspected, and stored whole for measured supplemental feeding to established adult chickens.",
+
+          primaryFeedRole:
+            "whole-protein-and-energy-grain-supplement",
+
+          harvestProducts: [
+            "mature-amaranth-grain",
+            "cleaned-whole-amaranth-grain",
+            "dry-whole-grain",
+            "stored-supplemental-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "controlled-scatter-feeding",
+            "mixed-grain-supplement",
+            "winter-storage",
+            "pecking-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-mature-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture"
+          ],
+
+          optionalProcessingTasks: [
+            "remove-light-seed",
+            "portion",
+            "freeze-for-insect-control",
+            "heat-treat-before-use"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-bag",
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "box-fan",
+            "threshing-tub",
+            "grain-screen",
+            "fine-sieve",
+            "winnowing-fan",
+            "moisture-meter",
+            "food-safe-container",
+            "food-safe-bucket",
+            "metal-grain-can",
+            "rodent-proof-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "sealed-food-safe-container",
+            "cool-dry-storage",
+            "rodent-resistant-storage",
+            "freezing-for-insect-control"
+          ],
+
+          preferredStorageMethod:
+            "clean-whole-grain-in-sealed-food-safe-container",
+
+          storageDurationCategory:
+            "long",
+
+          estimatedShelfLifeCategory:
+            "long-when-clean-dry-cool-and-protected",
+
+          shelfLifeAfterProcessingCategory:
+            "long-while-left-whole",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            3,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-high",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "shattering before harvest",
+            "grain scattered while cutting heads",
+            "bird consumption",
+            "lodging before harvest",
+            "grain retained in seed heads",
+            "grain retained in chaff",
+            "grain blown away during winnowing",
+            "grain passing through unsuitable screens",
+            "spillage during transfer",
+            "stored-insect damage",
+            "rodent contamination"
+          ],
+
+          preservationOptions: [
+            "store-as-clean-whole-dry-grain",
+            "freeze-for-insect-control",
+            "heat-treat-in-small-batches",
+            "crack-or-grind-shortly-before-use",
+            "reserve-as-household-food-grain",
+            "reserve-as-planting-seed"
+          ],
+
+          preservationLimitations: [
+            "Grain must be dry before airtight storage.",
+            "Very small grain is difficult to clean perfectly.",
+            "Plant debris retained with grain may hold additional moisture.",
+            "Whole grain stores better than cracked or ground grain.",
+            "Raw grain retains antinutritional uncertainty.",
+            "Storage duration cannot compensate for poor initial grain quality."
+          ],
+
+          storageWarnings: [
+            "Store only clean mature grain.",
+            "Do not store grain with damp chaff or green plant material.",
+            "Inspect for condensation, clumping, heating, mold, insects, webbing, off odors, and rodent damage.",
+            "Discard contaminated grain rather than attempting to wash or process it for poultry.",
+            "Do not combine a questionable batch with a sound batch.",
+            "Label each container by crop, variety, harvest date, and storage date."
+          ],
+
+          safetyWarnings: [
+            "Raw whole grain should remain a measured supplement.",
+            "Raw amaranth grain may contain antinutritional compounds.",
+            "Do not assume the crop's protein percentage makes it a complete ration.",
+            "Do not use grain harvested from unidentified wild pigweed.",
+            "Do not feed damp, moldy, fermented, heated, insect-damaged, chemically contaminated, or rodent-contaminated grain.",
+            "Introduce gradually.",
+            "Observe appetite, manure condition, body condition, and production.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Provide appropriate insoluble grit for adult birds consuming whole grain."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-drying-capability",
+            "has-no-threshing-capability",
+            "has-no-cleaning-capability",
+            "has-no-protected-storage",
+            "has-no-rodent-protection",
+            "cannot-monitor-stored-grain",
+            "requires-minimal-processing",
+            "requires-zero-postharvest-loss",
+            "requires-complete-feed-replacement",
+            "requires-a-verified-raw-grain-inclusion-rate",
+            "keeps-only-young-chicks"
+          ],
+
+          directFacts: {
+            grainRemainsRaw:
+              true,
+
+            grainStoredWhole:
+              true,
+
+            preciseMeasurementPossible:
+              true,
+
+            longTermStoragePotential:
+              true,
+
+            heatTreatmentOptional:
+              true,
+
+            notes: [
+              "This is the strongest storage-oriented amaranth use path.",
+              "Whole grain occupies less space than unthreshed seed heads.",
+              "Clean grain can be measured more accurately than whole seed heads.",
+              "Raw-grain limitations prevent this path from receiving the same safety score as heat-treated grain.",
+              "The tiny grain increases cleaning and handling losses.",
+              "Whole-grain storage preserves flexibility because the grain can later be used for household food, planting seed, poultry supplementation, heat treatment, or grinding.",
+              "The planner should strongly reward protected drying, grain-cleaning capability, airtight storage, and rodent control."
+            ]
+          }
+        },
+
+        {
+          id:
+            "cracked-or-ground-amaranth-grain",
+
+          label:
+            "Cracked or Ground Amaranth Grain",
+
+          description:
+            "Clean mature amaranth grain is dried, threshed, winnowed, inspected, and then cracked or ground into a meal suitable for measured blending into a properly balanced adult-poultry ration.",
+
+          primaryFeedRole:
+            "processed-grain-ration-ingredient",
+
+          harvestProducts: [
+            "clean-amaranth-grain",
+            "cracked-amaranth-grain",
+            "coarsely-ground-amaranth",
+            "amaranth-meal",
+            "processed-ration-ingredient"
+          ],
+
+          suitableFeedingMethods: [
+            "mixed-feed",
+            "balanced-ration-ingredient",
+            "measured-supplement",
+            "moistened-feed-mixture",
+            "short-term-processed-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-mature-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "crack-or-grind"
+          ],
+
+          optionalProcessingTasks: [
+            "heat-treat-before-grinding",
+            "portion",
+            "blend-with-complete-feed",
+            "moisten-immediately-before-feeding",
+            "freeze-whole-grain-before-grinding-for-insect-control"
+          ],
+
+          requiredEquipment: [
+            "grain-mill-or-grinder"
+          ],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "threshing-tub",
+            "grain-screen",
+            "fine-sieve",
+            "winnowing-fan",
+            "moisture-meter",
+            "grain-mill",
+            "feed-grinder",
+            "spice-grinder",
+            "mixing-container",
+            "feed-scale",
+            "food-safe-container"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal-with-small-batch-processing",
+
+          storageMethods: [
+            "store-whole-grain-until-needed",
+            "short-term-sealed-meal-storage",
+            "small-batch-frozen-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-grain-whole-and-grind-only-the-amount-needed-soon",
+
+          storageDurationCategory:
+            "short-after-grinding",
+
+          estimatedShelfLifeCategory:
+            "short-to-medium-after-cracking-or-grinding",
+
+          shelfLifeAfterProcessingCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "all whole-grain harvest and cleaning losses",
+            "grain retained in grinder",
+            "fine meal lost as airborne dust",
+            "meal spilled during transfer",
+            "separation from coarser ration ingredients",
+            "rapid quality decline after grinding",
+            "moisture absorption",
+            "mold growth in damp meal",
+            "rodent contamination"
+          ],
+
+          preservationOptions: [
+            "store-whole-before-grinding",
+            "grind-in-small-batches",
+            "refrigerate-short-term",
+            "freeze-small-batches",
+            "heat-treat-before-grinding",
+            "mix-immediately-before-feeding"
+          ],
+
+          preservationLimitations: [
+            "Grinding increases exposed surface area.",
+            "Ground grain absorbs moisture and odors more readily.",
+            "Meal may oxidize or become stale faster than intact grain.",
+            "Fine meal may compact or bridge in feeders.",
+            "Ground amaranth may separate from larger feed particles.",
+            "Moistened meal must be consumed promptly and should not be stored.",
+            "A household grinder may not be suitable for large quantities."
+          ],
+
+          storageWarnings: [
+            "Do not grind damp or questionable grain.",
+            "Store most of the harvest whole.",
+            "Grind only quantities expected to be used soon.",
+            "Keep meal sealed, cool, dry, and protected from rodents.",
+            "Discard meal that smells musty, sour, rancid, fermented, or otherwise abnormal.",
+            "Do not leave moistened meal in warm weather.",
+            "Clean the grinder between questionable or unrelated materials."
+          ],
+
+          safetyWarnings: [
+            "Ground amaranth is not a complete feed.",
+            "Fine meal should not be offered as an unrestricted free-choice powder.",
+            "Dust should be minimized for both people and poultry.",
+            "Raw ground grain retains raw-grain antinutritional concerns unless an appropriate heat-treatment step is used.",
+            "Do not assume grinding alone improves nutrient safety.",
+            "Do not formulate a substantial ration without reliable nutritional balancing.",
+            "Prevent selective feeding and ingredient separation.",
+            "Feed moistened mixtures immediately and remove leftovers.",
+            "Continue providing an age-appropriate complete poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-grinding-equipment",
+            "requires-long-term-ground-feed-storage",
+            "cannot-control-feed-dust",
+            "cannot-measure-feed-ingredients",
+            "cannot-prevent-ingredient-separation",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "plans-to-store-moistened-feed",
+            "keeps-only-young-chicks"
+          ],
+
+          directFacts: {
+            grindingRequiredForThisPath:
+              true,
+
+            wholeGrainStoragePreferred:
+              true,
+
+            mealStorageWindowShorter:
+              true,
+
+            preciseRationMeasurementPossible:
+              true,
+
+            formulationKnowledgeImportant:
+              true,
+
+            heatTreatmentAutomaticallyIncluded:
+              false,
+
+            notes: [
+              "This use path is most appropriate for users who already possess suitable milling and feed-measuring equipment.",
+              "Cracking or grinding may improve mixing but creates greater storage and dust concerns.",
+              "Grinding should usually occur shortly before use.",
+              "A coarse grind may reduce dust compared with very fine meal.",
+              "Ground amaranth should be incorporated into a nutritionally balanced ration rather than treated as stand-alone poultry feed.",
+              "This path should receive a strong labor penalty and a strong ration-formulation requirement.",
+              "The planner should distinguish users who merely own a grinder from users who are willing and able to formulate and measure feed responsibly."
+            ]
+          }
+        },
+
+                {
+          id:
+            "dried-amaranth-seed-heads",
+
+          label:
+            "Dried Amaranth Seed Heads",
+
+          description:
+            "Mature amaranth seed heads are cut, thoroughly dried, inspected, and stored intact for controlled poultry enrichment and supplemental grain access without full threshing and cleaning.",
+
+          primaryFeedRole:
+            "whole-seed-head-enrichment-and-grain-supplement",
+
+          harvestProducts: [
+            "mature-amaranth-seed-heads",
+            "dried-seed-heads",
+            "grain-bearing-enrichment-bundles",
+            "stored-winter-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-whole-seed-head",
+            "hanging-enrichment",
+            "contained-pecking-enrichment",
+            "controlled-scatter-access",
+            "winter-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-mature-seed-heads",
+            "remove-excess-stem",
+            "dry-thoroughly",
+            "inspect-for-mold",
+            "protect-from-rodents"
+          ],
+
+          optionalProcessingTasks: [
+            "bundle-small-heads",
+            "shake-out-loose-chaff",
+            "bag-individual-portions",
+            "freeze-for-insect-control",
+            "partially-thresh"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-bag",
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "hanging-line",
+            "paper-bag",
+            "breathable-storage-sack",
+            "rodent-resistant-bin",
+            "enrichment-holder"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal-with-periodic-winter-feeding",
+
+          storageMethods: [
+            "breathable-dry-storage",
+            "hanging-dry-storage",
+            "paper-bag-storage",
+            "rodent-resistant-bin",
+            "freezing-small-bundles"
+          ],
+
+          preferredStorageMethod:
+            "thoroughly-dried-heads-in-breathable-rodent-protected-storage",
+
+          storageDurationCategory:
+            "medium",
+
+          estimatedShelfLifeCategory:
+            "medium-when-fully-dry-and-protected",
+
+          shelfLifeAfterProcessingCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "high",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "grain shattering before harvest",
+            "grain lost while moving heads",
+            "wild-bird feeding",
+            "grain scattered into litter",
+            "grain remaining inaccessible in compact heads",
+            "grain carried away from the feeding area",
+            "chaff accumulation",
+            "mold during drying",
+            "stored-insect damage",
+            "rodent contamination"
+          ],
+
+          preservationOptions: [
+            "air-dry-whole-heads",
+            "store-as-small-bundles",
+            "freeze-small-batches-for-insect-control",
+            "partially-thresh-before-storage",
+            "thresh-later-if-needed"
+          ],
+
+          preservationLimitations: [
+            "Whole seed heads occupy substantially more storage space than cleaned grain.",
+            "Dense heads may retain internal moisture.",
+            "Breathable storage reduces condensation but does not prevent rodent damage.",
+            "Intact heads make insect inspection more difficult.",
+            "Actual grain quantity is difficult to measure.",
+            "Heads may shed grain continuously during storage and handling.",
+            "Very humid climates may make long-term whole-head storage unreliable."
+          ],
+
+          storageWarnings: [
+            "Do not bundle or stack heads while they remain damp.",
+            "Inspect the center of dense seed heads for trapped moisture.",
+            "Do not store heads with green stems or leaves attached.",
+            "Discard heads with mold, musty odor, heating, fermentation, webbing, or rodent contamination.",
+            "Keep stored heads away from walls, floors, and roof leaks.",
+            "Use breathable storage only in a dry protected area.",
+            "Clean fallen grain and chaff to avoid attracting rodents."
+          ],
+
+          safetyWarnings: [
+            "Whole seed heads do not allow precise control of grain intake.",
+            "Offer only limited quantities while complete feed remains continuously available.",
+            "Supervise initial use to evaluate aggressive flock competition.",
+            "Do not feed moldy or weather-damaged heads.",
+            "Do not use unidentified wild amaranth seed heads.",
+            "Remove coarse stems, string, wire, or hanging material that could create entanglement.",
+            "Provide appropriate insoluble grit for adult birds consuming whole grain.",
+            "Do not treat seed-head enrichment as a balanced ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-precise-feed-intake-measurement",
+            "has-no-dry-storage-space",
+            "has-no-rodent-protection",
+            "cannot-monitor-for-mold",
+            "requires-minimum-feed-waste",
+            "requires-maximum-storage-density",
+            "requires-complete-feed-replacement",
+            "keeps-only-young-chicks"
+          ],
+
+          directFacts: {
+            threshingRequiredForThisPath:
+              false,
+
+            intactHeadStorage:
+              true,
+
+            preciseIntakeMeasurementPossible:
+              false,
+
+            enrichmentValueHigh:
+              true,
+
+            processingLaborReduced:
+              true,
+
+            storageVolumeHigh:
+              true,
+
+            notes: [
+              "This is the lowest-processing mature-grain use path.",
+              "The principal advantage is avoiding threshing, winnowing, and screening.",
+              "The principal disadvantages are waste, storage volume, mold risk, and poor intake measurement.",
+              "Small dried heads can be offered individually to reduce flock competition and waste.",
+              "A tray or contained feeding area can capture some shattered grain.",
+              "The planner should favor this path for users seeking enrichment rather than precise ration formulation."
+            ]
+          }
+        },
+
+        {
+          id:
+            "fresh-young-amaranth-leaves",
+
+          label:
+            "Fresh Young Amaranth Leaves",
+
+          description:
+            "Tender young amaranth leaves and soft growing tips are harvested during active growth and offered in limited quantities as a fresh seasonal green supplement for established poultry.",
+
+          primaryFeedRole:
+            "fresh-seasonal-green-supplement",
+
+          harvestProducts: [
+            "young-amaranth-leaves",
+            "tender-growing-tips",
+            "soft-leafy-trimmings",
+            "fresh-cut-and-carry-greens"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-chopped-greens",
+            "whole-tender-leaves",
+            "hanging-green-enrichment",
+            "mixed-seasonal-greens",
+            "controlled-cut-and-carry"
+          ],
+
+          requiredProcessingTasks: [
+            "positively-identify-crop",
+            "select-young-healthy-leaves",
+            "inspect-for-chemical-exposure",
+            "remove-coarse-stems",
+            "feed-fresh"
+          ],
+
+          optionalProcessingTasks: [
+            "rinse-clean-material",
+            "chop",
+            "mix-with-other-safe-greens",
+            "hang-in-enrichment-holder",
+            "briefly-wilt"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "garden-snips",
+            "harvest-basket",
+            "clean-cutting-board",
+            "knife",
+            "green-feed-holder",
+            "feed-tray"
+          ],
+
+          harvestPattern:
+            "repeat",
+
+          harvestFrequencyCategory:
+            "multiple-seasonal",
+
+          storageMethods: [
+            "feed-immediately",
+            "short-term-refrigeration",
+            "brief-cool-holding"
+          ],
+
+          preferredStorageMethod:
+            "harvest-and-feed-the-same-day",
+
+          storageDurationCategory:
+            "very-short",
+
+          estimatedShelfLifeCategory:
+            "very-short-fresh-product",
+
+          shelfLifeAfterProcessingCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            3,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "leaves becoming coarse before harvest",
+            "wilting during hot-weather harvest",
+            "damage from insects",
+            "discarded coarse stems",
+            "uneaten leaves becoming soiled",
+            "spoilage during refrigeration",
+            "loss of grain yield from excessive foliage removal"
+          ],
+
+          preservationOptions: [
+            "same-day-feeding",
+            "short-term-refrigeration",
+            "household-cooking",
+            "limited-drying-for-non-primary-use"
+          ],
+
+          preservationLimitations: [
+            "Fresh leaves wilt quickly.",
+            "Refrigeration only extends usability briefly.",
+            "Freezing produces a low-quality poultry green product.",
+            "Drying substantially changes texture and feeding form.",
+            "Repeated heavy harvest can reduce plant vigor and grain yield.",
+            "Older leaves and stems become increasingly fibrous."
+          ],
+
+          storageWarnings: [
+            "Do not store wet leaves in a sealed warm container.",
+            "Remove wilted, slimy, fermented, moldy, or foul-smelling material.",
+            "Do not leave uneaten greens in the run until they spoil.",
+            "Keep harvested greens separate from chemicals, fuels, and treated seed.",
+            "Refrigerate promptly when same-day feeding is not possible."
+          ],
+
+          safetyWarnings: [
+            "Use only positively identified cultivated amaranth.",
+            "Do not feed roadside, sprayed, or unknown-field vegetation.",
+            "Avoid unrestricted feeding of drought-stressed, heavily fertilized, or abnormally dark lush foliage.",
+            "Excess nitrogen and plant stress may increase nitrate concern.",
+            "Leaves may contain oxalates.",
+            "Use young tender leaves in limited supplemental quantities.",
+            "Avoid coarse mature stems.",
+            "Continue providing a complete poultry ration.",
+            "Remove uneaten greens before spoilage."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-storage",
+            "requires-winter-feed-from-fresh-leaves",
+            "cannot-identify-cultivated-amaranth",
+            "uses-heavy-unmeasured-nitrogen-fertilization",
+            "cannot-remove-spoiled-leftovers",
+            "requires-complete-feed-replacement",
+            "plans-to-feed-large-amounts-of-stressed-foliage"
+          ],
+
+          directFacts: {
+            freshUse:
+              true,
+
+            youngLeavesPreferred:
+              true,
+
+            coarseMatureStemsExcluded:
+              true,
+
+            repeatedHarvestPossible:
+              true,
+
+            heavyHarvestMayReduceGrainYield:
+              true,
+
+            longTermStorageSuitable:
+              false,
+
+            notes: [
+              "This is the simplest amaranth use path.",
+              "Tender leaves can provide seasonal variety and enrichment.",
+              "The product is perishable and should generally be fed soon after harvest.",
+              "Leaf harvest can begin well before grain maturity.",
+              "Moderate selective harvest may allow plants to continue growing.",
+              "Users prioritizing grain should avoid repeatedly stripping large portions of foliage.",
+              "The planner should reduce this path's score when the crop has experienced severe drought, excessive nitrogen fertility, or uncertain chemical exposure."
+            ]
+          }
+        },
+
+        {
+          id:
+            "controlled-postharvest-amaranth-access",
+
+          label:
+            "Controlled Postharvest Amaranth Access",
+
+          description:
+            "After the primary household or grain harvest is complete, adult chickens receive brief supervised access to a clean amaranth plot or contained residue area to collect fallen grain, remaining seed, tender leaves, and insects.",
+
+          primaryFeedRole:
+            "postharvest-cleanup-and-enrichment",
+
+          harvestProducts: [
+            "fallen-amaranth-grain",
+            "remaining-seed-head-grain",
+            "tender-postharvest-leaves",
+            "insects-associated-with-crop-residue",
+            "plot-cleanup-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-plot-access",
+            "portable-fence-access",
+            "short-duration-cleanup-grazing",
+            "controlled-residue-access",
+            "postharvest-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-harvest",
+            "inspect-plot",
+            "remove-moldy-material",
+            "remove-hardware-and-string",
+            "limit-access-duration",
+            "restore-complete-feed-access"
+          ],
+
+          optionalProcessingTasks: [
+            "mow-or-cut-tall-stems",
+            "shake-seed-heads-over-contained-area",
+            "move-residue-into-tractor-pen",
+            "rake-excess-chaff",
+            "collect-clean-volunteer-seed"
+          ],
+
+          requiredEquipment: [
+            "secure-access-control"
+          ],
+
+          helpfulEquipment: [
+            "portable-poultry-fence",
+            "chicken-tractor",
+            "temporary-gate",
+            "garden-rake",
+            "hand-pruners",
+            "feed-tray",
+            "waterer"
+          ],
+
+          harvestPattern:
+            "cleanup",
+
+          harvestFrequencyCategory:
+            "brief-seasonal",
+
+          storageMethods: [
+            "not-stored",
+            "same-day-access"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "none",
+
+          estimatedShelfLifeCategory:
+            "immediate-field-use",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "grain already consumed by wild birds",
+            "grain embedded in soil or mulch",
+            "grain trampled into mud",
+            "remaining seed missed by chickens",
+            "residue becoming moldy before access",
+            "birds damaging the bed before seed saving is complete"
+          ],
+
+          preservationOptions: [
+            "immediate-supervised-access",
+            "move-clean-residue-to-contained-area",
+            "collect-dry-heads-before-field-access"
+          ],
+
+          preservationLimitations: [
+            "The amount consumed cannot be measured accurately.",
+            "Wet weather can make fallen grain unsafe or inaccessible.",
+            "Access must wait until all desired household grain and seed-saving material has been removed.",
+            "Standing mature stems may create navigation or entanglement hazards.",
+            "This pathway does not provide dependable stored winter feed."
+          ],
+
+          storageWarnings: [
+            "Do not preserve wet field residue for later feeding.",
+            "Do not collect muddy, moldy, or manure-contaminated fallen grain for storage.",
+            "Remove questionable residue before allowing access.",
+            "Do not leave accumulated grain exposed long enough to attract rodents."
+          ],
+
+          safetyWarnings: [
+            "Inspect the area for mold, treated seed, fertilizer spills, wire, netting, string, stakes, and sharp stems.",
+            "Do not allow access where herbicides or pesticides were applied inconsistently with poultry use.",
+            "Do not allow unrestricted access to heavily stressed foliage.",
+            "Provide fresh water and complete feed during or immediately after access.",
+            "Use short controlled sessions.",
+            "Prevent birds from escaping into unharvested garden areas.",
+            "Do not use this method for young chicks.",
+            "End access if aggressive competition or excessive crop consumption occurs."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confine-poultry",
+            "cannot-supervise-access",
+            "must-save-all-fallen-seed",
+            "has-chemical-exposure-in-plot",
+            "has-moldy-postharvest-residue",
+            "requires-precise-intake-measurement",
+            "requires-stored-winter-feed",
+            "keeps-only-young-chicks"
+          ],
+
+          directFacts: {
+            primaryHarvestOccursFirst:
+              true,
+
+            preciseIntakeMeasurementPossible:
+              false,
+
+            storageRequired:
+              false,
+
+            directPlotAccess:
+              true,
+
+            supervisionRequired:
+              true,
+
+            cleanupBenefit:
+              true,
+
+            notes: [
+              "This pathway captures value from material that might otherwise remain in the garden.",
+              "It should begin only after household harvest, planting-seed collection, and clean grain recovery are complete.",
+              "Controlled access may reduce volunteer seedlings by allowing birds to consume fallen grain.",
+              "Some volunteers may still emerge because chickens will not recover every seed.",
+              "The value is primarily enrichment and cleanup rather than dependable ration replacement.",
+              "The planner should reject this path when chemical exposure, mold, unsafe hardware, or uncontrolled poultry movement is present."
+            ]
+          }
+        },
+
+        {
+          id:
+            "household-and-flock-dual-purpose-amaranth",
+
+          label:
+            "Household and Flock Dual-Purpose Amaranth",
+
+          description:
+            "Amaranth is managed as a whole-household crop in which the best leaves and cleaned grain are prioritized for human food, while sound surplus grain, selected leaves, dried seed heads, and postharvest residues are assigned to controlled poultry supplementation.",
+
+          primaryFeedRole:
+            "integrated-household-food-and-poultry-supplement-system",
+
+          harvestProducts: [
+            "household-amaranth-grain",
+            "household-amaranth-greens",
+            "saved-planting-seed",
+            "surplus-clean-grain",
+            "lower-priority-sound-grain",
+            "young-poultry-greens",
+            "dried-seed-heads",
+            "postharvest-residue-access"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-surplus-grain",
+            "heat-treated-grain",
+            "fresh-young-leaves",
+            "dried-seed-head-enrichment",
+            "controlled-postharvest-access",
+            "balanced-feed-ingredient"
+          ],
+
+          requiredProcessingTasks: [
+            "separate-products-by-quality",
+            "prioritize-household-food",
+            "reserve-planting-seed",
+            "dry-grain",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "inspect-each-poultry-product",
+            "select-appropriate-poultry-use-path"
+          ],
+
+          optionalProcessingTasks: [
+            "heat-treat-surplus-grain",
+            "grind-small-batches",
+            "store-seed-heads",
+            "succession-plant-for-leaves",
+            "allow-controlled-postharvest-access",
+            "market-excess-household-grain"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-baskets",
+            "hand-pruners",
+            "harvest-tarps",
+            "drying-screens",
+            "threshing-container",
+            "grain-screens",
+            "winnowing-fan",
+            "food-safe-storage-containers",
+            "seed-storage-envelopes",
+            "labels",
+            "feed-scale",
+            "grain-mill",
+            "portable-poultry-fence"
+          ],
+
+          harvestPattern:
+            "multiple-product",
+
+          harvestFrequencyCategory:
+            "extended-seasonal",
+
+          storageMethods: [
+            "fresh-use",
+            "sealed-whole-grain-storage",
+            "saved-seed-storage",
+            "dried-seed-head-storage",
+            "small-batch-processed-storage"
+          ],
+
+          preferredStorageMethod:
+            "separate-labeled-storage-by-product-quality-and-intended-use",
+
+          storageDurationCategory:
+            "mixed",
+
+          estimatedShelfLifeCategory:
+            "product-dependent",
+
+          shelfLifeAfterProcessingCategory:
+            "product-dependent",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            5,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          likelyLossPoints: [
+            "failing to separate human-food grain from poultry-use material",
+            "excessive leaf harvest reducing grain yield",
+            "grain shattering",
+            "bird feeding",
+            "cleaning losses",
+            "mixing saved seed with feed grain",
+            "storing products at unsafe moisture levels",
+            "processing more grain than can be used",
+            "feeding valuable household grain without evaluating higher-value uses"
+          ],
+
+          preservationOptions: [
+            "fresh-household-greens",
+            "fresh-poultry-greens",
+            "clean-whole-grain-storage",
+            "saved-planting-seed",
+            "heat-treated-poultry-grain",
+            "small-batch-ground-grain",
+            "dried-seed-heads",
+            "controlled-postharvest-access"
+          ],
+
+          preservationLimitations: [
+            "Each product requires different handling and storage.",
+            "Fresh leaves do not store like grain.",
+            "Saved planting seed must remain labeled and isolated from feed grain.",
+            "Whole seed heads require more space than cleaned grain.",
+            "Ground grain has a shorter storage window.",
+            "Postharvest access cannot be stored.",
+            "Poor sorting can transfer mold, debris, or contamination into multiple product streams."
+          ],
+
+          storageWarnings: [
+            "Label human food, planting seed, poultry grain, and seed heads separately.",
+            "Never downgrade moldy or contaminated human-food grain into poultry feed.",
+            "Do not store fresh leaves with dry grain.",
+            "Keep saved seed dry and protected from rodents.",
+            "Inspect all stored products periodically.",
+            "Use the oldest sound poultry-use material first."
+          ],
+
+          safetyWarnings: [
+            "Only sound, clean, positively identified crop material should enter either the household or poultry food stream.",
+            "Material rejected because of mold, chemical contamination, rodent contamination, or spoilage must not be fed to chickens.",
+            "Surplus does not automatically mean nutritionally appropriate.",
+            "Poultry-use grain remains supplemental unless included in a professionally balanced ration.",
+            "Use young leaves rather than coarse mature foliage.",
+            "Maintain complete poultry feed as the nutritional foundation.",
+            "Keep planting seed separate from treated seed or chemically coated seed.",
+            "Use different processing controls for raw, heat-treated, and ground grain."
+          ],
+
+          incompatibleUserTraits: [
+            "does-not-want-product-sorting",
+            "cannot-maintain-separate-storage",
+            "cannot-label-harvest-batches",
+            "requires-zero-processing",
+            "requires-one-universal-feeding-method",
+            "plans-to-feed-all-crop-material-regardless-of-quality",
+            "requires-complete-feed-replacement",
+            "cannot-monitor-stored-products"
+          ],
+
+          directFacts: {
+            householdFoodReceivesPriority:
+              true,
+
+            multiplePoultryUsePathsCombined:
+              true,
+
+            savedSeedPossible:
+              true,
+
+            productSortingRequired:
+              true,
+
+            highestWholeSystemValuePotential:
+              true,
+
+            lowestWastePotential:
+              true,
+
+            notes: [
+              "This is the broadest and potentially highest-value amaranth use path.",
+              "It treats poultry supplementation as one component of a larger household production system.",
+              "The best cleaned grain may be reserved for human food, while sound surplus material supports the flock.",
+              "Different portions of the crop can be assigned to different uses according to quality, maturity, labor, and household priorities.",
+              "This pathway can reduce waste without encouraging unsafe feeding of rejected material.",
+              "The planner should favor this path when the user values household food, seed saving, poultry enrichment, storage, and multiple harvest products."
+            ]
+          }
+        }
+      ],
+
+      dataQuality: {
+        overallConfidenceLevel:
+          "moderate-high",
+
+        overallConfidenceScore:
+          4,
+
+        researchStatus:
+          "researched-production-record",
+
+        lastResearchReview:
+          "2026-07-18",
+
+        requiresFutureReview:
+          true,
+
+        plannerReady:
+          true,
+
+        masterTemplateCandidate:
+          true,
+
+        directEvidenceStrengthScore:
+          4,
+
+        growingEvidenceStrengthScore:
+          5,
+
+        poultryNutritionEvidenceStrengthScore:
+          3,
+
+        backyardFeedingEvidenceStrengthScore:
+          2,
+
+        yieldEvidenceStrengthScore:
+          2,
+
+        economicsEvidenceStrengthScore:
+          1,
+
+        storageEvidenceStrengthScore:
+          3,
+
+        processingEvidenceStrengthScore:
+          3,
+
+        regionalPlantingEvidenceStrengthScore:
+          4,
+
+        householdFoodEvidenceStrengthScore:
+          5,
+
+        ornamentalEvidenceStrengthScore:
+          5,
+
+        fieldsWithStrongSupport: [
+          "warm-season annual lifecycle",
+          "frost sensitivity",
+          "warm-soil planting requirement",
+          "shallow seed placement",
+          "full-sun preference",
+          "preferred soil drainage",
+          "young-leaf harvest",
+          "grain maturity range",
+          "heat tolerance",
+          "drought tolerance after establishment",
+          "tiny-seed establishment difficulty",
+          "hand-threshing and cleaning difficulty",
+          "human-food value",
+          "seed-saving potential",
+          "raw-grain antinutritional concern",
+          "benefit of processing",
+          "supplemental rather than complete-feed role"
+        ],
+
+        fieldsWithModerateSupport: [
+          "poultry suitability scores",
+          "heat-treated grain value",
+          "whole seed-head enrichment value",
+          "nitrate risk under stress",
+          "oxalate concern",
+          "wildlife pressure",
+          "lodging risk",
+          "grain shattering risk",
+          "storage pest risk",
+          "container suitability",
+          "small-space suitability",
+          "pollinator value"
+        ],
+
+        fieldsWithLimitedSupport: [
+          "exact backyard grain yield",
+          "exact backyard leaf yield",
+          "exact poultry inclusion percentage",
+          "exact safe raw-grain quantity",
+          "exact heat-processing method",
+          "exact heat-processing temperature",
+          "exact heat-processing duration",
+          "exact feed-cost savings",
+          "exact processing minutes per pound",
+          "exact harvest waste percentage",
+          "exact shelf life under backyard storage conditions",
+          "exact plant count needed per chicken",
+          "exact square footage needed per flock"
+        ],
+
+        nullFieldsIntentionallyPreserved: [
+          "survivalPHMinimum",
+          "survivalPHMaximum",
+          "estimatedFeedSavings",
+          "estimatedAnnualValue",
+          "estimatedProcessingMinutesPerPound",
+          "estimatedWastePercent"
+        ],
+
+        assumptions: [
+          "The record refers to cultivated food-grade grain or vegetable amaranth rather than unidentified wild pigweed.",
+          "Poultry use refers primarily to established adult birds.",
+          "A complete commercial or professionally formulated ration remains available.",
+          "Grain is harvested mature, cleaned, and dried before storage.",
+          "Fresh leaves come from healthy plants without prohibited chemical exposure.",
+          "All scores use a five-point planner scale where higher values generally indicate more of the named trait.",
+          "Use-path scores may differ because each harvested product has different risks and labor requirements."
+        ],
+
+        knownLimitations: [
+          "Amaranth species and cultivars differ substantially in height, maturity, grain yield, leaf production, color, and harvest behavior.",
+          "Poultry research may use formulated diets, controlled processing, and measured inclusion rates that do not transfer directly to backyard feeding.",
+          "Nutrient values vary by species, cultivar, environment, maturity, processing, and laboratory method.",
+          "Backyard yields are strongly affected by seedbed preparation, weed control, plant spacing, rainfall, bird pressure, and harvest skill.",
+          "Published human-food storage guidance does not automatically establish poultry-feed shelf life.",
+          "No universal backyard-safe inclusion percentage was verified.",
+          "No universal heat-treatment procedure was verified for all poultry feeding situations.",
+          "Exact economic savings cannot be determined without local production and feed-price data."
+        ],
+
+        futureResearchPriorities: [
+          "Locate poultry studies comparing raw, cooked, toasted, popped, extruded, and ground amaranth grain.",
+          "Extract cultivar-specific grain nutrient profiles.",
+          "Determine whether research supports practical adult-layer inclusion ranges.",
+          "Identify validated heat-processing time and temperature combinations.",
+          "Research nitrate and oxalate concentration in leaves by maturity and stress condition.",
+          "Find extension data for grain yield under small-scale North American production.",
+          "Find postharvest moisture targets for safe amaranth grain storage.",
+          "Research storage insect susceptibility and practical control methods.",
+          "Measure hand-harvest processing time in future Backyard Chicken Planner field trials.",
+          "Measure seed-head, threshing, winnowing, and feeding losses in project trials.",
+          "Compare whole seed-head feeding waste with cleaned-grain feeding.",
+          "Determine flock acceptance of young leaves, whole grain, heat-treated grain, and seed heads.",
+          "Develop future calculator formulas only after measured field data becomes available."
+        ],
+
+        validationRules: [
+          "Do not convert null values into estimates without supporting evidence.",
+          "Do not recommend unidentified wild Amaranthus species.",
+          "Do not describe amaranth as a complete poultry ration.",
+          "Do not generate a precise feeding percentage from crude protein alone.",
+          "Do not recommend moldy, chemically contaminated, or rodent-contaminated material.",
+          "Do not treat all use paths as nutritionally or operationally equivalent.",
+          "Do not assume heat treatment eliminates all antinutritional factors.",
+          "Do not calculate feed savings without accounting for processing loss and complete-feed displacement limits.",
+          "Do not recommend unrestricted foliage from drought-stressed or excessively fertilized plants.",
+          "Do not recommend long-term storage of damp grain or undried seed heads."
+        ],
+
+        sourceCategories: [
+          "university-extension",
+          "international-feed-database",
+          "government-agriculture",
+          "peer-reviewed-poultry-nutrition",
+          "horticultural-production-guidance",
+          "human-food-crop-guidance"
+        ],
+
+        directFacts: {
+          exactBackyardFeedingRateKnown:
+            false,
+
+          exactBackyardYieldKnown:
+            false,
+
+          exactProcessingLossKnown:
+            false,
+
+          exactEconomicReturnKnown:
+            false,
+
+          enoughEvidenceForPlannerUse:
+            true,
+
+          enoughEvidenceForCompleteRationFormulation:
+            false,
+
+          enoughEvidenceForFutureFieldTesting:
+            true,
+
+          notes: [
+            "The record contains enough verified information for crop comparison, suitability scoring, and conservative planner recommendations.",
+            "The record does not contain enough evidence to formulate a complete poultry ration.",
+            "Unknown numeric values remain null rather than being estimated.",
+            "Future project trials can progressively replace null fields with measured Backyard Chicken Planner data.",
+            "Use-path separation is essential because grain, leaves, meal, seed heads, and postharvest access have different labor, storage, and safety profiles."
+          ]
+        }
+      },
+
+      templateMetadata: {
+        templateName:
+          "Backyard Chicken Planner Feed Crop Master Template",
+
+        templateVersion:
+          "2.0.0",
+
+        templateStatus:
+          "active-master",
+
+        adoptedFromCrop:
+          "CROP-AMARANTH",
+
+        adoptedDate:
+          "2026-07-18",
+
+        requiredTopLevelSections: [
+          "identity",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality",
+          "templateMetadata"
+        ],
+
+        requiredRiskFields: [
+          "wildlifePressureScore",
+          "birdLossRiskScore",
+          "deerBrowsingRiskScore",
+          "rabbitBrowsingRiskScore",
+          "stormDamageRiskScore",
+          "shatteringRiskScore",
+          "postHarvestLossRiskScore",
+          "storagePestRiskScore",
+          "rodentAttractionScore",
+          "mechanicalHarvestSuitabilityScore",
+          "mechanicalProcessingSuitabilityScore"
+        ],
+
+        requiredUsePathFields: [
+          "expectedProcessingTimeLevel",
+          "estimatedProcessingMinutesPerPound",
+          "expectedWasteLevel",
+          "estimatedWastePercent",
+          "storageEfficiencyScore",
+          "processingEfficiencyScore",
+          "feedMeasurementPrecisionScore",
+          "preservationFlexibilityScore",
+          "humanFoodPriorityScore",
+          "poultryFeedPriorityScore",
+          "preservationOptions",
+          "preservationLimitations",
+          "estimatedShelfLifeCategory",
+          "shelfLifeAfterProcessingCategory",
+          "likelyLossPoints"
+        ],
+
+        nullPolicy:
+          "Use null for unknown numeric or categorical values. Never estimate unsupported values solely to complete the schema.",
+
+        researchPolicy:
+          "Research each crop before coding and preserve source-supported distinctions between cultivars, harvested products, processing methods, and poultry use paths.",
+
+        scoringPolicy:
+          "Scores must reflect the named trait on a consistent five-point planner scale and must not be substituted for direct factual values.",
+
+        usePathPolicy:
+          "Create separate use paths whenever harvest form, processing, storage, labor, safety, or feeding method changes materially.",
+
+        compatibilityPolicy:
+          "Future crops should use the same field names whenever the concept applies. Nonapplicable fields should use false, empty arrays, or null according to data type rather than being silently omitted.",
+
+        migrationRequiredForEarlierCrops:
+          true,
+
+        migrationPriority:
+          "after-core-crop-expansion",
+
+        notes: [
+          "Amaranth is the first crop built under the Version 2 master schema.",
+          "Earlier crop records may remain operational under their original schema until migration begins.",
+          "Future crops should follow this structure unless a documented schema revision is adopted.",
+          "New fields should be added deliberately and only when they improve cross-crop comparison or planner decisions.",
+          "Crop-specific exceptions may be added without removing shared master fields.",
+          "Template version changes should be documented before retrofitting existing crops."
+        ]
+      }
+    }
+  }
+};
+
+
 
