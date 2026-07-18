@@ -1528,7 +1528,82 @@ function renderTopThreeRankings(
 
   /*
     ============================================================
-    6. PROFILE MATRIX
+    6. DASHBOARD INTERACTIONS
+    ============================================================
+  */
+
+
+  // Opens and highlights the detailed result for a selected profile.
+  function analyzeProfileResult(
+    profileId
+  ) {
+    const comparisonSection =
+      document.getElementById(
+        "multi-crop-comparison"
+      );
+
+    const profileResultElement =
+      document.querySelector(
+        `[data-profile-result="${profileId}"]`
+      );
+
+    if (comparisonSection) {
+      comparisonSection.open = true;
+    }
+
+    if (!profileResultElement) {
+      return;
+    }
+
+    profileResultElement
+      .classList.remove(
+        "profile-analysis-highlight"
+      );
+
+    /*
+      Force the browser to recognize the removed
+      class before adding it again. This allows
+      the highlight animation to replay.
+    */
+    void profileResultElement.offsetWidth;
+
+    profileResultElement
+      .classList.add(
+        "profile-analysis-highlight"
+      );
+
+    profileResultElement
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+  }
+
+
+  // Attaches click events to every Analyze button in the profile matrix.
+  function attachProfileMatrixInteractions(
+    bodyElement
+  ) {
+    bodyElement
+      .querySelectorAll(
+        "[data-analyze-profile]"
+      )
+      .forEach(button => {
+        button.addEventListener(
+          "click",
+          function () {
+            analyzeProfileResult(
+              button.dataset
+                .analyzeProfile
+            );
+          }
+        );
+      });
+  }
+
+  /*
+    ============================================================
+    7. PROFILE MATRIX
     ============================================================
   */
 
@@ -1772,47 +1847,12 @@ const actualLeader =
           null;
 
         const actualTopThreeIds =
-  eligibleCropResults
-    .slice(0, 3)
-    .map(result =>
-      result.cropId
-    );
+         eligibleCropResults
+          .slice(0, 3)
+          .map(result =>
+            result.cropId
+          );
 
-    const actualTopThreeResults =
-  eligibleCropResults
-    .slice(0, 3);
-
-const topThreeMarkup =
-  actualTopThreeResults.length > 0
-    ? `
-      <ol class="profile-top-three-list">
-        ${actualTopThreeResults
-          .map(result => {
-            return `
-              <li>
-                <strong>
-                  ${result.cropName}
-                </strong>
-
-                — ${result.finalScore}%
-
-                ${
-                  result.bestUsePath?.label
-                    ? `
-                      <br>
-                      <small>
-                        ${result.bestUsePath.label}
-                      </small>
-                    `
-                    : ""
-                }
-              </li>
-            `;
-          })
-          .join("")}
-      </ol>
-    `
-    : "No eligible recommendations";
 
         const leaderPasses =
           actualLeaderId &&
@@ -1929,7 +1969,7 @@ const topThreeMarkup =
 </td>
 
 <td class="profile-top-three">
-  ${topThreeMarkup}
+  ${topThreeRankingsMarkup}
 </td>
 
 
@@ -1952,64 +1992,9 @@ const topThreeMarkup =
 
   bodyElement.innerHTML = rows;
 
-  bodyElement
-  .querySelectorAll(
-    "[data-analyze-profile]"
-  )
-  .forEach(button => {
-
-    button.addEventListener(
-      "click",
-      function () {
-
-        const profileId =
-          button.dataset
-            .analyzeProfile;
-
-        const comparisonSection =
-          document.getElementById(
-            "multi-crop-comparison"
-          );
-
-        const profileResultElement =
-          document.querySelector(
-            `[data-profile-result="${profileId}"]`
-          );
-
-        if (comparisonSection) {
-          comparisonSection.open = true;
-        }
-
-        if (!profileResultElement) {
-          return;
-        }
-
-        profileResultElement
-          .classList.remove(
-            "profile-analysis-highlight"
-          );
-
-        /*
-          Force the browser to recognize the
-          removed class before adding it again.
-          This allows the animation to replay.
-        */
-        void profileResultElement.offsetWidth;
-
-        profileResultElement
-          .classList.add(
-            "profile-analysis-highlight"
-          );
-
-        profileResultElement
-          .scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-      }
-    );
-
-  });
+    attachProfileMatrixInteractions(
+    bodyElement
+  );
 
   const totalConfigured =
     passCount + reviewCount;
