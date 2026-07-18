@@ -738,6 +738,521 @@ function renderSampleProfileList() {
   `;
 }
 
+function formatProfileValue(value) {
+  if (
+    value === null ||
+    value === undefined ||
+    value === ""
+  ) {
+    return "";
+  }
+
+  return String(value)
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, letter =>
+      letter.toUpperCase()
+    );
+}
+
+function getSunlightSummary(hours) {
+  if (!Number.isFinite(hours)) {
+    return null;
+  }
+
+  if (hours >= 8) {
+    return {
+      icon: "☀️",
+      label: "Full Sun"
+    };
+  }
+
+  if (hours >= 6) {
+    return {
+      icon: "🌤️",
+      label: "Good Sun"
+    };
+  }
+
+  if (hours >= 4) {
+    return {
+      icon: "⛅",
+      label: "Partial Sun"
+    };
+  }
+
+  return {
+    icon: "🌥️",
+    label: "Low Sun"
+  };
+}
+
+function getWaterSummary(
+  waterReliability,
+  conservationPriority
+) {
+  const limitedValues = [
+    "frequently-limited",
+    "occasionally-limited",
+    "limited",
+    "rainfall-only"
+  ];
+
+  const highConservationValues = [
+    "high",
+    "very-high",
+    "top-priority"
+  ];
+
+  if (
+    limitedValues.includes(
+      waterReliability
+    ) ||
+    highConservationValues.includes(
+      conservationPriority
+    )
+  ) {
+    return {
+      icon: "💧",
+      label: "Limited Water"
+    };
+  }
+
+  if (
+    waterReliability ===
+      "very-reliable" ||
+    waterReliability ===
+      "usually-reliable"
+  ) {
+    return {
+      icon: "🚿",
+      label: "Reliable Water"
+    };
+  }
+
+  return null;
+}
+
+function getStorageSummary(
+  harvestStorage
+) {
+  const storageDuration =
+    harvestStorage
+      ?.desiredStorageDuration;
+
+  if (
+    storageDuration ===
+      "6-12-months" ||
+    storageDuration ===
+      "long-term"
+  ) {
+    return {
+      icon: "🏺",
+      label: "Long Storage"
+    };
+  }
+
+  if (
+    storageDuration ===
+      "3-6-months" ||
+    storageDuration ===
+      "medium-term"
+  ) {
+    return {
+      icon: "📦",
+      label: "Seasonal Storage"
+    };
+  }
+
+  if (
+    storageDuration ===
+      "immediate"
+  ) {
+    return {
+      icon: "🥬",
+      label: "Use Fresh"
+    };
+  }
+
+  return null;
+}
+
+function getPrimaryHarvestSummary(
+  desiredHarvestProducts
+) {
+  const products =
+    Array.isArray(
+      desiredHarvestProducts
+    )
+      ? desiredHarvestProducts
+      : [];
+
+  const productChecks = [
+    {
+      matches: [
+        "dried-seed-heads",
+        "fresh-seed-heads",
+        "millet-panicles",
+        "whole-millet-panicles"
+      ],
+      icon: "🌾",
+      label: "Whole Seed Heads"
+    },
+
+    {
+      matches: [
+        "dry-seeds",
+        "dry-grain",
+        "stored-grain",
+        "whole-grain",
+        "corn-kernels",
+        "millet-grain",
+        "loose-millet-grain"
+      ],
+      icon: "🪣",
+      label: "Dry Grain"
+    },
+
+    {
+      matches: [
+        "fresh-greens",
+        "fresh-leaves",
+        "fresh-forage",
+        "alfalfa-foliage"
+      ],
+      icon: "🥬",
+      label: "Fresh Greens"
+    },
+
+    {
+      matches: [
+        "living-forage",
+        "pasture-forage"
+      ],
+      icon: "🌱",
+      label: "Living Forage"
+    },
+
+    {
+      matches: [
+        "whole-storage-vegetables",
+        "winter-storage-produce",
+        "pumpkin-squash-flesh"
+      ],
+      icon: "🎃",
+      label: "Storage Produce"
+    },
+
+    {
+      matches: [
+        "dry-legumes"
+      ],
+      icon: "🫘",
+      label: "Dry Legumes"
+    },
+
+    {
+      matches: [
+        "fallen-fruit",
+        "mulberries"
+      ],
+      icon: "🫐",
+      label: "Fresh Fruit"
+    },
+
+    {
+      matches: [
+        "dried-forage",
+        "dried-leaves",
+        "alfalfa-forage"
+      ],
+      icon: "🌿",
+      label: "Dried Forage"
+    }
+  ];
+
+  return (
+    productChecks.find(check =>
+      check.matches.some(product =>
+        products.includes(product)
+      )
+    ) ||
+    null
+  );
+}
+
+function getGoalSummaryItems(
+  preferences
+) {
+  const priorities =
+    Array.isArray(
+      preferences?.goalPriorities
+    )
+      ? [...preferences.goalPriorities]
+      : [];
+
+  const goals =
+    priorities.length > 0
+      ? priorities
+          .sort(
+            (a, b) =>
+              a.rank - b.rank
+          )
+          .map(item => item.goal)
+      : (
+          Array.isArray(
+            preferences?.plannerGoals
+          )
+            ? preferences.plannerGoals
+            : []
+        );
+
+  const goalLabels = {
+    "enrichment": {
+      icon: "🐔",
+      label: "Enrichment"
+    },
+
+    "pollinators": {
+      icon: "🌼",
+      label: "Pollinators"
+    },
+
+    "winter-storage": {
+      icon: "❄️",
+      label: "Winter Storage"
+    },
+
+    "high-energy": {
+      icon: "⚡",
+      label: "High Energy"
+    },
+
+    "protein-oriented": {
+      icon: "🫘",
+      label: "Protein"
+    },
+
+    "fresh-greens": {
+      icon: "🥬",
+      label: "Fresh Greens"
+    },
+
+    "living-forage": {
+      icon: "🌱",
+      label: "Living Forage"
+    },
+
+    "soil-improvement": {
+      icon: "🌍",
+      label: "Soil Improvement"
+    },
+
+    "nitrogen-fixation": {
+      icon: "♻️",
+      label: "Nitrogen Fixing"
+    },
+
+    "self-reliance": {
+      icon: "🏡",
+      label: "Self-Reliance"
+    },
+
+    "shared-household-food": {
+      icon: "🍽️",
+      label: "Shared Food"
+    },
+
+    "fast-value": {
+      icon: "⏱️",
+      label: "Fast Value"
+    },
+
+    "limited-irrigation": {
+      icon: "💧",
+      label: "Low Water"
+    },
+
+    "short-season": {
+      icon: "📅",
+      label: "Short Season"
+    },
+
+    "ground-cover": {
+      icon: "🍀",
+      label: "Ground Cover"
+    },
+
+    "shade": {
+      icon: "🌳",
+      label: "Shade"
+    },
+
+    "edible-landscape": {
+      icon: "🌿",
+      label: "Edible Landscape"
+    },
+
+    "reduce-feed-use": {
+      icon: "📉",
+      label: "Reduce Feed Use"
+    }
+  };
+
+  return goals
+    .slice(0, 3)
+    .map(goal => {
+      return (
+        goalLabels[goal] || {
+          icon: "✓",
+          label:
+            formatProfileValue(goal)
+        }
+      );
+    });
+}
+
+function buildProfileSummaryItems(
+  profile
+) {
+  const answers =
+    profile?.answers || {};
+
+  const items = [];
+
+  const sunlight =
+    getSunlightSummary(
+      answers.site
+        ?.directSunHoursExact
+    );
+
+  if (sunlight) {
+    items.push(sunlight);
+  }
+
+  const spaceTypes =
+    answers.space
+      ?.availableSpaceTypes || [];
+
+  if (spaceTypes.length > 0) {
+    items.push({
+      icon: "🪴",
+      label:
+        formatProfileValue(
+          spaceTypes[0]
+        )
+    });
+  }
+
+  const experience =
+    answers.labor
+      ?.gardeningExperience;
+
+  if (experience) {
+    items.push({
+      icon: "👤",
+      label:
+        formatProfileValue(
+          experience
+        )
+    });
+  }
+
+  const harvest =
+    getPrimaryHarvestSummary(
+      answers.harvestStorage
+        ?.desiredHarvestProducts
+    );
+
+  if (harvest) {
+    items.push(harvest);
+  }
+
+  const storage =
+    getStorageSummary(
+      answers.harvestStorage
+    );
+
+  if (storage) {
+    items.push(storage);
+  }
+
+  const water =
+    getWaterSummary(
+      answers.water
+        ?.waterReliability,
+
+      answers.water
+        ?.waterConservationPriority
+    );
+
+  if (water) {
+    items.push(water);
+  }
+
+  items.push(
+    ...getGoalSummaryItems(
+      answers.preferences
+    )
+  );
+
+  const uniqueItems = [];
+
+  items.forEach(item => {
+    const alreadyExists =
+      uniqueItems.some(
+        existingItem =>
+          existingItem.label ===
+          item.label
+      );
+
+    if (!alreadyExists) {
+      uniqueItems.push(item);
+    }
+  });
+
+  return uniqueItems.slice(0, 7);
+}
+
+function renderProfileSummary(
+  profile
+) {
+  const items =
+    buildProfileSummaryItems(
+      profile
+    );
+
+  if (items.length === 0) {
+    return `
+      <span class="profile-summary-empty">
+        No structured summary available
+      </span>
+    `;
+  }
+
+  return `
+    <ul class="profile-summary-list">
+      ${items
+        .map(item => {
+          return `
+            <li>
+              <span
+                class="profile-summary-icon"
+                aria-hidden="true"
+              >
+                ${item.icon}
+              </span>
+
+              <span>
+                ${item.label}
+              </span>
+            </li>
+          `;
+        })
+        .join("")}
+    </ul>
+  `;
+}
+
 function renderProfileMatrix() {
   const summaryElement =
     document.getElementById(
@@ -761,6 +1276,20 @@ function renderProfileMatrix() {
       ?.testing
       ?.profileMatrixExpectations ||
     {};
+
+    const sampleProfiles =
+  namespace.config
+    ?.testing
+    ?.sampleUserProfiles ||
+  [];
+
+const profileById =
+  Object.fromEntries(
+    sampleProfiles.map(profile => [
+      profile.id,
+      profile
+    ])
+  );
 
   if (
     !namespace.engine ||
@@ -828,6 +1357,21 @@ function renderProfileMatrix() {
   const rows =
     testRun.results
       .map(profileResult => {
+        const sampleProfile =
+  profileById[
+    profileResult.profileId
+  ];
+
+const profileSummaryMarkup =
+  sampleProfile
+    ? renderProfileSummary(
+        sampleProfile
+      )
+    : `
+        <span class="profile-summary-empty">
+          Profile data unavailable
+        </span>
+      `;
         const expectation =
           expectations[
             profileResult.profileId
@@ -868,8 +1412,8 @@ const actualLeader =
               </td>
 
               <td class="profile-purpose">
-                No matrix expectation has been defined.
-              </td>
+  ${profileSummaryMarkup}
+</td>
 
               <td class="profile-expected">
                 Not configured
@@ -1074,20 +1618,8 @@ const topThreeMarkup =
             </td>
 
             <td class="profile-purpose">
-              ${expectation.purpose}
-
-              ${
-                expectation.notes
-                  ? `
-                    <p>
-                      <small>
-                        ${expectation.notes}
-                      </small>
-                    </p>
-                  `
-                  : ""
-              }
-            </td>
+  ${profileSummaryMarkup}
+</td>
 
             <td class="profile-expected">
               ${expectedNames}
