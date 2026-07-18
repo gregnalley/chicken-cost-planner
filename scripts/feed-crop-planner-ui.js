@@ -799,6 +799,15 @@ function formatProfileValue(value) {
     );
 }
 
+  /*
+    ============================================================
+    4. PROFILE SUMMARY HELPERS
+    ============================================================
+  */
+
+
+  // Converts exact sunlight hours into a short readable sunlight summary.
+
 function getSunlightSummary(hours) {
   if (!Number.isFinite(hours)) {
     return null;
@@ -830,6 +839,8 @@ function getSunlightSummary(hours) {
     label: "Low Sun"
   };
 }
+
+  // Converts water reliability and conservation priority into a short summary.
 
 function getWaterSummary(
   waterReliability,
@@ -877,6 +888,8 @@ function getWaterSummary(
   return null;
 }
 
+// Converts the requested storage duration into a short storage summary.
+
 function getStorageSummary(
   harvestStorage
 ) {
@@ -920,6 +933,8 @@ function getStorageSummary(
 
   return null;
 }
+
+// Selects the most useful harvest-product label for the profile summary.
 
 function getPrimaryHarvestSummary(
   desiredHarvestProducts
@@ -1024,6 +1039,8 @@ function getPrimaryHarvestSummary(
     null
   );
 }
+
+// Converts the profile’s highest-priority goals into readable summary items.
 
 function getGoalSummaryItems(
   preferences
@@ -1156,6 +1173,8 @@ function getGoalSummaryItems(
     });
 }
 
+ // Builds the final deduplicated list of summary items for one profile.
+
 function buildProfileSummaryItems(
   profile
 ) {
@@ -1257,6 +1276,8 @@ function buildProfileSummaryItems(
 
   return uniqueItems.slice(0, 7);
 }
+
+// Converts a profile’s summary items into the Profile Summary HTML list.
 
 function renderProfileSummary(
   profile
