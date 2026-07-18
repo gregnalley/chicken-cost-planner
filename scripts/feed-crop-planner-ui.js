@@ -4,18 +4,32 @@
   Backyard Chicken Planner
   Chicken Feed Crop Planner User Interface
 
-  Work Session 1:
-  - Creates the UI namespace
-  - Provides a small development initialization function
-  - Does not create the public questionnaire yet
+  This file controls the development dashboard used to:
+  - Confirm that the planner files loaded correctly
+  - Display crop registration and validation reports
+  - Run sample-profile tests
+  - Display the profile expectation matrix
+  - Show detailed crop-ranking diagnostics
 */
 
 (function initializeFeedCropPlannerUI(global) {
 
+  /*
+    Create or reuse the shared Feed Crop Planner namespace.
+  */
   const namespace =
     global.BCPFeedCropPlanner =
       global.BCPFeedCropPlanner || {};
 
+
+  /*
+    ============================================================
+    1. INITIALIZATION
+    ============================================================
+  */
+
+
+  // Initializes every section of the development dashboard.
   function initializeDevelopmentPage() {
     const statusElement =
       document.getElementById(
@@ -35,6 +49,7 @@
       if (statusElement) {
         statusElement.textContent =
           "Planner engine was not loaded.";
+
         statusElement.className =
           "foundation-status foundation-status-error";
       }
@@ -62,7 +77,9 @@
         status.checks
           .map(check => {
             const icon =
-              check.passed ? "✅" : "❌";
+              check.passed
+                ? "✅"
+                : "❌";
 
             return `
               <li>
@@ -80,7 +97,8 @@
 
     if (versionElement) {
       versionElement.textContent =
-        status.plannerVersion || "Unavailable";
+        status.plannerVersion ||
+        "Unavailable";
     }
 
     const schemaElement =
@@ -100,13 +118,22 @@
     renderSampleProfileList();
     renderProfileMatrix();
     renderMultiCropSampleTests();
-
   }
 
+
+  /*
+    ============================================================
+    2. DASHBOARD REPORT RENDERERS
+    ============================================================
+  */
+
+
+  // Displays the crop-registration totals and registration warnings.
+
    function renderCropRegistrationReport() {
-  const summaryElement =
-    document.getElementById(
-      "crop-registration-summary"
+     const summaryElement =
+      document.getElementById(
+        "crop-registration-summary"
     );
 
   const detailsElement =
@@ -1253,6 +1280,198 @@ function renderProfileSummary(
   `;
 }
 
+function getRankingFactorDetails(
+  cropResult
+) {
+  const categoryLabels = {
+    climate: {
+      icon: "🌡️",
+      label: "Climate"
+    },
+
+    sunlight: {
+      icon: "☀️",
+      label: "Sunlight"
+    },
+
+    space: {
+      icon: "📐",
+      label: "Space"
+    },
+
+    soil: {
+      icon: "🌱",
+      label: "Soil"
+    },
+
+    water: {
+      icon: "💧",
+      label: "Water"
+    },
+
+    labor: {
+      icon: "🛠️",
+      label: "Labor"
+    },
+
+    goals: {
+      icon: "🎯",
+      label: "Goals"
+    }
+  };
+
+  const categoryResults =
+    cropResult?.categoryResults ||
+    {};
+
+  return Object.entries(
+    categoryResults
+  )
+    .filter(([, result]) => {
+      return Number.isFinite(
+        result?.score
+      );
+    })
+    .map(([categoryId, result]) => {
+      const category =
+        categoryLabels[categoryId] ||
+        {
+          icon: "✓",
+          label:
+            formatProfileValue(
+              categoryId
+            )
+        };
+
+      return {
+        id: categoryId,
+        icon: category.icon,
+        label: category.label,
+        score:
+          Math.round(
+            result.score
+          ),
+        reason:
+          result.reason || ""
+      };
+    })
+    .sort((a, b) => {
+      return b.score - a.score;
+    });
+}
+
+function getRankingStrengths(
+  cropResult,
+  maximumItems = 3
+) {
+  return getRankingFactorDetails(
+    cropResult
+  )
+    .filter(item => {
+      return item.score >= 70;
+    })
+    .slice(0, maximumItems);
+}
+
+function renderRankingStrengths(
+  cropResult
+) {
+  const strengths =
+    getRankingStrengths(
+      cropResult,
+      3
+    );
+
+  if (strengths.length === 0) {
+    return `
+      <span class="ranking-factor-empty">
+        No strong category advantages
+      </span>
+    `;
+  }
+
+  return `
+    <ul class="ranking-factor-list">
+      ${strengths
+        .map(strength => {
+          return `
+            <li
+              title="${strength.reason}"
+            >
+              <span
+                class="ranking-factor-icon"
+                aria-hidden="true"
+              >
+                ${strength.icon}
+              </span>
+
+              <span>
+                ${strength.label}
+              </span>
+
+              <span class="ranking-factor-score">
+                ${strength.score}
+              </span>
+            </li>
+          `;
+        })
+        .join("")}
+    </ul>
+  `;
+}
+
+function renderTopThreeRankings(
+  eligibleCropResults
+) {
+  const topThree =
+    eligibleCropResults.slice(
+      0,
+      3
+    );
+
+  if (topThree.length === 0) {
+    return `
+      <span class="ranking-factor-empty">
+        No eligible rankings
+      </span>
+    `;
+  }
+
+  return `
+    <ol class="top-ranking-list">
+      ${topThree
+        .map((cropResult, index) => {
+          return `
+            <li class="top-ranking-item">
+
+              <div class="top-ranking-heading">
+
+                <span class="top-ranking-position">
+                  ${index + 1}.
+                </span>
+
+                <strong>
+                  ${cropResult.cropName}
+                </strong>
+
+                <span class="top-ranking-score">
+                  ${cropResult.finalScore}%
+                </span>
+
+              </div>
+
+              ${renderRankingStrengths(
+                cropResult
+              )}
+
+            </li>
+          `;
+        })
+        .join("")}
+    </ol>
+  `;
+}
+
 function renderProfileMatrix() {
   const summaryElement =
     document.getElementById(
@@ -1391,6 +1610,11 @@ const actualLeader =
   eligibleCropResults[0] ||
   null;
 
+  const topThreeRankingsMarkup =
+  renderTopThreeRankings(
+    eligibleCropResults
+  );
+
         if (!expectation) {
           unavailableCount += 1;
 
@@ -1448,28 +1672,7 @@ const actualLeader =
 </td>
 
 <td class="profile-top-three">
-  ${
-    eligibleCropResults.length > 0
-      ? `
-        <ol class="profile-top-three-list">
-          ${eligibleCropResults
-            .slice(0, 3)
-            .map(result => {
-              return `
-                <li>
-                  <strong>
-                    ${result.cropName}
-                  </strong>
-
-                  — ${result.finalScore}%
-                </li>
-              `;
-            })
-            .join("")}
-        </ol>
-      `
-      : "No eligible recommendations"
-  }
+  ${topThreeRankingsMarkup}
 </td>
 
 
