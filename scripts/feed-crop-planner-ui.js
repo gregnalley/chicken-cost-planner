@@ -1474,57 +1474,54 @@ function renderRankingStrengths(
 
 // Renders the top three eligible crops with their strongest ranking factors.
 
-function renderTopThreeRankings(
-  eligibleCropResults
-) {
-  const topThree =
-    eligibleCropResults.slice(
-      0,
-      3
-    );
+  // Renders the top three eligible crops with their strongest ranking factors.
+  function renderTopThreeRankings(
+    eligibleCropResults
+  ) {
+    const topThree =
+      eligibleCropResults.slice(
+        0,
+        3
+      );
 
-  if (topThree.length === 0) {
+    if (topThree.length === 0) {
+      return `
+        <span class="ranking-factor-empty">
+          No eligible rankings
+        </span>
+      `;
+    }
+
     return `
-      <span class="ranking-factor-empty">
-        No eligible rankings
-      </span>
+      <ol class="top-ranking-list">
+        ${topThree
+          .map(cropResult => {
+            return `
+              <li class="top-ranking-item">
+
+                <div class="top-ranking-heading">
+
+                  <strong>
+                    ${cropResult.cropName}
+                  </strong>
+
+                  <span class="top-ranking-score">
+                    ${cropResult.finalScore}%
+                  </span>
+
+                </div>
+
+                ${renderRankingStrengths(
+                  cropResult
+                )}
+
+              </li>
+            `;
+          })
+          .join("")}
+      </ol>
     `;
   }
-
-  return `
-    <ol class="top-ranking-list">
-      ${topThree
-        .map((cropResult, index) => {
-          return `
-            <li class="top-ranking-item">
-
-              <div class="top-ranking-heading">
-
-                <span class="top-ranking-position">
-                  ${index + 1}.
-                </span>
-
-                <strong>
-                  ${cropResult.cropName}
-                </strong>
-
-                <span class="top-ranking-score">
-                  ${cropResult.finalScore}%
-                </span>
-
-              </div>
-
-              ${renderRankingStrengths(
-                cropResult
-              )}
-
-            </li>
-          `;
-        })
-        .join("")}
-    </ol>
-  `;
-}
 
   /*
     ============================================================
