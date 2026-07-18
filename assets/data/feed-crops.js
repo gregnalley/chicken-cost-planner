@@ -21266,7 +21266,6 @@ plannerData: {
     //
     //////////////////////////////////////////////
 
-
   "CROP-OATS": {
     id:
       "CROP-OATS",
@@ -25548,6 +25547,2348 @@ plannerData: {
       }
 
     }
+  },
+
+   ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - JERUSALEM ARTICHOKE
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
+
+  "CROP-JERUSALEM-ARTICHOKE": {
+    id:
+      "CROP-JERUSALEM-ARTICHOKE",
+
+    name:
+      "Jerusalem Artichoke",
+
+    scientificName:
+      "Helianthus tuberosus",
+
+    category:
+      "Perennial Tuber, Forage, and Homestead Infrastructure Crop",
+
+    cropType:
+      "Perennial",
+
+    seasonType:
+      "Warm Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Jerusalem Artichoke, also called Sunchoke or Sunroot, is a tall perennial sunflower relative that produces edible inulin-rich underground tubers, substantial seasonal foliage, late-season flowers, and dependable regrowth from tubers left in the soil. It is most valuable as a permanent food-security and multipurpose homestead crop rather than as a concentrated poultry feed. Fresh tubers may provide supplemental produce and enrichment, while dried ground tubers have documented use as a formulated poultry-feed ingredient. The crop can also provide rabbit forage, household food, pollinator support, seasonal screening, compost biomass, and non-electric in-ground winter storage, but its aggressive persistence requires careful site selection and long-term containment.",
+
+    chickenUse: {
+      edibleParts: [
+        "Freshly harvested sound tubers",
+        "Clean chopped or split tubers",
+        "Dried ground tubers",
+        "Tender young leaves and shoots",
+        "Clean cut foliage",
+        "Seed heads where viable seed develops"
+      ],
+
+      primaryValue: [
+        "Supplemental fresh produce",
+        "Carbohydrate-oriented tuber feed",
+        "Foraging and pecking enrichment",
+        "Tender seasonal greens",
+        "In-ground winter feed storage",
+        "Long-term perennial production"
+      ],
+
+      feedingForms: [
+        "Fresh whole small tubers",
+        "Fresh split or chopped tubers",
+        "Tubers exposed during controlled postharvest foraging",
+        "Dried and ground tuber meal",
+        "Small amounts of tender cut foliage",
+        "Managed access to young regrowth",
+        "A measured ingredient in a properly balanced poultry ration"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving a complete base ration",
+        "Homesteads seeking a permanent supplemental-feed crop",
+        "Mixed chicken and rabbit systems",
+        "Fall and winter fresh-produce supplementation",
+        "Controlled postharvest flock foraging",
+        "Growers interested in non-electric in-ground storage",
+        "Properties with permanent space that can contain an aggressive perennial"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Harvest tubers after the tops have declined or died back and the tubers have matured. Scrub or rinse away soil and discard any tubers that are rotten, moldy, badly damaged, frozen and deteriorated, or otherwise questionable. Small sound tubers may be offered whole to adult chickens where they can peck them safely; larger tubers may be split, chopped, or crushed to improve access. Introduce fresh tubers gradually because they are moist and rich in fermentable fructans. Tender clean foliage may be offered in limited amounts, but mature stems become coarse and woody. Dried tuber meal should be treated only as a formulated feed ingredient and not added to a backyard ration at an assumed percentage without nutritional balancing.",
+
+      safetyNotes:
+        "Jerusalem Artichoke should supplement rather than replace an age-appropriate complete poultry ration. Fresh tubers contain substantial moisture and are not a concentrated complete feed. The principal storage carbohydrate is inulin rather than starch, and sudden large servings of highly fermentable material may cause digestive upset. Avoid unrestricted access to large quantities until flock acceptance and manure consistency are observed. Do not feed moldy, slimy, fermented, foul-smelling, rodent-contaminated, chemically treated, or deteriorated tubers or foliage. Mature stems may be fibrous and poorly consumed. Do not interpret controlled poultry-feed studies using dried tuber meal as permission to formulate an unbalanced home ration."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate composition of fresh Jerusalem Artichoke tubers and aerial forage. Values vary with cultivar, maturity, growing conditions, harvest date, storage, and whether results are reported on a fresh-matter or dry-matter basis.",
+
+      crudeProteinPercent:
+        "Fresh tubers are relatively low in protein; approximately 5% to 12% crude protein has been reported on a dry-matter basis",
+
+      fatPercent:
+        "Low",
+
+      fiberPercent:
+        "Approximately 4% to 7% crude fiber on a dry-matter basis has been reported for tubers; mature aerial growth is considerably more fibrous",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      notableNutrients: [
+        "Inulin and other fructans",
+        "Fermentable carbohydrates",
+        "Natural sugars",
+        "Potassium",
+        "Small amounts of protein",
+        "Tender leafy forage",
+        "Prebiotic carbohydrate potential"
+      ],
+
+      limitations: [
+        "Fresh tubers are mostly water and are not a concentrated poultry-feed ingredient",
+        "The primary storage carbohydrate is inulin rather than starch",
+        "Tubers are relatively low in protein and do not supply a balanced amino-acid profile for productive poultry",
+        "Tubers do not supply the calcium, vitamins, minerals, or complete amino-acid balance of formulated poultry feed",
+        "Rapid fermentation of inulin may cause digestive changes when large amounts are introduced suddenly",
+        "Mature foliage becomes coarse, woody, and less palatable",
+        "Fresh tubers and dried tuber meal are nutritionally different products",
+        "Research inclusion rates from formulated diets should not be converted directly into backyard feeding instructions"
+      ]
+    },
+
+    growing: {
+      sunlight:
+        "Full sun is preferred for strong tuber and biomass production; partial sun may support survival and some growth but generally reduces productivity",
+
+      soilTemperatureMinimumF:
+        null,
+
+      idealSoilTemperatureF:
+        "Plant dormant tubers into workable soil during late winter or early spring, using locally appropriate timing similar to other spring-planted tuber crops",
+
+      frostTolerance:
+        "High for dormant underground tubers; actively growing tops are damaged by hard frost",
+
+      heatTolerance:
+        "High",
+
+      droughtTolerance:
+        "High for survival after establishment, although prolonged drought can reduce shoot growth and tuber yield",
+
+      soilPHMinimum:
+        null,
+
+      soilPHMaximum:
+        null,
+
+      waterNeeds:
+        "Moderate. Consistent moisture supports stronger biomass and tuber production, while established plants can often survive temporary drought because of their perennial underground tubers.",
+
+      directSow:
+        false,
+
+      transplantRecommended:
+        false,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      plantSpacingInches:
+        "Variety- and management-dependent; permanent backyard patches should allow enough room for tall stems, underground tuber spread, harvest access, and containment",
+
+      rowSpacingInches:
+        "Variety- and equipment-dependent; wider rows improve harvest access and make unwanted spread easier to detect",
+
+      plantingDepthInches:
+        null,
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        true
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant sound dormant tubers in spring after the soil can be worked. Select an adapted cultivar capable of completing tuber development within the local growing season.",
+
+        harvestWindow:
+          "Harvest after frost kills the tops and tubers have matured. Tubers may remain in the ground for winter storage where soil can be protected from deep freezing or dug during workable periods."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Plant dormant tubers during early to mid-spring in workable, reasonably drained soil. Choose the permanent location carefully because missed tubers can regrow for many years.",
+
+        harvestWindow:
+          "Begin harvest after the tops decline or are killed by frost. Dig as needed during late fall, winter thaws, and early spring while the soil remains workable."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Plant dormant tubers during late winter or early spring before vigorous top growth begins. Provide moisture during establishment and select a site where the colony can remain permanently.",
+
+        harvestWindow:
+          "Harvest from late fall through winter and into early spring. In-ground storage is especially useful where soil rarely freezes deeply."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant during the coolest suitable part of late winter or early spring. Good drainage becomes especially important in warm, humid soils.",
+
+        harvestWindow:
+          "Harvest promptly after maturity and top decline where warm wet soil creates greater risk of tuber deterioration. Long-term in-ground storage may be less dependable than in cooler climates."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant dormant tubers after severe frost risk declines and provide irrigation during establishment. Use mulch and adequate soil depth to moderate heat and moisture loss.",
+
+        harvestWindow:
+          "Harvest after top decline and tuber maturity. In dry areas, prevent harvested tubers from shriveling and protect unharvested tubers from extreme soil drying."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Plant dormant tubers in spring in a sunny, well-drained permanent location. Avoid poorly drained winter soil.",
+
+        harvestWindow:
+          "Harvest after autumn top decline and continue through the cool season while soil conditions permit. Wet winter soil may complicate digging and increase deterioration risk."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during late winter or early spring where soil drainage is suitable. Mild climates may support vigorous spread, making containment especially important.",
+
+        harvestWindow:
+          "Harvest after seasonal top decline. Where winters are mild and wet, dig portions of the crop as needed rather than assuming indefinite in-ground storage."
+      }
+    },
+
+    spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Best stored in the ground where climate, drainage, and soil workability permit. Harvested tubers generally store for a much shorter period than potatoes because their thin skin allows rapid moisture loss.",
+
+      storageMethod:
+        "Leave mature tubers in reasonably drained soil and dig them as needed where winter conditions permit. Apply mulch where useful to reduce freezing and maintain access. Harvested tubers should be kept cold, humid, dark, and protected from drying, freezing damage, mold, and rodents. Inspect frequently and use deteriorating tubers promptly or discard them.",
+
+      yieldNotes:
+        "Plants-per-area and backyard yield fields remain null because Jerusalem Artichoke forms expanding underground colonies rather than remaining as stable individually spaced plants. Published field yields vary widely by cultivar, stand age, climate, soil, fertility, moisture, planting density, harvest date, and whether yield is reported as fresh tubers, dry matter, or forage biomass. Commercial tonnage should not be converted into a guaranteed backyard yield per square foot. A permanent patch may become denser and spread beyond its original boundary as unharvested tubers and small tuber fragments regrow."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Usually moderate for the initial purchase of named planting tubers, with little or no recurring planting-material expense once a productive patch is established",
+
+      equipmentCostEstimate:
+        "Low to moderate. Common needs include soil preparation tools, mulch, irrigation during establishment, a digging fork, harvest containers, and physical containment where spread would create problems.",
+
+      irrigationCostLevel:
+        "Low to Moderate after establishment",
+
+      laborLevel:
+        "Moderate during establishment and harvest; low for routine annual replanting because the crop normally regrows from remaining tubers",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Jerusalem Artichoke may provide long-term value through recurring tuber production, rabbit forage, household food, pollinator support, seasonal screening, compost biomass, and in-ground storage. Its economic value may be reduced by digging labor, cleaning, containment, unwanted spread, low fresh-tuber nutrient concentration, and the inability to replace balanced poultry feed pound-for-pound. The crop may be most economical where permanent land is available and several homestead uses are valued simultaneously."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for perennial growth, tuber composition, livestock-feed use, field-scale forage and tuber production, poultry use of dried tuber ingredients, rabbit use, and harvested-tuber storage limitations; limited for fresh-tuber intake by backyard chickens, backyard yield per square foot, long-term flock feed savings, and safe home-formulated ration percentages",
+
+      sources: [
+        {
+          title:
+            "Jerusalem Artichoke (Helianthus tuberosus)",
+
+          organization:
+            "Feedipedia",
+
+          url:
+            "https://www.feedipedia.org/node/544",
+
+          use:
+            "Plant description, tuber and forage yields, harvest timing, tuber composition, forage maturity, poultry-feed studies, rabbit feeding, fresh-tuber moisture limitations, and storage concerns"
+        },
+
+        {
+          title:
+            "Jerusalem Artichoke Inspection Instructions",
+
+          organization:
+            "USDA Agricultural Marketing Service",
+
+          url:
+            "https://www.ams.usda.gov/grades-standards/jerusalem-artichoke-inspection-instructions",
+
+          use:
+            "Crop identification and the short storage life of harvested thin-skinned tubers"
+        },
+
+        {
+          title:
+            "Jerusalem Artichoke Maintains High Inulin, Tuber Yield, and Antioxidant Capacity under Moderately Saline Irrigation Waters",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=322357",
+
+          use:
+            "Tuber-production response to saline irrigation and evidence that increasing salinity reduced shoot growth more strongly than tuber yield under the studied conditions"
+        },
+
+        {
+          title:
+            "The Roles of Net Photosynthesis Rate and Transpiration Efficiency on Economic Yield of Jerusalem Artichoke Genotypes under Different Drought Durations",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=404535",
+
+          use:
+            "Genotype differences in drought response and confirmation that drought survival should not be treated as guaranteed yield retention"
+        },
+
+        {
+          title:
+            "Sugar Yield and Composition of Tubers from Jerusalem Artichoke Irrigated with Saline Waters",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=342811",
+
+          use:
+            "Tuber sugar concentration, inulin dominance, fresh- and dry-matter distinctions, and moderate salt-tolerance context"
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-17",
+
+      researchNotes: [
+        "Treat Jerusalem Artichoke as a perennial tuber and homestead-infrastructure crop rather than as a concentrated poultry-feed crop.",
+        "Keep fresh tubers separate from dried and ground tuber meal in all nutrition and feeding logic.",
+        "Do not assign an exact fresh-tuber feeding percentage for backyard chickens.",
+        "Do not convert controlled laying-hen or broiler inclusion studies into an unbalanced home ration.",
+        "Model tender foliage separately from mature woody stems.",
+        "Retain plants-per-area and backyard-yield fields as null until suitable small-plot evidence is found.",
+        "Do not promise indefinite harvested storage; the strongest storage role is in-ground storage where climate and drainage permit.",
+        "Model drought survival separately from tuber-yield retention.",
+        "Model permanent-patch suitability, aggressive spread, volunteer persistence, shading, and containment as major planner traits.",
+        "Distinguish cold hardiness of dormant tubers from frost sensitivity of active top growth.",
+        "The crop should be evaluated for fresh-tuber, dried-tuber, cut-foliage, rabbit-forage, pollinator, screening, compost-biomass, household-food, and permanent-production roles.",
+        "No medicinal claims are made."
+      ]
+    },
+    
+      plannerData: {
+      schemaVersion:
+        "1.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Jerusalem Artichoke",
+
+        shortLabel:
+          "Jerusalem Artichoke",
+
+        icon:
+          "🌻",
+
+        cropCategory:
+          "storage-vegetable",
+
+        primaryFeedCategory:
+          "multipurpose",
+
+        guideUrl:
+          "growing-jerusalem-artichokes-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "perennial",
+
+        isAnnual: false,
+        isBiennial: false,
+        isPerennial: true,
+        isTreeOrShrub: false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          1,
+
+        expectedUsefulLifeYears:
+          null,
+
+        regrowsAfterHarvest:
+          true,
+
+        permanentPlantingRequired:
+          true,
+
+        reversibleAfterOneSeason:
+          false
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "mild-winter"
+        ],
+
+        challengingClimateTypes: [
+          "extreme-heat-without-irrigation",
+          "waterlogged-winter-soil"
+        ],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          null,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          4,
+
+        droughtClimateToleranceScore:
+          4,
+
+        humidityToleranceScore:
+          3,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          2,
+
+        winterHardinessRequired:
+          true,
+
+        seasonExtensionBenefits: [
+          "Planting dormant tubers as soon as soil becomes workable can maximize the first growing season.",
+          "Mulch can keep winter soil workable longer and extend the in-ground harvest period.",
+          "Supplemental irrigation during establishment and prolonged summer drought can improve shoot growth and tuber production.",
+          "Locally adapted cultivars are more useful than temporary frost protection for dependable tuber maturity.",
+          "Harvesting tubers only as needed reduces the need for long-term indoor storage."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "herbaceous-perennial",
+
+          frostSensitive:
+            false,
+
+          commonlyDirectSeeded:
+            false,
+
+          winterDormancyPossible:
+            true,
+
+          heatDormancyPossible:
+            false,
+
+          longLivedPerennial:
+            true,
+
+          dormantTubersColdHardy:
+            true,
+
+          activeTopGrowthFrostSensitive:
+            true,
+
+          droughtRecoveryPotential:
+            true,
+
+          notes: [
+            "Jerusalem Artichoke is an herbaceous perennial that regrows from underground tubers.",
+            "Hard frost normally kills exposed top growth without necessarily killing dormant tubers.",
+            "Established colonies tolerate cold winters across a broad geographic range.",
+            "The crop tolerates summer heat but may produce less biomass and fewer or smaller tubers during prolonged drought.",
+            "Drought survival should not be interpreted as full yield retention.",
+            "Warm humid climates may increase leaf-disease and tuber-deterioration concerns.",
+            "Poorly drained winter soil is a more serious limitation than ordinary cold.",
+            "The planner does not assign annual days to maturity because cultivar, latitude, day length, frost timing, and harvest purpose strongly affect tuber development."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          4,
+
+        productiveMinimumSunHours:
+          6,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          3,
+
+        afternoonShadeBenefitInHeat:
+          2,
+
+        windToleranceScore:
+          3,
+
+        lodgingRiskScore:
+          3,
+
+        reflectedHeatToleranceScore:
+          4,
+
+        airflowRequirementScore:
+          3,
+
+        frostPocketSensitivityScore:
+          1,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          4,
+
+        structureConflictRiskScore:
+          4,
+
+        utilityConflictRiskScore:
+          4,
+
+        fruitDropMessRiskScore:
+          1,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight, with 8 or more hours preferred for strong stems, flowering, biomass production, and dependable tuber development.",
+
+          windExposureConcern:
+            true,
+
+          growthHabit:
+            "tall-colony-forming-herbaceous-perennial",
+
+          matureHeightFtMinimum:
+            6,
+
+          matureHeightFtMaximum:
+            10,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            true,
+
+          undergroundSpreadConcern:
+            true,
+
+          notes: [
+            "Full sun provides the strongest tuber and biomass production.",
+            "Partial sun may support survival and moderate growth but usually reduces productivity.",
+            "Tall stems may lean or lodge during storms, especially in exposed or highly fertile locations.",
+            "The crop can provide a dense seasonal screen along a suitable fence line.",
+            "The screen disappears after frost kills the tops.",
+            "Underground tubers can spread beyond the intended planting area.",
+            "Do not place the crop beside foundations, utilities, narrow paths, neighboring property lines, or beds where permanent spread would create conflict.",
+            "A dedicated permanent patch is generally more appropriate than a frequently redesigned annual garden bed."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            5,
+
+          verySandy:
+            4,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          2,
+
+        waterloggingSensitivityScore:
+          5,
+
+        minimumSoilDepthIn:
+          12,
+
+        preferredSoilDepthIn:
+          24,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          4,
+
+        preferredPHMinimum:
+          null,
+
+        preferredPHMaximum:
+          null,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          3,
+
+        nitrogenRequirementScore:
+          3,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          4,
+
+        benefitsFromInoculation:
+          false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          3,
+
+        amendmentEffortScore:
+          3,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "loam",
+            "sandy loam",
+            "friable clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          tuberForming:
+            true,
+
+          waterloggedSoilSuitable:
+            false,
+
+          notes: [
+            "Jerusalem Artichoke tolerates a broad range of soils but produces and harvests most easily in loose, reasonably deep, well-drained soil.",
+            "Loam and sandy loam are strong fits for tuber expansion and digging.",
+            "Clay loam may remain productive when structure and drainage are adequate.",
+            "Dense heavy clay can restrict tuber development and make complete harvest difficult.",
+            "Rocky soil increases digging labor and tuber damage.",
+            "Poorly drained soil increases deterioration and disease risk.",
+            "The crop does not fix atmospheric nitrogen.",
+            "Excessive fertility may produce very tall top growth without proportionally improving usable tuber yield.",
+            "Soil testing is preferable to guessing at fertilizer needs."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "not-applicable",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "low-moderate",
+
+        floweringWaterNeedLevel:
+          "moderate",
+
+        harvestDevelopmentWaterNeedLevel:
+          "moderate-high",
+
+        droughtSurvivalScore:
+          5,
+
+        droughtYieldRetentionScore:
+          3,
+
+        criticalGrowthStages: [
+          "spring-emergence",
+          "early-establishment",
+          "rapid-vegetative-growth",
+          "flowering",
+          "tuber-initiation",
+          "tuber-bulking"
+        ],
+
+        criticalStageWaterImportanceScore:
+          4,
+
+        overwateringSensitivityScore:
+          4,
+
+        waterloggingSensitivityScore:
+          5,
+
+        dripIrrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          5,
+
+        suitableForRainfallOnlyScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          4,
+
+        containerDryingRiskScore:
+          5,
+
+        establishmentYearsRequiringExtraWater:
+          1,
+
+        directFacts: {
+          establishmentMoistureImportant:
+            true,
+
+          droughtPauseAndRecoveryPossible:
+            true,
+
+          tuberBulkingMoistureImportant:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          irrigationCanProtectYield:
+            true,
+
+          notes: [
+            "Consistent moisture supports stronger top growth and tuber production.",
+            "Established colonies can survive temporary drought better than many annual vegetables.",
+            "Prolonged drought may reduce stem height, foliage production, tuber number, and tuber size.",
+            "Supplemental irrigation is most valuable during establishment and tuber development.",
+            "Mulch can conserve moisture, suppress weeds, and keep winter soil workable longer.",
+            "Standing water and chronically saturated soil are unsuitable.",
+            "Survival after drought does not guarantee a commercially useful or planner-predicted yield."
+          ]
+        }
+      },
+      
+            space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          1,
+
+        mediumSpaceScore:
+          4,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            3,
+
+          wideRectangle:
+            4,
+
+          longStrip:
+            5,
+
+          irregular:
+            4,
+
+          smallBeds:
+            1,
+
+          openField:
+            5
+        },
+
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            2,
+
+          container:
+            1,
+
+          fenceLine:
+            5,
+
+          buildingEdge:
+            1,
+
+          unusedLawn:
+            5,
+
+          openField:
+            5,
+
+          orchard:
+            2,
+
+          forageFrame:
+            1,
+
+          rotationalPaddock:
+            2,
+
+          greenhouse:
+            1,
+
+          hedgerow:
+            5
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Jerusalem Artichoke can survive in very large containers, but restricted root volume, rapid drying, reduced tuber production, difficult harvest, and eventual crowding make containers inefficient for meaningful flock-feed or household-food production. Containers should not be relied upon as a guaranteed containment system because drainage openings, escaped tubers, and discarded soil may spread the crop.",
+
+        minimumRaisedBedDepthIn:
+          18,
+
+        vineSpreadRequired:
+          false,
+
+        verticalSupportBenefitScore:
+          2,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          true,
+
+        heightCategory:
+          "very-tall",
+
+        matureWidthCategory:
+          "expanding-perennial-colony",
+
+        overflowSpaceBenefitScore:
+          5,
+
+        directFacts: {
+          denseStandSuitable:
+            true,
+
+          compactBlockRequired:
+            false,
+
+          rowPlantingSuitable:
+            true,
+
+          permanentPatchPreferred:
+            true,
+
+          fenceLineSuitable:
+            true,
+
+          seasonalScreeningSuitable:
+            true,
+
+          containerFeedProductionEfficient:
+            false,
+
+          raisedBedFeedProductionEfficient:
+            false,
+
+          undergroundSpreadExpected:
+            true,
+
+          completeHarvestDifficult:
+            true,
+
+          notes: [
+            "Jerusalem Artichoke is best assigned to a permanent in-ground patch where future spread will not interfere with annual crop rotation.",
+            "Long strips, fence lines, hedgerows, field edges, and unused open ground are stronger fits than small garden beds.",
+            "The crop does not require block planting for pollination or tuber formation.",
+            "A continuous stand can provide seasonal screening, biomass, flowers, and recurring tuber production.",
+            "The crop may spread beyond its original planting area through unharvested tubers and small tuber fragments.",
+            "Even careful digging may leave enough tuber material for future regrowth.",
+            "Planting beside foundations, buried utilities, narrow paths, neighboring property lines, or frequently redesigned beds creates long-term conflict risk.",
+            "Tall growth may shade shorter crops during summer.",
+            "Raised beds may make harvesting easier initially but do not eliminate persistence or spread concerns.",
+            "Containers are a weak production choice and should not be treated as perfectly secure containment.",
+            "Minimum useful and preferred production areas remain null because dependable backyard tuber yield per square foot has not been established.",
+            "Space scoring should reward permanent land availability and strongly penalize temporary, rental, container-only, or annual-rotation situations."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            4,
+
+          meat:
+            3,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            4,
+
+          homestead:
+            5,
+
+          mixed:
+            5
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            2,
+
+          cutAndCarry:
+            4,
+
+          wholeProduce:
+            5,
+
+          wholeSeedHeads:
+            2,
+
+          wholeGrain:
+            1,
+
+          processedGrain:
+            3,
+
+          heatTreated:
+            2,
+
+          driedForage:
+            3,
+
+          winterStorage:
+            5
+        },
+
+        directRunSuitabilityScore:
+          2,
+
+        forageFrameSuitabilityScore:
+          2,
+
+        rotationalPaddockSuitabilityScore:
+          2,
+
+        confinedFlockValueScore:
+          4,
+
+        pasturedFlockValueScore:
+          3,
+
+        treatDilutionRiskScore:
+          4,
+
+        highEnergySupplement:
+          false,
+
+        highFiberSupplement:
+          false,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Fresh sound tubers offered as supplemental produce",
+          "Split or chopped tubers for easier flock access",
+          "Controlled postharvest pecking and digging enrichment",
+          "Tender young foliage offered through cut-and-carry feeding",
+          "Dried ground tuber material as a documented formulated-feed ingredient",
+          "In-ground fall and winter supplemental-feed storage",
+          "Long-term multipurpose production for mixed homesteads"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Primary protein supplementation",
+          "Primary calcium supplementation",
+          "Primary young-chick feed",
+          "Unrestricted access to large quantities of fresh tubers",
+          "Feeding coarse mature stems as quality forage",
+          "Feeding moldy, rotten, fermented, frozen-and-deteriorated, or contaminated tubers",
+          "Adding dried tuber meal to a home ration at an assumed research-study percentage",
+          "Allowing chickens continuous access to an actively growing production patch"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Fresh sound tubers",
+            "Split or chopped fresh tubers",
+            "Properly dried and ground tuber material",
+            "Tender young leaves and shoots",
+            "Clean cut foliage"
+          ],
+
+          preferredBirdStage:
+            "Adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "variable",
+
+          directAccessTiming:
+            "Protect the growing patch during establishment and active production. Controlled flock access is most appropriate after top growth has declined, during partial harvest, or when exposing selected tubers for enrichment.",
+
+          nutritionalOrientation: [
+            "supplemental-produce",
+            "fermentable-carbohydrate",
+            "fresh-tubers",
+            "tender-greens",
+            "winter-storage",
+            "enrichment",
+            "perennial-resilience"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          driedTuberFeedIngredientDocumented:
+            true,
+
+          freshAndDriedTubersNutritionallyDifferent:
+            true,
+
+          gradualIntroductionRecommended:
+            true,
+
+          rabbitFeedValue:
+            true,
+
+          notes: [
+            "Fresh Jerusalem Artichoke tubers are moist supplemental produce rather than a concentrated complete poultry feed.",
+            "The principal storage carbohydrate is inulin and related fructans rather than starch.",
+            "Fresh tubers should be introduced gradually while flock acceptance and manure condition are observed.",
+            "Small sound tubers may be pecked whole by adult chickens, while larger tubers may be split, chopped, or crushed.",
+            "Dried ground tubers have documented use in formulated poultry diets, but controlled research inclusion levels should not be copied directly into an unbalanced backyard ration.",
+            "Tender young foliage may provide seasonal greens, but mature stems and leaves become coarse and less palatable.",
+            "Repeated heavy foliage harvest can reduce the plant's ability to produce tubers.",
+            "The crop has stronger documented mixed-homestead value when rabbits and household food uses are considered alongside poultry use.",
+            "Chickens may damage emerging shoots and disturb developing tubers if allowed unrestricted access to the growing patch.",
+            "Fresh tubers and foliage should supplement an age-appropriate complete poultry ration.",
+            "Young chicks should continue receiving a complete age-appropriate starter ration."
+          ]
+        }
+      },
+
+            labor: {
+        beginnerFriendlinessScore:
+          4,
+
+        plantingEaseScore:
+          5,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          5,
+
+        weedControlEaseScore:
+          4,
+
+        wildlifeProtectionEaseScore:
+          4,
+
+        harvestEaseScore:
+          2,
+
+        grainProcessingEaseScore:
+          1,
+
+        dryingEaseScore:
+          2,
+
+        storageMonitoringEaseScore:
+          4,
+
+        physicalAccessibilityScore:
+          2,
+
+        heavyLiftingRiskScore:
+          4,
+
+        weeklyLaborLevel:
+          "low",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "flexible-seasonal",
+
+        requiredPlantingTasks: [
+          "select-permanent-site",
+          "prepare-planting-area",
+          "plant-tubers"
+        ],
+
+        optionalPlantingTasks: [
+          "install-containment",
+          "install-irrigation",
+          "apply-compost",
+          "apply-mulch",
+          "install-row-markers"
+        ],
+
+        requiredMaintenanceTasks: [
+          "monitor-water",
+          "monitor-spread",
+          "monitor-plant-health"
+        ],
+
+        optionalMaintenanceTasks: [
+          "weed",
+          "mulch",
+          "irrigate-during-drought",
+          "stake-lodged-stems",
+          "remove-unwanted-shoots",
+          "cut-foliage",
+          "refresh-soil-fertility"
+        ],
+
+        requiredHarvestTasks: [
+          "dig-tubers",
+          "separate-sound-tubers",
+          "remove-excess-soil"
+        ],
+
+        usePathProcessingTasks: {
+          freshCutFoliage: [
+            "cut-tender-foliage",
+            "inspect",
+            "offer-fresh"
+          ],
+
+          managedLivingFoliage: [
+            "protect-establishing-patch",
+            "limit-flock-access",
+            "monitor-plant-damage"
+          ],
+
+          freshDugTubers: [
+            "dig-tubers",
+            "separate-sound-tubers",
+            "wash-or-brush",
+            "split-or-chop-if-needed"
+          ],
+
+          driedGroundTubers: [
+            "dig-tubers",
+            "separate-sound-tubers",
+            "wash",
+            "slice",
+            "dry",
+            "inspect-moisture",
+            "grind"
+          ],
+
+          inGroundWinterStorage: [
+            "mark-harvest-area",
+            "apply-mulch-if-needed",
+            "dig-as-needed",
+            "inspect-tubers"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "inspect-rot",
+          "inspect-mold",
+          "inspect-freezing-damage",
+          "inspect-rodent-damage",
+          "prevent-moisture-loss-after-harvest"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "digging-fork",
+          "garden-spade",
+          "harvest-basket",
+          "wheelbarrow",
+          "heavy-mulch",
+          "drip-irrigation",
+          "containment-barrier",
+          "pruning-shears",
+          "drying-rack",
+          "food-dehydrator",
+          "food-processor",
+          "feed-grinder",
+          "cold-humid-storage-container"
+        ],
+
+        suitableForLowTimeUsersScore:
+          5,
+
+        suitableForSoloGrowersScore:
+          4,
+
+        directFacts: {
+          plantingMaterial:
+            "tubers",
+
+          directSeedingSuitable:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          recurringAnnualReplantingRequired:
+            false,
+
+          containmentLaborRequired:
+            true,
+
+          diggingRequired:
+            true,
+
+          majorLaborBottlenecks: [
+            "Selecting a permanent site before planting",
+            "Containing underground spread",
+            "Digging tubers from compacted, rocky, frozen, or wet soil",
+            "Finding small tubers and fragments during harvest",
+            "Separating sound tubers from damaged or deteriorated tubers",
+            "Cleaning soil from harvested tubers",
+            "Processing tubers if dried meal is desired",
+            "Removing an unwanted established colony"
+          ],
+
+          notes: [
+            "Planting whole or cut sound tubers is generally simple.",
+            "Routine annual maintenance is low after the patch becomes established.",
+            "The crop normally regrows without annual replanting.",
+            "Containment and site selection are more important than ordinary crop maintenance.",
+            "Harvest labor can be substantial because tubers must be dug from the soil.",
+            "Harvest is easier in loose loam or sandy loam than in heavy clay, rocky soil, saturated soil, or frozen ground.",
+            "A digging fork may reduce tuber damage compared with aggressive chopping by a sharp spade.",
+            "Small tubers and fragments are easily missed and commonly produce future plants.",
+            "In-ground storage spreads harvest labor across several months instead of concentrating all digging into one day.",
+            "Leaving tubers in the ground reduces indoor storage work but does not eliminate winter digging labor.",
+            "Fresh-tuber use requires much less processing than dried ground tuber use.",
+            "Drying and grinding tubers create a separate high-labor use path that should not be treated as the default backyard method.",
+            "Repeated heavy foliage cutting may reduce tuber production.",
+            "Older growers or users with limited mobility, grip strength, or back strength may find digging difficult.",
+            "The crop is a strong fit for users with little weekly gardening time who can manage occasional concentrated harvest work."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "moderate",
+
+        soilPreparationCostLevel:
+          "moderate",
+
+        irrigationCostLevel:
+          "low",
+
+        protectionCostLevel:
+          "low-moderate",
+
+        processingEquipmentCostLevel:
+          "low-moderate",
+
+        storageCostLevel:
+          "low",
+
+        annualRecurringCostLevel:
+          "very-low",
+
+        longTermValueScore:
+          5,
+
+        lowestCostUsePath:
+          "in-ground-winter-storage",
+
+        highestCostUsePath:
+          "dried-ground-tubers",
+
+        likelyCostDrivers: [
+          "Initial purchase of planting tubers",
+          "Preparing compacted or poorly drained soil",
+          "Permanent underground containment",
+          "Mulch",
+          "Irrigation during establishment or drought",
+          "A digging fork or garden spade",
+          "Harvest baskets or containers",
+          "Labor required for digging and cleaning",
+          "Cold humid storage for harvested tubers",
+          "Slicing, drying, and grinding equipment for dried tuber meal",
+          "Labor or equipment needed to remove unwanted spread"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small permanent patch before expanding.",
+          "Plant in naturally loose, well-drained soil to reduce amendment and digging costs.",
+          "Use an existing fence line or unused open area where spread will not create conflict.",
+          "Retain sound tubers from the existing patch as future planting material.",
+          "Rely on in-ground storage where climate and drainage make it practical.",
+          "Dig only the quantity needed instead of harvesting the entire crop at once.",
+          "Use fresh tubers rather than drying and grinding them.",
+          "Use existing mulch, compost, irrigation, and digging tools.",
+          "Share or trade surplus planting tubers where legally and practically appropriate.",
+          "Avoid planting in locations where later removal would require repeated excavation."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          annualSeedPurchaseRequired:
+            false,
+
+          annualReplantingRequired:
+            false,
+
+          plantingMaterialCanBeRetained:
+            true,
+
+          inGroundStorageCanReduceStorageCost:
+            true,
+
+          containmentMayCreateUpfrontCost:
+            true,
+
+          removalMayCreateFutureCost:
+            true,
+
+          notes: [
+            "The initial planting material may cost more than a packet of annual seed.",
+            "A productive patch can supply its own future planting tubers.",
+            "Annual seed and replanting expenses are normally unnecessary after establishment.",
+            "Routine fertilizer and irrigation costs may remain low on a suitable site.",
+            "In-ground storage can reduce the need for bins, refrigeration, drying equipment, and dedicated storage rooms.",
+            "Harvested tubers lose moisture readily and may require cold, humid storage when they are not used promptly.",
+            "Fresh-tuber feeding is less expensive than producing dried ground tuber meal.",
+            "Drying and grinding equipment are optional and should be justified by the intended use.",
+            "Containment can be inexpensive where the crop occupies isolated ground but costly where a physical barrier is needed.",
+            "Poor site selection may create long-term removal, neighbor-conflict, or landscape-restoration costs.",
+            "The crop's strongest economic case comes from combining several uses, including household food, poultry supplementation, rabbit feed, pollinator support, screening, compost biomass, and recurring planting material.",
+            "Cost classifications are qualitative and should not be interpreted as current retail-price estimates."
+          ]
+        }
+      },
+
+            goals: {
+        feedReductionScore:
+          3,
+
+        energyProductionScore:
+          3,
+
+        proteinOrientedScore:
+          1,
+
+        freshGreensScore:
+          4,
+
+        livingForageScore:
+          2,
+
+        winterStorageScore:
+          5,
+
+        enrichmentScore:
+          4,
+
+        resilienceScore:
+          5,
+
+        soilImprovementScore:
+          2,
+
+        nitrogenFixationScore:
+          0,
+
+        groundCoverScore:
+          4,
+
+        erosionControlScore:
+          4,
+
+        shadeScore:
+          2,
+
+        privacyScreeningScore:
+          5,
+
+        pollinatorSupportScore:
+          5,
+
+        compostBiomassScore:
+          5,
+
+        householdFoodScore:
+          5,
+
+        seedSavingScore:
+          1,
+
+        selfRelianceScore:
+          5,
+
+        multipurposeValueScore:
+          5,
+
+        visualAppealScore:
+          4,
+
+        productionReliabilityScore:
+          5,
+
+        fastestValueScore:
+          2,
+
+        nonElectricStorageScore:
+          5,
+
+        smallFlockValueScore:
+          5,
+
+        largeFlockValueScore:
+          3,
+
+        primaryGoalMatches: [
+          "winter-storage",
+          "fresh-greens",
+          "resilience-feed",
+          "household-food",
+          "self-reliance",
+          "non-electric-storage",
+          "pollinators",
+          "privacy-screening",
+          "compost-biomass",
+          "edible-landscape",
+          "use-unused-space"
+        ],
+
+        weakGoalMatches: [
+          "protein-oriented",
+          "high-energy",
+          "living-forage",
+          "nitrogen-fixation",
+          "seed-saving",
+          "container-production",
+          "small-space-production",
+          "fast-first-harvest",
+          "annual-crop-rotation",
+          "low-containment-risk"
+        ],
+
+        directFacts: {
+          nitrogenFixingLegume:
+            false,
+
+          perennialInfrastructureCrop:
+            true,
+
+          permanentProductionPatch:
+            true,
+
+          freshTuberSupplementPotential:
+            true,
+
+          driedTuberFeedIngredientDocumented:
+            true,
+
+          freshCutFoliagePotential:
+            true,
+
+          rabbitForagePotential:
+            true,
+
+          householdFoodPotential:
+            true,
+
+          inGroundWinterStoragePotential:
+            true,
+
+          pollinatorSupportPotential:
+            true,
+
+          seasonalPrivacyScreenPotential:
+            true,
+
+          compostBiomassPotential:
+            true,
+
+          nonElectricStoragePotential:
+            true,
+
+          annualSeedSavingRelevant:
+            false,
+
+          notes: [
+            "Jerusalem Artichoke is strongest as a long-term resilience and multipurpose homestead crop rather than as a concentrated poultry-feed crop.",
+            "Fresh tubers provide supplemental produce, fermentable carbohydrates, and flock enrichment.",
+            "Fresh tubers do not replace a balanced complete poultry ration.",
+            "Dried ground tubers have documented use as a formulated poultry-feed ingredient, but controlled research inclusion levels should not be copied directly into a backyard ration.",
+            "Tender foliage can provide seasonal cut-and-carry greens, while mature stems become coarse and less useful as forage.",
+            "The crop has particularly strong value in mixed homesteads where chickens, rabbits, household food, pollinators, screening, and compost biomass are all considered.",
+            "Tubers can remain in the ground and be harvested as needed where soil drainage, freezing, and winter access permit.",
+            "In-ground storage provides strong non-electric storage value but does not guarantee that every climate or soil can support uninterrupted winter digging.",
+            "Tall summer growth can provide a dense seasonal privacy screen.",
+            "The screen disappears when frost kills the top growth.",
+            "Late-season flowers can support pollinators when some other floral resources are declining.",
+            "Large quantities of stems and leaves may contribute compost biomass.",
+            "Jerusalem Artichoke does not fix nitrogen.",
+            "It is not an efficient protein crop.",
+            "It is not an ideal crop for containers, tiny gardens, temporary properties, or annual crop rotations.",
+            "Its production reliability comes partly from underground tubers that survive and regrow, but that same persistence creates a major containment concern.",
+            "The strongest planner fit is a permanent patch on land where long-term spread is acceptable.",
+            "The crop may provide useful value during the first growing season, but its greatest benefit develops as a recurring permanent production system."
+          ]
+        }
+      },
+
+            risks: {
+        overallRiskLevel:
+          "high-management",
+
+        invasivenessRiskScore:
+          5,
+
+        volunteerRegrowthRiskScore:
+          5,
+
+        difficultRemovalRiskScore:
+          5,
+
+        neighboringPropertySpreadRiskScore:
+          4,
+
+        annualCropRotationConflictScore:
+          5,
+
+        raisedBedEscapeRiskScore:
+          4,
+
+        containerEscapeRiskScore:
+          3,
+
+        selfSeedingRiskScore:
+          1,
+
+        lodgingRiskScore:
+          3,
+
+        shadingOtherCropsRiskScore:
+          4,
+
+        wildlifeDamageRiskScore:
+          2,
+
+        rodentDamageRiskScore:
+          3,
+
+        deerDamageRiskScore:
+          2,
+
+        poultryDamageRiskScore:
+          4,
+
+        diseasePressureScore:
+          2,
+
+        insectPressureScore:
+          2,
+
+        droughtFailureRiskScore:
+          1,
+
+        droughtYieldLossRiskScore:
+          3,
+
+        floodFailureRiskScore:
+          4,
+
+        waterloggingFailureRiskScore:
+          5,
+
+        frostTopDamageRiskScore:
+          5,
+
+        winterTuberLossRiskScore:
+          1,
+
+        harvestedStorageLossRiskScore:
+          4,
+
+        moldOrRotRiskScore:
+          4,
+
+        harvestDamageRiskScore:
+          4,
+
+        missedTuberRegrowthRiskScore:
+          5,
+
+        accidentalSpreadThroughSoilRiskScore:
+          5,
+
+        overfeedingRiskScore:
+          3,
+
+        rationImbalanceRiskScore:
+          5,
+
+        youngBirdFeedingRiskScore:
+          4,
+
+        digestiveUpsetRiskScore:
+          3,
+
+        processingErrorRiskScore:
+          3,
+
+        toxicPlantConfusionRiskScore:
+          1,
+
+        permanentSiteCommitmentRiskScore:
+          5,
+
+        landlordOrRentalPropertyConflictScore:
+          5,
+
+        futureLandscapeConflictScore:
+          5,
+
+        utilityConflictRiskScore:
+          4,
+
+        foundationConflictRiskScore:
+          3,
+
+        majorRisks: [
+          "Persistent regrowth from missed tubers and tuber fragments",
+          "Underground spread beyond the intended production patch",
+          "Difficulty removing an established colony",
+          "Conflict with annual crop rotation",
+          "Spread into neighboring beds, paths, lawns, or property",
+          "Poor performance and tuber deterioration in waterlogged soil",
+          "Reduced tuber yield during prolonged drought",
+          "Tall stems shading shorter crops",
+          "Storm lodging in exposed locations",
+          "Rapid moisture loss from harvested tubers",
+          "Rot, mold, or deterioration during improper storage",
+          "Tuber damage during digging",
+          "Digestive upset when large quantities are introduced suddenly",
+          "Ration imbalance when fresh or dried tubers displace too much complete feed",
+          "Damage to the growing patch from unrestricted poultry access"
+        ],
+
+        mitigationStrategies: [
+          "Select a permanent site before planting.",
+          "Do not plant where future crop rotation will be necessary.",
+          "Maintain a generous buffer from neighboring property lines, foundations, utilities, paths, and valued garden beds.",
+          "Use a dedicated isolated patch where underground spread is acceptable.",
+          "Install a suitable root barrier where containment is essential, while recognizing that no backyard containment method should be treated as failure-proof.",
+          "Inspect the perimeter regularly and remove unwanted shoots promptly.",
+          "Do not move soil containing tubers or tuber fragments into other garden areas.",
+          "Do not discard unwanted tubers in ordinary compost unless the composting method reliably destroys their ability to regrow.",
+          "Harvest carefully and recognize that complete tuber removal is unlikely.",
+          "Avoid planting in heavy, compacted, rocky, or poorly drained soil when easier harvest and containment are priorities.",
+          "Use mulch and supplemental irrigation during prolonged drought when dependable tuber yield is important.",
+          "Provide airflow and avoid chronically wet foliage where leaf disease becomes a recurring problem.",
+          "Plant where mature stems will not shade lower-growing crops.",
+          "Stake, support, or cut back lodged stems when necessary.",
+          "Protect young growth from unrestricted chicken access.",
+          "Offer fresh tubers gradually and in supplemental quantities.",
+          "Continue providing an age-appropriate complete poultry ration.",
+          "Do not assume research inclusion rates for dried tuber meal are safe in an unformulated home ration.",
+          "Use harvested tubers promptly or store them under cold, humid conditions.",
+          "Discard moldy, rotten, badly damaged, contaminated, or deteriorated tubers.",
+          "Leave tubers in the ground for storage where drainage, soil access, and winter conditions make that practical."
+        ],
+
+        unsuitableSituations: [
+          "Rental properties without explicit planting permission",
+          "Temporary gardens",
+          "Frequently redesigned landscapes",
+          "Small container-only gardens",
+          "Narrow raised beds beside permanent structures",
+          "Annual vegetable beds requiring regular crop rotation",
+          "Sites beside neighboring property lines",
+          "Sites above or beside buried utilities",
+          "Chronically saturated soil",
+          "Flood-prone planting areas",
+          "Locations where winter soil remains inaccessible when tubers are needed",
+          "Users unwilling or unable to dig tubers",
+          "Users seeking a complete poultry-feed replacement",
+          "Users seeking a high-protein crop",
+          "Users requiring predictable yield per square foot",
+          "Situations where zero volunteer regrowth is required"
+        ],
+
+        directFacts: {
+          undergroundPersistenceExpected:
+            true,
+
+          completeRemovalDifficult:
+            true,
+
+          smallTuberFragmentsCanRegrow:
+            true,
+
+          spreadThroughMovedSoilPossible:
+            true,
+
+          seedSpreadPrimaryConcern:
+            false,
+
+          permanentSiteSelectionImportant:
+            true,
+
+          waterloggingMajorLimitation:
+            true,
+
+          droughtUsuallyKillsEstablishedPatch:
+            false,
+
+          droughtCanReduceYield:
+            true,
+
+          topGrowthKilledByHardFrost:
+            true,
+
+          dormantTubersUsuallySurviveWinter:
+            true,
+
+          harvestedTubersStorePoorlyComparedWithPotatoes:
+            true,
+
+          unrestrictedPoultryAccessRecommended:
+            false,
+
+          completeFeedReplacementSuitable:
+            false,
+
+          homeRationInclusionRateEstablished:
+            false,
+
+          notes: [
+            "The greatest Jerusalem Artichoke risk is not crop failure but successful establishment in the wrong location.",
+            "Underground tubers and small tuber fragments can remain after harvest and produce future plants.",
+            "Repeated digging may reduce a colony but may not eliminate it quickly.",
+            "Soil, compost, equipment, and discarded tubers can move viable planting material into new areas.",
+            "Seed production is not the primary backyard spread concern; underground tubers are the dominant management issue.",
+            "A permanent isolated patch is safer than a temporary annual garden bed.",
+            "Physical barriers may reduce spread but require inspection and should not be considered perfectly reliable.",
+            "The crop can shade nearby vegetables because mature stems may become very tall.",
+            "Tall stems may lodge during wind, storms, or heavy rain.",
+            "Established plants commonly survive drought, but tuber yield may decline.",
+            "Chronically saturated soil can cause more serious losses than ordinary drought.",
+            "Hard frost normally kills exposed foliage while dormant underground tubers remain alive.",
+            "Freshly harvested tubers have thin skins and lose moisture more rapidly than potatoes.",
+            "Damaged tubers deteriorate more quickly during storage.",
+            "In-ground storage is valuable only where the soil remains well drained and practically accessible.",
+            "Fresh tubers should be introduced gradually because large sudden amounts may alter manure consistency or digestive comfort.",
+            "Neither fresh tubers nor home-produced dried tuber meal should displace excessive amounts of complete poultry feed.",
+            "Young chicks should not be expected to balance a diet containing substantial supplemental tuber material.",
+            "The crop should receive a strong planner penalty when the user needs easy removal, strict containment, annual rotation, or temporary land use."
+          ]
+        }
+      },
+
+            seasonalRoles: {
+        spring: {
+          primaryRoles: [
+            "Emerges from overwintered tubers",
+            "Rapid vegetative establishment",
+            "Develops strong root and stem growth",
+            "Permanent patch reactivation"
+          ],
+
+          plannerScores: {
+            feedValue: 1,
+            laborDemand: 2,
+            visualValue: 2,
+            pollinatorValue: 1,
+            resilienceContribution: 5
+          },
+
+          notes: [
+            "Spring is devoted primarily to establishment and vegetative growth.",
+            "Protect emerging shoots from heavy chicken browsing.",
+            "Consistent moisture during establishment improves later tuber production."
+          ]
+        },
+
+        summer: {
+          primaryRoles: [
+            "Produces heavy biomass",
+            "Provides seasonal privacy screening",
+            "Supports pollinating insects",
+            "Stores energy for tuber production"
+          ],
+
+          plannerScores: {
+            feedValue: 2,
+            laborDemand: 1,
+            visualValue: 5,
+            pollinatorValue: 5,
+            resilienceContribution: 5
+          },
+
+          notes: [
+            "Tall growth can serve as an attractive living screen.",
+            "Late summer flowers become valuable pollinator resources.",
+            "Avoid excessive foliage removal if tuber production is desired."
+          ]
+        },
+
+        autumn: {
+          primaryRoles: [
+            "Peak tuber production",
+            "Fresh supplemental chicken feed",
+            "Household harvest",
+            "Rabbit feed",
+            "Compost biomass"
+          ],
+
+          plannerScores: {
+            feedValue: 5,
+            laborDemand: 5,
+            visualValue: 3,
+            pollinatorValue: 2,
+            resilienceContribution: 5
+          },
+
+          notes: [
+            "Most harvest occurs after frost kills top growth.",
+            "Dig only what is needed when practical.",
+            "Leaving part of the crop in the ground maintains future production."
+          ]
+        },
+
+        winter: {
+          primaryRoles: [
+            "In-ground food storage",
+            "Emergency household food",
+            "Emergency supplemental poultry feed",
+            "Maintains perennial production system"
+          ],
+
+          plannerScores: {
+            feedValue: 5,
+            laborDemand: 2,
+            visualValue: 1,
+            pollinatorValue: 1,
+            resilienceContribution: 5
+          },
+
+          notes: [
+            "Dormant tubers remain alive underground.",
+            "Well-drained soil allows harvest throughout much of winter.",
+            "Indoor storage requirements can often be minimized by harvesting as needed."
+          ]
+        },
+
+        yearRoundSummary: {
+          strongestSeason:
+            "autumn",
+
+          weakestSeason:
+            "spring",
+
+          permanentInfrastructureCrop:
+            true,
+
+          yearRoundValue:
+            5,
+
+          notes: [
+            "Jerusalem Artichoke provides value during every season, but in different ways.",
+            "Its greatest contribution is long-term resilience rather than continuous feed production.",
+            "Few crops combine pollinator support, screening, compost biomass, household food, rabbit forage, poultry supplementation, and perennial persistence this effectively."
+          ]
+        }
+      },
+
+            usePaths: {
+        freshTubers: {
+          enabled: true,
+
+          plannerPriority:
+            5,
+
+          laborScore:
+            2,
+
+          storageScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          householdValueScore:
+            5,
+
+          notes: [
+            "The primary backyard use for Jerusalem Artichoke.",
+            "Tubers may be harvested as needed from the ground.",
+            "Excellent for household food and supplemental poultry feeding.",
+            "Requires minimal processing."
+          ]
+        },
+
+        driedGroundTubers: {
+          enabled: true,
+
+          plannerPriority:
+            3,
+
+          laborScore:
+            5,
+
+          storageScore:
+            4,
+
+          flockValueScore:
+            4,
+
+          householdValueScore:
+            2,
+
+          notes: [
+            "Supported by poultry nutrition research.",
+            "Requires washing, slicing, drying, and grinding.",
+            "Considerably more labor intensive than feeding fresh tubers.",
+            "Should remain a supplemental feed ingredient rather than a complete ration."
+          ]
+        },
+
+        cutAndCarryGreens: {
+          enabled: true,
+
+          plannerPriority:
+            3,
+
+          laborScore:
+            2,
+
+          storageScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          householdValueScore:
+            1,
+
+          notes: [
+            "Tender young foliage may be offered fresh.",
+            "Heavy repeated cutting may reduce tuber production.",
+            "Mature stems become coarse and less desirable."
+          ]
+        },
+
+        rabbitFeed: {
+          enabled: true,
+
+          plannerPriority:
+            5,
+
+          laborScore:
+            2,
+
+          storageScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          householdValueScore:
+            2,
+
+          notes: [
+            "One of the strongest rabbit feed crops in the database.",
+            "Both foliage and tubers have documented value.",
+            "Significantly increases overall homestead usefulness."
+          ]
+        },
+
+        householdFood: {
+          enabled: true,
+
+          plannerPriority:
+            5,
+
+          laborScore:
+            2,
+
+          storageScore:
+            5,
+
+          flockValueScore:
+            1,
+
+          householdValueScore:
+            5,
+
+          notes: [
+            "High-value edible crop for the household.",
+            "Can remain in the soil until needed.",
+            "Supports long-term food security."
+          ]
+        },
+
+        pollinatorSupport: {
+          enabled: true,
+
+          plannerPriority:
+            4,
+
+          laborScore:
+            1,
+
+          storageScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          householdValueScore:
+            2,
+
+          notes: [
+            "Late-season flowers provide valuable nectar and pollen.",
+            "Supports beneficial insects during periods when other blooms are declining."
+          ]
+        },
+
+        compostBiomass: {
+          enabled: true,
+
+          plannerPriority:
+            4,
+
+          laborScore:
+            2,
+
+          storageScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          householdValueScore:
+            2,
+
+          notes: [
+            "Produces large amounts of above-ground biomass.",
+            "Excellent material for compost systems."
+          ]
+        },
+
+        seasonalPrivacyScreen: {
+          enabled: true,
+
+          plannerPriority:
+            4,
+
+          laborScore:
+            1,
+
+          storageScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          householdValueScore:
+            3,
+
+          notes: [
+            "Tall summer growth provides an effective seasonal screen.",
+            "Dies back naturally after frost."
+          ]
+        },
+
+        permanentFoodSecurity: {
+          enabled: true,
+
+          plannerPriority:
+            5,
+
+          laborScore:
+            1,
+
+          storageScore:
+            5,
+
+          flockValueScore:
+            5,
+
+          householdValueScore:
+            5,
+
+          notes: [
+            "This is the defining use path for Jerusalem Artichoke.",
+            "Functions as a long-term perennial infrastructure crop.",
+            "Returns dependable production year after year with very little annual input.",
+            "One of the strongest resilience crops available for mixed homesteads."
+          ]
+        }
+      },
+
+      dataQuality: {
+        overallConfidence:
+          5,
+
+        agriculturalResearch:
+          5,
+
+        poultryResearch:
+          4,
+
+        rabbitResearch:
+          5,
+
+        backyardEvidence:
+          4,
+
+        longTermManagement:
+          5,
+
+        yieldPrediction:
+          2,
+
+        feedReplacementPrediction:
+          2,
+
+        missingData: [
+          "Reliable backyard yield-per-plant values",
+          "Reliable backyard plants-per-100-square-feet values",
+          "Verified calcium percentage",
+          "Verified phosphorus percentage",
+          "Reliable backyard feed savings estimates"
+        ],
+
+        notes: [
+          "Jerusalem Artichoke is one of the best-supported perennial crops currently included in the Backyard Chicken Planner database.",
+          "Its biology, management, and mixed-homestead uses are well documented.",
+          "Backyard production values remain highly variable depending on cultivar, climate, soil, and management, so several quantitative fields intentionally remain null rather than using speculative estimates.",
+          "Future planner updates may populate currently null values as reliable extension or peer-reviewed data become available."
+        ]
+      }
+    }
   }
 
+
   };
+
