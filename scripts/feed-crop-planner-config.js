@@ -5039,7 +5039,10 @@ const PLANNER_CONFIG = Object.freeze({
     }),
 
     crops: Object.freeze({
-      expectedCropIds: EXPECTED_CROP_IDS
+      expectedCropIds: EXPECTED_CROP_IDS,
+    
+      expectedCropCount:
+        EXPECTED_CROP_IDS.length
     }),
     testing: Object.freeze({
   sampleUserProfiles:
