@@ -632,6 +632,31 @@ code {
 
 }
 
+.profile-summary-list {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-summary-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.25;
+}
+
+.profile-summary-icon {
+  flex: 0 0 20px;
+  text-align: center;
+}
+
+.profile-summary-empty {
+  color: var(--dashboard-text-muted);
+  font-style: italic;
+}
+
 </style>
 
 </head>
@@ -821,7 +846,7 @@ Waiting for profile matrix...
 <tr>
 <th>#</th>
 <th>Sample Profile</th>
-<th>Primary Test Purpose</th>
+<th>Profile Summary</th>
 <th>Expected Leader</th>
 <th>Actual Leader</th>
 <th>Top 3 Rankings</th>
