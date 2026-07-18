@@ -28495,9 +28495,2687 @@ plannerData: {
           "Future planner updates may populate currently null values as reliable extension or peer-reviewed data become available."
         ]
       }
-    }
-  }
+      }
+    
+  },
 
+  ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - BUCKWHEAT
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
+
+  "CROP-BUCKWHEAT": {
+    id:
+      "CROP-BUCKWHEAT",
+
+    name:
+      "Buckwheat",
+
+    scientificName:
+      "Fagopyrum esculentum",
+
+    category:
+      "Annual Grain, Cover Crop, Pollinator, and Soil-Improvement Crop",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Short-Season Warm-Season Annual",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Buckwheat is a rapidly establishing annual broadleaf pseudocereal grown for mature grain, short-season soil cover, weed suppression, pollinator support, beneficial-insect habitat, nutrient scavenging, and fast crop rotation. For backyard chickens, its strongest direct feed role is mature dry grain offered whole, cracked, ground, or incorporated as a measured ingredient within a balanced ration. Flowering stands may also increase insect-foraging opportunities, but green leaves and stems contain fagopyrins and should not be treated as unrestricted living poultry forage. Buckwheat matures quickly and performs on many low-fertility soils, yet it is sensitive to frost, waterlogging, prolonged drought, extreme flowering heat, herbicide carryover, lodging, uneven grain maturity, seed shattering, and volunteer reseeding.",
+
+    chickenUse: {
+      edibleParts: [
+        "Clean mature dry grain",
+        "Whole buckwheat seed",
+        "Cracked buckwheat grain",
+        "Ground buckwheat grain",
+        "Properly sprouted clean buckwheat seed",
+        "Mature seed remaining in controlled postharvest areas",
+        "Insects associated with flowering buckwheat stands"
+      ],
+
+      primaryValue: [
+        "Supplemental whole grain",
+        "Energy-oriented scratch-grain ingredient",
+        "Moderate protein contribution",
+        "Amino-acid diversity within mixed grain supplements",
+        "Stored seasonal grain",
+        "Postharvest pecking and foraging enrichment",
+        "Indirect insect-forage support",
+        "Short-season feed-garden rotation"
+      ],
+
+      feedingForms: [
+        "Whole mature dry grain",
+        "Cracked grain",
+        "Coarsely ground grain",
+        "A measured ingredient in a properly balanced poultry ration",
+        "Properly sprouted grain offered promptly",
+        "Controlled access to mature seed-bearing plants after grain development",
+        "Controlled postharvest access to fallen mature seed",
+        "A limited ingredient in a diversified scratch-grain mixture"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving an age-appropriate complete base ration",
+        "Backyard growers seeking a rapidly maturing annual grain",
+        "Small flocks that can use modest homegrown grain harvests",
+        "Growers combining poultry-feed production with pollinator support",
+        "Gardens needing a short summer crop between spring and fall plantings",
+        "Properties needing rapid temporary weed suppression",
+        "Homesteads able to harvest, dry, thresh, clean, and store small grain",
+        "Managed postharvest chicken-foraging systems",
+        "Diversified feed gardens rather than single-crop ration replacement"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Allow grain intended for storage or direct feeding to reach physiological maturity before harvest. Because buckwheat flowers and ripens unevenly, harvest timing requires balancing the amount of mature dark seed against losses from shattering. Cut or gather plants before excessive mature seed falls, dry the harvested material thoroughly in a protected and well-ventilated location, thresh the grain, remove plant debris and damaged seed, and confirm that the grain is cool and dry before enclosed storage. Whole clean grain may be offered in measured supplemental quantities to established adult chickens. Grain may also be cracked or coarsely ground where flock acceptance, bird size, or intended ration use makes processing beneficial. Sprouting requires clean untreated seed, potable water, clean equipment, frequent rinsing, drainage, temperature control, and immediate rejection of sour, slimy, moldy, overheated, or foul-smelling material. Do not assume that inclusion percentages used in controlled poultry studies establish a safe percentage for an unformulated backyard ration.",
+
+      safetyNotes:
+        "Buckwheat grain should supplement rather than replace an age-appropriate complete poultry ration. Mature grain is primarily an energy ingredient and does not provide the complete amino-acid, calcium, vitamin, mineral, and nutrient balance required by productive poultry. Do not feed moldy, heated, damp, fermented, insect-infested, rodent-contaminated, chemically treated, herbicide-contaminated, or otherwise deteriorated grain. Green buckwheat tissues contain fagopyrins, photoreactive compounds associated with photosensitization in susceptible animals. Fagopyrin concentration is substantially greater in green plant material than in mature seed, but unrestricted chicken grazing of dense green stands is not sufficiently established as a safe primary use path. Protect actively growing stands from continuous flock access and do not deliberately feed large quantities of leaves, flowers, or stems. Remove chicks from consideration for meaningful grain supplementation because they require a complete age-appropriate starter ration."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate composition and feeding characteristics of mature buckwheat grain and its fractions. Values vary with cultivar, environment, maturity, hull content, cleaning, storage, processing method, analytical method, and whether results are reported on an as-fed or dry-matter basis.",
+
+      crudeProteinPercent:
+        "Approximately 10% to 15% for whole mature grain on a dry-matter basis, with substantial variation caused by cultivar, growing conditions, hull proportion, and analytical source",
+
+      fatPercent:
+        "Generally low to moderate; commonly approximately 2% to 4% of dry matter in whole grain",
+
+      fiberPercent:
+        "Variable and strongly affected by hull content; whole grain and hull-rich fractions contain considerably more fiber than dehulled groats or finely processed grain",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      notableNutrients: [
+        "Starch and other digestible carbohydrates",
+        "Moderate crude protein",
+        "Relatively favorable lysine concentration compared with many common cereal grains",
+        "Methionine",
+        "Threonine",
+        "Phosphorus",
+        "Magnesium",
+        "Manganese",
+        "Potassium",
+        "Phenolic compounds",
+        "Rutin and related flavonoids",
+        "Dietary fiber concentrated heavily in the hull"
+      ],
+
+      limitations: [
+        "Whole buckwheat grain is not a complete poultry feed",
+        "Protein concentration is moderate rather than high",
+        "The amino-acid profile remains incomplete for productive poultry when the grain is used by itself",
+        "Buckwheat grain does not provide sufficient calcium for laying hens",
+        "It does not provide a complete vitamin and mineral package",
+        "High hull content lowers usable energy density and increases fiber",
+        "Whole grain, dehulled groats, bran, hulls, flour, and ground meal are nutritionally different products",
+        "Published poultry studies often use processed grain or formulated diets rather than unprocessed backyard-grown seed",
+        "Research inclusion percentages should not be copied directly into a home ration",
+        "Nutrient composition varies by cultivar, soil, weather, fertility, harvest timing, drying, cleaning, and storage",
+        "Damaged or improperly dried grain may heat, mold, or develop unsafe storage conditions",
+        "Sprouting changes moisture content, handling risk, storage life, and nutrient concentration per pound",
+        "Green foliage cannot be evaluated as equivalent to mature grain because it contains more fagopyrins",
+        "Scratch-grain use can dilute complete-feed intake when offered excessively"
+      ]
+    },
+
+        growing: {
+      sunlight:
+        "Full sun is strongly preferred for maximum flowering, pollinator activity, weed suppression, and grain production. Plants tolerate light shade but grain yield, flowering intensity, and stand uniformity generally decline.",
+
+      soilTemperatureMinimumF:
+        null,
+
+      idealSoilTemperatureF:
+        "Buckwheat establishes rapidly in warm, workable soil after frost danger has passed. Cool soil delays emergence, while excessively hot soil combined with drought can reduce stand quality and later grain production.",
+
+      frostTolerance:
+        "Very low. Seedlings, flowers, and mature plants are readily damaged or killed by light frost.",
+
+      heatTolerance:
+        "Moderate. Vegetative growth tolerates normal summer temperatures, but prolonged temperatures above approximately 90°F (32°C), especially when combined with drought, may reduce flowering, pollination success, and grain yield.",
+
+      droughtTolerance:
+        "Low to Moderate. Short dry periods are usually tolerated after establishment, but extended drought substantially reduces flowering, seed development, biomass, and overall grain production.",
+
+      soilPHMinimum:
+        5.5,
+
+      soilPHMaximum:
+        7.0,
+
+      waterNeeds:
+        "Moderate. Consistent soil moisture supports rapid establishment, flowering, nectar production, and grain fill. Avoid prolonged drought and saturated soils.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      daysToFirstHarvestMinimum:
+        70,
+
+      daysToFirstHarvestMaximum:
+        90,
+
+      daysToMaturityMinimum:
+        70,
+
+      daysToMaturityMaximum:
+        90,
+
+      plantSpacingInches:
+        "Generally unnecessary under normal production because buckwheat is commonly drilled or broadcast into dense stands. Individual plant spacing varies greatly with seeding method and intended use.",
+
+      rowSpacingInches:
+        "Approximately 6 to 8 inches when drilled for grain production. Wider spacing may be used for specialty production or experimental plantings.",
+
+      plantingDepthInches:
+        "Approximately 0.5 to 1.5 inches depending upon soil moisture and texture.",
+
+      successionPlanting:
+        true,
+
+      regrowthAfterHarvest:
+        false
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant after the danger of spring frost has passed and soil has warmed. Successive plantings may continue into mid-summer where sufficient frost-free days remain.",
+
+        harvestWindow:
+          "Harvest mature grain before the first autumn frost whenever possible, balancing mature seed development against excessive shattering."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Late spring through mid-summer after frost danger has ended. Many growers use buckwheat as a short-season crop following early vegetables.",
+
+        harvestWindow:
+          "Late summer into early autumn depending upon planting date and local frost timing."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Late spring through late summer. Avoid planting so flowering coincides with the hottest portion of the summer whenever practical.",
+
+        harvestWindow:
+          "Summer through early fall depending on planting date."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Best planted during periods that avoid prolonged extreme summer heat. Late spring and late-summer plantings often outperform midsummer plantings.",
+
+        harvestWindow:
+          "Harvest before prolonged autumn rainfall or frost reduces grain quality."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant during the cooler portion of the growing season where irrigation is available. Avoid establishment during periods of prolonged extreme heat and drought.",
+
+        harvestWindow:
+          "Harvest promptly as grain matures to minimize drought stress and seed shattering."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Late spring through midsummer after frost danger has passed. Moderate summer temperatures often favor excellent growth.",
+
+        harvestWindow:
+          "Late summer into early autumn."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant after frost danger has ended where adequate moisture is available. Avoid saturated poorly drained locations.",
+
+        harvestWindow:
+          "Harvest mature grain during dry weather before excessive seed loss occurs."
+      }
+    },
+
+        spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Properly dried, cleaned, cool, and protected grain may remain viable for many months and is generally one of the better long-term storage crops in the feed garden. Storage life depends upon final moisture content, temperature, humidity, cleanliness, insect exclusion, and rodent protection.",
+
+      storageMethod:
+        "Harvest mature seed, dry thoroughly before threshing or immediately afterward if necessary, remove chaff and immature material, verify that grain is completely dry, then store in clean airtight or rodent-resistant containers in a cool, dry, dark location. Inspect periodically for condensation, mold, insects, heating, or rodent activity.",
+
+      yieldNotes:
+        "Backyard production varies enormously because buckwheat is typically established as a dense stand rather than as individually spaced plants. Published production figures are almost entirely based on commercial field yields and should not be converted into guaranteed backyard production per square foot. Grain yield is strongly influenced by planting date, flowering weather, pollination, drought during seed fill, excessive nitrogen, lodging, harvest timing, and seed shattering. Until reliable small-scale backyard production data become available, planner yield calculations should remain conservative and avoid assigning fixed production values."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Generally low. Buckwheat seed is often among the least expensive annual grain crops to establish, particularly when purchased in larger quantities.",
+
+      equipmentCostEstimate:
+        "Low to Moderate. Most backyard growers require only basic soil-preparation tools, harvest containers, drying space, and simple threshing and cleaning equipment.",
+
+      irrigationCostLevel:
+        "Low to Moderate depending upon local rainfall and summer temperatures.",
+
+      laborLevel:
+        "Moderate. Establishment is easy, but harvesting, drying, threshing, cleaning, and storage require additional seasonal labor.",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Buckwheat provides excellent economic value because of inexpensive seed, rapid maturity, minimal fertilizer requirements, strong weed suppression, pollinator support, and multiple possible uses throughout the homestead. Its direct poultry-feed value comes primarily from harvested mature grain rather than living forage. Feed savings depend upon harvest success, processing efficiency, grain quality, flock size, and the amount of complete commercial feed that can safely be supplemented without creating nutritional imbalance. Reliable backyard economic models have not yet been established and should remain conservative."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+        evidence: {
+      researchStatus:
+        "Initial research complete. Identity, agronomic characteristics, poultry feeding applications, and general management recommendations are well supported by extension publications and livestock feed references. Additional backyard-scale yield research is recommended before assigning quantitative planner values.",
+
+      confidenceLevel:
+        "High",
+
+      majorStrengths: [
+        "Very rapid establishment",
+        "Excellent weed suppression",
+        "Outstanding pollinator support",
+        "Useful short-season grain crop",
+        "Low fertilizer requirement",
+        "Adaptable to many soil types",
+        "Good phosphorus scavenging ability",
+        "Excellent rotational crop",
+        "Useful supplemental poultry grain",
+        "Strong biodiversity benefits"
+      ],
+
+      primaryLimitations: [
+        "Killed by frost",
+        "Sensitive to prolonged drought",
+        "Reduced seed production during extended extreme heat",
+        "Uneven grain maturity",
+        "Seed shattering if harvest is delayed",
+        "Requires harvest, drying, threshing, and cleaning before long-term storage",
+        "Not a complete poultry feed",
+        "Green plant material contains higher concentrations of fagopyrins than mature grain"
+      ],
+
+      researchNeeds: [
+        "Backyard grain yield per square foot",
+        "Backyard labor studies",
+        "Small-scale harvest efficiency",
+        "Long-term grain storage studies under homestead conditions",
+        "Measured feed savings in diversified backyard flocks",
+        "Additional research regarding managed chicken access to mature standing crops"
+      ]
+    },
+
+    plannerData: {
+      schemaVersion:
+        "1.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Buckwheat",
+
+        shortLabel:
+          "Buckwheat",
+
+        icon:
+          "🌾",
+
+        cropCategory:
+          "grain",
+
+        primaryFeedCategory:
+          "energy",
+
+        guideUrl:
+          "growing-buckwheat-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual: true,
+        isBiennial: false,
+        isPerennial: false,
+        isTreeOrShrub: false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "high-elevation"
+        ],
+
+        challengingClimateTypes: [
+          "extreme-summer-heat",
+          "prolonged-drought",
+          "frequent-frost",
+          "waterlogged-growing-season"
+        ],
+
+        minimumFrostFreeDays:
+          70,
+
+        preferredFrostFreeDays:
+          90,
+
+        minimumSoilTemperatureF:
+          null,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          70,
+
+        daysToMaturityMaximum:
+          90,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          3,
+
+        droughtClimateToleranceScore:
+          2,
+
+        humidityToleranceScore:
+          3,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          5,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Planting shortly after frost danger passes can provide the longest practical grain-development window.",
+          "Succession planting can extend flowering, pollinator support, and short-season soil coverage where enough frost-free time remains.",
+          "Planting between spring and fall crops allows Buckwheat to occupy otherwise bare summer soil.",
+          "Late-summer planting may avoid the most intense midsummer heat where sufficient time remains before frost.",
+          "In hot southern climates, spring and late-summer plantings may perform more reliably than plantings that flower during the hottest part of summer.",
+          "Irrigation during dry establishment and flowering periods can protect stand development and grain formation.",
+          "A small test planting can identify herbicide-residue injury before a larger area is committed.",
+          "Temporary frost protection is generally less practical than choosing an appropriate planting window because the mature crop is normally grown as a field stand."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "short-season-summer-annual",
+
+          frostSensitive:
+            true,
+
+          commonlyDirectSeeded:
+            true,
+
+          winterDormancyPossible:
+            false,
+
+          heatDormancyPossible:
+            false,
+
+          plantAfterFrostDanger:
+            true,
+
+          rapidEstablishment:
+            true,
+
+          floweringCanBeginQuickly:
+            true,
+
+          coolMoistConditionsPreferred:
+            true,
+
+          prolongedHeatCanReduceSeedSet:
+            true,
+
+          droughtCanReduceFloweringAndYield:
+            true,
+
+          repeatedSeasonalPlantingsPossible:
+            true,
+
+          notes: [
+            "Buckwheat is a short-season annual broadleaf pseudocereal rather than a true cereal grass.",
+            "It commonly establishes, flowers, and reaches maturity within approximately 70 to 90 days.",
+            "Seed may germinate within approximately three to five days under favorable conditions.",
+            "The crop grows best during relatively cool, moist portions of the frost-free season.",
+            "Buckwheat is readily damaged or killed by frost.",
+            "It should not be treated as a winter annual even in much of the South.",
+            "The crop grows rapidly in warm weather but is not strongly adapted to prolonged extreme heat.",
+            "High temperatures during flowering may reduce blossom retention, pollination, seed development, and final grain harvest.",
+            "Buckwheat readily wilts during hot, dry weather and is less drought tolerant than many warm-season grains.",
+            "Short maturity allows some plantings to avoid prolonged seasonal drought rather than withstand it.",
+            "Planting dates should be selected so that flowering and grain filling occur before frost and, where practical, outside the most severe heat period.",
+            "The planner should distinguish vegetative survival from successful grain production because a stand may remain alive while flowering and seed yield decline.",
+            "Regional performance is highly dependent on the timing of heat, rainfall, and first frost."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          4,
+
+        productiveMinimumSunHours:
+          6,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          2,
+
+        afternoonShadeBenefitInHeat:
+          3,
+
+        windToleranceScore:
+          3,
+
+        lodgingRiskScore:
+          3,
+
+        reflectedHeatToleranceScore:
+          2,
+
+        airflowRequirementScore:
+          3,
+
+        frostPocketSensitivityScore:
+          5,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          1,
+
+        structureConflictRiskScore:
+          1,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          2,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight can support useful growth, with approximately 8 or more hours preferred for rapid canopy formation, abundant flowering, and dependable grain production.",
+
+          windExposureConcern:
+            true,
+
+          growthHabit:
+            "upright-branching-annual-broadleaf",
+
+          matureHeightFtMinimum:
+            2,
+
+          matureHeightFtMaximum:
+            4,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            false,
+
+          undergroundSpreadConcern:
+            false,
+
+          notes: [
+            "Full sun provides the strongest canopy development, flowering, pollinator activity, weed suppression, and grain production.",
+            "Partial shade may permit growth but generally reduces stand density, flowering, and seed production.",
+            "Afternoon shade may reduce temporary heat stress in very hot climates, but excessive shade is not a substitute for choosing a suitable planting season.",
+            "Buckwheat is relatively short compared with corn, sorghum, sunflower, and many perennial feed crops.",
+            "The crop normally creates little long-term conflict with structures, pavement, foundations, or buried utilities.",
+            "Dense stands may lodge during strong wind or heavy rain, especially where stems are thin, fertility is excessive, or the soil is saturated.",
+            "Exposed sites may experience greater lodging and moisture stress.",
+            "Low frost pockets are risky where the available growing season is already marginal.",
+            "Buckwheat can fit into temporary annual beds, open fields, garden rotations, field edges, and unused summer ground.",
+            "Flowering stands attract substantial pollinator and beneficial-insect traffic.",
+            "Do not locate a major flowering strip where intense bee activity would create conflict with heavily used walkways, doors, play areas, or sensitive individuals.",
+            "Mature seed may fall beneath the crop and create temporary volunteer plants, but Buckwheat does not spread through underground roots, rhizomes, or tubers."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            5,
+
+          verySandy:
+            3,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          2,
+
+        waterloggingSensitivityScore:
+          5,
+
+        minimumSoilDepthIn:
+          null,
+
+        preferredSoilDepthIn:
+          10,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          4,
+
+        preferredPHMinimum:
+          5.5,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          2,
+
+        nitrogenRequirementScore:
+          2,
+
+        phosphorusRequirementScore:
+          2,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          2,
+
+        amendmentEffortScore:
+          2,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "sandy loam",
+            "loam",
+            "silt loam",
+            "friable clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          lowFertilityAdaptation:
+            true,
+
+          phosphorusScavengingPotential:
+            true,
+
+          shallowFibrousRootSystem:
+            true,
+
+          excessiveNitrogenConcern:
+            true,
+
+          herbicideResidueSensitivity:
+            true,
+
+          notes: [
+            "Buckwheat performs best in light- to medium-textured, loose, well-drained soil.",
+            "Sandy loam, loam, and silt loam are particularly suitable where moisture remains adequate.",
+            "Friable clay loam may support useful production when drainage and surface structure are satisfactory.",
+            "Dense heavy clay can restrict emergence, rooting, drainage, and stand uniformity.",
+            "The crop performs poorly in compacted soil.",
+            "Chronically wet or waterlogged soil is unsuitable.",
+            "Very sandy soil may drain well but can create severe moisture stress during rapid growth, flowering, and seed filling.",
+            "Buckwheat often performs better than many cereal grains on low-fertility soil.",
+            "Low-fertility adaptation does not mean that grain production is independent of all plant nutrients.",
+            "The crop does not fix atmospheric nitrogen.",
+            "Buckwheat normally requires less supplemental nitrogen than high-demand grain crops such as corn.",
+            "Excessive nitrogen may encourage lush vegetative growth, weak stems, delayed maturity, lodging, and reduced harvest efficiency.",
+            "Buckwheat roots can mobilize and absorb forms of soil phosphorus that are less available to many other crops.",
+            "Phosphorus taken up by the crop may be returned near the soil surface when residue decomposes.",
+            "Phosphorus scavenging should not be represented as creation of new phosphorus.",
+            "The crop's fine roots are concentrated primarily in the upper soil profile and can leave surface soil loose and friable.",
+            "Buckwheat is not a deep subsoil-breaking crop.",
+            "A firm, weed-controlled seedbed supports more dependable establishment than rough sod or compacted ground.",
+            "Buckwheat may be injured by herbicide carryover from preceding crops.",
+            "When herbicide history is uncertain, a small watered test strip is safer than immediately planting the full area.",
+            "Soil testing is preferable to automatically adding fertilizer.",
+            "The planner should reward well-drained low- to moderate-fertility soil and penalize compaction, saturation, and excessive nitrogen."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "moderate",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "moderate",
+
+        floweringWaterNeedLevel:
+          "high",
+
+        harvestDevelopmentWaterNeedLevel:
+          "moderate-high",
+
+        droughtSurvivalScore:
+          2,
+
+        droughtYieldRetentionScore:
+          2,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "rapid-canopy-development",
+          "flowering",
+          "pollination",
+          "seed-development",
+          "grain-filling"
+        ],
+
+        criticalStageWaterImportanceScore:
+          5,
+
+        overwateringSensitivityScore:
+          4,
+
+        waterloggingSensitivityScore:
+          5,
+
+        dripIrrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          2,
+
+        suitableForRainfallOnlyScore:
+          3,
+
+        suitableForLimitedIrrigationScore:
+          2,
+
+        containerDryingRiskScore:
+          5,
+
+        establishmentYearsRequiringExtraWater:
+          1,
+
+        directFacts: {
+          establishmentMoistureImportant:
+            true,
+
+          droughtPauseAndRecoveryPossible:
+            true,
+
+          floweringMoistureImportant:
+            true,
+
+          seedFillMoistureImportant:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          irrigationCanProtectYield:
+            true,
+
+          prolongedDroughtTolerance:
+            false,
+
+          notes: [
+            "Buckwheat requires adequate moisture for rapid and uniform germination.",
+            "The surface seed zone should remain moist enough for establishment without becoming saturated.",
+            "Rapid early growth can use available surface moisture quickly.",
+            "The crop is not strongly drought tolerant.",
+            "Plants may wilt visibly during hot, dry afternoons.",
+            "Some temporarily wilted plants may recover overnight or after moisture returns.",
+            "Visible recovery does not guarantee that flowering or grain yield remained unaffected.",
+            "Water stress during flowering may reduce nectar production, flower retention, pollination, and seed formation.",
+            "Water stress during seed development may reduce grain filling and mature harvest.",
+            "Supplemental irrigation is most valuable during establishment, flowering, and early seed development.",
+            "Standing water and chronically saturated soil create greater risk than ordinary short moisture fluctuations.",
+            "Well-drained soil should not be confused with dry soil; Buckwheat performs best where drainage is good but moisture remains reasonably consistent.",
+            "Rainfall-only production may succeed in climates with dependable summer moisture.",
+            "Limited-irrigation sites are risky where high temperatures and drought commonly overlap with flowering.",
+            "Overhead irrigation during flowering may temporarily reduce pollinator activity and keep foliage wet, although the larger concern is usually prolonged rainfall or humid disease conditions rather than a single irrigation event.",
+            "Drip or low-level irrigation can maintain soil moisture without repeatedly wetting flowers and foliage.",
+            "Heavy mulch is generally less central to dense field Buckwheat than it is to widely spaced vegetable crops because the crop itself rapidly shades the soil.",
+            "Container-grown stands dry quickly and are unlikely to provide efficient grain production.",
+            "The planner should treat drought survival and grain-yield retention as separate traits."
+          ]
+        }
+      },
+      
+            space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          5,
+
+        mediumSpaceScore:
+          5,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            5,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            4,
+
+          smallBeds:
+            5,
+
+          openField:
+            5
+        },
+
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            4,
+
+          container:
+            1,
+
+          fenceLine:
+            3,
+
+          buildingEdge:
+            3,
+
+          unusedLawn:
+            5,
+
+          openField:
+            5,
+
+          orchard:
+            3,
+
+          forageFrame:
+            1,
+
+          rotationalPaddock:
+            2,
+
+          greenhouse:
+            1,
+
+          hedgerow:
+            3
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Buckwheat can grow in containers, but restricted root volume, rapid drying, limited plant population, and very small grain harvests make container production inefficient for meaningful flock-feed, cover-crop, or pollinator production.",
+
+        minimumRaisedBedDepthIn:
+          null,
+
+        vineSpreadRequired:
+          false,
+
+        verticalSupportBenefitScore:
+          1,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          true,
+
+        heightCategory:
+          "medium",
+
+        matureWidthCategory:
+          "dense-upright-annual-stand",
+
+        overflowSpaceBenefitScore:
+          4,
+
+        directFacts: {
+          denseStandSuitable:
+            true,
+
+          compactBlockRequired:
+            false,
+
+          rowPlantingSuitable:
+            true,
+
+          broadcastPlantingSuitable:
+            true,
+
+          smallBedSuitable:
+            true,
+
+          temporaryGardenGapSuitable:
+            true,
+
+          unusedGroundSuitable:
+            true,
+
+          coverCropPlotSuitable:
+            true,
+
+          pollinatorStripSuitable:
+            true,
+
+          orchardAlleySuitable:
+            true,
+
+          containerFeedProductionEfficient:
+            false,
+
+          raisedBedFeedProductionEfficient:
+            "limited",
+
+          notes: [
+            "Buckwheat is normally most useful as a dense continuous stand rather than as individually spaced plants.",
+            "Broadcast sowing and closely drilled rows are both suitable.",
+            "The crop does not require compact block planting for pollination in the manner of Field Corn.",
+            "Even a small bed can provide flowers, beneficial-insect activity, soil coverage, and a modest quantity of mature seed.",
+            "Medium and large plots provide greater value for grain harvesting, weed suppression, green manure, and pollinator habitat.",
+            "Long strips can provide temporary pollinator corridors or occupy unused ground beside annual gardens.",
+            "Wide rectangular and square plots simplify even seeding, canopy closure, mowing, cutting, and grain harvest.",
+            "Irregular plots remain usable when seed can be distributed evenly and the stand can be reached for termination or harvest.",
+            "Buckwheat is especially useful for temporarily occupying vacant beds between major vegetable crops.",
+            "The short production cycle allows land to return quickly to annual crop rotation.",
+            "Small raised beds can support pollinator or soil-building uses, but allocating premium raised-bed space to bulk grain production may not be efficient.",
+            "Containers provide very little usable grain or biomass relative to watering effort.",
+            "The crop normally reaches approximately two to four feet in height, depending on variety, fertility, planting density, moisture, and climate.",
+            "Dense stands provide rapid temporary soil cover but do not form permanent ground cover.",
+            "Buckwheat may self-seed where mature grain falls, but it does not spread through rhizomes, stolons, roots, or tubers.",
+            "Minimum trial, useful, and preferred production areas remain null because the planner does not yet have a defensible relationship between backyard planting area, usable grain yield, and flock size.",
+            "Space scoring should reward flexible annual ground, unused summer beds, pollinator strips, and crop-rotation plots while penalizing container-only production."
+          ]
+        }
+      },
+
+            flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            4,
+
+          meat:
+            3,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            5,
+
+          homestead:
+            5,
+
+          mixed:
+            5
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            1,
+
+          cutAndCarry:
+            1,
+
+          wholeProduce:
+            1,
+
+          wholeSeedHeads:
+            3,
+
+          wholeGrain:
+            5,
+
+          processedGrain:
+            4,
+
+          heatTreated:
+            2,
+
+          driedForage:
+            1,
+
+          winterStorage:
+            5
+        },
+
+        directRunSuitabilityScore:
+          1,
+
+        forageFrameSuitabilityScore:
+          1,
+
+        rotationalPaddockSuitabilityScore:
+          1,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          4,
+
+        treatDilutionRiskScore:
+          4,
+
+        highEnergySupplement:
+          true,
+
+        highFiberSupplement:
+          false,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Clean mature Buckwheat grain offered as a measured supplemental feed",
+          "Whole harvested seed-bearing stems or seed clusters used for pecking enrichment",
+          "Stored whole grain for winter supplementation",
+          "Scatter feeding that encourages scratching and natural foraging behavior",
+          "Postharvest flock access to sound fallen seed",
+          "Indirect insect forage produced by flowering stands",
+          "Pollinator and beneficial-insect support near chicken forage areas"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Primary protein supplementation",
+          "Primary calcium supplementation",
+          "Primary young-chick feed",
+          "Unrestricted consumption of large quantities of grain",
+          "Living forage from actively growing green plants",
+          "Routine feeding of fresh green Buckwheat foliage",
+          "Feeding moldy, musty, heated, wet, sprouted, or contaminated grain",
+          "Feeding chemically treated planting seed",
+          "Assuming whole grain and processed Buckwheat products are nutritionally interchangeable",
+          "Using an unverified percentage in a home-formulated ration"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Clean mature grain",
+            "Sound whole seed-bearing stems",
+            "Properly cleaned or processed mature grain"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor",
+
+          directAccessTiming:
+            "Protect the crop throughout establishment, flowering, and grain development. Controlled flock access is most appropriate after mature seed has formed, after harvest, or when dried seed-bearing material is deliberately offered.",
+
+          nutritionalOrientation: [
+            "supplemental-grain",
+            "energy",
+            "moderate-protein",
+            "winter-storage",
+            "pecking-enrichment",
+            "insect-forage-support",
+            "short-season-production"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          supplementOnly:
+            true,
+
+          wholeMatureGrainSuitableForAdultChickens:
+            true,
+
+          greenFoliagePreferredForFeeding:
+            false,
+
+          fagopyrinConcernPrimarilyGreenTissue:
+            true,
+
+          floweringStandSupportsInsectForage:
+            true,
+
+          gradualIntroductionRecommended:
+            true,
+
+          notes: [
+            "Mature Buckwheat grain is the preferred direct poultry-feed product.",
+            "Buckwheat grain provides supplemental energy and some protein but does not supply the complete amino-acid, vitamin, mineral, or calcium balance required by productive poultry.",
+            "The grain should supplement rather than replace an age-appropriate complete poultry ration.",
+            "Whole grain may be offered to established adult chickens where suitable grit is available.",
+            "The planner should not assign an exact inclusion percentage without poultry-stage-specific formulation evidence.",
+            "Fresh green Buckwheat tissue is not the preferred flock-use path.",
+            "Green leaves and other photosynthetically active tissues contain the greatest fagopyrin concern.",
+            "Heavy intake of green Buckwheat material has been associated with photosensitization risk in susceptible livestock.",
+            "The planner should clearly separate mature grain use from fresh green-plant use.",
+            "Flowering Buckwheat can indirectly increase flock forage by supporting insects around the production area.",
+            "Bees attracted to the flowers are ecological partners and should not be intentionally presented as poultry feed.",
+            "Postharvest access may allow chickens to consume fallen mature seed and forage among crop residue.",
+            "Chickens should not receive unrestricted access to the actively growing stand because scratching, trampling, and plant consumption can destroy production.",
+            "Mature seed-bearing stems may provide pecking enrichment, although Buckwheat does not form a compact seed head comparable to Sunflower, Millet, or Sorghum.",
+            "Stored grain must remain dry, cool, clean, and protected from rodents and insects.",
+            "Young chicks should continue receiving a complete age-appropriate starter ration."
+          ]
+        }
+      },
+
+            labor: {
+        beginnerFriendlinessScore:
+          4,
+
+        plantingEaseScore:
+          5,
+
+        establishmentEaseScore:
+          5,
+
+        routineMaintenanceEaseScore:
+          5,
+
+        weedControlEaseScore:
+          5,
+
+        wildlifeProtectionEaseScore:
+          3,
+
+        harvestEaseScore:
+          2,
+
+        grainProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        physicalAccessibilityScore:
+          4,
+
+        heavyLiftingRiskScore:
+          2,
+
+        weeklyLaborLevel:
+          "low",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "major",
+
+        requiredPlantingTasks: [
+          "prepare-seedbed",
+          "broadcast-or-drill-seed",
+          "cover-seed-lightly"
+        ],
+
+        optionalPlantingTasks: [
+          "install-irrigation",
+          "apply-soil-amendments",
+          "install-bird-protection",
+          "mark-plot-boundaries",
+          "plant-test-strip-for-herbicide-residue"
+        ],
+
+        requiredMaintenanceTasks: [
+          "monitor-water",
+          "monitor-stand-development",
+          "monitor-flowering",
+          "monitor-seed-maturity"
+        ],
+
+        optionalMaintenanceTasks: [
+          "irrigate-during-drought",
+          "remove-emerging-weeds-from-thin-stands",
+          "protect-maturing-seed-from-wildlife",
+          "support-or-cut-lodged-plants",
+          "mow-before-seed-set",
+          "terminate-cover-crop",
+          "reseed-successive-cover-crop"
+        ],
+
+        requiredHarvestTasks: [
+          "evaluate-seed-maturity",
+          "cut-seed-bearing-plants",
+          "move-harvest-under-cover",
+          "finish-drying"
+        ],
+
+        usePathProcessingTasks: {
+          floweringPollinatorCover: [
+            "establish-dense-stand",
+            "protect-from-premature-flock-access",
+            "allow-flowering",
+            "monitor-beneficial-insect-activity",
+            "terminate-before-unwanted-reseeding"
+          ],
+
+          greenManureAndWeedSuppression: [
+            "establish-dense-stand",
+            "monitor-canopy-closure",
+            "mow-or-cut",
+            "incorporate-or-leave-residue",
+            "prevent-unwanted-seed-set"
+          ],
+
+          wholeDriedSeedBearingStems: [
+            "evaluate-seed-maturity",
+            "cut-seed-bearing-plants",
+            "bundle-or-collect",
+            "dry",
+            "inspect"
+          ],
+
+          threshedWholeGrain: [
+            "evaluate-seed-maturity",
+            "cut-seed-bearing-plants",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture"
+          ],
+
+          crackedOrGroundGrain: [
+            "evaluate-seed-maturity",
+            "cut-seed-bearing-plants",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture",
+            "crack-or-grind"
+          ],
+
+          postharvestChickenForaging: [
+            "harvest-primary-crop",
+            "inspect-field-residue",
+            "remove-contaminated-material",
+            "allow-controlled-flock-access",
+            "monitor-ground-disturbance"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "inspect-moisture",
+          "inspect-mold",
+          "inspect-heating",
+          "inspect-insects",
+          "inspect-rodents",
+          "inspect-off-odors"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "garden-rake",
+          "hand-broadcast-spreader",
+          "seed-drill",
+          "irrigation-hose",
+          "drip-irrigation",
+          "sickle",
+          "scythe",
+          "hand-pruners",
+          "harvest-tarp",
+          "harvest-basket",
+          "drying-rack",
+          "drying-screen",
+          "box-fan",
+          "grain-thresher",
+          "winnowing-screen",
+          "grain-mill",
+          "feed-grinder",
+          "moisture-meter",
+          "food-safe-bucket",
+          "food-safe-container",
+          "metal-grain-can",
+          "rodent-proof-storage-area",
+          "bird-netting",
+          "temporary-fencing"
+        ],
+
+        suitableForLowTimeUsersScore:
+          4,
+
+        suitableForSoloGrowersScore:
+          4,
+
+        directFacts: {
+          seedSize:
+            "medium-large",
+
+          directSeedingSuitable:
+            true,
+
+          indoorStartingPossible:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          majorLaborBottlenecks: [
+            "Preparing an even, firm, weed-controlled seedbed",
+            "Distributing seed evenly across the planting area",
+            "Maintaining moisture during establishment",
+            "Preventing premature chicken access",
+            "Determining the best grain-harvest date despite uneven seed maturity",
+            "Harvesting before excessive mature-seed shattering",
+            "Cutting and moving seed-bearing plants",
+            "Finishing the crop under cover when field drying is incomplete",
+            "Threshing grain from branching seed-bearing stems",
+            "Separating mature grain from immature seed and plant debris",
+            "Winnowing and cleaning loose grain",
+            "Confirming that stored grain is sufficiently dry",
+            "Protecting stored grain from insects, rodents, and moisture"
+          ],
+
+          notes: [
+            "Buckwheat is straightforward to establish by broadcasting or drilling directly into a prepared seedbed.",
+            "Indoor seed starting and transplanting provide little practical benefit for a dense field-style crop.",
+            "Rapid germination and canopy formation reduce routine weed-control labor after successful establishment.",
+            "Thin or uneven stands lose part of this weed-suppression advantage.",
+            "Cover-crop and pollinator uses require considerably less harvest labor than grain-production uses.",
+            "A flowering stand can require very little weekly work once established.",
+            "Cover-crop termination is easy when the crop is cut before mature seed develops.",
+            "Allowing the crop to mature for grain changes the labor profile substantially.",
+            "Buckwheat flowers and ripens seed over an extended period rather than maturing every seed simultaneously.",
+            "Harvest timing requires balancing immature seed against losses from shattering of the earliest mature seed.",
+            "Cutting when most seed is mature and completing drying under cover may reduce weather and shattering losses.",
+            "Whole dried seed-bearing stems avoid some threshing and winnowing labor but are harder to measure and store efficiently than cleaned grain.",
+            "Loose-grain production concentrates most labor into cutting, drying, threshing, winnowing, cleaning, and storage preparation.",
+            "Small plots can be harvested and processed with ordinary hand tools.",
+            "Mechanical cutting, threshing, cleaning, and grain handling become increasingly valuable as acreage expands.",
+            "Grinding is optional for many adult-chicken uses and creates additional equipment, dust, oxidation, and storage-management demands.",
+            "Buckwheat is highly suitable for a solo grower at trial scale, but a large hand-harvested grain planting can create a substantial short-duration workload."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "low",
+
+        soilPreparationCostLevel:
+          "low",
+
+        irrigationCostLevel:
+          "low-moderate",
+
+        protectionCostLevel:
+          "low-moderate",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageCostLevel:
+          "low",
+
+        annualRecurringCostLevel:
+          "low",
+
+        longTermValueScore:
+          5,
+
+        lowestCostUsePath:
+          "flowering-buckwheat-pollinator-cover",
+
+        highestCostUsePath:
+          "cracked-or-ground-buckwheat-grain",
+
+        likelyCostDrivers: [
+          "Buckwheat seed",
+          "Seedbed preparation",
+          "Irrigation during dry establishment and flowering periods",
+          "Additional seed for dense weed-suppressing stands",
+          "Temporary fencing to exclude chickens",
+          "Bird netting or other wildlife protection",
+          "Cutting and harvest tools",
+          "Drying racks or screens",
+          "Fans or protected drying space",
+          "Optional grain thresher",
+          "Winnowing and cleaning equipment",
+          "Optional grain mill or feed grinder",
+          "Moisture meter",
+          "Food-safe storage containers",
+          "Rodent-resistant grain storage",
+          "Labor required for hand harvesting and grain cleaning",
+          "Seed loss from shattering",
+          "Harvest loss caused by rain, lodging, birds, or delayed cutting"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small trial planting before committing a large area.",
+          "Use Buckwheat first as a cover crop or pollinator crop before investing in grain-processing equipment.",
+          "Broadcast seed by hand in small plots.",
+          "Use ordinary garden tools for seedbed preparation and termination.",
+          "Plant into an existing vacant garden bed rather than preparing new land.",
+          "Time planting for naturally cool, moist conditions to reduce irrigation demand.",
+          "Use existing fencing to prevent premature flock access.",
+          "Harvest whole seed-bearing stems for enrichment when loose cleaned grain is unnecessary.",
+          "Thresh and winnow manually at small scale.",
+          "Use existing tarps, screens, fans, buckets, and metal storage containers.",
+          "Store clean whole grain and process only small batches as needed.",
+          "Save seed only from mature, sound, untreated grain when maintaining varietal purity is not required.",
+          "Terminate a cover-crop planting before mature seed develops when volunteer plants would create additional labor.",
+          "Use the crop for several simultaneous purposes, including weed suppression, pollinator support, beneficial insects, soil conditioning, and poultry supplementation.",
+          "Compare the total land, water, labor, processing, and storage cost with purchased supplemental grain before expanding production."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          notes: [
+            "Buckwheat seed is generally a relatively low-cost annual planting input.",
+            "A small planting can be established with ordinary garden tools and hand broadcasting.",
+            "Cover-crop, green-manure, and pollinator uses require little specialized equipment.",
+            "The crop's fast growth can provide valuable weed suppression without repeated cultivation after canopy closure.",
+            "Low fertilizer demand can reduce establishment cost where soil conditions are already suitable.",
+            "Buckwheat should not receive unnecessary nitrogen merely because it is being grown for grain.",
+            "Irrigation expense may become important where drought or extreme heat overlaps establishment, flowering, or seed filling.",
+            "Grain production may appear inexpensive until cutting, drying, threshing, winnowing, cleaning, and storage labor are included.",
+            "Whole seed-bearing stem use reduces processing expense but provides a less uniform and less easily measured feed product.",
+            "Clean loose grain requires more labor but is easier to inspect, measure, mix, and store.",
+            "Optional threshers, grain mills, moisture meters, fans, and rodent-resistant storage can raise initial costs.",
+            "Equipment cost per pound falls as production increases, but hand-harvest labor may become the limiting factor before equipment cost does.",
+            "Seed shattering, bird feeding, lodging, and wet harvest weather can reduce recoverable yield without reducing the season's growing expenses.",
+            "The crop may provide strong economic value even when poultry grain yield alone is modest because one planting can also suppress weeds, cover soil, attract pollinators, support beneficial insects, cycle nutrients, and prepare ground for a following crop.",
+            "Homegrown Buckwheat grain should not be valued pound-for-pound as a replacement for nutritionally complete poultry feed.",
+            "Potential feed savings remain dependent on actual usable yield, processing losses, supplementation rate, flock size, purchased-feed price, and the value assigned to the grower's labor.",
+            "Cost classifications are qualitative rather than current retail-price estimates."
+          ]
+        }
+      },
+
+            goals: {
+        primaryGoals: [
+          "Reduce purchased supplemental grain costs",
+          "Produce a fast-growing annual poultry feed crop",
+          "Support pollinators and beneficial insects",
+          "Suppress weeds naturally",
+          "Improve crop rotations",
+          "Produce a storable winter feed supplement",
+          "Occupy unused garden space between major crops",
+          "Build soil organic matter through residue"
+        ],
+
+        secondaryGoals: [
+          "Increase biodiversity",
+          "Support honey bee forage",
+          "Provide post-harvest chicken foraging",
+          "Reduce summer bare soil",
+          "Recycle unavailable soil phosphorus",
+          "Provide emergency short-season feed production"
+        ],
+
+        plannerGoalScores: {
+          emergencyFeed:
+            5,
+
+          longTermFeedSavings:
+            4,
+
+          pollinatorSupport:
+            5,
+
+          soilImprovement:
+            5,
+
+          weedSuppression:
+            5,
+
+          biodiversity:
+            5,
+
+          winterFeedStorage:
+            5,
+
+          perennialFeedProduction:
+            1,
+
+          selfSufficiency:
+            4,
+
+          beginnerSuccess:
+            5,
+
+          lowMaintenance:
+            5,
+
+          droughtResilience:
+            2,
+
+          proteinProduction:
+            2,
+
+          energyProduction:
+            4,
+
+          forageProduction:
+            2
+        },
+
+        bestUseCases: [
+          "Small backyard homesteads",
+          "Beginning poultry keepers",
+          "Crop rotation systems",
+          "Pollinator gardens",
+          "Temporary summer cover crop",
+          "Emergency annual feed production",
+          "Unused vegetable beds",
+          "Short growing seasons"
+        ],
+
+        poorUseCases: [
+          "Permanent forage systems",
+          "Primary flock feed production",
+          "Heavy grazing systems",
+          "Flood-prone ground",
+          "Long-term perennial feed plots",
+          "Very dry non-irrigated climates"
+        ],
+
+        directFacts: {
+          notes: [
+            "Buckwheat excels when multiple objectives are desired from one short-season planting.",
+            "The crop often delivers more total homestead value than grain production alone.",
+            "Pollinator support, weed suppression, and soil conditioning frequently equal or exceed the value of harvested grain.",
+            "Buckwheat is an excellent bridge crop between spring and fall plantings.",
+            "It should rarely be selected when maximum grain yield alone is the objective."
+          ]
+        }
+      },
+
+      risks: {
+        productionRiskScore:
+          3,
+
+        harvestRiskScore:
+          4,
+
+        weatherRiskScore:
+          4,
+
+        wildlifeRiskScore:
+          3,
+
+        storageRiskScore:
+          2,
+
+        overallRiskScore:
+          3,
+
+        primaryRisks: [
+          "Late frost",
+          "Extreme summer heat",
+          "Drought during flowering",
+          "Seed shattering",
+          "Poor harvest timing",
+          "Waterlogged soils",
+          "Lodging",
+          "Bird feeding",
+          "Heavy deer browsing"
+        ],
+
+        plannerWarnings: [
+          "Do not confuse rapid growth with guaranteed grain production.",
+          "Flowering during extreme heat often reduces seed yield.",
+          "Waiting for every seed to mature usually increases shattering losses.",
+          "Buckwheat performs poorly in poorly drained soils.",
+          "Fresh green foliage should not become a major poultry feed source."
+        ],
+
+        directFacts: {
+          notes: [
+            "The largest production risk is improper harvest timing.",
+            "Most crop failures occur because flowering coincides with drought or excessive heat.",
+            "Buckwheat rarely survives flooding.",
+            "Bird damage usually increases rapidly as seed matures.",
+            "Wind and heavy rainfall may increase lodging.",
+            "Volunteer seedlings may occur where mature seed shatters before harvest."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        spring: [
+          "Rapid establishment",
+          "Early weed suppression",
+          "Excellent rotation crop"
+        ],
+
+        summer: [
+          "Heavy flowering",
+          "Maximum pollinator support",
+          "Beneficial insect production",
+          "Rapid canopy development"
+        ],
+
+        autumn: [
+          "Grain harvest",
+          "Residue incorporation",
+          "Chicken post-harvest foraging",
+          "Preparation for fall crops"
+        ],
+
+        winter: [
+          "Stored grain feeding",
+          "Crop planning",
+          "Seed storage"
+        ],
+
+        plannerSeasonScores: {
+          spring:
+            5,
+
+          summer:
+            5,
+
+          autumn:
+            4,
+
+          winter:
+            2
+        },
+
+        directFacts: {
+          notes: [
+            "Buckwheat is primarily a warm-season annual.",
+            "Most of its ecological value occurs during flowering.",
+            "Most feed value occurs after grain harvest.",
+            "Winter value comes almost entirely from properly stored grain."
+          ]
+        }
+      },
+
+             usePaths: [
+        {
+          id:
+            "whole-dried-buckwheat-seed-bearing-stems",
+
+          label:
+            "Whole Dried Buckwheat Seed-Bearing Stems",
+
+          description:
+            "Mature Buckwheat plants or seed-bearing branches are cut, dried thoroughly, inspected, and offered to established adult chickens as whole-plant pecking enrichment without first threshing the grain.",
+
+          primaryFeedRole:
+            "whole-seed-bearing-stem-enrichment",
+
+          harvestProducts: [
+            "dried-seed-bearing-stems",
+            "mature-buckwheat-seed-clusters",
+            "whole-plant-grain-enrichment",
+            "stored-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "pecking-enrichment",
+            "scatter-feeding",
+            "winter-supplement",
+            "measured-seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-seed-bearing-plants",
+            "dry",
+            "inspect"
+          ],
+
+          optionalProcessingTasks: [
+            "bundle",
+            "trim-excess-stems",
+            "clean-sort",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "scythe",
+            "harvest-tarp",
+            "harvest-basket",
+            "drying-rack",
+            "drying-screen",
+            "box-fan",
+            "moisture-meter",
+            "temporary-fencing",
+            "rodent-proof-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "dry-whole-seed-bearing-stems",
+            "dry-bundled-stems",
+            "protected-ventilated-storage"
+          ],
+
+          preferredStorageMethod:
+            "fully-dried-under-cover-and-stored-cool-dry-ventilated-and-rodent-protected",
+
+          storageDurationCategory:
+            "medium-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Harvest only mature seed-bearing material from plants that have not been treated with chemicals unsuitable for feed crops.",
+            "Dry stems and grain thoroughly before storage.",
+            "Dense bundles may retain internal moisture even when their outer surfaces feel dry.",
+            "Inspect stored material for mold, heating, condensation, insects, rodents, droppings, urine contamination, and musty or fermented odor.",
+            "Discard any damp, moldy, heated, spoiled, chemically contaminated, or rodent-contaminated material.",
+            "Do not use fresh green Buckwheat plants as the equivalent of dried mature grain-bearing stems.",
+            "Green Buckwheat tissues contain greater fagopyrin concern than mature seed.",
+            "Remove coarse bare stems after chickens have consumed the accessible grain.",
+            "Offer this product as measured enrichment rather than unrestricted complete feed.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Provide appropriate insoluble grit when adult chickens consume whole grain."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-drying-capability",
+            "has-no-protected-storage",
+            "has-no-rodent-protection",
+            "cannot-monitor-stored-material",
+            "requires-clean-loose-grain",
+            "requires-exact-feed-measurement",
+            "requires-minimal-storage-volume",
+            "requires-complete-feed-replacement",
+            "intends-to-feed-green-buckwheat-foliage",
+            "keeps-only-young-chicks"
+          ]
+        },
+
+        {
+          id:
+            "threshed-whole-buckwheat-grain",
+
+          label:
+            "Threshed Whole Buckwheat Grain",
+
+          description:
+            "Mature Buckwheat plants are cut and dried, after which the seed is threshed, winnowed, cleaned, inspected, and stored as whole dry grain for measured adult-chicken supplementation.",
+
+          primaryFeedRole:
+            "whole-supplemental-energy-grain",
+
+          harvestProducts: [
+            "dry-buckwheat-grain",
+            "whole-buckwheat-seed",
+            "cleaned-whole-grain",
+            "stored-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "scatter-feeding",
+            "winter-storage",
+            "pecking-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-seed-bearing-plants",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture"
+          ],
+
+          optionalProcessingTasks: [
+            "screen",
+            "remove-light-seed",
+            "remove-hulls",
+            "portion",
+            "freeze-for-insect-control"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "scythe",
+            "harvest-tarp",
+            "drying-rack",
+            "drying-screen",
+            "box-fan",
+            "hand-thresher",
+            "grain-thresher",
+            "winnowing-basket",
+            "winnowing-screen",
+            "grain-screen",
+            "moisture-meter",
+            "food-safe-bucket",
+            "metal-grain-can",
+            "rodent-proof-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "dry-whole-grain",
+            "sealed-food-safe-container",
+            "rodent-resistant-grain-storage"
+          ],
+
+          preferredStorageMethod:
+            "clean-whole-grain-stored-cool-dry-dark-and-rodent-protected",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Use only mature, sound, properly dried Buckwheat grain.",
+            "Do not store grain that is damp, heating, musty, visibly moldy, or mixed with substantial green plant material.",
+            "Remove stones, soil, weed seeds, immature material, insects, and plant debris during cleaning.",
+            "Discard grain contaminated by rodents, wild-bird droppings, pesticides, fuel, chemicals, or floodwater.",
+            "Do not feed chemically treated planting seed.",
+            "Freezing may help control stored insects but does not make moldy or chemically contaminated grain safe.",
+            "Whole Buckwheat grain is a supplemental ingredient rather than a complete poultry ration.",
+            "Do not copy research-diet inclusion percentages into an unbalanced backyard feed mixture.",
+            "Introduce the grain gradually and monitor acceptance, body condition, egg production, and manure consistency.",
+            "Provide appropriate insoluble grit to adult chickens consuming whole grain.",
+            "Do not use this path as a primary feed for young chicks."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-threshing",
+            "declines-winnowing",
+            "declines-grain-cleaning",
+            "has-no-drying-capability",
+            "has-no-protected-storage",
+            "has-no-rodent-protection",
+            "cannot-monitor-stored-grain",
+            "requires-immediate-fresh-forage",
+            "requires-complete-feed-replacement",
+            "requires-primary-protein-production",
+            "keeps-only-young-chicks"
+          ]
+        },
+        
+                {
+          id:
+            "cracked-or-ground-buckwheat-grain",
+
+          label:
+            "Cracked or Ground Buckwheat Grain",
+
+          description:
+            "Clean mature Buckwheat grain is dried, threshed, winnowed, inspected, and then cracked or coarsely ground before being incorporated into measured supplemental poultry feed.",
+
+          primaryFeedRole:
+            "processed-supplemental-energy-grain",
+
+          harvestProducts: [
+            "cracked-buckwheat",
+            "coarsely-ground-buckwheat",
+            "processed-energy-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "mixed-feed",
+            "supplemental-ration",
+            "winter-storage",
+            "measured-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-seed-bearing-plants",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture",
+            "crack-or-grind"
+          ],
+
+          optionalProcessingTasks: [
+            "screen",
+            "portion",
+            "freeze-for-insect-control"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "grain-mill",
+            "feed-grinder",
+            "roller-mill",
+            "grain-screen",
+            "moisture-meter",
+            "food-safe-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "sealed-food-safe-container",
+            "cool-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "whole-grain-stored-until-needed-then-ground-in-small-batches",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Only grind clean, mature, dry grain.",
+            "Grinding increases surface area and shortens storage life.",
+            "Store grain whole whenever practical and grind only what will be used soon.",
+            "Discard moldy, damp, heated, or contaminated grain.",
+            "Do not assume ground Buckwheat creates a nutritionally complete feed.",
+            "Continue feeding a balanced commercial ration."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-grinding-equipment",
+            "requires-long-term-ground-feed-storage",
+            "requires-complete-feed-replacement",
+            "keeps-only-young-chicks"
+          ]
+        },
+
+        {
+          id:
+            "postharvest-chicken-foraging",
+
+          label:
+            "Controlled Postharvest Chicken Foraging",
+
+          description:
+            "After the primary Buckwheat harvest is complete, chickens are allowed controlled access to forage remaining grain, insects, weed seedlings, and crop residue while beginning cleanup of the planting area.",
+
+          primaryFeedRole:
+            "postharvest-foraging",
+
+          harvestProducts: [
+            "fallen-grain",
+            "weed-seed",
+            "insects",
+            "crop-residue"
+          ],
+
+          suitableFeedingMethods: [
+            "rotational-foraging",
+            "supervised-free-range",
+            "seasonal-cleanup"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-harvest",
+            "inspect-field",
+            "remove-hazards",
+            "introduce-flock"
+          ],
+
+          optionalProcessingTasks: [
+            "temporary-fencing",
+            "move-portable-coop",
+            "rotate-access"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "portable-electric-netting",
+            "temporary-fence",
+            "mobile-coop",
+            "waterer",
+            "shade"
+          ],
+
+          harvestPattern:
+            "postharvest",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "none",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Only allow access after the intended grain harvest is complete.",
+            "Inspect the area for wire, twine, tools, and other hazards before releasing the flock.",
+            "Do not use this path if pesticides or other chemicals unsuitable for poultry have been applied.",
+            "Remove moldy grain or spoiled residue.",
+            "Continue providing balanced feed."
+          ],
+
+          incompatibleUserTraits: [
+            "needs-maximum-grain-harvest",
+            "cannot-control-flock-access",
+            "recent-chemical-application",
+            "requires-perfectly-clean-field"
+          ]
+        },
+
+                {
+          id:
+            "pollinator-and-beneficial-insect-production",
+
+          label:
+            "Pollinator & Beneficial Insect Production",
+
+          description:
+            "Buckwheat is grown primarily to produce abundant flowers that support pollinators and beneficial insects while providing temporary soil cover and improving the surrounding garden ecosystem. Chickens benefit indirectly through increased insect populations after flowering and crop termination.",
+
+          primaryFeedRole:
+            "ecosystem-support",
+
+          harvestProducts: [
+            "pollinator-forage",
+            "beneficial-insect-habitat",
+            "future-natural-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "indirect-natural-foraging",
+            "post-bloom-cleanup"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-stand",
+            "allow-full-flowering",
+            "monitor-pollinator-activity"
+          ],
+
+          optionalProcessingTasks: [
+            "photograph-pollinator-activity",
+            "terminate-before-heavy-seed-set",
+            "allow-limited-post-bloom-foraging"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "temporary-fencing",
+            "irrigation-hose"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "none",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            1,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          safetyWarnings: [
+            "Delay chicken access until flowering objectives have been achieved.",
+            "Terminate the stand before excessive volunteer reseeding if self-seeding is not desired.",
+            "Do not consider pollinator production a replacement for supplemental poultry feed.",
+            "Avoid pesticide applications that could harm pollinators."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-immediate-feed-production",
+            "dislikes-flowering-cover-crops",
+            "cannot-delay-flock-access"
+          ]
+        },
+
+        {
+          id:
+            "green-manure-and-weed-suppression",
+
+          label:
+            "Green Manure & Weed Suppression",
+
+          description:
+            "Buckwheat is planted as a fast-growing cover crop to suppress weeds, protect bare soil, improve soil biology, recycle nutrients, and prepare planting areas for future crops. Chickens may be allowed limited cleanup after the crop is terminated.",
+
+          primaryFeedRole:
+            "soil-improvement",
+
+          harvestProducts: [
+            "organic-matter",
+            "surface-mulch",
+            "weed-suppression",
+            "soil-conditioning"
+          ],
+
+          suitableFeedingMethods: [
+            "limited-post-termination-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-dense-stand",
+            "monitor-canopy",
+            "terminate-before-mature-seed"
+          ],
+
+          optionalProcessingTasks: [
+            "mow",
+            "crimp",
+            "incorporate-residue",
+            "allow-limited-flock-cleanup"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "string-trimmer",
+            "scythe",
+            "sickle",
+            "garden-fork",
+            "broadfork"
+          ],
+
+          harvestPattern:
+            "termination",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "none",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            1,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          safetyWarnings: [
+            "Terminate before heavy seed maturity if volunteer Buckwheat is undesirable.",
+            "Do not incorporate excessively wet residue into poorly drained soils.",
+            "Delay chicken access until residue management objectives are complete.",
+            "Do not rely on this use path for meaningful grain production."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-maximum-grain-harvest",
+            "needs-immediate-vegetable-planting",
+            "cannot-manage-cover-crops"
+          ]
+        } 
+      ]
+    }
+  }, 
 
   };
 
