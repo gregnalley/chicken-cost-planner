@@ -1319,6 +1319,15 @@ function renderProfileSummary(
   `;
 }
 
+  /*
+    ============================================================
+    5. RANKING EXPLANATION HELPERS
+    ============================================================
+  */
+
+
+  // Converts a crop result’s category scores into sorted ranking details.
+
 function getRankingFactorDetails(
   cropResult
 ) {
@@ -1399,6 +1408,8 @@ function getRankingFactorDetails(
     });
 }
 
+// Selects the strongest scoring categories for one crop result.
+
 function getRankingStrengths(
   cropResult,
   maximumItems = 3
@@ -1411,6 +1422,8 @@ function getRankingStrengths(
     })
     .slice(0, maximumItems);
 }
+
+  // Converts a crop’s strongest categories into a compact HTML list.
 
 function renderRankingStrengths(
   cropResult
@@ -1458,6 +1471,8 @@ function renderRankingStrengths(
     </ul>
   `;
 }
+
+// Renders the top three eligible crops with their strongest ranking factors.
 
 function renderTopThreeRankings(
   eligibleCropResults
@@ -1510,6 +1525,15 @@ function renderTopThreeRankings(
     </ol>
   `;
 }
+
+  /*
+    ============================================================
+    6. PROFILE MATRIX
+    ============================================================
+  */
+
+
+  // Builds the profile expectation matrix and attaches its Analyze buttons.
 
 function renderProfileMatrix() {
   const summaryElement =
