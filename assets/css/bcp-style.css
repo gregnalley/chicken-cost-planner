@@ -2924,41 +2924,120 @@ nav a:hover{
   ==================================================
 */
 
-.profile-purpose {
+/*
+  ==================================================
+  Feed Crop Planner Matrix Column Layout
+  ==================================================
+*/
+
+#profile-matrix-table {
   width:
-    185px;
+    100%;
 
-  min-width:
-    185px;
+  table-layout:
+    fixed;
+}
 
-  max-width:
-    185px;
+/*
+  Column 1: Profile number
+*/
 
-  padding-left:
-    12px !important;
+#profile-matrix-table th:nth-child(1),
+#profile-matrix-table td:nth-child(1) {
+  width:
+    4%;
+}
 
-  padding-right:
-    12px !important;
+/*
+  Column 2: Sample Profile
+*/
 
+#profile-matrix-table th:nth-child(2),
+#profile-matrix-table td:nth-child(2) {
+  width:
+    15%;
+}
+
+/*
+  Column 3: Profile Summary
+*/
+
+#profile-matrix-table th:nth-child(3),
+#profile-matrix-table td:nth-child(3) {
+  width:
+    20%;
+}
+
+/*
+  Column 4: Expected Leader
+*/
+
+#profile-matrix-table th:nth-child(4),
+#profile-matrix-table td:nth-child(4) {
+  width:
+    12%;
+}
+
+/*
+  Column 5: Actual Leader
+*/
+
+#profile-matrix-table th:nth-child(5),
+#profile-matrix-table td:nth-child(5) {
+  width:
+    14%;
+}
+
+/*
+  Column 6: Top 3 Rankings
+*/
+
+#profile-matrix-table th:nth-child(6),
+#profile-matrix-table td:nth-child(6) {
+  width:
+    23%;
+}
+
+/*
+  Column 7: Result
+*/
+
+#profile-matrix-table th:nth-child(7),
+#profile-matrix-table td:nth-child(7) {
+  width:
+    7%;
+}
+
+/*
+  Column 8: Diagnostics
+*/
+
+#profile-matrix-table th:nth-child(8),
+#profile-matrix-table td:nth-child(8) {
+  width:
+    8%;
+}
+
+.profile-purpose,
+.profile-top-three {
   vertical-align:
     top;
 }
 
+.profile-purpose {
+  padding-left:
+    12px !important;
+
+  padding-right:
+    12px !important;
+}
+
 .profile-top-three {
-  width:
-    500px;
-
-  min-width:
-    500px;
-
   padding-left:
     18px !important;
 
   padding-right:
-    18px !important;
-
-  vertical-align:
-    top;
+    14px !important;
 }
 
 .profile-summary-list {
@@ -3039,20 +3118,10 @@ nav a:hover{
   align-items:
     baseline;
 
-  justify-content:
-    flex-start;
-
-  flex-wrap:
-    nowrap;
-
   line-height:
     1.25;
 }
 
-.top-ranking-heading strong {
-  white-space:
-    nowrap;
-}
 
 .top-ranking-score {
   flex:
