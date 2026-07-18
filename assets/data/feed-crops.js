@@ -27619,232 +27619,841 @@ plannerData: {
         }
       },
 
-            usePaths: {
-        freshTubers: {
-          enabled: true,
+             usePaths: [
+        {
+          id:
+            "fresh-whole-jerusalem-artichoke-tubers",
 
-          plannerPriority:
-            5,
+          label:
+            "Fresh Whole Jerusalem Artichoke Tubers",
 
-          laborScore:
-            2,
+          description:
+            "Sound freshly dug Jerusalem Artichoke tubers are brushed or washed, inspected, and offered whole to established adult chickens for supplemental produce and pecking enrichment.",
 
-          storageScore:
-            5,
+          primaryFeedRole:
+            "fresh-tuber-enrichment",
 
-          flockValueScore:
+          harvestProducts: [
+            "fresh-tubers",
+            "whole-tubers",
+            "fresh-produce"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-produce",
+            "fresh-supplement",
+            "pecking-enrichment",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [
+            "wash",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "garden-spade",
+            "harvest-basket",
+            "scrub-brush"
+          ],
+
+          harvestPattern:
+            "several",
+
+          harvestFrequencyCategory:
+            "flexible-seasonal",
+
+          storageMethods: [
+            "immediate-consumption",
+            "short-term-fresh",
+            "in-ground-storage"
+          ],
+
+          preferredStorageMethod:
+            "in-ground-until-needed",
+
+          storageDurationCategory:
+            "seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
             4,
 
-          householdValueScore:
-            5,
-
-          notes: [
-            "The primary backyard use for Jerusalem Artichoke.",
-            "Tubers may be harvested as needed from the ground.",
-            "Excellent for household food and supplemental poultry feeding.",
-            "Requires minimal processing."
-          ]
-        },
-
-        driedGroundTubers: {
-          enabled: true,
-
-          plannerPriority:
+          rodentRiskScore:
             3,
 
-          laborScore:
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
             5,
 
-          storageScore:
+          beginnerSuitabilityScore:
             4,
+
+          householdFoodValueScore:
+            5,
 
           flockValueScore:
             4,
 
-          householdValueScore:
-            2,
+          safetyWarnings: [
+            "Offer only sound tubers that are free from mold, rot, fermentation, chemical contamination, and serious deterioration.",
+            "Discard badly damaged, slimy, foul-smelling, frozen-and-deteriorated, or questionable tubers.",
+            "Introduce fresh tubers gradually and observe flock acceptance and manure condition.",
+            "Fresh tubers are supplemental produce and must not replace an age-appropriate complete poultry ration.",
+            "Do not allow unrestricted consumption of a large freshly harvested pile.",
+            "Protect the actively growing production patch from destructive digging and repeated poultry access."
+          ],
 
-          notes: [
-            "Supported by poultry nutrition research.",
-            "Requires washing, slicing, drying, and grinding.",
-            "Considerably more labor intensive than feeding fresh tubers.",
-            "Should remain a supplemental feed ingredient rather than a complete ration."
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "requires-high-protein-feed",
+            "cannot-dig-tubers",
+            "has-no-permanent-growing-area",
+            "requires-precise-feed-replacement-percentage"
           ]
         },
 
-        cutAndCarryGreens: {
-          enabled: true,
+        {
+          id:
+            "chopped-fresh-jerusalem-artichoke-tubers",
 
-          plannerPriority:
+          label:
+            "Chopped Fresh Jerusalem Artichoke Tubers",
+
+          description:
+            "Sound freshly dug tubers are cleaned and split, chopped, or crushed into manageable pieces before being offered as a measured supplemental food for adult chickens.",
+
+          primaryFeedRole:
+            "prepared-fresh-tuber-supplement",
+
+          harvestProducts: [
+            "fresh-tubers",
+            "chopped-tubers",
+            "fresh-produce"
+          ],
+
+          suitableFeedingMethods: [
+            "chopped-produce",
+            "measured-supplement",
+            "fresh-supplement",
+            "mixed-produce"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "clean-sort",
+            "chop"
+          ],
+
+          optionalProcessingTasks: [
+            "wash",
+            "crush",
+            "portion"
+          ],
+
+          requiredEquipment: [
+            "cutting-tool"
+          ],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "garden-spade",
+            "harvest-basket",
+            "scrub-brush",
+            "cutting-board",
+            "feed-pan"
+          ],
+
+          harvestPattern:
+            "several",
+
+          harvestFrequencyCategory:
+            "flexible-seasonal",
+
+          storageMethods: [
+            "immediate-consumption",
+            "short-term-fresh",
+            "in-ground-storage"
+          ],
+
+          preferredStorageMethod:
+            "prepare-immediately-before-feeding",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
             3,
 
-          laborScore:
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
             2,
 
-          storageScore:
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Use only sound clean tubers.",
+            "Prepare chopped tubers shortly before feeding because cut surfaces deteriorate more quickly than intact tubers.",
+            "Remove uneaten pieces before they spoil, freeze and deteriorate, or become contaminated.",
+            "Introduce the crop gradually rather than offering a large quantity at once.",
+            "Chopped tubers remain supplemental and must not displace excessive amounts of complete poultry feed.",
+            "Use safe cutting practices when preparing hard or irregularly shaped tubers."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-chopping",
+            "requires-long-term-prepared-storage",
+            "requires-complete-feed-replacement",
+            "requires-high-protein-feed",
+            "cannot-monitor-uneaten-fresh-feed"
+          ]
+        },
+
+        {
+          id:
+            "in-ground-winter-jerusalem-artichoke-tubers",
+
+          label:
+            "In-Ground Winter-Harvested Tubers",
+
+          description:
+            "Tubers remain in well-drained soil after top growth dies back and are dug in small quantities as needed for fresh winter poultry supplementation and household use.",
+
+          primaryFeedRole:
+            "non-electric-winter-tuber-storage",
+
+          harvestProducts: [
+            "winter-harvested-tubers",
+            "fresh-tubers",
+            "stored-in-ground-produce"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-produce",
+            "chopped-produce",
+            "winter-supplement",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [
+            "wash",
+            "chop",
+            "portion",
+            "apply-mulch"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "garden-spade",
+            "harvest-basket",
+            "heavy-mulch",
+            "row-marker"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "winter-as-needed",
+
+          storageMethods: [
+            "in-ground-storage"
+          ],
+
+          preferredStorageMethod:
+            "well-drained-soil-harvested-as-needed",
+
+          storageDurationCategory:
+            "long-seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Use in-ground storage only where soil remains well drained and reasonably accessible.",
+            "Do not rely on saturated, flood-prone, or persistently waterlogged soil for safe tuber storage.",
+            "Inspect every harvested tuber and discard rotten, moldy, foul-smelling, badly damaged, or deteriorated material.",
+            "Frozen soil may make tubers inaccessible even when the tubers remain alive.",
+            "Rodents and other wildlife may damage tubers left underground.",
+            "Winter-harvested tubers remain supplemental to complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "has-waterlogged-winter-soil",
+            "has-inaccessible-frozen-winter-soil",
+            "cannot-dig-during-winter",
+            "requires-indoor-ready-to-use-storage",
+            "has-severe-underground-rodent-pressure"
+          ]
+        },
+
+        {
+          id:
+            "fresh-young-jerusalem-artichoke-foliage",
+
+          label:
+            "Fresh Young Jerusalem Artichoke Foliage",
+
+          description:
+            "Tender young leaves and shoots are harvested through controlled cut-and-carry management and offered promptly as seasonal supplemental greens.",
+
+          primaryFeedRole:
+            "fresh-green-forage",
+
+          harvestProducts: [
+            "fresh-greens",
+            "young-leaves",
+            "tender-shoots",
+            "cut-foliage"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-supplement",
+            "seasonal-greens"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-tender-foliage",
+            "clean-sort"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-basket",
+            "feed-pan"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "seasonal-occasional",
+
+          storageMethods: [
+            "immediate-consumption",
+            "short-term-fresh"
+          ],
+
+          preferredStorageMethod:
+            "immediate-feeding",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
             1,
 
           flockValueScore:
             3,
 
-          householdValueScore:
-            1,
+          safetyWarnings: [
+            "Use tender young foliage rather than coarse mature stems.",
+            "Offer only clean foliage that is free from mold, disease deterioration, pesticides, herbicides, and other contamination.",
+            "Do not harvest heavily from weak, newly established, drought-stressed, or badly damaged plants.",
+            "Repeated heavy foliage removal may reduce tuber production and weaken the permanent patch.",
+            "Fresh foliage is supplemental greens and must not replace complete poultry feed.",
+            "Remove uneaten wilted foliage before it spoils."
+          ],
 
-          notes: [
-            "Tender young foliage may be offered fresh.",
-            "Heavy repeated cutting may reduce tuber production.",
-            "Mature stems become coarse and less desirable."
+          incompatibleUserTraits: [
+            "requires-long-term-storage",
+            "wants-tuber-production-only",
+            "requires-high-energy-feed",
+            "requires-high-protein-feed",
+            "cannot-manage-controlled-harvest"
           ]
         },
 
-        rabbitFeed: {
-          enabled: true,
+        {
+          id:
+            "dried-ground-jerusalem-artichoke-tubers",
 
-          plannerPriority:
+          label:
+            "Dried Ground Jerusalem Artichoke Tubers",
+
+          description:
+            "Sound tubers are cleaned, sliced, dried thoroughly, inspected, and ground for potential measured use as a supplemental ingredient within a properly formulated poultry ration.",
+
+          primaryFeedRole:
+            "processed-tuber-feed-ingredient",
+
+          harvestProducts: [
+            "dried-tuber-slices",
+            "ground-tuber-material",
+            "tuber-meal"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-feed-ingredient",
+            "measured-supplement",
+            "formulated-ration"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "wash",
+            "clean-sort",
+            "slice",
+            "dry",
+            "inspect-moisture",
+            "grind"
+          ],
+
+          optionalProcessingTasks: [
+            "portion",
+            "laboratory-test",
+            "ration-formulate"
+          ],
+
+          requiredEquipment: [
+            "cutting-tool",
+            "drying-equipment",
+            "feed-grinder"
+          ],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "garden-spade",
+            "scrub-brush",
+            "cutting-board",
+            "food-dehydrator",
+            "drying-rack",
+            "drying-screen",
+            "fan",
+            "moisture-meter",
+            "food-safe-container",
+            "rodent-proof-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal-processing-batch",
+
+          storageMethods: [
+            "dried-ground",
+            "airtight-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "cool-dry-airtight-after-complete-drying",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
             5,
 
-          laborScore:
-            2,
-
-          storageScore:
-            2,
-
-          flockValueScore:
-            5,
-
-          householdValueScore:
-            2,
-
-          notes: [
-            "One of the strongest rabbit feed crops in the database.",
-            "Both foliage and tubers have documented value.",
-            "Significantly increases overall homestead usefulness."
-          ]
-        },
-
-        householdFood: {
-          enabled: true,
-
-          plannerPriority:
-            5,
-
-          laborScore:
-            2,
-
-          storageScore:
-            5,
-
-          flockValueScore:
-            1,
-
-          householdValueScore:
-            5,
-
-          notes: [
-            "High-value edible crop for the household.",
-            "Can remain in the soil until needed.",
-            "Supports long-term food security."
-          ]
-        },
-
-        pollinatorSupport: {
-          enabled: true,
-
-          plannerPriority:
+          rodentRiskScore:
             4,
 
-          laborScore:
-            1,
-
-          storageScore:
-            1,
-
-          flockValueScore:
-            1,
-
-          householdValueScore:
+          storedInsectRiskScore:
             2,
 
-          notes: [
-            "Late-season flowers provide valuable nectar and pollen.",
-            "Supports beneficial insects during periods when other blooms are declining."
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Dry sliced tubers completely before grinding or enclosed storage.",
+            "Do not grind or store material that remains damp, warm, moldy, fermented, discolored, or foul-smelling.",
+            "Inspect stored material for condensation, clumping, heating, mold, rodents, and abnormal odor.",
+            "Controlled poultry studies do not establish a universal safe inclusion percentage for an unformulated backyard ration.",
+            "Do not copy a research-study inclusion rate without accounting for the complete ration, bird age, production stage, nutrient balance, and ingredient composition.",
+            "Ground tuber material must not replace necessary protein, amino acids, calcium, phosphorus, vitamins, minerals, or other components of complete poultry feed.",
+            "Seek qualified poultry-nutrition formulation guidance before using dried tuber meal as a meaningful ration ingredient.",
+            "Grinding and handling dry material may produce airborne dust."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "declines-grinding",
+            "has-no-protected-drying-area",
+            "has-no-dry-storage",
+            "requires-minimal-processing",
+            "requires-known-home-ration-inclusion-rate",
+            "wants-complete-feed-replacement"
           ]
         },
 
-        compostBiomass: {
-          enabled: true,
+        {
+          id:
+            "controlled-postharvest-tuber-access",
 
-          plannerPriority:
-            4,
+          label:
+            "Controlled Postharvest Tuber Access",
 
-          laborScore:
-            2,
+          description:
+            "Adult chickens receive limited supervised access to a selected harvested or exposed section of the patch for digging, pecking, and consumption of remaining sound tubers.",
 
-          storageScore:
-            1,
+          primaryFeedRole:
+            "postharvest-foraging-enrichment",
 
-          flockValueScore:
-            1,
+          harvestProducts: [
+            "exposed-tubers",
+            "remaining-tubers",
+            "postharvest-forage"
+          ],
 
-          householdValueScore:
-            2,
+          suitableFeedingMethods: [
+            "controlled-grazing",
+            "supervised-foraging",
+            "pecking-enrichment",
+            "seasonal-enrichment"
+          ],
 
-          notes: [
-            "Produces large amounts of above-ground biomass.",
-            "Excellent material for compost systems."
-          ]
-        },
+          requiredProcessingTasks: [
+            "expose-selected-tubers",
+            "limit-flock-access"
+          ],
 
-        seasonalPrivacyScreen: {
-          enabled: true,
+          optionalProcessingTasks: [
+            "dig-tubers",
+            "remove-damaged-material",
+            "restore-mulch"
+          ],
 
-          plannerPriority:
-            4,
+          requiredEquipment: [],
 
-          laborScore:
-            1,
+          helpfulEquipment: [
+            "temporary-fencing",
+            "portable-poultry-netting",
+            "digging-fork",
+            "garden-spade"
+          ],
 
-          storageScore:
-            1,
+          harvestPattern:
+            "several",
 
-          flockValueScore:
-            1,
+          harvestFrequencyCategory:
+            "postharvest-controlled",
 
-          householdValueScore:
+          storageMethods: [
+            "in-ground-storage",
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "expose-only-what-the-flock-can-use-promptly",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
             3,
 
-          notes: [
-            "Tall summer growth provides an effective seasonal screen.",
-            "Dies back naturally after frost."
-          ]
-        },
+          rodentRiskScore:
+            3,
 
-        permanentFoodSecurity: {
-          enabled: true,
-
-          plannerPriority:
-            5,
-
-          laborScore:
+          storedInsectRiskScore:
             1,
 
-          storageScore:
-            5,
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            2,
 
           flockValueScore:
             5,
 
-          householdValueScore:
-            5,
+          safetyWarnings: [
+            "Limit access to a selected portion of the patch rather than releasing chickens into the entire production area.",
+            "Inspect the area and remove rotten, moldy, contaminated, or severely damaged tubers before flock access.",
+            "Do not allow birds to consume excessive quantities or replace substantial amounts of complete feed.",
+            "End access before excessive digging damages retained planting tubers or spreads tuber fragments into unwanted areas.",
+            "Do not use this method where poultry can move tubers or contaminated soil into neighboring beds.",
+            "Protect spring shoots and actively growing plants from repeated chicken damage."
+          ],
 
-          notes: [
-            "This is the defining use path for Jerusalem Artichoke.",
-            "Functions as a long-term perennial infrastructure crop.",
-            "Returns dependable production year after year with very little annual input.",
-            "One of the strongest resilience crops available for mixed homesteads."
+          incompatibleUserTraits: [
+            "has-no-way-to-control-flock-access",
+            "requires-strict-crop-containment",
+            "cannot-monitor-foraging",
+            "has-a-small-unprotected-patch",
+            "requires-maximum-tuber-harvest"
           ]
         }
-      },
+      ], 
 
       dataQuality: {
         overallConfidence:
