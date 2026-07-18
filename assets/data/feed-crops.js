@@ -30321,7 +30321,99 @@ plannerData: {
         }
       },
 
-             usePaths: [
+            dataQuality: {
+        overallConfidence:
+          "strong",
+
+        evidenceStatus:
+          "supported-generalization",
+
+        researchedForBackyardUse:
+          true,
+
+        agronomicEvidenceStrength:
+          5,
+
+        poultryFeedEvidenceStrength:
+          3,
+
+        backyardYieldEvidenceStrength:
+          1,
+
+        storageEvidenceStrength:
+          4,
+
+        safetyEvidenceStrength:
+          4,
+
+        economicEvidenceStrength:
+          1,
+
+        verifiedFacts: [
+          "Buckwheat is a rapidly establishing short-season annual crop.",
+          "Buckwheat is frost sensitive.",
+          "Buckwheat performs best in well-drained soil.",
+          "Buckwheat is commonly grown as a grain, cover crop, and pollinator crop.",
+          "Mature Buckwheat grain can be used as a supplemental poultry-feed ingredient.",
+          "Buckwheat grain is not a nutritionally complete poultry ration.",
+          "Green Buckwheat tissue contains greater fagopyrin concern than mature grain.",
+          "Buckwheat grain requires appropriate drying and protected storage.",
+          "Buckwheat flowers and ripens grain unevenly.",
+          "Delayed harvest can result in seed shattering."
+        ],
+
+        supportedGeneralizations: [
+          "Buckwheat can provide useful supplemental energy grain for established adult chickens.",
+          "Whole mature grain can be offered in measured quantities where suitable grit is available.",
+          "Flowering Buckwheat can indirectly support chicken foraging by increasing insect activity.",
+          "Buckwheat can fit effectively between spring and fall garden crops.",
+          "Buckwheat can provide strong weed suppression after rapid canopy establishment.",
+          "Home-scale grain production is most practical where the grower can harvest, dry, thresh, clean, and store the crop."
+        ],
+
+        derivedPlannerValues: [
+          "Climate suitability scores",
+          "Space suitability scores",
+          "Labor and processing scores",
+          "Beginner-friendliness score",
+          "Storage-value score",
+          "Flock-purpose compatibility scores",
+          "Use-path suitability scores",
+          "Economic-value score"
+        ],
+
+        uncertainValues: [
+          "Backyard grain yield per square foot",
+          "Minimum useful planting area",
+          "Preferred production area",
+          "Feed savings per flock",
+          "Exact safe supplementation percentage",
+          "Small-scale harvest efficiency",
+          "Long-term storage life under typical backyard conditions",
+          "Reliable calcium percentage",
+          "Reliable phosphorus percentage"
+        ],
+
+        missingData: [
+          "Verified backyard grain yield per 100 square feet",
+          "Verified backyard labor hours per pound of cleaned grain",
+          "Verified flock-specific feeding limits",
+          "Verified backyard feed-cost savings",
+          "Verified minimum planting area for meaningful flock supplementation"
+        ],
+
+        notes: [
+          "Buckwheat agronomy is well documented through agricultural and extension literature.",
+          "Its use as an animal-feed grain is supported, but backyard-chicken-specific research is more limited than general livestock-feed research.",
+          "The planner should distinguish mature grain from green foliage because the safety and nutritional use paths are different.",
+          "Quantitative backyard yield and economic fields remain null rather than relying on converted commercial-acre estimates.",
+          "Use-path and suitability scores are planner interpretations based on the documented biology, management requirements, and feed characteristics of Buckwheat."
+        ]
+      
+      },
+
+usePaths: [
+
         {
           id:
             "whole-dried-buckwheat-seed-bearing-stems",
