@@ -935,7 +935,9 @@ const FEED_CROP_DISPLAY_ORDER = [
   "CROP-MULBERRY",
   "CROP-FIELD-CORN",
   "CROP-GRAIN-SORGHUM",
-  "CROP-OATS"
+  "CROP-OATS",
+  "CROP-WHEAT",
+  "CROP-JERUSALEM-ARTICHOKE"
 ];
 
 function escapeHTML(value) {
@@ -960,7 +962,10 @@ function getCropIcon(cropId) {
     "CROP-ALFALFA": "🌿",
     "CROP-MULBERRY": "🌳",
     "CROP-FIELD-CORN": "🌽",
-    "CROP-GRAIN-SORGHUM": "🌾"
+    "CROP-GRAIN-SORGHUM": "🌾",
+    "CROP-OATS": "🌾",
+    "CROP-WHEAT": "🌾",
+    "CROP-JERUSALEM-ARTICHOKE": "🥔"
   };
 
   return cropIcons[cropId] || "🌱";
@@ -1089,7 +1094,17 @@ function getCropGuide(cropId) {
     "CROP-OATS": {
      url: "growing-oats-for-chickens.html",
       label: "Read Full Oats Growing Guide →"
-    }
+    },
+
+    "CROP-WHEAT": {
+      url: "growing-wheat-for-chickens.html",
+       label: "Read Full Wheat Growing Guide →"
+    },
+
+    "CROP-JERUSALEM-ARTICHOKE": {
+      url: "growing-jerusalem-artichokes-for-chickens.html",
+       label: "Read Full Jerusalem Artichoke Growing Guide →"
+    },
 
   };
 
