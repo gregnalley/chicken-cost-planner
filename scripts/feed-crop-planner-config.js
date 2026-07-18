@@ -319,22 +319,14 @@ const HARVEST_FREQUENCY_CATEGORIES =
     })
   ]);
 
-  const EXPECTED_CROP_IDS = Object.freeze([
-    "CROP-SUNFLOWER",
-    "CROP-COWPEA",
-    "CROP-PROSO-MILLET",
-    "CROP-PUMPKIN-WINTER-SQUASH",
-    "CROP-KALE-COLLARDS",
-    "CROP-WHITE-CLOVER",
-    "CROP-ALFALFA",
-    "CROP-MULBERRY",
-    "CROP-FIELD-CORN",
-    "CROP-GRAIN-SORGHUM",
-    "CROP-OATS",
-    "CROP-WHEAT",
-    "CROP-JERUSALEM-ARTICHOKE",
-    "CROP-BUCKWHEAT"
-  ]);
+  const EXPECTED_CROP_IDS =
+  Object.freeze(
+    typeof BCP_FEED_CROPS !== "undefined" &&
+    BCP_FEED_CROPS &&
+    typeof BCP_FEED_CROPS === "object"
+      ? Object.keys(BCP_FEED_CROPS)
+      : []
+  );
 
   // ==================================================
   // Profile 1
