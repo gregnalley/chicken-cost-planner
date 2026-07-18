@@ -332,7 +332,8 @@ const HARVEST_FREQUENCY_CATEGORIES =
     "CROP-GRAIN-SORGHUM",
     "CROP-OATS",
     "CROP-WHEAT",
-    "CROP-JERUSALEM-ARTICHOKE"
+    "CROP-JERUSALEM-ARTICHOKE",
+    "CROP-BUCKWHEAT"
   ]);
 
   // ==================================================
