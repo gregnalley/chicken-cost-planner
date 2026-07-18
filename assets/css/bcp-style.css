@@ -2926,19 +2926,19 @@ nav a:hover{
 
 .profile-purpose {
   width:
-    210px;
+    185px;
 
   min-width:
-    210px;
+    185px;
 
   max-width:
-    210px;
+    185px;
 
   padding-left:
-    14px !important;
+    12px !important;
 
   padding-right:
-    14px !important;
+    12px !important;
 
   vertical-align:
     top;
@@ -2946,10 +2946,10 @@ nav a:hover{
 
 .profile-top-three {
   width:
-    430px;
+    500px;
 
   min-width:
-    430px;
+    500px;
 
   padding-left:
     18px !important;
@@ -2977,21 +2977,27 @@ nav a:hover{
     flex;
 
   gap:
-    8px;
+    6px;
 
   align-items:
     flex-start;
 
   margin-bottom:
-    7px;
+    6px;
+
+  font-size:
+    0.96rem;
 
   line-height:
-    1.25;
+    1.2;
 }
 
-.profile-summary-list li:last-child {
-  margin-bottom:
-    0;
+.profile-summary-icon {
+  flex:
+    0 0 20px;
+
+  text-align:
+    center;
 }
 
 .profile-summary-icon {
@@ -3028,19 +3034,33 @@ nav a:hover{
     flex;
 
   gap:
-    5px;
+    6px;
 
   align-items:
     baseline;
 
+  justify-content:
+    flex-start;
+
   flex-wrap:
-    wrap;
+    nowrap;
 
   line-height:
     1.25;
 }
 
+.top-ranking-heading strong {
+  white-space:
+    nowrap;
+}
+
 .top-ranking-score {
+  flex:
+    0 0 auto;
+
+  margin-left:
+    0;
+
   white-space:
     nowrap;
 }
