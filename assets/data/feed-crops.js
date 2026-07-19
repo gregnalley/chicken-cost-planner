@@ -36158,8 +36158,2992 @@ usePaths: [
         ]
       }
     }
+  },
+
+  ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - COMFREY
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
+
+  "CROP-COMFREY": {
+    id:
+      "CROP-COMFREY",
+
+    name:
+      "Comfrey",
+
+    scientificName:
+      "Symphytum officinale and Symphytum × uplandicum",
+
+    category:
+      "Perennial Leafy Forage, Biomass, Pollinator, and Soil-Support Crop",
+
+    cropType:
+      "Perennial",
+
+    seasonType:
+      "Cool-to-Warm Season Perennial",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Comfrey is a deep-rooted herbaceous perennial grown primarily for repeated leafy biomass, mulch, compost material, pollinator support, and limited supplemental livestock forage. Common comfrey, Russian comfrey, and named Bocking cultivars should not be treated as identical. Common comfrey may produce viable seed, while sterile Bocking selections are normally propagated vegetatively. Chickens may consume fresh, wilted, or dried leaves, but comfrey contains pyrrolizidine alkaloids and should remain a minor supplement rather than a primary ration ingredient. Roots should not be fed, and drying should not be represented as eliminating pyrrolizidine alkaloids. Comfrey is strongest in the planner as a permanent biomass and homestead-support crop rather than as a direct replacement for complete poultry feed.",
+
+    chickenUse: {
+      edibleParts: [
+        "Clean leaves offered in limited amounts",
+        "Freshly cut leaves",
+        "Briefly wilted leaves",
+        "Properly dried leaves",
+        "Measured dried leaf meal used only in a properly formulated ration"
+      ],
+
+      primaryValue: [
+        "Seasonal supplemental greens",
+        "Moderate leaf-protein contribution on a dry-matter basis",
+        "Mineral-rich leafy material",
+        "Repeated cut-and-carry harvests",
+        "Pecking enrichment",
+        "High biomass for mulch and compost",
+        "Strong pollinator support",
+        "Long-term perennial production"
+      ],
+
+      feedingForms: [
+        "Small measured portions of fresh chopped leaves",
+        "Briefly wilted leaves",
+        "Whole leaves secured for supervised pecking",
+        "Properly dried leaves",
+        "Coarsely crumbled dried leaf",
+        "Measured dried leaf meal in a professionally formulated ration"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving an age-appropriate complete base ration",
+        "Homesteads seeking a permanent biomass crop",
+        "Properties with orchards, compost systems, or pollinator plantings",
+        "Growers comfortable with permanent perennial placement",
+        "Cut-and-carry feeding systems",
+        "Small flocks where supplemental quantities can be controlled"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Positively identify the planting before feeding it. Harvest clean leaves from plants that have not been exposed to pesticides, herbicides, roadside contamination, animal waste, or mold. Offer only modest quantities alongside an age-appropriate complete poultry ration. Fresh leaves may be chopped or briefly wilted. Leaves intended for storage must be dried thoroughly with good airflow. Drying reduces moisture but should not be represented as eliminating pyrrolizidine alkaloids. Do not feed roots. Introduce comfrey gradually and discontinue it if appetite, droppings, behavior, or production changes adversely.",
+
+      safetyNotes:
+        "Comfrey contains pyrrolizidine alkaloids that can cause liver injury after sufficient exposure. Concentrations vary with species, cultivar, plant part, maturity, environment, and analytical method; roots generally warrant greater concern than leaves. Do not feed roots, unrestricted quantities of leaves, moldy material, chemically contaminated material, or unidentified Symphytum plants. Do not assume that Bocking 14, common comfrey, Russian comfrey, and seed-grown plants have identical chemistry. Drying does not reliably remove pyrrolizidine alkaloids. Controlled poultry studies do not establish a universal safe backyard feeding percentage. Young chicks should continue receiving a complete age-appropriate starter ration rather than meaningful comfrey supplements."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate composition of comfrey foliage, usually reported on a dry-matter basis. Values vary by species, cultivar, cutting date, leaf maturity, soil fertility, moisture, processing, and analytical method. Fresh leaves contain very high moisture and should not be compared directly with dried leaf meal.",
+
+      crudeProteinPercent:
+        "Variable; published forage references commonly report moderate-to-high crude protein in dried foliage, but no single percentage is dependable across species, cultivars, growth stages, and harvest systems",
+
+      fatPercent:
+        null,
+
+      fiberPercent:
+        "Lower in young leaves and higher as foliage and stems mature; mature coarse stems are less suitable as poultry forage",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      notableNutrients: [
+        "Leaf protein",
+        "Potassium",
+        "Calcium",
+        "Magnesium",
+        "Phosphorus",
+        "Iron",
+        "Leaf pigments",
+        "Mucilage",
+        "Allantoin",
+        "Mineral-rich ash fraction"
+      ],
+
+      limitations: [
+        "Comfrey is not a complete poultry ration",
+        "Fresh foliage may contain approximately 85% to 90% water",
+        "High moisture limits dry-matter and energy intake",
+        "Pyrrolizidine alkaloids create a meaningful safety limitation",
+        "Roots should not be fed",
+        "Species and cultivars may differ chemically",
+        "Drying does not reliably eliminate pyrrolizidine alkaloids",
+        "Leaf-protein percentage does not establish a safe feeding rate",
+        "Experimental inclusion levels should not be copied into backyard mixtures",
+        "Older leaves and stems become coarser and less palatable",
+        "Hairy living foliage may be less readily consumed than cut or wilted leaves",
+        "Large supplemental quantities can dilute balanced nutrients",
+        "The crop does not supply the calcium balance required by laying hens",
+        "Long-term safe inclusion rates for backyard flocks are not established"
+      ]
+    },
+
+    growing: {
+      sunlight:
+        "Partial sun to full sun. Full sun generally supports heavier biomass and flowering, while afternoon shade may reduce heat and moisture stress in hot climates.",
+
+      soilTemperatureMinimumF:
+        null,
+
+      idealSoilTemperatureF:
+        null,
+
+      frostTolerance:
+        "Active foliage is damaged or killed by hard frost, while established crowns and roots are winter hardy in many temperate climates and normally regrow in spring.",
+
+      heatTolerance:
+        "Moderate to High when established and supplied with adequate moisture",
+
+      droughtTolerance:
+        "Moderate to High after establishment, although prolonged drought reduces leaf production and harvest frequency",
+
+      soilPHMinimum:
+        6.0,
+
+      soilPHMaximum:
+        7.0,
+
+      waterNeeds:
+        "Moderate. Consistent moisture supports vigorous repeated regrowth. Established plants may survive temporary drought, but biomass production declines when moisture is limited.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        true,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      plantSpacingInches:
+        "Approximately 24 to 36 inches for permanent plants",
+
+      rowSpacingInches:
+        "Approximately 36 to 48 inches",
+
+      plantingDepthInches:
+        "Root cuttings are commonly planted approximately 2 to 4 inches deep; crown divisions are planted with the crown near the soil surface",
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        true
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant root cuttings or crown divisions in spring after the soil can be worked. Established roots normally overwinter and resume growth after dormancy.",
+
+        harvestWindow:
+          "Harvest conservatively during the first year. Established plants may provide repeated spring and summer cuts, with the final harvest timed early enough to allow recovery before hard frost."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Plant in spring or early autumn while soil moisture supports establishment. Avoid sites with chronic standing water.",
+
+        harvestWindow:
+          "Harvest established plants repeatedly from late spring through early autumn. Allow recovery between cuts and before winter dormancy."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Plant from late winter through spring or during early autumn when heat and drought stress are lower.",
+
+        harvestWindow:
+          "Harvest from spring into autumn. Summer regrowth may slow during severe heat or drought and recover when moisture improves."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant during the cooler portion of the year, commonly autumn through early spring, with irrigation during establishment.",
+
+        harvestWindow:
+          "Harvest during active growth while avoiding severe repeated cutting during extreme heat, drought, or saturated-soil periods."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant in spring after severe frost or in early autumn where winter conditions permit establishment. Select a site with dependable irrigation and protection from reflected heat.",
+
+        harvestWindow:
+          "Harvest during active irrigated growth. Biomass and regrowth decline sharply when water is restricted."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Plant in spring or autumn in moist, well-drained soil. Control fertile seed-producing forms where volunteer spread is undesirable.",
+
+        harvestWindow:
+          "Repeated harvests are possible through the long cool growing season. Maintain airflow and avoid storing damp leaves."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during mild spring or autumn weather where dependable moisture is available.",
+
+        harvestWindow:
+          "Harvest repeatedly during active growth. Cool maritime sites may support a long harvest season, while dry-summer locations require irrigation."
+      }
+    },
+    
+        spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Fresh leaves are highly perishable. Thoroughly dried leaves may store for a moderate period under cool, dark, dry, airtight, insect-resistant, and rodent-resistant conditions.",
+
+      storageMethod:
+        "Use fresh leaves promptly or dry them in thin layers with strong airflow. Store only after leaves are fully dry and cool. Inspect stored material for condensation, heating, mold, insects, and musty odors.",
+
+      yieldNotes:
+        "Backyard yield fields remain null because comfrey biomass varies greatly with species, cultivar, stand age, fertility, moisture, climate, spacing, cutting height, harvest frequency, and whether yield is reported as fresh weight or dry matter."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Low when fertile seed is available; moderate for named sterile cultivars, crowns, or root cuttings",
+
+      equipmentCostEstimate:
+        "Low. Basic planting tools, cutting tools, harvest containers, drying racks, and storage containers are normally sufficient.",
+
+      irrigationCostLevel:
+        "Low to Moderate after establishment",
+
+      laborLevel:
+        "Low to Moderate after establishment, with repeated seasonal cutting creating the principal workload",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Comfrey may provide value through repeated mulch, compost material, pollinator support, and minor poultry supplementation. Its strongest economic contribution is often reduced purchase of biomass-related inputs rather than direct replacement of complete poultry feed."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for perennial growth, vegetative propagation, repeated regrowth, high fresh-leaf moisture, biomass use, pollinator value, and pyrrolizidine-alkaloid occurrence; moderate for general livestock-forage value and poultry use in controlled formulated diets; limited for universal backyard feeding percentages, long-term unrestricted chicken use, backyard yield per square foot, and measurable feed-cost replacement",
+
+      sources: [
+        {
+          title:
+            "Comfrey in the Garden",
+
+          organization:
+            "Utah State University Extension",
+
+          url:
+            "https://extension.usu.edu/yardandgarden/research/comfrey-in-the-garden",
+
+          use:
+            "Perennial growth, site preference, propagation, planting depth, spacing, establishment, and garden management"
+        },
+
+        {
+          title:
+            "Comfrey",
+
+          organization:
+            "University of Wisconsin Alternative Field Crops Manual",
+
+          url:
+            "https://corn.agronomy.wisc.edu/Crops/Comfrey.aspx",
+
+          use:
+            "Forage history, high leaf moisture, comparative forage performance, harvest, preservation difficulty, and agricultural limitations"
+        },
+
+        {
+          title:
+            "Comfrey (Symphytum spp.) as an Alternative Field Crop Contributing to Protein Supply in Broiler Nutrition",
+
+          organization:
+            "Peer-reviewed poultry nutrition study indexed by PubMed",
+
+          url:
+            "https://pubmed.ncbi.nlm.nih.gov/32634689/",
+
+          use:
+            "Controlled broiler-diet research and limits on extrapolation to backyard feeding"
+        },
+
+        {
+          title:
+            "LC-MS/MS Evaluation of Pyrrolizidine Alkaloids Profile in Relation to Safety of Comfrey Roots and Leaves",
+
+          organization:
+            "Peer-reviewed phytochemical research",
+
+          url:
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10459857/",
+
+          use:
+            "Pyrrolizidine-alkaloid profiles and plant-part differences"
+        },
+
+        {
+          title:
+            "Comfrey",
+
+          organization:
+            "LiverTox, National Institute of Diabetes and Digestive and Kidney Diseases",
+
+          url:
+            "https://www.ncbi.nlm.nih.gov/books/NBK548370/",
+
+          use:
+            "Pyrrolizidine-alkaloid toxicity and conservative oral-use safety context"
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-19",
+
+      researchNotes: [
+        "Model Comfrey primarily as a perennial biomass and support crop rather than a concentrated poultry-feed crop.",
+        "Distinguish common comfrey, Russian comfrey, and named Bocking cultivars.",
+        "Do not assume seed-grown comfrey is sterile Bocking 14.",
+        "Keep fresh leaves, wilted leaves, dried leaves, and dried leaf meal as separate use paths.",
+        "Do not create a root-feeding use path.",
+        "Do not state that drying eliminates pyrrolizidine alkaloids.",
+        "Do not assign a universal backyard inclusion percentage.",
+        "Do not copy controlled broiler-study inclusion rates into an unbalanced home ration.",
+        "Model first-year establishment separately from mature repeated harvest.",
+        "Model drought survival separately from maximum biomass production.",
+        "Model permanent placement and difficult removal as major planner considerations.",
+        "Keep backyard yield values null until dependable small-plot evidence is available.",
+        "Model pollinator support and compost biomass as major non-feed values.",
+        "Do not recommend comfrey as human food.",
+        "Continue requiring an age-appropriate complete poultry ration."
+      ]
+    },
+
+    plannerData: {
+      schemaVersion:
+        "2.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Comfrey",
+
+        shortLabel:
+          "Comfrey",
+
+        icon:
+          "🌿",
+
+        cropCategory:
+          "perennial-greens-and-biomass",
+
+        primaryFeedCategory:
+          "supplemental-forage",
+
+        guideUrl:
+          "growing-comfrey-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "herbaceous-perennial",
+
+        isAnnual:
+          false,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          true,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          2,
+
+        expectedUsefulLifeYears:
+          null,
+
+        regrowsAfterHarvest:
+          true,
+
+        permanentPlantingRequired:
+          true,
+
+        reversibleAfterOneSeason:
+          false
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "mild-winter"
+        ],
+
+        challengingClimateTypes: [
+          "hot-dry",
+          "waterlogged-summer-soil",
+          "extreme-reflected-heat"
+        ],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          null,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          4,
+
+        droughtClimateToleranceScore:
+          4,
+
+        humidityToleranceScore:
+          4,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          2,
+
+        winterHardinessRequired:
+          true,
+
+        seasonExtensionBenefits: [
+          "Mulch conserves establishment moisture.",
+          "Temporary afternoon shade may reduce heat stress.",
+          "Irrigation after cutting improves regrowth.",
+          "Protected drying space helps during wet weather."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "herbaceous-perennial",
+
+          frostSensitive:
+            false,
+
+          commonlyDirectSeeded:
+            false,
+
+          winterDormancyPossible:
+            true,
+
+          heatDormancyPossible:
+            false,
+
+          longLivedPerennial:
+            true,
+
+          dormantTubersColdHardy:
+            false,
+
+          activeTopGrowthFrostSensitive:
+            true,
+
+          droughtRecoveryPotential:
+            true,
+
+          notes: [
+            "Established crowns normally survive winter.",
+            "Hard frost kills exposed foliage.",
+            "Spring regrowth begins from the crown.",
+            "Drought reduces harvest frequency.",
+            "Repeated harvest depends on regrowth conditions rather than fixed maturity days."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          3,
+
+        productiveMinimumSunHours:
+          5,
+
+        preferredSunHours:
+          7,
+
+        shadeToleranceScore:
+          4,
+
+        afternoonShadeBenefitInHeat:
+          4,
+
+        windToleranceScore:
+          4,
+
+        lodgingRiskScore:
+          2,
+
+        reflectedHeatToleranceScore:
+          3,
+
+        airflowRequirementScore:
+          3,
+
+        frostPocketSensitivityScore:
+          1,
+
+        treeRootCompetitionToleranceScore:
+          4,
+
+        hardscapeConflictRiskScore:
+          3,
+
+        structureConflictRiskScore:
+          3,
+
+        utilityConflictRiskScore:
+          3,
+
+        fruitDropMessRiskScore:
+          1,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun-to-partial-shade",
+
+          productiveSunGuidance:
+            "Approximately 5 or more hours of direct sunlight can support useful production, with greater biomass generally produced in brighter sites where moisture remains adequate.",
+
+          windExposureConcern:
+            false,
+
+          growthHabit:
+            "deep-rooted-clumping-herbaceous-perennial",
+
+          matureHeightFtMinimum:
+            2,
+
+          matureHeightFtMaximum:
+            4,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            false,
+
+          undergroundSpreadConcern:
+            true,
+
+          notes: [
+            "Plants form broad permanent clumps.",
+            "Flowering attracts bees.",
+            "Root fragments can regenerate.",
+            "Fertile forms may spread by seed.",
+            "Choose the location carefully before planting."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            4,
+
+          clayLoam:
+            5,
+
+          loam:
+            5,
+
+          sandyLoam:
+            4,
+
+          verySandy:
+            2,
+
+          rocky:
+            3
+        },
+
+        drainageRequirementScore:
+          4,
+
+        temporaryWetToleranceScore:
+          3,
+
+        waterloggingSensitivityScore:
+          4,
+
+        minimumSoilDepthIn:
+          12,
+
+        preferredSoilDepthIn:
+          24,
+
+        compactionToleranceScore:
+          3,
+
+        establishmentInSodDifficultyScore:
+          3,
+
+        preferredPHMinimum:
+          6.0,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          4,
+
+        nitrogenRequirementScore:
+          4,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          4,
+
+        benefitsFromInoculation:
+          false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          2,
+
+        amendmentEffortScore:
+          2,
+
+        directFacts: {
+          preferredDrainage:
+            "moist-well-drained",
+
+          preferredTextures: [
+            "loam",
+            "clay loam",
+            "moist fertile garden soil"
+          ],
+
+          nitrogenFixingLegume:
+            false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          notes: [
+            "Fertile moist soil produces the most biomass.",
+            "The crop does not fix nitrogen.",
+            "Repeated cutting removes nutrients.",
+            "Deep rooting supports nutrient recovery but does not create nutrients.",
+            "Permanent beds are preferable to routine tillage."
+          ]
+        }
+      },
+
+            water: {
+        establishmentWaterRequirementScore:
+          4,
+
+        matureWaterRequirementScore:
+          3,
+
+        droughtSurvivalScore:
+          4,
+
+        droughtProductionScore:
+          2,
+
+        irrigationResponseScore:
+          5,
+
+        standingWaterToleranceScore:
+          2,
+
+        mulchBenefitScore:
+          5,
+
+        preferredAnnualRainfallInchesMinimum:
+          null,
+
+        preferredAnnualRainfallInchesMaximum:
+          null,
+
+        supplementalIrrigationRecommended:
+          true,
+
+        irrigationCriticalStages: [
+          "Initial establishment",
+          "Immediately after planting root cuttings or crown divisions",
+          "Following each major harvest",
+          "Extended hot, dry weather",
+          "Periods of active regrowth"
+        ],
+
+        directFacts: {
+          establishmentNeedsConsistentMoisture:
+            true,
+
+          maturePlantsHandleShortDryPeriods:
+            true,
+
+          irrigationImprovesYield:
+            true,
+
+          excessiveWaterCausesProblems:
+            true,
+
+          mulchRecommended:
+            true,
+
+          notes: [
+            "Consistent soil moisture produces the highest biomass.",
+            "Established plants tolerate temporary drought better than newly planted crowns.",
+            "Repeated harvest removes significant leaf area and is followed by best regrowth when adequate moisture is available.",
+            "Avoid chronically saturated soils that encourage crown decline."
+          ]
+        }
+      },
+
+      space: {
+        recommendedPlantSpacingInchesMinimum:
+          24,
+
+        recommendedPlantSpacingInchesMaximum:
+          36,
+
+        recommendedRowSpacingInchesMinimum:
+          36,
+
+        recommendedRowSpacingInchesMaximum:
+          48,
+
+        squareFootEfficiencyScore:
+          3,
+
+        verticalGrowingPotentialScore:
+          1,
+
+        containerSuitabilityScore:
+          2,
+
+        raisedBedSuitabilityScore:
+          4,
+
+        permanentBedSuitabilityScore:
+          5,
+
+        orchardCompanionScore:
+          5,
+
+        foodForestSuitabilityScore:
+          5,
+
+        livestockIntegrationScore:
+          5,
+
+        rootCompetitionToleranceScore:
+          4,
+
+        expansionDifficultyScore:
+          5,
+
+        removalDifficultyScore:
+          5,
+
+        directFacts: {
+          growthHabit:
+            "large perennial clump",
+
+          spreadsAggressivelyBySeed:
+            false,
+
+          spreadsByRootFragments:
+            true,
+
+          requiresPermanentLocation:
+            true,
+
+          suitableForSmallUrbanGardens:
+            false,
+
+          notes: [
+            "Choose the planting location carefully before installation.",
+            "Root fragments remaining in the soil frequently regenerate.",
+            "Named Bocking cultivars are generally sterile and do not spread by viable seed.",
+            "Common comfrey may self-seed under favorable conditions.",
+            "Large mature plants occupy significant permanent space."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForBabyChicks:
+          false,
+
+        suitableForGrowers:
+          false,
+
+        suitableForAdultLayers:
+          true,
+
+        suitableForBroilers:
+          true,
+
+        suitableForBreedingFlocks:
+          true,
+
+        freeChoiceFeeding:
+          false,
+
+        shouldBePrimaryFeed:
+          false,
+
+        shouldBeSupplementOnly:
+          true,
+
+        seasonalAvailabilityScore:
+          4,
+
+        palatabilityScore:
+          3,
+
+        enrichmentValueScore:
+          4,
+
+        forageReplacementPotentialScore:
+          2,
+
+        completeFeedReplacementPotentialScore:
+          1,
+
+        layingHenBenefitScore:
+          3,
+
+        broilerBenefitScore:
+          3,
+
+        mixedFlockSuitabilityScore:
+          4,
+
+        directFacts: {
+          primaryPurpose:
+            "supplemental perennial forage and biomass crop",
+
+          feedRoots:
+            false,
+
+          feedLeaves:
+            true,
+
+          feedFlowers:
+            false,
+
+          feedSeeds:
+            false,
+
+          unrestrictedFeedingRecommended:
+            false,
+
+          completeRationStillRequired:
+            true,
+
+          notes: [
+            "Offer only moderate supplemental quantities.",
+            "Fresh, wilted, or dried leaves are the normal poultry feed material.",
+            "Roots should never be fed.",
+            "Comfrey is most valuable as part of a diversified forage system rather than as a primary feed ingredient."
+          ]
+        }
+      },
+
+            labor: {
+        beginnerFriendlinessScore:
+          4,
+
+        plantingEaseScore:
+          4,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          5,
+
+        weedControlEaseScore:
+          5,
+
+        wildlifeProtectionEaseScore:
+          4,
+
+        harvestEaseScore:
+          5,
+
+        freshLeafProcessingEaseScore:
+          5,
+
+        refrigeratedStorageEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          4,
+
+        heavyLiftingRiskScore:
+          1,
+
+        weeklyLaborLevel:
+          "low",
+
+        peakWorkloadLevel:
+          "moderate",
+
+        harvestFrequencyCategory:
+          "multiple-seasonal",
+
+        requiredPlantingTasks: [
+          "select-permanent-location",
+          "prepare-planting-site",
+          "plant-root-cuttings-or-crown-divisions",
+          "water-during-establishment"
+        ],
+
+        optionalPlantingTasks: [
+          "add-compost",
+          "mulch",
+          "install-drip-irrigation",
+          "install-root-containment",
+          "label-cultivar",
+          "divide-existing-crowns"
+        ],
+
+        requiredMaintenanceTasks: [
+          "monitor-soil-moisture",
+          "control-weeds-during-establishment",
+          "allow-regrowth-between-harvests",
+          "inspect-for-unwanted-spread",
+          "remove-damaged-or-diseased-foliage"
+        ],
+
+        optionalMaintenanceTasks: [
+          "apply-compost",
+          "apply-mulch",
+          "irrigate-after-harvest",
+          "remove-flower-stalks",
+          "divide-overcrowded-crowns",
+          "contain-root-spread",
+          "control-volunteer-seedlings"
+        ],
+
+        requiredHarvestTasks: [
+          "cut-leaves",
+          "inspect-harvest",
+          "separate-leaves-from-coarse-stems",
+          "allow-crown-recovery"
+        ],
+
+        optionalHarvestTasks: [
+          "chop",
+          "briefly-wilt",
+          "bundle-leaves",
+          "sort-by-intended-use",
+          "dry",
+          "crumbled-dried-leaf",
+          "grind-dried-leaf"
+        ],
+
+        requiredStorageTasks: [
+          "store-fresh-material-only-briefly",
+          "dry-material-thoroughly-before-enclosed-storage",
+          "protect-dried-material-from-moisture",
+          "protect-dried-material-from-rodents",
+          "inspect-stored-material"
+        ],
+
+        optionalStorageTasks: [
+          "use-drying-racks",
+          "use-drying-screens",
+          "use-fan-assisted-airflow",
+          "store-in-food-safe-containers",
+          "label-storage-date",
+          "portion-dried-material"
+        ],
+
+        requiredSkills: [
+          "basic-perennial-planting",
+          "positive-crop-identification",
+          "safe-hand-harvesting",
+          "basic-spoilage-recognition",
+          "controlled-supplemental-feeding"
+        ],
+
+        optionalSkills: [
+          "crown-division",
+          "root-cutting-propagation",
+          "perennial-bed-management",
+          "air-drying",
+          "dehydrator-use",
+          "forage-meal-preparation",
+          "root-spread-containment"
+        ],
+
+        requiredEquipment: [
+          "hand-trowel-or-spade",
+          "cutting-tool",
+          "harvest-container"
+        ],
+
+        helpfulEquipment: [
+          "garden-fork",
+          "hand-pruners",
+          "sickle",
+          "harvest-basket",
+          "wheelbarrow",
+          "garden-cart",
+          "drip-irrigation",
+          "mulch",
+          "drying-rack",
+          "drying-screen",
+          "box-fan",
+          "dehydrator",
+          "food-safe-container",
+          "rodent-resistant-storage",
+          "feed-scale",
+          "forage-chopper",
+          "feed-grinder"
+        ],
+
+        laborBottlenecks: [
+          "Repeated cutting during peak growth",
+          "Handling bulky high-moisture leaves",
+          "Drying thick or densely packed foliage",
+          "Preventing mold during humid weather",
+          "Monitoring permanent spread",
+          "Removing established roots from an unsuitable location",
+          "Separating clean leaves from coarse stems and damaged material"
+        ],
+
+        laborReductionStrategies: [
+          "Plant near the compost area or chicken-keeping area.",
+          "Use sterile named cultivars where seed spread is undesirable.",
+          "Mulch the planting during establishment.",
+          "Use drip irrigation or a nearby water source.",
+          "Harvest modest amounts frequently rather than one oversized wet load.",
+          "Use fresh cut-and-carry feeding when storage is unnecessary.",
+          "Use drying racks or screens that permit airflow from multiple directions.",
+          "Plant only as much Comfrey as the household can realistically harvest and manage.",
+          "Reserve drying and grinding for material that has a clear planned use."
+        ],
+
+        directFacts: {
+          annualReplantingRequired:
+            false,
+
+          repeatedHarvestRequired:
+            true,
+
+          freshUseRequiresMinimalProcessing:
+            true,
+
+          dryStorageRequiresProcessing:
+            true,
+
+          threshingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          permanentBedManagementRequired:
+            true,
+
+          removalCanBeLaborIntensive:
+            true,
+
+          notes: [
+            "Planting labor is concentrated during initial establishment.",
+            "Routine care is generally low after plants become established.",
+            "Repeated cutting is the main recurring labor requirement.",
+            "Fresh leaves require little preparation but have poor storage life.",
+            "Drying increases storage flexibility but adds labor and spoilage risk.",
+            "Root fragments left in the soil can regenerate.",
+            "Removing an established patch can require repeated digging and follow-up control.",
+            "Labor requirements depend strongly on whether Comfrey is used fresh, wilted, dried, ground, composted, or applied as mulch."
+          ]
+        }
+      },
+
+      cost: {
+        startupCostLevel:
+          "low-moderate",
+
+        annualInputCostLevel:
+          "low",
+
+        plantingMaterialCostLevel:
+          "low-moderate",
+
+        soilPreparationCostLevel:
+          "low",
+
+        fertilityCostLevel:
+          "low-moderate",
+
+        irrigationCostLevel:
+          "low-moderate",
+
+        wildlifeProtectionCostLevel:
+          "low",
+
+        harvestEquipmentCostLevel:
+          "low",
+
+        processingEquipmentCostLevel:
+          "low-moderate",
+
+        storageEquipmentCostLevel:
+          "low-moderate",
+
+        containmentCostLevel:
+          "low-moderate",
+
+        removalCostRiskLevel:
+          "moderate-high",
+
+        annualSeedPurchaseRequired:
+          false,
+
+        annualReplantingRequired:
+          false,
+
+        reusablePlantingMaterial:
+          true,
+
+        plantingMaterialCanMultiply:
+          true,
+
+        specializedPlantingEquipmentRequired:
+          false,
+
+        specializedHarvestEquipmentRequired:
+          false,
+
+        specializedProcessingEquipmentRequired:
+          false,
+
+        specializedStorageEquipmentRequired:
+          false,
+
+        lowCostFreshUsePossible:
+          true,
+
+        lowCostDryStoragePossible:
+          true,
+
+        estimatedStartupCost:
+          null,
+
+        estimatedAnnualCost:
+          null,
+
+        estimatedCostPerPound:
+          null,
+
+        estimatedFeedSavingsPerYear:
+          null,
+
+        estimatedPaybackPeriodYears:
+          null,
+
+        primaryStartupCosts: [
+          "Root cuttings, crown divisions, or named cultivar plants",
+          "Permanent bed preparation",
+          "Compost or soil amendments where needed",
+          "Mulch",
+          "Irrigation materials where rainfall is unreliable",
+          "Optional root containment",
+          "Optional drying and storage equipment"
+        ],
+
+        primaryRecurringCosts: [
+          "Occasional irrigation",
+          "Compost or fertilizer replacement after repeated biomass removal",
+          "Replacement mulch",
+          "Drying energy where fans or dehydrators are used",
+          "Storage containers",
+          "Labor for repeated harvest and processing"
+        ],
+
+        optionalEquipmentCosts: [
+          "Drip-irrigation system",
+          "Drying racks",
+          "Drying screens",
+          "Box fan",
+          "Dehydrator",
+          "Food-safe storage containers",
+          "Rodent-resistant storage",
+          "Forage chopper",
+          "Feed grinder",
+          "Root barrier",
+          "Wheelbarrow or garden cart"
+        ],
+
+        economicStrengths: [
+          "A permanent planting can produce for multiple years.",
+          "Annual seed purchase is normally unnecessary.",
+          "Established plants can provide additional crown divisions or root cuttings.",
+          "Fresh cut-and-carry use requires little equipment.",
+          "The crop produces mulch and compost biomass in addition to limited poultry forage.",
+          "Pollinator value and orchard-support uses increase multipurpose value.",
+          "Surplus biomass can reduce purchases of mulch or compost ingredients.",
+          "The crop may remain productive on land unsuitable for annual tillage."
+        ],
+
+        economicLimitations: [
+          "Comfrey does not replace complete poultry feed pound-for-pound.",
+          "Reliable backyard feed-savings estimates are unavailable.",
+          "Fresh leaves contain substantial water and limited concentrated energy.",
+          "Drying reduces weight and increases labor.",
+          "Grinding requires additional equipment and creates storage exposure.",
+          "Named sterile cultivars may cost more initially than seed-grown plants.",
+          "Poor placement can create removal or containment expenses.",
+          "Repeated biomass harvest may require nutrient replacement.",
+          "The economic value depends heavily on non-feed uses."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          annualSeedPurchaseRequired:
+            false,
+
+          annualReplantingRequired:
+            false,
+
+          plantingMaterialCanBeRetained:
+            true,
+
+          plantingMaterialCanBePropagated:
+            true,
+
+          lowEquipmentFreshUseAvailable:
+            true,
+
+          containmentMayCreateUpfrontCost:
+            true,
+
+          removalMayCreateFutureCost:
+            true,
+
+          notes: [
+            "A small planting can be established with ordinary garden tools.",
+            "Named sterile cultivars are normally purchased as crowns or root cuttings rather than seed.",
+            "Once established, the planting can provide additional propagation material.",
+            "The lowest-cost use path is fresh cut-and-carry harvesting.",
+            "Drying, grinding, and long-term storage increase equipment and labor costs.",
+            "The crop's strongest economic case comes from combining poultry supplementation with mulch, compost biomass, pollinator support, orchard use, and perennial resilience.",
+            "Exact feed savings remain unknown and should not be estimated from fresh biomass weight.",
+            "Cost classifications are qualitative and should not be interpreted as current retail-price estimates."
+          ]
+        }
+      },
+
+            goals: {
+        feedReductionScore:
+          2,
+
+        energyProductionScore:
+          1,
+
+        proteinOrientedScore:
+          3,
+
+        freshGreensScore:
+          4,
+
+        livingForageScore:
+          2,
+
+        winterStorageScore:
+          2,
+
+        enrichmentScore:
+          4,
+
+        resilienceScore:
+          5,
+
+        soilImprovementScore:
+          5,
+
+        nitrogenFixationScore:
+          0,
+
+        groundCoverScore:
+          4,
+
+        erosionControlScore:
+          4,
+
+        shadeScore:
+          2,
+
+        privacyScreeningScore:
+          2,
+
+        pollinatorSupportScore:
+          5,
+
+        compostBiomassScore:
+          5,
+
+        householdFoodScore:
+          0,
+
+        seedSavingScore:
+          1,
+
+        selfRelianceScore:
+          5,
+
+        multipurposeValueScore:
+          5,
+
+        visualAppealScore:
+          4,
+
+        productionReliabilityScore:
+          5,
+
+        fastestValueScore:
+          3,
+
+        nonElectricStorageScore:
+          3,
+
+        smallFlockValueScore:
+          5,
+
+        largeFlockValueScore:
+          3,
+
+        primaryGoalMatches: [
+          "fresh-greens",
+          "supplemental-forage",
+          "cut-and-carry-forage",
+          "perennial-production",
+          "resilience-feed",
+          "self-reliance",
+          "pollinators",
+          "compost-biomass",
+          "mulch-production",
+          "soil-support",
+          "orchard-support",
+          "food-forest-support",
+          "low-replanting-cost",
+          "use-unused-space",
+          "multipurpose-crop"
+        ],
+
+        weakGoalMatches: [
+          "complete-feed-replacement",
+          "high-energy",
+          "winter-grain-storage",
+          "household-food",
+          "seed-saving",
+          "container-production",
+          "temporary-garden",
+          "one-season-reversibility",
+          "annual-crop-rotation",
+          "precise-ration-ingredient",
+          "large-scale-feed-replacement"
+        ],
+
+        unsuitableGoalMatches: [
+          "primary-poultry-feed",
+          "unrestricted-living-forage",
+          "root-feed",
+          "human-food",
+          "high-calorie-grain",
+          "high-starch-feed",
+          "complete-protein-feed",
+          "temporary-rental-garden",
+          "easy-removal",
+          "zero-spread-risk"
+        ],
+
+        goalStrengths: [
+          "Produces repeated leafy biomass from a permanent planting",
+          "Supports cut-and-carry supplemental forage",
+          "Provides substantial compost material",
+          "Produces useful surface mulch",
+          "Supports pollinators during flowering",
+          "Fits orchard-edge and food-forest systems",
+          "Requires no annual seed purchase after establishment",
+          "Can be propagated from established crowns or root cuttings",
+          "Recovers after repeated cutting when moisture and fertility are adequate",
+          "Survives seasonal dormancy in many temperate climates",
+          "Uses permanent or otherwise underused planting areas",
+          "Provides several non-feed values from the same planting",
+          "Can support low-input perennial homestead systems",
+          "May reduce purchases of mulch or compost ingredients",
+          "Offers pecking enrichment when leaves are presented appropriately"
+        ],
+
+        goalLimitations: [
+          "Does not replace an age-appropriate complete poultry ration",
+          "Does not provide concentrated dietary energy",
+          "Does not provide a dependable universal protein inclusion rate",
+          "Pyrrolizidine alkaloids prevent unrestricted feeding",
+          "Roots should not be used as poultry feed",
+          "Fresh leaves contain substantial moisture",
+          "Fresh material stores poorly",
+          "Drying does not eliminate pyrrolizidine alkaloids",
+          "Meaningful winter feed use requires drying and controlled storage",
+          "Permanent roots make crop removal difficult",
+          "Root fragments can establish new plants",
+          "Fertile forms may spread through viable seed",
+          "The crop is unsuitable where one-season reversibility is required",
+          "Container production is inefficient for meaningful biomass",
+          "The crop has no established household-food use in this planner",
+          "Large-flock feed replacement would require excessive area and uncontrolled intake",
+          "Exact backyard feed-cost savings cannot be established"
+        ],
+
+        plannerPriorityNotes: [
+          "Comfrey should rank most strongly when the visitor values perennial biomass, compost, mulch, pollinator support, orchard integration, cut-and-carry forage, and low annual replanting cost.",
+          "It should receive moderate credit for fresh supplemental greens and enrichment but substantially less credit for direct feed replacement.",
+          "Its protein-oriented score reflects moderate dry-matter leaf protein rather than suitability as a primary protein concentrate.",
+          "Its resilience score reflects perennial persistence and repeated regrowth, not unlimited harvest under drought.",
+          "Its soil-improvement score should primarily reflect biomass recycling, soil coverage, root channels, compost contribution, and mulch production.",
+          "Comfrey does not fix atmospheric nitrogen and should receive no nitrogen-fixation credit.",
+          "Pollinator support is one of the crop's strongest ecological goals.",
+          "Household-food goals should not improve its ranking.",
+          "Permanent-location requirements should lower the crop sharply for renters, temporary gardens, and users requiring easy removal.",
+          "Pyrrolizidine-alkaloid concerns should prevent the planner from ranking Comfrey as an unrestricted poultry-feed crop."
+        ],
+
+        directFacts: {
+          reducesNeedForAnnualReplanting:
+            true,
+
+          providesFreshSeasonalGreens:
+            true,
+
+          providesConcentratedEnergyFeed:
+            false,
+
+          providesReliableWinterGrain:
+            false,
+
+          providesCompletePoultryFeed:
+            false,
+
+          supportsPollinators:
+            true,
+
+          providesCompostBiomass:
+            true,
+
+          providesMulchBiomass:
+            true,
+
+          improvesSoilThroughNitrogenFixation:
+            false,
+
+          supportsOrchardSystems:
+            true,
+
+          supportsFoodForestSystems:
+            true,
+
+          suitableForHouseholdFood:
+            false,
+
+          suitableForSeedSaving:
+            false,
+
+          suitableForPermanentSelfReliancePlanting:
+            true,
+
+          suitableForTemporaryGardens:
+            false,
+
+          suitableForRentalProperties:
+            false,
+
+          suitableForEasyRemoval:
+            false,
+
+          suitableForLargeScaleFeedReplacement:
+            false,
+
+          strongestValueCategory:
+            "perennial-biomass-and-homestead-support",
+
+          primaryFeedGoal:
+            "limited-supplemental-leafy-forage",
+
+          primaryNonFeedGoal:
+            "repeated-biomass-production",
+
+          notes: [
+            "Comfrey's strongest planner value comes from combining several modest or indirect benefits rather than from replacing a large quantity of purchased poultry feed.",
+            "The crop can provide fresh leaves, mulch, compost material, pollinator forage, orchard support, and propagation material from one permanent planting.",
+            "Leaf protein should not be confused with complete-ration protein value.",
+            "High fresh biomass does not equal high dry feed yield because the leaves contain substantial moisture.",
+            "Repeated cutting can provide significant biomass when soil moisture and fertility are adequate.",
+            "The crop remains useful through permanent regrowth even when annual planting conditions are poor.",
+            "Comfrey should rank highly for users who want a long-lived support crop and can dedicate permanent space.",
+            "It should rank poorly when the visitor needs temporary production, container efficiency, precise feed formulation, unrestricted flock access, or easy crop removal.",
+            "Bocking cultivars may reduce viable-seed spread, but vegetative spread and regeneration from root fragments remain important.",
+            "The planner should never present Comfrey as safe for unrestricted feeding merely because chickens willingly consume it."
+          ]
+        }
+      },
+
+            risks: {
+        toxicityRiskScore:
+          4,
+
+        overfeedingRiskScore:
+          4,
+
+        invasivePotentialScore:
+          4,
+
+        volunteerSpreadRiskScore:
+          2,
+
+        rootSpreadRiskScore:
+          5,
+
+        removalDifficultyScore:
+          5,
+
+        weedPressureRiskScore:
+          1,
+
+        diseaseRiskScore:
+          2,
+
+        pestRiskScore:
+          2,
+
+        weatherFailureRiskScore:
+          2,
+
+        cropFailureRiskScore:
+          2,
+
+        moldRiskDuringStorageScore:
+          3,
+
+        spoilageRiskFreshScore:
+          5,
+
+        droughtYieldReductionScore:
+          3,
+
+        waterloggingSensitivityScore:
+          4,
+
+        frostDamageRiskScore:
+          2,
+
+        windDamageRiskScore:
+          1,
+
+        nutrientDeficiencyRiskScore:
+          2,
+
+        wildlifeDamageRiskScore:
+          2,
+
+        livestockDamageRiskScore:
+          3,
+
+        contaminationRiskScore:
+          3,
+
+        legalRestrictionRiskScore:
+          1,
+
+        humanSafetyRiskScore:
+          3,
+
+        overallPlannerRiskScore:
+          3,
+
+        majorRisks: [
+          "Pyrrolizidine alkaloids limit safe feeding.",
+          "Roots should never be fed to poultry.",
+          "Excessive supplementation may dilute a balanced ration.",
+          "Established roots are difficult to remove.",
+          "Root fragments commonly regenerate.",
+          "Fresh leaves spoil quickly after harvest.",
+          "Improper drying can lead to mold.",
+          "Fertile forms may self-seed.",
+          "Plants placed in poor locations can become long-term management problems."
+        ],
+
+        minorRisks: [
+          "Repeated harvest removes nutrients from the soil.",
+          "Heavy drought reduces regrowth.",
+          "Standing water may damage crowns.",
+          "Older stems become coarse and less palatable.",
+          "High-moisture leaves have limited storage life."
+        ],
+
+        mitigationStrategies: [
+          "Feed only as a limited supplement.",
+          "Maintain a complete commercial ration.",
+          "Never feed roots.",
+          "Harvest young leafy growth.",
+          "Plant only in a carefully selected permanent location.",
+          "Choose sterile Bocking cultivars where volunteer spread is undesirable.",
+          "Dry leaves rapidly using good airflow.",
+          "Discard any moldy stored material.",
+          "Monitor the planting for unwanted spread.",
+          "Use compost or fertilizer to replace nutrients removed by repeated harvest."
+        ],
+
+        directFacts: {
+          unrestrictedFeedingAppropriate:
+            false,
+
+          rootsSuitableForFeed:
+            false,
+
+          dryingEliminatesPyrrolizidineAlkaloids:
+            false,
+
+          permanentPlacementRecommended:
+            true,
+
+          removalUsuallyEasy:
+            false,
+
+          moldPossibleDuringStorage:
+            true,
+
+          freshMaterialHighlyPerishable:
+            true,
+
+          repeatedHarvestNormallySafeForPlant:
+            true,
+
+          notes: [
+            "The largest practical feeding concern is excessive supplementation rather than occasional controlled feeding.",
+            "Permanent root systems should be viewed as a long-term commitment.",
+            "Root fragments left in the soil commonly regenerate.",
+            "Drying improves storage life but does not remove pyrrolizidine alkaloids.",
+            "Proper storage practices remain important because dried leaves can mold if moisture is retained.",
+            "The planner should discourage unrestricted flock access to Comfrey."
+          ]
+        }
+      },
+
+            seasonalRoles: {
+        earlySpring: {
+          productionLevel:
+            3,
+
+          primaryRoles: [
+            "New leafy growth",
+            "Early supplemental greens",
+            "Mulch production",
+            "Pollinator establishment"
+          ],
+
+          plannerNotes: [
+            "New shoots emerge from established crowns.",
+            "Allow young plants to establish before heavy harvesting.",
+            "Early harvests should be conservative."
+          ]
+        },
+
+        lateSpring: {
+          productionLevel:
+            5,
+
+          primaryRoles: [
+            "Peak leafy biomass",
+            "Cut-and-carry forage",
+            "Mulch production",
+            "Compost material",
+            "Pollinator support"
+          ],
+
+          plannerNotes: [
+            "One of the highest production periods.",
+            "Excellent time for repeated cutting.",
+            "Rapid regrowth occurs with adequate moisture."
+          ]
+        },
+
+        summer: {
+          productionLevel:
+            5,
+
+          primaryRoles: [
+            "Repeated harvests",
+            "Fresh supplemental greens",
+            "Compost biomass",
+            "Mulch production",
+            "Bee forage"
+          ],
+
+          plannerNotes: [
+            "Continue harvesting while allowing recovery between cuts.",
+            "Irrigation greatly improves summer regrowth.",
+            "Avoid excessive harvest during severe drought."
+          ]
+        },
+
+        autumn: {
+          productionLevel:
+            3,
+
+          primaryRoles: [
+            "Final harvests",
+            "Mulch production",
+            "Compost material"
+          ],
+
+          plannerNotes: [
+            "Reduce harvest frequency before winter dormancy.",
+            "Allow adequate foliage for winter recovery."
+          ]
+        },
+
+        winter: {
+          productionLevel:
+            0,
+
+          primaryRoles: [
+            "Dormancy",
+            "Root survival"
+          ],
+
+          plannerNotes: [
+            "Above-ground growth normally dies back after hard frost.",
+            "Established crowns overwinter in suitable climates.",
+            "No meaningful fresh forage production occurs during dormancy."
+          ]
+        },
+
+        annualPlannerSummary: {
+          strongestSeason:
+            "Late Spring through Summer",
+
+          weakestSeason:
+            "Winter",
+
+          yearRoundValue:
+            "Although fresh forage is seasonal, permanent root systems provide long-term biomass production with little annual replanting."
+        }
+      },
+
+      usePaths: [
+        {
+          id:
+            "fresh-cut-comfrey-leaves",
+
+          label:
+            "Fresh Cut Comfrey Leaves",
+
+          description:
+            "Clean positively identified Comfrey leaves are cut, inspected, and offered in small controlled quantities to adult chickens receiving a complete ration.",
+
+          primaryFeedRole:
+            "fresh-supplemental-greens",
+
+          harvestProducts: [
+            "fresh-leaves",
+            "fresh-foliage"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "chopped-greens",
+            "secured-leaf-enrichment",
+            "measured-fresh-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves",
+            "inspect"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "secure-for-pecking",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "garden-shears",
+            "sickle",
+            "harvest-basket",
+            "knife"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "several-seasonal",
+
+          storageMethods: [
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "use-fresh-immediately",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            2,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "brief-refrigeration",
+            "drying"
+          ],
+
+          preservationLimitations: [
+            "Fresh leaves spoil quickly.",
+            "High moisture limits fresh storage.",
+            "Preservation does not eliminate pyrrolizidine alkaloids."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "field contamination",
+            "wilting",
+            "uneaten leaves",
+            "mold",
+            "trampling"
+          ],
+
+          safetyWarnings: [
+            "Offer only modest quantities.",
+            "Continue feeding a complete ration.",
+            "Do not feed roots.",
+            "Do not feed unidentified, moldy, dirty, sprayed, or contaminated material.",
+            "Remove uneaten leaves before they spoil."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "cannot-control-supplement-quantity",
+            "keeps-only-young-chicks",
+            "requires-zero-toxic-compound-concern"
+          ]
+        },
+
+        {
+          id:
+            "briefly-wilted-comfrey-leaves",
+
+          label:
+            "Briefly Wilted Comfrey Leaves",
+
+          description:
+            "Freshly cut leaves are kept clean and allowed to wilt briefly before being offered in small measured quantities.",
+
+          primaryFeedRole:
+            "wilted-supplemental-forage",
+
+          harvestProducts: [
+            "wilted-leaves"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "measured-forage",
+            "pecking-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves",
+            "inspect",
+            "wilt-briefly"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "garden-shears",
+            "harvest-basket",
+            "clean-wilting-rack"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "several-seasonal",
+
+          storageMethods: [
+            "same-day-use"
+          ],
+
+          preferredStorageMethod:
+            "brief-clean-wilt-then-feed",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "same-day-feeding"
+          ],
+
+          preservationLimitations: [
+            "Wilting is not drying.",
+            "Wilted leaves remain highly perishable.",
+            "Wilting does not eliminate pyrrolizidine alkaloids."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "same-day",
+
+          likelyLossPoints: [
+            "overheating",
+            "fermentation",
+            "mold",
+            "contamination",
+            "uneaten forage"
+          ],
+
+          safetyWarnings: [
+            "Wilt only in a clean shaded location.",
+            "Do not allow leaves to heat, ferment, become slimy, or mold.",
+            "Offer only modest quantities.",
+            "Do not feed roots."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-storage",
+            "cannot-monitor-wilting",
+            "requires-complete-feed-replacement",
+            "keeps-only-young-chicks"
+          ]
+        },
+        
+                {
+          id:
+            "dried-comfrey-leaves",
+
+          label:
+            "Dried Comfrey Leaves",
+
+          description:
+            "Clean leaves are dried thoroughly and stored for later use as a minor measured leafy supplement.",
+
+          primaryFeedRole:
+            "stored-dried-forage",
+
+          harvestProducts: [
+            "dried-leaves",
+            "crumbled-dried-leaf"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-dried-supplement",
+            "winter-variety",
+            "mixed-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves",
+            "inspect",
+            "spread-thinly",
+            "dry",
+            "cool",
+            "store"
+          ],
+
+          optionalProcessingTasks: [
+            "turn-during-drying",
+            "crumble",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "drying-screen",
+            "drying-rack",
+            "fan",
+            "dehydrator",
+            "food-safe-container"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "several-seasonal",
+
+          storageMethods: [
+            "dried-leaf-storage",
+            "sealed-food-safe-container",
+            "cool-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "whole-dried-leaf-in-sealed-container",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "air-drying",
+            "fan-assisted-drying",
+            "dehydrator-drying",
+            "freezing-after-drying-for-insect-control"
+          ],
+
+          preservationLimitations: [
+            "Leaves must be completely dry before sealed storage.",
+            "Drying does not eliminate pyrrolizidine alkaloids.",
+            "Ground leaf stores less well than whole dried leaf."
+          ],
+
+          estimatedShelfLifeCategory:
+            "medium",
+
+          shelfLifeAfterProcessingCategory:
+            "medium",
+
+          likelyLossPoints: [
+            "slow-drying mold",
+            "condensation",
+            "leaf shatter",
+            "storage humidity",
+            "rodent damage",
+            "overfeeding"
+          ],
+
+          safetyWarnings: [
+            "Drying does not make Comfrey unrestricted or toxin-free.",
+            "Do not store leaves while damp or warm.",
+            "Discard moldy, musty, heated, or contaminated material.",
+            "Use only as a minor supplement.",
+            "Do not feed roots."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-drying-space",
+            "has-no-dry-storage",
+            "requires-zero-toxic-compound-concern",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+        {
+          id:
+            "dried-comfrey-leaf-meal",
+
+          label:
+            "Dried Comfrey Leaf Meal",
+
+          description:
+            "Thoroughly dried leaves are ground into meal for precise measurement as a minor ingredient only within a properly formulated poultry ration.",
+
+          primaryFeedRole:
+            "formulated-leaf-meal-ingredient",
+
+          harvestProducts: [
+            "dried-leaf-meal"
+          ],
+
+          suitableFeedingMethods: [
+            "professionally-formulated-ration",
+            "research-guided-measured-ingredient"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-leaves",
+            "inspect",
+            "dry-thoroughly",
+            "grind",
+            "measure"
+          ],
+
+          optionalProcessingTasks: [
+            "screen",
+            "portion",
+            "freeze-for-insect-control"
+          ],
+
+          requiredEquipment: [
+            "accurate-scale"
+          ],
+
+          helpfulEquipment: [
+            "dehydrator",
+            "drying-rack",
+            "feed-grinder",
+            "grain-mill",
+            "food-safe-container"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "batch",
+
+          storageMethods: [
+            "sealed-food-safe-container",
+            "cool-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-whole-dried-leaf-and-grind-small-batches",
+
+          storageDurationCategory:
+            "short-medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            2,
+
+          preservationOptions: [
+            "whole-leaf-storage-before-grinding",
+            "small-batch-grinding",
+            "freezing-for-insect-control"
+          ],
+
+          preservationLimitations: [
+            "Grinding increases oxidation and moisture exposure.",
+            "Drying and grinding do not eliminate pyrrolizidine alkaloids.",
+            "A formulated-ration context is required."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-medium",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-dried-leaf",
+
+          likelyLossPoints: [
+            "drying loss",
+            "grinding dust",
+            "oxidation",
+            "moisture absorption",
+            "formulation error",
+            "over-inclusion"
+          ],
+
+          safetyWarnings: [
+            "Do not create an inclusion rate from crude-protein percentage alone.",
+            "Do not copy experimental broiler inclusion rates into an unbalanced backyard ration.",
+            "Use only in a professionally or scientifically formulated complete ration.",
+            "Drying and grinding do not remove pyrrolizidine alkaloids.",
+            "Do not feed roots."
+          ],
+
+          incompatibleUserTraits: [
+            "beginner-home-ration-formulator",
+            "has-no-accurate-scale",
+            "has-no-drying-equipment",
+            "requires-simple-feeding",
+            "requires-zero-toxic-compound-concern"
+          ]
+        },
+
+                {
+          id:
+            "compost-and-mulch-biomass",
+
+          label:
+            "Compost and Mulch Biomass",
+
+          description:
+            "Repeated harvests of Comfrey foliage are used as high-value compost ingredients, mulch, and orchard-support biomass rather than direct poultry feed. This is one of Comfrey's greatest long-term values within a homestead system.",
+
+          primaryFeedRole:
+            "non-feed-biomass",
+
+          harvestProducts: [
+            "green-biomass",
+            "mulch",
+            "compost-material"
+          ],
+
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "cut",
+            "transport"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "compost",
+            "mulch-around-trees",
+            "mulch-garden-beds"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "garden-shears",
+            "wheelbarrow",
+            "garden-cart",
+            "pitchfork"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "multiple-seasonal",
+
+          storageMethods: [
+            "immediate-use"
+          ],
+
+          preferredStorageMethod:
+            "use-immediately",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            1,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            0,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            0,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            0,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "immediate-composting",
+            "direct-mulching"
+          ],
+
+          preservationLimitations: [
+            "Material is intended primarily for immediate landscape use."
+          ],
+
+          estimatedShelfLifeCategory:
+            "immediate",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "none-significant"
+          ],
+
+          safetyWarnings: [
+            "Avoid using diseased or chemically contaminated material.",
+            "Do not interpret this use path as a poultry feeding recommendation."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-feed-only-crops"
+          ]
+        }
+      ],
+
+            dataQuality: {
+        overallConfidenceScore:
+          95,
+
+        researchCompletenessScore:
+          95,
+
+        poultrySpecificEvidenceScore:
+          85,
+
+        agronomicEvidenceScore:
+          98,
+
+        nutritionEvidenceScore:
+          88,
+
+        plannerReliabilityScore:
+          95,
+
+        estimatedUnknownFieldPercent:
+          6,
+
+        usesProfessionalJudgment:
+          true,
+
+        containsNullValues:
+          true,
+
+        nullValuesRequireFutureResearch: [
+          "Estimated processing minutes per pound",
+          "Estimated waste percentages",
+          "Long-term storage duration under varying humidity",
+          "Certain planner scoring refinements"
+        ],
+
+        majorInformationSources: [
+          "USDA",
+          "University Extension Publications",
+          "Peer-reviewed forage research",
+          "SARE (Sustainable Agriculture Research and Education)",
+          "Royal Horticultural Society",
+          "Scientific poultry nutrition literature"
+        ],
+
+        plannerNotes: [
+          "Comfrey should be classified primarily as a supplemental forage crop rather than a complete feed crop.",
+          "The planner should never recommend unrestricted feeding.",
+          "Roots should never be recommended as poultry feed.",
+          "One of Comfrey's greatest values is long-term biomass production for compost and mulch.",
+          "Bocking cultivars are generally preferred where spread control is desired."
+        ]
+      },
+
+      templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "1.0.0",
+
+        schemaReference:
+          "Amaranth",
+
+        completedSections:
+          [
+            "identity",
+            "nutrition",
+            "growing",
+            "regionalPlanting",
+            "spaceAndYield",
+            "economics",
+            "scores",
+            "rankings",
+            "evidence",
+            "plannerData",
+            "risks",
+            "seasonalRoles",
+            "usePaths",
+            "dataQuality"
+          ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Additional poultry feeding trials",
+          "More quantified harvest yield data",
+          "Improved storage-loss measurements",
+          "Regional cultivar performance comparisons",
+          "Long-term biomass production by climate zone"
+        ],
+
+        lastReviewed:
+          null,
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for Version 1.",
+          "Remaining null values represent research gaps rather than missing implementation."
+        ]
+      }
+    }
   }
-};
-
-
-
+  };
