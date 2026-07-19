@@ -36752,7 +36752,7 @@ usePaths: [
 
         directFacts: {
           seasonType:
-            "herbaceous-perennial",
+            "perennial",
 
           frostSensitive:
             false,
