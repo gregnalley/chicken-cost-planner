@@ -36646,7 +36646,7 @@ usePaths: [
 
       lifecycle: {
         growthCycle:
-          "herbaceous-perennial",
+          "perennial",
 
         isAnnual:
           false,
@@ -36752,7 +36752,7 @@ usePaths: [
 
         directFacts: {
           seasonType:
-            "perennial",
+            "herbaceous-perennial",
 
           frostSensitive:
             false,
