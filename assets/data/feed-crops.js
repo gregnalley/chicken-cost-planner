@@ -39145,5 +39145,1642 @@ usePaths: [
         ]
       }
     }
-  }
+  },
+
+///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - SOYBEANS
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////  
+
+  "CROP-SOYBEANS": {
+    id:
+      "CROP-SOYBEANS",
+
+    name:
+      "Soybeans",
+
+    scientificName:
+      "Glycine max",
+
+    category:
+      "Warm-Season Grain Legume and High-Protein Annual Crop",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Warm Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Soybeans are a warm-season nitrogen-fixing annual legume grown primarily for their exceptionally protein-rich seeds. Properly processed soybeans are among the most important protein ingredients used in commercial poultry feeds throughout the world. Whole roasted soybeans, extruded soybeans, toasted soybeans, and properly manufactured soybean meal can provide valuable protein and energy for chickens, while raw mature soybeans contain trypsin inhibitors, lectins, and other antinutritional compounds that make them unsuitable for direct feeding. Soybeans also improve soil fertility through biological nitrogen fixation, produce valuable crop residue, store well after proper drying, and serve as both a cash crop and a long-term feed crop for self-reliant poultry systems. Every soybean feeding pathway should be considered separately because raw beans, heat-treated beans, soybean meal, immature edamame, forage, and post-harvest residues differ substantially in nutritional value, safety, processing requirements, and appropriate poultry use.",
+
+    chickenUse: {
+      edibleParts: [
+        "Properly roasted mature soybeans",
+        "Properly toasted mature soybeans",
+        "Properly extruded whole soybeans",
+        "Commercially processed soybean meal",
+        "Properly heat-treated cracked soybeans",
+        "Immature green edamame beans in limited amounts",
+        "Clean post-harvest field losses under supervised access",
+        "Limited soybean forage before excessive maturity"
+      ],
+
+      primaryValue: [
+        "Excellent protein source after proper heat treatment",
+        "High lysine contribution",
+        "High energy contribution from natural oil",
+        "Excellent amino acid profile",
+        "Long-term dry storage",
+        "Nitrogen-fixing soil improvement crop",
+        "Rotation crop",
+        "Potential reduction in purchased protein supplements",
+        "Crop residue utilization",
+        "High-value feed ingredient"
+      ],
+
+      feedingForms: [
+        "Whole properly roasted soybeans",
+        "Whole properly toasted soybeans",
+        "Extruded whole soybeans",
+        "Ground roasted soybeans",
+        "Commercial soybean meal incorporated into balanced rations",
+        "Measured inclusion in home-formulated poultry feed",
+        "Limited fresh immature edamame beans",
+        "Controlled supervised post-harvest field access"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving a complete poultry ration",
+        "Laying hens",
+        "Breeding flocks",
+        "Homesteads seeking homegrown protein production",
+        "Growers interested in feed self-sufficiency",
+        "Crop rotation systems",
+        "Warm-season production areas",
+        "Medium and large feed plots",
+        "Long-term grain storage",
+        "Nitrogen-building crop rotations"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Raw mature soybeans should never be fed directly to poultry because naturally occurring trypsin inhibitors, lectins, and other antinutritional compounds reduce protein digestion and bird performance. Soybeans intended for poultry feeding should be properly roasted, toasted, extruded, or otherwise heat processed to deactivate these compounds while avoiding excessive heating that may reduce protein quality. Grain should be harvested fully mature, dried to safe storage moisture, cleaned, and stored in cool dry rodent-resistant conditions. Soybean meal should come from properly processed commercial or equivalent production. Green immature edamame beans may be offered only in small supplemental quantities. Introduce all soybean products gradually while maintaining a complete age-appropriate poultry ration.",
+
+      safetyNotes:
+        "Soybeans must supplement rather than replace a complete poultry ration. Raw mature soybeans should not be fed because heat-sensitive antinutritional compounds interfere with digestion and growth. Underprocessed beans remain unsafe, while excessive heating may damage amino acids including lysine. Moldy, insect-damaged, fermented, chemically treated, sprouted, or improperly stored soybeans should never be fed. Do not assume forage soybeans, mature grain, soybean meal, roasted soybeans, and edamame are nutritionally identical. Young chicks should continue receiving a complete starter ration rather than significant soybean supplementation."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate composition of mature soybeans on a dry-matter basis with separate consideration for commercially processed soybean meal and properly heat-treated whole soybeans. Nutritional composition varies with variety, growing conditions, processing method, analytical basis, and moisture content.",
+
+      crudeProteinPercent:
+        "Whole mature soybeans commonly contain approximately 36% to 40% crude protein on a dry-matter basis; properly processed soybean meal commonly contains approximately 44% to 48% crude protein depending on oil extraction method.",
+
+      fatPercent:
+        "Whole soybeans commonly contain approximately 18% to 21% oil prior to oil extraction.",
+
+      fiberPercent:
+        "Generally moderate; whole soybeans commonly contain approximately 5% crude fiber although values vary by variety and analytical method.",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      notableNutrients: [
+        "High-quality protein",
+        "Lysine",
+        "Arginine",
+        "Leucine",
+        "Natural soybean oil",
+        "Essential fatty acids",
+        "Phosphorus",
+        "Potassium",
+        "Magnesium",
+        "Iron",
+        "B vitamins",
+        "Energy-dense oil",
+        "Nitrogen-fixing capability"
+      ],
+
+      limitations: [
+        "Raw mature soybeans contain trypsin inhibitors",
+        "Lectins reduce nutritional value before heat processing",
+        "Heat treatment is required before routine poultry feeding",
+        "Excessive heating may reduce lysine availability",
+        "Whole soybeans are not a complete poultry ration",
+        "Calcium concentration remains inadequate for laying hens",
+        "Oil content can become rancid during poor storage",
+        "Mold contamination may produce dangerous mycotoxins",
+        "Soybean meal and whole soybeans are nutritionally different products",
+        "Forage soybeans differ substantially from mature seed",
+        "Commercial inclusion rates should not automatically be copied into backyard rations",
+        "Proper storage moisture is essential for long-term quality"
+      ]
+    },
+
+    growing: {
+      sunlight:
+        "Full sun is required for maximum yield. Approximately 8 or more hours of direct sunlight are preferred throughout the growing season.",
+
+      soilTemperatureMinimumF:
+        60,
+
+      idealSoilTemperatureF:
+        "Approximately 70°F to 85°F provides reliable germination and vigorous early growth.",
+
+      frostTolerance:
+        "Very low. Soybeans are highly frost-sensitive during active growth.",
+
+      heatTolerance:
+        "High after establishment provided adequate soil moisture is available.",
+
+      droughtTolerance:
+        "Moderate. Established plants tolerate short dry periods but prolonged drought during flowering and pod fill can significantly reduce yield.",
+
+      soilPHMinimum:
+        6.0,
+
+      soilPHMaximum:
+        7.0,
+
+      waterNeeds:
+        "Moderate. Consistent moisture is most important during flowering, pod development, and seed fill.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      daysToFirstHarvestMinimum:
+        75,
+
+      daysToFirstHarvestMaximum:
+        95,
+
+      daysToMaturityMinimum:
+        90,
+
+      daysToMaturityMaximum:
+        140,
+
+      plantSpacingInches:
+        "Approximately 3 to 6 inches between plants depending on intended production system and variety.",
+
+      rowSpacingInches:
+        "Approximately 15 to 30 inches depending on cultivation equipment and weed management strategy.",
+
+      plantingDepthInches:
+        "Approximately 1 to 1½ inches under normal soil moisture conditions.",
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        false
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Direct sow after frost danger has passed and soil temperatures consistently reach approximately 60°F or warmer.",
+
+        harvestWindow:
+          "Harvest mature dry beans during early autumn after pods have fully matured and dried before severe weather develops."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Plant during late spring once soils have warmed adequately and field conditions permit good emergence.",
+
+        harvestWindow:
+          "Harvest mature beans from early through mid-autumn depending on variety and growing season."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Plant from mid-spring through early summer once frost danger has passed and soil temperatures remain warm.",
+
+        harvestWindow:
+          "Harvest mature beans from late summer through autumn depending on planting date and maturity group."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant during warm frost-free conditions while avoiding excessively saturated soils. Double-cropping after small grains may also be possible.",
+
+        harvestWindow:
+          "Harvest once pods have matured fully and seed moisture allows proper drying and storage."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant after frost danger has passed while providing adequate irrigation during establishment and pod fill.",
+
+        harvestWindow:
+          "Harvest mature dry beans during dry weather to minimize storage problems."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Plant after frost danger has passed in warm well-drained sites with adequate growing season length.",
+
+        harvestWindow:
+          "Harvest mature pods before prolonged autumn rainfall delays drying or encourages mold."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during the warmest frost-free portion of the growing season in full sun.",
+
+        harvestWindow:
+          "Harvest mature dry beans before extended cool wet weather affects seed quality."
+      }
+    },
+
+        spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Properly dried soybeans may remain usable for one year or longer when stored in cool, dry, airtight, rodent-resistant conditions. Actual storage life depends on moisture content, storage temperature, oxygen exposure, insect activity, and oil stability.",
+
+      storageMethod:
+        "Harvest only mature dry beans. Clean thoroughly before storage. Dry to safe storage moisture before placing into food-safe airtight containers. Store in a cool, dark, dry location protected from insects and rodents. Inspect periodically for moisture, condensation, mold, heating, insect activity, rancid odors, and damaged containers.",
+
+      yieldNotes:
+        "Backyard yield fields remain null because production varies substantially with maturity group, variety, planting population, fertility, inoculation success, rainfall, irrigation, weed pressure, insect pressure, disease, harvest timing, and growing region. Commercial field yields should not be converted directly into dependable backyard production estimates."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Generally low to moderate depending on maturity group, seed treatment, inoculation status, and whether certified seed is purchased.",
+
+      equipmentCostEstimate:
+        "Low for garden production; moderate where roasting, grinding, or larger-scale processing equipment is used.",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Moderate",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Soybeans have excellent long-term economic value because they combine high protein production, nitrogen fixation, grain storage, and soil improvement. Proper processing requirements increase labor and equipment costs compared with cereal grains. Feed savings remain null because dependable backyard production, processing efficiency, and safe ration substitution have not been sufficiently established."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for soybean production, nitrogen fixation, commercial poultry-feed use, protein composition, heat-processing requirements, storage, and agronomic recommendations; moderate for backyard production methods and supplemental poultry use; limited for dependable backyard feed savings, per-square-foot production, and unrestricted poultry feeding recommendations.",
+
+      sources: [
+        {
+          title:
+            "Feedipedia - Soybean",
+
+          organization:
+            "Feedipedia",
+
+          url:
+            "https://www.feedipedia.org/node/674",
+
+          use:
+            "Feed composition, nutritional characteristics, antinutritional compounds, poultry feeding information, and processing guidance."
+        },
+
+        {
+          title:
+            "Soybean Production Handbook",
+
+          organization:
+            "University of Georgia Extension",
+
+          url:
+            "https://extension.uga.edu/",
+
+          use:
+            "Soybean production practices, fertility, planting recommendations, maturity, harvest, and agronomic management."
+        },
+
+        {
+          title:
+            "Soybean Production",
+
+          organization:
+            "University of Illinois Extension",
+
+          url:
+            "https://extension.illinois.edu/",
+
+          use:
+            "Planting dates, row spacing, maturity groups, pest management, and production practices."
+        },
+
+        {
+          title:
+            "Soybean Meal Processing",
+
+          organization:
+            "USDA Agricultural Research Service",
+
+          url:
+            "https://www.ars.usda.gov/",
+
+          use:
+            "Protein quality, heat processing, trypsin inhibitor reduction, and soybean nutritional characteristics."
+        },
+
+        {
+          title:
+            "Soybean Production Guide",
+
+          organization:
+            "Iowa State University Extension",
+
+          url:
+            "https://www.extension.iastate.edu/",
+
+          use:
+            "Agronomic production, soil fertility, inoculation, harvest, and storage."
+        },
+
+        {
+          title:
+            "Growing Soybeans in Home Gardens",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/",
+
+          use:
+            "Home garden production, planting depth, spacing, harvest timing, and growing recommendations."
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-19",
+
+      researchNotes: [
+        "Treat raw soybeans and properly heat-treated soybeans as completely separate feeding pathways.",
+        "Never recommend raw mature soybeans for direct poultry feeding.",
+        "Differentiate whole roasted soybeans, toasted soybeans, extruded soybeans, soybean meal, forage soybeans, and immature edamame.",
+        "Model soybean meal separately from whole soybeans because oil extraction substantially changes nutrient composition.",
+        "Recognize heat processing as essential rather than optional.",
+        "Do not assign universal backyard inclusion percentages.",
+        "Do not replace complete poultry feed with soybeans.",
+        "Maintain null values where dependable backyard production data are unavailable.",
+        "Treat nitrogen fixation as an agronomic benefit rather than a poultry nutritional benefit.",
+        "Model storage separately from processing because properly dried beans still require heat treatment before feeding.",
+        "Account for inoculation when evaluating nitrogen fixation success.",
+        "Do not claim that soybeans alone provide a balanced poultry ration.",
+        "Avoid medicinal or production-performance guarantees.",
+        "Continue requiring complete commercial feed as the nutritional foundation for all flock stages."
+      ]
+    },
+
+        plannerData: {
+      schemaVersion:
+        "2.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Soybeans",
+
+        shortLabel:
+          "Soybeans",
+
+        icon:
+          "🫘",
+
+        cropCategory:
+          "grain-legume",
+
+        primaryFeedCategory:
+          "protein",
+
+        guideUrl:
+          "growing-soybeans-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual:
+          true,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter"
+        ],
+
+        preferredClimateTypes: [
+          "temperate",
+          "hot-humid"
+        ],
+
+        challengingClimateTypes: [
+          "cold-short-summer",
+          "cool-foggy-coastal",
+          "waterlogged-summer-soil"
+        ],
+
+        minimumFrostFreeDays:
+          90,
+
+        preferredFrostFreeDays:
+          120,
+
+        minimumSoilTemperatureF:
+          60,
+
+        preferredSoilTemperatureF:
+          75,
+
+        daysToMaturityMinimum:
+          90,
+
+        daysToMaturityMaximum:
+          140,
+
+        dryDownBufferDays:
+          10,
+
+        heatToleranceScore:
+          4,
+
+        droughtClimateToleranceScore:
+          3,
+
+        humidityToleranceScore:
+          4,
+
+        coolSummerToleranceScore:
+          2,
+
+        frostSensitivityScore:
+          5,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Selecting locally adapted maturity groups improves dependable harvest.",
+          "Proper rhizobium inoculation may improve nitrogen fixation where soybeans have not previously been grown.",
+          "Adequate irrigation during flowering and pod fill may substantially improve yields.",
+          "Well-drained soil reduces disease pressure during establishment.",
+          "Early planting into adequately warmed soil may increase growing-season length."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "warm-season-annual",
+
+          frostSensitive:
+            true,
+
+          commonlyDirectSeeded:
+            true,
+
+          winterDormancyPossible:
+            false,
+
+          heatDormancyPossible:
+            false,
+
+          longLivedPerennial:
+            false,
+
+          dormantTubersColdHardy:
+            false,
+
+          activeTopGrowthFrostSensitive:
+            true,
+
+          droughtRecoveryPotential:
+            true,
+
+          notes: [
+            "Soybeans are frost-sensitive warm-season annual legumes.",
+            "Direct seeding is the standard production method.",
+            "Warm soil improves germination and emergence.",
+            "Late frosts can destroy young seedlings.",
+            "Extended drought during flowering and pod development reduces yield.",
+            "Plants tolerate summer heat better after establishment.",
+            "Harvest depends on adequate frost-free growing days.",
+            "Different maturity groups are adapted to different regions.",
+            "Nitrogen fixation depends upon successful rhizobium nodulation."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          6,
+
+        productiveMinimumSunHours:
+          8,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          2,
+
+        afternoonShadeBenefitInHeat:
+          1,
+
+        windToleranceScore:
+          4,
+
+        lodgingRiskScore:
+          2,
+
+        reflectedHeatToleranceScore:
+          4,
+
+        airflowRequirementScore:
+          4,
+
+        frostPocketSensitivityScore:
+          5,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          1,
+
+        structureConflictRiskScore:
+          1,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          1,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Full sun throughout the growing season provides the highest pod production and seed yield.",
+
+          windExposureConcern:
+            false,
+
+          growthHabit:
+            "upright-legume-annual",
+
+          matureHeightFtMinimum:
+            2,
+
+          matureHeightFtMaximum:
+            5,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            false,
+
+          undergroundSpreadConcern:
+            false,
+
+          notes: [
+            "Soybeans perform best in uninterrupted full sun.",
+            "Shade reduces flowering and pod production.",
+            "Plants remain upright with relatively little structural conflict.",
+            "The crop dies completely after maturity.",
+            "Soybeans do not spread through rhizomes or underground runners.",
+            "Well-drained open sites provide the most dependable production."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            3,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            5,
+
+          verySandy:
+            3,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          2,
+
+        waterloggingSensitivityScore:
+          5,
+
+        minimumSoilDepthIn:
+          12,
+
+        preferredSoilDepthIn:
+          24,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          4,
+
+        preferredPHMinimum:
+          6.0,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          3,
+
+        nitrogenRequirementScore:
+          1,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          true,
+
+        inoculantType:
+          "Bradyrhizobium japonicum",
+
+        saltToleranceScore:
+          2,
+
+        amendmentEffortScore:
+          2,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "loam",
+            "sandy loam",
+            "clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            true,
+
+          inoculationMayImproveNodulation:
+            true,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          notes: [
+            "Soybeans are nitrogen-fixing legumes.",
+            "Well-drained soils are strongly preferred.",
+            "Standing water reduces growth and increases disease.",
+            "Successful nodulation reduces supplemental nitrogen requirements.",
+            "Compacted soils reduce rooting depth and productivity.",
+            "Rhizobium inoculation is recommended where soybeans have not been previously grown."
+          ]
+        }
+      },
+
+            water: {
+        establishmentWaterFrequency:
+          "Keep soil consistently moist until seedlings are well established. Avoid prolonged saturated soil conditions.",
+
+        matureWaterFrequency:
+          "Provide consistent moisture during flowering, pod development, and seed fill. Reduce irrigation as plants mature and pods dry for harvest.",
+
+        droughtToleranceScore:
+          3,
+
+        floodToleranceScore:
+          1,
+
+        irrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          3,
+
+        rainfallSuitabilityScore:
+          4,
+
+        containerWaterDifficultyScore:
+          3,
+
+        overwateringSensitivityScore:
+          5,
+
+        drySpellRecoveryScore:
+          3,
+
+        criticalMoistureStages: [
+          "Germination",
+          "Seedling establishment",
+          "Flowering",
+          "Pod set",
+          "Seed fill"
+        ],
+
+        directFacts: {
+          evenlyMoistPreferred:
+            true,
+
+          droughtCanReduceYield:
+            true,
+
+          standingWaterHarmful:
+            true,
+
+          irrigationRecommendedDuringPodFill:
+            true,
+
+          matureCropRequiresDryHarvestConditions:
+            true,
+
+          notes: [
+            "Adequate moisture during flowering and pod fill has the greatest impact on final yield.",
+            "Waterlogged soils reduce root health and nitrogen fixation.",
+            "Plants tolerate short dry periods after establishment but prolonged drought reduces pod production.",
+            "Allow fields to dry before harvest whenever possible."
+          ]
+        }
+      },
+
+      maintenance: {
+        maintenanceLevel:
+          "moderate",
+
+        pruningRequired:
+          false,
+
+        weedPressureSensitivityScore:
+          4,
+
+        mulchRecommendationScore:
+          3,
+
+        fertilizerRequirementScore:
+          2,
+
+        nitrogenFertilizerRequirementScore:
+          1,
+
+        phosphorusMonitoringImportanceScore:
+          3,
+
+        potassiumMonitoringImportanceScore:
+          3,
+
+        pestMonitoringScore:
+          4,
+
+        diseaseMonitoringScore:
+          4,
+
+        harvestDifficultyScore:
+          3,
+
+        seedSavingDifficultyScore:
+          2,
+
+        selfSeedingLikelihoodScore:
+          2,
+
+        volunteerPlantLikelihoodScore:
+          3,
+
+        cropRotationImportanceScore:
+          5,
+
+        directFacts: {
+          pruningNeeded:
+            false,
+
+          stakingNormallyRequired:
+            false,
+
+          cropRotationStronglyRecommended:
+            true,
+
+          inoculationOftenBeneficial:
+            true,
+
+          weedControlImportantEarly:
+            true,
+
+          notes: [
+            "Early weed competition greatly reduces yields.",
+            "Crop rotation helps reduce disease and insect pressure.",
+            "Nitrogen fertilizer is usually unnecessary when nodulation is successful.",
+            "Scout regularly for insects, foliar diseases, and pod damage.",
+            "Harvest promptly after maturity to reduce shattering losses."
+          ]
+        }
+      },
+
+      livestockCompatibility: {
+        chickenCompatibilityScore:
+          5,
+
+        duckCompatibilityScore:
+          4,
+
+        turkeyCompatibilityScore:
+          5,
+
+        gooseCompatibilityScore:
+          3,
+
+        rabbitCompatibilityScore:
+          2,
+
+        goatCompatibilityScore:
+          2,
+
+        sheepCompatibilityScore:
+          2,
+
+        cattleCompatibilityScore:
+          2,
+
+        horseCompatibilityScore:
+          1,
+
+        pigCompatibilityScore:
+          4,
+
+        beeValueScore:
+          3,
+
+        pollinatorValueScore:
+          3,
+
+        wildlifeValueScore:
+          3,
+
+        deerResistanceScore:
+          1,
+
+        rodentAttractionScore:
+          4,
+
+        directFacts: {
+          intendedPrimarilyForChickens:
+            true,
+
+          forageCropPossible:
+            true,
+
+          grainCropPrimaryValue:
+            true,
+
+          attractsPollinatorsDuringBloom:
+            true,
+
+          matureSeedHighlyAttractiveToWildlife:
+            true,
+
+          notes: [
+            "Soybeans are primarily grown as a grain crop for poultry feed.",
+            "Flowers provide some nectar resources for pollinators.",
+            "Mature beans may attract rodents and wildlife if left exposed.",
+            "Whole plants may be browsed by deer during vegetative growth.",
+            "Proper heat processing remains essential before poultry feeding."
+          ]
+        }
+      },
+
+      harvest: {
+        primaryHarvest:
+          "mature-dry-seed",
+
+        secondaryHarvests: [
+          "immature-edamame",
+          "limited-forage",
+          "crop-residue"
+        ],
+
+        harvestMethod:
+          "Allow pods to mature and dry naturally before harvesting. Dry harvested beans further if necessary before cleaning and storage.",
+
+        harvestDifficultyScore:
+          3,
+
+        shellingRequired:
+          true,
+
+        dryingRequired:
+          true,
+
+        processingRequiredBeforeFeeding:
+          true,
+
+        processingDifficultyScore:
+          5,
+
+        storagePreparationScore:
+          4,
+
+        mechanicalHarvestFriendly:
+          true,
+
+        handHarvestFriendly:
+          true,
+
+        directFacts: {
+          harvestWhenPodsDry:
+            true,
+
+          dryBeforeStorage:
+            true,
+
+          heatProcessingRequiredForFeed:
+            true,
+
+          shellingNormallyPerformed:
+            true,
+
+          notes: [
+            "Harvest mature pods after natural drying.",
+            "Dry beans thoroughly before storage.",
+            "Clean grain before long-term storage.",
+            "Proper heat treatment is required before poultry feeding.",
+            "Avoid harvesting moldy or weather-damaged beans."
+          ]
+        }
+      },
+
+            feedContribution: {
+        primaryFeedRole:
+          "protein",
+
+        feedValueScore:
+          5,
+
+        proteinContributionScore:
+          5,
+
+        calorieContributionScore:
+          4,
+
+        mineralContributionScore:
+          3,
+
+        vitaminContributionScore:
+          3,
+
+        fiberContributionScore:
+          2,
+
+        freshFeedValueScore:
+          2,
+
+        storedFeedValueScore:
+          5,
+
+        winterFeedValueScore:
+          5,
+
+        emergencyFeedValueScore:
+          5,
+
+        fermentationSuitabilityScore:
+          3,
+
+        sproutingSuitabilityScore:
+          1,
+
+        dryingSuitabilityScore:
+          5,
+
+        grindingSuitabilityScore:
+          5,
+
+        pelletCompatibilityScore:
+          5,
+
+        wholeSeedFeedingScore:
+          1,
+
+        processedFeedScore:
+          5,
+
+        directFacts: {
+          primaryFeedForm:
+            "heat-processed grain",
+
+          rawSeedSafe:
+            false,
+
+          roastingRecommended:
+            true,
+
+          soybeanMealExcellentFeedIngredient:
+            true,
+
+          longTermStorageExcellent:
+            true,
+
+          notes: [
+            "Properly processed soybeans are among the world's most important poultry protein ingredients.",
+            "Raw mature soybeans should never be routinely fed to chickens.",
+            "Heat treatment substantially improves digestibility and safety.",
+            "Whole roasted soybeans provide both protein and energy from natural oil.",
+            "Commercial soybean meal remains the industry standard protein ingredient."
+          ]
+        }
+      },
+
+      sustainability: {
+        nitrogenFixationScore:
+          5,
+
+        soilBuildingScore:
+          4,
+
+        compostValueScore:
+          4,
+
+        mulchValueScore:
+          2,
+
+        erosionControlScore:
+          3,
+
+        biodiversityScore:
+          3,
+
+        pollinatorSupportScore:
+          3,
+
+        carbonContributionScore:
+          3,
+
+        regenerativeAgricultureScore:
+          5,
+
+        externalInputReductionScore:
+          4,
+
+        directFacts: {
+          nitrogenFixingLegume:
+            true,
+
+          suitableForCropRotation:
+            true,
+
+          residueAddsOrganicMatter:
+            true,
+
+          supportsSoilBiologicalActivity:
+            true,
+
+          notes: [
+            "Soybeans improve soil through biological nitrogen fixation.",
+            "Crop residue contributes organic matter after harvest.",
+            "Rotation with cereal crops reduces pest and disease pressure.",
+            "Healthy nodulation reduces nitrogen fertilizer requirements.",
+            "Soybeans are widely used in regenerative cropping systems."
+          ]
+        }
+      },
+
+      riskFactors: {
+        feedingRiskScore:
+          5,
+
+        toxicityRiskScore:
+          4,
+
+        pestPressureScore:
+          4,
+
+        diseasePressureScore:
+          4,
+
+        weatherRiskScore:
+          3,
+
+        harvestLossRiskScore:
+          3,
+
+        storageLossRiskScore:
+          3,
+
+        wildlifeDamageScore:
+          4,
+
+        processingComplexityScore:
+          5,
+
+        directFacts: {
+          rawBeansUnsafe:
+            true,
+
+          improperHeatTreatmentRisk:
+            true,
+
+          moldRiskDuringStorage:
+            true,
+
+          podShatterPossible:
+            true,
+
+          notes: [
+            "Improper processing is the greatest feeding risk.",
+            "Poor storage can result in mold growth and spoilage.",
+            "Delayed harvest may increase pod shattering losses.",
+            "Wildlife feeding pressure may be significant in some regions.",
+            "Proper drying and storage greatly reduce long-term losses."
+          ]
+        }
+      },
+
+      homeownerFit: {
+        beginnerFriendlyScore:
+          3,
+
+        suburbanFriendlyScore:
+          3,
+
+        urbanFriendlyScore:
+          2,
+
+        ruralFriendlyScore:
+          5,
+
+        homesteadFriendlyScore:
+          5,
+
+        offGridFriendlyScore:
+          5,
+
+        containerSuitabilityScore:
+          2,
+
+        raisedBedSuitabilityScore:
+          3,
+
+        largeGardenSuitabilityScore:
+          5,
+
+        feedIndependenceContributionScore:
+          5,
+
+        directFacts: {
+          goodHomesteadCrop:
+            true,
+
+          requiresProcessing:
+            true,
+
+          suitableForDedicatedFeedPlots:
+            true,
+
+          bestValueInLargerPlantings:
+            true,
+
+          notes: [
+            "Soybeans are most practical when grown specifically for feed production.",
+            "Large plantings provide better returns than small garden patches.",
+            "Processing requirements reduce convenience for casual gardeners.",
+            "Excellent crop for serious feed self-sufficiency projects.",
+            "One of the highest-value homegrown protein crops when properly managed."
+          ]
+        }
+      },
+
+            usePaths: [
+        {
+          id:
+            "processed-whole-soybeans",
+
+          label:
+            "Processed Whole Soybeans",
+
+          description:
+            "Whole mature soybeans that have been properly roasted, toasted, or extruded to deactivate antinutritional compounds before feeding.",
+
+          primaryUse:
+            "High-protein supplemental poultry feed",
+
+          suitabilityScore:
+            5
+        },
+
+        {
+          id:
+            "soybean-meal",
+
+          label:
+            "Soybean Meal",
+
+          description:
+            "Commercially processed soybean meal incorporated into balanced poultry rations as a concentrated protein ingredient.",
+
+          primaryUse:
+            "Protein concentrate",
+
+          suitabilityScore:
+            5
+        },
+
+        {
+          id:
+            "edamame",
+
+          label:
+            "Immature Green Soybeans",
+
+          description:
+            "Fresh immature soybeans offered occasionally as a seasonal supplemental treat rather than a primary feed source.",
+
+          primaryUse:
+            "Fresh seasonal supplement",
+
+          suitabilityScore:
+            2
+        },
+
+        {
+          id:
+            "forage",
+
+          label:
+            "Soybean Forage",
+
+          description:
+            "Limited use of young vegetative soybean growth where appropriate, recognizing that grain remains the primary production objective.",
+
+          primaryUse:
+            "Occasional forage",
+
+          suitabilityScore:
+            2
+        },
+
+        {
+          id:
+            "field-cleanup",
+
+          label:
+            "Post-Harvest Field Access",
+
+          description:
+            "Supervised access after harvest allowing poultry to consume shattered beans and remaining insects while helping clean crop residue.",
+
+          primaryUse:
+            "Field cleanup",
+
+          suitabilityScore:
+            4
+        },
+
+        {
+          id:
+            "cover-crop",
+
+          label:
+            "Nitrogen-Building Rotation Crop",
+
+          description:
+            "Soybeans grown primarily for soil improvement, nitrogen fixation, and crop rotation while still producing a valuable grain harvest.",
+
+          primaryUse:
+            "Soil improvement",
+
+          suitabilityScore:
+            5
+        }
+      ],
+
+      goals: {
+        eggProduction:
+          {
+            score:
+              5,
+
+            notes:
+              "Properly processed soybeans provide one of the highest-quality supplemental protein sources available for supporting egg production."
+          },
+
+        meatProduction:
+          {
+            score:
+              5,
+
+            notes:
+              "Excellent protein contribution when correctly processed and incorporated into balanced rations."
+          },
+
+        feedCostReduction:
+          {
+            score:
+              5,
+
+            notes:
+              "Homegrown soybeans can substantially reduce purchased protein costs when production and processing are practical."
+          },
+
+        feedSelfSufficiency:
+          {
+            score:
+              5,
+
+            notes:
+              "One of the most valuable crops for long-term poultry feed independence."
+          },
+
+        smallBackyard:
+          {
+            score:
+              2,
+
+            notes:
+              "Processing requirements and relatively modest garden yields reduce practicality in very small spaces."
+          },
+
+        suburbanGarden:
+          {
+            score:
+              3,
+
+            notes:
+              "Suitable where adequate growing space and safe processing methods are available."
+          },
+
+        ruralHomestead:
+          {
+            score:
+              5,
+
+            notes:
+              "Excellent choice for larger feed plots and diversified homestead production."
+          },
+
+        soilImprovement:
+          {
+            score:
+              5,
+
+            notes:
+              "Nitrogen fixation and crop rotation value make soybeans an outstanding soil-building crop."
+          },
+
+        lowMaintenance:
+          {
+            score:
+              3,
+
+            notes:
+              "Routine crop management is straightforward, but processing requirements increase overall labor."
+          },
+
+        droughtResilience:
+          {
+            score:
+              3,
+
+            notes:
+              "Established plants tolerate moderate drought, although flowering and pod fill remain moisture-sensitive."
+          },
+
+        winterFeedStorage:
+          {
+            score:
+              5,
+
+            notes:
+              "Properly dried soybeans store exceptionally well for long-term poultry feed."
+          }
+      }
+    },
+
+        plannerCompatibility: {
+      minimumPlannerVersion:
+        "2.0.0",
+
+      supportedPlannerModules: [
+        "feed-crop-planner",
+        "feed-independence-planner",
+        "seasonal-feed-planner",
+        "crop-comparison",
+        "crop-ranking",
+        "feed-calendar",
+        "homestead-planner",
+        "rotation-planner",
+        "soil-improvement-planner",
+        "protein-source-comparison"
+      ],
+
+      recommendationTags: [
+        "high-protein",
+        "grain-legume",
+        "warm-season",
+        "annual",
+        "nitrogen-fixing",
+        "long-term-storage",
+        "processed-feed",
+        "homestead-favorite",
+        "rotation-crop",
+        "feed-independence"
+      ]
+    },
+
+    metadata: {
+      createdBy:
+        "Backyard Chicken Planner Research Database",
+
+      cropVersion:
+        "1.0.0",
+
+      plannerSchemaVersion:
+        "2.0.0",
+
+      lastResearchReview:
+        "2026-07-19",
+
+      reviewStatus:
+        "Research Complete",
+
+      confidenceLevel:
+        "High",
+
+      requiresFutureResearch: [
+        "Backyard production per-square-foot yields across multiple climates.",
+        "Verified feed-cost savings for small-scale homestead production.",
+        "Safe home-scale roasting best practices for planner recommendations.",
+        "Regional maturity-group recommendations.",
+        "Long-term storage performance under backyard conditions."
+      ],
+
+      knownUnknowns: [
+        "Reliable backyard yield averages.",
+        "Universal production scores.",
+        "Verified BCP feed score.",
+        "Planner ranking calibration.",
+        "Economic return calculations across homestead scales."
+      ]
+    }
+  },
+
   };
