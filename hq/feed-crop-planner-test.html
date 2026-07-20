@@ -1214,5 +1214,16 @@ if (
 
 </script>
 
+<script>
+document.body.insertAdjacentHTML(
+  "beforeend",
+  "<pre style='background:#fff;border:2px solid red;padding:10px;margin:20px;'>" +
+  "Object.keys = " + Object.keys(BCP_FEED_CROPS).length +
+  "<br>Has Soybeans = " + ("CROP-SOYBEANS" in BCP_FEED_CROPS) +
+  "<br>Soybean ID = " + (BCP_FEED_CROPS["CROP-SOYBEANS"]?.id || "NOT FOUND") +
+  "</pre>"
+);
+</script>
+
 </body>
 </html>
