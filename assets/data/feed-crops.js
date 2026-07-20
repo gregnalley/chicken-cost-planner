@@ -42109,8 +42109,4907 @@ usePaths: [
         "Verified BCP feed score.",
         "Planner ranking calibration.",
         "Economic return calculations across homestead scales."
-      ]
+
+              ]
     }
   },
 
-  };
+  ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - FIELD PEAS
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
+
+  "CROP-FIELD-PEAS": {
+    id:
+      "CROP-FIELD-PEAS",
+
+    name:
+      "Field Peas",
+
+    scientificName:
+      "Pisum sativum L.",
+
+    category:
+      "Cool-Season Grain Legume, Protein Crop, Household Food, and Soil-Building Annual",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Cool Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Field peas are cool-season annual grain legumes grown for dry mature seed, immature green peas, forage, household food, livestock feed, biological nitrogen fixation, and crop rotation. Dry field peas can provide chickens with protein, starch, lysine, minerals, and stored-feed value, but they remain an incomplete ration ingredient and vary substantially among cultivars. White-flowered, low-tannin feed-pea varieties are generally more suitable for poultry feeding than strongly pigmented, high-tannin types. Mature peas may be fed raw when an appropriate low-antinutritional-factor variety is used within a correctly formulated ration, although cracking, grinding, dehulling, cooking, or other processing may improve handling or nutritional use in some situations. Field peas are not equivalent to southern field peas or cowpeas, which belong to Vigna unguiculata. The crop performs best during cool weather, tolerates light frost, fixes nitrogen when properly nodulated, and is damaged by prolonged heat, waterlogging, disease pressure, lodging, wildlife, and delayed harvest.",
+
+    chickenUse: {
+      edibleParts: [
+        "Clean mature dry peas from suitable feed or food varieties",
+        "Whole dry peas",
+        "Cracked mature peas",
+        "Coarsely ground mature peas",
+        "Properly processed pea meal",
+        "Cooked mature peas",
+        "Fresh immature shelled peas",
+        "Tender immature pods from edible-pod varieties",
+        "Young clean pea foliage offered in limited amounts",
+        "Sound peas remaining after household-food preparation",
+        "Limited sound peas remaining after harvest"
+      ],
+
+      primaryValue: [
+        "Moderate-to-high plant-protein contribution",
+        "Useful lysine contribution compared with cereal grains",
+        "Starch and dietary energy",
+        "Low-fat protein-oriented grain",
+        "Long-term dry storage",
+        "Household-food and poultry-feed dual use",
+        "Cool-season production",
+        "Biological nitrogen fixation",
+        "Crop-rotation value",
+        "Fresh seasonal treats",
+        "Postharvest enrichment",
+        "Reduced dependence on soybean-based protein where rations are properly formulated"
+      ],
+
+      feedingForms: [
+        "Small measured portions of clean whole dry peas",
+        "Cracked dry peas",
+        "Coarsely ground dry peas",
+        "Pea meal incorporated into a properly balanced poultry ration",
+        "Cooked mature peas cooled before feeding",
+        "Fresh immature green peas offered as a seasonal treat",
+        "Small portions of tender edible pods",
+        "Limited fresh pea foliage through cut-and-carry feeding",
+        "Supervised postharvest field access after the main crop is collected",
+        "Clean unseasoned household-food leftovers containing peas"
+      ],
+
+      bestFor: [
+        "Adult chickens receiving an age-appropriate complete base ration",
+        "Growers seeking a cool-season homegrown protein crop",
+        "Households wanting a dual-purpose human-food and poultry-feed crop",
+        "Homesteads capable of drying, threshing, cleaning, and storing grain",
+        "Feed plots where cereal grains and legumes can be rotated",
+        "Growers seeking a nitrogen-fixing annual",
+        "Regions with cool spring or mild autumn growing periods",
+        "Small flocks where harvested peas can be measured carefully",
+        "Larger homesteads capable of producing enough dry peas to justify processing",
+        "Growers wishing to diversify protein sources beyond Soybeans"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Harvest dry peas after pods and seed have matured but before excessive lodging, pod shattering, rain damage, or wildlife loss occurs. Dry harvested plants or pods as needed, thresh or shell the peas, remove stones and damaged seed, and reduce seed moisture sufficiently for safe storage. Whole peas may be difficult for some chickens to consume efficiently, so cracking or coarse grinding can improve handling and reduce selective feeding. Fine grinding should be avoided when it creates excessive dust or feed separation. Fresh green peas and edible pods should be clean and offered in modest portions. Cooked peas must be plain, fully cooled, and free from salt, butter, sauces, onions, garlic, or other unsuitable ingredients. Introduce every form gradually and continue monitoring appetite, body condition, manure consistency, egg production, and complete-feed intake.",
+
+      safetyNotes:
+        "Field peas must supplement rather than replace a nutritionally complete poultry ration. Do not confuse Pisum sativum field peas with Cowpeas, southern peas, or other unrelated legumes. Cultivar choice matters because tannins, trypsin inhibitors, lectins, starch characteristics, seed-coat fiber, and other antinutritional factors vary among peas. White-flowered, light-seeded, low-tannin feed varieties are generally preferred for poultry use. Colored-flowered or dark-seeded varieties may contain more tannins and should not automatically receive the same feeding recommendation. Do not copy high inclusion rates from controlled poultry studies into an unbalanced backyard mixture. Do not feed moldy, musty, heated, fermented, insect-damaged, rodent-contaminated, chemically treated, or unidentified peas. Do not feed seed sold with fungicide, insecticide, inoculant additives not intended for feed, or colored chemical seed treatments. Young chicks should continue receiving a complete starter ration rather than substantial quantities of whole or home-processed peas."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate composition of mature dry pea seed, generally reported on a dry-matter basis. Nutrient content varies with cultivar, flower color, seed-coat color, growing environment, maturity, storage, processing, analytical method, and whether results are reported on an as-fed or dry-matter basis.",
+
+      crudeProteinPercent:
+        "Dry field peas commonly contain approximately 20% to 28% crude protein on a dry-matter basis, with Feedipedia reporting an average near 23.9% across a large number of samples",
+
+      fatPercent:
+        "Generally low, commonly near 1% to 2% of dry matter",
+
+      fiberPercent:
+        "Moderate and strongly affected by seed coat; Feedipedia reports an average near 6% crude fiber on a dry-matter basis, while whole colored peas may contain more fiber and tannins than dehulled or low-tannin varieties",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      notableNutrients: [
+        "Moderate-to-high crude protein",
+        "Useful lysine concentration compared with cereal grains",
+        "Starch",
+        "Digestible carbohydrates",
+        "Low fat",
+        "Arginine",
+        "Threonine",
+        "Potassium",
+        "Phosphorus",
+        "Magnesium",
+        "Iron",
+        "Zinc",
+        "Manganese",
+        "B vitamins",
+        "Dietary fiber",
+        "Natural pigments in colored varieties"
+      ],
+
+      limitations: [
+        "Field peas are not a complete poultry ration",
+        "Crude-protein percentage does not guarantee a balanced amino-acid profile",
+        "Pea protein is relatively low in methionine and other sulfur-containing amino acids",
+        "Complete poultry rations containing peas may require complementary protein sources or synthetic amino acids",
+        "Peas generally contain less concentrated protein than soybean meal",
+        "Whole peas contain substantial starch and cannot be treated only as a protein concentrate",
+        "Energy value varies with cultivar, starch digestibility, processing, and bird age",
+        "Tannin concentrations vary substantially among flower colors and seed-coat types",
+        "Dark-seeded and colored-flowered varieties may have lower poultry feeding value than white-flowered low-tannin varieties",
+        "Trypsin inhibitors and lectins occur at lower levels than in raw soybeans but remain cultivar-dependent",
+        "Phytate can reduce phosphorus and mineral availability",
+        "Non-starch polysaccharides may reduce nutrient utilization",
+        "Seed coats increase fiber and may reduce usable energy",
+        "Fine grinding can create dusty feed and ingredient separation",
+        "Whole large peas may be consumed inefficiently by some birds",
+        "Published poultry inclusion levels come from balanced experimental diets",
+        "Results from one cultivar should not be applied automatically to all field peas",
+        "Fresh green peas contain substantially more water and less nutrient density per pound than mature dry peas",
+        "Cooking changes moisture content and nutrient concentration",
+        "Peas do not supply enough calcium for laying hens",
+        "Pea supplements must not displace excessive quantities of complete feed"
+      ]
+    },
+
+    growing: {
+      sunlight:
+        "Full sun is preferred for dependable flowering, pod set, seed filling, dry-down, and harvest. Approximately 6 or more hours of direct sunlight is useful, while 8 or more hours is preferred where spring temperatures remain moderate.",
+
+      soilTemperatureMinimumF:
+        40,
+
+      idealSoilTemperatureF:
+        "Approximately 45°F to 65°F for cool-season establishment and growth, although germination can begin in colder soil and exact optimum temperatures vary by cultivar and production system",
+
+      frostTolerance:
+        "Moderate. Established young plants tolerate light frost, but severe freezes can damage seedlings, flowers, pods, and developing seed.",
+
+      heatTolerance:
+        "Low to Moderate. High temperatures during flowering and pod set may reduce pollination, seed set, seed size, and final yield.",
+
+      droughtTolerance:
+        "Low to Moderate. Field peas use less seasonal water than many long-season crops, but shallow rooting and moisture stress during flowering and pod filling can reduce yield.",
+
+      soilPHMinimum:
+        5.5,
+
+      soilPHMaximum:
+        7.5,
+
+      waterNeeds:
+        "Moderate. Maintain adequate moisture during germination, establishment, flowering, pod set, and seed filling. Avoid prolonged saturation because Field Peas are sensitive to poorly drained and waterlogged soil.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      daysToFirstHarvestMinimum:
+        55,
+
+      daysToFirstHarvestMaximum:
+        75,
+
+      daysToMaturityMinimum:
+        85,
+
+      daysToMaturityMaximum:
+        110,
+
+      plantSpacingInches:
+        "Approximately 1 to 3 inches within closely planted garden rows for dry-seed production, depending on seed size, variety, trellising, disease pressure, and intended harvest",
+
+      rowSpacingInches:
+        "Approximately 6 to 30 inches depending on garden scale, cultivation method, equipment, weed-management needs, airflow, and whether the crop is drilled or planted in accessible rows",
+
+      plantingDepthInches:
+        "Approximately 1 to 2.5 inches, with shallower planting in heavy or moist soil and deeper planting in lighter or drier soil when adequate emergence remains possible",
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        false
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Direct sow in early spring as soon as soil can be prepared and is no longer excessively wet. Field Peas tolerate cool soil and light frost, but delayed planting may expose flowering and pod filling to damaging summer heat.",
+
+        harvestWindow:
+          "Harvest immature green peas from late spring into midsummer. Harvest dry peas during midsummer through early autumn after seeds mature and pods dry, before prolonged wet weather, severe lodging, or pod shattering causes major losses."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Direct sow from late winter through early spring whenever soil is workable. Planting early helps the crop flower and fill pods before sustained temperatures above approximately 80°F to 85°F.",
+
+        harvestWindow:
+          "Harvest fresh peas during late spring or early summer. Harvest mature dry seed from early through late summer according to planting date, variety, rainfall, heat, and disease pressure."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Direct sow from late winter through very early spring. In areas with mild autumns, a fall planting may be possible with an appropriate winter or forage-pea variety, but winter survival depends on cultivar, establishment, and local minimum temperatures.",
+
+        harvestWindow:
+          "Spring plantings may provide green peas during mid- to late spring and dry peas from late spring into early summer. Fall-planted crops may mature in spring where winter survival is dependable."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant during autumn through winter when local temperatures favor cool-season growth. Spring planting is often less dependable because flowering and seed filling may coincide with rapid heat development.",
+
+        harvestWindow:
+          "Harvest fresh peas during winter or spring and dry seed during spring before persistent heat, humidity, heavy rain, and disease pressure interfere with dry-down."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant during the coolest locally suitable period, often late winter or very early spring at higher elevations and autumn through winter in mild low-elevation areas. Irrigation may be required, but saturated soil should be avoided.",
+
+        harvestWindow:
+          "Harvest according to elevation and planting season, timing dry-seed maturity before extreme heat and ensuring harvested peas can be dried promptly."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Direct sow from late winter through spring when soil is workable. In mild areas, autumn planting may be possible with varieties selected for winter survival and disease resistance.",
+
+        harvestWindow:
+          "Harvest immature peas from late spring through summer and dry peas from summer into early autumn. Coastal or humid areas may require careful disease management and prompt postharvest drying."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during the cool season, commonly from autumn through early spring depending on frost risk and local rainfall. Avoid scheduling flowering and pod filling during the hottest portion of the year.",
+
+        harvestWindow:
+          "Harvest green peas from winter through spring and dry peas from spring into early summer, depending on local climate and planting date."
+      }
+    },
+
+        spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      storageLife:
+        "Properly dried, cleaned, and protected whole peas may remain usable for an extended period under cool, dry, dark, insect-resistant, and rodent-resistant conditions. Exact storage life depends on final seed moisture, temperature, sanitation, seed damage, container type, and routine monitoring.",
+
+      storageMethod:
+        "Allow mature plants and pods to dry sufficiently before threshing. If field conditions are damp, cut plants or pods and finish drying under cover with strong airflow. Thresh or shell the pods, remove stones, soil, chaff, broken seed, insects, diseased peas, and mold-damaged material, and verify that the peas are cool and dry before sealing them in food-safe containers. Store in a cool, dark, dry location protected from insects and rodents. Inspect periodically for condensation, heating, clumping, webbing, insects, off odors, discoloration, or moisture migration.",
+
+      yieldNotes:
+        "Backyard plants-per-area and yield fields remain null because dependable production varies with cultivar, growth habit, flower type, seed size, planting density, trellising, soil, rainfall, irrigation, heat during flowering, disease pressure, lodging, wildlife loss, pod shattering, harvest timing, threshing efficiency, and cleaning loss. Field-scale yields should not be converted directly into guaranteed backyard yields. Fresh green-pea production, dry-grain production, forage production, and cover-crop production are separate systems and should not share one universal yield value."
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Generally low to moderate for garden packets or small quantities of food-grade seed. Certified field-pea seed, named low-tannin feed varieties, winter-hardy selections, disease-resistant varieties, organic seed, and bulk quantities may cost more.",
+
+      equipmentCostEstimate:
+        "Low for fresh green-pea use; low to moderate for small dry-grain harvests because tarps, drying screens, threshing containers, sieves, fans, scales, airtight containers, and rodent-resistant storage may be useful. Larger plots may justify mechanical seeding, harvesting, threshing, or grinding equipment.",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Moderate for fresh peas and small dry-grain plots; moderate to high when mature peas must be hand-cut, dried, threshed, cleaned, cracked, ground, measured, and stored.",
+
+      potentialFeedSavings:
+        null,
+
+      economicNotes:
+        "Field Peas may contribute value through household food, poultry supplementation, nitrogen fixation, crop rotation, seed saving, forage, cover cropping, and long-term dry storage. Their economic usefulness depends strongly on growing area, harvest efficiency, processing labor, storage losses, and whether the peas can be incorporated into a correctly balanced ration. Commercial feed ingredients may remain less expensive than hand-produced peas on very small plots. Exact feed savings remain null because typical backyard yield, usable recovery, labor cost, equipment cost, ration displacement, and long-term storage loss have not been established."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for crop identity, cool-season growth, planting depth, early planting, maturity timing, grain composition, livestock-feed use, nitrogen fixation, lodging concerns, disease concerns, dry-seed storage, and the existence of poultry-feeding research. Moderate for conservative backyard processing and feeding recommendations. Limited for universal backyard inclusion percentages, exact garden yield per square foot, hand-processing efficiency, flock feed savings, unrestricted foliage feeding, and long-term performance under diverse backyard conditions.",
+
+      sources: [
+        {
+          title:
+            "Pea Seeds",
+
+          organization:
+            "Feedipedia",
+
+          url:
+            "https://www.feedipedia.org/node/264",
+
+          use:
+            "Field-pea identity, food and feed uses, grain composition, protein contribution, amino-acid limitations, antinutritional factors, cultivar differences, processing effects, and poultry-feeding research."
+        },
+
+        {
+          title:
+            "Pea Seeds — Chemical Composition and Nutritive Value",
+
+          organization:
+            "Feedipedia",
+
+          url:
+            "https://www.feedipedia.org/node/12434",
+
+          use:
+            "Large-sample dry matter, crude protein, crude fiber, neutral detergent fiber, acid detergent fiber, lignin, and ether-extract values for mature pea seed."
+        },
+
+        {
+          title:
+            "Pea Forage",
+
+          organization:
+            "Feedipedia",
+
+          url:
+            "https://www.feedipedia.org/node/7047",
+
+          use:
+            "Field Peas as a short-duration forage legume, forage-protein context, crop uses, and distinction between seed and forage products."
+        },
+
+        {
+          title:
+            "Field Pea Production",
+
+          organization:
+            "North Dakota State University Extension",
+
+          url:
+            "https://www.ndsu.edu/agriculture/extension/publications/field-pea-production",
+
+          use:
+            "Field establishment, seeding depth, soil-moisture requirements, variety selection, inoculation, weed management, disease and insect concerns, maturity, harvest, lodging, pod shattering, seed moisture, and storage."
+        },
+
+        {
+          title:
+            "Field Pea",
+
+          organization:
+            "North Dakota State University Agriculture",
+
+          url:
+            "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/crop-pest-report/plant-science/field-pea-05/12/22",
+
+          use:
+            "Cool-season temperature preference, approximately 60 days from planting to flowering, approximately 95 to 100 days to maturity, and the risk of reduced seed set during hot flowering weather."
+        },
+
+        {
+          title:
+            "Soil Fertility Recommendations for Field Pea, Lentil and Chickpea in North Dakota",
+
+          organization:
+            "North Dakota State University Extension",
+
+          url:
+            "https://www.ndsu.edu/agriculture/extension/publications/soil-fertility-recommendations-field-pea-lentil-and-chickpea-north-dakota",
+
+          use:
+            "Soil testing, nutrient management, inoculation context, fertilizer placement risk, and the importance of avoiding unsupported fertilizer assumptions."
+        },
+
+        {
+          title:
+            "Field Pea and Lentil Root Rot Risk, Diagnosis and Resources",
+
+          organization:
+            "North Dakota State University",
+
+          url:
+            "https://www.ndsu.edu/agriculture/ag-hub/field-pea-and-lentil-root-rot-risk-diagnosis-and-resources",
+
+          use:
+            "Root-rot risk, soil temperature at planting, delayed-planting concerns, drainage, disease pressure, and the value of early cool-soil establishment."
+        },
+
+        {
+          title:
+            "Getting Started with Cover Crops",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/cover-crops/getting-started-cover-crops",
+
+          use:
+            "Field and winter peas as cool-season cover crops, establishment context, crop rotation, and soil-building use."
+        },
+
+        {
+          title:
+            "Feeding Value of Three Categories of Pea for Poultry",
+
+          organization:
+            "Animal Science",
+
+          url:
+            "https://www.feedipedia.org/node/7430",
+
+          use:
+            "Evidence that pea category and cultivar characteristics materially affect poultry feeding value and that all peas should not be treated as nutritionally identical."
+        },
+
+        {
+          title:
+            "Pantry Pests: Insects Found in Stored Food",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/product-and-houseplant-pests/pantry-pests-insects-found-stored-food",
+
+          use:
+            "Stored dry peas as potential hosts for seed beetles and the need for sealed, sanitary, monitored storage."
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-19",
+
+      researchNotes: [
+        "Model Field Peas as Pisum sativum rather than Cowpeas, southern peas, Pigeon Peas, Chickpeas, or other crops commonly called peas.",
+        "Use Field Peas as the public crop name while preserving the scientific identity in the record.",
+        "Model the crop as a cool-season annual grain legume with household-food, feed, forage, rotation, and cover-crop uses.",
+        "Keep mature dry peas, cracked or ground peas, cooked peas, fresh green peas, forage, postharvest access, and cover-crop use as separate use paths.",
+        "Do not assign one universal poultry feeding percentage to all pea cultivars.",
+        "Do not copy inclusion percentages from balanced research diets into unbalanced backyard mixtures.",
+        "White-flowered, light-seeded, low-tannin feed varieties should generally rank above strongly pigmented, higher-tannin varieties for poultry-feed use.",
+        "Do not imply that flower color alone provides a complete laboratory analysis of a seed lot.",
+        "Cultivar identity, seed-coat characteristics, feed analysis, and reputable seed sourcing remain important.",
+        "Field Peas contain less severe antinutritional activity than raw Soybeans but should not be described as free of antinutritional factors.",
+        "Trypsin inhibitors, lectins, tannins, phytate, and non-starch polysaccharides vary with cultivar and processing.",
+        "Do not require heat processing for every suitable low-tannin mature pea use path.",
+        "Model cooking as an optional conservative processing path rather than a universal requirement for dry feed peas.",
+        "Do not claim that soaking, sprouting, fermenting, cooking, grinding, or dehulling makes an otherwise contaminated pea safe.",
+        "Do not feed chemically treated seed.",
+        "Do not recommend moldy, heated, musty, insect-damaged, rodent-contaminated, or unidentified peas.",
+        "Model dry mature peas as a protein-oriented and starch-containing feed ingredient rather than a pure protein concentrate.",
+        "Field Peas generally contribute less protein than soybean meal and require complementary ingredients.",
+        "Model methionine and sulfur-amino-acid limitation separately from crude-protein percentage.",
+        "Do not treat Field Peas as a complete poultry ration.",
+        "Keep calcium requirements for laying hens separate from pea supplementation.",
+        "Young chicks should continue receiving complete starter feed rather than substantial whole-pea supplements.",
+        "Model whole large peas as potentially less convenient for poultry than cracked or coarsely ground peas.",
+        "Avoid excessively fine grinding that produces dust, sorting, or feed separation.",
+        "Model fresh green peas as a high-moisture seasonal treat rather than a concentrated dry-feed ingredient.",
+        "Model edible pods only for varieties intended for pod consumption.",
+        "Do not assume that fibrous mature dry pods provide meaningful poultry nutrition.",
+        "Model foliage and forage conservatively because poultry-specific evidence for unrestricted pea-vine feeding is limited.",
+        "Do not allow poultry to destroy the crop before flowering and grain harvest unless forage is the intended production goal.",
+        "Model supervised postharvest access only after the primary dry-pea harvest and removal of unsafe material.",
+        "Model Field Peas as sensitive to prolonged heat during flowering and seed filling.",
+        "Model light-frost tolerance separately from severe-freeze tolerance.",
+        "Early planting should rank strongly where soil is workable and drainage is adequate.",
+        "Do not recommend planting into saturated, compacted, or chronically waterlogged soil.",
+        "Model root rot, seedling disease, and poor emergence as major wet-soil risks.",
+        "Model inoculation as useful where compatible Rhizobium bacteria are absent or uncertain.",
+        "Do not promise nitrogen fertilizer replacement merely because the crop is a legume.",
+        "Nitrogen fixation depends on compatible inoculation, nodulation, soil conditions, plant health, and crop management.",
+        "Do not assume that all fixed nitrogen becomes immediately available to the next crop.",
+        "Model lodging as a meaningful harvest risk, especially for tall, leafy, or conventional-vine varieties.",
+        "Semi-leafless or afila varieties may stand more upright because tendrils interlock, but they are not immune to lodging.",
+        "Model delayed harvest, rain, disease, pod shattering, birds, rodents, and threshing loss as reductions in usable yield.",
+        "Keep backyard yield-per-square-foot values null until direct small-plot evidence becomes available.",
+        "Do not convert regional field-trial yield directly into a promised backyard harvest.",
+        "Model cleaned dry peas as the strongest nonrefrigerated storage path.",
+        "Model intact dry grain as more storage-stable than cracked or ground meal when both are equally dry and protected.",
+        "Cracked and ground products expose more surface area and should receive shorter practical storage expectations.",
+        "Model stored-seed beetles, pantry pests, moisture migration, mold, and rodents as postharvest risks.",
+        "Household-food value may exceed direct feed value for small garden harvests.",
+        "Seed-saving value depends on healthy mature seed, varietal identity, isolation, and storage quality.",
+        "Do not make disease-treatment, egg-production, meat-quality, fertility, or medicinal claims.",
+        "Continue requiring an age-appropriate complete poultry ration for every flock stage."
+      ]
+    },
+
+        plannerData: {
+      schemaVersion:
+        "2.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Field Peas",
+
+        shortLabel:
+          "Peas",
+
+        icon:
+          "🫛",
+
+        cropCategory:
+          "grain-legume",
+
+        primaryFeedCategory:
+          "protein",
+
+        guideUrl:
+          "growing-field-peas-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual:
+          true,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "mild-winter"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate"
+        ],
+
+        challengingClimateTypes: [
+          "hot-humid",
+          "hot-dry",
+          "tropical-humid",
+          "waterlogged-spring-soil"
+        ],
+
+        minimumFrostFreeDays:
+          85,
+
+        preferredFrostFreeDays:
+          100,
+
+        minimumSoilTemperatureF:
+          40,
+
+        preferredSoilTemperatureF:
+          50,
+
+        daysToMaturityMinimum:
+          85,
+
+        daysToMaturityMaximum:
+          110,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          2,
+
+        droughtClimateToleranceScore:
+          2,
+
+        humidityToleranceScore:
+          3,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          3,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Early direct sowing helps the crop flower and fill seed before damaging summer heat.",
+          "Locally adapted early-maturing varieties improve reliability where summers become hot quickly.",
+          "Autumn planting may extend production in mild-winter regions when a suitable winter-hardy variety is selected.",
+          "Good drainage and raised planting areas may improve establishment where early-season soil remains wet.",
+          "Row cover may protect newly emerged plants from birds and severe late freezes, although it does not make the crop fully winter hardy.",
+          "Prompt harvest and protected postharvest drying may reduce losses where rainfall occurs during crop maturity."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "cool-season-annual",
+
+          frostSensitive:
+            false,
+
+          commonlyDirectSeeded:
+            true,
+
+          winterDormancyPossible:
+            false,
+
+          heatDormancyPossible:
+            false,
+
+          longLivedPerennial:
+            false,
+
+          dormantTubersColdHardy:
+            false,
+
+          activeTopGrowthFrostSensitive:
+            false,
+
+          droughtRecoveryPotential:
+            2,
+
+          lightFrostTolerance:
+            true,
+
+          severeFreezeTolerance:
+            false,
+
+          optimumMeanGrowingTemperatureFMinimum:
+            55,
+
+          optimumMeanGrowingTemperatureFMaximum:
+            65,
+
+          typicalDaysFromPlantingToFlowering:
+            60,
+
+          typicalDaysFromPlantingToMaturityMinimum:
+            95,
+
+          typicalDaysFromPlantingToMaturityMaximum:
+            100,
+
+          heatDuringFloweringReducesSeedSet:
+            true,
+
+          notes: [
+            "Field Peas are cool-season annual legumes.",
+            "Seed can germinate in cool soil, allowing planting earlier than most warm-season feed crops.",
+            "Young established plants commonly tolerate light frost.",
+            "Severe freezing can damage seedlings, flowers, pods, and developing seed.",
+            "A cool growing season favors dependable flowering and seed filling.",
+            "Hot weather during flowering can reduce seed set.",
+            "Early planting is important where spring temperatures rise rapidly.",
+            "The commonly cited 95-to-100-day maturity period is a regional field-production reference rather than a universal cultivar guarantee.",
+            "Winter survival depends upon variety, establishment, snow cover, soil drainage, and local minimum temperatures.",
+            "Field Peas should not be scored as a dependable summer crop in regions with prolonged extreme heat."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          5,
+
+        productiveMinimumSunHours:
+          6,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          3,
+
+        afternoonShadeBenefitInHeat:
+          3,
+
+        windToleranceScore:
+          3,
+
+        lodgingRiskScore:
+          4,
+
+        reflectedHeatToleranceScore:
+          2,
+
+        airflowRequirementScore:
+          4,
+
+        frostPocketSensitivityScore:
+          2,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          1,
+
+        structureConflictRiskScore:
+          1,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          2,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Full sun is preferred for strong growth, flowering, pod set, seed filling, and uniform crop dry-down.",
+
+          windExposureConcern:
+            true,
+
+          growthHabit:
+            "upright-to-vining-cool-season-legume",
+
+          matureHeightFtMinimum:
+            1.5,
+
+          matureHeightFtMaximum:
+            4,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            false,
+
+          undergroundSpreadConcern:
+            false,
+
+          supportMayReduceLodging:
+            true,
+
+          semiLeaflessVarietiesAvailable:
+            true,
+
+          notes: [
+            "Field Peas produce best in full sun.",
+            "Moderate shade may delay maturity and reduce pod and seed production.",
+            "Afternoon shade may reduce heat stress in hot spring climates but should not replace adequate daily sunlight.",
+            "Tall conventional-vine varieties may lodge before harvest.",
+            "Semi-leafless varieties use interlocking tendrils to improve standability but can still lodge during storms or delayed harvest.",
+            "Trellising may be practical in small gardens but is not normally required in field production.",
+            "Air movement helps foliage and pods dry after rain.",
+            "Exposed sites may increase leaning, tangling, pod contact with wet soil, and harvest losses.",
+            "Plants die after seed maturity and do not spread through rhizomes or permanent roots.",
+            "Field Peas create little long-term conflict with foundations, utilities, or permanent structures."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            4,
+
+          verySandy:
+            2,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          1,
+
+        waterloggingSensitivityScore:
+          5,
+
+        minimumSoilDepthIn:
+          12,
+
+        preferredSoilDepthIn:
+          24,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          4,
+
+        preferredPHMinimum:
+          6.0,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          5.5,
+
+        survivalPHMaximum:
+          7.5,
+
+        fertilityRequirementScore:
+          3,
+
+        nitrogenRequirementScore:
+          1,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          true,
+
+        inoculantType:
+          "Rhizobium leguminosarum biovar viciae",
+
+        saltToleranceScore:
+          2,
+
+        amendmentEffortScore:
+          3,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "loam",
+            "silt loam",
+            "sandy loam",
+            "well-drained clay loam"
+          ],
+
+          nitrogenFixingLegume:
+            true,
+
+          inoculationMayImproveNodulation:
+            true,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          compactedSoilSuitable:
+            false,
+
+          saturatedSeedbedIncreasesDiseaseRisk:
+            true,
+
+          compatibleInoculationGroup:
+            "pea-vetch-lentil-group",
+
+          excessiveNitrogenCanReduceNodulation:
+            true,
+
+          notes: [
+            "Field Peas perform best in well-drained soil.",
+            "Saturated soil increases the risk of seed decay, damping-off, root rot, poor nodulation, and plant death.",
+            "Heavy clay may be usable where structure and drainage are good, but slowly drained clay receives a low suitability score.",
+            "Very sandy soil may dry too rapidly during flowering and pod filling.",
+            "Compacted soil restricts roots and may increase surface water accumulation.",
+            "Field Peas fix atmospheric nitrogen only when roots form effective nodules with compatible Rhizobium bacteria.",
+            "A compatible pea-group inoculant is particularly important where peas, lentils, or vetches have not recently been grown.",
+            "Soybean inoculant should not be substituted automatically for pea-group inoculant.",
+            "Successful inoculation does not guarantee that all crop nitrogen becomes available immediately to the following crop.",
+            "Large applications of nitrogen fertilizer may suppress nodulation and are not normally required when nodulation is successful.",
+            "Soil testing should guide phosphorus, potassium, sulfur, lime, and other amendments.",
+            "Seed should not be placed in direct contact with fertilizer rates capable of causing salt or ammonia injury.",
+            "The stored pH limits describe a practical planning range rather than absolute survival boundaries for every soil and variety."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "moderate",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "moderate",
+
+        floweringWaterNeedLevel:
+          "high",
+
+        harvestDevelopmentWaterNeedLevel:
+          "high",
+
+        droughtSurvivalScore:
+          2,
+
+        droughtYieldRetentionScore:
+          2,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "flowering",
+          "pod-set",
+          "seed-filling"
+        ],
+
+        criticalStageWaterImportanceScore:
+          5,
+
+        overwateringSensitivityScore:
+          5,
+
+        waterloggingSensitivityScore:
+          5,
+
+        dripIrrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          3,
+
+        suitableForRainfallOnlyScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          3,
+
+        containerDryingRiskScore:
+          4,
+
+        establishmentYearsRequiringExtraWater:
+          0,
+
+        directFacts: {
+          droughtTolerantAfterEstablishment:
+            false,
+
+          establishmentMoistureImportant:
+            true,
+
+          regularMoistureImprovesProduction:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          droughtDuringFloweringReducesYield:
+            true,
+
+          droughtDuringSeedFillReducesSeedSize:
+            true,
+
+          irrigationNearMaturityCanDelayDryDown:
+            true,
+
+          matureCropRequiresDryHarvestConditions:
+            true,
+
+          criticalWaterWindow:
+            "Flowering, pod formation, and seed filling are the most important stages for maintaining adequate soil moisture.",
+
+          notes: [
+            "Field Peas require adequate moisture for uniform germination and establishment.",
+            "Moisture stress during flowering may reduce flower retention and pod set.",
+            "Moisture stress during seed filling may reduce seed size and final dry-grain yield.",
+            "The crop is shallow rooted compared with many long-season crops and may lose yield during extended dry periods.",
+            "Standing water and prolonged saturated soil are highly damaging.",
+            "Irrigation should maintain useful root-zone moisture without keeping foliage and soil continuously wet.",
+            "Drip or low-level irrigation may reduce prolonged foliage wetness compared with frequent overhead irrigation.",
+            "Excessive irrigation near maturity can delay dry-down and increase lodging, disease, and harvest difficulty.",
+            "Dry weather during final maturation and harvest improves grain quality.",
+            "Container-grown peas dry faster than in-ground stands and generally provide little practical dry-feed yield."
+          ]
+        }
+      },
+
+            space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          3,
+
+        mediumSpaceScore:
+          5,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            4,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            3,
+
+          smallBeds:
+            4,
+
+          openField:
+            5
+        },
+
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            4,
+
+          container:
+            2,
+
+          fenceLine:
+            4,
+
+          buildingEdge:
+            3,
+
+          unusedLawn:
+            4,
+
+          openField:
+            5,
+
+          orchard:
+            2,
+
+          forageFrame:
+            3,
+
+          rotationalPaddock:
+            4,
+
+          greenhouse:
+            2,
+
+          hedgerow:
+            3
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Peas can grow in containers, but container production is generally inefficient for producing a meaningful quantity of mature dry grain for poultry feed. Containers are better suited to fresh household peas, small seasonal treats, demonstrations, or seed-saving trials.",
+
+        minimumRaisedBedDepthIn:
+          12,
+
+        vineSpreadRequired:
+          true,
+
+        verticalSupportBenefitScore:
+          4,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          true,
+
+        heightCategory:
+          "low-to-medium-vining",
+
+        matureWidthCategory:
+          "narrow-interlocking-stand",
+
+        overflowSpaceBenefitScore:
+          2,
+
+        directFacts: {
+          layoutFlexible:
+            true,
+
+          blockPollinationRequired:
+            false,
+
+          suitableForRowPlanting:
+            true,
+
+          suitableForCloselySpacedStands:
+            true,
+
+          suitableForSingleOrSmallGroupPlanting:
+            true,
+
+          varietySizeHighlyVariable:
+            true,
+
+          trellisRequired:
+            false,
+
+          trellisHelpfulInSmallGardens:
+            true,
+
+          semiLeaflessVarietiesImproveStandability:
+            true,
+
+          commercialPlantPopulationRange:
+            null,
+
+          backyardUseWarning:
+            "Field-scale seeding rates and yield trials should not be converted directly into guaranteed backyard plant counts, harvest weights, or minimum-useful-area rules.",
+
+          notes: [
+            "Field Peas are commonly grown as closely spaced stands rather than as widely separated individual plants.",
+            "Rows or narrow blocks make weed control, inspection, harvest, and trellis access easier in small gardens.",
+            "A square block is not required for pollination.",
+            "Most varieties are predominantly self-pollinating.",
+            "A continuous stand may help pea vines support one another through interlocking tendrils.",
+            "Semi-leafless varieties generally stand more upright than conventional leafy varieties but can still lodge.",
+            "Trellising is optional for many field varieties and may improve access and reduce pod contact with wet soil in small plantings.",
+            "Container-grown peas can produce fresh pods but normally provide little practical dry-feed yield.",
+            "Raised beds may improve drainage where native soil remains wet, but beds require dependable moisture during flowering and pod filling.",
+            "Field Peas should not be planted where established trees create heavy shade, root competition, or prolonged leaf wetness.",
+            "Unprotected chickens can uproot seedlings, eat foliage, and destroy flowers and pods before the crop reaches grain maturity.",
+            "Dry-grain production becomes more practical as available planting area increases.",
+            "Minimum practical production area remains null because household goals, flock size, expected yield, and processing efficiency vary too widely for a universal value."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            4,
+
+          meat:
+            4,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            4,
+
+          homestead:
+            5,
+
+          mixed:
+            5
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            2,
+
+          cutAndCarry:
+            2,
+
+          wholeProduce:
+            4,
+
+          wholeSeedHeads:
+            1,
+
+          wholeGrain:
+            4,
+
+          processedGrain:
+            5,
+
+          heatTreated:
+            4,
+
+          driedForage:
+            2,
+
+          winterStorage:
+            5
+        },
+
+        directRunSuitabilityScore:
+          1,
+
+        forageFrameSuitabilityScore:
+          3,
+
+        rotationalPaddockSuitabilityScore:
+          3,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          4,
+
+        treatDilutionRiskScore:
+          4,
+
+        highEnergySupplement:
+          false,
+
+        highFiberSupplement:
+          false,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Measured dry-pea supplementation",
+          "Cracked or coarsely ground ration ingredient",
+          "Cool-season homegrown protein production",
+          "Stored winter feed ingredient",
+          "Fresh immature pea treats",
+          "Household-food leftovers without seasoning",
+          "Limited seasonal green forage",
+          "Supervised postharvest field cleanup"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Unrestricted free-choice protein feeding",
+          "Primary calcium source",
+          "Primary methionine source",
+          "Young-chick staple feed",
+          "Permanent living forage",
+          "Unsupervised access before grain harvest",
+          "Feeding unidentified or chemically treated seed"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Clean mature dry peas",
+            "Cracked dry peas",
+            "Coarsely ground dry peas",
+            "Properly formulated pea meal",
+            "Cooked mature peas",
+            "Fresh immature shelled peas",
+            "Tender edible pods from suitable varieties",
+            "Limited clean young foliage"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor-before-maturity",
+
+          directAccessTiming:
+            "Protect plants during establishment, flowering, pod formation, and seed filling. Limited supervised access is most appropriate after the main harvest or when forage is the intentional crop goal.",
+
+          nutritionalOrientation: [
+            "protein",
+            "starch",
+            "lysine",
+            "stored-grain",
+            "seasonal-treat"
+          ],
+
+          maturePeasRequireHeatTreatment:
+            false,
+
+          lowTanninVarietiesPreferred:
+            true,
+
+          cultivarSelectionImportant:
+            true,
+
+          balancedRationRequired:
+            true,
+
+          notes: [
+            "Field Peas are most valuable as a measured grain ingredient rather than as unrestricted free-choice feed.",
+            "Dry peas contribute both protein and starch.",
+            "They generally provide more lysine than cereal grains but remain relatively limited in methionine and other sulfur-containing amino acids.",
+            "Low-tannin, white-flowered or light-seeded feed varieties are generally preferred for poultry diets.",
+            "Flower color and seed color are useful selection clues but do not replace cultivar identification or feed analysis.",
+            "Suitable low-tannin dry peas do not universally require roasting or cooking before poultry use.",
+            "Cooking remains a useful separate household-food or conservative preparation path.",
+            "Whole peas may be difficult for some chickens to consume efficiently.",
+            "Cracking or coarse grinding can improve handling and mixing.",
+            "Excessively fine meal may become dusty and separate from other ration ingredients.",
+            "Peas cannot supply the complete amino-acid, vitamin, mineral, energy, or calcium balance required by poultry.",
+            "Laying hens must continue receiving adequate calcium through a complete layer ration or properly managed calcium program.",
+            "Young chicks should receive a complete starter feed instead of substantial quantities of whole or home-mixed peas.",
+            "Fresh green peas and tender pods contain more water and less concentrated nutrition than mature dry peas.",
+            "Fresh peas should be treated as seasonal supplemental food rather than as a direct substitute for dry grain.",
+            "Direct flock access before harvest can eliminate the crop before useful seed production occurs."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore:
+          3,
+
+        plantingEaseScore:
+          5,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          3,
+
+        weedControlEaseScore:
+          3,
+
+        wildlifeProtectionEaseScore:
+          3,
+
+        harvestEaseScore:
+          3,
+
+        wholePodProcessingEaseScore:
+          3,
+
+        looseSeedProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          4,
+
+        heavyLiftingRiskScore:
+          1,
+
+        weeklyLaborLevel:
+          "low-to-moderate",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "single-seasonal-or-short-fresh-harvest-window",
+
+        requiredPlantingTasks: [
+          "prepare-seedbed",
+          "select-suitable-variety",
+          "direct-sow-large-seed",
+          "apply-compatible-inoculant-when-needed"
+        ],
+
+        requiredMaintenanceTasks: [
+          "control-early-weeds",
+          "monitor-soil-moisture",
+          "inspect-for-root-rot",
+          "inspect-for-foliar-disease",
+          "protect-from-wildlife"
+        ],
+
+        optionalMaintenanceTasks: [
+          "install-trellis",
+          "mulch",
+          "irrigate",
+          "install-row-cover",
+          "support-lodged-plants"
+        ],
+
+        requiredHarvestTasks: [
+          "harvest-mature-plants-or-pods",
+          "protect-harvest-from-rain"
+        ],
+
+        usePathProcessingTasks: {
+          wholeDryPeas: [
+            "dry",
+            "thresh-or-shell",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture"
+          ],
+
+          crackedDryPeas: [
+            "dry",
+            "thresh-or-shell",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture",
+            "crack"
+          ],
+
+          groundPeaMeal: [
+            "dry",
+            "thresh-or-shell",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "blend"
+          ],
+
+          cookedPeas: [
+            "shell-or-sort",
+            "wash",
+            "cook",
+            "cool",
+            "portion"
+          ],
+
+          freshGreenPeas: [
+            "pick-pods",
+            "shell",
+            "clean-sort",
+            "portion"
+          ],
+
+          freshFoliage: [
+            "cut-young-growth",
+            "inspect",
+            "portion"
+          ],
+
+          postharvestAccess: [
+            "remove-primary-harvest",
+            "remove-unsafe-material",
+            "inspect-field",
+            "supervise-access"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "verify-dryness",
+          "inspect-moisture",
+          "inspect-heating",
+          "inspect-insects",
+          "inspect-mold",
+          "inspect-rodent-damage"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "pea-group-inoculant",
+          "garden-seeder",
+          "trellis",
+          "temporary-fencing",
+          "bird-netting",
+          "harvest-tarp",
+          "drying-screen",
+          "drying-rack",
+          "fan",
+          "threshing-container",
+          "grain-screen",
+          "winnowing-fan",
+          "moisture-meter",
+          "grain-cracker",
+          "coarse-grinder",
+          "feed-scale",
+          "mixing-container",
+          "food-safe-bucket",
+          "metal-grain-can",
+          "rodent-resistant-storage"
+        ],
+
+        suitableForLowTimeUsersScore:
+          3,
+
+        suitableForSoloGrowersScore:
+          4,
+
+        directFacts: {
+          seedSize:
+            "large-and-easy-to-handle",
+
+          directSeedingSuitable:
+            true,
+
+          indoorStartingPossible:
+            true,
+
+          indoorStartingRecommended:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          majorLaborBottlenecks: [
+            "Early weed control before canopy closure",
+            "Managing support or lodging",
+            "Harvesting before rain, shattering, or wildlife loss",
+            "Drying plants and pods",
+            "Hand threshing or shelling",
+            "Removing chaff, stones, and damaged seed",
+            "Cracking or grinding when required by the chosen use path",
+            "Accurately measuring peas in a balanced ration",
+            "Monitoring stored grain"
+          ],
+
+          notes: [
+            "Large seed makes Field Peas straightforward to sow by hand.",
+            "Direct sowing is normally easier and more dependable than transplanting.",
+            "Inoculation adds a small planting task where compatible Rhizobium bacteria are uncertain.",
+            "The crop often requires modest routine labor after establishment when weeds, moisture, disease, lodging, and wildlife remain manageable.",
+            "Dry-grain harvest creates a concentrated seasonal workload.",
+            "Whole dry peas require less processing than cracked or ground peas.",
+            "Hand threshing becomes increasingly time-consuming as plot size increases.",
+            "Fresh green-pea harvest may require repeated picking during a short period.",
+            "Fine grinding should be avoided where it creates dust or ingredient separation.",
+            "Peas used in a home-mixed ration must be weighed and blended accurately.",
+            "Commercial acreage generally requires mechanized seeding, combining, grain handling, and drying, but small backyard plots can be processed manually.",
+            "Low-time users should favor small fresh-food plots, whole dry-pea storage, or professionally formulated feed rather than extensive home ration production."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "low-to-moderate",
+
+        soilPreparationCostLevel:
+          "low",
+
+        irrigationCostLevel:
+          "low-to-moderate",
+
+        protectionCostLevel:
+          "low-to-moderate",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageCostLevel:
+          "low-to-moderate",
+
+        annualRecurringCostLevel:
+          "low-to-moderate",
+
+        longTermValueScore:
+          4,
+
+        lowestCostUsePath:
+          "fresh-green-peas",
+
+        highestCostUsePath:
+          "homegrown-ground-pea-ration-ingredient",
+
+        likelyCostDrivers: [
+          "Named feed-pea or food-pea seed",
+          "Compatible pea-group inoculant",
+          "Trellising or crop support",
+          "Irrigation during flowering and pod filling",
+          "Wildlife protection",
+          "Drying screens or fans",
+          "Threshing and cleaning equipment",
+          "Grain cracking or grinding equipment",
+          "Feed scales and mixing containers",
+          "Rodent-resistant grain storage"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small direct-seeded trial.",
+          "Select a locally adapted low-tannin variety with suitable maturity.",
+          "Use inoculant only when compatible Rhizobium populations are absent or uncertain.",
+          "Use closely spaced stands or simple reusable trellising for mutual support.",
+          "Harvest and store whole peas rather than grinding the entire crop immediately.",
+          "Process small batches as needed.",
+          "Use existing tarps, screens, fans, and food-safe containers where they are suitable.",
+          "Share or rent threshing and grain-processing equipment for larger plantings.",
+          "Use part of the harvest for household food when that provides greater value than poultry feeding.",
+          "Save open-pollinated seed only when varietal identity, disease health, maturity, and storage conditions are understood."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          annualReplantingRequired:
+            true,
+
+          commercialEquivalentReadilyAvailable:
+            true,
+
+          scaleStronglyAffectsValue:
+            true,
+
+          processingCostImportant:
+            true,
+
+          primaryEconomicBenefits: [
+            "homegrown-protein-production",
+            "household-food-production",
+            "long-term-dry-storage",
+            "nitrogen-fixing-rotation",
+            "seed-saving",
+            "feed-source-diversification"
+          ],
+
+          notes: [
+            "Seed and ordinary hand-tool costs are generally modest for a small backyard planting.",
+            "Certified, organic, disease-resistant, winter-hardy, or named low-tannin feed varieties may cost more than unidentified bulk peas.",
+            "A compatible inoculant is inexpensive relative to most equipment but may be important where nodulating bacteria are absent.",
+            "Trellising is optional for many varieties and may be built from reusable materials.",
+            "Whole dry-pea storage requires less equipment than producing a uniform ground ration ingredient.",
+            "The economic advantage decreases when harvesting, threshing, cleaning, cracking, grinding, measuring, and storage are performed inefficiently at very small scale.",
+            "Commercial Field Peas or professionally formulated feed may cost less per pound than homegrown peas.",
+            "Household-food use may provide the highest return from a small garden harvest.",
+            "Crop-rotation and nitrogen-fixation benefits contribute value that is not captured by direct feed savings.",
+            "Exact cost per pound, feed displacement, and return on labor remain unknown and should not be estimated.",
+            "All stored cost levels are qualitative planner ratings rather than current retail-price estimates."
+          ]
+        }
+      },
+
+            goals: {
+        feedReductionScore:
+          4,
+
+        energyProductionScore:
+          3,
+
+        proteinOrientedScore:
+          5,
+
+        freshGreensScore:
+          3,
+
+        livingForageScore:
+          2,
+
+        winterStorageScore:
+          5,
+
+        enrichmentScore:
+          4,
+
+        resilienceScore:
+          4,
+
+        soilImprovementScore:
+          5,
+
+        nitrogenFixationScore:
+          5,
+
+        groundCoverScore:
+          3,
+
+        erosionControlScore:
+          3,
+
+        shadeScore:
+          2,
+
+        privacyScreeningScore:
+          1,
+
+        pollinatorSupportScore:
+          2,
+
+        compostBiomassScore:
+          3,
+
+        householdFoodScore:
+          5,
+
+        seedSavingScore:
+          4,
+
+        selfRelianceScore:
+          5,
+
+        multipurposeValueScore:
+          5,
+
+        visualAppealScore:
+          3,
+
+        productionReliabilityScore:
+          4,
+
+        fastestValueScore:
+          3,
+
+        nonElectricStorageScore:
+          5,
+
+        smallFlockValueScore:
+          5,
+
+        largeFlockValueScore:
+          4,
+
+        primaryGoalMatches: [
+          "protein-oriented",
+          "winter-storage",
+          "soil-improvement",
+          "nitrogen-fixation",
+          "shared-household-food",
+          "seed-saving",
+          "self-reliance",
+          "cool-season-production",
+          "use-unused-space"
+        ],
+
+        weakGoalMatches: [
+          "high-energy",
+          "living-forage",
+          "privacy-screening",
+          "shade",
+          "summer-production",
+          "permanent-pasture",
+          "container-feed-production",
+          "zero-processing"
+        ],
+
+        supportedGoals: [
+          "produce-homegrown-protein-oriented-grain",
+          "produce-storable-dry-peas",
+          "increase-household-food-production",
+          "grow-a-dual-purpose-human-and-poultry-crop",
+          "increase-cool-season-feed-production",
+          "fix-atmospheric-nitrogen",
+          "improve-crop-rotation",
+          "produce-a-reversible-annual-crop",
+          "save-open-pollinated-seed",
+          "diversify-stored-feed-sources",
+          "produce-fresh-seasonal-pea-treats",
+          "produce-a-measured-ration-ingredient",
+          "use-small-or-medium-garden-plots",
+          "grow-before-summer-heat",
+          "provide-postharvest-flock-enrichment",
+          "reduce-dependence-on-a-single-purchased-protein-source",
+          "produce-household-food-and-use-surplus-for-poultry",
+          "create-cool-season-soil-cover",
+          "provide-residue-for-composting",
+          "support-long-term-homestead-self-reliance"
+        ],
+
+        poorlySupportedGoals: [
+          "replace-complete-poultry-feed",
+          "provide-a-balanced-poultry-ration",
+          "provide-layer-calcium",
+          "provide-unlimited-free-choice-feed",
+          "provide-high-methionine-feed",
+          "provide-a-high-fat-energy-source",
+          "provide-permanent-living-forage",
+          "provide-summer-heat-production",
+          "grow-in-waterlogged-soil",
+          "grow-in-deep-shade",
+          "provide-large-feed-yields-from-containers",
+          "eliminate-harvest-processing",
+          "provide-unrestricted-young-chick-feed",
+          "guarantee-feed-cost-savings",
+          "guarantee-a-specific-backyard-yield",
+          "provide-long-term-green-winter-forage"
+        ],
+
+        goalConflicts: [
+          {
+            goalA:
+              "maximum-dry-grain-harvest",
+
+            goalB:
+              "unrestricted-flock-access",
+
+            explanation:
+              "Chickens can uproot seedlings, consume foliage, damage flowers, eat immature pods, and remove mature peas before the intended grain harvest."
+          },
+
+          {
+            goalA:
+              "maximum-human-food-value",
+
+            goalB:
+              "maximum-poultry-feed-use",
+
+            explanation:
+              "Clean food-quality peas may have greater household-food value than their value as bulk poultry feed."
+          },
+
+          {
+            goalA:
+              "maximum-nitrogen-contribution",
+
+            goalB:
+              "remove-all-aboveground-biomass-and-seed",
+
+            explanation:
+              "Nitrogen fixed by the crop is distributed through roots, nodules, stems, leaves, pods, and seed. Removing the entire crop exports part of the accumulated nitrogen rather than leaving all of it for the following crop."
+          },
+
+          {
+            goalA:
+              "maximum-grain-production",
+
+            goalB:
+              "maximum-green-forage-harvest",
+
+            explanation:
+              "Repeated foliage removal reduces leaf area needed for flowering, pod formation, and seed filling."
+          },
+
+          {
+            goalA:
+              "maximum-storage-life",
+
+            goalB:
+              "store-ground-pea-meal-for-long-periods",
+
+            explanation:
+              "Whole clean dry peas generally retain quality more reliably than peas that have been cracked or ground far in advance."
+          },
+
+          {
+            goalA:
+              "minimal-processing",
+
+            goalB:
+              "precise-home-mixed-ration-ingredient",
+
+            explanation:
+              "Accurate ration use may require threshing, cleaning, cracking or grinding, weighing, formulation knowledge, and thorough mixing."
+          },
+
+          {
+            goalA:
+              "early-cool-season-production",
+
+            goalB:
+              "avoid-all-frost-exposure",
+
+            explanation:
+              "The crop's cool-season advantage depends partly on planting while conditions remain cool, even though severe freezes can still damage plants."
+          }
+        ],
+
+        directFacts: {
+          strongestPrimaryGoals: [
+            "Cool-season protein-oriented grain production",
+            "Dry winter storage",
+            "Dual-purpose household and poultry production",
+            "Nitrogen-fixing crop rotation",
+            "Seed saving",
+            "Feed-source diversification",
+            "Measured ration-ingredient production"
+          ],
+
+          completeFeedReplacementGoalSupported:
+            false,
+
+          permanentPastureGoalSupported:
+            false,
+
+          householdFoodGoalSupported:
+            true,
+
+          seedSavingGoalSupported:
+            true,
+
+          smallSpaceGoalSupported:
+            true,
+
+          nitrogenFixingLegume:
+            true,
+
+          annualDryLegume:
+            true,
+
+          longTermDryStoragePotential:
+            true,
+
+          humanFoodPotential:
+            true,
+
+          coolSeasonProductionPotential:
+            true,
+
+          notes: [
+            "Field Peas are one of the stronger cool-season protein-oriented crops in the planner.",
+            "The crop also contributes starch and should not be treated as a pure protein concentrate.",
+            "Peas complement cereal grains nutritionally but do not correct every amino-acid limitation of a home ration.",
+            "Methionine remains an important limitation when peas are used in poultry diets.",
+            "Clean mature peas have strong dry-storage potential when moisture, insects, rodents, and contamination are controlled.",
+            "The crop has substantial household-food value.",
+            "Low-tannin feed or food varieties improve poultry-use confidence.",
+            "Nitrogen fixation improves rotational value, but nitrogen benefits depend on successful nodulation and residue management.",
+            "Removing harvested seed exports some nitrogen from the planting area.",
+            "Field Peas are not dependable permanent forage.",
+            "Fresh foliage and immature peas provide faster seasonal value but less concentrated stored nutrition than mature dry peas.",
+            "The crop can contribute to feed self-reliance without safely replacing a complete ration.",
+            "Unknown backyard yield and ration-displacement values must remain null.",
+            "The planner should reward users who have cool-season planting conditions, suitable drainage, drying capability, protected storage, and a willingness to measure feed ingredients."
+          ]
+        }
+      },
+
+      risks: {
+        overallRiskLevel:
+          "moderate",
+
+        wildlife: {
+          wildBirds:
+            3,
+
+          deer:
+            5,
+
+          raccoons:
+            2,
+
+          squirrels:
+            3,
+
+          rabbits:
+            4,
+
+          rodents:
+            5,
+
+          groundhogs:
+            4
+        },
+
+        establishmentFailureRiskScore:
+          3,
+
+        weedCompetitionRiskScore:
+          4,
+
+        droughtEstablishmentRiskScore:
+          3,
+
+        matureDroughtRiskScore:
+          4,
+
+        waterloggingRiskScore:
+          5,
+
+        heatDamageRiskScore:
+          5,
+
+        frostDamageRiskScore:
+          3,
+
+        stormDamageRiskScore:
+          4,
+
+        lodgingRiskScore:
+          4,
+
+        shatteringRiskScore:
+          4,
+
+        birdLossRiskScore:
+          3,
+
+        wildlifePressureScore:
+          4,
+
+        deerBrowsingRiskScore:
+          5,
+
+        rabbitBrowsingRiskScore:
+          4,
+
+        rodentAttractionScore:
+          5,
+
+        insectDamageRiskScore:
+          4,
+
+        diseaseRiskScore:
+          5,
+
+        moldRiskScore:
+          4,
+
+        harvestWeatherRiskScore:
+          4,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          4,
+
+        storageMoistureRiskScore:
+          5,
+
+        contaminationRiskScore:
+          4,
+
+        misidentificationRiskScore:
+          2,
+
+        chemicalExposureRiskScore:
+          5,
+
+        nitrateAccumulationRiskScore:
+          1,
+
+        oxalateConcernScore:
+          1,
+
+        antinutritionalFactorRiskScore:
+          3,
+
+        completeFeedDisplacementRiskScore:
+          5,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        flockOverconsumptionRiskScore:
+          4,
+
+        selfSeedingRiskScore:
+          2,
+
+        invasivenessRiskScore:
+          1,
+
+        crossPollinationRiskScore:
+          2,
+
+        allergenOrDustExposureRiskScore:
+          3,
+
+        mechanicalHarvestSuitabilityScore:
+          5,
+
+        mechanicalProcessingSuitabilityScore:
+          4,
+
+        riskFactors: [
+          {
+            id:
+              "waterlogged-establishment",
+
+            category:
+              "soil-and-establishment",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Saturated or slowly drained soil can cause poor emergence, seed decay, damping-off, weak nodulation, root rot, and stand loss.",
+
+            mitigation: [
+              "Plant only in well-drained soil.",
+              "Avoid low areas that hold standing water.",
+              "Use raised beds where native soil remains wet.",
+              "Improve soil structure before planting.",
+              "Avoid overirrigation.",
+              "Rotate away from peas and closely related legumes where root disease has occurred."
+            ]
+          },
+
+          {
+            id:
+              "root-rot-disease-complex",
+
+            category:
+              "disease",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Field Peas are vulnerable to several seedling and root diseases, including Fusarium, Aphanomyces, Pythium, and Rhizoctonia disease complexes, particularly in wet or repeatedly planted ground.",
+
+            mitigation: [
+              "Use clean high-quality seed.",
+              "Select disease-resistant varieties where available.",
+              "Plant into well-drained soil.",
+              "Avoid repeated pea or lentil production in the same area.",
+              "Use a long crop rotation.",
+              "Do not move contaminated soil between beds.",
+              "Remove severely diseased plant material.",
+              "Follow locally appropriate disease-management guidance."
+            ]
+          },
+
+          {
+            id:
+              "early-weed-competition",
+
+            category:
+              "establishment",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Weeds can reduce establishment, airflow, harvest access, and final seed yield before the pea canopy becomes competitive.",
+
+            mitigation: [
+              "Prepare a clean seedbed.",
+              "Plant in visible rows.",
+              "Remove weeds while they are small.",
+              "Avoid damaging shallow pea roots during cultivation.",
+              "Use suitable mulch only after plants emerge.",
+              "Do not establish the crop directly in competitive sod."
+            ]
+          },
+
+          {
+            id:
+              "heat-during-flowering",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "High temperatures during flowering and early pod formation can reduce flower retention, pod set, seed number, and final yield.",
+
+            mitigation: [
+              "Plant as early as local soil conditions permit.",
+              "Select early-maturing locally adapted varieties.",
+              "Avoid late spring planting in rapidly warming climates.",
+              "Maintain adequate moisture during flowering.",
+              "Use the coolest productive full-sun site available.",
+              "Consider autumn production only where a suitable variety and winter climate allow it."
+            ]
+          },
+
+          {
+            id:
+              "drought-during-flowering-and-seed-fill",
+
+            category:
+              "water",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Moisture stress during flowering, pod formation, or seed filling can reduce pod number, seed size, and usable dry-grain yield.",
+
+            mitigation: [
+              "Maintain dependable root-zone moisture.",
+              "Prioritize irrigation during flowering and seed filling.",
+              "Use mulch where it does not interfere with drainage.",
+              "Control weeds that compete for moisture.",
+              "Avoid shallow containers for grain production."
+            ]
+          },
+
+          {
+            id:
+              "lodging-before-harvest",
+
+            category:
+              "harvest",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Vines may fall, tangle, or remain close to wet soil as pods mature, increasing disease, sprouting, harvest difficulty, and grain loss.",
+
+            mitigation: [
+              "Select semi-leafless or lodging-resistant varieties.",
+              "Avoid excessive nitrogen fertilizer.",
+              "Use suitable plant density.",
+              "Provide a trellis in small garden plots where practical.",
+              "Harvest promptly after maturity.",
+              "Avoid unnecessary irrigation near maturity."
+            ]
+          },
+
+          {
+            id:
+              "pod-shattering-and-seed-loss",
+
+            category:
+              "harvest",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Overmature dry pods may split and release peas during wind, storms, handling, or delayed harvest.",
+
+            mitigation: [
+              "Inspect the crop frequently as pods mature.",
+              "Harvest during dry weather before severe shattering begins.",
+              "Handle mature plants over a tarp.",
+              "Use bags or containers that retain loose seed.",
+              "Avoid leaving mature pods exposed to repeated wetting and drying."
+            ]
+          },
+
+          {
+            id:
+              "wet-harvest-and-mold",
+
+            category:
+              "postharvest",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Harvesting or storing damp plants, pods, or peas can cause heating, mold, spoilage, off odors, seed discoloration, and unsafe feed.",
+
+            mitigation: [
+              "Harvest during a dry weather window.",
+              "Dry pods and peas with strong airflow.",
+              "Spread material in thin layers.",
+              "Do not seal warm or damp peas.",
+              "Inspect for condensation and heating.",
+              "Discard moldy or musty material.",
+              "Store only after dryness is verified."
+            ]
+          },
+
+          {
+            id:
+              "storage-insects-and-rodents",
+
+            category:
+              "storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Stored peas can attract rodents and may be damaged by pantry or grain insects when containers and storage areas are not secure.",
+
+            mitigation: [
+              "Use clean food-safe sealed containers.",
+              "Use rodent-resistant storage.",
+              "Clean storage areas before harvest.",
+              "Inspect containers regularly.",
+              "Remove infested material.",
+              "Store whole dry peas rather than damp or freshly ground meal.",
+              "Use freezing or another appropriate insect-control method when needed."
+            ]
+          },
+
+          {
+            id:
+              "chemically-treated-planting-seed",
+
+            category:
+              "chemical-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Commercial planting seed may be treated with fungicides, insecticides, colorants, or other products that make it unsuitable for poultry or household food.",
+
+            mitigation: [
+              "Use untreated seed for crops intended for food or feed.",
+              "Read the seed label.",
+              "Keep treated seed clearly separated.",
+              "Never feed leftover treated planting seed.",
+              "Do not harvest spills or unidentified seed for poultry."
+            ]
+          },
+
+          {
+            id:
+              "high-tannin-or-unidentified-variety",
+
+            category:
+              "feed-quality",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Colored-flowered or dark-seeded varieties may contain more tannins than low-tannin feed peas, and unidentified peas provide less confidence about poultry feeding value.",
+
+            mitigation: [
+              "Select a named low-tannin feed or food variety.",
+              "Prefer varieties documented for livestock or human food use.",
+              "Keep seed lots identified.",
+              "Do not assume every pea variety has identical antinutritional characteristics.",
+              "Use conservative measured supplementation."
+            ]
+          },
+
+          {
+            id:
+              "trypsin-inhibitor-and-antinutritional-variation",
+
+            category:
+              "feed-safety",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Peas contain trypsin inhibitors and other antinutritional factors whose concentrations vary among varieties and production types.",
+
+            mitigation: [
+              "Choose low-tannin feed varieties.",
+              "Avoid unrestricted raw-pea feeding.",
+              "Use peas only as a measured supplemental ingredient.",
+              "Consider suitable processing when variety or ration evidence is uncertain.",
+              "Do not equate peas with heat-treated soybean meal.",
+              "Maintain a complete balanced base ration."
+            ]
+          },
+
+          {
+            id:
+              "methionine-limitation",
+
+            category:
+              "nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              5,
+
+            description:
+              "Field Peas are relatively limited in methionine and cannot independently provide the amino-acid balance required for poultry.",
+
+            mitigation: [
+              "Use peas only within a balanced ration.",
+              "Do not formulate from crude-protein percentage alone.",
+              "Account for digestible amino acids.",
+              "Continue feeding an age-appropriate complete poultry feed unless a qualified ration is formulated.",
+              "Do not use peas as the sole protein ingredient."
+            ]
+          },
+
+          {
+            id:
+              "complete-feed-displacement",
+
+            category:
+              "nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Large amounts of peas, fresh pods, or pea treats can displace complete feed and dilute energy, methionine, calcium, vitamins, minerals, and other required nutrients.",
+
+            mitigation: [
+              "Measure all supplements.",
+              "Introduce peas gradually.",
+              "Maintain a complete base ration.",
+              "Avoid unrestricted free-choice access.",
+              "Monitor appetite, body condition, egg production, manure, and flock health.",
+              "Do not use an unsupported universal inclusion percentage."
+            ]
+          },
+
+          {
+            id:
+              "selective-feeding-and-ingredient-separation",
+
+            category:
+              "feeding-management",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Whole or coarsely processed peas may separate from finer ration ingredients or be selected preferentially by individual birds.",
+
+            mitigation: [
+              "Use a consistent particle size.",
+              "Mix thoroughly.",
+              "Avoid extremely fine dusty meal.",
+              "Prepare manageable batches.",
+              "Observe feeder sorting and waste.",
+              "Do not scatter a formulated ration into bedding."
+            ]
+          },
+
+          {
+            id:
+              "grinding-dust-and-shorter-storage",
+
+            category:
+              "processing",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Grinding can create dust, increase surface exposure, speed quality loss, and reduce storage reliability compared with whole peas.",
+
+            mitigation: [
+              "Store peas whole whenever practical.",
+              "Crack or grind only manageable quantities.",
+              "Use a coarse grind.",
+              "Wear appropriate respiratory protection around dust.",
+              "Keep processed feed cool and dry.",
+              "Discard material with off odors, insects, moisture, or mold."
+            ]
+          },
+
+          {
+            id:
+              "premature-chicken-access",
+
+            category:
+              "crop-protection",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              5,
+
+            description:
+              "Chickens may consume planted seed, uproot seedlings, strip foliage, damage flowers, break vines, and remove peas before harvest.",
+
+            mitigation: [
+              "Fence the planting area.",
+              "Use row cover during establishment where appropriate.",
+              "Protect flowers and pods.",
+              "Allow access only after the main harvest.",
+              "Use supervised postharvest cleanup rather than continuous access."
+            ]
+          }
+        ],
+
+        directFacts: {
+          rootRotConcern:
+            true,
+
+          waterloggingConcern:
+            true,
+
+          earlyWeedCompetitionConcern:
+            true,
+
+          heatDuringFloweringConcern:
+            true,
+
+          droughtDuringSeedFillConcern:
+            true,
+
+          lodgingConcern:
+            true,
+
+          shatteringConcern:
+            true,
+
+          wetHarvestConcern:
+            true,
+
+          storageMoistureConcern:
+            true,
+
+          storedInsectConcern:
+            true,
+
+          rodentConcern:
+            true,
+
+          deerConcern:
+            true,
+
+          rabbitConcern:
+            true,
+
+          treatedSeedConcern:
+            true,
+
+          tanninVariationConcern:
+            true,
+
+          trypsinInhibitorConcern:
+            true,
+
+          methionineLimitationConcern:
+            true,
+
+          completeFeedDisplacementConcern:
+            true,
+
+          notes: [
+            "Poor drainage and root disease are among the crop's most serious agronomic risks.",
+            "Continuous wet weather increases several root, stem, leaf, and pod diseases.",
+            "A long crop rotation is important where peas or related legumes have been grown repeatedly.",
+            "High temperature during flowering can reduce seed set.",
+            "Lodging and shattering can make a mature crop difficult to harvest cleanly.",
+            "Rain during final maturity increases drying and mold risk.",
+            "Low-tannin varieties provide a more suitable poultry-feed profile than high-tannin varieties.",
+            "Peas contain less trypsin-inhibiting activity than raw soybeans on average, but concentrations vary among cultivars.",
+            "Raw pea seed should not be treated as nutritionally identical to commercial soybean meal.",
+            "Methionine limitation prevents Field Peas from serving as a complete poultry protein source.",
+            "Whole dry peas generally store more reliably than ground pea meal.",
+            "Treated planting seed must never enter the poultry or human food supply.",
+            "Chickens must be excluded while the grain crop is developing.",
+            "All visibly moldy, musty, heated, infested, chemically contaminated, or rodent-contaminated peas must be discarded."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        earlySpring:
+          true,
+
+        lateSpring:
+          true,
+
+        summer:
+          false,
+
+        lateSummer:
+          false,
+
+        fall:
+          true,
+
+        winterStorage:
+          true,
+
+        perennial:
+          false,
+
+        plantingWindows: [
+          {
+            id:
+              "early-spring-direct-seeding",
+
+            trigger:
+              "soil-workable-before-last-frost",
+
+            offsetWeeksMinimum:
+              4,
+
+            offsetWeeksMaximum:
+              6,
+
+            soilCondition:
+              "cool-moist-well-drained-and-workable",
+
+            method:
+              "direct-seed",
+
+            note:
+              "Plant as early as local soil conditions permit so flowering and pod filling occur before damaging summer heat. Do not plant into saturated or severely compacted soil."
+          },
+
+          {
+            id:
+              "mild-winter-autumn-planting",
+
+            trigger:
+              "autumn-cooling-period",
+
+            offsetWeeksMinimum:
+              null,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "well-drained-with-time-for-establishment-before-severe-freezing",
+
+            method:
+              "direct-seed-winter-adapted-variety",
+
+            note:
+              "Autumn planting is limited to regions and varieties with suitable winter adaptation. Spring field peas should not automatically be treated as winter-hardy."
+          },
+
+          {
+            id:
+              "spring-cover-crop-planting",
+
+            trigger:
+              "ground-ready-for-planting",
+
+            offsetWeeksMinimum:
+              0,
+
+            offsetWeeksMaximum:
+              null,
+
+            soilCondition:
+              "workable-and-well-drained",
+
+            method:
+              "direct-seed-alone-or-with-compatible-small-grain",
+
+            note:
+              "Field Peas may be planted as a cool-season cover crop or in mixtures such as peas and oats when grain harvest is not the sole objective."
+          }
+        ],
+
+        harvestWindows: [
+          {
+            id:
+              "fresh-green-pea-harvest",
+
+            trigger:
+              "pods-filled-before-seed-hardening",
+
+            usePathId:
+              "fresh-green-field-peas",
+
+            note:
+              "Harvest filled green pods while peas remain tender. Fresh peas are a household-food or supplemental-treat path rather than the primary dry-feed path."
+          },
+
+          {
+            id:
+              "mature-dry-pea-harvest",
+
+            trigger:
+              "pods-and-seed-mature-and-drying",
+
+            usePathId:
+              "whole-dry-field-peas",
+
+            note:
+              "Harvest mature plants or pods during dry weather before severe shattering, lodging, repeated rainfall, wildlife loss, or mold reduces quality."
+          },
+
+          {
+            id:
+              "cracked-dry-pea-processing",
+
+            trigger:
+              "whole-peas-clean-dry-and-stable",
+
+            usePathId:
+              "cracked-dry-field-peas",
+
+            note:
+              "Crack only clean adequately dried peas, preferably in manageable batches close to feeding time."
+          },
+
+          {
+            id:
+              "ground-pea-ration-ingredient",
+
+            trigger:
+              "clean-dry-peas-and-formulation-system-available",
+
+            usePathId:
+              "ground-field-pea-ration-ingredient",
+
+            note:
+              "Grind only when accurate weighing, ration formulation, mixing, dust control, and protected short-term storage are available."
+          },
+
+          {
+            id:
+              "cooked-mature-peas",
+
+            trigger:
+              "sound-peas-selected-for-cooking",
+
+            usePathId:
+              "cooked-field-peas",
+
+            note:
+              "Cook, cool, and portion sound peas for household use or limited poultry supplementation. Do not leave cooked peas at unsafe temperatures."
+          },
+
+          {
+            id:
+              "limited-fresh-foliage",
+
+            trigger:
+              "healthy-tender-vegetative-growth",
+
+            usePathId:
+              "limited-fresh-field-pea-foliage",
+
+            note:
+              "Cut only limited clean tender foliage where this does not interfere with the primary grain goal."
+          },
+
+          {
+            id:
+              "postharvest-field-cleanup",
+
+            trigger:
+              "main-grain-harvest-complete",
+
+            usePathId:
+              "postharvest-field-pea-cleanup",
+
+            note:
+              "Allow supervised flock access only after the usable harvest and unsafe materials have been removed."
+          },
+
+          {
+            id:
+              "cover-crop-termination",
+
+            trigger:
+              "before-following-crop-or-before-excessive-seed-set",
+
+            usePathId:
+              "field-pea-soil-building-cover-crop",
+
+            note:
+              "Terminate according to the following crop, moisture needs, disease rotation, and whether biomass or grain is the primary goal."
+          }
+        ],
+
+        cropSequenceRoles: [
+          "Early-spring protein-oriented grain crop",
+          "Cool-season household-food crop",
+          "Spring nitrogen-fixing cover crop",
+          "Pea-and-oat cover-crop mixture component",
+          "Annual soil-building rotation crop",
+          "Pre-summer feed-garden crop",
+          "Dry winter-storage ingredient",
+          "Postharvest poultry-cleanup area",
+          "Reversible annual feed plot"
+        ],
+
+        seasonalLimitations: [
+          "Summer heat can reduce flowering and pod set.",
+          "Late planting may place seed filling in damaging heat.",
+          "Wet spring soil increases establishment and root-rot risk.",
+          "Autumn planting requires a genuinely winter-adapted variety and suitable climate.",
+          "Fresh foliage and green peas have limited storage life.",
+          "Dry peas require a protected drying period.",
+          "Mature pods may shatter when harvest is delayed.",
+          "Lodged vines may remain wet near the soil surface.",
+          "The crop does not provide living winter forage after annual maturity.",
+          "Repeated pea-family crops may increase root-disease pressure."
+        ],
+
+        directFacts: {
+          coolSeasonAnnual:
+            true,
+
+          earlySpringPlantingPossible:
+            true,
+
+          autumnPlantingPossibleWithAdaptedVariety:
+            true,
+
+          repeatedHarvestPossible:
+            false,
+
+          winterDormancyPossible:
+            false,
+
+          postharvestDryingRequired:
+            true,
+
+          longTermWinterStoragePossible:
+            true,
+
+          springCoverCropPossible:
+            true,
+
+          summerHeatLimitation:
+            true,
+
+          notes: [
+            "Field Peas fill a useful seasonal gap before warm-season grain legumes become productive.",
+            "Early spring planting is the most dependable grain-production pattern across much of North America.",
+            "Autumn-planted winter peas and spring field peas must not be treated as interchangeable.",
+            "Dry peas extend the crop's usefulness through autumn and winter after the annual plants have died.",
+            "Fresh green peas provide earlier use but do not have the storage efficiency of mature dry peas.",
+            "Cover-crop termination timing changes nitrogen contribution, biomass, moisture use, and disease-rotation effects.",
+            "Harvested seed exports part of the crop's accumulated nitrogen.",
+            "Pea residue incorporated or retained in the growing area can contribute organic matter and gradually available nitrogen.",
+            "The crop should normally be followed by a non-pea-family crop where disease rotation is important.",
+            "The planner should distinguish grain production, household-food harvest, cover-crop use, and postharvest flock access as separate seasonal pathways."
+          ]
+        }
+      },
+usePaths: [
+              {
+          id:
+            "whole-dry-field-peas",
+
+          label:
+            "Whole Dry Field Peas",
+
+          description:
+            "Mature Field Peas are harvested, dried thoroughly, threshed or shelled, cleaned, inspected, and stored whole for measured supplementation of established adult chickens.",
+
+          primaryFeedRole:
+            "whole-protein-oriented-grain",
+
+          harvestProducts: [
+            "mature-dry-peas",
+            "whole-field-peas",
+            "dry-legume-grain",
+            "stored-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "winter-supplement",
+            "stored-feed-ingredient"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-plants-or-pods",
+            "dry",
+            "thresh-or-shell",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture"
+          ],
+
+          optionalProcessingTasks: [
+            "screen",
+            "freeze-for-insect-control",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "fan",
+            "threshing-container",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "food-safe-bucket",
+            "metal-grain-can",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "sealed-dry-grain-storage",
+            "rodent-resistant-room-temperature-storage"
+          ],
+
+          preferredStorageMethod:
+            "whole-clean-dry-peas-in-a-cool-dark-dry-and-rodent-resistant-container",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "whole-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-cracking",
+            "later-grinding",
+            "later-cooking",
+            "seed-saving"
+          ],
+
+          preservationLimitations: [
+            "Peas must be fully mature, clean, and adequately dry before sealed storage.",
+            "Whole peas remain vulnerable to moisture, insects, rodents, and contamination.",
+            "Storage duration varies with seed moisture, temperature, humidity, sanitation, container quality, and pest pressure.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "long-when-stored-whole-and-dry",
+
+          likelyLossPoints: [
+            "wildlife-feeding-before-harvest",
+            "lodging",
+            "pod-shattering",
+            "rain-during-maturity",
+            "seed-left-during-threshing",
+            "chaff-and-stone-contamination",
+            "insufficient-drying",
+            "storage-insects",
+            "rodent-damage",
+            "mold"
+          ],
+
+          safetyWarnings: [
+            "Use only identified untreated Field Peas intended for food or feed.",
+            "Never feed chemically treated planting seed.",
+            "Select a documented low-tannin feed or food variety whenever possible.",
+            "Dry peas thoroughly before sealed storage.",
+            "Do not store peas that are warm, damp, sprouted, musty, moldy, or visibly deteriorated.",
+            "Discard peas contaminated by rodents, chemicals, floodwater, or unknown substances.",
+            "Whole peas may be too large for some birds to consume efficiently.",
+            "Provide appropriately sized insoluble grit when chickens consume whole grains.",
+            "Field Peas are supplemental ingredients and must not replace an age-appropriate complete ration.",
+            "Do not rely on crude-protein percentage alone when formulating poultry feed.",
+            "Field Peas are relatively limited in methionine and do not provide a complete amino-acid balance.",
+            "No universal safe inclusion percentage is stored for backyard flocks."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-drying-capability",
+            "has-no-threshing-capability",
+            "has-no-protected-storage",
+            "cannot-monitor-stored-grain",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks",
+            "cannot-identify-seed-treatment-status"
+          ]
+        },
+
+        {
+          id:
+            "cracked-dry-field-peas",
+
+          label:
+            "Cracked Dry Field Peas",
+
+          description:
+            "Clean, fully dried Field Peas are cracked into coarse pieces to improve handling, mixing, and consumption by established adult chickens.",
+
+          primaryFeedRole:
+            "processed-protein-oriented-grain",
+
+          harvestProducts: [
+            "cracked-field-peas",
+            "coarsely-broken-peas",
+            "processed-dry-legume",
+            "ration-ingredient"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "measured-supplement",
+            "ration-mixing",
+            "winter-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-plants-or-pods",
+            "dry",
+            "thresh-or-shell",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture",
+            "crack"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-particle-size",
+            "measure",
+            "blend",
+            "portion"
+          ],
+
+          requiredEquipment: [
+            "grain-cracker-or-suitable-coarse-processing-method"
+          ],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "drying-screen",
+            "fan",
+            "grain-screen",
+            "moisture-meter",
+            "grain-cracker",
+            "feed-scale",
+            "mixing-container",
+            "dust-mask-or-respirator",
+            "food-safe-storage-container"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "processed-as-needed",
+
+          storageMethods: [
+            "short-to-moderate-term-dry-storage",
+            "sealed-food-safe-container"
+          ],
+
+          preferredStorageMethod:
+            "store-whole-peas-and-crack-only-manageable-batches-close-to-feeding-time",
+
+          storageDurationCategory:
+            "moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-term-dry-storage",
+            "freezing",
+            "immediate-ration-mixing",
+            "measured-supplementation"
+          ],
+
+          preservationLimitations: [
+            "Cracking exposes more surface area than whole-grain storage.",
+            "Processed peas may absorb moisture and lose quality faster than intact peas.",
+            "Particle size must remain coarse enough to avoid excessive dust.",
+            "Long-term storage is generally better performed before cracking."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-dry-peas",
+
+          likelyLossPoints: [
+            "spillage-during-processing",
+            "dust-generation",
+            "uneven-particle-size",
+            "ingredient-separation",
+            "moisture-absorption",
+            "storage-insects",
+            "rodent-damage",
+            "mold"
+          ],
+
+          safetyWarnings: [
+            "Crack only clean, sound, fully dried, untreated peas.",
+            "Never process or feed chemically treated planting seed.",
+            "Do not process peas that smell musty or show mold, heating, sprouting, insect damage, or rodent contamination.",
+            "Avoid creating excessively fine dusty meal.",
+            "Use respiratory protection when processing creates airborne dust.",
+            "Keep hands, clothing, and tools away from moving grain-processing equipment.",
+            "Cracked peas must remain a measured supplemental or formulated ration ingredient.",
+            "Field Peas remain limited in methionine and cannot serve as the sole protein source.",
+            "Continue an age-appropriate complete feed unless the entire ration has been professionally formulated.",
+            "Observe feeders for sorting, separation, and waste."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-grain-processing-equipment",
+            "cannot-control-processing-dust",
+            "requires-long-term-storage-after-processing",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "cannot-measure-supplements",
+            "has-only-young-chicks"
+          ]
+        },
+
+        {
+          id:
+            "ground-field-pea-ration-ingredient",
+
+          label:
+            "Ground Field-Pea Ration Ingredient",
+
+          description:
+            "Clean, fully dried Field Peas are coarsely ground, weighed, and blended as one ingredient in a nutritionally balanced poultry ration.",
+
+          primaryFeedRole:
+            "formulated-protein-and-starch-ingredient",
+
+          harvestProducts: [
+            "ground-field-peas",
+            "pea-meal",
+            "homegrown-ration-ingredient",
+            "processed-legume-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "formulated-ration",
+            "measured-feed-ingredient",
+            "thoroughly-blended-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-plants-or-pods",
+            "dry",
+            "thresh-or-shell",
+            "winnow",
+            "clean-sort",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "blend"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-particle-size",
+            "laboratory-feed-analysis",
+            "prepare-small-batches",
+            "record-formulation"
+          ],
+
+          requiredEquipment: [
+            "suitable-grain-grinder",
+            "accurate-feed-scale",
+            "mixing-container"
+          ],
+
+          helpfulEquipment: [
+            "moisture-meter",
+            "grain-screen",
+            "dust-collection-system",
+            "dust-mask-or-respirator",
+            "batch-record-sheet",
+            "sealed-food-safe-container",
+            "professional-ration-formulation-software-or-service"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "processed-and-mixed-as-needed",
+
+          storageMethods: [
+            "short-term-sealed-dry-storage",
+            "immediate-ration-use"
+          ],
+
+          preferredStorageMethod:
+            "store-peas-whole-and-grind-only-the-quantity-needed-for-a-short-term-formulated-feed-batch",
+
+          storageDurationCategory:
+            "short-to-moderate",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "immediate-ration-mixing",
+            "short-term-sealed-storage",
+            "freezing-of-small-batches"
+          ],
+
+          preservationLimitations: [
+            "Ground peas have a shorter dependable storage period than intact whole peas.",
+            "Fine particles may become dusty or separate from other ingredients.",
+            "Accurate ration use requires dependable nutrient information for the actual pea lot or a conservative professional formulation.",
+            "Home grinding does not correct methionine limitation or create a complete ration.",
+            "No universal backyard inclusion percentage is supported."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-to-moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-or-cracked-peas",
+
+          likelyLossPoints: [
+            "grinding-dust",
+            "spillage",
+            "uneven-particle-size",
+            "ingredient-separation",
+            "incorrect-weighing",
+            "incorrect-formulation",
+            "moisture-absorption",
+            "mold",
+            "rodent-damage",
+            "nutrient-deterioration-during-storage"
+          ],
+
+          safetyWarnings: [
+            "This pathway is appropriate only when the complete ration is accurately formulated for the bird's species, age, and production stage.",
+            "Do not formulate poultry feed from crude-protein percentage alone.",
+            "Account for metabolizable energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and other required nutrients.",
+            "Field Peas are relatively limited in methionine and should not be the sole protein ingredient.",
+            "Low-tannin feed peas are preferred.",
+            "Do not assume unidentified, colored, feed, garden, winter, or field pea cultivars have identical nutrient or antinutritional profiles.",
+            "Use only clean, sound, fully dried, untreated peas.",
+            "Never grind or feed chemically treated planting seed.",
+            "Avoid creating inhalable dust.",
+            "Keep hands and loose clothing away from operating grinders.",
+            "Prepare manageable batches and store them cool and dry.",
+            "Discard feed showing mold, insects, heating, condensation, rancid odor, mustiness, or rodent contamination.",
+            "Young chicks are especially vulnerable to nutritional imbalance and should receive a complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-ration-formulation-knowledge",
+            "has-no-accurate-feed-scale",
+            "has-no-grinder",
+            "cannot-control-dust",
+            "cannot-mix-feed-uniformly",
+            "cannot-monitor-feed-storage",
+            "requires-simple-treat-feeding",
+            "requires-unverified-inclusion-percentages"
+          ]
+        },
+
+        {
+          id:
+            "cooked-field-peas",
+
+          label:
+            "Cooked Field Peas",
+
+          description:
+            "Sound mature Field Peas are cleaned, cooked without salt or seasoning, cooled, and offered in measured portions as household-food surplus or supplemental poultry food.",
+
+          primaryFeedRole:
+            "cooked-protein-and-starch-supplement",
+
+          harvestProducts: [
+            "cooked-field-peas",
+            "cooked-mature-peas",
+            "household-food-surplus",
+            "soft-legume-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "cooked-supplement",
+            "soft-food",
+            "measured-treat",
+            "household-food-surplus"
+          ],
+
+          requiredProcessingTasks: [
+            "shell-or-sort",
+            "clean-sort",
+            "wash",
+            "cook",
+            "cool",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "soak",
+            "mash",
+            "refrigerate-short-term",
+            "freeze-portions"
+          ],
+
+          requiredEquipment: [
+            "cooking-pot-or-pressure-cooker",
+            "safe-heat-source"
+          ],
+
+          helpfulEquipment: [
+            "colander",
+            "food-scale",
+            "refrigerator",
+            "freezer",
+            "portion-containers"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "prepared-as-needed",
+
+          storageMethods: [
+            "immediate-consumption",
+            "short-term-refrigeration",
+            "freezing"
+          ],
+
+          preferredStorageMethod:
+            "feed-promptly-after-cooling-or-refrigerate-and-use-within-an-appropriate-food-safety-window",
+
+          storageDurationCategory:
+            "very-short-after-cooking",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            true,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "short-term-refrigeration",
+            "freezing-in-portions",
+            "immediate-feeding"
+          ],
+
+          preservationLimitations: [
+            "Cooked peas spoil much faster than dry peas.",
+            "Cooked food should not remain in warm poultry areas for prolonged periods.",
+            "Salted, seasoned, oily, moldy, or spoiled household leftovers are unsuitable.",
+            "Cooking increases labor and energy use.",
+            "Cooked peas remain supplemental rather than complete feed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "very-short-unless-frozen",
+
+          likelyLossPoints: [
+            "overcooking",
+            "spillage",
+            "unsafe-cooling",
+            "prolonged-warm-storage",
+            "refrigerator-spoilage",
+            "feed-left-uneaten",
+            "contamination"
+          ],
+
+          safetyWarnings: [
+            "Cook only sound peas intended for food or feed.",
+            "Never cook chemically treated planting seed for poultry.",
+            "Do not add salt, onion-heavy seasoning, sauces, excess oil, moldy ingredients, or spoiled food.",
+            "Cool cooked peas before offering them to chickens.",
+            "Do not leave moist cooked peas in feeders long enough to sour, mold, or attract pests.",
+            "Remove uneaten portions promptly.",
+            "Cooked peas remain a supplement and must not replace complete poultry feed.",
+            "Introduce unfamiliar cooked legumes gradually.",
+            "Do not use cooked peas to correct a suspected nutritional deficiency without veterinary or qualified nutrition guidance."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-cooking-method",
+            "has-no-refrigeration-or-freezing",
+            "cannot-remove-wet-leftovers",
+            "requires-long-term-room-temperature-storage",
+            "requires-zero-energy-processing",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+        {
+          id:
+            "fresh-green-field-peas",
+
+          label:
+            "Fresh Green Field Peas",
+
+          description:
+            "Filled immature pods are harvested before the peas harden, shelled or offered where the pod is known to be edible, inspected, and provided promptly as a measured seasonal supplement.",
+
+          primaryFeedRole:
+            "fresh-seasonal-protein-and-starch-treat",
+
+          harvestProducts: [
+            "fresh-green-peas",
+            "immature-peas",
+            "fresh-shelled-peas",
+            "tender-edible-pods"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-supplement",
+            "whole-produce",
+            "measured-treat",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "pick-pods",
+            "clean-sort",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "shell",
+            "wash",
+            "chop-tender-pods",
+            "refrigerate",
+            "freeze"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "colander",
+            "food-scale",
+            "refrigerator",
+            "freezer"
+          ],
+
+          harvestPattern:
+            "continuous",
+
+          harvestFrequencyCategory:
+            "seasonal-frequent",
+
+          storageMethods: [
+            "immediate-consumption",
+            "short-term-refrigeration",
+            "freezing"
+          ],
+
+          preferredStorageMethod:
+            "feed-soon-after-harvest-or-refrigerate-briefly",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "short-term-refrigeration",
+            "freezing",
+            "immediate-feeding",
+            "household-food-use"
+          ],
+
+          preservationLimitations: [
+            "Fresh green peas contain substantially more water than mature dry peas.",
+            "Fresh peas provide less concentrated stored-feed value.",
+            "Harvesting immature peas prevents those pods from becoming dry grain.",
+            "Pod edibility varies by variety and stage of maturity.",
+            "Fresh produce spoils rapidly compared with properly dried seed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short",
+
+          shelfLifeAfterProcessingCategory:
+            "very-short-after-shelling",
+
+          likelyLossPoints: [
+            "overmature-pods",
+            "wildlife-feeding",
+            "missed-harvest-window",
+            "refrigerator-spoilage",
+            "pod-waste",
+            "uneaten-fresh-feed"
+          ],
+
+          safetyWarnings: [
+            "Offer only clean, healthy peas and pods without mold, slime, decay, chemical contamination, or pest damage.",
+            "Confirm that the selected variety produces edible pods before intentionally feeding whole pods.",
+            "Shell peas from tough, fibrous, bitter, or unidentified pods.",
+            "Remove strings and excessively fibrous pod material where necessary.",
+            "Do not feed seed or pods from plants treated with products not approved for the intended food or feed use.",
+            "Fresh peas are supplemental treats rather than a complete ration.",
+            "Introduce unfamiliar fresh peas gradually.",
+            "Remove wet or uneaten produce before it spoils."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-room-temperature-storage",
+            "requires-dry-grain-only",
+            "cannot-harvest-frequently",
+            "cannot-remove-wet-leftovers",
+            "requires-maximum-dry-seed-yield"
+          ]
+        },
+
+        {
+          id:
+            "limited-fresh-field-pea-foliage",
+
+          label:
+            "Limited Fresh Field-Pea Foliage",
+
+          description:
+            "A small quantity of clean, tender, healthy Field-Pea shoots or leaves is cut from an established planting and offered promptly as supplemental seasonal greenery.",
+
+          primaryFeedRole:
+            "limited-fresh-green-supplement",
+
+          harvestProducts: [
+            "tender-pea-shoots",
+            "young-pea-leaves",
+            "fresh-legume-forage",
+            "seasonal-greens"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-supplement",
+            "seasonal-enrichment",
+            "measured-green-forage"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-young-growth",
+            "inspect",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "wash",
+            "mix-with-other-safe-greens"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-basket",
+            "food-scale"
+          ],
+
+          harvestPattern:
+            "minor",
+
+          harvestFrequencyCategory:
+            "limited-seasonal",
+
+          storageMethods: [
+            "immediate-consumption",
+            "very-short-term-refrigeration"
+          ],
+
+          preferredStorageMethod:
+            "feed-promptly-after-harvest",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            2,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "very-short-term-refrigeration"
+          ],
+
+          preservationLimitations: [
+            "Fresh foliage has poor storage value.",
+            "Repeated cutting reduces grain-production potential.",
+            "Older stems and vines become fibrous.",
+            "Poultry-specific feeding evidence for backyard use of fresh Field-Pea foliage is more limited than evidence for mature pea seed.",
+            "This pathway should remain conservative and minor."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "wilting",
+            "heating-in-piles",
+            "mold",
+            "crop-yield-reduction",
+            "trampling",
+            "uneaten-fibrous-stems"
+          ],
+
+          safetyWarnings: [
+            "Offer only correctly identified Pisum sativum foliage from plants intended for food, feed, or forage.",
+            "Do not substitute unidentified wild pea-like plants, sweet peas, vetches, lupines, or other legumes.",
+            "Do not feed foliage contaminated by pesticides, herbicides, fertilizers, animal waste, mold, or disease.",
+            "Avoid large quantities of mature fibrous vines.",
+            "Do not allow harvested foliage to heat or mold in compact piles.",
+            "Fresh foliage should remain a limited supplemental green.",
+            "Do not rely on pea foliage as a major protein source or complete feed.",
+            "Repeated foliage harvest may eliminate or sharply reduce the later dry-pea harvest."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confidently-identify-the-crop",
+            "requires-maximum-dry-grain-yield",
+            "requires-long-term-storage",
+            "requires-high-confidence-poultry-specific-feeding-data",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+        {
+          id:
+            "postharvest-field-pea-cleanup",
+
+          label:
+            "Postharvest Field-Pea Cleanup",
+
+          description:
+            "After the primary pea harvest is complete, chickens receive supervised access to a cleaned planting area to search for scattered sound peas, tender residual foliage, and insects.",
+
+          primaryFeedRole:
+            "postharvest-foraging-enrichment",
+
+          harvestProducts: [
+            "scattered-peas",
+            "residual-tender-foliage",
+            "postharvest-insects",
+            "foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "controlled-grazing",
+            "rotational-paddock",
+            "postharvest-cleanup",
+            "supervised-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "remove-primary-harvest",
+            "remove-unsafe-material",
+            "inspect-field",
+            "supervise-access"
+          ],
+
+          optionalProcessingTasks: [
+            "mow-tall-residue",
+            "remove-trellis",
+            "temporarily-fence-area",
+            "limit-access-duration"
+          ],
+
+          requiredEquipment: [
+            "secure-boundary-or-supervision"
+          ],
+
+          helpfulEquipment: [
+            "temporary-fencing",
+            "portable-netting",
+            "mobile-waterer",
+            "shade",
+            "rake"
+          ],
+
+          harvestPattern:
+            "cleanup",
+
+          harvestFrequencyCategory:
+            "single-short-seasonal-period",
+
+          storageMethods: [
+            "living-field-access",
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-controlled-foraging"
+          ],
+
+          preservationLimitations: [
+            "The amount consumed cannot be measured precisely.",
+            "The pathway is brief and seasonal.",
+            "Wet, moldy, sprouted, diseased, or contaminated residues must be removed before access.",
+            "Postharvest access may disturb soil and affect following crops.",
+            "This pathway does not replace harvested dry-grain storage."
+          ],
+
+          estimatedShelfLifeCategory:
+            "immediate",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "unharvested-seed-consumed",
+            "soil-disturbance",
+            "trampling",
+            "residue-contamination",
+            "predator-exposure",
+            "unmeasured-feed-consumption"
+          ],
+
+          safetyWarnings: [
+            "Remove all chemically treated seed, pesticide containers, netting, wire, twine, plastic, sharp stakes, and hazardous equipment before flock access.",
+            "Do not allow chickens to consume moldy, sprouted, rotten, or diseased peas.",
+            "Exclude birds from areas recently treated with products that do not permit poultry access.",
+            "Provide clean water, shade, and predator protection.",
+            "Supervise access where fencing is incomplete.",
+            "Postharvest foraging is supplemental and nutritionally unpredictable.",
+            "Continue providing complete poultry feed.",
+            "Do not use this pathway where soil, plants, or irrigation water may be chemically or biologically contaminated."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-secure-outdoor-area",
+            "cannot-supervise-flock-access",
+            "requires-precise-feed-measurement",
+            "has-recently-treated-crop-area",
+            "cannot-remove-hazardous-material",
+            "requires-year-round-feed"
+          ]
+        },
+
+        {
+          id:
+            "field-pea-soil-building-cover-crop",
+
+          label:
+            "Field-Pea Soil-Building Cover Crop",
+
+          description:
+            "Field Peas are grown primarily as a cool-season nitrogen-fixing cover crop, then terminated and retained as surface residue, incorporated into soil, or composted rather than harvested chiefly for poultry feed.",
+
+          primaryFeedRole:
+            "indirect-soil-building-support",
+
+          harvestProducts: [
+            "cover-crop-biomass",
+            "nitrogen-rich-residue",
+            "compost-material",
+            "soil-cover"
+          ],
+
+          suitableFeedingMethods: [
+            "non-feed-soil-improvement",
+            "compost-production",
+            "mulch-production",
+            "crop-rotation"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-cover-crop",
+            "terminate-cover-crop",
+            "manage-residue"
+          ],
+
+          optionalProcessingTasks: [
+            "mow",
+            "cut-and-drop",
+            "incorporate",
+            "compost",
+            "mix-with-small-grain",
+            "allow-decomposition-before-next-crop"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "mower",
+            "scythe",
+            "sickle",
+            "garden-fork",
+            "broadfork",
+            "tiller",
+            "compost-system"
+          ],
+
+          harvestPattern:
+            "soil-building",
+
+          harvestFrequencyCategory:
+            "single-seasonal-termination",
+
+          storageMethods: [
+            "living-cover-crop",
+            "surface-residue",
+            "soil-incorporation",
+            "composting"
+          ],
+
+          preferredStorageMethod:
+            "retain-biomass-in-the-production-system",
+
+          storageDurationCategory:
+            "seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            0,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "surface-mulch",
+            "soil-incorporation",
+            "composting",
+            "cut-and-drop",
+            "rotation-residue"
+          ],
+
+          preservationLimitations: [
+            "This pathway is primarily an agronomic use rather than a direct poultry-feed use.",
+            "Nitrogen fixation requires effective nodulation.",
+            "Nitrogen becomes available gradually as roots and residue decompose.",
+            "Harvesting and removing seed or biomass exports part of the accumulated nitrogen.",
+            "Termination timing affects biomass, nitrogen contribution, soil moisture, and risk of volunteer seed.",
+            "Diseased residue may require different management."
+          ],
+
+          estimatedShelfLifeCategory:
+            "not-applicable",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "poor-nodulation",
+            "waterlogged-establishment",
+            "root-disease",
+            "late-termination",
+            "excessive-moisture-use",
+            "biomass-removal",
+            "nitrogen-leaching-after-rapid-decomposition"
+          ],
+
+          safetyWarnings: [
+            "Do not treat this soil-building pathway as a direct poultry-feeding recommendation.",
+            "Use untreated seed where chickens might later contact or consume plants or seed.",
+            "Avoid transferring diseased pea residue to unaffected planting areas.",
+            "Terminate before unwanted seed production when volunteer plants are a concern.",
+            "Allow appropriate decomposition time before planting a sensitive following crop.",
+            "Manage high-nitrogen residue to reduce nutrient loss.",
+            "Do not allow poultry access to areas containing unsafe equipment, recent chemical applications, or diseased plant material."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-feed-only-crops",
+            "requires-immediate-dry-grain-harvest",
+            "cannot-manage-cover-crop-termination",
+            "has-severe-pea-root-disease-history",
+            "requires-permanent-ground-cover"
+          ]
+        }
+      ],
+
+      dataQuality: {
+        overallConfidenceScore:
+          91,
+
+        researchCompletenessScore:
+          92,
+
+        poultrySpecificEvidenceScore:
+          84,
+
+        agronomicEvidenceScore:
+          96,
+
+        nutritionEvidenceScore:
+          91,
+
+        plannerReliabilityScore:
+          91,
+
+        estimatedUnknownFieldPercent:
+          10,
+
+        usesProfessionalJudgment:
+          true,
+
+        containsNullValues:
+          true,
+
+        nullValuesRequireFutureResearch: [
+          "Minimum useful backyard planting area",
+          "Preferred production area for different flock sizes",
+          "Backyard dry-pea yield per square foot",
+          "Backyard cleaned-grain yield per plant",
+          "Estimated hand-processing minutes per pound",
+          "Estimated processing-waste percentages",
+          "Verified storage duration under varied backyard humidity and temperature",
+          "Universal poultry inclusion percentage",
+          "Cultivar-specific digestible amino-acid values",
+          "Cultivar-specific tannin and trypsin-inhibitor concentrations",
+          "Household feed-cost savings",
+          "Reliable feed displacement per 100 square feet",
+          "Regional winter survival of autumn-planted varieties",
+          "Small-scale mechanical processing efficiency"
+        ],
+
+        majorInformationSources: [
+          "Feedipedia pea-seed feed profile and nutrient tables",
+          "Feedipedia pea-forage profile",
+          "North Dakota State University Extension Field Pea Production guidance",
+          "North Dakota State University Field Pea and Lentil Root Rot resources",
+          "University of Minnesota Extension cover-crop guidance",
+          "Peer-reviewed poultry feeding research involving Pisum sativum",
+          "Veterinary poultry nutrition guidance concerning complete diets and essential amino acids",
+          "Pulse-crop agronomy and postharvest literature"
+        ],
+
+        plannerNotes: [
+          "Field Peas should be classified as a cool-season protein-oriented grain legume that also contributes substantial starch.",
+          "Low-tannin, white-flowered or light-seeded feed varieties are generally preferred for poultry use.",
+          "Variety identification matters because tannin and trypsin-inhibitor concentrations vary.",
+          "Raw mature Field Peas are not equivalent to raw Soybeans and do not universally require heat treatment, but processing and inclusion decisions remain ration-specific.",
+          "Field Peas are relatively limited in methionine and cannot serve as the sole poultry protein source.",
+          "The planner must not recommend a universal inclusion percentage.",
+          "The planner must distinguish whole dry peas, cracked peas, ground ration ingredients, cooked peas, fresh peas, fresh foliage, postharvest access, and soil-building use.",
+          "Fresh foliage has less poultry-specific evidence than mature seed and should remain a conservative minor pathway.",
+          "Treated planting seed must never be recommended for poultry or household food.",
+          "Backyard yield, processing efficiency, storage duration, and economic savings remain null where credible direct evidence is unavailable.",
+          "Commercial yield-per-acre values should not be converted into guaranteed backyard yields.",
+          "Field Peas should receive strong rotation and soil-improvement scores only when successful nodulation and appropriate residue management are possible.",
+          "Removing harvested seed exports some of the nitrogen accumulated by the crop.",
+          "Wet soil, root disease, heat during flowering, lodging, pod shattering, wet harvest, and storage moisture are major planner limitations."
+        ],
+
+        supportedGeneralizations: [
+          "Field Peas are cool-season annual legumes.",
+          "Field Peas can germinate and establish in cooler soil than most warm-season grain legumes.",
+          "Early planting helps flowering and seed filling occur before damaging summer heat.",
+          "Hot weather during flowering can reduce seed set.",
+          "Field Peas require well-drained soil and are vulnerable to waterlogging and root rot.",
+          "Compatible Rhizobium inoculation may improve nodulation where suitable bacteria are absent.",
+          "Mature dry peas provide useful protein and starch for poultry diets.",
+          "Feed peas can be used raw or processed depending on variety, ration, and feeding objective.",
+          "Low-tannin feed-pea varieties are generally preferable to high-tannin varieties.",
+          "Pea protein is relatively limited in methionine.",
+          "Field Peas cannot replace a balanced complete poultry ration.",
+          "Whole clean dry peas can be stored for later use when adequately dried and protected.",
+          "Whole peas generally retain storage quality better than peas ground far in advance.",
+          "Field Peas can contribute nitrogen and organic matter as a cover or rotation crop.",
+          "Field Peas also have substantial household-food value."
+        ],
+
+        derivedPlannerValues: [
+          "Climate suitability scores",
+          "Site suitability scores",
+          "Soil texture scores",
+          "Water-management scores",
+          "Space-type suitability scores",
+          "Labor-difficulty scores",
+          "Cost-level classifications",
+          "Goal-matching scores",
+          "Wildlife-risk scores",
+          "Disease-risk scores",
+          "Use-path suitability scores",
+          "Beginner-friendliness scores",
+          "Storage-value scores",
+          "Self-reliance scores",
+          "Production-reliability score"
+        ],
+
+        uncertainValues: [
+          "Backyard grain yield per square foot",
+          "Minimum useful planting area",
+          "Useful production area by flock size",
+          "Exact winter survival by region",
+          "Exact cultivar maturity outside published production regions",
+          "Exact backyard storage life",
+          "Exact safe poultry inclusion rate",
+          "Exact effect of home cracking or grinding on intake",
+          "Exact fresh-foliage feeding value for chickens",
+          "Backyard labor per pound",
+          "Economic return on labor",
+          "Feed-cost displacement"
+        ],
+
+        missingData: [
+          "Verified backyard cleaned-grain yield per 100 square feet",
+          "Verified hand-threshing time per pound",
+          "Verified backyard drying-loss percentage",
+          "Verified storage-loss percentage",
+          "Cultivar-specific poultry feeding tables",
+          "Backyard-flock trials comparing whole, cracked, and ground peas",
+          "Validated small-flock inclusion recommendations",
+          "Regional trial data for autumn-planted Field Peas",
+          "Reliable fresh-foliage intake and digestibility data for chickens"
+        ],
+
+        notes: [
+          "Agronomic evidence for Field Peas is strong.",
+          "General livestock and poultry-feed evidence for mature pea seed is substantial.",
+          "Backyard-chicken-specific yield and processing evidence remains limited.",
+          "Planner scores combine direct evidence with clearly identified professional judgment.",
+          "Unknown quantitative values remain null rather than being inferred from commercial acreage.",
+          "This record is production-ready for planner comparison but should continue to be refined as cultivar-specific and backyard-scale research becomes available."
+        ]
+      },
+
+      templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Backyard dry-pea yield trials",
+          "Regional cultivar comparisons",
+          "Winter-survival trials for autumn-planted peas",
+          "Cultivar-specific tannin measurements",
+          "Cultivar-specific trypsin-inhibitor measurements",
+          "Digestible amino-acid values for poultry",
+          "Small-flock feeding trials",
+          "Whole-versus-cracked pea intake studies",
+          "Fresh pea-foliage poultry research",
+          "Backyard threshing and processing efficiency",
+          "Storage losses under humid household conditions",
+          "Feed-cost savings by flock size"
+        ],
+
+        lastReviewed:
+          "2026-07-19",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "Field Peas remain a supplemental or formulated ration ingredient rather than a complete feed."
+        ]
+      }
+    }
+  }
+};
