@@ -47011,5 +47011,5973 @@ usePaths: [
         ]
       }
     }
+  },
+
+      ///////////////////////////////////////////////
+    //
+    //
+    //
+    //
+    //  CROP - BARLEY
+    //
+    //
+    //
+    //
+    ///////////////////////////////////////////////
+
+  "CROP-BARLEY": {
+    id:
+      "CROP-BARLEY",
+
+    name:
+      "Barley",
+
+    scientificName:
+      "Hordeum vulgare",
+
+    category:
+      "Cool-Season Cereal Grain",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Cool Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Barley is a fast-growing cool-season cereal that can provide storable grain, seasonal green forage, sprouted grain, soil-protecting cover, weed suppression, straw, postharvest gleaning, and a moderate-energy poultry-feed ingredient. Its poultry value is limited by hull fiber, variable energy density, beta-glucans, amino-acid balance, and the risk of wet litter or sticky droppings when excessive barley is used in an improperly formulated diet.",
+
+    chickenUse: {
+      edibleParts: [
+        "Mature whole grain",
+        "Cracked mature grain",
+        "Coarsely ground grain",
+        "Sprouted grain",
+        "Young green shoots",
+        "Tender vegetative forage",
+        "Residual grain after harvest"
+      ],
+
+      primaryValue: [
+        "Carbohydrate energy",
+        "Moderate protein",
+        "Stored grain",
+        "Cool-season forage",
+        "Sprouting",
+        "Seasonal enrichment",
+        "Postharvest gleaning",
+        "Cover-crop biomass"
+      ],
+
+      feedingForms: [
+        "Whole dry grain",
+        "Cracked dry grain",
+        "Coarsely ground ration ingredient",
+        "Sprouted grain",
+        "Short barley sprouts",
+        "Limited fresh green chop",
+        "Controlled access to young growing barley",
+        "Postharvest field gleaning"
+      ],
+
+      bestFor: [
+        "Established adult chickens",
+        "Cool-season feed gardens",
+        "Stored supplemental grain",
+        "Measured home-ration ingredients",
+        "Seasonal forage plots",
+        "Sprouted-grain production",
+        "Cover-crop and poultry-system integration",
+        "Growers seeking an early-maturing small grain"
+      ],
+
+      supplementOnly:
+        true,
+
+      preparationNotes:
+        "Harvest mature grain only after kernels have filled and the crop has dried sufficiently for threshing. Clean and dry grain thoroughly before storage. Whole grain can be offered in measured quantities to established adult birds with access to appropriate grit. Cracking or coarse grinding can improve handling and mixing, but processed barley should be stored for a shorter period than intact grain. Sprouted barley must be produced under clean conditions with careful control of moisture, temperature, airflow, mold, and spoilage.",
+
+      safetyNotes:
+        "Barley must not replace a complete poultry ration unless it is included within a properly formulated diet. Barley contains soluble non-starch polysaccharides, particularly beta-glucans, that can increase intestinal viscosity, reduce nutrient use, and contribute to sticky droppings, wet litter, and dirty eggs. Young birds are more sensitive than established adults. Never feed moldy, musty, heated, sprouted-in-storage, insect-damaged, rodent-contaminated, chemically treated, ergot-contaminated, or Fusarium-damaged grain."
+    },
+
+    nutrition: {
+      basis:
+        "Approximate values for ordinary mature barley grain, primarily expressed on a dry-matter basis. Composition varies with cultivar, two-row versus six-row type, hulled versus hull-less grain, growing environment, grain plumpness, nitrogen fertility, disease, storage, and processing.",
+
+      crudeProteinPercent:
+        "Approximately 11.8% of dry matter on average; reported values vary substantially among samples and cultivars",
+
+      fatPercent:
+        "Approximately 2.0% ether extract on a dry-matter basis",
+
+      fiberPercent:
+        "Approximately 5.2% crude fiber and 21.7% neutral-detergent fiber on a dry-matter basis for ordinary barley grain; hull-less varieties generally contain less fiber",
+
+      starchPercent:
+        "Approximately 60% of dry matter, with substantial variation among cultivars and growing conditions",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      metabolizableEnergy:
+        "Lower than Corn and commonly lower than Wheat in poultry diets because Barley generally contains more fiber and soluble non-starch polysaccharides",
+
+      notableNutrients: [
+        "Starch",
+        "Moderate crude protein",
+        "Phosphorus",
+        "Potassium",
+        "Magnesium",
+        "B vitamins",
+        "Beta-glucans",
+        "Moderate lysine compared with Corn",
+        "Dietary fiber"
+      ],
+
+      aminoAcidStrengths: [
+        "Barley generally provides more lysine than Corn on an equal-weight basis",
+        "Barley protein can complement some lower-lysine cereal ingredients"
+      ],
+
+      aminoAcidLimitations: [
+        "Barley alone does not provide a complete poultry amino-acid balance",
+        "Methionine remains limiting in practical poultry rations",
+        "Total crude protein does not indicate digestible amino-acid adequacy",
+        "Protein quality varies with cultivar and growing conditions"
+      ],
+
+      betaGlucanConcern:
+        true,
+
+      phytateConcern:
+        true,
+
+      hullFiberConcern:
+        true,
+
+      notableAntinutritionalFactors: [
+        "Beta-glucans",
+        "Other soluble non-starch polysaccharides",
+        "Phytate",
+        "Hull-associated fiber"
+      ],
+
+      processingEffects: [
+        "Cracking or grinding reduces particle size but does not eliminate beta-glucans.",
+        "Removing the hull can increase usable nutrient density.",
+        "Hull-less Barley generally contains less structural fiber than covered Barley.",
+        "Enzyme preparations containing beta-glucanase can improve nutrient use in professionally formulated poultry diets.",
+        "Sprouting changes moisture content and nutrient concentration but does not create additional dry matter.",
+        "Excessively fine grinding can increase dust and ingredient separation.",
+        "Heat, moisture, and prolonged storage can reduce grain quality."
+      ],
+
+      poultryLimitations: [
+        "Lower metabolizable-energy value than Corn",
+        "Higher fiber than Corn or Wheat",
+        "Beta-glucans can increase intestinal viscosity",
+        "High inclusion can contribute to sticky droppings",
+        "High inclusion can contribute to wet litter",
+        "Dirty eggs may increase in laying flocks",
+        "Young birds are more sensitive to poorly formulated Barley diets",
+        "Ordinary hulled Barley may require more processing than hull-less Barley",
+        "Barley does not provide the calcium required by laying hens",
+        "Barley alone cannot provide a balanced poultry ration",
+        "A universal backyard inclusion percentage is not supported"
+      ],
+
+      directFacts: {
+        primaryNutritionalRole:
+          "energy-oriented-cereal-grain",
+
+        highProteinFeed:
+          false,
+
+        highFatFeed:
+          false,
+
+        highFiberRelativeToCorn:
+          true,
+
+        betaGlucansPresent:
+          true,
+
+        lowerEnergyThanCorn:
+          true,
+
+        lowerEnergyThanWheat:
+          true,
+
+        hullLessVarietiesAvailable:
+          true,
+
+        enzymeSupplementationCanImproveUse:
+          true,
+
+        completeFeed:
+          false,
+
+        notes: [
+          "Barley is primarily an energy ingredient rather than a concentrated protein supplement.",
+          "The hull dilutes usable energy and increases fiber in ordinary covered Barley.",
+          "Hull-less Barley may offer greater poultry-feed value but should not automatically be treated as nutritionally identical to covered Barley.",
+          "Beta-glucans are among the crop's most important poultry-specific limitations.",
+          "Older birds tolerate Barley better than young chicks, but tolerance does not make an unbalanced ration complete.",
+          "Published inclusion rates from balanced commercial experiments should not be converted into a universal backyard recommendation.",
+          "The planner should distinguish occasional whole-grain supplementation from use as a formulated ration ingredient."
+        ]
+      }
+    },
+
+    growing: {
+      sunlight:
+        "Full sun",
+
+      soilTemperatureMinimumF:
+        40,
+
+      idealSoilTemperatureF:
+        "Approximately 40°F or warmer for active spring germination; Barley is commonly planted very early when soil is cool but workable",
+
+      frostTolerance:
+        "Moderate to High during early vegetative growth, depending on growth stage and variety",
+
+      winterHardiness:
+        "Variety-dependent; winter Barley is generally less winter-hardy than winter Wheat or Rye",
+
+      heatTolerance:
+        "Low to Moderate",
+
+      droughtTolerance:
+        "Moderate to High compared with many other small grains, particularly after establishment",
+
+      salinityTolerance:
+        "Moderate to High compared with many cereal crops",
+
+      waterloggingTolerance:
+        "Low",
+
+      soilPHMinimum:
+        6.0,
+
+      soilPHMaximum:
+        8.5,
+
+      waterNeeds:
+        "Low to moderate overall, with adequate moisture especially important during germination, tillering, stem elongation, pollination, and grain filling",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      springVarietiesAvailable:
+        true,
+
+      winterVarietiesAvailable:
+        true,
+
+      facultativeVarietiesAvailable:
+        true,
+
+      twoRowVarietiesAvailable:
+        true,
+
+      sixRowVarietiesAvailable:
+        true,
+
+      coveredVarietiesAvailable:
+        true,
+
+      hullLessVarietiesAvailable:
+        true,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      daysToPollinationAfterEmergence:
+        "Approximately 6 to 7 weeks under typical spring-Barley conditions",
+
+      plantSpacingInches:
+        null,
+
+      rowSpacingInches:
+        "Commonly drilled in narrow rows; practical backyard row spacing depends on planting method, weed-management needs, and harvest equipment",
+
+      plantingDepthInches:
+        "Approximately 1.5 to 2 inches under most conditions",
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        "Limited regrowth may occur after early vegetative cutting or grazing, but mature grain harvest ends the annual crop",
+
+      tillering:
+        true,
+
+      windPollinated:
+        true,
+
+      selfPollinated:
+        true,
+
+      directFacts: {
+        coolSeasonAnnual:
+          true,
+
+        springAndWinterTypesExist:
+          true,
+
+        earlySpringPlantingSuitable:
+          true,
+
+        fallPlantingSuitableWithWinterAdaptedVariety:
+          true,
+
+        pollinationTimingAfterEmergenceWeeksMinimum:
+          6,
+
+        pollinationTimingAfterEmergenceWeeksMaximum:
+          7,
+
+        optimalSmallGrainTemperatureMaximumF:
+          85,
+
+        highTemperaturePhotosynthesisDecline:
+          true,
+
+        headingHeatSensitive:
+          true,
+
+        wellDrainedSoilRequired:
+          true,
+
+        notes: [
+          "Spring Barley should normally be planted as early as the soil can be worked without creating compaction.",
+          "Early planting helps pollination and grain filling occur before damaging summer heat.",
+          "Winter Barley must be matched carefully to regional winter temperatures and variety hardiness.",
+          "Fall planting dates cannot be generalized nationally.",
+          "Barley is more tolerant of alkalinity and salinity than many grain crops but remains sensitive to waterlogged soil.",
+          "Deep planting can delay emergence and reduce tillering.",
+          "High nitrogen can increase lodging.",
+          "The crop can compensate for reduced plant population by producing additional tillers when growing conditions are favorable.",
+          "Cultivar-specific maturity data should be used instead of a universal days-to-maturity value."
+        ]
+      }
+    },
+
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant spring Barley as soon as the soil is workable in early spring. Winter Barley survival is unreliable in many very cold northern locations unless a proven locally adapted variety and protective snow cover are available.",
+
+        harvestWindow:
+          "Generally midsummer through late summer, depending on planting date, cultivar, heat accumulation, rainfall, disease, and grain-drying conditions.",
+
+        varietyGuidance:
+          "Use an early-maturing spring feed or hull-less variety with strong lodging resistance and locally documented disease performance."
+      },
+
+      midwestNortheast: {
+        plantingWindow:
+          "Plant spring Barley very early in spring when soil is workable. Winter or facultative Barley may be possible in selected areas, but winter survival must be verified locally.",
+
+        harvestWindow:
+          "Usually midsummer through late summer for spring Barley; winter Barley may mature earlier.",
+
+        varietyGuidance:
+          "Prioritize resistance or tolerance to Fusarium head blight, lodging, leaf diseases, and Barley yellow dwarf virus where those problems are important."
+      },
+
+      upperSouth: {
+        plantingWindow:
+          "Winter or facultative Barley is commonly more practical than spring Barley. Plant during autumn at a locally recommended small-grain date so plants establish before winter without becoming excessively advanced.",
+
+        harvestWindow:
+          "Late spring through early summer, ideally before prolonged heat and humidity increase lodging, disease, and harvest-weather risk.",
+
+        varietyGuidance:
+          "Choose a locally adapted winter feed Barley with adequate winter survival, disease resistance, and early maturity."
+      },
+
+      deepSouth: {
+        plantingWindow:
+          "Plant adapted winter Barley during the cool autumn season. Spring planting is generally poorly matched to rapidly increasing heat.",
+
+        harvestWindow:
+          "Late spring to early summer before severe heat, heavy rainfall, and humidity interfere with grain filling and dry harvest.",
+
+        varietyGuidance:
+          "Select disease-resistant winter feed varieties specifically recommended for the region. Barley may perform poorly in hot, humid, disease-prone locations."
+      },
+
+      southwest: {
+        plantingWindow:
+          "Plant during the cool season, commonly in autumn or winter at low elevations and in spring at colder high elevations. Irrigation may be required for establishment and grain filling.",
+
+        harvestWindow:
+          "Spring to early summer at lower elevations or midsummer at higher elevations.",
+
+        varietyGuidance:
+          "Select for drought tolerance, salinity tolerance, maturity timing, straw strength, and irrigation availability."
+      },
+
+      pacificNorthwest: {
+        plantingWindow:
+          "Spring Barley may be planted early where winters are cold, while winter Barley may be fall planted in milder production areas using regionally adapted varieties.",
+
+        harvestWindow:
+          "Summer through early fall depending on elevation, winter type, spring type, rainfall pattern, and cultivar.",
+
+        varietyGuidance:
+          "Select a variety for the intended feed, food, hull-less, malt, or cover-crop use and match it to local precipitation and disease pressure."
+      },
+
+      coastalWest: {
+        plantingWindow:
+          "Plant during the cool rainy season in mild Mediterranean climates or in early spring in cooler areas. Avoid placing heading and grain fill in extreme heat.",
+
+        harvestWindow:
+          "Late spring through summer depending on rainfall, irrigation, and planting date.",
+
+        varietyGuidance:
+          "Use locally adapted varieties with resistance to lodging and diseases favored by coastal humidity."
+      },
+
+      highElevation: {
+        plantingWindow:
+          "Plant spring Barley as early as soil conditions permit after severe winter conditions ease.",
+
+        harvestWindow:
+          "Short summer season, commonly late summer before early autumn frost or snow.",
+
+        varietyGuidance:
+          "Barley is among the better cereal choices for high elevations and short growing seasons, but an early cultivar is essential."
+      },
+
+      regionalNotes: [
+        "Spring and winter Barley should not be treated as interchangeable.",
+        "Winter survival depends on variety, planting date, plant development before freeze-up, soil drainage, snow cover, and minimum temperature.",
+        "Barley generally matures earlier than many other cereal grains.",
+        "Hot, humid climates increase disease and grain-drying challenges.",
+        "Local small-grain variety trials provide better planting guidance than generalized calendar dates.",
+        "Regional planting recommendations should eventually be connected to extension variety trials and local frost data."
+      ]
+    },
+
+    spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      hullPercentage:
+        null,
+
+      bushelWeightLbs:
+        48,
+
+      storageLife:
+        "Potentially many months when mature grain is cleaned, dried to an appropriate storage moisture, cooled, and protected from insects, rodents, condensation, mold, and temperature fluctuations",
+
+      storageMethod:
+        "Thresh mature dry heads, remove awns and chaff, clean and sort the grain, verify that it is adequately dry, and store it in a cool, dark, dry, food-safe, rodent-resistant container. Inspect regularly for condensation, insects, heating, musty odor, visible mold, and rodent contamination.",
+
+      yieldNotes:
+        "Commercial Barley yields are commonly reported in bushels per acre, but those values should not be converted directly into guaranteed backyard pounds per square foot. Small-plot production is strongly affected by seed rate, tillering, row spacing, variety, soil fertility, water, lodging, bird pressure, disease, hand-threshing loss, cleaning loss, hull type, and storage moisture. Backyard yield values remain null until suitable small-scale evidence is available.",
+
+      densityNotes:
+        "Barley is normally sown as a dense stand rather than spaced as individual garden plants. Plant counts per square foot are less useful than seeding rate, viable seed count, emergence percentage, tiller production, and final fertile head density.",
+
+      harvestProducts: [
+        "whole-grain",
+        "grain-heads",
+        "straw",
+        "chaff",
+        "green-forage",
+        "cover-crop-biomass"
+      ],
+
+      harvestByproducts: [
+        "Barley straw",
+        "Awns",
+        "Chaff",
+        "Broken kernels",
+        "Screenings",
+        "Root biomass"
+      ],
+
+      byproductNotes: [
+        "Clean dry straw may have bedding or mulch value but is not a concentrated poultry feed.",
+        "Awns and coarse chaff may be irritating or difficult for chickens to consume.",
+        "Screenings require inspection because they may concentrate weed seeds, damaged grain, ergot bodies, moldy kernels, or foreign material.",
+        "Diseased or contaminated residue should not be used as feed or bedding."
+      ],
+
+      directFacts: {
+        typicallyPlantedAsDenseStand:
+          true,
+
+        individualPlantSpacingUseful:
+          false,
+
+        tillerCountAffectsHeadDensity:
+          true,
+
+        commercialYieldConversionToBackyardNotSupported:
+          true,
+
+        strawProduced:
+          true,
+
+        notes: [
+          "Barley can produce useful grain from a relatively small plot, but hand harvesting and threshing become important labor constraints.",
+          "Dense planting improves canopy closure and weed competition.",
+          "Excessively dense stands may increase lodging and disease risk.",
+          "Low plant density may be partially compensated by tillering.",
+          "Hull-less varieties may reduce processing waste for household-food or poultry-feed use.",
+          "Awned heads require careful handling.",
+          "No dependable backyard yield guarantee is stored."
+        ]
+      }
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Usually low when purchased as bulk untreated agricultural seed; specialty hull-less, food-grade, organic, malting, heritage, or small-packet varieties may cost more",
+
+      equipmentCostEstimate:
+        "Low for a small hand-sown cover crop or forage plot; moderate to high where the grower purchases a seed drill, sickle, scythe, mechanical thresher, grain mill, sprouting system, drying fan, moisture meter, screens, or sealed grain-storage containers",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Moderate to High for homegrown grain that must be cut, dried, threshed, winnowed, cleaned, processed, and stored",
+
+      potentialFeedSavings:
+        null,
+
+      economicAdvantages: [
+        "Seed is usually widely available",
+        "Barley establishes quickly",
+        "It can produce grain and straw",
+        "It can serve as a cover crop",
+        "It can suppress weeds",
+        "It can capture residual soil nitrogen",
+        "Spring Barley matures relatively early",
+        "Winter Barley can provide early harvest in suitable climates",
+        "Whole grain can be stored without electricity when properly dried",
+        "Hull-less types may reduce dehulling requirements"
+      ],
+
+      economicLimitations: [
+        "Hand threshing may require substantial labor",
+        "Cleaning losses are difficult to predict",
+        "Wild birds and rodents may reduce usable yield",
+        "Wet weather can delay harvest and increase mold risk",
+        "Fusarium or DON contamination can destroy feed value",
+        "Grinding equipment may be required for formulated use",
+        "Sprouting systems require water, sanitation, containers, and daily labor",
+        "Barley has lower poultry-feed energy than Corn",
+        "Beta-glucan limitations may require professional ration formulation or enzyme use",
+        "Household-scale production may cost more than purchased bulk grain"
+      ],
+
+      likelyLowestCostUse:
+        "cover-crop-or-controlled-green-forage",
+
+      likelyHighestLaborUse:
+        "cleaned-ground-grain-for-home-formulated-rations",
+
+      potentialFeedSavingsNotes:
+        "Feed savings cannot be estimated until cleaned backyard yield, harvest losses, labor, storage losses, grain-processing costs, ration inclusion, and the value of displaced purchased feed are known.",
+
+      economicNotes:
+        "Barley's strongest economic advantage may be its multipurpose value rather than direct replacement of commercial poultry feed. One planting can potentially provide soil cover, weed competition, seasonal green forage, grain, straw, enrichment, and crop-rotation value. Those benefits should be measured separately rather than assigning an unsupported dollar return."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for commercial Barley agronomy, ordinary grain composition, cereal-feed use, beta-glucan limitations, cover-crop functions, and formulated poultry diets; moderate for sprouted-grain and forage uses; limited for backyard grain yield, hand-processing efficiency, and informal small-flock supplementation",
+
+      sources: [
+        {
+          title:
+            "Barley Grain",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/227",
+
+          use:
+            "Barley feed characteristics, poultry-energy limitations, beta-glucans, intestinal viscosity, sticky droppings, wet litter, dirty eggs, enzyme use, and formulated poultry-diet context"
+        },
+
+        {
+          title:
+            "Barley Grain — Chemical Composition Table",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/11705",
+
+          use:
+            "Average dry matter, crude protein, crude fiber, neutral-detergent fiber, acid-detergent fiber, fat, starch, minerals, amino acids, and sample variation"
+        },
+
+        {
+          title:
+            "Barley Forage",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/432",
+
+          use:
+            "Young forage, grazing, green chop, forage adaptation, and differences between grain and vegetative material"
+        },
+
+        {
+          title:
+            "Barley Plant Guide",
+
+          organization:
+            "USDA Natural Resources Conservation Service",
+
+          url:
+            "https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/ccpg_horde.pdf",
+
+          use:
+            "Crop adaptation, pH, drainage, salinity, winter hardiness, short-season and high-elevation value, livestock grain use, forage, cover cropping, erosion control, weed suppression, nitrogen capture, biomass, and soil-building roles"
+        },
+
+        {
+          title:
+            "Spring Barley Growth and Development Guide",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/growing-small-grains/spring-barley-growth-and-development-guide",
+
+          use:
+            "Emergence, tillering, stem elongation, pollination timing, kernel development, maturity, stress sensitivity, and early-planting benefits"
+        },
+
+        {
+          title:
+            "How Deep Do I Drill Wheat, Barley and Oats?",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/planting-small-grains/how-deep-do-i-drill-wheat-barley",
+
+          use:
+            "General seeding-depth guidance"
+        },
+
+        {
+          title:
+            "Principles of Selecting Small Grain Varieties",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/small-grains-crop-and-variety-selection/principles-selecting-small-grain-varieties",
+
+          use:
+            "Cool-season temperature range, heat stress, early maturity, drought considerations, lodging, straw strength, shattering, and variety selection"
+        },
+
+        {
+          title:
+            "Winter Barley: An Emerging Crop",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/small-grains-crop-and-variety-selection/winter-barley-emerging-crop",
+
+          use:
+            "Winter survival, fall planting, nitrogen and lodging, disease concerns, Fusarium head blight, DON, and differences between spring and winter Barley"
+        },
+
+        {
+          title:
+            "Fertilizing Barley",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/crop-specific-needs/fertilizing-barley",
+
+          use:
+            "Nitrogen, phosphorus, potassium, sulfur, fertilizer placement, seed injury, and soil-test-based fertility management"
+        },
+
+        {
+          title:
+            "Small Grains Crop and Variety Selection",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/small-grains/small-grains-crop-and-variety-selection",
+
+          use:
+            "Variety selection, grain quality, lodging, disease resistance, Fusarium head blight, and DON"
+        },
+
+        {
+          title:
+            "Food Barley",
+
+          organization:
+            "Oregon State University Barley World",
+
+          url:
+            "https://barleyworld.org/food",
+
+          use:
+            "Household-food uses and food-oriented Barley context"
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-19",
+
+      researchNotes: [
+        "Separate covered, hull-less, two-row, and six-row Barley where those traits materially affect feed value.",
+        "Do not treat feed Barley, malting Barley, and food Barley as identical end-use classes.",
+        "Do not convert commercial bushels-per-acre data into guaranteed backyard pounds per square foot.",
+        "Do not recommend a universal poultry inclusion percentage.",
+        "Published commercial-diet inclusion rates apply only when the complete ration is properly balanced.",
+        "Research sprouted Barley separately from mature dry grain.",
+        "Distinguish short sprouts from dense hydroponic fodder mats.",
+        "Sprouting does not create additional dry matter and may reduce recoverable dry matter through respiration.",
+        "Research mold and microbial risks in household sprouting systems.",
+        "Treat wet litter, sticky droppings, and dirty eggs as important poultry-specific Barley limitations.",
+        "Distinguish whole-grain supplementation from use as a professionally formulated ration ingredient.",
+        "Research hull-less Barley poultry performance before assigning a separate nutritional score.",
+        "Research small-scale harvesting, threshing, de-awning, cleaning, and storage labor.",
+        "Research regional Fusarium head blight and DON risks.",
+        "Research ergot and other toxic-grain contamination pathways.",
+        "Research Barley yellow dwarf virus, rusts, smuts, net blotch, and regional disease concerns.",
+        "Research the bedding value and physical risks of awned Barley straw.",
+        "Determine whether fresh green Barley should be separated into cut-and-carry and direct-grazing use paths.",
+        "Determine whether short sprouts and hydroponic fodder require separate planner use paths.",
+        "Leave minimum useful area and backyard yield values null until defensible evidence is found."
+      ]
+    },
+
+    plannerData: {
+            schemaVersion:
+        "2.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Barley",
+
+        shortLabel:
+          "Barley",
+
+        icon:
+          "🌾",
+
+        cropCategory:
+          "annual-grain",
+
+        primaryFeedCategory:
+          "cool-season-energy-grain",
+
+        guideUrl:
+          "growing-barley-for-chickens.html"
+      },
+
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual:
+          true,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
+      },
+
+      climate: {
+        suitableClimateTypes: [
+          "cold-short-summer",
+          "cool-moderate-summer",
+          "temperate",
+          "hot-dry",
+          "mild-winter",
+          "high-elevation"
+        ],
+
+        preferredClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "high-elevation"
+        ],
+
+        challengingClimateTypes: [
+          "hot-humid",
+          "extreme-heat",
+          "waterlogged-winter-soil"
+        ],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          40,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          2,
+
+        droughtClimateToleranceScore:
+          4,
+
+        humidityToleranceScore:
+          2,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          2,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Planting spring Barley as soon as soil is workable helps flowering and grain filling occur before severe summer heat.",
+          "Selecting an early-maturing cultivar improves grain-harvest reliability in short-season and high-elevation locations.",
+          "Using a locally adapted winter cultivar may allow autumn establishment and an earlier grain harvest in regions with sufficiently mild winters.",
+          "Protected postharvest drying can reduce losses when mature grain encounters humid or rainy weather.",
+          "Supplemental irrigation during stem elongation, heading, pollination, and grain filling may improve yield in dry climates.",
+          "Indoor seed starting offers little practical benefit because Barley is normally established as a directly seeded dense stand."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "cool-season-annual",
+
+          frostSensitive:
+            false,
+
+          commonlyDirectSeeded:
+            true,
+
+          springTypesAvailable:
+            true,
+
+          winterTypesAvailable:
+            true,
+
+          facultativeTypesAvailable:
+            true,
+
+          vernalizationRequiredForAllVarieties:
+            false,
+
+          winterHardinessVarietyDependent:
+            true,
+
+          winterBarleyLessHardyThanWinterWheat:
+            true,
+
+          winterBarleyLessHardyThanCerealRye:
+            true,
+
+          earlySpringPlantingPreferred:
+            true,
+
+          coolWeatherGrowthPreferred:
+            true,
+
+          highHeatDuringReproductionConcern:
+            true,
+
+          highElevationAdaptation:
+            true,
+
+          baseGrowingDegreeTemperatureF:
+            40,
+
+          approximatePollinationAfterEmergenceWeeksMinimum:
+            6,
+
+          approximatePollinationAfterEmergenceWeeksMaximum:
+            7,
+
+          maturityHighlyVarietyDependent:
+            true,
+
+          notes: [
+            "Barley is a cool-season annual cereal.",
+            "Spring Barley does not require winter exposure and is normally planted early in spring.",
+            "Winter Barley is planted in autumn and requires sufficient winter survival before resuming growth in spring.",
+            "Winter Barley should not be recommended unless a locally adapted cultivar has demonstrated adequate cold tolerance.",
+            "Winter Barley is generally less winter-hardy than winter Wheat and Cereal Rye.",
+            "Spring Barley is useful in short-season and high-elevation areas because it develops and matures relatively quickly.",
+            "Early planting allows the crop to use cool spring moisture and may help it avoid severe heat during heading and grain filling.",
+            "High temperatures during heading, pollination, and early kernel development can reduce grain production.",
+            "Approximate growth-stage timing should not replace cultivar-specific maturity information.",
+            "Humid climates may support crop growth but can increase leaf disease, Fusarium head blight, lodging, wet-harvest, and grain-drying problems.",
+            "Barley tolerates drought better than many cool-season grains, but reproductive-stage drought can still reduce fertile heads and kernel weight.",
+            "The planner must distinguish spring, winter, and facultative production systems."
+          ]
+        }
+      },
+
+      site: {
+        absoluteMinimumSunHours:
+          null,
+
+        productiveMinimumSunHours:
+          6,
+
+        preferredSunHours:
+          8,
+
+        shadeToleranceScore:
+          2,
+
+        afternoonShadeBenefitInHeat:
+          2,
+
+        windToleranceScore:
+          3,
+
+        lodgingRiskScore:
+          4,
+
+        reflectedHeatToleranceScore:
+          2,
+
+        airflowRequirementScore:
+          5,
+
+        frostPocketSensitivityScore:
+          2,
+
+        treeRootCompetitionToleranceScore:
+          2,
+
+        hardscapeConflictRiskScore:
+          1,
+
+        structureConflictRiskScore:
+          1,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          2,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight can support useful vegetative growth, while approximately 8 or more hours is preferred for dependable grain production, strong stems, uniform maturity, and post-rain drying.",
+
+          windExposureConcern:
+            true,
+
+          growthHabit:
+            "upright-tillering-cereal-grass",
+
+          matureHeightFtMinimum:
+            null,
+
+          matureHeightFtMaximum:
+            null,
+
+          floweringPollinatorTraffic:
+            false,
+
+          seasonalPrivacyScreen:
+            false,
+
+          undergroundSpreadConcern:
+            false,
+
+          selfPollinated:
+            true,
+
+          windPollinated:
+            true,
+
+          insectPollinationRequired:
+            false,
+
+          denseStandPreferred:
+            true,
+
+          airflowImportant:
+            true,
+
+          lodgingConcern:
+            true,
+
+          notes: [
+            "Full sun is preferred for grain filling, stem strength, crop uniformity, and timely drying.",
+            "Partial shade may produce green foliage but usually reduces grain yield and drying reliability.",
+            "Barley is primarily self-pollinating and does not require insect pollinators.",
+            "The crop is normally planted as a relatively dense stand rather than as isolated garden plants.",
+            "Good airflow helps foliage and grain heads dry after rain.",
+            "Dense, shaded, humid stands may experience increased disease and lodging pressure.",
+            "Strong wind can lodge plants, particularly after heading or when stems are weakened by excessive nitrogen, disease, or high plant density.",
+            "Awned mature heads may shed kernels, chaff, and awns around harvest and processing areas.",
+            "Barley is annual and does not spread through rhizomes, stolons, tubers, or permanent woody roots.",
+            "The crop creates little direct conflict with foundations or underground utilities.",
+            "Avoid planting in deep shade beneath established trees because root competition and low light reduce dependable grain production.",
+            "Avoid placing grain plots where roof runoff or concentrated drainage creates saturated soil.",
+            "A protected location for cutting, drying, threshing, cleaning, and storing grain should be included in site planning."
+          ]
+        }
+      },
+
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
+
+          clayLoam:
+            4,
+
+          loam:
+            5,
+
+          sandyLoam:
+            4,
+
+          verySandy:
+            3,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          2,
+
+        waterloggingSensitivityScore:
+          5,
+
+        minimumSoilDepthIn:
+          null,
+
+        preferredSoilDepthIn:
+          24,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          4,
+
+        preferredPHMinimum:
+          6.0,
+
+        preferredPHMaximum:
+          8.5,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          3,
+
+        nitrogenRequirementScore:
+          4,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          false,
+
+        inoculantType:
+          null,
+
+        saltToleranceScore:
+          5,
+
+        amendmentEffortScore:
+          3,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "loam",
+            "silt loam",
+            "sandy loam",
+            "well-structured clay loam"
+          ],
+
+          adaptableTextures: [
+            "loam",
+            "silt loam",
+            "clay loam",
+            "sandy loam"
+          ],
+
+          nitrogenFixingLegume:
+            false,
+
+          inoculationMayImproveNodulation:
+            false,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          compactedSoilSuitable:
+            false,
+
+          alkalineSoilTolerance:
+            true,
+
+          salinityToleranceRelativeToOtherCereals:
+            "high",
+
+          excessiveNitrogenConcern:
+            true,
+
+          soilTestingRecommended:
+            true,
+
+          directSeedFertilizerInjuryPossible:
+            true,
+
+          notes: [
+            "Barley performs best in fertile, well-drained soil.",
+            "Loam and silt loam generally provide a strong balance of moisture retention, drainage, aeration, and root penetration.",
+            "Sandy loam can support productive Barley where moisture and fertility are adequate.",
+            "Clay loam may be productive when structure and drainage remain favorable.",
+            "Dense heavy clay receives a low planner score because crusting, compaction, slow drainage, and saturation can reduce emergence and root health.",
+            "Very sandy soil may drain well but can lose moisture and nitrogen rapidly.",
+            "Rocky or shallow soil may reduce rooting depth, water storage, stand uniformity, and grain yield.",
+            "Barley tolerates alkaline and saline soil better than many other cereal crops.",
+            "Salinity tolerance does not make the crop immune to severe salt injury.",
+            "Barley is poorly suited to chronically waterlogged soil.",
+            "Compacted seedbeds may restrict emergence and increase surface runoff or ponding.",
+            "Barley does not fix atmospheric nitrogen and does not require Rhizobium inoculation.",
+            "Nitrogen requirement depends on yield goal, soil organic matter, previous crop, residual nitrate, intended grain use, rainfall, irrigation, and lodging risk.",
+            "Feed Barley and malting Barley may have different nitrogen-management objectives.",
+            "Excessive nitrogen can encourage lush growth, weak stems, delayed maturity, lodging, disease, and grain-quality problems.",
+            "Phosphorus and potassium requirements should be based on a soil test rather than routine application.",
+            "Sulfur may require attention in sandy, low-organic-matter, or low-sulfur soils.",
+            "Fertilizer placed too close to seed can injure germinating plants through salt or ammonia effects.",
+            "The stored pH range represents a broad planning range and should not replace local soil-test recommendations.",
+            "Lime should be based on soil pH, buffer pH, soil texture, and local extension recommendations."
+          ]
+        }
+      },
+
+      water: {
+        overallWaterRequirementLevel:
+          "low-to-moderate",
+
+        germinationWaterNeedLevel:
+          "moderate",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "moderate",
+
+        floweringWaterNeedLevel:
+          "high",
+
+        harvestDevelopmentWaterNeedLevel:
+          "high",
+
+        droughtSurvivalScore:
+          4,
+
+        droughtYieldRetentionScore:
+          3,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "tillering",
+          "stem-elongation",
+          "boot-stage",
+          "heading",
+          "pollination",
+          "early-kernel-development",
+          "grain-filling"
+        ],
+
+        criticalStageWaterImportanceScore:
+          5,
+
+        overwateringSensitivityScore:
+          4,
+
+        waterloggingSensitivityScore:
+          5,
+
+        dripIrrigationBenefitScore:
+          3,
+
+        mulchBenefitScore:
+          2,
+
+        suitableForRainfallOnlyScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          4,
+
+        containerDryingRiskScore:
+          4,
+
+        establishmentYearsRequiringExtraWater:
+          0,
+
+        directFacts: {
+          droughtTolerantAfterEstablishment:
+            true,
+
+          establishmentMoistureImportant:
+            true,
+
+          regularMoistureImprovesProduction:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          droughtDuringVegetativeGrowthMayReduceTillering:
+            true,
+
+          droughtDuringHeadingMayReduceFertileHeads:
+            true,
+
+          droughtDuringGrainFillMayReduceKernelWeight:
+            true,
+
+          irrigationCanIncreaseLodgingRisk:
+            true,
+
+          irrigationCanIncreaseDiseaseRisk:
+            true,
+
+          irrigationMayDelayDryDown:
+            true,
+
+          criticalWaterWindow:
+            "Adequate soil moisture is especially important from stem elongation through heading, pollination, early kernel development, and grain filling.",
+
+          irrigationResponse:
+            "Supplemental irrigation can improve stand development, fertile-head production, kernel number, and grain weight where rainfall is inadequate.",
+
+          irrigationDiseaseTradeoff:
+            "Frequent overhead irrigation, dense canopy growth, and prolonged head wetness may increase foliar disease, Fusarium head blight, lodging, and wet-harvest risk.",
+
+          notes: [
+            "Barley is generally considered one of the more drought-tolerant cool-season cereal grains.",
+            "Drought tolerance does not mean that grain yield is unaffected by water stress.",
+            "Moisture is required for uniform germination and emergence.",
+            "Adequate moisture during tillering supports the development of productive stems.",
+            "Water stress during stem elongation, boot stage, heading, pollination, and early kernel development can sharply reduce yield.",
+            "Water stress during grain filling can reduce kernel size and test weight.",
+            "Early spring planting allows spring Barley to use cool-season soil moisture before summer drought becomes severe.",
+            "Winter Barley can use autumn, winter, and early-spring moisture where winter survival is dependable.",
+            "Barley is poorly suited to soil that remains saturated.",
+            "Standing water restricts root oxygen and may promote root disease, weak growth, nutrient loss, and plant death.",
+            "Irrigation should maintain adequate root-zone moisture without keeping the soil continuously wet.",
+            "Drip irrigation can reduce leaf and head wetness but may be impractical across a broad dense grain stand.",
+            "Overhead irrigation may be easier for a small grain plot but should be timed to allow foliage and heads to dry.",
+            "Late irrigation may interfere with natural grain dry-down and harvest readiness.",
+            "Heavy irrigation combined with high nitrogen may increase lodging.",
+            "Mulch is less practical in a densely seeded Barley stand than in widely spaced garden crops.",
+            "Residue cover before planting may conserve moisture, but excessive surface residue can interfere with shallow home-scale seeding if seed-to-soil contact is poor.",
+            "Container-grown Barley has little soil-water reserve and may dry much faster than an in-ground stand.",
+            "Rainfall-only production can be practical in cool climates with dependable spring moisture.",
+            "Limited supplemental irrigation may provide the greatest benefit during establishment and reproductive growth."
+          ]
+        }
+      },
+
+            space: {
+        minimumTrialAreaSqFt:
+          null,
+
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          3,
+
+        mediumSpaceScore:
+          5,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            5,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            3,
+
+          smallBeds:
+            4,
+
+          openField:
+            5
+        },
+
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            4,
+
+          container:
+            2,
+
+          fenceLine:
+            3,
+
+          buildingEdge:
+            3,
+
+          unusedLawn:
+            5,
+
+          openField:
+            5,
+
+          orchard:
+            3,
+
+          forageFrame:
+            4,
+
+          rotationalPaddock:
+            5,
+
+          greenhouse:
+            2,
+
+          hedgerow:
+            2
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Barley can be grown in containers for educational trials, sprouts, limited green forage, or small ornamental stands, but ordinary containers provide too little soil volume for efficient household grain production. Containers dry rapidly, restrict rooting, and produce relatively little clean grain compared with the labor required for harvesting and threshing.",
+
+        minimumRaisedBedDepthIn:
+          null,
+
+        vineSpreadRequired:
+          false,
+
+        verticalSupportBenefitScore:
+          1,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          true,
+
+        heightCategory:
+          "medium-tall-annual-grass",
+
+        matureWidthCategory:
+          "narrow-tillering-stand",
+
+        overflowSpaceBenefitScore:
+          4,
+
+        directFacts: {
+          layoutFlexible:
+            true,
+
+          blockPollinationRequired:
+            false,
+
+          suitableForRowPlanting:
+            true,
+
+          suitableForCloselySpacedStands:
+            true,
+
+          suitableForSingleOrSmallGroupPlanting:
+            false,
+
+          suitableForBroadcastPlanting:
+            true,
+
+          suitableForDrilledPlanting:
+            true,
+
+          suitableForDenseCoverCropStand:
+            true,
+
+          suitableForDedicatedGrainPlot:
+            true,
+
+          individualPlantSpacingRecommended:
+            false,
+
+          continuousStandPreferred:
+            true,
+
+          tilleringAllowsPartialPopulationCompensation:
+            true,
+
+          productiveHeadDensityImportant:
+            true,
+
+          mechanicalAccessMayImproveEfficiency:
+            true,
+
+          requiresSeparateProcessingSpace:
+            true,
+
+          containerCultivarFeasibility:
+            true,
+
+          commercialSeedingRateConversionToBackyardYieldSupported:
+            false,
+
+          notes: [
+            "Barley is normally planted as a continuous stand rather than as individually spaced plants.",
+            "A square block is suitable, but Barley does not require block planting for pollination.",
+            "Long strips, wide rectangles, small grain beds, and open-field stands can all support production.",
+            "Uniform seed distribution and dependable seed-to-soil contact are more important than exact individual plant spacing.",
+            "Dense stands improve canopy closure and weed competition.",
+            "Excessively dense stands can increase competition, disease pressure, weak stems, lodging, and uneven maturity.",
+            "Thin stands may produce additional tillers when moisture, fertility, sunlight, and planting date remain favorable.",
+            "Late-planted or stressed plants may have less opportunity to compensate through tillering.",
+            "Small raised beds can produce useful trial quantities, but grain yield may be modest compared with the processing labor required.",
+            "Containers are best suited to demonstration stands, fresh shoots, sprouted-grain systems, or very small harvest trials.",
+            "An ordinary container should not be presented as an efficient way to produce meaningful amounts of stored grain.",
+            "Barley can be drilled in rows or broadcast where seed coverage and soil contact remain adequate.",
+            "Rows may improve hand weeding, inspection, and access.",
+            "Broadcast stands may provide rapid cover and weed suppression but can be harder to weed or harvest evenly.",
+            "A sunny unused-lawn area can be converted into a temporary grain or forage plot after sod and perennial weeds are controlled.",
+            "Planting directly into established sod usually produces poor seed-to-soil contact and strong competition.",
+            "Rotational paddocks can support controlled young-forage use when chickens are excluded during establishment and soil damage is prevented.",
+            "A protected forage frame can allow chickens to clip young shoots without immediately uprooting the crop.",
+            "Direct unrestricted flock access is not compatible with dependable mature-grain production.",
+            "Orchard alleys may support cool-season Barley where sunlight, drainage, root competition, mowing, and harvest access remain suitable.",
+            "Deep shade beneath mature trees substantially reduces grain-production value.",
+            "Greenhouse grain production is generally space-inefficient, although a greenhouse may be used for sprout or fodder systems.",
+            "Mature grain production also requires nearby space for cutting, bundling, drying, threshing, winnowing, cleaning, and storage.",
+            "Processing space may be as important as planted area for a backyard grower.",
+            "No minimum useful grain-production area has been assigned because cleaned yield and flock value vary too widely.",
+            "Commercial seed rates should not be converted directly into a guaranteed backyard harvest."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            3,
+
+          meat:
+            3,
+
+          breeding:
+            2,
+
+          petsEnrichment:
+            4,
+
+          homestead:
+            5,
+
+          mixed:
+            4
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            4,
+
+          cutAndCarry:
+            3,
+
+          wholeProduce:
+            1,
+
+          wholeSeedHeads:
+            4,
+
+          wholeGrain:
+            4,
+
+          processedGrain:
+            5,
+
+          heatTreated:
+            2,
+
+          driedForage:
+            2,
+
+          winterStorage:
+            5
+        },
+
+        directRunSuitabilityScore:
+          2,
+
+        forageFrameSuitabilityScore:
+          4,
+
+        rotationalPaddockSuitabilityScore:
+          5,
+
+        confinedFlockValueScore:
+          4,
+
+        pasturedFlockValueScore:
+          4,
+
+        treatDilutionRiskScore:
+          4,
+
+        highEnergySupplement:
+          true,
+
+        highFiberSupplement:
+          true,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Measured whole-grain supplementation for established adult chickens",
+          "Cracked-grain supplementation",
+          "Coarsely ground ingredient in a properly formulated ration",
+          "Short clean sprouts offered as a limited supplemental food",
+          "Controlled access to young vegetative growth",
+          "Cut-and-carry green forage",
+          "Whole mature heads offered as pecking enrichment",
+          "Postharvest gleaning of residual sound grain",
+          "Stored cool-season grain for later use"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Primary laying-hen calcium source",
+          "Sole poultry protein source",
+          "Unrestricted staple feed for young chicks",
+          "Unrestricted wet hydroponic fodder",
+          "Moldy or contaminated sprouted feed",
+          "Mature coarse straw as a concentrated feed",
+          "Chemically treated planting seed",
+          "Uninspected grain screenings",
+          "Unrestricted access to the crop before grain harvest"
+        ],
+
+        portionGuidance:
+          null,
+
+        usePathTesting: [
+          "Whole dry grain acceptance by established adult hens",
+          "Cracked-grain acceptance",
+          "Coarsely ground Barley handling and feed separation",
+          "Whole-head enrichment value",
+          "Short-sprout acceptance",
+          "Hydroponic fodder-mat intake and waste",
+          "Young green-chop acceptance",
+          "Forage-frame persistence",
+          "Rotational-paddock recovery after grazing",
+          "Postharvest gleaning efficiency",
+          "Dropping consistency after supplemental Barley feeding",
+          "Wet-litter effects",
+          "Feed displacement",
+          "Bird weight and body-condition response",
+          "Egg cleanliness and production response"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Clean mature whole grain",
+            "Cracked mature grain",
+            "Coarsely ground mature grain",
+            "Sound mature grain heads",
+            "Short sprouts produced from sound untreated grain",
+            "Young tender vegetative growth",
+            "Residual sound grain after harvest"
+          ],
+
+          nonFeedProducts: [
+            "Straw",
+            "Roots",
+            "Cover-crop biomass",
+            "Chaff containing no usable sound grain"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor-during-establishment-and-grain-development",
+
+          directAccessTiming:
+            "Allow access only through a protected forage system, controlled rotational grazing, supervised clipping, or postharvest gleaning after the intended grain crop has been collected.",
+
+          nutritionalOrientation: [
+            "energy",
+            "starch",
+            "moderate-protein",
+            "fiber",
+            "cool-season-forage",
+            "stored-grain",
+            "enrichment"
+          ],
+
+          betaGlucanConcern:
+            true,
+
+          lowerEnergyThanCorn:
+            true,
+
+          lowerEnergyThanWheat:
+            true,
+
+          methionineLimitation:
+            true,
+
+          layingHenCalciumRequirementMet:
+            false,
+
+          completePoultryFeed:
+            false,
+
+          gritRelevantForWholeGrain:
+            true,
+
+          youngBirdSensitivityConcern:
+            true,
+
+          stickyDroppingRisk:
+            true,
+
+          wetLitterRisk:
+            true,
+
+          dirtyEggRisk:
+            true,
+
+          wholeGrainSuitableForEstablishedAdults:
+            true,
+
+          crackedGrainSuitable:
+            true,
+
+          groundIngredientRequiresRationFormulation:
+            true,
+
+          sproutingCreatesAdditionalDryMatter:
+            false,
+
+          hydroponicFodderPrimarilyAddsWater:
+            true,
+
+          strawPrimaryFeed:
+            false,
+
+          treatedSeedSuitableForFeed:
+            false,
+
+          notes: [
+            "Barley grain is primarily an energy-oriented cereal ingredient.",
+            "It provides moderate protein but cannot serve as the only protein source in a complete poultry diet.",
+            "Barley does not supply the calcium concentration required by laying hens.",
+            "Ordinary hulled Barley contains more fiber and generally less usable poultry energy than Corn.",
+            "Barley also commonly provides less usable poultry energy than Wheat.",
+            "Soluble beta-glucans can increase intestinal viscosity and reduce nutrient use.",
+            "High or poorly balanced Barley inclusion can contribute to sticky droppings, wet litter, and dirty eggs.",
+            "Young chicks are more sensitive to dietary fiber, particle size, nutrient imbalance, and beta-glucan effects than established adult birds.",
+            "A universal safe inclusion percentage is not stored.",
+            "Commercial poultry studies using enzymes, balanced amino acids, minerals, vitamins, and controlled ingredient testing should not be simplified into a household feeding percentage.",
+            "Established adult chickens may consume whole Barley when particle size is suitable and appropriate grit is available.",
+            "Cracking can improve handling and consumption but exposes more grain surface to oxidation, moisture, insects, and spoilage.",
+            "Coarse grinding may make Barley easier to mix into a formulated ration.",
+            "Excessively fine grinding may create dust, selective feeding, ingredient separation, respiratory irritation, and feed waste.",
+            "Whole mature heads can provide pecking enrichment but may create grain loss, chaff, and awn exposure.",
+            "Awned varieties require careful inspection before whole-head feeding.",
+            "Short sprouts and hydroponic fodder are not nutritionally equivalent to dry grain.",
+            "Sprouting consumes part of the grain's stored dry matter through respiration.",
+            "The apparent increase in fodder weight is primarily water uptake.",
+            "Sprouting may change digestibility, physical form, vitamins, enzyme activity, and palatability, but it does not create free feed mass.",
+            "Wet fodder can dilute nutrient intake if birds consume it instead of balanced dry feed.",
+            "Sprout trays can develop mold, yeast, bacterial growth, heating, sour odor, or root-mat spoilage.",
+            "Only clean, fresh-smelling sprouted material should be offered.",
+            "Young Barley growth can provide seasonal greens and enrichment.",
+            "Mature stems and straw are fibrous and should not be treated as a concentrated poultry feed.",
+            "Chickens can uproot seedlings, scratch planting beds, consume new shoots, trample stands, and remove developing grain.",
+            "Forage frames can protect roots while allowing birds to clip shoots through a barrier.",
+            "Rotational grazing should begin only after establishment and end before severe stand damage or bare-soil exposure.",
+            "Postharvest gleaning can recover spilled or unthreshed grain but should occur only where no treated seed, mold, dangerous weeds, toxic contaminants, or harvest hazards are present.",
+            "Planting seed treated with fungicides, insecticides, or other chemicals must never be fed.",
+            "Grain screenings may concentrate weed seeds, ergot bodies, broken kernels, Fusarium-damaged grain, dust, chaff, and foreign material and therefore require careful inspection.",
+            "Complete poultry feed should remain the nutritional foundation unless a qualified formulation process is used."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore:
+          3,
+
+        plantingEaseScore:
+          5,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          4,
+
+        weedControlEaseScore:
+          4,
+
+        wildlifeProtectionEaseScore:
+          3,
+
+        harvestEaseScore:
+          2,
+
+        wholeHeadProcessingEaseScore:
+          3,
+
+        looseSeedProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          3,
+
+        heavyLiftingRiskScore:
+          2,
+
+        weeklyLaborLevel:
+          "low-to-moderate",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "single-seasonal-or-short-harvest-window",
+
+        requiredPlantingTasks: [
+          "prepare-seedbed",
+          "control-existing-sod",
+          "broadcast-or-row-seed",
+          "cover-seed",
+          "firm-seedbed"
+        ],
+
+        requiredMaintenanceTasks: [
+          "monitor-emergence",
+          "monitor-soil-moisture",
+          "monitor-weeds",
+          "monitor-lodging",
+          "monitor-disease",
+          "monitor-wildlife"
+        ],
+
+        optionalMaintenanceTasks: [
+          "irrigate",
+          "soil-test",
+          "apply-fertilizer",
+          "protect-from-birds",
+          "protect-from-deer",
+          "protect-from-rodents",
+          "install-forage-frame",
+          "rotate-grazing-access",
+          "mow-or-clip-cover-crop"
+        ],
+
+        requiredHarvestTasks: [
+          "determine-grain-maturity",
+          "inspect-for-disease",
+          "inspect-for-ergot",
+          "inspect-for-mold",
+          "cut-or-collect-grain-heads",
+          "contain-loose-grain",
+          "protect-harvest-from-rain"
+        ],
+
+        usePathProcessingTasks: {
+          wholeDryGrain: [
+            "cut-or-collect-grain-heads",
+            "dry",
+            "thresh",
+            "de-awn",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "verify-dryness"
+          ],
+
+          crackedDryGrain: [
+            "cut-or-collect-grain-heads",
+            "dry",
+            "thresh",
+            "de-awn",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "crack-grain"
+          ],
+
+          groundRationIngredient: [
+            "cut-or-collect-grain-heads",
+            "dry",
+            "thresh",
+            "de-awn",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "grind",
+            "measure",
+            "formulate-ration"
+          ],
+
+          wholeMatureHeads: [
+            "cut-grain-heads",
+            "inspect",
+            "dry-if-needed"
+          ],
+
+          shortSproutedGrain: [
+            "clean-sort",
+            "measure-dry-grain",
+            "rinse",
+            "soak",
+            "drain",
+            "rinse-repeatedly",
+            "maintain-airflow",
+            "inspect-for-spoilage",
+            "feed-fresh",
+            "sanitize-equipment"
+          ],
+
+          hydroponicBarleyFodder: [
+            "clean-sort",
+            "measure-dry-grain",
+            "rinse",
+            "soak",
+            "drain",
+            "spread-in-trays",
+            "water-repeatedly",
+            "maintain-airflow",
+            "manage-temperature",
+            "inspect-root-mat",
+            "inspect-for-mold",
+            "feed-fresh",
+            "clean-trays",
+            "sanitize-system"
+          ],
+
+          freshGreenChop: [
+            "cut-young-growth",
+            "inspect",
+            "chop-if-needed",
+            "feed-fresh"
+          ],
+
+          protectedLivingForage: [
+            "establish-stand",
+            "protect-roots",
+            "control-access",
+            "monitor-regrowth",
+            "rest-stand"
+          ],
+
+          postharvestGleaning: [
+            "harvest-primary-grain",
+            "inspect-field",
+            "remove-hazards",
+            "control-flock-access",
+            "monitor-intake"
+          ],
+
+          coverCropBiomass: [
+            "establish-stand",
+            "monitor-growth",
+            "terminate-before-unwanted-seed",
+            "mow-or-incorporate-or-mulch"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "verify-grain-dryness",
+          "clean-storage-container",
+          "label-container",
+          "protect-from-moisture",
+          "protect-from-rodents",
+          "inspect-condensation",
+          "inspect-insects",
+          "inspect-mold",
+          "inspect-heating",
+          "inspect-off-odor"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "broadcast-seeder",
+          "garden-rake",
+          "seed-drill",
+          "roller-or-cultipacker",
+          "sickle",
+          "scythe",
+          "hand-pruners",
+          "harvest-tarp",
+          "grain-cradle",
+          "drying-rack",
+          "drying-screen",
+          "fan",
+          "mechanical-thresher",
+          "grain-rub-board",
+          "de-awning-screen",
+          "winnowing-fan",
+          "grain-sieves",
+          "food-safe-buckets",
+          "metal-grain-can",
+          "moisture-meter",
+          "grain-cracker",
+          "grain-mill",
+          "sprouting-jars",
+          "sprouting-trays",
+          "hydroponic-fodder-rack",
+          "thermometer",
+          "sanitation-supplies"
+        ],
+
+        suitableForLowTimeUsersScore:
+          3,
+
+        suitableForSoloGrowersScore:
+          4,
+
+        directFacts: {
+          seedSize:
+            "medium-and-easy-to-broadcast-or-drill",
+
+          directSeedingSuitable:
+            true,
+
+          indoorStartingPossible:
+            false,
+
+          specializedPlantingEquipmentRequiredForBackyardScale:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          specializedProcessingEquipmentRequiredForBackyardScale:
+            false,
+
+          mechanicalEquipmentCanImproveEfficiency:
+            true,
+
+          wholeHeadUseReducesProcessing:
+            true,
+
+          cleanedWholeGrainRequiresThreshing:
+            true,
+
+          cleanedWholeGrainRequiresWinnowing:
+            true,
+
+          awnedVarietiesMayRequireDeAwing:
+            true,
+
+          crackedGrainRequiresAdditionalProcessing:
+            true,
+
+          groundIngredientRequiresAdditionalProcessing:
+            true,
+
+          sproutsRequireDailyManagement:
+            true,
+
+          hydroponicFodderRequiresDailyManagement:
+            true,
+
+          peakLaborConcentratedNearHarvest:
+            true,
+
+          majorLaborBottlenecks: [
+            "Preparing an even weed-controlled seedbed",
+            "Protecting seedlings from chickens and wildlife",
+            "Monitoring disease and lodging near heading",
+            "Determining safe harvest timing",
+            "Cutting and gathering mature heads before shattering or weather damage",
+            "Keeping harvested grain dry",
+            "Threshing grain from heads",
+            "Removing awns and chaff",
+            "Winnowing and screening",
+            "Sorting damaged or questionable kernels",
+            "Verifying adequate grain dryness",
+            "Cleaning grain-processing equipment",
+            "Monitoring stored grain",
+            "Cracking or grinding in small batches",
+            "Maintaining sanitation in sprout or fodder systems"
+          ],
+
+          notes: [
+            "Barley is straightforward to establish by broadcasting or row seeding.",
+            "Small seed packets can be planted with ordinary hand tools.",
+            "A drill, roller, or broadcast spreader can improve uniformity but is not required for a small trial.",
+            "A clean, firm, weed-controlled seedbed supports more uniform emergence.",
+            "Routine labor is often modest after establishment when weeds, moisture, fertility, wildlife, and disease remain manageable.",
+            "The crop's most demanding work occurs during harvest and postharvest processing.",
+            "Hand cutting is practical for small beds but becomes slow as planted area increases.",
+            "Mature heads should be collected over a tarp, sheet, tub, or other clean surface to reduce grain loss.",
+            "Awned heads may scratch exposed skin and create irritating dust during threshing.",
+            "Whole mature heads require less processing than loose cleaned grain.",
+            "Loose grain usually requires cutting, drying, threshing, de-awning, winnowing, screening, sorting, and storage preparation.",
+            "Hand rubbing, stomping in a clean bag, beating bundles over a tarp, or using a small mechanical thresher may separate grain, but each method creates different losses and contamination risks.",
+            "Mechanical threshers greatly improve efficiency where larger quantities are grown.",
+            "Cracking and grinding add equipment, dust, cleanup, energy use, and storage concerns.",
+            "Processed grain generally deteriorates faster than intact grain.",
+            "Sprouting requires repeated rinsing, draining, airflow, temperature control, inspection, and sanitation.",
+            "Hydroponic fodder is not a low-labor system when operated safely.",
+            "Fodder trays must be inspected daily for mold, slime, sour odor, overheating, poor drainage, and uneven growth.",
+            "A failed sprout batch should be discarded rather than salvaged as feed.",
+            "Forage frames reduce root destruction but still require establishment, maintenance, clipping management, and rest periods.",
+            "Rotational paddock use requires fencing and movement of the flock before severe stand damage occurs.",
+            "Barley is suitable for solo growers at small scale, but harvesting and threshing a large plot may be physically tiring.",
+            "Future Backyard Chicken Planner trials should record labor separately for planting, crop care, harvesting, drying, threshing, cleaning, processing, and storage."
+          ]
+        }
+      },
+
+      cost: {
+        seedOrPlantCostLevel:
+          "low",
+
+        soilPreparationCostLevel:
+          "low-to-moderate",
+
+        irrigationCostLevel:
+          "low-to-moderate",
+
+        protectionCostLevel:
+          "moderate",
+
+        processingEquipmentCostLevel:
+          "moderate",
+
+        storageCostLevel:
+          "low-to-moderate",
+
+        annualRecurringCostLevel:
+          "low-to-moderate",
+
+        longTermValueScore:
+          4,
+
+        lowestCostUsePath:
+          "cover-crop-biomass",
+
+        highestCostUsePath:
+          "hydroponic-barley-fodder",
+
+        likelyCostDrivers: [
+          "Bulk untreated seed",
+          "Specialty hull-less or food-grade seed",
+          "Sod removal or seedbed preparation",
+          "Soil testing",
+          "Nitrogen fertilizer",
+          "Phosphorus or potassium fertilizer where required",
+          "Irrigation equipment",
+          "Bird netting",
+          "Deer exclusion",
+          "Rodent control",
+          "Forage-frame materials",
+          "Harvest tarps",
+          "Cutting tools",
+          "Drying racks or screens",
+          "Threshing equipment",
+          "Winnowing screens",
+          "Moisture meter",
+          "Rodent-resistant storage containers",
+          "Grain cracker",
+          "Grain mill",
+          "Sprouting jars or trays",
+          "Hydroponic-fodder shelving",
+          "Water use",
+          "Daily sanitation supplies",
+          "Electricity for fans, pumps, lights, drying, or milling"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small directly seeded trial.",
+          "Purchase bulk untreated feed or cover-crop seed from a reputable source.",
+          "Use whole grain instead of cracking or grinding when appropriate for established adult birds.",
+          "Offer whole mature heads as enrichment instead of processing all grain.",
+          "Use existing hand tools before purchasing specialized equipment.",
+          "Thresh over a clean tarp to reduce collection loss.",
+          "Build simple drying racks or screens from materials already available.",
+          "Use gravity drainage and natural airflow for small sprout batches when sanitation can still be maintained.",
+          "Avoid oversized hydroponic systems before flock acceptance and labor requirements are tested.",
+          "Store grain whole and process only small batches as needed.",
+          "Use food-safe rodent-resistant containers already owned.",
+          "Combine grain production with cover cropping, weed suppression, soil protection, straw production, and postharvest gleaning.",
+          "Save seed only from an appropriate untreated open-pollinated variety when disease, purity, viability, and storage requirements are understood."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          specializedEquipmentCanImproveReturn:
+            true,
+
+          wholeHeadUseLowestProcessingCost:
+            true,
+
+          looseGrainAddsProcessingCost:
+            true,
+
+          crackedGrainAddsProcessingCost:
+            true,
+
+          groundGrainAddsProcessingCost:
+            true,
+
+          sproutingAddsRecurringLaborAndWaterCost:
+            true,
+
+          hydroponicFodderAddsRecurringLaborAndWaterCost:
+            true,
+
+          grainStorageRequiresMoistureProtection:
+            true,
+
+          grainStorageRequiresRodentProtection:
+            true,
+
+          exactEconomicReturnKnown:
+            false,
+
+          exactFeedSavingsKnown:
+            false,
+
+          notes: [
+            "Barley seed is generally inexpensive when purchased in agricultural quantities.",
+            "Small specialty packets, hull-less cultivars, organic seed, heritage varieties, and food-grade seed may cost substantially more per pound.",
+            "Planting a small stand requires little specialized equipment.",
+            "The cost of producing cleaned grain rises when harvesting, threshing, de-awning, winnowing, screening, drying, and storage are included.",
+            "Whole-head feeding can reduce processing expense but may increase feeding waste and make intake difficult to measure.",
+            "Whole clean grain usually stores more efficiently than cracked or ground grain.",
+            "A grain cracker or mill may be useful when Barley becomes a routine ration ingredient, but equipment cost should be compared with actual annual grain volume.",
+            "Sprouting requires water, containers, sanitation, temperature management, airflow, drainage, and daily attention.",
+            "Hydroponic fodder may require trays, shelving, pumps, timers, drainage, lighting, climate control, cleaning equipment, and dependable water.",
+            "A low-cost homemade fodder system is not automatically economical when seed loss, mold loss, labor, water, cleaning, and nutrient dilution are counted.",
+            "Dry fodder output should be compared with the original dry-grain input rather than comparing wet harvested weight with dry seed weight.",
+            "Barley may provide strong multipurpose value even when direct feed savings are modest.",
+            "Potential nonfeed value includes soil cover, erosion reduction, weed suppression, residual-nitrogen capture, organic matter, straw, rotation diversity, and household grain use.",
+            "A crop failure caused by winterkill, heat, drought, lodging, Fusarium, DON, ergot, wildlife, wet harvest, or poor storage can eliminate anticipated savings.",
+            "Cost levels are qualitative planner categories rather than current retail prices.",
+            "No feed-cost reduction estimate should be calculated until actual cleaned grain yield, processing loss, labor, storage loss, feeding rate, and complete-feed displacement are measured."
+          ]
+        }
+      },
+
+            goals: {
+        feedReductionScore:
+          4,
+
+        energyProductionScore:
+          4,
+
+        proteinOrientedScore:
+          2,
+
+        freshGreensScore:
+          4,
+
+        livingForageScore:
+          4,
+
+        winterStorageScore:
+          5,
+
+        enrichmentScore:
+          4,
+
+        resilienceScore:
+          5,
+
+        soilImprovementScore:
+          4,
+
+        nitrogenFixationScore:
+          0,
+
+        groundCoverScore:
+          5,
+
+        erosionControlScore:
+          5,
+
+        shadeScore:
+          1,
+
+        privacyScreeningScore:
+          2,
+
+        pollinatorSupportScore:
+          1,
+
+        compostBiomassScore:
+          4,
+
+        householdFoodScore:
+          4,
+
+        seedSavingScore:
+          4,
+
+        selfRelianceScore:
+          5,
+
+        multipurposeValueScore:
+          5,
+
+        visualAppealScore:
+          3,
+
+        productionReliabilityScore:
+          4,
+
+        fastestValueScore:
+          5,
+
+        nonElectricStorageScore:
+          5,
+
+        smallFlockValueScore:
+          4,
+
+        largeFlockValueScore:
+          5,
+
+        primaryGoalMatches: [
+          "reduce-feed-use",
+          "high-energy",
+          "winter-storage",
+          "fresh-greens",
+          "living-forage",
+          "cover-cropping",
+          "ground-cover",
+          "erosion-control",
+          "weed-suppression",
+          "soil-improvement",
+          "crop-rotation",
+          "compost-biomass",
+          "bedding-material",
+          "self-reliance",
+          "seed-saving",
+          "shared-household-food",
+          "non-electric-storage",
+          "cool-season-production",
+          "short-season-production"
+        ],
+
+        weakGoalMatches: [
+          "primary-protein-production",
+          "nitrogen-fixation",
+          "pollinator-support",
+          "permanent-ground-cover",
+          "perennial-production",
+          "summer-heat-production",
+          "deep-shade-production",
+          "container-grain-production",
+          "complete-feed-replacement"
+        ],
+
+        goalConflicts: [
+          {
+            goalA:
+              "maximum-grain-harvest",
+
+            goalB:
+              "unrestricted-living-forage",
+
+            explanation:
+              "Allowing chickens unrestricted access before grain maturity can uproot seedlings, remove foliage, reduce tillering, damage stems, and consume developing grain."
+          },
+
+          {
+            goalA:
+              "maximum-grain-yield",
+
+            goalB:
+              "maximum-straw-biomass",
+
+            explanation:
+              "Very tall or heavy-straw varieties may produce more residue but can increase lodging risk and may not provide the strongest grain yield or harvest efficiency."
+          },
+
+          {
+            goalA:
+              "maximum-grain-protein",
+
+            goalB:
+              "minimum-lodging-risk",
+
+            explanation:
+              "High nitrogen fertility may increase grain protein but can also encourage lush growth, weak stems, delayed maturity, and lodging."
+          },
+
+          {
+            goalA:
+              "maximum-sprouted-fodder-weight",
+
+            goalB:
+              "maximum-dry-matter-feed-efficiency",
+
+            explanation:
+              "Hydroponic fodder gains substantial wet weight from absorbed water while some original grain dry matter is consumed through respiration."
+          },
+
+          {
+            goalA:
+              "minimum-processing-labor",
+
+            goalB:
+              "clean-loose-stored-grain",
+
+            explanation:
+              "Clean loose grain requires cutting, drying, threshing, de-awning, winnowing, screening, sorting, and protected storage."
+          },
+
+          {
+            goalA:
+              "maximum-whole-grain-feeding",
+
+            goalB:
+              "maximum-ration-precision",
+
+            explanation:
+              "Whole grain offered separately is less precise than weighing and incorporating Barley into a properly formulated complete ration."
+          },
+
+          {
+            goalA:
+              "maximum-barley-inclusion",
+
+            goalB:
+              "simplified-digestive-management",
+
+            explanation:
+              "Increasing Barley inclusion increases the importance of beta-glucans, fiber, amino-acid balance, enzymes, litter management, and complete-ration formulation."
+          },
+
+          {
+            goalA:
+              "maximum-winter-hardiness",
+
+            goalB:
+              "earliest-winter-barley-harvest",
+
+            explanation:
+              "Winter Barley may mature early but is generally less winter-hardy than winter Wheat or Cereal Rye."
+          }
+        ],
+
+        directFacts: {
+          annualEnergyGrain:
+            true,
+
+          coolSeasonForage:
+            true,
+
+          coverCropValue:
+            true,
+
+          soilProtectionValue:
+            true,
+
+          erosionControlValue:
+            true,
+
+          weedSuppressionValue:
+            true,
+
+          residualNitrogenCaptureValue:
+            true,
+
+          strawValue:
+            true,
+
+          householdFoodPotential:
+            true,
+
+          maltingPotential:
+            true,
+
+          seedSavingPossible:
+            true,
+
+          nonElectricStoragePotential:
+            true,
+
+          nitrogenFixingLegume:
+            false,
+
+          permanentGroundCover:
+            false,
+
+          completeFeedReplacementGoalSupported:
+            false,
+
+          strongestPrimaryGoals: [
+            "cool-season grain production",
+            "stored supplemental energy",
+            "cover cropping",
+            "soil protection",
+            "weed suppression",
+            "seasonal forage",
+            "straw production",
+            "homestead resilience"
+          ],
+
+          notes: [
+            "Barley provides more planner value as a multipurpose crop than as a simple pound-for-pound replacement for purchased poultry feed.",
+            "The crop can produce mature grain, young forage, straw, cover-crop biomass, root biomass, and postharvest gleaning opportunities.",
+            "Barley establishes rapidly and can cover exposed soil during cool weather.",
+            "A dense healthy stand can compete with many annual weeds.",
+            "The crop can capture residual soil nitrogen but does not fix atmospheric nitrogen.",
+            "Mature grain can be stored without electricity when it is properly cleaned, dried, cooled, and protected.",
+            "Whole heads can provide enrichment with less processing than loose cleaned grain.",
+            "Clean loose grain provides better measurement and storage efficiency than whole heads.",
+            "Young vegetative growth provides fresh seasonal forage but should not be confused with mature grain.",
+            "Short sprouts and hydroponic fodder provide fresh material but do not create additional dry matter.",
+            "Straw may provide bedding, mulch, or compost carbon when it is clean and dry.",
+            "Barley has household-food value, particularly when an appropriate food-grade or hull-less variety is grown.",
+            "Malting value requires suitable variety, protein level, germination capacity, grain quality, and specialized processing.",
+            "Barley's poultry value is limited by beta-glucans, hull fiber, lower energy than Corn, incomplete amino-acid balance, and low calcium.",
+            "The crop is not a dependable summer grain in regions where heading and grain filling occur during extreme heat.",
+            "Winter Barley should be recommended only where a locally adapted variety has dependable winter survival.",
+            "No exact feed-reduction percentage should be generated until cleaned yield, processing losses, labor, feeding rate, and complete-feed displacement are known."
+          ]
+        }
+      },
+
+      risks: {
+        overallRiskLevel:
+          "moderate",
+
+        wildlife: {
+          wildBirds:
+            4,
+
+          deer:
+            4,
+
+          raccoons:
+            2,
+
+          squirrels:
+            3,
+
+          rabbits:
+            3,
+
+          rodents:
+            5,
+
+          groundhogs:
+            3
+        },
+
+        establishmentFailureRiskScore:
+          3,
+
+        weedCompetitionRiskScore:
+          2,
+
+        droughtEstablishmentRiskScore:
+          3,
+
+        matureDroughtRiskScore:
+          3,
+
+        waterloggingRiskScore:
+          5,
+
+        heatDamageRiskScore:
+          4,
+
+        frostDamageRiskScore:
+          2,
+
+        stormDamageRiskScore:
+          4,
+
+        lodgingRiskScore:
+          4,
+
+        shatteringRiskScore:
+          3,
+
+        birdLossRiskScore:
+          4,
+
+        wildlifePressureScore:
+          4,
+
+        deerBrowsingRiskScore:
+          4,
+
+        rabbitBrowsingRiskScore:
+          3,
+
+        rodentAttractionScore:
+          5,
+
+        insectDamageRiskScore:
+          3,
+
+        diseaseRiskScore:
+          4,
+
+        moldRiskScore:
+          5,
+
+        harvestWeatherRiskScore:
+          4,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          5,
+
+        storageMoistureRiskScore:
+          5,
+
+        contaminationRiskScore:
+          5,
+
+        misidentificationRiskScore:
+          2,
+
+        chemicalExposureRiskScore:
+          5,
+
+        nitrateAccumulationRiskScore:
+          1,
+
+        oxalateConcernScore:
+          1,
+
+        antinutritionalFactorRiskScore:
+          5,
+
+        completeFeedDisplacementRiskScore:
+          5,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        flockOverconsumptionRiskScore:
+          4,
+
+        selfSeedingRiskScore:
+          3,
+
+        invasivenessRiskScore:
+          1,
+
+        crossPollinationRiskScore:
+          2,
+
+        allergenOrDustExposureRiskScore:
+          4,
+
+        mechanicalHarvestSuitabilityScore:
+          5,
+
+        mechanicalProcessingSuitabilityScore:
+          5,
+
+        riskFactors: [
+          {
+            id:
+              "waterlogged-soil",
+
+            category:
+              "soil-and-establishment",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Saturated soil can reduce germination, restrict root oxygen, promote root disease, weaken tillering, reduce nutrient uptake, and cause stand loss.",
+
+            mitigation: [
+              "Plant only in well-drained soil.",
+              "Avoid depressions that collect standing water.",
+              "Do not irrigate faster than the soil can drain.",
+              "Improve drainage before planting.",
+              "Use raised beds only where they provide enough area for the intended use."
+            ]
+          },
+
+          {
+            id:
+              "winterkill",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Winter Barley can suffer severe stand loss when minimum temperatures, freeze-thaw cycles, ice, poor drainage, or inadequate establishment exceed the variety's winter-hardiness.",
+
+            mitigation: [
+              "Use winter Barley only where locally adapted varieties are available.",
+              "Follow regional autumn planting dates.",
+              "Establish plants early enough to develop before winter.",
+              "Avoid overly early planting that produces excessive top growth.",
+              "Use spring Barley where winter survival is unreliable."
+            ]
+          },
+
+          {
+            id:
+              "heat-during-heading-and-grain-fill",
+
+            category:
+              "climate",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "High temperatures during heading, pollination, kernel development, and grain filling can reduce fertile heads, kernel number, kernel weight, and final grain quality.",
+
+            mitigation: [
+              "Plant spring Barley as early as local soil conditions permit.",
+              "Use an early-maturing cultivar.",
+              "Use winter Barley in suitable mild-winter climates.",
+              "Avoid planting dates that place heading in extreme heat.",
+              "Maintain adequate moisture during reproductive growth."
+            ]
+          },
+
+          {
+            id:
+              "lodging",
+
+            category:
+              "field-production",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Plants may bend or fall before harvest, increasing disease, uneven maturity, grain loss, contamination, and hand-harvest difficulty.",
+
+            mitigation: [
+              "Select a lodging-resistant variety.",
+              "Avoid excessive nitrogen.",
+              "Avoid excessive stand density.",
+              "Maintain balanced fertility.",
+              "Avoid unnecessary late irrigation.",
+              "Harvest promptly after maturity."
+            ]
+          },
+
+          {
+            id:
+              "fusarium-head-blight-and-don",
+
+            category:
+              "disease-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Fusarium infection can damage grain and may produce deoxynivalenol or other mycotoxin concerns that make the harvest unsuitable for feed.",
+
+            mitigation: [
+              "Choose locally recommended disease-resistant varieties.",
+              "Rotate away from susceptible cereal crops and infected residue.",
+              "Avoid prolonged head wetness where practical.",
+              "Inspect grain carefully before storage or feeding.",
+              "Reject visibly scabby, shriveled, pink, chalky, moldy, or musty grain.",
+              "Use laboratory testing when contamination is suspected and the grain might otherwise be fed."
+            ]
+          },
+
+          {
+            id:
+              "ergot-contamination",
+
+            category:
+              "feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Ergot bodies may replace normal kernels and can contain toxic alkaloids unsuitable for poultry or other livestock.",
+
+            mitigation: [
+              "Inspect heads and cleaned grain for dark elongated ergot bodies.",
+              "Control grassy weeds that can maintain ergot.",
+              "Clean harvested grain carefully.",
+              "Do not feed questionable screenings.",
+              "Discard or professionally evaluate contaminated grain."
+            ]
+          },
+
+          {
+            id:
+              "chemically-treated-seed",
+
+            category:
+              "chemical-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Planting seed treated with fungicides, insecticides, colorants, or other chemicals is unsafe for poultry feeding.",
+
+            mitigation: [
+              "Purchase untreated seed for any crop that may enter the food or feed chain.",
+              "Keep treated planting seed clearly labeled and physically separated.",
+              "Never feed leftover treated seed.",
+              "Do not assume washing removes seed-treatment chemicals."
+            ]
+          },
+
+          {
+            id:
+              "beta-glucan-digestive-effects",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Barley beta-glucans can increase intestinal viscosity, reduce nutrient use, and contribute to sticky droppings, wet litter, dirty eggs, and reduced performance.",
+
+            mitigation: [
+              "Keep Barley supplemental unless the complete ration is professionally formulated.",
+              "Avoid abrupt high-level feeding.",
+              "Monitor droppings, litter moisture, egg cleanliness, body condition, and feed intake.",
+              "Use suitable enzyme preparations only within an accurately formulated ration.",
+              "Continue an age-appropriate complete poultry feed."
+            ]
+          },
+
+          {
+            id:
+              "complete-feed-displacement",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Generous Barley feeding can displace balanced feed and reduce intake of required amino acids, calcium, vitamins, trace minerals, and usable energy.",
+
+            mitigation: [
+              "Offer Barley as a measured supplement.",
+              "Do not refill supplemental grain continuously.",
+              "Keep complete feed freely available.",
+              "Do not formulate from crude-protein percentage alone.",
+              "Observe egg production, shell quality, body condition, and flock intake."
+            ]
+          },
+
+          {
+            id:
+              "young-bird-nutritional-risk",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Young chicks are especially vulnerable to excessive fiber, unsuitable particle size, nutrient dilution, beta-glucan effects, and unbalanced home rations.",
+
+            mitigation: [
+              "Use an age-appropriate complete starter ration.",
+              "Do not use whole Barley as a chick staple.",
+              "Avoid substituting sprouts or fodder for complete starter feed.",
+              "Seek qualified formulation guidance before including Barley in chick diets."
+            ]
+          },
+
+          {
+            id:
+              "wet-harvest-and-storage-mold",
+
+            category:
+              "harvest-and-storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Grain harvested or stored while damp can heat, mold, clump, germinate, develop toxins, and become unsafe for feeding.",
+
+            mitigation: [
+              "Harvest only sound grain.",
+              "Protect cut grain from rain.",
+              "Dry grain thoroughly before sealed storage.",
+              "Use airflow during drying.",
+              "Store only cool grain.",
+              "Inspect containers for condensation, heating, insects, odor, and mold.",
+              "Discard questionable grain."
+            ]
+          },
+
+          {
+            id:
+              "wild-bird-loss",
+
+            category:
+              "wildlife",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Wild birds may consume developing or mature grain before harvest and may continue feeding during field drying.",
+
+            mitigation: [
+              "Monitor the crop closely as grain fills.",
+              "Use bird netting where practical and safe.",
+              "Harvest promptly when grain is mature.",
+              "Dry harvested heads in a protected location.",
+              "Clean spilled grain from processing areas."
+            ]
+          },
+
+          {
+            id:
+              "rodent-loss",
+
+            category:
+              "wildlife-and-storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Rodents may consume planted seed, developing grain, harvested heads, loose grain, sprouts, fodder seed, and stored feed while contaminating material with urine and feces.",
+
+            mitigation: [
+              "Use rodent-resistant storage containers.",
+              "Store grain above the floor where appropriate.",
+              "Clean spills immediately.",
+              "Inspect storage areas regularly.",
+              "Discard rodent-contaminated grain.",
+              "Protect sprouting and fodder systems from rodent access."
+            ]
+          },
+
+          {
+            id:
+              "sprout-and-fodder-spoilage",
+
+            category:
+              "sprouting-and-fodder",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Wet sprout or fodder systems can develop mold, yeast, bacteria, slime, sour odor, poor drainage, overheating, and decaying root mats.",
+
+            mitigation: [
+              "Use only clean sound untreated grain.",
+              "Clean and sanitize trays and equipment between batches.",
+              "Maintain drainage and airflow.",
+              "Avoid excessively deep seed layers.",
+              "Control temperature.",
+              "Inspect every batch before feeding.",
+              "Discard any batch with mold, slime, sour odor, unusual heating, or deterioration."
+            ]
+          },
+
+          {
+            id:
+              "awn-and-dust-exposure",
+
+            category:
+              "handling",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Awned heads, chaff, and grain dust may irritate skin, eyes, airways, poultry faces, and processing areas.",
+
+            mitigation: [
+              "Wear eye protection and a suitable dust mask during threshing and cleaning.",
+              "Use gloves and long sleeves when handling awned heads.",
+              "Work outdoors or in a well-ventilated area.",
+              "Remove coarse awns and chaff before loose-grain feeding.",
+              "Avoid excessively fine grinding."
+            ]
+          },
+
+          {
+            id:
+              "grain-processing-injury",
+
+            category:
+              "equipment",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Threshers, grain mills, crackers, fans, and improvised processing equipment can create pinch, entanglement, impact, electrical, and dust hazards.",
+
+            mitigation: [
+              "Follow equipment-manufacturer instructions.",
+              "Keep guards installed.",
+              "Disconnect power before clearing jams.",
+              "Keep hands, hair, jewelry, and loose clothing away from moving parts.",
+              "Control grain dust.",
+              "Use hearing and eye protection where appropriate."
+            ]
+          }
+        ],
+
+        directFacts: {
+          standingWaterHighRisk:
+            true,
+
+          winterkillPossible:
+            true,
+
+          headingHeatRisk:
+            true,
+
+          lodgingConcern:
+            true,
+
+          shatteringPossible:
+            true,
+
+          birdLossConcern:
+            true,
+
+          rodentAttractionConcern:
+            true,
+
+          fusariumConcern:
+            true,
+
+          donConcern:
+            true,
+
+          ergotConcern:
+            true,
+
+          betaGlucanConcern:
+            true,
+
+          stickyDroppingConcern:
+            true,
+
+          wetLitterConcern:
+            true,
+
+          dirtyEggConcern:
+            true,
+
+          storageMoistureCritical:
+            true,
+
+          treatedSeedDanger:
+            true,
+
+          sproutingRequiresSanitation:
+            true,
+
+          awnIrritationPossible:
+            true,
+
+          mechanicalHarvestSuitable:
+            true,
+
+          mechanicalProcessingSuitable:
+            true,
+
+          notes: [
+            "Barley's most important production risks are waterlogging, winterkill of unsuitable winter varieties, heat during reproductive growth, lodging, disease, wildlife loss, and wet harvest conditions.",
+            "Its most important poultry-specific risks are beta-glucans, complete-feed displacement, unsuitable use in young birds, excessive fiber, and incomplete nutrient balance.",
+            "Its most important postharvest risks are inadequate drying, mold, mycotoxins, insects, rodents, condensation, heating, and contamination.",
+            "Fusarium-damaged grain should not be assumed safe based only on appearance.",
+            "Grain suspected of mycotoxin contamination may require laboratory testing.",
+            "Ergot bodies and unsafe screenings must be removed rather than diluted into feed.",
+            "Chemically treated planting seed must never enter poultry feed.",
+            "Sprouting does not make contaminated grain safe.",
+            "Cooking, cracking, grinding, soaking, or sprouting does not neutralize mycotoxins or chemical seed treatments.",
+            "A universal backyard Barley feeding percentage is not supported.",
+            "Risk scores are comparative planner values rather than predictions that a problem will occur."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        spring: [
+          "Early direct seeding of spring Barley",
+          "Rapid cool-season establishment",
+          "Tillering",
+          "Soil coverage",
+          "Weed suppression",
+          "Residual-nitrogen capture",
+          "Young green forage",
+          "Forage-frame production",
+          "Stem elongation",
+          "Heading",
+          "Pollination",
+          "Early grain filling",
+          "Resumption of growth by surviving winter Barley"
+        ],
+
+        summer: [
+          "Late grain filling",
+          "Physiological maturity",
+          "Grain harvest",
+          "Whole-head harvest",
+          "Protected drying",
+          "Threshing",
+          "De-awning",
+          "Winnowing",
+          "Cleaning",
+          "Straw harvest",
+          "Postharvest gleaning",
+          "Residue management"
+        ],
+
+        autumn: [
+          "Planting winter or facultative Barley in suitable climates",
+          "Rapid cover-crop establishment",
+          "Cool-season weed suppression",
+          "Soil protection",
+          "Erosion control",
+          "Residual-nitrogen capture",
+          "Young seasonal forage",
+          "Forage-frame establishment",
+          "Crop-rotation transition"
+        ],
+
+        winter: [
+          "Dormant or slowly growing winter Barley where adapted",
+          "Living soil cover",
+          "Soil stabilization",
+          "Stored whole-grain feeding",
+          "Stored cracked-grain feeding",
+          "Stored whole-head enrichment",
+          "Short-sprout production",
+          "Hydroponic fodder production",
+          "Seed and equipment planning"
+        ],
+
+        plannerSeasonScores: {
+          spring:
+            5,
+
+          summer:
+            4,
+
+          autumn:
+            5,
+
+          winter:
+            4
+        },
+
+        directFacts: {
+          springBarleyAvailable:
+            true,
+
+          winterBarleyAvailable:
+            true,
+
+          facultativeBarleyAvailable:
+            true,
+
+          springPlantingRole:
+            true,
+
+          autumnPlantingRole:
+            true,
+
+          winterLivingCoverPossible:
+            true,
+
+          summerHeatProductionWeak:
+            true,
+
+          storedWinterFeedValue:
+            true,
+
+          yearRoundIndoorSproutProductionPossible:
+            true,
+
+          yearRoundHydroponicFodderProductionPossible:
+            true,
+
+          grainHarvestEndsAnnualCycle:
+            true,
+
+          residueBenefitsContinueAfterHarvest:
+            true,
+
+          notes: [
+            "Seasonal roles depend strongly on whether spring, winter, or facultative Barley is selected.",
+            "Spring Barley is planted early and normally matures during summer.",
+            "Winter Barley is established in autumn, survives winter where adapted, and resumes growth in spring.",
+            "Winter Barley often matures earlier than spring-planted small grains.",
+            "The crop should not be ranked as dependable during prolonged extreme summer heat.",
+            "Young vegetative growth provides forage value before stems become coarse.",
+            "Grain harvest provides the strongest stored-feed pathway.",
+            "Dry grain can support winter feeding without refrigeration.",
+            "Indoor sprouts or fodder may be produced during any season, but they require clean grain, water, daily labor, airflow, drainage, temperature control, and sanitation.",
+            "Postharvest straw and roots may continue contributing bedding, mulch, compost carbon, soil cover, and organic matter after grain harvest.",
+            "Autumn planting dates and winter survival must be based on local variety guidance.",
+            "Spring planting should occur early enough to avoid placing heading and grain filling in severe heat."
+          ]
+        }
+      },
+
+            usePaths: [
+        {
+          id:
+            "whole-dry-barley",
+
+          label:
+            "Whole Dry Barley",
+
+          description:
+            "Mature Barley grain is harvested, dried thoroughly, threshed, de-awned where necessary, cleaned, inspected, and stored whole for measured supplementation of established adult chickens.",
+
+          primaryFeedRole:
+            "whole-energy-grain",
+
+          harvestProducts: [
+            "mature-dry-barley",
+            "whole-barley-grain",
+            "stored-cereal-grain",
+            "energy-oriented-feed-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "winter-supplement",
+            "stored-feed-ingredient"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "dry",
+            "thresh",
+            "de-awn",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture"
+          ],
+
+          optionalProcessingTasks: [
+            "freeze-for-insect-control",
+            "portion",
+            "laboratory-test-questionable-grain",
+            "save-seed"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "sickle",
+            "scythe",
+            "drying-screen",
+            "drying-rack",
+            "fan",
+            "threshing-container",
+            "mechanical-thresher",
+            "de-awning-screen",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "food-safe-bucket",
+            "metal-grain-can",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "sealed-dry-grain-storage",
+            "rodent-resistant-room-temperature-storage"
+          ],
+
+          preferredStorageMethod:
+            "whole-clean-dry-barley-in-a-cool-dark-dry-and-rodent-resistant-container",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            4,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "whole-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-cracking",
+            "later-grinding",
+            "later-sprouting",
+            "seed-saving"
+          ],
+
+          preservationLimitations: [
+            "Barley must be fully mature, clean, cool, and adequately dry before sealed storage.",
+            "Whole grain remains vulnerable to moisture, condensation, insects, rodents, and contamination.",
+            "Awned varieties may require additional cleaning before poultry use.",
+            "Covered Barley retains a fibrous hull that reduces usable poultry energy compared with hull-less Barley.",
+            "Storage duration varies with grain moisture, temperature, humidity, sanitation, container quality, and pest pressure.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "long-when-stored-whole-clean-and-dry",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-browsing",
+            "lodging",
+            "shattering",
+            "rain-during-maturity",
+            "grain-left-during-threshing",
+            "awn-and-chaff-contamination",
+            "insufficient-drying",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "condensation"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified, untreated Barley intended for food, feed, or forage.",
+            "Never feed chemically treated planting seed.",
+            "Do not feed grain contaminated by ergot, Fusarium, mold, rodents, chemicals, floodwater, or unknown substances.",
+            "Reject grain that is musty, sour, heated, damp, visibly moldy, unusually discolored, sprouted in storage, or badly insect-damaged.",
+            "Inspect cleaned grain for dark elongated ergot bodies.",
+            "A grain lot suspected of Fusarium or mycotoxin contamination may require laboratory testing.",
+            "Cooking, washing, cracking, grinding, or sprouting does not reliably neutralize mycotoxins.",
+            "Whole Barley is more fibrous and generally lower in usable poultry energy than Corn.",
+            "Barley beta-glucans may contribute to sticky droppings, wet litter, dirty eggs, and reduced nutrient use.",
+            "Whole grain is most appropriate for established adult chickens with access to appropriately sized insoluble grit.",
+            "Whole Barley should remain a measured supplement unless included in a professionally formulated complete ration.",
+            "Barley does not provide sufficient calcium or a complete amino-acid balance for laying hens.",
+            "No universal safe inclusion percentage is stored for backyard flocks."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-drying-capability",
+            "has-no-threshing-capability",
+            "has-no-de-awning-or-cleaning-capability",
+            "has-no-protected-storage",
+            "cannot-monitor-stored-grain",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks",
+            "cannot-identify-seed-treatment-status",
+            "cannot-inspect-for-mold-or-ergot"
+          ]
+        },
+
+        {
+          id:
+            "cracked-dry-barley",
+
+          label:
+            "Cracked Dry Barley",
+
+          description:
+            "Clean, fully dried Barley grain is cracked into coarse pieces to improve handling, mixing, and consumption by established adult chickens.",
+
+          primaryFeedRole:
+            "processed-energy-grain",
+
+          harvestProducts: [
+            "cracked-barley",
+            "coarsely-broken-barley",
+            "processed-cereal-grain",
+            "supplemental-ration-ingredient"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "measured-supplement",
+            "ration-mixing",
+            "winter-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "dry",
+            "thresh",
+            "de-awn",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "crack"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-particle-size",
+            "measure",
+            "blend",
+            "portion",
+            "prepare-small-batches"
+          ],
+
+          requiredEquipment: [
+            "grain-cracker-or-suitable-coarse-processing-method"
+          ],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "drying-screen",
+            "fan",
+            "grain-screen",
+            "moisture-meter",
+            "grain-cracker",
+            "feed-scale",
+            "mixing-container",
+            "dust-mask-or-respirator",
+            "food-safe-storage-container"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "processed-as-needed",
+
+          storageMethods: [
+            "short-to-moderate-term-dry-storage",
+            "sealed-food-safe-container"
+          ],
+
+          preferredStorageMethod:
+            "store-barley-whole-and-crack-only-manageable-batches-close-to-feeding-time",
+
+          storageDurationCategory:
+            "moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-term-dry-storage",
+            "freezing",
+            "immediate-ration-mixing",
+            "measured-supplementation"
+          ],
+
+          preservationLimitations: [
+            "Cracking exposes more grain surface area than whole-grain storage.",
+            "Cracked Barley may absorb moisture, oxidize, develop insects, and lose quality faster than intact grain.",
+            "Particle size must remain coarse enough to avoid excessive dust.",
+            "Fine particles may separate from other ingredients or be left in feeders.",
+            "Long-term storage is generally better performed before cracking.",
+            "Cracking does not remove beta-glucans, hull fiber, amino-acid limitations, or calcium deficiency."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-dry-barley",
+
+          likelyLossPoints: [
+            "spillage-during-processing",
+            "dust-generation",
+            "uneven-particle-size",
+            "ingredient-separation",
+            "moisture-absorption",
+            "oxidation",
+            "storage-insects",
+            "rodent-damage",
+            "mold"
+          ],
+
+          safetyWarnings: [
+            "Crack only clean, sound, fully dried, untreated Barley.",
+            "Never process or feed chemically treated planting seed.",
+            "Do not process Barley that smells musty or shows mold, heating, condensation, sprouting, ergot, insect damage, or rodent contamination.",
+            "A suspected mycotoxin problem is not corrected by cracking.",
+            "Avoid creating excessively fine dusty meal.",
+            "Use respiratory and eye protection when processing creates airborne dust or awn fragments.",
+            "Keep hands, clothing, jewelry, and tools away from moving grain-processing equipment.",
+            "Cracked Barley must remain a measured supplement or a properly formulated ration ingredient.",
+            "Barley beta-glucans can still contribute to sticky droppings and wet litter after cracking.",
+            "Cracked Barley does not provide sufficient calcium or a complete amino-acid balance.",
+            "Continue an age-appropriate complete feed unless the entire ration has been professionally formulated.",
+            "Observe feeders for sorting, separation, dust, and waste."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-grain-processing-equipment",
+            "cannot-control-processing-dust",
+            "requires-long-term-storage-after-processing",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "cannot-measure-supplements",
+            "has-only-young-chicks",
+            "cannot-monitor-droppings-or-litter"
+          ]
+        },
+
+        {
+          id:
+            "ground-barley-ration-ingredient",
+
+          label:
+            "Ground Barley Ration Ingredient",
+
+          description:
+            "Clean, fully dried Barley is coarsely ground, weighed, and blended as one ingredient in a nutritionally balanced poultry ration.",
+
+          primaryFeedRole:
+            "formulated-energy-and-starch-ingredient",
+
+          harvestProducts: [
+            "ground-barley",
+            "barley-meal",
+            "homegrown-ration-ingredient",
+            "processed-cereal-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "formulated-ration",
+            "measured-feed-ingredient",
+            "thoroughly-blended-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "dry",
+            "thresh",
+            "de-awn",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "blend"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-particle-size",
+            "laboratory-feed-analysis",
+            "prepare-small-batches",
+            "record-formulation",
+            "add-formulated-enzyme-product"
+          ],
+
+          requiredEquipment: [
+            "suitable-grain-grinder",
+            "accurate-feed-scale",
+            "mixing-container"
+          ],
+
+          helpfulEquipment: [
+            "moisture-meter",
+            "grain-screen",
+            "dust-collection-system",
+            "dust-mask-or-respirator",
+            "batch-record-sheet",
+            "sealed-food-safe-container",
+            "professional-ration-formulation-software-or-service",
+            "uniform-feed-mixer"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "processed-and-mixed-as-needed",
+
+          storageMethods: [
+            "short-term-sealed-dry-storage",
+            "immediate-ration-use"
+          ],
+
+          preferredStorageMethod:
+            "store-barley-whole-and-grind-only-the-quantity-needed-for-a-short-term-formulated-feed-batch",
+
+          storageDurationCategory:
+            "short-to-moderate",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "immediate-ration-mixing",
+            "short-term-sealed-storage",
+            "freezing-of-small-batches"
+          ],
+
+          preservationLimitations: [
+            "Ground Barley has a shorter dependable storage period than intact whole grain.",
+            "Fine particles may become dusty, separate from other ingredients, or be rejected by birds.",
+            "Accurate ration use requires dependable nutrient information for the actual Barley lot or a conservative professional formulation.",
+            "Grinding does not eliminate beta-glucans or hull fiber.",
+            "Grinding does not correct Barley's amino-acid limitations or low calcium content.",
+            "Enzyme products must be selected and dosed as part of a complete ration formulation rather than added casually.",
+            "No universal backyard inclusion percentage is supported."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-to-moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-or-cracked-barley",
+
+          likelyLossPoints: [
+            "grinding-dust",
+            "spillage",
+            "uneven-particle-size",
+            "ingredient-separation",
+            "incorrect-weighing",
+            "incorrect-formulation",
+            "incorrect-enzyme-use",
+            "moisture-absorption",
+            "mold",
+            "rodent-damage",
+            "nutrient-deterioration-during-storage"
+          ],
+
+          safetyWarnings: [
+            "This pathway is appropriate only when the complete ration is accurately formulated for the bird's species, age, body size, and production stage.",
+            "Do not formulate poultry feed from crude-protein percentage alone.",
+            "Account for metabolizable energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, fiber, and other required nutrients.",
+            "Account specifically for Barley beta-glucans and their effect on intestinal viscosity.",
+            "Do not assume an enzyme product makes an otherwise unbalanced ration complete.",
+            "Barley is not a complete protein source and is relatively limited in several essential amino acids.",
+            "Barley cannot serve as a laying-hen calcium source.",
+            "Use only clean, sound, fully dried, untreated grain.",
+            "Never grind or feed chemically treated planting seed.",
+            "Do not grind grain suspected of ergot, Fusarium, mold, mycotoxins, rodent contamination, or chemical contamination.",
+            "Avoid creating inhalable grain dust or airborne awn fragments.",
+            "Keep hands, hair, jewelry, and loose clothing away from operating grinders.",
+            "Prepare manageable batches and store them cool and dry.",
+            "Discard feed showing mold, insects, heating, condensation, rancid odor, mustiness, clumping, or rodent contamination.",
+            "Monitor droppings, litter moisture, egg cleanliness, body condition, feed intake, and production.",
+            "Young chicks are especially vulnerable to fiber, beta-glucans, particle-size problems, and nutritional imbalance and should receive a complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-ration-formulation-knowledge",
+            "has-no-accurate-feed-scale",
+            "has-no-grinder",
+            "cannot-control-dust",
+            "cannot-mix-feed-uniformly",
+            "cannot-monitor-feed-storage",
+            "cannot-monitor-litter-condition",
+            "requires-simple-treat-feeding",
+            "requires-unverified-inclusion-percentages"
+          ]
+        },
+
+        {
+          id:
+            "whole-mature-barley-heads",
+
+          label:
+            "Whole Mature Barley Heads",
+
+          description:
+            "Sound mature Barley heads are cut, inspected, dried where necessary, and offered intact as a measured pecking and foraging enrichment for established adult chickens.",
+
+          primaryFeedRole:
+            "whole-head-grain-enrichment",
+
+          harvestProducts: [
+            "mature-barley-heads",
+            "grain-bearing-seed-heads",
+            "whole-cereal-heads",
+            "pecking-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "hanging-enrichment",
+            "scatter-feeding",
+            "supervised-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-mature-grain-heads",
+            "inspect",
+            "dry-if-needed"
+          ],
+
+          optionalProcessingTasks: [
+            "bundle",
+            "hang",
+            "trim-long-stems",
+            "remove-excessive-awns",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "harvest-basket",
+            "harvest-tarp",
+            "drying-rack",
+            "drying-screen",
+            "twine",
+            "hanging-feeder"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "seasonal-or-dispensed-from-storage",
+
+          storageMethods: [
+            "protected-dry-head-storage",
+            "hanging-bundle-storage",
+            "rodent-resistant-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "fully-dry-clean-heads-stored-in-a-cool-dry-rodent-resistant-and-well-ventilated-location",
+
+          storageDurationCategory:
+            "moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-to-high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "dry-whole-head-storage",
+            "freezing-for-insect-control",
+            "later-threshing",
+            "immediate-enrichment-use"
+          ],
+
+          preservationLimitations: [
+            "Whole heads occupy more storage space than cleaned loose grain.",
+            "Grain intake is difficult to measure precisely.",
+            "Awns and chaff may increase handling irritation and poultry exposure.",
+            "Birds may waste grain by scattering kernels into litter or soil.",
+            "Heads may conceal mold, insects, Fusarium damage, or ergot more easily than cleaned grain.",
+            "Bundles must remain dry and protected from rodents.",
+            "Whole-head storage is less efficient than clean loose-grain storage."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "moderate-when-fully-dry-and-protected",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "lodging",
+            "shattering",
+            "grain-lost-during-cutting",
+            "rain-wetting-harvested-heads",
+            "hidden-mold",
+            "hidden-insects",
+            "rodent-damage",
+            "grain-scattered-by-chickens",
+            "uneaten-awned-stems-and-chaff"
+          ],
+
+          safetyWarnings: [
+            "Offer only fully mature, clean, sound, untreated Barley heads.",
+            "Never offer heads grown from chemically treated planting seed where residues or treated kernels may remain.",
+            "Inspect heads for mold, musty odor, Fusarium damage, unusual discoloration, ergot bodies, insects, rodent contamination, and chemical contamination.",
+            "Do not feed damp or heating bundles.",
+            "Awned varieties may scratch skin, eyes, nostrils, mouths, crops, or handling surfaces.",
+            "Remove or avoid heavily awned heads when irritation risk is significant.",
+            "Use gloves, long sleeves, eye protection, and respiratory protection when handling dusty awned bundles.",
+            "Avoid tying or hanging heads with loops, strings, wire, or netting that could entangle birds.",
+            "Do not hang bundles where chickens can become trapped or where heads obstruct ventilation or access.",
+            "Whole heads should remain a measured enrichment rather than unrestricted feed.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Whole-head feeding does not correct Barley's beta-glucans, fiber, amino-acid limitations, or low calcium.",
+            "Provide appropriately sized insoluble grit where birds consume intact grain."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confidently-inspect-grain-heads",
+            "has-no-dry-storage-area",
+            "has-severe-rodent-pressure",
+            "cannot-manage-awns-or-dust",
+            "requires-precise-feed-measurement",
+            "requires-low-waste-feeding",
+            "has-only-young-chicks",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+                {
+          id:
+            "short-sprouted-barley",
+
+          label:
+            "Short Sprouted Barley",
+
+          description:
+            "Clean, sound, untreated Barley grain is soaked, drained, germinated briefly under sanitary conditions, inspected, and offered promptly as a measured fresh supplement.",
+
+          primaryFeedRole:
+            "fresh-sprouted-grain-supplement",
+
+          harvestProducts: [
+            "short-barley-sprouts",
+            "germinated-barley-grain",
+            "sprouted-cereal-grain",
+            "fresh-seasonal-or-indoor-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-sprouts",
+            "measured-supplement",
+            "winter-green-supplement",
+            "indoor-produced-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-clean-untreated-grain",
+            "inspect",
+            "rinse",
+            "soak",
+            "drain",
+            "germinate",
+            "rinse-as-needed",
+            "inspect-before-feeding",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "sanitize-equipment",
+            "weigh-dry-seed",
+            "record-germination-time",
+            "chill-briefly-before-feeding"
+          ],
+
+          requiredEquipment: [
+            "clean-sprouting-container",
+            "safe-water-supply",
+            "effective-drainage"
+          ],
+
+          helpfulEquipment: [
+            "sprouting-jar",
+            "screened-lid",
+            "food-safe-tray",
+            "colander",
+            "thermometer",
+            "food-scale",
+            "clean-towels",
+            "sanitizing-supplies",
+            "refrigerator"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "repeatable-year-round",
+
+          storageMethods: [
+            "immediate-consumption",
+            "very-short-term-refrigeration"
+          ],
+
+          preferredStorageMethod:
+            "feed-promptly-after-final-inspection-and-draining",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate-daily-attention",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "very-short-term-refrigeration",
+            "staggered-small-batch-production"
+          ],
+
+          preservationLimitations: [
+            "Short sprouts are highly perishable.",
+            "Warm, wet grain can support rapid mold, yeast, and bacterial growth.",
+            "Sprouting increases wet weight primarily through absorbed water and does not create additional dry matter.",
+            "Some original grain dry matter is consumed during germination.",
+            "Poor-quality grain does not become safe through sprouting.",
+            "Treated seed, moldy grain, mycotoxin-contaminated grain, and chemically contaminated grain remain unsafe.",
+            "Sprouted Barley retains beta-glucans and does not become a complete poultry feed.",
+            "Dependable room-temperature storage after sprouting is not supported."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate-to-very-short",
+
+          likelyLossPoints: [
+            "poor-germination",
+            "over-soaking",
+            "standing-water",
+            "insufficient-drainage",
+            "excessive-temperature",
+            "mold",
+            "yeast-growth",
+            "bacterial-growth",
+            "sour-odor",
+            "slime",
+            "rodent-access",
+            "uneaten-wet-feed"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, sound, untreated Barley intended for food, feed, forage, or sprouting.",
+            "Never sprout chemically treated planting seed.",
+            "Do not sprout grain that is moldy, musty, heated, insect-damaged, rodent-contaminated, ergot-contaminated, or suspected of containing mycotoxins.",
+            "Sprouting does not neutralize chemical seed treatments, ergot alkaloids, or mycotoxins.",
+            "Use clean potable water.",
+            "Clean and sanitize sprouting containers between batches.",
+            "Maintain effective drainage and airflow.",
+            "Do not allow grain to remain submerged after soaking.",
+            "Discard any batch with visible mold, slime, sour odor, unusual discoloration, excessive heating, or poor-quality roots.",
+            "Do not feed sprouts that have contacted dirty surfaces, wild-bird droppings, rodents, insects, or unsafe chemicals.",
+            "Introduce sprouts gradually and offer measured portions.",
+            "Remove uneaten wet sprouts promptly.",
+            "Continue an age-appropriate complete poultry ration.",
+            "Monitor droppings and litter moisture because Barley beta-glucans remain present."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-maintain-daily-sanitation",
+            "has-no-clean-water",
+            "has-no-effective-drainage",
+            "cannot-control-temperature",
+            "cannot-inspect-each-batch",
+            "cannot-remove-wet-leftovers",
+            "requires-long-term-storage",
+            "requires-complete-feed-replacement",
+            "cannot-identify-treated-seed"
+          ]
+        },
+
+        {
+          id:
+            "hydroponic-barley-fodder",
+
+          label:
+            "Hydroponic Barley Fodder",
+
+          description:
+            "Clean, untreated Barley grain is germinated in shallow trays for several days until it forms a connected mat of shoots, roots, and remaining grain, then the fresh mat is inspected and offered in measured portions.",
+
+          primaryFeedRole:
+            "fresh-hydroponic-fodder-supplement",
+
+          harvestProducts: [
+            "barley-fodder-mat",
+            "young-barley-shoots",
+            "sprouted-grain-and-root-mat",
+            "indoor-fresh-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-fodder-mat",
+            "chopped-fodder",
+            "measured-supplement",
+            "winter-green-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-clean-untreated-grain",
+            "inspect",
+            "rinse",
+            "soak",
+            "drain",
+            "spread-in-shallow-tray",
+            "water-or-rinse-regularly",
+            "maintain-airflow",
+            "inspect-daily",
+            "harvest-mat",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "sanitize-seed-surface",
+            "sanitize-trays",
+            "weigh-dry-seed",
+            "measure-water-use",
+            "record-growing-temperature",
+            "chop-mat",
+            "stagger-tray-production"
+          ],
+
+          requiredEquipment: [
+            "food-safe-growing-trays",
+            "safe-water-supply",
+            "effective-drainage",
+            "well-ventilated-growing-area"
+          ],
+
+          helpfulEquipment: [
+            "tray-rack",
+            "catch-basin",
+            "thermometer",
+            "humidity-meter",
+            "fan",
+            "timer",
+            "food-scale",
+            "cleaning-brush",
+            "sanitizing-supplies",
+            "grow-light-where-natural-light-is-inadequate"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "staggered-year-round",
+
+          storageMethods: [
+            "immediate-consumption",
+            "very-short-term-refrigeration"
+          ],
+
+          preferredStorageMethod:
+            "harvest-and-feed-the-fresh-fodder-mat-promptly",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "high-daily-attention",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "very-short-term-refrigeration",
+            "staggered-tray-production"
+          ],
+
+          preservationLimitations: [
+            "Hydroponic fodder requires dependable daily labor, sanitation, drainage, airflow, water, and temperature management.",
+            "The large increase in harvested wet weight is primarily water absorbed by the seed and plant tissue.",
+            "Some original grain dry matter is lost through respiration during growth.",
+            "Fresh fodder is less energy-dense by weight than the original dry grain.",
+            "Fodder yield claims based only on wet weight can overstate actual feed production.",
+            "Root mats may become thick, sour, slimy, moldy, or difficult for chickens to tear apart.",
+            "Hydroponic fodder remains supplemental and does not replace a nutritionally complete ration.",
+            "No universal economic advantage is supported because equipment, seed, water, electricity, labor, sanitation losses, and dry-matter changes vary."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate-to-very-short",
+
+          likelyLossPoints: [
+            "poor-seed-germination",
+            "uneven-seed-depth",
+            "overcrowded-trays",
+            "standing-water",
+            "blocked-drainage",
+            "high-humidity",
+            "inadequate-airflow",
+            "excessive-temperature",
+            "mold",
+            "yeast",
+            "bacterial-spoilage",
+            "sour-root-mats",
+            "rodent-access",
+            "uneaten-fodder"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, sound, untreated Barley intended for food, feed, forage, or fodder production.",
+            "Never use chemically treated planting seed.",
+            "Do not use grain suspected of mold, ergot, Fusarium, mycotoxins, chemical contamination, insect damage, or rodent contamination.",
+            "Hydroponic growth does not neutralize toxins or chemical seed treatments.",
+            "Use potable water and clean food-safe trays.",
+            "Clean and sanitize all trays, racks, drains, tools, and collection surfaces between batches.",
+            "Maintain continuous drainage and adequate airflow.",
+            "Do not grow fodder in excessively warm, stagnant, or humid conditions.",
+            "Discard the entire mat when mold, slime, sour odor, unusual heating, blackened roots, or deterioration is present.",
+            "Do not remove only the visibly affected portion of a contaminated mat and feed the remainder.",
+            "Cut thick mats into manageable pieces to reduce waste and crop-impaction concerns.",
+            "Remove uneaten wet fodder promptly.",
+            "Introduce fodder gradually.",
+            "Continue an age-appropriate complete feed.",
+            "Monitor droppings, litter moisture, body condition, egg production, and complete-feed intake."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-provide-daily-labor",
+            "cannot-maintain-sanitation",
+            "has-no-effective-drainage",
+            "has-no-airflow-control",
+            "has-no-temperature-control",
+            "has-no-clean-water",
+            "cannot-discard-failed-batches",
+            "requires-low-moisture-feed",
+            "requires-maximum-dry-matter-efficiency",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+        {
+          id:
+            "fresh-green-barley-chop",
+
+          label:
+            "Fresh Green Barley Chop",
+
+          description:
+            "Young, healthy Barley foliage is cut before it becomes excessively coarse, inspected, optionally chopped, and offered promptly as a measured fresh seasonal supplement.",
+
+          primaryFeedRole:
+            "fresh-cut-green-forage",
+
+          harvestProducts: [
+            "young-barley-leaves",
+            "tender-barley-shoots",
+            "fresh-cereal-forage",
+            "green-chop"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-green-supplement",
+            "chopped-forage",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-young-vegetative-growth",
+            "inspect",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "wash",
+            "mix-with-other-safe-greens",
+            "offer-in-forage-rack"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-shears",
+            "sickle",
+            "harvest-basket",
+            "forage-rack",
+            "food-scale",
+            "safe-chopper"
+          ],
+
+          harvestPattern:
+            "minor-to-repeated",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [
+            "immediate-consumption",
+            "very-short-term-refrigeration"
+          ],
+
+          preferredStorageMethod:
+            "feed-promptly-after-cutting",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "very-short-term-refrigeration"
+          ],
+
+          preservationLimitations: [
+            "Fresh Barley foliage has very poor storage value.",
+            "Repeated cutting can reduce root reserves, tillering, stem growth, heading, and grain yield.",
+            "Older stems become coarse and less suitable for poultry consumption.",
+            "Fresh forage contains much more water and less concentrated energy than mature grain.",
+            "Cut foliage should not be piled where it can heat or mold.",
+            "This pathway is supplemental and does not provide a complete diet."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "wilting",
+            "heating-in-piles",
+            "mold",
+            "excessively-mature-stems",
+            "grain-yield-reduction",
+            "spillage",
+            "uneaten-fibrous-material"
+          ],
+
+          safetyWarnings: [
+            "Offer only correctly identified, clean, healthy Barley foliage.",
+            "Do not feed foliage treated with products that do not permit poultry or feed use.",
+            "Do not harvest from areas contaminated by manure runoff, floodwater, chemicals, roadside pollutants, or unsafe irrigation water.",
+            "Avoid moldy, slimy, diseased, rusty, or badly insect-damaged foliage.",
+            "Do not allow cut forage to heat in compact piles.",
+            "Cut or chop long coarse stems where necessary to reduce waste and entanglement.",
+            "Do not use fresh Barley forage as the sole feed.",
+            "Continue providing an age-appropriate complete ration.",
+            "Introduce fresh forage gradually.",
+            "Remove uneaten wet material before it spoils.",
+            "Repeated cutting may eliminate the later grain harvest."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-maximum-grain-yield",
+            "requires-long-term-storage",
+            "cannot-remove-wet-leftovers",
+            "requires-high-energy-dry-feed",
+            "requires-complete-feed-replacement",
+            "cannot-identify-recent-chemical-applications"
+          ]
+        },
+
+        {
+          id:
+            "protected-living-barley-forage",
+
+          label:
+            "Protected Living Barley Forage",
+
+          description:
+            "Barley is established beneath a forage frame, grazing screen, or similar protective structure so chickens can peck emerging leaves while roots and growing crowns remain partly protected from scratching and uprooting.",
+
+          primaryFeedRole:
+            "protected-living-green-forage",
+
+          harvestProducts: [
+            "living-barley-shoots",
+            "forage-frame-greens",
+            "protected-seasonal-forage",
+            "pecking-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "forage-frame",
+            "grazing-screen",
+            "protected-living-forage",
+            "controlled-pecking-access"
+          ],
+
+          requiredProcessingTasks: [
+            "prepare-growing-area",
+            "seed-densely",
+            "water",
+            "protect-seed-and-roots",
+            "allow-establishment",
+            "manage-flock-access"
+          ],
+
+          optionalProcessingTasks: [
+            "rotate-access",
+            "reseed-bare-areas",
+            "move-portable-frame",
+            "trim-overmature-growth",
+            "exclude-flock-during-recovery"
+          ],
+
+          requiredEquipment: [
+            "protective-forage-frame-or-grazing-screen"
+          ],
+
+          helpfulEquipment: [
+            "raised-bed-frame",
+            "hardware-cloth",
+            "portable-fencing",
+            "irrigation-hose",
+            "watering-can",
+            "mulch-for-surrounding-paths"
+          ],
+
+          harvestPattern:
+            "continuous-protected",
+
+          harvestFrequencyCategory:
+            "seasonal-repeated",
+
+          storageMethods: [
+            "living-growing-bed",
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "maintain-as-a-living-protected-planting",
+
+          storageDurationCategory:
+            "living-seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "moderate-establishment-and-maintenance",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "continued-living-growth",
+            "rotational-recovery",
+            "seasonal-reseeding"
+          ],
+
+          preservationLimitations: [
+            "The quantity consumed cannot be measured precisely.",
+            "Heavy flock pressure can remove leaves faster than the plants recover.",
+            "Poorly designed screens may allow chickens to uproot seedlings or compact soil.",
+            "Dense plantings require adequate water, drainage, fertility, and airflow.",
+            "The crop may fail during extreme heat, drought, waterlogging, or severe winter conditions.",
+            "This pathway prioritizes forage and enrichment rather than mature grain harvest.",
+            "Living forage cannot replace complete poultry feed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "living-seasonal",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "seed-consumed-before-establishment",
+            "seedling-uprooting",
+            "overgrazing",
+            "soil-compaction",
+            "poor-drainage",
+            "drought",
+            "heat-stress",
+            "winterkill",
+            "frame-damage",
+            "uneven-access"
+          ],
+
+          safetyWarnings: [
+            "Use untreated Barley seed.",
+            "Protect seed and young roots from direct poultry access until adequately established.",
+            "Ensure wire, hardware cloth, fasteners, wood edges, and frames cannot cut, trap, or entangle birds.",
+            "Do not use netting that may wrap around feet, legs, wings, or necks.",
+            "Keep the frame height appropriate so birds can reach foliage without becoming trapped.",
+            "Do not allow manure accumulation to create unsanitary conditions around the growing bed.",
+            "Avoid waterlogged soil and standing water.",
+            "Do not apply unsafe pesticides, herbicides, fertilizers, or soil amendments where chickens have access.",
+            "Remove diseased, moldy, or contaminated growth.",
+            "Continue complete poultry feed and clean water.",
+            "Treat living forage as enrichment and supplemental greens rather than a measurable ration ingredient."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-secure-forage-frame",
+            "cannot-protect-seedlings",
+            "has-severely-waterlogged-soil",
+            "cannot-rotate-or-rest-forage",
+            "requires-precise-feed-measurement",
+            "requires-maximum-grain-production",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+        {
+          id:
+            "postharvest-barley-gleaning",
+
+          label:
+            "Postharvest Barley Gleaning",
+
+          description:
+            "After the main Barley harvest is complete, chickens receive controlled access to a cleaned field or bed to search for scattered sound kernels, remaining grain heads, tender regrowth, and insects.",
+
+          primaryFeedRole:
+            "postharvest-grain-and-foraging-enrichment",
+
+          harvestProducts: [
+            "scattered-barley-kernels",
+            "remaining-grain-heads",
+            "tender-regrowth",
+            "postharvest-insects",
+            "foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "controlled-grazing",
+            "rotational-paddock",
+            "postharvest-cleanup",
+            "supervised-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-harvest",
+            "remove-unsafe-material",
+            "inspect-field",
+            "control-flock-access"
+          ],
+
+          optionalProcessingTasks: [
+            "remove-or-chop-long-straw",
+            "remove-wire-and-twine",
+            "temporarily-fence-area",
+            "limit-access-duration",
+            "rake-heavy-residue"
+          ],
+
+          requiredEquipment: [
+            "secure-boundary-or-supervision"
+          ],
+
+          helpfulEquipment: [
+            "temporary-fencing",
+            "portable-poultry-netting",
+            "mobile-waterer",
+            "shade",
+            "rake",
+            "portable-shelter"
+          ],
+
+          harvestPattern:
+            "cleanup",
+
+          harvestFrequencyCategory:
+            "single-short-seasonal-period",
+
+          storageMethods: [
+            "standing-field-residue",
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-controlled-foraging"
+          ],
+
+          preservationLimitations: [
+            "The amount of grain and forage consumed cannot be measured precisely.",
+            "The pathway is brief and seasonal.",
+            "Wet, moldy, sprouted, diseased, ergot-contaminated, or chemically contaminated material must be removed before access.",
+            "Postharvest birds may disturb soil, remove residue, compact wet ground, and affect the following crop.",
+            "This pathway does not replace harvested and stored grain.",
+            "Remaining whole heads may expose birds to awns and chaff."
+          ],
+
+          estimatedShelfLifeCategory:
+            "immediate",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate",
+
+          likelyLossPoints: [
+            "unharvested-grain-consumed",
+            "soil-disturbance",
+            "soil-compaction",
+            "residue-removal",
+            "predator-exposure",
+            "moldy-residue-consumption",
+            "awn-exposure",
+            "unmeasured-feed-consumption"
+          ],
+
+          safetyWarnings: [
+            "Remove chemically treated seed, pesticide containers, netting, wire, twine, plastic, sharp stakes, machinery, and hazardous equipment before flock access.",
+            "Do not allow chickens to consume moldy, musty, sprouted, Fusarium-damaged, ergot-contaminated, or otherwise questionable grain.",
+            "Exclude birds from areas recently treated with chemicals that do not permit poultry access.",
+            "Inspect awned heads and coarse straw for injury risk.",
+            "Provide clean water, shade, shelter, and predator protection.",
+            "Avoid access when soil is saturated and vulnerable to compaction.",
+            "Supervise access where fencing is incomplete.",
+            "Postharvest gleaning is supplemental and nutritionally unpredictable.",
+            "Continue providing complete poultry feed.",
+            "Do not use this pathway where soil, crop residue, irrigation water, or floodwater may be contaminated."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-secure-outdoor-area",
+            "cannot-supervise-flock-access",
+            "requires-precise-feed-measurement",
+            "has-recently-treated-crop-area",
+            "cannot-remove-hazardous-material",
+            "cannot-inspect-for-mold-or-ergot",
+            "requires-year-round-feed"
+          ]
+        },
+
+        {
+          id:
+            "barley-cover-crop-and-residue",
+
+          label:
+            "Barley Cover Crop and Residue",
+
+          description:
+            "Barley is grown primarily for rapid cool-season soil cover, erosion control, weed suppression, residual-nitrogen capture, biomass, mulch, compost carbon, rotation value, or bedding straw rather than chiefly for poultry grain.",
+
+          primaryFeedRole:
+            "indirect-soil-cover-and-biomass-support",
+
+          harvestProducts: [
+            "living-cover-crop",
+            "barley-biomass",
+            "straw",
+            "surface-mulch",
+            "compost-carbon",
+            "root-residue"
+          ],
+
+          suitableFeedingMethods: [
+            "non-feed-soil-improvement",
+            "cover-cropping",
+            "mulch-production",
+            "compost-production",
+            "bedding-production",
+            "crop-rotation"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-cover-crop",
+            "manage-growth",
+            "terminate-or-harvest",
+            "manage-residue"
+          ],
+
+          optionalProcessingTasks: [
+            "mow",
+            "crimp",
+            "cut-and-drop",
+            "incorporate",
+            "dry-for-straw",
+            "bale-or-bundle",
+            "chop-for-compost",
+            "mix-with-legume-cover-crop"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "mower",
+            "scythe",
+            "sickle",
+            "roller-crimper",
+            "rake",
+            "garden-fork",
+            "broadfork",
+            "tiller",
+            "straw-baling-or-bundling-equipment",
+            "compost-system"
+          ],
+
+          harvestPattern:
+            "soil-building-and-biomass",
+
+          harvestFrequencyCategory:
+            "single-seasonal-termination-or-harvest",
+
+          storageMethods: [
+            "living-cover-crop",
+            "surface-residue",
+            "soil-incorporation",
+            "dry-straw-storage",
+            "composting"
+          ],
+
+          preferredStorageMethod:
+            "retain-residue-in-the-production-system-or-store-only-clean-fully-dry-straw",
+
+          storageDurationCategory:
+            "seasonal-to-long-for-dry-straw",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            0,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            2,
+
+          preservationOptions: [
+            "surface-mulch",
+            "soil-incorporation",
+            "composting",
+            "cut-and-drop",
+            "dry-straw-storage",
+            "bedding-use",
+            "rotation-residue"
+          ],
+
+          preservationLimitations: [
+            "This pathway is primarily agronomic rather than a direct poultry-feed pathway.",
+            "Barley captures residual soil nitrogen but does not fix atmospheric nitrogen.",
+            "Terminating very early reduces biomass production.",
+            "Terminating very late may increase soil-moisture use, lodging, disease, volunteer grain, and difficulty planting the next crop.",
+            "Removing straw exports biomass and nutrients that would otherwise remain in the soil.",
+            "Wet straw can heat, mold, attract rodents, and become unsuitable for bedding.",
+            "Awned straw or unthreshed heads may irritate birds and handlers.",
+            "Diseased or mycotoxin-contaminated residue may require removal rather than reuse."
+          ],
+
+          estimatedShelfLifeCategory:
+            "seasonal-or-long-when-straw-is-clean-and-dry",
+
+          shelfLifeAfterProcessingCategory:
+            "variable-by-residue-use",
+
+          likelyLossPoints: [
+            "poor-establishment",
+            "waterlogging",
+            "winterkill",
+            "drought",
+            "late-termination",
+            "excessive-soil-moisture-use",
+            "lodging",
+            "disease",
+            "volunteer-grain",
+            "wet-straw-storage",
+            "mold",
+            "rodent-nesting",
+            "biomass-removal"
+          ],
+
+          safetyWarnings: [
+            "Do not treat the soil-building pathway as a direct complete-feed recommendation.",
+            "Use untreated seed where chickens may later contact or consume plants or grain.",
+            "Do not use moldy, musty, Fusarium-damaged, ergot-contaminated, or chemically contaminated straw as poultry bedding.",
+            "Store straw only when fully dry and protect it from rain, condensation, rodents, and fire.",
+            "Inspect stored straw regularly for heating, mold, insects, rodents, and moisture.",
+            "Avoid heavily awned or sharp material where it may injure birds.",
+            "Do not use dusty or moldy straw in enclosed poultry housing.",
+            "Manage airborne dust during cutting, threshing, chopping, and bedding placement.",
+            "Terminate the cover crop before unwanted volunteer grain becomes a problem.",
+            "Do not incorporate diseased residue where doing so would increase disease pressure in the following crop.",
+            "Allow adequate time for heavy residue to decompose before planting small-seeded crops.",
+            "Maintain ventilation when Barley straw is used as bedding."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-feed-only-crops",
+            "requires-immediate-grain-harvest",
+            "cannot-manage-cover-crop-termination",
+            "cannot-store-straw-dry",
+            "has-severe-cereal-disease-pressure",
+            "requires-nitrogen-fixation",
+            "requires-permanent-ground-cover"
+          ]
+        },
+
+              ],
+
+      dataQuality: {
+        overallConfidenceScore:
+          93,
+
+        researchCompletenessScore:
+          94,
+
+        poultrySpecificEvidenceScore:
+          90,
+
+        agronomicEvidenceScore:
+          97,
+
+        nutritionEvidenceScore:
+          94,
+
+        plannerReliabilityScore:
+          93,
+
+        estimatedUnknownFieldPercent:
+          8,
+
+        usesProfessionalJudgment:
+          true,
+
+        containsNullValues:
+          true,
+
+        nullValuesRequireFutureResearch: [
+          "Minimum useful backyard planting area",
+          "Preferred production area for different flock sizes",
+          "Backyard cleaned-Barley yield per square foot",
+          "Backyard cleaned-grain yield per plant",
+          "Estimated hand-processing minutes per pound",
+          "Estimated threshing and de-awning waste percentages",
+          "Verified storage duration under varied backyard humidity and temperature",
+          "Universal poultry inclusion percentage",
+          "Cultivar-specific beta-glucan concentrations",
+          "Cultivar-specific digestible amino-acid values",
+          "Hull-loss percentages for covered Barley",
+          "Household feed-cost savings",
+          "Reliable complete-feed displacement per 100 square feet",
+          "Regional winter survival of autumn-planted varieties",
+          "Small-scale mechanical processing efficiency",
+          "Hydroponic-fodder dry-matter recovery under backyard conditions",
+          "Short-sprout sanitation failure rates under household conditions"
+        ],
+
+        majorInformationSources: [
+          "Feedipedia Barley grain feed profile and nutrient tables",
+          "Feedipedia Barley forage profile",
+          "USDA Natural Resources Conservation Service Barley plant and cover-crop guidance",
+          "University of Minnesota Extension Barley production guidance",
+          "Oregon State University Barley World educational resources",
+          "Land-grant university small-grain production and disease-management guidance",
+          "Peer-reviewed poultry-feeding research involving Barley and beta-glucanase enzymes",
+          "Veterinary poultry-nutrition guidance concerning complete diets, intestinal viscosity, and essential nutrients",
+          "Small-grain harvest, grain-storage, sprouting, fodder, and postharvest literature"
+        ],
+
+        plannerNotes: [
+          "Barley should be classified as a cool-season energy-oriented cereal grain with important forage, cover-crop, straw, sprouting, and household-food pathways.",
+          "The planner must distinguish spring, winter, and facultative Barley because planting season, winter survival, maturity, and regional suitability differ.",
+          "The planner must distinguish covered and hull-less Barley because hull fiber affects poultry energy value and processing requirements.",
+          "The planner must distinguish two-row and six-row types where variety or end use makes the distinction relevant.",
+          "Barley generally supplies less usable poultry energy than Corn because of hull fiber and beta-glucans.",
+          "Beta-glucans can increase intestinal viscosity and may contribute to sticky droppings, wet litter, dirty eggs, and reduced nutrient use.",
+          "Suitable enzyme products may improve Barley utilization in professionally formulated poultry rations but do not make an otherwise unbalanced ration complete.",
+          "The planner must not recommend a universal backyard inclusion percentage.",
+          "Barley is not a complete protein source and does not provide sufficient calcium for laying hens.",
+          "The planner must distinguish whole dry grain, cracked grain, ground ration ingredient, mature heads, short sprouts, hydroponic fodder, fresh green chop, protected living forage, postharvest gleaning, and cover-crop or residue use.",
+          "Sprouted grain and hydroponic fodder must be evaluated on dry matter rather than wet weight alone.",
+          "Sprouting increases water content and harvested wet weight but does not create additional feed dry matter.",
+          "Some original seed dry matter is lost through respiration during germination.",
+          "Hydroponic fodder requires strict sanitation, drainage, airflow, temperature control, and batch inspection.",
+          "Treated planting seed must never be recommended for poultry, sprouts, fodder, or household food.",
+          "Moldy, ergot-contaminated, Fusarium-damaged, chemically contaminated, or mycotoxin-suspect Barley must not be recommended for feeding.",
+          "Backyard yield, processing efficiency, storage duration, and economic savings remain null where credible direct evidence is unavailable.",
+          "Commercial yield-per-acre values should not be converted into guaranteed backyard yields.",
+          "Barley provides strong planner value for cool-season soil cover, erosion control, weed suppression, residual-nitrogen capture, straw, and rotation.",
+          "Barley captures residual soil nitrogen but does not fix atmospheric nitrogen.",
+          "Winter Barley should receive strong regional penalties where winter survival is unreliable.",
+          "Spring Barley should receive penalties where heading and grain filling occur during severe heat.",
+          "Whole grain generally provides better long-term storage efficiency than cracked or ground Barley.",
+          "Whole mature heads reduce threshing labor but increase storage space, awn exposure, waste, and uncertainty in feed intake."
+        ],
+
+        supportedGeneralizations: [
+          "Barley is a cool-season annual cereal grain.",
+          "Spring, winter, and facultative Barley types are available.",
+          "Two-row and six-row Barley types are available.",
+          "Covered and hull-less Barley types are available.",
+          "Barley establishes rapidly in suitable cool soil.",
+          "Barley performs best in well-drained soil.",
+          "Barley is vulnerable to saturated and waterlogged conditions.",
+          "Early spring planting helps Barley complete heading and grain filling before severe summer heat.",
+          "Winter Barley can provide autumn and winter soil cover where locally adapted varieties survive.",
+          "Winter Barley is generally less winter-hardy than winter Wheat or Cereal Rye.",
+          "Barley can provide mature grain, young forage, straw, cover-crop biomass, root residue, sprouts, fodder, and postharvest gleaning value.",
+          "Mature Barley grain is primarily an energy and starch ingredient rather than a primary protein crop.",
+          "Covered Barley contains substantial hull fiber.",
+          "Hull-less Barley may provide higher usable poultry energy than covered Barley.",
+          "Barley beta-glucans can reduce nutrient use in poultry.",
+          "Barley beta-glucans can contribute to sticky droppings and wet litter.",
+          "Commercial poultry diets containing substantial Barley may use beta-glucanase enzymes.",
+          "Enzyme use must be integrated into a complete ration formulation.",
+          "Barley cannot replace a balanced complete poultry ration by itself.",
+          "Barley does not supply sufficient calcium for laying hens.",
+          "Whole clean dry Barley can be stored for later use when adequately dried and protected.",
+          "Whole grain generally retains storage quality better than Barley ground far in advance.",
+          "Sprouting does not neutralize chemical seed treatments, ergot alkaloids, or mycotoxins.",
+          "Hydroponic fodder gains substantial wet weight through water absorption.",
+          "Hydroponic fodder may contain less dry matter than the original seed after respiratory losses.",
+          "Barley can provide rapid soil cover and weed suppression.",
+          "Barley can capture residual soil nitrogen.",
+          "Barley does not fix atmospheric nitrogen.",
+          "Barley straw can provide bedding, mulch, or compost carbon when clean and dry.",
+          "Barley has household-food and malting potential when suitable varieties and processing methods are used."
+        ],
+
+        derivedPlannerValues: [
+          "Climate suitability scores",
+          "Regional winter-survival scores",
+          "Spring-versus-winter planting suitability",
+          "Heat-avoidance scores",
+          "Site suitability scores",
+          "Soil texture scores",
+          "Drainage sensitivity scores",
+          "Water-management scores",
+          "Space-type suitability scores",
+          "Labor-difficulty scores",
+          "Cost-level classifications",
+          "Goal-matching scores",
+          "Wildlife-risk scores",
+          "Disease-risk scores",
+          "Lodging-risk scores",
+          "Storage-risk scores",
+          "Beta-glucan risk scores",
+          "Use-path suitability scores",
+          "Beginner-friendliness scores",
+          "Storage-value scores",
+          "Self-reliance scores",
+          "Cover-crop value scores",
+          "Production-reliability score"
+        ],
+
+        uncertainValues: [
+          "Backyard cleaned-grain yield per square foot",
+          "Minimum useful planting area",
+          "Useful production area by flock size",
+          "Exact winter survival by region and cultivar",
+          "Exact cultivar maturity outside published production regions",
+          "Exact backyard storage life",
+          "Exact safe poultry inclusion rate",
+          "Exact beta-glucan concentration of a homegrown grain lot",
+          "Exact effect of home cracking or grinding on feed intake",
+          "Exact difference in poultry value between covered and hull-less backyard-grown Barley",
+          "Exact fresh-forage intake by chickens",
+          "Exact hydroponic-fodder dry-matter recovery",
+          "Exact short-sprout sanitation risk under household conditions",
+          "Backyard labor per pound",
+          "Economic return on labor",
+          "Feed-cost displacement",
+          "Small-scale de-awning efficiency",
+          "Whole-head feeding waste percentage"
+        ],
+
+        missingData: [
+          "Verified backyard cleaned-Barley yield per 100 square feet",
+          "Verified hand-threshing time per pound",
+          "Verified small-scale de-awning time per pound",
+          "Verified backyard drying-loss percentage",
+          "Verified storage-loss percentage",
+          "Cultivar-specific poultry nutrient tables",
+          "Cultivar-specific beta-glucan measurements",
+          "Backyard-flock trials comparing whole, cracked, and ground Barley",
+          "Validated small-flock inclusion recommendations",
+          "Regional backyard trials comparing spring and winter Barley",
+          "Small-flock studies comparing covered and hull-less Barley",
+          "Reliable poultry intake data for fresh Barley forage",
+          "Reliable dry-matter conversion data for household hydroponic Barley fodder",
+          "Household sprouting contamination and failure-rate data",
+          "Verified whole-head enrichment consumption and waste data"
+        ],
+
+        notes: [
+          "Agronomic evidence for Barley is very strong.",
+          "General livestock and poultry-feed evidence for mature Barley grain is substantial.",
+          "Poultry evidence clearly supports the importance of beta-glucans, hull fiber, ration balance, and enzyme use in formulated diets.",
+          "Backyard-chicken-specific yield, processing, whole-head, sprouting, fodder, and economic evidence remains limited.",
+          "Planner scores combine direct evidence with clearly identified professional judgment.",
+          "Unknown quantitative values remain null rather than being inferred from commercial acreage or promotional fodder claims.",
+          "Wet-weight fodder gains are not treated as equivalent dry-matter gains.",
+          "No universal poultry inclusion percentage has been inferred.",
+          "No claim is made that homegrown Barley can replace complete commercial feed pound for pound.",
+          "This record is production-ready for planner comparison but should continue to be refined as cultivar-specific and backyard-scale research becomes available."
+        ]
+      },
+
+      templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Backyard Barley grain-yield trials",
+          "Regional spring-versus-winter cultivar comparisons",
+          "Winter-survival trials for autumn-planted Barley",
+          "Hull-less-versus-covered Barley poultry comparisons",
+          "Cultivar-specific beta-glucan measurements",
+          "Cultivar-specific digestible amino-acid values",
+          "Small-flock Barley feeding trials",
+          "Whole-versus-cracked Barley intake studies",
+          "Ground-Barley particle-size research for backyard flocks",
+          "Whole mature Barley-head enrichment trials",
+          "Fresh Barley-forage poultry research",
+          "Protected-forage-frame production trials",
+          "Hydroponic Barley-fodder dry-matter studies",
+          "Household-scale sprouting sanitation studies",
+          "Backyard threshing and de-awning efficiency",
+          "Storage losses under humid household conditions",
+          "Mycotoxin risk under small-scale harvest and storage conditions",
+          "Feed-cost savings by flock size"
+        ],
+
+        lastReviewed:
+          "2026-07-20",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "No hydroponic-fodder wet-weight claim has been treated as an equivalent increase in dry feed.",
+          "Barley remains a supplemental grain, forage, enrichment, cover crop, or formulated ration ingredient rather than a complete feed.",
+          "The planner should preserve separate recommendations for whole grain, cracked grain, ground ration use, whole heads, sprouts, fodder, fresh forage, living forage, gleaning, and cover-crop residue."
+        ]
+      }
+    }
   }
 };
+
