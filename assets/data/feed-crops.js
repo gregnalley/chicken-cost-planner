@@ -40065,6 +40065,522 @@ usePaths: [
         }
       },
 
+            space: {
+        minimumPracticalAreaSqFt:
+          100,
+
+        preferredMinimumAreaSqFt:
+          500,
+
+        idealProductionAreaSqFt:
+          null,
+
+        containerSuitable:
+          false,
+
+        raisedBedSuitable:
+          true,
+
+        inGroundSuitable:
+          true,
+
+        openFieldSuitable:
+          true,
+
+        orchardSuitable:
+          false,
+
+        hedgerowSuitable:
+          false,
+
+        rotationalPaddockSuitable:
+          false,
+
+        unusedLawnSuitable:
+          false,
+
+        verticalGrowingSuitable:
+          false,
+
+        permanentSpaceRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true,
+
+        rowPlantingPreferred:
+          true,
+
+        blockPlantingPreferred:
+          true,
+
+        trellisRequired:
+          false,
+
+        supportStructureRequired:
+          false,
+
+        vineSpreadRequired:
+          false,
+
+        undergroundSpreadRisk:
+          false,
+
+        selfSeedingRisk:
+          true,
+
+        matureHeightFtMinimum:
+          2,
+
+        matureHeightFtMaximum:
+          5,
+
+        spacingInchesMinimum:
+          2,
+
+        spacingInchesMaximum:
+          6,
+
+        rowSpacingInchesMinimum:
+          15,
+
+        rowSpacingInchesMaximum:
+          30,
+
+        spaceEfficiencyScore:
+          3,
+
+        smallSpaceSuitabilityScore:
+          2,
+
+        largePlotSuitabilityScore:
+          5,
+
+        directFacts: {
+          bestProductionLayout:
+            "rows-or-blocks",
+
+          bestUseOfSpace:
+            "dedicated-seasonal-feed-plot",
+
+          cropDiesAfterSeason:
+            true,
+
+          interferesWithStructures:
+            false,
+
+          suitableNearFoundations:
+            true,
+
+          notes: [
+            "Soybeans are most useful for poultry-feed production when grown in dedicated rows or blocks.",
+            "Small plantings can produce seasonal treats, but meaningful dry-grain production generally requires more area.",
+            "Plants are annual and can be removed completely after harvest.",
+            "Soybeans do not require trellising under normal backyard production.",
+            "The crop does not spread through rhizomes or permanent underground structures.",
+            "Close spacing may improve canopy closure, while excessive crowding may reduce airflow and pod development."
+          ]
+        }
+      },
+
+      flock: {
+        minimumRecommendedFlockSize:
+          1,
+
+        maximumPracticalFlockSize:
+          null,
+
+        bestFlockSizeCategory:
+          "small-to-large",
+
+        scalesWellForLargerFlocks:
+          true,
+
+        suitableForChicks:
+          false,
+
+        suitableForJuveniles:
+          false,
+
+        suitableForAdultLayers:
+          true,
+
+        suitableForAdultMeatBirds:
+          true,
+
+        suitableForBreedingFlocks:
+          true,
+
+        suitableForMixedAdultFlocks:
+          true,
+
+        freeChoiceFeedingSuitable:
+          false,
+
+        measuredSupplementRequired:
+          true,
+
+        completeFeedReplacementSuitable:
+          false,
+
+        processingKnowledgeRequired:
+          true,
+
+        rationFormulationKnowledgeRequired:
+          true,
+
+        flockConsumptionEfficiencyScore:
+          5,
+
+        smallFlockSuitabilityScore:
+          3,
+
+        largeFlockSuitabilityScore:
+          5,
+
+        directFacts: {
+          adultBirdUsePreferred:
+            true,
+
+          rawWholeBeansSuitable:
+            false,
+
+          processedIngredientUsePreferred:
+            true,
+
+          requiresBalancedRation:
+            true,
+
+          notes: [
+            "Properly processed soybeans are suitable for adult poultry when incorporated into a balanced ration.",
+            "Raw mature soybeans should not be offered as routine poultry feed.",
+            "Soybeans are not a complete ration by themselves.",
+            "Measured use is required because protein, energy, amino-acid balance, minerals, and vitamins must be considered together.",
+            "Young chicks should not be used as the test population for home-processed soybeans.",
+            "The crop becomes more practical as flock size and dedicated feed-production area increase."
+          ]
+        }
+      },
+
+      labor: {
+        establishmentLaborScore:
+          3,
+
+        seasonalMaintenanceLaborScore:
+          3,
+
+        harvestLaborScore:
+          4,
+
+        processingLaborScore:
+          5,
+
+        storageLaborScore:
+          4,
+
+        totalLaborDemandScore:
+          5,
+
+        routinePruningRequired:
+          false,
+
+        repeatedHarvestRequired:
+          false,
+
+        handHarvestPossible:
+          true,
+
+        mechanicalHarvestPossible:
+          true,
+
+        dryingRequired:
+          true,
+
+        shellingRequired:
+          true,
+
+        threshingRequired:
+          true,
+
+        cleaningRequired:
+          true,
+
+        heatProcessingRequired:
+          true,
+
+        grindingOptional:
+          true,
+
+        carefulMeasurementRequired:
+          true,
+
+        specializedEquipmentHelpful:
+          true,
+
+        beginnerLaborSuitabilityScore:
+          2,
+
+        experiencedGrowerSuitabilityScore:
+          5,
+
+        directFacts: {
+          highestLaborStage:
+            "postharvest-processing",
+
+          lowLaborWhileGrowing:
+            true,
+
+          processingCannotBeSkippedForFeed:
+            true,
+
+          notes: [
+            "Field maintenance is moderate after establishment and early weed control.",
+            "Harvesting, shelling, drying, cleaning, and safe heat processing create the largest labor burden.",
+            "Whole dry beans may be stored before final heat processing.",
+            "Processing small batches may be more practical than processing the entire harvest at once.",
+            "Users must be willing to reject damaged, moldy, improperly dried, or inadequately processed beans.",
+            "Soybeans should receive a substantial labor penalty when a user requests minimal processing."
+          ]
+        }
+      },
+
+      cost: {
+        seedCostLevel:
+          "low-to-moderate",
+
+        establishmentCostLevel:
+          "low",
+
+        annualInputCostLevel:
+          "moderate",
+
+        irrigationCostLevel:
+          "moderate",
+
+        fertilizerCostLevel:
+          "low",
+
+        inoculantCostLevel:
+          "low",
+
+        harvestEquipmentCostLevel:
+          "moderate",
+
+        processingEquipmentCostLevel:
+          "high",
+
+        storageEquipmentCostLevel:
+          "moderate",
+
+        fencingCostLevel:
+          "site-dependent",
+
+        potentialFeedCostReductionScore:
+          5,
+
+        economicEfficiencyScore:
+          null,
+
+        smallScaleEconomicValueScore:
+          2,
+
+        largeScaleEconomicValueScore:
+          5,
+
+        householdFoodValueScore:
+          4,
+
+        seedSavingValueScore:
+          4,
+
+        requiresAnnualReplanting:
+          true,
+
+        commercialEquivalentReadilyAvailable:
+          true,
+
+        directFacts: {
+          primaryEconomicBenefit:
+            "homegrown-protein-production",
+
+          processingCostImportant:
+            true,
+
+          scaleStronglyAffectsValue:
+            true,
+
+          notes: [
+            "Seed and basic crop-establishment costs are generally modest.",
+            "Safe postharvest processing equipment may cost more than the crop-establishment materials.",
+            "Soybeans become more economically attractive when grown at sufficient scale.",
+            "Commercial soybean meal is readily available and may cost less than small-scale home production.",
+            "Homegrown value may include feed independence, rotation benefits, household food, seed saving, and reduced reliance on purchased protein.",
+            "Reliable backyard cost-per-pound figures remain unavailable."
+          ]
+        }
+      },
+
+      risks: {
+        overallRiskScore:
+          5,
+
+        feedingSafetyRiskScore:
+          5,
+
+        processingFailureRiskScore:
+          5,
+
+        moldRiskScore:
+          4,
+
+        storagePestRiskScore:
+          4,
+
+        rodentRiskScore:
+          4,
+
+        wildlifeDamageRiskScore:
+          4,
+
+        deerBrowsingRiskScore:
+          5,
+
+        diseaseRiskScore:
+          4,
+
+        insectRiskScore:
+          4,
+
+        droughtYieldRiskScore:
+          4,
+
+        waterloggingRiskScore:
+          5,
+
+        frostRiskScore:
+          5,
+
+        lodgingRiskScore:
+          2,
+
+        podShatterRiskScore:
+          3,
+
+        chemicalSeedTreatmentRiskScore:
+          5,
+
+        invasiveSpreadRiskScore:
+          1,
+
+        permanentPlacementRiskScore:
+          1,
+
+        directFacts: {
+          rawSeedHazard:
+            true,
+
+          inadequateHeatProcessingHazard:
+            true,
+
+          moldySeedHazard:
+            true,
+
+          chemicallyTreatedSeedHazard:
+            true,
+
+          wildlifeProtectionMayBeRequired:
+            true,
+
+          notes: [
+            "Raw mature soybeans contain antinutritional compounds and should not be routinely fed to chickens.",
+            "Insufficient heat treatment may leave harmful antinutritional activity.",
+            "Excessive heat can also reduce nutritional quality.",
+            "Moldy, musty, heated, rancid, chemically treated, or contaminated beans must not be fed.",
+            "Deer, rodents, and other wildlife may damage plants or stored beans.",
+            "Waterlogged soil, drought during flowering or pod fill, and early frost can substantially reduce yield."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        springRole:
+          "planting-and-establishment",
+
+        summerRole:
+          "vegetative-growth-flowering-and-pod-development",
+
+        fallRole:
+          "maturity-dry-down-and-harvest",
+
+        winterRole:
+          "stored-processed-protein-feed",
+
+        providesFreshSpringFeed:
+          false,
+
+        providesFreshSummerFeed:
+          true,
+
+        providesFreshFallFeed:
+          true,
+
+        providesFreshWinterFeed:
+          false,
+
+        providesStoredWinterFeed:
+          true,
+
+        successionPlantingUseful:
+          false,
+
+        primaryPlantingSeason:
+          "late-spring",
+
+        primaryHarvestSeason:
+          "late-summer-through-fall",
+
+        winterUseRequiresStorage:
+          true,
+
+        seasonalContinuityScore:
+          4,
+
+        livingForageContinuityScore:
+          1,
+
+        storedFeedContinuityScore:
+          5,
+
+        harvestConcentrationScore:
+          5,
+
+        seasonalGapRiskScore:
+          3,
+
+        directFacts: {
+          warmSeasonProduction:
+            true,
+
+          frostEndsProduction:
+            true,
+
+          harvestConcentratedAtMaturity:
+            true,
+
+          longTermDryStoragePossible:
+            true,
+
+          notes: [
+            "Soybeans are planted after soils have warmed and frost danger has passed.",
+            "Most crop growth occurs during summer.",
+            "Dry-grain harvest is concentrated near the end of the growing season.",
+            "Properly dried whole beans can be stored and processed in batches for winter use.",
+            "The crop does not provide permanent living winter forage.",
+            "Regional maturity-group selection is essential for dependable harvest before frost."
+          ]
+        }
+      },
+
       maintenance: {
         maintenanceLevel:
           "moderate",
@@ -40509,7 +41025,7 @@ usePaths: [
         }
       },
 
-            usePaths: [
+      usePaths: [
         {
           id:
             "processed-whole-soybeans",
@@ -40523,8 +41039,150 @@ usePaths: [
           primaryUse:
             "High-protein supplemental poultry feed",
 
+          primaryFeedRole:
+            "processed-protein-and-energy-grain",
+
           suitabilityScore:
-            5
+            5,
+
+          harvestProducts: [
+            "mature-dry-soybeans",
+            "clean-whole-soybeans",
+            "heat-processed-whole-soybeans"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-supplement",
+            "balanced-ration-ingredient",
+            "mixed-feed",
+            "cracked-processed-grain"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-dry-pods",
+            "dry",
+            "thresh-or-shell",
+            "clean-sort",
+            "inspect-moisture",
+            "heat-process",
+            "cool-before-storage-or-feeding"
+          ],
+
+          optionalProcessingTasks: [
+            "crack",
+            "coarsely-grind",
+            "portion",
+            "freeze-for-insect-control"
+          ],
+
+          requiredEquipment: [
+            "heat-processing-equipment"
+          ],
+
+          helpfulEquipment: [
+            "harvest-container",
+            "drying-screen",
+            "sheller",
+            "threshing-container",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "feed-scale",
+            "food-safe-container",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "whole-dry-storage",
+            "sealed-food-safe-container",
+            "cool-dry-storage",
+            "rodent-resistant-storage"
+          ],
+
+          preferredStorageMethod:
+            "clean-dry-whole-beans-in-sealed-rodent-resistant-storage",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            true,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Do not routinely feed raw mature soybeans to chickens.",
+            "Use a verified heat-processing method capable of deactivating soybean antinutritional factors.",
+            "Do not assume that lightly warming or sun-drying beans makes them safe.",
+            "Avoid excessive heating that scorches beans or reduces protein quality.",
+            "Do not feed moldy, musty, heated, rancid, chemically treated, insect-damaged, or rodent-contaminated beans.",
+            "Use processed soybeans only as a measured ingredient within a balanced poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-heat-processing",
+            "requires-zero-processing",
+            "cannot-measure-feed-ingredients",
+            "requires-complete-feed-replacement",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage",
+            "keeps-only-young-chicks"
+          ]
         },
 
         {
@@ -40540,8 +41198,133 @@ usePaths: [
           primaryUse:
             "Protein concentrate",
 
+          primaryFeedRole:
+            "concentrated-protein-ration-ingredient",
+
           suitabilityScore:
-            5
+            5,
+
+          harvestProducts: [
+            "commercial-soybean-meal",
+            "processed-protein-meal"
+          ],
+
+          suitableFeedingMethods: [
+            "balanced-ration-ingredient",
+            "mixed-feed",
+            "professionally-formulated-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "purchase-properly-processed-meal",
+            "measure",
+            "blend-into-balanced-ration"
+          ],
+
+          optionalProcessingTasks: [
+            "portion",
+            "store-in-smaller-containers"
+          ],
+
+          requiredEquipment: [
+            "feed-scale",
+            "mixing-container"
+          ],
+
+          helpfulEquipment: [
+            "sealed-food-safe-container",
+            "feed-scoop",
+            "ration-formulation-reference",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "purchased-processed-product",
+
+          harvestFrequencyCategory:
+            "as-needed",
+
+          storageMethods: [
+            "sealed-dry-storage",
+            "cool-dry-storage",
+            "rodent-resistant-storage"
+          ],
+
+          preferredStorageMethod:
+            "sealed-cool-dry-rodent-resistant-storage",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            0,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Soybean meal must be incorporated into a nutritionally balanced ration.",
+            "Do not offer soybean meal free choice as a complete poultry feed.",
+            "Measure ingredients accurately and prevent separation within the finished ration.",
+            "Keep meal dry and discard material that becomes moldy, musty, rancid, heated, or contaminated.",
+            "Use commercially processed feed-grade soybean meal rather than untreated home-ground raw soybeans."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-measure-feed-ingredients",
+            "cannot-formulate-balanced-rations",
+            "requires-complete-feed-replacement",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage"
+          ]
         },
 
         {
@@ -40557,8 +41340,136 @@ usePaths: [
           primaryUse:
             "Fresh seasonal supplement",
 
+          primaryFeedRole:
+            "occasional-seasonal-treat",
+
           suitabilityScore:
-            2
+            2,
+
+          harvestProducts: [
+            "immature-green-soybean-pods",
+            "shelled-immature-soybeans",
+            "cooked-edamame"
+          ],
+
+          suitableFeedingMethods: [
+            "occasional-treat",
+            "small-measured-portion",
+            "mixed-seasonal-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-immature-pods",
+            "remove-damaged-pods",
+            "wash",
+            "cook",
+            "cool-before-feeding"
+          ],
+
+          optionalProcessingTasks: [
+            "shell",
+            "chop",
+            "freeze-after-cooking"
+          ],
+
+          requiredEquipment: [
+            "cooking-equipment"
+          ],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "washing-container",
+            "cooking-pot",
+            "freezer-container"
+          ],
+
+          harvestPattern:
+            "minor-seasonal",
+
+          harvestFrequencyCategory:
+            "short-seasonal-window",
+
+          storageMethods: [
+            "fresh-short-term",
+            "refrigerated-after-cooking",
+            "frozen-after-cooking"
+          ],
+
+          preferredStorageMethod:
+            "freshly-cooked-and-cooled",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            true,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            2,
+
+          safetyWarnings: [
+            "Treat immature soybeans as an occasional supplement rather than a major ration ingredient.",
+            "Cook immature soybeans before feeding as the conservative home-use practice.",
+            "Cool cooked beans completely before offering them to poultry.",
+            "Do not add salt, seasoning, oil, sauces, or other prepared-food ingredients.",
+            "Do not feed spoiled, moldy, fermented, or chemically treated pods or beans.",
+            "Continue providing an age-appropriate complete poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-primary-feed-production",
+            "declines-cooking",
+            "requires-long-term-nonrefrigerated-storage",
+            "requires-complete-feed-replacement"
+          ]
         },
 
         {
@@ -40574,8 +41485,127 @@ usePaths: [
           primaryUse:
             "Occasional forage",
 
+          primaryFeedRole:
+            "limited-fresh-green-supplement",
+
           suitabilityScore:
-            2
+            2,
+
+          harvestProducts: [
+            "young-soybean-leaves",
+            "tender-soybean-shoots",
+            "limited-fresh-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-browsing",
+            "limited-cut-and-carry",
+            "small-chopped-green-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "select-clean-young-growth",
+            "inspect-for-disease-and-contamination",
+            "offer-in-limited-amounts"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "briefly-wilt"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-basket",
+            "temporary-fencing"
+          ],
+
+          harvestPattern:
+            "minor",
+
+          harvestFrequencyCategory:
+            "occasional-seasonal",
+
+          storageMethods: [
+            "immediate-fresh-use"
+          ],
+
+          preferredStorageMethod:
+            "immediate-fresh-use",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          safetyWarnings: [
+            "Do not treat soybean foliage as a replacement for complete poultry feed.",
+            "Limit access so chickens do not destroy the crop before grain production.",
+            "Do not feed diseased, wilted-from-herbicide, chemically treated, moldy, or contaminated plant material.",
+            "Avoid unrestricted access to mature dry plants and raw mature beans.",
+            "Use forage only as a minor seasonal supplement."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-primary-protein-production",
+            "requires-complete-feed-replacement",
+            "cannot-supervise-flock-access",
+            "uses-chemical-treatments-in-feed-crop-area"
+          ]
         },
 
         {
@@ -40586,13 +41616,136 @@ usePaths: [
             "Post-Harvest Field Access",
 
           description:
-            "Supervised access after harvest allowing poultry to consume shattered beans and remaining insects while helping clean crop residue.",
+            "Supervised access after harvest allowing poultry to consume insects and limited remaining crop material while helping clean crop residue.",
 
           primaryUse:
             "Field cleanup",
 
+          primaryFeedRole:
+            "postharvest-enrichment-and-insect-foraging",
+
           suitabilityScore:
-            4
+            4,
+
+          harvestProducts: [
+            "postharvest-insects",
+            "limited-crop-residue",
+            "supervised-field-cleanup-access"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-field-access",
+            "rotational-cleanup",
+            "postharvest-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "remove-primary-bean-harvest",
+            "remove-moldy-or-damaged-material",
+            "inspect-field-for-chemical-and-physical-hazards",
+            "supervise-access"
+          ],
+
+          optionalProcessingTasks: [
+            "mow-residue",
+            "chop-stalks",
+            "collect-remaining-sound-beans-for-processing"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "temporary-fencing",
+            "portable-poultry-netting",
+            "waterer",
+            "shade-shelter"
+          ],
+
+          harvestPattern:
+            "postharvest",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "immediate-field-use"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            0,
+
+          flockValueScore:
+            3,
+
+          safetyWarnings: [
+            "Harvest the main mature bean crop before allowing poultry into the field.",
+            "Do not intentionally allow unrestricted consumption of raw mature soybeans.",
+            "Remove moldy pods, spoiled beans, chemical containers, wire, twine, and other hazards before access.",
+            "Do not use fields treated with products whose labels prohibit livestock or poultry access.",
+            "Provide normal complete feed and clean water during field access.",
+            "Supervise access and remove birds if they begin consuming excessive raw beans."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-supervise-field-access",
+            "field-treated-with-incompatible-chemicals",
+            "requires-controlled-feed-intake-only",
+            "cannot-remove-primary-bean-harvest"
+          ]
         },
 
         {
@@ -40603,13 +41756,137 @@ usePaths: [
             "Nitrogen-Building Rotation Crop",
 
           description:
-            "Soybeans grown primarily for soil improvement, nitrogen fixation, and crop rotation while still producing a valuable grain harvest.",
+            "Soybeans grown primarily for soil improvement, biological nitrogen fixation, and crop rotation, with grain harvest remaining optional according to management goals.",
 
           primaryUse:
             "Soil improvement",
 
+          primaryFeedRole:
+            "rotation-and-soil-support-crop",
+
           suitabilityScore:
-            5
+            5,
+
+          harvestProducts: [
+            "nitrogen-fixing-crop-residue",
+            "soil-building-biomass",
+            "optional-mature-soybean-harvest"
+          ],
+
+          suitableFeedingMethods: [
+            "no-direct-feeding-required",
+            "optional-processed-grain-use",
+            "postharvest-supervised-access"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-with-compatible-inoculant-when-needed",
+            "manage-as-rotation-crop",
+            "terminate-or-harvest-before-next-crop"
+          ],
+
+          optionalProcessingTasks: [
+            "harvest-mature-beans",
+            "chop-residue",
+            "incorporate-residue",
+            "leave-surface-residue",
+            "allow-supervised-postharvest-access"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "seed-inoculant",
+            "seeder",
+            "mower",
+            "hand-tools",
+            "temporary-fencing"
+          ],
+
+          harvestPattern:
+            "soil-building-or-optional-grain-harvest",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "not-required-for-soil-building-use",
+            "whole-dry-storage-if-grain-is-harvested"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable-unless-grain-is-harvested",
+
+          storageDurationCategory:
+            "not-applicable-or-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            2,
+
+          safetyWarnings: [
+            "This use path is primarily a soil-management recommendation rather than a direct poultry-feeding recommendation.",
+            "Do not assume nitrogen fixed by soybeans becomes immediately available to the following crop.",
+            "Do not feed raw mature beans harvested from the rotation crop.",
+            "Do not allow poultry access where incompatible herbicides, pesticides, seed treatments, or other chemicals were used.",
+            "Process any harvested mature beans through an appropriate separate feed-use path."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-direct-feed-only-crops",
+            "requires-immediate-continuous-feed",
+            "cannot-rotate-annual-crops"
+          ]
         }
       ],
 
@@ -40704,14 +41981,67 @@ usePaths: [
               "Established plants tolerate moderate drought, although flowering and pod fill remain moisture-sensitive."
           },
 
-        winterFeedStorage:
-          {
-            score:
-              5,
+                winterFeedStorage: {
+          score:
+            5,
 
-            notes:
-              "Properly dried soybeans store exceptionally well for long-term poultry feed."
-          }
+          notes:
+            "Properly dried soybeans store exceptionally well for long-term poultry feed."
+        }
+      },
+
+      dataQuality: {
+        overallConfidenceScore:
+          92,
+
+        researchCompletenessScore:
+          90,
+
+        poultrySpecificEvidenceScore:
+          95,
+
+        agronomicEvidenceScore:
+          95,
+
+        nutritionEvidenceScore:
+          95,
+
+        plannerReliabilityScore:
+          90,
+
+        estimatedUnknownFieldPercent:
+          10,
+
+        usesProfessionalJudgment:
+          true,
+
+        containsNullValues:
+          true,
+
+        nullValuesRequireFutureResearch: [
+          "Backyard production per-square-foot yields across multiple climates",
+          "Verified small-scale feed-cost savings",
+          "Safe standardized home-scale heat-processing instructions",
+          "Regional maturity-group recommendations",
+          "Economic returns at different homestead planting scales",
+          "Long-term storage performance under varied backyard conditions"
+        ],
+
+        majorInformationSources: [
+          "USDA",
+          "Feedipedia",
+          "University Extension Publications",
+          "Peer-reviewed poultry nutrition research",
+          "Agronomic soybean-production publications"
+        ],
+
+        plannerNotes: [
+          "Soybeans should rank highly for protein production only when the user accepts safe heat processing or intends to use commercially processed soybean meal.",
+          "Raw mature soybeans must never be presented as ready-to-feed poultry grain.",
+          "The planner should apply strong penalties when users reject drying, heat processing, accurate measurement, protected storage, or balanced-ration formulation.",
+          "Soybeans are strongest for rural and homestead users with adequate growing area and processing capability.",
+          "Unknown yield and economic values remain null rather than being estimated."
+        ]
       }
     },
 
