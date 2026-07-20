@@ -180,14 +180,25 @@ rgba(0,0,0,.08);
 
 }
 
+.glance-card {
+  padding: 20px;
+  color: #2f3631;
+  background: #ffffff;
+  border: 1px solid #d7e3d8;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 12px
+    rgba(0, 0, 0, 0.08);
+}
+
 .glance-card h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
 
-margin-top:
-0;
-
-color:
-var(--primary-color);
-
+.glance-card p {
+  margin-bottom: 0;
+  color: #36423a;
 }
 
 .snapshot-table,
@@ -225,10 +236,20 @@ top;
 
 .snapshot-table th,
 .feeding-table th {
+  color: #194f2a;
+  font-weight: 800;
+  background: #eaf3e8;
+}
 
-background:
-#f3f8f1;
+.snapshot-table td,
+.feeding-table td {
+  color: #303a33;
+  background: #ffffff;
+}
 
+.snapshot-table tr:nth-child(even) td,
+.feeding-table tr:nth-child(even) td {
+  background: #f8faf7;
 }
 
 .recommendation-box,
@@ -248,43 +269,49 @@ border-radius:
 }
 
 .recommendation-box {
+  color: #29452f;
+  background: #eef8eb;
+  border: 1px solid #cbe0c8;
+  border-left: 6px solid #3f8f3f;
+}
 
-background:
-#eef8eb;
-
-border-left:
-6px solid #3f8f3f;
-
+.recommendation-box h2,
+.recommendation-box h3,
+.recommendation-box strong {
+  color: #194f2a;
 }
 
 .info-box {
+  color: #29465e;
+  background: #eef6fc;
+  border: 1px solid #c9ddec;
+  border-left: 6px solid #4b8dd6;
+}
 
-background:
-#eef6fc;
-
-border-left:
-6px solid #4b8dd6;
-
+.info-box strong {
+  color: #214e70;
 }
 
 .tip-box {
+  color: #614c17;
+  background: #fff9e8;
+  border: 1px solid #ead9a8;
+  border-left: 6px solid #d2a500;
+}
 
-background:
-#fff9e8;
-
-border-left:
-6px solid #d2a500;
-
+.tip-box strong {
+  color: #705716;
 }
 
 .warning-box {
+  color: #612e2c;
+  background: #fdeeee;
+  border: 1px solid #e7c5c3;
+  border-left: 6px solid #d9534f;
+}
 
-background:
-#fdeeee;
-
-border-left:
-6px solid #d9534f;
-
+.warning-box strong {
+  color: #7c302d;
 }
 
 .learning-grid {
@@ -304,20 +331,24 @@ margin:
 }
 
 .learning-card {
+  padding: 22px;
+  color: #2f3631;
+  background: #ffffff;
+  border: 1px solid #d7e3d8;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 10px
+    rgba(0, 0, 0, 0.08);
+}
 
-background:
-#fff;
+.learning-card h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
 
-padding:
-22px;
-
-border-radius:
-12px;
-
-box-shadow:
-0 3px 10px
-rgba(0,0,0,.08);
-
+.learning-card p {
+  margin-bottom: 0;
+  color: #36423a;
 }
 
 .timeline {
@@ -360,74 +391,72 @@ line-height:
 
 }
 
-.faq-list {
-
-display:
-grid;
-
-gap:
-22px;
-
-margin:
-35px 0;
-
+.faq-container {
+  display: grid;
+  gap: 12px;
+  margin: 35px 0;
 }
 
-.faq-item {
-
-background:
-#fafafa;
-
-padding:
-22px;
-
-border-radius:
-12px;
-
-box-shadow:
-0 2px 8px
-rgba(0,0,0,.06);
-
+.faq-container details {
+  margin: 0;
+  padding: 15px 17px;
+  color: #303a33;
+  background: #f8fbf8;
+  border: 1px solid #d9e4da;
+  border-radius: 11px;
 }
 
-.source-list {
-
-line-height:
-2;
-
+.faq-container summary {
+  color: #194f2a;
+  font-weight: 800;
+  cursor: pointer;
 }
 
-.next-guide-grid {
+.faq-container details p {
+  color: #36423a;
+}
 
-display:
-grid;
+.faq-container details p:last-child {
+  margin-bottom: 0;
+}
 
-grid-template-columns:
-repeat(auto-fit,minmax(260px,1fr));
+.sources-list {
+  padding-left: 24px;
+  color: #303a33;
+  line-height: 2;
+}
 
-gap:
-25px;
+.sources-list li {
+  margin-bottom: 5px;
+}
 
-margin-top:
-35px;
-
+.related-guides,
+.next-steps-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 17px;
+  margin-top: 35px;
 }
 
 .next-guide-card {
+  padding: 19px;
+  color: #303a33;
+  background: #f8fbf8;
+  border: 1px solid #d7e3d8;
+  border-radius: 13px;
+  box-shadow:
+    0 4px 12px
+    rgba(0, 0, 0, 0.06);
+}
 
-background:
-#fff;
+.next-guide-card h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
 
-padding:
-24px;
-
-border-radius:
-14px;
-
-box-shadow:
-0 4px 12px
-rgba(0,0,0,.08);
-
+.next-guide-card p {
+  color: #36423a;
 }
 
 .crop-planner-button {
@@ -470,27 +499,88 @@ opacity:
 
 @media (max-width:768px){
 
-.crop-hero{
+.crop-guide-hero {
+  padding: 30px;
+  color: #ffffff;
+  background:
+    linear-gradient(
+      rgba(22, 54, 31, 0.82),
+      rgba(22, 54, 31, 0.82)
+    ),
+    url("images/guides/growing-soybeans-for-chickens.jpg")
+    center / cover
+    no-repeat;
+  border-radius: 20px;
+  box-shadow:
+    0 16px 36px
+    rgba(38, 73, 46, 0.2);
+}
 
-padding:
-50px 20px;
+.crop-guide-hero h1 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.crop-guide-hero p {
+  max-width: 790px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.crop-guide-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.crop-guide-tag {
+  display: inline-block;
+  padding: 7px 12px;
+  color: #284f31;
+  font-size: 0.86rem;
+  font-weight: 750;
+  background: #d9ebd7;
+  border-radius: 999px;
+}
 
 }
 
-.crop-hero h1{
-
-font-size:
-2rem;
-
+.checklist-container {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0;
 }
 
+.checklist-container label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 13px 15px;
+  color: #303a33;
+  background: #f8fbf8;
+  border: 1px solid #d9e4da;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checklist-container input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #337747;
 }
 
 </style>
 
 <script
   async
-  src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+  src="https://www.googletagmanager.com/gtag/js?id=G-88486JDN1Z"
 ></script>
 
 <script>
@@ -744,6 +834,16 @@ gtag(
 
 <body>
 
+  <header class="site-header">
+
+<h1>🐔 Backyard Chicken Planner</h1>
+
+<p>
+Free calculators, planning tools, and practical guides for backyard chicken keepers.
+</p>
+
+</header>  
+
 <div id="navigation"></div>
 
 <div style="max-width:900px; margin:40px auto; padding:0 16px;">
@@ -767,7 +867,47 @@ Soybeans are a warm-season legume capable of producing one of the most protein-r
 
 </p>
 
-</section>
+<div class="crop-guide-tags">
+
+<span class="crop-guide-tag">
+
+Warm-Season Annual
+
+</span>
+
+<span class="crop-guide-tag">
+
+High-Protein Legume
+
+</span>
+
+<span class="crop-guide-tag">
+
+Nitrogen-Fixing Crop
+
+</span>
+
+<span class="crop-guide-tag">
+
+Dry Bean Harvest
+
+</span>
+
+<span class="crop-guide-tag">
+
+Processing Required
+
+</span>
+
+<span class="crop-guide-tag">
+
+Do Not Feed Raw
+
+</span>
+
+</div>
+
+</header>
 
 
 <section>
