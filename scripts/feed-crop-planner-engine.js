@@ -1751,7 +1751,7 @@ function getStorageDurationLevel(
     "1-4-weeks": 1,
     medium: 2,
     "1-3-months": 2,
-    "medium-long": 3,
+    "medium-to-long": 3,
     "3-6-months": 3,
     long: 4,
     "6-12-months": 4,
@@ -3617,20 +3617,34 @@ function analyzeHarvestProductMatch(
       "fresh-seed-heads",
       "fresh-mature-seed-heads",
       "fresh-mature-seed-head",
-      "mature-seed-heads"
+      "mature-seed-heads",
+      "whole-mature-panicles",
+      "whole-mature-proso-millet-panicles",
+      "seed-bearing-panicles"
     ],
 
     "dried-seed-heads": [
       "dried-seed-heads",
       "whole-dried-seed-heads",
-      "dried-whole-seed-heads"
+      "dried-whole-seed-heads",
+      "whole-dried-panicles",
+      "whole-dried-proso-millet-panicles",
+      "dried-seed-bearing-panicles"
     ],
 
     "whole-seed-heads": [
       "whole-seed-heads",
+      "fresh-seed-heads",
+      "dried-seed-heads",
       "fresh-mature-seed-heads",
+      "fresh-mature-seed-head",
       "whole-dried-seed-heads",
-      "dried-whole-seed-heads"
+      "dried-whole-seed-heads",
+      "whole-mature-panicles",
+      "whole-dried-panicles",
+      "whole-mature-proso-millet-panicles",
+      "whole-dried-proso-millet-panicles",
+      "seed-bearing-panicles"
     ],
 
     "dried-forage": [
