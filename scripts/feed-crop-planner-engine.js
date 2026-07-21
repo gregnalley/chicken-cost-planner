@@ -3478,75 +3478,283 @@ function analyzeHarvestProductMatch(
   usePathProducts,
   desiredProducts
 ) {
-  const genericProductIds =
-    new Set([
-    "fresh-greens",
-    "fresh-forage",
-    "fresh-produce",
-    "fresh-fruit",
-    "fallen-fruit",
-
-    "fresh-seed-heads",
-    "dried-seed-heads",
-    "whole-seed-heads",
-
-    "dried-forage",
-    "dried-leaves",
-
-    "dry-seeds",
-    "dry-grain",
-    "whole-grain",
-    "stored-grain",
-    "cracked-grain",
-    "ground-grain",
-
-    "stored-enrichment"
-    ]);
-
   const safeUsePathProducts =
-    Array.isArray(
-      usePathProducts
-    )
+    Array.isArray(usePathProducts)
       ? usePathProducts
       : [];
 
   const safeDesiredProducts =
-    Array.isArray(
-      desiredProducts
-    )
+    Array.isArray(desiredProducts)
       ? desiredProducts
       : [];
 
-  const allMatches =
+  /*
+   * Broad questionnaire categories are allowed
+   * to match multiple crop-specific product IDs.
+   *
+   * Crop records should remain precise. The
+   * engine is responsible for translating broad
+   * visitor requests into compatible crop
+   * products.
+   */
+  const productAliasGroups = {
+    "fresh-greens": [
+      "fresh-greens",
+      "young-leaves",
+      "young-cowpea-leaves",
+      "tender-leaves",
+      "tender-vine-tips",
+      "tender-cowpea-vine-tips",
+      "young-shoots",
+      "soft-young-stems",
+      "fresh-green-forage",
+      "fresh-legume-forage",
+      "seasonal-green-enrichment",
+      "living-cowpea-leaves"
+    ],
+
+    "fresh-forage": [
+      "fresh-forage",
+      "fresh-green-forage",
+      "fresh-legume-forage",
+      "young-vegetative-forage",
+      "living-cowpea-leaves",
+      "tender-vine-growth",
+      "young-shoots",
+      "cut-and-carry-forage"
+    ],
+
+    "tender-pods": [
+      "tender-pods",
+      "tender-immature-pods",
+      "immature-pods",
+      "young-cowpea-pods",
+      "fresh-green-pods",
+      "edible-immature-pods"
+    ],
+
+    "fresh-vegetables": [
+      "fresh-vegetables",
+      "tender-immature-pods",
+      "immature-pods",
+      "fresh-green-pods",
+      "fresh-green-cowpea-seeds",
+      "immature-shelled-cowpeas",
+      "fresh-shell-peas",
+      "fresh-immature-peas"
+    ],
+
+    "fresh-produce": [
+      "fresh-produce",
+      "fresh-fruit",
+      "fresh-vegetables",
+      "tender-immature-pods",
+      "immature-pods",
+      "fresh-green-cowpea-seeds",
+      "immature-shelled-cowpeas",
+      "fresh-shell-peas"
+    ],
+
+    "dry-legumes": [
+      "dry-legumes",
+      "mature-dry-cowpea-seed",
+      "cleaned-whole-cowpeas",
+      "heat-treated-whole-cowpeas",
+      "heat-treated-cracked-cowpeas",
+      "heat-treated-ground-cowpea-meal",
+      "processed-legume-feed-ingredient"
+    ],
+
+    "dry-seeds": [
+      "dry-seeds",
+      "mature-dry-cowpea-seed",
+      "cleaned-whole-cowpeas",
+      "whole-dry-seed",
+      "stored-dry-seed"
+    ],
+
+    "dry-grain": [
+      "dry-grain",
+      "whole-grain",
+      "stored-grain",
+      "mature-dry-seed",
+      "cleaned-whole-seed",
+      "mature-dry-cowpea-seed"
+    ],
+
+    "whole-grain": [
+      "whole-grain",
+      "dry-grain",
+      "stored-grain",
+      "whole-dry-seed",
+      "mature-dry-cowpea-seed",
+      "cleaned-whole-cowpeas"
+    ],
+
+    "stored-grain": [
+      "stored-grain",
+      "whole-grain",
+      "dry-grain",
+      "whole-dry-seed",
+      "mature-dry-cowpea-seed",
+      "cleaned-whole-cowpeas"
+    ],
+
+    "cracked-grain": [
+      "cracked-grain",
+      "cracked-seed",
+      "heat-treated-cracked-cowpeas"
+    ],
+
+    "ground-grain": [
+      "ground-grain",
+      "ground-seed",
+      "ground-meal",
+      "heat-treated-ground-cowpea-meal"
+    ],
+
+    "fresh-seed-heads": [
+      "fresh-seed-heads",
+      "fresh-mature-seed-heads",
+      "fresh-mature-seed-head",
+      "mature-seed-heads"
+    ],
+
+    "dried-seed-heads": [
+      "dried-seed-heads",
+      "whole-dried-seed-heads",
+      "dried-whole-seed-heads"
+    ],
+
+    "whole-seed-heads": [
+      "whole-seed-heads",
+      "fresh-mature-seed-heads",
+      "whole-dried-seed-heads",
+      "dried-whole-seed-heads"
+    ],
+
+    "dried-forage": [
+      "dried-forage",
+      "dried-leaves",
+      "leaf-meal",
+      "dried-leaf-meal",
+      "hay"
+    ],
+
+    "dried-leaves": [
+      "dried-leaves",
+      "leaf-meal",
+      "dried-leaf-meal",
+      "dried-forage"
+    ],
+
+    "fresh-fruit": [
+      "fresh-fruit",
+      "whole-fruit",
+      "ripe-fruit",
+      "fallen-fruit"
+    ],
+
+    "fallen-fruit": [
+      "fallen-fruit",
+      "ripe-fallen-fruit",
+      "windfall-fruit"
+    ],
+
+    "stored-enrichment": [
+      "stored-enrichment",
+      "dried-seed-heads",
+      "whole-seed-heads",
+      "stored-grain",
+      "whole-dried-produce"
+    ]
+  };
+
+  const genericProductIds =
+    new Set(
+      Object.keys(
+        productAliasGroups
+      )
+    );
+
+  function productMatches(
+    desiredProduct,
+    usePathProduct
+  ) {
+    if (
+      desiredProduct ===
+      usePathProduct
+    ) {
+      return true;
+    }
+
+    const desiredAliases =
+      productAliasGroups[
+        desiredProduct
+      ] || [];
+
+    if (
+      desiredAliases.includes(
+        usePathProduct
+      )
+    ) {
+      return true;
+    }
+
+    const usePathAliases =
+      productAliasGroups[
+        usePathProduct
+      ] || [];
+
+    return usePathAliases.includes(
+      desiredProduct
+    );
+  }
+
+  const matchedDesiredProducts =
     safeDesiredProducts.filter(
-      productId =>
-        safeUsePathProducts.includes(
-          productId
-        )
+      desiredProduct => {
+        return safeUsePathProducts.some(
+          usePathProduct => {
+            return productMatches(
+              desiredProduct,
+              usePathProduct
+            );
+          }
+        );
+      }
     );
 
   const specificDesiredProducts =
     safeDesiredProducts.filter(
-      productId =>
-        !genericProductIds.has(
+      productId => {
+        return !genericProductIds.has(
           productId
-        )
+        );
+      }
     );
 
   const specificMatches =
     specificDesiredProducts.filter(
-      productId =>
-        safeUsePathProducts.includes(
-          productId
-        )
+      desiredProduct => {
+        return safeUsePathProducts.some(
+          usePathProduct => {
+            return productMatches(
+              desiredProduct,
+              usePathProduct
+            );
+          }
+        );
+      }
     );
 
   const genericMatches =
-    allMatches.filter(
-      productId =>
-        genericProductIds.has(
+    matchedDesiredProducts.filter(
+      productId => {
+        return genericProductIds.has(
           productId
-        )
+        );
+      }
     );
 
   return {
@@ -3558,14 +3766,18 @@ function analyzeHarvestProductMatch(
       0,
 
     hasAnyMatch:
-      allMatches.length > 0,
+      matchedDesiredProducts.length > 0,
 
     hasSpecificMatch:
       specificMatches.length > 0,
 
-    allMatches,
+    allMatches:
+      matchedDesiredProducts,
+
     specificMatches,
+
     genericMatches,
+
     specificDesiredProducts
   };
 }
