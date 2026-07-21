@@ -16380,44 +16380,155 @@ const BCP_FEED_CROPS = {
         }
       },
 
-      usePaths: [
-         {
+           usePaths: [
+        {
           id:
             "fresh-leaf-and-vine-tip",
 
           label:
             "Fresh Leaves and Vine Tips",
 
-          enabled:
-            true,
+          description:
+            "Young Cowpea leaves and soft vine tips are harvested from healthy, well-established plants and offered promptly as a measured cut-and-carry forage supplement for established chickens.",
 
-          primaryProduct:
-            "young-cowpea-foliage",
+          primaryFeedRole:
+            "fresh-cut-legume-forage",
 
-          harvestStage:
-            "young-vegetative-growth",
+          harvestProducts: [
+            "young-cowpea-leaves",
+            "tender-cowpea-vine-tips",
+            "soft-young-stems",
+            "fresh-legume-forage",
+            "seasonal-green-enrichment"
+          ],
 
-          harvestMethod:
-            "Cut tender leaves and soft vine tips while leaving sufficient healthy growth and active growing points for recovery.",
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-forage-supplement",
+            "coarsely-chopped-forage",
+            "hanging-forage",
+            "forage-basket",
+            "seasonal-enrichment",
+            "mixed-fresh-forage"
+          ],
 
-          feedingMethod:
-            "Offer promptly as cut-and-carry supplemental forage to established adult chickens.",
+          requiredProcessingTasks: [
+            "harvest-young-vegetative-growth",
+            "leave-sufficient-growing-points",
+            "inspect-plant-material",
+            "remove-diseased-material",
+            "remove-moldy-material",
+            "remove-contaminated-material",
+            "remove-excessively-coarse-stems",
+            "portion",
+            "feed-promptly"
+          ],
 
-          requiresProcessing:
+          optionalProcessingTasks: [
+            "rinse-if-needed",
+            "drain-after-rinsing",
+            "coarsely-chop-long-vines",
+            "bundle-for-enrichment",
+            "hang-in-safe-forage-holder",
+            "mix-with-other-fresh-forage",
+            "refrigerate-briefly"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-basket",
+            "clean-cutting-board",
+            "kitchen-knife",
+            "forage-basket",
+            "safe-hanging-forage-holder",
+            "food-scale",
+            "refrigerator"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "repeated-light-harvests-during-active-vegetative-growth",
+
+          storageMethods: [
+            "immediate-feeding",
+            "brief-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "feed-fresh-immediately-after-harvest-and-inspection",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
             false,
 
-          requiredProcessingSteps: [
-            "Inspect plant material",
-            "Remove diseased, moldy, contaminated, or excessively coarse material",
-            "Rinse only when needed",
-            "Feed promptly"
-          ],
+          refrigerationSuitable:
+            true,
 
-          optionalProcessingSteps: [
-            "Coarsely chop long vines",
-            "Hang or bundle foliage for enrichment",
-            "Mix a small quantity with other fresh forage"
-          ],
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          bacterialContaminationRiskScore:
+            3,
+
+          spoilageRiskScore:
+            5,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
 
           expectedProcessingTimeLevel:
             "low",
@@ -16450,15 +16561,22 @@ const BCP_FEED_CROPS = {
             5,
 
           preservationOptions: [
-            "short-term-refrigeration",
-            "limited-drying"
+            "immediate-fresh-feeding",
+            "brief-refrigeration",
+            "limited-experimental-drying"
           ],
 
           preservationLimitations: [
-            "Fresh foliage wilts rapidly.",
+            "Fresh Cowpea foliage wilts rapidly after harvest.",
             "Refrigerated foliage remains highly perishable.",
-            "Drying changes texture, palatability, nutrient concentration, and handling.",
-            "No dependable long-term dried-forage storage recommendation is stored."
+            "Wet foliage may heat, ferment, become slimy, or develop mold when packed densely.",
+            "Drying changes texture, palatability, nutrient concentration, and handling characteristics.",
+            "No dependable long-term dried-Cowpea-forage storage recommendation is stored.",
+            "Frozen foliage generally loses desirable fresh texture after thawing.",
+            "Fresh-weight yield contains substantial water and should not be treated as equivalent dry-feed yield.",
+            "Fresh foliage cannot be stored as efficiently as mature dry seed.",
+            "Repeated heavy harvest reduces the amount of leaf area available for photosynthesis.",
+            "Heavy vegetative removal may reduce flowering, pod set, seed filling, root reserves, nodulation, and later regrowth."
           ],
 
           estimatedShelfLifeCategory:
@@ -16468,40 +16586,81 @@ const BCP_FEED_CROPS = {
             "very-short",
 
           likelyLossPoints: [
-            "Wilting",
-            "Heat exposure",
-            "Trampling",
-            "Rejected coarse stems",
-            "Contamination",
-            "Spoilage after feeding",
-            "Excessive defoliation reducing regrowth"
+            "wilting",
+            "heat-exposure",
+            "moisture-loss",
+            "trampling",
+            "rejected-coarse-stems",
+            "disease-damage",
+            "insect-damage",
+            "soil-contamination",
+            "chemical-contamination",
+            "spoilage-after-feeding",
+            "wet-forage-left-in-litter",
+            "excessive-defoliation-reducing-regrowth",
+            "excessive-defoliation-reducing-pod-production"
           ],
 
           strengths: [
             "Simple harvest",
             "Minimal processing",
+            "No mature-seed heat treatment required",
             "Strong enrichment value",
             "Useful for confined adult flocks",
-            "Can support repeated harvest",
-            "Avoids mature-seed antinutritional concerns"
+            "Can support repeated light harvest",
+            "Provides fresh warm-season forage",
+            "Cut-and-carry protects the crop from unrestricted scratching",
+            "Avoids mature-seed antinutritional concerns",
+            "Requires little specialized equipment"
           ],
 
           limitations: [
             "Low dry-matter concentration",
-            "Short storage life",
-            "Not a complete feed",
+            "Very short storage life",
+            "Not a complete poultry feed",
             "Mature stems become fibrous",
-            "Repeated heavy cutting can reduce pod production",
-            "Excess feeding can dilute complete-feed intake"
+            "Older leaves may be less palatable",
+            "Repeated heavy cutting can reduce recovery",
+            "Repeated heavy cutting can reduce pod and seed production",
+            "Fresh intake is difficult to measure precisely",
+            "Excess feeding can dilute complete-feed consumption",
+            "Fresh foliage provides less concentrated nutrition than mature dry seed"
           ],
 
-          safetyRules: [
-            "Use only correctly identified Cowpea plants.",
-            "Do not harvest chemically contaminated foliage.",
-            "Do not feed moldy or diseased material.",
-            "Do not allow wet forage to spoil in feeders.",
-            "Retain complete poultry feed as the primary diet.",
-            "Introduce gradually."
+          safetyWarnings: [
+            "Use only correctly identified Cowpea, Vigna unguiculata, plant material.",
+            "Do not assume that every vining legume is edible or suitable for poultry.",
+            "Harvest only from healthy established plants.",
+            "Do not harvest foliage from seed treated with chemicals where label restrictions prohibit feed or forage use.",
+            "Do not harvest foliage treated with a pesticide, herbicide, fungicide, or other product unless the label permits poultry feed or grazing use and all required intervals have passed.",
+            "Do not feed foliage contaminated by fertilizer granules, manure buildup, fuel, oil, paint, treated lumber runoff, floodwater, or unknown chemicals.",
+            "Remove diseased, moldy, slimy, fermented, yellowed, decaying, or unusually discolored material.",
+            "Do not feed foliage contaminated by rodent droppings, wildlife feces, or standing dirty water.",
+            "Rinse only when necessary and drain thoroughly before feeding.",
+            "Do not place wet foliage in a dense pile where it can heat or ferment.",
+            "Do not allow uneaten wet forage to remain in feeders, bedding, mud, or manure.",
+            "Remove spoiled or heavily soiled remains promptly.",
+            "Offer tender leaves and soft vine tips rather than coarse mature stems.",
+            "Do not remove so much foliage that plants are unable to recover.",
+            "Plants intended for mature pod or seed harvest should receive only limited vegetative cutting.",
+            "Introduce fresh Cowpea foliage gradually.",
+            "Use measured supplemental quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Fresh Cowpea foliage is not nutritionally complete.",
+            "Monitor droppings, appetite, crop fill, body condition, and complete-feed intake after introduction."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confidently-identify-cowpea",
+            "cannot-verify-pesticide-or-chemical-use",
+            "cannot-inspect-fresh-plant-material",
+            "cannot-remove-spoiled-forage",
+            "requires-long-term-storage",
+            "requires-precise-feed-intake-measurement",
+            "expects-fresh-forage-to-replace-complete-feed",
+            "cannot-prevent-excessive-defoliation",
+            "has-only-newly-hatched-chicks",
+            "cannot-protect-plants-from-unrestricted-flock-access"
           ],
 
           directFacts: {
@@ -16511,62 +16670,216 @@ const BCP_FEED_CROPS = {
             suitableForLongTermStorage:
               false,
 
+            suitableForAdultChickens:
+              true,
+
+            suitableForYoungChicks:
+              false,
+
             requiresHeatTreatment:
+              false,
+
+            requiresCooking:
               false,
 
             repeatedHarvestPossible:
               true,
 
+            lightHarvestSupportsRegrowth:
+              true,
+
+            heavyHarvestMayReduceRegrowth:
+              true,
+
+            heavyHarvestMayReduceSeedYield:
+              true,
+
             rootSystemUsuallyPreserved:
               true,
+
+            freshWeightContainsSubstantialWater:
+              true,
+
+            freshWeightEquivalentToDrySeedWeight:
+              false,
+
+            completeFeedReplacement:
+              false,
+
+            exactFeedingPercentageKnown:
+              false,
+
+            exactStorageDurationKnown:
+              false,
+
+            exactBackyardYieldKnown:
+              false,
 
             notes: [
               "Young leaves and vine tips provide the simplest Cowpea poultry-use path.",
               "Cut-and-carry feeding protects plants better than unrestricted flock access.",
               "Tender material is generally more suitable than mature fibrous vines.",
+              "Cowpea foliage is a fresh seasonal supplement rather than a concentrated stored protein ingredient.",
+              "The absence of mature dry seed does not make unrestricted feeding appropriate.",
+              "Fresh foliage contains substantially more moisture than dry seed.",
+              "Fresh-forage weight should not be converted directly into dry-feed replacement.",
+              "Light harvest may permit repeated regrowth where adequate leaves, nodes, moisture, and growing points remain.",
               "Foliage harvest competes with pod and seed production when too much leaf area is removed.",
-              "No exact feeding percentage is stored."
+              "Plants grown primarily for dry seed should receive less vegetative harvest than forage-oriented plants.",
+              "No exact backyard feeding percentage is stored."
             ]
           }
         },
 
-         {
+        {
           id:
             "tender-immature-pods",
 
           label:
             "Tender Immature Pods",
 
-          enabled:
-            true,
+          description:
+            "Tender green Cowpea pods are picked before the pod walls and internal fibers become tough, inspected, and offered promptly whole, broken, or coarsely chopped as a measured seasonal supplement.",
 
-          primaryProduct:
+          primaryFeedRole:
+            "fresh-tender-pod-supplement",
+
+          harvestProducts: [
             "tender-green-cowpea-pods",
+            "immature-cowpea-seeds-within-pods",
+            "fresh-vegetable-legume-pods",
+            "seasonal-household-food-surplus",
+            "fresh-flock-enrichment"
+          ],
 
-          harvestStage:
-            "fully-elongated-but-still-tender",
+          suitableFeedingMethods: [
+            "whole-tender-pods",
+            "broken-pods",
+            "coarsely-chopped-pods",
+            "measured-fresh-supplement",
+            "forage-pan",
+            "seasonal-enrichment",
+            "household-surplus-feeding"
+          ],
 
-          harvestMethod:
-            "Pick green pods before pod walls and internal fibers become tough.",
+          requiredProcessingTasks: [
+            "harvest-tender-immature-pods",
+            "inspect-pods",
+            "remove-diseased-pods",
+            "remove-insect-damaged-pods",
+            "remove-moldy-pods",
+            "remove-contaminated-pods",
+            "portion",
+            "feed-promptly"
+          ],
 
-          feedingMethod:
-            "Offer whole, broken, or coarsely chopped as a seasonal supplemental food.",
+          optionalProcessingTasks: [
+            "rinse-if-needed",
+            "drain-after-rinsing",
+            "break-long-pods-into-shorter-pieces",
+            "coarsely-chop",
+            "shell-partially-filled-pods",
+            "refrigerate-briefly",
+            "freeze-after-appropriate-preparation",
+            "share-household-quality-surplus-with-flock"
+          ],
 
-          requiresProcessing:
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "hand-pruners",
+            "clean-cutting-board",
+            "kitchen-knife",
+            "food-scale",
+            "refrigerator",
+            "freezer",
+            "food-safe-freezer-container"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "repeated-picking-as-tender-pods-reach-usable-size",
+
+          storageMethods: [
+            "immediate-feeding",
+            "brief-refrigerated-storage",
+            "freezing-after-appropriate-preparation"
+          ],
+
+          preferredStorageMethod:
+            "feed-fresh-promptly-or-refrigerate-briefly-after-harvest",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
             false,
 
-          requiredProcessingSteps: [
-            "Inspect pods",
-            "Remove damaged or diseased pods",
-            "Clean if needed",
-            "Feed promptly"
-          ],
+          refrigerationSuitable:
+            true,
 
-          optionalProcessingSteps: [
-            "Break long pods into shorter pieces",
-            "Refrigerate briefly",
-            "Share household-quality surplus with the flock"
-          ],
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          bacterialContaminationRiskScore:
+            3,
+
+          spoilageRiskScore:
+            4,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            3,
 
           expectedProcessingTimeLevel:
             "low",
@@ -16599,51 +16912,110 @@ const BCP_FEED_CROPS = {
             3,
 
           preservationOptions: [
+            "immediate-fresh-feeding",
             "short-term-refrigeration",
-            "freezing-after-appropriate-preparation"
+            "freezing-after-appropriate-preparation",
+            "household-food-use"
           ],
 
           preservationLimitations: [
-            "Fresh pods lose quality during extended storage.",
-            "Frozen pods require freezer space.",
-            "Fibrous overmature pods are less suitable for direct feeding."
+            "Fresh tender pods lose quality during extended storage.",
+            "Refrigerated pods remain perishable.",
+            "Wet pods may become slimy, moldy, or rotten when packed densely.",
+            "Frozen pods require electricity, freezer capacity, suitable packaging, and careful thawing.",
+            "Freezing changes pod texture.",
+            "Fibrous overmature pods are less suitable for direct feeding.",
+            "Drying tender pods does not create the same product as mature dry Cowpea seed.",
+            "Fresh pod weight contains substantially more water than dry mature seed.",
+            "A fresh-pod harvest eliminates later fresh-pea or mature dry-seed harvest from the same pod.",
+            "No universal fresh-pod storage duration is stored."
           ],
 
           estimatedShelfLifeCategory:
             "short",
 
           shelfLifeAfterProcessingCategory:
-            "short-to-moderate",
+            "moderate-when-properly-frozen",
 
           likelyLossPoints: [
-            "Missed harvest window",
-            "Fibrous pod development",
-            "Insect damage",
-            "Disease",
-            "Refrigerator deterioration",
-            "Uneaten whole pods"
+            "missed-harvest-timing",
+            "pods-becoming-fibrous",
+            "insect-damage",
+            "cowpea-curculio-damage",
+            "disease-damage",
+            "pod-decay",
+            "wildlife-feeding",
+            "heat-exposure-after-harvest",
+            "moisture-loss",
+            "refrigerator-spoilage",
+            "freezer-failure",
+            "freezer-burn",
+            "feed-refusal",
+            "pods-trampled-into-litter",
+            "overfeeding"
           ],
 
           strengths: [
-            "Minimal preparation",
-            "Household-food value",
-            "Seasonal flock enrichment",
-            "Easy visual portioning",
-            "No dry-seed shelling required"
+            "Simple harvest",
+            "Minimal processing",
+            "No mature-seed heat treatment required",
+            "Strong household-food value",
+            "Useful seasonal flock variety",
+            "Tender pods are easy to inspect",
+            "Pods may be fed whole or chopped",
+            "Fresh pods are easier to portion than loose foliage",
+            "Harvest can be repeated as pods develop",
+            "Surplus household-quality pods can be shared with the flock"
           ],
 
           limitations: [
-            "Requires repeated picking",
             "Short fresh-storage life",
-            "Less concentrated than dry seed",
-            "Harvesting pods reduces mature-seed yield"
+            "Lower dry-matter concentration than mature seed",
+            "Not a complete poultry feed",
+            "Repeated picking requires labor",
+            "Pods become fibrous when harvest is delayed",
+            "Some cultivars produce pods better suited to shell peas than whole-pod use",
+            "Fresh pods provide less concentrated protein than dry mature seed by fresh weight",
+            "Harvesting tender pods prevents those pods from producing mature dry seed",
+            "Excess feeding may reduce complete-feed intake",
+            "No universal feeding percentage is available"
           ],
 
-          safetyRules: [
-            "Use only clean untreated pods.",
-            "Discard moldy, rotten, insect-decayed, or chemically contaminated pods.",
-            "Remove uneaten pods before spoilage.",
-            "Treat pods as supplemental food rather than a balanced ration."
+          safetyWarnings: [
+            "Use only correctly identified Cowpea, Vigna unguiculata, pods.",
+            "Do not assume that pods from every ornamental or wild legume are edible.",
+            "Harvest pods while they remain tender and sound.",
+            "Do not feed pods from chemically treated seed where label restrictions prohibit feed or food use.",
+            "Do not feed pods treated with a pesticide, fungicide, herbicide, or other product unless the label permits the intended food or feed use and all required intervals have passed.",
+            "Discard pods that are moldy, slimy, rotten, fermented, musty, badly discolored, or unusually soft.",
+            "Discard pods with severe insect damage or internal decay.",
+            "Do not feed pods contaminated by rodents, wildlife feces, floodwater, fuel, oil, fertilizer granules, or unknown chemicals.",
+            "Rinse only when needed and drain thoroughly.",
+            "Do not seal wet warm pods in an airtight container.",
+            "Feed fresh pods promptly.",
+            "Refrigerate harvested pods promptly when they will not be used immediately.",
+            "Thaw frozen pods safely and feed them promptly.",
+            "Do not refreeze spoiled or repeatedly thawed pods.",
+            "Remove uneaten wet pods before they spoil in feeders or litter.",
+            "Break unusually long or tough pods into manageable pieces.",
+            "Do not use fibrous overmature pod walls as a substitute for mature processed seed.",
+            "Introduce unfamiliar pods gradually.",
+            "Offer measured supplemental quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Tender Cowpea pods are not a complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confidently-identify-cowpea-pods",
+            "cannot-verify-pesticide-or-chemical-use",
+            "cannot-harvest-pods-at-the-tender-stage",
+            "cannot-inspect-for-internal-damage",
+            "cannot-refrigerate-or-feed-promptly",
+            "cannot-remove-spoiled-fresh-feed",
+            "requires-long-nonrefrigerated-storage",
+            "requires-complete-feed-replacement",
+            "requires-precise-dry-matter-feed-measurement",
+            "has-only-newly-hatched-chicks"
           ],
 
           directFacts: {
@@ -16653,74 +17025,229 @@ const BCP_FEED_CROPS = {
             suitableForHumanFood:
               true,
 
+            suitableForAdultChickens:
+              true,
+
+            suitableForYoungChicks:
+              false,
+
             requiresHeatTreatment:
               false,
 
-            repeatedHarvestPossible:
+            requiresCooking:
+              false,
+
+            wholePodFeedingPossible:
               true,
 
+            choppedPodFeedingPossible:
+              true,
+
+            freezingPossible:
+              true,
+
+            refrigerationSuitable:
+              true,
+
+            freshPodEquivalentToDrySeed:
+              false,
+
+            harvestPreventsLaterDrySeedFromSamePod:
+              true,
+
+            completeFeedReplacement:
+              false,
+
+            exactFeedingPercentageKnown:
+              false,
+
+            exactStorageDurationKnown:
+              false,
+
+            exactBackyardPodYieldKnown:
+              false,
+
             notes: [
-              "Tender-pod suitability varies among cultivars.",
-              "Vegetable-oriented Cowpeas may provide better pod quality than grain or forage cultivars.",
-              "Pods should be harvested before they become coarse and fibrous.",
-              "No universal poultry serving size is stored."
+              "Tender immature pods are a fresh vegetable pathway rather than a dry-seed pathway.",
+              "Pods should be harvested before the walls and internal fibers become tough.",
+              "Cultivars differ substantially in pod tenderness, length, fiber, seed size, and preferred household use.",
+              "Fresh tender pods do not require the same heat treatment recommended for mature dry Cowpea seed.",
+              "This distinction applies to genuinely immature tender pods and should not be extended automatically to mature dry seed.",
+              "Fresh pod weight contains substantially more moisture than mature dry seed.",
+              "Fresh-pod yield should not be converted directly into dry-feed yield.",
+              "Picking tender pods prevents those pods from contributing to later fresh-pea or dry-seed production.",
+              "Household-food priority may be higher than poultry-feed priority for high-quality tender pods.",
+              "No exact backyard feeding percentage is stored."
             ]
           }
         },
 
-         {
+                {
           id:
             "fresh-immature-peas",
 
           label:
-            "Fresh Immature Peas",
+            "Fresh Immature Cowpeas",
 
-          enabled:
-            true,
+          description:
+            "Immature Cowpea seeds are shelled from fresh green pods before the seeds dry and harden, inspected, and offered promptly in measured quantities as a seasonal fresh legume supplement or reserved for household food.",
 
-          primaryProduct:
-            "shelled-or-unshelled-fresh-cowpeas",
+          primaryFeedRole:
+            "fresh-immature-legume-seed-supplement",
 
-          harvestStage:
-            "filled-green-pod-before-dry-maturity",
+          harvestProducts: [
+            "fresh-green-cowpea-seeds",
+            "immature-shelled-cowpeas",
+            "fresh-shell-peas",
+            "seasonal-household-food-surplus",
+            "fresh-legume-enrichment"
+          ],
 
-          harvestMethod:
-            "Harvest filled green pods and either offer suitable pods whole or shell the fresh peas.",
+          suitableFeedingMethods: [
+            "fresh-shelled-peas",
+            "lightly-cooked-fresh-peas",
+            "measured-fresh-supplement",
+            "forage-pan",
+            "mixed-fresh-supplement",
+            "household-surplus-feeding",
+            "seasonal-enrichment"
+          ],
 
-          feedingMethod:
-            "Offer fresh peas or tender filled pods in controlled supplemental quantities.",
+          requiredProcessingTasks: [
+            "harvest-filled-green-pods",
+            "shell-pods",
+            "inspect-fresh-seeds",
+            "remove-damaged-seeds",
+            "remove-insect-damaged-seeds",
+            "remove-moldy-seeds",
+            "remove-contaminated-seeds",
+            "portion",
+            "feed-promptly"
+          ],
 
-          requiresProcessing:
+          optionalProcessingTasks: [
+            "rinse-if-needed",
+            "drain-after-rinsing",
+            "lightly-cook",
+            "cool-completely-after-cooking",
+            "refrigerate-briefly",
+            "freeze-after-appropriate-preparation",
+            "mix-with-other-fresh-vegetables",
+            "reserve-high-quality-peas-for-household-food"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "shelling-bowl",
+            "clean-colander",
+            "food-scale",
+            "cooking-pot",
+            "refrigerator",
+            "freezer",
+            "food-safe-storage-container",
+            "food-safe-freezer-container"
+          ],
+
+          harvestPattern:
+            "repeated",
+
+          harvestFrequencyCategory:
+            "repeated-picking-as-green-seeds-fill-pods",
+
+          storageMethods: [
+            "immediate-feeding",
+            "brief-refrigerated-storage",
+            "freezing-after-appropriate-preparation"
+          ],
+
+          preferredStorageMethod:
+            "feed-fresh-promptly-or-refrigerate-briefly-after-shelling",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
             false,
 
-          requiredProcessingSteps: [
-            "Inspect pods and peas",
-            "Remove damaged material",
-            "Clean if needed",
-            "Feed promptly"
-          ],
+          refrigerationSuitable:
+            true,
 
-          optionalProcessingSteps: [
-            "Shell peas",
-            "Cook for household use",
-            "Refrigerate briefly",
-            "Freeze after appropriate preparation"
-          ],
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          bacterialContaminationRiskScore:
+            3,
+
+          spoilageRiskScore:
+            5,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
 
           expectedProcessingTimeLevel:
-            "low-to-moderate",
+            "moderate",
 
           estimatedProcessingMinutesPerPound:
             null,
 
           expectedWasteLevel:
-            "low-to-moderate",
+            "moderate",
 
           estimatedWastePercent:
             null,
 
           storageEfficiencyScore:
-            3,
+            2,
 
           processingEfficiencyScore:
             4,
@@ -16729,7 +17256,7 @@ const BCP_FEED_CROPS = {
             4,
 
           preservationFlexibilityScore:
-            4,
+            3,
 
           humanFoodPriorityScore:
             5,
@@ -16738,149 +17265,386 @@ const BCP_FEED_CROPS = {
             4,
 
           preservationOptions: [
-            "short-term-refrigeration",
-            "freezing",
-            "cooking"
+            "immediate-fresh-feeding",
+            "brief-refrigeration",
+            "freezing-after-appropriate-preparation",
+            "light-cooking",
+            "household-food-use"
           ],
 
           preservationLimitations: [
-            "Fresh peas remain perishable.",
-            "Shelling can be labor intensive.",
-            "Freezing requires electricity and freezer space.",
-            "Fresh peas are not equivalent to dry mature seed by weight."
+            "Fresh immature Cowpeas contain substantial moisture and spoil much faster than mature dry seed.",
+            "Shelled peas deteriorate faster than intact pods.",
+            "Warm shelled peas should not be held in a dense container for extended periods.",
+            "Refrigeration slows but does not stop deterioration.",
+            "Freezing requires electricity, packaging, freezer space, and careful thawing.",
+            "Freezing may soften texture after thawing.",
+            "Drying immature green peas does not produce the same storage product as naturally matured dry Cowpea seed.",
+            "Fresh immature seed contains less dry matter per pound than mature dry seed.",
+            "Harvesting fresh peas prevents those seeds from becoming mature dry grain.",
+            "No universal refrigerated or frozen storage duration is stored."
           ],
 
           estimatedShelfLifeCategory:
             "short",
 
           shelfLifeAfterProcessingCategory:
-            "moderate-when-frozen",
+            "moderate-when-properly-frozen",
 
           likelyLossPoints: [
-            "Shelling loss",
-            "Missed harvest timing",
-            "Insect-damaged peas",
-            "Refrigerator spoilage",
-            "Freezer failure",
-            "Overfeeding"
+            "pods-harvested-before-seeds-fill",
+            "pods-harvested-after-seeds-harden",
+            "shelling-loss",
+            "insect-damaged-seeds",
+            "cowpea-curculio-damage",
+            "disease-damaged-seeds",
+            "wildlife-feeding",
+            "heat-exposure-after-shelling",
+            "moisture-loss",
+            "refrigerator-spoilage",
+            "freezer-burn",
+            "freezer-failure",
+            "spillage",
+            "feed-refusal",
+            "uneaten-peas-spoiling-in-litter"
           ],
 
           strengths: [
-            "High household-food value",
-            "Easy flock acceptance",
-            "No dry-seed storage required",
-            "Can be portioned more precisely than leafy forage",
-            "Useful bridge between tender pods and mature seed"
+            "Useful seasonal protein-oriented supplement",
+            "Higher dry-matter concentration than tender foliage",
+            "No dry-seed milling required",
+            "No mature dry-seed storage required",
+            "Strong household-food value",
+            "Easy to measure by weight",
+            "Fresh peas are easy for adult birds to consume",
+            "Can be offered raw while genuinely immature and fresh",
+            "Can be lightly cooked where preferred",
+            "Surplus household peas can be shared with the flock"
           ],
 
           limitations: [
-            "Repeated harvest labor",
-            "Short fresh-storage life",
-            "Lower dry-matter concentration than dry seed",
-            "Harvesting fresh peas eliminates later dry-seed harvest from those pods"
+            "Short storage life",
+            "Requires pod picking and shelling labor",
+            "Lower dry-matter concentration than mature dry seed",
+            "Not a complete poultry feed",
+            "Fresh peas may be more valuable as household food",
+            "Repeated harvest requires frequent inspection",
+            "Pest damage may be hidden inside pods",
+            "Harvesting fresh peas prevents mature-seed production",
+            "Excess feeding may displace complete feed",
+            "No universal feeding percentage is available"
           ],
 
-          safetyRules: [
-            "Discard moldy, rotten, or chemically contaminated peas.",
-            "Do not allow fresh peas to spoil in warm feeders.",
-            "Maintain complete feed as the primary ration.",
-            "Introduce gradually."
+          safetyWarnings: [
+            "Use only correctly identified Cowpea, Vigna unguiculata, seeds from sound immature pods.",
+            "Do not assume that seeds from every wild, ornamental, or unidentified legume are safe.",
+            "Use only peas that remain fresh, green, moist, and immature rather than fully dried mature seed.",
+            "Do not apply fresh-pea guidance to hardened mature Cowpea seed.",
+            "Do not feed peas from chemically treated planting seed where label restrictions prohibit food or feed use.",
+            "Do not feed peas treated with pesticides, fungicides, herbicides, or other products unless the label permits the intended use and all required intervals have passed.",
+            "Discard peas that are moldy, slimy, sour, fermented, musty, rotten, unusually discolored, or heated.",
+            "Discard peas with severe insect tunneling, internal decay, or Cowpea curculio damage.",
+            "Do not feed peas contaminated by rodents, wildlife feces, floodwater, fuel, oil, fertilizer, or unknown chemicals.",
+            "Rinse only when needed and drain thoroughly.",
+            "Do not store warm wet peas in a sealed container.",
+            "Refrigerate promptly when peas will not be fed immediately.",
+            "Cool cooked peas completely before feeding.",
+            "Do not feed cooked peas while hot.",
+            "Do not add salt, seasoning, butter, oil, sugar, sauces, onions, garlic, or other household ingredients before poultry feeding.",
+            "Do not use canned peas packed in brine or seasoned liquid as a routine poultry supplement.",
+            "Feed thawed peas promptly.",
+            "Remove uneaten fresh peas before they spoil in litter or feeders.",
+            "Introduce fresh peas gradually.",
+            "Offer measured supplemental quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Fresh immature Cowpeas are not a complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confidently-distinguish-immature-from-mature-seed",
+            "cannot-identify-cowpea",
+            "cannot-verify-pesticide-or-chemical-use",
+            "cannot-inspect-for-internal-insect-damage",
+            "cannot-shell-or-portion-fresh-peas",
+            "cannot-refrigerate-or-feed-promptly",
+            "cannot-remove-spoiled-fresh-feed",
+            "requires-long-nonrefrigerated-storage",
+            "requires-complete-feed-replacement",
+            "has-only-newly-hatched-chicks"
           ],
 
           directFacts: {
             suitableForImmediateFeeding:
               true,
 
-            suitableForHumanFood:
+            suitableForHouseholdFood:
               true,
 
-            requiresHeatTreatment:
+            suitableForAdultChickens:
+              true,
+
+            suitableForYoungChicks:
               false,
 
-            equivalentToDrySeed:
+            shellingRequired:
+              true,
+
+            cookingRequired:
+              false,
+
+            cookingOptional:
+              true,
+
+            matureDrySeedProcessingRulesApply:
+              false,
+
+            freshPeasEquivalentToMatureDrySeed:
+              false,
+
+            refrigerationSuitable:
+              true,
+
+            freezingSuitable:
+              true,
+
+            harvestPreventsLaterDrySeed:
+              true,
+
+            completeFeedReplacement:
+              false,
+
+            exactFeedingPercentageKnown:
+              false,
+
+            exactStorageDurationKnown:
+              false,
+
+            exactBackyardFreshPeaYieldKnown:
               false,
 
             notes: [
-              "Fresh immature peas contain substantially more moisture than mature dry seed.",
-              "Fresh-pea yield should not be converted directly into dry-feed yield.",
-              "Shelling improves inspection and portion control but adds labor.",
-              "No exact backyard feeding rate is stored."
+              "Fresh immature Cowpeas are physiologically and practically different from mature dry seed.",
+              "The mature-seed heat-treatment recommendation should not be applied automatically to genuinely immature fresh peas.",
+              "Fresh peas should still be offered as measured supplements rather than unrestricted feed.",
+              "Fresh peas contain more moisture and less dry matter per pound than mature dry Cowpea seed.",
+              "Shelled peas spoil faster than peas retained inside intact pods.",
+              "Harvest timing affects tenderness, seed size, household-food quality, and poultry acceptance.",
+              "Fresh-pea harvest competes directly with mature dry-seed production.",
+              "High-quality fresh peas may provide greater household-food value than poultry-feed value.",
+              "Cooking is optional for sound immature peas but may improve softness and household handling.",
+              "No exact backyard feeding percentage is stored."
             ]
           }
         },
 
-         {
+        {
           id:
             "mature-cooked-seed",
 
           label:
             "Cooked Mature Cowpea Seed",
 
-          enabled:
-            true,
+          description:
+            "Mature dry Cowpea seed is cleaned, sorted, soaked when appropriate, thoroughly cooked in plain water until fully softened, cooled, drained, and offered promptly in measured quantities as a processed protein-and-starch supplement for established chickens.",
 
-          primaryProduct:
-            "fully-mature-dry-cowpea-seed",
+          primaryFeedRole:
+            "wet-processed-protein-and-starch-supplement",
 
-          harvestStage:
-            "fully-mature-dry-seed",
-
-          harvestMethod:
-            "Harvest dry pods, complete drying, shell seed, clean thoroughly, and remove damaged or insect-infested kernels.",
-
-          feedingMethod:
-            "Cook mature seed thoroughly, cool completely, drain excess liquid, and offer only as a controlled supplemental food within an otherwise balanced adult-flock diet.",
-
-          requiresProcessing:
-            true,
-
-          requiredProcessingSteps: [
-            "Harvest mature dry pods",
-            "Complete postharvest drying",
-            "Shell seed",
-            "Clean and sort",
-            "Remove moldy, discolored, damaged, or insect-infested seed",
-            "Measure a manageable batch",
-            "Soak if used by the selected cooking method",
-            "Cook thoroughly",
-            "Verify that the seed is fully softened",
-            "Cool promptly",
-            "Drain excess liquid",
-            "Portion conservatively",
-            "Refrigerate or freeze leftovers promptly"
+          harvestProducts: [
+            "mature-dry-cowpea-seed",
+            "cleaned-whole-cowpeas",
+            "soaked-cowpeas",
+            "fully-cooked-cowpeas",
+            "wet-processed-legume-supplement"
           ],
 
-          optionalProcessingSteps: [
-            "Rinse before cooking",
-            "Use a pressure cooker",
-            "Mash or coarsely break cooked peas",
-            "Freeze in small measured portions",
-            "Combine a small amount with other approved supplemental foods"
+          suitableFeedingMethods: [
+            "plain-cooked-whole-peas",
+            "mashed-cooked-peas",
+            "coarsely-broken-cooked-peas",
+            "measured-wet-supplement",
+            "mixed-with-complete-feed-at-feeding-time",
+            "seasonal-or-occasional-protein-oriented-supplement"
           ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-dry-pods",
+            "dry-pods",
+            "shell",
+            "remove-chaff",
+            "clean-seed",
+            "sort-seed",
+            "remove-damaged-seed",
+            "remove-insect-damaged-seed",
+            "remove-moldy-seed",
+            "rinse",
+            "cook-thoroughly-in-plain-water",
+            "verify-seeds-are-fully-softened",
+            "cool-completely",
+            "drain",
+            "portion",
+            "feed-promptly"
+          ],
+
+          optionalProcessingTasks: [
+            "soak-before-cooking",
+            "discard-soak-water",
+            "rinse-after-soaking",
+            "change-cooking-water",
+            "mash-after-cooking",
+            "coarsely-break-after-cooking",
+            "weigh-dry-seed-before-cooking",
+            "weigh-cooked-seed",
+            "refrigerate-leftovers-promptly",
+            "freeze-portioned-cooked-seed",
+            "record-cooking-time-and-batch-size"
+          ],
+
+          requiredEquipment: [
+            "cooking-pot",
+            "reliable-heat-source",
+            "clean-water"
+          ],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "drying-screen",
+            "shelling-container",
+            "grain-screen",
+            "colander",
+            "soaking-container",
+            "food-scale",
+            "cooking-timer",
+            "refrigerator",
+            "freezer",
+            "food-safe-storage-containers"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal-dry-seed-harvest-with-repeated-small-batch-cooking",
+
+          storageMethods: [
+            "immediate-feeding",
+            "brief-refrigerated-storage",
+            "freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-clean-mature-seed-dry-and-cook-only-small-quantities-needed-for-immediate-or-short-term-use",
+
+          storageDurationCategory:
+            "very-short-after-cooking",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            true,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            true,
+
+          soakingRequired:
+            false,
+
+          coolingRequired:
+            true,
+
+          drainingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          temperatureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          bacterialContaminationRiskScore:
+            5,
+
+          spoilageRiskScore:
+            5,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          underprocessingRiskScore:
+            5,
+
+          overprocessingRiskScore:
+            3,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
 
           expectedProcessingTimeLevel:
-            "moderate-to-high",
+            "high",
 
           estimatedProcessingMinutesPerPound:
             null,
 
           expectedWasteLevel:
-            "low-to-moderate",
+            "moderate",
 
           estimatedWastePercent:
             null,
 
           storageEfficiencyScore:
-            3,
+            1,
 
           processingEfficiencyScore:
-            3,
+            2,
 
           feedMeasurementPrecisionScore:
             5,
 
           preservationFlexibilityScore:
-            4,
+            3,
 
           humanFoodPriorityScore:
             5,
@@ -16889,153 +17653,412 @@ const BCP_FEED_CROPS = {
             4,
 
           preservationOptions: [
-            "refrigeration-after-cooking",
-            "freezing-after-cooking",
-            "dry-whole-seed-storage-before-cooking"
+            "immediate-cooked-feeding",
+            "brief-refrigeration",
+            "freezing-in-portioned-batches",
+            "household-food-use"
           ],
 
           preservationLimitations: [
-            "Cooked seed is highly perishable.",
-            "Cooked Cowpeas are not shelf stable at room temperature.",
-            "Refrigerated storage is short term.",
-            "Freezing requires reliable freezer capacity.",
-            "Repeated thawing and refreezing should be avoided.",
-            "Cooked-feed storage guidance should follow safe food-handling practices."
+            "Cooking converts shelf-stable dry seed into a wet highly perishable product.",
+            "Cooked Cowpeas require prompt cooling and safe handling.",
+            "Refrigeration slows but does not stop spoilage.",
+            "Freezing requires electricity, freezer capacity, suitable packaging, and thawing management.",
+            "Repeated warming and cooling increase spoilage risk.",
+            "Cooked seed may absorb substantial water, increasing fresh weight without increasing original dry matter.",
+            "Cooked-seed weight should not be compared directly with dry-seed feed weight.",
+            "Cooking-water disposal removes some soluble compounds and nutrients.",
+            "Cooking does not correct methionine, calcium, phosphorus-availability, vitamin, or mineral limitations.",
+            "Cooking does not make moldy, chemically treated, rodent-contaminated, or mycotoxin-suspect seed safe.",
+            "No universal refrigerated holding time is stored.",
+            "No universal household cooking duration is stored because seed age, cultivar, soaking, water quality, temperature, pressure, and batch size vary."
           ],
 
           estimatedShelfLifeCategory:
-            "long-before-cooking-and-short-after-cooking",
+            "very-short",
 
           shelfLifeAfterProcessingCategory:
-            "short-refrigerated-or-moderate-frozen",
+            "very-short-refrigerated-or-moderate-when-frozen",
 
           likelyLossPoints: [
-            "Improper drying before storage",
-            "Stored-seed insect damage",
-            "Mold",
-            "Underprocessing",
-            "Scorching",
-            "Cooking-water loss",
-            "Spoilage after cooking",
-            "Uneaten wet feed",
-            "Freezer failure",
-            "Overfeeding"
+            "pod-shattering",
+            "field-insect-damage",
+            "wildlife-feeding",
+            "shelling-loss",
+            "cleaning-loss",
+            "stored-seed-insects-before-cooking",
+            "seed-rejected-during-sorting",
+            "soak-water-solids",
+            "cooking-water-solids",
+            "overcooking",
+            "scorching",
+            "uneven-cooking",
+            "spillage",
+            "refrigerator-spoilage",
+            "freezer-burn",
+            "freezer-failure",
+            "feed-refusal",
+            "uneaten-cooked-seed-spoiling-in-litter"
           ],
 
           strengths: [
-            "Reduces important heat-labile antinutritional factors",
-            "Allows accurate portioning",
-            "Produces a soft readily consumed feed form",
-            "Supports long-term whole-seed storage before processing",
-            "Can share household cooking infrastructure",
-            "Provides a protein-oriented supplemental ingredient"
+            "Cooking reduces important heat-labile antinutritional factors",
+            "Whole cooked peas require no grain mill",
+            "Processing is possible with ordinary household equipment",
+            "Cooked peas are soft and easy for adult chickens to consume",
+            "Cooked seed can provide protein and starch",
+            "Portioning by weight is practical",
+            "Household-food and poultry-use batches can be coordinated",
+            "Dry seed can remain stored until cooking is needed",
+            "Freezing permits batch preparation",
+            "Cooking provides a more conservative pathway than raw mature-seed feeding"
           ],
 
           limitations: [
-            "Requires water, heat, cooling, and cleanup",
-            "Cooked seed spoils quickly",
-            "Still limited in methionine and calcium",
-            "Not nutritionally complete",
-            "No universal safe inclusion percentage is stored",
-            "Large batches require refrigeration or freezing",
-            "Processing labor may exceed feed-value savings"
+            "High fuel and water use",
+            "Substantial preparation and cleanup labor",
+            "Very short storage life after cooking",
+            "Requires careful cooling and refrigeration",
+            "Not a complete poultry feed",
+            "Methionine remains limiting",
+            "Calcium remains inadequate for laying hens",
+            "Cooked weight is inflated by absorbed water",
+            "Improper cooking may leave excessive antinutritional activity",
+            "Excessive cooking may damage protein quality",
+            "Wet feed can spoil rapidly in warm weather",
+            "A universal feeding percentage is not available"
           ],
 
-          safetyRules: [
-            "Do not feed moldy, musty, heated, fermented, or chemically contaminated seed.",
-            "Do not use treated planting seed.",
-            "Cook mature seed thoroughly rather than merely warming it.",
-            "Cool cooked seed promptly.",
-            "Do not leave wet cooked seed in warm feeders for extended periods.",
-            "Refrigerate or freeze leftovers promptly.",
-            "Discard spoiled leftovers.",
-            "Maintain complete poultry feed as the primary diet.",
-            "Provide laying hens with an appropriate calcium source.",
-            "Introduce gradually and monitor flock response."
+          safetyWarnings: [
+            "Use only correctly identified mature Cowpea, Vigna unguiculata, seed.",
+            "Never cook or feed chemically treated planting seed.",
+            "Do not use seed of unknown treatment status.",
+            "Do not cook or feed seed that is moldy, musty, damp, heated, sprouted in storage, rancid, badly insect damaged, rodent contaminated, flood contaminated, or chemically contaminated.",
+            "Sorting, washing, soaking, or cooking does not make unsafe seed suitable for feeding.",
+            "Use clean potable water.",
+            "Cook mature seed thoroughly until the entire seed is fully softened.",
+            "Do not rely on brief warming, light steaming, or incomplete simmering as validated processing.",
+            "Large batches may cook unevenly and require additional mixing, water, time, or batch separation.",
+            "Do not scorch or burn seed.",
+            "Do not assume that longer or hotter processing is always nutritionally better.",
+            "Excessive heat may damage protein quality and amino acids.",
+            "Cool cooked Cowpeas completely before feeding.",
+            "Do not feed hot or steaming seed.",
+            "Do not leave cooked Cowpeas at warm ambient temperature for extended periods.",
+            "Refrigerate leftovers promptly.",
+            "Freeze only sound freshly cooked portions.",
+            "Thaw frozen cooked Cowpeas safely and feed promptly.",
+            "Do not repeatedly thaw and refreeze cooked seed.",
+            "Discard cooked seed that becomes sour, slimy, moldy, fermented, unusually discolored, heated, or foul smelling.",
+            "Do not add salt, seasoning, butter, oil, sugar, sauces, onions, garlic, or other household ingredients.",
+            "Do not use canned Cowpeas packed in brine, sauce, or seasoning as a routine poultry supplement.",
+            "Remove uneaten cooked seed before it spoils in feeders, bedding, mud, or manure.",
+            "Introduce cooked Cowpeas gradually.",
+            "Offer measured supplemental quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Cooked Cowpeas are not a complete poultry feed.",
+            "Seek qualified poultry-nutrition assistance before using processed Cowpeas as a major ration ingredient."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confirm-seed-is-untreated",
+            "cannot-inspect-dry-seed-quality",
+            "cannot-provide-clean-water",
+            "cannot-cook-seed-thoroughly",
+            "cannot-control-batch-size-and-heating",
+            "cannot-cool-cooked-seed-safely",
+            "cannot-refrigerate-or-freeze-leftovers",
+            "cannot-remove-wet-spoiled-feed",
+            "requires-long-storage-after-processing",
+            "expects-cooking-to-create-complete-feed",
+            "expects-cooked-weight-to-equal-dry-feed-weight",
+            "requires-complete-feed-replacement",
+            "has-only-newly-hatched-chicks"
           ],
 
           directFacts: {
-            suitableForImmediateFeeding:
+            matureDrySeedRequiresProcessing:
               true,
 
-            suitableForLongTermStorage:
+            cookingRequiredForThisPath:
+              true,
+
+            soakingRequired:
               false,
 
-            suitableForLongTermStorageBeforeProcessing:
+            soakingMayReduceCookingTime:
               true,
 
-            requiresHeatTreatment:
+            wholeCookedSeedSuitable:
               true,
 
-            requiresMoistureControlAfterCooking:
+            cookedSeedSuitableForAdultChickens:
               true,
 
-            completeProteinSource:
+            cookedSeedSuitableForYoungChicks:
               false,
 
-            directSoybeanMealReplacement:
+            cookingReducesHeatLabileAntinutritionalFactors:
+              true,
+
+            cookingEliminatesAllAntinutritionalFactors:
+              false,
+
+            cookingCorrectsMethionineLimitation:
+              false,
+
+            cookingCorrectsCalciumDeficiency:
+              false,
+
+            cookingDestroysMycotoxinsReliably:
+              false,
+
+            cookingMakesTreatedSeedSafe:
+              false,
+
+            cookedSeedHighlyPerishable:
+              true,
+
+            refrigerationRequiredForLeftovers:
+              true,
+
+            freezingSuitable:
+              true,
+
+            cookedWeightIncludesAbsorbedWater:
+              true,
+
+            cookedWeightEquivalentToDryMatter:
+              false,
+
+            completeFeedReplacement:
+              false,
+
+            exactCookingDurationKnown:
+              false,
+
+            exactFeedingPercentageKnown:
+              false,
+
+            exactRefrigeratedStorageDurationKnown:
               false,
 
             notes: [
-              "Cooking is the most practical small-scale mature-seed processing pathway for many backyard growers.",
-              "Fully cooked seed should be soft throughout rather than firm in the center.",
-              "Soaking may shorten cooking time but does not replace cooking.",
-              "Cooking reduces important heat-labile antinutritional factors.",
-              "Cooking does not correct methionine limitation or low calcium.",
-              "Cooked Cowpeas should remain a supplemental ingredient.",
-              "No exact cooking time is stored because seed age, soaking, altitude, equipment, batch size, and method affect processing.",
-              "No exact feeding percentage is stored."
+              "Cooking is the most accessible conservative household pathway for mature Cowpea seed.",
+              "The objective is sufficient moist heat throughout the seed rather than merely warming the exterior.",
+              "Seed age, seed size, cultivar, soaking, water hardness, cooking temperature, pressure, and batch depth affect cooking time.",
+              "Soaking may shorten cooking time but is not treated as complete processing by itself.",
+              "Cooked Cowpeas should be fully softened and cooled before feeding.",
+              "Cooking reduces important heat-labile antinutritional factors but does not make Cowpeas nutritionally complete.",
+              "Methionine, calcium, available phosphorus, vitamins, minerals, and total ration balance still require attention.",
+              "Cooked weight includes absorbed water and should not be treated as equivalent to the original dry-seed weight.",
+              "The primary seed supply should remain dry and whole until a manageable batch is needed.",
+              "No universal household cooking duration or poultry feeding percentage is stored."
             ]
           }
         },
 
-         {
+                {
           id:
             "heat-treated-dry-seed",
 
           label:
             "Heat-Treated Dry Cowpea Seed",
 
-          enabled:
-            true,
+          description:
+            "Mature dry Cowpea seed is harvested, dried, shelled, cleaned, and subjected to a validated dry or low-moisture heat-treatment process before being cooled, inspected, optionally cracked or ground, and used as a measured supplement or formulated-ration ingredient.",
 
-          primaryProduct:
-            "processed-dry-cowpea-seed-or-meal",
+          primaryFeedRole:
+            "heat-processed-protein-and-starch-ingredient",
 
-          harvestStage:
-            "fully-mature-dry-seed",
-
-          harvestMethod:
-            "Harvest mature dry pods, dry fully, shell, clean, sort, and process the seed using a validated heat-treatment method.",
-
-          feedingMethod:
-            "Use properly processed whole, cracked, or ground seed only as a measured supplemental ingredient within a nutritionally balanced adult-poultry ration.",
-
-          requiresProcessing:
-            true,
-
-          requiredProcessingSteps: [
-            "Harvest mature dry pods",
-            "Complete drying",
-            "Shell seed",
-            "Clean and sort",
-            "Remove damaged, moldy, or insect-infested seed",
-            "Apply a validated time-and-temperature heat treatment",
-            "Ensure uniform treatment throughout the batch",
-            "Cool completely",
-            "Inspect for scorching or off odors",
-            "Coarsely crack or grind if required",
-            "Store in a cool dry insect-resistant container",
-            "Use conservative measured portions"
+          harvestProducts: [
+            "mature-dry-cowpea-seed",
+            "cleaned-whole-cowpeas",
+            "heat-treated-whole-cowpeas",
+            "heat-treated-cracked-cowpeas",
+            "heat-treated-ground-cowpea-meal",
+            "processed-legume-feed-ingredient"
           ],
 
-          optionalProcessingSteps: [
-            "Process in small uniform batches",
-            "Retain whole seed until near feeding time",
-            "Coarsely grind rather than producing fine dust",
-            "Label treatment date and batch",
-            "Freeze dry seed temporarily as part of a validated insect-control method"
+          suitableFeedingMethods: [
+            "measured-heat-treated-whole-seed",
+            "coarsely-cracked-heat-treated-seed",
+            "ground-heat-treated-ration-ingredient",
+            "mixed-grain-supplement",
+            "professionally-formulated-complete-ration",
+            "short-term-protein-oriented-supplement"
           ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-dry-pods",
+            "dry-pods",
+            "shell",
+            "remove-chaff",
+            "clean-seed",
+            "sort-seed",
+            "remove-damaged-seed",
+            "remove-insect-damaged-seed",
+            "remove-moldy-seed",
+            "verify-seed-dryness",
+            "select-validated-heat-treatment-method",
+            "control-processing-temperature",
+            "control-processing-duration",
+            "control-batch-depth",
+            "heat-seed-uniformly",
+            "cool-completely",
+            "inspect-after-processing",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "dehull-before-processing",
+            "crack-before-heat-treatment-when-method-supports-it",
+            "crack-after-heat-treatment",
+            "grind-after-heat-treatment",
+            "sieve-ground-meal",
+            "remove-excess-fines",
+            "record-processing-temperature",
+            "record-processing-duration",
+            "record-batch-size",
+            "record-seed-moisture",
+            "laboratory-test-processing-effectiveness",
+            "formulate-complete-ration",
+            "freeze-whole-dry-seed-before-processing-for-insect-control"
+          ],
+
+          requiredEquipment: [
+            "reliable-heat-treatment-equipment",
+            "accurate-temperature-monitoring",
+            "reliable-timing-method"
+          ],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "drying-screen",
+            "shelling-container",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "food-scale",
+            "oven",
+            "roaster",
+            "extruder",
+            "pressure-processing-equipment",
+            "temperature-probe",
+            "infrared-thermometer",
+            "cooling-rack",
+            "grain-cracker",
+            "grain-mill",
+            "particle-size-sieves",
+            "sealed-food-safe-storage-container",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal-dry-seed-harvest-with-repeated-controlled-processing-batches",
+
+          storageMethods: [
+            "sealed-dry-storage",
+            "cool-dark-dry-storage",
+            "short-term-ground-meal-storage",
+            "freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-the-main-seed-supply-whole-clean-dry-and-untreated-then-heat-process-only-controlled-batches-as-needed",
+
+          storageDurationCategory:
+            "moderate-to-long-when-kept-whole-and-dry",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            true,
+
+          coolingRequired:
+            true,
+
+          temperatureControlRequired:
+            true,
+
+          timeControlRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          oxidationSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          bacterialContaminationRiskScore:
+            2,
+
+          spoilageRiskScore:
+            3,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          underprocessingRiskScore:
+            5,
+
+          overprocessingRiskScore:
+            5,
+
+          heatDamageRiskScore:
+            5,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            5,
 
           expectedProcessingTimeLevel:
             "high",
@@ -17062,312 +18085,406 @@ const BCP_FEED_CROPS = {
             4,
 
           humanFoodPriorityScore:
-            2,
+            4,
 
           poultryFeedPriorityScore:
             5,
 
           preservationOptions: [
-            "whole-dry-seed-storage",
-            "sealed-processed-seed-storage",
+            "whole-dry-heat-treated-storage",
+            "short-term-cracked-storage",
             "short-term-ground-meal-storage",
-            "freezing-for-insect-control-when-validated"
+            "freezing-for-storage-insect-control",
+            "use-in-formulated-ration"
           ],
 
           preservationLimitations: [
-            "Ground meal deteriorates faster than whole seed.",
-            "Processed seed must remain dry after treatment.",
-            "Heat treatment does not eliminate the need for insect and rodent control.",
-            "Uniform treatment can be difficult with improvised equipment.",
-            "No universal backyard roasting schedule is stored."
+            "Dry heat treatment requires dependable control of temperature, duration, batch depth, seed moisture, equipment airflow, and heat distribution.",
+            "The surface of a seed may become hot before the center receives sufficient treatment.",
+            "Large or densely packed batches may process unevenly.",
+            "Ordinary household roasting methods are not automatically equivalent to controlled commercial extrusion, autoclaving, pressure processing, or other validated methods.",
+            "Underprocessing may leave excessive trypsin-inhibitor, lectin, or other heat-labile antinutritional activity.",
+            "Overprocessing may reduce protein quality, damage lysine and other amino acids, scorch seed, and reduce palatability.",
+            "The appearance, color, smell, or hardness of processed seed cannot confirm that antinutritional activity has been adequately reduced.",
+            "Heat-treated whole seed generally stores better than cracked or ground processed seed.",
+            "Cracking and grinding expose more surface area to oxygen, humidity, contamination, and fat oxidation.",
+            "Heat treatment does not correct methionine, calcium, available-phosphorus, vitamin, mineral, or total-ration limitations.",
+            "Heat treatment does not make moldy, chemically treated, rodent-contaminated, flood-contaminated, or mycotoxin-suspect seed safe.",
+            "No universal household roasting temperature, duration, batch depth, or moisture target is stored."
           ],
 
           estimatedShelfLifeCategory:
-            "moderate-to-long-if-whole-and-dry",
+            "moderate-to-long-when-whole-clean-cool-and-dry",
 
           shelfLifeAfterProcessingCategory:
-            "shorter-if-ground",
+            "shorter-after-cracking-or-grinding",
 
           likelyLossPoints: [
-            "Uneven heating",
-            "Underprocessing",
-            "Overheating",
-            "Scorching",
-            "Protein-quality loss",
-            "Dust loss during grinding",
-            "Moisture absorption after treatment",
-            "Stored-product insects",
-            "Rodent contamination",
-            "Oxidation after grinding"
+            "pod-shattering",
+            "field-insect-damage",
+            "cowpea-curculio-damage",
+            "wildlife-feeding",
+            "shelling-loss",
+            "winnowing-loss",
+            "cleaning-loss",
+            "stored-seed-insects-before-processing",
+            "seed-rejected-during-sorting",
+            "uneven-heating",
+            "underprocessed-kernels",
+            "scorched-seed",
+            "burned-seed",
+            "protein-damage",
+            "seed-lost-in-equipment",
+            "dust-produced-during-cracking-or-grinding",
+            "excessively-fine-particles",
+            "moisture-absorption",
+            "oxidation",
+            "rancidity",
+            "mold",
+            "rodent-damage",
+            "feed-refusal"
           ],
 
           strengths: [
-            "Produces a dry storable processed ingredient",
-            "Avoids the rapid spoilage of cooked wet seed",
-            "Allows accurate ration measurement",
-            "Can be prepared in advance",
-            "Can support formulated feed use when professionally balanced"
+            "Produces a dry processed ingredient rather than a wet perishable cooked product",
+            "Can reduce important heat-labile antinutritional factors",
+            "Processed whole seed may retain useful storage value",
+            "Heat-treated seed can be cracked or ground for ration mixing",
+            "Dry processing avoids cooking-water disposal",
+            "Can support larger-batch processing where equipment is suitable",
+            "Provides protein and starch",
+            "Can complement cereal ingredients in a properly formulated ration",
+            "Allows more precise weighing than fresh forage",
+            "May support household food and poultry-feed integration"
           ],
 
           limitations: [
-            "Reliable heat treatment is technically demanding",
-            "Improvised processing may be uneven",
-            "Excessive heat can damage amino-acid availability",
-            "Grinding creates dust and shortens storage life",
-            "The ingredient remains methionine limited",
-            "Professional ration formulation is needed for substantial inclusion",
-            "No universal processing schedule or inclusion rate is stored"
+            "Requires specialized knowledge",
+            "Requires dependable temperature and time control",
+            "Requires equipment capable of uniform processing",
+            "Underprocessing may be unsafe or nutritionally ineffective",
+            "Overprocessing may damage protein quality",
+            "No universal household roasting method is validated",
+            "Not a complete poultry feed",
+            "Methionine remains limiting",
+            "Calcium remains inadequate for laying hens",
+            "Phytate and mineral-availability concerns remain",
+            "Ground meal stores less well than whole seed",
+            "A universal ration inclusion percentage is not available"
           ],
 
-          safetyRules: [
-            "Use only untreated mature seed.",
-            "Do not rely on casual warming, sun exposure, or surface browning as proof of adequate processing.",
-            "Use a validated processing method.",
-            "Avoid scorching.",
-            "Cool seed completely before sealing.",
-            "Keep processed seed dry.",
-            "Discard moldy, insect-contaminated, chemically contaminated, or off-odor material.",
-            "Do not feed fine airborne dust.",
-            "Use only as part of a balanced diet."
+          safetyWarnings: [
+            "Use only correctly identified mature Cowpea, Vigna unguiculata, seed.",
+            "Never heat process or feed chemically treated planting seed.",
+            "Do not use seed of unknown treatment status.",
+            "Do not process seed that is moldy, musty, damp, heated, sprouted in storage, rancid, badly insect damaged, rodent contaminated, flood contaminated, or chemically contaminated.",
+            "Heat treatment does not reliably destroy mycotoxins or remove chemical contamination.",
+            "Do not assume that browning, cracking, dryness, aroma, or exterior temperature proves adequate internal processing.",
+            "Use a processing method supported by reliable Cowpea or feed-legume guidance.",
+            "Control temperature, duration, batch depth, seed moisture, and equipment loading.",
+            "Avoid processing batches too large for uniform heating.",
+            "Mix or rotate seed during treatment where the method requires it.",
+            "Monitor the coldest part of the batch rather than only the hottest exposed surface.",
+            "Do not rely on brief warming or light toasting.",
+            "Do not scorch, char, smoke, or burn the seed.",
+            "Do not assume that more heat always produces safer or more nutritious feed.",
+            "Excessive heating may damage lysine and reduce protein quality.",
+            "Cool processed seed completely before storage.",
+            "Do not seal warm seed because condensation may develop.",
+            "Inspect equipment for oil, rust, cleaning chemicals, plastic damage, or other contamination before processing.",
+            "Clean processing equipment before and after use.",
+            "Control grain dust during cracking or grinding.",
+            "Use hearing, eye, heat, and respiratory protection where appropriate.",
+            "Keep hands, hair, clothing, jewelry, children, and animals away from moving or hot equipment.",
+            "Store heat-treated seed in clean, dry, labeled, insect-resistant, and rodent-resistant containers.",
+            "Discard processed seed that develops musty, sour, rancid, heated, damp, moldy, or abnormal odors.",
+            "Introduce processed Cowpeas gradually.",
+            "Use measured quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Heat-treated Cowpea seed is not a complete poultry feed.",
+            "Use qualified poultry-nutrition assistance before including processed Cowpeas as a substantial ration ingredient."
           ],
 
-          directFacts: {
-            suitableForImmediateFeeding:
-              true,
-
-            suitableForLongTermStorage:
-              true,
-
-            requiresHeatTreatment:
-              true,
-
-            suitableForProfessionalFeedFormulation:
-              true,
-
-            suitableForUnformulatedHighInclusion:
-              false,
-
-            grindingOptional:
-              true,
-
-            wholeSeedStoragePreferred:
-              true,
-
-            notes: [
-              "Dry heat treatment can preserve a dry feed form but requires better process control than household cooking.",
-              "Heat must penetrate the full seed mass.",
-              "Overprocessing may reduce lysine or other amino-acid availability.",
-              "Whole treated seed generally stores better than ground meal.",
-              "Grinding should occur near use when practical.",
-              "No exact backyard heat-treatment protocol is stored.",
-              "No exact poultry inclusion percentage is stored."
-            ]
-          }
-        },
-
-         {
-          id:
-            "living-forage",
-
-          label:
-            "Living Cowpea Forage",
-
-          enabled:
-            true,
-
-          primaryProduct:
-            "standing-cowpea-foliage",
-
-          harvestStage:
-            "established-vegetative-growth",
-
-          harvestMethod:
-            "Allow chickens brief controlled access only after plants are well rooted and sufficiently vigorous.",
-
-          feedingMethod:
-            "Use temporary fencing, paddock rotation, or limited supervised access so birds graze leaves without destroying the stand.",
-
-          requiresProcessing:
-            false,
-
-          requiredProcessingSteps: [
-            "Establish plants without chicken access",
-            "Confirm strong rooting and vigorous growth",
-            "Inspect for pesticides, toxic weeds, mold, and disease",
-            "Limit access duration",
-            "Remove birds before severe defoliation",
-            "Allow recovery"
-          ],
-
-          optionalProcessingSteps: [
-            "Mow or trim before access",
-            "Use movable poultry netting",
-            "Combine with other forage species",
-            "Irrigate after grazing",
-            "Reseed damaged areas"
-          ],
-
-          expectedProcessingTimeLevel:
-            "low",
-
-          estimatedProcessingMinutesPerPound:
-            null,
-
-          expectedWasteLevel:
-            "moderate",
-
-          estimatedWastePercent:
-            null,
-
-          storageEfficiencyScore:
-            1,
-
-          processingEfficiencyScore:
-            5,
-
-          feedMeasurementPrecisionScore:
-            1,
-
-          preservationFlexibilityScore:
-            1,
-
-          humanFoodPriorityScore:
-            1,
-
-          poultryFeedPriorityScore:
-            5,
-
-          preservationOptions: [],
-
-          preservationLimitations: [
-            "Living forage cannot be stored.",
-            "Uncontrolled access may destroy the crop.",
-            "Bird intake cannot be measured precisely.",
-            "Frost ends the living-forage period."
-          ],
-
-          estimatedShelfLifeCategory:
-            "field-only",
-
-          shelfLifeAfterProcessingCategory:
-            "not-applicable",
-
-          likelyLossPoints: [
-            "Scratching",
-            "Uprooting",
-            "Trampling",
-            "Overgrazing",
-            "Soil compaction",
-            "Manure concentration",
-            "Wildlife feeding",
-            "Drought",
-            "Frost"
-          ],
-
-          strengths: [
-            "Natural grazing behavior",
-            "Exercise and enrichment",
-            "No harvest handling",
-            "Can support paddock rotation",
-            "Provides seasonal green forage",
-            "May contribute to soil cover"
-          ],
-
-          limitations: [
-            "Poor suitability for continuous run access",
-            "Intake is difficult to measure",
-            "Plants require establishment protection",
-            "Recovery depends on remaining leaf area and growing points",
-            "Wet access may damage soil",
-            "Direct access can reduce pod and seed yield"
-          ],
-
-          safetyRules: [
-            "Do not allow access to treated seed or recently treated plants.",
-            "Exclude toxic weeds.",
-            "Avoid grazing moldy or diseased stands.",
-            "Do not allow birds to remain until soil is bare.",
-            "Avoid access when saturated soil will compact or become muddy.",
-            "Maintain complete feed and clean water."
+          incompatibleUserTraits: [
+            "cannot-confirm-seed-is-untreated",
+            "cannot-inspect-seed-quality",
+            "has-no-reliable-heat-treatment-equipment",
+            "cannot-monitor-temperature",
+            "cannot-control-processing-duration",
+            "cannot-control-batch-depth",
+            "cannot-verify-uniform-heating",
+            "cannot-prevent-scorching",
+            "cannot-cool-seed-before-storage",
+            "cannot-control-grain-dust",
+            "requires-a-simple-beginner-processing-path",
+            "expects-visual-appearance-to-confirm-processing",
+            "expects-heat-treatment-to-create-complete-feed",
+            "requires-complete-feed-replacement",
+            "has-only-newly-hatched-chicks"
           ],
 
           directFacts: {
-            suitableForImmediateFeeding:
+            matureDrySeedRequiresProcessing:
               true,
 
-            suitableForLongTermStorage:
-              false,
-
-            requiresHeatTreatment:
-              false,
-
-            plantSurvivalDependsOnAccessControl:
+            heatTreatmentRequiredForThisPath:
               true,
 
-            preciseFeedIntakeMeasurementPossible:
+            dryHeatProcessingPossible:
+              true,
+
+            uniformHeatingRequired:
+              true,
+
+            temperatureControlRequired:
+              true,
+
+            durationControlRequired:
+              true,
+
+            batchDepthControlImportant:
+              true,
+
+            seedMoistureAffectsProcessing:
+              true,
+
+            underprocessingRiskHigh:
+              true,
+
+            overprocessingRiskHigh:
+              true,
+
+            heatTreatmentReducesHeatLabileAntinutritionalFactors:
+              true,
+
+            heatTreatmentEliminatesAllAntinutritionalFactors:
+              false,
+
+            heatTreatmentCorrectsMethionineLimitation:
+              false,
+
+            heatTreatmentCorrectsCalciumDeficiency:
+              false,
+
+            heatTreatmentDestroysMycotoxinsReliably:
+              false,
+
+            heatTreatmentMakesTreatedSeedSafe:
+              false,
+
+            wholeProcessedSeedStoresBetterThanGroundMeal:
+              true,
+
+            grindingAfterProcessingPossible:
+              true,
+
+            completeFeedReplacement:
+              false,
+
+            exactUniversalProcessingTemperatureKnown:
+              false,
+
+            exactUniversalProcessingDurationKnown:
+              false,
+
+            exactUniversalInclusionRateKnown:
               false,
 
             notes: [
-              "Cowpeas should be established before chickens enter the area.",
-              "Rotational access is more successful than continuous access.",
-              "Dense stands may tolerate brief grazing better than isolated plants.",
-              "Recovery is reduced when birds remove most leaves and growing points.",
-              "Living forage should be treated as enrichment and supplementation rather than a measured ration ingredient."
+              "Heat-treated dry Cowpea seed is an advanced processing pathway.",
+              "Research methods such as extrusion, autoclaving, pressure treatment, roasting, and other thermal processes should not be treated as interchangeable.",
+              "The required heat exposure depends on method, seed moisture, cultivar, particle size, equipment, batch depth, temperature, and duration.",
+              "Whole seeds are more difficult to heat uniformly than small particles.",
+              "Grinding raw seed before heat treatment may improve uniformity only when the chosen process safely handles meal and heats the entire batch.",
+              "Grinding after processing increases storage risk.",
+              "The planner should not provide a universal household roasting formula without validated evidence.",
+              "Adequate processing reduces important heat-labile antinutritional factors but does not correct the crop's amino-acid and mineral limitations.",
+              "The primary seed supply should remain whole and dry until controlled processing is needed.",
+              "This pathway should be recommended only to users with appropriate equipment, records, and feed-formulation knowledge."
             ]
           }
         },
 
         {
           id:
-            "rotational-access",
+            "living-forage",
 
           label:
-            "Rotational Cowpea Paddock",
+            "Living Cowpea Forage",
 
-          enabled:
+          description:
+            "Established Cowpea plants are grown behind a protective barrier or within a forage system that allows chickens to reach leaves and tender vine growth without gaining unrestricted access to roots, crowns, stems, or the entire planting.",
+
+          primaryFeedRole:
+            "protected-living-warm-season-forage",
+
+          harvestProducts: [
+            "living-cowpea-leaves",
+            "tender-vine-tips",
+            "young-shoots",
+            "fresh-green-forage",
+            "insect-foraging-opportunities",
+            "seasonal-pecking-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "forage-frame",
+            "protected-bed-edge-grazing",
+            "fence-line-foraging",
+            "reach-through-forage",
+            "managed-pecking-access",
+            "mobile-protected-planter",
+            "seasonal-living-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-cowpea-stand",
+            "allow-plants-to-root-securely",
+            "install-protective-barrier",
+            "verify-birds-cannot-reach-roots",
+            "verify-birds-cannot-enter-bed",
+            "inspect-plants",
+            "inspect-barrier",
+            "control-access-duration",
+            "monitor-defoliation",
+            "rest-plants-between-access-periods"
+          ],
+
+          optionalProcessingTasks: [
+            "use-forage-frame",
+            "use-wire-mesh-cover",
+            "use-fence-line-planting",
+            "rotate-access-sides",
+            "irrigate-after-grazing",
+            "fertilize-according-to-soil-test",
+            "reseed-damaged-areas",
+            "combine-with-other-safe-forage-species",
+            "allow-selected-plants-to-produce-pods",
+            "record-recovery-time"
+          ],
+
+          requiredEquipment: [
+            "protective-forage-barrier"
+          ],
+
+          helpfulEquipment: [
+            "forage-frame",
+            "welded-wire-panel",
+            "hardware-cloth",
+            "temporary-poultry-fencing",
+            "raised-bed-frame",
+            "stakes",
+            "irrigation-line",
+            "shade-cloth",
+            "mobile-planter",
+            "inspection-gate"
+          ],
+
+          harvestPattern:
+            "repeated-managed-access",
+
+          harvestFrequencyCategory:
+            "short-controlled-access-periods-with-recovery-between-use",
+
+          storageMethods: [
+            "not-applicable"
+          ],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "living-seasonal-use",
+
+          nonElectricStorageSuitable:
             true,
 
-          primaryProduct:
-            "managed-standing-forage-and-postharvest-residue",
-
-          harvestStage:
-            "established-vegetative-growth-through-postharvest",
-
-          harvestMethod:
-            "Rotate the flock into a protected Cowpea paddock for short grazing periods, then remove birds and allow plant or soil recovery.",
-
-          feedingMethod:
-            "Use timed access based on plant height, flock size, soil condition, and desired recovery.",
-
-          requiresProcessing:
+          refrigerationSuitable:
             false,
 
-          requiredProcessingSteps: [
-            "Establish crop before access",
-            "Inspect paddock",
-            "Set temporary boundaries",
-            "Limit flock access",
-            "Observe grazing intensity",
-            "Remove flock before severe damage",
-            "Rest or replant the paddock"
-          ],
+          freezingSuitable:
+            false,
 
-          optionalProcessingSteps: [
-            "Harvest mature pods before grazing",
-            "Allow postharvest gleaning",
-            "Overseed with another seasonal forage",
-            "Mow residue after grazing",
-            "Add mulch or compost after crop termination"
-          ],
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          protectiveBarrierRequired:
+            true,
+
+          establishmentRequired:
+            true,
+
+          recoveryPeriodRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          bacterialContaminationRiskScore:
+            2,
+
+          spoilageRiskScore:
+            1,
+
+          predatorRiskScore:
+            3,
+
+          tramplingRiskScore:
+            5,
+
+          overgrazingRiskScore:
+            5,
+
+          soilDamageRiskScore:
+            4,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
 
           expectedProcessingTimeLevel:
-            "low-to-moderate",
+            "low-daily-processing-with-moderate-system-management",
 
           estimatedProcessingMinutesPerPound:
             null,
 
           expectedWasteLevel:
-            "moderate",
+            "low",
 
           estimatedWastePercent:
             null,
@@ -17390,80 +18507,579 @@ const BCP_FEED_CROPS = {
           poultryFeedPriorityScore:
             5,
 
-          preservationOptions: [],
+          preservationOptions: [
+            "continued-living-growth",
+            "repeated-managed-foraging",
+            "later-cut-and-carry-harvest",
+            "later-pod-or-seed-production"
+          ],
 
           preservationLimitations: [
-            "Rotational forage is available only during the growing season.",
-            "Flock intake is difficult to measure.",
-            "Paddock recovery may be slow after severe grazing.",
-            "Frost terminates the crop."
+            "Living forage is seasonal and ends with frost, severe drought, plant death, or removal.",
+            "The crop cannot be stored in its living form for winter use.",
+            "Chickens may consume new growth faster than Cowpeas can replace it.",
+            "Unrestricted access may uproot, trample, scratch out, or completely destroy plants.",
+            "Repeated defoliation reduces leaf area, root reserves, nodulation, flowering, pod set, and seed yield.",
+            "Plants grown for living forage may produce less household food or mature seed.",
+            "Wet soil access can cause mud, compaction, nutrient concentration, and root damage.",
+            "A protective frame limits access but also complicates weeding, irrigation, inspection, and harvest.",
+            "Living-forage intake cannot be measured precisely.",
+            "No universal recovery interval or stocking density is stored."
           ],
 
           estimatedShelfLifeCategory:
-            "seasonal-field-use",
+            "not-applicable",
 
           shelfLifeAfterProcessingCategory:
             "not-applicable",
 
           likelyLossPoints: [
-            "Overgrazing",
-            "Uneven flock distribution",
-            "Gate congestion",
-            "Soil compaction",
-            "Manure overload",
-            "Wildlife damage",
-            "Missed pod harvest",
-            "Frost termination"
+            "poor-germination",
+            "seedling-disease",
+            "seedling-predation",
+            "chickens-reaching-plants-before-establishment",
+            "uprooting",
+            "trampling",
+            "overgrazing",
+            "barrier-failure",
+            "drought",
+            "waterlogging",
+            "insect-damage",
+            "disease-damage",
+            "wildlife-feeding",
+            "soil-compaction",
+            "manure-buildup",
+            "frost",
+            "reduced-pod-production"
           ],
 
           strengths: [
-            "Better crop protection than continuous access",
-            "Supports natural flock behavior",
-            "Can combine forage and postharvest gleaning",
-            "Distributes manure across growing areas",
-            "Can fit a multi-paddock forage system"
+            "Provides living warm-season enrichment",
+            "Allows birds to peck naturally",
+            "Reduces harvest and carrying labor",
+            "Keeps roots in the soil",
+            "Can support repeated regrowth",
+            "Provides shade and insect habitat at plant level",
+            "Avoids mature dry-seed processing",
+            "Can be incorporated into forage frames",
+            "Supports summer ground cover",
+            "May provide nitrogen-fixing rotation value"
           ],
 
           limitations: [
-            "Requires fencing and rotation management",
-            "Requires enough land for rest periods",
-            "Cannot provide precise nutrient intake",
-            "May reduce seed harvest if grazing begins too early",
-            "Can damage wet soil",
-            "May require reseeding each year"
+            "Requires physical protection",
+            "Intake cannot be measured precisely",
+            "Overgrazing risk is high",
+            "Seedlings are highly vulnerable",
+            "Plants may not recover from severe defoliation",
+            "Living forage is unavailable after frost",
+            "Direct access can damage soil",
+            "Foliage is less nutrient-dense than mature dry seed",
+            "Not a complete poultry feed",
+            "Forage use competes with pod and seed production",
+            "Pest and disease inspection may be more difficult under barriers",
+            "No universal flock-density recommendation is available"
           ],
 
-          safetyRules: [
-            "Do not rotate birds into chemically treated stands before the labeled reentry interval.",
-            "Exclude treated seed, toxic weeds, moldy residue, and sharp debris.",
-            "Provide shade and water during hot-weather access.",
-            "Avoid saturated soil.",
-            "Maintain complete feed.",
-            "Remove birds before the paddock is stripped."
+          safetyWarnings: [
+            "Use only correctly identified Cowpea, Vigna unguiculata, plants.",
+            "Do not mix unidentified legumes or toxic plants into the forage area.",
+            "Use untreated planting seed where foliage may be consumed.",
+            "Do not allow poultry access where pesticide, herbicide, fungicide, fertilizer, or seed-treatment labels prohibit grazing or feeding.",
+            "Observe all required grazing, harvest, and reentry intervals.",
+            "Do not allow access before plants are securely rooted and well established.",
+            "Use a barrier strong enough to prevent chickens from entering, scratching, trampling, or uprooting the bed.",
+            "Inspect wire, mesh, staples, clips, fasteners, and edges for entanglement or puncture hazards.",
+            "Do not use mesh openings that can trap heads, feet, wings, or toes.",
+            "Remove loose wire, string, plastic netting, and broken fasteners immediately.",
+            "Do not permit access to diseased, moldy, chemically contaminated, or flood-contaminated plants.",
+            "Avoid access while soil is saturated, deeply muddy, or easily compacted.",
+            "Prevent manure accumulation immediately against plant crowns and stems.",
+            "Provide clean drinking water and shade independently of the forage system.",
+            "Monitor dominant birds so timid birds are not excluded.",
+            "Stop access before plants are stripped below their recovery capacity.",
+            "Rest the planting until adequate regrowth occurs.",
+            "Do not rely on Cowpea forage as the flock's complete ration.",
+            "Continue providing age-appropriate complete poultry feed.",
+            "Monitor body condition, egg production, complete-feed intake, and plant recovery."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-build-a-protective-barrier",
+            "cannot-monitor-flock-access",
+            "cannot-rest-plants-between-grazing-periods",
+            "cannot-prevent-chickens-from-reaching-roots",
+            "cannot-inspect-for-wire-or-mesh-hazards",
+            "cannot-verify-pesticide-grazing-restrictions",
+            "has-continuously-wet-or-muddy-soil",
+            "requires-precise-feed-intake-measurement",
+            "expects-living-forage-to-replace-complete-feed",
+            "expects-simultaneous-maximum-forage-and-seed-yield",
+            "cannot-provide-separate-clean-water-and-shade"
           ],
 
           directFacts: {
-            suitableForImmediateFeeding:
+            protectiveBarrierRequired:
               true,
 
-            suitableForLongTermStorage:
+            directUnrestrictedAccessRecommended:
               false,
 
-            requiresHeatTreatment:
-              false,
+            establishedPlantsRequired:
+              true,
+
+            repeatedForagingPossible:
+              true,
 
             recoveryPeriodRequired:
               true,
 
-            annualReseedingLikely:
+            rootsRemainInSoil:
               true,
 
+            overgrazingPossible:
+              true,
+
+            tramplingPossible:
+              true,
+
+            seedlingDestructionPossible:
+              true,
+
+            heavyDefoliationMayReduceSeedYield:
+              true,
+
+            livingForageAvailableInWinter:
+              false,
+
+            exactIntakeMeasurable:
+              false,
+
+            exactRecoveryIntervalKnown:
+              false,
+
+            exactStockingDensityKnown:
+              false,
+
+            completeFeedReplacement:
+              false,
+
             notes: [
-              "Rotational access provides greater management control than permanent free access.",
-              "The correct grazing period depends on flock density and plant biomass.",
-              "No universal stocking rate or grazing duration is stored.",
-              "A paddock may be used first for harvest and later for controlled gleaning.",
-              "Severe grazing may prevent meaningful regrowth."
+              "Living Cowpea forage is most dependable when birds can reach only the upper foliage.",
+              "A forage frame or fence-line system protects roots and growing points better than unrestricted access.",
+              "Cowpea seedlings are easily destroyed by scratching and pecking.",
+              "Plants should be well established before exposure.",
+              "Repeated light defoliation may permit regrowth where moisture, fertility, nodes, and leaves remain adequate.",
+              "Severe defoliation may delay or eliminate flowering and pod production.",
+              "Living forage supports behavior and dietary variety more reliably than measurable feed replacement.",
+              "Foliage intake cannot be determined precisely under free-choice access.",
+              "The planner should not promise simultaneous maximum forage, household-food, and mature-seed production from the same plants.",
+              "No universal recovery period or birds-per-square-foot value is stored."
+            ]
+          }
+        },
+
+                {
+          id:
+            "rotational-access",
+
+          label:
+            "Managed Rotational Cowpea Access",
+
+          description:
+            "Well-established Cowpea stands are opened to chickens for short, controlled grazing periods within a rotational paddock or temporary-fencing system, then rested long enough for plants and soil to recover before birds return.",
+
+          primaryFeedRole:
+            "managed-warm-season-grazing-and-enrichment",
+
+          harvestProducts: [
+            "living-cowpea-leaves",
+            "tender-vine-growth",
+            "young-shoots",
+            "limited-immature-pods",
+            "insects-associated-with-cowpea-stands",
+            "seasonal-foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "short-duration-rotational-grazing",
+            "temporary-paddock-access",
+            "mobile-coop-access",
+            "strip-grazing",
+            "controlled-field-foraging",
+            "managed-seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-dense-healthy-stand",
+            "delay-access-until-plants-are-securely-rooted",
+            "inspect-field",
+            "remove-hazards",
+            "verify-pesticide-and-grazing-restrictions",
+            "install-safe-containment",
+            "provide-clean-water",
+            "provide-shade-when-needed",
+            "control-access-duration",
+            "monitor-defoliation",
+            "monitor-soil-condition",
+            "remove-flock-before-severe-damage",
+            "rest-paddock"
+          ],
+
+          optionalProcessingTasks: [
+            "divide-planting-into-multiple-paddocks",
+            "use-portable-poultry-netting",
+            "use-mobile-coop",
+            "irrigate-during-recovery",
+            "mow-or-trim-overmature-growth",
+            "reseed-thin-areas",
+            "track-grazing-days",
+            "track-recovery-days",
+            "record-flock-size",
+            "record-stand-recovery",
+            "allow-selected-paddocks-to-produce-pods-or-seed"
+          ],
+
+          requiredEquipment: [
+            "safe-flock-containment",
+            "clean-drinking-water"
+          ],
+
+          helpfulEquipment: [
+            "portable-poultry-netting",
+            "mobile-coop",
+            "temporary-gates",
+            "electric-poultry-netting",
+            "fence-charger",
+            "portable-waterer",
+            "shade-shelter",
+            "field-rake",
+            "mower",
+            "irrigation-line",
+            "soil-moisture-monitor"
+          ],
+
+          harvestPattern:
+            "rotational-managed-access",
+
+          harvestFrequencyCategory:
+            "short-access-periods-separated-by-recovery",
+
+          storageMethods: [
+            "not-applicable"
+          ],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "living-seasonal-use",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          fieldInspectionRequired:
+            true,
+
+          supervisedAccessRequired:
+            true,
+
+          recoveryPeriodRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          bacterialContaminationRiskScore:
+            2,
+
+          spoilageRiskScore:
+            1,
+
+          predatorRiskScore:
+            5,
+
+          tramplingRiskScore:
+            5,
+
+          overgrazingRiskScore:
+            5,
+
+          soilDamageRiskScore:
+            5,
+
+          parasiteExposureRiskScore:
+            3,
+
+          toxicPlantExposureRiskScore:
+            4,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "low-processing-but-high-management",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "continued-living-growth",
+            "repeated-rotational-grazing",
+            "later-cut-and-carry-harvest",
+            "later-pod-or-seed-production",
+            "soil-cover-and-residue-use"
+          ],
+
+          preservationLimitations: [
+            "Rotational access does not preserve Cowpea forage for later use.",
+            "The pathway ends when frost, drought, disease, insects, or flock damage terminates the stand.",
+            "Intake cannot be measured precisely.",
+            "Birds consume a mixture of Cowpea leaves, stems, pods, insects, weeds, soil particles, and other materials.",
+            "Short rest periods may be insufficient for regrowth.",
+            "Recovery rate varies with cultivar, temperature, rainfall, irrigation, fertility, plant maturity, grazing severity, and remaining growing points.",
+            "Heavy flock access may reduce pod and seed yield.",
+            "Wet-soil access may cause compaction, mud, erosion, nutrient concentration, and root damage.",
+            "Repeated occupation may increase parasite pressure and manure accumulation.",
+            "No universal birds-per-square-foot, grazing duration, or recovery interval is stored."
+          ],
+
+          estimatedShelfLifeCategory:
+            "not-applicable",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "poor-establishment",
+            "seedling-destruction",
+            "wildlife-feeding",
+            "insect-damage",
+            "disease-damage",
+            "overgrazing",
+            "trampling",
+            "uprooting",
+            "soil-compaction",
+            "mud-damage",
+            "barrier-failure",
+            "predator-interruption",
+            "frost",
+            "drought",
+            "waterlogging",
+            "manure-buildup",
+            "reduced-pod-production",
+            "reduced-seed-yield"
+          ],
+
+          strengths: [
+            "Provides natural grazing behavior",
+            "Reduces cut-and-carry labor",
+            "Can use a larger Cowpea stand efficiently",
+            "Supports movement and exploration",
+            "Provides fresh warm-season forage",
+            "May increase insect-foraging opportunities",
+            "Can fit mobile-coop systems",
+            "May help distribute manure across a managed area",
+            "Allows paddock rest and recovery",
+            "Avoids mature dry-seed processing"
+          ],
+
+          limitations: [
+            "Requires fencing and active management",
+            "Predator exposure may be high",
+            "Intake is not measurable",
+            "Overgrazing risk is high",
+            "Soil damage can occur quickly",
+            "Plants may not recover from severe use",
+            "Forage use competes with pod and seed production",
+            "Seasonal availability ends with frost",
+            "Parasite pressure may increase with repeated use",
+            "Not a complete poultry feed",
+            "No universal stocking rate is available",
+            "No universal recovery interval is available"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified Cowpea, Vigna unguiculata, stands.",
+            "Inspect the entire paddock before flock access.",
+            "Remove toxic plants, sharp objects, wire, string, plastic, broken glass, metal, machinery debris, fertilizer spills, fuel, oil, and other hazards.",
+            "Use untreated planting seed where foliage or pods may be consumed.",
+            "Do not permit access where pesticide, herbicide, fungicide, fertilizer, or seed-treatment labels prohibit grazing or feed use.",
+            "Observe all required reentry, harvest, and grazing intervals.",
+            "Do not allow access before plants are well established and securely rooted.",
+            "Use safe fencing appropriate to the flock and predator pressure.",
+            "Inspect electric netting, posts, chargers, gates, clips, and grounding before use.",
+            "Do not use damaged mesh or loose wire that could entangle birds.",
+            "Provide clean drinking water at all times.",
+            "Provide shade during hot weather.",
+            "Avoid flock access during extreme heat, lightning, flooding, severe storms, or dangerous wind.",
+            "Do not graze saturated, deeply muddy, or erosion-prone soil.",
+            "Monitor birds continuously where containment or predator protection is temporary.",
+            "Remove the flock before plants are stripped below viable recovery points.",
+            "Rest the paddock until adequate regrowth occurs.",
+            "Do not repeatedly return birds to bare or heavily manure-contaminated ground.",
+            "Rotate ground where parasite pressure is a concern.",
+            "Do not rely on rotational Cowpea access as the flock's complete ration.",
+            "Continue providing an age-appropriate complete poultry feed.",
+            "Monitor body condition, egg production, complete-feed intake, soil condition, and stand recovery."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-outdoor-containment",
+            "has-high-uncontrolled-predator-pressure",
+            "cannot-supervise-or-monitor-access",
+            "cannot-rotate-paddocks",
+            "cannot-rest-ground-between-use",
+            "cannot-verify-pesticide-grazing-restrictions",
+            "has-continuously-wet-or-muddy-soil",
+            "cannot-identify-toxic-weeds",
+            "requires-precise-feed-intake-measurement",
+            "expects-rotational-grazing-to-replace-complete-feed",
+            "expects-simultaneous-maximum-forage-and-seed-yield",
+            "cannot-provide-clean-water-and-shade"
+          ],
+
+          directFacts: {
+            establishedStandRequired:
+              true,
+
+            unrestrictedContinuousAccessRecommended:
+              false,
+
+            rotationalAccessRecommended:
+              true,
+
+            supervisedAccessRecommended:
+              true,
+
+            fencingRequired:
+              true,
+
+            predatorProtectionRequired:
+              true,
+
+            recoveryPeriodRequired:
+              true,
+
+            cleanWaterRequired:
+              true,
+
+            shadeMayBeRequired:
+              true,
+
+            exactIntakeMeasurable:
+              false,
+
+            exactStockingRateKnown:
+              false,
+
+            exactGrazingDurationKnown:
+              false,
+
+            exactRecoveryIntervalKnown:
+              false,
+
+            overgrazingPossible:
+              true,
+
+            tramplingPossible:
+              true,
+
+            soilCompactionPossible:
+              true,
+
+            manureAccumulationPossible:
+              true,
+
+            parasiteExposurePossible:
+              true,
+
+            heavyUseMayReduceSeedYield:
+              true,
+
+            completeFeedReplacement:
+              false,
+
+            notes: [
+              "Rotational access differs from protected living forage because birds enter the planting rather than reaching through a barrier.",
+              "This increases natural grazing opportunities but also increases trampling, uprooting, soil damage, and overgrazing risk.",
+              "Short controlled access is generally safer than continuous occupation.",
+              "Recovery depends on remaining leaves, nodes, stems, moisture, temperature, fertility, and plant maturity.",
+              "Plants managed for maximum seed yield should receive little or no grazing during flowering and pod filling.",
+              "The pathway is more useful for enrichment and forage diversity than for precise feed replacement.",
+              "Dry, firm soil conditions reduce compaction and mud damage.",
+              "The planner should not assign a universal stocking density or grazing duration.",
+              "Multiple paddocks improve rest and recovery.",
+              "Complete feed must remain available throughout the grazing period."
             ]
           }
         },
@@ -17473,50 +19089,179 @@ const BCP_FEED_CROPS = {
             "postharvest-gleaning",
 
           label:
-            "Postharvest Gleaning",
+            "Postharvest Cowpea Gleaning",
 
-          enabled:
+          description:
+            "After the desired household-food, mature-seed, and planting-seed harvests are complete, chickens receive controlled access to a safe Cowpea plot to recover missed peas, dropped seed, overlooked pods, insects, and limited tender regrowth.",
+
+          primaryFeedRole:
+            "postharvest-feed-recovery-and-enrichment",
+
+          harvestProducts: [
+            "dropped-cowpea-seed",
+            "missed-cowpea-pods",
+            "residual-fresh-peas",
+            "limited-tender-regrowth",
+            "field-invertebrates",
+            "postharvest-foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-postharvest-gleaning",
+            "temporary-paddock-access",
+            "mobile-coop-access",
+            "controlled-field-foraging",
+            "residual-crop-cleanup"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-household-food-harvest",
+            "complete-primary-feed-seed-harvest",
+            "complete-planting-seed-selection",
+            "inspect-field",
+            "remove-hazards",
+            "remove-moldy-or-contaminated-material",
+            "verify-pesticide-and-grazing-restrictions",
+            "install-safe-containment",
+            "provide-clean-water",
+            "control-access-duration",
+            "monitor-flock",
+            "remove-flock-before-soil-damage"
+          ],
+
+          optionalProcessingTasks: [
+            "collect-obvious-clean-pods-before-flock-access",
+            "collect-obvious-clean-seed-before-flock-access",
+            "mow-or-flatten-coarse-vines",
+            "divide-field-into-sections",
+            "use-portable-poultry-netting",
+            "provide-mobile-shade",
+            "seed-following-cover-crop",
+            "record-gleaning-duration",
+            "monitor-volunteer-reduction",
+            "track-soil-disturbance"
+          ],
+
+          requiredEquipment: [
+            "safe-flock-containment",
+            "clean-drinking-water"
+          ],
+
+          helpfulEquipment: [
+            "portable-poultry-netting",
+            "mobile-coop",
+            "temporary-gates",
+            "shade-shelter",
+            "portable-waterer",
+            "field-rake",
+            "mower",
+            "harvest-basket",
+            "tarps",
+            "soil-cover-seed"
+          ],
+
+          harvestPattern:
+            "postharvest-access",
+
+          harvestFrequencyCategory:
+            "limited-seasonal-cleanup-period",
+
+          storageMethods: [
+            "not-applicable"
+          ],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "immediate-field-use",
+
+          nonElectricStorageSuitable:
             true,
 
-          primaryProduct:
-            "residual-pods-peas-leaves-and-insects",
-
-          harvestStage:
-            "after-primary-household-or-seed-harvest",
-
-          harvestMethod:
-            "Allow controlled flock access after the main harvest to recover scattered peas, missed pods, tender residue, and associated insects.",
-
-          feedingMethod:
-            "Use short supervised access in a clean untreated field or garden bed.",
-
-          requiresProcessing:
+          refrigerationSuitable:
             false,
 
-          requiredProcessingSteps: [
-            "Complete the primary harvest",
-            "Remove moldy or diseased residue",
-            "Remove treated seed and chemical containers",
-            "Inspect for toxic weeds and sharp debris",
-            "Limit access",
-            "Remove birds before soil damage becomes severe"
-          ],
+          freezingSuitable:
+            false,
 
-          optionalProcessingSteps: [
-            "Mow tall residue",
-            "Collect obviously moldy pods",
-            "Till or mulch residue after gleaning",
-            "Follow with a winter cover crop"
-          ],
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          fieldInspectionRequired:
+            true,
+
+          supervisedAccessRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          bacterialContaminationRiskScore:
+            3,
+
+          spoilageRiskScore:
+            4,
+
+          predatorRiskScore:
+            5,
+
+          soilDamageRiskScore:
+            4,
+
+          parasiteExposureRiskScore:
+            3,
+
+          toxicPlantExposureRiskScore:
+            4,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
 
           expectedProcessingTimeLevel:
-            "low",
+            "low-processing-but-active-supervision",
 
           estimatedProcessingMinutesPerPound:
             null,
 
           expectedWasteLevel:
-            "low",
+            "low-to-moderate",
 
           estimatedWastePercent:
             null,
@@ -17539,122 +19284,370 @@ const BCP_FEED_CROPS = {
           poultryFeedPriorityScore:
             4,
 
-          preservationOptions: [],
+          preservationOptions: [
+            "immediate-field-consumption",
+            "residue-cleanup",
+            "volunteer-seed-reduction"
+          ],
 
           preservationLimitations: [
-            "Gleaning value is immediate and field based.",
-            "Residual quantity is unpredictable.",
-            "Weathered seed may be unsafe.",
-            "Mold risk increases after rain and delayed harvest."
+            "Postharvest gleaning does not preserve Cowpeas for later use.",
+            "Field seed exposed to rain, soil, manure, insects, rodents, and humidity may deteriorate rapidly.",
+            "Missed mature seed may remain raw and should not be interpreted as equivalent to properly cooked or validated heat-treated mature Cowpea seed.",
+            "Birds may consume a mixture of peas, pods, leaves, vines, insects, weeds, soil particles, and other materials.",
+            "Intake cannot be measured precisely.",
+            "Wet or moldy fallen seed and pods are unsuitable.",
+            "Heavy flock access may remove protective residue and disturb soil.",
+            "Wet-soil access can cause mud, compaction, erosion, and nutrient concentration.",
+            "Repeated access may increase parasite pressure.",
+            "No precise feed-savings or feed-replacement value can be assigned."
           ],
 
           estimatedShelfLifeCategory:
-            "immediate-field-use",
-
-          shelfLifeAfterProcessingCategory:
             "not-applicable",
 
+          shelfLifeAfterProcessingCategory:
+            "immediate-field-use",
+
           likelyLossPoints: [
-            "Mold",
-            "Weathering",
-            "Rodent contamination",
-            "Insect damage",
-            "Soil loss from scratching",
-            "Consumption by wildlife before flock access"
+            "seed-consumed-by-wildlife-before-flock-access",
+            "rodent-consumption",
+            "insect-damage",
+            "cowpea-curculio-damage",
+            "seed-buried-in-soil",
+            "seed-hidden-in-vines",
+            "rain-damage",
+            "field-mold",
+            "pod-rot",
+            "seed-germination",
+            "soil-contamination",
+            "manure-contamination",
+            "grain-trampled-into-mud",
+            "uneven-flock-access",
+            "dominant-bird-exclusion",
+            "predator-interruption"
           ],
 
           strengths: [
-            "Recovers otherwise lost food",
-            "Provides enrichment",
-            "Adds insect-foraging opportunities",
-            "Requires little processing",
-            "Can occur after household harvest"
+            "Recovers crop material that may be uneconomical to collect by hand",
+            "Provides natural scratching and exploration",
+            "Can reduce residual pods and volunteer seed",
+            "May increase insect-foraging opportunities",
+            "Requires little grain-processing labor",
+            "Can fit mobile-coop systems",
+            "Provides seasonal enrichment",
+            "May assist field cleanup",
+            "Can distribute limited manure across the plot",
+            "Uses material left after priority harvests"
           ],
 
           limitations: [
-            "Unpredictable feed quantity",
-            "Low measurement precision",
-            "Greater contamination risk than harvested feed",
-            "Potential soil disturbance",
-            "Should not replace complete feed"
+            "Intake cannot be measured accurately",
+            "Raw mature seed may remain in the field",
+            "Field-exposed seed may be moldy or contaminated",
+            "Requires secure outdoor containment",
+            "Predator risk may be high",
+            "Soil damage can occur",
+            "Not a complete poultry feed",
+            "Cannot provide dependable feed replacement",
+            "Access must occur after all priority harvests",
+            "No universal safe grazing duration is available",
+            "No universal feed-savings estimate is available"
           ],
 
-          safetyRules: [
-            "Do not allow access to treated planting seed.",
-            "Remove moldy, rotten, sprouted, or chemically contaminated seed.",
-            "Exclude toxic weeds.",
-            "Avoid gleaning in muddy saturated soil.",
-            "Do not rely on weathered peas as a major feed source.",
-            "Maintain complete feed and clean water."
+          safetyWarnings: [
+            "Complete all desired household-food, processed-feed, and planting-seed harvests before flock access.",
+            "Inspect the entire plot before releasing chickens.",
+            "Remove moldy, musty, slimy, rotten, fermented, blackened, or unusually discolored pods and seed.",
+            "Remove severely insect-damaged or Cowpea-curculio-damaged pods and seed.",
+            "Do not permit access to a field containing treated planting seed or spilled treated seed.",
+            "Do not permit access where pesticide, herbicide, fungicide, fertilizer, or other product labels prohibit grazing or feed use.",
+            "Observe all required reentry, harvest, and grazing intervals.",
+            "Remove sharp metal, wire, string, plastic, glass, stakes, clips, broken tools, irrigation debris, and other hazards.",
+            "Identify and remove toxic volunteer plants and weeds.",
+            "Do not allow access to flood-contaminated or chemically contaminated ground.",
+            "Provide clean drinking water throughout access.",
+            "Provide shade during hot weather.",
+            "Use predator-resistant containment appropriate to the site.",
+            "Supervise access where fencing is temporary.",
+            "Avoid access during severe heat, lightning, flooding, storms, or dangerous wind.",
+            "Do not allow birds onto saturated, deeply muddy, or erosion-prone soil.",
+            "Remove the flock before excessive scratching destroys soil cover.",
+            "Do not rely on gleaning as the flock's complete ration.",
+            "Continue providing an age-appropriate complete poultry feed.",
+            "Because intake is uncertain, monitor complete-feed consumption, crop fill, body condition, egg production, and flock behavior.",
+            "Follow an appropriate rotation interval where parasite accumulation is a concern."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-outdoor-containment",
+            "has-high-uncontrolled-predator-pressure",
+            "cannot-supervise-flock-access",
+            "cannot-identify-toxic-weeds",
+            "cannot-verify-pesticide-grazing-restrictions",
+            "cannot-remove-moldy-or-contaminated-material",
+            "has-saturated-or-erosion-prone-soil",
+            "requires-precise-feed-intake-measurement",
+            "expects-gleaning-to-replace-complete-feed",
+            "cannot-provide-clean-water-and-shade",
+            "cannot-complete-priority-harvest-before-access"
           ],
 
           directFacts: {
-            suitableForImmediateFeeding:
+            primaryHarvestMustBeCompletedFirst:
               true,
 
-            suitableForLongTermStorage:
+            plantingSeedMustBeCollectedFirst:
+              true,
+
+            supervisedAccessRecommended:
+              true,
+
+            predatorProtectionRequired:
+              true,
+
+            fieldInspectionRequired:
+              true,
+
+            pesticideLabelVerificationRequired:
+              true,
+
+            cleanWaterRequired:
+              true,
+
+            shadeMayBeRequired:
+              true,
+
+            exactFeedIntakeMeasurable:
               false,
 
-            requiresHeatTreatment:
+            exactFeedSavingsKnown:
               false,
 
-            feedQuantityPredictable:
-              false,
+            rawMatureSeedMayRemain:
+              true,
+
+            completeFeedStillRequired:
+              true,
+
+            soilDamagePossible:
+              true,
+
+            soilCompactionPossible:
+              true,
+
+            nutrientDepositionPossible:
+              true,
+
+            parasiteExposurePossible:
+              true,
+
+            toxicWeedExposurePossible:
+              true,
+
+            volunteerSeedReductionPossible:
+              true,
+
+            insectForagingValuePossible:
+              true,
 
             notes: [
-              "Postharvest gleaning is primarily a waste-recovery and enrichment pathway.",
-              "Residual mature raw seed may still contain antinutritional factors.",
-              "A few scattered peas differ from deliberate high-level raw-seed feeding.",
-              "The planner should not calculate residual gleaning as dependable stored feed."
+              "Postharvest gleaning should occur only after all high-priority household-food, processed-feed, and planting-seed harvests are complete.",
+              "The pathway recovers residual material but does not guarantee that every mature seed has been properly processed.",
+              "For that reason, gleaning should remain limited and supplemental.",
+              "The nutritional contribution is difficult to measure because birds consume mixed field materials.",
+              "Gleaning value may be greater as enrichment and waste recovery than as dependable feed replacement.",
+              "Dry, firm soil conditions reduce compaction and mud damage.",
+              "Short controlled access is preferable to continuous unrestricted occupation.",
+              "The planner should not assign a precise feed-savings value to this pathway.",
+              "Complete feed must remain available.",
+              "Moldy or contaminated residual seed should be removed rather than left for birds to find."
             ]
           }
         },
 
-        {
+                {
           id:
             "saved-planting-seed",
 
           label:
             "Saved Cowpea Planting Seed",
 
-          enabled:
-            true,
+          description:
+            "Sound, fully mature Cowpea seed is selected from healthy, true-to-type plants, dried thoroughly, cleaned, labeled, and stored separately for future planting rather than being used as poultry feed.",
 
-          primaryProduct:
-            "true-to-type-mature-seed-for-replanting",
+          primaryFeedRole:
+            "planting-stock-preservation",
 
-          harvestStage:
-            "fully-mature-dry-seed",
-
-          harvestMethod:
-            "Select healthy true-to-type plants, allow pods to mature fully, harvest dry pods, dry thoroughly, shell carefully, and store seed under cool dry conditions.",
-
-          feedingMethod:
-            "Not intended as the primary poultry-use pathway; reserve selected seed for future planting.",
-
-          requiresProcessing:
-            true,
-
-          requiredProcessingSteps: [
-            "Select healthy plants",
-            "Confirm cultivar type",
-            "Allow full pod maturity",
-            "Harvest dry pods",
-            "Complete drying",
-            "Shell carefully",
-            "Remove damaged and insect-infested seed",
-            "Label cultivar and harvest year",
-            "Store cool and dry",
-            "Protect from insects and rodents"
+          harvestProducts: [
+            "mature-cowpea-planting-seed",
+            "cultivar-specific-seed-stock",
+            "locally-adapted-seed",
+            "future-crop-establishment-material",
+            "breeding-and-selection-stock"
           ],
 
-          optionalProcessingSteps: [
-            "Conduct a germination test",
-            "Store multiple labeled lots",
-            "Retain seed from several plants",
-            "Freeze seed temporarily using a validated insect-control method",
-            "Share accurately labeled seed"
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "select-healthy-true-to-type-plants",
+            "exclude-diseased-plants",
+            "exclude-off-type-plants",
+            "allow-pods-to-mature-fully",
+            "harvest-dry-pods",
+            "dry-pods-thoroughly",
+            "shell-carefully",
+            "remove-chaff",
+            "clean-seed",
+            "sort-seed",
+            "remove-damaged-seed",
+            "remove-insect-damaged-seed",
+            "remove-moldy-seed",
+            "verify-seed-is-dry",
+            "label-seed",
+            "store-separately-from-feed-seed"
           ],
+
+          optionalProcessingTasks: [
+            "select-for-earliness",
+            "select-for-pod-production",
+            "select-for-seed-size",
+            "select-for-disease-resistance",
+            "select-for-heat-tolerance",
+            "select-for-drought-performance",
+            "select-for-forage-regrowth",
+            "conduct-germination-test",
+            "record-parent-plant-performance",
+            "record-harvest-date",
+            "record-cultivar-name",
+            "record-growing-location",
+            "record-seed-generation",
+            "freeze-dry-seed-for-insect-control",
+            "use-desiccant-in-sealed-storage"
+          ],
+
+          requiredEquipment: [
+            "labeled-seed-storage-container"
+          ],
+
+          helpfulEquipment: [
+            "harvest-basket",
+            "paper-bags",
+            "drying-screen",
+            "shelling-container",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "seed-envelopes",
+            "airtight-seed-jars",
+            "desiccant-packets",
+            "freezer",
+            "permanent-marker",
+            "seed-record-log"
+          ],
+
+          harvestPattern:
+            "annual-selection",
+
+          harvestFrequencyCategory:
+            "single-seasonal-seed-saving-harvest",
+
+          storageMethods: [
+            "cool-dark-dry-storage",
+            "sealed-dry-storage",
+            "refrigerated-seed-storage",
+            "freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-fully-dry-labeled-seed-in-a-cool-dark-low-humidity-location",
+
+          storageDurationCategory:
+            "moderate-to-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          germinationPreservationRequired:
+            true,
+
+          cultivarIdentityPreservationRequired:
+            true,
+
+          separateStorageRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          temperatureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          bacterialContaminationRiskScore:
+            1,
+
+          spoilageRiskScore:
+            3,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            5,
+
+          crossContaminationRiskScore:
+            4,
+
+          geneticMixingRiskScore:
+            3,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            1,
 
           expectedProcessingTimeLevel:
             "moderate",
@@ -17663,7 +19656,7 @@ const BCP_FEED_CROPS = {
             null,
 
           expectedWasteLevel:
-            "moderate",
+            "low-to-moderate",
 
           estimatedWastePercent:
             null,
@@ -17672,10 +19665,10 @@ const BCP_FEED_CROPS = {
             5,
 
           processingEfficiencyScore:
-            3,
+            4,
 
           feedMeasurementPrecisionScore:
-            5,
+            1,
 
           preservationFlexibilityScore:
             5,
@@ -17686,83 +19679,197 @@ const BCP_FEED_CROPS = {
           poultryFeedPriorityScore:
             1,
 
+          plantingPriorityScore:
+            5,
+
           preservationOptions: [
             "cool-dry-storage",
-            "sealed-insect-resistant-storage",
+            "sealed-low-humidity-storage",
             "refrigerated-storage",
-            "freezer-storage-when-seed-moisture-is-safe"
+            "freezer-storage",
+            "annual-regeneration"
           ],
 
           preservationLimitations: [
-            "High seed moisture can cause freezing injury or storage mold.",
-            "Stored-product insects may damage germination.",
-            "Cross-pollination, admixture, or mislabeled seed can reduce varietal purity.",
-            "Hybrid or segregating cultivars may not reproduce true to type."
+            "Seed must be fully dry before sealed storage.",
+            "Residual moisture can cause mold, heating, loss of germination, and decay.",
+            "High storage temperature and humidity shorten viable storage life.",
+            "Stored-seed insects can destroy seed internally while external damage remains difficult to detect.",
+            "Rodents may consume, contaminate, or scatter stored seed.",
+            "Frequent temperature changes can cause condensation inside containers.",
+            "Frozen seed must remain dry during cooling, storage, and return to room temperature.",
+            "Containers should remain sealed until frozen or refrigerated seed reaches room temperature to reduce condensation.",
+            "Seed viability declines over time even under favorable storage conditions.",
+            "Seed saved from hybrid plants may not reproduce the parent cultivar reliably.",
+            "Cross-pollination may alter future generations where multiple Cowpea varieties flower together.",
+            "Seed selected for planting should not be diverted casually into poultry feed.",
+            "No universal multi-year germination percentage is stored."
           ],
 
           estimatedShelfLifeCategory:
-            "moderate-to-long",
+            "moderate-to-long-under-cool-dry-conditions",
 
           shelfLifeAfterProcessingCategory:
-            "moderate-to-long",
+            "dependent-on-moisture-temperature-and-seed-quality",
 
           likelyLossPoints: [
-            "Immature harvest",
-            "High moisture",
-            "Bruchid damage",
-            "Rodent damage",
-            "Mechanical cracking",
-            "Mislabelling",
-            "Heat exposure",
-            "Loss of germination"
+            "pods-harvested-before-full-maturity",
+            "pod-shattering",
+            "rain-damage-before-harvest",
+            "field-mold",
+            "cowpea-curculio-damage",
+            "bruchid-damage",
+            "shelling-damage",
+            "cleaning-loss",
+            "mixing-of-cultivars",
+            "label-loss",
+            "high-seed-moisture",
+            "condensation",
+            "storage-mold",
+            "stored-seed-insects",
+            "rodent-damage",
+            "temperature-fluctuation",
+            "declining-germination",
+            "accidental-feeding",
+            "accidental-planting-of-treated-or-unknown-seed"
           ],
 
           strengths: [
-            "Reduces future seed purchases",
-            "Preserves locally adapted selections",
-            "Supports annual replanting",
-            "Allows cultivar comparison",
-            "Whole seed stores efficiently"
+            "Reduces future seed-purchase dependence",
+            "Preserves successful locally adapted plants",
+            "Supports long-term crop continuity",
+            "Allows selection for backyard conditions",
+            "Requires no cooking or feed processing",
+            "Whole dry seed stores efficiently",
+            "Seed lots can be tracked by cultivar and year",
+            "Supports resilience after seed shortages",
+            "Allows preservation of preferred forage or seed traits",
+            "Provides planting material for future poultry-feed crops"
           ],
 
           limitations: [
-            "Requires careful selection and labeling",
-            "Seed purity may decline",
-            "Insect control is essential",
-            "Stored seed occupies food and feed inventory space",
-            "Old seed may require germination testing"
+            "Produces no immediate poultry feed",
+            "Requires sacrificing part of the edible seed harvest",
+            "Requires careful drying",
+            "Requires separate labeled storage",
+            "Stored-seed insects may cause major losses",
+            "Hybrid offspring may be variable",
+            "Cross-pollination may reduce cultivar purity",
+            "Poor selection can preserve undesirable traits",
+            "Old seed may germinate unevenly",
+            "Germination testing requires additional time",
+            "Seed treatment status must remain clearly documented",
+            "No exact universal storage life is available"
           ],
 
-          safetyRules: [
-            "Never confuse treated commercial planting seed with home-saved untreated seed.",
-            "Keep planting seed clearly labeled and physically separated from feed.",
-            "Do not save seed from diseased, off-type, or heavily insect-damaged plants.",
-            "Store only fully dry seed.",
-            "Discard moldy seed."
+          safetyWarnings: [
+            "Do not feed seed reserved for planting.",
+            "Keep planting seed physically separated from poultry-feed seed.",
+            "Label every seed lot with crop, cultivar, harvest year, and treatment status.",
+            "Never mix chemically treated seed with edible or feed seed.",
+            "Do not store treated and untreated seed in similar unlabeled containers.",
+            "Do not save seed from plants showing serious viral, bacterial, fungal, or seedborne disease symptoms.",
+            "Do not save moldy, musty, damp, heated, sprouted, shriveled, discolored, or badly insect-damaged seed.",
+            "Do not seal seed until it is fully dry.",
+            "Do not place warm freshly dried seed directly into airtight cold storage.",
+            "Use clean, dry, food-safe containers for untreated seed.",
+            "Protect stored seed from rodents and insects.",
+            "Inspect stored seed periodically.",
+            "Discard seed with active mold, musty odor, heating, condensation, or severe insect damage.",
+            "Keep seed-storage insecticides and fumigants away from seed intended for food or feed unless the product label explicitly permits that use.",
+            "Do not use mothballs or unapproved household chemicals in seed intended for future food or feed production.",
+            "When freezing seed, keep it dry and sealed.",
+            "Allow refrigerated or frozen containers to reach room temperature before opening.",
+            "Conduct a germination test before relying on older seed for the entire planting.",
+            "Do not assume seed saved from a hybrid cultivar will remain true to type.",
+            "Preserve accurate records so future users know whether seed is untreated and suitable for producing edible or forage crops."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-keep-planting-seed-separate-from-feed-seed",
+            "cannot-label-seed-lots",
+            "cannot-confirm-treatment-status",
+            "cannot-dry-seed-thoroughly",
+            "cannot-protect-seed-from-insects-and-rodents",
+            "cannot-maintain-cultivar-records",
+            "requires-immediate-poultry-feed-value",
+            "intends-to-feed-all-harvested-seed",
+            "cannot-test-germination",
+            "expects-hybrid-seed-to-remain-true-to-type"
           ],
 
           directFacts: {
-            suitableForImmediateFeeding:
+            intendedForPoultryFeeding:
               false,
 
-            suitableForLongTermStorage:
+            intendedForFuturePlanting:
               true,
 
-            requiresHeatTreatment:
+            separateStorageRequired:
+              true,
+
+            labelingRequired:
+              true,
+
+            treatmentStatusMustBeKnown:
+              true,
+
+            fullSeedMaturityRequired:
+              true,
+
+            thoroughDryingRequired:
+              true,
+
+            cookingRequired:
               false,
 
-            openPollinatedSeedSavingPossible:
+            heatTreatmentRecommended:
+              false,
+
+            germinationMustBePreserved:
+              true,
+
+            coolDryStoragePreferred:
+              true,
+
+            refrigerationPossible:
+              true,
+
+            freezingPossible:
+              true,
+
+            rodentProtectionRequired:
+              true,
+
+            storedInsectProtectionRequired:
+              true,
+
+            hybridSeedMayNotBreedTrue:
+              true,
+
+            crossPollinationPossible:
               true,
 
             germinationDeclinesOverTime:
               true,
 
+            exactStorageLifeKnown:
+              false,
+
+            exactFutureGerminationRateKnown:
+              false,
+
             notes: [
-              "Cowpeas are primarily self-pollinating, which supports small-scale seed saving.",
-              "Some cross-pollination may still occur.",
-              "Seed should be retained from multiple healthy plants where practical.",
-              "Planting seed value may exceed feed value.",
-              "The best seed should generally be reserved for replanting rather than fed."
+              "Saved planting seed is an agricultural-resilience pathway rather than a direct poultry-feeding pathway.",
+              "The best planting seed should be selected before remaining Cowpeas are allocated to household food or poultry feed.",
+              "Healthy, productive, true-to-type plants provide better seed candidates than random leftover plants.",
+              "Seed must remain alive, so feed-oriented heat processing is inappropriate.",
+              "Planting seed should remain whole, dry, cool, dark, and clearly labeled.",
+              "Cowpea seed may be damaged by bruchids and other stored-seed insects.",
+              "Freezing can support insect control and long-term preservation when seed is sufficiently dry and protected from condensation.",
+              "Open-pollinated cultivars are more dependable for true-to-type seed saving than hybrids.",
+              "A germination test is advisable before committing an entire planting area to older seed.",
+              "No universal viability duration is stored because storage conditions and initial seed quality vary."
             ]
           }
         },
@@ -17772,42 +19879,176 @@ const BCP_FEED_CROPS = {
             "soil-building-residue",
 
           label:
-            "Soil-Building Cowpea Residue",
+            "Cowpea Soil-Building Residue",
 
-          enabled:
-            true,
+          description:
+            "Cowpea roots, nodulated root systems, stems, leaves, pod walls, and nonfeed crop residue are retained, mulched, composted, incorporated, or used as surface cover to protect soil and return organic matter and nutrients after priority harvests are complete.",
 
-          primaryProduct:
-            "roots-nodules-stems-leaves-and-pod-residue",
+          primaryFeedRole:
+            "soil-building-and-crop-system-support",
 
-          harvestStage:
-            "crop-termination-or-postharvest",
-
-          harvestMethod:
-            "Leave roots in place and retain, mulch, compost, or lightly incorporate clean aboveground residue according to the following crop and soil-management plan.",
-
-          feedingMethod:
-            "Not primarily a direct-feed pathway; selected clean tender residue may be offered before the remainder is returned to the soil or compost system.",
-
-          requiresProcessing:
-            true,
-
-          requiredProcessingSteps: [
-            "Remove usable household or seed harvest",
-            "Inspect residue for disease and contamination",
-            "Choose mulch, compost, surface residue, or incorporation pathway",
-            "Leave roots where practical",
-            "Manage residue before it becomes a pest or disease reservoir"
+          harvestProducts: [
+            "cowpea-root-residue",
+            "nodulated-root-systems",
+            "cowpea-stems",
+            "cowpea-leaves",
+            "pod-shells",
+            "nonfeed-crop-residue",
+            "mulch-biomass",
+            "compost-feedstock",
+            "soil-organic-matter"
           ],
 
-          optionalProcessingSteps: [
-            "Chop residue",
-            "Compost with higher-carbon materials",
-            "Use as surface mulch",
-            "Lightly incorporate",
-            "Follow with a winter cover crop",
-            "Allow limited chicken scratching before final residue management"
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "complete-priority-food-and-feed-harvests",
+            "inspect-residue",
+            "remove-diseased-material-when-required",
+            "remove-chemically-contaminated-material",
+            "choose-residue-management-method",
+            "prevent-seed-bearing-weeds-from-spreading",
+            "manage-residue-to-protect-soil"
           ],
+
+          optionalProcessingTasks: [
+            "leave-roots-in-place",
+            "terminate-plants-at-soil-surface",
+            "chop-aboveground-residue",
+            "use-as-surface-mulch",
+            "compost-residue",
+            "hot-compost-seed-bearing-material",
+            "incorporate-residue-shallowly",
+            "roll-or-crimp-residue",
+            "plant-following-cover-crop",
+            "combine-with-carbon-rich-compost-materials",
+            "record-residue-mass",
+            "monitor-soil-cover",
+            "monitor-volunteer-cowpeas"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "machete",
+            "string-trimmer",
+            "mower",
+            "garden-fork",
+            "broadfork",
+            "rake",
+            "mulching-mower",
+            "compost-bin",
+            "compost-thermometer",
+            "tarp",
+            "wheelbarrow"
+          ],
+
+          harvestPattern:
+            "end-of-cycle-residue-management",
+
+          harvestFrequencyCategory:
+            "seasonal-after-priority-harvests",
+
+          storageMethods: [
+            "in-place-surface-residue",
+            "mulch-pile",
+            "composting",
+            "temporary-dry-biomass-storage"
+          ],
+
+          preferredStorageMethod:
+            "retain-roots-in-place-and-use-clean-aboveground-residue-as-mulch-or-balanced-compost-feedstock",
+
+          storageDurationCategory:
+            "seasonal-decomposition",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          poultryFeedingIntended:
+            false,
+
+          soilContactIntended:
+            true,
+
+          decompositionRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          bacterialContaminationRiskScore:
+            2,
+
+          spoilageRiskScore:
+            1,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          weedSeedRiskScore:
+            3,
+
+          diseaseCarryoverRiskScore:
+            3,
+
+          nitrogenLossRiskScore:
+            3,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          soilBuildingValueScore:
+            5,
 
           expectedProcessingTimeLevel:
             "low-to-moderate",
@@ -17816,109 +20057,207 @@ const BCP_FEED_CROPS = {
             null,
 
           expectedWasteLevel:
-            "low",
+            "very-low",
 
           estimatedWastePercent:
             null,
 
           storageEfficiencyScore:
-            1,
+            3,
 
           processingEfficiencyScore:
-            4,
+            5,
 
           feedMeasurementPrecisionScore:
             1,
 
           preservationFlexibilityScore:
-            3,
+            5,
 
           humanFoodPriorityScore:
             1,
 
           poultryFeedPriorityScore:
-            2,
+            1,
+
+          soilBuildingPriorityScore:
+            5,
 
           preservationOptions: [
-            "surface-mulch",
+            "surface-mulching",
+            "root-retention",
             "composting",
-            "short-term-field-residue",
-            "incorporation"
+            "shallow-incorporation",
+            "cover-crop-residue-management",
+            "carbon-and-nitrogen-recycling"
           ],
 
           preservationLimitations: [
-            "Residue decomposes relatively quickly.",
-            "Diseased residue may require removal.",
-            "Residue is not a substitute for winter-hardy living cover.",
-            "Nitrogen benefit depends on biomass removal and decomposition."
+            "Cowpea residue decomposes rather than remaining permanently preserved.",
+            "Warm moist conditions may cause rapid breakdown.",
+            "Dry surface residue may blow away unless anchored or covered.",
+            "Thick wet layers may mat, become anaerobic, or produce odor.",
+            "Legume residue is relatively nitrogen rich and may require carbon-rich material for balanced composting.",
+            "Nitrogen may be lost through leaching, volatilization, erosion, or poorly managed decomposition.",
+            "Incorporation disturbs soil and may accelerate decomposition.",
+            "Leaving residue on the surface may temporarily harbor insects, rodents, slugs, or plant pathogens.",
+            "Diseased residue may carry pathogens into future susceptible crops.",
+            "Residue containing mature seed may produce volunteer Cowpeas.",
+            "Residue treated with persistent herbicides or unsuitable chemicals should not enter compost, mulch, feed, or garden systems.",
+            "No exact backyard nitrogen-credit value is stored."
           ],
 
           estimatedShelfLifeCategory:
-            "seasonal-soil-use",
+            "not-applicable",
 
           shelfLifeAfterProcessingCategory:
-            "decomposition-dependent",
+            "decomposes-over-time",
 
           likelyLossPoints: [
-            "Removal of all biomass",
-            "Nitrogen volatilization from poorly managed compost",
-            "Disease carryover",
-            "Rodent nesting",
-            "Wind movement of dry residue",
-            "Rapid decomposition leaving soil exposed"
+            "residue-removed-from-site",
+            "residue-burned",
+            "wind-loss",
+            "erosion",
+            "nutrient-leaching",
+            "nitrogen-volatilization",
+            "anaerobic-matting",
+            "poor-compost-balance",
+            "rodent-nesting",
+            "disease-carryover",
+            "weed-seed-spread",
+            "volunteer-cowpea-growth",
+            "excessive-tillage",
+            "soil-left-bare",
+            "contaminated-residue-entering-compost"
           ],
 
           strengths: [
-            "Returns organic matter",
-            "Retains root channels",
-            "Supports soil biology",
-            "Can contribute nitrogen to following crops",
-            "Reduces bare soil",
-            "Provides compost material"
+            "Returns organic matter to soil",
+            "Protects soil from erosion",
+            "Reduces bare-ground exposure",
+            "Retains roots and soil structure",
+            "Supports soil biological activity",
+            "Provides compost feedstock",
+            "Recycles nutrients remaining after harvest",
+            "May contribute nitrogen to following crops",
+            "Reduces crop-residue waste",
+            "Requires little specialized equipment",
+            "Can support low-tillage management",
+            "Integrates Cowpea into broader crop rotation"
           ],
 
           limitations: [
-            "Harvesting seed exports nutrients",
-            "Residue nitrogen is not immediately available",
-            "Diseased residue may not be suitable for surface retention",
-            "Rapid decomposition provides limited long-term surface cover",
-            "Benefits vary with residue quantity and management"
+            "Provides no direct poultry-feed value",
+            "Nitrogen contribution is variable",
+            "Residue may decompose rapidly",
+            "Wet residue may mat",
+            "Diseased material may require removal",
+            "Mature seed may create volunteers",
+            "Rodents may use thick residue for shelter",
+            "Residue may interfere with immediate planting",
+            "Incorporation requires labor and disturbs soil",
+            "Persistent chemical contamination can limit reuse",
+            "No exact fertilizer-replacement value is available",
+            "Benefits depend on following-crop management"
           ],
 
-          safetyRules: [
-            "Do not compost chemically contaminated residue into poultry-use gardens.",
-            "Remove heavily diseased material when recommended by local Extension guidance.",
-            "Do not allow moldy residue to accumulate where chickens consume it.",
-            "Avoid deep incorporation into saturated soil.",
-            "Keep sharp trellis materials and wire out of poultry areas."
+          safetyWarnings: [
+            "Do not offer soil-building residue as poultry feed merely because it came from a feed crop.",
+            "Remove all desired household-food, poultry-feed, and planting-seed products before residue management.",
+            "Do not compost or mulch residue contaminated by fuel, oil, paint, treated-lumber runoff, floodwater, sewage, persistent herbicides, or unknown chemicals.",
+            "Check pesticide, herbicide, fungicide, desiccant, and fertilizer labels before composting, grazing, mulching, or incorporating treated crop residue.",
+            "Do not use residue where label restrictions prohibit livestock exposure or composting.",
+            "Remove plants showing serious disease when extension guidance recommends destruction rather than composting.",
+            "Do not cold-compost mature weed seed or heavily seed-bearing diseased material where survival is likely.",
+            "Use hot composting or remove seed-bearing material when volunteer growth is undesirable.",
+            "Avoid creating thick wet anaerobic layers.",
+            "Mix nitrogen-rich Cowpea residue with carbon-rich materials when composting.",
+            "Monitor compost moisture and aeration.",
+            "Keep poultry away from actively heating compost piles.",
+            "Do not allow chickens to consume moldy compost, fermented residue, or decomposing material of uncertain safety.",
+            "Use care with mowers, tillers, shredders, and cutting tools.",
+            "Remove wire, stakes, string, plastic clips, irrigation parts, and other foreign objects before mowing or shredding.",
+            "Wear eye, hearing, respiratory, and hand protection where appropriate.",
+            "Avoid unnecessary deep tillage where soil protection is the primary goal.",
+            "Prevent residue from blocking drainage or creating standing water.",
+            "Monitor for rodents, slugs, and disease carryover.",
+            "Use crop rotation where Cowpea diseases or pests have become established."
+          ],
+
+          incompatibleUserTraits: [
+            "expects-direct-poultry-feed-value",
+            "cannot-identify-chemically-contaminated-residue",
+            "cannot-manage-compost-moisture-and-aeration",
+            "cannot-remove-seriously-diseased-material",
+            "cannot-control-volunteer-seed",
+            "cannot-monitor-rodent-or-pest-habitat",
+            "requires-an-exact-nitrogen-credit",
+            "intends-to-feed-decomposing-residue",
+            "uses-persistent-herbicides-without-residue-guidance",
+            "cannot-safely-operate-residue-management-equipment"
           ],
 
           directFacts: {
-            suitableForImmediateFeeding:
+            intendedForPoultryFeeding:
               false,
 
-            suitableForLongTermStorage:
-              false,
-
-            requiresHeatTreatment:
-              false,
-
-            rootsMayBeLeftInSoil:
+            intendedForSoilBuilding:
               true,
 
-            abovegroundRemovalReducesSoilBenefit:
+            rootsMayRemainInPlace:
               true,
+
+            abovegroundResidueMayBeMulched:
+              true,
+
+            abovegroundResidueMayBeComposted:
+              true,
+
+            residueMayBeIncorporated:
+              true,
+
+            residueReturnsOrganicMatter:
+              true,
+
+            residueMayContributeNitrogen:
+              true,
+
+            exactNitrogenCreditKnown:
+              false,
+
+            decompositionRateVariable:
+              true,
+
+            diseasedResidueMayRequireRemoval:
+              true,
+
+            matureSeedMayCreateVolunteers:
+              true,
+
+            thickWetResidueMayBecomeAnaerobic:
+              true,
+
+            chemicalLabelRestrictionsApply:
+              true,
+
+            completeFeedReplacement:
+              false,
 
             notes: [
-              "Cowpea residue has a lower carbon-to-nitrogen ratio than cereal straw and generally decomposes relatively quickly.",
-              "Nitrogen fixed during growth remains distributed throughout the plant.",
-              "Seed harvest removes part of the crop's nitrogen.",
-              "Leaving roots and residue increases soil-building value.",
-              "Cowpeas may be followed by a cereal cover crop to improve year-round soil protection."
+              "Soil-building residue is a crop-system pathway rather than a direct poultry-feed pathway.",
+              "Leaving roots in place preserves belowground organic matter, root channels, and some nodulated tissue.",
+              "Aboveground Cowpea residue can decompose rapidly because legume tissue is generally less carbon rich than mature cereal straw.",
+              "Mixing Cowpea residue with dry leaves, straw, wood chips, or other carbon-rich material may improve compost balance.",
+              "The amount of nitrogen available to the following crop depends on biomass production, nitrogen fixation, harvest removal, residue composition, decomposition, weather, soil, and management.",
+              "Removing seed, pods, or foliage exports part of the crop's accumulated nutrients.",
+              "Residue management should occur only after household-food, poultry-feed, and planting-seed priorities are satisfied.",
+              "Serious disease or chemical contamination may make on-site reuse inappropriate.",
+              "The planner should not convert Cowpea residue into a guaranteed fertilizer-equivalent value.",
+              "Surface retention generally protects soil better than leaving the ground bare."
             ]
           }
         }
-    ],
+      ],
 
             dataQuality: {
         overallConfidenceScore:
@@ -18299,7 +20638,7 @@ const BCP_FEED_CROPS = {
         ]
       }
     }
-
+  
 },
 
         springRoleScores: {
