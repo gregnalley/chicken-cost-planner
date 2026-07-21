@@ -3615,31 +3615,33 @@ function analyzeHarvestProductMatch(
     ],
 
         "millet-grain": [
-      "millet-grain",
-      "proso-millet-grain",
-      "mature-proso-millet-grain",
-      "cleaned-proso-millet-grain",
-      "whole-proso-millet-grain",
-      "dried-proso-millet-grain",
-      "mature-whole-proso-millet-grain",
-      "cleaned-whole-proso-millet-grain",
-      "dry-grain",
-      "whole-grain",
-      "stored-grain"
-    ],
+  "millet-grain",
+  "loose-millet-grain",
+  "proso-millet-grain",
+  "mature-proso-millet-grain",
+  "cleaned-proso-millet-grain",
+  "whole-proso-millet-grain",
+  "dried-proso-millet-grain",
+  "mature-whole-proso-millet-grain",
+  "cleaned-whole-proso-millet-grain",
+  "dry-grain",
+  "whole-grain",
+  "stored-grain"
+],
 
     "millet-panicles": [
-      "millet-panicles",
-      "proso-millet-panicles",
-      "mature-proso-millet-panicles",
-      "dried-proso-millet-panicles",
-      "whole-mature-proso-millet-panicles",
-      "whole-dried-proso-millet-panicles",
-      "seed-bearing-panicles",
-      "whole-seed-heads",
-      "fresh-seed-heads",
-      "dried-seed-heads"
-    ],
+  "millet-panicles",
+  "whole-millet-panicles",
+  "proso-millet-panicles",
+  "mature-proso-millet-panicles",
+  "dried-proso-millet-panicles",
+  "whole-mature-proso-millet-panicles",
+  "whole-dried-proso-millet-panicles",
+  "seed-bearing-panicles",
+  "whole-seed-heads",
+  "fresh-seed-heads",
+  "dried-seed-heads"
+],
 
     "fresh-seed-heads": [
       "fresh-seed-heads",
