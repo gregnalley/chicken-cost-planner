@@ -1750,6 +1750,7 @@ function getStorageDurationLevel(
     short: 1,
     "1-4-weeks": 1,
     medium: 2,
+    "medium-term": 2,
     "1-3-months": 2,
     "medium-to-long": 3,
     "3-6-months": 3,
@@ -3611,6 +3612,33 @@ function analyzeHarvestProductMatch(
       "ground-seed",
       "ground-meal",
       "heat-treated-ground-cowpea-meal"
+    ],
+
+        "millet-grain": [
+      "millet-grain",
+      "proso-millet-grain",
+      "mature-proso-millet-grain",
+      "cleaned-proso-millet-grain",
+      "whole-proso-millet-grain",
+      "dried-proso-millet-grain",
+      "mature-whole-proso-millet-grain",
+      "cleaned-whole-proso-millet-grain",
+      "dry-grain",
+      "whole-grain",
+      "stored-grain"
+    ],
+
+    "millet-panicles": [
+      "millet-panicles",
+      "proso-millet-panicles",
+      "mature-proso-millet-panicles",
+      "dried-proso-millet-panicles",
+      "whole-mature-proso-millet-panicles",
+      "whole-dried-proso-millet-panicles",
+      "seed-bearing-panicles",
+      "whole-seed-heads",
+      "fresh-seed-heads",
+      "dried-seed-heads"
     ],
 
     "fresh-seed-heads": [
