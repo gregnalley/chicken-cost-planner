@@ -20638,7 +20638,7 @@ const BCP_FEED_CROPS = {
         ]
       }
     }
-  
+  }
 },
 
         springRoleScores: {
@@ -22838,9 +22838,8 @@ const BCP_FEED_CROPS = {
           "The planner should preserve separate recommendations for fresh leaves, vine tips, tender pods, fresh peas, cooked mature seed, heat-treated dry seed, living forage, rotational access, postharvest gleaning, saved planting seed, and soil-building residue."
         ]
       }
-    }
-  
-},
+    
+  },
 
 
 
