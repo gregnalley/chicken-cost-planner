@@ -12636,8 +12636,8 @@ const BCP_FEED_CROPS = {
         }
       },
 
-      usePaths: {
-        freshLeafAndVineTip: {
+      usePaths: [
+         {
           id:
             "fresh-leaf-and-vine-tip",
 
@@ -12786,7 +12786,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        tenderImmaturePods: {
+         {
           id:
             "tender-immature-pods",
 
@@ -12924,7 +12924,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        freshImmaturePeas: {
+         {
           id:
             "fresh-immature-peas",
 
@@ -13065,7 +13065,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-                matureCookedSeed: {
+         {
           id:
             "mature-cooked-seed",
 
@@ -13245,7 +13245,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        heatTreatedDrySeed: {
+         {
           id:
             "heat-treated-dry-seed",
 
@@ -13421,7 +13421,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        livingForage: {
+         {
           id:
             "living-forage",
 
@@ -13573,7 +13573,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        rotationalAccess: {
+        {
           id:
             "rotational-access",
 
@@ -13724,7 +13724,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        postharvestGleaning: {
+        {
           id:
             "postharvest-gleaning",
 
@@ -13866,7 +13866,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        savedPlantingSeed: {
+        {
           id:
             "saved-planting-seed",
 
@@ -14023,7 +14023,7 @@ const BCP_FEED_CROPS = {
           }
         },
 
-        soilBuildingResidue: {
+        {
           id:
             "soil-building-residue",
 
@@ -14174,7 +14174,7 @@ const BCP_FEED_CROPS = {
             ]
           }
         }
-      },
+    ],
 
             dataQuality: {
         overallConfidenceScore:
@@ -14554,8 +14554,11 @@ const BCP_FEED_CROPS = {
           "The planner should preserve separate recommendations for fresh leaves, vine tips, tender pods, fresh peas, cooked mature seed, heat-treated dry seed, living forage, rotational access, postharvest gleaning, saved planting seed, and soil-building residue."
         ]
       }
-    }
+    
+  }
 },
+
+
 
   ///////////////////////////////////////////////
   //
