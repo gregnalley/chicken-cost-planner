@@ -4823,24 +4823,19 @@ function scoreGenericCropProfile(
           b.score - a.score
       );
 
-     if (
+  if (
     profile.id ===
       "PROFILE-MILLET-SHORT-SEASON-DRY" &&
     crop.id ===
       "CROP-PROSO-MILLET"
   ) {
     console.group(
-      "Profile 12 — Proso Millet use-path diagnostics"
+      "Profile 12 — Proso Millet hard failures"
     );
 
-    console.log(
-      "Profile answers:",
-      answers
-    );
-
-    usePathResults.forEach(
-      result => {
-        console.log({
+    console.table(
+      usePathResults.map(
+        result => ({
           usePathId:
             result.usePathId,
 
@@ -4854,15 +4849,24 @@ function scoreGenericCropProfile(
             result.hardFailure,
 
           hardFailures:
-            result.hardFailures,
+            Array.isArray(
+              result.hardFailures
+            )
+              ? result.hardFailures.join(
+                  " | "
+                )
+              : "",
 
           limitations:
-            result.limitations,
-
-          strengths:
-            result.strengths
-        });
-      }
+            Array.isArray(
+              result.limitations
+            )
+              ? result.limitations.join(
+                  " | "
+                )
+              : ""
+        })
+      )
     );
 
     console.groupEnd();
