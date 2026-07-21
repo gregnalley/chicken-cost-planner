@@ -3721,7 +3721,7 @@ function analyzeHarvestProductMatch(
       )
     );
 
-  function productMatches(
+    function productMatches(
     desiredProduct,
     usePathProduct
   ) {
@@ -3732,26 +3732,38 @@ function analyzeHarvestProductMatch(
       return true;
     }
 
-    const desiredAliases =
-      productAliasGroups[
-        desiredProduct
-      ] || [];
+    /*
+     * A requested product and a crop product
+     * are compatible when both appear anywhere
+     * within the same alias group.
+     *
+     * Neither value has to be the alias-group
+     * key. This supports older questionnaire IDs
+     * such as "loose-millet-grain" and
+     * "whole-millet-panicles".
+     */
+    return Object.entries(
+      productAliasGroups
+    ).some(
+      ([
+        canonicalProduct,
+        aliases
+      ]) => {
+        const completeGroup =
+          new Set([
+            canonicalProduct,
+            ...aliases
+          ]);
 
-    if (
-      desiredAliases.includes(
-        usePathProduct
-      )
-    ) {
-      return true;
-    }
-
-    const usePathAliases =
-      productAliasGroups[
-        usePathProduct
-      ] || [];
-
-    return usePathAliases.includes(
-      desiredProduct
+        return (
+          completeGroup.has(
+            desiredProduct
+          ) &&
+          completeGroup.has(
+            usePathProduct
+          )
+        );
+      }
     );
   }
 
