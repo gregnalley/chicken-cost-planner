@@ -3158,6 +3158,29 @@ const BCP_FEED_CROPS = {
         wildlifeRiskScore:
           5,
 
+         wildlife: {
+          wildBirds:
+            5,
+
+          squirrels:
+            5,
+
+          rodents:
+            4,
+
+          deer:
+            4,
+
+          rabbits:
+            3,
+
+          raccoons:
+            2,
+
+          groundhogs:
+            2
+        }, 
+
         insectRiskScore:
           4,
 
