@@ -1,5 +1,7 @@
 const BCP_FEED_CROPS = {
 
+
+
     ///////////////////////////////////////////////
     //
     //
@@ -10,1993 +12,8605 @@ const BCP_FEED_CROPS = {
     //
     //
     //
-    //////////////////////////////////////////////
-
+    ///////////////////////////////////////////////
 
   "CROP-SUNFLOWER": {
-    id: "CROP-SUNFLOWER",
+    id:
+      "CROP-SUNFLOWER",
 
-    name: "Sunflowers",
-    scientificName: "Helianthus annuus",
+    name:
+      "Sunflower",
 
-    category: "Oilseed and Energy Crop",
-    cropType: "Annual",
-    seasonType: "Warm Season",
+    scientificName:
+      "Helianthus annuus",
 
-    status: "Initial Research Complete",
+    category:
+      "Oilseed Crop",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Warm Season",
+
+    status:
+      "Initial Research Complete",
 
     summary:
-      "Oilseed sunflowers can provide energy-dense seeds, moderate protein, enrichment, pollinator value, and a harvest that can be dried and stored for later use.",
+      "Sunflower is a warm-season annual oilseed crop that can provide highly energy-dense seeds, moderate protein, valuable unsaturated oils, winter feed storage, seasonal enrichment, pollinator habitat, wildlife value, cut flowers, and ornamental appeal. For backyard poultry, mature seeds and dried seed heads are the primary feed products, although sunflower should always remain a supplemental feed because of its high fat content, variable hull percentage, amino-acid limitations, and inability to provide a complete balanced poultry ration by itself.",
 
     chickenUse: {
       edibleParts: [
-        "Mature seeds",
-        "Dried seed heads",
-        "Shelled seed kernels"
+        "Mature whole seeds",
+        "Shelled seed kernels",
+        "Whole dried seed heads",
+        "Fresh mature seed heads",
+        "Cracked seeds",
+        "Ground seeds"
       ],
 
       primaryValue: [
-        "Energy",
-        "Fat",
+        "High-energy feed",
+        "Oil source",
         "Moderate protein",
-        "Enrichment",
-        "Winter storage"
+        "Winter feed storage",
+        "Seasonal enrichment",
+        "Natural foraging behavior",
+        "Pollinator support",
+        "Multi-purpose homestead crop"
       ],
 
       feedingForms: [
-        "Whole dried seed heads",
-        "Loose whole seeds",
+        "Whole mature seeds",
         "Shelled kernels",
-        "Cracked or ground seeds"
+        "Whole dried seed heads",
+        "Fresh harvested seed heads",
+        "Cracked seeds",
+        "Ground seed ingredient"
       ],
 
       bestFor: [
-        "Adult chickens",
-        "Laying hens as a supplemental food",
-        "Seasonal enrichment",
+        "Established adult chickens",
+        "Winter supplemental feeding",
         "Cold-weather energy supplementation",
-        "Dry winter storage"
+        "Backyard enrichment",
+        "Small flocks",
+        "Stored seasonal feed",
+        "Homestead feed production",
+        "Dual-purpose ornamental gardens"
       ],
 
-      supplementOnly: true,
+      supplementOnly:
+        true,
 
       preparationNotes:
-        "Allow seed heads to mature fully. Harvest before excessive bird loss, dry them thoroughly, and store them in a cool, dry, rodent-resistant container. Whole heads can be offered as enrichment, or the seeds can be removed and portioned.",
+        "Allow seed heads to mature completely before harvest. Harvest before prolonged wet weather or excessive bird damage, then dry thoroughly in a well-ventilated location until seeds are fully cured. Whole heads may be hung for flock enrichment, while loose seeds may be cleaned and stored in rodent-resistant containers. Seeds intended for poultry should remain dry, clean, and free of spoilage.",
 
       safetyNotes:
-        "Sunflower seeds are rich in oil and should supplement rather than replace a balanced poultry ration. Avoid feeding moldy, damp, rancid, or heavily salted sunflower seeds."
+        "Sunflower seed is rich in oil and calories and should supplement rather than replace a balanced poultry ration. Excessive feeding can dilute nutrient intake from complete feed and contribute to excessive dietary fat. Never feed moldy, damp, rancid, fermented, chemically treated, insect-infested, rodent-contaminated, heavily salted, flavored, roasted, or otherwise spoiled sunflower seed."
     },
 
     nutrition: {
       basis:
-        "Approximate whole-seed values. Nutrient composition varies by oilseed versus confection type, hull percentage, growing conditions, and processing.",
+        "Approximate values for mature whole sunflower seed, primarily expressed on a dry-matter basis. Composition varies substantially among oilseed, confection, striped, black-oil, hybrid, open-pollinated, hulled, dehulled, and processed sunflower products.",
 
-      crudeProteinPercent: "Approximately 20%",
-      fatPercent: "Approximately 40%",
+      crudeProteinPercent:
+        "Approximately 16% dry matter for typical whole sunflower seed; values vary considerably by cultivar, hull percentage, and processing",
+
+      fatPercent:
+        "Approximately 40% ether extract on a dry-matter basis for typical oilseed sunflower",
+
       fiberPercent:
-        "Can be high; approximately 29% has been reported for whole seed, largely because of the hull",
+        "Approximately 17% crude fiber for whole seed because of the hull; dehulled kernels contain substantially less fiber",
 
-      calciumPercent: null,
-      phosphorusPercent: null,
+      starchPercent:
+        "Very low compared with cereal grains because sunflower stores most of its energy as oil rather than starch",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      metabolizableEnergy:
+        "Very high compared with most cereal grains because sunflower stores energy primarily as vegetable oil",
 
       notableNutrients: [
-        "Energy-dense oil",
-        "Moderate protein",
+        "Unsaturated vegetable oil",
+        "Moderate crude protein",
         "Vitamin E",
         "Phosphorus",
         "Magnesium",
+        "Copper",
+        "Manganese",
         "Selenium",
-        "Unsaturated fatty acids"
+        "Linoleic acid",
+        "Oleic acid"
       ],
 
-      limitations: [
-        "High oil content makes the seed energy-dense",
-        "Hull content raises fiber and lowers usable nutrient density",
-        "Whole seed, kernels, and sunflower meal have very different nutrient profiles",
-        "Sunflower protein does not by itself create a balanced poultry ration",
-        "Large amounts may dilute calcium, amino acids, vitamins, and minerals supplied by complete layer feed"
-      ]
+      aminoAcidStrengths: [
+        "Provides moderate-quality plant protein",
+        "Useful supplemental protein alongside cereal grains"
+      ],
+
+      aminoAcidLimitations: [
+        "Methionine and lysine remain limiting for poultry",
+        "Whole sunflower seed cannot provide a complete amino-acid balance",
+        "Protein quality varies among cultivars and processing methods",
+        "Sunflower meal and whole seed differ substantially in amino-acid concentration"
+      ],
+
+      betaGlucanConcern:
+        false,
+
+      phytateConcern:
+        true,
+
+      hullFiberConcern:
+        true,
+
+      notableAntinutritionalFactors: [
+        "Hull-associated fiber",
+        "Phytate",
+        "High oil concentration"
+      ],
+
+      processingEffects: [
+        "Removing hulls substantially increases nutrient density.",
+        "Whole seed contains considerably more fiber than kernels.",
+        "Grinding improves mixing but shortens storage life because exposed oils oxidize more rapidly.",
+        "Heat generated during poor storage accelerates rancidity.",
+        "Roasting changes flavor but is generally unnecessary for poultry feed.",
+        "Cracking seed improves access for some birds but increases oxidation during storage.",
+        "Long-term exposure to heat, moisture, oxygen, or sunlight reduces oil quality."
+      ],
+
+      poultryLimitations: [
+        "Very high oil concentration",
+        "High fiber when whole seed is fed",
+        "Whole seed contains less usable nutrition than dehulled kernels",
+        "Cannot supply adequate calcium for laying hens",
+        "Cannot replace a balanced poultry ration",
+        "Excessive feeding may dilute vitamin and mineral intake",
+        "Large quantities may contribute to excessive dietary fat",
+        "No universal backyard feeding percentage is supported"
+      ],
+
+      directFacts: {
+        primaryNutritionalRole:
+          "high-energy-oilseed",
+
+        highProteinFeed:
+          false,
+
+        highFatFeed:
+          true,
+
+        highFiberRelativeToCorn:
+          true,
+
+        betaGlucansPresent:
+          false,
+
+        lowerEnergyThanCorn:
+          false,
+
+        lowerEnergyThanWheat:
+          false,
+
+        hullLessVarietiesAvailable:
+          true,
+
+        enzymeSupplementationCanImproveUse:
+          false,
+
+        completeFeed:
+          false,
+
+        notes: [
+          "Sunflower functions primarily as an energy and oil crop rather than as a protein crop.",
+          "Oil concentration gives sunflower one of the highest energy values among commonly grown backyard feed crops.",
+          "Whole seed and dehulled kernels should never be treated as nutritionally identical.",
+          "Hull percentage significantly affects usable nutrient density.",
+          "Older birds generally utilize sunflower better than young chicks.",
+          "Published commercial inclusion rates should not be converted into universal backyard feeding recommendations.",
+          "The planner should distinguish between occasional enrichment feeding and use as a formulated ration ingredient."
+        ]
+      }
     },
 
     growing: {
-      sunlight: "Full sun; approximately 6 or more hours daily",
+      sunlight:
+        "Full sun",
 
-      soilTemperatureMinimumF: 60,
+      soilTemperatureMinimumF:
+        60,
+
       idealSoilTemperatureF:
-        "Approximately 60°F or warmer before direct sowing",
+        "Approximately 60°F or warmer for dependable germination and rapid emergence",
 
-      frostTolerance: "Low",
-      heatTolerance: "High",
+      frostTolerance:
+        "Very Low",
+
+      winterHardiness:
+        "None; killed by frost",
+
+      heatTolerance:
+        "High",
+
       droughtTolerance:
-        "Moderate after establishment, although moisture stress can reduce seed development",
+        "Moderate to High after establishment because of deep rooting",
 
-      soilPHMinimum: null,
-      soilPHMaximum: null,
+      salinityTolerance:
+        "Low to Moderate",
+
+      waterloggingTolerance:
+        "Low",
+
+      soilPHMinimum:
+        6.0,
+
+      soilPHMaximum:
+        7.5,
 
       waterNeeds:
-        "Moderate; consistent moisture is especially important during establishment, flowering, and seed filling",
+        "Moderate overall, with adequate moisture especially important during germination, bud formation, flowering, pollination, and seed filling",
 
-      directSow: true,
-      transplantRecommended: false,
+      directSow:
+        true,
 
-      daysToFirstHarvestMinimum: 60,
-      daysToFirstHarvestMaximum: 120,
+      transplantRecommended:
+        false,
 
-      daysToMaturityMinimum: 60,
-      daysToMaturityMaximum: 120,
+      springVarietiesAvailable:
+        true,
+
+      winterVarietiesAvailable:
+        false,
+
+      facultativeVarietiesAvailable:
+        false,
+
+      twoRowVarietiesAvailable:
+        false,
+
+      sixRowVarietiesAvailable:
+        false,
+
+      coveredVarietiesAvailable:
+        false,
+
+      hullLessVarietiesAvailable:
+        true,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      daysToPollinationAfterEmergence:
+        "Approximately 55 to 75 days depending on cultivar, temperature, and growing conditions",
 
       plantSpacingInches:
-        "Approximately 6 inches initially; wider spacing may be used for large single-head seed varieties",
+        "Approximately 12 to 18 inches depending on mature plant size",
 
       rowSpacingInches:
-        "Variety- and equipment-dependent; research continues",
+        "Approximately 24 to 36 inches depending on variety and harvest method",
 
       plantingDepthInches:
         "Approximately 1 to 2 inches",
 
-      successionPlanting: true,
+      successionPlanting:
+        true,
 
-      regrowthAfterHarvest: false
+      regrowthAfterHarvest:
+        "Harvest ends the annual crop; plants do not regrow after seed harvest",
+
+            directFacts: {
+        warmSeasonAnnual:
+          true,
+
+        springAndSummerPlantingSuitable:
+          true,
+
+        frostFreeGrowingSeasonRequired:
+          true,
+
+        directSeedingPreferred:
+          true,
+
+        transplantingUsuallyUnnecessary:
+          true,
+
+        floweringHighlyVarietyDependent:
+          true,
+
+        insectPollinatedBenefit:
+          true,
+
+        selfCompatibleManyHybrids:
+          true,
+
+        optimalGrowingTemperatureMaximumF:
+          90,
+
+        excessiveHeatDuringFloweringConcern:
+          true,
+
+        deepRootSystem:
+          true,
+
+        wellDrainedSoilRequired:
+          true,
+
+        notes: [
+          "Sunflower is a warm-season annual that performs best after danger of frost has passed.",
+          "Large seed allows easy direct sowing and rapid emergence in warm soils.",
+          "Although many modern hybrids are self-compatible, bee activity generally improves seed set and overall yield.",
+          "Deep rooting allows established plants to tolerate moderate drought better than many garden crops.",
+          "Standing water and poorly drained soils reduce plant vigor and increase disease pressure.",
+          "Large-headed varieties may require staking in windy locations.",
+          "Plant maturity varies substantially among ornamental, confection, and oilseed cultivars.",
+          "Growing degree accumulation and day length influence flowering and maturity.",
+          "Seed development is most successful when adequate soil moisture is available during flowering and seed fill.",
+          "Commercial maturity data should not be converted into universal backyard harvest dates."
+        ]
+      }
     },
 
     regionalPlanting: {
       coldNorth: {
         plantingWindow:
-          "Direct sow after the final spring frost when soil has warmed to approximately 60°F. Short-season varieties are usually most practical.",
+          "Direct sow after the final spring frost once soil temperatures consistently reach approximately 60°F. Select early-maturing varieties for shorter growing seasons.",
+
         harvestWindow:
-          "Late summer through early fall, before persistent wet weather or hard frost."
+          "Late summer through early fall before prolonged wet weather or killing frost.",
+
+        varietyGuidance:
+          "Choose shorter-season oilseed or dual-purpose cultivars capable of reaching full maturity before autumn frost."
       },
 
       midwestNortheast: {
         plantingWindow:
-          "Direct sow after frost danger has passed and soil reaches approximately 60°F, commonly during mid- to late spring.",
+          "Plant after frost danger has passed once soils have warmed. Mid-spring planting generally produces the most reliable seed crop.",
+
         harvestWindow:
-          "Late summer through early fall, depending on variety and planting date."
+          "Late summer through early fall depending on cultivar and planting date.",
+
+        varietyGuidance:
+          "Select varieties with strong stalk strength, disease resistance, and maturity suited to local frost dates."
       },
 
       upperSouth: {
         plantingWindow:
-          "Direct sow in spring after frost danger has passed. Succession plantings may be possible where the season is long enough.",
+          "Direct sow after the final frost. Successive plantings may extend flowering and stagger harvest where sufficient growing season remains.",
+
         harvestWindow:
-          "Summer through early fall."
+          "Late summer into autumn depending upon planting schedule.",
+
+        varietyGuidance:
+          "Heat-tolerant oilseed varieties generally perform well. Consider disease resistance where humidity is consistently high."
       },
 
       deepSouth: {
         plantingWindow:
-          "Spring planting may begin earlier than in northern regions once frost danger has passed and soil is warm. Avoid placing seed development during the most severe heat and drought when possible.",
+          "Plant early after frost danger has passed so flowering and seed fill occur before the most severe summer heat whenever practical.",
+
         harvestWindow:
-          "Early summer through fall, depending on planting date and local heat."
+          "Summer through early autumn depending upon planting date and local climate.",
+
+        varietyGuidance:
+          "Select heat-tolerant cultivars with resistance to common fungal diseases favored by humidity."
       },
 
       southwest: {
         plantingWindow:
-          "Plant after frost when irrigation is available. Time flowering and seed filling to avoid the most extreme heat where possible.",
+          "Plant after frost with irrigation available if seasonal rainfall is inadequate. Time flowering to avoid periods of extreme heat whenever possible.",
+
         harvestWindow:
-          "Summer into fall, depending on elevation and planting date."
+          "Summer through fall depending on elevation and irrigation.",
+
+        varietyGuidance:
+          "Prioritize drought tolerance, stalk strength, irrigation efficiency, and resistance to lodging."
       },
 
       pacificNorthwest: {
         plantingWindow:
-          "Plant after frost once soil has warmed. Select earlier-maturing varieties in cooler or shorter-season locations.",
+          "Plant after soils warm during spring. Earlier-maturing cultivars are generally preferred in cooler locations.",
+
         harvestWindow:
-          "Late summer through early fall."
+          "Late summer through early fall.",
+
+        varietyGuidance:
+          "Choose varieties with reliable maturity under cooler summer conditions and good resistance to lodging."
       },
 
       coastalWest: {
         plantingWindow:
-          "Plant after frost and once soil is warm. Mild areas may support an extended sowing window.",
+          "Plant after frost once soils warm sufficiently. Mild coastal climates often allow an extended planting season.",
+
         harvestWindow:
-          "Summer through fall, depending on local conditions."
-      }
+          "Summer through autumn depending on planting date and local weather.",
+
+        varietyGuidance:
+          "Choose cultivars with good disease resistance and dependable drying characteristics in humid coastal environments."
+      },
+
+      highElevation: {
+        plantingWindow:
+          "Plant after danger of frost once soils have adequately warmed. Earlier cultivars are generally required because of shorter growing seasons.",
+
+        harvestWindow:
+          "Late summer before early autumn frost.",
+
+        varietyGuidance:
+          "Early-maturing oilseed cultivars provide the greatest chance of complete seed fill before frost."
+      },
+
+      regionalNotes: [
+        "Planting dates should always be adjusted using local frost records.",
+        "Sunflower performs best in full sun with a frost-free growing season.",
+        "Cultivar maturity varies greatly and should be matched to local growing conditions.",
+        "Bird pressure often becomes the greatest harvest challenge regardless of region.",
+        "Humid climates increase the likelihood of fungal diseases and drying difficulties.",
+        "Dry climates may require supplemental irrigation for maximum seed production.",
+        "Regional Extension variety trials should be consulted whenever available.",
+        "Harvest timing should prioritize mature dry seed while avoiding prolonged field exposure."
+      ]
     },
 
     spaceAndYield: {
-      plantsPer10SquareFeet: 4,
-      plantsPer50SquareFeet: 18,
-      plantsPer100SquareFeet: 36,
+      plantsPer10SquareFeet:
+        4,
 
-      expectedYieldPerPlantMinimumLbs: null,
-      expectedYieldPerPlantMaximumLbs: null,
+      plantsPer50SquareFeet:
+        18,
 
-      expectedYieldPer100SquareFeetMinimumLbs: null,
-      expectedYieldPer100SquareFeetMaximumLbs: null,
+      plantsPer100SquareFeet:
+        36,
 
-      edibleYieldPercent: null,
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      hullPercentage:
+        null,
+
+      bushelWeightLbs:
+        null,
 
       storageLife:
-        "Potentially several months when fully dried and protected from moisture, insects, rodents, and rancidity",
+        "Potentially many months when mature seeds are thoroughly dried and protected from moisture, insects, rodents, excessive heat, oxygen, and rancidity",
 
       storageMethod:
-        "Dry seed heads or cleaned seeds thoroughly. Store in a cool, dry, dark location inside a sealed rodent-resistant container. Inspect periodically for moisture, mold, insects, or rancid odor.",
+        "Harvest mature heads after the backs have turned yellow to brown and seeds are fully developed. Dry thoroughly with excellent airflow before removing seeds or storing entire heads. Store in sealed food-safe rodent-resistant containers in a cool, dark, dry environment. Inspect regularly for insects, moisture, mold, heating, or rancid odor.",
 
       yieldNotes:
-        "Plant-density estimates are calculated from University of Georgia Extension guidance recommending approximately 12 to 15 inches between plants and 2 to 3 feet between rows. Using midpoint spacing of approximately 13.5 inches by 30 inches produces an estimated population of about 4 plants per 10 square feet, 18 plants per 50 square feet, and 36 plants per 100 square feet. These values represent practical planting-density estimates rather than measured backyard seed yield. Actual seed production depends strongly on variety, pollination, fertility, moisture, bird pressure, head size, harvest timing, and whether results are measured as whole heads, unshelled seeds, or kernels."
-    },
+        "Backyard sunflower yield varies tremendously with cultivar, head size, plant population, pollination, fertility, moisture, wildlife pressure, disease, harvest timing, drying losses, shelling losses, and storage conditions. Reliable small-scale yield data remain insufficient for assigning generalized pounds per plant or pounds per square foot.",
 
-    economics: {
+      densityNotes:
+        "Plant populations are based on practical backyard spacing rather than commercial production densities. Larger confection varieties generally require wider spacing than black-oil seed types, while ornamental cultivars may vary considerably.",
+
+      harvestProducts: [
+        "whole-seed-heads",
+        "whole-seeds",
+        "seed-kernels",
+        "cut-flowers",
+        "birdseed",
+        "compost-biomass"
+      ],
+
+      harvestByproducts: [
+        "Seed hulls",
+        "Flower stalks",
+        "Leaves",
+        "Root biomass",
+        "Empty seed heads"
+      ],
+
+      byproductNotes: [
+        "Stalks and leaves provide useful compost biomass but have relatively little poultry-feed value.",
+        "Seed hulls contribute fiber but relatively little usable nutrition.",
+        "Empty heads may be composted after seed removal.",
+        "Poor-quality or moldy heads should never be fed to poultry."
+      ],
+
+      directFacts: {
+        typicallyPlantedAsIndividualPlants:
+          true,
+
+        individualPlantSpacingUseful:
+          true,
+
+        commercialYieldConversionToBackyardNotSupported:
+          true,
+
+        producesHarvestableSeedHeads:
+          true,
+
+        notes: [
+          "Sunflower is grown as individually spaced plants rather than dense cereal stands.",
+          "Plant spacing strongly influences mature head size.",
+          "Wider spacing generally produces fewer but larger heads.",
+          "Closer spacing generally produces more plants with somewhat smaller heads.",
+          "Wildlife losses can substantially reduce harvestable seed.",
+          "Whole-head feeding minimizes processing labor compared with loose-seed storage.",
+          "No dependable backyard yield guarantee is currently supported."
+        ]
+      }
+    },
+    
+        economics: {
       seedCostEstimate:
-        "Usually low to moderate, depending on variety and packet or bulk-seed quantity",
+        "Usually low to moderate for ordinary garden packets or bulk agricultural seed; specialty black-oil, confection, mammoth, organic, hybrid, pollen-producing, pollen-free, dwarf, branching, heritage, or ornamental cultivars may cost more",
 
       equipmentCostEstimate:
-        "Low for direct sowing; optional costs include irrigation, netting, stakes, drying racks, and storage containers",
+        "Low for a small directly seeded planting; moderate where the grower purchases irrigation equipment, stakes, trellising materials, bird netting, individual head bags, pruning tools, drying racks, screens, fans, seed-removal equipment, moisture meters, or sealed rodent-resistant storage containers",
 
-      irrigationCostLevel: "Low to Moderate",
-      laborLevel: "Moderate",
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Moderate for whole-head harvest and use; Moderate to High where mature heads must be protected, cut, dried, stripped, cleaned, sorted, measured, and stored as loose seed",
 
       potentialFeedSavings:
-        "Not yet quantified. Economic value depends on seed yield, bird losses, land availability, labor, and the price of purchased sunflower seed or complete feed.",
+        null,
+
+      economicAdvantages: [
+        "Seed is generally easy to obtain",
+        "Large seed is easy to plant by hand",
+        "Direct sowing reduces transplanting costs",
+        "Plants can produce energy-dense stored seed",
+        "Whole heads can be used without shelling or grinding",
+        "Dried seed can be stored without electricity",
+        "The crop can provide flock enrichment",
+        "Flowers can support pollinators",
+        "Some varieties provide household-food seed",
+        "Tall varieties can provide seasonal screening",
+        "Stalks, leaves, and empty heads can contribute compost biomass",
+        "Open-pollinated varieties may provide seed-saving opportunities"
+      ],
+
+      economicLimitations: [
+        "Wild birds may remove a substantial portion of the seed crop",
+        "Squirrels and rodents may damage developing heads or stored seed",
+        "Bird netting or individual head protection may add cost and labor",
+        "Large-headed plants may require staking",
+        "Seed yield varies greatly among cultivars",
+        "Ornamental cultivars may provide little useful seed",
+        "Pollen-free cut-flower cultivars may be poorly suited to feed-seed production",
+        "Wet weather may delay harvest and increase head-mold risk",
+        "Drying whole heads requires protected space and airflow",
+        "Removing and cleaning loose seed requires additional labor",
+        "High-oil seed can become rancid under poor storage conditions",
+        "Whole sunflower seed cannot replace complete poultry feed",
+        "Land used for widely spaced plants may have a low dependable feed return",
+        "Household-scale seed production may cost more than purchased bulk sunflower seed"
+      ],
+
+      likelyLowestCostUse:
+        "fresh-or-dried-whole-seed-head-enrichment",
+
+      likelyHighestLaborUse:
+        "cleaned-loose-seed-for-measured-storage-and-feeding",
+
+      potentialFeedSavingsNotes:
+        "Feed savings cannot be estimated until usable backyard seed yield, cultivar type, wildlife loss, harvest loss, drying loss, seed-cleaning loss, storage loss, labor, land value, protection costs, ration displacement, and the price of purchased sunflower seed or complete poultry feed are known.",
 
       economicNotes:
-        "Sunflowers may provide value beyond poultry feed through pollinator support, visual appeal, shade, cut flowers, and enrichment. Their direct feed savings should not be estimated until usable seed yield is known."
+        "Sunflower's strongest economic value may come from combining several uses rather than attempting to replace a large portion of purchased poultry feed. A planting can potentially provide mature seed, whole-head enrichment, household-food seed, pollinator habitat, visual appeal, temporary screening, cut flowers, wildlife value, seed-saving opportunities, and compost biomass. These benefits should be evaluated separately rather than assigning an unsupported total dollar return."
     },
 
     scores: {
-      easeOfGrowing: null,
-      yieldPerSquareFoot: null,
-      nutritionalUsefulness: null,
-      proteinContribution: null,
-      energyContribution: null,
-      storageValue: null,
-      smallSpaceSuitability: null,
-      heatTolerance: null,
-      coldTolerance: null,
-      laborEfficiency: null,
-      economicPotential: null,
-      safetySimplicity: null
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
     },
 
     rankings: {
-      practicalScore: null,
-      nutritionalScore: null,
-      bcpFeedScore: null
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
     },
 
     evidence: {
       evidenceStrength:
-        "Moderate for basic cultivation and poultry-feed use; limited for backyard yield and economic replacement estimates",
+        "Strong for commercial Sunflower agronomy, oilseed and nonoilseed production, ordinary whole-seed composition, oil and hull characteristics, pollination, major diseases, wildlife pressure, and formulated poultry-diet use; moderate for home-garden cultivation, whole-head enrichment, manual harvesting, and household seed storage; limited for dependable backyard seed yield, pounds per square foot, household processing efficiency, direct feed savings, and informal small-flock feeding quantities",
 
       sources: [
         {
-          title: "Growing Sunflowers in the Home Garden",
-          organization: "University of Georgia Cooperative Extension",
-          url: "https://fieldreport.caes.uga.edu/publications/C1121/growing-sunflowers-in-the-home-garden/",
+          title:
+            "Sunflower Seeds",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/40",
+
           use:
-            "Planting timing, soil temperature, depth, spacing, and home-garden cultivation"
+            "Whole Sunflower seed characteristics, oilseed-feed value, poultry use, dehulling, hull effects, energy value, protein limitations, dietary inclusion research, and distinctions between whole seed and processed Sunflower products"
         },
 
         {
-          title: "Sunflower Seeds in Poultry Diets",
-          organization: "Small and Backyard Poultry Extension",
-          url: "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/oilseed-meals-in-poultry-diets/sunflower-seeds-in-poultry-diets/",
+          title:
+            "Sunflower Seeds — Chemical Composition Table",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/12666",
+
           use:
-            "Poultry use and dietary inclusion context"
+            "Average dry matter, crude protein, crude fiber, neutral-detergent fiber, acid-detergent fiber, lignin, fat, minerals, fatty acids, amino acids, and sample variation"
         },
 
         {
-          title: "Designing Feeding Programs for Natural and Organic Pork Production",
-          organization: "University of Minnesota Extension",
-          url: "https://extension.umn.edu/small-scale-swine-production/designing-feeding-programs-natural-and-organic-pork-production",
+          title:
+            "Sunflower Hulls and Sunflower Screenings",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/733",
+
           use:
-            "Approximate whole sunflower seed protein, oil, and fiber values"
+            "Approximate hull proportion, hull composition, fiber concentration, processing byproducts, and reduced nutrient value of hull-rich material"
         },
 
         {
-          title: "USDA FoodData Central",
-          organization: "United States Department of Agriculture",
-          url: "https://fdc.nal.usda.gov/",
+          title:
+            "Sunflower Meal",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/732",
+
           use:
-            "Micronutrient context for sunflower kernels"
+            "Differences between whole seed and Sunflower meal, oil-extraction effects, dehulling, protein concentration, fiber limitations, and poultry-feed context"
+        },
+
+        {
+          title:
+            "Sunflower Forage and Crop Residues",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/143",
+
+          use:
+            "Sunflower foliage, stalks, heads, crop residues, moisture content, forage limitations, drying, ensiling, and distinction between seed-feed and forage use"
+        },
+
+        {
+          title:
+            "Sunflower Production Guide",
+
+          organization:
+            "North Dakota State University Extension",
+
+          url:
+            "https://www.ndsu.edu/agriculture/extension/publications/sunflower-production-guide",
+
+          use:
+            "Commercial agronomy, growth stages, soil requirements, fertility, planting, maturity, pollination, water use, plant population, lodging, harvest, drying, storage, insects, diseases, weeds, birds, and regional production limitations"
+        },
+
+        {
+          title:
+            "Planting Sunflower With Attention to Details",
+
+          organization:
+            "North Dakota State University Extension",
+
+          url:
+            "https://www.ndsu.edu/agriculture/ag-hub/planting-sunflower-attention-details",
+
+          use:
+            "Planting depth, seed-to-soil contact, target commercial plant populations, differences between oilseed and confection populations, and establishment considerations"
+        },
+
+        {
+          title:
+            "Sunflowers",
+
+          organization:
+            "North Dakota State University Agriculture",
+
+          url:
+            "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/crops/sunflowers",
+
+          use:
+            "Current Sunflower production resources, variety trials, hybrid-selection guidance, planting information, yield estimation, soil management, disease management, and regional research"
+        },
+
+        {
+          title:
+            "Growing Sunflowers in the Home Garden",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://fieldreport.caes.uga.edu/publications/C1121/growing-sunflowers-in-the-home-garden/",
+
+          use:
+            "Home-garden planting timing, warm-soil establishment, seed depth, spacing, sunlight, soil preparation, water, fertility, staking, cultivar selection, and harvest considerations"
+        },
+
+        {
+          title:
+            "Sunflower Seeds in Poultry Diets",
+
+          organization:
+            "Small and Backyard Poultry Extension",
+
+          url:
+            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/oilseed-meals-in-poultry-diets/sunflower-seeds-in-poultry-diets/",
+
+          use:
+            "Whole Sunflower seed in formulated poultry diets, distinction between whole seed and Sunflower meal, oil-extraction methods, and poultry dietary-inclusion context"
+        },
+
+        {
+          title:
+            "Oilseed Meals in Poultry Diets",
+
+          organization:
+            "Small and Backyard Poultry Extension",
+
+          url:
+            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/oilseed-meals-in-poultry-diets/",
+
+          use:
+            "Effects of oil extraction, processing temperature, lysine availability, dehulling, hull fiber, and use of Sunflower meal in balanced poultry diets"
+        },
+
+        {
+          title:
+            "USDA FoodData Central",
+
+          organization:
+            "United States Department of Agriculture",
+
+          url:
+            "https://fdc.nal.usda.gov/",
+
+          use:
+            "Human-food Sunflower kernel composition, oil, protein, minerals, vitamin E, and fatty-acid context; kernel values are not treated as equivalent to whole in-shell seed"
         }
       ],
 
-      lastReviewed: "2026-07-13",
+      lastReviewed:
+        "2026-07-20",
 
       researchNotes: [
-        "Separate black-oil sunflower data from confection sunflower data before assigning final nutrition scores.",
-        "Do not compare whole unshelled seed directly with kernels or sunflower meal.",
-        "Find credible seed-yield data appropriate for backyard spacing.",
-        "Determine reasonable plants-per-square-foot ranges for oilseed varieties.",
-        "Research seed losses from wild birds and methods such as netting or bagging heads.",
-        "Research poultry-specific guidance for laying hens before suggesting a percentage of total diet.",
-        "Calculate scores only after comparable records exist for several crops.",
-        "Plant-density estimates use midpoint spacing of approximately 13.5 inches between plants and 30 inches between rows, based on University of Georgia Extension home-garden guidance."
-      
+        "Separate oilseed, black-oil, confection, striped, ornamental, cut-flower, branching, single-stem, hybrid, and open-pollinated Sunflower types where those distinctions affect feed value or production.",
+        "Do not treat all garden Sunflower cultivars as useful poultry-seed cultivars.",
+        "Do not treat pollen-free cut-flower cultivars as dependable seed-producing feed crops.",
+        "Do not compare whole in-shell seed directly with dehulled kernels.",
+        "Do not compare whole seed directly with solvent-extracted or mechanically extracted Sunflower meal.",
+        "Hull proportion materially changes crude fiber and usable nutrient density.",
+        "Whole-seed composition should be stored separately from kernel composition.",
+        "Sunflower meal should require a separate crop-product or feed-ingredient pathway if it is added later.",
+        "Do not recommend a universal backyard poultry inclusion percentage.",
+        "Published commercial-diet inclusion rates apply only when the complete ration is formulated and balanced.",
+        "Distinguish measured loose-seed supplementation from unrestricted whole-head enrichment.",
+        "Whole-head consumption is difficult to measure accurately.",
+        "Research whether black-oil and confection seed require separate nutritional profiles.",
+        "Research cultivar-specific oil concentration and fatty-acid profiles before assigning subtype scores.",
+        "Research poultry digestibility differences between whole seed, cracked seed, ground seed, kernels, and Sunflower meal.",
+        "Research the effect of whole Sunflower seed on egg fatty-acid composition where relevant to future planner functions.",
+        "Research whether high whole-seed intake creates practical digestive or litter-management concerns in small flocks.",
+        "Research young-chick limitations separately from adult-bird use.",
+        "Research small-scale seed-head drying under humid backyard conditions.",
+        "Research safe household storage moisture for loose whole seed and intact seed heads.",
+        "Research rancidity development in cracked, ground, and dehulled seed.",
+        "Research household methods for detecting heating, moisture migration, insects, and rancidity.",
+        "Research small-scale head bagging and netting methods that do not entangle wild birds or poultry.",
+        "Research seed loss from wild birds, squirrels, rodents, deer, and storms.",
+        "Research the timing relationship between physiological maturity, harvest maturity, head drying, and wildlife loss.",
+        "Research major regional diseases including Sclerotinia head rot, stalk rot, downy mildew, rust, Phomopsis stem canker, Verticillium wilt, and Alternaria leaf and stem spot.",
+        "Research regional insect concerns including Sunflower moth, banded Sunflower moth, seed weevils, stem weevils, and head-clipping weevil.",
+        "Research whether backyard seed-saving guidance should distinguish hybrids from open-pollinated cultivars.",
+        "Research isolation requirements where cultivar purity matters.",
+        "Research ornamental volunteer-seed risk without classifying annual Sunflower as broadly invasive.",
+        "Research safe use of stalks, leaves, hulls, and empty heads as compost or mulch.",
+        "Do not assign substantial poultry-feed value to mature stalks or leaves without specific evidence.",
+        "Do not convert commercial plant populations or pounds-per-acre yields into guaranteed backyard pounds per square foot.",
+        "Commercial yield data may inform production potential but not household yield promises.",
+        "Research backyard yield from named seed-producing cultivars at documented garden spacing.",
+        "Research seed yield per head separately from total head weight.",
+        "Research the proportion of empty, poorly filled, insect-damaged, or mold-damaged seed in backyard harvests.",
+        "Research manual seed removal, screening, cleaning, drying, and storage labor.",
+        "Research whether whole-head feeding or loose-seed feeding produces the better labor-adjusted household value.",
+        "Research production differences between single-head and branching cultivars.",
+        "Research spacing effects on head diameter, seed size, stalk strength, lodging, disease, and total seed yield.",
+        "Research whether succession planting improves harvest management or increases late-season maturity risk.",
+        "Research short-season cultivars for cold northern and high-elevation regions.",
+        "Research planting dates that allow flowering and seed filling before extreme heat in the Deep South and Southwest.",
+        "Research disease-resistant cultivars for humid regions.",
+        "Research irrigation timing during bud formation, flowering, pollination, and seed filling.",
+        "Research the pollination contribution of honey bees, native bees, and other insects under backyard conditions.",
+        "Modern self-compatible hybrids should not be interpreted as receiving no benefit from insect pollination.",
+        "Research pollen-producing versus pollen-free varieties where seed harvest is the goal.",
+        "Research the economic value of pollinator support, ornamental use, cut flowers, screening, household food, and compost biomass separately from poultry-feed savings.",
+        "Leave minimum useful area, pounds per plant, pounds per square foot, edible yield percentage, hull percentage, and direct feed-savings estimates null until defensible backyard evidence is available.",
+        "Calculate comparative scores only after equivalent schema fields have been completed for multiple crops."
       ]
     },
 
-        plannerData: {
-      schemaVersion: "1.0.0",
+    plannerData: {
+      schemaVersion:
+        "2.0.0",
 
-      developmentStatus: "ready",
+      developmentStatus:
+        "ready",
 
       identity: {
-        plannerName: "Sunflowers",
-        shortLabel: "Sunflower",
-        icon: "🌻",
+        plannerName:
+          "Sunflower",
 
-        cropCategory: "oilseed",
-        primaryFeedCategory: "energy",
+        shortLabel:
+          "Sunflower",
+
+        icon:
+          "🌻",
+
+        cropCategory:
+          "annual-oilseed",
+
+        primaryFeedCategory:
+          "warm-season-high-energy-oilseed",
 
         guideUrl:
           "growing-sunflowers-for-chickens.html"
       },
 
       lifecycle: {
-        growthCycle: "annual",
+        growthCycle:
+          "annual",
 
-        isAnnual: true,
-        isBiennial: false,
-        isPerennial: false,
-        isTreeOrShrub: false,
+        isAnnual:
+          true,
 
-        yearsToFirstUsefulHarvest: 0,
-        yearsToFullProduction: 0,
-        expectedUsefulLifeYears: 1,
+        isBiennial:
+          false,
 
-        regrowsAfterHarvest: false,
+        isPerennial:
+          false,
 
-        permanentPlantingRequired: false,
-        reversibleAfterOneSeason: true
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
       },
 
-      climate: {
-  suitableClimateTypes: [
-    "cool-moderate-summer",
-    "temperate",
-    "hot-humid",
-    "hot-dry",
-    "mild-winter"
-  ],
+            climate: {
+        suitableClimateTypes: [
+          "cool-moderate-summer",
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter"
+        ],
 
-  preferredClimateTypes: [
-    "temperate",
-    "hot-dry"
-  ],
+        preferredClimateTypes: [
+          "temperate",
+          "hot-dry",
+          "warm-long-summer"
+        ],
 
-  challengingClimateTypes: [
-    "cold-short-summer",
-    "high-elevation"
-  ],
+        challengingClimateTypes: [
+          "cold-short-summer",
+          "cool-cloudy-summer",
+          "high-elevation-short-season",
+          "extreme-humidity",
+          "waterlogged-summer-soil"
+        ],
 
-  minimumFrostFreeDays: null,
-  preferredFrostFreeDays: null,
+        minimumFrostFreeDays:
+          null,
 
-  minimumSoilTemperatureF: 50,
-  preferredSoilTemperatureF: null,
+        preferredFrostFreeDays:
+          null,
 
-  daysToMaturityMinimum: null,
-  daysToMaturityMaximum: null,
+        minimumSoilTemperatureF:
+          50,
 
-  referenceDaysToPhysiologicalMaturity: 119,
+        preferredSoilTemperatureF:
+          60,
 
-  dryDownBufferDays: null,
+        daysToMaturityMinimum:
+          null,
 
-  heatToleranceScore: 4,
+        daysToMaturityMaximum:
+          null,
 
-  droughtClimateToleranceScore: 4,
+        dryDownBufferDays:
+          null,
 
-  humidityToleranceScore: 3,
+        heatToleranceScore:
+          4,
 
-  coolSummerToleranceScore: 3,
+        droughtClimateToleranceScore:
+          4,
 
-  frostSensitivityScore: 5,
+        humidityToleranceScore:
+          3,
 
-  winterHardinessRequired: false,
+        coolSummerToleranceScore:
+          3,
 
-  seasonExtensionBenefits: [
-    "Indoor seed starting may help in short-season areas, but Sunflowers should be transplanted before becoming crowded or root-bound.",
-    "Selecting an earlier-maturing seed-producing variety is generally more dependable than relying on late frost protection.",
-    "Biodegradable starting containers may reduce root disturbance during transplanting."
-  ],
+        frostSensitivityScore:
+          5,
 
-  indoorSeedStartingBenefitScore: 3,
+        winterHardinessRequired:
+          false,
 
-  directFacts: {
-    seasonType:
-      "warm-season",
+        seasonExtensionBenefits: [
+          "Selecting an early-maturing seed-producing cultivar improves harvest reliability in short-season regions.",
+          "Indoor seed starting may provide a modest advantage where the frost-free season is short, but seedlings should be transplanted before becoming crowded or root-bound.",
+          "Biodegradable or otherwise minimally disturbed starting containers may reduce transplant shock.",
+          "Black plastic, row cover, or another temporary soil-warming method may improve early establishment where spring soil remains cold.",
+          "Temporary frost protection may protect young plants from an unexpected late frost but does not convert Sunflower into a frost-tolerant crop.",
+          "Staggered sowing can spread flowering and harvest over a longer period where enough season remains for every planting to mature.",
+          "Early planting after soil warming may allow flowering and seed filling to occur before the most severe summer heat in hot climates.",
+          "Protected postharvest drying can reduce losses where autumn rainfall or humidity prevents dependable field drying.",
+          "Supplemental irrigation during bud formation, flowering, pollination, and seed filling may improve seed production in dry climates.",
+          "Greenhouse production is rarely an efficient use of protected space when the primary goal is mature poultry-feed seed."
+        ],
 
-    frostSensitive: true,
+        indoorSeedStartingBenefitScore:
+          3,
 
-    plantAfterFrostDanger: true,
+        directFacts: {
+          seasonType:
+            "warm-season-annual",
 
-    germinationSoilTemperatureF:
-      50,
+          frostSensitive:
+            true,
 
-    referencePhysiologicalMaturityDays:
-      119,
+          commonlyDirectSeeded:
+            true,
 
-    maturityReferenceScope:
-      "Average growth-stage reference from a Northern Great Plains production guide; not a universal cultivar guarantee.",
+          springTypesAvailable:
+            true,
 
-    baseGrowingDegreeTemperatureF:
-      44,
+          winterTypesAvailable:
+            false,
 
-    notes: [
-      "Annual Sunflowers are normally direct-seeded after danger of damaging spring frost has passed.",
-      "Soil near 50°F supports germination, while uniform moisture supports consistent emergence.",
-      "Sunflower development varies with genetics, cultivar, temperature, planting date, and growing environment.",
-      "The 119-day R9 figure is retained only as a reference value and should not replace cultivar-specific maturity information.",
-      "Short-season growers should prioritize early seed-producing varieties and allow time for seed filling and postharvest drying.",
-      "Humid climates can support vigorous growth but may increase disease, head-drying, and storage challenges."
-    ]
-  }
-},
+          facultativeTypesAvailable:
+            false,
+
+          vernalizationRequiredForAllVarieties:
+            false,
+
+          winterHardinessVarietyDependent:
+            false,
+
+          earlySpringPlantingPreferred:
+            false,
+
+          coolWeatherGrowthPreferred:
+            false,
+
+          highHeatDuringReproductionConcern:
+            true,
+
+          highElevationAdaptation:
+            false,
+
+          baseGrowingDegreeTemperatureF:
+            44,
+
+          approximatePollinationAfterEmergenceWeeksMinimum:
+            null,
+
+          approximatePollinationAfterEmergenceWeeksMaximum:
+            null,
+
+          maturityHighlyVarietyDependent:
+            true,
+
+          notes: [
+            "Annual Sunflower is a warm-season broadleaf crop.",
+            "The crop is normally planted after danger of damaging frost has passed.",
+            "Sunflower seed can germinate in soil near 50°F, but warmer soil generally supports faster and more uniform emergence.",
+            "A preferred planting-soil temperature near 60°F is retained as practical backyard guidance rather than as an absolute biological threshold.",
+            "Direct seeding is normally more practical than transplanting because the large seed establishes readily and the developing taproot is sensitive to prolonged confinement or rough disturbance.",
+            "Indoor seed starting may help in genuinely short-season locations, but excessive indoor growth can produce root-bound or weakened seedlings.",
+            "Sunflower does not require winter exposure or vernalization.",
+            "The crop has no winter-hardy annual grain-production pathway comparable with winter cereal grains.",
+            "Frost can damage seedlings, foliage, flowers, developing seed, and immature heads.",
+            "Cultivar maturity varies substantially among oilseed, confection, ornamental, dwarf, giant, branching, and single-stem varieties.",
+            "Days-to-flower should not be treated as days-to-mature-seed harvest.",
+            "Seed-producing cultivars require additional time after flowering for pollination, seed filling, physiological maturity, head drying, harvest, and safe storage drying.",
+            "The approximately 119-day physiological-maturity figure reported in Northern Great Plains production guidance is a reference growth-stage value rather than a universal cultivar guarantee.",
+            "Short-season growers should select a cultivar with locally demonstrated maturity rather than relying on a generic species-wide number.",
+            "Sunflower tolerates hot summer weather better than cool-season cereals.",
+            "Extreme heat combined with drought during flowering and seed filling can reduce pollination, seed set, seed weight, and oil accumulation.",
+            "High humidity does not necessarily prevent growth, but it can increase foliar disease, stem disease, head rot, delayed drying, and storage risk.",
+            "Warm humid regions should prioritize disease resistance, airflow, timely harvest, and protected drying.",
+            "Hot dry climates can support strong Sunflower production where irrigation or stored soil moisture remains available during critical reproductive stages.",
+            "Cool cloudy summers may delay flowering, reduce seed fill, and interfere with head drying.",
+            "High-elevation production is possible only where a sufficiently long frost-free period and an appropriately early cultivar are available.",
+            "The planner must distinguish crop survival, flowering, physiological maturity, harvest maturity, and safe storage dryness."
+          ]
+        }
+      },
 
       site: {
-  absoluteMinimumSunHours: null,
+        absoluteMinimumSunHours:
+          null,
 
-  productiveMinimumSunHours: 6,
+        productiveMinimumSunHours:
+          6,
 
-  preferredSunHours: 8,
+        preferredSunHours:
+          8,
 
-  shadeToleranceScore: 2,
+        shadeToleranceScore:
+          2,
 
-  afternoonShadeBenefitInHeat: 2,
+        afternoonShadeBenefitInHeat:
+          2,
 
-  windToleranceScore: 3,
+        windToleranceScore:
+          3,
 
-  lodgingRiskScore: 3,
+        lodgingRiskScore:
+          3,
 
-  reflectedHeatToleranceScore: 4,
+        reflectedHeatToleranceScore:
+          4,
 
-  airflowRequirementScore: 4,
+        airflowRequirementScore:
+          4,
 
-  frostPocketSensitivityScore: 4,
+        frostPocketSensitivityScore:
+          4,
 
-  treeRootCompetitionToleranceScore: 2,
+        treeRootCompetitionToleranceScore:
+          2,
 
-  hardscapeConflictRiskScore: 2,
+        hardscapeConflictRiskScore:
+          2,
 
-  structureConflictRiskScore: 3,
+        structureConflictRiskScore:
+          3,
 
-  utilityConflictRiskScore: 2,
+        utilityConflictRiskScore:
+          2,
 
-  fruitDropMessRiskScore: 1,
+        fruitDropMessRiskScore:
+          2,
 
-  stainingRiskScore: 1,
+        stainingRiskScore:
+          1,
 
-  directFacts: {
-    preferredLight:
-      "full-sun",
+        directFacts: {
+          preferredLight:
+            "full-sun",
 
-    productiveSunGuidance:
-      "At least 6 hours of direct sunlight, with approximately 8 hours preferred for stronger plant and seed-head production.",
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight can support useful growth, while approximately 8 or more hours is preferred for sturdy stems, large productive heads, dependable seed filling, uniform maturity, and post-rain drying.",
 
-    windExposureConcern: true,
+          windExposureConcern:
+            true,
 
-    varietyHeightRange:
-      "Dwarf cultivars may remain below approximately 3 feet, while giant cultivars may exceed 8 feet.",
+          growthHabit:
+            "upright-deep-rooted-broadleaf-annual",
 
-    stakingMayBeNeeded: true,
+          matureHeightFtMinimum:
+            null,
 
-    notes: [
-      "Sunflowers perform best in full sun.",
-      "Reduced light may weaken stems and reduce flower-head and seed production.",
-      "Dwarf and semi-dwarf varieties create less structural conflict than giant varieties.",
-      "Giant cultivars and plants carrying large seed heads may require staking or wind protection.",
-      "Good airflow can help leaf and head drying, but severe wind raises leaning and breakage risk.",
-      "Avoid placing tall Sunflowers where they will shade smaller crops or interfere with walkways, windows, utility access, or roof drainage.",
-      "Established tree roots can compete strongly for sunlight, water, nutrients, and rooting space."
-    ]
-  }
-},
+          matureHeightFtMaximum:
+            null,
 
-      soil: {
-  textureScores: {
-    heavyClay: 2,
-    clayLoam: 4,
-    loam: 5,
-    sandyLoam: 4,
-    verySandy: 3,
-    rocky: 2
-  },
+          floweringPollinatorTraffic:
+            true,
 
-  drainageRequirementScore: 5,
+          seasonalPrivacyScreen:
+            true,
 
-  temporaryWetToleranceScore: 2,
+          undergroundSpreadConcern:
+            false,
 
-  waterloggingSensitivityScore: 4,
+          selfPollinated:
+            false,
 
-  minimumSoilDepthIn: null,
+          windPollinated:
+            false,
 
-  preferredSoilDepthIn: 48,
+          insectPollinationRequired:
+            false,
 
-  compactionToleranceScore: 2,
+          denseStandPreferred:
+            false,
 
-  establishmentInSodDifficultyScore: 4,
+          airflowImportant:
+            true,
 
-  preferredPHMinimum: 6.0,
-  preferredPHMaximum: 7.5,
+          lodgingConcern:
+            true,
 
-  survivalPHMinimum: null,
-  survivalPHMaximum: null,
-
-  fertilityRequirementScore: 3,
-
-  nitrogenRequirementScore: 3,
-  phosphorusRequirementScore: 2,
-  potassiumRequirementScore: 3,
-
-  benefitsFromInoculation: false,
-  inoculantType: null,
-
-  saltToleranceScore: null,
-
-  amendmentEffortScore: 3,
-
-  directFacts: {
-    preferredDrainage:
-      "well-drained",
-
-    adaptableTextures: [
-      "clay loam",
-      "silty clay loam",
-      "loam",
-      "sandy loam"
-    ],
-
-    preferredTexture:
-      "Well-drained soil with good water-holding capacity and unrestricted rooting depth.",
-
-    waterloggedSoilSuitable:
-      false,
-
-    effectiveRootDepthIn:
-      48,
-
-    deeperWaterExtractionPossible:
-      true,
-
-    soilPHSourceRanges: [
-      {
-        sourceContext:
-          "Northern Great Plains field production",
-
-        minimum: 6.5,
-        maximum: 7.5
+          notes: [
+            "Full sun is preferred for strong stems, flower-head development, seed filling, oil accumulation, and timely drying.",
+            "Partial shade may support ornamental growth but usually reduces dependable poultry-feed seed production.",
+            "Plants commonly track the sun during early development, while mature flowering heads usually become more fixed in orientation.",
+            "Sunflower is not a wind-pollinated crop.",
+            "Many modern hybrids are substantially self-compatible, but insect pollination can improve seed set, seed weight, and overall yield.",
+            "Bees and other flower-visiting insects may be abundant around flowering plants.",
+            "Pollen-producing cultivars provide greater pollinator value than pollen-free cut-flower cultivars.",
+            "Pollen-free ornamental or cut-flower varieties should not automatically be treated as suitable feed-seed cultivars.",
+            "Variety height is extremely variable.",
+            "Dwarf cultivars may remain below approximately 3 feet, while giant cultivars may exceed approximately 8 feet.",
+            "A universal mature-height range is not stored because cultivar variation is too great.",
+            "Tall plants and large mature heads may lean, lodge, or break under strong wind.",
+            "Staking may be helpful for giant cultivars, top-heavy plants, exposed sites, weak soils, or plants damaged by storms.",
+            "Excessive nitrogen, overcrowding, shallow rooting, saturated soil, stem disease, and large heads can increase lodging risk.",
+            "Good airflow helps leaves, stems, flower heads, and maturing seed dry after rain.",
+            "Dense plantings in humid sites may experience increased disease and delayed head drying.",
+            "Sunflower can tolerate reflected heat better than most cool-season feed crops when soil moisture remains adequate.",
+            "Reflected heat from walls, pavement, gravel, or metal surfaces can still increase water demand and heat stress.",
+            "Tall Sunflowers may cast substantial seasonal shade on neighboring crops.",
+            "Place tall varieties on the northern side of a Northern Hemisphere garden where practical so they are less likely to shade shorter crops.",
+            "Sunflowers can provide temporary summer screening, visual structure, or partial shade.",
+            "The crop is annual and does not spread through rhizomes, stolons, tubers, suckers, or permanent woody roots.",
+            "Volunteer seedlings may emerge from dropped seed, but this is different from underground vegetative spread.",
+            "The taproot and branching roots do not normally create the same long-term structural conflict as woody tree roots.",
+            "Avoid placing giant cultivars directly against windows, doors, narrow paths, gates, electrical equipment, utility access points, roof drains, or frequently used work areas.",
+            "Mature heads, loose seed, hulls, petals, and broken stalks may create seasonal litter near walkways or patios.",
+            "Dropping seed can attract wild birds, squirrels, rodents, and other wildlife.",
+            "Established tree roots compete strongly for sunlight, moisture, nutrients, and unrestricted rooting depth.",
+            "Deep shade beneath mature trees is poorly suited to dependable seed production.",
+            "Avoid sites where roof runoff, compacted subsoil, or low terrain creates prolonged saturation.",
+            "A nearby protected area for head drying, seed removal, cleaning, and storage should be considered during site selection."
+          ]
+        }
       },
 
-      {
-        sourceContext:
-          "Minnesota home garden guidance",
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
 
-        minimum: 6.0,
-        maximum: 6.8
-      }
-    ],
+          clayLoam:
+            4,
 
-    notes: [
-      "Sunflower is adapted to several soil textures but performs best where drainage and water-holding capacity are both favorable.",
-      "Loam, silt loam, clay loam, and silty clay loam can provide strong water-holding capacity for the deep root system.",
-      "Sandy loam can perform well but may require more dependable watering and fertility management.",
-      "Heavy clay receives a low score when slow drainage, crusting, or compaction restricts establishment and roots.",
-      "An effective rooting depth of approximately 4 feet helps established plants reach stored soil moisture.",
-      "Shallow rock, hardpan, dense compaction, and established tree roots can reduce the benefit of deep rooting.",
-      "The stored productive pH range of 6.0 to 7.5 combines compatible Extension guidance; it is not an absolute survival range.",
-      "Sunflower does not require legume inoculation."
-    ]
-  }
-},
+          loam:
+            5,
 
-     water: {
-  overallWaterRequirementLevel:
-    "moderate",
+          sandyLoam:
+            4,
 
-  germinationWaterNeedLevel:
-    "moderate",
+          verySandy:
+            3,
 
-  establishmentWaterNeedLevel:
-    "moderate",
+          rocky:
+            2
+        },
 
-  matureWaterNeedLevel:
-    "moderate",
+        drainageRequirementScore:
+          5,
 
-  floweringWaterNeedLevel:
-    "high",
+        temporaryWetToleranceScore:
+          2,
 
-  harvestDevelopmentWaterNeedLevel:
-    "high",
+        waterloggingSensitivityScore:
+          4,
 
-  droughtSurvivalScore: 4,
+        minimumSoilDepthIn:
+          null,
 
-  droughtYieldRetentionScore: 3,
+        preferredSoilDepthIn:
+          48,
 
-  criticalGrowthStages: [
-    "germination",
-    "seedling-establishment",
-    "bud-development",
-    "flowering",
-    "seed-filling"
-  ],
+        compactionToleranceScore:
+          2,
 
-  criticalStageWaterImportanceScore: 4,
+        establishmentInSodDifficultyScore:
+          4,
 
-  overwateringSensitivityScore: 3,
+        preferredPHMinimum:
+          6.0,
 
-  waterloggingSensitivityScore: 4,
+        preferredPHMaximum:
+          7.5,
 
-  dripIrrigationBenefitScore: 4,
+        survivalPHMinimum:
+          null,
 
-  mulchBenefitScore: 4,
+        survivalPHMaximum:
+          null,
 
-  suitableForRainfallOnlyScore: 3,
+        fertilityRequirementScore:
+          3,
 
-  suitableForLimitedIrrigationScore: 4,
+        nitrogenRequirementScore:
+          3,
 
-  containerDryingRiskScore: 4,
+        phosphorusRequirementScore:
+          2,
 
-  establishmentYearsRequiringExtraWater: 0,
+        potassiumRequirementScore:
+          3,
 
-  directFacts: {
-    droughtTolerantAfterEstablishment:
-      true,
+        benefitsFromInoculation:
+          false,
 
-    establishmentMoistureImportant:
-      true,
+        inoculantType:
+          null,
 
-    regularMoistureImprovesProduction:
-      true,
+        saltToleranceScore:
+          null,
 
-    standingWaterSuitable:
-      false,
+        amendmentEffortScore:
+          3,
 
-    effectiveRootDepthIn:
-      48,
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
 
-    irrigatedSeasonalWaterUseInches:
-      19,
+          preferredTextures: [
+            "loam",
+            "silt loam",
+            "sandy loam",
+            "well-structured clay loam",
+            "silty clay loam"
+          ],
 
-    irrigationResponse:
-      "Yield can respond to irrigation, particularly during hot and dry seasons.",
+          adaptableTextures: [
+            "loam",
+            "silt loam",
+            "sandy loam",
+            "clay loam",
+            "silty clay loam"
+          ],
 
-    irrigationDiseaseTradeoff:
-      "Additional irrigation may increase some disease risks, including white mold under conducive conditions.",
+          nitrogenFixingLegume:
+            false,
 
-    criticalWaterWindow:
-      "Regular watering around flowering supports root growth and top-heavy flowering plants; productive seed filling also benefits from adequate moisture.",
+          inoculationMayImproveNodulation:
+            false,
 
-    notes: [
-      "Sunflower is widely described as drought tolerant because its deep roots can explore a large soil volume.",
-      "Drought survival does not guarantee maximum seed yield.",
-      "The crop can use substantial seasonal water when it is available.",
-      "Sunflower generally uses less seasonal water than Corn under the NDSU comparison but more than short-season small grains.",
-      "Dryland plants use stored soil moisture and growing-season rainfall.",
-      "Irrigation can increase yield in dry years, although the response varies and excessive moisture may increase disease risk.",
-      "Moisture conservation through weed control, mulch, residue, and good infiltration supports production.",
-      "Container-grown plants have less accessible soil volume and may dry much faster than in-ground plants.",
-      "Soil should remain adequately moist during key stages without remaining continuously saturated."
-    ]
-  }
-},
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          compactedSoilSuitable:
+            false,
+
+          alkalineSoilTolerance:
+            null,
+
+          acidicSoilTolerance:
+            null,
+
+          salinityTolerance:
+            null,
+
+          deepRootingPotential:
+            true,
+
+          effectiveRootDepthIn:
+            48,
+
+          deeperWaterExtractionPossible:
+            true,
+
+          notes: [
+            "Sunflower adapts to several soil textures but performs best where drainage, water-holding capacity, fertility, and rooting depth are all favorable.",
+            "Loam and silt loam generally provide a strong balance of drainage, moisture retention, aeration, and nutrient availability.",
+            "Well-structured clay loam and silty clay loam can support strong production where internal drainage remains adequate.",
+            "Heavy clay receives a lower suitability score where slow drainage, crusting, compaction, poor aeration, or restricted root penetration are present.",
+            "Sandy loam can perform well but may require more frequent irrigation and closer fertility management.",
+            "Very sandy soil may support growth where water and nutrients are supplied reliably, but drought stress and nutrient loss become more likely.",
+            "Shallow rocky soil restricts the crop's deep-rooting advantage and may increase lodging and drought stress.",
+            "Sunflower develops a prominent taproot with extensive lateral roots when soil structure permits.",
+            "An effective rooting depth near 48 inches can allow established plants to reach stored soil moisture.",
+            "Roots may extract moisture from greater depth under favorable field conditions, but this should not be interpreted as a universal rooting-depth guarantee.",
+            "Hardpan, plow pan, dense subsoil, shallow bedrock, compacted fill, buried construction debris, and established tree roots can restrict rooting.",
+            "The crop is not suited to continuously saturated or waterlogged soil.",
+            "Temporary saturation can reduce root respiration, weaken anchorage, slow nutrient uptake, and increase root and stem disease.",
+            "Raised beds may improve drainage in marginal sites but must provide enough soil volume for the selected cultivar.",
+            "Planting directly into established sod is difficult because perennial grasses compete for water, nutrients, light, and rooting space.",
+            "Sod and perennial weeds should be controlled before establishment.",
+            "The stored productive pH range of approximately 6.0 to 7.5 combines compatible Extension production guidance rather than defining absolute survival limits.",
+            "Some production guidance emphasizes a narrower pH range within that interval.",
+            "Soil testing should guide lime, phosphorus, potassium, sulfur, boron, and other fertility decisions.",
+            "Sunflower requires available nitrogen but is not generally considered an exceptionally high-nitrogen garden crop.",
+            "Excess nitrogen may encourage overly tall vegetative growth, delayed maturity, weak stalks, lodging, and disease.",
+            "Phosphorus supports establishment and root development where soil tests indicate deficiency.",
+            "Potassium supports water regulation, stalk strength, and general crop performance where deficient.",
+            "Boron is important to Sunflower production, but the margin between deficiency and toxicity can be narrow.",
+            "Boron should not be applied casually without soil-test guidance or locally appropriate recommendations.",
+            "Fresh uncomposted manure or excessive soluble fertilizer placed directly against seed can injure germination and young roots.",
+            "Sunflower is not a legume and does not fix atmospheric nitrogen.",
+            "The crop receives no benefit from rhizobial legume inoculation.",
+            "Sunflower does not form edible underground tubers.",
+            "No universal survival pH limits are stored.",
+            "No numeric salt-tolerance score is assigned until the evidence is interpreted consistently against other planner crops."
+          ]
+        }
+      },
+
+            water: {
+        overallWaterRequirementLevel:
+          "moderate",
+
+        germinationWaterNeedLevel:
+          "moderate",
+
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "moderate",
+
+        floweringWaterNeedLevel:
+          "high",
+
+        harvestDevelopmentWaterNeedLevel:
+          "high",
+
+        droughtSurvivalScore:
+          4,
+
+        droughtYieldRetentionScore:
+          3,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "bud-development",
+          "flowering",
+          "pollination",
+          "early-seed-development",
+          "seed-filling"
+        ],
+
+        criticalStageWaterImportanceScore:
+          4,
+
+        overwateringSensitivityScore:
+          3,
+
+        waterloggingSensitivityScore:
+          4,
+
+        dripIrrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          4,
+
+        suitableForRainfallOnlyScore:
+          3,
+
+        suitableForLimitedIrrigationScore:
+          4,
+
+        containerDryingRiskScore:
+          4,
+
+        establishmentYearsRequiringExtraWater:
+          0,
+
+        directFacts: {
+          droughtTolerantAfterEstablishment:
+            true,
+
+          establishmentMoistureImportant:
+            true,
+
+          regularMoistureImprovesProduction:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          droughtDuringVegetativeGrowthMayReduceLeafArea:
+            true,
+
+          droughtDuringBudDevelopmentMayReduceHeadSize:
+            true,
+
+          droughtDuringFloweringMayReduceSeedSet:
+            true,
+
+          droughtDuringSeedFillMayReduceSeedWeight:
+            true,
+
+          irrigationCanIncreaseLodgingRisk:
+            true,
+
+          irrigationCanIncreaseDiseaseRisk:
+            true,
+
+          irrigationMayDelayHeadDrying:
+            true,
+
+          effectiveRootDepthIn:
+            48,
+
+          irrigatedSeasonalWaterUseInches:
+            19,
+
+          criticalWaterWindow:
+            "Adequate soil moisture is especially important during establishment, bud formation, flowering, pollination, early seed development, and seed filling.",
+
+          irrigationResponse:
+            "Supplemental irrigation can improve plant growth, head development, seed set, seed weight, and total yield where rainfall and stored soil moisture are inadequate.",
+
+          irrigationDiseaseTradeoff:
+            "Excessive irrigation, frequent overhead watering, dense foliage, poor airflow, and prolonged head wetness may increase foliar disease, stem disease, Sclerotinia infection, head rot, lodging, and delayed drying.",
+
+          notes: [
+            "Sunflower is widely described as drought tolerant because its deep roots can explore a large volume of soil.",
+            "Drought tolerance describes the plant's ability to survive and continue growing under moisture stress; it does not mean that maximum seed yield is maintained without water.",
+            "Uniform soil moisture supports dependable germination and emergence.",
+            "The seedbed should remain moist but not saturated while seeds germinate.",
+            "Crusted soil, rapidly drying surface soil, or uneven moisture can reduce emergence.",
+            "Young plants require dependable moisture while roots extend into deeper soil.",
+            "Established plants generally tolerate short dry periods better than shallow-rooted garden crops.",
+            "Deep rooting is most useful where the soil profile is deep, permeable, and free of hardpan, bedrock, dense compaction, or established tree-root competition.",
+            "Water stress during early vegetative growth can reduce leaf area, plant height, root development, and eventual head size.",
+            "Water stress during bud formation may reduce flower-head diameter and the number of potentially productive florets.",
+            "Water stress during flowering and pollination can reduce seed set.",
+            "Water stress during early seed development and seed filling can reduce seed size, seed weight, oil accumulation, and total harvest.",
+            "Adequate moisture during reproductive growth is especially important when the crop is being grown for poultry-feed seed rather than ornamental flowers.",
+            "Sunflower can use substantial quantities of water when moisture is available.",
+            "The retained approximately 19-inch irrigated seasonal-water-use value is a production-guide reference rather than a universal backyard irrigation requirement.",
+            "Actual seasonal water use varies with climate, cultivar, planting date, soil texture, root depth, plant population, rainfall, temperature, wind, humidity, and growing-season length.",
+            "Sunflower generally uses less seasonal water than Corn under comparable Northern Great Plains production conditions but more than some short-season cereal grains.",
+            "Dryland production relies on stored soil moisture and growing-season rainfall.",
+            "Rainfall-only production may be practical where rainfall timing and soil water-holding capacity are dependable.",
+            "Rainfall totals alone do not indicate whether adequate moisture was available during the critical reproductive stages.",
+            "Supplemental irrigation may provide its greatest benefit during establishment and from bud formation through seed filling.",
+            "Irrigation should moisten the active root zone without keeping the soil continuously saturated.",
+            "Deep, less-frequent irrigation generally encourages deeper rooting better than repeated shallow surface watering.",
+            "Extremely dry sandy soil may require more frequent irrigation than loam or clay loam.",
+            "Heavy clay should be watered cautiously because slow infiltration and poor drainage can create saturation.",
+            "Standing water restricts root oxygen and may contribute to weak growth, nutrient problems, root disease, stem disease, lodging, and plant death.",
+            "Drip irrigation or soaker hoses can reduce leaf and flower-head wetness compared with overhead irrigation.",
+            "Drip irrigation may be especially useful in humid climates or where foliar and head diseases are common.",
+            "Overhead watering may be practical for a small planting but should be timed early enough for leaves and heads to dry before night.",
+            "Repeated overhead irrigation during flowering and head maturation may interfere with pollination, increase disease pressure, and slow drying.",
+            "Excessive irrigation combined with excessive nitrogen may produce tall, weak, lodging-prone plants.",
+            "Late irrigation may delay natural plant senescence, head drying, and harvest readiness.",
+            "Watering should generally be reduced as plants approach harvest maturity unless severe drought threatens incomplete seed filling.",
+            "Mulch can conserve moisture, reduce soil-temperature fluctuations, suppress weeds, and limit soil splash.",
+            "Mulch should not be packed directly against the stem because prolonged stem-base moisture may increase disease or lodging risk.",
+            "Weed control conserves moisture for the crop during establishment and reproductive growth.",
+            "Container-grown Sunflowers have access to much less stored soil moisture than in-ground plants.",
+            "Containers exposed to full sun, wind, pavement, walls, decks, or reflected heat may dry very rapidly.",
+            "Large or top-heavy container plants may require frequent watering while still needing excellent drainage.",
+            "Container drought tolerance should not be inferred from the performance of deeply rooted field-grown plants.",
+            "Sunflowers grown beside mature trees may experience severe belowground water competition even when surface soil appears moist.",
+            "The planner should distinguish drought survival from dependable seed-yield retention."
+          ]
+        }
+      },
 
       space: {
-  minimumTrialAreaSqFt: null,
+        minimumTrialAreaSqFt:
+          null,
 
-  minimumUsefulAreaSqFt: null,
+        minimumUsefulAreaSqFt:
+          null,
 
-  preferredProductionAreaSqFt: null,
+        preferredProductionAreaSqFt:
+          null,
 
-  smallSpaceScore: 4,
-  mediumSpaceScore: 4,
-  largeSpaceScore: 4,
+        smallSpaceScore:
+          4,
 
-  layoutScores: {
-    squareBlock: 4,
-    wideRectangle: 5,
-    longStrip: 5,
-    irregular: 4,
-    smallBeds: 4,
-    openField: 5
-  },
+        mediumSpaceScore:
+          4,
 
-  spaceTypeScores: {
-    inGround: 5,
-    raisedBed: 4,
-    container: 2,
-    fenceLine: 5,
-    buildingEdge: 4,
-    unusedLawn: 4,
-    openField: 5,
-    orchard: 2,
-    forageFrame: 1,
-    rotationalPaddock: 2,
-    greenhouse: 2,
-    hedgerow: 4
-  },
+        largeSpaceScore:
+          4,
 
-  minimumContainerGallons: null,
+        layoutScores: {
+          squareBlock:
+            4,
 
-  containerUseLimitation:
-  "Dwarf cultivars may grow successfully in containers, but container production is generally inefficient for substantial chicken-feed seed harvests.",
+          wideRectangle:
+            5,
 
-  minimumRaisedBedDepthIn: null,
+          longStrip:
+            5,
 
-  vineSpreadRequired: false,
+          irregular:
+            4,
 
-  verticalSupportBenefitScore: 2,
+          smallBeds:
+            4,
 
-  blockPlantingRequired: false,
+          openField:
+            5
+        },
 
-  minimumBlockRows: null,
+        spaceTypeScores: {
+          inGround:
+            5,
 
-  continuousStandPreferred: false,
+          raisedBed:
+            4,
 
-  heightCategory:
-    "variety-dependent-tall",
+          container:
+            2,
 
-  matureWidthCategory:
-    "moderate",
+          fenceLine:
+            5,
 
-  overflowSpaceBenefitScore: 1,
+          buildingEdge:
+            4,
 
-  directFacts: {
-    layoutFlexible: true,
+          unusedLawn:
+            4,
 
-    blockPollinationRequired: false,
+          openField:
+            5,
 
-    suitableForRowPlanting: true,
+          orchard:
+            2,
 
-    suitableForCloselySpacedStands: true,
+          forageFrame:
+            1,
 
-    suitableForSingleOrSmallGroupPlanting: true,
+          rotationalPaddock:
+            2,
 
-    varietySizeHighlyVariable: true,
+          greenhouse:
+            2,
 
-    commercialPlantPopulationRange: {
-      oilseedPlantsPerAcreMinimum: 18000,
-      oilseedPlantsPerAcreMaximum: 24000,
+          hedgerow:
+            4
+        },
 
-      nonoilseedPlantsPerAcreMinimum: 14000,
-      nonoilseedPlantsPerAcreMaximum: 20000,
+        minimumContainerGallons:
+          null,
 
-      backyardUseWarning:
-        "Commercial plant populations should not be converted directly into backyard yield promises or minimum useful-area rules."
-    },
+        containerUseLimitation:
+          "Dwarf and compact cultivars may grow successfully in containers, but container production is generally inefficient for substantial poultry-feed seed harvests. Containers restrict root volume, dry rapidly, may require frequent watering and fertilizer, can become top-heavy, and usually produce less dependable seed than an equivalent well-prepared in-ground area.",
 
-    notes: [
-      "Sunflowers can be grown in conventional rows, closely spaced stands, borders, and small groups.",
-      "Unlike Field Corn, Sunflower does not require a square block with several neighboring rows for wind pollination.",
-      "Modern Sunflower hybrids possess substantial self-compatibility, although insect pollination may improve seed set and yield.",
-      "Even plant spacing helps reduce excessive competition and improves access to sunlight, nutrients, and water.",
-      "Lower plant populations tend to produce larger heads and seeds, while higher populations tend to produce smaller heads.",
-      "Higher plant populations may increase lodging and stalk-breakage risk.",
-      "Tall and large-headed varieties need more wind protection and physical clearance than dwarf or compact varieties.",
-      "Sunflowers work especially well along sunny fence lines, garden edges, and the backs of beds where they will not shade shorter crops.",
-      "Sunflowers are not suitable as an unprotected living crop inside a permanent chicken run because chickens may damage seedlings and leaves before seed heads mature.",
-      "The best planting layout depends on variety height, head size, water availability, desired harvest form, and wildlife protection."
-    ]
-  }
-},
+        minimumRaisedBedDepthIn:
+          null,
 
-      flock: {
-  suitableForAdultChickens: true,
+        vineSpreadRequired:
+          false,
 
-  suitableForYoungChicks: false,
+        verticalSupportBenefitScore:
+          2,
 
-  flockPurposeScores: {
-    eggs: 4,
-    meat: 3,
-    breeding: 3,
-    petsEnrichment: 5,
-    homestead: 4,
-    mixed: 4
-  },
+        blockPlantingRequired:
+          false,
 
-  feedingMethodScores: {
-    livingGrazing: 1,
-    cutAndCarry: 1,
-    wholeProduce: 2,
-    wholeSeedHeads: 5,
-    wholeGrain: 4,
-    processedGrain: 3,
-    heatTreated: 1,
-    driedForage: 1,
-    winterStorage: 4
-  },
+        minimumBlockRows:
+          null,
 
-  directRunSuitabilityScore: 1,
+        continuousStandPreferred:
+          false,
 
-  forageFrameSuitabilityScore: 1,
+        heightCategory:
+          "highly-variety-dependent-upright-annual",
 
-  rotationalPaddockSuitabilityScore: 2,
+        matureWidthCategory:
+          "moderate-variety-dependent",
 
-  confinedFlockValueScore: 5,
+        overflowSpaceBenefitScore:
+          1,
 
-  pasturedFlockValueScore: 3,
+        directFacts: {
+          layoutFlexible:
+            true,
 
-  treatDilutionRiskScore: 4,
+          blockPollinationRequired:
+            false,
 
-  highEnergySupplement: true,
+          suitableForRowPlanting:
+            true,
 
-  highFiberSupplement: false,
+          suitableForCloselySpacedStands:
+            true,
 
-  concentratedFatSource: true,
+          suitableForSingleOrSmallGroupPlanting:
+            true,
 
-  primaryFlockUses: [
-    "Whole-head pecking enrichment",
-    "Seasonal mature-seed supplementation",
-    "Stored winter enrichment",
-    "Energy- and fat-oriented supplemental feeding"
-  ],
+          suitableForBorders:
+            true,
 
-  unsuitablePrimaryUses: [
-    "Living forage",
-    "Protected forage-frame grazing",
-    "Primary protein crop",
-    "Complete-ration replacement",
-    "Young-chick staple feed"
-  ],
+          suitableForFenceLines:
+            true,
 
-  directFacts: {
-    edibleFeedParts: [
-      "Mature whole seeds",
-      "Mature dried seed heads",
-      "Dehulled kernels"
-    ],
+          suitableForRaisedBeds:
+            true,
 
-    preferredBirdStage:
-      "Established adult chickens",
+          suitableForLargeContainers:
+            true,
 
-    cropSurvivalWithDirectChickenAccess:
-      "poor-before-maturity",
+          varietySizeHighlyVariable:
+            true,
 
-    directAccessTiming:
-      "Offer harvested mature heads or seeds rather than allowing unrestricted access to growing plants.",
+          individualPlantSpacingUseful:
+            true,
 
-    nutritionalOrientation: [
-      "energy",
-      "fat",
-      "moderate-protein",
-      "enrichment"
-    ],
+          continuousDenseStandRequired:
+            false,
 
-    notes: [
-      "Sunflower is most useful to backyard chickens through its mature seeds and seed heads rather than through leaves or stems.",
-      "Oilseed Sunflower varieties generally provide smaller, oil-rich seeds, while nonoilseed or confection types generally produce larger in-shell seeds.",
-      "Whole heads encourage pecking and natural feed-seeking behavior.",
-      "Loose mature seed is easier to measure than a whole head but requires additional handling and storage.",
-      "Unprotected chickens may damage seedlings, foliage, stems, or developing heads before the crop reaches useful seed maturity.",
-      "Sunflower seed is energy- and fat-dense and should remain supplemental to an age-appropriate balanced poultry feed.",
-      "The crop does not provide the complete amino-acid, vitamin, mineral, and calcium balance required as a stand-alone poultry ration.",
-      "Young chicks should continue receiving an age-appropriate complete starter feed rather than relying on whole Sunflower seed or heads."
-    ]
-  }
-},
+          verticalSupportRequired:
+            false,
+
+          stakingMayBeHelpful:
+            true,
+
+          undergroundSpreadConcern:
+            false,
+
+          commercialPlantPopulationRange: {
+            oilseedPlantsPerAcreMinimum:
+              18000,
+
+            oilseedPlantsPerAcreMaximum:
+              24000,
+
+            nonoilseedPlantsPerAcreMinimum:
+              14000,
+
+            nonoilseedPlantsPerAcreMaximum:
+              20000,
+
+            backyardUseWarning:
+              "Commercial plant populations are reference production values and must not be converted directly into backyard yield promises, plant-spacing rules, minimum useful-area requirements, or flock-feeding estimates."
+          },
+
+          notes: [
+            "Sunflower is more spatially flexible than dense cereal grains because plants can be grown as individually spaced specimens, rows, borders, small groups, or larger production blocks.",
+            "The crop does not require a square block of several neighboring rows for wind pollination.",
+            "Sunflower is not wind pollinated.",
+            "Many modern hybrids possess substantial self-compatibility, although insect activity can improve pollination, seed set, seed weight, and total yield.",
+            "Single plants can produce mature heads where growing conditions and cultivar characteristics are suitable.",
+            "Small groups may provide better pollinator attraction and more dependable seed production than isolated plants.",
+            "A continuous dense stand is not required.",
+            "Even plant spacing reduces excessive competition for sunlight, soil moisture, nutrients, and root volume.",
+            "Plant spacing influences head size, seed size, stalk diameter, branching, lodging risk, airflow, disease pressure, and harvest access.",
+            "Wider spacing generally produces fewer plants with larger individual heads.",
+            "Closer spacing generally produces more plants with smaller individual heads.",
+            "Closer spacing does not necessarily produce a greater usable backyard seed harvest because competition, lodging, disease, and smaller heads may offset the higher plant count.",
+            "Extremely wide spacing can encourage very large heads that place substantial weight on individual stalks.",
+            "Large-headed plants may require staking or wind protection.",
+            "Higher plant populations can increase competition and may increase lodging, stalk breakage, disease, and delayed drying.",
+            "Lower plant populations can produce larger heads and seeds but leave more exposed soil between plants.",
+            "Oilseed and nonoilseed commercial production commonly use different target plant populations.",
+            "Commercial plant populations vary with environment, moisture availability, soil productivity, cultivar, equipment, and production goal.",
+            "Commercial per-acre populations must not be treated as proven backyard spacing recommendations.",
+            "Home-garden spacing guidance is generally more practical for individually managed plants.",
+            "Large confection and giant cultivars normally require more space than compact oilseed or dwarf cultivars.",
+            "Branching cultivars may require more lateral room than single-stem cultivars.",
+            "Dwarf cultivars may fit small beds, patios, or large containers but may produce less seed per plant.",
+            "Tall single-head cultivars can be placed along a fence line where they receive full sun and do not shade neighboring crops.",
+            "A fence may provide some wind support but should not substantially shade the crop.",
+            "Plants should not be tied so tightly that stems are constricted or damaged.",
+            "Building edges can provide visual structure or limited wind protection.",
+            "South- and west-facing walls may intensify reflected heat and water demand.",
+            "Roof runoff can create damaging saturation or physical injury.",
+            "Tall plants should not block windows, doors, gates, pathways, exterior equipment, utility panels, vents, roof drains, or emergency access.",
+            "Sunflowers can convert portions of unused lawn into seasonal feed, pollinator, ornamental, or screening space.",
+            "Existing sod should be removed or controlled before planting because grass strongly competes for moisture and nutrients.",
+            "Open-field production provides the greatest flexibility for plant population, cultivation, irrigation, wildlife protection, and harvest.",
+            "Raised beds can support Sunflowers where bed depth, soil volume, drainage, and structural stability are adequate.",
+            "Large cultivars may overwhelm shallow or narrow raised beds.",
+            "Roots may extend below a raised bed into native soil where no barrier prevents them.",
+            "Minimum raised-bed depth remains null because cultivar size, bed construction, native soil access, and production goal vary too greatly for one defensible value.",
+            "Container production should be limited primarily to dwarf or compact cultivars unless exceptionally large containers and strong support are available.",
+            "Minimum container volume remains null because credible recommendations vary substantially by cultivar and intended plant size.",
+            "A container that can keep a dwarf ornamental plant alive may still be too small for dependable seed production.",
+            "Container-grown plants may become top-heavy and require anchoring or staking.",
+            "Sunflower is poorly matched to a forage frame because its primary poultry value comes from mature harvested seed rather than repeatedly grazed foliage.",
+            "Direct flock access to young plants would usually destroy them before seed production.",
+            "Sunflower is not normally suited to rotational-paddock grazing as a durable living forage crop.",
+            "Plants may be grown adjacent to a paddock for later head harvest, but poultry should be excluded while plants establish and mature.",
+            "Greenhouse space is generally too valuable for ordinary Sunflower seed production.",
+            "Greenhouse-grown plants may become excessively tall, require hand pollination or managed pollinators, and occupy substantial vertical space.",
+            "Sunflower can contribute to a seasonal hedgerow or mixed border but does not form a permanent woody hedge.",
+            "The crop can provide temporary summer screening.",
+            "Tall plants can cast substantial shade.",
+            "In the Northern Hemisphere, locating tall Sunflowers along the northern edge of a garden may reduce shading of shorter crops.",
+            "Irregular planting areas can be used where each plant still receives adequate sunlight, root space, airflow, and harvest access.",
+            "Long narrow strips and fence lines can be especially practical because they simplify access and reduce shading conflicts.",
+            "Wide rectangles and open rows simplify cultivation, staking, bagging, netting, head inspection, and harvest.",
+            "Bird netting requires enough clearance and support that it does not rest tightly on mature heads.",
+            "Loose netting can entangle wild birds and should be installed and monitored carefully.",
+            "Individual head bags may require less total structure than enclosing an entire planting.",
+            "Space planning should include access for head protection, pruning, harvest, transport, drying, seed removal, cleaning, and storage.",
+            "Space should also be reserved for stakes, support lines, irrigation tubing, and wildlife barriers where needed.",
+            "Mature heads may lean into paths or neighboring plants as they become heavy.",
+            "Planting too close to walkways can create obstruction, dropped seed, hull litter, bee traffic, and wildlife activity.",
+            "Sunflower roots do not create a permanent underground-spread problem.",
+            "Volunteer seedlings may emerge from dropped or unharvested seed.",
+            "Volunteer control is generally easier than removing a perennial spreading crop.",
+            "Minimum trial area remains null because even one or several plants may provide a useful demonstration, ornamental benefit, pollinator value, or enrichment head.",
+            "Minimum useful area remains null because flock size, cultivar, seed yield, wildlife loss, and intended use vary substantially.",
+            "Preferred production area remains null because no defensible household-scale area threshold has been established.",
+            "The planner should not imply that a small planting can replace a predictable quantity of purchased poultry feed.",
+            "The planner should distinguish small-space ornamental or enrichment value from meaningful loose-seed production.",
+            "Commercial plant populations and field yields should never be converted directly into guaranteed backyard production."
+          ]
+        }
+      },
+
+            flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            4,
+
+          meat:
+            3,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            5,
+
+          homestead:
+            4,
+
+          mixed:
+            4
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            1,
+
+          cutAndCarry:
+            1,
+
+          wholeProduce:
+            2,
+
+          wholeSeedHeads:
+            5,
+
+          wholeGrain:
+            4,
+
+          processedGrain:
+            3,
+
+          heatTreated:
+            1,
+
+          driedForage:
+            1,
+
+          winterStorage:
+            4
+        },
+
+        directRunSuitabilityScore:
+          1,
+
+        forageFrameSuitabilityScore:
+          1,
+
+        rotationalPaddockSuitabilityScore:
+          2,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          3,
+
+        treatDilutionRiskScore:
+          4,
+
+        highEnergySupplement:
+          true,
+
+        highFiberSupplement:
+          false,
+
+        concentratedFatSource:
+          true,
+
+        primaryFlockUses: [
+          "Whole mature seed heads offered as pecking enrichment",
+          "Dried whole seed heads stored for later enrichment",
+          "Measured whole-seed supplementation for established adult chickens",
+          "Measured dehulled-kernel supplementation",
+          "Cracked or coarsely ground seed used as a supplemental ingredient",
+          "Cold-weather energy and fat supplementation",
+          "Seasonal garden-to-flock enrichment",
+          "Stored homestead-produced oilseed"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Primary laying-hen calcium source",
+          "Sole poultry protein source",
+          "Unrestricted staple feed",
+          "Young-chick staple feed",
+          "Living forage",
+          "Protected forage-frame grazing",
+          "Routine cut-and-carry foliage",
+          "Mature leaves or stalks as concentrated feed",
+          "Chemically treated planting seed",
+          "Moldy, musty, heated, rancid, or contaminated seed",
+          "Salted, flavored, seasoned, candy-coated, or heavily processed human snack seed"
+        ],
+
+        portionGuidance:
+          null,
+
+        usePathTesting: [
+          "Fresh mature seed-head acceptance by established adult hens",
+          "Whole dried seed-head acceptance",
+          "Black-oil whole-seed acceptance",
+          "Confection whole-seed acceptance",
+          "Dehulled-kernel acceptance",
+          "Cracked-seed acceptance",
+          "Coarsely ground seed handling",
+          "Whole-head consumption rate",
+          "Whole-head seed loss and bedding waste",
+          "Loose-seed consumption rate",
+          "Loose-seed selective feeding",
+          "Flock competition around whole heads",
+          "Feed displacement from complete poultry feed",
+          "Bird weight and body-condition response",
+          "Dropping consistency after supplemental feeding",
+          "Litter oiliness or spoilage from uneaten seed",
+          "Egg-production response",
+          "Egg-weight response",
+          "Egg-yolk fatty-acid response",
+          "Egg-flavor response",
+          "Cold-weather flock response",
+          "Storage acceptance after several months",
+          "Rancidity detection before feeding",
+          "Hull accumulation and cleanup requirements"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Clean mature whole seeds",
+            "Sound mature seed heads",
+            "Clean dried seed heads",
+            "Dehulled seed kernels",
+            "Cracked mature seed",
+            "Coarsely ground mature seed"
+          ],
+
+          nonFeedProducts: [
+            "Mature stalks",
+            "Coarse mature leaves",
+            "Roots",
+            "Empty seed heads",
+            "Seed hulls containing little or no kernel",
+            "Flower petals",
+            "Pollinator habitat",
+            "Cut flowers",
+            "Compost biomass"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor-before-seed-maturity",
+
+          directAccessTiming:
+            "Exclude chickens while plants establish, flower, and develop seed. Offer harvested mature heads or measured mature seed after the crop has reached useful harvest maturity.",
+
+          nutritionalOrientation: [
+            "energy",
+            "fat",
+            "moderate-protein",
+            "oilseed",
+            "stored-seed",
+            "enrichment"
+          ],
+
+          betaGlucanConcern:
+            false,
+
+          highFatConcern:
+            true,
+
+          hullFiberConcern:
+            true,
+
+          phytateConcern:
+            true,
+
+          methionineLimitation:
+            true,
+
+          lysineLimitation:
+            true,
+
+          layingHenCalciumRequirementMet:
+            false,
+
+          completePoultryFeed:
+            false,
+
+          gritRelevantForWholeSeed:
+            true,
+
+          youngBirdSensitivityConcern:
+            true,
+
+          wholeSeedSuitableForEstablishedAdults:
+            true,
+
+          crackedSeedSuitable:
+            true,
+
+          groundIngredientRequiresRationFormulation:
+            true,
+
+          wholeHeadSuitableForEnrichment:
+            true,
+
+          livingPlantSuitableForGrazing:
+            false,
+
+          matureFoliagePrimaryFeed:
+            false,
+
+          treatedSeedSuitableForFeed:
+            false,
+
+          saltedHumanSnackSeedSuitable:
+            false,
+
+          flavoredHumanSnackSeedSuitable:
+            false,
+
+          rancidSeedSuitable:
+            false,
+
+          notes: [
+            "Sunflower is most useful to backyard chickens through mature seeds and mature seed heads rather than leaves or stems.",
+            "Whole seed heads encourage pecking, scratching, seed removal, and natural feed-seeking behavior.",
+            "Whole heads are difficult to portion precisely because consumption, seed loss, and flock competition vary.",
+            "Loose mature seed is easier to measure but requires additional drying, seed removal, cleaning, storage, and monitoring.",
+            "Dehulled kernels contain less fiber and greater nutrient density than whole in-shell seed.",
+            "Whole seed, kernels, and Sunflower meal should not be treated as nutritionally interchangeable.",
+            "Oilseed varieties generally produce smaller oil-rich seeds.",
+            "Nonoilseed or confection types generally produce larger in-shell seeds with different hull and oil characteristics.",
+            "Black-oil Sunflower is commonly favored for bird feeding because of its oil-rich seed and relatively thin hull, but named cultivar composition still varies.",
+            "Sunflower seed is primarily an energy- and fat-oriented supplement rather than a balanced protein feed.",
+            "Whole Sunflower seed cannot supply the complete amino-acid balance required by poultry.",
+            "Sunflower does not provide adequate calcium for laying hens.",
+            "Vitamin and mineral intake may be diluted when birds consume excessive seed instead of complete feed.",
+            "High oil concentration increases caloric density.",
+            "Unrestricted feeding may contribute to excessive energy intake, unwanted body-fat gain, selective feeding, and displacement of balanced feed.",
+            "A universal backyard feeding percentage is not supported.",
+            "Commercial poultry studies using balanced diets should not be simplified into a household treat percentage.",
+            "Established adult chickens are generally better suited to whole seed than young chicks.",
+            "Young chicks should receive an age-appropriate complete starter ration.",
+            "Whole seed may require access to appropriately sized insoluble grit when birds do not obtain sufficient natural grit.",
+            "Cracking can make seed contents more accessible but exposes oil to oxygen and shortens practical storage life.",
+            "Grinding increases surface area, oxidation risk, moisture exposure, and the possibility of rancidity.",
+            "Ground Sunflower should be prepared in small quantities and used promptly.",
+            "Heat treatment is not normally required for clean mature Sunflower seed.",
+            "Roasting does not make Sunflower nutritionally complete.",
+            "Salted or seasoned snack seeds can supply excessive sodium or unsuitable flavoring ingredients.",
+            "Candy-coated, chocolate-coated, artificially sweetened, or otherwise confectioned Sunflower products should not be fed.",
+            "Chemically treated planting seed must never be fed.",
+            "Moldy, musty, heated, damp, rancid, insect-damaged, or rodent-contaminated seed should be discarded.",
+            "Rancid oil may produce stale, paint-like, bitter, sharp, or otherwise abnormal odor and flavor.",
+            "Questionable seed should not be blended with sound seed.",
+            "Uneaten loose seed can attract rodents, wild birds, and insects.",
+            "Seed scattered into damp litter may become spoiled.",
+            "Whole heads should be removed if they become wet, moldy, heavily soiled, or contaminated with droppings.",
+            "Hanging a whole head may reduce direct litter contact, but hanging material must not create an entanglement hazard.",
+            "Whole-head placement should allow subordinate birds to avoid crowding or aggression.",
+            "Several smaller feeding stations may reduce competition better than one large head.",
+            "Unprotected chickens may uproot seedlings, strip leaves, break stems, scratch planting beds, or consume developing seed.",
+            "Direct flock access before harvest is incompatible with dependable seed production.",
+            "Sunflower foliage is not a practical substitute for leafy forage crops.",
+            "Mature stalks and leaves are fibrous and should not be treated as concentrated poultry feed.",
+            "Empty heads, stalks, leaves, and roots may be composted when free of serious disease or chemical contamination.",
+            "Complete poultry feed should remain the nutritional foundation unless a qualified ration-formulation process is used."
+          ]
+        }
+      },
 
       labor: {
-  beginnerFriendlinessScore: 4,
+        beginnerFriendlinessScore:
+          4,
 
-  plantingEaseScore: 5,
+        plantingEaseScore:
+          5,
 
-  establishmentEaseScore: 4,
+        establishmentEaseScore:
+          4,
 
-  routineMaintenanceEaseScore: 4,
+        routineMaintenanceEaseScore:
+          4,
 
-  weedControlEaseScore: 3,
+        weedControlEaseScore:
+          3,
 
-  wildlifeProtectionEaseScore: 2,
+        wildlifeProtectionEaseScore:
+          2,
 
-  harvestEaseScore: 4,
+        harvestEaseScore:
+          4,
 
-  wholeHeadProcessingEaseScore: 4,
+        wholeHeadProcessingEaseScore:
+          4,
 
-  looseSeedProcessingEaseScore: 3,
+        looseSeedProcessingEaseScore:
+          3,
 
-  dryingEaseScore: 3,
+        dryingEaseScore:
+          3,
 
-  storageMonitoringEaseScore: 3,
+        storageMonitoringEaseScore:
+          3,
 
-  perennialMaintenanceEaseScore: 5,
+        perennialMaintenanceEaseScore:
+          5,
 
-  physicalAccessibilityScore: 4,
+        physicalAccessibilityScore:
+          4,
 
-  heavyLiftingRiskScore: 1,
+        heavyLiftingRiskScore:
+          1,
 
-  weeklyLaborLevel:
-    "low",
+        weeklyLaborLevel:
+          "low-to-moderate",
 
-  peakWorkloadLevel:
-    "moderate",
+        peakWorkloadLevel:
+          "moderate-to-high",
 
-  harvestFrequencyCategory:
-    "seasonal",
+        harvestFrequencyCategory:
+          "single-seasonal-or-short-staggered-window",
 
-  requiredPlantingTasks: [
-    "prepare-seedbed",
-    "plant-large-seed"
-  ],
+        requiredPlantingTasks: [
+          "select-seed-producing-cultivar",
+          "prepare-seedbed",
+          "control-existing-sod",
+          "plant-large-seed",
+          "cover-seed",
+          "firm-soil",
+          "mark-planting-location"
+        ],
 
-  requiredMaintenanceTasks: [
-    "hand-weed",
-    "protect-from-wildlife"
-  ],
+        requiredMaintenanceTasks: [
+          "monitor-emergence",
+          "monitor-soil-moisture",
+          "control-weeds",
+          "monitor-stem-strength",
+          "monitor-lodging",
+          "monitor-insects",
+          "monitor-disease",
+          "monitor-wildlife",
+          "inspect-developing-heads"
+        ],
 
-  optionalMaintenanceTasks: [
-    "mulch",
-    "stake"
-  ],
+        optionalMaintenanceTasks: [
+          "soil-test",
+          "apply-fertilizer",
+          "irrigate",
+          "mulch",
+          "thin-seedlings",
+          "stake-tall-plants",
+          "tie-plants-to-support",
+          "protect-seedlings-from-chickens",
+          "protect-seedlings-from-deer",
+          "protect-heads-from-wild-birds",
+          "protect-heads-from-squirrels",
+          "bag-individual-heads",
+          "install-bird-netting",
+          "install-rodent-control",
+          "remove-diseased-plants",
+          "succession-plant"
+        ],
 
-  requiredHarvestTasks: [
-    "cut-seed-heads"
-  ],
+        requiredHarvestTasks: [
+          "determine-seed-maturity",
+          "inspect-head-back-color",
+          "inspect-bract-drying",
+          "inspect-seed-fill",
+          "inspect-for-insects",
+          "inspect-for-head-rot",
+          "inspect-for-mold",
+          "cut-seed-heads",
+          "contain-loose-seed",
+          "move-heads-to-protected-drying-area",
+          "protect-harvest-from-rain",
+          "protect-harvest-from-wildlife"
+        ],
 
-  usePathProcessingTasks: {
-    freshMatureSeedHead: [
-      "cut-seed-heads"
-    ],
+        usePathProcessingTasks: {
+          freshMatureSeedHead: [
+            "cut-seed-heads",
+            "inspect",
+            "remove-damaged-material",
+            "offer-promptly"
+          ],
 
-    wholeDriedSeedHead: [
-      "cut-seed-heads",
-      "dry"
-    ],
+          wholeDriedSeedHead: [
+            "cut-seed-heads",
+            "inspect",
+            "dry",
+            "turn-or-reposition-during-drying",
+            "verify-dryness",
+            "clean-exterior-debris",
+            "store"
+          ],
 
-    looseDriedSeed: [
-      "cut-seed-heads",
-      "dry",
-      "remove-seed",
-      "clean-sort"
-    ]
-  },
+          looseDriedSeed: [
+            "cut-seed-heads",
+            "inspect",
+            "dry",
+            "remove-seed",
+            "screen",
+            "clean-sort",
+            "remove-chaff",
+            "verify-dryness",
+            "store"
+          ],
 
-  requiredStorageTasks: [
-    "inspect-moisture",
-    "inspect-insects",
-    "inspect-mold"
-  ],
+          crackedSeed: [
+            "cut-seed-heads",
+            "dry",
+            "remove-seed",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "crack-small-batch",
+            "feed-or-store-briefly"
+          ],
 
-  specializedEquipmentRequired: [],
+          groundSeed: [
+            "cut-seed-heads",
+            "dry",
+            "remove-seed",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "grind-small-batch",
+            "mix-into-formulated-ration",
+            "feed-promptly"
+          ]
+        },
 
-  specializedEquipmentHelpful: [
-    "hand-pruners",
-    "stakes",
-    "bird-netting",
-    "drying-rack",
-    "drying-screen",
-    "fan",
-    "food-safe-bucket",
-    "metal-grain-can",
-    "moisture-meter"
-  ],
+        requiredStorageTasks: [
+          "verify-seed-dryness",
+          "use-food-safe-container",
+          "protect-from-moisture",
+          "protect-from-rodents",
+          "protect-from-insects",
+          "protect-from-heat",
+          "protect-from-direct-sunlight",
+          "inspect-condensation",
+          "inspect-heating",
+          "inspect-insects",
+          "inspect-rodent-damage",
+          "inspect-mold",
+          "inspect-rancid-odor",
+          "rotate-stock"
+        ],
 
-  suitableForLowTimeUsersScore: 4,
+        specializedEquipmentRequired: [],
 
-  suitableForSoloGrowersScore: 5,
+        specializedEquipmentHelpful: [
+          "hand-pruners",
+          "harvest-knife",
+          "gloves",
+          "stakes",
+          "soft-plant-ties",
+          "bird-netting",
+          "netting-support-frame",
+          "individual-head-bags",
+          "deer-fencing",
+          "rodent-control",
+          "harvest-tarp",
+          "collection-tubs",
+          "drying-racks",
+          "drying-screens",
+          "circulation-fan",
+          "seed-removal-screen",
+          "winnowing-screen",
+          "cleaning-sieve",
+          "moisture-meter",
+          "food-safe-storage-containers",
+          "rodent-resistant-storage-containers",
+          "small-grain-cracker",
+          "small-grain-mill",
+          "scale"
+        ],
 
-  directFacts: {
-    seedSize:
-      "large-and-easy-to-handle",
+        suitableForLowTimeUsersScore:
+          3,
 
-    directSeedingSuitable: true,
+        suitableForSoloGrowersScore:
+          5,
 
-    indoorStartingPossible: true,
+        directFacts: {
+          seedSize:
+            "large-and-easy-to-handle",
 
-    specializedHarvestEquipmentRequiredForBackyardScale:
-      false,
+          directSeedingSuitable:
+            true,
 
-    majorLaborBottlenecks: [
-      "Protecting developing seed heads from birds",
-      "Cutting and handling mature heads",
-      "Drying heads or seed safely",
-      "Removing seed when loose storage is desired",
-      "Inspecting stored heads or seed"
-    ],
+          indoorStartingPossible:
+            true,
 
-    notes: [
-      "Large seed makes Sunflower straightforward to plant by hand.",
-      "Direct seeding is practical for most backyard plantings.",
-      "Routine crop care is generally modest after establishment where weeds, water, and wildlife remain manageable.",
-      "Whole-head use requires less processing than loose-seed use.",
-      "Bird protection may become the most time-consuming management task as seed matures.",
-      "Harvest work is concentrated into one or several seasonal periods rather than requiring daily picking.",
-      "Very tall varieties may make harvesting less accessible than dwarf or medium-height varieties.",
-      "Large commercial plantings require specialized harvesting and drying systems, but small backyard plantings can be cut and handled manually."
-    ]
-  }
-},
+          indoorStartingUsuallyRequired:
+            false,
 
-      cost: {
-  seedOrPlantCostLevel:
-    "low",
+          specializedPlantingEquipmentRequiredForBackyardScale:
+            false,
 
-  soilPreparationCostLevel:
-    "low",
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
 
-  irrigationCostLevel:
-    "low",
+          specializedProcessingEquipmentRequiredForBackyardScale:
+            false,
 
-  protectionCostLevel:
-    "moderate",
+          mechanicalEquipmentCanImproveEfficiency:
+            true,
 
-  processingEquipmentCostLevel:
-    "low",
+          wholeHeadUseReducesProcessing:
+            true,
 
-  storageCostLevel:
-    "low",
+          looseSeedRequiresSeedRemoval:
+            true,
 
-  annualRecurringCostLevel:
-    "low",
+          looseSeedRequiresCleaning:
+            true,
 
-  longTermValueScore: 4,
+          crackedSeedRequiresAdditionalProcessing:
+            true,
 
-  lowestCostUsePath:
-    "fresh-mature-seed-head",
+          groundIngredientRequiresAdditionalProcessing:
+            true,
 
-  highestCostUsePath:
-    "loose-dried-seed",
+          shellingRequiredForWholeSeedFeeding:
+            false,
 
-  likelyCostDrivers: [
-    "Bird netting or seed-head protection",
-    "Stakes for tall varieties",
-    "Drying racks or screens",
-    "Rodent-resistant storage containers",
-    "Optional fan or moisture meter"
-  ],
+          dryingRequiredForLongTermStorage:
+            true,
 
-  costReductionOptions: [
-    "Begin with a small direct-seeded trial.",
-    "Use whole heads instead of removing and cleaning loose seed.",
-    "Use existing fencing or supports where suitable.",
-    "Build simple drying screens from materials already available.",
-    "Save suitable open-pollinated seed only when isolation and seed quality are understood."
-  ],
+          curingRequired:
+            false,
 
-  directFacts: {
-    specializedPlantingEquipmentRequired:
-      false,
+          threshingRequired:
+            false,
 
-    specializedBackyardHarvestEquipmentRequired:
-      false,
+          dailyProcessingManagementRequired:
+            false,
 
-    specializedProcessingEquipmentRequired:
-      false,
+          perennialPruningRequired:
+            false,
 
-    notes: [
-      "Seed and ordinary hand-tool costs are generally modest for a backyard planting.",
-      "Bird protection may become the largest optional setup expense.",
-      "Whole-head feeding avoids the need for a sheller, thresher, or grinder.",
-      "Dry storage requires suitable containers but not necessarily powered equipment.",
-      "Cost levels are qualitative planner ratings rather than current retail-price estimates."
-    ]
-  }
-},
+          peakLaborConcentratedNearHarvest:
+            true,
+
+          wildlifeProtectionMayBeMajorLabor:
+            true,
+
+          majorLaborBottlenecks: [
+            "Selecting a cultivar that produces useful mature seed",
+            "Preparing a weed-controlled planting area",
+            "Protecting emerging seedlings from chickens, birds, deer, rabbits, and rodents",
+            "Thinning crowded seedlings where needed",
+            "Maintaining soil moisture during establishment",
+            "Controlling weeds before the crop shades the soil",
+            "Staking tall or top-heavy plants",
+            "Monitoring developing heads for insects and disease",
+            "Protecting filling and maturing heads from wild birds",
+            "Protecting heads from squirrels and rodents",
+            "Installing and monitoring bird netting safely",
+            "Bagging individual heads where whole-plot protection is impractical",
+            "Determining the correct harvest stage",
+            "Harvesting before severe bird loss or prolonged wet weather",
+            "Cutting and transporting large seed heads",
+            "Providing enough protected drying space",
+            "Maintaining airflow around drying heads",
+            "Preventing mold during drying",
+            "Removing seed from heads",
+            "Separating sound seed from chaff, empty seed, insects, moldy material, and debris",
+            "Verifying adequate dryness before sealed storage",
+            "Protecting stored seed from rodents",
+            "Monitoring stored seed for insects, moisture, heating, mold, and rancidity",
+            "Cracking or grinding only manageable quantities before use"
+          ],
+
+          notes: [
+            "Sunflower is easy to plant because the seed is large and can be placed individually by hand.",
+            "A hoe, trowel, rake, measuring tool, and watering equipment are sufficient for a small planting.",
+            "Specialized planting equipment is unnecessary at backyard scale.",
+            "Direct seeding avoids transplant labor and root disturbance.",
+            "Indoor starting is possible where the season is short, but seedlings should be moved before they become root-bound.",
+            "Routine maintenance is often modest after plants are established and begin shading nearby soil.",
+            "Early weed control is important because small seedlings compete poorly with established sod and vigorous weeds.",
+            "Mulch can reduce hand-weeding and irrigation labor.",
+            "Tall cultivars may require staking, tying, or wind protection.",
+            "Shorter oilseed cultivars may require less structural support than giant ornamental types.",
+            "Wildlife protection may become the crop's largest recurring labor requirement.",
+            "Wild birds can begin removing seed before the entire head is ready for harvest.",
+            "Squirrels may chew through bags, climb supports, bend stalks, or remove entire heads.",
+            "Deer may browse seedlings, leaves, buds, flowers, or immature heads.",
+            "Netting an entire planting can be effective but requires supports, secure edges, frequent inspection, and entanglement precautions.",
+            "Individual head bags may be practical for a small number of plants.",
+            "Head bags should allow airflow and should not trap damaging moisture around the flower head.",
+            "Bagged heads require repeated inspection for insects, condensation, disease, and mold.",
+            "Harvesting whole heads is relatively simple with hand pruners or a harvest knife.",
+            "Large heads can be awkward but normally do not create a major heavy-lifting hazard.",
+            "Gloves may improve comfort when handling rough stalks, dried bracts, dust, insects, or moldy material.",
+            "Whole-head use is the lowest-processing poultry pathway.",
+            "Fresh mature heads require inspection but little additional processing.",
+            "Dried whole heads require protected drying and storage but avoid seed removal.",
+            "Loose seed requires substantially more labor than whole-head feeding.",
+            "Seed can be rubbed, brushed, scraped, or mechanically removed from dry heads.",
+            "Manual seed removal may be slow where many heads are harvested.",
+            "Seed removal should occur over a tarp, tray, tub, or other clean surface to limit loss.",
+            "Cleaning may require screening, winnowing, hand sorting, and repeated inspection.",
+            "Empty seed hulls and poorly filled seed can be difficult to separate from sound seed.",
+            "Loose seed provides better portion control than whole heads.",
+            "Drying is one of the most important labor and safety stages.",
+            "Heads should be spaced so air can circulate around them.",
+            "Piling moist heads can cause heating and mold.",
+            "Humid weather may require fans, screens, racks, or a longer protected drying period.",
+            "Drying heads inside living areas may introduce insects, dust, plant debris, or mold spores.",
+            "A shed, barn, garage, porch, or other protected area may be suitable only where temperature, humidity, pests, chemicals, and airflow are properly controlled.",
+            "Seed should not be sealed in an airtight container until adequately dry.",
+            "Stored whole seed generally retains quality longer than cracked, ground, or dehulled seed.",
+            "Cracked or ground seed should be prepared in small batches.",
+            "Oil exposure after cracking or grinding increases rancidity risk.",
+            "Storage monitoring remains necessary even when seed appeared dry at harvest.",
+            "Sunflower does not require perennial pruning, division, coppicing, or long-term woody maintenance.",
+            "The annual crop must be replanted each season.",
+            "One grower can manage a small planting without specialized machinery.",
+            "Large plantings may become labor-intensive during wildlife protection, harvest, drying, seed removal, and cleaning.",
+            "Future Backyard Chicken Planner trials should record labor separately for planting, weeding, irrigation, staking, wildlife protection, harvesting, drying, seed removal, cleaning, processing, and storage."
+          ]
+        }
+      },
+
+            cost: {
+        seedOrPlantCostLevel:
+          "low",
+
+        soilPreparationCostLevel:
+          "low-to-moderate",
+
+        irrigationCostLevel:
+          "low-to-moderate",
+
+        protectionCostLevel:
+          "moderate-to-high",
+
+        processingEquipmentCostLevel:
+          "low-to-moderate",
+
+        storageCostLevel:
+          "low-to-moderate",
+
+        annualRecurringCostLevel:
+          "low-to-moderate",
+
+        longTermValueScore:
+          4,
+
+        lowestCostUsePath:
+          "fresh-mature-seed-head",
+
+        highestCostUsePath:
+          "cleaned-loose-seed-for-storage",
+
+        likelyCostDrivers: [
+          "Ordinary oilseed, black-oil, confection, specialty, organic, hybrid, or open-pollinated seed",
+          "Sod removal or seedbed preparation",
+          "Soil testing",
+          "Fertilizer where soil tests indicate deficiencies",
+          "Irrigation equipment",
+          "Mulch",
+          "Stakes",
+          "Soft plant ties",
+          "Deer exclusion",
+          "Rabbit protection",
+          "Seedling protection",
+          "Bird netting",
+          "Bird-netting support structures",
+          "Individual seed-head bags",
+          "Squirrel exclusion",
+          "Rodent control",
+          "Harvest tarps",
+          "Hand pruners or harvest knives",
+          "Collection tubs",
+          "Drying racks",
+          "Drying screens",
+          "Circulation fans",
+          "Seed-removal screens",
+          "Winnowing screens",
+          "Cleaning sieves",
+          "Moisture meter",
+          "Food-safe storage containers",
+          "Rodent-resistant storage containers",
+          "Small grain cracker",
+          "Small grain mill",
+          "Electricity for fans, drying, cracking, or grinding",
+          "Replacement seed for annual replanting"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small directly seeded trial.",
+          "Select a seed-producing cultivar rather than an ornamental cultivar with uncertain seed value.",
+          "Purchase untreated seed in an economical packet or bulk quantity appropriate for the planting area.",
+          "Use existing garden beds, fence lines, or sunny borders where soil preparation is already complete.",
+          "Use ordinary hand tools before purchasing specialized equipment.",
+          "Use whole mature heads instead of removing and cleaning every seed.",
+          "Offer fresh mature heads promptly when long-term storage is unnecessary.",
+          "Dry and store whole heads when loose-seed portion control is not required.",
+          "Use existing stakes or fence supports where they do not shade the crop.",
+          "Construct simple drying racks or screens from clean materials already available.",
+          "Harvest over a tarp or collection tub to reduce seed loss.",
+          "Use several individual head bags rather than netting an entire planting when only a few plants require protection.",
+          "Use netting only where it can be supported and monitored safely.",
+          "Coordinate planting and harvest timing to reduce prolonged wildlife exposure.",
+          "Store seed whole and crack or grind only small quantities as needed.",
+          "Use food-safe rodent-resistant containers already owned.",
+          "Combine poultry-feed use with pollinator support, household-food seed, ornamental value, screening, cut flowers, compost biomass, and seed saving.",
+          "Save seed only from a suitable untreated open-pollinated cultivar when isolation, disease, maturity, seed quality, and storage requirements are understood.",
+          "Avoid purchasing large processing equipment before actual harvest volume and flock acceptance are measured.",
+          "Compare homegrown seed costs with locally available bulk black-oil Sunflower seed before expanding production."
+        ],
+
+        directFacts: {
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          specializedEquipmentCanImproveReturn:
+            true,
+
+          wholeHeadUseLowestProcessingCost:
+            true,
+
+          freshHeadUseLowestStorageCost:
+            true,
+
+          driedWholeHeadAddsDryingAndStorageCost:
+            true,
+
+          looseSeedAddsProcessingCost:
+            true,
+
+          dehulledKernelProductionAddsProcessingCost:
+            true,
+
+          crackedSeedAddsProcessingCost:
+            true,
+
+          groundSeedAddsProcessingCost:
+            true,
+
+          wildlifeProtectionMayBeLargestCost:
+            true,
+
+          seedStorageRequiresMoistureProtection:
+            true,
+
+          seedStorageRequiresRodentProtection:
+            true,
+
+          highOilSeedRequiresRancidityMonitoring:
+            true,
+
+          annualReplantingRequired:
+            true,
+
+          exactEconomicReturnKnown:
+            false,
+
+          exactFeedSavingsKnown:
+            false,
+
+          notes: [
+            "Sunflower seed is generally inexpensive when only a small backyard planting is planned.",
+            "Specialty ornamental, giant, dwarf, hybrid, pollen-free, organic, confection, or named oilseed cultivars may cost substantially more than ordinary bulk seed.",
+            "Seed price alone does not determine poultry-feed value.",
+            "A low-cost ornamental cultivar that produces little usable seed may have less feed value than a more expensive oilseed cultivar.",
+            "Sunflower is directly seeded and does not normally require purchased transplants.",
+            "Ordinary hand planting requires no specialized equipment.",
+            "Soil-preparation costs rise where established sod, compacted soil, poor drainage, low fertility, or heavy weed pressure must be corrected.",
+            "Irrigation expense is generally modest for a small planting but can rise in hot, dry, sandy, container, raised-bed, or reflected-heat locations.",
+            "Tall cultivars may require stakes and ties.",
+            "Wildlife protection may become the largest optional production expense.",
+            "Wild birds may remove seed gradually before the entire crop reaches harvest maturity.",
+            "Squirrels may defeat simple bags or netting and may require stronger exclusion methods.",
+            "Deer protection may be necessary in areas with heavy browsing pressure.",
+            "Netting an entire crop can require posts, frames, anchors, clips, and repeated inspection.",
+            "Individual head bags may reduce material costs where only a few heads require protection.",
+            "Head bags must permit airflow and should not trap moisture.",
+            "Whole fresh mature heads provide the lowest-processing pathway.",
+            "Fresh-head use avoids seed removal and long-term storage but requires timely feeding and inspection.",
+            "Whole dried heads require protected drying space and larger storage volume than loose seed.",
+            "Loose seed requires head drying, seed removal, screening, cleaning, sorting, and storage.",
+            "Loose seed allows better portion control and uses less storage volume than intact heads.",
+            "Dehulling seed at household scale may require substantial labor or specialized equipment.",
+            "Dehulled kernels spoil more rapidly than intact whole seed because more oil is exposed to oxygen.",
+            "Cracking and grinding add labor, equipment wear, electricity use, dust, cleanup, and shortened storage life.",
+            "A cracker or mill may be useful only when sufficient annual volume justifies its cost.",
+            "Whole sound seed generally stores more efficiently than cracked, ground, or dehulled seed.",
+            "Storage containers must exclude moisture, insects, rodents, and contamination.",
+            "High-oil seed requires protection from heat, oxygen, sunlight, and prolonged storage.",
+            "A moisture meter may improve storage confidence but is not required for every small planting.",
+            "Fans may improve drying in humid weather but increase electricity use.",
+            "Natural airflow may be sufficient for a small harvest where heads are well spaced and humidity remains manageable.",
+            "Sunflower must be replanted annually.",
+            "Seed saving may lower future seed expense only when the cultivar is appropriate and seed remains viable, mature, healthy, pure enough for the intended use, and safely stored.",
+            "Hybrid offspring may not reproduce the parent cultivar's characteristics reliably.",
+            "Potential value may include poultry enrichment, high-energy supplemental seed, household food, flowers, pollinator habitat, seasonal screening, visual appeal, compost biomass, and saved planting seed.",
+            "These separate benefits should not be combined into an unsupported total financial return.",
+            "A crop failure caused by poor germination, frost, drought, waterlogging, lodging, insects, disease, wildlife, wet harvest, inadequate drying, mold, insects in storage, rodents, or rancidity can eliminate anticipated savings.",
+            "Cost levels are qualitative planner categories rather than current retail-price estimates.",
+            "No feed-cost reduction estimate should be calculated until actual sound seed yield, wildlife loss, harvest loss, drying loss, cleaning loss, storage loss, labor, feeding rate, and complete-feed displacement are measured."
+          ]
+        }
+      },
 
       goals: {
-  feedReductionScore: 3,
+        feedReductionScore:
+          3,
 
-  energyProductionScore: 4,
+        energyProductionScore:
+          5,
 
-  proteinOrientedScore: 3,
+        proteinOrientedScore:
+          3,
 
-  freshGreensScore: 1,
+        freshGreensScore:
+          1,
 
-  livingForageScore: 1,
+        livingForageScore:
+          1,
 
-  winterStorageScore: 4,
+        winterStorageScore:
+          4,
 
-  enrichmentScore: 5,
+        enrichmentScore:
+          5,
 
-  resilienceScore: 4,
+        resilienceScore:
+          4,
 
-  soilImprovementScore: 2,
+        soilImprovementScore:
+          2,
 
-  nitrogenFixationScore: 1,
+        nitrogenFixationScore:
+          0,
 
-  groundCoverScore: 2,
+        groundCoverScore:
+          2,
 
-  erosionControlScore: 2,
+        erosionControlScore:
+          2,
 
-  shadeScore: 3,
+        shadeScore:
+          3,
 
-  privacyScreeningScore: 4,
+        privacyScreeningScore:
+          4,
 
-  pollinatorSupportScore: 5,
+        pollinatorSupportScore:
+          5,
 
-  compostBiomassScore: 3,
+        compostBiomassScore:
+          3,
 
-  householdFoodScore: 4,
+        householdFoodScore:
+          4,
 
-  seedSavingScore: 4,
+        seedSavingScore:
+          4,
 
-  selfRelianceScore: 4,
+        selfRelianceScore:
+          4,
 
-  multipurposeValueScore: 5,
+        multipurposeValueScore:
+          5,
 
-  visualAppealScore: 5,
+        visualAppealScore:
+          5,
 
-  productionReliabilityScore: 4,
+        productionReliabilityScore:
+          3,
 
-  fastestValueScore: 4,
+        fastestValueScore:
+          4,
 
-  nonElectricStorageScore: 4,
+        nonElectricStorageScore:
+          4,
 
-  smallFlockValueScore: 5,
+        smallFlockValueScore:
+          5,
 
-  largeFlockValueScore: 3,
+        largeFlockValueScore:
+          3,
 
-  primaryGoalMatches: [
-    "enrichment",
-    "high-energy",
-    "winter-storage",
-    "pollinators",
-    "shared-household-food",
-    "self-reliance",
-    "seed-saving",
-    "privacy-screening",
-    "edible-landscape"
-  ],
+        primaryGoalMatches: [
+          "high-energy",
+          "oilseed-production",
+          "whole-head-enrichment",
+          "seasonal-enrichment",
+          "winter-storage",
+          "non-electric-storage",
+          "pollinator-support",
+          "shared-household-food",
+          "self-reliance",
+          "seed-saving",
+          "privacy-screening",
+          "seasonal-shade",
+          "edible-landscape",
+          "ornamental-value",
+          "cut-flower-production",
+          "compost-biomass",
+          "small-flock-supplementation",
+          "multi-purpose-homestead-production"
+        ],
 
-  weakGoalMatches: [
-    "living-forage",
-    "fresh-greens",
-    "nitrogen-fixation",
-    "permanent-ground-cover",
-    "primary-protein-production"
-  ],
+        weakGoalMatches: [
+          "living-forage",
+          "fresh-greens",
+          "primary-protein-production",
+          "complete-feed-replacement",
+          "nitrogen-fixation",
+          "permanent-ground-cover",
+          "perennial-production",
+          "deep-shade-production",
+          "wet-soil-production",
+          "young-chick-feed",
+          "high-calcium-feed",
+          "low-fat-feed",
+          "repeated-cut-and-regrow-forage",
+          "protected-forage-frame-production",
+          "large-flock-feed-replacement"
+        ],
 
-  directFacts: {
-    oilseedOrientation: true,
+        goalConflicts: [
+          {
+            goalA:
+              "maximum-seed-harvest",
 
-    pollinatorBenefit: true,
+            goalB:
+              "unrestricted-chicken-access",
 
-    humanFoodPotential: true,
+            explanation:
+              "Allowing chickens unrestricted access before seed maturity can uproot seedlings, strip leaves, break stems, damage flower heads, and consume developing seed before harvest."
+          },
 
-    annualScreeningPotential: true,
+          {
+            goalA:
+              "maximum-seed-harvest",
 
-    seedSavingPossible: true,
+            goalB:
+              "unrestricted-wildlife-access",
 
-    notes: [
-      "Mature seed provides concentrated oil, energy, and moderate protein.",
-      "Whole seed heads provide unusually strong flock-enrichment value.",
-      "Sunflowers provide abundant visible flowers and can benefit insect pollinators.",
-      "Current hybrids may set seed through self-compatibility, but pollinator activity can improve seed set and yield.",
-      "Tall varieties can provide temporary seasonal screening or partial shade.",
-      "Sunflower does not fix nitrogen and is not a persistent ground-cover crop.",
-      "Human-food value depends on variety, handling, cleanliness, and intended seed type.",
-      "Open-pollinated seed may be saved, while hybrid offspring may not reliably reproduce the parent variety."
-    ]
-  }
-},
+            explanation:
+              "Wild birds, squirrels, rodents, deer, and other wildlife may remove or damage a substantial portion of the crop before harvest."
+          },
 
-      risks: {
-  wildlife: {
-    wildBirds: 5,
-    deer: 4,
-    raccoons: 2,
-    squirrels: 4,
-    rabbits: 3,
-    rodents: 4,
-    groundhogs: 3
-  },
+          {
+            goalA:
+              "maximum-seed-production",
 
-  insectsRiskScore: 3,
+            goalB:
+              "pollen-free-cut-flower-production",
 
-  diseaseRiskScore: 3,
+            explanation:
+              "Many pollen-free cut-flower cultivars are selected for floral use rather than dependable pollination and mature seed production."
+          },
 
-  lodgingRiskScore: 3,
+          {
+            goalA:
+              "maximum-seed-yield-per-area",
 
-  fieldMoldRiskScore: 3,
+            goalB:
+              "maximum-individual-head-size",
 
-  dryingMoldRiskScore: 4,
+            explanation:
+              "Very wide spacing may produce larger individual heads but fewer plants per unit area, while closer spacing may produce more plants with smaller heads."
+          },
 
-  storageMoldRiskScore: 4,
+          {
+            goalA:
+              "maximum-total-seed-yield",
 
-  storedInsectRiskScore: 3,
+            goalB:
+              "giant-ornamental-height",
 
-  spoilageSpeedRiskScore: 3,
+            explanation:
+              "The tallest or most visually dramatic cultivar is not necessarily the most efficient producer of usable poultry-feed seed."
+          },
 
-  invasivenessConcernRiskScore: 1,
+          {
+            goalA:
+              "maximum-head-size",
 
-  selfSeedingRiskScore: 3,
+            goalB:
+              "minimum-lodging-risk",
 
-  fruitDropRiskScore: 2,
+            explanation:
+              "Very large mature heads place greater weight on stalks and may increase leaning, breakage, staking needs, and storm damage."
+          },
 
-  cropFailureRiskScore: 3,
+          {
+            goalA:
+              "maximum-plant-density",
 
-  stormDamageRiskScore: 3,
+            goalB:
+              "maximum-airflow-and-disease-reduction",
 
-  shadingOtherCropsRiskScore: 4,
+            explanation:
+              "Dense planting can reduce airflow, increase competition, delay drying, and increase foliar, stem, and head-disease pressure."
+          },
 
-  overfeedingRiskScore: 4,
+          {
+            goalA:
+              "maximum-water-conservation",
 
-  treatedSeedRiskScore: 5,
+            goalB:
+              "maximum-seed-yield",
 
-  primaryRisks: [
-    {
-      id: "wild-bird-loss",
-      severity: "very-high",
+            explanation:
+              "Established Sunflowers can survive moderate drought, but water stress during bud formation, flowering, pollination, and seed filling can reduce usable seed yield."
+          },
 
-      affectedStages: [
-        "late-flowering",
-        "seed-filling",
-        "maturity"
+          {
+            goalA:
+              "maximum-irrigated-growth",
+
+            goalB:
+              "minimum-lodging-and-disease-risk",
+
+            explanation:
+              "Excessive irrigation, especially when combined with high nitrogen or poor drainage, may increase weak vegetative growth, lodging, disease, and delayed head drying."
+          },
+
+          {
+            goalA:
+              "maximum-nitrogen-driven-growth",
+
+            goalB:
+              "strong-stalks-and-timely-maturity",
+
+            explanation:
+              "Excess nitrogen may produce overly tall vegetative growth, delay maturity, weaken stalks, increase lodging, and increase disease susceptibility."
+          },
+
+          {
+            goalA:
+              "maximum-pollinator-support",
+
+            goalB:
+              "pollen-free-flower-production",
+
+            explanation:
+              "Pollen-free cultivars may reduce the pollen resource available to bees and other flower-visiting insects."
+          },
+
+          {
+            goalA:
+              "maximum-pollinator-access",
+
+            goalB:
+              "early-complete-head-bagging",
+
+            explanation:
+              "Covering flower heads before pollination is complete may restrict insect access and reduce seed set."
+          },
+
+          {
+            goalA:
+              "maximum-wildlife-protection",
+
+            goalB:
+              "minimum-material-and-monitoring-cost",
+
+            explanation:
+              "Effective bird, squirrel, deer, and rodent protection may require netting, bags, fencing, supports, anchors, traps, storage containers, and repeated inspection."
+          },
+
+          {
+            goalA:
+              "lowest-processing-labor",
+
+            goalB:
+              "precise-feed-portioning",
+
+            explanation:
+              "Whole seed heads minimize processing but make exact seed intake, loss, and ration displacement difficult to measure."
+          },
+
+          {
+            goalA:
+              "maximum-storage-efficiency",
+
+            goalB:
+              "whole-head-enrichment",
+
+            explanation:
+              "Intact heads provide enrichment but occupy more storage space than cleaned loose seed."
+          },
+
+          {
+            goalA:
+              "maximum-processing-convenience",
+
+            goalB:
+              "maximum-storage-life",
+
+            explanation:
+              "Cracked, ground, or dehulled seed may be easier to mix or consume but exposes more oil to oxygen and generally shortens storage life."
+          },
+
+          {
+            goalA:
+              "maximum-cold-weather-energy-supplementation",
+
+            goalB:
+              "minimum-complete-feed-dilution",
+
+            explanation:
+              "Sunflower seed is energy dense, but excessive feeding may reduce consumption of nutritionally complete poultry feed."
+          },
+
+          {
+            goalA:
+              "maximum-household-food-use",
+
+            goalB:
+              "maximum-poultry-feed-use",
+
+            explanation:
+              "Seed consumed by the household is unavailable for the flock, and the most desirable confection varieties may not provide the same oilseed characteristics as dedicated bird-feed types."
+          },
+
+          {
+            goalA:
+              "maximum-seed-saving-predictability",
+
+            goalB:
+              "hybrid-cultivar-use",
+
+            explanation:
+              "Seed saved from hybrids may not reproduce the parent cultivar's height, maturity, head size, seed type, disease resistance, or yield characteristics reliably."
+          },
+
+          {
+            goalA:
+              "maximum-seasonal-screening",
+
+            goalB:
+              "minimum-shade-on-neighboring-crops",
+
+            explanation:
+              "Tall dense Sunflowers can provide privacy screening but may cast substantial shade on shorter crops."
+          },
+
+          {
+            goalA:
+              "maximum-container-convenience",
+
+            goalB:
+              "maximum-poultry-feed-seed-production",
+
+            explanation:
+              "Containers restrict root volume, dry rapidly, and generally provide less dependable seed production than suitable in-ground soil."
+          }
+        ],
+
+        directFacts: {
+          oilseedOrientation:
+            true,
+
+          pollinatorBenefit:
+            true,
+
+          pollenProducingCultivarPreferredForPollinators:
+            true,
+
+          humanFoodPotential:
+            true,
+
+          cutFlowerPotential:
+            true,
+
+          ornamentalPotential:
+            true,
+
+          annualScreeningPotential:
+            true,
+
+          seasonalShadePotential:
+            true,
+
+          edibleLandscapePotential:
+            true,
+
+          seedSavingPossible:
+            true,
+
+          openPollinatedSeedSavingMorePredictableThanHybrid:
+            true,
+
+          nitrogenFixation:
+            false,
+
+          perennialGroundCover:
+            false,
+
+          livingForageOrientation:
+            false,
+
+          repeatedCutAndRegrowOrientation:
+            false,
+
+          completeFeedReplacement:
+            false,
+
+          highEnergyFeedGoal:
+            true,
+
+          highFatFeedGoal:
+            true,
+
+          primaryProteinFeedGoal:
+            false,
+
+          youngChickFeedGoal:
+            false,
+
+          wholeHeadEnrichmentGoal:
+            true,
+
+          winterStorageGoal:
+            true,
+
+          nonElectricStoragePossible:
+            true,
+
+          smallFlockOrientation:
+            true,
+
+          largeFlockFeedReplacementOrientation:
+            false,
+
+          maximumValueRequiresMultipleUses:
+            true,
+
+          notes: [
+            "Sunflower's strongest planner matches are energy production, whole-head enrichment, pollinator support, ornamental value, household-food potential, seasonal screening, and non-electric seed storage.",
+            "Its weakest matches are living forage, repeated cutting, complete-feed replacement, nitrogen fixation, permanent ground cover, and primary protein production.",
+            "Sunflower provides high energy because mature seed contains substantial oil.",
+            "High energy does not make the seed nutritionally complete.",
+            "The crop provides moderate protein but should not be classified as a primary protein crop.",
+            "Sunflower does not provide the calcium, amino-acid balance, vitamins, or minerals required as a complete laying-hen feed.",
+            "Whole-head feeding provides exceptional enrichment value with relatively little processing.",
+            "Whole-head feeding makes exact intake difficult to measure.",
+            "Loose seed provides better portion control but requires more processing.",
+            "Sunflower can provide valuable stored winter supplementation where seed is adequately dried.",
+            "Whole seed stores without electricity when protected from moisture, insects, rodents, heat, and rancidity.",
+            "High oil content may shorten safe storage compared with some lower-fat cereal grains.",
+            "Pollinator value depends partly on cultivar.",
+            "Pollen-producing cultivars generally provide greater pollen resources than pollen-free cut-flower types.",
+            "Many Sunflower cultivars also produce nectar.",
+            "The crop may support honey bees, native bees, and other flower-visiting insects.",
+            "Pollinator activity may also improve seed set.",
+            "Sunflower has strong visual and edible-landscape value.",
+            "Tall cultivars can provide temporary summer privacy screening.",
+            "The crop does not provide year-round or permanent screening.",
+            "Tall cultivars may shade neighboring crops.",
+            "Stalks, leaves, roots, hulls, and empty heads can contribute compost biomass.",
+            "Coarse mature residue is not a concentrated poultry feed.",
+            "Sunflower does not fix atmospheric nitrogen.",
+            "It should not receive nitrogen-fixation credit merely because it produces substantial biomass.",
+            "Sunflower may contribute organic matter when roots and residue are returned to the soil.",
+            "Its soil-improvement value is secondary to crops specifically used as cover crops, legumes, sod-forming species, or high-residue cereals.",
+            "The crop provides limited ground cover early in establishment because individually spaced plants leave exposed soil.",
+            "Sunflower is annual and does not create permanent ground cover.",
+            "Roots may help hold soil during the growing season, but widely spaced plants are not a complete erosion-control solution.",
+            "Seed saving is possible from suitable open-pollinated cultivars.",
+            "Hybrid seed saving may produce variable offspring.",
+            "Seed saving requires mature healthy seed, suitable isolation where purity matters, proper drying, and protected storage.",
+            "Household-food value is strongest with appropriate confection or culinary cultivars.",
+            "Oilseed and confection cultivars should not automatically receive identical feed, household-food, or yield scores.",
+            "Production reliability depends heavily on cultivar selection, frost-free season, disease pressure, lodging, wildlife losses, harvest timing, drying conditions, and storage management.",
+            "Wildlife pressure may reduce reliability even where plant growth is excellent.",
+            "Small flocks can receive useful enrichment from a limited number of mature heads.",
+            "Large flocks require much greater land area, protection, harvest volume, drying capacity, and storage space.",
+            "Sunflower is therefore more likely to provide meaningful supplemental value for a small flock than dependable feed replacement for a large flock.",
+            "The crop's best economic and homestead value comes from combining several compatible uses.",
+            "No goal score should be interpreted as a guaranteed yield, financial return, or feeding percentage."
+          ]
+        }
+      },
+
+            risks: {
+        overallRiskLevel:
+          "moderate",
+
+        establishmentFailureRiskScore:
+          3,
+
+        frostRiskScore:
+          4,
+
+        heatRiskScore:
+          2,
+
+        droughtRiskScore:
+          3,
+
+        waterloggingRiskScore:
+          4,
+
+        windRiskScore:
+          3,
+
+        lodgingRiskScore:
+          4,
+
+        wildlifeRiskScore:
+          5,
+
+        insectRiskScore:
+          4,
+
+        diseaseRiskScore:
+          4,
+
+        harvestWeatherRiskScore:
+          4,
+
+        dryingFailureRiskScore:
+          4,
+
+        storageFailureRiskScore:
+          4,
+
+        rancidityRiskScore:
+          4,
+
+        contaminationRiskScore:
+          4,
+
+        volunteerRiskScore:
+          2,
+
+        invasivenessRiskScore:
+          1,
+
+        poultryOverconsumptionRiskScore:
+          4,
+
+        cropDestructionByChickensRiskScore:
+          5,
+
+        majorRiskCategories: [
+          "Poor emergence in cold, crusted, saturated, compacted, or rapidly drying soil",
+          "Late spring frost",
+          "Early autumn frost before seed maturity",
+          "Drought during bud formation, flowering, pollination, or seed filling",
+          "Waterlogging and poor drainage",
+          "Excessive nitrogen",
+          "Weak stalks",
+          "Wind lodging",
+          "Stem breakage",
+          "Large-head lodging",
+          "Wild-bird seed loss",
+          "Squirrel damage",
+          "Rodent damage",
+          "Deer browsing",
+          "Rabbit damage to seedlings",
+          "Insect damage to stems, buds, flowers, heads, and seed",
+          "Foliar disease",
+          "Stem disease",
+          "Root disease",
+          "Head rot",
+          "Wet harvest weather",
+          "Delayed head drying",
+          "Mold during postharvest drying",
+          "Seed heating",
+          "Storage insects",
+          "Rodent contamination",
+          "Moisture migration",
+          "Oil oxidation",
+          "Rancidity",
+          "Chemically treated planting seed entering the feed supply",
+          "Excessive supplemental feeding",
+          "Complete-feed displacement",
+          "Seed spoilage in damp poultry litter"
+        ],
+
+        establishmentRisks: [
+          {
+            id:
+              "cold-soil",
+
+            label:
+              "Cold Soil",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Planting before soil has warmed sufficiently may delay germination, produce uneven emergence, and increase exposure to seed decay, insects, birds, rodents, and soil crusting.",
+
+            prevention: [
+              "Plant after frost danger has passed.",
+              "Wait until soil temperature is suitable for dependable germination.",
+              "Use locally appropriate planting dates.",
+              "Avoid prolonged planting into cold saturated soil.",
+              "Select an early-maturing cultivar rather than planting excessively early into unsuitable soil."
+            ]
+          },
+
+          {
+            id:
+              "soil-crusting",
+
+            label:
+              "Soil Crusting",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Heavy rain, fine-textured soil, excessive tillage, or irrigation followed by drying may create a surface crust that prevents seedlings from emerging.",
+
+            prevention: [
+              "Prepare a firm but not pulverized seedbed.",
+              "Avoid excessive tillage.",
+              "Use appropriate organic matter and soil structure management.",
+              "Water gently during emergence.",
+              "Break a light crust carefully without damaging emerging seedlings."
+            ]
+          },
+
+          {
+            id:
+              "seedling-drought",
+
+            label:
+              "Seedling Drought",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Surface soil may dry before seedlings establish deeper roots, especially in sandy soil, raised beds, containers, wind, or reflected heat.",
+
+            prevention: [
+              "Maintain even moisture during germination and establishment.",
+              "Plant at a suitable depth.",
+              "Firm soil around seed.",
+              "Use mulch only after seedlings are established and visible.",
+              "Monitor containers and raised beds more frequently than in-ground plantings."
+            ]
+          },
+
+          {
+            id:
+              "seed-predation",
+
+            label:
+              "Seed Predation",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Birds, mice, voles, squirrels, chipmunks, and other animals may remove planted seed before emergence.",
+
+            prevention: [
+              "Cover seed to the recommended depth.",
+              "Firm the planting row.",
+              "Avoid leaving spilled seed on the soil surface.",
+              "Use temporary row cover or exclusion where pressure is severe.",
+              "Monitor for burrowing or digging."
+            ]
+          },
+
+          {
+            id:
+              "seedling-browsing",
+
+            label:
+              "Seedling Browsing",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Chickens, deer, rabbits, rodents, and birds may consume or damage young seedlings before plants are established.",
+
+            prevention: [
+              "Exclude chickens from the planting area.",
+              "Use temporary fencing or cages.",
+              "Protect seedlings until stems and leaves are well established.",
+              "Repair gaps in wildlife barriers.",
+              "Inspect after storms or animal activity."
+            ]
+          },
+
+          {
+            id:
+              "weed-competition",
+
+            label:
+              "Weed Competition",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Sunflower seedlings may lose moisture, nutrients, sunlight, and rooting space to sod and vigorous weeds during early growth.",
+
+            prevention: [
+              "Remove or suppress sod before planting.",
+              "Prepare a weed-controlled seedbed.",
+              "Cultivate shallowly while plants are small.",
+              "Use mulch where appropriate.",
+              "Avoid deep cultivation that damages developing roots."
+            ]
+          },
+
+          {
+            id:
+              "fertilizer-injury",
+
+            label:
+              "Fertilizer Injury",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Concentrated fertilizer, fresh manure, salt accumulation, or boron applied too close to seed may reduce germination or injure roots.",
+
+            prevention: [
+              "Use soil-test recommendations.",
+              "Do not place concentrated fertilizer directly against seed.",
+              "Avoid excessive boron.",
+              "Use fully composted amendments where appropriate.",
+              "Water soluble fertilizer into the soil according to label directions."
+            ]
+          }
+        ],
+
+        weatherRisks: [
+          {
+            id:
+              "late-spring-frost",
+
+            label:
+              "Late Spring Frost",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "A late frost may damage newly emerged seedlings, delay establishment, or require replanting.",
+
+            prevention: [
+              "Plant after local frost danger has passed.",
+              "Use temporary frost protection for an unexpected event.",
+              "Retain extra untreated seed for replanting.",
+              "Avoid low frost pockets where possible."
+            ]
+          },
+
+          {
+            id:
+              "early-fall-frost",
+
+            label:
+              "Early Fall Frost",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "An early killing frost may stop seed filling before physiological maturity and leave lightweight, poorly filled, or unusable seed.",
+
+            prevention: [
+              "Choose a cultivar suited to the local frost-free season.",
+              "Plant within the locally recommended window.",
+              "Avoid excessively late succession plantings.",
+              "Track flowering and expected maturity.",
+              "Use earlier cultivars in northern or high-elevation regions."
+            ]
+          },
+
+          {
+            id:
+              "extreme-heat-during-flowering",
+
+            label:
+              "Extreme Heat During Flowering",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Severe heat combined with dry soil may reduce pollen function, insect activity, seed set, and seed filling.",
+
+            prevention: [
+              "Plant early enough for flowering to avoid the most severe heat where practical.",
+              "Maintain adequate soil moisture.",
+              "Use locally adapted cultivars.",
+              "Avoid reflective heat sites where water is limited."
+            ]
+          },
+
+          {
+            id:
+              "reproductive-drought",
+
+            label:
+              "Reproductive-Stage Drought",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Moisture stress during bud formation, flowering, pollination, and seed filling can reduce head size, seed number, seed weight, and oil accumulation.",
+
+            prevention: [
+              "Monitor soil moisture during reproductive growth.",
+              "Irrigate deeply when rainfall is inadequate.",
+              "Control weeds.",
+              "Use mulch where suitable.",
+              "Avoid planting more area than available water can support."
+            ]
+          },
+
+          {
+            id:
+              "prolonged-rainfall",
+
+            label:
+              "Prolonged Rainfall",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Repeated rainfall may increase lodging, disease, head rot, delayed maturity, bird damage, and harvest losses.",
+
+            prevention: [
+              "Select well-drained sites.",
+              "Maintain airflow.",
+              "Avoid excessive plant density.",
+              "Harvest promptly when seed is mature.",
+              "Move cut heads to a protected drying area."
+            ]
+          },
+
+          {
+            id:
+              "hail",
+
+            label:
+              "Hail",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Hail can shred leaves, break stems, damage buds and flower heads, and expose developing seed to disease.",
+
+            prevention: [
+              "No complete backyard prevention is practical.",
+              "Use windbreaks or protected site placement where appropriate.",
+              "Inspect damaged plants for broken stems and head injury.",
+              "Remove severely diseased or rotting tissue.",
+              "Harvest salvageable mature heads promptly."
+            ]
+          },
+
+          {
+            id:
+              "high-wind",
+
+            label:
+              "High Wind",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Wind may lean or break tall plants, especially after rain, in saturated soil, or when large heads become heavy.",
+
+            prevention: [
+              "Choose strong-stemmed cultivars.",
+              "Avoid excessive nitrogen.",
+              "Provide adequate spacing.",
+              "Stake tall or top-heavy plants.",
+              "Use soft ties.",
+              "Avoid exposed sites where practical.",
+              "Maintain drainage and strong root development."
+            ]
+          }
+        ],
+
+        lodgingRisks: {
+          majorCauses: [
+            "Tall cultivar",
+            "Giant cultivar",
+            "Large mature head",
+            "Weak stalk",
+            "Stem disease",
+            "Root disease",
+            "Excessive nitrogen",
+            "Excessive irrigation",
+            "Saturated soil",
+            "Shallow soil",
+            "Compacted soil",
+            "Restricted roots",
+            "High plant density",
+            "Strong wind",
+            "Heavy rain",
+            "Wildlife climbing or pulling plants"
+          ],
+
+          prevention: [
+            "Select cultivars with suitable mature height and stalk strength.",
+            "Avoid excessive nitrogen.",
+            "Use balanced fertility based on soil testing.",
+            "Provide adequate spacing.",
+            "Avoid waterlogged soil.",
+            "Encourage deep rooting.",
+            "Stake large or exposed plants.",
+            "Tie stems loosely with soft material.",
+            "Monitor for stem and root disease.",
+            "Harvest mature heads before prolonged exposure to storms."
+          ],
+
+          salvageGuidance: [
+            "Support leaning plants when stems remain intact.",
+            "Do not force a severely cracked stem upright.",
+            "Harvest mature heads from broken plants promptly.",
+            "Discard heads showing rot, mold, chemical contamination, or severe insect damage.",
+            "Continue drying only sound material."
+          ],
+
+          notes: [
+            "Lodging risk increases as mature heads gain weight.",
+            "Plants may bend naturally as heads mature; normal downward head orientation should not automatically be classified as lodging.",
+            "Root lodging and stem lodging should be recorded separately in future field trials.",
+            "Cultivar height alone does not fully predict lodging."
+          ]
+        },
+
+        wildlifeRisks: {
+          overallWildlifePressureScore:
+            5,
+
+          majorWildlife: [
+            "Wild birds",
+            "Squirrels",
+            "Chipmunks",
+            "Mice",
+            "Rats",
+            "Voles",
+            "Deer",
+            "Rabbits",
+            "Raccoons",
+            "Groundhogs"
+          ],
+
+          cropStagesAtRisk: [
+            "Planted seed",
+            "Emergence",
+            "Seedling establishment",
+            "Vegetative growth",
+            "Bud formation",
+            "Flowering",
+            "Seed filling",
+            "Mature heads",
+            "Cut heads during drying",
+            "Stored loose seed",
+            "Stored whole heads"
+          ],
+
+          wildBirdRiskScore:
+            5,
+
+          squirrelRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          deerRiskScore:
+            4,
+
+          rabbitRiskScore:
+            3,
+
+          raccoonRiskScore:
+            2,
+
+          protectionOptions: [
+            "Temporary seedling cages",
+            "Row cover during emergence",
+            "Deer fencing",
+            "Rabbit fencing",
+            "Individual head bags",
+            "Supported bird netting",
+            "Visual deterrents",
+            "Prompt harvest",
+            "Rodent-resistant drying areas",
+            "Rodent-resistant storage containers",
+            "Sanitation around storage",
+            "Removal of spilled seed"
+          ],
+
+          protectionWarnings: [
+            "Loose bird netting can entangle birds, snakes, poultry, and other wildlife.",
+            "Netting should be supported away from heads and checked frequently.",
+            "Head bags should provide airflow.",
+            "Plastic bags should not be sealed around moist heads.",
+            "Wildlife deterrents often lose effectiveness when left unchanged.",
+            "Poison baits can create hazards for poultry, pets, children, and wildlife.",
+            "Trapping and wildlife control must follow local laws."
+          ],
+
+          notes: [
+            "Wildlife loss may be the largest difference between biological seed yield and usable backyard harvest.",
+            "Wild birds often begin feeding before every seed on a head is fully mature.",
+            "Squirrels may remove entire heads or bend stalks to reach seed.",
+            "Rodents may damage both field heads and stored seed.",
+            "Deer may browse plants at several growth stages.",
+            "Wildlife protection costs and labor should be tracked separately from ordinary crop maintenance.",
+            "No universal percentage loss should be assigned."
+          ]
+        },
+
+        insectRisks: {
+          overallInsectPressureScore:
+            4,
+
+          majorInsects: [
+            {
+              commonName:
+                "Sunflower Moth",
+
+              scientificName:
+                "Homoeosoma electellum",
+
+              affectedParts: [
+                "Flower heads",
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Larvae feed within the head, damage florets and developing seed, produce webbing and frass, and may increase susceptibility to head rot.",
+
+              monitoringGuidance:
+                "Inspect flowering heads for adult moth activity, webbing, frass, damaged florets, and larvae.",
+
+              managementNotes:
+                "Use local Extension thresholds and labeled management guidance. Backyard growers should emphasize timely planting, monitoring, sanitation, resistant or adapted cultivars where available, and removal of severely infested heads."
+            },
+
+            {
+              commonName:
+                "Banded Sunflower Moth",
+
+              scientificName:
+                "Cochylis hospes",
+
+              affectedParts: [
+                "Flower heads",
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Larvae feed on florets and developing seed and may reduce usable harvest.",
+
+              monitoringGuidance:
+                "Monitor from bud development through flowering and inspect heads for larval feeding.",
+
+              managementNotes:
+                "Regional importance varies. Follow local Extension guidance and avoid unsupported household pesticide schedules."
+            },
+
+            {
+              commonName:
+                "Red Sunflower Seed Weevil",
+
+              scientificName:
+                "Smicronyx fulvus",
+
+              affectedParts: [
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Adults lay eggs in developing seed, and larvae consume portions of the kernel.",
+
+              monitoringGuidance:
+                "Inspect heads during flowering and seed development and evaluate harvested seed for exit holes or damaged kernels.",
+
+              managementNotes:
+                "Commercial thresholds do not translate directly to a few garden plants. Prompt harvest and removal of infested residue may reduce carryover."
+            },
+
+            {
+              commonName:
+                "Gray Sunflower Seed Weevil",
+
+              scientificName:
+                "Smicronyx sordidus",
+
+              affectedParts: [
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Larvae develop within seed and reduce kernel quality.",
+
+              monitoringGuidance:
+                "Inspect developing heads and harvested seed where the pest is regionally present.",
+
+              managementNotes:
+                "Use region-specific Extension identification and management information."
+            },
+
+            {
+              commonName:
+                "Sunflower Stem Weevil",
+
+              scientificName:
+                "Cylindrocopturus adspersus",
+
+              affectedParts: [
+                "Stems"
+              ],
+
+              riskDescription:
+                "Larval tunneling may weaken stems, increase breakage, and interact with stem disease.",
+
+              monitoringGuidance:
+                "Inspect stems for discoloration, tunneling, breakage, or internal feeding.",
+
+              managementNotes:
+                "Crop residue sanitation and rotation may reduce local buildup in repeated production areas."
+            },
+
+            {
+              commonName:
+                "Sunflower Headclipping Weevil",
+
+              scientificName:
+                "Haplorhynchites aeneus",
+
+              affectedParts: [
+                "Flower buds",
+                "Flower heads"
+              ],
+
+              riskDescription:
+                "Adults partially sever flower heads, causing heads to droop or fall.",
+
+              monitoringGuidance:
+                "Inspect buds and flowering plants for clipped or hanging heads and adult weevils.",
+
+              managementNotes:
+                "Remove fallen infested heads where practical and consult local Extension guidance."
+            },
+
+            {
+              commonName:
+                "Sunflower Beetle",
+
+              scientificName:
+                "Zygogramma exclamationis",
+
+              affectedParts: [
+                "Leaves"
+              ],
+
+              riskDescription:
+                "Adults and larvae consume foliage and may reduce plant vigor when populations are high.",
+
+              monitoringGuidance:
+                "Inspect leaf surfaces and margins for feeding injury, adults, larvae, and eggs.",
+
+              managementNotes:
+                "Small populations may not justify treatment. Preserve beneficial insects and use locally supported thresholds."
+            },
+
+            {
+              commonName:
+                "Cutworms",
+
+              scientificName:
+                null,
+
+              affectedParts: [
+                "Seedlings",
+                "Young stems"
+              ],
+
+              riskDescription:
+                "Larvae may sever seedlings at or near the soil surface.",
+
+              monitoringGuidance:
+                "Inspect wilted or cut seedlings and search the soil nearby.",
+
+              managementNotes:
+                "Control weeds before planting, remove plant debris where appropriate, and use physical collars or locally supported controls for small plantings."
+            },
+
+            {
+              commonName:
+                "Wireworms",
+
+              scientificName:
+                null,
+
+              affectedParts: [
+                "Seed",
+                "Roots",
+                "Seedlings"
+              ],
+
+              riskDescription:
+                "Larvae may damage seed and underground plant tissue, reducing emergence and vigor.",
+
+              monitoringGuidance:
+                "Consider risk where Sunflowers follow sod, pasture, or grassy areas and investigate unexplained stand loss.",
+
+              managementNotes:
+                "Site history and preplant assessment are important because rescue options are limited."
+            },
+
+            {
+              commonName:
+                "Aphids",
+
+              scientificName:
+                null,
+
+              affectedParts: [
+                "Leaves",
+                "Stems",
+                "Flower heads"
+              ],
+
+              riskDescription:
+                "Large colonies may remove sap, distort growth, produce honeydew, and support sooty mold.",
+
+              monitoringGuidance:
+                "Inspect new growth and undersides of leaves while preserving beneficial predators.",
+
+              managementNotes:
+                "Strong water sprays or insecticidal soap labeled for the crop may help on small plantings, but treatment should avoid unnecessary harm to pollinators."
+            },
+
+            {
+              commonName:
+                "Stink Bugs",
+
+              scientificName:
+                null,
+
+              affectedParts: [
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Feeding may damage developing kernels and reduce seed quality.",
+
+              monitoringGuidance:
+                "Inspect heads during seed development.",
+
+              managementNotes:
+                "Avoid spraying open flowers when bees are active and follow locally supported management guidance."
+            }
+          ],
+
+          pollinatorProtectionRequirements: [
+            "Avoid unnecessary insecticide use during flowering.",
+            "Do not apply insecticides directly to active bees.",
+            "Follow all pesticide labels.",
+            "Apply only products labeled for Sunflower and the target pest.",
+            "Observe pollinator-protection language on the label.",
+            "Use nonchemical and targeted methods where practical.",
+            "Treat during times of low pollinator activity only when a labeled treatment is necessary.",
+            "Prevent spray drift onto neighboring flowers and water sources."
+          ],
+
+          notes: [
+            "Insect importance varies substantially by region.",
+            "Commercial Sunflower pest complexes may not occur at damaging levels in every backyard planting.",
+            "Head-feeding insects can directly reduce the poultry-feed portion of the crop.",
+            "Insect feeding may also create entry points for fungal pathogens.",
+            "Not every damaged seed head is unsafe, but moldy or heavily contaminated material should not be fed.",
+            "Home growers should use local Extension identification resources before applying controls.",
+            "No pesticide recommendation should be stored without crop-label and regional verification."
+          ]
+        },
+
+        diseaseRisks: {
+          overallDiseasePressureScore:
+            4,
+
+          humidityDiseaseRiskScore:
+            5,
+
+          wetHeadDiseaseRiskScore:
+            5,
+
+          majorDiseases: [
+            {
+              commonName:
+                "Sclerotinia Head Rot",
+
+              pathogen:
+                "Sclerotinia sclerotiorum",
+
+              affectedParts: [
+                "Flower heads",
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Infected heads may develop soft watery decay, white fungal growth, shredded tissue, black survival structures, and severe seed contamination.",
+
+              favorableConditions: [
+                "Cool wet weather",
+                "Prolonged head wetness",
+                "Dense stands",
+                "Poor airflow",
+                "Frequent rainfall or overhead irrigation"
+              ],
+
+              prevention: [
+                "Use crop rotation.",
+                "Avoid prolonged head wetness.",
+                "Maintain airflow.",
+                "Avoid excessive plant density.",
+                "Use resistant or tolerant hybrids where available.",
+                "Remove and discard severely infected heads.",
+                "Do not feed infected seed."
+              ]
+            },
+
+            {
+              commonName:
+                "Sclerotinia Stalk Rot",
+
+              pathogen:
+                "Sclerotinia sclerotiorum",
+
+              affectedParts: [
+                "Roots",
+                "Lower stems",
+                "Stalks"
+              ],
+
+              riskDescription:
+                "Plants may wilt, lodge, or break as infected stem tissue decays.",
+
+              favorableConditions: [
+                "Moist soil",
+                "Cool to moderate temperatures",
+                "History of susceptible broadleaf crops",
+                "Poor rotation"
+              ],
+
+              prevention: [
+                "Rotate away from susceptible broadleaf hosts.",
+                "Improve drainage.",
+                "Avoid excessive irrigation.",
+                "Remove diseased plants.",
+                "Do not compost heavily infected residue unless the composting process reliably destroys disease structures."
+              ]
+            },
+
+            {
+              commonName:
+                "Downy Mildew",
+
+              pathogen:
+                "Plasmopara halstedii",
+
+              affectedParts: [
+                "Roots",
+                "Stems",
+                "Leaves",
+                "Growing points"
+              ],
+
+              riskDescription:
+                "Systemic infection may stunt plants, distort growth, produce pale leaves, and prevent useful head development.",
+
+              favorableConditions: [
+                "Cool wet soil",
+                "Poor drainage",
+                "Saturated establishment conditions"
+              ],
+
+              prevention: [
+                "Use resistant cultivars where locally appropriate.",
+                "Plant clean seed.",
+                "Avoid saturated soil.",
+                "Use crop rotation.",
+                "Remove severely affected plants."
+              ]
+            },
+
+            {
+              commonName:
+                "Sunflower Rust",
+
+              pathogen:
+                "Puccinia helianthi",
+
+              affectedParts: [
+                "Leaves",
+                "Stems",
+                "Bracts"
+              ],
+
+              riskDescription:
+                "Rust pustules reduce photosynthetic leaf area and may reduce seed filling when infection is severe.",
+
+              favorableConditions: [
+                "Leaf wetness",
+                "Moderate temperatures",
+                "Volunteer Sunflowers",
+                "Susceptible cultivars"
+              ],
+
+              prevention: [
+                "Use resistant cultivars.",
+                "Control volunteers.",
+                "Maintain airflow.",
+                "Rotate crops.",
+                "Avoid unnecessary overhead irrigation."
+              ]
+            },
+
+            {
+              commonName:
+                "Phomopsis Stem Canker",
+
+              pathogen:
+                "Diaporthe helianthi and related Diaporthe species",
+
+              affectedParts: [
+                "Leaves",
+                "Petioles",
+                "Stems"
+              ],
+
+              riskDescription:
+                "Stem lesions may weaken plants, interfere with water movement, and increase lodging.",
+
+              favorableConditions: [
+                "Warm humid weather",
+                "Frequent rainfall",
+                "Infected residue",
+                "Dense crop canopy"
+              ],
+
+              prevention: [
+                "Use resistant cultivars where available.",
+                "Rotate crops.",
+                "Manage infected residue.",
+                "Maintain airflow.",
+                "Avoid excessive nitrogen and density."
+              ]
+            },
+
+            {
+              commonName:
+                "Verticillium Wilt",
+
+              pathogen:
+                "Verticillium dahliae",
+
+              affectedParts: [
+                "Roots",
+                "Vascular tissue",
+                "Leaves",
+                "Stems"
+              ],
+
+              riskDescription:
+                "Infected plants may show leaf yellowing, interveinal necrosis, reduced vigor, and poor seed filling.",
+
+              favorableConditions: [
+                "Infested soil",
+                "Susceptible cultivar",
+                "Repeated susceptible crops"
+              ],
+
+              prevention: [
+                "Use resistant cultivars where available.",
+                "Rotate with nonhost crops.",
+                "Avoid moving contaminated soil.",
+                "Remove severely affected plants."
+              ]
+            },
+
+            {
+              commonName:
+                "Alternaria Leaf and Stem Spot",
+
+              pathogen:
+                "Alternaria species",
+
+              affectedParts: [
+                "Leaves",
+                "Stems",
+                "Bracts",
+                "Heads"
+              ],
+
+              riskDescription:
+                "Dark lesions may expand during warm humid weather and contribute to defoliation, weakened stems, and head damage.",
+
+              favorableConditions: [
+                "Warm temperatures",
+                "High humidity",
+                "Frequent rainfall",
+                "Prolonged leaf wetness"
+              ],
+
+              prevention: [
+                "Maintain airflow.",
+                "Avoid unnecessary overhead irrigation.",
+                "Rotate crops.",
+                "Remove heavily infected residue.",
+                "Use resistant cultivars where available."
+              ]
+            },
+
+            {
+              commonName:
+                "Charcoal Rot",
+
+              pathogen:
+                "Macrophomina phaseolina",
+
+              affectedParts: [
+                "Roots",
+                "Lower stems"
+              ],
+
+              riskDescription:
+                "Plants may wilt, mature prematurely, weaken, and lodge under hot dry stress.",
+
+              favorableConditions: [
+                "Hot weather",
+                "Drought stress",
+                "High plant population",
+                "Root injury"
+              ],
+
+              prevention: [
+                "Reduce severe drought stress where irrigation is available.",
+                "Avoid excessive plant density.",
+                "Maintain balanced fertility.",
+                "Use rotation and locally adapted cultivars."
+              ]
+            },
+
+            {
+              commonName:
+                "Rhizopus Head Rot",
+
+              pathogen:
+                "Rhizopus species",
+
+              affectedParts: [
+                "Flower heads",
+                "Developing seed"
+              ],
+
+              riskDescription:
+                "Damaged heads may develop soft decay and fungal growth, particularly after insect, bird, or hail injury.",
+
+              favorableConditions: [
+                "Warm weather",
+                "Head injury",
+                "Insect feeding",
+                "Bird damage",
+                "Hail"
+              ],
+
+              prevention: [
+                "Reduce head injury.",
+                "Manage damaging insects where justified.",
+                "Protect heads from wildlife where practical.",
+                "Harvest mature damaged heads promptly.",
+                "Discard rotted heads."
+              ]
+            },
+
+            {
+              commonName:
+                "Powdery Mildew",
+
+              pathogen:
+                null,
+
+              affectedParts: [
+                "Leaves",
+                "Stems"
+              ],
+
+              riskDescription:
+                "White powdery fungal growth may reduce photosynthetic area, especially late in the season.",
+
+              favorableConditions: [
+                "Dense foliage",
+                "Poor airflow",
+                "Moderate temperatures",
+                "High humidity"
+              ],
+
+              prevention: [
+                "Provide adequate spacing.",
+                "Maintain airflow.",
+                "Avoid excessive nitrogen.",
+                "Remove heavily affected residue."
+              ]
+            }
+          ],
+
+          generalPrevention: [
+            "Select locally adapted disease-resistant cultivars.",
+            "Use clean untreated seed.",
+            "Rotate away from Sunflower and susceptible broadleaf hosts.",
+            "Control volunteer Sunflowers.",
+            "Maintain well-drained soil.",
+            "Avoid excessive plant density.",
+            "Avoid excessive nitrogen.",
+            "Reduce prolonged leaf and head wetness.",
+            "Use drip irrigation where practical.",
+            "Inspect plants regularly.",
+            "Remove severely diseased plants and heads.",
+            "Do not store diseased or moldy seed.",
+            "Clean tools and harvest containers.",
+            "Keep diseased residue away from poultry feed."
+          ],
+
+          feedSafetyWarnings: [
+            "Do not feed heads with soft rot.",
+            "Do not feed visibly moldy seed.",
+            "Do not feed seed with musty or abnormal odor.",
+            "Do not blend diseased seed with sound seed.",
+            "Do not assume drying makes moldy seed safe.",
+            "Do not feed material contaminated with pesticide above labeled feed-use restrictions.",
+            "Do not feed seed from plants treated with products that prohibit feed use."
+          ],
+
+          notes: [
+            "Disease pressure varies by region, crop rotation, cultivar, humidity, rainfall, irrigation, and field history.",
+            "Head diseases are especially important because they directly contaminate the portion intended for poultry feeding.",
+            "Stem and root diseases may increase lodging even before obvious head symptoms appear.",
+            "Volunteer Sunflowers and infected residue may maintain disease between seasons.",
+            "Disease identification should be confirmed through local Extension or diagnostic resources where practical.",
+            "No fungicide schedule should be stored without current local label verification."
+          ]
+        },
+
+        harvestRisks: {
+          majorHarvestRisks: [
+            "Harvesting before seed is fully developed",
+            "Waiting until wildlife removes substantial seed",
+            "Harvesting wet heads",
+            "Leaving mature heads exposed to prolonged rain",
+            "Cutting moldy or rotted heads with sound heads",
+            "Losing seed during cutting and transport",
+            "Failing to label cultivars or harvest dates",
+            "Allowing cut heads to contact soil or poultry litter"
+          ],
+
+          maturityIndicators: [
+            "Back of head changing from green toward yellow or brown",
+            "Bracts drying and browning",
+            "Flower petals absent or dry",
+            "Seeds fully formed",
+            "Seed coats showing mature cultivar coloration",
+            "Heads beginning to droop",
+            "Plant tissue naturally senescing"
+          ],
+
+          falseMaturityWarnings: [
+            "Bird feeding does not prove every seed is fully mature.",
+            "A brown flower face does not guarantee safe storage dryness.",
+            "A dry outer head can conceal moist seed or internal mold.",
+            "Frost-killed plants may appear mature even when seed filling is incomplete.",
+            "Large seed size does not guarantee a filled kernel."
+          ],
+
+          prevention: [
+            "Inspect several seeds from different portions of the head.",
+            "Harvest sound heads before prolonged wet weather.",
+            "Use clean tools and containers.",
+            "Separate questionable heads immediately.",
+            "Catch loose seed with a tarp or tub.",
+            "Move heads promptly to a protected drying location.",
+            "Record harvest date and cultivar."
+          ],
+
+          notes: [
+            "Physiological maturity and safe storage dryness are different stages.",
+            "Heads may require substantial postharvest drying.",
+            "Harvest timing requires balancing maturity, weather, wildlife pressure, and disease risk.",
+            "A universal harvest date cannot be assigned."
+          ]
+        },
+
+        dryingRisks: {
+          overallDryingRiskScore:
+            4,
+
+          majorFailureModes: [
+            "Drying heads in piles",
+            "Insufficient airflow",
+            "High ambient humidity",
+            "Rain exposure",
+            "Condensation",
+            "Heads touching damp walls or floors",
+            "Drying in contaminated buildings",
+            "Insect infestation",
+            "Rodent access",
+            "Failing to turn or inspect heads",
+            "Sealing seed before it is adequately dry"
+          ],
+
+          safeDryingPrinciples: [
+            "Dry only sound heads.",
+            "Remove visibly diseased or rotten material.",
+            "Space heads so air can circulate.",
+            "Use clean racks, screens, or hanging methods.",
+            "Protect from rain and ground moisture.",
+            "Use fans where natural airflow is insufficient.",
+            "Inspect repeatedly for heating, odor, insects, and mold.",
+            "Remove seed only when heads and seed are sufficiently dry for the intended pathway.",
+            "Do not place moist seed in airtight storage."
+          ],
+
+          unsuitableDryingLocations: [
+            "Damp basements",
+            "Unventilated sheds",
+            "Areas containing fuel, pesticides, solvents, paint, or strong chemicals",
+            "Locations accessible to rodents",
+            "Locations accessible to poultry",
+            "Closed plastic bags",
+            "Direct contact with concrete floors",
+            "Outdoor areas exposed to dew or rain"
+          ],
+
+          directFacts: {
+            fieldDryingMayBeInsufficient:
+              true,
+
+            wholeHeadsRequireAirflow:
+              true,
+
+            looseSeedDriesFasterThanWholeHeads:
+              true,
+
+            humidClimateIncreasesDryingRisk:
+              true,
+
+            artificialAirflowMayBeHelpful:
+              true,
+
+            heatDryingRequiresTemperatureControl:
+              true,
+
+            visualDrynessAloneSufficient:
+              false,
+
+            exactBackyardSafeStorageMoistureKnown:
+              false,
+
+            notes: [
+              "Seed may remain moist even when the outer head appears dry.",
+              "Removing seed from the head can accelerate final drying.",
+              "Excessive drying heat can reduce seed quality and accelerate oil deterioration.",
+              "Household oven drying is not recommended without validated temperature and moisture guidance.",
+              "The planner should not assign one universal drying duration.",
+              "Safe storage depends on seed moisture, temperature, container type, storage duration, and oil quality."
+            ]
+          }
+        },
+
+        storageRisks: {
+          overallStorageRiskScore:
+            4,
+
+          majorFailureModes: [
+            "Moist seed sealed in containers",
+            "Condensation",
+            "Warm storage",
+            "Direct sunlight",
+            "Oxygen exposure after cracking or grinding",
+            "Storage insects",
+            "Rodent entry",
+            "Rodent urine or feces contamination",
+            "Mold growth",
+            "Seed heating",
+            "Rancidity",
+            "Chemical contamination",
+            "Mixing old and new seed without inspection",
+            "Failing to rotate stock"
+          ],
+
+          warningSigns: [
+            "Condensation",
+            "Warm container",
+            "Clumped seed",
+            "Visible mold",
+            "Musty odor",
+            "Paint-like odor",
+            "Sharp rancid odor",
+            "Bitter or abnormal flavor",
+            "Insect webbing",
+            "Live insects",
+            "Larvae",
+            "Rodent gnawing",
+            "Rodent droppings",
+            "Moisture staining",
+            "Discoloration"
+          ],
+
+          storagePriorities: [
+            "Cool temperature",
+            "Dry seed",
+            "Low humidity",
+            "Dark storage",
+            "Food-safe containers",
+            "Rodent resistance",
+            "Insect monitoring",
+            "Regular inspection",
+            "Stock rotation",
+            "Separation from chemicals"
+          ],
+
+          discardConditions: [
+            "Visible mold",
+            "Musty odor",
+            "Rancid odor",
+            "Heating",
+            "Rodent contamination",
+            "Chemical contamination",
+            "Unknown pesticide treatment",
+            "Wet seed with uncertain safety",
+            "Severe insect infestation",
+            "Soft or decayed seed",
+            "Questionable storage history"
+          ],
+
+          directFacts: {
+            wholeSeedStoresBetterThanGroundSeed:
+              true,
+
+            wholeSeedStoresBetterThanCrackedSeed:
+              true,
+
+            wholeSeedStoresBetterThanDehulledKernel:
+              true,
+
+            highOilContentIncreasesOxidationRisk:
+              true,
+
+            airtightStorageRequiresAdequatelyDrySeed:
+              true,
+
+            refrigerationCanExtendKernelQuality:
+              true,
+
+            freezingCanExtendKernelQuality:
+              true,
+
+            nonElectricStoragePossible:
+              true,
+
+            storageDurationGuaranteed:
+              false,
+
+            notes: [
+              "Whole intact seed provides natural protection to the oil-rich kernel.",
+              "Cracked, ground, or dehulled seed should be stored for shorter periods.",
+              "Cold storage may improve quality retention but is not necessary for every small quantity of properly dried whole seed.",
+              "Freezing or refrigeration should prevent moisture condensation during removal and warming.",
+              "Seed should be stored separately from fuel, pesticides, cleaners, paint, solvents, and animal medications.",
+              "No fixed household shelf life should be promised."
+            ]
+          }
+        },
+
+        contaminationRisks: {
+          majorContaminants: [
+            "Seed-treatment chemicals",
+            "Herbicide residues",
+            "Insecticide residues",
+            "Fungicide residues",
+            "Rodent urine",
+            "Rodent feces",
+            "Wild-bird droppings",
+            "Poultry droppings",
+            "Mold",
+            "Soil",
+            "Dust",
+            "Fuel",
+            "Oil",
+            "Paint",
+            "Solvents",
+            "Cleaning chemicals",
+            "Treated lumber residue"
+          ],
+
+          prevention: [
+            "Use untreated planting seed when seed may enter the feed supply.",
+            "Follow every pesticide label.",
+            "Observe harvest intervals and feed restrictions.",
+            "Keep harvest containers clean.",
+            "Do not place heads directly on soil or poultry litter.",
+            "Use dedicated food-safe storage containers.",
+            "Store away from chemicals.",
+            "Control rodents.",
+            "Discard contaminated material."
+          ],
+
+          treatedSeedWarning:
+            "Commercial planting seed may be treated with fungicides, insecticides, polymers, colorants, or other products and must not be fed unless the exact product label explicitly permits that use.",
+
+          pesticideWarning:
+            "A pesticide being legal for application to Sunflower does not automatically mean the harvested crop may be fed to poultry. The label must permit the intended crop, timing, harvest interval, and feed use.",
+
+          notes: [
+            "Unknown treatment history should be treated as unsuitable for feed.",
+            "Washing does not reliably remove systemic seed treatments or all pesticide residues.",
+            "Chemically treated seed should remain physically separated from harvested feed seed.",
+            "Color-treated seed should never be confused with edible seed."
+          ]
+        },
+
+        poultryFeedingRisks: {
+          majorFeedingRisks: [
+            "Excessive dietary fat",
+            "Excessive calorie intake",
+            "Complete-feed displacement",
+            "Calcium dilution",
+            "Vitamin dilution",
+            "Mineral dilution",
+            "Amino-acid imbalance",
+            "Selective feeding",
+            "Obesity",
+            "Reduced intake of balanced feed",
+            "Rancid-oil exposure",
+            "Mold exposure",
+            "Salt exposure from snack seed",
+            "Crop impaction risk from inappropriate whole-feed practices",
+            "Flock competition around whole heads",
+            "Spoilage of uneaten seed in damp litter"
+          ],
+
+          higherRiskBirdGroups: [
+            "Young chicks",
+            "Birds without appropriate grit access",
+            "Overweight birds",
+            "Birds on medically restricted diets",
+            "Birds already receiving many treats",
+            "Birds with reduced activity",
+            "Birds with digestive problems"
+          ],
+
+          prevention: [
+            "Keep complete poultry feed as the nutritional foundation.",
+            "Use Sunflower as a supplement.",
+            "Introduce gradually.",
+            "Observe body condition.",
+            "Observe droppings.",
+            "Provide appropriate grit where needed.",
+            "Avoid salted or flavored products.",
+            "Remove spoiled leftovers.",
+            "Use several feeding locations to reduce competition.",
+            "Do not feed moldy or rancid seed.",
+            "Do not assign a universal feeding percentage without ration formulation."
+          ],
+
+          directFacts: {
+            highEnergy:
+              true,
+
+            highFat:
+              true,
+
+            completeFeed:
+              false,
+
+            calciumAdequateForLayers:
+              false,
+
+            universalSafeInclusionPercentKnown:
+              false,
+
+            wholeHeadIntakeEasyToMeasure:
+              false,
+
+            looseSeedIntakeEasierToMeasure:
+              true,
+
+            youngChickStapleSuitable:
+              false,
+
+            notes: [
+              "Commercial inclusion studies use formulated diets and should not be converted directly into a backyard treat allowance.",
+              "The planner should request flock age, complete-feed intake, body condition, and feeding method before generating future guidance.",
+              "Whole-head enrichment and ration-ingredient use are separate feeding pathways."
+            ]
+          }
+        },
+
+        cropFailureScenarios: [
+          {
+            id:
+              "failed-emergence",
+
+            label:
+              "Failed Emergence",
+
+            likelyCauses: [
+              "Cold soil",
+              "Saturated soil",
+              "Crusting",
+              "Seed predation",
+              "Old seed",
+              "Excessive planting depth",
+              "Shallow planting into dry soil",
+              "Fertilizer injury"
+            ],
+
+            response:
+              "Identify the cause before replanting, correct seedbed or moisture problems, and use sound untreated seed."
+          },
+
+          {
+            id:
+              "vegetative-growth-no-useful-head",
+
+            label:
+              "Vegetative Growth Without a Useful Seed Head",
+
+            likelyCauses: [
+              "Unsuitable ornamental cultivar",
+              "Pollen-free cultivar",
+              "Late planting",
+              "Shade",
+              "Excess nitrogen",
+              "Frost",
+              "Heat stress",
+              "Drought",
+              "Disease",
+              "Bud damage"
+            ],
+
+            response:
+              "Review cultivar choice, planting date, sunlight, fertility, water, pollination, and pest history before repeating the planting."
+          },
+
+          {
+            id:
+              "large-head-poor-seed-fill",
+
+            label:
+              "Large Head With Poor Seed Fill",
+
+            likelyCauses: [
+              "Poor pollination",
+              "Extreme heat",
+              "Drought",
+              "Insect damage",
+              "Cultivar characteristics",
+              "Nutrient stress",
+              "Disease"
+            ],
+
+            response:
+              "Inspect seed fill across the head, review pollinator activity and reproductive-stage weather, and select a locally adapted seed-producing cultivar."
+          },
+
+          {
+            id:
+              "wildlife-consumed-harvest",
+
+            label:
+              "Wildlife Consumed the Harvest",
+
+            likelyCauses: [
+              "Delayed protection",
+              "Delayed harvest",
+              "Unsupported netting",
+              "Squirrel access",
+              "Bird pressure",
+              "Rodent pressure"
+            ],
+
+            response:
+              "Use earlier monitoring, individual head bags, supported netting, prompt harvest, and rodent-resistant drying and storage."
+          },
+
+          {
+            id:
+              "mold-during-drying",
+
+            label:
+              "Mold During Drying",
+
+            likelyCauses: [
+              "Heads harvested wet",
+              "Heads piled together",
+              "Insufficient airflow",
+              "High humidity",
+              "Disease already present",
+              "Rain exposure"
+            ],
+
+            response:
+              "Discard affected material, sanitize drying surfaces, improve spacing and airflow, and harvest only sound heads."
+          },
+
+          {
+            id:
+              "stored-seed-rancidity",
+
+            label:
+              "Stored Seed Became Rancid",
+
+            likelyCauses: [
+              "Warm storage",
+              "Long storage duration",
+              "Cracked or ground seed",
+              "Light exposure",
+              "Oxygen exposure",
+              "Moisture",
+              "Poor container choice"
+            ],
+
+            response:
+              "Discard rancid seed, improve storage conditions, store seed whole, and process only small quantities near feeding time."
+          },
+
+          {
+            id:
+              "crop-lodged-before-maturity",
+
+            label:
+              "Crop Lodged Before Maturity",
+
+            likelyCauses: [
+              "Wind",
+              "Heavy rain",
+              "Saturated soil",
+              "Weak stalks",
+              "Large heads",
+              "Excess nitrogen",
+              "Stem disease",
+              "Restricted roots"
+            ],
+
+            response:
+              "Support intact plants, harvest mature salvageable heads, discard diseased material, and modify cultivar, fertility, spacing, drainage, or support practices next season."
+          }
+        ],
+
+        directFacts: {
+          annualCropFailureRequiresReplanting:
+            true,
+
+          wildlifeMayCauseTotalHarvestLoss:
+            true,
+
+          diseaseMayMakeSeedUnsafe:
+            true,
+
+          moldySeedCanBeMadeSafeByDrying:
+            false,
+
+          rancidSeedSuitableForFeed:
+            false,
+
+          treatedPlantingSeedSuitableForFeed:
+            false,
+
+          cropResidueAlwaysSafeToCompost:
+            false,
+
+          volunteersPossible:
+            true,
+
+          undergroundInvasiveSpread:
+            false,
+
+          notes: [
+            "Sunflower risk is concentrated around wildlife protection, head disease, harvest timing, drying, storage, and excessive feeding.",
+            "The plant may be easy to grow while still being difficult to harvest efficiently.",
+            "A visually successful planting does not guarantee a usable poultry-feed harvest.",
+            "Sound-looking seed from a moldy head should be treated cautiously.",
+            "No planner recommendation should encourage feeding questionable material.",
+            "Future trials should record biological yield, wildlife loss, disease loss, harvest loss, drying loss, cleaning loss, storage loss, and actual flock consumption separately."
+          ]
+        }
+      },
+
+            seasonalRoles: {
+        spring: [
+          "Seed and cultivar selection",
+          "Soil testing",
+          "Seedbed preparation",
+          "Sod and weed control",
+          "Direct seeding after frost danger",
+          "Optional indoor seed starting in short-season climates",
+          "Transplanting young container-started seedlings",
+          "Germination",
+          "Seedling establishment",
+          "Early root development",
+          "Early weed control",
+          "Temporary frost protection",
+          "Seedling protection from chickens",
+          "Seedling protection from rabbits",
+          "Seedling protection from deer",
+          "Seedling protection from birds and rodents",
+          "Early irrigation where rainfall is inadequate",
+          "Thinning crowded seedlings",
+          "Mulch placement after establishment",
+          "Succession planting where the remaining season is sufficient"
+        ],
+
+        summer: [
+          "Rapid vegetative growth",
+          "Deep-root development",
+          "Canopy development",
+          "Stem strengthening",
+          "Bud formation",
+          "Flower-head development",
+          "Flowering",
+          "Pollen production",
+          "Nectar production",
+          "Pollinator support",
+          "Insect pollination",
+          "Seed set",
+          "Early seed development",
+          "Seed filling",
+          "Oil accumulation",
+          "Seasonal shade",
+          "Temporary privacy screening",
+          "Cut-flower harvest from appropriate cultivars",
+          "Weed suppression after canopy development",
+          "Drought monitoring",
+          "Supplemental irrigation",
+          "Staking tall or top-heavy plants",
+          "Lodging monitoring",
+          "Insect monitoring",
+          "Disease monitoring",
+          "Wildlife monitoring",
+          "Head protection from birds and squirrels"
+        ],
+
+        autumn: [
+          "Late seed filling",
+          "Physiological maturity",
+          "Natural plant senescence",
+          "Head drooping",
+          "Bract drying",
+          "Seed-coat maturation",
+          "Whole mature-head harvest",
+          "Fresh mature-head flock enrichment",
+          "Protected whole-head drying",
+          "Loose-seed removal",
+          "Seed cleaning",
+          "Seed sorting",
+          "Final seed drying",
+          "Whole-seed storage",
+          "Whole-head storage",
+          "Seed saving",
+          "Household-food seed selection",
+          "Cracked-seed preparation",
+          "Ground-seed preparation",
+          "Postharvest residue management",
+          "Stalk and empty-head composting",
+          "Root decomposition",
+          "Volunteer-seed monitoring",
+          "Wildlife-loss assessment",
+          "Harvest-loss assessment",
+          "Drying-loss assessment"
+        ],
+
+        winter: [
+          "Stored whole-seed supplementation",
+          "Stored whole-head enrichment",
+          "Measured black-oil Sunflower seed feeding",
+          "Measured confection-seed feeding",
+          "Measured dehulled-kernel feeding",
+          "Small-batch cracking",
+          "Small-batch grinding for formulated use",
+          "Cold-weather energy supplementation",
+          "Stored-seed inspection",
+          "Stored-head inspection",
+          "Rodent monitoring",
+          "Stored-insect monitoring",
+          "Moisture and condensation monitoring",
+          "Mold inspection",
+          "Rancidity inspection",
+          "Stock rotation",
+          "Seed inventory",
+          "Seed-order planning",
+          "Cultivar evaluation",
+          "Garden-layout planning",
+          "Wildlife-protection planning",
+          "Drying-equipment planning",
+          "Processing-equipment planning"
+        ],
+
+        plannerSeasonScores: {
+          spring:
+            4,
+
+          summer:
+            5,
+
+          autumn:
+            5,
+
+          winter:
+            4
+        },
+
+        directFacts: {
+          warmSeasonAnnual:
+            true,
+
+          springPlantingRole:
+            true,
+
+          autumnPlantingRole:
+            false,
+
+          winterLivingCoverPossible:
+            false,
+
+          summerGrowthRole:
+            true,
+
+          summerFloweringRole:
+            true,
+
+          summerPollinatorRole:
+            true,
+
+          lateSummerSeedDevelopmentRole:
+            true,
+
+          autumnHarvestRole:
+            true,
+
+          storedWinterFeedValue:
+            true,
+
+          yearRoundIndoorProductionPossible:
+            false,
+
+          physiologicalMaturityStage:
+            "The crop reaches physiological maturity after flowering and seed filling when seed dry matter accumulation is substantially complete, the back of the head changes from green toward yellow, and the bracts begin turning brown.",
+
+          maturityIndicators: [
+            "Back of the head changing from green toward yellow or brown",
+            "Bracts drying and turning brown",
+            "Flower petals dry or absent",
+            "Seeds fully formed",
+            "Seed coats displaying mature cultivar coloration",
+            "Heads drooping downward",
+            "Leaves and stalk naturally senescing"
+          ],
+
+          approximatePhysiologicalMaturityAfterBloomDaysMinimum:
+            30,
+
+          approximatePhysiologicalMaturityAfterBloomDaysMaximum:
+            45,
+
+          harvestDrynessOccursAfterPhysiologicalMaturity:
+            true,
+
+          fieldDryingMayContinueAfterPhysiologicalMaturity:
+            true,
+
+          protectedPostharvestDryingMayBeRequired:
+            true,
+
+          grainHarvestEndsAnnualCycle:
+            true,
+
+          rootAndResidueBenefitsContinueAfterHarvest:
+            true,
+
+          winterStorageRequiresAdequateDrying:
+            true,
+
+          notes: [
+            "Sunflower is planted during spring after damaging frost danger has passed and soil has warmed sufficiently for dependable germination.",
+            "The crop's strongest living-season role occurs during summer.",
+            "Vegetative growth, flowering, pollinator activity, seed set, and much of seed filling occur during summer in most temperate production systems.",
+            "The timing of flowering and maturity varies substantially by cultivar, planting date, latitude, temperature, moisture, and growing-season length.",
+            "Early cultivars may reach maturity while summer conditions remain warm.",
+            "Late cultivars may continue seed filling into autumn.",
+            "Sunflower does not provide a dependable autumn-seeded or winter-living crop pathway.",
+            "The crop is frost sensitive and should not be classified as winter cover.",
+            "Physiological maturity occurs before seed is necessarily dry enough for sealed storage.",
+            "The retained approximate 30-to-45-day interval after bloom is a general reference window and not a universal cultivar guarantee.",
+            "The planner should distinguish first flowering, full flowering, end of flowering, physiological maturity, harvest maturity, and safe storage dryness.",
+            "Head-back color, bract condition, seed fill, seed-coat color, and natural plant senescence are more useful maturity indicators than calendar date alone.",
+            "A frost-killed plant may appear dry while the seed remains immature or moist.",
+            "Wild birds and squirrels may begin feeding before the entire head reaches ideal harvest maturity.",
+            "Harvest timing often requires balancing seed maturity against wildlife loss, disease, rainfall, and head-rot risk.",
+            "Sound mature heads can be harvested for immediate or near-immediate enrichment.",
+            "Heads intended for storage usually require additional protected drying.",
+            "Loose seed generally dries more quickly than seed retained within an intact head.",
+            "Autumn rainfall and humidity may make protected drying necessary.",
+            "Winter value comes from stored seed and stored heads rather than living plants.",
+            "Whole dry seed can be stored without electricity when adequately dried and protected from moisture, insects, rodents, heat, and contamination.",
+            "Cracked, ground, and dehulled seed should be processed in smaller quantities because exposed oil deteriorates more rapidly.",
+            "The annual crop must be replanted each spring.",
+            "Roots and crop residue may continue contributing organic matter after harvest.",
+            "Stalks and empty heads may provide compost carbon or garden residue where disease and contamination do not make reuse inappropriate.",
+            "Future planner trials should record planting date, emergence date, first-bud date, first-flower date, full-flower date, physiological-maturity date, harvest date, drying duration, and storage date separately."
+          ]
+        }
+      },
+
+            usePaths: [
+        {
+          id:
+            "fresh-mature-seed-head",
+
+          label:
+            "Fresh Mature Sunflower Seed Head",
+
+          description:
+            "A sound mature Sunflower head containing fully developed seed is harvested and offered relatively soon after cutting as seasonal pecking enrichment and an immediate source of energy-dense whole seed.",
+
+          primaryFeedRole:
+            "whole-head-energy-enrichment",
+
+          harvestProducts: [
+            "fresh-mature-seed-head",
+            "mature-in-shell-seed",
+            "seasonal-pecking-enrichment",
+            "energy-oriented-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-head",
+            "hung-seed-head",
+            "secured-seed-head",
+            "supervised-seasonal-enrichment",
+            "immediate-or-near-immediate-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "verify-seed-maturity",
+            "inspect-head",
+            "cut-seed-head",
+            "remove-diseased-material",
+            "remove-insect-damaged-material",
+            "remove-contaminated-material",
+            "offer-promptly"
+          ],
+
+          optionalProcessingTasks: [
+            "short-term-air-dry",
+            "trim-excess-stalk",
+            "divide-large-head",
+            "secure-head-for-hanging",
+            "weigh-head-before-feeding",
+            "weigh-head-after-feeding",
+            "record-flock-consumption",
+            "record-seed-waste"
+          ],
+
+          requiredEquipment: [
+            "hand-pruners-or-clean-harvest-knife"
+          ],
+
+          helpfulEquipment: [
+            "gloves",
+            "harvest-tarp",
+            "collection-tub",
+            "hanging-line",
+            "secure-head-holder",
+            "scale",
+            "wildlife-protection",
+            "individual-head-bag",
+            "bird-netting",
+            "stakes"
+          ],
+
+          harvestPattern:
+            "several-heads-as-they-reach-maturity",
+
+          harvestFrequencyCategory:
+            "short-seasonal-window",
+
+          storageMethods: [
+            "very-short-term-open-air-holding",
+            "protected-ventilated-holding"
+          ],
+
+          preferredStorageMethod:
+            "Offer promptly after harvest or hold only briefly in a clean, shaded, dry, well-ventilated location protected from rain, insects, rodents, poultry droppings, and chemical contamination.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Use only mature, sound heads with fully developed seed.",
+            "Do not feed heads showing soft rot, visible mold, musty odor, abnormal heating, extensive insect contamination, or chemical contamination.",
+            "A freshly harvested head may retain substantial moisture and must not be sealed in an airtight container.",
+            "Do not place a fresh head directly into damp poultry litter.",
+            "Remove uneaten portions before they become wet, moldy, heavily soiled, or contaminated with droppings.",
+            "Do not offer seed heads grown from chemically treated planting seed when treatment restrictions make harvested material unsuitable for feed.",
+            "Do not allow hanging cord, wire, mesh, or fastening material to create an entanglement hazard.",
+            "Whole-head feeding does not allow precise measurement of each bird's seed intake.",
+            "Sunflower seed is energy dense and should not displace nutritionally complete poultry feed."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-long-term-storage",
+            "requires-precise-individual-intake",
+            "wants-loose-measured-seed-only",
+            "declines-frequent-spoilage-inspection",
+            "has-no-clean-protected-holding-area",
+            "cannot-remove-uneaten-material",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only"
+          ],
+
+          directFacts: {
+            matureSeedRequired:
+              true,
+
+            physiologicalMaturityRequired:
+              true,
+
+            safeStorageDrynessRequired:
+              false,
+
+            immediateFeedingSuitable:
+              true,
+
+            longTermStorageSuitable:
+              false,
+
+            wholeHeadEnrichment:
+              true,
+
+            precisePortionControl:
+              false,
+
+            seedRemovalRequired:
+              false,
+
+            shellRemovalRequired:
+              false,
+
+            additionalDryingMayImproveHandling:
+              true,
+
+            flockCompetitionPossible:
+              true,
+
+            beddingWastePossible:
+              true,
+
+            wildlifeProtectionBeforeHarvestImportant:
+              true,
+
+            primaryAdvantages: [
+              "Very little processing",
+              "High flock-enrichment value",
+              "Natural pecking behavior",
+              "No seed-removal requirement",
+              "No grinding requirement",
+              "Useful for small flocks",
+              "Allows use before complete long-term storage drying"
+            ],
+
+            primaryLimitations: [
+              "Very short holding life",
+              "High moisture sensitivity",
+              "Poor portion precision",
+              "Potential flock competition",
+              "Potential seed loss into litter",
+              "Large storage volume if not fed promptly",
+              "Requires repeated inspection",
+              "Not appropriate as complete feed"
+            ],
+
+            notes: [
+              "This pathway uses a mature seed-filled head rather than an immature green flower head.",
+              "Physiological maturity and safe sealed-storage dryness are different conditions.",
+              "A head may be sufficiently mature for prompt flock use while still being too moist for long-term storage.",
+              "Fresh mature heads should be inspected before and during flock use.",
+              "Large heads may be divided among several feeding locations to reduce crowding.",
+              "Several smaller feeding stations may improve access for subordinate birds.",
+              "Hanging the head can increase pecking activity and reduce direct contact with litter.",
+              "The head should be secured at a safe height and with fastening material that cannot entangle birds.",
+              "A head placed on a clean dry surface may be suitable where hanging is impractical.",
+              "Fresh heads should not remain exposed to rain or overnight dew.",
+              "Seed scattered into damp litter may spoil and attract rodents.",
+              "Whole-head use substantially reduces harvest processing compared with loose-seed use.",
+              "The pathway is especially suitable where enrichment is valued more than precise ration measurement.",
+              "Actual consumption and waste should be measured during future Backyard Chicken Planner trials."
+            ]
+          }
+        },
+
+        {
+          id:
+            "whole-dried-seed-head",
+
+          label:
+            "Whole Dried Sunflower Seed Head",
+
+          description:
+            "A mature Sunflower head is harvested, inspected, dried thoroughly under protected and ventilated conditions, and stored intact for later pecking enrichment and whole-seed consumption.",
+
+          primaryFeedRole:
+            "stored-whole-head-energy-enrichment",
+
+          harvestProducts: [
+            "dried-whole-seed-head",
+            "mature-in-shell-seed",
+            "stored-pecking-enrichment",
+            "winter-energy-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-dried-seed-head",
+            "hung-dried-head",
+            "secured-dried-head",
+            "winter-enrichment",
+            "stored-seasonal-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "verify-seed-maturity",
+            "inspect-head",
+            "cut-seed-head",
+            "remove-diseased-material",
+            "remove-insect-damaged-material",
+            "dry-under-protection",
+            "maintain-airflow",
+            "turn-or-reposition-head",
+            "inspect-during-drying",
+            "verify-dryness",
+            "store"
+          ],
+
+          optionalProcessingTasks: [
+            "trim-excess-stalk",
+            "brush-away-loose-debris",
+            "remove-loose-seed",
+            "weigh-before-storage",
+            "label-cultivar",
+            "label-harvest-date",
+            "label-storage-date",
+            "divide-large-head",
+            "secure-for-hanging",
+            "freeze-for-insect-control-when-appropriate",
+            "record-storage-loss",
+            "record-flock-consumption",
+            "record-seed-waste"
+          ],
+
+          requiredEquipment: [
+            "hand-pruners-or-clean-harvest-knife",
+            "protected-drying-location",
+            "ventilated-drying-surface-or-hanging-system"
+          ],
+
+          helpfulEquipment: [
+            "gloves",
+            "harvest-tarp",
+            "collection-tub",
+            "drying-rack",
+            "drying-screen",
+            "hanging-hooks",
+            "circulation-fan",
+            "moisture-meter",
+            "food-safe-storage-container",
+            "rodent-resistant-storage-container",
+            "insect-resistant-storage-container",
+            "head-storage-rack",
+            "scale",
+            "labels",
+            "bird-netting",
+            "individual-head-bags"
+          ],
+
+          harvestPattern:
+            "several-heads-during-a-short-seasonal-window",
+
+          harvestFrequencyCategory:
+            "single-seasonal-or-short-staggered-window",
+
+          storageMethods: [
+            "whole-head-dry-storage",
+            "ventilated-rodent-resistant-storage",
+            "cool-dark-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "Store fully dried sound heads in a cool, dark, dry, clean, ventilated, insect-monitored, and rodent-resistant location away from fuel, pesticides, solvents, cleaners, paint, moisture, and direct sunlight.",
+
+          storageDurationCategory:
+            "medium",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Dry only mature, sound heads.",
+            "Do not store heads showing soft rot, visible mold, musty odor, abnormal heating, extensive insect contamination, or chemical contamination.",
+            "Do not pile moist heads together.",
+            "Do not seal insufficiently dried heads in airtight plastic bags or containers.",
+            "Inspect the center and back of the head because internal moisture or decay may not be visible from the seed face.",
+            "Protect drying and stored heads from rodents, wild birds, insects, poultry droppings, rain, condensation, and chemical contamination.",
+            "Discard heads that become moldy, musty, heated, rancid, rodent-contaminated, or otherwise questionable.",
+            "Freezing may control some insects but does not make moldy, rancid, chemically contaminated, or rodent-contaminated material safe.",
+            "Allow frozen heads to return to feeding temperature without condensation forming on the seed.",
+            "Remove uneaten flock portions before they become wet or contaminated.",
+            "Sunflower seed remains a supplement rather than a complete poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-drying",
+            "has-no-protected-drying-area",
+            "has-no-airflow",
+            "has-no-dry-storage",
+            "has-no-rodent-protected-storage",
+            "declines-storage-inspection",
+            "requires-precise-individual-intake",
+            "wants-minimum-storage-volume",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only"
+          ],
+
+          directFacts: {
+            matureSeedRequired:
+              true,
+
+            physiologicalMaturityRequired:
+              true,
+
+            safeStorageDrynessRequired:
+              true,
+
+            wholeHeadEnrichment:
+              true,
+
+            longTermStorageMorePracticalThanFreshHead:
+              true,
+
+            storageVolumeGreaterThanLooseSeed:
+              true,
+
+            seedRemovalRequired:
+              false,
+
+            shellRemovalRequired:
+              false,
+
+            dryingAirflowRequired:
+              true,
+
+            repeatedDryingInspectionRequired:
+              true,
+
+            sealedStorageBeforeDryingSuitable:
+              false,
+
+            nonElectricStoragePossible:
+              true,
+
+            rodentProtectionRequired:
+              true,
+
+            insectMonitoringRequired:
+              true,
+
+            rancidityMonitoringRequired:
+              true,
+
+            primaryAdvantages: [
+              "Retains whole-head enrichment value",
+              "Avoids seed-removal labor",
+              "Extends crop usefulness into winter",
+              "Can be stored without electricity",
+              "Whole seed remains protected by the hull",
+              "Suitable for small-flock seasonal storage"
+            ],
+
+            primaryLimitations: [
+              "Requires protected drying",
+              "Requires more storage volume than loose seed",
+              "Difficult to verify internal dryness",
+              "High rodent attraction",
+              "Stored-insect risk",
+              "Mold risk",
+              "Rancidity risk",
+              "Poor portion precision",
+              "Repeated inspection required"
+            ],
+
+            notes: [
+              "Whole dried heads preserve the crop's strongest enrichment pathway while extending availability beyond harvest season.",
+              "The seed face, back of the head, internal head tissue, and remaining stalk tissue may dry at different rates.",
+              "Heads should be spaced rather than piled.",
+              "A rack, screen, or hanging system should permit air movement around the head.",
+              "A fan may be helpful during humid weather.",
+              "Heat should not be applied without validated temperature control.",
+              "Direct contact with damp concrete, soil, walls, or floors should be avoided.",
+              "Drying locations must be free from fuel, pesticides, solvents, paint, cleaners, and other contaminants.",
+              "Stored heads require more space than an equivalent amount of loose seed.",
+              "Whole-head storage may be practical for a few heads but inefficient for a large crop.",
+              "Rodents can damage heads and contaminate otherwise sound seed.",
+              "Stored heads should be inspected regularly for moisture, heating, mold, insects, rodent damage, and abnormal odor.",
+              "Heads should be rotated so older material is used first.",
+              "A universal backyard storage duration is not supported.",
+              "Actual storage life depends on initial dryness, ambient humidity, temperature, airflow, pest pressure, oil stability, and container or rack design.",
+              "Future trials should compare stored-head weight, seed recovery, flock consumption, waste, and spoilage with cleaned loose-seed storage."
+            ]
+          }
+        },
+
+                {
+          id:
+            "loose-dried-seed",
+
+          label:
+            "Cleaned Loose Dried Sunflower Seed",
+
+          description:
+            "Mature Sunflower heads are harvested and dried, after which the whole in-shell seeds are removed, screened, cleaned, sorted, dried to a storage-suitable condition, and stored for measured supplemental feeding.",
+
+          primaryFeedRole:
+            "measured-whole-seed-energy-supplement",
+
+          harvestProducts: [
+            "cleaned-whole-in-shell-seed",
+            "measured-energy-supplement",
+            "stored-oilseed",
+            "winter-supplement",
+            "planting-seed-when-suitable"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-loose-whole-seed",
+            "scattered-enrichment",
+            "mixed-with-other-appropriate-supplements",
+            "small-quantity-hand-feeding",
+            "winter-energy-supplement",
+            "seed-reserved-for-later-cracking",
+            "seed-reserved-for-later-grinding"
+          ],
+
+          requiredProcessingTasks: [
+            "verify-seed-maturity",
+            "inspect-heads",
+            "cut-seed-heads",
+            "remove-diseased-heads",
+            "dry-heads",
+            "maintain-airflow",
+            "inspect-during-drying",
+            "remove-seed-from-heads",
+            "screen-seed",
+            "remove-chaff",
+            "remove-empty-seed",
+            "remove-damaged-seed",
+            "remove-moldy-seed",
+            "remove-insect-contaminated-seed",
+            "remove-foreign-material",
+            "final-dry-seed",
+            "verify-storage-suitability",
+            "store"
+          ],
+
+          optionalProcessingTasks: [
+            "separate-seed-by-cultivar",
+            "separate-seed-by-head",
+            "winnow-seed",
+            "hand-sort-seed",
+            "weigh-cleaned-seed",
+            "measure-cleaning-loss",
+            "measure-empty-seed-percentage",
+            "measure-damaged-seed-percentage",
+            "measure-moisture",
+            "freeze-for-insect-control-when-appropriate",
+            "label-cultivar",
+            "label-harvest-date",
+            "label-cleaning-date",
+            "label-storage-date",
+            "reserve-suitable-seed-for-planting",
+            "record-storage-loss",
+            "record-flock-consumption"
+          ],
+
+          requiredEquipment: [
+            "hand-pruners-or-clean-harvest-knife",
+            "protected-drying-location",
+            "ventilated-drying-surface-or-hanging-system",
+            "clean-seed-collection-container",
+            "food-safe-storage-container"
+          ],
+
+          helpfulEquipment: [
+            "gloves",
+            "harvest-tarp",
+            "collection-tub",
+            "drying-rack",
+            "drying-screen",
+            "circulation-fan",
+            "seed-removal-screen",
+            "cleaning-sieve",
+            "winnowing-screen",
+            "winnowing-basket",
+            "box-fan-for-winnowing",
+            "moisture-meter",
+            "scale",
+            "rodent-resistant-storage-container",
+            "insect-resistant-storage-container",
+            "labels",
+            "scoop",
+            "measuring-cup",
+            "individual-head-bags",
+            "bird-netting"
+          ],
+
+          harvestPattern:
+            "seasonal-head-harvest-followed-by-batch-seed-removal",
+
+          harvestFrequencyCategory:
+            "single-seasonal-or-short-staggered-window",
+
+          storageMethods: [
+            "whole-seed-dry-storage",
+            "sealed-food-safe-container-after-adequate-drying",
+            "rodent-resistant-container-storage",
+            "cool-dark-dry-storage",
+            "freezer-storage-for-small-quantities"
+          ],
+
+          preferredStorageMethod:
+            "Store adequately dried, cleaned, intact whole seed in labeled food-safe and rodent-resistant containers in a cool, dark, dry location protected from insects, condensation, heat, sunlight, chemicals, and repeated temperature fluctuation.",
+
+          storageDurationCategory:
+            "medium-to-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            5,
+
+          safetyWarnings: [
+            "Use only mature, clean, sound seed.",
+            "Do not store seed until it is adequately dry.",
+            "Do not mix wet or questionable seed with sound dry seed.",
+            "Discard moldy, musty, heated, rancid, chemically contaminated, or rodent-contaminated seed.",
+            "Do not assume that winnowing or washing makes moldy seed safe.",
+            "Do not feed chemically treated planting seed.",
+            "Keep harvested feed seed physically separated from treated planting seed.",
+            "Inspect stored seed regularly for condensation, clumping, insects, heating, mold, rodent damage, and abnormal odor.",
+            "Whole Sunflower seed is energy dense and should be measured rather than offered without limit.",
+            "Sunflower seed should not replace nutritionally complete poultry feed.",
+            "Established adult chickens may require access to appropriately sized insoluble grit when consuming whole seed.",
+            "Do not feed salted, seasoned, flavored, coated, or candy-style Sunflower seed."
+          ],
+
+          incompatibleUserTraits: [
+            "declines-seed-removal",
+            "declines-cleaning-and-sorting",
+            "has-no-protected-drying-area",
+            "has-no-dry-storage",
+            "has-no-rodent-resistant-storage",
+            "declines-storage-monitoring",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only",
+            "cannot-measure-supplemental-feed"
+          ],
+
+          directFacts: {
+            matureSeedRequired:
+              true,
+
+            physiologicalMaturityRequired:
+              true,
+
+            safeStorageDrynessRequired:
+              true,
+
+            wholeHeadDryingUsuallyPrecedesSeedRemoval:
+              true,
+
+            seedRemovalRequired:
+              true,
+
+            cleaningRequired:
+              true,
+
+            sortingRequired:
+              true,
+
+            shellRemovalRequired:
+              false,
+
+            wholeInShellSeedProduct:
+              true,
+
+            portionControlBetterThanWholeHead:
+              true,
+
+            storageVolumeLowerThanWholeHeads:
+              true,
+
+            storageLifeBetterThanCrackedSeed:
+              true,
+
+            storageLifeBetterThanGroundSeed:
+              true,
+
+            storageLifeBetterThanDehulledKernel:
+              true,
+
+            nonElectricStoragePossible:
+              true,
+
+            refrigerationOptional:
+              true,
+
+            freezingOptional:
+              true,
+
+            rodentProtectionRequired:
+              true,
+
+            insectMonitoringRequired:
+              true,
+
+            rancidityMonitoringRequired:
+              true,
+
+            suitableForLaterCracking:
+              true,
+
+            suitableForLaterGrinding:
+              true,
+
+            suitableForSeedSaving:
+              true,
+
+            seedSavingRequiresSuitableCultivar:
+              true,
+
+            primaryAdvantages: [
+              "Better portion control than whole heads",
+              "Lower storage volume than whole heads",
+              "Longer storage potential than cracked seed",
+              "Longer storage potential than ground seed",
+              "Natural hull protects the oil-rich kernel",
+              "Can be stored without electricity",
+              "Can be fed whole",
+              "Can be cracked or ground later",
+              "Can provide winter supplementation",
+              "May also provide planting seed when cultivar and seed quality are suitable"
+            ],
+
+            primaryLimitations: [
+              "Requires head drying",
+              "Requires seed removal",
+              "Requires cleaning",
+              "Requires sorting",
+              "Requires final drying",
+              "Empty seeds may be difficult to separate",
+              "High rodent attraction",
+              "Stored-insect risk",
+              "Mold risk",
+              "Rancidity risk",
+              "More labor than whole-head feeding",
+              "Not nutritionally complete"
+            ],
+
+            notes: [
+              "Loose whole seed is the most practical pathway when measured feeding and compact storage are higher priorities than whole-head enrichment.",
+              "Seed removal may be described as threshing at crop scale, although backyard growers often rub, brush, scrape, or screen seed from dry heads by hand.",
+              "Heads should be dry enough for efficient seed removal but the removed seed may still require additional drying before sealed storage.",
+              "Seed should be collected over a tarp, tray, screen, or clean tub to reduce loss and contamination.",
+              "Manual seed removal can produce dust, chaff, broken plant material, insects, and empty hulls.",
+              "Winnowing can remove lightweight chaff but may also blow away small sound seed if airflow is excessive.",
+              "Hand sorting may be required where empty seeds, damaged kernels, insect injury, or mold are present.",
+              "A seed that appears externally intact may contain a poorly filled or damaged kernel.",
+              "Cleaning does not correct internal mold, rancidity, pesticide contamination, or rodent contamination.",
+              "Whole in-shell seed generally stores better than dehulled, cracked, or ground Sunflower.",
+              "The hull reduces direct oxygen exposure to the oil-rich kernel.",
+              "Whole seed should remain dry during storage.",
+              "Seed sealed while too moist may heat or mold.",
+              "Food-safe containers should be clean, dry, labeled, and protected from rodents.",
+              "A sealed container provides rodent and moisture protection only when the seed was adequately dry before sealing.",
+              "Seed stored in a humid location may experience moisture migration or condensation during temperature changes.",
+              "Refrigeration or freezing may extend quality for small quantities.",
+              "Cold-stored seed should remain sealed while warming so moisture condenses on the container rather than directly on the seed.",
+              "Any seed that becomes damp after removal from cold storage should be dried or used promptly rather than returned directly to long-term storage.",
+              "Freezing may reduce some stored-insect risks but does not make moldy, rancid, chemically treated, or contaminated seed safe.",
+              "Stored seed should be inspected and older seed used before newer seed.",
+              "Whole loose seed is easier to weigh or measure than seed remaining on a head.",
+              "Measured flock intake remains difficult where seed is scattered and mixed with bedding or soil.",
+              "Several feeding locations may reduce competition.",
+              "Sunflower seed should remain supplemental to an appropriate complete poultry feed.",
+              "Future planner trials should measure head weight, recovered seed weight, cleaning loss, empty-seed loss, drying loss, storage loss, amount offered, amount consumed, and amount wasted."
+            ]
+          }
+        },
+
+        {
+          id:
+            "cracked-seed",
+
+          label:
+            "Cracked Sunflower Seed",
+
+          description:
+            "Clean, adequately dried whole Sunflower seed is mechanically cracked shortly before feeding so the hull is broken and the oil-rich kernel becomes more accessible while much of the original seed structure remains.",
+
+          primaryFeedRole:
+            "processed-energy-and-fat-supplement",
+
+          harvestProducts: [
+            "cracked-in-shell-seed",
+            "exposed-seed-kernel",
+            "broken-hull",
+            "measured-energy-supplement",
+            "short-storage-processed-oilseed"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-cracked-seed",
+            "mixed-supplement",
+            "small-batch-hand-feeding",
+            "formulated-ration-ingredient",
+            "short-term-winter-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-heads",
+            "dry-heads",
+            "remove-seed",
+            "clean-seed",
+            "sort-seed",
+            "verify-seed-dryness",
+            "inspect-whole-seed",
+            "crack-small-batch",
+            "inspect-cracked-product",
+            "feed-promptly-or-store-briefly"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-cracked-product",
+            "separate-excess-hull",
+            "weigh-whole-seed-before-cracking",
+            "weigh-cracked-product",
+            "record-processing-loss",
+            "mix-into-balanced-formulation",
+            "label-processing-date",
+            "refrigerate-short-term",
+            "freeze-small-batches"
+          ],
+
+          requiredEquipment: [
+            "clean-seed-collection-container",
+            "food-safe-storage-container",
+            "appropriate-seed-cracking-tool"
+          ],
+
+          helpfulEquipment: [
+            "small-grain-cracker",
+            "adjustable-roller-mill",
+            "hand-crank-grain-mill-with-coarse-setting",
+            "screen",
+            "sieve",
+            "scale",
+            "measuring-cup",
+            "scoop",
+            "refrigerator",
+            "freezer",
+            "dated-storage-container",
+            "dust-control-equipment"
+          ],
+
+          harvestPattern:
+            "whole-seed-stored-seasonally-and-cracked-in-small-batches",
+
+          harvestFrequencyCategory:
+            "processed-as-needed",
+
+          storageMethods: [
+            "very-short-term-cool-dry-storage",
+            "short-term-refrigerated-storage",
+            "small-batch-freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "Store most of the crop as intact whole seed and crack only the amount expected to be used promptly. Keep any cracked remainder in a clean, sealed, labeled container under cool conditions and inspect before feeding.",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Crack only clean, dry, sound whole seed.",
+            "Do not crack moldy, musty, rancid, heated, insect-contaminated, rodent-contaminated, or chemically treated seed.",
+            "Cracking does not make unsafe seed suitable for feeding.",
+            "Cracked seed oxidizes more rapidly than intact whole seed.",
+            "Prepare small batches and use promptly.",
+            "Discard cracked seed that develops stale, bitter, sharp, paint-like, or otherwise abnormal odor or flavor.",
+            "Keep processing equipment clean, dry, and free from lubricants, metal fragments, old feed residue, and chemical contamination.",
+            "Do not use machinery that introduces non-food-safe oil or grease into the seed.",
+            "Fine dust may irritate eyes and lungs.",
+            "Cracked seed remains energy dense and should not displace complete poultry feed.",
+            "Commercial ration inclusion rates should not be converted directly into an unrestricted backyard feeding amount."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-cracking-equipment",
+            "declines-small-batch-processing",
+            "requires-long-room-temperature-storage",
+            "declines-equipment-cleaning",
+            "requires-zero-dust-processing",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only",
+            "cannot-measure-supplemental-feed"
+          ],
+
+          directFacts: {
+            wholeSeedRequiredBeforeProcessing:
+              true,
+
+            seedRemovalRequired:
+              true,
+
+            cleaningRequired:
+              true,
+
+            adequateDryingRequired:
+              true,
+
+            crackingRequired:
+              true,
+
+            grindingRequired:
+              false,
+
+            shellRemovalRequired:
+              false,
+
+            hullMayRemainPresent:
+              true,
+
+            kernelExposureIncreased:
+              true,
+
+            oilExposureIncreased:
+              true,
+
+            oxidationRiskHigherThanWholeSeed:
+              true,
+
+            storageLifeShorterThanWholeSeed:
+              true,
+
+            digestionAccessibilityMayIncrease:
+              true,
+
+            exactDigestibilityIncreaseKnown:
+              false,
+
+            rationFormulationRequiredForHighInclusion:
+              true,
+
+            primaryAdvantages: [
+              "Breaks the hull",
+              "Exposes part of the kernel",
+              "May reduce whole-seed selection difficulty",
+              "Can be measured accurately",
+              "Can be mixed with other ration ingredients",
+              "Requires less processing than fine grinding"
+            ],
+
+            primaryLimitations: [
+              "Requires specialized or adapted equipment",
+              "Adds processing labor",
+              "Creates dust and broken hull",
+              "Shortens storage life",
+              "Increases oxidation risk",
+              "May create uneven particle sizes",
+              "Can encourage selective feeding in a mixed ration",
+              "Still nutritionally incomplete"
+            ],
+
+            notes: [
+              "Cracked Sunflower occupies an intermediate processing pathway between whole seed and ground seed.",
+              "The objective is to break the hull without reducing all material to fine meal.",
+              "Cracking may produce whole kernels, partial kernels, broken hulls, intact seed, and fine particles in the same batch.",
+              "Equipment settings should be adjusted to avoid excessive pulverization.",
+              "Small-seeded oilseed cultivars may require different equipment settings than large confection seed.",
+              "A household blender is more likely to create uneven fragments and oily meal than a consistent cracked product.",
+              "Equipment designed for dry grain may not handle high-oil Sunflower identically to cereal grain.",
+              "Processing equipment should be tested with a small quantity.",
+              "Heat buildup during processing should be minimized.",
+              "Cracked seed should not be returned to the same long-duration storage schedule used for intact whole seed.",
+              "Most harvested seed should remain whole until shortly before use.",
+              "Cracked material may be screened to remove excessive fines.",
+              "Removing hull material changes nutrient density and should not be assumed unless the resulting fractions are measured.",
+              "Cracked seed can still be selectively consumed when mixed loosely with complete feed.",
+              "Top-dressing complete feed with high-value cracked seed may encourage birds to sort the ration.",
+              "Where cracked Sunflower becomes a meaningful ration ingredient, the complete diet should be formulated rather than estimated.",
+              "Future planner trials should compare whole-seed acceptance, cracked-seed acceptance, processing time, equipment loss, dust production, storage stability, feed selection, and flock response."
+            ]
+          }
+        },
+
+                {
+          id:
+            "dehulled-kernel",
+
+          label:
+            "Dehulled Sunflower Kernel",
+
+          description:
+            "Clean, mature, adequately dried Sunflower seed is mechanically dehulled so the fibrous outer hull is removed and the oil-rich kernel is retained for measured feeding, household food use, or inclusion in a properly formulated ration.",
+
+          primaryFeedRole:
+            "high-energy-dehulled-kernel-supplement",
+
+          harvestProducts: [
+            "dehulled-sunflower-kernel",
+            "sunflower-meat",
+            "high-energy-supplement",
+            "high-fat-supplement",
+            "household-food-kernel",
+            "formulated-ration-ingredient"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-dehulled-kernel",
+            "small-quantity-hand-feeding",
+            "mixed-supplement",
+            "formulated-ration-ingredient",
+            "household-food-use",
+            "short-term-cold-weather-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-heads",
+            "dry-heads",
+            "remove-seed",
+            "clean-seed",
+            "sort-seed",
+            "verify-seed-dryness",
+            "inspect-whole-seed",
+            "dehull-seed",
+            "separate-hulls-from-kernels",
+            "inspect-kernels",
+            "remove-damaged-kernels",
+            "remove-discolored-kernels",
+            "remove-moldy-kernels",
+            "store-briefly-or-feed-promptly"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-kernels",
+            "winnow-hulls",
+            "hand-sort-kernels",
+            "weigh-whole-seed-before-dehulling",
+            "weigh-kernels-after-dehulling",
+            "measure-hull-percentage",
+            "measure-processing-loss",
+            "refrigerate",
+            "freeze",
+            "label-processing-date",
+            "label-cultivar",
+            "reserve-household-food-portion",
+            "record-flock-consumption",
+            "record-kernel-waste"
+          ],
+
+          requiredEquipment: [
+            "clean-seed-collection-container",
+            "food-safe-storage-container",
+            "appropriate-sunflower-dehulling-method"
+          ],
+
+          helpfulEquipment: [
+            "small-seed-dehuller",
+            "adjustable-roller-mill",
+            "hand-crank-mill-with-suitable-setting",
+            "screen",
+            "sieve",
+            "winnowing-basket",
+            "box-fan-for-winnowing",
+            "scale",
+            "measuring-cup",
+            "scoop",
+            "refrigerator",
+            "freezer",
+            "dated-airtight-container",
+            "dust-control-equipment"
+          ],
+
+          harvestPattern:
+            "whole-seed-stored-seasonally-and-dehulled-in-small-batches",
+
+          harvestFrequencyCategory:
+            "processed-as-needed",
+
+          storageMethods: [
+            "very-short-term-cool-dry-storage",
+            "short-term-refrigerated-storage",
+            "small-batch-freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "Store most of the crop as intact whole seed and dehull only small quantities near the time of feeding or household use. Refrigerate or freeze dehulled kernels when they will not be used promptly.",
+
+          storageDurationCategory:
+            "very-short-to-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            true,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Dehull only clean, dry, sound whole seed.",
+            "Do not dehull moldy, musty, rancid, heated, insect-contaminated, rodent-contaminated, or chemically treated seed.",
+            "Dehulling does not make unsafe seed suitable for food or feed.",
+            "Dehulled kernels oxidize more rapidly than whole in-shell seed.",
+            "Prepare small batches and use promptly.",
+            "Refrigerate or freeze kernels when extended holding is necessary.",
+            "Discard kernels with stale, bitter, sharp, paint-like, soapy, or otherwise abnormal odor or flavor.",
+            "Keep dehulling equipment clean, dry, and free from lubricants, old feed, metal fragments, and chemical contamination.",
+            "Hull fragments may create dust and should not be inhaled.",
+            "Removing hulls increases the energy and fat concentration per unit weight.",
+            "Dehulled kernels should be measured carefully and should not displace complete poultry feed.",
+            "Commercial human snack kernels may contain salt, seasoning, oil coatings, sweeteners, or flavorings and should not be substituted without label review."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-dehulling-equipment",
+            "declines-labor-intensive-processing",
+            "requires-long-room-temperature-storage",
+            "declines-refrigeration-or-freezing",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only",
+            "cannot-measure-supplemental-feed"
+          ],
+
+          directFacts: {
+            wholeSeedRequiredBeforeProcessing:
+              true,
+
+            seedRemovalRequired:
+              true,
+
+            cleaningRequired:
+              true,
+
+            adequateDryingRequired:
+              true,
+
+            dehullingRequired:
+              true,
+
+            hullRemoved:
+              true,
+
+            grindingRequired:
+              false,
+
+            kernelExposureMaximized:
+              true,
+
+            oilExposureIncreased:
+              true,
+
+            fiberReducedComparedWithWholeSeed:
+              true,
+
+            energyDensityIncreasedComparedWithWholeSeed:
+              true,
+
+            fatConcentrationIncreasedComparedWithWholeSeed:
+              true,
+
+            oxidationRiskHigherThanWholeSeed:
+              true,
+
+            storageLifeShorterThanWholeSeed:
+              true,
+
+            storageLifeShorterThanCrackedSeed:
+              true,
+
+            householdFoodPotential:
+              true,
+
+            rationFormulationRequiredForHighInclusion:
+              true,
+
+            exactBackyardDehullingEfficiencyKnown:
+              false,
+
+            primaryAdvantages: [
+              "Removes the fibrous hull",
+              "Provides direct access to the kernel",
+              "Increases edible nutrient concentration per unit weight",
+              "Improves household-food value",
+              "Allows accurate weighing",
+              "Can be incorporated into formulated feed"
+            ],
+
+            primaryLimitations: [
+              "Requires difficult specialized processing",
+              "May have low recovery efficiency at household scale",
+              "Creates hull waste and dust",
+              "Shortens storage life",
+              "Increases oxidation risk",
+              "Requires cold storage for best quality retention",
+              "Adds substantial labor",
+              "Still nutritionally incomplete"
+            ],
+
+            notes: [
+              "Dehulled kernels are substantially different from whole in-shell seed and should be treated as a separate planner pathway.",
+              "Removing the hull reduces fiber and concentrates the oil-rich kernel.",
+              "The same measured weight of dehulled kernel generally contains more usable energy and fat than the same weight of whole in-shell seed.",
+              "This increased concentration makes portion control more important.",
+              "Small-scale dehulling can be inefficient because kernels may break, remain partially hulled, or be lost with hull material.",
+              "Large confection seed may be easier to dehull than small oilseed types, but cultivar behavior varies.",
+              "A kitchen blender is not a reliable dehulling tool and may create oily meal, fine hull fragments, and uneven kernel damage.",
+              "A roller or purpose-built dehuller should be tested with a small batch.",
+              "Processing pressure should crack the hull while minimizing kernel damage.",
+              "Broken kernels oxidize faster than intact kernels.",
+              "Winnowing must be controlled carefully because light kernels may be lost with hulls.",
+              "Hand sorting may be required after mechanical dehulling.",
+              "Hull material can be composted where it is clean and free from disease, chemicals, and contamination.",
+              "Most harvested seed should remain in the hull until near the time of use.",
+              "Dehulled kernels should be protected from oxygen, heat, light, moisture, rodents, insects, and repeated warming and cooling.",
+              "Cold-stored kernels should remain sealed while warming to reduce condensation directly on the product.",
+              "Dehulled kernels may have strong household-food value, but food-grade sanitation standards are higher than ordinary livestock-feed handling.",
+              "Household-food use requires especially careful control of mold, insects, rodents, chemicals, equipment sanitation, and storage temperature.",
+              "Dehulled kernels can be incorporated into a formulated poultry ration, but their high fat content and altered fiber level must be accounted for.",
+              "They should not be sprinkled heavily over complete feed in a way that encourages selective eating.",
+              "Future planner trials should measure whole-seed input, kernel output, hull output, broken-kernel percentage, processing time, storage quality, household acceptance, flock intake, and waste."
+            ]
+          }
+        },
+
+        {
+          id:
+            "ground-seed-ingredient",
+
+          label:
+            "Ground Sunflower Seed Ingredient",
+
+          description:
+            "Clean, mature, adequately dried whole or dehulled Sunflower seed is ground into coarse meal for short-term use as an energy- and fat-rich ingredient within a properly formulated poultry ration.",
+
+          primaryFeedRole:
+            "formulated-high-energy-ground-ingredient",
+
+          harvestProducts: [
+            "ground-whole-sunflower-seed",
+            "ground-dehulled-sunflower-kernel",
+            "sunflower-meal-like-product",
+            "high-energy-ration-ingredient",
+            "high-fat-ration-ingredient"
+          ],
+
+          suitableFeedingMethods: [
+            "formulated-ration-ingredient",
+            "measured-coarse-ground-supplement",
+            "small-batch-mixed-feed",
+            "short-term-cold-weather-formulation"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-heads",
+            "dry-heads",
+            "remove-seed",
+            "clean-seed",
+            "sort-seed",
+            "verify-seed-dryness",
+            "inspect-seed",
+            "grind-small-batch",
+            "inspect-ground-product",
+            "mix-into-formulated-ration",
+            "feed-promptly-or-store-briefly"
+          ],
+
+          optionalProcessingTasks: [
+            "dehull-before-grinding",
+            "coarse-screen-ground-product",
+            "remove-excessive-fines",
+            "weigh-seed-before-grinding",
+            "weigh-ground-product",
+            "measure-processing-loss",
+            "measure-particle-size",
+            "label-processing-date",
+            "refrigerate-short-term",
+            "freeze-small-batches",
+            "laboratory-nutrient-testing",
+            "ration-formulation-review"
+          ],
+
+          requiredEquipment: [
+            "clean-seed-collection-container",
+            "food-safe-storage-container",
+            "appropriate-high-oil-seed-grinding-equipment",
+            "accurate-scale",
+            "ration-formulation-method"
+          ],
+
+          helpfulEquipment: [
+            "adjustable-grain-mill",
+            "hammer-mill-with-suitable-screen",
+            "roller-mill",
+            "coarse-screen",
+            "sieve",
+            "dust-collection-system",
+            "mixing-container",
+            "feed-mixer",
+            "refrigerator",
+            "freezer",
+            "dated-airtight-container",
+            "laboratory-feed-analysis"
+          ],
+
+          harvestPattern:
+            "whole-seed-stored-seasonally-and-ground-in-small-batches",
+
+          harvestFrequencyCategory:
+            "processed-as-needed",
+
+          storageMethods: [
+            "immediate-use",
+            "very-short-term-cool-dry-storage",
+            "short-term-refrigerated-storage",
+            "small-batch-freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "Store harvested Sunflower as intact whole seed and grind only the quantity needed for immediate or near-immediate ration preparation. Keep any remainder sealed, cool, dark, dry, and dated.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            3,
+
+          safetyWarnings: [
+            "Grind only clean, dry, sound seed.",
+            "Do not grind moldy, musty, rancid, heated, insect-contaminated, rodent-contaminated, or chemically treated seed.",
+            "Grinding does not make unsafe seed suitable for feeding.",
+            "Ground Sunflower oxidizes more rapidly than whole or cracked seed.",
+            "Prepare only small batches.",
+            "Discard ground product with stale, bitter, sharp, paint-like, soapy, or otherwise abnormal odor or flavor.",
+            "High-oil seed may smear, clog, overheat, or damage equipment not designed for it.",
+            "Processing heat can accelerate oxidation and reduce quality.",
+            "Fine dust may irritate eyes and lungs and may create a combustible-dust hazard in enclosed processing spaces.",
+            "Keep mills clean, dry, and free from lubricants, metal fragments, old feed, mold, and chemical contamination.",
+            "Ground Sunflower should not be used as an unrestricted top dressing.",
+            "A meaningful ration inclusion requires formulation for energy, protein, amino acids, fiber, fat, calcium, phosphorus, sodium, vitamins, and minerals.",
+            "Do not assume that a home-ground product has the same nutrient composition as commercial solvent-extracted Sunflower meal."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-grinding-equipment",
+            "has-no-ration-formulation-method",
+            "declines-small-batch-processing",
+            "requires-long-room-temperature-storage",
+            "declines-equipment-cleaning",
+            "requires-zero-dust-processing",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only",
+            "cannot-weigh-feed-ingredients"
+          ],
+
+          directFacts: {
+            wholeSeedOrKernelInputPossible:
+              true,
+
+            seedRemovalRequired:
+              true,
+
+            cleaningRequired:
+              true,
+
+            adequateDryingRequired:
+              true,
+
+            grindingRequired:
+              true,
+
+            dehullingOptional:
+              true,
+
+            particleSizeReduced:
+              true,
+
+            kernelExposureMaximized:
+              true,
+
+            oilExposureMaximized:
+              true,
+
+            oxidationRiskHigherThanWholeSeed:
+              true,
+
+            oxidationRiskHigherThanCrackedSeed:
+              true,
+
+            storageLifeShorterThanWholeSeed:
+              true,
+
+            storageLifeShorterThanCrackedSeed:
+              true,
+
+            rationFormulationRequired:
+              true,
+
+            equivalentToCommercialSunflowerMeal:
+              false,
+
+            exactNutrientCompositionKnown:
+              false,
+
+            laboratoryAnalysisRecommendedForPreciseFormulation:
+              true,
+
+            primaryAdvantages: [
+              "Can be mixed uniformly into a formulated ration",
+              "Reduces whole-seed sorting",
+              "Allows precise ingredient weighing",
+              "Can use whole seed or dehulled kernel",
+              "Provides concentrated energy and fat"
+            ],
+
+            primaryLimitations: [
+              "Requires suitable milling equipment",
+              "Creates dust",
+              "May overheat or smear because of high oil content",
+              "Has very short storage life",
+              "Requires ration formulation",
+              "Nutrient composition varies by cultivar and hull content",
+              "Not equivalent to commercial extracted meal",
+              "Unsuitable as a complete feed by itself"
+            ],
+
+            notes: [
+              "Ground homegrown Sunflower should not be confused with commercial Sunflower meal.",
+              "Commercial Sunflower meal is usually a by-product remaining after oil extraction and may have substantially less fat and different protein and fiber concentrations.",
+              "Grinding intact whole seed retains both hull and oil-rich kernel.",
+              "Grinding dehulled kernel produces a much higher-fat, lower-fiber product.",
+              "The planner must distinguish whole-seed meal from dehulled-kernel meal.",
+              "A nutrient value for one pathway should not be assigned automatically to the other.",
+              "Cultivar, seed fill, hull percentage, moisture, contamination, and processing method all affect composition.",
+              "High-oil seed may form paste or smear rather than flowing as a dry meal.",
+              "Coarse grinding may be more practical than fine grinding at backyard scale.",
+              "Repeated passes through a mill may generate excessive heat.",
+              "Equipment should be stopped if seed begins to heat, smear, or smell abnormal.",
+              "Ground product should be mixed and fed promptly.",
+              "Most stored harvest should remain whole until shortly before ration preparation.",
+              "A household blender may produce an inconsistent mixture of powder, hull fragments, intact seed, and oily paste.",
+              "Fine particles may separate from coarser ration ingredients during handling.",
+              "Pelleting or binding would require additional equipment and formulation beyond this use path.",
+              "Loose ground Sunflower mixed into feed may still separate if particle sizes differ substantially.",
+              "High-fat ground ingredients may reduce feed flow and storage stability.",
+              "Where ground Sunflower is used beyond a small occasional amount, the full ration should be reviewed by a qualified poultry nutrition resource.",
+              "Future planner trials should measure input weight, grinding loss, particle distribution, temperature rise, oil smearing, storage stability, ration mixing uniformity, bird selection, feed intake, body condition, and laying performance."
+            ]
+          }
+        },
+
+                {
+          id:
+            "sprouted-seed",
+
+          label:
+            "Sprouted Sunflower Seed",
+
+          description:
+            "Clean, viable, untreated Sunflower seed is soaked and germinated under controlled sanitary conditions until the seed coat splits and a short root or shoot emerges, after which the sprouts are rinsed, drained, inspected, and offered promptly as a fresh supplemental feed.",
+
+          primaryFeedRole:
+            "fresh-sprouted-enrichment-supplement",
+
+          harvestProducts: [
+            "sprouted-sunflower-seed",
+            "germinated-whole-seed",
+            "fresh-root-and-shoot-growth",
+            "short-cycle-indoor-supplement",
+            "winter-green-feed"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-fresh-sprouts",
+            "small-batch-flock-enrichment",
+            "mixed-fresh-supplement",
+            "winter-fresh-feed",
+            "supervised-tray-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "select-viable-untreated-seed",
+            "remove-damaged-seed",
+            "remove-moldy-seed",
+            "remove-foreign-material",
+            "sanitize-equipment",
+            "rinse-seed",
+            "soak-seed",
+            "drain-completely",
+            "rinse-repeatedly",
+            "maintain-airflow",
+            "monitor-temperature",
+            "monitor-odor",
+            "monitor-mold",
+            "harvest-promptly",
+            "feed-promptly",
+            "clean-equipment-after-use"
+          ],
+
+          optionalProcessingTasks: [
+            "pretest-germination",
+            "weigh-dry-seed",
+            "measure-soak-water",
+            "record-soak-duration",
+            "record-rinse-frequency",
+            "record-room-temperature",
+            "record-harvest-weight",
+            "record-germination-percentage",
+            "refrigerate-briefly",
+            "divide-batch-among-several-feeders",
+            "record-flock-consumption",
+            "record-spoilage-loss"
+          ],
+
+          requiredEquipment: [
+            "food-safe-soaking-container",
+            "food-safe-sprouting-container",
+            "draining-screen-or-perforated-tray",
+            "clean-water-supply"
+          ],
+
+          helpfulEquipment: [
+            "sprouting-jar",
+            "sprouting-lid",
+            "stackable-sprouting-trays",
+            "fine-mesh-screen",
+            "scale",
+            "thermometer",
+            "measuring-cup",
+            "refrigerator",
+            "clean-towel",
+            "dated-container",
+            "small-fan-for-room-airflow"
+          ],
+
+          harvestPattern:
+            "small-batches-grown-repeatedly-as-needed",
+
+          harvestFrequencyCategory:
+            "repeatable-short-cycle",
+
+          storageMethods: [
+            "immediate-feeding",
+            "very-short-term-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "Feed immediately after the final rinse and draining. When brief storage is necessary, refrigerate in a clean container that prevents contamination without trapping excessive free moisture.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            3,
+
+          safetyWarnings: [
+            "Use only untreated seed with a known feed or food-safe history.",
+            "Do not sprout chemically treated planting seed.",
+            "Do not use seed that is moldy, musty, rancid, rodent-contaminated, or chemically contaminated.",
+            "Warm moisture-rich sprouting conditions can support rapid bacterial and fungal growth.",
+            "Discard the entire batch if it develops slime, visible mold, sour odor, fermentation odor, unusual discoloration, excessive heat, or poor drainage.",
+            "Do not attempt to salvage a questionable batch by rinsing it more aggressively.",
+            "Do not allow seed to remain submerged after the soaking stage.",
+            "Standing water, compacted seed, and poor airflow increase spoilage risk.",
+            "Sprouting containers must be cleaned thoroughly between batches.",
+            "Fresh sprouts should not replace nutritionally complete poultry feed.",
+            "Feed only quantities the flock will consume promptly.",
+            "Remove uneaten sprouts before they become warm, dirty, fermented, or mixed into wet litter."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-rinse-repeatedly",
+            "has-no-clean-water-supply",
+            "has-no-sanitary-indoor-workspace",
+            "declines-daily-inspection",
+            "cannot-discard-questionable-batches",
+            "requires-long-storage",
+            "requires-nonperishable-feed",
+            "requires-complete-feed-replacement",
+            "feeding-immunocompromised-household-members-from-same-batch",
+            "frequently-forgets-time-sensitive-tasks"
+          ],
+
+          directFacts: {
+            viableSeedRequired:
+              true,
+
+            untreatedSeedRequired:
+              true,
+
+            germinationRequired:
+              true,
+
+            soakingRequired:
+              true,
+
+            repeatedRinsingRequired:
+              true,
+
+            completeDrainageRequired:
+              true,
+
+            airflowRequired:
+              true,
+
+            refrigerationOptionalForBriefHolding:
+              true,
+
+            longTermStorageSuitable:
+              false,
+
+            moldRiskHigherThanDrySeed:
+              true,
+
+            bacterialGrowthRiskHigherThanDrySeed:
+              true,
+
+            dryMatterYieldIncrease:
+              false,
+
+            freshWeightIncrease:
+              true,
+
+            waterWeightIncrease:
+              true,
+
+            nutrientCompositionChangesDuringGermination:
+              true,
+
+            completeFeed:
+              false,
+
+            universalSafeSproutingDurationKnown:
+              false,
+
+            universalSafeSoakDurationKnown:
+              false,
+
+            primaryAdvantages: [
+              "Short indoor production cycle",
+              "Can provide fresh feed during winter",
+              "Requires little growing space",
+              "Provides behavioral enrichment",
+              "May improve acceptance of stored seed",
+              "Can be produced repeatedly in small batches"
+            ],
+
+            primaryLimitations: [
+              "High sanitation requirement",
+              "High mold risk",
+              "High bacterial-growth risk",
+              "Requires repeated rinsing",
+              "Requires dependable drainage",
+              "Very short storage life",
+              "Fresh-weight gain is largely water",
+              "Does not create additional dry matter",
+              "Not nutritionally complete"
+            ],
+
+            notes: [
+              "Sprouting is a feed-processing pathway rather than a field-production pathway.",
+              "The dry seed supplies nearly all of the initial dry matter and stored energy used during early germination.",
+              "The increase in harvested fresh weight comes primarily from absorbed water.",
+              "Fresh-weight gain should not be interpreted as an equal increase in feed nutrients.",
+              "Some seed reserves are consumed through respiration during sprouting.",
+              "Nutrient concentrations may appear lower on a fresh-weight basis because water content rises sharply.",
+              "The planner should distinguish fresh weight from dry-matter yield.",
+              "Small batches are safer and easier to inspect than large dense batches.",
+              "Sunflower seed hulls may slow water penetration and produce uneven germination.",
+              "Seed size, cultivar, age, storage history, temperature, and oxygen availability affect germination rate.",
+              "A germination test should be completed before relying on stored seed for repeated sprouting.",
+              "Black-oil and confection types may behave differently during soaking and germination.",
+              "Seed should be rinsed before soaking to remove dust and debris.",
+              "After soaking, seed should drain freely rather than remain submerged.",
+              "Dense layers restrict airflow and increase heating and spoilage risk.",
+              "Sprouting containers should be protected from insects, rodents, poultry dust, and kitchen contamination.",
+              "Sprouts should be inspected at every rinse.",
+              "A fresh earthy seed odor may be normal, but sour, alcoholic, putrid, or musty odor is unacceptable.",
+              "Visible white root hairs may be mistaken for mold, but uncertain batches should be discarded rather than fed.",
+              "The pathway is labor intensive relative to feeding dry whole seed.",
+              "Sprouts should remain a supplemental feed rather than a substitute for a balanced ration.",
+              "Future planner trials should record dry-seed input, soak-water uptake, germination percentage, fresh harvest weight, dry-matter recovery, labor time, spoilage rate, flock intake, and uneaten waste."
+            ]
+          }
+        },
+
+        {
+          id:
+            "microgreen-or-young-shoot",
+
+          label:
+            "Sunflower Microgreens or Young Shoots",
+
+          description:
+            "Untreated viable Sunflower seed is germinated in shallow trays and grown for a short period into cotyledon-stage microgreens or young shoots, which are harvested above the growing medium or offered as a controlled living tray for flock enrichment.",
+
+          primaryFeedRole:
+            "fresh-young-shoot-and-green-enrichment",
+
+          harvestProducts: [
+            "sunflower-microgreens",
+            "sunflower-young-shoots",
+            "cotyledons",
+            "young-stems",
+            "short-cycle-living-tray",
+            "winter-green-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-microgreens",
+            "cut-young-shoots",
+            "measured-fresh-green-supplement",
+            "supervised-living-tray",
+            "winter-green-enrichment",
+            "small-batch-hand-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "select-viable-untreated-seed",
+            "remove-damaged-seed",
+            "sanitize-trays",
+            "prepare-clean-growing-medium",
+            "rinse-seed",
+            "soak-seed-when-used",
+            "sow-densely-but-not-excessively",
+            "maintain-moisture",
+            "maintain-airflow",
+            "provide-light-after-emergence",
+            "monitor-temperature",
+            "monitor-mold",
+            "monitor-odor",
+            "harvest-at-young-stage",
+            "rinse-cut-shoots-when-appropriate",
+            "feed-promptly",
+            "clean-trays-after-use"
+          ],
+
+          optionalProcessingTasks: [
+            "pretest-germination",
+            "weigh-dry-seed",
+            "record-seeding-density",
+            "record-growing-medium",
+            "record-soak-duration",
+            "record-blackout-duration",
+            "record-light-duration",
+            "record-growing-temperature",
+            "record-harvest-day",
+            "weigh-fresh-harvest",
+            "measure-unharvested-root-mat",
+            "refrigerate-cut-shoots-briefly",
+            "divide-among-several-feeding-locations",
+            "record-flock-consumption",
+            "record-tray-destruction",
+            "record-spoilage-loss"
+          ],
+
+          requiredEquipment: [
+            "shallow-food-safe-growing-tray",
+            "drainage-tray",
+            "clean-growing-medium",
+            "clean-water-supply",
+            "adequate-light-source"
+          ],
+
+          helpfulEquipment: [
+            "perforated-microgreen-tray",
+            "solid-bottom-catch-tray",
+            "food-safe-weighting-tray",
+            "spray-bottle",
+            "small-watering-can",
+            "grow-light",
+            "timer",
+            "small-fan",
+            "thermometer",
+            "scale",
+            "clean-scissors",
+            "harvest-knife",
+            "refrigerator",
+            "dated-storage-container"
+          ],
+
+          harvestPattern:
+            "small-trays-grown-repeatedly-as-needed",
+
+          harvestFrequencyCategory:
+            "repeatable-short-cycle",
+
+          storageMethods: [
+            "immediate-feeding",
+            "very-short-term-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "Feed cut shoots promptly after harvest. When brief storage is necessary, refrigerate clean, surface-dry shoots in a food-safe container that limits moisture accumulation and crushing.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Use only untreated seed with a known food- or feed-safe history.",
+            "Do not grow chemically treated planting seed for poultry or household consumption.",
+            "Use clean trays, clean water, and clean growing medium.",
+            "Do not use manure-contaminated soil, poultry litter, or unknown compost as an indoor microgreen medium.",
+            "Dense, warm, wet trays can develop mold, bacterial growth, fermentation, and root disease rapidly.",
+            "Discard trays with visible mold, slime, sour odor, fermentation odor, abnormal heating, or extensive seed decay.",
+            "Do not feed the growing medium unless it is known to be safe and intended for poultry access.",
+            "Coconut coir, paper fiber, synthetic mats, perlite, vermiculite, and other media should not be assumed edible.",
+            "Living trays can be scratched apart and spread medium through the coop.",
+            "Do not allow birds to consume plastic trays, mesh, labels, clips, or synthetic growing mats.",
+            "Cut shoots should be removed from contaminated roots or medium before feeding.",
+            "Fresh shoots should not replace complete poultry feed.",
+            "Remove uneaten shoots before they become wilted, slimy, soiled, or fermented."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-clean-indoor-growing-space",
+            "has-no-adequate-light",
+            "cannot-monitor-moisture-daily",
+            "declines-tray-sanitation",
+            "cannot-discard-questionable-trays",
+            "requires-long-storage",
+            "requires-zero-daily-labor",
+            "requires-complete-feed-replacement",
+            "plans-to-use-poultry-litter-as-growing-medium",
+            "cannot-prevent-consumption-of-synthetic-growing-media"
+          ],
+
+          directFacts: {
+            viableSeedRequired:
+              true,
+
+            untreatedSeedRequired:
+              true,
+
+            germinationRequired:
+              true,
+
+            growingMediumRequired:
+              true,
+
+            lightRequiredAfterEmergence:
+              true,
+
+            airflowRequired:
+              true,
+
+            repeatedWaterManagementRequired:
+              true,
+
+            cotyledonStageHarvestSuitable:
+              true,
+
+            trueLeafStageHarvestPossible:
+              true,
+
+            longTermStorageSuitable:
+              false,
+
+            moldRiskHigherThanFieldGrowing:
+              true,
+
+            freshWeightIncrease:
+              true,
+
+            waterWeightIncrease:
+              true,
+
+            dryMatterCreatedFromExternalFertilizerAtEarlyStage:
+              false,
+
+            seedReservesPrimaryEarlyGrowthSource:
+              true,
+
+            completeFeed:
+              false,
+
+            livingTraySuitable:
+              true,
+
+            cutShootFeedingSuitable:
+              true,
+
+            householdFoodPotential:
+              true,
+
+            universalHarvestDayKnown:
+              false,
+
+            universalSeedingDensityKnown:
+              false,
+
+            primaryAdvantages: [
+              "Produces fresh green material indoors",
+              "Short production cycle",
+              "High visual and behavioral enrichment value",
+              "Can be grown during winter",
+              "Requires little horizontal space",
+              "Allows repeated tray production",
+              "May have household-food value under food-safe production"
+            ],
+
+            primaryLimitations: [
+              "High seed requirement per tray",
+              "High sanitation requirement",
+              "High mold risk",
+              "Requires light",
+              "Requires daily moisture management",
+              "Very short storage life",
+              "Growing medium may create contamination or ingestion hazards",
+              "Living trays may be destroyed quickly",
+              "Fresh-weight yield is strongly influenced by water",
+              "Not nutritionally complete"
+            ],
+
+            notes: [
+              "Sunflower microgreens are generally grown more densely than field Sunflowers.",
+              "The pathway uses seed reserves to produce cotyledons and young stems.",
+              "The first broad seed leaves are cotyledons rather than mature true leaves.",
+              "Young shoots may be harvested near the cotyledon stage or after early true-leaf development.",
+              "Older shoots become more fibrous and may be less tender.",
+              "Harvest timing should be based on plant condition, sanitation, tenderness, and intended use rather than a universal day count.",
+              "Seed hulls may remain attached to emerging cotyledons.",
+              "A weighted tray or blackout cover may encourage uniform emergence, but trapped moisture and poor airflow can increase disease risk.",
+              "Weights and covers should be clean and removed when emergence requires light and airflow.",
+              "Sunflower seed is relatively large and may require pre-soaking for uniform tray emergence.",
+              "Excessively long soaking can reduce oxygen and increase fermentation risk.",
+              "Seeds should not sit in standing water after sowing.",
+              "Bottom watering may reduce leaf wetness but does not eliminate root-zone disease risk.",
+              "Trays require drainage.",
+              "Overwatering may produce weak growth, root decay, algae, fungus gnats, and mold.",
+              "Underwatering may cause uneven emergence and wilt.",
+              "Artificial light may be required during winter or in indoor spaces.",
+              "Insufficient light can produce pale, elongated, weak shoots.",
+              "Excess heat and humidity increase spoilage risk.",
+              "A small fan may improve room airflow but should not blow contaminated dust onto open trays.",
+              "Growing medium must be selected with the feeding method in mind.",
+              "Cutting shoots above the medium reduces ingestion of soil, roots, hull debris, and nonedible substrate.",
+              "Offering an entire living tray provides stronger enrichment but less control over medium consumption and waste.",
+              "Living trays should be supervised until the grower understands flock behavior.",
+              "Birds may destroy a tray rapidly by scratching rather than eating the shoots.",
+              "A protective grid may permit grazing while limiting digging, but the grid must not trap toes, heads, or beaks.",
+              "Indoor household-food production requires stricter sanitation than ordinary poultry-feed production.",
+              "The same tray should not be treated as human food after poultry have accessed it.",
+              "Microgreen yield should be evaluated on both fresh-weight and dry-matter bases.",
+              "Future planner trials should record seed input, germination percentage, tray area, growing medium, water use, light use, harvest day, fresh weight, dry matter, labor, spoilage, flock intake, tray damage, and medium loss."
+            ]
+          }
+        },
+
+                {
+          id:
+            "fodder-mat",
+
+          label:
+            "Sunflower Fodder Mat",
+
+          description:
+            "Untreated Sunflower seed is germinated and grown as a dense interconnected root-and-shoot mat that is harvested or presented as a living forage mat for supervised poultry enrichment.",
+
+          primaryFeedRole:
+            "fresh-living-fodder-supplement",
+
+          harvestProducts: [
+            "sunflower-fodder-mat",
+            "living-root-mat",
+            "young-green-shoots",
+            "sprouted-seed-mass",
+            "fresh-seasonal-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-fodder",
+            "supervised-living-mat",
+            "small-batch-green-supplement",
+            "winter-green-feed",
+            "temporary-flock-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-untreated-seed",
+            "sanitize-equipment",
+            "prepare-growing-trays",
+            "rinse-seed",
+            "soak-seed",
+            "drain-seed",
+            "spread-seed-evenly",
+            "maintain-moisture",
+            "maintain-airflow",
+            "provide-light-after-emergence",
+            "monitor-mold",
+            "monitor-root-health",
+            "monitor-odor",
+            "harvest-or-feed-promptly",
+            "sanitize-trays-after-use"
+          ],
+
+          optionalProcessingTasks: [
+            "measure-seeding-density",
+            "record-water-use",
+            "record-growing-temperature",
+            "record-light-duration",
+            "record-harvest-weight",
+            "record-root-mass",
+            "record-spoilage-loss",
+            "cut-shoots-before-feeding",
+            "divide-mat-between-multiple-feeding-locations"
+          ],
+
+          requiredEquipment: [
+            "fodder-tray",
+            "drainage-tray",
+            "clean-water-source"
+          ],
+
+          helpfulEquipment: [
+            "grow-light",
+            "thermometer",
+            "humidity-meter",
+            "small-fan",
+            "scale",
+            "spray-bottle",
+            "watering-can",
+            "food-safe-harvest-container",
+            "clean-scissors"
+          ],
+
+          harvestPattern:
+            "repeatable-small-batch-production",
+
+          harvestFrequencyCategory:
+            "repeatable-short-cycle",
+
+          storageMethods: [
+            "immediate-feeding",
+            "brief-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "Use immediately after harvest whenever possible. If temporary storage is necessary, refrigerate only briefly and discard if wilting, slime, mold, heating, or abnormal odor develops.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Use only untreated seed.",
+            "Discard the entire mat if mold, slime, sour odor, or fermentation develops.",
+            "Do not allow birds to consume synthetic growing mats or tray materials.",
+            "Remove uneaten fodder before spoilage begins.",
+            "Do not feed fodder grown from chemically treated seed.",
+            "Maintain excellent tray sanitation between batches.",
+            "Do not substitute fodder for a balanced complete poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-monitor-daily",
+            "has-no-clean-water",
+            "has-no-sanitary-growing-area",
+            "requires-long-storage",
+            "requires-complete-feed-replacement",
+            "cannot-discard-spoiled-batches"
+          ],
+
+          directFacts: {
+            untreatedSeedRequired:
+              true,
+
+            viableSeedRequired:
+              true,
+
+            repeatedWateringRequired:
+              true,
+
+            repeatedInspectionRequired:
+              true,
+
+            longTermStorageSuitable:
+              false,
+
+            completeFeed:
+              false,
+
+            freshWeightIncreases:
+              true,
+
+            dryMatterProductionLimited:
+              true,
+
+            livingRootMatProduced:
+              true,
+
+            primaryAdvantages: [
+              "Excellent enrichment",
+              "Produces fresh greens indoors",
+              "Useful during winter",
+              "Repeatable production",
+              "Small growing footprint"
+            ],
+
+            primaryLimitations: [
+              "Labor intensive",
+              "High mold risk",
+              "Requires daily monitoring",
+              "Very short shelf life",
+              "High sanitation requirements",
+              "Fresh weight largely reflects water"
+            ],
+
+            notes: [
+              "A fodder mat differs from ordinary sprouts because the roots interlock into a dense living mat.",
+              "Most of the increase in harvested weight comes from absorbed water rather than new dry matter.",
+              "The planner should distinguish fresh biomass from actual nutrient production.",
+              "Living mats may be offered directly or harvested into smaller portions.",
+              "Birds often scratch mats apart rapidly.",
+              "Future planner trials should compare tray life, flock acceptance, waste, sanitation requirements, and labor."
+            ]
+          }
+        },
+
+        {
+          id:
+            "immature-plant-grazing",
+
+          label:
+            "Immature Plant Grazing",
+
+          description:
+            "Young Sunflower plants are intentionally grown for limited supervised poultry browsing before seed production begins, after which the planting is either terminated or allowed to recover if sufficient foliage remains.",
+
+          primaryFeedRole:
+            "fresh-green-forage",
+
+          harvestProducts: [
+            "young-leaves",
+            "young-stems",
+            "fresh-green-forage",
+            "seasonal-browse"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-free-ranging",
+            "temporary-mobile-pen-access",
+            "cut-and-carry-green-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-crop",
+            "protect-seedlings",
+            "allow-sufficient-growth",
+            "supervise-grazing",
+            "remove-birds-before-overgrazing",
+            "evaluate-regrowth"
+          ],
+
+          optionalProcessingTasks: [
+            "rotate-grazing-areas",
+            "measure-browse-height",
+            "record-regrowth",
+            "record-plant-loss",
+            "record-flock-preference"
+          ],
+
+          requiredEquipment: [
+            "temporary-fencing-or-mobile-pen"
+          ],
+
+          helpfulEquipment: [
+            "portable-electric-netting",
+            "harvest-knife",
+            "collection-basket",
+            "scale"
+          ],
+
+          harvestPattern:
+            "limited-seasonal-use",
+
+          harvestFrequencyCategory:
+            "occasional",
+
+          storageMethods: [
+            "immediate-feeding"
+          ],
+
+          preferredStorageMethod:
+            "Use immediately after harvest or immediately following supervised grazing.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          safetyWarnings: [
+            "Young Sunflower plants can be destroyed quickly by unrestricted poultry access.",
+            "Do not expect grazed plants to produce normal seed yields afterward.",
+            "Protect the planting until plants are well established.",
+            "Avoid muddy conditions that increase disease and soil compaction.",
+            "Do not rely on immature browsing as a complete ration."
+          ],
+
+          incompatibleUserTraits: [
+            "expects-full-seed-harvest",
+            "cannot-control-bird-access",
+            "requires-year-round-green-feed",
+            "requires-complete-feed-replacement"
+          ],
+
+          directFacts: {
+            livingCropRequired:
+              true,
+
+            repeatedRegrowthGuaranteed:
+              false,
+
+            compatibleWithMaximumSeedProduction:
+              false,
+
+            suitableForCutAndCarry:
+              true,
+
+            suitableForSupervisedBrowsing:
+              true,
+
+            completeFeed:
+              false,
+
+            primaryAdvantages: [
+              "Minimal processing",
+              "Behavioral enrichment",
+              "Fresh seasonal forage",
+              "Simple implementation"
+            ],
+
+            primaryLimitations: [
+              "Greatly reduces future seed production",
+              "Plants may be completely destroyed",
+              "Requires controlled access",
+              "Seasonal only",
+              "Fresh material spoils rapidly"
+            ],
+
+            notes: [
+              "This pathway sacrifices some or all seed production in exchange for fresh forage.",
+              "Heavy browsing usually prevents normal flower and seed development.",
+              "Portable fencing or tractors provide better control than unrestricted flock access.",
+              "Future planner trials should determine the level of browsing that still permits acceptable seed production."
+            ]
+          }
+        },
+
+                {
+          id:
+            "postharvest-flock-gleaning",
+
+          label:
+            "Postharvest Flock Gleaning",
+
+          description:
+            "After the primary Sunflower seed-head harvest is complete, established adult chickens receive controlled access to the planting area so they can search for fallen sound seed, remaining accessible seed, insects, and tender volunteer growth while providing short-term foraging enrichment.",
+
+          primaryFeedRole:
+            "postharvest-seed-and-foraging-enrichment",
+
+          harvestProducts: [
+            "fallen-sound-sunflower-seed",
+            "remaining-accessible-seed",
+            "postharvest-insects",
+            "tender-volunteer-growth",
+            "foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "controlled-postharvest-grazing",
+            "rotational-paddock-access",
+            "temporary-mobile-pen-access",
+            "supervised-foraging",
+            "short-duration-cleanup"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-head-harvest",
+            "remove-moldy-heads",
+            "remove-diseased-material",
+            "remove-treated-seed",
+            "remove-wire-and-twine",
+            "remove-plastic-and-netting",
+            "inspect-ground-for-contamination",
+            "control-flock-access",
+            "remove-flock-before-soil-damage"
+          ],
+
+          optionalProcessingTasks: [
+            "cut-tall-stalks",
+            "chop-heavy-residue",
+            "remove-sharp-stalk-stubs",
+            "temporarily-fence-area",
+            "limit-daily-access-duration",
+            "provide-several-entry-points",
+            "record-gleaning-duration",
+            "measure-visible-seed-before-access",
+            "measure-visible-seed-after-access",
+            "record-soil-disturbance",
+            "record-flock-behavior"
+          ],
+
+          requiredEquipment: [
+            "secure-boundary-or-direct-supervision"
+          ],
+
+          helpfulEquipment: [
+            "temporary-poultry-fencing",
+            "portable-electric-netting",
+            "mobile-waterer",
+            "portable-shade",
+            "portable-shelter",
+            "hand-pruners",
+            "loppers",
+            "rake",
+            "collection-tub"
+          ],
+
+          harvestPattern:
+            "postharvest-cleanup-period",
+
+          harvestFrequencyCategory:
+            "single-short-seasonal-window",
+
+          storageMethods: [
+            "standing-field-residue",
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "not-applicable",
+
+          storageDurationCategory:
+            "immediate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          safetyWarnings: [
+            "Complete the intended seed-head harvest before allowing flock access.",
+            "Remove moldy, rotting, musty, chemically contaminated, or diseased heads and seed before birds enter.",
+            "Do not allow access where treated planting seed may remain on the soil surface.",
+            "Remove bird netting, individual head bags, ties, wire, string, clips, plastic, labels, and other entanglement or ingestion hazards.",
+            "Cut or remove sharp stalk stubs that could injure feet, legs, breasts, or eyes.",
+            "Do not allow poultry onto saturated soil where scratching will create mud, compaction, erosion, or severe surface damage.",
+            "Remaining seed intake cannot be measured precisely.",
+            "Do not rely on postharvest gleaning as a complete ration.",
+            "Continue providing age-appropriate complete poultry feed and clean water.",
+            "Remove birds if aggressive competition, crop-residue ingestion, soil damage, or access to unsafe material develops."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-secure-boundary",
+            "cannot-supervise-or-time-access",
+            "requires-precise-feed-intake",
+            "must-preserve-undisturbed-soil-surface",
+            "has-contaminated-growing-area",
+            "cannot-remove-netting-and-ties",
+            "requires-complete-feed-replacement",
+            "feeding-young-chicks-only"
+          ],
+
+          directFacts: {
+            primaryHarvestCompletedFirst:
+              true,
+
+            controlledAccessRequired:
+              true,
+
+            preciseIntakeMeasurementPossible:
+              false,
+
+            fallenSeedMayBeConsumed:
+              true,
+
+            remainingHeadSeedMayBeConsumed:
+              true,
+
+            insectsMayBeConsumed:
+              true,
+
+            livingCropSurvivalExpected:
+              false,
+
+            soilDisturbanceLikely:
+              true,
+
+            completeFeed:
+              false,
+
+            storageRequired:
+              false,
+
+            primaryAdvantages: [
+              "Provides low-processing seasonal enrichment",
+              "Recovers some seed that would otherwise be lost",
+              "Allows insect foraging",
+              "May reduce volunteer Sunflowers",
+              "Requires no feed-storage container",
+              "Can help clean the planting area after harvest"
+            ],
+
+            primaryLimitations: [
+              "Feed intake cannot be measured precisely",
+              "Available feed quantity is unpredictable",
+              "Very short seasonal window",
+              "Birds may compact or disturb soil",
+              "Birds may scatter residue",
+              "Unsafe material must be removed first",
+              "Does not replace harvested stored seed",
+              "Not nutritionally complete"
+            ],
+
+            notes: [
+              "Postharvest gleaning begins only after the grower has collected the useful seed heads intended for storage or measured feeding.",
+              "Allowing earlier access can result in severe loss of standing plants and mature seed.",
+              "The amount of remaining edible seed depends on harvest efficiency, wildlife loss, head shattering, wind, and cultivar.",
+              "Some seed may be hidden beneath leaves, hulls, soil, or plant residue.",
+              "Seed that has remained wet on the soil may be moldy, sprouted, rancid, or contaminated and should not be considered automatically safe.",
+              "Visible questionable seed and heads should be removed before flock access.",
+              "Birds may consume insects associated with the crop residue.",
+              "Insect consumption is incidental and should not be quantified without direct observation.",
+              "Sunflower stalks become coarse and are not expected to provide meaningful concentrated feed.",
+              "Tender volunteers may be browsed, but mature stalks and fibrous residue have low feed value.",
+              "Birds may scratch around roots and accelerate residue breakdown.",
+              "Heavy access can expose soil, damage soil structure, and increase erosion.",
+              "Short controlled sessions are preferable where preserving soil cover is important.",
+              "Access should be postponed when the ground is saturated.",
+              "The area should remain free from pesticides, herbicides, fuel, treated lumber debris, wire, plastic, and other hazards.",
+              "This pathway may fit especially well before bed cleanup, cover-crop planting, or seasonal garden transition.",
+              "Future planner trials should record access duration, estimated remaining seed, flock behavior, soil disturbance, visible seed recovery, and subsequent volunteer emergence."
+            ]
+          }
+        },
+
+        {
+          id:
+            "stalk-leaf-and-head-residue-biomass",
+
+          label:
+            "Sunflower Stalk, Leaf, and Head Residue Biomass",
+
+          description:
+            "Non-feed Sunflower residues remaining after seed harvest—including stalks, leaves, empty heads, roots, hulls, and sound processing debris—are separated from unsafe material and directed to compost, mulch, habitat, erosion-control, or other homestead biomass uses.",
+
+          primaryFeedRole:
+            "non-feed-biomass-and-compost-support",
+
+          harvestProducts: [
+            "sunflower-stalks",
+            "sunflower-leaves",
+            "empty-seed-heads",
+            "sunflower-roots",
+            "clean-seed-hulls",
+            "clean-chaff",
+            "coarse-compost-carbon",
+            "seasonal-mulch-biomass",
+            "wildlife-habitat-residue"
+          ],
+
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "complete-seed-harvest",
+            "separate-feed-material",
+            "remove-diseased-material-when-required",
+            "remove-moldy-material",
+            "remove-chemical-contamination",
+            "remove-plastic-and-wire",
+            "select-biomass-use",
+            "chop-or-stack-when-needed"
+          ],
+
+          optionalProcessingTasks: [
+            "shred-stalks",
+            "chop-empty-heads",
+            "separate-hulls",
+            "dry-biomass",
+            "layer-with-nitrogen-rich-compost-material",
+            "use-as-coarse-mulch",
+            "leave-selected-stems-for-beneficial-insects",
+            "use-stalks-as-temporary-garden-supports",
+            "measure-biomass-weight",
+            "record-decomposition-time",
+            "record-volunteer-seed-emergence"
+          ],
+
+          requiredEquipment: [
+            "safe-residue-handling-method"
+          ],
+
+          helpfulEquipment: [
+            "gloves",
+            "hand-pruners",
+            "loppers",
+            "pruning-saw",
+            "machete-or-brush-knife",
+            "garden-cart",
+            "rake",
+            "shredder-or-chipper",
+            "compost-bin",
+            "mulch-storage-area"
+          ],
+
+          harvestPattern:
+            "single-postharvest-residue-removal-or-management",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [
+            "outdoor-dry-stacking",
+            "compost-pile",
+            "direct-mulch-placement",
+            "chopped-biomass-storage",
+            "standing-winter-residue"
+          ],
+
+          preferredStorageMethod:
+            "Direct clean residue promptly to its intended use. Keep dry stalks away from ignition sources, and do not store damp dense biomass in enclosed piles where heating, mold, or decay may develop.",
+
+          storageDurationCategory:
+            "use-dependent",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          safetyWarnings: [
+            "This is a non-feed pathway.",
+            "Do not count mature stalks, coarse leaves, roots, hulls, or empty heads as a nutritionally significant poultry feed.",
+            "Remove all remaining usable sound seed before assigning residue to compost or mulch when seed recovery is desired.",
+            "Do not compost or mulch material contaminated with persistent herbicides, prohibited pesticides, fuel, oil, solvents, paint, treated lumber residue, plastic, or metal.",
+            "Diseased residue management should follow the specific disease and local Extension guidance.",
+            "Do not return heavily moldy or uncertain residue to poultry-accessible areas.",
+            "Dry stalks and heads can be combustible and should be kept away from open flame, sparks, heaters, and hot machinery.",
+            "Coarse stalks may create sharp ends that can injure poultry or people.",
+            "Whole seed heads or seed-bearing residue may attract rodents and wild birds.",
+            "Residue containing mature seed may create volunteer Sunflowers.",
+            "Do not allow poultry to ingest synthetic twine, mesh, netting, labels, bags, or fastening material mixed with the biomass.",
+            "Sunflower residue should not replace appropriate bedding materials unless absorbency, particle size, cleanliness, and safety have been evaluated."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-direct-poultry-feed-value",
+            "cannot-chop-or-handle-coarse-stalks",
+            "has-no-compost-or-mulch-use",
+            "cannot-separate-contaminated-material",
+            "requires-rapid-decomposition",
+            "requires-fine-soft-bedding",
+            "has-severe-rodent-pressure-and-no-residue-control"
+          ],
+
+          directFacts: {
+            primaryFeedPathway:
+              false,
+
+            matureStalkPrimaryFeed:
+              false,
+
+            emptyHeadPrimaryFeed:
+              false,
+
+            hullPrimaryFeed:
+              false,
+
+            compostSuitableWhenClean:
+              true,
+
+            mulchSuitableWhenClean:
+              true,
+
+            coarseCarbonMaterial:
+              true,
+
+            choppingAcceleratesDecomposition:
+              true,
+
+            standingResiduePossible:
+              true,
+
+            beneficialInsectHabitatPossible:
+              true,
+
+            volunteerSeedRisk:
+              true,
+
+            rodentAttractionPossible:
+              true,
+
+            completeSeedRemovalGuaranteed:
+              false,
+
+            primaryAdvantages: [
+              "Uses material remaining after seed harvest",
+              "Adds coarse carbon to compost",
+              "Can protect soil as mulch",
+              "Can reduce disposal waste",
+              "May provide temporary beneficial-insect habitat",
+              "Can provide seasonal garden stakes or structural material",
+              "Supports whole-crop homestead use"
+            ],
+
+            primaryLimitations: [
+              "Coarse stalks decompose slowly",
+              "Residue may require chopping",
+              "Seed-bearing residue attracts wildlife and rodents",
+              "Volunteer plants may emerge",
+              "Diseased material may require removal",
+              "Dry residue can be combustible",
+              "Sharp stalk fragments may be hazardous",
+              "Little direct poultry-feed value"
+            ],
+
+            notes: [
+              "Sunflower produces substantial fibrous residue compared with the weight of cleaned seed harvested.",
+              "The exact biomass-to-seed ratio varies greatly by cultivar, spacing, fertility, moisture, plant height, head size, and harvest method.",
+              "A universal backyard residue yield should not be stored without direct measurement.",
+              "Mature stalks contain lignified fiber and break down more slowly than tender green material.",
+              "Chopping or shredding increases exposed surface area and generally speeds decomposition.",
+              "Coarse stalks can improve compost structure and airflow when balanced with wetter nitrogen-rich materials.",
+              "Large unchopped stalks may remain recognizable through several compost cycles.",
+              "Empty heads may retain seed, insects, mold, moisture, or sharp dried bracts and should be inspected before use.",
+              "Clean hulls and chaff may be composted but can blow away unless contained or moistened appropriately.",
+              "Dense wet piles of leaves and heads may become anaerobic.",
+              "Stalk sections may be used temporarily as plant supports, kindling only where lawful and safe, wildlife habitat, or erosion-slowing material.",
+              "Burning is not represented as the preferred pathway because legality, air quality, fire safety, and disease concerns vary by location.",
+              "Some hollow or pithy stems may provide overwintering sites for beneficial insects when left standing.",
+              "Standing stems should not remain where they obstruct paths, create sharp hazards, interfere with future planting, or shelter unacceptable rodent populations.",
+              "Residue used as poultry-area mulch may be scattered rapidly and may not provide dependable moisture absorption.",
+              "The biomass pathway improves the crop's multipurpose value but should remain separate from feed-yield calculations.",
+              "Future planner trials should measure total dry biomass, seed recovery from residue, chopping labor, compost decomposition, mulch persistence, volunteer emergence, and rodent activity."
+            ]
+          }
+        }
       ],
-
-      mitigationOptions: [
-        "Bird netting",
-        "Individual head bags",
-        "Early monitoring",
-        "Timely harvest",
-        "Protected drying"
-      ],
-
-      note:
-        "Exposed seed and the large head make Sunflower especially vulnerable to feeding birds."
-    },
-
-    {
-      id: "wet-head-mold",
-      severity: "high",
-
-      affectedStages: [
-        "late-maturity",
-        "harvest",
-        "drying",
-        "storage"
-      ],
-
-      mitigationOptions: [
-        "Harvest only sound heads",
-        "Dry with good ventilation",
-        "Avoid sealed storage while damp",
-        "Inspect regularly",
-        "Discard questionable material"
-      ],
-
-      note:
-        "Large heads and densely packed seed can retain moisture, particularly under humid conditions."
-    },
-
-    {
-      id: "lodging-and-breakage",
-      severity: "moderate",
-
-      affectedStages: [
-        "late-vegetative-growth",
-        "flowering",
-        "seed-filling"
-      ],
-
-      mitigationOptions: [
-        "Select shorter varieties",
-        "Avoid excessive plant density",
-        "Use stakes where necessary",
-        "Choose a sheltered location"
-      ],
-
-      note:
-        "Tall plants and heavy heads may lean or break under strong wind, storms, or weak rooting conditions."
-    },
-
-    {
-      id: "balanced-feed-displacement",
-      severity: "high",
-
-      affectedStages: [
-        "feeding"
-      ],
-
-      mitigationOptions: [
-        "Offer as a measured supplement",
-        "Continue complete poultry feed",
-        "Avoid unrestricted overfeeding"
-      ],
-
-      note:
-        "Oil-rich seed can displace balanced feed when offered too generously."
-    },
-
-    {
-      id: "chemically-treated-seed",
-      severity: "very-high",
-
-      affectedStages: [
-        "planting",
-        "feeding"
-      ],
-
-      mitigationOptions: [
-        "Use untreated seed for any material that may be fed",
-        "Keep treated planting seed clearly separated"
-      ],
-
-      note:
-        "Planting seed treated with pesticides or other chemicals must not be fed."
-    }
-  ],
-
-  directFacts: {
-    exceptionallyAttractiveToWildBirds:
-      true,
-
-    exposedSeedAccessibleToBirds:
-      true,
-
-    matureHeadProvidesBirdPerch:
-      true,
-
-    multipleDiseasesPossible:
-      true,
-
-    moistureControlImportantDuringStorage:
-      true,
-
-    timelyHarvestCanReduceFieldLoss:
-      true,
-
-    notes: [
-      "Wild birds may begin feeding soon after petals wilt and may continue until harvest.",
-      "Small isolated backyard plantings may be highly visible and easy for birds to exploit.",
-      "Several insects and diseases can affect Sunflower, though backyard severity varies by region and variety.",
-      "Short crop rotations can magnify some disease risks.",
-      "Physiological maturity occurs when the head back turns yellow and bracts turn brown.",
-      "Earlier harvest can reduce prolonged exposure to birds and late-season weather, but harvested material may then require additional drying.",
-      "Stored seed should be adequately dried and cooled before enclosed storage.",
-      "Questionable, moldy, heat-damaged, or musty material should not be fed."
-    ]
-  }
-},
-
-      seasonalRoles: {
-  earlySpring: false,
-
-  lateSpring: true,
-
-  summer: true,
-
-  lateSummer: true,
-
-  fall: true,
-
-  winterStorage: true,
-
-  perennial: false,
-
-  plantingWindows: [
-    {
-      id: "direct-seed-after-frost",
-
-      trigger:
-        "after-last-frost",
-
-      offsetWeeksMinimum: 0,
-      offsetWeeksMaximum: 3,
-
-      soilCondition:
-        "warming-and-workable",
-
-      method:
-        "direct-seed",
-
-      note:
-        "Plant after damaging frost danger has passed and soil conditions support dependable germination."
-    },
-
-    {
-      id: "optional-indoor-start",
-
-      trigger:
-        "before-last-frost",
-
-      offsetWeeksMinimum: 2,
-      offsetWeeksMaximum: 4,
-
-      method:
-        "start-indoors",
-
-      note:
-        "Indoor starting may help short-season growers, but transplant before plants become crowded or root-bound."
-    }
-  ],
-
-  harvestWindows: [
-    {
-      id: "fresh-mature-head",
-
-      trigger:
-        "physiological-maturity",
-
-      usePathId:
-        "fresh-mature-seed-head",
-
-      note:
-        "Harvest sound mature seed-filled heads for immediate or near-immediate flock use."
-    },
-
-    {
-      id: "whole-dried-head",
-
-      trigger:
-        "mature-head-before-prolonged-field-loss",
-
-      usePathId:
-        "whole-dried-seed-head",
-
-      note:
-        "Cut mature heads and finish drying under protected, ventilated conditions when necessary."
-    },
-
-    {
-      id: "loose-dried-seed",
-
-      trigger:
-        "head-and-seed-adequately-dry",
-
-      usePathId:
-        "loose-dried-seed",
-
-      note:
-        "Remove and clean seed only after the head and seed have reached an appropriate dry condition."
-    }
-  ],
-
-  cropSequenceRoles: [
-    "Warm-season annual",
-    "Summer pollinator crop",
-    "Late-summer and fall seed crop",
-    "Winter-storage enrichment crop",
-    "Temporary seasonal screen"
-  ],
-
-  seasonalLimitations: [
-    "Not a cool-season living-forage crop",
-    "Not frost-hardy during early growth",
-    "Mature seed harvest may extend into wet fall weather",
-    "Late planting may leave insufficient time for seed filling and dry-down"
-  ],
-
-  directFacts: {
-    warmSeasonAnnual: true,
-
-    commonlyDirectSeeded: true,
-
-    physiologicalMaturityStage:
-      "R9",
-
-    maturityIndicators: [
-      "Back of head changes from green to yellow",
-      "Bracts turn yellow and brown"
-    ],
-
-    approximatePhysiologicalMaturityAfterBloomDaysMinimum:
-      30,
-
-    approximatePhysiologicalMaturityAfterBloomDaysMaximum:
-      45,
-
-    notes: [
-      "The crop is primarily planted during late spring after frost risk declines.",
-      "Vegetative growth, flowering, and seed filling occur through summer.",
-      "Mature heads are generally harvested in late summer or fall depending on planting date, climate, and variety.",
-      "Physiological maturity is distinct from safe long-term storage dryness.",
-      "Harvested heads or seed may require additional drying before storage.",
-      "Stored whole heads or loose seed can extend the crop's usefulness into winter."
-    ]
-  }
-},
-
-      usePaths: [
-  {
-    id: "fresh-mature-seed-head",
-
-    label:
-      "Fresh Mature Sunflower Seed Head",
-
-    description:
-      "A mature seed-filled head harvested and offered relatively soon after cutting, primarily for pecking enrichment and immediate seed consumption.",
-
-    primaryFeedRole:
-      "energy-enrichment",
-
-    harvestProducts: [
-      "fresh-seed-heads"
-    ],
-
-    suitableFeedingMethods: [
-      "whole-seed-heads",
-      "immediate-feeding",
-      "seasonal-enrichment"
-    ],
-
-    requiredProcessingTasks: [
-      "cut-seed-heads"
-    ],
-
-    optionalProcessingTasks: [
-      "partial-dry"
-    ],
-
-    requiredEquipment: [
-      "hand-pruners"
-    ],
-
-    helpfulEquipment: [
-      "bird-netting",
-      "stakes"
-    ],
-
-    harvestPattern:
-      "several",
-
-    harvestFrequencyCategory:
-      "seasonal",
-
-    storageMethods: [
-      "short-term-fresh"
-    ],
-
-    preferredStorageMethod:
-      "short-term-fresh",
-
-    storageDurationCategory:
-      "very-short",
-
-    nonElectricStorageSuitable: false,
-
-    refrigerationSuitable: false,
-    freezingSuitable: false,
-
-    dryingRequired: false,
-    curingRequired: false,
-    shellingRequired: false,
-    threshingRequired: false,
-    cookingRequired: false,
-    grindingRequired: false,
-
-    moistureSensitive: true,
-
-    moldRiskScore: 3,
-    rodentRiskScore: 3,
-    storedInsectRiskScore: 2,
-
-    harvestEaseScore: 5,
-    preparationEaseScore: 5,
-    beginnerSuitabilityScore: 5,
-
-    householdFoodValueScore: 2,
-    flockValueScore: 5,
-
-    safetyWarnings: [
-      "Use only mature, sound heads that show no mold, decay, musty odor, or abnormal heating.",
-      "A freshly harvested head still contains moisture and should not be sealed for storage.",
-      "Do not offer chemically treated planting seed."
-    ],
-
-    incompatibleUserTraits: [
-      "requires-long-term-storage",
-      "wants-loose-measured-seed-only"
-    ]
-  },
-
-  {
-    id: "whole-dried-seed-head",
-
-    label:
-      "Whole Dried Sunflower Seed Head",
-
-    description:
-      "A mature Sunflower head dried under protected, ventilated conditions and stored whole for later flock enrichment.",
-
-    primaryFeedRole:
-      "energy-enrichment",
-
-    harvestProducts: [
-      "dried-seed-heads"
-    ],
-
-    suitableFeedingMethods: [
-      "whole-seed-heads",
-      "winter-storage",
-      "seasonal-enrichment"
-    ],
-
-    requiredProcessingTasks: [
-      "cut-seed-heads",
-      "dry"
-    ],
-
-    optionalProcessingTasks: [
-      "clean-sort"
-    ],
-
-    requiredEquipment: [
-      "hand-pruners"
-    ],
-
-    helpfulEquipment: [
-      "drying-rack",
-      "drying-screen",
-      "fan",
-      "bird-netting",
-      "food-safe-bucket",
-      "metal-grain-can"
-    ],
-
-    harvestPattern:
-      "several",
-
-    harvestFrequencyCategory:
-      "seasonal",
-
-    storageMethods: [
-      "dried-whole"
-    ],
-
-    preferredStorageMethod:
-      "dried-whole",
-
-    storageDurationCategory:
-      "medium-long",
-
-    nonElectricStorageSuitable: true,
-
-    refrigerationSuitable: false,
-    freezingSuitable: false,
-
-    dryingRequired: true,
-    curingRequired: false,
-    shellingRequired: false,
-    threshingRequired: false,
-    cookingRequired: false,
-    grindingRequired: false,
-
-    moistureSensitive: true,
-
-    moldRiskScore: 4,
-    rodentRiskScore: 4,
-    storedInsectRiskScore: 3,
-
-    harvestEaseScore: 4,
-    preparationEaseScore: 4,
-    beginnerSuitabilityScore: 4,
-
-    householdFoodValueScore: 2,
-    flockValueScore: 5,
-
-    safetyWarnings: [
-      "Dry heads thoroughly before placing them in enclosed storage.",
-      "Do not store heads that feel damp, show condensation, smell musty, or develop visible mold.",
-      "Inspect stored heads regularly for insects, rodents, moisture, heating, and decay.",
-      "Do not feed moldy, musty, heated, or otherwise questionable seed heads.",
-      "Do not feed chemically treated planting seed."
-    ],
-
-    incompatibleUserTraits: [
-      "declines-drying",
-      "has-no-protected-drying-area",
-      "has-no-rodent-protected-storage"
-    ]
-  },
-
-  {
-    id: "loose-dried-seed",
-
-    label:
-      "Loose Dried Sunflower Seed",
-
-    description:
-      "Mature seed removed from adequately dried heads, cleaned, and stored in a dry protected container for measured supplemental feeding.",
-
-    primaryFeedRole:
-      "energy-fat",
-
-    harvestProducts: [
-      "dry-seeds"
-    ],
-
-    suitableFeedingMethods: [
-      "whole-grain",
-      "measured-supplement",
-      "winter-storage"
-    ],
-
-    requiredProcessingTasks: [
-      "cut-seed-heads",
-      "dry",
-      "remove-seed",
-      "clean-sort"
-    ],
-
-    optionalProcessingTasks: [
-      "winnow"
-    ],
-
-    requiredEquipment: [
-      "hand-pruners"
-    ],
-
-    helpfulEquipment: [
-      "drying-rack",
-      "drying-screen",
-      "fan",
-      "food-safe-bucket",
-      "metal-grain-can",
-      "moisture-meter"
-    ],
-
-    harvestPattern:
-      "major",
-
-    harvestFrequencyCategory:
-      "seasonal",
-
-    storageMethods: [
-      "dried-shelled"
-    ],
-
-    preferredStorageMethod:
-      "airtight-after-adequate-drying",
-
-    storageDurationCategory:
-      "medium-long",
-
-    nonElectricStorageSuitable: true,
-
-    refrigerationSuitable: false,
-    freezingSuitable: false,
-
-    dryingRequired: true,
-    curingRequired: false,
-    shellingRequired: false,
-    threshingRequired: false,
-    cookingRequired: false,
-    grindingRequired: false,
-
-    moistureSensitive: true,
-
-    moldRiskScore: 4,
-    rodentRiskScore: 5,
-    storedInsectRiskScore: 4,
-
-    harvestEaseScore: 3,
-    preparationEaseScore: 3,
-    beginnerSuitabilityScore: 3,
-
-    householdFoodValueScore: 3,
-    flockValueScore: 4,
-
-    safetyWarnings: [
-      "Seed must be adequately dried before it is sealed in an airtight container.",
-      "Do not mix questionable seed with sound seed.",
-      "Inspect stored seed regularly for insects, rodents, moisture, heating, and mold.",
-      "Discard moldy, musty, heated, or otherwise questionable seed.",
-      "Do not feed salted, flavored, seasoned, candy-coated, or chemically treated seed."
-    ],
-
-    incompatibleUserTraits: [
-      "declines-drying",
-      "declines-seed-removal",
-      "requires-minimal-processing",
-      "has-no-dry-storage",
-      "has-no-rodent-protected-storage"
-    ]
-  }
-],
 
       dataQuality: {
-        overallConfidence: null,
+        confidenceLevel:
+          "moderate",
 
-        verifiedFields: [
-          "identity",
-          "lifecycle",
+        confidenceScore:
+          78,
+
+        researchStatus:
+          "production-ready-with-backyard-yield-gaps",
+
+        dataCompletenessScore:
+          89,
+
+        cultivationEvidenceStrength:
+          "strong",
+
+        poultryNutritionEvidenceStrength:
+          "moderate",
+
+        backyardYieldEvidenceStrength:
+          "limited",
+
+        processingEvidenceStrength:
+          "moderate",
+
+        storageEvidenceStrength:
+          "moderate",
+
+        riskEvidenceStrength:
+          "moderate-to-strong",
+
+        plannerDerivationLevel:
+          "moderate",
+
+        unresolvedFields: [
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.preferredSoilTemperatureF",
+          "climate.daysToMaturityMinimum",
+          "climate.daysToMaturityMaximum",
+          "climate.dryDownBufferDays",
+          "site.absoluteMinimumSunHours",
+          "soil.minimumSoilDepthIn",
+          "soil.survivalPHMinimum",
+          "soil.survivalPHMaximum",
+          "soil.saltToleranceScore",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance",
+          "spaceAndYield.expectedYieldPerPlantMinimumLbs",
+          "spaceAndYield.expectedYieldPerPlantMaximumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMinimumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMaximumLbs",
+          "spaceAndYield.edibleYieldPercent"
+        ],
+
+        highConfidenceFields: [
+          "identity.cropCategory",
+          "identity.primaryFeedCategory",
+          "lifecycle.growthCycle",
+          "lifecycle.isAnnual",
+          "climate.minimumSoilTemperatureF",
+          "climate.heatToleranceScore",
+          "climate.frostSensitivityScore",
           "site.productiveMinimumSunHours",
           "site.preferredSunHours",
           "soil.preferredPHMinimum",
           "soil.preferredPHMaximum",
-          "soil.directFacts.preferredDrainage",
-          "water.directFacts.droughtTolerantAfterEstablishment",
-          "water.directFacts.establishmentMoistureImportant",
-          "space.directFacts.layoutFlexible",
-          "space.directFacts.blockPollinationRequired",
-          "space.directFacts.suitableForRowPlanting",
-          "space.directFacts.suitableForCloselySpacedStands",
-          "space.directFacts.commercialPlantPopulationRange",
-          "flock.directFacts.edibleFeedParts",
-          "flock.directFacts.nutritionalOrientation",
-          "usePaths.fresh-mature-seed-head.harvestProducts",
-          "usePaths.whole-dried-seed-head.harvestProducts",
-          "usePaths.loose-dried-seed.harvestProducts",
-          "labor.directFacts.seedSize",
-"labor.directFacts.directSeedingSuitable",
-"risks.directFacts.exceptionallyAttractiveToWildBirds",
-"risks.directFacts.exposedSeedAccessibleToBirds",
-"risks.directFacts.matureHeadProvidesBirdPerch",
-"risks.directFacts.multipleDiseasesPossible",
-"risks.directFacts.moistureControlImportantDuringStorage",
-"risks.directFacts.timelyHarvestCanReduceFieldLoss",
-"seasonalRoles.directFacts.warmSeasonAnnual",
-"seasonalRoles.directFacts.physiologicalMaturityStage",
-"seasonalRoles.directFacts.maturityIndicators",
-"seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMinimum",
-"seasonalRoles.directFacts.approximatePhysiologicalMaturityAfterBloomDaysMaximum",
-"climate.minimumSoilTemperatureF",
-"climate.referenceDaysToPhysiologicalMaturity",
-"climate.directFacts.baseGrowingDegreeTemperatureF",
-"soil.directFacts.effectiveRootDepthIn",
-"soil.directFacts.soilPHSourceRanges",
-"water.directFacts.irrigatedSeasonalWaterUseInches",
-"water.directFacts.irrigationResponse",
-"space.directFacts.containerCultivarFeasibility"
-        ],
-
-        derivedFields: [
-          "space.smallSpaceScore",
-          "space.mediumSpaceScore",
-          "space.largeSpaceScore",
+          "soil.drainageRequirementScore",
+          "soil.waterloggingSensitivityScore",
+          "soil.preferredSoilDepthIn",
+          "water.overallWaterRequirementLevel",
+          "water.criticalGrowthStages",
           "space.layoutScores",
-          "space.spaceTypeScores",
-          "space.verticalSupportBenefitScore",
-          "space.overflowSpaceBenefitScore",
-          "space.heightCategory",
-          "space.matureWidthCategory",
-          "flock.flockPurposeScores",
-          "flock.feedingMethodScores",
-          "flock.directRunSuitabilityScore",
-          "flock.forageFrameSuitabilityScore",
-          "flock.rotationalPaddockSuitabilityScore",
-          "flock.confinedFlockValueScore",
-          "flock.pasturedFlockValueScore",
+          "flock.suitableForAdultChickens",
+          "flock.suitableForYoungChicks",
+          "flock.wholeSeedHeads",
+          "labor.plantingEaseScore",
+          "goals.enrichmentScore",
+          "goals.pollinatorSupportScore",
+          "risks.wildlife.wildBirds",
+          "risks.overfeedingRiskScore",
+          "risks.treatedSeedRiskScore",
+          "seasonalRoles.directFacts.warmSeasonAnnual",
+          "usePaths.fresh-mature-seed-head.dryingRequired",
+          "usePaths.whole-dried-seed-head.dryingRequired",
+          "usePaths.loose-dried-seed.threshingRequired",
+          "usePaths.sprouted-seed.longTermStorageSuitable",
+          "usePaths.postharvest-flock-gleaning.storageDurationCategory",
+          "usePaths.stalk-leaf-and-head-residue-biomass.primaryFeedRole"
+        ],
+
+        moderateConfidenceFields: [
+          "climate.referenceDaysToPhysiologicalMaturity",
+          "climate.droughtClimateToleranceScore",
+          "climate.humidityToleranceScore",
+          "site.windToleranceScore",
+          "site.lodgingRiskScore",
+          "soil.textureScores",
+          "soil.fertilityRequirementScore",
+          "water.droughtYieldRetentionScore",
+          "water.irrigatedSeasonalWaterUseInches",
+          "space.smallSpaceScore",
+          "space.spaceTypeScores.container",
           "flock.treatDilutionRiskScore",
-          "usePaths.fresh-mature-seed-head.harvestEaseScore",
-          "usePaths.fresh-mature-seed-head.preparationEaseScore",
-          "usePaths.fresh-mature-seed-head.beginnerSuitabilityScore",
-          "usePaths.whole-dried-seed-head.harvestEaseScore",
-          "usePaths.whole-dried-seed-head.preparationEaseScore",
-          "usePaths.whole-dried-seed-head.beginnerSuitabilityScore",
-          "usePaths.loose-dried-seed.harvestEaseScore",
-          "usePaths.loose-dried-seed.preparationEaseScore",
-          "usePaths.loose-dried-seed.beginnerSuitabilityScore",
-          "labor.beginnerFriendlinessScore",
-"labor.plantingEaseScore",
-"labor.establishmentEaseScore",
-"labor.routineMaintenanceEaseScore",
-"labor.weedControlEaseScore",
-"labor.wildlifeProtectionEaseScore",
-"labor.harvestEaseScore",
-"labor.wholeHeadProcessingEaseScore",
-"labor.looseSeedProcessingEaseScore",
-"labor.dryingEaseScore",
-"labor.storageMonitoringEaseScore",
-"labor.suitableForLowTimeUsersScore",
-"labor.suitableForSoloGrowersScore",
-"cost",
-"goals",
-"risks.wildlife",
-"risks.insectsRiskScore",
-"risks.diseaseRiskScore",
-"risks.lodgingRiskScore",
-"risks.fieldMoldRiskScore",
-"risks.dryingMoldRiskScore",
-"risks.storageMoldRiskScore",
-"risks.storedInsectRiskScore",
-"risks.cropFailureRiskScore",
-"seasonalRoles.plantingWindows",
-"seasonalRoles.harvestWindows",
-"climate.heatToleranceScore",
-"climate.droughtClimateToleranceScore",
-"climate.humidityToleranceScore",
-"climate.coolSummerToleranceScore",
-"climate.frostSensitivityScore",
-"climate.indoorSeedStartingBenefitScore",
-"site.shadeToleranceScore",
-"site.afternoonShadeBenefitInHeat",
-"site.windToleranceScore",
-"site.lodgingRiskScore",
-"site.reflectedHeatToleranceScore",
-"site.airflowRequirementScore",
-"site.frostPocketSensitivityScore",
-"site.treeRootCompetitionToleranceScore",
-"soil.textureScores",
-"soil.drainageRequirementScore",
-"soil.temporaryWetToleranceScore",
-"soil.waterloggingSensitivityScore",
-"soil.preferredSoilDepthIn",
-"soil.compactionToleranceScore",
-"soil.establishmentInSodDifficultyScore",
-"soil.fertilityRequirementScore",
-"soil.nitrogenRequirementScore",
-"soil.phosphorusRequirementScore",
-"soil.potassiumRequirementScore",
-"water.overallWaterRequirementLevel",
-"water.germinationWaterNeedLevel",
-"water.establishmentWaterNeedLevel",
-"water.matureWaterNeedLevel",
-"water.floweringWaterNeedLevel",
-"water.harvestDevelopmentWaterNeedLevel",
-"water.droughtSurvivalScore",
-"water.droughtYieldRetentionScore",
-"water.criticalStageWaterImportanceScore",
-"water.overwateringSensitivityScore",
-"water.waterloggingSensitivityScore",
-"water.dripIrrigationBenefitScore",
-"water.mulchBenefitScore",
-"water.suitableForRainfallOnlyScore",
-"water.suitableForLimitedIrrigationScore",
-"water.containerDryingRiskScore",
-"space.spaceTypeScores.container"
+          "labor.wildlifeProtectionEaseScore",
+          "cost.protectionCostLevel",
+          "goals.feedReductionScore",
+          "goals.productionReliabilityScore",
+          "risks.insectsRiskScore",
+          "risks.diseaseRiskScore",
+          "risks.fieldMoldRiskScore",
+          "risks.dryingMoldRiskScore",
+          "risks.storageMoldRiskScore",
+          "usePaths.whole-dried-seed-head.storageDurationCategory",
+          "usePaths.loose-dried-seed.storageDurationCategory",
+          "usePaths.cracked-seed.storageDurationCategory",
+          "usePaths.dehulled-kernel.storageDurationCategory",
+          "usePaths.ground-seed-ingredient.storageDurationCategory"
         ],
 
-        uncertainFields: [
-             "climate.minimumFrostFreeDays",
-             "climate.preferredFrostFreeDays",
-             "climate.minimumSoilTemperatureF",
-             "climate.preferredSoilTemperatureF",
-             "climate.daysToMaturityMinimum",
-             "climate.daysToMaturityMaximum",
-             "climate.dryDownBufferDays",
-             "space.minimumTrialAreaSqFt",
-             "space.minimumUsefulAreaSqFt",
-             "space.preferredProductionAreaSqFt",
-             "space.spaceTypeScores.container",
-             "space.minimumContainerGallons",
-             "space.minimumRaisedBedDepthIn",
-             "soil.minimumSoilDepthIn",
-             "soil.saltToleranceScore",
-             "flock.portionGuidance",
-             "usePaths.fresh-mature-seed-head.storageDurationCategory",
-             "usePaths.whole-dried-seed-head.storageDurationCategory",
-             "usePaths.loose-dried-seed.storageDurationCategory",
-             "usePaths.fresh-mature-seed-head.moldRiskScore",
-             "usePaths.whole-dried-seed-head.moldRiskScore",
-             "usePaths.loose-dried-seed.moldRiskScore",
-             "usePaths.loose-dried-seed.storedInsectRiskScore",
-             "labor.wildlifeProtectionEaseScore",
-             "cost.protectionCostLevel",
-             "goals.feedReductionScore",
-             "goals.productionReliabilityScore",
-             "risks.wildlife.deer",
-             "risks.wildlife.raccoons",
-             "risks.wildlife.squirrels",
-             "risks.wildlife.rabbits",
-             "risks.wildlife.rodents",
-             "risks.wildlife.groundhogs",
-             "risks.insectsRiskScore",
-             "risks.diseaseRiskScore",
-             "risks.fieldMoldRiskScore",
-             "risks.spoilageSpeedRiskScore"
+        lowConfidenceFields: [
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance",
+          "spaceAndYield.expectedYieldPerPlantMinimumLbs",
+          "spaceAndYield.expectedYieldPerPlantMaximumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMinimumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMaximumLbs",
+          "spaceAndYield.edibleYieldPercent",
+          "usePaths.sprouted-seed.universalSafeSproutingDurationKnown",
+          "usePaths.microgreen-or-young-shoot.universalHarvestDayKnown",
+          "usePaths.fodder-mat.dryMatterProductionLimited",
+          "usePaths.immature-plant-grazing.repeatedRegrowthGuaranteed"
         ],
 
-        missingFields: [
-         "space.minimumTrialAreaSqFt",
-  "space.minimumUsefulAreaSqFt",
-  "space.preferredProductionAreaSqFt",
-  "space.minimumContainerGallons",
-  "space.minimumRaisedBedDepthIn",
-  "flock.portionGuidance",
-  "flock.usePathTesting"
-        
+        nullFieldsPreserved: [
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.preferredSoilTemperatureF",
+          "climate.daysToMaturityMinimum",
+          "climate.daysToMaturityMaximum",
+          "climate.dryDownBufferDays",
+          "site.absoluteMinimumSunHours",
+          "soil.minimumSoilDepthIn",
+          "soil.survivalPHMinimum",
+          "soil.survivalPHMaximum",
+          "soil.saltToleranceScore",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance"
+        ],
+
+        validationWarnings: [
+          "Backyard seed-yield thresholds remain unavailable.",
+          "No universal safe supplemental feeding percentage is stored.",
+          "Whole seed, dehulled kernel, home-ground seed, and commercial Sunflower meal must remain separate nutrient categories.",
+          "Fresh-weight increases during sprouting or fodder production must not be interpreted as equal dry-matter increases.",
+          "Storage duration remains conditional on moisture, temperature, oxygen exposure, sanitation, insects, rodents, and oil stability.",
+          "Commercial field-production values must not be presented as guaranteed backyard outcomes.",
+          "Non-feed biomass pathways must not be included in poultry-feed yield totals."
         ],
 
         lastReviewed:
-          "2026-07-14",
+          "2026-07-20",
 
-        primarySources: [],
+        primarySources: [
+          "University of Georgia Cooperative Extension",
+          "North Dakota State University Extension",
+          "University of Minnesota Extension",
+          "Small and Backyard Poultry Extension",
+          "USDA FoodData Central"
+        ],
 
         notes: [
-          "Planner skeleton created before detailed planner-specific research.",
-          "The whole-dried-seed-head use path is a structural prototype and is not yet fully scored.",
-          "Do not change developmentStatus to ready until every required section and use path has been researched, validated, and tested.",
-          "Direct climate, sunlight, soil, and water facts were added during the first planner research pass.",
-          "Planner suitability and risk ratings remain null until the rating pass compares Sunflower consistently with the other crops.",
-          "Generic days-to-flower figures were not used as mature-seed harvest requirements.",
-          "Space and layout ratings were added as internal planner derivations based on Sunflower spacing flexibility, plant form, pollination behavior, and backyard harvest usefulness.",
-          "Commercial plant populations were retained only as reference facts and were not converted into backyard yield or minimum-area claims.",
-          "Container suitability and minimum container volume remain null pending cultivar-specific research.",
-          "Minimum trial, useful, and production areas remain null because no defensible backyard flock threshold has been established.",
-          "Flock suitability was separated from crop-growing suitability because Sunflower plants are poor living forage but harvested mature heads have strong enrichment value.",
-          "Fresh-head, dried-head, and loose-seed paths are scored separately because they require different processing, storage, labor, and equipment.",
-          "Sunflower is classified as an energy- and fat-oriented supplement rather than a complete poultry ration.",
-          "Exact feeding portions remain outside the planner record until defensible backyard supplementation guidance is established.",
-          "Labor ratings distinguish easy direct seeding from the greater work required for bird protection, drying, loose-seed removal, and storage.",
-          "Cost values are qualitative first-season planner categories rather than current retail-price estimates.",
-          "Goal ratings measure practical backyard usefulness rather than laboratory nutrient concentration alone.",
-          "Wild-bird risk is treated as one of Sunflower's strongest and best-supported limitations.",
-          "Seasonal harvest timing uses physiological maturity as a crop-development marker and does not treat it as proof of safe storage dryness.",
-          "Remaining climate, soil, water, container, minimum-area, and feeding-portion fields require additional research or cross-crop comparison."
+          "The record distinguishes direct source facts from internal planner scores and derived suitability judgments.",
+          "Unverified backyard yield, minimum-area, and feeding-portion values remain null.",
+          "Sunflower variety type must be considered when interpreting seed size, oil concentration, hull percentage, maturity, plant height, and processing behavior.",
+          "The primary poultry pathways are mature whole heads, dried heads, and cleaned whole seed.",
+          "Cracking, dehulling, grinding, sprouting, microgreen, and fodder pathways require additional processing and stronger sanitation controls.",
+          "Whole in-shell seed generally provides better storage stability than cracked, dehulled, or ground products.",
+          "The crop's strongest non-feed values include pollinator support, visual appeal, temporary screening, seed saving, and compost biomass.",
+          "All use paths retain the requirement that Sunflower supplement rather than replace an age-appropriate complete poultry ration."
         ]
-       }
-    }
+      },
 
-},
+            templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Verified backyard Sunflower seed-yield trials",
+          "Backyard cleaned-seed yield per 100 square feet",
+          "Cultivar comparisons between oilseed and confection Sunflowers",
+          "Cultivar-specific mature-seed nutrient composition",
+          "Cultivar-specific hull percentage and kernel recovery",
+          "Cultivar-specific oil concentration",
+          "Cultivar-specific crude-protein measurements",
+          "Digestible amino-acid values for poultry",
+          "Small-flock whole-seed feeding trials",
+          "Small-flock whole-head enrichment trials",
+          "Whole-head consumption and waste measurements",
+          "Whole-seed versus cracked-seed poultry acceptance",
+          "Whole-seed versus dehulled-kernel poultry acceptance",
+          "Safe supplemental portion guidance for established adult chickens",
+          "Effects of Sunflower supplementation on complete-feed intake",
+          "Effects of Sunflower supplementation on body condition",
+          "Effects of Sunflower supplementation on egg production",
+          "Effects of Sunflower supplementation on egg weight",
+          "Effects of Sunflower supplementation on laying-hen nutrient balance",
+          "Backyard hand-threshing efficiency",
+          "Backyard seed-cleaning efficiency",
+          "Backyard dehulling efficiency",
+          "Backyard cracking and grinding efficiency",
+          "Drying loss under household conditions",
+          "Storage loss under humid household conditions",
+          "Whole-head storage stability",
+          "Whole-seed storage stability",
+          "Cracked-seed oxidation rate",
+          "Dehulled-kernel oxidation rate",
+          "Ground-seed oxidation rate",
+          "Stored-insect pressure under household conditions",
+          "Rodent losses during drying and storage",
+          "Wild-bird losses before harvest",
+          "Protective head-bag and netting comparisons",
+          "Lodging rates by cultivar and planting density",
+          "Disease losses under humid backyard conditions",
+          "Seed maturity and harvest timing by region",
+          "Container-grown dwarf Sunflower production trials",
+          "Minimum useful planting area by flock size",
+          "Minimum practical container volume by cultivar",
+          "Sunflower sprouting sanitation studies",
+          "Sunflower microgreen dry-matter recovery",
+          "Sunflower fodder-mat dry-matter recovery",
+          "Sunflower fodder spoilage and failure rates",
+          "Immature-plant poultry browsing trials",
+          "Postharvest flock-gleaning efficiency",
+          "Residue biomass yield and compost decomposition",
+          "Feed-cost savings by flock size",
+          "Economic return after labor and wildlife-protection costs"
+        ],
+
+        lastReviewed:
+          "2026-07-20",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "No unsupported minimum planting area has been assigned.",
+          "No unsupported container-size requirement has been assigned.",
+          "Physiological maturity is not treated as proof that seed is dry enough for sealed storage.",
+          "Oilseed and confection Sunflower types are not treated as nutritionally or physically identical.",
+          "Whole in-shell seed, dehulled kernels, cracked seed, home-ground seed, and commercial Sunflower meal remain separate products.",
+          "Commercial Sunflower meal values must not be applied automatically to homegrown whole or ground seed because commercial meal commonly follows oil extraction.",
+          "Whole-head, loose-seed, cracked-seed, dehulled-kernel, ground-seed, sprout, microgreen, fodder, grazing, gleaning, and biomass pathways remain separate because their labor, storage, safety, and feeding characteristics differ.",
+          "Fresh-weight gains during sprouting, microgreen production, and fodder production are not treated as equal dry-matter gains.",
+          "Storage-life categories are comparative planner values rather than guaranteed expiration periods.",
+          "Moldy, musty, heated, rancid, chemically treated, rodent-contaminated, or otherwise questionable material is excluded from every feed pathway.",
+          "Sunflower remains an energy- and fat-oriented supplement rather than a complete poultry ration.",
+          "Established adult chickens are the primary intended flock stage for whole seed and mature seed-head pathways.",
+          "Young chicks should continue receiving an age-appropriate complete starter ration.",
+          "The crop record contains enough information for planner comparisons, suitability scoring, conservative recommendations, and future field testing.",
+          "The record does not contain enough information to formulate a complete poultry ration.",
+          "Future Backyard Chicken Planner trials should replace null fields and qualitative estimates with measured small-scale production data."
+        ]
+      }
+    }
+  },
 
     ///////////////////////////////////////////////
     //
@@ -2008,4090 +8622,13496 @@ const BCP_FEED_CROPS = {
     //
     //
     //
-    //////////////////////////////////////////////
+    ///////////////////////////////////////////////
 
   "CROP-COWPEA": {
-    id: "CROP-COWPEA",
+    id:
+      "CROP-COWPEA",
 
-    name: "Cowpeas",
-    scientificName: "Vigna unguiculata",
+    name:
+      "Cowpeas",
 
-    category: "Protein-Oriented Legume",
-    cropType: "Annual",
-    seasonType: "Warm Season",
+    scientificName:
+      "Vigna unguiculata",
 
-    status: "Initial Research Complete",
+    category:
+      "Warm-Season Grain Legume",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Warm Season",
+
+    status:
+      "Initial Research Complete",
 
     summary:
-      "Cowpeas are heat- and drought-tolerant warm-season legumes that can provide edible leaves, immature pods, mature protein-rich seeds, poultry forage, and soil-building benefits through biological nitrogen fixation.",
+      "Cowpeas are heat-tolerant, drought-adapted warm-season annual legumes that can provide protein-oriented mature seed, edible immature peas and pods, tender leaves and shoots, seasonal poultry forage, household food, pollinator activity, rapid summer ground cover, weed competition, compost biomass, and biological nitrogen fixation. For backyard poultry, tender vegetative material and properly processed mature seed are the principal feed products. Cowpeas must remain supplemental because raw mature seed contains antinutritional factors, seed protein is limited in sulfur-containing amino acids, calcium is inadequate for laying hens, and neither seed nor forage provides a complete balanced poultry ration.",
 
     chickenUse: {
       edibleParts: [
-        "Mature seeds",
-        "Immature seeds and pods",
-        "Leaves",
-        "Tender forage growth"
+        "Properly processed mature seeds",
+        "Cooked mature seeds",
+        "Heat-treated mature seeds",
+        "Immature green seeds",
+        "Tender immature pods",
+        "Young leaves",
+        "Tender vine tips",
+        "Young vegetative forage",
+        "Postharvest residual peas"
       ],
 
       primaryValue: [
         "Protein-oriented seed",
-        "Carbohydrate energy",
-        "Lysine",
-        "Fresh forage",
-        "Soil improvement",
-        "Seasonal enrichment"
+        "Starch energy",
+        "Lysine contribution",
+        "Fresh warm-season forage",
+        "Tender pod supplementation",
+        "Seasonal enrichment",
+        "Household food",
+        "Nitrogen fixation",
+        "Summer soil cover",
+        "Compost biomass"
       ],
 
       feedingForms: [
-        "Properly cooked mature seeds",
-        "Heat-treated and ground seeds",
-        "Dehulled and roasted seeds",
-        "Limited amounts of fresh tender leaves",
-        "Controlled access to growing forage"
+        "Cooked mature peas",
+        "Properly heat-treated mature seed",
+        "Heat-treated and coarsely ground seed ingredient",
+        "Tender immature peas",
+        "Tender immature pods",
+        "Limited fresh leaves and vine tips",
+        "Cut-and-carry young forage",
+        "Controlled access to established vegetative growth",
+        "Postharvest gleaning"
       ],
 
       bestFor: [
-        "Adult chickens as a supplemental food",
-        "Warm-climate feed gardens",
-        "Growers seeking a protein-oriented crop",
-        "Seasonal forage plots",
-        "Gardens needing a nitrogen-fixing rotation crop"
+        "Established adult chickens",
+        "Warm-season feed gardens",
+        "Hot and drought-prone climates",
+        "Protein-oriented supplemental crop production",
+        "Fresh summer forage",
+        "Cut-and-carry feeding",
+        "Household food and flock integration",
+        "Nitrogen-fixing crop rotations",
+        "Summer cover-crop systems",
+        "Growers willing to process mature seed"
       ],
 
-      supplementOnly: true,
+      supplementOnly:
+        true,
 
       preparationNotes:
-        "Mature cowpea seeds should preferably be processed before being offered in meaningful quantities. Cooking, roasting, dehulling, grinding, or another validated processing method can reduce antinutritional factors and improve nutrient use. Allow cooked seeds to cool completely before offering them, and avoid seasoned or salted products.",
+        "Separate tender forage, immature pods, fresh peas, and mature dry seed because they require different harvesting and preparation. Fresh young leaves, tender vine tips, and immature pods may be offered promptly in limited supplemental quantities after inspection and cleaning. Mature dry seed should be sorted, cleaned, soaked when appropriate for the chosen process, and thoroughly cooked or subjected to another validated heat treatment before meaningful poultry use. Allow wet-processed seed to cool completely and drain before feeding. Prepare only manageable quantities, refrigerate cooked leftovers promptly, and discard spoiled material. Mature seed intended for dry storage must be fully dried before being sealed in an insect- and rodent-resistant container.",
 
       safetyNotes:
-        "Raw cowpea seeds contain protease inhibitors, non-starch polysaccharides, pectins, phenolic compounds, tannins, and other antinutritional factors that can reduce protein quality and nutrient digestibility. Do not assume that raw homegrown beans can directly replace soybean meal or a balanced poultry ration. Avoid moldy, spoiled, pesticide-contaminated, or improperly stored seed."
+        "Raw mature Cowpea seed contains protease inhibitors, tannins, phytate, lectin activity, non-starch polysaccharides, phenolic compounds, and other antinutritional factors whose concentrations vary by cultivar and seed-coat characteristics. Meaningful raw-seed feeding is not recommended by this planner. Cooking or another validated heat treatment can reduce important heat-labile factors, but processing does not make Cowpeas nutritionally complete. Excessive heat may also reduce protein quality. Never feed moldy, musty, fermented, slimy, insect-damaged, rodent-contaminated, chemically treated, pesticide-contaminated, salted, seasoned, sweetened, canned-in-brine, or otherwise spoiled Cowpeas. Complete poultry feed must remain the nutritional foundation."
     },
 
     nutrition: {
       basis:
-        "Approximate mature whole-seed values expressed primarily on a dry-matter basis. Values vary by variety, environment, seed coat, maturity, and processing method.",
+        "Approximate values for mature whole Cowpea seed, primarily expressed on a dry-matter basis. Composition varies substantially with cultivar, seed-coat color and thickness, growing environment, maturity, storage, dehulling, soaking, germination, cooking, roasting, extrusion, fermentation, and analytical method. Cowpea forage, leaves, immature pods, fresh peas, dry whole seed, dehulled seed, cooked seed, and processed meal must not be treated as nutritionally identical products.",
 
       crudeProteinPercent:
-        "Approximately 25.2% of dry matter on average; reported samples ranged from about 18.2% to 30.4%",
+        "Approximately 25% of dry matter on average for mature whole seed, with substantial variation among cultivars and samples",
 
       fatPercent:
-        "Approximately 1.6% ether extract on a dry-matter basis",
+        "Approximately 1.5% to 2% ether extract on a dry-matter basis for mature whole seed",
 
       fiberPercent:
-        "Approximately 5.6% crude fiber on a dry-matter basis; average NDF approximately 16.6%",
+        "Approximately 5% to 6% crude fiber and approximately 16% to 17% neutral-detergent fiber on a dry-matter basis for mature whole seed; values vary with seed coat, cultivar, and processing",
+
+      starchPercent:
+        "Approximately 48% of dry matter on average for mature whole seed, with substantial sample and cultivar variation",
 
       calciumPercent:
-        "Approximately 0.11% of dry matter, based on an average of 1.1 g/kg DM",
+        "Approximately 0.11% of dry matter based on an average near 1.1 grams per kilogram of dry matter",
 
       phosphorusPercent:
-        "Approximately 0.42% of dry matter, based on an average of 4.2 g/kg DM",
+        "Approximately 0.42% of dry matter based on an average near 4.2 grams per kilogram of dry matter; total phosphorus is not equivalent to phosphorus available to poultry",
+
+      metabolizableEnergy:
+        "Moderate for a grain legume and substantially influenced by seed coat, fiber, antinutritional factors, processing method, and diet formulation; Cowpea should not be treated as an energy equivalent to Corn or as a protein equivalent to properly processed soybean meal",
 
       notableNutrients: [
-        "Relatively high lysine for a grain legume",
-        "Approximately 47.8% starch on a dry-matter basis",
+        "Moderately high crude protein",
+        "Starch",
+        "Lysine",
         "Phosphorus",
         "Potassium",
         "Magnesium",
         "Iron",
         "Zinc",
-        "Folate and other B vitamins in mature seed"
+        "Copper",
+        "Manganese",
+        "Folate",
+        "Other B vitamins",
+        "Dietary fiber"
       ],
 
-      limitations: [
-        "Low in sulfur-containing amino acids, especially methionine and cysteine",
-        "Contains protease inhibitors and other antinutritional factors",
-        "Raw-seed nutrient digestibility may be lower than the crude-protein number suggests",
-        "Calcium content is far below the needs of laying hens when considered as a primary feed",
-        "Mineral phosphorus is not necessarily fully available to poultry",
-        "Seed, forage, pods, and cooked beans have substantially different nutrient profiles",
-        "Cowpea alone cannot provide a nutritionally complete poultry diet"
-      ]
+      aminoAcidStrengths: [
+        "Provides more lysine than most cereal grains",
+        "Can complement lysine-poor cereal ingredients within a properly formulated ration",
+        "Contributes plant protein to diversified household and homestead food systems"
+      ],
+
+      aminoAcidLimitations: [
+        "Methionine is limiting for poultry",
+        "Cysteine and total sulfur-containing amino acids are limited",
+        "Cowpea seed does not provide a complete poultry amino-acid balance",
+        "Crude-protein percentage does not establish digestible amino-acid adequacy",
+        "Antinutritional factors can reduce protein digestion and amino-acid availability",
+        "Excessive heating may damage heat-sensitive amino acids and reduce protein quality",
+        "Cowpea cannot be treated as a direct nutritional substitute for soybean meal without complete ration formulation"
+      ],
+
+      betaGlucanConcern:
+        false,
+
+      phytateConcern:
+        true,
+
+      hullFiberConcern:
+        true,
+
+      notableAntinutritionalFactors: [
+        "Trypsin inhibitors",
+        "Chymotrypsin inhibitors",
+        "Lectin activity",
+        "Tannins",
+        "Phytate",
+        "Phenolic compounds",
+        "Non-starch polysaccharides",
+        "Pectic substances",
+        "Seed-coat fiber"
+      ],
+
+      processingEffects: [
+        "Cooking and other suitable heat treatments can reduce important heat-labile antinutritional factors.",
+        "The effectiveness of heat treatment depends on temperature, moisture, duration, seed size, batch size, and processing uniformity.",
+        "Underprocessing may leave excessive antinutritional activity.",
+        "Excessive heating can reduce protein quality and damage amino acids.",
+        "Soaking may shorten cooking time and remove some water-soluble compounds, but soaking alone should not be treated as complete processing for mature poultry-feed seed.",
+        "Discarding soak water may remove some soluble compounds but also removes soluble nutrients.",
+        "Dehulling reduces seed-coat fiber and may reduce tannin concentration in cultivars whose tannins are concentrated in the seed coat.",
+        "Dehulling increases nutrient density but adds labor and creates a separate hull byproduct.",
+        "Grinding improves mixing but does not independently neutralize antinutritional factors.",
+        "Grinding raw seed before heat treatment can improve processing uniformity only when the selected method reliably heats the entire batch.",
+        "Grinding after heat treatment increases exposed surface area and shortens practical storage life.",
+        "Germination changes moisture, enzyme activity, antinutritional-factor concentration, and nutrient distribution but does not create additional dry matter.",
+        "Fermentation may alter antinutritional factors, but household fermentation should not be considered validated without a controlled method.",
+        "Wet cooked seed spoils far more rapidly than dry whole seed.",
+        "Heat-treated dry seed must be cooled before sealed storage to prevent condensation."
+      ],
+
+      poultryLimitations: [
+        "Raw mature seed contains antinutritional factors",
+        "Methionine and other sulfur-containing amino acids are limiting",
+        "Lower nutritional value than properly processed soybean meal",
+        "Moderate rather than exceptionally high metabolizable energy",
+        "Seed-coat fiber reduces usable nutrient density",
+        "Phytate reduces mineral availability",
+        "Total phosphorus is not fully available to poultry",
+        "Calcium is inadequate for laying hens",
+        "Processing requirements increase labor and cost",
+        "Improper heat treatment may be ineffective",
+        "Excessive heat treatment may damage protein quality",
+        "Cooked seed has a short safe holding period",
+        "Fresh forage is less nutrient-dense than dry seed",
+        "Neither seed nor forage provides a complete ration",
+        "Young birds are less appropriate for informal Cowpea supplementation",
+        "A universal backyard feeding percentage is not supported"
+      ],
+
+      directFacts: {
+        primaryNutritionalRole:
+          "protein-and-starch-oriented-grain-legume",
+
+        highProteinFeed:
+          true,
+
+        highFatFeed:
+          false,
+
+        highFiberRelativeToCorn:
+          true,
+
+        betaGlucansPresent:
+          false,
+
+        lowerEnergyThanCorn:
+          true,
+
+        lowerEnergyThanWheat:
+          true,
+
+        hullLessVarietiesAvailable:
+          false,
+
+        enzymeSupplementationCanImproveUse:
+          false,
+
+        completeFeed:
+          false,
+
+        rawMatureSeedRecommended:
+          false,
+
+        heatProcessingRecommended:
+          true,
+
+        dehullingCanReduceFiber:
+          true,
+
+        lysineStrengthRelativeToCereals:
+          true,
+
+        methionineLimitation:
+          true,
+
+        cysteineLimitation:
+          true,
+
+        calciumAdequateForLayingHens:
+          false,
+
+        seedAndForageNutritionallyEquivalent:
+          false,
+
+        notes: [
+          "Cowpea is a protein-oriented grain legume, but it is not nutritionally equivalent to soybean meal.",
+          "Mature seed supplies both protein and starch.",
+          "Cowpea seed generally contributes more lysine than cereal grains.",
+          "Methionine and total sulfur-containing amino acids remain important limitations for poultry.",
+          "Raw mature seed should not be treated as a routine unprocessed poultry grain.",
+          "The concentration and biological importance of antinutritional factors vary among cultivars.",
+          "Dark or strongly pigmented seed coats may contain more tannins than low-tannin types, but seed color alone is not a complete feed-safety test.",
+          "Dehulling may improve nutrient density and reduce seed-coat-associated tannins and fiber.",
+          "Heat treatment must be sufficient to reduce heat-labile antinutritional factors without severely damaging protein quality.",
+          "Boiling, roasting, extrusion, autoclaving, and other research processing methods are not automatically interchangeable.",
+          "Household cooking produces a wet perishable product rather than a shelf-stable dry feed.",
+          "Published poultry inclusion levels apply to complete experimentally formulated diets and should not be converted into a universal backyard treat percentage.",
+          "Commercial broiler findings should not be applied automatically to laying hens, breeding flocks, young chicks, or unbalanced household mixtures.",
+          "The planner should distinguish occasional cooked-seed supplementation from use as a calculated ration ingredient.",
+          "The planner should also distinguish mature seed from leaves, young forage, immature pods, fresh peas, sprouts, and crop residue."
+        ]
+      }
     },
 
-    growing: {
-      sunlight: "Full sun",
+        growing: {
+      sunlight:
+        "Full sun",
 
-      soilTemperatureMinimumF: 65,
+      soilTemperatureMinimumF:
+        65,
 
       idealSoilTemperatureF:
-        "Approximately 65°F or warmer for dependable outdoor germination",
+        "Approximately 65°F to 70°F or warmer for dependable germination and rapid establishment",
 
-      frostTolerance: "Very Low",
+      frostTolerance:
+        "Very Low",
 
-      heatTolerance: "High",
+      winterHardiness:
+        "None; Cowpeas are frost-sensitive warm-season annuals",
+
+      heatTolerance:
+        "Very High",
 
       droughtTolerance:
-        "High after establishment, although adequate moisture supports better flowering, pod set, and seed development",
+        "High after establishment, although drought during flowering, pod set, and seed filling can substantially reduce yield",
 
-      soilPHMinimum: 5.5,
-      soilPHMaximum: 6.5,
+      salinityTolerance:
+        "Low to Moderate",
+
+      waterloggingTolerance:
+        "Low",
+
+      soilPHMinimum:
+        5.5,
+
+      soilPHMaximum:
+        7.0,
 
       waterNeeds:
-        "Low to moderate after establishment. Water thoroughly during germination and establishment; prolonged drought during flowering and pod filling may reduce yield.",
+        "Low to moderate overall after establishment, with dependable moisture especially important during germination, early establishment, flowering, pod set, and seed filling",
 
-      directSow: true,
-      transplantRecommended: false,
+      directSow:
+        true,
 
-      daysToFirstHarvestMinimum: 40,
-      daysToFirstHarvestMaximum: 59,
+      transplantRecommended:
+        false,
 
-      daysToMaturityMinimum: 110,
-      daysToMaturityMaximum: 120,
+      springVarietiesAvailable:
+        true,
+
+      winterVarietiesAvailable:
+        false,
+
+      facultativeVarietiesAvailable:
+        false,
+
+      twoRowVarietiesAvailable:
+        false,
+
+      sixRowVarietiesAvailable:
+        false,
+
+      coveredVarietiesAvailable:
+        false,
+
+      hullLessVarietiesAvailable:
+        false,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      daysToPollinationAfterEmergence:
+        null,
 
       plantSpacingInches:
-        "Approximately 1.5 inches within the row in closely planted production guidance; wider spacing may be appropriate for spreading, climbing, or home-garden varieties",
+        "Variety- and use-dependent; compact bush types may be planted relatively closely, while spreading, trailing, climbing, forage, or highly branched cultivars require substantially more room",
 
       rowSpacingInches:
-        "Approximately 20 to 30 inches",
+        "Approximately 20 to 36 inches for many row-grown garden and field uses, with wider spacing where cultivation, spreading growth, trellising, or hand harvest requires additional access",
 
       plantingDepthInches:
-        "Approximately 1/2 inch",
+        "Approximately 1 to 2 inches depending on soil texture, seedbed moisture, and planting conditions",
 
       successionPlanting:
-        "Possible in sufficiently long, warm growing seasons",
+        true,
 
       regrowthAfterHarvest:
-        "Possible after light defoliation when adequate buds and growing points remain"
+        "Limited regrowth may occur after light vegetative cutting or controlled grazing when sufficient leaves, nodes, and growing points remain, but severe defoliation can delay flowering, reduce pod production, or kill young plants",
+
+      tillering:
+        false,
+
+      windPollinated:
+        false,
+
+      selfPollinated:
+        true,
+
+      directFacts: {
+        warmSeasonAnnual:
+          true,
+
+        springAndSummerPlantingSuitable:
+          true,
+
+        frostFreeGrowingSeasonRequired:
+          true,
+
+        directSeedingPreferred:
+          true,
+
+        transplantingUsuallyUnnecessary:
+          true,
+
+        floweringHighlyVarietyDependent:
+          true,
+
+        insectPollinatedBenefit:
+          true,
+
+        selfCompatibleManyVarieties:
+          true,
+
+        optimalGrowingTemperatureMaximumF:
+          null,
+
+        excessiveHeatDuringFloweringConcern:
+          true,
+
+        deepRootSystem:
+          true,
+
+        wellDrainedSoilRequired:
+          true,
+
+        nitrogenFixingLegume:
+          true,
+
+        inoculationMayImproveNodulation:
+          true,
+
+        bushVarietiesAvailable:
+          true,
+
+        semiViningVarietiesAvailable:
+          true,
+
+        trailingVarietiesAvailable:
+          true,
+
+        climbingVarietiesAvailable:
+          true,
+
+        dayLengthSensitivityVarietyDependent:
+          true,
+
+        notes: [
+          "Cowpea is a frost-sensitive warm-season annual legume.",
+          "Direct seeding is normally preferred because the seed is large, establishes readily in warm soil, and seedlings can be damaged by unnecessary root disturbance.",
+          "Plant only after frost danger has passed and the soil has warmed sufficiently for rapid emergence.",
+          "Cold wet soil can delay germination, increase seed decay, reduce stand establishment, and weaken early growth.",
+          "A soil temperature near 65°F is a practical minimum for dependable backyard establishment rather than an absolute biological germination threshold.",
+          "Warmer soil generally produces faster and more uniform emergence when moisture is adequate.",
+          "Cowpeas are among the most heat-adapted annual food and forage legumes.",
+          "Strong heat tolerance does not eliminate the need for moisture during flowering, pod set, and seed filling.",
+          "Extreme heat combined with severe drought can cause flower abortion, poor pod set, reduced seed size, shortened pod filling, and early senescence.",
+          "Cowpeas generally tolerate drought better than common Beans, Soybeans, and many garden vegetables after establishment.",
+          "Drought tolerance reflects survival and continued growth rather than guaranteed seed yield.",
+          "Cowpea roots can explore substantial soil volume where soil is deep, loose, and well drained.",
+          "Hardpan, compaction, shallow bedrock, saturated soil, and established tree roots can restrict rooting and reduce drought resilience.",
+          "Waterlogged soil reduces root oxygen, weakens plants, interferes with nodulation, and increases root-rot risk.",
+          "Cowpeas can perform in relatively low-fertility soil but should not be described as requiring no fertility.",
+          "Nitrogen fixation depends on compatible rhizobia, suitable soil pH, adequate phosphorus, potassium, sulfur, micronutrients, moisture, aeration, and healthy roots.",
+          "Cowpea-group Bradyrhizobium inoculation may improve nodulation where compatible legumes have not recently been grown.",
+          "Large applications of readily available nitrogen may reduce nodulation and encourage excessive vegetative growth.",
+          "Cowpea growth habit varies substantially among compact bush, erect, semi-erect, semi-vining, trailing, prostrate, and climbing cultivars.",
+          "Growth habit affects spacing, weed suppression, harvest access, trellising, lodging, airflow, pod location, and suitability for grazing.",
+          "Bush and erect cultivars are generally easier to manage for concentrated pod or dry-seed harvest.",
+          "Trailing and forage cultivars may provide greater ground cover and vegetative biomass.",
+          "Climbing and long-vining cultivars may use fences or trellises but can spread into neighboring crops.",
+          "Some Cowpea cultivars flower and mature reliably across a broad range of day lengths, while others are more sensitive to photoperiod.",
+          "Photoperiod-sensitive cultivars may produce excessive vine growth or delayed flowering when planted outside their adapted latitude or season.",
+          "Cultivar maturity should be verified locally rather than represented by a single species-wide days-to-maturity range.",
+          "Days to edible leaves, immature pods, fresh peas, and mature dry seed are separate harvest stages.",
+          "Fresh-pod maturity cannot be used as a dry-seed maturity value.",
+          "Forage cultivars should not automatically be treated as high-yielding dry-seed cultivars.",
+          "Vegetable cultivars selected for tender pods or fresh peas should not automatically be treated as the best poultry-feed seed cultivars.",
+          "Seed-production cultivars should be selected for dependable flowering, pod set, maturity, dry-down, seed quality, and disease performance.",
+          "Cowpea flowers are largely self-pollinating, but bees and other insects may visit flowers and can contribute to pollination activity.",
+          "Cross-pollination can occur even though self-pollination is common.",
+          "Successive planting may extend foliage, pod, or fresh-pea harvest where the remaining warm season is long enough.",
+          "Late succession plantings may produce vegetative forage but fail to mature dry seed before frost.",
+          "Light vegetative harvest may allow regrowth when adequate nodes and growing points remain.",
+          "Repeated or severe defoliation can reduce root reserves, nitrogen fixation, flowering, pod set, seed yield, and plant survival.",
+          "Plants grown for mature dry seed should receive less vegetative harvesting than plants grown primarily for forage.",
+          "Direct poultry access should be delayed until plants are well established.",
+          "Young Cowpea seedlings can be uprooted, trampled, or completely consumed by chickens.",
+          "Commercial seeding rates, forage yields, and grain yields should not be converted directly into guaranteed backyard production."
+        ]
+      }
     },
 
     regionalPlanting: {
       coldNorth: {
         plantingWindow:
-          "Direct sow after all frost danger has passed and soil reaches approximately 65°F. Select an early-maturing variety because mature dry seed may require 110 to 120 days.",
+          "Direct sow only after all frost danger has passed and soil has warmed to approximately 65°F or more. Use the warmest available full-sun location and select an early, compact, photoperiod-insensitive cultivar.",
+
         harvestWindow:
-          "Leaves may be harvested during summer, pods from mid- to late summer, and mature seed near the end of the frost-free season if the variety reaches maturity."
+          "Young leaves and tender shoots may be harvested during summer. Immature pods and fresh peas may mature from midsummer onward. Dependable mature dry-seed harvest may be difficult unless an early cultivar receives a sufficiently long warm season before autumn frost.",
+
+        varietyGuidance:
+          "Prioritize early maturity, compact or bush growth, photoperiod insensitivity, cool-night adaptation, disease resistance, and locally demonstrated dry-seed maturity. Avoid long-season tropical or strongly photoperiod-sensitive cultivars when mature seed is the goal."
       },
 
       midwestNortheast: {
         plantingWindow:
-          "Direct sow after the final frost once soil has warmed to approximately 65°F, commonly from late spring into early summer.",
+          "Direct sow after the final spring frost once soil is consistently warm, commonly from late spring into early summer. Avoid planting into cold wet soil.",
+
         harvestWindow:
-          "Leaves in early to midsummer, fresh pods in midsummer, and mature seed from late summer into early fall."
+          "Tender foliage may be harvested in early to midsummer, immature pods and fresh peas during midsummer through late summer, and mature dry seed from late summer into early autumn where the selected cultivar reaches full maturity.",
+
+        varietyGuidance:
+          "Choose an early or midseason bush, semi-erect, or compact seed-producing cultivar with resistance or tolerance to locally important root rots, wilts, viruses, leaf diseases, and insects."
       },
 
       upperSouth: {
         plantingWindow:
-          "Direct sow in late spring after frost danger and once the soil is warm. Additional plantings may be possible through early summer.",
+          "Direct sow after frost danger has passed and the soil has warmed thoroughly, commonly from mid- to late spring. Additional plantings may be made into early summer where enough season remains for the intended forage, pod, or dry-seed harvest.",
+
         harvestWindow:
-          "Leaves and tender forage during summer, fresh pods in summer, and mature seed from late summer into fall."
+          "Leaves, shoots, and immature pods may be harvested throughout summer. Fresh peas and mature dry seed generally follow from midsummer into autumn depending on cultivar and planting date.",
+
+        varietyGuidance:
+          "Bush, semi-vining, forage, and seed-producing types can all perform well. Prioritize heat tolerance, resistance to root-knot nematodes where needed, dependable pod set, disease resistance, and harvest form."
       },
 
       deepSouth: {
         plantingWindow:
-          "Direct sow from spring into early summer after frost danger has passed. In long-season areas, later plantings may also mature before fall frost.",
+          "Plant from spring into early summer after frost danger and soil warming. In very long-season areas, later plantings may provide forage, fresh pods, or autumn seed, but local pest pressure, rainfall, humidity, and photoperiod response should guide timing.",
+
         harvestWindow:
-          "Leaves and pods through the warm season, with mature dry seed commonly harvested from summer into fall depending on planting date."
+          "Tender foliage, immature pods, and fresh peas may be available through much of the warm season. Mature dry seed may be harvested from summer into autumn as pods dry, with timing strongly affected by cultivar and planting date.",
+
+        varietyGuidance:
+          "Choose heat-adapted cultivars with resistance or tolerance to root-knot nematodes, Fusarium wilt, bacterial and fungal diseases, aphids, Cowpea curculio, and other locally important pests. Photoperiod response should be verified before selecting tropical or forage-oriented types for seed production."
       },
 
       southwest: {
         plantingWindow:
-          "Plant after frost once soil reaches approximately 65°F. Irrigation may be needed for establishment and during flowering despite the crop’s drought tolerance.",
+          "Direct sow after frost once soil is warm. At low elevations, time planting so establishment and flowering do not coincide with the most extreme heat where irrigation is limited. Supplemental irrigation may be needed despite the crop's drought adaptation.",
+
         harvestWindow:
-          "Summer through fall, depending on elevation, planting date, water availability, and heat."
+          "Foliage, immature pods, and fresh peas may be harvested during summer. Mature seed harvest may extend from late summer into autumn depending on elevation, planting date, heat, irrigation, and cultivar.",
+
+        varietyGuidance:
+          "Prioritize drought adaptation, heat tolerance, early or intermediate maturity, efficient water use, root-knot nematode resistance, and reliable pod set under hot dry conditions."
       },
 
       pacificNorthwest: {
         plantingWindow:
-          "Plant only after soil has warmed to approximately 65°F. Use early varieties and the warmest available garden location in cool-summer areas.",
+          "Plant only after the soil has warmed to approximately 65°F. Use raised beds, dark mulch, row cover during establishment, or another safe soil-warming method where spring and early summer remain cool.",
+
         harvestWindow:
-          "Leaves and immature pods may be more dependable than mature dry seed in cooler or shorter-season locations."
+          "Young foliage and immature pods may be more dependable than mature dry seed in cool coastal, maritime, or short-season locations. Dry-seed harvest requires an early cultivar and a warm site with adequate autumn dry-down.",
+
+        varietyGuidance:
+          "Select very early, compact, photoperiod-insensitive cultivars and use the warmest full-sun location available. Avoid long-season forage or tropical cultivars when mature seed is required."
       },
 
       coastalWest: {
         plantingWindow:
-          "Plant after frost when soil is consistently warm. Inland and warmer coastal valleys are generally better suited than cool, foggy locations.",
+          "Plant after frost when soil is consistently warm. Inland valleys and warm protected coastal locations are generally more suitable than cool, foggy, wind-exposed areas.",
+
         harvestWindow:
-          "Summer through fall, depending on local warmth and variety maturity."
-      }
+          "Leaves and immature pods may be harvested through summer, while fresh peas and dry seed may mature from late summer into autumn where temperatures remain warm enough.",
+
+        varietyGuidance:
+          "Choose early or midseason cultivars with dependable flowering under the local day length, tolerance of cool coastal nights where relevant, and resistance to diseases favored by fog or prolonged leaf wetness."
+      },
+
+      highElevation: {
+        plantingWindow:
+          "Direct sow only after frost danger has passed and soil has warmed thoroughly. Season-extension methods may improve establishment, but the remaining frost-free period must still be long enough for the intended harvest stage.",
+
+        harvestWindow:
+          "Tender forage and immature pods may be achievable during the short summer. Mature dry seed is less dependable and should be attempted only with very early cultivars in warm protected sites.",
+
+        varietyGuidance:
+          "Use very early, compact, photoperiod-insensitive cultivars with rapid emergence and locally demonstrated maturity. Mature-seed production may be impractical where cool nights, early frost, or limited heat accumulation dominate."
+      },
+
+      regionalNotes: [
+        "Cowpeas should not be planted according to calendar date alone; soil warmth and frost risk are critical.",
+        "Cold wet soil is a major establishment hazard.",
+        "Warm-season duration must be matched to the intended harvest stage.",
+        "Leaf harvest, immature-pod harvest, fresh-pea harvest, and mature dry-seed harvest require progressively longer seasons.",
+        "An area suitable for summer foliage may still be unsuitable for dependable dry-seed production.",
+        "Cultivar maturity and photoperiod response are especially important in northern, high-elevation, and cool coastal climates.",
+        "Bush and early seed-producing cultivars are generally more dependable in short seasons.",
+        "Trailing, climbing, and forage cultivars may require longer seasons and more space.",
+        "Hot humid regions support vigorous growth but may experience severe insect, nematode, bacterial, fungal, and storage problems.",
+        "Hot dry regions may require irrigation during establishment, flowering, pod set, and seed filling.",
+        "Drought-tolerant plants can survive conditions that still produce poor pod and seed yield.",
+        "Late-season irrigation may support seed filling but can interfere with pod drying if continued excessively near harvest.",
+        "Repeated rainfall during pod maturity can increase staining, sprouting, mold, pod decay, and harvest loss.",
+        "Dry pods should be harvested promptly where shattering, insects, storms, or autumn rainfall threaten the crop.",
+        "Cowpea curculio pressure can be especially serious in parts of the southeastern United States.",
+        "Root-knot nematodes can substantially reduce production in warm regions.",
+        "Cultivar resistance or tolerance is often more practical than attempting to manage severe pest pressure after planting.",
+        "Local Extension variety trials and regional seed recommendations should guide cultivar selection.",
+        "Seed purchased for planting must be untreated if any harvested seed, sprouts, forage, pods, or crop residue may enter the poultry or household-food system.",
+        "The planner should eventually connect regional recommendations to local frost dates, soil temperatures, pest pressure, cultivar maturity, and photoperiod response."
+      ]
     },
 
-    spaceAndYield: {
-      plantsPer10SquareFeet: 38,
-      plantsPer50SquareFeet: 192,
-      plantsPer100SquareFeet: 384,
+        spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
 
-      expectedYieldPerPlantMinimumLbs: null,
-      expectedYieldPerPlantMaximumLbs: null,
+      plantsPer50SquareFeet:
+        null,
 
-      expectedYieldPer100SquareFeetMinimumLbs: null,
-      expectedYieldPer100SquareFeetMaximumLbs: null,
+      plantsPer100SquareFeet:
+        null,
 
-      edibleYieldPercent: null,
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      hullPercentage:
+        null,
+
+      bushelWeightLbs:
+        60,
 
       storageLife:
-        "Properly dried mature seed may store for many months when protected from moisture, insects, heat, and rodents",
+        "Potentially many months to more than one year when mature dry seed is fully dried, cleaned, cooled, protected from insects and rodents, and stored in a cool, dark, dry, food-safe container; practical storage life decreases rapidly after cooking, cracking, grinding, germination, or moisture exposure",
 
       storageMethod:
-        "Allow pods and seeds to mature and dry thoroughly. Shell and clean the seed, then store it in a cool, dry, dark location inside a sealed food-safe and rodent-resistant container. Inspect periodically for insects, condensation, mold, or off odors.",
+        "Allow pods to mature and dry as completely as weather permits. Harvest before prolonged rain, severe insect damage, pod shattering, or seed deterioration. Shell the pods, remove chaff, damaged seed, insect-infested seed, stones, and foreign material, then verify that the seed is fully dry before storage. Store sound whole dry seed in sealed food-safe insect- and rodent-resistant containers in a cool, dark, dry location. Inspect periodically for condensation, heating, musty odor, mold, seed weevils, bruchid beetles, rodents, or other deterioration.",
 
       yieldNotes:
-        "Plant-density estimates are calculated from approximately 1.5 inches between plants and a midpoint row spacing of 25 inches, based on University of Minnesota Extension guidance for closely planted cowpeas. This produces estimated populations of approximately 38 plants per 10 square feet, 192 plants per 50 square feet, and 384 plants per 100 square feet. These figures are most appropriate for compact, erect, or semi-erect varieties managed in rows. Spreading, trailing, climbing, forage-oriented, or widely branched varieties may require substantially more room. USDA plant guidance reports roughly 2,500 to 4,500 pounds of forage dry matter per acre per year under cover-crop or forage conditions, but that figure should not be converted directly into backyard edible-seed yield. Seed yield remains unverified because it varies greatly by cultivar, growth habit, fertility, moisture, pest pressure, harvest stage, and whether the crop is managed for forage or grain."
+        "Cowpea yield varies greatly with cultivar, growth habit, planting density, intended use, photoperiod response, soil fertility, nodulation, water, heat, pest pressure, disease, grazing, foliage harvest, pod harvest timing, seed shattering, shelling losses, insect damage, drying conditions, and storage losses. Commercial grain, forage, hay, and cover-crop yields should not be converted directly into guaranteed backyard pounds per plant or pounds per square foot. Dependable backyard feed-yield values remain null until measured small-plot evidence is available.",
+
+      densityNotes:
+        "Cowpeas may be grown as individually spaced bush plants, closely planted rows, trailing ground cover, trellised vines, forage stands, or field-scale grain plantings. Plant density should be matched to cultivar growth habit and intended harvest. Compact erect types may tolerate closer spacing, while long-vining, spreading, climbing, forage, or highly branched types require substantially more room. One universal plants-per-square-foot value is not defensible.",
+
+      harvestProducts: [
+        "young-leaves",
+        "tender-vine-tips",
+        "immature-pods",
+        "fresh-green-peas",
+        "mature-dry-seed",
+        "whole-dry-pods",
+        "green-forage",
+        "hay",
+        "cover-crop-biomass",
+        "postharvest-residual-peas",
+        "household-food"
+      ],
+
+      harvestByproducts: [
+        "Dry pod hulls",
+        "Seed coats",
+        "Broken seed",
+        "Screenings",
+        "Coarse mature vines",
+        "Leaves",
+        "Root biomass",
+        "Nodulated roots",
+        "Chaff"
+      ],
+
+      byproductNotes: [
+        "Clean tender leaves and shoots may have supplemental forage value, while coarse mature vines are less digestible and should not be treated as concentrated poultry feed.",
+        "Dry pod hulls and seed coats are fibrous and provide substantially less nutritional value than the seed.",
+        "Screenings may concentrate insect-damaged seed, weed seed, stones, soil, moldy material, or treated seed and require careful inspection.",
+        "Healthy crop residue may contribute compost, mulch, soil cover, or grazing value.",
+        "Diseased, pesticide-contaminated, moldy, or heavily insect-infested residue should not enter poultry-feed pathways.",
+        "Removing nearly all aboveground biomass also removes much of the nitrogen and mineral value that could otherwise return to the soil."
+      ],
+
+      directFacts: {
+        typicallyPlantedAsIndividualPlants:
+          false,
+
+        typicallyPlantedAsDenseStand:
+          false,
+
+        individualPlantSpacingUseful:
+          true,
+
+        growthHabitAffectsDensity:
+          true,
+
+        commercialYieldConversionToBackyardNotSupported:
+          true,
+
+        producesHarvestablePods:
+          true,
+
+        producesHarvestableDrySeed:
+          true,
+
+        forageBiomassProduced:
+          true,
+
+        podShatteringPossible:
+          true,
+
+        storedSeedInsectRisk:
+          true,
+
+        notes: [
+          "Cowpea does not fit a single planting-density model.",
+          "Bush and erect vegetable or grain cultivars may be managed as row-grown individual plants.",
+          "Forage and cover-crop cultivars may be broadcast or drilled as denser stands.",
+          "Trailing and prostrate cultivars can spread across substantial ground area.",
+          "Climbing cultivars may occupy less ground when trained vertically but require support and harvest access.",
+          "Spacing affects canopy closure, weed suppression, airflow, disease, pod location, harvest access, lodging, vine tangling, and seed yield.",
+          "Very dense stands may produce strong ground cover but can increase humidity, disease, tangled growth, and difficult pod harvest.",
+          "Very wide spacing may produce larger individual plants but leave soil exposed and reduce early weed suppression.",
+          "Plants harvested repeatedly for leaves or grazing may produce less mature seed.",
+          "Plants managed for dry grain should generally be protected from repeated defoliation during flowering and pod filling.",
+          "Immature-pod yield and mature-seed yield are different production measurements.",
+          "Fresh forage weight contains substantial water and must not be compared directly with dry-seed weight.",
+          "Commercial forage dry-matter yields should not be treated as edible poultry-feed yield.",
+          "The standard United States test weight for Cowpeas is commonly represented as 60 pounds per bushel, but bushel weight does not predict backyard yield.",
+          "Dry pods may shatter as they become fully mature, especially under alternating wet and dry weather.",
+          "Prompt harvest may reduce seed loss from shattering, insects, storms, and wildlife.",
+          "Stored whole seed is vulnerable to bruchid beetles and other stored-seed insects.",
+          "No dependable backyard pounds-per-plant or pounds-per-square-foot guarantee is stored."
+        ]
+      }
     },
 
     economics: {
       seedCostEstimate:
-        "Generally low to moderate, depending on whether seed is purchased as a garden variety, food-grade dry bean, wildlife planting, or bulk agricultural seed",
+        "Usually low to moderate when purchased as untreated garden, food, cover-crop, forage, wildlife, or bulk agricultural seed; specialty heirloom, organic, vegetable, forage, nematode-resistant, early-maturing, photoperiod-insensitive, or regionally adapted cultivars may cost more",
 
       equipmentCostEstimate:
-        "Low for bush or semi-erect varieties; climbing or trailing varieties may require support. Optional expenses include inoculant, irrigation, drying equipment, shelling tools, and storage containers.",
+        "Low for a small directly seeded bush planting; moderate where the grower purchases Cowpea-group inoculant, irrigation equipment, trellising, wildlife fencing, insect-control materials, drying racks, shelling equipment, cooking equipment, roasting equipment, a grain mill, screens, fans, moisture meters, or sealed insect- and rodent-resistant storage containers",
 
-      irrigationCostLevel: "Low to Moderate",
+      irrigationCostLevel:
+        "Low to Moderate",
 
       laborLevel:
-        "Moderate to High when mature seed is hand-picked, dried, shelled, processed, and stored",
+        "Low to moderate for fresh foliage or immature-pod harvest; moderate to high for dry seed that must be protected, picked, dried, shelled, cleaned, processed, cooked or heat treated, cooled, portioned, and stored",
 
-      potentialFeedSavings: null,
+      potentialFeedSavings:
+        null,
+
+      economicAdvantages: [
+        "Seed is generally affordable",
+        "Large seed is easy to plant by hand",
+        "Direct sowing avoids transplant costs",
+        "Cowpeas perform well in summer heat",
+        "Established plants tolerate limited irrigation",
+        "Compatible rhizobia can provide biological nitrogen fixation",
+        "The crop can provide household food and poultry supplementation",
+        "Tender foliage and pods require little processing",
+        "Dry seed can be stored without electricity when properly dried",
+        "Dense growth can suppress weeds",
+        "Trailing growth can protect soil",
+        "Crop residue can contribute compost biomass",
+        "Cowpeas can fit warm-season crop rotations",
+        "Some cultivars provide forage or hay",
+        "Open-pollinated varieties may support seed saving",
+        "The crop can provide value where cool-season legumes fail in summer heat"
+      ],
+
+      economicLimitations: [
+        "Mature seed requires processing before meaningful poultry use",
+        "Cooking requires fuel, water, time, and cleanup",
+        "Roasting or other dry heat treatment requires careful temperature control",
+        "Improper processing may leave antinutritional activity",
+        "Excessive heating may reduce protein quality",
+        "Cooked seed is highly perishable",
+        "Hand picking dry pods may require repeated harvests",
+        "Dry pods may shatter before harvest",
+        "Shelling and cleaning mature seed require substantial labor",
+        "Stored-seed insects can cause severe losses",
+        "Deer, rabbits, groundhogs, and insects may damage plants",
+        "Cowpea curculio can ruin pods and seed in affected regions",
+        "Root-knot nematodes can reduce growth and yield",
+        "Wet weather can delay drying and increase mold risk",
+        "Photoperiod-sensitive cultivars may flower too late outside their adapted region",
+        "Repeated foliage harvest can reduce seed yield",
+        "Unrestricted poultry access can destroy the planting",
+        "Cowpea cannot replace soybean meal directly",
+        "Cowpea cannot replace complete poultry feed",
+        "Household-scale processed seed may cost more than purchased feed ingredients"
+      ],
+
+      likelyLowestCostUse:
+        "fresh-tender-foliage-or-immature-pod-supplement",
+
+      likelyHighestLaborUse:
+        "cleaned-heat-treated-ground-mature-seed-for-formulated-use",
+
+      potentialFeedSavingsNotes:
+        "Feed savings cannot be estimated until usable backyard yield, harvest form, cultivar, wildlife loss, insect loss, shelling loss, drying loss, cooking or heat-treatment loss, energy cost, labor, storage loss, ration displacement, nutrient value, and the price of complete poultry feed or comparable protein ingredients are known.",
 
       economicNotes:
-        "Cowpeas may offer several forms of value: edible household food, poultry supplementation, summer forage, weed suppression, erosion protection, and nitrogen contribution to a following crop. Direct poultry-feed savings cannot be estimated responsibly until backyard seed yield, processing costs, safe inclusion levels for the intended flock, and comparable feed values are known."
+        "Cowpea's strongest economic value may come from combining several uses rather than attempting to replace purchased poultry feed. One planting may provide household vegetables, mature dry peas, tender poultry forage, pollinator activity, summer ground cover, weed competition, crop rotation, nitrogen fixation, compost biomass, and seed-saving opportunities. Those benefits should be evaluated separately because they do not all convert directly into feed savings. Nitrogen fixation also should not be assigned its full theoretical value when most harvested biomass and seed are removed from the site."
     },
 
     scores: {
-      easeOfGrowing: null,
-      yieldPerSquareFoot: null,
-      nutritionalUsefulness: null,
-      proteinContribution: null,
-      energyContribution: null,
-      storageValue: null,
-      smallSpaceSuitability: null,
-      heatTolerance: null,
-      coldTolerance: null,
-      laborEfficiency: null,
-      economicPotential: null,
-      safetySimplicity: null
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
     },
 
     rankings: {
-      practicalScore: null,
-      nutritionalScore: null,
-      bcpFeedScore: null
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
     },
 
     evidence: {
       evidenceStrength:
-        "Strong for basic cultivation, seed composition, amino-acid limitations, and the presence of antinutritional factors; moderate for processed cowpea use in formulated broiler diets; limited for informal supplementation of backyard laying hens and backyard seed yield",
+        "Strong for Cowpea agronomy, heat and drought adaptation, biological nitrogen fixation, forage and cover-crop uses, mature-seed composition, amino-acid limitations, antinutritional factors, household-food use, and processed Cowpea use in formulated poultry diets; moderate for home-garden cultivation, tender foliage, immature pods, small-scale dry-seed production, and household processing; limited for informal backyard-flock inclusion amounts, laying-hen performance, whole-crop poultry grazing, dependable backyard seed yield, processing efficiency, and direct feed savings",
 
       sources: [
         {
           title:
-            "Growing Staple Vegetables from Around the World in Minnesota",
-          organization:
-            "University of Minnesota Extension",
-          url:
-            "https://extension.umn.edu/vegetables/growing-staple-vegetables-around-world-minnesota",
-          use:
-            "Soil temperature, planting depth, row and plant spacing, harvest timing, soil pH, nitrogen fixation, water needs, and common pests"
-        },
+            "Cowpea Seeds",
 
-        {
-          title:
-            "Cowpea (Vigna unguiculata) Plant Guide",
-          organization:
-            "USDA Natural Resources Conservation Service",
-          url:
-            "https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/pg_viun.pdf",
-          use:
-            "Seed composition, edible plant parts, forage use, regrowth after light defoliation, dry-matter production, nitrogen contribution, erosion control, and crop adaptation"
-        },
-
-        {
-          title:
-            "Cowpeas in Poultry Diets",
-          organization:
-            "University of Kentucky / National Cooperative Extension Poultry Resource",
-          url:
-            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/legumes-in-poultry-feed/cowpeas-in-poultry-diets/",
-          use:
-            "Poultry suitability, heat and drought tolerance, amino-acid profile, methionine and cysteine limitation, lysine value, and antinutritional factors"
-        },
-
-        {
-          title:
-            "Cowpea (Vigna unguiculata) Seeds",
           organization:
             "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
           url:
             "https://www.feedipedia.org/node/232",
+
           use:
-            "Processing recommendations and research on processed cowpea inclusion in formulated poultry diets"
+            "Cowpea seed composition, livestock-feed use, poultry studies, protein value, energy value, amino-acid limitations, antinutritional factors, tannins, trypsin inhibitors, processing, heating, dehulling, and distinctions among raw and processed seed"
         },
 
         {
           title:
             "Cowpea Seeds — Chemical Composition Table",
+
           organization:
             "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
           url:
             "https://www.feedipedia.org/node/11572",
+
           use:
-            "Dry matter, crude protein, fiber, fat, starch, minerals, amino acids, and tannin values"
+            "Average dry matter, crude protein, crude fiber, neutral-detergent fiber, acid-detergent fiber, fat, starch, minerals, amino acids, tannins, and sample variation"
         },
 
         {
           title:
             "Cowpea Seeds, Heat-Treated — Chemical Composition Table",
+
           organization:
             "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
           url:
             "https://www.feedipedia.org/node/11573",
+
           use:
-            "Composition and poultry energy information for heat-treated seed"
-        }
-      ],
-
-      lastReviewed: "2026-07-13",
-
-      researchNotes: [
-        "Identify specific cowpea varieties best suited to seed production versus leafy forage.",
-        "Do not apply commercial broiler-diet inclusion percentages directly to backyard laying hens.",
-        "Research whether limited grazing of living cowpea plants presents any poultry-specific management concerns.",
-        "Find credible backyard or small-plot mature-seed yield data before calculating yield per square foot.",
-        "Separate fresh-leaf forage nutrition from mature-seed nutrition.",
-        "Determine practical small-batch processing methods that reliably reduce antinutritional factors.",
-        "Compare the cost and labor of cooked or roasted cowpeas with purchased complete poultry feed.",
-        "Research cowpea curculio, aphids, mites, beetles, and other regionally important pests.",
-        "Calculate scores only after multiple crops have comparable evidence and complete data.",
-        "Plant-density estimates use approximately 1.5 inches between plants and a midpoint row spacing of 25 inches; these values are intended for compact or semi-erect row-grown varieties rather than spreading or climbing cowpeas.",
-      ]
-    },
-
-    plannerData: {
-  schemaVersion: "1.0.0",
-
-  developmentStatus:
-    "ready",
-
-  identity: {
-    plannerName:
-      "Cowpeas",
-
-    shortLabel:
-      "Cowpea",
-
-    icon:
-      "🫘",
-
-    cropCategory:
-      "legume",
-
-    primaryFeedCategory:
-      "protein-oriented",
-
-    guideUrl:
-      "growing-cowpeas-for-chickens.html"
-  },
-
-  lifecycle: {
-    growthCycle:
-      "annual",
-
-    isAnnual: true,
-    isBiennial: false,
-    isPerennial: false,
-    isTreeOrShrub: false,
-
-    yearsToFirstUsefulHarvest: 0,
-    yearsToFullProduction: 0,
-    expectedUsefulLifeYears: 1,
-
-    regrowsAfterHarvest: true,
-
-    permanentPlantingRequired: false,
-    reversibleAfterOneSeason: true
-  },
-
-  climate: {
-    suitableClimateTypes: [
-      "temperate",
-      "hot-humid",
-      "hot-dry",
-      "mild-winter"
-    ],
-
-    preferredClimateTypes: [
-      "hot-humid",
-      "hot-dry"
-    ],
-
-    challengingClimateTypes: [
-      "cold-short-summer",
-      "cool-moderate-summer",
-      "high-elevation"
-    ],
-
-    minimumFrostFreeDays: null,
-    preferredFrostFreeDays: null,
-
-    minimumSoilTemperatureF: 65,
-    preferredSoilTemperatureF: 70,
-
-    daysToMaturityMinimum: null,
-    daysToMaturityMaximum: null,
-
-    dryDownBufferDays: null,
-
-    heatToleranceScore: 5,
-
-    droughtClimateToleranceScore: 5,
-
-    humidityToleranceScore: 4,
-
-    coolSummerToleranceScore: 2,
-
-    frostSensitivityScore: 5,
-
-    winterHardinessRequired: false,
-
-    seasonExtensionBenefits: [
-      "Black plastic or other soil-warming methods may improve establishment in cool spring conditions.",
-      "Selecting an early bush variety may improve mature-seed success in shorter growing seasons.",
-      "Indoor starting may provide limited benefit, but Cowpeas are generally straightforward to direct-seed after the soil warms."
-    ],
-
-    indoorSeedStartingBenefitScore: 2,
-
-    directFacts: {
-      seasonType:
-        "warm-season",
-
-      frostSensitive: true,
-
-      plantAfterFrostDanger: true,
-
-      warmSoilRequired: true,
-
-      germinationSoilTemperatureFMinimum:
-        65,
-
-      preferredGerminationSoilTemperatureF:
-        70,
-
-      optimumGrowthTemperatureFApproximate:
-        86,
-
-      maturityHighlyVarietyDependent:
-        true,
-
-      notes: [
-        "Cowpeas are heat-loving warm-season legumes.",
-        "Cold soil can delay germination and increase seed-decay risk.",
-        "The crop performs especially well during hot summer weather.",
-        "Cowpeas tolerate drought better than many garden legumes after establishment.",
-        "Drought during flowering and pod filling can still reduce pod and mature-seed production.",
-        "Bush, semi-vining, and trailing cultivars can differ considerably in maturity and space use.",
-        "Exact maturity ranges remain null until the planner separates leaf, fresh-pod, and dry-seed production by variety."
-      ]
-    }
-  },
-
-  site: {
-    absoluteMinimumSunHours: null,
-
-    productiveMinimumSunHours: 6,
-
-    preferredSunHours: 8,
-
-    shadeToleranceScore: 2,
-
-    afternoonShadeBenefitInHeat: 2,
-
-    windToleranceScore: 4,
-
-    lodgingRiskScore: 2,
-
-    reflectedHeatToleranceScore: 5,
-
-    airflowRequirementScore: 4,
-
-    frostPocketSensitivityScore: 5,
-
-    treeRootCompetitionToleranceScore: 3,
-
-    hardscapeConflictRiskScore: 2,
-
-    structureConflictRiskScore: 2,
-
-    utilityConflictRiskScore: 1,
-
-    fruitDropMessRiskScore: 1,
-
-    stainingRiskScore: 1,
-
-    directFacts: {
-      preferredLight:
-        "full-sun",
-
-      productiveSunGuidance:
-        "At least 6 hours of direct sunlight, with approximately 8 hours preferred for dense growth, flowering, and pod production.",
-
-      windExposureConcern:
-        false,
-
-      growthHabits: [
-        "bush",
-        "semi-vining",
-        "trailing",
-        "climbing"
-      ],
-
-      notes: [
-        "Cowpeas perform best in full sun.",
-        "Reduced light can lower flowering, pod production, and stand density.",
-        "Bush cultivars are easier to contain in beds and rows.",
-        "Trailing and climbing cultivars may use fences or trellises but can spread into nearby crops.",
-        "Cowpeas tolerate reflected summer heat better than most cool-season garden crops.",
-        "Good airflow is valuable in humid regions because dense foliage can retain moisture.",
-        "The crop is highly frost sensitive and should not be placed in cold low spots when the growing season is marginal."
-      ]
-    }
-  },
-
-  soil: {
-    textureScores: {
-      heavyClay: 2,
-      clayLoam: 4,
-      loam: 5,
-      sandyLoam: 5,
-      verySandy: 4,
-      rocky: 2
-    },
-
-    drainageRequirementScore: 5,
-
-    temporaryWetToleranceScore: 2,
-
-    waterloggingSensitivityScore: 4,
-
-    minimumSoilDepthIn: null,
-    preferredSoilDepthIn: 18,
-
-    compactionToleranceScore: 2,
-
-    establishmentInSodDifficultyScore: 4,
-
-    preferredPHMinimum: 5.5,
-    preferredPHMaximum: 7.0,
-
-    survivalPHMinimum: null,
-    survivalPHMaximum: null,
-
-    fertilityRequirementScore: 2,
-
-    nitrogenRequirementScore: 1,
-    phosphorusRequirementScore: 3,
-    potassiumRequirementScore: 3,
-
-    benefitsFromInoculation: true,
-
-    inoculantType:
-      "Cowpea-group Bradyrhizobium inoculant",
-
-    saltToleranceScore: null,
-
-    amendmentEffortScore: 2,
-
-    directFacts: {
-      preferredDrainage:
-        "well-drained",
-
-      preferredTextures: [
-        "sandy loam",
-        "loam",
-        "well-drained clay loam"
-      ],
-
-      poorSoilAdaptation:
-        true,
-
-      sandySoilAdaptation:
-        true,
-
-      waterloggedSoilSuitable:
-        false,
-
-      nitrogenFixingLegume:
-        true,
-
-      inoculationMayImproveNodulation:
-        true,
-
-      notes: [
-        "Cowpeas are notably adaptable to sandy and relatively low-fertility soils.",
-        "Well-drained loam or sandy loam is especially suitable.",
-        "Heavy or compacted clay receives a low rating when drainage and root development are restricted.",
-        "Cowpeas can obtain much of their nitrogen through symbiotic nitrogen fixation when compatible bacteria are present.",
-        "Cowpea-group inoculant may improve nodulation where Cowpeas or compatible legumes have not recently grown.",
-        "Nitrogen fixation does not remove the crop's need for suitable phosphorus, potassium, sulfur, pH, and general soil health.",
-        "Large nitrogen applications can encourage foliage while reducing the plant's reliance on biological nitrogen fixation.",
-        "The stored pH range is a productive planning range rather than an absolute survival boundary."
-      ]
-    }
-  },
-
-  water: {
-    overallWaterRequirementLevel:
-      "low",
-
-    germinationWaterNeedLevel:
-      "moderate",
-
-    establishmentWaterNeedLevel:
-      "moderate",
-
-    matureWaterNeedLevel:
-      "low",
-
-    floweringWaterNeedLevel:
-      "moderate",
-
-    harvestDevelopmentWaterNeedLevel:
-      "moderate",
-
-    droughtSurvivalScore: 5,
-
-    droughtYieldRetentionScore: 4,
-
-    criticalGrowthStages: [
-      "germination",
-      "seedling-establishment",
-      "flowering",
-      "pod-setting",
-      "seed-filling"
-    ],
-
-    criticalStageWaterImportanceScore: 4,
-
-    overwateringSensitivityScore: 4,
-
-    waterloggingSensitivityScore: 4,
-
-    dripIrrigationBenefitScore: 4,
-
-    mulchBenefitScore: 4,
-
-    suitableForRainfallOnlyScore: 4,
-
-    suitableForLimitedIrrigationScore: 5,
-
-    containerDryingRiskScore: 4,
-
-    establishmentYearsRequiringExtraWater: 0,
-
-    directFacts: {
-      droughtTolerantAfterEstablishment:
-        true,
-
-      establishmentMoistureImportant:
-        true,
-
-      floweringMoistureImportant:
-        true,
-
-      podFillMoistureImportant:
-        true,
-
-      standingWaterSuitable:
-        false,
-
-      notes: [
-        "Cowpeas are among the strongest limited-irrigation crops in the initial planner database.",
-        "Seed needs moisture for germination and early establishment.",
-        "Established plants can tolerate extended dry periods better than many common vegetables.",
-        "Severe moisture stress during flowering, pod set, and seed filling can reduce usable harvest.",
-        "Excess irrigation and saturated soil can increase root and disease problems.",
-        "Drip irrigation can provide critical-stage water while keeping foliage drier in humid climates.",
-        "Mulch can conserve moisture, but extremely thick wet mulch should not remain against stems.",
-        "Container-grown Cowpeas may dry considerably faster than plants rooted in open soil."
-      ]
-    }
-  },
-
-  space: {
-    minimumTrialAreaSqFt: null,
-
-    minimumUsefulAreaSqFt: null,
-
-    preferredProductionAreaSqFt: null,
-
-    smallSpaceScore: 5,
-
-    mediumSpaceScore: 5,
-
-    largeSpaceScore: 4,
-
-    layoutScores: {
-      squareBlock: 4,
-      wideRectangle: 5,
-      longStrip: 5,
-      irregular: 4,
-      smallBeds: 5,
-      openField: 5
-    },
-
-    spaceTypeScores: {
-      inGround: 5,
-      raisedBed: 5,
-      container: 4,
-      fenceLine: 5,
-      buildingEdge: 4,
-      unusedLawn: 4,
-      openField: 5,
-      orchard: 3,
-      forageFrame: 3,
-      rotationalPaddock: 4,
-      greenhouse: 2,
-      hedgerow: 4
-    },
-
-    minimumContainerGallons: null,
-
-    containerUseLimitation:
-      "Bush or compact Cowpeas can produce leaves and some pods in containers, but container volume and frequent watering limit larger feed harvests.",
-
-    minimumRaisedBedDepthIn: null,
-
-    vineSpreadRequired: false,
-
-    verticalSupportBenefitScore: 4,
-
-    blockPlantingRequired: false,
-
-    minimumBlockRows: null,
-
-    continuousStandPreferred: false,
-
-    heightCategory:
-      "variety-dependent-low-to-vining",
-
-    matureWidthCategory:
-      "variety-dependent",
-
-    overflowSpaceBenefitScore: 4,
-
-    directFacts: {
-      layoutFlexible: true,
-
-      blockPollinationRequired: false,
-
-      bushVarietiesAvailable: true,
-
-      viningVarietiesAvailable: true,
-
-      trellisOptionalByVariety: true,
-
-      suitableForSuccessiveHarvest:
-        true,
-
-      notes: [
-        "Cowpeas can be planted in beds, rows, long strips, containers, or larger field stands.",
-        "Bush cultivars provide the strongest small-bed and container fit.",
-        "Trailing cultivars can cover open soil and suppress weeds but require more lateral space.",
-        "Climbing or semi-vining cultivars may be trained along fences or trellises.",
-        "The crop does not require Corn-style block planting.",
-        "Plants grown for foliage can be planted and managed differently from plants grown for dry seed.",
-        "Unprotected plants inside a chicken run may be eaten or scratched out before they establish.",
-        "Protected strips, rotational paddocks, or cut-and-carry beds are more practical than permanent unrestricted run planting.",
-        "Minimum useful and production areas remain null until tested against flock size and harvest form."
-      ]
-    }
-  },
-
-  flock: {
-    suitableForAdultChickens: true,
-
-    suitableForYoungChicks: false,
-
-    flockPurposeScores: {
-      eggs: 4,
-      meat: 4,
-      breeding: 3,
-      petsEnrichment: 4,
-      homestead: 5,
-      mixed: 5
-    },
-
-    feedingMethodScores: {
-      livingGrazing: 3,
-      cutAndCarry: 5,
-      wholeProduce: 4,
-      wholeSeedHeads: 1,
-      wholeGrain: 2,
-      processedGrain: 4,
-      heatTreated: 5,
-      driedForage: 3,
-      winterStorage: 4
-    },
-
-    directRunSuitabilityScore: 2,
-
-    forageFrameSuitabilityScore: 3,
-
-    rotationalPaddockSuitabilityScore: 4,
-
-    confinedFlockValueScore: 5,
-
-    pasturedFlockValueScore: 4,
-
-    treatDilutionRiskScore: 3,
-
-    highEnergySupplement: false,
-
-    highFiberSupplement: true,
-
-    concentratedFatSource: false,
-
-    primaryFlockUses: [
-      "Fresh cut-and-carry foliage",
-      "Tender immature pods",
-      "Cooked mature seed",
-      "Summer forage diversity",
-      "Protein-oriented supplemental plant material"
-    ],
-
-    unsuitablePrimaryUses: [
-      "Complete-ration replacement",
-      "Unrestricted raw dry-seed feeding",
-      "Permanent unprotected run forage",
-      "Primary young-chick feed",
-      "High-energy grain replacement"
-    ],
-
-    directFacts: {
-      edibleFeedParts: [
-        "Fresh leaves",
-        "Tender vine tips",
-        "Tender immature pods",
-        "Properly prepared mature seed"
-      ],
-
-      preferredBirdStage:
-        "Established adult chickens",
-
-      cropSurvivalWithDirectChickenAccess:
-        "poor-to-moderate-before-establishment",
-
-      directAccessTiming:
-        "Allow plants to establish before controlled grazing, or harvest foliage outside the run for cut-and-carry feeding.",
-
-      nutritionalOrientation: [
-        "protein-oriented",
-        "fresh-forage",
-        "fiber",
-        "household-food",
-        "soil-building"
-      ],
-
-      balancedFeedReplacement:
-        false,
-
-      notes: [
-        "Cowpea foliage and tender pods offer a different use path from mature dry seed.",
-        "Fresh plant material is best introduced as a supplemental forage rather than a complete feed.",
-        "Mature dry seed is more concentrated but requires greater processing and portion control.",
-        "The planner uses a conservative cooked-seed path because dry Cowpea seeds contain antinutritional compounds whose activity can be reduced through appropriate preparation.",
-        "Cowpea seed is protein-oriented but does not provide a complete poultry amino-acid, vitamin, mineral, and calcium balance.",
-        "Young chicks should continue receiving an age-appropriate complete starter ration.",
-        "Direct unrestricted access can destroy a small Cowpea planting before it produces pods or seed."
-      ]
-    }
-  },
-
-  labor: {
-    beginnerFriendlinessScore: 4,
-
-    plantingEaseScore: 5,
-
-    establishmentEaseScore: 4,
-
-    routineMaintenanceEaseScore: 4,
-
-    weedControlEaseScore: 4,
-
-    wildlifeProtectionEaseScore: 3,
-
-    harvestEaseScore: 4,
-
-    freshFoliageProcessingEaseScore: 5,
-
-    tenderPodProcessingEaseScore: 5,
-
-    matureSeedProcessingEaseScore: 2,
-
-    dryingEaseScore: 3,
-
-    storageMonitoringEaseScore: 3,
-
-    perennialMaintenanceEaseScore: 5,
-
-    physicalAccessibilityScore: 4,
-
-    heavyLiftingRiskScore: 1,
-
-    weeklyLaborLevel:
-      "low",
-
-    peakWorkloadLevel:
-      "moderate",
-
-    harvestFrequencyCategory:
-      "several-weekly",
-
-    requiredPlantingTasks: [
-      "prepare-seedbed",
-      "plant-large-seed"
-    ],
-
-    optionalPlantingTasks: [
-      "inoculate-legume-seed",
-      "install-irrigation"
-    ],
-
-    requiredMaintenanceTasks: [
-      "hand-weed"
-    ],
-
-    optionalMaintenanceTasks: [
-      "mulch",
-      "trellis",
-      "protect-from-wildlife"
-    ],
-
-    requiredHarvestTasks: [
-      "cut-leaves",
-      "pick-produce"
-    ],
-
-    usePathProcessingTasks: {
-      freshFoliage: [
-        "cut-leaves"
-      ],
-
-      tenderImmaturePods: [
-        "pick-produce"
-      ],
-
-      matureCookedSeed: [
-        "pick-produce",
-        "dry",
-        "shell-beans",
-        "clean-sort",
-        "cook"
-      ]
-    },
-
-    requiredStorageTasks: [
-      "inspect-moisture",
-      "inspect-insects",
-      "inspect-mold"
-    ],
-
-    specializedEquipmentRequired: [],
-
-    specializedEquipmentHelpful: [
-      "hand-pruners",
-      "trellis",
-      "stakes",
-      "drip-irrigation",
-      "drying-screen",
-      "fan",
-      "food-safe-bucket",
-      "metal-grain-can"
-    ],
-
-    suitableForLowTimeUsersScore: 4,
-
-    suitableForSoloGrowersScore: 5,
-
-    directFacts: {
-      seedSize:
-        "large-and-easy-to-handle",
-
-      directSeedingSuitable: true,
-
-      specializedHarvestEquipmentRequiredForBackyardScale:
-        false,
-
-      majorLaborBottlenecks: [
-        "Repeated foliage or pod harvesting",
-        "Protecting plants from deer, rabbits, and insects",
-        "Drying mature pods",
-        "Shelling dry beans",
-        "Cooking mature seed before the planner recommends feeding it",
-        "Monitoring stored seed for insects and moisture"
-      ],
-
-      notes: [
-        "Large seeds make Cowpeas easy to direct-seed.",
-        "Bush varieties require little structural management.",
-        "Vining varieties may need trellising or redirection.",
-        "Fresh foliage and tender pods require almost no processing.",
-        "Mature dry seed creates a much larger harvest and processing workload.",
-        "Harvest can be continuous for foliage and tender pods or concentrated for mature seed.",
-        "Small backyard plots can be managed entirely with ordinary hand tools."
-      ]
-    }
-  },
-
-  cost: {
-    seedOrPlantCostLevel:
-      "low",
-
-    soilPreparationCostLevel:
-      "low",
-
-    irrigationCostLevel:
-      "low",
-
-    protectionCostLevel:
-      "moderate",
-
-    processingEquipmentCostLevel:
-      "low",
-
-    storageCostLevel:
-      "low",
-
-    annualRecurringCostLevel:
-      "low",
-
-    longTermValueScore: 5,
-
-    lowestCostUsePath:
-      "fresh-foliage",
-
-    highestCostUsePath:
-      "mature-cooked-seed",
-
-    likelyCostDrivers: [
-      "Optional legume inoculant",
-      "Trellis or fence support for vining varieties",
-      "Deer or rabbit protection",
-      "Drying screens",
-      "Rodent-resistant storage containers",
-      "Cooking fuel or electricity"
-    ],
-
-    costReductionOptions: [
-      "Choose a bush variety for beds or containers.",
-      "Grow fresh foliage and tender pods rather than storing mature seed.",
-      "Use an existing fence for vining varieties.",
-      "Begin with a small direct-seeded trial.",
-      "Save seed from suitable open-pollinated varieties after learning isolation and selection requirements."
-    ],
-
-    directFacts: {
-      specializedPlantingEquipmentRequired:
-        false,
-
-      specializedBackyardHarvestEquipmentRequired:
-        false,
-
-      specializedProcessingEquipmentRequired:
-        false,
-
-      notes: [
-        "Cowpeas can be established inexpensively from seed.",
-        "Fertility requirements are generally modest where soil conditions and nodulation are suitable.",
-        "The fresh-use paths require little equipment.",
-        "The mature-seed path adds drying, shelling, cooking, and protected-storage costs.",
-        "Cost classifications are qualitative rather than current retail-price estimates."
-      ]
-    }
-  },
-
-  goals: {
-    feedReductionScore: 4,
-
-    energyProductionScore: 3,
-
-    proteinOrientedScore: 5,
-
-    freshGreensScore: 5,
-
-    livingForageScore: 3,
-
-    winterStorageScore: 4,
-
-    enrichmentScore: 4,
-
-    resilienceScore: 5,
-
-    soilImprovementScore: 5,
-
-    nitrogenFixationScore: 5,
-
-    groundCoverScore: 5,
-
-    erosionControlScore: 4,
-
-    shadeScore: 2,
-
-    privacyScreeningScore: 3,
-
-    pollinatorSupportScore: 4,
-
-    compostBiomassScore: 5,
-
-    householdFoodScore: 5,
-
-    seedSavingScore: 5,
-
-    selfRelianceScore: 5,
-
-    multipurposeValueScore: 5,
-
-    visualAppealScore: 3,
-
-    productionReliabilityScore: 4,
-
-    fastestValueScore: 5,
-
-    nonElectricStorageScore: 4,
-
-    smallFlockValueScore: 5,
-
-    largeFlockValueScore: 4,
-
-    primaryGoalMatches: [
-      "protein-oriented",
-      "fresh-greens",
-      "resilience-feed",
-      "soil-improvement",
-      "nitrogen-fixation",
-      "ground-cover",
-      "compost-biomass",
-      "shared-household-food",
-      "seed-saving",
-      "self-reliance",
-      "use-unused-space"
-    ],
-
-    weakGoalMatches: [
-      "high-energy",
-      "winter-living-forage",
-      "permanent-ground-cover",
-      "shade-tree",
-      "no-processing-dry-seed"
-    ],
-
-    directFacts: {
-      nitrogenFixingLegume: true,
-
-      humanFoodPotential: true,
-
-      pollinatorBenefit: true,
-
-      groundCoverPotential: true,
-
-      warmSeasonBiomassProduction:
-        true,
-
-      seedSavingPossible: true,
-
-      notes: [
-        "Cowpeas combine flock supplementation, human-food production, soil cover, biomass, and nitrogen fixation.",
-        "Fresh foliage and pods provide rapid first-season value.",
-        "Dry seed provides a storable protein-oriented product but requires more processing.",
-        "The crop is better suited to protein-oriented goals than to concentrated energy production.",
-        "Dense trailing stands can suppress weeds and protect soil.",
-        "Nitrogen fixed by the crop does not all become immediately available to the following crop, especially when most biomass is removed.",
-        "Open-pollinated varieties can support seed saving, although variety purity and seed health still require attention."
-      ]
-    }
-  },
-
-  risks: {
-    wildlife: {
-      wildBirds: 3,
-      deer: 5,
-      raccoons: 2,
-      squirrels: 2,
-      rabbits: 4,
-      rodents: 4,
-      groundhogs: 4
-    },
-
-    insectsRiskScore: 4,
-
-    diseaseRiskScore: 4,
-
-    lodgingRiskScore: 2,
-
-    fieldMoldRiskScore: 3,
-
-    dryingMoldRiskScore: 4,
-
-    storageMoldRiskScore: 4,
-
-    storedInsectRiskScore: 5,
-
-    spoilageSpeedRiskScore: 3,
-
-    invasivenessConcernRiskScore: 1,
-
-    selfSeedingRiskScore: 2,
-
-    fruitDropRiskScore: 1,
-
-    cropFailureRiskScore: 3,
-
-    stormDamageRiskScore: 2,
-
-    shadingOtherCropsRiskScore: 3,
-
-    overfeedingRiskScore: 3,
-
-    treatedSeedRiskScore: 5,
-
-    primaryRisks: [
-      {
-        id:
-          "deer-and-rabbit-damage",
-
-        severity:
-          "very-high",
-
-        affectedStages: [
-          "seedling",
-          "vegetative-growth",
-          "flowering"
-        ],
-
-        mitigationOptions: [
-          "Fencing",
-          "Protected beds",
-          "Row cover during establishment",
-          "Grow near regular human activity"
-        ],
-
-        note:
-          "Tender Cowpea foliage can be highly attractive to browsing wildlife."
-      },
-
-      {
-        id:
-          "cowpea-insect-pressure",
-
-        severity:
-          "high",
-
-        affectedStages: [
-          "vegetative-growth",
-          "flowering",
-          "pod-setting",
-          "storage"
-        ],
-
-        mitigationOptions: [
-          "Inspect plants regularly",
-          "Use locally adapted resistant varieties",
-          "Rotate crops",
-          "Harvest promptly",
-          "Store dry seed in suitable protected containers"
-        ],
-
-        note:
-          "Cowpeas can be affected by aphids, pod-feeding insects, weevils, beetles, and stored-seed pests."
-      },
-
-      {
-        id:
-          "humid-weather-disease",
-
-        severity:
-          "high",
-
-        affectedStages: [
-          "establishment",
-          "vegetative-growth",
-          "flowering",
-          "pod-development"
-        ],
-
-        mitigationOptions: [
-          "Use well-drained soil",
-          "Provide airflow",
-          "Avoid overhead watering late in the day",
-          "Rotate crop families",
-          "Choose resistant varieties"
-        ],
-
-        note:
-          "Warm humid conditions can increase foliar, root, and pod disease pressure."
-      },
-
-      {
-        id:
-          "dry-seed-antinutritional-factors",
-
-        severity:
-          "high",
-
-        affectedStages: [
-          "processing",
-          "feeding"
-        ],
-
-        mitigationOptions: [
-          "Use the planner's cooked-seed path",
-          "Avoid unrestricted raw dry-bean feeding",
-          "Keep mature seed supplemental",
-          "Continue complete poultry feed"
-        ],
-
-        note:
-          "Mature dry Cowpea seed contains antinutritional compounds; appropriate preparation improves its practical feeding suitability."
-      },
-
-      {
-        id:
-          "stored-seed-insects",
-
-        severity:
-          "very-high",
-
-        affectedStages: [
-          "drying",
-          "storage"
-        ],
-
-        mitigationOptions: [
-          "Dry thoroughly",
-          "Clean and inspect seed",
-          "Use tightly sealed containers after adequate drying",
-          "Monitor for insects and heating",
-          "Discard questionable material"
-        ],
-
-        note:
-          "Stored Cowpea seed is vulnerable to bruchid and other stored-product insect damage."
-      },
-
-      {
-        id:
-          "chemically-treated-seed",
-
-        severity:
-          "very-high",
-
-        affectedStages: [
-          "planting",
-          "feeding"
-        ],
-
-        mitigationOptions: [
-          "Use untreated seed for crops intended as feed",
-          "Keep treated planting seed separated and labeled"
-        ],
-
-        note:
-          "Chemically treated planting seed must not be fed to chickens."
-      }
-    ],
-
-    directFacts: {
-      highlyAttractiveToDeer:
-        true,
-
-      storedSeedInsectConcern:
-        true,
-
-      antinutritionalFactorsInDrySeed:
-        true,
-
-      heatAndDroughtAdapted:
-        true,
-
-      waterloggingConcern:
-        true,
-
-      multipleDiseasesPossible:
-        true,
-
-      notes: [
-        "Wildlife risk varies strongly by location, but deer and rabbits may severely damage small plots.",
-        "Insect pressure can be substantial in warm regions.",
-        "Stored dry Cowpeas require monitoring for insects and moisture.",
-        "Moldy, musty, heated, insect-damaged, or otherwise questionable seed should not be fed.",
-        "Dense wet foliage and poorly drained soil can increase disease risk.",
-        "Appropriate variety selection is one of the most important pest- and disease-management tools.",
-        "Fresh plant material should be sound and free from pesticide residues not labeled for feed use."
-      ]
-    }
-  },
-
-  seasonalRoles: {
-    earlySpring: false,
-
-    lateSpring: true,
-
-    summer: true,
-
-    lateSummer: true,
-
-    fall: true,
-
-    winterStorage: true,
-
-    perennial: false,
-
-    plantingWindows: [
-      {
-        id:
-          "direct-seed-warm-soil",
-
-        trigger:
-          "after-last-frost",
-
-        offsetWeeksMinimum: 2,
-        offsetWeeksMaximum: 5,
-
-        soilCondition:
-          "warm-and-well-drained",
-
-        method:
-          "direct-seed",
-
-        note:
-          "Plant after frost danger has passed and soil has warmed sufficiently for rapid germination."
-      },
-
-      {
-        id:
-          "successive-summer-sowing",
-
-        trigger:
-          "warm-soil",
-
-        offsetWeeksMinimum: 0,
-        offsetWeeksMaximum: null,
-
-        method:
-          "direct-seed",
-
-        note:
-          "Additional sowings may extend fresh-leaf and tender-pod harvest where the remaining warm season is long enough."
-      },
-
-      {
-        id:
-          "late-summer-cover-crop",
-
-        trigger:
-          "late-summer",
-
-        offsetWeeksMinimum: 0,
-        offsetWeeksMaximum: null,
-
-        method:
-          "direct-seed",
-
-        note:
-          "A late planting may provide biomass, soil cover, and tender foliage even when insufficient time remains for mature dry seed."
-      }
-    ],
-
-    harvestWindows: [
-      {
-        id:
-          "fresh-foliage",
-
-        trigger:
-          "established-vegetative-growth",
-
-        usePathId:
-          "fresh-foliage",
-
-        note:
-          "Harvest modest amounts of healthy leaves and tender vine tips after plants are well established."
-      },
-
-      {
-        id:
-          "tender-immature-pods",
-
-        trigger:
-          "pods-tender-before-seed-hardening",
-
-        usePathId:
-          "tender-immature-pods",
-
-        note:
-          "Pick green pods while tender for household or supplemental flock use."
-      },
-
-      {
-        id:
-          "mature-dry-seed",
-
-        trigger:
-          "pods-dry-and-seed-mature",
-
-        usePathId:
-          "mature-cooked-seed",
-
-        note:
-          "Harvest mature pods, dry and shell the seed, then cook before the planner recommends feeding it."
-      }
-    ],
-
-    cropSequenceRoles: [
-      "Warm-season annual legume",
-      "Summer fresh-forage crop",
-      "Tender-pod household crop",
-      "Late-summer soil-cover crop",
-      "Nitrogen-fixing rotation crop",
-      "Dry-seed winter-storage crop"
-    ],
-
-    seasonalLimitations: [
-      "Not frost tolerant",
-      "Poor germination in cold soil",
-      "Short seasons may not allow mature dry seed",
-      "Wet fall weather can complicate pod drying",
-      "Fresh foliage ends with frost"
-    ],
-
-    directFacts: {
-      warmSeasonAnnual: true,
-
-      commonlyDirectSeeded: true,
-
-      repeatedFreshHarvestPossible:
-        true,
-
-      drySeedRequiresFullSeason:
-        true,
-
-      notes: [
-        "Cowpeas are generally planted after the soil has warmed in late spring or early summer.",
-        "Fresh foliage can provide value before pod production.",
-        "Tender pods may be harvested repeatedly.",
-        "Mature seed harvest occurs later and requires dry-down.",
-        "Late-summer plantings may still provide cover and foliage even when they cannot mature dry seed.",
-        "Stored mature seed can extend usefulness into winter after drying, shelling, protected storage, and cooking."
-      ]
-    }
-  },
-
-  usePaths: [
-    {
-      id:
-        "fresh-foliage",
-
-      label:
-        "Fresh Cowpea Foliage",
-
-      description:
-        "Healthy leaves and tender vine tips harvested from established plants for limited cut-and-carry flock supplementation.",
-
-      primaryFeedRole:
-        "fresh-green-protein-oriented",
-
-      harvestProducts: [
-        "fresh-greens",
-        "whole-plant-enrichment"
-      ],
-
-      suitableFeedingMethods: [
-        "cut-and-carry",
-        "fresh-supplement",
-        "seasonal-enrichment"
-      ],
-
-      requiredProcessingTasks: [
-        "cut-leaves"
-      ],
-
-      optionalProcessingTasks: [
-        "chop"
-      ],
-
-      requiredEquipment: [],
-
-      helpfulEquipment: [
-        "hand-pruners",
-        "basket"
-      ],
-
-      harvestPattern:
-        "continuous",
-
-      harvestFrequencyCategory:
-        "several-weekly",
-
-      storageMethods: [
-        "short-term-fresh"
-      ],
-
-      preferredStorageMethod:
-        "feed-soon-after-harvest",
-
-      storageDurationCategory:
-        "very-short",
-
-      nonElectricStorageSuitable: false,
-
-      refrigerationSuitable: true,
-      freezingSuitable: false,
-
-      dryingRequired: false,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 2,
-      rodentRiskScore: 1,
-      storedInsectRiskScore: 1,
-
-      harvestEaseScore: 5,
-      preparationEaseScore: 5,
-      beginnerSuitabilityScore: 5,
-
-      householdFoodValueScore: 3,
-      flockValueScore: 5,
-
-      safetyWarnings: [
-        "Offer only healthy, clean foliage free from mold, decay, and unapproved pesticide residues.",
-        "Avoid stripping so much foliage that plant growth and pod production collapse.",
-        "Introduce unfamiliar fresh plant material gradually.",
-        "Fresh foliage remains supplemental and should not replace balanced poultry feed."
-      ],
-
-      incompatibleUserTraits: [
-        "requires-long-term-storage",
-        "wants-dry-grain-only",
-        "requires-permanent-run-survival"
-      ]
-    },
-
-    {
-      id:
-        "tender-immature-pods",
-
-      label:
-        "Tender Immature Cowpea Pods",
-
-      description:
-        "Young green pods harvested before the seeds fully harden, suitable for household use and limited fresh flock supplementation.",
-
-      primaryFeedRole:
-        "fresh-produce-protein-oriented",
-
-      harvestProducts: [
-        "tender-pods",
-        "fresh-vegetables"
-      ],
-
-      suitableFeedingMethods: [
-        "whole-produce",
-        "fresh-supplement",
-        "measured-supplement"
-      ],
-
-      requiredProcessingTasks: [
-        "pick-produce"
-      ],
-
-      optionalProcessingTasks: [
-        "chop"
-      ],
-
-      requiredEquipment: [],
-
-      helpfulEquipment: [
-        "basket"
-      ],
-
-      harvestPattern:
-        "continuous",
-
-      harvestFrequencyCategory:
-        "several-weekly",
-
-      storageMethods: [
-        "short-term-fresh",
-        "refrigerated"
-      ],
-
-      preferredStorageMethod:
-        "feed-fresh-or-refrigerate-briefly",
-
-      storageDurationCategory:
-        "short",
-
-      nonElectricStorageSuitable: false,
-
-      refrigerationSuitable: true,
-      freezingSuitable: true,
-
-      dryingRequired: false,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 2,
-      rodentRiskScore: 1,
-      storedInsectRiskScore: 1,
-
-      harvestEaseScore: 5,
-      preparationEaseScore: 5,
-      beginnerSuitabilityScore: 5,
-
-      householdFoodValueScore: 5,
-      flockValueScore: 4,
-
-      safetyWarnings: [
-        "Use only sound, tender pods without mold, decay, or unapproved pesticide residues.",
-        "Discard slimy, fermented, spoiled, or questionable pods.",
-        "Tender pods are supplemental and should not displace complete poultry feed."
-      ],
-
-      incompatibleUserTraits: [
-        "requires-long-term-room-temperature-storage",
-        "wants-dry-seed-only"
-      ]
-    },
-
-    {
-      id:
-        "mature-cooked-seed",
-
-      label:
-        "Mature Cooked Cowpea Seed",
-
-      description:
-        "Fully mature Cowpea seed harvested from dry pods, adequately dried and stored, then cooked before being offered as a measured supplemental food.",
-
-      primaryFeedRole:
-        "protein-oriented-storage",
-
-      harvestProducts: [
-        "dry-legumes"
-      ],
-
-      suitableFeedingMethods: [
-        "heat-treated",
-        "measured-supplement",
-        "winter-storage"
-      ],
-
-      requiredProcessingTasks: [
-        "pick-produce",
-        "dry",
-        "shell-beans",
-        "clean-sort",
-        "cook"
-      ],
-
-      optionalProcessingTasks: [
-        "chop"
-      ],
-
-      requiredEquipment: [
-        "cooking-equipment"
-      ],
-
-      helpfulEquipment: [
-        "drying-screen",
-        "fan",
-        "food-safe-bucket",
-        "metal-grain-can",
-        "moisture-meter"
-      ],
-
-      harvestPattern:
-        "major",
-
-      harvestFrequencyCategory:
-        "once-twice",
-
-      storageMethods: [
-        "dried-shelled"
-      ],
-
-      preferredStorageMethod:
-        "airtight-after-adequate-drying",
-
-      storageDurationCategory:
-        "long",
-
-      nonElectricStorageSuitable: true,
-
-      refrigerationSuitable: false,
-      freezingSuitable: true,
-
-      dryingRequired: true,
-      curingRequired: false,
-      shellingRequired: true,
-      threshingRequired: false,
-      cookingRequired: true,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 4,
-      rodentRiskScore: 5,
-      storedInsectRiskScore: 5,
-
-      harvestEaseScore: 3,
-      preparationEaseScore: 2,
-      beginnerSuitabilityScore: 2,
-
-      householdFoodValueScore: 5,
-      flockValueScore: 4,
-
-      safetyWarnings: [
-        "The planner does not recommend unrestricted feeding of raw mature dry Cowpea seed.",
-        "Dry seed thoroughly before enclosed storage.",
-        "Cook mature seed before using this planner feeding path.",
-        "Do not feed moldy, musty, heated, insect-damaged, or otherwise questionable seed.",
-        "Do not feed salted, seasoned, flavored, canned-with-additives, or chemically treated seed.",
-        "Keep cooked Cowpeas supplemental to a complete poultry ration."
-      ],
-
-      incompatibleUserTraits: [
-        "declines-drying",
-        "declines-shelling",
-        "declines-cooking",
-        "requires-minimal-processing",
-        "has-no-dry-storage",
-        "has-no-rodent-protected-storage"
-      ]
-    }
-  ],
-
-  dataQuality: {
-    overallConfidence:
-      0.76,
-
-    verifiedFields: [
-      "identity",
-      "lifecycle",
-      "climate.directFacts.seasonType",
-      "climate.directFacts.frostSensitive",
-      "climate.directFacts.warmSoilRequired",
-      "site.directFacts.preferredLight",
-      "soil.directFacts.poorSoilAdaptation",
-      "soil.directFacts.sandySoilAdaptation",
-      "soil.directFacts.nitrogenFixingLegume",
-      "soil.directFacts.inoculationMayImproveNodulation",
-      "water.directFacts.droughtTolerantAfterEstablishment",
-      "water.directFacts.floweringMoistureImportant",
-      "space.directFacts.bushVarietiesAvailable",
-      "space.directFacts.viningVarietiesAvailable",
-      "flock.directFacts.edibleFeedParts",
-      "flock.directFacts.nutritionalOrientation",
-      "risks.directFacts.storedSeedInsectConcern",
-      "risks.directFacts.antinutritionalFactorsInDrySeed",
-      "seasonalRoles.directFacts.warmSeasonAnnual",
-      "seasonalRoles.directFacts.repeatedFreshHarvestPossible"
-    ],
-
-    derivedFields: [
-      "climate.heatToleranceScore",
-      "climate.droughtClimateToleranceScore",
-      "climate.humidityToleranceScore",
-      "climate.coolSummerToleranceScore",
-      "climate.frostSensitivityScore",
-      "site",
-      "soil.textureScores",
-      "soil.drainageRequirementScore",
-      "soil.waterloggingSensitivityScore",
-      "water",
-      "space.smallSpaceScore",
-      "space.mediumSpaceScore",
-      "space.largeSpaceScore",
-      "space.layoutScores",
-      "space.spaceTypeScores",
-      "flock.flockPurposeScores",
-      "flock.feedingMethodScores",
-      "flock.directRunSuitabilityScore",
-      "flock.forageFrameSuitabilityScore",
-      "flock.rotationalPaddockSuitabilityScore",
-      "labor",
-      "cost",
-      "goals",
-      "risks.wildlife",
-      "usePaths.fresh-foliage",
-      "usePaths.tender-immature-pods",
-      "usePaths.mature-cooked-seed"
-    ],
-
-    uncertainFields: [
-      "climate.minimumFrostFreeDays",
-      "climate.preferredFrostFreeDays",
-      "climate.daysToMaturityMinimum",
-      "climate.daysToMaturityMaximum",
-      "climate.dryDownBufferDays",
-      "soil.minimumSoilDepthIn",
-      "soil.saltToleranceScore",
-      "space.minimumTrialAreaSqFt",
-      "space.minimumUsefulAreaSqFt",
-      "space.preferredProductionAreaSqFt",
-      "space.minimumContainerGallons",
-      "space.minimumRaisedBedDepthIn",
-      "flock.portionGuidance",
-      "usePaths.fresh-foliage.exactStorageDuration",
-      "usePaths.tender-immature-pods.exactStorageDuration",
-      "usePaths.mature-cooked-seed.exactStorageDuration",
-      "risks.wildlife.raccoons",
-      "risks.wildlife.squirrels"
-    ],
-
-    missingFields: [
-      "space.minimumTrialAreaSqFt",
-      "space.minimumUsefulAreaSqFt",
-      "space.preferredProductionAreaSqFt",
-      "space.minimumContainerGallons",
-      "space.minimumRaisedBedDepthIn",
-      "flock.portionGuidance",
-      "flock.usePathTesting"
-    ],
-
-    lastReviewed:
-      "2026-07-14",
-
-    primarySources: [
-      {
-        title:
-          "Plant Guide for Cowpea (Vigna unguiculata)",
-
-        organization:
-          "USDA Natural Resources Conservation Service",
-
-        sourceType:
-          "government-plant-guide",
-
-        use:
-          "Lifecycle, adaptation, growth habit, soil, drought tolerance, forage, wildlife, and nitrogen-fixation context"
-      },
-
-      {
-        title:
-          "Managing Cover Crops Profitably — Cowpeas",
-
-        organization:
-          "Sustainable Agriculture Research and Education",
-
-        sourceType:
-          "agricultural-production-guide",
-
-        use:
-          "Warm-season cover-crop use, heat tolerance, biomass, weed suppression, nitrogen contribution, and management"
-      },
-
-      {
-        title:
-          "Cowpea Production and Alternative Field Crops Guidance",
-
-        organization:
-          "University Cooperative Extension resources",
-
-        sourceType:
-          "extension-production-guide",
-
-        use:
-          "Planting, warm-soil needs, variety growth habits, maturity, fertility, pests, and harvesting"
-      },
-
-      {
-        title:
-          "Cowpea Research",
-
-        organization:
-          "International Institute of Tropical Agriculture",
-
-        sourceType:
-          "international-crop-research",
-
-        use:
-          "Heat and drought adaptation, food value, production constraints, insects, disease, and varietal diversity"
-      },
-
-      {
-        title:
-          "Consensus Document on Compositional Considerations for New Varieties of Cowpea",
-
-        organization:
-          "Organisation for Economic Co-operation and Development",
-
-        sourceType:
-          "international-feed-and-food-composition",
-
-        use:
-          "Seed nutrients, antinutritional constituents, compositional variability, and food/feed safety context"
-      },
-
-      {
-        title:
-          "Cowpea Post-Harvest Operations",
-
-        organization:
-          "Food and Agriculture Organization of the United Nations",
-
-        sourceType:
-          "international-postharvest-guide",
-
-        use:
-          "Mature-seed harvesting, drying, shelling, stored-seed insects, and storage management"
-      }
-    ],
-
-    notes: [
-      "Cowpea plannerData was created as the second complete crop migration after Sunflower.",
-      "The record separates fresh foliage, tender pods, and mature dry seed into distinct use paths.",
-      "Mature seed uses a conservative cooked-seed planner policy because dry Cowpeas contain antinutritional compounds and require substantially more preparation than fresh foliage or pods.",
-      "Cooking is stored as a required planner task for the mature-seed path; it should not be interpreted as a universal commercial poultry-ration standard.",
-      "Heat and drought ratings are strong, but drought-yield retention is lower than drought survival because flowering and pod fill remain moisture sensitive.",
-      "Nitrogen-fixation benefits depend on compatible rhizobia, soil conditions, crop management, and how much biomass is removed.",
-      "Commercial yield and plant-population data were not converted into backyard minimum-area or feed-replacement promises.",
-      "Minimum useful area, exact storage duration, and feeding portions remain intentionally null.",
-      "Cowpea should remain in testing status until the shared multi-crop engine compares it with Sunflower across the fixed sample profiles."
-    ]
-  }
-}
-
-    },
-
-    ///////////////////////////////////////////////
-    //
-    //
-    //
-    //
-    //  CROP - MILLET
-    //
-    //
-    //
-    //
-    //////////////////////////////////////////////
-    
-
-  "CROP-PROSO-MILLET": {
-    id: "CROP-PROSO-MILLET",
-
-    name: "Proso Millet",
-    scientificName: "Panicum miliaceum",
-
-    category: "Small Grain and Energy Crop",
-    cropType: "Annual",
-    seasonType: "Warm Season",
-
-    status: "Initial Research Complete",
-
-    summary:
-      "Proso millet is a short-season, drought-tolerant grain crop that produces small seeds commonly used in birdseed and livestock feed. It can provide chickens with supplemental carbohydrate energy, moderate protein, enrichment, and a dry grain that stores well.",
-
-    chickenUse: {
-      edibleParts: [
-        "Mature whole grain",
-        "Threshed seed",
-        "Sprouted grain",
-        "Young tender growth in limited amounts"
-      ],
-
-      primaryValue: [
-        "Carbohydrate energy",
-        "Moderate protein",
-        "Dry grain storage",
-        "Foraging enrichment",
-        "Short-season grain production"
-      ],
-
-      feedingForms: [
-        "Whole mature seed",
-        "Cracked or ground grain",
-        "Sprouted grain",
-        "Seed heads offered as enrichment",
-        "Controlled access to young plants"
-      ],
-
-      bestFor: [
-        "Adult chickens as a supplemental grain",
-        "Warm and dry climates",
-        "Short growing seasons",
-        "Small grain plots",
-        "Winter grain storage",
-        "Owners wanting a relatively fast-maturing crop"
-      ],
-
-      supplementOnly: true,
-
-      preparationNotes:
-        "Allow grain heads to mature and dry before harvest. Cut or collect the heads, dry them thoroughly, thresh the seed if desired, and store it in a dry, rodent-resistant container. Whole seed may be offered in limited amounts, while grinding or cracking may improve access for smaller birds.",
-
-      safetyNotes:
-        "Proso millet is an energy-oriented grain and should not replace a balanced poultry ration. It is low in lysine and does not provide the amino-acid, calcium, vitamin, and mineral balance required by laying hens. Avoid moldy, wet, fermented, pesticide-contaminated, or improperly stored grain."
-    },
-
-    nutrition: {
-      basis:
-        "Approximate raw whole-grain values. Composition varies by variety, hull percentage, growing conditions, storage, and processing.",
-
-      crudeProteinPercent:
-        "Approximately 11% to 13% in commonly reported whole-grain analyses",
-
-      fatPercent:
-        "Approximately 3% to 4%",
-
-      fiberPercent:
-        "Approximately 2% to 8%, depending heavily on whether the grain is hulled and how fiber is measured",
-
-      calciumPercent:
-        "Low; exact poultry-feed value remains under verification",
-
-      phosphorusPercent:
-        "Present in moderate amounts, but total phosphorus is not necessarily fully available to poultry",
-
-      notableNutrients: [
-        "Starch and carbohydrate energy",
-        "Moderate protein",
-        "Unsaturated fatty acids",
-        "Phosphorus",
-        "Magnesium",
-        "Manganese",
-        "B vitamins",
-        "Small amounts of iron and zinc"
-      ],
-
-      limitations: [
-        "Low in lysine relative to poultry requirements",
-        "Protein content alone does not indicate balanced amino-acid quality",
-        "Calcium is too low for use as a primary laying-hen feed",
-        "The hull can increase fiber and reduce usable energy",
-        "Whole grain, hulled grain, flour, sprouts, and forage have different nutritional values",
-        "Heavy grain supplementation can dilute the nutrients supplied by complete poultry feed",
-        "Millet species should not be treated as nutritionally interchangeable"
-      ]
-    },
-
-    growing: {
-      sunlight: "Full sun",
-
-      soilTemperatureMinimumF:
-        "Approximately 55°F to 60°F, with warmer soil generally supporting faster establishment",
-
-      idealSoilTemperatureF:
-        "Approximately 60°F or warmer",
-
-      frostTolerance: "Very Low",
-
-      heatTolerance: "High",
-
-      droughtTolerance:
-        "High compared with many common grain crops",
-
-      soilPHMinimum: null,
-      soilPHMaximum: null,
-
-      waterNeeds:
-        "Low to moderate. Proso millet is drought tolerant, but moisture during germination, flowering, and grain filling improves establishment and yield.",
-
-      directSow: true,
-      transplantRecommended: false,
-
-      daysToFirstHarvestMinimum: 60,
-      daysToFirstHarvestMaximum: 90,
-
-      daysToMaturityMinimum: 60,
-      daysToMaturityMaximum: 90,
-
-      plantSpacingInches:
-        "Usually broadcast or densely drilled rather than planted as individually spaced garden plants",
-
-      rowSpacingInches:
-        "Approximately 6 to 10 inches in closely drilled production; wider rows may be used for cultivation",
-
-      plantingDepthInches:
-        "Approximately 1/2 to 1 inch in suitable moisture; avoid excessively deep planting",
-
-      successionPlanting:
-        "Possible where at least 60 to 90 frost-free days remain",
-
-      regrowthAfterHarvest: false
-    },
-
-    regionalPlanting: {
-      coldNorth: {
-        plantingWindow:
-          "Plant after frost danger has passed and soil has warmed, commonly from late spring into early summer. Select an early-maturing variety.",
-        harvestWindow:
-          "Late summer into early fall, before hard frost or prolonged wet weather."
-      },
-
-      midwestNortheast: {
-        plantingWindow:
-          "Direct sow from late spring into early summer after the soil has warmed. The short season may allow planting after an early vegetable crop.",
-        harvestWindow:
-          "Late summer through early fall."
-      },
-
-      upperSouth: {
-        plantingWindow:
-          "Plant from spring into early summer after frost danger has passed. Later plantings may be possible if 60 to 90 warm days remain.",
-        harvestWindow:
-          "Summer through early fall, depending on planting date."
-      },
-
-      deepSouth: {
-        plantingWindow:
-          "Plant during warm weather from spring into summer. Time grain filling to avoid the wettest harvest period when possible.",
-        harvestWindow:
-          "Summer through fall, depending on planting date and rainfall."
-      },
-
-      southwest: {
-        plantingWindow:
-          "Plant after frost once soil is warm. Irrigation may help establishment, although the crop is comparatively drought tolerant.",
-        harvestWindow:
-          "Summer into fall, depending on elevation, planting date, and irrigation."
-      },
-
-      pacificNorthwest: {
-        plantingWindow:
-          "Plant after frost in the warmest available location once soil temperatures rise. Earlier-maturing varieties are preferable in cool regions.",
-        harvestWindow:
-          "Late summer into early fall."
-      },
-
-      coastalWest: {
-        plantingWindow:
-          "Plant when soil is warm and frost risk has passed. Inland valleys are generally more reliable than cool, foggy coastal areas.",
-        harvestWindow:
-          "Summer through fall."
-      }
-    },
-
-    spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
-
-      expectedYieldPerPlantMinimumLbs: null,
-      expectedYieldPerPlantMaximumLbs: null,
-
-      expectedYieldPer100SquareFeetMinimumLbs: null,
-      expectedYieldPer100SquareFeetMaximumLbs: null,
-
-      edibleYieldPercent: null,
-
-      storageLife:
-        "Properly dried grain may remain usable for many months when protected from moisture, heat, insects, rodents, and rancidity",
-
-      storageMethod:
-        "Harvest mature heads when most seed has hardened. Dry thoroughly, thresh and clean the grain if desired, and store it in a cool, dry, dark place inside a sealed food-safe and rodent-resistant container.",
-
-      yieldNotes:
-        "Proso millet is normally broadcast or densely drilled rather than planted as individually spaced garden plants. Production recommendations are generally expressed as seed weight per acre, seeds per area, or target stand rather than a dependable number of mature plants per square foot. Germination percentage, emergence, row width, seeding method, variety, tillering, soil moisture, and weed pressure can substantially change the final stand. For that reason, plants-per-area values remain null rather than implying false precision. Commercial grain yields are sometimes reported between roughly 2.5 and 4.5 metric tons per hectare under favorable conditions, but those field-scale figures should not be converted directly into backyard yield without accounting for variety, harvest loss, threshing efficiency, bird pressure, fertility, and garden management."
-
-    },
-
-    economics: {
-      seedCostEstimate:
-        "Usually low when purchased as bulk agricultural or birdseed grain, but named planting varieties may cost more",
-
-      equipmentCostEstimate:
-        "Low for a small broadcast plot. Optional costs include irrigation, bird netting, harvesting tools, drying screens, threshing equipment, and storage containers.",
-
-      irrigationCostLevel: "Low to Moderate",
-
-      laborLevel:
-        "Moderate to High when grain is harvested, dried, threshed, cleaned, and stored by hand",
-
-      potentialFeedSavings: null,
-
-      economicNotes:
-        "Proso millet may be economical where land is available, rainfall is limited, and seed can be harvested efficiently. On very small plots, the labor required to protect, thresh, and clean the grain may exceed its direct feed value. It may still provide enrichment, crop diversity, and wildlife value."
-    },
-
-    scores: {
-      easeOfGrowing: null,
-      yieldPerSquareFoot: null,
-      nutritionalUsefulness: null,
-      proteinContribution: null,
-      energyContribution: null,
-      storageValue: null,
-      smallSpaceSuitability: null,
-      heatTolerance: null,
-      coldTolerance: null,
-      laborEfficiency: null,
-      economicPotential: null,
-      safetySimplicity: null
-    },
-
-    rankings: {
-      practicalScore: null,
-      nutritionalScore: null,
-      bcpFeedScore: null
-    },
-
-    evidence: {
-      evidenceStrength:
-        "Moderate to strong for crop adaptation, short maturity, drought tolerance, and general grain composition; moderate for use as livestock and poultry grain; limited for backyard laying-hen supplementation rates and small-plot yield",
-
-      sources: [
-        {
-          title:
-            "Producing and Marketing Proso Millet in the Great Plains",
-          organization:
-            "University of Nebraska–Lincoln Extension",
-          url:
-            "https://extensionpublications.unl.edu/assets/pdf/ec137.pdf",
-          use:
-            "Production region, planting practices, crop management, maturity, harvest, and grain use"
+            "Composition and poultry metabolizable-energy context for heat-treated Cowpea seed"
         },
 
         {
           title:
-            "Proso Millet and Its Potential for Cultivation in the Pacific Northwest",
+            "Cowpea Forage",
+
           organization:
-            "Frontiers in Plant Science",
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
           url:
-            "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01961/full",
+            "https://www.feedipedia.org/node/233",
+
           use:
-            "Crop adaptation, drought tolerance, short growth cycle, production potential, and grain characteristics"
+            "Cowpea forage, hay, silage, grazing, nutritive value, biomass, maturity effects, and distinctions between vegetative material and mature seed"
         },
 
         {
           title:
-            "Alternative Uses of Proso Millet",
+            "Cowpeas in Poultry Diets",
+
           organization:
-            "University of Nebraska–Lincoln Extension",
+            "Small and Backyard Poultry Extension",
+
           url:
-            "https://digitalcommons.unl.edu/panhandleresext/80/",
+            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/legumes-in-poultry-feed/cowpeas-in-poultry-diets/",
+
           use:
-            "Livestock, poultry, birdseed, food, and industrial uses"
+            "Cowpea use in poultry diets, heat and drought adaptation, lysine contribution, methionine and cysteine limitations, antinutritional factors, processing, and professionally formulated poultry-diet context"
         },
 
         {
           title:
-            "Millet Grains: Nutritional Quality, Processing, and Potential Health Benefits",
+            "Cowpea Plant Guide",
+
           organization:
-            "Comprehensive Reviews in Food Science and Food Safety",
+            "USDA Natural Resources Conservation Service",
+
           url:
-            "https://doi.org/10.1111/1541-4337.12012",
+            "https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/pg_viun.pdf",
+
           use:
-            "General millet grain composition, amino-acid limitations, processing, and nutrient variability"
+            "Growth habit, adaptation, heat and drought tolerance, forage, hay, grazing, cover cropping, erosion control, nitrogen fixation, regrowth after light defoliation, biomass production, seed production, and conservation uses"
+        },
+
+        {
+          title:
+            "Cowpea",
+
+          organization:
+            "USDA Agricultural Research Service and National Plant Germplasm System",
+
+          url:
+            "https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomydetail?id=42241",
+
+          use:
+            "Scientific identity, accepted taxonomy, crop classification, and germplasm context"
+        },
+
+        {
+          title:
+            "Growing Staple Vegetables from Around the World in Minnesota",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/vegetables/growing-staple-vegetables-around-world-minnesota",
+
+          use:
+            "Home-garden Cowpea planting, warm-soil establishment, spacing, planting depth, pH, water needs, nitrogen fixation, pests, fresh harvest, and dry-seed maturity context"
+        },
+
+        {
+          title:
+            "Cowpea Production",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/",
+
+          use:
+            "Regional vegetable Cowpea production, cultivar selection, planting, fertility, irrigation, pests, diseases, harvesting, and southeastern production context"
+        },
+
+        {
+          title:
+            "Southern Pea Production",
+
+          organization:
+            "Clemson Cooperative Extension",
+
+          url:
+            "https://hgic.clemson.edu/",
+
+          use:
+            "Southern Pea and Cowpea garden production, warm-season planting, growth habits, harvest stages, regional pests, and household-food use"
+        },
+
+        {
+          title:
+            "Cowpea Production Guide",
+
+          organization:
+            "Alabama Cooperative Extension System",
+
+          url:
+            "https://www.aces.edu/",
+
+          use:
+            "Southeastern Cowpea production, soil, planting, cultivar selection, insects, Cowpea curculio, diseases, nematodes, harvest, and storage considerations"
+        },
+
+        {
+          title:
+            "Cowpea Cover Crop",
+
+          organization:
+            "Sustainable Agriculture Research and Education",
+
+          url:
+            "https://www.sare.org/publications/managing-cover-crops-profitably/legume-cover-crops/cowpeas/",
+
+          use:
+            "Warm-season cover cropping, heat and drought adaptation, nitrogen fixation, biomass, weed suppression, growth habit, management, and rotation value"
+        },
+
+        {
+          title:
+            "Cowpea Production Handbook",
+
+          organization:
+            "International Institute of Tropical Agriculture",
+
+          url:
+            "https://www.iita.org/",
+
+          use:
+            "Cowpea biology, tropical and subtropical production, growth habit, photoperiod response, pests, diseases, harvest, seed handling, and food-security context"
         },
 
         {
           title:
             "USDA FoodData Central",
+
           organization:
             "United States Department of Agriculture",
+
           url:
             "https://fdc.nal.usda.gov/",
+
           use:
-            "General nutrient context for raw and cooked millet grain"
+            "Human-food composition of raw and cooked Cowpeas, moisture changes, protein, starch, minerals, vitamins, and the distinction between dry and cooked products"
         }
       ],
 
-      lastReviewed: "2026-07-13",
+      lastReviewed:
+        "2026-07-20",
 
       researchNotes: [
-        "Keep this record specific to proso millet rather than combining all millet species.",
-        "Consider separate future records for pearl millet, foxtail millet, and Japanese millet.",
-        "Find poultry-specific feeding trials using proso millet in laying-hen diets.",
-        "Do not apply broiler or commercial formulated-feed inclusion rates directly to backyard laying hens.",
-        "Verify calcium, phosphorus, amino-acid, and metabolizable-energy values from a poultry-feed database.",
-        "Research whether red, white, and yellow proso millet differ meaningfully in poultry use.",
-        "Find credible small-plot grain yield data before assigning yield per square foot.",
-        "Evaluate bird-loss prevention methods such as netting or harvesting heads before full shattering.",
-        "Compare hand-threshing labor with the market value of purchased millet grain.",
-        "Calculate scores only after multiple crops have comparable evidence and complete data.",
-        "Plant-density fields remain null because proso millet is normally broadcast or drilled by seeding rate, and tillering and establishment losses prevent a reliable conversion to mature individual plants per square foot.",
+        "Separate bush, erect, semi-erect, semi-vining, trailing, prostrate, climbing, forage, vegetable, and grain Cowpea types where growth habit affects planner recommendations.",
+        "Do not treat all Southern Peas, Black-eyed Peas, Crowder Peas, Cream Peas, Clay Peas, forage Cowpeas, and yardlong Beans as agronomically or nutritionally identical.",
+        "Yardlong Bean is a cultivar group within Vigna unguiculata but requires a separate production pathway if added later.",
+        "Separate fresh leaves, tender vine tips, immature pods, fresh peas, mature dry seed, dehulled seed, cooked seed, roasted seed, sprouted seed, forage, hay, and crop residue.",
+        "Do not compare fresh-weight forage directly with dry-seed weight.",
+        "Do not treat crude-protein percentage as proof of digestible amino-acid adequacy.",
+        "Do not treat Cowpea as a direct substitute for soybean meal.",
+        "Methionine and total sulfur-containing amino acids remain major poultry limitations.",
+        "Do not recommend unrestricted raw mature seed.",
+        "Research cultivar-specific trypsin-inhibitor, lectin, tannin, phytate, and phenolic concentrations.",
+        "Research whether seed-coat color reliably predicts tannin concentration across relevant cultivars.",
+        "Research practical household cooking methods that consistently reduce heat-labile antinutritional factors.",
+        "Research small-batch roasting temperature, moisture, time, and batch-depth requirements.",
+        "Research whether ordinary dry roasting reliably processes whole Cowpea seed throughout the kernel.",
+        "Research the risks of underprocessing and overprocessing.",
+        "Research protein-quality damage from excessive heat.",
+        "Research dehulling efficiency and nutrient recovery at backyard scale.",
+        "Research whether soaking materially improves poultry value beyond shortening cooking time.",
+        "Research whether discarded soak water removes meaningful antinutritional compounds.",
+        "Research controlled germination and sprouting separately from mature cooked seed.",
+        "Research microbial and mold hazards in household Cowpea sprouting.",
+        "Research fermentation only through validated controlled processes.",
+        "Do not treat cooked Cowpeas as shelf-stable.",
+        "Research safe refrigerated holding time for cooked Cowpeas intended for flock use.",
+        "Research freezing and thawing effects on cooked-seed handling.",
+        "Do not recommend a universal backyard inclusion percentage.",
+        "Published commercial broiler inclusion levels apply only to complete balanced experimental diets.",
+        "Do not apply broiler findings automatically to laying hens.",
+        "Research laying-hen performance with properly processed Cowpea seed.",
+        "Research egg production, egg weight, shell quality, body condition, feed intake, and feed conversion.",
+        "Research mature-breeder and dual-purpose flock use separately.",
+        "Research young-chick sensitivity separately from adult-bird use.",
+        "Research whole cooked peas versus coarsely ground heat-treated meal.",
+        "Research selective feeding when processed Cowpeas are offered separately.",
+        "Research whether cooked whole peas create choking, crop-filling, or spoilage concerns under backyard conditions.",
+        "Research fresh-leaf and tender-vine-tip nutrient composition.",
+        "Research immature-pod and fresh-pea composition separately.",
+        "Research poultry acceptance of tender Cowpea foliage.",
+        "Research controlled grazing intensity and recovery.",
+        "Research the effect of repeated defoliation on nodulation, root reserves, flowering, pod set, and seed yield.",
+        "Research forage maturity effects on fiber and poultry acceptance.",
+        "Research whether wilted Cowpea forage creates any poultry-specific concerns.",
+        "Research hay and dried-leaf meal separately from fresh forage.",
+        "Research the suitability of Cowpea forage for forage frames.",
+        "Research crop survival under direct chicken access.",
+        "Research small-flock rotational-paddock use.",
+        "Research postharvest gleaning of residual peas.",
+        "Research pod-shattering losses by cultivar.",
+        "Research hand-picking, drying, shelling, screening, and cleaning labor.",
+        "Research named cultivars for dry-seed production versus forage production.",
+        "Research early photoperiod-insensitive cultivars for northern regions.",
+        "Research long-season and photoperiod-sensitive cultivars for southern regions.",
+        "Research day-length response by cultivar.",
+        "Research root-knot nematode resistance.",
+        "Research Fusarium wilt resistance.",
+        "Research bacterial blight, viral diseases, Cercospora leaf spot, root rots, and other regional diseases.",
+        "Research Cowpea curculio risk and management.",
+        "Research aphids, thrips, leafhoppers, stink bugs, bean leaf beetles, weevils, and mites.",
+        "Research stored-seed bruchid and weevil management without contaminating feed.",
+        "Research wildlife loss from deer, rabbits, groundhogs, rodents, and birds.",
+        "Research Cowpea-group Bradyrhizobium inoculation response in garden soils.",
+        "Research nitrogen fixation under different pH, fertility, moisture, and inoculation conditions.",
+        "Do not credit the following crop with all fixed nitrogen when seed or biomass is removed.",
+        "Research residue nitrogen release and decomposition.",
+        "Research companion and rotation effects without assuming Cowpea supplies all nitrogen needed by the next crop.",
+        "Research salinity tolerance consistently against other planner crops.",
+        "Research container volume requirements by bush and vining cultivar.",
+        "Research raised-bed depth requirements.",
+        "Research trellis requirements for climbing and semi-vining types.",
+        "Research backyard dry-seed yield per plant and per 100 square feet.",
+        "Research edible fresh-pod yield separately from dry-seed yield.",
+        "Research forage dry-matter yield separately from poultry-edible yield.",
+        "Do not convert commercial pounds-per-acre yields into guaranteed backyard pounds per square foot.",
+        "Leave minimum useful area, preferred production area, plant-count estimates, backyard yield, edible-yield percentage, and direct feed savings null until defensible evidence is available.",
+        "Calculate comparative crop scores only after equivalent schema fields have been completed for multiple crops."
       ]
     },
 
-plannerData: {
-  schemaVersion: "1.0.0",
+        plannerData: {
+      schemaVersion:
+        "2.0.0",
 
-  developmentStatus:
-    "ready",
+      developmentStatus:
+        "ready",
 
-  identity: {
-    plannerName:
-      "Proso Millet",
+      identity: {
+        plannerName:
+          "Cowpeas",
 
-    shortLabel:
-      "Millet",
+        shortLabel:
+          "Cowpea",
 
-    icon:
-      "🌾",
+        icon:
+          "🫘",
 
-    cropCategory:
-      "grain",
+        cropCategory:
+          "annual-legume",
 
-    primaryFeedCategory:
-      "energy",
+        primaryFeedCategory:
+          "warm-season-protein-oriented-legume",
 
-    guideUrl:
-      "growing-proso-millet-for-chickens.html"
-  },
-
-  lifecycle: {
-    growthCycle:
-      "annual",
-
-    isAnnual: true,
-    isBiennial: false,
-    isPerennial: false,
-    isTreeOrShrub: false,
-
-    yearsToFirstUsefulHarvest: 0,
-    yearsToFullProduction: 0,
-    expectedUsefulLifeYears: 1,
-
-    regrowsAfterHarvest: false,
-
-    permanentPlantingRequired: false,
-    reversibleAfterOneSeason: true
-  },
-
-  climate: {
-    suitableClimateTypes: [
-      "cold-short-summer",
-      "cool-moderate-summer",
-      "temperate",
-      "hot-dry",
-      "mild-winter"
-    ],
-
-    preferredClimateTypes: [
-      "cool-moderate-summer",
-      "temperate",
-      "hot-dry"
-    ],
-
-    challengingClimateTypes: [
-      "hot-humid"
-    ],
-
-    minimumFrostFreeDays: 60,
-    preferredFrostFreeDays: 90,
-
-    minimumSoilTemperatureF: 50,
-    preferredSoilTemperatureF: 60,
-
-    daysToMaturityMinimum: 60,
-    daysToMaturityMaximum: 100,
-
-    dryDownBufferDays: null,
-
-    heatToleranceScore: 4,
-
-    droughtClimateToleranceScore: 5,
-
-    humidityToleranceScore: 2,
-
-    coolSummerToleranceScore: 4,
-
-    frostSensitivityScore: 5,
-
-    winterHardinessRequired: false,
-
-    seasonExtensionBenefits: [
-      "The naturally short growth cycle makes major season-extension infrastructure unnecessary in many climates.",
-      "Early-maturing varieties can improve success in short-season areas.",
-      "Planting after the soil warms encourages faster emergence and stronger early growth.",
-      "Protected drying space may be more valuable than spring season extension in humid climates."
-    ],
-
-    indoorSeedStartingBenefitScore: 1,
-
-    directFacts: {
-      seasonType:
-        "warm-season",
-
-      frostSensitive: true,
-
-      commonlyDirectSeeded: true,
-
-      shortSeasonGrain: true,
-
-      maturityHighlyVarietyDependent:
-        true,
-
-      approximateMaturityDaysMinimum:
-        60,
-
-      approximateMaturityDaysMaximum:
-        100,
-
-      notes: [
-        "Proso Millet is one of the shortest-season grain crops in the initial planner database.",
-        "Some early varieties may mature grain in approximately 60 days, while other varieties and conditions require substantially longer.",
-        "The crop is frost sensitive and is normally planted after spring frost danger declines.",
-        "It can mature in cooler and shorter-season regions where Field Corn or Grain Sorghum may be less dependable.",
-        "Dry weather near maturity improves harvest and grain quality.",
-        "High humidity and prolonged wet weather may complicate panicle drying and increase grain-quality risks.",
-        "Indoor starting provides little practical benefit because Millet is readily direct-seeded as a dense grain stand."
-      ]
-    }
-  },
-
-  site: {
-    absoluteMinimumSunHours: null,
-
-    productiveMinimumSunHours: 6,
-
-    preferredSunHours: 8,
-
-    shadeToleranceScore: 2,
-
-    afternoonShadeBenefitInHeat: 2,
-
-    windToleranceScore: 4,
-
-    lodgingRiskScore: 3,
-
-    reflectedHeatToleranceScore: 4,
-
-    airflowRequirementScore: 5,
-
-    frostPocketSensitivityScore: 5,
-
-    treeRootCompetitionToleranceScore: 2,
-
-    hardscapeConflictRiskScore: 2,
-
-    structureConflictRiskScore: 2,
-
-    utilityConflictRiskScore: 1,
-
-    fruitDropMessRiskScore: 2,
-
-    stainingRiskScore: 1,
-
-    directFacts: {
-      preferredLight:
-        "full-sun",
-
-      productiveSunGuidance:
-        "At least 6 hours of direct sunlight, with approximately 8 hours preferred for strong grain production and even dry-down.",
-
-      windExposureConcern:
-        true,
-
-      growthHabit:
-        "upright-tillering-grass",
-
-      matureHeightFtMinimum: 2,
-      matureHeightFtMaximum: 4,
-
-      notes: [
-        "Full sun supports compact growth, panicle production, grain filling, and dry-down.",
-        "Partial shade may encourage weaker plants and reduce grain production.",
-        "Good airflow helps foliage and panicles dry after rain.",
-        "Mature plants generally tolerate wind reasonably well, but dense or overly fertile stands may lodge.",
-        "Plants are shorter and create fewer structural conflicts than Corn, Sunflower, or Grain Sorghum.",
-        "Avoid severe tree-root competition and heavily shaded orchard conditions."
-      ]
-    }
-  },
-
-  soil: {
-    textureScores: {
-      heavyClay: 2,
-      clayLoam: 4,
-      loam: 5,
-      sandyLoam: 5,
-      verySandy: 4,
-      rocky: 2
-    },
-
-    drainageRequirementScore: 5,
-
-    temporaryWetToleranceScore: 1,
-
-    waterloggingSensitivityScore: 5,
-
-    minimumSoilDepthIn: null,
-    preferredSoilDepthIn: 18,
-
-    compactionToleranceScore: 2,
-
-    establishmentInSodDifficultyScore: 5,
-
-    preferredPHMinimum: 5.5,
-    preferredPHMaximum: 7.5,
-
-    survivalPHMinimum: null,
-    survivalPHMaximum: null,
-
-    fertilityRequirementScore: 2,
-
-    nitrogenRequirementScore: 3,
-    phosphorusRequirementScore: 3,
-    potassiumRequirementScore: 3,
-
-    benefitsFromInoculation: false,
-
-    inoculantType: null,
-
-    saltToleranceScore: null,
-
-    amendmentEffortScore: 2,
-
-    directFacts: {
-      preferredDrainage:
-        "well-drained",
-
-      preferredTextures: [
-        "sandy loam",
-        "loam",
-        "well-drained clay loam"
-      ],
-
-      lowFertilityAdaptation:
-        true,
-
-      sandySoilAdaptation:
-        true,
-
-      waterloggedSoilSuitable:
-        false,
-
-      fineFirmSeedbedHelpful:
-        true,
-
-      notes: [
-        "Proso Millet performs particularly well in well-drained loam and sandy-loam soils.",
-        "The crop can produce on relatively low-fertility ground but responds to balanced fertility.",
-        "Heavy clay is a poor fit where crusting, compaction, or slow drainage delays emergence.",
-        "A fine, firm seedbed supports shallow planting and more even emergence.",
-        "Excess nitrogen may increase lodging and delay maturity.",
-        "Proso Millet does not fix nitrogen and does not benefit from legume inoculation.",
-        "The pH range is a practical planning range rather than an absolute survival range."
-      ]
-    }
-  },
-
-  water: {
-    overallWaterRequirementLevel:
-      "low",
-
-    germinationWaterNeedLevel:
-      "moderate",
-
-    establishmentWaterNeedLevel:
-      "moderate",
-
-    matureWaterNeedLevel:
-      "low",
-
-    floweringWaterNeedLevel:
-      "moderate",
-
-    harvestDevelopmentWaterNeedLevel:
-      "moderate",
-
-    droughtSurvivalScore: 5,
-
-    droughtYieldRetentionScore: 4,
-
-    criticalGrowthStages: [
-      "germination",
-      "seedling-establishment",
-      "panicle-initiation",
-      "flowering",
-      "grain-filling"
-    ],
-
-    criticalStageWaterImportanceScore: 4,
-
-    overwateringSensitivityScore: 4,
-
-    waterloggingSensitivityScore: 5,
-
-    dripIrrigationBenefitScore: 3,
-
-    mulchBenefitScore: 2,
-
-    suitableForRainfallOnlyScore: 5,
-
-    suitableForLimitedIrrigationScore: 5,
-
-    containerDryingRiskScore: 4,
-
-    establishmentYearsRequiringExtraWater: 0,
-
-    directFacts: {
-      droughtTolerantAfterEstablishment:
-        true,
-
-      establishmentMoistureImportant:
-        true,
-
-      grainFillMoistureImportant:
-        true,
-
-      lowWaterRequirementGrain:
-        true,
-
-      standingWaterSuitable:
-        false,
-
-      notes: [
-        "Proso Millet is among the strongest low-water grain crops in the initial planner database.",
-        "Seed requires adequate moisture for timely germination and establishment.",
-        "Established plants can complete a crop with less water than many longer-season grains.",
-        "Severe drought during panicle formation, flowering, and grain filling can still reduce yield.",
-        "Waterlogging and prolonged saturated soil are major limitations.",
-        "Supplemental irrigation may improve production during critical stages but is often unnecessary where rainfall and stored soil moisture are adequate.",
-        "Dry conditions near maturity generally help grain dry-down and harvest quality."
-      ]
-    }
-  },
-
-  space: {
-    minimumTrialAreaSqFt: null,
-
-    minimumUsefulAreaSqFt: null,
-
-    preferredProductionAreaSqFt: null,
-
-    smallSpaceScore: 3,
-
-    mediumSpaceScore: 5,
-
-    largeSpaceScore: 5,
-
-    layoutScores: {
-      squareBlock: 5,
-      wideRectangle: 5,
-      longStrip: 4,
-      irregular: 3,
-      smallBeds: 3,
-      openField: 5
-    },
-
-    spaceTypeScores: {
-      inGround: 5,
-      raisedBed: 3,
-      container: 1,
-      fenceLine: 3,
-      buildingEdge: 3,
-      unusedLawn: 4,
-      openField: 5,
-      orchard: 2,
-      forageFrame: 1,
-      rotationalPaddock: 2,
-      greenhouse: 1,
-      hedgerow: 2
-    },
-
-    minimumContainerGallons: null,
-
-    containerUseLimitation:
-      "Millet can grow in containers, but dense grain production, rapid container drying, and low harvest per container make this an inefficient chicken-feed system.",
-
-    minimumRaisedBedDepthIn: null,
-
-    vineSpreadRequired: false,
-
-    verticalSupportBenefitScore: 1,
-
-    blockPlantingRequired: false,
-
-    minimumBlockRows: null,
-
-    continuousStandPreferred: true,
-
-    heightCategory:
-      "medium",
-
-    matureWidthCategory:
-      "narrow-dense-stand",
-
-    overflowSpaceBenefitScore: 2,
-
-    directFacts: {
-      denseStandSuitable: true,
-
-      narrowRowsSuitable: true,
-
-      broadcastPlantingPossible:
-        true,
-
-      blockPollinationRequired: false,
-
-      containerFeedProductionEfficient:
-        false,
-
-      notes: [
-        "Proso Millet is most useful when planted as a dense stand rather than as isolated individual plants.",
-        "It does not require Corn-style block planting for pollination.",
-        "Medium and large plots provide better grain usefulness than a few plants in a decorative bed.",
-        "A small bed can still provide whole panicles for enrichment, but loose-grain yield may be modest.",
-        "Open fields and broad rectangular plots simplify planting, weed management, harvest, and bird protection.",
-        "Containers are a poor use of soil volume and watering effort for meaningful grain production.",
-        "Minimum useful area remains null until grain yield and flock-size relationships are tested."
-      ]
-    }
-  },
-
-  flock: {
-    suitableForAdultChickens: true,
-
-    suitableForYoungChicks: false,
-
-    flockPurposeScores: {
-      eggs: 4,
-      meat: 4,
-      breeding: 3,
-      petsEnrichment: 5,
-      homestead: 5,
-      mixed: 5
-    },
-
-    feedingMethodScores: {
-      livingGrazing: 1,
-      cutAndCarry: 2,
-      wholeProduce: 1,
-      wholeSeedHeads: 5,
-      wholeGrain: 5,
-      processedGrain: 4,
-      heatTreated: 2,
-      driedForage: 1,
-      winterStorage: 5
-    },
-
-    directRunSuitabilityScore: 1,
-
-    forageFrameSuitabilityScore: 1,
-
-    rotationalPaddockSuitabilityScore: 2,
-
-    confinedFlockValueScore: 5,
-
-    pasturedFlockValueScore: 4,
-
-    treatDilutionRiskScore: 3,
-
-    highEnergySupplement: true,
-
-    highFiberSupplement: false,
-
-    concentratedFatSource: false,
-
-    primaryFlockUses: [
-      "Whole mature panicle enrichment",
-      "Loose whole grain",
-      "Stored winter grain",
-      "Small-grain energy supplementation",
-      "Scatter-feeding enrichment"
-    ],
-
-    unsuitablePrimaryUses: [
-      "Complete-ration replacement",
-      "Living forage",
-      "Primary protein crop",
-      "Permanent run planting",
-      "Primary young-chick feed"
-    ],
-
-    directFacts: {
-      edibleFeedParts: [
-        "Mature grain",
-        "Whole dried panicles"
-      ],
-
-      preferredBirdStage:
-        "Established adult chickens",
-
-      cropSurvivalWithDirectChickenAccess:
-        "poor-before-grain-maturity",
-
-      directAccessTiming:
-        "Protect plants while growing and offer harvested mature panicles or clean grain after maturity.",
-
-      nutritionalOrientation: [
-        "energy",
-        "grain",
-        "moderate-protein",
-        "enrichment",
-        "winter-storage"
-      ],
-
-      balancedFeedReplacement:
-        false,
-
-      notes: [
-        "Proso Millet is historically used as poultry feed and bird seed.",
-        "Whole mature panicles allow chickens to remove grain naturally and provide pecking enrichment.",
-        "Loose grain is easier to measure but requires threshing and cleaning.",
-        "Millet is primarily an energy grain and does not supply a complete amino-acid, vitamin, mineral, or calcium balance.",
-        "The grain is notably limited in lysine and should not be treated as a stand-alone poultry ration.",
-        "Growing plants should be protected from chickens and wild birds until harvest.",
-        "Young chicks should continue receiving an age-appropriate complete starter ration."
-      ]
-    }
-  },
-
-  labor: {
-    beginnerFriendlinessScore: 3,
-
-    plantingEaseScore: 4,
-
-    establishmentEaseScore: 3,
-
-    routineMaintenanceEaseScore: 3,
-
-    weedControlEaseScore: 2,
-
-    wildlifeProtectionEaseScore: 2,
-
-    harvestEaseScore: 3,
-
-    wholePanicleProcessingEaseScore: 4,
-
-    looseGrainProcessingEaseScore: 2,
-
-    dryingEaseScore: 3,
-
-    storageMonitoringEaseScore: 3,
-
-    perennialMaintenanceEaseScore: 5,
-
-    physicalAccessibilityScore: 4,
-
-    heavyLiftingRiskScore: 1,
-
-    weeklyLaborLevel:
-      "low",
-
-    peakWorkloadLevel:
-      "high",
-
-    harvestFrequencyCategory:
-      "once-twice",
-
-    requiredPlantingTasks: [
-      "prepare-seedbed",
-      "broadcast-small-seed"
-    ],
-
-    requiredMaintenanceTasks: [
-      "hand-weed",
-      "protect-from-wildlife"
-    ],
-
-    optionalMaintenanceTasks: [
-      "cultivate",
-      "install-irrigation"
-    ],
-
-    requiredHarvestTasks: [
-      "cut-seed-heads"
-    ],
-
-    usePathProcessingTasks: {
-      wholeDriedPanicles: [
-        "cut-seed-heads",
-        "dry"
-      ],
-
-      looseDriedGrain: [
-        "cut-seed-heads",
-        "dry",
-        "thresh",
-        "winnow",
-        "clean-sort"
-      ],
-
-      immediateMaturePanicles: [
-        "cut-seed-heads"
-      ]
-    },
-
-    requiredStorageTasks: [
-      "inspect-moisture",
-      "inspect-insects",
-      "inspect-mold"
-    ],
-
-    specializedEquipmentRequired: [],
-
-    specializedEquipmentHelpful: [
-      "hand-pruners",
-      "bird-netting",
-      "drying-rack",
-      "drying-screen",
-      "fan",
-      "grain-thresher",
-      "food-safe-bucket",
-      "metal-grain-can",
-      "moisture-meter"
-    ],
-
-    suitableForLowTimeUsersScore: 3,
-
-    suitableForSoloGrowersScore: 4,
-
-    directFacts: {
-      seedSize:
-        "very-small",
-
-      directSeedingSuitable: true,
-
-      specializedHarvestEquipmentRequiredForBackyardScale:
-        false,
-
-      unevenMaturityConcern:
-        true,
-
-      majorLaborBottlenecks: [
-        "Preparing a fine seedbed",
-        "Maintaining weed control during slow early development",
-        "Protecting grain from wild birds",
-        "Choosing harvest timing when panicles mature unevenly",
-        "Drying panicles",
-        "Threshing and winnowing loose grain",
-        "Monitoring stored grain for moisture and insects"
-      ],
-
-      notes: [
-        "Small seed requires more careful planting than Sunflower, Cowpea, Pumpkin, or Corn.",
-        "Early weed competition is one of the crop's most important management challenges.",
-        "The crop becomes more competitive after the stand closes.",
-        "Whole-panicle use avoids most threshing and winnowing labor.",
-        "Loose-grain production creates a concentrated seasonal workload.",
-        "Small backyard stands can be harvested manually without commercial machinery.",
-        "Uneven grain maturity can make harvest timing difficult."
-      ]
-    }
-  },
-
-  cost: {
-    seedOrPlantCostLevel:
-      "low",
-
-    soilPreparationCostLevel:
-      "low",
-
-    irrigationCostLevel:
-      "very-low",
-
-    protectionCostLevel:
-      "moderate",
-
-    processingEquipmentCostLevel:
-      "moderate",
-
-    storageCostLevel:
-      "low",
-
-    annualRecurringCostLevel:
-      "low",
-
-    longTermValueScore: 4,
-
-    lowestCostUsePath:
-      "fresh-mature-panicles",
-
-    highestCostUsePath:
-      "loose-dried-grain",
-
-    likelyCostDrivers: [
-      "Bird netting",
-      "Fine seedbed preparation",
-      "Drying racks or screens",
-      "Optional grain thresher",
-      "Rodent-resistant storage containers",
-      "Moisture meter"
-    ],
-
-    costReductionOptions: [
-      "Use whole mature or dried panicles instead of threshing loose grain.",
-      "Plant a small trial before expanding the grain area.",
-      "Use existing screens, tarps, fans, and containers.",
-      "Harvest and thresh manually at small scale.",
-      "Use an adapted short-season variety to reduce crop-failure risk."
-    ],
-
-    directFacts: {
-      specializedPlantingEquipmentRequired:
-        false,
-
-      specializedBackyardHarvestEquipmentRequired:
-        false,
-
-      specializedProcessingEquipmentRequired:
-        false,
-
-      notes: [
-        "Seed and growing inputs are generally inexpensive.",
-        "The crop's low water requirement may reduce irrigation costs.",
-        "Wild-bird protection can become the largest optional growing expense.",
-        "Whole-panicle use avoids purchasing threshing or milling equipment.",
-        "Cost ratings are qualitative rather than current retail estimates."
-      ]
-    }
-  },
-
-  goals: {
-    feedReductionScore: 4,
-
-    energyProductionScore: 5,
-
-    proteinOrientedScore: 3,
-
-    freshGreensScore: 1,
-
-    livingForageScore: 1,
-
-    winterStorageScore: 5,
-
-    enrichmentScore: 5,
-
-    resilienceScore: 5,
-
-    soilImprovementScore: 2,
-
-    nitrogenFixationScore: 1,
-
-    groundCoverScore: 4,
-
-    erosionControlScore: 3,
-
-    shadeScore: 1,
-
-    privacyScreeningScore: 2,
-
-    pollinatorSupportScore: 2,
-
-    compostBiomassScore: 3,
-
-    householdFoodScore: 4,
-
-    seedSavingScore: 5,
-
-    selfRelianceScore: 5,
-
-    multipurposeValueScore: 4,
-
-    visualAppealScore: 3,
-
-    productionReliabilityScore: 4,
-
-    fastestValueScore: 5,
-
-    nonElectricStorageScore: 5,
-
-    smallFlockValueScore: 4,
-
-    largeFlockValueScore: 4,
-
-    primaryGoalMatches: [
-      "high-energy",
-      "winter-storage",
-      "resilience-feed",
-      "limited-irrigation",
-      "short-season",
-      "seed-saving",
-      "self-reliance",
-      "enrichment",
-      "non-electric-storage"
-    ],
-
-    weakGoalMatches: [
-      "fresh-greens",
-      "living-forage",
-      "nitrogen-fixation",
-      "major-soil-improvement",
-      "shade",
-      "large-household-vegetable-harvest"
-    ],
-
-    directFacts: {
-      shortSeasonGrain:
-        true,
-
-      poultryFeedHistory:
-        true,
-
-      birdSeedHistory:
-        true,
-
-      humanFoodPotential:
-        true,
-
-      seedSavingPossible:
-        true,
-
-      notes: [
-        "Proso Millet is one of the strongest short-season grain options in the initial planner database.",
-        "It offers strong energy, drought resilience, winter storage, and self-reliance value.",
-        "Whole panicles provide strong enrichment without requiring loose-grain processing.",
-        "The crop is not useful as living poultry forage.",
-        "It does not fix nitrogen.",
-        "Human-food use generally requires additional cleaning, dehulling, or milling.",
-        "Its primary planner value is mature grain rather than foliage or forage."
-      ]
-    }
-  },
-
-  risks: {
-    wildlife: {
-      wildBirds: 5,
-      deer: 2,
-      raccoons: 1,
-      squirrels: 3,
-      rabbits: 2,
-      rodents: 5,
-      groundhogs: 2
-    },
-
-    insectsRiskScore: 3,
-
-    diseaseRiskScore: 3,
-
-    lodgingRiskScore: 3,
-
-    fieldMoldRiskScore: 3,
-
-    dryingMoldRiskScore: 4,
-
-    storageMoldRiskScore: 4,
-
-    storedInsectRiskScore: 4,
-
-    spoilageSpeedRiskScore: 2,
-
-    invasivenessConcernRiskScore: 3,
-
-    selfSeedingRiskScore: 5,
-
-    fruitDropRiskScore: 3,
-
-    cropFailureRiskScore: 3,
-
-    stormDamageRiskScore: 3,
-
-    shadingOtherCropsRiskScore: 2,
-
-    overfeedingRiskScore: 3,
-
-    treatedSeedRiskScore: 5,
-
-    primaryRisks: [
-      {
-        id:
-          "wild-bird-grain-loss",
-
-        severity:
-          "very-high",
-
-        affectedStages: [
-          "grain-filling",
-          "maturity",
-          "field-drying"
-        ],
-
-        mitigationOptions: [
-          "Bird netting",
-          "Timely harvest",
-          "Protected drying",
-          "Larger consolidated planting",
-          "Individual panicle bags for small trials"
-        ],
-
-        note:
-          "Small exposed grain stands may attract heavy wild-bird feeding."
+        guideUrl:
+          "growing-cowpeas-for-chickens.html"
       },
 
-      {
-        id:
-          "early-weed-competition",
+      lifecycle: {
+        growthCycle:
+          "annual",
 
-        severity:
-          "very-high",
+        isAnnual:
+          true,
 
-        affectedStages: [
-          "emergence",
-          "seedling",
-          "early-tillering"
-        ],
+        isBiennial:
+          false,
 
-        mitigationOptions: [
-          "Prepare a clean seedbed",
-          "Plant at an appropriate density",
-          "Cultivate or hand weed early",
-          "Avoid severely weedy ground",
-          "Use stale-seedbed preparation where practical"
-        ],
+        isPerennial:
+          false,
 
-        note:
-          "Proso Millet can be a weak early competitor and may suffer major yield loss from weeds."
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          true,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
       },
 
-      {
-        id:
-          "uneven-grain-maturity",
-
-        severity:
-          "high",
-
-        affectedStages: [
-          "maturity",
-          "harvest"
+      climate: {
+        suitableClimateTypes: [
+          "temperate",
+          "hot-humid",
+          "hot-dry",
+          "mild-winter",
+          "long-warm-summer"
         ],
 
-        mitigationOptions: [
-          "Monitor upper and lower panicles",
-          "Harvest when most grain is mature",
-          "Finish drying after harvest",
-          "Use multiple harvests in very small plantings"
+        preferredClimateTypes: [
+          "hot-humid",
+          "hot-dry",
+          "long-warm-summer"
         ],
 
-        note:
-          "Grain within and among panicles may not mature simultaneously."
+        challengingClimateTypes: [
+          "cold-short-summer",
+          "cool-cloudy-summer",
+          "high-elevation-short-season",
+          "cold-wet-spring",
+          "waterlogged-summer-soil"
+        ],
+
+        minimumFrostFreeDays:
+          null,
+
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          65,
+
+        preferredSoilTemperatureF:
+          70,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          5,
+
+        droughtClimateToleranceScore:
+          5,
+
+        humidityToleranceScore:
+          4,
+
+        coolSummerToleranceScore:
+          2,
+
+        frostSensitivityScore:
+          5,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Selecting an early-maturing, photoperiod-insensitive cultivar improves mature-seed reliability in short-season regions.",
+          "Black plastic, dark mulch, low tunnels, or temporary row cover may help warm cold spring soil before planting.",
+          "Indoor seed starting may provide a modest advantage in very short seasons, but seedlings should be transplanted before roots become crowded or disturbed.",
+          "Biodegradable or minimally disturbed starting containers may reduce transplant shock.",
+          "Temporary frost protection may protect young plants from an unexpected late frost but does not make Cowpeas frost tolerant.",
+          "Staggered sowing can extend foliage, immature-pod, and fresh-pea harvest where enough warm season remains.",
+          "Late succession plantings may provide forage even when they do not have enough time to mature dry seed.",
+          "Irrigation during establishment, flowering, pod set, and seed filling may improve production in dry climates.",
+          "Protected postharvest drying can reduce mold and shattering losses when autumn weather is wet or humid.",
+          "Trellising may improve airflow, pod visibility, and harvest access for climbing or semi-vining cultivars.",
+          "Greenhouse production is rarely an efficient use of protected space when the primary goal is mature poultry-feed seed."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          2,
+
+        directFacts: {
+          seasonType:
+            "warm-season-annual",
+
+          frostSensitive:
+            true,
+
+          commonlyDirectSeeded:
+            true,
+
+          springTypesAvailable:
+            true,
+
+          winterTypesAvailable:
+            false,
+
+          facultativeTypesAvailable:
+            false,
+
+          vernalizationRequiredForAllVarieties:
+            false,
+
+          winterHardinessVarietyDependent:
+            false,
+
+          earlySpringPlantingPreferred:
+            false,
+
+          coolWeatherGrowthPreferred:
+            false,
+
+          highHeatDuringReproductionConcern:
+            true,
+
+          highElevationAdaptation:
+            false,
+
+          baseGrowingDegreeTemperatureF:
+            null,
+
+          approximatePollinationAfterEmergenceWeeksMinimum:
+            null,
+
+          approximatePollinationAfterEmergenceWeeksMaximum:
+            null,
+
+          maturityHighlyVarietyDependent:
+            true,
+
+          photoperiodSensitivityVarietyDependent:
+            true,
+
+          warmSoilRequired:
+            true,
+
+          coldWetSoilConcern:
+            true,
+
+          notes: [
+            "Cowpea is a frost-sensitive warm-season annual legume.",
+            "The crop performs best after danger of frost has passed and soil has warmed sufficiently for rapid emergence.",
+            "Cold wet soil can delay germination, increase seed decay, weaken seedlings, and reduce stand establishment.",
+            "A minimum soil temperature near 65°F is retained as practical backyard guidance rather than an absolute biological threshold.",
+            "A preferred planting-soil temperature near 70°F supports faster and more uniform emergence under adequate moisture.",
+            "Direct seeding is normally more practical than transplanting because Cowpea seed is large and establishes readily in warm soil.",
+            "Indoor seed starting may help where the frost-free season is genuinely short, but prolonged container growth can produce tangled roots and transplant stress.",
+            "Cowpeas do not require winter exposure or vernalization.",
+            "The crop has no winter-hardy grain-production pathway.",
+            "Frost can kill seedlings, foliage, flowers, pods, and immature seed.",
+            "Cowpeas tolerate hot weather better than most cool-season legumes and many common garden Beans.",
+            "Heat tolerance does not guarantee successful flowering or seed filling under severe combined heat and drought.",
+            "Extreme heat, hot dry wind, and insufficient soil moisture during flowering may increase flower abortion and reduce pod set.",
+            "Drought during seed filling may reduce seed size, weight, and final harvest.",
+            "Cowpeas can continue vegetative growth under conditions that do not support strong pod or seed production.",
+            "Drought survival and dependable grain yield must be scored separately.",
+            "Humid climates can support vigorous growth but may increase bacterial disease, fungal disease, root rot, foliar disease, pod decay, insect pressure, and drying difficulty.",
+            "Hot dry climates can support strong production where establishment and reproductive-stage moisture remain adequate.",
+            "Cool cloudy summers may delay flowering, slow pod development, and prevent dependable dry-seed maturity.",
+            "High-elevation production is possible only where a sufficiently long warm frost-free period and an early cultivar are available.",
+            "Cultivar maturity varies substantially among bush, erect, semi-vining, trailing, climbing, forage, vegetable, and grain types.",
+            "Days to edible leaves, tender pods, fresh peas, and mature dry seed are separate production stages.",
+            "A fresh-pod maturity date should not be used as a dry-seed maturity date.",
+            "Some cultivars are relatively photoperiod insensitive, while others respond strongly to day length.",
+            "Photoperiod-sensitive cultivars may flower late or remain excessively vegetative outside their adapted latitude or planting season.",
+            "Northern and short-season growers should prioritize early, photoperiod-insensitive cultivars.",
+            "Southern and tropical-adapted cultivars may require different planting windows than early temperate cultivars.",
+            "The planner should distinguish emergence, vegetative harvest, flowering, pod set, fresh-pea maturity, physiological seed maturity, pod drying, harvest, and safe storage dryness."
+          ]
+        }
       },
 
-      {
-        id:
-          "seed-shattering-and-self-seeding",
+            site: {
+        absoluteMinimumSunHours:
+          null,
 
-        severity:
-          "high",
+        productiveMinimumSunHours:
+          6,
 
-        affectedStages: [
-          "late-maturity",
-          "harvest",
-          "following-seasons"
-        ],
+        preferredSunHours:
+          8,
 
-        mitigationOptions: [
-          "Harvest promptly",
-          "Clean spilled grain",
-          "Monitor volunteer plants",
-          "Avoid allowing mature panicles to remain indefinitely"
-        ],
+        shadeToleranceScore:
+          2,
 
-        note:
-          "Mature grain may shatter and create volunteer Millet plants."
+        afternoonShadeBenefitInHeat:
+          2,
+
+        windToleranceScore:
+          4,
+
+        lodgingRiskScore:
+          2,
+
+        reflectedHeatToleranceScore:
+          5,
+
+        airflowRequirementScore:
+          4,
+
+        frostPocketSensitivityScore:
+          5,
+
+        treeRootCompetitionToleranceScore:
+          3,
+
+        hardscapeConflictRiskScore:
+          2,
+
+        structureConflictRiskScore:
+          2,
+
+        utilityConflictRiskScore:
+          1,
+
+        fruitDropMessRiskScore:
+          2,
+
+        stainingRiskScore:
+          1,
+
+        directFacts: {
+          preferredLight:
+            "full-sun",
+
+          productiveSunGuidance:
+            "Approximately 6 or more hours of direct sunlight can support useful vegetative growth, while approximately 8 or more hours is preferred for dense canopy development, flowering, pod production, mature-seed filling, and dependable post-rain drying.",
+
+          windExposureConcern:
+            false,
+
+          growthHabit:
+            "variety-dependent-bush-to-climbing-annual-legume",
+
+          matureHeightFtMinimum:
+            null,
+
+          matureHeightFtMaximum:
+            null,
+
+          floweringPollinatorTraffic:
+            true,
+
+          seasonalPrivacyScreen:
+            true,
+
+          undergroundSpreadConcern:
+            false,
+
+          selfPollinated:
+            true,
+
+          windPollinated:
+            false,
+
+          insectPollinationRequired:
+            false,
+
+          denseStandPreferred:
+            false,
+
+          airflowImportant:
+            true,
+
+          lodgingConcern:
+            false,
+
+          notes: [
+            "Full sun is preferred for strong vegetative growth, flowering, pod set, seed filling, and timely crop drying.",
+            "Partial shade may produce useful leaves and vine growth but usually reduces dependable pod and mature-seed production.",
+            "Cowpea flowers are primarily self-pollinating.",
+            "Bees and other insects may visit the flowers and can contribute to pollination activity even though insect pollination is not strictly required.",
+            "Flowering Cowpeas may provide seasonal nectar and pollen resources depending on cultivar and local conditions.",
+            "Cowpea growth habit varies greatly among compact bush, erect, semi-erect, semi-vining, trailing, prostrate, and climbing cultivars.",
+            "A universal mature-height range is not stored because cultivar and support system strongly affect plant height.",
+            "Bush cultivars may remain relatively compact.",
+            "Climbing cultivars can gain substantial height when supported by fencing, trellises, or neighboring vegetation.",
+            "Trailing cultivars may spread laterally rather than growing upright.",
+            "Cowpeas generally tolerate ordinary wind better than tall grain crops because many cultivars remain relatively low or flexible.",
+            "Long unsupported vines may become tangled, displaced, or damaged by strong wind.",
+            "Trellised cultivars may create greater wind load than unsupported bush types.",
+            "Cowpeas are not normally considered highly lodging-prone, but weak, tangled, diseased, excessively lush, or storm-damaged growth may collapse.",
+            "Good airflow is especially important in humid regions.",
+            "Dense foliage can retain moisture and increase bacterial, fungal, and pod-disease pressure.",
+            "Wide enough spacing for the cultivar can improve airflow, inspection, harvest access, and drying.",
+            "Cowpeas tolerate reflected summer heat better than most cool-season feed crops.",
+            "Walls, pavement, gravel, metal siding, decks, and other hard surfaces can still increase soil drying and irrigation demand.",
+            "Afternoon shade may reduce stress in extremely hot exposed sites, but excessive shade can reduce flowering and pod production.",
+            "Cold low spots and frost pockets should be avoided where the warm season is marginal.",
+            "Cowpeas are annual and do not spread through rhizomes, stolons, tubers, suckers, or permanent woody roots.",
+            "Volunteer plants may emerge from dropped mature seed, but this is different from vegetative underground spread.",
+            "Cowpea roots do not normally create long-term conflicts with foundations, buried utilities, paving, or structural footings.",
+            "Trailing vines can temporarily spread across paths, beds, gates, irrigation equipment, or neighboring crops.",
+            "Climbing vines can interfere with fences, utility access, vents, low shrubs, or other structures if not redirected.",
+            "Avoid placing long-vining cultivars where they can cover electrical equipment, exterior mechanical equipment, frequently used gates, narrow walkways, or emergency access.",
+            "Dropped pods, dry leaves, seed, and broken vines may create seasonal litter near paths and patios.",
+            "Mature dry seed lost near buildings may attract rodents, birds, or stored-product insects.",
+            "Cowpeas may be planted along fences where sunlight and root space remain adequate.",
+            "An existing fence can support semi-vining or climbing cultivars.",
+            "Plants should not be tied or trained in a way that damages stems or blocks airflow.",
+            "Cowpeas can provide temporary summer screening when climbing or vigorous semi-vining cultivars are used.",
+            "The crop does not provide permanent privacy screening.",
+            "Tree-root competition may reduce moisture, nutrients, nodulation, flowering, and pod production.",
+            "Light shade at an orchard edge may permit foliage growth, but deep shade beneath mature trees is poorly suited to dry-seed production.",
+            "Avoid planting where roof runoff, downspouts, compacted fill, low terrain, or irrigation leaks create prolonged saturation.",
+            "Site planning should include access for foliage harvest, pod picking, dry-pod collection, trellis management, pest inspection, irrigation, and wildlife protection.",
+            "A protected location for drying, shelling, processing, and storing mature seed should be considered before planting."
+          ]
+        }
       },
 
-      {
-        id:
-          "wet-grain-storage",
+      soil: {
+        textureScores: {
+          heavyClay:
+            2,
 
-        severity:
-          "high",
+          clayLoam:
+            4,
 
-        affectedStages: [
-          "harvest",
-          "drying",
-          "storage"
-        ],
+          loam:
+            5,
 
-        mitigationOptions: [
-          "Dry thoroughly",
-          "Use airflow",
-          "Do not seal damp grain",
-          "Inspect for heating and musty odors",
-          "Use moisture-resistant storage after adequate drying"
-        ],
+          sandyLoam:
+            5,
 
-        note:
-          "Small grain can mold or heat when enclosed before it is sufficiently dry."
+          verySandy:
+            4,
+
+          rocky:
+            2
+        },
+
+        drainageRequirementScore:
+          5,
+
+        temporaryWetToleranceScore:
+          2,
+
+        waterloggingSensitivityScore:
+          4,
+
+        minimumSoilDepthIn:
+          null,
+
+        preferredSoilDepthIn:
+          24,
+
+        compactionToleranceScore:
+          2,
+
+        establishmentInSodDifficultyScore:
+          4,
+
+        preferredPHMinimum:
+          5.5,
+
+        preferredPHMaximum:
+          7.0,
+
+        survivalPHMinimum:
+          null,
+
+        survivalPHMaximum:
+          null,
+
+        fertilityRequirementScore:
+          2,
+
+        nitrogenRequirementScore:
+          1,
+
+        phosphorusRequirementScore:
+          3,
+
+        potassiumRequirementScore:
+          3,
+
+        benefitsFromInoculation:
+          true,
+
+        inoculantType:
+          "Cowpea-group Bradyrhizobium inoculant",
+
+        saltToleranceScore:
+          null,
+
+        amendmentEffortScore:
+          2,
+
+        directFacts: {
+          preferredDrainage:
+            "well-drained",
+
+          preferredTextures: [
+            "sandy loam",
+            "loam",
+            "silt loam",
+            "well-drained clay loam"
+          ],
+
+          adaptableTextures: [
+            "sandy loam",
+            "loam",
+            "silt loam",
+            "clay loam",
+            "well-drained sandy soil"
+          ],
+
+          nitrogenFixingLegume:
+            true,
+
+          inoculationMayImproveNodulation:
+            true,
+
+          tuberForming:
+            false,
+
+          waterloggedSoilSuitable:
+            false,
+
+          compactedSoilSuitable:
+            false,
+
+          alkalineSoilTolerance:
+            null,
+
+          acidicSoilTolerance:
+            true,
+
+          salinityTolerance:
+            null,
+
+          deepRootingPotential:
+            true,
+
+          effectiveRootDepthIn:
+            null,
+
+          deeperWaterExtractionPossible:
+            true,
+
+          poorSoilAdaptation:
+            true,
+
+          sandySoilAdaptation:
+            true,
+
+          notes: [
+            "Cowpeas are widely valued for adaptation to warm, relatively low-fertility, and drought-prone soils.",
+            "Adaptation to poor soil does not mean that compaction, waterlogging, severe acidity, nutrient deficiency, or poor soil structure are harmless.",
+            "Well-drained sandy loam and loam are especially suitable for root development, nodulation, flowering, and pod production.",
+            "Silt loam can provide strong production where drainage and aeration remain adequate.",
+            "Well-structured clay loam can support Cowpeas when internal drainage is good.",
+            "Heavy clay receives a lower score where slow drainage, crusting, compaction, poor aeration, and restricted root growth are present.",
+            "Very sandy soil may support strong growth where water and nutrients are managed carefully.",
+            "Sandy soil loses moisture and mobile nutrients more rapidly than loam.",
+            "Shallow rocky soil restricts rooting depth, water storage, nutrient access, and drought resilience.",
+            "Cowpeas develop a substantial taproot and branching root system where soil conditions permit.",
+            "Deep rooting allows established plants to use moisture below the immediate soil surface.",
+            "A single universal rooting-depth value is not stored because soil texture, compaction, cultivar, water distribution, and production conditions vary greatly.",
+            "Hardpan, plow pan, compacted fill, bedrock, buried debris, and dense tree roots can restrict rooting.",
+            "Cowpeas are poorly suited to continuously saturated or waterlogged soil.",
+            "Saturation reduces root respiration and may interfere with nodulation and nitrogen fixation.",
+            "Wet soil can increase damping-off, root rot, stem disease, nutrient imbalance, and plant death.",
+            "Raised beds may improve drainage in heavy or poorly drained sites.",
+            "Raised beds must still provide adequate soil volume and should not dry excessively during flowering and seed filling.",
+            "Cowpeas establish poorly in dense living sod because perennial grasses compete for water, nutrients, sunlight, and root space.",
+            "Existing sod and perennial weeds should be controlled before planting.",
+            "Cowpeas can contribute to weed suppression after canopy closure, but seedlings require early weed control.",
+            "The stored productive pH range of approximately 5.5 to 7.0 is a practical planning range rather than an absolute survival limit.",
+            "Cowpeas tolerate moderately acidic soil better than many common garden legumes.",
+            "Severe acidity can still reduce root growth, nutrient availability, nodulation, rhizobial survival, and aluminum or manganese tolerance.",
+            "Lime should be applied according to soil-test results rather than automatically.",
+            "Cowpeas can obtain a substantial portion of their nitrogen through symbiotic fixation when effective nodules form.",
+            "Nitrogen fixation requires compatible Bradyrhizobium bacteria.",
+            "Inoculation is especially useful where Cowpeas or compatible legumes have not recently grown.",
+            "Seed inoculant must be fresh, correctly stored, compatible with Cowpea, and protected from heat and direct sunlight.",
+            "Inoculated seed should be planted promptly according to product directions.",
+            "Chemically treated seed or incompatible seed treatments may reduce rhizobial survival.",
+            "Large applications of soluble nitrogen may suppress nodulation and encourage excessive vine growth.",
+            "A small starter-nitrogen response may occur in some deficient soils, but routine nitrogen application should not replace soil testing and nodulation assessment.",
+            "Phosphorus supports root growth, flowering, energy transfer, and nodule activity where soil tests indicate deficiency.",
+            "Potassium supports water regulation, disease tolerance, pod filling, and general crop performance where deficient.",
+            "Sulfur, molybdenum, iron, and other nutrients may influence nodulation or plant performance when deficient.",
+            "Nutrient recommendations should be based on local soil tests and Extension guidance.",
+            "Fresh uncomposted manure can create excessive nitrogen, weed pressure, salt injury, uneven nutrient release, or food-safety concerns.",
+            "High fertility can produce excessive vegetative growth at the expense of pod harvest in some cultivars.",
+            "Nitrogen fixed by the crop is not automatically available to the following crop.",
+            "Nitrogen remains distributed among leaves, stems, roots, nodules, pods, and seed.",
+            "Harvesting seed and removing aboveground biomass exports a substantial portion of accumulated nitrogen.",
+            "Leaving roots and crop residue may return more nitrogen and organic matter to the soil than removing the entire plant.",
+            "Cowpea is not a tuber-forming crop.",
+            "No numeric salt-tolerance score is assigned until salinity evidence is interpreted consistently against other planner crops.",
+            "No universal survival pH range or minimum soil depth is stored."
+          ]
+        }
       },
 
-      {
-        id:
-          "rodents-and-stored-insects",
+      water: {
+        overallWaterRequirementLevel:
+          "low-to-moderate",
 
-        severity:
-          "very-high",
-
-        affectedStages: [
-          "drying",
-          "storage"
-        ],
-
-        mitigationOptions: [
-          "Use rodent-proof containers",
-          "Clean storage areas",
-          "Inspect regularly",
-          "Store only dry clean grain"
-        ],
-
-        note:
-          "Loose Millet grain is highly attractive to rodents and may support stored-product insects."
-      },
-
-      {
-        id:
-          "balanced-feed-displacement",
-
-        severity:
+        germinationWaterNeedLevel:
           "moderate",
 
-        affectedStages: [
-          "feeding"
+        establishmentWaterNeedLevel:
+          "moderate",
+
+        matureWaterNeedLevel:
+          "low",
+
+        floweringWaterNeedLevel:
+          "moderate",
+
+        harvestDevelopmentWaterNeedLevel:
+          "moderate",
+
+        droughtSurvivalScore:
+          5,
+
+        droughtYieldRetentionScore:
+          4,
+
+        criticalGrowthStages: [
+          "germination",
+          "seedling-establishment",
+          "early-root-development",
+          "flowering",
+          "pod-setting",
+          "early-seed-development",
+          "seed-filling"
         ],
 
-        mitigationOptions: [
-          "Use as a measured supplement",
-          "Continue complete poultry feed",
-          "Avoid unrestricted grain feeding"
-        ],
+        criticalStageWaterImportanceScore:
+          4,
 
-        note:
-          "Millet grain is energy-oriented and can displace nutritionally balanced feed when overused."
+        overwateringSensitivityScore:
+          4,
+
+        waterloggingSensitivityScore:
+          4,
+
+        dripIrrigationBenefitScore:
+          4,
+
+        mulchBenefitScore:
+          4,
+
+        suitableForRainfallOnlyScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          5,
+
+        containerDryingRiskScore:
+          4,
+
+        establishmentYearsRequiringExtraWater:
+          0,
+
+        directFacts: {
+          droughtTolerantAfterEstablishment:
+            true,
+
+          establishmentMoistureImportant:
+            true,
+
+          regularMoistureImprovesProduction:
+            true,
+
+          standingWaterSuitable:
+            false,
+
+          droughtDuringVegetativeGrowthMayReduceLeafArea:
+            true,
+
+          droughtDuringBudDevelopmentMayReduceFlowering:
+            true,
+
+          droughtDuringFloweringMayReducePodSet:
+            true,
+
+          droughtDuringSeedFillMayReduceSeedWeight:
+            true,
+
+          irrigationCanIncreaseLodgingRisk:
+            false,
+
+          irrigationCanIncreaseDiseaseRisk:
+            true,
+
+          irrigationMayDelayPodDrying:
+            true,
+
+          effectiveRootDepthIn:
+            null,
+
+          seasonalWaterUseInches:
+            null,
+
+          criticalWaterWindow:
+            "Adequate soil moisture is especially important during germination, seedling establishment, flowering, pod set, early seed development, and seed filling.",
+
+          irrigationResponse:
+            "Supplemental irrigation can improve establishment, vegetative growth, flowering, pod retention, seed size, and mature-seed yield where rainfall and stored soil moisture are inadequate.",
+
+          irrigationDiseaseTradeoff:
+            "Excessive irrigation, saturated soil, frequent overhead watering, dense foliage, poor airflow, and prolonged leaf or pod wetness may increase damping-off, root rot, bacterial disease, foliar disease, pod decay, and delayed dry-seed harvest.",
+
+          notes: [
+            "Cowpeas are among the most drought-adapted annual legumes used in warm-season agriculture.",
+            "Drought adaptation comes from heat tolerance, rooting ability, water-use characteristics, and the capacity to continue growth under limited moisture.",
+            "Drought tolerance should not be interpreted as zero water requirement.",
+            "The crop requires adequate moisture for dependable germination and uniform emergence.",
+            "The seedbed should remain moist but not saturated while seed germinates.",
+            "Cold wet soil is especially hazardous because germination slows while seed-decay risk increases.",
+            "Hot rapidly drying soil can also reduce emergence if the seed zone loses moisture before roots establish.",
+            "Young plants need dependable moisture while roots expand into deeper soil.",
+            "Established plants generally tolerate dry intervals better than common Beans and many garden vegetables.",
+            "Deep rooting is most effective where soil is deep, permeable, well aerated, and free of hardpan or severe compaction.",
+            "Surface dryness does not always indicate that established plants lack deeper moisture.",
+            "Container-grown plants cannot access the same soil-water reserve as in-ground plants.",
+            "Vegetative Cowpeas may survive drought that substantially reduces useful foliage, pods, or mature seed.",
+            "Water stress during early vegetative growth can reduce leaf area, canopy closure, root development, nodulation, and biomass.",
+            "Water stress before flowering can delay growth and reduce the number of reproductive sites.",
+            "Water stress during flowering can increase flower drop and reduce pod set.",
+            "Water stress during early pod development can increase pod abortion.",
+            "Water stress during seed filling can reduce seed size, seed weight, starch accumulation, protein yield, and final harvest.",
+            "Plants grown primarily for foliage may tolerate somewhat different irrigation timing than plants grown for dry seed.",
+            "Repeated foliage harvest increases the need for adequate moisture to support regrowth.",
+            "Supplemental irrigation may provide its greatest value during establishment and reproductive development.",
+            "Rainfall-only production may be practical where rainfall timing, soil depth, and soil water-holding capacity are favorable.",
+            "Seasonal rainfall totals alone do not show whether moisture was available during flowering and seed filling.",
+            "Cowpeas are often suitable for limited-irrigation systems because strategic watering at critical stages can protect yield.",
+            "Deep, less-frequent irrigation generally encourages deeper rooting better than repeated shallow surface watering.",
+            "Very sandy soil may require more frequent irrigation because it stores less plant-available water.",
+            "Heavy clay should be watered cautiously because infiltration may be slow and internal drainage may be poor.",
+            "Standing water and prolonged saturation restrict root oxygen and interfere with healthy nodulation.",
+            "Waterlogged plants may yellow, wilt, lose leaves, develop root disease, or die.",
+            "Drip irrigation and soaker hoses can deliver water while keeping leaves, flowers, and pods drier.",
+            "Drip irrigation may be particularly useful in hot humid regions where foliar and bacterial diseases are common.",
+            "Overhead irrigation may be practical at backyard scale but should be timed so foliage and pods dry promptly.",
+            "Late-evening overhead irrigation can prolong leaf wetness through the night.",
+            "Frequent overhead watering during flowering may interfere with flower activity and increase disease pressure.",
+            "Excessive irrigation may produce dense vine growth that shades lower leaves and slows pod drying.",
+            "Late irrigation can delay senescence and dry-pod harvest.",
+            "Water should generally be reduced as mature-seed crops approach natural dry-down, while avoiding severe stress before seeds finish filling.",
+            "Repeated rain or irrigation after pods begin drying can cause staining, pod decay, seed weathering, sprouting, mold, or shattering.",
+            "Mulch can conserve soil moisture, suppress weeds, reduce soil splash, and moderate temperature.",
+            "Mulch should not remain packed tightly against stems where it may retain excessive moisture.",
+            "Organic mulch may harbor slugs, rodents, or insects in some locations.",
+            "Early weed control preserves moisture for Cowpea establishment.",
+            "Dense established Cowpeas can suppress later-emerging weeds by shading the soil.",
+            "Plants growing beside mature trees may experience severe belowground competition even when the soil surface appears moist.",
+            "Container-grown Cowpeas may dry rapidly in full sun, wind, or reflected heat.",
+            "Containers must drain freely because drought-adapted Cowpeas remain sensitive to waterlogging.",
+            "Trellised vines may use more water than compact bush plants because they can develop greater leaf area.",
+            "No universal seasonal water-use value is stored because climate, cultivar, growth habit, planting density, soil, rainfall, and harvest goal vary greatly.",
+            "The planner should distinguish drought survival, forage retention, pod retention, and mature-seed yield retention."
+          ]
+        }
       },
 
-      {
-        id:
-          "chemically-treated-seed",
+            space: {
+        minimumTrialAreaSqFt:
+          null,
 
-        severity:
-          "very-high",
+        minimumUsefulAreaSqFt:
+          null,
 
-        affectedStages: [
-          "planting",
-          "feeding"
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          4,
+
+        mediumSpaceScore:
+          5,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            4,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            4,
+
+          smallBeds:
+            5,
+
+          openField:
+            5
+        },
+
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            5,
+
+          container:
+            4,
+
+          fenceLine:
+            5,
+
+          buildingEdge:
+            4,
+
+          unusedLawn:
+            4,
+
+          openField:
+            5,
+
+          orchard:
+            3,
+
+          forageFrame:
+            3,
+
+          rotationalPaddock:
+            4,
+
+          greenhouse:
+            2,
+
+          hedgerow:
+            4
+        },
+
+        minimumContainerGallons:
+          null,
+
+        containerUseLimitation:
+          "Compact bush Cowpeas can provide leaves, flowers, immature pods, fresh peas, and a limited dry-seed harvest in containers, but restricted root volume, rapid summer drying, nutrient depletion, heat exposure, and limited plant population reduce feed-scale production. Long-vining and climbing cultivars also require substantial support.",
+
+        minimumRaisedBedDepthIn:
+          null,
+
+        vineSpreadRequired:
+          false,
+
+        verticalSupportBenefitScore:
+          4,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          false,
+
+        heightCategory:
+          "variety-dependent-bush-to-climbing",
+
+        matureWidthCategory:
+          "variety-dependent-compact-to-spreading",
+
+        overflowSpaceBenefitScore:
+          4,
+
+        directFacts: {
+          layoutFlexible:
+            true,
+
+          blockPollinationRequired:
+            false,
+
+          bushVarietiesAvailable:
+            true,
+
+          viningVarietiesAvailable:
+            true,
+
+          trellisOptionalByVariety:
+            true,
+
+          suitableForSuccessiveHarvest:
+            true,
+
+          denseFieldStandPossible:
+            true,
+
+          individualPlantManagementPossible:
+            true,
+
+          protectedEstablishmentRecommendedWithChickens:
+            true,
+
+          notes: [
+            "Cowpeas can be grown in garden beds, rows, blocks, long strips, raised beds, containers, fence lines, forage plots, rotational paddocks, and open fields.",
+            "The most suitable layout depends on cultivar growth habit and intended harvest.",
+            "Compact bush and erect cultivars fit small beds and containers better than long-vining forage types.",
+            "Semi-vining cultivars can fill wider rows and provide both pods and ground cover.",
+            "Trailing and prostrate cultivars can cover open soil, suppress weeds, and produce biomass, but they require greater lateral space.",
+            "Climbing cultivars can be trained vertically on fences, trellises, panels, or netting.",
+            "Vertical support can improve airflow, pod visibility, harvest access, and use of narrow spaces.",
+            "Trellising does not necessarily increase total feed production enough to justify added materials and labor.",
+            "Unsupported climbing or semi-vining growth may spread into paths and neighboring crops.",
+            "Cowpeas do not require block planting for pollination.",
+            "The crop is primarily self-pollinating.",
+            "A single row can flower and set pods when other growing conditions are suitable.",
+            "Bush cultivars can be managed as individual plants.",
+            "Forage and cover-crop cultivars may be managed as denser stands.",
+            "Planting density should not be standardized across all Cowpea types.",
+            "Small-space production is strongest when the goal is fresh leaves, tender vine tips, immature pods, fresh peas, seed saving, or a modest dry-seed harvest.",
+            "Feed-scale mature-seed production requires substantially more area than a small container or decorative bed.",
+            "Minimum trial area remains null because even a few plants can demonstrate germination, growth habit, pest pressure, forage acceptance, and pod production.",
+            "Minimum useful area remains null because usefulness depends on flock size and whether the crop is used for occasional greens, pods, cooked seed, or broader feed reduction.",
+            "Preferred production area remains null until the planner can connect area, cultivar, harvest form, usable yield, flock size, and feeding frequency.",
+            "Raised beds can improve drainage and warming in cool or heavy soils.",
+            "Raised beds may dry quickly during hot summer weather.",
+            "No universal raised-bed depth is stored because root access, underlying soil, cultivar, and irrigation differ.",
+            "Containers require drainage holes, adequate soil volume, structural stability, and frequent moisture monitoring.",
+            "A universal minimum container volume is not stored because bush, trailing, and climbing cultivars differ greatly.",
+            "Small containers may support decorative or trial plants but should not be represented as meaningful feed production.",
+            "Fence-line planting can use existing vertical structure and preserve garden-bed area.",
+            "Building-edge planting may benefit from reflected warmth but can also experience extreme heat, drought, compacted soil, roof runoff, and poor airflow.",
+            "Cowpeas can convert unused sunny lawn into a summer crop after sod and perennial weeds are properly controlled.",
+            "Direct seeding into intact competitive sod is unreliable.",
+            "Open-field production provides the strongest fit for forage, cover cropping, hay, larger dry-seed harvests, and rotational grazing.",
+            "Orchard-edge planting may work where sunlight and soil moisture are adequate.",
+            "Deep orchard shade and tree-root competition reduce pod and seed production.",
+            "Forage-frame suitability is moderate because tender growth may be accessible through mesh, but vigorous vines can smother the frame or be pulled through and damaged.",
+            "Rotational paddocks can support controlled access after plants establish.",
+            "Permanent unrestricted planting inside an occupied chicken run is poorly suited because seedlings and vines may be scratched out, trampled, or consumed.",
+            "Protected beds, exclusion fencing, temporary netting, rotational access, or cut-and-carry harvest are more dependable.",
+            "Greenhouse use is possible but generally inefficient for feed production compared with higher-value or colder-season crops.",
+            "Successive plantings can extend foliage and pod harvest in long warm seasons.",
+            "Late plantings may provide biomass without reaching dry-seed maturity.",
+            "Overflow space is useful for trailing cultivars, crop rotation, wildlife buffers, drying access, and separate forage and seed-production zones.",
+            "The planner should eventually distinguish space requirements for bush vegetables, climbing yardlong types, grain cultivars, forage cultivars, and cover-crop stands."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            4,
+
+          meat:
+            4,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            4,
+
+          homestead:
+            5,
+
+          mixed:
+            5
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            3,
+
+          cutAndCarry:
+            5,
+
+          wholeProduce:
+            4,
+
+          wholeSeedHeads:
+            1,
+
+          wholeGrain:
+            1,
+
+          processedGrain:
+            4,
+
+          heatTreated:
+            5,
+
+          driedForage:
+            3,
+
+          winterStorage:
+            4
+        },
+
+        directRunSuitabilityScore:
+          2,
+
+        forageFrameSuitabilityScore:
+          3,
+
+        rotationalPaddockSuitabilityScore:
+          4,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          4,
+
+        treatDilutionRiskScore:
+          3,
+
+        highEnergySupplement:
+          false,
+
+        highFiberSupplement:
+          true,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Fresh cut-and-carry leaves",
+          "Tender vine tips",
+          "Tender immature pods",
+          "Fresh immature peas",
+          "Properly cooked mature seed",
+          "Properly heat-treated mature seed",
+          "Summer forage diversity",
+          "Seasonal enrichment",
+          "Protein-oriented supplemental plant material",
+          "Postharvest gleaning"
         ],
 
-        mitigationOptions: [
-          "Use untreated planting seed",
-          "Keep treated seed separated and labeled"
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Unrestricted raw mature-seed feeding",
+          "Direct substitution for soybean meal",
+          "Primary young-chick feed",
+          "Primary laying-hen calcium source",
+          "High-fat feed production",
+          "High-energy grain replacement",
+          "Permanent unprotected run forage",
+          "Unmonitored cooked-feed storage"
         ],
 
-        note:
-          "Chemically treated planting seed must never be fed."
+        directFacts: {
+          edibleFeedParts: [
+            "Young leaves",
+            "Tender vine tips",
+            "Tender immature pods",
+            "Fresh immature peas",
+            "Properly cooked mature seed",
+            "Properly heat-treated mature seed",
+            "Limited postharvest residual peas"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor-before-establishment-and-variable-after-establishment",
+
+          directAccessTiming:
+            "Protect seedlings and young vines until plants are well rooted and vigorous, then provide only controlled access or harvest outside the run for cut-and-carry feeding.",
+
+          nutritionalOrientation: [
+            "protein-oriented",
+            "starch-energy",
+            "fresh-forage",
+            "fiber",
+            "household-food",
+            "soil-building"
+          ],
+
+          balancedFeedReplacement:
+            false,
+
+          rawMatureSeedPreferred:
+            false,
+
+          cookedMatureSeedPreferred:
+            true,
+
+          freshForageUseSupported:
+            true,
+
+          unrestrictedDirectGrazingPreferred:
+            false,
+
+          notes: [
+            "Cowpea has separate poultry-use pathways for fresh vegetative material, immature pods, fresh peas, and mature dry seed.",
+            "Tender leaves and vine tips can provide fresh supplemental forage.",
+            "Immature pods and peas can provide seasonal whole-produce supplementation.",
+            "Mature seed is more concentrated in protein and starch but creates greater processing and portion-control requirements.",
+            "The planner does not recommend meaningful quantities of raw mature Cowpea seed.",
+            "Proper cooking or another validated heat treatment is preferred before mature seed is offered in meaningful quantities.",
+            "Heat treatment reduces important heat-labile antinutritional factors but does not create a complete feed.",
+            "Cowpea seed is limited in methionine and other sulfur-containing amino acids.",
+            "Cowpea seed does not provide adequate calcium for laying hens.",
+            "Cowpea is not a direct replacement for soybean meal, Corn, or complete poultry feed.",
+            "Whole cooked peas should be cooled, drained, inspected, and offered in manageable quantities.",
+            "Wet cooked seed should not remain in feeders long enough to sour, ferment, mold, or attract pests.",
+            "Cooked leftovers require prompt refrigeration or freezing rather than room-temperature storage.",
+            "Heat-treated dry meal should be protected from moisture, oxidation, insects, rodents, and contamination.",
+            "Grinding increases handling flexibility but shortens practical storage life.",
+            "Young chicks should receive an age-appropriate complete starter ration rather than informal Cowpea supplementation.",
+            "No universal safe backyard inclusion percentage is stored.",
+            "Commercial poultry studies use complete balanced diets and controlled processing conditions.",
+            "Broiler research should not be applied automatically to laying hens, chicks, breeders, or mixed backyard flocks.",
+            "Fresh Cowpea foliage is less nutrient-dense than dry seed because it contains much more water.",
+            "Fresh leaves should not be treated as a concentrated protein meal.",
+            "Mature fibrous vines are less suitable than young tender growth.",
+            "Repeated cut-and-carry harvest allows the grower to inspect plant material before feeding.",
+            "Cut-and-carry management protects the root crown and growing points better than unrestricted grazing.",
+            "Direct access before establishment can result in uprooting, scratching, trampling, and complete defoliation.",
+            "Even established plants may be destroyed if too many chickens remain too long.",
+            "Rotational access is more suitable than continuous access.",
+            "A forage frame may protect roots but vigorous vines can grow through the mesh and be pulled apart.",
+            "Confined flocks may receive strong enrichment value from fresh leaves, pods, and cooked peas.",
+            "Pastured flocks may gain less marginal value where diverse natural forage is already abundant.",
+            "Postharvest gleaning can recover scattered peas after the main crop is removed.",
+            "Gleaning areas must be free of treated seed, mold, toxic weeds, pesticide residues, sharp debris, and spoiled material.",
+            "Cowpea supplements should be counted within the flock's total treat and supplemental-food allowance.",
+            "Excess supplemental food can dilute complete-feed intake even when the supplemental crop is nutritious.",
+            "Monitor body condition, egg production, shell quality, droppings, feed intake, and crop health when introducing any new supplemental feed.",
+            "The strongest planner use paths are fresh cut-and-carry forage, tender pods, household-food sharing, and properly processed mature seed."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore:
+          4,
+
+        plantingEaseScore:
+          5,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          4,
+
+        weedControlEaseScore:
+          4,
+
+        wildlifeProtectionEaseScore:
+          3,
+
+        harvestEaseScore:
+          4,
+
+        freshFoliageProcessingEaseScore:
+          5,
+
+        tenderPodProcessingEaseScore:
+          5,
+
+        matureSeedProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          4,
+
+        heavyLiftingRiskScore:
+          1,
+
+        weeklyLaborLevel:
+          "low-to-moderate",
+
+        peakWorkloadLevel:
+          "moderate-to-high",
+
+        harvestFrequencyCategory:
+          "use-path-dependent",
+
+        requiredPlantingTasks: [
+          "select-cultivar",
+          "prepare-seedbed",
+          "direct-seed-large-seed",
+          "water-establishment"
+        ],
+
+        optionalPlantingTasks: [
+          "soil-test",
+          "inoculate-legume-seed",
+          "install-drip-irrigation",
+          "install-mulch",
+          "install-row-cover",
+          "install-trellis",
+          "install-wildlife-protection"
+        ],
+
+        requiredMaintenanceTasks: [
+          "monitor-emergence",
+          "control-early-weeds",
+          "monitor-soil-moisture",
+          "inspect-pests",
+          "inspect-disease"
+        ],
+
+        optionalMaintenanceTasks: [
+          "thin-seedlings",
+          "mulch",
+          "trellis",
+          "redirect-vines",
+          "irrigate-critical-stages",
+          "protect-from-wildlife",
+          "release-beneficial-insects",
+          "remove-diseased-material",
+          "rotate-grazing-access"
+        ],
+
+        requiredHarvestTasks: [
+          "identify-correct-harvest-stage",
+          "inspect-harvest-quality"
+        ],
+
+        usePathProcessingTasks: {
+          freshFoliage: [
+            "cut-young-leaves",
+            "cut-tender-vine-tips",
+            "inspect",
+            "clean-if-needed",
+            "feed-promptly"
+          ],
+
+          tenderImmaturePods: [
+            "pick-tender-pods",
+            "inspect",
+            "clean-if-needed",
+            "feed-promptly"
+          ],
+
+          freshImmaturePeas: [
+            "pick-filled-green-pods",
+            "shell-peas-if-desired",
+            "inspect",
+            "clean-if-needed",
+            "feed-promptly"
+          ],
+
+          matureCookedSeed: [
+            "harvest-dry-pods",
+            "complete-drying",
+            "shell-seed",
+            "clean-sort",
+            "inspect-insects",
+            "measure-batch",
+            "soak-if-used",
+            "cook-thoroughly",
+            "cool",
+            "drain",
+            "portion",
+            "refrigerate-or-freeze-leftovers"
+          ],
+
+          heatTreatedDrySeed: [
+            "harvest-dry-pods",
+            "complete-drying",
+            "shell-seed",
+            "clean-sort",
+            "inspect-insects",
+            "apply-validated-heat-treatment",
+            "cool-completely",
+            "coarsely-grind-if-needed",
+            "store-dry",
+            "monitor-storage"
+          ],
+
+          savedPlantingSeed: [
+            "select-healthy-true-to-type-plants",
+            "allow-full-seed-maturity",
+            "harvest-dry-pods",
+            "complete-drying",
+            "shell-carefully",
+            "clean-sort",
+            "label-cultivar-and-year",
+            "store-cool-and-dry",
+            "protect-from-insects-and-rodents"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "verify-dryness",
+          "cool-before-sealing",
+          "protect-from-insects",
+          "protect-from-rodents",
+          "inspect-condensation",
+          "inspect-heating",
+          "inspect-mold",
+          "inspect-off-odors"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "hand-hoe",
+          "hand-pruners",
+          "harvest-basket",
+          "trellis",
+          "stakes",
+          "fence-panel",
+          "drip-irrigation",
+          "soaker-hose",
+          "mulch",
+          "row-cover",
+          "wildlife-fencing",
+          "drying-screen",
+          "drying-rack",
+          "fan",
+          "shelling-tray",
+          "screens",
+          "colander",
+          "large-cooking-pot",
+          "pressure-cooker",
+          "food-thermometer",
+          "grain-mill",
+          "food-safe-bucket",
+          "sealed-glass-jars",
+          "metal-grain-can",
+          "freezer-containers",
+          "labels"
+        ],
+
+        suitableForLowTimeUsersScore:
+          4,
+
+        suitableForSoloGrowersScore:
+          5,
+
+        directFacts: {
+          seedSize:
+            "large-and-easy-to-handle",
+
+          directSeedingSuitable:
+            true,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          specializedProcessingEquipmentRequired:
+            false,
+
+          harvestLaborVariesByUsePath:
+            true,
+
+          matureSeedPathLaborIntensive:
+            true,
+
+          freshForagePathLowProcessing:
+            true,
+
+          majorLaborBottlenecks: [
+            "Protecting seedlings from chickens, rabbits, deer, groundhogs, and insects",
+            "Controlling weeds before canopy closure",
+            "Managing long vines or trellises where required",
+            "Repeated harvesting of leaves, tender pods, or fresh peas",
+            "Monitoring pods as they approach dry maturity",
+            "Harvesting dry pods before shattering or weather damage",
+            "Drying pods and seed thoroughly",
+            "Shelling mature seed",
+            "Sorting damaged and insect-infested seed",
+            "Applying reliable heat treatment",
+            "Cooling and handling wet cooked seed safely",
+            "Monitoring stored seed for insects, rodents, moisture, and mold"
+          ],
+
+          notes: [
+            "Large seed makes Cowpeas straightforward to plant by hand.",
+            "Direct seeding avoids transplant production and handling.",
+            "Bush cultivars are generally simpler for beginners than long-vining or climbing types.",
+            "Early weed control is important because young plants do not suppress weeds immediately.",
+            "Once established, vigorous Cowpeas can shade later-emerging weeds.",
+            "Wildlife protection may become the largest routine labor requirement in areas with deer, rabbits, or groundhogs.",
+            "Insect scouting is especially important during flowering and pod development.",
+            "Fresh foliage is the least complicated poultry-use path.",
+            "Tender leaves and vine tips require little more than cutting, inspection, and prompt feeding.",
+            "Immature pods and fresh peas are also relatively easy to prepare.",
+            "Dry-seed production creates a concentrated seasonal workload.",
+            "Dry pods may not mature uniformly, requiring repeated harvests.",
+            "Waiting too long can increase shattering, insect damage, weathering, and mold.",
+            "Hand shelling is practical for small plots but becomes time-consuming as area expands.",
+            "Mechanical shelling is optional rather than required at backyard scale.",
+            "Seed should be sorted carefully because damaged kernels may deteriorate faster.",
+            "The cooked-seed pathway requires water, heat, cooling, cleanup, refrigeration, and portion management.",
+            "The dry heat-treated pathway requires a validated method rather than casual warming.",
+            "Processing raw seed in large batches without uniform heat creates a risk of underprocessed kernels.",
+            "Excessive heating creates a risk of protein damage.",
+            "Cooked seed cannot be stored like dry whole seed.",
+            "Cooking only manageable quantities reduces spoilage waste.",
+            "Dry whole seed is easier to store than ground meal.",
+            "Grinding should occur close to use where practical.",
+            "Container and raised-bed plants may require more frequent watering than in-ground plants.",
+            "Trellised plants improve harvest accessibility but add installation and vine-training labor.",
+            "Low-growing pods may require bending or kneeling during repeated harvest.",
+            "Raised beds, vertical support, and long-handled tools may improve accessibility.",
+            "Heavy lifting risk is low unless the grower handles bulk seed, large wet cooking batches, irrigation containers, or heavy storage bins.",
+            "Cowpeas are suitable for solo growers because no task inherently requires multiple people at backyard scale.",
+            "The planner should calculate labor separately for fresh forage, vegetable harvest, dry grain, saved seed, and soil-building use."
+          ]
+        }
+      },
+
+           cost: {
+        seedCostLevel:
+          "low-to-moderate",
+
+        startupCostLevel:
+          "low",
+
+        annualInputCostLevel:
+          "low-to-moderate",
+
+        irrigationCostLevel:
+          "low-to-moderate",
+
+        fertilityCostLevel:
+          "low",
+
+        pestProtectionCostLevel:
+          "low-to-moderate",
+
+        harvestEquipmentCostLevel:
+          "low",
+
+        processingEquipmentCostLevel:
+          "low-to-moderate",
+
+        storageEquipmentCostLevel:
+          "low-to-moderate",
+
+        trellisCostLevel:
+          "optional-and-variety-dependent",
+
+        fencingCostLevel:
+          "optional-but-potentially-significant",
+
+        costDrivers: [
+          "Cultivar type and seed quantity",
+          "Organic or specialty seed pricing",
+          "Cowpea-group inoculant",
+          "Soil testing",
+          "Irrigation installation",
+          "Water use during drought",
+          "Mulch",
+          "Trellising for climbing cultivars",
+          "Wildlife fencing",
+          "Insect-management materials",
+          "Drying equipment",
+          "Shelling equipment",
+          "Cooking fuel",
+          "Cooking water",
+          "Grain milling",
+          "Food-safe storage containers",
+          "Freezer space",
+          "Stored-seed insect protection"
+        ],
+
+        lowestCostUsePaths: [
+          "fresh-foliage-cut-and-carry",
+          "tender-vine-tip-harvest",
+          "immature-pod-harvest",
+          "fresh-pea-household-sharing",
+          "summer-cover-crop",
+          "soil-building-residue"
+        ],
+
+        highestCostUsePaths: [
+          "irrigated-feed-scale-seed-production",
+          "wildlife-fenced-forage-plot",
+          "trellised-climbing-production",
+          "mechanically-shelled-dry-seed",
+          "validated-heat-treated-seed-meal",
+          "frozen-cooked-seed-storage"
+        ],
+
+        reusableInfrastructure: [
+          "drip-irrigation",
+          "soaker-hose",
+          "trellis",
+          "fence-panels",
+          "wildlife-fencing",
+          "drying-racks",
+          "drying-screens",
+          "fans",
+          "shelling-trays",
+          "grain-mill",
+          "food-safe-buckets",
+          "metal-grain-cans",
+          "freezer-containers"
+        ],
+
+        potentialSavingsSources: [
+          "Replacing a small portion of purchased treats with homegrown foliage or pods",
+          "Sharing a household vegetable crop with the flock",
+          "Saving open-pollinated planting seed",
+          "Reducing purchased summer cover-crop seed through seed saving",
+          "Reducing weed-control labor after canopy closure",
+          "Reducing purchased compost ingredients through crop residue",
+          "Reducing summer irrigation compared with less drought-adapted legumes",
+          "Providing biological nitrogen fixation",
+          "Using existing fences as trellises",
+          "Using existing kitchen equipment for small cooked-seed batches"
+        ],
+
+        hiddenCosts: [
+          "Repeated pod picking",
+          "Shelling labor",
+          "Seed cleaning",
+          "Drying losses",
+          "Shattering losses",
+          "Wildlife losses",
+          "Cowpea curculio damage",
+          "Root-knot nematode damage",
+          "Stored-seed insect losses",
+          "Cooking fuel",
+          "Refrigeration or freezing",
+          "Spoiled cooked seed",
+          "Underprocessed batches",
+          "Overprocessed protein",
+          "Ground-seed storage deterioration",
+          "Reduced complete-feed intake if supplements are overfed"
+        ],
+
+        directFacts: {
+          expensiveSpecializedEquipmentRequired:
+            false,
+
+          existingGardenToolsUsuallyAdequate:
+            true,
+
+          householdCookingEquipmentMayBeAdequate:
+            true,
+
+          commercialProcessingEquipmentRequired:
+            false,
+
+          infrastructureReusableAcrossCrops:
+            true,
+
+          feedSavingsDependOnUsableYield:
+            true,
+
+          feedSavingsDependOnProcessing:
+            true,
+
+          laborCanExceedIngredientValue:
+            true,
+
+          notes: [
+            "Cowpea is generally inexpensive to establish at garden scale.",
+            "Seed cost varies by cultivar, package size, certification, treatment status, and intended market.",
+            "Bulk agricultural Cowpea seed may cost less per pound than specialty garden seed.",
+            "Bulk seed should still be verified as untreated and appropriate for food or feed production.",
+            "Seed intended only for cover cropping or wildlife plots may differ in cultivar purity, germination, treatment, and harvest quality.",
+            "Cowpea-group inoculant is a small optional expense that may improve nodulation where compatible bacteria are absent.",
+            "Routine nitrogen fertilizer costs can remain low when nodulation is effective.",
+            "Phosphorus, potassium, lime, sulfur, or micronutrient costs may still occur where soil tests show deficiency.",
+            "Existing garden hoes, baskets, pruners, buckets, and kitchen equipment are often adequate for small-scale use.",
+            "Bush cultivars avoid trellis cost.",
+            "Climbing cultivars may use existing fences or panels.",
+            "Purpose-built trellises add material and installation cost.",
+            "Wildlife fencing may cost more than the crop itself in high-pressure locations.",
+            "Deer and groundhog protection can determine whether a planting produces any usable harvest.",
+            "Drip irrigation has an initial cost but may reduce water waste and disease pressure.",
+            "Rainfall-only production may minimize cost but increases yield uncertainty.",
+            "Dry-seed production is inexpensive in materials but potentially expensive in labor.",
+            "Hand shelling has little equipment cost but significant time cost.",
+            "Cooking mature seed adds water, energy, supervision, cooling, and storage costs.",
+            "Small cooked batches may use ordinary household equipment.",
+            "Large batches may require dedicated pots, pressure cookers, drying space, or freezer capacity.",
+            "Roasting or dry heat treatment should not be treated as cost-free because uniform processing requires energy and control.",
+            "Grinding equipment is optional unless a formulated meal is intended.",
+            "Whole dry seed stores more efficiently than cooked or ground seed.",
+            "Sealed storage containers reduce losses from insects, rodents, humidity, and contamination.",
+            "Stored-seed insects can eliminate expected savings if infestations are not detected early.",
+            "The economic value of Cowpea should include household-food value, soil improvement, biomass, and crop-rotation value separately from direct poultry-feed savings.",
+            "The planner should not claim that homegrown Cowpeas are cheaper than commercial complete feed without site-specific cost and yield data.",
+            "The planner should include a labor-value option because household processing time may exceed the market value of the recovered feed.",
+            "No numeric startup cost, annual cost, cost per pound, or payback period is stored."
+          ]
+        }
+      },
+
+      goals: {
+        goalFitScores: {
+          reducePurchasedFeed:
+            3,
+
+          increaseProteinProduction:
+            4,
+
+          increaseEnergyProduction:
+            3,
+
+          produceFreshGreens:
+            5,
+
+          provideLivingForage:
+            3,
+
+          provideCutAndCarryForage:
+            5,
+
+          produceStoredWinterFeed:
+            4,
+
+          produceHouseholdFood:
+            5,
+
+          improveSoil:
+            5,
+
+          fixNitrogen:
+            5,
+
+          suppressWeeds:
+            5,
+
+          protectSoil:
+            5,
+
+          supportPollinators:
+            4,
+
+          provideShade:
+            2,
+
+          provideSeasonalScreening:
+            4,
+
+          supportRotation:
+            5,
+
+          useHotDrySpace:
+            5,
+
+          useSmallSpace:
+            4,
+
+          useContainers:
+            3,
+
+          useFenceLines:
+            5,
+
+          minimizeLabor:
+            3,
+
+          minimizeWater:
+            5,
+
+          minimizePurchasedInputs:
+            5,
+
+          maximizeFeedPerSquareFoot:
+            null,
+
+          maximizeLongTermProduction:
+            1
+        },
+
+        strongestGoals: [
+          "Produce fresh summer poultry forage",
+          "Produce household food with poultry-sharing potential",
+          "Grow a heat-tolerant protein-oriented annual legume",
+          "Fix atmospheric nitrogen",
+          "Improve warm-season crop rotation",
+          "Suppress summer weeds",
+          "Protect exposed soil",
+          "Use hot dry garden space",
+          "Provide cut-and-carry enrichment",
+          "Produce storable dry seed",
+          "Use fence-line space",
+          "Generate compost and mulch biomass"
+        ],
+
+        moderateGoals: [
+          "Reduce a small portion of purchased feed",
+          "Provide living rotational forage",
+          "Produce processed protein supplement",
+          "Produce seasonal privacy screening",
+          "Support summer pollinator activity",
+          "Grow in raised beds",
+          "Grow in large containers",
+          "Use orchard-edge space",
+          "Produce hay or dried forage"
+        ],
+
+        weakGoals: [
+          "Replace complete poultry feed",
+          "Replace soybean meal directly",
+          "Provide a primary calcium source",
+          "Provide high-fat feed",
+          "Provide permanent year-round forage",
+          "Provide winter-hardy living cover",
+          "Produce feed with no processing",
+          "Provide dependable dry seed in very short cool seasons",
+          "Minimize labor when mature seed is the main product"
+        ],
+
+        plannerUseCases: [
+          {
+            id:
+              "fresh-summer-forage",
+
+            label:
+              "Fresh Summer Forage",
+
+            fitScore:
+              5,
+
+            summary:
+              "Grow Cowpeas outside the occupied run and repeatedly cut tender leaves and vine tips for adult-chicken enrichment and dietary variety."
+          },
+
+          {
+            id:
+              "household-food-sharing",
+
+            label:
+              "Household Food With Flock Sharing",
+
+            fitScore:
+              5,
+
+            summary:
+              "Harvest immature pods, fresh peas, or dry peas primarily for household use and divert clean surplus, trimmings, or properly prepared portions to the flock."
+          },
+
+          {
+            id:
+              "processed-seed-supplement",
+
+            label:
+              "Processed Seed Supplement",
+
+            fitScore:
+              4,
+
+            summary:
+              "Produce mature dry seed for proper cooking or validated heat treatment before limited use within a balanced adult-flock diet."
+          },
+
+          {
+            id:
+              "summer-soil-builder",
+
+            label:
+              "Summer Soil Builder",
+
+            fitScore:
+              5,
+
+            summary:
+              "Use Cowpeas as a nitrogen-fixing warm-season cover crop that adds roots, residue, weed suppression, and rotation value."
+          },
+
+          {
+            id:
+              "rotational-forage",
+
+            label:
+              "Rotational Poultry Forage",
+
+            fitScore:
+              4,
+
+            summary:
+              "Establish vigorous plants before allowing brief controlled poultry access, followed by a recovery period."
+          },
+
+          {
+            id:
+              "fence-line-production",
+
+            label:
+              "Fence-Line Production",
+
+            fitScore:
+              5,
+
+            summary:
+              "Use semi-vining or climbing Cowpeas along sunny fencing for vertical growth, pod visibility, screening, and harvest access."
+          },
+
+          {
+            id:
+              "dryland-summer-legume",
+
+            label:
+              "Limited-Irrigation Summer Legume",
+
+            fitScore:
+              5,
+
+            summary:
+              "Use Cowpeas where heat, drought, and limited irrigation make less-adapted annual legumes unreliable."
+          },
+
+          {
+            id:
+              "winter-feed-storage",
+
+            label:
+              "Stored Winter Supplement",
+
+            fitScore:
+              4,
+
+            summary:
+              "Store fully dried whole seed, then cook or otherwise process only the amount needed for later feeding."
+          }
+        ],
+
+        directFacts: {
+          multiPurposeCrop:
+            true,
+
+          householdFoodValue:
+            true,
+
+          poultryFeedValue:
+            true,
+
+          soilBuildingValue:
+            true,
+
+          pollinatorValue:
+            true,
+
+          annualRotationValue:
+            true,
+
+          perennialInfrastructureValue:
+            false,
+
+          strongestSingleUse:
+            "multi-purpose-warm-season-legume",
+
+          notes: [
+            "Cowpea is most valuable when several goals are combined.",
+            "A planting may provide household vegetables, poultry forage, mature dry seed, nitrogen fixation, weed suppression, soil cover, crop rotation, pollinator activity, and compost biomass.",
+            "Fresh cut-and-carry forage is simpler than mature-seed processing.",
+            "Household-food sharing can improve practical value because the highest-quality crop is not grown solely for poultry.",
+            "Dry seed provides stronger storage value than fresh foliage.",
+            "Stored seed still requires processing before meaningful poultry use.",
+            "Cowpea is a protein-oriented crop but does not provide balanced poultry protein by itself.",
+            "The crop has moderate potential to reduce purchased feed, not eliminate it.",
+            "Cowpea's strongest soil-building value occurs when roots and substantial residue remain on site.",
+            "Harvesting all seed and biomass reduces the amount of nitrogen and organic matter returned to the soil.",
+            "Dense Cowpea growth can suppress summer weeds after establishment.",
+            "The crop is well suited to hot areas where cool-season legumes fail.",
+            "Cowpea can provide seasonal cover on bare summer soil.",
+            "The crop has no permanent or perennial production value.",
+            "Cowpeas must be replanted each year unless volunteers are accepted.",
+            "Container production is useful for trialing cultivars or producing pods and greens but is weak for feed-scale output.",
+            "Fence-line planting can improve small-space value for climbing cultivars.",
+            "Rotational grazing works better than permanent direct access.",
+            "The planner should match the crop to the user's primary harvest goal before recommending cultivar type, spacing, area, and processing."
+          ]
+        }
+      },
+
+      risks: {
+        overallRiskLevel:
+          "moderate",
+
+        establishmentRiskScore:
+          3,
+
+        climateMismatchRiskScore:
+          3,
+
+        frostRiskScore:
+          5,
+
+        heatRiskScore:
+          1,
+
+        droughtRiskScore:
+          2,
+
+        waterloggingRiskScore:
+          4,
+
+        diseaseRiskScore:
+          3,
+
+        insectRiskScore:
+          4,
+
+        nematodeRiskScore:
+          4,
+
+        wildlifeRiskScore:
+          4,
+
+        chickenDamageRiskScore:
+          5,
+
+        lodgingRiskScore:
+          2,
+
+        shatteringRiskScore:
+          3,
+
+        moldRiskScore:
+          4,
+
+        storedSeedPestRiskScore:
+          5,
+
+        processingFailureRiskScore:
+          4,
+
+        nutritionalImbalanceRiskScore:
+          4,
+
+        spoilageRiskScore:
+          4,
+
+        invasiveSpreadRiskScore:
+          1,
+
+        toxicityRiskScore:
+          3,
+
+        treatedSeedRiskScore:
+          5,
+
+        majorRisks: [
+          {
+            id:
+              "cold-soil-establishment",
+
+            category:
+              "establishment",
+
+            severity:
+              "high",
+
+            likelihood:
+              "region-dependent",
+
+            description:
+              "Seed planted into cold wet soil may germinate slowly, rot, emerge unevenly, or produce weak seedlings.",
+
+            mitigation: [
+              "Wait until soil is approximately 65°F or warmer",
+              "Use well-drained soil",
+              "Avoid planting immediately before prolonged cold rain",
+              "Use fresh high-germination seed",
+              "Plant at an appropriate depth",
+              "Use row cover only where it does not create excessive moisture"
+            ]
+          },
+
+          {
+            id:
+              "frost-injury",
+
+            category:
+              "climate",
+
+            severity:
+              "high",
+
+            likelihood:
+              "season-dependent",
+
+            description:
+              "Cowpeas are frost sensitive and may be killed or severely damaged by late spring or early autumn frost.",
+
+            mitigation: [
+              "Plant after frost danger",
+              "Use early cultivars in short seasons",
+              "Avoid frost pockets",
+              "Use temporary frost cover for unexpected events",
+              "Harvest immature pods or forage before forecast frost",
+              "Do not rely on frost protection to mature a long-season cultivar"
+            ]
+          },
+
+          {
+            id:
+              "photoperiod-mismatch",
+
+            category:
+              "cultivar-selection",
+
+            severity:
+              "moderate-to-high",
+
+            likelihood:
+              "cultivar-dependent",
+
+            description:
+              "Photoperiod-sensitive cultivars may flower too late, remain excessively vegetative, or fail to mature dry seed before frost outside their adapted region.",
+
+            mitigation: [
+              "Select locally adapted cultivars",
+              "Use early photoperiod-insensitive cultivars in northern regions",
+              "Review regional variety trials",
+              "Match planting date to cultivar response",
+              "Trial a small planting before expanding"
+            ]
+          },
+
+          {
+            id:
+              "waterlogging",
+
+            category:
+              "soil-and-water",
+
+            severity:
+              "high",
+
+            likelihood:
+              "site-dependent",
+
+            description:
+              "Prolonged saturated soil can restrict root oxygen, reduce nodulation, increase root disease, and kill plants.",
+
+            mitigation: [
+              "Use well-drained soil",
+              "Avoid low spots",
+              "Correct downspout and irrigation runoff",
+              "Use raised beds where appropriate",
+              "Do not overwater",
+              "Improve soil structure without creating a perched-water problem"
+            ]
+          },
+
+          {
+            id:
+              "reproductive-drought",
+
+            category:
+              "water",
+
+            severity:
+              "moderate-to-high",
+
+            likelihood:
+              "climate-dependent",
+
+            description:
+              "Drought during flowering, pod set, and seed filling can sharply reduce pod number, seed size, and final yield even when plants survive.",
+
+            mitigation: [
+              "Provide strategic irrigation during reproductive stages",
+              "Use mulch",
+              "Control weeds",
+              "Select drought-adapted cultivars",
+              "Improve rooting depth and soil structure",
+              "Avoid assuming drought survival equals grain yield"
+            ]
+          },
+
+          {
+            id:
+              "root-knot-nematodes",
+
+            category:
+              "soil-pest",
+
+            severity:
+              "high",
+
+            likelihood:
+              "region-dependent",
+
+            description:
+              "Root-knot nematodes can cause root galling, stunting, yellowing, poor water uptake, reduced nodulation, and severe yield loss.",
+
+            mitigation: [
+              "Select resistant or tolerant cultivars",
+              "Use crop rotation",
+              "Avoid moving infested soil",
+              "Inspect roots when unexplained decline occurs",
+              "Use local Extension recommendations",
+              "Do not assume all Cowpea cultivars are resistant"
+            ]
+          },
+
+          {
+            id:
+              "cowpea-curculio",
+
+            category:
+              "insect",
+
+            severity:
+              "high",
+
+            likelihood:
+              "region-dependent",
+
+            description:
+              "Cowpea curculio adults and larvae can damage pods and developing peas, making production difficult in affected southeastern areas.",
+
+            mitigation: [
+              "Monitor flowers and pods",
+              "Harvest promptly",
+              "Remove infested residue",
+              "Use locally recommended resistant or less-susceptible cultivars where available",
+              "Follow Extension integrated-pest-management guidance",
+              "Avoid relying on a single late planting where pest pressure is chronic"
+            ]
+          },
+
+          {
+            id:
+              "stored-seed-insects",
+
+            category:
+              "storage",
+
+            severity:
+              "high",
+
+            likelihood:
+              "high-with-poor-management",
+
+            description:
+              "Bruchid beetles, seed weevils, and other stored-product insects can reproduce inside or among stored Cowpea seed and cause major losses.",
+
+            mitigation: [
+              "Store only clean fully dry seed",
+              "Use sealed insect-resistant containers",
+              "Inspect seed before storage",
+              "Monitor containers regularly",
+              "Separate new harvests from older seed",
+              "Use validated nonchemical storage controls",
+              "Discard badly infested, moldy, or contaminated material"
+            ]
+          },
+
+          {
+            id:
+              "seed-mold",
+
+            category:
+              "harvest-and-storage",
+
+            severity:
+              "high",
+
+            likelihood:
+              "moisture-dependent",
+
+            description:
+              "Seed stored before it is fully dry may heat, mold, develop mycotoxin risk, lose germination, and become unsafe for feed.",
+
+            mitigation: [
+              "Dry pods and seed thoroughly",
+              "Cool seed before sealing",
+              "Avoid condensation",
+              "Use dry food-safe containers",
+              "Inspect for musty odor and heating",
+              "Do not feed moldy seed",
+              "Do not mix damp seed into a dry stored batch"
+            ]
+          },
+
+          {
+            id:
+              "raw-seed-antinutritional-factors",
+
+            category:
+              "feeding-safety",
+
+            severity:
+              "high",
+
+            likelihood:
+              "high-if-fed-raw",
+
+            description:
+              "Raw mature Cowpea seed contains heat-labile and heat-stable antinutritional factors that can reduce digestion, nutrient use, intake, and poultry performance.",
+
+            mitigation: [
+              "Do not recommend unrestricted raw mature seed",
+              "Cook thoroughly or apply a validated heat process",
+              "Use processed seed only as part of a balanced ration",
+              "Introduce gradually",
+              "Monitor flock performance",
+              "Do not extrapolate informal use from whole human-food legumes"
+            ]
+          },
+
+          {
+            id:
+              "underprocessing",
+
+            category:
+              "processing",
+
+            severity:
+              "high",
+
+            likelihood:
+              "method-dependent",
+
+            description:
+              "Insufficient cooking or uneven dry heat may leave active antinutritional factors in mature seed.",
+
+            mitigation: [
+              "Use a validated time-and-temperature method",
+              "Process manageable batch sizes",
+              "Ensure heat reaches the entire seed mass",
+              "Avoid relying on surface browning",
+              "Do not use casual warming as proof of treatment",
+              "Retain conservative feeding limits"
+            ]
+          },
+
+          {
+            id:
+              "overprocessing",
+
+            category:
+              "processing",
+
+            severity:
+              "moderate",
+
+            likelihood:
+              "method-dependent",
+
+            description:
+              "Excessive heating can reduce amino-acid availability, lower protein quality, scorch seed, and reduce palatability.",
+
+            mitigation: [
+              "Avoid excessive temperature and duration",
+              "Use validated processing guidance",
+              "Prevent scorching",
+              "Process uniform batches",
+              "Discard burned or strongly off-odor material",
+              "Do not assume more heat is always safer"
+            ]
+          },
+
+          {
+            id:
+              "cooked-seed-spoilage",
+
+            category:
+              "feed-handling",
+
+            severity:
+              "high",
+
+            likelihood:
+              "high-if-left-warm",
+
+            description:
+              "Cooked Cowpeas are moist and can sour, ferment, grow bacteria, or mold when left at warm temperatures.",
+
+            mitigation: [
+              "Cook only manageable quantities",
+              "Cool promptly",
+              "Feed promptly",
+              "Refrigerate or freeze leftovers",
+              "Remove uneaten wet feed",
+              "Clean feeders",
+              "Discard spoiled or questionable food"
+            ]
+          },
+
+          {
+            id:
+              "diet-dilution",
+
+            category:
+              "nutrition",
+
+            severity:
+              "moderate-to-high",
+
+            likelihood:
+              "management-dependent",
+
+            description:
+              "Large amounts of Cowpea forage, pods, peas, or cooked seed may reduce intake of nutritionally complete feed and create amino-acid, calcium, vitamin, mineral, or energy imbalance.",
+
+            mitigation: [
+              "Treat Cowpeas as supplemental feed",
+              "Maintain free access to complete poultry feed",
+              "Use conservative portions",
+              "Avoid making Cowpeas the primary diet",
+              "Monitor laying rate and shell quality",
+              "Use professional formulation for substantial inclusion"
+            ]
+          },
+
+          {
+            id:
+              "treated-planting-seed",
+
+            category:
+              "contamination",
+
+            severity:
+              "critical",
+
+            likelihood:
+              "purchase-dependent",
+
+            description:
+              "Planting seed treated with fungicides, insecticides, colorants, or other chemicals must not be fed directly or allowed to contaminate harvested feed.",
+
+            mitigation: [
+              "Purchase untreated seed",
+              "Read the entire seed label",
+              "Keep treated seed separate",
+              "Do not feed leftover planting seed",
+              "Do not allow chickens access to spilled treated seed",
+              "Store seed bags and labels for reference"
+            ]
+          }
+        ],
+        
+                directFacts: {
+          overallRiskManagedByPlanning:
+            true,
+
+          mostSeriousRisk:
+            "Improper use of raw or improperly processed mature seed",
+
+          greatestProductionRisk:
+            "Cultivar mismatch combined with poor establishment or reproductive-stage stress",
+
+          annualMonitoringRequired:
+            true,
+
+          processingRequiredForBestSeedUse:
+            true,
+
+          storageMonitoringRequired:
+            true,
+
+          notes: [
+            "Most Cowpea risks can be reduced substantially through correct cultivar selection, proper planting time, good drainage, and appropriate processing.",
+            "The crop itself is not considered inherently dangerous, but management mistakes can greatly reduce its value.",
+            "Risk varies considerably depending on whether the grower is harvesting fresh forage, immature pods, fresh peas, or mature dry seed.",
+            "Fresh cut-and-carry foliage generally presents fewer management risks than mature-seed processing.",
+            "Dry-seed production introduces harvest timing, drying, shelling, storage, insect, and processing risks that do not exist with fresh forage.",
+            "Many production failures result from planting too early into cold soil rather than from poor seed quality.",
+            "Waterlogged soil remains one of the fastest ways to lose a Cowpea planting.",
+            "Drought survival should never be confused with dependable seed production.",
+            "Photoperiod-sensitive cultivars may appear healthy while still failing to mature seed before frost.",
+            "Wildlife damage can eliminate production before insect or disease pressure becomes significant.",
+            "Chicken access should always be managed separately from crop establishment.",
+            "Seed intended for planting should always be assumed unsuitable for feed until confirmed untreated.",
+            "Harvest timing strongly influences both seed quality and storage life.",
+            "Delayed harvest increases weathering, pod shattering, insect damage, and mold risk.",
+            "Proper drying is one of the most important steps for long-term storage.",
+            "Whole dry seed is considerably more stable than cooked or ground material.",
+            "Stored seed should be inspected routinely throughout storage rather than only when needed.",
+            "Any moldy, musty, heated, insect-infested, chemically contaminated, or spoiled material should be discarded rather than fed.",
+            "Nutritional risks usually arise from overfeeding Cowpeas rather than offering modest supplemental quantities.",
+            "The planner should eventually calculate region-specific pest and disease risk using user location."
+          ]
+        }
+      },
+
+      harvest: {
+        harvestStages: [
+          "young-leaves",
+          "tender-vine-tips",
+          "immature-pods",
+          "fresh-green-peas",
+          "mature-dry-pods",
+          "dry-seed",
+          "saved-seed",
+          "forage",
+          "hay",
+          "crop-residue"
+        ],
+
+        primaryHarvestStage:
+          "use-path-dependent",
+
+        multipleHarvestsPossible:
+          true,
+
+        repeatedLeafHarvestPossible:
+          true,
+
+        podHarvestRequiresRepeatedPicking:
+          true,
+
+        matureSeedSingleHarvestPossible:
+          false,
+
+        harvestWindowLength:
+          "extended-with-successive-picking",
+
+        harvestEaseScore:
+          4,
+
+        mechanicalHarvestNeeded:
+          false,
+
+        idealHarvestConditions: [
+          "Dry foliage",
+          "Dry pods",
+          "Cool morning for leafy harvest",
+          "Dry weather for seed harvest",
+          "Minimal dew",
+          "Good airflow during drying"
+        ],
+
+        harvestIndicators: {
+          youngLeaves:
+            "Tender, fully expanded leaves before heavy fiber development.",
+
+          vineTips:
+            "Soft actively growing tips before stems become coarse.",
+
+          immaturePods:
+            "Pods fully elongated but still tender before fiber develops.",
+
+          freshPeas:
+            "Seeds fully developed while pods remain green.",
+
+          matureDryPods:
+            "Pods dry naturally with mature hardened seed inside.",
+
+          drySeedStorage:
+            "Seed fully mature, dry, clean, and cooled before storage."
+        },
+
+        postHarvestHandling: [
+          "Inspect harvested material",
+          "Remove diseased tissue",
+          "Separate immature and mature harvests",
+          "Dry mature pods completely",
+          "Shell dry pods",
+          "Clean seed",
+          "Sort damaged seed",
+          "Cool before storage",
+          "Process mature seed only as needed"
+        ],
+
+        directFacts: {
+          harvestStageChangesNutrition:
+            true,
+
+          repeatedHarvestSupported:
+            true,
+
+          drySeedNeedsAdditionalHandling:
+            true,
+
+          forageHarvestDifferentFromSeedHarvest:
+            true,
+
+          notes: [
+            "Harvest recommendations depend entirely on the intended end use.",
+            "Tender foliage should be harvested while stems remain succulent.",
+            "Repeated foliage harvest should leave enough growing points for continued regrowth.",
+            "Immature pods become increasingly fibrous if harvest is delayed.",
+            "Fresh peas should be harvested before pods become dry and brittle.",
+            "Dry-seed harvest should occur before prolonged wet weather whenever possible.",
+            "Pods rarely mature perfectly uniformly across an entire planting.",
+            "Multiple harvests often improve dry-seed quality.",
+            "Pods damaged by insects, mold, or weather should be separated.",
+            "Dry pods should complete drying before shelling if necessary.",
+            "Seed harvested above safe moisture should never be sealed immediately.",
+            "Seed intended for planting should come only from healthy true-to-type plants."
+          ]
+        }
+      },
+
+      storage: {
+        freshForageStorage:
+          "Feed immediately after harvest whenever practical.",
+
+        freshPodStorage:
+          "Short-term refrigeration only.",
+
+        cookedSeedStorage:
+          "Refrigerate promptly or freeze for longer storage.",
+
+        drySeedStorage:
+          "Cool, dark, dry, sealed insect-resistant containers.",
+
+        expectedDrySeedShelfLife:
+          "Often one year or longer under excellent storage conditions.",
+
+        freezerSuitable:
+          true,
+
+        dehydratorUseful:
+          false,
+
+        oxygenSensitive:
+          false,
+
+        moistureSensitive:
+          true,
+
+        insectSensitive:
+          true,
+
+        rodentSensitive:
+          true,
+
+        storageInspectionFrequency:
+          "Periodic throughout storage.",
+
+        directFacts: {
+          drySeedStoresBest:
+            true,
+
+          cookedSeedHighlyPerishable:
+            true,
+
+          wholeSeedStoresBetterThanGround:
+            true,
+
+          moistureControlCritical:
+            true,
+
+          notes: [
+            "Dry whole seed provides the longest practical storage life.",
+            "Ground meal deteriorates faster than intact seed.",
+            "Cooked Cowpeas should never be treated as shelf stable.",
+            "Condensation inside storage containers is a warning sign.",
+            "Stored-product insects should be detected early before populations expand.",
+            "Rodent contamination can render stored feed unusable.",
+            "Containers should remain clean, food safe, and well sealed.",
+            "Do not mix newly harvested seed into an older questionable batch.",
+            "Storage conditions should remain consistently cool and dry.",
+            "Seed showing mold, heating, fermentation, or strong off odors should be discarded."
+          ]
+        }
+      },
+
+      feeding: {
+        primaryFeedingMethods: [
+          "cut-and-carry-fresh-forage",
+          "fresh-pods",
+          "fresh-peas",
+          "properly-cooked-seed",
+          "validated-heat-treated-seed",
+          "postharvest-gleaning"
+        ],
+
+        preferredBirdAge:
+          "adult",
+
+        wholeCropGrazing:
+          "limited-and-controlled",
+
+        treatCategory:
+          "supplement",
+
+        balancedFeedReplacement:
+          false,
+
+        rawMatureSeedRecommended:
+          false,
+
+        cookedMatureSeedRecommended:
+          true,
+
+        heatProcessedSeedRecommended:
+          true,
+
+        freshForageRecommended:
+          true,
+
+        freshPodsRecommended:
+          true,
+
+        freshPeasRecommended:
+          true,
+
+        requiresPortionControl:
+          true,
+
+        feedingFrequency:
+          "occasional-supplement",
+
+        directFacts: {
+          completeFeedStillRequired:
+            true,
+
+          suitableAsPrimaryDiet:
+            false,
+
+          processingImprovesSafety:
+            true,
+
+          calciumSupplementRequiredForLayers:
+            true,
+
+          notes: [
+            "Cowpeas are intended to supplement, not replace, a balanced poultry ration.",
+            "Fresh foliage generally requires the least preparation.",
+            "Tender pods and fresh peas are useful seasonal treats.",
+            "Mature dry seed should be properly processed before meaningful feeding.",
+            "Fresh supplements should be introduced gradually.",
+            "Observe flock acceptance before increasing quantities.",
+            "Always maintain free access to complete poultry feed.",
+            "Layer hens continue to require an appropriate calcium source.",
+            "Monitor egg production, body condition, and droppings after dietary changes.",
+            "Remove uneaten fresh material before spoilage develops.",
+            "Do not feed moldy, spoiled, chemically contaminated, or questionable Cowpeas.",
+            "The planner should eventually calculate suggested supplemental amounts based on flock size and diet."
+          ]
+        }
+      },
+
+            seasonalRoles: {
+        springRoleScores: {
+          livingForage:
+            2,
+
+          cutAndCarryForage:
+            2,
+
+          soilCover:
+            2,
+
+          weedSuppression:
+            2,
+
+          nitrogenFixation:
+            2,
+
+          householdFood:
+            1,
+
+          matureSeedProduction:
+            1
+        },
+
+        summerRoleScores: {
+          livingForage:
+            4,
+
+          cutAndCarryForage:
+            5,
+
+          soilCover:
+            5,
+
+          weedSuppression:
+            5,
+
+          nitrogenFixation:
+            5,
+
+          householdFood:
+            5,
+
+          matureSeedProduction:
+            5
+        },
+
+        fallRoleScores: {
+          livingForage:
+            3,
+
+          cutAndCarryForage:
+            3,
+
+          soilCover:
+            3,
+
+          weedSuppression:
+            3,
+
+          nitrogenFixation:
+            3,
+
+          householdFood:
+            4,
+
+          matureSeedProduction:
+            5
+        },
+
+        winterRoleScores: {
+          livingForage:
+            1,
+
+          cutAndCarryForage:
+            1,
+
+          soilCover:
+            1,
+
+          weedSuppression:
+            1,
+
+          nitrogenFixation:
+            1,
+
+          householdFood:
+            1,
+
+          matureSeedProduction:
+            1
+        },
+
+        primarySeason:
+          "summer",
+
+        secondarySeason:
+          "early-fall",
+
+        warmSeasonCrop:
+          true,
+
+        coolSeasonCrop:
+          false,
+
+        frostTerminatesCrop:
+          true,
+
+        canOverwinter:
+          false,
+
+        winterDormant:
+          false,
+
+        providesStoredWinterFeed:
+          true,
+
+        springFunctions: [
+          "Late-spring establishment after soil warming",
+          "Early vegetative growth in warm regions",
+          "Initial nitrogen fixation",
+          "Early soil cover",
+          "Early cut-and-carry forage in long-season climates"
+        ],
+
+        summerFunctions: [
+          "Fresh foliage production",
+          "Tender vine-tip production",
+          "Immature-pod production",
+          "Fresh-pea production",
+          "Flowering",
+          "Pod setting",
+          "Seed filling",
+          "Nitrogen fixation",
+          "Weed suppression",
+          "Soil protection",
+          "Pollinator visitation",
+          "Seasonal screening",
+          "Rotational poultry forage"
+        ],
+
+        fallFunctions: [
+          "Fresh-pea harvest",
+          "Dry-pod harvest",
+          "Mature-seed harvest",
+          "Saved-seed harvest",
+          "Postharvest gleaning",
+          "Residue production",
+          "Late forage harvest before frost",
+          "Soil cover until frost termination"
+        ],
+
+        winterFunctions: [
+          "Stored whole dry seed",
+          "Cooked seed prepared from storage",
+          "Heat-treated seed prepared from storage",
+          "Frozen cooked seed",
+          "Dried crop residue used for compost or mulch"
+        ],
+
+        regionalSeasonAdjustments: {
+          coldNorth:
+            "Cowpeas function primarily as a midsummer annual. Early, photoperiod-insensitive cultivars are required for dependable mature seed, and late plantings may provide only forage or immature pods before frost.",
+
+          midwestNortheast:
+            "Plant after soil warming for summer forage, vegetable harvest, or mature seed. Early cultivars improve the likelihood of dry-pod harvest before cool wet autumn weather.",
+
+          upperSouth:
+            "Cowpeas can occupy a long summer window and may support successive forage or vegetable plantings. Dry-seed harvest commonly extends into late summer or early fall.",
+
+          deepSouth:
+            "Cowpeas may be planted across a broad warm-season window, but cultivar, insect pressure, disease, drought, and rainfall timing affect the best planting period.",
+
+          southwest:
+            "Cowpeas can provide summer production under heat and limited irrigation, with strategic water especially important during establishment and reproduction.",
+
+          pacificNorthwest:
+            "Warm interior areas may support mature seed, while cool coastal or high-elevation locations require early cultivars and may be better suited to forage or fresh-pod production.",
+
+          coastalWest:
+            "Cowpeas perform best during the warmest frost-free period. Cool marine influence may delay flowering and dry-seed maturity.",
+
+          highElevation:
+            "Use an early cultivar during the warmest available window. Mature seed may remain unreliable where nights are cold and the frost-free season is short."
+        },
+
+        successionPlantingRoles: [
+          {
+            role:
+              "fresh-foliage",
+
+            suitable:
+              true,
+
+            benefit:
+              "Staggered sowing can maintain a supply of young tender leaves and vine tips."
+          },
+
+          {
+            role:
+              "immature-pods",
+
+            suitable:
+              true,
+
+            benefit:
+              "Successive plantings can extend tender-pod and fresh-pea harvest in long warm seasons."
+          },
+
+          {
+            role:
+              "mature-seed",
+
+            suitable:
+              true,
+
+            benefit:
+              "Early successive plantings may spread harvest risk, but later plantings must retain enough warm weather for full seed maturity and drying."
+          },
+
+          {
+            role:
+              "cover-crop",
+
+            suitable:
+              true,
+
+            benefit:
+              "Later summer plantings can provide soil cover, nitrogen fixation, and biomass even when seed maturity is unlikely."
+          }
+        ],
+
+        directFacts: {
+          activeGrowthSeason:
+            "warm-frost-free-season",
+
+          strongestForagePeriod:
+            "vegetative-growth-through-early-pod-development",
+
+          strongestSeedHarvestPeriod:
+            "late-summer-through-fall-depending-on-region-and-cultivar",
+
+          frostEndsLivingUse:
+            true,
+
+          storedUseExtendsBeyondGrowingSeason:
+            true,
+
+          seasonalRoleDependsOnCultivar:
+            true,
+
+          seasonalRoleDependsOnLatitude:
+            true,
+
+          seasonalRoleDependsOnPlantingDate:
+            true,
+
+          notes: [
+            "Cowpea is fundamentally a warm-season crop.",
+            "Spring value is low until soil temperatures become warm enough for dependable emergence.",
+            "Summer is the crop's strongest season for vegetative growth, flowering, pod production, nitrogen fixation, and weed suppression.",
+            "Fall value depends on whether the planting is being used for fresh forage, fresh peas, mature seed, or residue.",
+            "Frost terminates living growth and prevents Cowpea from serving as winter forage.",
+            "Properly stored mature seed can extend the crop's poultry-feed value into winter.",
+            "Frozen cooked seed may also extend use beyond harvest, but it requires freezer capacity and careful handling.",
+            "Late plantings may produce useful biomass without producing mature seed.",
+            "Photoperiod-sensitive cultivars may shift flowering and harvest later than expected.",
+            "Regional recommendations should prioritize the warm-season window rather than fixed national calendar dates.",
+            "The planner should compare the expected first-frost date with cultivar maturity and required pod-drying time.",
+            "A crop that reaches fresh-pea maturity before frost may still fail to produce safely storable dry seed.",
+            "Wet autumn weather can become a greater limitation than frost in humid regions.",
+            "Successive forage plantings can spread harvest and reduce the risk of an entire planting becoming coarse at once.",
+            "Successive dry-seed plantings are useful only when each planting has enough remaining heat and drying weather.",
+            "Residue may continue protecting soil after plant death, but dead Cowpea residue is not equivalent to living winter cover.",
+            "Cowpea residue decomposes more rapidly than high-carbon cereal residue.",
+            "A winter cereal or other cold-tolerant cover crop may follow Cowpeas where year-round soil protection is desired."
+          ]
+        }
+      },
+
+      usePaths: {
+        freshLeafAndVineTip: {
+          id:
+            "fresh-leaf-and-vine-tip",
+
+          label:
+            "Fresh Leaves and Vine Tips",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "young-cowpea-foliage",
+
+          harvestStage:
+            "young-vegetative-growth",
+
+          harvestMethod:
+            "Cut tender leaves and soft vine tips while leaving sufficient healthy growth and active growing points for recovery.",
+
+          feedingMethod:
+            "Offer promptly as cut-and-carry supplemental forage to established adult chickens.",
+
+          requiresProcessing:
+            false,
+
+          requiredProcessingSteps: [
+            "Inspect plant material",
+            "Remove diseased, moldy, contaminated, or excessively coarse material",
+            "Rinse only when needed",
+            "Feed promptly"
+          ],
+
+          optionalProcessingSteps: [
+            "Coarsely chop long vines",
+            "Hang or bundle foliage for enrichment",
+            "Mix a small quantity with other fresh forage"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            2,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-term-refrigeration",
+            "limited-drying"
+          ],
+
+          preservationLimitations: [
+            "Fresh foliage wilts rapidly.",
+            "Refrigerated foliage remains highly perishable.",
+            "Drying changes texture, palatability, nutrient concentration, and handling.",
+            "No dependable long-term dried-forage storage recommendation is stored."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "very-short",
+
+          likelyLossPoints: [
+            "Wilting",
+            "Heat exposure",
+            "Trampling",
+            "Rejected coarse stems",
+            "Contamination",
+            "Spoilage after feeding",
+            "Excessive defoliation reducing regrowth"
+          ],
+
+          strengths: [
+            "Simple harvest",
+            "Minimal processing",
+            "Strong enrichment value",
+            "Useful for confined adult flocks",
+            "Can support repeated harvest",
+            "Avoids mature-seed antinutritional concerns"
+          ],
+
+          limitations: [
+            "Low dry-matter concentration",
+            "Short storage life",
+            "Not a complete feed",
+            "Mature stems become fibrous",
+            "Repeated heavy cutting can reduce pod production",
+            "Excess feeding can dilute complete-feed intake"
+          ],
+
+          safetyRules: [
+            "Use only correctly identified Cowpea plants.",
+            "Do not harvest chemically contaminated foliage.",
+            "Do not feed moldy or diseased material.",
+            "Do not allow wet forage to spoil in feeders.",
+            "Retain complete poultry feed as the primary diet.",
+            "Introduce gradually."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForLongTermStorage:
+              false,
+
+            requiresHeatTreatment:
+              false,
+
+            repeatedHarvestPossible:
+              true,
+
+            rootSystemUsuallyPreserved:
+              true,
+
+            notes: [
+              "Young leaves and vine tips provide the simplest Cowpea poultry-use path.",
+              "Cut-and-carry feeding protects plants better than unrestricted flock access.",
+              "Tender material is generally more suitable than mature fibrous vines.",
+              "Foliage harvest competes with pod and seed production when too much leaf area is removed.",
+              "No exact feeding percentage is stored."
+            ]
+          }
+        },
+
+        tenderImmaturePods: {
+          id:
+            "tender-immature-pods",
+
+          label:
+            "Tender Immature Pods",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "tender-green-cowpea-pods",
+
+          harvestStage:
+            "fully-elongated-but-still-tender",
+
+          harvestMethod:
+            "Pick green pods before pod walls and internal fibers become tough.",
+
+          feedingMethod:
+            "Offer whole, broken, or coarsely chopped as a seasonal supplemental food.",
+
+          requiresProcessing:
+            false,
+
+          requiredProcessingSteps: [
+            "Inspect pods",
+            "Remove damaged or diseased pods",
+            "Clean if needed",
+            "Feed promptly"
+          ],
+
+          optionalProcessingSteps: [
+            "Break long pods into shorter pieces",
+            "Refrigerate briefly",
+            "Share household-quality surplus with the flock"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "short-term-refrigeration",
+            "freezing-after-appropriate-preparation"
+          ],
+
+          preservationLimitations: [
+            "Fresh pods lose quality during extended storage.",
+            "Frozen pods require freezer space.",
+            "Fibrous overmature pods are less suitable for direct feeding."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short",
+
+          shelfLifeAfterProcessingCategory:
+            "short-to-moderate",
+
+          likelyLossPoints: [
+            "Missed harvest window",
+            "Fibrous pod development",
+            "Insect damage",
+            "Disease",
+            "Refrigerator deterioration",
+            "Uneaten whole pods"
+          ],
+
+          strengths: [
+            "Minimal preparation",
+            "Household-food value",
+            "Seasonal flock enrichment",
+            "Easy visual portioning",
+            "No dry-seed shelling required"
+          ],
+
+          limitations: [
+            "Requires repeated picking",
+            "Short fresh-storage life",
+            "Less concentrated than dry seed",
+            "Harvesting pods reduces mature-seed yield"
+          ],
+
+          safetyRules: [
+            "Use only clean untreated pods.",
+            "Discard moldy, rotten, insect-decayed, or chemically contaminated pods.",
+            "Remove uneaten pods before spoilage.",
+            "Treat pods as supplemental food rather than a balanced ration."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForHumanFood:
+              true,
+
+            requiresHeatTreatment:
+              false,
+
+            repeatedHarvestPossible:
+              true,
+
+            notes: [
+              "Tender-pod suitability varies among cultivars.",
+              "Vegetable-oriented Cowpeas may provide better pod quality than grain or forage cultivars.",
+              "Pods should be harvested before they become coarse and fibrous.",
+              "No universal poultry serving size is stored."
+            ]
+          }
+        },
+
+        freshImmaturePeas: {
+          id:
+            "fresh-immature-peas",
+
+          label:
+            "Fresh Immature Peas",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "shelled-or-unshelled-fresh-cowpeas",
+
+          harvestStage:
+            "filled-green-pod-before-dry-maturity",
+
+          harvestMethod:
+            "Harvest filled green pods and either offer suitable pods whole or shell the fresh peas.",
+
+          feedingMethod:
+            "Offer fresh peas or tender filled pods in controlled supplemental quantities.",
+
+          requiresProcessing:
+            false,
+
+          requiredProcessingSteps: [
+            "Inspect pods and peas",
+            "Remove damaged material",
+            "Clean if needed",
+            "Feed promptly"
+          ],
+
+          optionalProcessingSteps: [
+            "Shell peas",
+            "Cook for household use",
+            "Refrigerate briefly",
+            "Freeze after appropriate preparation"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "short-term-refrigeration",
+            "freezing",
+            "cooking"
+          ],
+
+          preservationLimitations: [
+            "Fresh peas remain perishable.",
+            "Shelling can be labor intensive.",
+            "Freezing requires electricity and freezer space.",
+            "Fresh peas are not equivalent to dry mature seed by weight."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short",
+
+          shelfLifeAfterProcessingCategory:
+            "moderate-when-frozen",
+
+          likelyLossPoints: [
+            "Shelling loss",
+            "Missed harvest timing",
+            "Insect-damaged peas",
+            "Refrigerator spoilage",
+            "Freezer failure",
+            "Overfeeding"
+          ],
+
+          strengths: [
+            "High household-food value",
+            "Easy flock acceptance",
+            "No dry-seed storage required",
+            "Can be portioned more precisely than leafy forage",
+            "Useful bridge between tender pods and mature seed"
+          ],
+
+          limitations: [
+            "Repeated harvest labor",
+            "Short fresh-storage life",
+            "Lower dry-matter concentration than dry seed",
+            "Harvesting fresh peas eliminates later dry-seed harvest from those pods"
+          ],
+
+          safetyRules: [
+            "Discard moldy, rotten, or chemically contaminated peas.",
+            "Do not allow fresh peas to spoil in warm feeders.",
+            "Maintain complete feed as the primary ration.",
+            "Introduce gradually."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForHumanFood:
+              true,
+
+            requiresHeatTreatment:
+              false,
+
+            equivalentToDrySeed:
+              false,
+
+            notes: [
+              "Fresh immature peas contain substantially more moisture than mature dry seed.",
+              "Fresh-pea yield should not be converted directly into dry-feed yield.",
+              "Shelling improves inspection and portion control but adds labor.",
+              "No exact backyard feeding rate is stored."
+            ]
+          }
+        },
+
+                matureCookedSeed: {
+          id:
+            "mature-cooked-seed",
+
+          label:
+            "Cooked Mature Cowpea Seed",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "fully-mature-dry-cowpea-seed",
+
+          harvestStage:
+            "fully-mature-dry-seed",
+
+          harvestMethod:
+            "Harvest dry pods, complete drying, shell seed, clean thoroughly, and remove damaged or insect-infested kernels.",
+
+          feedingMethod:
+            "Cook mature seed thoroughly, cool completely, drain excess liquid, and offer only as a controlled supplemental food within an otherwise balanced adult-flock diet.",
+
+          requiresProcessing:
+            true,
+
+          requiredProcessingSteps: [
+            "Harvest mature dry pods",
+            "Complete postharvest drying",
+            "Shell seed",
+            "Clean and sort",
+            "Remove moldy, discolored, damaged, or insect-infested seed",
+            "Measure a manageable batch",
+            "Soak if used by the selected cooking method",
+            "Cook thoroughly",
+            "Verify that the seed is fully softened",
+            "Cool promptly",
+            "Drain excess liquid",
+            "Portion conservatively",
+            "Refrigerate or freeze leftovers promptly"
+          ],
+
+          optionalProcessingSteps: [
+            "Rinse before cooking",
+            "Use a pressure cooker",
+            "Mash or coarsely break cooked peas",
+            "Freeze in small measured portions",
+            "Combine a small amount with other approved supplemental foods"
+          ],
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "refrigeration-after-cooking",
+            "freezing-after-cooking",
+            "dry-whole-seed-storage-before-cooking"
+          ],
+
+          preservationLimitations: [
+            "Cooked seed is highly perishable.",
+            "Cooked Cowpeas are not shelf stable at room temperature.",
+            "Refrigerated storage is short term.",
+            "Freezing requires reliable freezer capacity.",
+            "Repeated thawing and refreezing should be avoided.",
+            "Cooked-feed storage guidance should follow safe food-handling practices."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long-before-cooking-and-short-after-cooking",
+
+          shelfLifeAfterProcessingCategory:
+            "short-refrigerated-or-moderate-frozen",
+
+          likelyLossPoints: [
+            "Improper drying before storage",
+            "Stored-seed insect damage",
+            "Mold",
+            "Underprocessing",
+            "Scorching",
+            "Cooking-water loss",
+            "Spoilage after cooking",
+            "Uneaten wet feed",
+            "Freezer failure",
+            "Overfeeding"
+          ],
+
+          strengths: [
+            "Reduces important heat-labile antinutritional factors",
+            "Allows accurate portioning",
+            "Produces a soft readily consumed feed form",
+            "Supports long-term whole-seed storage before processing",
+            "Can share household cooking infrastructure",
+            "Provides a protein-oriented supplemental ingredient"
+          ],
+
+          limitations: [
+            "Requires water, heat, cooling, and cleanup",
+            "Cooked seed spoils quickly",
+            "Still limited in methionine and calcium",
+            "Not nutritionally complete",
+            "No universal safe inclusion percentage is stored",
+            "Large batches require refrigeration or freezing",
+            "Processing labor may exceed feed-value savings"
+          ],
+
+          safetyRules: [
+            "Do not feed moldy, musty, heated, fermented, or chemically contaminated seed.",
+            "Do not use treated planting seed.",
+            "Cook mature seed thoroughly rather than merely warming it.",
+            "Cool cooked seed promptly.",
+            "Do not leave wet cooked seed in warm feeders for extended periods.",
+            "Refrigerate or freeze leftovers promptly.",
+            "Discard spoiled leftovers.",
+            "Maintain complete poultry feed as the primary diet.",
+            "Provide laying hens with an appropriate calcium source.",
+            "Introduce gradually and monitor flock response."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForLongTermStorage:
+              false,
+
+            suitableForLongTermStorageBeforeProcessing:
+              true,
+
+            requiresHeatTreatment:
+              true,
+
+            requiresMoistureControlAfterCooking:
+              true,
+
+            completeProteinSource:
+              false,
+
+            directSoybeanMealReplacement:
+              false,
+
+            notes: [
+              "Cooking is the most practical small-scale mature-seed processing pathway for many backyard growers.",
+              "Fully cooked seed should be soft throughout rather than firm in the center.",
+              "Soaking may shorten cooking time but does not replace cooking.",
+              "Cooking reduces important heat-labile antinutritional factors.",
+              "Cooking does not correct methionine limitation or low calcium.",
+              "Cooked Cowpeas should remain a supplemental ingredient.",
+              "No exact cooking time is stored because seed age, soaking, altitude, equipment, batch size, and method affect processing.",
+              "No exact feeding percentage is stored."
+            ]
+          }
+        },
+
+        heatTreatedDrySeed: {
+          id:
+            "heat-treated-dry-seed",
+
+          label:
+            "Heat-Treated Dry Cowpea Seed",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "processed-dry-cowpea-seed-or-meal",
+
+          harvestStage:
+            "fully-mature-dry-seed",
+
+          harvestMethod:
+            "Harvest mature dry pods, dry fully, shell, clean, sort, and process the seed using a validated heat-treatment method.",
+
+          feedingMethod:
+            "Use properly processed whole, cracked, or ground seed only as a measured supplemental ingredient within a nutritionally balanced adult-poultry ration.",
+
+          requiresProcessing:
+            true,
+
+          requiredProcessingSteps: [
+            "Harvest mature dry pods",
+            "Complete drying",
+            "Shell seed",
+            "Clean and sort",
+            "Remove damaged, moldy, or insect-infested seed",
+            "Apply a validated time-and-temperature heat treatment",
+            "Ensure uniform treatment throughout the batch",
+            "Cool completely",
+            "Inspect for scorching or off odors",
+            "Coarsely crack or grind if required",
+            "Store in a cool dry insect-resistant container",
+            "Use conservative measured portions"
+          ],
+
+          optionalProcessingSteps: [
+            "Process in small uniform batches",
+            "Retain whole seed until near feeding time",
+            "Coarsely grind rather than producing fine dust",
+            "Label treatment date and batch",
+            "Freeze dry seed temporarily as part of a validated insect-control method"
+          ],
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-dry-seed-storage",
+            "sealed-processed-seed-storage",
+            "short-term-ground-meal-storage",
+            "freezing-for-insect-control-when-validated"
+          ],
+
+          preservationLimitations: [
+            "Ground meal deteriorates faster than whole seed.",
+            "Processed seed must remain dry after treatment.",
+            "Heat treatment does not eliminate the need for insect and rodent control.",
+            "Uniform treatment can be difficult with improvised equipment.",
+            "No universal backyard roasting schedule is stored."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate-to-long-if-whole-and-dry",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-if-ground",
+
+          likelyLossPoints: [
+            "Uneven heating",
+            "Underprocessing",
+            "Overheating",
+            "Scorching",
+            "Protein-quality loss",
+            "Dust loss during grinding",
+            "Moisture absorption after treatment",
+            "Stored-product insects",
+            "Rodent contamination",
+            "Oxidation after grinding"
+          ],
+
+          strengths: [
+            "Produces a dry storable processed ingredient",
+            "Avoids the rapid spoilage of cooked wet seed",
+            "Allows accurate ration measurement",
+            "Can be prepared in advance",
+            "Can support formulated feed use when professionally balanced"
+          ],
+
+          limitations: [
+            "Reliable heat treatment is technically demanding",
+            "Improvised processing may be uneven",
+            "Excessive heat can damage amino-acid availability",
+            "Grinding creates dust and shortens storage life",
+            "The ingredient remains methionine limited",
+            "Professional ration formulation is needed for substantial inclusion",
+            "No universal processing schedule or inclusion rate is stored"
+          ],
+
+          safetyRules: [
+            "Use only untreated mature seed.",
+            "Do not rely on casual warming, sun exposure, or surface browning as proof of adequate processing.",
+            "Use a validated processing method.",
+            "Avoid scorching.",
+            "Cool seed completely before sealing.",
+            "Keep processed seed dry.",
+            "Discard moldy, insect-contaminated, chemically contaminated, or off-odor material.",
+            "Do not feed fine airborne dust.",
+            "Use only as part of a balanced diet."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForLongTermStorage:
+              true,
+
+            requiresHeatTreatment:
+              true,
+
+            suitableForProfessionalFeedFormulation:
+              true,
+
+            suitableForUnformulatedHighInclusion:
+              false,
+
+            grindingOptional:
+              true,
+
+            wholeSeedStoragePreferred:
+              true,
+
+            notes: [
+              "Dry heat treatment can preserve a dry feed form but requires better process control than household cooking.",
+              "Heat must penetrate the full seed mass.",
+              "Overprocessing may reduce lysine or other amino-acid availability.",
+              "Whole treated seed generally stores better than ground meal.",
+              "Grinding should occur near use when practical.",
+              "No exact backyard heat-treatment protocol is stored.",
+              "No exact poultry inclusion percentage is stored."
+            ]
+          }
+        },
+
+        livingForage: {
+          id:
+            "living-forage",
+
+          label:
+            "Living Cowpea Forage",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "standing-cowpea-foliage",
+
+          harvestStage:
+            "established-vegetative-growth",
+
+          harvestMethod:
+            "Allow chickens brief controlled access only after plants are well rooted and sufficiently vigorous.",
+
+          feedingMethod:
+            "Use temporary fencing, paddock rotation, or limited supervised access so birds graze leaves without destroying the stand.",
+
+          requiresProcessing:
+            false,
+
+          requiredProcessingSteps: [
+            "Establish plants without chicken access",
+            "Confirm strong rooting and vigorous growth",
+            "Inspect for pesticides, toxic weeds, mold, and disease",
+            "Limit access duration",
+            "Remove birds before severe defoliation",
+            "Allow recovery"
+          ],
+
+          optionalProcessingSteps: [
+            "Mow or trim before access",
+            "Use movable poultry netting",
+            "Combine with other forage species",
+            "Irrigate after grazing",
+            "Reseed damaged areas"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [],
+
+          preservationLimitations: [
+            "Living forage cannot be stored.",
+            "Uncontrolled access may destroy the crop.",
+            "Bird intake cannot be measured precisely.",
+            "Frost ends the living-forage period."
+          ],
+
+          estimatedShelfLifeCategory:
+            "field-only",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "Scratching",
+            "Uprooting",
+            "Trampling",
+            "Overgrazing",
+            "Soil compaction",
+            "Manure concentration",
+            "Wildlife feeding",
+            "Drought",
+            "Frost"
+          ],
+
+          strengths: [
+            "Natural grazing behavior",
+            "Exercise and enrichment",
+            "No harvest handling",
+            "Can support paddock rotation",
+            "Provides seasonal green forage",
+            "May contribute to soil cover"
+          ],
+
+          limitations: [
+            "Poor suitability for continuous run access",
+            "Intake is difficult to measure",
+            "Plants require establishment protection",
+            "Recovery depends on remaining leaf area and growing points",
+            "Wet access may damage soil",
+            "Direct access can reduce pod and seed yield"
+          ],
+
+          safetyRules: [
+            "Do not allow access to treated seed or recently treated plants.",
+            "Exclude toxic weeds.",
+            "Avoid grazing moldy or diseased stands.",
+            "Do not allow birds to remain until soil is bare.",
+            "Avoid access when saturated soil will compact or become muddy.",
+            "Maintain complete feed and clean water."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForLongTermStorage:
+              false,
+
+            requiresHeatTreatment:
+              false,
+
+            plantSurvivalDependsOnAccessControl:
+              true,
+
+            preciseFeedIntakeMeasurementPossible:
+              false,
+
+            notes: [
+              "Cowpeas should be established before chickens enter the area.",
+              "Rotational access is more successful than continuous access.",
+              "Dense stands may tolerate brief grazing better than isolated plants.",
+              "Recovery is reduced when birds remove most leaves and growing points.",
+              "Living forage should be treated as enrichment and supplementation rather than a measured ration ingredient."
+            ]
+          }
+        },
+
+        rotationalAccess: {
+          id:
+            "rotational-access",
+
+          label:
+            "Rotational Cowpea Paddock",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "managed-standing-forage-and-postharvest-residue",
+
+          harvestStage:
+            "established-vegetative-growth-through-postharvest",
+
+          harvestMethod:
+            "Rotate the flock into a protected Cowpea paddock for short grazing periods, then remove birds and allow plant or soil recovery.",
+
+          feedingMethod:
+            "Use timed access based on plant height, flock size, soil condition, and desired recovery.",
+
+          requiresProcessing:
+            false,
+
+          requiredProcessingSteps: [
+            "Establish crop before access",
+            "Inspect paddock",
+            "Set temporary boundaries",
+            "Limit flock access",
+            "Observe grazing intensity",
+            "Remove flock before severe damage",
+            "Rest or replant the paddock"
+          ],
+
+          optionalProcessingSteps: [
+            "Harvest mature pods before grazing",
+            "Allow postharvest gleaning",
+            "Overseed with another seasonal forage",
+            "Mow residue after grazing",
+            "Add mulch or compost after crop termination"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [],
+
+          preservationLimitations: [
+            "Rotational forage is available only during the growing season.",
+            "Flock intake is difficult to measure.",
+            "Paddock recovery may be slow after severe grazing.",
+            "Frost terminates the crop."
+          ],
+
+          estimatedShelfLifeCategory:
+            "seasonal-field-use",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "Overgrazing",
+            "Uneven flock distribution",
+            "Gate congestion",
+            "Soil compaction",
+            "Manure overload",
+            "Wildlife damage",
+            "Missed pod harvest",
+            "Frost termination"
+          ],
+
+          strengths: [
+            "Better crop protection than continuous access",
+            "Supports natural flock behavior",
+            "Can combine forage and postharvest gleaning",
+            "Distributes manure across growing areas",
+            "Can fit a multi-paddock forage system"
+          ],
+
+          limitations: [
+            "Requires fencing and rotation management",
+            "Requires enough land for rest periods",
+            "Cannot provide precise nutrient intake",
+            "May reduce seed harvest if grazing begins too early",
+            "Can damage wet soil",
+            "May require reseeding each year"
+          ],
+
+          safetyRules: [
+            "Do not rotate birds into chemically treated stands before the labeled reentry interval.",
+            "Exclude treated seed, toxic weeds, moldy residue, and sharp debris.",
+            "Provide shade and water during hot-weather access.",
+            "Avoid saturated soil.",
+            "Maintain complete feed.",
+            "Remove birds before the paddock is stripped."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForLongTermStorage:
+              false,
+
+            requiresHeatTreatment:
+              false,
+
+            recoveryPeriodRequired:
+              true,
+
+            annualReseedingLikely:
+              true,
+
+            notes: [
+              "Rotational access provides greater management control than permanent free access.",
+              "The correct grazing period depends on flock density and plant biomass.",
+              "No universal stocking rate or grazing duration is stored.",
+              "A paddock may be used first for harvest and later for controlled gleaning.",
+              "Severe grazing may prevent meaningful regrowth."
+            ]
+          }
+        },
+
+        postharvestGleaning: {
+          id:
+            "postharvest-gleaning",
+
+          label:
+            "Postharvest Gleaning",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "residual-pods-peas-leaves-and-insects",
+
+          harvestStage:
+            "after-primary-household-or-seed-harvest",
+
+          harvestMethod:
+            "Allow controlled flock access after the main harvest to recover scattered peas, missed pods, tender residue, and associated insects.",
+
+          feedingMethod:
+            "Use short supervised access in a clean untreated field or garden bed.",
+
+          requiresProcessing:
+            false,
+
+          requiredProcessingSteps: [
+            "Complete the primary harvest",
+            "Remove moldy or diseased residue",
+            "Remove treated seed and chemical containers",
+            "Inspect for toxic weeds and sharp debris",
+            "Limit access",
+            "Remove birds before soil damage becomes severe"
+          ],
+
+          optionalProcessingSteps: [
+            "Mow tall residue",
+            "Collect obviously moldy pods",
+            "Till or mulch residue after gleaning",
+            "Follow with a winter cover crop"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [],
+
+          preservationLimitations: [
+            "Gleaning value is immediate and field based.",
+            "Residual quantity is unpredictable.",
+            "Weathered seed may be unsafe.",
+            "Mold risk increases after rain and delayed harvest."
+          ],
+
+          estimatedShelfLifeCategory:
+            "immediate-field-use",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "Mold",
+            "Weathering",
+            "Rodent contamination",
+            "Insect damage",
+            "Soil loss from scratching",
+            "Consumption by wildlife before flock access"
+          ],
+
+          strengths: [
+            "Recovers otherwise lost food",
+            "Provides enrichment",
+            "Adds insect-foraging opportunities",
+            "Requires little processing",
+            "Can occur after household harvest"
+          ],
+
+          limitations: [
+            "Unpredictable feed quantity",
+            "Low measurement precision",
+            "Greater contamination risk than harvested feed",
+            "Potential soil disturbance",
+            "Should not replace complete feed"
+          ],
+
+          safetyRules: [
+            "Do not allow access to treated planting seed.",
+            "Remove moldy, rotten, sprouted, or chemically contaminated seed.",
+            "Exclude toxic weeds.",
+            "Avoid gleaning in muddy saturated soil.",
+            "Do not rely on weathered peas as a major feed source.",
+            "Maintain complete feed and clean water."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              true,
+
+            suitableForLongTermStorage:
+              false,
+
+            requiresHeatTreatment:
+              false,
+
+            feedQuantityPredictable:
+              false,
+
+            notes: [
+              "Postharvest gleaning is primarily a waste-recovery and enrichment pathway.",
+              "Residual mature raw seed may still contain antinutritional factors.",
+              "A few scattered peas differ from deliberate high-level raw-seed feeding.",
+              "The planner should not calculate residual gleaning as dependable stored feed."
+            ]
+          }
+        },
+
+        savedPlantingSeed: {
+          id:
+            "saved-planting-seed",
+
+          label:
+            "Saved Cowpea Planting Seed",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "true-to-type-mature-seed-for-replanting",
+
+          harvestStage:
+            "fully-mature-dry-seed",
+
+          harvestMethod:
+            "Select healthy true-to-type plants, allow pods to mature fully, harvest dry pods, dry thoroughly, shell carefully, and store seed under cool dry conditions.",
+
+          feedingMethod:
+            "Not intended as the primary poultry-use pathway; reserve selected seed for future planting.",
+
+          requiresProcessing:
+            true,
+
+          requiredProcessingSteps: [
+            "Select healthy plants",
+            "Confirm cultivar type",
+            "Allow full pod maturity",
+            "Harvest dry pods",
+            "Complete drying",
+            "Shell carefully",
+            "Remove damaged and insect-infested seed",
+            "Label cultivar and harvest year",
+            "Store cool and dry",
+            "Protect from insects and rodents"
+          ],
+
+          optionalProcessingSteps: [
+            "Conduct a germination test",
+            "Store multiple labeled lots",
+            "Retain seed from several plants",
+            "Freeze seed temporarily using a validated insect-control method",
+            "Share accurately labeled seed"
+          ],
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "cool-dry-storage",
+            "sealed-insect-resistant-storage",
+            "refrigerated-storage",
+            "freezer-storage-when-seed-moisture-is-safe"
+          ],
+
+          preservationLimitations: [
+            "High seed moisture can cause freezing injury or storage mold.",
+            "Stored-product insects may damage germination.",
+            "Cross-pollination, admixture, or mislabeled seed can reduce varietal purity.",
+            "Hybrid or segregating cultivars may not reproduce true to type."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate-to-long",
+
+          shelfLifeAfterProcessingCategory:
+            "moderate-to-long",
+
+          likelyLossPoints: [
+            "Immature harvest",
+            "High moisture",
+            "Bruchid damage",
+            "Rodent damage",
+            "Mechanical cracking",
+            "Mislabelling",
+            "Heat exposure",
+            "Loss of germination"
+          ],
+
+          strengths: [
+            "Reduces future seed purchases",
+            "Preserves locally adapted selections",
+            "Supports annual replanting",
+            "Allows cultivar comparison",
+            "Whole seed stores efficiently"
+          ],
+
+          limitations: [
+            "Requires careful selection and labeling",
+            "Seed purity may decline",
+            "Insect control is essential",
+            "Stored seed occupies food and feed inventory space",
+            "Old seed may require germination testing"
+          ],
+
+          safetyRules: [
+            "Never confuse treated commercial planting seed with home-saved untreated seed.",
+            "Keep planting seed clearly labeled and physically separated from feed.",
+            "Do not save seed from diseased, off-type, or heavily insect-damaged plants.",
+            "Store only fully dry seed.",
+            "Discard moldy seed."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              false,
+
+            suitableForLongTermStorage:
+              true,
+
+            requiresHeatTreatment:
+              false,
+
+            openPollinatedSeedSavingPossible:
+              true,
+
+            germinationDeclinesOverTime:
+              true,
+
+            notes: [
+              "Cowpeas are primarily self-pollinating, which supports small-scale seed saving.",
+              "Some cross-pollination may still occur.",
+              "Seed should be retained from multiple healthy plants where practical.",
+              "Planting seed value may exceed feed value.",
+              "The best seed should generally be reserved for replanting rather than fed."
+            ]
+          }
+        },
+
+        soilBuildingResidue: {
+          id:
+            "soil-building-residue",
+
+          label:
+            "Soil-Building Cowpea Residue",
+
+          enabled:
+            true,
+
+          primaryProduct:
+            "roots-nodules-stems-leaves-and-pod-residue",
+
+          harvestStage:
+            "crop-termination-or-postharvest",
+
+          harvestMethod:
+            "Leave roots in place and retain, mulch, compost, or lightly incorporate clean aboveground residue according to the following crop and soil-management plan.",
+
+          feedingMethod:
+            "Not primarily a direct-feed pathway; selected clean tender residue may be offered before the remainder is returned to the soil or compost system.",
+
+          requiresProcessing:
+            true,
+
+          requiredProcessingSteps: [
+            "Remove usable household or seed harvest",
+            "Inspect residue for disease and contamination",
+            "Choose mulch, compost, surface residue, or incorporation pathway",
+            "Leave roots where practical",
+            "Manage residue before it becomes a pest or disease reservoir"
+          ],
+
+          optionalProcessingSteps: [
+            "Chop residue",
+            "Compost with higher-carbon materials",
+            "Use as surface mulch",
+            "Lightly incorporate",
+            "Follow with a winter cover crop",
+            "Allow limited chicken scratching before final residue management"
+          ],
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            2,
+
+          preservationOptions: [
+            "surface-mulch",
+            "composting",
+            "short-term-field-residue",
+            "incorporation"
+          ],
+
+          preservationLimitations: [
+            "Residue decomposes relatively quickly.",
+            "Diseased residue may require removal.",
+            "Residue is not a substitute for winter-hardy living cover.",
+            "Nitrogen benefit depends on biomass removal and decomposition."
+          ],
+
+          estimatedShelfLifeCategory:
+            "seasonal-soil-use",
+
+          shelfLifeAfterProcessingCategory:
+            "decomposition-dependent",
+
+          likelyLossPoints: [
+            "Removal of all biomass",
+            "Nitrogen volatilization from poorly managed compost",
+            "Disease carryover",
+            "Rodent nesting",
+            "Wind movement of dry residue",
+            "Rapid decomposition leaving soil exposed"
+          ],
+
+          strengths: [
+            "Returns organic matter",
+            "Retains root channels",
+            "Supports soil biology",
+            "Can contribute nitrogen to following crops",
+            "Reduces bare soil",
+            "Provides compost material"
+          ],
+
+          limitations: [
+            "Harvesting seed exports nutrients",
+            "Residue nitrogen is not immediately available",
+            "Diseased residue may not be suitable for surface retention",
+            "Rapid decomposition provides limited long-term surface cover",
+            "Benefits vary with residue quantity and management"
+          ],
+
+          safetyRules: [
+            "Do not compost chemically contaminated residue into poultry-use gardens.",
+            "Remove heavily diseased material when recommended by local Extension guidance.",
+            "Do not allow moldy residue to accumulate where chickens consume it.",
+            "Avoid deep incorporation into saturated soil.",
+            "Keep sharp trellis materials and wire out of poultry areas."
+          ],
+
+          directFacts: {
+            suitableForImmediateFeeding:
+              false,
+
+            suitableForLongTermStorage:
+              false,
+
+            requiresHeatTreatment:
+              false,
+
+            rootsMayBeLeftInSoil:
+              true,
+
+            abovegroundRemovalReducesSoilBenefit:
+              true,
+
+            notes: [
+              "Cowpea residue has a lower carbon-to-nitrogen ratio than cereal straw and generally decomposes relatively quickly.",
+              "Nitrogen fixed during growth remains distributed throughout the plant.",
+              "Seed harvest removes part of the crop's nitrogen.",
+              "Leaving roots and residue increases soil-building value.",
+              "Cowpeas may be followed by a cereal cover crop to improve year-round soil protection."
+            ]
+          }
+        }
+      },
+
+            dataQuality: {
+        overallConfidenceScore:
+          91,
+
+        researchCompletenessScore:
+          92,
+
+        poultrySpecificEvidenceScore:
+          84,
+
+        agronomicEvidenceScore:
+          96,
+
+        nutritionEvidenceScore:
+          91,
+
+        plannerReliabilityScore:
+          91,
+
+        estimatedUnknownFieldPercent:
+          10,
+
+        usesProfessionalJudgment:
+          true,
+
+        containsNullValues:
+          true,
+
+        nullValuesRequireFutureResearch: [
+          "Minimum useful backyard planting area",
+          "Preferred production area for different flock sizes",
+          "Backyard Cowpea seed yield per square foot",
+          "Backyard Cowpea seed yield per plant",
+          "Usable fresh-forage yield per square foot",
+          "Usable immature-pod yield per square foot",
+          "Estimated hand-shelling minutes per pound",
+          "Estimated processing minutes per pound for each mature-seed pathway",
+          "Estimated harvest and shelling waste percentages",
+          "Exact safe storage moisture for varied household storage systems",
+          "Verified storage duration under varied backyard temperature and humidity",
+          "Universal adult-chicken feeding percentage",
+          "Universal processed Cowpea inclusion percentage",
+          "Cultivar-specific trypsin-inhibitor activity",
+          "Cultivar-specific tannin concentration",
+          "Cultivar-specific lectin concentration",
+          "Cultivar-specific phytic-acid concentration",
+          "Cultivar-specific digestible amino-acid values",
+          "Methionine supplementation requirements in home-formulated poultry diets",
+          "Validated household dry-heat treatment schedules",
+          "Reliable nutrient-retention values after household cooking",
+          "Reliable nutrient-retention values after household roasting",
+          "Fresh Cowpea-foliage intake by backyard chickens",
+          "Fresh-pod intake by backyard chickens",
+          "Rotational-grazing recovery periods",
+          "Forage-frame persistence under chicken pressure",
+          "Household feed-cost savings",
+          "Complete-feed displacement per 100 square feet",
+          "Regional cultivar performance outside published trial locations",
+          "Photoperiod response of individual cultivars",
+          "Regional Cowpea-curculio loss estimates",
+          "Cultivar-specific root-knot-nematode resistance",
+          "Stored-seed insect losses under household conditions",
+          "Small-scale mechanical shelling efficiency"
+        ],
+
+        majorInformationSources: [
+          "Feedipedia Cowpea seed, forage, and poultry-feed profiles",
+          "USDA Natural Resources Conservation Service Cowpea plant and conservation guidance",
+          "USDA Agricultural Research Service Cowpea agronomy, breeding, and food-use research",
+          "International Institute of Tropical Agriculture Cowpea production and utilization resources",
+          "University of Georgia Extension Cowpea production and pest-management guidance",
+          "Clemson Cooperative Extension southern-pea production guidance",
+          "Alabama Cooperative Extension Cowpea production and pest guidance",
+          "University of Minnesota Extension warm-season cover-crop guidance",
+          "Sustainable Agriculture Research and Education Cowpea cover-crop guidance",
+          "Land-grant university Cowpea cultivar and vegetable-production trials",
+          "Peer-reviewed poultry-feeding research involving raw, cooked, autoclaved, roasted, or otherwise processed Cowpea seed",
+          "Peer-reviewed research concerning Cowpea antinutritional factors, amino-acid limitations, and heat treatment",
+          "Stored-legume seed, bruchid-management, food-safety, and postharvest literature",
+          "USDA FoodData Central human-food composition data used only as supporting context where feed-specific values were unavailable"
+        ],
+
+        plannerNotes: [
+          "Cowpea should be classified as a warm-season annual legume with separate forage, vegetable, mature-seed, household-food, soil-building, and rotational-access pathways.",
+          "The planner must distinguish Cowpea leaves, tender vine tips, immature pods, fresh peas, mature dry seed, cooked mature seed, heat-treated dry seed, living forage, postharvest gleaning, saved planting seed, and soil-building residue.",
+          "Fresh foliage and mature seed must not be treated as nutritionally equivalent.",
+          "Fresh immature peas and fully mature dry seed must not be treated as equivalent on an equal-weight basis.",
+          "The planner must distinguish bush, erect, semi-vining, trailing, prostrate, climbing, vegetable, grain, forage, and cover-crop cultivars where growth habit or use materially changes recommendations.",
+          "The planner must recognize that Cowpea cultivar maturity and photoperiod response vary substantially.",
+          "Early photoperiod-insensitive cultivars should receive stronger short-season suitability than late photoperiod-sensitive cultivars.",
+          "Cowpea is highly heat tolerant but remains frost sensitive.",
+          "Cowpea is highly drought adapted after establishment, but drought during flowering, pod set, and seed filling can reduce yield substantially.",
+          "The planner must distinguish drought survival from dependable forage, pod, and seed production.",
+          "Cowpea performs best in warm well-drained soil and should receive strong penalties for cold wet planting conditions and prolonged waterlogging.",
+          "Cowpea fixes atmospheric nitrogen only when effective nodulation occurs.",
+          "Compatible Cowpea-group Bradyrhizobium inoculation may improve nodulation where suitable bacteria are absent.",
+          "Large soluble-nitrogen applications may suppress nodulation and stimulate excessive vegetative growth.",
+          "Cowpea provides strong soil-building value, but harvesting seed and removing biomass exports part of the crop's accumulated nitrogen.",
+          "Leaving roots and clean residue increases soil-building value.",
+          "Cowpea is primarily self-pollinating and does not require block planting for pollination.",
+          "The crop should receive strong scores for hot climates, limited irrigation, summer soil cover, nitrogen fixation, weed suppression, and multipurpose household use.",
+          "The crop should receive weak scores for permanent year-round forage, winter living cover, high-fat feed, complete-feed replacement, and unprocessed mature-seed feeding.",
+          "Raw mature Cowpea seed contains antinutritional factors and should not be recommended for unrestricted feeding.",
+          "Cooking or validated heat treatment reduces important heat-labile antinutritional factors.",
+          "Soaking alone does not replace adequate cooking or heat treatment.",
+          "Casual warming, sunlight, or surface browning must not be treated as validated processing.",
+          "Excessive heat may reduce amino-acid availability and protein quality.",
+          "Processed Cowpea seed remains limited in methionine and other sulfur-containing amino acids.",
+          "Cowpea seed does not provide the calcium concentration required by laying hens.",
+          "Cowpea cannot replace soybean meal directly without complete-ration formulation and amino-acid balancing.",
+          "No universal backyard feeding percentage should be recommended.",
+          "Published poultry inclusion rates apply to specific cultivars, processing methods, bird ages, ration formulations, and experimental conditions.",
+          "Young chicks should not receive informal Cowpea supplementation in place of a complete starter ration.",
+          "Established adult chickens are the preferred bird stage for conservative supplemental use.",
+          "Cut-and-carry foliage provides the simplest and most controllable fresh-forage pathway.",
+          "Continuous chicken access is likely to destroy seedlings and may severely damage established plants.",
+          "Rotational access, forage protection, temporary fencing, or postharvest gleaning should be favored over permanent unrestricted access.",
+          "Mature dry seed requires complete drying, shelling, cleaning, insect protection, and storage monitoring.",
+          "Stored Cowpea seed is highly vulnerable to bruchid and other stored-product insects.",
+          "Cooked Cowpeas are highly perishable and require prompt feeding, refrigeration, or freezing.",
+          "Whole dry seed generally stores better than cooked seed or ground meal.",
+          "Treated planting seed must never be recommended for poultry, household food, sprouting, or direct feeding.",
+          "Moldy, heated, musty, fermented, chemically contaminated, flood-contaminated, rodent-contaminated, or badly insect-damaged Cowpeas must not be recommended for feeding.",
+          "Backyard yield, processing efficiency, storage duration, and economic savings remain null where credible direct evidence is unavailable.",
+          "Commercial field yields should not be converted into guaranteed backyard pounds per square foot.",
+          "Cowpea's value should include household food, fresh forage, processed seed, nitrogen fixation, weed suppression, soil cover, crop rotation, residue, and pollinator activity as separate benefits.",
+          "The planner should preserve conservative recommendations until Backyard Chicken Planner field trials generate crop-specific yield, labor, waste, intake, and flock-response data."
+        ],
+
+        supportedGeneralizations: [
+          "Cowpea is a frost-sensitive warm-season annual legume.",
+          "Cowpea is adapted to hot growing conditions.",
+          "Cowpea is more drought tolerant than many common garden legumes.",
+          "Cowpea still requires adequate moisture for establishment, flowering, pod set, and seed filling.",
+          "Cowpea performs best in well-drained soil.",
+          "Cowpea is poorly suited to prolonged saturation and waterlogging.",
+          "Cowpea can grow in relatively low-fertility soil.",
+          "Cowpea can fix atmospheric nitrogen through symbiosis with compatible Bradyrhizobium bacteria.",
+          "Inoculation can improve nodulation where compatible bacteria are absent.",
+          "Cowpea cultivars differ substantially in maturity, photoperiod response, growth habit, pod type, seed type, and intended use.",
+          "Bush, erect, semi-vining, trailing, prostrate, and climbing Cowpea cultivars exist.",
+          "Cowpeas are primarily self-pollinating.",
+          "Cowpeas can provide young leaves, tender vine tips, immature pods, fresh peas, mature dry seed, forage, biomass, roots, and crop residue.",
+          "Young Cowpea foliage can be used as supplemental cut-and-carry forage.",
+          "Tender pods and fresh peas can be used as seasonal supplemental foods.",
+          "Mature Cowpea seed provides protein and starch.",
+          "Raw mature Cowpea seed contains antinutritional factors.",
+          "Cooking or validated heat processing improves the suitability of mature seed for poultry use.",
+          "Cowpea protein is limited in methionine and other sulfur-containing amino acids.",
+          "Cowpea seed does not supply sufficient calcium for laying hens.",
+          "Cowpea is not a complete poultry feed.",
+          "Cowpea is not a direct pound-for-pound replacement for soybean meal.",
+          "Cowpea seedlings are vulnerable to scratching, uprooting, trampling, insects, and wildlife.",
+          "Controlled rotational access is more suitable than continuous chicken access.",
+          "Whole dry Cowpea seed can be stored for extended periods when fully dry and protected from insects, rodents, moisture, and contamination.",
+          "Cooked Cowpeas spoil rapidly at warm temperatures.",
+          "Stored-product insects are a major Cowpea storage risk.",
+          "Cowpea can provide summer soil cover, weed suppression, crop-rotation value, and biologically fixed nitrogen.",
+          "Harvesting all seed and aboveground biomass reduces the amount of nitrogen and organic matter returned to the soil.",
+          "Cowpea residue decomposes more rapidly than high-carbon cereal straw.",
+          "Cowpea has strong household-food value.",
+          "Cowpea is well suited to multipurpose homestead systems."
+        ],
+
+        unsupportedOrInsufficientlySupportedClaims: [
+          "Cowpeas can replace complete poultry feed.",
+          "Raw mature Cowpeas are safe for unrestricted feeding.",
+          "Soaking alone eliminates Cowpea antinutritional factors.",
+          "Any home roasting method guarantees safe processing.",
+          "More heat always improves Cowpea feed quality.",
+          "Cowpeas can replace soybean meal directly without reformulation.",
+          "Cowpea protein is complete for poultry.",
+          "Cowpeas provide enough calcium for laying hens.",
+          "A universal Cowpea feeding percentage is safe for every flock.",
+          "Commercial broiler inclusion rates apply automatically to backyard laying hens.",
+          "Fresh Cowpea foliage has the same protein concentration as dry seed.",
+          "Fresh peas and dry peas can be compared pound for pound.",
+          "Drought-tolerant Cowpeas produce full yields without water.",
+          "Cowpeas tolerate prolonged waterlogging.",
+          "Every Cowpea cultivar is photoperiod insensitive.",
+          "Every Cowpea cultivar matures successfully in short northern summers.",
+          "Every Cowpea cultivar resists root-knot nematodes.",
+          "Every Cowpea cultivar resists Cowpea curculio.",
+          "Cowpeas can survive frost.",
+          "Cowpea plantings can withstand continuous chicken access.",
+          "Cowpeas provide permanent year-round forage.",
+          "A small container can provide meaningful feed-scale production.",
+          "Commercial yield-per-acre values guarantee a backyard yield per square foot.",
+          "Nitrogen fixed by Cowpeas is immediately available to the next crop.",
+          "Harvesting all seed and residue leaves the full nitrogen benefit in the soil.",
+          "Homegrown Cowpeas are always cheaper than purchased poultry feed.",
+          "Dry seed can be stored safely without moisture and insect monitoring.",
+          "Moldy seed becomes safe after cooking.",
+          "Cooking reliably destroys all possible mycotoxins.",
+          "Treated planting seed becomes safe after germination or cooking."
+        ],
+
+        futureResearchPriorities: [
+          "Backyard Cowpea seed-yield trials",
+          "Backyard fresh-forage-yield trials",
+          "Backyard immature-pod and fresh-pea yield trials",
+          "Regional cultivar comparisons",
+          "Short-season photoperiod-insensitive cultivar trials",
+          "Bush-versus-vining production comparisons",
+          "Grain-versus-forage cultivar comparisons",
+          "Cultivar-specific root-knot-nematode resistance",
+          "Cultivar-specific Cowpea-curculio susceptibility",
+          "Cultivar-specific antinutritional-factor measurements",
+          "Cultivar-specific digestible amino-acid values",
+          "Small-flock processed-Cowpea feeding trials",
+          "Laying-hen response to limited cooked-Cowpea supplementation",
+          "Adult-hen acceptance of fresh Cowpea foliage",
+          "Adult-hen acceptance of tender pods and fresh peas",
+          "Fresh-forage intake and complete-feed displacement",
+          "Rotational-paddock recovery after chicken grazing",
+          "Forage-frame persistence",
+          "Validated household cooking methods",
+          "Validated household dry-heat processing methods",
+          "Processing effects on trypsin inhibitors, lectins, tannins, phytate, and protein quality",
+          "Household hand-shelling efficiency",
+          "Small mechanical shelling efficiency",
+          "Postharvest drying losses",
+          "Stored-seed insect losses under humid household conditions",
+          "Validated household bruchid-control methods",
+          "Whole-seed storage duration",
+          "Ground-meal storage duration",
+          "Cooked-seed refrigerator and freezer handling",
+          "Feed-cost savings by flock size",
+          "Soil-nitrogen contribution after different harvest-removal levels",
+          "Residue-decomposition rates in different climates"
+        ],
+
+        directFacts: {
+          exactBackyardYieldKnown:
+            false,
+
+          exactForageYieldKnown:
+            false,
+
+          exactPodYieldKnown:
+            false,
+
+          exactProcessingLossKnown:
+            false,
+
+          exactStorageLossKnown:
+            false,
+
+          exactEconomicReturnKnown:
+            false,
+
+          exactUniversalFeedingRateKnown:
+            false,
+
+          validatedBackyardDryHeatProtocolKnown:
+            false,
+
+          enoughEvidenceForPlannerUse:
+            true,
+
+          enoughEvidenceForConservativeSupplementGuidance:
+            true,
+
+          enoughEvidenceForCompleteRationFormulation:
+            false,
+
+          enoughEvidenceForFutureFieldTesting:
+            true,
+
+          notes: [
+            "The record contains enough verified information for crop comparison, regional suitability screening, use-path selection, risk warnings, and conservative planner recommendations.",
+            "The record does not contain enough information to formulate a complete poultry ration.",
+            "The record does not establish a universal feeding percentage for raw, cooked, roasted, cracked, ground, or fresh Cowpea products.",
+            "Unknown quantitative values remain null rather than being inferred from commercial production data.",
+            "Agronomic evidence is strong, but backyard-chicken-specific intake, yield, processing, and economic evidence remains limited.",
+            "Future Backyard Chicken Planner trials can progressively replace null values with measured crop-specific data.",
+            "Use-path separation is essential because fresh leaves, tender pods, fresh peas, cooked mature seed, heat-treated dry seed, living forage, gleaning, saved seed, and residue have different nutritional, labor, storage, and safety profiles.",
+            "This record is production-ready for conservative planner comparison while remaining open to future refinement."
+          ]
+        }
+      },
+
+      templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Backyard Cowpea dry-seed yield trials",
+          "Backyard Cowpea forage-yield trials",
+          "Backyard tender-pod and fresh-pea yield trials",
+          "Regional cultivar comparisons",
+          "Photoperiod-insensitive short-season cultivar trials",
+          "Bush-versus-vining production comparisons",
+          "Grain-versus-forage cultivar comparisons",
+          "Cultivar-specific root-knot-nematode resistance",
+          "Cultivar-specific Cowpea-curculio susceptibility",
+          "Cultivar-specific trypsin-inhibitor measurements",
+          "Cultivar-specific lectin measurements",
+          "Cultivar-specific tannin measurements",
+          "Cultivar-specific phytic-acid measurements",
+          "Cultivar-specific digestible amino-acid values",
+          "Small-flock cooked-Cowpea feeding trials",
+          "Small-flock heat-treated Cowpea feeding trials",
+          "Laying-hen performance with limited processed-Cowpea supplementation",
+          "Fresh Cowpea-foliage poultry intake",
+          "Tender-pod and fresh-pea poultry intake",
+          "Forage-frame persistence",
+          "Rotational-paddock recovery after grazing",
+          "Validated household Cowpea cooking methods",
+          "Validated household dry-heat treatment methods",
+          "Backyard shelling and processing efficiency",
+          "Drying losses under humid household conditions",
+          "Stored-seed insect losses",
+          "Validated household bruchid-control methods",
+          "Whole-seed storage life",
+          "Ground-meal storage life",
+          "Cooked-seed refrigerator and freezer handling",
+          "Soil-nitrogen contribution after seed and biomass removal",
+          "Feed-cost savings by flock size"
+        ],
+
+        lastReviewed:
+          "2026-07-20",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "No informal household roasting method has been represented as a validated universal heat-treatment protocol.",
+          "Fresh foliage has not been treated as nutritionally equivalent to dry mature seed.",
+          "Fresh peas have not been treated as equivalent to dry seed on an equal-weight basis.",
+          "Cowpeas remain a supplemental forage, vegetable, processed seed ingredient, enrichment crop, household-food crop, or soil-building legume rather than a complete poultry feed.",
+          "The planner should preserve separate recommendations for fresh leaves, vine tips, tender pods, fresh peas, cooked mature seed, heat-treated dry seed, living forage, rotational access, postharvest gleaning, saved planting seed, and soil-building residue."
+        ]
       }
-    ],
-
-    directFacts: {
-      wildBirdConcern:
-        true,
-
-      earlyWeedCompetitionConcern:
-        true,
-
-      unevenMaturityConcern:
-        true,
-
-      shatteringConcern:
-        true,
-
-      volunteerPlantConcern:
-        true,
-
-      grainMoistureStorageConcern:
-        true,
-
-      notes: [
-        "Wild birds and weeds are among the most important backyard production risks.",
-        "Dry weather at maturity improves harvest conditions.",
-        "Wet or humid weather can delay dry-down and increase mold risk.",
-        "Volunteer Millet may become a weed in following crops.",
-        "Stored grain should be protected from rodents, insects, and moisture.",
-        "Moldy, musty, heated, heavily insect-damaged, or otherwise questionable grain should not be fed."
-      ]
     }
-  },
+},
 
-  seasonalRoles: {
-    earlySpring: false,
+  ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - PROSO MILLET
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
 
-    lateSpring: true,
+  "CROP-PROSO-MILLET": {
+    id:
+      "CROP-PROSO-MILLET",
 
-    summer: true,
+    name:
+      "Proso Millet",
 
-    lateSummer: true,
+    scientificName:
+      "Panicum miliaceum",
 
-    fall: true,
+    category:
+      "Warm-Season Small Grain",
 
-    winterStorage: true,
+    cropType:
+      "Annual",
 
-    perennial: false,
+    seasonType:
+      "Warm Season",
 
-    plantingWindows: [
-      {
-        id:
-          "direct-seed-after-frost",
+    status:
+      "Initial Research Complete",
 
-        trigger:
-          "after-last-frost",
+    summary:
+      "Proso Millet is a fast-maturing warm-season cereal grain valued for exceptional drought tolerance, dependable grain production in short growing seasons, long-term dry storage, whole-seed-head enrichment, and supplemental poultry-feed energy. Mature grain stores extremely well and is readily consumed by chickens, but the crop remains an energy-oriented cereal that is limited by lysine, methionine, calcium concentration, and overall amino-acid balance. Proso Millet provides little living-forage value compared with leafy forage crops but excels as a resilient homestead grain for winter storage and seasonal feed supplementation.",
 
-        offsetWeeksMinimum: 1,
-        offsetWeeksMaximum: 5,
+    chickenUse: {
+      edibleParts: [
+        "Mature whole grain",
+        "Whole mature seed heads",
+        "Threshhed mature grain",
+        "Cracked mature grain",
+        "Coarsely ground grain",
+        "Sprouted grain",
+        "Residual mature grain after harvest",
+        "Very limited young vegetative growth"
+      ],
 
-        soilCondition:
-          "warming-firm-and-weed-free",
+      primaryValue: [
+        "Carbohydrate energy",
+        "Moderate protein",
+        "Long-term grain storage",
+        "Whole-panicle enrichment",
+        "Scatter-feeding enrichment",
+        "Winter supplemental feed",
+        "Short-season grain production"
+      ],
 
-        method:
-          "direct-seed",
+      feedingForms: [
+        "Whole mature grain",
+        "Whole dried seed heads",
+        "Threshhed clean grain",
+        "Cracked grain",
+        "Coarsely ground ration ingredient",
+        "Sprouted grain",
+        "Limited postharvest gleaning"
+      ],
 
-        note:
-          "Plant after frost danger declines and the seedbed has warmed enough for rapid emergence."
-      },
+      bestFor: [
+        "Established adult chickens",
+        "Backyard grain production",
+        "Short-season climates",
+        "Drought-prone gardens",
+        "Stored winter grain",
+        "Whole-panicle enrichment",
+        "Measured home ration ingredients",
+        "Low-input homesteads"
+      ],
 
-      {
-        id:
-          "late-short-season-planting",
+      supplementOnly:
+        true,
 
-        trigger:
-          "warm-soil",
+      preparationNotes:
+        "Allow seed heads to mature naturally until grain has hardened and panicles begin drying. Harvest before prolonged wet weather or severe bird loss. Whole panicles may be dried and offered directly for enrichment, while loose grain should be dried thoroughly, cleaned, and stored in rodent-resistant containers. Whole grain may be offered in measured quantities to established adult birds with access to appropriate grit. Cracking or coarse grinding may improve mixing into home-formulated feeds but generally reduces storage life compared with intact grain.",
 
-        offsetWeeksMinimum: 0,
-        offsetWeeksMaximum: null,
+      safetyNotes:
+        "Proso Millet must not replace a complete poultry ration unless incorporated into a properly balanced feed formulation. The grain is deficient in lysine, methionine, calcium, and several vitamins required by laying hens. Heavy grain supplementation may dilute complete-feed nutrition. Never feed moldy, musty, heated, fermented, insect-damaged, rodent-contaminated, chemically treated, flood-damaged, or improperly stored grain."
+    },
 
-        method:
-          "direct-seed",
+    nutrition: {
+      basis:
+        "Approximate values for mature Proso Millet grain expressed primarily on a dry-matter basis. Composition varies with cultivar, seed color, hull percentage, fertility, environmental conditions, harvest maturity, storage conditions, and processing.",
 
-        note:
-          "The short maturity period may allow later planting than Corn or Sorghum where sufficient warm days remain."
+      crudeProteinPercent:
+        "Approximately 11% to 13% of dry matter under typical production conditions",
+
+      fatPercent:
+        "Approximately 3% to 4% ether extract on a dry-matter basis",
+
+      fiberPercent:
+        "Approximately 2% to 8%, depending on hull retention, analytical method, and processing",
+
+      starchPercent:
+        "Approximately 60% to 70% of dry matter, making Proso Millet primarily an energy grain",
+
+      calciumPercent:
+        null,
+
+      phosphorusPercent:
+        null,
+
+      metabolizableEnergy:
+        "Generally comparable to many cereal grains and substantially higher than leafy forage crops; exact poultry metabolizable-energy values vary with cultivar, processing, and ration formulation",
+
+      notableNutrients: [
+        "Starch",
+        "Moderate crude protein",
+        "Phosphorus",
+        "Magnesium",
+        "Potassium",
+        "Manganese",
+        "Iron",
+        "Zinc",
+        "B vitamins",
+        "Unsaturated fatty acids"
+      ],
+
+      aminoAcidStrengths: [
+        "Provides useful cereal-grain protein for supplemental feeding",
+        "Contains appreciable leucine and several essential amino acids typical of cereal grains"
+      ],
+
+      aminoAcidLimitations: [
+        "Lysine remains limiting for poultry",
+        "Methionine remains limiting",
+        "Protein quality alone cannot support balanced poultry nutrition",
+        "Digestible amino-acid content varies among cultivars and growing conditions"
+      ],
+
+      betaGlucanConcern:
+        false,
+
+      phytateConcern:
+        true,
+
+      hullFiberConcern:
+        true,
+
+      notableAntinutritionalFactors: [
+        "Phytate",
+        "Hull-associated fiber",
+        "Naturally occurring tannins in certain millet types and colored seed lots may vary, although Proso Millet generally contains lower tannin concentrations than several other cereal grains"
+      ],
+
+      processingEffects: [
+        "Cracking or coarse grinding improves mixing but shortens storage life.",
+        "Whole grain stores longer than processed grain.",
+        "Sprouting changes moisture content and nutrient concentration but does not create additional dry matter.",
+        "Removing hull material reduces fiber concentration and improves nutrient density.",
+        "Improper sprouting greatly increases mold and microbial risk.",
+        "Excessively fine grinding increases dust production and ingredient separation.",
+        "Heat and prolonged poor storage reduce grain quality."
+      ],
+
+      poultryLimitations: [
+        "Energy-oriented rather than protein-oriented feed",
+        "Low lysine",
+        "Low methionine",
+        "Low calcium for laying hens",
+        "Phytate reduces phosphorus availability",
+        "Not a complete poultry ration",
+        "Heavy supplementation may dilute complete-feed nutrition",
+        "Whole grain requires grit for optimal utilization",
+        "Universal backyard inclusion percentages are not supported by current evidence"
+      ],
+
+      directFacts: {
+        primaryNutritionalRole:
+          "energy-oriented-cereal-grain",
+
+        highProteinFeed:
+          false,
+
+        highFatFeed:
+          false,
+
+        highFiberRelativeToCorn:
+          false,
+
+        betaGlucansPresent:
+          false,
+
+        lowerEnergyThanCorn:
+          false,
+
+        lowerEnergyThanWheat:
+          null,
+
+        hullLessVarietiesAvailable:
+          false,
+
+        enzymeSupplementationCanImproveUse:
+          false,
+
+        completeFeed:
+          false,
+
+        notes: [
+          "Proso Millet functions primarily as an energy grain.",
+          "Its nutritional role is closer to other cereal grains than to protein-rich legumes.",
+          "Unlike Barley, Proso Millet is not limited by high beta-glucan concentrations.",
+          "The grain stores exceptionally well when properly dried.",
+          "Whole seed heads provide both feed and behavioral enrichment.",
+          "Protein concentration should not be confused with amino-acid balance.",
+          "Calcium remains inadequate for laying hens.",
+          "The planner should distinguish whole panicles, loose grain, cracked grain, ground grain, sprouted grain, and postharvest gleaning as separate feeding pathways."
+        ]
       }
-    ],
+    },
 
-    harvestWindows: [
-      {
-        id:
-          "fresh-mature-panicles",
+        growing: {
+      sunlight:
+        "Full sun",
 
-        trigger:
-          "grain-mature-before-prolonged-field-loss",
+      soilTemperatureMinimumF:
+        50,
 
-        usePathId:
-          "fresh-mature-panicles",
+      idealSoilTemperatureF:
+        "Approximately 60°F to 65°F or warmer for rapid and uniform emergence",
 
-        note:
-          "Cut mature sound panicles for immediate flock enrichment before extended field exposure."
-      },
+      frostTolerance:
+        "Very Low",
 
-      {
-        id:
-          "whole-dried-panicles",
+      winterHardiness:
+        "None; Proso Millet is a frost-sensitive warm-season annual",
 
-        trigger:
-          "majority-of-grain-mature",
+      heatTolerance:
+        "High",
 
-        usePathId:
-          "whole-dried-panicles",
+      droughtTolerance:
+        "High compared with most common cereal grains, particularly after establishment",
 
-        note:
-          "Cut panicles and finish drying under protected ventilated conditions."
-      },
+      salinityTolerance:
+        null,
 
-      {
-        id:
-          "loose-dried-grain",
+      waterloggingTolerance:
+        "Low",
 
-        trigger:
-          "panicles-adequately-dry",
+      soilPHMinimum:
+        5.5,
 
-        usePathId:
-          "loose-dried-grain",
+      soilPHMaximum:
+        7.5,
 
-        note:
-          "Thresh, winnow, and clean grain after panicles are adequately dry."
+      waterNeeds:
+        "Low to moderate overall. Adequate moisture is especially important during germination, seedling establishment, panicle initiation, flowering, and grain filling, while dry weather near maturity improves harvest quality.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      springVarietiesAvailable:
+        true,
+
+      winterVarietiesAvailable:
+        false,
+
+      facultativeVarietiesAvailable:
+        false,
+
+      twoRowVarietiesAvailable:
+        false,
+
+      sixRowVarietiesAvailable:
+        false,
+
+      coveredVarietiesAvailable:
+        true,
+
+      hullLessVarietiesAvailable:
+        null,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        60,
+
+      daysToMaturityMaximum:
+        100,
+
+      daysToPollinationAfterEmergence:
+        null,
+
+      plantSpacingInches:
+        null,
+
+      rowSpacingInches:
+        "Commonly drilled in rows approximately 6 to 10 inches apart for field grain production; wider rows may be used where mechanical or hand cultivation is required",
+
+      plantingDepthInches:
+        "Approximately 1/2 to 1 inch in a firm seedbed with adequate moisture; slightly deeper placement may be used only where necessary to reach moisture, but excessive depth should be avoided",
+
+      successionPlanting:
+        true,
+
+      regrowthAfterHarvest:
+        "Little dependable regrowth should be expected after mature grain harvest; vegetative regrowth may occur after early cutting when moisture and warm weather remain, but Proso Millet is primarily managed as a single-harvest annual grain",
+
+      tillering:
+        true,
+
+      windPollinated:
+        true,
+
+      selfPollinated:
+        true,
+
+      directFacts: {
+        warmSeasonAnnual:
+          true,
+
+        springAndWinterTypesExist:
+          false,
+
+        earlySpringPlantingSuitable:
+          false,
+
+        fallPlantingSuitableWithWinterAdaptedVariety:
+          false,
+
+        frostSensitive:
+          true,
+
+        shortSeasonGrain:
+          true,
+
+        warmSoilRequired:
+          true,
+
+        minimumPracticalSoilTemperatureF:
+          50,
+
+        preferredPlantingSoilTemperatureFMinimum:
+          60,
+
+        preferredPlantingSoilTemperatureFMaximum:
+          65,
+
+        approximateMaturityDaysMinimum:
+          60,
+
+        approximateMaturityDaysMaximum:
+          100,
+
+        wellDrainedSoilRequired:
+          true,
+
+        droughtTolerantAfterEstablishment:
+          true,
+
+        waterloggingSensitive:
+          true,
+
+        shallowPlantingRequired:
+          true,
+
+        fineFirmSeedbedHelpful:
+          true,
+
+        slowEarlyGrowthConcern:
+          true,
+
+        earlyWeedCompetitionConcern:
+          true,
+
+        unevenMaturityConcern:
+          true,
+
+        seedShatteringConcern:
+          true,
+
+        dryHarvestWeatherPreferred:
+          true,
+
+        notes: [
+          "Proso Millet should be planted after frost danger has passed and soil has warmed sufficiently for rapid emergence.",
+          "Cold soil delays emergence and increases the period during which seedlings are vulnerable to weeds, crusting, insects, disease, and bird damage.",
+          "A minimum soil temperature near 50°F may permit germination, but warmer soil near 60°F to 65°F generally supports faster and more uniform establishment.",
+          "Planting dates should be based on soil temperature, frost risk, cultivar maturity, expected rainfall, and the remaining warm-season period rather than a single national calendar date.",
+          "Proso Millet is among the shortest-season cereal grains and may mature where Corn or Grain Sorghum cannot reliably complete grain production.",
+          "Cultivar maturity varies, so the planner should not assume that every Proso Millet variety matures in 60 days.",
+          "Late planting is possible where sufficient warm weather remains, but delayed planting can expose flowering, grain filling, and harvest to cool weather, frost, or autumn rain.",
+          "The crop is normally direct seeded because seedlings are small, dense stands are preferred, and transplanting offers little practical benefit.",
+          "Seed should be placed shallowly in a fine, firm seedbed.",
+          "Excessive planting depth may reduce emergence because Proso Millet seed is small.",
+          "A loose or cloddy seedbed may result in uneven depth, poor seed-to-soil contact, and irregular emergence.",
+          "Proso Millet can be broadcast, but drilling provides more uniform depth, stand establishment, cultivation access, and harvest management.",
+          "The crop tillers and can partially compensate for moderate stand variation when moisture and fertility are adequate.",
+          "Early growth may be relatively slow, making timely weed control especially important.",
+          "Once established and the canopy closes, Proso Millet becomes more competitive with weeds.",
+          "Proso Millet is strongly drought adapted, but drought tolerance does not guarantee full grain yield without moisture.",
+          "Water stress during panicle initiation, flowering, and grain filling can reduce panicle size, seed set, and kernel weight.",
+          "The crop is poorly adapted to prolonged saturated soil, standing water, and compacted poorly drained sites.",
+          "Well-drained loam and sandy-loam soils are generally preferred.",
+          "The crop can produce on relatively low-fertility soils, but balanced fertility remains important for dependable grain production.",
+          "Excessive nitrogen may encourage lodging, delayed maturity, and uneven grain dry-down.",
+          "Proso Millet does not fix atmospheric nitrogen.",
+          "The crop is primarily self-pollinating, although wind movement distributes pollen within the flowering panicle.",
+          "Insect pollination is not required for grain production.",
+          "Panicles and individual seeds may mature unevenly.",
+          "Delayed harvest can increase seed shattering, wild-bird loss, lodging, weathering, and volunteer plants.",
+          "Harvest may begin before every seed reaches identical dryness, followed by protected postharvest drying.",
+          "Dry weather during maturity and harvest improves grain quality and reduces drying difficulty.",
+          "Cultivar-specific production recommendations should take priority over generalized maturity, row-spacing, and planting-date values."
+        ]
       }
-    ],
+    },
 
-    cropSequenceRoles: [
-      "Short-season warm-season grain",
-      "Limited-water grain crop",
-      "Late-planted emergency grain",
-      "Fall grain harvest",
-      "Winter-storage energy crop"
-    ],
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant after the final spring frost when soil has warmed to at least approximately 50°F, with soil near 60°F or warmer preferred for rapid establishment. Planting commonly occurs from late spring into early summer. Use an early-maturing cultivar and avoid delaying planting beyond the point where approximately 60 to 100 warm frost-free days and a drying period remain.",
 
-    seasonalLimitations: [
-      "Not frost tolerant",
-      "Weak early weed competition",
-      "Wet weather complicates maturity and drying",
-      "Mature grain may shatter or attract birds"
-    ],
+        harvestWindow:
+          "Generally late summer through early fall. Harvest before hard frost, prolonged autumn rainfall, heavy bird loss, or severe seed shattering.",
 
-    directFacts: {
-      warmSeasonAnnual: true,
+        varietyGuidance:
+          "Select an early, photoperiod-insensitive grain cultivar with locally demonstrated maturity, standability, seed retention, and disease performance."
+      },
 
-      commonlyDirectSeeded: true,
+      midwestNortheast: {
+        plantingWindow:
+          "Direct sow from late spring into early summer after frost danger has passed and the upper soil has warmed. Proso Millet may follow an early harvested cool-season crop where enough warm days remain, but late planting should not push grain maturation into cool wet autumn weather.",
 
-      shortSeasonPlantingPossible:
-        true,
+        harvestWindow:
+          "Usually late summer through early fall, depending on cultivar, planting date, rainfall, weed competition, bird pressure, and drying conditions.",
 
-      unevenMaturityPossible:
-        true,
+        varietyGuidance:
+          "Choose an early or medium-early cultivar with good lodging resistance, uniform maturity, seed retention, and regional disease adaptation."
+      },
 
-      postharvestDryingMayBeRequired:
-        true,
+      upperSouth: {
+        plantingWindow:
+          "Plant from mid-spring into early summer after frost danger has passed and soil is consistently warm. A later summer planting may mature where autumn remains warm, but it should be timed so flowering, grain filling, and harvest avoid the coolest and wettest part of fall.",
 
-      notes: [
-        "Proso Millet can mature more quickly than most grain crops.",
-        "Its short season can make it useful after a delayed spring or failed early crop.",
-        "Planting too early into cold soil slows establishment.",
-        "Harvest timing balances immature lower grain against shattering and bird loss from mature upper grain.",
-        "Whole or loose grain can extend usefulness through winter after adequate drying and protected storage."
-      ]
-    }
-  },
+        harvestWindow:
+          "Summer through early fall for spring plantings, with later harvest possible from early-summer plantings where frost arrives late.",
 
-  usePaths: [
-    {
-      id:
-        "fresh-mature-panicles",
+        varietyGuidance:
+          "Use a short- to medium-season grain cultivar with good standability and tolerance of regional heat, humidity, and disease pressure."
+      },
 
-      label:
-        "Fresh Mature Millet Panicles",
+      deepSouth: {
+        plantingWindow:
+          "Plant during warm weather from spring into early or midsummer, depending on local rainfall and the intended harvest period. Where summers are extremely humid, schedule planting so grain maturation and drying avoid the wettest seasonal period when possible.",
 
-      description:
-        "Mature grain-filled panicles cut and offered relatively soon after harvest for immediate pecking enrichment.",
+        harvestWindow:
+          "Summer through autumn, depending on planting date. Timely harvest and protected drying are particularly important where humidity and rainfall remain high.",
 
-      primaryFeedRole:
-        "grain-enrichment",
+        varietyGuidance:
+          "Select an early-maturing cultivar with good seed retention, lodging resistance, and documented performance under hot, humid conditions. Proso Millet may be less dependable for clean dry grain in persistently wet tropical or subtropical weather."
+      },
 
-      harvestProducts: [
-        "fresh-seed-heads",
-        "millet-panicles"
-      ],
+      southwest: {
+        plantingWindow:
+          "Plant after frost danger has passed and soil has warmed, commonly during spring or early summer depending on elevation. Use stored soil moisture, seasonal rainfall, or limited irrigation for establishment.",
 
-      suitableFeedingMethods: [
-        "whole-seed-heads",
-        "immediate-feeding",
-        "seasonal-enrichment"
-      ],
+        harvestWindow:
+          "Summer into fall, depending on elevation, planting date, cultivar maturity, rainfall, and irrigation.",
 
-      requiredProcessingTasks: [
-        "cut-seed-heads"
-      ],
+        varietyGuidance:
+          "Prioritize drought tolerance, early maturity, seed retention, lodging resistance, and performance under limited irrigation or dryland production."
+      },
 
-      optionalProcessingTasks: [],
+      pacificNorthwest: {
+        plantingWindow:
+          "Plant after frost danger has passed in the warmest available site once soil has warmed sufficiently. Inland valleys and warmer rain-shadow areas are generally better suited than cool maritime locations. Early planting into genuinely warm soil is important because cool spring conditions can delay establishment.",
 
-      requiredEquipment: [],
+        harvestWindow:
+          "Late summer into early fall, before autumn rain, cool temperatures, or frost prevent dependable grain dry-down.",
 
-      helpfulEquipment: [
-        "hand-pruners",
-        "bird-netting"
-      ],
+        varietyGuidance:
+          "Choose an early photoperiod-insensitive cultivar demonstrated to mature under local heat-unit conditions. Prioritize uniform maturity, lodging resistance, and seed retention."
+      },
 
-      harvestPattern:
-        "several",
+      coastalWest: {
+        plantingWindow:
+          "Plant after frost danger has passed when soil and daytime conditions are warm. Warm inland valleys are generally more dependable than cool foggy coastal locations.",
 
-      harvestFrequencyCategory:
-        "seasonal",
+        harvestWindow:
+          "Summer through early fall, depending on planting date, coastal influence, irrigation, and cultivar.",
 
-      storageMethods: [
-        "short-term-fresh"
-      ],
+        varietyGuidance:
+          "Use an early cultivar suited to local heat accumulation. In cool maritime areas, select the warmest full-sun location and avoid cultivars requiring a long grain-filling period."
+      },
 
-      preferredStorageMethod:
-        "feed-soon-after-harvest",
+      highElevation: {
+        plantingWindow:
+          "Plant as soon as frost danger has declined and soil is warm enough for rapid emergence. The usable planting window may be narrow because Proso Millet requires warm soil but must still mature before early autumn frost.",
 
-      storageDurationCategory:
-        "very-short",
+        harvestWindow:
+          "Late summer through early fall before frost, snow, or prolonged cold weather.",
 
-      nonElectricStorageSuitable: false,
+        varietyGuidance:
+          "Use the earliest locally tested cultivar available, with strong seed retention and the ability to mature under cool nights and a compressed frost-free season."
+      },
 
-      refrigerationSuitable: false,
-      freezingSuitable: false,
-
-      dryingRequired: false,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 3,
-      rodentRiskScore: 3,
-      storedInsectRiskScore: 2,
-
-      harvestEaseScore: 4,
-      preparationEaseScore: 5,
-      beginnerSuitabilityScore: 4,
-
-      householdFoodValueScore: 2,
-      flockValueScore: 5,
-
-      safetyWarnings: [
-        "Use only mature sound panicles without mold, decay, musty odor, or abnormal heating.",
-        "Freshly cut panicles still contain moisture and should not be sealed for storage.",
-        "Do not feed chemically treated planting seed.",
-        "Millet remains supplemental to complete poultry feed."
-      ],
-
-      incompatibleUserTraits: [
-        "requires-long-term-storage",
-        "wants-loose-measured-grain-only"
+      regionalNotes: [
+        "Proso Millet is a warm-season crop and should not be planted according to cool-season small-grain calendars.",
+        "The crop requires warm soil for dependable establishment but has a sufficiently short life cycle to fit many northern and high-elevation growing seasons.",
+        "Short-season adaptation does not eliminate the need for warm germination conditions.",
+        "Regional planting dates should be determined by final frost risk, soil temperature, cultivar maturity, heat accumulation, rainfall, and expected harvest weather.",
+        "The planner should distinguish the minimum biological growing period from the longer practical period needed for emergence, maturity variation, dry-down, and harvest.",
+        "Approximately 60 days may be adequate for exceptionally early cultivars under favorable conditions, but 90 to 100 frost-free days provides greater planning flexibility.",
+        "Late planting may be useful after an early crop or failed spring planting, but only when adequate warm-season time remains.",
+        "Dryland production is strongest in regions with warm summers, moderate rainfall, stored soil moisture, and comparatively dry harvest weather.",
+        "Hot dry regions may require irrigation for establishment even though mature plants are drought tolerant.",
+        "Humid regions may produce vigorous plants but face greater difficulty with weeds, lodging, panicle diseases, weathering, grain drying, and storage preparation.",
+        "Cool coastal climates may not provide sufficient heat accumulation for consistent grain maturity.",
+        "High-elevation climates require a careful balance between waiting for warm soil and planting early enough to mature before frost.",
+        "Wild-bird pressure can be severe in every region and may determine practical harvest timing.",
+        "Regional variety trials are more dependable than generalized seed-catalog maturity claims.",
+        "Proso Millet should remain separate from Pearl Millet, Foxtail Millet, Japanese Millet, Browntop Millet, and Finger Millet because those crops differ in maturity, height, forage value, grain characteristics, climate adaptation, and poultry use."
       ]
     },
 
-    {
-      id:
+        spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
+
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      hullPercentage:
+        null,
+
+      bushelWeightLbs:
+        50,
+
+      storageLife:
+        "Potentially many months when mature grain is adequately dried, cleaned, cooled, and protected from insects, rodents, condensation, mold, rancidity, and temperature fluctuations",
+
+      storageMethod:
+        "Harvest mature panicles before severe shattering or weather damage, complete drying under cover if necessary, thresh and clean the grain when loose-seed storage is intended, and place only adequately dried grain in a cool, dark, dry, food-safe, rodent-resistant container. Inspect regularly for condensation, heating, insects, webbing, musty odor, visible mold, off odors, and rodent contamination.",
+
+      yieldNotes:
+        "Commercial Proso Millet yields are commonly reported in bushels per acre or pounds per acre, but those values should not be converted directly into guaranteed backyard pounds per square foot. Small-plot production is strongly affected by cultivar, seeding rate, germination, emergence, tillering, weed competition, soil moisture, fertility, lodging, uneven maturity, seed shattering, wild-bird pressure, harvest timing, hand-cutting loss, threshing efficiency, cleaning loss, hull retention, and final storage moisture. Backyard yield values remain null until suitable small-scale evidence is available.",
+
+      densityNotes:
+        "Proso Millet is normally broadcast or drilled as a dense grain stand rather than spaced as individual garden plants. Plant counts per square foot are less useful than viable seed rate, emergence percentage, row spacing, tiller production, fertile panicle density, and harvested clean-grain weight.",
+
+      harvestProducts: [
+        "whole-mature-panicles",
         "whole-dried-panicles",
-
-      label:
-        "Whole Dried Millet Panicles",
-
-      description:
-        "Mature Millet panicles dried under protected ventilated conditions and stored whole for later flock enrichment.",
-
-      primaryFeedRole:
-        "grain-enrichment-storage",
-
-      harvestProducts: [
-        "dried-seed-heads",
-        "millet-panicles"
+        "whole-grain",
+        "cracked-grain",
+        "ground-grain",
+        "sprouting-grain",
+        "straw",
+        "chaff",
+        "cover-crop-biomass"
       ],
 
-      suitableFeedingMethods: [
-        "whole-seed-heads",
-        "winter-storage",
-        "seasonal-enrichment"
+      harvestByproducts: [
+        "Proso Millet straw",
+        "Leaves and stems",
+        "Panicle branches",
+        "Chaff",
+        "Hulls",
+        "Broken grain",
+        "Screenings",
+        "Shattered seed",
+        "Root biomass"
       ],
 
-      requiredProcessingTasks: [
-        "cut-seed-heads",
-        "dry"
+      byproductNotes: [
+        "Whole mature or dried panicles can be offered as poultry enrichment without threshing, provided they are clean, sound, dry, and untreated.",
+        "Clean dry straw may have bedding, mulch, compost-carbon, or soil-cover value but is not a concentrated poultry feed.",
+        "Hulls and coarse chaff dilute nutrient density and should not be treated as equivalent to clean grain.",
+        "Screenings require careful inspection because they may concentrate weed seeds, immature kernels, broken grain, moldy material, insects, soil, stones, or other foreign matter.",
+        "Shattered seed may provide postharvest gleaning but can also create volunteer plants and weed-management problems.",
+        "Diseased, moldy, chemically contaminated, rodent-contaminated, or flood-contaminated grain and residue should not be used as poultry feed or bedding."
       ],
 
-      optionalProcessingTasks: [
-        "clean-sort"
+      directFacts: {
+        typicallyPlantedAsDenseStand:
+          true,
+
+        individualPlantSpacingUseful:
+          false,
+
+        tillerCountAffectsHeadDensity:
+          true,
+
+        commercialYieldConversionToBackyardNotSupported:
+          true,
+
+        strawProduced:
+          true,
+
+        standardBushelWeightLbs:
+          50,
+
+        standardBushelWeightIsGuaranteedTestWeight:
+          false,
+
+        wholePanicleHarvestPossible:
+          true,
+
+        looseGrainHarvestPossible:
+          true,
+
+        seedShatteringCanReduceYield:
+          true,
+
+        wildBirdsCanReduceYield:
+          true,
+
+        unevenMaturityCanReduceHarvestEfficiency:
+          true,
+
+        handThreshingLossExpected:
+          true,
+
+        exactHandThreshingLossKnown:
+          false,
+
+        exactCleaningLossKnown:
+          false,
+
+        exactBackyardYieldKnown:
+          false,
+
+        notes: [
+          "The stored bushel value is a standard weight conversion and should not be interpreted as the actual test weight of every harvested lot.",
+          "Actual bulk density and test weight vary with cultivar, kernel development, hull percentage, foreign material, harvest maturity, weathering, and moisture.",
+          "Proso Millet can provide useful whole panicles from a small plot even when loose-grain production is not economically efficient.",
+          "Whole-panicle use preserves feed and enrichment value while avoiding most threshing, winnowing, and cleaning labor.",
+          "Loose clean grain is easier to measure and store compactly but requires substantially more processing.",
+          "Dense stands can improve canopy closure and later-season weed competition.",
+          "Excessively dense, heavily fertilized, or moisture-stressed stands may lodge or mature unevenly.",
+          "Sparse stands may produce additional tillers but should not be assumed to fully recover lost yield.",
+          "Panicles and individual seeds may mature at different times.",
+          "Waiting for every seed to reach identical maturity can increase shattering, bird feeding, lodging, and weather damage.",
+          "Small plantings may be harvested in more than one pass to capture unevenly maturing panicles.",
+          "Protected postharvest drying may improve usable yield where grain is cut before it is fully dry.",
+          "Wild-bird feeding can remove a large portion of grain from small exposed plantings.",
+          "Backyard harvest losses can occur during cutting, bundling, transport, drying, threshing, winnowing, cleaning, and storage.",
+          "No dependable pounds-per-plant or pounds-per-square-foot guarantee is stored."
+        ]
+      }
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Usually low when purchased as bulk untreated agricultural seed; named grain cultivars, certified seed, organic seed, food-grade seed, specialty colors, or small retail packets may cost more",
+
+      equipmentCostEstimate:
+        "Low for a small hand-sown whole-panicle plot; moderate to high where the grower purchases bird netting, a seed drill, sickle, scythe, mechanical thresher, grain mill, sprouting equipment, drying fan, moisture meter, screens, or sealed grain-storage containers",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Low to Moderate for growing and harvesting a limited number of whole panicles; Moderate to High for loose grain that must be protected, cut, dried, threshed, winnowed, cleaned, processed, and stored",
+
+      potentialFeedSavings:
+        null,
+
+      economicAdvantages: [
+        "Seed is generally inexpensive",
+        "The crop has a short production cycle",
+        "It requires less water than many longer-season grain crops",
+        "It may fit after an early harvested crop",
+        "It can mature in regions where longer-season grains are unreliable",
+        "Whole panicles can be used without threshing",
+        "Whole panicles provide both feed and behavioral enrichment",
+        "Clean whole grain can be stored without electricity when properly dried",
+        "The crop can provide grain, straw, seasonal soil cover, and crop-rotation diversity",
+        "Seed can potentially be saved from open-pollinated cultivars",
+        "Small seed quantities can plant a comparatively large area",
+        "Limited irrigation requirements may reduce recurring production costs"
       ],
 
-      requiredEquipment: [],
-
-      helpfulEquipment: [
-        "hand-pruners",
-        "drying-rack",
-        "drying-screen",
-        "fan",
-        "bird-netting",
-        "food-safe-bucket"
+      economicLimitations: [
+        "Wild birds may consume a substantial part of the grain before harvest",
+        "Bird netting may become the largest optional production expense",
+        "Early weed control may require substantial hand labor",
+        "Uneven maturity complicates harvest timing",
+        "Seed shattering can reduce recoverable yield",
+        "Lodging may increase cutting and collection losses",
+        "Hand threshing and winnowing are labor intensive",
+        "Cleaning losses are difficult to predict",
+        "Very small grain is more difficult to separate from fine chaff than larger cereal kernels",
+        "Wet harvest weather may require protected drying and forced airflow",
+        "Rodents and stored-product insects may reduce stored yield",
+        "Grinding or cracking equipment may be required for formulated-feed use",
+        "Processed grain has a shorter practical storage life than intact grain",
+        "Sprouting systems require containers, water, sanitation, airflow, inspection, and daily labor",
+        "Household-scale production may cost more than purchased bulk Millet or complete poultry feed",
+        "The grain remains nutritionally incomplete and cannot replace a balanced ration by itself"
       ],
 
-      harvestPattern:
-        "major",
+      likelyLowestCostUse:
+        "whole-mature-or-dried-panicle-enrichment",
 
-      harvestFrequencyCategory:
-        "once-twice",
+      likelyHighestLaborUse:
+        "cleaned-ground-grain-for-home-formulated-rations",
 
-      storageMethods: [
-        "dried-whole"
+      potentialFeedSavingsNotes:
+        "Feed savings cannot be estimated until usable backyard yield, bird losses, shattering losses, harvest losses, processing labor, drying costs, storage losses, feeding quantity, complete-feed displacement, and the value of purchased alternatives are known.",
+
+      economicNotes:
+        "Proso Millet's strongest backyard economic pathway may be whole-panicle enrichment rather than fully processed loose grain. Whole-panicle use avoids most threshing and cleaning costs while preserving the crop's feed and behavioral value. Loose-grain production becomes more attractive as planted area, harvest efficiency, storage capacity, or access to small-scale threshing equipment increases. The crop's drought tolerance, short season, seed-saving potential, soil cover, rotation value, and non-electric storage should be evaluated separately from direct feed-cost savings."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+    evidence: {
+      evidenceStrength:
+        "Strong for Proso Millet identity, short-season growth, drought adaptation, grain production, field-scale planting, harvest behavior, shattering risk, birdseed use, general grain composition, and conventional feed use; moderate for poultry feeding value and household-food processing; limited for backyard laying-hen supplementation, whole-panicle feeding quantities, small-plot yield, hand-processing efficiency, and direct feed-cost savings",
+
+      sources: [
+        {
+          title:
+            "Proso Millet Grain",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/722",
+
+          use:
+            "Crop identity, morphology, short-season growth, low moisture requirement, grain composition, feed uses, poultry-feeding evidence, grain limitations, and variation among samples"
+        },
+
+        {
+          title:
+            "Proso Millet Forage",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/409",
+
+          use:
+            "Vegetative growth, forage characteristics, morphology, short growth cycle, water requirement, and distinction between forage and mature grain"
+        },
+
+        {
+          title:
+            "Producing and Marketing Proso Millet in the Great Plains",
+
+          organization:
+            "University of Nebraska–Lincoln Extension",
+
+          url:
+            "https://extensionpublications.unl.edu/assets/pdf/ec137.pdf",
+
+          use:
+            "Production regions, crop rotation, planting, seeding, fertility, weeds, insects, diseases, harvest, shattering, drying, storage, marketing, and field-scale yield context"
+        },
+
+        {
+          title:
+            "Alternative Uses of Proso Millet",
+
+          organization:
+            "University of Nebraska–Lincoln Extension",
+
+          url:
+            "https://digitalcommons.unl.edu/panhandleresext/80/",
+
+          use:
+            "Poultry feed, livestock feed, birdseed, household-food uses, grain-processing possibilities, and alternative-market context"
+        },
+
+        {
+          title:
+            "Proso Millet and Its Potential for Cultivation in the Pacific Northwest, U.S.: A Review",
+
+          organization:
+            "Frontiers in Plant Science",
+
+          url:
+            "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01961/full",
+
+          use:
+            "Crop history, 60- to 100-day growth cycle, drought and heat adaptation, water-use efficiency, production systems, grain quality, food uses, feed uses, cultivar variation, and Pacific Northwest potential"
+        },
+
+        {
+          title:
+            "Crop Profile for Proso Millet in Colorado",
+
+          organization:
+            "USDA Regional Integrated Pest Management Centers and Colorado Crop-Production Contributors",
+
+          url:
+            "https://ipmdata.ipmcenters.org/documents/cropprofiles/COprosomillet.pdf",
+
+          use:
+            "Crop production, pests, weeds, harvest limitations, lodging, seed shattering, grain moisture, storage, and regional management"
+        },
+
+        {
+          title:
+            "Fertilizing Spring-Seeded Small Grains",
+
+          organization:
+            "Colorado State University Extension",
+
+          url:
+            "https://extension.colostate.edu/resource/fertilizing-spring-seeded-small-grains/",
+
+          use:
+            "Proso Millet fertility, residual soil nitrogen, fertilizer nitrogen, phosphorus, soil testing, and short-season production context"
+        },
+
+        {
+          title:
+            "Nutrient Composition and Feeding Value of Proso Millets, Sorghum Grains, and Corn in Broiler Diets",
+
+          organization:
+            "Poultry Science",
+
+          url:
+            "https://doi.org/10.3382/ps.0610311",
+
+          use:
+            "Proso Millet nutrient composition, metabolizable-energy comparisons, amino-acid composition, and feeding value within formulated broiler diets"
+        },
+
+        {
+          title:
+            "Studies on Millets: Proximate Composition, Mineral Composition, and Phytate and Oxalate Contents",
+
+          organization:
+            "Food Chemistry",
+
+          url:
+            "https://doi.org/10.1016/0308-8146(91)90088-6",
+
+          use:
+            "Supporting information concerning Proso Millet proximate composition, minerals, phytate, and crop-to-crop nutritional differences"
+        },
+
+        {
+          title:
+            "Mineral, Seed Morphology, and Agronomic Characteristics of Proso Millet Germplasm",
+
+          organization:
+            "Frontiers in Nutrition",
+
+          url:
+            "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1394136/full",
+
+          use:
+            "Cultivar and germplasm variation in seed morphology, agronomic performance, mineral composition, and nutritional characteristics"
+        },
+
+        {
+          title:
+            "Millet Crop Insurance Provisions",
+
+          organization:
+            "United States Department of Agriculture — Federal Crop Insurance Corporation",
+
+          url:
+            "https://www.govinfo.gov/content/pkg/CFR-2025-title7-vol6/pdf/CFR-2025-title7-vol6-sec457-165.pdf",
+
+          use:
+            "Confirmation that the regulated Millet crop provision applies to Proso Millet grown for grain and uses a 50-pound test-weight market basis"
+        },
+
+        {
+          title:
+            "Millet Grains: Nutritional Quality, Processing, and Potential Health Benefits",
+
+          organization:
+            "Comprehensive Reviews in Food Science and Food Safety",
+
+          url:
+            "https://doi.org/10.1111/1541-4337.12012",
+
+          use:
+            "General millet composition, protein quality, starch, lipids, minerals, phytate, phenolic compounds, processing effects, dehulling, germination, and food-use context"
+        }
       ],
 
-      preferredStorageMethod:
-        "dry-ventilated-rodent-protected",
+      lastReviewed:
+        "2026-07-20",
 
-      storageDurationCategory:
-        "medium-long",
-
-      nonElectricStorageSuitable: true,
-
-      refrigerationSuitable: false,
-      freezingSuitable: false,
-
-      dryingRequired: true,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 4,
-      rodentRiskScore: 5,
-      storedInsectRiskScore: 3,
-
-      harvestEaseScore: 4,
-      preparationEaseScore: 4,
-      beginnerSuitabilityScore: 4,
-
-      householdFoodValueScore: 2,
-      flockValueScore: 5,
-
-      safetyWarnings: [
-        "Dry panicles thoroughly before enclosed storage.",
-        "Do not store damp, musty, heated, or visibly moldy panicles.",
-        "Protect stored panicles from rodents and insects.",
-        "Inspect stored material regularly.",
-        "Do not feed chemically treated planting seed."
-      ],
-
-      incompatibleUserTraits: [
-        "declines-drying",
-        "has-no-protected-drying-area",
-        "has-no-rodent-protected-storage"
+      researchNotes: [
+        "Keep this record specific to Proso Millet, Panicum miliaceum.",
+        "Do not combine Proso Millet evidence with Pearl Millet, Foxtail Millet, Japanese Millet, Browntop Millet, Finger Millet, or Sorghum.",
+        "Do not use a generic Millet nutrient analysis unless the species is clearly identified.",
+        "Separate mature grain, whole panicles, cracked grain, ground grain, sprouted grain, vegetative forage, and postharvest gleaning.",
+        "Do not treat mature grain and green forage as nutritionally equivalent.",
+        "Do not treat whole, hulled, dehulled, cracked, ground, cooked, and sprouted grain as compositionally identical.",
+        "Research Proso Millet poultry metabolizable-energy values separately from values for Pearl Millet or Foxtail Millet.",
+        "Research digestible lysine, methionine, cystine, threonine, and tryptophan values.",
+        "Research available phosphorus and phytate-phosphorus values.",
+        "Research seed-color and cultivar effects on phenolic compounds and feed value.",
+        "Find additional laying-hen studies using clearly identified Proso Millet.",
+        "Do not convert broiler-study inclusion rates into universal backyard laying-hen recommendations.",
+        "Do not recommend a universal poultry inclusion percentage.",
+        "Published commercial feeding trials assume complete-ration formulation and should not be simplified into unrestricted household supplementation.",
+        "Research whether whole Proso Millet requires different practical feeding guidance for bantams, standard hens, and large fowl.",
+        "Research particle-size effects for whole, cracked, and ground Proso Millet.",
+        "Research whole-panicle consumption, grain recovery, wastage, and enrichment behavior in backyard flocks.",
+        "Research sprouted Proso Millet separately from dry grain.",
+        "Sprouting does not create additional dry matter and may reduce recoverable dry matter through respiration.",
+        "Research household sprouting sanitation, mold, bacterial growth, drainage, and spoilage.",
+        "Do not convert commercial bushels per acre or pounds per acre into guaranteed backyard pounds per square foot.",
+        "The 50-pound bushel value is a standard conversion or market basis rather than a guaranteed actual lot test weight.",
+        "Research cultivar-specific test weight and bulk density.",
+        "Research small-plot viable-seed rates, emergence, tiller density, fertile-panicle density, and harvested clean-grain weight.",
+        "Research backyard-scale wild-bird losses.",
+        "Research the effectiveness and cost of bird netting, scare devices, panicle bags, and early harvest.",
+        "Research cultivar-specific shattering resistance.",
+        "Research cultivar-specific lodging resistance.",
+        "Research uneven maturity within individual panicles and among plants.",
+        "Research optimal small-scale harvest timing.",
+        "Research hand-cutting, bundle-drying, threshing, winnowing, and cleaning losses.",
+        "Research processing time per pound for whole panicles and loose grain.",
+        "Research hull percentage and dehulling efficiency for household-food use.",
+        "Research safe storage-moisture targets for household-scale conditions.",
+        "Research storage life under different temperature, humidity, container, and oxygen conditions.",
+        "Research stored-product insect species and losses affecting Proso Millet.",
+        "Research the comparative storage life of whole, cracked, ground, dehulled, and sprouted grain.",
+        "Research grain screenings before treating them as a feed pathway.",
+        "Research straw suitability for poultry bedding, mulch, and compost.",
+        "Research regional disease concerns, including diseases favored by humid conditions.",
+        "Research regional weed-management limitations because Proso Millet can also become a volunteer weed.",
+        "Research rotation restrictions created by herbicide carryover.",
+        "Research the crop's cover-crop, erosion-control, residual-nutrient-capture, and soil-organic-matter contributions.",
+        "Research household economics separately for whole-panicle enrichment and loose-grain production.",
+        "Leave backyard yield, exact processing losses, feeding percentages, and direct feed savings null until defensible evidence is available."
       ]
     },
 
-    {
-      id:
-        "loose-dried-grain",
+    plannerData: {
+      schemaVersion:
+        "2.0.0",
 
-      label:
-        "Loose Dried Proso Millet Grain",
+      developmentStatus:
+        "ready",
 
-      description:
-        "Mature grain dried, threshed, winnowed, cleaned, and stored for measured supplemental feeding.",
+              identity: {
+        plannerName:
+          "Proso Millet",
 
-      primaryFeedRole:
-        "energy-grain-storage",
+        shortLabel:
+          "Millet",
 
-      harvestProducts: [
-        "dry-grain",
-        "millet-grain"
-      ],
+        icon:
+          "🌾",
 
-      suitableFeedingMethods: [
-        "whole-grain",
-        "measured-supplement",
-        "winter-storage",
-        "scatter-feeding"
-      ],
+        cropCategory:
+          "annual-grain",
 
-      requiredProcessingTasks: [
-        "cut-seed-heads",
-        "dry",
-        "thresh",
-        "winnow",
-        "clean-sort"
-      ],
+        primaryFeedCategory:
+          "warm-season-energy-grain",
 
-      optionalProcessingTasks: [
-        "grind"
-      ],
-
-      requiredEquipment: [],
-
-      helpfulEquipment: [
-        "drying-rack",
-        "drying-screen",
-        "fan",
-        "grain-thresher",
-        "food-safe-bucket",
-        "metal-grain-can",
-        "moisture-meter"
-      ],
-
-      harvestPattern:
-        "major",
-
-      harvestFrequencyCategory:
-        "once-twice",
-
-      storageMethods: [
-        "dried-threshed"
-      ],
-
-      preferredStorageMethod:
-        "airtight-after-adequate-drying",
-
-      storageDurationCategory:
-        "long",
-
-      nonElectricStorageSuitable: true,
-
-      refrigerationSuitable: false,
-      freezingSuitable: false,
-
-      dryingRequired: true,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: true,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 4,
-      rodentRiskScore: 5,
-      storedInsectRiskScore: 4,
-
-      harvestEaseScore: 2,
-      preparationEaseScore: 2,
-      beginnerSuitabilityScore: 2,
-
-      householdFoodValueScore: 4,
-      flockValueScore: 4,
-
-      safetyWarnings: [
-        "Grain must be adequately dry before being placed in airtight storage.",
-        "Do not mix questionable grain with clean sound grain.",
-        "Inspect regularly for insects, rodents, moisture, heating, and mold.",
-        "Discard moldy, musty, heated, or heavily insect-damaged grain.",
-        "Do not feed chemically treated planting seed.",
-        "Keep Millet supplemental to a complete poultry ration."
-      ],
-
-      incompatibleUserTraits: [
-        "declines-drying",
-        "declines-threshing",
-        "declines-winnowing",
-        "requires-minimal-processing",
-        "has-no-dry-storage",
-        "has-no-rodent-protected-storage"
-      ]
-    }
-  ],
-
-  dataQuality: {
-    overallConfidence:
-      0.78,
-
-    verifiedFields: [
-      "identity",
-      "lifecycle",
-      "climate.directFacts.shortSeasonGrain",
-      "climate.directFacts.approximateMaturityDaysMinimum",
-      "climate.directFacts.approximateMaturityDaysMaximum",
-      "site.directFacts.preferredLight",
-      "soil.directFacts.lowFertilityAdaptation",
-      "soil.directFacts.sandySoilAdaptation",
-      "soil.directFacts.fineFirmSeedbedHelpful",
-      "water.directFacts.lowWaterRequirementGrain",
-      "water.directFacts.droughtTolerantAfterEstablishment",
-      "space.directFacts.denseStandSuitable",
-      "space.directFacts.blockPollinationRequired",
-      "flock.directFacts.edibleFeedParts",
-      "flock.directFacts.nutritionalOrientation",
-      "labor.directFacts.unevenMaturityConcern",
-      "risks.directFacts.wildBirdConcern",
-      "risks.directFacts.earlyWeedCompetitionConcern",
-      "risks.directFacts.unevenMaturityConcern",
-      "risks.directFacts.shatteringConcern",
-      "seasonalRoles.directFacts.shortSeasonPlantingPossible"
-    ],
-
-    derivedFields: [
-      "climate",
-      "site",
-      "soil.textureScores",
-      "water",
-      "space.smallSpaceScore",
-      "space.mediumSpaceScore",
-      "space.largeSpaceScore",
-      "space.layoutScores",
-      "space.spaceTypeScores",
-      "flock.flockPurposeScores",
-      "flock.feedingMethodScores",
-      "labor",
-      "cost",
-      "goals",
-      "risks.wildlife",
-      "usePaths.fresh-mature-panicles",
-      "usePaths.whole-dried-panicles",
-      "usePaths.loose-dried-grain"
-    ],
-
-    uncertainFields: [
-      "climate.dryDownBufferDays",
-      "soil.minimumSoilDepthIn",
-      "soil.saltToleranceScore",
-      "space.minimumTrialAreaSqFt",
-      "space.minimumUsefulAreaSqFt",
-      "space.preferredProductionAreaSqFt",
-      "space.minimumContainerGallons",
-      "space.minimumRaisedBedDepthIn",
-      "flock.portionGuidance",
-      "usePaths.fresh-mature-panicles.exactStorageDuration",
-      "usePaths.whole-dried-panicles.exactStorageDuration",
-      "usePaths.loose-dried-grain.exactStorageDuration",
-      "risks.wildlife.deer",
-      "risks.wildlife.squirrels"
-    ],
-
-    missingFields: [
-      "space.minimumTrialAreaSqFt",
-      "space.minimumUsefulAreaSqFt",
-      "space.preferredProductionAreaSqFt",
-      "space.minimumContainerGallons",
-      "flock.portionGuidance",
-      "flock.usePathTesting"
-    ],
-
-    lastReviewed:
-      "2026-07-15",
-
-    primarySources: [
-      {
-        title:
-          "Proso Millet Production",
-
-        organization:
-          "University Cooperative Extension production resources",
-
-        sourceType:
-          "extension-production-guide",
-
-        use:
-          "Short-season growth, planting, soil, water, fertility, weed management, harvest, shattering, and grain drying"
+        guideUrl:
+          "growing-proso-millet-for-chickens.html"
       },
 
-      {
-        title:
-          "Alternative Uses of Proso Millet",
+      lifecycle: {
+        growthCycle:
+          "annual",
 
-        organization:
-          "University of Nebraska–Lincoln Extension",
+        isAnnual:
+          true,
 
-        sourceType:
-          "extension-crop-and-feed-guide",
+        isBiennial:
+          false,
 
-        use:
-          "Poultry feed, bird seed, human-food use, grain composition, processing, and alternative markets"
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
       },
 
-      {
-        title:
-          "Proso Millet and Its Potential for Cultivation in the Pacific Northwest",
+      climate: {
+        suitableClimateTypes: [
+          "hot-dry",
+          "temperate",
+          "cool-moderate-summer",
+          "cold-short-summer",
+          "high-elevation"
+        ],
 
-        organization:
-          "Peer-reviewed crop-science researchers",
+        preferredClimateTypes: [
+          "hot-dry",
+          "temperate",
+          "cool-moderate-summer"
+        ],
 
-        sourceType:
-          "peer-reviewed-review",
+        challengingClimateTypes: [
+          "cool-maritime",
+          "waterlogged-soils",
+          "persistently-hot-humid"
+        ],
 
-        use:
-          "Crop history, short maturity, drought adaptation, production systems, grain quality, and food/feed uses"
+        minimumFrostFreeDays:
+          60,
+
+        preferredFrostFreeDays:
+          90,
+
+        minimumSoilTemperatureF:
+          50,
+
+        preferredSoilTemperatureF:
+          60,
+
+        daysToMaturityMinimum:
+          60,
+
+        daysToMaturityMaximum:
+          100,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          5,
+
+        droughtClimateToleranceScore:
+          5,
+
+        humidityToleranceScore:
+          2,
+
+        coolSummerToleranceScore:
+          4,
+
+        frostSensitivityScore:
+          5,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "The naturally short growing season allows grain production in many locations where longer-season cereal crops may fail to mature.",
+          "Early-maturing cultivars improve reliability in northern and high-elevation regions.",
+          "Waiting for warm soil greatly improves emergence and early establishment compared with planting into cold soil.",
+          "Protected postharvest drying may be more valuable than extending the spring growing season in humid climates.",
+          "The crop can often fit after an early harvested cool-season vegetable or grain crop where adequate warm weather remains.",
+          "Supplemental irrigation during flowering and grain filling may improve yields under prolonged drought.",
+          "Indoor seed starting offers little practical value because Proso Millet establishes best through direct seeding."
+        ],
+
+        indoorSeedStartingBenefitScore:
+          1,
+
+        directFacts: {
+          seasonType:
+            "warm-season-annual",
+
+          frostSensitive:
+            true,
+
+          commonlyDirectSeeded:
+            true,
+
+          springTypesAvailable:
+            true,
+
+          winterTypesAvailable:
+            false,
+
+          facultativeTypesAvailable:
+            false,
+
+          vernalizationRequiredForAllVarieties:
+            false,
+
+          winterHardinessVarietyDependent:
+            false,
+
+          winterSurvivalExpected:
+            false,
+
+          warmSoilRequired:
+            true,
+
+          shortSeasonGrain:
+            true,
+
+          highHeatTolerance:
+            true,
+
+          droughtAdapted:
+            true,
+
+          coolSoilEstablishmentPoor:
+            true,
+
+          optimumPlantingAfterFrost:
+            true,
+
+          baseGrowingDegreeTemperatureF:
+            50,
+
+          approximateMaturityDaysMinimum:
+            60,
+
+          approximateMaturityDaysMaximum:
+            100,
+
+          maturityHighlyVarietyDependent:
+            true,
+
+          suitableForDoubleCropping:
+            true,
+
+          dryHarvestWeatherPreferred:
+            true,
+
+          notes: [
+            "Proso Millet is a warm-season annual cereal grain.",
+            "The crop should be planted only after frost danger has passed and soil temperatures have warmed.",
+            "Rapid emergence is promoted by warm soil rather than cool spring conditions.",
+            "Unlike Barley, Wheat, Rye, or Oats, Proso Millet has no winter production system.",
+            "The crop requires no vernalization.",
+            "Its exceptionally short life cycle allows grain production in many short-season climates.",
+            "Early cultivars commonly mature in approximately 60 days under favorable conditions, although many require substantially longer.",
+            "Proso Millet is among the most drought-tolerant cereal grains commonly grown for poultry feed.",
+            "Dry conditions near harvest generally improve grain quality and reduce drying requirements.",
+            "Heavy rainfall during maturity increases the risk of weathering, lodging, delayed harvest, and storage problems.",
+            "The crop performs best where warm days, adequate sunlight, and moderate rainfall occur during vegetative growth.",
+            "Cool maritime climates often provide insufficient heat accumulation for dependable grain maturation.",
+            "High humidity may increase disease pressure, delay panicle drying, and complicate harvest.",
+            "The crop can fit well into double-cropping systems because of its short maturity.",
+            "Regional cultivar selection remains more reliable than generalized maturity estimates.",
+            "Indoor transplant production offers little practical advantage because dense direct seeding provides the best stand establishment."
+          ]
+        }
       },
 
-      {
-        title:
-          "Grain Drying, Handling, and Storage",
+            site: {
+        minimumSunHours:
+          6,
 
-        organization:
-          "University Cooperative Extension resources",
+        preferredSunHours:
+          8,
 
-        sourceType:
-          "extension-storage-guide",
+        sunlightRequirement:
+          "full-sun",
 
-        use:
-          "Grain moisture, drying, cooling, insects, rodents, mold, and safe storage"
+        shadeToleranceScore:
+          2,
+
+        partialShadeSuitable:
+          false,
+
+        containerSuitable:
+          false,
+
+        raisedBedSuitable:
+          true,
+
+        inGroundSuitable:
+          true,
+
+        fieldScaleSuitable:
+          true,
+
+        smallPlotSuitable:
+          true,
+
+        narrowBedSuitable:
+          true,
+
+        verticalGrowingSuitable:
+          false,
+
+        permanentBedSuitable:
+          false,
+
+        rotationCropSuitable:
+          true,
+
+        coverCropSuitable:
+          true,
+
+        erosionControlSuitable:
+          true,
+
+        slopeSuitability:
+          "Suitable for level ground and gentle slopes where erosion is controlled and seed can be planted uniformly; steep slopes complicate shallow seeding, moisture retention, bird protection, and grain harvest",
+
+        drainageRequirement:
+          "well-drained",
+
+        airCirculationRequirement:
+          "moderate-to-high",
+
+        windExposureTolerance:
+          "Moderate; established plants tolerate normal wind, but exposed sites may increase lodging, shattering, and harvest loss",
+
+        shelterRequirement:
+          "None under ordinary conditions, although wind protection may reduce lodging and seed loss in exposed locations",
+
+        sitePreparationLevel:
+          "moderate",
+
+        bedPreparationNotes:
+          "Prepare a clean, fine, firm seedbed that permits shallow and uniform planting. Remove established perennial weeds before sowing. Break large clods, level the surface, and firm loose soil so small seed has dependable soil contact without being buried excessively.",
+
+        bestSiteTypes: [
+          "Open full-sun garden plots",
+          "Warm annual grain beds",
+          "Well-drained field margins",
+          "Dryland production areas",
+          "Raised beds with sufficient area",
+          "Rotational garden blocks",
+          "Cover-crop areas intended for summer growth",
+          "Sites where short-season grain production is needed",
+          "Areas with convenient access for bird protection and harvest"
+        ],
+
+        unsuitableSiteTypes: [
+          "Persistently shaded locations",
+          "Woodland understories",
+          "Low areas that collect standing water",
+          "Heavy compacted soils with poor internal drainage",
+          "Frequently flooded ground",
+          "Cold wet spring soils",
+          "Sites with severe perennial weed pressure",
+          "Very small decorative containers",
+          "Locations where mature panicles cannot be protected from birds",
+          "Sites exposed to repeated irrigation runoff",
+          "Areas where volunteer Millet would create a serious weed problem"
+        ],
+
+        siteCompetitionConcerns: [
+          "Early weed competition",
+          "Perennial grasses",
+          "Pigweed and other fast-growing summer annual weeds",
+          "Volunteer cereal grains",
+          "Wild birds feeding on planted seed",
+          "Wild birds feeding on mature panicles",
+          "Rodents feeding on planted or fallen seed",
+          "Adjacent tall crops creating shade",
+          "Vining crops climbing into the stand",
+          "Dense volunteer Millet from previous seed shattering"
+        ],
+
+        companionPlantingPotential:
+          "Limited as a mixed vegetable companion because dense stands compete for light, moisture, and nutrients. More useful in crop rotations, summer cover-crop mixtures, wildlife plantings, or separated grain blocks than interplanted among low-growing vegetables.",
+
+        directFacts: {
+          fullSunPreferred:
+            true,
+
+          partialShadeTolerated:
+            true,
+
+          grainYieldReducedByShade:
+            true,
+
+          containerProductionPractical:
+            false,
+
+          raisedBedProductionPossible:
+            true,
+
+          denseStandPreferred:
+            true,
+
+          fineFirmSeedbedPreferred:
+            true,
+
+          shallowSeedingImportant:
+            true,
+
+          standingWaterTolerated:
+            false,
+
+          dryUplandSitesPreferred:
+            true,
+
+          strongEarlyWeedCompetition:
+            false,
+
+          canopyCanSuppressLaterWeeds:
+            true,
+
+          birdProtectionMayBeNeeded:
+            true,
+
+          windCanIncreaseLodging:
+            true,
+
+          windCanIncreaseShattering:
+            true,
+
+          permanentPlantingAppropriate:
+            false,
+
+          cropRotationAppropriate:
+            true,
+
+          coverCropUseAppropriate:
+            true,
+
+          livingMulchUseAppropriate:
+            false,
+
+          notes: [
+            "Proso Millet performs best in open sites receiving full sun throughout most of the day.",
+            "Partial shade may allow vegetative growth but can reduce panicle development, grain filling, stand uniformity, and harvestable yield.",
+            "The crop is more useful as a dedicated grain block than as an ornamental container plant.",
+            "A raised bed may support Proso Millet where adequate surface area, soil depth, moisture, and bird protection are available.",
+            "Very small containers do not provide enough stand density or harvested grain to justify the space.",
+            "Dense planting is generally preferred because Proso Millet is managed as a small-grain stand rather than as individually spaced plants.",
+            "A clean seedbed is especially important because seedlings may compete poorly with established weeds during early development.",
+            "The small seed requires close soil contact and relatively uniform shallow placement.",
+            "Loose, fluffy soil can result in uneven planting depth and moisture contact.",
+            "Firming the seedbed before or after planting may improve establishment where soil is excessively loose.",
+            "Sites with persistent standing water or saturated subsoil should be avoided.",
+            "Dry upland areas are generally more suitable than poorly drained depressions.",
+            "Normal airflow helps foliage and panicles dry after rain.",
+            "Excessively exposed sites may increase lodging, panicle movement, seed shattering, and harvest loss.",
+            "Adjacent tall crops, buildings, fences, or trees may create enough shade to reduce grain production.",
+            "Wild-bird pressure should be considered when choosing the site because small isolated plantings can be heavily targeted.",
+            "Locating the plot near the home or regular work area may make bird monitoring and timely harvest easier.",
+            "Proso Millet is suitable for annual rotation systems and should not occupy a permanent bed indefinitely.",
+            "Volunteer seedlings may emerge in later crops where mature seed shattered before harvest.",
+            "The planner should penalize shaded, saturated, highly compacted, or severely weed-infested sites."
+          ]
+        }
+      },
+
+      soil: {
+        suitableSoilTextures: [
+          "sandy-loam",
+          "loam",
+          "silt-loam",
+          "clay-loam",
+          "well-structured-light-clay"
+        ],
+
+        preferredSoilTextures: [
+          "sandy-loam",
+          "loam",
+          "silt-loam"
+        ],
+
+        challengingSoilTextures: [
+          "heavy-poorly-drained-clay",
+          "compacted-clay",
+          "waterlogged-organic-soil",
+          "very-loose-droughty-sand"
+        ],
+
+        minimumSoilDepthInches:
+          null,
+
+        preferredSoilDepthInches:
+          null,
+
+        minimumPH:
+          5.5,
+
+        maximumPH:
+          7.5,
+
+        preferredPHMinimum:
+          6.0,
+
+        preferredPHMaximum:
+          7.0,
+
+        acidityToleranceScore:
+          3,
+
+        alkalinityToleranceScore:
+          3,
+
+        salinityToleranceScore:
+          null,
+
+        lowFertilityToleranceScore:
+          4,
+
+        highFertilityResponseScore:
+          3,
+
+        compactionToleranceScore:
+          2,
+
+        poorDrainageToleranceScore:
+          1,
+
+        organicMatterRequirement:
+          "low-to-moderate",
+
+        nitrogenRequirement:
+          "low-to-moderate",
+
+        phosphorusRequirement:
+          "low-to-moderate",
+
+        potassiumRequirement:
+          "low-to-moderate",
+
+        sulfurRequirement:
+          null,
+
+        calciumRequirement:
+          null,
+
+        micronutrientRequirement:
+          "No unusual universal micronutrient requirement identified; use soil testing and local deficiency guidance",
+
+        nitrogenFixing:
+          false,
+
+        heavyFeeder:
+          false,
+
+        respondsToResidualFertility:
+          true,
+
+        excessiveNitrogenConcern:
+          true,
+
+        fertilityNotes:
+          "Proso Millet can produce on comparatively low-fertility soils and often uses residual nitrogen effectively because of its short growth cycle. Fertility should be based on soil testing, expected yield, previous crop, residual nitrate, irrigation, and local recommendations. Excessive nitrogen can promote excessive vegetative growth, lodging, delayed maturity, uneven dry-down, and nitrate accumulation in drought-stressed forage.",
+
+        amendmentNeeds: [
+          "Correct strongly acidic soil where local testing recommends lime",
+          "Correct phosphorus or potassium deficiencies identified by soil testing",
+          "Add modest organic matter where soil structure and moisture retention are poor",
+          "Avoid large untested nitrogen applications",
+          "Improve drainage before planting on poorly drained ground",
+          "Break surface compaction that interferes with shallow rooting and infiltration",
+          "Firm excessively loose seedbeds before planting",
+          "Use locally appropriate amendments rather than universal fertilizer formulas"
+        ],
+
+        amendmentWarnings: [
+          "Fresh high-nitrogen manure may stimulate excessive vegetative growth and uneven maturity.",
+          "Heavy manure applications may increase weeds and nutrient imbalance.",
+          "Excess nitrogen may increase lodging.",
+          "Drought-stressed forage grown under high nitrogen may accumulate unsafe nitrate concentrations.",
+          "Salt-containing fertilizers may injure seedlings when concentrated close to seed.",
+          "Uncomposted manure may introduce weed seeds and pathogens.",
+          "Excessive tillage can dry the shallow seed zone and increase erosion.",
+          "Adding sand to heavy clay without sufficient organic matter can worsen soil structure.",
+          "Fertilizer recommendations for Pearl Millet or forage Sorghum should not automatically be applied to Proso Millet grain."
+        ],
+
+        soilPreparationNotes:
+          "Use a soil test where practical. Eliminate perennial weeds, correct major pH or nutrient limitations, and prepare a fine but firm surface. Avoid deep fluffy tillage immediately before planting. Maintain enough surface moisture for germination while preventing crusting, ponding, and erosion.",
+
+        rootCharacteristics:
+          "Fibrous and comparatively shallow-rooted relative to many longer-season grain crops, with a dense network of fine roots concentrated mainly in the upper soil profile",
+
+        rootDepthCategory:
+          "shallow-to-moderate",
+
+        soilImprovementPotential: [
+          "Summer soil cover",
+          "Reduced erosion during active growth",
+          "Fibrous-root contribution to surface-soil aggregation",
+          "Residual nutrient capture",
+          "Aboveground biomass for mulch or compost",
+          "Crop-rotation diversity",
+          "Weed suppression after canopy establishment",
+          "Organic-matter contribution when residue is returned"
+        ],
+
+        soilLimitations: [
+          "Does not fix atmospheric nitrogen",
+          "Shallow rooting provides limited deep compaction relief",
+          "Poor tolerance of standing water",
+          "Weak performance in compacted saturated soil",
+          "Early seedlings may struggle in crusted soil",
+          "Very sandy soil may dry too quickly during germination",
+          "Excess fertility may increase lodging rather than grain yield",
+          "Volunteer seed may interfere with following crops"
+        ],
+
+        directFacts: {
+          broadSoilAdaptation:
+            true,
+
+          sandyLoamPreferred:
+            true,
+
+          loamPreferred:
+            true,
+
+          heavyClayPossibleWithGoodDrainage:
+            true,
+
+          poorlyDrainedClaySuitable:
+            false,
+
+          standingWaterSuitable:
+            false,
+
+          lowFertilityTolerance:
+            true,
+
+          soilTestingRecommended:
+            true,
+
+          residualNitrogenUseful:
+            true,
+
+          nitrogenFixer:
+            false,
+
+          highNitrogenAlwaysBeneficial:
+            false,
+
+          excessiveNitrogenCanCauseLodging:
+            true,
+
+          excessiveNitrogenCanDelayMaturity:
+            true,
+
+          droughtStressCanIncreaseForageNitrateRisk:
+            true,
+
+          grainNitrateRiskEquivalentToForage:
+            false,
+
+          shallowFibrousRootSystem:
+            true,
+
+          deepCompactionBreakingCrop:
+            false,
+
+          surfaceErosionControlPotential:
+            true,
+
+          volunteerWeedRisk:
+            true,
+
+          exactSalinityToleranceKnown:
+            false,
+
+          exactSoilDepthRequirementKnown:
+            false,
+
+          notes: [
+            "Proso Millet is adapted to a range of soil textures when drainage is adequate.",
+            "Well-drained sandy loams, loams, and silt loams are generally the most dependable soils.",
+            "Heavier soils may support the crop when they are well structured and do not remain saturated.",
+            "Poor drainage is a more important limitation than moderate soil infertility.",
+            "The crop can tolerate relatively low fertility but should not be described as requiring no nutrients.",
+            "Residual soil nitrate may supply much of the crop's nitrogen requirement.",
+            "Nitrogen recommendations should account for soil nitrate, organic matter, previous crops, manure history, expected yield, and available moisture.",
+            "Large nitrogen applications are not automatically economical or beneficial.",
+            "Excess nitrogen can promote lodging and delay uniform grain maturity.",
+            "Drought-stressed vegetative material may accumulate nitrate, particularly where nitrogen supply is high.",
+            "Nitrate warnings for forage should not be automatically transferred to clean mature grain without supporting evidence.",
+            "Phosphorus and potassium should be applied only where soil testing or local recommendations indicate a deficiency.",
+            "Proso Millet does not fix nitrogen and should not receive legume soil-building credit.",
+            "Its fibrous roots can improve surface-soil structure and help hold soil during active growth.",
+            "Its root system is not a substitute for deep-rooted compaction-breaking crops.",
+            "Surface crusting can interfere with emergence because the seedlings are small.",
+            "Very loose sandy soils may require careful moisture management during germination.",
+            "A firm seedbed improves seed-to-soil contact and supports uniform shallow planting.",
+            "Soil pH values outside the preferred range may still support production depending on cultivar, texture, nutrient availability, and local conditions.",
+            "Exact salinity tolerance remains null because species-level and cultivar-level recommendations are not sufficiently consistent for planner scoring.",
+            "Exact minimum soil depth remains null because no defensible universal backyard threshold was identified.",
+            "The planner should reward well-drained, moderately fertile soils and strongly penalize saturated or compacted sites."
+          ]
+        }
+      },
+
+            water: {
+        overallWaterRequirement:
+          "low-to-moderate",
+
+        droughtToleranceScore:
+          5,
+
+        waterUseEfficiencyScore:
+          5,
+
+        establishmentMoistureImportanceScore:
+          5,
+
+        floweringMoistureImportanceScore:
+          4,
+
+        grainFillMoistureImportanceScore:
+          4,
+
+        excessMoistureSensitivityScore:
+          4,
+
+        waterloggingToleranceScore:
+          1,
+
+        floodToleranceScore:
+          1,
+
+        overheadIrrigationSuitable:
+          true,
+
+        dripIrrigationSuitable:
+          true,
+
+        furrowIrrigationSuitable:
+          true,
+
+        rainfedProductionSuitable:
+          true,
+
+        drylandProductionSuitable:
+          true,
+
+        supplementalIrrigationBeneficial:
+          true,
+
+        irrigationRequired:
+          false,
+
+        irrigationRequirementClimateDependent:
+          true,
+
+        preferredWateringPattern:
+          "Deep enough to moisten the active root zone, followed by partial soil drying rather than frequent shallow watering that keeps the surface continuously wet",
+
+        criticalWaterStages: [
+          "Seed imbibition",
+          "Germination",
+          "Seedling emergence",
+          "Early root establishment",
+          "Panicle initiation",
+          "Boot stage",
+          "Flowering",
+          "Early grain filling"
+        ],
+
+        lowerPriorityWaterStages: [
+          "Late vegetative growth after canopy establishment under non-stress conditions",
+          "Final grain maturation",
+          "Preharvest dry-down"
+        ],
+
+        irrigationReductionStage:
+          "Reduce or discontinue irrigation as grain approaches physiological maturity where soil moisture is adequate and crop stress will not prematurely terminate grain filling",
+
+        irrigationStopBeforeHarvestDays:
+          null,
+
+        estimatedSeasonalWaterInches:
+          null,
+
+        minimumRainfallInches:
+          null,
+
+        preferredRainfallPattern:
+          "Adequate moisture during establishment and reproductive development followed by comparatively dry weather during final maturity and harvest",
+
+        drylandSuitability:
+          "high",
+
+        irrigationSuitability:
+          "high",
+
+        moistureMonitoringMethod:
+          "Inspect soil moisture below the immediate surface rather than judging only by surface dryness. During establishment, maintain moisture around the shallow seed zone without creating crusting or saturation. After rooting, evaluate moisture through the upper active root zone.",
+
+        moistureStressIndicators: [
+          "Leaf rolling",
+          "Leaf folding",
+          "Dull or gray-green foliage",
+          "Reduced tillering",
+          "Stunted growth",
+          "Premature lower-leaf drying",
+          "Delayed or reduced panicle emergence",
+          "Poor flowering",
+          "Incomplete seed set",
+          "Lightweight kernels",
+          "Premature plant drying"
+        ],
+
+        excessWaterIndicators: [
+          "Yellowing foliage",
+          "Slow growth",
+          "Uneven stand development",
+          "Root decline",
+          "Seedling damping-off",
+          "Surface algae",
+          "Soil crusting after irrigation",
+          "Standing water",
+          "Lodging in soft saturated soil",
+          "Delayed maturity",
+          "Increased panicle disease or weathering"
+        ],
+
+        droughtManagementOptions: [
+          "Plant into stored soil moisture",
+          "Use an early-maturing locally adapted cultivar",
+          "Prepare a firm seedbed that preserves seed-zone moisture",
+          "Control weeds before and shortly after emergence",
+          "Maintain residue or mulch between rotational crops where appropriate",
+          "Use wider rows only when the local dryland system supports them",
+          "Apply supplemental irrigation during establishment when available",
+          "Prioritize irrigation near panicle initiation, flowering, and early grain fill",
+          "Avoid excessive nitrogen where water supply is limited",
+          "Harvest promptly if terminal drought causes rapid maturity",
+          "Reduce competition from adjacent crops",
+          "Use crop rotation and reduced tillage to improve stored soil moisture"
+        ],
+
+        excessWaterManagementOptions: [
+          "Plant only in well-drained soil",
+          "Avoid low depressions and compacted wheel tracks",
+          "Use raised beds where native soil drains poorly",
+          "Correct drainage before planting",
+          "Do not irrigate on a fixed schedule without checking soil moisture",
+          "Reduce irrigation as plants approach maturity",
+          "Improve airflow through appropriate stand density",
+          "Avoid overhead irrigation late in the day during humid weather",
+          "Harvest promptly when mature grain is threatened by repeated rainfall",
+          "Dry harvested panicles under cover with adequate airflow"
+        ],
+
+        waterQualitySensitivity:
+          "No precise universal irrigation-water salinity threshold is stored. Long-term use of saline or sodic water may reduce emergence, damage soil structure, and increase stress, particularly in poorly drained soil.",
+
+        directFacts: {
+          droughtTolerant:
+            true,
+
+          highWaterUseEfficiency:
+            true,
+
+          c4Photosynthesis:
+            true,
+
+          drylandProductionCommon:
+            true,
+
+          rainfedProductionPossible:
+            true,
+
+          irrigationAlwaysRequired:
+            false,
+
+          irrigationCanIncreaseYield:
+            true,
+
+          establishmentMoistureCritical:
+            true,
+
+          floweringMoistureImportant:
+            true,
+
+          grainFillMoistureImportant:
+            true,
+
+          lateSeasonDryWeatherPreferred:
+            true,
+
+          continuousSaturationSuitable:
+            false,
+
+          standingWaterSuitable:
+            false,
+
+          frequentShallowWateringPreferred:
+            false,
+
+          deepRootedCrop:
+            false,
+
+          droughtToleranceGuaranteesYield:
+            false,
+
+          exactSeasonalWaterRequirementKnown:
+            false,
+
+          exactIrrigationStopIntervalKnown:
+            false,
+
+          exactSalinityThresholdKnown:
+            false,
+
+          notes: [
+            "Proso Millet is one of the more drought-adapted cereal grains available for short-season production.",
+            "Drought tolerance means the crop can complete production with less water than many longer-season grains; it does not mean that grain yield is unaffected by water shortage.",
+            "The crop's short life cycle contributes to drought avoidance by reducing the length of time it is exposed to seasonal water stress.",
+            "Its C4 photosynthetic pathway contributes to efficient growth under warm, bright conditions.",
+            "Seed-zone moisture is essential because the seed is planted shallowly and seedlings initially have limited access to deeper water.",
+            "Dry soil during germination can produce uneven emergence and permanent stand gaps.",
+            "Excess water during establishment may cause crusting, oxygen limitation, seed decay, or seedling disease.",
+            "Established plants can use stored soil moisture efficiently.",
+            "Weeds consume water that would otherwise support crop establishment and grain production.",
+            "Water stress before panicle development can reduce tillering and panicle size.",
+            "Water stress during flowering can reduce seed set.",
+            "Water stress during grain filling can reduce kernel weight and total recoverable grain.",
+            "Supplemental irrigation should be prioritized at biologically important stages rather than applied uniformly without regard to crop development.",
+            "Excess irrigation may promote vegetative growth, lodging, delayed maturity, disease, and inefficient water use.",
+            "The crop does not tolerate prolonged saturation or standing water.",
+            "Rain near maturity may delay drying and increase weathering, shattering, lodging, and mold risk.",
+            "Irrigation should generally decline as the crop completes grain filling and enters dry-down.",
+            "No universal number of irrigation events is appropriate across climates, soils, planting densities, and rainfall patterns.",
+            "No universal seasonal water-use figure is stored because field conditions and measurement methods vary substantially.",
+            "The planner should reward low-water and dryland situations but should not recommend Proso Millet where germination moisture is unavailable.",
+            "The planner should strongly penalize sites with persistent saturation, flooding, or poor drainage."
+          ]
+        }
+      },
+
+      space: {
+        growthHabit:
+          "upright-tillering-grass",
+
+        plantingSystem:
+          "dense-annual-grain-stand",
+
+        individualPlantSpacingRecommended:
+          false,
+
+        individualPlantManagementPractical:
+          false,
+
+        broadcastSuitable:
+          true,
+
+        drilledRowsSuitable:
+          true,
+
+        handSownRowsSuitable:
+          true,
+
+        blockPlantingSuitable:
+          true,
+
+        mixedStandSuitable:
+          true,
+
+        monocultureSuitable:
+          true,
+
+        containerSuitable:
+          false,
+
+        raisedBedSuitable:
+          true,
+
+        intensiveBedSuitable:
+          true,
+
+        fieldScaleSuitable:
+          true,
+
+        minimumPracticalAreaSquareFeet:
+          null,
+
+        preferredMinimumAreaSquareFeet:
+          null,
+
+        maximumUsefulAreaSquareFeet:
+          null,
+
+        typicalPlantHeightFeetMinimum:
+          1,
+
+        typicalPlantHeightFeetMaximum:
+          4,
+
+        typicalCanopyWidthInches:
+          null,
+
+        rootCompetitionLevel:
+          "moderate",
+
+        abovegroundCompetitionLevel:
+          "moderate-to-high-in-dense-stands",
+
+        lodgingSpaceConcern:
+          true,
+
+        shadingConcern:
+          true,
+
+        pathwayAccessNeeded:
+          true,
+
+        harvestAccessNeeded:
+          true,
+
+        birdNettingAccessNeeded:
+          true,
+
+        mechanicalAccessNeeded:
+          false,
+
+        expansionPotential:
+          "high",
+
+        spaceEfficiencyCategory:
+          "moderate-for-whole-panicle-use-and-uncertain-for-clean-grain-production",
+
+        smallSpaceValue:
+          "A small bed can produce useful whole panicles for enrichment, seed saving, demonstrations, or limited seasonal supplementation. It is less likely to produce enough cleaned grain to replace a meaningful portion of purchased complete feed.",
+
+        largeSpaceValue:
+          "Larger blocks improve the practicality of harvesting loose grain, distributing fixed processing labor, using row cultivation or small machinery, and producing a measurable stored grain supply.",
+
+        spaceUsePaths: {
+          demonstrationPatch: {
+            suitable:
+              true,
+
+            minimumAreaSquareFeet:
+              null,
+
+            primaryProducts: [
+              "Small number of whole panicles",
+              "Educational value",
+              "Seed-saving experience",
+              "Crop-identification experience"
+            ],
+
+            limitations: [
+              "Very low total grain quantity",
+              "High bird-loss risk relative to production",
+              "Not useful for meaningful feed replacement"
+            ]
+          },
+
+          enrichmentPatch: {
+            suitable:
+              true,
+
+            minimumAreaSquareFeet:
+              null,
+
+            primaryProducts: [
+              "Whole fresh-mature panicles",
+              "Whole dried panicles",
+              "Scatter-feeding grain",
+              "Seasonal behavioral enrichment"
+            ],
+
+            limitations: [
+              "Bird protection may still be required",
+              "Feed value remains supplemental",
+              "No guaranteed panicle count or grain weight"
+            ]
+          },
+
+          homeGrainBed: {
+            suitable:
+              true,
+
+            minimumAreaSquareFeet:
+              null,
+
+            primaryProducts: [
+              "Whole panicles",
+              "Hand-threshed grain",
+              "Seed for replanting",
+              "Straw and chaff"
+            ],
+
+            limitations: [
+              "Threshing and cleaning labor",
+              "Uneven maturity",
+              "Shattering",
+              "Storage preparation",
+              "Unknown net grain yield"
+            ]
+          },
+
+          feedProductionBlock: {
+            suitable:
+              true,
+
+            minimumAreaSquareFeet:
+              null,
+
+            primaryProducts: [
+              "Measurable loose grain",
+              "Stored whole grain",
+              "Cracked or ground ration ingredient",
+              "Larger quantities of whole panicles"
+            ],
+
+            limitations: [
+              "Requires substantial land",
+              "Requires efficient harvest and processing",
+              "May require bird netting or other protection",
+              "Cannot replace complete feed without formulation",
+              "Economic return remains site specific"
+            ]
+          },
+
+          coverCropBlock: {
+            suitable:
+              true,
+
+            minimumAreaSquareFeet:
+              null,
+
+            primaryProducts: [
+              "Summer soil cover",
+              "Fibrous roots",
+              "Weed suppression",
+              "Biomass",
+              "Possible grain or panicle harvest"
+            ],
+
+            limitations: [
+              "Allowing grain maturity may create volunteers",
+              "Cover-crop termination timing may conflict with grain harvest",
+              "Feed harvest reduces residue returned to soil"
+            ]
+          }
+        },
+
+        spacePlanningConsiderations: [
+          "Determine whether the objective is whole-panicle enrichment, loose grain, seed saving, cover cropping, or a combination.",
+          "Whole-panicle production requires less area and processing infrastructure than meaningful loose-grain production.",
+          "Provide access along at least one side of small beds for inspection and harvest.",
+          "Larger blocks may need internal paths or row spacing that permits cutting, bundling, bird-net installation, and weed control.",
+          "Do not place Proso Millet where it will shade low-growing sun-loving vegetables.",
+          "Avoid planting directly against fences where mature panicles become difficult to reach or birds can perch and feed.",
+          "Account for netting height and support structures before the crop reaches maturity.",
+          "Allow space for harvested bundles or panicles to dry under cover.",
+          "Reserve a separate clean area for threshing, winnowing, and grain cleaning.",
+          "Reserve rodent-resistant storage volume before producing loose grain.",
+          "Account for volunteer control in the following crop.",
+          "Do not estimate feed replacement from planted square footage alone."
+        ],
+
+        directFacts: {
+          denseStandCrop:
+            true,
+
+          individualPlantSpacingMeaningful:
+            false,
+
+          tilleringAffectsFinalDensity:
+            true,
+
+          usefulInSmallBeds:
+            true,
+
+          smallBedsCanProvideEnrichment:
+            true,
+
+          smallBedsLikelyToReplaceMuchPurchasedFeed:
+            false,
+
+          largerAreaImprovesGrainProductionPracticality:
+            true,
+
+          containerProductionRecommended:
+            false,
+
+          raisedBedProductionPossible:
+            true,
+
+          rowAccessHelpful:
+            true,
+
+          birdNetSupportSpaceHelpful:
+            true,
+
+          dryingSpaceRequired:
+            true,
+
+          threshingSpaceRequiredForLooseGrain:
+            true,
+
+          storageSpaceRequiredForLooseGrain:
+            true,
+
+          exactMinimumAreaKnown:
+            false,
+
+          exactYieldPerSquareFootKnown:
+            false,
+
+          exactFlockAreaRequirementKnown:
+            false,
+
+          notes: [
+            "Proso Millet should be planned as a stand rather than as a collection of individually spaced plants.",
+            "The practical value of a planting depends on the intended harvest pathway.",
+            "A small planting may produce worthwhile whole panicles even when it does not justify threshing.",
+            "Whole-panicle feeding greatly improves the usefulness of small spaces by eliminating most grain-processing labor.",
+            "Producing a substantial quantity of clean loose grain generally requires more land than many backyard growers expect.",
+            "Planted area does not equal usable feed area because paths, border effects, weak emergence, lodging, bird loss, shattering, and harvest loss reduce recoverable production.",
+            "A narrow bed accessible from both sides may be easier to weed, protect, inspect, and harvest than a wide inaccessible block.",
+            "Dense stands may shade nearby crops and should be positioned accordingly.",
+            "Mature panicles may lean into pathways or adjacent beds.",
+            "Bird netting requires support clearance above and around the crop.",
+            "Netting placed directly on panicles may allow birds to feed through the mesh.",
+            "Harvested panicles require protected drying space with good airflow.",
+            "Loose-grain production additionally requires threshing, cleaning, and storage areas.",
+            "Larger production areas can improve labor efficiency but may increase the cost and complexity of bird protection.",
+            "No universal square-foot requirement per chicken is stored.",
+            "No universal yield-per-square-foot value is stored.",
+            "The planner should ask how much land the user is willing to dedicate and whether whole-panicle use is acceptable.",
+            "The planner should distinguish a small enrichment patch from a feed-production block."
+          ]
+        }
+      },
+
+      flock: {
+        suitableFlockStages: [
+          "established-growers",
+          "adult-maintenance-birds",
+          "laying-hens",
+          "breeding-flocks",
+          "mature-roosters"
+        ],
+
+        challengingFlockStages: [
+          "newly-hatched-chicks",
+          "young-chicks-without-appropriate-grit",
+          "medically-fragile-birds",
+          "birds-requiring-strict-complete-feed-intake"
+        ],
+
+        suitableFlockSizes: [
+          "small",
+          "medium",
+          "large"
+        ],
+
+        bestFlockSize:
+          "small-to-medium-for-backyard-whole-panicle-use",
+
+        minimumBirdAgeWeeks:
+          null,
+
+        wholeGrainMinimumBirdAgeWeeks:
+          null,
+
+        chickUseRecommended:
+          false,
+
+        growerUseRecommended:
+          true,
+
+        layerUseRecommended:
+          true,
+
+        roosterUseRecommended:
+          true,
+
+        broilerUseRecommended:
+          true,
+
+        breederUseRecommended:
+          true,
+
+        mixedFlockSuitable:
+          true,
+
+        bantamSuitable:
+          true,
+
+        largeFowlSuitable:
+          true,
+
+        waterfowlSuitable:
+          null,
+
+        turkeySuitable:
+          null,
+
+        confinedFlockValue:
+          "high-for-measured-enrichment",
+
+        freeRangeFlockValue:
+          "moderate-to-high-for-scatter-feeding-and-postharvest-gleaning",
+
+        flockCompetitionConcern:
+          "Moderate. Dominant birds may monopolize hanging panicles or concentrated grain piles, while timid birds may receive little. Multiple feeding points and wide scattering improve access.",
+
+        flockHealthConstraints: [
+          "Must remain supplemental unless incorporated into a balanced formulated ration",
+          "Must not substantially displace complete feed",
+          "Low calcium for laying hens",
+          "Lysine limitation",
+          "Methionine limitation",
+          "Phytate reduces phosphorus availability",
+          "Whole grain requires access to suitable grit",
+          "Very young chicks may not process whole grain safely or efficiently",
+          "Moldy or improperly stored grain is unsafe",
+          "Excess enrichment feeding may contribute to nutritional dilution or excess body condition",
+          "Sprouted grain introduces sanitation and spoilage risks",
+          "Home-ground feed requires formulation rather than visual ingredient mixing"
+        ],
+
+        feedingAccessMethods: [
+          "Hang whole dried panicles at head height",
+          "Secure panicles to a clean enrichment frame",
+          "Place panicles in a dry feeder or forage basket",
+          "Scatter measured whole grain across clean litter",
+          "Scatter measured whole grain across a dry run",
+          "Offer cleaned grain in a dedicated treat feeder",
+          "Mix an accurately weighed quantity into a professionally formulated home ration",
+          "Allow limited supervised postharvest gleaning",
+          "Offer properly prepared sprouts in a clean feeder"
+        ],
+
+        feedingAccessWarnings: [
+          "Do not place grain directly on wet, muddy, feces-contaminated, chemically treated, or moldy ground.",
+          "Do not leave damp panicles in the coop or run.",
+          "Do not leave loose grain where rodents or wild birds can contaminate it.",
+          "Do not use seed treated with fungicide, insecticide, colorant, or another planting treatment.",
+          "Do not assume birdseed-grade grain is automatically free of contamination or suitable as a major feed ingredient.",
+          "Do not feed unlimited quantities merely because the grain is homegrown.",
+          "Do not use whole grain for young chicks without age-appropriate feeding guidance and grit.",
+          "Do not allow one enrichment station to become a point of aggression or exclusion.",
+          "Do not feed spoiled sprouts or sprouts with sour odor, slime, excessive heat, or visible mold.",
+          "Do not formulate complete poultry feed without reliable nutrient data and formulation methods."
+        ],
+
+        enrichmentValueScore:
+          5,
+
+        scatterFeedingValueScore:
+          5,
+
+        hangingPanicleValueScore:
+          5,
+
+        livingForageValueScore:
+          1,
+
+        postharvestGleaningValueScore:
+          4,
+
+        storedWinterFeedValueScore:
+          5,
+
+        rationIngredientValueScore:
+          4,
+
+        proteinCropValueScore:
+          2,
+
+        energyCropValueScore:
+          5,
+
+        calciumCropValueScore:
+          1,
+
+        omega3CropValueScore:
+          null,
+
+        flockUsePaths: {
+          wholePanicleEnrichment: {
+            recommended:
+              true,
+
+            suitabilityScore:
+              5,
+
+            preparation:
+              "Harvest mature panicles, dry them thoroughly under clean protected conditions, inspect for mold or contamination, and secure them where birds can peck without the panicles falling into wet litter.",
+
+            flockBenefits: [
+              "Natural pecking behavior",
+              "Extended feeding time",
+              "Physical activity",
+              "Reduced processing labor",
+              "Measured supplemental grain",
+              "Useful winter enrichment"
+            ],
+
+            primaryRisks: [
+              "Nutritional dilution if offered excessively",
+              "Dominant-bird monopolization",
+              "Mold if stored or offered damp",
+              "Rodent attraction",
+              "Wild-bird contamination"
+            ]
+          },
+
+          scatterFeeding: {
+            recommended:
+              true,
+
+            suitabilityScore:
+              5,
+
+            preparation:
+              "Use clean, dry, mature grain and scatter a measured amount broadly across clean dry litter or ground so birds must search rather than consume from a concentrated pile.",
+
+            flockBenefits: [
+              "Foraging behavior",
+              "Exercise",
+              "Broader flock access",
+              "Litter-turning activity",
+              "Simple delivery"
+            ],
+
+            primaryRisks: [
+              "Grain loss in deep litter",
+              "Rodent attraction",
+              "Ground contamination",
+              "Overfeeding",
+              "Unequal intake"
+            ]
+          },
+
+          treatFeeding: {
+            recommended:
+              true,
+
+            suitabilityScore:
+              4,
+
+            preparation:
+              "Offer clean whole or cracked grain in a measured quantity after birds have access to their nutritionally complete ration.",
+
+            flockBenefits: [
+              "Simple supplemental energy",
+              "Training reward",
+              "Cold-weather activity",
+              "Flock handling support"
+            ],
+
+            primaryRisks: [
+              "Complete-feed displacement",
+              "Weight gain",
+              "Amino-acid dilution",
+              "Calcium dilution",
+              "Selective feeding"
+            ]
+          },
+
+          formulatedRationIngredient: {
+            recommended:
+              true,
+
+            suitabilityScore:
+              4,
+
+            preparation:
+              "Use reliable nutrient values, weigh ingredients accurately, grind or crack only as required by the formulation, and balance energy, digestible amino acids, minerals, vitamins, salt, calcium, and available phosphorus.",
+
+            flockBenefits: [
+              "Homegrown energy ingredient",
+              "Potential ingredient diversity",
+              "Use of stored grain",
+              "Measured feed-production pathway"
+            ],
+
+            primaryRisks: [
+              "Incorrect formulation",
+              "Lysine deficiency",
+              "Methionine deficiency",
+              "Calcium deficiency",
+              "Phosphorus-availability error",
+              "Particle separation",
+              "Shortened storage life after grinding"
+            ]
+          },
+
+          sproutedGrain: {
+            recommended:
+              true,
+
+            suitabilityScore:
+              3,
+
+            preparation:
+              "Use only clean untreated grain intended for feed or food use. Rinse, drain, aerate, and inspect frequently. Feed promptly before spoilage and clean equipment thoroughly between batches.",
+
+            flockBenefits: [
+              "Seasonal feeding variety",
+              "Behavioral enrichment",
+              "Potentially easier consumption than hard dry grain",
+              "Indoor winter production pathway"
+            ],
+
+            primaryRisks: [
+              "Mold",
+              "Bacterial growth",
+              "Fermentation",
+              "False assumptions about increased dry-matter yield",
+              "Daily labor",
+              "Inconsistent nutrient concentration"
+            ]
+          },
+
+          livingForage: {
+            recommended:
+              false,
+
+            suitabilityScore:
+              1,
+
+            preparation:
+              "Not a preferred direct-grazing crop for chickens. Protect the stand from flock access until the intended grain or biomass stage is reached.",
+
+            flockBenefits: [
+              "Possible limited pecking at young foliage",
+              "Shade or visual structure in a separated planting"
+            ],
+
+            primaryRisks: [
+              "Seedling destruction",
+              "Soil disturbance",
+              "Poor grain formation",
+              "Low leafy-forage value",
+              "Nitrate concern in stressed high-nitrogen vegetative material"
+            ]
+          },
+
+          postharvestGleaning: {
+            recommended:
+              true,
+
+            suitabilityScore:
+              4,
+
+            preparation:
+              "After the primary harvest, allow supervised flock access where no pesticides, treated seed, toxic weeds, sharp debris, standing water, or contaminated residues are present.",
+
+            flockBenefits: [
+              "Recovery of shattered grain",
+              "Foraging enrichment",
+              "Insect consumption",
+              "Residue disturbance"
+            ],
+
+            primaryRisks: [
+              "Excess consumption of residual grain",
+              "Predator exposure",
+              "Soil damage",
+              "Consumption of unsafe weeds or contaminated material",
+              "Reduced residue retained for soil protection"
+            ]
+          }
+        },
+
+        directFacts: {
+          supplementalFeedOnly:
+            true,
+
+          completeFeed:
+            false,
+
+          suitableForAdultChickens:
+            true,
+
+          suitableForEstablishedGrowers:
+            true,
+
+          suitableForNewlyHatchedChicks:
+            false,
+
+          wholeGrainRequiresGrit:
+            true,
+
+          wholePaniclesProvideEnrichment:
+            true,
+
+          scatterFeedingProvidesEnrichment:
+            true,
+
+          livingForagePrimaryUse:
+            false,
+
+          postharvestGleaningPossible:
+            true,
+
+          winterStorageValueHigh:
+            true,
+
+          primaryNutritionalRoleEnergy:
+            true,
+
+          primaryNutritionalRoleProtein:
+            false,
+
+          highCalciumFeed:
+            false,
+
+          lysineLimiting:
+            true,
+
+          methionineLimiting:
+            true,
+
+          dominantBirdCompetitionPossible:
+            true,
+
+          multipleFeedingStationsHelpful:
+            true,
+
+          exactTreatLimitKnown:
+            false,
+
+          exactWholeGrainStartingAgeKnown:
+            false,
+
+          universalInclusionRateSupported:
+            false,
+
+          notes: [
+            "Proso Millet is most useful to backyard flocks as a measured supplemental grain, enrichment crop, or professionally balanced ration ingredient.",
+            "Whole dried panicles are one of the crop's strongest flock-use pathways.",
+            "Panicles extend feeding time because birds must remove individual seeds.",
+            "Hanging several panicles apart from one another can reduce competition.",
+            "Scatter feeding encourages natural searching and scratching behavior.",
+            "Loose grain should be scattered only on clean dry surfaces.",
+            "Proso Millet should not be used to replace a complete layer, grower, breeder, or broiler ration without proper formulation.",
+            "The grain contributes energy but does not provide an adequate overall amino-acid or mineral balance by itself.",
+            "Its crude-protein percentage should not be interpreted as complete protein quality.",
+            "Laying hens still require an appropriate calcium source and balanced complete feed.",
+            "Whole grain is most appropriate for established birds that have access to suitable grit.",
+            "No universal age for introducing whole Proso Millet is stored.",
+            "No universal treat percentage is stored.",
+            "No universal ration inclusion percentage is stored.",
+            "Published broiler formulations should not be converted directly into backyard treat recommendations.",
+            "Bantams may consume the small grain readily, but their smaller body size also makes portion control important.",
+            "Large fowl can consume whole grain and remove grain efficiently from panicles.",
+            "Confined birds may receive especially strong behavioral value from hanging or scattered panicles.",
+            "Free-range birds may recover shattered seed after harvest.",
+            "Allowing birds into the crop before grain maturity can destroy seedlings, reduce stand density, and prevent useful harvest.",
+            "Sprouting provides a separate feeding pathway but introduces moisture-related sanitation risks.",
+            "Sprout weight gain is largely water uptake and should not be treated as creation of new feed dry matter.",
+            "Moldy, musty, heated, sour, slimy, chemically treated, or rodent-contaminated Millet is unsuitable for poultry.",
+            "The planner should prioritize whole-panicle enrichment for small backyard plantings and reserve loose-grain ration use for growers with sufficient land, processing capacity, storage, and formulation knowledge."
+          ]
+        }
+      },
+
+            labor: {
+        beginnerFriendlinessScore:
+          3,
+
+        plantingEaseScore:
+          4,
+
+        establishmentEaseScore:
+          3,
+
+        routineMaintenanceEaseScore:
+          4,
+
+        weedControlEaseScore:
+          2,
+
+        wildlifeProtectionEaseScore:
+          2,
+
+        harvestEaseScore:
+          3,
+
+        wholeHeadProcessingEaseScore:
+          4,
+
+        looseSeedProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          4,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          4,
+
+        heavyLiftingRiskScore:
+          1,
+
+        weeklyLaborLevel:
+          "low-to-moderate",
+
+        peakWorkloadLevel:
+          "high-for-loose-grain-production",
+
+        harvestFrequencyCategory:
+          "seasonal",
+
+        requiredPlantingTasks: [
+          "prepare-fine-firm-seedbed",
+          "remove-established-weeds",
+          "direct-sow-small-seed",
+          "cover-seed-shallowly",
+          "firm-seedbed",
+          "monitor-emergence"
+        ],
+
+        requiredMaintenanceTasks: [
+          "control-early-weeds",
+          "monitor-soil-moisture",
+          "inspect-for-lodging",
+          "monitor-panicle-development",
+          "monitor-seed-maturity",
+          "protect-maturing-grain-from-wild-birds"
+        ],
+
+        optionalMaintenanceTasks: [
+          "irrigate-during-establishment",
+          "irrigate-during-flowering",
+          "irrigate-during-grain-fill",
+          "thin-overly-dense-areas",
+          "cultivate-between-rows",
+          "install-bird-netting",
+          "install-panicle-protection",
+          "support-lodged-plants",
+          "remove-diseased-plants",
+          "monitor-insects",
+          "manage-field-borders"
+        ],
+
+        requiredHarvestTasks: [
+          "inspect-grain-maturity",
+          "cut-mature-panicles",
+          "collect-panicles-before-shattering",
+          "transport-panicles-carefully",
+          "remove-wet-or-damaged-material"
+        ],
+
+        usePathProcessingTasks: {
+          freshMaturePanicle: [
+            "cut-mature-panicles",
+            "inspect",
+            "offer-promptly"
+          ],
+
+          wholeDriedPanicle: [
+            "cut-mature-panicles",
+            "bundle-or-spread",
+            "dry-under-cover",
+            "inspect",
+            "store-dry"
+          ],
+
+          wholeLooseGrain: [
+            "cut-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "store"
+          ],
+
+          crackedGrain: [
+            "cut-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "crack-grain",
+            "store-short-term"
+          ],
+
+          groundGrain: [
+            "cut-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "verify-dryness",
+            "grind",
+            "incorporate-into-formulated-ration",
+            "store-short-term"
+          ],
+
+          sproutedGrain: [
+            "thresh",
+            "clean-sort",
+            "inspect-seed",
+            "soak",
+            "rinse",
+            "drain",
+            "aerate",
+            "inspect-daily",
+            "feed-promptly",
+            "sanitize-equipment"
+          ],
+
+          seedSaving: [
+            "select-true-to-type-plants",
+            "protect-selected-panicles",
+            "harvest-mature-panicles",
+            "dry",
+            "thresh",
+            "clean-sort",
+            "label",
+            "store-seed-dry"
+          ],
+
+          postharvestGleaning: [
+            "complete-primary-harvest",
+            "inspect-field-for-hazards",
+            "remove-contaminated-material",
+            "allow-supervised-flock-access",
+            "monitor-grain-intake",
+            "remove-flock-before-soil-damage"
+          ],
+
+          strawOrResidueUse: [
+            "cut-or-collect-residue",
+            "dry-if-needed",
+            "inspect",
+            "chop-or-bundle",
+            "apply-as-bedding-mulch-or-compost-carbon"
+          ]
+        },
+
+        requiredStorageTasks: [
+          "verify-grain-is-adequately-dry",
+          "use-clean-storage-containers",
+          "protect-from-rodents",
+          "protect-from-wild-birds",
+          "inspect-for-condensation",
+          "inspect-for-heating",
+          "inspect-for-insects",
+          "inspect-for-webbing",
+          "inspect-for-mold",
+          "inspect-for-musty-or-rancid-odor",
+          "remove-damaged-grain"
+        ],
+
+        specializedEquipmentRequired: [],
+
+        specializedEquipmentHelpful: [
+          "garden-rake",
+          "seedbed-roller",
+          "hand-seeder",
+          "small-seed-drill",
+          "wheel-hoe",
+          "stirrup-hoe",
+          "bird-netting",
+          "netting-supports",
+          "panicle-bags",
+          "sickle",
+          "scythe",
+          "hand-pruners",
+          "harvest-tarp",
+          "drying-rack",
+          "drying-screen",
+          "box-fan",
+          "small-thresher",
+          "threshing-flail",
+          "winnowing-fan",
+          "grain-screens",
+          "food-safe-buckets",
+          "metal-grain-cans",
+          "grain-moisture-meter",
+          "grain-mill",
+          "grain-cracker",
+          "sprouting-trays"
+        ],
+
+        suitableForLowTimeUsersScore:
+          3,
+
+        suitableForSoloGrowersScore:
+          4,
+
+        directFacts: {
+          seedSize:
+            "small",
+
+          directSeedingSuitable:
+            true,
+
+          indoorStartingPossible:
+            false,
+
+          transplantingPractical:
+            false,
+
+          specializedPlantingEquipmentRequiredForBackyardScale:
+            false,
+
+          specializedHarvestEquipmentRequiredForBackyardScale:
+            false,
+
+          specializedProcessingEquipmentRequiredForWholePanicleUse:
+            false,
+
+          specializedProcessingEquipmentRequiredForLooseGrain:
+            false,
+
+          specializedProcessingEquipmentHelpfulForLooseGrain:
+            true,
+
+          wholePanicleUseLowestLabor:
+            true,
+
+          looseGrainUseHigherLabor:
+            true,
+
+          crackedGrainUseHigherLabor:
+            true,
+
+          groundGrainUseHighestProcessingLabor:
+            true,
+
+          earlyWeedControlMajorLaborConcern:
+            true,
+
+          wildlifeProtectionMajorLaborConcern:
+            true,
+
+          harvestTimingMajorLaborConcern:
+            true,
+
+          dryingMajorLaborConcern:
+            true,
+
+          handThreshingMajorLaborConcern:
+            true,
+
+          winnowingMajorLaborConcern:
+            true,
+
+          storageInspectionRequired:
+            true,
+
+          dailyHarvestRequired:
+            false,
+
+          seasonalWorkConcentration:
+            true,
+
+          regrowthMaintenanceRequired:
+            false,
+
+          perennialPruningRequired:
+            false,
+
+          heavyLiftingNormallyRequired:
+            false,
+
+          majorLaborBottlenecks: [
+            "Preparing a fine, firm, weed-free seedbed",
+            "Planting small seed at a shallow uniform depth",
+            "Controlling weeds during slow early establishment",
+            "Protecting ripening panicles from wild birds",
+            "Monitoring uneven maturity",
+            "Harvesting before severe shattering",
+            "Drying panicles safely under cover",
+            "Threshing small grain by hand",
+            "Separating fine chaff from grain",
+            "Cleaning and sorting loose grain",
+            "Protecting stored grain from rodents and insects",
+            "Grinding or cracking grain only as needed"
+          ],
+
+          notes: [
+            "Proso Millet is straightforward to sow as a dense stand, but its small seed requires more careful seedbed preparation and depth control than large-seeded crops.",
+            "Direct seeding is the normal and most practical establishment method.",
+            "Indoor starting and transplanting would add labor without providing a meaningful production advantage.",
+            "A fine, firm seedbed improves uniform emergence and reduces the need to replant weak areas.",
+            "Early weed control is one of the crop's most important labor requirements.",
+            "Seedlings may grow too slowly to compete effectively with established summer weeds.",
+            "Once the canopy closes, routine weed-control labor may decline.",
+            "Rainfed plantings may require little irrigation labor after establishment when rainfall is adequate.",
+            "Dryland production does not eliminate the need to monitor moisture during germination, flowering, and grain filling.",
+            "Routine maintenance is generally modest after establishment unless weeds, drought, lodging, insects, disease, or wildlife become severe.",
+            "Wild-bird protection may become the most time-consuming recurring task as grain develops.",
+            "Small isolated plantings may experience proportionally greater bird pressure than larger fields.",
+            "Installing netting before panicles become attractive is usually easier than attempting to cover fully mature plants.",
+            "Netting must be checked to prevent entanglement, gaps, sagging, and bird access through the mesh.",
+            "Proso Millet harvest is seasonal rather than continuous.",
+            "Uneven panicle maturity may require more than one inspection or harvest pass.",
+            "Delayed harvest may save one trip but increase shattering, bird loss, weathering, and lodging.",
+            "Whole-panicle feeding is the simplest harvest and processing pathway.",
+            "Whole panicles may be cut, dried, inspected, stored, and offered without threshing.",
+            "Using whole panicles substantially reduces processing labor but requires more storage volume than loose grain.",
+            "Loose-grain production requires threshing, winnowing, screening, cleaning, drying verification, and storage.",
+            "Small grain and fine chaff can make hand cleaning slower than with larger cereal kernels.",
+            "Threshing over a clean tarp helps recover grain that would otherwise be lost.",
+            "Mechanical threshing may improve efficiency for larger plantings but is not required for a small backyard crop.",
+            "Cracking and grinding add equipment use, cleanup, dust, and shorter storage life.",
+            "Whole grain should generally remain intact until processing is actually needed.",
+            "Sprouting requires daily rinsing, draining, inspection, airflow management, and equipment sanitation.",
+            "Sprouted-grain production is not a low-maintenance pathway despite the crop being easy to grow outdoors.",
+            "Postharvest gleaning reduces grain-recovery labor but gives the grower less control over individual bird intake.",
+            "Straw and residue use requires less precision than grain processing but still requires inspection for mold, contamination, and unsuitable weeds.",
+            "Storage labor is low when grain is properly dried and protected, but containers must still be checked periodically.",
+            "Rodent-resistant storage reduces repeated losses and cleanup labor.",
+            "The crop is suitable for a solo grower at backyard scale.",
+            "Large plots become more physically demanding during cutting, bundling, transport, threshing, and residue handling.",
+            "No heavy powered equipment is inherently required for backyard whole-panicle production.",
+            "The planner should assign different labor scores to whole-panicle enrichment, loose whole grain, cracked grain, ground ration ingredients, sprouts, seed saving, and cover-crop use.",
+            "The planner should not describe Proso Millet as uniformly low labor without first identifying the intended harvest and processing pathway."
+          ]
+        }
+      },
+
+            cost: {
+        seedCostLevel:
+          "low",
+
+        establishmentCostLevel:
+          "low",
+
+        annualInputCostLevel:
+          "low",
+
+        irrigationCostLevel:
+          "low",
+
+        fertilityCostLevel:
+          "low",
+
+        pestManagementCostLevel:
+          "low-to-moderate",
+
+        wildlifeProtectionCostLevel:
+          "moderate-to-high",
+
+        harvestEquipmentCostLevel:
+          "low-for-whole-panicles-and-moderate-for-loose-grain",
+
+        processingEquipmentCostLevel:
+          "low-for-whole-panicles-and-moderate-to-high-for-cleaned-or-ground-grain",
+
+        storageEquipmentCostLevel:
+          "low-to-moderate",
+
+        preservationEnergyCostLevel:
+          "low",
+
+        totalStartupCostScore:
+          2,
+
+        annualOperatingCostScore:
+          2,
+
+        seedCostScore:
+          1,
+
+        irrigationCostScore:
+          1,
+
+        fertilityCostScore:
+          1,
+
+        pestManagementCostScore:
+          2,
+
+        wildlifeProtectionCostScore:
+          4,
+
+        harvestEquipmentCostScore:
+          2,
+
+        processingEquipmentCostScore:
+          3,
+
+        storageEquipmentCostScore:
+          2,
+
+        preservationEnergyCostScore:
+          1,
+
+        reusableInfrastructureBenefitScore:
+          4,
+
+        householdFoodValueScore:
+          4,
+
+        poultryFeedValueScore:
+          5,
+
+        ornamentalValueScore:
+          3,
+
+        pollinatorValueScore:
+          1,
+
+        seedSavingValueScore:
+          5,
+
+        marketValuePotentialScore:
+          3,
+
+        feedCostReductionPotentialScore:
+          4,
+
+        costEfficiencyScore:
+          4,
+
+        paybackSpeedScore:
+          4,
+
+        humanFoodPriorityScore:
+          4,
+
+        poultryFeedPriorityScore:
+          5,
+
+        estimatedFeedSavings:
+          null,
+
+        estimatedAnnualValue:
+          null,
+
+        requiredPurchases: [
+          "Clean untreated Proso Millet seed",
+          "Basic planting and harvest supplies",
+          "Clean protected drying surface",
+          "Rodent-resistant storage container where grain will be retained"
+        ],
+
+        optionalPurchases: [
+          "Soil test",
+          "Compost or fertilizer",
+          "Irrigation hose or drip system",
+          "Bird netting",
+          "Netting supports",
+          "Panicle-protection bags",
+          "Hand seeder",
+          "Small seed drill",
+          "Sickle",
+          "Scythe",
+          "Harvest tarp",
+          "Drying rack",
+          "Drying screen",
+          "Electric fan",
+          "Mechanical thresher",
+          "Winnowing fan",
+          "Grain screens",
+          "Grain moisture meter",
+          "Grain cracker",
+          "Grain mill",
+          "Sprouting trays",
+          "Food-safe buckets",
+          "Metal grain cans"
+        ],
+
+        lowestCostUsePath:
+          "whole-mature-panicle-enrichment",
+
+        highestCostUsePath:
+          "cleaned-ground-grain-for-home-formulated-rations",
+
+        likelyCostDrivers: [
+          "Wild-bird protection",
+          "Bird-net supports and fasteners",
+          "Protected drying infrastructure",
+          "Threshing equipment",
+          "Winnowing and cleaning equipment",
+          "Grain screens",
+          "Rodent-resistant storage",
+          "Grinding or cracking equipment",
+          "Labor for hand processing",
+          "Losses caused by birds, shattering, lodging, weather, insects, rodents, or mold"
+        ],
+
+        costReductionOptions: [
+          "Begin with a small whole-panicle enrichment plot.",
+          "Purchase bulk untreated agricultural seed rather than small decorative packets.",
+          "Use an adapted open-pollinated cultivar where seed saving is appropriate.",
+          "Save clean mature seed for future planting.",
+          "Use existing garden tools.",
+          "Plant in a clean prepared bed to reduce later weed-control costs.",
+          "Use rainfall and stored soil moisture where dependable.",
+          "Harvest and store whole panicles rather than threshing every harvest.",
+          "Protect only the panicles intended for seed saving or long-term storage.",
+          "Reuse bird-net supports and drying racks.",
+          "Thresh over a tarp to reduce grain loss.",
+          "Store most grain whole.",
+          "Crack or grind only the quantity needed shortly before feeding.",
+          "Use several smaller food-safe storage containers rather than one expensive large bin.",
+          "Combine grain production with crop rotation, soil cover, or compost-biomass goals."
+        ],
+
+        costIncreasingConditions: [
+          "Severe wild-bird pressure",
+          "Need for full-crop netting",
+          "High wind requiring stronger net supports",
+          "Heavy weed pressure",
+          "Poor soil requiring correction",
+          "Need for repeated irrigation",
+          "Wet or humid harvest weather",
+          "Need for forced-air drying",
+          "Uneven maturity requiring repeated harvests",
+          "Severe shattering",
+          "Lodging",
+          "Manual threshing of large quantities",
+          "Need for fine grain cleaning",
+          "Rodent or stored-insect pressure",
+          "Home grinding or cracking",
+          "Daily sprout production",
+          "Crop failure or substantial harvest loss"
+        ],
+
+        valueStreams: [
+          "Whole-panicle poultry enrichment",
+          "Supplemental whole grain",
+          "Stored winter grain",
+          "Home-ration energy ingredient",
+          "Household-food grain",
+          "Saved planting seed",
+          "Postharvest flock gleaning",
+          "Summer soil cover",
+          "Erosion reduction",
+          "Weed competition",
+          "Crop-rotation diversity",
+          "Straw",
+          "Mulch",
+          "Compost carbon",
+          "Educational and demonstration value"
+        ],
+
+        directFacts: {
+          seedGenerallyLowCost:
+            true,
+
+          transplantPurchaseRequired:
+            false,
+
+          annualReplantingRequired:
+            true,
+
+          recurringSeedPurchaseRequired:
+            false,
+
+          seedSavingPossible:
+            true,
+
+          irrigationAlwaysRequired:
+            false,
+
+          fertilizerAlwaysRequired:
+            false,
+
+          specializedPlantingEquipmentRequired:
+            false,
+
+          specializedBackyardHarvestEquipmentRequired:
+            false,
+
+          specializedProcessingEquipmentRequiredForWholePanicles:
+            false,
+
+          specializedProcessingEquipmentRequiredForLooseGrain:
+            false,
+
+          specializedProcessingEquipmentHelpfulForLooseGrain:
+            true,
+
+          birdProtectionMayBeLargestOptionalCost:
+            true,
+
+          wholePanicleUseLowestCost:
+            true,
+
+          looseGrainUseHigherCost:
+            true,
+
+          groundGrainUseHighestCost:
+            true,
+
+          refrigerationRequiredForDryGrain:
+            false,
+
+          electricityRequiredForStorage:
+            false,
+
+          nonElectricStoragePossible:
+            true,
+
+          exactFeedSavingsKnown:
+            false,
+
+          exactAnnualValueKnown:
+            false,
+
+          exactReturnOnInvestmentKnown:
+            false,
+
+          notes: [
+            "Proso Millet seed is generally inexpensive relative to the area that a small quantity can plant.",
+            "Certified, organic, food-grade, specialty-color, named, or small-packet seed may cost more than bulk agricultural seed.",
+            "Only untreated seed should be used where grain, sprouts, or crop residue may enter the poultry or household-food system.",
+            "Direct seeding avoids transplant-production and transplant-purchase costs.",
+            "Routine fertilizer and irrigation costs may remain low where soil fertility, rainfall, and stored moisture are adequate.",
+            "Drought tolerance does not guarantee that irrigation costs will always be zero.",
+            "Wild-bird protection may become the crop's largest optional cash expense.",
+            "Whole-panicle use is the least expensive poultry-feed pathway because it avoids threshing, winnowing, screening, cracking, and grinding.",
+            "Whole panicles require more drying and storage volume than loose grain.",
+            "Loose grain requires additional labor and equipment but provides better measurement and more compact storage.",
+            "Mechanical processing is not required for a small backyard harvest but may improve efficiency as planted area increases.",
+            "Whole grain generally stores longer than cracked or ground grain.",
+            "Processing only small batches close to feeding reduces storage losses.",
+            "Sprouting requires relatively little equipment but creates recurring water, sanitation, container, and labor costs.",
+            "The crop's financial value should not be measured only by pounds of poultry feed produced.",
+            "Additional value may come from soil cover, crop rotation, seed saving, household food, straw, mulch, compost biomass, and enrichment.",
+            "A crop failure caused by drought, flooding, weeds, lodging, disease, wildlife, wet harvest, shattering, poor drying, rodents, insects, or mold can eliminate anticipated savings.",
+            "Cost classifications are qualitative planner categories rather than current retail prices.",
+            "No feed-cost reduction estimate should be calculated until actual usable yield, losses, labor, feeding amount, and complete-feed displacement are measured."
+          ]
+        }
+      },
+
+      goals: {
+        feedReductionScore:
+          4,
+
+        energyProductionScore:
+          5,
+
+        proteinOrientedScore:
+          2,
+
+        freshGreensScore:
+          1,
+
+        livingForageScore:
+          1,
+
+        winterStorageScore:
+          5,
+
+        enrichmentScore:
+          5,
+
+        resilienceScore:
+          5,
+
+        soilImprovementScore:
+          3,
+
+        nitrogenFixationScore:
+          0,
+
+        groundCoverScore:
+          4,
+
+        erosionControlScore:
+          4,
+
+        shadeScore:
+          1,
+
+        privacyScreeningScore:
+          2,
+
+        pollinatorSupportScore:
+          1,
+
+        compostBiomassScore:
+          3,
+
+        householdFoodScore:
+          4,
+
+        seedSavingScore:
+          5,
+
+        selfRelianceScore:
+          5,
+
+        multipurposeValueScore:
+          5,
+
+        visualAppealScore:
+          4,
+
+        productionReliabilityScore:
+          4,
+
+        fastestValueScore:
+          5,
+
+        nonElectricStorageScore:
+          5,
+
+        smallFlockValueScore:
+          5,
+
+        largeFlockValueScore:
+          4,
+
+        primaryGoalMatches: [
+          "reduce-feed-use",
+          "high-energy",
+          "winter-storage",
+          "whole-panicle-enrichment",
+          "scatter-feeding",
+          "short-season-production",
+          "warm-season-production",
+          "drought-resilience",
+          "low-water-production",
+          "seed-saving",
+          "self-reliance",
+          "non-electric-storage",
+          "crop-rotation",
+          "summer-ground-cover",
+          "erosion-control",
+          "weed-suppression",
+          "household-grain",
+          "postharvest-gleaning",
+          "cover-cropping",
+          "compost-biomass",
+          "small-flock-enrichment"
+        ],
+
+        weakGoalMatches: [
+          "primary-protein-production",
+          "nitrogen-fixation",
+          "fresh-leafy-greens",
+          "living-forage",
+          "permanent-ground-cover",
+          "perennial-production",
+          "deep-shade-production",
+          "pollinator-support",
+          "high-calcium-production",
+          "container-grain-production",
+          "complete-feed-replacement",
+          "wet-soil-production",
+          "winter-living-cover"
+        ],
+
+        goalConflicts: [
+          {
+            goalA:
+              "maximum-grain-harvest",
+
+            goalB:
+              "unrestricted-living-forage",
+
+            explanation:
+              "Allowing chickens into the stand before harvest can uproot seedlings, consume foliage, break stems, remove developing grain, and prevent a dependable mature-panicle crop."
+          },
+
+          {
+            goalA:
+              "maximum-clean-grain-yield",
+
+            goalB:
+              "lowest-possible-labor",
+
+            explanation:
+              "Producing clean loose grain requires substantially more harvesting, drying, threshing, winnowing, screening, sorting, and storage labor than feeding whole panicles."
+          },
+
+          {
+            goalA:
+              "maximum-field-maturity",
+
+            goalB:
+              "minimum-wild-bird-loss",
+
+            explanation:
+              "Leaving panicles in the field until all seed is fully dry gives wild birds additional time to remove grain."
+          },
+
+          {
+            goalA:
+              "maximum-field-dryness",
+
+            goalB:
+              "minimum-shattering-loss",
+
+            explanation:
+              "Allowing panicles to become extremely dry before harvest may reduce drying requirements but can increase seed shattering."
+          },
+
+          {
+            goalA:
+              "maximum-grain-harvest",
+
+            goalB:
+              "maximum-soil-biomass-return",
+
+            explanation:
+              "Removing panicles, straw, and residue exports biomass and nutrients that could otherwise remain as soil cover or organic matter."
+          },
+
+          {
+            goalA:
+              "maximum-poultry-supplementation",
+
+            goalB:
+              "complete-feed-nutritional-balance",
+
+            explanation:
+              "Heavy Millet feeding can dilute the amino acids, calcium, vitamins, minerals, and other nutrients supplied by complete poultry feed."
+          },
+
+          {
+            goalA:
+              "longest-storage-life",
+
+            goalB:
+              "immediate-cracking-or-grinding",
+
+            explanation:
+              "Whole intact grain generally stores longer than cracked or ground grain because less internal surface is exposed to oxygen, moisture, insects, and contamination."
+          },
+
+          {
+            goalA:
+              "lowest-water-use",
+
+            goalB:
+              "maximum-grain-yield",
+
+            explanation:
+              "Proso Millet tolerates drought, but severe water stress during establishment, flowering, or grain filling can reduce stand density, seed set, and kernel weight."
+          },
+
+          {
+            goalA:
+              "highest-biomass-production",
+
+            goalB:
+              "lowest-lodging-risk",
+
+            explanation:
+              "Excess fertility or dense lush growth may increase biomass while also increasing lodging and uneven maturity."
+          },
+
+          {
+            goalA:
+              "maximum-seed-saving",
+
+            goalB:
+              "complete-postharvest-gleaning",
+
+            explanation:
+              "Allowing chickens to consume all remaining grain may eliminate seed needed for the following planting."
+          }
+        ],
+
+        priorityUseCases: [
+          {
+            id:
+              "proso-millet-whole-panicle-enrichment",
+
+            label:
+              "Whole-Panicle Enrichment",
+
+            suitabilityScore:
+              5,
+
+            explanation:
+              "A relatively small planting can provide mature panicles that require little processing and offer both supplemental grain and extended pecking activity."
+          },
+
+          {
+            id:
+              "proso-millet-stored-energy-grain",
+
+            label:
+              "Stored Energy Grain",
+
+            suitabilityScore:
+              5,
+
+            explanation:
+              "Clean mature whole grain stores well without refrigeration when thoroughly dried and protected from moisture, insects, and rodents."
+          },
+
+          {
+            id:
+              "proso-millet-short-season-grain",
+
+            label:
+              "Short-Season Grain Production",
+
+            suitabilityScore:
+              5,
+
+            explanation:
+              "The crop can mature within a comparatively short warm season and may succeed where longer-season grains are unreliable."
+          },
+
+          {
+            id:
+              "proso-millet-drought-resilient-feed-crop",
+
+            label:
+              "Drought-Resilient Feed Crop",
+
+            suitabilityScore:
+              5,
+
+            explanation:
+              "Proso Millet combines warm-season growth, high water-use efficiency, short maturity, and strong drought adaptation."
+          },
+
+          {
+            id:
+              "proso-millet-seed-saving",
+
+            label:
+              "Seed Saving and Self-Reliance",
+
+            suitabilityScore:
+              5,
+
+            explanation:
+              "Clean mature seed from an appropriate open-pollinated cultivar can potentially be retained for future planting."
+          },
+
+          {
+            id:
+              "proso-millet-home-ration-energy-ingredient",
+
+            label:
+              "Home-Ration Energy Ingredient",
+
+            suitabilityScore:
+              4,
+
+            explanation:
+              "Clean grain can serve as an energy ingredient when accurate formulation balances amino acids, calcium, phosphorus, vitamins, minerals, and other nutrients."
+          },
+
+          {
+            id:
+              "proso-millet-summer-cover-crop",
+
+            label:
+              "Summer Cover Crop",
+
+            suitabilityScore:
+              4,
+
+            explanation:
+              "Dense warm-season growth can provide soil cover, erosion reduction, weed competition, fibrous roots, and rotational diversity."
+          },
+
+          {
+            id:
+              "proso-millet-postharvest-gleaning",
+
+            label:
+              "Postharvest Gleaning",
+
+            suitabilityScore:
+              4,
+
+            explanation:
+              "Chickens may recover shattered or missed grain after the main crop is harvested, provided the site is safe and access is supervised."
+          },
+
+          {
+            id:
+              "proso-millet-living-forage",
+
+            label:
+              "Living Forage",
+
+            suitabilityScore:
+              1,
+
+            explanation:
+              "Proso Millet has limited leafy-forage value for chickens, and direct flock access is incompatible with dependable grain production."
+          }
+        ],
+
+        directFacts: {
+          primaryGoal:
+            "short-season-storable-energy-grain-and-whole-panicle-enrichment",
+
+          strongestFeedGoal:
+            "energy-production",
+
+          strongestBackyardGoal:
+            "whole-panicle-enrichment",
+
+          strongestStorageGoal:
+            "non-electric-whole-grain-storage",
+
+          strongestResilienceGoal:
+            "drought-tolerant-short-season-production",
+
+          strongestSmallSpaceGoal:
+            "limited-whole-panicle-enrichment",
+
+          strongestLargeSpaceGoal:
+            "stored-loose-grain-production",
+
+          primaryProteinCrop:
+            false,
+
+          nitrogenFixingCrop:
+            false,
+
+          livingForageCrop:
+            false,
+
+          highCalciumCrop:
+            false,
+
+          permanentCrop:
+            false,
+
+          completeFeedReplacement:
+            false,
+
+          multipurposeCrop:
+            true,
+
+          seedSavingPotentialHigh:
+            true,
+
+          nonElectricStorageValueHigh:
+            true,
+
+          wholePanicleEnrichmentValueHigh:
+            true,
+
+          shortSeasonValueHigh:
+            true,
+
+          droughtResilienceValueHigh:
+            true,
+
+          notes: [
+            "Proso Millet's strongest planner role is as a short-season, drought-adapted energy grain.",
+            "Its strongest small-flock use is whole-panicle enrichment.",
+            "Its strongest storage use is clean whole grain retained under cool, dry, rodent-resistant conditions.",
+            "It should rank highly for users seeking warm-season grain production with limited water.",
+            "It should not rank highly for users seeking protein, calcium, leafy forage, perennial production, or nitrogen fixation.",
+            "A small planting can provide meaningful enrichment even when it cannot replace much purchased feed.",
+            "Larger plantings improve the practicality of producing cleaned stored grain.",
+            "Feed-reduction scoring must remain separate from complete-feed replacement.",
+            "The crop may contribute to self-reliance through seed saving, crop rotation, storage, and multiple harvest pathways.",
+            "Whole-panicle feeding provides high value while minimizing processing equipment and labor.",
+            "Maximum grain production requires flock exclusion until after harvest.",
+            "Maximum soil-building value may require leaving more residue in place.",
+            "Maximum storage life favors whole grain rather than cracked or ground grain.",
+            "The planner should match Proso Millet most strongly with users prioritizing energy, drought resilience, fast maturity, enrichment, seed saving, and winter storage."
+          ]
+        }
+      },
+
+            risks: {
+        overallRiskLevel:
+          "moderate",
+
+        wildlife: {
+          wildBirds:
+            5,
+
+          deer:
+            3,
+
+          raccoons:
+            2,
+
+          squirrels:
+            3,
+
+          rabbits:
+            3,
+
+          rodents:
+            5,
+
+          groundhogs:
+            3
+        },
+
+        establishmentFailureRiskScore:
+          3,
+
+        weedCompetitionRiskScore:
+          4,
+
+        droughtEstablishmentRiskScore:
+          4,
+
+        matureDroughtRiskScore:
+          2,
+
+        waterloggingRiskScore:
+          5,
+
+        heatDamageRiskScore:
+          2,
+
+        frostDamageRiskScore:
+          5,
+
+        stormDamageRiskScore:
+          3,
+
+        lodgingRiskScore:
+          3,
+
+        shatteringRiskScore:
+          4,
+
+        birdLossRiskScore:
+          5,
+
+        wildlifePressureScore:
+          5,
+
+        insectsRiskScore:
+          3,
+
+        diseaseRiskScore:
+          3,
+
+        fieldMoldRiskScore:
+          3,
+
+        dryingMoldRiskScore:
+          4,
+
+        storageMoldRiskScore:
+          4,
+
+        storedInsectRiskScore:
+          4,
+
+        spoilageSpeedRiskScore:
+          2,
+
+        invasivenessConcernRiskScore:
+          2,
+
+        selfSeedingRiskScore:
+          4,
+
+        fruitDropRiskScore:
+          1,
+
+        cropFailureRiskScore:
+          3,
+
+        shadingOtherCropsRiskScore:
+          3,
+
+        overfeedingRiskScore:
+          4,
+
+        treatedSeedRiskScore:
+          5,
+
+        nutritionalDilutionRiskScore:
+          5,
+
+        incompleteRationRiskScore:
+          5,
+
+        youngBirdFeedingRiskScore:
+          4,
+
+        wholeGrainGritRiskScore:
+          4,
+
+        sproutingContaminationRiskScore:
+          4,
+
+        processingDustRiskScore:
+          3,
+
+        storageRodentRiskScore:
+          5,
+
+        primaryRisks: [
+          {
+            id:
+              "cold-soil-establishment-failure",
+
+            severity:
+              "moderate-to-high",
+
+            affectedStages: [
+              "planting",
+              "germination",
+              "emergence",
+              "early-seedling-growth"
+            ],
+
+            mitigationOptions: [
+              "Wait until soil is warm",
+              "Plant after frost danger",
+              "Use a locally adapted early cultivar",
+              "Prepare a fine firm seedbed",
+              "Plant shallowly",
+              "Maintain seed-zone moisture",
+              "Avoid saturated soil"
+            ],
+
+            note:
+              "Cold soil delays germination and emergence, extending the period during which seed and seedlings are vulnerable to decay, crusting, weeds, insects, birds, and frost."
+          },
+
+          {
+            id:
+              "early-weed-competition",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "preplant",
+              "germination",
+              "emergence",
+              "early-vegetative-growth"
+            ],
+
+            mitigationOptions: [
+              "Control perennial weeds before planting",
+              "Use a stale seedbed",
+              "Prepare a clean seedbed",
+              "Plant at an appropriate stand density",
+              "Cultivate or hand weed early",
+              "Avoid delayed weed control"
+            ],
+
+            note:
+              "Proso Millet seedlings may establish too slowly to compete with vigorous summer annual weeds. Early competition can permanently reduce tillering, panicle number, and grain yield."
+          },
+
+          {
+            id:
+              "wild-bird-grain-loss",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "milk-stage",
+              "soft-dough-stage",
+              "hard-dough-stage",
+              "grain-maturity",
+              "preharvest"
+            ],
+
+            mitigationOptions: [
+              "Install bird netting before grain becomes attractive",
+              "Use net supports that keep mesh away from panicles",
+              "Protect selected panicles with bags",
+              "Monitor daily near maturity",
+              "Harvest promptly",
+              "Complete drying under cover"
+            ],
+
+            note:
+              "Small isolated Proso Millet plantings may experience severe wild-bird loss because the small exposed grain is highly attractive and easy to remove from mature panicles."
+          },
+
+          {
+            id:
+              "seed-shattering",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "late-grain-fill",
+              "physiological-maturity",
+              "field-dry-down",
+              "harvest",
+              "transport"
+            ],
+
+            mitigationOptions: [
+              "Select a cultivar with good seed retention",
+              "Monitor panicles closely",
+              "Harvest before excessive dryness",
+              "Cut during calm dry weather",
+              "Use tarps or collection containers",
+              "Handle bundles carefully",
+              "Complete drying after harvest"
+            ],
+
+            note:
+              "Delayed harvest, very dry panicles, wind, storms, handling, and uneven maturity can cause substantial seed loss before threshing."
+          },
+
+          {
+            id:
+              "uneven-panicle-maturity",
+
+            severity:
+              "moderate-to-high",
+
+            affectedStages: [
+              "flowering",
+              "grain-fill",
+              "maturity",
+              "harvest"
+            ],
+
+            mitigationOptions: [
+              "Select a uniform adapted cultivar",
+              "Maintain even establishment",
+              "Avoid excessive nitrogen",
+              "Inspect multiple parts of the stand",
+              "Harvest in more than one pass where practical",
+              "Use protected postharvest drying"
+            ],
+
+            note:
+              "Seeds within a panicle and panicles within a stand may mature at different times, creating a tradeoff between immature kernels and shattering or bird loss."
+          },
+
+          {
+            id:
+              "frost-before-maturity",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "emergence",
+              "vegetative-growth",
+              "flowering",
+              "grain-fill",
+              "late-season-maturity"
+            ],
+
+            mitigationOptions: [
+              "Plant after final frost",
+              "Choose an early cultivar",
+              "Avoid planting too late",
+              "Track the expected frost-free period",
+              "Harvest promptly if early frost threatens"
+            ],
+
+            note:
+              "Proso Millet is frost sensitive. Frost can kill seedlings and may terminate flowering or grain filling before kernels reach usable maturity."
+          },
+
+          {
+            id:
+              "waterlogging-and-saturated-soil",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "germination",
+              "emergence",
+              "vegetative-growth",
+              "flowering",
+              "grain-fill"
+            ],
+
+            mitigationOptions: [
+              "Use well-drained soil",
+              "Avoid low areas",
+              "Correct compaction",
+              "Use raised beds where necessary",
+              "Avoid overirrigation",
+              "Improve runoff and drainage"
+            ],
+
+            note:
+              "Proso Millet is drought adapted but poorly tolerant of saturated soil. Standing water can reduce emergence, root function, growth, standability, and grain production."
+          },
+
+          {
+            id:
+              "drought-during-establishment",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "seed-imbibition",
+              "germination",
+              "emergence",
+              "early-root-development"
+            ],
+
+            mitigationOptions: [
+              "Plant into moisture",
+              "Firm the seedbed",
+              "Avoid excessively shallow seed placement in rapidly drying soil",
+              "Apply supplemental irrigation where available",
+              "Control moisture-consuming weeds"
+            ],
+
+            note:
+              "Mature Proso Millet is drought tolerant, but shallow-planted seed and young seedlings remain vulnerable to rapid drying before roots develop."
+          },
+
+          {
+            id:
+              "reproductive-stage-drought",
+
+            severity:
+              "moderate",
+
+            affectedStages: [
+              "panicle-initiation",
+              "boot-stage",
+              "flowering",
+              "early-grain-fill"
+            ],
+
+            mitigationOptions: [
+              "Preserve stored soil moisture",
+              "Control weeds",
+              "Use a drought-adapted cultivar",
+              "Apply limited irrigation during critical stages",
+              "Avoid excessive nitrogen"
+            ],
+
+            note:
+              "Drought tolerance does not prevent yield loss. Water stress during flowering or grain filling can reduce seed set and kernel weight."
+          },
+
+          {
+            id:
+              "lodging",
+
+            severity:
+              "moderate",
+
+            affectedStages: [
+              "stem-elongation",
+              "heading",
+              "grain-fill",
+              "maturity"
+            ],
+
+            mitigationOptions: [
+              "Avoid excessive nitrogen",
+              "Avoid excessively dense stands",
+              "Select a lodging-resistant cultivar",
+              "Avoid persistent saturation",
+              "Harvest promptly after maturity",
+              "Use a sheltered site where practical"
+            ],
+
+            note:
+              "Excess nitrogen, lush growth, weak stems, saturated soil, wind, rain, and delayed harvest can cause plants to lean or fall, increasing grain loss and harvest difficulty."
+          },
+
+          {
+            id:
+              "humid-weather-panicle-damage",
+
+            severity:
+              "moderate-to-high",
+
+            affectedStages: [
+              "flowering",
+              "grain-fill",
+              "maturity",
+              "harvest"
+            ],
+
+            mitigationOptions: [
+              "Select a locally adapted cultivar",
+              "Maintain airflow",
+              "Avoid excessive nitrogen",
+              "Time planting for drier harvest weather",
+              "Harvest promptly",
+              "Dry under cover"
+            ],
+
+            note:
+              "Persistent humidity and rainfall may increase disease pressure, grain weathering, delayed dry-down, lodging, sprouting, and mold risk."
+          },
+
+          {
+            id:
+              "wet-harvest-and-drying-mold",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "harvest",
+              "bundle-drying",
+              "panicle-drying",
+              "threshing",
+              "temporary-storage"
+            ],
+
+            mitigationOptions: [
+              "Harvest only sound material",
+              "Keep wet and dry panicles separate",
+              "Spread panicles thinly",
+              "Use drying screens",
+              "Provide strong airflow",
+              "Turn material during drying",
+              "Never seal damp grain",
+              "Discard moldy material"
+            ],
+
+            note:
+              "Panicles or loose grain stored before they are adequately dry may heat, mold, ferment, cake, or develop unsafe contamination."
+          },
+
+          {
+            id:
+              "storage-moisture-and-condensation",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "storage",
+              "seasonal-temperature-change",
+              "container-opening"
+            ],
+
+            mitigationOptions: [
+              "Store only adequately dried grain",
+              "Cool grain before sealing",
+              "Use clean dry containers",
+              "Avoid rapid temperature changes",
+              "Inspect for condensation",
+              "Remove questionable grain immediately"
+            ],
+
+            note:
+              "Moisture migration and condensation can create isolated wet areas even when most stored grain appears dry."
+          },
+
+          {
+            id:
+              "stored-product-insects",
+
+            severity:
+              "moderate-to-high",
+
+            affectedStages: [
+              "storage",
+              "long-term-holding"
+            ],
+
+            mitigationOptions: [
+              "Clean grain before storage",
+              "Sanitize containers",
+              "Store in insect-resistant containers",
+              "Inspect for insects and webbing",
+              "Rotate stored grain",
+              "Use locally approved nonchemical controls where appropriate"
+            ],
+
+            note:
+              "Stored-product insects may consume grain, produce dust and webbing, increase heat and moisture, and reduce feed or seed quality."
+          },
+
+          {
+            id:
+              "rodent-contamination",
+
+            severity:
+              "very-high",
+
+            affectedStages: [
+              "field-maturity",
+              "drying",
+              "storage",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use rodent-resistant drying and storage areas",
+              "Use sealed metal or durable food-safe containers",
+              "Clean spilled grain",
+              "Inspect for droppings, urine, chewing, and nesting",
+              "Discard contaminated material"
+            ],
+
+            note:
+              "Rodents may consume grain and contaminate panicles, stored seed, feed containers, drying surfaces, and processing areas."
+          },
+
+          {
+            id:
+              "chemically-treated-seed",
+
+            severity:
+              "critical",
+
+            affectedStages: [
+              "seed-purchase",
+              "planting",
+              "harvest",
+              "feeding",
+              "sprouting"
+            ],
+
+            mitigationOptions: [
+              "Purchase untreated seed",
+              "Verify seed labels",
+              "Keep treated seed physically separate",
+              "Never feed leftover treated planting seed",
+              "Never sprout treated seed"
+            ],
+
+            note:
+              "Seed treated with fungicides, insecticides, colorants, or other planting chemicals must never be fed to chickens, used for sprouts, or used as household food."
+          },
+
+          {
+            id:
+              "mold-or-mycotoxin-contamination",
+
+            severity:
+              "critical",
+
+            affectedStages: [
+              "field-maturity",
+              "harvest",
+              "drying",
+              "storage",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Harvest sound grain",
+              "Dry promptly",
+              "Reject visibly moldy or musty grain",
+              "Keep questionable lots separate",
+              "Use laboratory testing where contamination is suspected",
+              "Discard unsafe grain rather than diluting it"
+            ],
+
+            note:
+              "Appearance and odor alone cannot prove that grain is free of mycotoxins. Processing, grinding, cooking, soaking, or sprouting does not reliably neutralize contamination."
+          },
+
+          {
+            id:
+              "nutritional-dilution",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "feeding",
+              "whole-panicle-enrichment",
+              "scatter-feeding",
+              "treat-feeding"
+            ],
+
+            mitigationOptions: [
+              "Keep complete feed continuously available",
+              "Use measured quantities",
+              "Offer supplements after complete-feed access",
+              "Monitor body condition and production",
+              "Distribute feed across multiple locations"
+            ],
+
+            note:
+              "Excess Proso Millet can displace complete feed and dilute lysine, methionine, calcium, vitamins, minerals, and other required nutrients."
+          },
+
+          {
+            id:
+              "unbalanced-home-ration",
+
+            severity:
+              "critical",
+
+            affectedStages: [
+              "ingredient-selection",
+              "grinding",
+              "mixing",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use reliable nutrient values",
+              "Use poultry-stage-specific formulation",
+              "Weigh ingredients accurately",
+              "Balance digestible amino acids",
+              "Balance calcium and available phosphorus",
+              "Include required vitamins and trace minerals",
+              "Prevent ingredient separation"
+            ],
+
+            note:
+              "Proso Millet cannot become a complete poultry feed merely by mixing it with several other homegrown ingredients."
+          },
+
+          {
+            id:
+              "whole-grain-use-without-grit",
+
+            severity:
+              "moderate-to-high",
+
+            affectedStages: [
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Provide appropriate insoluble grit",
+              "Use established adult birds",
+              "Observe consumption",
+              "Use cracked grain when appropriate",
+              "Avoid whole grain for very young chicks"
+            ],
+
+            note:
+              "Birds consuming whole dry grain require adequate gizzard function and access to suitable grit."
+          },
+
+          {
+            id:
+              "sprout-microbial-contamination",
+
+            severity:
+              "high",
+
+            affectedStages: [
+              "soaking",
+              "germination",
+              "rinsing",
+              "draining",
+              "feeding"
+            ],
+
+            mitigationOptions: [
+              "Use clean untreated grain",
+              "Sanitize equipment",
+              "Rinse and drain thoroughly",
+              "Maintain airflow",
+              "Avoid excessive temperature",
+              "Feed promptly",
+              "Discard sour, slimy, heated, or moldy batches"
+            ],
+
+            note:
+              "Warm moist sprouting conditions also favor mold, yeast, and bacterial growth. Sprouting does not make poor-quality grain safe."
+          },
+
+          {
+            id:
+              "volunteer-and-self-seeding",
+
+            severity:
+              "moderate",
+
+            affectedStages: [
+              "maturity",
+              "harvest",
+              "following-crop"
+            ],
+
+            mitigationOptions: [
+              "Harvest before severe shattering",
+              "Collect spilled grain",
+              "Manage postharvest volunteers",
+              "Rotate with crops that permit volunteer control",
+              "Avoid allowing unwanted plants to set new seed"
+            ],
+
+            note:
+              "Shattered Proso Millet seed can remain in the soil and emerge as a volunteer weed in later plantings."
+          }
+        ],
+
+        directFacts: {
+          primaryWildlifeThreat:
+            "wild-birds",
+
+          primaryStorageThreat:
+            "moisture-mold-insects-and-rodents",
+
+          primaryEstablishmentThreat:
+            "cold-soil-weed-competition-and-seed-zone-drought",
+
+          primaryHarvestThreat:
+            "bird-loss-shattering-and-uneven-maturity",
+
+          primaryPoultryThreat:
+            "complete-feed-displacement-and-incomplete-nutrient-balance",
+
+          primaryClimateThreat:
+            "frost-and-waterlogging",
+
+          wildBirdLossPotentialHigh:
+            true,
+
+          rodentRiskHigh:
+            true,
+
+          weedCompetitionRiskHigh:
+            true,
+
+          waterloggingRiskHigh:
+            true,
+
+          frostSensitivityHigh:
+            true,
+
+          heatSensitivityHigh:
+            false,
+
+          matureDroughtToleranceHigh:
+            true,
+
+          establishmentDroughtConcern:
+            true,
+
+          lodgingPossible:
+            true,
+
+          shatteringPossible:
+            true,
+
+          unevenMaturityPossible:
+            true,
+
+          fieldMoldPossible:
+            true,
+
+          dryingMoldPossible:
+            true,
+
+          storageMoldPossible:
+            true,
+
+          storedInsectsPossible:
+            true,
+
+          volunteerWeedRisk:
+            true,
+
+          completeFeedDisplacementPossible:
+            true,
+
+          aminoAcidDilutionPossible:
+            true,
+
+          calciumDilutionPossible:
+            true,
+
+          wholeGrainGritRelevant:
+            true,
+
+          treatedSeedSuitableForFeed:
+            false,
+
+          sproutingMakesContaminatedGrainSafe:
+            false,
+
+          grindingMakesContaminatedGrainSafe:
+            false,
+
+          cookingMakesMycotoxinSuspectGrainSafe:
+            false,
+
+          awnIrritationPossible:
+            false,
+
+          mechanicalHarvestSuitable:
+            true,
+
+          mechanicalProcessingSuitable:
+            true,
+
+          notes: [
+            "Proso Millet's most important production risks are early weed competition, frost, waterlogging, wild-bird loss, uneven maturity, shattering, lodging, and wet harvest weather.",
+            "Its most important poultry-specific risks are complete-feed displacement, lysine and methionine dilution, inadequate calcium, use in very young birds, and whole-grain feeding without suitable grit.",
+            "Its most important postharvest risks are inadequate drying, mold, insects, rodents, condensation, heating, and contamination.",
+            "Wild birds may remove a large share of grain from small exposed plantings.",
+            "The crop's drought tolerance should not obscure its need for moisture during germination and establishment.",
+            "The crop's heat tolerance should not be interpreted as tolerance of frost.",
+            "Seed shattering can create both yield loss and volunteer weeds.",
+            "Moldy or mycotoxin-suspect grain should not be diluted into otherwise sound feed.",
+            "Chemically treated planting seed must never enter poultry feed, sprouts, or household food.",
+            "Sprouting, cracking, grinding, cooking, or soaking does not neutralize chemical seed treatments or reliably destroy mycotoxins.",
+            "A universal backyard Proso Millet feeding percentage is not supported.",
+            "Risk scores are comparative planner values rather than predictions that a specific problem will occur."
+          ]
+        }
+      },
+
+      seasonalRoles: {
+        spring: [
+          "Final site selection",
+          "Soil testing",
+          "Seedbed preparation",
+          "Perennial weed control",
+          "Seed purchase and cultivar selection",
+          "Planting after final frost",
+          "Warm-soil germination",
+          "Seedling emergence",
+          "Early weed control",
+          "Stand evaluation",
+          "Supplemental establishment irrigation",
+          "Early tillering",
+          "Summer cover-crop establishment"
+        ],
+
+        summer: [
+          "Active vegetative growth",
+          "Tillering",
+          "Canopy development",
+          "Soil coverage",
+          "Summer weed suppression",
+          "Panicle initiation",
+          "Boot stage",
+          "Flowering",
+          "Pollination",
+          "Grain filling",
+          "Drought monitoring",
+          "Wild-bird monitoring",
+          "Bird-net installation",
+          "Early whole-panicle harvest",
+          "Protected panicle drying"
+        ],
+
+        autumn: [
+          "Late grain filling from later plantings",
+          "Physiological maturity",
+          "Whole-panicle harvest",
+          "Loose-grain harvest",
+          "Protected drying",
+          "Threshing",
+          "Winnowing",
+          "Screening",
+          "Cleaning",
+          "Seed selection",
+          "Seed storage",
+          "Straw harvest",
+          "Postharvest gleaning",
+          "Volunteer-seed management",
+          "Residue incorporation",
+          "Crop-rotation transition"
+        ],
+
+        winter: [
+          "Stored whole-grain feeding",
+          "Stored cracked-grain feeding",
+          "Stored whole-panicle enrichment",
+          "Measured scatter feeding",
+          "Home-ration ingredient use",
+          "Short-sprout production",
+          "Storage inspection",
+          "Rodent monitoring",
+          "Stored-insect monitoring",
+          "Seed inventory",
+          "Planting-area planning",
+          "Equipment repair",
+          "Cultivar research"
+        ],
+
+        plannerSeasonScores: {
+          spring:
+            4,
+
+          summer:
+            5,
+
+          autumn:
+            4,
+
+          winter:
+            4
+        },
+
+        directFacts: {
+          springMilletAvailable:
+            true,
+
+          winterMilletAvailable:
+            false,
+
+          facultativeMilletAvailable:
+            false,
+
+          springPlantingRole:
+            true,
+
+          summerPlantingRole:
+            true,
+
+          autumnPlantingRole:
+            false,
+
+          winterLivingCoverPossible:
+            false,
+
+          summerHeatProductionStrong:
+            true,
+
+          storedWinterFeedValue:
+            true,
+
+          yearRoundIndoorSproutProductionPossible:
+            true,
+
+          grainHarvestEndsAnnualCycle:
+            true,
+
+          residueBenefitsContinueAfterHarvest:
+            true,
+
+          notes: [
+            "Proso Millet is planted during warm weather rather than during the cool-season grain window.",
+            "Spring activity centers on seedbed preparation and planting after frost danger has passed.",
+            "Summer is the crop's primary growth, flowering, grain-filling, and bird-protection season.",
+            "Early spring planting is inappropriate where soil remains cold.",
+            "Late summer planting is possible only where enough warm frost-free time remains for maturity and harvest.",
+            "Autumn planting is not a normal Proso Millet production system.",
+            "The crop does not provide winter living cover because it is frost sensitive.",
+            "Autumn activity generally centers on harvesting, drying, processing, storage, residue management, and volunteer control.",
+            "Dry grain and dried panicles provide strong winter poultry-feed and enrichment value.",
+            "Indoor sprout production may occur during any season, but it requires clean untreated grain, water, daily labor, drainage, airflow, temperature control, and sanitation.",
+            "The apparent increase in sprout weight is primarily water uptake rather than new feed dry matter.",
+            "Grain harvest ends the living annual crop.",
+            "Roots, straw, and unremoved residue may continue contributing soil cover, mulch, compost carbon, and organic matter after harvest.",
+            "Regional seasonal scores must be adjusted for final frost date, soil warming, summer heat accumulation, autumn frost, humidity, and harvest weather."
+          ]
+        }
+      },
+
+            usePaths: [
+        {
+          id:
+            "whole-dry-proso-millet",
+
+          label:
+            "Whole Dry Proso Millet Grain",
+
+          description:
+            "Mature Proso Millet grain is harvested, dried thoroughly, threshed, winnowed, cleaned, inspected, and stored whole for measured supplementation of established chickens, later processing, sprouting, household-food use, or seed saving.",
+
+          primaryFeedRole:
+            "whole-energy-grain",
+
+          harvestProducts: [
+            "mature-dry-proso-millet",
+            "whole-proso-millet-grain",
+            "stored-cereal-grain",
+            "energy-oriented-feed-grain",
+            "sprouting-grain",
+            "planting-seed",
+            "household-food-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-grain",
+            "measured-supplement",
+            "scatter-feeding",
+            "treat-feeder",
+            "winter-supplement",
+            "stored-feed-ingredient",
+            "later-sprouting",
+            "later-cracking",
+            "later-grinding"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "remove-foreign-material",
+            "inspect-grain",
+            "verify-dryness"
+          ],
+
+          optionalProcessingTasks: [
+            "freeze-for-insect-control",
+            "portion",
+            "separate-planting-seed",
+            "laboratory-test-questionable-grain",
+            "measure-test-weight",
+            "measure-storage-moisture",
+            "record-clean-grain-weight",
+            "save-seed"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "sickle",
+            "scythe",
+            "hand-pruners",
+            "harvest-basket",
+            "drying-screen",
+            "drying-rack",
+            "box-fan",
+            "threshing-container",
+            "threshing-flail",
+            "mechanical-thresher",
+            "grain-screen",
+            "fine-mesh-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "food-scale",
+            "food-safe-bucket",
+            "metal-grain-can",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-or-several-seasonal-passes",
+
+          storageMethods: [
+            "sealed-dry-grain-storage",
+            "rodent-resistant-room-temperature-storage",
+            "cool-dark-dry-storage",
+            "freezing-for-insect-control"
+          ],
+
+          preferredStorageMethod:
+            "whole-clean-dry-proso-millet-in-a-cool-dark-dry-food-safe-and-rodent-resistant-container",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            4,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-cracking",
+            "later-grinding",
+            "later-sprouting",
+            "household-food-processing",
+            "seed-saving"
+          ],
+
+          preservationLimitations: [
+            "Proso Millet must be fully mature, clean, cool, and adequately dry before sealed storage.",
+            "Small grain may retain fine chaff, dust, weed seed, immature kernels, or other foreign material after rough winnowing.",
+            "Whole grain remains vulnerable to moisture, condensation, heating, insects, rodents, and chemical contamination.",
+            "Grain harvested during wet or humid weather may require extended protected drying.",
+            "Storage duration varies with grain moisture, temperature, humidity, sanitation, container quality, insect pressure, and rodent exclusion.",
+            "Freezing may help control some storage insects but does not correct mold, mycotoxins, chemical contamination, or excessive moisture.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "long-when-stored-whole-clean-cool-and-dry",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "rodent-feeding-before-harvest",
+            "lodging",
+            "shattering",
+            "rain-during-maturity",
+            "grain-lost-during-cutting",
+            "grain-lost-during-transport",
+            "grain-left-in-panicles-during-threshing",
+            "grain-lost-during-winnowing",
+            "grain-removed-with-chaff",
+            "immature-kernels",
+            "insufficient-drying",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "condensation",
+            "spillage-during-feeding"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified Proso Millet, Panicum miliaceum, intended for food, feed, or forage use.",
+            "Do not assume that every product labeled Millet contains Proso Millet.",
+            "Never feed chemically treated planting seed.",
+            "Never sprout chemically treated planting seed.",
+            "Do not feed grain contaminated by mold, rodents, chemicals, floodwater, pesticides, fuel, oil, or unknown substances.",
+            "Reject grain that is musty, sour, heated, damp, visibly moldy, unusually discolored, caked, sprouted in storage, slimy, or badly insect damaged.",
+            "Do not assume washing, cooking, cracking, grinding, freezing, or sprouting makes contaminated grain safe.",
+            "A grain lot suspected of mold or mycotoxin contamination may require laboratory testing.",
+            "Whole grain should be offered only in measured quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Whole Proso Millet does not provide adequate lysine, methionine, calcium, vitamins, minerals, or total nutrient balance as a stand-alone feed.",
+            "Provide appropriately sized insoluble grit for birds consuming intact whole grain.",
+            "Avoid unrestricted whole-grain feeding to newly hatched or very young chicks.",
+            "Do not scatter grain on wet, muddy, feces-contaminated, moldy, chemically treated, or flood-contaminated ground.",
+            "Clean spilled grain promptly where rodents are a concern."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "has-only-newly-hatched-chicks",
+            "will-not-provide-insoluble-grit",
+            "cannot-measure-supplemental-grain",
+            "cannot-confidently-identify-proso-millet",
+            "cannot-inspect-grain-quality",
+            "has-no-protected-drying-area",
+            "has-no-rodent-resistant-storage",
+            "cannot-monitor-storage-moisture",
+            "expects-zero-threshing-or-cleaning-labor",
+            "requires-a-guaranteed-storage-duration"
+          ]
+        },
+
+        {
+          id:
+            "whole-dried-proso-millet-panicles",
+
+          label:
+            "Whole Dried Proso Millet Panicles",
+
+          description:
+            "Mature Proso Millet panicles are cut before severe shattering or wild-bird loss, dried thoroughly under protected conditions, inspected, stored whole, and offered as measured pecking enrichment for established chickens.",
+
+          primaryFeedRole:
+            "whole-panicle-energy-enrichment",
+
+          harvestProducts: [
+            "whole-mature-proso-millet-panicles",
+            "whole-dried-proso-millet-panicles",
+            "seed-bearing-panicles",
+            "stored-pecking-enrichment",
+            "winter-grain-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-panicle-enrichment",
+            "hanging-panicle",
+            "forage-basket",
+            "pecking-frame",
+            "measured-seasonal-supplement",
+            "stored-winter-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "inspect-panicle-maturity",
+            "cut-mature-panicles",
+            "remove-damaged-panicles",
+            "dry-under-cover",
+            "inspect-before-storage",
+            "inspect-before-feeding"
+          ],
+
+          optionalProcessingTasks: [
+            "bundle-loosely",
+            "separate-panicles-by-maturity",
+            "weigh-panicles",
+            "record-drying-loss",
+            "trim-excess-stem",
+            "freeze-for-storage-insect-control",
+            "portion-by-flock",
+            "reserve-selected-panicles-for-seed-saving"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "harvest-basket",
+            "harvest-tarp",
+            "drying-rack",
+            "drying-screen",
+            "hanging-drying-line",
+            "box-fan",
+            "food-scale",
+            "large-food-safe-container",
+            "metal-grain-can",
+            "rodent-resistant-storage",
+            "forage-basket",
+            "safe-panicle-holder"
+          ],
+
+          harvestPattern:
+            "several",
+
+          harvestFrequencyCategory:
+            "seasonal-as-panicles-mature",
+
+          storageMethods: [
+            "dried-whole-panicle-storage",
+            "loose-bundle-storage",
+            "rodent-resistant-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "fully-dried-whole-panicles-stored-loosely-enough-for-inspection-in-a-cool-dark-dry-and-rodent-resistant-location",
+
+          storageDurationCategory:
+            "moderate-to-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-panicle-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-threshing",
+            "winter-enrichment",
+            "seed-saving"
+          ],
+
+          preservationLimitations: [
+            "Whole panicles require substantially more storage volume than loose grain.",
+            "Dense bundles may retain moisture and develop hidden mold.",
+            "Panicles must be dried with enough spacing and airflow to prevent heating or fermentation.",
+            "Stems and panicle branches reduce storage efficiency and are not nutritionally equivalent to grain.",
+            "Whole-panicle feeding provides less precise grain-intake measurement than weighed loose grain.",
+            "Grain may shatter during drying, transport, storage, or feeding.",
+            "Wild birds, rodents, and stored-product insects may attack panicles during drying and storage.",
+            "No universal whole-panicle storage duration is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate-to-long",
+
+          shelfLifeAfterProcessingCategory:
+            "moderate-to-long-when-fully-dried-and-protected",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "rodent-feeding-before-harvest",
+            "lodging",
+            "shattering-before-harvest",
+            "grain-lost-during-cutting",
+            "grain-lost-during-transport",
+            "rain-wetting-cut-panicles",
+            "hidden-moisture-in-bundles",
+            "hidden-mold",
+            "stored-product-insects",
+            "rodent-damage",
+            "grain-shattered-in-storage",
+            "grain-scattered-during-feeding",
+            "uneaten-stems-and-panicle-branches"
+          ],
+
+          safetyWarnings: [
+            "Offer only fully mature, clean, sound, untreated Proso Millet panicles.",
+            "Never offer panicles grown from chemically treated seed where treated kernels or chemical residues may remain.",
+            "Inspect panicles for mold, musty odor, unusual discoloration, heating, fermentation, insects, webbing, rodent contamination, chemical contamination, and foreign plant material.",
+            "Do not store or feed damp, sour, musty, heating, slimy, or visibly moldy bundles.",
+            "Do not seal panicles in plastic or airtight containers until they are thoroughly dry.",
+            "Do not assume a dry outer surface means the center of a bundle is dry.",
+            "Avoid hanging panicles with loose string, wire, netting, clips, or loops that could entangle feet, wings, necks, or beaks.",
+            "Secure panicles so they cannot fall into wet litter, mud, manure, standing water, or contaminated bedding.",
+            "Do not hang panicles where they obstruct ventilation, doors, nest boxes, feeders, waterers, or escape routes.",
+            "Whole panicles must remain a measured enrichment rather than unrestricted feed.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Whole-panicle feeding does not correct Proso Millet's lysine, methionine, calcium, vitamin, mineral, or overall nutrient limitations.",
+            "Provide appropriately sized insoluble grit where birds consume intact grain.",
+            "Use multiple panicle stations where dominant birds prevent timid birds from feeding.",
+            "Remove damp, soiled, moldy, heavily stripped, or contaminated remains promptly."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confidently-inspect-panicles",
+            "has-no-clean-protected-drying-area",
+            "has-no-bulky-dry-storage-space",
+            "has-severe-rodent-pressure",
+            "cannot-manage-hanging-enrichment-safely",
+            "requires-precise-individual-feed-intake",
+            "requires-low-waste-feeding",
+            "has-only-newly-hatched-chicks",
+            "will-not-provide-insoluble-grit",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+                {
+          id:
+            "cracked-proso-millet",
+
+          label:
+            "Cracked Proso Millet Grain",
+
+          description:
+            "Clean, mature, thoroughly dried Proso Millet grain is cracked into coarse particles shortly before feeding so it can be measured as a supplemental grain, mixed more evenly with other ingredients, or offered to established birds that handle cracked grain more readily than intact seed.",
+
+          primaryFeedRole:
+            "processed-energy-grain",
+
+          harvestProducts: [
+            "clean-whole-proso-millet-grain",
+            "coarsely-cracked-proso-millet",
+            "measured-supplemental-grain",
+            "home-ration-energy-ingredient"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-supplement",
+            "treat-feeder",
+            "scatter-feeding",
+            "mixed-grain-supplement",
+            "home-ration-ingredient",
+            "short-term-winter-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "remove-foreign-material",
+            "inspect-grain",
+            "verify-dryness",
+            "crack-grain"
+          ],
+
+          optionalProcessingTasks: [
+            "freeze-whole-grain-before-processing-for-insect-control",
+            "sieve-cracked-particles",
+            "remove-excess-fines",
+            "portion",
+            "weigh",
+            "record-processing-loss",
+            "mix-with-other-formulated-ingredients"
+          ],
+
+          requiredEquipment: [
+            "grain-cracker-or-suitable-coarse-mill"
+          ],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "box-fan",
+            "threshing-container",
+            "mechanical-thresher",
+            "winnowing-fan",
+            "grain-screens",
+            "moisture-meter",
+            "food-scale",
+            "coarse-grain-cracker",
+            "adjustable-grain-mill",
+            "particle-size-screen",
+            "food-safe-storage-container",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal-harvest-with-small-batch-processing",
+
+          storageMethods: [
+            "short-term-sealed-dry-storage",
+            "cool-dark-dry-storage",
+            "refrigerated-short-term-storage",
+            "freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-the-main-harvest-whole-and-crack-only-small-quantities-shortly-before-feeding",
+
+          storageDurationCategory:
+            "short-to-moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          oxidationSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          rancidityRiskScore:
+            3,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "short-term-dry-storage",
+            "refrigeration",
+            "freezing",
+            "immediate-feeding",
+            "use-in-formulated-ration"
+          ],
+
+          preservationLimitations: [
+            "Cracking exposes more internal grain surface to oxygen, humidity, insects, dust, and contamination.",
+            "Cracked grain generally stores for less time than intact whole grain.",
+            "Fine particles and flour may separate from larger particles during handling.",
+            "Cracked grain may absorb moisture more quickly than whole grain.",
+            "Storage life depends on grain dryness, particle size, temperature, humidity, sanitation, container quality, and fat oxidation.",
+            "Cracking does not correct amino-acid, calcium, vitamin, mineral, or phosphorus-availability limitations.",
+            "Cracking does not make moldy, chemically treated, rodent-contaminated, or mycotoxin-suspect grain safe.",
+            "No universal backyard shelf-life duration is stored."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-to-moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-grain",
+
+          likelyLossPoints: [
+            "all-preharvest-and-threshing-losses-associated-with-whole-grain",
+            "grain-left-in-cracker",
+            "dust-produced-during-cracking",
+            "excessively-fine-particles",
+            "particle-separation",
+            "spillage",
+            "moisture-absorption",
+            "oxidation",
+            "rancidity",
+            "mold",
+            "rodent-feeding",
+            "insect-damage",
+            "uneaten-fines"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, mature, adequately dried, untreated Proso Millet grain.",
+            "Never crack or feed chemically treated planting seed.",
+            "Do not process moldy, musty, sour, heated, damp, rodent-contaminated, flood-contaminated, or chemically contaminated grain.",
+            "Cracking contaminated grain may spread dust and contamination through the mill and processing area.",
+            "Clean processing equipment before and after use.",
+            "Avoid breathing grain dust and fine particles.",
+            "Use hearing, eye, and respiratory protection where equipment conditions require it.",
+            "Keep hands, loose clothing, hair, jewelry, and tools away from moving mill parts.",
+            "Do not assume cracked grain is nutritionally complete.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Measure supplemental quantities rather than allowing unrestricted intake.",
+            "Cracked Proso Millet remains limited in lysine, methionine, calcium, vitamins, minerals, and overall nutrient balance.",
+            "Cracking may reduce the need for birds to fracture every kernel but does not eliminate the biological value of appropriate grit where birds consume other whole grains or fibrous material.",
+            "Discard cracked grain that develops musty, sour, rancid, heated, damp, or abnormal odors.",
+            "Clean spills promptly to reduce rodents, insects, and moisture damage."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-suitable-grain-cracker",
+            "cannot-control-particle-size",
+            "cannot-clean-processing-equipment",
+            "cannot-protect-against-grain-dust",
+            "requires-long-room-temperature-storage-after-processing",
+            "cannot-measure-supplemental-feed",
+            "requires-complete-feed-replacement",
+            "cannot-inspect-grain-quality",
+            "has-no-rodent-resistant-storage",
+            "expects-cracking-to-correct-nutrient-deficiencies"
+          ],
+
+          directFacts: {
+            wholeGrainMustBeCleanBeforeCracking:
+              true,
+
+            crackingRequired:
+              true,
+
+            crackingImprovesMixing:
+              true,
+
+            crackingMayImproveConsumptionForSomeBirds:
+              true,
+
+            crackingCreatesMoreSurfaceArea:
+              true,
+
+            crackingShortensStorageLife:
+              true,
+
+            crackingCorrectsAminoAcidLimitations:
+              false,
+
+            crackingCorrectsCalciumDeficiency:
+              false,
+
+            crackingDestroysMycotoxins:
+              false,
+
+            crackingMakesTreatedSeedSafe:
+              false,
+
+            batchProcessingPreferred:
+              true,
+
+            wholeGrainStoragePreferredBeforeCracking:
+              true,
+
+            exactShelfLifeKnown:
+              false,
+
+            exactParticleSizeRequirementKnown:
+              false,
+
+            exactProcessingLossKnown:
+              false,
+
+            notes: [
+              "Cracked Proso Millet is best produced from clean whole grain shortly before feeding.",
+              "The primary practical benefit is easier mixing and more uniform measurement within a supplemental grain blend or formulated ration.",
+              "Coarse cracking is generally preferable to creating large amounts of flour for ordinary poultry use.",
+              "Excessively fine particles may be rejected, inhaled, lost in litter, or separate from larger ingredients.",
+              "Particle size should be appropriate for the bird class and the complete ration design.",
+              "Cracking does not increase total feed dry matter.",
+              "Cracking does not make the grain a complete feed.",
+              "The main harvest should remain intact whenever long storage is intended.",
+              "The planner should score cracked grain as more labor intensive and less storage stable than whole grain.",
+              "No universal cracked-grain inclusion rate is stored."
+            ]
+          }
+        },
+
+        {
+          id:
+            "ground-proso-millet-ration-ingredient",
+
+          label:
+            "Ground Proso Millet as a Formulated-Ration Ingredient",
+
+          description:
+            "Clean, mature, thoroughly dried Proso Millet grain is ground to an appropriate particle size and incorporated by weight into a complete poultry ration whose energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, fiber, and other nutrients have been properly balanced for the intended flock stage.",
+
+          primaryFeedRole:
+            "formulated-energy-ingredient",
+
+          harvestProducts: [
+            "clean-whole-proso-millet-grain",
+            "ground-proso-millet-meal",
+            "formulated-poultry-feed-ingredient",
+            "homegrown-cereal-energy-source"
+          ],
+
+          suitableFeedingMethods: [
+            "professionally-formulated-home-ration",
+            "balanced-layer-ration",
+            "balanced-grower-ration",
+            "balanced-breeder-ration",
+            "balanced-broiler-ration",
+            "complete-mixed-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "remove-foreign-material",
+            "inspect-grain",
+            "verify-dryness",
+            "obtain-reliable-nutrient-values",
+            "formulate-ration",
+            "weigh-grain",
+            "grind-to-appropriate-particle-size",
+            "weigh-all-other-ingredients",
+            "mix-uniformly",
+            "prevent-ingredient-separation"
+          ],
+
+          optionalProcessingTasks: [
+            "laboratory-analyze-homegrown-grain",
+            "sieve-ground-material",
+            "remove-excess-dust",
+            "condition-before-pelleting",
+            "pellet-complete-ration",
+            "crumble-pellets",
+            "add-approved-feed-enzymes",
+            "add-approved-mold-inhibitor",
+            "record-batch-number",
+            "retain-feed-sample",
+            "track-flock-performance"
+          ],
+
+          requiredEquipment: [
+            "accurate-feed-scale",
+            "suitable-grain-mill",
+            "uniform-feed-mixing-system"
+          ],
+
+          helpfulEquipment: [
+            "grain-moisture-meter",
+            "laboratory-feed-analysis",
+            "precision-micronutrient-scale",
+            "particle-size-sieves",
+            "dust-control-system",
+            "respiratory-protection",
+            "batch-mixer",
+            "sealed-ingredient-containers",
+            "pellet-mill",
+            "feed-batch-records",
+            "retained-sample-containers"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "seasonal-harvest-with-repeated-small-batch-milling",
+
+          storageMethods: [
+            "store-primary-grain-whole",
+            "short-term-sealed-ground-meal-storage",
+            "short-term-complete-feed-storage",
+            "refrigerated-ground-meal-storage",
+            "freezer-storage"
+          ],
+
+          preferredStorageMethod:
+            "store-clean-grain-whole-and-grind-only-the-quantity-needed-for-a-carefully-formulated-short-term-feed-batch",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          crackingRequired:
+            false,
+
+          formulationRequired:
+            true,
+
+          precisionWeighingRequired:
+            true,
+
+          uniformMixingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          oxidationSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          rancidityRiskScore:
+            4,
+
+          formulationErrorRiskScore:
+            5,
+
+          ingredientSeparationRiskScore:
+            5,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            1,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            2,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-term-ground-meal-storage",
+            "immediate-complete-ration-mixing",
+            "refrigeration",
+            "freezing",
+            "pelleting",
+            "crumbling"
+          ],
+
+          preservationLimitations: [
+            "Ground grain deteriorates faster than intact whole grain.",
+            "Fine meal absorbs moisture and odors readily.",
+            "Grinding increases exposure to oxygen and may accelerate fat oxidation.",
+            "Ground grain creates dust and may compact or bridge in containers.",
+            "Complete feed storage life may be limited by the least stable ingredient in the formulation.",
+            "Vitamin and fat-containing premixes may deteriorate during prolonged storage.",
+            "Particle-size differences can cause ingredients to separate during handling and feeding.",
+            "Grinding alone does not improve amino-acid balance or mineral adequacy.",
+            "No universal storage-life duration is stored for ground Proso Millet or complete home-mixed feed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short",
+
+          shelfLifeAfterProcessingCategory:
+            "substantially-shorter-than-whole-grain",
+
+          likelyLossPoints: [
+            "all-field-harvest-and-cleaning-losses",
+            "grain-left-in-mill",
+            "meal-left-in-mixer",
+            "airborne-dust",
+            "excessively-fine-particles",
+            "particle-separation",
+            "spillage",
+            "moisture-absorption",
+            "oxidation",
+            "rancidity",
+            "mold",
+            "rodent-damage",
+            "insect-damage",
+            "feed-refusal",
+            "nutrient-loss-during-storage",
+            "formulation-error",
+            "inaccurate-weighing",
+            "incomplete-mixing"
+          ],
+
+          safetyWarnings: [
+            "Do not formulate a complete poultry ration by visual estimate, scoop count, volume alone, or equal-parts mixing.",
+            "Use reliable species-specific nutrient values and a poultry-stage-appropriate formulation method.",
+            "Homegrown grain composition varies and may require laboratory analysis where it forms a substantial part of the ration.",
+            "Balance digestible lysine, methionine, cystine, threonine, tryptophan, energy, calcium, available phosphorus, sodium, chloride, vitamins, trace minerals, and other required nutrients.",
+            "Use accurate scales appropriate to both major ingredients and very small premix quantities.",
+            "Do not omit a vitamin-mineral premix merely because several whole ingredients are included.",
+            "Do not substitute limestone, oyster shell, dicalcium phosphate, salt, or premix ingredients without recalculating the entire formulation.",
+            "Do not use treated planting seed.",
+            "Do not grind moldy, damp, musty, rancid, heated, chemically contaminated, rodent-contaminated, or mycotoxin-suspect grain.",
+            "Grinding spreads dust and contamination throughout the mill and work area.",
+            "Use dust control, eye protection, hearing protection, and respiratory protection as appropriate.",
+            "Keep hands, hair, clothing, jewelry, and tools away from moving machinery.",
+            "Prevent children and animals from accessing mills, mixers, premixes, concentrated minerals, or medications.",
+            "Do not include medications, coccidiostats, enzymes, preservatives, or other feed additives without correct product-specific dosing and legal guidance.",
+            "Mix thoroughly enough to prevent nutrient pockets and ingredient separation.",
+            "Store the finished ration in clean, cool, dry, labeled, rodent-resistant containers.",
+            "Discard feed that becomes damp, moldy, musty, heated, rancid, infested, or contaminated.",
+            "Monitor body condition, growth, egg production, shell quality, feathering, mortality, and feed consumption after any ration change.",
+            "Seek qualified poultry-nutrition assistance where the ration will provide most or all flock nutrition."
+          ],
+
+          incompatibleUserTraits: [
+            "wants-to-mix-feed-by-eye",
+            "has-no-reliable-ration-formulation",
+            "has-no-accurate-scale",
+            "has-no-micronutrient-scale",
+            "has-no-suitable-grain-mill",
+            "has-no-uniform-mixing-method",
+            "cannot-source-a-complete-vitamin-mineral-premix",
+            "cannot-control-grain-dust",
+            "cannot-protect-ground-feed-from-moisture",
+            "requires-long-room-temperature-storage",
+            "cannot-monitor-flock-performance",
+            "expects-proso-millet-alone-to-be-complete-feed",
+            "cannot-confidently-identify-or-inspect-grain"
+          ],
+
+          directFacts: {
+            formulationRequired:
+              true,
+
+            precisionWeighingRequired:
+              true,
+
+            grainAnalysisHelpful:
+              true,
+
+            completeVitaminMineralPremixNormallyRequired:
+              true,
+
+            additionalProteinSourcesRequired:
+              true,
+
+            supplementalMethionineMayBeRequired:
+              true,
+
+            supplementalLysineMayBeRequired:
+              true,
+
+            calciumSourceRequiredForLayerRation:
+              true,
+
+            availablePhosphorusMustBeBalanced:
+              true,
+
+            saltAndSodiumMustBeBalanced:
+              true,
+
+            particleSizeControlImportant:
+              true,
+
+            uniformMixingImportant:
+              true,
+
+            ingredientSeparationPossible:
+              true,
+
+            groundMealStoresLessWellThanWholeGrain:
+              true,
+
+            grindingCreatesCompleteFeed:
+              false,
+
+            multipleHomegrownIngredientsGuaranteeBalance:
+              false,
+
+            visualFormulationSuitable:
+              false,
+
+            exactUniversalInclusionRateKnown:
+              false,
+
+            exactShelfLifeKnown:
+              false,
+
+            notes: [
+              "Ground Proso Millet can be a useful cereal-energy ingredient in a correctly formulated poultry ration.",
+              "Its use-path value depends more on ration formulation than on grinding itself.",
+              "The grain remains limited in lysine, methionine, calcium, and available phosphorus.",
+              "A crude-protein percentage does not establish that the protein is balanced for poultry.",
+              "The correct inclusion rate depends on bird type, age, production stage, grain analysis, energy target, other ingredients, synthetic amino acids, enzymes, and feed form.",
+              "Broiler-study inclusion rates should not be transferred automatically to layers, breeders, chicks, bantams, or backyard mixed flocks.",
+              "Large particle-size differences encourage ingredient separation.",
+              "Very fine meal may increase dust, waste, respiratory exposure, and selective refusal.",
+              "Pelleting or crumbling may reduce separation but adds cost, heat, equipment, and processing complexity.",
+              "The primary grain supply should remain whole until close to milling.",
+              "The planner should recommend this pathway only to users who select advanced feed formulation and processing capacity.",
+              "No universal home-ration formula or Proso Millet inclusion percentage is stored."
+            ]
+          }
+        },
+
+                {
+          id:
+            "sprouted-proso-millet",
+
+          label:
+            "Sprouted Proso Millet Grain",
+
+          description:
+            "Clean, viable, untreated Proso Millet grain is soaked, rinsed, drained, and germinated under carefully controlled sanitary conditions for a short period before being offered promptly as a measured supplemental feed or enrichment.",
+
+          primaryFeedRole:
+            "fresh-sprouted-grain-supplement",
+
+          harvestProducts: [
+            "clean-viable-proso-millet-grain",
+            "germinated-proso-millet",
+            "short-proso-millet-sprouts",
+            "fresh-sprouted-grain-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "measured-fresh-supplement",
+            "sprout-tray-feeding",
+            "forage-pan",
+            "mixed-with-complete-feed-at-feeding-time",
+            "seasonal-enrichment",
+            "winter-fresh-feed-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-clean-untreated-viable-grain",
+            "inspect-grain",
+            "remove-damaged-grain",
+            "rinse",
+            "soak",
+            "drain-thoroughly",
+            "rinse-repeatedly",
+            "maintain-airflow",
+            "inspect-daily",
+            "feed-promptly",
+            "clean-and-sanitize-equipment"
+          ],
+
+          optionalProcessingTasks: [
+            "pretest-germination",
+            "weigh-dry-grain",
+            "measure-soak-water",
+            "use-screened-sprouting-trays",
+            "rotate-trays",
+            "record-germination-rate",
+            "record-sprout-weight",
+            "cool-finished-sprouts-before-feeding",
+            "refrigerate-briefly",
+            "separate-batches-by-start-date"
+          ],
+
+          requiredEquipment: [
+            "clean-sprouting-container",
+            "draining-screen-or-sprouting-tray",
+            "clean-water"
+          ],
+
+          helpfulEquipment: [
+            "food-safe-jar",
+            "sprouting-lid",
+            "mesh-screen",
+            "stackable-sprouting-trays",
+            "drip-tray",
+            "food-scale",
+            "thermometer",
+            "clean-rinse-hose",
+            "dish-rack",
+            "sanitizing-supplies",
+            "refrigerator",
+            "batch-labels"
+          ],
+
+          harvestPattern:
+            "repeated-small-batches",
+
+          harvestFrequencyCategory:
+            "daily-or-every-few-days-when-in-production",
+
+          storageMethods: [
+            "immediate-feeding",
+            "brief-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "feed-fresh-immediately-after-final-rinse-and-draining",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          soakingRequired:
+            true,
+
+          repeatedRinsingRequired:
+            true,
+
+          sanitationRequired:
+            true,
+
+          viableSeedRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          temperatureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          bacterialContaminationRiskScore:
+            5,
+
+          yeastRiskScore:
+            4,
+
+          overheatingRiskScore:
+            4,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "high-daily-attention",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-fresh-feeding",
+            "brief-refrigeration"
+          ],
+
+          preservationLimitations: [
+            "Sprouts are highly perishable and should not be treated as a stored dry-grain product.",
+            "Warm moisture-rich sprouting conditions also favor bacteria, mold, and yeast.",
+            "Poor drainage can produce sour odors, heating, slime, fermentation, root decay, and mold.",
+            "Dense sprout masses may retain heat and moisture internally.",
+            "Refrigeration slows deterioration but does not restore an unsafe batch.",
+            "Freezing damages sprout texture and is not the preferred poultry-use pathway.",
+            "Sprouting does not remove chemical seed treatments.",
+            "Sprouting does not make moldy, mycotoxin-suspect, rodent-contaminated, or otherwise unsafe grain suitable for feeding.",
+            "The increase in fresh weight is largely caused by absorbed water.",
+            "Sprouting does not create additional feed dry matter.",
+            "No universal safe storage duration is stored."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate-use-or-brief-refrigeration",
+
+          likelyLossPoints: [
+            "nonviable-seed",
+            "low-germination-rate",
+            "seed-lost-during-rinsing",
+            "poor-drainage",
+            "standing-water",
+            "excessive-batch-depth",
+            "overheating",
+            "souring",
+            "fermentation",
+            "mold",
+            "bacterial-growth",
+            "yeast-growth",
+            "root-matting",
+            "drying-out",
+            "contaminated-equipment",
+            "delayed-feeding",
+            "feed-refusal",
+            "spillage"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, viable, food-grade or feed-grade Proso Millet that is explicitly untreated.",
+            "Never sprout chemically treated planting seed.",
+            "Never sprout grain of unknown treatment status.",
+            "Do not sprout grain that is moldy, musty, damp, heated, insect damaged, rodent contaminated, flood contaminated, chemically contaminated, or otherwise questionable.",
+            "Use clean potable water.",
+            "Wash hands before handling grain, sprouts, containers, screens, or trays.",
+            "Clean and sanitize sprouting equipment between every batch.",
+            "Rinse and drain thoroughly enough to prevent standing water.",
+            "Maintain airflow around and through the sprouting material.",
+            "Do not allow sprouts to remain densely packed, hot, waterlogged, slimy, or sour.",
+            "Discard the entire batch if it develops mold, slime, sour odor, unusual discoloration, excessive heat, fermentation, or other signs of spoilage.",
+            "Do not attempt to rescue an unsafe batch by rinsing, drying, cooking, mixing, or dilution.",
+            "Feed sprouts promptly after the final rinse and draining.",
+            "Remove uneaten sprouts before they spoil in feeders, bedding, soil, or litter.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Sprouted Proso Millet remains nutritionally incomplete and should not replace balanced feed.",
+            "Do not assume that increased fresh weight equals increased dry-matter feed value.",
+            "Introduce sprouts gradually and observe droppings, appetite, body condition, and flock behavior."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confirm-seed-is-untreated",
+            "cannot-use-clean-water",
+            "cannot-rinse-and-drain-daily",
+            "cannot-sanitize-equipment",
+            "cannot-monitor-temperature-and-odor",
+            "cannot-discard-failed-batches",
+            "requires-long-storage-life",
+            "expects-sprouting-to-create-extra-dry-matter",
+            "expects-sprouts-to-replace-complete-feed",
+            "has-no-time-for-daily-attention",
+            "cannot-remove-uneaten-wet-feed"
+          ],
+
+          directFacts: {
+            untreatedSeedRequired:
+              true,
+
+            viableSeedRequired:
+              true,
+
+            cleanWaterRequired:
+              true,
+
+            repeatedRinsingRequired:
+              true,
+
+            thoroughDrainageRequired:
+              true,
+
+            airflowRequired:
+              true,
+
+            dailyInspectionRequired:
+              true,
+
+            sanitationRequired:
+              true,
+
+            immediateFeedingPreferred:
+              true,
+
+            refrigerationOnlyBrieflySuitable:
+              true,
+
+            sproutingIncreasesFreshWeight:
+              true,
+
+            sproutingIncreasesDryMatter:
+              false,
+
+            sproutingMakesTreatedSeedSafe:
+              false,
+
+            sproutingMakesMoldyGrainSafe:
+              false,
+
+            sproutingDestroysMycotoxins:
+              false,
+
+            sproutingCreatesCompleteFeed:
+              false,
+
+            exactGerminationTimeKnown:
+              false,
+
+            exactSafeStorageDurationKnown:
+              false,
+
+            exactNutrientChangeKnown:
+              false,
+
+            notes: [
+              "Sprouted Proso Millet is a fresh, labor-intensive use path rather than a preservation method.",
+              "The practical value is primarily dietary variety, moisture, texture, and enrichment.",
+              "Sprout quality depends on grain viability, water quality, drainage, airflow, sanitation, batch depth, and temperature.",
+              "The planner should not describe sprouting as a way to multiply feed.",
+              "Fresh-weight gain during germination is dominated by absorbed water.",
+              "Some seed reserves are consumed through respiration during germination.",
+              "Sprouted grain should remain supplemental to complete feed.",
+              "Short sprouts are generally easier to rinse, drain, inspect, and feed than heavily matted long growth.",
+              "No universal sprouting duration should be applied without considering temperature and batch conditions.",
+              "The planner should recommend this pathway only to users willing to provide daily sanitation and monitoring."
+            ]
+          }
+        },
+
+        {
+          id:
+            "postharvest-proso-millet-gleaning",
+
+          label:
+            "Postharvest Proso Millet Gleaning",
+
+          description:
+            "After the primary panicle or grain harvest is complete, chickens are allowed supervised access to a safe Proso Millet plot so they can recover shattered seed, missed panicles, volunteer seedlings, insects, and limited crop residue while providing scratching and foraging enrichment.",
+
+          primaryFeedRole:
+            "field-gleaning-and-foraging-enrichment",
+
+          harvestProducts: [
+            "shattered-proso-millet-grain",
+            "missed-proso-millet-panicles",
+            "volunteer-proso-millet-seedlings",
+            "field-invertebrates",
+            "limited-green-residue",
+            "foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "supervised-field-gleaning",
+            "managed-rotational-access",
+            "temporary-paddock-access",
+            "mobile-coop-access",
+            "postharvest-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-harvest",
+            "inspect-field",
+            "remove-hazards",
+            "remove-moldy-or-contaminated-material",
+            "verify-no-treated-seed-remains",
+            "control-flock-access",
+            "monitor-foraging",
+            "remove-flock-before-site-damage"
+          ],
+
+          optionalProcessingTasks: [
+            "mow-or-flatten-residue",
+            "divide-field-into-sections",
+            "install-temporary-fencing",
+            "provide-mobile-shade",
+            "provide-mobile-water",
+            "collect-obvious-spilled-grain-into-feeding-stations",
+            "seed-following-cover-crop",
+            "record-gleaning-duration",
+            "monitor-volunteer-reduction",
+            "spread-compost-after-access"
+          ],
+
+          requiredEquipment: [
+            "safe-flock-containment",
+            "clean-drinking-water"
+          ],
+
+          helpfulEquipment: [
+            "portable-poultry-netting",
+            "mobile-coop",
+            "temporary-gates",
+            "shade-shelter",
+            "portable-waterer",
+            "predator-resistant-fencing",
+            "field-rake",
+            "mower",
+            "tarps",
+            "forage-baskets",
+            "soil-moisture-monitor",
+            "ground-cover-seed"
+          ],
+
+          harvestPattern:
+            "postharvest-access",
+
+          harvestFrequencyCategory:
+            "limited-seasonal-grazing-period",
+
+          storageMethods: [
+            "not-applicable"
+          ],
+
+          preferredStorageMethod:
+            null,
+
+          storageDurationCategory:
+            "immediate-field-use",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          siteInspectionRequired:
+            true,
+
+          supervisedAccessRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          predatorRiskScore:
+            5,
+
+          soilDamageRiskScore:
+            4,
+
+          parasiteExposureRiskScore:
+            3,
+
+          toxicPlantExposureRiskScore:
+            4,
+
+          rodentRiskScore:
+            3,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low-processing-but-active-supervision",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-field-consumption"
+          ],
+
+          preservationLimitations: [
+            "Gleaned grain cannot be measured accurately unless birds are confined to a known area and remaining grain is estimated.",
+            "Field grain exposed to rain, soil, manure, wildlife, and humidity may deteriorate rapidly.",
+            "Wet or moldy fallen grain is unsuitable for feeding.",
+            "Gleaning does not preserve grain for later use.",
+            "Birds may consume insects, weeds, soil, residue, and other materials in addition to Millet.",
+            "Heavy flock access may remove protective residue and damage soil structure.",
+            "Wet-soil access can cause compaction, rutting, mud, erosion, and vegetation loss.",
+            "Repeated access may increase nutrient accumulation and parasite pressure.",
+            "No precise feed-replacement value can be assigned without direct field measurement."
+          ],
+
+          estimatedShelfLifeCategory:
+            "not-applicable",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate-field-use",
+
+          likelyLossPoints: [
+            "grain-consumed-by-wild-birds-before-flock-access",
+            "rodent-consumption",
+            "grain-buried-in-soil",
+            "grain-lost-in-residue",
+            "rain-damage",
+            "field-mold",
+            "germination",
+            "soil-contamination",
+            "manure-contamination",
+            "uneven-flock-access",
+            "dominant-bird-exclusion",
+            "grain-trampled-into-mud",
+            "predator-interruption",
+            "premature-removal-of-flock"
+          ],
+
+          safetyWarnings: [
+            "Inspect the entire area before flock access.",
+            "Do not allow chickens into a field containing treated planting seed, pesticide granules, fertilizer spills, fuel, oil, sharp metal, string, plastic, glass, wire, machinery debris, or other hazards.",
+            "Do not allow access where Proso Millet or surrounding vegetation was treated with a product whose label prohibits poultry grazing or requires a withholding interval.",
+            "Remove moldy, musty, blackened, slimy, fermented, rodent-contaminated, flood-contaminated, or otherwise questionable grain and residue.",
+            "Identify and remove toxic volunteer plants and weeds.",
+            "Provide clean drinking water throughout access.",
+            "Provide shade during hot weather.",
+            "Use predator-resistant containment appropriate to the site.",
+            "Supervise access where fencing is temporary or predator pressure is significant.",
+            "Avoid access during lightning, extreme heat, severe storms, flooding, or dangerous wind.",
+            "Do not allow chickens to remain on saturated or deeply muddy soil.",
+            "Remove the flock before excessive scratching destroys soil cover or creates bare compacted ground.",
+            "Do not rely on gleaning as the flock's complete ration.",
+            "Continue providing age-appropriate complete feed.",
+            "Because intake cannot be measured precisely, monitor crop fill, body condition, egg production, behavior, and complete-feed consumption.",
+            "Use several access points or feeding zones where dominant birds exclude timid birds.",
+            "Follow an appropriate rotation interval before returning chickens to the same ground where parasite accumulation is a concern."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-safe-outdoor-containment",
+            "has-high-uncontrolled-predator-pressure",
+            "cannot-supervise-flock-access",
+            "cannot-identify-toxic-weeds",
+            "cannot-verify-pesticide-grazing-restrictions",
+            "has-saturated-or-erosion-prone-soil",
+            "requires-precise-feed-intake-measurement",
+            "expects-gleaning-to-replace-complete-feed",
+            "cannot-provide-clean-water-and-shade",
+            "cannot-remove-field-hazards",
+            "cannot-rotate-or-rest-the-site"
+          ],
+
+          directFacts: {
+            primaryHarvestMustBeCompletedFirst:
+              true,
+
+            flockAccessBeforeGrainHarvestRecommended:
+              false,
+
+            supervisedAccessRecommended:
+              true,
+
+            predatorProtectionRequired:
+              true,
+
+            cleanWaterRequired:
+              true,
+
+            shadeMayBeRequired:
+              true,
+
+            fieldInspectionRequired:
+              true,
+
+            pesticideLabelVerificationRequired:
+              true,
+
+            exactGrainIntakeMeasurable:
+              false,
+
+            exactFeedSavingsKnown:
+              false,
+
+            completeFeedStillRequired:
+              true,
+
+            soilDamagePossible:
+              true,
+
+            soilCompactionPossible:
+              true,
+
+            nutrientDepositionPossible:
+              true,
+
+            parasiteExposurePossible:
+              true,
+
+            toxicWeedExposurePossible:
+              true,
+
+            volunteerSeedReductionPossible:
+              true,
+
+            insectForagingValuePossible:
+              true,
+
+            immediateStorageRequired:
+              false,
+
+            notes: [
+              "Postharvest gleaning recovers grain that may be uneconomical to collect by hand.",
+              "It also provides scratching, movement, exploration, and insect-foraging opportunities.",
+              "The pathway has low grain-processing labor but requires active flock and land management.",
+              "Gleaning should occur only after the desired human-food grain, poultry grain, and planting seed have been removed.",
+              "Allowing chickens access before the primary harvest conflicts with dependable grain production.",
+              "The nutritional contribution is difficult to measure because birds consume a mixture of grain, insects, plants, soil particles, and residue.",
+              "Gleaning value may be greater as enrichment and waste recovery than as measurable feed replacement.",
+              "Dry, firm soil conditions reduce compaction and mud damage.",
+              "Short controlled access is generally preferable to continuous unrestricted occupation.",
+              "The planner should not assign a precise feed-savings value to this pathway without measured field data."
+            ]
+          }
+        },
+
+                {
+          id:
+            "proso-millet-seed-saving",
+
+          label:
+            "Seed Saving",
+
+          description:
+            "Healthy, true-to-type Proso Millet plants are selected, protected until full maturity, harvested, dried, cleaned, and stored for future planting.",
+
+          primaryFeedRole:
+            "future-crop-production",
+
+          harvestProducts: [
+            "planting-seed",
+            "genetic-stock",
+            "future-crop"
+          ],
+
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "select-healthy-plants",
+            "protect-panicles",
+            "allow-full-maturity",
+            "harvest",
+            "dry",
+            "thresh",
+            "clean",
+            "label",
+            "store"
+          ],
+
+          optionalProcessingTasks: [
+            "germination-test",
+            "record-cultivar",
+            "record-harvest-date",
+            "record-field-location"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "seed-envelopes",
+            "glass-jars",
+            "desiccant-packets",
+            "labels",
+            "food-scale",
+            "grain-screens"
+          ],
+
+          harvestPattern:
+            "annual",
+
+          harvestFrequencyCategory:
+            "once-per-season",
+
+          storageMethods: [
+            "cool-dry-storage",
+            "sealed-container-storage"
+          ],
+
+          preferredStorageMethod:
+            "clean-dry-labeled-seed-in-a-cool-dark-dry-location",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          threshingRequired:
+            true,
+
+          shellingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "long-term-seed-storage"
+          ],
+
+          preservationLimitations: [
+            "Seed viability gradually declines during storage.",
+            "High moisture and high temperatures shorten seed life.",
+            "Poor labeling may eliminate breeding value.",
+            "Hybrid cultivars may not produce true offspring."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "long-when-properly-stored",
+
+          likelyLossPoints: [
+            "bird-damage",
+            "rodent-damage",
+            "poor-drying",
+            "mold",
+            "storage-insects",
+            "poor-labeling",
+            "low-germination"
+          ],
+
+          safetyWarnings: [
+            "Save seed only from untreated plants.",
+            "Discard moldy or insect-infested seed.",
+            "Label every seed lot with cultivar and harvest year.",
+            "Protect seed from rodents and moisture."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-maintain-dry-storage",
+            "cannot-label-seed",
+            "cannot-select-healthy-plants"
+          ],
+
+          directFacts: {
+            openPollinatedSeedCanBeSaved:
+              true,
+
+            hybridSeedMayNotBreedTrue:
+              true,
+
+            longTermStoragePossible:
+              true,
+
+            germinationTestingRecommended:
+              true,
+
+            notes: [
+              "Seed saving is one of Proso Millet's strongest self-reliance benefits.",
+              "Only healthy, mature seed should be retained.",
+              "Seed intended for planting should never be confused with chemically treated commercial planting seed."
+            ]
+          }
+        },
+
+        {
+          id:
+            "proso-millet-straw-and-residue",
+
+          label:
+            "Straw and Crop Residue",
+
+          description:
+            "After grain harvest, remaining Proso Millet stems, leaves, and straw can be used as mulch, compost carbon, bedding, or incorporated into the soil to increase organic matter.",
+
+          primaryFeedRole:
+            "non-feed-biomass",
+
+          harvestProducts: [
+            "straw",
+            "mulch",
+            "compost-carbon",
+            "soil-organic-matter",
+            "animal-bedding"
+          ],
+
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "collect-residue",
+            "dry-if-needed",
+            "inspect",
+            "store-or-apply"
+          ],
+
+          optionalProcessingTasks: [
+            "chop",
+            "compost",
+            "incorporate-into-soil",
+            "bale"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "rake",
+            "pitchfork",
+            "wheelbarrow",
+            "compost-bin",
+            "mulching-mower"
+          ],
+
+          harvestPattern:
+            "annual",
+
+          harvestFrequencyCategory:
+            "once-after-grain-harvest",
+
+          storageMethods: [
+            "dry-covered-storage",
+            "compost-pile",
+            "direct-field-application"
+          ],
+
+          preferredStorageMethod:
+            "dry-covered-storage-until-needed",
+
+          storageDurationCategory:
+            "moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          threshingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          crackingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "mulch",
+            "compost",
+            "bedding",
+            "soil-incorporation"
+          ],
+
+          preservationLimitations: [
+            "Wet straw may mold.",
+            "Residue contaminated with herbicides, pesticides, or disease should not be composted without considering the specific contaminant.",
+            "Residue gradually decomposes during storage."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "until-decomposition",
+
+          likelyLossPoints: [
+            "weathering",
+            "mold",
+            "wind-loss",
+            "rodent-nesting",
+            "decomposition"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, dry residue.",
+            "Discard moldy material.",
+            "Do not use contaminated residue as poultry bedding.",
+            "Inspect for sharp objects before use."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-store-dry-material",
+            "expects-high-feed-value-from-straw"
+          ],
+
+          directFacts: {
+            suitableForMulch:
+              true,
+
+            suitableForCompostCarbon:
+              true,
+
+            suitableForAnimalBedding:
+              true,
+
+            suitableForSoilOrganicMatter:
+              true,
+
+            significantFeedValue:
+              false,
+
+            notes: [
+              "Most of the crop's nutritional value has already been removed with the harvested grain.",
+              "Residue provides considerably more value as mulch, compost feedstock, bedding, and soil organic matter than as poultry feed.",
+              "Returning some residue to the soil may improve long-term soil health."
+            ]
+          }
+        }
+
+              ],
+
+      dataQuality: {
+        overallConfidenceScore:
+          91,
+
+        researchCompletenessScore:
+          92,
+
+        poultrySpecificEvidenceScore:
+          86,
+
+        agronomicEvidenceScore:
+          96,
+
+        nutritionEvidenceScore:
+          92,
+
+        plannerReliabilityScore:
+          91,
+
+        estimatedUnknownFieldPercent:
+          10,
+
+        usesProfessionalJudgment:
+          true,
+
+        containsNullValues:
+          true,
+
+        nullValuesRequireFutureResearch: [
+          "Minimum useful backyard planting area",
+          "Preferred production area for different flock sizes",
+          "Backyard cleaned-grain yield per square foot",
+          "Backyard cleaned-grain yield per plant",
+          "Expected grain yield per 100 square feet",
+          "Edible cleaned-grain percentage",
+          "Exact hull percentage by cultivar",
+          "Exact backyard seeding density",
+          "Exact backyard plant population per square foot",
+          "Estimated hand-harvest minutes per pound",
+          "Estimated threshing minutes per pound",
+          "Estimated winnowing and cleaning minutes per pound",
+          "Estimated total processing minutes per pound",
+          "Expected hand-processing waste percentage",
+          "Expected shattering loss percentage",
+          "Expected wild-bird loss percentage",
+          "Expected threshing recovery percentage",
+          "Verified storage duration under varied backyard humidity and temperature",
+          "Universal poultry supplemental-feeding percentage",
+          "Complete-feed displacement per pound of Proso Millet",
+          "Cultivar-specific metabolizable-energy values for poultry",
+          "Cultivar-specific digestible amino-acid values",
+          "Cultivar-specific crude-protein values",
+          "Cultivar-specific mineral values",
+          "Cultivar-specific fatty-acid values",
+          "Cultivar-specific grain-retention and shattering scores",
+          "Cultivar-specific lodging resistance",
+          "Cultivar-specific maturity duration",
+          "Cultivar-specific disease resistance",
+          "Small-flock whole-grain intake",
+          "Small-flock cracked-grain intake",
+          "Whole-panicle consumption and waste",
+          "Sprouted-grain consumption and waste",
+          "Postharvest gleaning intake",
+          "Household feed-cost savings",
+          "Small-scale mechanical processing efficiency",
+          "Household sprouting contamination and failure rates",
+          "Regional volunteer-seed persistence",
+          "Regional disease-loss probability"
+        ],
+
+        majorInformationSources: [
+          "Feedipedia Proso Millet grain feed profile and nutrient tables",
+          "USDA agricultural and plant-classification resources",
+          "USDA Natural Resources Conservation Service conservation-crop guidance",
+          "University of Nebraska-Lincoln Extension Proso Millet production guidance",
+          "Colorado State University Extension Proso Millet production guidance",
+          "North Dakota State University Extension Millet production guidance",
+          "South Dakota State University Extension Millet production guidance",
+          "University of Wisconsin and University of Minnesota alternative-field-crop resources",
+          "Sustainable Agriculture Research and Education cover-crop guidance",
+          "Land-grant university cereal-grain production and storage guidance",
+          "Peer-reviewed poultry-feeding studies involving Proso Millet",
+          "Peer-reviewed grain-composition and amino-acid research",
+          "Veterinary poultry-nutrition guidance concerning complete diets and supplemental grain",
+          "Small-grain harvest, threshing, drying, storage, sprouting, and postharvest literature"
+        ],
+
+        plannerNotes: [
+          "Proso Millet should be classified as a warm-season annual cereal grain with strong short-season, drought-adapted, stored-grain, whole-panicle, sprouting, seed-saving, and residue pathways.",
+          "The planner must distinguish Proso Millet, Panicum miliaceum, from Foxtail Millet, Pearl Millet, Japanese Millet, Browntop Millet, Finger Millet, and other crops sold under the general Millet name.",
+          "Mature Proso Millet grain is primarily an energy-oriented cereal ingredient rather than a concentrated protein supplement.",
+          "Proso Millet contains useful starch and moderate protein but does not provide a complete poultry amino-acid profile.",
+          "Lysine and methionine limitations remain important when Proso Millet contributes a meaningful portion of a formulated ration.",
+          "Proso Millet does not provide sufficient calcium for laying hens.",
+          "Whole grain, cracked grain, ground ration ingredient, dried panicles, sprouts, planting seed, postharvest gleaning, and crop residue must remain separate planner pathways.",
+          "Whole dry grain generally provides better storage efficiency than cracked or ground grain.",
+          "Whole-panicle feeding reduces threshing labor but increases storage volume, intake uncertainty, shattering, and feeding waste.",
+          "Sprouting increases fresh weight primarily through water uptake and does not create additional feed dry matter.",
+          "The planner must not assign feed-production value to absorbed sprouting water.",
+          "Treated planting seed must never be recommended for poultry feed, sprouts, household food, or casual handling around feed-processing equipment.",
+          "Moldy, musty, heated, chemically contaminated, rodent-contaminated, or mycotoxin-suspect grain must not be recommended for feeding.",
+          "The crop's mature drought tolerance should not be interpreted as freedom from establishment or reproductive-stage moisture stress.",
+          "The crop's heat adaptation should not be interpreted as frost tolerance.",
+          "Proso Millet is poorly suited to saturated or waterlogged soil.",
+          "Early weed competition is a major establishment limitation.",
+          "Wild-bird feeding, seed shattering, uneven maturity, lodging, and wet harvest weather are major grain-loss pathways.",
+          "Commercial acreage yields must not be converted directly into guaranteed backyard pounds per square foot.",
+          "Non-feed straw, roots, mulch, compost, and soil-building pathways must not be included in edible poultry-feed yield.",
+          "Planner scores combine direct source evidence with clearly identified professional judgment.",
+          "A universal backyard inclusion rate is not supported.",
+          "No claim should be made that homegrown Proso Millet can replace complete commercial poultry feed pound for pound."
+        ],
+
+        supportedGeneralizations: [
+          "Proso Millet is a warm-season annual cereal grain.",
+          "Its accepted scientific name is Panicum miliaceum.",
+          "It is distinct from Pearl Millet, Foxtail Millet, Japanese Millet, Browntop Millet, and Finger Millet.",
+          "It is normally established by direct seeding.",
+          "It requires warm soil for dependable germination and establishment.",
+          "It is sensitive to frost.",
+          "It has a relatively short production cycle compared with many grain crops.",
+          "It is adapted to areas with limited rainfall and short frost-free seasons.",
+          "It tolerates drought better after establishment than during germination and emergence.",
+          "It performs poorly in saturated and waterlogged soil.",
+          "It performs best in full sun.",
+          "It is generally grown as a relatively dense cereal stand rather than as widely spaced individual plants.",
+          "Early weed competition can substantially reduce stand performance and grain yield.",
+          "The crop produces upright stems, leaves, tillers, panicles, grain, roots, and straw.",
+          "Panicles and seeds may mature unevenly.",
+          "Mature seed may shatter if harvest is delayed.",
+          "Wild birds may cause severe losses in small plantings.",
+          "Lodging may occur under excessive nitrogen, dense growth, storms, saturation, or delayed harvest.",
+          "Mature grain requires drying, threshing, cleaning, and protected storage for dependable long-term use.",
+          "Whole dry grain stores more efficiently than intact panicles.",
+          "Whole dry grain generally stores more dependably than cracked or ground grain.",
+          "Clean mature grain can be offered as a measured supplement to established chickens.",
+          "Whole grain requires suitable grit where birds do not obtain adequate natural grit.",
+          "Proso Millet can serve as an energy ingredient in a properly formulated poultry ration.",
+          "Proso Millet is not a complete poultry feed.",
+          "Proso Millet is not a concentrated calcium source.",
+          "Proso Millet is not a complete protein source.",
+          "Crude-protein percentage alone does not establish amino-acid adequacy.",
+          "Ground Proso Millet requires complete-ration formulation when it provides a substantial dietary share.",
+          "Whole mature panicles can provide pecking enrichment.",
+          "Sprouted Proso Millet requires untreated viable grain, clean water, sanitation, drainage, airflow, and frequent inspection.",
+          "Sprouting increases water content and fresh weight.",
+          "Sprouting does not create additional feed dry matter.",
+          "Postharvest gleaning can recover shattered seed and missed panicles.",
+          "Postharvest gleaning cannot provide precise feed-intake measurement.",
+          "Proso Millet seed can be saved when mature, sound, dry, labeled, and protected.",
+          "Straw and residue can provide mulch, compost carbon, bedding, and soil-organic-matter value.",
+          "Straw and mature residue are not concentrated poultry feeds.",
+          "Shattered seed may produce volunteer plants.",
+          "Treated planting seed is unsuitable for poultry feed or sprouting.",
+          "Moldy or mycotoxin-suspect grain is unsuitable for poultry feed.",
+          "Storage safety depends on grain moisture, temperature, sanitation, insects, rodents, condensation, and container quality."
+        ],
+
+        unsupportedOrConditionalClaims: [
+          "A universal Proso Millet feeding percentage for all backyard chickens",
+          "A universal Proso Millet inclusion rate for every complete poultry ration",
+          "Guaranteed pounds of cleaned grain per 100 square feet",
+          "Guaranteed grain yield per individual plant",
+          "Guaranteed feed savings per flock",
+          "Guaranteed feed replacement per square foot",
+          "Guaranteed storage life under all household conditions",
+          "Guaranteed drought-proof production",
+          "Guaranteed bird-resistant production",
+          "Guaranteed shatter-resistant production",
+          "Guaranteed lodging resistance",
+          "Guaranteed disease resistance",
+          "Guaranteed production without irrigation",
+          "Guaranteed production in poorly drained soil",
+          "Guaranteed suitability for every climate",
+          "Guaranteed suitability for newly hatched chicks",
+          "Guaranteed improvement in egg production",
+          "Guaranteed improvement in egg quality",
+          "Guaranteed improvement in feather quality",
+          "Guaranteed reduction in commercial-feed purchases",
+          "Guaranteed increase in protein after sprouting",
+          "Guaranteed increase in dry matter after sprouting",
+          "Guaranteed nutritional superiority of sprouts over sound dry grain",
+          "Guaranteed safety of home-produced sprouts",
+          "Guaranteed safety after washing contaminated grain",
+          "Guaranteed destruction of mycotoxins through cooking",
+          "Guaranteed destruction of mycotoxins through grinding",
+          "Guaranteed destruction of mycotoxins through sprouting",
+          "Guaranteed safety of grain grown from chemically treated seed",
+          "Guaranteed volunteer-seed elimination through poultry gleaning",
+          "Guaranteed true-to-type offspring from every saved commercial cultivar"
+        ],
+
+        verifiedOrStronglySupportedFields: [
+          "identity",
+          "lifecycle",
+          "climate.directFacts.warmSeasonAnnual",
+          "climate.directFacts.frostSensitive",
+          "climate.directFacts.commonlyDirectSeeded",
+          "site.directFacts.preferredLight",
+          "site.directFacts.growthHabit",
+          "soil.directFacts.preferredDrainage",
+          "soil.directFacts.waterloggedSoilSuitable",
+          "water.directFacts.droughtTolerantAfterEstablishment",
+          "water.directFacts.establishmentMoistureImportant",
+          "flock.directFacts.completePoultryFeed",
+          "flock.directFacts.gritRelevantForWholeGrain",
+          "flock.directFacts.treatedSeedSuitableForFeed",
+          "risks.directFacts.primaryWildlifeThreat",
+          "risks.directFacts.wildBirdLossPotentialHigh",
+          "risks.directFacts.waterloggingRiskHigh",
+          "risks.directFacts.frostSensitivityHigh",
+          "risks.directFacts.shatteringPossible",
+          "risks.directFacts.unevenMaturityPossible",
+          "seasonalRoles.directFacts.springPlantingRole",
+          "seasonalRoles.directFacts.summerPlantingRole",
+          "seasonalRoles.directFacts.winterLivingCoverPossible",
+          "seasonalRoles.directFacts.storedWinterFeedValue",
+          "usePaths.whole-dry-proso-millet",
+          "usePaths.whole-dried-proso-millet-panicles",
+          "usePaths.cracked-proso-millet",
+          "usePaths.ground-proso-millet-ration-ingredient",
+          "usePaths.sprouted-proso-millet",
+          "usePaths.postharvest-proso-millet-gleaning",
+          "usePaths.proso-millet-seed-saving",
+          "usePaths.proso-millet-straw-and-residue"
+        ],
+
+        derivedPlannerFields: [
+          "climate.heatToleranceScore",
+          "climate.droughtClimateToleranceScore",
+          "climate.humidityToleranceScore",
+          "climate.coolSummerToleranceScore",
+          "climate.frostSensitivityScore",
+          "site.shadeToleranceScore",
+          "site.windToleranceScore",
+          "site.lodgingRiskScore",
+          "site.airflowRequirementScore",
+          "soil.textureScores",
+          "soil.drainageRequirementScore",
+          "soil.waterloggingSensitivityScore",
+          "soil.fertilityRequirementScore",
+          "water.establishmentDroughtRiskScore",
+          "water.reproductiveDroughtRiskScore",
+          "space.smallSpaceSuitabilityScore",
+          "flock.supplementalFeedValueScore",
+          "flock.wholeGrainValueScore",
+          "flock.enrichmentValueScore",
+          "labor.processingLaborScore",
+          "cost.startupCostScore",
+          "goals.goalScores",
+          "risks.overallRiskLevel",
+          "risks.cropFailureRiskScore",
+          "seasonalRoles.plannerSeasonScores",
+          "usePaths.harvestEaseScore",
+          "usePaths.preparationEaseScore",
+          "usePaths.beginnerSuitabilityScore",
+          "usePaths.flockValueScore",
+          "usePaths.processingEfficiencyScore",
+          "usePaths.storageEfficiencyScore"
+        ],
+
+        nullFieldsPreserved: [
+          "climate.minimumFrostFreeDays",
+          "climate.preferredFrostFreeDays",
+          "climate.preferredSoilTemperatureF",
+          "climate.daysToMaturityMinimum",
+          "climate.daysToMaturityMaximum",
+          "climate.dryDownBufferDays",
+          "site.absoluteMinimumSunHours",
+          "site.matureHeightFtMinimum",
+          "site.matureHeightFtMaximum",
+          "soil.minimumSoilDepthIn",
+          "soil.survivalPHMinimum",
+          "soil.survivalPHMaximum",
+          "space.minimumTrialAreaSqFt",
+          "space.minimumUsefulAreaSqFt",
+          "space.preferredProductionAreaSqFt",
+          "space.minimumContainerGallons",
+          "space.minimumRaisedBedDepthIn",
+          "flock.portionGuidance",
+          "spaceAndYield.plantsPer10SquareFeet",
+          "spaceAndYield.plantsPer50SquareFeet",
+          "spaceAndYield.plantsPer100SquareFeet",
+          "spaceAndYield.expectedYieldPerPlantMinimumLbs",
+          "spaceAndYield.expectedYieldPerPlantMaximumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMinimumLbs",
+          "spaceAndYield.expectedYieldPer100SquareFeetMaximumLbs",
+          "spaceAndYield.edibleYieldPercent",
+          "economics.potentialFeedSavings",
+          "usePaths.estimatedProcessingMinutesPerPound",
+          "usePaths.estimatedWastePercent"
+        ],
+
+        validationWarnings: [
+          "Proso Millet must not be treated as interchangeable with every crop called Millet.",
+          "Backyard grain-yield thresholds remain unavailable.",
+          "No universal safe supplemental-feeding percentage is stored.",
+          "No universal complete-ration inclusion percentage is stored.",
+          "Commercial field-production values must not be presented as guaranteed backyard outcomes.",
+          "Whole grain, cracked grain, ground meal, sprouts, and whole panicles must remain separate processing categories.",
+          "Sprout fresh-weight increases must not be interpreted as equal dry-matter increases.",
+          "Whole-panicle weight must not be counted entirely as edible grain.",
+          "Straw, roots, chaff, and non-feed residue must not be included in poultry-feed yield totals.",
+          "Stored grain safety remains conditional on moisture, temperature, sanitation, insects, rodents, condensation, and container quality.",
+          "Wild-bird, shattering, threshing, cleaning, and storage losses must be considered before estimating usable yield.",
+          "Treated planting seed must never be routed into feed, sprouts, household food, or poultry enrichment.",
+          "Moldy or mycotoxin-suspect grain must not be made eligible through washing, drying, cooking, cracking, grinding, sprouting, or dilution.",
+          "Ground-grain use must not be described as a complete ration unless the entire diet has been properly formulated.",
+          "Stored panicles require more volume and provide less precise feed measurement than loose grain.",
+          "Postharvest gleaning cannot support precise intake or feed-savings calculations.",
+          "Planner risk and suitability scores are comparative values rather than predictions of guaranteed performance."
+        ],
+
+        lastReviewed:
+          "2026-07-20",
+
+        primarySources: [
+          "Feedipedia",
+          "USDA",
+          "USDA Natural Resources Conservation Service",
+          "University of Nebraska-Lincoln Extension",
+          "Colorado State University Extension",
+          "North Dakota State University Extension",
+          "South Dakota State University Extension",
+          "University of Wisconsin Extension",
+          "University of Minnesota Extension",
+          "Sustainable Agriculture Research and Education",
+          "Land-grant university grain-production and storage resources",
+          "Peer-reviewed poultry-nutrition literature"
+        ],
+
+        notes: [
+          "The record distinguishes direct source facts, planner-derived scores, conditional judgments, and unresolved values.",
+          "Unverified backyard yield, minimum-area, processing-time, processing-loss, storage-duration, and feeding-portion values remain null.",
+          "The primary poultry pathways are clean whole grain, dried whole panicles, cracked grain, and formulated ground-grain use.",
+          "Sprouted grain is included as a higher-labor fresh pathway requiring stronger sanitation controls.",
+          "Postharvest gleaning is treated primarily as enrichment and waste recovery rather than precisely measurable feed replacement.",
+          "Seed saving and residue use provide meaningful self-reliance and soil-system benefits but are not counted as immediate poultry-feed yield.",
+          "Whole dry grain generally provides the strongest combination of storage efficiency, measurement precision, and year-round usefulness.",
+          "Whole dried panicles provide the strongest low-processing enrichment pathway.",
+          "Ground formulated use provides potentially high flock value but requires the greatest nutritional knowledge and precision.",
+          "Proso Millet's strongest agronomic advantages are short-season maturity, warm-weather growth, drought adaptation after establishment, and grain storability.",
+          "Its strongest production limitations are frost sensitivity, waterlogging, early weed competition, wild-bird loss, shattering, uneven maturity, and harvest-weather risk.",
+          "Its strongest poultry limitation is that it remains a supplemental or formulated ingredient rather than a nutritionally complete feed.",
+          "This record is production-ready for planner comparison while preserving genuine evidence gaps for future research."
+        ]
+      },
+
+            templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Backyard Proso Millet cleaned-grain yield trials",
+          "Regional Proso Millet cultivar comparisons",
+          "Cultivar-specific maturity-duration comparisons",
+          "Cultivar-specific grain-retention and shattering measurements",
+          "Cultivar-specific lodging-resistance measurements",
+          "Cultivar-specific drought-response measurements",
+          "Cultivar-specific disease-resistance measurements",
+          "Cultivar-specific grain-color comparisons",
+          "White-versus-red-versus-yellow Proso Millet poultry comparisons",
+          "Cultivar-specific crude-protein values",
+          "Cultivar-specific metabolizable-energy values for poultry",
+          "Cultivar-specific digestible amino-acid values",
+          "Cultivar-specific calcium and phosphorus values",
+          "Cultivar-specific fatty-acid values",
+          "Hull-percentage comparisons among cultivars",
+          "Whole-versus-hulled Proso Millet poultry comparisons",
+          "Small-flock whole-grain intake studies",
+          "Small-flock cracked-grain intake studies",
+          "Ground-Proso-Millet particle-size studies",
+          "Whole-panicle enrichment-consumption studies",
+          "Whole-panicle feeding-waste studies",
+          "Sprouted-Proso-Millet poultry-intake studies",
+          "Sprouted-Proso-Millet nutrient-change studies",
+          "Household-scale Proso Millet sprouting sanitation studies",
+          "Household sprouting contamination and failure-rate data",
+          "Postharvest flock-gleaning efficiency",
+          "Volunteer-seed reduction through poultry gleaning",
+          "Backyard hand-harvest efficiency",
+          "Backyard threshing efficiency",
+          "Backyard winnowing efficiency",
+          "Backyard grain-cleaning efficiency",
+          "Mechanical small-scale threshing comparisons",
+          "Mechanical small-scale grain-cleaning comparisons",
+          "Harvest loss caused by uneven panicle maturity",
+          "Harvest loss caused by seed shattering",
+          "Wild-bird losses before harvest",
+          "Protective bird-netting comparisons",
+          "Protective panicle-bag comparisons",
+          "Rodent losses during drying and storage",
+          "Stored-product insect losses",
+          "Drying loss under household conditions",
+          "Storage loss under humid household conditions",
+          "Storage stability of whole grain",
+          "Storage stability of whole dried panicles",
+          "Storage stability of cracked grain",
+          "Storage stability of ground grain",
+          "Moisture thresholds for safe small-scale storage",
+          "Condensation risk under seasonal household temperature changes",
+          "Mycotoxin risk under small-scale harvest and storage conditions",
+          "Regional disease-loss probability",
+          "Regional volunteer-seed persistence",
+          "Minimum useful planting area by flock size",
+          "Preferred production area by flock size",
+          "Cleaned-grain yield per square foot",
+          "Cleaned-grain yield per plant",
+          "Grain yield per 100 square feet",
+          "Edible cleaned-grain percentage",
+          "Whole-panicle grain-recovery percentage",
+          "Hand-processing waste percentage",
+          "Complete-feed displacement by supplemental Proso Millet",
+          "Feed-cost savings by flock size",
+          "Economic return after labor and wildlife-protection costs",
+          "Residue biomass yield",
+          "Residue bedding performance",
+          "Residue mulch performance",
+          "Residue compost-decomposition rate"
+        ],
+
+        lastReviewed:
+          "2026-07-20",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "No unsupported minimum planting area has been assigned.",
+          "No unsupported container-size requirement has been assigned.",
+          "No unsupported backyard seeding density has been assigned.",
+          "No unsupported grain yield per plant has been assigned.",
+          "No unsupported processing-time estimate has been assigned.",
+          "No unsupported processing-loss percentage has been assigned.",
+          "No guaranteed storage duration has been assigned.",
+          "Proso Millet is not treated as interchangeable with every crop commonly called Millet.",
+          "The record remains specific to Panicum miliaceum.",
+          "Pearl Millet, Foxtail Millet, Japanese Millet, Browntop Millet, and Finger Millet require separate crop records.",
+          "Whole dry grain, dried whole panicles, cracked grain, ground ration ingredient, sprouts, planting seed, postharvest gleaning, and crop residue remain separate use paths.",
+          "Whole-panicle weight is not treated as entirely edible grain weight.",
+          "Straw, roots, chaff, and non-feed residue are not counted as poultry-feed yield.",
+          "Fresh-weight gains during sprouting are not treated as equivalent increases in feed dry matter.",
+          "Sprouting is not described as multiplying the available amount of feed.",
+          "Physiological maturity is not treated as proof that grain is dry enough for sealed storage.",
+          "Whole grain is treated as more storage stable than cracked or ground grain.",
+          "Cracking and grinding are not treated as methods that correct amino-acid or mineral limitations.",
+          "Grinding is not treated as a method that creates a complete ration.",
+          "Sprouting, washing, drying, cracking, grinding, cooking, freezing, or dilution are not treated as methods that make contaminated grain safe.",
+          "Chemically treated planting seed is excluded from every poultry-feed, sprouting, enrichment, and household-food pathway.",
+          "Moldy, musty, heated, damp, fermented, chemically contaminated, rodent-contaminated, flood-contaminated, or mycotoxin-suspect grain is excluded from every feed pathway.",
+          "Proso Millet remains an energy-oriented supplemental grain or formulated-ration ingredient rather than a complete poultry ration.",
+          "Established adult chickens are the primary intended flock stage for whole-grain and whole-panicle pathways.",
+          "Young chicks should continue receiving an age-appropriate complete starter ration.",
+          "Whole-grain feeding assumes access to appropriately sized insoluble grit.",
+          "Wild-bird loss, shattering, uneven maturity, lodging, threshing loss, cleaning loss, drying loss, and storage loss must be considered before estimating usable grain yield.",
+          "Postharvest gleaning is treated primarily as enrichment and waste recovery rather than precisely measurable feed replacement.",
+          "Seed-saving value is kept separate from immediate poultry-feed value.",
+          "Residue value is kept separate from edible poultry-feed value.",
+          "The crop record contains enough information for planner comparisons, suitability scoring, conservative recommendations, and future field testing.",
+          "The crop record does not contain enough information to formulate a complete poultry ration.",
+          "Future Backyard Chicken Planner trials should replace null fields and qualitative estimates with measured small-scale production data."
+        ]
       }
-    ],
-
-    notes: [
-      "Proso Millet plannerData is specific to Panicum miliaceum grown for mature grain.",
-      "It should not be confused with Pearl Millet, Foxtail Millet, Japanese Millet, Browntop Millet, or other crops commonly called Millet.",
-      "The record separates fresh mature panicles, whole dried panicles, and loose dried grain into separate use paths.",
-      "Whole-panicle use is substantially easier than loose-grain threshing and cleaning.",
-      "The crop is classified as an energy grain rather than a complete poultry ration.",
-      "Its short season and low water requirement are major strengths.",
-      "Wild-bird loss, early weed competition, uneven maturity, shattering, and postharvest processing are major limitations.",
-      "Minimum useful area, exact storage duration, and flock feeding portions remain intentionally null.",
-      "The crop should remain in testing until short-season, limited-water, whole-panicle, and loose-grain profiles are evaluated."
-    ]
-  }
-}
-
-  },
+    }
+},
 
     ///////////////////////////////////////////////
     //
