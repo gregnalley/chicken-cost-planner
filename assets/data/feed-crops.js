@@ -18602,6 +18602,12 @@ const BCP_FEED_CROPS = {
         droughtToleranceScore:
           5,
 
+        droughtYieldRetentionScore:
+          4,
+
+        suitableForLimitedIrrigationScore:
+          5,
+
         waterUseEfficiencyScore:
           5,
 
