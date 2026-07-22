@@ -5076,6 +5076,23 @@ const finalScore =
         wildlifePenalty:
           wildlife.penalty,
 
+                  wildlifeDetails:
+          wildlife,
+
+        selectedWildlifePressures:
+          answers.preferences
+            ?.wildlifePestPressure ||
+          [],
+
+        prosoWildlifeData:
+          crop.id ===
+            "CROP-PROSO-MILLET"
+              ? crop.plannerData
+                  ?.risks
+                  ?.wildlife ||
+                null
+              : null,
+
         lifecycleAdjustment:
           lifecycleAdjustment
             .adjustment,
