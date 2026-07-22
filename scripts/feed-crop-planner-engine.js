@@ -5084,14 +5084,43 @@ const finalScore =
             ?.wildlifePestPressure ||
           [],
 
-        prosoWildlifeData:
-          crop.id ===
-            "CROP-PROSO-MILLET"
-              ? crop.plannerData
-                  ?.risks
-                  ?.wildlife ||
-                null
-              : null,
+        cropWildlifeData: {
+  nestedWildlife:
+    crop.plannerData
+      ?.risks
+      ?.wildlife ||
+    null,
+
+  wildlifeRiskScore:
+    crop.plannerData
+      ?.risks
+      ?.wildlifeRiskScore ??
+    null,
+
+  wildlifePressureScore:
+    crop.plannerData
+      ?.risks
+      ?.wildlifePressureScore ??
+    null,
+
+  birdLossRiskScore:
+    crop.plannerData
+      ?.risks
+      ?.birdLossRiskScore ??
+    null,
+
+  storagePestRiskScore:
+    crop.plannerData
+      ?.risks
+      ?.storagePestRiskScore ??
+    null,
+
+  rodentAttractionScore:
+    crop.plannerData
+      ?.risks
+      ?.rodentAttractionScore ??
+    null
+},
 
         lifecycleAdjustment:
           lifecycleAdjustment
