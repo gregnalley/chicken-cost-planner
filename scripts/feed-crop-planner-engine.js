@@ -4845,6 +4845,12 @@ function scoreGenericCropProfile(
       answers
     );
 
+     const wildlife =
+    getGenericWildlifePenalty(
+      crop,
+      answers
+    ); 
+
   const usePathResults =
     crop.plannerData.usePaths
       .map(usePath =>
