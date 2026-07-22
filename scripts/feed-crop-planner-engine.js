@@ -4903,6 +4903,58 @@ const finalScore =
         lifecycleAdjustment.adjustment
       );
 
+     if (
+    profile.id ===
+      "PROFILE-MILLET-SHORT-SEASON-DRY" &&
+    [
+      "CROP-WHEAT",
+      "CROP-PROSO-MILLET"
+    ].includes(crop.id)
+  ) {
+    console.log(
+      `Profile 12 — ${crop.name}`,
+      {
+        baseScore:
+          Number.isFinite(baseScore)
+            ? Number(
+                baseScore.toFixed(2)
+              )
+            : null,
+
+        usePathScore:
+          Number.isFinite(
+            usePathScore
+          )
+            ? usePathScore
+            : null,
+
+        wildlifePenalty:
+          wildlife.penalty,
+
+        lifecycleAdjustment:
+          lifecycleAdjustment
+            .adjustment,
+
+        finalScore:
+          Number.isFinite(
+            finalScore
+          )
+            ? Number(
+                finalScore.toFixed(2)
+              )
+            : null,
+
+        bestUsePath:
+          bestUsePath?.usePathId ||
+          null,
+
+        usePathLimitations:
+          bestUsePath?.limitations ||
+          []
+      }
+    );
+  }   
+
   const knownCategoryCount =
     Object.values(categoryResults)
       .filter(result =>
