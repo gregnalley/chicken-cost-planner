@@ -2000,7 +2000,7 @@ goalPriorities: [
     answers: {
       climate: {
         climateType:
-          "continental",
+          "cold-short-summer",
 
         frostFreeSeasonRange:
           "90-119"
@@ -2049,29 +2049,29 @@ goalPriorities: [
           "moderate"
       },
 
-      soil: {
+       soil: {
         primaryGrowingMedium:
           "native-soil",
 
         soilTexture:
-          "sandy",
+          "sandy-loam",
 
         soilDrainage:
-          "fast-draining"
+          "very-fast"
       },
 
       water: {
         waterReliability:
-          "limited",
+          "frequently-limited",
 
         wateringFrequencyPreference:
-          "weekly-or-less",
+          "weekly",
 
         waterConservationPriority:
-          "high",
+          "top-priority",
 
         criticalStageWaterAvailability:
-          "limited"
+          "occasional"
       },
 
       labor: {
