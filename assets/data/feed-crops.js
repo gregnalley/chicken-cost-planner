@@ -42539,351 +42539,947 @@ plannerData: {
     },
 
     ///////////////////////////////////////////////
-    //
-    //
-    //
-    //
-    //  CROP - WHEAT
-    //
-    //
-    //
-    //
-    //////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - WHEAT
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
 
   "CROP-WHEAT": {
-    "id": "CROP-WHEAT",
-    "name": "Wheat",
-    "scientificName": "Triticum aestivum",
-    "category": "Cool-Season Grain, Forage, and Cover Crop",
-    "cropType": "Annual",
-    "seasonType": "Cool Season",
-    "status": "Initial Research Complete",
-    "summary": "Wheat is a cool-season annual cereal that can provide controlled young forage, whole mature seed heads, or dry stored grain for adult chickens. Mature wheat grain is a relatively low-fiber, energy-oriented cereal with more protein than corn, while winter wheat can also provide erosion control, nutrient scavenging, weed suppression, and seasonal ground cover. It remains a supplemental crop rather than a complete poultry ration.",
+    id:
+      "CROP-WHEAT",
 
-    "chickenUse": {
-      "edibleParts": [
-        "Young vegetative leaves and shoots",
-        "Mature wheat kernels",
-        "Whole mature seed heads",
-        "Threshed whole grain",
-        "Cracked or coarsely ground grain"
+    name:
+      "Wheat",
+
+    scientificName:
+      "Triticum aestivum",
+
+    category:
+      "Cool-Season Cereal Grain",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Cool Season",
+
+    status:
+      "Initial Research Complete",
+
+    summary:
+      "Wheat is a cool-season annual cereal that can provide young green forage, protected living forage, mature whole seed heads, storable grain, cracked or coarsely ground grain, sprouts, postharvest gleaning, straw, erosion protection, nutrient scavenging, and winter cover. Wheat grain is primarily an energy ingredient with moderate protein and relatively low fiber compared with ordinary hulled Barley or Oats. Its practical backyard value depends heavily on available growing area, whether the intended product is forage, whole heads, or cleaned loose grain, and whether the grower is willing to manage cutting, drying, threshing, cleaning, storage, wildlife protection, and ration balance.",
+
+    chickenUse: {
+      edibleParts: [
+        "Young vegetative leaves",
+        "Tender shoots",
+        "Short young forage",
+        "Mature whole seed heads",
+        "Mature whole grain",
+        "Cracked mature grain",
+        "Coarsely ground mature grain",
+        "Clean Wheat sprouts",
+        "Residual grain after harvest"
       ],
 
-      "primaryValue": [
-        "Cool-season fresh forage",
-        "Concentrated carbohydrate energy",
+      primaryValue: [
+        "Carbohydrate energy",
         "Moderate protein",
-        "Pecking and foraging enrichment",
-        "Dry grain storage",
-        "Seasonal ground cover"
+        "Stored grain",
+        "Cool-season forage",
+        "Whole-head enrichment",
+        "Sprouting",
+        "Postharvest gleaning",
+        "Seasonal ground cover",
+        "Cover-crop biomass",
+        "Crop-rotation value"
       ],
 
-      "feedingForms": [
+      feedingForms: [
+        "Fresh young cut-and-carry forage",
         "Protected living forage",
-        "Cut-and-carry young greens",
-        "Whole dried seed heads",
-        "Threshed whole grain",
-        "Cracked or coarsely ground grain",
-        "A measured ingredient in a properly balanced poultry ration"
+        "Controlled rotational grazing",
+        "Whole dried Wheat seed heads",
+        "Whole dry Wheat grain",
+        "Cracked dry Wheat grain",
+        "Coarsely ground ration ingredient",
+        "Clean short Wheat sprouts",
+        "Postharvest field gleaning"
       ],
 
-      "bestFor": [
-        "Adult chickens receiving a complete base ration",
+      bestFor: [
+        "Established adult chickens",
         "Cool-season feed gardens",
         "Protected forage frames",
-        "Rotational chicken areas",
-        "Small-flock enrichment",
-        "Dry winter grain storage",
-        "Growers seeking a dual-purpose forage and grain crop"
+        "Rotational poultry areas",
+        "Measured supplemental grain",
+        "Whole-head pecking enrichment",
+        "Seasonal stored grain",
+        "Cover-crop and poultry-system integration",
+        "Growers with sufficient space for a dense cereal stand",
+        "Growers willing to separate forage production from grain production"
       ],
 
-      "supplementOnly": true,
+      supplementOnly:
+        true,
 
-      "preparationNotes": "For forage use, provide controlled access to young vegetative growth or harvest clean young leaves for cut-and-carry feeding. Where grain harvest is intended, stop grazing or cutting before stem jointing so the growing point and future grain yield are not damaged. Harvest mature heads after the kernels have filled, then dry thoroughly before storing whole heads or threshed grain. Whole grain may be fed as a measured supplement to adult chickens; cracking or coarse grinding can improve handling but is not required for every adult flock.",
+      preparationNotes:
+        "For forage use, allow the stand to establish before controlled grazing or cutting. Where the same planting is expected to produce mature grain, discontinue grazing or repeated cutting before stem jointing or first hollow stem so the developing grain-producing stems are not seriously damaged. For whole-head use, cut mature heads after kernels have filled, dry them thoroughly under protected and ventilated conditions, inspect them, and store them away from moisture, insects, rodents, and wild birds. For loose grain, thresh, winnow, clean, sort, verify adequate dryness, and store the sound grain in a cool, dry, food-safe, rodent-resistant container. Whole grain can be offered in measured quantities to established adult chickens with access to appropriate grit. Cracking or coarse grinding can improve mixing and handling but reduces storage stability compared with intact grain.",
 
-      "safetyNotes": "Wheat must supplement rather than replace an age-appropriate complete poultry ration. Do not feed moldy, musty, sprouted, heat-damaged, ergot-contaminated, chemically treated, or otherwise questionable grain or forage. Keep planting seed treated with fungicides or insecticides completely separate from feed. Avoid unrestricted access to mature standing wheat if the crop is expected to produce grain."
+      safetyNotes:
+        "Wheat must not replace an age-appropriate complete poultry ration unless it is incorporated into a properly formulated diet. Never feed moldy, musty, heated, wet, storage-sprouted, insect-damaged, rodent-contaminated, chemically treated, ergot-contaminated, Fusarium-damaged, or otherwise questionable grain. Keep treated planting seed physically separated from every feed, sprouting, and household-food supply. Fresh Wheat forage should be clean, actively growing, free from decay, and offered as a supplement rather than a nutritionally complete feed. Excess grain can dilute dietary protein quality, calcium, vitamins, minerals, and other nutrients supplied by complete feed."
     },
 
-    "nutrition": {
-      "basis": "Approximate values for dry hard and soft wheat grain used as poultry-feed ingredients. Composition varies by wheat class, cultivar, growing environment, test weight, damage, and analytical method. Fresh forage and wheat by-products are not nutritionally equivalent to whole grain.",
+    nutrition: {
+      basis:
+        "Approximate values for mature common Wheat grain, primarily expressed on a dry-matter basis. Composition varies with Wheat class, cultivar, hard versus soft grain type, growing environment, nitrogen availability, rainfall, heat, test weight, kernel damage, disease, storage, and analytical method. Fresh forage, sprouts, whole grain, bran, middlings, screenings, flour, and other Wheat products are not nutritionally equivalent.",
 
-      "crudeProteinPercent": "Approximately 10.8% to 13.5% for soft and hard wheat grain",
+      crudeProteinPercent:
+        "Approximately 12.6% of dry matter on average, with substantial variation among Wheat classes, cultivars, production environments, and individual grain samples",
 
-      "fatPercent": "Approximately 1.7% to 1.9%",
+      fatPercent:
+        "Approximately 1.7% ether extract on a dry-matter basis",
 
-      "fiberPercent": "Approximately 2.8% to 3.0%",
+      fiberPercent:
+        "Approximately 2.6% crude fiber, 13.9% neutral-detergent fiber, and 3.6% acid-detergent fiber on a dry-matter basis, with variation among samples",
 
-      "calciumPercent": "Approximately 0.05%",
+      starchPercent:
+        "Generally high and commonly approximately 60% to 70% of dry matter, depending on Wheat class, cultivar, environment, grain quality, and analytical method",
 
-      "phosphorusPercent": "Approximately 0.30% to 0.41% total phosphorus",
+      calciumPercent:
+        "Approximately 0.05% of dry matter, with variation among samples",
 
-      "notableNutrients": [
-        "Starch-based energy",
-        "Moderate protein",
-        "More lysine and tryptophan than corn",
-        "Low crude fiber relative to ordinary hulled oats",
+      phosphorusPercent:
+        "Approximately 0.35% to 0.40% of dry matter as total phosphorus, much of which is associated with phytate and is not fully available to poultry",
+
+      metabolizableEnergy:
+        "High for a cereal grain and often reasonably close to Corn in poultry diets, although exact energy value varies with Wheat class, grain quality, non-starch-polysaccharide concentration, processing, and poultry age",
+
+      notableNutrients: [
+        "Starch",
+        "Moderate crude protein",
         "Phosphorus",
-        "Gluten-forming proteins"
+        "Potassium",
+        "Magnesium",
+        "B vitamins",
+        "Vitamin E in the germ",
+        "Moderate lysine relative to Corn",
+        "Low crude fiber relative to ordinary hulled Barley or Oats",
+        "Dietary fiber concentrated primarily in the bran layers"
       ],
 
-      "limitations": [
-        "Wheat is an energy grain rather than a complete poultry feed",
-        "Protein level and amino-acid balance vary among hard and soft wheat classes",
-        "Calcium is very low for laying-hen requirements",
-        "Most phosphorus is not fully available to poultry because much occurs as phytate",
-        "Large supplemental amounts can dilute vitamins, minerals, calcium, and balanced amino acids from complete feed",
-        "Fresh forage, whole grain, bran, middlings, screenings, and other wheat products must not be treated as nutritionally identical",
-        "Damaged, moldy, sprouted, ergot-contaminated, or chemically treated wheat is unsuitable for flock use"
-      ]
-    },
+      aminoAcidStrengths: [
+        "Wheat generally contains more crude protein than Corn",
+        "Wheat generally provides more lysine and tryptophan than Corn on an equal-weight basis",
+        "Wheat can contribute meaningful amino acids when incorporated into a properly balanced ration",
+        "Hard Wheat classes often contain more crude protein than soft Wheat classes"
+      ],
 
-    "growing": {
-      "sunlight": "Full sun",
+      aminoAcidLimitations: [
+        "Wheat alone does not provide a complete poultry amino-acid balance",
+        "Lysine remains limiting relative to the needs of productive poultry",
+        "Methionine and other sulfur amino acids may remain limiting",
+        "Higher crude protein does not guarantee adequate digestible amino-acid balance",
+        "Protein concentration and amino-acid availability vary among Wheat classes and grain samples"
+      ],
 
-      "soilTemperatureMinimumF": null,
+      betaGlucanConcern:
+        false,
 
-      "idealSoilTemperatureF": null,
+      phytateConcern:
+        true,
 
-      "frostTolerance": "Moderate to High for adapted winter-wheat varieties; variety- and growth-stage-dependent",
+      hullFiberConcern:
+        false,
 
-      "heatTolerance": "Low to Moderate during reproductive growth",
+      notableAntinutritionalFactors: [
+        "Phytate",
+        "Arabinoxylans",
+        "Other soluble and insoluble non-starch polysaccharides",
+        "Possible enzyme inhibitors",
+        "Ergot alkaloids when grain is contaminated",
+        "Mycotoxins when grain is infected or improperly stored"
+      ],
 
-      "droughtTolerance": "Moderate after establishment, but moisture stress can reduce tillering, head development, and grain fill",
+      processingEffects: [
+        "Threshing removes heads, straw, and much of the chaff from the usable grain.",
+        "Cleaning and sorting remove foreign material, damaged kernels, weed seed, ergot bodies, insects, and other contaminants.",
+        "Cracking reduces particle size and can improve access for mixing or feeding but increases exposed surface area and shortens dependable storage life.",
+        "Coarse grinding permits use as a ration ingredient but increases dust, separation, oxidation, and moisture-absorption risk.",
+        "Very fine grinding can reduce physical feed quality and increase dust.",
+        "Sprouting increases moisture and changes the physical form of the grain but does not create additional dry matter.",
+        "Respiration during sprouting consumes stored carbohydrate and can reduce recoverable dry matter.",
+        "Enzyme preparations such as xylanase may improve nutrient use in professionally formulated Wheat-based poultry diets.",
+        "Heat, moisture, insects, mold, and prolonged poor storage reduce grain quality.",
+        "Household processing does not make an unbalanced Wheat-based ration nutritionally complete."
+      ],
 
-      "soilPHMinimum": 6.0,
+      poultryLimitations: [
+        "Wheat is primarily an energy ingredient rather than a concentrated protein supplement",
+        "Wheat does not provide enough calcium for laying hens",
+        "Wheat alone cannot provide a balanced poultry ration",
+        "Excess supplementation can displace complete feed",
+        "Excess supplementation can dilute vitamins and minerals",
+        "Excess supplementation can dilute balanced amino acids",
+        "Phytate reduces phosphorus availability",
+        "Non-starch polysaccharides can reduce nutrient use in some Wheat samples",
+        "Very finely ground Wheat may create handling and digestive problems",
+        "Young chicks are less suitable recipients of informal whole-grain supplementation",
+        "Fresh forage is much higher in moisture and lower in dry-matter energy density than mature grain",
+        "Sprouted Wheat is not nutritionally equivalent to an equal wet weight of dry grain",
+        "Damaged, moldy, ergot-contaminated, Fusarium-infected, or chemically treated Wheat may be unsafe",
+        "A universal backyard inclusion percentage is not supported"
+      ],
 
-      "soilPHMaximum": 7.0,
+      directFacts: {
+        primaryNutritionalRole:
+          "energy-oriented-cereal-grain",
 
-      "waterNeeds": "Moderate; dependable moisture is important for germination, establishment, tillering, stem elongation, heading, flowering, and grain filling, while saturated soil and poor drainage raise disease and root-loss risk",
+        highProteinFeed:
+          false,
 
-      "directSow": true,
+        highFatFeed:
+          false,
 
-      "transplantRecommended": false,
+        highFiberRelativeToCorn:
+          false,
 
-      "daysToFirstHarvestMinimum": null,
+        betaGlucansPresent:
+          false,
 
-      "daysToFirstHarvestMaximum": null,
+        arabinoxylansPresent:
+          true,
 
-      "daysToMaturityMinimum": null,
+        lowerEnergyThanCorn:
+          false,
 
-      "daysToMaturityMaximum": null,
+        lowerEnergyThanBarley:
+          false,
 
-      "plantSpacingInches": "Normally planted as a dense drilled or broadcast stand rather than individually spaced plants",
+        lowerFiberThanOrdinaryHulledBarley:
+          true,
 
-      "rowSpacingInches": "Approximately 6 to 7.5 inches for drilled production; backyard layouts may vary",
+        lowerFiberThanOrdinaryHulledOats:
+          true,
 
-      "plantingDepthInches": "Approximately 0.75 to 1.5 inches; avoid planting deeper than about 1.5 to 2 inches",
+        hullRemovalNormallyRequired:
+          false,
 
-      "successionPlanting": false,
+        enzymeSupplementationCanImproveUse:
+          true,
 
-      "regrowthAfterHarvest": false
-    },
+        completeFeed:
+          false,
 
-    "regionalPlanting": {
-      "coldNorth": {
-        "plantingWindow": "Plant locally adapted winter wheat in late summer or early fall early enough to establish before winter, or plant spring wheat as soon as soil is workable where winter wheat is unreliable. Use regional variety recommendations because winter hardiness and vernalization requirements vary.",
-
-        "harvestWindow": "Late spring through summer, depending on winter versus spring type and local climate."
-      },
-
-      "midwestNortheast": {
-        "plantingWindow": "Plant winter wheat during the locally recommended fall window, commonly after summer crops are removed. Spring wheat may be planted early in spring in regions where it is adapted.",
-
-        "harvestWindow": "Late spring through midsummer, depending on wheat class, planting date, and latitude."
-      },
-
-      "upperSouth": {
-        "plantingWindow": "Plant winter wheat in fall near the locally recommended grain-planting window. Earlier planting may increase fall forage but can also increase insect, disease, and grain-yield risks.",
-
-        "harvestWindow": "Late spring to early summer."
-      },
-
-      "deepSouth": {
-        "plantingWindow": "Plant adapted winter wheat during the regional fall window after temperatures moderate. Select varieties with appropriate vernalization, disease resistance, and maturity for the location.",
-
-        "harvestWindow": "Spring to early summer."
-      },
-
-      "southwest": {
-        "plantingWindow": "Plant adapted winter or spring wheat according to elevation, winter temperatures, irrigation availability, and local production guidance. Avoid placing grain fill in extreme heat where possible.",
-
-        "harvestWindow": "Late spring through summer, depending on elevation and wheat type."
-      },
-
-      "pacificNorthwest": {
-        "plantingWindow": "Plant locally adapted winter wheat in fall or spring wheat early in spring, depending on rainfall zone, winter hardiness, disease pressure, and local production system.",
-
-        "harvestWindow": "Summer."
-      },
-
-      "coastalWest": {
-        "plantingWindow": "Plant during the locally recommended cool-season window, often fall through winter in mild climates. Variety selection and disease management are important where winters are wet.",
-
-        "harvestWindow": "Late spring through summer."
+        notes: [
+          "Wheat grain is primarily a concentrated carbohydrate-energy ingredient.",
+          "Its protein level is commonly higher than Corn but remains incomplete for poultry when used alone.",
+          "Hard and soft Wheat classes should not automatically be treated as nutritionally identical.",
+          "Wheat is generally lower in fiber and higher in usable poultry energy than ordinary hulled Barley.",
+          "Arabinoxylans and other non-starch polysaccharides can affect nutrient use and digestive viscosity.",
+          "Phytate binds much of the grain's phosphorus.",
+          "Whole grain, cracked grain, ground grain, fresh forage, sprouts, bran, middlings, and screenings must remain separate planner products.",
+          "Sprouting does not multiply the dry feed contained in the original grain.",
+          "Published inclusion rates from professionally balanced diets should not be converted into a universal backyard feeding percentage.",
+          "The planner should distinguish occasional measured supplementation from use as a formulated ration ingredient."
+        ]
       }
     },
 
-    "spaceAndYield": {
-      "plantsPer10SquareFeet": null,
+        growing: {
+      sunlight:
+        "Full sun",
 
-      "plantsPer50SquareFeet": null,
+      soilTemperatureMinimumF:
+        40,
 
-      "plantsPer100SquareFeet": null,
+      idealSoilTemperatureF:
+        "Approximately 40°F or warmer for reliable germination and early establishment, although adapted winter Wheat is commonly planted into cooling autumn soils and spring Wheat is planted as soon as workable soil conditions allow.",
 
-      "expectedYieldPerPlantMinimumLbs": null,
+      frostTolerance:
+        "Moderate to High depending on growth stage and whether winter or spring Wheat is grown",
 
-      "expectedYieldPerPlantMaximumLbs": null,
+      winterHardiness:
+        "Highly variety dependent; winter Wheat is generally more winter hardy than winter Barley but less hardy than Cereal Rye",
 
-      "expectedYieldPer100SquareFeetMinimumLbs": null,
+      heatTolerance:
+        "Low to Moderate",
 
-      "expectedYieldPer100SquareFeetMaximumLbs": null,
+      droughtTolerance:
+        "Moderate after establishment, although drought during stem elongation, flowering, and grain fill can greatly reduce yield",
 
-      "edibleYieldPercent": null,
+      salinityTolerance:
+        "Moderate",
 
-      "storageLife": "Potentially many months when grain is clean, sound, adequately dried, cooled, protected from insects and rodents, and monitored under suitable storage conditions",
+      waterloggingTolerance:
+        "Low",
 
-      "storageMethod": "Thresh and clean mature grain, dry it to a safe moisture level for the intended storage duration and climate, cool it before sealing, and store it in a dry rodent-resistant container. Inspect regularly for condensation, heating, insects, off odors, sprouting, and mold. Whole heads require more storage volume and careful drying.",
+      soilPHMinimum:
+        6.0,
 
-      "yieldNotes": "No backyard yield estimate is assigned. Commercial wheat yields depend on wheat class, cultivar, planting date, stand density, soil fertility, winter survival, rainfall or irrigation, weeds, insects, diseases, lodging, bird loss, harvest timing, and whether the crop is also grazed. Commercial seeding rates and field yields should not be converted directly into a guaranteed backyard yield per square foot."
+      soilPHMaximum:
+        7.5,
+
+      waterNeeds:
+        "Low to moderate overall, with dependable moisture being most important during germination, establishment, tillering, stem elongation, flowering, and grain filling.",
+
+      directSow:
+        true,
+
+      transplantRecommended:
+        false,
+
+      springVarietiesAvailable:
+        true,
+
+      winterVarietiesAvailable:
+        true,
+
+      facultativeVarietiesAvailable:
+        true,
+
+      hardRedVarietiesAvailable:
+        true,
+
+      hardWhiteVarietiesAvailable:
+        true,
+
+      softRedVarietiesAvailable:
+        true,
+
+      softWhiteVarietiesAvailable:
+        true,
+
+      durumVarietiesAvailable:
+        true,
+
+      awnedVarietiesAvailable:
+        true,
+
+      awnlessVarietiesAvailable:
+        true,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        null,
+
+      daysToMaturityMaximum:
+        null,
+
+      daysToPollinationAfterEmergence:
+        "Approximately 7 to 9 weeks for many spring Wheat cultivars under favorable conditions; strongly dependent upon Wheat class, cultivar, temperature, and vernalization.",
+
+      plantSpacingInches:
+        null,
+
+      rowSpacingInches:
+        "Commonly drilled in narrow rows; backyard spacing depends on planting method, weed management, and intended harvest.",
+
+      plantingDepthInches:
+        "Approximately 1 to 1.5 inches under most conditions, with adjustments for soil moisture and texture.",
+
+      successionPlanting:
+        false,
+
+      regrowthAfterHarvest:
+        "Limited regrowth may occur after early forage removal, but mature grain harvest ends the annual crop.",
+
+      tillering:
+        true,
+
+      windPollinated:
+        true,
+
+      selfPollinated:
+        true,
+
+      directFacts: {
+        coolSeasonAnnual:
+          true,
+
+        springAndWinterTypesExist:
+          true,
+
+        facultativeTypesExist:
+          true,
+
+        earlySpringPlantingSuitable:
+          true,
+
+        fallPlantingSuitableWithWinterVarieties:
+          true,
+
+        vernalizationRequiredForWinterTypes:
+          true,
+
+        pollinationTimingAfterEmergenceWeeksMinimum:
+          7,
+
+        pollinationTimingAfterEmergenceWeeksMaximum:
+          9,
+
+        optimalSmallGrainTemperatureMaximumF:
+          85,
+
+        highTemperaturePhotosynthesisDecline:
+          true,
+
+        headingHeatSensitive:
+          true,
+
+        floweringHeatSensitive:
+          true,
+
+        grainFillHeatSensitive:
+          true,
+
+        wellDrainedSoilRequired:
+          true,
+
+        notes: [
+          "Spring Wheat should generally be planted as early as practical after soils become workable.",
+          "Winter Wheat should be planted early enough to establish before winter without becoming excessively advanced.",
+          "Winter Wheat normally requires vernalization before producing normal heads.",
+          "Early planting often allows flowering and grain filling before severe summer heat.",
+          "High temperatures during heading and grain fill commonly reduce grain production.",
+          "Winter Wheat generally survives colder winters than winter Barley.",
+          "Standing water greatly increases disease risk.",
+          "Deep planting may delay emergence and reduce tillering.",
+          "High nitrogen fertility can increase lodging.",
+          "Cultivar-specific maturity data should be preferred over generalized maturity estimates.",
+          "Different Wheat classes should not automatically be treated as agronomically identical."
+        ]
+      }
     },
 
-    "economics": {
-      "seedCostEstimate": "Usually low to moderate, depending on certified seed, wheat class, variety, and quantity",
+    regionalPlanting: {
+      coldNorth: {
+        plantingWindow:
+          "Plant spring Wheat as soon as soil is workable. Winter Wheat is practical only where locally adapted winter-hardy cultivars reliably survive.",
 
-      "equipmentCostEstimate": "Low for a small hand-sown trial; optional costs include a seed drill or spreader, irrigation, fencing or forage frames, bird protection, sickle or shears, threshing screens, winnowing equipment, drying equipment, and grain-storage containers",
+        harvestWindow:
+          "Generally midsummer through late summer depending on Wheat type and planting date.",
 
-      "irrigationCostLevel": "Low to Moderate",
+        varietyGuidance:
+          "Select early-maturing spring cultivars or proven winter-hardy varieties with strong disease resistance."
+      },
 
-      "laborLevel": "Moderate",
+      midwestNortheast: {
+        plantingWindow:
+          "Plant spring Wheat early in spring or winter Wheat during the locally recommended autumn window.",
 
-      "potentialFeedSavings": "Not yet quantified. Economic value depends on usable grain or forage yield, land, labor, processing losses, storage losses, and the cost of purchased complete feed. Homegrown wheat should not be valued pound-for-pound as a replacement for complete ration.",
+        harvestWindow:
+          "Typically midsummer for spring Wheat and early-to-mid summer for winter Wheat.",
 
-      "economicNotes": "Wheat can provide value beyond chicken feed through erosion control, nutrient scavenging, weed suppression, soil cover, straw, and possible household grain use. Small plantings may be most economical when used as protected forage or whole-head enrichment, because threshing, cleaning, drying, and storing loose grain add labor."
-    },
+        varietyGuidance:
+          "Prioritize resistance to Fusarium head blight, rusts, lodging, and local diseases."
+      },
 
-    "scores": {
-      "easeOfGrowing": null,
+      upperSouth: {
+        plantingWindow:
+          "Winter Wheat is normally planted during autumn after temperatures moderate and before severe freezes.",
 
-      "yieldPerSquareFoot": null,
+        harvestWindow:
+          "Late spring through early summer.",
 
-      "nutritionalUsefulness": null,
+        varietyGuidance:
+          "Choose locally adapted winter Wheat with appropriate disease resistance and maturity."
+      },
 
-      "proteinContribution": null,
+      deepSouth: {
+        plantingWindow:
+          "Plant adapted winter Wheat during autumn after heat subsides. Spring Wheat is generally poorly adapted.",
 
-      "energyContribution": null,
+        harvestWindow:
+          "Spring through early summer before prolonged humidity and rainfall increase harvest difficulties.",
 
-      "storageValue": null,
+        varietyGuidance:
+          "Use disease-resistant winter cultivars adapted to warm humid regions."
+      },
 
-      "smallSpaceSuitability": null,
+      southwest: {
+        plantingWindow:
+          "Plant during the cool season according to elevation, irrigation availability, and local recommendations.",
 
-      "heatTolerance": null,
+        harvestWindow:
+          "Late spring through midsummer depending upon elevation and irrigation.",
 
-      "coldTolerance": null,
+        varietyGuidance:
+          "Select drought-tolerant cultivars with good straw strength and appropriate maturity."
+      },
 
-      "laborEfficiency": null,
+      pacificNorthwest: {
+        plantingWindow:
+          "Winter Wheat is commonly planted in autumn, while spring Wheat is planted early where appropriate.",
 
-      "economicPotential": null,
+        harvestWindow:
+          "Summer through early autumn depending upon region and cultivar.",
 
-      "safetySimplicity": null
-    },
+        varietyGuidance:
+          "Match cultivars to rainfall pattern, disease pressure, and intended grain or forage use."
+      },
 
-    "rankings": {
-      "practicalScore": null,
+      coastalWest: {
+        plantingWindow:
+          "Plant during the cool rainy season where winters are mild.",
 
-      "nutritionalScore": null,
+        harvestWindow:
+          "Late spring through summer.",
 
-      "bcpFeedScore": null
-    },
+        varietyGuidance:
+          "Use locally adapted disease-resistant cultivars suited to coastal humidity."
+      },
 
-        "evidence": {
-      "evidenceStrength": "Strong for commercial cultivation, forage management, grain storage, and wheat use in poultry diets; limited for backyard-scale grain yield, flock-specific forage intake, and direct feed-savings estimates",
-      "sources": [
-        {
-          "title": "Wheat in Poultry Diets",
-          "organization": "Small and Backyard Poultry Extension",
-          "url": "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/wheat-in-poultry-diets/",
-          "use": "Poultry-feed value, hard and soft wheat nutrient composition, energy comparison with corn, fiber, protein, amino acids, calcium, phosphorus, and wheat by-product distinctions"
-        },
-        {
-          "title": "Planting Guide for Row Crops in Georgia",
-          "organization": "University of Georgia Cooperative Extension",
-          "url": "https://extension.uga.edu/publications/detail.html?number=C813",
-          "use": "Wheat planting windows, seeding rate, row density, planting-depth limit, harvest period, and certified-seed guidance"
-        },
-        {
-          "title": "Southern Small Grains Resource Management Handbook",
-          "organization": "University of Georgia Cooperative Extension",
-          "url": "https://extension.uga.edu/publications/detail.html?number=B1190",
-          "use": "Southern wheat planting, forage-versus-grain timing, establishment, tillering, winter damage, disease, harvest, and storage management"
-        },
-        {
-          "title": "Georgia Forages: Grass Species",
-          "organization": "University of Georgia Cooperative Extension",
-          "url": "https://extension.uga.edu/publications/detail.html?number=B1351",
-          "use": "Wheat winter hardiness, forage timing, grazing and silage value, and removal before jointing when grain production is intended"
-        },
-        {
-          "title": "Winter Wheat as a Cover Crop",
-          "organization": "Penn State Extension",
-          "url": "https://extension.psu.edu/winter-wheat-as-a-cover-crop",
-          "use": "Winter hardiness, vernalization, erosion control, nutrient scavenging, organic matter, weed suppression, seeding depth, row spacing, and cover-crop management"
-        },
-        {
-          "title": "Impact of Grazing on Wheat Grain Yield",
-          "organization": "Oklahoma State University Extension",
-          "url": "https://extension.okstate.edu/fact-sheets/impact-of-grazing-on-wheat-grain-yield",
-          "use": "Effect of grazing and planting date on subsequent grain yield and importance of ending grazing by first hollow stem"
-        },
-        {
-          "title": "Grain Harvest – Timely Info",
-          "organization": "University of Georgia Cooperative Extension",
-          "url": "https://site.extension.uga.edu/plowpoints/2022/05/grain-harvest-timely-info/",
-          "use": "Wheat drying and safe long-term storage moisture guidance for Georgia conditions"
-        }
-      ],
-      "lastReviewed": "2026-07-17",
-      "researchNotes": [
-        "Keep winter wheat and spring wheat planting logic distinct in future regional profiles.",
-        "Do not treat wheat forage, whole grain, bran, middlings, screenings, or flour as nutritionally interchangeable.",
-        "Do not assign a backyard grain yield until a defensible small-plot source or measured trials are available.",
-        "Do not assign an exact flock inclusion percentage without formulation context and poultry-stage-specific guidance.",
-        "Research backyard threshing and winnowing methods before recommending equipment.",
-        "Research awned versus awnless varieties for whole-head flock use.",
-        "Research local disease-resistant varieties before building state-level recommendations.",
-        "Retain treated-seed, ergot, mold, sprouting, and storage-insect warnings in every public guide.",
-        "Calculate comparative scores only after Wheat is tested against Oats, Barley, Rye, Triticale, Millet, Sorghum, and Corn under the same scoring rules."
+      highElevation: {
+        plantingWindow:
+          "Plant spring Wheat as soon as soils become workable after winter.",
+
+        harvestWindow:
+          "Late summer before early frosts.",
+
+        varietyGuidance:
+          "Choose early-maturing cultivars developed for short growing seasons."
+      },
+
+      regionalNotes: [
+        "Spring and winter Wheat should never be treated as interchangeable.",
+        "Local variety trials provide better recommendations than generalized planting dates.",
+        "Winter survival depends upon cultivar, planting date, snow cover, drainage, and minimum temperatures.",
+        "Heat stress during flowering and grain filling greatly reduces grain production.",
+        "Humid climates increase disease pressure and harvest drying difficulties.",
+        "Commercial grain-production recommendations should not automatically be applied to backyard poultry gardens."
       ]
     },
 
-    "plannerData": {
-      "schemaVersion": "1.0.0",
-      "developmentStatus": "ready",
+            spaceAndYield: {
+      plantsPer10SquareFeet:
+        null,
 
-      "identity": {
-        "plannerName": "Wheat",
-        "shortLabel": "Wheat",
-        "icon": "🌾",
-        "cropCategory": "grain",
-        "primaryFeedCategory": "energy",
-        "guideUrl": "growing-wheat-for-chickens.html"
+      plantsPer50SquareFeet:
+        null,
+
+      plantsPer100SquareFeet:
+        null,
+
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      hullPercentage:
+        null,
+
+      bushelWeightLbs:
+        60,
+
+      storageLife:
+        "Potentially many months when mature Wheat grain is sound, cleaned, adequately dried, cooled, protected from insects and rodents, and stored without condensation or large temperature fluctuations",
+
+      storageMethod:
+        "Thresh mature dry heads, separate the grain from straw and chaff, clean and sort the kernels, verify that they are adequately dry for the intended storage period, and place them in a cool, dark, dry, food-safe, rodent-resistant container. Inspect stored grain regularly for condensation, heating, insects, musty odor, visible mold, sprouting, caking, and rodent contamination. Cracked or ground Wheat should be stored for a shorter period than intact whole grain.",
+
+      yieldNotes:
+        "Commercial Wheat yields are commonly reported in bushels per acre, but those values should not be converted directly into guaranteed backyard pounds per square foot. Small-plot usable yield is affected by Wheat type, cultivar, planting date, seed rate, emergence, tillering, stand survival, soil fertility, rainfall or irrigation, disease, weeds, lodging, wildlife pressure, grain shattering, harvest timing, hand-cutting loss, threshing efficiency, cleaning loss, drying loss, and storage damage. Backyard yield values remain null until suitable small-scale evidence is available.",
+
+      densityNotes:
+        "Wheat is normally planted as a dense drilled or broadcast stand rather than spaced as individual garden plants. Plant counts per square foot are less useful than viable seed rate, emergence percentage, tiller production, fertile-head density, row spacing, and the intended forage or grain use. A small bed can provide forage or whole-head enrichment, but dependable loose-grain production generally becomes more practical as planted area increases.",
+
+      harvestProducts: [
+        "whole-grain",
+        "grain-heads",
+        "straw",
+        "chaff",
+        "green-forage",
+        "wheat-sprouts",
+        "cover-crop-biomass"
+      ],
+
+      harvestByproducts: [
+        "Wheat straw",
+        "Awns from awned cultivars",
+        "Chaff",
+        "Broken kernels",
+        "Screenings",
+        "Bran and fine material from processing",
+        "Root biomass"
+      ],
+
+      byproductNotes: [
+        "Clean, dry Wheat straw may have bedding, mulch, compost-carbon, erosion-control, or garden-residue value but is not a concentrated poultry feed.",
+        "Awns and coarse chaff may be irritating and should not be assumed suitable for unrestricted poultry consumption.",
+        "Screenings require careful inspection because they may concentrate weed seeds, stones, soil, broken grain, insect-damaged kernels, ergot bodies, moldy material, Fusarium-damaged kernels, or chemically treated seed.",
+        "Broken kernels and fine grain particles absorb moisture more readily and generally store less reliably than intact grain.",
+        "Healthy residue may be composted or returned to the soil, while diseased, moldy, chemically contaminated, or rodent-contaminated residue should not be used as feed or bedding."
+      ],
+
+      directFacts: {
+        typicallyPlantedAsDenseStand:
+          true,
+
+        individualPlantSpacingUseful:
+          false,
+
+        tillerCountAffectsHeadDensity:
+          true,
+
+        commercialYieldConversionToBackyardNotSupported:
+          true,
+
+        strawProduced:
+          true,
+
+        notes: [
+          "Wheat is ordinarily established as a dense stand rather than as individually spaced plants.",
+          "A small planting may provide useful fresh forage, protected living forage, sprouts, or whole-head enrichment without producing a large quantity of cleaned grain.",
+          "Loose-grain production generally becomes more practical as growing area increases because cutting, threshing, cleaning, and storage labor are spread across a larger harvest.",
+          "Whole mature heads can reduce threshing labor but require more storage volume and provide less precise measurement of actual grain intake.",
+          "Fresh forage weight contains substantial water and must not be compared directly with dry-grain weight.",
+          "Repeated forage removal may reduce later grain production, especially when grazing or cutting continues after stem jointing begins.",
+          "Dense planting can improve canopy closure and weed competition.",
+          "Excessively dense, highly fertilized, or humid stands may experience greater lodging and disease pressure.",
+          "Low stand density may be partially compensated by additional tillering when moisture, fertility, temperature, and planting time are favorable.",
+          "Wild birds and rodents may remove a meaningful portion of grain from small unprotected plots.",
+          "Hand harvesting, threshing, and cleaning losses may represent a larger percentage of production in very small plots.",
+          "No dependable backyard pounds-per-square-foot guarantee is stored."
+        ]
+      }
+    },
+
+    economics: {
+      seedCostEstimate:
+        "Usually low when purchased as bulk untreated agricultural seed; certified, organic, food-grade, heritage, specialty baking, locally adapted, or small-packet Wheat seed may cost more",
+
+      equipmentCostEstimate:
+        "Low for a small broadcast forage or cover-crop plot; moderate to high where the grower purchases fencing, a forage frame, bird netting, a seed drill, sickle, scythe, drying rack, threshing equipment, screens, winnowing equipment, grain mill, moisture meter, drying fan, sprouting equipment, or sealed grain-storage containers",
+
+      irrigationCostLevel:
+        "Low to Moderate",
+
+      laborLevel:
+        "Moderate to High for homegrown loose grain that must be protected, cut, dried, threshed, winnowed, cleaned, inspected, processed, and stored",
+
+      potentialFeedSavings:
+        null,
+
+      economicAdvantages: [
+        "Wheat seed is usually widely available",
+        "Bulk untreated seed is commonly affordable",
+        "The crop can provide young forage and mature grain",
+        "Whole heads can provide poultry enrichment with less processing than loose grain",
+        "Properly dried whole grain can be stored without refrigeration",
+        "Winter Wheat can protect soil during the cool season",
+        "The crop can reduce erosion",
+        "It can capture residual soil nitrogen",
+        "It can suppress some weeds after establishment",
+        "Wheat straw may provide bedding, mulch, or compost carbon",
+        "The crop can fit into rotation with warm-season feed crops",
+        "Suitable grain may also have household-food value"
+      ],
+
+      economicLimitations: [
+        "Very small grain plots may produce little feed relative to the labor required",
+        "Hand cutting and threshing may require substantial time",
+        "Cleaning losses are difficult to predict",
+        "Wild birds may reduce grain yield near maturity",
+        "Rodents may damage standing or stored grain",
+        "Wet weather can delay harvest and increase sprouting or mold risk",
+        "Fusarium head blight and mycotoxin contamination can destroy feed value",
+        "Ergot contamination can make grain unsafe",
+        "Grinding equipment may be needed for formulated-ration use",
+        "Processed Wheat generally stores less reliably than whole grain",
+        "Protected forage systems require fencing, frames, or controlled flock access",
+        "Household-scale grain production may cost more than purchased bulk Wheat",
+        "Homegrown Wheat cannot be valued pound-for-pound as complete poultry feed"
+      ],
+
+      likelyLowestCostUse:
+        "cover-crop-or-controlled-green-forage",
+
+      likelyHighestLaborUse:
+        "cleaned-ground-grain-for-home-formulated-rations",
+
+      potentialFeedSavingsNotes:
+        "Feed savings cannot be estimated until usable backyard forage or grain yield, wildlife losses, harvest losses, processing losses, storage losses, labor, equipment expense, ration suitability, and the amount of purchased feed safely displaced are known.",
+
+      economicNotes:
+        "Wheat's most dependable backyard value may come from combining several functions rather than measuring grain alone. A planting can provide winter soil cover, erosion reduction, nutrient capture, weed competition, seasonal forage, mature heads, grain, straw, poultry enrichment, and crop-rotation value. Small forage or whole-head plantings may be more practical than cleaned loose-grain production, while larger plots improve the efficiency of harvesting and processing grain."
+    },
+
+    scores: {
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
+    },
+
+    rankings: {
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
+    },
+
+        evidence: {
+      evidenceStrength:
+        "Strong for commercial Wheat agronomy, grain composition, forage production, grain storage, cereal-feed use, winter cover cropping, and formulated poultry diets; moderate for whole-head enrichment and sprouted-grain production; limited for backyard grain yield, hand-processing efficiency, and informal small-flock supplementation.",
+
+      sources: [
+        {
+          title:
+            "Wheat Grain",
+
+          organization:
+            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
+
+          url:
+            "https://www.feedipedia.org/node/223",
+
+          use:
+            "Wheat feed characteristics, poultry energy value, amino-acid composition, fiber, minerals, phytate, cereal-feed comparisons, and poultry-feeding context."
+        },
+
+        {
+          title:
+            "Wheat in Poultry Diets",
+
+          organization:
+            "Small and Backyard Poultry Extension",
+
+          url:
+            "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/wheat-in-poultry-diets/",
+
+          use:
+            "Backyard poultry use, nutrient comparisons with Corn, grain characteristics, whole-grain feeding, and poultry limitations."
+        },
+
+        {
+          title:
+            "Winter Wheat as a Cover Crop",
+
+          organization:
+            "Penn State Extension",
+
+          url:
+            "https://extension.psu.edu/winter-wheat-as-a-cover-crop",
+
+          use:
+            "Winter cover cropping, erosion reduction, nutrient scavenging, weed suppression, establishment, and soil improvement."
+        },
+
+        {
+          title:
+            "Southern Small Grains Resource Management Handbook",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/publications/detail.html?number=B1190",
+
+          use:
+            "Southern Wheat establishment, fertility, forage management, grain production, disease, lodging, harvest, and storage."
+        },
+
+        {
+          title:
+            "Georgia Forages: Grass Species",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/publications/detail.html?number=B1351",
+
+          use:
+            "Winter forage management, grazing considerations, forage timing, and removal before jointing."
+        },
+
+        {
+          title:
+            "Impact of Grazing on Wheat Grain Yield",
+
+          organization:
+            "Oklahoma State University Extension",
+
+          url:
+            "https://extension.okstate.edu/fact-sheets/impact-of-grazing-on-wheat-grain-yield",
+
+          use:
+            "Relationship between forage removal and later grain production."
+        },
+
+        {
+          title:
+            "Planting Guide for Row Crops in Georgia",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://extension.uga.edu/publications/detail.html?number=C813",
+
+          use:
+            "Planting depth, planting windows, row spacing, and seeding recommendations."
+        },
+
+        {
+          title:
+            "Grain Harvest — Timely Info",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://site.extension.uga.edu/plowpoints/2022/05/grain-harvest-timely-info/",
+
+          use:
+            "Harvest timing, drying practices, and safe storage recommendations."
+        }
+      ],
+
+      lastReviewed:
+        "2026-07-22",
+
+      researchNotes: [
+        "Maintain separate planner logic for Winter Wheat and Spring Wheat.",
+        "Do not treat forage, sprouts, grain, bran, middlings, screenings, flour, or straw as nutritionally equivalent.",
+        "Do not convert commercial bushels-per-acre into guaranteed backyard pounds-per-square-foot.",
+        "Do not recommend universal poultry inclusion percentages.",
+        "Differentiate occasional backyard supplementation from professionally formulated rations.",
+        "Research backyard threshing efficiency before assigning harvest yields.",
+        "Research whole-head enrichment separately from loose-grain feeding.",
+        "Research awned versus awnless cultivars for poultry enrichment.",
+        "Research regional disease resistance before adding cultivar recommendations.",
+        "Treat ergot, Fusarium head blight, and storage molds as major poultry safety concerns.",
+        "Research sprouted Wheat independently from mature grain.",
+        "Sprouting does not increase dry matter and may reduce recoverable dry matter.",
+        "Research household grain-cleaning efficiency.",
+        "Leave backyard yield estimates null until defensible small-scale evidence exists.",
+        "Future scoring should distinguish forage production from grain production.",
+        "Future planner updates should account for wildlife pressure separately from agronomic yield."
+      ]
+    },
+
+        plannerData: {
+      schemaVersion:
+        "2.0.0",
+
+      developmentStatus:
+        "ready",
+
+      identity: {
+        plannerName:
+          "Wheat",
+
+        shortLabel:
+          "Wheat",
+
+        icon:
+          "🌾",
+
+        cropCategory:
+          "annual-grain",
+
+        primaryFeedCategory:
+          "cool-season-energy-grain",
+
+        guideUrl:
+          "growing-wheat-for-chickens.html"
       },
 
-      "lifecycle": {
-        "growthCycle": "annual",
-        "isAnnual": true,
-        "isBiennial": false,
-        "isPerennial": false,
-        "isTreeOrShrub": false,
-        "yearsToFirstUsefulHarvest": 0,
-        "yearsToFullProduction": 0,
-        "expectedUsefulLifeYears": 1,
-        "regrowsAfterHarvest": false,
-        "permanentPlantingRequired": false,
-        "reversibleAfterOneSeason": true
+      lifecycle: {
+        growthCycle:
+          "annual",
+
+        isAnnual:
+          true,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          false,
+
+        isTreeOrShrub:
+          false,
+
+        yearsToFirstUsefulHarvest:
+          0,
+
+        yearsToFullProduction:
+          0,
+
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
       },
 
-      "climate": {
-        "suitableClimateTypes": [
+      climate: {
+        suitableClimateTypes: [
           "cold-short-summer",
           "cool-moderate-summer",
           "temperate",
@@ -42893,1052 +43489,7903 @@ plannerData: {
           "high-elevation"
         ],
 
-        "preferredClimateTypes": [
+        preferredClimateTypes: [
           "cool-moderate-summer",
-          "temperate"
+          "temperate",
+          "cold-short-summer"
         ],
 
-        "challengingClimateTypes": [
-          "extreme-heat-during-grain-fill",
-          "waterlogged-winter"
+        challengingClimateTypes: [
+          "extreme-heat",
+          "hot-humid-during-grain-fill",
+          "waterlogged-winter-soil"
         ],
 
-        "minimumFrostFreeDays": null,
-        "preferredFrostFreeDays": null,
-        "minimumSoilTemperatureF": null,
-        "preferredSoilTemperatureF": null,
-        "daysToMaturityMinimum": null,
-        "daysToMaturityMaximum": null,
-        "referenceDaysToPhysiologicalMaturity": null,
-        "dryDownBufferDays": null,
-        "heatToleranceScore": 3,
-        "droughtClimateToleranceScore": 3,
-        "humidityToleranceScore": 3,
-        "coolSummerToleranceScore": 5,
-        "frostSensitivityScore": 2,
-        "winterHardinessRequired": true,
+        minimumFrostFreeDays:
+          null,
 
-        "seasonExtensionBenefits": [
-          "Locally adapted winter wheat can occupy the cool season and protect soil while warm-season beds are otherwise unused.",
-          "Spring wheat can provide an alternative where winter wheat is unreliable or the fall planting window was missed.",
-          "Earlier fall planting can increase forage production but may raise insect, disease, and later grain-yield risks.",
-          "Variety selection is more dependable than relying on temporary frost protection."
+        preferredFrostFreeDays:
+          null,
+
+        minimumSoilTemperatureF:
+          40,
+
+        preferredSoilTemperatureF:
+          null,
+
+        daysToMaturityMinimum:
+          null,
+
+        daysToMaturityMaximum:
+          null,
+
+        dryDownBufferDays:
+          null,
+
+        heatToleranceScore:
+          3,
+
+        droughtClimateToleranceScore:
+          3,
+
+        humidityToleranceScore:
+          3,
+
+        coolSummerToleranceScore:
+          5,
+
+        frostSensitivityScore:
+          2,
+
+        winterHardinessRequired:
+          false,
+
+        seasonExtensionBenefits: [
+          "Planting spring Wheat as soon as soil is workable helps flowering and grain filling occur before severe summer heat.",
+          "Selecting an early-maturing spring cultivar improves grain-harvest reliability in short-season and high-elevation locations.",
+          "Using a locally adapted winter cultivar allows autumn establishment, winter ground cover, and an earlier grain harvest in suitable regions.",
+          "Winter Wheat can occupy garden ground during a season when many warm-season feed crops are absent.",
+          "Protected postharvest drying can reduce losses when mature heads encounter humid or rainy harvest weather.",
+          "Supplemental irrigation during stem elongation, heading, flowering, and grain filling may improve production in dry climates.",
+          "Timely grazing termination before jointing can preserve the option of harvesting grain from a dual-purpose stand.",
+          "Indoor seed starting offers little practical benefit because Wheat is normally established as a directly seeded dense stand."
         ],
 
-        "indoorSeedStartingBenefitScore": 1,
+        indoorSeedStartingBenefitScore:
+          1,
 
-        "directFacts": {
-          "seasonType": "cool-season",
-          "winterAndSpringTypesExist": true,
-          "winterWheatRequiresVernalizationForNormalHeading": true,
-          "winterHardinessVarietyDependent": true,
-          "plantingSeasonVariesByWheatType": true,
+        directFacts: {
+          seasonType:
+            "cool-season-annual",
 
-          "notes": [
-            "Triticum aestivum includes winter and spring growth habits that must not be assigned the same planting calendar.",
-            "Winter wheat is planted in fall and resumes growth in spring after winter dormancy.",
-            "Spring wheat is normally planted early in spring where it is adapted.",
-            "Winter wheat planted in spring may grow vegetatively but may fail to produce normal seed heads because it lacks adequate vernalization.",
-            "Heat during flowering and grain filling can reduce productive performance.",
-            "Regional variety recommendations are essential because winter hardiness, maturity, disease resistance, and vernalization needs vary."
+          frostSensitive:
+            false,
+
+          commonlyDirectSeeded:
+            true,
+
+          springTypesAvailable:
+            true,
+
+          winterTypesAvailable:
+            true,
+
+          facultativeTypesAvailable:
+            true,
+
+          vernalizationRequiredForAllVarieties:
+            false,
+
+          winterHardinessVarietyDependent:
+            true,
+
+          winterWheatMoreHardyThanWinterBarley:
+            true,
+
+          winterWheatLessHardyThanCerealRye:
+            true,
+
+          earlySpringPlantingPreferred:
+            true,
+
+          coolWeatherGrowthPreferred:
+            true,
+
+          highHeatDuringReproductionConcern:
+            true,
+
+          highElevationAdaptation:
+            true,
+
+          baseGrowingDegreeTemperatureF:
+            32,
+
+          approximatePollinationAfterEmergenceWeeksMinimum:
+            null,
+
+          approximatePollinationAfterEmergenceWeeksMaximum:
+            null,
+
+          maturityHighlyVarietyDependent:
+            true,
+
+          notes: [
+            "Wheat is a cool-season annual cereal with spring, winter, and facultative growth habits.",
+            "Spring Wheat does not require winter exposure and is normally planted as early as practical in spring.",
+            "Winter Wheat is planted in autumn, establishes before winter, resumes growth in spring, and normally requires adequate vernalization before heading.",
+            "Facultative Wheat has an intermediate cold requirement and may provide additional regional planting flexibility.",
+            "Winter Wheat should be recommended only when a locally adapted cultivar has adequate winter hardiness, disease resistance, and maturity for the location.",
+            "Winter Wheat is generally more winter-hardy than winter Barley but less winter-hardy than Cereal Rye.",
+            "Spring Wheat is useful where winters are too severe or unreliable for autumn-planted Wheat.",
+            "Early spring planting allows the crop to use cool-season moisture and may reduce exposure to damaging heat during heading and grain filling.",
+            "High temperatures during heading, flowering, pollination, and early kernel development can reduce fertile grain set and kernel weight.",
+            "Wheat may grow in hot-humid climates when planted during the cool season, but humidity can increase rusts, leaf diseases, Fusarium head blight, lodging, preharvest sprouting, and grain-drying difficulty.",
+            "The hot-humid climate classification should therefore be considered suitable but not automatically preferred.",
+            "Drought tolerance varies with cultivar, rooting depth, soil, planting date, and growth stage.",
+            "Established Wheat can survive moderate dry periods, but drought during stem elongation, heading, flowering, or grain filling can sharply reduce useful grain production.",
+            "High-elevation adaptation depends on selecting an early-maturing spring cultivar capable of completing grain development before autumn frost or snow.",
+            "Minimum frost-free days and maturity values remain null because spring, winter, facultative, hard, soft, and regionally adapted Wheat cultivars differ substantially.",
+            "Approximate pollination timing after emergence remains null because winter dormancy, vernalization, planting season, Wheat class, and cultivar make a single national week range misleading.",
+            "Protected drying can improve harvest reliability but does not compensate for immature grain or severe field disease.",
+            "Indoor transplant production is not a practical season-extension strategy for a dense Wheat stand.",
+            "The planner must distinguish spring, winter, and facultative Wheat production systems."
           ]
         }
       },
 
-      "site": {
-        "absoluteMinimumSunHours": null,
-        "productiveMinimumSunHours": 6,
-        "preferredSunHours": 8,
-        "shadeToleranceScore": 2,
-        "afternoonShadeBenefitInHeat": 2,
-        "windToleranceScore": 3,
-        "lodgingRiskScore": 3,
-        "reflectedHeatToleranceScore": 2,
-        "airflowRequirementScore": 4,
-        "frostPocketSensitivityScore": 2,
-        "treeRootCompetitionToleranceScore": 2,
-        "hardscapeConflictRiskScore": 1,
-        "structureConflictRiskScore": 1,
-        "utilityConflictRiskScore": 1,
-        "fruitDropMessRiskScore": 2,
-        "stainingRiskScore": 1,
+            site: {
+        preferredSunExposure:
+          "full-sun",
 
-        "directFacts": {
-          "preferredLight": "full-sun",
-          "productiveSunGuidance": "Full sun is preferred for dense vegetative growth, tillering, head development, and grain filling.",
-          "windExposureConcern": true,
-          "lodgingPossible": true,
+        acceptableSunExposure: [
+          "full-sun"
+        ],
 
-          "notes": [
-            "Low light can reduce tillering, biomass, stand density, and grain production.",
-            "Dense, tall, overfertilized, or storm-exposed stands may lodge.",
-            "Good airflow helps foliage and heads dry after rain or dew.",
-            "Avoid tree-root competition and locations that remain shaded or saturated through winter.",
-            "The mature crop is not usually a major structural conflict, but dry heads and straw can shed material near paths."
+        shadeToleranceScore:
+          1,
+
+        windToleranceScore:
+          4,
+
+        exposedSiteSuitabilityScore:
+          4,
+
+        shelteredSiteSuitabilityScore:
+          3,
+
+        slopeToleranceScore:
+          4,
+
+        drainageRequirement:
+          "well-drained",
+
+        compactionToleranceScore:
+          2,
+
+        erosionControlValueScore:
+          5,
+
+        livingMulchCompatibilityScore:
+          2,
+
+        weedCompetitionScore:
+          4,
+
+        suitableLocations: [
+          "garden-plots",
+          "field-plantings",
+          "raised-beds",
+          "food-plots",
+          "cover-crop-areas",
+          "rotation-fields"
+        ],
+
+        unsuitableLocations: [
+          "deep-shade",
+          "poorly-drained-sites",
+          "standing-water",
+          "heavily-compacted-soils"
+        ],
+
+        directFacts: {
+          requiresFullSun:
+            true,
+
+          toleratesLightShade:
+            false,
+
+          toleratesStandingWater:
+            false,
+
+          prefersOpenAirMovement:
+            true,
+
+          benefitsFromGoodDrainage:
+            true,
+
+          toleratesModerateWind:
+            true,
+
+          erosionControlCrop:
+            true,
+
+          suitableForSlopePlanting:
+            true,
+
+          notes: [
+            "Full sunlight is important for vigorous tillering, heading, and grain fill.",
+            "Poor drainage greatly increases disease pressure.",
+            "Good air movement helps reduce humidity-related diseases.",
+            "Dense Wheat stands provide excellent seasonal soil protection.",
+            "Established Wheat competes well with many annual weeds."
           ]
         }
       },
 
-      "soil": {
-        "textureScores": {
-          "heavyClay": 2,
-          "clayLoam": 4,
-          "loam": 5,
-          "sandyLoam": 4,
-          "verySandy": 2,
-          "rocky": 2
-        },
+      soil: {
+        preferredSoilTypes: [
+          "loam",
+          "silt-loam",
+          "clay-loam",
+          "sandy-loam"
+        ],
 
-        "drainageRequirementScore": 5,
-        "temporaryWetToleranceScore": 2,
-        "waterloggingSensitivityScore": 4,
-        "minimumSoilDepthIn": null,
-        "preferredSoilDepthIn": null,
-        "compactionToleranceScore": 2,
-        "establishmentInSodDifficultyScore": 4,
-        "preferredPHMinimum": 6.0,
-        "preferredPHMaximum": 7.0,
-        "survivalPHMinimum": null,
-        "survivalPHMaximum": null,
-        "fertilityRequirementScore": 4,
-        "nitrogenRequirementScore": 4,
-        "phosphorusRequirementScore": 3,
-        "potassiumRequirementScore": 3,
-        "benefitsFromInoculation": false,
-        "inoculantType": null,
-        "saltToleranceScore": null,
-        "amendmentEffortScore": 3,
+        acceptableSoilTypes: [
+          "clay",
+          "fine-sandy-loam"
+        ],
 
-        "directFacts": {
-          "preferredDrainage": "well-drained",
+        unsuitableSoilTypes: [
+          "poorly-drained-clay",
+          "organic-muck",
+          "continuously-saturated-soils"
+        ],
 
-          "adaptableTextures": [
-            "loam",
-            "silt loam",
-            "clay loam",
-            "sandy loam"
-          ],
+        preferredPHMinimum:
+          6.0,
 
-          "preferredTexture": "A fertile, well-drained loam or silt loam with good seed-to-soil contact and adequate water-holding capacity.",
-          "waterloggedSoilSuitable": false,
-          "soilTestRecommended": true,
-          "nitrogenFixing": false,
+        preferredPHMaximum:
+          7.5,
 
-          "notes": [
-            "Wheat performs poorly where prolonged saturation limits roots or increases disease.",
-            "A firm, fine seedbed and good seed-to-soil contact support uniform emergence.",
-            "Very sandy soil may require more dependable water and nutrient management.",
-            "Dense clay, crusting, compaction, hardpan, and shallow rock can restrict establishment and rooting.",
-            "Wheat does not fix nitrogen and fertility should be based on a soil test and production goal.",
-            "The stored pH range is a productive target rather than a universal survival boundary."
+        tolerablePHMinimum:
+          5.5,
+
+        tolerablePHMaximum:
+          8.0,
+
+        fertilityRequirementScore:
+          4,
+
+        nitrogenDemandScore:
+          4,
+
+        phosphorusDemandScore:
+          3,
+
+        potassiumDemandScore:
+          3,
+
+        organicMatterBenefitScore:
+          4,
+
+        salinityToleranceScore:
+          3,
+
+        drainageImportanceScore:
+          5,
+
+        directFacts: {
+          prefersWellDrainedSoils:
+            true,
+
+          performsBestInLoams:
+            true,
+
+          moderateClayTolerance:
+            true,
+
+          sandySoilsRequireMoreManagement:
+            true,
+
+          highOrganicMatterBeneficial:
+            true,
+
+          excessiveNitrogenCanCauseLodging:
+            true,
+
+          soilPHModeratelyImportant:
+            true,
+
+          notes: [
+            "Well-drained fertile loam soils generally provide the most reliable production.",
+            "Poor drainage greatly increases disease problems.",
+            "Excessive nitrogen may increase lodging risk.",
+            "Organic matter improves moisture-holding capacity and root development.",
+            "Balanced fertility is generally more beneficial than excessive nitrogen."
           ]
         }
       },
 
-      "water": {
-        "overallWaterRequirementLevel": "moderate",
-        "germinationWaterNeedLevel": "moderate",
-        "establishmentWaterNeedLevel": "moderate",
-        "matureWaterNeedLevel": "moderate",
-        "floweringWaterNeedLevel": "high",
-        "harvestDevelopmentWaterNeedLevel": "high",
-        "droughtSurvivalScore": 3,
-        "droughtYieldRetentionScore": 2,
+      water: {
+        overallWaterRequirement:
+          "moderate",
 
-        "criticalGrowthStages": [
+        establishmentWaterNeedScore:
+          4,
+
+        matureWaterNeedScore:
+          3,
+
+        droughtToleranceScore:
+          3,
+
+        waterloggingToleranceScore:
+          1,
+
+        irrigationBenefitScore:
+          4,
+
+        moistureCriticalStages: [
           "germination",
-          "seedling-establishment",
+          "emergence",
           "tillering",
           "stem-elongation",
           "heading",
           "flowering",
-          "grain-filling"
+          "grain-fill"
         ],
 
-        "criticalStageWaterImportanceScore": 5,
-        "overwateringSensitivityScore": 3,
-        "waterloggingSensitivityScore": 4,
-        "dripIrrigationBenefitScore": 3,
-        "mulchBenefitScore": 2,
-        "suitableForRainfallOnlyScore": 4,
-        "suitableForLimitedIrrigationScore": 3,
-        "containerDryingRiskScore": 4,
-        "establishmentYearsRequiringExtraWater": 0,
+        irrigationPriorityStages: [
+          "stem-elongation",
+          "heading",
+          "flowering",
+          "grain-fill"
+        ],
 
-        "directFacts": {
-          "establishmentMoistureImportant": true,
-          "regularMoistureImprovesProduction": true,
-          "standingWaterSuitable": false,
-          "droughtCanReduceTilleringAndGrainFill": true,
-          "lateRainCanDelayHarvestAndReduceQuality": true,
+        directFacts: {
+          requiresMoistureForEstablishment:
+            true,
 
-          "notes": [
-            "Uniform moisture supports emergence and fall or spring establishment.",
-            "Water stress during stem elongation, heading, flowering, and grain filling can reduce yield and kernel development.",
-            "Wheat can survive moderate dry periods better than continuously saturated soil, but drought survival does not imply high grain yield.",
-            "Wet foliage and heads can increase disease, sprouting, and harvest-quality risks.",
-            "Irrigation needs are region-, soil-, rainfall-, and production-system-dependent; no universal seasonal water amount is stored."
+          toleratesModerateDryPeriods:
+            true,
+
+          prolongedStandingWaterHarmful:
+            true,
+
+          irrigationDuringGrainFillBeneficial:
+            true,
+
+          droughtDuringFloweringReducesYield:
+            true,
+
+          droughtDuringGrainFillReducesKernelWeight:
+            true,
+
+          overwateringIncreasesDiseaseRisk:
+            true,
+
+          notes: [
+            "Uniform soil moisture promotes even establishment.",
+            "Moderate drought tolerance develops after establishment.",
+            "Heading and grain fill are the most moisture-sensitive stages.",
+            "Standing water encourages root disease and reduces vigor.",
+            "Proper irrigation timing is generally more important than excessive irrigation volume."
           ]
         }
       },
 
-      "space": {
-        "minimumTrialAreaSqFt": null,
-        "minimumUsefulAreaSqFt": null,
-        "preferredProductionAreaSqFt": null,
-        "smallSpaceScore": 3,
-        "mediumSpaceScore": 5,
-        "largeSpaceScore": 5,
+            space: {
+        minimumTrialAreaSqFt:
+          null,
 
-        "layoutScores": {
-          "squareBlock": 5,
-          "wideRectangle": 5,
-          "longStrip": 5,
-          "irregular": 3,
-          "smallBeds": 4,
-          "openField": 5
+        minimumUsefulAreaSqFt:
+          null,
+
+        preferredProductionAreaSqFt:
+          null,
+
+        smallSpaceScore:
+          3,
+
+        mediumSpaceScore:
+          5,
+
+        largeSpaceScore:
+          5,
+
+        layoutScores: {
+          squareBlock:
+            5,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            3,
+
+          smallBeds:
+            4,
+
+          openField:
+            5
         },
 
-        "spaceTypeScores": {
-          "inGround": 5,
-          "raisedBed": 4,
-          "container": 2,
-          "fenceLine": 3,
-          "buildingEdge": 3,
-          "unusedLawn": 4,
-          "openField": 5,
-          "orchard": 2,
-          "forageFrame": 5,
-          "rotationalPaddock": 5,
-          "greenhouse": 1,
-          "hedgerow": 2
+        spaceTypeScores: {
+          inGround:
+            5,
+
+          raisedBed:
+            4,
+
+          container:
+            2,
+
+          fenceLine:
+            3,
+
+          buildingEdge:
+            3,
+
+          unusedLawn:
+            5,
+
+          openField:
+            5,
+
+          orchard:
+            3,
+
+          forageFrame:
+            4,
+
+          rotationalPaddock:
+            5,
+
+          greenhouse:
+            2,
+
+          hedgerow:
+            2
         },
 
-        "minimumContainerGallons": null,
+        minimumContainerGallons:
+          null,
 
-        "containerUseLimitation": "Wheat can be grown densely in containers for short-lived forage, but container grain production is generally inefficient because root volume, moisture, stand area, threshing effort, and total grain yield are limiting.",
+        containerUseLimitation:
+          "Wheat can be grown in containers for educational trials, sprouts, limited green forage, or very small ornamental stands, but ordinary containers provide too little soil volume for efficient household grain production. Containers dry rapidly, restrict rooting and tillering, and generally produce little clean grain relative to the labor required for cutting, threshing, cleaning, and storage.",
 
-        "minimumRaisedBedDepthIn": null,
-        "vineSpreadRequired": false,
-        "verticalSupportBenefitScore": 1,
-        "blockPlantingRequired": false,
-        "minimumBlockRows": null,
-        "continuousStandPreferred": true,
-        "heightCategory": "medium",
-        "matureWidthCategory": "narrow-upright",
-        "overflowSpaceBenefitScore": 1,
+        minimumRaisedBedDepthIn:
+          null,
 
-        "directFacts": {
-          "layoutFlexible": true,
-          "blockPollinationRequired": false,
-          "suitableForRowPlanting": true,
-          "suitableForCloselySpacedStands": true,
-          "suitableForSingleOrSmallGroupPlanting": false,
-          "denseStandPreferredForProduction": true,
+        vineSpreadRequired:
+          false,
 
-          "commercialSeedingGuidance": {
-            "georgiaGrainSeedingRateLbsPerAcreMinimum": 60,
-            "georgiaGrainSeedingRateLbsPerAcreMaximum": 90,
-            "georgiaIntensiveManagementLbsPerAcreMinimum": 120,
-            "georgiaIntensiveManagementLbsPerAcreMaximum": 150,
-            "drilledRowWidthInchesMinimum": 6,
-            "drilledRowWidthInchesMaximum": 7.5,
-            "backyardUseWarning": "Commercial field seeding rates are reference data and must not be converted directly into guaranteed backyard yield."
+        verticalSupportBenefitScore:
+          1,
+
+        blockPlantingRequired:
+          false,
+
+        minimumBlockRows:
+          null,
+
+        continuousStandPreferred:
+          true,
+
+        heightCategory:
+          "medium-tall-annual-grass",
+
+        matureWidthCategory:
+          "narrow-tillering-stand",
+
+        overflowSpaceBenefitScore:
+          4,
+
+        directFacts: {
+          layoutFlexible:
+            true,
+
+          blockPollinationRequired:
+            false,
+
+          suitableForRowPlanting:
+            true,
+
+          suitableForCloselySpacedStands:
+            true,
+
+          suitableForSingleOrSmallGroupPlanting:
+            false,
+
+          suitableForBroadcastPlanting:
+            true,
+
+          suitableForDrilledPlanting:
+            true,
+
+          suitableForDenseCoverCropStand:
+            true,
+
+          suitableForDedicatedGrainPlot:
+            true,
+
+          individualPlantSpacingRecommended:
+            false,
+
+          continuousStandPreferred:
+            true,
+
+          tilleringAllowsPartialPopulationCompensation:
+            true,
+
+          productiveHeadDensityImportant:
+            true,
+
+          mechanicalAccessMayImproveEfficiency:
+            true,
+
+          requiresSeparateProcessingSpace:
+            true,
+
+          containerCultivarFeasibility:
+            true,
+
+          commercialSeedingRateConversionToBackyardYieldSupported:
+            false,
+
+          notes: [
+            "Wheat is normally planted as a continuous stand rather than as individually spaced plants.",
+            "A square block is suitable, but Wheat does not require block planting for pollination.",
+            "Long strips, wide rectangles, narrow rows, small grain beds, and open-field stands can all support production.",
+            "Uniform seed distribution and dependable seed-to-soil contact are more important than exact individual plant spacing.",
+            "Dense stands improve canopy closure, soil protection, and competition with many annual weeds.",
+            "Excessively dense stands can increase plant competition, humidity, leaf disease, weak stems, lodging, and uneven maturity.",
+            "Thin stands may compensate partly through additional tillering when planting occurs on time and moisture, fertility, temperature, and sunlight remain favorable.",
+            "Late-planted, drought-stressed, nutrient-stressed, or poorly established plants may have less opportunity to compensate through tillering.",
+            "Small raised beds can provide forage, mature heads, or trial quantities of loose grain, but the harvested grain may be modest relative to processing labor.",
+            "Containers are most appropriate for demonstration stands, short green forage, sprouts, fodder trials, or extremely small harvest experiments.",
+            "An ordinary garden container should not be presented as an efficient method for producing meaningful stored Wheat grain.",
+            "Wheat can be planted in narrow drilled rows or broadcast where seed coverage and soil contact remain adequate.",
+            "Rows may simplify inspection, hand weeding, irrigation, disease monitoring, and harvest access.",
+            "Broadcast stands can provide rapid soil cover and weed competition but may be more difficult to weed, inspect, and harvest uniformly.",
+            "A sunny portion of unused lawn can be converted into a temporary Wheat plot after sod and perennial weeds are adequately controlled.",
+            "Planting directly into established lawn generally results in poor seed-to-soil contact and severe competition from existing grasses.",
+            "Rotational paddocks can support controlled young-forage use when chickens are excluded during establishment and removed before severe stand damage occurs.",
+            "A protected forage frame can allow chickens to clip young Wheat shoots without immediately uprooting plants or destroying the stand.",
+            "Direct unrestricted flock access is incompatible with dependable mature-grain production.",
+            "Orchard alleys may support cool-season Wheat where sunlight, drainage, tree-root competition, mowing, disease pressure, and harvest access remain suitable.",
+            "Deep shade beneath mature trees substantially reduces grain-production value.",
+            "Greenhouse grain production is generally an inefficient use of protected space, although greenhouses or indoor areas may support controlled sprout or fodder systems.",
+            "Mature loose-grain production requires nearby space for cutting, gathering, bundling, drying, threshing, winnowing, screening, cleaning, sorting, and storage.",
+            "Postharvest processing space may be as important as planted area for a backyard Wheat grower.",
+            "Whole-head feeding requires less processing equipment but more storage volume than cleaned loose grain.",
+            "No minimum useful grain-production area has been assigned because usable yield, processing efficiency, flock size, and desired use differ too widely.",
+            "Commercial Wheat seeding rates and field yields should not be converted directly into guaranteed backyard harvests."
+          ]
+        }
+      },
+
+      flock: {
+        suitableForAdultChickens:
+          true,
+
+        suitableForYoungChicks:
+          false,
+
+        flockPurposeScores: {
+          eggs:
+            3,
+
+          meat:
+            3,
+
+          breeding:
+            2,
+
+          petsEnrichment:
+            5,
+
+          homestead:
+            5,
+
+          mixed:
+            5
+        },
+
+        feedingMethodScores: {
+          livingGrazing:
+            4,
+
+          cutAndCarry:
+            4,
+
+          wholeProduce:
+            1,
+
+          wholeSeedHeads:
+            5,
+
+          wholeGrain:
+            5,
+
+          processedGrain:
+            5,
+
+          heatTreated:
+            2,
+
+          driedForage:
+            2,
+
+          winterStorage:
+            5
+        },
+
+        directRunSuitabilityScore:
+          1,
+
+        forageFrameSuitabilityScore:
+          5,
+
+        rotationalPaddockSuitabilityScore:
+          4,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          4,
+
+        treatDilutionRiskScore:
+          5,
+
+        highEnergySupplement:
+          true,
+
+        highFiberSupplement:
+          false,
+
+        concentratedFatSource:
+          false,
+
+        primaryFlockUses: [
+          "Clean mature whole grain",
+          "Cracked or coarsely ground grain",
+          "Whole mature Wheat-head enrichment",
+          "Measured grain supplementation",
+          "Professionally formulated ration ingredient",
+          "Short Wheat sprouts",
+          "Young tender green forage",
+          "Protected living forage",
+          "Controlled rotational grazing",
+          "Postharvest gleaning",
+          "Cool-season flock enrichment",
+          "Long-term dry-grain storage"
+        ],
+
+        unsuitablePrimaryUses: [
+          "Complete-ration replacement",
+          "Primary protein supplement",
+          "Primary calcium source",
+          "Unrestricted free-choice grain feeding",
+          "Primary young-chick feed",
+          "Unrestricted access to newly established Wheat",
+          "Unrestricted access to a stand intended for grain harvest",
+          "Mature coarse straw as concentrated poultry feed",
+          "Moldy or inadequately dried grain",
+          "Fusarium-damaged grain",
+          "Ergot-contaminated grain",
+          "Chemically treated planting seed",
+          "Uninspected grain screenings",
+          "Spoiled sprouts or fodder",
+          "Unbalanced home-formulated poultry diets"
+        ],
+
+        portionGuidance:
+          null,
+
+        usePathTesting: [
+          "Whole dry Wheat acceptance by established adult hens",
+          "Cracked-Wheat acceptance",
+          "Coarsely ground Wheat handling and feed separation",
+          "Whole-head enrichment value",
+          "Short-sprout acceptance",
+          "Hydroponic Wheat-fodder intake and waste",
+          "Young green-chop acceptance",
+          "Protected forage-frame persistence",
+          "Rotational-paddock recovery after grazing",
+          "Postharvest gleaning efficiency",
+          "Feed displacement after supplemental Wheat feeding",
+          "Dropping consistency after supplemental Wheat feeding",
+          "Wet-litter response",
+          "Bird weight and body-condition response",
+          "Egg production response",
+          "Egg cleanliness response",
+          "Wildlife losses from unprotected stands",
+          "Differences between awned and awnless whole-head feeding"
+        ],
+
+        directFacts: {
+          edibleFeedParts: [
+            "Clean mature whole grain",
+            "Cracked mature grain",
+            "Coarsely ground mature grain",
+            "Sound mature Wheat heads",
+            "Short sprouts produced from sound untreated grain",
+            "Young tender vegetative growth",
+            "Residual sound grain after harvest"
+          ],
+
+          nonFeedProducts: [
+            "Wheat straw",
+            "Roots",
+            "Cover-crop biomass",
+            "Awns",
+            "Chaff containing no usable sound grain"
+          ],
+
+          preferredBirdStage:
+            "Established adult chickens",
+
+          cropSurvivalWithDirectChickenAccess:
+            "poor-during-establishment-and-grain-development",
+
+          directAccessTiming:
+            "Allow flock access only through a protected forage frame, controlled rotational grazing, supervised cut-and-carry use, or postharvest gleaning after the intended grain crop has been collected.",
+
+          nutritionalOrientation: [
+            "energy",
+            "starch",
+            "moderate-protein",
+            "cool-season-forage",
+            "stored-grain",
+            "whole-head-enrichment",
+            "sprouts",
+            "postharvest-gleaning"
+          ],
+
+          betaGlucanConcern:
+            false,
+
+          arabinoxylanConcern:
+            true,
+
+          phytateConcern:
+            true,
+
+          lowerEnergyThanCorn:
+            true,
+
+          lowerEnergyThanBarley:
+            false,
+
+          lysineLimitation:
+            true,
+
+          methionineLimitation:
+            true,
+
+          layingHenCalciumRequirementMet:
+            false,
+
+          completePoultryFeed:
+            false,
+
+          gritRelevantForWholeGrain:
+            true,
+
+          youngBirdSensitivityConcern:
+            true,
+
+          stickyDroppingRisk:
+            true,
+
+          wetLitterRisk:
+            true,
+
+          dirtyEggRisk:
+            true,
+
+          wholeGrainSuitableForEstablishedAdults:
+            true,
+
+          crackedGrainSuitable:
+            true,
+
+          groundIngredientRequiresRationFormulation:
+            true,
+
+          sproutingCreatesAdditionalDryMatter:
+            false,
+
+          hydroponicFodderPrimarilyAddsWater:
+            true,
+
+          strawPrimaryFeed:
+            false,
+
+          treatedSeedSuitableForFeed:
+            false,
+
+          notes: [
+            "Wheat grain is primarily an energy-oriented cereal ingredient.",
+            "It commonly provides more usable poultry energy and less fiber than ordinary hulled Barley.",
+            "Wheat provides moderate protein but cannot serve as the only protein source in a complete poultry ration.",
+            "Lysine is a major amino-acid limitation, and other amino acids must also be balanced within the complete diet.",
+            "Wheat does not supply the calcium concentration required by laying hens.",
+            "Wheat beta-glucan is generally not the principal poultry limitation associated with this grain.",
+            "Non-starch polysaccharides, particularly arabinoxylans, can increase intestinal viscosity and reduce nutrient use in poultry.",
+            "Commercial Wheat-based poultry diets may use appropriate xylanase-containing enzyme systems as part of a professionally formulated ration.",
+            "An enzyme product does not make an otherwise incomplete ration nutritionally balanced.",
+            "High or poorly balanced Wheat inclusion can contribute to sticky droppings, wet litter, dirty eggs, selective feeding, and displacement of complete feed.",
+            "Young chicks are more sensitive than established adults to particle size, dietary imbalance, fiber, non-starch polysaccharides, poor sanitation, and contaminated ingredients.",
+            "No universal safe backyard inclusion percentage is stored.",
+            "Published commercial inclusion levels should not be simplified into an unrestricted household feeding recommendation.",
+            "Established adult chickens can consume clean whole Wheat when grain size is appropriate and suitable grit is available.",
+            "Cracking may improve accessibility and mixing but exposes more grain surface to moisture, insects, oxidation, and spoilage.",
+            "Coarse grinding can improve incorporation into a formulated ration.",
+            "Excessively fine grinding may create dust, feed separation, selective consumption, respiratory irritation, and waste.",
+            "Whole mature Wheat heads can provide pecking enrichment and reduce threshing labor.",
+            "Awned Wheat heads require careful inspection because stiff awns and coarse chaff may cause irritation.",
+            "Awnless cultivars may be more convenient for whole-head enrichment, but cultivar-specific feeding evidence remains limited.",
+            "Short Wheat sprouts and hydroponic fodder are not nutritionally equivalent to dry mature grain.",
+            "Sprouting consumes part of the seed's stored dry matter through respiration.",
+            "The apparent increase in fodder weight is primarily caused by absorbed water.",
+            "Sprouting can alter physical form, palatability, vitamin concentration, enzyme activity, and digestibility, but it does not create additional dry feed mass.",
+            "Wet fodder can dilute nutrient intake when birds consume it in place of balanced dry feed.",
+            "Sprouting trays can develop mold, yeast, bacterial contamination, overheating, sour odor, slime, or root-mat spoilage.",
+            "Only clean, fresh-smelling sprouted material should be offered.",
+            "Young tender Wheat growth can provide cool-season greens and flock enrichment.",
+            "Repeated clipping or grazing can reduce later grain production, particularly after jointing begins.",
+            "Mature stems and straw are fibrous and should not be treated as concentrated poultry feed.",
+            "Chickens can uproot seedlings, scratch planting beds, consume new shoots, trample plants, and remove developing grain.",
+            "Forage frames protect roots while allowing chickens to clip young leaves through a barrier.",
+            "Rotational grazing should begin only after establishment and end before severe stand damage, soil exposure, or excessive consumption occurs.",
+            "Postharvest gleaning can recover spilled or unthreshed grain but should occur only where treated seed, toxic weeds, mold, ergot, Fusarium-damaged kernels, chemical contamination, and harvest hazards are absent.",
+            "Planting seed treated with fungicides, insecticides, or other chemicals must never be fed.",
+            "Grain screenings may concentrate weed seeds, ergot bodies, Fusarium-damaged kernels, broken grain, stones, dust, chaff, insects, and foreign material.",
+            "Complete poultry feed should remain the nutritional foundation unless the entire ration is accurately formulated."
+          ]
+        }
+      },
+
+      labor: {
+        beginnerFriendlinessScore:
+          3,
+
+        plantingEaseScore:
+          5,
+
+        establishmentEaseScore:
+          4,
+
+        routineMaintenanceEaseScore:
+          4,
+
+        weedControlEaseScore:
+          4,
+
+        wildlifeProtectionEaseScore:
+          3,
+
+        harvestEaseScore:
+          2,
+
+        wholeHeadProcessingEaseScore:
+          4,
+
+        looseSeedProcessingEaseScore:
+          2,
+
+        dryingEaseScore:
+          3,
+
+        storageMonitoringEaseScore:
+          3,
+
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          3,
+
+        heavyLiftingRiskScore:
+          2,
+
+        weeklyLaborLevel:
+          "low-to-moderate",
+
+        peakWorkloadLevel:
+          "high",
+
+        harvestFrequencyCategory:
+          "single-primary-grain-harvest-with-optional-earlier-forage-use",
+
+        soloGrowerSuitabilityScore:
+          4,
+
+        mechanizationBenefitScore:
+          5,
+
+        directFacts: {
+          directSeedingSimple:
+            true,
+
+          transplantingRequired:
+            false,
+
+          routinePruningRequired:
+            false,
+
+          trellisingRequired:
+            false,
+
+          stakingNormallyRequired:
+            false,
+
+          handHarvestPossible:
+            true,
+
+          handThreshingPossible:
+            true,
+
+          mechanicalHarvestImprovesEfficiency:
+            true,
+
+          wholeHeadUseReducesProcessing:
+            true,
+
+          looseGrainRequiresThreshing:
+            true,
+
+          looseGrainRequiresCleaning:
+            true,
+
+          processedGrainRequiresAdditionalEquipment:
+            true,
+
+          sproutingRequiresDailySanitation:
+            true,
+
+          majorLaborBottlenecks: [
+            "Preparing an even weed-controlled seedbed",
+            "Distributing seed uniformly",
+            "Achieving dependable seed-to-soil contact",
+            "Protecting seedlings from chickens and wildlife",
+            "Managing weeds before canopy closure",
+            "Monitoring rusts, leaf diseases, Fusarium head blight, ergot, lodging, and wildlife damage",
+            "Terminating grazing before jointing where grain harvest remains a goal",
+            "Determining safe grain-harvest timing",
+            "Cutting and gathering mature heads before shattering, sprouting, storms, or bird loss",
+            "Keeping harvested heads and grain dry",
+            "Threshing grain from heads",
+            "Separating awns and coarse chaff",
+            "Winnowing and screening",
+            "Sorting moldy, sprouted, insect-damaged, Fusarium-damaged, ergot-contaminated, or questionable kernels",
+            "Verifying adequate grain dryness",
+            "Cleaning grain-processing equipment",
+            "Monitoring stored grain",
+            "Cracking or grinding in small batches",
+            "Maintaining sanitation in sprout or fodder systems"
+          ],
+
+          notes: [
+            "Wheat is straightforward to establish by broadcasting or row seeding.",
+            "Small plots can be planted with ordinary hand tools.",
+            "A broadcast spreader, seed drill, roller, cultipacker, or similar equipment can improve uniformity but is not essential for a small trial.",
+            "A clean, firm, weed-controlled seedbed supports more even emergence.",
+            "Routine labor is often modest after establishment when moisture, fertility, weeds, disease, wildlife, and lodging remain manageable.",
+            "The crop's greatest labor demand usually occurs during harvest and postharvest processing.",
+            "Hand cutting is practical for small beds but becomes slow and physically tiring as planted area increases.",
+            "Mature heads should be collected over a tarp, sheet, tub, or other clean surface to reduce grain loss.",
+            "Awned heads can scratch exposed skin and create irritating dust during cutting and threshing.",
+            "Whole mature heads require less processing than loose cleaned grain.",
+            "Loose Wheat grain generally requires cutting, drying, threshing, winnowing, screening, sorting, and storage preparation.",
+            "Hand rubbing, stomping in a clean bag, beating bundles over a tarp, or using a small mechanical thresher can separate grain, but each method produces different loss and contamination risks.",
+            "Mechanical threshing substantially improves efficiency when larger quantities are grown.",
+            "Cracking and grinding add equipment needs, dust, cleanup, energy use, and shortened storage life.",
+            "Processed Wheat generally deteriorates faster than intact whole grain.",
+            "Sprouting requires repeated rinsing, draining, airflow, temperature control, inspection, and sanitation.",
+            "Hydroponic fodder should not be classified as a low-labor system when operated safely.",
+            "Fodder trays must be checked daily for mold, slime, sour odor, overheating, drainage failure, and uneven growth.",
+            "A failed or questionable sprout batch should be discarded rather than salvaged as poultry feed.",
+            "Forage frames reduce root destruction but still require establishment, protection, clipping management, and rest periods.",
+            "Rotational grazing requires fencing and timely flock movement before severe stand damage or exposed soil develops.",
+            "Wheat is suitable for a solo grower at small scale, but harvesting and threshing a large plot can be physically demanding.",
+            "Future Backyard Chicken Planner trials should record labor separately for seedbed preparation, planting, crop care, wildlife protection, forage harvest, grain harvest, drying, threshing, cleaning, processing, and storage."
+          ]
+        }
+      },
+
+            cost: {
+        seedAvailabilityScore:
+          5,
+
+        seedCostScore:
+          4,
+
+        establishmentCostScore:
+          4,
+
+        annualMaintenanceCostScore:
+          4,
+
+        irrigationCostScore:
+          3,
+
+        fertilizerCostScore:
+          3,
+
+        equipmentCostScore:
+          3,
+
+        processingEquipmentNeedScore:
+          4,
+
+        storageEquipmentNeedScore:
+          3,
+
+        fencingNeedScore:
+          3,
+
+        wildlifeProtectionCostScore:
+          3,
+
+        longTermEconomicValueScore:
+          4,
+
+        expectedReturnSpeedScore:
+          3,
+
+        recurringPurchaseRequirement:
+          "new-seed-each-growing-season",
+
+        majorCostFactors: [
+          "Seed purchase",
+          "Seedbed preparation",
+          "Fertilizer where required",
+          "Irrigation during dry periods",
+          "Bird protection near grain maturity",
+          "Harvest equipment",
+          "Threshing equipment",
+          "Grain cleaning equipment",
+          "Storage containers",
+          "Grain mill or roller (optional)",
+          "Sprouting equipment (optional)"
+        ],
+
+        recurringCosts: [
+          "Replacement seed",
+          "Soil fertility inputs",
+          "Occasional irrigation",
+          "Storage monitoring",
+          "Wildlife protection",
+          "Equipment maintenance"
+        ],
+
+        oneTimeCosts: [
+          "Broadcast spreader or drill",
+          "Harvest tools",
+          "Screens for cleaning grain",
+          "Storage containers",
+          "Grain mill",
+          "Moisture meter",
+          "Rodent-resistant storage bins"
+        ],
+
+        directFacts: {
+          inexpensiveSeed:
+            true,
+
+          annualSeedPurchase:
+            true,
+
+          perennialPlanting:
+            false,
+
+          harvestingEquipmentHelpful:
+            true,
+
+          processingEquipmentHelpful:
+            true,
+
+          storageInfrastructureHelpful:
+            true,
+
+          grainCanStoreLongTerm:
+            true,
+
+          notes: [
+            "Seed is generally inexpensive compared with many specialty poultry crops.",
+            "Most additional cost comes from harvesting and processing grain rather than establishing the crop.",
+            "Whole-head feeding reduces processing costs.",
+            "Proper storage protects the value of the harvested grain.",
+            "Very small grain plots often have higher labor cost than feed value."
+          ]
+        }
+      },
+
+      goals: {
+        primaryGoalsSupported: [
+          "supplement-feed",
+          "grow-energy-feed",
+          "winter-cover-crop",
+          "erosion-control",
+          "soil-building",
+          "season-extension",
+          "whole-head-enrichment",
+          "sprouted-feed",
+          "green-forage",
+          "crop-rotation",
+          "long-term-grain-storage"
+        ],
+
+        unsuitableGoals: [
+          "complete-feed-replacement",
+          "high-protein-production",
+          "year-round-living-forage",
+          "permanent-pasture",
+          "continuous-harvest",
+          "high-calcium-feed"
+        ],
+
+        goalScores: {
+          emergencyFeedStorage:
+            5,
+
+          energyProduction:
+            5,
+
+          proteinProduction:
+            2,
+
+          forageProduction:
+            4,
+
+          winterForage:
+            5,
+
+          longTermStorage:
+            5,
+
+          lowMaintenance:
+            4,
+
+          lowWater:
+            3,
+
+          wildlifeResistance:
+            2,
+
+          soilImprovement:
+            4,
+
+          erosionControl:
+            5,
+
+          coverCrop:
+            5,
+
+          compostProduction:
+            3,
+
+          beginnerProject:
+            4,
+
+          educationalValue:
+            5,
+
+          selfSufficiency:
+            4,
+
+          feedSecurity:
+            5,
+
+          enrichment:
+            5,
+
+          cropRotation:
+            5
+        },
+
+        plannerHighlights: [
+          "Excellent cool-season energy crop.",
+          "Outstanding long-term grain storage.",
+          "Useful winter cover crop.",
+          "Can provide both forage and grain.",
+          "Whole seed heads provide excellent enrichment.",
+          "Fits well into warm-season crop rotations.",
+          "Useful emergency feed reserve.",
+          "Not a complete poultry feed."
+        ],
+
+        directFacts: {
+          supportsFeedSecurity:
+            true,
+
+          supportsWinterCover:
+            true,
+
+          supportsCropRotation:
+            true,
+
+          supportsEmergencyStorage:
+            true,
+
+          supportsYearRoundHarvest:
+            false,
+
+          supportsPermanentPlanting:
+            false,
+
+          primaryStrength:
+            "Stored energy grain with multiple supplemental use paths.",
+
+          primaryWeakness:
+            "Requires significant harvest and processing labor for loose grain.",
+
+          notes: [
+            "Wheat is best viewed as one component of a diversified feed system.",
+            "Its greatest strength is combining grain production, forage production, cover cropping, and long-term storage.",
+            "It should complement high-protein crops rather than replace them.",
+            "Whole-head enrichment offers an excellent low-processing feeding option for backyard flocks.",
+            "Growing Wheat alongside legumes and warm-season feed crops improves overall resilience."
+          ]
+        }
+      },
+
+            risks: {
+        overallRiskLevel:
+          "moderate-to-high",
+
+        wildlife: {
+          wildBirds:
+            5,
+
+          deer:
+            4,
+
+          raccoons:
+            2,
+
+          squirrels:
+            3,
+
+          rabbits:
+            3,
+
+          rodents:
+            5,
+
+          groundhogs:
+            3
+        },
+
+        establishmentFailureRiskScore:
+          3,
+
+        weedCompetitionRiskScore:
+          2,
+
+        droughtEstablishmentRiskScore:
+          3,
+
+        matureDroughtRiskScore:
+          4,
+
+        waterloggingRiskScore:
+          5,
+
+        heatDamageRiskScore:
+          4,
+
+        frostDamageRiskScore:
+          2,
+
+        stormDamageRiskScore:
+          4,
+
+        lodgingRiskScore:
+          4,
+
+        shatteringRiskScore:
+          3,
+
+        birdLossRiskScore:
+          5,
+
+        wildlifePressureScore:
+          4,
+
+        deerBrowsingRiskScore:
+          4,
+
+        rabbitBrowsingRiskScore:
+          3,
+
+        rodentAttractionScore:
+          5,
+
+        insectDamageRiskScore:
+          3,
+
+        diseaseRiskScore:
+          5,
+
+        moldRiskScore:
+          5,
+
+        harvestWeatherRiskScore:
+          5,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          5,
+
+        storageMoistureRiskScore:
+          5,
+
+        contaminationRiskScore:
+          5,
+
+        misidentificationRiskScore:
+          2,
+
+        chemicalExposureRiskScore:
+          5,
+
+        nitrateAccumulationRiskScore:
+          1,
+
+        oxalateConcernScore:
+          1,
+
+        antinutritionalFactorRiskScore:
+          4,
+
+        completeFeedDisplacementRiskScore:
+          5,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        flockOverconsumptionRiskScore:
+          4,
+
+        selfSeedingRiskScore:
+          3,
+
+        invasivenessRiskScore:
+          1,
+
+        crossPollinationRiskScore:
+          1,
+
+        allergenOrDustExposureRiskScore:
+          3,
+
+        mechanicalHarvestSuitabilityScore:
+          5,
+
+        mechanicalProcessingSuitabilityScore:
+          5,
+
+        riskFactors: [
+          {
+            id:
+              "poor-seedbed-or-planting-depth",
+
+            category:
+              "establishment",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Uneven seed distribution, inadequate seed-to-soil contact, excessive planting depth, soil crusting, dry surface soil, or planting into active sod can produce a thin and irregular Wheat stand.",
+
+            mitigation: [
+              "Prepare a firm, relatively even seedbed.",
+              "Control established sod and perennial weeds before planting.",
+              "Distribute seed as uniformly as practical.",
+              "Cover seed to an appropriate depth for soil texture and available moisture.",
+              "Avoid excessively deep planting.",
+              "Maintain adequate moisture through germination and emergence.",
+              "Use locally appropriate seeding guidance."
+            ]
           },
 
-          "notes": [
-            "Wheat is normally grown as a dense stand rather than as individually spaced plants.",
-            "Small beds can provide meaningful forage or enrichment, but loose-grain production becomes more efficient as area increases.",
-            "Protected forage frames can keep chickens from uprooting or overgrazing the stand.",
-            "A rectangular strip or block simplifies sowing, exclusion, cutting, and harvest.",
-            "Wheat does not require a square pollination block like field corn.",
-            "Single isolated plants provide little practical feed value."
+          {
+            id:
+              "seedling-drought",
+
+            category:
+              "establishment",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Newly planted Wheat may emerge unevenly or fail when the seed zone dries before roots become established.",
+
+            mitigation: [
+              "Plant into available soil moisture.",
+              "Irrigate lightly and evenly where practical.",
+              "Avoid repeated shallow watering that encourages shallow rooting.",
+              "Plant spring Wheat early enough to use cool-season moisture.",
+              "Use an appropriate planting depth for the soil and moisture conditions."
+            ]
+          },
+
+          {
+            id:
+              "waterlogging-and-root-disease",
+
+            category:
+              "soil-and-water",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Saturated soil and standing water restrict root oxygen, weaken plants, reduce nutrient uptake, and increase seedling and root-disease pressure.",
+
+            mitigation: [
+              "Plant only in well-drained soil.",
+              "Avoid depressions and concentrated roof runoff.",
+              "Improve surface drainage before planting.",
+              "Use raised beds only where they provide adequate growing area and drainage.",
+              "Avoid irrigation that leaves soil continuously saturated.",
+              "Do not plant into compacted wet soil."
+            ]
+          },
+
+          {
+            id:
+              "winterkill",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Winter Wheat may be killed or severely thinned when the cultivar lacks regional hardiness, plants enter winter poorly established, soil heaves, drainage is poor, or protective snow cover is absent.",
+
+            mitigation: [
+              "Use a locally adapted winter-hardy cultivar.",
+              "Plant within the locally recommended autumn window.",
+              "Allow adequate establishment before severe freezing.",
+              "Avoid excessively early planting that creates overgrown plants.",
+              "Maintain good drainage.",
+              "Use spring Wheat where winter survival is unreliable.",
+              "Evaluate surviving plant density before committing additional inputs in spring."
+            ]
+          },
+
+          {
+            id:
+              "late-spring-heat-stress",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Heat during stem elongation, heading, flowering, pollination, and grain filling can reduce fertile kernels, shorten grain fill, lower kernel weight, and accelerate maturity.",
+
+            mitigation: [
+              "Plant spring Wheat as early as practical.",
+              "Select an early-maturing cultivar in warm or short-season regions.",
+              "Use winter Wheat where locally adapted and where earlier harvest reduces heat exposure.",
+              "Maintain adequate soil moisture during reproductive growth.",
+              "Avoid locating grain plots beside strongly reflected heat where possible.",
+              "Do not assume that green vegetative growth guarantees successful grain production."
+            ]
+          },
+
+          {
+            id:
+              "reproductive-stage-drought",
+
+            category:
+              "water",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Water shortage during stem elongation, heading, flowering, and grain filling can reduce head number, kernel set, kernel size, and recoverable grain.",
+
+            mitigation: [
+              "Conserve soil moisture before reproductive growth.",
+              "Control weeds that compete for water.",
+              "Irrigate during critical growth stages where practical.",
+              "Use locally adapted drought-tolerant cultivars.",
+              "Avoid excessive nitrogen where water is limited.",
+              "Harvest forage rather than expecting grain if severe stress prevents normal head development."
+            ]
+          },
+
+          {
+            id:
+              "lodging",
+
+            category:
+              "weather",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Wheat stems may bend or fall under strong wind, heavy rain, dense growth, excessive nitrogen, weak straw, disease, or heavy mature heads.",
+
+            mitigation: [
+              "Avoid excessive nitrogen.",
+              "Use cultivars with strong straw and lodging resistance.",
+              "Avoid excessive seeding density.",
+              "Maintain balanced potassium and other soil fertility.",
+              "Manage disease promptly.",
+              "Avoid unnecessary irrigation after maturity begins.",
+              "Harvest promptly when the crop reaches a safe harvest stage."
+            ]
+          },
+
+          {
+            id:
+              "fusarium-head-blight-and-mycotoxins",
+
+            category:
+              "disease-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Fusarium head blight can reduce yield and contaminate Wheat with deoxynivalenol or other mycotoxins, especially when warm wet conditions occur during flowering and early grain development.",
+
+            mitigation: [
+              "Select locally recommended resistant or less-susceptible cultivars.",
+              "Rotate away from susceptible cereal and Corn residue where practical.",
+              "Avoid planting Wheat into heavy infected crop residue when local risk is high.",
+              "Promote airflow through appropriate stand density.",
+              "Inspect heads and grain carefully.",
+              "Separate visibly damaged or lightweight kernels where possible.",
+              "Do not assume visually normal grain is free of mycotoxins.",
+              "Obtain laboratory testing when contamination is suspected.",
+              "Do not dilute suspect grain into poultry feed."
+            ]
+          },
+
+          {
+            id:
+              "ergot-contamination",
+
+            category:
+              "feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Ergot fungi may replace kernels with dark elongated fungal bodies containing toxic alkaloids that are unsafe for poultry, livestock, and people.",
+
+            mitigation: [
+              "Inspect mature heads and cleaned grain for dark elongated ergot bodies.",
+              "Control grassy weeds and volunteer cereal hosts around the planting.",
+              "Clean harvested grain carefully.",
+              "Reject contaminated screenings.",
+              "Do not attempt to make contaminated grain safe through cooking, grinding, soaking, or sprouting.",
+              "Seek laboratory or extension guidance when contamination is uncertain."
+            ]
+          },
+
+          {
+            id:
+              "rusts-smuts-and-leaf-diseases",
+
+            category:
+              "disease",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Rusts, smuts, powdery mildew, leaf blotches, viruses, and other diseases can reduce foliage, weaken stems, lower grain yield, and interfere with feed safety or harvest quality.",
+
+            mitigation: [
+              "Use regionally adapted disease-resistant cultivars.",
+              "Rotate crops.",
+              "Avoid planting untreated saved seed from diseased stands.",
+              "Maintain balanced fertility.",
+              "Avoid unnecessary overhead irrigation late in the day.",
+              "Promote airflow.",
+              "Remove severely diseased material from intended poultry-feed harvests.",
+              "Follow local extension disease guidance."
+            ]
+          },
+
+          {
+            id:
+              "wild-bird-grain-loss",
+
+            category:
+              "wildlife",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              5,
+
+            description:
+              "Wild birds may remove developing and mature Wheat grain rapidly, with proportionally large losses from small backyard plots.",
+
+            mitigation: [
+              "Use bird netting or other lawful exclusion methods before losses become severe.",
+              "Inspect protection systems regularly for openings and entanglement risks.",
+              "Harvest promptly when the grain is mature enough.",
+              "Dry harvested heads in a protected location.",
+              "Avoid leaving cut bundles exposed outdoors.",
+              "Record wildlife losses separately from agronomic yield."
+            ]
+          },
+
+          {
+            id:
+              "deer-and-mammal-browsing",
+
+            category:
+              "wildlife",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Deer, rabbits, groundhogs, and other mammals may browse young foliage, trample stands, or consume developing heads.",
+
+            mitigation: [
+              "Use suitable fencing or exclusion.",
+              "Protect small high-value plots before damage begins.",
+              "Avoid placing the crop directly beside heavily used wildlife travel corridors where possible.",
+              "Inspect field edges frequently.",
+              "Do not rely solely on repellents where wildlife pressure is high."
+            ]
+          },
+
+          {
+            id:
+              "rodent-damage",
+
+            category:
+              "wildlife-and-storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Rodents may consume standing grain, carry away harvested kernels, contaminate stored Wheat, damage containers, and spread urine, feces, hair, and pathogens.",
+
+            mitigation: [
+              "Keep the harvest and storage area clean.",
+              "Remove spilled grain promptly.",
+              "Store grain in rodent-resistant containers.",
+              "Inspect containers and surrounding areas regularly.",
+              "Keep grain off damp floors.",
+              "Reject grain contaminated by rodents.",
+              "Use an integrated rodent-control program appropriate for poultry areas."
+            ]
+          },
+
+          {
+            id:
+              "preharvest-sprouting",
+
+            category:
+              "harvest-weather",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Rain and prolonged humidity after grain maturity can cause kernels to sprout in the head, reduce storage quality, promote mold, and complicate harvest.",
+
+            mitigation: [
+              "Select cultivars with suitable maturity and preharvest-sprouting resistance where available.",
+              "Harvest promptly once grain reaches a safe stage.",
+              "Move cut heads into protected drying promptly.",
+              "Avoid leaving mature heads exposed through prolonged rainy weather.",
+              "Separate visibly sprouted or weather-damaged grain.",
+              "Do not seal warm or damp grain in storage."
+            ]
+          },
+
+          {
+            id:
+              "shattering-and-harvest-loss",
+
+            category:
+              "harvest",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Overripe heads, storms, rough handling, delayed harvest, and inefficient hand threshing may cause kernels to fall before they can be recovered.",
+
+            mitigation: [
+              "Monitor maturity closely.",
+              "Harvest before severe storms or prolonged wet weather when grain condition permits.",
+              "Cut and handle heads over a clean tarp, sheet, tub, or container.",
+              "Use gentle handling before threshing.",
+              "Collect and evaluate threshing residue before disposal.",
+              "Record field, threshing, and cleaning losses separately."
+            ]
+          },
+
+          {
+            id:
+              "awn-and-chaff-irritation",
+
+            category:
+              "physical-safety",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Awned Wheat heads, dry chaff, and processing dust may irritate skin, eyes, airways, or the mouths and upper digestive tracts of birds.",
+
+            mitigation: [
+              "Consider awnless or less-awned cultivars when whole-head enrichment is a priority.",
+              "Wear suitable eye, skin, and respiratory protection during dusty processing.",
+              "Thresh and clean grain in a ventilated area.",
+              "Remove coarse awns and chaff before loose-grain feeding.",
+              "Inspect whole heads before poultry use.",
+              "Discontinue a feeding form that causes irritation or injury."
+            ]
+          },
+
+          {
+            id:
+              "inadequate-drying-and-storage-mold",
+
+            category:
+              "storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Grain stored while too moist, warm, dirty, or poorly ventilated may heat, mold, cake, sprout, develop musty odors, or become contaminated with mycotoxins.",
+
+            mitigation: [
+              "Harvest only mature grain.",
+              "Dry grain adequately before sealed storage.",
+              "Cool grain before placing it in airtight containers.",
+              "Keep storage containers clean and dry.",
+              "Avoid condensation caused by large temperature changes.",
+              "Inspect stored grain regularly.",
+              "Reject moldy, musty, heated, damp, caked, or abnormally discolored grain.",
+              "Use laboratory testing when mycotoxin contamination is suspected."
+            ]
+          },
+
+          {
+            id:
+              "stored-insect-infestation",
+
+            category:
+              "storage",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Stored-grain insects may consume kernels, increase fines, raise moisture and temperature, contaminate grain, and accelerate mold development.",
+
+            mitigation: [
+              "Clean grain before storage.",
+              "Clean storage equipment between lots.",
+              "Use sealed food-safe containers.",
+              "Inspect grain regularly for insects, webbing, dust, heating, and damaged kernels.",
+              "Use lawful temperature-based or freezing methods where appropriate.",
+              "Rotate stored grain rather than leaving old grain beneath new harvests.",
+              "Discard severely infested or contaminated grain."
+            ]
+          },
+
+          {
+            id:
+              "treated-seed-exposure",
+
+            category:
+              "chemical-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Commercial planting seed may be treated with fungicides, insecticides, colorants, or other chemicals and must not enter poultry feed, sprout systems, household food, or grain storage.",
+
+            mitigation: [
+              "Use only untreated seed intended for food, feed, forage, or sprouting when the harvested product may be consumed.",
+              "Read seed labels before purchase and planting.",
+              "Keep treated planting seed physically separate from feed grain.",
+              "Never feed leftover treated seed.",
+              "Never sprout treated seed.",
+              "Dispose of treated seed according to label directions."
+            ]
+          },
+
+          {
+            id:
+              "complete-feed-displacement",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Excessive Wheat supplementation may displace nutritionally complete poultry feed and reduce intake of balanced protein, amino acids, vitamins, minerals, calcium, and other essential nutrients.",
+
+            mitigation: [
+              "Keep complete poultry feed as the nutritional foundation.",
+              "Offer supplemental Wheat in measured amounts.",
+              "Do not use Wheat as the sole feed.",
+              "Monitor body condition, egg production, droppings, litter condition, and overall feed intake.",
+              "Use professional ration formulation when Wheat becomes a substantial ration ingredient.",
+              "Do not infer a universal inclusion percentage from unrelated commercial studies."
+            ]
+          },
+
+          {
+            id:
+              "arabinoxylan-related-digestive-effects",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Wheat non-starch polysaccharides, particularly arabinoxylans, may increase intestinal viscosity and contribute to reduced nutrient use, sticky droppings, wet litter, and dirty eggs when diets are poorly formulated.",
+
+            mitigation: [
+              "Use Wheat conservatively as a supplement.",
+              "Avoid replacing balanced feed with unrestricted grain.",
+              "Monitor droppings and litter condition.",
+              "Use appropriate enzyme systems only within professionally formulated diets.",
+              "Do not assume that an enzyme corrects amino-acid, mineral, vitamin, or calcium imbalance.",
+              "Reduce or discontinue Wheat supplementation if flock condition declines."
+            ]
+          },
+
+          {
+            id:
+              "selective-feeding-and-particle-separation",
+
+            category:
+              "poultry-feeding",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Whole, cracked, or poorly mixed Wheat may encourage birds to select preferred particles while leaving balanced ration components behind.",
+
+            mitigation: [
+              "Offer supplemental grain separately and in measured amounts where appropriate.",
+              "Use an appropriate particle size in formulated feeds.",
+              "Avoid excessively fine grinding.",
+              "Mix processed grain uniformly.",
+              "Observe whether birds sort feed.",
+              "Do not repeatedly top-dress large quantities of Wheat over complete feed."
+            ]
+          },
+
+          {
+            id:
+              "sprout-and-fodder-contamination",
+
+            category:
+              "processing-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Warm, wet Wheat sprouting or fodder systems can support mold, yeast, bacteria, souring, slime, overheating, and root-mat spoilage.",
+
+            mitigation: [
+              "Use sound untreated grain.",
+              "Clean trays and equipment between batches.",
+              "Provide dependable drainage and airflow.",
+              "Avoid excessively deep grain layers.",
+              "Control temperature and moisture.",
+              "Inspect every batch daily.",
+              "Discard material with mold, slime, sour odor, heating, discoloration, or questionable growth.",
+              "Do not feed spoiled sprouts to poultry."
+            ]
+          }
+        ],
+
+        directFacts: {
+          majorProductionRisks: [
+            "Poor seedbed preparation",
+            "Uneven establishment",
+            "Waterlogging",
+            "Winterkill of unsuitable winter cultivars",
+            "Heat during reproductive growth",
+            "Drought during heading and grain filling",
+            "Lodging",
+            "Fusarium head blight",
+            "Rusts and other diseases",
+            "Wild-bird loss",
+            "Mammal browsing",
+            "Preharvest sprouting",
+            "Wet harvest weather"
+          ],
+
+          majorPostharvestRisks: [
+            "Shattering",
+            "Threshing loss",
+            "Cleaning loss",
+            "Inadequate drying",
+            "Mold",
+            "Mycotoxins",
+            "Stored-grain insects",
+            "Rodents",
+            "Condensation",
+            "Heating",
+            "Chemical contamination"
+          ],
+
+          majorPoultryRisks: [
+            "Complete-feed displacement",
+            "Incomplete amino-acid balance",
+            "Low calcium",
+            "Arabinoxylan-related intestinal viscosity",
+            "Sticky droppings",
+            "Wet litter",
+            "Dirty eggs",
+            "Selective feeding",
+            "Unsuitable use in young chicks",
+            "Awn and chaff irritation",
+            "Mold or mycotoxin exposure"
+          ],
+
+          fusariumConcern:
+            true,
+
+          mycotoxinConcern:
+            true,
+
+          deoxynivalenolConcern:
+            true,
+
+          ergotConcern:
+            true,
+
+          preharvestSproutingConcern:
+            true,
+
+          storedInsectConcern:
+            true,
+
+          treatedSeedConcern:
+            true,
+
+          wildBirdLossConcern:
+            true,
+
+          rodentAttractionConcern:
+            true,
+
+          awnIrritationPossible:
+            true,
+
+          mechanicalHarvestSuitable:
+            true,
+
+          mechanicalProcessingSuitable:
+            true,
+
+          notes: [
+            "Wheat's most important production risks are waterlogging, reproductive-stage heat, reproductive-stage drought, lodging, disease, wildlife loss, and wet harvest weather.",
+            "Winter Wheat has an additional winterkill risk when cultivar, planting date, establishment, drainage, and climate are poorly matched.",
+            "Fusarium head blight and associated mycotoxins are among the most important feed-safety concerns.",
+            "Fusarium-damaged grain should not be assumed safe based only on visual appearance.",
+            "Grain suspected of mycotoxin contamination may require laboratory testing.",
+            "Ergot bodies and unsafe screenings must be removed rather than diluted into poultry feed.",
+            "Chemically treated planting seed must never enter poultry feed, sprouting systems, or household food.",
+            "Sprouting, soaking, cooking, cracking, or grinding does not make chemically treated or mycotoxin-contaminated grain safe.",
+            "The principal Wheat poultry limitation is not beta-glucan but non-starch polysaccharides such as arabinoxylans, along with incomplete ration balance.",
+            "Whole grain can encourage selective feeding when offered improperly.",
+            "Whole heads reduce threshing labor but increase chaff exposure, storage volume, waste uncertainty, and difficulty measuring actual grain intake.",
+            "Mechanical harvesting and grain processing are well established at field scale, but household equipment economics remain scale dependent.",
+            "Risk scores are comparative planner values rather than predictions that a particular problem will occur."
           ]
         }
       },
 
-      "flock": {
-        "suitableForAdultChickens": true,
-        "suitableForYoungChicks": false,
-
-        "flockPurposeScores": {
-          "eggs": 4,
-          "meat": 4,
-          "breeding": 3,
-          "petsEnrichment": 4,
-          "homestead": 5,
-          "mixed": 5
-        },
-
-        "feedingMethodScores": {
-          "livingGrazing": 4,
-          "cutAndCarry": 4,
-          "wholeProduce": 1,
-          "wholeSeedHeads": 4,
-          "wholeGrain": 5,
-          "processedGrain": 5,
-          "heatTreated": 1,
-          "driedForage": 2,
-          "winterStorage": 5
-        },
-
-        "directRunSuitabilityScore": 2,
-        "forageFrameSuitabilityScore": 5,
-        "rotationalPaddockSuitabilityScore": 5,
-        "confinedFlockValueScore": 5,
-        "pasturedFlockValueScore": 4,
-        "treatDilutionRiskScore": 4,
-        "highEnergySupplement": true,
-        "highFiberSupplement": false,
-                "highProteinSupplement": false,
-        "scratchGrainValueScore": 5,
-        "winterFeedValueScore": 5,
-        "summerFeedValueScore": 2,
-        "freeChoiceSuitable": false,
-        "completeFeedReplacement": false,
-
-        "directFacts": {
-          "supplementOnly": true,
-          "wholeGrainSuitableForAdultChickens": true,
-          "crackedGrainSuitable": true,
-          "freshForageSuitable": true,
-          "seedHeadsSuitable": true,
-          "requiresBalancedRation": true,
-          "treatedSeedMustNeverBeFed": true,
-
-          "notes": [
-            "Wheat is best used as a measured supplement to a nutritionally complete poultry ration.",
-            "Whole mature grain provides scratching enrichment and concentrated energy.",
-            "Young vegetative forage may be offered in moderation.",
-            "Whole seed heads provide behavioral enrichment while reducing waste.",
-            "Do not allow unrestricted consumption of mature grain because nutritional balance can be diluted.",
-            "Never feed moldy, sprouted, chemically treated, or ergot-contaminated grain."
-          ]
-        }
-      },
-
-      "labor": {
-        "overallLaborRequirement": "moderate",
-
-        "establishmentDifficultyScore": 2,
-        "maintenanceDifficultyScore": 2,
-        "harvestDifficultyScore": 3,
-        "processingDifficultyScore": 4,
-        "storageDifficultyScore": 3,
-
-        "mechanizationBenefitScore": 4,
-
-        "directFacts": {
-          "easyToBroadcastSeed": true,
-          "handHarvestPossible": true,
-          "requiresThreshingForLooseGrain": true,
-          "requiresDryingBeforeStorage": true,
-          "forageHarvestSimplerThanGrainHarvest": true,
-
-          "notes": [
-            "Broadcast seeding or simple drilling is straightforward for small plots.",
-            "Forage production requires substantially less labor than grain production.",
-            "Threshing, winnowing, drying, and cleaning increase labor before storage.",
-            "Whole seed heads may reduce processing requirements compared with loose grain.",
-            "Stored grain should be inspected regularly for insects, moisture, and mold."
-          ]
-        }
-      },
-
-      "cost": {
-        "seedCostScore": 2,
-        "fertilityCostScore": 3,
-        "waterCostScore": 2,
-        "equipmentCostScore": 3,
-        "processingCostScore": 4,
-        "storageCostScore": 3,
-
-        "directFacts": {
-          "seedGenerallyAffordable": true,
-          "majorCostsIncreaseWithGrainHarvest": true,
-          "forageProductionLowestCost": true,
-
-          "notes": [
-            "Seed is generally inexpensive compared with many specialty forage crops.",
-            "Grain production becomes more expensive when drying, threshing, cleaning, and storage equipment are added.",
-            "Protected forage production can often be accomplished with minimal equipment.",
-            "Bird protection may become necessary as heads mature."
-          ]
-        }
-      },
-
-      "goals": {
-        "primaryGoals": [
-          "Supplemental Feed",
-          "Winter Forage",
-          "Stored Grain",
-          "Cover Crop",
-          "Soil Protection",
-          "Scratch Grain",
-          "Crop Rotation"
-        ],
-
-        "secondaryGoals": [
-          "Organic Matter",
-          "Erosion Reduction",
-          "Nutrient Scavenging",
-          "Weed Suppression"
-        ],
-
-        "notRecommendedFor": [
-          "Complete Feed Replacement",
-          "Tiny Decorative Containers"
-        ]
-      },
-
-      "risks": {
-        "overallRiskScore": 3,
-
-        "poultryRisks": [
-          "Mold and mycotoxins",
-          "Ergot contamination",
-          "Chemically treated planting seed",
-          "Diet dilution if overfed"
-        ],
-
-        "gardenRisks": [
-          "Rust diseases",
-          "Powdery mildew",
-          "Lodging",
-          "Bird damage near maturity"
-        ],
-
-        "humanSafetyConcerns": [
-          "Dust during threshing",
-          "Safe grain storage required"
-        ],
-
-        "directFacts": {
-          "treatedSeedUnsafe": true,
-          "moldUnsafe": true,
-          "ergotUnsafe": true,
-          "standingWaterIncreasesDisease": true,
-
-          "notes": [
-            "Storage quality is just as important as production quality.",
-            "Never assume all harvested grain remains safe after storage.",
-            "Monitor grain regularly for insects, heating, condensation, odors, and mold."
-          ]
-        }
-      },
-
-      "seasonalRoles": {
-        "spring": [
-          "Rapid vegetative growth",
+      seasonalRoles: {
+        spring: [
+          "Early direct seeding of spring Wheat",
+          "Resumption of growth by surviving winter Wheat",
           "Tillering",
-          "Stem elongation"
-        ],
-
-        "summer": [
+          "Soil coverage",
+          "Weed suppression",
+          "Residual-nitrogen capture",
+          "Young green forage",
+          "Forage-frame production",
+          "Controlled rotational grazing",
+          "Stem elongation",
+          "Jointing",
           "Heading",
-          "Grain fill",
-          "Harvest"
+          "Flowering",
+          "Pollination",
+          "Early grain filling",
+          "Disease monitoring",
+          "Grazing termination before grain-yield damage"
         ],
 
-        "fall": [
-          "Winter wheat planting",
-          "Seedling establishment",
-          "Root development"
+        summer: [
+          "Late grain filling",
+          "Physiological maturity",
+          "Grain harvest",
+          "Whole-head harvest",
+          "Protected drying",
+          "Threshing",
+          "Winnowing",
+          "Screening",
+          "Cleaning",
+          "Sorting",
+          "Straw harvest",
+          "Postharvest gleaning",
+          "Residue management",
+          "Storage preparation",
+          "Spring-Wheat harvest in short-season regions"
         ],
 
-        "winter": [
-          "Dormancy",
-          "Ground cover",
-          "Soil protection"
-        ]
+        autumn: [
+          "Planting winter or facultative Wheat in suitable climates",
+          "Rapid cool-season establishment",
+          "Tillering before winter",
+          "Living soil cover",
+          "Weed suppression",
+          "Erosion control",
+          "Residual-nitrogen capture",
+          "Young seasonal forage",
+          "Forage-frame establishment",
+          "Controlled early grazing",
+          "Crop-rotation transition",
+          "Stored-grain inspection",
+          "Seed selection for future planting"
+        ],
+
+        winter: [
+          "Dormant or slowly growing winter Wheat where adapted",
+          "Living soil cover",
+          "Soil stabilization",
+          "Erosion reduction",
+          "Stored whole-grain feeding",
+          "Stored cracked-grain feeding",
+          "Stored whole-head enrichment",
+          "Short-sprout production",
+          "Hydroponic fodder production",
+          "Stored-grain inspection",
+          "Rodent monitoring",
+          "Stored-insect monitoring",
+          "Seed and equipment planning"
+        ],
+
+        plannerSeasonScores: {
+          spring:
+            5,
+
+          summer:
+            4,
+
+          autumn:
+            5,
+
+          winter:
+            5
+        },
+
+        directFacts: {
+          springWheatAvailable:
+            true,
+
+          winterWheatAvailable:
+            true,
+
+          facultativeWheatAvailable:
+            true,
+
+          springPlantingRole:
+            true,
+
+          autumnPlantingRole:
+            true,
+
+          winterLivingCoverPossible:
+            true,
+
+          summerHeatProductionWeak:
+            true,
+
+          storedWinterFeedValue:
+            true,
+
+          yearRoundIndoorSproutProductionPossible:
+            true,
+
+          yearRoundHydroponicFodderProductionPossible:
+            true,
+
+          grainHarvestEndsAnnualCycle:
+            true,
+
+          residueBenefitsContinueAfterHarvest:
+            true,
+
+          notes: [
+            "Seasonal roles depend strongly on whether spring, winter, or facultative Wheat is selected.",
+            "Spring Wheat is planted early and normally completes grain production during summer.",
+            "Winter Wheat is established in autumn, survives winter where adapted, and resumes active growth in spring.",
+            "Facultative Wheat may provide additional flexibility in regions with intermediate winter conditions.",
+            "Winter Wheat can provide living soil cover during a season when many warm-season feed crops are absent.",
+            "The crop should not be ranked as dependable during prolonged severe summer heat.",
+            "Young vegetative growth provides seasonal forage before stems become coarse.",
+            "Grazing or cutting should end before jointing when dependable grain harvest remains the primary goal.",
+            "Grain harvest provides the strongest long-term stored-feed pathway.",
+            "Properly dried whole Wheat can support winter supplementation without refrigeration.",
+            "Whole mature heads can provide stored enrichment with less threshing labor but require more storage volume.",
+            "Indoor sprouts or fodder may be produced during any season, but they require sound untreated grain, clean water, daily labor, airflow, drainage, temperature control, and sanitation.",
+            "Sprouted or hydroponic Wheat should not be treated as additional dry matter created from the original seed.",
+            "Postharvest straw and roots may continue contributing bedding, mulch, compost carbon, soil protection, and organic matter after grain harvest.",
+            "Autumn planting dates and winter survival must be based on local cultivar guidance.",
+            "Spring planting should occur early enough to reduce exposure of heading and grain filling to severe heat.",
+            "Stored-grain monitoring remains a year-round responsibility after harvest."
+          ]
+        }
       },
 
-           "usePaths": [
+            usePaths: [
         {
-          "id": "fresh-young-wheat-forage",
+          id:
+            "whole-dry-wheat",
 
-          "label": "Fresh Young Wheat Forage",
+          label:
+            "Whole Dry Wheat",
 
-          "description":
-            "Established young vegetative wheat used through protected living access, controlled rotational grazing, or cut-and-carry harvesting before the stand advances into stem elongation and grain production.",
+          description:
+            "Mature Wheat grain is harvested, dried thoroughly, threshed, cleaned, inspected, and stored whole for measured supplementation of established adult chickens or later processing into other feed forms.",
 
-          "primaryFeedRole":
-            "fresh-green-forage",
-
-          "harvestProducts": [
-            "fresh-greens",
-            "living-forage"
-          ],
-
-          "suitableFeedingMethods": [
-            "living-grazing",
-            "cut-and-carry"
-          ],
-
-          "requiredProcessingTasks": [],
-
-          "optionalProcessingTasks": [
-            "chop"
-          ],
-
-          "requiredEquipment": [],
-
-          "helpfulEquipment": [
-            "fencing",
-            "forage-frame",
-            "basket",
-            "hand-pruners"
-          ],
-
-          "harvestPattern":
-            "continuous",
-
-          "harvestFrequencyCategory":
-            "several-weekly",
-
-          "storageMethods": [
-            "short-term-fresh"
-          ],
-
-          "preferredStorageMethod":
-            "immediate-feeding",
-
-          "storageDurationCategory":
-            "immediate",
-
-          "nonElectricStorageSuitable":
-            false,
-
-          "refrigerationSuitable":
-            true,
-
-          "freezingSuitable":
-            false,
-
-          "dryingRequired":
-            false,
-
-          "curingRequired":
-            false,
-
-          "shellingRequired":
-            false,
-
-          "threshingRequired":
-            false,
-
-          "cookingRequired":
-            false,
-
-          "grindingRequired":
-            false,
-
-          "moistureSensitive":
-            true,
-
-          "moldRiskScore":
-            2,
-
-          "rodentRiskScore":
-            1,
-
-          "storedInsectRiskScore":
-            1,
-
-          "harvestEaseScore":
-            5,
-
-          "preparationEaseScore":
-            5,
-
-          "beginnerSuitabilityScore":
-            5,
-
-          "householdFoodValueScore":
-            1,
-
-          "flockValueScore":
-            5,
-
-          "safetyWarnings": [
-            "Allow the stand to establish before permitting flock access.",
-            "Use controlled grazing or a forage frame to prevent uprooting and destruction.",
-            "Stop grazing or cutting before stem jointing when the same stand is expected to produce mature grain.",
-            "Offer only clean, fresh growth that is free from mold, decay, chemical contamination, and excessive soil contamination.",
-            "Fresh wheat forage remains supplemental to an age-appropriate complete poultry ration.",
-            "Do not use chemically treated seed where the resulting plants or leftover seed may be fed."
-          ],
-
-          "incompatibleUserTraits": [
-            "requires-long-term-storage",
-            "wants-dry-grain-only",
-            "has-no-way-to-protect-establishing-crop"
-          ]
-        },
-
-        {
-          "id":
-            "whole-dried-wheat-seed-heads",
-
-          "label":
-            "Whole Dried Wheat Seed Heads",
-
-          "description":
-            "Mature wheat seed heads are cut, dried thoroughly under protected and ventilated conditions, inspected, and offered whole as measured adult-chicken pecking enrichment.",
-
-          "primaryFeedRole":
-            "stored-energy-enrichment",
-
-          "harvestProducts": [
-            "dried-seed-heads",
-            "whole-wheat-heads",
-            "stored-enrichment"
-          ],
-
-          "suitableFeedingMethods": [
-            "whole-seed-heads",
-            "pecking-enrichment",
-            "winter-supplement"
-          ],
-
-          "requiredProcessingTasks": [
-            "cut-seed-heads",
-            "dry"
-          ],
-
-          "optionalProcessingTasks": [
-            "clean-sort"
-          ],
-
-          "requiredEquipment": [],
-
-          "helpfulEquipment": [
-            "hand-pruners",
-            "basket",
-            "bird-netting",
-            "drying-rack",
-            "drying-screen",
-            "fan",
-            "moisture-meter",
-            "food-safe-container",
-            "metal-grain-can"
-          ],
-
-          "harvestPattern":
-            "major",
-
-          "harvestFrequencyCategory":
-            "seasonal",
-
-          "storageMethods": [
-            "dried-whole"
-          ],
-
-          "preferredStorageMethod":
-            "cool-dry-ventilated-and-rodent-protected",
-
-          "storageDurationCategory":
-            "medium",
-
-          "nonElectricStorageSuitable":
-            true,
-
-          "refrigerationSuitable":
-            false,
-
-          "freezingSuitable":
-            false,
-
-          "dryingRequired":
-            true,
-
-          "curingRequired":
-            false,
-
-          "shellingRequired":
-            false,
-
-          "threshingRequired":
-            false,
-
-          "cookingRequired":
-            false,
-
-          "grindingRequired":
-            false,
-
-          "moistureSensitive":
-            true,
-
-          "moldRiskScore":
-            5,
-
-          "rodentRiskScore":
-            5,
-
-          "storedInsectRiskScore":
-            4,
-
-          "harvestEaseScore":
-            4,
-
-          "preparationEaseScore":
-            4,
-
-          "beginnerSuitabilityScore":
-            4,
-
-          "householdFoodValueScore":
-            2,
-
-          "flockValueScore":
-            5,
-
-          "safetyWarnings": [
-            "Dry seed heads thoroughly before enclosed storage.",
-            "Do not seal heads while they remain warm or damp.",
-            "Inspect stored heads for condensation, heating, insects, rodents, musty odor, visible mold, sprouting, or discoloration.",
-            "Discard moldy, musty, sprouted, ergot-contaminated, insect-damaged, rodent-contaminated, or otherwise questionable heads.",
-            "Awned varieties may be less convenient for whole-head flock use and require additional observation.",
-            "Whole seed heads remain supplemental to complete poultry feed.",
-            "Do not feed chemically treated planting seed."
-          ],
-
-          "incompatibleUserTraits": [
-            "declines-drying",
-            "has-no-protected-drying-area",
-            "has-no-dry-storage",
-            "has-no-rodent-protected-storage"
-          ]
-        },
-
-        {
-          "id":
-            "loose-dried-whole-wheat-grain",
-
-          "label":
-            "Loose Dried Whole Wheat Grain",
-
-          "description":
-            "Fully mature wheat heads are dried, threshed, winnowed, cleaned, and stored as intact whole grain for measured adult-chicken supplementation.",
-
-          "primaryFeedRole":
+          primaryFeedRole:
             "whole-energy-grain",
 
-          "harvestProducts": [
-            "dry-grain",
-            "wheat-kernels",
-            "whole-grain",
-            "stored-grain"
+          harvestProducts: [
+            "mature-dry-wheat",
+            "whole-wheat-grain",
+            "stored-cereal-grain",
+            "energy-oriented-feed-grain"
           ],
 
-          "suitableFeedingMethods": [
+          suitableFeedingMethods: [
             "whole-grain",
             "measured-supplement",
-            "winter-storage"
+            "winter-supplement",
+            "stored-feed-ingredient"
           ],
 
-          "requiredProcessingTasks": [
-            "cut-seed-heads",
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
             "dry",
             "thresh",
+            "remove-coarse-awns-and-chaff",
             "winnow",
-            "clean-sort"
+            "screen",
+            "clean-sort",
+            "inspect-moisture"
           ],
 
-          "optionalProcessingTasks": [
-            "portion"
+          optionalProcessingTasks: [
+            "freeze-for-insect-control",
+            "portion",
+            "laboratory-test-questionable-grain",
+            "save-seed",
+            "later-crack",
+            "later-grind",
+            "later-sprout"
           ],
 
-          "requiredEquipment": [],
+          requiredEquipment: [],
 
-          "helpfulEquipment": [
-            "hand-pruners",
-            "basket",
-            "drying-rack",
+          helpfulEquipment: [
+            "harvest-tarp",
+            "sickle",
+            "scythe",
             "drying-screen",
+            "drying-rack",
             "fan",
-            "grain-thresher",
-            "winnowing-screen",
+            "threshing-container",
+            "mechanical-thresher",
+            "grain-screen",
+            "winnowing-fan",
             "moisture-meter",
             "food-safe-bucket",
-            "food-safe-container",
-            "metal-grain-can"
+            "metal-grain-can",
+            "rodent-resistant-storage"
           ],
 
-          "harvestPattern":
+          harvestPattern:
             "major",
 
-          "harvestFrequencyCategory":
-            "seasonal",
+          harvestFrequencyCategory:
+            "single-seasonal",
 
-          "storageMethods": [
-            "dried-threshed"
+          storageMethods: [
+            "sealed-dry-grain-storage",
+            "rodent-resistant-room-temperature-storage"
           ],
 
-          "preferredStorageMethod":
-            "airtight-after-adequate-drying",
+          preferredStorageMethod:
+            "whole-clean-dry-wheat-in-a-cool-dark-dry-and-rodent-resistant-container",
 
-          "storageDurationCategory":
+          storageDurationCategory:
             "long",
 
-          "nonElectricStorageSuitable":
+          nonElectricStorageSuitable:
             true,
 
-          "refrigerationSuitable":
+          refrigerationSuitable:
             false,
 
-          "freezingSuitable":
-            false,
-
-          "dryingRequired":
+          freezingSuitable:
             true,
 
-          "curingRequired":
-            false,
-
-          "shellingRequired":
-            false,
-
-          "threshingRequired":
+          dryingRequired:
             true,
 
-          "cookingRequired":
+          curingRequired:
             false,
 
-          "grindingRequired":
+          shellingRequired:
             false,
 
-          "moistureSensitive":
+          threshingRequired:
             true,
 
-          "moldRiskScore":
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
             5,
 
-          "rodentRiskScore":
+          rodentRiskScore:
             5,
 
-          "storedInsectRiskScore":
+          storedInsectRiskScore:
             5,
 
-          "harvestEaseScore":
+          harvestEaseScore:
             3,
 
-          "preparationEaseScore":
-            2,
-
-          "beginnerSuitabilityScore":
+          preparationEaseScore:
             3,
 
-          "householdFoodValueScore":
-            4,
+          beginnerSuitabilityScore:
+            3,
 
-          "flockValueScore":
+          householdFoodValueScore:
             5,
 
-          "safetyWarnings": [
-            "Grain must be adequately dried and cooled before airtight storage.",
-            "Do not combine questionable grain with clean sound grain.",
-            "Inspect stored grain regularly for insects, webbing, rodents, condensation, heating, caking, musty odor, sprouting, discoloration, and mold.",
-            "Discard moldy, musty, heated, sprouted, ergot-contaminated, heavily insect-damaged, or rodent-contaminated grain.",
-            "Whole wheat is an energy-oriented supplement and must not replace complete poultry feed.",
-            "Provide suitable grit when adult chickens consume whole grain.",
-            "Do not feed chemically treated planting seed."
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-cracking",
+            "later-grinding",
+            "later-sprouting",
+            "household-food-processing",
+            "seed-saving"
           ],
 
-          "incompatibleUserTraits": [
-            "declines-drying",
-            "declines-threshing",
-            "declines-winnowing",
-            "requires-minimal-processing",
-            "has-no-dry-storage",
-            "has-no-rodent-protected-storage"
-          ]
+          preservationLimitations: [
+            "Wheat must be fully mature, clean, cool, and adequately dry before sealed storage.",
+            "Whole grain remains vulnerable to moisture, condensation, insects, rodents, chemical contamination, and temperature fluctuations.",
+            "Grain exposed to rain near maturity may sprout in the head or develop storage-quality problems.",
+            "Fusarium-damaged Wheat may contain mycotoxins even when contamination is not visually obvious.",
+            "Ergot bodies, moldy kernels, rodent-contaminated grain, chemically treated seed, and suspect screenings must be rejected.",
+            "Whole grain stores more reliably than cracked or ground Wheat.",
+            "Freezing may help control some stored-grain insects but does not remove mycotoxins, ergot alkaloids, chemical seed treatments, mold damage, or bacterial contamination.",
+            "Seed saved for future planting must remain clearly separated from chemically treated commercial planting seed.",
+            "No universal household storage duration is guaranteed because moisture, cleanliness, temperature, insects, container quality, and monitoring differ."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable-until-cracked-ground-or-sprouted",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-or-mammal-browsing",
+            "rodent-feeding",
+            "lodging",
+            "storm-damage",
+            "preharvest-sprouting",
+            "shattering",
+            "cutting-loss",
+            "grain-left-in-heads",
+            "threshing-loss",
+            "winnowing-loss",
+            "screening-loss",
+            "sorting-loss",
+            "drying-loss",
+            "stored-insect-damage",
+            "rodent-damage",
+            "moisture-absorption",
+            "condensation",
+            "mold",
+            "spillage",
+            "feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Use only sound, mature, clean, adequately dried Wheat.",
+            "Never feed chemically treated planting seed.",
+            "Do not feed moldy, musty, heated, damp, caked, sour-smelling, or abnormally discolored Wheat.",
+            "Do not feed grain suspected of Fusarium or mycotoxin contamination without appropriate testing and professional guidance.",
+            "Do not feed Wheat containing ergot bodies.",
+            "Do not assume that cleaning, grinding, soaking, sprouting, freezing, or cooking makes contaminated grain safe.",
+            "Inspect grain screenings carefully because they may concentrate damaged kernels, weed seeds, ergot, mold, stones, dust, insects, and foreign material.",
+            "Whole Wheat is a supplemental energy grain and not a complete poultry feed.",
+            "Wheat does not provide sufficient calcium for laying hens.",
+            "Wheat protein does not provide a complete amino-acid balance by itself.",
+            "Excessive supplementation may displace balanced complete feed.",
+            "High or poorly balanced Wheat use may contribute to sticky droppings, wet litter, dirty eggs, selective feeding, and reduced nutrient balance.",
+            "Whole grain is most appropriate for established adult chickens capable of handling the kernel size.",
+            "Provide suitable grit when birds consume whole grain and do not otherwise have dependable access to appropriate grit.",
+            "Introduce a new supplemental grain gradually while monitoring feed intake, droppings, body condition, egg production, and litter condition.",
+            "No universal safe backyard inclusion percentage is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Measured supplemental feeding",
+            "Winter grain supplementation",
+            "Long-term household grain storage",
+            "Emergency feed reserves",
+            "Later cracking or grinding",
+            "Later sprouting",
+            "Household food use",
+            "Seed saving",
+            "Flocks with dependable access to balanced complete feed"
+          ],
+
+          notRecommendedFor: [
+            "Young chicks as an unformulated whole-grain feed",
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Unrestricted free-choice grain feeding",
+            "Flocks without suitable grit where whole grain is offered",
+            "Birds unable to swallow or process whole kernels",
+            "Moldy or inadequately dried grain",
+            "Fusarium-damaged grain",
+            "Mycotoxin-suspect grain",
+            "Ergot-contaminated grain",
+            "Chemically treated planting seed",
+            "Rodent-contaminated grain",
+            "Uninspected screenings"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              true,
+
+            requiresThreshingCapability:
+              true,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              true,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "small-to-medium-for-trial-production",
+
+            preferredSpaceCategory:
+              "medium-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "extreme-heat-during-reproduction",
+              "persistently-waterlogged",
+              "insufficient-season-for-selected-variety"
+            ],
+
+            compatibleGoals: [
+              "grow-energy-feed",
+              "supplement-feed",
+              "winter-storage",
+              "emergency-feed-storage",
+              "feed-security",
+              "self-sufficiency",
+              "household-food-production",
+              "seed-saving",
+              "crop-rotation"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "continuous-living-forage",
+              "permanent-pasture",
+              "zero-processing"
+            ],
+
+            notes: [
+              "This pathway requires mature grain production rather than forage-only production.",
+              "The grower must be able to harvest, dry, thresh, clean, inspect, and store the grain safely.",
+              "Small plots remain eligible for trial production, but the planner should reduce expected practical value when available space is too limited to justify grain-processing labor.",
+              "Eligibility does not guarantee that Wheat is the highest-value crop for a particular property.",
+              "Wildlife protection becomes increasingly important as heads fill and mature.",
+              "The selected spring, winter, or facultative cultivar must match the local growing season.",
+              "Winter Wheat requires locally dependable winter survival.",
+              "Spring Wheat requires enough cool-season time to reach maturity before severe heat.",
+              "Questionable grain quality makes the pathway ineligible until safety is established."
+            ]
+          },
+
+          directFacts: {
+            matureGrainRequired:
+              true,
+
+            wholeKernelForm:
+              true,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            highEnergyFeed:
+              true,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            longTermStoragePotential:
+              true,
+
+            nonElectricStoragePossible:
+              true,
+
+            laterProcessingPossible:
+              true,
+
+            humanFoodCompetitionPossible:
+              true,
+
+            gritRelevant:
+              true,
+
+            betaGlucanPrimaryConcern:
+              false,
+
+            arabinoxylanConcern:
+              true,
+
+            phytateConcern:
+              true,
+
+            treatedSeedProhibited:
+              true,
+
+            fusariumConcern:
+              true,
+
+            mycotoxinConcern:
+              true,
+
+            ergotConcern:
+              true,
+
+            moldConcern:
+              true,
+
+            rodentConcern:
+              true,
+
+            notes: [
+              "Whole dry Wheat is the crop's strongest long-term storage pathway.",
+              "Intact grain generally stores more reliably than cracked or ground Wheat.",
+              "The pathway provides energy and starch rather than a complete ration.",
+              "Wheat is generally more energy dense and lower in fiber than ordinary hulled Barley.",
+              "Wheat beta-glucan is not the principal poultry limitation.",
+              "Arabinoxylans and incomplete nutrient balance remain important limitations.",
+              "Whole grain provides relatively precise measurement compared with feeding intact heads.",
+              "Whole grain may be reserved for later cracking, grinding, sprouting, household food, or seed saving.",
+              "The planner should account for human-food competition where food-grade Wheat is grown.",
+              "The pathway should receive strong penalties when the grower lacks drying, threshing, cleaning, storage, or wildlife-protection capability.",
+              "No pounds-per-square-foot or feed-replacement guarantee is supported."
+            ]
+          }
         },
 
-        {
-          "id":
-            "cracked-or-ground-wheat-grain",
+                {
+          id:
+            "cracked-wheat",
 
-          "label":
-            "Cracked or Coarsely Ground Wheat Grain",
+          label:
+            "Cracked Wheat",
 
-          "description":
-            "Sound, fully dried, threshed, cleaned wheat grain is cracked or coarsely ground for measured supplementation or use as one ingredient in a properly balanced poultry ration.",
+          description:
+            "Clean mature Wheat grain is mechanically broken into coarse particles to improve handling, mixing, and accessibility for established adult chickens while retaining a recognizable grain texture.",
 
-          "primaryFeedRole":
+          primaryFeedRole:
             "processed-energy-grain",
 
-          "harvestProducts": [
-            "cracked-grain",
-            "coarsely-ground-grain",
-            "processed-wheat",
-            "stored-grain"
+          harvestProducts: [
+            "cracked-wheat",
+            "coarsely-broken-wheat-grain",
+            "measured-energy-supplement",
+            "processed-ration-ingredient"
           ],
 
-          "suitableFeedingMethods": [
-            "processed-grain",
+          suitableFeedingMethods: [
             "measured-supplement",
-            "balanced-ration-ingredient"
+            "separate-grain-feeding",
+            "mixed-feed-ingredient",
+            "winter-supplement",
+            "enrichment-scatter"
           ],
 
-          "requiredProcessingTasks": [
-            "cut-seed-heads",
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
             "dry",
             "thresh",
+            "remove-coarse-awns-and-chaff",
             "winnow",
+            "screen",
             "clean-sort",
+            "inspect-moisture",
+            "crack-grain"
+          ],
+
+          optionalProcessingTasks: [
+            "portion",
+            "mix-into-formulated-ration",
+            "freeze-whole-grain-before-cracking-for-insect-control",
+            "laboratory-test-questionable-grain",
+            "screen-after-cracking",
+            "remove-excess-fines"
+          ],
+
+          requiredEquipment: [
+            "grain-cracker-or-adjustable-grain-mill"
+          ],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "sickle",
+            "scythe",
+            "drying-screen",
+            "drying-rack",
+            "fan",
+            "threshing-container",
+            "mechanical-thresher",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "adjustable-roller-mill",
+            "coarse-burr-mill",
+            "feed-scale",
+            "food-safe-container",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal-harvest-with-small-batch-processing",
+
+          storageMethods: [
+            "short-term-sealed-dry-storage",
+            "small-batch-processing-from-stored-whole-grain"
+          ],
+
+          preferredStorageMethod:
+            "store-most-wheat-whole-and-crack-only-the-amount-needed-for-near-term-feeding",
+
+          storageDurationCategory:
+            "short-to-moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            4,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-term-dry-storage",
+            "small-batch-cracking",
+            "freezing-for-storage-insect-control",
+            "mixing-into-formulated-rations",
+            "coarse-household-food-processing"
+          ],
+
+          preservationLimitations: [
+            "Cracking exposes the interior of the kernel and reduces storage stability compared with intact whole Wheat.",
+            "Cracked grain absorbs moisture and odors more readily than whole grain.",
+            "Broken kernels produce more surface area for mold growth, oxidation, insect activity, and nutrient deterioration.",
+            "Fine particles may settle, separate from larger particles, create dust, or be selectively avoided.",
+            "Cracked Wheat should be produced in small batches rather than stored for the same period as intact grain.",
+            "Warm grain must be allowed to cool after mechanical processing before it is placed in a sealed container.",
+            "Grinding equipment must be cleaned regularly because retained grain dust and fragments can attract insects, rodents, and mold.",
+            "Cracking does not eliminate arabinoxylans, phytate, amino-acid limitations, low calcium, mycotoxins, ergot alkaloids, chemical seed treatments, or microbial contamination.",
+            "Freezing may help control some insects but does not restore spoiled or contaminated grain.",
+            "No universal household shelf life is guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "shorter-than-whole-grain",
+
+          shelfLifeAfterProcessingCategory:
+            "short-to-moderate",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-or-mammal-browsing",
+            "rodent-feeding",
+            "lodging",
+            "storm-damage",
+            "preharvest-sprouting",
+            "shattering",
+            "cutting-loss",
+            "grain-left-in-heads",
+            "threshing-loss",
+            "winnowing-loss",
+            "screening-loss",
+            "sorting-loss",
+            "drying-loss",
+            "grain-cracker-retention",
+            "excess-fines",
+            "dust",
+            "spillage",
+            "particle-separation",
+            "selective-feeding",
+            "moisture-absorption",
+            "oxidative-deterioration",
+            "stored-insect-damage",
+            "rodent-damage",
+            "mold",
+            "feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Use only sound, mature, clean, adequately dried Wheat.",
+            "Never crack or feed chemically treated planting seed.",
+            "Do not process moldy, musty, heated, damp, caked, sour-smelling, sprouted-in-storage, or abnormally discolored grain.",
+            "Do not process Wheat suspected of Fusarium or mycotoxin contamination unless its safety has been established through appropriate testing and professional guidance.",
+            "Do not use grain containing ergot bodies.",
+            "Cracking does not make contaminated grain safe.",
+            "Clean the mill or grain cracker before and after use.",
+            "Discard old grain residue, compacted dust, moldy material, and rodent-contaminated fragments from processing equipment.",
+            "Avoid creating excessively fine Wheat flour for informal poultry supplementation.",
+            "Fine dust may irritate the respiratory systems of people and birds.",
+            "Cracked Wheat is a supplemental energy ingredient and not a complete poultry feed.",
+            "Wheat does not supply sufficient calcium for laying hens.",
+            "Wheat protein does not provide a complete amino-acid balance by itself.",
+            "Excessive supplementation may displace balanced complete feed.",
+            "Poorly balanced Wheat use may contribute to sticky droppings, wet litter, dirty eggs, selective feeding, and reduced nutrient balance.",
+            "Offer an appropriate particle size for the age and size of the birds.",
+            "No universal safe backyard inclusion percentage is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Birds that handle coarse broken grain more readily than whole kernels",
+            "Measured supplemental feeding",
+            "Small-batch grain preparation",
+            "Mixing into an accurately formulated ration",
+            "Cool-season or winter supplementation",
+            "Enrichment scattering",
+            "Growers with suitable grain-processing equipment",
+            "Flocks whose complete feed remains the nutritional foundation"
+          ],
+
+          notRecommendedFor: [
+            "Young chicks as an unformulated grain feed",
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Unrestricted free-choice grain feeding",
+            "Long-term storage equal to intact whole grain",
+            "Large-batch processing without suitable storage",
+            "Extremely fine flour-like grinding",
+            "Moldy or inadequately dried grain",
+            "Fusarium-damaged grain",
+            "Mycotoxin-suspect grain",
+            "Ergot-contaminated grain",
+            "Chemically treated planting seed",
+            "Rodent-contaminated grain",
+            "Uninspected screenings",
+            "Flocks showing persistent selective feeding or complete-feed displacement"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              true,
+
+            requiresThreshingCapability:
+              true,
+
+            requiresGrindingCapability:
+              true,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "small-to-medium-for-trial-production",
+
+            preferredSpaceCategory:
+              "medium-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "extreme-heat-during-reproduction",
+              "persistently-waterlogged",
+              "insufficient-season-for-selected-variety"
+            ],
+
+            compatibleGoals: [
+              "grow-energy-feed",
+              "supplement-feed",
+              "measured-grain-feeding",
+              "winter-storage",
+              "emergency-feed-storage",
+              "feed-security",
+              "self-sufficiency",
+              "ration-ingredient-production",
+              "enrichment",
+              "crop-rotation"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "continuous-living-forage",
+              "permanent-pasture",
+              "zero-processing",
+              "maximum-long-term-storage-without-reprocessing"
+            ],
+
+            notes: [
+              "This pathway requires the complete mature-grain harvest process followed by an additional cracking step.",
+              "The grower must have equipment capable of producing coarse, relatively uniform particles without converting most of the grain into flour.",
+              "Stored whole Wheat should normally be cracked in small batches shortly before feeding.",
+              "The pathway becomes less practical when processing equipment, safe dry storage, wildlife protection, or routine cleanup is unavailable.",
+              "Small plots may remain eligible for trial use, but processing effort can exceed the practical feed value of the harvest.",
+              "The selected Wheat type must mature successfully in the local climate.",
+              "Questionable grain quality makes the pathway ineligible until safety is established.",
+              "Cracking improves physical accessibility but does not correct nutritional imbalance.",
+              "Ration formulation becomes necessary when cracked Wheat is used as a substantial component rather than an occasional measured supplement."
+            ]
+          },
+
+          directFacts: {
+            matureGrainRequired:
+              true,
+
+            crackedKernelForm:
+              true,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            highEnergyFeed:
+              true,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            longTermStoragePotential:
+              false,
+
+            storesLessReliablyThanWholeGrain:
+              true,
+
+            smallBatchProcessingPreferred:
+              true,
+
+            nonElectricStoragePossible:
+              true,
+
+            additionalProcessingRequired:
+              true,
+
+            humanFoodCompetitionPossible:
+              true,
+
+            gritRelevant:
+              false,
+
+            betaGlucanPrimaryConcern:
+              false,
+
+            arabinoxylanConcern:
+              true,
+
+            phytateConcern:
+              true,
+
+            treatedSeedProhibited:
+              true,
+
+            fusariumConcern:
+              true,
+
+            mycotoxinConcern:
+              true,
+
+            ergotConcern:
+              true,
+
+            moldConcern:
+              true,
+
+            rodentConcern:
+              true,
+
+            dustConcern:
+              true,
+
+            selectiveFeedingConcern:
+              true,
+
+            notes: [
+              "Cracked Wheat is whole mature grain that has been mechanically broken into smaller particles.",
+              "Cracking may make the grain easier for some adult birds to consume and easier to mix with other ingredients.",
+              "Cracking does not improve the crop's amino-acid balance, calcium concentration, or completeness as poultry feed.",
+              "Cracking does not remove arabinoxylans or phytate.",
+              "Cracked Wheat stores less reliably than intact whole grain because the kernel interior is exposed.",
+              "Most harvested Wheat should remain whole until shortly before processing.",
+              "Coarse particles are generally preferable to excessive flour-like fines for informal supplemental feeding.",
+              "Particle uniformity affects measurement, mixing, selective feeding, and waste.",
+              "Cracking creates additional labor, equipment needs, dust, cleanup, and processing losses.",
+              "A grain cracker or adjustable mill should be cleaned between batches.",
+              "Warm freshly processed grain should cool before sealed storage.",
+              "The pathway provides precise feed measurement but less preservation flexibility than whole-grain storage.",
+              "Ration formulation is not mandatory for a limited measured supplement, but it is required when Wheat becomes a substantial ration ingredient.",
+              "The planner should penalize this pathway when the user lacks grain-processing capability.",
+              "No processing-time-per-pound, waste percentage, storage-duration guarantee, or feed-replacement claim is supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "ground-wheat-ration-ingredient",
+
+          label:
+            "Ground Wheat Ration Ingredient",
+
+          description:
+            "Clean mature Wheat grain is dried, threshed, cleaned, and ground into an appropriately sized meal for incorporation into a nutritionally balanced poultry ration. This pathway is intended for formulated feed rather than free-choice grain feeding.",
+
+          primaryFeedRole:
+            "ration-energy-ingredient",
+
+          harvestProducts: [
+            "ground-wheat",
+            "coarse-wheat-meal",
+            "ration-ingredient",
+            "energy-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "balanced-ration",
+            "mixed-feed",
+            "home-formulated-feed",
+            "commercial-style-ration"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "dry",
+            "thresh",
+            "remove-coarse-awns-and-chaff",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
             "grind"
           ],
 
-          "optionalProcessingTasks": [
-            "portion",
-            "mix-feed"
+          optionalProcessingTasks: [
+            "laboratory-test-questionable-grain",
+            "freeze-whole-grain-before-grinding",
+            "screen-after-grinding",
+            "batch-mixing",
+            "particle-size-adjustment"
           ],
 
-          "requiredEquipment": [
+          requiredEquipment: [
             "grain-mill"
           ],
 
-          "helpfulEquipment": [
+          helpfulEquipment: [
+            "hammer-mill",
+            "roller-mill",
+            "grain-scale",
+            "feed-mixer",
+            "screen-set",
+            "moisture-meter",
+            "sealed-feed-containers",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "major",
+
+          harvestFrequencyCategory:
+            "single-seasonal-with-batch-processing",
+
+          storageMethods: [
+            "short-term-ground-feed-storage",
+            "whole-grain-storage-before-grinding"
+          ],
+
+          preferredStorageMethod:
+            "Store Wheat as whole grain and grind only enough for near-term feed preparation.",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            2,
+
+          humanFoodPriorityScore:
+            4,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "small-batch-grinding",
+            "sealed-short-term-storage",
+            "whole-grain-storage-before-processing",
+            "batch-ration-production"
+          ],
+
+          preservationLimitations: [
+            "Ground Wheat deteriorates more rapidly than intact kernels.",
+            "Grinding greatly increases exposed surface area.",
+            "Ground feed absorbs moisture readily.",
+            "Fine particles are susceptible to oxidation, insects, mold, and caking.",
+            "Large batches should not be prepared unless rapid use is expected.",
+            "Grinding does not improve nutritional balance or eliminate feed-safety concerns."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short",
+
+          shelfLifeAfterProcessingCategory:
+            "short",
+
+          likelyLossPoints: [
+            "threshing-loss",
+            "screening-loss",
+            "grinding-loss",
+            "dust",
+            "fine-particle-loss",
+            "mixing-loss",
+            "storage-deterioration",
+            "rodent-damage",
+            "mold",
+            "feed-separation"
+          ],
+
+          safetyWarnings: [
+            "Use only clean mature Wheat.",
+            "Never grind chemically treated seed.",
+            "Do not grind moldy, musty, heated, or contaminated grain.",
+            "Grinding does not destroy mycotoxins or ergot alkaloids.",
+            "Avoid excessive flour-like particles that increase dust.",
+            "Ground Wheat is not a complete poultry ration.",
+            "Ground Wheat should be incorporated into a properly balanced feed.",
+            "Excessive Wheat without proper amino-acid, vitamin, mineral, and calcium balance may reduce flock performance.",
+            "Prepare only the amount expected to be used within a reasonable period."
+          ],
+
+          bestFor: [
+            "Home feed formulation",
+            "Balanced poultry rations",
+            "Measured feed production",
+            "Medium and large flocks",
+            "Experienced keepers"
+          ],
+
+          notRecommendedFor: [
+            "Free-choice feeding",
+            "Young chicks without proper formulation",
+            "Long-term storage after grinding",
+            "Growers lacking ration-formulation knowledge",
+            "Moldy or contaminated grain"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "all-with-proper-formulation",
+
+            requiresAdultBirds:
+              false,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              true,
+
+            requiresThreshingCapability:
+              true,
+
+            requiresGrindingCapability:
+              true,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              true,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "small-to-medium",
+
+            preferredSpaceCategory:
+              "medium-to-large",
+
+            compatibleGoals: [
+              "feed-formulation",
+              "feed-security",
+              "energy-production",
+              "self-sufficiency"
+            ],
+
+            incompatibleGoals: [
+              "casual-free-choice-feeding",
+              "minimal-processing",
+              "long-term-ground-storage"
+            ],
+
+            notes: [
+              "This pathway should receive a substantial planner bonus only when the user indicates they formulate poultry feed.",
+              "Users without ration-formulation experience should generally be directed toward whole-grain or cracked-grain pathways instead.",
+              "Grinding improves mixing precision but reduces storage life.",
+              "The planner should strongly favor storing Wheat whole until shortly before grinding."
+            ]
+          },
+
+          directFacts: {
+            matureGrainRequired:
+              true,
+
+            supplementalUseOnly:
+              false,
+
+            rationIngredient:
+              true,
+
+            completeFeed:
+              false,
+
+            requiresBalancedFormulation:
+              true,
+
+            requiresGrindingEquipment:
+              true,
+
+            storageLifeReduced:
+              true,
+
+            particleSizeImportant:
+              true,
+
+            aminoAcidSupplementationNeeded:
+              true,
+
+            calciumSupplementationNeeded:
+              true,
+
+            vitaminMineralSupplementationNeeded:
+              true,
+
+            treatedSeedProhibited:
+              true,
+
+            mycotoxinConcern:
+              true,
+
+            ergotConcern:
+              true,
+
+            moldConcern:
+              true,
+
+            notes: [
+              "Ground Wheat is intended as an ingredient rather than a stand-alone poultry feed.",
+              "Grinding improves mixing accuracy but shortens storage life.",
+              "Whole-grain storage followed by small-batch grinding is generally the preferred household practice.",
+              "Proper formulation remains essential because Wheat alone does not meet poultry nutritional requirements.",
+              "The planner should recognize this pathway as appropriate only for users intentionally producing balanced feed."
+            ]
+          }
+        },
+
+                {
+          id:
+            "whole-wheat-heads",
+
+          label:
+            "Whole Wheat Heads",
+
+          description:
+            "Mature Wheat heads are cut, dried, inspected, and stored intact for controlled poultry enrichment. Chickens remove grain directly from the heads, reducing the grower's threshing and cleaning labor while providing prolonged pecking and scratching activity.",
+
+          primaryFeedRole:
+            "whole-head-grain-enrichment",
+
+          harvestProducts: [
+            "mature-wheat-heads",
+            "grain-bearing-stems",
+            "stored-whole-head-enrichment",
+            "unthreshed-wheat-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "hanging-enrichment",
+            "supervised-scatter-feeding",
+            "winter-enrichment",
+            "measured-pen-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "remove-diseased-or-damaged-heads",
+            "dry",
+            "inspect-moisture",
+            "bundle-or-containerize",
+            "store-dry"
+          ],
+
+          optionalProcessingTasks: [
+            "trim-long-stems",
+            "remove-coarse-awned-heads",
+            "portion-into-feeding-bundles",
+            "hang-above-litter",
+            "freeze-for-storage-insect-control",
+            "thresh-unused-heads-later"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
             "hand-pruners",
-            "basket",
+            "sickle",
+            "scythe",
+            "harvest-tarp",
             "drying-rack",
             "drying-screen",
             "fan",
-            "grain-thresher",
-            "winnowing-screen",
-            "feed-grinder",
-            "moisture-meter",
-            "food-safe-bucket",
-            "food-safe-container",
-            "metal-grain-can"
+            "twine",
+            "paper-sacks",
+            "breathable-storage-bins",
+            "sealed-storage-container-after-drying",
+            "rodent-resistant-storage",
+            "hanging-feeder-or-clip"
           ],
 
-          "harvestPattern":
+          harvestPattern:
             "major",
 
-          "harvestFrequencyCategory":
-            "seasonal",
+          harvestFrequencyCategory:
+            "single-seasonal-harvest-with-portion-based-feeding",
 
-          "storageMethods": [
-            "dried-ground"
+          storageMethods: [
+            "dry-bundled-head-storage",
+            "sealed-dry-container-storage",
+            "rodent-resistant-whole-head-storage"
           ],
 
-          "preferredStorageMethod":
-            "shorter-term-airtight-after-grinding",
+          preferredStorageMethod:
+            "fully-dried-clean-wheat-heads-stored-in-a-cool-dark-dry-and-rodent-resistant-location",
 
-          "storageDurationCategory":
-            "medium",
+          storageDurationCategory:
+            "moderate-to-long",
 
-          "nonElectricStorageSuitable":
+          nonElectricStorageSuitable:
             true,
 
-          "refrigerationSuitable":
+          refrigerationSuitable:
             false,
 
-          "freezingSuitable":
+          freezingSuitable:
             true,
 
-          "dryingRequired":
+          dryingRequired:
             true,
 
-          "curingRequired":
+          curingRequired:
             false,
 
-          "shellingRequired":
+          shellingRequired:
             false,
 
-          "threshingRequired":
-            true,
-
-          "cookingRequired":
+          threshingRequired:
             false,
 
-          "grindingRequired":
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
             true,
 
-          "moistureSensitive":
-            true,
-
-          "moldRiskScore":
+          moldRiskScore:
             5,
 
-          "rodentRiskScore":
+          rodentRiskScore:
             5,
 
-          "storedInsectRiskScore":
+          storedInsectRiskScore:
+            5,
+
+          harvestEaseScore:
             4,
 
-          "harvestEaseScore":
-            3,
+          preparationEaseScore:
+            5,
 
-          "preparationEaseScore":
-            1,
+          beginnerSuitabilityScore:
+            4,
 
-          "beginnerSuitabilityScore":
+          householdFoodValueScore:
             2,
 
-          "householdFoodValueScore":
-            4,
-
-          "flockValueScore":
+          flockValueScore:
             5,
 
-          "safetyWarnings": [
-            "Process only clean, sound, adequately dried wheat.",
-            "Grinding exposes more grain surface to oxygen, humidity, contamination, and quality loss.",
-            "Store cracked or ground wheat for a shorter period than intact whole grain.",
-            "Cracking or grinding does not correct wheat's low calcium or make it a complete poultry ration.",
-            "Do not feed moldy, musty, heated, sprouted, ergot-contaminated, insect-damaged, or rodent-contaminated grain.",
-            "Do not feed chemically treated planting seed."
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-to-high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-head-dry-storage",
+            "bundled-storage",
+            "sealed-container-storage-after-complete-drying",
+            "freezing-for-storage-insect-control",
+            "later-threshing",
+            "later-cleaning",
+            "later-cracking",
+            "later-grinding"
           ],
 
-          "incompatibleUserTraits": [
-            "declines-drying",
-            "declines-threshing",
-            "declines-winnowing",
-            "declines-grinding",
-            "requires-minimal-processing",
-            "owns-no-grinding-equipment",
-            "will-not-purchase-required-equipment",
-            "has-no-dry-storage",
-            "has-no-rodent-protected-storage"
-          ]
-        }
-      ],
+          preservationLimitations: [
+            "Whole Wheat heads occupy substantially more storage volume than cleaned loose grain.",
+            "Heads and attached stem material can retain hidden moisture longer than loose grain.",
+            "Bundles stored before complete drying may heat, mold, or develop musty odors.",
+            "Dense bundles restrict airflow and should not be sealed until every part is fully dry and cool.",
+            "Whole heads may harbor insects, spiders, weed seeds, chaff, diseased kernels, rodent contamination, or field debris.",
+            "Awned heads may be unsuitable for direct feeding when awns are stiff, sharp, persistent, or irritating.",
+            "Whole-head feeding provides less precise measurement of actual grain intake than cleaned grain.",
+            "Some grain may remain attached, become buried in litter, be carried away, or be consumed by wild birds and rodents.",
+            "Whole heads should not be stored near damp walls, soil floors, roof leaks, poultry waterers, or condensation-prone surfaces.",
+            "Freezing may reduce some insect activity but does not correct mold, mycotoxins, ergot, chemical treatment, or rodent contamination.",
+            "No universal safe storage duration is guaranteed."
+          ],
 
-      "dataQuality": {
-        "overallConfidence": "High",
+          estimatedShelfLifeCategory:
+            "moderate-to-long",
 
-        "verifiedSections": [
-          "Nutrition",
-          "Growing",
-          "Planting Windows",
-          "Storage",
-          "Cover Crop",
-          "Forage",
-          "Poultry Feeding",
-          "Research Sources"
+          shelfLifeAfterProcessingCategory:
+            "not-applicable-until-threshed-cracked-or-ground",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-or-mammal-browsing",
+            "rodent-feeding-before-harvest",
+            "lodging",
+            "storm-damage",
+            "preharvest-sprouting",
+            "shattering",
+            "cutting-loss",
+            "heads-dropped-during-gathering",
+            "grain-left-unconsumed-on-heads",
+            "grain-buried-in-litter",
+            "chaff-and-stem-waste",
+            "spillage",
+            "stored-insect-damage",
+            "rodent-damage",
+            "moisture-absorption",
+            "condensation",
+            "mold",
+            "overfeeding",
+            "complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Use only mature, clean, fully dried Wheat heads.",
+            "Never feed heads produced from chemically treated planting seed when treatment restrictions prohibit feed use.",
+            "Do not feed moldy, musty, damp, heated, slimy, caked, or abnormally discolored heads.",
+            "Reject heads showing Fusarium damage, ergot bodies, extensive sprouting, insect contamination, or rodent contamination.",
+            "Do not assume that drying, freezing, threshing, grinding, or cooking makes contaminated heads safe.",
+            "Inspect awned Wheat carefully before direct flock feeding.",
+            "Stiff awns may irritate the mouth, eyes, nostrils, skin, crop, or upper digestive tract.",
+            "Consider awnless or less-awned Wheat when whole-head feeding is a major goal.",
+            "Remove wire, plastic ties, netting fragments, treated twine, and other foreign material before feeding.",
+            "Do not hang bundles in a way that can entangle feet, wings, necks, or leg bands.",
+            "Do not place large dry bundles near heaters, open flame, electrical hazards, or other ignition sources.",
+            "Whole Wheat heads remain a supplemental energy feed and are not a complete poultry ration.",
+            "Wheat does not supply adequate calcium for laying hens.",
+            "Wheat does not provide a complete amino-acid balance by itself.",
+            "Offer whole heads in controlled amounts so birds continue consuming balanced complete feed.",
+            "Monitor litter for hidden grain that may attract rodents, insects, or mold.",
+            "No universal safe backyard inclusion percentage is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Pecking enrichment",
+            "Winter flock activity",
+            "Confined flocks needing behavioral stimulation",
+            "Growers seeking to reduce threshing labor",
+            "Small grain plots",
+            "Supervised supplemental feeding",
+            "Hanging or suspended enrichment",
+            "Postharvest educational demonstrations",
+            "Later threshing when only part of the harvest is fed intact"
+          ],
+
+          notRecommendedFor: [
+            "Young chicks",
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Unrestricted free-choice feeding",
+            "Flocks that aggressively consume bedding or long stems",
+            "Awned cultivars with sharp persistent awns",
+            "Moldy or inadequately dried heads",
+            "Fusarium-damaged heads",
+            "Mycotoxin-suspect heads",
+            "Ergot-contaminated heads",
+            "Chemically treated planting seed harvests not approved for feed",
+            "Rodent-contaminated material",
+            "Storage areas lacking rodent protection",
+            "Wet or poorly ventilated poultry housing"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              true,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              true,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "small",
+
+            preferredSpaceCategory:
+              "small-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "extreme-heat-during-reproduction",
+              "persistently-waterlogged",
+              "insufficient-season-for-selected-variety"
+            ],
+
+            compatibleGoals: [
+              "whole-head-enrichment",
+              "supplement-feed",
+              "winter-enrichment",
+              "grow-energy-feed",
+              "reduce-processing-labor",
+              "feed-security",
+              "self-sufficiency",
+              "educational-value",
+              "confined-flock-enrichment",
+              "crop-rotation"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "precise-feed-intake-measurement",
+              "minimum-storage-volume",
+              "zero-waste",
+              "continuous-living-forage",
+              "permanent-pasture"
+            ],
+
+            notes: [
+              "This pathway requires a successful mature-grain crop but does not require threshing before feeding.",
+              "The grower must still be able to harvest, dry, inspect, portion, and store the heads safely.",
+              "Awn characteristics must be evaluated before the pathway is considered suitable.",
+              "The pathway is especially practical for small plots where hand threshing would require disproportionate labor.",
+              "Storage-volume requirements are greater than for cleaned loose grain.",
+              "Actual grain intake is less precise because birds consume kernels directly from the heads.",
+              "Suitable grit should be available because birds consume intact kernels.",
+              "Wildlife protection remains important during head filling and maturity.",
+              "Questionable, moldy, Fusarium-damaged, ergot-contaminated, chemically contaminated, or rodent-contaminated heads make the pathway ineligible.",
+              "The selected Wheat variety must mature under the local climate and planting schedule."
+            ]
+          },
+
+          directFacts: {
+            matureGrainRequired:
+              true,
+
+            wholeHeadForm:
+              true,
+
+            grainRemainsAttached:
+              true,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            highEnergyFeed:
+              true,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            enrichmentValue:
+              true,
+
+            behavioralStimulation:
+              true,
+
+            threshingAvoided:
+              true,
+
+            cleaningLaborReduced:
+              true,
+
+            storageVolumeHigherThanLooseGrain:
+              true,
+
+            feedMeasurementLessPrecise:
+              true,
+
+            grainRecoveryMayBeIncomplete:
+              true,
+
+            longStemMaterialNotPrimaryFeed:
+              true,
+
+            awnInspectionRequired:
+              true,
+
+            awnlessCultivarPreferred:
+              true,
+
+            gritRelevant:
+              true,
+
+            laterThreshingPossible:
+              true,
+
+            nonElectricStoragePossible:
+              true,
+
+            betaGlucanPrimaryConcern:
+              false,
+
+            arabinoxylanConcern:
+              true,
+
+            phytateConcern:
+              true,
+
+            treatedSeedProhibited:
+              true,
+
+            fusariumConcern:
+              true,
+
+            mycotoxinConcern:
+              true,
+
+            ergotConcern:
+              true,
+
+            moldConcern:
+              true,
+
+            rodentConcern:
+              true,
+
+            notes: [
+              "Whole Wheat heads are one of the most practical backyard use paths because they avoid most threshing and grain-cleaning labor.",
+              "The birds perform much of the grain-removal work through normal pecking behavior.",
+              "The pathway provides both feed value and behavioral enrichment.",
+              "Whole heads are less efficient to store than cleaned grain because stems, chaff, and empty head structures occupy space.",
+              "Actual grain intake is difficult to measure precisely because kernels may remain attached or become lost in litter.",
+              "Hanging small bundles can prolong activity and reduce immediate burial of grain in bedding.",
+              "Bundles should be attached with a poultry-safe method that does not create an entanglement hazard.",
+              "Short stem sections are generally easier to store and feed than full-length straw bundles.",
+              "Dry stems and chaff are not equivalent to Wheat grain nutritionally.",
+              "Awned and awnless cultivars should not automatically receive the same whole-head suitability score.",
+              "Sharp awns may make an otherwise productive cultivar unsuitable for direct whole-head feeding.",
+              "The pathway remains nutritionally supplemental and cannot replace complete poultry feed.",
+              "The planner should reward this pathway when enrichment and low processing are high priorities.",
+              "The planner should reduce its score when exact feed measurement, compact storage, young-bird feeding, or zero-waste use is required.",
+              "No exact processing time, grain recovery percentage, waste percentage, or storage duration is supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "wheat-sprouts",
+
+          label:
+            "Wheat Sprouts",
+
+          description:
+            "Sound untreated Wheat grain is soaked, drained, rinsed, and germinated for a short period until small roots and shoots emerge. The fresh sprouts may be offered in controlled amounts as a supplemental poultry feed and enrichment material, but they do not create additional dry feed mass and require strict sanitation.",
+
+          primaryFeedRole:
+            "fresh-sprouted-grain-supplement",
+
+          harvestProducts: [
+            "short-wheat-sprouts",
+            "germinated-wheat-grain",
+            "fresh-sprouted-energy-feed",
+            "season-independent-green-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-sprouts",
+            "measured-supplement",
+            "tray-fed-supplement",
+            "winter-green-supplement",
+            "supervised-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-sound-untreated-grain",
+            "clean-sort",
+            "measure-dry-grain",
+            "soak",
+            "drain",
+            "rinse",
+            "maintain-airflow",
+            "monitor-temperature",
+            "inspect-daily",
+            "feed-fresh",
+            "clean-and-sanitize-equipment"
+          ],
+
+          optionalProcessingTasks: [
+            "pre-rinse-grain",
+            "use-small-batch-trays",
+            "weigh-before-and-after-sprouting",
+            "record-dry-matter-input",
+            "refrigerate-briefly-after-germination",
+            "chop-root-mass",
+            "mix-with-complete-feed-at-feeding-time"
+          ],
+
+          requiredEquipment: [
+            "sprouting-container-or-tray",
+            "clean-water-source",
+            "drainage-capability"
+          ],
+
+          helpfulEquipment: [
+            "fine-mesh-strainer",
+            "sprouting-jar",
+            "shallow-food-safe-tray",
+            "ventilated-lid",
+            "measuring-cup",
+            "kitchen-scale",
+            "thermometer",
+            "fan",
+            "clean-rinse-bucket",
+            "sanitation-brush",
+            "refrigerator-for-brief-holding"
+          ],
+
+          harvestPattern:
+            "repeated-small-batch",
+
+          harvestFrequencyCategory:
+            "daily-or-multi-day-batch-cycle",
+
+          storageMethods: [
+            "feed-immediately-after-rinsing-and-draining",
+            "brief-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "feed-fresh-after-final-rinse-and-thorough-draining",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            4,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate-with-daily-attention",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate-when-successful",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            4,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "brief-refrigerated-holding",
+            "staggered-small-batch-production",
+            "immediate-feeding",
+            "later-transition-to-hydroponic-fodder"
+          ],
+
+          preservationLimitations: [
+            "Fresh Wheat sprouts are highly perishable.",
+            "Warm wet conditions favor mold, yeast, bacterial growth, slime, souring, and overheating.",
+            "Sprouts should not be stored at room temperature after they are ready to feed.",
+            "Refrigeration may slow deterioration but does not make contaminated sprouts safe.",
+            "Wet sprouts held in a dense mass may heat or become anaerobic.",
+            "Sprouting does not create additional dry matter.",
+            "The increase in total weight is primarily water absorbed by the seed and growing tissue.",
+            "Respiration consumes part of the original seed carbohydrate during germination.",
+            "Sprouting does not correct Wheat's low calcium or incomplete amino-acid balance.",
+            "Sprouting does not remove mycotoxins, ergot alkaloids, chemical seed treatments, or all antinutritional factors.",
+            "Contaminated grain should never be salvaged through sprouting.",
+            "No universal household sprout shelf life is guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "feed-immediately-or-hold-briefly-under-refrigeration",
+
+          likelyLossPoints: [
+            "grain-rejected-during-sorting",
+            "soaking-water-loss",
+            "grain-lost-during-rinsing",
+            "poor-germination",
+            "uneven-germination",
+            "excessive-soaking",
+            "insufficient-drainage",
+            "overheating",
+            "mold",
+            "yeast-growth",
+            "bacterial-contamination",
+            "souring",
+            "slime",
+            "root-mat-spoilage",
+            "sprouts-drying-out",
+            "birds-scattering-sprouts",
+            "wet-feed-left-in-litter",
+            "complete-feed-displacement",
+            "discarded-failed-batches"
+          ],
+
+          safetyWarnings: [
+            "Use only sound, clean, untreated Wheat grain intended for food, feed, forage, or sprouting.",
+            "Never sprout chemically treated planting seed.",
+            "Do not sprout moldy, musty, heated, insect-damaged, rodent-contaminated, Fusarium-damaged, ergot-contaminated, or mycotoxin-suspect grain.",
+            "Sprouting does not make contaminated grain safe.",
+            "Use clean food-safe containers and potable water.",
+            "Wash and sanitize trays, jars, screens, strainers, and tools between batches.",
+            "Maintain dependable drainage and airflow.",
+            "Do not allow Wheat to remain submerged after the soaking period.",
+            "Avoid excessively deep grain layers.",
+            "Inspect every batch at least daily.",
+            "Discard sprouts showing visible mold, slime, sour odor, unusual discoloration, heating, fermentation, or poor texture.",
+            "Do not rinse visibly spoiled sprouts and then feed them.",
+            "Do not mix a questionable batch with sound feed.",
+            "Feed sprouts fresh and remove uneaten wet material before it spoils in the coop or run.",
+            "Wheat sprouts are a supplemental feed and not a complete poultry ration.",
+            "Sprouts contain substantial water and may dilute nutrient intake when they replace balanced dry feed.",
+            "Wheat sprouts do not supply sufficient calcium for laying hens.",
+            "They do not provide a complete amino-acid balance by themselves.",
+            "Introduce gradually and monitor droppings, litter moisture, feed intake, body condition, and egg production.",
+            "No universal safe backyard inclusion percentage is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Small flocks",
+            "Winter green supplementation",
+            "Short indoor production cycles",
+            "Measured fresh enrichment",
+            "Growers able to maintain daily sanitation",
+            "Households with limited outdoor growing space",
+            "Using stored untreated Wheat in small batches",
+            "Educational germination projects",
+            "Flocks whose complete feed remains the nutritional foundation"
+          ],
+
+          notRecommendedFor: [
+            "Young chicks without careful ration management",
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Unrestricted free-choice feeding",
+            "Growers unable to inspect batches daily",
+            "Locations lacking clean water",
+            "Systems without dependable drainage",
+            "Deep trays with poor airflow",
+            "Long room-temperature storage",
+            "Moldy or questionable grain",
+            "Fusarium-damaged grain",
+            "Mycotoxin-suspect grain",
+            "Ergot-contaminated grain",
+            "Chemically treated planting seed",
+            "Rodent-contaminated grain",
+            "Spoiled or sour-smelling sprouts"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              true,
+
+            requiresWildlifeProtection:
+              false,
+
+            minimumSpaceCategory:
+              "very-small",
+
+            preferredSpaceCategory:
+              "very-small-to-small",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation",
+              "indoor-controlled-environment"
+            ],
+
+            incompatibleClimateTypes: [
+              "uncontrolled-extreme-indoor-heat",
+              "persistently-cold-indoor-germination-area",
+              "poorly-ventilated-high-humidity-environment"
+            ],
+
+            compatibleGoals: [
+              "sprouted-feed",
+              "winter-green-supplement",
+              "small-space-production",
+              "indoor-feed-production",
+              "enrichment",
+              "season-extension",
+              "educational-value",
+              "use-stored-grain",
+              "supplement-feed",
+              "self-sufficiency"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "long-term-ready-to-feed-storage",
+              "zero-daily-labor",
+              "zero-sanitation",
+              "maximum-dry-matter-production",
+              "minimum-water-use"
+            ],
+
+            notes: [
+              "This pathway requires sound untreated grain rather than field access to a living Wheat crop.",
+              "The user must have clean water, drainage, airflow, suitable containers, and the ability to inspect and rinse batches daily.",
+              "The pathway should be considered ineligible when daily sanitation cannot be maintained.",
+              "The pathway should be strongly penalized when the user wants low-labor or long-storage feed.",
+              "Small-batch production is preferred because failure or contamination then affects less grain.",
+              "Stored whole Wheat should remain dry until a batch is intentionally started.",
+              "Questionable grain quality makes the pathway ineligible.",
+              "The planner should distinguish short sprouts from mature hydroponic fodder because their growth time, water content, root mass, sanitation demands, and feeding form differ.",
+              "Sprout weight should not be interpreted as newly created feed dry matter.",
+              "Complete poultry feed must remain the nutritional foundation."
+            ]
+          },
+
+          directFacts: {
+            matureDryGrainStartingMaterial:
+              true,
+
+            untreatedSeedRequired:
+              true,
+
+            germinationRequired:
+              true,
+
+            shortSproutStage:
+              true,
+
+            hydroponicFodderStage:
+              false,
+
+            freshFeed:
+              true,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            highEnergyFeed:
+              true,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            dailyLaborRequired:
+              true,
+
+            dailyInspectionRequired:
+              true,
+
+            repeatedRinsingRequired:
+              true,
+
+            drainageRequired:
+              true,
+
+            airflowRequired:
+              true,
+
+            temperatureManagementImportant:
+              true,
+
+            sanitationCritical:
+              true,
+
+            longTermStoragePotential:
+              false,
+
+            refrigerationMayExtendBriefly:
+              true,
+
+            dryMatterIncrease:
+              false,
+
+            freshWeightIncreasePrimarilyWater:
+              true,
+
+            respirationConsumesStoredDryMatter:
+              true,
+
+            nutrientProfileChangesDuringGermination:
+              true,
+
+            nutritionalCompletenessCreated:
+              false,
+
+            calciumDeficiencyCorrected:
+              false,
+
+            aminoAcidBalanceCorrected:
+              false,
+
+            mycotoxinsRemoved:
+              false,
+
+            ergotMadeSafe:
+              false,
+
+            treatedSeedMadeSafe:
+              false,
+
+            gritRelevant:
+              false,
+
+            moldConcern:
+              true,
+
+            yeastConcern:
+              true,
+
+            bacterialConcern:
+              true,
+
+            wetLitterConcern:
+              true,
+
+            notes: [
+              "Wheat sprouts begin with dry mature grain and are harvested shortly after germination.",
+              "They should not be grouped automatically with taller hydroponic fodder mats.",
+              "The apparent increase in harvested weight is primarily absorbed water.",
+              "Germination consumes part of the original kernel's stored carbohydrate through respiration.",
+              "Sprouting changes physical form, palatability, enzyme activity, and concentrations of some nutrients.",
+              "These changes do not transform Wheat into a complete poultry feed.",
+              "Short sprouts remain an energy-oriented supplement with substantial moisture.",
+              "Fresh sprouts may provide useful winter variety and enrichment.",
+              "Sanitation is the main operational limitation.",
+              "Small batches reduce the amount lost when germination fails or contamination develops.",
+              "A clean earthy or fresh-grain smell may be normal, but sour, fermented, musty, rotten, or unusually sweet odors are warning signs.",
+              "Visible fuzzy growth should be evaluated carefully because fine root hairs may resemble mold, but any uncertainty should favor discarding the batch.",
+              "Root hairs normally remain attached uniformly to healthy roots, while mold may spread irregularly across grain, trays, or plant surfaces.",
+              "The presence of normal root hairs does not override other warning signs such as slime, sour odor, heat, or discoloration.",
+              "Sprouts should be thoroughly drained before feeding to reduce excess free water.",
+              "Uneaten sprouts should not remain in warm litter or wet feeding areas.",
+              "This pathway can use purchased food-grade or feed-grade untreated Wheat even when the user does not grow a mature grain crop.",
+              "The planner should not credit sprout fresh weight as equivalent to the same weight of dry Wheat grain.",
+              "No exact germination duration, feed percentage, dry-matter recovery, processing time, waste percentage, or shelf life is universally supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "hydroponic-wheat-fodder",
+
+          label:
+            "Hydroponic Wheat Fodder",
+
+          description:
+            "Untreated Wheat grain is germinated and grown into a dense root-and-shoot mat under carefully managed indoor conditions. The entire mat, including roots, shoots, and remaining grain, is offered fresh as a supplemental forage and enrichment feed. Hydroponic fodder is distinct from short Wheat sprouts because it requires a longer growing period, substantially more water, greater sanitation, and additional tray management.",
+
+          primaryFeedRole:
+            "fresh-hydroponic-forage",
+
+          harvestProducts: [
+            "hydroponic-wheat-fodder",
+            "root-mat",
+            "young-green-shoots",
+            "fresh-forage-mat"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-fodder-mat",
+            "cut-and-carry",
+            "measured-supplement",
+            "winter-green-feed",
+            "supervised-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-sound-untreated-grain",
+            "clean-sort",
+            "measure-grain",
+            "soak",
+            "drain",
+            "spread-evenly-in-trays",
+            "maintain-drainage",
+            "maintain-airflow",
+            "maintain-light",
+            "monitor-temperature",
+            "inspect-daily",
+            "harvest-fresh",
+            "sanitize-trays"
+          ],
+
+          optionalProcessingTasks: [
+            "trim-root-mat",
+            "cut-fodder-into-sections",
+            "rotate-trays",
+            "record-batch-performance",
+            "weigh-input-and-output",
+            "refrigerate-briefly-before-feeding"
+          ],
+
+          requiredEquipment: [
+            "hydroponic-trays",
+            "clean-water-source",
+            "drainage-system"
+          ],
+
+          helpfulEquipment: [
+            "tray-rack",
+            "circulation-fan",
+            "thermometer",
+            "humidity-monitor",
+            "grow-light",
+            "food-safe-brush",
+            "sanitizing-solution",
+            "scale"
+          ],
+
+          harvestPattern:
+            "continuous-batch",
+
+          harvestFrequencyCategory:
+            "daily-staggered-production",
+
+          storageMethods: [
+            "feed-immediately",
+            "brief-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "Harvest immediately before feeding whenever practical.",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "brief-refrigeration"
+          ],
+
+          preservationLimitations: [
+            "Hydroponic Wheat fodder is highly perishable.",
+            "The majority of harvested weight is water.",
+            "The fodder cannot be stored for extended periods.",
+            "Warm, wet conditions favor mold, bacteria, yeast, and slime.",
+            "Spoiled fodder should never be salvaged.",
+            "Hydroponic production does not increase the original dry matter contained in the seed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "feed-immediately",
+
+          likelyLossPoints: [
+            "poor-germination",
+            "uneven-growth",
+            "mold",
+            "slime",
+            "root-rot",
+            "bacterial-growth",
+            "overheating",
+            "water-quality-problems",
+            "discarded-batches",
+            "birds-scattering-root-mats",
+            "uneaten-fodder"
+          ],
+
+          safetyWarnings: [
+            "Only untreated Wheat intended for feed, food, forage, or sprouting should be used.",
+            "Never use chemically treated planting seed.",
+            "Maintain excellent sanitation throughout production.",
+            "Discard any tray showing mold, slime, sour odor, heating, discoloration, or poor drainage.",
+            "Hydroponic fodder does not replace a complete poultry ration.",
+            "The fresh weight of fodder should not be interpreted as equivalent dry feed.",
+            "Poor sanitation can rapidly produce unsafe feed."
+          ],
+
+          bestFor: [
+            "Winter green supplementation",
+            "Small backyard flocks",
+            "Indoor production",
+            "Behavioral enrichment",
+            "Educational demonstrations"
+          ],
+
+          notRecommendedFor: [
+            "Long-term storage",
+            "Complete ration replacement",
+            "Growers unable to maintain daily sanitation",
+            "Large commercial feed production",
+            "Poorly ventilated systems"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              true,
+
+            requiresWildlifeProtection:
+              false,
+
+            minimumSpaceCategory:
+              "very-small",
+
+            preferredSpaceCategory:
+              "very-small-to-small",
+
+            compatibleGoals: [
+              "winter-green-feed",
+              "indoor-feed-production",
+              "supplement-feed",
+              "educational-value",
+              "small-space-production",
+              "enrichment"
+            ],
+
+            incompatibleGoals: [
+              "long-term-storage",
+              "complete-feed-replacement",
+              "minimal-labor",
+              "minimal-water-use"
+            ],
+
+            notes: [
+              "Hydroponic Wheat fodder requires substantially more daily management than dry-grain storage.",
+              "This pathway should receive a planner penalty whenever the user indicates low available labor.",
+              "The planner should distinguish hydroponic fodder from short sprouts because sanitation requirements and physical form differ significantly.",
+              "Fresh weight gains should not be interpreted as new feed dry matter."
+            ]
+          },
+
+          directFacts: {
+            hydroponicProduction:
+              true,
+
+            rootMatFed:
+              true,
+
+            shootsFed:
+              true,
+
+            freshFeed:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            dailyLaborRequired:
+              true,
+
+            dailyInspectionRequired:
+              true,
+
+            sanitationCritical:
+              true,
+
+            highMoistureFeed:
+              true,
+
+            dryMatterIncrease:
+              false,
+
+            weightIncreasePrimarilyWater:
+              true,
+
+            longTermStoragePotential:
+              false,
+
+            requiresCleanWater:
+              true,
+
+            moldConcern:
+              true,
+
+            bacterialConcern:
+              true,
+
+            yeastConcern:
+              true,
+
+            wetLitterConcern:
+              true,
+
+            notes: [
+              "Hydroponic Wheat fodder is fundamentally a fresh forage system rather than a grain-storage system.",
+              "The majority of harvested weight consists of absorbed water.",
+              "Respiration consumes part of the original grain's stored carbohydrates.",
+              "Hydroponic fodder provides flock enrichment and seasonal greens but does not create additional dry feed mass.",
+              "Excellent sanitation is essential for safe production.",
+              "The planner should favor this pathway only when users specifically desire indoor fresh forage production and are willing to perform daily maintenance."
+            ]
+          }
+        },
+
+                {
+          id:
+            "young-green-wheat-forage",
+
+          label:
+            "Young Green Wheat Forage",
+
+          description:
+            "Young vegetative Wheat leaves and tender shoots are harvested before advanced stem elongation and offered fresh as a controlled cut-and-carry supplement. This pathway provides cool-season greens and enrichment without allowing chickens direct access to the growing stand.",
+
+          primaryFeedRole:
+            "fresh-cut-cool-season-forage",
+
+          harvestProducts: [
+            "young-wheat-leaves",
+            "tender-wheat-shoots",
+            "fresh-green-chop",
+            "cool-season-forage"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-green-chop",
+            "measured-forage-supplement",
+            "supervised-enrichment",
+            "tray-or-feeder-presentation"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-living-wheat-stand",
+            "exclude-chickens-during-establishment",
+            "inspect-for-contamination",
+            "harvest-young-vegetative-growth",
+            "remove-coarse-or-damaged-material",
+            "chop-if-needed",
+            "feed-fresh",
+            "remove-uneaten-wet-forage"
+          ],
+
+          optionalProcessingTasks: [
+            "rinse-soil-splashed-forage",
+            "weigh-harvest",
+            "bundle-for-hanging-enrichment",
+            "mix-with-other-safe-greens",
+            "schedule-repeated-light-cuttings",
+            "reserve-part-of-stand-for-grain"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-shears",
+            "scissors",
+            "sickle",
+            "harvest-basket",
+            "clean-bucket",
+            "cutting-board",
+            "forage-knife",
+            "feed-scale",
+            "hanging-forage-clip",
+            "poultry-safe-feeder"
+          ],
+
+          harvestPattern:
+            "repeated-light-harvest-before-stem-coarsening",
+
+          harvestFrequencyCategory:
+            "intermittent-seasonal",
+
+          storageMethods: [
+            "feed-immediately-after-harvest",
+            "brief-refrigerated-holding"
+          ],
+
+          preferredStorageMethod:
+            "harvest-only-the-amount-needed-and-feed-the-forage-fresh",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-fresh-feeding",
+            "brief-refrigerated-holding",
+            "staggered-field-harvest",
+            "repeated-light-cutting"
+          ],
+
+          preservationLimitations: [
+            "Fresh Wheat forage wilts and deteriorates rapidly after cutting.",
+            "Wet, compacted forage can heat, ferment, become slimy, or develop mold.",
+            "Refrigeration may slow deterioration but does not make spoiled or contaminated forage safe.",
+            "Freezing changes texture and is not treated as a preferred preservation method for this pathway.",
+            "Drying young Wheat forage produces a materially different product with different intake, fiber, storage, and processing characteristics.",
+            "Fresh forage should not be sealed while warm or wet.",
+            "Repeated cutting reduces the plant's stored energy and may reduce later grain yield.",
+            "Harvesting after stem elongation produces coarser, more fibrous material.",
+            "No universal fresh-forage shelf life is guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "feed-immediately-or-hold-briefly-under-refrigeration",
+
+          likelyLossPoints: [
+            "poor-establishment",
+            "weed-competition",
+            "drought-stunting",
+            "waterlogging",
+            "winterkill",
+            "wildlife-browsing",
+            "disease-damaged-leaves",
+            "soil-contamination",
+            "overcutting",
+            "cutting-after-stem-coarsening",
+            "wilting",
+            "heating",
+            "fermentation",
+            "mold",
+            "forage-scattered-by-birds",
+            "forage-buried-in-litter",
+            "uneaten-wet-material",
+            "reduced-later-grain-yield",
+            "complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Harvest only healthy Wheat from an accurately identified and uncontaminated stand.",
+            "Do not feed forage from chemically treated planting areas until all product-label restrictions and withdrawal requirements have been satisfied.",
+            "Do not feed forage contaminated by herbicides, pesticides, fertilizers, manure spills, fuel, roadway runoff, toxic weeds, mold, or animal waste.",
+            "Do not harvest from areas containing toxic plants that may be cut accidentally with the Wheat.",
+            "Remove diseased, moldy, slimy, yellowed, heavily rusted, or decaying material.",
+            "Do not feed forage with a sour, fermented, musty, or rotten odor.",
+            "Avoid feeding forage heavily splashed with soil or contaminated by standing water.",
+            "Fresh Wheat forage is a supplemental green feed and not a complete poultry ration.",
+            "Young Wheat forage does not provide adequate calcium for laying hens.",
+            "It does not provide a complete amino-acid balance by itself.",
+            "Large quantities of wet forage may dilute intake of balanced dry feed and increase litter moisture.",
+            "Introduce gradually and monitor droppings, litter condition, complete-feed intake, body condition, and egg production.",
+            "Remove uneaten fresh material before it spoils.",
+            "No universal safe backyard inclusion percentage is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Cool-season green supplementation",
+            "Cut-and-carry feeding",
+            "Confined flocks",
+            "Small garden plots",
+            "Growers who want greens without allowing direct flock access",
+            "Autumn and spring enrichment",
+            "Light repeated harvests",
+            "Educational forage trials",
+            "Flocks whose complete feed remains the nutritional foundation"
+          ],
+
+          notRecommendedFor: [
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Unrestricted free-choice feeding",
+            "Long-term storage",
+            "Mature coarse stems",
+            "Dry straw",
+            "Moldy or fermented forage",
+            "Chemically contaminated stands",
+            "Roadside or runoff-contaminated plantings",
+            "Areas containing toxic weeds",
+            "Heavy repeated cutting where grain harvest remains the primary goal",
+            "Forage harvested after severe disease damage",
+            "Growers unable to remove uneaten wet forage"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              true,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              false,
+
+            requiresRodentResistantStorage:
+              false,
+
+            requiresProtectiveBarrier:
+              true,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              false,
+
+            minimumSpaceCategory:
+              "small",
+
+            preferredSpaceCategory:
+              "small-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "persistent-extreme-heat",
+              "persistently-waterlogged",
+              "deep-shade",
+              "chemically-contaminated-site"
+            ],
+
+            compatibleGoals: [
+              "green-forage",
+              "cut-and-carry",
+              "cool-season-forage",
+              "supplement-feed",
+              "season-extension",
+              "confined-flock-enrichment",
+              "small-space-production",
+              "educational-value",
+              "crop-rotation",
+              "soil-cover"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "long-term-storage",
+              "zero-harvest-labor",
+              "permanent-pasture",
+              "maximum-grain-yield-with-repeated-cutting"
+            ],
+
+            notes: [
+              "This pathway requires a living Wheat stand and controlled human harvesting.",
+              "Chickens should remain excluded from the growing area because direct access can uproot plants, compact soil, scratch away seedlings, and destroy future harvests.",
+              "The protective barrier may be ordinary garden fencing rather than a forage frame because the birds do not feed through the barrier.",
+              "The pathway should be favored when the user wants cut-and-carry greens but lacks daily indoor sprouting capacity.",
+              "The pathway should be penalized when the primary goal is maximum mature-grain production.",
+              "Light cutting during early vegetative growth may allow regrowth, but recovery varies with temperature, moisture, fertility, growth stage, cutting height, and variety.",
+              "Harvesting after jointing can remove developing stems and greatly reduce or eliminate grain production.",
+              "Questionable, chemically exposed, moldy, diseased, or contaminated forage makes the pathway ineligible.",
+              "The selected Wheat type and planting season must match the local climate.",
+              "Complete poultry feed must remain the nutritional foundation."
+            ]
+          },
+
+          directFacts: {
+            livingFieldCropRequired:
+              true,
+
+            youngVegetativeGrowthRequired:
+              true,
+
+            preJointingHarvestPreferred:
+              true,
+
+            matureGrainRequired:
+              false,
+
+            freshFeed:
+              true,
+
+            cutAndCarryUse:
+              true,
+
+            directChickenAccess:
+              false,
+
+            protectiveExclusionRequired:
+              true,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            highEnergyFeed:
+              false,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            coolSeasonGreenFeed:
+              true,
+
+            repeatedHarvestPossible:
+              true,
+
+            regrowthGuaranteed:
+              false,
+
+            laterGrainHarvestPossible:
+              true,
+
+            repeatedCuttingMayReduceGrainYield:
+              true,
+
+            cuttingAfterJointingHighRisk:
+              true,
+
+            matureStemSuitable:
+              false,
+
+            strawEquivalent:
+              false,
+
+            longTermStoragePotential:
+              false,
+
+            refrigerationMayExtendBriefly:
+              true,
+
+            moistureConcern:
+              true,
+
+            moldConcern:
+              true,
+
+            fermentationConcern:
+              true,
+
+            soilContaminationConcern:
+              true,
+
+            chemicalExposureConcern:
+              true,
+
+            toxicWeedContaminationConcern:
+              true,
+
+            gritRelevant:
+              false,
+
+            notes: [
+              "Young green Wheat forage consists primarily of tender leaves and shoots harvested before substantial stem coarsening.",
+              "It is physically and nutritionally different from dry Wheat grain, Wheat sprouts, hydroponic fodder, mature heads, and straw.",
+              "The pathway avoids threshing, grain cleaning, milling, and dry-grain storage.",
+              "It requires outdoor crop establishment and repeated fresh harvest instead.",
+              "Cut-and-carry use allows the grower to control flock intake and protect the roots and crowns from scratching.",
+              "Early vegetative growth may recover after light cutting when adequate leaf area and growing conditions remain.",
+              "Regrowth should not be assumed after severe cutting, low cutting height, drought, freezing injury, nutrient stress, disease, or advanced stem development.",
+              "Jointing marks an important transition because cutting developing stems can sharply reduce grain-head production.",
+              "A grower seeking both forage and grain should reserve an uncut portion of the stand or stop cutting sufficiently early.",
+              "Fresh forage contains much more water and less concentrated energy per pound than mature dry grain.",
+              "Fresh harvested weight should not be compared directly with an equal weight of dry Wheat grain.",
+              "Young Wheat forage can add seasonal variety and pecking interest but does not balance a poultry ration.",
+              "Dense wet piles should not remain in feeders or litter.",
+              "The planner should reward this pathway for cut-and-carry, cool-season greens, confined-flock enrichment, and low processing.",
+              "The planner should reduce its score for maximum grain production, long storage, precise dry-feed replacement, and low harvest frequency.",
+              "No exact cutting interval, regrowth percentage, harvest weight, feeding percentage, waste percentage, or grain-yield reduction is universally supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "protected-wheat-forage-frame",
+
+          label:
+            "Protected Wheat Forage Frame",
+
+          description:
+            "A living stand of Wheat is grown beneath a poultry-proof barrier that allows chickens to clip young leaves through the openings while preventing scratching, uprooting, trampling, and destruction of the crop. The forage frame extends grazing time and preserves stand health better than unrestricted flock access.",
+
+          primaryFeedRole:
+            "protected-living-forage",
+
+          harvestProducts: [
+            "living-wheat-leaves",
+            "protected-green-forage",
+            "managed-living-supplement",
+            "cool-season-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "forage-frame",
+            "protected-grazing",
+            "controlled-access",
+            "living-green-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-living-wheat-stand",
+            "install-protective-frame",
+            "maintain-frame-height",
+            "monitor-regrowth",
+            "rotate-access-if-needed",
+            "inspect-for-contamination"
+          ],
+
+          optionalProcessingTasks: [
+            "raise-frame-as-growth-increases",
+            "trim-overgrown-areas",
+            "water-during-drought",
+            "fertility-management",
+            "weed-control",
+            "temporary-rest-periods"
+          ],
+
+          requiredEquipment: [
+            "forage-frame-or-wire-panel"
+          ],
+
+          helpfulEquipment: [
+            "hardware-cloth",
+            "welded-wire-panel",
+            "raised-frame",
+            "ground-stakes",
+            "portable-frame",
+            "watering-system",
+            "hand-shears"
+          ],
+
+          harvestPattern:
+            "continuous-light-grazing",
+
+          harvestFrequencyCategory:
+            "repeated-seasonal",
+
+          storageMethods: [
+            "living-standing-forage"
+          ],
+
+          preferredStorageMethod:
+            "Consumed directly from the protected living stand.",
+
+          storageDurationCategory:
+            "not-applicable",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "living-stand-only"
+          ],
+
+          preservationLimitations: [
+            "The forage exists only while the stand remains alive.",
+            "Growth slows during unfavorable weather.",
+            "Excessive grazing pressure can exceed regrowth capacity.",
+            "Poor drainage, drought, heat, disease, wildlife damage, or nutrient deficiency may reduce production.",
+            "This pathway does not create a stored feed reserve."
+          ],
+
+          estimatedShelfLifeCategory:
+            "living-crop",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "poor-establishment",
+            "wildlife-browsing",
+            "drought",
+            "waterlogging",
+            "winterkill",
+            "weed-competition",
+            "disease",
+            "overgrazing",
+            "frame-damage",
+            "bird-reach-exceeding-frame-height"
+          ],
+
+          safetyWarnings: [
+            "Do not allow chickens unrestricted access beneath the frame.",
+            "Inspect the frame regularly for sharp edges or entrapment hazards.",
+            "Do not use treated lumber, toxic coatings, or contaminated fencing materials where birds may peck.",
+            "Avoid forage contaminated with pesticides, herbicides, fuel, manure runoff, or toxic weeds.",
+            "Remove diseased or moldy foliage.",
+            "Protected Wheat forage is a supplemental green feed and not a complete poultry ration."
+          ],
+
+          bestFor: [
+            "Small backyard flocks",
+            "Confined runs",
+            "Cool-season enrichment",
+            "Reducing scratching damage",
+            "Repeated grazing",
+            "Educational demonstrations",
+            "Season extension"
+          ],
+
+          notRecommendedFor: [
+            "Large commercial flocks",
+            "Complete ration replacement",
+            "Heavy continuous grazing pressure",
+            "Poorly drained sites",
+            "Areas with severe wildlife pressure"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "all",
+
+            requiresAdultBirds:
+              false,
+
+            requiresProcessingCapability:
+              false,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              false,
+
+            requiresRodentResistantStorage:
+              false,
+
+            requiresProtectiveBarrier:
+              true,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "small",
+
+            preferredSpaceCategory:
+              "small-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "persistent-flooding",
+              "deep-shade"
+            ],
+
+            compatibleGoals: [
+              "living-forage",
+              "low-processing",
+              "green-supplement",
+              "behavioral-enrichment",
+              "season-extension",
+              "soil-cover"
+            ],
+
+            incompatibleGoals: [
+              "stored-feed",
+              "complete-feed-replacement",
+              "maximum-grain-production"
+            ],
+
+            notes: [
+              "The protective frame is essential to prevent chickens from scratching out the stand.",
+              "The frame should allow birds to clip leaves while protecting the crowns and root system.",
+              "Temporary rest periods improve stand longevity.",
+              "Production depends on active plant growth and favorable weather.",
+              "This pathway is intended for supplemental grazing only."
+            ]
+          },
+
+          directFacts: {
+            livingCrop:
+              true,
+
+            protectiveFrameRequired:
+              true,
+
+            directRootAccessPrevented:
+              true,
+
+            repeatedGrazingPossible:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            cutAndCarryRequired:
+              false,
+
+            standingForage:
+              true,
+
+            regrowthPossible:
+              true,
+
+            grainHarvestPrimaryGoal:
+              false,
+
+            storageFeed:
+              false,
+
+            weatherDependent:
+              true,
+
+            notes: [
+              "The forage frame is designed to protect the Wheat stand while allowing repeated clipping by the flock.",
+              "Because the crowns remain protected, the stand generally survives considerably longer than unrestricted grazing.",
+              "This pathway emphasizes flock enrichment and cool-season greens rather than maximum feed production.",
+              "Stand longevity depends on grazing intensity, weather, fertility, and rest periods.",
+              "The planner should reward this pathway when users desire low-processing living forage and have the ability to build a simple protective frame."
+            ]
+          }
+        },
+
+                {
+          id:
+            "rotational-wheat-grazing",
+
+          label:
+            "Rotational Wheat Grazing",
+
+          description:
+            "An established stand of vegetative Wheat is divided into temporary paddocks or controlled-access sections so chickens can graze young leaves directly for limited periods. Access is rotated and followed by adequate rest to reduce uprooting, soil damage, overgrazing, and permanent loss of the stand.",
+
+          primaryFeedRole:
+            "managed-living-forage",
+
+          harvestProducts: [
+            "living-wheat-forage",
+            "young-wheat-leaves",
+            "cool-season-grazing",
+            "managed-green-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "rotational-grazing",
+            "controlled-paddock-access",
+            "temporary-run-access",
+            "supervised-living-forage",
+            "cool-season-pasture-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-living-wheat-stand",
+            "exclude-chickens-during-establishment",
+            "divide-growing-area",
+            "confirm-root-and-crown-establishment",
+            "introduce-flock-for-limited-access",
+            "monitor-grazing-pressure",
+            "remove-flock-before-severe-damage",
+            "rest-grazed-section",
+            "inspect-for-contamination",
+            "maintain-fencing"
+          ],
+
+          optionalProcessingTasks: [
+            "use-portable-electric-poultry-netting",
+            "use-temporary-paddock-panels",
+            "rotate-sections",
+            "irrigate-during-dry-periods",
+            "mow-or-trim-uneven-growth",
+            "overseed-thin-areas",
+            "record-recovery-time",
+            "reserve-ungrazed-section-for-grain",
+            "provide-shade-or-weather-shelter"
+          ],
+
+          requiredEquipment: [
+            "temporary-fencing-or-paddock-system"
+          ],
+
+          helpfulEquipment: [
+            "portable-poultry-netting",
+            "lightweight-fence-panels",
+            "ground-stakes",
+            "mobile-shelter",
+            "portable-waterer",
+            "portable-feeder",
+            "irrigation-hose",
+            "soil-moisture-monitor",
+            "hand-shears",
+            "mower",
+            "grazing-log"
+          ],
+
+          harvestPattern:
+            "repeated-controlled-direct-grazing",
+
+          harvestFrequencyCategory:
+            "intermittent-rotational-seasonal",
+
+          storageMethods: [
+            "living-standing-forage"
+          ],
+
+          preferredStorageMethod:
+            "maintain-the-crop-as-a-living-stand-and-rotate-flock-access-before-severe-defoliation-occurs",
+
+          storageDurationCategory:
+            "not-applicable",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "moderate-management",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "maintain-living-stand",
+            "stagger-planting-sections",
+            "rest-grazed-paddocks",
+            "reserve-ungrazed-area-for-later-use"
+          ],
+
+          preservationLimitations: [
+            "The forage is available only while the Wheat stand remains alive and actively growing.",
+            "This pathway does not create a stored feed reserve.",
+            "Direct flock access makes actual forage intake difficult to measure.",
+            "Chickens may consume leaves, scratch soil, expose roots, uproot plants, compact wet ground, and create bare areas.",
+            "Wheat cannot tolerate unlimited continuous poultry access.",
+            "Recovery slows during freezing weather, drought, extreme heat, nutrient stress, disease, or advanced reproductive growth.",
+            "Wet soil increases the risk of compaction, puddling, root damage, mud, manure concentration, and stand destruction.",
+            "Repeated defoliation can reduce or eliminate later grain production.",
+            "Rotational grazing requires enough total area to provide meaningful rest periods.",
+            "Small plots may be destroyed before a useful rotation can be established.",
+            "Wildlife, predators, fencing failures, and weather exposure may limit safe flock access.",
+            "No universal grazing interval, stocking density, rest period, or forage yield is guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "living-crop",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "poor-seedbed-establishment",
+            "seedling-scratching",
+            "wild-bird-feeding",
+            "deer-browsing",
+            "rabbit-browsing",
+            "drought",
+            "waterlogging",
+            "winterkill",
+            "heat-stress",
+            "weed-competition",
+            "plant-disease",
+            "insect-damage",
+            "overgrazing",
+            "uprooting",
+            "soil-compaction",
+            "mud-damage",
+            "manure-concentration",
+            "uneven-grazing",
+            "bare-patches",
+            "fencing-failure",
+            "predator-related-access-loss",
+            "insufficient-rest-period",
+            "reduced-grain-yield",
+            "complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Do not allow chickens onto newly seeded or weakly rooted Wheat.",
+            "Wait until plants are sufficiently established to resist limited pecking and traffic.",
+            "Do not use unrestricted continuous access as a substitute for rotational management.",
+            "Remove the flock before plants are grazed to the crown or roots are exposed.",
+            "Do not graze saturated, muddy, flooded, chemically contaminated, or manure-overloaded ground.",
+            "Avoid access to Wheat treated with pesticides, herbicides, fertilizers, or other agricultural chemicals until all label restrictions and required waiting periods have been satisfied.",
+            "Do not graze areas containing toxic weeds, sharp debris, wire, broken glass, treated wood, standing water, fuel contamination, or unsafe fencing.",
+            "Inspect temporary fencing regularly for entanglement, escape, and predator-entry hazards.",
+            "Provide clean drinking water, shade, shelter, and balanced complete feed during grazing access.",
+            "Living Wheat forage is a supplemental feed and not a complete poultry ration.",
+            "Wheat forage does not provide sufficient calcium for laying hens.",
+            "It does not provide a complete amino-acid balance by itself.",
+            "Actual forage intake cannot be measured precisely during direct grazing.",
+            "Monitor flock condition, complete-feed consumption, droppings, litter or soil condition, and egg production.",
+            "No universal safe stocking rate or grazing duration is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Medium or large growing areas",
+            "Cool-season paddock systems",
+            "Portable poultry housing",
+            "Temporary run expansion",
+            "Growers with multiple grazing sections",
+            "Managed seasonal enrichment",
+            "Soil-covered chicken areas",
+            "Flocks that can be moved reliably",
+            "Homesteads prioritizing living forage over stored grain"
+          ],
+
+          notRecommendedFor: [
+            "Young seedlings",
+            "Unrooted Wheat stands",
+            "Very small plots with no recovery area",
+            "Permanent unrestricted flock access",
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Maximum mature-grain production",
+            "Wet or poorly drained soil",
+            "Steep erosion-prone slopes",
+            "Predator-exposed areas without secure fencing",
+            "Chemically contaminated stands",
+            "Areas containing toxic weeds",
+            "Growers unable to move birds promptly",
+            "Systems lacking enough land for rest and recovery"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              false,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              false,
+
+            requiresRodentResistantStorage:
+              false,
+
+            requiresProtectiveBarrier:
+              true,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "medium",
+
+            preferredSpaceCategory:
+              "large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "persistent-extreme-heat",
+              "persistently-waterlogged",
+              "deep-shade",
+              "insufficient-growing-season",
+              "chemically-contaminated-site"
+            ],
+
+            compatibleGoals: [
+              "rotational-grazing",
+              "living-forage",
+              "cool-season-forage",
+              "green-supplement",
+              "behavioral-enrichment",
+              "reduce-bare-ground",
+              "managed-paddocks",
+              "mobile-coop-system",
+              "season-extension",
+              "soil-cover",
+              "crop-rotation"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "stored-feed",
+              "precise-feed-intake-measurement",
+              "zero-management",
+              "continuous-unrestricted-access",
+              "maximum-grain-yield"
+            ],
+
+            notes: [
+              "This pathway requires enough growing area to divide access and provide meaningful recovery periods.",
+              "The stand must be well established before the flock enters.",
+              "Temporary fencing or another reliable access-control system is required.",
+              "The flock must be removed before scratching and defoliation expose crowns or roots.",
+              "The pathway should be considered ineligible when the user cannot rotate birds or rest the crop.",
+              "Medium space may support limited rotational trials, but large space is preferred for dependable recovery.",
+              "Wet soil should delay grazing even when foliage appears ready.",
+              "Recovery time varies with season, rainfall, irrigation, fertility, soil condition, grazing severity, variety, and plant growth stage.",
+              "Repeated grazing should be strongly penalized when mature grain is the primary production goal.",
+              "A separate ungrazed section may be reserved when both forage and grain are desired.",
+              "The selected Wheat type and planting date must match the local climate.",
+              "Complete poultry feed must remain available throughout grazing."
+            ]
+          },
+
+          directFacts: {
+            livingFieldCropRequired:
+              true,
+
+            directChickenAccess:
+              true,
+
+            controlledAccessRequired:
+              true,
+
+            rotationalManagementRequired:
+              true,
+
+            temporaryFencingRequired:
+              true,
+
+            establishedRootsRequired:
+              true,
+
+            seedlingAccessSuitable:
+              false,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            freshFeed:
+              true,
+
+            standingForage:
+              true,
+
+            cutAndCarryRequired:
+              false,
+
+            repeatedGrazingPossible:
+              true,
+
+            continuousGrazingSuitable:
+              false,
+
+            restPeriodRequired:
+              true,
+
+            regrowthPossible:
+              true,
+
+            regrowthGuaranteed:
+              false,
+
+            minimumSpaceGreaterThanForageFrame:
+              true,
+
+            actualIntakeMeasurementPrecise:
+              false,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            grainHarvestPrimaryGoal:
+              false,
+
+            laterGrainHarvestPossible:
+              true,
+
+            repeatedGrazingMayReduceGrainYield:
+              true,
+
+            wetSoilAccessHighRisk:
+              true,
+
+            uprootingRisk:
+              true,
+
+            soilCompactionRisk:
+              true,
+
+            erosionRisk:
+              true,
+
+            predatorProtectionRequired:
+              true,
+
+            storedFeed:
+              false,
+
+            weatherDependent:
+              true,
+
+            notes: [
+              "Rotational Wheat grazing allows chickens to harvest young forage directly from a living field stand.",
+              "It differs from a forage frame because the birds walk directly on the planted soil and can reach the entire plant.",
+              "Direct access increases the risks of scratching, uprooting, trampling, soil compaction, manure concentration, and uneven grazing.",
+              "The stand must be well rooted before grazing begins.",
+              "Grazing must stop before the crowns and roots are severely damaged.",
+              "Rest periods are necessary because Wheat cannot regrow indefinitely under continuous poultry pressure.",
+              "Recovery depends on active plant growth and is slow during cold, drought, heat, disease, or nutrient stress.",
+              "Wet ground should not be grazed because traffic damage can exceed the value of the forage consumed.",
+              "Rotational sections should be sized according to flock pressure and observed stand damage rather than an unsupported universal stocking formula.",
+              "A portable coop or paddock system can distribute flock impact across a larger area.",
+              "Direct grazing reduces harvest and processing labor but also reduces feed-intake precision.",
+              "Fresh Wheat forage contains substantially more water and less concentrated energy per pound than dry grain.",
+              "The pathway can provide cool-season enrichment, living ground cover, and supplemental greens.",
+              "It does not replace balanced complete feed.",
+              "Repeated defoliation may prevent heading or reduce grain yield.",
+              "The planner should reward this pathway for large-space users seeking managed grazing, living forage, and low processing.",
+              "The planner should penalize it for small spaces, wet soil, maximum grain production, exact feed measurement, limited fencing, or inability to rotate the flock.",
+              "No exact stocking density, access duration, rest interval, forage intake, dry-matter yield, waste percentage, or grain-yield reduction is universally supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "postharvest-wheat-gleaning",
+
+          label:
+            "Postharvest Wheat Gleaning",
+
+          description:
+            "Chickens receive controlled access to a Wheat-growing area after the primary grain harvest so they can recover shattered kernels, grain remaining in missed heads, weed seeds, insects, and other edible material. This pathway uses harvest residue rather than treating standing mature Wheat or dry straw as a complete forage crop.",
+
+          primaryFeedRole:
+            "postharvest-field-recovery",
+
+          harvestProducts: [
+            "shattered-wheat-kernels",
+            "grain-remaining-in-missed-heads",
+            "volunteer-wheat-seed",
+            "weed-seeds",
+            "field-insects",
+            "postharvest-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "postharvest-gleaning",
+            "controlled-field-access",
+            "temporary-paddock-access",
+            "supervised-residue-grazing",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-primary-grain-harvest",
+            "remove-harvest-equipment-and-hazards",
+            "inspect-field-for-contamination",
+            "confirm-chemical-use-restrictions",
+            "install-safe-access-control",
+            "provide-clean-water",
+            "provide-complete-feed",
+            "monitor-flock-access",
+            "remove-flock-before-soil-damage-or-feed-depletion"
+          ],
+
+          optionalProcessingTasks: [
+            "collect-obvious-large-grain-spills-before-access",
+            "divide-field-into-sections",
+            "use-portable-fencing",
+            "move-mobile-shelter",
+            "record-gleaning-duration",
+            "inspect-for-volunteer-toxic-weeds",
+            "lightly-disturb-residue-to-expose-hidden-kernels",
+            "reserve-residue-for-soil-cover",
+            "follow-with-cover-crop-establishment"
+          ],
+
+          requiredEquipment: [
+            "safe-access-control-or-temporary-fencing"
+          ],
+
+          helpfulEquipment: [
+            "portable-poultry-netting",
+            "temporary-fence-panels",
+            "ground-stakes",
+            "mobile-coop",
+            "portable-waterer",
+            "portable-feeder",
+            "shade-shelter",
+            "field-rake",
+            "harvest-tarp",
+            "inspection-bucket"
+          ],
+
+          harvestPattern:
+            "single-postharvest-access-period",
+
+          harvestFrequencyCategory:
+            "seasonal-after-grain-harvest",
+
+          storageMethods: [
+            "in-place-field-residue"
+          ],
+
+          preferredStorageMethod:
+            "allow-short-term-controlled-gleaning-soon-after-harvest-before-weather-rodents-and-wild-birds-remove-or-spoil-the-remaining-grain",
+
+          storageDurationCategory:
+            "very-short-field-window",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low-with-active-supervision",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-because-material-would-otherwise-remain-in-field",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-controlled-field-access",
+            "sectioned-gleaning",
+            "manual-recovery-of-large-spills-before-weather-exposure"
+          ],
+
+          preservationLimitations: [
+            "Postharvest Wheat gleaning is available only for a limited period after the primary harvest.",
+            "Rain, dew, soil moisture, flooding, and humidity can quickly reduce the safety and value of exposed grain.",
+            "Shattered kernels lying on soil may absorb moisture, germinate, mold, ferment, or become contaminated.",
+            "Wild birds, rodents, insects, and weather may remove much of the remaining grain before chickens enter.",
+            "Actual edible material is highly variable and cannot be predicted from planted area alone.",
+            "The field may contain mostly straw and stubble after an efficient harvest.",
+            "Dry Wheat straw is low-value fibrous residue and should not be counted as equivalent to grain or young forage.",
+            "Gleaning provides no dependable stored feed reserve.",
+            "The pathway does not allow accurate measurement of grain intake.",
+            "Repeated or prolonged access can reduce surface residue needed for erosion control and soil protection.",
+            "Wet-soil access can cause compaction, rutting, manure concentration, and destruction of the seedbed.",
+            "No universal gleaning duration, grain-recovery percentage, or feed value is guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "brief-postharvest-opportunity",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "efficient-primary-harvest-leaving-little-grain",
+            "shattering-before-harvest",
+            "grain-buried-in-soil",
+            "rain-damage",
+            "dew-wetting",
+            "preharvest-sprouting",
+            "postharvest-germination",
+            "mold",
+            "fermentation",
+            "rodent-feeding",
+            "wild-bird-feeding",
+            "insect-feeding",
+            "grain-hidden-under-residue",
+            "grain-trampled-into-soil",
+            "weed-seed-competition",
+            "uneven-flock-use",
+            "soil-compaction",
+            "erosion",
+            "predator-related-access-loss",
+            "complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Allow gleaning only after the primary harvest is complete and all harvesting equipment has been removed or secured.",
+            "Inspect the area for sharp metal, wire, broken glass, machinery parts, twine, netting, treated wood, chemical containers, and other hazards.",
+            "Do not allow access where pesticide, herbicide, fungicide, seed-treatment, fertilizer, desiccant, or harvest-aid restrictions prohibit grazing or feeding.",
+            "Follow every product label and required waiting interval before poultry access.",
+            "Do not permit gleaning from fields containing moldy grain, Fusarium-damaged kernels, ergot bodies, chemically treated seed spills, rodent contamination, or unknown grain residues.",
+            "Do not permit access to flooded, saturated, muddy, manure-overloaded, or chemically contaminated soil.",
+            "Inspect the field for toxic weeds and toxic volunteer plants before releasing the flock.",
+            "Do not assume all volunteer seeds or green plants in a harvested field are safe.",
+            "Provide balanced complete feed continuously because the amount and nutritional composition of gleaned material are unpredictable.",
+            "Provide clean water, shade, weather protection, and predator protection.",
+            "Monitor birds for access to neighboring crops, roads, machinery, chemicals, and unsafe fencing.",
+            "Remove chickens when grain recovery declines and scratching begins to damage soil or expose excessive bare ground.",
+            "Wheat straw is not a complete feed and should not be relied upon as a meaningful nutrient source.",
+            "Postharvest gleaning is supplemental and cannot replace a balanced poultry ration.",
+            "No universal safe flock density or field-access duration is stored."
+          ],
+
+          bestFor: [
+            "Established adult chickens",
+            "Small farms or homesteads growing Wheat",
+            "Recovering grain that would otherwise be lost",
+            "Seasonal flock enrichment",
+            "Temporary access after harvest",
+            "Mobile-coop systems",
+            "Fields with visible shattered grain or missed heads",
+            "Growers able to supervise access",
+            "Integrated crop-and-poultry systems",
+            "Reducing volunteer grain before the next crop"
+          ],
+
+          notRecommendedFor: [
+            "Young chicks",
+            "Standing mature Wheat before harvest",
+            "Complete-ration replacement",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Fields with recent restricted chemical applications",
+            "Moldy or Fusarium-damaged grain residue",
+            "Ergot-contaminated fields",
+            "Chemically treated seed spills",
+            "Flooded or muddy fields",
+            "Fields containing toxic weeds",
+            "Areas with unsafe machinery debris",
+            "Predator-exposed land without secure fencing",
+            "Very small fields where soil cover would be rapidly destroyed",
+            "Long-term continuous access",
+            "Situations requiring precise feed-intake measurement"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "established-adult",
+
+            requiresAdultBirds:
+              true,
+
+            requiresProcessingCapability:
+              false,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              false,
+
+            requiresRodentResistantStorage:
+              false,
+
+            requiresProtectiveBarrier:
+              true,
+
+            requiresGritAccess:
+              true,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              true,
+
+            minimumSpaceCategory:
+              "medium",
+
+            preferredSpaceCategory:
+              "medium-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "persistently-waterlogged",
+              "flooded-postharvest-field",
+              "chemically-restricted-access",
+              "unsafe-unfenced-field"
+            ],
+
+            compatibleGoals: [
+              "postharvest-gleaning",
+              "recover-harvest-losses",
+              "seasonal-enrichment",
+              "integrated-crop-poultry-system",
+              "reduce-waste",
+              "low-processing",
+              "mobile-coop-system",
+              "temporary-field-access",
+              "reduce-volunteer-grain",
+              "supplement-feed"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-protein-production",
+              "high-calcium-feed",
+              "stored-feed",
+              "precise-feed-intake-measurement",
+              "year-round-feed-production",
+              "continuous-unrestricted-access",
+              "maximum-residue-retention"
+            ],
+
+            notes: [
+              "This pathway is eligible only after the primary grain harvest has been completed.",
+              "The field must be inspected for chemical restrictions, mold, ergot, treated seed, toxic weeds, equipment debris, and other hazards.",
+              "Safe temporary fencing or another dependable access-control system is required.",
+              "Suitable grit should remain available because birds may consume intact kernels.",
+              "The pathway should score higher when visible shattered grain, missed heads, or harvest spills remain.",
+              "It should score lower after highly efficient mechanical harvests that leave little edible grain.",
+              "The field should be dry enough to resist compaction and rutting.",
+              "The flock must be removed before soil disturbance outweighs the value of recovered feed.",
+              "Gleaning should be treated as a brief seasonal opportunity rather than a dependable production method.",
+              "Complete poultry feed must remain continuously available."
+            ]
+          },
+
+          directFacts: {
+            primaryHarvestCompleted:
+              true,
+
+            standingMatureCropAccess:
+              false,
+
+            postharvestAccess:
+              true,
+
+            directChickenAccess:
+              true,
+
+            temporaryAccessRequired:
+              true,
+
+            adultBirdUse:
+              true,
+
+            supplementalUseOnly:
+              true,
+
+            completeFeed:
+              false,
+
+            grainRecovery:
+              true,
+
+            shatteredGrainTarget:
+              true,
+
+            missedHeadsTarget:
+              true,
+
+            weedSeedConsumptionPossible:
+              true,
+
+            insectConsumptionPossible:
+              true,
+
+            strawPrimaryFeed:
+              false,
+
+            stubblePrimaryFeed:
+              false,
+
+            storedFeed:
+              false,
+
+            processingLaborLow:
+              true,
+
+            feedMeasurementPrecise:
+              false,
+
+            harvestRecoveryVariable:
+              true,
+
+            gritRelevant:
+              true,
+
+            chemicalRestrictionReviewRequired:
+              true,
+
+            fieldInspectionRequired:
+              true,
+
+            toxicWeedConcern:
+              true,
+
+            treatedSeedConcern:
+              true,
+
+            fusariumConcern:
+              true,
+
+            mycotoxinConcern:
+              true,
+
+            ergotConcern:
+              true,
+
+            moldConcern:
+              true,
+
+            rodentContaminationConcern:
+              true,
+
+            wetSoilAccessHighRisk:
+              true,
+
+            soilCompactionRisk:
+              true,
+
+            erosionRisk:
+              true,
+
+            predatorProtectionRequired:
+              true,
+
+            notes: [
+              "Postharvest gleaning allows chickens to recover edible material remaining after the main Wheat harvest.",
+              "The primary targets are shattered kernels, grain in missed heads, volunteer grain, weed seeds, and insects.",
+              "The pathway is not equivalent to grazing young green Wheat.",
+              "It is also not equivalent to feeding mature straw.",
+              "Wheat straw consists largely of mature fibrous stems and has limited direct poultry feed value.",
+              "The amount of recoverable grain depends on harvest efficiency, lodging, shattering, weather, field conditions, and wildlife pressure.",
+              "Visible grain spills should be evaluated separately because large concentrated piles may encourage overconsumption or contain contaminated material.",
+              "Direct access eliminates threshing and milling labor but sacrifices intake precision.",
+              "Chickens may help reduce volunteer grain and some insects while adding manure to the field.",
+              "Those potential benefits do not override risks from chemical residues, mold, ergot, toxic weeds, wet soil, or predator exposure.",
+              "Residue removal and scratching may reduce soil cover when access continues too long.",
+              "The planner should reward this pathway for seasonal waste recovery, low processing, mobile-flock systems, and integrated crop use.",
+              "The planner should penalize it when exact intake measurement, stored feed, high nutrient density, wet soil protection, or maximum residue retention is required.",
+              "No exact grain-recovery percentage, flock density, grazing duration, feed contribution, or soil-fertility benefit is universally supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "wheat-straw-bedding-and-carbon",
+
+          label:
+            "Wheat Straw Bedding and Carbon",
+
+          description:
+            "Mature Wheat stems remaining after grain harvest are dried and used as poultry bedding, litter carbon, nest-box material, compost feedstock, mulch, or garden residue. Wheat straw is treated as a flock-support product rather than a meaningful poultry feed because mature stems are highly fibrous and nutritionally limited for chickens.",
+
+          primaryFeedRole:
+            "nonfeed-bedding-and-carbon-product",
+
+          harvestProducts: [
+            "wheat-straw",
+            "dry-stems",
+            "chopped-straw-bedding",
+            "nest-box-material",
+            "litter-carbon",
+            "compost-carbon",
+            "garden-mulch"
+          ],
+
+          suitableFeedingMethods: [
+            "not-intended-for-direct-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "complete-grain-harvest",
+            "cut-or-collect-straw",
+            "remove-diseased-or-contaminated-material",
+            "dry-thoroughly",
+            "inspect-for-moisture",
+            "store-under-cover"
+          ],
+
+          optionalProcessingTasks: [
+            "bale",
+            "bundle",
+            "chop",
+            "screen-out-excess-dust",
+            "portion-for-nest-boxes",
+            "use-as-deep-litter-carbon",
+            "compost-after-use",
+            "apply-as-garden-mulch"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "sickle",
+            "scythe",
+            "mower",
+            "rake",
+            "pitchfork",
+            "baling-twine",
+            "small-baler",
+            "straw-chopper",
+            "dust-mask",
+            "gloves",
+            "covered-storage-area",
+            "pallets",
+            "rodent-resistant-storage"
+          ],
+
+          harvestPattern:
+            "single-postgrain-residue-harvest",
+
+          harvestFrequencyCategory:
+            "seasonal-after-grain-harvest",
+
+          storageMethods: [
+            "dry-bundled-storage",
+            "dry-baled-storage",
+            "loose-covered-storage",
+            "chopped-straw-storage"
+          ],
+
+          preferredStorageMethod:
+            "fully-dry-straw-stored-off-the-ground-under-cover-with-airflow-and-protection-from-rain-condensation-and-rodents",
+
+          storageDurationCategory:
+            "moderate-to-long-when-kept-dry",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-when-used-for-bedding-compost-or-mulch",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "dry-loose-storage",
+            "bundled-storage",
+            "baled-storage",
+            "chopped-straw-storage",
+            "deep-litter-use",
+            "composting",
+            "garden-mulching"
+          ],
+
+          preservationLimitations: [
+            "Wheat straw must be thoroughly dry before bundling, baling, or enclosed storage.",
+            "Dense damp straw can heat, mold, ferment, and become a fire or respiratory hazard.",
+            "Large bales may conceal internal moisture that is not obvious from the outer surface.",
+            "Straw stored directly on soil or concrete may absorb ground moisture.",
+            "Rain, roof leaks, condensation, and poor airflow can rapidly reduce bedding quality.",
+            "Rodents may nest in stored straw and contaminate it with urine, feces, hair, parasites, or carcasses.",
+            "Stored straw may harbor insects, weed seeds, chaff, grain remnants, dust, and field debris.",
+            "Chopped straw occupies less space in use but may produce more airborne dust.",
+            "Long coarse stems can mat when wet and may be less absorbent than finer bedding materials.",
+            "Wheat straw is not equivalent to clean edible Wheat grain or young green forage.",
+            "No universal safe storage duration is guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate-to-long-when-dry",
+
+          shelfLifeAfterProcessingCategory:
+            "moderate-to-long-when-kept-dry-and-clean",
+
+          likelyLossPoints: [
+            "weathering-before-collection",
+            "rain-damage",
+            "dew-retention",
+            "soil-contact",
+            "collection-loss",
+            "baling-loss",
+            "bundling-loss",
+            "wind-loss",
+            "dust-loss",
+            "mold",
+            "internal-heating",
+            "rodent-contamination",
+            "insect-harboring",
+            "storage-fire",
+            "wet-litter-matting",
+            "premature-composting",
+            "discarded-contaminated-bedding"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, dry Wheat straw that is free of mold, musty odor, heating, slime, and chemical contamination.",
+            "Do not use straw containing sharp wire, plastic twine fragments, metal, glass, treated wood, machinery debris, or toxic weeds.",
+            "Confirm that pesticide, herbicide, fungicide, desiccant, and harvest-aid restrictions permit the intended bedding, compost, or mulch use.",
+            "Do not use straw from fields with unresolved chemical-use restrictions.",
+            "Do not use rodent-contaminated straw in coops, nest boxes, brooders, feeders, or enclosed poultry areas.",
+            "Discard straw containing rodent nests, feces, urine odor, carcasses, or extensive chewing damage.",
+            "Avoid placing damp or moldy straw in poultry housing.",
+            "Moldy straw may contribute to respiratory irritation and poor indoor air quality.",
+            "Wear suitable respiratory protection when handling dusty straw.",
+            "Provide ventilation when adding or removing dry bedding.",
+            "Do not store large quantities of dry straw near open flames, heaters, sparks, overloaded electrical circuits, or other ignition sources.",
+            "Do not allow deep litter to become wet, anaerobic, strongly ammonia-smelling, or excessively compacted.",
+            "Remove or refresh bedding when moisture, ammonia, mold, parasites, or manure accumulation exceeds safe management limits.",
+            "Long loose fibers, twine, or netting should not create entanglement hazards.",
+            "Wheat straw is not a complete poultry feed and should not be offered as a nutritional substitute for balanced feed.",
+            "Mature dry stems have limited direct feed value for chickens."
+          ],
+
+          bestFor: [
+            "Coop-floor bedding",
+            "Nest-box bedding",
+            "Deep-litter carbon",
+            "Absorbing moderate moisture",
+            "Compost feedstock",
+            "Balancing nitrogen-rich poultry manure",
+            "Garden mulch",
+            "Pathway cover",
+            "Protecting bare soil",
+            "Growers seeking whole-crop utility after grain harvest"
+          ],
+
+          notRecommendedFor: [
+            "Complete poultry feed",
+            "Primary energy supplementation",
+            "Primary protein supplementation",
+            "Primary calcium supplementation",
+            "Young green forage replacement",
+            "Wet poultry houses",
+            "Poorly ventilated coops",
+            "Mold-sensitive environments",
+            "Straw containing chemical residues",
+            "Rodent-contaminated storage",
+            "Dusty enclosed spaces without ventilation",
+            "Long-term outdoor storage without cover",
+            "Use near ignition sources"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "all-with-appropriate-bedding-management",
+
+            requiresAdultBirds:
+              false,
+
+            requiresProcessingCapability:
+              false,
+
+            requiresDryingCapability:
+              true,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              true,
+
+            requiresRodentResistantStorage:
+              true,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              false,
+
+            minimumSpaceCategory:
+              "small",
+
+            preferredSpaceCategory:
+              "medium-to-large-for-storage",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "persistently-wet-storage-environment",
+              "flood-prone-storage",
+              "unventilated-high-humidity-storage"
+            ],
+
+            compatibleGoals: [
+              "bedding-production",
+              "nest-box-material",
+              "deep-litter-carbon",
+              "compost-carbon",
+              "garden-mulch",
+              "whole-crop-utilization",
+              "reduce-purchased-bedding",
+              "soil-cover",
+              "waste-reduction",
+              "self-sufficiency"
+            ],
+
+            incompatibleGoals: [
+              "complete-feed-replacement",
+              "high-energy-feed",
+              "high-protein-feed",
+              "high-calcium-feed",
+              "fresh-green-forage",
+              "precise-feed-production",
+              "zero-storage-space"
+            ],
+
+            notes: [
+              "This pathway becomes available only after stems have matured and the primary grain harvest is complete.",
+              "The product is classified as a flock-support material rather than poultry feed.",
+              "The user must be able to dry and store straw under cover.",
+              "The pathway should be considered ineligible when straw is moldy, chemically restricted, rodent contaminated, or cannot be kept dry.",
+              "Storage space can become a major limitation because loose straw is bulky.",
+              "Chopping is optional and depends on the intended bedding or compost system.",
+              "The planner should favor this pathway when the user values bedding, compost carbon, garden mulch, and whole-crop utilization.",
+              "The planner should not award nutritional feed value for mature straw.",
+              "Local fire safety, storage, and agricultural residue rules should be followed."
+            ]
+          },
+
+          directFacts: {
+            matureStemResidue:
+              true,
+
+            grainHarvestCompleted:
+              true,
+
+            directFeedUse:
+              false,
+
+            primaryFeedProduct:
+              false,
+
+            supplementalFeed:
+              false,
+
+            completeFeed:
+              false,
+
+            beddingUse:
+              true,
+
+            nestBoxUse:
+              true,
+
+            deepLitterUse:
+              true,
+
+            compostCarbonUse:
+              true,
+
+            gardenMulchUse:
+              true,
+
+            soilCoverUse:
+              true,
+
+            wholeCropUtility:
+              true,
+
+            highEnergyFeed:
+              false,
+
+            highProteinFeed:
+              false,
+
+            highCalciumFeed:
+              false,
+
+            matureStemFiberHigh:
+              true,
+
+            directNutritionalValueForChickensLow:
+              true,
+
+            dryingRequired:
+              true,
+
+            dryStorageRequired:
+              true,
+
+            bulkyStorage:
+              true,
+
+            choppingOptional:
+              true,
+
+            rodentProtectionImportant:
+              true,
+
+            moldConcern:
+              true,
+
+            dustConcern:
+              true,
+
+            fireConcern:
+              true,
+
+            chemicalResidueReviewRequired:
+              true,
+
+            notes: [
+              "Wheat straw is the mature dry stem residue remaining after the grain crop is harvested.",
+              "It is materially different from young Wheat forage, sprouts, hydroponic fodder, whole heads, and cleaned grain.",
+              "Its primary backyard poultry value is bedding and carbon rather than nutrition.",
+              "Straw can absorb moisture, provide a scratching medium, cushion nest boxes, and contribute carbon to compost.",
+              "Used bedding combines straw carbon with manure nitrogen and can become useful compost feedstock when managed correctly.",
+              "Long coarse straw may bridge, mat, or remain less absorbent than chopped material.",
+              "Chopping increases handling convenience and surface area but may increase dust.",
+              "Dry straw can help balance wet or nitrogen-rich manure, but it cannot correct severe water leaks or poor ventilation.",
+              "Stored straw should remain elevated above ground moisture and protected from rain.",
+              "Rodent contamination can make otherwise dry straw unsuitable for poultry housing.",
+              "Moldy bedding should not be reused, composted inside the coop, or placed in enclosed poultry areas.",
+              "Wheat straw should not receive a meaningful feed-energy, feed-protein, or feed-replacement score.",
+              "The planner should reward the pathway for bedding independence, compost production, mulch, soil protection, and whole-crop utilization.",
+              "The planner should penalize it when storage is wet, space is extremely limited, respiratory dust is a major concern, or the user is seeking edible feed.",
+              "No exact absorbency, bedding replacement interval, compost carbon-to-nitrogen contribution, storage duration, bale yield, or straw yield is universally supported."
+            ]
+          }
+        },
+
+                {
+          id:
+            "wheat-cover-crop-and-soil-support",
+
+          label:
+            "Wheat Cover Crop and Soil Support",
+
+          description:
+            "Wheat is established primarily as a seasonal cover crop to protect soil, reduce erosion, suppress weeds, improve water infiltration, capture residual nutrients, and build organic matter. Any poultry benefit is indirect through healthier soils, cleaner ranging areas, and improved long-term crop production rather than direct feed production.",
+
+          primaryFeedRole:
+            "soil-support-system",
+
+          harvestProducts: [
+            "living-soil-cover",
+            "erosion-protection",
+            "weed-suppression",
+            "organic-matter",
+            "root-biomass",
+            "surface-residue"
+          ],
+
+          suitableFeedingMethods: [
+            "indirect-flock-benefit"
+          ],
+
+          requiredProcessingTasks: [
+            "prepare-seedbed",
+            "establish-cover-crop",
+            "maintain-ground-cover",
+            "monitor-stand-health",
+            "terminate-cover-crop-at-appropriate-growth-stage"
+          ],
+
+          optionalProcessingTasks: [
+            "roller-crimp",
+            "mow",
+            "incorporate-into-soil",
+            "leave-as-surface-mulch",
+            "follow-with-garden-crop",
+            "combine-with-legume-cover-crops"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "broadcast-spreader",
+            "seed-drill",
+            "roller-crimper",
+            "mower",
+            "garden-rake",
+            "soil-test-kit",
+            "irrigation-system"
+          ],
+
+          harvestPattern:
+            "seasonal-soil-management",
+
+          harvestFrequencyCategory:
+            "once-per-growing-cycle",
+
+          storageMethods: [
+            "living-field-cover"
+          ],
+
+          preferredStorageMethod:
+            "Maintain Wheat as a living cover crop until planned termination.",
+
+          storageDurationCategory:
+            "living-crop",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            1,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "living-cover",
+            "surface-mulch",
+            "soil-incorporation",
+            "roller-crimp-residue"
+          ],
+
+          preservationLimitations: [
+            "The primary value is soil improvement rather than harvested feed.",
+            "Benefits depend upon successful stand establishment and proper termination timing.",
+            "Living cover crops remain weather dependent.",
+            "Extended unmanaged growth may interfere with subsequent crop establishment.",
+            "Poor termination may allow volunteer Wheat to emerge in later crops."
+          ],
+
+          estimatedShelfLifeCategory:
+            "living-crop",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "poor-establishment",
+            "drought",
+            "winterkill",
+            "waterlogging",
+            "weed-competition",
+            "erosion-before-establishment",
+            "premature-termination",
+            "late-termination",
+            "volunteer-wheat"
+          ],
+
+          safetyWarnings: [
+            "Follow label restrictions if herbicides or other agricultural chemicals are used.",
+            "Terminate the cover crop before unwanted volunteer seed production when appropriate.",
+            "Do not allow poultry access to chemically restricted fields.",
+            "Monitor for toxic weeds that emerge within the cover crop.",
+            "This pathway is intended for soil improvement rather than direct poultry feeding."
+          ],
+
+          bestFor: [
+            "Garden soil improvement",
+            "Homesteads",
+            "Crop rotation",
+            "Weed suppression",
+            "Reducing erosion",
+            "Organic matter production",
+            "Water infiltration improvement",
+            "Long-term sustainability"
+          ],
+
+          notRecommendedFor: [
+            "Immediate feed production",
+            "Complete poultry ration replacement",
+            "Growers seeking rapid grain harvest only",
+            "Sites where volunteer Wheat is unacceptable"
+          ],
+
+          eligibility: {
+            minimumFlockAgeCategory:
+              "all",
+
+            requiresAdultBirds:
+              false,
+
+            requiresProcessingCapability:
+              false,
+
+            requiresDryingCapability:
+              false,
+
+            requiresThreshingCapability:
+              false,
+
+            requiresGrindingCapability:
+              false,
+
+            requiresCookingCapability:
+              false,
+
+            requiresHeatTreatmentCapability:
+              false,
+
+            requiresColdStorage:
+              false,
+
+            requiresDryStorage:
+              false,
+
+            requiresRodentResistantStorage:
+              false,
+
+            requiresProtectiveBarrier:
+              false,
+
+            requiresGritAccess:
+              false,
+
+            requiresRationFormulation:
+              false,
+
+            requiresDailySanitation:
+              false,
+
+            requiresWildlifeProtection:
+              false,
+
+            minimumSpaceCategory:
+              "small",
+
+            preferredSpaceCategory:
+              "medium-to-large",
+
+            compatibleClimateTypes: [
+              "cold-short-summer",
+              "cool-moderate-summer",
+              "temperate",
+              "hot-humid",
+              "hot-dry",
+              "mild-winter",
+              "high-elevation"
+            ],
+
+            incompatibleClimateTypes: [
+              "persistently-waterlogged",
+              "deep-shade"
+            ],
+
+            compatibleGoals: [
+              "soil-health",
+              "erosion-control",
+              "weed-suppression",
+              "organic-matter",
+              "crop-rotation",
+              "water-infiltration",
+              "nutrient-capture",
+              "garden-improvement",
+              "long-term-sustainability",
+              "whole-farm-productivity"
+            ],
+
+            incompatibleGoals: [
+              "direct-feed-production",
+              "complete-feed-replacement",
+              "high-protein-feed",
+              "high-calcium-feed"
+            ],
+
+            notes: [
+              "This pathway should receive soil-health credit rather than feed-production credit.",
+              "The planner should distinguish living cover crops from forage, sprouts, grain, and straw.",
+              "Users interested primarily in improving future crop production should score highly for this pathway.",
+              "The pathway is compatible with many crop-rotation systems."
+            ]
+          },
+
+          directFacts: {
+            livingCoverCrop:
+              true,
+
+            directFeedUse:
+              false,
+
+            completeFeed:
+              false,
+
+            improvesSoilStructure:
+              true,
+
+            reducesErosion:
+              true,
+
+            suppressesWeeds:
+              true,
+
+            capturesResidualNutrients:
+              true,
+
+            addsOrganicMatter:
+              true,
+
+            improvesWaterInfiltration:
+              true,
+
+            supportsCropRotation:
+              true,
+
+            longTermFarmBenefit:
+              true,
+
+            grainProductionRequired:
+              false,
+
+            notes: [
+              "Wheat is widely used as a cool-season cover crop in many agricultural systems.",
+              "Its dense root system helps stabilize soil and reduce erosion.",
+              "Surface residue can reduce evaporation and moderate soil temperature.",
+              "Cover-crop benefits are indirect for poultry by improving future crop productivity and healthier ranging conditions.",
+              "The planner should not assign meaningful feed value to this pathway.",
+              "Users focused on regenerative agriculture and long-term soil health should receive a positive recommendation."
+            ]
+          }
+        },
+
+              ],
+
+      dataQuality: {
+        overallEvidenceLevel:
+          "strong-general-evidence-with-backyard-data-gaps",
+
+        sourceTypes: [
+          "University Extension publications",
+          "USDA and NRCS crop guidance",
+          "Feedipedia feed-composition references",
+          "Peer-reviewed poultry nutrition research",
+          "Small-grain production guides",
+          "Stored-grain and mycotoxin guidance",
+          "Cover-crop and forage-management references"
         ],
 
-        "remainingUnknowns": [
-          "Small backyard yield values",
-          "Planner scoring calibration",
-          "Maximum practical dietary inclusion for Backyard Chicken Planner calculations"
+        directlySupportedValues: [
+          "Wheat is a cool-season annual cereal grain.",
+          "Spring and winter Wheat types are available.",
+          "Winter Wheat requires locally appropriate winter hardiness and planting timing.",
+          "Wheat performs best in well-drained soil.",
+          "Waterlogging can reduce establishment, root health, winter survival, and yield.",
+          "Heat during flowering and grain filling can reduce production.",
+          "Mature Wheat grain is primarily an energy-oriented poultry-feed ingredient.",
+          "Wheat grain provides starch and moderate protein.",
+          "Wheat cannot provide a complete poultry ration by itself.",
+          "Wheat does not provide sufficient calcium for laying hens.",
+          "Wheat protein does not provide a complete amino-acid balance for poultry.",
+          "Wheat contains phytate.",
+          "Wheat arabinoxylans can reduce nutrient use and increase intestinal viscosity.",
+          "Beta-glucans are not the principal soluble-fiber limitation in Wheat.",
+          "Whole mature Wheat grain can be fed to established chickens when appropriate grit is available.",
+          "Cracking increases exposed grain surface and reduces storage stability.",
+          "Grinding improves ration mixing but increases dust and spoilage risk.",
+          "Fine grinding can contribute to selective feeding, ingredient separation, respiratory irritation, and waste.",
+          "Whole Wheat heads can provide enrichment and natural pecking activity.",
+          "Awned Wheat heads require careful inspection before flock use.",
+          "Treated planting seed must never be fed.",
+          "Moldy or mycotoxin-contaminated Wheat must not be fed.",
+          "Fusarium-damaged Wheat may contain harmful mycotoxins.",
+          "Ergot bodies must be excluded from poultry feed.",
+          "Sprouting does not neutralize chemical seed treatment, ergot alkaloids, or mycotoxins.",
+          "Short Wheat sprouts contain substantial moisture.",
+          "Hydroponic Wheat fodder gains wet weight primarily through water absorption.",
+          "Hydroponic fodder may contain less dry matter than the original seed after respiratory losses.",
+          "Sprouting and fodder systems require sanitation, drainage, airflow, and frequent inspection.",
+          "Young vegetative Wheat can provide supplemental green forage.",
+          "Repeated cutting or grazing can reduce later grain production.",
+          "Cutting after stem elongation or jointing can seriously reduce reproductive growth.",
+          "Direct unrestricted chicken access can uproot seedlings and destroy a Wheat stand.",
+          "Forage frames can protect crowns and roots while allowing birds to clip foliage.",
+          "Rotational grazing requires establishment, controlled access, and recovery periods.",
+          "Postharvest gleaning can recover shattered grain and missed kernels.",
+          "Postharvest gleaning must be restricted where chemical, mold, ergot, treated-seed, toxic-weed, or debris hazards exist.",
+          "Mature Wheat straw is primarily a bedding, litter-carbon, compost, and mulch product rather than concentrated poultry feed.",
+          "Dry Wheat straw requires protection from moisture, mold, rodents, and fire.",
+          "Wheat can provide seasonal soil cover and erosion protection.",
+          "Wheat can suppress some weeds through rapid stand establishment and surface cover.",
+          "Wheat roots and residue can contribute organic matter.",
+          "Wheat can capture residual soil nutrients.",
+          "Wheat does not fix atmospheric nitrogen.",
+          "Wheat can be used in crop rotations and cover-crop systems.",
+          "Whole clean dry Wheat can be stored without refrigeration when adequately dried and protected.",
+          "Whole grain generally stores better than grain cracked or ground far in advance.",
+          "Backyard grain yield cannot be guaranteed from commercial per-acre averages.",
+          "No universal poultry inclusion percentage is appropriate without complete ration formulation."
         ],
 
-        "futureResearch": [
-          "Backyard yield trials",
-          "Hard versus soft wheat comparison",
-          "Awned versus awnless performance",
-          "Regional variety recommendations",
-          "BCP scoring normalization"
+        supportedGeneralizations: [
+          "Wheat is best categorized as a cool-season energy grain with multiple secondary homestead uses.",
+          "Winter Wheat is generally better suited to autumn planting where locally adapted cultivars can survive winter.",
+          "Spring Wheat provides an alternative where winter survival is unreliable or autumn planting is impractical.",
+          "Early planting helps the crop establish and can reduce exposure of flowering and grain filling to severe heat.",
+          "Wheat production requires adequate sunlight, drainage, establishment moisture, and locally appropriate variety selection.",
+          "Dense continuous stands are more appropriate than individually spaced plants.",
+          "Small garden plots can produce trial quantities, although processing labor may exceed feed value.",
+          "Stored whole grain provides the strongest long-term feed pathway.",
+          "Whole-head feeding reduces threshing labor but also reduces intake precision and may increase waste.",
+          "Cracked grain provides easier consumption for some birds but requires more careful storage.",
+          "Ground Wheat is best treated as a ration ingredient rather than an unrestricted supplement.",
+          "Young green forage, sprouts, and hydroponic fodder must remain nutritionally separate from dry grain.",
+          "Fresh and sprouted Wheat products contain substantially more water than dry grain.",
+          "Living-forage pathways are best suited to enrichment and supplemental greens rather than major ration displacement.",
+          "Protected forage frames are more practical than unrestricted grazing in small chicken runs.",
+          "Rotational grazing requires more space and management than protected-frame use.",
+          "Gleaning is a seasonal waste-recovery opportunity rather than dependable feed production.",
+          "Straw adds flock value through bedding and compost systems but should not receive meaningful nutritional credit.",
+          "Cover-crop benefits are primarily agronomic and indirect for the flock.",
+          "Wheat may contribute to household food, poultry supplementation, bedding, compost, mulch, cover cropping, and soil improvement.",
+          "The crop provides the greatest homestead value when several products are used rather than when evaluated only as grain replacing purchased feed."
+        ],
+
+        derivedPlannerValues: [
+          "Climate suitability scores",
+          "Regional winter-survival scores",
+          "Spring-versus-winter planting suitability",
+          "Heat-avoidance scores",
+          "Site suitability scores",
+          "Soil texture scores",
+          "Drainage sensitivity scores",
+          "Water-management scores",
+          "Space-type suitability scores",
+          "Labor-difficulty scores",
+          "Cost-level classifications",
+          "Goal-matching scores",
+          "Wildlife-risk scores",
+          "Disease-risk scores",
+          "Lodging-risk scores",
+          "Shattering-risk scores",
+          "Storage-risk scores",
+          "Arabinoxylan-risk scores",
+          "Phytate-risk scores",
+          "Use-path suitability scores",
+          "Beginner-friendliness scores",
+          "Storage-value scores",
+          "Self-reliance scores",
+          "Cover-crop value scores",
+          "Bedding-and-carbon value scores",
+          "Production-reliability score"
+        ],
+
+        uncertainValues: [
+          "Backyard cleaned-grain yield per square foot",
+          "Minimum useful planting area",
+          "Useful production area by flock size",
+          "Exact winter survival by region and cultivar",
+          "Exact cultivar maturity outside published production regions",
+          "Exact backyard storage life",
+          "Exact safe poultry inclusion rate",
+          "Exact arabinoxylan concentration of a homegrown grain lot",
+          "Exact phytate concentration of a homegrown grain lot",
+          "Exact effect of home cracking or grinding on poultry intake",
+          "Exact intake difference between hard, soft, red, white, spring, and winter Wheat",
+          "Exact poultry value of awned versus awnless whole heads",
+          "Exact fresh-forage intake by chickens",
+          "Exact hydroponic-fodder dry-matter recovery",
+          "Exact short-sprout sanitation risk under household conditions",
+          "Exact rotational-grazing stocking pressure",
+          "Exact protected-frame forage recovery rate",
+          "Exact postharvest gleaning recovery percentage",
+          "Backyard labor per pound",
+          "Economic return on labor",
+          "Feed-cost displacement",
+          "Small-scale threshing efficiency",
+          "Small-scale winnowing efficiency",
+          "Whole-head feeding waste percentage",
+          "Wheat-straw bedding replacement interval",
+          "Wheat-straw absorbency under backyard conditions"
+        ],
+
+        missingData: [
+          "Verified backyard cleaned-Wheat yield per 100 square feet",
+          "Verified hand-harvest time per pound",
+          "Verified hand-threshing time per pound",
+          "Verified backyard winnowing time per pound",
+          "Verified backyard drying-loss percentage",
+          "Verified storage-loss percentage",
+          "Cultivar-specific poultry nutrient tables",
+          "Cultivar-specific arabinoxylan measurements",
+          "Cultivar-specific phytate measurements",
+          "Cultivar-specific digestible amino-acid values",
+          "Backyard-flock trials comparing whole, cracked, and ground Wheat",
+          "Validated small-flock inclusion recommendations",
+          "Regional backyard trials comparing spring and winter Wheat",
+          "Small-flock studies comparing hard and soft Wheat types",
+          "Reliable poultry intake data for fresh Wheat forage",
+          "Reliable dry-matter conversion data for household hydroponic Wheat fodder",
+          "Household sprouting contamination and failure-rate data",
+          "Verified whole-head enrichment consumption and waste data",
+          "Protected Wheat-forage-frame production trials",
+          "Rotational Wheat-grazing trials with poultry",
+          "Postharvest Wheat-gleaning recovery studies",
+          "Backyard Wheat-straw bedding-performance comparisons"
+        ],
+
+        notes: [
+          "Agronomic evidence for Wheat is very strong.",
+          "General livestock and poultry-feed evidence for mature Wheat grain is substantial.",
+          "Poultry evidence supports Wheat as an energy-oriented ration ingredient while identifying amino-acid balance, phytate, arabinoxylans, particle size, and ration formulation as important limitations.",
+          "Wheat should not inherit the stronger beta-glucan warnings associated with Barley.",
+          "Backyard-chicken-specific yield, processing, whole-head, sprouting, fodder, grazing, gleaning, and economic evidence remains limited.",
+          "Planner scores combine direct evidence with clearly identified professional judgment.",
+          "Unknown quantitative values remain null rather than being inferred from commercial acreage or promotional fodder claims.",
+          "Wet-weight fodder gains are not treated as equivalent dry-matter gains.",
+          "No universal poultry inclusion percentage has been inferred.",
+          "No claim is made that homegrown Wheat can replace complete commercial feed pound for pound.",
+          "This record is production-ready for planner comparison but should continue to be refined as cultivar-specific and backyard-scale research becomes available."
+        ]
+      },
+
+      templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Backyard Wheat grain-yield trials",
+          "Regional spring-versus-winter cultivar comparisons",
+          "Winter-survival trials for autumn-planted Wheat",
+          "Hard-versus-soft Wheat poultry comparisons",
+          "Red-versus-white Wheat poultry comparisons",
+          "Cultivar-specific arabinoxylan measurements",
+          "Cultivar-specific phytate measurements",
+          "Cultivar-specific digestible amino-acid values",
+          "Small-flock Wheat feeding trials",
+          "Whole-versus-cracked Wheat intake studies",
+          "Ground-Wheat particle-size research for backyard flocks",
+          "Whole mature Wheat-head enrichment trials",
+          "Awned-versus-awnless whole-head safety comparisons",
+          "Fresh Wheat-forage poultry research",
+          "Protected-forage-frame production trials",
+          "Rotational Wheat-grazing poultry trials",
+          "Hydroponic Wheat-fodder dry-matter studies",
+          "Household-scale sprouting sanitation studies",
+          "Backyard threshing and winnowing efficiency",
+          "Postharvest gleaning recovery studies",
+          "Wheat-straw bedding and compost-performance studies",
+          "Storage losses under humid household conditions",
+          "Mycotoxin risk under small-scale harvest and storage conditions",
+          "Feed-cost savings by flock size"
+        ],
+
+        lastReviewed:
+          "2026-07-22",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "No hydroponic-fodder wet-weight claim has been treated as an equivalent increase in dry feed.",
+          "Wheat remains a supplemental grain, forage, enrichment product, cover crop, bedding crop, or formulated ration ingredient rather than a complete poultry feed.",
+          "The planner should preserve separate recommendations for whole grain, cracked grain, ground ration use, whole heads, sprouts, hydroponic fodder, fresh cut forage, protected living forage, rotational grazing, postharvest gleaning, straw use, and cover-crop soil support."
         ]
       }
-
     }
-  },
+  },  
 
    ///////////////////////////////////////////////
   //
