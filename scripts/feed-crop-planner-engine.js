@@ -5138,6 +5138,19 @@ const finalScore =
                       ?.space
                       ?.layoutScores
                 }
+              : null,
+
+                      laborAnswers:
+          answers.labor || null,
+
+        laborResult:
+          categoryResults.labor || null,
+
+        prosoLaborData:
+          crop.id ===
+            "CROP-PROSO-MILLET"
+              ? crop.plannerData
+                  ?.labor || null
               : null
       }
     );
