@@ -4836,55 +4836,7 @@ function scoreGenericCropProfile(
         (a, b) =>
           b.score - a.score
       );
-
-  if (
-    profile.id ===
-      "PROFILE-MILLET-SHORT-SEASON-DRY" &&
-    crop.id ===
-      "CROP-PROSO-MILLET"
-  ) {
-    console.group(
-      "Profile 12 — Proso Millet hard failures"
-    );
-
-    console.table(
-      usePathResults.map(
-        result => ({
-          usePathId:
-            result.usePathId,
-
-          label:
-            result.label,
-
-          score:
-            result.score,
-
-          hardFailure:
-            result.hardFailure,
-
-          hardFailures:
-            Array.isArray(
-              result.hardFailures
-            )
-              ? result.hardFailures.join(
-                  " | "
-                )
-              : "",
-
-          limitations:
-            Array.isArray(
-              result.limitations
-            )
-              ? result.limitations.join(
-                  " | "
-                )
-              : ""
-        })
-      )
-    );
-
-    console.groupEnd();
-  }   
+ 
 
   const bestUsePath =
     usePathResults.find(
@@ -4892,12 +4844,12 @@ function scoreGenericCropProfile(
         !result.hardFailure
     ) || null;
 
-  const usePathModifier =
-    bestUsePath
-      ? (
-          bestUsePath.score - 70
-        ) * 0.20
-      : -25;
+    const usePathScore =
+    Number.isFinite(
+      bestUsePath?.score
+    )
+      ? bestUsePath.score
+      : null;
 
   const lifecycleFailure =
   lifecycleAdjustment
@@ -4913,11 +4865,14 @@ const finalScore =
   )
     ? 0
     : clampScore(
-        baseScore -
+        (
+          baseScore * 0.70
+        ) +
+        (
+          usePathScore * 0.30
+        ) -
         wildlife.penalty +
-        usePathModifier +
-        lifecycleAdjustment
-          .adjustment
+        lifecycleAdjustment.adjustment
       );
 
   const knownCategoryCount =
@@ -4961,9 +4916,13 @@ return {
       ? Number(baseScore.toFixed(2))
       : null,
 
-  usePathModifier:
-    Number.isFinite(usePathModifier)
-      ? Number(usePathModifier.toFixed(2))
+    usePathModifier:
+    Number.isFinite(usePathScore)
+      ? Number(
+          (
+            usePathScore * 0.30
+          ).toFixed(2)
+        )
       : null,
 
   wildlifePenalty:
@@ -5023,10 +4982,12 @@ return {
         ? bestUsePath.score
         : null,
 
-    usePathModifier:
-      Number.isFinite(usePathModifier)
+        usePathModifier:
+      Number.isFinite(usePathScore)
         ? Number(
-            usePathModifier.toFixed(2)
+            (
+              usePathScore * 0.30
+            ).toFixed(2)
           )
         : null,
 
