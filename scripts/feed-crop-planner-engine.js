@@ -4974,9 +4974,52 @@ const finalScore =
           bestUsePath?.usePathId ||
           null,
 
-        usePathLimitations:
+                usePathLimitations:
           bestUsePath?.limitations ||
-          []
+          [],
+
+        spaceAnswers:
+          answers.space || null,
+
+        spaceDiagnostics:
+          categoryResults.space
+            ?.diagnostics || null,
+
+        prosoSpaceData:
+          crop.id ===
+            "CROP-PROSO-MILLET"
+              ? {
+                  minimumUsefulAreaSqFt:
+                    crop.plannerData
+                      ?.space
+                      ?.minimumUsefulAreaSqFt,
+
+                  smallSpaceScore:
+                    crop.plannerData
+                      ?.space
+                      ?.smallSpaceScore,
+
+                  mediumSpaceScore:
+                    crop.plannerData
+                      ?.space
+                      ?.mediumSpaceScore,
+
+                  largeSpaceScore:
+                    crop.plannerData
+                      ?.space
+                      ?.largeSpaceScore,
+
+                  spaceTypeScores:
+                    crop.plannerData
+                      ?.space
+                      ?.spaceTypeScores,
+
+                  layoutScores:
+                    crop.plannerData
+                      ?.space
+                      ?.layoutScores
+                }
+              : null
       }
     );
   }   
