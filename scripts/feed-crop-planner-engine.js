@@ -4183,13 +4183,35 @@ function scoreGenericUsePath(
     );
   }
 
+    /*
+   * Version 2 crop records use precise task IDs,
+   * while the questionnaire uses broader visitor-
+   * facing processing choices.
+   *
+   * Routine inspection, sorting, and safety steps
+   * should not be treated as processing choices
+   * the visitor declined.
+   */
   const automaticallyAcceptedTasks =
     new Set([
       "cut-seed-heads",
       "cut-leaves",
       "pick-produce",
-      "harvest-heavy-fruit"
+      "harvest-heavy-fruit",
+
+      "inspect-panicle-maturity",
+      "inspect-before-storage",
+      "inspect-before-feeding",
+      "remove-damaged-panicles"
     ]);
+
+  const processingTaskAliases = {
+    "cut-mature-panicles":
+      "cut-seed-heads",
+
+    "dry-under-cover":
+      "dry"
+  };
 
   const missingRequiredTasks =
     requiredProcessingTasks.filter(
@@ -4202,8 +4224,12 @@ function scoreGenericUsePath(
           return false;
         }
 
+        const questionnaireTask =
+          processingTaskAliases[task] ||
+          task;
+
         return !acceptedProcessing.includes(
-          task
+          questionnaireTask
         );
       }
     );
