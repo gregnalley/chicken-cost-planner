@@ -2340,6 +2340,8 @@ function getLayoutPlannerKey(shape) {
 
     "long-strip": "longStrip",
 
+    "long-row": "longStrip",
+
     "irregular": "irregular",
 
     "small-beds": "smallBeds",
@@ -2403,9 +2405,20 @@ function scoreGenericSpaceFit(
     answerSpace
       .availableBlockRows;
 
-  const minimumUsefulArea =
-    spaceData
-      .minimumUsefulAreaSqFt;
+    const minimumUsefulArea =
+    Number.isFinite(
+      spaceData
+        .minimumUsefulAreaSqFt
+    )
+      ? spaceData
+          .minimumUsefulAreaSqFt
+      : Number.isFinite(
+          spaceData
+            .minimumPracticalAreaSquareFeet
+        )
+        ? spaceData
+            .minimumPracticalAreaSquareFeet
+        : null;
 
   const heightCategory =
     spaceData
@@ -2413,6 +2426,75 @@ function scoreGenericSpaceFit(
 
   const adjustments = [];
   const limitations = [];
+
+    /*
+   * Version 1 crop records store numerical
+   * spaceTypeScores. Version 2 records store
+   * direct suitability booleans.
+   *
+   * This helper supports both structures.
+   */
+  function getSpaceTypeScore(
+    spaceType
+  ) {
+    const key =
+      getSpaceTypePlannerKey(
+        spaceType
+      );
+
+    const legacyScore =
+      spaceData
+        .spaceTypeScores?.[key];
+
+    if (
+      Number.isFinite(
+        legacyScore
+      )
+    ) {
+      return legacyScore;
+    }
+
+    const versionTwoFieldMap = {
+      "in-ground":
+        "fieldScaleSuitable",
+
+      "open-field":
+        "fieldScaleSuitable",
+
+      "raised-bed":
+        "raisedBedSuitable",
+
+      containers:
+        "containerSuitable",
+
+      "small-beds":
+        "intensiveBedSuitable"
+    };
+
+    const versionTwoField =
+      versionTwoFieldMap[
+        spaceType
+      ];
+
+    if (!versionTwoField) {
+      return null;
+    }
+
+    const suitability =
+      spaceData[
+        versionTwoField
+      ];
+
+    if (suitability === true) {
+      return 5;
+    }
+
+    if (suitability === false) {
+      return 1;
+    }
+
+    return null;
+  }
 
   const scoredSpaceTypes =
     spaceTypes
@@ -2422,9 +2504,10 @@ function scoreGenericSpaceFit(
             spaceType
           );
 
-        const rawScore =
-          spaceData
-            .spaceTypeScores?.[key];
+          const rawScore =
+          getSpaceTypeScore(
+            spaceType
+          );
 
         return {
           spaceType,
@@ -2481,33 +2564,69 @@ function scoreGenericSpaceFit(
         ]
     );
 
-  let areaScaleScore = null;
+    let areaScaleScore = null;
 
   if (
     Number.isFinite(
       totalArea
     )
   ) {
+    let legacyAreaScore = null;
+
     if (totalArea < 25) {
-      areaScaleScore =
-        convertFivePointToPercent(
-          spaceData
-            .smallSpaceScore
-        );
+      legacyAreaScore =
+        spaceData
+          .smallSpaceScore;
     } else if (
       totalArea <= 250
     ) {
-      areaScaleScore =
-        convertFivePointToPercent(
-          spaceData
-            .mediumSpaceScore
-        );
+      legacyAreaScore =
+        spaceData
+          .mediumSpaceScore;
     } else {
+      legacyAreaScore =
+        spaceData
+          .largeSpaceScore;
+    }
+
+    if (
+      Number.isFinite(
+        legacyAreaScore
+      )
+    ) {
       areaScaleScore =
         convertFivePointToPercent(
-          spaceData
-            .largeSpaceScore
+          legacyAreaScore
         );
+    } else if (
+      totalArea > 250 &&
+      spaceData
+        .fieldScaleSuitable ===
+        true
+    ) {
+      areaScaleScore = 100;
+    } else if (
+      totalArea <= 250 &&
+      (
+        spaceData
+          .raisedBedSuitable ===
+          true ||
+        spaceData
+          .intensiveBedSuitable ===
+          true ||
+        spaceData
+          .fieldScaleSuitable ===
+          true
+      )
+    ) {
+      areaScaleScore = 85;
+    } else if (
+      totalArea < 25 &&
+      spaceData
+        .containerSuitable ===
+        true
+    ) {
+      areaScaleScore = 85;
     }
   }
 
