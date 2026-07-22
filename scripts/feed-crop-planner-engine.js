@@ -3577,20 +3577,34 @@ function getGenericWildlifePenalty(
       Math.min(30, penalty)
     );
 
+    const hasSelectedPressures =
+    pressures.length > 0;
+
+  const allSelectedPressuresUnknown =
+    hasSelectedPressures &&
+    matchedPressures.length === 0;
+
   return {
     penalty:
-      roundedPenalty,
+      allSelectedPressuresUnknown
+        ? 8
+        : roundedPenalty,
 
     matchedPressures,
 
     mitigatedPressures,
 
+    unknownRisk:
+      allSelectedPressuresUnknown,
+
     reason:
-      matchedPressures.length === 0
-        ? "No reported wildlife pressure reduced the score."
-        : mitigatedPressures.length > 0
-          ? `Reported wildlife pressure affects this crop, but selected protection reduces part of the penalty. Mitigated: ${mitigatedPressures.join(", ")}.`
-          : `Reported wildlife pressure affects this crop: ${matchedPressures.join(", ")}.`
+      allSelectedPressuresUnknown
+        ? "Wildlife pressure was reported, but this older crop record does not contain numeric wildlife-risk ratings. A small uncertainty penalty was applied."
+        : matchedPressures.length === 0
+          ? "No reported wildlife pressure reduced the score."
+          : mitigatedPressures.length > 0
+            ? `Reported wildlife pressure affects this crop, but selected protection reduces part of the penalty. Mitigated: ${mitigatedPressures.join(", ")}.`
+            : `Reported wildlife pressure affects this crop: ${matchedPressures.join(", ")}.`
   };
 }
 
