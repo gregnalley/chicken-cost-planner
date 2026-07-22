@@ -4751,8 +4751,20 @@ function scoreGenericCropProfile(
         answers
       ),
 
-    goals:
+        goals:
       scoreGenericGoalFit(
+        crop,
+        answers
+      ),
+
+    shortSeason:
+      scoreGenericShortSeasonFit(
+        crop,
+        answers
+      ),
+
+    limitedIrrigation:
+      scoreGenericLimitedIrrigationFit(
         crop,
         answers
       )
@@ -4802,20 +4814,30 @@ function scoreGenericCropProfile(
 
         weight: 0.12
       },
-      {
+            {
         value:
           categoryResults
             .goals.score,
 
         weight: 0.16
+      },
+
+      {
+        value:
+          categoryResults
+            .shortSeason.score,
+
+        weight: 0.18
+      },
+
+      {
+        value:
+          categoryResults
+            .limitedIrrigation.score,
+
+        weight: 0.18
       }
     ]);
-
-  const wildlife =
-    getGenericWildlifePenalty(
-      crop,
-      answers
-    );
 
   const lifecycleAdjustment =
     getGenericLifecycleAdjustment(
