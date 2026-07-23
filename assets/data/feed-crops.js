@@ -30368,7 +30368,6 @@ const BCP_FEED_CROPS = {
     }
   },
 
-
     ///////////////////////////////////////////////
     //
     //
@@ -30381,2011 +30380,4935 @@ const BCP_FEED_CROPS = {
     //
     //////////////////////////////////////////////
 
-    "CROP-KALE-COLLARDS": {
-    id: "CROP-KALE-COLLARDS",
+        "CROP-KALE-COLLARDS": {
+      id:
+        "CROP-KALE-COLLARDS",
 
-    name: "Kale and Collard Greens",
-    scientificName:
-      "Brassica oleracea Acephala Group and Brassica oleracea var. viridis",
+      name:
+        "Kale and Collard Greens",
 
-    category: "Leafy Green and Repeated-Harvest Crop",
-    cropType:
-      "Biennial commonly grown as an annual",
-    seasonType: "Cool Season",
+      scientificName:
+        "Brassica oleracea Acephala Group",
 
-    status: "Initial Research Complete",
+      category:
+        "Cool-Season Leafy Green and Repeated-Harvest Crop",
 
-    summary:
-      "Kale and collard greens are cool-season leafy brassicas that can provide repeated harvests of nutrient-rich foliage, carotenoid-containing greens, flock enrichment, and productive use of spring, fall, or mild-winter garden space. Their fresh leaves are moisture-rich and low in energy, so they should supplement rather than replace balanced poultry feed.",
+      cropType:
+        "Biennial Commonly Grown as an Annual",
 
-    chickenUse: {
-      edibleParts: [
-        "Fresh leaves",
-        "Tender stems",
-        "Baby greens",
-        "Outer leaves removed during household harvest",
-        "Plain cooked leaves"
-      ],
-
-      primaryValue: [
-        "Leafy-green enrichment",
-        "Carotenoids",
-        "Vitamin-rich plant material",
-        "Moisture",
-        "Repeated harvests",
-        "Cool-season garden production"
-      ],
-
-      feedingForms: [
-        "Whole fresh leaves hung for pecking",
-        "Chopped fresh leaves",
-        "Limited access to established plants",
-        "Plain cooked and cooled greens",
-        "Dried and crumbled leaves in small amounts",
-        "Household garden trimmings from untreated plants"
-      ],
-
-      bestFor: [
-        "Adult chickens as a leafy supplement",
-        "Cool-season feed gardens",
-        "Small and medium garden spaces",
-        "Spring and fall production",
-        "Mild-winter growing regions",
-        "Owners wanting repeated leaf harvests"
-      ],
-
-      supplementOnly: true,
-
-      preparationNotes:
-        "Wash soil and visible contaminants from harvested leaves. Tough mature leaves may be chopped, torn, or hung for pecking enrichment. Cooked greens should be plain, cooled, and free from salt, grease, seasonings, onions, or other unsuitable ingredients.",
-
-      safetyNotes:
-        "Use only sound leaves from plants grown without unsafe pesticide residues. Avoid moldy, slimy, fermented, frost-damaged-and-rotting, or heavily contaminated material. Brassica greens contain glucosinolates and should not dominate the diet. They do not provide enough energy, balanced protein, or calcium to replace complete poultry feed."
-    },
-
-    nutrition: {
-      basis:
-        "Approximate fresh raw-leaf values. Kale and collards differ by cultivar, maturity, growing conditions, and preparation. Fresh-weight values contain substantial water and should not be compared directly with dry poultry feed.",
-
-      crudeProteinPercent:
-        "Approximately 3% to 4% on an as-fed fresh basis; the dry-matter percentage is much higher because fresh leaves are mostly water",
-
-      fatPercent:
-        "Generally about 1% or less on an as-fed fresh basis",
-
-      fiberPercent:
-        "Generally a few percent on an as-fed basis, with higher fiber in older leaves and stems",
-
-      calciumPercent:
-        "Fresh leaves contain measurable calcium, but the amount is not sufficient to meet laying-hen requirements when used as a primary feed",
-
-      phosphorusPercent:
-        "Relatively low compared with concentrated grain or seed ingredients",
-
-      notableNutrients: [
-        "Beta-carotene and vitamin A precursors",
-        "Lutein and zeaxanthin",
-        "Vitamin K",
-        "Vitamin C",
-        "Folate",
-        "Manganese",
-        "Calcium",
-        "Potassium",
-        "Magnesium",
-        "Antioxidant plant compounds"
-      ],
-
-      limitations: [
-        "Fresh leaves contain substantial water and little concentrated dietary energy",
-        "Protein percentage on a fresh basis is low",
-        "Brassica greens contain glucosinolates and related compounds",
-        "Very large dietary amounts may dilute energy, amino acids, calcium, vitamins, and minerals supplied by complete feed",
-        "Calcium in leafy greens does not remove the need for correctly formulated layer feed or an appropriate calcium source",
-        "Older leaves and stems may be fibrous and less palatable",
-        "Kale and collards should not be assumed to have identical nutrient composition",
-        "Fresh, cooked, frozen, and dried leaves have different nutrient concentrations"
-      ]
-    },
-
-    growing: {
-      sunlight:
-        "Full sun is preferred; partial shade may be useful in warm climates or during shoulder seasons",
-
-      soilTemperatureMinimumF:
-        "Approximately 40°F to 45°F for germination, though emergence is usually faster in warmer soil",
-
-      idealSoilTemperatureF:
-        "Approximately 55°F to 75°F for establishment and cool-season growth",
-
-      frostTolerance:
-        "Moderate to High, depending on variety, plant maturity, wind exposure, and duration of freezing temperatures",
-
-      heatTolerance:
-        "Kale is generally low to moderate; collards are often somewhat more heat tolerant",
-
-      droughtTolerance:
-        "Low to Moderate; consistent moisture supports tender leaf growth",
-
-      soilPHMinimum: 6.0,
-      soilPHMaximum: 7.5,
-
-      waterNeeds:
-        "Moderate. Maintain reasonably consistent soil moisture, commonly around 1 to 1.5 inches of water per week from rain and irrigation, while avoiding waterlogged soil.",
-
-      directSow: true,
-
-      transplantRecommended:
-        "Optional and often useful for early spring, fall, or short-season plantings",
-
-      daysToFirstHarvestMinimum: 20,
-      daysToFirstHarvestMaximum: 45,
-
-      daysToMaturityMinimum: 50,
-      daysToMaturityMaximum: 85,
-
-      plantSpacingInches:
-        "Approximately 8 to 12 inches for smaller kale plants or frequent baby-leaf harvest; approximately 12 to 24 inches for mature kale and collards",
-
-      rowSpacingInches:
-        "Approximately 18 to 36 inches, depending on cultivar, harvest method, and mature plant size",
-
-      plantingDepthInches:
-        "Approximately 1/4 to 1/2 inch",
-
-      successionPlanting:
-        "Yes, particularly for baby leaves or staggered spring and fall harvests",
-
-      regrowthAfterHarvest:
-        "Yes, when lower or outer leaves are harvested while the central growing point remains intact"
-    },
-
-    regionalPlanting: {
-      coldNorth: {
-        plantingWindow:
-          "Start indoors approximately 4 to 8 weeks before the final spring frost or direct sow as soon as workable soil and weather permit. Sow again in midsummer for fall harvest.",
-        harvestWindow:
-          "Late spring into early summer and again from fall until severe winter conditions stop growth."
-      },
-
-      midwestNortheast: {
-        plantingWindow:
-          "Plant in early spring for a late-spring crop and again from midsummer into late summer for fall harvest.",
-        harvestWindow:
-          "Spring through early summer and fall into early winter, depending on protection and variety."
-      },
-
-      upperSouth: {
-        plantingWindow:
-          "Plant in late winter or early spring and again from late summer through early fall.",
-        harvestWindow:
-          "Spring and fall through winter; protected plants may continue producing during mild winters."
-      },
-
-      deepSouth: {
-        plantingWindow:
-          "Plant primarily from late summer through fall and again in late winter where appropriate. Avoid relying on peak summer production.",
-        harvestWindow:
-          "Fall through spring, with the strongest quality often occurring during cooler weather."
-      },
-
-      southwest: {
-        plantingWindow:
-          "Plant during cool seasons, often in late summer or fall for winter harvest and again before spring heat. Use irrigation and afternoon shade where necessary.",
-        harvestWindow:
-          "Fall through spring, depending on elevation and winter severity."
-      },
-
-      pacificNorthwest: {
-        plantingWindow:
-          "Plant in spring and again during summer for fall and winter harvest. Select hardy varieties for overwintering.",
-        harvestWindow:
-          "Late spring through winter in many locations, particularly with row covers or other protection."
-      },
-
-      coastalWest: {
-        plantingWindow:
-          "Mild coastal areas may support extended or nearly year-round planting, with strongest growth during cooler months.",
-        harvestWindow:
-          "Much of the year, depending on local heat, fog, rainfall, and variety."
-      }
-    },
-
-    spaceAndYield: {
-      plantsPer10SquareFeet: null,
-      plantsPer50SquareFeet: null,
-      plantsPer100SquareFeet: null,
-
-      expectedYieldPerPlantMinimumLbs: null,
-      expectedYieldPerPlantMaximumLbs: null,
-
-      expectedYieldPer100SquareFeetMinimumLbs: null,
-      expectedYieldPer100SquareFeetMaximumLbs: null,
-
-      edibleYieldPercent: null,
-
-      storageLife:
-        "Fresh leaves generally store for several days to roughly one week under refrigeration, while blanched frozen greens may store for several months",
-
-      storageMethod:
-        "For fresh use, cool leaves promptly and refrigerate them in a breathable or loosely sealed container that limits drying without trapping excessive moisture. For longer storage, blanch and freeze plain leaves or dry them thoroughly before sealed storage.",
-
-      yieldNotes:
-        "Plants-per-area values remain null because this combined record includes baby-leaf kale, mature kale, and full-sized collard production systems with substantially different spacing. Smaller kale plants may be maintained approximately 8 to 12 inches apart, while mature kale and collards may require approximately 12 to 24 inches between plants and 18 to 36 inches between rows. Dense baby-leaf plantings may contain many more plants but produce smaller repeated harvests, while widely spaced mature plants produce larger individual leaves over a longer period. A single plant-density figure would therefore create misleading garden-planning results. Separate density and yield estimates should eventually be developed for baby-leaf greens, mature kale, and mature collards."
-
-    },
-
-    economics: {
-      seedCostEstimate:
-        "Generally low. One seed packet can produce many plants, and seed may also be purchased in bulk for baby-leaf production.",
-
-      equipmentCostEstimate:
-        "Low to moderate. Possible costs include seed-starting supplies, irrigation, mulch, compost, row covers, insect netting, containers, and cold-protection materials.",
-
-      irrigationCostLevel: "Low to Moderate",
-
-      laborLevel:
-        "Low to Moderate, although regular harvesting, washing, pest inspection, and repeated planting increase labor",
-
-      potentialFeedSavings: null,
-
-      economicNotes:
-        "Kale and collards may provide strong garden value because outer leaves can be harvested repeatedly and household-quality produce can be shared between people and chickens. Their direct feed-savings value is limited by high moisture and low energy density. They are better evaluated as nutrient-rich greens and enrichment than as replacements for purchased feed."
-    },
-
-    scores: {
-      easeOfGrowing: null,
-      yieldPerSquareFoot: null,
-      nutritionalUsefulness: null,
-      proteinContribution: null,
-      energyContribution: null,
-      storageValue: null,
-      smallSpaceSuitability: null,
-      heatTolerance: null,
-      coldTolerance: null,
-      laborEfficiency: null,
-      economicPotential: null,
-      safetySimplicity: null
-    },
-
-    rankings: {
-      practicalScore: null,
-      nutritionalScore: null,
-      bcpFeedScore: null
-    },
-
-    evidence: {
-      evidenceStrength:
-        "Strong for general cultivation, nutrient composition, cool-season production, repeated harvesting, and human-food use; moderate for use as poultry enrichment and supplemental greens; limited for poultry-specific feeding amounts, feed replacement, and backyard yield per square foot",
-
-      sources: [
-        {
-          title:
-            "FoodData Central",
-          organization:
-            "United States Department of Agriculture, Agricultural Research Service",
-          url:
-            "https://fdc.nal.usda.gov/",
-          use:
-            "Fresh kale and collard moisture, protein, fat, fiber, calcium, vitamins, minerals, and carotenoid context"
-        },
-
-        {
-          title:
-            "Growing Kale in Home Gardens",
-          organization:
-            "University Cooperative Extension horticulture guidance",
-          url:
-            "https://extension.umn.edu/vegetables/growing-kale",
-          use:
-            "Cool-season production, starting dates, transplanting, spacing, harvest, watering, and pest management"
-        },
-
-        {
-          title:
-            "Home Garden Collards",
-          organization:
-            "University of Georgia Cooperative Extension",
-          url:
-            "https://extension.uga.edu/publications/",
-          use:
-            "Southern planting seasons, variety selection, spacing, fertility, watering, harvest, pests, and diseases"
-        },
-
-        {
-          title:
-            "Kale and Collards in the Garden",
-          organization:
-            "Utah State University Extension",
-          url:
-            "https://extension.usu.edu/yardandgarden/",
-          use:
-            "Planting, soil, irrigation, spacing, harvest, and cool-weather production"
-        },
-
-        {
-          title:
-            "Glucosinolates in Brassica Vegetables",
-          organization:
-            "USDA Agricultural Research Service and peer-reviewed plant-science literature",
-          url:
-            "https://www.ars.usda.gov/",
-          use:
-            "Glucosinolate content, variation among brassica crops, and reasons to avoid treating unlimited leafy-brassica intake as nutritionally neutral"
-        }
-      ],
-
-      lastReviewed: "2026-07-13",
-
-      researchNotes: [
-        "Separate kale and collards into individual records if meaningful differences emerge in yield, spacing, climate performance, or poultry value.",
-        "Identify cultivars that perform especially well under repeated leaf harvesting.",
-        "Research whether dinosaur, curly, Russian, forage, and tree kale differ meaningfully in dry-matter yield.",
-        "Find poultry-specific studies on kale, collards, or mixed brassica forage.",
-        "Do not interpret human vitamin values as direct poultry requirements or guaranteed absorption.",
-        "Determine dry-matter yield per plant and per square foot before estimating feed contribution.",
-        "Research glucosinolate concentrations by cultivar, season, and plant maturity.",
-        "Assess pest-control costs for cabbage worms, loopers, aphids, flea beetles, slugs, black rot, and clubroot.",
-        "Compare direct flock grazing with cut-and-carry harvesting.",
-        "Research container production and baby-leaf density for small-space users.",
-        "Calculate scores only after several crops have comparable evidence and complete data.",
-        "Plant-density fields remain null because baby-leaf kale, mature kale, and mature collards use substantially different planting densities and should eventually be modeled as separate production systems.",
-
-      ]
-    },
-
-plannerData: {
-  schemaVersion: "1.0.0",
-
-  developmentStatus:
-    "ready",
-
-  identity: {
-    plannerName:
-      "Kale and Collard Greens",
-
-    shortLabel:
-      "Kale & Collards",
-
-    icon:
-      "🥬",
-
-    cropCategory:
-      "leafy-green",
-
-    primaryFeedCategory:
-      "fresh-green",
-
-    guideUrl:
-      "growing-kale-collards-for-chickens.html"
-  },
-
-  lifecycle: {
-    growthCycle:
-      "biennial",
-
-    isAnnual: false,
-    isBiennial: true,
-    isPerennial: false,
-    isTreeOrShrub: false,
-
-    commonlyGrownAsAnnual: true,
-
-    yearsToFirstUsefulHarvest: 0,
-    yearsToFullProduction: 0,
-    expectedUsefulLifeYears: 1,
-
-    regrowsAfterHarvest: true,
-
-    permanentPlantingRequired: false,
-    reversibleAfterOneSeason: true
-  },
-
-  climate: {
-    suitableClimateTypes: [
-      "cold-short-summer",
-      "cool-moderate-summer",
-      "temperate",
-      "mild-winter",
-      "high-elevation"
-    ],
-
-    preferredClimateTypes: [
-      "cool-moderate-summer",
-      "temperate",
-      "mild-winter"
-    ],
-
-    challengingClimateTypes: [
-      "hot-humid",
-      "hot-dry"
-    ],
-
-    minimumFrostFreeDays: null,
-    preferredFrostFreeDays: null,
-
-    minimumSoilTemperatureF: null,
-    preferredSoilTemperatureF: 60,
-
-    daysToMaturityMinimum: 50,
-    daysToMaturityMaximum: 75,
-
-    dryDownBufferDays: null,
-
-    heatToleranceScore: 2,
-
-    droughtClimateToleranceScore: 2,
-
-    humidityToleranceScore: 3,
-
-    coolSummerToleranceScore: 5,
-
-    frostSensitivityScore: 1,
-
-    winterHardinessRequired: false,
-
-    seasonExtensionBenefits: [
-      "Row cover can protect young plants from frost and insect pests.",
-      "Low tunnels and cold frames can extend fall and winter harvest.",
-      "Mulch can cool soil and reduce moisture stress during warm weather.",
-      "Transplants can provide earlier harvest than direct seeding."
-    ],
-
-    indoorSeedStartingBenefitScore: 4,
-
-    directFacts: {
       seasonType:
-        "cool-season",
-
-      frostSensitive: false,
-
-      plantBeforeLastFrostPossible:
-        true,
-
-      youngPlantColdToleranceF:
-        25,
-
-      preferredMaximumGrowingTemperatureF:
-        75,
-
-      maturityRangeDays:
-        "approximately-50-to-75-variety-dependent",
-
-      notes: [
-        "Kale and Collards are generally grown as cool-season leafy vegetables.",
-        "They can be planted before the final spring frost and again for fall harvest.",
-        "Mature Kale plants can tolerate substantial cold, although exact hardiness varies by cultivar and plant condition.",
-        "Light frost can improve flavor and eating quality.",
-        "High summer temperatures reduce growth and may produce tougher or more bitter leaves.",
-        "Collards generally tolerate Southern heat somewhat better than many Kale varieties, but both perform best during cooler periods.",
-        "Maturity varies by cultivar, transplant age, harvest size, and whether baby or full-sized leaves are desired."
-      ]
-    }
-  },
-
-  site: {
-    absoluteMinimumSunHours: 3,
-
-    productiveMinimumSunHours: 4,
-
-    preferredSunHours: 6,
-
-    shadeToleranceScore: 4,
-
-    afternoonShadeBenefitInHeat: 5,
-
-    windToleranceScore: 4,
-
-    lodgingRiskScore: 1,
-
-    reflectedHeatToleranceScore: 2,
-
-    airflowRequirementScore: 4,
-
-    frostPocketSensitivityScore: 1,
-
-    treeRootCompetitionToleranceScore: 3,
-
-    hardscapeConflictRiskScore: 1,
-
-    structureConflictRiskScore: 1,
-
-    utilityConflictRiskScore: 1,
-
-    fruitDropMessRiskScore: 1,
-
-    stainingRiskScore: 1,
-
-    directFacts: {
-      preferredLight:
-        "full-sun-to-partial-shade",
-
-      productiveSunGuidance:
-        "Approximately 4 to 6 or more hours of direct sun, with fuller sun preferred in cool weather and afternoon shade useful in hot climates.",
-
-      windExposureConcern:
-        false,
-
-      growthHabit:
-        "upright-leafy-rosette",
-
-      notes: [
-        "Full sun generally provides the fastest and fullest growth.",
-        "Partial shade can still support useful leaf production.",
-        "Afternoon shade can reduce heat stress in hot climates.",
-        "Dense plantings need adequate airflow to reduce prolonged leaf wetness and disease pressure.",
-        "The plants are relatively low and structurally stable compared with tall grain crops.",
-        "Kale and Collards can fit near walkways, patios, structures, and raised beds without major height conflicts.",
-        "Avoid sites where dense tree roots create severe competition for moisture and nutrients."
-      ]
-    }
-  },
-
-  soil: {
-    textureScores: {
-      heavyClay: 3,
-      clayLoam: 4,
-      loam: 5,
-      sandyLoam: 4,
-      verySandy: 2,
-      rocky: 2
-    },
-
-    drainageRequirementScore: 4,
-
-    temporaryWetToleranceScore: 2,
-
-    waterloggingSensitivityScore: 4,
-
-    minimumSoilDepthIn: 8,
-    preferredSoilDepthIn: 12,
-
-    compactionToleranceScore: 2,
-
-    establishmentInSodDifficultyScore: 5,
-
-    preferredPHMinimum: 6.0,
-    preferredPHMaximum: 7.5,
-
-    survivalPHMinimum: null,
-    survivalPHMaximum: null,
-
-    fertilityRequirementScore: 4,
-
-    nitrogenRequirementScore: 5,
-    phosphorusRequirementScore: 3,
-    potassiumRequirementScore: 4,
-
-    benefitsFromInoculation: false,
-
-    inoculantType: null,
-
-    saltToleranceScore: null,
-
-    amendmentEffortScore: 3,
-
-    directFacts: {
-      preferredDrainage:
-        "well-drained",
-
-      preferredTextures: [
-        "loam",
-        "clay loam",
-        "sandy loam with added organic matter"
-      ],
-
-      organicMatterBenefit:
-        true,
-
-      highNitrogenLeafCrop:
-        true,
-
-      waterloggedSoilSuitable:
-        false,
-
-      notes: [
-        "Kale and Collards favor fertile, well-drained soil rich in organic matter.",
-        "Leaf production responds strongly to adequate nitrogen.",
-        "Very sandy soil can dry rapidly and may require more frequent irrigation and fertility management.",
-        "Heavy clay can work when drainage and compaction are corrected.",
-        "Standing water and persistently saturated soil increase root and disease problems.",
-        "Soil testing should guide fertilizer and amendment decisions.",
-        "The stored pH range is a productive planning range rather than an absolute survival boundary."
-      ]
-    }
-  },
-
-  water: {
-    overallWaterRequirementLevel:
-      "moderate",
-
-    germinationWaterNeedLevel:
-      "moderate",
-
-    establishmentWaterNeedLevel:
-      "moderate",
-
-    matureWaterNeedLevel:
-      "moderate",
-
-    floweringWaterNeedLevel:
-      "not-applicable",
-
-    harvestDevelopmentWaterNeedLevel:
-      "moderate",
-
-    droughtSurvivalScore: 2,
-
-    droughtYieldRetentionScore: 2,
-
-    criticalGrowthStages: [
-      "germination",
-      "transplant-establishment",
-      "rapid-leaf-growth",
-      "repeated-harvest-regrowth"
-    ],
-
-    criticalStageWaterImportanceScore: 4,
-
-    overwateringSensitivityScore: 3,
-
-    waterloggingSensitivityScore: 4,
-
-    dripIrrigationBenefitScore: 5,
-
-    mulchBenefitScore: 5,
-
-    suitableForRainfallOnlyScore: 2,
-
-    suitableForLimitedIrrigationScore: 2,
-
-    containerDryingRiskScore: 4,
-
-    establishmentYearsRequiringExtraWater: 0,
-
-    directFacts: {
-      evenMoistureImportant:
-        true,
-
-      moistureStressReducesQuality:
-        true,
-
-      standingWaterSuitable:
-        false,
-
-      typicalWeeklyWaterInchesMinimum:
-        1,
-
-      typicalWeeklyWaterInchesMaximum:
-        2,
-
-      notes: [
-        "Consistent soil moisture supports tender leaves and steady regrowth.",
-        "Moisture fluctuations can produce tough leaves and undesirable flavor.",
-        "Kale guidance commonly recommends approximately 1 to 2 inches of water per week depending on weather and soil.",
-        "Drip irrigation helps conserve water and keeps foliage drier.",
-        "Mulch reduces evaporation, suppresses weeds, and cools soil during warm weather.",
-        "Containers and shallow raised beds dry faster than in-ground soil.",
-        "The crop is not a strong choice where irrigation is frequently unavailable."
-      ]
-    }
-  },
-
-  space: {
-    minimumTrialAreaSqFt: null,
-
-    minimumUsefulAreaSqFt: null,
-
-    preferredProductionAreaSqFt: null,
-
-    smallSpaceScore: 5,
-
-    mediumSpaceScore: 5,
-
-    largeSpaceScore: 4,
-
-    layoutScores: {
-      squareBlock: 5,
-      wideRectangle: 5,
-      longStrip: 5,
-      irregular: 5,
-      smallBeds: 5,
-      openField: 4
-    },
-
-    spaceTypeScores: {
-      inGround: 5,
-      raisedBed: 5,
-      container: 5,
-      fenceLine: 4,
-      buildingEdge: 5,
-      unusedLawn: 3,
-      openField: 4,
-      orchard: 3,
-      forageFrame: 5,
-      rotationalPaddock: 3,
-      greenhouse: 5,
-      hedgerow: 2
-    },
-
-    minimumContainerGallons: null,
-
-    containerUseLimitation:
-      "Containers can provide useful repeated leaf harvests, but smaller containers dry quickly and support fewer plants.",
-
-    minimumRaisedBedDepthIn: 8,
-
-    vineSpreadRequired: false,
-
-    verticalSupportBenefitScore: 1,
-
-    blockPlantingRequired: false,
-
-    minimumBlockRows: null,
-
-    continuousStandPreferred: false,
-
-    heightCategory:
-      "low-to-medium",
-
-    matureWidthCategory:
-      "moderate",
-
-    overflowSpaceBenefitScore: 1,
-
-    directFacts: {
-      layoutFlexible: true,
-
-      blockPollinationRequired: false,
-
-      containerSuitable: true,
-
-      raisedBedSuitable: true,
-
-      forageFrameSuitable: true,
-
-      repeatedHarvestSuitable: true,
-
-      approximatePlantSpacingInMinimum:
-        12,
-
-      approximatePlantSpacingInMaximum:
-        18,
-
-      approximateRowSpacingIn:
-        24,
-
-      notes: [
-        "Kale and Collards fit small beds, containers, raised beds, borders, and larger rows.",
-        "Plants commonly receive approximately 12 to 18 inches of spacing depending on cultivar and desired leaf size.",
-        "Closer spacing can produce smaller leaves but may reduce airflow.",
-        "The crop does not require block planting or a trellis.",
-        "Forage frames can protect low plants while allowing chickens to reach leaves through wire.",
-        "Small plantings can provide repeated harvests for a small flock.",
-        "Production-scale usefulness still depends on flock size, planting area, season length, and harvest frequency."
-      ]
-    }
-  },
-
-  flock: {
-    suitableForAdultChickens: true,
-
-    suitableForYoungChicks: false,
-
-    flockPurposeScores: {
-      eggs: 4,
-      meat: 3,
-      breeding: 3,
-      petsEnrichment: 4,
-      homestead: 5,
-      mixed: 5
-    },
-
-    feedingMethodScores: {
-      livingGrazing: 3,
-      cutAndCarry: 5,
-      wholeProduce: 4,
-      wholeSeedHeads: 1,
-      wholeGrain: 1,
-      processedGrain: 1,
-      heatTreated: 2,
-      driedForage: 2,
-      winterStorage: 2
-    },
-
-    directRunSuitabilityScore: 2,
-
-    forageFrameSuitabilityScore: 5,
-
-    rotationalPaddockSuitabilityScore: 3,
-
-    confinedFlockValueScore: 5,
-
-    pasturedFlockValueScore: 3,
-
-    treatDilutionRiskScore: 2,
-
-    highEnergySupplement: false,
-
-    highFiberSupplement: true,
-
-    concentratedFatSource: false,
-
-    primaryFlockUses: [
-      "Fresh cut-and-carry leaves",
-      "Protected living forage",
-      "Seasonal green enrichment",
-      "Household-and-flock shared harvest",
-      "Cool-season fresh supplementation"
-    ],
-
-    unsuitablePrimaryUses: [
-      "Complete-ration replacement",
-      "High-energy supplement",
-      "Long-term dry storage",
-      "Unprotected permanent-run planting",
-      "Primary young-chick feed"
-    ],
-
-    directFacts: {
-      edibleFeedParts: [
-        "Fresh leaves",
-        "Tender stems",
-        "Small whole plants"
-      ],
-
-      preferredBirdStage:
-        "Established adult chickens",
-
-      cropSurvivalWithDirectChickenAccess:
-        "poor-under-continuous-unrestricted-access",
-
-      directAccessTiming:
-        "Use controlled grazing, forage frames, or cut-and-carry harvest rather than unrestricted access to a small planting.",
-
-      nutritionalOrientation: [
-        "fresh-green",
-        "fiber",
-        "vitamin-rich-plant-material",
-        "household-food",
-        "enrichment"
-      ],
-
-      balancedFeedReplacement:
-        false,
-
-      notes: [
-        "Kale and Collard leaves are best treated as fresh supplemental greens.",
-        "The crop is especially useful for confined flocks lacking access to vegetation.",
-        "A forage frame can protect plant crowns and roots from scratching.",
-        "Repeated harvesting is possible when outer leaves are removed and the growing center remains intact.",
-        "The crop is low in concentrated energy and should not be treated as a replacement for grain or balanced poultry feed.",
-        "Young chicks should continue receiving an age-appropriate complete starter ration.",
-        "Large quantities of any supplemental green can reduce consumption of complete feed if offered without restraint."
-      ]
-    }
-  },
-
-  labor: {
-    beginnerFriendlinessScore: 5,
-
-    plantingEaseScore: 4,
-
-    establishmentEaseScore: 4,
-
-    routineMaintenanceEaseScore: 4,
-
-    weedControlEaseScore: 4,
-
-    wildlifeProtectionEaseScore: 3,
-
-    harvestEaseScore: 5,
-
-    freshLeafProcessingEaseScore: 5,
-
-    refrigeratedStorageEaseScore: 4,
-
-    dryingEaseScore: 2,
-
-    storageMonitoringEaseScore: 4,
-
-    perennialMaintenanceEaseScore: 5,
-
-    physicalAccessibilityScore: 5,
-
-    heavyLiftingRiskScore: 1,
-
-    weeklyLaborLevel:
-      "low",
-
-    peakWorkloadLevel:
-      "low",
-
-    harvestFrequencyCategory:
-      "several-weekly",
-
-    requiredPlantingTasks: [
-      "prepare-seedbed"
-    ],
-
-    optionalPlantingTasks: [
-      "start-indoors",
-      "transplant",
-      "install-irrigation"
-    ],
-
-    requiredMaintenanceTasks: [
-      "hand-weed"
-    ],
-
-    optionalMaintenanceTasks: [
-      "mulch",
-      "protect-from-wildlife"
-    ],
-
-    requiredHarvestTasks: [
-      "cut-leaves"
-    ],
-
-    usePathProcessingTasks: {
-      freshCutLeaves: [
-        "cut-leaves"
-      ],
-
-      protectedLivingForage: [],
-
-      refrigeratedLeaves: [
-        "cut-leaves",
-        "refrigerate"
-      ]
-    },
-
-    requiredStorageTasks: [],
-
-    specializedEquipmentRequired: [],
-
-    specializedEquipmentHelpful: [
-      "hand-pruners",
-      "row-cover",
-      "forage-frame",
-      "drip-irrigation",
-      "refrigerator"
-    ],
-
-    suitableForLowTimeUsersScore: 5,
-
-    suitableForSoloGrowersScore: 5,
-
-    directFacts: {
-      seedSize:
-        "small",
-
-      directSeedingSuitable: true,
-
-      transplantingSuitable: true,
-
-      specializedHarvestEquipmentRequiredForBackyardScale:
-        false,
-
-      majorLaborBottlenecks: [
-        "Monitoring cabbage worms and loopers",
-        "Protecting seedlings from flea beetles",
-        "Maintaining moisture during warm weather",
-        "Repeated leaf harvesting",
-        "Protecting plants from chickens and browsing wildlife"
-      ],
-
-      notes: [
-        "Kale and Collards are generally beginner-friendly crops.",
-        "Transplants can simplify establishment and provide earlier harvest.",
-        "Harvest is simple and can be repeated by removing mature outer leaves.",
-        "Pest inspection may become the most regular management task.",
-        "Small plantings require no specialized tools.",
-        "The plants are lightweight and accessible for most hand-harvest systems."
-      ]
-    }
-  },
-
-  cost: {
-    seedOrPlantCostLevel:
-      "low",
-
-    soilPreparationCostLevel:
-      "low",
-
-    irrigationCostLevel:
-      "low",
-
-    protectionCostLevel:
-      "low",
-
-    processingEquipmentCostLevel:
-      "very-low",
-
-    storageCostLevel:
-      "very-low",
-
-    annualRecurringCostLevel:
-      "low",
-
-    longTermValueScore: 5,
-
-    lowestCostUsePath:
-      "fresh-cut-leaves",
-
-    highestCostUsePath:
-      "protected-living-forage",
-
-    likelyCostDrivers: [
-      "Transplants rather than seed",
-      "Row cover",
-      "Forage-frame materials",
-      "Drip irrigation",
-      "Compost or fertility amendments"
-    ],
-
-    costReductionOptions: [
-      "Start plants from seed.",
-      "Use direct seeding where conditions allow.",
-      "Harvest fresh leaves instead of storing them.",
-      "Build a forage frame from existing wire and lumber.",
-      "Use mulch to reduce watering and weed pressure."
-    ],
-
-    directFacts: {
-      specializedPlantingEquipmentRequired:
-        false,
-
-      specializedBackyardHarvestEquipmentRequired:
-        false,
-
-      specializedProcessingEquipmentRequired:
-        false,
-
-      notes: [
-        "Kale and Collards are inexpensive to establish from seed.",
-        "Fresh use requires almost no processing equipment.",
-        "A protected forage frame may be the largest optional infrastructure expense.",
-        "Fertility and irrigation costs depend on the existing garden.",
-        "Cost values are qualitative rather than current retail estimates."
-      ]
-    }
-  },
-
-  goals: {
-    feedReductionScore: 2,
-
-    energyProductionScore: 1,
-
-    proteinOrientedScore: 2,
-
-    freshGreensScore: 5,
-
-    livingForageScore: 4,
-
-    winterStorageScore: 2,
-
-    enrichmentScore: 4,
-
-    resilienceScore: 4,
-
-    soilImprovementScore: 2,
-
-    nitrogenFixationScore: 1,
-
-    groundCoverScore: 3,
-
-    erosionControlScore: 2,
-
-    shadeScore: 1,
-
-    privacyScreeningScore: 1,
-
-    pollinatorSupportScore: 1,
-
-    compostBiomassScore: 4,
-
-    householdFoodScore: 5,
-
-    seedSavingScore: 2,
-
-    selfRelianceScore: 4,
-
-    multipurposeValueScore: 5,
-
-    visualAppealScore: 4,
-
-    productionReliabilityScore: 4,
-
-    fastestValueScore: 5,
-
-    nonElectricStorageScore: 1,
-
-    smallFlockValueScore: 5,
-
-    largeFlockValueScore: 3,
-
-    primaryGoalMatches: [
-      "fresh-greens",
-      "living-forage",
-      "cool-season-production",
-      "household-food",
-      "beginner-friendly",
-      "small-space",
-      "container-growing",
-      "forage-frame",
-      "fast-value",
-      "edible-landscape"
-    ],
-
-    weakGoalMatches: [
-      "high-energy",
-      "dry-grain-storage",
-      "nitrogen-fixation",
-      "pollinator-crop",
-      "long-term-non-electric-storage",
-      "major-feed-replacement"
-    ],
-
-    directFacts: {
-      repeatedLeafHarvest:
-        true,
-
-      humanFoodPotential:
-        true,
-
-      coolSeasonProduction:
-        true,
-
-      containerSuitable:
-        true,
-
-      forageFramePotential:
-        true,
-
-      notes: [
-        "Kale and Collards are among the strongest fresh-green crops in the initial planner database.",
-        "They offer rapid household and flock value from a small area.",
-        "Repeated leaf harvest improves usefulness over a longer season.",
-        "They are not strong concentrated-energy or dry-storage crops.",
-        "Flowering is normally not the production goal, so pollinator value is limited in typical management.",
-        "Seed saving is possible but more complicated because Brassica varieties can cross and plants normally flower in their second year.",
-        "Their best planner role is fresh seasonal supplementation rather than major purchased-feed replacement."
-      ]
-    }
-  },
-
-  risks: {
-    wildlife: {
-      wildBirds: 2,
-      deer: 5,
-      raccoons: 1,
-      squirrels: 1,
-      rabbits: 5,
-      rodents: 2,
-      groundhogs: 4
-    },
-
-    insectsRiskScore: 5,
-
-    diseaseRiskScore: 4,
-
-    lodgingRiskScore: 1,
-
-    fieldMoldRiskScore: 2,
-
-    dryingMoldRiskScore: 2,
-
-    storageMoldRiskScore: 2,
-
-    storedInsectRiskScore: 1,
-
-    spoilageSpeedRiskScore: 4,
-
-    invasivenessConcernRiskScore: 1,
-
-    selfSeedingRiskScore: 2,
-
-    fruitDropRiskScore: 1,
-
-    cropFailureRiskScore: 3,
-
-    stormDamageRiskScore: 2,
-
-    shadingOtherCropsRiskScore: 2,
-
-    overfeedingRiskScore: 2,
-
-    treatedSeedRiskScore: 5,
-
-    primaryRisks: [
-      {
-        id:
-          "brassica-caterpillars",
-
-        severity:
-          "very-high",
-
-        affectedStages: [
-          "seedling",
-          "vegetative-growth",
-          "harvest"
+        "Cool Season",
+
+      status:
+        "Initial Research Complete",
+
+      summary:
+        "Kale and Collard Greens are cool-season leafy Brassica crops that can provide repeated harvests of fresh foliage, carotenoid-rich green material, household vegetables, protected living forage, cut-and-carry enrichment, and useful production during spring, fall, and mild winter weather. Their leaves are highly moisture-rich and low in concentrated dietary energy, so they should remain supplemental foods rather than replacements for a complete poultry ration.",
+
+      chickenUse: {
+        edibleParts: [
+          "Fresh mature leaves",
+          "Young tender leaves",
+          "Baby greens",
+          "Tender leaf stems",
+          "Outer leaves removed during household harvest",
+          "Small whole plants",
+          "Plain cooked leaves",
+          "Blanched frozen leaves",
+          "Fully dehydrated leaves"
         ],
 
-        mitigationOptions: [
-          "Row cover",
-          "Regular leaf inspection",
-          "Hand removal",
-          "Appropriate biological controls",
-          "Crop rotation"
+        primaryValue: [
+          "Fresh leafy-green supplementation",
+          "Carotenoid-containing plant material",
+          "Pecking enrichment",
+          "Repeated leaf harvest",
+          "Cool-season production",
+          "Protected living forage",
+          "Household-and-flock shared harvest",
+          "Seasonal moisture-rich plant material",
+          "Use of sound garden trimmings"
         ],
 
-        note:
-          "Cabbage worms and loopers can rapidly remove leaf tissue and contaminate harvested leaves."
+        feedingForms: [
+          "Whole fresh leaves hung for pecking",
+          "Fresh leaves placed in a clean feeder",
+          "Chopped or torn fresh leaves",
+          "Protected living plants under a forage frame",
+          "Brief controlled access to established plants",
+          "Plain cooked and cooled leaves",
+          "Blanched and thawed leaves",
+          "Fully dried leaf flakes",
+          "Measured dried leaf powder",
+          "Sound untreated household harvest trimmings"
+        ],
+
+        bestFor: [
+          "Established adult chickens",
+          "Confined flocks lacking access to vegetation",
+          "Cool-season feed gardens",
+          "Small and medium garden spaces",
+          "Raised beds and containers",
+          "Protected forage frames",
+          "Spring and fall production",
+          "Mild-winter production",
+          "Repeated cut-and-carry harvest",
+          "Households sharing garden vegetables with the flock"
+        ],
+
+        supplementOnly:
+          true,
+
+        preparationNotes:
+          "Harvest only sound leaves from correctly identified edible Kale or Collard plants. Remove soil, insects, droppings, and visible contamination. Tough mature leaves may be torn, chopped, or hung for pecking. Plain cooked greens must be cooled completely and must not contain salt, butter, grease, sauces, onions, excessive seasoning, or other unsuitable ingredients. Frozen or dehydrated leaves require separate handling and storage pathways.",
+
+        safetyNotes:
+          "Kale and Collard leaves should supplement rather than replace an age-appropriate complete poultry ration. Fresh leaves contain substantial water and limited concentrated energy. Brassica foliage contains glucosinolates and other naturally occurring plant compounds, and excessive intake may dilute balanced-feed consumption. Do not feed moldy, slimy, fermented, rotten, heavily insect-contaminated, chemically contaminated, manure-contaminated, or improperly stored leaves."
       },
 
-      {
-        id:
-          "flea-beetle-seedling-damage",
+      nutrition: {
+        basis:
+          "Approximate composition of raw fresh Kale and Collard leaves. Values vary substantially with species grouping, cultivar, leaf maturity, growing temperature, fertility, water supply, harvest timing, postharvest handling, cooking, freezing, and dehydration. Fresh-weight values contain substantial water and must not be compared directly with dry commercial poultry feed.",
 
-        severity:
-          "high",
+        crudeProteinPercent:
+          "Commonly approximately 2% to 4% on an as-fed fresh basis, depending on crop, cultivar, maturity, and analytical source",
 
-        affectedStages: [
-          "emergence",
-          "seedling"
+        fatPercent:
+          "Generally less than approximately 1% on an as-fed fresh basis",
+
+        fiberPercent:
+          "Usually a few percent on an as-fed fresh basis, with greater structural fiber in older leaves, large midribs, and mature stems",
+
+        starchPercent:
+          null,
+
+        calciumPercent:
+          "Fresh leaves contain measurable calcium, but the amount and availability are insufficient to meet laying-hen calcium requirements when used as a primary feed",
+
+        phosphorusPercent:
+          "Relatively low on an as-fed fresh basis compared with concentrated grain, seed, or formulated mineral ingredients",
+
+        metabolizableEnergy:
+          "Low on a fresh-weight basis because the leaves contain substantial water and relatively little starch or fat",
+
+        notableNutrients: [
+          "Beta-carotene and other vitamin A precursors",
+          "Lutein",
+          "Zeaxanthin",
+          "Vitamin K",
+          "Vitamin C",
+          "Folate",
+          "Calcium",
+          "Potassium",
+          "Magnesium",
+          "Manganese",
+          "Dietary fiber",
+          "Chlorophyll",
+          "Phenolic compounds",
+          "Glucosinolates"
         ],
 
-        mitigationOptions: [
-          "Row cover",
-          "Healthy transplants",
-          "Rapid establishment",
-          "Regular inspection"
+        aminoAcidStrengths: [
+          "Leaf tissue contributes small amounts of plant protein and amino acids",
+          "Dry leaf material contains a higher protein percentage than fresh leaves because water has been removed"
         ],
 
-        note:
-          "Flea beetles can severely damage or kill small seedlings."
+        aminoAcidLimitations: [
+          "Fresh leaves provide too little concentrated protein to balance a poultry ration",
+          "Total crude protein does not establish digestible amino-acid adequacy",
+          "Kale and Collard leaves cannot independently meet methionine or total amino-acid requirements",
+          "Leaf maturity, cultivar, and processing alter measured protein concentration",
+          "Dried-leaf percentages cannot be applied directly to fresh-leaf feeding"
+        ],
+
+        glucosinolateConcern:
+          true,
+
+        goitrogenicCompoundConcern:
+          true,
+
+        phytateConcern:
+          false,
+
+        oxalateConcern:
+          true,
+
+        highMoistureConcern:
+          true,
+
+        notableAntinutritionalFactors: [
+          "Glucosinolates",
+          "Goitrogenic breakdown products when consumed at excessive dietary levels",
+          "Oxalates",
+          "Structural fiber in mature leaves and stems",
+          "Nutrient dilution caused by high moisture content"
+        ],
+
+        processingEffects: [
+          "Chopping or tearing reduces particle size but does not create additional nutrients.",
+          "Cooking softens leaf tissue and may reduce some heat-sensitive vitamins.",
+          "Blanching before freezing changes texture and may cause some water-soluble nutrient loss.",
+          "Freezing preserves leaf material but does not make it nutritionally concentrated.",
+          "Dehydration removes water and increases nutrient concentration per unit weight.",
+          "Drying may reduce some heat-sensitive nutrients depending on temperature and duration.",
+          "Grinding dried leaves improves mixing precision but increases dust, oxidation, and moisture-exposure risk.",
+          "Prolonged warm storage accelerates deterioration of fresh leaves.",
+          "Fermentation or spoilage is not an acceptable preservation method for this record."
+        ],
+
+        poultryLimitations: [
+          "Very low concentrated dietary energy",
+          "High fresh-leaf moisture content",
+          "Insufficient balanced protein",
+          "Insufficient methionine",
+          "Insufficient laying-hen calcium when used as the primary diet",
+          "Glucosinolates and related Brassica compounds",
+          "Possible goitrogenic effects when excessive Brassica material dominates an improperly balanced diet",
+          "Older leaves and stems can be fibrous",
+          "Large quantities can displace complete-feed intake",
+          "Fresh leaves spoil rapidly after harvest",
+          "Dried leaves are more concentrated and easier to overfeed by weight",
+          "Kale and Collards should not be assumed to have identical composition",
+          "Fresh, cooked, frozen, and dried leaves require separate use-path evaluation",
+          "A universal backyard inclusion percentage is not supported"
+        ],
+
+        directFacts: {
+          primaryNutritionalRole:
+            "moisture-rich-leafy-green-supplement",
+
+          highProteinFeed:
+            false,
+
+          highFatFeed:
+            false,
+
+          highEnergyFeed:
+            false,
+
+          highMoistureFeed:
+            true,
+
+          carotenoidSource:
+            true,
+
+          luteinPresent:
+            true,
+
+          glucosinolatesPresent:
+            true,
+
+          oxalatesPresent:
+            true,
+
+          freshAndDriedFormsNutritionallyEquivalent:
+            false,
+
+          completeFeed:
+            false,
+
+          notes: [
+            "Kale and Collard Greens are best evaluated as fresh supplemental greens and enrichment rather than as concentrated feed ingredients.",
+            "Fresh leaves contain substantial water, so their apparent harvest weight exaggerates dry feed contribution.",
+            "Carotenoid-containing leaves may contribute dietary pigments, but human-food nutrient values should not be converted directly into poultry-performance claims.",
+            "The record does not assign a medicinal or disease-prevention role to Kale or Collards.",
+            "Glucosinolates are naturally present in Brassica leaves and support moderation rather than unrestricted dietary dominance.",
+            "Measured calcium in the leaves does not eliminate the need for correctly formulated layer feed and an appropriate calcium program.",
+            "Dried leaf material is nutritionally more concentrated per pound than fresh leaves because water has been removed.",
+            "Fresh leaves, cooked leaves, frozen leaves, dried flakes, and dried powder must remain separate planner pathways.",
+            "Older leaves and large stems may provide more fiber and less palatability than young tender leaves.",
+            "The planner should distinguish enrichment value from measurable purchased-feed replacement."
+          ]
+        }
       },
 
-      {
-        id:
-          "aphid-pressure",
+            growing: {
+        sunlight:
+          "Full sun is preferred during cool weather. Partial shade, especially afternoon shade, may help extend useful leaf production when temperatures rise.",
 
-        severity:
-          "high",
+        soilTemperatureMinimumF:
+          40,
 
-        affectedStages: [
-          "vegetative-growth",
-          "harvest"
-        ],
+        idealSoilTemperatureF:
+          "Approximately 55°F to 75°F supports reliable germination, establishment, and vigorous cool-season leaf growth. Germination may occur in cooler soil but is generally slower.",
 
-        mitigationOptions: [
-          "Inspect leaf undersides",
-          "Use strong water spray",
-          "Remove heavily infested leaves",
-          "Encourage beneficial insects"
-        ],
+        frostTolerance:
+          "Moderate to High after establishment, depending on cultivar, plant maturity, acclimation, wind exposure, freeze duration, soil moisture, and whether plants are protected.",
 
-        note:
-          "Aphids may cluster inside curled leaves and make harvesting difficult."
+        winterHardiness:
+          "Variety-dependent. Mature Kale is generally more cold-hardy than many Collard cultivars, but neither crop should be assigned one universal minimum survival temperature.",
+
+        heatTolerance:
+          "Low to Moderate overall. Collards commonly tolerate warm Southern conditions better than many Kale cultivars, but both crops generally produce the best-quality leaves in cool weather.",
+
+        droughtTolerance:
+          "Low to Moderate. Established plants may survive short dry periods, but moisture stress reduces leaf tenderness, regrowth, yield, and eating quality.",
+
+        salinityTolerance:
+          "Low to Moderate; dependable poultry-garden production should not be assumed in strongly saline soil or irrigation water.",
+
+        waterloggingTolerance:
+          "Low",
+
+        soilPHMinimum:
+          6.0,
+
+        soilPHMaximum:
+          7.5,
+
+        waterNeeds:
+          "Moderate. Maintain reasonably even soil moisture throughout establishment, rapid leaf growth, and repeated harvest regrowth while avoiding saturated soil and prolonged standing water.",
+
+        directSow:
+          true,
+
+        transplantRecommended:
+          true,
+
+        springVarietiesAvailable:
+          true,
+
+        fallVarietiesAvailable:
+          true,
+
+        overwinteringVarietiesAvailable:
+          true,
+
+        heatTolerantCollardVarietiesAvailable:
+          true,
+
+        coldHardyKaleVarietiesAvailable:
+          true,
+
+        babyLeafProductionSuitable:
+          true,
+
+        maturePlantProductionSuitable:
+          true,
+
+        daysToFirstHarvestMinimum:
+          20,
+
+        daysToFirstHarvestMaximum:
+          45,
+
+        daysToMaturityMinimum:
+          50,
+
+        daysToMaturityMaximum:
+          85,
+
+        plantSpacingInches:
+          "Approximately 8 to 12 inches for smaller plants or frequent young-leaf harvest and approximately 12 to 24 inches for mature Kale or Collard plants, depending on cultivar, production system, desired leaf size, airflow, and harvest method.",
+
+        rowSpacingInches:
+          "Approximately 18 to 36 inches for mature garden production, with closer spacing possible for baby-leaf systems and wider spacing useful for large Collard plants, airflow, harvest access, and mechanical cultivation.",
+
+        plantingDepthInches:
+          "Approximately 1/4 to 1/2 inch",
+
+        successionPlanting:
+          true,
+
+        regrowthAfterHarvest:
+          "Strong when healthy outer leaves are removed without damaging the central growing point. Regrowth slows during extreme heat, severe cold, drought, nutrient deficiency, pest injury, or disease.",
+
+        centralGrowingPointMustRemain:
+          true,
+
+        boltingPossible:
+          true,
+
+        insectPollinatedForSeed:
+          true,
+
+        crossPollinationConcernForSeedSaving:
+          true,
+
+        directFacts: {
+          coolSeasonBiennial:
+            true,
+
+          commonlyGrownAsAnnual:
+            true,
+
+          springPlantingSuitable:
+            true,
+
+          fallPlantingSuitable:
+            true,
+
+          mildWinterProductionSuitable:
+            true,
+
+          indoorStartingUseful:
+            true,
+
+          directSeedingUseful:
+            true,
+
+          transplantingUseful:
+            true,
+
+          repeatedOuterLeafHarvestSuitable:
+            true,
+
+          babyLeafHarvestPossible:
+            true,
+
+          wholePlantHarvestPossible:
+            true,
+
+          lightFrostTolerated:
+            true,
+
+          lightFrostMayImproveFlavor:
+            true,
+
+          prolongedSevereFreezeCanDamagePlants:
+            true,
+
+          summerHeatReducesLeafQuality:
+            true,
+
+          collardsOftenMoreHeatTolerantThanKale:
+            true,
+
+          matureKaleOftenMoreColdHardyThanCollards:
+            true,
+
+          wellDrainedSoilRequired:
+            true,
+
+          highNitrogenLeafCrop:
+            true,
+
+          insectPollinationRequiredForLeafProduction:
+            false,
+
+          insectPollinationRequiredForSeedProduction:
+            true,
+
+          brassicaCrossPollinationPossible:
+            true,
+
+          notes: [
+            "Kale and Collards are biennial Brassica crops but are usually harvested for leaves during the first growing season.",
+            "The combined record represents multiple Kale types and Collard cultivars with meaningful differences in plant size, cold hardiness, heat tolerance, maturity, leaf texture, and repeated-harvest performance.",
+            "Cool growing conditions generally support the best leaf tenderness, color, flavor, and steady regrowth.",
+            "Light frost may improve eating quality, but severe or repeated freezing can injure leaves, crowns, or roots.",
+            "Cold tolerance depends heavily on cultivar, acclimation, plant maturity, wind protection, snow cover, drainage, and freeze duration.",
+            "Young seedlings and newly transplanted plants may be less cold-tolerant than established plants.",
+            "High heat can slow growth, increase toughness, increase bitterness, accelerate water demand, and increase pest pressure.",
+            "Collards are generally better adapted than many Kale cultivars to warm Southern growing conditions, but they remain primarily cool-season vegetables.",
+            "Direct seeding works well when soil moisture, temperature, pests, and weeds are manageable.",
+            "Transplants are useful for obtaining an earlier spring harvest, avoiding difficult summer germination, and establishing a fall crop before cold weather.",
+            "Seedlings started indoors require strong light, appropriate temperatures, airflow, and gradual hardening before transplanting.",
+            "Repeated leaf harvest depends on preserving the central growing point.",
+            "Removing too many leaves at once can slow regrowth and weaken the plant.",
+            "Older leaves and stems generally become tougher and more fibrous.",
+            "Baby-leaf production, mature Kale production, and mature Collard production should not be assigned identical spacing or yield assumptions.",
+            "Adequate nitrogen supports leaf production, but fertility should be guided by soil testing rather than repeated unsupported fertilizer applications.",
+            "Excess nitrogen can produce soft growth, increase some pest problems, contribute to nutrient imbalance, and increase nitrate accumulation under certain conditions.",
+            "Kale and Collards require insect pollination only when they are allowed to flower and produce seed.",
+            "Seed saving is more complicated than ordinary leaf production because Brassica oleracea crop groups may cross with compatible flowering plants.",
+            "Cultivar-specific maturity information should take priority over the generalized harvest ranges stored in this combined record."
+          ]
+        }
       },
 
-      {
-        id:
-          "deer-rabbit-browsing",
+      regionalPlanting: {
+        coldNorth: {
+          plantingWindow:
+            "Start transplants indoors approximately 4 to 8 weeks before the expected final spring frost or direct sow outdoors once soil is workable and severe weather has eased. Transplant hardened plants several weeks before the final frost when local conditions permit. Sow another crop in early to midsummer for autumn harvest and possible protected early-winter use.",
 
-        severity:
-          "very-high",
+          harvestWindow:
+            "Harvest young leaves from late spring into early summer. Resume the strongest harvest during autumn and continue until prolonged severe freezing, deep snow, or insufficient light stops usable growth.",
 
-        affectedStages: [
-          "seedling",
-          "vegetative-growth",
-          "harvest"
-        ],
+          varietyGuidance:
+            "Choose early-maturing, cold-tolerant Kale cultivars for short seasons. Use fast-maturing Collards only where the available spring or fall season is long enough. Select compact cultivars for containers, tunnels, and limited-space gardens."
+        },
 
-        mitigationOptions: [
-          "Fencing",
-          "Protected beds",
-          "Row cover",
-          "Forage-frame protection"
-        ],
+        midwestNortheast: {
+          plantingWindow:
+            "Begin transplants indoors in late winter for early-spring planting, or direct sow when soil becomes workable. Establish a second planting from midsummer through late summer so plants reach useful size before shortening days and hard freezes.",
 
-        note:
-          "Tender leafy Brassicas are highly attractive to deer and rabbits."
+          harvestWindow:
+            "Late spring through early summer and again from late summer through autumn. Cold-hardy Kale may remain harvestable into early winter with mulch, row cover, low tunnels, or favorable snow protection.",
+
+          varietyGuidance:
+            "Select varieties with resistance or tolerance to locally important diseases and strong performance under spring and fall temperature swings. Cold-hardy Kale is generally the stronger overwintering candidate."
+        },
+
+        upperSouth: {
+          plantingWindow:
+            "Start or transplant a spring crop during late winter to early spring. Establish the primary cool-season crop from late summer through early fall, timing planting so plants develop before short days and winter cold substantially slow growth.",
+
+          harvestWindow:
+            "Spring through early summer and again from autumn through much of winter. Established plants may continue producing during mild periods, especially with row cover or low-tunnel protection.",
+
+          varietyGuidance:
+            "Use heat-tolerant Collards for extended shoulder-season production and cold-tolerant Kale for winter harvest. Select varieties with regional resistance to black rot, Alternaria leaf spot, downy mildew, and other common Brassica diseases."
+        },
+
+        deepSouth: {
+          plantingWindow:
+            "Plant primarily from late summer through autumn for fall, winter, and spring harvest. A late-winter planting may provide a short spring crop before high heat. Peak-summer establishment is generally difficult without shade, irrigation, and intensive pest management.",
+
+          harvestWindow:
+            "Autumn through spring, with leaf quality usually strongest during cooler weather. Harvest may continue through winter except during unusual freezes or prolonged wet conditions.",
+
+          varietyGuidance:
+            "Prioritize heat-tolerant, disease-resistant Collard cultivars and locally adapted Kale varieties. Choose maturity dates that allow establishment before winter and harvest before severe late-spring heat."
+        },
+
+        southwest: {
+          plantingWindow:
+            "At low elevations, plant during late summer or autumn for winter production and again in late winter for spring harvest. At higher elevations, plant in spring and again in midsummer for autumn. Reliable irrigation is normally required.",
+
+          harvestWindow:
+            "Autumn through spring at low elevations and late spring through autumn at cooler high elevations, depending on frost, heat, irrigation, and protection.",
+
+          varietyGuidance:
+            "Choose heat-tolerant varieties for low elevations, cold-tolerant varieties for high elevations, and compact cultivars where shade structures or containers are used. Avoid strongly saline sites when possible."
+        },
+
+        pacificNorthwest: {
+          plantingWindow:
+            "Plant during spring for summer harvest and again from late spring through midsummer for autumn and winter production. In mild maritime locations, transplant hardy varieties in late summer for overwintering.",
+
+          harvestWindow:
+            "Late spring through winter in many maritime locations. Inland and high-elevation sites usually have a shorter harvest period because of colder winters and earlier freezes.",
+
+          varietyGuidance:
+            "Select cold-hardy Kale for winter production and cultivars with resistance to diseases favored by cool, wet conditions. Use well-drained beds, adequate spacing, and airflow in high-rainfall areas."
+        },
+
+        coastalWest: {
+          plantingWindow:
+            "Mild coastal climates may support planting during much of the year, but the most dependable establishment and leaf quality generally occur from late summer through spring. Avoid placing sensitive cultivars in the hottest interior-facing or reflected-heat sites.",
+
+          harvestWindow:
+            "Potentially much of the year where summers are mild, irrigation is available, and winter freezes are limited. Production may slow during either cold, low-light periods or warm dry weather.",
+
+          varietyGuidance:
+            "Choose varieties adapted to local fog, marine humidity, wind, summer temperature, and disease pressure. Compact Kale cultivars may be useful for intensive beds and containers."
+        },
+
+        highElevation: {
+          plantingWindow:
+            "Start transplants indoors to gain time, then transplant after the most severe winter conditions have passed. Direct sow once soil is workable and protected from drying wind. Establish a midsummer crop early enough to reach useful size before autumn frost.",
+
+          harvestWindow:
+            "Late spring through autumn, with cold-hardy Kale sometimes remaining usable after light frost. Severe freezes, wind exposure, and short daylight commonly end active growth.",
+
+          varietyGuidance:
+            "Use early-maturing, compact, cold-tolerant Kale cultivars. Collards may require a longer season than is available at some high-elevation sites."
+        },
+
+        regionalNotes: [
+          "Planting dates should be based on local frost patterns, summer heat, winter severity, day length, elevation, and cultivar maturity rather than a single national calendar.",
+          "Spring crops should be established early enough to mature before severe summer heat reduces leaf quality.",
+          "Fall crops must be planted early enough to establish substantial roots and leaf area before low temperature and short days slow growth.",
+          "Kale is generally more dependable than Collards in very cold regions.",
+          "Collards are generally more dependable than many Kale cultivars in warm Southern shoulder seasons.",
+          "Overwintering success depends on cultivar, plant maturity, drainage, wind exposure, snow cover, freeze duration, and protection.",
+          "Row cover can protect plants from both early insect pressure and moderate cold, but it must be removed or managed when heat buildup becomes excessive.",
+          "Low tunnels, cold frames, and unheated greenhouses can extend harvest but do not guarantee active winter growth under very short daylight.",
+          "Afternoon shade can help during warm weather, but excessive shade reduces growth and may prolong leaf wetness.",
+          "Hot and humid regions may experience substantial insect and disease pressure even when temperatures remain within the crop's growth range.",
+          "Cool, wet regions require drainage, spacing, rotation, and airflow to reduce disease risk.",
+          "Local extension planting calendars and cultivar trials should take priority over these broad regional categories.",
+          "A cultivar described as frost-tolerant should not automatically be considered suitable for overwintering in every climate.",
+          "Regional recommendations should eventually distinguish mature Collards, curly Kale, Lacinato Kale, Russian-type Kale, baby-leaf systems, and protected winter production."
+        ]
       },
 
-      {
-        id:
-          "summer-heat-quality-loss",
+            spaceAndYield: {
+        plantsPer10SquareFeet:
+          null,
 
-        severity:
-          "high",
+        plantsPer50SquareFeet:
+          null,
 
-        affectedStages: [
-          "vegetative-growth",
-          "harvest"
+        plantsPer100SquareFeet:
+          null,
+
+        expectedYieldPerPlantMinimumLbs:
+          null,
+
+        expectedYieldPerPlantMaximumLbs:
+          null,
+
+        expectedYieldPer100SquareFeetMinimumLbs:
+          null,
+
+        expectedYieldPer100SquareFeetMaximumLbs:
+          null,
+
+        edibleYieldPercent:
+          null,
+
+        dryMatterYieldPercent:
+          null,
+
+        harvestsPerPlantMinimum:
+          null,
+
+        harvestsPerPlantMaximum:
+          null,
+
+        storageLife:
+          "Fresh leaves commonly remain usable for several days under suitable refrigeration, but exact storage life depends on harvest condition, leaf maturity, temperature, humidity, sanitation, cultivar, and packaging. Blanched frozen leaves and fully dehydrated leaves may remain usable for much longer periods when processed and stored correctly.",
+
+        storageMethod:
+          "For fresh storage, harvest during cool conditions when practical, remove damaged or contaminated leaves, cool promptly, and refrigerate in a clean container or produce bag that limits moisture loss without trapping excessive free water. For longer preservation, use a separate freezing or dehydration pathway with appropriate preparation, sanitation, packaging, and storage monitoring.",
+
+        yieldNotes:
+          "Backyard yield values remain null because this combined record covers baby-leaf Kale, mature Kale, and full-sized Collard production systems with substantially different spacing, leaf size, harvest frequency, plant longevity, cultivar behavior, and seasonal performance. Dense baby-leaf plantings may contain many plants and provide frequent small harvests, while widely spaced mature plants can produce larger outer leaves repeatedly over a longer season. Fresh harvest weight also contains substantial water and should not be treated as equivalent to dry commercial-feed yield.",
+
+        densityNotes:
+          "Kale and Collards may be planted as dense baby-leaf stands, compact garden plants, widely spaced mature plants, containers, raised-bed rows, or forage-frame plantings. Plant count alone does not describe useful flock output because repeated-harvest frequency, leaf size, plant survival, heat stress, cold tolerance, and chicken access strongly affect recoverable foliage.",
+
+        harvestProducts: [
+          "fresh-mature-leaves",
+          "young-tender-leaves",
+          "baby-greens",
+          "outer-household-trimming-leaves",
+          "tender-leaf-stems",
+          "small-whole-plants",
+          "plain-cooked-leaves",
+          "blanched-frozen-leaves",
+          "dehydrated-leaf-flakes",
+          "dehydrated-leaf-powder",
+          "compostable-brassica-residue"
         ],
 
-        mitigationOptions: [
-          "Grow during spring and fall",
-          "Use afternoon shade",
-          "Mulch",
-          "Maintain even moisture",
-          "Choose heat-tolerant Collard varieties"
+        harvestByproducts: [
+          "Tough mature stems",
+          "Damaged outer leaves",
+          "Insect-damaged leaves",
+          "Roots",
+          "Bolted flowering stalks",
+          "Seed stalk residue",
+          "Non-edible diseased plant material"
         ],
 
-        note:
-          "High temperatures reduce growth and may make leaves tougher or more bitter."
+        byproductNotes: [
+          "Sound tender stems may be chopped and offered with leaves, but mature stems can become fibrous and poorly consumed.",
+          "Clean insect-damaged leaves may remain usable after insects and contamination are removed, provided the tissue is not rotten, moldy, chemically contaminated, or heavily covered with pest waste.",
+          "Diseased plant material should not automatically be fed or composted where doing so may spread persistent Brassica diseases.",
+          "Roots, woody stalks, and heavily fibrous residue have limited poultry-feed value.",
+          "Bolted or flowering plants may still produce some usable leaves, but texture, bitterness, and nutrient composition may differ from normal vegetative foliage.",
+          "Crop residue from unsafe pesticide treatment must not enter poultry feed."
+        ],
+
+        directFacts: {
+          multipleProductionSystems:
+            true,
+
+          babyLeafSystemPossible:
+            true,
+
+          maturePlantSystemPossible:
+            true,
+
+          repeatedOuterLeafHarvestPossible:
+            true,
+
+          wholePlantHarvestPossible:
+            true,
+
+          freshWeightHighInWater:
+            true,
+
+          dryFeedEquivalentFromFreshWeightUnsupported:
+            true,
+
+          dependableBackyardYieldPerSquareFootAvailable:
+            false,
+
+          individualPlantYieldVarietyDependent:
+            true,
+
+          harvestFrequencyWeatherDependent:
+            true,
+
+          notes: [
+            "Baby-leaf, mature Kale, and mature Collard systems should not share one plant-density value.",
+            "Repeated harvest can increase cumulative production from individual plants when the central growing point remains healthy.",
+            "Removing excessive foliage at one time can slow regrowth and reduce plant survival.",
+            "Heat, drought, nutrient deficiency, insects, disease, and direct chicken damage can greatly reduce recoverable leaf yield.",
+            "Cold weather may preserve mature leaves but short days and low temperatures can greatly slow new growth.",
+            "Forage-frame yield depends on how much leaf tissue grows through the protective surface without exposing crowns and roots to scratching.",
+            "Direct grazing often produces more trampling, scratching, manure contamination, and crop destruction than cut-and-carry harvesting.",
+            "Household vegetable harvest can create useful outer-leaf byproducts without requiring a separate poultry-only crop.",
+            "Fresh-weight yield must not be converted directly into purchased-feed displacement.",
+            "No guaranteed pounds-per-square-foot figure is stored."
+          ]
+        }
       },
 
-      {
-        id:
-          "fresh-leaf-spoilage",
+      economics: {
+        seedCostEstimate:
+          "Generally low when started from ordinary garden seed. Specialty organic, hybrid, heirloom, baby-leaf, ornamental, cold-hardy, heat-tolerant, forage, or transplant-grown varieties may cost more.",
 
-        severity:
-          "high",
+        equipmentCostEstimate:
+          "Low for direct-seeded fresh-leaf production. Costs may become moderate when using indoor seed-starting equipment, containers, raised beds, irrigation, mulch, fertility amendments, row cover, insect netting, low tunnels, cold frames, refrigeration, freezing equipment, dehydrators, or forage-frame materials.",
 
-        affectedStages: [
-          "postharvest",
-          "storage",
-          "feeding"
+        irrigationCostLevel:
+          "Low to Moderate",
+
+        laborLevel:
+          "Low to Moderate for ordinary fresh-leaf harvest; Moderate where repeated pest inspection, washing, succession planting, transplant production, protected cultivation, freezing, or dehydration are used",
+
+        potentialFeedSavings:
+          null,
+
+        economicAdvantages: [
+          "Seed is generally inexpensive",
+          "Plants can be started from seed",
+          "Useful harvest can begin relatively quickly",
+          "Outer leaves can be harvested repeatedly",
+          "Small plantings can provide useful enrichment for a small flock",
+          "The crop fits containers and raised beds",
+          "Household and poultry uses can share one planting",
+          "Sound vegetable trimmings can become flock supplements",
+          "Cool-season production can use garden space outside the main summer season",
+          "Mild-winter production may extend fresh-green availability",
+          "Fresh use requires little processing equipment",
+          "A forage frame can allow repeated access while protecting plant crowns",
+          "Crop residue may contribute compostable biomass when disease-free"
         ],
 
-        mitigationOptions: [
-          "Feed soon after harvest",
-          "Refrigerate briefly",
-          "Discard slimy or decayed leaves",
-          "Avoid sealing wet warm leaves"
+        economicLimitations: [
+          "Fresh leaves contain substantial water and little concentrated energy",
+          "The crop cannot replace complete poultry feed pound for pound",
+          "Insect control may require regular labor or protective materials",
+          "Deer, rabbits, and groundhogs may destroy unprotected plants",
+          "Hot weather can shorten the useful season",
+          "Cold weather can stop active regrowth",
+          "Frequent harvesting and washing add labor",
+          "Refrigerated leaves have limited storage life",
+          "Freezing requires electricity and freezer space",
+          "Dehydration requires substantial labor and energy",
+          "Direct chicken access can destroy a small planting",
+          "Fertility and irrigation may be needed for repeated leaf production",
+          "Commercial vegetable value may exceed poultry-feed value",
+          "Backyard feed savings cannot be calculated without dependable dry-matter yield and intake data"
         ],
 
-        note:
-          "Fresh leaves are perishable and are not suitable for long room-temperature storage."
+        likelyLowestCostUse:
+          "fresh-cut-and-carry-leaves",
+
+        likelyHighestLaborUse:
+          "dehydrated-leaf-powder",
+
+        potentialFeedSavingsNotes:
+          "Potential feed savings remain null because no dependable conversion exists between fresh Kale or Collard harvest weight and displacement of complete poultry feed. Any calculation would require verified usable leaf yield, dry matter, flock intake, waste, nutritional contribution, complete-feed displacement, production cost, labor, and storage loss.",
+
+        economicNotes:
+          "The strongest economic value of Kale and Collards may come from combining household food, repeated outer-leaf harvest, cool-season garden use, flock enrichment, and use of sound trimmings. Their high moisture and low energy density make them more valuable as supplemental greens than as major feed-replacement crops.",
+
+        directFacts: {
+          seedGenerallyLowCost:
+            true,
+
+          freshUseRequiresSpecializedEquipment:
+            false,
+
+          repeatedHarvestCanImproveValue:
+            true,
+
+          householdAndFlockSharedUse:
+            true,
+
+          purchasedFeedReplacementCanBeEstimated:
+            false,
+
+          electricityRequiredForFreshUse:
+            false,
+
+          electricityRequiredForFreezing:
+            true,
+
+          dehydrationCanIncreaseProcessingCost:
+            true,
+
+          notes: [
+            "Fresh cut-and-carry use is generally the lowest-cost pathway.",
+            "A forage frame adds material cost but may greatly improve crop survival where chickens would otherwise destroy the planting.",
+            "Starting from seed is usually less expensive than purchasing transplants.",
+            "Row cover may serve both insect-protection and season-extension roles.",
+            "Frequent pesticide treatment could eliminate the crop's suitability for poultry feeding unless the product label and withholding requirements clearly permit that use.",
+            "The household-food value of high-quality leaves may exceed their direct value as chicken feed.",
+            "Economic comparison should separate enrichment, household produce, garden-season extension, and actual feed displacement.",
+            "No dollar savings estimate is stored."
+          ]
+        }
       },
 
-      {
-        id:
-          "chemically-treated-seed",
+      scores: {
+        easeOfGrowing:
+          null,
 
-        severity:
-          "very-high",
+        yieldPerSquareFoot:
+          null,
 
-        affectedStages: [
-          "planting",
-          "feeding"
+        nutritionalUsefulness:
+          null,
+
+        proteinContribution:
+          null,
+
+        energyContribution:
+          null,
+
+        storageValue:
+          null,
+
+        smallSpaceSuitability:
+          null,
+
+        heatTolerance:
+          null,
+
+        coldTolerance:
+          null,
+
+        laborEfficiency:
+          null,
+
+        economicPotential:
+          null,
+
+        safetySimplicity:
+          null
+      },
+
+      rankings: {
+        practicalScore:
+          null,
+
+        nutritionalScore:
+          null,
+
+        bcpFeedScore:
+          null
+      },
+
+      evidence: {
+        evidenceStrength:
+          "Strong for general Kale and Collard cultivation, cool-season production, repeated leaf harvesting, home-garden use, fresh human-food composition, spacing, irrigation, fertility, and common pest management; moderate for general Brassica forage value and poultry enrichment; limited for poultry-specific intake, safe inclusion amounts, backyard dry-matter yield, complete-feed displacement, forage-frame output, and household-scale preservation economics",
+
+        sources: [
+          {
+            title:
+              "FoodData Central",
+
+            organization:
+              "United States Department of Agriculture, Agricultural Research Service",
+
+            url:
+              "https://fdc.nal.usda.gov/",
+
+            use:
+              "Fresh Kale and Collard moisture, protein, fat, fiber, calcium, phosphorus, vitamins, minerals, and carotenoid composition"
+          },
+
+          {
+            title:
+              "Growing Kale in Home Gardens",
+
+            organization:
+              "University of Minnesota Extension",
+
+            url:
+              "https://extension.umn.edu/vegetables/growing-kale",
+
+            use:
+              "Cool-season growth, soil preparation, planting, transplanting, spacing, irrigation, harvest, frost tolerance, and home-garden pest management"
+          },
+
+          {
+            title:
+              "Home Garden Collards",
+
+            organization:
+              "University of Georgia Cooperative Extension",
+
+            url:
+              "https://extension.uga.edu/publications/",
+
+            use:
+              "Southern Collard production, planting periods, variety selection, spacing, soil fertility, irrigation, harvest, pests, and diseases"
+          },
+
+          {
+            title:
+              "Kale and Collards in the Garden",
+
+            organization:
+              "Utah State University Extension",
+
+            url:
+              "https://extension.usu.edu/yardandgarden/",
+
+            use:
+              "Planting, soil preparation, fertility, irrigation, spacing, harvest, cool-weather production, and general garden management"
+          },
+
+          {
+            title:
+              "Kale",
+
+            organization:
+              "Clemson Cooperative Extension Home and Garden Information Center",
+
+            url:
+              "https://hgic.clemson.edu/",
+
+            use:
+              "Kale planting, culture, harvest, common pests, disease considerations, and Southern growing context"
+          },
+
+          {
+            title:
+              "Collards",
+
+            organization:
+              "Clemson Cooperative Extension Home and Garden Information Center",
+
+            url:
+              "https://hgic.clemson.edu/",
+
+            use:
+              "Collard production, spacing, seasonal planting, harvest, fertility, irrigation, pests, and diseases"
+          },
+
+          {
+            title:
+              "Cole Crops in the Home Garden",
+
+            organization:
+              "North Carolina State Extension",
+
+            url:
+              "https://content.ces.ncsu.edu/",
+
+            use:
+              "Brassica crop establishment, cool-season production, rotation, insect management, disease prevention, and regional garden practices"
+          },
+
+          {
+            title:
+              "Glucosinolates in Brassica Vegetables",
+
+            organization:
+              "United States Department of Agriculture Agricultural Research Service and peer-reviewed plant-science literature",
+
+            url:
+              "https://www.ars.usda.gov/",
+
+            use:
+              "Glucosinolate presence, variation among Brassica crops, cultivar differences, plant-development effects, and reasons not to treat unlimited Brassica intake as nutritionally neutral"
+          },
+
+          {
+            title:
+              "Brassica Crops and Glucosinolates in Animal Nutrition",
+
+            organization:
+              "Peer-reviewed animal-nutrition literature",
+
+            url:
+              null,
+
+            use:
+              "General dietary limitations associated with excessive glucosinolate-containing Brassica material and the importance of species, cultivar, processing, and total-ration context"
+          },
+
+          {
+            title:
+              "Preserving Food: Freezing Vegetables",
+
+            organization:
+              "National Center for Home Food Preservation and Cooperative Extension",
+
+            url:
+              "https://nchfp.uga.edu/",
+
+            use:
+              "Blanching, cooling, packaging, freezing, and storage principles for leafy vegetables"
+          },
+
+          {
+            title:
+              "Drying Fruits and Vegetables",
+
+            organization:
+              "National Center for Home Food Preservation and Cooperative Extension",
+
+            url:
+              "https://nchfp.uga.edu/",
+
+            use:
+              "Dehydration, moisture control, packaging, storage, and spoilage-prevention principles"
+          }
         ],
 
-        mitigationOptions: [
-          "Use untreated seed for crops intended for feed",
-          "Keep treated planting seed separated"
+        lastReviewed:
+          "2026-07-22",
+
+        researchNotes: [
+          "Separate Kale and Collards into individual crop records if meaningful planner differences emerge in heat tolerance, cold tolerance, spacing, plant size, yield, or poultry value.",
+          "Separate curly Kale, Lacinato Kale, Russian-type Kale, ornamental Kale, forage Kale, tree Kale, and Collards if cultivar groups produce materially different planner recommendations.",
+          "Do not assign one yield value to baby-leaf, mature Kale, and mature Collard systems.",
+          "Do not convert fresh harvest weight directly into dry poultry-feed value.",
+          "Determine fresh and dry-matter yield per plant and per square foot under backyard conditions.",
+          "Determine cumulative repeated-harvest yield rather than relying only on one-time plant harvest.",
+          "Find poultry-specific intake studies for fresh Kale, Collards, and mixed Brassica foliage.",
+          "Find poultry studies distinguishing occasional leafy supplementation from high dietary inclusion.",
+          "Research glucosinolate concentration by cultivar, temperature, maturity, fertility, and plant part.",
+          "Research oxalate concentration and practical poultry relevance.",
+          "Do not infer guaranteed egg-yolk pigmentation, health improvement, or disease prevention from human-food carotenoid data.",
+          "Do not treat leaf calcium as an adequate replacement for balanced layer nutrition.",
+          "Compare whole-leaf enrichment, chopped leaves, protected living forage, and controlled direct grazing.",
+          "Measure plant survival and usable leaf production under forage frames.",
+          "Measure trampling, scratching, and manure-contamination losses under direct flock access.",
+          "Research intake differences between tender young leaves, mature leaves, stems, cooked greens, frozen greens, and dehydrated material.",
+          "Determine whether fresh Kale and fresh Collards require separate poultry use paths.",
+          "Research refrigerated storage loss under household conditions.",
+          "Research freezer energy use and usable preserved yield.",
+          "Research dehydration energy, drying time, nutrient retention, dust risk, and storage stability.",
+          "Research safe particle size and practical mixing methods for dried leaf powder.",
+          "Assess cabbage worms, loopers, flea beetles, aphids, slugs, black rot, clubroot, Alternaria leaf spot, downy mildew, and regional disease pressure.",
+          "Assess deer, rabbit, groundhog, and chicken-exclusion costs.",
+          "Determine whether row cover can be economically justified through combined insect protection and season extension.",
+          "Research nitrate accumulation under excessive fertility, low light, drought, or other stress conditions.",
+          "Research the consequences of feeding frost-damaged but otherwise sound leaves separately from frozen-and-rotting foliage.",
+          "Do not recommend feeding material treated with pesticides unless the product labeling clearly supports the intended food or feed use and required intervals have been followed.",
+          "Determine practical garden area by flock size.",
+          "Determine labor per pound of usable fresh leaves.",
+          "Determine economic value separately for household food, enrichment, preserved greens, and actual feed displacement.",
+          "Leave unsupported planner comparison scores null until the standardized scoring process assigns them."
+        ]
+      },
+
+      plannerData: {
+
+                schemaVersion:
+          "2.0.0",
+
+        developmentStatus:
+          "ready",
+
+        identity: {
+          plannerName:
+            "Kale and Collard Greens",
+
+          shortLabel:
+            "Kale & Collards",
+
+          icon:
+            "🥬",
+
+          cropCategory:
+            "leafy-green",
+
+          primaryFeedCategory:
+            "cool-season-fresh-green",
+
+          guideUrl:
+            "growing-kale-collards-for-chickens.html"
+        },
+
+        lifecycle: {
+          growthCycle:
+            "biennial-commonly-grown-as-annual",
+
+          isAnnual:
+            false,
+
+          isBiennial:
+            true,
+
+          isPerennial:
+            false,
+
+          isTreeOrShrub:
+            false,
+
+          commonlyGrownAsAnnual:
+            true,
+
+          yearsToFirstUsefulHarvest:
+            0,
+
+          yearsToFullProduction:
+            0,
+
+          expectedUsefulLifeYears:
+            1,
+
+          regrowsAfterHarvest:
+            true,
+
+          permanentPlantingRequired:
+            false,
+
+          reversibleAfterOneSeason:
+            true,
+
+          directFacts: {
+            botanicalLifeCycle:
+              "biennial",
+
+            practicalGardenLifeCycle:
+              "annual-or-overwintered-biennial",
+
+            firstYearLeafProduction:
+              true,
+
+            secondYearFloweringPossible:
+              true,
+
+            repeatedLeafHarvestPossible:
+              true,
+
+            regrowthDependsOnIntactGrowingPoint:
+              true,
+
+            crownDamageCanEndProduction:
+              true,
+
+            winterSurvivalVarietyDependent:
+              true,
+
+            permanentWoodyStructure:
+              false,
+
+            undergroundPerennialStorageOrgans:
+              false,
+
+            notes: [
+              "Kale and Collards are botanically biennial but are usually grown for first-year leaf production.",
+              "Plants that survive winter may resume growth and produce flowering stalks during their second season.",
+              "The crop is not treated as a permanent perennial planting in the planner.",
+              "Repeated harvest is possible when mature outer leaves are removed and the central growing point remains intact.",
+              "Cutting through the crown or allowing chickens to destroy the growing point can end useful regrowth.",
+              "Overwintered plants may provide early spring leaves before bolting.",
+              "Flowering and seed production generally reduce the value of the plant as a tender-leaf crop.",
+              "Second-year survival depends on cultivar, cold exposure, drainage, wind, plant maturity, and winter protection.",
+              "The planting can normally be removed after one season without long-term site commitment.",
+              "The planner should not assign perennial-crop establishment or maintenance advantages to Kale and Collards."
+            ]
+          }
+        },
+
+        climate: {
+          suitableClimateTypes: [
+            "cold-short-summer",
+            "cool-moderate-summer",
+            "temperate",
+            "mild-winter",
+            "high-elevation",
+            "hot-humid-seasonal",
+            "hot-dry-seasonal"
+          ],
+
+          preferredClimateTypes: [
+            "cool-moderate-summer",
+            "temperate",
+            "mild-winter",
+            "high-elevation"
+          ],
+
+          challengingClimateTypes: [
+            "extreme-heat",
+            "hot-humid-summer",
+            "hot-dry-summer",
+            "severe-winter-without-protection",
+            "waterlogged-winter-soil"
+          ],
+
+          minimumFrostFreeDays:
+            null,
+
+          preferredFrostFreeDays:
+            null,
+
+          minimumSoilTemperatureF:
+            40,
+
+          preferredSoilTemperatureF:
+            60,
+
+          daysToMaturityMinimum:
+            50,
+
+          daysToMaturityMaximum:
+            85,
+
+          dryDownBufferDays:
+            null,
+
+          heatToleranceScore:
+            2,
+
+          droughtClimateToleranceScore:
+            2,
+
+          humidityToleranceScore:
+            3,
+
+          coolSummerToleranceScore:
+            5,
+
+          frostSensitivityScore:
+            1,
+
+          winterHardinessRequired:
+            false,
+
+          seasonExtensionBenefits: [
+            "Starting transplants indoors can provide an earlier spring harvest and help establish fall crops before cold weather.",
+            "Row cover can protect seedlings from light frost, wind, flea beetles, cabbage moths, and other early insect pressure.",
+            "Low tunnels can extend autumn harvest and protect established plants during moderate winter weather.",
+            "Cold frames and unheated greenhouses can improve winter survival and harvest reliability in cool climates.",
+            "Mulch can moderate soil temperature, conserve moisture, reduce weeds, and protect roots during temperature swings.",
+            "Afternoon shade can reduce heat stress in warm climates.",
+            "Shade cloth may help seedling establishment during hot late-summer planting periods.",
+            "Drip irrigation can support consistent leaf production during dry weather while keeping foliage comparatively dry.",
+            "Successive plantings can extend harvest across spring, fall, and mild winter seasons.",
+            "Selecting cold-hardy Kale or heat-tolerant Collard cultivars can extend production beyond the crop's ordinary comfort range."
+          ],
+
+          indoorSeedStartingBenefitScore:
+            4,
+
+          directFacts: {
+            seasonType:
+              "cool-season-leafy-brassica",
+
+            frostSensitive:
+              false,
+
+            commonlyDirectSeeded:
+              true,
+
+            commonlyTransplanted:
+              true,
+
+            plantBeforeLastFrostPossible:
+              true,
+
+            fallPlantingSuitable:
+              true,
+
+            mildWinterProductionSuitable:
+              true,
+
+            overwinteringPossible:
+              true,
+
+            overwinteringGuaranteed:
+              false,
+
+            coolWeatherGrowthPreferred:
+              true,
+
+            lightFrostTolerated:
+              true,
+
+            lightFrostMayImproveFlavor:
+              true,
+
+            severeFreezeDamagePossible:
+              true,
+
+            prolongedFrozenSoilConcern:
+              true,
+
+            summerHeatStressConcern:
+              true,
+
+            highHeatReducesLeafQuality:
+              true,
+
+            droughtReducesLeafQuality:
+              true,
+
+            collardsGenerallyMoreHeatTolerantThanManyKales:
+              true,
+
+            kaleGenerallyMoreColdHardyThanManyCollards:
+              true,
+
+            cultivarDifferencesImportant:
+              true,
+
+            maturityHighlyHarvestStageDependent:
+              true,
+
+            minimumUsefulHarvestCanPrecedeFullMaturity:
+              true,
+
+            insectPollinationRequiredForLeafHarvest:
+              false,
+
+            insectPollinationRequiredForSeedProduction:
+              true,
+
+            notes: [
+              "Kale and Collards perform best during cool weather with consistent moisture.",
+              "The crops can tolerate light frost and established plants may survive colder temperatures than young seedlings.",
+              "Cold tolerance cannot be represented by one universal minimum temperature because cultivar, acclimation, wind, drainage, plant size, and freeze duration strongly affect survival.",
+              "Kale is generally the stronger cold-climate crop, while Collards commonly tolerate Southern heat better than many Kale cultivars.",
+              "Neither crop should be considered truly heat-loving.",
+              "High temperatures can slow growth, reduce tenderness, increase bitterness, increase water demand, and intensify insect pressure.",
+              "Hot nights may further reduce quality and recovery from daytime heat.",
+              "Plants can remain alive during unfavorable weather while producing little usable new foliage.",
+              "Fall crops must establish sufficient root and leaf growth before short days and cold temperatures slow development.",
+              "Winter protection can preserve leaves and crowns, but very short daylight may prevent meaningful regrowth.",
+              "Spring crops should be planted early enough to produce before severe summer heat.",
+              "Late-summer establishment can be difficult because warm soil, rapid drying, and insect pressure reduce seedling survival.",
+              "Indoor transplants can improve establishment where direct-seeded fall crops would otherwise fail.",
+              "The generalized maturity range refers mainly to full-sized production and does not prevent earlier baby-leaf or outer-leaf harvest.",
+              "Baby greens may be harvested well before the listed maturity range.",
+              "Repeated mature-leaf harvest can continue beyond the listed maturity period when the growing point remains healthy.",
+              "Bolting becomes more likely after overwintering or exposure to the temperature and day-length conditions that induce flowering.",
+              "Humidity does not automatically prevent production, but warm humid conditions increase disease, insect, and leaf-wetness pressure.",
+              "Dry climates can produce high-quality cool-season leaves when irrigation and soil moisture are adequate.",
+              "The planner should evaluate the season in which the crop will be grown rather than rejecting an entire hot climate.",
+              "Regional cultivar selection is more important than assigning one national hardiness or heat-tolerance rule."
+            ]
+          }
+        },
+
+                site: {
+          sunlightRequirement:
+            "full-sun-preferred",
+
+          minimumDailySunHours:
+            6,
+
+          optimalDailySunHours:
+            "6 to 8+",
+
+          afternoonShadeHelpful:
+            true,
+
+          windExposureTolerance:
+            "moderate",
+
+          slopeTolerance:
+            "gentle-to-moderate",
+
+          raisedBedSuitable:
+            true,
+
+          containerSuitable:
+            true,
+
+          greenhouseSuitable:
+            true,
+
+          highTunnelSuitable:
+            true,
+
+          lowTunnelSuitable:
+            true,
+
+          forageFrameSuitable:
+            true,
+
+          directChickenAccessSuitable:
+            false,
+
+          protectedChickenAccessSuitable:
+            true,
+
+          notes: [
+            "Full sun generally produces the strongest leaf growth during cool weather.",
+            "Partial afternoon shade may improve production during warm spring and autumn afternoons and during hot Southern weather.",
+            "Raised beds improve drainage, soil warming, and harvest accessibility.",
+            "Containers perform well when adequate fertility and moisture are maintained.",
+            "Good air movement reduces prolonged leaf wetness and disease pressure.",
+            "Forage frames allow repeated leaf harvest while protecting crowns from scratching damage.",
+            "Direct unrestricted flock access usually destroys young plants before repeated harvest can occur.",
+            "Greenhouses, cold frames, and low tunnels can substantially extend cool-season production.",
+            "Poorly drained locations should be avoided whenever possible."
+          ],
+
+          directFacts: {
+            prefersFullSun:
+              true,
+
+            toleratesPartialShade:
+              true,
+
+            raisedBedsExcellent:
+              true,
+
+            containersExcellent:
+              true,
+
+            forageFrameRecommended:
+              true,
+
+            unrestrictedChickenAccessRecommended:
+              false,
+
+            repeatedHarvestProtectionRecommended:
+              true,
+
+            notes: [
+              "The planner should strongly favor protected production systems where repeated harvest is desired.",
+              "Direct grazing should receive lower planner scores because crop destruction commonly exceeds usable forage production."
+            ]
+          }
+        },
+
+        soil: {
+          preferredTextures: [
+            "loam",
+            "sandy-loam",
+            "silt-loam"
+          ],
+
+          acceptableTextures: [
+            "clay-loam"
+          ],
+
+          unsuitableTextures: [
+            "poorly-drained-heavy-clay",
+            "waterlogged-soils"
+          ],
+
+          preferredPHMinimum:
+            6.2,
+
+          preferredPHMaximum:
+            7.2,
+
+          drainageRequirement:
+            "well-drained",
+
+          fertilityRequirement:
+            "moderately-high",
+
+          organicMatterImportance:
+            "high",
+
+          nitrogenRequirement:
+            "high",
+
+          phosphorusRequirement:
+            "moderate",
+
+          potassiumRequirement:
+            "moderate",
+
+          compactionTolerance:
+            "low",
+
+          mulchRecommended:
+            true,
+
+          soilTestRecommended:
+            true,
+
+          notes: [
+            "Consistent fertility supports repeated leaf harvest.",
+            "Nitrogen is particularly important for vigorous leafy growth.",
+            "Organic matter improves moisture retention while maintaining soil structure.",
+            "Poor drainage greatly increases disease pressure.",
+            "Compacted soil limits root development and reduces productivity.",
+            "Soil-test recommendations should take precedence over generalized fertility guidance.",
+            "Over-fertilization can increase pest pressure and create overly lush growth."
+          ],
+
+          directFacts: {
+            wellDrainedSoilRequired:
+              true,
+
+            fertileSoilPreferred:
+              true,
+
+            organicMatterHelpful:
+              true,
+
+            heavyNitrogenUser:
+              true,
+
+            mulchBeneficial:
+              true,
+
+            soilTestingRecommended:
+              true,
+
+            notes: [
+              "Leaf production responds strongly to balanced fertility.",
+              "Healthy soil supports faster regrowth following repeated harvest."
+            ]
+          }
+        },
+
+        water: {
+          irrigationRequirement:
+            "moderate",
+
+          droughtTolerance:
+            "low-to-moderate",
+
+          standingWaterTolerance:
+            "low",
+
+          moistureConsistencyImportance:
+            "high",
+
+          dripIrrigationPreferred:
+            true,
+
+          overheadWateringAcceptable:
+            true,
+
+          mulchRecommended:
+            true,
+
+          weeklyWaterRequirement:
+            null,
+
+          notes: [
+            "Consistent soil moisture supports rapid leaf production.",
+            "Drought stress increases bitterness and reduces leaf tenderness.",
+            "Avoid prolonged saturated soil.",
+            "Drip irrigation helps reduce leaf wetness and disease development.",
+            "Mulch reduces evaporation and moderates soil temperature.",
+            "Young transplants require especially consistent moisture.",
+            "Repeated harvest increases the importance of maintaining steady growth."
+          ],
+
+          directFacts: {
+            requiresConsistentMoisture:
+              true,
+
+            droughtReducesYield:
+              true,
+
+            standingWaterDamaging:
+              true,
+
+            dripPreferred:
+              true,
+
+            mulchHelpful:
+              true,
+
+            irrigationOftenNeeded:
+              true,
+
+            notes: [
+              "Uniform moisture generally produces higher-quality leaves than alternating drought and excessive irrigation.",
+              "Water management is especially important during warm weather and repeated harvest cycles."
+            ]
+          }
+        },
+
+                space: {
+          minimumTrialAreaSqFt:
+            null,
+
+          minimumUsefulAreaSqFt:
+            null,
+
+          preferredProductionAreaSqFt:
+            null,
+
+          smallSpaceScore:
+            5,
+
+          mediumSpaceScore:
+            5,
+
+          largeSpaceScore:
+            4,
+
+          layoutScores: {
+            squareBlock:
+              5,
+
+            wideRectangle:
+              5,
+
+            longStrip:
+              5,
+
+            irregular:
+              5,
+
+            smallBeds:
+              5,
+
+            openField:
+              4
+          },
+
+          spaceTypeScores: {
+            inGround:
+              5,
+
+            raisedBed:
+              5,
+
+            container:
+              5,
+
+            fenceLine:
+              4,
+
+            buildingEdge:
+              5,
+
+            unusedLawn:
+              3,
+
+            openField:
+              4,
+
+            orchard:
+              3,
+
+            forageFrame:
+              5,
+
+            rotationalPaddock:
+              3,
+
+            greenhouse:
+              5,
+
+            hedgerow:
+              2
+          },
+
+          minimumContainerGallons:
+            null,
+
+          containerUseLimitation:
+            "Containers can support useful repeated leaf harvests, but small containers dry rapidly, hold fewer plants, require more frequent fertility management, and may become root-bound before full-sized Collards reach their potential.",
+
+          minimumRaisedBedDepthIn:
+            8,
+
+          vineSpreadRequired:
+            false,
+
+          verticalSupportBenefitScore:
+            1,
+
+          blockPlantingRequired:
+            false,
+
+          minimumBlockRows:
+            null,
+
+          continuousStandPreferred:
+            false,
+
+          heightCategory:
+            "low-to-medium",
+
+          matureWidthCategory:
+            "moderate",
+
+          overflowSpaceBenefitScore:
+            1,
+
+          directFacts: {
+            layoutFlexible:
+              true,
+
+            blockPollinationRequired:
+              false,
+
+            containerSuitable:
+              true,
+
+            raisedBedSuitable:
+              true,
+
+            forageFrameSuitable:
+              true,
+
+            repeatedHarvestSuitable:
+              true,
+
+            babyLeafDensePlantingPossible:
+              true,
+
+            maturePlantWideSpacingUseful:
+              true,
+
+            approximatePlantSpacingInMinimum:
+              8,
+
+            approximatePlantSpacingInMaximum:
+              24,
+
+            approximateRowSpacingInMinimum:
+              18,
+
+            approximateRowSpacingInMaximum:
+              36,
+
+            permanentRootSpreadConcern:
+              false,
+
+            trellisRequired:
+              false,
+
+            notes: [
+              "Kale and Collards are among the most spatially flexible crops in the feed-crop planner.",
+              "They can be grown in conventional garden rows, raised beds, containers, narrow strips, irregular spaces, greenhouse beds, cold frames, low tunnels, or protected forage frames.",
+              "Baby-leaf systems may use much closer spacing than mature-plant systems.",
+              "Mature Kale and Collard plants require more space for full leaf development, airflow, harvest access, and repeated regrowth.",
+              "The combined record should not convert the generalized spacing range into a single plants-per-square-foot value.",
+              "Compact Kale cultivars are particularly useful in containers and small beds.",
+              "Large Collard cultivars may require substantially more width than compact Kale.",
+              "A small planting can provide useful enrichment for a small flock even when it cannot materially replace purchased feed.",
+              "Large flocks may consume fresh leaves faster than a modest planting can regrow.",
+              "Forage frames allow leaves to grow through protective wire while limiting scratching damage to roots and crowns.",
+              "The forage-frame opening size must allow safe pecking without allowing birds to force their heads or bodies into hazardous gaps.",
+              "Containers placed inside an unrestricted run may still be overturned, compacted, stripped, or used as dust-bathing sites.",
+              "Plantings beside buildings can work well when light, drainage, roof runoff, and reflected heat remain suitable.",
+              "Orchard-edge production may be useful where partial shade is not excessive and tree-root competition remains manageable.",
+              "Unused lawn must be converted into a prepared seedbed because seedlings establish poorly in intact competitive sod.",
+              "Open-field production is possible but may create more harvest, irrigation, wildlife-protection, and pest-management labor than a smaller protected bed.",
+              "The crop does not require block pollination for leaf production.",
+              "Trellises and vertical supports provide little ordinary benefit.",
+              "Minimum trial area and useful production area remain null because flock size, cultivar, harvest system, season length, and regrowth rate greatly affect usefulness."
+            ]
+          }
+        },
+
+        flock: {
+          suitableForAdultChickens:
+            true,
+
+          suitableForYoungChicks:
+            false,
+
+          flockPurposeScores: {
+            eggs:
+              4,
+
+            meat:
+              3,
+
+            breeding:
+              3,
+
+            petsEnrichment:
+              5,
+
+            homestead:
+              5,
+
+            mixed:
+              5
+          },
+
+          feedingMethodScores: {
+            livingGrazing:
+              3,
+
+            cutAndCarry:
+              5,
+
+            wholeProduce:
+              5,
+
+            wholeSeedHeads:
+              1,
+
+            wholeGrain:
+              1,
+
+            processedGrain:
+              1,
+
+            heatTreated:
+              3,
+
+            driedForage:
+              3,
+
+            winterStorage:
+              3
+          },
+
+          directRunSuitabilityScore:
+            2,
+
+          forageFrameSuitabilityScore:
+            5,
+
+          rotationalPaddockSuitabilityScore:
+            3,
+
+          confinedFlockValueScore:
+            5,
+
+          pasturedFlockValueScore:
+            3,
+
+          treatDilutionRiskScore:
+            3,
+
+          highEnergySupplement:
+            false,
+
+          highFiberSupplement:
+            true,
+
+          concentratedFatSource:
+            false,
+
+          primaryFlockUses: [
+            "Fresh cut-and-carry leaves",
+            "Whole-leaf pecking enrichment",
+            "Chopped fresh greens",
+            "Protected living forage",
+            "Brief controlled grazing",
+            "Seasonal cool-weather supplementation",
+            "Household-and-flock shared harvest",
+            "Sound untreated garden trimmings",
+            "Plain cooked household-surplus leaves",
+            "Blanched frozen supplemental greens",
+            "Measured dehydrated leaf material"
+          ],
+
+          unsuitablePrimaryUses: [
+            "Complete-ration replacement",
+            "High-energy supplementation",
+            "Concentrated protein supplementation",
+            "Primary calcium source",
+            "Primary young-chick feed",
+            "Unrestricted access to a small permanent planting",
+            "Long-term room-temperature storage of fresh leaves",
+            "Unlimited dried-leaf feeding",
+            "Medicinal or deworming treatment"
+          ],
+
+          directFacts: {
+            edibleFeedParts: [
+              "Fresh mature leaves",
+              "Young tender leaves",
+              "Baby greens",
+              "Tender leaf stems",
+              "Small whole plants",
+              "Plain cooked leaves",
+              "Blanched frozen leaves",
+              "Fully dehydrated leaves"
+            ],
+
+            preferredBirdStage:
+              "Established adult chickens",
+
+            cropSurvivalWithDirectChickenAccess:
+              "poor-under-continuous-unrestricted-access",
+
+            directAccessTiming:
+              "Allow only brief controlled access to well-established plants or use protected forage frames, rotational paddocks, or cut-and-carry harvesting.",
+
+            nutritionalOrientation: [
+              "fresh-green",
+              "moisture-rich-supplement",
+              "carotenoid-containing-foliage",
+              "fiber",
+              "household-food",
+              "enrichment"
+            ],
+
+            balancedFeedReplacement:
+              false,
+
+            completeProteinSource:
+              false,
+
+            concentratedEnergySource:
+              false,
+
+            concentratedFatSource:
+              false,
+
+            layingHenCalciumSource:
+              false,
+
+            unrestrictedSupplementationSupported:
+              false,
+
+            forageFrameProtectionRecommended:
+              true,
+
+            cutAndCarryPreferred:
+              true,
+
+            directRunEstablishmentLikely:
+              false,
+
+            notes: [
+              "Kale and Collard leaves are best treated as fresh supplemental greens and enrichment.",
+              "Confined flocks may receive greater practical value because they otherwise have little access to living vegetation.",
+              "Pastured flocks may still consume the leaves, but the crop adds less unique value where diverse forage is already available.",
+              "Whole leaves can be hung at a safe height to encourage pecking and reduce contact with litter or manure.",
+              "Chopped leaves may improve access for some birds but can spoil or become contaminated quickly when scattered on wet ground.",
+              "A clean feeder or hanging system is preferable when soil or manure contamination is likely.",
+              "Forage frames can protect crowns and roots while permitting limited leaf removal through the wire surface.",
+              "Plants exposed continuously inside a run are likely to be stripped, scratched out, trampled, compacted, or contaminated.",
+              "Rotational paddock access may be workable where birds are removed before crowns and roots are destroyed.",
+              "Fresh leaves contain substantial water and little concentrated energy.",
+              "A large fresh harvest should not be interpreted as an equivalent amount of dry poultry feed.",
+              "Kale and Collards do not provide a complete amino-acid, energy, vitamin, mineral, or calcium balance.",
+              "The complete ration should remain the flock's primary food.",
+              "Heavy supplementation can reduce complete-feed intake even when the supplemental material is low in calories.",
+              "Glucosinolates and other Brassica compounds support moderate supplemental use rather than dietary dominance.",
+              "Dried leaves are more concentrated by weight than fresh leaves and require more deliberate measurement.",
+              "Plain cooked greens can be used only when they contain no unsuitable household ingredients.",
+              "Frozen greens must be thawed and inspected for spoilage before feeding.",
+              "Young chicks should remain on an age-appropriate complete starter ration rather than using Kale or Collards as a primary feed.",
+              "The record does not establish a universal feeding portion or inclusion percentage.",
+              "The crop is not assigned medicinal, parasite-control, disease-prevention, or guaranteed egg-yolk-coloring claims."
+            ]
+          }
+        },
+
+        labor: {
+          beginnerFriendlinessScore:
+            5,
+
+          plantingEaseScore:
+            4,
+
+          establishmentEaseScore:
+            4,
+
+          routineMaintenanceEaseScore:
+            4,
+
+          weedControlEaseScore:
+            4,
+
+          wildlifeProtectionEaseScore:
+            3,
+
+          harvestEaseScore:
+            5,
+
+          freshLeafProcessingEaseScore:
+            5,
+
+          refrigeratedStorageEaseScore:
+            4,
+
+          cookingEaseScore:
+            4,
+
+          blanchingAndFreezingEaseScore:
+            3,
+
+          dryingEaseScore:
+            2,
+
+          grindingDriedLeavesEaseScore:
+            3,
+
+          storageMonitoringEaseScore:
+            4,
+
+          perennialMaintenanceEaseScore:
+            5,
+
+          physicalAccessibilityScore:
+            5,
+
+          heavyLiftingRiskScore:
+            1,
+
+          weeklyLaborLevel:
+            "low-to-moderate",
+
+          peakWorkloadLevel:
+            "moderate",
+
+          harvestFrequencyCategory:
+            "several-weekly",
+
+          requiredPlantingTasks: [
+            "prepare-seedbed",
+            "direct-sow-or-transplant",
+            "water-establishment"
+          ],
+
+          optionalPlantingTasks: [
+            "start-indoors",
+            "harden-transplants",
+            "install-irrigation",
+            "apply-mulch",
+            "install-row-cover",
+            "install-low-tunnel",
+            "build-forage-frame",
+            "prepare-containers"
+          ],
+
+          requiredMaintenanceTasks: [
+            "monitor-soil-moisture",
+            "control-weeds",
+            "inspect-for-insects",
+            "inspect-for-disease",
+            "protect-growing-point"
+          ],
+
+          optionalMaintenanceTasks: [
+            "side-dress-fertility",
+            "maintain-mulch",
+            "manage-row-cover",
+            "protect-from-wildlife",
+            "rotate-poultry-access",
+            "remove-damaged-leaves",
+            "manage-season-extension"
+          ],
+
+          requiredHarvestTasks: [
+            "cut-or-pick-leaves",
+            "inspect-harvest",
+            "remove-contaminated-material"
+          ],
+
+          usePathProcessingTasks: {
+            freshWholeLeaves: [
+              "cut-leaves",
+              "inspect-leaves",
+              "remove-visible-soil-and-contamination",
+              "hang-or-place-in-clean-feeder"
+            ],
+
+            choppedFreshLeaves: [
+              "cut-leaves",
+              "inspect-leaves",
+              "wash-when-needed",
+              "drain",
+              "tear-or-chop",
+              "feed-promptly"
+            ],
+
+            protectedLivingForage: [
+              "establish-plants",
+              "install-forage-frame",
+              "inspect-wire-and-openings",
+              "protect-crowns",
+              "manage-regrowth"
+            ],
+
+            controlledDirectGrazing: [
+              "establish-dense-planting",
+              "inspect-area",
+              "limit-access-time",
+              "remove-flock-before-crown-damage",
+              "allow-regrowth"
+            ],
+
+            refrigeratedLeaves: [
+              "cut-leaves",
+              "inspect-leaves",
+              "cool-promptly",
+              "refrigerate",
+              "monitor-for-spoilage"
+            ],
+
+            plainCookedLeaves: [
+              "inspect-leaves",
+              "wash",
+              "cook-without-unsuitable-ingredients",
+              "cool-completely",
+              "feed-promptly",
+              "discard-leftovers"
+            ],
+
+            blanchedFrozenLeaves: [
+              "inspect-leaves",
+              "wash",
+              "trim",
+              "blanch",
+              "cool-rapidly",
+              "drain",
+              "package",
+              "freeze",
+              "thaw-before-feeding",
+              "inspect-after-thawing"
+            ],
+
+            dehydratedLeafFlakes: [
+              "inspect-leaves",
+              "wash",
+              "drain",
+              "remove-thick-stems-when-needed",
+              "cut-or-tear",
+              "dehydrate-completely",
+              "condition-dried-material",
+              "package-airtight",
+              "monitor-storage"
+            ],
+
+            dehydratedLeafPowder: [
+              "inspect-leaves",
+              "wash",
+              "drain",
+              "dehydrate-completely",
+              "grind",
+              "control-dust",
+              "measure",
+              "package-airtight",
+              "monitor-storage"
+            ]
+          },
+
+          requiredStorageTasks: [],
+
+          specializedEquipmentRequired: [],
+
+          specializedEquipmentHelpful: [
+            "seed-starting-trays",
+            "grow-lights",
+            "hand-pruners",
+            "harvest-knife",
+            "row-cover",
+            "insect-netting",
+            "low-tunnel",
+            "forage-frame",
+            "drip-irrigation",
+            "refrigerator",
+            "freezer",
+            "blanching-pot",
+            "dehydrator",
+            "airtight-storage-containers",
+            "small-food-grinder"
+          ],
+
+          suitableForLowTimeUsersScore:
+            4,
+
+          suitableForSoloGrowersScore:
+            5,
+
+          directFacts: {
+            seedSize:
+              "small",
+
+            directSeedingSuitable:
+              true,
+
+            transplantingSuitable:
+              true,
+
+            successionPlantingUseful:
+              true,
+
+            specializedHarvestEquipmentRequiredForBackyardScale:
+              false,
+
+            freshUseRequiresSpecializedProcessingEquipment:
+              false,
+
+            freezingRequiresElectricity:
+              true,
+
+            dehydrationUsuallyRequiresElectricity:
+              true,
+
+            repeatedHarvestIncreasesLabor:
+              true,
+
+            pestInspectionImportant:
+              true,
+
+            majorLaborBottlenecks: [
+              "Starting and hardening transplants for early or fall production",
+              "Protecting seedlings from flea beetles",
+              "Monitoring cabbage worms and loopers",
+              "Inspecting curled leaves for aphids",
+              "Protecting plants from slugs and snails",
+              "Maintaining moisture during warm weather",
+              "Harvesting outer leaves repeatedly",
+              "Washing soil, insects, and contamination from leaves",
+              "Protecting plants from deer, rabbits, groundhogs, and chickens",
+              "Managing row covers and tunnels",
+              "Blanching and freezing surplus leaves",
+              "Dehydrating leaves completely",
+              "Grinding and measuring dried leaf material"
+            ],
+
+            notes: [
+              "Kale and Collards are generally beginner-friendly and require no specialized harvest machinery.",
+              "Direct seeding is simple, but small seedlings can be vulnerable to drying, weeds, flea beetles, slugs, and crusted soil.",
+              "Transplants often improve establishment reliability and shorten the time to useful harvest.",
+              "Regular pest inspection may become the crop's most important recurring labor requirement.",
+              "Cabbage worms and loopers can hide on leaf undersides and contaminate harvested leaves with waste.",
+              "Aphids may cluster inside curled leaves and require careful inspection.",
+              "Repeated outer-leaf harvest is simple but creates more cumulative labor than a single whole-plant harvest.",
+              "Harvesting during cool weather and cooling leaves promptly can improve fresh-storage quality.",
+              "Whole-leaf feeding requires less processing than chopping, cooking, freezing, or drying.",
+              "Protected living forage requires infrastructure and periodic inspection but can reduce repeated cutting and carrying.",
+              "Direct grazing may appear labor-efficient but can result in rapid crop destruction and low recoverable value.",
+              "Fresh use has the lowest processing burden.",
+              "Refrigeration adds little processing but provides only short storage.",
+              "Blanching and freezing require several processing steps, freezer space, electricity, packaging, thawing, and spoilage inspection.",
+              "Dehydration is more labor-intensive and requires complete moisture removal to prevent mold.",
+              "Dried leaf powder creates dust and requires more precise measurement than whole fresh leaves.",
+              "Small-scale harvest involves little heavy lifting and is accessible to most solo growers.",
+              "Weekly labor varies with planting size, pest pressure, irrigation method, protection system, harvest frequency, and preservation method."
+            ]
+          }
+        },
+
+                cost: {
+          seedCostLevel:
+            "low",
+
+          establishmentCostLevel:
+            "low-moderate",
+
+          annualInputCostLevel:
+            "low-moderate",
+
+          irrigationCostLevel:
+            "low-moderate",
+
+          fertilityCostLevel:
+            "moderate",
+
+          pestManagementCostLevel:
+            "moderate",
+
+          harvestEquipmentCostLevel:
+            "low",
+
+          processingEquipmentCostLevel:
+            "low-to-moderate",
+
+          storageEquipmentCostLevel:
+            "low-to-moderate",
+
+          preservationEnergyCostLevel:
+            "low-to-moderate",
+
+          totalStartupCostScore:
+            2,
+
+          annualOperatingCostScore:
+            2,
+
+          seedCostScore:
+            1,
+
+          irrigationCostScore:
+            2,
+
+          fertilityCostScore:
+            3,
+
+          pestManagementCostScore:
+            3,
+
+          harvestEquipmentCostScore:
+            1,
+
+          processingEquipmentCostScore:
+            2,
+
+          storageEquipmentCostScore:
+            2,
+
+          preservationEnergyCostScore:
+            2,
+
+          reusableInfrastructureBenefitScore:
+            5,
+
+          householdFoodValueScore:
+            5,
+
+          poultryFeedValueScore:
+            4,
+
+          ornamentalValueScore:
+            3,
+
+          pollinatorValueScore:
+            2,
+
+          seedSavingValueScore:
+            3,
+
+          marketValuePotentialScore:
+            4,
+
+          feedCostReductionPotentialScore:
+            2,
+
+          costEfficiencyScore:
+            4,
+
+          paybackSpeedScore:
+            5,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          estimatedFeedSavings:
+            null,
+
+          estimatedAnnualValue:
+            null,
+
+          requiredPurchases: [
+            "Untreated Kale or Collard seed or healthy transplants",
+            "Basic soil preparation materials where existing soil is unsuitable"
+          ],
+
+          optionalPurchases: [
+            "Seed-starting trays",
+            "Seed-starting medium",
+            "Grow lights",
+            "Compost",
+            "Balanced fertilizer selected from soil-test guidance",
+            "Mulch",
+            "Drip-irrigation materials",
+            "Containers or raised-bed materials",
+            "Row cover",
+            "Insect netting",
+            "Low-tunnel materials",
+            "Forage-frame materials",
+            "Wildlife fencing",
+            "Refrigerator storage containers",
+            "Freezer-safe packaging",
+            "Dehydrator",
+            "Airtight dried-leaf storage containers",
+            "Small food grinder"
+          ],
+
+          directFacts: {
+            recurringSeedPurchaseRequired:
+              false,
+
+            seedSavingPossible:
+              true,
+
+            transplantPurchaseRequired:
+              false,
+
+            directSeedingCanReduceCost:
+              true,
+
+            sharedHouseholdUseImprovesValue:
+              true,
+
+            repeatedHarvestImprovesPotentialValue:
+              true,
+
+            freshUseHasLowestProcessingCost:
+              true,
+
+            protectedLivingForageRequiresInfrastructure:
+              true,
+
+            directFeedSavingsQuantified:
+              false,
+
+            primaryEconomicValue:
+              "shared-household-food-repeated-fresh-greens-and-flock-enrichment",
+
+            notes: [
+              "Ordinary Kale and Collard seed is generally inexpensive relative to the number of plants produced.",
+              "Starting plants from seed normally costs less than purchasing individual transplants.",
+              "Transplants may still provide economic value by shortening the time to harvest and improving establishment reliability.",
+              "Household consumption of high-quality leaves may provide greater economic value than feeding those same leaves to chickens.",
+              "Outer leaves, surplus leaves, and sound trimmings can provide poultry value without sacrificing the main household crop.",
+              "Repeated outer-leaf harvest can improve cumulative value from each established plant.",
+              "Fresh cut-and-carry use requires almost no specialized processing equipment.",
+              "A forage frame adds initial cost but can protect plants from repeated flock destruction.",
+              "Row cover may provide combined value through insect exclusion and season extension.",
+              "Frequent pest pressure can increase the cost of labor, replacement plants, protective covers, or approved control measures.",
+              "Freezing and dehydration increase storage duration but also add equipment, packaging, energy, and labor costs.",
+              "No dependable annual dollar value or complete-feed savings estimate is stored.",
+              "Feed-cost reduction should receive a modest score because the crop is high in water and low in concentrated energy.",
+              "The crop's strongest value is the combination of household produce, cool-season garden productivity, enrichment, and supplemental greens."
+            ]
+          }
+        },
+
+        goals: {
+          proteinOrientedScore:
+            2,
+
+          highEnergyScore:
+            1,
+
+          energyProductionScore:
+            1,
+
+          feedReductionScore:
+            2,
+
+          freshGreensScore:
+            5,
+
+          livingForageScore:
+            5,
+
+          winterStorageScore:
+            3,
+
+          enrichmentScore:
+            5,
+
+          resilienceScore:
+            4,
+
+          soilImprovementScore:
+            2,
+
+          nitrogenFixationScore:
+            0,
+
+          erosionControlScore:
+            2,
+
+          weedSuppressionScore:
+            3,
+
+          pollinatorSupportScore:
+            2,
+
+          householdFoodScore:
+            5,
+
+          selfRelianceScore:
+            4,
+
+          seedSavingScore:
+            3,
+
+          privacyScreeningScore:
+            1,
+
+          visualAppealScore:
+            4,
+
+          edibleLandscapeScore:
+            5,
+
+          containerProductionScore:
+            5,
+
+          smallSpaceProductionScore:
+            5,
+
+          repeatedHarvestScore:
+            5,
+
+          coolSeasonProductionScore:
+            5,
+
+          mildWinterProductionScore:
+            5,
+
+          summerProductionScore:
+            2,
+
+          lowProcessingScore:
+            5,
+
+          longTermStorageScore:
+            3,
+
+          livestockIntegrationScore:
+            4,
+
+          compostBiomassScore:
+            3,
+
+          primaryGoals: [
+            "fresh-greens",
+            "enrichment",
+            "shared-household-food",
+            "living-forage",
+            "repeated-harvest",
+            "cool-season-production",
+            "small-space-production",
+            "container-production",
+            "self-reliance"
+          ],
+
+          secondaryGoals: [
+            "mild-winter-production",
+            "season-extension",
+            "edible-landscape",
+            "garden-trimming-use",
+            "frozen-green-storage",
+            "dehydrated-green-storage",
+            "compost-biomass",
+            "seed-saving"
+          ],
+
+          poorFitGoals: [
+            "high-energy",
+            "major-feed-replacement",
+            "concentrated-protein-production",
+            "primary-layer-calcium-source",
+            "privacy-screening",
+            "summer-heat-production",
+            "dry-grain-storage",
+            "oilseed-production",
+            "nitrogen-fixation"
+          ],
+
+          directFacts: {
+            strongestPlannerRole:
+              "fresh-cool-season-supplemental-green",
+
+            strongHouseholdFoodCrop:
+              true,
+
+            strongEnrichmentCrop:
+              true,
+
+            strongRepeatedHarvestCrop:
+              true,
+
+            strongSmallSpaceCrop:
+              true,
+
+            strongContainerCrop:
+              true,
+
+            strongProtectedForageCrop:
+              true,
+
+            dependableMajorFeedReplacementCrop:
+              false,
+
+            highEnergyCrop:
+              false,
+
+            concentratedProteinCrop:
+              false,
+
+            nitrogenFixingCrop:
+              false,
+
+            dryStoredFeedCrop:
+              false,
+
+            preservationPossible:
+              true,
+
+            seedSavingPossible:
+              true,
+
+            notes: [
+              "Kale and Collards are strongest for growers who prioritize fresh greens, household food, enrichment, repeated harvest, and cool-season production.",
+              "The crop is especially useful where the flock has little access to growing vegetation.",
+              "Protected forage frames can provide one of the crop's strongest living-forage pathways.",
+              "Unrestricted direct grazing receives a lower practical value because plants are easily damaged.",
+              "The crop is highly compatible with small gardens, raised beds, containers, and irregular spaces.",
+              "It can provide useful harvest outside the primary warm-season vegetable period.",
+              "Mild-winter production can be highly valuable where climate and protection permit.",
+              "Freezing and dehydration provide some winter-storage value, but fresh leaves are not naturally shelf-stable.",
+              "The crop should not rank strongly for energy production or direct complete-feed replacement.",
+              "Its protein concentration on a fresh-weight basis is too low for a primary protein goal.",
+              "Kale and Collards do not fix atmospheric nitrogen.",
+              "Their roots and crop residue may contribute organic matter, but they are not primarily soil-building crops.",
+              "Flowering second-year plants may support pollinators, although leaf harvest normally occurs before flowering.",
+              "Colorful and textured cultivars can provide substantial edible-landscape value.",
+              "Seed saving requires isolation from compatible Brassica oleracea crops and management through the second growing season."
+            ]
+          }
+        },
+
+        risks: {
+          wildlife: {
+            wildBirds:
+              2,
+
+            deer:
+              5,
+
+            rabbits:
+              5,
+
+            squirrels:
+              2,
+
+            rodents:
+              2,
+
+            groundhogs:
+              5
+          },
+
+          establishmentFailureRiskScore:
+            3,
+
+          weedCompetitionRiskScore:
+            3,
+
+          droughtEstablishmentRiskScore:
+            4,
+
+          matureDroughtRiskScore:
+            3,
+
+          waterloggingRiskScore:
+            4,
+
+          heatDamageRiskScore:
+            5,
+
+          frostDamageRiskScore:
+            2,
+
+          stormDamageRiskScore:
+            2,
+
+          lodgingRiskScore:
+            1,
+
+          shatteringRiskScore:
+            1,
+
+          birdLossRiskScore:
+            2,
+
+          wildlifePressureScore:
+            4,
+
+          deerBrowsingRiskScore:
+            5,
+
+          rabbitBrowsingRiskScore:
+            5,
+
+          rodentAttractionScore:
+            2,
+
+          insectDamageRiskScore:
+            5,
+
+          diseaseRiskScore:
+            4,
+
+          moldRiskScore:
+            4,
+
+          harvestWeatherRiskScore:
+            2,
+
+          postHarvestLossRiskScore:
+            4,
+
+          storagePestRiskScore:
+            2,
+
+          storageMoistureRiskScore:
+            5,
+
+          contaminationRiskScore:
+            5,
+
+          misidentificationRiskScore:
+            1,
+
+          chemicalExposureRiskScore:
+            5,
+
+          nitrateAccumulationRiskScore:
+            3,
+
+          oxalateConcernScore:
+            3,
+
+          antinutritionalFactorRiskScore:
+            3,
+
+          completeFeedDisplacementRiskScore:
+            4,
+
+          selectiveFeedingRiskScore:
+            3,
+
+          flockOverconsumptionRiskScore:
+            3,
+
+          selfSeedingRiskScore:
+            2,
+
+          invasivenessRiskScore:
+            1,
+
+          crossPollinationRiskScore:
+            5,
+
+          allergenOrDustExposureRiskScore:
+            2,
+
+          mechanicalHarvestSuitabilityScore:
+            2,
+
+          mechanicalProcessingSuitabilityScore:
+            2,
+
+          riskFactors: [
+            {
+              id:
+                "seedling-insect-damage",
+
+              category:
+                "establishment-and-pests",
+
+              severityScore:
+                4,
+
+              likelihoodScore:
+                4,
+
+              description:
+                "Flea beetles, cabbage worms, loopers, cutworms, slugs, snails, and other pests can severely damage seedlings before the crop becomes established.",
+
+              mitigation: [
+                "Inspect seedlings frequently",
+                "Use insect netting or row cover where appropriate",
+                "Secure cover edges",
+                "Control weeds that shelter pests",
+                "Remove severely damaged plants",
+                "Use only control products whose labels permit the intended food or feed use"
+              ]
+            },
+
+            {
+              id:
+                "caterpillar-contamination",
+
+              category:
+                "harvest-and-sanitation",
+
+              severityScore:
+                3,
+
+              likelihoodScore:
+                4,
+
+              description:
+                "Cabbage worms and loopers may remain on leaves or contaminate harvested foliage with feeding waste.",
+
+              mitigation: [
+                "Inspect both sides of every harvested leaf",
+                "Remove insects and waste",
+                "Wash leaves when needed",
+                "Discard heavily contaminated or spoiled material",
+                "Manage pest populations before severe infestation develops"
+              ]
+            },
+
+            {
+              id:
+                "aphid-infestation",
+
+              category:
+                "harvest-and-sanitation",
+
+              severityScore:
+                3,
+
+              likelihoodScore:
+                4,
+
+              description:
+                "Aphids may cluster inside curled leaves, along veins, or near growing points and can be difficult to detect during rapid harvest.",
+
+              mitigation: [
+                "Inspect curled leaves carefully",
+                "Separate leaf layers where necessary",
+                "Wash or discard heavily infested leaves",
+                "Maintain plant airflow",
+                "Avoid feeding leaves coated with aphids, honeydew, or sooty growth"
+              ]
+            },
+
+            {
+              id:
+                "direct-flock-destruction",
+
+              category:
+                "flock-access",
+
+              severityScore:
+                5,
+
+              likelihoodScore:
+                5,
+
+              description:
+                "Chickens may strip leaves, destroy crowns, uproot plants, compact soil, expose roots, and eliminate repeated harvest when given unrestricted access.",
+
+              mitigation: [
+                "Use cut-and-carry harvesting",
+                "Install a forage frame",
+                "Use rotational paddock access",
+                "Limit access duration",
+                "Remove birds before the central growing point is damaged",
+                "Allow complete regrowth between grazing periods"
+              ]
+            },
+
+            {
+              id:
+                "wildlife-browsing",
+
+              category:
+                "wildlife",
+
+              severityScore:
+                5,
+
+              likelihoodScore:
+                4,
+
+              description:
+                "Deer, rabbits, and groundhogs may rapidly remove leaves or entire young plants.",
+
+              mitigation: [
+                "Use suitable fencing",
+                "Protect seedlings with cages or covers",
+                "Inspect perimeter gaps",
+                "Place containers in protected locations",
+                "Avoid relying on repellents as the only protection where pressure is severe"
+              ]
+            },
+
+            {
+              id:
+                "summer-heat-stress",
+
+              category:
+                "climate",
+
+              severityScore:
+                4,
+
+              likelihoodScore:
+                4,
+
+              description:
+                "High temperatures can reduce germination, slow growth, toughen leaves, increase bitterness, increase water demand, and intensify insect pressure.",
+
+              mitigation: [
+                "Plant early spring and fall crops",
+                "Select heat-tolerant Collards",
+                "Provide afternoon shade where appropriate",
+                "Maintain consistent irrigation",
+                "Use mulch",
+                "Avoid relying on peak-summer production"
+              ]
+            },
+
+            {
+              id:
+                "drought-stress",
+
+              category:
+                "water",
+
+              severityScore:
+                3,
+
+              likelihoodScore:
+                3,
+
+              description:
+                "Dry soil reduces leaf expansion, tenderness, regrowth, and cumulative harvest.",
+
+              mitigation: [
+                "Use drip irrigation",
+                "Apply mulch",
+                "Monitor container moisture closely",
+                "Water before severe wilting",
+                "Improve soil organic matter"
+              ]
+            },
+
+            {
+              id:
+                "waterlogging-and-root-disease",
+
+              category:
+                "soil-and-water",
+
+              severityScore:
+                4,
+
+              likelihoodScore:
+                3,
+
+              description:
+                "Saturated soil can restrict root oxygen, reduce growth, promote root disease, and contribute to plant loss.",
+
+              mitigation: [
+                "Use well-drained soil",
+                "Avoid low saturated sites",
+                "Use raised beds where necessary",
+                "Correct irrigation leaks",
+                "Do not overwater"
+              ]
+            },
+
+            {
+              id:
+                "brassica-disease-pressure",
+
+              category:
+                "disease",
+
+              severityScore:
+                5,
+
+              likelihoodScore:
+                3,
+
+              description:
+                "Black rot, clubroot, Alternaria leaf spot, downy mildew, and other diseases may reduce yield, contaminate foliage, or persist in the garden.",
+
+              mitigation: [
+                "Use clean seed and healthy transplants",
+                "Select resistant cultivars where available",
+                "Rotate away from Brassica crops",
+                "Maintain airflow",
+                "Avoid unnecessary overhead irrigation",
+                "Remove seriously diseased material",
+                "Sanitize tools and containers",
+                "Do not move contaminated soil between beds"
+              ]
+            },
+
+            {
+              id:
+                "pesticide-residue",
+
+              category:
+                "chemical-exposure",
+
+              severityScore:
+                5,
+
+              likelihoodScore:
+                2,
+
+              description:
+                "Leaves treated with an unsuitable pesticide or harvested before the required interval may be unsafe for household or poultry use.",
+
+              mitigation: [
+                "Read and follow the complete product label",
+                "Use only products labeled for the crop and intended use",
+                "Observe all preharvest intervals",
+                "Keep treatment records",
+                "Do not feed uncertain or improperly treated material"
+              ]
+            },
+
+            {
+              id:
+                "spoiled-fresh-leaves",
+
+              category:
+                "postharvest",
+
+              severityScore:
+                4,
+
+              likelihoodScore:
+                4,
+
+              description:
+                "Fresh leaves can wilt, become slimy, ferment, develop mold, or become contaminated during warm or wet storage.",
+
+              mitigation: [
+                "Cool leaves promptly",
+                "Refrigerate when not fed immediately",
+                "Avoid trapping free moisture",
+                "Inspect before feeding",
+                "Discard slimy, sour, moldy, or rotten leaves",
+                "Remove uneaten material promptly"
+              ]
+            },
+
+            {
+              id:
+                "incomplete-dehydration",
+
+              category:
+                "preservation",
+
+              severityScore:
+                5,
+
+              likelihoodScore:
+                3,
+
+              description:
+                "Partially dried leaves can retain enough moisture to support mold or microbial spoilage during storage.",
+
+              mitigation: [
+                "Dry leaves completely",
+                "Use thin uniform layers",
+                "Cool before packaging",
+                "Condition dried material",
+                "Use airtight containers",
+                "Inspect for condensation, softening, odor, or mold"
+              ]
+            },
+
+            {
+              id:
+                "dust-from-dried-powder",
+
+              category:
+                "processing",
+
+              severityScore:
+                2,
+
+              likelihoodScore:
+                3,
+
+              description:
+                "Grinding very dry leaves can produce airborne dust and fine particles that are difficult to measure and may separate from other feed.",
+
+              mitigation: [
+                "Use coarse flakes when possible",
+                "Grind small quantities",
+                "Allow dust to settle before opening equipment",
+                "Avoid breathing airborne powder",
+                "Measure carefully",
+                "Mix into moist or formulated material rather than scattering powder"
+              ]
+            },
+
+            {
+              id:
+                "complete-feed-displacement",
+
+              category:
+                "poultry-nutrition",
+
+              severityScore:
+                5,
+
+              likelihoodScore:
+                3,
+
+              description:
+                "Large quantities of leafy greens may reduce consumption of complete feed without supplying equivalent energy, amino acids, calcium, vitamins, or minerals.",
+
+              mitigation: [
+                "Keep complete poultry feed continuously available",
+                "Use leaves only as a supplement",
+                "Avoid unlimited supplemental feeding",
+                "Monitor body condition, production, and complete-feed intake",
+                "Do not use greens as the primary ration"
+              ]
+            },
+
+            {
+              id:
+                "brassica-compound-overuse",
+
+              category:
+                "poultry-nutrition",
+
+              severityScore:
+                3,
+
+              likelihoodScore:
+                2,
+
+              description:
+                "Kale and Collards contain glucosinolates and related Brassica compounds, making dietary dominance inappropriate even though moderate supplemental use is practical.",
+
+              mitigation: [
+                "Use moderate supplemental amounts",
+                "Maintain dietary variety",
+                "Keep complete feed as the nutritional foundation",
+                "Do not infer an unlimited safe intake",
+                "Do not treat cooking or drying as eliminating every Brassica-related limitation"
+              ]
+            },
+
+            {
+              id:
+                "cross-pollination-during-seed-saving",
+
+              category:
+                "seed-saving",
+
+              severityScore:
+                4,
+
+              likelihoodScore:
+                5,
+
+              description:
+                "Kale and Collards may cross with compatible flowering Brassica oleracea crop groups, producing seed that does not remain true to type.",
+
+              mitigation: [
+                "Isolate flowering seed plants",
+                "Grow only one compatible seed crop where isolation is not possible",
+                "Use recognized seed-saving distances and techniques",
+                "Label overwintered plants",
+                "Do not assume volunteer seedlings remain true to cultivar"
+              ]
+            }
+          ],
+
+          directFacts: {
+            youngPlantsHighlyVulnerableToChickens:
+              true,
+
+            establishedPlantsVulnerableToContinuousAccess:
+              true,
+
+            deerBrowsingConcern:
+              true,
+
+            rabbitBrowsingConcern:
+              true,
+
+            groundhogBrowsingConcern:
+              true,
+
+            birdSeedLossConcern:
+              false,
+
+            lodgingConcern:
+              false,
+
+            seedShatteringPrimaryProductionConcern:
+              false,
+
+            freshLeafSpoilageConcern:
+              true,
+
+            dehydrationMoldConcern:
+              true,
+
+            insectContaminationConcern:
+              true,
+
+            unsafePesticideResidueConcern:
+              true,
+
+            diseaseRotationImportant:
+              true,
+
+            clubrootPersistenceConcern:
+              true,
+
+            completeFeedDisplacementConcern:
+              true,
+
+            glucosinolateConcern:
+              true,
+
+            unlimitedFeedingSupported:
+              false,
+
+            mechanicalHarvestNecessary:
+              false,
+
+            mechanicalProcessingNecessary:
+              false,
+
+            notes: [
+              "The most important production risks are insect pressure, wildlife browsing, summer heat, inconsistent moisture, disease, and direct flock destruction.",
+              "The most important feeding risks are spoilage, contamination, excessive complete-feed displacement, and dietary overreliance on Brassica foliage.",
+              "Fresh leaves are safer when harvested cleanly, inspected, and offered promptly.",
+              "Protected living forage is safer for the planting than unrestricted direct access.",
+              "High disease pressure may make crop rotation and sanitation more important than additional fertilizer.",
+              "No universal poultry feeding percentage is supported.",
+              "The planner should not represent Kale or Collards as medicinal plants or parasite treatments."
+            ]
+          }
+        },
+
+        seasonalRoles: {
+          spring: [
+            "Indoor seed starting",
+            "Transplant hardening",
+            "Early outdoor transplanting",
+            "Direct sowing in workable soil",
+            "Row-cover protection",
+            "Young-leaf harvest",
+            "Repeated mature-leaf harvest",
+            "Household vegetable production",
+            "Fresh cut-and-carry feeding",
+            "Whole-leaf enrichment",
+            "Protected living-forage production",
+            "Succession planting",
+            "Compostable crop-residue production"
+          ],
+
+          summer: [
+            "Baby-leaf production in cool climates",
+            "Mature-leaf production in cool or high-elevation climates",
+            "Heat-tolerant Collard production",
+            "Afternoon-shade production",
+            "Irrigated container production",
+            "Seed starting for fall transplants",
+            "Late-summer direct sowing",
+            "Pest monitoring",
+            "Blanching and freezing surplus leaves",
+            "Dehydrating surplus leaves",
+            "Removing heat-damaged or bolting plants"
+          ],
+
+          autumn: [
+            "Primary cool-season planting",
+            "Transplant establishment",
+            "Direct sowing",
+            "Rapid vegetative growth",
+            "Repeated outer-leaf harvest",
+            "Baby-leaf harvest",
+            "Household vegetable production",
+            "Fresh cut-and-carry feeding",
+            "Whole-leaf enrichment",
+            "Protected living forage",
+            "Controlled rotational grazing",
+            "Row-cover installation",
+            "Low-tunnel installation",
+            "Freezing surplus leaves",
+            "Dehydrating surplus leaves",
+            "Preparing plants for overwintering"
+          ],
+
+          winter: [
+            "Fresh harvest in mild climates",
+            "Protected low-tunnel harvest",
+            "Cold-frame harvest",
+            "Greenhouse harvest",
+            "Slow protected regrowth",
+            "Overwintered standing-leaf storage",
+            "Stored frozen-green feeding",
+            "Stored dehydrated-leaf feeding",
+            "Seed and variety planning",
+            "Crop-rotation planning",
+            "Preparation for early spring transplants"
+          ],
+
+          plannerSeasonScores: {
+            spring:
+              5,
+
+            summer:
+              2,
+
+            autumn:
+              5,
+
+            winter:
+              4
+          },
+
+          directFacts: {
+            strongSpringRole:
+              true,
+
+            strongAutumnRole:
+              true,
+
+            mildWinterRole:
+              true,
+
+            coldWinterProtectedRole:
+              true,
+
+            peakSummerRole:
+              false,
+
+            coolSummerRole:
+              true,
+
+            highElevationSummerRole:
+              true,
+
+            springDirectSeedingPossible:
+              true,
+
+            autumnDirectSeedingPossible:
+              true,
+
+            springTransplantingUseful:
+              true,
+
+            autumnTransplantingUseful:
+              true,
+
+            repeatedHarvestAcrossSeasonsPossible:
+              true,
+
+            winterStorageRequiresPreservationOrProtection:
+              true,
+
+            storedFrozenUsePossible:
+              true,
+
+            storedDehydratedUsePossible:
+              true,
+
+            yearRoundIndoorProductionPossible:
+              true,
+
+            yearRoundOutdoorProductionGuaranteed:
+              false,
+
+            secondYearSeedProductionPossible:
+              true,
+
+            notes: [
+              "Kale and Collards provide their strongest planner value during spring and autumn.",
+              "Mild climates may support harvest through much of winter.",
+              "Cold climates may extend harvest with row cover, low tunnels, cold frames, or unheated greenhouses.",
+              "Winter protection may preserve mature leaves even when temperatures and day length stop active regrowth.",
+              "Summer usefulness depends on latitude, elevation, cultivar, shade, irrigation, and local heat intensity.",
+              "Collards generally provide a stronger summer shoulder-season role than many Kale cultivars.",
+              "High-elevation and cool-maritime regions may support useful summer Kale production.",
+              "Late-summer planting is important for establishing fall and winter crops.",
+              "Fall plants must reach adequate size before cold temperatures and short days slow growth.",
+              "Overwintered plants may provide early spring leaves before bolting.",
+              "Fresh leaves are not naturally suited to long winter storage.",
+              "Freezing and dehydration can extend availability but create separate labor, equipment, safety, and nutritional considerations.",
+              "Seed production requires surviving plants to flower during the second season and must be managed separately from ordinary leaf production.",
+              "The planner should evaluate the intended planting season rather than treating a hot-climate location as automatically unsuitable."
+            ]
+          }
+        },
+
+        usePaths: [
+
+                     {
+            id:
+              "fresh-whole-leaves",
+
+            label:
+              "Fresh Whole Leaves",
+
+            description:
+              "Fresh mature or young leaves are harvested, inspected, and offered whole as supplemental enrichment. Leaves may be hung above litter or placed in a clean feeder to encourage natural pecking behavior while reducing waste and contamination.",
+
+            suitabilityScore:
+              5,
+
+            primaryUse:
+              true,
+
+            preservationMethod:
+              "none",
+
+            processingLevel:
+              "minimal",
+
+            seasonalAvailability:
+              [
+                "spring",
+                "summer-cool-climates",
+                "autumn",
+                "winter-mild-climates"
+              ],
+
+            storageLife:
+              "Best fed immediately after harvest. Refrigeration may extend usability for several days when leaves remain clean and sound.",
+
+            expectedProcessingTimeLevel:
+              "very-low",
+
+            estimatedProcessingMinutesPerPound:
+              2,
+
+            expectedWasteLevel:
+              "low",
+
+            estimatedWastePercent:
+              10,
+
+            storageEfficiencyScore:
+              2,
+
+            processingEfficiencyScore:
+              5,
+
+            feedMeasurementPrecisionScore:
+              2,
+
+            preservationFlexibilityScore:
+              1,
+
+            nutrientRetentionScore:
+              5,
+
+            spoilageRiskScore:
+              4,
+
+            laborRequirementScore:
+              1,
+
+            equipmentRequirementScore:
+              1,
+
+            flockAcceptanceScore:
+              5,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "meat-birds",
+              "breeding-flocks",
+              "pet-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Requires almost no processing",
+              "Provides natural pecking enrichment",
+              "Maintains excellent vitamin retention",
+              "Very inexpensive",
+              "Ideal for repeated harvest",
+              "Simple for beginners"
+            ],
+
+            disadvantages: [
+              "Short storage life",
+              "High moisture limits feed replacement",
+              "Leaves spoil rapidly in warm weather",
+              "Can become contaminated if dropped into litter"
+            ],
+
+            preparationSteps: [
+              "Harvest sound leaves.",
+              "Inspect for insects, manure, mold, and damage.",
+              "Wash when necessary.",
+              "Remove excess moisture.",
+              "Hang securely or place into a clean feeder.",
+              "Remove leftovers before spoilage develops."
+            ],
+
+            safetyRules: [
+              "Feed only fresh sound leaves.",
+              "Discard moldy, slimy, sour, or rotten material.",
+              "Keep complete poultry feed available.",
+              "Use only as a supplement."
+            ],
+
+            safetyWarnings: [
+              "Do not feed spoiled leaves.",
+              "Do not rely on Kale or Collards as a complete ration.",
+              "Avoid leaves with uncertain pesticide exposure.",
+              "Inspect carefully for caterpillars and insect waste."
+            ]
+          },
+
+          {
+            id:
+              "fresh-chopped-leaves",
+
+            label:
+              "Fresh Chopped Leaves",
+
+            description:
+              "Fresh leaves are chopped into smaller pieces before feeding. This method improves accessibility for birds that may struggle with large mature leaves while allowing measured portions to be distributed throughout the flock.",
+
+            suitabilityScore:
+              5,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "none",
+
+            processingLevel:
+              "light",
+
+            seasonalAvailability: [
+              "spring",
+              "summer-cool-climates",
+              "autumn",
+              "winter-mild-climates"
+            ],
+
+            storageLife:
+              "Feed immediately after chopping. Refrigerated chopped leaves deteriorate faster than intact leaves.",
+
+            expectedProcessingTimeLevel:
+              "low",
+
+            estimatedProcessingMinutesPerPound:
+              5,
+
+            expectedWasteLevel:
+              "low",
+
+            estimatedWastePercent:
+              10,
+
+            storageEfficiencyScore:
+              2,
+
+            processingEfficiencyScore:
+              4,
+
+            feedMeasurementPrecisionScore:
+              4,
+
+            preservationFlexibilityScore:
+              1,
+
+            nutrientRetentionScore:
+              5,
+
+            spoilageRiskScore:
+              5,
+
+            laborRequirementScore:
+              2,
+
+            equipmentRequirementScore:
+              1,
+
+            flockAcceptanceScore:
+              5,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "meat-birds",
+              "breeding-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Easy to portion",
+              "Good flock distribution",
+              "Improves access to large leaves",
+              "Excellent nutrient retention"
+            ],
+
+            disadvantages: [
+              "More labor than whole leaves",
+              "Spoils faster once chopped",
+              "Can become mixed with bedding if scattered"
+            ],
+
+            preparationSteps: [
+              "Harvest healthy leaves.",
+              "Inspect carefully.",
+              "Wash if needed.",
+              "Remove excess water.",
+              "Chop into manageable pieces.",
+              "Feed immediately."
+            ],
+
+            safetyRules: [
+              "Feed immediately after preparation.",
+              "Discard uneaten chopped greens before spoilage.",
+              "Continue feeding a complete ration."
+            ],
+
+            safetyWarnings: [
+              "Chopped greens spoil faster than whole leaves.",
+              "Avoid scattering onto muddy or manure-covered ground.",
+              "Inspect carefully for insects before chopping."
+            ]
+          },
+
+          {
+            id:
+              "garden-trimmings",
+
+            label:
+              "Household Garden Trimmings",
+
+            description:
+              "Healthy outer leaves and sound trimmings remaining after household harvest are diverted to the flock instead of compost, allowing one planting to provide both household vegetables and supplemental poultry greens.",
+
+            suitabilityScore:
+              5,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "none",
+
+            processingLevel:
+              "minimal",
+
+            seasonalAvailability: [
+              "spring",
+              "summer-cool-climates",
+              "autumn",
+              "winter-mild-climates"
+            ],
+
+            storageLife:
+              "Best fed the same day they are removed from the garden.",
+
+            expectedProcessingTimeLevel:
+              "very-low",
+
+            estimatedProcessingMinutesPerPound:
+              1,
+
+            expectedWasteLevel:
+              "very-low",
+
+            estimatedWastePercent:
+              5,
+
+            storageEfficiencyScore:
+              1,
+
+            processingEfficiencyScore:
+              5,
+
+            feedMeasurementPrecisionScore:
+              2,
+
+            preservationFlexibilityScore:
+              1,
+
+            nutrientRetentionScore:
+              5,
+
+            spoilageRiskScore:
+              4,
+
+            laborRequirementScore:
+              1,
+
+            equipmentRequirementScore:
+              1,
+
+            flockAcceptanceScore:
+              5,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "pet-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Very economical",
+              "Uses material that might otherwise become compost",
+              "Excellent household-and-flock integration",
+              "Little additional labor"
+            ],
+
+            disadvantages: [
+              "Quantity depends on household harvest.",
+              "Leaves must still be inspected carefully.",
+              "Does not provide predictable feed quantities."
+            ],
+
+            preparationSteps: [
+              "Separate sound trimmings.",
+              "Discard diseased or spoiled material.",
+              "Inspect for insects and contamination.",
+              "Wash if necessary.",
+              "Feed promptly."
+            ],
+
+            safetyRules: [
+              "Feed only healthy trimmings.",
+              "Discard diseased, moldy, or chemically contaminated leaves.",
+              "Use only untreated household vegetable waste."
+            ],
+
+            safetyWarnings: [
+              "Do not feed spoiled kitchen scraps.",
+              "Do not use trimmings from plants treated with products unsuitable for poultry feed.",
+              "Do not include onions, sauces, oils, or prepared foods."
+            ]
+          },
+          
+                    {
+            id:
+              "protected-living-forage",
+
+            label:
+              "Protected Living Forage",
+
+            description:
+              "Kale or Collard plants are grown beneath or behind a protective forage frame, wire cover, or similar barrier that allows chickens to peck accessible leaves while preventing unrestricted scratching, uprooting, crown damage, and soil compaction.",
+
+            suitabilityScore:
+              5,
+
+            primaryUse:
+              true,
+
+            preservationMethod:
+              "living-crop",
+
+            processingLevel:
+              "minimal-after-establishment",
+
+            seasonalAvailability: [
+              "spring",
+              "summer-cool-climates",
+              "autumn",
+              "winter-mild-climates",
+              "winter-protected"
+            ],
+
+            storageLife:
+              "The crop remains available in place while plants are healthy and actively producing. Useful availability depends on cultivar, season, temperature, daylight, irrigation, fertility, pest pressure, and the amount of foliage removed by the flock.",
+
+            expectedProcessingTimeLevel:
+              "very-low-after-establishment",
+
+            estimatedProcessingMinutesPerPound:
+              null,
+
+            expectedWasteLevel:
+              "low-to-moderate",
+
+            estimatedWastePercent:
+              null,
+
+            storageEfficiencyScore:
+              5,
+
+            processingEfficiencyScore:
+              5,
+
+            feedMeasurementPrecisionScore:
+              1,
+
+            preservationFlexibilityScore:
+              2,
+
+            nutrientRetentionScore:
+              5,
+
+            spoilageRiskScore:
+              2,
+
+            laborRequirementScore:
+              2,
+
+            equipmentRequirementScore:
+              3,
+
+            flockAcceptanceScore:
+              5,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "breeding-flocks",
+              "pet-flocks",
+              "confined-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Allows birds to harvest fresh leaves directly",
+              "Provides natural pecking and foraging enrichment",
+              "Protects roots and crowns from scratching",
+              "Can support repeated regrowth",
+              "Reduces daily cutting and carrying",
+              "Keeps much of the foliage above litter and manure",
+              "Provides high nutrient retention because leaves remain alive until consumed",
+              "Works well in small spaces",
+              "Can extend access to fresh greens across several seasons",
+              "May reduce crop destruction compared with unrestricted grazing"
+            ],
+
+            disadvantages: [
+              "Requires construction materials and setup labor",
+              "Leaf intake is difficult to measure",
+              "Birds may overgraze foliage growing through the frame",
+              "Plants may still be damaged if openings are too large",
+              "Frames require routine inspection and maintenance",
+              "Leaves near the surface may become manure-contaminated",
+              "Regrowth may slow during heat, drought, low light, or severe cold",
+              "A small frame may not produce enough foliage for a large flock",
+              "Wire edges or unsafe openings may create injury hazards",
+              "Pests and disease can be harder to inspect beneath a fixed frame"
+            ],
+
+            preparationSteps: [
+              "Prepare a fertile, well-drained planting area.",
+              "Direct sow or transplant Kale or Collards beneath the protected area.",
+              "Allow plants to establish before flock access begins.",
+              "Install a stable forage frame or protective barrier.",
+              "Select wire spacing that permits safe leaf access without allowing birds to enter or become trapped.",
+              "Secure all wire edges, fasteners, and corners.",
+              "Maintain enough clearance for leaves to grow through the protective surface.",
+              "Inspect plants regularly for insects, disease, spoilage, and manure contamination.",
+              "Water and fertilize as needed to support regrowth.",
+              "Restrict flock access temporarily when plants have been heavily grazed.",
+              "Repair damaged wire or structural components promptly.",
+              "Remove unsafe, diseased, rotten, or chemically contaminated plant material."
+            ],
+
+            safetyRules: [
+              "Use only sturdy, securely fastened materials.",
+              "Cover or bend all sharp wire edges.",
+              "Use openings that do not trap chicken heads, feet, wings, or legs.",
+              "Keep roots, crowns, and the central growing point protected.",
+              "Inspect the frame regularly for broken wire, loose staples, exposed fasteners, and unstable supports.",
+              "Keep complete poultry feed continuously available.",
+              "Treat living forage only as a supplement.",
+              "Prevent heavy manure buildup on accessible leaves.",
+              "Remove diseased, moldy, rotten, or pesticide-contaminated foliage.",
+              "Allow plants time to regrow after heavy use."
+            ],
+
+            safetyWarnings: [
+              "Do not use wire openings large enough for birds to force their bodies beneath the frame.",
+              "Do not leave sharp cut wire, protruding screws, loose staples, or broken mesh exposed.",
+              "Do not assume the frame prevents all contamination.",
+              "Do not allow continuous access when birds are removing foliage faster than plants can regrow.",
+              "Do not allow birds to expose or destroy roots and crowns.",
+              "Do not feed plants treated with products that are not approved for the intended food or feed use.",
+              "Do not rely on living Kale or Collards as a complete ration.",
+              "Do not assume cold-protected plants are actively regrowing during short winter days.",
+              "Do not use a low frame that permits birds to stand continuously on contaminated foliage.",
+              "Do not leave damaged structures where chickens can become trapped or injured."
+            ]
+          },
+
+          {
+            id:
+              "controlled-direct-grazing",
+
+            label:
+              "Controlled Direct Grazing",
+
+            description:
+              "Established Kale or Collard plants are exposed directly to the flock for short, supervised, or carefully timed grazing periods. Birds are removed before they destroy the central growing points, uproot plants, compact the soil, or eliminate the crop's ability to regrow.",
+
+            suitabilityScore:
+              3,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "living-crop",
+
+            processingLevel:
+              "none",
+
+            seasonalAvailability: [
+              "spring",
+              "summer-cool-climates",
+              "autumn",
+              "winter-mild-climates"
+            ],
+
+            storageLife:
+              "The crop remains available only while plants survive grazing and continue producing new foliage. Availability may end rapidly if birds are not removed before serious crown, root, or soil damage occurs.",
+
+            expectedProcessingTimeLevel:
+              "very-low",
+
+            estimatedProcessingMinutesPerPound:
+              null,
+
+            expectedWasteLevel:
+              "high",
+
+            estimatedWastePercent:
+              null,
+
+            storageEfficiencyScore:
+              3,
+
+            processingEfficiencyScore:
+              5,
+
+            feedMeasurementPrecisionScore:
+              1,
+
+            preservationFlexibilityScore:
+              1,
+
+            nutrientRetentionScore:
+              5,
+
+            spoilageRiskScore:
+              2,
+
+            laborRequirementScore:
+              2,
+
+            equipmentRequirementScore:
+              2,
+
+            flockAcceptanceScore:
+              5,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "pet-flocks",
+              "pastured-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Requires no harvest processing",
+              "Provides strong natural foraging enrichment",
+              "Allows birds to select and consume fresh leaves",
+              "May reduce cut-and-carry labor",
+              "Can work in rotational paddocks",
+              "Provides excellent nutrient retention",
+              "May help remove damaged or surplus leaves",
+              "Can integrate the crop into a managed pasture system"
+            ],
+
+            disadvantages: [
+              "Plants can be destroyed very quickly",
+              "Birds may uproot seedlings and mature plants",
+              "Scratching can damage roots and crowns",
+              "Soil can become compacted",
+              "Manure can contaminate remaining foliage",
+              "Feed intake cannot be measured accurately",
+              "Trampling and scratching create substantial waste",
+              "Regrowth is unreliable after severe damage",
+              "Large flocks can eliminate a planting within a short period",
+              "Requires close observation and timely flock removal",
+              "Young or newly transplanted plants are especially vulnerable",
+              "Wet soil greatly increases trampling and compaction damage"
+            ],
+
+            preparationSteps: [
+              "Establish a dense and healthy crop before allowing flock access.",
+              "Wait until plants are large enough to tolerate limited leaf removal.",
+              "Inspect the grazing area for pesticides, disease, mold, standing water, and hazardous debris.",
+              "Provide complete poultry feed and clean water before access begins.",
+              "Allow access for a short controlled period.",
+              "Observe how rapidly birds remove leaves and disturb soil.",
+              "Remove the flock before central growing points are damaged.",
+              "Remove birds before roots become exposed or plants are uprooted.",
+              "Rest the planting until substantial regrowth occurs.",
+              "Irrigate and fertilize when necessary to support recovery.",
+              "Rotate access among multiple plots when possible.",
+              "Discontinue grazing when soil is excessively wet, frozen, or easily compacted."
+            ],
+
+            safetyRules: [
+              "Use only well-established plants for direct grazing.",
+              "Limit access duration.",
+              "Remove birds before crowns and central growing points are damaged.",
+              "Do not graze newly transplanted or weak plants.",
+              "Keep complete poultry feed continuously available.",
+              "Inspect foliage for insects, disease, mold, chemical exposure, and manure contamination.",
+              "Allow adequate recovery between grazing periods.",
+              "Avoid grazing when soil is saturated.",
+              "Use fencing or supervision to keep birds within the intended plot.",
+              "Treat direct grazing as supplemental enrichment rather than ration replacement."
+            ],
+
+            safetyWarnings: [
+              "Unrestricted access can destroy the entire planting.",
+              "Chickens may consume accessible foliage faster than it can regrow.",
+              "Scratching can sever roots and expose crowns.",
+              "Do not assume surviving plants will recover after severe grazing.",
+              "Do not permit direct grazing on recently treated plants unless the product label clearly allows the intended use and all required intervals have passed.",
+              "Do not graze diseased, moldy, rotten, or manure-coated foliage.",
+              "Do not use Kale or Collards as the flock's primary food.",
+              "Do not allow birds onto wet beds where trampling and compaction will be severe.",
+              "Do not allow young chicks to replace complete starter feed with direct access to greens.",
+              "Do not confuse high flock enthusiasm with nutritional completeness."
+            ]
+          },
+
+                    {
+            id:
+              "refrigerated-fresh-leaves",
+
+            label:
+              "Refrigerated Fresh Leaves",
+
+            description:
+              "Freshly harvested Kale or Collard leaves are cooled promptly and refrigerated for short-term storage before being fed as supplemental greens.",
+
+            suitabilityScore:
+              4,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "refrigeration",
+
+            processingLevel:
+              "minimal",
+
+            seasonalAvailability: [
+              "year-round"
+            ],
+
+            storageLife:
+              "Usually several days under proper refrigeration while leaves remain crisp, clean, and free from spoilage.",
+
+            expectedProcessingTimeLevel:
+              "very-low",
+
+            estimatedProcessingMinutesPerPound:
+              3,
+
+            expectedWasteLevel:
+              "low",
+
+            estimatedWastePercent:
+              10,
+
+            storageEfficiencyScore:
+              3,
+
+            processingEfficiencyScore:
+              5,
+
+            feedMeasurementPrecisionScore:
+              2,
+
+            preservationFlexibilityScore:
+              3,
+
+            nutrientRetentionScore:
+              5,
+
+            spoilageRiskScore:
+              3,
+
+            laborRequirementScore:
+              1,
+
+            equipmentRequirementScore:
+              2,
+
+            flockAcceptanceScore:
+              5,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "breeding-flocks",
+              "pet-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Extends fresh feeding beyond harvest day",
+              "Minimal processing",
+              "Excellent nutrient retention",
+              "Simple household storage",
+              "Works well with repeated harvesting"
+            ],
+
+            disadvantages: [
+              "Short storage duration",
+              "Requires refrigeration",
+              "Spoilage remains possible",
+              "Not practical for long-term winter storage"
+            ],
+
+            preparationSteps: [
+              "Harvest healthy leaves.",
+              "Inspect carefully.",
+              "Wash when needed.",
+              "Dry excess surface moisture.",
+              "Refrigerate promptly.",
+              "Inspect again before feeding."
+            ],
+
+            safetyRules: [
+              "Keep leaves refrigerated.",
+              "Feed only crisp, healthy leaves.",
+              "Discard spoiled material immediately.",
+              "Use only as a supplement."
+            ],
+
+            safetyWarnings: [
+              "Do not feed slimy or moldy leaves.",
+              "Do not leave refrigerated greens unrefrigerated for extended periods before feeding.",
+              "Avoid leaves contaminated by manure or chemicals."
+            ]
+          },
+
+          {
+            id:
+              "plain-cooked-leaves",
+
+            label:
+              "Plain Cooked Leaves",
+
+            description:
+              "Household surplus Kale or Collards are cooked without oils, salt, onions, garlic, seasonings, or other unsuitable ingredients before being cooled and offered as a supplemental flock treat.",
+
+            suitabilityScore:
+              3,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "cooked",
+
+            processingLevel:
+              "moderate",
+
+            seasonalAvailability: [
+              "year-round"
+            ],
+
+            storageLife:
+              "Feed promptly after cooling. Refrigerate briefly if necessary but avoid prolonged storage.",
+
+            expectedProcessingTimeLevel:
+              "moderate",
+
+            estimatedProcessingMinutesPerPound:
+              12,
+
+            expectedWasteLevel:
+              "low",
+
+            estimatedWastePercent:
+              10,
+
+            storageEfficiencyScore:
+              2,
+
+            processingEfficiencyScore:
+              3,
+
+            feedMeasurementPrecisionScore:
+              3,
+
+            preservationFlexibilityScore:
+              2,
+
+            nutrientRetentionScore:
+              4,
+
+            spoilageRiskScore:
+              3,
+
+            laborRequirementScore:
+              3,
+
+            equipmentRequirementScore:
+              2,
+
+            flockAcceptanceScore:
+              4,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "pet-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Useful for household leftovers",
+              "Can soften mature leaves",
+              "Reduces food waste",
+              "Simple kitchen preparation"
+            ],
+
+            disadvantages: [
+              "Additional labor",
+              "Some nutrient loss during cooking",
+              "Not intended for routine feeding",
+              "Requires careful ingredient control"
+            ],
+
+            preparationSteps: [
+              "Inspect leaves.",
+              "Wash thoroughly.",
+              "Cook plainly.",
+              "Do not add seasonings or fats.",
+              "Cool completely.",
+              "Feed promptly.",
+              "Discard leftovers."
+            ],
+
+            safetyRules: [
+              "Cook only plain greens.",
+              "Cool before feeding.",
+              "Discard spoiled leftovers.",
+              "Maintain complete feed availability."
+            ],
+
+            safetyWarnings: [
+              "Never feed cooked greens containing onions, garlic, excessive salt, butter, oils, sauces, or spices.",
+              "Do not feed spoiled leftovers.",
+              "Do not assume cooking creates a complete poultry feed."
+            ]
+          },
+
+          {
+            id:
+              "blanched-frozen-leaves",
+
+            label:
+              "Blanched Frozen Leaves",
+
+            description:
+              "Fresh Kale or Collards are blanched, cooled rapidly, packaged, frozen, and thawed before feeding to extend seasonal availability of supplemental greens.",
+
+            suitabilityScore:
+              4,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "frozen",
+
+            processingLevel:
+              "high",
+
+            seasonalAvailability: [
+              "year-round"
+            ],
+
+            storageLife:
+              "Many months when properly blanched, packaged, continuously frozen, and protected from freezer burn.",
+
+            expectedProcessingTimeLevel:
+              "high",
+
+            estimatedProcessingMinutesPerPound:
+              20,
+
+            expectedWasteLevel:
+              "low",
+
+            estimatedWastePercent:
+              10,
+
+            storageEfficiencyScore:
+              5,
+
+            processingEfficiencyScore:
+              3,
+
+            feedMeasurementPrecisionScore:
+              4,
+
+            preservationFlexibilityScore:
+              5,
+
+            nutrientRetentionScore:
+              4,
+
+            spoilageRiskScore:
+              2,
+
+            laborRequirementScore:
+              4,
+
+            equipmentRequirementScore:
+              3,
+
+            flockAcceptanceScore:
+              4,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "breeding-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Excellent seasonal preservation",
+              "Allows winter feeding",
+              "Good nutrient retention",
+              "Reduces harvest waste",
+              "Useful during periods without fresh growth"
+            ],
+
+            disadvantages: [
+              "Requires blanching",
+              "Requires freezer space",
+              "Requires electricity",
+              "Higher processing labor",
+              "Must be thawed before feeding"
+            ],
+
+            preparationSteps: [
+              "Harvest healthy leaves.",
+              "Inspect carefully.",
+              "Wash thoroughly.",
+              "Trim if needed.",
+              "Blanch.",
+              "Cool immediately in cold water.",
+              "Drain thoroughly.",
+              "Package in freezer-safe containers.",
+              "Freeze.",
+              "Thaw before feeding.",
+              "Inspect after thawing."
+            ],
+
+            safetyRules: [
+              "Freeze only healthy leaves.",
+              "Maintain continuous freezing.",
+              "Discard spoiled material after thawing.",
+              "Feed only thawed leaves."
+            ],
+
+            safetyWarnings: [
+              "Do not refreeze repeatedly thawed greens.",
+              "Discard freezer-burned or spoiled material when quality is poor.",
+              "Do not feed moldy thawed leaves.",
+              "Frozen greens remain a supplement rather than a complete ration."
+            ]
+          },
+
+                    {
+            id:
+              "dehydrated-leaf-flakes",
+
+            label:
+              "Dehydrated Leaf Flakes",
+
+            description:
+              "Clean Kale or Collard leaves are fully dehydrated and stored as coarse flakes for measured supplemental use. Removing water greatly concentrates the material by weight, so dried flakes should be offered more deliberately than fresh leaves.",
+
+            suitabilityScore:
+              3,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "dehydration",
+
+            processingLevel:
+              "high",
+
+            seasonalAvailability: [
+              "year-round"
+            ],
+
+            storageLife:
+              "Potentially several months when leaves are dried completely, cooled before packaging, stored in airtight containers, protected from heat and light, and inspected regularly for moisture or spoilage.",
+
+            expectedProcessingTimeLevel:
+              "high",
+
+            estimatedProcessingMinutesPerPound:
+              null,
+
+            expectedWasteLevel:
+              "low-to-moderate",
+
+            estimatedWastePercent:
+              null,
+
+            storageEfficiencyScore:
+              5,
+
+            processingEfficiencyScore:
+              2,
+
+            feedMeasurementPrecisionScore:
+              4,
+
+            preservationFlexibilityScore:
+              5,
+
+            nutrientRetentionScore:
+              3,
+
+            spoilageRiskScore:
+              3,
+
+            laborRequirementScore:
+              4,
+
+            equipmentRequirementScore:
+              4,
+
+            flockAcceptanceScore:
+              3,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "breeding-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Provides long-term storage without freezer space",
+              "Reduces storage volume",
+              "Allows measured use",
+              "Can preserve surplus seasonal leaves",
+              "Can be mixed into moist supplemental foods",
+              "Coarse flakes create less airborne dust than finely ground powder",
+              "Airtight containers are easy to inspect and organize"
+            ],
+
+            disadvantages: [
+              "Requires substantial drying time",
+              "Usually requires a dehydrator or another controlled drying system",
+              "Electricity may be required",
+              "Incomplete drying can cause mold",
+              "Some heat-sensitive nutrients may decline during drying and storage",
+              "Dried material is more concentrated by weight than fresh foliage",
+              "Very dry flakes may be less attractive than fresh leaves",
+              "Stored flakes require protection from humidity, insects, rodents, and light",
+              "No validated universal poultry inclusion rate is established"
+            ],
+
+            preparationSteps: [
+              "Harvest healthy leaves.",
+              "Discard diseased, spoiled, chemically contaminated, or manure-coated material.",
+              "Inspect both leaf surfaces for insects and insect waste.",
+              "Wash leaves when needed.",
+              "Drain and remove excess surface moisture.",
+              "Remove unusually thick or damaged stems when appropriate.",
+              "Tear or cut leaves into reasonably uniform pieces.",
+              "Arrange leaves in thin layers with adequate airflow.",
+              "Dehydrate until leaves are fully dry and brittle.",
+              "Check thicker portions for retained moisture.",
+              "Cool completely before packaging.",
+              "Condition the dried material and inspect for moisture redistribution.",
+              "Break the leaves into coarse flakes.",
+              "Package in clean airtight containers.",
+              "Label containers with crop and processing date.",
+              "Store in a cool, dry, dark location.",
+              "Inspect periodically for condensation, softening, insects, odor, or mold.",
+              "Measure modest portions before feeding.",
+              "Mix with other appropriate food or feed material when needed to improve acceptance."
+            ],
+
+            safetyRules: [
+              "Use only clean, healthy leaves.",
+              "Dry leaves completely before storage.",
+              "Cool dried leaves fully before sealing containers.",
+              "Condition dried material before long-term storage.",
+              "Use clean, dry, airtight containers.",
+              "Store away from heat, moisture, sunlight, insects, and rodents.",
+              "Inspect stored flakes regularly.",
+              "Discard any material showing condensation, softening, clumping, mold, insects, sour odor, or other spoilage.",
+              "Measure dried flakes rather than offering unlimited quantities.",
+              "Keep complete poultry feed continuously available.",
+              "Use dehydrated flakes only as a supplemental ingredient.",
+              "Introduce dried material gradually.",
+              "Provide continuous access to clean drinking water."
+            ],
+
+            safetyWarnings: [
+              "Do not package leaves while they are still warm.",
+              "Do not store partially dried or flexible leaves.",
+              "Do not assume visually dry leaves are moisture-free in thick stems or folded areas.",
+              "Do not feed moldy, musty, fermented, insect-damaged, or rodent-contaminated material.",
+              "Do not scatter large amounts of dry flakes where they may absorb moisture from litter or manure.",
+              "Do not treat dried flakes as equivalent by weight to fresh leaves.",
+              "Do not use dried Kale or Collards as a complete ration.",
+              "Do not infer an unrestricted feeding amount from the crop's use as a human vegetable.",
+              "Do not assume dehydration eliminates glucosinolates, oxalates, pesticide residues, or every other dietary limitation.",
+              "Do not store dried material in containers that previously held chemicals or unsafe products.",
+              "Do not feed material produced from leaves with uncertain pesticide exposure."
+            ],
+
+            directFacts: {
+              waterRemovedDuringProcessing:
+                true,
+
+              concentrationByWeightIncreases:
+                true,
+
+              refrigerationRequired:
+                false,
+
+              freezingRequired:
+                false,
+
+              airtightStorageRecommended:
+                true,
+
+              completeDryingRequired:
+                true,
+
+              conditioningRecommended:
+                true,
+
+              coarseFormPreferredOverPowderForDustReduction:
+                true,
+
+              validatedMaximumPoultryInclusionPercent:
+                null,
+
+              notes: [
+                "Dehydration changes the weight and volume of the crop but does not turn it into a balanced poultry feed.",
+                "Because most of the original water is removed, a small weight of dried flakes represents a much larger quantity of fresh leaves.",
+                "Coarse flakes are easier to observe and generally create less dust than finely ground powder.",
+                "Drying temperature, drying duration, leaf thickness, airflow, and storage conditions affect final quality.",
+                "Thick stems and folded leaf sections may retain moisture after thinner portions appear dry.",
+                "Conditioning helps reveal uneven residual moisture before long-term storage.",
+                "Any condensation or softening after packaging indicates that the material may not be dry enough for safe storage.",
+                "The planner should not calculate a universal feeding rate because a validated poultry inclusion percentage is not established for backyard use."
+              ]
+            }
+          },
+
+          {
+            id:
+              "dehydrated-leaf-powder",
+
+            label:
+              "Dehydrated Leaf Powder",
+
+            description:
+              "Fully dehydrated Kale or Collard leaves are ground into a powder for carefully measured supplemental use. Powder can be incorporated into moist foods or an intentionally formulated ration, but its concentrated nature, dust potential, and tendency to separate make it less suitable for casual free-choice feeding.",
+
+            suitabilityScore:
+              2,
+
+            primaryUse:
+              false,
+
+            preservationMethod:
+              "dehydration-and-grinding",
+
+            processingLevel:
+              "very-high",
+
+            seasonalAvailability: [
+              "year-round"
+            ],
+
+            storageLife:
+              "Potentially several months when the leaf material is completely dry before grinding, packaged immediately in airtight containers, and protected from moisture, heat, light, insects, and rodents.",
+
+            expectedProcessingTimeLevel:
+              "very-high",
+
+            estimatedProcessingMinutesPerPound:
+              null,
+
+            expectedWasteLevel:
+              "moderate",
+
+            estimatedWastePercent:
+              null,
+
+            storageEfficiencyScore:
+              5,
+
+            processingEfficiencyScore:
+              2,
+
+            feedMeasurementPrecisionScore:
+              5,
+
+            preservationFlexibilityScore:
+              5,
+
+            nutrientRetentionScore:
+              3,
+
+            spoilageRiskScore:
+              3,
+
+            laborRequirementScore:
+              5,
+
+            equipmentRequirementScore:
+              5,
+
+            flockAcceptanceScore:
+              2,
+
+            recommendedFlockTypes: [
+              "layers",
+              "dual-purpose",
+              "breeding-flocks",
+              "homestead-flocks"
+            ],
+
+            suitableBirdAge: [
+              "adult"
+            ],
+
+            advantages: [
+              "Allows precise measurement by weight",
+              "Requires little storage volume",
+              "Can be incorporated into moist supplemental foods",
+              "Can preserve surplus seasonal foliage",
+              "Provides storage without occupying freezer space",
+              "Can be mixed uniformly when appropriate equipment and a validated formulation are available"
+            ],
+
+            disadvantages: [
+              "Requires complete dehydration before grinding",
+              "Requires additional grinding equipment",
+              "Creates airborne dust",
+              "Fine particles may irritate the respiratory system",
+              "Powder may separate from coarse feed ingredients",
+              "Loose powder may be wasted or ignored by birds",
+              "Exposed powder absorbs atmospheric moisture readily",
+              "Greater processing may increase nutrient losses",
+              "Precise measurement does not establish nutritional suitability",
+              "No validated universal poultry inclusion percentage is available",
+              "The form can encourage accidental overuse because of its small volume"
+            ],
+
+            preparationSteps: [
+              "Harvest clean, healthy leaves.",
+              "Discard diseased, spoiled, chemically contaminated, or manure-coated material.",
+              "Inspect carefully for insects and insect waste.",
+              "Wash when necessary.",
+              "Drain thoroughly.",
+              "Remove excess surface moisture.",
+              "Cut or tear leaves into uniform pieces.",
+              "Dehydrate until all leaf and stem portions are fully dry and brittle.",
+              "Cool completely.",
+              "Condition the dried material.",
+              "Inspect again for residual moisture.",
+              "Grind only a small quantity at a time.",
+              "Allow airborne dust to settle before opening the grinder.",
+              "Transfer powder immediately into a clean airtight container.",
+              "Label the container with crop and processing date.",
+              "Store in a cool, dry, dark location.",
+              "Inspect periodically for clumping, insects, condensation, odor, discoloration, or mold.",
+              "Measure by weight when possible.",
+              "Blend into a moist carrier or properly formulated feed rather than scattering loose powder.",
+              "Prepare only quantities that can be stored safely."
+            ],
+
+            safetyRules: [
+              "Dehydrate leaves completely before grinding.",
+              "Allow the dried material to cool before processing.",
+              "Use clean, dry grinding equipment.",
+              "Control airborne dust.",
+              "Avoid breathing concentrated leaf powder.",
+              "Keep birds away from active grinding operations.",
+              "Store powder in airtight moisture-resistant containers.",
+              "Keep containers protected from heat, light, insects, and rodents.",
+              "Discard powder that clumps, develops condensation, smells musty, shows insects, or develops mold.",
+              "Measure powder carefully.",
+              "Use only modest supplemental quantities.",
+              "Blend powder into suitable moist material to reduce dust and separation.",
+              "Keep complete poultry feed continuously available.",
+              "Provide clean drinking water at all times."
+            ],
+
+            safetyWarnings: [
+              "Do not grind leaves that are still flexible, cool-damp, or unevenly dried.",
+              "Do not open grinding equipment immediately while fine dust remains airborne.",
+              "Do not allow chickens to inhale clouds of leaf powder.",
+              "Do not scatter loose powder over dry litter or bare soil.",
+              "Do not assume a finely ground form is more nutritionally complete.",
+              "Do not substitute leaf powder for a formulated vitamin-and-mineral premix.",
+              "Do not use Kale or Collard powder as a complete ration.",
+              "Do not infer a safe inclusion rate without a validated poultry formulation.",
+              "Do not assume dehydration and grinding eliminate glucosinolates, oxalates, pesticide residues, or other limitations.",
+              "Do not feed moldy, musty, insect-infested, rodent-contaminated, or chemically exposed powder.",
+              "Do not mix powder into feed that will remain damp long enough to spoil.",
+              "Do not use household seasoning grinders or containers contaminated with unsafe ingredients or chemicals."
+            ],
+
+            directFacts: {
+              waterRemovedDuringProcessing:
+                true,
+
+              grindingRequired:
+                true,
+
+              concentrationByWeightIncreases:
+                true,
+
+              particleSizeReduced:
+                true,
+
+              airborneDustConcern:
+                true,
+
+              separationFromCoarseFeedPossible:
+                true,
+
+              moistureReabsorptionConcern:
+                true,
+
+              refrigerationRequired:
+                false,
+
+              freezingRequired:
+                false,
+
+              preciseMeasurementRecommended:
+                true,
+
+              validatedMaximumPoultryInclusionPercent:
+                null,
+
+              directFreeChoiceFeedingRecommended:
+                false,
+
+              notes: [
+                "Leaf powder is a concentrated processed form rather than a separate nutritionally complete product.",
+                "Grinding increases surface area and can increase exposure to oxygen, light, and atmospheric moisture.",
+                "Powder should be produced only from material that was fully dehydrated before grinding.",
+                "Fine particles may separate from whole grains or pellets unless mixed into an appropriate carrier.",
+                "Moist incorporation may reduce dust but also shortens safe holding time and requires prompt feeding.",
+                "A precise scale can measure the powder accurately, but measurement precision does not establish a scientifically supported inclusion rate.",
+                "The absence of a validated universal inclusion percentage is the primary reason this pathway receives a lower suitability score than fresh whole leaves or coarse dehydrated flakes.",
+                "The planner must not automatically recommend leaf powder as a vitamin premix, medicinal additive, or complete-feed replacement."
+              ]
+            }
+          }
         ],
 
-        note:
-          "Chemically treated planting seed must never be fed."
+                dataQuality: {
+          overallConfidence:
+            "high",
+
+          poultryEvidenceLevel:
+            "moderate",
+
+          agronomicEvidenceLevel:
+            "high",
+
+          preservationEvidenceLevel:
+            "moderate",
+
+          plannerValidationStatus:
+            "research-reviewed",
+
+          productionReady:
+            true,
+
+          majorEvidenceSources: [
+            "USDA Agricultural Research Service (FoodData Central)",
+            "USDA NRCS Plant Guide",
+            "University Cooperative Extension publications",
+            "Cornell Cooperative Extension",
+            "North Carolina Extension",
+            "Oregon State University Extension",
+            "University of Minnesota Extension",
+            "University of Wisconsin Extension",
+            "University of Kentucky Extension",
+            "University of Georgia Extension",
+            "National Center for Home Food Preservation"
+          ],
+
+          assumptions: [
+            "Values describe untreated Kale and Collards intended for backyard-scale production.",
+            "Recommendations assume birds always have access to a nutritionally complete commercial ration.",
+            "Suitability scores compare use pathways within the Backyard Chicken Planner and are not absolute nutritional rankings.",
+            "Climate, cultivar, management practices, irrigation, fertility, and pest pressure will significantly influence production."
+          ],
+
+          unsupportedValues: [
+            "Universal feed inclusion percentage",
+            "Guaranteed annual feed savings",
+            "Exact annual yield for every climate",
+            "Universal storage life under all conditions",
+            "Guaranteed flock acceptance percentages",
+            "Universal processing times for all equipment",
+            "Validated metabolizable energy after every preservation method"
+          ],
+
+          remainingNullFields: [
+            "estimatedFeedSavings",
+            "estimatedAnnualValue",
+            "minimumTrialAreaSqFt",
+            "minimumUsefulAreaSqFt",
+            "preferredProductionAreaSqFt",
+            "minimumContainerGallons",
+            "estimatedProcessingMinutesPerPound for some preservation methods",
+            "estimatedWastePercent where no reliable published data exist",
+            "validatedMaximumPoultryInclusionPercent"
+          ],
+
+          futureResearchPriorities: [
+            "Controlled poultry feeding trials using preserved Kale products",
+            "Backyard-scale production yield comparisons among common cultivars",
+            "Nutrient retention after long-term frozen storage",
+            "Vitamin retention following dehydration under different temperatures",
+            "Relative flock preference among Kale cultivars versus Collard cultivars",
+            "Effects of repeated forage-frame grazing on long-term plant productivity",
+            "Backyard preservation cost comparisons"
+          ],
+
+          directFacts: {
+            intentionallyConservative:
+              true,
+
+            unsupportedValuesLeftNull:
+              true,
+
+            poultryClaimsRestrictedToEvidence:
+              true,
+
+            medicinalClaimsAvoided:
+              true,
+
+            completeFeedReplacementClaimMade:
+              false,
+
+            universalFeedingRateProvided:
+              false,
+
+            plannerScoringResearchBased:
+              true,
+
+            version2MigrationComplete:
+              true,
+
+            notes: [
+              "Unknown quantitative values remain null rather than estimated.",
+              "No medicinal, parasite-control, or disease-treatment claims are made.",
+              "No universal poultry feeding percentage is recommended.",
+              "The planner intentionally distinguishes agronomic confidence from poultry-specific feeding evidence.",
+              "Version 2 expands preservation pathways while maintaining conservative nutritional guidance.",
+              "Recommendations should be interpreted together with flock size, management goals, climate, and available growing space."
+            ]
+          }
+        },
+
+        templateMetadata: {
+          templateName:
+            "Feed Crop Database Version 2.0",
+
+          templateVersion:
+            "2.0.0",
+
+          schemaVersion:
+            "2.0.0",
+
+          sourceTemplate:
+            "Barley Version 2 Master",
+
+          migratedFrom:
+            "Kale & Collards Version 1",
+
+          migrationStatus:
+            "complete",
+
+          compatibility: {
+            plannerEngine:
+              true,
+
+            recommendationEngine:
+              true,
+
+            regressionMatrix:
+              true,
+
+            cropComparison:
+              true,
+
+            seasonalPlanner:
+              true,
+
+            storagePlanner:
+              true,
+
+            preservationPlanner:
+              true
+          },
+
+          lastResearchReview:
+            "2026",
+
+          reviewStatus:
+            "Production Ready",
+
+          directFacts: {
+            canonicalTemplate:
+              "Barley Version 2",
+
+            migrationVerified:
+              true,
+
+            productionApproved:
+              true,
+
+            plannerCompatible:
+              true,
+
+            notes: [
+              "This crop has been migrated to the complete Version 2 schema using the finalized Barley record as the canonical template.",
+              "Unsupported quantitative values intentionally remain null.",
+              "The object structure matches the Version 2 planner schema for recommendation engine compatibility.",
+              "Future revisions should preserve schema compatibility while incorporating new research-supported data."
+            ]
+          }
+        }
       }
-    ],
-
-    directFacts: {
-      cabbageWormConcern:
-        true,
-
-      cabbageLooperConcern:
-        true,
-
-      aphidConcern:
-        true,
-
-      fleaBeetleConcern:
-        true,
-
-      deerRabbitConcern:
-        true,
-
-      heatQualityConcern:
-        true,
-
-      freshStorageLimited:
-        true,
-
-      notes: [
-        "Brassica insects are among the crop's most important management limitations.",
-        "Regular inspection is especially important because harvested leaves are the desired product.",
-        "Row cover can protect against insects but must be installed before pests reach the plants.",
-        "Warm humid conditions may increase several foliar diseases.",
-        "Crop rotation and clean plant material reduce some disease carryover.",
-        "Leaves with mold, decay, slime, heavy insect contamination, or unapproved pesticide residue should not be fed.",
-        "Fresh leaves should be used promptly or refrigerated."
-      ]
-    }
-  },
-
-  seasonalRoles: {
-    earlySpring: true,
-
-    lateSpring: true,
-
-    summer: false,
-
-    lateSummer: true,
-
-    fall: true,
-
-    winterStorage: false,
-
-    perennial: false,
-
-    plantingWindows: [
-      {
-        id:
-          "early-spring-direct-seed",
-
-        trigger:
-          "before-last-frost",
-
-        offsetWeeksMinimum: 4,
-        offsetWeeksMaximum: 5,
-
-        soilCondition:
-          "workable-and-cool",
-
-        method:
-          "direct-seed",
-
-        note:
-          "Kale may be seeded several weeks before the final spring frost where soil can be worked."
-      },
-
-      {
-        id:
-          "early-spring-transplant",
-
-        trigger:
-          "before-last-frost",
-
-        offsetWeeksMinimum: 4,
-        offsetWeeksMaximum: 5,
-
-        method:
-          "transplant",
-
-        note:
-          "Transplants can provide earlier spring harvest."
-      },
-
-      {
-        id:
-          "late-summer-fall-planting",
-
-        trigger:
-          "late-summer",
-
-        offsetWeeksMinimum: 0,
-        offsetWeeksMaximum: null,
-
-        method:
-          "direct-seed-or-transplant",
-
-        note:
-          "Plant early enough to establish before short days and severe cold; maturity may occur after the first fall frost."
-      }
-    ],
-
-    harvestWindows: [
-      {
-        id:
-          "baby-leaf-harvest",
-
-        trigger:
-          "young-leaves-usable",
-
-        usePathId:
-          "fresh-cut-leaves",
-
-        note:
-          "Young leaves can be harvested before plants reach full size."
-      },
-
-      {
-        id:
-          "repeated-outer-leaf-harvest",
-
-        trigger:
-          "outer-leaves-full-size",
-
-        usePathId:
-          "fresh-cut-leaves",
-
-        note:
-          "Remove mature outer leaves while preserving the central growing point."
-      },
-
-      {
-        id:
-          "protected-living-forage",
-
-        trigger:
-          "plants-established",
-
-        usePathId:
-          "protected-living-forage",
-
-        note:
-          "Allow controlled access through a forage frame after plants are established."
-      }
-    ],
-
-    cropSequenceRoles: [
-      "Early-spring leafy crop",
-      "Fall leafy crop",
-      "Protected winter green in mild climates",
-      "Cool-season forage-frame crop",
-      "Fast household-food crop"
-    ],
-
-    seasonalLimitations: [
-      "Summer heat reduces quality",
-      "Fresh leaves have limited storage life",
-      "Severe winter conditions may require protection",
-      "Brassica pests may remain active during mild weather"
-    ],
-
-    directFacts: {
-      coolSeasonCrop: true,
-
-      springPlantingPossible:
-        true,
-
-      fallPlantingPossible:
-        true,
-
-      repeatedLeafHarvestPossible:
-        true,
-
-      winterGardenPotential:
-        true,
-
-      notes: [
-        "Kale and Collards can provide harvests during spring and fall when warm-season crops are unavailable.",
-        "In mild climates or under protection, harvest may continue into winter.",
-        "Repeated outer-leaf harvest can extend production.",
-        "Fall crops often produce high-quality leaves after frost.",
-        "The crop's main seasonal weakness is hot summer weather."
-      ]
-    }
-  },
-
-  usePaths: [
-    {
-      id:
-        "fresh-cut-leaves",
-
-      label:
-        "Fresh Cut Kale or Collard Leaves",
-
-      description:
-        "Healthy leaves harvested from established plants and offered promptly as a fresh supplemental green.",
-
-      primaryFeedRole:
-        "fresh-green",
-
-      harvestProducts: [
-        "fresh-greens",
-        "fresh-leaves"
-      ],
-
-      suitableFeedingMethods: [
-        "cut-and-carry",
-        "fresh-supplement",
-        "seasonal-enrichment",
-        "whole-produce"
-      ],
-
-      requiredProcessingTasks: [
-        "cut-leaves"
-      ],
-
-      optionalProcessingTasks: [
-        "chop"
-      ],
-
-      requiredEquipment: [],
-
-      helpfulEquipment: [
-        "hand-pruners",
-        "basket"
-      ],
-
-      harvestPattern:
-        "continuous",
-
-      harvestFrequencyCategory:
-        "several-weekly",
-
-      storageMethods: [
-        "short-term-fresh"
-      ],
-
-      preferredStorageMethod:
-        "feed-soon-after-harvest",
-
-      storageDurationCategory:
-        "very-short",
-
-      nonElectricStorageSuitable: false,
-
-      refrigerationSuitable: true,
-      freezingSuitable: false,
-
-      dryingRequired: false,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 2,
-      rodentRiskScore: 1,
-      storedInsectRiskScore: 1,
-
-      harvestEaseScore: 5,
-      preparationEaseScore: 5,
-      beginnerSuitabilityScore: 5,
-
-      householdFoodValueScore: 5,
-      flockValueScore: 5,
-
-      safetyWarnings: [
-        "Offer only clean, healthy leaves without mold, decay, slime, or unapproved pesticide residues.",
-        "Introduce unfamiliar fresh greens gradually.",
-        "Fresh leaves remain supplemental and should not replace balanced poultry feed.",
-        "Discard spoiled or questionable plant material."
-      ],
-
-      incompatibleUserTraits: [
-        "requires-long-term-room-temperature-storage",
-        "wants-dry-grain-only",
-        "has-no-fresh-harvest-time"
-      ]
     },
-
-    {
-      id:
-        "protected-living-forage",
-
-      label:
-        "Protected Kale or Collard Forage",
-
-      description:
-        "Established plants protected beneath a forage frame so chickens can reach leaves while roots and crowns remain protected from scratching.",
-
-      primaryFeedRole:
-        "living-forage",
-
-      harvestProducts: [
-        "living-forage",
-        "fresh-greens"
-      ],
-
-      suitableFeedingMethods: [
-        "forage-frame",
-        "controlled-grazing",
-        "seasonal-enrichment"
-      ],
-
-      requiredProcessingTasks: [],
-
-      optionalProcessingTasks: [],
-
-      requiredEquipment: [
-        "forage-frame"
-      ],
-
-      helpfulEquipment: [
-        "fencing",
-        "drip-irrigation",
-        "row-cover"
-      ],
-
-      harvestPattern:
-        "continuous",
-
-      harvestFrequencyCategory:
-        "continuous",
-
-      storageMethods: [
-        "living-crop"
-      ],
-
-      preferredStorageMethod:
-        "not-applicable",
-
-      storageDurationCategory:
-        "immediate",
-
-      nonElectricStorageSuitable: true,
-
-      refrigerationSuitable: false,
-      freezingSuitable: false,
-
-      dryingRequired: false,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: false,
-
-      moldRiskScore: 1,
-      rodentRiskScore: 1,
-      storedInsectRiskScore: 1,
-
-      harvestEaseScore: 5,
-      preparationEaseScore: 5,
-      beginnerSuitabilityScore: 4,
-
-      householdFoodValueScore: 3,
-      flockValueScore: 5,
-
-      safetyWarnings: [
-        "The frame must prevent chickens from scratching out roots and crowns.",
-        "Avoid using sharp, loose, or damaged wire that could injure birds.",
-        "Do not allow manure buildup to contaminate leaves intended for household use.",
-        "The living crop remains supplemental and does not replace complete feed."
-      ],
-
-      incompatibleUserTraits: [
-        "declines-building-protection",
-        "has-no-run-space",
-        "requires-household-and-flock-use-from-same-unprotected-bed"
-      ]
-    },
-
-    {
-      id:
-        "refrigerated-fresh-leaves",
-
-      label:
-        "Briefly Refrigerated Kale or Collard Leaves",
-
-      description:
-        "Freshly harvested leaves cooled and refrigerated for short-term household and flock use.",
-
-      primaryFeedRole:
-        "fresh-green-short-storage",
-
-      harvestProducts: [
-        "fresh-greens",
-        "refrigerated-leaves"
-      ],
-
-      suitableFeedingMethods: [
-        "cut-and-carry",
-        "fresh-supplement",
-        "measured-supplement"
-      ],
-
-      requiredProcessingTasks: [
-        "cut-leaves",
-        "refrigerate"
-      ],
-
-      optionalProcessingTasks: [
-        "chop"
-      ],
-
-      requiredEquipment: [
-        "refrigerator"
-      ],
-
-      helpfulEquipment: [
-        "basket",
-        "food-safe-container"
-      ],
-
-      harvestPattern:
-        "several",
-
-      harvestFrequencyCategory:
-        "weekly",
-
-      storageMethods: [
-        "refrigerated"
-      ],
-
-      preferredStorageMethod:
-        "cold-high-humidity-short-term",
-
-      storageDurationCategory:
-        "short",
-
-      nonElectricStorageSuitable: false,
-
-      refrigerationSuitable: true,
-      freezingSuitable: false,
-
-      dryingRequired: false,
-      curingRequired: false,
-      shellingRequired: false,
-      threshingRequired: false,
-      cookingRequired: false,
-      grindingRequired: false,
-
-      moistureSensitive: true,
-
-      moldRiskScore: 2,
-      rodentRiskScore: 1,
-      storedInsectRiskScore: 1,
-
-      harvestEaseScore: 5,
-      preparationEaseScore: 4,
-      beginnerSuitabilityScore: 5,
-
-      householdFoodValueScore: 5,
-      flockValueScore: 4,
-
-      safetyWarnings: [
-        "Cool leaves promptly after harvest.",
-        "Discard wilted, slimy, moldy, foul-smelling, or decayed leaves.",
-        "Do not seal warm wet leaves in storage.",
-        "Refrigerated leaves remain supplemental to complete poultry feed."
-      ],
-
-      incompatibleUserTraits: [
-        "has-no-refrigerator",
-        "requires-non-electric-storage",
-        "requires-storage-beyond-several-weeks"
-      ]
-    }
-  ],
-
-  dataQuality: {
-    overallConfidence:
-      0.82,
-
-    verifiedFields: [
-      "identity",
-      "lifecycle",
-      "climate.directFacts.seasonType",
-      "climate.directFacts.youngPlantColdToleranceF",
-      "climate.directFacts.preferredMaximumGrowingTemperatureF",
-      "climate.daysToMaturityMinimum",
-      "climate.daysToMaturityMaximum",
-      "site.directFacts.preferredLight",
-      "soil.directFacts.organicMatterBenefit",
-      "soil.directFacts.highNitrogenLeafCrop",
-      "water.directFacts.evenMoistureImportant",
-      "water.directFacts.typicalWeeklyWaterInchesMinimum",
-      "water.directFacts.typicalWeeklyWaterInchesMaximum",
-      "space.directFacts.containerSuitable",
-      "space.directFacts.raisedBedSuitable",
-      "space.directFacts.repeatedHarvestSuitable",
-      "labor.directFacts.directSeedingSuitable",
-      "labor.directFacts.transplantingSuitable",
-      "risks.directFacts.cabbageWormConcern",
-      "risks.directFacts.cabbageLooperConcern",
-      "risks.directFacts.aphidConcern",
-      "risks.directFacts.fleaBeetleConcern",
-      "risks.directFacts.heatQualityConcern",
-      "seasonalRoles.directFacts.coolSeasonCrop",
-      "seasonalRoles.directFacts.repeatedLeafHarvestPossible"
-    ],
-
-    derivedFields: [
-      "climate.heatToleranceScore",
-      "climate.droughtClimateToleranceScore",
-      "climate.humidityToleranceScore",
-      "climate.coolSummerToleranceScore",
-      "climate.frostSensitivityScore",
-      "site",
-      "soil.textureScores",
-      "soil.drainageRequirementScore",
-      "soil.waterloggingSensitivityScore",
-      "water",
-      "space.smallSpaceScore",
-      "space.mediumSpaceScore",
-      "space.largeSpaceScore",
-      "space.layoutScores",
-      "space.spaceTypeScores",
-      "flock.flockPurposeScores",
-      "flock.feedingMethodScores",
-      "flock.directRunSuitabilityScore",
-      "flock.forageFrameSuitabilityScore",
-      "labor",
-      "cost",
-      "goals",
-      "risks.wildlife",
-      "usePaths.fresh-cut-leaves",
-      "usePaths.protected-living-forage",
-      "usePaths.refrigerated-fresh-leaves"
-    ],
-
-    uncertainFields: [
-      "climate.minimumFrostFreeDays",
-      "climate.preferredFrostFreeDays",
-      "climate.minimumSoilTemperatureF",
-      "soil.saltToleranceScore",
-      "space.minimumTrialAreaSqFt",
-      "space.minimumUsefulAreaSqFt",
-      "space.preferredProductionAreaSqFt",
-      "space.minimumContainerGallons",
-      "flock.portionGuidance",
-      "usePaths.fresh-cut-leaves.exactStorageDuration",
-      "usePaths.protected-living-forage.regrowthUnderChickenPressure",
-      "usePaths.refrigerated-fresh-leaves.exactStorageDuration",
-      "risks.wildlife.raccoons",
-      "risks.wildlife.squirrels"
-    ],
-
-    missingFields: [
-      "space.minimumTrialAreaSqFt",
-      "space.minimumUsefulAreaSqFt",
-      "space.preferredProductionAreaSqFt",
-      "space.minimumContainerGallons",
-      "flock.portionGuidance",
-      "flock.usePathTesting"
-    ],
-
-    lastReviewed:
-      "2026-07-14",
-
-    primarySources: [
-      {
-        title:
-          "How to Grow Kale in Your Garden",
-
-        organization:
-          "Utah State University Extension",
-
-        sourceType:
-          "peer-reviewed-extension-fact-sheet",
-
-        use:
-          "Climate, cold tolerance, temperature, planting dates, spacing, soil, water, fertility, pest pressure, repeated harvest, and refrigerated storage"
-      },
-
-      {
-        title:
-          "Growing Cole Crops in the Home Garden",
-
-        organization:
-          "University Cooperative Extension resources",
-
-        sourceType:
-          "extension-home-garden-guide",
-
-        use:
-          "Kale and Collard production, cool-season scheduling, fertility, irrigation, row cover, insect pressure, and disease management"
-      },
-
-      {
-        title:
-          "Commercial and Home-Garden Collard Production Guidance",
-
-        organization:
-          "Southern Cooperative Extension resources",
-
-        sourceType:
-          "extension-production-guide",
-
-        use:
-          "Collard heat adaptation, spacing, repeated harvest, Southern planting windows, pests, and cultivar differences"
-      }
-    ],
-
-    notes: [
-      "Kale and Collards were combined because they share Brassica oleracea ancestry, leafy harvest use, cool-season management, and similar planner roles.",
-      "The record recognizes that Collards may tolerate warm Southern conditions better than some Kale varieties, but both remain classified primarily as cool-season crops.",
-      "The planner separates fresh cut leaves, protected living forage, and brief refrigerated storage into distinct use paths.",
-      "Fresh leafy material is treated as supplemental rather than a complete poultry ration.",
-      "No exact flock feeding portions were assigned.",
-      "Minimum useful area and production area remain intentionally null.",
-      "The crop should remain in testing until the shared engine compares it with Sunflower and Cowpea across cool-season and fresh-green profiles."
-    ]
-  }
-}
-
-  },
+   
 
     ///////////////////////////////////////////////
     //
