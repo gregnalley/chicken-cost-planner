@@ -7798,6 +7798,30 @@ const BCP_FEED_CROPS = {
           flockValueScore:
             4,
 
+                     expectedProcessingTimeLevel:
+            "high-daily-attention",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1, 
+
           safetyWarnings: [
             "Use only untreated seed.",
             "Discard the entire mat if mold, slime, sour odor, or fermentation develops.",
@@ -7996,6 +8020,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             3,
+
+                     expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1, 
 
           safetyWarnings: [
             "Young Sunflower plants can be destroyed quickly by unrestricted poultry access.",
@@ -8196,6 +8244,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             4,
+
+                     expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1, 
 
           safetyWarnings: [
             "Complete the intended seed-head harvest before allowing flock access.",
@@ -8436,6 +8508,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             1,
+
+                    expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            0,
+
+          preservationFlexibilityScore:
+            5,  
 
           safetyWarnings: [
             "This is a non-feed pathway.",
