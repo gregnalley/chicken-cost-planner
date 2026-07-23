@@ -11498,8 +11498,14 @@
       initialize:
         initializeDevelopmentPage,
 
+      initializeDevelopmentPage:
+        initializeDevelopmentPage, 
+
       refresh:
         refreshDevelopmentPage,
+
+      refreshDevelopmentPage:
+        refreshDevelopmentPage,  
 
       getHealth:
         getUiHealth,
