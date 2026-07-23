@@ -10129,6 +10129,9 @@ const BCP_FEED_CROPS = {
         icon:
           "🫘",
 
+        scientificName:
+          "Vigna unguiculata",  
+
         cropCategory:
           "annual-legume",
 
@@ -12856,7 +12859,7 @@ const BCP_FEED_CROPS = {
         providesStoredWinterFeed:
           true,
 
-        springFunctions: [
+        spring: [
           "Late-spring establishment after soil warming",
           "Early vegetative growth in warm regions",
           "Initial nitrogen fixation",
@@ -12864,7 +12867,7 @@ const BCP_FEED_CROPS = {
           "Early cut-and-carry forage in long-season climates"
         ],
 
-        summerFunctions: [
+        summer: [
           "Fresh foliage production",
           "Tender vine-tip production",
           "Immature-pod production",
@@ -12880,7 +12883,7 @@ const BCP_FEED_CROPS = {
           "Rotational poultry forage"
         ],
 
-        fallFunctions: [
+        autumn: [
           "Fresh-pea harvest",
           "Dry-pod harvest",
           "Mature-seed harvest",
@@ -12891,7 +12894,7 @@ const BCP_FEED_CROPS = {
           "Soil cover until frost termination"
         ],
 
-        winterFunctions: [
+        winter: [
           "Stored whole dry seed",
           "Cooked seed prepared from storage",
           "Heat-treated seed prepared from storage",
