@@ -11991,6 +11991,21 @@ const BCP_FEED_CROPS = {
         wildlifeRiskScore:
           4,
 
+        rodentAttractionScore:
+        3, 
+
+        birdLossRiskScore:
+          4,
+
+        deerBrowsingRiskScore:
+          2,
+
+        rabbitBrowsingRiskScore:
+          2,
+
+        stormDamageRiskScore:
+          2,  
+
         chickenDamageRiskScore:
           5,
 
@@ -12000,10 +12015,13 @@ const BCP_FEED_CROPS = {
         shatteringRiskScore:
           3,
 
+        postHarvestLossRiskScore:
+          3, 
+
         moldRiskScore:
           4,
 
-        storedSeedPestRiskScore:
+        storagePestRiskScore:
           5,
 
         processingFailureRiskScore:
@@ -12023,6 +12041,12 @@ const BCP_FEED_CROPS = {
 
         treatedSeedRiskScore:
           5,
+
+        mechanicalHarvestSuitabilityScore:
+          3,
+
+        mechanicalProcessingSuitabilityScore:
+          3, 
 
         majorRisks: [
           {
