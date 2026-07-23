@@ -28212,6 +28212,14 @@ const BCP_FEED_CROPS = {
             "Inspect every fruit before feeding."
           ],
 
+                    safetyWarnings: [
+            "Storage rot may begin internally before obvious external symptoms appear.",
+            "Bruised or cracked fruit deteriorates much faster than undamaged fruit.",
+            "Discard any fruit showing mold, fermentation, leakage, soft rot, or foul odor.",
+            "Do not assume all cultivars have the same storage life.",
+            "Inspect stored fruit regularly throughout the storage season."
+          ],
+
           plannerNotes: [
             "This should receive one of the highest storage scores within the planner.",
             "Do not confuse whole-storage scores with fresh split fruit scores."
@@ -28412,6 +28420,14 @@ const BCP_FEED_CROPS = {
             "Do not add oils.",
             "Do not feed while hot.",
             "Discard spoiled leftovers."
+          ],
+
+                    safetyWarnings: [
+            "Cooked flesh spoils rapidly if left at warm temperatures.",
+            "Do not feed cooked flesh containing butter, salt, oils, spices, sugar, or sauces.",
+            "Allow cooked flesh to cool completely before feeding.",
+            "Discard leftovers showing mold, fermentation, slime, or unpleasant odor.",
+            "Cooked flesh is a supplement and should not replace a balanced poultry ration."
           ],
 
           plannerNotes: [
@@ -29327,6 +29343,14 @@ const BCP_FEED_CROPS = {
             "Continue feeding a complete poultry ration."
           ],
 
+                    safetyWarnings: [
+            "Fresh seeds have a short storage life because of their moisture content.",
+            "Discard seeds showing mold, fermentation, or spoilage.",
+            "Feed only moderate amounts because pumpkin seeds are naturally high in fat.",
+            "Do not rely on pumpkin seeds as a proven deworming treatment.",
+            "Fresh seeds should supplement—not replace—a complete poultry ration."
+          ],
+
           plannerNotes: [
             "Fresh seeds are nutritionally distinct from fresh flesh.",
             "This pathway should rank as a seasonal supplement rather than a primary feed."
@@ -29552,6 +29576,14 @@ const BCP_FEED_CROPS = {
             "Store in airtight containers.",
             "Feed only measured quantities.",
             "Do not use as a complete ration."
+          ],
+
+                    safetyWarnings: [
+            "Seeds that are not completely dry may mold during storage.",
+            "High-fat seeds can become rancid during long storage.",
+            "Discard any seeds with mold, insects, moisture, or rancid odor.",
+            "Store in airtight containers in a cool, dry location.",
+            "Feed measured quantities rather than allowing unrestricted consumption."
           ],
 
           plannerNotes: [
