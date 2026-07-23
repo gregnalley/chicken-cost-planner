@@ -2578,7 +2578,7 @@
   */
 
 
-  function validateCropSeasonalRoles(
+    function validateCropSeasonalRoles(
     crop,
     validation
   ) {
@@ -2599,60 +2599,65 @@
 
     }
 
+
     const seasonalRoles =
-      getCropSeasonalRoles(
-        crop
-      );
+      record?.seasonalRoles;
+
 
     if (
-      seasonalRoles.length ===
-        0
+      Array.isArray(
+        seasonalRoles
+      )
     ) {
 
-      addCropValidationWarning(
-        validation,
-        "EMPTY_SEASONAL_ROLES",
-        "The crop contains no defined seasonal roles.",
-        "seasonalRoles"
-      );
+      if (
+        seasonalRoles.length ===
+          0
+      ) {
 
-      return;
+        addCropValidationWarning(
+          validation,
+          "EMPTY_SEASONAL_ROLES",
+          "The crop contains no defined seasonal roles.",
+          "seasonalRoles"
+        );
 
-    }
+        return;
 
-    seasonalRoles.forEach(
-      (
-        seasonalRole,
-        index
-      ) => {
+      }
 
-        if (
-          seasonalRole ===
-            null ||
-          seasonalRole ===
-            undefined
-        ) {
 
-          addCropValidationWarning(
-            validation,
-            "EMPTY_SEASONAL_ROLE",
-            `Seasonal role ${index + 1} is empty.`,
-            `seasonalRoles[${index}]`
-          );
-
-          return;
-
-        }
-
-        if (
-          typeof seasonalRole ===
-            "object" &&
-          !Array.isArray(
-            seasonalRole
-          )
-        ) {
+      seasonalRoles.forEach(
+        (
+          seasonalRole,
+          index
+        ) => {
 
           if (
+            seasonalRole ===
+              null ||
+            seasonalRole ===
+              undefined
+          ) {
+
+            addCropValidationWarning(
+              validation,
+              "EMPTY_SEASONAL_ROLE",
+              `Seasonal role ${index + 1} is empty.`,
+              `seasonalRoles[${index}]`
+            );
+
+            return;
+
+          }
+
+
+          if (
+            typeof seasonalRole ===
+              "object" &&
+            !Array.isArray(
+              seasonalRole
+            ) &&
             !normalizeText(
               seasonalRole.id
             ) &&
@@ -2671,9 +2676,188 @@
           }
 
         }
+      );
+
+      return;
+
+    }
+
+
+    if (
+      !isPlainObject(
+        seasonalRoles
+      )
+    ) {
+
+      addCropValidationError(
+        validation,
+        "INVALID_SEASONAL_ROLES",
+        "The seasonalRoles section must be an object or array.",
+        "seasonalRoles"
+      );
+
+      return;
+
+    }
+
+
+    const seasonNames = [
+
+      "spring",
+
+      "summer",
+
+      "autumn",
+
+      "winter"
+
+    ];
+
+
+    const populatedSeasons =
+      seasonNames.filter(
+        seasonName =>
+          Array.isArray(
+            seasonalRoles[
+              seasonName
+            ]
+          ) &&
+          seasonalRoles[
+            seasonName
+          ].length >
+            0
+      );
+
+
+    if (
+      populatedSeasons.length ===
+        0
+    ) {
+
+      addCropValidationWarning(
+        validation,
+        "EMPTY_SEASONAL_ROLES",
+        "The crop contains no populated seasonal-role arrays.",
+        "seasonalRoles"
+      );
+
+    }
+
+
+    seasonNames.forEach(
+      seasonName => {
+
+        if (
+          !hasOwnField(
+            seasonalRoles,
+            seasonName
+          )
+        ) {
+
+          addCropValidationWarning(
+            validation,
+            "MISSING_SEASONAL_ROLE_PERIOD",
+            `The seasonalRoles section is missing "${seasonName}".`,
+            `seasonalRoles.${seasonName}`
+          );
+
+          return;
+
+        }
+
+
+        const activities =
+          seasonalRoles[
+            seasonName
+          ];
+
+
+        if (
+          !Array.isArray(
+            activities
+          )
+        ) {
+
+          addCropValidationWarning(
+            validation,
+            "INVALID_SEASONAL_ROLE_PERIOD",
+            `The "${seasonName}" seasonal role must be an array.`,
+            `seasonalRoles.${seasonName}`
+          );
+
+          return;
+
+        }
+
+
+        activities.forEach(
+          (
+            activity,
+            index
+          ) => {
+
+            if (
+              !normalizeText(
+                activity
+              )
+            ) {
+
+              addCropValidationWarning(
+                validation,
+                "EMPTY_SEASONAL_ACTIVITY",
+                `The "${seasonName}" seasonal role contains an empty activity.`,
+                `seasonalRoles.${seasonName}[${index}]`
+              );
+
+            }
+
+          }
+        );
 
       }
     );
+
+
+    if (
+      hasOwnField(
+        seasonalRoles,
+        "plannerSeasonScores"
+      ) &&
+      !isPlainObject(
+        seasonalRoles
+          .plannerSeasonScores
+      )
+    ) {
+
+      addCropValidationWarning(
+        validation,
+        "INVALID_SEASONAL_SCORE_SECTION",
+        "plannerSeasonScores should be an object.",
+        "seasonalRoles.plannerSeasonScores"
+      );
+
+    }
+
+
+    if (
+      hasOwnField(
+        seasonalRoles,
+        "directFacts"
+      ) &&
+      !isPlainObject(
+        seasonalRoles
+          .directFacts
+      )
+    ) {
+
+      addCropValidationWarning(
+        validation,
+        "INVALID_SEASONAL_DIRECT_FACTS",
+        "Seasonal directFacts should be an object.",
+        "seasonalRoles.directFacts"
+      );
+
+    }
 
   }
 
