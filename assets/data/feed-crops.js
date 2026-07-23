@@ -11988,11 +11988,14 @@ const BCP_FEED_CROPS = {
         nematodeRiskScore:
           4,
 
+        wildlifePressureScore:
+          4,  
+
         wildlifeRiskScore:
           4,
 
         rodentAttractionScore:
-        3, 
+          3, 
 
         birdLossRiskScore:
           4,
