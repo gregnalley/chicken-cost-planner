@@ -58862,118 +58862,139 @@ const BCP_FEED_CROPS = {
       "Cool Season",
 
     status:
-      "Initial Research Complete",
+      "Research Complete",
 
     summary:
-      "Oats are a cool-season annual cereal that can provide fresh vegetative forage, whole mature seed heads, or dry stored grain for adult chickens. They are easy to establish in suitable climates and also provide cover-crop, erosion-control, and soil-building value, but ordinary hulled oats are relatively high in fiber and lower in usable poultry energy than corn, millet, or grain sorghum.",
+      "Oats are a cool-season annual cereal that can provide young vegetative forage, mature grain-bearing heads, threshed whole grain, processed grain, seasonal ground cover, and crop-residue value. Oats establish readily under suitable cool conditions and can support forage frames, rotational paddocks, enrichment feeding, winter grain storage, erosion control, weed suppression, residual-nitrogen capture, and organic-matter production. Ordinary covered oats retain a fibrous hull and generally provide less usable poultry energy than Corn or Grain Sorghum, while beta-glucans and substantial fiber limit their value as an unrestricted poultry grain. Hull-less or naked oats differ materially from ordinary covered oats and must not be treated as nutritionally identical products.",
 
     chickenUse: {
       edibleParts: [
         "Young vegetative leaves and shoots",
+        "Tender green oat forage",
         "Mature oat grain",
-        "Whole mature seed heads",
-        "Threshed whole grain",
-        "Coarsely ground grain"
+        "Whole mature oat panicles",
+        "Threshed whole oat grain",
+        "Cracked oat grain",
+        "Coarsely ground oat grain"
       ],
 
       primaryValue: [
-        "Cool-season fresh forage",
-        "Moderate carbohydrate energy",
-        "Moderate protein",
-        "Pecking and foraging enrichment",
-        "Dry grain storage",
-        "Seasonal ground cover"
+        "Protected cool-season living forage",
+        "Cut-and-carry fresh greens",
+        "Moderate-energy supplemental grain",
+        "Whole-head pecking enrichment",
+        "Dry winter grain storage",
+        "Seasonal pasture diversity",
+        "Cool-season ground cover",
+        "Residual-nitrogen capture",
+        "Erosion control",
+        "Compost and residue biomass"
       ],
 
       feedingForms: [
         "Protected living forage",
+        "Controlled rotational grazing",
         "Cut-and-carry young greens",
-        "Whole dried seed heads",
+        "Whole mature oat heads",
         "Threshed whole grain",
+        "Cracked grain",
         "Coarsely ground grain",
-        "A measured ingredient in a properly balanced poultry ration"
+        "A measured ingredient in a professionally or accurately formulated poultry ration",
+        "Postharvest gleaning"
       ],
 
       bestFor: [
-        "Adult chickens receiving a complete base ration",
+        "Established adult chickens receiving a complete base ration",
         "Cool-season feed gardens",
         "Protected forage frames",
-        "Rotational chicken areas",
-        "Small-flock enrichment",
-        "Dry winter grain storage",
-        "Growers seeking a dual-purpose forage and grain crop"
+        "Rotational chicken paddocks",
+        "Confined flocks needing fresh forage enrichment",
+        "Pastured flocks needing cool-season plant diversity",
+        "Small flocks receiving whole-head enrichment",
+        "Growers seeking dry winter grain storage",
+        "Growers seeking a dual-purpose forage and grain crop",
+        "Growers seeking seasonal cover-crop and soil-protection value"
       ],
 
       supplementOnly:
         true,
 
       preparationNotes:
-        "For fresh forage, allow oats to establish before permitting controlled access and use the crop while growth remains leafy and vegetative. For grain, allow seed heads to mature, harvest promptly when grain is dry enough to handle safely, finish drying under cover with good airflow, and thresh, clean, or grind only when the chosen use path requires it.",
+        "For living forage or cut-and-carry greens, establish oats in clean soil and use the crop while leaves remain young, healthy, and vegetative. Protect new seedlings from unrestricted flock access because chickens may uproot, scratch out, or overgraze the stand. For grain or whole-head use, allow panicles and kernels to mature, harvest promptly, protect the crop from rain and wild birds, and dry harvested material thoroughly with strong airflow. Thresh, winnow, clean, crack, or grind only when required by the selected use path. Store only sound, clean, cool, adequately dried grain or heads in a dry and rodent-resistant location.",
 
       safetyNotes:
-        "Oats should supplement rather than replace an age-appropriate complete poultry ration. Ordinary hulled oats are relatively high in fiber, and large amounts may dilute dietary energy, amino acids, calcium, vitamins, and minerals. Do not feed chemically treated planting seed or grain that is moldy, musty, damp, heated, insect-damaged, rodent-contaminated, rancid, or otherwise questionable."
+        "Oats must supplement rather than replace an age-appropriate complete poultry ration unless they are included as one ingredient in a properly formulated complete feed. Ordinary covered oats contain substantial hull fiber and generally provide less usable poultry energy than Corn or Grain Sorghum. Oat beta-glucans may reduce nutrient utilization and may contribute to digestive viscosity, sticky droppings, wet litter, or reduced performance when unsuitable quantities are fed. Oats are low in calcium and do not supply a complete amino-acid, vitamin, or mineral profile for laying hens. Never feed chemically treated planting seed. Do not feed oats or oat forage that is moldy, musty, sour, heated, damp, rancid, diseased, excessively insect-damaged, rodent-contaminated, flood-contaminated, chemically contaminated, or otherwise questionable."
     },
 
     nutrition: {
       basis:
-        "Approximate values for ordinary whole hulled oat grain. Composition varies with variety, hull percentage, climate, fertility, grain quality, and processing. Naked oats, oat groats, rolled oats, and oat hulls are nutritionally different products.",
+        "Approximate values describe ordinary whole covered or hulled oat grain and are not guaranteed values for every harvested lot. Composition varies with cultivar, hull percentage, test weight, growing conditions, fertility, maturity, weather damage, storage condition, and analytical method. Ordinary covered oats, hull-less or naked oats, dehulled oat groats, rolled oats, oat flour, oat bran, and isolated oat hulls are nutritionally different products and must not be represented as interchangeable.",
 
       crudeProteinPercent:
-        "Approximately 11% for ordinary whole hulled oats",
+        "Approximately 11%, with meaningful variation among cultivars, grain lots, hull proportions, and growing environments",
 
       fatPercent:
-        "Approximately 4%",
+        "Approximately 4%, with the majority concentrated in the groat and with substantial cultivar and product-form variation",
 
       fiberPercent:
-        "Approximately 10.5% crude fiber on average, with substantial variation caused largely by hull percentage",
+        "Approximately 10.5% crude fiber for ordinary whole covered oats, with substantial variation driven largely by hull proportion and grain quality",
 
       calciumPercent:
         "Approximately 0.10%",
 
       phosphorusPercent:
-        "Approximately 0.25% total phosphorus; available phosphorus may be substantially lower",
+        "Approximately 0.25% total phosphorus; the fraction biologically available to poultry is lower than total phosphorus",
 
       notableNutrients: [
         "Starch",
-        "Moderate protein",
+        "Moderate crude protein",
         "Unsaturated fat",
         "Linoleic acid",
         "Beta-glucans",
         "Phosphorus",
         "Manganese",
-        "Magnesium"
+        "Magnesium",
+        "B vitamins",
+        "Dietary fiber"
       ],
 
       limitations: [
-        "The hull raises fiber and reduces usable energy for poultry",
-        "Poultry digest fiber less efficiently than many grazing livestock",
-        "Beta-glucans may reduce nutrient availability and increase digestive viscosity",
-        "Ordinary oats provide less usable energy than corn or grain sorghum",
-        "Oats are low in calcium and do not provide a balanced layer ration",
-        "Naked oats and oat groats should not be compared directly with ordinary whole hulled oats",
-        "Grinding does not correct the grain's mineral or amino-acid imbalance",
-        "Large amounts may displace nutritionally complete poultry feed"
+        "The attached hull substantially increases fiber and reduces usable energy for poultry.",
+        "Hull percentage and test weight can create large nutritional differences among ordinary oat grain lots.",
+        "Ordinary covered oats generally supply less metabolizable energy to poultry than Corn or Grain Sorghum.",
+        "Poultry digest fibrous hull material less efficiently than grazing livestock.",
+        "Oat beta-glucans can increase intestinal viscosity and reduce nutrient utilization.",
+        "Excessive or poorly balanced oat inclusion may contribute to sticky droppings, wet litter, dirty eggs, or reduced performance.",
+        "Oats are not a concentrated protein crop.",
+        "Oat protein does not supply a complete balance of essential amino acids for poultry.",
+        "Oats are low in calcium and cannot meet laying-hen calcium requirements.",
+        "Total phosphorus should not be treated as fully available phosphorus.",
+        "Ordinary covered oats must not be assigned the higher energy or lower fiber characteristics of hull-less oats or oat groats.",
+        "Cracking or grinding changes particle size but does not remove hull fiber, beta-glucans, calcium deficiency, or amino-acid limitations.",
+        "Sprouting increases water content and harvested wet weight but does not create additional feed dry matter.",
+        "Large supplemental servings can displace complete feed and dilute amino acids, calcium, vitamins, trace minerals, and usable energy.",
+        "No universal backyard supplementation percentage is supported for all flock ages, grain types, management systems, or complete feeds."
       ]
     },
 
     growing: {
       sunlight:
-        "Full sun is preferred; approximately 6 or more hours of direct sunlight supports useful forage and grain production",
+        "Full sun is preferred. Approximately 6 or more hours of direct sunlight can support useful vegetative growth, while longer full-sun exposure is preferred for strong tillering, stem strength, heading, grain filling, and mature grain production.",
 
       soilTemperatureMinimumF:
         null,
 
       idealSoilTemperatureF:
-        "Cool, workable soil; oats are commonly planted very early in spring in northern regions or during fall in mild-winter regions",
+        "Cool, moist, workable soil suitable for early direct seeding; an exact universal ideal soil-temperature range is not stored because regional extension recommendations rely primarily on timely early planting and workable field conditions",
 
       frostTolerance:
-        "Moderate during vegetative growth, but winter hardiness varies significantly by variety and oats are generally less winter-hardy than rye or wheat",
+        "Young established oats tolerate cool weather and light frost, but winter survival varies greatly among cultivars. Ordinary oats are generally less winter-hardy than Cereal Rye or winter Wheat, and fall-planted stands may winter-kill where minimum temperatures exceed the cultivar's tolerance.",
 
       heatTolerance:
         "Low to Moderate",
 
       droughtTolerance:
-        "Low to Moderate; oats generally perform best under cool conditions with dependable moisture",
+        "Low to Moderate; oats generally perform best under cool conditions with dependable soil moisture and are less drought-resilient than Proso Millet or Grain Sorghum",
 
       soilPHMinimum:
         5.5,
@@ -58982,7 +59003,7 @@ const BCP_FEED_CROPS = {
         7.0,
 
       waterNeeds:
-        "Moderate; dependable moisture supports germination, tillering, stem development, heading, and grain filling",
+        "Moderate; dependable moisture supports germination, seedling establishment, tillering, stem elongation, heading, flowering, and grain filling, while prolonged saturation and standing water can damage the crop",
 
       directSow:
         true,
@@ -59003,13 +59024,13 @@ const BCP_FEED_CROPS = {
         null,
 
       plantSpacingInches:
-        "Normally planted as a broadcast or drilled stand rather than as individually spaced plants",
+        "Oats are normally established by seeding rate as a drilled, broadcast, or closely spaced continuous stand rather than as individually spaced plants",
 
       rowSpacingInches:
-        "Drill, broadcast, and garden-row spacing vary by intended forage or grain use",
+        "Row spacing varies with drill equipment, cultivation method, forage use, grain use, garden layout, and regional production recommendations",
 
       plantingDepthInches:
-        "Approximately 1 to 1.5 inches in moist soil",
+        "Approximately 1 to 1.5 inches under suitable soil conditions, with final depth adjusted for soil texture, surface moisture, seedbed condition, and regional guidance",
 
       successionPlanting:
         false,
@@ -59021,58 +59042,58 @@ const BCP_FEED_CROPS = {
     regionalPlanting: {
       coldNorth: {
         plantingWindow:
-          "Plant spring oats as soon as soil is workable and field conditions permit. Fall-planted ordinary oats frequently winter-kill unless a locally adapted winter-hardy variety and suitable conditions are available.",
+          "Plant spring oats as early as the soil becomes workable without causing damaging compaction. Early planting allows establishment, tillering, heading, and grain filling during cool conditions. Fall-planted oats are commonly used as a winter-killed cover crop and should not be expected to survive severe winters unless a locally adapted winter-hardy cultivar and suitable microclimate are available.",
 
         harvestWindow:
-          "Young forage may be used during spring and early summer. Grain is generally harvested during summer after heads mature and grain dries."
+          "Use young forage during spring and early summer while growth remains leafy. Harvest grain or mature heads during summer after kernels reach maturity and before prolonged rain, lodging, shattering, birds, or delayed harvest reduce quality."
       },
 
       midwestNortheast: {
         plantingWindow:
-          "Plant spring oats early, commonly as soon as the seedbed can be prepared without causing compaction. Early planting helps the crop develop before summer heat.",
+          "Plant spring oats early, commonly as soon as a suitable seedbed can be prepared without smearing, rutting, or compacting wet soil. Fall oats may be planted for late-season forage or winter-killed cover but should not automatically be assigned dependable winter survival.",
 
         harvestWindow:
-          "Vegetative forage may be cut during spring. Mature grain is generally harvested during midsummer, depending on planting date and variety."
+          "Cut vegetative forage during spring or early summer before excessive stem development. Harvest mature panicles or grain during midsummer, with timing determined by planting date, cultivar, grain maturity, weather, and final storage plan."
       },
 
       upperSouth: {
         plantingWindow:
-          "Plant during fall at the locally recommended date for winter forage or spring grain. Variety winter hardiness is important because severe cold may damage or kill the stand.",
+          "Plant fall oats at locally recommended dates for autumn, winter, and spring forage or for spring grain production. Use locally adapted cultivars because winter hardiness, disease resistance, maturity, and lodging resistance materially affect success. Spring planting may be possible but can expose heading and grain filling to damaging heat.",
 
         harvestWindow:
-          "Forage may be available during fall, winter warm periods, and spring. Grain generally matures during late spring or early summer."
+          "Use vegetative forage from autumn through spring when growth and soil conditions permit. Harvest mature heads or grain during late spring or early summer before increasing heat, humidity, storms, lodging, disease, or rainfall reduces quality."
       },
 
       deepSouth: {
         plantingWindow:
-          "Plant during fall for winter and spring growth. Planting dates vary by latitude and intended forage or grain use, with forage generally planted earlier than grain.",
+          "Plant during autumn for winter and spring growth. Forage plantings may occur earlier than grain plantings, but exact dates must follow local extension guidance because latitude, disease pressure, insect pressure, cultivar maturity, and intended use affect the correct window.",
 
         harvestWindow:
-          "Fresh forage may be available from fall through spring. Grain is generally harvested during late spring before prolonged heat and wet weather reduce quality."
+          "Use fresh vegetative forage from autumn through spring. Harvest mature heads or grain during late spring, before prolonged heat, humidity, rainfall, lodging, disease, or preharvest weathering causes avoidable losses."
       },
 
       southwest: {
         plantingWindow:
-          "Plant during the coolest practical season where irrigation or dependable seasonal moisture is available. Avoid timing grain filling for extreme heat.",
+          "Plant during the coolest locally suitable period when irrigation or dependable seasonal moisture is available. Schedule establishment and reproductive growth to avoid extreme heat during heading and grain filling. Fall or winter planting may be more suitable than spring planting in warm low-elevation areas.",
 
         harvestWindow:
-          "Harvest forage during cool vegetative growth or grain after spring maturity and adequate dry-down."
+          "Use forage during cool vegetative growth. Harvest mature heads or grain after adequate dry-down and before extreme heat, wind, wildlife pressure, irrigation problems, or storm exposure reduces quality."
       },
 
       pacificNorthwest: {
         plantingWindow:
-          "Plant spring oats early where winters are severe. In milder western areas, locally adapted fall planting may be possible.",
+          "Plant spring oats early where winter temperatures threaten survival. In milder western districts, locally adapted fall planting may be suitable for forage, cover, or grain. Planting season and cultivar should follow local small-grain recommendations.",
 
         harvestWindow:
-          "Forage may be used during spring and early summer. Grain generally matures in summer."
+          "Use vegetative forage during spring and early summer. Harvest mature grain during summer after kernels reach maturity and suitable storage moisture, while accounting for regional rainfall and harvest humidity."
       },
 
       coastalWest: {
         plantingWindow:
-          "Plant during the cool rainy season in mild climates or during early spring in colder locations. Local disease pressure and harvest humidity should guide timing.",
+          "Plant during the cool rainy season in mild climates or during early spring in colder coastal and inland locations. Use local cultivar, disease, drainage, and planting-date guidance because extended moisture can increase foliar and grain-quality risks.",
 
         harvestWindow:
-          "Use vegetative forage during the cool growing period and harvest mature grain before prolonged moisture damages seed quality."
+          "Use vegetative growth during the cool growing period. Harvest mature heads or grain before prolonged coastal moisture, fog, rainfall, lodging, sprouting, or disease reduces grain quality."
       }
     },
 
@@ -59102,33 +59123,33 @@ const BCP_FEED_CROPS = {
         null,
 
       storageLife:
-        "Potentially several months when mature grain is adequately dried, cooled, and protected from moisture, heat, insects, rodents, and rancidity",
+        "Potentially several months or longer when mature whole grain is sound, thoroughly dried, cooled, cleaned, and protected from moisture, condensation, heat, insects, rodents, oxidation, rancidity, and chemical contamination; no universal backyard storage duration is assigned",
 
       storageMethod:
-        "Dry mature heads or threshed grain thoroughly with good airflow. Store only cool, sound grain in a dry, dark, food-safe and rodent-resistant container. Inspect periodically for condensation, heating, insects, webbing, rodent contamination, musty odor, caking, discoloration, or visible mold.",
+        "Dry mature oat heads or threshed grain thoroughly under cover with strong airflow. Store only cool, sound, clean grain in a dry, dark, food-safe, and rodent-resistant container or storage area. Keep grain away from concrete moisture, leaking roofs, condensation, chemicals, treated seed, wild birds, and rodents. Inspect repeatedly for heating, moisture migration, caking, webbing, insects, off odors, rancidity, discoloration, sprouting, rodent contamination, and visible mold.",
 
       yieldNotes:
-        "Oats are normally established by seeding rate as a continuous stand rather than as individual plants, so plants-per-area fields remain null. Commercial bushels-per-acre and forage-tonnage figures should not be converted directly into backyard yield promises. Small-plot output depends on variety, planting date, stand density, fertility, weeds, moisture, disease, lodging, bird pressure, harvest timing, threshing efficiency, hull percentage, and final grain moisture."
+        "Oats are normally established by pounds of seed per area as a continuous stand rather than as individually counted plants, so plant-density and yield-per-plant fields remain null. Commercial bushel-per-acre, forage-tonnage, and test-plot yields must not be converted directly into guaranteed backyard pounds per square foot. Small-plot output depends on cultivar, covered or hull-less grain type, planting date, stand density, germination, soil fertility, weed competition, moisture, heat, disease, insects, lodging, shattering, wild birds, deer, harvest timing, panicle handling, drying, threshing efficiency, cleaning losses, hull percentage, test weight, and final grain moisture."
     },
 
     economics: {
       seedCostEstimate:
-        "Usually low when purchased as suitable untreated agricultural seed, although named food-grade, winter-hardy, organic, or hull-less varieties may cost more",
+        "Usually low when purchased as suitable untreated agricultural seed. Named food-grade, certified, organic, winter-hardy, disease-resistant, lodging-resistant, or hull-less cultivars may cost more and may not be locally available.",
 
       equipmentCostEstimate:
-        "Low for a small forage planting. Grain production may add optional costs for wildlife protection, drying screens, fans, threshing, grinding, moisture testing, and rodent-resistant storage.",
+        "Low for a small protected forage or cover-crop planting using ordinary garden tools. Mature grain production may add optional costs for fencing, bird netting, harvesting tools, drying racks, screens, fans, threshing equipment, winnowing equipment, a grain cracker or grinder, a moisture meter, weighing equipment, and rodent-resistant storage.",
 
       irrigationCostLevel:
-        "Low to Moderate",
+        "Low to Moderate in climates with dependable cool-season rainfall; potentially Moderate to High where oats require irrigation to establish, maintain vegetative growth, or complete grain filling",
 
       laborLevel:
-        "Low to Moderate for living forage; Moderate to High when grain is harvested, dried, threshed, cleaned, ground, and stored manually",
+        "Low to Moderate for direct-seeded cover, protected living forage, or cut-and-carry greens; Moderate for whole-head production; Moderate to High when grain is manually harvested, dried, threshed, winnowed, cleaned, cracked or ground, measured, and stored",
 
       potentialFeedSavings:
         null,
 
       economicNotes:
-        "Oats may provide value through cool-season forage, enrichment, erosion control, nitrogen capture, organic matter, and stored grain. On very small plots, the labor required to harvest and process clean grain may exceed its direct market value, while protected forage or whole-head use may remain worthwhile."
+        "Oats can provide combined value through cool-season forage, flock enrichment, seasonal pasture diversity, winter grain storage, erosion control, weed suppression, residual-nitrogen capture, rapid soil cover, compost biomass, straw, and crop rotation. Protected living forage and whole-head enrichment generally require less processing equipment than loose grain. On very small plots, the labor required to harvest and clean loose grain may exceed the market value of the finished grain. Credible universal backyard feed-savings estimates are unavailable, so potentialFeedSavings remains null."
     },
 
     scores: {
@@ -59182,7 +59203,7 @@ const BCP_FEED_CROPS = {
 
     evidence: {
       evidenceStrength:
-        "Strong for commercial grain and forage cultivation, general oat-grain composition, cool-season use, winter-hardiness limitations, and harvest moisture; moderate for general poultry-feed use; limited for backyard laying-hen supplementation rates and small-plot grain yield",
+        "Strong for commercial oat-grain and forage production, cool-season adaptation, soil and fertility management, cover-crop use, cultivar variation, general grain composition, hull-related fiber, beta-glucans, and grain-harvest principles; moderate for using oats as a poultry ration ingredient; limited for universal backyard supplementation rates, adult-hen consumption of intact homegrown oat heads, flock-level intake of ordinary whole covered grain, protected-forage-frame persistence, and dependable backyard grain yield per square foot",
 
       sources: [
         {
@@ -59196,7 +59217,7 @@ const BCP_FEED_CROPS = {
             "https://extension.uga.edu/publications/detail.html?number=B1190&title=southern-small-grains-resource-management-handbook",
 
           use:
-            "Oat adaptation, grain and forage uses, planting periods, winter hardiness, variety selection, disease, harvest, drying, and storage"
+            "Southern oat adaptation, cultivar selection, fall planting, forage and grain management, winter hardiness, disease, harvest, drying, and storage"
         },
 
         {
@@ -59210,7 +59231,7 @@ const BCP_FEED_CROPS = {
             "https://extension.uga.edu/publications/detail.html?number=C813",
 
           use:
-            "Regional planting dates, seeding rate, harvest dates, and certified-seed guidance"
+            "Georgia planting periods, seeding guidance, harvest timing, and certified-seed context"
         },
 
         {
@@ -59224,7 +59245,7 @@ const BCP_FEED_CROPS = {
             "https://extension.umn.edu/small-grains-crop-and-variety-selection/organic-oat-production",
 
           use:
-            "Soil drainage, soil pH, fertility, field selection, and production management"
+            "Field selection, soil drainage, soil pH, fertility, crop rotation, weed control, and oat production management"
         },
 
         {
@@ -59238,7 +59259,7 @@ const BCP_FEED_CROPS = {
             "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/oats-in-poultry-diets/",
 
           use:
-            "Poultry nutrient values, hull variation, fiber, beta-glucans, energy limitations, fat, naked-oat distinctions, and ration context"
+            "Poultry-feed characteristics, ordinary oat nutrient values, hull variation, fiber, beta-glucans, fat, energy limitations, naked-oat distinctions, and formulated-ration context"
         },
 
         {
@@ -59252,7 +59273,7 @@ const BCP_FEED_CROPS = {
             "https://poultry.extension.org/articles/feeds-and-feeding-of-poultry/feed-ingredients-for-poultry/cereals-in-poultry-diets/",
 
           use:
-            "Cereal-grain structure, oat hull proportion, groat distinctions, fiber, protein, and energy context"
+            "Cereal-grain anatomy, oat hull and groat distinctions, energy, protein, fiber, and appropriate use as ingredients rather than complete feeds"
         },
 
         {
@@ -59266,32 +59287,92 @@ const BCP_FEED_CROPS = {
             "https://extension.uga.edu/publications/detail.html?number=B1351",
 
           use:
-            "Winter forage use, seasonal production, grazing tolerance, spring forage growth, and winter-kill risk"
+            "Annual winter forage use, seasonal growth, grazing management, spring production, and winter-kill considerations"
+        },
+
+        {
+          title:
+            "Cover Crop Selection for Vegetable Growers",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/vegetable-farming-minnesota/cover-crop-selection-vegetable-growers",
+
+          use:
+            "Oat cover-crop value, affordability, nitrogen scavenging, erosion control, weed suppression, winter-kill behavior, and residue decomposition"
+        },
+
+        {
+          title:
+            "Harvesting Small Grains for Forage",
+
+          organization:
+            "University of Minnesota Extension",
+
+          url:
+            "https://extension.umn.edu/small-grains-harvest-and-storage/harvesting-small-grains-forage",
+
+          use:
+            "Growth-stage effects, forage harvest management, fertility considerations, and variability in oat forage yield"
+        },
+
+        {
+          title:
+            "Safe Grain Handling and Storage",
+
+          organization:
+            "Penn State Extension",
+
+          url:
+            "https://extension.psu.edu/safe-grain-handling-and-storage/",
+
+          use:
+            "Proper grain moisture, storage-quality preservation, grain handling, and storage safety"
         }
       ],
 
       lastReviewed:
-        "2026-07-16",
+        "2026-07-23",
 
       researchNotes: [
-        "Keep the record centered on Avena sativa grown for ordinary hulled grain or vegetative forage.",
-        "Do not combine ordinary whole oats, naked oats, oat groats, rolled oats, and oat hulls as though they have identical poultry value.",
-        "Do not apply commercial formulated-feed inclusion percentages directly to backyard supplementation.",
-        "No exact safe percentage of a backyard flock's diet has been assigned.",
-        "Research poultry-specific consumption of whole mature oat heads at backyard scale.",
-        "Research whether adult laying hens consume ordinary whole oat grain readily enough to justify a whole-grain path without grinding.",
-        "Research practical flock damage and recovery under protected forage-frame and rotational-access systems.",
-        "Find credible small-plot grain-yield data before estimating yield per square foot.",
-        "Do not convert commercial bushels-per-acre or forage-tonnage figures directly into backyard yield.",
-        "Research oat varieties suitable for northern spring planting, southern winter planting, disease resistance, lodging resistance, and home grain use.",
-        "Evaluate whether a separate future record is justified for naked or hull-less oats.",
-        "Calculate general research-layer scores only after additional comparable crops are complete."
+        "Keep this record centered on Avena sativa used for ordinary covered grain, seasonal forage, whole-head enrichment, and cover-crop production.",
+        "Do not represent ordinary covered oats, hull-less or naked oats, oat groats, rolled oats, oat flour, oat bran, and oat hulls as nutritionally identical products.",
+        "The standard planner baseline is ordinary covered oat grain unless a use path explicitly states otherwise.",
+        "Hull-less oats may justify a separate future crop or product record because their hull proportion, fiber level, usable energy, processing requirements, and feeding value differ materially from ordinary covered oats.",
+        "Do not copy commercial formulated-feed inclusion percentages into backyard supplemental-feeding recommendations.",
+        "Do not assign a universal safe percentage of the flock's diet.",
+        "Do not formulate poultry rations from crude-protein percentage alone.",
+        "Retain complete-feed displacement, beta-glucans, hull fiber, low calcium, incomplete amino-acid balance, treated seed, mold, mycotoxins, rodents, insects, and storage moisture as major planner concerns.",
+        "Research poultry-specific voluntary intake of intact ordinary covered oat grain by established adult laying hens.",
+        "Research consumption, waste, and injury potential when whole mature oat panicles are offered to backyard chickens.",
+        "Research whether awned and awnless oat cultivars require materially different whole-head use-path restrictions.",
+        "Research practical oat-stand survival and regrowth under forage-frame, rotational-paddock, and limited direct-access systems.",
+        "Fresh forage use and mature grain production compete when the same stand is heavily cut or grazed.",
+        "Do not describe regrowth after cutting as guaranteed because recovery depends on growth stage, cutting height, moisture, temperature, stand health, and remaining growing season.",
+        "Research small-plot threshing efficiency, cleaning losses, and final usable grain yield before estimating pounds per square foot.",
+        "Do not convert commercial bushels per acre or forage tons per acre directly into backyard yield promises.",
+        "Research cultivars suitable for northern spring grain, southern winter forage, southern grain, winter hardiness, crown-rust resistance, lodging resistance, low hull percentage, and home grain use.",
+        "Research regional disease concerns including crown rust, stem rust, barley yellow dwarf virus, Fusarium head blight, and grain-quality effects where applicable.",
+        "Research oat-specific ergot frequency before assigning the same likelihood used for Barley or Wheat.",
+        "Research reliable backyard-scale drying and storage thresholds before assigning a universal shelf-life duration.",
+        "Whole grain should generally receive stronger storage-efficiency scores than cracked or ground oats because processing exposes additional surface area and may accelerate quality decline.",
+        "Whole-head use may reduce threshing labor but requires more storage volume and creates less precise flock-intake measurement.",
+        "Protected living forage can provide high enrichment value even when its direct contribution to feed-cost reduction is modest.",
+        "Oats capture residual soil nitrogen but do not fix atmospheric nitrogen.",
+        "Fall-planted oats can provide useful winter-killed cover in cold regions even when grain production is not possible.",
+        "Spring oats should receive climate penalties where planting is delayed enough to place heading and grain filling in severe heat.",
+        "Fall oats intended to overwinter should receive regional penalties where cultivar winter survival is unreliable.",
+        "Backyard yield, processing time per pound, waste percentage, exact storage life, and economic savings remain null where credible direct evidence is unavailable.",
+        "General top-level research scores and rankings remain null until they can be calculated consistently across all converted Barley V2 crop records."
       ]
     },
 
     plannerData: {
-      schemaVersion:
-        "1.0.0",
+
+              schemaVersion:
+        "2.0.0",
 
       developmentStatus:
         "ready",
@@ -59362,9 +59443,11 @@ const BCP_FEED_CROPS = {
         ],
 
         preferredClimateTypes: [
+          "cold-short-summer",
           "cool-moderate-summer",
           "temperate",
-          "mild-winter"
+          "mild-winter",
+          "high-elevation"
         ],
 
         challengingClimateTypes: [
@@ -59399,7 +59482,7 @@ const BCP_FEED_CROPS = {
           2,
 
         humidityToleranceScore:
-          4,
+          3,
 
         coolSummerToleranceScore:
           5,
@@ -59412,9 +59495,11 @@ const BCP_FEED_CROPS = {
 
         seasonExtensionBenefits: [
           "Very early spring planting helps northern growers use cool soil and spring moisture before summer heat.",
-          "Fall planting extends cool-season production in mild-winter regions.",
-          "Selecting a locally adapted winter-hardy variety reduces winter-kill risk in fall-planted systems.",
-          "Protected forage frames may extend flock access while preventing complete stand destruction."
+          "Fall planting extends cool-season forage, soil-cover, and grain-production opportunities in mild-winter regions.",
+          "Selecting a locally adapted winter-hardy cultivar reduces winter-kill risk in fall-planted systems.",
+          "Protected forage frames can extend flock access while preventing complete destruction of young plants.",
+          "Successive small forage plantings may extend fresh-green availability where seasonal conditions remain cool.",
+          "Winter-killed oat residue can continue protecting soil even where fall-planted oats do not survive until spring."
         ],
 
         indoorSeedStartingBenefitScore:
@@ -59443,20 +59528,25 @@ const BCP_FEED_CROPS = {
             true,
 
           southernYieldLossTemperatureReferenceF:
-            20,
+            null,
 
           heatDuringGrainFillConcern:
             true,
 
           notes: [
-            "Oats grow best during cool conditions.",
-            "Northern grain production commonly relies on spring-planted oats.",
-            "Southern grain and forage production commonly relies on fall planting.",
-            "Ordinary oats are generally less winter-hardy than rye or wheat.",
-            "Some oat varieties are substantially more winter-hardy than others.",
-            "Plants that establish and tiller before severe cold may survive better than late weak seedlings.",
-            "Winter-killed oats may retain cover-crop value but will not produce the intended grain harvest.",
-            "High temperature during heading and grain filling can reduce crop performance."
+            "Oats perform best during cool growing conditions.",
+            "Northern grain production commonly relies on early spring-planted oats.",
+            "Southern forage and grain production commonly relies on autumn planting.",
+            "Fall-planted oats may function as an intentionally winter-killed cover crop in colder regions.",
+            "Ordinary oats are generally less winter-hardy than Cereal Rye or winter Wheat.",
+            "Winter survival varies substantially among cultivars.",
+            "Plants that establish and tiller before severe cold may survive better than late, weak seedlings.",
+            "Saturated soil, ice cover, freeze-thaw cycles, and exposed sites can worsen winter injury.",
+            "Winter-killed oats may retain soil-cover and residue value but cannot provide the intended spring grain harvest.",
+            "High temperatures during stem elongation, heading, flowering, and grain filling can reduce performance.",
+            "Early spring planting helps avoid placing reproductive development in severe summer heat.",
+            "Hot and dry climates require careful seasonal timing and may require dependable irrigation.",
+            "No universal minimum frost-free period is stored because cultivar maturity, planting season, forage use, and grain use differ."
           ]
         }
       },
@@ -59515,7 +59605,7 @@ const BCP_FEED_CROPS = {
             "full-sun",
 
           productiveSunGuidance:
-            "Approximately 6 or more hours of direct sunlight, with stronger forage and grain production expected under longer full-sun exposure.",
+            "Approximately 6 or more hours of direct sunlight can support useful forage and cover, while longer full-sun exposure is preferred for strong tillering, stem strength, heading, grain filling, and mature grain production.",
 
           windExposureConcern:
             true,
@@ -59527,12 +59617,18 @@ const BCP_FEED_CROPS = {
             true,
 
           notes: [
-            "Full sun supports stronger tillering, forage growth, stem strength, and grain filling.",
-            "Partial sun may still produce vegetative cover, but grain yield and stand strength may decline.",
-            "Tall, lush, overfertilized, disease-weakened, or storm-exposed stands may lodge.",
-            "Good airflow helps foliage and mature seed heads dry after rain or dew.",
-            "Oats create fewer long-term structure, utility, and hardscape conflicts than tall grain crops or permanent perennials.",
-            "Established tree roots can reduce water, nutrients, sunlight, and rooting space."
+            "Full sun supports stronger tillering, forage growth, stem strength, panicle development, and grain filling.",
+            "Partial sun may still produce useful green cover, but forage density, grain yield, stem strength, and drying may decline.",
+            "Tall, lush, overfertilized, densely planted, disease-weakened, or storm-exposed stands may lodge.",
+            "Exposed sites may experience wind lodging, stem breakage, rapid drying, or soil-moisture loss.",
+            "Good airflow helps leaves and mature panicles dry after rain, irrigation, fog, or dew.",
+            "Good airflow may reduce the duration of foliage and head wetness but does not eliminate disease risk.",
+            "Reflected heat from pavement, masonry, or south-facing walls can accelerate heat stress and soil drying.",
+            "Oats create fewer permanent structure, utility, and hardscape conflicts than tall perennial grasses, trees, shrubs, or spreading vines.",
+            "Oat roots and seasonal residue normally create little direct hardscape damage.",
+            "Established tree roots can reduce sunlight, water, nutrients, and usable rooting space.",
+            "Planting immediately beside buildings can reduce light and airflow and may expose harvested material to roof runoff or contamination.",
+            "Low-lying frost pockets may increase winter injury in fall-planted oats."
           ]
         }
       },
@@ -59627,7 +59723,7 @@ const BCP_FEED_CROPS = {
           ],
 
           preferredTexture:
-            "A productive, moderately well-drained to well-drained soil with adequate moisture-holding capacity.",
+            "A productive, moderately well-drained to well-drained soil with adequate moisture-holding capacity, good seed-to-soil contact, and limited compaction.",
 
           waterloggedSoilSuitable:
             false,
@@ -59658,13 +59754,27 @@ const BCP_FEED_CROPS = {
 
           notes: [
             "Oats perform well on moderately well-drained to well-drained soils.",
-            "Loam and clay-loam soils can supply dependable moisture when compaction and waterlogging are controlled.",
-            "Sandy-loam soils may perform well but can require more dependable water and fertility.",
-            "Very sandy soils raise drought and nutrient-leaching risk.",
-            "Heavy clay receives a low score where slow drainage, crusting, or compaction restricts establishment.",
-            "Oats may tolerate somewhat more soil acidity than some other cereal grains, but productive pH still matters.",
-            "Oats do not fix nitrogen and do not require legume inoculation.",
-            "Excess nitrogen may increase lush growth, lodging, and disease risk."
+            "Loam and silt-loam soils commonly provide a useful balance of drainage, fertility, and moisture retention.",
+            "Clay-loam soils can support productive oats when compaction and prolonged saturation are controlled.",
+            "Heavy clay receives a low score where slow drainage, crusting, poor aeration, or compaction restricts germination and root growth.",
+            "Sandy-loam soils may perform well but can require more dependable irrigation and nutrient management.",
+            "Very sandy soil raises drought, nutrient-leaching, and low-yield risks.",
+            "Rocky soil can interfere with seedbed preparation, uniform planting depth, root development, hand harvesting, and mechanical harvest.",
+            "A firm, fine, weed-controlled seedbed improves seed placement and seed-to-soil contact.",
+            "Planting into poorly prepared sod may produce uneven seed placement and strong competition from established vegetation.",
+            "Oats may tolerate somewhat more soil acidity than some cereal grains, but productive soil pH still matters.",
+            "The preferred pH range should not be interpreted as a universal survival limit.",
+            "Oats do not fix atmospheric nitrogen.",
+            "Oats do not require legume inoculation.",
+            "Oats can capture residual soil nitrogen and reduce nutrient loss from otherwise bare soil.",
+            "Nitrogen supports tillering, vegetative growth, protein formation, and yield.",
+            "Insufficient nitrogen may reduce stand vigor and yield.",
+            "Excessive nitrogen can produce overly lush growth and increase lodging, disease, and delayed maturity risks.",
+            "Phosphorus supports root development and establishment, especially in cool soil.",
+            "Potassium supports general plant function, water regulation, and stand strength.",
+            "Fertilizer decisions should be based on soil testing and realistic yield goals rather than copied from another property.",
+            "Manure or compost must be applied carefully because excess nutrients, weed seeds, pathogens, salts, or uneven distribution can create problems.",
+            "Standing water and chronically saturated soil are unsuitable for dependable oat production."
           ]
         }
       },
@@ -59699,6 +59809,7 @@ const BCP_FEED_CROPS = {
           "seedling-establishment",
           "tillering",
           "stem-elongation",
+          "boot-stage",
           "heading",
           "flowering",
           "grain-filling"
@@ -59751,19 +59862,38 @@ const BCP_FEED_CROPS = {
             true,
 
           notes: [
-            "Oats generally perform best where cool-season rainfall or irrigation is dependable.",
-            "Adequate moisture supports germination, tillering, canopy formation, heading, and grain filling.",
-            "The crop is less drought-resilient than Proso Millet or Grain Sorghum.",
-            "Water stress during heading and grain filling can reduce grain size and yield.",
+            "Oats generally perform best where cool-season rainfall or irrigation provides dependable soil moisture.",
+            "Uniform moisture supports germination and reduces patchy establishment.",
+            "Seed should be placed into moist soil rather than left exposed on a dry surface.",
+            "Adequate establishment moisture supports root development and tillering.",
+            "Moisture stress during tillering can reduce productive stem formation.",
+            "Water demand increases as canopy size and reproductive development progress.",
+            "Water stress during stem elongation, boot stage, heading, flowering, and grain filling can reduce panicle development, kernel number, kernel size, test weight, and final yield.",
+            "Oats are less drought-resilient than Proso Millet or Grain Sorghum.",
+            "Established oats may survive a short dry period but can lose substantial forage or grain production.",
+            "Regular moisture improves fresh-forage production and recovery after light cutting.",
+            "Repeated cutting combined with drought can greatly reduce regrowth and eliminate grain production.",
+            "Rainfall-only production is practical in many cool and temperate regions with dependable seasonal precipitation.",
+            "Hot, dry, or low-rainfall climates may require irrigation and careful planting dates.",
+            "Limited irrigation may not protect yield if water is unavailable during reproductive development.",
             "Temporary cool wet conditions may be tolerated better than prolonged saturation.",
-            "Standing water, poor aeration, and compacted wet soil can damage roots and reduce stand health.",
-            "Rainfall-only production is practical in many suitable cool-season climates.",
-            "Hot, dry regions may require irrigation and careful seasonal timing."
+            "Standing water restricts root oxygen and can weaken or kill plants.",
+            "Compacted wet soil increases waterlogging and root-disease risk.",
+            "Overwatering can reduce soil aeration, increase nutrient loss, encourage disease, and create lodging-prone growth.",
+            "Drip irrigation can provide targeted water in garden plots, but closely spaced oat stands may be difficult to cover uniformly with widely spaced emitters.",
+            "Overhead irrigation may wet foliage and panicles and should be timed to permit rapid drying.",
+            "Mulch is usually unnecessary within a dense oat stand and can interfere with uniform emergence if applied too heavily.",
+            "Containers, trays, and shallow raised beds dry faster than in-ground soil and may require frequent monitoring.",
+            "Container-grown oats have limited soil volume and are poorly suited to dependable mature grain production.",
+            "Irrigation should be reduced or stopped as grain reaches maturity when continued watering would delay dry-down or increase lodging and disease.",
+            "Mature heads intended for storage must be protected from unnecessary rain or irrigation.",
+            "Do not harvest forage from areas irrigated with contaminated water.",
+            "Water requirements vary with soil texture, temperature, wind, humidity, stand density, planting date, growth stage, and intended forage or grain use."
           ]
         }
       },
 
-      space: {
+            space: {
         minimumTrialAreaSqFt:
           null,
 
@@ -59844,7 +59974,7 @@ const BCP_FEED_CROPS = {
           null,
 
         containerUseLimitation:
-          "Oats can grow in containers or trays, but container production is generally inefficient for meaningful mature grain harvest. Small containers are more appropriate for temporary green forage than for stored grain.",
+          "Oats can be grown in containers, trays, or shallow garden systems for temporary green forage, but container production is generally inefficient for meaningful mature grain harvest. Restricted soil volume increases drying risk, nutrient stress, lodging, and the labor required per pound of harvested feed.",
 
         minimumRaisedBedDepthIn:
           null,
@@ -59898,13 +60028,25 @@ const BCP_FEED_CROPS = {
           notes: [
             "Oats are normally planted as a drilled, broadcast, or closely spaced continuous stand.",
             "The crop does not require Corn-style block planting for pollination.",
-            "Small beds can produce forage or whole heads for enrichment.",
-            "Medium and large plots are more efficient for producing measurable loose grain.",
-            "Unused lawn and open-field areas can support seasonal cover and grain production.",
-            "Forage frames can protect young growth from complete flock destruction.",
-            "Rotational paddocks may permit controlled grazing after establishment.",
-            "Containers are inefficient for substantial grain production.",
-            "Minimum useful area remains null until small-plot yield and flock-use relationships are tested."
+            "Closely spaced stands provide more effective soil coverage, weed competition, forage density, and grain production than scattered individual plants.",
+            "Small beds can produce young forage, whole heads, seasonal cover, or limited enrichment material.",
+            "Medium and large plots are more efficient for producing measurable quantities of loose grain.",
+            "Long strips can function as rotational-forage lanes, erosion-control strips, or seasonal buffers.",
+            "Irregular plots can be used where seed coverage and harvesting access remain practical.",
+            "Unused lawn areas may support seasonal oat production after competing sod is adequately suppressed or removed.",
+            "Open fields provide the most practical layout for larger grain or forage production.",
+            "Forage frames can protect young growth from scratching, uprooting, and complete flock destruction.",
+            "Rotational paddocks may permit controlled grazing after plants develop sufficient roots and leaf area.",
+            "Direct permanent-run planting is unreliable because chickens may destroy seedlings and repeatedly graze regrowth.",
+            "Raised beds can provide improved drainage but may use valuable garden space inefficiently when the primary goal is bulk grain.",
+            "Containers and trays are more appropriate for short-term fresh greens than for mature grain.",
+            "Greenhouse production is possible but generally inefficient compared with outdoor cool-season planting.",
+            "Orchard production is limited where tree shade, roots, fallen fruit, machinery, or irrigation competition reduce oat performance.",
+            "Fence-line and building-edge plantings may produce useful strips but can receive uneven light, moisture, and airflow.",
+            "Oats do not require trellising or vertical support.",
+            "Lodging cannot normally be corrected by installing plant supports across a dense stand.",
+            "Minimum useful and preferred production areas remain null because credible flock-use and small-plot yield thresholds are not established.",
+            "A small trial area can still be useful for evaluating germination, winter survival, forage acceptance, disease, wildlife pressure, and harvesting labor."
           ]
         }
       },
@@ -59994,40 +60136,50 @@ const BCP_FEED_CROPS = {
 
         primaryFlockUses: [
           "Protected cool-season living forage",
+          "Controlled rotational grazing",
           "Cut-and-carry young oat greens",
-          "Whole dried seed heads for pecking enrichment",
-          "Threshed whole grain",
-          "Coarsely ground grain",
+          "Whole mature oat heads for pecking enrichment",
+          "Threshed whole oat grain",
+          "Cracked oat grain",
+          "Coarsely ground oat grain",
           "Stored cool-season grain",
-          "Seasonal pasture diversity"
+          "Seasonal pasture diversity",
+          "Postharvest gleaning"
         ],
 
         unsuitablePrimaryUses: [
           "Complete-ration replacement",
           "Highest-energy grain production",
           "Primary protein production",
+          "Primary calcium production",
           "Unrestricted permanent-run planting",
           "Primary young-chick feed",
+          "Replacing complete starter feed with oat grain or greens",
+          "Feeding large amounts without measuring intake",
           "Feeding moldy or inadequately dried grain",
-          "Assuming naked-oat nutrition applies to ordinary hulled oats"
+          "Feeding chemically treated planting seed",
+          "Assuming hull-less-oat nutrition applies to ordinary covered oats",
+          "Assuming sprouted or fresh oat weight equals dry feed value"
         ],
 
         directFacts: {
           edibleFeedParts: [
             "Young vegetative leaves and shoots",
-            "Mature whole grain",
-            "Whole mature seed heads",
+            "Tender green forage",
+            "Mature whole oat grain",
+            "Whole mature oat panicles",
+            "Cracked mature grain",
             "Coarsely ground mature grain"
           ],
 
           preferredBirdStage:
-            "Adult chickens",
+            "Established adult chickens",
 
           cropSurvivalWithDirectChickenAccess:
             "poor-with-unrestricted-access",
 
           directAccessTiming:
-            "Allow the stand to establish before controlled grazing, or keep chickens away until mature seed heads are harvested.",
+            "Allow the stand to develop strong roots and sufficient leaf area before controlled grazing, or exclude chickens until mature heads are harvested when grain production is the primary goal.",
 
           nutritionalOrientation: [
             "moderate-energy",
@@ -60036,7 +60188,8 @@ const BCP_FEED_CROPS = {
             "fresh-green",
             "living-forage",
             "enrichment",
-            "winter-storage"
+            "winter-storage",
+            "supplemental-feed"
           ],
 
           balancedFeedReplacement:
@@ -60053,15 +60206,32 @@ const BCP_FEED_CROPS = {
 
           notes: [
             "Young vegetative oats can provide fresh green forage and flock enrichment.",
-            "Unrestricted chickens may uproot seedlings, overgraze leaves, scratch soil, and prevent grain formation.",
-            "Protected forage frames or rotational access improve stand persistence.",
-            "Whole mature seed heads encourage pecking and natural feed-seeking behavior.",
-            "Loose grain is easier to measure but requires threshing and cleaning.",
-            "Ordinary hulled oats contain more fiber and less usable energy than Corn or Grain Sorghum.",
-            "Oats contain beta-glucans that may reduce nutrient availability.",
-            "Coarse grinding may improve physical access but does not create a complete ration.",
-            "Oats are low in calcium and should not displace complete layer feed.",
-            "Young chicks should continue receiving an age-appropriate complete starter ration."
+            "Chickens may consume leaves, tender shoots, developing seed heads, mature grain, and spilled grain.",
+            "Unrestricted birds may uproot seedlings, overgraze leaves, scratch exposed soil, compact wet ground, and prevent grain formation.",
+            "Protected forage frames allow chickens to reach leaf growth while shielding roots and crowns.",
+            "Rotational access can reduce stand destruction when plants are sufficiently established and recovery periods are provided.",
+            "Frequent grazing or cutting may produce forage but reduce or eliminate the later grain harvest.",
+            "Whole mature oat heads encourage pecking, scratching, and natural feed-seeking behavior.",
+            "Whole-head feeding is less precise than feeding cleaned loose grain because intake and waste are difficult to measure.",
+            "Loose grain is easier to weigh and ration but requires threshing, winnowing, cleaning, drying, and storage.",
+            "Ordinary covered oats contain substantial hull fiber and less usable poultry energy than Corn or Grain Sorghum.",
+            "Oats are not classified as a high-energy supplement in this planner.",
+            "Oat grain contains more fat than several other common cereal grains but is not treated as a concentrated fat source.",
+            "Oat beta-glucans may increase digestive viscosity and reduce nutrient utilization.",
+            "Excessive oat feeding may contribute to sticky droppings, wet litter, dirty eggs, or reduced productive performance.",
+            "Ordinary covered oats and hull-less oats must not receive identical nutritional scoring.",
+            "Cracking or coarse grinding may improve physical access and mixing but does not remove hull fiber or beta-glucans.",
+            "Grinding does not make oats a nutritionally complete poultry feed.",
+            "Oats are low in calcium and cannot support laying-hen shell production without the rest of a balanced ration.",
+            "Oat protein does not provide a complete essential-amino-acid balance.",
+            "Complete feed should remain freely available when oats are offered as a supplement.",
+            "Whole grain is most appropriate for established adult chickens with access to appropriately sized insoluble grit.",
+            "Whole grain should not be used as the primary feed for young chicks.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration.",
+            "Sprouted grain and hydroponic forage contain substantial water and should not be evaluated by fresh weight alone.",
+            "No universal backyard supplementation percentage is assigned.",
+            "Flock response should be evaluated through complete-feed intake, body condition, egg production, shell quality, droppings, litter moisture, and waste.",
+            "Feed forms contaminated by mold, rodents, insects, chemicals, treated seed, floodwater, or unsafe storage conditions must be rejected."
           ]
         }
       },
@@ -60131,7 +60301,13 @@ const BCP_FEED_CROPS = {
         optionalMaintenanceTasks: [
           "cultivate",
           "mow-clip",
-          "rotate-grazing"
+          "rotate-grazing",
+          "irrigate",
+          "fertilize",
+          "install-forage-frame",
+          "install-bird-netting",
+          "monitor-disease",
+          "monitor-lodging"
         ],
 
         requiredHarvestTasks: [],
@@ -60141,26 +60317,44 @@ const BCP_FEED_CROPS = {
             "cut-forage"
           ],
 
-          wholeDriedSeedHeads: [
+          wholeMatureOatHeads: [
             "cut-seed-heads",
-            "dry"
+            "inspect",
+            "dry-if-needed"
           ],
 
-          looseDriedWholeGrain: [
+          wholeDryOats: [
             "cut-seed-heads",
             "dry",
             "thresh",
             "winnow",
-            "clean-sort"
-          ],
-
-          groundOatGrain: [
-            "cut-seed-heads",
-            "dry",
-            "thresh",
-            "winnow",
+            "screen",
             "clean-sort",
-            "grind"
+            "inspect-moisture"
+          ],
+
+          crackedDryOats: [
+            "cut-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "crack"
+          ],
+
+          groundOatRationIngredient: [
+            "cut-seed-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "blend"
           ]
         },
 
@@ -60175,22 +60369,34 @@ const BCP_FEED_CROPS = {
         specializedEquipmentHelpful: [
           "hoe",
           "rake",
+          "broadcast-seeder",
+          "garden-seeder",
           "hand-pruners",
+          "sickle",
+          "scythe",
           "fencing",
           "bird-netting",
           "forage-frame",
-          "basket",
+          "harvest-basket",
+          "harvest-tarp",
           "drying-rack",
           "drying-screen",
           "fan",
+          "threshing-container",
           "grain-thresher",
+          "grain-screen",
+          "winnowing-fan",
+          "grain-cracker",
           "grain-mill",
           "feed-grinder",
+          "feed-scale",
           "moisture-meter",
+          "dust-mask-or-respirator",
+          "eye-protection",
           "food-safe-bucket",
           "food-safe-container",
           "metal-grain-can",
-          "rodent-proof-room"
+          "rodent-resistant-storage"
         ],
 
         suitableForLowTimeUsersScore:
@@ -60213,24 +60419,51 @@ const BCP_FEED_CROPS = {
             false,
 
           majorLaborBottlenecks: [
-            "Preparing an even seedbed",
-            "Controlling weeds during establishment",
+            "Preparing an even weed-controlled seedbed",
+            "Distributing seed uniformly",
+            "Covering broadcast seed to a suitable depth",
+            "Maintaining moisture during establishment",
+            "Controlling weeds before canopy closure",
             "Preventing premature flock access",
-            "Protecting maturing grain from birds",
-            "Cutting and handling mature seed heads",
+            "Protecting developing and mature grain from wild birds",
+            "Monitoring lodging and disease",
+            "Cutting and handling mature panicles",
+            "Protecting harvested material from rain",
             "Drying heads and grain safely",
             "Threshing and winnowing loose grain",
-            "Monitoring stored grain"
+            "Screening and cleaning grain",
+            "Cracking or grinding when required",
+            "Controlling grain and chaff dust",
+            "Monitoring stored grain for moisture, insects, rodents, mold, and rancidity"
           ],
 
           notes: [
-            "Oats are straightforward to direct-seed by broadcasting or drilling.",
+            "Oats are straightforward to direct-seed by broadcasting, drilling, or closely spaced garden rows.",
+            "Indoor transplant production provides little practical benefit.",
+            "A firm, even seedbed improves germination and simplifies later management.",
+            "Broadcast seed may require raking, rolling, or another method to improve soil contact and reduce bird loss.",
             "A dense healthy stand can suppress some later weeds, but early competition remains important.",
-            "Fresh-forage use requires less processing than grain use.",
-            "Whole-head use avoids threshing and winnowing.",
+            "Fresh-forage and cover-crop pathways require less harvest processing than grain pathways.",
+            "Protected living forage can be maintained with relatively low routine labor after establishment.",
+            "Forage frames require construction or purchase but reduce repeated replanting caused by flock destruction.",
+            "Rotational grazing requires fencing, access control, and recovery periods.",
+            "Whole-head use avoids threshing, winnowing, and most loose-grain cleaning.",
+            "Whole-head storage requires greater volume than cleaned loose-grain storage.",
             "Loose-grain production concentrates substantial hand labor around harvest.",
-            "Grinding adds equipment and labor but is optional for many adult-flock uses.",
-            "Commercial plantings use combines and grain-handling systems, but small backyard plots can be cut and processed manually."
+            "Threshing efficiency varies with grain maturity, panicle dryness, cultivar, method, and scale.",
+            "Cracking or grinding adds equipment, dust, cleanup, and storage-management requirements.",
+            "Grinding is unnecessary for several adult-flock supplementation pathways.",
+            "Accurately formulated feed requires weighing, mixing, nutrient knowledge, and batch records.",
+            "Commercial production uses combines and grain-handling systems, but backyard plots can be harvested manually.",
+            "Mechanical threshers and mills may improve efficiency but are not required for small trials.",
+            "Dust, chaff, and fine grain particles may require respiratory and eye protection.",
+            "Mature grain should not be stored until drying is complete and the grain has cooled.",
+            "Stored grain requires periodic inspection even when sealed in a suitable container.",
+            "The crop is annual, so perennial maintenance is not required.",
+            "The high perennial-maintenance-ease score means no perennial pruning, division, permanent-root control, or multiyear stand management is necessary.",
+            "Most small plots can be managed by one person without heavy lifting.",
+            "Large harvested bundles, filled grain containers, or equipment may create lifting demands not reflected in the low small-plot heavy-lifting score.",
+            "Peak labor occurs during planting, wildlife protection, harvest, drying, threshing, cleaning, and storage preparation."
           ]
         }
       },
@@ -60264,27 +60497,46 @@ const BCP_FEED_CROPS = {
           "fresh-young-oat-forage",
 
         highestCostUsePath:
-          "ground-oat-grain",
+          "ground-oat-ration-ingredient",
 
         likelyCostDrivers: [
+          "Untreated oat seed",
           "Seedbed preparation",
-          "Fencing or forage-frame protection",
-          "Bird netting",
+          "Soil testing and fertility correction",
+          "Irrigation in dry climates",
+          "Fencing or forage-frame construction",
+          "Wild-bird protection",
+          "Harvesting tools",
           "Drying racks or screens",
+          "Fans or protected drying space",
           "Optional grain thresher",
+          "Optional grain screens and winnowing equipment",
+          "Optional grain cracker",
           "Optional grain mill or feed grinder",
+          "Accurate feed scale",
+          "Dust-control and protective equipment",
           "Moisture meter",
-          "Rodent-resistant storage containers"
+          "Food-safe storage containers",
+          "Rodent-resistant grain storage",
+          "Replacement seed after winterkill or establishment failure"
         ],
 
         costReductionOptions: [
           "Begin with a small protected forage or whole-head trial.",
-          "Broadcast by hand on a prepared small plot.",
-          "Use whole heads instead of threshing loose grain.",
+          "Use untreated locally adapted agricultural seed where appropriate.",
+          "Broadcast seed by hand on a prepared small plot.",
+          "Use existing garden tools for planting and harvest.",
+          "Use the crop simultaneously for seasonal cover, soil protection, and flock forage.",
+          "Use forage frames to reduce stand destruction and repeated reseeding.",
+          "Use controlled rotational access rather than unrestricted grazing.",
+          "Use whole mature heads instead of threshing loose grain.",
           "Thresh and winnow manually at small scale.",
-          "Use existing screens, fans, buckets, and metal containers.",
-          "Choose a locally adapted variety to reduce winter-kill, disease, and lodging risk.",
-          "Use the crop as both seasonal cover and flock forage."
+          "Store grain whole and process only small batches as needed.",
+          "Use existing screens, fans, buckets, and metal containers when they are clean and suitable.",
+          "Choose a locally adapted cultivar to reduce winterkill, disease, lodging, and maturity problems.",
+          "Plant at the locally appropriate season to reduce irrigation and heat-stress costs.",
+          "Use soil-test recommendations rather than unnecessary fertilizer applications.",
+          "Save sound untreated seed only when cultivar type, isolation, grain health, storage, and local seed rules make seed saving appropriate."
         ],
 
         directFacts: {
@@ -60298,12 +60550,25 @@ const BCP_FEED_CROPS = {
             false,
 
           notes: [
-            "Seed is generally inexpensive.",
+            "Oat seed is generally inexpensive compared with many specialty feed crops.",
+            "Certified, organic, food-grade, winter-hardy, disease-resistant, low-hull, or hull-less seed may cost more.",
             "Fresh-forage production can be accomplished with ordinary garden tools.",
-            "Whole-head use minimizes equipment requirements.",
-            "Loose-grain processing may justify a thresher, screens, or mill only at larger backyard scale.",
-            "Rodent-resistant storage is important for dry grain.",
-            "Cost classifications are qualitative rather than current retail estimates."
+            "A protected forage frame may be the largest cost for a small fresh-green pathway.",
+            "Whole-head use minimizes processing-equipment requirements.",
+            "Loose-grain use adds drying, threshing, winnowing, cleaning, and storage costs.",
+            "Cracked-grain use adds a suitable cracking method.",
+            "Ground-ration use adds a grinder, accurate scale, mixing equipment, formulation knowledge, and storage management.",
+            "Mechanical equipment can reduce labor but may not be economical for a very small plot.",
+            "Rodent-resistant storage is an important cost rather than an optional convenience when grain is retained.",
+            "Existing metal grain cans or food-safe containers may reduce startup costs if they remain clean, dry, secure, and suitable.",
+            "Rainfall-only production can keep irrigation costs low in suitable climates.",
+            "Hot or dry regions may incur substantial irrigation cost.",
+            "Winterkill, poor establishment, lodging, disease, bird loss, wet harvest, or storage spoilage can eliminate expected economic value.",
+            "Fresh forage and whole-head enrichment may remain worthwhile even where small-scale grain production is not financially competitive.",
+            "Crop residues may add indirect value through mulch, compost carbon, bedding, soil cover, and organic matter.",
+            "Feed savings depend on usable yield, flock consumption, waste, base-feed price, labor valuation, and processing losses.",
+            "No universal retail-price estimate or backyard payback period is stored.",
+            "Cost levels are qualitative comparative planner values rather than current market quotations."
           ]
         }
       },
@@ -60390,71 +60655,136 @@ const BCP_FEED_CROPS = {
         primaryGoalMatches: [
           "fresh-greens",
           "living-forage",
-          "cool-season-production",
-          "winter-storage",
           "enrichment",
+          "winter-storage",
           "ground-cover",
           "erosion-control",
           "soil-improvement",
-          "compost-biomass",
-          "shared-household-food",
-          "self-reliance",
-          "seed-saving",
-          "use-unused-space"
+          "residual-nitrogen-capture",
+          "seasonal-pasture",
+          "whole-head-feeding",
+          "multipurpose-crop",
+          "small-flock-support",
+          "self-reliance"
         ],
 
-        weakGoalMatches: [
-          "highest-energy",
-          "primary-protein-production",
+        secondaryGoalMatches: [
+          "feed-reduction",
+          "energy-production",
+          "stored-grain",
+          "compost-biomass",
+          "household-food",
+          "seed-saving",
+          "crop-rotation",
+          "weed-suppression",
+          "non-electric-storage",
+          "large-flock-supplementation",
+          "postharvest-gleaning",
+          "straw-and-residue-production"
+        ],
+
+        poorGoalMatches: [
+          "maximum-energy-per-square-foot",
+          "maximum-protein-production",
           "nitrogen-fixation",
-          "pollinators",
-          "shade",
+          "high-fat-feed-production",
+          "primary-calcium-production",
+          "permanent-shade",
           "privacy-screening",
-          "permanent-ground-cover",
-          "hot-season-production",
-          "extreme-drought-resilience",
-          "container-production"
+          "major-pollinator-support",
+          "perennial-feed-production",
+          "complete-feed-replacement",
+          "zero-processing-grain-production",
+          "hot-season-drought-production",
+          "unrestricted-permanent-run-planting"
         ],
 
         directFacts: {
-          coolSeasonAnnual:
+          primaryFeedGoal:
+            "cool-season-forage-and-moderate-energy-grain",
+
+          strongestNonFeedGoals: [
+            "ground-cover",
+            "erosion-control",
+            "weed-suppression",
+            "residual-nitrogen-capture",
+            "soil-organic-matter",
+            "crop-rotation",
+            "compost-biomass"
+          ],
+
+          usefulForFeedCostReduction:
             true,
 
-          dualForageAndGrainPotential:
+          usefulForEmergencyFeedResilience:
             true,
 
-          coverCropPotential:
+          usefulForWinterStorage:
             true,
 
-          erosionControlPotential:
+          usefulForFreshSeasonalForage:
             true,
 
-          nitrogenCapturePotential:
+          usefulForLivingForage:
             true,
 
-          greenManurePotential:
+          usefulForEnrichment:
             true,
 
-          humanFoodPotential:
+          usefulForSoilImprovement:
             true,
 
-          seedSavingPossible:
-            true,
+          fixesNitrogen:
+            false,
 
           notes: [
-            "Oats add a cool-season production role that differs from the planner's warm-season grains.",
-            "Young growth can provide fresh greens and living-forage value.",
-            "Mature heads and grain provide enrichment and dry-storage value.",
-            "Dense stands protect soil and reduce erosion.",
-            "Oats can capture residual soil nitrogen but do not fix atmospheric nitrogen.",
-            "Crop residue can contribute organic matter and compost biomass.",
-            "Ordinary oats are not the planner's strongest high-energy grain.",
-            "The crop offers strong multipurpose value where both flock use and soil cover matter."
+            "Oats are strongest as a multipurpose cool-season crop rather than as the highest-energy or highest-protein poultry feed.",
+            "Young vegetative growth provides fresh greens and living-forage value.",
+            "Whole mature heads provide strong pecking and foraging enrichment.",
+            "Dry whole grain provides a measurable stored-feed pathway.",
+            "Ordinary covered oats provide less usable poultry energy than Corn or Grain Sorghum.",
+            "Oats should receive only a moderate energy-production score.",
+            "Oats are not a protein-oriented crop even though grain contains moderate crude protein.",
+            "Oat protein is not nutritionally complete for poultry.",
+            "Oats are not a calcium-producing crop.",
+            "Protected forage systems can provide value to confined flocks with limited access to vegetation.",
+            "Pastured flocks can benefit from cool-season diversity and controlled grazing.",
+            "Small flocks may use modest plantings efficiently for forage or whole-head enrichment.",
+            "Large flocks require substantially more planted area to produce meaningful feed quantities.",
+            "Dry grain can be stored without refrigeration when adequately dried and protected.",
+            "Whole-grain storage is generally more efficient than storing cracked or ground grain.",
+            "Oats can support household food goals when suitable food-grade grain is grown and processed appropriately.",
+            "Household food use may compete with poultry-feed use for the same harvested grain.",
+            "Seed can potentially be saved from healthy mature plants when untreated open-pollinated or suitable cultivars are used.",
+            "Saved seed must remain dry, viable, correctly identified, disease-free, and separated from grain intended for feeding.",
+            "Oats do not fix atmospheric nitrogen.",
+            "Oats can capture residual soil nitrogen that might otherwise leach or be lost.",
+            "Dense stands provide rapid seasonal ground cover.",
+            "Roots and surface residue help reduce erosion.",
+            "Healthy stands can suppress some weeds through rapid establishment and canopy competition.",
+            "Oat residue decomposes more readily than highly persistent cereal residue in many systems.",
+            "Straw, roots, rejected clean plant material, and uneaten forage can contribute compost carbon or mulch.",
+            "Diseased, chemically contaminated, moldy, or mycotoxin-suspect material should not be added where contamination could persist or spread.",
+            "Oats provide little useful shade or privacy screening.",
+            "Oats provide limited direct pollinator support because they are wind-pollinated.",
+            "Panicles and mature stands can provide moderate seasonal visual interest.",
+            "Fast germination and vegetative growth support a strong fastest-value score.",
+            "Grain production takes longer and carries greater weather and processing risk than fresh-forage use.",
+            "Production reliability is strongest when planting season, cultivar, drainage, moisture, and harvest timing match local recommendations.",
+            "Feed-cost reduction is possible but should not be assumed from harvested fresh weight.",
+            "Fresh greens and sprouted material contain substantial water and provide less dry matter than equal weights of dry grain.",
+            "Emergency-feed resilience does not mean oats form a complete emergency ration.",
+            "A complete ration, calcium source, grit where appropriate, and clean water remain necessary.",
+            "The crop's strongest self-reliance value comes from combining forage, grain, seed, soil cover, residue, and storage functions.",
+            "Goal scores are comparative planner values rather than guaranteed outcomes."
           ]
         }
       },
 
-      risks: {
+            risks: {
+        overallRiskLevel:
+          "moderate",
+
         wildlife: {
           wildBirds:
             4,
@@ -60463,796 +60793,1438 @@ const BCP_FEED_CROPS = {
             4,
 
           raccoons:
-            1,
-
-          squirrels:
             2,
 
+          squirrels:
+            3,
+
           rabbits:
-            4,
+            3,
 
           rodents:
-            4,
+            5,
 
           groundhogs:
             3
         },
 
-        insectsRiskScore:
+        establishmentFailureRiskScore:
           3,
 
-        diseaseRiskScore:
+        weedCompetitionRiskScore:
+          3,
+
+        droughtEstablishmentRiskScore:
+          3,
+
+        matureDroughtRiskScore:
           4,
 
-        lodgingRiskScore:
+        waterloggingRiskScore:
+          5,
+
+        heatDamageRiskScore:
           4,
 
-        fieldMoldRiskScore:
-          4,
-
-        dryingMoldRiskScore:
-          4,
-
-        storageMoldRiskScore:
-          4,
-
-        storedInsectRiskScore:
-          4,
-
-        spoilageSpeedRiskScore:
-          2,
-
-        invasivenessConcernRiskScore:
-          1,
-
-        selfSeedingRiskScore:
-          2,
-
-        fruitDropRiskScore:
-          1,
-
-        cropFailureRiskScore:
+        frostDamageRiskScore:
           3,
 
         stormDamageRiskScore:
           4,
 
-        shadingOtherCropsRiskScore:
-          2,
-
-        overfeedingRiskScore:
+        lodgingRiskScore:
           4,
 
-        treatedSeedRiskScore:
+        shatteringRiskScore:
+          3,
+
+        birdLossRiskScore:
+          4,
+
+        wildlifePressureScore:
+          4,
+
+        deerBrowsingRiskScore:
+          4,
+
+        rabbitBrowsingRiskScore:
+          3,
+
+        rodentAttractionScore:
           5,
 
-        primaryRisks: [
+        insectDamageRiskScore:
+          3,
+
+        diseaseRiskScore:
+          4,
+
+        moldRiskScore:
+          5,
+
+        harvestWeatherRiskScore:
+          4,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          5,
+
+        storageMoistureRiskScore:
+          5,
+
+        contaminationRiskScore:
+          5,
+
+        misidentificationRiskScore:
+          2,
+
+        chemicalExposureRiskScore:
+          5,
+
+        nitrateAccumulationRiskScore:
+          2,
+
+        oxalateConcernScore:
+          1,
+
+        antinutritionalFactorRiskScore:
+          5,
+
+        completeFeedDisplacementRiskScore:
+          5,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        flockOverconsumptionRiskScore:
+          4,
+
+        selfSeedingRiskScore:
+          3,
+
+        invasivenessRiskScore:
+          1,
+
+        crossPollinationRiskScore:
+          2,
+
+        allergenOrDustExposureRiskScore:
+          4,
+
+        mechanicalHarvestSuitabilityScore:
+          5,
+
+        mechanicalProcessingSuitabilityScore:
+          5,
+
+        riskFactors: [
           {
             id:
-              "winter-kill",
+              "waterlogged-soil",
 
-            severity:
-              "high",
+            category:
+              "soil-and-establishment",
 
-            affectedStages: [
-              "seedling-establishment",
-              "tillering",
-              "winter-dormancy"
-            ],
+            severityScore:
+              5,
 
-            mitigationOptions: [
-              "Choose a locally adapted winter-hardy variety",
-              "Plant at the recommended regional date",
-              "Establish the crop before severe cold",
-              "Use spring oats where winter survival is unreliable",
-              "Avoid poorly drained frost pockets"
-            ],
+            likelihoodScore:
+              3,
 
-            note:
-              "Oats are generally less winter-hardy than rye or wheat, and variety, growth stage, soil, and weather strongly affect survival."
+            description:
+              "Saturated soil can reduce oat germination, restrict root oxygen, promote root and crown disease, weaken tillering, reduce nutrient uptake, and cause partial or complete stand loss.",
+
+            mitigation: [
+              "Plant in moderately well-drained to well-drained soil.",
+              "Avoid depressions that collect standing water.",
+              "Do not plant into saturated or heavily compacted soil.",
+              "Do not irrigate faster than the soil can drain.",
+              "Improve drainage before planting where chronic saturation occurs.",
+              "Use raised beds only where they provide enough area for the intended forage or grain pathway."
+            ]
+          },
+
+          {
+            id:
+              "winterkill",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Fall-planted oats can suffer severe stand loss when minimum temperatures, freeze-thaw cycles, exposed crowns, ice cover, saturated soil, or inadequate establishment exceed the cultivar's winter tolerance. Oats are generally less winter-hardy than Cereal Rye or winter Wheat.",
+
+            mitigation: [
+              "Use fall-planted oats for dependable overwintering only where locally adapted cultivars are recommended.",
+              "Follow regional autumn planting dates.",
+              "Establish plants early enough to develop roots and tillers before severe cold.",
+              "Avoid planting so early that excessive lush growth develops before winter.",
+              "Avoid poorly drained frost pockets.",
+              "Use spring oats where winter survival is unreliable.",
+              "Treat winter-killed oats as a cover-crop pathway rather than assuming a spring grain harvest."
+            ]
+          },
+
+          {
+            id:
+              "heat-during-heading-and-grain-fill",
+
+            category:
+              "climate",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "High temperatures during stem elongation, boot stage, heading, flowering, and grain filling can shorten reproductive development, reduce kernel number, reduce kernel weight, lower test weight, and reduce final grain quality.",
+
+            mitigation: [
+              "Plant spring oats as early as local soil conditions safely permit.",
+              "Use an early-maturing locally adapted cultivar.",
+              "Use autumn planting in suitable mild-winter climates.",
+              "Avoid planting dates that place heading and grain filling in extreme heat.",
+              "Maintain adequate soil moisture during reproductive growth.",
+              "Avoid reflected-heat locations beside pavement, masonry, or south-facing walls."
+            ]
+          },
+
+          {
+            id:
+              "drought-during-grain-fill",
+
+            category:
+              "climate-and-water",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Moisture stress during boot stage, heading, flowering, or grain filling can reduce panicle development, kernel set, kernel size, test weight, forage yield, and final usable grain production.",
+
+            mitigation: [
+              "Plant during the region's coolest dependable moisture period.",
+              "Establish the crop early enough to use seasonal rainfall.",
+              "Maintain soil moisture through reproductive development where irrigation is available.",
+              "Use soil organic matter and appropriate fertility to support root growth.",
+              "Avoid very sandy drought-prone sites unless irrigation is dependable.",
+              "Do not depend on oats as a drought-resilient grain comparable to Proso Millet or Grain Sorghum."
+            ]
           },
 
           {
             id:
               "lodging",
 
-            severity:
-              "high",
+            category:
+              "field-production",
 
-            affectedStages: [
-              "stem-elongation",
-              "heading",
-              "grain-filling",
-              "maturity"
-            ],
+            severityScore:
+              4,
 
-            mitigationOptions: [
-              "Choose a variety with good straw strength",
-              "Avoid excessive nitrogen",
-              "Avoid excessive stand density",
-              "Maintain balanced fertility",
-              "Harvest promptly after maturity"
-            ],
+            likelihoodScore:
+              4,
 
-            note:
-              "Tall or lush stands may lean or flatten under wind, rain, disease, or excessive fertility."
+            description:
+              "Oat stems may bend or fall before harvest, increasing disease exposure, uneven maturity, sprouting, grain loss, contamination, and hand-harvest difficulty.",
+
+            mitigation: [
+              "Select a lodging-resistant cultivar.",
+              "Avoid excessive nitrogen.",
+              "Avoid unnecessarily high seeding rates.",
+              "Maintain balanced fertility.",
+              "Avoid unnecessary late irrigation.",
+              "Provide adequate sunlight and airflow.",
+              "Monitor stands after heavy rain or wind.",
+              "Harvest promptly after maturity."
+            ]
           },
 
           {
             id:
-              "disease-and-rust",
+              "storm-and-wind-damage",
 
-            severity:
-              "high",
+            category:
+              "field-production",
 
-            affectedStages: [
-              "vegetative-growth",
-              "stem-elongation",
-              "heading",
-              "grain-filling"
-            ],
+            severityScore:
+              4,
 
-            mitigationOptions: [
-              "Choose resistant adapted varieties",
-              "Use suitable crop rotation",
-              "Plant clean untreated seed intended for the chosen use",
-              "Maintain airflow",
-              "Avoid excessive nitrogen",
-              "Monitor regional Extension alerts"
-            ],
+            likelihoodScore:
+              3,
 
-            note:
-              "Crown rust, smuts, leaf diseases, and other pathogens can reduce forage, lodging resistance, grain yield, and grain quality."
+            description:
+              "Strong wind, hail, or heavy rain can lodge stems, break panicles, scatter mature grain, expose heads to soil moisture, and delay harvest.",
+
+            mitigation: [
+              "Use locally adapted lodging-resistant cultivars.",
+              "Avoid excessive nitrogen and overly dense stands.",
+              "Do not allow mature grain to remain exposed longer than necessary.",
+              "Inspect the crop promptly after storms.",
+              "Harvest damaged mature sections before additional weather loss occurs.",
+              "Dry storm-affected heads separately and inspect them carefully."
+            ]
           },
 
           {
             id:
-              "wet-grain-and-field-weathering",
+              "shattering-and-panicle-loss",
 
-            severity:
-              "high",
-
-            affectedStages: [
-              "maturity",
+            category:
               "harvest",
-              "drying"
-            ],
 
-            mitigationOptions: [
-              "Harvest promptly near appropriate grain moisture",
-              "Avoid prolonged exposure to rain and dew",
-              "Finish drying under cover",
-              "Provide strong airflow",
-              "Discard visibly damaged or questionable grain"
-            ],
+            severityScore:
+              3,
 
-            note:
-              "Rain and dew after maturity can discolor grain and increase field-weathering, sprouting, and mold risk."
+            likelihoodScore:
+              3,
+
+            description:
+              "Overmature, weathered, damaged, or repeatedly handled oat panicles may lose kernels before or during harvest, reducing usable yield and attracting birds and rodents.",
+
+            mitigation: [
+              "Monitor kernel maturity closely.",
+              "Harvest promptly when grain reaches the intended mature stage.",
+              "Avoid unnecessary delays after maturity.",
+              "Handle dry panicles gently.",
+              "Use tarps or collection sheets during hand harvest and threshing.",
+              "Clean spilled grain promptly."
+            ]
           },
 
           {
             id:
-              "storage-mold-and-heating",
+              "wild-bird-loss",
 
-            severity:
-              "high",
+            category:
+              "wildlife",
 
-            affectedStages: [
-              "drying",
-              "storage"
-            ],
+            severityScore:
+              4,
 
-            mitigationOptions: [
-              "Dry grain adequately before sealing",
-              "Cool grain before enclosed storage",
-              "Use dry food-safe containers",
-              "Inspect for condensation and heating",
-              "Control insects and rodents",
-              "Discard musty or moldy material"
-            ],
+            likelihoodScore:
+              4,
 
-            note:
-              "Damp or warm oats may heat, mold, cake, or support insects during storage."
+            description:
+              "Wild birds may consume newly planted seed, developing kernels, mature grain, cut panicles, and grain drying in exposed locations.",
+
+            mitigation: [
+              "Cover broadcast seed adequately.",
+              "Improve seed-to-soil contact.",
+              "Monitor the crop closely as kernels develop.",
+              "Use properly secured bird netting where practical and safe.",
+              "Avoid loose netting that can entangle wildlife or poultry.",
+              "Harvest promptly when grain is mature.",
+              "Dry harvested heads in a protected location.",
+              "Clean spilled grain from fields, processing areas, and storage rooms."
+            ]
           },
 
           {
             id:
-              "unrestricted-flock-damage",
+              "deer-browsing",
 
-            severity:
-              "high",
+            category:
+              "wildlife",
 
-            affectedStages: [
-              "germination",
-              "seedling-establishment",
-              "vegetative-growth",
-              "heading"
-            ],
+            severityScore:
+              4,
 
-            mitigationOptions: [
-              "Use a forage frame",
-              "Use temporary fencing",
-              "Rotate access",
-              "Allow the stand to establish",
-              "Protect grain plots until harvest"
-            ],
+            likelihoodScore:
+              3,
 
-            note:
-              "Chickens can uproot seedlings, overgraze leaves, scratch the soil, and prevent mature grain production."
+            description:
+              "Deer may graze young oat growth, trample stands, consume developing panicles, and reduce both forage and grain production.",
+
+            mitigation: [
+              "Use effective deer fencing where pressure is high.",
+              "Avoid relying on repellents as the only protection.",
+              "Monitor field edges and known deer travel routes.",
+              "Protect small high-value plots with physical barriers.",
+              "Account for deer pressure before assigning the crop a dependable grain role."
+            ]
           },
 
           {
             id:
-              "balanced-feed-displacement",
+              "rabbit-and-groundhog-browsing",
 
-            severity:
-              "high",
+            category:
+              "wildlife",
 
-            affectedStages: [
-              "feeding"
-            ],
+            severityScore:
+              3,
 
-            mitigationOptions: [
-              "Offer oats as a measured supplement",
-              "Continue complete poultry feed",
-              "Limit scratch-grain use",
-              "Avoid assuming whole oats provide a balanced ration"
-            ],
+            likelihoodScore:
+              3,
 
-            note:
-              "High-fiber oat grain can dilute usable energy, amino acids, calcium, vitamins, and minerals when overfed."
+            description:
+              "Rabbits and groundhogs may clip seedlings and vegetative growth, create uneven stands, and prevent damaged areas from reaching grain maturity.",
+
+            mitigation: [
+              "Use low secure fencing where browsing pressure is significant.",
+              "Inspect field margins for repeated damage.",
+              "Protect small forage-frame and grain plots during establishment.",
+              "Repair gaps beneath fencing.",
+              "Do not permit repeated browsing when grain production is the goal."
+            ]
+          },
+
+          {
+            id:
+              "rodent-loss",
+
+            category:
+              "wildlife-and-storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Rodents may consume planted seed, developing grain, harvested panicles, loose grain, saved seed, and stored feed while contaminating material with urine, feces, hair, nesting debris, and pathogens.",
+
+            mitigation: [
+              "Use rodent-resistant storage containers.",
+              "Keep storage rooms clean and structurally secure.",
+              "Store grain above the floor where appropriate.",
+              "Clean spills immediately.",
+              "Inspect storage areas regularly.",
+              "Do not store grain in torn bags or open containers.",
+              "Discard rodent-contaminated grain.",
+              "Protect drying racks and saved seed from rodent access."
+            ]
+          },
+
+          {
+            id:
+              "crown-rust-and-stem-rust",
+
+            category:
+              "disease",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Crown rust and stem rust can reduce green leaf area, weaken plants, lower forage and grain yield, reduce test weight, and shorten the useful life of the stand.",
+
+            mitigation: [
+              "Select locally recommended resistant cultivars.",
+              "Avoid relying on a single susceptible cultivar every season.",
+              "Plant during the locally recommended period.",
+              "Maintain balanced fertility.",
+              "Inspect leaves and stems regularly.",
+              "Remove volunteer oats and grassy hosts where practical.",
+              "Do not save seed from severely diseased stands.",
+              "Rotate crops when disease pressure remains high."
+            ]
+          },
+
+          {
+            id:
+              "barley-yellow-dwarf-virus",
+
+            category:
+              "disease-and-insects",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Barley yellow dwarf virus can infect oats through aphid transmission, causing yellowing or reddening, stunting, poor tillering, reduced root growth, and major yield loss.",
+
+            mitigation: [
+              "Use locally adapted tolerant cultivars where available.",
+              "Follow regional planting-date guidance.",
+              "Avoid planting dates associated with heavy aphid pressure where extension guidance identifies that risk.",
+              "Control volunteer cereal plants and grassy weeds that may harbor aphids or virus.",
+              "Monitor seedlings for aphids and abnormal discoloration.",
+              "Use integrated pest-management guidance rather than applying insecticides without a supported need."
+            ]
+          },
+
+          {
+            id:
+              "fusarium-head-blight-and-mycotoxins",
+
+            category:
+              "disease-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Fusarium infection can damage oat panicles and grain and may create mycotoxin concerns that make harvested material unsuitable for poultry feed.",
+
+            mitigation: [
+              "Choose locally recommended disease-resistant or tolerant cultivars where available.",
+              "Rotate away from susceptible cereal crops and heavily infected residue.",
+              "Promote airflow and avoid unnecessarily prolonged head wetness.",
+              "Harvest promptly when mature.",
+              "Inspect grain carefully before storage or feeding.",
+              "Reject visibly diseased, shriveled, discolored, moldy, or musty grain.",
+              "Use laboratory testing when mycotoxin contamination is suspected and the grain might otherwise be fed.",
+              "Do not dilute questionable grain into sound feed."
+            ]
+          },
+
+          {
+            id:
+              "ergot-and-grass-seed-contamination",
+
+            category:
+              "feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Ergot bodies or toxic weed seeds may enter harvested oats through infected grassy weeds or contaminated stands and may make screenings or grain unsafe for feeding.",
+
+            mitigation: [
+              "Control grassy weeds before heading.",
+              "Inspect oat panicles and nearby grasses for abnormal dark fungal bodies.",
+              "Clean harvested grain carefully.",
+              "Do not feed questionable screenings.",
+              "Reject grain containing unidentified dark bodies or toxic weed seeds.",
+              "Seek professional identification or laboratory evaluation when contamination is uncertain."
+            ]
+          },
+
+          {
+            id:
+              "insect-damage",
+
+            category:
+              "insects",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Aphids, armyworms, cereal leaf beetles, grasshoppers, and other insects may reduce stand vigor, transmit disease, damage leaves, consume panicles, or lower grain quality.",
+
+            mitigation: [
+              "Inspect the crop regularly from establishment through grain maturity.",
+              "Identify the pest before taking action.",
+              "Use local integrated pest-management thresholds where available.",
+              "Encourage beneficial insects where compatible with the production system.",
+              "Avoid unnecessary broad-spectrum pesticide applications.",
+              "Confirm that any treatment permits the intended poultry, forage, grain, and harvest uses.",
+              "Observe all label restrictions and withholding periods."
+            ]
+          },
+
+          {
+            id:
+              "nitrate-accumulation-in-stressed-forage",
+
+            category:
+              "forage-safety",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Oat forage grown under heavy nitrogen availability and severe drought, frost, cloudy weather, herbicide injury, or other stress may accumulate elevated nitrate levels. Poultry-specific risk from small supplemental forage servings is not well quantified.",
+
+            mitigation: [
+              "Avoid excessive nitrogen fertilization.",
+              "Do not harvest heavily stressed forage immediately after drought-breaking rain without appropriate guidance.",
+              "Use caution with frost-damaged or severely stunted forage.",
+              "Do not assume stressed forage is safe based only on appearance.",
+              "Obtain forage testing when significant nitrate accumulation is reasonably suspected.",
+              "Keep oat forage supplemental rather than using it as a major ration component."
+            ]
           },
 
           {
             id:
               "chemically-treated-seed",
 
-            severity:
-              "very-high",
+            category:
+              "chemical-safety",
 
-            affectedStages: [
-              "planting",
-              "feeding"
-            ],
+            severityScore:
+              5,
 
-            mitigationOptions: [
-              "Use untreated seed where the crop or leftover seed may be fed",
-              "Keep treated seed clearly separated",
-              "Follow seed-label restrictions"
-            ],
+            likelihoodScore:
+              2,
 
-            note:
-              "Chemically treated planting seed must not be fed to chickens."
+            description:
+              "Planting seed treated with fungicides, insecticides, colorants, or other agricultural chemicals is unsafe for poultry feeding and may contaminate storage, sprouting, or processing equipment.",
+
+            mitigation: [
+              "Purchase untreated seed for any crop that may enter the poultry or human food chain.",
+              "Read the seed label before purchase and planting.",
+              "Keep treated planting seed clearly labeled and physically separated.",
+              "Never feed leftover treated seed.",
+              "Do not use treated seed for sprouts or fodder.",
+              "Do not assume washing, soaking, cooking, cracking, or grinding removes seed-treatment chemicals.",
+              "Clean contaminated equipment before using it with feed grain."
+            ]
+          },
+
+          {
+            id:
+              "beta-glucan-digestive-effects",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Oat beta-glucans can increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings, wet litter, dirty eggs, reduced feed efficiency, or reduced performance when unsuitable quantities are fed.",
+
+            mitigation: [
+              "Keep oats supplemental unless the complete ration is accurately formulated.",
+              "Avoid abrupt high-level feeding.",
+              "Use ordinary covered-oat values rather than hull-less-oat values when evaluating the grain.",
+              "Monitor droppings, litter moisture, egg cleanliness, body condition, egg production, and complete-feed intake.",
+              "Reduce or discontinue oats if flock condition or manure quality deteriorates.",
+              "Use enzyme preparations only within an accurately formulated ration and according to the product's intended use.",
+              "Continue providing an age-appropriate complete poultry feed."
+            ]
+          },
+
+          {
+            id:
+              "high-hull-fiber-and-energy-dilution",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "The fibrous hull of ordinary covered oats reduces usable poultry energy and can dilute the energy density of the total diet when oats are fed generously.",
+
+            mitigation: [
+              "Distinguish ordinary covered oats from hull-less oats and oat groats.",
+              "Do not copy nutrient values from hull-less oats into this pathway.",
+              "Offer ordinary oats in measured amounts.",
+              "Do not use grain volume alone to compare energy value with Corn or Grain Sorghum.",
+              "Monitor body condition, production, and complete-feed intake.",
+              "Avoid using high-fiber oats as the primary grain for young or high-demand birds without qualified ration formulation."
+            ]
+          },
+
+          {
+            id:
+              "complete-feed-displacement",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Generous oat feeding can displace balanced feed and reduce intake of required amino acids, calcium, vitamins, trace minerals, and usable energy.",
+
+            mitigation: [
+              "Offer oats as a measured supplement.",
+              "Do not refill supplemental grain continuously.",
+              "Keep complete feed freely available.",
+              "Do not formulate poultry diets from crude-protein percentage alone.",
+              "Provide an appropriate separate calcium source where required.",
+              "Observe egg production, shell quality, body condition, feather condition, and flock intake.",
+              "Reduce supplementation if complete-feed intake declines excessively."
+            ]
+          },
+
+          {
+            id:
+              "selective-feeding",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Chickens may selectively consume preferred oat particles or accompanying ingredients from an uneven home mixture, producing an unbalanced actual intake even when the batch appears balanced on paper.",
+
+            mitigation: [
+              "Do not rely on loosely mixed whole ingredients as a complete ration.",
+              "Use consistent particle size when oats are included in a formulated feed.",
+              "Weigh ingredients accurately.",
+              "Mix batches thoroughly.",
+              "Avoid excessively fine and excessively coarse particle separation.",
+              "Monitor feed sorting and leftover material.",
+              "Use professionally formulated complete feed when precise nutrition cannot be maintained."
+            ]
+          },
+
+          {
+            id:
+              "young-bird-nutritional-risk",
+
+            category:
+              "poultry-nutrition",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Young chicks are especially vulnerable to excessive hull fiber, unsuitable particle size, nutrient dilution, beta-glucan effects, and unbalanced home rations.",
+
+            mitigation: [
+              "Use an age-appropriate complete starter ration.",
+              "Do not use whole oats as a chick staple.",
+              "Do not substitute oat forage or sprouts for complete starter feed.",
+              "Avoid large coarse particles that chicks cannot safely consume.",
+              "Seek qualified poultry-formulation guidance before including oats in chick diets."
+            ]
+          },
+
+          {
+            id:
+              "whole-grain-without-grit",
+
+            category:
+              "feeding-management",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Adult chickens offered intact oat grain may not process it efficiently when appropriately sized insoluble grit is unavailable, particularly in confined flocks.",
+
+            mitigation: [
+              "Provide appropriately sized insoluble poultry grit when whole grain is offered.",
+              "Do not confuse oyster shell or another calcium source with digestive grit.",
+              "Use cracked or suitably processed grain when whole-grain handling is uncertain.",
+              "Observe for excessive whole-grain waste or undigested grain."
+            ]
+          },
+
+          {
+            id:
+              "whole-head-chaff-and-awn-exposure",
+
+            category:
+              "feeding-and-handling",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Coarse chaff, sharp plant fragments, stiff panicle material, or awned oat cultivars may irritate poultry eyes, faces, mouths, skin, or human handlers during whole-head feeding and processing.",
+
+            mitigation: [
+              "Identify whether the cultivar produces meaningful awns.",
+              "Inspect whole heads before offering them.",
+              "Remove excessively sharp or coarse material.",
+              "Offer small trial quantities under observation.",
+              "Do not place dusty heads in enclosed poorly ventilated coops.",
+              "Wear gloves, eye protection, and suitable respiratory protection during dusty processing.",
+              "Stop using whole heads if injuries or persistent irritation occur."
+            ]
+          },
+
+          {
+            id:
+              "wet-harvest-and-storage-mold",
+
+            category:
+              "harvest-and-storage",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Oat grain or whole heads harvested, dried, or stored while damp can heat, mold, clump, germinate, discolor, develop off odors, support insects, and become unsafe for feeding.",
+
+            mitigation: [
+              "Harvest only sound mature material.",
+              "Protect cut heads from rain and ground moisture.",
+              "Spread harvested material in shallow layers.",
+              "Maintain strong airflow during drying.",
+              "Turn or rearrange heads where needed for uniform drying.",
+              "Thresh only when grain and panicles are sufficiently dry for the selected method.",
+              "Dry grain thoroughly before sealed storage.",
+              "Store only cool grain.",
+              "Use a suitable grain-moisture meter when practical.",
+              "Inspect containers for condensation, heating, insects, odor, caking, discoloration, sprouting, and mold.",
+              "Discard questionable grain."
+            ]
+          },
+
+          {
+            id:
+              "postharvest-weathering",
+
+            category:
+              "harvest-and-storage",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Repeated rain, dew, fog, high humidity, and delayed harvest can weather mature oat panicles, reduce test weight, discolor grain, encourage sprouting, increase disease, and raise drying losses.",
+
+            mitigation: [
+              "Monitor maturity closely.",
+              "Harvest promptly when kernels reach the intended stage.",
+              "Prioritize harvest before extended wet weather.",
+              "Do not leave cut bundles exposed outdoors overnight where dew or rain is likely.",
+              "Dry storm-affected or damp material separately.",
+              "Reject grain that remains musty, heated, visibly moldy, or otherwise questionable after drying."
+            ]
+          },
+
+          {
+            id:
+              "stored-insects",
+
+            category:
+              "storage",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Stored-grain insects may consume oats, generate heat and moisture, create webbing and powder, contaminate containers, and accelerate spoilage.",
+
+            mitigation: [
+              "Store only clean dry grain.",
+              "Clean storage containers before filling.",
+              "Do not mix new grain with old infested grain.",
+              "Inspect grain regularly for insects, webbing, dust, heat, and odor.",
+              "Keep storage areas cool and dry.",
+              "Use sealed food-safe or grain-safe containers.",
+              "Use an appropriate nonchemical control method where needed.",
+              "Discard grain that has become moldy, contaminated, or unsafe."
+            ]
+          },
+
+          {
+            id:
+              "fat-oxidation-and-rancidity",
+
+            category:
+              "storage",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Oats contain more fat than several common cereal grains, and cracked or ground oats can deteriorate through oxidation and rancidity more rapidly than intact whole grain.",
+
+            mitigation: [
+              "Store oats whole whenever practical.",
+              "Crack or grind only small quantities as needed.",
+              "Protect grain from heat, light, air, and moisture.",
+              "Use clean equipment to prevent contamination with old rancid material.",
+              "Smell and inspect processed oats before feeding.",
+              "Discard grain or meal with rancid, paint-like, bitter, stale, or otherwise abnormal odor."
+            ]
+          },
+
+          {
+            id:
+              "sprouting-and-fodder-spoilage",
+
+            category:
+              "sprouting-and-fodder",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Wet oat sprout or fodder systems can develop mold, yeast, bacteria, slime, sour odor, poor drainage, overheating, seed decay, and contaminated root mats.",
+
+            mitigation: [
+              "Use only clean sound untreated grain.",
+              "Reject visibly damaged, moldy, heated, or musty seed.",
+              "Clean and sanitize trays and equipment between batches.",
+              "Maintain drainage and airflow.",
+              "Avoid excessively deep seed layers.",
+              "Control temperature.",
+              "Prevent standing water.",
+              "Inspect every batch before feeding.",
+              "Discard any batch with mold, slime, sour odor, unusual heating, discoloration, or deterioration.",
+              "Do not assume rinsing makes a spoiled batch safe."
+            ]
+          },
+
+          {
+            id:
+              "fresh-weight-fodder-misinterpretation",
+
+            category:
+              "feed-measurement",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Sprouted oats or hydroponic oat fodder may appear to create a large increase in feed because water substantially increases harvested fresh weight even though feed dry matter is not increased in the same proportion.",
+
+            mitigation: [
+              "Compare dry matter rather than fresh weight alone.",
+              "Record the weight of dry seed entering the system.",
+              "Account for uneaten roots, hulls, seed, and spoiled material.",
+              "Do not reduce complete feed pound for pound based on wet fodder weight.",
+              "Treat sprouted or fodder oats as a supplemental feeding pathway.",
+              "Monitor actual complete-feed intake and flock performance."
+            ]
+          },
+
+          {
+            id:
+              "allergen-chaff-and-dust-exposure",
+
+            category:
+              "handling",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Oat chaff, fungal spores, grain dust, fine meal, and plant particles may irritate skin, eyes, and airways or worsen respiratory sensitivity during harvest and processing.",
+
+            mitigation: [
+              "Work outdoors or in a well-ventilated area.",
+              "Wear eye protection.",
+              "Use a suitable dust mask or respirator where dust is significant.",
+              "Wear gloves and long sleeves when needed.",
+              "Avoid creating unnecessary airborne dust.",
+              "Do not grind grain excessively fine.",
+              "Clean processing areas without blowing dust into enclosed spaces.",
+              "Do not handle visibly moldy material."
+            ]
+          },
+
+          {
+            id:
+              "grain-processing-injury",
+
+            category:
+              "equipment",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Threshers, grain mills, crackers, fans, augers, belts, blades, and improvised processing equipment can create pinch, entanglement, impact, electrical, fire, hearing, and dust hazards.",
+
+            mitigation: [
+              "Follow equipment-manufacturer instructions.",
+              "Keep guards installed.",
+              "Disconnect power before clearing jams or cleaning equipment.",
+              "Keep hands, hair, jewelry, and loose clothing away from moving parts.",
+              "Do not reach into operating equipment.",
+              "Control grain dust.",
+              "Use hearing and eye protection where appropriate.",
+              "Keep children and animals away from processing equipment.",
+              "Do not use damaged cords, switches, guards, or improvised unsafe attachments."
+            ]
+          },
+
+          {
+            id:
+              "cross-contamination-during-processing",
+
+            category:
+              "feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Oats can become contaminated when harvesting, threshing, grinding, drying, or storage equipment previously held treated seed, pesticides, spoiled grain, toxic plants, rodent debris, petroleum products, or other unsafe material.",
+
+            mitigation: [
+              "Use dedicated food-safe or feed-safe equipment where practical.",
+              "Clean and inspect all equipment before processing oats.",
+              "Do not use containers that previously held chemicals.",
+              "Keep treated seed physically separated from feed grain.",
+              "Discard grain contaminated by fuel, oil, chemicals, rodents, or unknown substances.",
+              "Maintain labeled storage containers and processing records."
+            ]
+          },
+
+          {
+            id:
+              "self-seeding-and-volunteer-oats",
+
+            category:
+              "crop-management",
+
+            severityScore:
+              2,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Unharvested kernels and threshing losses may germinate as volunteer oats in later crops, beds, paths, compost areas, or poultry runs.",
+
+            mitigation: [
+              "Harvest mature panicles promptly.",
+              "Use tarps during threshing.",
+              "Clean spilled grain.",
+              "Terminate unwanted volunteer seedlings before heading.",
+              "Compost or manage residue so viable grain is not spread unintentionally.",
+              "Account for volunteers when planning crop rotation."
+            ]
           }
         ],
 
         directFacts: {
-          winterKillPossible:
+          standingWaterHighRisk:
             true,
 
-          lodgingPossible:
+          winterkillPossible:
+            true,
+
+          headingHeatRisk:
+            true,
+
+          droughtDuringGrainFillConcern:
+            true,
+
+          lodgingConcern:
+            true,
+
+          shatteringPossible:
+            true,
+
+          birdLossConcern:
+            true,
+
+          deerBrowsingConcern:
+            true,
+
+          rabbitBrowsingConcern:
+            true,
+
+          rodentAttractionConcern:
             true,
 
           crownRustConcern:
             true,
 
-          looseSmutConcern:
+          stemRustConcern:
             true,
 
-          cerealLeafBeetlePreference:
+          barleyYellowDwarfVirusConcern:
             true,
 
-          wetWeatherCanReduceGrainQuality:
+          fusariumConcern:
             true,
 
-          promptHarvestImportant:
+          mycotoxinConcern:
             true,
 
-          moistureControlImportantDuringStorage:
+          ergotConcern:
+            true,
+
+          nitrateAccumulationPossibleInStressedForage:
+            true,
+
+          betaGlucanConcern:
+            true,
+
+          highHullFiberConcern:
+            true,
+
+          stickyDroppingConcern:
+            true,
+
+          wetLitterConcern:
+            true,
+
+          dirtyEggConcern:
+            true,
+
+          storageMoistureCritical:
+            true,
+
+          storedInsectConcern:
+            true,
+
+          rancidityConcern:
+            true,
+
+          treatedSeedDanger:
+            true,
+
+          sproutingRequiresSanitation:
+            true,
+
+          wetFodderWeightCanBeMisleading:
+            true,
+
+          awnOrChaffIrritationPossible:
+            true,
+
+          mechanicalHarvestSuitable:
+            true,
+
+          mechanicalProcessingSuitable:
             true,
 
           notes: [
-            "Winter survival varies strongly by variety, establishment, soil, temperature, and duration of cold.",
-            "Oats may suffer substantial yield loss when southern winter temperatures fall below approximately 20°F.",
-            "Disease resistance is an important variety-selection criterion.",
-            "Cereal leaf beetle may strongly prefer oats among available small-grain hosts.",
-            "Rain and dew after maturity may discolor grain and reduce quality.",
-            "Wild birds, deer, rabbits, and rodents may consume forage or mature grain.",
-            "Adequate drying and protected storage are essential.",
-            "Questionable, musty, moldy, heated, rancid, or contaminated oats should not be fed."
+            "Oats' most important production risks are waterlogging, winterkill, heat during reproductive growth, drought during grain filling, lodging, disease, wildlife loss, and wet harvest conditions.",
+            "Oats are generally less winter-hardy than Cereal Rye or winter Wheat.",
+            "Winter survival should not be assumed merely because a cultivar is sold as a winter oat.",
+            "Crown rust, stem rust, aphid-transmitted viruses, and Fusarium-related grain damage can materially reduce usable production.",
+            "Disease significance varies by cultivar, planting date, region, weather, crop rotation, and nearby hosts.",
+            "The most important poultry-specific risks are beta-glucans, hull fiber, complete-feed displacement, selective feeding, unsuitable use in young birds, low calcium, and incomplete amino-acid balance.",
+            "Ordinary covered oats must not be assigned the nutritional characteristics of hull-less oats or oat groats.",
+            "Cracking or grinding does not remove hull fiber, beta-glucans, low calcium, or amino-acid limitations.",
+            "The most important postharvest risks are inadequate drying, mold, mycotoxins, insects, rodents, condensation, heating, contamination, oxidation, and rancidity.",
+            "Cracked and ground oats generally deteriorate faster than intact whole oats.",
+            "Fusarium-damaged grain should not be assumed safe based only on appearance.",
+            "Grain suspected of mycotoxin contamination may require laboratory testing.",
+            "Ergot bodies, toxic weed seeds, unsafe screenings, and chemically contaminated grain must be removed rather than diluted into feed.",
+            "Chemically treated planting seed must never enter poultry feed.",
+            "Sprouting does not make contaminated grain safe.",
+            "Cooking, cracking, grinding, soaking, rinsing, or sprouting does not reliably neutralize mycotoxins or chemical seed treatments.",
+            "Fresh oat forage grown under severe stress and high nitrogen may justify nitrate testing when significant exposure is planned.",
+            "Fresh-weight gains in sprouts or fodder must not be treated as equivalent gains in feed dry matter.",
+            "A universal backyard oat-feeding percentage is not supported.",
+            "Risk scores are comparative planner values rather than predictions that a problem will occur."
           ]
         }
       },
 
-      seasonalRoles: {
-        earlySpring:
-          true,
-
-        lateSpring:
-          true,
-
-        summer:
-          true,
-
-        lateSummer:
-          false,
-
-        fall:
-          true,
-
-        winterStorage:
-          true,
-
-        perennial:
-          false,
-
-        plantingWindows: [
-          {
-            id:
-              "early-spring-oats",
-
-            trigger:
-              "soil-workable",
-
-            offsetWeeksMinimum:
-              null,
-
-            offsetWeeksMaximum:
-              null,
-
-            soilCondition:
-              "cool-moist-and-workable",
-
-            method:
-              "direct-seed",
-
-            note:
-              "Plant spring oats as early as practical without working soil while excessively wet."
-          },
-
-          {
-            id:
-              "fall-oats-mild-winter",
-
-            trigger:
-              "regional-fall-planting-window",
-
-            offsetWeeksMinimum:
-              null,
-
-            offsetWeeksMaximum:
-              null,
-
-            soilCondition:
-              "moist-and-workable",
-
-            method:
-              "direct-seed",
-
-            note:
-              "Use locally recommended fall dates and an adapted variety where winter survival is expected."
-          }
+            seasonalRoles: {
+        spring: [
+          "Early direct seeding of spring oats",
+          "Rapid cool-season establishment",
+          "Seedling development",
+          "Tillering",
+          "Root development",
+          "Soil coverage",
+          "Weed suppression",
+          "Residual-nitrogen capture",
+          "Young green forage",
+          "Protected forage-frame production",
+          "Controlled rotational grazing",
+          "Cut-and-carry forage harvest",
+          "Stem elongation",
+          "Boot-stage development",
+          "Heading",
+          "Flowering",
+          "Early grain filling",
+          "Resumption of growth by surviving fall-planted oats"
         ],
 
-        harvestWindows: [
-          {
-            id:
-              "young-oat-forage",
-
-            trigger:
-              "established-vegetative-growth",
-
-            usePathId:
-              "fresh-young-oat-forage",
-
-            note:
-              "Use leafy vegetative growth before excessive stem and seed-head development reduces forage tenderness."
-          },
-
-          {
-            id:
-              "whole-dried-oat-heads",
-
-            trigger:
-              "mature-seed-heads",
-
-            usePathId:
-              "whole-dried-oat-seed-heads",
-
-            note:
-              "Cut mature heads and finish drying under protected, ventilated conditions."
-          },
-
-          {
-            id:
-              "loose-dried-oat-grain",
-
-            trigger:
-              "grain-mature-and-adequately-dry",
-
-            usePathId:
-              "loose-dried-whole-oat-grain",
-
-            note:
-              "Thresh and clean mature grain after the seed heads have reached a suitable dry condition."
-          },
-
-          {
-            id:
-              "ground-oat-grain",
-
-            trigger:
-              "clean-dry-grain-available",
-
-            usePathId:
-              "ground-oat-grain",
-
-            note:
-              "Grind only sound, adequately dried grain and use the processed grain before quality declines."
-          }
+        summer: [
+          "Late grain filling",
+          "Kernel development",
+          "Physiological maturity",
+          "Whole-head harvest",
+          "Loose-grain harvest",
+          "Protected drying",
+          "Threshing",
+          "Winnowing",
+          "Screening",
+          "Cleaning and sorting",
+          "Straw harvest",
+          "Postharvest gleaning",
+          "Residue management",
+          "Storage preparation",
+          "Stored-grain inspection"
         ],
 
-        cropSequenceRoles: [
-          "Early spring grain",
-          "Fall-planted winter annual",
-          "Cool-season living forage",
-          "Protected forage-frame crop",
-          "Seasonal rotational-paddock forage",
-          "Cover crop",
-          "Erosion-control crop",
-          "Nitrogen catch crop",
-          "Green-manure crop",
-          "Dry winter-storage grain"
+        autumn: [
+          "Planting fall oats in suitable climates",
+          "Planting winter-hardy oat cultivars where locally adapted",
+          "Rapid cover-crop establishment",
+          "Cool-season soil coverage",
+          "Cool-season weed suppression",
+          "Soil protection",
+          "Erosion control",
+          "Residual-nitrogen capture",
+          "Young seasonal forage",
+          "Protected forage-frame establishment",
+          "Controlled paddock grazing",
+          "Cut-and-carry forage production",
+          "Winter-killed cover-crop establishment in cold climates",
+          "Crop-rotation transition"
         ],
 
-        seasonalLimitations: [
-          "Ordinary oats may winter-kill in severe cold",
-          "Winter hardiness varies substantially by variety",
-          "Summer heat can reduce grain performance",
-          "Forage quality declines as stems and seed heads mature",
-          "Heavy grazing may prevent grain production",
-          "Wet weather near maturity can damage grain quality",
-          "Stored grain requires adequate drying"
+        winter: [
+          "Dormant or slowly growing fall-planted oats where adapted",
+          "Active cool-season forage growth in mild climates",
+          "Living soil cover where winter survival occurs",
+          "Winter-killed surface residue in cold climates",
+          "Soil stabilization",
+          "Erosion protection",
+          "Stored whole-grain feeding",
+          "Stored cracked-grain feeding",
+          "Stored ground-grain ration use",
+          "Stored whole-head enrichment",
+          "Short-sprout production",
+          "Hydroponic fodder production",
+          "Saved-seed inspection",
+          "Storage monitoring",
+          "Cultivar selection",
+          "Seed and equipment planning"
         ],
+
+        plannerSeasonScores: {
+          spring:
+            5,
+
+          summer:
+            4,
+
+          autumn:
+            5,
+
+          winter:
+            4
+        },
 
         directFacts: {
-          coolSeasonAnnual:
+          springOatsAvailable:
             true,
 
-          springAndFallPlantingPossible:
+          winterOatsAvailable:
             true,
 
-          southernForagePlantingOftenEarlierThanGrainPlanting:
+          facultativeOatsAvailable:
+            false,
+
+          springPlantingRole:
             true,
 
-          forageQualityDeclinesWithMaturity:
+          autumnPlantingRole:
             true,
 
-          grainHarvestMoistureReferencePercent:
-            13,
+          winterLivingCoverPossible:
+            true,
+
+          intentionalWinterKillCoverRole:
+            true,
+
+          summerHeatProductionWeak:
+            true,
+
+          storedWinterFeedValue:
+            true,
+
+          yearRoundIndoorSproutProductionPossible:
+            true,
+
+          yearRoundHydroponicFodderProductionPossible:
+            true,
+
+          grainHarvestEndsAnnualCycle:
+            true,
+
+          residueBenefitsContinueAfterHarvest:
+            true,
+
+          freshForageAndGrainProductionCompete:
+            true,
 
           notes: [
-            "Spring oats allow northern growers to produce a cool-season crop without relying on winter survival.",
-            "Fall oats provide winter and spring growth in suitable southern and mild-winter climates.",
-            "Forage planting is often earlier than grain planting in the South.",
-            "Vegetative forage use and mature grain production compete with one another when the same stand is heavily grazed.",
-            "Grain should be harvested promptly after reaching suitable maturity and moisture.",
-            "Stored whole grain extends the crop's usefulness beyond the growing season."
+            "Seasonal roles depend strongly on whether oats are planted as an early spring crop, a fall forage crop, a winter-hardy grain crop, or an intentionally winter-killed cover crop.",
+            "Spring oats are planted early and normally complete vegetative growth, heading, grain filling, and maturity before or during summer.",
+            "Fall-planted oats may provide autumn, winter, and spring forage in mild climates.",
+            "Winter-hardy oat cultivars can survive some winters where locally adapted, but survival is less dependable than for Cereal Rye or winter Wheat.",
+            "Oats should not be treated as reliably winter-hardy across all northern or transitional climates.",
+            "In colder regions, fall-planted oats commonly winter-kill and leave protective surface residue.",
+            "Winter-killed oat residue can continue providing erosion control, weed suppression, soil protection, and organic-matter value.",
+            "Winter-killed stands do not provide a spring grain harvest.",
+            "Young vegetative growth provides the strongest fresh-forage value.",
+            "Forage tenderness and poultry accessibility decline as stems elongate and panicles develop.",
+            "Heavy cutting or grazing during spring can reduce tillering recovery, delay heading, or eliminate grain production.",
+            "A stand managed intensively for forage should not also be assumed to produce a full grain crop.",
+            "Protected forage frames may extend access while preventing chickens from uprooting plants.",
+            "Rotational paddock use requires establishment periods and recovery intervals.",
+            "Spring planting should occur early enough to reduce exposure to severe heat during heading and grain filling.",
+            "The crop should not be ranked as dependable during prolonged extreme summer heat.",
+            "Late spring or summer drought can reduce forage regrowth and grain filling.",
+            "Grain harvest provides the strongest dry stored-feed pathway.",
+            "Whole mature heads provide a lower-processing enrichment pathway.",
+            "Dry whole grain can support winter feeding without refrigeration when adequately dried and protected.",
+            "Whole grain generally stores more efficiently than cracked or ground oats.",
+            "Cracked or ground oats should normally be produced in smaller batches because processing increases exposed surface area and deterioration risk.",
+            "Whole-head storage requires more space and may create more chaff, dust, waste, and intake uncertainty than cleaned loose grain.",
+            "Short sprouts and hydroponic fodder can be produced indoors outside the outdoor growing season.",
+            "Indoor sprout and fodder production requires clean untreated grain, sanitation, drainage, airflow, temperature control, and batch inspection.",
+            "Sprout or fodder fresh weight must not be treated as equivalent dry-feed production.",
+            "Stored oats remain supplemental feed and do not replace a nutritionally complete poultry ration.",
+            "Seasonal planner scores combine planting, forage, grain, cover-crop, storage, and indoor-production value rather than representing equal biological productivity during every season."
           ]
         }
       },
 
-      usePaths: [
+            usePaths: [
         {
           id:
-            "fresh-young-oat-forage",
+            "whole-dry-oats",
 
           label:
-            "Fresh Young Oat Forage",
+            "Whole Dry Oats",
 
           description:
-            "Established young vegetative oats used through protected living access, controlled rotational grazing, or cut-and-carry harvesting before the stand becomes mature and stemmy.",
+            "Mature ordinary covered oat grain is harvested, dried thoroughly, threshed, winnowed, screened, cleaned, inspected, and stored whole for measured supplementation of established adult chickens.",
 
           primaryFeedRole:
-            "fresh-green-forage",
+            "whole-moderate-energy-grain",
 
           harvestProducts: [
-            "fresh-greens",
-            "living-forage"
-          ],
-
-          suitableFeedingMethods: [
-            "living-grazing",
-            "cut-and-carry"
-          ],
-
-          requiredProcessingTasks: [],
-
-          optionalProcessingTasks: [
-            "chop"
-          ],
-
-          requiredEquipment: [],
-
-          helpfulEquipment: [
-            "fencing",
-            "forage-frame",
-            "basket",
-            "hand-pruners"
-          ],
-
-          harvestPattern:
-            "continuous",
-
-          harvestFrequencyCategory:
-            "several-weekly",
-
-          storageMethods: [
-            "short-term-fresh"
-          ],
-
-          preferredStorageMethod:
-            "immediate-feeding",
-
-          storageDurationCategory:
-            "immediate",
-
-          nonElectricStorageSuitable:
-            false,
-
-          refrigerationSuitable:
-            true,
-
-          freezingSuitable:
-            false,
-
-          dryingRequired:
-            false,
-
-          curingRequired:
-            false,
-
-          shellingRequired:
-            false,
-
-          threshingRequired:
-            false,
-
-          cookingRequired:
-            false,
-
-          grindingRequired:
-            false,
-
-          moistureSensitive:
-            true,
-
-          moldRiskScore:
-            2,
-
-          rodentRiskScore:
-            1,
-
-          storedInsectRiskScore:
-            1,
-
-          harvestEaseScore:
-            5,
-
-          preparationEaseScore:
-            5,
-
-          beginnerSuitabilityScore:
-            5,
-
-          householdFoodValueScore:
-            1,
-
-          flockValueScore:
-            5,
-
-          safetyWarnings: [
-            "Allow the crop to establish before permitting flock access.",
-            "Avoid unrestricted grazing that uproots or destroys the stand.",
-            "Use clean fresh growth rather than slimy, moldy, contaminated, or badly decayed forage.",
-            "Do not treat fresh forage as a replacement for complete poultry feed.",
-            "Do not use chemically treated seed where plants or leftover seed may be fed."
-          ],
-
-          incompatibleUserTraits: [
-            "requires-long-term-storage",
-            "wants-dry-grain-only",
-            "has-no-way-to-protect-establishing-crop"
-          ]
-        },
-
-        {
-          id:
-            "whole-dried-oat-seed-heads",
-
-          label:
-            "Whole Dried Oat Seed Heads",
-
-          description:
-            "Mature oat seed heads cut and dried under protected, ventilated conditions for later whole-head flock enrichment.",
-
-          primaryFeedRole:
-            "stored-enrichment",
-
-          harvestProducts: [
-            "dried-seed-heads"
-          ],
-
-          suitableFeedingMethods: [
-            "whole-seed-heads",
-            "winter-storage",
-            "seasonal-enrichment"
-          ],
-
-          requiredProcessingTasks: [
-            "dry"
-          ],
-
-          optionalProcessingTasks: [
-            "clean-sort"
-          ],
-
-          requiredEquipment: [],
-
-          helpfulEquipment: [
-            "hand-pruners",
-            "basket",
-            "drying-rack",
-            "drying-screen",
-            "fan",
-            "food-safe-container",
-            "metal-grain-can"
-          ],
-
-          harvestPattern:
-            "major",
-
-          harvestFrequencyCategory:
-            "seasonal",
-
-          storageMethods: [
-            "dried-whole"
-          ],
-
-          preferredStorageMethod:
-            "protected-shorter-term-dried-whole",
-
-          storageDurationCategory:
-            "medium",
-
-          nonElectricStorageSuitable:
-            true,
-
-          refrigerationSuitable:
-            false,
-
-          freezingSuitable:
-            false,
-
-          dryingRequired:
-            true,
-
-          curingRequired:
-            false,
-
-          shellingRequired:
-            false,
-
-          threshingRequired:
-            false,
-
-          cookingRequired:
-            false,
-
-          grindingRequired:
-            false,
-
-          moistureSensitive:
-            true,
-
-          moldRiskScore:
-            4,
-
-          rodentRiskScore:
-            4,
-
-          storedInsectRiskScore:
-            3,
-
-          harvestEaseScore:
-            3,
-
-          preparationEaseScore:
-            3,
-
-          beginnerSuitabilityScore:
-            4,
-
-          householdFoodValueScore:
-            2,
-
-          flockValueScore:
-            4,
-
-          safetyWarnings: [
-            "Dry heads thoroughly before enclosed storage.",
-            "Do not seal heads while they remain warm or damp.",
-            "Inspect stored heads for condensation, insects, rodents, heating, musty odor, and mold.",
-            "Do not feed damaged, moldy, musty, rancid, or contaminated heads.",
-            "Do not feed chemically treated planting seed."
-          ],
-
-          incompatibleUserTraits: [
-            "declines-drying",
-            "has-no-protected-drying-area",
-            "has-no-dry-storage",
-            "has-no-rodent-protected-storage"
-          ]
-        },
-
-        {
-          id:
-            "loose-dried-whole-oat-grain",
-
-          label:
-            "Loose Dried Whole Oat Grain",
-
-          description:
-            "Mature oat grain threshed from adequately dried seed heads, winnowed, cleaned, and stored whole for measured supplemental feeding.",
-
-          primaryFeedRole:
-            "moderate-energy-grain",
-
-          harvestProducts: [
-            "dry-seeds"
+            "mature-dry-oats",
+            "whole-covered-oat-grain",
+            "stored-cereal-grain",
+            "moderate-energy-feed-grain"
           ],
 
           suitableFeedingMethods: [
             "whole-grain",
             "measured-supplement",
-            "winter-storage"
+            "winter-supplement",
+            "stored-feed-ingredient",
+            "scatter-feeding"
           ],
 
           requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
             "dry",
             "thresh",
             "winnow",
-            "clean-sort"
+            "screen",
+            "clean-sort",
+            "inspect-moisture"
           ],
 
-          optionalProcessingTasks: [],
+          optionalProcessingTasks: [
+            "remove-excessive-awn-or-chaff-material",
+            "freeze-for-insect-control",
+            "portion",
+            "laboratory-test-questionable-grain",
+            "save-seed"
+          ],
 
           requiredEquipment: [],
 
           helpfulEquipment: [
-            "drying-rack",
+            "harvest-tarp",
+            "sickle",
+            "scythe",
+            "hand-pruners",
             "drying-screen",
+            "drying-rack",
             "fan",
-            "grain-thresher",
+            "threshing-container",
+            "mechanical-thresher",
+            "grain-screen",
+            "winnowing-fan",
             "moisture-meter",
+            "food-scale",
             "food-safe-bucket",
-            "food-safe-container",
             "metal-grain-can",
-            "rodent-proof-room"
+            "rodent-resistant-storage"
           ],
 
           harvestPattern:
             "major",
 
           harvestFrequencyCategory:
-            "seasonal",
+            "single-seasonal",
 
           storageMethods: [
-            "dried-shelled"
+            "sealed-dry-grain-storage",
+            "rodent-resistant-room-temperature-storage"
           ],
 
           preferredStorageMethod:
-            "airtight-after-adequate-drying",
+            "whole-clean-dry-oats-in-a-cool-dark-dry-and-rodent-resistant-container",
 
           storageDurationCategory:
             "long",
@@ -61264,7 +62236,7 @@ const BCP_FEED_CROPS = {
             false,
 
           freezingSuitable:
-            false,
+            true,
 
           dryingRequired:
             true,
@@ -61288,7 +62260,7 @@ const BCP_FEED_CROPS = {
             true,
 
           moldRiskScore:
-            4,
+            5,
 
           rodentRiskScore:
             5,
@@ -61300,7 +62272,7 @@ const BCP_FEED_CROPS = {
             3,
 
           preparationEaseScore:
-            2,
+            3,
 
           beginnerSuitabilityScore:
             3,
@@ -61311,92 +62283,450 @@ const BCP_FEED_CROPS = {
           flockValueScore:
             4,
 
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            4,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "whole-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-cracking",
+            "later-grinding",
+            "later-sprouting",
+            "seed-saving"
+          ],
+
+          preservationLimitations: [
+            "Oats must be fully mature, sound, clean, cool, and adequately dry before sealed storage.",
+            "Whole grain remains vulnerable to moisture, condensation, insects, rodents, contamination, and gradual quality deterioration.",
+            "Ordinary covered oats retain a fibrous hull that reduces usable poultry energy.",
+            "Whole covered oats must not be assigned the lower fiber or higher usable energy associated with hull-less oats or oat groats.",
+            "Oats contain more fat than several other common cereal grains and can eventually develop rancid or stale flavors under poor storage conditions.",
+            "Awned cultivars or coarse panicle material may require additional inspection and cleaning.",
+            "Storage duration varies with grain moisture, grain temperature, ambient humidity, sanitation, container quality, insect pressure, rodent pressure, and frequency of inspection.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "long-when-stored-whole-clean-cool-and-dry",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-browsing",
+            "rabbit-or-groundhog-browsing",
+            "lodging",
+            "shattering",
+            "rain-during-maturity",
+            "sprouting-before-harvest",
+            "grain-left-during-threshing",
+            "hull-and-chaff-loss",
+            "insufficient-drying",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "condensation",
+            "heating",
+            "rancidity"
+          ],
+
           safetyWarnings: [
-            "Grain must be adequately dried and cooled before airtight storage.",
-            "Provide suitable grit when adult chickens consume whole grain.",
-            "Do not assume whole oats provide the energy or nutrient balance of complete poultry feed.",
-            "Inspect regularly for moisture, heating, insects, rodents, rancidity, and mold.",
-            "Discard musty, moldy, heated, rancid, sprouted-in-storage, or contaminated grain.",
-            "Do not feed chemically treated planting seed."
+            "Use only correctly identified, untreated oats intended for food, feed, forage, or suitable seed production.",
+            "Never feed chemically treated planting seed.",
+            "Do not feed grain contaminated by Fusarium, mold, suspected mycotoxins, ergot bodies, toxic weed seeds, rodents, insects, chemicals, floodwater, petroleum products, or unknown substances.",
+            "Reject grain that is musty, sour, heated, damp, visibly moldy, unusually discolored, clumped, sprouted in storage, rancid, or badly insect-damaged.",
+            "Inspect cleaned grain for abnormal dark fungal bodies, discolored kernels, toxic weed seeds, and foreign material.",
+            "A grain lot suspected of Fusarium or mycotoxin contamination may require laboratory testing.",
+            "Cooking, washing, soaking, cracking, grinding, or sprouting does not reliably neutralize mycotoxins or chemical seed treatments.",
+            "Ordinary covered oats contain substantial hull fiber and generally provide less usable poultry energy than Corn or Grain Sorghum.",
+            "Oat beta-glucans may contribute to increased intestinal viscosity, sticky droppings, wet litter, dirty eggs, and reduced nutrient utilization.",
+            "Whole oat grain is most appropriate for established adult chickens with access to appropriately sized insoluble grit.",
+            "Do not confuse oyster shell or another calcium supplement with digestive grit.",
+            "Whole oats should remain a measured supplement unless included in an accurately formulated complete ration.",
+            "Oats do not provide sufficient calcium or a complete amino-acid balance for laying hens.",
+            "Do not use whole oats as the primary feed for young chicks.",
+            "No universal safe backyard supplementation percentage is stored."
           ],
 
           incompatibleUserTraits: [
-            "declines-drying",
-            "declines-threshing",
-            "declines-winnowing",
-            "requires-minimal-processing",
-            "has-no-dry-storage",
-            "has-no-rodent-protected-storage"
+            "has-no-drying-capability",
+            "has-no-threshing-capability",
+            "has-no-winnowing-or-cleaning-capability",
+            "has-no-protected-storage",
+            "cannot-monitor-stored-grain",
+            "has-severe-rodent-pressure",
+            "requires-zero-processing",
+            "requires-highest-energy-grain",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks",
+            "cannot-identify-seed-treatment-status",
+            "cannot-inspect-for-mold-or-grain-contamination"
           ]
         },
 
         {
           id:
-            "ground-oat-grain",
+            "cracked-dry-oats",
 
           label:
-            "Ground or Coarsely Processed Oat Grain",
+            "Cracked Dry Oats",
 
           description:
-            "Sound mature oat grain dried, threshed, cleaned, and ground or coarsely processed for measured supplemental use or incorporation into a properly balanced ration.",
+            "Clean, fully dried ordinary covered oat grain is cracked into coarse pieces to improve portioning, mixing, and physical access while avoiding the excessive dust created by fine grinding.",
 
           primaryFeedRole:
-            "processed-grain",
+            "processed-moderate-energy-grain",
 
           harvestProducts: [
-            "dry-seeds"
+            "cracked-oats",
+            "coarsely-broken-oat-grain",
+            "processed-covered-oats",
+            "supplemental-ration-ingredient"
           ],
 
           suitableFeedingMethods: [
             "processed-grain",
-            "measured-supplement"
+            "measured-supplement",
+            "ration-mixing",
+            "winter-supplement",
+            "scatter-feeding"
           ],
 
           requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
             "dry",
             "thresh",
             "winnow",
+            "screen",
             "clean-sort",
-            "grind"
+            "inspect-moisture",
+            "crack"
           ],
 
-          optionalProcessingTasks: [],
+          optionalProcessingTasks: [
+            "remove-excessive-awn-or-chaff-material",
+            "screen-particle-size",
+            "measure",
+            "blend",
+            "portion",
+            "prepare-small-batches"
+          ],
 
           requiredEquipment: [
-            "grain-mill"
+            "grain-cracker-or-suitable-coarse-processing-method"
           ],
 
           helpfulEquipment: [
-            "drying-rack",
+            "harvest-tarp",
             "drying-screen",
+            "drying-rack",
             "fan",
-            "grain-thresher",
-            "feed-grinder",
+            "threshing-container",
+            "grain-screen",
+            "winnowing-fan",
             "moisture-meter",
-            "food-safe-bucket",
-            "food-safe-container",
-            "metal-grain-can",
-            "rodent-proof-room"
+            "grain-cracker",
+            "feed-scale",
+            "mixing-container",
+            "dust-mask-or-respirator",
+            "eye-protection",
+            "food-safe-storage-container"
           ],
 
           harvestPattern:
-            "major",
+            "batch",
 
           harvestFrequencyCategory:
-            "seasonal",
+            "processed-as-needed",
 
           storageMethods: [
-            "dried-shelled"
+            "short-to-moderate-term-dry-storage",
+            "sealed-food-safe-container"
           ],
 
           preferredStorageMethod:
-            "shorter-term-airtight-after-grinding",
+            "store-oats-whole-and-crack-only-manageable-batches-close-to-feeding-time",
 
           storageDurationCategory:
-            "medium",
+            "moderate",
 
           nonElectricStorageSuitable:
             true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "short-term-dry-storage",
+            "freezing",
+            "immediate-ration-mixing",
+            "measured-supplementation"
+          ],
+
+          preservationLimitations: [
+            "Cracking exposes more grain surface area than whole-grain storage.",
+            "The relatively high fat content of oats makes processed grain more vulnerable to oxidation and rancidity than intact whole grain.",
+            "Cracked oats may absorb moisture, develop insects, mold, or lose quality faster than whole oats.",
+            "Particle size should remain coarse enough to avoid excessive dust.",
+            "Fine particles may separate from other ingredients, settle in feeders, become airborne, or be rejected by chickens.",
+            "Cracking breaks the groat and hull but does not remove the oat hull.",
+            "Cracking does not eliminate beta-glucans, high fiber, amino-acid limitations, low calcium, or complete-feed displacement risk.",
+            "Long-term storage is generally more dependable before cracking."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-dry-oats",
+
+          likelyLossPoints: [
+            "spillage-during-processing",
+            "dust-generation",
+            "uneven-particle-size",
+            "excessively-fine-particles",
+            "ingredient-separation",
+            "feeder-sorting",
+            "moisture-absorption",
+            "oxidation",
+            "rancidity",
+            "storage-insects",
+            "rodent-damage",
+            "mold"
+          ],
+
+          safetyWarnings: [
+            "Crack only clean, sound, fully dried, untreated oats.",
+            "Never process or feed chemically treated planting seed.",
+            "Do not process grain that smells musty, sour, heated, stale, paint-like, bitter, rancid, or otherwise abnormal.",
+            "Reject grain showing mold, condensation, clumping, sprouting, unusual discoloration, suspected ergot, toxic weed seeds, severe insect damage, or rodent contamination.",
+            "A suspected mycotoxin problem is not corrected by cracking.",
+            "Avoid creating excessively fine dusty meal.",
+            "Use respiratory and eye protection when processing produces airborne dust, hull fragments, chaff, or awn material.",
+            "Keep hands, hair, jewelry, loose clothing, and tools away from moving grain-processing equipment.",
+            "Cracked ordinary covered oats remain relatively high in fiber.",
+            "Cracking does not convert ordinary covered oats into hull-less oats or oat groats.",
+            "Oat beta-glucans can still contribute to sticky droppings, wet litter, dirty eggs, and reduced nutrient utilization after cracking.",
+            "Cracked oats must remain a measured supplement or an accurately formulated ration ingredient.",
+            "Cracked oats do not provide sufficient calcium or a complete amino-acid balance.",
+            "Continue providing an age-appropriate complete feed unless the entire ration has been accurately formulated.",
+            "Observe feeders for sorting, separation, dust, and waste.",
+            "Monitor complete-feed intake, body condition, egg production, shell quality, droppings, and litter moisture."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-grain-processing-equipment",
+            "cannot-control-processing-dust",
+            "requires-long-term-storage-after-processing",
+            "requires-zero-processing",
+            "requires-highest-energy-grain",
+            "requires-complete-feed-replacement",
+            "cannot-measure-supplements",
+            "has-only-young-chicks",
+            "cannot-monitor-droppings-or-litter",
+            "cannot-identify-rancid-or-spoiled-grain"
+          ]
+        },
+
+                {
+          id:
+            "ground-oat-ration-ingredient",
+
+          label:
+            "Ground Oat Ration Ingredient",
+
+          description:
+            "Clean, fully dried ordinary covered oats are coarsely ground, accurately weighed, and thoroughly blended as one ingredient within a nutritionally balanced poultry ration.",
+
+          primaryFeedRole:
+            "formulated-moderate-energy-and-fiber-ingredient",
+
+          harvestProducts: [
+            "ground-oats",
+            "oat-meal-feed-ingredient",
+            "homegrown-ration-ingredient",
+            "processed-covered-oat-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "formulated-ration",
+            "measured-feed-ingredient",
+            "thoroughly-blended-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "blend"
+          ],
+
+          optionalProcessingTasks: [
+            "remove-excessive-awn-or-chaff-material",
+            "screen-particle-size",
+            "laboratory-feed-analysis",
+            "prepare-small-batches",
+            "record-formulation",
+            "add-formulated-enzyme-product"
+          ],
+
+          requiredEquipment: [
+            "suitable-grain-grinder",
+            "accurate-feed-scale",
+            "mixing-container"
+          ],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "fan",
+            "threshing-container",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "feed-grinder",
+            "dust-collection-system",
+            "dust-mask-or-respirator",
+            "eye-protection",
+            "batch-record-sheet",
+            "sealed-food-safe-container",
+            "professional-ration-formulation-software-or-service",
+            "uniform-feed-mixer"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "processed-and-mixed-as-needed",
+
+          storageMethods: [
+            "short-term-sealed-dry-storage",
+            "immediate-ration-use"
+          ],
+
+          preferredStorageMethod:
+            "store-oats-whole-and-grind-only-the-quantity-needed-for-a-short-term-formulated-feed-batch",
+
+          storageDurationCategory:
+            "short-to-moderate",
+
+          nonElectricStorageSuitable:
+            false,
 
           refrigerationSuitable:
             false,
@@ -61426,7 +62756,7 @@ const BCP_FEED_CROPS = {
             true,
 
           moldRiskScore:
-            4,
+            5,
 
           rodentRiskScore:
             5,
@@ -61438,290 +62768,1475 @@ const BCP_FEED_CROPS = {
             3,
 
           preparationEaseScore:
-            1,
-
-          beginnerSuitabilityScore:
             2,
 
+          beginnerSuitabilityScore:
+            1,
+
           householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "immediate-ration-mixing",
+            "short-term-sealed-storage",
+            "freezing-of-small-batches"
+          ],
+
+          preservationLimitations: [
+            "Ground oats have a shorter dependable storage period than intact whole grain.",
+            "Grinding exposes the oil-rich interior of the oat kernel to oxygen and increases oxidation and rancidity risk.",
+            "Ground oats absorb moisture more readily than intact grain.",
+            "Fine particles may separate from other ration ingredients during handling, storage, or feeding.",
+            "Ground oat hull particles remain part of the meal unless a separate dehulling process is used.",
+            "Grinding does not convert ordinary covered oats into hull-less oats, groats, rolled oats, or dehulled oat products.",
+            "Grinding does not remove beta-glucans, hull fiber, phytate, low calcium, or amino-acid limitations.",
+            "Grinding does not make oats a complete poultry feed.",
+            "Excessively fine grinding can create dust, reduce palatability, increase feeder loss, and contribute to ingredient separation.",
+            "Long-term storage is generally more dependable before grinding.",
+            "A formulated ration may require nutrient data specific to the actual oat lot rather than generic book values.",
+            "An enzyme product may improve utilization in some formulated diets but cannot correct an otherwise unbalanced ration.",
+            "Enzymes must be selected and used according to their intended species, feed ingredients, formulation, and manufacturer directions."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-to-moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "substantially-shorter-than-whole-dry-oats",
+
+          likelyLossPoints: [
+            "grain-loss-during-threshing",
+            "spillage-during-grinding",
+            "dust-generation",
+            "excessively-fine-particles",
+            "uneven-particle-size",
+            "ingredient-separation",
+            "inaccurate-weighing",
+            "incomplete-mixing",
+            "selective-feeding",
+            "moisture-absorption",
+            "oxidation",
+            "rancidity",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "formulation-error"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, sound, fully dried, correctly identified, untreated oats.",
+            "Never grind or feed chemically treated planting seed.",
+            "Do not process grain contaminated by mold, Fusarium, suspected mycotoxins, ergot bodies, toxic weed seeds, rodents, insects, chemicals, floodwater, fuel, oil, or unknown substances.",
+            "Reject grain that is musty, sour, heated, damp, clumped, visibly moldy, sprouted in storage, unusually discolored, rancid, or badly insect-damaged.",
+            "Grinding does not make contaminated or spoiled grain safe.",
+            "A suspected mycotoxin problem may require laboratory testing.",
+            "Do not dilute questionable grain into otherwise sound feed.",
+            "Use respiratory and eye protection when grinding produces airborne grain dust, hull particles, chaff, or awn fragments.",
+            "Control grain dust and keep it away from sparks, flames, heaters, motors, and other ignition sources.",
+            "Follow all grinder and feed-mixer manufacturer instructions.",
+            "Keep machine guards installed.",
+            "Disconnect power before clearing jams, cleaning, or servicing equipment.",
+            "Keep hands, hair, jewelry, loose clothing, children, and animals away from operating equipment.",
+            "Do not grind oats excessively fine.",
+            "Ground ordinary covered oats remain relatively high in hull fiber.",
+            "Ground oats generally provide less usable poultry energy than Corn or Grain Sorghum.",
+            "Oat beta-glucans can increase intestinal viscosity and contribute to sticky droppings, wet litter, dirty eggs, and reduced nutrient utilization.",
+            "A professionally formulated ration may use an appropriate enzyme, but enzyme use does not replace accurate nutrient formulation.",
+            "Oats do not provide sufficient calcium for laying hens.",
+            "Oat protein does not provide a complete essential-amino-acid balance.",
+            "Do not formulate a ration from crude-protein percentage alone.",
+            "Use nutrient values appropriate for ordinary covered oats rather than hull-less oats or oat groats.",
+            "Weigh every ingredient accurately.",
+            "Mix the ration thoroughly enough to limit ingredient separation and selective feeding.",
+            "Prepare manageable batches and inspect stored feed frequently.",
+            "Discard finished feed showing mold, insects, heating, condensation, rancid odor, mustiness, clumping, or rodent contamination.",
+            "Monitor complete-feed intake, body condition, egg production, shell quality, feather condition, droppings, litter moisture, egg cleanliness, and feeder waste.",
+            "Young chicks are especially vulnerable to excessive fiber, beta-glucans, unsuitable particle size, nutrient dilution, and ration-formulation errors.",
+            "An age-appropriate commercial complete feed remains the safer choice when accurate ration formulation cannot be maintained.",
+            "No universal oat inclusion percentage is stored."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-ration-formulation-knowledge",
+            "has-no-accurate-feed-scale",
+            "has-no-grinder",
+            "has-no-uniform-mixing-method",
+            "cannot-control-processing-dust",
+            "cannot-measure-ingredients-accurately",
+            "cannot-monitor-feed-storage",
+            "cannot-monitor-litter-condition",
+            "cannot-monitor-flock-performance",
+            "requires-simple-treat-feeding",
+            "requires-zero-processing",
+            "requires-long-term-storage-after-grinding",
+            "requires-highest-energy-grain",
+            "requires-complete-feed-replacement",
+            "requires-unverified-inclusion-percentages",
+            "has-only-young-chicks"
+          ]
+        },
+
+                {
+          id:
+            "whole-mature-oat-heads",
+
+          label:
+            "Whole Mature Oat Heads",
+
+          description:
+            "Entire mature oat panicles are harvested, dried if necessary, and offered intact to encourage natural pecking, scratching, and slow supplemental feeding while reducing grain-processing labor.",
+
+          primaryFeedRole:
+            "whole-head-enrichment",
+
+          harvestProducts: [
+            "whole-oat-panicles",
+            "mature-oat-heads",
+            "standing-grain-bundles",
+            "natural-enrichment-feed"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-head",
+            "hanging-bundle",
+            "ground-scatter",
+            "winter-enrichment",
+            "protected-feeder"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-seed-heads",
+            "inspect",
+            "dry-if-needed"
+          ],
+
+          optionalProcessingTasks: [
+            "trim-stems",
+            "bundle",
+            "remove-excessive-awn-material",
+            "freeze-for-insect-control",
+            "portion"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "harvest-basket",
+            "drying-rack",
+            "drying-screen",
+            "string-or-twine",
+            "rodent-resistant-storage",
+            "food-safe-container"
+          ],
+
+          harvestPattern:
+            "seasonal",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "dry-whole-head-storage",
+            "hanging-storage",
+            "sealed-dry-container"
+          ],
+
+          preferredStorageMethod:
+            "dry-whole-heads-stored-in-a-cool-dry-rodent-resistant-location",
+
+          storageDurationCategory:
+            "moderate-to-long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
             4,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-head-storage",
+            "freezing",
+            "later-threshing"
+          ],
+
+          preservationLimitations: [
+            "Whole heads occupy considerably more storage volume than cleaned loose grain.",
+            "Feed intake is difficult to measure accurately.",
+            "Some grain remains attached after chickens finish feeding.",
+            "Chaff and stem material increase storage volume.",
+            "Whole heads remain vulnerable to moisture, rodents, insects, and mold.",
+            "Awned cultivars may require additional inspection before feeding."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate-to-long",
+
+          shelfLifeAfterProcessingCategory:
+            "similar-to-whole-head-storage",
+
+          likelyLossPoints: [
+            "bird-feeding-before-harvest",
+            "storm-damage",
+            "lodging",
+            "improper-drying",
+            "rodent-loss",
+            "storage-insects",
+            "mold",
+            "grain-left-on-heads",
+            "discarded-stems",
+            "feeder-waste"
+          ],
+
+          safetyWarnings: [
+            "Harvest only mature healthy heads.",
+            "Dry thoroughly before storage.",
+            "Discard moldy, damp, musty, heated, or contaminated heads.",
+            "Never feed chemically treated seed heads.",
+            "Inspect regularly for rodents and insects.",
+            "Remove excessively sharp awns if they present an injury concern.",
+            "Whole heads remain supplemental feed only.",
+            "Continue providing complete poultry feed.",
+            "Monitor waste and flock acceptance.",
+            "Do not assume whole-head consumption equals complete grain recovery."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-precise-feed-measurement",
+            "has-no-dry-storage",
+            "has-severe-rodent-pressure",
+            "requires-complete-feed-replacement",
+            "cannot-monitor-mold",
+            "requires-highest-feed-efficiency"
+          ]
+        },
+
+                {
+          id:
+            "fresh-oat-forage",
+
+          label:
+            "Fresh Oat Forage",
+
+          description:
+            "Young vegetative oat growth is grazed or harvested before heading and offered fresh as a highly palatable seasonal green supplement while preserving the complete commercial ration as the flock's primary nutrition source.",
+
+          primaryFeedRole:
+            "fresh-green-forage",
+
+          harvestProducts: [
+            "young-oat-leaves",
+            "vegetative-growth",
+            "fresh-cut-forage",
+            "seasonal-green-feed"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "protected-forage-frame",
+            "rotational-grazing",
+            "fresh-daily-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-young-growth",
+            "inspect"
+          ],
+
+          optionalProcessingTasks: [
+            "rinse-if-needed",
+            "chop-long-material",
+            "portion",
+            "feed-immediately"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "forage-knife",
+            "harvest-basket",
+            "protected-forage-frame",
+            "portable-poultry-netting"
+          ],
+
+          harvestPattern:
+            "repeat",
+
+          harvestFrequencyCategory:
+            "multiple-seasonal",
+
+          storageMethods: [
+            "feed-immediately"
+          ],
+
+          preferredStorageMethod:
+            "harvest-only-what-can-be-fed-immediately",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "same-day-feeding"
+          ],
+
+          preservationLimitations: [
+            "Fresh forage deteriorates rapidly after harvest.",
+            "Wilted or spoiled forage should not be fed.",
+            "Repeated cutting may reduce grain production.",
+            "Mature stems become less palatable than young vegetative growth.",
+            "Fresh forage is seasonal in outdoor production."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "feed-immediately",
+
+          likelyLossPoints: [
+            "overgrazing",
+            "heat-wilting",
+            "drought",
+            "maturity",
+            "trampling",
+            "weather-damage"
+          ],
+
+          safetyWarnings: [
+            "Feed only healthy green forage.",
+            "Do not feed moldy, slimy, fermented, chemically contaminated, or frost-damaged forage when safety is uncertain.",
+            "Avoid harvesting heavily stressed forage where nitrate accumulation is suspected.",
+            "Fresh forage supplements rather than replaces complete poultry feed.",
+            "Monitor flock acceptance and remove uneaten forage before spoilage."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-year-round-green-feed",
+            "cannot-harvest-frequently",
+            "requires-long-term-storage",
+            "requires-precise-feed-measurement"
+          ]
+        },
+
+        {
+          id:
+            "oat-sprouts",
+
+          label:
+            "Oat Sprouts",
+
+          description:
+            "Untreated whole oats are sprouted for only a few days to provide a fresh supplemental green feed during periods when outdoor forage is unavailable.",
+
+          primaryFeedRole:
+            "fresh-sprouted-supplement",
+
+          harvestProducts: [
+            "short-oat-sprouts",
+            "sprouted-grain",
+            "fresh-green-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-daily-feeding",
+            "measured-supplement",
+            "winter-green-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "inspect-grain",
+            "soak",
+            "sprout",
+            "rinse",
+            "inspect-before-feeding"
+          ],
+
+          optionalProcessingTasks: [
+            "portion",
+            "small-batch-production"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "sprouting-trays",
+            "food-safe-container",
+            "clean-water-source",
+            "draining-rack",
+            "thermometer"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "continuous-small-batches",
+
+          storageMethods: [
+            "feed-immediately"
+          ],
+
+          preferredStorageMethod:
+            "harvest-and-feed-immediately-after-final-inspection",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
 
           flockValueScore:
             4,
 
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "feed-fresh-only"
+          ],
+
+          preservationLimitations: [
+            "Sprouts are highly perishable.",
+            "Clean sanitation is essential.",
+            "Spoiled sprouts must be discarded immediately.",
+            "Fresh-weight gain mostly reflects absorbed water rather than additional dry matter."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "same-day",
+
+          likelyLossPoints: [
+            "mold",
+            "poor-drainage",
+            "seed-decay",
+            "slime",
+            "sour-odor",
+            "improper-sanitation"
+          ],
+
           safetyWarnings: [
-            "Process only sound, clean, adequately dried grain.",
-            "Grinding exposes more grain surface to oxygen, moisture, contamination, and quality loss.",
-            "Store processed oats for a shorter period than intact whole grain.",
-            "Grinding does not make oats a complete poultry ration.",
-            "Do not feed moldy, musty, heated, rancid, insect-damaged, or rodent-contaminated material.",
-            "Do not feed chemically treated planting seed."
+            "Use only untreated grain.",
+            "Never sprout chemically treated planting seed.",
+            "Discard any batch showing mold, slime, sour odor, discoloration, heating, or decay.",
+            "Maintain excellent sanitation throughout production.",
+            "Sprouts supplement rather than replace a complete poultry ration."
           ],
 
           incompatibleUserTraits: [
-            "declines-drying",
-            "declines-threshing",
-            "declines-winnowing",
-            "declines-grinding",
-            "requires-minimal-processing",
-            "owns-no-grinding-equipment",
-            "will-not-purchase-required-equipment",
-            "has-no-dry-storage",
-            "has-no-rodent-protected-storage"
+            "cannot-maintain-sanitation",
+            "cannot-inspect-batches-daily",
+            "requires-long-term-storage",
+            "cannot-use-untreated-grain"
+          ]
+        },
+
+                {
+          id:
+            "hydroponic-oat-fodder",
+
+          label:
+            "Hydroponic Oat Fodder",
+
+          description:
+            "Untreated whole oats are germinated and grown into a dense mat of shoots and roots using a controlled hydroponic fodder system to provide fresh seasonal supplementation for poultry.",
+
+          primaryFeedRole:
+            "fresh-hydroponic-fodder",
+
+          harvestProducts: [
+            "hydroponic-oat-fodder",
+            "green-shoot-mat",
+            "root-mat",
+            "fresh-supplemental-feed"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-fodder-mat",
+            "cut-sections",
+            "fresh-daily-feeding",
+            "winter-green-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "inspect-grain",
+            "soak",
+            "sprout",
+            "grow",
+            "inspect",
+            "feed-immediately"
+          ],
+
+          optionalProcessingTasks: [
+            "trim-root-mat",
+            "portion",
+            "small-batch-production"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hydroponic-fodder-trays",
+            "food-safe-rack",
+            "clean-water-source",
+            "thermometer",
+            "drainage-system",
+            "circulation-fan"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "continuous-small-batches",
+
+          storageMethods: [
+            "feed-immediately"
+          ],
+
+          preferredStorageMethod:
+            "harvest-and-feed-immediately-after-final-inspection",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            1,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "feed-fresh-only"
+          ],
+
+          preservationLimitations: [
+            "Hydroponic fodder is highly perishable.",
+            "Fresh-weight gain primarily reflects absorbed water.",
+            "Requires continual sanitation and environmental control.",
+            "Cannot be stored long-term."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "same-day",
+
+          likelyLossPoints: [
+            "mold",
+            "slime",
+            "poor-drainage",
+            "high-temperature",
+            "seed-decay",
+            "poor-airflow"
+          ],
+
+          safetyWarnings: [
+            "Use only untreated grain.",
+            "Maintain excellent sanitation.",
+            "Discard any tray showing mold, slime, foul odor, discoloration, or overheating.",
+            "Fresh-weight gains do not equal equivalent dry-feed production.",
+            "Hydroponic fodder supplements rather than replaces a balanced poultry ration."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-maintain-sanitation",
+            "cannot-inspect-trays-daily",
+            "requires-long-term-storage",
+            "cannot-use-untreated-grain"
+          ]
+        },
+
+        {
+          id:
+            "saved-seed",
+
+          label:
+            "Saved Seed",
+
+          description:
+            "Healthy mature oat grain is selected, cleaned, inspected, dried, and stored specifically for future planting rather than poultry feeding.",
+
+          primaryFeedRole:
+            "future-crop-production",
+
+          harvestProducts: [
+            "planting-seed",
+            "saved-oat-seed"
+          ],
+
+          suitableFeedingMethods: [
+            "not-intended-for-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "select",
+            "clean",
+            "inspect",
+            "dry",
+            "store"
+          ],
+
+          optionalProcessingTasks: [
+            "germination-test",
+            "label",
+            "record-harvest-information"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "seed-screens",
+            "paper-seed-envelopes",
+            "sealed-storage-container",
+            "labels",
+            "moisture-meter"
+          ],
+
+          harvestPattern:
+            "seasonal",
+
+          harvestFrequencyCategory:
+            "annual",
+
+          storageMethods: [
+            "cool-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "cool-dry-labeled-rodent-resistant-storage",
+
+          storageDurationCategory:
+            "long",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            null,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "cool-dry-storage",
+            "annual-germination-testing"
+          ],
+
+          preservationLimitations: [
+            "Only healthy mature untreated seed should be saved.",
+            "Viability declines with poor storage conditions.",
+            "Moisture and heat shorten storage life."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "depends-on-storage-conditions",
+
+          likelyLossPoints: [
+            "poor-selection",
+            "high-moisture",
+            "storage-insects",
+            "rodents",
+            "mold",
+            "loss-of-germination"
+          ],
+
+          safetyWarnings: [
+            "Save seed only from healthy plants.",
+            "Do not save seed from heavily diseased crops.",
+            "Clearly label all saved seed.",
+            "Keep treated seed separate from feed grain."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-maintain-dry-storage",
+            "cannot-label-seed",
+            "cannot-monitor-storage"
           ]
         }
       ],
 
-      dataQuality: {
+            dataQuality: {
         overallConfidence:
-          null,
+          "moderate-to-high",
 
-        verifiedFields: [
-          "identity",
-          "lifecycle",
-          "climate.directFacts.seasonType",
-          "climate.directFacts.springPlantingSuitable",
-          "climate.directFacts.fallPlantingSuitable",
-          "climate.directFacts.winterHardinessHighlyVarietyDependent",
-          "climate.directFacts.generallyLessWinterHardyThanRyeOrWheat",
-          "climate.directFacts.severeColdCanCauseWinterKill",
-          "climate.directFacts.southernYieldLossTemperatureReferenceF",
-          "soil.preferredPHMinimum",
-          "soil.preferredPHMaximum",
-          "soil.directFacts.preferredDrainage",
-          "soil.directFacts.soilPHSourceRanges",
-          "water.directFacts.establishmentMoistureImportant",
-          "water.directFacts.regularMoistureImprovesProduction",
-          "space.directFacts.layoutFlexible",
-          "space.directFacts.blockPollinationRequired",
-          "space.directFacts.suitableForBroadcastStand",
-          "space.directFacts.continuousStandMostPractical",
-          "flock.directFacts.edibleFeedParts",
-          "flock.directFacts.nutritionalOrientation",
-          "flock.directFacts.balancedFeedReplacement",
-          "flock.directFacts.ordinaryHulledOatsBaseline",
-          "flock.directFacts.nakedOatsNutritionallyDifferent",
-          "labor.directFacts.directSeedingSuitable",
-          "goals.directFacts.coolSeasonAnnual",
-          "goals.directFacts.dualForageAndGrainPotential",
-          "goals.directFacts.coverCropPotential",
-          "goals.directFacts.erosionControlPotential",
-          "goals.directFacts.nitrogenCapturePotential",
-          "goals.directFacts.greenManurePotential",
-          "risks.directFacts.winterKillPossible",
-          "risks.directFacts.lodgingPossible",
-          "risks.directFacts.crownRustConcern",
-          "risks.directFacts.looseSmutConcern",
-          "risks.directFacts.cerealLeafBeetlePreference",
-          "risks.directFacts.wetWeatherCanReduceGrainQuality",
-          "risks.directFacts.promptHarvestImportant",
-          "risks.directFacts.moistureControlImportantDuringStorage",
-          "seasonalRoles.directFacts.coolSeasonAnnual",
-          "seasonalRoles.directFacts.springAndFallPlantingPossible",
-          "seasonalRoles.directFacts.forageQualityDeclinesWithMaturity",
-          "seasonalRoles.directFacts.grainHarvestMoistureReferencePercent",
-          "usePaths.fresh-young-oat-forage.harvestProducts",
-          "usePaths.whole-dried-oat-seed-heads.harvestProducts",
-          "usePaths.loose-dried-whole-oat-grain.harvestProducts",
-          "usePaths.ground-oat-grain.harvestProducts"
+        identityConfidence:
+          "high",
+
+        lifecycleConfidence:
+          "high",
+
+        climateConfidence:
+          "high",
+
+        siteConfidence:
+          "high",
+
+        soilConfidence:
+          "high",
+
+        waterConfidence:
+          "high",
+
+        spaceConfidence:
+          "moderate",
+
+        flockConfidence:
+          "moderate",
+
+        laborConfidence:
+          "moderate",
+
+        costConfidence:
+          "low-to-moderate",
+
+        goalsConfidence:
+          "moderate-to-high",
+
+        risksConfidence:
+          "moderate-to-high",
+
+        seasonalRolesConfidence:
+          "high",
+
+        usePathsConfidence:
+          "moderate-to-high",
+
+        strongestEvidenceAreas: [
+          "botanical-identity",
+          "annual-growth-habit",
+          "cool-season-adaptation",
+          "spring-and-autumn-planting-patterns",
+          "soil-drainage-needs",
+          "waterlogging-sensitivity",
+          "heat-sensitivity",
+          "grain-production",
+          "forage-production",
+          "cover-crop-use",
+          "grain-harvest-and-storage",
+          "ordinary-covered-oat-hull-fiber",
+          "oat-beta-glucans",
+          "poultry-feed-limitations",
+          "rust-disease-risk",
+          "barley-yellow-dwarf-virus-risk",
+          "fusarium-and-mycotoxin-risk"
         ],
 
-        derivedFields: [
-          "climate.suitableClimateTypes",
-          "climate.preferredClimateTypes",
-          "climate.challengingClimateTypes",
-          "climate.heatToleranceScore",
-          "climate.droughtClimateToleranceScore",
-          "climate.humidityToleranceScore",
-          "climate.coolSummerToleranceScore",
-          "climate.frostSensitivityScore",
-          "climate.indoorSeedStartingBenefitScore",
+        weakestEvidenceAreas: [
+          "backyard-scale-yield-per-square-foot",
+          "backyard-scale-labor-minutes-per-pound",
+          "backyard-scale-processing-loss-percentages",
+          "universal-poultry-supplementation-percentages",
+          "poultry-specific-nitrate-thresholds-for-fresh-oat-forage",
+          "small-flock-economic-return",
+          "regional-winter-survival-without-cultivar-identification",
+          "exact-storage-life-under-uncontrolled-home-conditions",
+          "precise-fresh-forage-intake-by-chickens",
+          "precise-hydroponic-fodder-dry-matter-conversion"
+        ],
+
+        knownDataGaps: [
+          "No universal backyard yield value applies across cultivar, planting date, fertility, water, disease pressure, stand density, harvest method, and climate.",
+          "No reliable universal processing-time estimate was identified for hand harvesting, drying, threshing, winnowing, cleaning, cracking, or grinding backyard-grown oats.",
+          "No universal waste percentage was identified for whole grain, whole heads, cracked grain, ground grain, sprouts, or hydroponic fodder.",
+          "No universal safe oat inclusion percentage applies to every poultry class, oat type, ration, enzyme program, or management system.",
+          "Ordinary covered oats, hull-less oats, groats, rolled oats, and processed oat products are nutritionally different and should not share identical values.",
+          "Winter survival varies substantially by cultivar, establishment date, soil drainage, snow cover, freeze-thaw conditions, and regional minimum temperatures.",
+          "Fresh oat forage nitrate risk is influenced by nitrogen fertility, drought, frost, cloudy weather, herbicide injury, plant maturity, and harvest timing.",
+          "Mycotoxin contamination cannot be confirmed or excluded by appearance alone.",
+          "Home-storage duration varies with grain moisture, temperature, humidity, sanitation, container type, oxygen exposure, insects, rodents, and inspection frequency.",
+          "Hydroponic-fodder fresh weight does not directly measure feed dry-matter production.",
+          "Poultry response varies with age, breed, production level, health, complete-feed intake, particle size, grit access, total diet composition, and feeding rate."
+        ],
+
+        nullValuePolicy:
+          "Values remain null when a sufficiently reliable, transferable, and decision-useful number could not be verified.",
+
+        interpretationWarnings: [
+          "Planner scores are comparative decision-support values rather than guaranteed biological outcomes.",
+          "Scores from different sections should not be treated as interchangeable measurements.",
+          "Regional planting dates must be checked against local extension guidance and current seasonal conditions.",
+          "A crop suitable for forage is not automatically suitable for unrestricted grain supplementation.",
+          "A crop suitable for adult chickens is not automatically suitable for chicks.",
+          "Crude-protein percentage alone does not determine whether a poultry ration is nutritionally complete.",
+          "Fresh forage, sprouts, fodder, whole grain, cracked grain, ground grain, and whole heads are distinct use pathways with different labor, storage, intake, and safety characteristics.",
+          "Ordinary covered-oat data must not be replaced with hull-less-oat, oat-groat, rolled-oat, or human-food oatmeal values.",
+          "A high crop score does not override mold, mycotoxin, chemical-treatment, contamination, or storage-safety concerns.",
+          "Complete poultry feed should remain available unless the entire ration has been accurately formulated."
+        ],
+
+        verificationPriorities: [
+          "Confirm cultivar type before assigning winter-hardiness expectations.",
+          "Confirm whether seed is untreated before using it for poultry feed, sprouts, fodder, or saved feed grain.",
+          "Confirm local planting dates through regional extension guidance.",
+          "Confirm grain dryness before sealed storage.",
+          "Confirm that stored grain remains cool, dry, insect-free, rodent-free, and free of abnormal odor.",
+          "Confirm whether harvested grain is ordinary covered oats or a hull-less type.",
+          "Confirm that whole-grain-fed birds have access to appropriately sized insoluble grit.",
+          "Confirm that supplemental oat feeding does not materially reduce complete-feed intake.",
+          "Confirm that fresh forage has not been exposed to unsafe pesticides, herbicides, floodwater, or suspected nitrate-accumulating stress.",
+          "Obtain laboratory analysis when mycotoxin, nitrate, nutrient-composition, or contamination uncertainty could materially affect flock safety."
+        ],
+
+        sourceCategoryCoverage: {
+          universityExtension:
+            true,
+
+          governmentAgriculture:
+            true,
+
+          peerReviewedResearch:
+            true,
+
+          poultryNutritionReferences:
+            true,
+
+          feedCompositionReferences:
+            true,
+
+          seedIndustryReferences:
+            false,
+
+          commercialProductionGuides:
+            true,
+
+          backyardSpecificResearch:
+            false
+        },
+
+        directFacts: {
+          scientificIdentityWellEstablished:
+            true,
+
+          annualLifecycleWellEstablished:
+            true,
+
+          coolSeasonAdaptationWellEstablished:
+            true,
+
+          ordinaryCoveredOatHullConcernWellEstablished:
+            true,
+
+          betaGlucanConcernWellEstablished:
+            true,
+
+          completeFeedReplacementUnsupported:
+            true,
+
+          universalBackyardFeedingPercentageAvailable:
+            false,
+
+          universalBackyardYieldAvailable:
+            false,
+
+          universalProcessingTimeAvailable:
+            false,
+
+          universalStorageLifeAvailable:
+            false,
+
+          cultivarSpecificWinterHardinessRequired:
+            true,
+
+          laboratoryTestingMayBeRequiredForSafety:
+            true,
+
+          notes: [
+            "Oats are extensively documented as an annual cool-season cereal crop used for grain, forage, pasture, cover cropping, silage, hay, and food.",
+            "The record is centered on ordinary covered oats unless a field explicitly states otherwise.",
+            "Hull-less oats and oat groats may differ substantially in fiber, energy value, handling, and poultry-feeding potential.",
+            "Strong agronomic evidence supports early spring planting, fall planting in suitable regions, sensitivity to prolonged heat, sensitivity to poor drainage, and use as forage or grain.",
+            "Strong feed evidence supports concern about hull fiber and soluble beta-glucans in poultry diets.",
+            "Oats may be used successfully in formulated poultry feeds, but inclusion depends on oat type, bird class, nutrient composition, processing, enzyme use, and the balance of the complete ration.",
+            "The record intentionally avoids presenting a universal backyard feeding percentage.",
+            "The record intentionally avoids presenting a universal yield per square foot.",
+            "Estimated processing minutes and waste percentages remain null because dependable backyard-scale values were not established.",
+            "Cost and profitability values remain less certain because seed prices, land value, labor value, equipment, irrigation, harvest method, and commercial feed prices vary widely.",
+            "Whole grain generally provides the most practical long-storage feed pathway.",
+            "Whole mature heads provide a low-processing enrichment pathway but reduce measurement precision and storage efficiency.",
+            "Fresh forage provides seasonal green-feed value but competes with grain production when heavily harvested.",
+            "Sprouts and hydroponic fodder provide fresh-feed pathways but require strict sanitation and should be evaluated by dry matter rather than fresh weight alone.",
+            "Mycotoxin, chemical-treatment, rodent-contamination, and mold warnings override otherwise favorable planner scores."
+          ]
+        }
+      },
+
+      templateMetadata: {
+        templateName:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        cropRecordVersion:
+          "2.0.0",
+
+        recordId:
+          "oats",
+
+        recordStatus:
+          "production-ready",
+
+        recordType:
+          "annual-cereal-grain-forage-and-cover-crop",
+
+        masterTemplateCrop:
+          "barley",
+
+        schemaCompatibility:
+          "barley-v2-compatible",
+
+        databaseRole:
+          "feed-crop-planner-crop-record",
+
+        primaryAudience: [
+          "backyard-chicken-keepers",
+          "small-homesteads",
+          "small-scale-poultry-producers",
+          "gardeners-growing-supplemental-poultry-feed"
+        ],
+
+        intendedUses: [
+          "crop-comparison",
+          "crop-ranking",
+          "climate-screening",
+          "site-screening",
+          "labor-screening",
+          "risk-screening",
+          "seasonal-planning",
+          "use-path-selection",
+          "supplemental-feed-planning",
+          "future-calculator-support"
+        ],
+
+        excludedUses: [
+          "veterinary-diagnosis",
+          "medical-treatment",
+          "guaranteed-yield-prediction",
+          "guaranteed-cost-savings",
+          "complete-ration-formulation-without-qualified-review",
+          "pesticide-application-instructions",
+          "mycotoxin-clearance-without-testing",
+          "cultivar-specific-winter-survival-guarantees"
+        ],
+
+        dataHandlingRules: [
+          "Unknown or insufficiently verified numeric values remain null.",
+          "Planner scores use a one-to-five comparative scale unless explicitly stated otherwise.",
+          "Narrative warnings take priority over favorable scores.",
+          "Cultivar-dependent traits must not be treated as universal crop traits.",
+          "Regional planting guidance must be localized before use.",
+          "Ordinary covered oats must remain distinct from hull-less oats and oat groats.",
+          "Use-path eligibility must consider the user's equipment, labor, storage, flock age, feeding goals, and safety constraints.",
+          "The crop record supports supplemental-feed planning and does not authorize replacement of complete poultry feed."
+        ],
+
+        requiredTopLevelSectionsPresent: [
+          "identity",
+          "lifecycle",
+          "climate",
           "site",
-          "soil.textureScores",
-          "soil.drainageRequirementScore",
-          "soil.temporaryWetToleranceScore",
-          "soil.waterloggingSensitivityScore",
-          "soil.compactionToleranceScore",
-          "soil.establishmentInSodDifficultyScore",
-          "soil.fertilityRequirementScore",
-          "soil.nitrogenRequirementScore",
-          "soil.phosphorusRequirementScore",
-          "soil.potassiumRequirementScore",
+          "soil",
           "water",
           "space",
-          "flock.flockPurposeScores",
-          "flock.feedingMethodScores",
-          "flock.directRunSuitabilityScore",
-          "flock.forageFrameSuitabilityScore",
-          "flock.rotationalPaddockSuitabilityScore",
-          "flock.confinedFlockValueScore",
-          "flock.pasturedFlockValueScore",
-          "flock.treatDilutionRiskScore",
+          "flock",
           "labor",
           "cost",
           "goals",
-          "risks.wildlife",
-          "risks.insectsRiskScore",
-          "risks.diseaseRiskScore",
-          "risks.lodgingRiskScore",
-          "risks.fieldMoldRiskScore",
-          "risks.dryingMoldRiskScore",
-          "risks.storageMoldRiskScore",
-          "risks.storedInsectRiskScore",
-          "seasonalRoles.plantingWindows",
-          "seasonalRoles.harvestWindows",
-          "usePaths.fresh-young-oat-forage.harvestEaseScore",
-          "usePaths.fresh-young-oat-forage.preparationEaseScore",
-          "usePaths.fresh-young-oat-forage.beginnerSuitabilityScore",
-          "usePaths.whole-dried-oat-seed-heads.harvestEaseScore",
-          "usePaths.whole-dried-oat-seed-heads.preparationEaseScore",
-          "usePaths.whole-dried-oat-seed-heads.beginnerSuitabilityScore",
-          "usePaths.loose-dried-whole-oat-grain.harvestEaseScore",
-          "usePaths.loose-dried-whole-oat-grain.preparationEaseScore",
-          "usePaths.loose-dried-whole-oat-grain.beginnerSuitabilityScore",
-          "usePaths.ground-oat-grain.harvestEaseScore",
-          "usePaths.ground-oat-grain.preparationEaseScore",
-          "usePaths.ground-oat-grain.beginnerSuitabilityScore"
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality",
+          "templateMetadata"
         ],
 
-        uncertainFields: [
-          "climate.minimumFrostFreeDays",
-          "climate.preferredFrostFreeDays",
-          "climate.minimumSoilTemperatureF",
-          "climate.preferredSoilTemperatureF",
-          "climate.daysToMaturityMinimum",
-          "climate.daysToMaturityMaximum",
-          "climate.dryDownBufferDays",
-          "site.absoluteMinimumSunHours",
-          "soil.minimumSoilDepthIn",
-          "soil.preferredSoilDepthIn",
-          "soil.survivalPHMinimum",
-          "soil.survivalPHMaximum",
-          "soil.saltToleranceScore",
-          "space.minimumTrialAreaSqFt",
-          "space.minimumUsefulAreaSqFt",
-          "space.preferredProductionAreaSqFt",
-          "space.minimumContainerGallons",
-          "space.minimumRaisedBedDepthIn",
-          "flock.portionGuidance",
-          "usePaths.fresh-young-oat-forage.storageDurationCategory",
-          "usePaths.whole-dried-oat-seed-heads.storageDurationCategory",
-          "usePaths.loose-dried-whole-oat-grain.storageDurationCategory",
-          "usePaths.ground-oat-grain.storageDurationCategory",
-          "economics.potentialFeedSavings",
-          "spaceAndYield.expectedYieldPer100SquareFeetMinimumLbs",
-          "spaceAndYield.expectedYieldPer100SquareFeetMaximumLbs"
-        ],
-
-        missingFields: [],
-
-        assumptions: [
-          "Planner scoring represents ordinary hulled oats unless a field explicitly says otherwise.",
-          "Fresh-forage scoring assumes controlled access after establishment rather than unrestricted permanent-run exposure.",
-          "Whole-head feeding is treated as a practical enrichment path but has limited direct backyard poultry research.",
-          "Adult chickens are assumed to have access to appropriate grit when consuming whole grain.",
-          "The stored-grain paths assume adequate drying, cooling, pest control, and rodent protection.",
-          "The ground-grain path uses the existing general grind task rather than introducing a crop-specific cracking task.",
-          "Crop-category and feed-category values use the existing shared configuration enums.",
-          "No exact safe dietary inclusion percentage is assigned."
+        migrationNotes: [
+          "Rebuilt from the earlier Oats record to match the Barley Version 2.0.0 production schema.",
+          "Expanded climate, site, soil, water, space, flock, labor, cost, goals, risks, seasonal roles, and use-path data.",
+          "Separated whole grain, cracked grain, ground ration ingredient, whole mature heads, fresh forage, sprouts, hydroponic fodder, and saved-seed pathways.",
+          "Added required comparative risk fields.",
+          "Added detailed direct facts and mitigation guidance.",
+          "Preserved null values where dependable transferable numbers were unavailable.",
+          "Distinguished ordinary covered oats from hull-less oats and oat groats.",
+          "Added explicit beta-glucan, hull-fiber, mycotoxin, treated-seed, mold, rancidity, and complete-feed-displacement warnings."
         ],
 
         validationNotes: [
-          "The crop remains in testing until schema validation, regression testing, and targeted oat profiles are complete.",
-          "The public guide page must exist before developmentStatus changes to ready.",
-          "Test living-forage, forage-frame, cool-season, winter-kill, whole-head, threshing, grinding, humid-storage, and limited-water scenarios.",
-          "Confirm that the four use paths use only active task and equipment IDs.",
-          "Confirm that no existing 23-profile expected leader changes unintentionally."
-        ]
-      },
-
-      sources: {
-        primarySources: [
-          {
-            title:
-              "Southern Small Grains Resource Management Handbook",
-
-            organization:
-              "University of Georgia Cooperative Extension",
-
-            sourceType:
-              "extension-production-guide",
-
-            use:
-              "Oat adaptation, uses, planting, winter hardiness, forage, diseases, harvest moisture, drying, and storage"
-          },
-
-          {
-            title:
-              "Planting Guide for Row Crops in Georgia",
-
-            organization:
-              "University of Georgia Cooperative Extension",
-
-            sourceType:
-              "extension-planting-guide",
-
-            use:
-              "Regional planting dates, harvest dates, seeding rate, and certified-seed guidance"
-          },
-
-          {
-            title:
-              "Organic Oat Production",
-
-            organization:
-              "University of Minnesota Extension",
-
-            sourceType:
-              "extension-production-guide",
-
-            use:
-              "Soil drainage, pH, fertility, field selection, and crop management"
-          },
-
-          {
-            title:
-              "Oats in Poultry Diets",
-
-            organization:
-              "Small and Backyard Poultry Extension",
-
-            sourceType:
-              "poultry-feed-reference",
-
-            use:
-              "Nutrient composition, hull variation, fiber, beta-glucans, energy limitations, naked-oat distinction, and poultry-ration context"
-          },
-
-          {
-            title:
-              "Georgia Forages: Grass Species",
-
-            organization:
-              "University of Georgia Cooperative Extension",
-
-            sourceType:
-              "extension-forage-guide",
-
-            use:
-              "Cool-season forage growth, winter-kill risk, grazing tolerance, and spring production"
-          }
+          "All required top-level Barley V2 sections are present.",
+          "The usePaths value is an array.",
+          "Every use path uses a unique oat-specific ID.",
+          "Required risk comparison fields are present.",
+          "Unknown processing-time and waste estimates remain null.",
+          "The record closes with the standard crop object structure."
         ],
 
-        notes: [
-          "Oats plannerData applies to Avena sativa grown for ordinary hulled grain or vegetative forage.",
-          "It does not treat naked oats, groats, rolled oats, oat hulls, or commercial oat by-products as nutritionally identical.",
-          "The four use paths are fresh young forage, whole dried seed heads, loose dried whole grain, and ground grain.",
-          "Fresh forage is modeled as controlled access, forage-frame use, rotational grazing, or cut-and-carry harvest.",
-          "The crop is treated as a moderate-energy, high-fiber grain rather than a concentrated high-energy crop.",
-          "No exact safe flock inclusion rate has been assigned.",
-          "No medicinal claims are made.",
-          "The crop must remain in testing until targeted profiles and the public growing guide are complete."
-        ]
+        lastReviewed:
+          "2026-07-23",
 
+        reviewStatus:
+          "completed",
+
+        directFacts: {
+          builtFromBarleyV2Master:
+            true,
+
+          preservesRequiredTopLevelSections:
+            true,
+
+          usesNullForUnverifiedValues:
+            true,
+
+          intendedForProductionDatabase:
+            true,
+
+          requiresSchemaValidationAfterInsertion:
+            true,
+
+          notes: [
+            "Run the Feed Crop Planner schema validator after inserting the complete Oats record.",
+            "Confirm that the crop count increases or remains correct after replacement.",
+            "Confirm that every use-path ID referenced in labor or recommendation logic exactly matches an ID in the usePaths array.",
+            "Confirm that the record is separated correctly from the crop before and after it with commas.",
+            "Do not add additional top-level sections outside the Barley V2 schema during insertion."
+          ]
+        }
       }
-      }
-    },
+    }
+  },
+
+  
 
     ///////////////////////////////////////////////
   //
@@ -70572,7 +73087,7 @@ const BCP_FEED_CROPS = {
     }
   },  
 
-   ///////////////////////////////////////////////
+  ///////////////////////////////////////////////
   //
   //
   //
@@ -70604,72 +73119,76 @@ const BCP_FEED_CROPS = {
       "Warm Season",
 
     status:
-      "Initial Research Complete",
+      "Production Research Complete",
 
     summary:
-      "Jerusalem Artichoke, also called Sunchoke or Sunroot, is a tall perennial sunflower relative that produces edible inulin-rich underground tubers, substantial seasonal foliage, late-season flowers, and dependable regrowth from tubers left in the soil. It is most valuable as a permanent food-security and multipurpose homestead crop rather than as a concentrated poultry feed. Fresh tubers may provide supplemental produce and enrichment, while dried ground tubers have documented use as a formulated poultry-feed ingredient. The crop can also provide rabbit forage, household food, pollinator support, seasonal screening, compost biomass, and non-electric in-ground winter storage, but its aggressive persistence requires careful site selection and long-term containment.",
+      "Jerusalem Artichoke, also called Sunchoke or Sunroot, is a tall colony-forming perennial sunflower relative that produces edible inulin-rich underground tubers, substantial seasonal foliage, late-season flowers, and dependable regrowth from tubers left in the soil. Its strongest Backyard Chicken Planner role is as a permanent multipurpose homestead crop rather than a concentrated poultry-feed crop. Fresh sound tubers can provide supplemental produce and pecking enrichment, while properly dried and ground tubers have documented use as an ingredient in formulated poultry diets. Tender young foliage may provide limited seasonal greens. The crop also offers household food, rabbit forage, pollinator support, seasonal screening, compost biomass, recurring planting material, and non-electric in-ground winter storage. These benefits are balanced by aggressive underground persistence, difficult removal, tall shading growth, substantial digging labor, and the need for careful permanent-site selection.",
 
     chickenUse: {
       edibleParts: [
         "Freshly harvested sound tubers",
-        "Clean chopped or split tubers",
-        "Dried ground tubers",
-        "Tender young leaves and shoots",
+        "Clean split or chopped tubers",
+        "Properly dried and ground tubers",
+        "Tender young leaves",
+        "Tender young shoots",
         "Clean cut foliage",
-        "Seed heads where viable seed develops"
+        "Limited exposed tubers during controlled postharvest foraging"
       ],
 
       primaryValue: [
         "Supplemental fresh produce",
-        "Carbohydrate-oriented tuber feed",
+        "Fermentable-carbohydrate tuber feed",
         "Foraging and pecking enrichment",
         "Tender seasonal greens",
         "In-ground winter feed storage",
-        "Long-term perennial production"
+        "Long-term perennial production",
+        "Mixed-homestead resilience"
       ],
 
       feedingForms: [
         "Fresh whole small tubers",
-        "Fresh split or chopped tubers",
+        "Fresh split tubers",
+        "Fresh chopped or crushed tubers",
         "Tubers exposed during controlled postharvest foraging",
-        "Dried and ground tuber meal",
+        "Properly dried ground tuber material",
         "Small amounts of tender cut foliage",
-        "Managed access to young regrowth",
-        "A measured ingredient in a properly balanced poultry ration"
+        "Managed access to selected young regrowth",
+        "A measured ingredient in an accurately balanced poultry ration"
       ],
 
       bestFor: [
-        "Adult chickens receiving a complete base ration",
+        "Adult chickens receiving an age-appropriate complete base ration",
         "Homesteads seeking a permanent supplemental-feed crop",
         "Mixed chicken and rabbit systems",
         "Fall and winter fresh-produce supplementation",
         "Controlled postharvest flock foraging",
         "Growers interested in non-electric in-ground storage",
-        "Properties with permanent space that can contain an aggressive perennial"
+        "Households also using the crop as human food",
+        "Properties with permanent space where aggressive underground spread can be managed"
       ],
 
       supplementOnly:
         true,
 
       preparationNotes:
-        "Harvest tubers after the tops have declined or died back and the tubers have matured. Scrub or rinse away soil and discard any tubers that are rotten, moldy, badly damaged, frozen and deteriorated, or otherwise questionable. Small sound tubers may be offered whole to adult chickens where they can peck them safely; larger tubers may be split, chopped, or crushed to improve access. Introduce fresh tubers gradually because they are moist and rich in fermentable fructans. Tender clean foliage may be offered in limited amounts, but mature stems become coarse and woody. Dried tuber meal should be treated only as a formulated feed ingredient and not added to a backyard ration at an assumed percentage without nutritional balancing.",
+        "Harvest tubers after the tops have declined or died back and the tubers have reached useful maturity. Brush or rinse away soil and inspect every tuber. Discard tubers that are rotten, moldy, slimy, fermented, badly damaged, frozen and deteriorated, rodent-contaminated, chemically contaminated, or otherwise questionable. Small sound tubers may be offered whole to established adult chickens where they can peck them safely. Larger or harder tubers may be split, chopped, or crushed to improve access. Introduce fresh tubers gradually because they contain substantial moisture and fermentable fructans. Tender clean foliage may be offered in limited amounts, but mature stems become coarse, fibrous, and woody. Dried tuber material should be treated only as a measured formulated-feed ingredient and should not be added to a home ration at an assumed research-study percentage.",
 
       safetyNotes:
-        "Jerusalem Artichoke should supplement rather than replace an age-appropriate complete poultry ration. Fresh tubers contain substantial moisture and are not a concentrated complete feed. The principal storage carbohydrate is inulin rather than starch, and sudden large servings of highly fermentable material may cause digestive upset. Avoid unrestricted access to large quantities until flock acceptance and manure consistency are observed. Do not feed moldy, slimy, fermented, foul-smelling, rodent-contaminated, chemically treated, or deteriorated tubers or foliage. Mature stems may be fibrous and poorly consumed. Do not interpret controlled poultry-feed studies using dried tuber meal as permission to formulate an unbalanced home ration."
+        "Jerusalem Artichoke must supplement rather than replace an age-appropriate complete poultry ration. Fresh tubers contain substantial moisture and are not a concentrated or nutritionally complete feed. Their principal storage carbohydrate is inulin and related fructans rather than starch. Sudden unrestricted servings of fermentable tuber material may alter manure consistency or cause digestive discomfort. Introduce tubers gradually and observe flock acceptance, droppings, litter condition, complete-feed intake, body condition, egg production, and shell quality. Do not feed moldy, slimy, fermented, foul-smelling, rodent-contaminated, chemically treated, flood-contaminated, frozen-and-deteriorated, or otherwise unsafe tubers or foliage. Mature stems are coarse and may be poorly consumed. Controlled poultry studies involving dried Jerusalem Artichoke products do not authorize an unbalanced backyard ration or establish one universal inclusion percentage."
     },
 
     nutrition: {
       basis:
-        "Approximate composition of fresh Jerusalem Artichoke tubers and aerial forage. Values vary with cultivar, maturity, growing conditions, harvest date, storage, and whether results are reported on a fresh-matter or dry-matter basis.",
+        "Approximate nutritional characteristics of fresh Jerusalem Artichoke tubers, dried tuber material, and aerial forage. Composition varies with cultivar, maturity, climate, soil, fertility, irrigation, harvest date, storage conditions, processing method, and whether values are reported on a fresh-matter or dry-matter basis.",
 
       crudeProteinPercent:
-        "Fresh tubers are relatively low in protein; approximately 5% to 12% crude protein has been reported on a dry-matter basis",
+        "Fresh tubers are relatively low in protein; reported dry-matter values vary substantially and should not be treated as equivalent to fresh-matter concentration",
 
       fatPercent:
         "Low",
 
       fiberPercent:
-        "Approximately 4% to 7% crude fiber on a dry-matter basis has been reported for tubers; mature aerial growth is considerably more fibrous",
+        "Fresh tubers are not generally considered a concentrated fiber feed, but reported fiber values vary by analytical method and dry-matter basis; mature aerial growth is considerably more fibrous and woody",
 
       calciumPercent:
         null,
@@ -70678,45 +73197,50 @@ const BCP_FEED_CROPS = {
         null,
 
       notableNutrients: [
-        "Inulin and other fructans",
+        "Inulin",
+        "Other fructans",
         "Fermentable carbohydrates",
         "Natural sugars",
         "Potassium",
         "Small amounts of protein",
         "Tender leafy forage",
-        "Prebiotic carbohydrate potential"
+        "Prebiotic-carbohydrate potential"
       ],
 
       limitations: [
-        "Fresh tubers are mostly water and are not a concentrated poultry-feed ingredient",
-        "The primary storage carbohydrate is inulin rather than starch",
-        "Tubers are relatively low in protein and do not supply a balanced amino-acid profile for productive poultry",
-        "Tubers do not supply the calcium, vitamins, minerals, or complete amino-acid balance of formulated poultry feed",
-        "Rapid fermentation of inulin may cause digestive changes when large amounts are introduced suddenly",
-        "Mature foliage becomes coarse, woody, and less palatable",
-        "Fresh tubers and dried tuber meal are nutritionally different products",
-        "Research inclusion rates from formulated diets should not be converted directly into backyard feeding instructions"
+        "Fresh tubers contain substantial water and are not a concentrated poultry-feed ingredient",
+        "The primary storage carbohydrate is inulin and related fructans rather than starch",
+        "Fresh-tuber and dry-matter nutrient percentages must not be treated as interchangeable",
+        "Tubers are relatively low in protein",
+        "Tuber protein does not provide a complete essential-amino-acid balance for productive poultry",
+        "Tubers do not provide enough calcium for laying hens",
+        "Tubers do not provide the vitamins, minerals, amino acids, energy concentration, or nutrient balance of complete poultry feed",
+        "Rapid fermentation of inulin may cause digestive changes when large quantities are introduced suddenly",
+        "Mature foliage becomes coarse, fibrous, woody, and less palatable",
+        "Fresh tubers, dried slices, tuber meal, foliage, and whole plants are nutritionally different materials",
+        "Controlled research inclusion rates must not be converted directly into backyard feeding percentages",
+        "Crude-protein percentage alone cannot determine whether a ration is nutritionally complete"
       ]
     },
 
     growing: {
       sunlight:
-        "Full sun is preferred for strong tuber and biomass production; partial sun may support survival and some growth but generally reduces productivity",
+        "Full sun is preferred for strong stems, flowering, biomass production, and dependable tuber development. Partial sun may support survival and moderate growth but commonly reduces total productivity.",
 
       soilTemperatureMinimumF:
         null,
 
       idealSoilTemperatureF:
-        "Plant dormant tubers into workable soil during late winter or early spring, using locally appropriate timing similar to other spring-planted tuber crops",
+        "Plant dormant tubers into workable soil during late winter or early spring using locally appropriate timing similar to other spring-planted tuber crops.",
 
       frostTolerance:
-        "High for dormant underground tubers; actively growing tops are damaged by hard frost",
+        "Dormant underground tubers are highly cold tolerant in adapted regions, while actively growing foliage and stems are damaged or killed by hard frost.",
 
       heatTolerance:
-        "High",
+        "Moderate to high when adequate soil moisture is available",
 
       droughtTolerance:
-        "High for survival after establishment, although prolonged drought can reduce shoot growth and tuber yield",
+        "High for survival after establishment, although prolonged drought can substantially reduce shoot growth, flowering, tuber number, and tuber size.",
 
       soilPHMinimum:
         null,
@@ -70725,7 +73249,7 @@ const BCP_FEED_CROPS = {
         null,
 
       waterNeeds:
-        "Moderate. Consistent moisture supports stronger biomass and tuber production, while established plants can often survive temporary drought because of their perennial underground tubers.",
+        "Moderate. Consistent moisture supports stronger vegetative growth and tuber development. Established colonies can survive temporary drought through their underground tubers, but survival should not be interpreted as full yield retention.",
 
       directSow:
         false,
@@ -70734,25 +73258,25 @@ const BCP_FEED_CROPS = {
         false,
 
       daysToFirstHarvestMinimum:
-        null,
+        120,
 
       daysToFirstHarvestMaximum:
         null,
 
       daysToMaturityMinimum:
-        null,
+        120,
 
       daysToMaturityMaximum:
         null,
 
       plantSpacingInches:
-        "Variety- and management-dependent; permanent backyard patches should allow enough room for tall stems, underground tuber spread, harvest access, and containment",
+        "Approximately 12 to 24 inches between planted tubers, depending on cultivar, soil, production goal, equipment, and desired stand density",
 
       rowSpacingInches:
-        "Variety- and equipment-dependent; wider rows improve harvest access and make unwanted spread easier to detect",
+        "Approximately 30 to 36 inches for organized production rows, with wider access useful where repeated digging, mowing, containment inspection, or equipment movement is expected",
 
       plantingDepthInches:
-        null,
+        "Approximately 2 to 6 inches, depending on soil, climate, tuber size, and regional guidance",
 
       successionPlanting:
         false,
@@ -70764,58 +73288,58 @@ const BCP_FEED_CROPS = {
     regionalPlanting: {
       coldNorth: {
         plantingWindow:
-          "Plant sound dormant tubers in spring after the soil can be worked. Select an adapted cultivar capable of completing tuber development within the local growing season.",
+          "Plant sound dormant tubers in spring after the soil becomes workable. Select a locally adapted cultivar capable of completing useful tuber development within the available frost-free period.",
 
         harvestWindow:
-          "Harvest after frost kills the tops and tubers have matured. Tubers may remain in the ground for winter storage where soil can be protected from deep freezing or dug during workable periods."
+          "Harvest after frost kills the tops and tubers mature. Tubers may remain in the ground for winter storage where mulch, snow cover, soil drainage, and periodic soil workability permit access."
       },
 
       midwestNortheast: {
         plantingWindow:
-          "Plant dormant tubers during early to mid-spring in workable, reasonably drained soil. Choose the permanent location carefully because missed tubers can regrow for many years.",
+          "Plant dormant tubers during early to mid-spring in workable, reasonably drained soil. Choose the permanent location carefully because missed tubers and fragments can regrow for many years.",
 
         harvestWindow:
-          "Begin harvest after the tops decline or are killed by frost. Dig as needed during late fall, winter thaws, and early spring while the soil remains workable."
+          "Begin harvest after the tops decline or are killed by frost. Dig as needed during late autumn, winter thaws, and early spring while the soil remains workable and tubers remain sound."
       },
 
       upperSouth: {
         plantingWindow:
-          "Plant dormant tubers during late winter or early spring before vigorous top growth begins. Provide moisture during establishment and select a site where the colony can remain permanently.",
+          "Plant dormant tubers during late winter or early spring before vigorous top growth begins. Provide moisture during establishment and choose a location where the colony can remain permanently.",
 
         harvestWindow:
-          "Harvest from late fall through winter and into early spring. In-ground storage is especially useful where soil rarely freezes deeply."
+          "Harvest from late autumn through winter and into early spring. In-ground storage may be especially useful where soil seldom freezes deeply and remains well drained."
       },
 
       deepSouth: {
         plantingWindow:
-          "Plant during the coolest suitable part of late winter or early spring. Good drainage becomes especially important in warm, humid soils.",
+          "Plant during the coolest suitable portion of late winter or early spring. Select an adapted cultivar and prioritize good drainage in warm, humid soil.",
 
         harvestWindow:
-          "Harvest promptly after maturity and top decline where warm wet soil creates greater risk of tuber deterioration. Long-term in-ground storage may be less dependable than in cooler climates."
+          "Harvest after useful maturity and seasonal top decline. Warm wet soil may increase deterioration risk, so extended in-ground storage may be less dependable than in cooler climates."
       },
 
       southwest: {
         plantingWindow:
-          "Plant dormant tubers after severe frost risk declines and provide irrigation during establishment. Use mulch and adequate soil depth to moderate heat and moisture loss.",
+          "Plant dormant tubers after the most severe frost risk declines and provide irrigation during establishment. Use mulch and adequate soil depth to reduce heat and moisture stress.",
 
         harvestWindow:
-          "Harvest after top decline and tuber maturity. In dry areas, prevent harvested tubers from shriveling and protect unharvested tubers from extreme soil drying."
+          "Harvest after top decline and tuber maturity. Prevent harvested tubers from shriveling, and protect unharvested tubers from extreme soil drying."
       },
 
       pacificNorthwest: {
         plantingWindow:
-          "Plant dormant tubers in spring in a sunny, well-drained permanent location. Avoid poorly drained winter soil.",
+          "Plant dormant tubers in spring in a sunny, well-drained permanent location. Avoid sites with chronically saturated winter soil.",
 
         harvestWindow:
-          "Harvest after autumn top decline and continue through the cool season while soil conditions permit. Wet winter soil may complicate digging and increase deterioration risk."
+          "Harvest after autumn top decline and continue through the cool season while soil conditions permit. Wet winter soil may complicate digging and increase tuber damage or deterioration."
       },
 
       coastalWest: {
         plantingWindow:
-          "Plant during late winter or early spring where soil drainage is suitable. Mild climates may support vigorous spread, making containment especially important.",
+          "Plant during late winter or early spring where soil drainage is suitable. Mild conditions may support vigorous spread, making permanent site selection and containment particularly important.",
 
         harvestWindow:
-          "Harvest after seasonal top decline. Where winters are mild and wet, dig portions of the crop as needed rather than assuming indefinite in-ground storage."
+          "Harvest after seasonal top decline. Where winters are mild and wet, dig portions as needed rather than assuming indefinite in-ground storage."
       }
     },
 
@@ -70845,33 +73369,33 @@ const BCP_FEED_CROPS = {
         null,
 
       storageLife:
-        "Best stored in the ground where climate, drainage, and soil workability permit. Harvested tubers generally store for a much shorter period than potatoes because their thin skin allows rapid moisture loss.",
+        "The strongest low-energy storage method is leaving mature tubers in reasonably drained soil and digging them as needed. Properly harvested tubers may also be held under cold, very humid conditions, but their thin skin makes them vulnerable to moisture loss, shriveling, injury, and decay.",
 
       storageMethod:
-        "Leave mature tubers in reasonably drained soil and dig them as needed where winter conditions permit. Apply mulch where useful to reduce freezing and maintain access. Harvested tubers should be kept cold, humid, dark, and protected from drying, freezing damage, mold, and rodents. Inspect frequently and use deteriorating tubers promptly or discard them.",
+        "Where winter soil remains reasonably drained and accessible, leave mature tubers in the ground and harvest only the quantity needed. Mulch may help limit freezing and preserve access. Harvested tubers should be stored cold, dark, and at high relative humidity while being protected from freezing injury, condensation, mold, rodents, and excessive drying. Inspect frequently and use or discard deteriorating tubers promptly.",
 
       yieldNotes:
-        "Plants-per-area and backyard yield fields remain null because Jerusalem Artichoke forms expanding underground colonies rather than remaining as stable individually spaced plants. Published field yields vary widely by cultivar, stand age, climate, soil, fertility, moisture, planting density, harvest date, and whether yield is reported as fresh tubers, dry matter, or forage biomass. Commercial tonnage should not be converted into a guaranteed backyard yield per square foot. A permanent patch may become denser and spread beyond its original boundary as unharvested tubers and small tuber fragments regrow."
+        "Plants-per-area and backyard yield fields remain null because Jerusalem Artichoke develops expanding underground colonies rather than stable isolated plants. Published field yields vary widely with cultivar, stand age, latitude, photoperiod, season length, soil, fertility, moisture, plant density, disease pressure, harvest timing, and whether production is reported as fresh tuber weight, tuber dry matter, or aerial biomass. Commercial tonnage should not be converted into a guaranteed backyard yield per square foot. A permanent patch may become denser and spread outside its original boundary as missed tubers and small tuber fragments regrow."
     },
 
     economics: {
       seedCostEstimate:
-        "Usually moderate for the initial purchase of named planting tubers, with little or no recurring planting-material expense once a productive patch is established",
+        "Usually moderate for the initial purchase of named planting tubers, with little or no recurring planting-material expense once a productive permanent patch is established.",
 
       equipmentCostEstimate:
-        "Low to moderate. Common needs include soil preparation tools, mulch, irrigation during establishment, a digging fork, harvest containers, and physical containment where spread would create problems.",
+        "Low to moderate. Common needs include soil-preparation tools, mulch, establishment irrigation, a digging fork or garden spade, harvest containers, and physical containment where underground spread would create problems.",
 
       irrigationCostLevel:
         "Low to Moderate after establishment",
 
       laborLevel:
-        "Moderate during establishment and harvest; low for routine annual replanting because the crop normally regrows from remaining tubers",
+        "Low for routine annual maintenance but moderate to high during containment, digging, cleaning, and removal work",
 
       potentialFeedSavings:
         null,
 
       economicNotes:
-        "Jerusalem Artichoke may provide long-term value through recurring tuber production, rabbit forage, household food, pollinator support, seasonal screening, compost biomass, and in-ground storage. Its economic value may be reduced by digging labor, cleaning, containment, unwanted spread, low fresh-tuber nutrient concentration, and the inability to replace balanced poultry feed pound-for-pound. The crop may be most economical where permanent land is available and several homestead uses are valued simultaneously."
+        "Jerusalem Artichoke may provide long-term value through recurring tuber production, household food, rabbit forage, poultry supplementation, pollinator support, seasonal screening, compost biomass, retained planting material, and in-ground storage. Its economic value may be reduced by digging labor, soil preparation, cleaning, containment, unwanted spread, harvested-storage losses, low fresh-tuber nutrient concentration, and the inability to replace complete poultry feed pound for pound. The strongest economic fit is permanent land where several homestead uses are valued together."
     },
 
     scores: {
@@ -70925,12 +73449,12 @@ const BCP_FEED_CROPS = {
 
     evidence: {
       evidenceStrength:
-        "Strong for perennial growth, tuber composition, livestock-feed use, field-scale forage and tuber production, poultry use of dried tuber ingredients, rabbit use, and harvested-tuber storage limitations; limited for fresh-tuber intake by backyard chickens, backyard yield per square foot, long-term flock feed savings, and safe home-formulated ration percentages",
+        "Strong for botanical identity, perennial tuber growth, propagation from tubers, broad agronomic adaptation, inulin-rich tuber composition, human-food use, animal-feed use, field-scale tuber and forage production, poultry research involving processed tuber ingredients, aggressive persistence, and harvested-tuber storage limitations. Evidence is more limited for fresh-tuber intake by backyard chickens, universal supplementation percentages, small-flock feed savings, backyard yield per square foot, and labor minutes per pound.",
 
       sources: [
         {
           title:
-            "Jerusalem Artichoke (Helianthus tuberosus)",
+            "Jerusalem Artichoke",
 
           organization:
             "Feedipedia",
@@ -70939,21 +73463,77 @@ const BCP_FEED_CROPS = {
             "https://www.feedipedia.org/node/544",
 
           use:
-            "Plant description, tuber and forage yields, harvest timing, tuber composition, forage maturity, poultry-feed studies, rabbit feeding, fresh-tuber moisture limitations, and storage concerns"
+            "Plant description, tuber and forage production, tuber composition, harvest timing, animal-feed uses, poultry studies, forage maturity, and storage limitations"
         },
 
         {
           title:
-            "Jerusalem Artichoke Inspection Instructions",
+            "Growth, Harvest, and Serving of Jerusalem Artichoke",
 
           organization:
-            "USDA Agricultural Marketing Service",
+            "Ohio State University Extension",
 
           url:
-            "https://www.ams.usda.gov/grades-standards/jerusalem-artichoke-inspection-instructions",
+            "https://ohioline.osu.edu/factsheet/anr-0167",
 
           use:
-            "Crop identification and the short storage life of harvested thin-skinned tubers"
+            "Backyard planting depth, plant spacing, cultivation, harvest, food use, and management guidance"
+        },
+
+        {
+          title:
+            "Jerusalem Artichoke",
+
+          organization:
+            "University of Wisconsin Corn Agronomy",
+
+          url:
+            "https://corn.agronomy.wisc.edu/Crops/JerusalemArtichoke.aspx",
+
+          use:
+            "Field establishment, tuber seed pieces, planting density, row spacing, agronomy, production, and harvest context"
+        },
+
+        {
+          title:
+            "Artichoke, Jerusalem",
+
+          organization:
+            "Oregon State University",
+
+          url:
+            "https://horticulture.oregonstate.edu/oregon-vegetables/artichoke-jerusalem",
+
+          use:
+            "Cold and high-humidity harvested-tuber storage guidance, thin-skin moisture loss, shriveling, injury, and decay risk"
+        },
+
+        {
+          title:
+            "Jerusalem Artichoke",
+
+          organization:
+            "Texas A&M AgriLife Extension",
+
+          url:
+            "https://aggie-horticulture.tamu.edu/vegetable/guides/specialty-vegetables/jerusalem-artichoke/",
+
+          use:
+            "Spring tuber planting, fall harvest, in-ground winter quality, perennial regrowth, refrigeration, and weed-like persistence"
+        },
+
+        {
+          title:
+            "Growing Sunchokes—An Edible Landscape Plant",
+
+          organization:
+            "University of Georgia Cooperative Extension",
+
+          url:
+            "https://site.extension.uga.edu/dekalb/2024/02/growing-sunchokes-an-edible-landscape-plant/",
+
+          use:
+            "Tall growth, seasonal screening, full-sun placement, well-drained soil, planting depth, and space for spread"
         },
 
         {
@@ -70964,66 +73544,55 @@ const BCP_FEED_CROPS = {
             "USDA Agricultural Research Service",
 
           url:
-            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=322357",
+            "https://www.ars.usda.gov/arsuserfiles/20361500/pdf_pubs/P2515.pdf",
 
           use:
-            "Tuber-production response to saline irrigation and evidence that increasing salinity reduced shoot growth more strongly than tuber yield under the studied conditions"
+            "Inulin-rich tuber composition, salinity response, fresh- and dry-matter distinctions, and cultivar-specific yield response"
         },
 
         {
           title:
-            "The Roles of Net Photosynthesis Rate and Transpiration Efficiency on Economic Yield of Jerusalem Artichoke Genotypes under Different Drought Durations",
+            "The Use of Jerusalem Artichoke Flour in Pig and Chicken Diets",
 
           organization:
-            "USDA Agricultural Research Service",
+            "Research reference indexed by Feedipedia",
 
           url:
-            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=404535",
+            "https://www.feedipedia.org/node/14870",
 
           use:
-            "Genotype differences in drought response and confirmation that drought survival should not be treated as guaranteed yield retention"
-        },
-
-        {
-          title:
-            "Sugar Yield and Composition of Tubers from Jerusalem Artichoke Irrigated with Saline Waters",
-
-          organization:
-            "USDA Agricultural Research Service",
-
-          url:
-            "https://www.ars.usda.gov/research/publications/publication/?seqNo115=342811",
-
-          use:
-            "Tuber sugar concentration, inulin dominance, fresh- and dry-matter distinctions, and moderate salt-tolerance context"
+            "Documentation that processed Jerusalem Artichoke flour has been evaluated in chicken diets without establishing a universal backyard inclusion percentage"
         }
       ],
 
       lastReviewed:
-        "2026-07-17",
+        "2026-07-23",
 
       researchNotes: [
         "Treat Jerusalem Artichoke as a perennial tuber and homestead-infrastructure crop rather than as a concentrated poultry-feed crop.",
-        "Keep fresh tubers separate from dried and ground tuber meal in all nutrition and feeding logic.",
-        "Do not assign an exact fresh-tuber feeding percentage for backyard chickens.",
-        "Do not convert controlled laying-hen or broiler inclusion studies into an unbalanced home ration.",
-        "Model tender foliage separately from mature woody stems.",
-        "Retain plants-per-area and backyard-yield fields as null until suitable small-plot evidence is found.",
-        "Do not promise indefinite harvested storage; the strongest storage role is in-ground storage where climate and drainage permit.",
+        "Keep fresh tubers, dried slices, dried ground tuber meal, tender foliage, mature foliage, and controlled postharvest access as separate use pathways.",
+        "Do not assign a universal fresh-tuber supplementation percentage for backyard chickens.",
+        "Do not convert controlled laying-hen or broiler study inclusion rates directly into an unbalanced home ration.",
+        "Model tender young foliage separately from mature coarse stems.",
+        "Retain backyard yield-per-area values as null until sufficiently transferable small-plot evidence is established.",
+        "Do not promise indefinite harvested storage.",
+        "The strongest non-electric storage pathway is leaving tubers in reasonably drained accessible soil and harvesting them as needed.",
         "Model drought survival separately from tuber-yield retention.",
-        "Model permanent-patch suitability, aggressive spread, volunteer persistence, shading, and containment as major planner traits.",
+        "Model permanent-patch suitability, underground persistence, volunteer regrowth, containment, shading, and difficult removal as major planner traits.",
         "Distinguish cold hardiness of dormant tubers from frost sensitivity of active top growth.",
-        "The crop should be evaluated for fresh-tuber, dried-tuber, cut-foliage, rabbit-forage, pollinator, screening, compost-biomass, household-food, and permanent-production roles.",
-        "No medicinal claims are made."
+        "Do not treat containers or raised beds as guaranteed containment systems.",
+        "The crop should be evaluated for fresh whole tubers, chopped tubers, in-ground winter storage, tender foliage, dried ground tuber material, controlled postharvest access, rabbit forage, pollinator support, seasonal screening, compost biomass, household food, and permanent production.",
+        "No medicinal or veterinary claims are made."
       ]
     },
-    
-      plannerData: {
-      schemaVersion:
-        "1.0.0",
+
+    plannerData: {
+
+              schemaVersion:
+        "2.0.0",
 
       developmentStatus:
-        "ready",
+        "production-ready",
 
       identity: {
         plannerName:
@@ -71042,17 +73611,74 @@ const BCP_FEED_CROPS = {
           "multipurpose",
 
         guideUrl:
-          "growing-jerusalem-artichokes-for-chickens.html"
+          "growing-jerusalem-artichokes-for-chickens.html",
+
+        directFacts: {
+          commonNames: [
+            "Jerusalem Artichoke",
+            "Sunchoke",
+            "Sunroot",
+            "Topinambur"
+          ],
+
+          scientificName:
+            "Helianthus tuberosus",
+
+          plantFamily:
+            "Asteraceae",
+
+          plantForm:
+            "tall-tuber-forming-herbaceous-perennial",
+
+          primaryHarvestProducts: [
+            "fresh-tubers",
+            "dried-tuber-material",
+            "tender-young-foliage",
+            "seasonal-biomass"
+          ],
+
+          primaryPlannerRoles: [
+            "supplemental-tuber-feed",
+            "winter-storage",
+            "household-food",
+            "perennial-resilience",
+            "pollinator-support",
+            "seasonal-screening",
+            "compost-biomass"
+          ],
+
+          concentratedPoultryFeedCrop:
+            false,
+
+          permanentSiteImportant:
+            true,
+
+          notes: [
+            "Jerusalem Artichoke is a perennial sunflower relative grown primarily for its edible underground tubers.",
+            "It is not closely related to the globe artichoke.",
+            "The crop commonly spreads through underground tubers and tuber fragments rather than dependable backyard seed production.",
+            "Its strongest poultry role is supplemental fresh produce and enrichment rather than complete-feed replacement.",
+            "The crop has greater planner value when household food, rabbit forage, pollinators, screening, compost biomass, and winter storage are considered together.",
+            "The crop should be assigned to a permanent site before planting."
+          ]
+        }
       },
 
       lifecycle: {
         growthCycle:
           "perennial",
 
-        isAnnual: false,
-        isBiennial: false,
-        isPerennial: true,
-        isTreeOrShrub: false,
+        isAnnual:
+          false,
+
+        isBiennial:
+          false,
+
+        isPerennial:
+          true,
+
+        isTreeOrShrub:
+          false,
 
         yearsToFirstUsefulHarvest:
           0,
@@ -71070,7 +73696,68 @@ const BCP_FEED_CROPS = {
           true,
 
         reversibleAfterOneSeason:
-          false
+          false,
+
+        propagationMethods: [
+          "whole-tubers",
+          "tuber-pieces",
+          "remaining-underground-tubers"
+        ],
+
+        primaryPropagationMethod:
+          "tubers",
+
+        annualReplantingRequired:
+          false,
+
+        annualSeedSavingRelevant:
+          false,
+
+        dormantSeason:
+          "winter",
+
+        activeGrowthSeason:
+          "spring-through-autumn",
+
+        directFacts: {
+          undergroundPerennialStructure:
+            "tubers",
+
+          topGrowthDiesBackSeasonally:
+            true,
+
+          dormantTubersRegrow:
+            true,
+
+          missedTubersCanProduceFuturePlants:
+            true,
+
+          smallTuberFragmentsCanRegrow:
+            true,
+
+          establishmentFromBotanicalSeedTypical:
+            false,
+
+          productiveFirstSeasonPossible:
+            true,
+
+          colonyExpansionExpected:
+            true,
+
+          completeHarvestLikely:
+            false,
+
+          notes: [
+            "The aerial stems and foliage usually die after hard frost.",
+            "Dormant underground tubers survive and produce new shoots when conditions become favorable.",
+            "A useful tuber harvest may occur during the first growing season.",
+            "The crop normally becomes a recurring perennial production system after establishment.",
+            "Small tubers and fragments missed during harvest can regenerate the patch.",
+            "Annual replanting is generally unnecessary.",
+            "Complete removal may require repeated digging and follow-up control over multiple seasons.",
+            "The expected useful life remains null because an established colony may persist indefinitely when site conditions remain suitable."
+          ]
+        }
       },
 
       climate: {
@@ -71092,11 +73779,13 @@ const BCP_FEED_CROPS = {
 
         challengingClimateTypes: [
           "extreme-heat-without-irrigation",
-          "waterlogged-winter-soil"
+          "waterlogged-winter-soil",
+          "very-short-season-with-late-cultivar",
+          "warm-wet-soil-during-storage"
         ],
 
         minimumFrostFreeDays:
-          null,
+          120,
 
         preferredFrostFreeDays:
           null,
@@ -71108,7 +73797,7 @@ const BCP_FEED_CROPS = {
           null,
 
         daysToMaturityMinimum:
-          null,
+          120,
 
         daysToMaturityMaximum:
           null,
@@ -71135,11 +73824,12 @@ const BCP_FEED_CROPS = {
           true,
 
         seasonExtensionBenefits: [
-          "Planting dormant tubers as soon as soil becomes workable can maximize the first growing season.",
-          "Mulch can keep winter soil workable longer and extend the in-ground harvest period.",
-          "Supplemental irrigation during establishment and prolonged summer drought can improve shoot growth and tuber production.",
-          "Locally adapted cultivars are more useful than temporary frost protection for dependable tuber maturity.",
-          "Harvesting tubers only as needed reduces the need for long-term indoor storage."
+          "Planting dormant tubers as soon as the soil becomes workable can maximize the first growing season.",
+          "Mulch may keep winter soil workable longer and extend the in-ground harvest period.",
+          "Supplemental irrigation during establishment and prolonged summer drought can protect biomass and tuber production.",
+          "A locally adapted cultivar is more useful than temporary frost protection for dependable tuber maturity.",
+          "Harvesting tubers only as needed reduces dependence on long-term harvested storage.",
+          "Wind protection may reduce lodging in exposed locations."
         ],
 
         indoorSeedStartingBenefitScore:
@@ -71147,7 +73837,7 @@ const BCP_FEED_CROPS = {
 
         directFacts: {
           seasonType:
-            "herbaceous-perennial",
+            "warm-season-herbaceous-perennial",
 
           frostSensitive:
             false,
@@ -71173,15 +73863,23 @@ const BCP_FEED_CROPS = {
           droughtRecoveryPotential:
             true,
 
+          lateSeasonTuberDevelopment:
+            true,
+
+          photoperiodCanInfluenceTuberDevelopment:
+            true,
+
           notes: [
-            "Jerusalem Artichoke is an herbaceous perennial that regrows from underground tubers.",
+            "Jerusalem Artichoke is a warm-season herbaceous perennial that regrows from underground tubers.",
             "Hard frost normally kills exposed top growth without necessarily killing dormant tubers.",
             "Established colonies tolerate cold winters across a broad geographic range.",
+            "Cultivar, latitude, photoperiod, frost timing, and season length influence tuber development.",
+            "Some late cultivars may not reach their best tuber production in very short growing seasons.",
             "The crop tolerates summer heat but may produce less biomass and fewer or smaller tubers during prolonged drought.",
             "Drought survival should not be interpreted as full yield retention.",
             "Warm humid climates may increase leaf-disease and tuber-deterioration concerns.",
-            "Poorly drained winter soil is a more serious limitation than ordinary cold.",
-            "The planner does not assign annual days to maturity because cultivar, latitude, day length, frost timing, and harvest purpose strongly affect tuber development."
+            "Poorly drained winter soil is generally a more serious limitation than ordinary cold.",
+            "The planner does not assign a universal maximum maturity period because cultivar and regional conditions vary substantially."
           ]
         }
       },
@@ -71254,6 +73952,9 @@ const BCP_FEED_CROPS = {
           matureHeightFtMaximum:
             10,
 
+          matureWidth:
+            "expanding-underground-colony",
+
           floweringPollinatorTraffic:
             true,
 
@@ -71263,15 +73964,20 @@ const BCP_FEED_CROPS = {
           undergroundSpreadConcern:
             true,
 
+          deepPermanentShadeSuitable:
+            false,
+
           notes: [
             "Full sun provides the strongest tuber and biomass production.",
-            "Partial sun may support survival and moderate growth but usually reduces productivity.",
-            "Tall stems may lean or lodge during storms, especially in exposed or highly fertile locations.",
-            "The crop can provide a dense seasonal screen along a suitable fence line.",
-            "The screen disappears after frost kills the tops.",
+            "Partial sun may support survival and moderate growth but generally reduces productivity.",
+            "Tall stems may lean or lodge during storms, especially in exposed, wet, or highly fertile locations.",
+            "The crop can provide a dense seasonal screen along a suitable fence line or field edge.",
+            "The screening effect disappears after frost kills the tops.",
             "Underground tubers can spread beyond the intended planting area.",
-            "Do not place the crop beside foundations, utilities, narrow paths, neighboring property lines, or beds where permanent spread would create conflict.",
-            "A dedicated permanent patch is generally more appropriate than a frequently redesigned annual garden bed."
+            "Do not place the crop beside foundations, buried utilities, narrow paths, neighboring property lines, septic components, drainage systems, or beds where permanent spread would create conflict.",
+            "A dedicated permanent patch is generally more appropriate than a frequently redesigned annual garden bed.",
+            "Tall summer growth may shade shorter crops on the north side in the Northern Hemisphere.",
+            "Adequate access around the patch makes harvest, containment inspection, and removal of unwanted shoots easier."
           ]
         }
       },
@@ -71360,8 +74066,8 @@ const BCP_FEED_CROPS = {
 
           preferredTextures: [
             "loam",
-            "sandy loam",
-            "friable clay loam"
+            "sandy-loam",
+            "friable-clay-loam"
           ],
 
           nitrogenFixingLegume:
@@ -71376,16 +74082,27 @@ const BCP_FEED_CROPS = {
           waterloggedSoilSuitable:
             false,
 
+          looseSoilImprovesHarvest:
+            true,
+
+          compactedSoilIncreasesHarvestDifficulty:
+            true,
+
+          rockySoilIncreasesTuberDamage:
+            true,
+
           notes: [
             "Jerusalem Artichoke tolerates a broad range of soils but produces and harvests most easily in loose, reasonably deep, well-drained soil.",
             "Loam and sandy loam are strong fits for tuber expansion and digging.",
-            "Clay loam may remain productive when structure and drainage are adequate.",
-            "Dense heavy clay can restrict tuber development and make complete harvest difficult.",
+            "Clay loam may remain productive when soil structure and drainage are adequate.",
+            "Dense heavy clay may restrict tuber development and make complete harvest more difficult.",
             "Rocky soil increases digging labor and tuber damage.",
-            "Poorly drained soil increases deterioration and disease risk.",
+            "Poorly drained soil increases tuber deterioration and disease risk.",
             "The crop does not fix atmospheric nitrogen.",
-            "Excessive fertility may produce very tall top growth without proportionally improving usable tuber yield.",
-            "Soil testing is preferable to guessing at fertilizer needs."
+            "Excessive nitrogen may produce very tall top growth without proportionally improving usable tuber yield.",
+            "Potassium supports tuber-producing crops, but fertilizer decisions should be based on soil testing rather than assumption.",
+            "Loose soil does not prevent regrowth from missed tubers.",
+            "Soil moved from the patch may contain viable tubers or fragments."
           ]
         }
       },
@@ -71467,20 +74184,30 @@ const BCP_FEED_CROPS = {
           irrigationCanProtectYield:
             true,
 
+          excessWaterCanIncreaseTuberLoss:
+            true,
+
+          rainfallOnlyProductionPossible:
+            true,
+
           notes: [
             "Consistent moisture supports stronger top growth and tuber production.",
             "Established colonies can survive temporary drought better than many annual vegetables.",
-            "Prolonged drought may reduce stem height, foliage production, tuber number, and tuber size.",
+            "Prolonged drought may reduce stem height, foliage production, flowering, tuber number, and tuber size.",
             "Supplemental irrigation is most valuable during establishment and tuber development.",
             "Mulch can conserve moisture, suppress weeds, and keep winter soil workable longer.",
             "Standing water and chronically saturated soil are unsuitable.",
-            "Survival after drought does not guarantee a commercially useful or planner-predicted yield."
+            "Excess moisture near harvest or during in-ground storage may increase tuber deterioration.",
+            "Rainfall-only production may be practical in suitable climates and soils, but dependable yield cannot be guaranteed.",
+            "Container-grown plants dry more rapidly than in-ground colonies.",
+            "Survival after drought does not guarantee a useful or predictable harvest."
           ]
         }
       },
-      
-            space: {
-        minimumTrialAreaSqFt:
+
+      space: {
+
+                minimumTrialAreaSqFt:
           null,
 
         minimumUsefulAreaSqFt:
@@ -71560,7 +74287,7 @@ const BCP_FEED_CROPS = {
           null,
 
         containerUseLimitation:
-          "Jerusalem Artichoke can survive in very large containers, but restricted root volume, rapid drying, reduced tuber production, difficult harvest, and eventual crowding make containers inefficient for meaningful flock-feed or household-food production. Containers should not be relied upon as a guaranteed containment system because drainage openings, escaped tubers, and discarded soil may spread the crop.",
+          "Jerusalem Artichoke may survive in a very large container, but restricted root volume, rapid drying, crowding, reduced tuber production, difficult harvest, and declining long-term performance make containers inefficient for meaningful poultry-feed or household-food production. Containers should not be treated as guaranteed containment because viable tubers or soil containing tuber fragments may escape through drainage openings or be spread during soil disposal.",
 
         minimumRaisedBedDepthIn:
           18,
@@ -71620,19 +74347,25 @@ const BCP_FEED_CROPS = {
           completeHarvestDifficult:
             true,
 
+          neighboringSpaceBufferRecommended:
+            true,
+
+          annualRotationCompatible:
+            false,
+
           notes: [
             "Jerusalem Artichoke is best assigned to a permanent in-ground patch where future spread will not interfere with annual crop rotation.",
             "Long strips, fence lines, hedgerows, field edges, and unused open ground are stronger fits than small garden beds.",
             "The crop does not require block planting for pollination or tuber formation.",
             "A continuous stand can provide seasonal screening, biomass, flowers, and recurring tuber production.",
-            "The crop may spread beyond its original planting area through unharvested tubers and small tuber fragments.",
-            "Even careful digging may leave enough tuber material for future regrowth.",
-            "Planting beside foundations, buried utilities, narrow paths, neighboring property lines, or frequently redesigned beds creates long-term conflict risk.",
-            "Tall growth may shade shorter crops during summer.",
-            "Raised beds may make harvesting easier initially but do not eliminate persistence or spread concerns.",
+            "The colony may spread beyond its original planting area through unharvested tubers and small tuber fragments.",
+            "Even careful digging may leave enough viable tuber material for future regrowth.",
+            "Planting beside foundations, buried utilities, septic components, narrow paths, neighboring property lines, or frequently redesigned beds creates long-term conflict risk.",
+            "Tall summer growth may shade shorter crops.",
+            "Raised beds may make early harvest easier but do not eliminate persistence or spread concerns.",
             "Containers are a weak production choice and should not be treated as perfectly secure containment.",
             "Minimum useful and preferred production areas remain null because dependable backyard tuber yield per square foot has not been established.",
-            "Space scoring should reward permanent land availability and strongly penalize temporary, rental, container-only, or annual-rotation situations."
+            "Planner scoring should reward permanent land availability and strongly penalize temporary, rental, container-only, or annual-rotation situations."
           ]
         }
       },
@@ -71675,13 +74408,13 @@ const BCP_FEED_CROPS = {
             5,
 
           wholeSeedHeads:
-            2,
+            1,
 
           wholeGrain:
             1,
 
           processedGrain:
-            3,
+            1,
 
           heatTreated:
             2,
@@ -71722,10 +74455,10 @@ const BCP_FEED_CROPS = {
 
         primaryFlockUses: [
           "Fresh sound tubers offered as supplemental produce",
-          "Split or chopped tubers for easier flock access",
+          "Split or chopped tubers provided for easier flock access",
           "Controlled postharvest pecking and digging enrichment",
           "Tender young foliage offered through cut-and-carry feeding",
-          "Dried ground tuber material as a documented formulated-feed ingredient",
+          "Properly dried and ground tuber material used as a formulated-feed ingredient",
           "In-ground fall and winter supplemental-feed storage",
           "Long-term multipurpose production for mixed homesteads"
         ],
@@ -71736,9 +74469,9 @@ const BCP_FEED_CROPS = {
           "Primary calcium supplementation",
           "Primary young-chick feed",
           "Unrestricted access to large quantities of fresh tubers",
-          "Feeding coarse mature stems as quality forage",
+          "Feeding coarse mature stems as quality poultry forage",
           "Feeding moldy, rotten, fermented, frozen-and-deteriorated, or contaminated tubers",
-          "Adding dried tuber meal to a home ration at an assumed research-study percentage",
+          "Adding dried tuber material to a home ration at an assumed research-study percentage",
           "Allowing chickens continuous access to an actively growing production patch"
         ],
 
@@ -71747,12 +74480,13 @@ const BCP_FEED_CROPS = {
             "Fresh sound tubers",
             "Split or chopped fresh tubers",
             "Properly dried and ground tuber material",
-            "Tender young leaves and shoots",
+            "Tender young leaves",
+            "Tender young shoots",
             "Clean cut foliage"
           ],
 
           preferredBirdStage:
-            "Adult chickens",
+            "adult-chickens",
 
           cropSurvivalWithDirectChickenAccess:
             "variable",
@@ -71785,6 +74519,9 @@ const BCP_FEED_CROPS = {
           rabbitFeedValue:
             true,
 
+          chicksRequireCompleteStarter:
+            true,
+
           notes: [
             "Fresh Jerusalem Artichoke tubers are moist supplemental produce rather than a concentrated complete poultry feed.",
             "The principal storage carbohydrate is inulin and related fructans rather than starch.",
@@ -71796,12 +74533,13 @@ const BCP_FEED_CROPS = {
             "The crop has stronger documented mixed-homestead value when rabbits and household food uses are considered alongside poultry use.",
             "Chickens may damage emerging shoots and disturb developing tubers if allowed unrestricted access to the growing patch.",
             "Fresh tubers and foliage should supplement an age-appropriate complete poultry ration.",
-            "Young chicks should continue receiving a complete age-appropriate starter ration."
+            "Young chicks should continue receiving an age-appropriate complete starter ration.",
+            "A high flock-value score does not establish a safe universal feeding percentage."
           ]
         }
       },
 
-            labor: {
+      labor: {
         beginnerFriendlinessScore:
           4,
 
@@ -71858,7 +74596,8 @@ const BCP_FEED_CROPS = {
           "install-irrigation",
           "apply-compost",
           "apply-mulch",
-          "install-row-markers"
+          "install-row-markers",
+          "establish-perimeter-buffer"
         ],
 
         requiredMaintenanceTasks: [
@@ -71871,10 +74610,11 @@ const BCP_FEED_CROPS = {
           "weed",
           "mulch",
           "irrigate-during-drought",
-          "stake-lodged-stems",
+          "support-lodged-stems",
           "remove-unwanted-shoots",
-          "cut-foliage",
-          "refresh-soil-fertility"
+          "cut-tender-foliage",
+          "refresh-soil-fertility",
+          "inspect-containment-barrier"
         ],
 
         requiredHarvestTasks: [
@@ -71884,40 +74624,78 @@ const BCP_FEED_CROPS = {
         ],
 
         usePathProcessingTasks: {
-          freshCutFoliage: [
+          freshWholeJerusalemArtichokeTubers: [
+            "dig-tubers",
+            "clean-sort",
+            "wash-if-needed",
+            "portion"
+          ],
+
+          choppedFreshJerusalemArtichokeTubers: [
+            "dig-tubers",
+            "clean-sort",
+            "wash",
+            "split-or-chop",
+            "portion"
+          ],
+
+          inGroundWinterJerusalemArtichokeTubers: [
+            "mark-harvest-area",
+            "apply-mulch-if-needed",
+            "dig-as-needed",
+            "clean-sort",
+            "inspect-tubers"
+          ],
+
+          freshYoungJerusalemArtichokeFoliage: [
             "cut-tender-foliage",
             "inspect",
             "offer-fresh"
           ],
 
-          managedLivingFoliage: [
-            "protect-establishing-patch",
-            "limit-flock-access",
-            "monitor-plant-damage"
-          ],
-
-          freshDugTubers: [
+          driedGroundJerusalemArtichokeTubers: [
             "dig-tubers",
-            "separate-sound-tubers",
-            "wash-or-brush",
-            "split-or-chop-if-needed"
-          ],
-
-          driedGroundTubers: [
-            "dig-tubers",
-            "separate-sound-tubers",
             "wash",
+            "clean-sort",
             "slice",
             "dry",
             "inspect-moisture",
-            "grind"
+            "grind",
+            "store"
           ],
 
-          inGroundWinterStorage: [
-            "mark-harvest-area",
-            "apply-mulch-if-needed",
-            "dig-as-needed",
-            "inspect-tubers"
+          controlledPostharvestTuberAccess: [
+            "select-access-area",
+            "expose-selected-tubers",
+            "remove-unsafe-material",
+            "limit-flock-access",
+            "monitor-consumption"
+          ],
+
+          householdFoodTubers: [
+            "dig-tubers",
+            "clean-sort",
+            "wash",
+            "prepare-for-household-use"
+          ],
+
+          rabbitForage: [
+            "cut-tender-foliage",
+            "inspect",
+            "portion",
+            "offer-fresh"
+          ],
+
+          compostBiomass: [
+            "cut-stems-and-foliage",
+            "chop-if-needed",
+            "move-to-compost-area"
+          ],
+
+          retainedPlantingTubers: [
+            "select-sound-tubers",
+            "label",
+            "store-short-term-or-replant"
           ]
         },
 
@@ -71939,7 +74717,7 @@ const BCP_FEED_CROPS = {
           "heavy-mulch",
           "drip-irrigation",
           "containment-barrier",
-          "pruning-shears",
+          "hand-pruners",
           "drying-rack",
           "food-dehydrator",
           "food-processor",
@@ -71972,6 +74750,12 @@ const BCP_FEED_CROPS = {
           diggingRequired:
             true,
 
+          driedTuberProcessingLaborHigh:
+            true,
+
+          freshTuberProcessingLaborLow:
+            true,
+
           majorLaborBottlenecks: [
             "Selecting a permanent site before planting",
             "Containing underground spread",
@@ -71979,7 +74763,7 @@ const BCP_FEED_CROPS = {
             "Finding small tubers and fragments during harvest",
             "Separating sound tubers from damaged or deteriorated tubers",
             "Cleaning soil from harvested tubers",
-            "Processing tubers if dried meal is desired",
+            "Processing tubers when dried meal is desired",
             "Removing an unwanted established colony"
           ],
 
@@ -71995,7 +74779,7 @@ const BCP_FEED_CROPS = {
             "In-ground storage spreads harvest labor across several months instead of concentrating all digging into one day.",
             "Leaving tubers in the ground reduces indoor storage work but does not eliminate winter digging labor.",
             "Fresh-tuber use requires much less processing than dried ground tuber use.",
-            "Drying and grinding tubers create a separate high-labor use path that should not be treated as the default backyard method.",
+            "Drying and grinding tubers create a separate high-labor use path and should not be treated as the default backyard method.",
             "Repeated heavy foliage cutting may reduce tuber production.",
             "Older growers or users with limited mobility, grip strength, or back strength may find digging difficult.",
             "The crop is a strong fit for users with little weekly gardening time who can manage occasional concentrated harvest work."
@@ -72029,22 +74813,23 @@ const BCP_FEED_CROPS = {
           5,
 
         lowestCostUsePath:
-          "in-ground-winter-storage",
+          "in-ground-winter-jerusalem-artichoke-tubers",
 
         highestCostUsePath:
-          "dried-ground-tubers",
+          "dried-ground-jerusalem-artichoke-tubers",
 
         likelyCostDrivers: [
           "Initial purchase of planting tubers",
           "Preparing compacted or poorly drained soil",
           "Permanent underground containment",
+          "Establishing a buffer around the patch",
           "Mulch",
           "Irrigation during establishment or drought",
           "A digging fork or garden spade",
           "Harvest baskets or containers",
           "Labor required for digging and cleaning",
           "Cold humid storage for harvested tubers",
-          "Slicing, drying, and grinding equipment for dried tuber meal",
+          "Slicing, drying, and grinding equipment for dried tuber material",
           "Labor or equipment needed to remove unwanted spread"
         ],
 
@@ -72058,7 +74843,7 @@ const BCP_FEED_CROPS = {
           "Use fresh tubers rather than drying and grinding them.",
           "Use existing mulch, compost, irrigation, and digging tools.",
           "Share or trade surplus planting tubers where legally and practically appropriate.",
-          "Avoid planting in locations where later removal would require repeated excavation."
+          "Avoid planting in locations where later removal would require repeated excavation or landscape repair."
         ],
 
         directFacts: {
@@ -72089,6 +74874,9 @@ const BCP_FEED_CROPS = {
           removalMayCreateFutureCost:
             true,
 
+          feedSavingsPredictable:
+            false,
+
           notes: [
             "The initial planting material may cost more than a packet of annual seed.",
             "A productive patch can supply its own future planting tubers.",
@@ -72096,17 +74884,18 @@ const BCP_FEED_CROPS = {
             "Routine fertilizer and irrigation costs may remain low on a suitable site.",
             "In-ground storage can reduce the need for bins, refrigeration, drying equipment, and dedicated storage rooms.",
             "Harvested tubers lose moisture readily and may require cold, humid storage when they are not used promptly.",
-            "Fresh-tuber feeding is less expensive than producing dried ground tuber meal.",
+            "Fresh-tuber feeding is less expensive than producing dried ground tuber material.",
             "Drying and grinding equipment are optional and should be justified by the intended use.",
             "Containment can be inexpensive where the crop occupies isolated ground but costly where a physical barrier is needed.",
-            "Poor site selection may create long-term removal, neighbor-conflict, or landscape-restoration costs.",
-            "The crop's strongest economic case comes from combining several uses, including household food, poultry supplementation, rabbit feed, pollinator support, screening, compost biomass, and recurring planting material.",
+            "Poor site selection may create long-term removal, neighbor-conflict, utility, or landscape-restoration costs.",
+            "The crop's strongest economic case comes from combining household food, poultry supplementation, rabbit feed, pollinator support, screening, compost biomass, and recurring planting material.",
+            "Potential feed savings remain null because yield, flock intake, complete-feed displacement, labor value, storage loss, and local feed prices vary substantially.",
             "Cost classifications are qualitative and should not be interpreted as current retail-price estimates."
           ]
         }
       },
 
-            goals: {
+      goals: {
         feedReductionScore:
           3,
 
@@ -72255,17 +75044,20 @@ const BCP_FEED_CROPS = {
           annualSeedSavingRelevant:
             false,
 
+          completeFeedReplacementPotential:
+            false,
+
           notes: [
             "Jerusalem Artichoke is strongest as a long-term resilience and multipurpose homestead crop rather than as a concentrated poultry-feed crop.",
             "Fresh tubers provide supplemental produce, fermentable carbohydrates, and flock enrichment.",
             "Fresh tubers do not replace a balanced complete poultry ration.",
             "Dried ground tubers have documented use as a formulated poultry-feed ingredient, but controlled research inclusion levels should not be copied directly into a backyard ration.",
             "Tender foliage can provide seasonal cut-and-carry greens, while mature stems become coarse and less useful as forage.",
-            "The crop has particularly strong value in mixed homesteads where chickens, rabbits, household food, pollinators, screening, and compost biomass are all considered.",
+            "The crop has particularly strong value in mixed homesteads where chickens, rabbits, household food, pollinators, screening, and compost biomass are considered together.",
             "Tubers can remain in the ground and be harvested as needed where soil drainage, freezing, and winter access permit.",
             "In-ground storage provides strong non-electric storage value but does not guarantee that every climate or soil can support uninterrupted winter digging.",
             "Tall summer growth can provide a dense seasonal privacy screen.",
-            "The screen disappears when frost kills the top growth.",
+            "The screening effect disappears when frost kills the top growth.",
             "Late-season flowers can support pollinators when some other floral resources are declining.",
             "Large quantities of stems and leaves may contribute compost biomass.",
             "Jerusalem Artichoke does not fix nitrogen.",
@@ -72278,9 +75070,43 @@ const BCP_FEED_CROPS = {
         }
       },
 
-            risks: {
-        overallRiskLevel:
+      risks: {
+
+                overallRiskLevel:
           "high-management",
+
+        wildlifePressureScore:
+          3,
+
+        birdLossRiskScore:
+          1,
+
+        deerBrowsingRiskScore:
+          3,
+
+        rabbitBrowsingRiskScore:
+          3,
+
+        stormDamageRiskScore:
+          4,
+
+        shatteringRiskScore:
+          1,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          3,
+
+        rodentAttractionScore:
+          4,
+
+        mechanicalHarvestSuitabilityScore:
+          2,
+
+        mechanicalProcessingSuitabilityScore:
+          2,
 
         invasivenessRiskScore:
           5,
@@ -72297,6 +75123,21 @@ const BCP_FEED_CROPS = {
         annualCropRotationConflictScore:
           5,
 
+        permanentSiteCommitmentRiskScore:
+          5,
+
+        landlordOrRentalPropertyConflictScore:
+          5,
+
+        futureLandscapeConflictScore:
+          5,
+
+        accidentalSpreadThroughSoilRiskScore:
+          5,
+
+        missedTuberRegrowthRiskScore:
+          5,
+
         raisedBedEscapeRiskScore:
           4,
 
@@ -72307,19 +75148,28 @@ const BCP_FEED_CROPS = {
           1,
 
         lodgingRiskScore:
-          3,
+          4,
 
         shadingOtherCropsRiskScore:
           4,
 
-        wildlifeDamageRiskScore:
-          2,
+        utilityConflictRiskScore:
+          4,
 
-        rodentDamageRiskScore:
+        foundationConflictRiskScore:
           3,
 
+        wildlifeDamageRiskScore:
+          3,
+
+        rodentDamageRiskScore:
+          4,
+
         deerDamageRiskScore:
-          2,
+          3,
+
+        rabbitDamageRiskScore:
+          3,
 
         poultryDamageRiskScore:
           4,
@@ -72346,7 +75196,7 @@ const BCP_FEED_CROPS = {
           5,
 
         winterTuberLossRiskScore:
-          1,
+          2,
 
         harvestedStorageLossRiskScore:
           4,
@@ -72356,12 +75206,6 @@ const BCP_FEED_CROPS = {
 
         harvestDamageRiskScore:
           4,
-
-        missedTuberRegrowthRiskScore:
-          5,
-
-        accidentalSpreadThroughSoilRiskScore:
-          5,
 
         overfeedingRiskScore:
           3,
@@ -72376,85 +75220,637 @@ const BCP_FEED_CROPS = {
           3,
 
         processingErrorRiskScore:
-          3,
+          4,
 
         toxicPlantConfusionRiskScore:
           1,
 
-        permanentSiteCommitmentRiskScore:
-          5,
-
-        landlordOrRentalPropertyConflictScore:
-          5,
-
-        futureLandscapeConflictScore:
-          5,
-
-        utilityConflictRiskScore:
-          4,
-
-        foundationConflictRiskScore:
-          3,
-
         majorRisks: [
-          "Persistent regrowth from missed tubers and tuber fragments",
-          "Underground spread beyond the intended production patch",
+          "Persistent regrowth from missed tubers and small tuber fragments",
+          "Underground spread beyond the intended permanent patch",
           "Difficulty removing an established colony",
           "Conflict with annual crop rotation",
-          "Spread into neighboring beds, paths, lawns, or property",
+          "Spread into neighboring beds, paths, lawns, drainage areas, or adjoining property",
+          "Movement of viable tubers or fragments in soil, compost, tools, or discarded plant material",
           "Poor performance and tuber deterioration in waterlogged soil",
-          "Reduced tuber yield during prolonged drought",
-          "Tall stems shading shorter crops",
-          "Storm lodging in exposed locations",
-          "Rapid moisture loss from harvested tubers",
-          "Rot, mold, or deterioration during improper storage",
-          "Tuber damage during digging",
-          "Digestive upset when large quantities are introduced suddenly",
-          "Ration imbalance when fresh or dried tubers displace too much complete feed",
-          "Damage to the growing patch from unrestricted poultry access"
+          "Reduced tuber production during prolonged drought",
+          "Tall stems shading shorter neighboring crops",
+          "Stem lodging or breakage during storms, wind, or heavy rain",
+          "Damage to young growth from deer, rabbits, chickens, or other browsing animals",
+          "Rodent feeding on tubers in the ground or during storage",
+          "Rapid moisture loss and shriveling after harvest",
+          "Rot, mold, fermentation, or deterioration during improper storage",
+          "Tuber damage during digging and handling",
+          "Loss of usable tubers when winter soil becomes frozen or inaccessible",
+          "Digestive changes when chickens receive large quantities of fresh tubers suddenly",
+          "Ration imbalance when fresh or dried tubers displace excessive complete feed",
+          "Unsafe home ration formulation using unverified dried-tuber inclusion percentages",
+          "Destruction of an actively growing production patch through unrestricted poultry access",
+          "High physical workload during harvest or attempted colony removal"
         ],
 
         mitigationStrategies: [
-          "Select a permanent site before planting.",
-          "Do not plant where future crop rotation will be necessary.",
-          "Maintain a generous buffer from neighboring property lines, foundations, utilities, paths, and valued garden beds.",
-          "Use a dedicated isolated patch where underground spread is acceptable.",
-          "Install a suitable root barrier where containment is essential, while recognizing that no backyard containment method should be treated as failure-proof.",
-          "Inspect the perimeter regularly and remove unwanted shoots promptly.",
-          "Do not move soil containing tubers or tuber fragments into other garden areas.",
-          "Do not discard unwanted tubers in ordinary compost unless the composting method reliably destroys their ability to regrow.",
-          "Harvest carefully and recognize that complete tuber removal is unlikely.",
-          "Avoid planting in heavy, compacted, rocky, or poorly drained soil when easier harvest and containment are priorities.",
-          "Use mulch and supplemental irrigation during prolonged drought when dependable tuber yield is important.",
-          "Provide airflow and avoid chronically wet foliage where leaf disease becomes a recurring problem.",
-          "Plant where mature stems will not shade lower-growing crops.",
-          "Stake, support, or cut back lodged stems when necessary.",
-          "Protect young growth from unrestricted chicken access.",
-          "Offer fresh tubers gradually and in supplemental quantities.",
-          "Continue providing an age-appropriate complete poultry ration.",
-          "Do not assume research inclusion rates for dried tuber meal are safe in an unformulated home ration.",
-          "Use harvested tubers promptly or store them under cold, humid conditions.",
-          "Discard moldy, rotten, badly damaged, contaminated, or deteriorated tubers.",
-          "Leave tubers in the ground for storage where drainage, soil access, and winter conditions make that practical."
+          "Select a permanent planting site before introducing any tubers.",
+          "Do not plant in beds that will require dependable annual crop rotation.",
+          "Maintain a generous buffer from neighboring property lines, foundations, septic components, drainage systems, utilities, paths, lawns, and valued garden beds.",
+          "Use a dedicated isolated patch where underground persistence is acceptable.",
+          "Install a durable underground barrier where containment is essential, while recognizing that no backyard barrier should be considered completely failure-proof.",
+          "Inspect the perimeter repeatedly during the growing season and remove unwanted shoots promptly.",
+          "Dig outside the intended patch periodically to detect underground spread before it becomes extensive.",
+          "Do not move soil from the patch into other gardens unless it has been carefully inspected and is known to be free of viable tubers.",
+          "Clean digging tools, tillers, equipment, and footwear before moving them to unaffected areas.",
+          "Do not discard unwanted tubers, crowns, or contaminated soil in ordinary compost where viable material may survive.",
+          "Dispose of unwanted tubers through a method that prevents regrowth.",
+          "Avoid mechanical tillage that cuts and distributes tubers across a larger area.",
+          "Recognize that complete harvest is unlikely and plan for recurring regrowth.",
+          "Plant in loose, deep, well-drained soil to reduce harvest damage and digging difficulty.",
+          "Avoid chronically saturated, flood-prone, or poorly drained planting sites.",
+          "Use raised rows or drainage improvements only where they do not create an unacceptable spread pathway.",
+          "Apply mulch to conserve moisture and maintain winter soil access where appropriate.",
+          "Provide supplemental irrigation during establishment and prolonged drought when dependable tuber production is important.",
+          "Reduce irrigation and avoid saturated conditions as harvest approaches where deterioration is a concern.",
+          "Plant where tall growth will not shade important shorter crops.",
+          "Choose a protected site or provide support where wind lodging is likely.",
+          "Remove or support broken stems before they fall across paths, fences, or neighboring crops.",
+          "Use fencing or other protection where deer, rabbits, or chickens repeatedly damage young growth.",
+          "Protect the patch from unrestricted poultry access during emergence, active growth, flowering, and tuber development.",
+          "Allow controlled postharvest access only to a selected area.",
+          "Expose only the quantity of tubers the flock can use promptly.",
+          "Inspect every harvested tuber before feeding, household use, processing, or storage.",
+          "Discard tubers that are moldy, rotten, slimy, fermented, foul-smelling, badly damaged, contaminated, or frozen and deteriorated.",
+          "Use harvested tubers promptly or maintain cold, dark, high-humidity storage.",
+          "Prevent condensation and free moisture during harvested storage.",
+          "Inspect stored tubers frequently for shriveling, mold, heating, softening, odor, and rodent damage.",
+          "Use rodent-resistant storage containers and maintain sanitation around storage areas.",
+          "Leave mature tubers in the ground where drainage and winter access make that safer than harvested storage.",
+          "Mark winter harvest rows before stems die back so the patch remains easy to locate.",
+          "Introduce fresh tubers gradually and observe manure condition and complete-feed intake.",
+          "Offer tubers only as a measured supplement.",
+          "Continue providing an age-appropriate complete poultry ration at all times.",
+          "Do not use fresh tubers as the flock's primary protein, calcium, vitamin, mineral, or energy source.",
+          "Do not copy dried-tuber inclusion rates from research studies into an unformulated home ration.",
+          "Use qualified poultry-nutrition guidance before incorporating meaningful quantities of dried ground tuber material into a ration.",
+          "Dry tuber slices thoroughly before grinding or enclosed storage.",
+          "Discard dried material that develops condensation, clumping, heating, mold, insects, rodent contamination, or abnormal odor.",
+          "Use safe lifting and digging practices during harvest.",
+          "Divide harvest into smaller sessions where physical strain is a concern.",
+          "Use a digging fork, wheelbarrow, and accessible harvest paths to reduce physical workload."
         ],
 
         unsuitableSituations: [
-          "Rental properties without explicit planting permission",
+          "Rental properties without explicit long-term planting permission",
           "Temporary gardens",
           "Frequently redesigned landscapes",
           "Small container-only gardens",
           "Narrow raised beds beside permanent structures",
-          "Annual vegetable beds requiring regular crop rotation",
+          "Annual vegetable beds requiring dependable crop rotation",
           "Sites beside neighboring property lines",
           "Sites above or beside buried utilities",
+          "Locations near septic tanks, septic fields, drainage systems, or underground irrigation components",
+          "Areas where underground spread cannot be tolerated",
           "Chronically saturated soil",
           "Flood-prone planting areas",
-          "Locations where winter soil remains inaccessible when tubers are needed",
+          "Heavy compacted soil where digging is impractical",
+          "Extremely rocky soil where tuber damage and harvest labor would be excessive",
+          "Locations where mature stems would shade valued crops",
+          "Highly exposed sites with severe wind or storm lodging",
+          "Locations where winter soil remains inaccessible when stored tubers are needed",
+          "Sites with severe underground rodent pressure",
+          "Users unwilling or unable to monitor spread",
           "Users unwilling or unable to dig tubers",
+          "Users requiring easy crop removal",
+          "Users requiring zero volunteer regrowth",
+          "Users seeking dependable container production",
           "Users seeking a complete poultry-feed replacement",
-          "Users seeking a high-protein crop",
+          "Users seeking a concentrated high-protein crop",
+          "Users seeking a primary calcium crop",
+          "Users requiring a verified universal feeding percentage",
           "Users requiring predictable yield per square foot",
-          "Situations where zero volunteer regrowth is required"
+          "Users unable to inspect and manage fresh-feed spoilage",
+          "Users unable to dry and store processed tuber material safely"
+        ],
+
+        riskFactors: [
+          {
+            id:
+              "persistent-underground-regrowth",
+
+            label:
+              "Persistent Underground Regrowth",
+
+            severity:
+              "very-high",
+
+            likelihood:
+              "very-high",
+
+            appliesWhen: [
+              "tubers-are-left-after-harvest",
+              "small-tuber-fragments-remain",
+              "soil-containing-tubers-is-moved",
+              "complete-removal-is-required"
+            ],
+
+            consequences: [
+              "volunteer-regrowth",
+              "continued-colony-expansion",
+              "annual-crop-rotation-conflict",
+              "repeated-removal-labor"
+            ],
+
+            mitigation: [
+              "Choose a permanent site before planting.",
+              "Assume that complete harvest will leave viable tubers.",
+              "Inspect the planting perimeter regularly.",
+              "Remove unwanted shoots promptly.",
+              "Avoid moving soil from the patch.",
+              "Plan repeated follow-up control if removal becomes necessary."
+            ]
+          },
+
+          {
+            id:
+              "underground-spread",
+
+            label:
+              "Underground Spread Beyond Intended Area",
+
+            severity:
+              "very-high",
+
+            likelihood:
+              "high",
+
+            appliesWhen: [
+              "patch-is-near-garden-beds",
+              "patch-is-near-property-line",
+              "patch-is-near-paths-or-lawns",
+              "containment-is-not-monitored"
+            ],
+
+            consequences: [
+              "landscape-conflict",
+              "neighbor-conflict",
+              "loss-of-crop-rotation-space",
+              "increased-removal-cost"
+            ],
+
+            mitigation: [
+              "Use an isolated permanent patch.",
+              "Maintain a wide inspection buffer.",
+              "Install and inspect a suitable root barrier where needed.",
+              "Remove shoots outside the intended boundary promptly.",
+              "Do not plant beside neighboring property or permanent infrastructure."
+            ]
+          },
+
+          {
+            id:
+              "soil-mediated-spread",
+
+            label:
+              "Accidental Spread Through Soil or Equipment",
+
+            severity:
+              "high",
+
+            likelihood:
+              "high",
+
+            appliesWhen: [
+              "soil-is-moved",
+              "tillers-cut-tubers",
+              "tools-are-not-cleaned",
+              "tubers-enter-compost"
+            ],
+
+            consequences: [
+              "new-unwanted-colonies",
+              "spread-to-annual-beds",
+              "spread-to-compost-use-areas",
+              "increased-long-term-control-labor"
+            ],
+
+            mitigation: [
+              "Avoid tilling established patches.",
+              "Inspect soil before moving it.",
+              "Clean equipment and tools after working in the patch.",
+              "Keep viable tubers and contaminated soil out of ordinary compost.",
+              "Dispose of unwanted tubers so they cannot regrow."
+            ]
+          },
+
+          {
+            id:
+              "waterlogged-soil-tuber-loss",
+
+            label:
+              "Waterlogged-Soil Tuber Loss",
+
+            severity:
+              "high",
+
+            likelihood:
+              "moderate-to-high",
+
+            appliesWhen: [
+              "soil-is-chronically-saturated",
+              "site-is-flood-prone",
+              "winter-soil-drainage-is-poor",
+              "irrigation-is-excessive"
+            ],
+
+            consequences: [
+              "tuber-rot",
+              "poor-stand-performance",
+              "reduced-winter-storage",
+              "mold-and-deterioration"
+            ],
+
+            mitigation: [
+              "Plant only in reasonably well-drained soil.",
+              "Avoid flood-prone and low-lying areas.",
+              "Correct drainage problems before establishment.",
+              "Do not overirrigate.",
+              "Harvest promptly where warm wet soil threatens tuber quality."
+            ]
+          },
+
+          {
+            id:
+              "drought-related-yield-loss",
+
+            label:
+              "Drought-Related Yield Loss",
+
+            severity:
+              "moderate",
+
+            likelihood:
+              "moderate",
+
+            appliesWhen: [
+              "establishment-moisture-is-inadequate",
+              "prolonged-summer-drought-occurs",
+              "tuber-bulking-moisture-is-limited",
+              "container-production-is-used"
+            ],
+
+            consequences: [
+              "reduced-stem-growth",
+              "reduced-foliage",
+              "fewer-tubers",
+              "smaller-tubers"
+            ],
+
+            mitigation: [
+              "Water during establishment.",
+              "Use mulch to conserve soil moisture.",
+              "Provide supplemental irrigation during prolonged drought.",
+              "Prioritize moisture during tuber initiation and bulking.",
+              "Do not equate plant survival with dependable yield."
+            ]
+          },
+
+          {
+            id:
+              "storm-lodging",
+
+            label:
+              "Storm and Wind Lodging",
+
+            severity:
+              "moderate",
+
+            likelihood:
+              "moderate-to-high",
+
+            appliesWhen: [
+              "plants-are-very-tall",
+              "site-is-exposed",
+              "soil-is-wet",
+              "nitrogen-is-excessive",
+              "heavy-rain-or-wind-occurs"
+            ],
+
+            consequences: [
+              "broken-stems",
+              "shading",
+              "blocked-paths",
+              "reduced-late-season-growth",
+              "difficult-harvest-access"
+            ],
+
+            mitigation: [
+              "Choose a protected location.",
+              "Avoid excessive nitrogen.",
+              "Provide support where lodging is recurrent.",
+              "Maintain accessible paths around the patch.",
+              "Remove or reposition fallen stems safely."
+            ]
+          },
+
+          {
+            id:
+              "wildlife-and-poultry-damage",
+
+            label:
+              "Wildlife and Poultry Damage",
+
+            severity:
+              "moderate",
+
+            likelihood:
+              "moderate",
+
+            appliesWhen: [
+              "young-shoots-are-unprotected",
+              "deer-or-rabbits-are-present",
+              "chickens-have-unrestricted-access",
+              "tubers-are-exposed"
+            ],
+
+            consequences: [
+              "damaged-emerging-shoots",
+              "reduced-biomass",
+              "reduced-tuber-production",
+              "disturbed-soil",
+              "consumption-of-unmeasured-tubers"
+            ],
+
+            mitigation: [
+              "Protect young growth.",
+              "Use fencing where browsing is persistent.",
+              "Keep chickens out during active production.",
+              "Allow only limited controlled postharvest access.",
+              "Expose only a manageable quantity of sound tubers."
+            ]
+          },
+
+          {
+            id:
+              "harvest-damage-and-loss",
+
+            label:
+              "Harvest Damage and Missed-Tuber Loss",
+
+            severity:
+              "high",
+
+            likelihood:
+              "high",
+
+            appliesWhen: [
+              "soil-is-compacted",
+              "soil-is-rocky",
+              "sharp-tools-cut-tubers",
+              "harvest-is-rushed",
+              "small-tubers-are-missed"
+            ],
+
+            consequences: [
+              "damaged-tubers",
+              "shortened-storage-life",
+              "rot",
+              "continued-volunteer-regrowth",
+              "reduced-usable-harvest"
+            ],
+
+            mitigation: [
+              "Harvest when soil is workable.",
+              "Use a digging fork carefully.",
+              "Loosen soil beyond the visible stem base.",
+              "Separate damaged tubers for prompt use.",
+              "Inspect the area for small tubers and fragments.",
+              "Expect some regrowth even after careful harvest."
+            ]
+          },
+
+          {
+            id:
+              "harvested-tuber-storage-loss",
+
+            label:
+              "Harvested-Tuber Storage Loss",
+
+            severity:
+              "high",
+
+            likelihood:
+              "high",
+
+            appliesWhen: [
+              "tubers-are-stored-warm",
+              "humidity-is-too-low",
+              "tubers-are-damaged",
+              "condensation-occurs",
+              "storage-is-not-monitored"
+            ],
+
+            consequences: [
+              "shriveling",
+              "softening",
+              "mold",
+              "rot",
+              "fermentation",
+              "loss-of-feed-and-food-value"
+            ],
+
+            mitigation: [
+              "Leave tubers in the ground where conditions permit.",
+              "Store harvested tubers cold, dark, and at high humidity.",
+              "Avoid freezing and condensation.",
+              "Separate damaged tubers.",
+              "Inspect frequently.",
+              "Use harvested tubers promptly."
+            ]
+          },
+
+          {
+            id:
+              "rodent-attraction",
+
+            label:
+              "Rodent Attraction",
+
+            severity:
+              "moderate-to-high",
+
+            likelihood:
+              "moderate",
+
+            appliesWhen: [
+              "tubers-remain-in-ground",
+              "harvested-tubers-are-unprotected",
+              "dried-material-is-stored",
+              "storage-sanitation-is-poor"
+            ],
+
+            consequences: [
+              "tuber-damage",
+              "feed-contamination",
+              "storage-loss",
+              "disease-and-sanitation-concerns"
+            ],
+
+            mitigation: [
+              "Monitor the patch and storage areas for rodent activity.",
+              "Use rodent-resistant containers.",
+              "Remove spilled or discarded feed material.",
+              "Discard contaminated tubers or dried material.",
+              "Maintain clean storage surroundings."
+            ]
+          },
+
+          {
+            id:
+              "fresh-tuber-overfeeding",
+
+            label:
+              "Fresh-Tuber Overfeeding",
+
+            severity:
+              "high",
+
+            likelihood:
+              "moderate",
+
+            appliesWhen: [
+              "large-quantities-are-offered-suddenly",
+              "complete-feed-intake-declines",
+              "flock-access-is-unrestricted",
+              "feeding-rate-is-not-monitored"
+            ],
+
+            consequences: [
+              "digestive-upset",
+              "wet-droppings",
+              "wet-litter",
+              "nutrient-dilution",
+              "reduced-complete-feed-intake"
+            ],
+
+            mitigation: [
+              "Introduce fresh tubers gradually.",
+              "Offer measured supplemental quantities.",
+              "Observe droppings and litter condition.",
+              "Remove uneaten material promptly.",
+              "Keep complete poultry feed continuously available."
+            ]
+          },
+
+          {
+            id:
+              "dried-tuber-ration-imbalance",
+
+            label:
+              "Dried-Tuber Ration Imbalance",
+
+            severity:
+              "very-high",
+
+            likelihood:
+              "moderate",
+
+            appliesWhen: [
+              "research-inclusion-rates-are-copied",
+              "home-ration-is-not-formulated",
+              "nutrient-analysis-is-unknown",
+              "dried-material-replaces-complete-feed"
+            ],
+
+            consequences: [
+              "protein-deficiency",
+              "amino-acid-imbalance",
+              "calcium-deficiency",
+              "vitamin-and-mineral-deficiency",
+              "reduced-growth-or-production"
+            ],
+
+            mitigation: [
+              "Treat dried tuber material as a formulated ingredient rather than a casual replacement feed.",
+              "Do not assume one universal inclusion rate.",
+              "Obtain reliable ingredient analysis where meaningful quantities will be used.",
+              "Use qualified poultry-nutrition formulation guidance.",
+              "Do not displace age-appropriate complete feed with an unbalanced home mixture."
+            ]
+          },
+
+          {
+            id:
+              "dried-tuber-mold",
+
+            label:
+              "Dried-Tuber Mold and Processing Failure",
+
+            severity:
+              "very-high",
+
+            likelihood:
+              "moderate",
+
+            appliesWhen: [
+              "slices-are-too-thick",
+              "drying-is-incomplete",
+              "material-is-ground-while-warm-or-damp",
+              "storage-container-traps-moisture"
+            ],
+
+            consequences: [
+              "mold",
+              "heating",
+              "fermentation",
+              "feed-spoilage",
+              "unsafe-poultry-feed"
+            ],
+
+            mitigation: [
+              "Slice tubers uniformly.",
+              "Dry completely before grinding.",
+              "Cool dried material before enclosed storage.",
+              "Use dry airtight storage after cooling.",
+              "Inspect for condensation, clumping, heating, mold, and abnormal odor.",
+              "Discard any questionable material."
+            ]
+          },
+
+          {
+            id:
+              "physical-harvest-strain",
+
+            label:
+              "Physical Harvest Strain",
+
+            severity:
+              "moderate-to-high",
+
+            likelihood:
+              "high",
+
+            appliesWhen: [
+              "soil-is-heavy",
+              "harvest-area-is-large",
+              "grower-has-limited-mobility",
+              "winter-soil-is-difficult",
+              "removal-is-attempted"
+            ],
+
+            consequences: [
+              "back-strain",
+              "hand-or-wrist-strain",
+              "fatigue",
+              "incomplete-harvest",
+              "reduced-accessibility"
+            ],
+
+            mitigation: [
+              "Use loose soil and accessible rows.",
+              "Harvest in smaller sessions.",
+              "Use a digging fork and wheelbarrow.",
+              "Avoid digging saturated or frozen soil.",
+              "Seek assistance for extensive harvest or colony removal."
+            ]
+          }
         ],
 
         directFacts: {
@@ -72470,10 +75866,16 @@ const BCP_FEED_CROPS = {
           spreadThroughMovedSoilPossible:
             true,
 
+          mechanicalTillageCanIncreaseSpread:
+            true,
+
           seedSpreadPrimaryConcern:
             false,
 
           permanentSiteSelectionImportant:
+            true,
+
+          annualRotationConflictExpected:
             true,
 
           waterloggingMajorLimitation:
@@ -72494,6 +75896,12 @@ const BCP_FEED_CROPS = {
           harvestedTubersStorePoorlyComparedWithPotatoes:
             true,
 
+          damagedTubersDeteriorateFaster:
+            true,
+
+          inGroundStorageConditionDependent:
+            true,
+
           unrestrictedPoultryAccessRecommended:
             false,
 
@@ -72503,147 +75911,617 @@ const BCP_FEED_CROPS = {
           homeRationInclusionRateEstablished:
             false,
 
+          youngChickPrimaryFeedSuitable:
+            false,
+
+          mechanicalHarvestIdealForBackyardScale:
+            false,
+
+          mechanicalProcessingRequired:
+            false,
+
           notes: [
-            "The greatest Jerusalem Artichoke risk is not crop failure but successful establishment in the wrong location.",
-            "Underground tubers and small tuber fragments can remain after harvest and produce future plants.",
+            "The greatest Jerusalem Artichoke risk is often successful establishment in an unsuitable location rather than failure to grow.",
+            "Underground tubers and small fragments can remain after harvest and produce future plants.",
             "Repeated digging may reduce a colony but may not eliminate it quickly.",
-            "Soil, compost, equipment, and discarded tubers can move viable planting material into new areas.",
+            "Soil, compost, tools, equipment, and discarded tubers can move viable planting material into new areas.",
+            "Mechanical tillage can cut tubers and distribute viable fragments.",
             "Seed production is not the primary backyard spread concern; underground tubers are the dominant management issue.",
             "A permanent isolated patch is safer than a temporary annual garden bed.",
-            "Physical barriers may reduce spread but require inspection and should not be considered perfectly reliable.",
-            "The crop can shade nearby vegetables because mature stems may become very tall.",
+            "Physical barriers may reduce spread but require continuing inspection.",
+            "No containment system should be treated as perfectly reliable.",
+            "The crop can shade nearby vegetables because mature stems become very tall.",
             "Tall stems may lodge during wind, storms, or heavy rain.",
             "Established plants commonly survive drought, but tuber yield may decline.",
             "Chronically saturated soil can cause more serious losses than ordinary drought.",
             "Hard frost normally kills exposed foliage while dormant underground tubers remain alive.",
-            "Freshly harvested tubers have thin skins and lose moisture more rapidly than potatoes.",
+            "Freshly harvested tubers have thin skins and lose moisture more readily than potatoes.",
             "Damaged tubers deteriorate more quickly during storage.",
             "In-ground storage is valuable only where the soil remains well drained and practically accessible.",
+            "Rodents may damage tubers both underground and after harvest.",
             "Fresh tubers should be introduced gradually because large sudden amounts may alter manure consistency or digestive comfort.",
-            "Neither fresh tubers nor home-produced dried tuber meal should displace excessive amounts of complete poultry feed.",
-            "Young chicks should not be expected to balance a diet containing substantial supplemental tuber material.",
-            "The crop should receive a strong planner penalty when the user needs easy removal, strict containment, annual rotation, or temporary land use."
+            "Neither fresh tubers nor home-produced dried tuber material should displace excessive complete poultry feed.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration.",
+            "The crop should receive a strong planner penalty when the user requires easy removal, strict containment, annual rotation, small-space efficiency, or temporary land use.",
+            "Mechanical harvest and processing scores are low because backyard production is usually managed more safely and precisely with hand digging and small-batch processing."
           ]
         }
       },
 
-            seasonalRoles: {
-        spring: {
+      seasonalRoles: {
+
+                spring: {
           primaryRoles: [
-            "Emerges from overwintered tubers",
-            "Rapid vegetative establishment",
-            "Develops strong root and stem growth",
-            "Permanent patch reactivation"
+            "emergence-from-overwintered-tubers",
+            "new-patch-establishment",
+            "rapid-vegetative-growth",
+            "perennial-patch-reactivation",
+            "early-spread-monitoring"
+          ],
+
+          feedProductsAvailable: [
+            "limited-tender-young-foliage",
+            "remaining-overwintered-tubers-where-sound-and-accessibly-stored"
+          ],
+
+          flockUses: [
+            "limited-cut-and-carry-young-greens",
+            "late-season-use-of-remaining-sound-stored-tubers"
+          ],
+
+          managementPriorities: [
+            "protect-emerging-shoots",
+            "monitor-colony-boundary",
+            "remove-unwanted-volunteers",
+            "maintain-establishment-moisture",
+            "inspect-winter-survival",
+            "replenish-mulch-if-needed"
           ],
 
           plannerScores: {
-            feedValue: 1,
-            laborDemand: 2,
-            visualValue: 2,
-            pollinatorValue: 1,
-            resilienceContribution: 5
+            freshFeedValue:
+              2,
+
+            storedFeedValue:
+              2,
+
+            livingForageValue:
+              1,
+
+            harvestValue:
+              2,
+
+            laborDemand:
+              2,
+
+            pollinatorValue:
+              1,
+
+            screeningValue:
+              2,
+
+            resilienceValue:
+              5
           },
 
-          notes: [
-            "Spring is devoted primarily to establishment and vegetative growth.",
-            "Protect emerging shoots from heavy chicken browsing.",
-            "Consistent moisture during establishment improves later tuber production."
-          ]
+          directFacts: {
+            activeGrowthExpected:
+              true,
+
+            tuberHarvestPrimaryRole:
+              false,
+
+            tenderFoliageMayBeAvailable:
+              true,
+
+            unrestrictedPoultryAccessSuitable:
+              false,
+
+            spreadInspectionImportant:
+              true,
+
+            establishmentWaterImportant:
+              true,
+
+            notes: [
+              "Established patches normally resume growth from overwintered underground tubers.",
+              "New patches are commonly planted with dormant tubers in late winter or spring when the soil is workable.",
+              "Emerging shoots should be protected from repeated poultry browsing if tuber production is a primary goal.",
+              "Tender young foliage may be harvested lightly for cut-and-carry use.",
+              "Heavy early foliage removal can weaken establishment and reduce later tuber production.",
+              "Spring is an important season for identifying shoots that have emerged outside the intended patch.",
+              "Unwanted shoots are easier to manage when removed early.",
+              "Remaining overwintered tubers may still be harvested where soil conditions and tuber quality remain suitable.",
+              "Spring feed value is secondary to establishment, patch recovery, and containment management."
+            ]
+          }
         },
 
         summer: {
           primaryRoles: [
-            "Produces heavy biomass",
-            "Provides seasonal privacy screening",
-            "Supports pollinating insects",
-            "Stores energy for tuber production"
+            "rapid-biomass-production",
+            "seasonal-privacy-screening",
+            "tender-foliage-production",
+            "pollinator-habitat-development",
+            "energy-storage-for-tuber-production",
+            "compost-biomass-production"
+          ],
+
+          feedProductsAvailable: [
+            "tender-young-leaves",
+            "tender-shoots",
+            "limited-clean-cut-foliage"
+          ],
+
+          flockUses: [
+            "controlled-cut-and-carry-greens",
+            "limited-seasonal-enrichment"
+          ],
+
+          managementPriorities: [
+            "protect-production-patch",
+            "monitor-water-during-drought",
+            "inspect-for-lodging",
+            "monitor-underground-spread",
+            "remove-unwanted-shoots",
+            "avoid-excessive-foliage-harvest",
+            "monitor-leaf-health"
           ],
 
           plannerScores: {
-            feedValue: 2,
-            laborDemand: 1,
-            visualValue: 5,
-            pollinatorValue: 5,
-            resilienceContribution: 5
+            freshFeedValue:
+              3,
+
+            storedFeedValue:
+              1,
+
+            livingForageValue:
+              2,
+
+            harvestValue:
+              2,
+
+            laborDemand:
+              2,
+
+            pollinatorValue:
+              4,
+
+            screeningValue:
+              5,
+
+            resilienceValue:
+              5
           },
 
-          notes: [
-            "Tall growth can serve as an attractive living screen.",
-            "Late summer flowers become valuable pollinator resources.",
-            "Avoid excessive foliage removal if tuber production is desired."
-          ]
+          directFacts: {
+            activeGrowthExpected:
+              true,
+
+            peakVegetativeGrowthPossible:
+              true,
+
+            tuberHarvestPrimaryRole:
+              false,
+
+            tenderFoliageMayBeAvailable:
+              true,
+
+            matureStemsBecomeCoarse:
+              true,
+
+            unrestrictedPoultryAccessSuitable:
+              false,
+
+            droughtCanReduceLaterTuberYield:
+              true,
+
+            lodgingPossible:
+              true,
+
+            notes: [
+              "Summer is the principal vegetative-growth period.",
+              "Tall dense stems can provide strong seasonal privacy screening.",
+              "Tender young leaves and shoots may be offered in limited quantities as cut-and-carry greens.",
+              "Mature stems and older foliage become increasingly coarse and less useful as poultry forage.",
+              "Repeated heavy cutting may reduce photosynthetic capacity and later tuber production.",
+              "The patch should remain protected from unrestricted chicken access.",
+              "Consistent moisture during prolonged drought can protect biomass and tuber-development potential.",
+              "Tall stems may lodge during wind, thunderstorms, or heavy rainfall.",
+              "Perimeter inspection remains important because new shoots may appear beyond the intended boundary.",
+              "Flowers may begin supporting pollinators during late summer depending on cultivar, latitude, and seasonal conditions."
+            ]
+          }
         },
 
         autumn: {
           primaryRoles: [
-            "Peak tuber production",
-            "Fresh supplemental chicken feed",
-            "Household harvest",
-            "Rabbit feed",
-            "Compost biomass"
+            "late-season-flowering",
+            "pollinator-support",
+            "tuber-bulking",
+            "fresh-tuber-harvest",
+            "household-food-harvest",
+            "rabbit-feed-production",
+            "controlled-postharvest-foraging",
+            "compost-biomass-harvest",
+            "winter-storage-preparation"
+          ],
+
+          feedProductsAvailable: [
+            "fresh-whole-tubers",
+            "fresh-chopped-tubers",
+            "exposed-postharvest-tubers",
+            "limited-tender-foliage",
+            "dried-tuber-material-after-processing"
+          ],
+
+          flockUses: [
+            "fresh-tuber-supplementation",
+            "chopped-tuber-supplementation",
+            "controlled-postharvest-foraging",
+            "pecking-and-digging-enrichment",
+            "limited-cut-and-carry-foliage",
+            "processed-formulated-feed-ingredient"
+          ],
+
+          managementPriorities: [
+            "allow-tubers-to-mature",
+            "delay-major-harvest-until-top-decline-where-practical",
+            "mark-patch-before-stems-disappear",
+            "inspect-harvested-tubers",
+            "separate-damaged-tubers",
+            "prepare-in-ground-storage-area",
+            "apply-mulch-if-needed",
+            "protect-tubers-from-rodents",
+            "manage-postharvest-flock-access"
           ],
 
           plannerScores: {
-            feedValue: 5,
-            laborDemand: 5,
-            visualValue: 3,
-            pollinatorValue: 2,
-            resilienceContribution: 5
+            freshFeedValue:
+              5,
+
+            storedFeedValue:
+              5,
+
+            livingForageValue:
+              2,
+
+            harvestValue:
+              5,
+
+            laborDemand:
+              5,
+
+            pollinatorValue:
+              5,
+
+            screeningValue:
+              4,
+
+            resilienceValue:
+              5
           },
 
-          notes: [
-            "Most harvest occurs after frost kills top growth.",
-            "Dig only what is needed when practical.",
-            "Leaving part of the crop in the ground maintains future production."
-          ]
+          directFacts: {
+            activeGrowthExpected:
+              true,
+
+            peakTuberDevelopmentPossible:
+              true,
+
+            frostCanKillTopGrowth:
+              true,
+
+            tuberHarvestPrimaryRole:
+              true,
+
+            freshTubersAvailable:
+              true,
+
+            inGroundStorageCanBegin:
+              true,
+
+            controlledPostharvestAccessPossible:
+              true,
+
+            notes: [
+              "Autumn is generally the strongest feed and harvest season for Jerusalem Artichoke.",
+              "Tuber development commonly continues late in the growing season.",
+              "Waiting until foliage declines or frost kills the tops may improve harvest timing and make mature tubers easier to identify.",
+              "Cultivar, latitude, photoperiod, frost timing, and weather affect when peak tuber development occurs.",
+              "Fresh sound tubers may be offered whole, split, chopped, or crushed in supplemental quantities.",
+              "Controlled postharvest flock access may provide digging and pecking enrichment.",
+              "Chickens should not receive unrestricted access to the entire permanent patch.",
+              "Damaged tubers should be separated for prompt use because they deteriorate faster.",
+              "Late-season flowers can provide substantial pollinator value.",
+              "Stems and foliage may contribute large amounts of compost biomass after feed-quality foliage has declined.",
+              "Rows or patch boundaries should be marked before dead stems are removed if winter digging is planned.",
+              "The crop's highest seasonal labor demand occurs during digging, sorting, cleaning, processing, and containment inspection."
+            ]
+          }
         },
 
         winter: {
           primaryRoles: [
-            "In-ground food storage",
-            "Emergency household food",
-            "Emergency supplemental poultry feed",
-            "Maintains perennial production system"
+            "in-ground-tuber-storage",
+            "fresh-winter-tuber-harvest",
+            "non-electric-food-storage",
+            "supplemental-winter-poultry-feed",
+            "household-food-security",
+            "perennial-dormancy",
+            "future-planting-material-preservation"
+          ],
+
+          feedProductsAvailable: [
+            "in-ground-stored-tubers",
+            "freshly-dug-winter-tubers",
+            "short-term-cold-stored-tubers",
+            "properly-dried-ground-tuber-material"
+          ],
+
+          flockUses: [
+            "fresh-whole-tuber-supplementation",
+            "fresh-chopped-tuber-supplementation",
+            "winter-pecking-enrichment",
+            "processed-formulated-feed-ingredient"
+          ],
+
+          managementPriorities: [
+            "maintain-soil-access",
+            "dig-only-needed-quantities",
+            "inspect-every-harvested-tuber",
+            "monitor-rodent-pressure",
+            "protect-harvested-tubers-from-drying",
+            "inspect-stored-tubers-frequently",
+            "discard-deteriorated-material",
+            "preserve-sound-planting-tubers"
           ],
 
           plannerScores: {
-            feedValue: 5,
-            laborDemand: 2,
-            visualValue: 1,
-            pollinatorValue: 1,
-            resilienceContribution: 5
+            freshFeedValue:
+              5,
+
+            storedFeedValue:
+              5,
+
+            livingForageValue:
+              1,
+
+            harvestValue:
+              5,
+
+            laborDemand:
+              3,
+
+            pollinatorValue:
+              1,
+
+            screeningValue:
+              1,
+
+            resilienceValue:
+              5
           },
 
-          notes: [
-            "Dormant tubers remain alive underground.",
-            "Well-drained soil allows harvest throughout much of winter.",
-            "Indoor storage requirements can often be minimized by harvesting as needed."
-          ]
+          directFacts: {
+            activeTopGrowthExpected:
+              false,
+
+            tubersDormantUnderground:
+              true,
+
+            tuberHarvestPrimaryRole:
+              true,
+
+            inGroundStoragePossible:
+              true,
+
+            inGroundStorageUniversallyReliable:
+              false,
+
+            frozenSoilCanPreventAccess:
+              true,
+
+            saturatedSoilCanIncreaseLoss:
+              true,
+
+            notes: [
+              "Dormant tubers normally remain alive underground after frost kills the aerial growth.",
+              "In-ground storage can provide a valuable non-electric winter food and supplemental-feed reserve.",
+              "This pathway works best where soil remains reasonably well drained and periodically workable.",
+              "Frozen soil may make sound tubers temporarily inaccessible.",
+              "Warm saturated soil may increase deterioration risk.",
+              "Mulch may moderate freezing and preserve harvest access in some climates.",
+              "Only the quantity needed should be dug when practical.",
+              "Every harvested tuber should be inspected before feeding or household use.",
+              "Harvested tubers may shrivel quickly when stored in dry air.",
+              "Cold, dark, high-humidity storage is preferable when tubers must be held after digging.",
+              "Rodent damage may occur both underground and in storage.",
+              "Sound tubers may also be retained as future planting material.",
+              "Winter feed value remains supplemental and does not replace complete poultry feed."
+            ]
+          }
         },
 
-        yearRoundSummary: {
-          strongestSeason:
-            "autumn",
+        plannerSeasonScores: {
+          spring: {
+            cropAvailabilityScore:
+              3,
 
-          weakestSeason:
+            freshFeedScore:
+              2,
+
+            storedFeedScore:
+              2,
+
+            livingForageScore:
+              1,
+
+            harvestScore:
+              2,
+
+            laborDemandScore:
+              2,
+
+            pollinatorSupportScore:
+              1,
+
+            screeningScore:
+              2,
+
+            resilienceScore:
+              5
+          },
+
+          summer: {
+            cropAvailabilityScore:
+              5,
+
+            freshFeedScore:
+              3,
+
+            storedFeedScore:
+              1,
+
+            livingForageScore:
+              2,
+
+            harvestScore:
+              2,
+
+            laborDemandScore:
+              2,
+
+            pollinatorSupportScore:
+              4,
+
+            screeningScore:
+              5,
+
+            resilienceScore:
+              5
+          },
+
+          autumn: {
+            cropAvailabilityScore:
+              5,
+
+            freshFeedScore:
+              5,
+
+            storedFeedScore:
+              5,
+
+            livingForageScore:
+              2,
+
+            harvestScore:
+              5,
+
+            laborDemandScore:
+              5,
+
+            pollinatorSupportScore:
+              5,
+
+            screeningScore:
+              4,
+
+            resilienceScore:
+              5
+          },
+
+          winter: {
+            cropAvailabilityScore:
+              4,
+
+            freshFeedScore:
+              5,
+
+            storedFeedScore:
+              5,
+
+            livingForageScore:
+              1,
+
+            harvestScore:
+              5,
+
+            laborDemandScore:
+              3,
+
+            pollinatorSupportScore:
+              1,
+
+            screeningScore:
+              1,
+
+            resilienceScore:
+              5
+          }
+        },
+
+        directFacts: {
+          strongestFeedSeason:
+            "autumn-and-winter",
+
+          strongestHarvestSeason:
+            "autumn-and-winter",
+
+          strongestPollinatorSeason:
+            "late-summer-and-autumn",
+
+          strongestScreeningSeason:
+            "summer",
+
+          strongestResilienceSeason:
+            "year-round",
+
+          weakestFreshFeedSeason:
             "spring",
 
-          permanentInfrastructureCrop:
+          activeGrowthSeasons: [
+            "spring",
+            "summer",
+            "autumn"
+          ],
+
+          dormantSeason:
+            "winter",
+
+          usefulWinterHarvestPossible:
             true,
 
-          yearRoundValue:
-            5,
+          continuousYearRoundLivingFeed:
+            false,
+
+          nonElectricWinterStoragePossible:
+            true,
+
+          seasonalScreenDisappearsAfterFrost:
+            true,
+
+          seasonalRolesDependOnClimate:
+            true,
 
           notes: [
-            "Jerusalem Artichoke provides value during every season, but in different ways.",
-            "Its greatest contribution is long-term resilience rather than continuous feed production.",
-            "Few crops combine pollinator support, screening, compost biomass, household food, rabbit forage, poultry supplementation, and perennial persistence this effectively."
+            "Jerusalem Artichoke provides different forms of value across all four seasons.",
+            "Spring value centers on perennial regrowth, establishment, and containment monitoring.",
+            "Summer value centers on biomass, tender greens, pollinator development, and seasonal screening.",
+            "Autumn value centers on late flowering, tuber maturity, fresh harvest, processing, and preparation for winter storage.",
+            "Winter value centers on dormant in-ground storage and as-needed tuber harvest.",
+            "The strongest poultry-feed role occurs after tubers mature.",
+            "Fresh leafy forage is secondary to tuber production.",
+            "The crop does not provide dependable year-round living forage.",
+            "In-ground winter storage depends on drainage, soil temperature, frost depth, mulch, rodent pressure, and practical digging access.",
+            "Seasonal scores are comparative planner values rather than guaranteed harvest or feeding outcomes."
           ]
         }
       },
 
-             usePaths: [
-        {
+      usePaths: [
+
+                {
           id:
             "fresh-whole-jerusalem-artichoke-tubers",
 
@@ -72651,32 +76529,43 @@ const BCP_FEED_CROPS = {
             "Fresh Whole Jerusalem Artichoke Tubers",
 
           description:
-            "Sound freshly dug Jerusalem Artichoke tubers are brushed or washed, inspected, and offered whole to established adult chickens for supplemental produce and pecking enrichment.",
+            "Sound freshly dug Jerusalem Artichoke tubers are brushed or washed, inspected carefully, and offered whole in measured quantities to established adult chickens as supplemental produce and pecking enrichment.",
 
           primaryFeedRole:
             "fresh-tuber-enrichment",
 
           harvestProducts: [
-            "fresh-tubers",
-            "whole-tubers",
-            "fresh-produce"
+            "fresh-jerusalem-artichoke-tubers",
+            "whole-sound-tubers",
+            "fresh-supplemental-produce",
+            "inulin-rich-tuber-feed",
+            "seasonal-pecking-enrichment"
           ],
 
           suitableFeedingMethods: [
             "whole-produce",
-            "fresh-supplement",
+            "measured-fresh-supplement",
             "pecking-enrichment",
-            "seasonal-enrichment"
+            "seasonal-enrichment",
+            "feed-pan-presentation",
+            "supervised-ground-feeding"
           ],
 
           requiredProcessingTasks: [
             "dig-tubers",
-            "clean-sort"
+            "remove-excess-soil",
+            "clean-sort",
+            "inspect-tubers",
+            "portion"
           ],
 
           optionalProcessingTasks: [
+            "brush",
             "wash",
-            "portion"
+            "trim-minor-damage",
+            "split-oversized-tubers",
+            "weigh",
+            "record-flock-response"
           ],
 
           requiredEquipment: [],
@@ -72685,7 +76574,12 @@ const BCP_FEED_CROPS = {
             "digging-fork",
             "garden-spade",
             "harvest-basket",
-            "scrub-brush"
+            "wheelbarrow",
+            "scrub-brush",
+            "wash-basin",
+            "food-scale",
+            "feed-pan",
+            "temporary-fencing"
           ],
 
           harvestPattern:
@@ -72696,12 +76590,1506 @@ const BCP_FEED_CROPS = {
 
           storageMethods: [
             "immediate-consumption",
-            "short-term-fresh",
-            "in-ground-storage"
+            "in-ground-storage",
+            "short-term-cold-humid-storage"
           ],
 
           preferredStorageMethod:
-            "in-ground-until-needed",
+            "leave-sound-tubers-in-well-drained-soil-and-dig-only-the-quantity-needed",
+
+          storageDurationCategory:
+            "seasonal-when-stored-in-ground",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "in-ground-storage",
+            "immediate-feeding",
+            "short-term-cold-humid-storage",
+            "later-chopping",
+            "later-drying",
+            "retained-planting-material"
+          ],
+
+          preservationLimitations: [
+            "Harvested Jerusalem Artichoke tubers lose moisture and shrivel more readily than potatoes because their skin is thin.",
+            "Fresh tubers may soften, mold, ferment, freeze, or rot when stored under unsuitable conditions.",
+            "Cold storage without adequate humidity may cause rapid moisture loss.",
+            "High humidity combined with condensation or free moisture may increase mold and decay.",
+            "In-ground storage is unsuitable where soil is waterlogged, flood-prone, inaccessible, or deeply frozen when tubers are needed.",
+            "Tubers damaged during digging generally deteriorate faster than intact tubers.",
+            "Whole fresh tubers cannot provide the storage duration or feed concentration of properly dried material.",
+            "No universal harvested shelf-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-after-harvest",
+
+          shelfLifeAfterProcessingCategory:
+            "very-short-if-washed-or-damaged",
+
+          likelyLossPoints: [
+            "tubers-left-undiscovered-during-harvest",
+            "tubers-cut-by-digging-tools",
+            "tubers-bruised-during-handling",
+            "soil-contamination",
+            "rodent-feeding",
+            "wildlife-damage",
+            "freezing-after-harvest",
+            "shriveling-in-dry-storage",
+            "condensation",
+            "mold",
+            "rot",
+            "fermentation",
+            "uneaten-tubers-left-in-the-run",
+            "excessive-complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Offer only correctly identified, sound Jerusalem Artichoke tubers.",
+            "Discard tubers that are moldy, rotten, slimy, fermented, foul-smelling, badly damaged, chemically contaminated, flood-contaminated, rodent-contaminated, frozen and deteriorated, or otherwise questionable.",
+            "Brush or wash away excessive soil before offering tubers.",
+            "Do not assume that washing makes a chemically or biologically contaminated tuber safe.",
+            "Introduce fresh tubers gradually rather than offering a large quantity suddenly.",
+            "Observe flock acceptance, manure consistency, litter moisture, complete-feed intake, body condition, egg production, and shell quality.",
+            "Fresh tubers contain substantial water and fermentable fructans.",
+            "Large sudden servings may contribute to digestive changes or wet droppings.",
+            "Fresh tubers are supplemental produce and must not replace an age-appropriate complete poultry ration.",
+            "Jerusalem Artichoke tubers are not a dependable primary protein source.",
+            "Jerusalem Artichoke tubers are not a dependable calcium source for laying hens.",
+            "Do not provide unrestricted access to a large freshly dug pile.",
+            "Remove uneaten tubers before they become spoiled, contaminated, frozen and deteriorated, or attractive to rodents.",
+            "Small whole tubers are most appropriate for established adult chickens capable of pecking them safely.",
+            "Split unusually large, hard, or inaccessible tubers when birds cannot consume them effectively.",
+            "Protect the actively growing production patch from uncontrolled digging and repeated poultry access.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "requires-high-protein-feed",
+            "requires-primary-calcium-source",
+            "has-only-young-chicks",
+            "cannot-dig-tubers",
+            "has-no-permanent-growing-area",
+            "has-waterlogged-soil",
+            "cannot-inspect-fresh-produce",
+            "cannot-remove-uneaten-fresh-feed",
+            "cannot-monitor-flock-response",
+            "requires-long-term-harvested-storage",
+            "requires-precise-feed-replacement-percentage"
+          ]
+        },
+
+        {
+
+                  id:
+            "chopped-fresh-jerusalem-artichoke-tubers",
+
+          label:
+            "Chopped Fresh Jerusalem Artichoke Tubers",
+
+          description:
+            "Sound freshly harvested Jerusalem Artichoke tubers are cleaned, cut into smaller pieces, and offered in controlled portions to adult chickens as supplemental produce and feeding enrichment.",
+
+          primaryFeedRole:
+            "prepared-fresh-tuber-supplement",
+
+          harvestProducts: [
+            "fresh-jerusalem-artichoke-tubers",
+            "chopped-tuber-pieces",
+            "split-tuber-pieces",
+            "fresh-supplemental-produce",
+            "inulin-rich-tuber-feed"
+          ],
+
+          suitableFeedingMethods: [
+            "chopped-produce",
+            "split-produce",
+            "measured-fresh-supplement",
+            "feed-pan-presentation",
+            "mixed-with-other-fresh-produce",
+            "supervised-ground-feeding",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "remove-excess-soil",
+            "wash",
+            "clean-sort",
+            "inspect-tubers",
+            "split-or-chop",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "brush-before-washing",
+            "trim-minor-damage",
+            "crush",
+            "grate",
+            "weigh",
+            "mix-with-other-supplemental-produce",
+            "record-flock-response"
+          ],
+
+          requiredEquipment: [
+            "clean-cutting-tool",
+            "clean-cutting-surface"
+          ],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "garden-spade",
+            "harvest-basket",
+            "wheelbarrow",
+            "scrub-brush",
+            "wash-basin",
+            "cutting-board",
+            "sturdy-knife",
+            "vegetable-chopper",
+            "food-scale",
+            "feed-pan",
+            "temporary-fencing"
+          ],
+
+          harvestPattern:
+            "several",
+
+          harvestFrequencyCategory:
+            "flexible-seasonal",
+
+          storageMethods: [
+            "immediate-consumption",
+            "very-short-term-refrigerated-storage",
+            "in-ground-storage-before-processing"
+          ],
+
+          preferredStorageMethod:
+            "leave-whole-sound-tubers-in-well-drained-soil-and-chop-only-the-quantity-needed-immediately-before-feeding",
+
+          storageDurationCategory:
+            "very-short-after-chopping",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            2,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "very-short-term-refrigeration",
+            "later-drying-before-chopping",
+            "retaining-whole-tubers-in-ground-until-needed"
+          ],
+
+          preservationLimitations: [
+            "Cut surfaces increase moisture loss and shorten usable storage time.",
+            "Chopped tubers deteriorate more rapidly than intact tubers.",
+            "Chopped pieces may discolor after exposure to air.",
+            "Washed and cut pieces may become slimy, fermented, moldy, or contaminated when held too long.",
+            "Refrigeration slows deterioration but does not create dependable long-term storage.",
+            "Freezing fresh chopped tubers may damage texture and increase deterioration after thawing.",
+            "Prepared pieces left in a warm run can spoil rapidly.",
+            "Uneaten chopped material attracts rodents, insects, wild birds, and other animals.",
+            "The pathway requires more sanitation and handling than offering intact tubers.",
+            "No universal prepared shelf life can be assigned."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "same-day-preferred",
+
+          likelyLossPoints: [
+            "tubers-cut-by-digging-tools",
+            "excessive-trimming",
+            "soil-not-removed",
+            "cross-contamination-during-washing",
+            "contaminated-cutting-tools",
+            "contaminated-cutting-surfaces",
+            "pieces-cut-too-small",
+            "pieces-left-warm",
+            "moisture-loss",
+            "discoloration",
+            "slimy-deterioration",
+            "fermentation",
+            "mold",
+            "rot",
+            "rodent-feeding",
+            "wild-bird-contamination",
+            "uneaten-pieces-left-in-the-run",
+            "excessive-complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified, sound Jerusalem Artichoke tubers.",
+            "Discard tubers that are moldy, rotten, slimy, fermented, foul-smelling, badly damaged, chemically contaminated, flood-contaminated, rodent-contaminated, frozen and deteriorated, or otherwise questionable.",
+            "Wash away adhering soil before cutting.",
+            "Use clean hands, clean tools, and a clean food-safe cutting surface.",
+            "Do not use a cutting surface contaminated by raw meat, chemicals, manure, spoiled feed, or other unsafe material.",
+            "Cut pieces large enough to remain visible and recoverable from the feeding area.",
+            "Avoid producing tiny pieces that become mixed into litter, mud, or manure.",
+            "Prepare only the quantity expected to be used promptly.",
+            "Introduce chopped tubers gradually.",
+            "Observe flock acceptance, manure consistency, litter moisture, complete-feed intake, body condition, egg production, and shell quality.",
+            "Fresh Jerusalem Artichoke tubers contain substantial moisture and fermentable fructans.",
+            "Large sudden servings may contribute to digestive changes, loose manure, or wet litter.",
+            "Chopping improves physical access but does not convert the crop into a balanced feed.",
+            "Fresh chopped tubers must remain a supplemental feed.",
+            "Do not use chopped tubers as the flock's primary protein source.",
+            "Do not use chopped tubers as the flock's primary calcium source.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Do not leave chopped tubers in the run until they become spoiled or contaminated.",
+            "Remove uneaten pieces promptly.",
+            "Do not refrigerate visibly contaminated or deteriorating pieces for later feeding.",
+            "Do not feed frozen pieces that have thawed into a soft, slimy, fermented, or deteriorated condition.",
+            "Protect the actively growing patch from unrestricted flock access.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "requires-high-protein-feed",
+            "requires-primary-calcium-source",
+            "has-only-young-chicks",
+            "cannot-dig-tubers",
+            "cannot-wash-produce",
+            "cannot-use-clean-cutting-tools",
+            "cannot-remove-uneaten-fresh-feed",
+            "cannot-monitor-flock-response",
+            "cannot-manage-same-day-fresh-feed",
+            "requires-long-term-prepared-storage",
+            "requires-zero-processing",
+            "requires-precise-complete-feed-replacement-percentage"
+          ]
+        },
+
+        {
+          id:
+            "in-ground-winter-jerusalem-artichoke-tubers",
+
+          label:
+            "In-Ground Winter Jerusalem Artichoke Tubers",
+
+          description:
+            "Mature Jerusalem Artichoke tubers remain dormant in well-drained soil and are dug in small quantities during autumn or winter for fresh poultry supplementation, household food, or retained planting material.",
+
+          primaryFeedRole:
+            "non-electric-winter-tuber-storage",
+
+          harvestProducts: [
+            "dormant-in-ground-tubers",
+            "freshly-dug-winter-tubers",
+            "winter-supplemental-produce",
+            "household-food-tubers",
+            "retained-planting-tubers"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-produce",
+            "chopped-produce",
+            "measured-fresh-supplement",
+            "winter-enrichment",
+            "feed-pan-presentation"
+          ],
+
+          requiredProcessingTasks: [
+            "mark-harvest-area",
+            "dig-as-needed",
+            "remove-excess-soil",
+            "clean-sort",
+            "inspect-tubers",
+            "portion"
+          ],
+
+          optionalProcessingTasks: [
+            "apply-mulch-before-freezing-weather",
+            "brush",
+            "wash",
+            "split",
+            "chop",
+            "retain-planting-tubers",
+            "record-winter-losses"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "row-markers",
+            "heavy-mulch",
+            "digging-fork",
+            "garden-spade",
+            "harvest-basket",
+            "wheelbarrow",
+            "scrub-brush",
+            "wash-basin",
+            "food-scale",
+            "feed-pan"
+          ],
+
+          harvestPattern:
+            "repeated-as-needed",
+
+          harvestFrequencyCategory:
+            "autumn-and-winter",
+
+          storageMethods: [
+            "in-ground-storage",
+            "short-term-cold-humid-storage-after-digging",
+            "immediate-consumption"
+          ],
+
+          preferredStorageMethod:
+            "retain-mature-tubers-in-well-drained-soil-and-dig-only-the-quantity-needed",
+
+          storageDurationCategory:
+            "autumn-through-winter-when-site-conditions-remain-suitable",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            3,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            5,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "low-per-harvest-with-repeated-digging",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            5,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "continued-in-ground-storage",
+            "immediate-feeding",
+            "short-term-cold-humid-storage",
+            "household-food-use",
+            "retained-planting-material",
+            "later-chopping",
+            "later-drying"
+          ],
+
+          preservationLimitations: [
+            "In-ground storage depends on well-drained soil.",
+            "Chronically wet, flooded, or warm saturated soil can increase tuber deterioration.",
+            "Deeply frozen soil may make tubers temporarily inaccessible.",
+            "Heavy clay may become difficult to dig during wet or frozen weather.",
+            "Rodents may consume or contaminate tubers underground.",
+            "Tubers may be damaged by repeated freeze-and-thaw exposure near the soil surface.",
+            "Mulch may improve access but cannot guarantee workable soil during severe winter conditions.",
+            "Tubers left until spring may begin sprouting.",
+            "Harvested tubers still require prompt use or appropriate cold, humid storage.",
+            "In-ground storage preserves the crop but does not prevent colony persistence or spread.",
+            "No universal winter-storage duration can be guaranteed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "seasonal-in-ground",
+
+          shelfLifeAfterProcessingCategory:
+            "short-after-digging",
+
+          likelyLossPoints: [
+            "waterlogged-soil",
+            "warm-wet-winter-soil",
+            "deep-freezing",
+            "inaccessible-frozen-ground",
+            "rodent-feeding",
+            "vole-damage",
+            "tubers-cut-during-winter-digging",
+            "missed-tubers",
+            "surface-tuber-freeze-damage",
+            "spring-sprouting",
+            "shriveling-after-harvest",
+            "mold-after-harvest",
+            "rot-after-harvest",
+            "unmarked-harvest-area",
+            "excessive-complete-feed-displacement"
+          ],
+
+          safetyWarnings: [
+            "Use in-ground storage only where soil remains reasonably well drained.",
+            "Do not rely on this method in flood-prone or chronically saturated soil.",
+            "Mark the patch before stems disappear so winter digging remains controlled and accurate.",
+            "Avoid digging when soil conditions create unsafe footing or excessive physical strain.",
+            "Inspect every harvested tuber before feeding, processing, household use, or replanting.",
+            "Discard tubers that are moldy, rotten, slimy, fermented, foul-smelling, badly damaged, rodent-contaminated, flood-contaminated, frozen and deteriorated, or otherwise questionable.",
+            "Do not assume that an underground tuber is sound merely because the plant survived.",
+            "Brush or wash away excessive soil before feeding.",
+            "Introduce fresh tubers gradually.",
+            "Offer only measured supplemental quantities.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Do not use winter tubers as the flock's primary protein or calcium source.",
+            "Monitor manure consistency, litter moisture, complete-feed intake, body condition, egg production, and shell quality.",
+            "Remove uneaten tubers before they spoil or attract rodents.",
+            "Use rodent control methods that do not expose chickens, pets, wildlife, feed, or harvested tubers to poison.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "has-waterlogged-soil",
+            "has-flood-prone-site",
+            "has-inaccessible-winter-ground",
+            "cannot-dig-in-cool-weather",
+            "cannot-monitor-rodent-pressure",
+            "requires-guaranteed-winter-access",
+            "requires-complete-feed-replacement",
+            "requires-high-protein-feed",
+            "requires-primary-calcium-source",
+            "has-only-young-chicks",
+            "cannot-inspect-fresh-tubers",
+            "cannot-remove-uneaten-feed",
+            "requires-predictable-fixed-storage-duration"
+          ]
+        },
+
+        {
+
+                  id:
+            "fresh-young-jerusalem-artichoke-foliage",
+
+          label:
+            "Fresh Young Jerusalem Artichoke Foliage",
+
+          description:
+            "Tender young Jerusalem Artichoke leaves and shoots are cut from actively growing plants, inspected, and offered in limited quantities as seasonal cut-and-carry greens for established adult chickens.",
+
+          primaryFeedRole:
+            "seasonal-cut-and-carry-greens",
+
+          harvestProducts: [
+            "tender-young-leaves",
+            "tender-young-shoots",
+            "fresh-cut-foliage",
+            "seasonal-green-supplement",
+            "fresh-enrichment-material"
+          ],
+
+          suitableFeedingMethods: [
+            "cut-and-carry",
+            "fresh-greens",
+            "hanging-bundle",
+            "feed-rack-presentation",
+            "measured-seasonal-supplement",
+            "supervised-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "select-tender-growth",
+            "cut-foliage",
+            "inspect",
+            "remove-damaged-material",
+            "portion",
+            "offer-fresh"
+          ],
+
+          optionalProcessingTasks: [
+            "rinse-if-needed",
+            "chop",
+            "bundle",
+            "hang-above-litter",
+            "mix-with-other-safe-greens",
+            "record-flock-acceptance"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "harvest-basket",
+            "clean-knife",
+            "cutting-board",
+            "feed-rack",
+            "hanging-clip",
+            "food-scale",
+            "temporary-fencing"
+          ],
+
+          harvestPattern:
+            "several-light-cuttings",
+
+          harvestFrequencyCategory:
+            "spring-through-summer",
+
+          storageMethods: [
+            "immediate-consumption",
+            "very-short-term-refrigerated-storage"
+          ],
+
+          preferredStorageMethod:
+            "harvest-only-the-quantity-needed-and-offer-immediately",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            false,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "immediate-feeding",
+            "very-short-term-refrigeration",
+            "composting-of-safe-uneaten-material"
+          ],
+
+          preservationLimitations: [
+            "Fresh foliage wilts rapidly after cutting.",
+            "Tender leaves and shoots have much lower storage value than mature tubers.",
+            "Warm, wet, tightly packed foliage can heat, ferment, or develop mold.",
+            "Refrigeration may briefly slow deterioration but does not create dependable long-term storage.",
+            "Older stems and mature leaves become coarse and less palatable.",
+            "Repeated heavy foliage harvest can reduce plant vigor and later tuber production.",
+            "Foliage gathered after pesticide or herbicide exposure must not be fed.",
+            "Foliage contaminated by manure, floodwater, mold, wildlife feces, or roadside pollutants should not be used.",
+            "Drying this foliage is not the intended pathway represented by this use path."
+          ],
+
+          estimatedShelfLifeCategory:
+            "same-day",
+
+          shelfLifeAfterProcessingCategory:
+            "same-day-preferred",
+
+          likelyLossPoints: [
+            "harvesting-overmature-foliage",
+            "cutting-excessive-plant-material",
+            "wilting",
+            "heat-buildup",
+            "fermentation",
+            "mold",
+            "soil-contamination",
+            "wildlife-fecal-contamination",
+            "chemical-contamination",
+            "uneaten-foliage-trampled-into-litter",
+            "reduced-tuber-yield-from-overharvest"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified Jerusalem Artichoke foliage.",
+            "Harvest tender young leaves and shoots rather than coarse mature stems.",
+            "Do not feed foliage treated with herbicides, pesticides, fungicides, or other chemicals unless the product label specifically permits use on poultry-feed crops and the required withdrawal period has passed.",
+            "Do not harvest from roadsides, drainage channels, flood-contaminated areas, chemically treated lawns, or locations exposed to unsafe runoff.",
+            "Discard foliage that is moldy, slimy, fermented, foul-smelling, badly wilted, diseased, heavily insect-damaged, manure-contaminated, or wildlife-contaminated.",
+            "Inspect cut foliage carefully before feeding.",
+            "Rinse foliage when needed to remove loose soil or visible contamination.",
+            "Do not tightly pack damp foliage into an enclosed container.",
+            "Offer only the amount birds can consume while it remains fresh.",
+            "Remove uneaten foliage before it becomes trampled, wet, moldy, or mixed into manure.",
+            "Introduce unfamiliar greens gradually.",
+            "Observe flock acceptance, manure consistency, litter moisture, complete-feed intake, body condition, egg production, and shell quality.",
+            "Fresh foliage must remain a supplemental green feed.",
+            "Jerusalem Artichoke foliage is not a complete poultry ration.",
+            "Jerusalem Artichoke foliage is not a dependable concentrated protein source.",
+            "Jerusalem Artichoke foliage is not a dependable calcium source for laying hens.",
+            "Do not repeatedly remove large portions of the growing patch if tuber production is important.",
+            "Protect the remaining crop from unrestricted poultry access.",
+            "Young chicks should continue receiving an age-appropriate complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "requires-high-protein-feed",
+            "requires-primary-calcium-source",
+            "has-only-young-chicks",
+            "cannot-identify-young-safe-foliage",
+            "cannot-inspect-fresh-plant-material",
+            "cannot-remove-uneaten-greens",
+            "cannot-monitor-flock-response",
+            "requires-long-term-storage",
+            "requires-zero-harvest-management",
+            "plans-heavy-repeated-defoliation",
+            "uses-chemically-treated-growing-area"
+          ]
+        },
+
+        {
+          id:
+            "dried-ground-jerusalem-artichoke-tubers",
+
+          label:
+            "Dried Ground Jerusalem Artichoke Tubers",
+
+          description:
+            "Sound Jerusalem Artichoke tubers are cleaned, sliced, dried thoroughly, ground, and stored as a concentrated processed ingredient for use only within a properly formulated poultry ration.",
+
+          primaryFeedRole:
+            "processed-formulated-feed-ingredient",
+
+          harvestProducts: [
+            "clean-fresh-tubers",
+            "dried-tuber-slices",
+            "ground-dried-tuber-meal",
+            "processed-carbohydrate-ingredient",
+            "formulated-feed-component"
+          ],
+
+          suitableFeedingMethods: [
+            "formulated-ration-ingredient",
+            "measured-feed-mixing",
+            "professionally-balanced-home-ration",
+            "research-guided-feed-formulation"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "remove-excess-soil",
+            "wash",
+            "clean-sort",
+            "trim-damaged-tissue",
+            "slice-uniformly",
+            "dry-completely",
+            "cool-completely",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "store"
+          ],
+
+          optionalProcessingTasks: [
+            "peel",
+            "blanch",
+            "weigh-before-drying",
+            "weigh-after-drying",
+            "record-drying-loss",
+            "screen-ground-material",
+            "obtain-feed-analysis",
+            "label-batch",
+            "record-batch-date",
+            "vacuum-seal",
+            "freeze-dried-material-for-storage-pest-control"
+          ],
+
+          requiredEquipment: [
+            "clean-cutting-tool",
+            "clean-cutting-surface",
+            "reliable-drying-system",
+            "feed-grinder-or-food-mill",
+            "dry-storage-container"
+          ],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "harvest-basket",
+            "scrub-brush",
+            "wash-basin",
+            "mandoline-slicer",
+            "food-dehydrator",
+            "drying-racks",
+            "oven-with-low-temperature-control",
+            "food-scale",
+            "moisture-meter",
+            "feed-sieve",
+            "airtight-food-grade-container",
+            "vacuum-sealer",
+            "batch-labels"
+          ],
+
+          harvestPattern:
+            "batch-processing",
+
+          harvestFrequencyCategory:
+            "seasonal",
+
+          storageMethods: [
+            "dry-airtight-storage",
+            "vacuum-sealed-dry-storage",
+            "refrigerated-dry-storage",
+            "frozen-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "cool-completely-and-store-fully-dried-ground-material-in-a-clean-dry-airtight-rodent-resistant-container",
+
+          storageDurationCategory:
+            "medium-when-properly-dried-and-protected",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            3,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            1,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            1,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "whole-dried-slices",
+            "ground-dried-meal",
+            "airtight-dry-storage",
+            "vacuum-sealed-storage",
+            "refrigerated-storage",
+            "frozen-storage"
+          ],
+
+          preservationLimitations: [
+            "Fresh Jerusalem Artichoke tubers contain substantial moisture and require extensive drying.",
+            "Uneven slices dry at different rates and may leave unsafe moist centers.",
+            "Thick slices may appear dry externally while retaining internal moisture.",
+            "Ground material absorbs moisture more readily than intact dried slices.",
+            "Warm material sealed before cooling may create condensation.",
+            "Incomplete drying may lead to mold, heating, fermentation, clumping, or spoilage.",
+            "Grinding creates dust and increases exposed surface area.",
+            "Airtight storage is safe only after the material is fully dried and cooled.",
+            "Dry material remains attractive to rodents and may be damaged by storage insects.",
+            "Home processing does not establish the ingredient's precise nutrient composition.",
+            "Research-study inclusion levels do not automatically apply to backyard-grown material.",
+            "Meaningful ration inclusion requires nutrient balancing and formulation expertise.",
+            "No universal safe inclusion percentage is assigned to this pathway.",
+            "No universal shelf-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "medium",
+
+          shelfLifeAfterProcessingCategory:
+            "medium-when-fully-dried-and-protected",
+
+          likelyLossPoints: [
+            "tubers-damaged-during-harvest",
+            "excessive-trimming",
+            "soil-contamination",
+            "uneven-slicing",
+            "slices-cut-too-thick",
+            "insufficient-airflow",
+            "incomplete-drying",
+            "scorching",
+            "case-hardening",
+            "grinding-before-cooling",
+            "condensation",
+            "moisture-reabsorption",
+            "mold",
+            "heating",
+            "fermentation",
+            "clumping",
+            "storage-insects",
+            "rodent-contamination",
+            "dust-loss",
+            "incorrect-ration-measurement",
+            "nutrient-imbalance"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified, sound Jerusalem Artichoke tubers.",
+            "Discard tubers that are moldy, rotten, slimy, fermented, foul-smelling, chemically contaminated, flood-contaminated, rodent-contaminated, frozen and deteriorated, or otherwise questionable.",
+            "Wash away soil and remove damaged or deteriorated tissue before slicing.",
+            "Use clean hands, clean tools, clean drying surfaces, and clean food-safe equipment.",
+            "Slice tubers uniformly to support even drying.",
+            "Dry tuber slices thoroughly before grinding or enclosed storage.",
+            "Do not rely only on surface appearance to determine dryness.",
+            "Provide strong airflow during drying.",
+            "Avoid scorching or burning the material.",
+            "Cool dried slices completely before grinding.",
+            "Cool ground material completely before sealing.",
+            "Do not seal warm material in an airtight container.",
+            "Inspect stored material for condensation, clumping, heating, insects, mold, abnormal odor, discoloration, moisture, or rodent damage.",
+            "Discard any batch that becomes damp, moldy, heated, fermented, contaminated, or otherwise questionable.",
+            "Control processing dust and protect eyes and airways.",
+            "Keep grinding equipment away from children and animals.",
+            "Ground dried tuber material is more concentrated than fresh tubers.",
+            "Do not offer dried tuber meal free-choice.",
+            "Do not use dried tuber meal as a complete poultry feed.",
+            "Do not use dried tuber meal as the flock's primary protein source.",
+            "Do not use dried tuber meal as the flock's primary calcium source.",
+            "Do not copy a research-study inclusion percentage into an unbalanced home ration.",
+            "Ingredient composition varies with cultivar, soil, maturity, processing, and storage.",
+            "Obtain qualified poultry-nutrition guidance before using meaningful quantities in a home-formulated ration.",
+            "Continue providing an age-appropriate complete poultry ration unless the entire diet has been professionally formulated.",
+            "Young chicks should receive an age-appropriate complete starter ration."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-zero-processing",
+            "cannot-dry-material-thoroughly",
+            "cannot-control-processing-sanitation",
+            "cannot-manage-dust",
+            "cannot-monitor-stored-feed",
+            "cannot-protect-feed-from-rodents",
+            "cannot-measure-feed-ingredients",
+            "lacks-ration-formulation-guidance",
+            "requires-universal-inclusion-rate",
+            "requires-complete-feed-replacement",
+            "requires-primary-protein-source",
+            "requires-primary-calcium-source",
+            "has-only-young-chicks",
+            "requires-guaranteed-long-term-storage"
+          ]
+        },
+
+        {
+
+                  id:
+            "controlled-postharvest-jerusalem-artichoke-tuber-access",
+
+          label:
+            "Controlled Postharvest Jerusalem Artichoke Tuber Access",
+
+          description:
+            "After the primary harvest, a carefully selected portion of the Jerusalem Artichoke patch is opened temporarily so adult chickens can scratch, peck, and recover remaining sound tubers as supervised seasonal enrichment without sacrificing the entire perennial planting.",
+
+          primaryFeedRole:
+            "postharvest-foraging-enrichment",
+
+          harvestProducts: [
+            "remaining-sound-tubers",
+            "naturally-exposed-tubers",
+            "scratch-and-peck-enrichment",
+            "fresh-seasonal-produce",
+            "behavioral-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "controlled-foraging",
+            "temporary-supervised-access",
+            "scratch-enrichment",
+            "seasonal-rotation",
+            "limited-free-choice"
+          ],
+
+          requiredProcessingTasks: [
+            "select-access-area",
+            "remove-hazards",
+            "expose-selected-tubers",
+            "limit-flock-access",
+            "supervise-feeding",
+            "close-access-after-feeding"
+          ],
+
+          optionalProcessingTasks: [
+            "remove-large-stems",
+            "trim-dead-growth",
+            "mark-boundaries",
+            "record-consumption",
+            "recover-unused-sound-tubers",
+            "inspect-for-regrowth"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "temporary-poultry-fence",
+            "garden-rake",
+            "digging-fork",
+            "wheelbarrow",
+            "boundary-flags",
+            "harvest-basket"
+          ],
+
+          harvestPattern:
+            "repeated-limited-access",
+
+          harvestFrequencyCategory:
+            "late-autumn-through-winter",
+
+          storageMethods: [
+            "in-ground-storage-until-access"
+          ],
+
+          preferredStorageMethod:
+            "retain-sound-tubers-underground-until-supervised-foraging-is-planned",
+
+          storageDurationCategory:
+            "seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "very-low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "leave-in-ground-until-needed",
+            "partial-digging",
+            "rotational-access",
+            "later-household-harvest"
+          ],
+
+          preservationLimitations: [
+            "Only practical where soil remains reasonably accessible.",
+            "Heavy snow, frozen soil, flooding, or prolonged saturation may prevent use.",
+            "Rodents may remove or damage underground tubers before chickens reach them.",
+            "The entire production patch should not be opened because excessive scratching may reduce future production.",
+            "Repeated unrestricted access can destroy the perennial stand.",
+            "Uneaten exposed tubers may deteriorate rapidly after repeated freezing and thawing.",
+            "Behavioral enrichment value is high, but precise feed measurement is limited."
+          ],
+
+          estimatedShelfLifeCategory:
+            "seasonal-in-ground",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "rodent-feeding",
+            "winter-waterlogging",
+            "deep-freezing",
+            "excessive-flock-digging",
+            "patch-destruction",
+            "uncontrolled-regrowth",
+            "soil-compaction",
+            "uneaten-exposed-tubers",
+            "wildlife-access"
+          ],
+
+          safetyWarnings: [
+            "Limit flock access to only a selected portion of the planting.",
+            "Do not allow unrestricted long-term access to the production patch.",
+            "Inspect the area for trash, wire, plastic, glass, treated lumber, or other hazards before releasing birds.",
+            "Remove rotten, moldy, fermented, slimy, foul-smelling, chemically contaminated, flood-contaminated, or wildlife-contaminated tubers.",
+            "Monitor birds to prevent excessive consumption.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Do not rely on this pathway as a complete feed source.",
+            "Close access once enrichment objectives have been met to preserve future production.",
+            "Monitor the area afterward for excessive disturbance and unwanted spread.",
+            "Young chicks should not be managed using this pathway."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-complete-feed-replacement",
+            "cannot-supervise-flock",
+            "has-only-young-chicks",
+            "requires-precise-feed-measurement",
+            "has-severe-rodent-pressure",
+            "cannot-protect-the-production-patch",
+            "cannot-manage-perennial-spread"
+          ]
+        },
+
+        {
+          id:
+            "household-food-jerusalem-artichoke-tubers",
+
+          label:
+            "Household Food Jerusalem Artichoke Tubers",
+
+          description:
+            "Jerusalem Artichoke tubers harvested primarily for household consumption, with poultry receiving only secondary supplemental use from surplus, damaged-but-safe tubers, or processing leftovers.",
+
+          primaryFeedRole:
+            "household-food-priority",
+
+          harvestProducts: [
+            "premium-household-tubers",
+            "culinary-tubers",
+            "surplus-tubers",
+            "safe-trimming-material",
+            "retained-planting-tubers"
+          ],
+
+          suitableFeedingMethods: [
+            "household-food-first",
+            "supplemental-poultry-use",
+            "surplus-utilization"
+          ],
+
+          requiredProcessingTasks: [
+            "dig-tubers",
+            "clean-sort",
+            "grade",
+            "wash",
+            "separate-household-quality"
+          ],
+
+          optionalProcessingTasks: [
+            "trim",
+            "peel",
+            "slice",
+            "package",
+            "retain-seed-stock",
+            "record-yield"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "wash-basin",
+            "food-safe-storage-container",
+            "harvest-basket",
+            "food-scale",
+            "refrigerator"
+          ],
+
+          harvestPattern:
+            "seasonal",
+
+          harvestFrequencyCategory:
+            "autumn-and-winter",
+
+          storageMethods: [
+            "in-ground-storage",
+            "cold-humid-storage",
+            "refrigeration"
+          ],
+
+          preferredStorageMethod:
+            "retain-high-quality-tubers-for-household-use-and-use-surplus-promptly",
 
           storageDurationCategory:
             "seasonal",
@@ -72740,148 +78128,7 @@ const BCP_FEED_CROPS = {
             4,
 
           rodentRiskScore:
-            3,
-
-          storedInsectRiskScore:
-            1,
-
-          harvestEaseScore:
-            2,
-
-          preparationEaseScore:
-            5,
-
-          beginnerSuitabilityScore:
             4,
-
-          householdFoodValueScore:
-            5,
-
-          flockValueScore:
-            4,
-
-          safetyWarnings: [
-            "Offer only sound tubers that are free from mold, rot, fermentation, chemical contamination, and serious deterioration.",
-            "Discard badly damaged, slimy, foul-smelling, frozen-and-deteriorated, or questionable tubers.",
-            "Introduce fresh tubers gradually and observe flock acceptance and manure condition.",
-            "Fresh tubers are supplemental produce and must not replace an age-appropriate complete poultry ration.",
-            "Do not allow unrestricted consumption of a large freshly harvested pile.",
-            "Protect the actively growing production patch from destructive digging and repeated poultry access."
-          ],
-
-          incompatibleUserTraits: [
-            "requires-complete-feed-replacement",
-            "requires-high-protein-feed",
-            "cannot-dig-tubers",
-            "has-no-permanent-growing-area",
-            "requires-precise-feed-replacement-percentage"
-          ]
-        },
-
-        {
-          id:
-            "chopped-fresh-jerusalem-artichoke-tubers",
-
-          label:
-            "Chopped Fresh Jerusalem Artichoke Tubers",
-
-          description:
-            "Sound freshly dug tubers are cleaned and split, chopped, or crushed into manageable pieces before being offered as a measured supplemental food for adult chickens.",
-
-          primaryFeedRole:
-            "prepared-fresh-tuber-supplement",
-
-          harvestProducts: [
-            "fresh-tubers",
-            "chopped-tubers",
-            "fresh-produce"
-          ],
-
-          suitableFeedingMethods: [
-            "chopped-produce",
-            "measured-supplement",
-            "fresh-supplement",
-            "mixed-produce"
-          ],
-
-          requiredProcessingTasks: [
-            "dig-tubers",
-            "clean-sort",
-            "chop"
-          ],
-
-          optionalProcessingTasks: [
-            "wash",
-            "crush",
-            "portion"
-          ],
-
-          requiredEquipment: [
-            "cutting-tool"
-          ],
-
-          helpfulEquipment: [
-            "digging-fork",
-            "garden-spade",
-            "harvest-basket",
-            "scrub-brush",
-            "cutting-board",
-            "feed-pan"
-          ],
-
-          harvestPattern:
-            "several",
-
-          harvestFrequencyCategory:
-            "flexible-seasonal",
-
-          storageMethods: [
-            "immediate-consumption",
-            "short-term-fresh",
-            "in-ground-storage"
-          ],
-
-          preferredStorageMethod:
-            "prepare-immediately-before-feeding",
-
-          storageDurationCategory:
-            "very-short",
-
-          nonElectricStorageSuitable:
-            true,
-
-          refrigerationSuitable:
-            true,
-
-          freezingSuitable:
-            false,
-
-          dryingRequired:
-            false,
-
-          curingRequired:
-            false,
-
-          shellingRequired:
-            false,
-
-          threshingRequired:
-            false,
-
-          cookingRequired:
-            false,
-
-          grindingRequired:
-            false,
-
-          moistureSensitive:
-            true,
-
-          moldRiskScore:
-            4,
-
-          rodentRiskScore:
-            3,
 
           storedInsectRiskScore:
             1,
@@ -72893,202 +78140,136 @@ const BCP_FEED_CROPS = {
             4,
 
           beginnerSuitabilityScore:
-            4,
+            5,
 
           householdFoodValueScore:
             5,
 
           flockValueScore:
+            3,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
             5,
 
+          poultryFeedPriorityScore:
+            3,
+
+          preservationOptions: [
+            "household-storage",
+            "surplus-fed-to-poultry",
+            "retain-planting-material",
+            "later-processing"
+          ],
+
+          preservationLimitations: [
+            "Household-quality tubers should receive priority.",
+            "Only sound surplus or safe trimmings should be considered for poultry.",
+            "Damaged, rotten, or moldy material should never be diverted to chickens.",
+            "Household storage still requires monitoring for moisture loss and spoilage.",
+            "Premium culinary tubers should not automatically be considered poultry feed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short-to-medium",
+
+          shelfLifeAfterProcessingCategory:
+            "short",
+
+          likelyLossPoints: [
+            "harvest-damage",
+            "sorting-errors",
+            "moisture-loss",
+            "rodent-damage",
+            "mold",
+            "rot",
+            "household-storage-loss"
+          ],
+
           safetyWarnings: [
-            "Use only sound clean tubers.",
-            "Prepare chopped tubers shortly before feeding because cut surfaces deteriorate more quickly than intact tubers.",
-            "Remove uneaten pieces before they spoil, freeze and deteriorate, or become contaminated.",
-            "Introduce the crop gradually rather than offering a large quantity at once.",
-            "Chopped tubers remain supplemental and must not displace excessive amounts of complete poultry feed.",
-            "Use safe cutting practices when preparing hard or irregularly shaped tubers."
+            "Never feed spoiled household rejects simply to avoid waste.",
+            "Only clean, sound surplus should be offered to poultry.",
+            "Maintain proper food safety practices for household consumption.",
+            "Continue feeding poultry a complete balanced ration."
           ],
 
           incompatibleUserTraits: [
-            "declines-chopping",
-            "requires-long-term-prepared-storage",
-            "requires-complete-feed-replacement",
-            "requires-high-protein-feed",
-            "cannot-monitor-uneaten-fresh-feed"
+            "requires-feed-first-production",
+            "cannot-sort-harvest",
+            "cannot-inspect-food-quality",
+            "requires-complete-feed-replacement"
           ]
         },
 
         {
-          id:
-            "in-ground-winter-jerusalem-artichoke-tubers",
+
+                  id:
+            "rabbit-forage-jerusalem-artichoke",
 
           label:
-            "In-Ground Winter-Harvested Tubers",
+            "Jerusalem Artichoke Forage for Rabbits",
 
           description:
-            "Tubers remain in well-drained soil after top growth dies back and are dug in small quantities as needed for fresh winter poultry supplementation and household use.",
+            "Tender Jerusalem Artichoke foliage and sound harvested tubers are reserved primarily for controlled supplemental feeding to domestic rabbits, with poultry use remaining secondary.",
 
           primaryFeedRole:
-            "non-electric-winter-tuber-storage",
+            "multi-species-rabbit-feed",
 
           harvestProducts: [
-            "winter-harvested-tubers",
-            "fresh-tubers",
-            "stored-in-ground-produce"
+            "tender-young-foliage",
+            "fresh-leaves",
+            "young-shoots",
+            "sound-fresh-tubers",
+            "surplus-rabbit-feed"
           ],
 
           suitableFeedingMethods: [
-            "whole-produce",
-            "chopped-produce",
-            "winter-supplement",
-            "seasonal-enrichment"
+            "rabbit-cut-and-carry",
+            "measured-rabbit-supplement",
+            "fresh-foliage-feeding",
+            "fresh-tuber-feeding",
+            "multi-species-feed-allocation"
           ],
 
           requiredProcessingTasks: [
-            "dig-tubers",
-            "clean-sort"
-          ],
-
-          optionalProcessingTasks: [
-            "wash",
-            "chop",
+            "identify-safe-plant-material",
+            "harvest",
+            "inspect",
+            "remove-contaminated-material",
             "portion",
-            "apply-mulch"
-          ],
-
-          requiredEquipment: [],
-
-          helpfulEquipment: [
-            "digging-fork",
-            "garden-spade",
-            "harvest-basket",
-            "heavy-mulch",
-            "row-marker"
-          ],
-
-          harvestPattern:
-            "continuous",
-
-          harvestFrequencyCategory:
-            "winter-as-needed",
-
-          storageMethods: [
-            "in-ground-storage"
-          ],
-
-          preferredStorageMethod:
-            "well-drained-soil-harvested-as-needed",
-
-          storageDurationCategory:
-            "long-seasonal",
-
-          nonElectricStorageSuitable:
-            true,
-
-          refrigerationSuitable:
-            false,
-
-          freezingSuitable:
-            false,
-
-          dryingRequired:
-            false,
-
-          curingRequired:
-            false,
-
-          shellingRequired:
-            false,
-
-          threshingRequired:
-            false,
-
-          cookingRequired:
-            false,
-
-          grindingRequired:
-            false,
-
-          moistureSensitive:
-            true,
-
-          moldRiskScore:
-            3,
-
-          rodentRiskScore:
-            4,
-
-          storedInsectRiskScore:
-            1,
-
-          harvestEaseScore:
-            2,
-
-          preparationEaseScore:
-            4,
-
-          beginnerSuitabilityScore:
-            4,
-
-          householdFoodValueScore:
-            5,
-
-          flockValueScore:
-            5,
-
-          safetyWarnings: [
-            "Use in-ground storage only where soil remains well drained and reasonably accessible.",
-            "Do not rely on saturated, flood-prone, or persistently waterlogged soil for safe tuber storage.",
-            "Inspect every harvested tuber and discard rotten, moldy, foul-smelling, badly damaged, or deteriorated material.",
-            "Frozen soil may make tubers inaccessible even when the tubers remain alive.",
-            "Rodents and other wildlife may damage tubers left underground.",
-            "Winter-harvested tubers remain supplemental to complete poultry feed."
-          ],
-
-          incompatibleUserTraits: [
-            "has-waterlogged-winter-soil",
-            "has-inaccessible-frozen-winter-soil",
-            "cannot-dig-during-winter",
-            "requires-indoor-ready-to-use-storage",
-            "has-severe-underground-rodent-pressure"
-          ]
-        },
-
-        {
-          id:
-            "fresh-young-jerusalem-artichoke-foliage",
-
-          label:
-            "Fresh Young Jerusalem Artichoke Foliage",
-
-          description:
-            "Tender young leaves and shoots are harvested through controlled cut-and-carry management and offered promptly as seasonal supplemental greens.",
-
-          primaryFeedRole:
-            "fresh-green-forage",
-
-          harvestProducts: [
-            "fresh-greens",
-            "young-leaves",
-            "tender-shoots",
-            "cut-foliage"
-          ],
-
-          suitableFeedingMethods: [
-            "cut-and-carry",
-            "fresh-supplement",
-            "seasonal-greens"
-          ],
-
-          requiredProcessingTasks: [
-            "cut-tender-foliage",
-            "clean-sort"
+            "introduce-gradually"
           ],
 
           optionalProcessingTasks: [
-            "chop",
-            "portion"
+            "rinse",
+            "chop-foliage",
+            "split-tubers",
+            "weigh",
+            "record-animal-response",
+            "separate-poultry-and-rabbit-portions"
           ],
 
           requiredEquipment: [],
@@ -73096,28 +78277,35 @@ const BCP_FEED_CROPS = {
           helpfulEquipment: [
             "hand-pruners",
             "harvest-basket",
-            "feed-pan"
+            "digging-fork",
+            "scrub-brush",
+            "clean-knife",
+            "cutting-board",
+            "food-scale",
+            "rabbit-feed-rack",
+            "feed-crock"
           ],
 
           harvestPattern:
-            "continuous",
+            "repeated-light-foliage-harvest-and-seasonal-tuber-harvest",
 
           harvestFrequencyCategory:
-            "seasonal-occasional",
+            "spring-through-winter",
 
           storageMethods: [
             "immediate-consumption",
-            "short-term-fresh"
+            "very-short-term-refrigeration",
+            "in-ground-tuber-storage"
           ],
 
           preferredStorageMethod:
-            "immediate-feeding",
+            "offer-foliage-fresh-and-retain-sound-tubers-in-ground-until-needed",
 
           storageDurationCategory:
-            "immediate",
+            "very-short-for-foliage-and-seasonal-for-in-ground-tubers",
 
           nonElectricStorageSuitable:
-            false,
+            true,
 
           refrigerationSuitable:
             true,
@@ -73147,263 +78335,201 @@ const BCP_FEED_CROPS = {
             true,
 
           moldRiskScore:
-            3,
-
-          rodentRiskScore:
-            1,
-
-          storedInsectRiskScore:
-            1,
-
-          harvestEaseScore:
-            5,
-
-          preparationEaseScore:
-            5,
-
-          beginnerSuitabilityScore:
             4,
-
-          householdFoodValueScore:
-            1,
-
-          flockValueScore:
-            3,
-
-          safetyWarnings: [
-            "Use tender young foliage rather than coarse mature stems.",
-            "Offer only clean foliage that is free from mold, disease deterioration, pesticides, herbicides, and other contamination.",
-            "Do not harvest heavily from weak, newly established, drought-stressed, or badly damaged plants.",
-            "Repeated heavy foliage removal may reduce tuber production and weaken the permanent patch.",
-            "Fresh foliage is supplemental greens and must not replace complete poultry feed.",
-            "Remove uneaten wilted foliage before it spoils."
-          ],
-
-          incompatibleUserTraits: [
-            "requires-long-term-storage",
-            "wants-tuber-production-only",
-            "requires-high-energy-feed",
-            "requires-high-protein-feed",
-            "cannot-manage-controlled-harvest"
-          ]
-        },
-
-        {
-          id:
-            "dried-ground-jerusalem-artichoke-tubers",
-
-          label:
-            "Dried Ground Jerusalem Artichoke Tubers",
-
-          description:
-            "Sound tubers are cleaned, sliced, dried thoroughly, inspected, and ground for potential measured use as a supplemental ingredient within a properly formulated poultry ration.",
-
-          primaryFeedRole:
-            "processed-tuber-feed-ingredient",
-
-          harvestProducts: [
-            "dried-tuber-slices",
-            "ground-tuber-material",
-            "tuber-meal"
-          ],
-
-          suitableFeedingMethods: [
-            "processed-feed-ingredient",
-            "measured-supplement",
-            "formulated-ration"
-          ],
-
-          requiredProcessingTasks: [
-            "dig-tubers",
-            "wash",
-            "clean-sort",
-            "slice",
-            "dry",
-            "inspect-moisture",
-            "grind"
-          ],
-
-          optionalProcessingTasks: [
-            "portion",
-            "laboratory-test",
-            "ration-formulate"
-          ],
-
-          requiredEquipment: [
-            "cutting-tool",
-            "drying-equipment",
-            "feed-grinder"
-          ],
-
-          helpfulEquipment: [
-            "digging-fork",
-            "garden-spade",
-            "scrub-brush",
-            "cutting-board",
-            "food-dehydrator",
-            "drying-rack",
-            "drying-screen",
-            "fan",
-            "moisture-meter",
-            "food-safe-container",
-            "rodent-proof-storage"
-          ],
-
-          harvestPattern:
-            "major",
-
-          harvestFrequencyCategory:
-            "seasonal-processing-batch",
-
-          storageMethods: [
-            "dried-ground",
-            "airtight-dry-storage"
-          ],
-
-          preferredStorageMethod:
-            "cool-dry-airtight-after-complete-drying",
-
-          storageDurationCategory:
-            "medium",
-
-          nonElectricStorageSuitable:
-            true,
-
-          refrigerationSuitable:
-            false,
-
-          freezingSuitable:
-            false,
-
-          dryingRequired:
-            true,
-
-          curingRequired:
-            false,
-
-          shellingRequired:
-            false,
-
-          threshingRequired:
-            false,
-
-          cookingRequired:
-            false,
-
-          grindingRequired:
-            true,
-
-          moistureSensitive:
-            true,
-
-          moldRiskScore:
-            5,
 
           rodentRiskScore:
             4,
 
           storedInsectRiskScore:
-            2,
+            1,
 
           harvestEaseScore:
-            2,
-
-          preparationEaseScore:
-            1,
-
-          beginnerSuitabilityScore:
-            1,
-
-          householdFoodValueScore:
-            2,
-
-          flockValueScore:
             4,
 
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            2,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            2,
+
+          preservationOptions: [
+            "immediate-fresh-feeding",
+            "very-short-term-refrigeration",
+            "in-ground-tuber-storage",
+            "composting-safe-uneaten-foliage"
+          ],
+
+          preservationLimitations: [
+            "Fresh foliage wilts rapidly after cutting.",
+            "Damp foliage stored in dense piles may heat, ferment, or mold.",
+            "Older stems become coarse and less suitable as forage.",
+            "Repeated heavy foliage harvest can reduce tuber yield and weaken the planting.",
+            "Fresh tubers deteriorate more rapidly after digging than when retained in suitable soil.",
+            "This pathway does not establish a complete rabbit diet.",
+            "Feed acceptance and digestive tolerance vary among individual animals.",
+            "No universal serving quantity is assigned."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short-for-foliage",
+
+          shelfLifeAfterProcessingCategory:
+            "same-day-preferred",
+
+          likelyLossPoints: [
+            "harvesting-overmature-foliage",
+            "excessive-defoliation",
+            "wilting",
+            "mold",
+            "fermentation",
+            "soil-contamination",
+            "chemical-contamination",
+            "uneaten-foliage",
+            "damaged-tubers",
+            "rodent-loss",
+            "digestive-upset-from-rapid-introduction"
+          ],
+
           safetyWarnings: [
-            "Dry sliced tubers completely before grinding or enclosed storage.",
-            "Do not grind or store material that remains damp, warm, moldy, fermented, discolored, or foul-smelling.",
-            "Inspect stored material for condensation, clumping, heating, mold, rodents, and abnormal odor.",
-            "Controlled poultry studies do not establish a universal safe inclusion percentage for an unformulated backyard ration.",
-            "Do not copy a research-study inclusion rate without accounting for the complete ration, bird age, production stage, nutrient balance, and ingredient composition.",
-            "Ground tuber material must not replace necessary protein, amino acids, calcium, phosphorus, vitamins, minerals, or other components of complete poultry feed.",
-            "Seek qualified poultry-nutrition formulation guidance before using dried tuber meal as a meaningful ration ingredient.",
-            "Grinding and handling dry material may produce airborne dust."
+            "Use only correctly identified Jerusalem Artichoke plants.",
+            "Harvest foliage from areas free of unsafe pesticide, herbicide, fungicide, manure, floodwater, and roadside contamination.",
+            "Discard foliage that is moldy, slimy, fermented, badly wilted, diseased, foul-smelling, or visibly contaminated.",
+            "Discard tubers that are moldy, rotten, slimy, fermented, foul-smelling, rodent-contaminated, flood-contaminated, or otherwise questionable.",
+            "Introduce both foliage and tubers gradually.",
+            "Do not make sudden major changes to a rabbit's diet.",
+            "Offer only controlled supplemental quantities.",
+            "Continue providing an appropriate rabbit diet centered on suitable hay, water, and nutritionally appropriate feed.",
+            "Do not use Jerusalem Artichoke as the sole source of fiber, protein, vitamins, or minerals.",
+            "Monitor appetite, fecal output, hydration, body condition, and behavior.",
+            "Stop feeding and seek qualified veterinary guidance if digestive disturbance develops.",
+            "Do not feed large quantities of fresh tubers to animals unaccustomed to fermentable root crops.",
+            "Remove uneaten fresh material before it spoils.",
+            "Separate rabbit and poultry portions when different handling or feeding quantities are required."
           ],
 
           incompatibleUserTraits: [
-            "declines-drying",
-            "declines-grinding",
-            "has-no-protected-drying-area",
-            "has-no-dry-storage",
-            "requires-minimal-processing",
-            "requires-known-home-ration-inclusion-rate",
-            "wants-complete-feed-replacement"
+            "requires-complete-rabbit-diet",
+            "cannot-introduce-feed-gradually",
+            "cannot-monitor-rabbit-digestion",
+            "cannot-remove-uneaten-fresh-feed",
+            "cannot-identify-safe-foliage",
+            "uses-chemically-treated-growing-area",
+            "plans-heavy-repeated-defoliation",
+            "requires-long-term-foliage-storage",
+            "requires-precise-universal-serving-rate"
           ]
         },
 
         {
           id:
-            "controlled-postharvest-tuber-access",
+            "compost-biomass-jerusalem-artichoke",
 
           label:
-            "Controlled Postharvest Tuber Access",
+            "Jerusalem Artichoke Compost Biomass",
 
           description:
-            "Adult chickens receive limited supervised access to a selected harvested or exposed section of the patch for digging, pecking, and consumption of remaining sound tubers.",
+            "Coarse stems, mature leaves, damaged non-diseased foliage, and other clean Jerusalem Artichoke plant residues are directed into managed compost systems rather than being wasted or offered as low-quality poultry feed.",
 
           primaryFeedRole:
-            "postharvest-foraging-enrichment",
+            "non-feed-biomass-recovery",
 
           harvestProducts: [
-            "exposed-tubers",
-            "remaining-tubers",
-            "postharvest-forage"
+            "mature-stems",
+            "coarse-leaves",
+            "postharvest-top-growth",
+            "clean-plant-residue",
+            "carbon-and-nitrogen-compost-feedstock"
           ],
 
-          suitableFeedingMethods: [
-            "controlled-grazing",
-            "supervised-foraging",
-            "pecking-enrichment",
-            "seasonal-enrichment"
-          ],
+          suitableFeedingMethods: [],
 
           requiredProcessingTasks: [
-            "expose-selected-tubers",
-            "limit-flock-access"
+            "inspect-biomass",
+            "exclude-diseased-material",
+            "exclude-chemical-contamination",
+            "cut-or-crush-large-stems",
+            "combine-with-other-compost-materials",
+            "manage-compost-pile"
           ],
 
           optionalProcessingTasks: [
-            "dig-tubers",
-            "remove-damaged-material",
-            "restore-mulch"
+            "shred",
+            "chop",
+            "dry-partially",
+            "layer-with-manure",
+            "mix-with-dry-carbon-material",
+            "turn-compost",
+            "monitor-moisture",
+            "monitor-temperature"
           ],
 
           requiredEquipment: [],
 
           helpfulEquipment: [
-            "temporary-fencing",
-            "portable-poultry-netting",
-            "digging-fork",
-            "garden-spade"
+            "hand-pruners",
+            "loppers",
+            "machete",
+            "garden-cart",
+            "shredder",
+            "compost-fork",
+            "compost-bin",
+            "compost-thermometer",
+            "water-hose"
           ],
 
           harvestPattern:
-            "several",
+            "seasonal-biomass-removal",
 
           harvestFrequencyCategory:
-            "postharvest-controlled",
+            "late-summer-through-winter",
 
           storageMethods: [
-            "in-ground-storage",
-            "immediate-consumption"
+            "active-composting",
+            "temporary-dry-biomass-pile",
+            "chopped-biomass-storage-before-mixing"
           ],
 
           preferredStorageMethod:
-            "expose-only-what-the-flock-can-use-promptly",
+            "process-and-add-clean-biomass-to-a-managed-compost-system-promptly",
 
           storageDurationCategory:
-            "immediate",
+            "short-before-composting",
 
           nonElectricStorageSuitable:
             true,
@@ -73439,87 +78565,746 @@ const BCP_FEED_CROPS = {
             3,
 
           rodentRiskScore:
-            3,
+            2,
 
           storedInsectRiskScore:
-            1,
+            2,
 
           harvestEaseScore:
             4,
 
           preparationEaseScore:
-            4,
+            3,
 
           beginnerSuitabilityScore:
+            5,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
             3,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "active-composting",
+            "chopped-biomass-composting",
+            "mixed-manure-composting",
+            "partial-drying-before-composting",
+            "surface-mulching-where-spread-risk-is-controlled"
+          ],
+
+          preservationLimitations: [
+            "Large mature stems decompose slowly when left whole.",
+            "Dense wet piles may become anaerobic and foul-smelling.",
+            "Very dry coarse stems may require additional moisture and nitrogen-rich material.",
+            "Fresh green biomass may mat together unless mixed with coarse carbon material.",
+            "Diseased or chemically contaminated plant material should not enter ordinary compost intended for garden use.",
+            "Tubers and viable stem bases placed in cool unfinished compost may survive and establish unwanted plants.",
+            "Cold composting may not reliably destroy viable tubers.",
+            "Compost placement can spread Jerusalem Artichoke if viable tubers remain.",
+            "This pathway produces soil-building material rather than direct poultry feed."
+          ],
+
+          estimatedShelfLifeCategory:
+            "not-applicable",
+
+          shelfLifeAfterProcessingCategory:
+            "managed-decomposition",
+
+          likelyLossPoints: [
+            "whole-stems-decomposing-slowly",
+            "anaerobic-matting",
+            "excessive-moisture",
+            "insufficient-moisture",
+            "poor-carbon-nitrogen-balance",
+            "unmanaged-odor",
+            "viable-tubers-surviving",
+            "unwanted-spread-through-compost",
+            "diseased-material-entering-compost",
+            "chemical-contamination"
+          ],
+
+          safetyWarnings: [
+            "Do not feed coarse, deteriorated, moldy, or contaminated biomass merely to avoid disposal.",
+            "Exclude plant material contaminated by herbicides, persistent pesticides, petroleum products, floodwater, sewage, or other unsafe substances.",
+            "Exclude severely diseased material when the composting system cannot reliably manage the pathogen.",
+            "Remove all visible tubers before composting when unwanted spread is a concern.",
+            "Do not assume a cold compost pile will kill viable tubers.",
+            "Chop or crush large stems to improve decomposition.",
+            "Balance wet green material with dry carbon-rich material.",
+            "Maintain sufficient airflow to reduce anaerobic conditions.",
+            "Keep compost piles from blocking drainage or creating runoff into poultry areas.",
+            "Prevent chickens from consuming moldy compost material.",
+            "Use care with shredders, blades, loppers, and other cutting equipment.",
+            "Allow compost to mature fully before applying it to food-production areas."
+          ],
+
+          incompatibleUserTraits: [
+            "requires-direct-poultry-feed",
+            "cannot-manage-compost",
+            "cannot-control-perennial-spread",
+            "cannot-remove-viable-tubers",
+            "uses-contaminated-growing-area",
+            "requires-rapid-whole-stem-decomposition",
+            "cannot-balance-wet-and-dry-compost-materials"
+          ]
+        },
+
+        {
+          id:
+            "retained-planting-tubers-jerusalem-artichoke",
+
+          label:
+            "Retained Jerusalem Artichoke Planting Tubers",
+
+          description:
+            "Sound, disease-free Jerusalem Artichoke tubers are selected during harvest and preserved for replanting, patch expansion, replacement planting, or sharing rather than being consumed by the household or flock.",
+
+          primaryFeedRole:
+            "future-crop-propagation",
+
+          harvestProducts: [
+            "sound-planting-tubers",
+            "cultivar-preservation-stock",
+            "replacement-planting-material",
+            "patch-expansion-material",
+            "shareable-propagation-stock"
+          ],
+
+          suitableFeedingMethods: [],
+
+          requiredProcessingTasks: [
+            "identify-desired-cultivar",
+            "select-sound-tubers",
+            "exclude-diseased-tubers",
+            "prevent-desiccation",
+            "label",
+            "store-or-replant"
+          ],
+
+          optionalProcessingTasks: [
+            "grade-by-size",
+            "separate-by-cultivar",
+            "record-source",
+            "record-harvest-date",
+            "store-in-slightly-moist-medium",
+            "replant-immediately",
+            "share-with-other-growers"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "digging-fork",
+            "harvest-basket",
+            "labels",
+            "permanent-marker",
+            "ventilated-container",
+            "slightly-moist-storage-medium",
+            "refrigerator",
+            "planting-map"
+          ],
+
+          harvestPattern:
+            "seasonal-selection",
+
+          harvestFrequencyCategory:
+            "autumn-through-early-spring",
+
+          storageMethods: [
+            "immediate-replanting",
+            "in-ground-retention",
+            "short-term-cold-humid-storage",
+            "slightly-moist-medium-storage"
+          ],
+
+          preferredStorageMethod:
+            "retain-sound-tubers-in-ground-or-store-cold-and-humid-until-planting",
+
+          storageDurationCategory:
+            "short-to-seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            true,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            4,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            2,
+
+          preparationEaseScore:
+            5,
+
+          beginnerSuitabilityScore:
+            5,
 
           householdFoodValueScore:
             2,
 
           flockValueScore:
+            1,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
             5,
 
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "immediate-replanting",
+            "in-ground-retention",
+            "cold-humid-storage",
+            "slightly-moist-medium-storage",
+            "cultivar-sharing"
+          ],
+
+          preservationLimitations: [
+            "Jerusalem Artichoke tubers can shrivel when exposed to dry air.",
+            "Excess free moisture may promote mold and rot.",
+            "Warm storage may encourage premature sprouting.",
+            "Freezing after harvest can damage planting stock.",
+            "Rodents may consume or contaminate stored tubers.",
+            "Damaged tubers may decay before planting.",
+            "Cultivars can become mixed when labels are lost.",
+            "Retained planting tubers are unavailable for household or poultry consumption.",
+            "Every viable tuber can create a persistent new colony.",
+            "Sharing planting material may spread an aggressive crop into unsuitable locations."
+          ],
+
+          estimatedShelfLifeCategory:
+            "until-next-planting-season",
+
+          shelfLifeAfterProcessingCategory:
+            "not-applicable",
+
+          likelyLossPoints: [
+            "harvest-damage",
+            "desiccation",
+            "mold",
+            "rot",
+            "freezing",
+            "premature-sprouting",
+            "rodent-feeding",
+            "lost-labels",
+            "cultivar-mixing",
+            "accidental-consumption",
+            "uncontrolled-replanting"
+          ],
+
           safetyWarnings: [
-            "Limit access to a selected portion of the patch rather than releasing chickens into the entire production area.",
-            "Inspect the area and remove rotten, moldy, contaminated, or severely damaged tubers before flock access.",
-            "Do not allow birds to consume excessive quantities or replace substantial amounts of complete feed.",
-            "End access before excessive digging damages retained planting tubers or spreads tuber fragments into unwanted areas.",
-            "Do not use this method where poultry can move tubers or contaminated soil into neighboring beds.",
-            "Protect spring shoots and actively growing plants from repeated chicken damage."
+            "Retain only correctly identified, sound, disease-free tubers.",
+            "Do not retain tubers that are moldy, rotten, slimy, fermented, badly damaged, foul-smelling, flood-contaminated, or rodent-contaminated.",
+            "Label retained tubers clearly so they are not accidentally fed or discarded.",
+            "Keep cultivars separated when preserving specific planting characteristics.",
+            "Protect stored tubers from drying, standing moisture, freezing, and rodents.",
+            "Inspect stored planting material regularly.",
+            "Remove deteriorating tubers before decay spreads to nearby stock.",
+            "Plan the future planting location before preserving large quantities.",
+            "Do not distribute planting tubers without warning recipients about persistence and spread.",
+            "Avoid planting near property lines, septic systems, drainage structures, foundations, small garden beds, or locations where future removal would be difficult.",
+            "Use physical containment or a dedicated permanent area when long-term spread is a concern.",
+            "Do not plant material collected from diseased or chemically contaminated sites."
           ],
 
           incompatibleUserTraits: [
-            "has-no-way-to-control-flock-access",
-            "requires-strict-crop-containment",
-            "cannot-monitor-foraging",
-            "has-a-small-unprotected-patch",
-            "requires-maximum-tuber-harvest"
+            "does-not-want-perennial-spread",
+            "has-no-permanent-growing-area",
+            "cannot-label-cultivars",
+            "cannot-protect-storage-from-rodents",
+            "cannot-maintain-cold-humid-storage",
+            "requires-all-tubers-for-food-or-feed",
+            "plans-uncontained-sharing",
+            "cannot-monitor-stored-planting-material"
           ]
         }
-      ], 
+      ],
 
       dataQuality: {
-        overallConfidence:
-          5,
 
-        agriculturalResearch:
-          5,
+                overallConfidenceLevel:
+          "moderate",
 
-        poultryResearch:
+        overallConfidenceScore:
           4,
 
-        rabbitResearch:
+        identityConfidenceScore:
           5,
 
-        backyardEvidence:
+        lifecycleConfidenceScore:
+          5,
+
+        climateConfidenceScore:
           4,
 
-        longTermManagement:
+        siteConfidenceScore:
+          4,
+
+        soilConfidenceScore:
+          4,
+
+        waterConfidenceScore:
+          4,
+
+        spaceConfidenceScore:
+          4,
+
+        flockConfidenceScore:
+          3,
+
+        laborConfidenceScore:
+          4,
+
+        costConfidenceScore:
+          3,
+
+        goalsConfidenceScore:
+          4,
+
+        risksConfidenceScore:
+          4,
+
+        seasonalRolesConfidenceScore:
+          4,
+
+        usePathsConfidenceScore:
+          3,
+
+        nutritionConfidenceScore:
+          3,
+
+        yieldConfidenceScore:
+          3,
+
+        economicsConfidenceScore:
+          2,
+
+        storageConfidenceScore:
+          4,
+
+        processingConfidenceScore:
+          3,
+
+        poultryFeedingConfidenceScore:
+          3,
+
+        rabbitFeedingConfidenceScore:
+          2,
+
+        householdFoodConfidenceScore:
           5,
 
-        yieldPrediction:
-          2,
+        propagationConfidenceScore:
+          5,
 
-        feedReplacementPrediction:
-          2,
+        containmentConfidenceScore:
+          5,
 
-        missingData: [
-          "Reliable backyard yield-per-plant values",
-          "Reliable backyard plants-per-100-square-feet values",
-          "Verified calcium percentage",
-          "Verified phosphorus percentage",
-          "Reliable backyard feed savings estimates"
+        evidenceStrength:
+          "moderate",
+
+        evidenceCoverage:
+          "broad-agronomic-coverage-with-limited-backyard-poultry-specific-data",
+
+        primaryEvidenceTypes: [
+          "university-extension-publications",
+          "government-agricultural-resources",
+          "peer-reviewed-research",
+          "forage-and-feed-research",
+          "horticultural-production-guides",
+          "plant-database-references",
+          "food-storage-guidance"
         ],
 
-        notes: [
-          "Jerusalem Artichoke is one of the best-supported perennial crops currently included in the Backyard Chicken Planner database.",
-          "Its biology, management, and mixed-homestead uses are well documented.",
-          "Backyard production values remain highly variable depending on cultivar, climate, soil, and management, so several quantitative fields intentionally remain null rather than using speculative estimates.",
-          "Future planner updates may populate currently null values as reliable extension or peer-reviewed data become available."
-        ]
+        strongestEvidenceAreas: [
+          "plant-identity",
+          "perennial-lifecycle",
+          "tuber-propagation",
+          "cold-hardiness",
+          "soil-adaptation",
+          "in-ground-storage",
+          "household-food-use",
+          "aggressive-spread-potential",
+          "tuber-harvest",
+          "seasonal-growth-pattern"
+        ],
+
+        moderateEvidenceAreas: [
+          "biomass-production",
+          "water-response",
+          "pollinator-value",
+          "livestock-forage-use",
+          "tuber-processing",
+          "storage-loss-risk",
+          "rodent-pressure",
+          "mechanical-harvest-limitations",
+          "compost-use"
+        ],
+
+        weakestEvidenceAreas: [
+          "backyard-chicken-serving-amounts",
+          "backyard-flock-intake",
+          "fresh-tuber-inclusion-rate",
+          "fresh-foliage-inclusion-rate",
+          "long-term-poultry-performance",
+          "egg-production-response",
+          "feed-conversion-response",
+          "rabbit-serving-amounts",
+          "home-dried-tuber-meal-inclusion-rate",
+          "small-scale-processing-time",
+          "small-scale-waste-percent",
+          "small-scale-economic-return"
+        ],
+
+        unresolvedQuestions: [
+          "What fresh Jerusalem Artichoke tuber inclusion level can be used consistently in backyard laying-hen diets without reducing complete-feed intake or production?",
+          "How strongly do cultivar and maturity affect tuber nutrient composition and fructan concentration?",
+          "How much tender foliage can be harvested repeatedly without materially reducing final tuber yield?",
+          "What are the most reliable home-storage durations under specific temperature and humidity conditions?",
+          "How much digestive response varies among individual chickens when fresh tubers are introduced?",
+          "Whether fresh foliage provides meaningful nutritional value beyond enrichment when offered in small backyard-flock quantities.",
+          "What dried-tuber-meal inclusion levels are appropriate in professionally balanced laying-hen rations using locally grown material?",
+          "How effectively common backyard processing methods reduce moisture to a reliably storage-safe level?",
+          "What labor time and recovered feed value should be expected per pound under hand-harvest conditions?",
+          "How strongly rodent losses affect in-ground storage across different soil types and climates?",
+          "What rabbit inclusion amounts are appropriate for different ages, production stages, and existing diets?"
+        ],
+
+        nullFieldsRetainedIntentionally: [
+          "estimatedProcessingMinutesPerPound",
+          "estimatedWastePercent",
+          "preciseFreshTuberServingAmount",
+          "preciseFreshFoliageServingAmount",
+          "preciseDriedMealInclusionRate",
+          "preciseRabbitServingAmount",
+          "guaranteedHarvestedShelfLife",
+          "guaranteedInGroundStorageDuration",
+          "guaranteedYieldPerPlant",
+          "guaranteedYieldPerSquareFoot",
+          "guaranteedFeedCostSavings"
+        ],
+
+        interpretationWarnings: [
+          "Planner scores are comparative decision-support values rather than laboratory measurements.",
+          "Poultry-feed suitability does not mean that Jerusalem Artichoke can replace a complete ration.",
+          "Fresh and dried tuber pathways differ substantially in moisture concentration, handling, and ration-formulation risk.",
+          "Agronomic performance varies with cultivar, latitude, photoperiod, soil, moisture, planting density, fertility, harvest timing, and growing season.",
+          "In-ground storage success varies with drainage, soil freezing, winter rainfall, rodents, and harvest accessibility.",
+          "The absence of a documented problem does not establish unlimited feeding safety.",
+          "Research involving other livestock species should not be transferred directly to chickens without qualification.",
+          "Research-ration inclusion rates should not be copied into backyard diets without balancing the entire ration.",
+          "Household-food evidence is stronger than backyard-poultry feeding evidence.",
+          "Persistence and spread are central management considerations and should not be treated as minor disadvantages."
+        ],
+
+        recommendedValidationActions: [
+          "Confirm local invasive-plant guidance before planting.",
+          "Verify that the selected growing site can contain a persistent perennial tuber crop.",
+          "Observe the first winter to determine actual in-ground storage reliability.",
+          "Record harvest weight from a measured production area.",
+          "Record labor required for digging, cleaning, sorting, and processing.",
+          "Introduce fresh tubers gradually and record flock acceptance.",
+          "Monitor manure consistency and litter moisture after feeding.",
+          "Monitor whether supplemental tubers reduce complete-feed intake.",
+          "Track body condition, egg production, and shell quality during repeated use.",
+          "Inspect stored tubers frequently for moisture loss, mold, rot, and rodent damage.",
+          "Use laboratory feed analysis before assigning meaningful dried-meal inclusion rates.",
+          "Consult a qualified poultry nutritionist before using dried tuber meal in a home-formulated ration.",
+          "Retain unknown numeric values as null until defensible evidence becomes available."
+        ],
+
+        directFacts: {
+          researchSupportsHumanFoodUse:
+            true,
+
+          researchSupportsLivestockFeedPotential:
+            true,
+
+          researchSupportsCompletePoultryFeedReplacement:
+            false,
+
+          researchSupportsUniversalFreshServingRate:
+            false,
+
+          researchSupportsUniversalDriedMealInclusionRate:
+            false,
+
+          researchSupportsUniversalRabbitServingRate:
+            false,
+
+          researchSupportsInGroundStorage:
+            true,
+
+          researchSupportsGuaranteedWinterAccess:
+            false,
+
+          researchSupportsAggressivePersistenceRisk:
+            true,
+
+          researchSupportsTuberPropagation:
+            true,
+
+          backyardPoultryEvidenceLimited:
+            true,
+
+          professionallyFormulatedDietRequiredForMeaningfulMealUse:
+            true,
+
+          exactProcessingTimeVerified:
+            false,
+
+          exactWastePercentageVerified:
+            false,
+
+          exactEconomicReturnVerified:
+            false,
+
+          unknownValuesPreservedAsNull:
+            true,
+
+          notes: [
+            "Jerusalem Artichoke is well documented as a persistent perennial tuber crop and household food plant.",
+            "Its use as a livestock-feed ingredient has research support, but backyard-poultry guidance remains limited.",
+            "Fresh tubers are best represented as supplemental produce and enrichment rather than as a complete feed.",
+            "Dried ground tuber material should be treated as a formulated-feed ingredient requiring nutrient balancing.",
+            "Evidence does not support assigning a universal fresh serving amount or dried-meal inclusion rate.",
+            "The crop's strongest planner advantages are perennial resilience, winter harvest potential, in-ground storage, household-food value, and high biomass production.",
+            "Its strongest planner disadvantages are aggressive spread, digging labor, uncertain harvested storage life, rodent exposure, and limited poultry-specific feeding data.",
+            "Numeric processing-time, waste, serving-rate, and economic fields remain null where defensible values were not verified."
+          ]
+        }
+      },
+
+      templateMetadata: {
+        templateName:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        masterTemplateCrop:
+          "barley",
+
+        recordType:
+          "feed-crop",
+
+        recordStatus:
+          "production-ready",
+
+        cropRecordId:
+          "jerusalem-artichoke",
+
+        cropRecordLabel:
+          "Jerusalem Artichoke",
+
+        schemaCompatibility:
+          "barley-v2.0.0",
+
+        schemaSections: [
+          "identity",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality",
+          "templateMetadata"
+        ],
+
+        requiredTopLevelSectionsPresent:
+          true,
+
+        requiredRiskFieldsPresent:
+          true,
+
+        requiredUsePathFieldsPresent:
+          true,
+
+        unknownValuesUseNull:
+          true,
+
+        productionReady:
+          true,
+
+        publicPlannerEligible:
+          true,
+
+        recommendationEngineEligible:
+          true,
+
+        comparisonToolEligible:
+          true,
+
+        plantingCalendarEligible:
+          true,
+
+        feedPlanningEligible:
+          true,
+
+        economicsToolEligible:
+          true,
+
+        storagePlanningEligible:
+          true,
+
+        seasonalRoleEligible:
+          true,
+
+        lastMajorSchemaRebuild:
+          "2026-07",
+
+        rebuildBasis: [
+          "barley-master-schema",
+          "existing-jerusalem-artichoke-record",
+          "agronomic-research",
+          "horticultural-research",
+          "livestock-feed-research",
+          "backyard-poultry-safety-principles"
+        ],
+
+        futureReviewPriorities: [
+          "backyard-poultry-serving-guidance",
+          "fresh-tuber-digestive-tolerance",
+          "fresh-foliage-feed-value",
+          "dried-tuber-meal-formulation",
+          "rabbit-feeding-guidance",
+          "small-scale-yield-validation",
+          "small-scale-labor-measurement",
+          "harvested-storage-duration",
+          "in-ground-storage-losses",
+          "economic-value-per-square-foot"
+        ],
+
+        directFacts: {
+          followsBarleyMasterSchema:
+            true,
+
+          includesAllRequiredPlannerSections:
+            true,
+
+          includesSeasonalRoles:
+            true,
+
+          includesMultipleUsePaths:
+            true,
+
+          includesDataQualityReview:
+            true,
+
+          includesTemplateMetadata:
+            true,
+
+          uncertainNumericValuesLeftNull:
+            true,
+
+          readyForSchemaValidation:
+            true,
+
+          notes: [
+            "This record was rebuilt to match the Barley Version 2.0.0 master structure.",
+            "No new top-level planner section was added beyond the established master schema.",
+            "The record distinguishes direct fresh feeding, processed formulated-feed use, household use, rabbit use, compost use, and propagation use.",
+            "Use-path scores are comparative planner values.",
+            "Unknown numeric values remain null rather than being estimated without adequate support."
+          ]
+        }
       }
-      }
-    
+    }
   },
 
   ///////////////////////////////////////////////
