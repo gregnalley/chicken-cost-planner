@@ -56787,8 +56787,143 @@ const BCP_FEED_CROPS = {
               "Inspect repeatedly during drying and storage."
             ]
           } 
-         ]
+        ]
         },
+
+              seasonalRoles: {
+        spring: [
+          "Waiting for frost danger to pass",
+          "Waiting for soil to warm",
+          "Seedbed preparation",
+          "Direct seeding",
+          "Stand establishment",
+          "Early weed control",
+          "Root development",
+          "Tillering",
+          "Early vegetative growth",
+          "Soil coverage in warm regions",
+          "Bird-protection planning"
+        ],
+
+        summer: [
+          "Rapid warm-season vegetative growth",
+          "Canopy development",
+          "Weed suppression",
+          "Drought-resilient biomass production",
+          "Stem elongation",
+          "Boot stage",
+          "Heading",
+          "Flowering",
+          "Pollination",
+          "Grain filling",
+          "Seasonal privacy screening",
+          "Wild-bird protection",
+          "Water management during reproductive growth"
+        ],
+
+        autumn: [
+          "Late grain filling",
+          "Physiological maturity",
+          "Field dry-down",
+          "Whole-panicle harvest",
+          "Grain harvest",
+          "Protected drying",
+          "Threshing",
+          "Winnowing",
+          "Cleaning",
+          "Whole-head enrichment preparation",
+          "Postharvest gleaning",
+          "Residue management",
+          "Seed saving",
+          "Storage preparation"
+        ],
+
+        winter: [
+          "Stored whole-grain feeding",
+          "Stored cracked-grain feeding",
+          "Ground-grain ration preparation",
+          "Stored whole-head enrichment",
+          "Stored-grain inspection",
+          "Rodent and insect monitoring",
+          "Seed inventory",
+          "Equipment maintenance",
+          "Planting-area planning",
+          "Crop-rotation planning",
+          "Compost and residue management"
+        ],
+
+        plannerSeasonScores: {
+          spring:
+            3,
+
+          summer:
+            5,
+
+          autumn:
+            5,
+
+          winter:
+            4
+        },
+
+        directFacts: {
+          springBarleyAvailable:
+            false,
+
+          winterBarleyAvailable:
+            false,
+
+          facultativeBarleyAvailable:
+            false,
+
+          springPlantingRole:
+            true,
+
+          autumnPlantingRole:
+            false,
+
+          winterLivingCoverPossible:
+            false,
+
+          summerHeatProductionWeak:
+            false,
+
+          storedWinterFeedValue:
+            true,
+
+          yearRoundIndoorSproutProductionPossible:
+            false,
+
+          yearRoundHydroponicFodderProductionPossible:
+            false,
+
+          grainHarvestEndsAnnualCycle:
+            true,
+
+          residueBenefitsContinueAfterHarvest:
+            true,
+
+          notes: [
+            "Grain Sorghum is a frost-sensitive warm-season annual.",
+            "Planting should normally occur only after frost danger has passed and soil is consistently warm.",
+            "Spring activity is primarily establishment-related rather than harvest-oriented.",
+            "The crop performs most strongly during warm summer conditions.",
+            "Summer roles include canopy development, drought-resilient growth, heading, flowering, pollination, and grain filling.",
+            "Adequate moisture during boot stage, heading, flowering, pollination, and grain fill improves usable grain production.",
+            "Autumn provides the primary harvest, drying, threshing, cleaning, gleaning, and storage-preparation period.",
+            "Early frost may end grain development before physiological maturity in short-season climates.",
+            "Dry mature grain provides the strongest winter poultry-feed pathway.",
+            "Stored whole panicles can provide winter enrichment when fully dried and protected.",
+            "Sprouted-grain and hydroponic-fodder pathways are intentionally excluded from this Grain Sorghum record.",
+            "Fresh green Sorghum growth should not be treated as a general poultry-forage pathway.",
+            "Young, stressed, damaged, wilted, frost-affected, or rapidly regrowing Sorghum tissue may present cyanogenic-compound concerns.",
+            "Postharvest roots and stalk residue may continue contributing soil cover, mulch, compost carbon, erosion reduction, and organic matter.",
+            "Residue benefits may continue after the annual grain crop has ended.",
+            "Winter activity centers on stored-feed use, storage monitoring, seed planning, equipment maintenance, and crop-rotation planning."
+          ]
+        }
+      },
+
           
               usePaths: [
         {
