@@ -3331,86 +3331,115 @@
 
 
 
-  function normalizeRegistrationReport(
-    report
+function normalizeRegistrationReport(
+  report
+) {
+
+  const fallback =
+    createFallbackRegistrationReport();
+
+  const reportHasUsableCropCount =
+    report &&
+    typeof report ===
+      "object" &&
+    Number.isInteger(
+      report.totalRecordsReceived
+    ) &&
+    report.totalRecordsReceived >
+      0;
+
+  if (
+    !reportHasUsableCropCount &&
+    fallback.totalRecordsReceived >
+      0
   ) {
 
-    const fallback =
-      createFallbackRegistrationReport();
-
-    if (
-      !report ||
-      typeof report !==
-        "object"
-    ) {
-      return fallback;
-    }
-
-    return {
-
-      registered:
-        report.registered ===
-          true ||
-        fallback.registered,
-
-      totalRecordsReceived:
-        Number.isInteger(
-          report.totalRecordsReceived
-        )
-          ? report.totalRecordsReceived
-          : fallback
-              .totalRecordsReceived,
-
-      uniqueIdCount:
-        Number.isInteger(
-          report.uniqueIdCount
-        )
-          ? report.uniqueIdCount
-          : fallback
-              .uniqueIdCount,
-
-      duplicateIdCount:
-        Number.isInteger(
-          report.duplicateIdCount
-        )
-          ? report.duplicateIdCount
-          : fallback
-              .duplicateIdCount,
-
-      expectedIdsFound:
-        Array.isArray(
-          report.expectedIdsFound
-        )
-          ? report.expectedIdsFound
-          : fallback
-              .expectedIdsFound,
-
-      expectedIdsMissing:
-        Array.isArray(
-          report.expectedIdsMissing
-        )
-          ? report.expectedIdsMissing
-          : fallback
-              .expectedIdsMissing,
-
-      unexpectedIds:
-        Array.isArray(
-          report.unexpectedIds
-        )
-          ? report.unexpectedIds
-          : fallback
-              .unexpectedIds,
-
-      warnings:
-        Array.isArray(
-          report.warnings
-        )
-          ? report.warnings
-          : fallback.warnings
-
-    };
+    return fallback;
 
   }
+
+  if (
+    !report ||
+    typeof report !==
+      "object"
+  ) {
+
+    return fallback;
+
+  }
+
+  return {
+
+    registered:
+      report.registered ===
+        true ||
+      fallback.registered,
+
+    totalRecordsReceived:
+      Number.isInteger(
+        report.totalRecordsReceived
+      ) &&
+      report.totalRecordsReceived >
+        0
+        ? report.totalRecordsReceived
+        : fallback
+            .totalRecordsReceived,
+
+    uniqueIdCount:
+      Number.isInteger(
+        report.uniqueIdCount
+      ) &&
+      report.uniqueIdCount >
+        0
+        ? report.uniqueIdCount
+        : fallback
+            .uniqueIdCount,
+
+    duplicateIdCount:
+      Number.isInteger(
+        report.duplicateIdCount
+      )
+        ? report.duplicateIdCount
+        : fallback
+            .duplicateIdCount,
+
+    expectedIdsFound:
+      Array.isArray(
+        report.expectedIdsFound
+      ) &&
+      report.expectedIdsFound
+        .length >
+        0
+        ? report.expectedIdsFound
+        : fallback
+            .expectedIdsFound,
+
+    expectedIdsMissing:
+      Array.isArray(
+        report.expectedIdsMissing
+      )
+        ? report.expectedIdsMissing
+        : fallback
+            .expectedIdsMissing,
+
+    unexpectedIds:
+      Array.isArray(
+        report.unexpectedIds
+      )
+        ? report.unexpectedIds
+        : fallback
+            .unexpectedIds,
+
+    warnings:
+      Array.isArray(
+        report.warnings
+      )
+        ? report.warnings
+        : fallback.warnings
+
+  };
+
+}
 
 
 
@@ -5188,17 +5217,61 @@
 
 
 
-  function getPublicStatus(
+    function getPublicStatusLabel(
     publicResult
   ) {
 
+    const configuredLabel =
+      normalizeText(
+        publicResult
+          ?.rank
+          ?.statusLabel
+      );
+
+
+    if (
+      configuredLabel &&
+      configuredLabel !==
+        "Unscored"
+    ) {
+      return configuredLabel;
+    }
+
+
+    const score =
+      getPublicSuitabilityScore(
+        publicResult
+      );
+
+    const rank =
+      getPublicRank(
+        publicResult
+      );
+
+
+    if (
+      publicResult?.eligible ===
+        true &&
+      Number.isFinite(
+        score
+      ) &&
+      Number.isFinite(
+        rank
+      )
+    ) {
+
+      return "Ranked";
+
+    }
+
+
     return (
-      publicResult
-        ?.rank
-        ?.status ||
-      publicResult
-        ?.status ||
-      "unscored"
+      formatIdentifier(
+        getPublicStatus(
+          publicResult
+        )
+      ) ||
+      "Unscored"
     );
 
   }
@@ -5225,21 +5298,75 @@
 
 
 
-  function getPublicTierLabel(
+    function getPublicTierLabel(
     publicResult
   ) {
 
-    return (
-      publicResult
-        ?.rank
-        ?.tierLabel ||
-      formatIdentifier(
+    const configuredLabel =
+      normalizeText(
         publicResult
           ?.rank
-          ?.tier
-      ) ||
-      "Unranked"
-    );
+          ?.tierLabel
+      );
+
+
+    if (
+      configuredLabel &&
+      configuredLabel !==
+        "Unranked"
+    ) {
+      return configuredLabel;
+    }
+
+
+    const score =
+      getPublicSuitabilityScore(
+        publicResult
+      );
+
+
+    if (
+      !Number.isFinite(
+        score
+      )
+    ) {
+      return "Unranked";
+    }
+
+
+    if (
+      score >=
+        85
+    ) {
+      return "Exceptional Match";
+    }
+
+
+    if (
+      score >=
+        75
+    ) {
+      return "Strong Match";
+    }
+
+
+    if (
+      score >=
+        65
+    ) {
+      return "Good Match";
+    }
+
+
+    if (
+      score >=
+        50
+    ) {
+      return "Conditional Match";
+    }
+
+
+    return "Low Priority";
 
   }
 
@@ -5707,33 +5834,9 @@
     }
 
 
-    const status =
-      getPublicStatus(
-        publicResult
-      );
-
-
-    const excludedStatuses = [
-
-      "rejected",
-
-      "no-practical-use-path",
-
-      "not-recommended",
-
-      "insufficient-data",
-
-      "failed",
-
-      "unscored"
-
-    ];
-
-
     if (
-      excludedStatuses.includes(
-        status
-      )
+      publicResult.eligible ===
+        false
     ) {
       return false;
     }
@@ -5748,18 +5851,20 @@
     if (
       !Number.isFinite(
         score
-      ) ||
-      score <=
-        0
+      )
     ) {
       return false;
     }
 
 
-    return Boolean(
-      getPublicBestUsePath(
+    const rank =
+      getPublicRank(
         publicResult
-      )
+      );
+
+
+    return Number.isFinite(
+      rank
     );
 
   }
