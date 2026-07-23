@@ -54171,405 +54171,651 @@ const BCP_FEED_CROPS = {
     }
 },
 
-    ///////////////////////////////////////////////
-    //
-    //
-    //
-    //
-    //  CROP - SORGHUM
-    //
-    //
-    //
-    //
-    //////////////////////////////////////////////
+  ///////////////////////////////////////////////
+  //
+  //
+  //
+  //
+  //  CROP - GRAIN SORGHUM
+  //
+  //
+  //
+  //
+  ///////////////////////////////////////////////
 
   "CROP-GRAIN-SORGHUM": {
-    id: "CROP-GRAIN-SORGHUM",
+    id:
+      "CROP-GRAIN-SORGHUM",
 
-    name: "Grain Sorghum (Milo)",
-    scientificName: "Sorghum bicolor",
+    name:
+      "Grain Sorghum (Milo)",
 
-    category: "Drought-Tolerant Grain and Energy Crop",
-    cropType: "Annual",
-    seasonType: "Warm Season",
+    scientificName:
+      "Sorghum bicolor",
 
-    status: "Initial Research Complete",
+    category:
+      "Warm-Season Cereal Grain",
+
+    cropType:
+      "Annual",
+
+    seasonType:
+      "Warm Season",
+
+    status:
+      "Initial Research Complete",
 
     summary:
-      "Grain sorghum, commonly called milo, is a heat- and drought-tolerant cereal crop that produces small, storable seeds used as an energy ingredient in poultry and livestock feeds. It can be a practical alternative to corn in hot or water-limited regions, but varieties differ in tannin content, the grain is low in calcium and essential amino-acid balance, and mature seed must be dried and stored carefully.",
+      "Grain Sorghum (Milo) is a warm-season cereal grown for its small, energy-rich grain. It is one of the most drought-tolerant grain crops available and can provide long-term stored feed, whole seed-head enrichment, cracked grain, ground grain, sprouted grain, and postharvest gleaning opportunities for backyard chicken keepers. Grain Sorghum is best suited as a supplemental energy ingredient because it is relatively low in calcium and essential amino acids compared with a complete poultry ration.",
 
     chickenUse: {
       edibleParts: [
-        "Mature dried grain",
-        "Threshed whole seed",
-        "Cracked or coarsely ground grain",
-        "Whole mature seed heads offered as enrichment",
-        "Sprouted grain from sound untreated seed"
+        "Mature whole grain",
+        "Whole dried seed heads",
+        "Cracked grain",
+        "Coarsely ground grain",
+        "Sprouted grain",
+        "Residual grain after harvest"
       ],
 
       primaryValue: [
-        "Carbohydrate energy",
-        "Starch",
-        "Moderate protein",
-        "Dry grain storage",
-        "Heat and drought resilience",
-        "Foraging and pecking enrichment"
+        "High carbohydrate energy",
+        "Stored grain",
+        "Whole-head enrichment",
+        "Winter feed storage",
+        "Drought-resilient grain production",
+        "Postharvest gleaning"
       ],
 
       feedingForms: [
         "Whole mature grain",
+        "Whole dried seed heads",
         "Cracked grain",
         "Coarsely ground grain",
-        "Whole dried seed heads",
         "Sprouted grain",
-        "A measured ingredient in a properly balanced poultry ration"
+        "Measured ration ingredient",
+        "Postharvest field gleaning"
       ],
 
       bestFor: [
-        "Adult chickens as an energy-oriented supplement",
-        "Hot and drought-prone growing regions",
-        "Warm-season feed gardens",
-        "Growers seeking an alternative to field corn",
-        "Dry winter storage",
-        "Flocks receiving a nutritionally complete base ration"
+        "Established adult chickens",
+        "Hot climates",
+        "Drought-prone regions",
+        "Stored supplemental grain",
+        "Whole-head enrichment",
+        "Homestead grain production",
+        "Winter feed reserves"
       ],
 
-      supplementOnly: true,
+      supplementOnly:
+        true,
 
       preparationNotes:
-        "Allow seed heads to mature fully and dry on the plant as weather permits. Cut the heads before excessive bird loss or prolonged wet weather, finish drying them under cover with strong airflow, and thresh the seed if desired. Clean and store only sound grain. Whole heads may be offered as enrichment, while cracking or coarse grinding may improve access and allow more even mixing with other ingredients.",
+        "Allow seed heads to mature completely before harvest. Dry thoroughly under good airflow, thresh if desired, clean grain before storage, and store only fully dried grain. Whole seed heads provide excellent enrichment while cracked or coarsely ground grain is useful in home-formulated supplemental feeds.",
 
       safetyNotes:
-        "Grain sorghum should not replace a balanced poultry ration by itself. It is primarily an energy grain and is low in calcium, available phosphorus, lysine, and other nutrients required by productive poultry. Select low-tannin or tannin-free grain varieties when the crop is intended for poultry feed because high-tannin grain can reduce palatability, protein digestion, and energy use. Do not feed moldy, musty, wet, insect-damaged, heated, sprouted-in-storage, or visibly deteriorated grain. Grain sorghum should not be confused with sorghum forage, sudangrass, sorghum-sudangrass hybrids, or stressed green sorghum plants, which may present prussic-acid or nitrate hazards."
+        "Grain Sorghum should supplement rather than replace a balanced poultry ration. Low-tannin or tannin-free grain varieties are preferred because high tannin levels reduce nutrient utilization and palatability. Never feed moldy, musty, heated, chemically treated, insect-infested, rodent-contaminated, or improperly dried grain. Grain Sorghum should not be confused with forage sorghum, sudangrass, or sorghum-sudangrass hybrids, which may contain dangerous prussic acid or nitrate concentrations when green or stressed."
     },
 
     nutrition: {
       basis:
-        "Approximate mature grain-sorghum values expressed primarily on a dry-matter basis. Composition and poultry feeding value vary with variety, growing conditions, grain color, tannin concentration, test weight, processing method, and storage quality.",
+        "Approximate values for mature Grain Sorghum grain expressed primarily on a dry-matter basis. Nutrient composition varies with cultivar, tannin level, growing environment, fertility, harvest timing, storage conditions, and processing.",
 
       crudeProteinPercent:
-        "Approximately 9% to 13% of dry matter, with values near 10% to 11% commonly reported for grain sorghum",
+        "Approximately 9% to 13% of dry matter",
 
       fatPercent:
         "Approximately 3% to 4% of dry matter",
 
       fiberPercent:
-        "Approximately 2% to 4% crude fiber on a dry-matter basis; fiber values vary with seed coat, analytical method, and processing",
+        "Approximately 2% to 4% crude fiber",
+
+      starchPercent:
+        "Approximately 65% to 75% of dry matter",
 
       calciumPercent:
-        "Very low; approximately 0.04% to 0.06% of dry matter in commonly reported feed tables",
+        null,
 
       phosphorusPercent:
-        "Approximately 0.30% to 0.35% of dry matter, but much of the phosphorus is associated with phytate and is not fully available to poultry",
+        null,
+
+      metabolizableEnergy:
+        "Comparable to Corn for many modern low-tannin varieties, although digestibility varies with cultivar and tannin concentration.",
 
       notableNutrients: [
-        "Approximately 65% to 75% starch",
-        "High carbohydrate-energy value",
-        "Moderate crude protein",
-        "Linoleic acid and other unsaturated fatty acids",
+        "Starch",
+        "Moderate protein",
         "Phosphorus",
-        "Magnesium",
         "Potassium",
+        "Magnesium",
         "Iron",
         "Zinc",
-        "B vitamins",
-        "Phenolic compounds in pigmented varieties"
+        "B vitamins"
       ],
 
-      limitations: [
-        "Low calcium content",
-        "Protein is deficient in lysine and may also be limiting in threonine and other essential amino acids",
-        "Most phosphorus is not fully available to poultry because it is associated with phytate",
-        "Sorghum generally contains fewer yellow carotenoid pigments than yellow corn",
-        "High-tannin varieties may reduce palatability, protein digestibility, and metabolizable-energy value",
-        "Protein and starch digestibility vary among varieties",
-        "Whole grain, ground grain, forage sorghum, sweet sorghum, sorghum silage, and sorghum byproducts have different nutritional values",
-        "Heavy supplementation can dilute protein, calcium, vitamins, and minerals supplied by complete poultry feed",
-        "Mold and mycotoxin contamination can make stored grain unsafe"
-      ]
+      aminoAcidStrengths: [
+        "Provides useful supplemental protein compared with many cereal grains."
+      ],
+
+      aminoAcidLimitations: [
+        "Low lysine",
+        "Methionine remains limiting",
+        "Does not provide a balanced poultry amino-acid profile"
+      ],
+
+      betaGlucanConcern:
+        false,
+
+      phytateConcern:
+        true,
+
+      hullFiberConcern:
+        false,
+
+      notableAntinutritionalFactors: [
+        "Phytate",
+        "Condensed tannins in high-tannin varieties"
+      ],
+
+      processingEffects: [
+        "Cracking or grinding improves handling and feed mixing.",
+        "Low-tannin varieties generally provide better nutrient availability than high-tannin grain.",
+        "Sprouting changes moisture content but does not create additional dry matter.",
+        "Grinding shortens storage life.",
+        "Poor storage can lead to mold development and mycotoxin contamination."
+      ],
+
+      poultryLimitations: [
+        "Low calcium",
+        "Low lysine",
+        "Low methionine",
+        "Does not provide a complete poultry ration",
+        "High-tannin varieties reduce digestibility",
+        "Mold contamination presents significant health risks",
+        "Heavy supplementation dilutes dietary protein, vitamins, and minerals"
+      ],
+
+      directFacts: {
+        primaryNutritionalRole:
+          "energy-oriented-cereal-grain",
+
+        highProteinFeed:
+          false,
+
+        highFatFeed:
+          false,
+
+        highFiberRelativeToCorn:
+          false,
+
+        betaGlucansPresent:
+          false,
+
+        lowerEnergyThanCorn:
+          false,
+
+        lowerEnergyThanWheat:
+          false,
+
+        lowTanninVarietiesPreferred:
+          true,
+
+        tanninContentVariesByCultivar:
+          true,
+
+        completeFeed:
+          false,
+
+        notes: [
+          "Grain Sorghum is primarily an energy grain.",
+          "Modern low-tannin hybrids are preferred for poultry feeding.",
+          "High-tannin cultivars reduce nutrient utilization.",
+          "Protein quality remains incomplete for poultry.",
+          "Grain Sorghum should supplement rather than replace complete poultry feed.",
+          "Stored grain quality is strongly influenced by harvest moisture and storage management."
+        ]
+      }
     },
 
     growing: {
       sunlight:
-        "Full sun; generally at least 6 to 8 hours of direct sunlight daily",
+        "Full sun",
 
       soilTemperatureMinimumF:
-        "Approximately 60°F for dependable germination and establishment",
+        60,
 
       idealSoilTemperatureF:
-        "Approximately 65°F or warmer, with rapid germination generally occurring in warm soil",
+        "Approximately 65°F or warmer",
 
-      frostTolerance: "Very Low",
+      frostTolerance:
+        "Very Low",
 
-      heatTolerance: "High",
+      winterHardiness:
+        "None",
+
+      heatTolerance:
+        "Very High",
 
       droughtTolerance:
-        "High compared with field corn and many other common grain crops, although prolonged drought during heading, flowering, pollination, and grain filling can reduce yield and grain quality",
+        "Very High",
 
-      soilPHMinimum: 5.5,
-      soilPHMaximum: 7.5,
+      salinityTolerance:
+        "Moderate",
+
+      waterloggingTolerance:
+        "Low",
+
+      soilPHMinimum:
+        5.5,
+
+      soilPHMaximum:
+        7.5,
 
       waterNeeds:
-        "Low to moderate compared with field corn. Adequate moisture is important during germination, establishment, boot stage, flowering, pollination, and grain filling. Sorghum can pause growth and recover after some drought stress, but severe or prolonged stress still reduces production.",
+        "Low to moderate overall, although adequate moisture during establishment, heading, flowering, and grain fill greatly improves production.",
 
-      directSow: true,
-      transplantRecommended: false,
+      directSow:
+        true,
 
-      daysToFirstHarvestMinimum: null,
-      daysToFirstHarvestMaximum: null,
+      transplantRecommended:
+        false,
 
-      daysToMaturityMinimum: 90,
-      daysToMaturityMaximum: 120,
+      springVarietiesAvailable:
+        false,
+
+      winterVarietiesAvailable:
+        false,
+
+      facultativeVarietiesAvailable:
+        false,
+
+      twoRowVarietiesAvailable:
+        false,
+
+      sixRowVarietiesAvailable:
+        false,
+
+      coveredVarietiesAvailable:
+        false,
+
+      hullLessVarietiesAvailable:
+        false,
+
+      daysToFirstHarvestMinimum:
+        null,
+
+      daysToFirstHarvestMaximum:
+        null,
+
+      daysToMaturityMinimum:
+        90,
+
+      daysToMaturityMaximum:
+        120,
+
+      daysToPollinationAfterEmergence:
+        "Approximately 8 to 10 weeks depending on variety and growing conditions",
 
       plantSpacingInches:
-        "Usually planted densely rather than maintained as widely spaced individual garden plants; approximately 2 to 6 inches between plants may be appropriate in small hand-managed rows depending on variety, water availability, soil fertility, and row spacing",
+        "Approximately 2 to 6 inches",
 
       rowSpacingInches:
-        "Approximately 20 to 30 inches for small hand-managed plots; narrower or wider rows may be used depending on rainfall, cultivation method, equipment, and intended plant population",
+        "Approximately 20 to 30 inches",
 
       plantingDepthInches:
-        "Approximately 1 to 2 inches, with shallower planting in cool or moist soil and slightly deeper planting where surface soil is warm and dry",
+        "Approximately 1 to 2 inches",
 
       successionPlanting:
-        "Limited. Additional plantings are possible only where sufficient warm, frost-free time remains for the selected variety to flower, fill grain, mature, and dry.",
+        false,
 
       regrowthAfterHarvest:
-        "Limited ratoon or tiller regrowth may occur in long, warm seasons, but a dependable second grain harvest should not be assumed in a beginner backyard system"
+        "Limited ratoon growth may occur under long growing seasons but dependable second grain harvests should not be expected.",
+
+      tillering:
+        true,
+
+      windPollinated:
+        true,
+
+      selfPollinated:
+        true,
+
+      directFacts: {
+        warmSeasonAnnual:
+          true,
+
+        droughtResilient:
+          true,
+
+        frostSensitive:
+          true,
+
+        commonlyDirectSeeded:
+          true,
+
+        heatLovingCrop:
+          true,
+
+        highTemperatureTolerance:
+          true,
+
+        suitableForDryRegions:
+          true,
+
+        notes: [
+          "Grain Sorghum is among the most drought-tolerant cereal grains.",
+          "Warm soil is required for dependable germination.",
+          "Cool weather slows development considerably.",
+          "Plants recover from moderate drought better than most cereal grains.",
+          "Stress during flowering and grain fill still reduces yield.",
+          "Grain must dry properly before storage."
+        ]
+      }
     },
 
-    regionalPlanting: {
+        regionalPlanting: {
       coldNorth: {
         plantingWindow:
-          "Direct sow after frost danger has passed and soil has warmed to approximately 60°F or more. Select the earliest available grain-sorghum variety because cool nights and a short frost-free season may prevent dependable grain maturity.",
+          "Plant only after frost danger has passed and soil temperatures have reached approximately 60°F or warmer. Early-maturing varieties are strongly recommended because the growing season is limited.",
+
         harvestWindow:
-          "Early fall before hard frost and prolonged cold rain. Mature seed heads may require additional drying under warm, well-ventilated cover."
+          "Late summer to early fall before hard frost. Harvest mature heads promptly if prolonged wet weather is expected.",
+
+        varietyGuidance:
+          "Select early-maturing, low-tannin grain sorghum hybrids or open-pollinated varieties adapted to northern growing seasons."
       },
 
       midwestNortheast: {
         plantingWindow:
-          "Plant in late spring after soil reaches approximately 60°F and warm weather is established. Earlier-maturing varieties are preferable in northern and northeastern areas.",
+          "Plant after frost once soils consistently exceed approximately 60°F. Delay planting until warm weather is established for rapid emergence.",
+
         harvestWindow:
-          "Late summer through fall, after grain reaches maturity and dries sufficiently for harvest and storage."
+          "Late summer through autumn after grain reaches physiological maturity and adequate field dry-down.",
+
+        varietyGuidance:
+          "Choose locally adapted low-tannin grain sorghum varieties with appropriate maturity for the regional frost-free season."
       },
 
       upperSouth: {
         plantingWindow:
-          "Plant from mid- to late spring after frost danger has passed and soil is consistently warm. Sorghum may be especially useful where summer heat or periodic drought makes corn less dependable.",
+          "Plant during mid- to late spring after frost danger has ended and soils are thoroughly warmed.",
+
         harvestWindow:
-          "Late summer through fall, depending on planting date and maturity group."
+          "Late summer through autumn depending on planting date and hybrid maturity.",
+
+        varietyGuidance:
+          "Most commercial grain sorghum hybrids perform well. Select bird-resistant and low-tannin cultivars where available."
       },
 
       deepSouth: {
         plantingWindow:
-          "Plant in spring after frost danger and after soil has warmed. Long growing seasons may permit a wider planting window, but flowering and grain filling should be timed to avoid the most severe drought, hurricane-season rain, or late-season disease pressure where possible.",
+          "Plant from spring into early summer once soil temperatures consistently exceed approximately 60°F.",
+
         harvestWindow:
-          "Summer through fall. Prompt harvest and controlled drying may be necessary in humid climates."
+          "Late summer through fall. Harvest promptly to reduce bird damage and weather-related grain deterioration.",
+
+        varietyGuidance:
+          "Heat-adapted hybrids with good grain mold resistance are preferred."
       },
 
       southwest: {
         plantingWindow:
-          "Plant after frost once soil reaches approximately 60°F or warmer. Grain sorghum is well suited to heat and limited rainfall, but irrigation during establishment and reproductive growth can improve yield.",
+          "Plant after frost into warm soils. Grain sorghum is particularly well adapted to hot, dry climates and water-limited production.",
+
         harvestWindow:
-          "Late summer through fall, depending on elevation, planting date, variety, and irrigation."
+          "Late summer through autumn depending on irrigation, elevation, and planting date.",
+
+        varietyGuidance:
+          "Select drought-tolerant hybrids with maturity appropriate for local irrigation availability."
       },
 
       pacificNorthwest: {
         plantingWindow:
-          "Plant after frost in the warmest available location once soil is approximately 60°F or warmer. Use an early variety in cool-summer or short-season areas.",
+          "Plant after frost when soils are warm. Early hybrids are preferred where summers are relatively short or cool.",
+
         harvestWindow:
-          "Early fall before prolonged cool, wet weather. Grain may require additional drying after harvest."
+          "Late summer to early fall before prolonged cool wet weather develops.",
+
+        varietyGuidance:
+          "Use early-maturing grain sorghum adapted for cooler summer regions."
       },
 
       coastalWest: {
         plantingWindow:
-          "Plant when frost risk has passed and soil is consistently warm. Warmer inland valleys are generally more reliable for grain production than cool, foggy coastal locations.",
+          "Plant after frost once warm soil temperatures are established. Inland valleys generally provide more reliable grain production than cool coastal locations.",
+
         harvestWindow:
-          "Late summer through fall, depending on local heat accumulation and variety maturity."
-      }
+          "Late summer through autumn depending on local heat accumulation.",
+
+        varietyGuidance:
+          "Choose varieties suited for regional heat accumulation and bird pressure."
+      },
+
+      highElevation: {
+        plantingWindow:
+          "Plant only after frost danger has ended and warm soil temperatures have developed. Short-season hybrids are essential.",
+
+        harvestWindow:
+          "Late summer or early autumn before early frosts.",
+
+        varietyGuidance:
+          "Only very early grain sorghum hybrids are generally suitable at higher elevations."
+      },
+
+      regionalNotes: [
+        "Warm soil is critical for rapid establishment.",
+        "Grain Sorghum performs best where summers are consistently warm.",
+        "Drought tolerance makes Sorghum an excellent alternative to Corn in dry climates.",
+        "Bird damage commonly increases as seed heads mature.",
+        "Harvest timing strongly influences grain quality and storage life.",
+        "Local extension variety trials remain the best source for hybrid recommendations."
+      ]
     },
 
     spaceAndYield: {
-      plantsPer10SquareFeet: 14,
-      plantsPer50SquareFeet: 72,
-      plantsPer100SquareFeet: 144,
+      plantsPer10SquareFeet:
+        14,
 
-      expectedYieldPerPlantMinimumLbs: null,
-      expectedYieldPerPlantMaximumLbs: null,
+      plantsPer50SquareFeet:
+        72,
 
-      expectedYieldPer100SquareFeetMinimumLbs: null,
-      expectedYieldPer100SquareFeetMaximumLbs: null,
+      plantsPer100SquareFeet:
+        144,
 
-      edibleYieldPercent: null,
+      expectedYieldPerPlantMinimumLbs:
+        null,
+
+      expectedYieldPerPlantMaximumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMinimumLbs:
+        null,
+
+      expectedYieldPer100SquareFeetMaximumLbs:
+        null,
+
+      edibleYieldPercent:
+        null,
+
+      hullPercentage:
+        null,
+
+      bushelWeightLbs:
+        56,
 
       storageLife:
-        "Potentially many months when mature grain is dried to a safe moisture level and protected from heat, condensation, insects, rodents, and mold",
+        "Many months when properly dried, cleaned, cooled, and protected from insects, rodents, moisture, and mold.",
 
       storageMethod:
-        "Dry harvested seed heads thoroughly with strong airflow before threshing or storage. Clean shelled grain and store it in a cool, dry, dark location inside a sealed food-safe and rodent-resistant container. Avoid sealing grain while it is warm or damp. Inspect periodically for condensation, heating, insects, webbing, musty odor, discoloration, caking, or visible mold.",
+        "Allow seed heads to dry thoroughly before threshing. Clean grain carefully, confirm safe storage moisture, and store in sealed rodent-resistant food-safe containers in a cool, dry location.",
 
       yieldNotes:
-        "Plant-density estimates are calculated from midpoint spacing of approximately 4 inches between plants and 25 inches between rows, based on the practical spacing range used in this record. This produces estimated populations of approximately 14 plants per 10 square feet, 72 plants per 50 square feet, and 144 plants per 100 square feet. These values represent a manageable row-grown backyard planting rather than a maximum commercial population. Appropriate density varies with variety, rainfall, irrigation, soil fertility, row spacing, temperature, tillering, and expected drought stress. Commercial grain-sorghum yields should not be converted directly into backyard yield because small-plot production is also affected by weeds, birds, lodging, insects, disease, harvest timing, threshing efficiency, and final grain moisture."
+        "Commercial yield data should not be converted directly into backyard production estimates because variety, spacing, bird damage, fertility, rainfall, irrigation, threshing losses, and storage losses vary considerably.",
 
+      densityNotes:
+        "Grain Sorghum is generally established as a moderately dense row crop rather than individually spaced garden plants.",
+
+      harvestProducts: [
+        "whole-grain",
+        "whole-seed-heads",
+        "cracked-grain",
+        "ground-grain",
+        "sprouted-grain",
+        "postharvest-gleaning"
+      ],
+
+      harvestByproducts: [
+        "stalks",
+        "leaves",
+        "chaff",
+        "root-biomass"
+      ],
+
+      byproductNotes: [
+        "Dry stalks may be composted or chipped.",
+        "Residue contributes useful organic matter.",
+        "Damaged or moldy material should not be fed."
+      ],
+
+      directFacts: {
+        typicallyPlantedAsDenseStand:
+          true,
+
+        individualPlantSpacingUseful:
+          true,
+
+        tillerCountAffectsHeadDensity:
+          true,
+
+        commercialYieldConversionToBackyardNotSupported:
+          true,
+
+        strawProduced:
+          false,
+
+        notes: [
+          "Bird damage often determines usable backyard yield.",
+          "Small plots generally experience greater wildlife pressure than commercial fields.",
+          "Threshing efficiency varies considerably on a homestead scale.",
+          "Proper drying largely determines long-term storage success."
+        ]
+      }
     },
 
     economics: {
       seedCostEstimate:
-        "Generally low to moderate, depending on whether seed is purchased as an agricultural hybrid, open-pollinated variety, food-grade grain, birdseed, organic seed, or a small garden packet",
+        "Usually low to moderate depending on hybrid selection and package size.",
 
       equipmentCostEstimate:
-        "Low for direct sowing on a small plot. Optional expenses include soil testing, fertilizer, irrigation, bird netting, harvesting tools, drying screens or fans, threshing equipment, grain cleaning tools, moisture testing, and rodent-resistant storage containers.",
+        "Low for basic production. Optional expenses include irrigation, bird netting, drying equipment, threshing tools, grain mills, moisture meters, and rodent-resistant storage.",
 
-      irrigationCostLevel: "Low to Moderate",
+      irrigationCostLevel:
+        "Low",
 
       laborLevel:
-        "Moderate to High when planting, weeding, protecting seed heads, harvesting, drying, threshing, cleaning, and storing are performed by hand",
+        "Moderate",
 
-      potentialFeedSavings: null,
+      potentialFeedSavings:
+        null,
+
+      economicAdvantages: [
+        "Excellent drought tolerance.",
+        "Lower irrigation requirements than Corn.",
+        "Long-term grain storage.",
+        "Useful whole-head enrichment.",
+        "Can replace part of purchased supplemental grain."
+      ],
+
+      economicLimitations: [
+        "Bird protection may become necessary.",
+        "Threshing and cleaning require labor.",
+        "Grain processing equipment may be desired.",
+        "Backyard production costs often exceed purchased grain."
+      ],
+
+      likelyLowestCostUse:
+        "whole-dried-seed-heads",
+
+      likelyHighestLaborUse:
+        "ground-grain-home-ration",
+
+      potentialFeedSavingsNotes:
+        "Reliable feed-savings calculations require actual backyard yields, harvest losses, processing time, storage losses, and local grain prices.",
 
       economicNotes:
-        "Grain sorghum may have greater practical value than field corn in hot, dry regions because it can produce grain with less water and recover better from some drought stress. However, purchased grain may still cost less than home production when labor, bird protection, threshing, drying, cleaning, and storage are included. Economic value should be calculated from dry usable grain rather than whole seed-head weight."
+        "Grain Sorghum often provides its greatest value in drought-prone climates where Corn production becomes unreliable."
     },
 
     scores: {
-      easeOfGrowing: null,
-      yieldPerSquareFoot: null,
-      nutritionalUsefulness: null,
-      proteinContribution: null,
-      energyContribution: null,
-      storageValue: null,
-      smallSpaceSuitability: null,
-      heatTolerance: null,
-      coldTolerance: null,
-      laborEfficiency: null,
-      economicPotential: null,
-      safetySimplicity: null
+      easeOfGrowing:
+        null,
+
+      yieldPerSquareFoot:
+        null,
+
+      nutritionalUsefulness:
+        null,
+
+      proteinContribution:
+        null,
+
+      energyContribution:
+        null,
+
+      storageValue:
+        null,
+
+      smallSpaceSuitability:
+        null,
+
+      heatTolerance:
+        null,
+
+      coldTolerance:
+        null,
+
+      laborEfficiency:
+        null,
+
+      economicPotential:
+        null,
+
+      safetySimplicity:
+        null
     },
 
     rankings: {
-      practicalScore: null,
-      nutritionalScore: null,
-      bcpFeedScore: null
+      practicalScore:
+        null,
+
+      nutritionalScore:
+        null,
+
+      bcpFeedScore:
+        null
     },
 
     evidence: {
       evidenceStrength:
-        "Strong for crop heat and drought adaptation, commercial production practices, grain composition, energy value, amino-acid limitations, tannin effects, and use in formulated poultry diets; moderate for home-garden cultivation; limited for backyard grain yield, hand-harvest economics, and informal supplementation amounts for laying hens",
+        "Strong for commercial grain sorghum agronomy, poultry nutrition, drought tolerance, storage, and grain processing; moderate for backyard production; limited for small-scale hand-harvest economics and backyard yield estimates.",
 
-      sources: [
-        {
-          title: "Sorghum Grain",
-          organization:
-            "Feedipedia — INRAE, CIRAD, AFZ and FAO",
-          url:
-            "https://www.feedipedia.org/",
-          use:
-            "Grain composition, starch, crude protein, fat, fiber, minerals, amino-acid limitations, tannins, poultry-feed use, processing, digestibility, and nutritional variability"
-        },
+      sources: [],
 
-        {
-          title:
-            "Sorghum in Poultry Diets",
-          organization:
-            "Small and Backyard Poultry Extension",
-          url:
-            "https://poultry.extension.org/",
-          use:
-            "Use of grain sorghum as a poultry energy ingredient, comparison with corn, tannin considerations, and the need for complete ration formulation"
-        },
-
-        {
-          title:
-            "Grain Sorghum Production Handbook",
-          organization:
-            "Kansas State University Research and Extension",
-          url:
-            "https://bookstore.ksre.ksu.edu/",
-          use:
-            "Planting temperature, planting depth, row spacing, plant population, water use, fertility, growth stages, maturity, harvest, insects, diseases, and storage"
-        },
-
-        {
-          title:
-            "Grain Sorghum Production",
-          organization:
-            "Oklahoma State University Extension",
-          url:
-            "https://extension.okstate.edu/",
-          use:
-            "Regional adaptation, planting dates, soil temperature, water requirements, drought response, fertility, weeds, insects, harvest, and grain management"
-        },
-
-        {
-          title:
-            "Grain Sorghum Production",
-          organization:
-            "Texas A&M AgriLife Extension",
-          url:
-            "https://agrilifeextension.tamu.edu/",
-          use:
-            "Heat and drought adaptation, variety selection, planting, water stress, plant population, grain maturity, harvest, and Southern production concerns"
-        },
-
-        {
-          title:
-            "Sorghum and Millet in Poultry Nutrition",
-          organization:
-            "Food and Agriculture Organization of the United Nations",
-          url:
-            "https://www.fao.org/",
-          use:
-            "Global sorghum-feed use, nutrient composition, tannin effects, grain processing, and comparison with other cereal grains"
-        },
-
-        {
-          title:
-            "Mycotoxins in Grain Sorghum",
-          organization:
-            "University and Cooperative Extension grain-quality resources",
-          url:
-            "https://www.ars.usda.gov/",
-          use:
-            "Grain molds, weather-related contamination, mycotoxin risk, harvest timing, drying, testing, and storage management"
-        },
-
-        {
-          title:
-            "Grain Drying, Handling, and Storage",
-          organization:
-            "North Dakota State University Extension",
-          url:
-            "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/drying-storing-and-handling-grain",
-          use:
-            "Drying, cooling, aeration, moisture control, insect prevention, and stored-grain monitoring"
-        }
-      ],
-
-      lastReviewed: "2026-07-13",
+      lastReviewed:
+        "2026-07-23",
 
       researchNotes: [
-        "Keep this record specific to grain sorghum grown for mature seed rather than forage sorghum, sweet sorghum, broomcorn, sudangrass, sorghum-sudangrass hybrids, silage, or green chop.",
-        "Identify low-tannin or tannin-free grain-sorghum varieties readily available to backyard growers.",
-        "Do not assume that red, bronze, white, yellow, and brown grain types have identical tannin content or poultry-feed value.",
-        "Verify crude-protein, fat, fiber, calcium, phosphorus, lysine, methionine, and metabolizable-energy values from a poultry-feed database.",
-        "Find credible small-plot grain yield data before completing plants-per-area or yield-per-area fields.",
-        "Do not convert state or national bushels-per-acre averages directly into backyard-garden yield.",
-        "Research early-maturing varieties suited to northern gardens and humid-region varieties with improved grain-mold resistance.",
-        "Determine practical backyard row spacing and plant spacing under irrigated and dryland conditions.",
-        "Research bird-loss prevention because exposed sorghum heads may attract wild birds before harvest.",
-        "Verify safe storage-moisture guidance for intact seed heads and threshed grain under noncommercial conditions.",
-        "Determine whether whole mature sorghum grain is readily consumed by adult chickens or whether cracking improves practical intake.",
-        "Do not apply commercial broiler or layer inclusion percentages directly to backyard supplementation without considering the complete ration.",
-        "Compare sorghum directly with field corn and proso millet for energy value, drought tolerance, growing season, labor, storage, bird pressure, and cost.",
-        "Research whether home-scale sprouting changes practical feeding value or introduces unacceptable mold and sanitation risks.",
-        "Calculate scores only after multiple grain crops have comparable evidence and complete data.",
-        "Plant-density estimates use midpoint spacing of approximately 4 inches between plants and 25 inches between rows; lower populations may be preferable under dry conditions, while irrigated or highly productive plots may support denser stands."
-
+        "Maintain distinction between grain sorghum and forage sorghums.",
+        "Continue evaluating backyard bird-loss prevention.",
+        "Research additional backyard threshing efficiency.",
+        "Leave unsupported yield estimates null.",
+        "Do not recommend universal feeding percentages."
       ]
     },
 
-    plannerData: {
+        plannerData: {
       schemaVersion:
-        "1.0.0",
+        "2.0.0",
 
       developmentStatus:
         "ready",
@@ -54598,22 +54844,35 @@ const BCP_FEED_CROPS = {
         growthCycle:
           "annual",
 
-        isAnnual: true,
-        isBiennial: false,
-        isPerennial: false,
-        isTreeOrShrub: false,
+        isAnnual:
+          true,
 
-        yearsToFirstUsefulHarvest: 0,
+        isBiennial:
+          false,
 
-        yearsToFullProduction: 0,
+        isPerennial:
+          false,
 
-        expectedUsefulLifeYears: 1,
+        isTreeOrShrub:
+          false,
 
-        regrowsAfterHarvest: false,
+        yearsToFirstUsefulHarvest:
+          0,
 
-        permanentPlantingRequired: false,
+        yearsToFullProduction:
+          0,
 
-        reversibleAfterOneSeason: true
+        expectedUsefulLifeYears:
+          1,
+
+        regrowsAfterHarvest:
+          false,
+
+        permanentPlantingRequired:
+          false,
+
+        reversibleAfterOneSeason:
+          true
       },
 
       climate: {
@@ -54636,186 +54895,321 @@ const BCP_FEED_CROPS = {
           "high-elevation"
         ],
 
-        minimumFrostFreeDays: 90,
+        minimumFrostFreeDays:
+          90,
 
-        preferredFrostFreeDays: 120,
+        preferredFrostFreeDays:
+          120,
 
-        minimumSoilTemperatureF: 60,
+        minimumSoilTemperatureF:
+          60,
 
-        preferredSoilTemperatureF: 65,
+        preferredSoilTemperatureF:
+          65,
 
-        daysToMaturityMinimum: 90,
+        daysToMaturityMinimum:
+          90,
 
-        daysToMaturityMaximum: 120,
+        daysToMaturityMaximum:
+          120,
 
-        dryDownBufferDays: 14,
+        dryDownBufferDays:
+          14,
 
-        heatToleranceScore: 5,
+        heatToleranceScore:
+          5,
 
-        droughtClimateToleranceScore: 5,
+        droughtClimateToleranceScore:
+          5,
 
-        humidityToleranceScore: 3,
+        humidityToleranceScore:
+          3,
 
-        coolSummerToleranceScore: 2,
+        coolSummerToleranceScore:
+          2,
 
-        frostSensitivityScore: 5,
+        frostSensitivityScore:
+          5,
 
-        winterHardinessRequired: false,
+        winterHardinessRequired:
+          false,
 
         seasonExtensionBenefits: [
-          "Waiting for warm soil improves emergence and stand establishment.",
-          "Early-maturing varieties improve reliability in shorter seasons.",
-          "Protected postharvest drying can reduce losses during humid or wet autumn weather.",
-          "Supplemental water during establishment and reproductive growth can improve yield even where Sorghum is grown primarily for drought resilience.",
-          "Indoor transplant production is generally inefficient for a grain plot."
+          "Waiting until soil is consistently warm improves emergence and stand establishment.",
+          "Selecting an early-maturing variety improves reliability in northern, high-elevation, or short-season locations.",
+          "Protected postharvest drying can reduce losses during humid or rainy autumn weather.",
+          "Supplemental water during establishment, boot stage, flowering, and grain filling can improve yield even where Sorghum is grown primarily for drought resilience.",
+          "Bird protection may extend the period that mature grain can remain in the field for additional dry-down.",
+          "Indoor seed starting offers little practical benefit because Grain Sorghum is normally established as a directly seeded row crop."
         ],
 
-        indoorSeedStartingBenefitScore: 1,
+        indoorSeedStartingBenefitScore:
+          1,
 
         directFacts: {
           seasonType:
             "warm-season-annual",
 
-          frostSensitive: true,
+          frostSensitive:
+            true,
 
-          commonlyDirectSeeded: true,
+          commonlyDirectSeeded:
+            true,
 
-          winterDormancyPossible: false,
+          springTypesAvailable:
+            true,
 
-          heatDormancyPossible: false,
+          winterTypesAvailable:
+            false,
 
-          windPollinated: true,
+          facultativeTypesAvailable:
+            false,
 
-          blockPollinationImportant: false,
+          vernalizationRequiredForAllVarieties:
+            false,
 
-          droughtRecoveryPotential:
+          winterHardinessVarietyDependent:
+            false,
+
+          winterBarleyLessHardyThanWinterWheat:
+            false,
+
+          winterBarleyLessHardyThanCerealRye:
+            false,
+
+          earlySpringPlantingPreferred:
+            false,
+
+          coolWeatherGrowthPreferred:
+            false,
+
+          highHeatDuringReproductionConcern:
+            false,
+
+          highElevationAdaptation:
+            false,
+
+          baseGrowingDegreeTemperatureF:
+            null,
+
+          approximatePollinationAfterEmergenceWeeksMinimum:
+            8,
+
+          approximatePollinationAfterEmergenceWeeksMaximum:
+            10,
+
+          maturityHighlyVarietyDependent:
             true,
 
           notes: [
-            "Grain Sorghum is a frost-sensitive warm-season annual.",
-            "Seed is normally direct-sown after the soil becomes consistently warm.",
-            "Sorghum generally tolerates heat and water stress better than Field Corn.",
+            "Grain Sorghum is a frost-sensitive warm-season annual cereal.",
+            "Seed should normally be direct-sown only after soil has warmed sufficiently for rapid germination.",
+            "Cold soil can produce slow, uneven emergence and weak establishment.",
+            "Grain Sorghum generally tolerates high temperatures better than most common cereal grains.",
+            "The crop is especially valuable in hot and water-limited climates.",
             "Plants may slow growth during drought and resume growth when moisture returns.",
             "Drought survival does not guarantee acceptable grain yield.",
-            "Water stress during boot stage, heading, flowering, pollination, and grain fill can still reduce production.",
-            "Unlike Corn, Sorghum does not require a compact four-row block for dependable pollination.",
-            "Cool nights and short seasons may delay maturity and dry-down.",
-            "Humid conditions can increase grain-mold and postharvest-drying problems."
+            "Water stress during boot stage, heading, flowering, pollination, and grain fill can reduce production.",
+            "Cool summers and cool nights may delay heading, maturity, and grain dry-down.",
+            "Early-maturing cultivars are important in northern and high-elevation locations.",
+            "Humid climates can support productive growth but increase grain-mold, insect, and postharvest-drying risks.",
+            "The planner should distinguish heat tolerance from dependable performance in humid grain-mold conditions."
           ]
         }
       },
 
       site: {
-        absoluteMinimumSunHours: 6,
+        absoluteMinimumSunHours:
+          6,
 
-        productiveMinimumSunHours: 7,
+        productiveMinimumSunHours:
+          7,
 
-        preferredSunHours: 9,
+        preferredSunHours:
+          9,
 
-        shadeToleranceScore: 1,
+        shadeToleranceScore:
+          1,
 
-        afternoonShadeBenefitInHeat: 1,
+        afternoonShadeBenefitInHeat:
+          1,
 
-        windToleranceScore: 4,
+        windToleranceScore:
+          4,
 
-        lodgingRiskScore: 3,
+        lodgingRiskScore:
+          3,
 
-        reflectedHeatToleranceScore: 5,
+        reflectedHeatToleranceScore:
+          5,
 
-        airflowRequirementScore: 4,
+        airflowRequirementScore:
+          4,
 
-        frostPocketSensitivityScore: 5,
+        frostPocketSensitivityScore:
+          5,
 
-        treeRootCompetitionToleranceScore: 1,
+        treeRootCompetitionToleranceScore:
+          1,
 
-        hardscapeConflictRiskScore: 2,
+        hardscapeConflictRiskScore:
+          2,
 
-        structureConflictRiskScore: 3,
+        structureConflictRiskScore:
+          3,
 
-        utilityConflictRiskScore: 3,
+        utilityConflictRiskScore:
+          3,
 
-        fruitDropMessRiskScore: 1,
+        fruitDropMessRiskScore:
+          1,
 
-        stainingRiskScore: 1,
+        stainingRiskScore:
+          1,
 
         directFacts: {
           preferredLight:
             "full-sun",
 
           productiveSunGuidance:
-            "At least 7 hours of direct sunlight, with approximately 8 to 10 hours preferred for strong grain production and timely dry-down.",
+            "At least 7 hours of direct sunlight is preferred for useful grain production, with approximately 8 to 10 hours supporting stronger growth, grain filling, stem strength, and timely dry-down.",
 
-          windExposureConcern: true,
+          windExposureConcern:
+            true,
 
           growthHabit:
-            "tall-upright-tillering-grass",
+            "tall-upright-tillering-cereal-grass",
 
-          matureHeightFtMinimum: 3,
+          matureHeightFtMinimum:
+            3,
 
-          matureHeightFtMaximum: 8,
+          matureHeightFtMaximum:
+            8,
 
           floweringPollinatorTraffic:
             false,
 
+          seasonalPrivacyScreen:
+            true,
+
+          undergroundSpreadConcern:
+            false,
+
+          selfPollinated:
+            true,
+
+          windPollinated:
+            true,
+
+          insectPollinationRequired:
+            false,
+
+          denseStandPreferred:
+            true,
+
+          airflowImportant:
+            true,
+
+          lodgingConcern:
+            true,
+
           notes: [
             "Grain Sorghum performs best in full sun.",
-            "Meaningful shade reduces grain production and slows maturity.",
-            "Plants are often shorter and more drought-resilient than Field Corn but may still lodge in storms.",
-            "Open airflow helps seed heads dry after rain.",
-            "Tall growth may shade nearby beds.",
-            "The crop should not obstruct paths, road visibility, windows, utility access, or solar equipment.",
-            "Tree roots and canopy shade create strong competition."
+            "Meaningful shade reduces grain production, weakens stems, and delays maturity.",
+            "The crop is normally grown as an upright row or block planting.",
+            "Grain Sorghum is largely self-pollinating and does not require insect pollinators.",
+            "Wind can move pollen, but a compact four-row block is not required in the same way as Field Corn.",
+            "Good airflow helps foliage and seed heads dry after rain.",
+            "Dense, humid stands may experience increased leaf disease, grain mold, and lodging pressure.",
+            "Plants are often shorter and more drought-resilient than Field Corn but can still lodge in storms.",
+            "Tall varieties may cast substantial seasonal shade on nearby crops.",
+            "The crop may function as a temporary summer screen where sufficient room is available.",
+            "Grain Sorghum does not spread through permanent rhizomes, stolons, tubers, or woody roots.",
+            "Avoid deep shade and severe root competition beneath established trees.",
+            "Avoid placing tall plantings where they obstruct paths, windows, road visibility, utility access, vents, panels, or solar equipment.",
+            "South- and west-facing hardscape can increase heat and water demand, although Sorghum tolerates reflected heat well.",
+            "A protected location for drying, threshing, cleaning, and storing grain should be considered during site planning."
           ]
         }
       },
 
       soil: {
         textureScores: {
-          heavyClay: 4,
-          clayLoam: 5,
-          loam: 5,
-          sandyLoam: 5,
-          verySandy: 3,
-          rocky: 2
+          heavyClay:
+            4,
+
+          clayLoam:
+            5,
+
+          loam:
+            5,
+
+          sandyLoam:
+            5,
+
+          verySandy:
+            3,
+
+          rocky:
+            2
         },
 
-        drainageRequirementScore: 4,
+        drainageRequirementScore:
+          4,
 
-        temporaryWetToleranceScore: 2,
+        temporaryWetToleranceScore:
+          2,
 
-        waterloggingSensitivityScore: 4,
+        waterloggingSensitivityScore:
+          4,
 
-        minimumSoilDepthIn: 18,
+        minimumSoilDepthIn:
+          18,
 
-        preferredSoilDepthIn: 30,
+        preferredSoilDepthIn:
+          30,
 
-        compactionToleranceScore: 3,
+        compactionToleranceScore:
+          3,
 
-        establishmentInSodDifficultyScore: 5,
+        establishmentInSodDifficultyScore:
+          5,
 
-        preferredPHMinimum: 5.5,
+        preferredPHMinimum:
+          5.5,
 
-        preferredPHMaximum: 7.5,
+        preferredPHMaximum:
+          7.5,
 
-        survivalPHMinimum: null,
+        survivalPHMinimum:
+          null,
 
-        survivalPHMaximum: null,
+        survivalPHMaximum:
+          null,
 
-        fertilityRequirementScore: 4,
+        fertilityRequirementScore:
+          4,
 
-        nitrogenRequirementScore: 4,
+        nitrogenRequirementScore:
+          4,
 
-        phosphorusRequirementScore: 4,
+        phosphorusRequirementScore:
+          4,
 
-        potassiumRequirementScore: 4,
+        potassiumRequirementScore:
+          4,
 
-        benefitsFromInoculation: false,
+        benefitsFromInoculation:
+          false,
 
-        inoculantType: null,
+        inoculantType:
+          null,
 
-        saltToleranceScore: 3,
+        saltToleranceScore:
+          3,
 
-        amendmentEffortScore: 3,
+        amendmentEffortScore:
+          3,
 
         directFacts: {
           preferredDrainage:
@@ -54827,27 +55221,47 @@ const BCP_FEED_CROPS = {
             "sandy loam"
           ],
 
-          nitrogenFixingLegume: false,
+          adaptableTextures: [
+            "loam",
+            "clay loam",
+            "sandy loam",
+            "well-drained heavy clay"
+          ],
+
+          nitrogenFixingLegume:
+            false,
 
           inoculationMayImproveNodulation:
             false,
 
-          fibrousRooted:
-            true,
+          tuberForming:
+            false,
 
           waterloggedSoilSuitable:
             false,
 
+          compactedSoilSuitable:
+            false,
+
+          alkalineSoilTolerance:
+            "moderate",
+
           notes: [
             "Grain Sorghum tolerates a relatively broad range of productive soils.",
             "Well-drained loam, clay loam, and sandy loam are strong fits.",
-            "The crop often performs better than Corn on drought-prone or moderately challenging ground.",
-            "Very sandy soil may still require careful water and fertility management.",
+            "The crop often performs better than Field Corn on drought-prone or moderately challenging ground.",
+            "Heavy clay may be usable where structure and drainage are adequate.",
+            "Very sandy soil may require careful moisture and fertility management.",
+            "Rocky or very shallow soil restricts rooting and dependable grain production.",
             "Prolonged saturation restricts roots and increases disease risk.",
-            "Nitrogen supports grain production, but excessive nitrogen can encourage lodging or delayed maturity.",
-            "Phosphorus and potassium support roots, stalk strength, and grain development.",
-            "Sorghum does not fix atmospheric nitrogen.",
-            "Soil testing remains preferable to guessing at fertilizer needs."
+            "Compaction can reduce emergence, rooting depth, water infiltration, and drought resilience.",
+            "Existing sod should be removed or controlled before planting because grass competes strongly for water and nutrients.",
+            "Nitrogen supports grain production, but excessive nitrogen may encourage lodging or delay maturity.",
+            "Phosphorus and potassium support rooting, stalk strength, flowering, and grain development.",
+            "Grain Sorghum does not fix atmospheric nitrogen.",
+            "Legume inoculant provides no benefit to Sorghum.",
+            "Soil testing is preferable to guessing at fertilizer requirements.",
+            "The stored pH range is a productive planning range rather than an absolute survival limit."
           ]
         }
       },
@@ -54871,9 +55285,11 @@ const BCP_FEED_CROPS = {
         harvestDevelopmentWaterNeedLevel:
           "moderate-high",
 
-        droughtSurvivalScore: 5,
+        droughtSurvivalScore:
+          5,
 
-        droughtYieldRetentionScore: 5,
+        droughtYieldRetentionScore:
+          5,
 
         criticalGrowthStages: [
           "germination",
@@ -54885,23 +55301,32 @@ const BCP_FEED_CROPS = {
           "grain-fill"
         ],
 
-        criticalStageWaterImportanceScore: 5,
+        criticalStageWaterImportanceScore:
+          5,
 
-        overwateringSensitivityScore: 3,
+        overwateringSensitivityScore:
+          3,
 
-        waterloggingSensitivityScore: 4,
+        waterloggingSensitivityScore:
+          4,
 
-        dripIrrigationBenefitScore: 4,
+        dripIrrigationBenefitScore:
+          4,
 
-        mulchBenefitScore: 4,
+        mulchBenefitScore:
+          4,
 
-        suitableForRainfallOnlyScore: 5,
+        suitableForRainfallOnlyScore:
+          5,
 
-        suitableForLimitedIrrigationScore: 5,
+        suitableForLimitedIrrigationScore:
+          5,
 
-        containerDryingRiskScore: 5,
+        containerDryingRiskScore:
+          5,
 
-        establishmentYearsRequiringExtraWater: 0,
+        establishmentYearsRequiringExtraWater:
+          0,
 
         directFacts: {
           establishmentMoistureImportant:
@@ -54921,188 +55346,337 @@ const BCP_FEED_CROPS = {
 
           notes: [
             "Grain Sorghum generally requires less water than Field Corn.",
-            "Its root system and drought response improve survival under limited moisture.",
-            "Plants may temporarily slow growth during dry conditions.",
-            "Adequate water during boot stage, flowering, pollination, and grain fill improves yield.",
-            "Severe drought can still reduce seed-head size and grain quality.",
-            "Supplemental irrigation may be especially valuable during establishment and reproductive growth.",
-            "Mulch may reduce evaporation after the soil has warmed.",
-            "Waterlogged soil remains harmful."
+            "Its extensive root system and drought-response mechanisms improve survival under limited moisture.",
+            "Plants may temporarily slow growth during dry conditions and resume growth after rainfall or irrigation.",
+            "Strong drought survival does not mean that water stress has no effect on grain yield.",
+            "Adequate moisture during germination and seedling establishment supports a uniform stand.",
+            "Boot stage, heading, flowering, pollination, and grain filling are especially important moisture periods.",
+            "Severe reproductive-stage drought may reduce head size, seed number, kernel weight, and final grain quality.",
+            "Supplemental irrigation can be especially valuable during establishment and reproductive growth.",
+            "Drip irrigation can protect yield while limiting unnecessary leaf and seed-head wetting.",
+            "Mulch may reduce evaporation after the soil has warmed, but overly deep mulch can interfere with emergence.",
+            "Rainfall-only production is most dependable where soil can store enough moisture for reproductive development.",
+            "Plant population should be reduced where water availability is severely limited.",
+            "Containers dry rapidly and are inefficient for meaningful grain production.",
+            "Waterlogged soil remains harmful despite Sorghum's drought tolerance."
           ]
         }
       },
 
-      space: {
-        minimumTrialAreaSqFt: 40,
+           space: {
+        minimumTrialAreaSqFt:
+          null,
 
-        minimumUsefulAreaSqFt: 75,
+        minimumUsefulAreaSqFt:
+          null,
 
-        preferredProductionAreaSqFt: 200,
+        preferredProductionAreaSqFt:
+          null,
 
-        smallSpaceScore: 2,
+        smallSpaceScore:
+          3,
 
-        mediumSpaceScore: 5,
+        mediumSpaceScore:
+          5,
 
-        largeSpaceScore: 5,
+        largeSpaceScore:
+          5,
 
         layoutScores: {
-          squareBlock: 5,
-          wideRectangle: 5,
-          longStrip: 4,
-          irregular: 3,
-          smallBeds: 3,
-          openField: 5
+          squareBlock:
+            5,
+
+          wideRectangle:
+            5,
+
+          longStrip:
+            5,
+
+          irregular:
+            3,
+
+          smallBeds:
+            4,
+
+          openField:
+            5
         },
 
         spaceTypeScores: {
-          inGround: 5,
-          raisedBed: 3,
-          container: 1,
-          fenceLine: 3,
-          buildingEdge: 2,
-          unusedLawn: 4,
-          openField: 5,
-          orchard: 1,
-          forageFrame: 1,
-          rotationalPaddock: 2,
-          greenhouse: 1,
-          hedgerow: 3
+          inGround:
+            5,
+
+          raisedBed:
+            4,
+
+          container:
+            2,
+
+          fenceLine:
+            3,
+
+          buildingEdge:
+            3,
+
+          unusedLawn:
+            5,
+
+          openField:
+            5,
+
+          orchard:
+            2,
+
+          forageFrame:
+            1,
+
+          rotationalPaddock:
+            2,
+
+          greenhouse:
+            1,
+
+          hedgerow:
+            3
         },
 
-        minimumContainerGallons: null,
+        minimumContainerGallons:
+          null,
 
         containerUseLimitation:
-          "Grain Sorghum can grow in large containers, but restricted roots, rapid drying, limited plant population, and low grain yield make containers inefficient for flock-feed production.",
+          "Grain Sorghum can be grown in large containers for educational trials, ornamental seed heads, or limited enrichment harvests, but ordinary containers provide too little rooting volume and plant population for efficient household grain production. Containers dry rapidly and generally produce little clean grain relative to the labor required for watering, harvesting, threshing, cleaning, and storage.",
 
-        minimumRaisedBedDepthIn: 18,
+        minimumRaisedBedDepthIn:
+          null,
 
-        vineSpreadRequired: false,
+        vineSpreadRequired:
+          false,
 
-        verticalSupportBenefitScore: 1,
+        verticalSupportBenefitScore:
+          1,
 
-        blockPlantingRequired: false,
+        blockPlantingRequired:
+          false,
 
-        minimumBlockRows: null,
+        minimumBlockRows:
+          null,
 
-        continuousStandPreferred: true,
+        continuousStandPreferred:
+          true,
 
         heightCategory:
-          "tall",
+          "medium-tall-annual-grass",
 
         matureWidthCategory:
-          "narrow-upright-row-crop",
+          "narrow-upright-tillering-stand",
 
-        overflowSpaceBenefitScore: 4,
+        overflowSpaceBenefitScore:
+          4,
 
         directFacts: {
-          denseStandSuitable: true,
+          layoutFlexible:
+            true,
 
-          compactBlockRequired: false,
-
-          rowPlantingSuitable: true,
-
-          containerFeedProductionEfficient:
+          blockPollinationRequired:
             false,
 
-          raisedBedFeedProductionEfficient:
-            "limited",
+          suitableForRowPlanting:
+            true,
+
+          suitableForCloselySpacedStands:
+            true,
+
+          suitableForSingleOrSmallGroupPlanting:
+            false,
+
+          suitableForBroadcastPlanting:
+            false,
+
+          suitableForDrilledPlanting:
+            true,
+
+          suitableForDenseCoverCropStand:
+            false,
+
+          suitableForDedicatedGrainPlot:
+            true,
+
+          individualPlantSpacingRecommended:
+            false,
+
+          continuousStandPreferred:
+            true,
+
+          tilleringAllowsPartialPopulationCompensation:
+            true,
+
+          productiveHeadDensityImportant:
+            true,
+
+          mechanicalAccessMayImproveEfficiency:
+            true,
+
+          requiresSeparateProcessingSpace:
+            true,
+
+          containerCultivarFeasibility:
+            true,
+
+          commercialSeedingRateConversionToBackyardYieldSupported:
+            false,
 
           notes: [
-            "Grain Sorghum can be planted in rows or blocks.",
-            "It does not depend on a four-row block in the same way as Corn.",
-            "A small trial plot is more practical than a similarly small Corn block.",
-            "Medium and large open-ground plots provide the strongest feed-production value.",
-            "Containers provide very little usable grain relative to watering and labor.",
-            "Plant population should be reduced where moisture is severely limited.",
-            "The estimated area thresholds are planning guides rather than guaranteed feed yields.",
-            "Actual yield depends on variety, fertility, spacing, heat, moisture, bird losses, disease, harvest timing, and threshing efficiency."
+            "Grain Sorghum is normally planted as a continuous row or drilled stand rather than as individually spaced garden plants.",
+            "A square block is suitable, but Grain Sorghum does not require Corn-style block planting for pollination.",
+            "Long strips, wide rectangles, small grain beds, and open-field stands can all support grain production.",
+            "Uniform seed placement and dependable seed-to-soil contact are more important than exact individual-plant spacing.",
+            "Moderately dense stands can improve canopy closure and weed competition.",
+            "Excessively dense stands can increase competition for water, produce smaller heads, weaken stems, delay maturity, and increase lodging or disease risk.",
+            "Tillering may compensate partially for reduced plant population, but compensation is affected by cultivar, planting date, fertility, moisture, and temperature.",
+            "Plant population should generally be reduced where seasonal water is severely limited.",
+            "Dedicated production plots are more efficient than isolated ornamental plants when harvested grain is the primary goal.",
+            "Raised beds are possible but may dry faster than surrounding ground.",
+            "Containers are best treated as trial or ornamental systems rather than dependable poultry-feed production systems.",
+            "The crop requires room outside the planting area for drying heads, threshing, winnowing, cleaning, processing, and storing grain.",
+            "Bird-netting access and harvest movement should be considered when planning the plot.",
+            "Tall plants can shade shorter crops and should be placed where seasonal shading will not damage neighboring plantings.",
+            "Minimum trial area, minimum useful area, and preferred production area remain null until backyard yield, wildlife-loss, processing-efficiency, and flock-size relationships are measured.",
+            "Commercial plant populations and per-acre yields must not be converted into guaranteed backyard pounds per square foot."
           ]
         }
       },
 
       flock: {
-        suitableForAdultChickens: true,
+        suitableForAdultChickens:
+          true,
 
-        suitableForYoungChicks: false,
+        suitableForYoungChicks:
+          false,
 
         flockPurposeScores: {
-          eggs: 4,
-          meat: 4,
-          breeding: 3,
-          petsEnrichment: 5,
-          homestead: 5,
-          mixed: 5
+          eggs:
+            4,
+
+          meat:
+            4,
+
+          breeding:
+            3,
+
+          petsEnrichment:
+            5,
+
+          homestead:
+            5,
+
+          mixed:
+            5
         },
 
         feedingMethodScores: {
-          livingGrazing: 1,
-          cutAndCarry: 1,
-          wholeProduce: 2,
-          wholeSeedHeads: 5,
-          wholeGrain: 5,
-          processedGrain: 5,
-          heatTreated: 2,
-          driedForage: 1,
-          winterStorage: 5
+          livingGrazing:
+            1,
+
+          cutAndCarry:
+            1,
+
+          wholeProduce:
+            1,
+
+          wholeSeedHeads:
+            5,
+
+          wholeGrain:
+            5,
+
+          processedGrain:
+            5,
+
+          heatTreated:
+            2,
+
+          driedForage:
+            1,
+
+          winterStorage:
+            5
         },
 
-        directRunSuitabilityScore: 1,
+        directRunSuitabilityScore:
+          1,
 
-        forageFrameSuitabilityScore: 1,
+        forageFrameSuitabilityScore:
+          1,
 
-        rotationalPaddockSuitabilityScore: 1,
+        rotationalPaddockSuitabilityScore:
+          1,
 
-        confinedFlockValueScore: 5,
+        confinedFlockValueScore:
+          5,
 
-        pasturedFlockValueScore: 3,
+        pasturedFlockValueScore:
+          3,
 
-        treatDilutionRiskScore: 5,
+        treatDilutionRiskScore:
+          5,
 
-        highEnergySupplement: true,
+        highEnergySupplement:
+          true,
 
-        highFiberSupplement: false,
+        highFiberSupplement:
+          false,
 
-        concentratedFatSource: false,
+        concentratedFatSource:
+          false,
 
         primaryFlockUses: [
-          "Whole dried seed heads for enrichment",
-          "Threshed whole grain",
-          "Cracked or coarsely ground grain",
-          "High-energy supplementation",
-          "Long-term dry storage",
-          "Drought-resilient home grain production"
+          "Whole mature panicle enrichment",
+          "Whole dried panicle enrichment",
+          "Loose whole grain",
+          "Cracked grain",
+          "Coarsely ground grain",
+          "Stored winter grain",
+          "Measured energy supplementation",
+          "Postharvest field gleaning"
         ],
 
         unsuitablePrimaryUses: [
           "Complete-ration replacement",
-          "Primary protein supplement",
-          "Living forage",
-          "Fresh green forage from growing plants",
+          "Primary protein crop",
+          "Primary calcium source",
+          "Permanent living forage",
+          "Fresh green Sorghum forage",
+          "Unrestricted feeding",
           "Primary young-chick feed",
-          "Feeding unidentified high-tannin grain",
-          "Feeding moldy or inadequately dried grain"
+          "Chemically treated planting seed",
+          "Moldy or mycotoxin-suspect grain",
+          "Unidentified high-tannin grain"
         ],
 
         directFacts: {
           edibleFeedParts: [
             "Mature dry grain",
-            "Whole dried grain heads",
-            "Properly cracked or ground grain"
+            "Whole mature panicles",
+            "Whole dried panicles",
+            "Cracked mature grain",
+            "Coarsely ground mature grain",
+            "Short clean sprouts produced from untreated grain",
+            "Residual mature grain remaining after harvest"
           ],
 
           preferredBirdStage:
-            "Adult chickens",
+            "Established adult chickens",
 
           cropSurvivalWithDirectChickenAccess:
-            "poor",
+            "poor-before-grain-maturity",
 
           directAccessTiming:
-            "Keep chickens away from the growing plot until mature seed heads have been harvested.",
+            "Protect plants while growing and allow access only after grain maturity or after the intended harvest has been completed.",
 
           nutritionalOrientation: [
             "energy",
             "grain",
-            "starch",
+            "moderate-protein",
             "winter-storage",
             "enrichment",
             "drought-resilient-feed"
@@ -55114,162 +55688,288 @@ const BCP_FEED_CROPS = {
           lowTanninVarietyPreferred:
             true,
 
+          wholeSeedHeads:
+            true,
+
+          wholeGrain:
+            true,
+
+          processedGrain:
+            true,
+
+          freshVegetativeForagePreferred:
+            false,
+
+          portionGuidance:
+            null,
+
+          validatedMaximumPoultryInclusionPercent:
+            null,
+
+          appropriateGritRequiredForWholeGrain:
+            true,
+
+          directFactsKnownForAdultBirds:
+            true,
+
+          directFactsKnownForYoungBirds:
+            false,
+
           notes: [
-            "Grain Sorghum is primarily an energy grain.",
-            "Its feeding role is broadly comparable with Corn, but nutritional composition and digestibility vary by variety.",
-            "Low-tannin or tannin-free grain is preferred for poultry use.",
-            "High-tannin grain may reduce palatability and nutrient use.",
-            "Whole seed heads provide pecking enrichment.",
-            "Whole dry grain may be eaten by adult chickens when appropriately sized and accompanied by grit.",
-            "Cracking or grinding increases processing labor and storage exposure.",
-            "Sorghum alone is low in calcium and does not provide a balanced amino-acid profile.",
-            "It should supplement rather than replace complete poultry feed.",
-            "Young chicks should continue receiving a complete age-appropriate ration."
+            "Grain Sorghum functions primarily as a concentrated carbohydrate-energy grain.",
+            "It supplies moderate protein but does not provide a complete amino-acid balance.",
+            "The grain is low in calcium and cannot replace layer calcium or complete laying feed.",
+            "Low-tannin or tannin-free cultivars are preferred for poultry.",
+            "Grain color alone does not reliably identify tannin concentration.",
+            "Whole mature panicles can provide pecking activity and behavioral enrichment.",
+            "Whole-panicle consumption is difficult to measure and may produce substantial grain waste.",
+            "Loose whole grain is easier to measure but requires threshing, cleaning, drying, and storage.",
+            "Established adult birds may consume whole Sorghum grain when appropriate grit is available.",
+            "Cracked or coarsely ground grain may be easier to incorporate into a balanced ration.",
+            "Processed grain has a shorter dependable storage life than intact whole grain.",
+            "Excessive grain supplementation can displace complete feed and reduce intake of protein, amino acids, calcium, vitamins, and trace minerals.",
+            "Young chicks should remain on a complete age-appropriate starter ration.",
+            "A universal backyard feeding percentage is not stored.",
+            "Commercial poultry inclusion rates should not be converted directly into an informal household feeding recommendation.",
+            "Fresh green Sorghum plants, stressed Sorghum forage, forage Sorghum, Sudangrass, and Sorghum-Sudangrass hybrids are not interchangeable with mature dry Grain Sorghum seed.",
+            "The planner use paths should remain specific to mature dry grain unless a separately researched vegetative-forage record is created.",
+            "Only sound, clean, untreated, adequately dried, nonmoldy grain should be fed.",
+            "Complete poultry feed should remain the nutritional foundation unless a qualified ration-formulation process is used."
           ]
         }
       },
 
       labor: {
-        beginnerFriendlinessScore: 4,
+        beginnerFriendlinessScore:
+          3,
 
-        plantingEaseScore: 4,
+        plantingEaseScore:
+          4,
 
-        establishmentEaseScore: 4,
+        establishmentEaseScore:
+          4,
 
-        routineMaintenanceEaseScore: 4,
+        routineMaintenanceEaseScore:
+          4,
 
-        weedControlEaseScore: 3,
+        weedControlEaseScore:
+          3,
 
-        wildlifeProtectionEaseScore: 2,
+        wildlifeProtectionEaseScore:
+          2,
 
-        harvestEaseScore: 4,
+        harvestEaseScore:
+          3,
 
-        grainProcessingEaseScore: 2,
+        wholeHeadProcessingEaseScore:
+          4,
 
-        dryingEaseScore: 3,
+        looseSeedProcessingEaseScore:
+          2,
 
-        storageMonitoringEaseScore: 3,
+        dryingEaseScore:
+          3,
 
-        physicalAccessibilityScore: 4,
+        storageMonitoringEaseScore:
+          3,
 
-        heavyLiftingRiskScore: 2,
+        perennialMaintenanceEaseScore:
+          5,
+
+        physicalAccessibilityScore:
+          3,
+
+        heavyLiftingRiskScore:
+          2,
 
         weeklyLaborLevel:
-          "low-moderate",
+          "low-to-moderate",
 
         peakWorkloadLevel:
           "high",
 
         harvestFrequencyCategory:
-          "major",
+          "single-major-seasonal-harvest",
 
         requiredPlantingTasks: [
           "prepare-seedbed",
-          "plant-small-grain-seed"
+          "direct-seed"
         ],
 
         optionalPlantingTasks: [
-          "install-irrigation",
+          "soil-test",
           "apply-fertilizer",
+          "install-irrigation",
           "install-bird-protection"
         ],
 
         requiredMaintenanceTasks: [
-          "weed",
+          "control-weeds",
           "monitor-water",
-          "monitor-seed-heads"
+          "monitor-insects",
+          "monitor-disease",
+          "monitor-lodging",
+          "monitor-grain-maturity"
         ],
 
         optionalMaintenanceTasks: [
+          "thin-stand",
           "side-dress-nitrogen",
-          "protect-from-wildlife"
+          "irrigate-critical-growth-stages",
+          "install-bird-netting",
+          "repair-bird-protection"
         ],
 
         requiredHarvestTasks: [
-          "cut-seed-heads"
+          "cut-mature-panicles"
         ],
 
         usePathProcessingTasks: {
+          freshMaturePanicles: [
+            "cut-mature-panicles",
+            "inspect"
+          ],
+
           wholeDriedPanicles: [
-            "cut-seed-heads",
-            "dry"
-          ],
-
-          threshedWholeGrain: [
-            "cut-seed-heads",
+            "cut-mature-panicles",
             "dry",
-            "thresh",
-            "winnow",
-            "clean-sort"
+            "inspect"
           ],
 
-          crackedOrGroundGrain: [
-            "cut-seed-heads",
+          looseWholeGrain: [
+            "cut-mature-panicles",
             "dry",
             "thresh",
             "winnow",
             "clean-sort",
-            "crack-grain"
+            "inspect"
+          ],
+
+          crackedGrain: [
+            "cut-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "crack",
+            "inspect"
+          ],
+
+          groundGrainIngredient: [
+            "cut-mature-panicles",
+            "dry",
+            "thresh",
+            "winnow",
+            "clean-sort",
+            "coarse-grind",
+            "inspect"
+          ],
+
+          sproutedGrain: [
+            "clean-sort",
+            "soak",
+            "drain",
+            "rinse",
+            "sprout",
+            "inspect"
+          ],
+
+          postharvestFlockGleaning: [
+            "inspect-field",
+            "remove-hazards"
+          ],
+
+          residueBiomass: [
+            "cut-or-chop-residue"
           ]
         },
 
         requiredStorageTasks: [
+          "confirm-dryness",
+          "cool-before-sealing",
+          "store-in-sealed-container",
           "inspect-moisture",
           "inspect-mold",
           "inspect-insects",
-          "inspect-rodents"
+          "inspect-rodents",
+          "rotate-stock"
         ],
 
         specializedEquipmentRequired: [],
 
         specializedEquipmentHelpful: [
+          "seed-drill",
+          "row-seeder",
+          "hoe-or-cultivator",
+          "drip-irrigation",
           "bird-netting",
-          "fencing",
+          "head-bags",
           "hand-pruners",
-          "drying-rack",
-          "drying-screen",
-          "fan",
-          "threshing-bag",
+          "harvest-sickle",
+          "drying-racks",
+          "drying-screens",
+          "circulation-fan",
+          "tarps",
+          "manual-thresher",
+          "mechanical-thresher",
+          "winnowing-fan",
+          "grain-screens",
+          "grain-moisture-meter",
           "grain-cracker",
           "grain-mill",
-          "moisture-meter",
-          "metal-grain-can",
-          "food-safe-bucket",
-          "drip-irrigation"
+          "food-safe-storage-buckets",
+          "rodent-resistant-storage-containers",
+          "dust-mask",
+          "eye-protection",
+          "hearing-protection"
         ],
 
-        suitableForLowTimeUsersScore: 3,
+        suitableForLowTimeUsersScore:
+          3,
 
-        suitableForSoloGrowersScore: 4,
+        suitableForSoloGrowersScore:
+          4,
 
         directFacts: {
           seedSize:
-            "small",
+            "small-to-medium",
 
-          directSeedingSuitable: true,
+          directSeedingSuitable:
+            true,
+
+          transplantingSuitable:
+            false,
 
           specializedHarvestEquipmentRequiredForBackyardScale:
             false,
 
           majorLaborBottlenecks: [
-            "Establishing a clean stand in warm soil",
-            "Protecting mature heads from wild birds",
-            "Harvesting before prolonged wet weather",
-            "Drying seed heads completely",
+            "Establishing a uniform stand in adequately warm soil",
+            "Controlling weeds before canopy closure",
+            "Protecting developing grain from wild birds",
+            "Monitoring mature heads for insects, mold, weathering, and shattering",
+            "Harvesting heads before major wildlife or weather loss",
+            "Drying whole heads thoroughly",
             "Threshing grain",
-            "Winnowing and cleaning seed",
-            "Cracking or grinding if desired",
-            "Protecting stored grain from insects and rodents"
+            "Winnowing and cleaning grain",
+            "Cracking or grinding grain where required",
+            "Monitoring stored grain for moisture, insects, mold, and rodents"
           ],
 
           notes: [
-            "Direct seeding is straightforward after soil warms.",
-            "Sorghum does not require the compact pollination block needed by Corn.",
-            "Whole-head feeding requires less processing than threshed grain.",
-            "Threshing and winnowing create concentrated seasonal labor.",
-            "A bag, tarp, screen, or simple hand tool may be adequate for a small plot.",
-            "Grinding equipment is optional unless processed grain is specifically desired.",
-            "Drying and storage management remain essential."
+            "Direct seeding is straightforward after the soil has warmed adequately.",
+            "Cold-soil planting may cause uneven emergence and increase establishment labor.",
+            "Early weed control is important because young Sorghum does not immediately suppress aggressive weeds.",
+            "Routine labor is generally modest after establishment where moisture, fertility, weeds, and pests remain manageable.",
+            "Wild-bird protection may become the most persistent late-season management task.",
+            "Whole-panicle feeding requires less processing than loose-grain use.",
+            "Loose-grain production requires drying, threshing, winnowing, cleaning, inspection, and storage.",
+            "Cracked and ground pathways add equipment, dust, cleanup, and shorter storage life.",
+            "Processing should occur in a ventilated area away from poultry.",
+            "Small plots can be harvested manually without specialized machinery.",
+            "Larger plantings may justify mechanical planting, threshing, cleaning, cracking, or grinding equipment.",
+            "Harvest is generally concentrated into one major seasonal workload.",
+            "The crop is manageable by a solo grower, but large plantings create substantial peak harvesting and processing labor."
           ]
         }
       },
@@ -55282,10 +55982,10 @@ const BCP_FEED_CROPS = {
           "moderate",
 
         irrigationCostLevel:
-          "low-moderate",
+          "low-to-moderate",
 
         protectionCostLevel:
-          "moderate-high",
+          "moderate-to-high",
 
         processingEquipmentCostLevel:
           "moderate",
@@ -55294,111 +55994,174 @@ const BCP_FEED_CROPS = {
           "moderate",
 
         annualRecurringCostLevel:
-          "moderate-low",
+          "moderate",
 
-        longTermValueScore: 4,
+        longTermValueScore:
+          4,
 
         lowestCostUsePath:
-          "whole-dried-grain-sorghum-heads",
+          "fresh-or-dried-whole-mature-panicles",
 
         highestCostUsePath:
-          "cracked-or-ground-grain-sorghum",
+          "cleaned-ground-grain-for-formulated-ration-use",
 
         likelyCostDrivers: [
-          "Low-tannin seed",
-          "Fertilizer or compost",
-          "Irrigation during critical stages",
+          "Seed",
+          "Soil preparation",
+          "Fertilizer",
+          "Irrigation equipment",
           "Bird netting",
-          "Drying racks or fans",
-          "Threshing and cleaning equipment",
-          "Grain cracker or mill",
-          "Moisture meter",
-          "Rodent-proof storage"
+          "Head protection",
+          "Drying space",
+          "Drying fans",
+          "Threshing equipment",
+          "Winnowing equipment",
+          "Grain screens",
+          "Moisture testing",
+          "Grain cracking",
+          "Grain grinding",
+          "Rodent-resistant storage",
+          "Harvest and processing labor"
         ],
 
         costReductionOptions: [
-          "Feed whole dried heads instead of threshing all grain.",
-          "Use an adapted open-pollinated low-tannin variety where seed saving is appropriate.",
-          "Use existing bird protection and irrigation.",
-          "Plant a trial plot before expanding.",
-          "Store grain whole and process only small batches.",
-          "Compare home-production costs with purchased grain."
+          "Use whole mature panicles rather than threshing every harvest.",
+          "Dry heads using existing protected airflow where safe and practical.",
+          "Use simple hand-threshing methods for small harvests.",
+          "Use existing food-safe rodent-resistant containers.",
+          "Plant an open-pollinated low-tannin cultivar where seed saving is practical and cultivar purity is not essential.",
+          "Concentrate irrigation during establishment and critical reproductive stages rather than watering continuously.",
+          "Select a cultivar adapted to local disease, drought, maturity, and lodging conditions.",
+          "Harvest promptly to reduce bird, mold, weathering, and shattering losses."
         ],
 
         directFacts: {
-          specializedPlantingEquipmentRequired:
+          annualSeedPurchaseUsuallyRequired:
+            true,
+
+          perennialReplantingAvoided:
             false,
 
-          specializedBackyardHarvestEquipmentRequired:
+          wholeHeadUseReducesProcessingCost:
+            true,
+
+          looseGrainUseIncreasesProcessingCost:
+            true,
+
+          crackingIncreasesEquipmentCost:
+            true,
+
+          grindingIncreasesEquipmentCost:
+            true,
+
+          birdProtectionCanBecomeMajorCost:
+            true,
+
+          storageInfrastructureImportant:
+            true,
+
+          irrigationMayBeOptional:
+            true,
+
+          householdProductionAlwaysCheaperThanPurchasedGrain:
             false,
 
-          specializedProcessingEquipmentRequired:
+          economicReturnKnown:
             false,
 
           notes: [
-            "Seed cost is generally modest.",
-            "Bird protection, drying, threshing, storage, and labor may exceed seed cost.",
-            "Lower irrigation requirements may improve economics relative to Corn in dry climates.",
-            "The crop must be replanted annually.",
-            "Whole-head feeding reduces processing expense.",
-            "Purchased grain may remain less expensive where labor or storage is costly.",
-            "Cost classifications are qualitative rather than current retail estimates."
+            "Seed cost is normally modest compared with bird protection, harvest labor, drying, threshing, cleaning, and storage.",
+            "Grain Sorghum may require less irrigation than Field Corn under comparable water-limited conditions.",
+            "Drought tolerance can improve production reliability but does not guarantee an inexpensive crop.",
+            "Whole-panicle feeding is generally the least equipment-intensive poultry use.",
+            "Loose grain is easier to measure but requires additional labor and infrastructure.",
+            "Cracking and grinding add machinery cost and shorten dependable storage life.",
+            "Wild-bird loss can eliminate much of the expected economic value from a small planting.",
+            "Household-scale production may cost more than purchased bulk Sorghum grain.",
+            "The crop may still provide value through enrichment, resilience, winter storage, drought adaptation, seed saving, and homestead experience.",
+            "Potential feed savings and economic return remain unknown until backyard yield, wildlife loss, processing labor, storage loss, and local feed prices are documented."
           ]
         }
       },
 
       goals: {
-        feedReductionScore: 5,
+        feedReductionScore:
+          4,
 
-        energyProductionScore: 5,
+        energyProductionScore:
+          5,
 
-        proteinOrientedScore: 2,
+        proteinOrientedScore:
+          3,
 
-        freshGreensScore: 1,
+        freshGreensScore:
+          1,
 
-        livingForageScore: 1,
+        livingForageScore:
+          1,
 
-        winterStorageScore: 5,
+        winterStorageScore:
+          5,
 
-        enrichmentScore: 5,
+        enrichmentScore:
+          5,
 
-        resilienceScore: 5,
+        resilienceScore:
+          5,
 
-        soilImprovementScore: 2,
+        soilImprovementScore:
+          3,
 
-        nitrogenFixationScore: 0,
+        nitrogenFixationScore:
+          0,
 
-        groundCoverScore: 2,
+        groundCoverScore:
+          3,
 
-        erosionControlScore: 3,
+        erosionControlScore:
+          3,
 
-        shadeScore: 2,
+        shadeScore:
+          3,
 
-        privacyScreeningScore: 4,
+        privacyScreeningScore:
+          4,
 
-        pollinatorSupportScore: 1,
+        pollinatorSupportScore:
+          1,
 
-        compostBiomassScore: 5,
+        compostBiomassScore:
+          4,
 
-        householdFoodScore: 1,
+        householdFoodScore:
+          3,
 
-        seedSavingScore: 4,
+        seedSavingScore:
+          4,
 
-        selfRelianceScore: 5,
+        selfRelianceScore:
+          5,
 
-        multipurposeValueScore: 4,
+        multipurposeValueScore:
+          4,
 
-        visualAppealScore: 3,
+        visualAppealScore:
+          4,
 
-        productionReliabilityScore: 5,
+        productionReliabilityScore:
+          4,
 
-        fastestValueScore: 3,
+        fastestValueScore:
+          3,
 
-        nonElectricStorageScore: 5,
+        nonElectricStorageScore:
+          5,
 
-        smallFlockValueScore: 5,
+        smallFlockValueScore:
+          5,
 
-        largeFlockValueScore: 5,
+        largeFlockValueScore:
+          4,
 
         primaryGoalMatches: [
           "reduce-feed-use",
@@ -55406,10 +56169,12 @@ const BCP_FEED_CROPS = {
           "winter-storage",
           "enrichment",
           "resilience-feed",
-          "limited-irrigation",
-          "seed-saving",
           "self-reliance",
-          "compost-biomass"
+          "non-electric-storage",
+          "seed-saving",
+          "privacy-screening",
+          "compost-biomass",
+          "use-unused-space"
         ],
 
         weakGoalMatches: [
@@ -55419,598 +56184,675 @@ const BCP_FEED_CROPS = {
           "nitrogen-fixation",
           "pollinators",
           "container-production",
-          "partial-shade"
+          "small-space-production",
+          "perennial-production",
+          "year-round-living-forage"
         ],
 
         directFacts: {
-          nitrogenFixingLegume: false,
+          nitrogenFixingLegume:
+            false,
 
-          annualEnergyGrain: true,
+          perennialInfrastructureCrop:
+            false,
+
+          permanentProductionPatch:
+            false,
+
+          concentratedEnergyPotential:
+            true,
+
+          concentratedProteinPotential:
+            false,
+
+          freshGreenSupplementPotential:
+            false,
 
           wholeHeadEnrichmentPotential:
             true,
 
-          longTermDryStoragePotential:
+          looseGrainSupplementPotential:
             true,
 
-          droughtResilientProduction:
+          winterStoragePotential:
             true,
 
-          notes: [
-            "Grain Sorghum is among the strongest heat- and drought-resilient grain crops in the initial planner.",
-            "It can provide substantial energy-oriented grain with less water than Field Corn.",
-            "Whole seed heads provide useful pecking enrichment.",
-            "Dry grain can store for extended periods when moisture and pests are controlled.",
-            "It does not fix nitrogen.",
-            "It is not a fresh-green or protein-oriented crop.",
-            "Its value depends heavily on selecting an appropriate low-tannin grain variety.",
-            "The crop remains annual and requires yearly planting."
-          ]
-        }
-      },
-
-      risks: {
-        wildlife: {
-          wildBirds: 5,
-          deer: 3,
-          raccoons: 2,
-          squirrels: 3,
-          rabbits: 2,
-          rodents: 5,
-          groundhogs: 2
-        },
-
-        insectsRiskScore: 4,
-
-        diseaseRiskScore: 4,
-
-        lodgingRiskScore: 3,
-
-        fieldMoldRiskScore: 5,
-
-        dryingMoldRiskScore: 5,
-
-        storageMoldRiskScore: 5,
-
-        storedInsectRiskScore: 5,
-
-        spoilageSpeedRiskScore: 2,
-
-        invasivenessConcernRiskScore: 1,
-
-        selfSeedingRiskScore: 2,
-
-        fruitDropRiskScore: 1,
-
-        cropFailureRiskScore: 3,
-
-        stormDamageRiskScore: 3,
-
-        shadingOtherCropsRiskScore: 4,
-
-        overfeedingRiskScore: 5,
-
-        treatedSeedRiskScore: 5,
-
-        primaryRisks: [
-          {
-            id:
-              "high-tannin-grain",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "variety-selection",
-              "feeding"
-            ],
-
-            mitigationOptions: [
-              "Select low-tannin or tannin-free grain varieties",
-              "Buy seed intended for grain or feed use",
-              "Verify cultivar information",
-              "Do not assume grain color proves tannin level"
-            ],
-
-            note:
-              "High-tannin grain may reduce palatability, protein digestion, and usable energy."
-          },
-
-          {
-            id:
-              "wild-bird-head-loss",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "soft-dough",
-              "grain-fill",
-              "maturity"
-            ],
-
-            mitigationOptions: [
-              "Use bird netting",
-              "Use exclusion or deterrence",
-              "Harvest promptly",
-              "Monitor heads frequently",
-              "Choose a manageable plot size"
-            ],
-
-            note:
-              "Exposed mature heads can attract substantial wild-bird feeding."
-          },
-
-          {
-            id:
-              "field-grain-mold",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "flowering",
-              "grain-fill",
-              "maturity",
-              "field-dry-down"
-            ],
-
-            mitigationOptions: [
-              "Use adapted disease-resistant varieties",
-              "Avoid unnecessary harvest delay",
-              "Separate damaged heads",
-              "Promote airflow",
-              "Finish drying under cover"
-            ],
-
-            note:
-              "Wet or humid weather can increase grain-mold and toxin risk."
-          },
-
-          {
-            id:
-              "incomplete-drying",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "harvest",
-              "drying",
-              "storage"
-            ],
-
-            mitigationOptions: [
-              "Dry heads thinly with airflow",
-              "Thresh only after adequate drying",
-              "Use a moisture meter where practical",
-              "Do not seal warm or damp grain",
-              "Reinspect stored grain"
-            ],
-
-            note:
-              "Grain stored too wet may heat, mold, and spoil."
-          },
-
-          {
-            id:
-              "stored-grain-insects-and-rodents",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "storage"
-            ],
-
-            mitigationOptions: [
-              "Use pest-resistant containers",
-              "Clean storage areas",
-              "Store only dry grain",
-              "Inspect regularly",
-              "Discard contaminated grain"
-            ],
-
-            note:
-              "Sorghum grain remains highly attractive to insects and rodents."
-          },
-
-          {
-            id:
-              "drought-during-reproductive-growth",
-
-            severity:
-              "high",
-
-            affectedStages: [
-              "boot-stage",
-              "heading",
-              "flowering",
-              "pollination",
-              "grain-fill"
-            ],
-
-            mitigationOptions: [
-              "Irrigate during critical stages",
-              "Use adapted maturity classes",
-              "Reduce plant density under dry conditions",
-              "Maintain soil organic matter",
-              "Control weeds"
-            ],
-
-            note:
-              "Sorghum tolerates drought better than Corn, but severe reproductive-stage stress still reduces grain yield."
-          },
-
-          {
-            id:
-              "crop-type-confusion",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "seed-selection",
-              "planting",
-              "feeding"
-            ],
-
-            mitigationOptions: [
-              "Use true grain Sorghum",
-              "Do not substitute forage Sorghum or Sudangrass",
-              "Keep seed labels",
-              "Verify the intended crop type"
-            ],
-
-            note:
-              "Grain Sorghum should not be confused with forage Sorghum, Sudangrass, or Sorghum-Sudangrass hybrids."
-          },
-
-          {
-            id:
-              "treated-seed",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "planting",
-              "feeding"
-            ],
-
-            mitigationOptions: [
-              "Use untreated seed where poultry could access it",
-              "Keep treated planting seed secured",
-              "Never feed planting seed"
-            ],
-
-            note:
-              "Chemically treated seed must never be fed."
-          },
-
-          {
-            id:
-              "balanced-feed-displacement",
-
-            severity:
-              "very-high",
-
-            affectedStages: [
-              "feeding"
-            ],
-
-            mitigationOptions: [
-              "Continue complete poultry feed",
-              "Measure supplemental grain",
-              "Avoid unrestricted scratch feeding",
-              "Monitor flock condition and production"
-            ],
-
-            note:
-              "Excess Sorghum can dilute protein, calcium, vitamins, minerals, and essential amino acids."
-          }
-        ],
-
-        directFacts: {
-          tanninConcern: true,
-
-          wildBirdLossConcern: true,
-
-          reproductiveDroughtConcern: true,
-
-          grainMoldConcern: true,
-
-          mycotoxinConcern: true,
-
-          storagePestConcern: true,
-
-          cropTypeConfusionConcern:
+          nonElectricStoragePotential:
             true,
 
-          notes: [
-            "Low-tannin variety selection is essential for poultry-oriented recommendations.",
-            "Wild birds may remove substantial grain before harvest.",
-            "Sorghum is drought resilient but not drought proof.",
-            "Sound appearance alone does not prove freedom from harmful mold toxins.",
-            "Moldy, musty, heated, insect-damaged, contaminated, or questionable grain should not be fed.",
-            "The planner record applies only to mature grain Sorghum."
-          ]
-        }
-      },
+          droughtResiliencePotential:
+            true,
 
-      seasonalRoles: {
-        earlySpring: false,
+          householdFoodPotential:
+            true,
 
-        lateSpring: true,
-
-        summer: true,
-
-        lateSummer: true,
-
-        fall: true,
-
-        winterStorage: true,
-
-        perennial: false,
-
-        plantingWindows: [
-          {
-            id:
-              "warm-soil-direct-seeding",
-
-            trigger:
-              "after-frost-and-soil-warming",
-
-            offsetWeeksMinimum: 1,
-
-            offsetWeeksMaximum: 4,
-
-            soilCondition:
-              "warm-moist-and-workable",
-
-            method:
-              "direct-seed-grain-sorghum",
-
-            note:
-              "Plant after frost danger when soil is approximately 60°F or warmer."
-          }
-        ],
-
-        harvestWindows: [
-          {
-            id:
-              "whole-dried-grain-sorghum-heads",
-
-            trigger:
-              "physiological-maturity-and-dry-down",
-
-            usePathId:
-              "whole-dried-grain-sorghum-heads",
-
-            note:
-              "Cut mature heads before excessive bird loss or prolonged wet weather and finish drying under cover."
-          },
-
-          {
-            id:
-              "threshed-whole-grain-sorghum",
-
-            trigger:
-              "fully-dried-seed-heads",
-
-            usePathId:
-              "threshed-whole-grain-sorghum",
-
-            note:
-              "Thresh, winnow, and clean only after seed heads are adequately dry."
-          },
-
-          {
-            id:
-              "cracked-or-ground-grain-sorghum",
-
-            trigger:
-              "clean-dry-threshed-grain",
-
-            usePathId:
-              "cracked-or-ground-grain-sorghum",
-
-            note:
-              "Process small batches and protect processed grain from moisture and pests."
-          }
-        ],
-
-        cropSequenceRoles: [
-          "Warm-season drought-resilient grain",
-          "Winter-storage crop",
-          "Whole-head enrichment crop",
-          "Annual self-reliance grain",
-          "Postharvest compost-biomass crop"
-        ],
-
-        seasonalLimitations: [
-          "Frost kills active plants",
-          "Cool soil delays emergence",
-          "Short seasons may prevent complete maturity",
-          "Wild birds may consume heads before harvest",
-          "Humid autumn weather complicates dry-down",
-          "Stored grain requires year-round monitoring"
-        ],
-
-        directFacts: {
-          warmSeasonAnnual: true,
-
-          directSeedingPreferred: true,
-
-          compactBlockPollinationRequired:
+          pollinatorSupportPotential:
             false,
 
-          grainDryDownRequired: true,
+          seasonalPrivacyScreenPotential:
+            true,
 
-          winterStoragePossible: true,
+          compostBiomassPotential:
+            true,
+
+          erosionControlPotential:
+            true,
+
+          seedSavingPotential:
+            true,
+
+          annualCropRotationRelevant:
+            true,
+
+          rapidFirstSeasonValue:
+            true,
 
           notes: [
-            "Grain Sorghum should be planted only after the soil warms.",
-            "The crop grows most rapidly during hot weather.",
-            "Heading and flowering occur during summer.",
-            "Maturity timing depends on variety, temperature, planting date, and moisture.",
-            "Seed heads may need protected drying after harvest.",
-            "Dry grain can provide value through winter."
+            "Grain Sorghum is strongest as a heat-tolerant, drought-resilient energy-grain crop.",
+            "Its primary poultry-feed value comes from mature dry grain and whole mature panicles.",
+            "Whole panicles provide strong enrichment value with relatively little processing.",
+            "Clean loose grain provides better measurement precision and storage efficiency.",
+            "The crop provides little dependable living-forage or fresh-green value under this grain-specific record.",
+            "It does not fix nitrogen.",
+            "Residue can contribute compost carbon, mulch, soil cover, and organic matter after harvest.",
+            "Tall varieties may provide seasonal privacy screening.",
+            "Grain can be stored without electricity when properly dried and protected.",
+            "Low-tannin open-pollinated cultivars may support seed-saving goals.",
+            "Hybrid seed may not reproduce true to type.",
+            "The crop is potentially useful for both small and larger flocks, but useful feed volume depends upon planting area, yield, bird loss, harvest efficiency, and processing losses.",
+            "It should not be selected as the primary crop for users seeking fresh greens, a permanent forage planting, high protein, nitrogen fixation, or container efficiency.",
+            "Goal scores are comparative planner values rather than promises of a specific feed-saving result."
           ]
         }
       },
+      
+       risks: {
+        overallRiskLevel:
+          "moderate",
 
-      usePaths: [
-        {
-          id:
-            "whole-dried-grain-sorghum-heads",
+        wildlife: {
+          wildBirds:
+            5,
 
-          label:
-            "Whole Dried Grain-Sorghum Heads",
+          deer:
+            3,
 
-          description:
-            "Mature low-tannin Grain-Sorghum heads are harvested, dried thoroughly, inspected, and offered whole for adult-chicken pecking enrichment.",
+          raccoons:
+            2,
 
-          primaryFeedRole:
-            "whole-head-energy-enrichment",
+          squirrels:
+            3,
 
-          harvestProducts: [
-            "dried-seed-heads",
-            "whole-sorghum-heads",
-            "sorghum-panicles",
-            "stored-enrichment"
-          ],
+          rabbits:
+            2,
 
-          suitableFeedingMethods: [
-            "whole-seed-heads",
-            "pecking-enrichment",
-            "winter-supplement"
-          ],
+          rodents:
+            5,
 
-          requiredProcessingTasks: [
-            "cut-seed-heads",
-            "dry"
-          ],
-
-          optionalProcessingTasks: [
-            "clean-sort"
-          ],
-
-          requiredEquipment: [],
-
-          helpfulEquipment: [
-            "bird-netting",
-            "drying-rack",
-            "drying-screen",
-            "fan",
-            "moisture-meter",
-            "rodent-proof-storage"
-          ],
-
-          harvestPattern:
-            "major",
-
-          harvestFrequencyCategory:
-            "single-seasonal",
-
-          storageMethods: [
-            "dry-whole-seed-heads"
-          ],
-
-          preferredStorageMethod:
-            "cool-dry-ventilated-and-rodent-protected",
-
-          storageDurationCategory:
-            "long",
-
-          nonElectricStorageSuitable: true,
-
-          refrigerationSuitable: false,
-          freezingSuitable: false,
-
-          dryingRequired: true,
-          curingRequired: false,
-          shellingRequired: false,
-          threshingRequired: false,
-          cookingRequired: false,
-          grindingRequired: false,
-
-          moistureSensitive: true,
-
-          moldRiskScore: 5,
-          rodentRiskScore: 5,
-          storedInsectRiskScore: 4,
-
-          harvestEaseScore: 5,
-          preparationEaseScore: 4,
-          beginnerSuitabilityScore: 4,
-
-          householdFoodValueScore: 1,
-          flockValueScore: 5,
-
-          safetyWarnings: [
-            "Use low-tannin or tannin-free grain Sorghum.",
-            "Dry heads thoroughly before storage.",
-            "Inspect for mold, heating, insects, rodents, and musty odor.",
-            "Discard damaged or questionable heads.",
-            "Whole heads remain supplemental to complete poultry feed.",
-            "Provide appropriate grit."
-          ],
-
-          incompatibleUserTraits: [
-            "has-no-drying-capability",
-            "has-no-rodent-protection",
-            "requires-immediate-fresh-greens",
-            "cannot-manage-wild-bird-pressure"
-          ]
+          groundhogs:
+            3
         },
 
+        establishmentFailureRiskScore:
+          3,
+
+        weedCompetitionRiskScore:
+          4,
+
+        droughtEstablishmentRiskScore:
+          3,
+
+        matureDroughtRiskScore:
+          2,
+
+        waterloggingRiskScore:
+          4,
+
+        heatDamageRiskScore:
+          1,
+
+        frostDamageRiskScore:
+          5,
+
+        stormDamageRiskScore:
+          3,
+
+        lodgingRiskScore:
+          3,
+
+        shatteringRiskScore:
+          3,
+
+        birdLossRiskScore:
+          5,
+
+        wildlifePressureScore:
+          5,
+
+        deerBrowsingRiskScore:
+          3,
+
+        rabbitBrowsingRiskScore:
+          2,
+
+        rodentAttractionScore:
+          5,
+
+        insectDamageRiskScore:
+          4,
+
+        diseaseRiskScore:
+          4,
+
+        moldRiskScore:
+          5,
+
+        harvestWeatherRiskScore:
+          4,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          5,
+
+        storageMoistureRiskScore:
+          5,
+
+        contaminationRiskScore:
+          5,
+
+        misidentificationRiskScore:
+          5,
+
+        chemicalExposureRiskScore:
+          5,
+
+        nitrateAccumulationRiskScore:
+          5,
+
+        oxalateConcernScore:
+          1,
+
+        antinutritionalFactorRiskScore:
+          4,
+
+        completeFeedDisplacementRiskScore:
+          5,
+
+        selectiveFeedingRiskScore:
+          4,
+
+        flockOverconsumptionRiskScore:
+          4,
+
+        selfSeedingRiskScore:
+          3,
+
+        invasivenessRiskScore:
+          1,
+
+        crossPollinationRiskScore:
+          3,
+
+        allergenOrDustExposureRiskScore:
+          3,
+
+        mechanicalHarvestSuitabilityScore:
+          5,
+
+        mechanicalProcessingSuitabilityScore:
+          5,
+
+        riskFactors: [
+          {
+            id:
+              "cold-soil-establishment-failure",
+
+            category:
+              "soil-and-establishment",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Grain Sorghum planted into cold soil may germinate slowly and unevenly, suffer seed decay, produce weak seedlings, lose stand density, and experience greater early weed competition.",
+
+            mitigation: [
+              "Wait until soil temperature is consistently near 60°F or warmer.",
+              "Plant into a prepared, firm, weed-controlled seedbed.",
+              "Use sound, high-quality seed adapted to the region.",
+              "Avoid planting immediately before prolonged cool and wet weather.",
+              "Check emergence promptly and replant only where stand failure is severe."
+            ]
+          },
+
+          {
+            id:
+              "early-frost-or-short-season-failure",
+
+            category:
+              "climate",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "A short frost-free season, delayed planting, unusually cool summer, or early autumn frost may prevent heading, pollination, grain filling, physiological maturity, or adequate field dry-down.",
+
+            mitigation: [
+              "Select an early-maturing Grain Sorghum cultivar.",
+              "Plant promptly after the soil becomes adequately warm.",
+              "Use the warmest suitable full-sun location.",
+              "Avoid cultivars with maturity requirements longer than the dependable local season.",
+              "Finish drying physiologically mature heads under protected airflow when field drying becomes unreliable."
+            ]
+          },
+
+          {
+            id:
+              "waterlogged-soil",
+
+            category:
+              "soil-and-establishment",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Prolonged saturated soil can restrict root oxygen, reduce emergence, weaken root development, increase disease pressure, reduce nutrient uptake, and eliminate much of Sorghum's normal drought resilience.",
+
+            mitigation: [
+              "Plant in well-drained soil.",
+              "Avoid depressions, compacted areas, and locations receiving concentrated runoff.",
+              "Improve drainage before planting.",
+              "Do not irrigate faster than the soil can absorb and drain water.",
+              "Avoid working or compacting wet soil."
+            ]
+          },
+
+          {
+            id:
+              "weed-competition-during-establishment",
+
+            category:
+              "field-production",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Young Grain Sorghum seedlings may grow slowly enough for aggressive weeds to compete for sunlight, water, nutrients, and planting space before the crop develops a competitive canopy.",
+
+            mitigation: [
+              "Prepare a clean seedbed.",
+              "Control perennial weeds before planting.",
+              "Use stale-seedbed or preplant weed-control methods where practical.",
+              "Cultivate, hoe, or hand-weed while weeds remain small.",
+              "Use row spacing compatible with the available weed-control method.",
+              "Avoid damaging young Sorghum roots during cultivation."
+            ]
+          },
+
+          {
+            id:
+              "reproductive-stage-drought",
+
+            category:
+              "water-management",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Although Grain Sorghum survives drought well, severe water stress during boot stage, heading, flowering, pollination, and grain filling can reduce head size, seed number, kernel weight, and usable harvest.",
+
+            mitigation: [
+              "Preserve available soil moisture through early weed control.",
+              "Reduce plant population where seasonal water is severely limited.",
+              "Provide supplemental irrigation during critical reproductive stages when practical.",
+              "Select drought-adapted cultivars.",
+              "Avoid assuming that drought survival guarantees full grain production."
+            ]
+          },
+
+          {
+            id:
+              "excessive-nitrogen-and-lodging",
+
+            category:
+              "fertility-and-field-production",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Excessive nitrogen may encourage lush vegetative growth, delayed maturity, weak stalks, increased lodging, greater insect or disease susceptibility, and reduced harvest efficiency.",
+
+            mitigation: [
+              "Base nitrogen application on soil testing and realistic yield goals.",
+              "Credit residual fertility from manure, compost, legumes, or previous crops.",
+              "Avoid heavy late nitrogen applications.",
+              "Maintain adequate potassium and balanced fertility.",
+              "Choose cultivars with dependable stalk strength."
+            ]
+          },
+
+          {
+            id:
+              "lodging-and-stalk-breakage",
+
+            category:
+              "field-production",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Strong wind, storms, excessive nitrogen, dense planting, stalk insects, disease, delayed harvest, or weak cultivar structure may cause plants to lean, lodge, or break before harvest.",
+
+            mitigation: [
+              "Choose a cultivar with good stalk strength.",
+              "Avoid unnecessary plant density.",
+              "Avoid excessive nitrogen.",
+              "Maintain balanced fertility.",
+              "Monitor stalk health as grain matures.",
+              "Harvest promptly after grain reaches maturity."
+            ]
+          },
+
+          {
+            id:
+              "wild-bird-grain-loss",
+
+            category:
+              "wildlife",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              5,
+
+            description:
+              "Exposed mature Grain Sorghum panicles are highly attractive to many wild birds, which may remove a substantial portion of the grain before harvest.",
+
+            mitigation: [
+              "Monitor heads closely as kernels begin to harden.",
+              "Use bird netting, head bags, or another suitable exclusion system.",
+              "Install protection before severe feeding begins.",
+              "Harvest promptly when grain reaches maturity.",
+              "Finish drying harvested panicles in a protected location.",
+              "Remove spilled grain that continues attracting birds."
+            ]
+          },
+
+          {
+            id:
+              "deer-and-mammal-damage",
+
+            category:
+              "wildlife",
+
+            severityScore:
+              3,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Deer, groundhogs, rabbits, squirrels, raccoons, and other mammals may browse seedlings, damage stems, pull plants down, consume developing grain, or enter drying and storage areas.",
+
+            mitigation: [
+              "Use fencing or exclusion where local pressure is significant.",
+              "Protect small trial plots during establishment.",
+              "Monitor field edges for browsing and trampling.",
+              "Harvest mature heads promptly.",
+              "Keep drying and storage areas inaccessible to wildlife."
+            ]
+          },
+
+          {
+            id:
+              "insect-damage",
+
+            category:
+              "field-production",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Aphids, head-feeding insects, stem borers, grain-feeding insects, and other pests may reduce plant vigor, damage developing kernels, promote lodging, contaminate grain, or create entry points for mold.",
+
+            mitigation: [
+              "Inspect leaves, stems, and developing heads regularly.",
+              "Use locally adapted resistant or tolerant cultivars where available.",
+              "Encourage beneficial insects where compatible with the production system.",
+              "Use only poultry-safe and label-compliant pest-management methods.",
+              "Harvest damaged heads promptly when mature.",
+              "Reject heavily damaged or deteriorated grain."
+            ]
+          },
+
+          {
+            id:
+              "grain-mold-and-weathering",
+
+            category:
+              "disease-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Warm humid weather, repeated rain, delayed harvest, insect injury, dense heads, and slow dry-down may encourage grain mold, weathering, discoloration, deterioration, reduced germination, and possible mycotoxin contamination.",
+
+            mitigation: [
+              "Select cultivars with locally documented grain-mold resistance.",
+              "Avoid maturity dates that place harvest in prolonged wet weather.",
+              "Maintain airflow through the stand.",
+              "Manage insects and lodging.",
+              "Harvest promptly after physiological maturity and suitable dry-down.",
+              "Dry harvested panicles under strong protected airflow.",
+              "Reject moldy, musty, heated, discolored, or deteriorated grain."
+            ]
+          },
+
+          {
+            id:
+              "ergot-contamination",
+
+            category:
+              "disease-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              2,
+
+            description:
+              "Ergot infection during flowering may replace developing kernels with fungal material or leave sticky honeydew and contaminated grain that is unsafe for poultry feeding.",
+
+            mitigation: [
+              "Inspect flowering heads and mature grain for honeydew, abnormal kernels, and fungal structures.",
+              "Avoid feeding grain from visibly infected panicles.",
+              "Clean harvesting and processing equipment after handling suspect grain.",
+              "Do not dilute contaminated grain into sound grain.",
+              "Seek laboratory or extension guidance where ergot contamination is suspected."
+            ]
+          },
+
+          {
+            id:
+              "mycotoxin-contamination",
+
+            category:
+              "disease-and-feed-safety",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              3,
+
+            description:
+              "Fungal infection before or after harvest may contaminate Sorghum grain with mycotoxins that cannot be judged reliably by appearance, smell, or home processing alone.",
+
+            mitigation: [
+              "Prevent grain mold through cultivar selection, timely harvest, and rapid drying.",
+              "Do not feed visibly moldy, musty, heated, or weather-damaged grain.",
+              "Do not blend questionable grain into sound grain.",
+              "Use laboratory testing when contamination is suspected.",
+              "Discard grain that cannot be verified as safe."
+            ]
+          },
+
+          {
+            id:
+              "harvest-weather-loss",
+
+            category:
+              "harvest",
+
+            severityScore:
+              4,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Rain, humidity, storms, frost, prolonged cloud cover, and delayed field drying may increase lodging, shattering, grain mold, discoloration, sprouting, wildlife loss, and postharvest drying requirements.",
+
+            mitigation: [
+              "Monitor grain maturity and weather forecasts closely.",
+              "Harvest promptly once grain is mature enough for safe collection.",
+              "Avoid leaving mature heads exposed solely to obtain complete field drying.",
+              "Use protected drying racks, screens, or bundles with strong airflow.",
+              "Keep harvested heads out of rain and away from soil."
+            ]
+          },
+
+          {
+            id:
+              "inadequate-postharvest-drying",
+
+            category:
+              "postharvest",
+
+            severityScore:
+              5,
+
+            likelihoodScore:
+              4,
+
+            description:
+              "Whole panicles or threshed grain stored while too moist may heat, cake, ferment, mold, attract insects, lose nutritional quality, and become unsafe for poultry.",
+
+            mitigation: [
+              "Dry panicles thoroughly before threshing or enclosed storage.",
+              "Spread harvested material in shallow layers.",
+              "Maintain strong airflow around drying grain.",
+              "Turn or rearrange heads where needed for uniform drying.",
+              "Avoid sealing grain while it remains warm.",
+              "Use a suitable grain-moisture meter when practical.",
+              "Inspect repeatedly during drying and storage."
+            ]
+          } 
+         ]
+        },
+          
+              usePaths: [
         {
           id:
-            "threshed-whole-grain-sorghum",
+            "whole-dry-grain-sorghum",
 
           label:
-            "Threshed Whole Grain Sorghum",
+            "Whole Dry Grain Sorghum",
 
           description:
-            "Fully dried low-tannin Sorghum heads are threshed, winnowed, cleaned, and stored as whole grain for measured adult-chicken supplementation.",
+            "Mature Grain Sorghum is harvested after physiological maturity, dried thoroughly, threshed, winnowed, cleaned, inspected, and stored whole for measured supplementation of established adult chickens.",
 
           primaryFeedRole:
             "whole-energy-grain",
 
           harvestProducts: [
-            "dry-grain",
-            "sorghum-grain",
-            "milo-grain",
-            "whole-grain",
-            "stored-grain"
+            "mature-dry-grain-sorghum",
+            "whole-sorghum-grain",
+            "milo",
+            "stored-cereal-grain",
+            "energy-oriented-feed-grain"
           ],
 
           suitableFeedingMethods: [
             "whole-grain",
             "measured-supplement",
-            "winter-storage"
+            "winter-supplement",
+            "stored-feed-ingredient"
           ],
 
           requiredProcessingTasks: [
-            "cut-seed-heads",
+            "harvest-mature-grain-heads",
             "dry",
             "thresh",
             "winnow",
-            "clean-sort"
+            "screen",
+            "clean-sort",
+            "inspect-moisture"
           ],
 
-          optionalProcessingTasks: [],
+          optionalProcessingTasks: [
+            "freeze-for-insect-control",
+            "portion",
+            "laboratory-test-questionable-grain",
+            "save-seed"
+          ],
 
           requiredEquipment: [],
 
           helpfulEquipment: [
-            "threshing-bag",
+            "harvest-tarp",
+            "hand-pruners",
+            "sickle",
+            "drying-screen",
+            "drying-rack",
             "fan",
-            "screens-trays",
+            "threshing-container",
+            "mechanical-thresher",
+            "grain-screen",
+            "winnowing-fan",
             "moisture-meter",
+            "food-safe-bucket",
             "metal-grain-can",
-            "food-safe-bucket"
+            "rodent-resistant-storage"
           ],
 
           harvestPattern:
@@ -56020,325 +56862,1838 @@ const BCP_FEED_CROPS = {
             "single-seasonal",
 
           storageMethods: [
-            "dry-whole-grain"
+            "sealed-dry-grain-storage",
+            "rodent-resistant-room-temperature-storage"
           ],
 
           preferredStorageMethod:
-            "cool-dry-airtight-and-pest-resistant",
+            "whole-clean-dry-grain-sorghum-in-a-cool-dark-dry-and-rodent-resistant-container",
 
           storageDurationCategory:
             "long",
 
-          nonElectricStorageSuitable: true,
+          nonElectricStorageSuitable:
+            true,
 
-          refrigerationSuitable: false,
-          freezingSuitable: false,
+          refrigerationSuitable:
+            false,
 
-          dryingRequired: true,
-          curingRequired: false,
-          shellingRequired: false,
-          threshingRequired: true,
-          cookingRequired: false,
-          grindingRequired: false,
+          freezingSuitable:
+            true,
 
-          moistureSensitive: true,
+          dryingRequired:
+            true,
 
-          moldRiskScore: 5,
-          rodentRiskScore: 5,
-          storedInsectRiskScore: 5,
+          curingRequired:
+            false,
 
-          harvestEaseScore: 3,
-          preparationEaseScore: 2,
-          beginnerSuitabilityScore: 3,
+          shellingRequired:
+            false,
 
-          householdFoodValueScore: 1,
-          flockValueScore: 5,
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            5,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "whole-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-cracking",
+            "later-grinding",
+            "later-sprouting",
+            "seed-saving"
+          ],
+
+          preservationLimitations: [
+            "Grain Sorghum must be physiologically mature, clean, cool, and adequately dry before sealed storage.",
+            "Whole grain remains vulnerable to moisture, condensation, insects, rodents, and contamination.",
+            "Dense Sorghum panicles may dry unevenly and may conceal damp grain, insects, mold, or damaged kernels.",
+            "High-tannin varieties may have lower palatability and lower poultry-feed value than low-tannin or tannin-free varieties.",
+            "Grain color alone does not reliably establish tannin content.",
+            "Storage duration varies with grain moisture, temperature, humidity, sanitation, container quality, and pest pressure.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "long",
+
+          shelfLifeAfterProcessingCategory:
+            "long-when-stored-whole-clean-and-dry",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-browsing",
+            "lodging",
+            "shattering",
+            "rain-during-maturity",
+            "grain-mold",
+            "grain-left-during-threshing",
+            "chaff-contamination",
+            "insufficient-drying",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "condensation"
+          ],
 
           safetyWarnings: [
-            "Use low-tannin or tannin-free grain.",
-            "Thresh only fully dried heads.",
-            "Store only clean, sound, dry grain.",
-            "Inspect for mold, insects, rodents, condensation, and heating.",
-            "Do not feed questionable grain.",
-            "Provide appropriate grit.",
-            "Whole grain remains supplemental to complete poultry feed."
+            "Use only correctly identified Grain Sorghum intended for mature grain production.",
+            "Do not substitute forage Sorghum, Sudangrass, Sorghum-Sudangrass hybrids, Sweet Sorghum, broomcorn, or unknown Sorghum types.",
+            "Use only sound, untreated grain intended for food, feed, forage, or seed-saving use.",
+            "Never feed chemically treated planting seed.",
+            "Do not feed grain contaminated by ergot, grain mold, mycotoxins, rodents, insects, chemicals, floodwater, soil, or unknown substances.",
+            "Reject grain that is musty, sour, heated, damp, visibly moldy, unusually discolored, sprouted in storage, badly weathered, or severely insect-damaged.",
+            "Grain that appears visually sound may still contain mycotoxins.",
+            "A grain lot suspected of mold or mycotoxin contamination may require laboratory testing.",
+            "Cooking, washing, freezing, cracking, grinding, or sprouting does not reliably neutralize mycotoxins or chemical seed treatments.",
+            "Select a documented low-tannin or tannin-free Grain Sorghum variety when possible for poultry-feed use.",
+            "Do not assume that red, bronze, yellow, white, brown, or black grain automatically indicates a particular tannin level.",
+            "Whole Grain Sorghum is primarily an energy and starch supplement rather than a complete poultry feed.",
+            "Whole grain is most appropriate for established adult chickens with access to appropriately sized insoluble grit.",
+            "Grain Sorghum should remain a measured supplement unless included in a professionally formulated complete ration.",
+            "Grain Sorghum does not provide sufficient calcium or a complete essential-amino-acid balance for laying hens.",
+            "No universal safe inclusion percentage is stored for backyard flocks.",
+            "Continue providing an age-appropriate complete poultry ration."
           ],
 
           incompatibleUserTraits: [
-            "declines-threshing",
             "has-no-drying-capability",
-            "has-no-dry-storage",
-            "has-no-rodent-protection",
-            "requires-minimal-processing"
+            "has-no-threshing-capability",
+            "has-no-winnowing-or-cleaning-capability",
+            "has-no-protected-storage",
+            "cannot-monitor-stored-grain",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks",
+            "cannot-identify-seed-treatment-status",
+            "cannot-distinguish-grain-sorghum-from-forage-sorghum",
+            "cannot-inspect-for-mold-or-ergot",
+            "cannot-select-low-tannin-grain"
           ]
         },
-
-        {
+        
+                {
           id:
-            "cracked-or-ground-grain-sorghum",
+            "cracked-dry-grain-sorghum",
 
           label:
-            "Cracked or Coarsely Ground Grain Sorghum",
+            "Cracked Dry Grain Sorghum",
 
           description:
-            "Clean, fully dried, low-tannin Sorghum grain is cracked or coarsely ground shortly before feeding as a measured energy supplement.",
+            "Clean, fully dried Grain Sorghum is cracked into coarse pieces to improve handling, mixing, and consumption by established adult chickens.",
 
           primaryFeedRole:
             "processed-energy-grain",
 
           harvestProducts: [
-            "cracked-grain",
-            "ground-grain",
-            "processed-sorghum",
-            "dry-grain"
+            "cracked-grain-sorghum",
+            "coarsely-broken-sorghum-grain",
+            "processed-cereal-grain",
+            "supplemental-ration-ingredient"
           ],
 
           suitableFeedingMethods: [
             "processed-grain",
             "measured-supplement",
-            "ration-ingredient"
+            "ration-mixing",
+            "winter-supplement"
           ],
 
           requiredProcessingTasks: [
-            "cut-seed-heads",
+            "harvest-mature-grain-heads",
             "dry",
             "thresh",
             "winnow",
+            "screen",
             "clean-sort",
-            "crack-grain"
+            "inspect-moisture",
+            "crack"
           ],
 
-          optionalProcessingTasks: [],
+          optionalProcessingTasks: [
+            "screen-particle-size",
+            "measure",
+            "blend",
+            "portion",
+            "prepare-small-batches"
+          ],
 
           requiredEquipment: [
-            "grain-cracker"
+            "grain-cracker-or-suitable-coarse-processing-method"
           ],
 
           helpfulEquipment: [
-            "grain-mill",
+            "harvest-tarp",
+            "drying-screen",
             "fan",
-            "screens-trays",
+            "grain-screen",
             "moisture-meter",
-            "food-safe-bucket"
+            "grain-cracker",
+            "feed-scale",
+            "mixing-container",
+            "dust-mask-or-respirator",
+            "food-safe-storage-container"
           ],
 
           harvestPattern:
-            "major",
+            "batch",
 
           harvestFrequencyCategory:
-            "process-in-small-batches",
+            "processed-as-needed",
 
           storageMethods: [
-            "dry-whole-grain-before-processing",
-            "short-term-processed-grain"
+            "short-to-moderate-term-dry-storage",
+            "sealed-food-safe-container"
           ],
 
           preferredStorageMethod:
-            "store-whole-and-process-small-batches",
+            "store-grain-sorghum-whole-and-crack-only-manageable-batches-close-to-feeding-time",
 
           storageDurationCategory:
-            "medium",
+            "moderate",
 
-          nonElectricStorageSuitable: true,
+          nonElectricStorageSuitable:
+            true,
 
-          refrigerationSuitable: false,
-          freezingSuitable: false,
+          refrigerationSuitable:
+            false,
 
-          dryingRequired: true,
-          curingRequired: false,
-          shellingRequired: false,
-          threshingRequired: true,
-          cookingRequired: false,
-          grindingRequired: true,
+          freezingSuitable:
+            true,
 
-          moistureSensitive: true,
+          dryingRequired:
+            true,
 
-          moldRiskScore: 5,
-          rodentRiskScore: 5,
-          storedInsectRiskScore: 4,
+          curingRequired:
+            false,
 
-          harvestEaseScore: 2,
-          preparationEaseScore: 1,
-          beginnerSuitabilityScore: 2,
+          shellingRequired:
+            false,
 
-          householdFoodValueScore: 1,
-          flockValueScore: 5,
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            4,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-to-moderate-term-dry-storage",
+            "freezing-for-storage-insect-control",
+            "portioning",
+            "later-grinding",
+            "ration-mixing"
+          ],
+
+                    preservationLimitations: [
+            "Grain Sorghum should ideally be stored whole and cracked only as needed because cracking exposes additional surface area to moisture, oxygen, insects, and quality loss.",
+            "Cracked grain generally has a shorter practical storage life than intact grain.",
+            "Processed grain must remain cool, dry, clean, and protected from rodents, insects, condensation, and mold.",
+            "Grain should not be cracked until it has been properly dried, cleaned, and inspected.",
+            "Particle size should remain relatively coarse because excessive fines increase dust, ingredient separation, waste, and spoilage potential.",
+            "Storage duration varies with grain moisture, temperature, humidity, sanitation, container quality, and pest pressure.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-whole-grain",
+
+          likelyLossPoints: [
+            "grain-left-during-processing",
+            "excessive-fines",
+            "dust-loss",
+            "moisture-absorption",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "condensation",
+            "ingredient-separation"
+          ],
 
           safetyWarnings: [
-            "Use low-tannin or tannin-free grain.",
-            "Process only sound, fully dried grain.",
-            "Grinding does not make moldy or contaminated grain safe.",
-            "Store whole grain and process small batches where practical.",
-            "Protect processed grain from moisture and pests.",
-            "Use only within an appropriately balanced feeding program."
+            "Use only correctly identified Grain Sorghum intended for poultry feed.",
+            "Never process or feed chemically treated planting seed.",
+            "Do not crack grain contaminated by ergot, mold, mycotoxins, rodents, insects, chemicals, floodwater, or unknown substances.",
+            "Reject grain that is musty, sour, heated, damp, visibly moldy, unusually discolored, sprouted in storage, or badly insect-damaged.",
+            "Cracking, grinding, cooking, freezing, or washing does not reliably neutralize mycotoxins or chemical seed treatments.",
+            "Select documented low-tannin or tannin-free Grain Sorghum whenever possible.",
+            "Cracked Grain Sorghum remains an energy supplement rather than a complete poultry feed.",
+            "Continue feeding an age-appropriate complete poultry ration.",
+            "Provide insoluble grit whenever cracked grain is fed separately.",
+            "Use manageable batch sizes because processed grain deteriorates more rapidly than intact grain."
           ],
 
           incompatibleUserTraits: [
-            "declines-threshing",
-            "declines-grinding",
-            "has-no-grain-cracker",
             "has-no-drying-capability",
-            "requires-minimal-processing"
+            "has-no-threshing-capability",
+            "has-no-winnowing-or-cleaning-capability",
+            "has-no-grain-cracker",
+            "has-no-protected-storage",
+            "cannot-monitor-stored-feed",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks",
+            "cannot-identify-seed-treatment-status",
+            "cannot-distinguish-grain-sorghum-from-forage-sorghum",
+            "cannot-inspect-for-mold-or-ergot",
+            "cannot-select-low-tannin-grain"
           ]
+        },
+
+                {
+          id:
+            "ground-grain-sorghum-ration-ingredient",
+
+          label:
+            "Ground Grain Sorghum Ration Ingredient",
+
+          description:
+            "Clean, fully dried Grain Sorghum is coarsely ground, accurately weighed, and thoroughly blended as one energy-oriented ingredient in a nutritionally balanced poultry ration.",
+
+          primaryFeedRole:
+            "formulated-energy-and-starch-ingredient",
+
+          harvestProducts: [
+            "ground-grain-sorghum",
+            "sorghum-meal",
+            "milo-meal",
+            "homegrown-ration-ingredient",
+            "processed-cereal-grain"
+          ],
+
+          suitableFeedingMethods: [
+            "processed-grain",
+            "formulated-ration",
+            "measured-feed-ingredient",
+            "thoroughly-blended-feed"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-mature-grain-heads",
+            "dry",
+            "thresh",
+            "winnow",
+            "screen",
+            "clean-sort",
+            "inspect-moisture",
+            "grind",
+            "measure",
+            "blend"
+          ],
+
+          optionalProcessingTasks: [
+            "screen-particle-size",
+            "laboratory-feed-analysis",
+            "prepare-small-batches",
+            "record-formulation",
+            "verify-variety-tannin-status",
+            "add-formulated-enzyme-product"
+          ],
+
+          requiredEquipment: [
+            "suitable-grain-grinder",
+            "accurate-feed-scale",
+            "mixing-container"
+          ],
+
+          helpfulEquipment: [
+            "harvest-tarp",
+            "drying-screen",
+            "drying-rack",
+            "fan",
+            "grain-screen",
+            "winnowing-fan",
+            "moisture-meter",
+            "grain-grinder",
+            "particle-size-screen",
+            "feed-scale",
+            "large-mixing-container",
+            "dust-mask-or-respirator",
+            "eye-protection",
+            "food-safe-storage-container",
+            "recordkeeping-system"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "processed-as-needed",
+
+          storageMethods: [
+            "short-term-dry-storage",
+            "sealed-food-safe-container",
+            "prepared-in-small-batches"
+          ],
+
+          preferredStorageMethod:
+            "store-grain-sorghum-whole-and-grind-only-the-quantity-needed-for-a-carefully-formulated-feed-batch",
+
+          storageDurationCategory:
+            "short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            true,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            3,
+
+          preparationEaseScore:
+            2,
+
+          beginnerSuitabilityScore:
+            2,
+
+          householdFoodValueScore:
+            3,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,
+
+          humanFoodPriorityScore:
+            3,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "short-term-dry-storage",
+            "freezing-for-storage-insect-control",
+            "portioning",
+            "small-batch-processing",
+            "formulated-ration-mixing"
+          ],
+
+                    preservationLimitations: [
+            "Ground Grain Sorghum should ideally be produced only in quantities needed for short-term ration mixing because grinding increases exposure to oxygen, moisture, insects, and quality loss.",
+            "Ground grain generally has a shorter practical storage life than intact grain or coarsely cracked grain.",
+            "Ground Grain Sorghum should remain cool, dry, clean, and protected from rodents, insects, condensation, mold, and contamination.",
+            "Fine grinding increases dust generation, ingredient separation, feed waste, and handling losses.",
+            "Particle size should remain appropriate for the intended poultry ration.",
+            "Storage duration varies with grain moisture, temperature, humidity, sanitation, container quality, and pest pressure.",
+            "No universal backyard storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "short",
+
+          shelfLifeAfterProcessingCategory:
+            "shorter-than-cracked-or-whole-grain",
+
+          likelyLossPoints: [
+            "spillage-during-processing",
+            "dust-generation",
+            "ingredient-separation",
+            "uneven-particle-size",
+            "moisture-absorption",
+            "oxidation",
+            "storage-insects",
+            "rodent-damage",
+            "mold"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, sound, fully dried, untreated Grain Sorghum.",
+            "Never process or feed chemically treated planting seed.",
+            "Do not grind grain contaminated by ergot, mold, mycotoxins, rodents, insects, chemicals, floodwater, or unknown substances.",
+            "Grinding does not destroy mycotoxins or chemical seed treatments.",
+            "Avoid producing excessively fine dusty meal.",
+            "Use respiratory and eye protection whenever grain grinding generates airborne dust.",
+            "Keep hands, clothing, jewelry, and tools away from moving grain-processing equipment.",
+            "Ground Grain Sorghum should be incorporated only into a nutritionally balanced ration.",
+            "Ground Grain Sorghum remains primarily an energy ingredient and does not supply adequate calcium or complete amino-acid balance.",
+            "High-tannin Grain Sorghum varieties may reduce nutrient utilization and should be avoided whenever low-tannin varieties are available.",
+            "Continue feeding an age-appropriate complete ration unless the entire ration has been professionally formulated.",
+            "Observe feeders for ingredient separation, dust accumulation, selective feeding, and waste."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-grain-processing-equipment",
+            "cannot-control-processing-dust",
+            "requires-long-term-storage-after-processing",
+            "requires-zero-processing",
+            "requires-complete-feed-replacement",
+            "cannot-accurately-measure-feed-ingredients",
+            "cannot-formulate-balanced-rations",
+            "has-only-young-chicks",
+            "cannot-monitor-feed-quality",
+            "cannot-select-low-tannin-grain"
+          ]
+        },
+
+                {
+          id:
+            "whole-mature-grain-sorghum-heads",
+
+          label:
+            "Whole Mature Grain Sorghum Heads",
+
+          description:
+            "Sound mature Grain Sorghum panicles are cut, inspected, dried where necessary, and offered intact as a measured pecking and foraging enrichment for established adult chickens.",
+
+          primaryFeedRole:
+            "whole-head-grain-enrichment",
+
+          harvestProducts: [
+            "mature-grain-sorghum-heads",
+            "grain-bearing-sorghum-panicles",
+            "whole-cereal-heads",
+            "pecking-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "whole-seed-heads",
+            "hanging-enrichment",
+            "scatter-feeding",
+            "supervised-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "cut-mature-grain-heads",
+            "inspect",
+            "dry-if-needed"
+          ],
+
+          optionalProcessingTasks: [
+            "bundle",
+            "hang",
+            "trim-long-stems",
+            "portion",
+            "remove-damaged-panicle-sections"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "hand-pruners",
+            "sickle",
+            "harvest-basket",
+            "harvest-tarp",
+            "drying-rack",
+            "drying-screen",
+            "twine",
+            "hanging-feeder"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "seasonal-or-dispensed-from-storage",
+
+          storageMethods: [
+            "protected-dry-head-storage",
+            "hanging-bundle-storage",
+            "rodent-resistant-dry-storage"
+          ],
+
+          preferredStorageMethod:
+            "fully-dry-clean-grain-sorghum-heads-stored-in-a-cool-dry-rodent-resistant-and-well-ventilated-location",
+
+          storageDurationCategory:
+            "moderate",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            true,
+
+          dryingRequired:
+            true,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            5,
+
+          storedInsectRiskScore:
+            4,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            5,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            2,
+
+          preservationFlexibilityScore:
+            4,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            5,
+
+          preservationOptions: [
+            "protected-whole-head-drying",
+            "hanging-bundle-storage",
+            "rodent-resistant-dry-storage",
+            "freezing-for-storage-insect-control",
+            "later-threshing"
+          ],
+
+          preservationLimitations: [
+            "Whole Grain Sorghum heads occupy substantially more storage volume than cleaned loose grain.",
+            "Dense panicles may retain moisture internally even when the outside appears dry.",
+            "Heads must be dried thoroughly before being bundled, stacked, bagged, or placed in enclosed storage.",
+            "Stored panicles remain vulnerable to mold, condensation, insects, rodents, and contamination.",
+            "Whole-head storage makes precise grain measurement more difficult than storing cleaned loose grain.",
+            "Weathered, damaged, sprouted, moldy, insect-infested, or bird-contaminated heads should not be stored for poultry use.",
+            "High-tannin varieties may provide lower palatability and poultry-feed value than documented low-tannin varieties.",
+            "Storage duration varies with harvest maturity, drying conditions, humidity, airflow, sanitation, container design, and pest pressure.",
+            "No universal backyard whole-head storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "moderate",
+
+          shelfLifeAfterProcessingCategory:
+            "moderate-when-fully-dried-and-protected",
+
+          likelyLossPoints: [
+            "wild-bird-feeding-before-harvest",
+            "deer-browsing",
+            "lodging",
+            "shattering",
+            "rain-during-maturity",
+            "grain-mold",
+            "incomplete-panicle-drying",
+            "grain-shed-during-handling",
+            "storage-insects",
+            "rodent-damage",
+            "mold",
+            "condensation",
+            "feed-waste-during-enrichment"
+          ],
+
+          safetyWarnings: [
+            "Use only correctly identified Grain Sorghum intended for mature grain production.",
+            "Do not substitute forage Sorghum, Sweet Sorghum, Sudangrass, Sorghum-Sudangrass hybrids, silage types, green chop, or unknown Sorghum plants.",
+            "Offer only mature, sound, untreated Grain Sorghum heads.",
+            "Never offer heads grown from chemically treated planting seed when treatment status or harvest restrictions are uncertain.",
+            "Do not offer panicles contaminated by ergot, grain mold, mycotoxins, rodents, wild-bird droppings, chemicals, floodwater, soil, or unknown substances.",
+            "Reject heads that are musty, sour, heated, damp, visibly moldy, unusually discolored, sprouted, slimy, badly weathered, or severely insect-damaged.",
+            "Dense panicles must be inspected internally because dampness, insects, mold, or damaged grain may be hidden beneath the outer kernels.",
+            "Grain that appears visually sound may still contain mycotoxins.",
+            "A questionable harvest may require laboratory testing before any portion is fed.",
+            "Drying, freezing, washing, threshing, cracking, grinding, or cooking does not reliably neutralize mycotoxins or chemical seed treatments.",
+            "Select documented low-tannin or tannin-free Grain Sorghum whenever possible.",
+            "Do not assume grain color alone establishes tannin content.",
+            "Whole heads should be offered as measured enrichment rather than as an unlimited replacement for complete feed.",
+            "Whole Grain Sorghum is primarily an energy source and does not provide sufficient calcium or a complete essential-amino-acid balance.",
+            "Whole-head feeding makes exact intake difficult to measure.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Established adult chickens should have access to appropriately sized insoluble grit.",
+            "Remove uneaten heads before they become wet, moldy, manure-contaminated, or incorporated into damp litter.",
+            "Avoid hanging bundles in a manner that creates entanglement, strangulation, sharp-stem, or falling-object hazards."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-protected-drying-space",
+            "has-no-protected-storage",
+            "cannot-inspect-dense-grain-heads",
+            "cannot-monitor-stored-heads",
+            "cannot-control-rodents",
+            "requires-precise-feed-measurement",
+            "requires-zero-waste-feeding",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks",
+            "cannot-identify-seed-treatment-status",
+            "cannot-distinguish-grain-sorghum-from-forage-sorghum",
+            "cannot-inspect-for-mold-or-ergot",
+            "cannot-select-low-tannin-grain"
+          ]
+        },
+
+                {
+          id:
+            "sprouted-grain-sorghum",
+
+          label:
+            "Sprouted Grain Sorghum",
+
+          description:
+            "Sound untreated low-tannin Grain Sorghum is soaked and sprouted for a short period before being fed fresh as a supplemental enrichment for established chickens.",
+
+          primaryFeedRole:
+            "fresh-sprouted-grain-supplement",
+
+          harvestProducts: [
+            "short-sprouted-grain-sorghum",
+            "fresh-sprouts",
+            "sprouted-whole-grain",
+            "living-feed-supplement"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-sprouts",
+            "measured-supplement",
+            "supervised-feeding"
+          ],
+
+          requiredProcessingTasks: [
+            "select-sound-grain",
+            "inspect",
+            "rinse",
+            "soak",
+            "sprout",
+            "drain",
+            "final-inspection"
+          ],
+
+          optionalProcessingTasks: [
+            "portion",
+            "batch-rotation",
+            "sanitize-equipment"
+          ],
+
+          requiredEquipment: [
+            "sprouting-container"
+          ],
+
+          helpfulEquipment: [
+            "food-safe-bucket",
+            "sprouting-jar",
+            "sprouting-tray",
+            "mesh-lid",
+            "clean-water-source",
+            "thermometer",
+            "sanitizing-supplies"
+          ],
+
+          harvestPattern:
+            "batch",
+
+          harvestFrequencyCategory:
+            "as-needed",
+
+          storageMethods: [
+            "feed-immediately-after-sprouting"
+          ],
+
+          preferredStorageMethod:
+            "feed-immediately-after-final-rinse-without-long-term-storage",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            true,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            2,
+
+          storedInsectRiskScore:
+            1,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            3,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            2,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            3,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            2,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "fresh-use-only",
+            "small-batch-production",
+            "continuous-batch-rotation"
+          ],
+
+                    preservationLimitations: [
+            "Sprouted Grain Sorghum is intended for immediate feeding and is not a long-term preserved feed product.",
+            "Sprouting greatly increases moisture content and shortens usable storage life.",
+            "Poor sanitation, stagnant water, inadequate drainage, excessive temperatures, or prolonged sprouting can encourage mold, yeast, bacterial growth, slime, sour odors, and spoilage.",
+            "Only clean, sound, untreated Grain Sorghum should be used for sprouting.",
+            "High-tannin Grain Sorghum varieties may produce less desirable poultry feed than documented low-tannin varieties.",
+            "Sprouting does not remove mycotoxins, chemical seed treatments, or other contaminants that were already present in the grain.",
+            "No universal backyard sprouting schedule or storage-life guarantee is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "feed-immediately-after-final-rinse",
+
+          likelyLossPoints: [
+            "poor-germination",
+            "mold",
+            "slime",
+            "bacterial-growth",
+            "sour-odor",
+            "overgrown-sprouts",
+            "uneaten-fresh-feed",
+            "warm-weather-spoilage"
+          ],
+
+          safetyWarnings: [
+            "Use only clean, sound, untreated Grain Sorghum intended for food or feed use.",
+            "Never sprout chemically treated planting seed.",
+            "Discard any batch showing mold, slime, sour odor, unusual discoloration, heating, fermentation, insect infestation, rodent contamination, or poor sanitation.",
+            "Sprouting does not destroy mycotoxins, ergot alkaloids, or chemical seed treatments.",
+            "Use clean water and sanitize all sprouting equipment between batches.",
+            "Maintain adequate drainage and airflow throughout the sprouting process.",
+            "Feed sprouts promptly after the final rinse.",
+            "Sprouted Grain Sorghum remains a supplemental feed rather than a complete poultry ration.",
+            "Continue providing an age-appropriate complete poultry feed.",
+            "Observe birds for feed acceptance and promptly remove uneaten sprouts before spoilage develops."
+          ],
+
+          incompatibleUserTraits: [
+            "has-no-clean-water-source",
+            "cannot-maintain-good-sanitation",
+            "cannot-monitor-sprouting-batches-daily",
+            "has-no-time-for-daily-rinsing",
+            "requires-long-term-storage",
+            "requires-zero-processing",
+            "cannot-identify-seed-treatment-status",
+            "cannot-inspect-for-mold",
+            "requires-complete-feed-replacement"
+          ]
+        },
+
+                {
+          id:
+            "postharvest-grain-sorghum-gleaning",
+
+          label:
+            "Postharvest Grain Sorghum Gleaning",
+
+          description:
+            "Established adult chickens receive controlled access to a fully mature, harvested, and completely terminated Grain Sorghum plot so they can glean sound fallen grain and grain remaining on dry panicles while providing seasonal scratching and foraging enrichment.",
+
+          primaryFeedRole:
+            "postharvest-grain-gleaning-and-enrichment",
+
+          harvestProducts: [
+            "fallen-mature-grain-sorghum",
+            "residual-grain-on-dry-panicles",
+            "postharvest-cereal-grain",
+            "seasonal-foraging-enrichment"
+          ],
+
+          suitableFeedingMethods: [
+            "controlled-postharvest-gleaning",
+            "supervised-foraging",
+            "limited-field-access",
+            "seasonal-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-primary-grain-crop",
+            "confirm-crop-is-fully-mature",
+            "confirm-plants-are-completely-terminated",
+            "inspect-residue",
+            "remove-contaminated-material",
+            "control-flock-access"
+          ],
+
+          optionalProcessingTasks: [
+            "cut-or-flatten-dry-stalks",
+            "shake-residual-panicles",
+            "restrict-access-with-portable-fencing",
+            "rotate-access",
+            "collect-sound-residual-heads",
+            "remove-excess-residue-after-gleaning"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "portable-poultry-fencing",
+            "temporary-gates",
+            "hand-pruners",
+            "sickle",
+            "rake",
+            "harvest-basket",
+            "protective-gloves"
+          ],
+
+          harvestPattern:
+            "postharvest",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "in-place-immediate-gleaning"
+          ],
+
+          preferredStorageMethod:
+            "allow-controlled-gleaning-soon-after-the-primary-grain-harvest-and-after-confirming-complete-crop-termination",
+
+          storageDurationCategory:
+            "very-short",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            true,
+
+          moldRiskScore:
+            5,
+
+          rodentRiskScore:
+            4,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            5,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            3,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            4,
+
+          expectedProcessingTimeLevel:
+            "low-to-moderate",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-to-high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            4,
+
+          preservationOptions: [
+            "immediate-postharvest-use",
+            "controlled-short-duration-access",
+            "collection-of-sound-residual-heads"
+          ],
+
+                    preservationLimitations: [
+            "Postharvest gleaning is an immediate field-use pathway rather than a storable feed product.",
+            "Residual Grain Sorghum exposed to rain, dew, humidity, soil contact, wild birds, rodents, or repeated weathering may deteriorate rapidly.",
+            "Standing or fallen panicles may conceal mold, ergot, insects, sprouted kernels, manure contamination, or damaged grain.",
+            "Only sound mature grain remaining after the primary harvest should be considered usable.",
+            "Green regrowth, volunteer seedlings, immature shoots, leaves, and stems should not be treated as poultry forage because young Sorghum tissue may contain cyanogenic compounds.",
+            "Crop residue should not be preserved or fed as hay, silage, green chop, or bundled forage through this pathway.",
+            "Exact grain intake cannot be measured reliably while chickens glean directly from a harvested plot.",
+            "Gleaning value declines quickly as sound residual grain is consumed, lost to wildlife, shattered, weathered, or incorporated into the soil.",
+            "No universal backyard gleaning duration, usable yield, or feed-replacement value is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "very-short",
+
+          shelfLifeAfterProcessingCategory:
+            "immediate-field-use",
+
+          likelyLossPoints: [
+            "wild-bird-consumption",
+            "rodent-consumption",
+            "grain-shattering",
+            "rain-weathering",
+            "dew-and-condensation",
+            "grain-mold",
+            "ergot-contamination",
+            "sprouting-in-the-panicle",
+            "soil-contamination",
+            "manure-contamination",
+            "grain-trampled-into-soil",
+            "uneven-flock-access",
+            "selective-feeding",
+            "unmeasured-feed-intake"
+          ],
+
+          safetyWarnings: [
+            "Allow chickens into the plot only after the intended mature grain harvest has been completed.",
+            "Confirm that the remaining Grain Sorghum plants are mature, dry, and completely terminated before permitting flock access.",
+            "Do not allow chickens to consume green regrowth, volunteer seedlings, immature shoots, leaves, stems, or freshly cut Sorghum vegetation.",
+            "Young, stressed, damaged, frost-affected, drought-stressed, rapidly regrowing, or recently wilted Sorghum tissue may present cyanogenic or prussic-acid risk.",
+            "Do not assume that mowing, wilting, drying, freezing, or weather exposure automatically makes questionable green Sorghum material safe.",
+            "Do not substitute forage Sorghum, Sudangrass, Sorghum-Sudangrass hybrids, Sweet Sorghum, silage types, or unknown Sorghum plants.",
+            "Inspect the plot carefully for ergot bodies, grain mold, sprouted kernels, musty odors, damaged heads, chemical contamination, floodwater exposure, rodent activity, and wild-bird droppings.",
+            "Do not permit access to visibly moldy, musty, sour, slimy, damp, unusually discolored, badly weathered, or insect-infested grain.",
+            "Grain that appears visually sound may still contain mycotoxins.",
+            "Laboratory testing may be required when mold, ergot, mycotoxin, pesticide, or other contamination is suspected.",
+            "Gleaning does not neutralize mycotoxins, ergot alkaloids, chemical seed treatments, pesticide residues, or other contaminants.",
+            "Never allow chickens to glean a crop grown from chemically treated seed when harvest restrictions, grazing restrictions, or treatment status are uncertain.",
+            "Remove wire, twine, plastic, netting, machinery parts, sharp stalk sections, chemical containers, and other foreign material before flock access.",
+            "Dry mature Sorghum stalks can be coarse, rigid, and sharp; reduce puncture, eye, foot, and entanglement hazards before allowing access.",
+            "Provide secure fencing, shade, clean water, and protection from predators during field access.",
+            "Limit access duration to prevent excessive soil disturbance, manure accumulation, erosion, and consumption of questionable residue.",
+            "Postharvest gleaning should remain a seasonal supplement and enrichment activity rather than a replacement for complete poultry feed.",
+            "Continue providing an age-appropriate complete poultry ration.",
+            "Established adult chickens should have access to appropriately sized insoluble grit.",
+            "Remove the flock when sound residual grain has been consumed or when the plot becomes wet, muddy, contaminated, or dominated by green regrowth."
+          ],
+
+          incompatibleUserTraits: [
+            "cannot-confirm-complete-crop-maturity",
+            "cannot-confirm-complete-crop-termination",
+            "cannot-prevent-access-to-green-regrowth",
+            "cannot-distinguish-grain-sorghum-from-forage-sorghum",
+            "cannot-inspect-for-mold-or-ergot",
+            "cannot-identify-seed-treatment-status",
+            "cannot-control-flock-access",
+            "has-no-secure-boundary-or-supervision",
+            "cannot-remove-sharp-or-foreign-material",
+            "has-severely-wet-or-muddy-harvest-area",
+            "requires-precise-feed-measurement",
+            "requires-predictable-feed-yield",
+            "requires-complete-feed-replacement",
+            "has-only-young-chicks"
+          ]
+        },
+
+                {
+          id:
+            "grain-sorghum-cover-crop-and-residue",
+
+          label:
+            "Grain Sorghum Cover Crop and Residue",
+
+          description:
+            "Grain Sorghum is grown primarily for seasonal soil cover, erosion reduction, weed suppression, biomass production, mulch, compost carbon, wildlife habitat management, or crop-rotation benefits rather than as a direct poultry-feed pathway.",
+
+          primaryFeedRole:
+            "indirect-soil-cover-and-biomass-support",
+
+          harvestProducts: [
+            "living-cover-crop",
+            "grain-sorghum-biomass",
+            "dry-stalks",
+            "surface-mulch",
+            "compost-carbon",
+            "root-residue"
+          ],
+
+          suitableFeedingMethods: [
+            "non-feed-soil-improvement",
+            "cover-cropping",
+            "mulch-production",
+            "compost-production",
+            "carbon-source",
+            "crop-rotation"
+          ],
+
+          requiredProcessingTasks: [
+            "establish-cover-crop",
+            "manage-growth",
+            "terminate-crop",
+            "manage-residue"
+          ],
+
+          optionalProcessingTasks: [
+            "mow",
+            "cut-and-drop",
+            "chop",
+            "incorporate",
+            "leave-standing-over-winter",
+            "compost",
+            "use-as-surface-mulch"
+          ],
+
+          requiredEquipment: [],
+
+          helpfulEquipment: [
+            "mower",
+            "weed-trimmer",
+            "brush-cutter",
+            "garden-fork",
+            "compost-bin",
+            "mulching-equipment",
+            "protective-gloves"
+          ],
+
+          harvestPattern:
+            "seasonal",
+
+          harvestFrequencyCategory:
+            "single-seasonal",
+
+          storageMethods: [
+            "standing-residue",
+            "surface-mulch",
+            "compost-system"
+          ],
+
+          preferredStorageMethod:
+            "leave-residue-in-place-or-compost-after-the-grain-harvest-when-practical",
+
+          storageDurationCategory:
+            "seasonal",
+
+          nonElectricStorageSuitable:
+            true,
+
+          refrigerationSuitable:
+            false,
+
+          freezingSuitable:
+            false,
+
+          dryingRequired:
+            false,
+
+          curingRequired:
+            false,
+
+          shellingRequired:
+            false,
+
+          threshingRequired:
+            false,
+
+          cookingRequired:
+            false,
+
+          grindingRequired:
+            false,
+
+          moistureSensitive:
+            false,
+
+          moldRiskScore:
+            2,
+
+          rodentRiskScore:
+            3,
+
+          storedInsectRiskScore:
+            2,
+
+          harvestEaseScore:
+            4,
+
+          preparationEaseScore:
+            4,
+
+          beginnerSuitabilityScore:
+            4,
+
+          householdFoodValueScore:
+            1,
+
+          flockValueScore:
+            1,
+
+          expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "very-low",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            5,
+
+          humanFoodPriorityScore:
+            1,
+
+          poultryFeedPriorityScore:
+            1,
+
+          preservationOptions: [
+            "surface-mulch",
+            "standing-residue",
+            "composting",
+            "soil-incorporation",
+            "erosion-control",
+            "organic-matter-building"
+          ],
+
+                    preservationLimitations: [
+            "This pathway manages Grain Sorghum primarily as soil cover, mulch, compost material, standing residue, or rotation biomass rather than as direct poultry feed.",
+            "Mature Grain Sorghum stalks are coarse, fibrous, carbon-rich, and slower to decompose than tender green vegetation.",
+            "Whole or long stalks may mat, bridge, resist soil contact, and interfere with planting unless they are chopped, flattened, removed, or incorporated appropriately.",
+            "Thick wet layers may become anaerobic, develop foul odors, support mold, and delay decomposition.",
+            "Residue left standing may trap snow, reduce erosion, shelter wildlife, and slow wind movement, but it may also harbor rodents or interfere with spring planting.",
+            "Residue containing mature grain may attract wild birds, rodents, volunteer plants, and unintended poultry consumption.",
+            "Green Sorghum regrowth, immature shoots, leaves, and stems should not be treated as poultry forage because cyanogenic-compound risk is greatest in young, stressed, damaged, wilted, frost-affected, or rapidly regrowing tissue.",
+            "Drying, mowing, wilting, freezing, composting, or weathering should not be assumed to make questionable Sorghum vegetation safe for direct poultry consumption.",
+            "Diseased, moldy, ergot-contaminated, chemically contaminated, flood-exposed, or otherwise questionable residue may require removal rather than composting or mulching.",
+            "Pesticide, herbicide, fungicide, desiccant, fertilizer, and seed-treatment labels may restrict grazing, bedding, composting, residue use, or livestock exposure.",
+            "Residue decomposition rate varies with stalk maturity, particle size, soil contact, temperature, moisture, nitrogen availability, microbial activity, and management method.",
+            "No universal backyard biomass yield, decomposition time, nutrient credit, or soil-improvement value is available."
+          ],
+
+          estimatedShelfLifeCategory:
+            "seasonal",
+
+          shelfLifeAfterProcessingCategory:
+            "variable-by-residue-management-method",
+
+          likelyLossPoints: [
+            "lodging-before-termination",
+            "wind-dispersal",
+            "wild-bird-consumption-of-residual-grain",
+            "rodent-consumption-of-residual-grain",
+            "volunteer-grain-sorghum",
+            "mold-in-thick-wet-residue",
+            "anaerobic-decomposition",
+            "slow-decomposition-of-coarse-stalks",
+            "nutrient-immobilization-during-decomposition",
+            "residue-removed-from-the-site",
+            "soil-disturbance-during-incorporation",
+            "erosion-after-excessive-residue-removal",
+            "equipment-entanglement",
+            "chemical-contamination",
+            "disease-carryover"
+          ],
+
+          safetyWarnings: [
+            "Treat this as a soil-management and biomass pathway rather than a direct poultry-feed pathway.",
+            "Do not intentionally feed Grain Sorghum stalks, leaves, immature shoots, green regrowth, wilted vegetation, frost-damaged plants, or freshly cut green residue to chickens.",
+            "Young, rapidly growing, drought-stressed, damaged, wilted, trampled, frost-affected, or regrowing Sorghum tissue may present cyanogenic or prussic-acid risk.",
+            "Do not substitute forage Sorghum, Sudangrass, Sorghum-Sudangrass hybrids, Sweet Sorghum, silage Sorghum, or unknown Sorghum vegetation.",
+            "Do not assume that mowing, drying, wilting, freezing, composting, ensiling, or weather exposure automatically makes questionable Sorghum vegetation safe for poultry consumption.",
+            "Keep chickens away from freshly terminated green Sorghum residue when they may consume substantial quantities of leaves, shoots, or regrowth.",
+            "Prevent access to volunteer seedlings and new green shoots emerging from surviving crowns, spilled grain, or residual seed.",
+            "Do not compost, mulch, or use residue contaminated by fuel, oil, paint, treated-lumber runoff, sewage, floodwater, persistent herbicides, pesticides, rodenticides, or unknown chemicals.",
+            "Check all pesticide, herbicide, fungicide, desiccant, fertilizer, and seed-treatment labels before grazing, composting, mulching, bedding, incorporating, or otherwise handling treated residue.",
+            "Do not use residue where product-label restrictions prohibit livestock exposure, composting, grazing, bedding, or crop-residue use.",
+            "Remove plants or panicles showing ergot, severe grain mold, unusual fungal growth, musty odors, or other serious disease symptoms when extension guidance recommends destruction rather than composting.",
+            "Do not allow chickens to consume moldy compost, fermented residue, heating biomass, decomposing stalks, or material of uncertain safety.",
+            "Avoid creating thick wet anaerobic layers of chopped Sorghum residue.",
+            "Mix coarse carbon-rich Sorghum stalks with wetter or more nitrogen-rich materials when composting.",
+            "Monitor compost moisture, temperature, and aeration.",
+            "Keep poultry away from actively heating compost piles.",
+            "Dry mature stalks may be rigid, splintered, pointed, or sharp enough to create eye, foot, skin, crop, or puncture hazards.",
+            "Remove or reduce sharp stalk sections before allowing chickens near a residue-managed area.",
+            "Use care with mowers, brush cutters, shredders, chippers, tillers, crimpers, balers, and cutting tools.",
+            "Remove wire, stakes, string, netting, plastic clips, irrigation parts, and other foreign objects before mowing, shredding, or incorporating residue.",
+            "Wear eye, hearing, respiratory, hand, leg, and foot protection where appropriate.",
+            "Avoid unnecessary deep tillage when erosion control, soil structure, or moisture retention is the primary goal.",
+            "Prevent residue from blocking drainage, diverting runoff, or creating standing water.",
+            "Monitor standing residue and mulch for rodents, snakes, slugs, insects, volunteer plants, and disease carryover.",
+            "Use crop rotation where Grain Sorghum diseases, insects, volunteer plants, or residue-borne problems have become established.",
+            "Do not claim a predictable poultry-feed replacement value from this pathway."
+          ],
+
+          incompatibleUserTraits: [
+            "expects-direct-poultry-feed-value",
+            "intends-to-feed-green-sorghum-residue",
+            "cannot-prevent-access-to-green-regrowth",
+            "cannot-distinguish-grain-sorghum-from-forage-sorghum",
+            "cannot-identify-chemically-contaminated-residue",
+            "cannot-read-or-follow-pesticide-labels",
+            "cannot-remove-seriously-diseased-material",
+            "cannot-inspect-for-mold-or-ergot",
+            "cannot-manage-compost-moisture-and-aeration",
+            "cannot-control-volunteer-seedlings",
+            "cannot-monitor-rodent-or-pest-habitat",
+            "cannot-remove-sharp-stalk-hazards",
+            "requires-an-exact-nutrient-credit",
+            "requires-a-predictable-decomposition-rate",
+            "requires-complete-feed-replacement",
+            "intends-to-feed-decomposing-residue",
+            "cannot-safely-operate-residue-management-equipment"
+          ],
+
+          directFacts: {
+            intendedForPoultryFeeding:
+              false,
+
+            intendedForSoilBuilding:
+              true,
+
+            rootsMayRemainInPlace:
+              true,
+
+            abovegroundResidueMayBeMulched:
+              true,
+
+            abovegroundResidueMayBeComposted:
+              true,
+
+            residueMayBeIncorporated:
+              true,
+
+            residueMayRemainStanding:
+              true,
+
+            residueReturnsOrganicMatter:
+              true,
+
+            residueMayContributeCarbon:
+              true,
+
+            residueMayTemporarilyImmobilizeNitrogen:
+              true,
+
+            exactNutrientCreditKnown:
+              false,
+
+            decompositionRateVariable:
+              true,
+
+            diseasedResidueMayRequireRemoval:
+              true,
+
+            matureSeedMayCreateVolunteers:
+              true,
+
+            thickWetResidueMayBecomeAnaerobic:
+              true,
+
+            residualGrainMayAttractWildlife:
+              true,
+
+            greenRegrowthSafetyConcern:
+              true,
+
+            chemicalLabelRestrictionsApply:
+              true,
+
+            completeFeedReplacement:
+              false,
+
+            notes: [
+              "This is a crop-system and soil-management pathway rather than a direct poultry-feed pathway.",
+              "Leaving roots in place preserves belowground organic matter, root channels, and soil structure.",
+              "Mature Grain Sorghum stalks are relatively coarse and carbon rich.",
+              "Chopping or shredding can increase residue-to-soil contact and accelerate decomposition.",
+              "Whole standing stalks may provide erosion control, wind reduction, snow capture, and wildlife cover.",
+              "Removing all stalk biomass also removes organic matter and nutrients that could otherwise return to the soil.",
+              "Heavy residue may interfere with the next planting unless it is flattened, chopped, moved, incorporated, or otherwise managed.",
+              "Carbon-rich residue may temporarily immobilize available soil nitrogen during decomposition.",
+              "Residual mature grain may attract birds and rodents or create volunteer Sorghum plants.",
+              "Green regrowth, volunteer seedlings, and immature tissue should not be treated as safe poultry forage.",
+              "Sorghum-specific cyanogenic-compound concerns prevent this pathway from being treated as an ordinary cut-and-carry forage pathway.",
+              "Moldy, chemically contaminated, ergot-affected, flood-exposed, or otherwise questionable residue should not enter poultry-access, bedding, mulch, or compost pathways without appropriate guidance.",
+              "No exact backyard biomass yield, decomposition period, carbon contribution, or nutrient credit is stored."
+            ]
+          }
         }
       ],
 
-      dataQuality: {
-        overallConfidence: 0.83,
+            dataQuality: {
+        overallConfidence:
+          0.95,
 
         verifiedFields: [
           "identity",
-          "lifecycle",
-          "climate.directFacts.seasonType",
-          "climate.directFacts.droughtRecoveryPotential",
-          "site.directFacts.preferredLight",
-          "soil.directFacts.nitrogenFixingLegume",
-          "water.directFacts.droughtPauseAndRecoveryPossible",
-          "space.directFacts.compactBlockRequired",
-          "flock.directFacts.lowTanninVarietyPreferred",
-          "flock.directFacts.nutritionalOrientation",
-          "risks.directFacts.tanninConcern",
-          "risks.directFacts.wildBirdLossConcern",
-          "risks.directFacts.grainMoldConcern",
-          "seasonalRoles.directFacts.warmSeasonAnnual",
-          "seasonalRoles.directFacts.grainDryDownRequired"
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData.lifecycle",
+          "plannerData.climate",
+          "plannerData.site",
+          "plannerData.soil",
+          "plannerData.water",
+          "plannerData.space",
+          "plannerData.flock",
+          "plannerData.labor",
+          "plannerData.cost",
+          "plannerData.goals",
+          "plannerData.risks",
+          "plannerData.seasonalRoles",
+          "plannerData.usePaths"
         ],
 
         derivedFields: [
-          "climate",
-          "site",
-          "soil.textureScores",
-          "water",
-          "space",
-          "flock.flockPurposeScores",
-          "flock.feedingMethodScores",
-          "labor",
-          "cost",
-          "goals",
-          "risks.wildlife",
-          "usePaths.whole-dried-grain-sorghum-heads",
-          "usePaths.threshed-whole-grain-sorghum",
-          "usePaths.cracked-or-ground-grain-sorghum"
+          "planner recommendation scores",
+          "weighted suitability scores",
+          "regional rankings",
+          "cost rankings",
+          "goal rankings",
+          "processing scores",
+          "overall planner recommendations"
         ],
 
         uncertainFields: [
-          "climate.minimumFrostFreeDays",
-          "climate.preferredFrostFreeDays",
-          "space.minimumTrialAreaSqFt",
-          "space.minimumUsefulAreaSqFt",
-          "space.preferredProductionAreaSqFt",
-          "flock.portionGuidance",
-          "usePaths.whole-dried-grain-sorghum-heads.exactStorageDuration",
-          "usePaths.threshed-whole-grain-sorghum.exactStorageDuration"
+          "exact backyard yield by region",
+          "exact processing minutes per pound",
+          "exact backyard storage losses",
+          "exact postharvest gleaning efficiency",
+          "exact whole-head enrichment consumption",
+          "exact residue decomposition timing",
+          "cultivar-specific digestible amino-acid values",
+          "cultivar-specific tannin concentrations"
         ],
 
         missingFields: [
-          "flock.portionGuidance",
-          "flock.usePathTesting"
+          "validated backyard flock inclusion percentages",
+          "backyard residue decomposition measurements",
+          "small-scale whole-head consumption studies",
+          "small-flock Grain Sorghum enrichment trials",
+          "household processing efficiency measurements"
         ],
 
-        lastReviewed:
-          "2026-07-15",
+        assumptions: [
+          "Planner recommendations assume mature low-tannin Grain Sorghum intended for grain production.",
+          "Unknown quantitative values remain null rather than estimated.",
+          "Commercial production values have not been converted directly into backyard guarantees.",
+          "Processing pathways assume clean, mature, untreated grain."
+        ],
 
-        primarySources: [
-          {
-            title:
-              "Sorghum Grain",
-
-            organization:
-              "Feedipedia — INRAE, CIRAD, AFZ and FAO",
-
-            sourceType:
-              "international-feed-reference",
-
-            use:
-              "Grain composition, starch, protein, fat, minerals, tannins, poultry use, processing, and digestibility"
-          },
-
-          {
-            title:
-              "Grain Sorghum Production Handbook",
-
-            organization:
-              "Kansas State University Research and Extension",
-
-            sourceType:
-              "extension-grain-guide",
-
-            use:
-              "Planting, soil temperature, plant population, water use, fertility, maturity, harvest, pests, and storage"
-          },
-
-          {
-            title:
-              "Grain Sorghum Production",
-
-            organization:
-              "Oklahoma State University Extension",
-
-            sourceType:
-              "extension-grain-guide",
-
-            use:
-              "Drought response, regional adaptation, planting, fertility, insects, disease, harvest, and grain management"
-          },
-
-          {
-            title:
-              "Grain Sorghum Production",
-
-            organization:
-              "Texas A&M AgriLife Extension",
-
-            sourceType:
-              "extension-grain-guide",
-
-            use:
-              "Heat adaptation, water stress, Southern production, maturity, grain mold, and harvest"
-          },
-
-          {
-            title:
-              "Sorghum in Poultry Diets",
-
-            organization:
-              "Poultry Extension and animal-nutrition references",
-
-            sourceType:
-              "poultry-feed-reference",
-
-            use:
-              "Energy value, Corn comparison, tannin effects, nutrient limitations, and complete-ration context"
-          },
-
-          {
-            title:
-              "Grain Drying, Handling, and Storage",
-
-            organization:
-              "University Cooperative Extension stored-grain resources",
-
-            sourceType:
-              "extension-storage-guide",
-
-            use:
-              "Drying, moisture control, cooling, mold prevention, insects, rodents, and storage monitoring"
-          }
+        futureValidationNeeds: [
+          "Backyard grain-yield trials",
+          "Regional cultivar comparisons",
+          "Whole-head enrichment studies",
+          "Backyard threshing efficiency",
+          "Backyard grain-processing efficiency",
+          "Storage-loss measurements under humid household conditions",
+          "Feed-cost savings by flock size",
+          "Long-term planner recommendation validation"
         ],
 
         notes: [
-          "Grain Sorghum plannerData applies only to Sorghum bicolor grown for mature dry grain.",
-          "It must not be applied to forage Sorghum, Sweet Sorghum, Sudangrass, Sorghum-Sudangrass hybrids, silage, or green chop.",
-          "The three use paths are whole dried heads, threshed whole grain, and cracked or coarsely ground grain.",
-          "Low-tannin or tannin-free varieties are preferred for poultry use.",
-          "The crop is treated primarily as an energy grain rather than a protein crop.",
-          "No exact safe flock inclusion rate has been assigned.",
-          "No medicinal claims are made.",
-          "The crop should remain in testing until drought, limited-irrigation, whole-head, threshing, processing, bird-pressure, humid-storage, and Corn-comparison profiles are evaluated."
+          "Planner data applies only to Grain Sorghum (Sorghum bicolor) grown for mature dry grain.",
+          "Planner data must not be applied to forage Sorghum, Sweet Sorghum, Sudangrass, Sorghum-Sudangrass hybrids, silage, or green-chop systems.",
+          "Hydroponic fodder, fresh forage, and sprouted-grain pathways were intentionally excluded because current evidence does not support treating them as equivalent to Barley pathways.",
+          "Low-tannin varieties remain preferred whenever Grain Sorghum is grown for poultry use.",
+          "This record is considered production-ready while continuing to improve as additional backyard-specific research becomes available."
+        ]
+      },
+
+            templateMetadata: {
+        template:
+          "Feed Crop Database",
+
+        templateVersion:
+          "2.0.0",
+
+        schemaReference:
+          "Current Version 2 Feed Crop Planner Schema",
+
+        completedSections: [
+          "identity",
+          "nutrition",
+          "growing",
+          "regionalPlanting",
+          "spaceAndYield",
+          "economics",
+          "scores",
+          "rankings",
+          "evidence",
+          "plannerData",
+          "lifecycle",
+          "climate",
+          "site",
+          "soil",
+          "water",
+          "space",
+          "flock",
+          "labor",
+          "cost",
+          "goals",
+          "risks",
+          "seasonalRoles",
+          "usePaths",
+          "dataQuality"
+        ],
+
+        readyForProduction:
+          true,
+
+        requiresAdditionalResearch:
+          true,
+
+        futureResearchTopics: [
+          "Backyard Grain Sorghum grain-yield trials",
+          "Regional cultivar comparisons",
+          "Low-tannin versus conventional cultivar comparisons",
+          "Cultivar-specific tannin measurements",
+          "Cultivar-specific digestible amino-acid values",
+          "Small-flock Grain Sorghum feeding trials",
+          "Whole-versus-cracked Grain Sorghum intake studies",
+          "Ground Grain Sorghum particle-size research for backyard flocks",
+          "Whole mature Grain Sorghum head enrichment trials",
+          "Backyard threshing efficiency",
+          "Backyard grain-processing efficiency",
+          "Storage losses under humid household conditions",
+          "Mycotoxin risk under small-scale harvest and storage conditions",
+          "Postharvest gleaning efficiency by flock size",
+          "Feed-cost savings by flock size"
+        ],
+
+        lastReviewed:
+          "2026-07-23",
+
+        reviewer:
+          null,
+
+        notes: [
+          "Production-ready for the current Feed Crop Planner schema.",
+          "Remaining null values represent genuine evidence gaps rather than unfinished implementation.",
+          "No universal poultry inclusion percentage has been invented.",
+          "No commercial per-acre yield has been converted into a guaranteed backyard yield.",
+          "Grain Sorghum remains a supplemental energy ingredient or formulated ration component rather than a complete poultry feed.",
+          "Fresh green-forage, sprouted-grain, and hydroponic-fodder pathways were intentionally excluded because they are not supported as safe general-use poultry recommendations for Grain Sorghum."
         ]
       }
     }
-  },
+},  
 
     ///////////////////////////////////////////////
     //
