@@ -5321,6 +5321,30 @@ const BCP_FEED_CROPS = {
           flockValueScore:
             5,
 
+                    expectedProcessingTimeLevel:
+            "low",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-to-high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            5,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            1,  
+
           safetyWarnings: [
             "Use only mature, sound heads with fully developed seed.",
             "Do not feed heads showing soft rot, visible mold, musty odor, abnormal heating, extensive insect contamination, or chemical contamination.",
@@ -5578,6 +5602,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             5,
+
+                     expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            4,
+
+          feedMeasurementPrecisionScore:
+            1,
+
+          preservationFlexibilityScore:
+            4, 
 
           safetyWarnings: [
             "Dry only mature, sound heads.",
@@ -5870,6 +5918,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             5,
+
+                    expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            5,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            5,  
 
           safetyWarnings: [
             "Use only mature, clean, sound seed.",
@@ -6177,6 +6249,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             4,
+
+                    expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            3,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,  
 
           safetyWarnings: [
             "Crack only clean, dry, sound whole seed.",
