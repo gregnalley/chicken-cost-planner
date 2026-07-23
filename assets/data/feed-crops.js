@@ -6547,6 +6547,30 @@ const BCP_FEED_CROPS = {
           flockValueScore:
             4,
 
+                    expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-to-high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            1,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            3,  
+
           safetyWarnings: [
             "Dehull only clean, dry, sound whole seed.",
             "Do not dehull moldy, musty, rancid, heated, insect-contaminated, rodent-contaminated, or chemically treated seed.",
@@ -6827,6 +6851,30 @@ const BCP_FEED_CROPS = {
           flockValueScore:
             3,
 
+                    expectedProcessingTimeLevel:
+            "very-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "low-to-moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            2,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            5,
+
+          preservationFlexibilityScore:
+            2,  
+
           safetyWarnings: [
             "Grind only clean, dry, sound seed.",
             "Do not grind moldy, musty, rancid, heated, insect-contaminated, rodent-contaminated, or chemically treated seed.",
@@ -7105,6 +7153,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             3,
+
+                    expectedProcessingTimeLevel:
+            "high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            4,
+
+          preservationFlexibilityScore:
+            1,  
 
           safetyWarnings: [
             "Use only untreated seed with a known feed or food-safe history.",
@@ -7402,6 +7474,30 @@ const BCP_FEED_CROPS = {
 
           flockValueScore:
             4,
+
+                    expectedProcessingTimeLevel:
+            "moderate-to-high",
+
+          estimatedProcessingMinutesPerPound:
+            null,
+
+          expectedWasteLevel:
+            "moderate-to-high",
+
+          estimatedWastePercent:
+            null,
+
+          storageEfficiencyScore:
+            1,
+
+          processingEfficiencyScore:
+            2,
+
+          feedMeasurementPrecisionScore:
+            3,
+
+          preservationFlexibilityScore:
+            1,  
 
           safetyWarnings: [
             "Use only untreated seed with a known food- or feed-safe history.",
