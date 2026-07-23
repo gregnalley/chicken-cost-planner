@@ -918,6 +918,9 @@ const BCP_FEED_CROPS = {
         icon:
           "🌻",
 
+         scientificName:
+          "Helianthus annuus", 
+
         cropCategory:
           "annual-oilseed",
 
