@@ -52920,6 +52920,36 @@ const BCP_FEED_CROPS = {
             "rodent-resistant-storage"
           ],
 
+                    harvestProducts: [
+            "whole-dried-ears",
+            "dry-corn-kernels",
+            "corn-cobs",
+            "corn-husks"
+          ],
+
+          suitableFeedingMethods: [
+            "hang-whole-ears",
+            "ground-feeding",
+            "treat-feeding",
+            "winter-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "allow-ears-to-fully-mature",
+            "dry-before-storage",
+            "inspect-for-mold",
+            "remove-damaged-ears",
+            "store-in-rodent-resistant-containers"
+          ],
+
+          safetyWarnings: [
+            "Never feed moldy Corn.",
+            "Do not feed ears showing significant insect damage or decay.",
+            "Provide complete balanced feed in addition to whole Corn.",
+            "Always provide free-choice grit.",
+            "Discard grain contaminated by rodents or moisture."
+          ],
+
           expectedProcessingTimeLevel:
             "low",
 
@@ -53085,6 +53115,31 @@ const BCP_FEED_CROPS = {
             "grain-screen",
             "moisture-meter",
             "rodent-resistant-storage"
+          ],
+
+                    harvestProducts: [
+            "dry-corn-kernels"
+          ],
+
+          suitableFeedingMethods: [
+            "scatter-feeding",
+            "scratch-grain-mix",
+            "measured-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "shell-ears",
+            "clean-kernels",
+            "dry-before-storage",
+            "inspect-for-mold"
+          ],
+
+          safetyWarnings: [
+            "Feed only dry, sound kernels.",
+            "Never feed moldy grain.",
+            "Supplement rather than replace a complete ration.",
+            "Store in rodent-resistant containers.",
+            "Discard grain with insect infestation or moisture damage."
           ],
 
           expectedProcessingTimeLevel:
@@ -53261,6 +53316,31 @@ const BCP_FEED_CROPS = {
             "food-safe-storage-container"
           ],
 
+                    harvestProducts: [
+            "cracked-corn"
+          ],
+
+          suitableFeedingMethods: [
+            "mixed-ration",
+            "scratch-feed",
+            "winter-supplement"
+          ],
+
+          requiredProcessingTasks: [
+            "shell-corn",
+            "crack-kernels",
+            "feed-freshly-processed-when-practical",
+            "inspect-before-feeding"
+          ],
+
+          safetyWarnings: [
+            "Cracked grain has a shorter storage life than whole grain.",
+            "Never crack moldy Corn.",
+            "Protect from moisture after processing.",
+            "Discard spoiled feed immediately.",
+            "Continue feeding a balanced ration."
+          ],
+
           expectedProcessingTimeLevel:
             "moderate",
 
@@ -53430,6 +53510,30 @@ const BCP_FEED_CROPS = {
             "grain-screen",
             "digital-scale",
             "airtight-food-safe-container"
+          ],
+
+                    harvestProducts: [
+            "ground-corn-meal"
+          ],
+
+          suitableFeedingMethods: [
+            "home-feed-formulation",
+            "mixed-rations"
+          ],
+
+          requiredProcessingTasks: [
+            "shell-corn",
+            "grind-kernels",
+            "mix-with-balanced-ingredients",
+            "store-in-small-batches"
+          ],
+
+          safetyWarnings: [
+            "Ground Corn spoils faster than whole grain.",
+            "Never feed moldy meal.",
+            "Do not use as the sole ration.",
+            "Protect from insects and moisture.",
+            "Discard feed showing rancid odor or mold."
           ],
 
           expectedProcessingTimeLevel:
@@ -53610,6 +53714,31 @@ const BCP_FEED_CROPS = {
             "circulation-fan",
             "digital-scale",
             "sanitizing-supplies"
+          ],
+
+                    harvestProducts: [
+            "sprouted-corn"
+          ],
+
+          suitableFeedingMethods: [
+            "fresh-supplement",
+            "winter-enrichment"
+          ],
+
+          requiredProcessingTasks: [
+            "use-untreated-seed",
+            "sanitize-containers",
+            "rinse-daily",
+            "drain-completely",
+            "feed-immediately-after-sprouting"
+          ],
+
+          safetyWarnings: [
+            "Never use treated seed.",
+            "Discard sprouts showing mold or slime.",
+            "Maintain excellent sanitation.",
+            "Do not store finished sprouts.",
+            "Sprouts remain only a supplemental feed."
           ],
 
           expectedProcessingTimeLevel:
@@ -53817,6 +53946,30 @@ const BCP_FEED_CROPS = {
           optionalEquipment: [
             "portable-poultry-netting",
             "temporary-fencing"
+          ],
+
+                    harvestProducts: [
+            "scattered-kernels"
+          ],
+
+          suitableFeedingMethods: [
+            "pasture-gleaning",
+            "supervised-foraging"
+          ],
+
+          requiredProcessingTasks: [
+            "harvest-crop-first",
+            "inspect-field",
+            "remove-moldy-ears",
+            "supervise-flock"
+          ],
+
+          safetyWarnings: [
+            "Do not allow access to standing Corn.",
+            "Do not use fields containing treated seed.",
+            "Avoid fields with heavy mold contamination.",
+            "Continue feeding a complete ration.",
+            "Limit access if excessive waste grain is present."
           ],
 
           expectedProcessingTimeLevel:
