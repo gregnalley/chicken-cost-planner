@@ -319,6 +319,551 @@ const HARVEST_FREQUENCY_CATEGORIES =
     })
   ]);
 
+    /*
+    ============================================================
+    CENTRALIZED RECOMMENDATION-ENGINE CONFIGURATION
+    ============================================================
+
+    This object is the control panel for the Version 2
+    recommendation engine.
+
+    During Work Session 1, the existing engine does not yet
+    consume these values. Adding this configuration therefore
+    must not intentionally change current regression results.
+
+    The complete replacement engine will read its weights,
+    blends, thresholds, caps, and diagnostic settings from this
+    object rather than scattering those values throughout the
+    engine file.
+  */
+
+  const ENGINE_SCORING = Object.freeze({
+
+    /*
+      ----------------------------------------------------------
+      1. ELIGIBILITY
+      ----------------------------------------------------------
+    */
+
+    eligibility: Object.freeze({
+
+      allowedDevelopmentStatuses:
+        Object.freeze([
+          "testing",
+          "ready"
+        ]),
+
+      minimumEligibleFinalScore:
+        0,
+
+      requireEligibleUsePath:
+        true
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      2. VERSION 2 CATEGORY WEIGHTS
+      ----------------------------------------------------------
+
+      These weights total 100.
+
+      They describe the intended Version 2 base-category model.
+      They will not become active until the complete engine
+      replacement is installed.
+    */
+
+    categoryWeights: Object.freeze({
+
+      climateFit:
+        13,
+
+      siteFit:
+        9,
+
+      soilFit:
+        10,
+
+      waterFit:
+        10,
+
+      spaceFit:
+        13,
+
+      flockFit:
+        11,
+
+      laborFit:
+        10,
+
+      goalFit:
+        14,
+
+      harvestStorageFit:
+        10
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      3. CURRENT-ENGINE COMPATIBILITY WEIGHTS
+      ----------------------------------------------------------
+
+      These preserve a documented copy of the generic category
+      weights currently embedded inside engine.js.
+
+      They are retained only for baseline comparisons during the
+      migration to the Version 2 engine.
+    */
+
+    legacyGenericCategoryWeights:
+      Object.freeze({
+
+        climate:
+          0.16,
+
+        sunlight:
+          0.14,
+
+        space:
+          0.16,
+
+        soil:
+          0.12,
+
+        water:
+          0.14,
+
+        labor:
+          0.12,
+
+        goals:
+          0.16,
+
+        shortSeason:
+          0.18,
+
+        limitedIrrigation:
+          0.18
+      }),
+
+
+    /*
+      ----------------------------------------------------------
+      4. FINAL-SCORE BLEND
+      ----------------------------------------------------------
+    */
+
+    finalScoreBlend: Object.freeze({
+
+      categoryScore:
+        0.70,
+
+      usePathScore:
+        0.30
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      5. GOAL-PRIORITY WEIGHTS
+      ----------------------------------------------------------
+    */
+
+    goalPriorityWeights: Object.freeze({
+
+      rank1:
+        1,
+
+      rank2:
+        0.70,
+
+      rank3:
+        0.45,
+
+      unranked:
+        0.20
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      6. CATEGORY SUBFACTOR WEIGHTS
+      ----------------------------------------------------------
+
+      These define the intended internal structure of the
+      Version 2 category functions.
+    */
+
+    categoryFactorWeights:
+      Object.freeze({
+
+        climate:
+          Object.freeze({
+
+            broadClimate:
+              0.65,
+
+            seasonLength:
+              0.35
+          }),
+
+        climateShortSeasonPriority:
+          Object.freeze({
+
+            broadClimate:
+              0.50,
+
+            seasonLength:
+              0.50
+          }),
+
+        site:
+          Object.freeze({
+
+            sunlight:
+              0.70,
+
+            windExposure:
+              0.30
+          }),
+
+        soil:
+          Object.freeze({
+
+            texture:
+              0.45,
+
+            drainage:
+              0.45,
+
+            usableDepth:
+              0.10
+          }),
+
+        waterNormal:
+          Object.freeze({
+
+            visitorWaterCapacity:
+              0.60,
+
+            limitedIrrigationSuitability:
+              0.15,
+
+            droughtYieldRetention:
+              0.10,
+
+            criticalStageCompatibility:
+              0.15
+          }),
+
+        waterLimited:
+          Object.freeze({
+
+            visitorWaterCapacity:
+              0.25,
+
+            limitedIrrigationSuitability:
+              0.35,
+
+            droughtYieldRetention:
+              0.30,
+
+            criticalStageCompatibility:
+              0.10
+          }),
+
+        flock:
+          Object.freeze({
+
+            flockScale:
+              0.30,
+
+            forageSystem:
+              0.45,
+
+            flockPurpose:
+              0.25
+          }),
+
+        harvestStorage:
+          Object.freeze({
+
+            harvestProductAvailability:
+              0.35,
+
+            harvestPattern:
+              0.20,
+
+            storageDuration:
+              0.20,
+
+            processingEfficiency:
+              0.15,
+
+            preservationFlexibility:
+              0.10
+          })
+      }),
+
+
+    /*
+      ----------------------------------------------------------
+      7. FLOCK-SIZE RANGES
+      ----------------------------------------------------------
+    */
+
+    flockSizeRanges: Object.freeze({
+
+      smallMaximum:
+        8,
+
+      largeMinimum:
+        21
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      8. SCORE CONVERSION
+      ----------------------------------------------------------
+    */
+
+    fivePointScoreConversion:
+      Object.freeze({
+
+        1:
+          0,
+
+        2:
+          25,
+
+        3:
+          50,
+
+        4:
+          75,
+
+        5:
+          100
+      }),
+
+
+    /*
+      ----------------------------------------------------------
+      9. USE-PATH SCORING
+      ----------------------------------------------------------
+    */
+
+    usePathScoring: Object.freeze({
+
+      startingScore:
+        55,
+
+      minimumScore:
+        0,
+
+      maximumScore:
+        100,
+
+      processingTimeScores:
+        Object.freeze({
+
+          "very-low":
+            100,
+
+          "low":
+            80,
+
+          "moderate":
+            60,
+
+          "high":
+            35,
+
+          "very-high":
+            15
+        }),
+
+      strongPathMinimumScore:
+        75,
+
+      maximumMultipurposeBonus:
+        4
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      10. CONTEXTUAL-RISK CAPS
+      ----------------------------------------------------------
+
+      Caps prevent several related Version 2 risk values from
+      overwhelming every positive compatibility category.
+    */
+
+    riskCaps: Object.freeze({
+
+      wildlife:
+        18,
+
+      siteAndStorm:
+        10,
+
+      harvestLoss:
+        10,
+
+      storage:
+        12,
+
+      combined:
+        28
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      11. LIFECYCLE-ADJUSTMENT LIMITS
+      ----------------------------------------------------------
+
+      Existing lifecycle logic will initially be preserved.
+
+      These limits provide central boundaries for the replacement
+      engine and prevent accumulated lifecycle bonuses or
+      penalties from growing without control.
+    */
+
+    lifecycleAdjustmentLimits:
+      Object.freeze({
+
+        maximumBonus:
+          12,
+
+        maximumPenalty:
+          45
+      }),
+
+
+    /*
+      ----------------------------------------------------------
+      12. RANKING THRESHOLDS
+      ----------------------------------------------------------
+    */
+
+    rankingThresholds: Object.freeze({
+
+      nearTiePoints:
+        2,
+
+      competitivePoints:
+        5,
+
+      strongLeaderGap:
+        8
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      13. CONFIDENCE
+      ----------------------------------------------------------
+    */
+
+    confidence: Object.freeze({
+
+      componentWeights:
+        Object.freeze({
+
+          scoringInputCoverage:
+            0.40,
+
+          cropDataQuality:
+            0.35,
+
+          winningUsePath:
+            0.15,
+
+          rankingSeparation:
+            0.10
+        }),
+
+      coverageThresholds:
+        Object.freeze({
+
+          strong:
+            0.85,
+
+          moderate:
+            0.65,
+
+          limited:
+            0.45
+        })
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      14. SORTING
+      ----------------------------------------------------------
+    */
+
+    sorting: Object.freeze({
+
+      useRawFinalScore:
+        true,
+
+      usePathScoreTieBreaker:
+        true,
+
+      goalScoreTieBreaker:
+        true,
+
+      confidenceTieBreaker:
+        true,
+
+      cropIdFinalTieBreaker:
+        true
+    }),
+
+
+    /*
+      ----------------------------------------------------------
+      15. DIAGNOSTICS
+      ----------------------------------------------------------
+    */
+
+    diagnostics: Object.freeze({
+
+      preserveRawScores:
+        true,
+
+      rawScoreDecimalPlaces:
+        4,
+
+      displayScoreDecimalPlaces:
+        0,
+
+      includeCategoryFactors:
+        true,
+
+      includeCoverage:
+        true,
+
+      includeStrengths:
+        true,
+
+      includeLimitations:
+        true,
+
+      includeHardFailures:
+        true,
+
+      includeScoreAdjustments:
+        true
+    })
+  });
+
   const EXPECTED_CROP_IDS =
   Object.freeze(
     typeof BCP_FEED_CROPS !== "undefined" &&
@@ -5030,12 +5575,35 @@ const PLANNER_CONFIG = Object.freeze({
       equipmentIds: EQUIPMENT_IDS
     }),
 
-    scoring: Object.freeze({
-      baseCategoryWeights: BASE_CATEGORY_WEIGHTS,
-      recommendationTiers: RECOMMENDATION_TIERS,
-      confidenceLabels: CONFIDENCE_LABELS,
-      penalties: PENALTY_VALUES,
-      bonuses: BONUS_VALUES
+        scoring: Object.freeze({
+
+      /*
+        Legacy properties are preserved so the current engine
+        continues working during the Version 2 migration.
+      */
+
+      baseCategoryWeights:
+        BASE_CATEGORY_WEIGHTS,
+
+      recommendationTiers:
+        RECOMMENDATION_TIERS,
+
+      confidenceLabels:
+        CONFIDENCE_LABELS,
+
+      penalties:
+        PENALTY_VALUES,
+
+      bonuses:
+        BONUS_VALUES,
+
+      /*
+        The complete replacement engine will use this
+        centralized Version 2 configuration.
+      */
+
+      engine:
+        ENGINE_SCORING
     }),
 
     crops: Object.freeze({
