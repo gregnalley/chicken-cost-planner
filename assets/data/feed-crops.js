@@ -3155,10 +3155,10 @@ const BCP_FEED_CROPS = {
         lodgingRiskScore:
           4,
 
-        wildlifeRiskScore:
+                wildlifeRiskScore:
           5,
 
-         wildlife: {
+        wildlife: {
           wildBirds:
             5,
 
@@ -3179,7 +3179,48 @@ const BCP_FEED_CROPS = {
 
           groundhogs:
             2
-        }, 
+        },
+
+        /*
+          Final Barley Version 2 standardized risk fields.
+
+          These fields are consumed directly by the planner
+          validator and recommendation engine. The detailed
+          Sunflower-specific risk objects below remain intact.
+        */
+
+        wildlifePressureScore:
+          5,
+
+        birdLossRiskScore:
+          5,
+
+        deerBrowsingRiskScore:
+          4,
+
+        rabbitBrowsingRiskScore:
+          3,
+
+        stormDamageRiskScore:
+          4,
+
+        shatteringRiskScore:
+          3,
+
+        postHarvestLossRiskScore:
+          4,
+
+        storagePestRiskScore:
+          5,
+
+        rodentAttractionScore:
+          5,
+
+        mechanicalHarvestSuitabilityScore:
+          3,
+
+        mechanicalProcessingSuitabilityScore:
+          3,
 
         insectRiskScore:
           4,
