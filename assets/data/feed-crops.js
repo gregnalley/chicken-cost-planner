@@ -73592,7 +73592,7 @@ const BCP_FEED_CROPS = {
         "2.0.0",
 
       developmentStatus:
-        "production-ready",
+        "ready",
 
       identity: {
         plannerName:
