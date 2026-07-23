@@ -31425,7 +31425,7 @@ const BCP_FEED_CROPS = {
 
         lifecycle: {
           growthCycle:
-            "biennial-commonly-grown-as-annual",
+            "biennial",
 
           isAnnual:
             false,
@@ -33718,7 +33718,27 @@ const BCP_FEED_CROPS = {
             description:
               "Fresh mature or young leaves are harvested, inspected, and offered whole as supplemental enrichment. Leaves may be hung above litter or placed in a clean feeder to encourage natural pecking behavior while reducing waste and contamination.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "fresh-mature-leaves",
+              "young-tender-leaves",
+              "baby-greens",
+              "tender-leaf-stems"
+            ],
+
+            suitableFeedingMethods: [
+              "whole-produce",
+              "hanging-enrichment",
+              "fresh-green-supplement",
+              "clean-feeder"
+            ],
+
+            requiredProcessingTasks: [
+              "harvest-leaves",
+              "inspect-leaves",
+              "remove-contaminated-material"
+            ],
+            
+              suitabilityScore:
               5,
 
             primaryUse:
@@ -33842,7 +33862,28 @@ const BCP_FEED_CROPS = {
             description:
               "Fresh leaves are chopped into smaller pieces before feeding. This method improves accessibility for birds that may struggle with large mature leaves while allowing measured portions to be distributed throughout the flock.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "fresh-mature-leaves",
+              "young-tender-leaves",
+              "baby-greens",
+              "tender-leaf-stems"
+            ],
+
+            suitableFeedingMethods: [
+              "cut-and-carry",
+              "chopped-fresh-greens",
+              "fresh-green-supplement",
+              "measured-supplement"
+            ],
+
+            requiredProcessingTasks: [
+              "harvest-leaves",
+              "inspect-leaves",
+              "remove-contaminated-material",
+              "tear-or-chop"
+            ],
+            
+              suitabilityScore:
               5,
 
             primaryUse:
@@ -33959,7 +34000,27 @@ const BCP_FEED_CROPS = {
             description:
               "Healthy outer leaves and sound trimmings remaining after household harvest are diverted to the flock instead of compost, allowing one planting to provide both household vegetables and supplemental poultry greens.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "outer-household-trimming-leaves",
+              "young-tender-leaves",
+              "fresh-mature-leaves",
+              "tender-leaf-stems"
+            ],
+
+            suitableFeedingMethods: [
+              "household-garden-trimmings",
+              "fresh-green-supplement",
+              "cut-and-carry",
+              "seasonal-enrichment"
+            ],
+
+            requiredProcessingTasks: [
+              "collect-sound-trimmings",
+              "inspect-leaves",
+              "remove-contaminated-material"
+            ],
+            
+              suitabilityScore:
               5,
 
             primaryUse:
@@ -34075,7 +34136,28 @@ const BCP_FEED_CROPS = {
             description:
               "Kale or Collard plants are grown beneath or behind a protective forage frame, wire cover, or similar barrier that allows chickens to peck accessible leaves while preventing unrestricted scratching, uprooting, crown damage, and soil compaction.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "living-forage",
+              "fresh-greens",
+              "accessible-outer-leaves",
+              "protected-brassica-foliage"
+            ],
+
+            suitableFeedingMethods: [
+              "living-grazing",
+              "forage-frame",
+              "protected-pecking",
+              "seasonal-enrichment"
+            ],
+
+            requiredProcessingTasks: [
+              "establish-plants",
+              "install-forage-frame",
+              "inspect-protective-structure",
+              "manage-flock-access"
+            ],
+            
+              suitabilityScore:
               5,
 
             primaryUse:
@@ -34228,7 +34310,28 @@ const BCP_FEED_CROPS = {
             description:
               "Established Kale or Collard plants are exposed directly to the flock for short, supervised, or carefully timed grazing periods. Birds are removed before they destroy the central growing points, uproot plants, compact the soil, or eliminate the crop's ability to regrow.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "living-forage",
+              "fresh-greens",
+              "standing-brassica-foliage",
+              "pasture-forage"
+            ],
+
+            suitableFeedingMethods: [
+              "living-grazing",
+              "controlled-direct-grazing",
+              "rotational-paddock",
+              "seasonal-enrichment"
+            ],
+
+            requiredProcessingTasks: [
+              "establish-plants",
+              "inspect-grazing-area",
+              "limit-access-time",
+              "remove-flock-before-crop-damage"
+            ],
+            
+              suitabilityScore:
               3,
 
             primaryUse:
@@ -34379,7 +34482,28 @@ const BCP_FEED_CROPS = {
             description:
               "Freshly harvested Kale or Collard leaves are cooled promptly and refrigerated for short-term storage before being fed as supplemental greens.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "fresh-mature-leaves",
+              "young-tender-leaves",
+              "refrigerated-fresh-leaves"
+            ],
+
+            suitableFeedingMethods: [
+              "fresh-green-supplement",
+              "whole-produce",
+              "chopped-fresh-greens",
+              "measured-supplement"
+            ],
+
+            requiredProcessingTasks: [
+              "harvest-leaves",
+              "inspect-leaves",
+              "remove-contaminated-material",
+              "cool-promptly",
+              "refrigerate"
+            ],
+            
+              suitabilityScore:
               4,
 
             primaryUse:
@@ -34497,7 +34621,27 @@ const BCP_FEED_CROPS = {
             description:
               "Household surplus Kale or Collards are cooked without oils, salt, onions, garlic, seasonings, or other unsuitable ingredients before being cooled and offered as a supplemental flock treat.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "plain-cooked-leaves",
+              "cooked-kale-leaves",
+              "cooked-collard-leaves"
+            ],
+
+            suitableFeedingMethods: [
+              "heat-treated",
+              "plain-cooked-supplement",
+              "measured-supplement",
+              "household-surplus"
+            ],
+
+            requiredProcessingTasks: [
+              "inspect-leaves",
+              "wash",
+              "cook-plain",
+              "cool-completely"
+            ],
+            
+              suitabilityScore:
               3,
 
             primaryUse:
@@ -34613,7 +34757,33 @@ const BCP_FEED_CROPS = {
             description:
               "Fresh Kale or Collards are blanched, cooled rapidly, packaged, frozen, and thawed before feeding to extend seasonal availability of supplemental greens.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "blanched-frozen-leaves",
+              "frozen-kale-leaves",
+              "frozen-collard-leaves",
+              "preserved-leafy-greens"
+            ],
+
+            suitableFeedingMethods: [
+              "thawed-frozen-greens",
+              "measured-supplement",
+              "winter-storage",
+              "seasonal-preserved-feed"
+            ],
+
+            requiredProcessingTasks: [
+              "harvest-leaves",
+              "inspect-leaves",
+              "wash",
+              "blanch",
+              "cool-rapidly",
+              "drain",
+              "package",
+              "freeze",
+              "thaw-before-feeding"
+            ],
+            
+              suitabilityScore:
               4,
 
             primaryUse:
@@ -34737,7 +34907,32 @@ const BCP_FEED_CROPS = {
             description:
               "Clean Kale or Collard leaves are fully dehydrated and stored as coarse flakes for measured supplemental use. Removing water greatly concentrates the material by weight, so dried flakes should be offered more deliberately than fresh leaves.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "dehydrated-leaf-flakes",
+              "dried-kale-leaves",
+              "dried-collard-leaves",
+              "dried-leafy-forage"
+            ],
+
+            suitableFeedingMethods: [
+              "dried-forage",
+              "measured-supplement",
+              "winter-storage",
+              "mixed-with-moist-food"
+            ],
+
+            requiredProcessingTasks: [
+              "harvest-leaves",
+              "inspect-leaves",
+              "wash-when-needed",
+              "drain",
+              "dehydrate-completely",
+              "condition-dried-material",
+              "break-into-flakes",
+              "package-airtight"
+            ],
+            
+              suitabilityScore:
               3,
 
             primaryUse:
@@ -34931,7 +35126,33 @@ const BCP_FEED_CROPS = {
             description:
               "Fully dehydrated Kale or Collard leaves are ground into a powder for carefully measured supplemental use. Powder can be incorporated into moist foods or an intentionally formulated ration, but its concentrated nature, dust potential, and tendency to separate make it less suitable for casual free-choice feeding.",
 
-            suitabilityScore:
+                        harvestProducts: [
+              "dehydrated-leaf-powder",
+              "ground-kale-leaves",
+              "ground-collard-leaves",
+              "dried-leaf-meal"
+            ],
+
+            suitableFeedingMethods: [
+              "measured-supplement",
+              "mixed-with-moist-food",
+              "formulated-feed-ingredient",
+              "winter-storage"
+            ],
+
+            requiredProcessingTasks: [
+              "harvest-leaves",
+              "inspect-leaves",
+              "wash-when-needed",
+              "drain",
+              "dehydrate-completely",
+              "condition-dried-material",
+              "grind",
+              "control-dust",
+              "package-airtight"
+            ],
+            
+              suitabilityScore:
               2,
 
             primaryUse:
@@ -35307,7 +35528,7 @@ const BCP_FEED_CROPS = {
           }
         }
       }
-    },
+      },
    
 
     ///////////////////////////////////////////////
