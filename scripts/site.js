@@ -17,6 +17,7 @@ async function loadSiteScripts() {
     await loadScript("assets/data/messages.js");
 
     await loadScript("scripts/load-components.js");
+    await loadScript("scripts/recommendation-engine.js");
     await loadScript("scripts/product-loader.js");
     await loadScript("scripts/collection-loader.js");
     await loadScript("scripts/message-loader.js");
