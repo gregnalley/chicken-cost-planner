@@ -4,11 +4,11 @@
   Backyard Chicken Planner
   Product Card Renderer
 
-  Version: 2.0.0
+  Version: 2.1.0
 
   Display modes:
   - full: Standard product card used in guides and reviews
-  - compact: Smaller card used in recommendation results
+  - tile: Small recommendation tile used in planner results
 */
 
 
@@ -17,8 +17,8 @@ window.renderProductCards = function (
   options = {}
 ) {
   const defaultDisplayMode =
-    options.displayMode === "compact"
-      ? "compact"
+    options.displayMode === "tile"
+      ? "tile"
       : "full";
 
   const productSlots =
@@ -52,28 +52,18 @@ window.renderProductCards = function (
       return;
     }
 
-    /*
-      A slot may choose its own display mode.
-
-      Example:
-      <div
-        data-product="PRD-001"
-        data-product-display="compact">
-      </div>
-    */
-
     const slotDisplayMode =
       slot.getAttribute(
         "data-product-display"
       );
 
     const displayMode =
-      slotDisplayMode === "compact"
-        ? "compact"
+      slotDisplayMode === "tile"
+        ? "tile"
         : defaultDisplayMode;
 
-    const isCompact =
-      displayMode === "compact";
+    const isTile =
+      displayMode === "tile";
 
     const bullets =
       Array.isArray(product.bullets)
@@ -85,32 +75,62 @@ window.renderProductCards = function (
         : "";
 
     const cardClass =
-      isCompact
-        ? "affiliate-card affiliate-card--compact"
+      isTile
+        ? "affiliate-card affiliate-card--tile"
         : "affiliate-card affiliate-card--full";
 
+    const displayedBadge =
+      isTile
+        ? product.tileBadge ||
+          "🐔 Recommended"
+        : product.badge;
+
+    const displayedDescription =
+      isTile
+        ? product.shortDescription ||
+          product.description
+        : product.description;
+
+    const displayedButtonText =
+      isTile
+        ? product.tileButtonText ||
+          "View Product →"
+        : product.buttonText;
+
     slot.innerHTML = `
-      <div class="${cardClass}"
-           data-product-id="${productId}"
-           data-product-category="${product.category || ""}"
-           data-product-display="${displayMode}">
-
-        ${product.badge ? `
-          <span class="affiliate-badge">
-            ${product.badge}
-          </span>
-        ` : ""}
-
-        <h3>${product.title || "Recommended Product"}</h3>
-
-        ${product.description ? `
-          <p class="affiliate-description">
-            ${product.description}
-          </p>
-        ` : ""}
+      <div
+        class="${cardClass}"
+        data-product-id="${productId}"
+        data-product-category="${product.category || ""}"
+        data-product-display="${displayMode}"
+      >
 
         ${
-          !isCompact && bullets
+          displayedBadge
+            ? `
+              <span class="affiliate-badge">
+                ${displayedBadge}
+              </span>
+            `
+            : ""
+        }
+
+        <h3>
+          ${product.title || "Recommended Product"}
+        </h3>
+
+        ${
+          displayedDescription
+            ? `
+              <p class="affiliate-description">
+                ${displayedDescription}
+              </p>
+            `
+            : ""
+        }
+
+        ${
+          !isTile && bullets
             ? `
               <ul>
                 ${bullets}
@@ -120,21 +140,22 @@ window.renderProductCards = function (
         }
 
         ${
-          product.url &&
-          product.buttonText
+          product.url
             ? `
-              <a class="affiliate-button"
-                 href="${product.url}"
-                 target="_blank"
-                 rel="nofollow sponsored noopener">
-                ${product.buttonText}
+              <a
+                class="affiliate-button"
+                href="${product.url}"
+                target="_blank"
+                rel="nofollow sponsored noopener"
+              >
+                ${displayedButtonText}
               </a>
             `
             : ""
         }
 
         ${
-          !isCompact && product.note
+          !isTile && product.note
             ? `
               <p class="affiliate-note">
                 ${product.note}
@@ -214,7 +235,7 @@ window.renderRecommendedProducts = function (
     const productSlot =
       window.createProductSlot(
         productId,
-        "compact"
+        "tile"
       );
 
     container.appendChild(
@@ -225,7 +246,7 @@ window.renderRecommendedProducts = function (
   window.renderProductCards(
     container,
     {
-      displayMode: "compact"
+      displayMode: "tile"
     }
   );
 
