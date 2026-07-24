@@ -66,13 +66,13 @@
 
   if (
     !engine ||
-    typeof engine.scoreGenericCropProfile !==
-      "function"
-  ) {
+    typeof engine.evaluateAllCrops !==
+        "function"
+) {
     throw new Error(
-      "Feed Crop Planner shared scoring engine must load before the public results controller."
+        "Feed Crop Planner Version 2 engine failed to load."
     );
-  }
+}
 
   if (
     !questionnaire ||
