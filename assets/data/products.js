@@ -13,6 +13,33 @@ const BCP_PRODUCTS = {
     url: "https://amzn.to/4y7b7eC",
     note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
   },
+      
+  recommendationData: {
+    recommendedFor: {
+      crops: [],
+      planners: [],
+      calculators: [],
+      pageTypes: [
+        "chicken-feeder-guide"
+      ],
+      tags: [
+        "feeding",
+        "feed-waste-reduction",
+        "rodent-control",
+        "outdoor-feeding"
+      ],
+      audiences: [
+        "backyard-flock",
+        "small-flock",
+        "medium-flock"
+      ]
+    },
+
+    universal: false,
+    priority: 90,
+    enabled: true   
+
+  },
 
   "PRD-002": {
     category: "Feeders",
