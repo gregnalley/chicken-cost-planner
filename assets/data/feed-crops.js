@@ -93644,6 +93644,9 @@ usePaths: [
         icon:
           "🫛",
 
+        scientificName:
+          "Pisum sativum",  
+
         cropCategory:
           "grain-legume",
 
@@ -95753,22 +95756,69 @@ usePaths: [
       },
 
       seasonalRoles: {
-        earlySpring:
+
+              spring: [
+          "Early-spring direct seeding",
+          "Spring cover-crop establishment",
+          "Cool-season vegetative growth",
+          "Nitrogen fixation",
+          "Flowering before damaging summer heat",
+          "Fresh green pea development",
+          "Limited tender foliage harvest",
+          "Pea-and-oat mixture establishment",
+          "Protecting young stands from saturated soil and compaction"
+        ],
+
+        summer: [
+          "Late grain filling where spring planting remains active",
+          "Fresh green pea harvest",
+          "Mature dry-pea harvest",
+          "Protected postharvest drying",
+          "Cracking or grinding clean dry peas",
+          "Cooked mature-pea preparation",
+          "Cover-crop termination",
+          "Postharvest flock cleanup",
+          "Monitoring heat stress, lodging, shattering, and mold"
+        ],
+
+        autumn: [
+          "Autumn planting of winter-adapted varieties where suitable",
+          "Early establishment before severe freezing",
+          "Stored dry-pea use",
+          "Seed cleaning and sorting",
+          "Storage inspection",
+          "Rotation planning",
+          "Residue management",
+          "Preparation for a following non-legume crop"
+        ],
+
+        winter: [
+          "Stored whole dry peas",
+          "Small-batch cracking",
+          "Ground ration-ingredient preparation",
+          "Cooked pea supplementation",
+          "Stored-seed inspection",
+          "Rodent and insect monitoring",
+          "Moisture and mold inspection",
+          "Seed inventory and spring planting preparation"
+        ],
+
+                earlySpringActive:
           true,
 
-        lateSpring:
+        lateSpringActive:
           true,
 
-        summer:
+        summerActive:
           false,
 
-        lateSummer:
+        lateSummerActive:
           false,
 
-        fall:
+        autumnActive:
           true,
 
-        winterStorage:
+        winterStoredUse:
           true,
 
         perennial:
