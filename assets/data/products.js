@@ -15,29 +15,31 @@ const BCP_PRODUCTS = {
   },
       
   recommendationData: {
-    recommendedFor: {
-      crops: [],
-      planners: [],
-      calculators: [],
-      pageTypes: [
-        "chicken-feeder-guide"
-      ],
-      tags: [
-        "feeding",
-        "feed-waste-reduction",
-        "rodent-control",
-        "outdoor-feeding"
-      ],
-      audiences: [
-        "backyard-flock",
-        "small-flock",
-        "medium-flock"
-      ]
-    },
+  recommendedFor: {
+    crops: [],
+    planners: [],
+    calculators: [],
+    pageTypes: [
+      "best-chicken-feeders"
+    ],
+    tags: [
+      "feeding",
+      "rodent-control",
+      "feed-waste",
+      "backyard-flock"
+    ],
+    audiences: [
+      "beginner",
+      "small-flock",
+      "medium-flock"
+    ]
+  },
 
-    universal: false,
-    priority: 90,
-    enabled: true   
+  universal: false,
+
+  priority: 90,
+
+  enabled: true   
 
   },
 
