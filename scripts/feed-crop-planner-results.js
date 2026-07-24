@@ -1093,6 +1093,20 @@
       profile.answers
     );
 
+
+console.log(
+  "Version 2 collection result:",
+  collectionResult
+);
+
+console.log(
+  "First Version 2 evaluation:",
+  collectionResult.evaluations?.[0]
+);
+
+
+
+
   const allResults =
     collectionResult.evaluations.map(
       evaluation => ({
