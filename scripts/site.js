@@ -40,6 +40,20 @@ console.log(
   recommendedProductsContainer
 );
 
+console.log(
+  "Loaded PRD-001:",
+  window.BCP_PRODUCTS &&
+    window.BCP_PRODUCTS["PRD-001"]
+);
+
+console.log(
+  "Loaded PRD-001 recommendationData:",
+  window.BCP_PRODUCTS &&
+    window.BCP_PRODUCTS["PRD-001"] &&
+    window.BCP_PRODUCTS["PRD-001"]
+      .recommendationData
+);
+
 if (
   recommendedProductsContainer &&
   typeof window.renderRecommendedProducts ===
