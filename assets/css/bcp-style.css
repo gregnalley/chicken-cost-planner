@@ -3152,3 +3152,78 @@ nav a:hover{
   white-space:
     nowrap;
 }
+
+/* =========================================
+   COMPACT PRODUCT RECOMMENDATIONS
+   ========================================= */
+
+.recommended-product-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.recommended-product-grid
+[data-product] {
+  display: flex;
+  min-width: 0;
+}
+
+.affiliate-card--compact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 18px;
+}
+
+.affiliate-card--compact
+.affiliate-badge {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+}
+
+.affiliate-card--compact h3 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.affiliate-card--compact
+.affiliate-description {
+  margin: 0 0 16px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.affiliate-card--compact
+.affiliate-button {
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .recommended-product-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .recommended-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
