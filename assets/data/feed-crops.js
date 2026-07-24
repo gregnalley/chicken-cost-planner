@@ -36619,6 +36619,9 @@ const BCP_FEED_CROPS = {
           icon:
             "☘️",
 
+          scientificName:
+            "Trifolium repens",  
+
           cropCategory:
             "perennial-legume",
 
@@ -38856,84 +38859,43 @@ const BCP_FEED_CROPS = {
         },
 
                 seasonalRoles: {
-          spring: {
-            productionScore:
-              5,
+         spring: [
+  "Peak vegetative forage production",
+  "Living grazing",
+  "Fresh cut-and-carry greens",
+  "Nitrogen fixation",
+  "Rapid stolon expansion",
+  "Pasture establishment",
+  "Pollinator habitat as flowering begins"
+],
 
-            feedValueScore:
-              5,
-
-            managementPriority:
-              "Establishment, vigorous vegetative growth, rotational grazing, fresh cut-and-carry harvest, overseeding thin areas, and protecting young stands.",
-
-            primaryRoles: [
-              "Peak vegetative forage production",
-              "Living grazing",
-              "Fresh cut-and-carry greens",
-              "Nitrogen fixation",
-              "Rapid stolon expansion",
-              "Pasture establishment",
-              "Pollinator habitat as flowering begins"
-            ]
-          },
-
-          summer: {
-            productionScore:
-              3,
-
-            feedValueScore:
-              3,
-
-            managementPriority:
-              "Protect stands from excessive heat, drought, and continuous grazing while encouraging recovery after harvest.",
-
-            primaryRoles: [
+          summer: [
               "Managed grazing where moisture is adequate",
               "Recovery between grazing cycles",
               "Irrigated forage production",
               "Ground cover",
               "Soil protection"
-            ]
-          },
+            ],
+          
 
-          autumn: {
-            productionScore:
-              5,
-
-            feedValueScore:
-              5,
-
-            managementPriority:
-              "Strong regrowth during cooler temperatures, establishment of new seedings, pasture renovation, and building reserves before winter dormancy.",
-
-            primaryRoles: [
+          autumn: [
               "Renewed vegetative growth",
               "Fresh forage",
               "Pasture renovation",
               "Overseeding",
               "Nitrogen fixation",
               "Pollinator support where flowering continues"
-            ]
-          },
+            ],
+          
 
-          winter: {
-            productionScore:
-              2,
-
-            feedValueScore:
-              2,
-
-            managementPriority:
-              "Protect dormant or slow-growing stands from unnecessary traffic while allowing recovery for spring production.",
-
-            primaryRoles: [
+          winter: [
               "Ground cover",
               "Living root system",
               "Soil stabilization",
               "Dormant perennial stand",
               "Limited grazing in mild climates"
-            ]
-          },
+            ],
+          
 
           annualStrengths: [
             "Multi-year perennial production",
@@ -38969,6 +38931,20 @@ const BCP_FEED_CROPS = {
 
           seasonalGapRiskScore:
             2,
+
+            plannerSeasonScores: {
+  spring:
+    5,
+
+  summer:
+    3,
+
+  autumn:
+    5,
+
+  winter:
+    2
+},
 
           directFacts: {
             strongestSeason:
