@@ -2783,199 +2783,191 @@ console.log(
 }
 
   function renderGoalComplementTable(
-    eligibleResults,
-    answers
-  ) {
+  eligibleResults,
+  answers
+) {
 
-
-console.log(
-  "Goal comparison result:",
-  eligibleResults[0]
-);
-
-
-
-    const selectedPriorities =
-      asArray(
-        answers.preferences
-          ?.goalPriorities
+  const selectedPriorities =
+    asArray(
+      answers.preferences
+        ?.goalPriorities
+    )
+      .filter(
+        priority =>
+          priority &&
+          typeof priority.goal ===
+            "string"
       )
-        .filter(
-          priority =>
-            priority &&
-            typeof priority.goal ===
-              "string"
-        )
-        .sort(
-          (first, second) =>
-            Number(first.rank) -
-            Number(second.rank)
-        );
-
-    if (
-      selectedPriorities.length === 0 ||
-      eligibleResults.length === 0
-    ) {
-      return "";
-    }
-
-    const rows =
-      selectedPriorities.map(
-        priority => {
-          
-          const goalFieldName =
-            getCropGoalFieldName(
-              priority.goal
-            );
-
-          const scoredCrops =
-            eligibleResults
-              .map(result => {
-                const rawScore =
-                  goalFieldName
-                    ? result.cropRecord
-                        ?.plannerData
-                        ?.goals
-                        ?.[
-                          goalFieldName
-                        ]
-                    : null;
-
-                return {
-                  result,
-
-                  score:
-                    Number.isFinite(
-                      rawScore
-                    )
-                      ? engine
-                          .convertFivePointToPercent(
-                            rawScore
-                          )
-                      : null
-                };
-              })
-              .filter(
-                item =>
-                  Number.isFinite(
-                    item.score
-                  )
-              )
-              .sort(
-                (first, second) =>
-                  second.score -
-                  first.score
-              );
-
-          const leader =
-            scoredCrops[0];
-
-          return `
-            <tr>
-
-              <td>
-                <span class="feed-crop-goal-rank">
-                  #${escapeHTML(
-                    String(
-                      priority.rank
-                    )
-                  )}
-                </span>
-
-                ${escapeHTML(
-                  GOAL_LABELS[
-                    priority.goal
-                  ] ||
-                  formatIdentifier(
-                    priority.goal
-                  )
-                )}
-              </td>
-
-              <td>
-                ${
-                  leader
-                    ? `
-                      <strong>
-                        ${escapeHTML(
-                          leader.result
-                            .cropName
-                        )}
-                      </strong>
-                    `
-                    : "No comparable crop rating"
-                }
-              </td>
-
-              <td>
-                ${
-                  leader
-                    ? escapeHTML(
-                        formatPercent(
-                          leader.score
-                        )
-                      )
-                    : "Not scored"
-                }
-              </td>
-
-            </tr>
-          `;
-        }
+      .sort(
+        (first, second) =>
+          Number(first.rank) -
+          Number(second.rank)
       );
 
-    return `
-      <section class="feed-crop-results-goal-section">
-
-        <div class="feed-crop-results-section-heading">
-
-          <span class="feed-crop-results-kicker">
-            Your ranked priorities
-          </span>
-
-          <h2>
-            🎯 Which Eligible Crop Leads Each Goal?
-          </h2>
-
-          <p>
-            The best overall crop is not always the strongest crop for every individual goal. This table shows which eligible crop has the strongest underlying rating for each of your top priorities.
-          </p>
-
-        </div>
-
-        <div class="feed-crop-results-table-wrap">
-
-          <table class="feed-crop-results-table">
-
-            <thead>
-
-              <tr>
-                <th>
-                  Priority
-                </th>
-
-                <th>
-                  Strongest Eligible Crop
-                </th>
-
-                <th>
-                  Goal Rating
-                </th>
-              </tr>
-
-            </thead>
-
-            <tbody>
-              ${rows.join("")}
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </section>
-    `;
+  if (
+    selectedPriorities.length === 0 ||
+    eligibleResults.length === 0
+  ) {
+    return "";
   }
+
+  const rows =
+    selectedPriorities.map(
+      priority => {
+
+        const scoredCrops =
+          eligibleResults
+            .map(result => {
+
+              const goalResult =
+                asArray(
+                  result.goals
+                    ?.goalResults
+                )
+                  .find(
+                    item =>
+                      item?.id ===
+                        priority.goal
+                  );
+
+              const score =
+                Number.isFinite(
+                  goalResult?.score
+                )
+                  ? goalResult.score
+                  : null;
+
+              return {
+                result,
+                goalResult,
+                score
+              };
+
+            })
+            .filter(
+              item =>
+                Number.isFinite(
+                  item.score
+                )
+            )
+            .sort(
+              (first, second) =>
+                second.score -
+                first.score
+            );
+
+        const leader =
+          scoredCrops[0] ||
+          null;
+
+        return `
+          <tr>
+
+            <td>
+              <span class="feed-crop-goal-rank">
+                #${escapeHTML(
+                  String(
+                    priority.rank
+                  )
+                )}
+              </span>
+
+              ${escapeHTML(
+                GOAL_LABELS[
+                  priority.goal
+                ] ||
+                formatIdentifier(
+                  priority.goal
+                )
+              )}
+            </td>
+
+            <td>
+              ${
+                leader
+                  ? `
+                    <strong>
+                      ${escapeHTML(
+                        leader.result
+                          .cropName
+                      )}
+                    </strong>
+                  `
+                  : "No comparable crop rating"
+              }
+            </td>
+
+            <td>
+              ${
+                leader
+                  ? escapeHTML(
+                      formatPercent(
+                        leader.score
+                      )
+                    )
+                  : "Not scored"
+              }
+            </td>
+
+          </tr>
+        `;
+
+      }
+    );
+
+  return `
+    <section class="feed-crop-results-goal-section">
+
+      <div class="feed-crop-results-section-heading">
+
+        <span class="feed-crop-results-kicker">
+          Your ranked priorities
+        </span>
+
+        <h2>
+          🎯 Which Eligible Crop Leads Each Goal?
+        </h2>
+
+        <p>
+          The best overall crop is not always the strongest crop for every individual goal. This table shows which eligible crop has the strongest underlying rating for each of your top priorities.
+        </p>
+
+      </div>
+
+      <div class="feed-crop-results-table-wrap">
+
+        <table class="feed-crop-results-table">
+
+          <thead>
+
+            <tr>
+              <th>
+                Priority
+              </th>
+
+              <th>
+                Strongest Eligible Crop
+              </th>
+
+              <th>
+                Goal Rating
+              </th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+            ${rows.join("")}
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+  `;
+
+}
 
   function renderCombinationPlan(
     eligibleResults,
