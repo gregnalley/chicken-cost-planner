@@ -4,6 +4,15 @@ window.BCP_PRODUCTS = {
     badge: "🐔 Backyard Chicken Planner Pick",
     title: "Rent A Coop Tredle Feeder",
     description: "A Tredle feeder is great for keep pests out and only allowing access to the food when a chicken puts their weight on the step.  This also helps keep food waste down as they are not really able to scratch in their food.",
+        shortDescription:
+      "Helps keep pests out while reducing spilled and wasted feed.",
+
+    tileBadge:
+      "🐔 Recommended",
+
+    tileButtonText:
+      "View Price →",
+    
     bullets: [
       "Useful for keeping pests out",
       "Good option for reducing open-feed waste",
