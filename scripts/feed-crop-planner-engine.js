@@ -46362,96 +46362,96 @@ if (pathResults.length > 0) {
       ----------------------------------------------------------
     */
 
-    const evaluateUsePaths =
-      shouldEvaluateUsePathPhase(
-        evaluation,
-        options
-      );
+    const shouldEvaluateUsePaths =
+  shouldEvaluateUsePathPhase(
+    evaluation,
+    options
+  );
 
-    if (
-      evaluateUsePaths
-    ) {
+if (
+  shouldEvaluateUsePaths
+) {
 
-      const usePathResult =
-        runCropEvaluationPhase(
-          evaluation,
-          ENGINE_PHASE_IDS
-            .USE_PATHS,
-          () =>
-            evaluateUsePaths(
-              crop,
-              answers,
-              evaluation
-            ),
-          {
-            throwOnError:
-              !options
-                .isolatePhaseErrors,
-
-            fatal:
-              false,
-
-            recoverable:
-              true,
-
-            errorCode:
-              "USE_PATH_EVALUATION_FAILED"
-          }
-        );
-
-      if (
-        !usePathResult
-          .successful
-      ) {
-
-        ensureUsePathFallback(
+  const usePathResult =
+    runCropEvaluationPhase(
+      evaluation,
+      ENGINE_PHASE_IDS
+        .USE_PATHS,
+      () =>
+        evaluateUsePaths(
+          crop,
+          answers,
           evaluation
-        );
+        ),
+      {
+        throwOnError:
+          !options
+            .isolatePhaseErrors,
 
+        fatal:
+          false,
+
+        recoverable:
+          true,
+
+        errorCode:
+          "USE_PATH_EVALUATION_FAILED"
       }
+    );
 
-    } else {
+  if (
+    !usePathResult
+      .successful
+  ) {
 
-      ensureUsePathFallback(
-        evaluation
-      );
+    ensureUsePathFallback(
+      evaluation
+    );
 
-      skipEvaluationPhase(
-        evaluation,
-        ENGINE_PHASE_IDS
-          .USE_PATHS,
-        "Use-path diagnostics were disabled for rejected crops.",
-        {
-          rejectedCrop:
-            true
-        }
-      );
+  }
 
+} else {
+
+  ensureUsePathFallback(
+    evaluation
+  );
+
+  skipEvaluationPhase(
+    evaluation,
+    ENGINE_PHASE_IDS
+      .USE_PATHS,
+    "Use-path diagnostics were disabled for rejected crops.",
+    {
+      rejectedCrop:
+        true
     }
+  );
 
-    const usePathPhase =
-      getPipelinePhaseMetadata(
-        evaluation,
-        ENGINE_PHASE_IDS
-          .USE_PATHS
-      );
+}
 
-    if (
-      usePathPhase
-    ) {
+const usePathPhase =
+  getPipelinePhaseMetadata(
+    evaluation,
+    ENGINE_PHASE_IDS
+      .USE_PATHS
+  );
 
-      usePathPhase.metadata = {
+if (
+  usePathPhase
+) {
 
-        ...usePathPhase
-          .metadata,
+  usePathPhase.metadata = {
 
-        ...createUsePathPhaseSummary(
-          evaluation
-        )
+    ...usePathPhase
+      .metadata,
 
-      };
+    ...createUsePathPhaseSummary(
+      evaluation
+    )
 
-    }
+  };
+
+}
 
 
     /*
