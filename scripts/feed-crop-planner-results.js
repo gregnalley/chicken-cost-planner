@@ -1769,112 +1769,171 @@ console.log(
   }
 
   function renderCategoryScores(
-    result
-  ) {
-
-
-console.log(
-  "Category Score Result:",
   result
-);
+) {
 
+  const compatibility =
+    result.compatibility ||
+    {};
 
-    const entries =
-      Object.entries(
-        result.categoryResults ||
-        {}
+  const entries =
+    Object.entries(
+      compatibility
+    )
+      .filter(
+        ([
+          categoryId,
+          categoryResult
+        ]) =>
+          categoryId !==
+            "categoryResults" &&
+          categoryId !==
+            "matchedFactors" &&
+          categoryId !==
+            "missedFactors" &&
+          categoryId !==
+            "warnings" &&
+          categoryId !==
+            "score" &&
+          categoryId !==
+            "evidenceCoverage" &&
+          categoryResult &&
+          typeof categoryResult ===
+            "object" &&
+          !Array.isArray(
+            categoryResult
+          )
       );
 
-    return `
-      <div class="feed-crop-category-grid">
-        ${entries
-          .map(
-            ([
-              categoryId,
-              categoryResult
-            ]) => {
-              const config =
-                CATEGORY_DISPLAY_CONFIG[
-                  categoryId
-                ] ||
-                {
-                  label:
-                    formatIdentifier(
-                      categoryId
-                    ),
+  return `
+    <div class="feed-crop-category-grid">
 
-                  icon:
-                    "🌱"
-                };
+      ${entries
+        .map(
+          ([
+            categoryId,
+            categoryResult
+          ]) => {
 
-              const score =
-                categoryResult
-                  ?.score;
+            const config =
+              CATEGORY_DISPLAY_CONFIG[
+                categoryId
+              ] ||
+              {
+                label:
+                  formatIdentifier(
+                    categoryId
+                  ),
 
-              const width =
-                Number.isFinite(score)
-                  ? Math.max(
-                      0,
-                      Math.min(
-                        100,
-                        Math.round(score)
-                      )
+                icon:
+                  "🌱"
+              };
+
+            const score =
+              Number.isFinite(
+                categoryResult?.score
+              )
+                ? categoryResult.score
+                : null;
+
+            const width =
+              Number.isFinite(score)
+                ? Math.max(
+                    0,
+                    Math.min(
+                      100,
+                      Math.round(score)
                     )
-                  : 0;
+                  )
+                : 0;
 
-              return `
-                <article
-                  class="feed-crop-category-card ${getScoreClass(
-                    score
-                  )}"
-                >
-                  <div class="feed-crop-category-heading">
+            const matchedFactors =
+              asArray(
+                categoryResult
+                  ?.matchedFactors
+              );
 
-                    <span class="feed-crop-category-icon">
-                      ${escapeHTML(
-                        config.icon
-                      )}
-                    </span>
+            const missedFactors =
+              asArray(
+                categoryResult
+                  ?.missedFactors
+              );
 
-                    <strong>
-                      ${escapeHTML(
-                        config.label
-                      )}
-                    </strong>
+            const warnings =
+              asArray(
+                categoryResult
+                  ?.warnings
+              );
 
-                    <span class="feed-crop-category-score">
-                      ${escapeHTML(
-                        formatPercent(score)
-                      )}
-                    </span>
+            const explanation =
+              matchedFactors[0] ||
+              missedFactors[0] ||
+              warnings[0]?.message ||
+              warnings[0] ||
+              (
+                Number.isFinite(score)
+                  ? "This category was evaluated using the available crop and planner data."
+                  : "Not enough information was available to score this category."
+              );
 
-                  </div>
+            return `
+              <article
+                class="feed-crop-category-card ${getScoreClass(
+                  score
+                )}"
+              >
 
-                  <div
-                    class="feed-crop-category-track"
-                    aria-hidden="true"
-                  >
-                    <span
-                      style="width:${width}%;"
-                    ></span>
-                  </div>
+                <div class="feed-crop-category-heading">
 
-                  <p>
+                  <span class="feed-crop-category-icon">
                     ${escapeHTML(
-                      categoryResult
-                        ?.reason ||
-                      "No category explanation was available."
+                      config.icon
                     )}
-                  </p>
+                  </span>
 
-                </article>
-              `;
-            }
-          )
-          .join("")}
-      </div>
-    `;
-  }
+                  <strong>
+                    ${escapeHTML(
+                      config.label
+                    )}
+                  </strong>
+
+                  <span class="feed-crop-category-score">
+                    ${escapeHTML(
+                      formatPercent(
+                        score
+                      )
+                    )}
+                  </span>
+
+                </div>
+
+                <div
+                  class="feed-crop-category-track"
+                  aria-hidden="true"
+                >
+                  <span
+                    style="width:${width}%;"
+                  ></span>
+                </div>
+
+                <p>
+                  ${escapeHTML(
+                    String(
+                      explanation
+                    )
+                  )}
+                </p>
+
+              </article>
+            `;
+          }
+        )
+        .join("")}
+
+    </div>
+  `;
+
+}
 
   function renderPlanSummary(
     answers
