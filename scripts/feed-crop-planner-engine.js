@@ -9937,15 +9937,17 @@
 
     const possibleCollections = [
 
-      goals.goalScores,
+  goals.goalFitScores,
 
-      goals.plannerGoalScores,
+  goals.goalScores,
 
-      goals.scores,
+  goals.plannerGoalScores,
 
-      goals.goalAlignmentScores
+  goals.scores,
 
-    ].filter(
+  goals.goalAlignmentScores
+
+].filter(
       collection =>
         collection &&
         typeof collection ===
@@ -9962,17 +9964,62 @@
           character.toUpperCase()
       );
 
+     const goalFieldAliases = {
+
+  "reduce-feed-use":
+    "reducePurchasedFeed",
+
+  "high-energy":
+    "increaseEnergyProduction",
+
+  "protein-oriented":
+    "increaseProteinProduction",
+
+  "fresh-greens":
+    "produceFreshGreens",
+
+  "living-forage":
+    "provideLivingForage",
+
+  "winter-storage":
+    "produceStoredWinterFeed",
+
+  "soil-improvement":
+    "improveSoil",
+
+  "nitrogen-fixation":
+    "fixNitrogen",
+
+  "pollinators":
+    "supportPollinators",
+
+  "shared-household-food":
+    "produceHouseholdFood",
+
+  "use-unused-space":
+    "useSmallSpace"
+
+};
+
+const aliasedGoalField =
+  goalFieldAliases[
+    goalId
+  ] ||
+  null; 
+
     const possibleKeys = [
 
-      goalId,
+  aliasedGoalField,
 
-      camelCaseGoalId,
+  goalId,
 
-      `${camelCaseGoalId}Score`,
+  camelCaseGoalId,
 
-      `${goalId}Score`
+  `${camelCaseGoalId}Score`,
 
-    ];
+  `${goalId}Score`
+
+].filter(Boolean);
 
     for (
       const collection
