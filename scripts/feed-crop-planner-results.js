@@ -1212,6 +1212,15 @@ console.log(
   result
 ) {
 
+
+console.log(
+  "Version 2 best path:",
+  result.usePaths.bestPath
+);
+
+
+
+
   if (
     result.usePaths?.bestPath
   ) {
