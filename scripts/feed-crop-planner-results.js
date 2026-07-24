@@ -2594,6 +2594,83 @@ console.log(
     `;
   }
 
+  function getCropGoalFieldName(
+  goalId
+) {
+  const goalFieldMap = {
+    "reduce-feed-use":
+      "feedReductionScore",
+
+    "high-energy":
+      "energyProductionScore",
+
+    "protein-oriented":
+      "proteinOrientedScore",
+
+    "fresh-greens":
+      "freshGreensScore",
+
+    "living-forage":
+      "livingForageScore",
+
+    "winter-storage":
+      "winterStorageScore",
+
+    "fast-value":
+      "fastestValueScore",
+
+    "cool-season-production":
+      "productionReliabilityScore",
+
+    enrichment:
+      "enrichmentScore",
+
+    "resilience-feed":
+      "resilienceScore",
+
+    "soil-improvement":
+      "soilImprovementScore",
+
+    "nitrogen-fixation":
+      "nitrogenFixationScore",
+
+    "ground-cover":
+      "groundCoverScore",
+
+    "erosion-control":
+      "erosionControlScore",
+
+    shade:
+      "shadeScore",
+
+    "privacy-screening":
+      "privacyScreeningScore",
+
+    pollinators:
+      "pollinatorSupportScore",
+
+    "compost-biomass":
+      "compostBiomassScore",
+
+    "shared-household-food":
+      "householdFoodScore",
+
+    "seed-saving":
+      "seedSavingScore",
+
+    "self-reliance":
+      "selfRelianceScore",
+
+    "edible-landscape":
+      "visualAppealScore",
+
+    "use-unused-space":
+      "multipurposeValueScore"
+  };
+
+  return goalFieldMap[goalId] || null;
+}
+
   function renderGoalComplementTable(
     eligibleResults,
     answers
@@ -2625,8 +2702,9 @@ console.log(
     const rows =
       selectedPriorities.map(
         priority => {
+          
           const goalFieldName =
-            engine.getCropGoalFieldName(
+            getCropGoalFieldName(
               priority.goal
             );
 
