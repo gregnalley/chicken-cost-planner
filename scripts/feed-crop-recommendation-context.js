@@ -808,7 +808,8 @@
   function addCropResultContext(
     result,
     crops,
-    tags
+    tags,
+    signals
   ) {
     if (
       !result ||
@@ -826,6 +827,14 @@
     addIdentifier(
       crops,
       cropId
+    );
+
+    addSignal(
+      signals,
+      "crop",
+       cropId,
+        100,
+         "top-recommendation"
     );
 
     const bestUsePathId =
@@ -1021,7 +1030,8 @@
         addCropResultContext(
           result,
           crops,
-          tags
+          tags,
+          signals
         )
     );
 
@@ -1050,6 +1060,8 @@
       audiences,
       options.audiences
     );
+
+    console.log(signals);
 
 
     return {
