@@ -1070,15 +1070,21 @@
   }
 
   function isEligibleCropResult(
-    result
-  ) {
-    return Boolean(
-      result &&
-      result.bestUsePath !== null &&
-      result.noEligibleUsePath !== true &&
-      result.finalScore > 0
-    );
-  }
+  result
+) {
+
+  const finalScore =
+    result?.final?.score ??
+    result?.finalScore ??
+    0;
+
+  return Boolean(
+    result &&
+    result.eligible === true &&
+    finalScore > 0
+  );
+
+}
 
   function scoreAllReadyCrops(
   profile
