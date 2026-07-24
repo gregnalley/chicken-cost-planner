@@ -3132,17 +3132,6 @@
       );
 
 
-const recommendationContext =
-  buildFeedCropRecommendationContext(
-    answers,
-    displayedRecommendations
-  );
-
-console.log(
-  recommendationContext
-);
-
-
 
 
     const topResult =
