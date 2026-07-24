@@ -1081,63 +1081,73 @@
   }
 
   function scoreAllReadyCrops(
-    profile
-  ) {
-    const readyCrops =
-      getReadyCrops();
+  profile
+) {
 
-    const allResults =
-      readyCrops.map(crop => {
-        const scoreResult =
-          engine.scoreGenericCropProfile(
-            crop,
-            profile
-          );
+  const readyCrops =
+    getReadyCrops();
 
-        return {
-          ...scoreResult,
+  const collectionResult =
+    engine.evaluateAllCrops(
+      readyCrops,
+      profile.answers
+    );
 
-          cropRecord:
-            crop
-        };
-      });
+  const allResults =
+    collectionResult.evaluations.map(
+      evaluation => ({
 
-    const eligibleResults =
-      allResults
-        .filter(
-          isEligibleCropResult
-        )
-        .sort(
-          (first, second) =>
-            second.finalScore -
-            first.finalScore
-        );
+        ...evaluation,
 
-    const ineligibleResults =
-      allResults
-        .filter(
-          result =>
-            !isEligibleCropResult(
-              result
-            )
-        )
-        .sort(
-          (first, second) =>
-            second.finalScore -
-            first.finalScore
-        );
+        cropRecord:
+          evaluation.cropRecord ||
+          evaluation.crop ||
+          null
 
-    return {
-      readyCropCount:
-        readyCrops.length,
+      })
+    );
 
-      allResults,
+  const eligibleResults =
+    allResults
+      .filter(
+        isEligibleCropResult
+      )
+      .sort(
+        (a, b) =>
+          b.finalScore -
+          a.finalScore
+      );
 
-      eligibleResults,
+  const ineligibleResults =
+    allResults
+      .filter(
+        result =>
+          !isEligibleCropResult(
+            result
+          )
+      )
+      .sort(
+        (a, b) =>
+          b.finalScore -
+          a.finalScore
+      );
 
-      ineligibleResults
-    };
-  }
+  return {
+
+    readyCropCount:
+      readyCrops.length,
+
+    allResults,
+
+    eligibleResults,
+
+    ineligibleResults,
+
+    collectionResult
+
+  };
+
+}
 
   /*
     ==================================================
