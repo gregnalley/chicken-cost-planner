@@ -42484,6 +42484,9 @@ const BCP_FEED_CROPS = {
           icon:
             "🌿",
 
+          scientificName:
+            "Medicago sativa",  
+
           cropCategory:
             "perennial-legume",
 
@@ -44208,96 +44211,100 @@ const BCP_FEED_CROPS = {
         },
 
         seasonalRoles: {
-          earlySpring: {
-            suitabilityScore:
-              5,
+  spring: [
+    "Rapid spring regrowth",
+    "Fresh cut-and-carry forage",
+    "Pasture recovery",
+    "Nitrogen fixation",
+    "Peak forage production",
+    "Repeated harvests",
+    "Rotational grazing",
+    "Fresh greens",
+    "Stand establishment",
+    "Weed suppression"
+  ],
 
-            primaryRoles: [
-              "Rapid spring regrowth",
-              "Fresh cut-and-carry forage",
-              "Pasture recovery",
-              "Nitrogen fixation"
-            ]
-          },
+  summer: [
+    "Repeated harvests",
+    "Fresh forage",
+    "Drying forage",
+    "Pollinator support",
+    "Cut-and-carry greens",
+    "Hay production",
+    "Rotational grazing",
+    "Nitrogen fixation",
+    "Monitor irrigation",
+    "Monitor insect pressure"
+  ],
 
-          lateSpring: {
-            suitabilityScore:
-              5,
+  autumn: [
+    "Final harvests",
+    "Root reserve recovery",
+    "Stand preparation for winter",
+    "Limited fresh forage",
+    "Reduce harvest frequency",
+    "Allow recovery before dormancy",
+    "Inspect stand health",
+    "Prepare winter feed inventory"
+  ],
 
-            primaryRoles: [
-              "Peak forage production",
-              "Repeated harvests",
-              "Rotational grazing",
-              "Fresh greens"
-            ]
-          },
+  winter: [
+    "Dormancy",
+    "Stored dried forage feeding",
+    "Stand protection",
+    "Winter planning",
+    "Stored hay feeding",
+    "Monitor stand condition",
+    "Plan spring fertilization",
+    "Seed inventory"
+  ],
 
-          summer: {
-            suitabilityScore:
-              5,
+  plannerSeasonScores: {
+    spring:
+      5,
 
-            primaryRoles: [
-              "Repeated harvests",
-              "Fresh forage",
-              "Drying forage",
-              "Pollinator support"
-            ]
-          },
+    summer:
+      5,
 
-          autumn: {
-            suitabilityScore:
-              4,
+    autumn:
+      4,
 
-            primaryRoles: [
-              "Final harvests",
-              "Root reserve recovery",
-              "Stand preparation for winter"
-            ]
-          },
+    winter:
+      2
+  },
 
-          winter: {
-            suitabilityScore:
-              2,
+  directFacts: {
+    productiveGrowingSeason:
+      "spring-through-autumn",
 
-            primaryRoles: [
-              "Dormancy",
-              "Stored dried forage feeding",
-              "Stand protection"
-            ]
-          },
+    dormantDuringWinter:
+      true,
 
-          directFacts: {
-            productiveGrowingSeason:
-              "spring-through-autumn",
+    repeatedHarvestSeason:
+      "late-spring-through-early-autumn",
 
-            dormantDuringWinter:
-              true,
+    bestFreshForageSeason:
+      "spring-and-summer",
 
-            repeatedHarvestSeason:
-              "late-spring-through-early-autumn",
+    bestDryingSeason:
+      "warm-low-humidity-periods",
 
-            bestFreshForageSeason:
-              "spring-and-summer",
+    winterStoredFeedValue:
+      true,
 
-            bestDryingSeason:
-              "warm-low-humidity-periods",
+    pollinatorSeason:
+      "late-spring-through-summer",
 
-            winterStoredFeedValue:
-              true,
-
-            pollinatorSeason:
-              "late-spring-through-summer",
-
-            notes: [
-              "Spring provides some of the highest-quality forage.",
-              "Repeated harvests are possible throughout the growing season when adequate recovery is allowed.",
-              "Summer production remains strong where moisture is available.",
-              "Autumn management should emphasize rebuilding root reserves before winter.",
-              "Winter feeding depends primarily on properly dried stored forage rather than active growth.",
-              "Seasonal timing varies considerably by climate and cultivar."
-            ]
-          }
-        },
+    notes: [
+      "Spring provides some of the highest-quality forage.",
+      "Repeated harvests are possible throughout the growing season when adequate recovery is allowed.",
+      "Summer production remains strong where moisture is available.",
+      "Autumn management should emphasize rebuilding root reserves before winter.",
+      "Winter feeding depends primarily on properly dried stored forage rather than active growth.",
+      "Seasonal timing varies considerably by climate and cultivar."
+    ]
+  }
+},
 
               usePaths: [
         {
