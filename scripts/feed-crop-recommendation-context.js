@@ -1061,8 +1061,6 @@
       options.audiences
     );
 
-    console.log(signals);
-
 
     return {
       crops:
