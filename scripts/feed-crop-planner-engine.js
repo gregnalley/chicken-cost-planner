@@ -55413,6 +55413,19 @@
 
   }
 
+  if (
+  typeof getCropGoalFieldName ===
+    "function"
+) {
+
+  registerEngineApiFunction(
+    engineApi,
+    "getCropGoalFieldName",
+    getCropGoalFieldName
+  );
+
+}
+
 
   if (
     typeof evaluateUsePaths ===
