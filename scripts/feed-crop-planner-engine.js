@@ -55427,6 +55427,15 @@
 }
 
 
+console.log(
+  "Goal helper registered:",
+  typeof engineApi
+    .getCropGoalFieldName
+);
+
+
+
+
   if (
     typeof evaluateUsePaths ===
       "function"
