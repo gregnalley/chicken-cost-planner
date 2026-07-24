@@ -228,56 +228,76 @@
 
 
   function getResultBestUsePathId(
-    result
-  ) {
-    return (
-      result?.bestUsePath
-        ?.usePathId ||
-      result?.bestUsePath
-        ?.id ||
-      result?.final
-        ?.bestUsePath
-        ?.id ||
-      null
-    );
-  }
+  result
+) {
+  return (
+    result?.usePaths
+      ?.bestPath
+      ?.id ||
+    result?.usePaths
+      ?.bestPath
+      ?.usePath
+      ?.id ||
+    result?.bestUsePath
+      ?.usePathId ||
+    result?.bestUsePath
+      ?.id ||
+    result?.final
+      ?.bestUsePath
+      ?.id ||
+    null
+  );
+}
 
 
   function getRawBestUsePath(
-    result
+  result
+) {
+  const directUsePath =
+    result?.usePaths
+      ?.bestPath
+      ?.usePath;
+
+  if (
+    directUsePath &&
+    typeof directUsePath ===
+      "object"
   ) {
-    const usePathId =
-      getResultBestUsePathId(
-        result
-      );
-
-    if (!usePathId) {
-      return null;
-    }
-
-    const usePaths =
-      result?.cropRecord
-        ?.plannerData
-        ?.usePaths;
-
-    if (
-      !Array.isArray(
-        usePaths
-      )
-    ) {
-      return null;
-    }
-
-    return (
-      usePaths.find(
-        usePath =>
-          usePath &&
-          usePath.id ===
-            usePathId
-      ) ||
-      null
-    );
+    return directUsePath;
   }
+
+  const usePathId =
+    getResultBestUsePathId(
+      result
+    );
+
+  if (!usePathId) {
+    return null;
+  }
+
+  const usePaths =
+    result?.cropRecord
+      ?.plannerData
+      ?.usePaths;
+
+  if (
+    !Array.isArray(
+      usePaths
+    )
+  ) {
+    return null;
+  }
+
+  return (
+    usePaths.find(
+      usePath =>
+        usePath &&
+        usePath.id ===
+          usePathId
+    ) ||
+    null
+  );
+}
 
 
   /*
@@ -829,12 +849,15 @@
       cropId
     );
 
+
     addSignal(
       signals,
       "crop",
-       cropId,
-        100,
-         "top-recommendation"
+      cropId,
+    result.final?.score ??
+    result.finalScore ??
+        null,
+      "planner-score"
     );
 
     const bestUsePathId =
@@ -891,6 +914,36 @@
       rawUsePath
         .harvestFrequencyCategory
     );
+
+    addIdentifier(
+  tags,
+  rawUsePath
+    .expectedProcessingTimeLevel
+);
+
+addIdentifier(
+  tags,
+  rawUsePath
+    .storageDurationCategory
+);
+
+addIdentifier(
+  tags,
+  rawUsePath
+    .preferredStorageMethod
+);
+
+addIdentifier(
+  tags,
+  rawUsePath
+    .estimatedShelfLifeCategory
+);
+
+addIdentifiers(
+  tags,
+  rawUsePath
+    .preservationOptions
+);
 
     if (
       rawUsePath.dryingRequired ===
@@ -1100,13 +1153,13 @@
   }
 
   const normalizedType =
-    normalizeValue(type);
+  normalizeIdentifier(type);
 
   const normalizedValue =
-    normalizeValue(value);
+  normalizeIdentifier(value);
 
   const normalizedSource =
-    normalizeValue(source);
+  normalizeIdentifier(source); 
 
   const numericWeight =
     Number(weight);
