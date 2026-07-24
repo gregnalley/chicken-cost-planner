@@ -17,17 +17,22 @@ window.BCP_PRODUCTS = {
   recommendationData: {
   recommendedFor: {
     crops: [],
+
     planners: [],
+
     calculators: [],
+
     pageTypes: [
       "best-chicken-feeders"
     ],
+
     tags: [
       "feeding",
       "rodent-control",
       "feed-waste",
       "backyard-flock"
     ],
+
     audiences: [
       "beginner",
       "small-flock",
