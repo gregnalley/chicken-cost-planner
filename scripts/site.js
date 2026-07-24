@@ -30,6 +30,27 @@ async function loadSiteScripts() {
     if (typeof renderCollections === "function") renderCollections();
     if (typeof window.renderProductCards === "function") window.renderProductCards();
 
+    const recommendedProductsContainer =
+  document.getElementById(
+    "recommended-products"
+  );
+
+if (
+  recommendedProductsContainer &&
+  typeof window.renderRecommendedProducts ===
+    "function"
+) {
+  window.renderRecommendedProducts(
+    recommendedProductsContainer,
+    {
+      pageTypes: [
+        "best-chicken-feeders"
+      ]
+    }
+  );
+}
+
+
 
   } catch (error) {
     console.error("Site script loading error:", error);
