@@ -30,23 +30,34 @@ async function loadSiteScripts() {
     if (typeof renderCollections === "function") renderCollections();
     if (typeof window.renderProductCards === "function") window.renderProductCards();
 
-    const recommendedProductsContainer =
+   const recommendedProductsContainer =
   document.getElementById(
     "recommended-products"
   );
+
+console.log(
+  "Recommendation container:",
+  recommendedProductsContainer
+);
 
 if (
   recommendedProductsContainer &&
   typeof window.renderRecommendedProducts ===
     "function"
 ) {
-  window.renderRecommendedProducts(
-    recommendedProductsContainer,
-    {
-      pageTypes: [
-        "best-chicken-feeders"
-      ]
-    }
+  const recommendationResults =
+    window.renderRecommendedProducts(
+      recommendedProductsContainer,
+      {
+        pageTypes: [
+          "best-chicken-feeders"
+        ]
+      }
+    );
+
+  console.log(
+    "Recommendation results:",
+    recommendationResults
   );
 }
 
