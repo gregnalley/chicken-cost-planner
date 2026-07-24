@@ -1,4 +1,4 @@
-const BCP_PRODUCTS = {
+window.BCP_PRODUCTS = {
   "PRD-001": {
     category: "Feeders",
     badge: "🐔 Backyard Chicken Planner Pick",
