@@ -1771,6 +1771,14 @@ console.log(
   function renderCategoryScores(
     result
   ) {
+
+
+console.log(
+  "Category Score Result:",
+  result
+);
+
+
     const entries =
       Object.entries(
         result.categoryResults ||
