@@ -3154,16 +3154,16 @@ nav a:hover{
 }
 
 /* =========================================
-   COMPACT PRODUCT RECOMMENDATIONS
+   PRODUCT RECOMMENDATION TILES
    ========================================= */
 
 .recommended-product-grid {
   display: grid;
   grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-  gap: 18px;
+    repeat(5, minmax(0, 1fr));
+  gap: 14px;
   align-items: stretch;
-  margin-top: 24px;
+  margin: 20px 0;
 }
 
 .recommended-product-grid
@@ -3172,58 +3172,81 @@ nav a:hover{
   min-width: 0;
 }
 
-.affiliate-card--compact {
+.affiliate-card--tile {
   display: flex;
   flex-direction: column;
+
   width: 100%;
+  min-width: 0;
+  min-height: 230px;
+
   margin: 0;
-  padding: 18px;
+  padding: 14px;
+
+  border-radius: 14px;
 }
 
-.affiliate-card--compact
+.affiliate-card--tile
 .affiliate-badge {
   align-self: flex-start;
-  margin-bottom: 10px;
-  font-size: 0.78rem;
-}
 
-.affiliate-card--compact h3 {
   margin: 0 0 10px;
-  font-size: 1.08rem;
-  line-height: 1.3;
+  padding: 5px 9px;
+
+  font-size: 0.7rem;
+  line-height: 1.2;
 }
 
-.affiliate-card--compact
+.affiliate-card--tile h3 {
+  margin: 0 0 9px;
+
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.affiliate-card--tile
 .affiliate-description {
-  margin: 0 0 16px;
-  font-size: 0.92rem;
-  line-height: 1.5;
+  margin: 0 0 14px;
 
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
+  font-size: 0.82rem;
+  line-height: 1.4;
 }
 
-.affiliate-card--compact
+.affiliate-card--tile
 .affiliate-button {
-  margin-top: auto;
+  display: block;
+
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 12px;
+
+  margin-top: auto;
+  padding: 9px 8px;
+
+  font-size: 0.8rem;
+  line-height: 1.2;
   text-align: center;
-  font-size: 0.9rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
+  .recommended-product-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
   .recommended-product-grid {
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 520px) {
   .recommended-product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .affiliate-card--tile {
+    min-height: 0;
   }
 }
