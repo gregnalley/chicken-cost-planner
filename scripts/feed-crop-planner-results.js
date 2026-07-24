@@ -1209,27 +1209,40 @@ console.log(
   */
 
   function getRawUsePath(
-    result
-  ) {
-    const usePathId =
-      result.bestUsePath
-        ?.usePathId;
+  result
+) {
 
-    if (!usePathId) {
-      return null;
-    }
+  if (
+    result.usePaths?.bestPath
+  ) {
 
     return (
-      result.cropRecord
-        ?.plannerData
-        ?.usePaths
-        ?.find(
-          usePath =>
-            usePath.id === usePathId
-        ) ||
-      null
+      result.usePaths.bestPath
     );
+
   }
+
+  const usePathId =
+    result.bestUsePath
+      ?.usePathId;
+
+  if (!usePathId) {
+    return null;
+  }
+
+  return (
+    result.cropRecord
+      ?.plannerData
+      ?.usePaths
+      ?.find(
+        usePath =>
+          usePath.id ===
+            usePathId
+      ) ||
+    null
+  );
+
+}
 
   function getCropIdentity(
     result
