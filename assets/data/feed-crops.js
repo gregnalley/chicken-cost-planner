@@ -98287,391 +98287,103 @@ perennial:
         }
       },
 
-            seasonalRoles: {
-        spring: {
-          roleScore:
-            4,
+             seasonalRoles: {
+        spring: [
+          "Site preparation",
+          "Soil testing",
+          "Seedbed preparation",
+          "Maturity-group selection",
+          "Seed selection",
+          "Direct seeding after frost danger",
+          "Soybean inoculation where needed",
+          "Germination",
+          "Seedling emergence",
+          "Early root development",
+          "Nodule establishment",
+          "Early weed control",
+          "Seedling moisture management",
+          "Deer protection",
+          "Rabbit protection",
+          "Groundhog protection",
+          "Use of stored processed Soybeans from the prior harvest"
+        ],
 
-          primaryRole:
-            "site-preparation-planting-and-establishment",
+        summer: [
+          "Rapid vegetative growth",
+          "Canopy development",
+          "Biological nitrogen fixation",
+          "Seasonal soil cover",
+          "Weed suppression after canopy closure",
+          "Flowering",
+          "Pollinator visitation",
+          "Pod set",
+          "Pod development",
+          "Seed filling",
+          "Drought monitoring",
+          "Irrigation during flowering and pod development",
+          "Deer monitoring",
+          "Insect monitoring",
+          "Disease monitoring",
+          "Lodging monitoring",
+          "Immature edamame harvest",
+          "Cooking immature edamame for occasional supplemental use"
+        ],
 
-          supportingRoles: [
-            "soil-testing",
-            "seedbed-preparation",
-            "maturity-group-selection",
-            "seed-selection",
-            "inoculation",
-            "direct-seeding",
-            "emergence-monitoring",
-            "early-weed-control",
-            "wildlife-protection",
-            "irrigation-establishment"
-          ],
+        autumn: [
+          "Late seed filling",
+          "Physiological maturity",
+          "Natural plant dry-down",
+          "Pod maturity monitoring",
+          "Pod-shattering monitoring",
+          "Dry-bean harvest",
+          "Whole-plant harvest",
+          "Pod collection",
+          "Protected postharvest drying",
+          "Threshing",
+          "Shelling",
+          "Winnowing",
+          "Screening",
+          "Cleaning",
+          "Sorting",
+          "Seed saving",
+          "Raw whole-bean storage",
+          "Controlled heat processing",
+          "Cooling processed beans",
+          "Processed-bean storage",
+          "Postharvest field cleanup",
+          "Supervised postharvest poultry access",
+          "Crop-residue management",
+          "Compost-biomass production",
+          "Crop-rotation transition"
+        ],
 
-          availableFeedProducts: [
-            "stored-processed-soybeans-from-prior-harvest",
-            "stored-soybean-meal",
-            "stored-heat-processed-soybean-ration-ingredient"
-          ],
-
-          freshFeedAvailability:
-            false,
-
-          storedFeedAvailability:
-            true,
-
-          plantingActivityLevel:
-            "high",
-
-          harvestActivityLevel:
-            "none",
-
-          processingActivityLevel:
-            "low-to-moderate",
-
-          storageActivityLevel:
-            "moderate",
-
-          flockAccessSuitability:
-            "protect-growing-crop",
-
-          weatherDependencies: [
-            "soil-warmth",
-            "frost-risk",
-            "soil-drainage",
-            "planting-bed-moisture",
-            "prolonged-rainfall",
-            "cold-wet-soil",
-            "early-drought"
-          ],
-
-          managementPriorities: [
-            "Select a maturity group adapted to local latitude and frost-free season.",
-            "Confirm that planting seed is untreated if harvested beans may later enter a feed pathway.",
-            "Prepare a firm weed-controlled seedbed.",
-            "Wait until soil temperature and field conditions support dependable emergence.",
-            "Apply compatible viable inoculant where needed.",
-            "Protect inoculated seed from heat, sunlight, drying, and incompatible chemical treatments.",
-            "Plant at a suitable depth for soil texture and moisture.",
-            "Monitor emergence and inspect for seedling disease.",
-            "Control weeds before they compete strongly with young plants.",
-            "Protect seedlings from deer, rabbits, groundhogs, poultry, and other browsing animals.",
-            "Maintain adequate but not saturated soil moisture.",
-            "Inspect early roots for effective nodulation where practical.",
-            "Keep stored raw beans physically separated from ready-to-feed processed Soybean ingredients."
-          ],
-
-          notes: [
-            "Spring is primarily the preparation, planting, and establishment period.",
-            "Planting should occur after damaging frost danger has passed and soil has warmed sufficiently.",
-            "Regional planting dates vary with latitude, maturity group, soil temperature, and local weather.",
-            "Very early planting into cold wet soil may reduce emergence and increase seedling-disease pressure.",
-            "Late planting may reduce the time available for flowering, seed filling, physiological maturity, and dry-down.",
-            "Indoor seed starting normally provides little benefit because Soybeans are ordinarily direct seeded.",
-            "The crop should remain protected from chickens during establishment.",
-            "Fresh Soybean foliage is not a preferred spring poultry-feed product.",
-            "Stored processed Soybeans or soybean meal from a prior harvest may continue to contribute protein during spring.",
-            "Any raw beans remaining from the previous season still require controlled heat processing before poultry use."
-          ]
-        },
-
-        summer: {
-          roleScore:
-            5,
-
-          primaryRole:
-            "vegetative-growth-flowering-pod-set-and-seed-development",
-
-          supportingRoles: [
-            "canopy-development",
-            "biological-nitrogen-fixation",
-            "weed-suppression",
-            "flowering",
-            "pod-set",
-            "pod-development",
-            "seed-fill",
-            "wildlife-monitoring",
-            "insect-monitoring",
-            "disease-monitoring",
-            "drought-management",
-            "irrigation-management",
-            "edamame-harvest"
-          ],
-
-          availableFeedProducts: [
-            "cooked-immature-edamame",
-            "stored-processed-soybeans-from-prior-harvest",
-            "stored-soybean-meal"
-          ],
-
-          freshFeedAvailability:
-            true,
-
-          storedFeedAvailability:
-            true,
-
-          plantingActivityLevel:
-            "low-to-moderate",
-
-          harvestActivityLevel:
-            "low-to-moderate",
-
-          processingActivityLevel:
-            "low",
-
-          storageActivityLevel:
-            "low",
-
-          flockAccessSuitability:
-            "exclude-from-growing-crop",
-
-          weatherDependencies: [
-            "summer-rainfall",
-            "soil-moisture",
-            "flowering-temperature",
-            "extreme-heat",
-            "humidity",
-            "storm-frequency",
-            "disease-favoring-weather",
-            "drought-during-pod-set",
-            "drought-during-seed-fill"
-          ],
-
-          managementPriorities: [
-            "Maintain adequate moisture during flowering, pod set, pod development, and seed filling.",
-            "Prevent prolonged waterlogging.",
-            "Control remaining weeds before they produce seed or interfere with harvest.",
-            "Monitor deer and other browsing wildlife.",
-            "Scout for foliar insects, pod feeders, sap-feeding insects, and disease symptoms.",
-            "Maintain airflow through appropriate stand density.",
-            "Avoid unnecessary nitrogen fertilizer where nodulation is effective.",
-            "Inspect plant roots and nodules where poor growth suggests inadequate nitrogen fixation.",
-            "Monitor lodging after storms.",
-            "Harvest edamame only from untreated plants intended for food or feed use.",
-            "Cook immature Soybeans before offering small supplemental quantities to poultry.",
-            "Do not allow chickens unrestricted access to flowering or pod-bearing plants."
-          ],
-
-          notes: [
-            "Summer is the primary biological-production season for Soybeans.",
-            "Vegetative growth, flowering, pod formation, and seed filling usually occur during summer.",
-            "Successful nodulation supports biological nitrogen fixation during active growth.",
-            "A closed canopy can reduce later weed growth but may also retain humidity where stands are excessively dense.",
-            "Flowering and pod development are highly sensitive to drought.",
-            "Extreme heat becomes more damaging when combined with inadequate soil moisture.",
-            "Flooding or prolonged saturation may damage roots and nodules.",
-            "Deer browsing can remove substantial foliage, flowers, stems, and pods.",
-            "Immature green pods may provide household edamame value.",
-            "Cooked immature beans may be used only as an occasional poultry supplement.",
-            "Harvesting edamame reduces the quantity of mature dry grain available later.",
-            "Fresh foliage should not be treated as the crop's primary poultry-feed pathway.",
-            "Stored processed Soybean products from a prior harvest may remain available throughout summer."
-          ]
-        },
-
-        autumn: {
-          roleScore:
-            5,
-
-          primaryRole:
-            "seed-maturity-harvest-drying-threshing-and-storage",
-
-          supportingRoles: [
-            "physiological-maturity",
-            "pod-dry-down",
-            "harvest-timing",
-            "pod-shatter-monitoring",
-            "whole-plant-harvest",
-            "pod-harvest",
-            "protected-drying",
-            "threshing",
-            "shelling",
-            "winnowing",
-            "screening",
-            "cleaning",
-            "sorting",
-            "seed-saving",
-            "raw-bean-storage",
-            "heat-processing",
-            "postharvest-field-cleanup",
-            "crop-residue-management"
-          ],
-
-          availableFeedProducts: [
-            "properly-heat-processed-whole-soybeans",
-            "roasted-soybeans",
-            "toasted-soybeans",
-            "extruded-whole-soybeans",
-            "ground-processed-soybeans",
-            "commercial-soybean-meal",
-            "cooked-late-edamame",
-            "supervised-postharvest-insect-foraging"
-          ],
-
-          freshFeedAvailability:
-            true,
-
-          storedFeedAvailability:
-            true,
-
-          plantingActivityLevel:
-            "none",
-
-          harvestActivityLevel:
-            "very-high",
-
-          processingActivityLevel:
-            "very-high",
-
-          storageActivityLevel:
-            "high",
-
-          flockAccessSuitability:
-            "limited-postharvest-supervised-access-only",
-
-          weatherDependencies: [
-            "first-frost-date",
-            "pod-dryness",
-            "seed-moisture",
-            "autumn-rainfall",
-            "humidity",
-            "dew",
-            "storm-risk",
-            "pod-shattering-weather",
-            "drying-conditions",
-            "harvest-window-length"
-          ],
-
-          managementPriorities: [
-            "Monitor pod and seed maturity closely.",
-            "Distinguish physiological maturity from safe storage dryness.",
-            "Harvest before severe pod shattering, prolonged wet weather, or damaging frost.",
-            "Use tarps or containment methods to catch loose beans.",
-            "Move harvested plants or pods under cover promptly.",
-            "Dry harvested material thoroughly with adequate airflow.",
-            "Thresh or shell only after pods are sufficiently dry.",
-            "Winnow, screen, clean, and sort beans before storage.",
-            "Reject moldy, sprouted, weathered, insect-damaged, rodent-contaminated, or chemically contaminated beans.",
-            "Store raw dry beans separately and label them as requiring heat processing.",
-            "Save planting seed only from sound untreated plants.",
-            "Use a verified heat-processing method before poultry feeding.",
-            "Cool processed beans completely before enclosed storage.",
-            "Allow supervised poultry field access only after the main mature-bean harvest and visible raw beans have been removed.",
-            "Return sound crop residue to the soil or compost system where appropriate."
-          ],
-
-          notes: [
-            "Autumn is the primary harvest and postharvest season.",
-            "Dry-grain harvest timing depends on maturity group, planting date, frost date, pod dryness, seed moisture, and weather.",
-            "Physiologically mature seed may still contain too much moisture for sealed storage.",
-            "Delayed harvest increases shattering, lodging, weathering, mold, and wildlife losses.",
-            "Wet autumn weather may require protected drying before threshing or storage.",
-            "Drying is required for storage but does not make raw mature beans suitable for poultry feed.",
-            "Raw beans should remain clearly separated from processed feed ingredients.",
-            "Heat processing may occur immediately after cleaning or later in smaller stored batches.",
-            "Whole dry beans generally store better than cracked or ground beans.",
-            "Processed whole beans retain natural oil and require monitoring for rancidity.",
-            "Commercial soybean meal may continue to be used independently of the homegrown harvest.",
-            "Postharvest poultry access must not become unrestricted raw-bean consumption.",
-            "Soybean residue can contribute organic matter, although much of the crop's nitrogen leaves the field with harvested seed."
-          ]
-        },
-
-        winter: {
-          roleScore:
-            5,
-
-          primaryRole:
-            "stored-protein-feed-processing-ration-mixing-and-rotation-planning",
-
-          supportingRoles: [
-            "whole-bean-storage",
-            "batch-heat-processing",
-            "processed-bean-storage",
-            "grinding",
-            "ration-formulation",
-            "ration-mixing",
-            "storage-inspection",
-            "seed-inventory",
-            "germination-testing",
-            "crop-rotation-planning",
-            "equipment-maintenance",
-            "production-record-review"
-          ],
-
-          availableFeedProducts: [
-            "properly-heat-processed-whole-soybeans",
-            "roasted-soybeans",
-            "toasted-soybeans",
-            "extruded-whole-soybeans",
-            "ground-processed-soybeans",
-            "commercial-soybean-meal",
-            "balanced-rations-containing-soybean-ingredients"
-          ],
-
-          freshFeedAvailability:
-            false,
-
-          storedFeedAvailability:
-            true,
-
-          plantingActivityLevel:
-            "none",
-
-          harvestActivityLevel:
-            "none",
-
-          processingActivityLevel:
-            "moderate-to-high",
-
-          storageActivityLevel:
-            "high",
-
-          flockAccessSuitability:
-            "stored-processed-feed-only",
-
-          weatherDependencies: [
-            "storage-temperature",
-            "storage-humidity",
-            "condensation-risk",
-            "freezing-and-thawing-cycles",
-            "rodent-pressure",
-            "indoor-ventilation"
-          ],
-
-          managementPriorities: [
-            "Inspect raw and processed beans for moisture, mold, heating, insects, rodents, and rancidity.",
-            "Keep raw beans clearly separated from ready-to-feed processed ingredients.",
-            "Process stored whole beans in controlled batches as needed.",
-            "Document time, temperature, batch weight, and processing method.",
-            "Cool processed beans completely before sealing.",
-            "Store beans whole and grind only short-term quantities where practical.",
-            "Measure Soybean ingredients accurately.",
-            "Use a balanced poultry-ration formula.",
-            "Prevent meal separation and selective feeding.",
-            "Clean processing and storage equipment.",
-            "Test saved seed germination before spring planting.",
-            "Review cultivar maturity, yield, losses, processing efficiency, and flock response.",
-            "Plan next season's crop rotation, area, wildlife protection, and processing capacity."
-          ],
-
-          notes: [
-            "Winter is the strongest feed-use season for properly stored and processed Soybeans.",
-            "The crop provides no living winter forage.",
-            "Its winter value comes from mature dry seed and processed Soybean ingredients stored after harvest.",
-            "Raw stored beans remain unsuitable for poultry until properly heat processed.",
-            "Batch processing during winter may spread labor over time.",
-            "Storage areas should remain cool, dry, clean, dark, and protected from rodents.",
-            "Temperature changes may cause condensation inside sealed containers.",
-            "Processed whole beans require monitoring for oil rancidity.",
-            "Ground processed beans generally deteriorate faster than whole beans.",
-            "Soybean meal must remain dry and protected from insects and rodents.",
-            "Soybean ingredients should be weighed and incorporated into a balanced ration.",
-            "Free-choice feeding is not appropriate.",
-            "Winter records can reveal actual usable yield, processing loss, feed inclusion, storage loss, and complete-feed displacement.",
-            "These records are necessary before assigning dependable backyard economic savings."
-          ]
-        },
+        winter: [
+          "Stored raw whole-bean inspection",
+          "Stored processed-bean inspection",
+          "Rodent monitoring",
+          "Stored-insect monitoring",
+          "Moisture monitoring",
+          "Condensation monitoring",
+          "Mold inspection",
+          "Rancidity inspection",
+          "Controlled batch heat processing",
+          "Cooling processed Soybeans",
+          "Small-batch cracking",
+          "Small-batch grinding",
+          "Soybean-meal storage",
+          "Feed-ingredient weighing",
+          "Balanced-ration formulation",
+          "Ration mixing",
+          "Stored protein supplementation",
+          "Inventory rotation",
+          "Saved-seed inventory",
+          "Germination testing",
+          "Crop-rotation planning",
+          "Cultivar evaluation",
+          "Wildlife-protection planning",
+          "Processing-equipment maintenance",
+          "Production-record review"
+        ],
 
         plannerSeasonScores: {
           spring:
@@ -98785,7 +98497,7 @@ perennial:
             "Stored Soybean products may contribute to flock feeding throughout the year when ration formulation remains nutritionally complete."
           ]
         }
-      },
+      },    
 
             usePaths: [
         {
