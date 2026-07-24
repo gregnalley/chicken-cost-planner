@@ -580,6 +580,15 @@ Now that you understand the different feeder styles, let's look at specific prod
 
 <h2 class="section-title">🏆 Our Top Chicken Feeder Recommendations</h2>
 
+/////////////////
+//
+//  Automatic Product Test
+//
+////////////////
+
+
+<div id="automatic-product-test"></div>
+
 <p style="text-align:center;max-width:900px;margin:0 auto 40px auto;">
 
 After comparing the most common feeder styles, these are the products we believe are worth considering for different backyard situations. Our recommendations are based on design, features, intended use, value, and overall suitability for backyard chicken keepers.
@@ -1070,6 +1079,26 @@ By choosing the right feeder today, you'll spend less time refilling feed, reduc
 </div>
 
 <script src="scripts/site.js"></script>
+
+
+
+<script>
+window.addEventListener("load", function () {
+  window.renderRecommendedProducts(
+    document.getElementById("automatic-product-test"),
+    {
+      pageTypes: [
+        "best-chicken-feeders"
+      ]
+    },
+    {
+      limit: 3
+    }
+  );
+});
+</script>
+
+
 
 </body>
 
