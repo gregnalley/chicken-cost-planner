@@ -26248,6 +26248,9 @@ const BCP_FEED_CROPS = {
         icon:
           "🎃",
 
+        scientificName:
+          "Cucurbita spp.", 
+
         cropCategory:
           "annual-storage-produce",
 
@@ -31774,6 +31777,9 @@ const BCP_FEED_CROPS = {
 
           icon:
             "🥬",
+
+          scientificName:
+            "Brassica oleracea", 
 
           cropCategory:
             "leafy-green",
@@ -50713,6 +50719,9 @@ const BCP_FEED_CROPS = {
         icon:
           "🌽",
 
+        scientificName:
+          "Zea mays",  
+
         cropCategory:
           "annual-grain",
 
@@ -55191,6 +55200,9 @@ const BCP_FEED_CROPS = {
 
         icon:
           "🌾",
+
+        scientificName:
+          "Sorghum bicolor", 
 
         cropCategory:
           "annual-grain",
@@ -59748,6 +59760,9 @@ const BCP_FEED_CROPS = {
 
         icon:
           "🌾",
+
+        scientificName:
+          "Avena sativa",  
 
         cropCategory:
           "grain",
@@ -65494,6 +65509,9 @@ const BCP_FEED_CROPS = {
 
         icon:
           "🌾",
+
+        scientificName:
+          "Triticum aestivum", 
 
         cropCategory:
           "annual-grain",
@@ -99056,6 +99074,9 @@ usePaths: [
 
         icon:
           "🌾",
+
+        scientificName:
+          "Hordeum vulgare", 
 
         cropCategory:
           "annual-grain",
