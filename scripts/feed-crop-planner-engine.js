@@ -56304,6 +56304,16 @@
 
   }
 
+  if (
+  typeof engineApi.getCropGoalFieldName ===
+    "function"
+) {
+
+  namespace.getCropGoalFieldName =
+    engineApi.getCropGoalFieldName;
+
+}
+
 
   if (
     typeof engineApi.rankCropEvaluations ===
