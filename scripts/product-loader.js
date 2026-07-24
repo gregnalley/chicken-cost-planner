@@ -26,29 +26,45 @@ window.renderProductCards = function (container = document) {
   : "";
 
     slot.innerHTML = `
-      <div class="affiliate-card"
-           data-product-id="${productId}"
-           data-product-category="${product.category}">
+  <div class="affiliate-card"
+       data-product-id="${productId}"
+       data-product-category="${product.category}">
 
-        <span class="affiliate-badge">${product.badge}</span>
+    ${product.badge ? `
+      <span class="affiliate-badge">
+        ${product.badge}
+      </span>
+    ` : ""}
 
-        <h3>${product.title}</h3>
+    <h3>${product.title}</h3>
 
-        <p>${product.description}</p>
+    ${product.description ? `
+      <p>${product.description}</p>
+    ` : ""}
 
-        ${bullets ? `<ul>${bullets}</ul>` : ""}
+    ${bullets ? `
+      <ul>
+        ${bullets}
+      </ul>
+    ` : ""}
 
-        <a class="affiliate-button"
-           href="${product.url}"
-           target="_blank"
-           rel="nofollow sponsored noopener">
-          ${product.buttonText}
-        </a>
+    ${product.url && product.buttonText ? `
+      <a class="affiliate-button"
+         href="${product.url}"
+         target="_blank"
+         rel="nofollow sponsored noopener">
+        ${product.buttonText}
+      </a>
+    ` : ""}
 
-        <p class="affiliate-note">${product.note}</p>
+    ${product.note ? `
+      <p class="affiliate-note">
+        ${product.note}
+      </p>
+    ` : ""}
 
-      </div>
-    `;
+  </div>
+`;
 
     slot.dataset.rendered = "true";
   });
