@@ -11,8 +11,8 @@ window.BCP_PRODUCTS = {
     ],
     buttonText: "View Current Price on Amazon →",
     url: "https://amzn.to/4y7b7eC",
-    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases."
-  },
+    note: "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+  
       
   recommendationData: {
   recommendedFor: {
@@ -45,6 +45,8 @@ window.BCP_PRODUCTS = {
   priority: 90,
 
   enabled: true   
+
+    }
 
   },
 
