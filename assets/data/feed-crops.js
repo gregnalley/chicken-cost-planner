@@ -18317,6 +18317,9 @@ const BCP_FEED_CROPS = {
         icon:
           "🌾",
 
+        scientificName:
+          "Panicum miliaceum",
+
         cropCategory:
           "annual-grain",
 
@@ -21106,6 +21109,27 @@ const BCP_FEED_CROPS = {
 
         insectsRiskScore:
           3,
+
+         deerBrowsingRiskScore:
+  3,
+
+rabbitBrowsingRiskScore:
+  3,
+
+postHarvestLossRiskScore:
+  4,
+
+storagePestRiskScore:
+  4,
+
+rodentAttractionScore:
+  5,
+
+mechanicalHarvestSuitabilityScore:
+  3,
+
+mechanicalProcessingSuitabilityScore:
+  3, 
 
         diseaseRiskScore:
           3,
@@ -24056,6 +24080,9 @@ const BCP_FEED_CROPS = {
           processingEfficiencyScore:
             4,
 
+          feedMeasurementPrecisionScore:
+            0, 
+
           preservationFlexibilityScore:
             5,
 
@@ -24262,6 +24289,9 @@ const BCP_FEED_CROPS = {
 
           processingEfficiencyScore:
             5,
+
+          feedMeasurementPrecisionScore:
+            0,  
 
           preservationFlexibilityScore:
             5,
