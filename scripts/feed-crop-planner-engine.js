@@ -14818,6 +14818,30 @@ const aliasedGoalField =
           )
       );
 
+console.log(
+  "===== USE PATH DEBUG ====="
+);
+
+console.log(
+  "Crop:",
+  crop.identity?.commonName ||
+  crop.identity?.name ||
+  crop.id
+);
+
+console.log(
+  "Path Results:",
+  pathResults
+);
+
+if (pathResults.length > 0) {
+  console.log(
+    "First Path:",
+    pathResults[0]
+  );
+}
+
+
     const eligiblePaths =
       pathResults
         .filter(
