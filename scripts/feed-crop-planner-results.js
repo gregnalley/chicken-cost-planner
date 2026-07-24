@@ -2058,11 +2058,25 @@ console.log(
               Likely harvest from this path
             </strong>
 
-            ${renderPillList(
-              harvestProducts,
-              HARVEST_PRODUCT_LABELS,
-              "Harvest products were not listed."
-            )}
+            ${
+  harvestProducts.length > 0
+    ? renderPillList(
+        harvestProducts,
+        HARVEST_PRODUCT_LABELS,
+        "Harvest products were not listed."
+      )
+    : `
+      <span
+        style="
+          color: #ffffff;
+          opacity: 1;
+          font-style: italic;
+        "
+      >
+        Harvest products were not listed.
+      </span>
+    `
+}
 
           </div>
 
