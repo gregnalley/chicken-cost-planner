@@ -82735,6 +82735,9 @@ usePaths: [
         icon:
           "🌾",
 
+        scientificName:
+          "Amaranthus spp.", 
+
         cropCategory:
           "grain-and-greens",
 
@@ -84741,175 +84744,128 @@ usePaths: [
       },
 
       seasonalRoles: {
-        earlySpring: {
-          availabilityScore:
-            1,
+  spring: [
+    "Indoor seed starting",
+    "Direct seeding after frost danger passes",
+    "Transplant establishment",
+    "Early young leaf production",
+    "Weed control",
+    "Stand thinning",
+    "Warm-soil germination",
+    "Seedling establishment",
+    "Monitor birds and scratching animals",
+    "Protect young seedlings"
+  ],
 
-          primaryRoles: [],
+  summer: [
+    "Young leaf harvest",
+    "Cut-and-carry greens",
+    "Rapid biomass production",
+    "Ornamental display",
+    "Pollinator support",
+    "Seasonal privacy screen",
+    "Seed head development",
+    "Heat-resilient garden production",
+    "Monitor drought stress",
+    "Monitor storm damage",
+    "Limit excessive foliage harvest"
+  ],
 
-          limitations: [
-            "Soil is commonly too cold for dependable germination.",
-            "Frost-sensitive plants cannot tolerate normal early-spring freezes.",
-            "Indoor seed starting may begin, but outdoor feed production is not yet available."
-          ]
-        },
+  autumn: [
+    "Mature seed head harvest",
+    "Grain harvest",
+    "Seed head enrichment",
+    "Threshing",
+    "Winnowing",
+    "Grain drying",
+    "Seed saving",
+    "Protected seed-head drying",
+    "Grain cleaning",
+    "Heat processing",
+    "Grain storage",
+    "Saved seed selection",
+    "Controlled postharvest flock access",
+    "Monitor shattering",
+    "Monitor wildlife losses",
+    "Monitor harvest moisture"
+  ],
 
-        lateSpring: {
-          availabilityScore:
-            3,
+  winter: [
+    "Stored whole grain supplementation",
+    "Heat-treated grain supplementation",
+    "Cracked grain ingredient",
+    "Ground grain ingredient",
+    "Stored seed-head enrichment",
+    "Household food use",
+    "Seed inventory",
+    "Planting planning",
+    "Inspect stored grain",
+    "Inspect stored seed heads",
+    "Monitor insects",
+    "Monitor moisture",
+    "Rotate stored inventory"
+  ],
 
-          primaryRoles: [
-            "direct-seeding",
-            "transplant-establishment",
-            "early-young-leaf-production",
-            "weed-control",
-            "stand-thinning"
-          ],
+  plannerSeasonScores: {
+    spring:
+      3,
 
-          limitations: [
-            "Planting must wait until frost danger has passed and soil is warm.",
-            "Shallow seed can dry rapidly.",
-            "Seedlings are vulnerable to weeds, birds, crusting, and scratching animals."
-          ]
-        },
+    summer:
+      5,
 
-        summer: {
-          availabilityScore:
-            5,
+    autumn:
+      5,
 
-          primaryRoles: [
-            "young-leaf-harvest",
-            "cut-and-carry-greens",
-            "rapid-biomass-production",
-            "ornamental-display",
-            "pollinator-support",
-            "seasonal-privacy",
-            "seed-head-development",
-            "heat-resilient-garden-production"
-          ],
+    winter:
+      3
+  },
 
-          limitations: [
-            "Drought may reduce leaf tenderness and grain development.",
-            "Excessive foliage harvest may reduce final grain yield.",
-            "Tall plants may require storm protection.",
-            "Heavily fertilized or drought-stressed foliage should not be fed unrestricted."
-          ]
-        },
+  seasonalContinuityScore:
+    4,
 
-        earlyFall: {
-          availabilityScore:
-            5,
+  livingForageContinuityScore:
+    2,
 
-          primaryRoles: [
-            "mature-seed-head-harvest",
-            "grain-harvest",
-            "seed-head-enrichment",
-            "threshing",
-            "winnowing",
-            "grain-drying",
-            "seed-saving",
-            "controlled-postharvest-access"
-          ],
+  storedFeedContinuityScore:
+    4,
 
-          limitations: [
-            "Mature grain may shatter.",
-            "Wild birds may consume grain.",
-            "Storms may lodge plants.",
-            "Rain and humidity may interfere with drying.",
-            "Frost may arrive before long-season varieties mature."
-          ]
-        },
+  harvestConcentrationScore:
+    4,
 
-        lateFall: {
-          availabilityScore:
-            3,
+  seasonalGapRiskScore:
+    3,
 
-          primaryRoles: [
-            "protected-seed-head-drying",
-            "grain-cleaning",
-            "heat-processing",
-            "grain-storage",
-            "saved-seed-selection",
-            "limited-postharvest-residue-use"
-          ],
+  directFacts: {
+    primaryGrowingSeason:
+      "late-spring-through-early-fall",
 
-          limitations: [
-            "Living plants are normally killed by frost.",
-            "Field drying becomes unreliable in wet climates.",
-            "Remaining outdoor material may mold or become contaminated.",
-            "Stored grain requires moisture and pest monitoring."
-          ]
-        },
+    primaryLeafHarvestSeason:
+      "summer",
 
-        winter: {
-          availabilityScore:
-            3,
+    primaryGrainHarvestSeason:
+      "late-summer-through-early-fall",
 
-          primaryRoles: [
-            "stored-whole-grain-supplement",
-            "heat-treated-grain-supplement",
-            "cracked-or-ground-grain-ingredient",
-            "stored-seed-head-enrichment",
-            "household-food-use",
-            "planting-planning",
-            "seed-inventory"
-          ],
+    winterUseDependsOnStorage:
+      true,
 
-          limitations: [
-            "No living outdoor forage is normally available.",
-            "Stored supply is limited by the previous harvest.",
-            "Grain remains supplemental rather than a complete ration.",
-            "Stored heads occupy more space and may harbor insects.",
-            "Ground grain has a shorter practical quality window than intact dry grain."
-          ]
-        },
+    successionPlantingCanExtendLeaves:
+      true,
 
-        seasonalContinuityScore:
-          4,
+    frostEndsLivingProduction:
+      true,
 
-        livingForageContinuityScore:
-          2,
-
-        storedFeedContinuityScore:
-          4,
-
-        harvestConcentrationScore:
-          4,
-
-        seasonalGapRiskScore:
-          3,
-
-        directFacts: {
-          primaryGrowingSeason:
-            "late-spring-through-early-fall",
-
-          primaryLeafHarvestSeason:
-            "summer",
-
-          primaryGrainHarvestSeason:
-            "late-summer-through-early-fall",
-
-          winterUseDependsOnStorage:
-            true,
-
-          successionPlantingCanExtendLeaves:
-            true,
-
-          frostEndsLivingProduction:
-            true,
-
-          notes: [
-            "Amaranth provides fresh products mainly during warm weather.",
-            "Young leaves become available substantially earlier than mature grain.",
-            "The principal grain harvest is concentrated near the end of the warm season.",
-            "Stored grain can extend crop value through winter.",
-            "Whole dried seed heads can also provide winter enrichment.",
-            "The crop does not provide permanent living winter forage.",
-            "Succession planting can extend leafy harvest but may not allow late grain plantings to mature.",
-            "A planner recommendation should distinguish users wanting immediate summer greens from users wanting stored winter grain."
-          ]
-        }
-      },
+    notes: [
+      "Amaranth provides fresh products mainly during warm weather.",
+      "Young leaves become available substantially earlier than mature grain.",
+      "The principal grain harvest is concentrated near the end of the warm season.",
+      "Stored grain can extend crop value through winter.",
+      "Whole dried seed heads can also provide winter enrichment.",
+      "The crop does not provide permanent living winter forage.",
+      "Succession planting can extend leafy harvest but may not allow late grain plantings to mature.",
+      "A planner recommendation should distinguish users wanting immediate summer greens from users wanting stored winter grain."
+    ]
+  }
+},
 
             usePaths: [
         {
