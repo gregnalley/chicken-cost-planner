@@ -2508,155 +2508,170 @@ console.log(
   }
 
   function renderAlternativeCard(
-    result,
-    rankNumber
-  ) {
-    const identity =
-      getCropIdentity(result);
+  result,
+  rankNumber
+) {
 
-    const usePath =
-      getRawUsePath(result);
+  const identity =
+    getCropIdentity(result);
 
-    const strengths =
-      getRecommendationStrengths(
-        result
-      ).slice(0, 3);
+  const usePath =
+    getRawUsePath(result);
 
-    const limitations =
-      getRecommendationLimitations(
-        result
-      ).slice(0, 2);
+  const finalScore =
+    result.final?.score ??
+    result.finalScore ??
+    null;
 
-    return `
-      <article class="feed-crop-alternative-card">
+  const bestUsePath =
+    result.usePaths?.bestPath ??
+    result.bestUsePath ??
+    usePath ??
+    null;
 
-        <div class="feed-crop-alternative-rank">
-          #${rankNumber}
-        </div>
+  const strengths =
+    getRecommendationStrengths(
+      result
+    ).slice(0, 3);
 
-        <div class="feed-crop-alternative-heading">
+  const limitations =
+    getRecommendationLimitations(
+      result
+    ).slice(0, 2);
 
-          <span class="feed-crop-alternative-icon">
+  return `
+    <article class="feed-crop-alternative-card">
+
+      <div class="feed-crop-alternative-rank">
+        #${rankNumber}
+      </div>
+
+      <div class="feed-crop-alternative-heading">
+
+        <span class="feed-crop-alternative-icon">
+          ${escapeHTML(
+            getCropIcon(result)
+          )}
+        </span>
+
+        <div>
+
+          <h3>
             ${escapeHTML(
-              getCropIcon(result)
+              result.cropName
+            )}
+          </h3>
+
+          <span>
+            ${escapeHTML(
+              identity.primaryFeedCategory
+                ? formatIdentifier(
+                    identity.primaryFeedCategory
+                  )
+                : "Supplemental feed crop"
             )}
           </span>
 
-          <div>
+        </div>
 
-            <h3>
-              ${escapeHTML(
-                result.cropName
-              )}
-            </h3>
+        <strong class="feed-crop-alternative-score">
+          ${escapeHTML(
+            formatPercent(
+              finalScore
+            )
+          )}
+        </strong>
 
-            <span>
-              ${escapeHTML(
-                identity.primaryFeedCategory
-                  ? formatIdentifier(
-                      identity.primaryFeedCategory
-                    )
-                  : "Supplemental feed crop"
-              )}
-            </span>
+      </div>
 
-          </div>
+      <p class="feed-crop-alternative-path">
 
-          <strong class="feed-crop-alternative-score">
-            ${escapeHTML(
-              formatPercent(
-                result.finalScore
-              )
-            )}
+        <strong>
+          Best path:
+        </strong>
+
+        ${escapeHTML(
+          bestUsePath?.label ||
+          bestUsePath?.name ||
+          "Eligible use path"
+        )}
+
+      </p>
+
+      ${
+        usePath
+          ? renderPillList(
+              usePath.harvestProducts,
+              HARVEST_PRODUCT_LABELS,
+              "No harvest products listed"
+            )
+          : ""
+      }
+
+      <div class="feed-crop-alternative-insights">
+
+        <div>
+
+          <strong>
+            Good fit because:
           </strong>
+
+          ${renderStringList(
+            strengths,
+            {
+              icon:
+                "✓",
+
+              emptyLabel:
+                result.explanation
+                  ?.summary ||
+                "It remained one of the strongest eligible crops."
+            }
+          )}
 
         </div>
 
-        <p class="feed-crop-alternative-path">
-
-          <strong>
-            Best path:
-          </strong>
-
-          ${escapeHTML(
-            result.bestUsePath
-              ?.label ||
-            "Eligible use path"
-          )}
-
-        </p>
-
         ${
-          usePath
-            ? renderPillList(
-                usePath.harvestProducts,
-                HARVEST_PRODUCT_LABELS,
-                "No harvest products listed"
-              )
+          limitations.length > 0
+            ? `
+              <div>
+
+                <strong>
+                  Keep in mind:
+                </strong>
+
+                ${renderStringList(
+                  limitations,
+                  {
+                    icon:
+                      "!"
+                  }
+                )}
+
+              </div>
+            `
             : ""
         }
 
-        <div class="feed-crop-alternative-insights">
+      </div>
 
-          <div>
+      <a
+        class="feed-crop-results-text-link"
+        href="${escapeHTML(
+          getCropGuideUrl(result)
+        )}"
+      >
+        Learn about
+        ${escapeHTML(
+          getCropShortLabel(result)
+        )}
+        →
+      </a>
 
-            <strong>
-              Good fit because:
-            </strong>
+    </article>
+  `;
 
-            ${renderStringList(
-              strengths,
-              {
-                icon:
-                  "✓",
-
-                emptyLabel:
-                  "It remained one of the strongest eligible crops."
-              }
-            )}
-
-          </div>
-
-          ${
-            limitations.length > 0
-              ? `
-                <div>
-
-                  <strong>
-                    Keep in mind:
-                  </strong>
-
-                  ${renderStringList(
-                    limitations,
-                    {
-                      icon:
-                        "!"
-                    }
-                  )}
-
-                </div>
-              `
-              : ""
-          }
-
-        </div>
-
-        <a
-          class="feed-crop-results-text-link"
-          href="${escapeHTML(
-            getCropGuideUrl(result)
-          )}"
-        >
-          Learn about
-          ${escapeHTML(
-            getCropShortLabel(result)
-          )}
-          →
-        </a>
-
-      </article>
-    `;
-  }
+}
 
   function renderAlternatives(
     displayedRecommendations
