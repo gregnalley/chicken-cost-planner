@@ -1918,200 +1918,217 @@ console.log(
     `;
   }
 
-  function renderRecommendationHero(
-    result
-  ) {
-    const identity =
-      getCropIdentity(result);
+ function renderRecommendationHero(
+  result
+) {
 
-    const usePath =
-      getRawUsePath(result);
+  const identity =
+    getCropIdentity(result);
 
-    const tierLabel =
-      result.tier?.label ||
-      "Eligible recommendation";
+  const usePath =
+    getRawUsePath(result);
 
-    const confidenceLabel =
-      result.confidenceLabel
-        ?.label ||
-      "Available confidence";
+  const finalScore =
+    result.final?.score ??
+    result.finalScore ??
+    null;
 
-    const harvestProducts =
-      usePath?.harvestProducts ||
-      [];
+  const confidenceScore =
+    result.confidence?.score ??
+    result.confidenceScore ??
+    null;
 
-    const primaryFeedRole =
-      firstDefined(
-        usePath?.primaryFeedRole,
-        identity.primaryFeedCategory,
-        "Supplemental flock crop"
-      );
+  const bestUsePath =
+    result.usePaths?.bestPath ??
+    result.bestUsePath ??
+    null;
 
-    return `
-      <section class="feed-crop-top-recommendation">
+  const tierLabel =
+    result.tier?.label ||
+    "Eligible recommendation";
 
-        <div class="feed-crop-top-badge">
-          <span aria-hidden="true">
-            🏆
-          </span>
+  const confidenceLabel =
+    result.confidence?.label ||
+    result.confidenceLabel?.label ||
+    "Available confidence";
 
-          Best Overall Match
-        </div>
+  const harvestProducts =
+    bestUsePath?.harvestProducts ||
+    usePath?.harvestProducts ||
+    [];
 
-        <div class="feed-crop-top-grid">
+  const primaryFeedRole =
+    firstDefined(
+      bestUsePath?.primaryFeedRole,
+      usePath?.primaryFeedRole,
+      identity.primaryFeedCategory,
+      "Supplemental flock crop"
+    );
 
-          <div class="feed-crop-top-main">
+  return `
+    <section class="feed-crop-top-recommendation">
 
-            <div class="feed-crop-top-title-row">
+      <div class="feed-crop-top-badge">
+        <span aria-hidden="true">
+          🏆
+        </span>
 
-              <span class="feed-crop-top-icon">
-                ${escapeHTML(
-                  getCropIcon(result)
-                )}
-              </span>
+        Best Overall Match
+      </div>
 
-              <div>
+      <div class="feed-crop-top-grid">
 
-                <span class="feed-crop-top-eyebrow">
-                  Your strongest eligible crop
-                </span>
+        <div class="feed-crop-top-main">
 
-                <h1>
-                  ${escapeHTML(
-                    result.cropName
-                  )}
-                </h1>
+          <div class="feed-crop-top-title-row">
 
-              </div>
-
-            </div>
-
-            <p class="feed-crop-top-message">
+            <span class="feed-crop-top-icon">
               ${escapeHTML(
-                getScoreMessage(
-                  result.finalScore
-                )
+                getCropIcon(result)
               )}
-            </p>
+            </span>
 
-            <div class="feed-crop-top-meta">
+            <div>
 
-              <span>
-                <strong>
-                  Best harvest path:
-                </strong>
-
-                ${escapeHTML(
-                  result.bestUsePath
-                    ?.label ||
-                  "Eligible use path"
-                )}
+              <span class="feed-crop-top-eyebrow">
+                Your strongest eligible crop
               </span>
 
-              <span>
-                <strong>
-                  Primary role:
-                </strong>
-
+              <h1>
                 ${escapeHTML(
-                  formatIdentifier(
-                    primaryFeedRole
-                  )
+                  result.cropName
                 )}
-              </span>
-
-            </div>
-
-            <div class="feed-crop-top-harvest">
-
-              <strong>
-                Likely harvest from this path
-              </strong>
-
-              ${renderPillList(
-                harvestProducts,
-                HARVEST_PRODUCT_LABELS,
-                "Harvest products were not listed."
-              )}
+              </h1>
 
             </div>
 
           </div>
 
-          <aside class="feed-crop-top-score-panel">
+          <p class="feed-crop-top-message">
+            ${escapeHTML(
+              getScoreMessage(
+                finalScore
+              )
+            )}
+          </p>
 
-            <div
-              class="feed-crop-score-ring ${getScoreClass(
-                result.finalScore
-              )}"
-              style="--feed-crop-score:${Math.max(
-                0,
-                Math.min(
-                  100,
-                  result.finalScore
-                )
-              )};"
-            >
+          <div class="feed-crop-top-meta">
 
-              <div>
-
-                <strong>
-                  ${escapeHTML(
-                    formatPercent(
-                      result.finalScore
-                    )
-                  )}
-                </strong>
-
-                <span>
-                  Overall Match
-                </span>
-
-              </div>
-
-            </div>
-
-            <div class="feed-crop-score-detail">
-
-              <span>
-                Recommendation
-              </span>
-
+            <span>
               <strong>
-                ${escapeHTML(
-                  tierLabel
-                )}
+                Best harvest path:
               </strong>
 
-            </div>
+              ${escapeHTML(
+                bestUsePath?.label ||
+                "Eligible use path"
+              )}
+            </span>
 
-            <div class="feed-crop-score-detail">
+            <span>
+              <strong>
+                Primary role:
+              </strong>
 
-              <span>
-                Confidence
-              </span>
+              ${escapeHTML(
+                formatIdentifier(
+                  primaryFeedRole
+                )
+              )}
+            </span>
+
+          </div>
+
+          <div class="feed-crop-top-harvest">
+
+            <strong>
+              Likely harvest from this path
+            </strong>
+
+            ${renderPillList(
+              harvestProducts,
+              HARVEST_PRODUCT_LABELS,
+              "Harvest products were not listed."
+            )}
+
+          </div>
+
+        </div>
+
+        <aside class="feed-crop-top-score-panel">
+
+          <div
+            class="feed-crop-score-ring ${getScoreClass(
+              finalScore
+            )}"
+            style="--feed-crop-score:${Math.max(
+              0,
+              Math.min(
+                100,
+                finalScore ?? 0
+              )
+            )};"
+          >
+
+            <div>
 
               <strong>
                 ${escapeHTML(
-                  confidenceLabel
-                )}
-                ·
-                ${escapeHTML(
                   formatPercent(
-                    result.confidenceScore
+                    finalScore
                   )
                 )}
               </strong>
 
+              <span>
+                Overall Match
+              </span>
+
             </div>
 
-          </aside>
+          </div>
 
-        </div>
+          <div class="feed-crop-score-detail">
 
-      </section>
-    `;
-  }
+            <span>
+              Recommendation
+            </span>
+
+            <strong>
+              ${escapeHTML(
+                tierLabel
+              )}
+            </strong>
+
+          </div>
+
+          <div class="feed-crop-score-detail">
+
+            <span>
+              Confidence
+            </span>
+
+            <strong>
+              ${escapeHTML(
+                confidenceLabel
+              )}
+              ·
+              ${escapeHTML(
+                formatPercent(
+                  confidenceScore
+                )
+              )}
+            </strong>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+  `;
+}
 
   function renderStrengthsAndLimitations(
     result
