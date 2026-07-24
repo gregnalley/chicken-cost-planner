@@ -74012,6 +74012,9 @@ perennial:
         icon:
           "🌻",
 
+        scientificName:
+          "Helianthus tuberosus", 
+
         cropCategory:
           "storage-vegetable",
 
@@ -76358,398 +76361,97 @@ perennial:
 
       seasonalRoles: {
 
-                spring: {
-          primaryRoles: [
-            "emergence-from-overwintered-tubers",
-            "new-patch-establishment",
-            "rapid-vegetative-growth",
-            "perennial-patch-reactivation",
-            "early-spread-monitoring"
-          ],
-
-          feedProductsAvailable: [
-            "limited-tender-young-foliage",
-            "remaining-overwintered-tubers-where-sound-and-accessibly-stored"
-          ],
-
-          flockUses: [
-            "limited-cut-and-carry-young-greens",
-            "late-season-use-of-remaining-sound-stored-tubers"
-          ],
-
-          managementPriorities: [
-            "protect-emerging-shoots",
-            "monitor-colony-boundary",
-            "remove-unwanted-volunteers",
-            "maintain-establishment-moisture",
-            "inspect-winter-survival",
-            "replenish-mulch-if-needed"
-          ],
-
-          plannerScores: {
-            freshFeedValue:
-              2,
-
-            storedFeedValue:
-              2,
-
-            livingForageValue:
-              1,
-
-            harvestValue:
-              2,
-
-            laborDemand:
-              2,
-
-            pollinatorValue:
-              1,
-
-            screeningValue:
-              2,
-
-            resilienceValue:
-              5
-          },
-
-          directFacts: {
-            activeGrowthExpected:
-              true,
-
-            tuberHarvestPrimaryRole:
-              false,
-
-            tenderFoliageMayBeAvailable:
-              true,
-
-            unrestrictedPoultryAccessSuitable:
-              false,
-
-            spreadInspectionImportant:
-              true,
-
-            establishmentWaterImportant:
-              true,
-
-            notes: [
-              "Established patches normally resume growth from overwintered underground tubers.",
-              "New patches are commonly planted with dormant tubers in late winter or spring when the soil is workable.",
-              "Emerging shoots should be protected from repeated poultry browsing if tuber production is a primary goal.",
-              "Tender young foliage may be harvested lightly for cut-and-carry use.",
-              "Heavy early foliage removal can weaken establishment and reduce later tuber production.",
-              "Spring is an important season for identifying shoots that have emerged outside the intended patch.",
-              "Unwanted shoots are easier to manage when removed early.",
-              "Remaining overwintered tubers may still be harvested where soil conditions and tuber quality remain suitable.",
-              "Spring feed value is secondary to establishment, patch recovery, and containment management."
-            ]
-          }
-        },
-
-        summer: {
-          primaryRoles: [
-            "rapid-biomass-production",
-            "seasonal-privacy-screening",
-            "tender-foliage-production",
-            "pollinator-habitat-development",
-            "energy-storage-for-tuber-production",
-            "compost-biomass-production"
-          ],
-
-          feedProductsAvailable: [
-            "tender-young-leaves",
-            "tender-shoots",
-            "limited-clean-cut-foliage"
-          ],
-
-          flockUses: [
-            "controlled-cut-and-carry-greens",
-            "limited-seasonal-enrichment"
-          ],
-
-          managementPriorities: [
-            "protect-production-patch",
-            "monitor-water-during-drought",
-            "inspect-for-lodging",
-            "monitor-underground-spread",
-            "remove-unwanted-shoots",
-            "avoid-excessive-foliage-harvest",
-            "monitor-leaf-health"
-          ],
-
-          plannerScores: {
-            freshFeedValue:
-              3,
-
-            storedFeedValue:
-              1,
-
-            livingForageValue:
-              2,
-
-            harvestValue:
-              2,
-
-            laborDemand:
-              2,
-
-            pollinatorValue:
-              4,
-
-            screeningValue:
-              5,
-
-            resilienceValue:
-              5
-          },
-
-          directFacts: {
-            activeGrowthExpected:
-              true,
-
-            peakVegetativeGrowthPossible:
-              true,
-
-            tuberHarvestPrimaryRole:
-              false,
-
-            tenderFoliageMayBeAvailable:
-              true,
-
-            matureStemsBecomeCoarse:
-              true,
-
-            unrestrictedPoultryAccessSuitable:
-              false,
-
-            droughtCanReduceLaterTuberYield:
-              true,
-
-            lodgingPossible:
-              true,
-
-            notes: [
-              "Summer is the principal vegetative-growth period.",
-              "Tall dense stems can provide strong seasonal privacy screening.",
-              "Tender young leaves and shoots may be offered in limited quantities as cut-and-carry greens.",
-              "Mature stems and older foliage become increasingly coarse and less useful as poultry forage.",
-              "Repeated heavy cutting may reduce photosynthetic capacity and later tuber production.",
-              "The patch should remain protected from unrestricted chicken access.",
-              "Consistent moisture during prolonged drought can protect biomass and tuber-development potential.",
-              "Tall stems may lodge during wind, thunderstorms, or heavy rainfall.",
-              "Perimeter inspection remains important because new shoots may appear beyond the intended boundary.",
-              "Flowers may begin supporting pollinators during late summer depending on cultivar, latitude, and seasonal conditions."
-            ]
-          }
-        },
-
-        autumn: {
-          primaryRoles: [
-            "late-season-flowering",
-            "pollinator-support",
-            "tuber-bulking",
-            "fresh-tuber-harvest",
-            "household-food-harvest",
-            "rabbit-feed-production",
-            "controlled-postharvest-foraging",
-            "compost-biomass-harvest",
-            "winter-storage-preparation"
-          ],
-
-          feedProductsAvailable: [
-            "fresh-whole-tubers",
-            "fresh-chopped-tubers",
-            "exposed-postharvest-tubers",
-            "limited-tender-foliage",
-            "dried-tuber-material-after-processing"
-          ],
-
-          flockUses: [
-            "fresh-tuber-supplementation",
-            "chopped-tuber-supplementation",
-            "controlled-postharvest-foraging",
-            "pecking-and-digging-enrichment",
-            "limited-cut-and-carry-foliage",
-            "processed-formulated-feed-ingredient"
-          ],
-
-          managementPriorities: [
-            "allow-tubers-to-mature",
-            "delay-major-harvest-until-top-decline-where-practical",
-            "mark-patch-before-stems-disappear",
-            "inspect-harvested-tubers",
-            "separate-damaged-tubers",
-            "prepare-in-ground-storage-area",
-            "apply-mulch-if-needed",
-            "protect-tubers-from-rodents",
-            "manage-postharvest-flock-access"
-          ],
-
-          plannerScores: {
-            freshFeedValue:
-              5,
-
-            storedFeedValue:
-              5,
-
-            livingForageValue:
-              2,
-
-            harvestValue:
-              5,
-
-            laborDemand:
-              5,
-
-            pollinatorValue:
-              5,
-
-            screeningValue:
-              4,
-
-            resilienceValue:
-              5
-          },
-
-          directFacts: {
-            activeGrowthExpected:
-              true,
-
-            peakTuberDevelopmentPossible:
-              true,
-
-            frostCanKillTopGrowth:
-              true,
-
-            tuberHarvestPrimaryRole:
-              true,
-
-            freshTubersAvailable:
-              true,
-
-            inGroundStorageCanBegin:
-              true,
-
-            controlledPostharvestAccessPossible:
-              true,
-
-            notes: [
-              "Autumn is generally the strongest feed and harvest season for Jerusalem Artichoke.",
-              "Tuber development commonly continues late in the growing season.",
-              "Waiting until foliage declines or frost kills the tops may improve harvest timing and make mature tubers easier to identify.",
-              "Cultivar, latitude, photoperiod, frost timing, and weather affect when peak tuber development occurs.",
-              "Fresh sound tubers may be offered whole, split, chopped, or crushed in supplemental quantities.",
-              "Controlled postharvest flock access may provide digging and pecking enrichment.",
-              "Chickens should not receive unrestricted access to the entire permanent patch.",
-              "Damaged tubers should be separated for prompt use because they deteriorate faster.",
-              "Late-season flowers can provide substantial pollinator value.",
-              "Stems and foliage may contribute large amounts of compost biomass after feed-quality foliage has declined.",
-              "Rows or patch boundaries should be marked before dead stems are removed if winter digging is planned.",
-              "The crop's highest seasonal labor demand occurs during digging, sorting, cleaning, processing, and containment inspection."
-            ]
-          }
-        },
-
-        winter: {
-          primaryRoles: [
-            "in-ground-tuber-storage",
-            "fresh-winter-tuber-harvest",
-            "non-electric-food-storage",
-            "supplemental-winter-poultry-feed",
-            "household-food-security",
-            "perennial-dormancy",
-            "future-planting-material-preservation"
-          ],
-
-          feedProductsAvailable: [
-            "in-ground-stored-tubers",
-            "freshly-dug-winter-tubers",
-            "short-term-cold-stored-tubers",
-            "properly-dried-ground-tuber-material"
-          ],
-
-          flockUses: [
-            "fresh-whole-tuber-supplementation",
-            "fresh-chopped-tuber-supplementation",
-            "winter-pecking-enrichment",
-            "processed-formulated-feed-ingredient"
-          ],
-
-          managementPriorities: [
-            "maintain-soil-access",
-            "dig-only-needed-quantities",
-            "inspect-every-harvested-tuber",
-            "monitor-rodent-pressure",
-            "protect-harvested-tubers-from-drying",
-            "inspect-stored-tubers-frequently",
-            "discard-deteriorated-material",
-            "preserve-sound-planting-tubers"
-          ],
-
-          plannerScores: {
-            freshFeedValue:
-              5,
-
-            storedFeedValue:
-              5,
-
-            livingForageValue:
-              1,
-
-            harvestValue:
-              5,
-
-            laborDemand:
-              3,
-
-            pollinatorValue:
-              1,
-
-            screeningValue:
-              1,
-
-            resilienceValue:
-              5
-          },
-
-          directFacts: {
-            activeTopGrowthExpected:
-              false,
-
-            tubersDormantUnderground:
-              true,
-
-            tuberHarvestPrimaryRole:
-              true,
-
-            inGroundStoragePossible:
-              true,
-
-            inGroundStorageUniversallyReliable:
-              false,
-
-            frozenSoilCanPreventAccess:
-              true,
-
-            saturatedSoilCanIncreaseLoss:
-              true,
-
-            notes: [
-              "Dormant tubers normally remain alive underground after frost kills the aerial growth.",
-              "In-ground storage can provide a valuable non-electric winter food and supplemental-feed reserve.",
-              "This pathway works best where soil remains reasonably well drained and periodically workable.",
-              "Frozen soil may make sound tubers temporarily inaccessible.",
-              "Warm saturated soil may increase deterioration risk.",
-              "Mulch may moderate freezing and preserve harvest access in some climates.",
-              "Only the quantity needed should be dug when practical.",
-              "Every harvested tuber should be inspected before feeding or household use.",
-              "Harvested tubers may shrivel quickly when stored in dry air.",
-              "Cold, dark, high-humidity storage is preferable when tubers must be held after digging.",
-              "Rodent damage may occur both underground and in storage.",
-              "Sound tubers may also be retained as future planting material.",
-              "Winter feed value remains supplemental and does not replace complete poultry feed."
-            ]
-          }
-        },
+          spring: [
+  "Emergence from overwintered tubers",
+  "New patch establishment",
+  "Rapid vegetative growth",
+  "Perennial patch reactivation",
+  "Early spread monitoring",
+  "Limited tender young foliage",
+  "Harvest of remaining sound overwintered tubers",
+  "Limited cut-and-carry young greens",
+  "Protect emerging shoots",
+  "Monitor colony boundary",
+  "Remove unwanted volunteers",
+  "Maintain establishment moisture",
+  "Inspect winter survival",
+  "Replenish mulch if needed"
+],      
+
+         
+
+        summer: [
+  "Rapid biomass production",
+  "Seasonal privacy screening",
+  "Tender foliage production",
+  "Pollinator habitat development",
+  "Energy storage for tuber production",
+  "Compost biomass production",
+  "Tender young leaves",
+  "Tender shoots",
+  "Limited clean cut foliage",
+  "Controlled cut-and-carry greens",
+  "Limited seasonal enrichment",
+  "Protect production patch",
+  "Monitor drought stress",
+  "Inspect for lodging",
+  "Monitor underground spread",
+  "Remove unwanted shoots",
+  "Avoid excessive foliage harvest",
+  "Monitor leaf health"
+],
+
+          
+
+        autumn: [
+  "Late-season flowering",
+  "Pollinator support",
+  "Tuber bulking",
+  "Fresh tuber harvest",
+  "Household food harvest",
+  "Rabbit feed production",
+  "Controlled postharvest foraging",
+  "Compost biomass harvest",
+  "Winter storage preparation",
+  "Fresh whole tubers",
+  "Fresh chopped tubers",
+  "Controlled postharvest flock access",
+  "Pecking and digging enrichment",
+  "Allow tubers to mature",
+  "Delay harvest until tops decline where practical",
+  "Mark patch before stems disappear",
+  "Inspect harvested tubers",
+  "Separate damaged tubers",
+  "Prepare in-ground storage area",
+  "Protect tubers from rodents"
+],
+
+          
+
+        winter: [
+  "In-ground tuber storage",
+  "Fresh winter tuber harvest",
+  "Non-electric food storage",
+  "Supplemental winter poultry feed",
+  "Household food security",
+  "Perennial dormancy",
+  "Future planting material preservation",
+  "Freshly dug tubers",
+  "Fresh whole tuber supplementation",
+  "Fresh chopped tuber supplementation",
+  "Winter pecking enrichment",
+  "Maintain soil access",
+  "Dig only needed quantities",
+  "Inspect harvested tubers",
+  "Monitor rodent pressure",
+  "Protect harvested tubers from drying",
+  "Inspect stored tubers frequently",
+  "Discard deteriorated material",
+  "Preserve sound planting tubers"
+],
+
+          
+        
 
         plannerSeasonScores: {
           spring: {
