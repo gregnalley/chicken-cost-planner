@@ -17,11 +17,13 @@ window.renderProductCards = function (container = document) {
       return;
     }
 
-    const bullets = product.bullets
+    const bullets = Array.isArray(product.bullets)
+  ? product.bullets
       .map(function (item) {
         return `<li>${item}</li>`;
       })
-      .join("");
+      .join("")
+  : "";
 
     slot.innerHTML = `
       <div class="affiliate-card"
@@ -34,9 +36,7 @@ window.renderProductCards = function (container = document) {
 
         <p>${product.description}</p>
 
-        <ul>
-          ${bullets}
-        </ul>
+        ${bullets ? `<ul>${bullets}</ul>` : ""}
 
         <a class="affiliate-button"
            href="${product.url}"
