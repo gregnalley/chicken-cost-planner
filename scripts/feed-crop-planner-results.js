@@ -2786,6 +2786,15 @@ console.log(
     eligibleResults,
     answers
   ) {
+
+
+console.log(
+  "Goal comparison result:",
+  eligibleResults[0]
+);
+
+
+
     const selectedPriorities =
       asArray(
         answers.preferences
