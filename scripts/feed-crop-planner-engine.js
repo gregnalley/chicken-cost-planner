@@ -11391,6 +11391,9 @@
 
     const goalScorers = {
 
+      "reduce-feed-use":
+        getFeedCostReductionGoalScore,
+
       "reduce-feed-cost":
         getFeedCostReductionGoalScore,
 
@@ -11433,6 +11436,13 @@
             cropRecord,
             "protein"
           ),
+
+       "high-energy":
+        cropRecord =>
+          getNutritionalRoleScore(
+            cropRecord,
+            "energy"
+      ),   
 
       "energy":
         cropRecord =>
