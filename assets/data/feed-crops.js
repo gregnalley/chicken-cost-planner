@@ -46732,6 +46732,9 @@ const BCP_FEED_CROPS = {
         icon:
           "🌳",
 
+        scientificName:
+          "Morus alba", 
+
         cropCategory:
           "perennial-tree-forage",
 
@@ -48394,26 +48397,75 @@ const BCP_FEED_CROPS = {
       },
 
       seasonalRoles: {
-        earlySpring:
-          true,
 
-        lateSpring:
-          true,
+        spring: [
+    "Dormant-season tree planting where soil is workable",
+    "Container-tree planting after severe freeze risk",
+    "Bud break and leaf emergence",
+    "Early canopy growth",
+    "Tree establishment",
+    "Irrigation during establishment",
+    "Early fresh-leaf production",
+    "Flowering and fruit set where cultivar and climate permit"
+  ],
 
-        summer:
-          true,
+  summer: [
+    "Active canopy growth",
+    "Fresh leaf harvest",
+    "Cut-and-carry forage production",
+    "Fruit development",
+    "Ripe fruit harvest",
+    "Naturally fallen fruit access",
+    "Fresh household-fruit harvest",
+    "Dried-leaf forage preparation",
+    "Shade production",
+    "Silvopasture support",
+    "Pruning and canopy management"
+  ],
 
-        lateSummer:
-          true,
+  autumn: [
+    "Late fruit harvest where cultivars remain productive",
+    "Continued fresh-leaf harvest while foliage remains healthy",
+    "Dried-leaf forage harvest",
+    "Leaf drying and storage",
+    "Postharvest cleanup",
+    "Tree-health inspection",
+    "Preparation for dormancy",
+    "Mulch and soil-care management"
+  ],
 
-        fall:
-          true,
+  winter: [
+    "Tree dormancy",
+    "Dormant-tree planting where locally appropriate",
+    "Dormant pruning",
+    "Stored dried-leaf supplementation",
+    "Tree protection from rodents and browsing",
+    "Orchard planning",
+    "Cultivar evaluation",
+    "Equipment and harvest planning"
+  ],
 
-        winterStorage:
-          true,
 
-        perennial:
-          true,
+        earlySpringActive:
+  true,
+
+lateSpringActive:
+  true,
+
+summerActive:
+  true,
+
+lateSummerActive:
+  true,
+
+autumnActive:
+  true,
+
+winterStoredUse:
+  true,
+
+perennial:
+  true,
 
         plantingWindows: [
           {
