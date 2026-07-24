@@ -966,6 +966,8 @@
     const audiences =
       new Set();
 
+    const signals = [];  
+
 
     addGoalTags(
       tags,
@@ -1067,9 +1069,94 @@
         Array.from(tags),
 
       audiences:
-        Array.from(audiences)
+        Array.from(audiences),
+
+      signals:
+        Array.from(signals) 
     };
   }
+
+  function addSignal(
+  signals,
+  type,
+  value,
+  weight,
+  source
+) {
+  if (
+    !Array.isArray(signals)
+  ) {
+    return;
+  }
+
+  const normalizedType =
+    normalizeValue(type);
+
+  const normalizedValue =
+    normalizeValue(value);
+
+  const normalizedSource =
+    normalizeValue(source);
+
+  const numericWeight =
+    Number(weight);
+
+  if (
+    !normalizedType ||
+    !normalizedValue ||
+    !normalizedSource ||
+    !Number.isFinite(
+      numericWeight
+    )
+  ) {
+    return;
+  }
+
+  const boundedWeight =
+    Math.max(
+      0,
+      Math.min(
+        100,
+        numericWeight
+      )
+    );
+
+  const duplicateExists =
+    signals.some(
+      function hasMatchingSignal(
+        signal
+      ) {
+        return (
+          signal.type ===
+            normalizedType &&
+          signal.value ===
+            normalizedValue &&
+          signal.source ===
+            normalizedSource
+        );
+      }
+    );
+
+  if (
+    duplicateExists
+  ) {
+    return;
+  }
+
+  signals.push({
+    type:
+      normalizedType,
+
+    value:
+      normalizedValue,
+
+    weight:
+      boundedWeight,
+
+    source:
+      normalizedSource
+  });
+}
 
 
   /*
