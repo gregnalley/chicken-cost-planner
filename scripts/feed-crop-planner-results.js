@@ -2525,7 +2525,8 @@ console.log(
     getCropIdentity(result);
 
   const usePath =
-    getRawUsePath(result);
+  result.usePaths?.bestPath?.usePath ??
+  getRawUsePath(result);
 
   const finalScore =
     result.final?.score ??
