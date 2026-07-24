@@ -55413,27 +55413,6 @@
 
   }
 
-  if (
-  typeof getCropGoalFieldName ===
-    "function"
-) {
-
-  registerEngineApiFunction(
-    engineApi,
-    "getCropGoalFieldName",
-    getCropGoalFieldName
-  );
-
-}
-
-
-console.log(
-  "Goal helper registered:",
-  typeof engineApi
-    .getCropGoalFieldName
-);
-
-
 
 
   if (
@@ -56312,16 +56291,6 @@ console.log(
       engineApi.evaluateAllCrops;
 
   }
-
-  if (
-  typeof engineApi.getCropGoalFieldName ===
-    "function"
-) {
-
-  namespace.getCropGoalFieldName =
-    engineApi.getCropGoalFieldName;
-
-}
 
 
   if (
