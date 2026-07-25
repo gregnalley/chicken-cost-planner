@@ -1110,16 +1110,22 @@ document.addEventListener(
       return;
     }
 
-    window.renderRecommendedProducts(
-      container,
-      {
-        pageType:
-          "best-chicken-feeders"
-      },
-      {
-        limit: 5
-      }
-    );
+    const productIds =
+  window.renderRecommendedProducts(
+    container,
+    {
+      pageType:
+        "best-chicken-feeders"
+    },
+    {
+      limit: 5
+    }
+  );
+
+console.log(
+  "Recommended Products:",
+  productIds
+);
 
   }
 );
