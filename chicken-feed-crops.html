@@ -359,6 +359,32 @@ grid-template-columns:1fr;
   color: #194f2a;
 }
 
+.crop-best-for-list {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crop-best-for-list li {
+  position: relative;
+  margin: 7px 0;
+  padding-left: 22px;
+  line-height: 1.45;
+}
+
+.crop-best-for-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2d7442;
+  font-weight: 800;
+}
+
+.crop-best-for-fallback {
+  margin: 9px 0 0;
+}
+
 .crop-details {
   display: none;
   margin-top: 16px;
@@ -768,10 +794,10 @@ Harvest grains, pumpkins, greens, and other crops that can supplement purchased 
 
 <div class="feed-category-card">
 
-<h3>🐔 Healthier Flocks</h3>
+<h3>🐔 More Variety and Enrichment</h3>
 
 <p>
-Fresh forage and a greater variety of homegrown foods encourage natural behaviors while adding seasonal diversity to your chickens' diet.
+Fresh forage and homegrown supplemental foods encourage natural pecking, scratching, and foraging while adding seasonal variety to the flock's routine.
 </p>
 
 </div>
@@ -1370,17 +1396,35 @@ function createCropCard(crop) {
       ${escapeHTML(crop.summary)}
     </p>
 
-    <div class="crop-best-value">
+        <div class="crop-best-value">
 
-      <strong>Primary value:</strong>
+      <strong>⭐ Best For</strong>
 
       ${
-        primaryValues.length > 0
-          ? escapeHTML(primaryValues.join(", "))
-          : "Supplemental crop value"
-      }
+        bestFor.length > 0
+          ? `
+            <ul class="crop-best-for-list">
 
-    </div>
+              ${bestFor
+                .map(
+                  item => `
+                    <li>
+                      ${escapeHTML(item)}
+                    </li>
+                  `
+                )
+                .join("")}
+
+            </ul>
+          `
+          : `
+            <p class="crop-best-for-fallback">
+              Supplemental feed and flock enrichment
+            </p>
+          `
+        }
+
+       </div>
 
          ${
       cropGuide
