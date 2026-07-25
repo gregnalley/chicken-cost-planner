@@ -527,6 +527,54 @@ gtag("config", "G-88486JDN1Z");
   display: none;
 }
 
+.feed-faq-item{
+
+border-top:1px solid #d8e2cf;
+
+padding:14px 0;
+
+}
+
+.feed-faq-button{
+
+width:100%;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+text-align:left;
+
+font-size:1rem;
+
+font-weight:700;
+
+padding:0;
+
+color:#2d4b25;
+
+}
+
+.feed-faq-answer{
+
+padding-top:12px;
+
+color:#475248;
+
+}
+
+.feed-troubleshooting-item{
+
+margin-bottom:22px;
+
+padding-bottom:22px;
+
+border-bottom:1px solid #e6e6e6;
+
+}
+
 /* =========================================
    LOADING STATE
    ========================================= */
@@ -1149,6 +1197,26 @@ renderSpoilageAndContamination(
 );
 
 renderCommonFeedingMistakes(
+  crop
+);
+
+renderComplementaryFeeding(
+  crop
+);
+
+renderFeedingMethods(
+  crop
+);
+
+renderPracticalUse(
+  crop
+);
+
+renderTroubleshooting(
+  crop
+);
+
+renderFAQ(
   crop
 );
 
@@ -3427,6 +3495,961 @@ Show More
 
 }
 
+/* ------------------------------------------------------------
+   Complementary Feeding Tile
+------------------------------------------------------------ */
+
+function renderComplementaryFeeding(
+  crop
+){
+
+  const complementaryFeeding =
+    crop.feedingReference
+      .complementaryFeeding;
+
+  if(
+    !complementaryFeeding
+  ){
+
+    return;
+
+  }
+
+  const complements =
+    Array.isArray(
+      complementaryFeeding.complements
+    )
+      ? complementaryFeeding.complements
+      : [];
+
+  const doesNotCorrect =
+    Array.isArray(
+      complementaryFeeding.doesNotCorrect
+    )
+      ? complementaryFeeding.doesNotCorrect
+      : [];
+
+  const previewComplements =
+    complements
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.feedType || "Complementary feed"}
+            </strong>
+
+            <br>
+
+            ${item.relationship || ""}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const additionalComplements =
+    complements
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.feedType || "Complementary feed"}
+            </strong>
+
+            <br>
+
+            ${item.relationship || ""}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const doesNotCorrectHtml =
+    doesNotCorrect
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const hasExtraContent =
+    Boolean(
+      additionalComplements ||
+      doesNotCorrectHtml ||
+      complementaryFeeding.pairingWarning
+    );
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--wide feed-tile--information"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🤝
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Complementary Feeding
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+${complementaryFeeding.purpose
+  ? `
+    <p>
+      ${complementaryFeeding.purpose}
+    </p>
+  `
+  : ""
+}
+
+${complementaryFeeding.bestFoundation
+  ? `
+    <p>
+      <strong>
+        Best nutritional foundation:
+      </strong>
+
+      ${complementaryFeeding.bestFoundation}
+    </p>
+  `
+  : ""
+}
+
+${previewComplements
+  ? `
+    <h3>
+      What It Works Well With
+    </h3>
+
+    <ul>
+      ${previewComplements}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="complementary-feeding-extra"
+      hidden
+    >
+
+    ${additionalComplements
+      ? `
+        <h3>
+          Additional Complementary Feeds
+        </h3>
+
+        <ul>
+          ${additionalComplements}
+        </ul>
+      `
+      : ""
+    }
+
+    ${doesNotCorrectHtml
+      ? `
+        <h3>
+          What This Crop Does Not Correct
+        </h3>
+
+        <ul>
+          ${doesNotCorrectHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${complementaryFeeding.pairingWarning
+      ? `
+        <h3>
+          Important Pairing Warning
+        </h3>
+
+        <p>
+          ${complementaryFeeding.pairingWarning}
+        </p>
+      `
+      : ""
+    }
+
+    ${complementaryFeeding.practicalBackyardApproach
+      ? `
+        <h3>
+          Practical Backyard Approach
+        </h3>
+
+        <p>
+          ${complementaryFeeding.practicalBackyardApproach}
+        </p>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="complementary-feeding-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Feeding Methods Tile
+------------------------------------------------------------ */
+
+function renderFeedingMethods(
+  crop
+){
+
+  const feedingMethods =
+    crop.feedingReference
+      .feedingMethods;
+
+  if(
+    !feedingMethods
+  ){
+
+    return;
+
+  }
+
+  const primaryMethods =
+    Array.isArray(
+      feedingMethods.primaryMethods
+    )
+      ? feedingMethods.primaryMethods
+      : [];
+
+  const observationChecklist =
+    Array.isArray(
+      feedingMethods.observationChecklist
+    )
+      ? feedingMethods.observationChecklist
+      : [];
+
+  const previewMethods =
+    primaryMethods
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.method || "Feeding method"}
+            </strong>
+
+            ${item.recommendation
+              ? `
+                <br>
+
+                <span class="feed-tag">
+                  ${formatDisplayValue(
+                    item.recommendation
+                  )}
+                </span>
+              `
+              : ""
+            }
+
+            ${item.explanation
+              ? `
+                <br>
+
+                ${item.explanation}
+              `
+              : ""
+            }
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const additionalMethods =
+    primaryMethods
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.method || "Feeding method"}
+            </strong>
+
+            ${item.recommendation
+              ? `
+                <br>
+
+                <span class="feed-tag">
+                  ${formatDisplayValue(
+                    item.recommendation
+                  )}
+                </span>
+              `
+              : ""
+            }
+
+            ${item.explanation
+              ? `
+                <br>
+
+                ${item.explanation}
+              `
+              : ""
+            }
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const observationHtml =
+    observationChecklist
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const introductionGuidelines =
+    feedingMethods.introductionGuidelines ||
+    {};
+
+  const hasExtraContent =
+    Boolean(
+      additionalMethods ||
+      observationHtml ||
+      introductionGuidelines.explanation
+    );
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--safe"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🍽️
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Feeding Methods
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+${feedingMethods.philosophy
+  ? `
+    <p>
+      ${feedingMethods.philosophy}
+    </p>
+  `
+  : ""
+}
+
+${previewMethods
+  ? `
+    <h3>
+      Recommended Methods
+    </h3>
+
+    <ul>
+      ${previewMethods}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="feeding-methods-extra"
+      hidden
+    >
+
+    ${additionalMethods
+      ? `
+        <h3>
+          Additional Methods
+        </h3>
+
+        <ul>
+          ${additionalMethods}
+        </ul>
+      `
+      : ""
+    }
+
+    ${introductionGuidelines.explanation
+      ? `
+        <h3>
+          Introducing This Crop
+        </h3>
+
+        <p>
+          ${introductionGuidelines.explanation}
+        </p>
+      `
+      : ""
+    }
+
+    ${observationHtml
+      ? `
+        <h3>
+          What to Watch After Feeding
+        </h3>
+
+        <ul>
+          ${observationHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="feeding-methods-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Practical Use Tile
+------------------------------------------------------------ */
+
+function renderPracticalUse(
+  crop
+){
+
+  const practicalUse =
+    crop.feedingReference
+      .practicalUse;
+
+  if(
+    !practicalUse
+  ){
+
+    return;
+
+  }
+
+  const idealUses =
+    Array.isArray(
+      practicalUse.idealHomesteadUses
+    )
+      ? practicalUse.idealHomesteadUses
+      : [];
+
+  const lessSuitableUses =
+    Array.isArray(
+      practicalUse.lessSuitableUses
+    )
+      ? practicalUse.lessSuitableUses
+      : [];
+
+  const idealUsesHtml =
+    idealUses
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const lessSuitableHtml =
+    lessSuitableUses
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const hasExtraContent =
+    Boolean(
+      lessSuitableHtml ||
+      practicalUse.commercialRecommendation
+    );
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--information"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🐔
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Practical Use
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+${practicalUse.backyardRecommendation
+  ? `
+    <h3>
+      Backyard Recommendation
+    </h3>
+
+    <p>
+      ${practicalUse.backyardRecommendation}
+    </p>
+  `
+  : ""
+}
+
+${idealUsesHtml
+  ? `
+    <h3>
+      Best Homestead Uses
+    </h3>
+
+    <ul>
+      ${idealUsesHtml}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="practical-use-extra"
+      hidden
+    >
+
+    ${lessSuitableHtml
+      ? `
+        <h3>
+          Less Suitable Uses
+        </h3>
+
+        <ul>
+          ${lessSuitableHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${practicalUse.commercialRecommendation
+      ? `
+        <h3>
+          Larger-Scale Use
+        </h3>
+
+        <p>
+          ${practicalUse.commercialRecommendation}
+        </p>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="practical-use-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Troubleshooting Tile
+------------------------------------------------------------ */
+
+function renderTroubleshooting(
+  crop
+){
+
+  const troubleshooting =
+    crop.feedingReference
+      .troubleshooting;
+
+  if(
+    !troubleshooting
+  ){
+
+    return;
+
+  }
+
+  const commonIssues =
+    Array.isArray(
+      troubleshooting.commonIssues
+    )
+      ? troubleshooting.commonIssues
+      : [];
+
+  const issueHtml =
+    commonIssues
+      .map(function(issue){
+
+        return `
+<li>
+
+<strong>
+
+${issue.problem}
+
+</strong>
+
+<br>
+
+${issue.likelyCause}
+
+</li>
+`;
+
+      })
+      .join("");
+
+  const expandedHtml =
+    commonIssues
+      .map(function(issue){
+
+        return `
+<div class="feed-troubleshooting-item">
+
+<h3>
+
+${issue.problem}
+
+</h3>
+
+<p>
+
+<strong>
+Likely Cause:
+</strong>
+
+${issue.likelyCause}
+
+</p>
+
+<p>
+
+<strong>
+Suggested Solution:
+</strong>
+
+${issue.solution}
+
+</p>
+
+</div>
+`;
+
+      })
+      .join("");
+
+  const html =
+`
+<div
+class="feed-tile feed-tile--wide feed-tile--caution"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🔧
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+
+Troubleshooting
+
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${troubleshooting.summary || ""}
+
+</p>
+
+<ul>
+
+${issueHtml}
+
+</ul>
+
+</div>
+
+<div
+class="feed-tile-extra"
+id="troubleshooting-extra"
+hidden
+>
+
+${expandedHtml}
+
+</div>
+
+<button
+class="feed-expand-button"
+type="button"
+data-expand-target="troubleshooting-extra"
+aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   FAQ Tile
+------------------------------------------------------------ */
+
+function renderFAQ(
+  crop
+){
+
+  const faq =
+    crop.feedingReference
+      .faq;
+
+  if(
+    !faq ||
+    !Array.isArray(
+      faq.questions
+    )
+  ){
+
+    return;
+
+  }
+
+  const questions =
+    faq.questions
+      .map(function(item,index){
+
+        return `
+<div class="feed-faq-item">
+
+<button
+class="feed-faq-button"
+type="button"
+data-faq-target="faq-answer-${index}"
+aria-expanded="false"
+>
+
+${item.question}
+
+</button>
+
+<div
+class="feed-faq-answer"
+id="faq-answer-${index}"
+hidden
+>
+
+<p>
+
+${item.answer}
+
+</p>
+
+</div>
+
+</div>
+`;
+
+      })
+      .join("");
+
+  const html =
+`
+<div
+class="feed-tile feed-tile--wide feed-tile--information"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+❓
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+</div>
+
+</div>
+
+${questions}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
 
 
 
@@ -3490,6 +4513,59 @@ document
         isExpanded
           ? "Show More"
           : "Show Less";
+
+    }
+  );
+
+  document
+  .getElementById(
+    "feed-tile-grid"
+  )
+  .addEventListener(
+    "click",
+    function(event){
+
+      const button =
+        event.target.closest(
+          ".feed-faq-button"
+        );
+
+      if(
+        !button
+      ){
+
+        return;
+
+      }
+
+      const target =
+        document.getElementById(
+          button.dataset.faqTarget
+        );
+
+      if(
+        !target
+      ){
+
+        return;
+
+      }
+
+      const expanded =
+        button.getAttribute(
+          "aria-expanded"
+        ) ===
+        "true";
+
+      button.setAttribute(
+        "aria-expanded",
+        String(
+          !expanded
+        )
+      );
+
+      target.hidden =
+        expanded;
 
     }
   );
