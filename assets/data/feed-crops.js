@@ -26890,6 +26890,15 @@ const BCP_FEED_CROPS = {
           "The greatest protection against spoilage is harvesting mature grain, drying thoroughly, cooling before storage, maintaining clean rodent-resistant containers, and inspecting regularly throughout storage."
       },
 
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Panicum miliaceum",
+
+          family:
+            "Poaceae"
+        },
+
             researchNotes: [
         "Most published poultry research evaluates Proso Millet as a measured ingredient within professionally formulated diets rather than as informal backyard supplementation with whole grain or mature panicles.",
 
