@@ -1140,6 +1140,18 @@ function loadCropReference(
     crop
   );
 
+  renderStorage(
+  crop
+);
+
+renderSpoilageAndContamination(
+  crop
+);
+
+renderCommonFeedingMistakes(
+  crop
+);
+
   resultsSection.scrollIntoView({
     behavior:
       "smooth",
@@ -2998,6 +3010,424 @@ ${hasExtraContent
     );
 
 }
+
+/* ------------------------------------------------------------
+   Storage Tile
+------------------------------------------------------------ */
+
+function renderStorage(
+  crop
+){
+
+  const storage =
+    crop.feedingReference
+      .storage;
+
+  if(
+    !storage
+  ){
+
+    return;
+
+  }
+
+  const bestMethods =
+    Array.isArray(
+      storage.recommendedStorageMethods
+    )
+      ? storage.recommendedStorageMethods
+      : [];
+
+  const mistakes =
+    Array.isArray(
+      storage.storageMistakes
+    )
+      ? storage.storageMistakes
+      : [];
+
+  const html =
+`
+<div class="feed-tile feed-tile--information">
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+📦
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Storage
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${storage.storageSummary || ""}
+
+</p>
+
+<p>
+
+<strong>
+Shelf Life:
+</strong>
+
+${storage.expectedShelfLife || "Varies"}
+
+</p>
+
+<h3>
+Recommended Storage
+</h3>
+
+<ul>
+
+${bestMethods.map(function(item){
+
+return `
+<li>${item}</li>
+`;
+
+}).join("")}
+
+</ul>
+
+</div>
+
+<div
+class="feed-tile-extra"
+id="storage-extra"
+hidden
+>
+
+<h3>
+Avoid These Mistakes
+</h3>
+
+<ul>
+
+${mistakes.map(function(item){
+
+return `
+<li>${item}</li>
+`;
+
+}).join("")}
+
+</ul>
+
+</div>
+
+<button
+class="feed-expand-button"
+type="button"
+data-expand-target="storage-extra"
+aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Spoilage & Contamination
+------------------------------------------------------------ */
+
+function renderSpoilageAndContamination(
+  crop
+){
+
+  const spoilage =
+    crop.feedingReference
+      .spoilageAndContamination;
+
+  if(
+    !spoilage
+  ){
+
+    return;
+
+  }
+
+  const warningSigns =
+    spoilage.warningSigns || [];
+
+  const contaminants =
+    spoilage.commonContaminants || [];
+
+  const prevention =
+    spoilage.preventionPractices || [];
+
+  const html =
+`
+<div class="feed-tile feed-tile--danger">
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🚫
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Spoilage & Contamination
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${spoilage.summary || ""}
+
+</p>
+
+<h3>
+
+Warning Signs
+
+</h3>
+
+<ul>
+
+${warningSigns.map(function(item){
+
+return `
+<li>${item}</li>
+`;
+
+}).join("")}
+
+</ul>
+
+</div>
+
+<div
+class="feed-tile-extra"
+id="spoilage-extra"
+hidden
+>
+
+<h3>
+
+Common Contaminants
+
+</h3>
+
+<ul>
+
+${contaminants.map(function(item){
+
+return `
+<li>${item}</li>
+`;
+
+}).join("")}
+
+</ul>
+
+<h3>
+
+Prevention
+
+</h3>
+
+<ul>
+
+${prevention.map(function(item){
+
+return `
+<li>${item}</li>
+`;
+
+}).join("")}
+
+</ul>
+
+</div>
+
+<button
+class="feed-expand-button"
+type="button"
+data-expand-target="spoilage-extra"
+aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Common Feeding Mistakes
+------------------------------------------------------------ */
+
+function renderCommonFeedingMistakes(
+  crop
+){
+
+  const mistakes =
+    crop.feedingReference
+      .commonFeedingMistakes;
+
+  if(
+    !mistakes
+  ){
+
+    return;
+
+  }
+
+  const items =
+    mistakes.commonMistakes || [];
+
+  const prevention =
+    mistakes.preventionTips || [];
+
+  const html =
+`
+<div class="feed-tile feed-tile--caution">
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+❌
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Common Feeding Mistakes
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${mistakes.summary || ""}
+
+</p>
+
+<ul>
+
+${items.map(function(item){
+
+return `
+<li>
+
+<strong>
+
+${item.mistake}
+
+</strong>
+
+<br>
+
+${item.explanation}
+
+</li>
+`;
+
+}).join("")}
+
+</ul>
+
+</div>
+
+<div
+class="feed-tile-extra"
+id="feeding-mistakes-extra"
+hidden
+>
+
+<h3>
+
+How to Avoid Them
+
+</h3>
+
+<ul>
+
+${prevention.map(function(item){
+
+return `
+<li>${item}</li>
+`;
+
+}).join("")}
+
+</ul>
+
+</div>
+
+<button
+class="feed-expand-button"
+type="button"
+data-expand-target="feeding-mistakes-extra"
+aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+
 
 
 
