@@ -351,6 +351,37 @@ grid-template-columns:1fr;
   -webkit-line-clamp: 3;
 }
 
+.crop-guide-button {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: auto;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+
+  background: #eef6f0;
+
+  border: 1px solid #9fc6a7;
+
+  border-radius: 9px;
+
+  color: #1f5a31;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-weight: 750;
+
+  box-sizing: border-box;
+
+  transition: .2s;
+}
+
+.crop-guide-button:hover {
+  background: #dff0e3;
+}
+
 .crop-best-value {
   margin: 0 0 17px;
   padding: 13px;
@@ -1433,11 +1464,12 @@ function createCropCard(crop) {
          ${
       cropGuide
         ? `
-          <p style="margin:0 0 15px;">
-            <a href="${escapeHTML(cropGuide.url)}">
-              ${escapeHTML(cropGuide.label)}
-            </a>
-          </p>
+          <a
+  class="crop-guide-button"
+  href="${escapeHTML(cropGuide.url)}"
+>
+  📖 Complete Growing Guide
+</a>
         `
         : ""
     }
@@ -1447,7 +1479,7 @@ function createCropCard(crop) {
       class="crop-toggle-button"
       aria-expanded="false"
     >
-      View Crop Summary
+      📋 Quick Crop Profile
     </button>
 
     <div class="crop-details">
