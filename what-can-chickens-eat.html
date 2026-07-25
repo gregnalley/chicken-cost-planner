@@ -926,14 +926,14 @@ function populateCropSelector() {
 
   crops
     .slice()
-    .sort(function(a,b){
+    .sort(function(a, b) {
 
-      return a.label.localeCompare(
-        b.label
+      return a.name.localeCompare(
+        b.name
       );
 
     })
-    .forEach(function(crop){
+    .forEach(function(crop) {
 
       const option =
         document.createElement(
@@ -944,7 +944,7 @@ function populateCropSelector() {
         crop.id;
 
       option.textContent =
-        crop.label;
+        crop.name;
 
       cropSelect.appendChild(
         option
