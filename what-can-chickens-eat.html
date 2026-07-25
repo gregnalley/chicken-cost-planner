@@ -5660,32 +5660,20 @@ function renderScientificNotes(
   }
 
 
-  const nutritionalConsiderations =
-    Array.isArray(
-      scientificNotes.nutritionalConsiderations
-    )
-      ? scientificNotes.nutritionalConsiderations
-      : [];
+  function createList(
+    items
+  ){
 
+    if(
+      !Array.isArray(items) ||
+      items.length === 0
+    ){
 
-  const feedingConsiderations =
-    Array.isArray(
-      scientificNotes.feedingConsiderations
-    )
-      ? feedingConsiderations
-      : [];
+      return "";
 
+    }
 
-  const researchConsiderations =
-    Array.isArray(
-      scientificNotes.researchConsiderations
-    )
-      ? scientificNotes.researchConsiderations
-      : [];
-
-
-  const nutritionalHtml =
-    nutritionalConsiderations
+    return items
       .map(function(item){
 
         return `
@@ -5697,47 +5685,31 @@ function renderScientificNotes(
       })
       .join("");
 
-
-  const feedingHtml =
-    feedingConsiderations
-      .map(function(item){
-
-        return `
-          <li>
-            ${item}
-          </li>
-        `;
-
-      })
-      .join("");
+  }
 
 
   const researchHtml =
-    researchConsiderations
-      .map(function(item){
-
-        return `
-          <li>
-            ${item}
-          </li>
-        `;
-
-      })
-      .join("");
+    createList(
+      scientificNotes.researchNotes
+    );
 
 
-  const hasExtraContent =
-    Boolean(
-      nutritionalHtml ||
-      feedingHtml ||
-      researchHtml
+  const plannerHtml =
+    createList(
+      scientificNotes.plannerConsiderations
+    );
+
+
+  const futureResearchHtml =
+    createList(
+      scientificNotes.futureResearchTopics
     );
 
 
   const html =
 `
 <div
-  class="feed-tile feed-tile--wide feed-tile--information"
+class="feed-tile feed-tile--wide feed-tile--information"
 >
 
 <div class="feed-tile-header">
@@ -5759,36 +5731,47 @@ Scientific Notes
 
 <div class="feed-tile-preview">
 
-${scientificNotes.summary
-  ? `
-    <p>
-      ${scientificNotes.summary}
-    </p>
-  `
-  : ""
+
+${
+scientificNotes.taxonomy
+?
+`
+<p>
+
+<strong>
+Scientific Name:
+</strong>
+
+${scientificNotes.taxonomy.scientificName}
+
+</p>
+
+<p>
+
+<strong>
+Family:
+</strong>
+
+${scientificNotes.taxonomy.family}
+
+</p>
+`
+:
+""
 }
 
 
-${nutritionalHtml
-  ? `
-    <h3>
-      Nutritional Considerations
-    </h3>
+<p>
 
-    <ul>
-      ${nutritionalHtml}
-    </ul>
-  `
-  : ""
-}
+This section summarizes scientific research considerations,
+nutritional context, and planning factors related to this crop.
+
+</p>
 
 
 </div>
 
 
-
-${hasExtraContent
-  ? `
 
 <div
 class="feed-tile-extra"
@@ -5797,31 +5780,62 @@ hidden
 >
 
 
-${feedingHtml
-  ? `
-    <h3>
-      Feeding Considerations
-    </h3>
+${
+researchHtml
+?
+`
+<h3>
+Research Notes
+</h3>
 
-    <ul>
-      ${feedingHtml}
-    </ul>
-  `
-  : ""
+<ul>
+
+${researchHtml}
+
+</ul>
+`
+:
+""
 }
 
 
-${researchHtml
-  ? `
-    <h3>
-      Research Considerations
-    </h3>
 
-    <ul>
-      ${researchHtml}
-    </ul>
-  `
-  : ""
+${
+plannerHtml
+?
+`
+<h3>
+Planner Considerations
+</h3>
+
+<ul>
+
+${plannerHtml}
+
+</ul>
+`
+:
+""
+}
+
+
+
+${
+futureResearchHtml
+?
+`
+<h3>
+Future Research Topics
+</h3>
+
+<ul>
+
+${futureResearchHtml}
+
+</ul>
+`
+:
+""
 }
 
 
@@ -5839,23 +5853,20 @@ Show More
 
 </button>
 
-`
-  : ""
-}
-
 
 </div>
 `;
 
 
-  document
-    .getElementById(
-      "feed-tile-grid"
-    )
-    .insertAdjacentHTML(
-      "beforeend",
-      html
-    );
+document
+.getElementById(
+"feed-tile-grid"
+)
+.insertAdjacentHTML(
+"beforeend",
+html
+);
+
 
 }
 
@@ -5871,6 +5882,7 @@ function renderExpertSummary(
     crop.feedingReference
       .expertSummary;
 
+
   if(
     !expertSummary
   ){
@@ -5880,32 +5892,21 @@ function renderExpertSummary(
   }
 
 
-  const strengths =
-    Array.isArray(
-      expertSummary.keyStrengths
-    )
-      ? expertSummary.keyStrengths
-      : [];
+  function createList(
+    items
+  ){
+
+    if(
+      !Array.isArray(items) ||
+      items.length === 0
+    ){
+
+      return "";
+
+    }
 
 
-  const cautions =
-    Array.isArray(
-      expertSummary.keyCautions
-    )
-      ? expertSummary.keyCautions
-      : [];
-
-
-  const bestUses =
-    Array.isArray(
-      expertSummary.bestUses
-    )
-      ? expertSummary.bestUses
-      : [];
-
-
-  const strengthHtml =
-    strengths
+    return items
       .map(function(item){
 
         return `
@@ -5917,45 +5918,34 @@ function renderExpertSummary(
       })
       .join("");
 
-
-  const cautionHtml =
-    cautions
-      .map(function(item){
-
-        return `
-          <li>
-            ${item}
-          </li>
-        `;
-
-      })
-      .join("");
+  }
 
 
-  const bestUsesHtml =
-    bestUses
-      .map(function(item){
+  const reasoningHtml =
+    createList(
+      expertSummary.recommendationReasoning
+    );
 
-        return `
-          <li>
-            ${item}
-          </li>
-        `;
 
-      })
-      .join("");
+  const notRecommendedHtml =
+    createList(
+      expertSummary.notRecommendedAs
+    );
 
 
   const html =
 `
 <div
-  class="feed-tile feed-tile--wide feed-tile--safe"
+class="feed-tile feed-tile--wide feed-tile--safe"
 >
+
 
 <div class="feed-tile-header">
 
 <div class="feed-tile-icon">
+
 🐔
+
 </div>
 
 <div class="feed-tile-title">
@@ -5969,35 +5959,27 @@ Expert Summary
 </div>
 
 
+
 <div class="feed-tile-preview">
 
 
-${expertSummary.summary
-  ? `
-    <p class="feed-expert-summary">
+<p class="feed-expert-summary">
 
-      ${expertSummary.summary}
+${expertSummary.oneSentence}
 
-    </p>
-  `
-  : ""
-}
+</p>
 
 
-${expertSummary.recommendation
-  ? `
-    <p>
 
-      <strong>
-        Overall Recommendation:
-      </strong>
+<p>
 
-      ${expertSummary.recommendation}
+<strong>
+Overall Recommendation:
+</strong>
 
-    </p>
-  `
-  : ""
-}
+${expertSummary.recommendation}
+
+</p>
 
 
 </div>
@@ -6011,71 +5993,87 @@ hidden
 >
 
 
-${strengthHtml
-  ? `
-    <h3>
-      Why This Crop Works Well
-    </h3>
+${
+expertSummary.oneParagraph
+?
+`
+<h3>
+Expert Overview
+</h3>
 
-    <ul>
+<p>
 
-      ${strengthHtml}
+${expertSummary.oneParagraph}
 
-    </ul>
-  `
-  : ""
+</p>
+`
+:
+""
 }
 
 
-${bestUsesHtml
-  ? `
-    <h3>
-      Best Backyard Uses
-    </h3>
 
-    <ul>
+${
+reasoningHtml
+?
+`
+<h3>
+Why This Crop Works Well
+</h3>
 
-      ${bestUsesHtml}
+<ul>
 
-    </ul>
-  `
-  : ""
+${reasoningHtml}
+
+</ul>
+`
+:
+""
 }
 
 
-${cautionHtml
-  ? `
-    <h3>
-      Important Considerations
-    </h3>
 
-    <ul>
+${
+expertSummary.idealUseCase
+?
+`
+<h3>
+Ideal Use Case
+</h3>
 
-      ${cautionHtml}
+<p>
 
-    </ul>
-  `
-  : ""
+${expertSummary.idealUseCase}
+
+</p>
+`
+:
+""
 }
 
 
-${expertSummary.finalRecommendation
-  ? `
-    <h3>
-      Final Recommendation
-    </h3>
 
-    <p>
+${
+notRecommendedHtml
+?
+`
+<h3>
+Not Recommended As
+</h3>
 
-      ${expertSummary.finalRecommendation}
+<ul>
 
-    </p>
-  `
-  : ""
+${notRecommendedHtml}
+
+</ul>
+`
+:
+""
 }
 
 
 </div>
+
 
 
 <button
@@ -6094,16 +6092,21 @@ Show More
 `;
 
 
-  document
-    .getElementById(
-      "feed-tile-grid"
-    )
-    .insertAdjacentHTML(
-      "beforeend",
-      html
-    );
+document
+.getElementById(
+"feed-tile-grid"
+)
+.insertAdjacentHTML(
+"beforeend",
+html
+);
+
 
 }
+
+
+
+
 
 
 document
