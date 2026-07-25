@@ -922,7 +922,16 @@ function getCropCollection() {
 function populateCropSelector() {
 
   const crops =
-    getCropCollection();
+    getCropCollection()
+      .filter(function(crop) {
+
+        return Boolean(
+          crop &&
+          crop.feedingReference &&
+          crop.feedingReference.overview
+        );
+
+      });
 
   crops
     .slice()
@@ -1040,8 +1049,43 @@ function loadCropReference(
   crop
 ){
 
+  if(
+    !crop ||
+    !crop.feedingReference ||
+    !crop.feedingReference.overview
+  ){
+
+    resultsSection.hidden =
+      true;
+
+    pageMessage.hidden =
+      false;
+
+    pageMessage.textContent =
+      "A complete feeding reference has not yet been added for this crop.";
+
+    pageMessage.classList.add(
+      "is-error"
+    );
+
+    return;
+
+  }
+
+  pageMessage.hidden =
+    true;
+
+  pageMessage.classList.remove(
+    "is-error"
+  );
+
   resultsSection.hidden =
     false;
+
+  document.getElementById(
+    "feed-tile-grid"
+  ).innerHTML =
+    "";
 
   renderSummary(
     crop
