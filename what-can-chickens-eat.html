@@ -901,15 +901,17 @@ const resultsSection =
 function getCropCollection() {
 
   if (
-    window.BCP_FEED_CROPS &&
-    Array.isArray(window.BCP_FEED_CROPS)
+    typeof BCP_FEED_CROPS ===
+    "undefined"
   ) {
 
-    return window.BCP_FEED_CROPS;
+    return [];
 
   }
 
-  return [];
+  return Object.values(
+    BCP_FEED_CROPS
+  );
 
 }
 
