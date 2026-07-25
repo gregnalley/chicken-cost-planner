@@ -5105,78 +5105,297 @@ function renderTroubleshooting(
       .troubleshooting;
 
   if(
-    !troubleshooting
+    !troubleshooting ||
+    typeof troubleshooting !==
+      "object"
   ){
 
     return;
 
   }
 
-  const commonIssues =
-    Array.isArray(
-      troubleshooting.commonIssues
-    )
-      ? troubleshooting.commonIssues
-      : [];
+  function createTextList(
+    items
+  ){
 
-  const issueHtml =
-    commonIssues
-      .map(function(issue){
+    if(
+      !Array.isArray(
+        items
+      ) ||
+      items.length === 0
+    ){
+
+      return "";
+
+    }
+
+    return items
+      .map(function(item){
 
         return `
-<li>
-
-<strong>
-
-${issue.problem}
-
-</strong>
-
-<br>
-
-${issue.likelyCause}
-
-</li>
-`;
+          <li>
+            ${item}
+          </li>
+        `;
 
       })
       .join("");
 
-  const expandedHtml =
-    commonIssues
-      .map(function(issue){
+  }
+
+  function formatIssueTitle(
+    key
+  ){
+
+    return key
+      .replace(
+        /([a-z])([A-Z])/g,
+        "$1 $2"
+      )
+      .replace(
+        /-/g,
+        " "
+      )
+      .replace(
+        /\s+/g,
+        " "
+      )
+      .trim()
+      .replace(
+        /\b\w/g,
+        function(character){
+
+          return character
+            .toUpperCase();
+
+        }
+      );
+
+  }
+
+  const issueEntries =
+    Object.entries(
+      troubleshooting
+    )
+      .filter(function(entry){
+
+        const issue =
+          entry[1];
+
+        return (
+          issue &&
+          typeof issue ===
+            "object" &&
+          !Array.isArray(
+            issue
+          )
+        );
+
+      });
+
+  if(
+    issueEntries.length === 0
+  ){
+
+    return;
+
+  }
+
+  const previewIssues =
+    issueEntries
+      .slice(
+        0,
+        3
+      )
+      .map(function(entry){
+
+        const key =
+          entry[0];
+
+        const issue =
+          entry[1];
+
+        const issueTitle =
+          formatIssueTitle(
+            key
+          );
+
+        const likelyCause =
+          issue.likelyCause ||
+          "";
+
+        const possibleCauses =
+          Array.isArray(
+            issue.possibleCauses
+          )
+            ? issue.possibleCauses
+            : [];
+
+        const likelyCauses =
+          Array.isArray(
+            issue.likelyCauses
+          )
+            ? issue.likelyCauses
+            : [];
+
+        const possibleInterpretations =
+          Array.isArray(
+            issue.possibleInterpretations
+          )
+            ? issue.possibleInterpretations
+            : [];
+
+        const firstExplanation =
+          likelyCause ||
+          possibleCauses[0] ||
+          likelyCauses[0] ||
+          possibleInterpretations[0] ||
+          "";
 
         return `
-<div class="feed-troubleshooting-item">
+          <li>
 
-<h3>
+            <strong>
+              ${issueTitle}
+            </strong>
 
-${issue.problem}
+            ${firstExplanation
+              ? `
+                <br>
 
-</h3>
+                ${firstExplanation}
+              `
+              : ""
+            }
 
-<p>
+          </li>
+        `;
 
-<strong>
-Likely Cause:
-</strong>
+      })
+      .join("");
 
-${issue.likelyCause}
+  const detailedIssues =
+    issueEntries
+      .map(function(entry){
 
-</p>
+        const key =
+          entry[0];
 
-<p>
+        const issue =
+          entry[1];
 
-<strong>
-Suggested Solution:
-</strong>
+        const issueTitle =
+          formatIssueTitle(
+            key
+          );
 
-${issue.solution}
+        const possibleCausesHtml =
+          createTextList(
+            issue.possibleCauses
+          );
 
-</p>
+        const likelyCausesHtml =
+          createTextList(
+            issue.likelyCauses
+          );
 
-</div>
-`;
+        const interpretationHtml =
+          createTextList(
+            issue.possibleInterpretations
+          );
+
+        const recommendedActionsHtml =
+          createTextList(
+            issue.recommendedActions
+          );
+
+        return `
+          <div class="feed-troubleshooting-item">
+
+            <h3>
+              ${issueTitle}
+            </h3>
+
+            ${issue.likelyCause
+              ? `
+                <h4>
+                  Likely Cause
+                </h4>
+
+                <p>
+                  ${issue.likelyCause}
+                </p>
+              `
+              : ""
+            }
+
+            ${possibleCausesHtml
+              ? `
+                <h4>
+                  Possible Causes
+                </h4>
+
+                <ul>
+                  ${possibleCausesHtml}
+                </ul>
+              `
+              : ""
+            }
+
+            ${likelyCausesHtml
+              ? `
+                <h4>
+                  Likely Causes
+                </h4>
+
+                <ul>
+                  ${likelyCausesHtml}
+                </ul>
+              `
+              : ""
+            }
+
+            ${interpretationHtml
+              ? `
+                <h4>
+                  Possible Interpretations
+                </h4>
+
+                <ul>
+                  ${interpretationHtml}
+                </ul>
+              `
+              : ""
+            }
+
+            ${recommendedActionsHtml
+              ? `
+                <h4>
+                  Recommended Actions
+                </h4>
+
+                <ul>
+                  ${recommendedActionsHtml}
+                </ul>
+              `
+              : ""
+            }
+
+            ${issue.recommendedAction
+              ? `
+                <h4>
+                  Recommended Action
+                </h4>
+
+                <p>
+                  ${issue.recommendedAction}
+                </p>
+              `
+              : ""
+            }
+
+          </div>
+        `;
 
       })
       .join("");
@@ -5184,7 +5403,7 @@ ${issue.solution}
   const html =
 `
 <div
-class="feed-tile feed-tile--wide feed-tile--caution"
+  class="feed-tile feed-tile--wide feed-tile--caution"
 >
 
 <div class="feed-tile-header">
@@ -5196,9 +5415,7 @@ class="feed-tile feed-tile--wide feed-tile--caution"
 <div class="feed-tile-title">
 
 <h2>
-
 Troubleshooting
-
 </h2>
 
 </div>
@@ -5208,38 +5425,40 @@ Troubleshooting
 <div class="feed-tile-preview">
 
 <p>
-
-${troubleshooting.summary || ""}
-
+  Use these common problems and corrective steps to identify feeding, storage, acceptance, competition, and flock-management issues related to this crop.
 </p>
 
+<h3>
+Common Problems
+</h3>
+
 <ul>
-
-${issueHtml}
-
+  ${previewIssues}
 </ul>
 
 </div>
 
 <div
-class="feed-tile-extra"
-id="troubleshooting-extra"
-hidden
+  class="feed-tile-extra"
+  id="troubleshooting-extra"
+  hidden
 >
 
-${expandedHtml}
+<h3>
+Problems, Causes, and Recommended Actions
+</h3>
+
+${detailedIssues}
 
 </div>
 
 <button
-class="feed-expand-button"
-type="button"
-data-expand-target="troubleshooting-extra"
-aria-expanded="false"
+  class="feed-expand-button"
+  type="button"
+  data-expand-target="troubleshooting-extra"
+  aria-expanded="false"
 >
-
-Show More
-
+  Show More
 </button>
 
 </div>
