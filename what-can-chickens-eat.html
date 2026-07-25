@@ -5488,58 +5488,78 @@ function renderFAQ(
       .faq;
 
   if(
-    !faq ||
     !Array.isArray(
-      faq.questions
-    )
+      faq
+    ) ||
+    faq.length === 0
   ){
 
     return;
 
   }
 
-  const questions =
-    faq.questions
-      .map(function(item,index){
+
+  const previewQuestions =
+    faq
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
 
         return `
-<div class="feed-faq-item">
+          <div class="feed-faq-item">
 
-<button
-class="feed-faq-button"
-type="button"
-data-faq-target="faq-answer-${index}"
-aria-expanded="false"
->
+            <h3>
+              ${item.question}
+            </h3>
 
-${item.question}
+            <p>
+              ${item.answer}
+            </p>
 
-</button>
-
-<div
-class="feed-faq-answer"
-id="faq-answer-${index}"
-hidden
->
-
-<p>
-
-${item.answer}
-
-</p>
-
-</div>
-
-</div>
-`;
+          </div>
+        `;
 
       })
       .join("");
 
+
+  const remainingQuestions =
+    faq
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <div class="feed-faq-item">
+
+            <h3>
+              ${item.question}
+            </h3>
+
+            <p>
+              ${item.answer}
+            </p>
+
+          </div>
+        `;
+
+      })
+      .join("");
+
+
+  const hasExtraContent =
+    Boolean(
+      remainingQuestions
+    );
+
+
   const html =
 `
 <div
-class="feed-tile feed-tile--wide feed-tile--information"
+  class="feed-tile feed-tile--information"
 >
 
 <div class="feed-tile-header">
@@ -5551,19 +5571,54 @@ class="feed-tile feed-tile--wide feed-tile--information"
 <div class="feed-tile-title">
 
 <h2>
-
 Frequently Asked Questions
-
 </h2>
 
 </div>
 
 </div>
 
-${questions}
+
+<div class="feed-tile-preview">
+
+${previewQuestions}
+
+</div>
+
+
+${hasExtraContent
+  ? `
+
+<div
+  class="feed-tile-extra"
+  id="faq-extra"
+  hidden
+>
+
+${remainingQuestions}
+
+</div>
+
+
+<button
+  class="feed-expand-button"
+  type="button"
+  data-expand-target="faq-extra"
+  aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+`
+  : ""
+}
+
 
 </div>
 `;
+
 
   document
     .getElementById(
