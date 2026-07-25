@@ -87,16 +87,22 @@ window.BCP_PRODUCTS = {
   title:
     "Large Plastic Hanging Chicken Feeder - 25 lbs.",
 
-   testMarker:
-  "THIS_IS_PRD002", 
-
   description:
-    "A hanging feeder is one of the simplest upgrades for a backyard flock because it helps keep feed cleaner, reduces waste, and keeps chickens from scratching bedding into their feed.",
+    "A large hanging feeder is a straightforward and affordable option for small and medium backyard flocks. Suspending the feeder above the floor can help keep bedding out of the feed while reducing scratching and spilled-feed waste.",
+
+  shortDescription:
+    "Affordable large-capacity hanging feeder for small and medium flocks.",
+
+  tileBadge:
+    "Budget Pick",
+
+  tileButtonText:
+    "View Price →",
 
   bullets: [
-    "Good for small to medium flocks",
+    "Good capacity for small and medium flocks",
     "Easy to refill and clean",
-    "Affordable beginner option"
+    "Affordable option for first-time chicken keepers"
   ],
 
   buttonText:
@@ -124,6 +130,8 @@ window.BCP_PRODUCTS = {
         "feeding",
         "feed-waste",
         "clean-feed",
+        "easy-refill",
+        "low-maintenance",
         "backyard-flock"
       ],
 
