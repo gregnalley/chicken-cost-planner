@@ -55,6 +55,25 @@ console.log(
       .recommendationData
 );
 
+console.log(
+  "Products with recommendationData:",
+  Object.entries(
+    window.BCP_PRODUCTS || {}
+  )
+    .filter(function (entry) {
+      const product =
+        entry[1];
+
+      return Boolean(
+        product &&
+        product.recommendationData
+      );
+    })
+    .map(function (entry) {
+      return entry[0];
+    })
+);
+
 if (
   recommendedProductsContainer &&
   typeof window.renderRecommendedProducts ===
