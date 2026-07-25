@@ -39,7 +39,3092 @@ const BCP_FEED_CROPS = {
     summary:
       "Sunflower is a warm-season annual oilseed crop that can provide highly energy-dense seeds, moderate protein, valuable unsaturated oils, winter feed storage, seasonal enrichment, pollinator habitat, wildlife value, cut flowers, and ornamental appeal. For backyard poultry, mature seeds and dried seed heads are the primary feed products, although sunflower should always remain a supplemental feed because of its high fat content, variable hull percentage, amino-acid limitations, and inability to provide a complete balanced poultry ration by itself.",
 
-    chickenUse: {
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Sunflowers?",
+
+        answerLabel:
+          "Yes — mature Sunflower seeds and seed heads are safe supplemental feeds for established adult chickens.",
+
+        quickAnswer:
+          "Chickens can safely eat clean, mature Sunflower seeds, kernels, cracked seed, and mature seed heads. Sunflower is especially useful as a high-energy treat, cold-weather supplement, stored seasonal feed, and flock-enrichment crop. Because the seeds are rich in oil and calories, they should be offered in moderation and should never replace a nutritionally complete poultry ration.",
+
+        detailedAnswer:
+          "Sunflower is one of the most practical homegrown oilseed crops for established adult chickens. Its mature seeds contain concentrated vegetable oil, substantial energy, moderate protein, vitamin E, minerals, and fatty acids. Whole mature heads can also provide valuable behavioral enrichment by allowing chickens to remove the seeds through natural pecking and foraging. However, Sunflower seed is not a complete poultry feed. It is relatively high in fat, whole seeds contain considerable hull fiber, its amino-acid balance is incomplete, and it does not provide the calcium, vitamins, minerals, or overall nutrient balance required as the flock's primary ration. Sunflower should therefore be used as a measured supplement, occasional treat, enrichment item, or properly formulated feed ingredient rather than as unrestricted staple food.",
+
+        primaryFeedingRole:
+          "High-energy oilseed supplement and whole-head enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Cold-weather calorie supplementation",
+          "Stored winter treat",
+          "Natural pecking enrichment",
+          "Seasonal garden-to-flock feed",
+          "Moderate supplemental protein",
+          "Supplemental source of vegetable oil",
+          "Homestead-grown birdseed",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Highly recommended as a supplemental crop for established adult chickens when mature seed is harvested, dried, stored, and fed correctly.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-sunflowers-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal",
+
+        primaryProductType:
+          "mature-oilseed",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          5,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          4,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          5,
+
+        proteinValueScore:
+          3,
+
+        enrichmentValueScore:
+          5,
+
+        winterValueScore:
+          5,
+
+        storageValueScore:
+          4,
+
+        preparationSimplicityScore:
+          4,
+
+        portionControlEaseScore:
+          3,
+
+        beginnerFriendlinessScore:
+          4,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          3,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Sunflower's practical value as a supplemental backyard-chicken feed rather than as a complete ration.",
+          "The high overall score reflects strong energy, enrichment, storage, and winter value.",
+          "The feeding-safety score is reduced slightly because excessive intake can displace balanced feed and contribute too much dietary fat.",
+          "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration and may have difficulty handling whole seeds.",
+          "Whole heads provide excellent enrichment but make exact portion measurement more difficult.",
+          "Loose seed is easier to measure but requires more harvesting, drying, cleaning, and storage labor."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean, mature Sunflower seeds and mature seed heads are safe for established adult chickens when offered as supplemental food. The principal concerns are excessive fat and calorie intake, displacement of complete feed, poor-quality or contaminated seed, and inappropriate commercial snack or planting-seed products.",
+
+        whyModerationIsRequired:
+          "Sunflower seed contains a high concentration of oil and calories. Chickens may preferentially consume it instead of their balanced feed, particularly when it is offered freely. Excessive intake can dilute protein, amino acids, calcium, vitamins, and trace minerals supplied by the complete ration and may contribute to unwanted weight gain or excessive dietary fat.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Sunflower seeds",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound, fully developed whole seeds may be offered to established adult chickens as a measured supplement. The hull increases fiber and reduces nutrient density compared with a dehulled kernel."
+          },
+
+          {
+            item:
+              "Dehulled Sunflower kernels",
+
+            status:
+              "safe",
+
+            explanation:
+              "Plain, unsalted kernels are safe and nutrient dense. Because removing the hull concentrates the kernel's oil, calories, and usable nutrients, kernels should be portioned carefully."
+          },
+
+          {
+            item:
+              "Cracked mature Sunflower seed",
+
+            status:
+              "safe",
+
+            explanation:
+              "Cracked seed is safe when freshly prepared from clean mature seed. Cracking exposes the oil-rich kernel to oxygen and moisture, so cracked seed should be stored for less time than intact seed."
+          },
+
+          {
+            item:
+              "Coarsely ground mature Sunflower seed",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Ground seed may be used promptly as a supplemental ingredient or in a properly formulated ration. Grinding greatly increases exposed surface area and therefore accelerates oxidation, moisture absorption, and rancidity."
+          },
+
+          {
+            item:
+              "Fresh mature seed heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "A mature head containing fully developed, sound seed may be offered soon after harvest when it is clean, dry on the surface, free of disease, and not beginning to spoil."
+          },
+
+          {
+            item:
+              "Thoroughly dried mature seed heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "Dried whole heads are an excellent enrichment form when they have cured thoroughly and remain free from mold, insects, rodent contamination, and rancid seed."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, colorants, polymers, or other treatments that are not intended for animal consumption."
+          },
+
+          {
+            item:
+              "Moldy or musty seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, damp clumping, abnormal discoloration, or fungal growth indicates unsafe deterioration. Questionable material should be discarded rather than blended with sound seed."
+          },
+
+          {
+            item:
+              "Rancid seed or kernels",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "High-oil seed can oxidize during poor storage. Stale, bitter, paint-like, sharp, soapy, or otherwise abnormal odors and flavors may indicate rancidity."
+          },
+
+          {
+            item:
+              "Salted or seasoned snack seeds",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Human snack products may contain excessive sodium, oils, sweeteners, spices, artificial flavorings, or other ingredients unnecessary or unsuitable for chickens."
+          },
+
+          {
+            item:
+              "Chocolate-coated, candy-coated, or artificially sweetened products",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Confectionery products are not equivalent to plain Sunflower seed and may contain ingredients that should not be offered to poultry."
+          },
+
+          {
+            item:
+              "Rodent-contaminated seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Seed contaminated by rodent urine, feces, nesting material, or carcasses should be discarded because of disease and contamination risks."
+          },
+
+          {
+            item:
+              "Heated, damp, insect-infested, or fermenting stored seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heating, condensation, fermentation odors, extensive insect activity, or persistent dampness indicates unstable storage and possible spoilage."
+          },
+
+          {
+            item:
+              "Diseased or rotting seed heads",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heads affected by rot, extensive fungal growth, soft decay, or suspicious internal discoloration should not be fed."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Sunflower is highly palatable and may cause birds to reduce consumption of their nutritionally complete feed."
+          },
+
+          {
+            hazard:
+              "Excessive calorie and fat intake",
+
+            riskLevel:
+              "moderate-to-high-when-unrestricted",
+
+            explanation:
+              "The concentrated oil content makes Sunflower valuable for energy but inappropriate as an unrestricted staple."
+          },
+
+          {
+            hazard:
+              "Mold and storage deterioration",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Insufficient drying or exposure to moisture may allow heating, fungal growth, spoilage, or insect activity."
+          },
+
+          {
+            hazard:
+              "Rancidity",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Oxygen, heat, light, moisture, and physical damage accelerate deterioration of the oil-rich kernel."
+          },
+
+          {
+            hazard:
+              "Hull fiber",
+
+            riskLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Whole seeds contain substantial fibrous hull material. Hulls are not toxic, but they reduce nutrient density and are less useful to young or nutritionally stressed birds."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A single whole head may create crowding or allow dominant birds to monopolize access."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Loose seeds or kernels scattered into damp litter may become soiled, moldy, rancid, or attractive to rodents and insects."
+          },
+
+          {
+            hazard:
+              "Entanglement from hanging materials",
+
+            riskLevel:
+              "low-but-preventable",
+
+            explanation:
+              "String, wire, netting, or other materials used to suspend seed heads must not form loops or loose sections that could trap feet, legs, wings, necks, or wild birds."
+          }
+        ],
+
+        emergencyUse:
+          "Sunflower seed can provide concentrated short-term energy, but it is not a nutritionally complete emergency ration. It should be combined with an appropriate complete poultry feed or a ration formulated to meet poultry requirements.",
+
+        veterinaryCaution:
+          "Birds with obesity, fatty-liver concerns, restricted-energy diets, crop or digestive disorders, or other medical conditions may require individualized feeding guidance from a poultry veterinarian."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-supplement",
+
+          preferredForms: [
+            "Whole mature seeds",
+            "Plain dehulled kernels",
+            "Fresh mature seed heads",
+            "Thoroughly dried seed heads",
+            "Freshly cracked seeds",
+            "Coarsely ground seed used promptly"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for whole Sunflower seed and whole-head enrichment. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Concentrated supplemental energy",
+            "Cold-weather calorie support",
+            "Behavioral enrichment",
+            "Supplemental fat and linoleic acid",
+            "Moderate supplemental protein"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Excessive intake may displace amino acids, vitamins, minerals, and calcium",
+            "High-calorie intake may contribute to excessive body condition"
+          ],
+
+          guidance:
+            "Laying hens may receive Sunflower as a supplement, but a complete layer feed and an appropriate calcium program must remain the nutritional foundation."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult supplements may receive small amounts, but their nutritionally complete grower or developer ration should remain dominant. Whole large seeds should not be used as a major feed."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Whole Sunflower seeds are relatively large, high in fat, fibrous because of the hull, and difficult to incorporate safely without altering the balance of the starter ration.",
+
+          possibleException:
+            "A qualified poultry nutritionist may use appropriately processed Sunflower ingredients in a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering whole seed or kernels as an informal backyard treat.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Large whole-seed size",
+            "High fat and calorie concentration",
+            "Hull fiber",
+            "Incomplete amino-acid balance",
+            "Need for age-appropriate particle size",
+            "Need for appropriately sized grit when insoluble whole material is offered"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Sunflower can be used in balanced meat-bird diets, but published inclusion levels assume that the complete ration has been formulated for energy, protein, amino acids, fiber, minerals, and vitamins. Backyard keepers should not copy a commercial inclusion percentage into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume the same clean mature seed forms as adult hens. Portion control remains important because roosters do not require a high-calcium layer ration and may gain unnecessary weight from unrestricted energy-dense treats."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Sunflower as a supplement, but reproductive performance depends on complete and balanced nutrition. Excessive seed intake should not dilute essential amino acids, vitamins, minerals, or controlled body condition."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may require smaller amounts because Sunflower provides concentrated calories. Body condition and complete-feed intake should be monitored."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Sunflower supplies energy and moderate protein but does not provide a complete amino-acid profile for feather growth. A balanced ration with adequate usable protein and amino acids remains more important than simply increasing seed intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Sunflower's energy density may appear useful for an underweight bird, but illness can change nutritional and digestive needs. It should not replace diagnostic care, hydration support, or a veterinarian-recommended recovery diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature whole seeds",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fully mature whole seeds are the standard poultry-feed product. The hull contributes fiber while protecting the oil-rich kernel during storage."
+          },
+
+          {
+            part:
+              "Dehulled seed kernels",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Plain dehulled kernels provide greater nutrient density because the fibrous hull has been removed. Their higher exposed oil content also makes careful storage more important."
+          },
+
+          {
+            part:
+              "Fresh mature seed heads",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fresh mature heads provide outstanding behavioral enrichment while allowing birds to harvest seeds naturally."
+          },
+
+          {
+            part:
+              "Thoroughly dried seed heads",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Properly dried heads store well and remain one of the easiest ways to provide winter enrichment."
+          },
+
+          {
+            part:
+              "Freshly cracked mature seeds",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Cracking improves access to the kernel but shortens storage life because exposed oils oxidize more rapidly."
+          },
+
+          {
+            part:
+              "Freshly ground mature seed",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Ground seed blends more uniformly into feed mixtures but should be prepared only in small quantities because oxidation begins much sooner."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Mature stalks",
+
+            reason:
+              "Extremely fibrous with little practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Mature leaves",
+
+            reason:
+              "Provide minimal nutritional benefit compared with dedicated forage crops."
+          },
+
+          {
+            part:
+              "Roots",
+
+            reason:
+              "No practical poultry-feed use."
+          },
+
+          {
+            part:
+              "Empty harvested heads",
+
+            reason:
+              "Useful for compost but contain little remaining nutrition."
+          },
+
+          {
+            part:
+              "Loose hulls",
+
+            reason:
+              "High in fiber and very low in usable nutrition."
+          }
+        ],
+
+        ediblePartSummary:
+          "Nearly all of Sunflower's poultry value comes from the mature seed itself rather than the vegetative portions of the plant."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Whole mature seed heads",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Behavioral enrichment and seasonal treats."
+          },
+
+          {
+            form:
+              "Whole mature seeds",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Measured supplemental feeding."
+          },
+
+          {
+            form:
+              "Plain dehulled kernels",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "High-energy supplemental feed requiring careful portion control."
+          },
+
+          {
+            form:
+              "Freshly cracked seed",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Birds needing easier access to the kernel."
+          },
+
+          {
+            form:
+              "Freshly ground seed",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Feed ingredient used immediately after grinding."
+          }
+        ],
+
+        acceptableForms: [
+          "Fresh mature seed heads",
+          "Naturally dried seed heads",
+          "Whole mature seed",
+          "Black-oil sunflower seed",
+          "Confection sunflower seed",
+          "Shelled kernels",
+          "Freshly cracked seed",
+          "Freshly ground seed"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Ground seed",
+
+            concern:
+              "Rapid oxidation and shortened storage life."
+          },
+
+          {
+            form:
+              "Cracked seed",
+
+            concern:
+              "Exposed oils become rancid more quickly."
+          },
+
+          {
+            form:
+              "Dehulled kernels",
+
+            concern:
+              "Higher calorie density and reduced storage stability."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Moldy seed",
+          "Musty seed",
+          "Rancid seed",
+          "Fermenting seed",
+          "Wet stored seed",
+          "Salted snack seed",
+          "Roasted salted kernels",
+          "Seasoned snack products",
+          "Chocolate-coated products",
+          "Candy-coated products",
+          "Artificially sweetened products",
+          "Rodent-contaminated seed",
+          "Heavily insect-damaged seed"
+        ],
+
+        wholeHeadAdvantages: [
+          "Excellent enrichment",
+          "Encourages natural foraging",
+          "Minimal processing",
+          "Reduced storage labor",
+          "Very enjoyable for backyard flocks",
+          "Excellent winter activity"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Simple to mix with other feeds",
+          "Reduced competition between birds",
+          "More precise ration management"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Hard to estimate actual consumption",
+          "Dominant birds may monopolize access",
+          "Seed loss beneath feeders is common",
+          "Requires removal if mold develops"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires additional processing",
+          "Requires cleaning",
+          "Requires drying",
+          "Requires rodent-proof storage",
+          "Greater spoilage potential if scattered into damp litter"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Not all Sunflowers produce identical poultry feed. Oil content, hull thickness, seed size, and nutritional density vary among cultivar groups.",
+
+        blackOilSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Black-oil Sunflowers generally produce thinner hulls, relatively high oil concentration, and are widely regarded as one of the best seed types for feeding birds."
+        },
+
+        confectionSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Confection varieties produce larger seeds that are excellent for both people and poultry, although their hull proportion and oil concentration may differ from black-oil types."
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Many ornamental cultivars produce useful seed, but pollen-free cut-flower varieties may produce little or no harvestable seed."
+        },
+
+        pollenFreeCultivars: {
+          recommended:
+            false,
+
+          explanation:
+            "Pollen-free cut-flower cultivars are generally poor choices when poultry feed production is the primary objective."
+        },
+
+        branchingCultivars: {
+          advantages: [
+            "Longer flowering season",
+            "Multiple smaller seed heads"
+          ]
+        },
+
+        giantSingleHeadCultivars: {
+          advantages: [
+            "Large enrichment heads",
+            "Impressive seasonal harvest"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "low",
+
+        preparationSummary:
+          "Sunflower requires relatively little preparation compared with many feed crops. Proper harvest timing, drying, and storage are far more important than cooking or processing.",
+
+        requiredPreparation: [
+          "Allow heads to mature completely.",
+          "Harvest before prolonged wet weather whenever practical.",
+          "Dry thoroughly with excellent airflow.",
+          "Inspect carefully for mold or insects.",
+          "Store only completely dry material."
+        ],
+
+        optionalPreparation: [
+          "Remove seeds from heads for measured feeding.",
+          "Crack seed for easier access.",
+          "Grind immediately before use.",
+          "Separate damaged seed during cleaning."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Heat treatment"
+        ],
+
+        preparationMistakes: [
+          "Harvesting before seed maturity.",
+          "Storing damp heads.",
+          "Grinding large quantities long before feeding.",
+          "Leaving harvested heads exposed to rain.",
+          "Failing to inspect stored seed regularly."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "high-energy-high-fat-oilseed-supplement",
+
+        nutritionSummary:
+          "Mature Sunflower seed is an energy-dense oilseed containing substantial vegetable oil, moderate protein, essential fatty acids, vitamin E, phosphorus, magnesium, copper, manganese, selenium, and other nutrients. Its primary practical value for chickens comes from concentrated energy and fat rather than from complete protein, calcium, or balanced-ration nutrition.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary substantially among whole in-shell seed, dehulled kernels, black-oil seed, confection seed, high-oleic cultivars, high-linoleic cultivars, cracked seed, ground seed, and Sunflower meal. These products must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Concentrated dietary energy",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Sunflower stores much of its energy as vegetable oil rather than starch. This makes mature seed substantially more calorie dense than most homegrown cereal grains."
+          },
+
+          {
+            nutrientRole:
+              "Unsaturated vegetable oil",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "The kernel contains a large quantity of oil, commonly rich in linoleic acid or oleic acid depending on cultivar type."
+          },
+
+          {
+            nutrientRole:
+              "Moderate plant protein",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Whole Sunflower seed contributes useful protein, but it should not be classified as a high-protein replacement for properly balanced soybean meal or complete poultry feed."
+          },
+
+          {
+            nutrientRole:
+              "Vitamin E",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Sunflower kernels are recognized as a useful source of vitamin E, although the amount available to the flock varies with cultivar, storage, oxidation, processing, and the quantity actually consumed."
+          },
+
+          {
+            nutrientRole:
+              "Essential fatty acids",
+
+            importance:
+              "high",
+
+            explanation:
+              "Sunflower oil can supply substantial linoleic acid. Fatty-acid composition varies greatly among conventional, high-linoleic, mid-oleic, and high-oleic cultivars."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Sunflower can contribute phosphorus, magnesium, copper, manganese, selenium, and other minerals, but it does not provide a complete mineral balance for poultry."
+          }
+        ],
+
+        notableNutrients: [
+          "Vegetable oil",
+          "Linoleic acid",
+          "Oleic acid",
+          "Moderate crude protein",
+          "Vitamin E",
+          "Phosphorus",
+          "Magnesium",
+          "Copper",
+          "Manganese",
+          "Selenium"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate, commonly around the mid-teens on a dry-matter basis, with substantial variation among cultivars and products.",
+
+          fat:
+            "Very high relative to cereal grains, particularly in oilseed cultivars.",
+
+          fiber:
+            "Moderate to high because the fibrous hull remains attached.",
+
+          starch:
+            "Low compared with Corn, Wheat, Barley, Oats, and other cereal grains.",
+
+          calcium:
+            "Insufficient to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Present, but some phosphorus may be associated with phytate and should not be assumed to be completely available.",
+
+          energy:
+            "Very high because of the concentrated oil content."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole in-shell seed contains the oil-rich kernel plus a fibrous hull. The hull protects the kernel during storage but dilutes protein, oil, and usable energy on an equal-weight basis.",
+
+          dehulledKernel:
+            "The dehulled kernel contains less fiber and a greater concentration of oil, energy, protein, and other nutrients. It also has less physical protection from oxygen, moisture, insects, and rancidity.",
+
+          practicalMeaning:
+            "A pound of whole in-shell seed should not be treated as equivalent to a pound of dehulled kernels. Kernels are more nutritionally concentrated and therefore require especially careful portion control."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole seed retains most of its natural oil and therefore functions primarily as a concentrated energy and fat ingredient.",
+
+          sunflowerMeal:
+            "Sunflower meal is the material remaining after oil extraction. Depending on dehulling and processing, it generally contains more concentrated protein, much less oil, and often substantial fiber.",
+
+          practicalMeaning:
+            "Research involving Sunflower meal must not automatically be used to justify informal feeding quantities for whole seed, kernels, or whole seed heads."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cultivar",
+          "Oilseed versus confection type",
+          "Black versus striped hull",
+          "Hull percentage",
+          "Kernel-to-hull ratio",
+          "Seed maturity",
+          "Growing environment",
+          "Fertility",
+          "Water availability",
+          "Postharvest drying",
+          "Storage duration",
+          "Storage temperature",
+          "Oxygen exposure",
+          "Dehulling",
+          "Cracking",
+          "Grinding",
+          "Oil extraction",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Exceptional Supplemental Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Sunflower seed is among the most energy-dense crops that can be grown practically in a backyard setting. Its oil-rich kernel provides substantially more concentrated energy than most fresh garden produce and many whole cereal grains."
+          },
+
+          {
+            title:
+              "Strong Cold-Weather Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "The concentrated calories make measured Sunflower supplementation especially useful during cold weather, when chickens may expend additional energy maintaining body temperature. This does not eliminate the need for a balanced ration, weather protection, dry housing, and unfrozen water."
+          },
+
+          {
+            title:
+              "Outstanding Whole-Head Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A mature seed head encourages sustained pecking, seed removal, scratching, investigation, and natural feed-seeking behavior. This can provide meaningful activity for confined birds during winter or other periods when natural forage is limited."
+          },
+
+          {
+            title:
+              "Simple Low-Processing Use Path",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A sound mature head can be harvested, dried, inspected, and offered without threshing, shelling, cooking, fermenting, or grinding."
+          },
+
+          {
+            title:
+              "Useful Seasonal Storage Crop",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Thoroughly dried whole seed or intact seed heads can be stored for later use without refrigeration when protected from heat, moisture, insects, rodents, sunlight, and rancidity."
+          },
+
+          {
+            title:
+              "Flexible Feeding Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "The crop can be offered as intact seed heads, loose whole seed, plain kernels, cracked seed, or a freshly ground supplemental ingredient."
+          },
+
+          {
+            title:
+              "Moderate Supplemental Protein",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Sunflower contributes useful plant protein, particularly when paired with energy-oriented cereal grains, but its amino-acid profile remains incomplete for productive poultry."
+          },
+
+          {
+            title:
+              "Useful Fatty-Acid Contribution",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Sunflower oil supplies unsaturated fatty acids. Cultivar selection materially affects whether the oil is dominated more strongly by linoleic acid or oleic acid."
+          },
+
+          {
+            title:
+              "High Acceptance by Many Flocks",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Many adult chickens readily consume Sunflower seed, making it useful for enrichment and supplemental feeding. High palatability also increases the risk that birds will select it instead of complete feed."
+          },
+
+          {
+            title:
+              "Multipurpose Homestead Value",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "A planting may provide poultry seed, human-food seed, flowers, pollinator support, seasonal screening, cut flowers, seed-saving opportunities, and compostable residue."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Pecking activity",
+
+            explanation:
+              "Chickens must locate, loosen, and remove seeds from an intact head."
+          },
+
+          {
+            benefit:
+              "Extended feeding time",
+
+            explanation:
+              "Whole-head feeding generally takes longer than consuming the same seed from an open dish."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Birds can pull, turn, scratch, and investigate the head rather than simply swallowing loose feed."
+          },
+
+          {
+            benefit:
+              "Cold-season activity",
+
+            explanation:
+              "Stored heads can provide structured activity when weather or confinement reduces access to insects and vegetation."
+          },
+
+          {
+            benefit:
+              "Reduced boredom",
+
+            explanation:
+              "Appropriately placed heads may occupy birds and diversify the feeding environment, although enrichment does not correct overcrowding, inadequate space, or poor flock management."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Can be offered through several separate feeding stations",
+          "Can be stored and used during periods of limited fresh forage",
+          "Whole heads can reduce household processing labor",
+          "Loose seed permits better measurement than whole heads",
+          "Plain kernels permit feeding without the fibrous hull",
+          "Can be introduced in very small quantities",
+          "Can be removed easily when offered in a dish or holder"
+        ],
+
+        homesteadBenefits: [
+          "Annual crop that can be rotated through garden areas",
+          "Large seed is easy to plant by hand",
+          "Direct sowing usually avoids transplant production",
+          "Seed heads can be harvested without specialized machinery",
+          "Whole-head use avoids threshing",
+          "Dried seed requires no refrigeration",
+          "Flowers support pollinator activity",
+          "Some cultivars serve both poultry-feed and human-food purposes",
+          "Stalks and empty heads can contribute compost biomass"
+        ],
+
+        benefitSummary:
+          "Sunflower's greatest overall value comes from combining concentrated energy, storage potential, whole-head enrichment, easy planting, and multiple homestead uses. It is less valuable as a primary protein source or direct replacement for complete poultry feed."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Sunflower does not supply the complete balance of energy, protein, essential amino acids, calcium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Very High Fat and Calorie Density",
+
+            severity:
+              "high",
+
+            explanation:
+              "The same oil that makes Sunflower valuable also makes unrestricted feeding inappropriate. Excessive intake can contribute to overconsumption of calories and reduced intake of balanced feed."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Sunflower protein cannot independently meet poultry amino-acid requirements. Lysine and methionine balance remain important concerns, especially when Sunflower is incorporated as a meaningful ration ingredient."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Sunflower does not provide the calcium concentration necessary for eggshell production and must not replace complete layer feed or an appropriate calcium program."
+          },
+
+          {
+            title:
+              "Substantial Hull Fiber",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "The hull contributes significant fiber while containing relatively little usable nutrition. High hull intake can lower the usable nutrient density of the overall diet."
+          },
+
+          {
+            title:
+              "Portioning Whole Heads Is Imprecise",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Seed count, kernel fill, hull proportion, flock competition, spillage, and actual consumption vary among heads. Whole-head feeding is best treated as enrichment rather than precise ration delivery."
+          },
+
+          {
+            title:
+              "Oil Is Vulnerable to Rancidity",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Heat, light, oxygen, moisture, grinding, cracking, and long storage can degrade the oil-rich kernel."
+          },
+
+          {
+            title:
+              "Wildlife and Rodent Attraction",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Developing heads, harvested seed, spilled seed, and stored heads can attract wild birds, squirrels, mice, rats, and other animals."
+          },
+
+          {
+            title:
+              "Variable Cultivar Feed Value",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "A large ornamental flower does not guarantee a useful seed harvest. Seed size, oil concentration, hull thickness, maturity, kernel fill, and seed production differ substantially among cultivars."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Flock size, breed, age, body condition, climate, activity level, base ration, seed form, hull proportion, and purpose differ too greatly for one crop-specific serving percentage to be applied safely to every backyard flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Methionine balance remains limiting",
+          "Lysine balance remains limiting",
+          "Whole seed contains substantial hull fiber",
+          "Phosphorus availability may be reduced partly by phytate",
+          "High oil content can dilute other nutrients when overfed",
+          "Vitamin and mineral balance is incomplete",
+          "Protein concentration is moderate rather than exceptionally high",
+          "Whole seed and kernels are more energy-oriented than protein-oriented",
+          "Nutritional composition varies substantially among products"
+        ],
+
+        practicalLimitations: [
+          "Whole heads are difficult to measure accurately",
+          "Dominant birds may monopolize a single head",
+          "Seed may be scattered into litter",
+          "Spilled seed can attract rodents",
+          "Damp heads may mold",
+          "Loose seed requires cleaning and storage",
+          "Dehulled kernels spoil more quickly",
+          "Cracked seed spoils more quickly",
+          "Ground seed should be used promptly",
+          "Wild birds and squirrels may reduce the harvest",
+          "Large heads require considerable drying space",
+          "Stored whole heads use more space than loose seed",
+          "Household dehulling may be inefficient",
+          "Feed value varies among cultivars"
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Supplying all required protein",
+          "Serving as the flock's primary calcium source",
+          "Correcting a poorly balanced homemade ration",
+          "Providing unrestricted free-choice grain",
+          "Supporting young chicks as a staple food",
+          "Guaranteeing increased egg production",
+          "Guaranteeing improved feather growth",
+          "Guaranteeing reduced winter feed cost",
+          "Providing predictable pounds of usable feed per plant",
+          "Providing a universal safe feeding percentage"
+        ],
+
+        limitationSummary:
+          "Sunflower is highly useful because it is concentrated, palatable, storable, and enriching. Those same characteristics make moderation and complete-feed protection essential."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "low-to-moderate-for-supplemental-adult-use",
+
+        requiresDetoxification:
+          false,
+
+        cookingRequired:
+          false,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Phytate",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "A portion of the phosphorus and other minerals in Sunflower may be associated with phytate, which can reduce mineral availability. This is principally a ration-formulation issue rather than a reason to prohibit limited supplemental feeding."
+          },
+
+          {
+            factor:
+              "Hull-associated fiber",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Sunflower hulls contain substantial structural fiber and relatively little usable energy or protein. Increasing hull content lowers overall nutrient density."
+          },
+
+          {
+            factor:
+              "High oil concentration",
+
+            concernLevel:
+              "high-when-overfed",
+
+            explanation:
+              "High oil is not a classical toxin, but it functions as a major nutritional limitation when excessive quantities displace balanced feed."
+          },
+
+          {
+            factor:
+              "Phenolic compounds",
+
+            concernLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Sunflower products may contain phenolic compounds that can influence protein use and feed characteristics. Their practical importance depends heavily on product type, processing, and dietary inclusion."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Trypsin inhibitors",
+
+            explanation:
+              "Sunflower does not require the same routine heat treatment used to deactivate the major trypsin-inhibitor concern in raw mature Soybeans."
+          },
+
+          {
+            factor:
+              "Lectin toxicity",
+
+            explanation:
+              "Clean mature Sunflower seed is not treated as a lectin-limited raw legume requiring cooking before ordinary supplemental use."
+          },
+
+          {
+            factor:
+              "Beta-glucans",
+
+            explanation:
+              "Sunflower does not carry the same beta-glucan concern associated with Barley and Oats."
+          },
+
+          {
+            factor:
+              "Cyanogenic compounds",
+
+            explanation:
+              "Mature Sunflower seed is not classified in this database as requiring processing for cyanogenic-compound removal."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Dehulling",
+
+            effect:
+              "Reduces fiber and increases the concentration of oil, protein, energy, and other kernel nutrients."
+          },
+
+          {
+            process:
+              "Cracking",
+
+            effect:
+              "Improves physical access to the kernel but accelerates oxidation and moisture exposure."
+          },
+
+          {
+            process:
+              "Grinding",
+
+            effect:
+              "Improves mixing uniformity but greatly reduces storage stability."
+          },
+
+          {
+            process:
+              "Oil extraction",
+
+            effect:
+              "Produces a fundamentally different feed ingredient with less oil, more concentrated protein, and fiber content influenced by the degree of dehulling."
+          },
+
+          {
+            process:
+              "Roasting",
+
+            effect:
+              "May alter flavor, moisture, and physical characteristics but is not required to make clean mature seed safe for adult-chicken supplemental use."
+          }
+        ],
+
+        antinutritionalSummary:
+          "Sunflower does not require routine cooking or detoxification before feeding. Its most important limitations are nutritional balance, hull fiber, phytate, amino-acid balance, and very high oil concentration rather than an acute toxin in clean mature seed."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Sunflower should complement a complete ration rather than be used as the nutritional foundation.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, amino acids, vitamins, minerals, and calcium that Sunflower cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration provides the nutritional balance needed by mixed or breeding flocks while Sunflower remains an optional supplement."
+          },
+
+          {
+            feedType:
+              "Protein-oriented formulated ingredients",
+
+            relationship:
+              "Appropriately formulated soybean meal, field peas, processed Cowpeas, or other protein ingredients can help address protein and amino-acid needs that Sunflower alone cannot meet."
+          },
+
+          {
+            feedType:
+              "Cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Wheat, Barley, Oats, Millet, and Sorghum provide different energy, starch, fiber, and protein characteristics. Combining grains informally does not by itself create a balanced ration."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the calcium deficiency of Sunflower seed."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, Clover, Alfalfa, Comfrey, and other appropriate forage crops provide fresh-leaf and enrichment characteristics that Sunflower seed does not."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient methionine",
+          "Insufficient lysine",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Excessive total dietary fat",
+          "Poor-quality complete feed",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed"
+        ],
+
+        pairingWarning:
+          "Combining Sunflower with several other homegrown ingredients does not automatically produce a nutritionally complete diet. Significant ration inclusion requires calculation of energy, protein, digestible amino acids, fat, fiber, calcium, available phosphorus, sodium, vitamins, trace minerals, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use Sunflower in measured supplemental amounts or as occasional whole-head enrichment."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Sunflower should be viewed as a supplement and enrichment crop rather than as a staple feed. Every feeding method should protect consumption of the flock's complete ration.",
+
+        primaryMethods: [
+          {
+            method:
+              "Whole mature seed heads",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "One of the most natural ways to feed Sunflower. Birds remove seeds gradually while pecking, extending feeding time and providing excellent enrichment."
+          },
+
+          {
+            method:
+              "Loose whole seeds",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "The easiest method for accurately measuring supplemental feed."
+          },
+
+          {
+            method:
+              "Plain dehulled kernels",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Very nutrient dense but should be measured carefully because kernels contain more usable calories per pound than whole seed."
+          },
+
+          {
+            method:
+              "Freshly cracked seed",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Useful when easier access to the kernel is desired, but cracked seed should not be stored for long periods."
+          },
+
+          {
+            method:
+              "Freshly ground seed",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Best used immediately after grinding as part of a balanced feed mixture."
+          }
+        ],
+
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce any new supplemental feed gradually while observing feed intake, droppings, flock behavior, and body condition."
+        },
+
+        observationChecklist: [
+          "Complete feed consumption remains normal.",
+          "Birds do not ignore balanced feed.",
+          "Droppings remain normal.",
+          "No unusual selective feeding develops.",
+          "No evidence of obesity develops over time.",
+          "Seed is consumed before spoilage occurs.",
+          "No mold develops on remaining heads.",
+          "Rodents are not attracted to leftover seed."
+        ],
+
+        wholeHeadManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Longest enrichment duration",
+            "Natural pecking behavior",
+            "Minimal processing",
+            "Simple harvest"
+          ],
+
+          managementTips: [
+            "Hang securely without creating entanglement hazards.",
+            "Provide multiple heads for larger flocks.",
+            "Remove wet or moldy heads immediately.",
+            "Inspect regularly for spoilage."
+          ]
+        },
+
+        looseSeedManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Easy to measure",
+            "Easy to mix",
+            "Simple storage"
+          ],
+
+          managementTips: [
+            "Feed only what birds will consume promptly.",
+            "Avoid scattering into wet litter.",
+            "Store remaining seed in rodent-proof containers.",
+            "Inspect regularly for insects and rancidity."
+          ]
+        },
+
+        gritConsiderations: {
+          gritHelpful:
+            true,
+
+          explanation:
+            "Adult chickens consuming whole seeds generally benefit from access to appropriate insoluble grit whenever adequate natural grit is unavailable."
+        },
+
+        feedingFrequency: {
+          dailyStaple:
+            false,
+
+          supplemental:
+            true,
+
+          enrichment:
+            true,
+
+          seasonal:
+            true,
+
+          explanation:
+            "Frequency depends upon the complete diet, flock condition, weather, production goals, and total energy intake rather than a fixed calendar schedule."
+        },
+
+        seasonalUse: {
+          spring:
+            "Useful supplemental treat after winter while maintaining complete feed.",
+
+          summer:
+            "Use moderately during hot weather because birds generally require less additional dietary energy.",
+
+          autumn:
+            "Excellent use of freshly harvested mature heads.",
+
+          winter:
+            "One of the best stored enrichment crops because of its high energy content and long storage potential."
+        },
+
+        weatherConsiderations: {
+          coldWeather:
+            "Excellent supplemental energy source.",
+
+          hotWeather:
+            "Reduce excessive high-fat treats when birds already experience heat stress.",
+
+          rainyWeather:
+            "Protect heads from prolonged moisture before feeding.",
+
+          humidClimate:
+            "Monitor carefully for mold development during drying and storage."
+        },
+
+        managementWarnings: [
+          "Do not allow supplements to replace balanced feed.",
+          "Avoid unrestricted free-choice feeding.",
+          "Protect harvested seed from rodents.",
+          "Discard questionable material immediately.",
+          "Monitor body condition throughout the year.",
+          "Adjust supplementation according to activity level and environmental conditions."
+        ]
+      },
+
+      storage: {
+        storageSuitability:
+          "excellent-when-thoroughly-dried",
+
+        preferredStorageForms: [
+          {
+            form:
+              "Whole intact seeds",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "The hull provides physical protection around the oil-rich kernel, making intact seed generally more stable than cracked, ground, or dehulled forms."
+          },
+
+          {
+            form:
+              "Thoroughly dried whole seed heads",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Whole heads can be stored successfully for seasonal enrichment when fully cured, kept dry, protected from pests, and inspected regularly."
+          },
+
+          {
+            form:
+              "Dehulled kernels",
+
+            suitability:
+              "moderate",
+
+            explanation:
+              "Kernels store less reliably because the protective hull has been removed and the oil-rich tissue is directly exposed to oxygen, heat, light, moisture, and insects."
+          },
+
+          {
+            form:
+              "Cracked seed",
+
+            suitability:
+              "limited",
+
+            explanation:
+              "Cracking exposes the kernel and substantially shortens practical storage life. It is best prepared in small amounts close to feeding time."
+          },
+
+          {
+            form:
+              "Ground seed",
+
+            suitability:
+              "poor-for-long-storage",
+
+            explanation:
+              "Ground seed has extensive exposed surface area and should generally be used promptly rather than stored for extended periods."
+          }
+        ],
+
+        dryingRequirements: {
+          thoroughDryingRequired:
+            true,
+
+          targetCondition:
+            "Seed and heads must be dry, cool, stable, and free of internal dampness before enclosed storage.",
+
+          goodDryingPractices: [
+            "Harvest mature heads during a period of relatively dry weather when practical.",
+            "Remove large leaves or excess stem material that slows drying.",
+            "Keep harvested heads off damp soil and wet surfaces.",
+            "Arrange heads in shallow layers or suspend them individually.",
+            "Maintain strong airflow around all sides of each head.",
+            "Turn or rearrange heads when necessary for uniform drying.",
+            "Protect drying material from rain, condensation, and nighttime dew.",
+            "Allow warm material to cool before placing it into sealed containers.",
+            "Inspect the back of each head as well as the seed face.",
+            "Do not assume that a dry outer surface means the interior is fully dry."
+          ],
+
+          unsafeDryingPractices: [
+            "Stacking damp heads in deep piles",
+            "Sealing freshly harvested heads in plastic",
+            "Drying in poorly ventilated humid rooms",
+            "Leaving heads exposed to repeated rainfall",
+            "Storing heads while the central disk remains damp",
+            "Mixing newly harvested damp seed with previously dried seed",
+            "Ignoring heat buildup inside a container or pile"
+          ],
+
+          dryingFailureIndicators: [
+            "Condensation inside a container",
+            "Warmth developing within stored material",
+            "Musty or fermented odor",
+            "Softening of the seed head",
+            "Seed clumping",
+            "Visible fungal growth",
+            "Persistent internal dampness",
+            "Rapid insect activity"
+          ]
+        },
+
+        storageEnvironment: {
+          idealConditions: [
+            "Cool",
+            "Dry",
+            "Dark",
+            "Well ventilated before sealing",
+            "Protected from temperature swings",
+            "Protected from condensation",
+            "Protected from direct sunlight",
+            "Protected from rodents",
+            "Protected from insects",
+            "Separated from chemicals and treated seed"
+          ],
+
+          avoidConditions: [
+            "Hot sheds with extreme temperature swings",
+            "Damp basements",
+            "Open feed bags accessible to rodents",
+            "Direct sunlight",
+            "Areas exposed to roof leaks",
+            "Containers holding residual moisture",
+            "Storage beside pesticides, fuels, solvents, or treated seed",
+            "Locations where spilled seed cannot be cleaned easily"
+          ]
+        },
+
+        containerGuidance: {
+          looseSeed: [
+            "Use clean, dry, food-safe or feed-safe containers.",
+            "Use tight-fitting lids after the seed is fully dried and cooled.",
+            "Choose containers that prevent rodent access.",
+            "Use manageable container sizes so the contents can be inspected easily.",
+            "Label each container with crop, harvest date, form, and inspection notes.",
+            "Avoid repeatedly introducing moist scoops or hands."
+          ],
+
+          wholeHeads: [
+            "Use breathable sacks, racks, crates, shelves, or hanging storage while final curing continues.",
+            "Do not compress heads tightly together.",
+            "Maintain airflow between heads.",
+            "Protect from mice, rats, squirrels, and wild birds.",
+            "Move fully cured heads into a protected storage area.",
+            "Inspect the thick central disk for hidden mold or insects."
+          ],
+
+          kernelsAndProcessedSeed: [
+            "Store in small airtight containers after confirming the material is fully dry.",
+            "Keep away from heat and light.",
+            "Use older lots before newer lots.",
+            "Avoid storing large amounts after cracking or grinding.",
+            "Discard any lot showing rancidity or moisture damage."
+          ]
+        },
+
+        inventoryManagement: {
+          firstInFirstOutRecommended:
+            true,
+
+          batchSeparationRecommended:
+            true,
+
+          labelingRecommended:
+            true,
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Cultivar when known",
+            "Harvest date",
+            "Drying completion date",
+            "Storage form",
+            "Container date",
+            "Last inspection date",
+            "Observed condition"
+          ],
+
+          guidance:
+            "Keep harvest lots separate whenever practical. A questionable batch should not be blended into sound seed because blending hides deterioration rather than correcting it."
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect frequently during the first several weeks because residual moisture, hidden insects, and heating are most likely to become apparent during this period.",
+
+          longTermStorage:
+            "Continue periodic inspection throughout storage, with greater frequency during warm or humid weather.",
+
+          inspectionChecklist: [
+            "No condensation",
+            "No unusual warmth",
+            "No musty odor",
+            "No rancid odor",
+            "No fermentation odor",
+            "No visible mold",
+            "No seed clumping",
+            "No rodent evidence",
+            "No excessive insect activity",
+            "No leaking container",
+            "No moisture entering the storage area"
+          ]
+        },
+
+        storageLifeGuidance:
+          "A single guaranteed storage duration should not be assigned because stability depends on seed form, initial moisture, oil composition, temperature, humidity, oxygen exposure, sanitation, pest pressure, and container quality. Condition-based inspection is more reliable than relying only on a calendar date.",
+
+        disposalGuidance:
+          "Material suspected of mold, rancidity, chemical contamination, rodent contamination, fermentation, or serious insect damage should be discarded in a way that prevents access by chickens, livestock, pets, wildlife, and children.",
+
+        storageSummary:
+          "Sunflower stores best as thoroughly dried intact seed. Every processing step that exposes the kernel improves accessibility but generally reduces storage stability."
+      },
+
+      spoilageAndContamination: {
+        overallRiskLevel:
+          "moderate",
+
+        primarySpoilageRisks: [
+          {
+            risk:
+              "Mold growth",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Insufficient drying",
+              "High humidity",
+              "Condensation",
+              "Water leaks",
+              "Damp litter",
+              "Poor airflow",
+              "Deep piles of harvested heads"
+            ],
+
+            warningSigns: [
+              "Visible fuzzy growth",
+              "Musty odor",
+              "Dark or unusual discoloration",
+              "Seed clumping",
+              "Softened head tissue",
+              "Unexpected heating"
+            ],
+
+            response:
+              "Discard affected and suspicious material. Do not attempt to make moldy feed safe by drying it again, brushing off visible mold, grinding it, or blending it with sound seed."
+          },
+
+          {
+            risk:
+              "Rancidity",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Heat",
+              "Light",
+              "Oxygen exposure",
+              "Long storage",
+              "Cracking",
+              "Grinding",
+              "Dehulling",
+              "Poor container sealing"
+            ],
+
+            warningSigns: [
+              "Paint-like odor",
+              "Sharp stale odor",
+              "Bitter odor or flavor",
+              "Soapy odor",
+              "Unusual oily residue",
+              "Bird refusal"
+            ],
+
+            response:
+              "Discard rancid material. Mixing it with fresh seed does not restore quality."
+          },
+
+          {
+            risk:
+              "Fermentation or heating",
+
+            likelihood:
+              "low-to-moderate",
+
+            primaryCauses: [
+              "Enclosing damp seed",
+              "Storing warm material",
+              "Poor ventilation",
+              "High biological activity",
+              "Deep compacted piles"
+            ],
+
+            warningSigns: [
+              "Sweet-sour odor",
+              "Alcohol-like odor",
+              "Warm or hot material",
+              "Condensation",
+              "Wet clumping",
+              "Rapid quality decline"
+            ],
+
+            response:
+              "Remove the material from flock access and discard it when feed safety cannot be confirmed."
+          },
+
+          {
+            risk:
+              "Insect infestation",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Existing field insects",
+              "Warm storage",
+              "Open containers",
+              "Old feed residue",
+              "Poor sanitation",
+              "Long storage"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Excess dust",
+              "Hollow kernels",
+              "Unusual seed movement",
+              "Rapid weight loss from stored seed"
+            ],
+
+            response:
+              "Evaluate the severity and condition of the seed. Material with extensive insect damage, moisture, mold, webbing, or contamination should be discarded."
+          }
+        ],
+
+        contaminationRisks: [
+          {
+            contaminant:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Bright artificial coloring",
+              "Printed treatment warning",
+              "Commercial seed-treatment label",
+              "Unknown seed saved from a planting package"
+            ],
+
+            guidance:
+              "Never feed planting seed unless it is clearly documented as untreated and suitable for food or feed use."
+          },
+
+          {
+            contaminant:
+              "Rodent urine or feces",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Droppings",
+              "Urine odor",
+              "Chewed containers",
+              "Nesting material",
+              "Tracks",
+              "Dead rodents"
+            ],
+
+            guidance:
+              "Discard contaminated material and clean the storage area before introducing new feed."
+          },
+
+          {
+            contaminant:
+              "Wild-bird droppings",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Visible droppings on drying heads",
+              "Bird access to open storage",
+              "Perching above feed"
+            ],
+
+            guidance:
+              "Protect harvested material from wild-bird contamination and discard heavily contaminated feed."
+          },
+
+          {
+            contaminant:
+              "Pesticide drift or direct spray",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Known application near harvest",
+              "Uncertain preharvest interval",
+              "Direct contact with non-feed-approved chemicals"
+            ],
+
+            guidance:
+              "Do not feed material when pesticide identity, application rate, harvest interval, or feed-use restrictions are uncertain."
+          },
+
+          {
+            contaminant:
+              "Fuel, oil, solvent, or chemical fumes",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Chemical odor",
+              "Storage beside fuel or solvents",
+              "Spill exposure"
+            ],
+
+            guidance:
+              "Discard contaminated feed. Odor removal does not prove that the material is safe."
+          },
+
+          {
+            contaminant:
+              "Wet or dirty litter",
+
+            riskLevel:
+              "moderate",
+
+            identificationClues: [
+              "Seed embedded in manure",
+              "Moist clumping",
+              "Strong ammonia odor",
+              "Visible dirt and debris"
+            ],
+
+            guidance:
+              "Do not encourage birds to consume old Sunflower seed that has remained in contaminated litter."
+          }
+        ],
+
+        spoilageIndicators: [
+          {
+            indicator:
+              "Visible mold",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Musty odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Rancid, sharp, bitter, paint-like, or soapy odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Fermented or alcohol-like odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Unexpected warmth or heating",
+
+            action:
+              "remove-from-storage-and-discard-if-safety-is-uncertain"
+          },
+
+          {
+            indicator:
+              "Condensation",
+
+            action:
+              "inspect-immediately-and-do-not-feed-until-safety-is-confirmed"
+          },
+
+          {
+            indicator:
+              "Wet clumping",
+
+            action:
+              "discard-questionable-material"
+          },
+
+          {
+            indicator:
+              "Rodent droppings or urine contamination",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Chemical odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Severe insect infestation",
+
+            action:
+              "discard-when-quality-or-safety-is-compromised"
+          }
+        ],
+
+        sensoryInspectionLimitations:
+          "Appearance and odor are useful screening tools but cannot detect every toxin, pesticide residue, pathogen, or chemical contaminant. Material with a known contamination history should not be fed merely because it looks normal.",
+
+        salvageWarning:
+          "Questionable seed should not be salvaged by washing, roasting, drying again, mixing with clean feed, or feeding it in smaller amounts.",
+
+        spoilageSummary:
+          "The oil-rich kernel and bulky seed head require careful drying and storage. When quality is uncertain, discarding the material is safer than attempting to rescue it."
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Replacing complete feed with Sunflower seed",
+
+            whyItHappens:
+              "Birds enjoy the seed, and homegrown feed may appear more natural or economical than commercial feed.",
+
+            whyItIsAProblem:
+              "Sunflower does not provide complete amino acids, calcium, vitamins, minerals, or overall ration balance.",
+
+            correction:
+              "Restore an age-appropriate complete ration as the flock's primary feed and reduce Sunflower to supplemental or enrichment use."
+          },
+
+          {
+            mistake:
+              "Offering unrestricted free-choice seed",
+
+            whyItHappens:
+              "The seed is easy to pour into a feeder and birds consume it readily.",
+
+            whyItIsAProblem:
+              "High palatability and calorie density may cause selective feeding, excessive energy intake, and reduced complete-feed consumption.",
+
+            correction:
+              "Offer measured amounts and monitor whether the flock continues eating its complete ration normally."
+          },
+
+          {
+            mistake:
+              "Assuming all Sunflower products are nutritionally identical",
+
+            whyItHappens:
+              "Whole seed, kernels, black-oil seed, confection seed, meal, and oil are all commonly described simply as Sunflower.",
+
+            whyItIsAProblem:
+              "These products differ substantially in hull fiber, oil, protein, calorie concentration, storage life, and appropriate ration use.",
+
+            correction:
+              "Identify the exact form before making feeding or storage decisions."
+          },
+
+          {
+            mistake:
+              "Applying commercial ration-inclusion research directly to backyard treats",
+
+            whyItHappens:
+              "Published percentages may appear to provide a simple feeding limit.",
+
+            whyItIsAProblem:
+              "Research percentages usually refer to a complete diet formulated for energy, digestible amino acids, minerals, vitamins, and performance—not to casually adding seed to an existing ration.",
+
+            correction:
+              "Treat informal backyard feeding as supplemental unless the entire ration has been properly formulated."
+          },
+
+          {
+            mistake:
+              "Feeding planting seed",
+
+            whyItHappens:
+              "Unused planting seed resembles edible birdseed.",
+
+            whyItIsAProblem:
+              "Planting seed may carry chemical treatments not intended for animal consumption.",
+
+            correction:
+              "Feed only seed known to be untreated and suitable for food or feed."
+          },
+
+          {
+            mistake:
+              "Storing seed heads before they are fully dry",
+
+            whyItHappens:
+              "The outer seeds may feel dry while the central disk remains moist.",
+
+            whyItIsAProblem:
+              "Residual moisture can cause heating, mold, fermentation, and spoilage inside the head.",
+
+            correction:
+              "Extend drying time, improve airflow, and inspect the thick back and center of the head."
+          },
+
+          {
+            mistake:
+              "Grinding too much seed in advance",
+
+            whyItHappens:
+              "Grinding a large batch appears more efficient.",
+
+            whyItIsAProblem:
+              "Ground seed oxidizes, absorbs moisture, and becomes rancid more quickly than intact seed.",
+
+            correction:
+              "Grind only small quantities close to feeding time."
+          },
+
+          {
+            mistake:
+              "Leaving heads outdoors in rain or damp conditions",
+
+            whyItHappens:
+              "Heads may be treated as durable enrichment objects.",
+
+            whyItIsAProblem:
+              "Repeated wetting encourages mold, bacterial growth, sprouting, and deterioration.",
+
+            correction:
+              "Remove uneaten heads before prolonged exposure to moisture."
+          },
+
+          {
+            mistake:
+              "Providing only one head to a large flock",
+
+            whyItHappens:
+              "One large head appears to contain enough seed for many birds.",
+
+            whyItIsAProblem:
+              "Dominant birds may monopolize access and aggression may increase.",
+
+            correction:
+              "Use multiple feeding locations spaced far enough apart to reduce competition."
+          },
+
+          {
+            mistake:
+              "Scattering excessive seed into deep litter",
+
+            whyItHappens:
+              "Scattering encourages scratching and foraging.",
+
+            whyItIsAProblem:
+              "Uneaten seed may become wet, contaminated, moldy, or attractive to rodents.",
+
+            correction:
+              "Scatter only amounts the flock will consume promptly and avoid damp litter."
+          },
+
+          {
+            mistake:
+              "Using Sunflower as the main molt supplement",
+
+            whyItHappens:
+              "Sunflower is commonly associated with protein and feather condition.",
+
+            whyItIsAProblem:
+              "It supplies moderate protein but does not provide the complete amino-acid balance needed for efficient feather production.",
+
+            correction:
+              "Prioritize a nutritionally complete ration appropriate for molting birds."
+          },
+
+          {
+            mistake:
+              "Assuming more seed is always better in winter",
+
+            whyItHappens:
+              "Cold weather increases interest in high-energy feed.",
+
+            whyItIsAProblem:
+              "Excess calories can still displace balanced nutrition and contribute to excessive body condition.",
+
+            correction:
+              "Adjust supplementation according to flock condition, weather exposure, activity, and complete-feed intake."
+          },
+
+          {
+            mistake:
+              "Ignoring body condition",
+
+            whyItHappens:
+              "Feathers can hide gradual weight gain or weight loss.",
+
+            whyItIsAProblem:
+              "High-energy supplements may be inappropriate for overweight or inactive birds and insufficient for birds with underlying illness.",
+
+            correction:
+              "Assess body condition periodically and investigate unexplained changes."
+          }
+        ],
+
+        mistakeSummary:
+          "Most Sunflower-feeding problems come from overfeeding, poor storage, incorrect product assumptions, or allowing a highly palatable supplement to displace complete nutrition."
+      },
+
+      troubleshooting: {
+        flockIgnoresWholeSeeds: {
+          possibleCauses: [
+            "Birds are unfamiliar with the food",
+            "Seeds are too large for younger birds",
+            "The hull is unusually thick",
+            "The flock already has adequate feed",
+            "Seed quality is poor",
+            "The seed is stale or rancid"
+          ],
+
+          recommendedActions: [
+            "Confirm that the seed is clean, fresh, and untreated.",
+            "Introduce a small amount gradually.",
+            "Try freshly cracked seed for established birds.",
+            "Do not withhold complete feed to force consumption.",
+            "Discard the batch if odor or quality is questionable."
+          ]
+        },
+
+        flockIgnoresWholeHead: {
+          possibleCauses: [
+            "The birds do not recognize the head as food",
+            "Seeds are immature",
+            "Seeds are difficult to remove",
+            "The head is positioned poorly",
+            "The head is stale or spoiled"
+          ],
+
+          recommendedActions: [
+            "Expose a small patch of seeds by loosening several manually.",
+            "Place the head at a comfortable pecking height.",
+            "Confirm seed maturity and kernel fill.",
+            "Inspect carefully for mold or rancidity.",
+            "Remove it if the flock continues to avoid it."
+          ]
+        },
+
+        dominantBirdsMonopolizeFeed: {
+          possibleCauses: [
+            "Too few feeding stations",
+            "Heads positioned too close together",
+            "Limited enclosure space",
+            "Strong existing flock hierarchy"
+          ],
+
+          recommendedActions: [
+            "Provide several heads or dishes.",
+            "Space feeding locations widely apart.",
+            "Place some stations behind visual barriers.",
+            "Observe lower-ranking birds to confirm access."
+          ]
+        },
+
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "The Sunflower supplement is too abundant, too frequent, or more accessible than the complete ration.",
+
+          recommendedActions: [
+            "Reduce or temporarily stop supplemental feeding.",
+            "Provide fresh complete feed in adequate feeder space.",
+            "Confirm that the complete feed is not stale, wet, moldy, or inaccessible.",
+            "Monitor whether normal ration consumption resumes."
+          ]
+        },
+
+        looseDroppingsAfterIntroduction: {
+          possibleCauses: [
+            "Sudden dietary change",
+            "Excessive supplement intake",
+            "Consumption of spoiled seed",
+            "An unrelated health problem"
+          ],
+
+          recommendedActions: [
+            "Stop the new supplement temporarily.",
+            "Inspect the seed for spoilage.",
+            "Maintain access to clean water and complete feed.",
+            "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+          ]
+        },
+
+        storedSeedDevelopsCondensation: {
+          likelyCauses: [
+            "Seed was stored before fully dry",
+            "Warm seed was sealed",
+            "Temperature fluctuations caused moisture migration",
+            "The container is exposed to a damp environment"
+          ],
+
+          recommendedActions: [
+            "Remove the seed from flock access.",
+            "Inspect for heat, odor, mold, and clumping.",
+            "Discard questionable material.",
+            "Correct the drying and storage environment before storing a new batch."
+          ]
+        },
+
+        storedSeedSmellsUnusual: {
+          possibleInterpretations: [
+            "Musty odor may indicate mold.",
+            "Sweet-sour or alcohol-like odor may indicate fermentation.",
+            "Paint-like, bitter, soapy, or sharp odor may indicate rancidity.",
+            "Chemical odor may indicate contamination."
+          ],
+
+          recommendedAction:
+            "Do not feed material with an abnormal odor. Discard it rather than attempting to air out or blend the smell away."
+        },
+
+        birdsGainExcessWeight: {
+          possibleCauses: [
+            "Excessive high-energy supplementation",
+            "Low activity",
+            "Highly confined management",
+            "Multiple household treat sources",
+            "Underlying health or metabolic issues"
+          ],
+
+          recommendedActions: [
+            "Reduce Sunflower and other calorie-dense treats.",
+            "Measure all supplemental feed rather than estimating.",
+            "Encourage safe activity and foraging.",
+            "Review the base diet.",
+            "Seek veterinary guidance when body-condition changes are substantial or unexplained."
+          ]
+        },
+
+        rodentsAppearNearStorageOrCoop: {
+          likelyCauses: [
+            "Spilled seed",
+            "Open containers",
+            "Uneaten heads left overnight",
+            "Damaged storage bins",
+            "Feed scattered into inaccessible spaces"
+          ],
+
+          recommendedActions: [
+            "Remove spilled and uneaten feed.",
+            "Use secure rodent-resistant containers.",
+            "Repair access points.",
+            "Clean beneath racks, feeders, and storage shelves.",
+            "Do not use poison in a way that endangers chickens, pets, wildlife, or children."
+          ]
+        }
+      },
+
+      faq: [
+        {
+          question:
+            "Can chickens eat Sunflower seeds?",
+
+          answer:
+            "Yes. Clean, mature, untreated Sunflower seeds are safe for established adult chickens as a measured supplement. They should not replace a nutritionally complete poultry ration."
+        },
+
+        {
+          question:
+            "Can chickens eat black-oil Sunflower seeds?",
+
+          answer:
+            "Yes. Plain black-oil Sunflower seed is commonly used as a high-energy bird feed. Its thin hull and high oil concentration make it useful, but the calorie density still requires moderation."
+        },
+
+        {
+          question:
+            "Can chickens eat striped Sunflower seeds?",
+
+          answer:
+            "Yes. Plain mature striped or confection-type seeds are generally suitable for adult chickens. Their larger size and thicker hull may make them less accessible than some black-oil types."
+        },
+
+        {
+          question:
+            "Can chickens eat Sunflower seed shells?",
+
+          answer:
+            "The hulls are not normally considered toxic, and chickens consuming whole seed will ingest or discard some shell material. Hulls are highly fibrous and contain relatively little usable nutrition, so loose hulls are not a valuable feed."
+        },
+
+        {
+          question:
+            "Can chickens eat shelled Sunflower kernels?",
+
+          answer:
+            "Yes, provided the kernels are plain, fresh, unsalted, unseasoned, and free from rancidity. Kernels are more calorie dense than equal weights of whole in-shell seed and should be portioned carefully."
+        },
+
+        {
+          question:
+            "Can chickens eat roasted Sunflower seeds?",
+
+          answer:
+            "Plain unsalted roasted seed is not automatically unsafe, but roasting is unnecessary. Commercial roasted products often contain salt, added oils, flavors, or seasonings and are therefore poor choices."
+        },
+
+        {
+          question:
+            "Can chickens eat salted Sunflower seeds?",
+
+          answer:
+            "They should not be routinely fed salted snack seeds. Chickens do not need the added sodium, flavorings, or oils commonly found in human snack products."
+        },
+
+        {
+          question:
+            "Can chickens eat Sunflower seed heads?",
+
+          answer:
+            "Yes. Mature, sound seed heads are one of the best enrichment forms. Offer them fresh and clean or thoroughly dried, and remove them if they become wet, moldy, rancid, or heavily contaminated."
+        },
+
+        {
+          question:
+            "Can chickens eat green or immature Sunflower heads?",
+
+          answer:
+            "Immature heads are not the preferred feed form because the seeds may be poorly developed, watery, and less nutritious. Wait until the seeds are mature and the head has reached an appropriate harvest stage."
+        },
+
+        {
+          question:
+            "Can chickens eat Sunflower leaves?",
+
+          answer:
+            "A chicken may peck tender leaves without this being the crop's primary hazard, but Sunflower foliage has little practical value compared with the mature seed. Leaves should not be treated as an important feed source."
+        },
+
+        {
+          question:
+            "Can chickens eat Sunflower petals?",
+
+          answer:
+            "Occasional pecking at untreated petals is not normally the crop's main concern, but petals provide very little feed value. Avoid flowers exposed to unsafe pesticides, preservatives, floral chemicals, or roadside contamination."
+        },
+
+        {
+          question:
+            "Can chicks eat Sunflower seeds?",
+
+          answer:
+            "Whole Sunflower seeds are not recommended as routine treats for young chicks. Chicks should rely on an age-appropriate complete starter ration. Professionally formulated chick feed containing processed Sunflower ingredients is a different situation."
+        },
+
+        {
+          question:
+            "Do chickens need grit to eat Sunflower seeds?",
+
+          answer:
+            "Adult chickens consuming whole seeds should have access to appropriately sized insoluble grit when they do not obtain adequate natural grit from their environment."
+        },
+
+        {
+          question:
+            "Will Sunflower seeds make chickens lay more eggs?",
+
+          answer:
+            "Sunflower seed does not guarantee increased egg production. Egg output depends on genetics, age, daylight, health, body condition, stress, water, and complete nutrition. Excess seed can reduce production if it displaces balanced layer feed."
+        },
+
+        {
+          question:
+            "Are Sunflower seeds good for chickens during molt?",
+
+          answer:
+            "They can provide supplemental energy and moderate protein, but they do not supply the complete amino-acid balance required for feather growth. A nutritionally complete ration remains more important."
+        },
+
+        {
+          question:
+            "Are Sunflower seeds good for chickens in winter?",
+
+          answer:
+            "They can be useful as a measured cold-weather energy supplement and stored enrichment crop. They should not be used to compensate for inadequate shelter, unfrozen water, poor body condition, or an incomplete ration."
+        },
+
+        {
+          question:
+            "Can chickens eat Sunflower seeds every day?",
+
+          answer:
+            "A small supplemental amount may fit some flock-management programs, but daily use is not automatically appropriate for every flock. Total treat intake, body condition, climate, activity, and complete-feed consumption must be considered."
+        },
+
+        {
+          question:
+            "How much Sunflower seed should I give my chickens?",
+
+          answer:
+            "There is no single crop-specific amount suitable for every flock. Use Sunflower as a limited part of total supplemental feeding, protect complete-ration intake, and adjust according to bird size, age, activity, weather, body condition, and seed form."
+        },
+
+        {
+          question:
+            "Can Sunflower seed replace chicken feed?",
+
+          answer:
+            "No. It lacks the complete balance of amino acids, calcium, vitamins, minerals, and other nutrients required for long-term poultry health and production."
+        },
+
+        {
+          question:
+            "Can chickens eat moldy Sunflower seeds if the mold is removed?",
+
+          answer:
+            "No. Visible mold may extend beyond the portion that can be seen, and some hazards cannot be removed by brushing, washing, roasting, drying, or mixing. Discard the material."
+        },
+
+        {
+          question:
+            "Can I feed leftover Sunflower planting seed?",
+
+          answer:
+            "Only when the seed is clearly documented as untreated and suitable for food or feed. Seed treated with fungicides, insecticides, polymers, colorants, or other planting chemicals must never be fed."
+        },
+
+        {
+          question:
+            "Are Sunflower kernels better than whole seed?",
+
+          answer:
+            "They are not universally better. Kernels contain less fiber and more concentrated usable nutrition, but whole seed stores better because the hull protects the kernel. The best form depends on the feeding goal."
+        },
+
+        {
+          question:
+            "Should I crack Sunflower seeds before feeding them?",
+
+          answer:
+            "Healthy adult chickens can generally handle whole seed. Cracking is optional and may help with accessibility, but it shortens storage life by exposing the oil-rich kernel."
+        },
+
+        {
+          question:
+            "Can I grind Sunflower seed into homemade chicken feed?",
+
+          answer:
+            "Ground seed can be used as an ingredient, but grinding does not make an otherwise unbalanced ration complete. Meaningful inclusion requires proper ration formulation, and ground seed should be used promptly because it deteriorates faster."
+        },
+
+        {
+          question:
+            "Why are my chickens refusing stored Sunflower seed?",
+
+          answer:
+            "Possible reasons include unfamiliarity, thick hulls, low kernel fill, mold, insects, staleness, or rancidity. Inspect the seed carefully and discard it when quality is uncertain."
+        }
+      ],
+
+      expertSummary: {
+        oneSentence:
+          "Sunflower is one of the best supplemental feed crops for backyard chickens because it combines concentrated energy, excellent winter storage, and outstanding behavioral enrichment, but it should never replace a nutritionally complete poultry ration.",
+
+        oneParagraph:
+          "Among practical homestead feed crops, Sunflower occupies a unique position. Mature seed heads are simple to harvest, require relatively little processing, store well when dried correctly, and provide valuable natural enrichment that encourages pecking and foraging behavior. The oil-rich kernels contribute substantial dietary energy together with moderate protein, vitamin E, essential fatty acids, and useful minerals. These strengths also create its primary limitation: excessive feeding can reduce complete-feed consumption and dilute important nutrients such as calcium, digestible amino acids, vitamins, and trace minerals. Used thoughtfully, Sunflower is one of the most valuable supplemental crops available to the backyard poultry keeper.",
+
+        recommendation:
+          "Highly Recommended",
+
+        recommendationReasoning: [
+          "Excellent supplemental energy source",
+          "Outstanding whole-head enrichment",
+          "Very useful winter storage crop",
+          "Simple harvest and processing",
+          "Highly accepted by most adult chickens",
+          "Excellent homestead crop with multiple uses"
+        ],
+
+        idealUseCase:
+          "A seasonal supplemental crop used alongside a balanced complete poultry ration, particularly during autumn and winter.",
+
+        notRecommendedAs:
+          [
+            "Primary flock ration",
+            "Only protein source",
+            "Primary calcium source",
+            "Unlimited free-choice feed",
+            "Routine chick feed"
+          ]
+      },
+
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Helianthus annuus",
+
+          family:
+            "Asteraceae"
+        },
+
+        researchNotes: [
+          "Most published poultry research evaluates formulated diets containing measured percentages of Sunflower meal or processed Sunflower ingredients rather than informal backyard supplementation with whole mature seed.",
+
+          "Whole seed, dehulled kernels, Sunflower meal, and extracted oil are nutritionally distinct feed ingredients and should not be treated as interchangeable.",
+
+          "Cultivar selection significantly influences oil concentration, fatty-acid profile, hull percentage, seed size, and practical feed value.",
+
+          "Storage conditions have a major influence on long-term feed quality because the oil-rich kernel is susceptible to oxidative deterioration."
+        ],
+
+        plannerConsiderations: [
+          "High-energy supplemental crop",
+
+          "Excellent enrichment crop",
+
+          "Excellent winter-storage crop",
+
+          "Suitable for seasonal feeding",
+
+          "Moderate protein contribution",
+
+          "Requires moderation",
+
+          "Strong wildlife attraction",
+
+          "High rodent attraction during storage"
+        ],
+
+        futureResearchTopics: [
+          "Cultivar-specific fatty-acid profiles",
+
+          "Long-term backyard storage performance",
+
+          "Comparative enrichment value among oilseed crops",
+
+          "Relationships between kernel size and flock preference",
+
+          "Effects of hull percentage on backyard feeding efficiency",
+
+          "Seasonal variation in seed composition under different climates"
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Winter supplemental feeding",
+
+          "Seasonal enrichment",
+
+          "Cold-weather calorie support",
+
+          "Emergency stored feed reserve",
+
+          "Garden-to-coop feeding",
+
+          "Homestead feed diversification"
+        ],
+
+        lessSuitableUses: [
+          "Large-scale complete ration replacement",
+
+          "Primary chick nutrition",
+
+          "High-protein feed replacement",
+
+          "Primary calcium supplementation"
+        ],
+
+        backyardRecommendation:
+          "Grow enough Sunflowers to provide seasonal enrichment and supplemental feed rather than attempting to replace purchased complete poultry feed.",
+
+        commercialRecommendation:
+          "Commercial use is generally most effective through professionally formulated rations using analyzed Sunflower ingredients rather than informal supplementation."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Mature whole seeds",
         "Shelled seed kernels",
