@@ -1096,42 +1096,6 @@ By choosing the right feeder today, you'll spend less time refilling feed, reduc
 
 
 
-<script>
-document.addEventListener(
-  "DOMContentLoaded",
-  function () {
-
-    const container =
-      document.getElementById(
-        "recommended-products"
-      );
-
-    if (!container) {
-      return;
-    }
-
-    const productIds =
-  window.renderRecommendedProducts(
-    container,
-    {
-      pageType:
-        "best-chicken-feeders"
-    },
-    {
-      limit: 5
-    }
-  );
-
-console.log(
-  "Recommended Products:",
-  productIds
-);
-
-  }
-);
-</script>
-
-
 
 </body>
 
