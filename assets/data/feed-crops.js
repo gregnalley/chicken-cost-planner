@@ -24614,7 +24614,2480 @@ const BCP_FEED_CROPS = {
     summary:
       "Proso Millet is a fast-maturing warm-season cereal grain valued for exceptional drought tolerance, dependable grain production in short growing seasons, long-term dry storage, whole-seed-head enrichment, and supplemental poultry-feed energy. Mature grain stores extremely well and is readily consumed by chickens, but the crop remains an energy-oriented cereal that is limited by lysine, methionine, calcium concentration, and overall amino-acid balance. Proso Millet provides little living-forage value compared with leafy forage crops but excels as a resilient homestead grain for winter storage and seasonal feed supplementation.",
 
-    chickenUse: {
+    /////////////////////////////
+//
+//  Proso Millet - Can my chicken eat this "data"
+//
+//////////////////////////// 
+
+
+
+        feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Proso Millet?",
+
+        answerLabel:
+          "Yes — clean, mature Proso Millet grain and mature seed heads are safe supplemental feeds for established adult chickens.",
+
+        quickAnswer:
+          "Chickens can safely eat clean, mature Proso Millet as whole grain, loose threshed grain, cracked grain, coarsely ground grain, or mature seed heads. Proso Millet is especially useful as a carbohydrate-rich supplemental grain, winter storage crop, scatter-feeding treat, and whole-panicle enrichment feed. It should be offered in moderation because it is not a complete poultry ration and does not provide sufficient lysine, methionine, calcium, vitamins, minerals, or overall nutrient balance for long-term use as the flock's primary feed.",
+
+        detailedAnswer:
+          "Proso Millet is a short-season warm-weather cereal grain that can provide useful supplemental energy for established adult chickens. Its small mature seeds contain a high proportion of starch, moderate crude protein, modest fat, several minerals, and B vitamins. Chickens commonly consume the grain readily, and intact mature panicles can provide behavioral enrichment by encouraging pecking, seed removal, scratching, and natural foraging. Properly dried whole grain also has strong seasonal-storage value. However, Proso Millet remains an energy-oriented cereal rather than a complete poultry feed. Its protein is limited by amino-acid balance, particularly lysine and methionine, its calcium concentration is inadequate for laying hens, some phosphorus is associated with phytate, and hull material contributes fiber. Proso Millet should therefore be used as a measured supplement, occasional grain treat, enrichment item, or calculated ingredient in a professionally balanced ration rather than as unrestricted staple food.",
+
+        primaryFeedingRole:
+          "Supplemental cereal-energy grain and whole-panicle enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Stored winter grain",
+          "Scatter-feeding enrichment",
+          "Seasonal garden-to-flock feed",
+          "Moderate supplemental protein",
+          "Short-season homestead grain",
+          "Drought-adapted feed crop",
+          "Postharvest gleaning crop",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Recommended as a supplemental grain and enrichment crop for established adult chickens when mature seed is harvested, dried, cleaned, stored, and fed correctly.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-proso-millet-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal-to-moderate",
+
+        primaryProductType:
+          "mature-cereal-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          4,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          4,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          5,
+
+        proteinValueScore:
+          3,
+
+        enrichmentValueScore:
+          4,
+
+        winterValueScore:
+          5,
+
+        storageValueScore:
+          5,
+
+        preparationSimplicityScore:
+          3,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          3,
+
+        confinedFlockValueScore:
+          4,
+
+        pasturedFlockValueScore:
+          3,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Proso Millet's value as a supplemental backyard-chicken grain rather than as a complete ration.",
+          "Its strongest qualities are cereal energy, long-term dry storage, short-season production, and whole-panicle enrichment.",
+          "The feeding-safety score is reduced slightly because unrestricted grain intake can displace nutritionally complete feed.",
+          "The protein score reflects moderate crude protein but incomplete amino-acid balance, particularly limited lysine and methionine.",
+          "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration and require carefully controlled particle size.",
+          "Loose clean grain is relatively easy to measure, while whole panicles provide stronger enrichment but less precise intake control.",
+          "Preparation simplicity is lower than Sunflower because producing clean loose grain generally requires cutting, drying, threshing, winnowing, cleaning, and protected storage.",
+          "Whole-panicle feeding can avoid much of the threshing and cleaning labor required for loose grain."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean, mature Proso Millet grain and mature seed heads are safe for established adult chickens when offered as supplemental food. The principal concerns are displacement of complete feed, inadequate amino-acid and mineral balance, mold or storage deterioration, chemically treated planting seed, contamination, and inappropriate use of home-sprouted grain.",
+
+        whyModerationIsRequired:
+          "Proso Millet is a starch-rich cereal grain that chickens may consume preferentially when it is offered freely. Excessive grain intake can reduce consumption of complete feed and dilute essential amino acids, calcium, available phosphorus, vitamins, trace minerals, and other nutrients required for health, growth, feather production, reproduction, and egg formation.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Proso Millet grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound, fully developed whole grain may be offered to established adult chickens as a measured supplement. Birds consuming whole grain should have access to appropriately sized insoluble grit when adequate natural grit is unavailable."
+          },
+
+          {
+            item:
+              "Clean threshed Proso Millet grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Mature grain that has been thoroughly dried, threshed, winnowed, cleaned, and inspected is suitable for measured supplemental feeding."
+          },
+
+          {
+            item:
+              "Freshly cracked Proso Millet grain",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Cracked grain is safe when prepared from clean mature grain. Cracking improves access and mixing but exposes more internal grain surface to oxygen, humidity, insects, dust, and contamination, shortening practical storage life."
+          },
+
+          {
+            item:
+              "Coarsely ground Proso Millet grain",
+
+            status:
+              "safe-with-formulation-precautions",
+
+            explanation:
+              "Coarsely ground grain may be used promptly as a supplemental ingredient or within a properly formulated ration. Grinding does not correct deficiencies in amino acids, calcium, vitamins, minerals, or available phosphorus."
+          },
+
+          {
+            item:
+              "Fresh mature Proso Millet panicles",
+
+            status:
+              "safe",
+
+            explanation:
+              "Mature panicles containing fully developed sound grain may be offered soon after harvest when they are clean, dry on the surface, free of disease, and not beginning to heat or spoil."
+          },
+
+          {
+            item:
+              "Thoroughly dried mature Proso Millet panicles",
+
+            status:
+              "safe",
+
+            explanation:
+              "Properly dried whole panicles may provide useful feeding enrichment when they remain free from mold, insects, rodents, chemical contamination, and moisture damage."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, colorants, polymers, or other treatments that are not intended for poultry or human consumption."
+          },
+
+          {
+            item:
+              "Moldy or musty grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, damp clumping, abnormal discoloration, fungal growth, or suspicious dust indicates unsafe deterioration. Questionable grain should be discarded rather than mixed with sound grain."
+          },
+
+          {
+            item:
+              "Heated, sour, or fermenting stored grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heating, sour odors, fermentation odors, condensation, or persistent dampness indicates unstable storage and possible microbial spoilage."
+          },
+
+          {
+            item:
+              "Rodent-contaminated grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Grain contaminated by rodent urine, feces, nesting material, hair, or carcasses should be discarded because of disease and contamination risks."
+          },
+
+          {
+            item:
+              "Flood-contaminated grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Floodwater may expose grain to sewage, petroleum products, agricultural chemicals, pathogens, heavy metals, and other contaminants that cannot be made reliably safe through washing or drying."
+          },
+
+          {
+            item:
+              "Heavily insect-damaged grain",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Extensive insect feeding, webbing, heating, powder accumulation, off odors, or live infestation may indicate reduced quality, contamination, and unstable storage."
+          },
+
+          {
+            item:
+              "Grain screenings of uncertain quality",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Screenings may concentrate weed seeds, immature grain, broken kernels, moldy material, insects, soil, stones, chemical residues, or other foreign matter and should not automatically be treated as clean poultry feed."
+          },
+
+          {
+            item:
+              "Spoiled home-sprouted Proso Millet",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Slimy texture, sour or rotten odor, visible mold, poor drainage, excessive heat, or abnormal discoloration indicates unsafe sprout production and the entire batch should be discarded."
+          },
+
+          {
+            item:
+              "Seed of uncertain species identity",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Products sold simply as Millet may contain other millet species or mixed birdseed ingredients with different feeding characteristics. Feeding guidance in this record applies specifically to Proso Millet, Panicum miliaceum."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Proso Millet is palatable and energy rich enough that birds may reduce consumption of their nutritionally complete feed when grain is offered freely."
+          },
+
+          {
+            hazard:
+              "Incomplete amino-acid balance",
+
+            riskLevel:
+              "high-when-used-as-a-staple",
+
+            explanation:
+              "Moderate crude-protein concentration does not mean that Proso Millet provides the digestible lysine, methionine, and overall amino-acid balance required by productive poultry."
+          },
+
+          {
+            hazard:
+              "Insufficient calcium",
+
+            riskLevel:
+              "high-for-laying-hens-when-displacing-layer-feed",
+
+            explanation:
+              "Proso Millet does not provide the calcium concentration required for eggshell production and must not replace a complete layer ration or appropriate calcium program."
+          },
+
+          {
+            hazard:
+              "Mold and storage deterioration",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Grain stored before adequate drying or exposed to moisture, condensation, poor airflow, or temperature fluctuation may heat, mold, ferment, or develop unsafe deterioration."
+          },
+
+          {
+            hazard:
+              "Phytate-bound phosphorus",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A portion of the grain's phosphorus may be associated with phytate and should not be assumed to be completely available to chickens."
+          },
+
+          {
+            hazard:
+              "Hull-associated fiber",
+
+            riskLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Hull material is not acutely toxic, but it contributes fiber and reduces usable nutrient density compared with more thoroughly processed grain."
+          },
+
+          {
+            hazard:
+              "Whole-grain digestion without grit",
+
+            riskLevel:
+              "low-but-preventable",
+
+            explanation:
+              "Adult chickens consuming whole grain should have access to appropriately sized insoluble grit when their environment does not provide adequate natural grit."
+          },
+
+          {
+            hazard:
+              "Home-sprouting contamination",
+
+            riskLevel:
+              "moderate-to-high-when-poorly-managed",
+
+            explanation:
+              "Warm moisture used for sprouting can also support mold and bacterial growth. Safe sprouting requires untreated viable grain, clean water, sanitized equipment, dependable drainage, airflow, frequent rinsing, and close inspection."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A small number of whole panicles may create crowding or allow dominant birds to monopolize access."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Small grain scattered into wet litter can become difficult to recover, attract rodents or wild birds, and deteriorate before chickens consume it."
+          },
+
+          {
+            hazard:
+              "Dust from grinding or handling",
+
+            riskLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Fine grinding, threshing, winnowing, and handling can create airborne dust that should not be inhaled by people or concentrated in poorly ventilated poultry housing."
+          }
+        ],
+
+        emergencyUse:
+          "Proso Millet can provide short-term cereal energy, but it is not a nutritionally complete emergency ration. It should be combined with an appropriate complete poultry feed or incorporated into a ration formulated to meet poultry requirements.",
+
+        veterinaryCaution:
+          "Birds with crop disorders, digestive problems, obesity, restricted-energy diets, severe nutritional deficiencies, or other medical conditions may require individualized feeding guidance from a poultry veterinarian."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-supplement",
+
+          preferredForms: [
+            "Clean mature whole grain",
+            "Clean threshed grain",
+            "Whole mature panicles",
+            "Thoroughly dried mature panicles",
+            "Freshly cracked grain",
+            "Coarsely ground grain used promptly"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for whole Proso Millet grain and whole-panicle enrichment. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated. Chickens consuming whole grain should also have access to appropriately sized insoluble grit when adequate natural grit is unavailable."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Supplemental carbohydrate energy",
+            "Stored winter grain",
+            "Behavioral enrichment",
+            "Moderate supplemental protein",
+            "Seasonal homegrown feed"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Lysine and methionine remain limiting",
+            "Some phosphorus is associated with phytate",
+            "Excessive intake may displace amino acids, vitamins, minerals, and calcium"
+          ],
+
+          guidance:
+            "Laying hens may receive Proso Millet as a measured supplement, but a complete layer feed and an appropriate calcium program must remain the nutritional foundation. The presence of moderate crude protein should not be interpreted as proof that the grain supplies a complete amino-acid profile."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult grains may receive small amounts of clean Proso Millet, but their nutritionally complete grower or developer ration should remain dominant. Grain should not be allowed to dilute the nutrients needed for skeletal development, feathering, and preparation for egg production."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Informal feeding of whole or cracked Proso Millet can alter starter-ration balance, introduce unsuitable particle sizes, and increase reliance on supplemental grit.",
+
+          possibleException:
+            "A qualified poultry nutritionist may use appropriately processed Proso Millet in a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering whole grain, cracked grain, sprouts, or seed heads as informal backyard treats.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Incomplete amino-acid balance",
+            "Low calcium concentration",
+            "Need for age-appropriate particle size",
+            "Need for precise ration formulation",
+            "Need for appropriately sized grit when insoluble whole material is offered",
+            "Greater sensitivity to poor-quality, moldy, or contaminated grain"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Proso Millet can serve as an energy grain in balanced meat-bird diets, but published inclusion levels assume that the complete ration has been formulated for metabolizable energy, digestible amino acids, calcium, available phosphorus, vitamins, minerals, fiber, and other requirements. Backyard keepers should not copy a research-trial inclusion percentage into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume the same clean mature grain forms as adult hens. Portion control remains important because unrestricted cereal-grain intake may contribute to excessive body condition and displacement of a nutritionally balanced maintenance ration."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Proso Millet as a supplement, but reproductive performance depends on complete and balanced nutrition. Excessive grain intake should not dilute essential amino acids, vitamins, minerals, fatty acids, or other nutrients required for fertility, hatchability, and healthy offspring."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may require smaller supplemental amounts because Proso Millet contributes concentrated cereal energy. Body condition, mobility, and complete-feed intake should be monitored."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Proso Millet supplies energy and moderate crude protein but does not provide the complete digestible amino-acid balance needed for feather replacement. A balanced ration containing adequate usable protein, lysine, methionine, vitamins, and minerals remains more important than simply increasing grain intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Proso Millet may be readily consumed and can provide supplemental energy, but illness can alter nutritional, hydration, digestive, and swallowing needs. It should not replace diagnostic care, hydration support, complete recovery nutrition, or a veterinarian-recommended feeding program."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature whole grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fully mature, sound whole grain is the primary poultry-feed product. The intact seed stores efficiently when dried and protected correctly."
+          },
+
+          {
+            part:
+              "Clean threshed grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Threshed and cleaned mature grain is easy to measure, scatter, mix with other supplements, and store in compact rodent-resistant containers."
+          },
+
+          {
+            part:
+              "Fresh mature panicles",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Mature panicles containing fully developed sound seed can provide valuable behavioral enrichment by allowing chickens to remove grain naturally."
+          },
+
+          {
+            part:
+              "Thoroughly dried mature panicles",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Properly dried whole panicles can be stored for later enrichment and avoid much of the labor required for threshing, winnowing, and cleaning loose grain."
+          },
+
+          {
+            part:
+              "Freshly cracked mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Cracking may improve accessibility and mixing, but it increases exposed surface area and shortens practical storage life."
+          },
+
+          {
+            part:
+              "Freshly ground mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Ground Proso Millet can be blended into a professionally formulated ration or used promptly as a supplemental ingredient. Grinding does not correct its amino-acid, calcium, vitamin, or mineral limitations."
+          },
+
+          {
+            part:
+              "Properly produced sprouts",
+
+            suitability:
+              "acceptable-with-special-care",
+
+            explanation:
+              "Sprouted Proso Millet may be offered only when produced from untreated viable grain under sanitary conditions. Sprouting increases water content and fresh weight but does not create additional feed dry matter."
+          },
+
+          {
+            part:
+              "Shattered mature grain recovered through postharvest gleaning",
+
+            suitability:
+              "acceptable",
+
+            explanation:
+              "Chickens may recover clean mature seed remaining after harvest, but gleaning does not permit precise measurement and should occur only where soil, crop residue, chemicals, predators, and other site conditions are safe."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Mature stems",
+
+            reason:
+              "Highly fibrous and not a concentrated poultry feed."
+          },
+
+          {
+            part:
+              "Mature leaves",
+
+            reason:
+              "Provide substantially less feed value than the mature grain and become increasingly fibrous as the crop matures."
+          },
+
+          {
+            part:
+              "Roots",
+
+            reason:
+              "No practical poultry-feed use."
+          },
+
+          {
+            part:
+              "Empty panicle branches",
+
+            reason:
+              "Contain little useful nutrition after the grain has been removed."
+          },
+
+          {
+            part:
+              "Loose hulls and coarse chaff",
+
+            reason:
+              "Primarily fibrous material that dilutes nutrient density and may contain dust or foreign matter."
+          },
+
+          {
+            part:
+              "Mature straw",
+
+            reason:
+              "May be useful for bedding, mulch, or compost carbon but should not be treated as concentrated poultry feed."
+          },
+
+          {
+            part:
+              "Unverified grain screenings",
+
+            reason:
+              "May contain immature kernels, weed seeds, moldy grain, insects, soil, stones, chemical contamination, or other unsuitable material."
+          }
+        ],
+
+        ediblePartSummary:
+          "Nearly all of Proso Millet's dependable poultry-feed value comes from its mature grain. Whole mature panicles add enrichment value, while vegetative portions, straw, hulls, and chaff provide little concentrated nutrition."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Clean whole mature grain",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Measured supplemental cereal feeding and long-term storage."
+          },
+
+          {
+            form:
+              "Whole mature panicles",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Behavioral enrichment with minimal processing."
+          },
+
+          {
+            form:
+              "Thoroughly dried mature panicles",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Stored winter enrichment and natural seed-removal activity."
+          },
+
+          {
+            form:
+              "Freshly cracked grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured supplemental feeding where easier grain access or improved mixing is desired."
+          },
+
+          {
+            form:
+              "Freshly coarsely ground grain",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Prompt use as an ingredient in a properly balanced feed formulation."
+          }
+        ],
+
+        acceptableForms: [
+          "Fresh mature panicles",
+          "Naturally dried mature panicles",
+          "Clean whole mature grain",
+          "Clean threshed grain",
+          "Freshly cracked grain",
+          "Freshly coarsely ground grain",
+          "Properly produced short sprouts",
+          "Limited postharvest gleaning"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Ground grain",
+
+            concern:
+              "Increased surface area shortens storage life, creates dust, and does not eliminate the need for complete-ration formulation."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            concern:
+              "Physical damage increases exposure to oxygen, humidity, insects, and contamination."
+          },
+
+          {
+            form:
+              "Whole grain",
+
+            concern:
+              "Birds should have access to appropriately sized insoluble grit where adequate natural grit is unavailable."
+          },
+
+          {
+            form:
+              "Whole panicles",
+
+            concern:
+              "Actual grain consumption and waste are harder to measure, and dominant birds may monopolize access."
+          },
+
+          {
+            form:
+              "Sprouted grain",
+
+            concern:
+              "Warm moist conditions can support mold and bacterial growth unless sanitation, drainage, airflow, rinsing, and inspection are dependable."
+          },
+
+          {
+            form:
+              "Postharvest gleaning",
+
+            concern:
+              "Feed intake cannot be measured accurately, and the site must be free from unsafe chemical residues, moldy material, foreign objects, and predator hazards."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Moldy grain",
+          "Musty grain",
+          "Heated grain",
+          "Sour grain",
+          "Fermenting grain",
+          "Wet stored grain",
+          "Rodent-contaminated grain",
+          "Flood-contaminated grain",
+          "Heavily insect-damaged grain",
+          "Spoiled sprouts",
+          "Slimy sprouts",
+          "Moldy sprouts",
+          "Unidentified mixed Millet products",
+          "Grain screenings of uncertain quality",
+          "Extremely dusty finely ground grain"
+        ],
+
+        wholeHeadAdvantages: [
+          "Provides natural pecking enrichment",
+          "Encourages seed-searching behavior",
+          "Requires little processing",
+          "Avoids most threshing labor",
+          "Avoids most winnowing labor",
+          "Reduces the need for small-grain cleaning equipment",
+          "Can provide useful winter activity"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Simple to scatter across a clean feeding area",
+          "Simple to divide among several feeding stations",
+          "Easier to inspect than intact panicles",
+          "More compact to store",
+          "Easier to mix with other ingredients",
+          "Allows more precise ration management"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Hard to estimate actual grain consumption",
+          "Dominant birds may monopolize access",
+          "Grain loss beneath the feeding location is common",
+          "Bulky storage requires more space",
+          "Panicles may retain moisture within dense material",
+          "Must be removed if mold or spoilage develops"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires threshing",
+          "Requires winnowing",
+          "Requires cleaning",
+          "Requires careful drying",
+          "Requires rodent-resistant storage",
+          "Small grain can be difficult to separate from fine chaff",
+          "Scattered grain may disappear into litter or soil",
+          "Cracked and ground grain deteriorate faster than intact grain"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Not all Proso Millet cultivars produce identical poultry feed or perform equally in backyard conditions. Grain color, seed size, hull characteristics, maturity, plant height, lodging resistance, shattering resistance, disease response, and nutritional composition can differ among cultivars.",
+
+        whiteSeededCultivars: {
+          recommended:
+            true,
+
+          explanation:
+            "White-seeded cultivars are widely grown for grain and birdseed markets and may provide useful clean poultry grain. Seed color alone does not establish maturity, nutritional superiority, shattering resistance, or regional suitability."
+        },
+
+        redSeededCultivars: {
+          recommended:
+            true,
+
+          explanation:
+            "Red-seeded cultivars can also provide suitable poultry grain when mature, sound, untreated, and adapted to local conditions. Colored seed lots may differ in phenolic composition, but color should not be used as the sole basis for feeding recommendations."
+        },
+
+        darkSeededCultivars: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Brown, black, or other dark-seeded cultivars may be suitable, but cultivar-specific nutritional composition, hull characteristics, maturity, and agronomic performance should be evaluated rather than inferred from appearance."
+        },
+
+        earlyMaturingCultivars: {
+          advantages: [
+            "Greater reliability in short frost-free seasons",
+            "Earlier harvest before autumn rain or frost",
+            "Potential fit after an early harvested crop",
+            "Reduced exposure to late-season bird pressure and weathering"
+          ]
+        },
+
+        shatteringResistantCultivars: {
+          advantages: [
+            "Improved retention of mature grain",
+            "Reduced field loss before harvest",
+            "Greater flexibility in small-scale harvest timing"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate",
+
+        preparationSummary:
+          "Proso Millet requires no cooking, boiling, fermentation, or heat treatment before routine supplemental feeding. The principal preparation work involves allowing the grain to mature, harvesting before excessive shattering or bird loss, completing postharvest drying, inspecting for contamination, and choosing between whole-panicle use and the more labor-intensive loose-grain pathway.",
+
+        requiredPreparation: [
+          "Allow grain to reach full maturity.",
+          "Harvest before severe shattering, bird loss, lodging, or prolonged wet weather.",
+          "Complete drying under cover when field conditions do not produce safely dry grain.",
+          "Inspect panicles and grain for mold, insects, rodent contamination, and abnormal odors.",
+          "Store only mature, clean, cool, adequately dried grain or panicles.",
+          "Provide appropriately sized insoluble grit when adult chickens consume whole grain and adequate natural grit is unavailable."
+        ],
+
+        optionalPreparation: [
+          "Offer intact mature panicles without threshing.",
+          "Thresh and winnow grain for more precise measurement.",
+          "Clean loose grain to remove chaff, immature kernels, weed seeds, and foreign material.",
+          "Crack grain shortly before feeding.",
+          "Coarsely grind grain shortly before use in a properly formulated ration.",
+          "Produce short sprouts only from untreated viable grain under sanitary conditions.",
+          "Freeze clean dry grain when appropriate as part of a stored-product insect-management plan."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Heat treatment",
+          "Dehulling for routine adult-chicken supplementation"
+        ],
+
+        preparationMistakes: [
+          "Harvesting grain before adequate maturity.",
+          "Waiting so long that substantial shattering or wild-bird loss occurs.",
+          "Sealing grain before it has dried and cooled sufficiently.",
+          "Storing damp whole panicles in dense piles or closed containers.",
+          "Assuming field-dry panicles are automatically safe for sealed storage.",
+          "Failing to remove fine chaff, weed seeds, stones, and damaged grain before long-term storage.",
+          "Grinding or cracking large quantities far in advance of feeding.",
+          "Allowing processed grain to absorb moisture.",
+          "Sprouting chemically treated planting seed.",
+          "Using unsanitary containers or poor drainage during sprouting.",
+          "Feeding sour, slimy, moldy, heated, musty, or insect-damaged material.",
+          "Assuming processing corrects nutrient deficiencies or contamination."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "high-energy-starch-rich-cereal-grain-supplement",
+
+        nutritionSummary:
+          "Mature Proso Millet grain is a starch-rich cereal feed containing substantial carbohydrate energy, moderate crude protein, modest fat, phosphorus, magnesium, potassium, manganese, iron, zinc, B vitamins, and other nutrients. Its primary practical value for chickens comes from cereal energy, storage stability, and feeding flexibility rather than from complete protein, high calcium, or balanced-ration nutrition.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary among cultivars, seed colors, growing environments, hull proportions, harvest maturities, whole grain, cleaned grain, dehulled grain, cracked grain, ground grain, cooked grain, sprouted grain, and grain screenings. These products and processing forms must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Concentrated carbohydrate energy",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Proso Millet stores most of its feed energy as starch. This makes mature grain a useful supplemental energy source and places its nutritional role closer to other cereal grains than to leafy forage or protein-rich legumes."
+          },
+
+          {
+            nutrientRole:
+              "Moderate plant protein",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Proso Millet commonly contains a useful amount of crude protein for a cereal grain, but crude-protein percentage alone does not describe amino-acid quality or establish that the grain can replace a balanced protein source."
+          },
+
+          {
+            nutrientRole:
+              "Useful cereal metabolizable energy",
+
+            importance:
+              "high",
+
+            explanation:
+              "Research supports Proso Millet as a useful energy ingredient in properly formulated poultry diets. Exact metabolizable-energy value varies with cultivar, hull content, nutrient composition, processing, and the birds being fed."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "The grain can contribute phosphorus, magnesium, potassium, manganese, iron, zinc, and other minerals, but it does not provide a complete or correctly balanced poultry mineral program."
+          },
+
+          {
+            nutrientRole:
+              "Modest dietary fat",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Proso Millet contains more fat than some cereal grains but remains far less oil rich than Sunflower seed. Its primary energy contribution still comes from starch rather than oil."
+          },
+
+          {
+            nutrientRole:
+              "B-vitamin contribution",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Mature grain contains several B vitamins, although actual contribution depends on grain composition, processing, storage, and the amount consumed."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Moderate crude protein",
+          "Phosphorus",
+          "Magnesium",
+          "Potassium",
+          "Manganese",
+          "Iron",
+          "Zinc",
+          "B vitamins",
+          "Unsaturated fatty acids"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate for a cereal grain, commonly approximately 11% to 13% of dry matter under typical conditions, with meaningful cultivar and environmental variation.",
+
+          fat:
+            "Modest, commonly approximately 3% to 4% of dry matter, and substantially lower than oil-rich Sunflower seed.",
+
+          fiber:
+            "Low to moderate but variable, depending especially on hull retention, cultivar, processing, and analytical method.",
+
+          starch:
+            "High, commonly approximately 60% to 70% of dry matter, making starch the grain's dominant nutritional component.",
+
+          calcium:
+            "Low and insufficient to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Present in nutritionally meaningful amounts, but some is associated with phytate and should not be assumed to be completely available.",
+
+          energy:
+            "High for a dry cereal grain and useful in properly balanced poultry diets, although exact poultry metabolizable-energy values vary."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Proso Millet includes the grain's outer coverings and any retained hull material. The intact grain stores efficiently and provides a practical whole-seed feeding form but contains more fiber than a more completely dehulled product.",
+
+          dehulledKernel:
+            "Dehulled Proso Millet has less fibrous outer material and a greater concentration of starch, protein, fat, and usable energy on an equal-weight basis. Dehulling also removes some physical protection and requires additional processing.",
+
+          practicalMeaning:
+            "A pound of whole grain should not automatically be treated as nutritionally identical to a pound of dehulled grain. Hull proportion and processing materially affect fiber, nutrient density, digestibility, waste, and storage behavior."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole grain retains its natural starch, protein, fat, fiber, outer layers, and intact physical structure and is primarily used as a cereal-energy feed.",
+
+          sunflowerMeal:
+            "Proso Millet does not produce an oil-extraction meal directly equivalent to Sunflower meal. Ground Proso Millet remains the same cereal grain in a smaller particle form rather than becoming a concentrated protein meal.",
+
+          practicalMeaning:
+            "Grinding Proso Millet changes particle size, mixing behavior, dust production, and storage stability, but it does not transform the grain into a high-protein feed or correct its amino-acid and mineral limitations."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cultivar",
+          "Seed color",
+          "Hull percentage",
+          "Seed size",
+          "Kernel development",
+          "Growing environment",
+          "Soil fertility",
+          "Water availability",
+          "Harvest maturity",
+          "Weathering before harvest",
+          "Postharvest drying",
+          "Storage duration",
+          "Storage temperature",
+          "Moisture exposure",
+          "Whole versus dehulled grain",
+          "Cracking",
+          "Grinding",
+          "Cooking",
+          "Sprouting",
+          "Foreign-material content",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Strong Supplemental Cereal Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Proso Millet is a starch-rich grain that can provide useful supplemental energy for established adult chickens. Its role is similar to other cereal grains rather than to leafy forage or concentrated protein feeds."
+          },
+
+          {
+            title:
+              "Excellent Dry-Storage Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Clean whole grain can remain useful for many months when it is mature, adequately dried, cooled, and protected from moisture, condensation, insects, rodents, contamination, and temperature fluctuation."
+          },
+
+          {
+            title:
+              "Useful Whole-Panicle Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature panicles allow chickens to remove grain through pecking and manipulation. This extends feeding time and provides natural foraging activity without requiring the grower to thresh every seed."
+          },
+
+          {
+            title:
+              "Low-Processing Feeding Option",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Whole mature panicles can be harvested, dried, inspected, and offered directly. This avoids most threshing, winnowing, cleaning, cracking, and grinding labor."
+          },
+
+          {
+            title:
+              "Strong Winter Feed Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "The dry grain's energy density and storage stability make it useful as a measured winter supplement or stored enrichment crop when fresh garden forage is limited."
+          },
+
+          {
+            title:
+              "Short-Season Grain Production",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Proso Millet can mature more quickly than many other warm-season grains, allowing it to produce supplemental grain in short frost-free seasons or after some early harvested crops."
+          },
+
+          {
+            title:
+              "Drought-Adapted Homestead Crop",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Once established, Proso Millet is comparatively drought tolerant and may produce useful grain under conditions where longer-season or more water-demanding crops are less dependable."
+          },
+
+          {
+            title:
+              "Flexible Feeding Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "The crop can be offered as whole mature panicles, loose whole grain, cracked grain, coarsely ground grain, carefully produced sprouts, or limited postharvest gleaning."
+          },
+
+          {
+            title:
+              "Moderate Supplemental Protein",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Proso Millet contributes a moderate amount of cereal-grain protein, although lysine, methionine, and total amino-acid balance remain inadequate for use as a stand-alone protein source."
+          },
+
+          {
+            title:
+              "Useful Portion Measurement",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Clean loose grain can be weighed or measured more consistently than whole panicles, allowing better control of supplemental feeding."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Natural seed removal",
+
+            explanation:
+              "Chickens can peck individual grains from mature panicles rather than consuming loose grain immediately from a dish."
+          },
+
+          {
+            benefit:
+              "Extended feeding time",
+
+            explanation:
+              "Whole-panicle feeding generally requires more searching and manipulation than offering the same grain loose."
+          },
+
+          {
+            benefit:
+              "Scatter-feeding activity",
+
+            explanation:
+              "Small quantities of clean grain can be distributed across a clean, dry area to encourage walking, scratching, searching, and pecking."
+          },
+
+          {
+            benefit:
+              "Cold-season activity",
+
+            explanation:
+              "Stored panicles can provide structured enrichment during winter or periods of confinement when natural forage opportunities are reduced."
+          },
+
+          {
+            benefit:
+              "Postharvest gleaning",
+
+            explanation:
+              "Where site conditions are safe, chickens may search harvested ground for mature shattered seed that would otherwise remain unused."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Loose grain can be divided among several feeding stations",
+          "Whole panicles can reduce household processing labor",
+          "Clean grain can be stored for periods of limited fresh forage",
+          "Small grain is easy to scatter for controlled enrichment",
+          "Loose grain permits more accurate measurement than whole panicles",
+          "Whole grain can be cracked or ground later as needed",
+          "Supplemental amounts can be introduced gradually",
+          "Unused panicles can be removed when offered in a holder or designated feeding area"
+        ],
+
+        homesteadBenefits: [
+          "Warm-season annual suitable for crop rotation",
+          "Short maturity compared with many grain crops",
+          "Comparatively low water requirement after establishment",
+          "Small seed quantity can plant a substantial area",
+          "Whole-panicle use avoids specialized threshing equipment",
+          "Clean dry grain requires no refrigeration",
+          "Open-pollinated cultivars may permit seed saving",
+          "Straw can contribute bedding, mulch, compost carbon, or soil cover",
+          "May fit after an early harvested cool-season crop where sufficient warm weather remains"
+        ],
+
+        benefitSummary:
+          "Proso Millet's greatest backyard value comes from combining dependable cereal energy, exceptional dry-storage potential, whole-panicle enrichment, short-season production, drought adaptation, and flexible processing choices. It is less valuable as a primary protein source, calcium source, living forage crop, or replacement for complete poultry feed."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Proso Millet does not provide the complete balance of energy, protein, digestible amino acids, calcium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Although Proso Millet contains moderate crude protein for a cereal grain, lysine and methionine remain limiting and prevent it from serving as a stand-alone protein source."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "The grain contains far too little calcium to support eggshell formation and must never replace a complete layer ration or an appropriate calcium program."
+          },
+
+          {
+            title:
+              "Primarily an Energy Grain",
+
+            severity:
+              "high",
+
+            explanation:
+              "Most of Proso Millet's nutritional value comes from starch rather than concentrated protein, balanced amino acids, calcium, or vitamins."
+          },
+
+          {
+            title:
+              "Phytate Reduces Phosphorus Availability",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Some phosphorus is associated with phytate and therefore should not be assumed to be completely available to poultry."
+          },
+
+          {
+            title:
+              "Whole Grain Requires Grit",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Adult chickens consuming whole grain should have access to appropriately sized insoluble grit when adequate natural grit is unavailable."
+          },
+
+          {
+            title:
+              "Whole Panicles Are Difficult to Portion",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Whole-panicle enrichment makes exact grain consumption difficult to estimate because birds remove grain at different rates and waste varies among flocks."
+          },
+
+          {
+            title:
+              "Storage Quality Determines Safety",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Improper drying, inadequate airflow, moisture, insects, rodents, heating, or mold can quickly make stored grain unsuitable for poultry feeding."
+          },
+
+          {
+            title:
+              "Wild Birds May Harvest the Crop First",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Small backyard grain plots frequently experience significant wild-bird feeding before harvest unless harvest timing or crop protection is managed carefully."
+          },
+
+          {
+            title:
+              "No Universal Feeding Percentage Exists",
+
+            severity:
+              "high",
+
+            explanation:
+              "Appropriate supplementation depends upon flock age, production stage, climate, complete ration, body condition, grain form, and management. Current evidence does not support one universal backyard inclusion percentage."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Not a complete poultry ration",
+          "Low lysine",
+          "Low methionine",
+          "Insufficient calcium for laying hens",
+          "Moderate rather than high protein",
+          "Primarily a starch-based energy grain",
+          "Some phosphorus associated with phytate",
+          "Whole grain contains hull-associated fiber",
+          "Vitamin and mineral balance remains incomplete",
+          "Does not replace a balanced commercial ration"
+        ],
+
+        practicalLimitations: [
+          "Requires harvesting after full maturity",
+          "Whole panicles are difficult to portion precisely",
+          "Loose grain requires threshing",
+          "Loose grain requires cleaning",
+          "Loose grain requires drying",
+          "Loose grain requires rodent-resistant storage",
+          "Small grain can be difficult to separate from fine chaff",
+          "Wild birds may consume grain before harvest",
+          "Seed shattering can reduce harvestable yield",
+          "Uneven maturity may require more than one harvest pass",
+          "Ground grain stores poorly compared with whole grain",
+          "Sprouting requires careful sanitation",
+          "Processed grain has shorter storage life",
+          "Whole grain generally requires grit"
+        ],
+
+        storageLimitations: [
+          "Grain must be completely dry before sealed storage.",
+          "Condensation can rapidly spoil stored grain.",
+          "Rodents readily consume stored grain.",
+          "Stored-product insects may develop in warm grain.",
+          "Cracked grain stores less successfully than whole grain.",
+          "Ground grain deteriorates faster than intact grain.",
+          "Whole panicles require more storage volume.",
+          "Grain should be inspected regularly throughout storage."
+        ],
+
+        managementLimitations: [
+          "Should remain a supplement rather than the primary feed.",
+          "Complete-feed intake should continue to be monitored.",
+          "Stored grain should be rotated regularly.",
+          "Bird body condition should be observed during heavy supplementation.",
+          "Whole-panicle enrichment should not allow dominant birds to monopolize access.",
+          "Spoiled grain should never be blended with sound grain.",
+          "Field-grown grain should never be assumed safe without inspection after harvest."
+        ],
+
+        limitationSummary:
+          "Proso Millet is an excellent supplemental cereal grain, but it remains nutritionally incomplete. Its greatest limitations involve amino-acid balance, calcium deficiency, phytate, storage management, and the fact that it should never replace a properly balanced poultry ration."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Proso Millet functions primarily as a supplemental cereal-energy grain. It performs best when paired with feeds that supply nutrients it naturally lacks rather than being relied upon by itself.",
+
+        bestFoundation:
+          "A complete commercial poultry ration should remain the nutritional foundation for nearly every backyard flock. Homegrown Proso Millet should supplement—not replace—that balanced diet.",
+
+        complements: [
+          {
+            feedType:
+              "Complete Layer Feed",
+
+            relationship:
+              "Supplies calcium, vitamins, minerals, amino acids, and balanced nutrition while Proso Millet contributes supplemental cereal energy."
+          },
+
+          {
+            feedType:
+              "Complete Grower Feed",
+
+            relationship:
+              "Provides balanced nutrition for developing birds while allowing modest grain supplementation."
+          },
+
+          {
+            feedType:
+              "Sunflower",
+
+            relationship:
+              "Adds concentrated oil, calories, vitamin E, and essential fatty acids, complementing Proso Millet's starch-based energy."
+          },
+
+          {
+            feedType:
+              "Cowpeas",
+
+            relationship:
+              "Provide substantially more protein and improved amino-acid contribution than cereal grain alone."
+          },
+
+          {
+            feedType:
+              "Field Peas",
+
+            relationship:
+              "Improve overall protein quality and help balance the limitations of cereal grains."
+          },
+
+          {
+            feedType:
+              "Soybeans (properly processed)",
+
+            relationship:
+              "Supply high-quality protein and essential amino acids lacking in cereal grains."
+          },
+
+          {
+            feedType:
+              "Alfalfa",
+
+            relationship:
+              "Adds vitamins, carotenoids, minerals, and leafy forage that Proso Millet does not provide."
+          },
+
+          {
+            feedType:
+              "Kale and Collards",
+
+            relationship:
+              "Increase vitamin, mineral, and fresh-green diversity within the supplemental feeding program."
+          },
+
+          {
+            feedType:
+              "Pumpkin and Winter Squash",
+
+            relationship:
+              "Provide seasonal moisture, carotenoids, enrichment, and dietary diversity."
+          },
+
+          {
+            feedType:
+              "Free-ranging insects",
+
+            relationship:
+              "Naturally increase high-quality animal protein while Proso Millet contributes dependable energy."
+          }
+        ],
+
+        doesNotCorrect: [
+          "Calcium deficiency",
+          "Methionine deficiency",
+          "Lysine deficiency",
+          "Incomplete amino-acid balance",
+          "Vitamin deficiencies",
+          "Trace-mineral deficiencies",
+          "Poor flock management",
+          "Overcrowding",
+          "Inadequate housing",
+          "Poor sanitation",
+          "Lack of clean water",
+          "Poor-quality complete feed"
+        ],
+
+        pairingWarning:
+          "Pairing several supplemental grains together does not automatically create a balanced poultry ration. Combining Proso Millet with Corn, Wheat, Oats, Sorghum, or other cereal grains primarily increases carbohydrate energy and should not be mistaken for complete nutrition.",
+
+        practicalBackyardApproach:
+          "For most backyard flocks, Proso Millet works best as an occasional measured grain supplement or whole-panicle enrichment while a complete commercial ration remains continuously available. Protein-rich legumes, leafy greens, insects, and other complementary feeds can increase dietary diversity, but they should support rather than replace a balanced poultry feed."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Proso Millet should be treated as a supplemental cereal-energy grain and enrichment crop rather than as a staple feed. Every feeding method should protect consumption of the flock's complete ration.",
+
+        primaryMethods: [
+          {
+            method:
+              "Whole mature panicles",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "One of the simplest backyard feeding methods. Chickens remove the small grains gradually while pecking and manipulating the panicle, providing enrichment without requiring threshing."
+          },
+
+          {
+            method:
+              "Thoroughly dried mature panicles",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Properly dried panicles provide valuable stored enrichment during autumn and winter while avoiding most threshing, winnowing, and cleaning labor."
+          },
+
+          {
+            method:
+              "Clean loose whole grain",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "The best form for measuring supplemental intake accurately. Whole grain also stores more reliably than cracked or ground grain when properly dried and protected."
+          },
+
+          {
+            method:
+              "Freshly cracked grain",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Useful when easier grain access or improved mixing is desired, but cracking increases exposure to moisture, oxygen, insects, and contamination and therefore shortens storage life."
+          },
+
+          {
+            method:
+              "Freshly coarsely ground grain",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Best used promptly as an ingredient in a properly balanced ration. Grinding changes particle size but does not correct Proso Millet's amino-acid, calcium, vitamin, mineral, or available-phosphorus limitations."
+          },
+
+          {
+            method:
+              "Properly produced sprouts",
+
+            recommendation:
+              "Use With Special Care",
+
+            explanation:
+              "Sprouted Proso Millet may provide fresh enrichment when produced from clean, viable, explicitly untreated grain under sanitary conditions. Sprouts are highly perishable and should be discarded immediately if they become sour, slimy, moldy, unusually warm, or discolored."
+          },
+
+          {
+            method:
+              "Postharvest gleaning",
+
+            recommendation:
+              "Seasonally Useful",
+
+            explanation:
+              "Chickens may recover clean mature grain and missed panicles after harvest where the site is safe. This method provides natural foraging but does not allow precise measurement of intake."
+          }
+        ],
+
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce Proso Millet gradually while observing complete-feed intake, droppings, crop function, flock behavior, body condition, and competition. Begin with a small amount so birds learn to recognize the grain without allowing it to displace their complete ration."
+        },
+
+        observationChecklist: [
+          "Complete feed consumption remains normal.",
+          "Birds do not wait for Millet while refusing balanced feed.",
+          "Droppings remain normal.",
+          "Crop emptying appears normal.",
+          "No unusual selective feeding develops.",
+          "No evidence of excessive weight gain develops over time.",
+          "Whole grain is being consumed successfully.",
+          "Appropriate insoluble grit remains available where needed.",
+          "Panicles and loose grain are consumed before spoilage occurs.",
+          "No mold develops on remaining panicles.",
+          "No sour or musty odor develops.",
+          "No excessive dust is produced from ground grain.",
+          "Dominant birds do not prevent lower-ranking birds from accessing the supplement.",
+          "Rodents and wild birds are not attracted to persistent leftovers."
+        ],
+
+        wholeHeadManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Strong natural pecking enrichment",
+            "Extended feeding duration",
+            "Minimal processing",
+            "No threshing required",
+            "No winnowing required",
+            "Simple seasonal harvest",
+            "Useful winter activity"
+          ],
+
+          managementTips: [
+            "Use only fully mature, clean, sound panicles.",
+            "Dry stored panicles thoroughly before placing them in containers.",
+            "Hang or secure panicles without creating string, wire, or netting hazards.",
+            "Provide several panicles or feeding locations for larger flocks.",
+            "Avoid placing panicles directly into wet litter.",
+            "Remove panicles that become damp, moldy, musty, sour, or heavily soiled.",
+            "Inspect stored panicles before every feeding.",
+            "Expect some grain and chaff loss beneath the feeding location."
+          ]
+        },
+
+        looseSeedManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Easy to measure",
+            "Easy to weigh",
+            "Simple to divide among several feeding stations",
+            "Compact storage",
+            "Easier quality inspection",
+            "Useful for controlled scatter feeding",
+            "Simple to mix into professionally formulated rations"
+          ],
+
+          managementTips: [
+            "Feed only an amount the flock will consume promptly.",
+            "Keep the complete ration continuously available.",
+            "Avoid scattering grain into mud, manure, deep litter, or wet bedding.",
+            "Use several feeding locations where flock competition is a concern.",
+            "Store remaining grain in clean rodent-resistant containers.",
+            "Keep storage containers in a cool, dark, dry location.",
+            "Inspect regularly for insects, moisture, heating, and abnormal odors.",
+            "Keep the main grain supply whole until cracking or grinding is actually needed."
+          ]
+        },
+
+        gritConsiderations: {
+          gritHelpful:
+            true,
+
+          explanation:
+            "Established adult chickens consuming whole Proso Millet grain should have access to appropriately sized insoluble grit whenever adequate natural grit is unavailable. Oyster shell and other soluble calcium sources do not replace digestive grit."
+        },
+
+        feedingFrequency: {
+          dailyStaple:
+            false,
+
+          supplemental:
+            true,
+
+          enrichment:
+            true,
+
+          seasonal:
+            true,
+
+          explanation:
+            "Feeding frequency should depend upon the complete ration, bird age, flock activity, body condition, season, weather, production status, and total supplemental-feed intake rather than a fixed schedule. Proso Millet should not become the flock's unrestricted daily staple."
+        },
+
+        seasonalUse: {
+          spring:
+            "Stored grain or panicles may be used as limited enrichment while fresh forage begins returning. Avoid allowing birds into newly planted Millet because they may consume seed, damage seedlings, and prevent crop establishment.",
+
+          summer:
+            "Use measured amounts during warm weather. The growing crop should normally remain protected from chickens until grain maturity, and excessive cereal supplementation should be avoided when heat reduces appetite for complete feed.",
+
+          autumn:
+            "The principal harvest and feeding season. Fresh mature panicles can be offered promptly, while additional panicles and loose grain can be dried for later use.",
+
+          winter:
+            "Excellent as a stored grain or whole-panicle enrichment crop. It provides supplemental cereal energy and activity but does not replace complete feed, dry shelter, ventilation, or unfrozen water."
+        },
+
+        weatherConsiderations: {
+          coldWeather:
+            "Useful as a measured supplemental energy grain, especially when birds have greater energy needs. It should not be used to compensate for an inadequate ration or poor winter housing.",
+
+          hotWeather:
+            "Avoid excessive grain feeding when heat stress already reduces complete-feed consumption. Offer supplements during cooler parts of the day when appropriate.",
+
+          rainyWeather:
+            "Protect loose grain and panicles from rain, wet litter, mud, and standing water. Remove uneaten material before it absorbs moisture.",
+
+          humidClimate:
+            "Use additional airflow and inspection during drying and storage because dense panicles, grain piles, and chaff may retain moisture and develop mold.",
+
+          freezingWeather:
+            "Dry grain remains suitable in cold conditions when protected from condensation. Moving cold containers into warm humid air may cause moisture to form on the grain."
+        },
+
+        managementWarnings: [
+          "Do not allow Proso Millet to replace balanced complete feed.",
+          "Do not provide unrestricted free-choice grain.",
+          "Do not assume that moderate crude protein makes Proso Millet a complete protein source.",
+          "Do not rely on Proso Millet as a calcium source for laying hens.",
+          "Provide appropriate insoluble grit when whole grain is consumed and natural grit is inadequate.",
+          "Do not feed chemically treated planting seed.",
+          "Do not feed moldy, musty, heated, sour, fermenting, insect-damaged, or rodent-contaminated grain.",
+          "Do not blend questionable grain with sound grain.",
+          "Do not store damp grain or panicles in sealed containers.",
+          "Protect harvested grain from rodents, wild birds, and stored-product insects.",
+          "Remove wet or spoiled leftovers promptly.",
+          "Monitor body condition and complete-feed intake throughout the year.",
+          "Reserve substantial ration inclusion for professionally formulated diets."
+        ]
+      },
+
+      storage: {
+        storageSuitability:
+          "excellent-when-mature-clean-and-thoroughly-dried",
+
+        preferredStorageForms: [
+          {
+            form:
+              "Clean intact whole grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Whole Proso Millet grain is the most compact and generally the most stable storage form. The intact outer layers help protect the kernel from oxygen, moisture, insects, physical damage, and contamination."
+          },
+
+          {
+            form:
+              "Thoroughly dried whole panicles",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Whole panicles can be stored successfully for seasonal enrichment when fully dried, loosely arranged, protected from pests, and inspected regularly. They require substantially more storage space than loose grain."
+          },
+
+          {
+            form:
+              "Dehulled grain",
+
+            suitability:
+              "moderate",
+
+            explanation:
+              "Dehulled grain has less physical protection and should generally be stored for less time than intact whole grain."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            suitability:
+              "limited",
+
+            explanation:
+              "Cracking exposes internal grain surfaces and shortens practical storage life. Crack only small quantities close to feeding time."
+          },
+
+          {
+            form:
+              "Ground grain",
+
+            suitability:
+              "poor-for-long-term-storage",
+
+            explanation:
+              "Ground grain absorbs moisture and odors more readily, creates dust, and deteriorates faster than intact grain. It should be prepared in small quantities and used promptly."
+          },
+
+          {
+            form:
+              "Sprouted grain",
+
+            suitability:
+              "very-poor",
+
+            explanation:
+              "Sprouted grain is a fresh, moisture-rich product rather than a dry-storage feed. It should be fed promptly after final rinsing and draining or held only briefly under refrigeration."
+          }
+        ],
+
+        idealStorageConditions: [
+          "Grain fully mature before storage",
+          "Grain thoroughly dried",
+          "Grain cooled before sealing",
+          "Cool storage temperature",
+          "Low humidity",
+          "Dark location",
+          "Clean containers",
+          "Rodent-resistant containers",
+          "Protection from insects",
+          "Protection from roof and plumbing leaks",
+          "No condensation",
+          "Stable temperatures",
+          "Regular inspection",
+          "Separate storage of different harvest lots"
+        ],
+
+        unsuitableStorageConditions: [
+          "Warm damp sheds",
+          "Unsealed paper bags",
+          "Open buckets",
+          "Containers accessible to rodents",
+          "Direct sunlight",
+          "Areas with major temperature swings",
+          "Grain stored before cooling",
+          "Damp panicles packed tightly together",
+          "Deep piles without airflow",
+          "Containers with condensation",
+          "Storage beside chemicals, fuel, pesticides, or strong odors",
+          "Wet coop litter",
+          "Ground grain stored for extended periods"
+        ],
+
+        containerRecommendations: [
+          "Food-safe buckets with secure lids",
+          "Metal grain cans with tight-fitting lids",
+          "Food-safe sealed bins placed where rodents cannot chew through them",
+          "Clean glass containers for small quantities",
+          "Breathable drying racks or screens before sealed storage",
+          "Rigid containers that prevent crushing and moisture entry"
+        ],
+
+        wholeHeadStorage: {
+          recommended:
+            true,
+
+          guidance: [
+            "Dry panicles completely before storage.",
+            "Spread or hang panicles with strong airflow during drying.",
+            "Avoid tightly packed bundles while moisture remains.",
+            "Trim excess stem where practical to improve storage efficiency.",
+            "Store loosely enough that individual panicles can be inspected.",
+            "Protect from rodents, wild birds, insects, and moisture.",
+            "Discard panicles showing mold, heating, sour odor, or abnormal discoloration."
+          ]
+        },
+
+        looseGrainStorage: {
+          recommended:
+            true,
+
+          guidance: [
+            "Thresh only mature, adequately dried panicles.",
+            "Remove chaff, weed seeds, stones, damaged kernels, and foreign material.",
+            "Verify that grain is cool and dry before sealing.",
+            "Use clean rodent-resistant containers.",
+            "Keep containers off damp floors and away from exterior walls where condensation may occur.",
+            "Open and inspect containers periodically.",
+            "Keep cracked and ground grain separate from the primary whole-grain supply.",
+            "Use older sound grain before newer grain."
+          ]
+        },
+
+        inventoryManagement: {
+          firstInFirstOutRecommended:
+            true,
+
+          batchSeparationRecommended:
+            true,
+
+          labelingRecommended:
+            true,
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Cultivar when known",
+            "Harvest date",
+            "Drying completion date",
+            "Storage form",
+            "Container date",
+            "Last inspection date",
+            "Observed condition"
+          ],
+
+          guidance:
+            "Keep harvest lots separate whenever practical. A questionable batch should not be blended into sound grain because blending hides deterioration rather than correcting it."
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect frequently during the first several weeks because residual moisture, hidden insects, and heating are most likely to become apparent during this period.",
+
+          longTermStorage:
+            "Continue periodic inspection throughout storage, with greater frequency during warm or humid weather.",
+
+          inspectionChecklist: [
+            "No condensation",
+            "No unusual warmth",
+            "No musty odor",
+            "No sour odor",
+            "No fermentation odor",
+            "No visible mold",
+            "No grain clumping",
+            "No rodent evidence",
+            "No excessive insect activity",
+            "No leaking container",
+            "No moisture entering the storage area",
+            "No unexplained bird refusal"
+          ]
+        },
+
+        storageLifeGuidance:
+          "A single guaranteed storage duration should not be assigned because stability depends on grain maturity, initial moisture, storage temperature, humidity, sanitation, pest pressure, container quality, and whether the grain remains whole, dehulled, cracked, or ground. Condition-based inspection is more reliable than relying only on a calendar date.",
+
+        disposalGuidance:
+          "Material suspected of mold, mycotoxin contamination, chemical treatment, rodent contamination, fermentation, heating, flood contamination, or serious insect damage should be discarded in a way that prevents access by chickens, livestock, pets, wildlife, and children.",
+
+        storageSummary:
+          "Proso Millet stores best as clean, thoroughly dried intact grain. Whole dried panicles are also highly useful but require more space and careful airflow. Cracking, grinding, dehulling, and sprouting improve accessibility or create alternative feeding forms while progressively reducing storage stability."
+      },
+
+      spoilageAndContamination: {
+        spoilageRisk:
+          "low-when-properly-dried-high-if-stored-wet",
+
+        overview:
+          "Properly matured, thoroughly dried Proso Millet stores exceptionally well. Most spoilage problems result from excessive moisture, inadequate drying, condensation, insect activity, rodent contamination, or poor sanitation rather than from the grain itself.",
+
+        signsOfGoodQuality: [
+          "Clean natural grain color",
+          "Firm mature kernels",
+          "Dry panicles",
+          "Pleasant fresh grain smell",
+          "No visible mold",
+          "No clumping",
+          "No insect webbing",
+          "No rodent droppings",
+          "No excessive broken kernels",
+          "No abnormal heating"
+        ],
+
+        warningSigns: [
+          {
+            issue:
+              "Musty odor",
+
+            concern:
+              "Possible mold growth or excessive moisture."
+          },
+          {
+            issue:
+              "Sour or fermented smell",
+
+            concern:
+              "Microbial spoilage has likely begun."
+          },
+          {
+            issue:
+              "Visible mold",
+
+            concern:
+              "Potential mycotoxin contamination."
+          },
+          {
+            issue:
+              "Warm grain",
+
+            concern:
+              "Moisture and biological activity may be causing internal heating."
+          },
+          {
+            issue:
+              "Clumped grain",
+
+            concern:
+              "Moisture penetration or condensation."
+          },
+          {
+            issue:
+              "Condensation inside containers",
+
+            concern:
+              "Storage conditions are unsafe and mold may rapidly develop."
+          },
+          {
+            issue:
+              "Heavy insect activity",
+
+            concern:
+              "Quality deterioration and contamination."
+          },
+          {
+            issue:
+              "Rodent evidence",
+
+            concern:
+              "Possible disease contamination and feed loss."
+          },
+          {
+            issue:
+              "Discolored kernels",
+
+            concern:
+              "Weathering, fungal growth, or deterioration."
+          },
+          {
+            issue:
+              "Birds suddenly refuse the grain",
+
+            concern:
+              "May indicate spoilage, contamination, or poor quality."
+          }
+        ],
+
+        contaminationSources: [
+          "Moisture intrusion",
+          "Flood water",
+          "Roof leaks",
+          "Condensation",
+          "Rodents",
+          "Wild birds",
+          "Stored-product insects",
+          "Chemical contamination",
+          "Pesticides",
+          "Fuel or solvent vapors",
+          "Mold growth",
+          "Poor sanitation",
+          "Dirty storage containers",
+          "Weed seeds",
+          "Foreign material",
+          "Animal waste"
+        ],
+
+        highRiskSituations: [
+          "Harvesting before complete maturity",
+          "Storing grain before it has cooled",
+          "Packing damp panicles tightly together",
+          "Poor ventilation during drying",
+          "Warm humid storage buildings",
+          "Containers with repeated condensation",
+          "Rodent infestations",
+          "Long-term storage without inspection",
+          "Leaving harvested panicles exposed to rain"
+        ],
+
+        correctiveActions: [
+          "Remove questionable grain immediately.",
+          "Inspect nearby batches for similar problems.",
+          "Discard moldy material rather than attempting to salvage it.",
+          "Improve drying before further storage.",
+          "Increase airflow around drying grain.",
+          "Replace damaged containers.",
+          "Correct sources of moisture.",
+          "Implement rodent and insect control.",
+          "Never mix spoiled grain with sound grain."
+        ],
+
+        spoilageSummary:
+          "The greatest protection against spoilage is harvesting mature grain, drying thoroughly, cooling before storage, maintaining clean rodent-resistant containers, and inspecting regularly throughout storage."
+      },
+
+            researchNotes: [
+        "Most published poultry research evaluates Proso Millet as a measured ingredient within professionally formulated diets rather than as informal backyard supplementation with whole grain or mature panicles.",
+
+        "Whole grain, dehulled grain, cracked grain, ground grain, cooked grain, sprouted grain, and grain screenings are nutritionally and physically distinct products and should not be treated as interchangeable.",
+
+        "Proso Millet functions primarily as a starch-rich cereal-energy ingredient. Its moderate crude-protein concentration does not correct its limitations in lysine, methionine, calcium, available phosphorus, vitamins, or overall ration balance.",
+
+        "Cultivar, seed color, hull percentage, growing environment, harvest maturity, postharvest handling, and processing can significantly influence nutrient composition and practical poultry-feed value.",
+
+        "Published poultry inclusion levels apply to complete diets formulated for energy, amino acids, calcium, phosphorus, vitamins, minerals, and other requirements. Those percentages should not be copied directly into informal backyard grain mixtures.",
+
+        "Whole-panicle feeding provides practical enrichment and reduces processing labor, but it makes exact intake, waste, and flock-level distribution more difficult to measure.",
+
+        "Long-term storage quality depends heavily on complete grain maturity, adequate drying, cooling before sealing, protection from moisture, rodent control, insect management, and regular inspection.",
+
+        "Sprouting increases water content and fresh weight but does not create additional dry matter. Sanitary handling is essential because warm, moist conditions can support mold and bacterial growth."
+      ],
+
+      plannerConsiderations: [
+        "High-energy supplemental cereal crop",
+
+        "Excellent dry-storage crop",
+
+        "Strong winter supplemental-feed value",
+
+        "Very good whole-panicle enrichment crop",
+
+        "Moderate protein contribution",
+
+        "Low calcium contribution",
+
+        "Incomplete amino-acid balance",
+
+        "Requires moderation",
+
+        "Whole grain may require supplemental grit",
+
+        "Loose grain requires threshing and cleaning",
+
+        "Whole-panicle feeding reduces processing labor",
+
+        "Strong wild-bird attraction near maturity",
+
+        "Moderate-to-high shattering risk",
+
+        "High rodent attraction during storage",
+
+        "Good drought tolerance",
+
+        "Short warm-season maturity",
+
+        "Suitable for seasonal feeding",
+
+        "Not suitable as a complete ration replacement"
+      ],
+
+      futureResearchTopics: [
+        "Cultivar-specific poultry metabolizable-energy values",
+
+        "Cultivar-specific amino-acid composition",
+
+        "Effects of seed color and hull percentage on poultry digestibility",
+
+        "Comparative feed value of whole, dehulled, cracked, and ground Proso Millet",
+
+        "Practical backyard supplementation rates for different flock stages",
+
+        "Comparative enrichment value of whole Proso Millet panicles and other small-grain seed heads",
+
+        "Long-term storage performance under small-scale homestead conditions",
+
+        "Effects of storage temperature and humidity on grain quality",
+
+        "Practical moisture thresholds for storing whole panicles",
+
+        "Effects of sprouting on nutrient availability and microbial risk",
+
+        "Relationships between cultivar maturity and preharvest bird loss",
+
+        "Relationships between shattering resistance and backyard harvest efficiency",
+
+        "Regional yield performance under low-input backyard production",
+
+        "Effects of grain processing on flock preference and feeding waste",
+
+        "Practical integration of Proso Millet with homegrown legumes and leafy forage crops"
+      ]
+    },
+
+    practicalUse: {
+      idealHomesteadUses: [
+        "Winter supplemental feeding",
+
+        "Seasonal grain supplementation",
+
+        "Whole-panicle enrichment",
+
+        "Cold-weather energy supplementation",
+
+        "Emergency stored feed reserve",
+
+        "Garden-to-coop feeding",
+
+        "Postharvest gleaning",
+
+        "Homestead feed diversification",
+
+        "Short-season grain production",
+
+        "Low-water warm-season feed production",
+
+        "Stored enrichment during confinement",
+
+        "Measured scatter feeding"
+      ],
+
+      lessSuitableUses: [
+        "Complete ration replacement",
+
+        "Primary chick nutrition",
+
+        "Primary protein supplementation",
+
+        "Primary methionine supplementation",
+
+        "Primary lysine supplementation",
+
+        "Primary calcium supplementation",
+
+        "Unrestricted free-choice grain feeding",
+
+        "Living forage access before grain maturity",
+
+        "Long-term storage after grinding",
+
+        "Feeding without quality inspection"
+      ],
+
+      backyardRecommendation:
+        "Grow Proso Millet primarily as a seasonal supplemental grain, whole-panicle enrichment crop, and winter-storage feed rather than attempting to replace purchased complete poultry feed. For small backyard plantings, harvesting and drying intact panicles may provide the best balance between feed value, enrichment, labor, and equipment requirements.",
+
+      commercialRecommendation:
+        "Commercial use is most appropriate through analyzed Proso Millet grain incorporated into professionally formulated poultry diets. Inclusion levels should be based on current nutrient analysis, ingredient pricing, bird stage, processing form, amino-acid balance, mineral balance, and professional ration formulation rather than informal substitution for another cereal grain."
+    },
+
+    metadata: {
+      feedingReferenceVersion:
+        "1.0.0",
+
+      templateVersion:
+        "1.0.0",
+
+      cropSpecificReviewStatus:
+        "reviewed",
+
+      confidenceLevel:
+        "high",
+
+      lastReviewed:
+        "2026-07",
+
+      intendedAudience: [
+        "Backyard chicken keepers",
+        "Homesteaders",
+        "Small flock owners",
+        "Educators",
+        "Feed-planner engine",
+        "Future AI assistant"
+      ],
+
+      sourceRecordFields: [
+        "identity",
+        "summary",
+        "chickenUse",
+        "nutrition",
+        "harvest",
+        "storage",
+        "risks",
+        "usePaths",
+        "seasonalRoles",
+        "dataQuality"
+      ],
+
+      designGoals: [
+        "Power the 'Can My Chickens Eat This?' tool",
+        "Provide structured data for future calculators",
+        "Support FAQ generation",
+        "Support AI responses",
+        "Support printable crop sheets",
+        "Support comparison tables",
+        "Support feed recommendations",
+        "Maintain consistency across all feed crops"
+      ]
+    }
+  },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Mature whole grain",
         "Whole mature seed heads",
