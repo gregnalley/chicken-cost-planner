@@ -12090,7 +12090,4293 @@ const BCP_FEED_CROPS = {
     summary:
       "Cowpeas are heat-tolerant, drought-adapted warm-season annual legumes that can provide protein-oriented mature seed, edible immature peas and pods, tender leaves and shoots, seasonal poultry forage, household food, pollinator activity, rapid summer ground cover, weed competition, compost biomass, and biological nitrogen fixation. For backyard poultry, tender vegetative material and properly processed mature seed are the principal feed products. Cowpeas must remain supplemental because raw mature seed contains antinutritional factors, seed protein is limited in sulfur-containing amino acids, calcium is inadequate for laying hens, and neither seed nor forage provides a complete balanced poultry ration.",
 
-    chickenUse: {
+    /////////////////////////////
+//
+//  Cowpea - Can my chicken eat this "data"
+//
+////////////////////////////
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Cowpeas?",
+
+        answerLabel:
+          "Yes — chickens can eat tender Cowpea foliage, immature pods, fresh peas, and properly cooked or otherwise validated heat-treated mature Cowpea seed.",
+
+        quickAnswer:
+          "Established adult chickens can safely receive clean young Cowpea leaves, tender vine tips, immature pods, fresh green peas, and properly processed mature Cowpeas as supplemental foods. Tender vegetative material and immature produce require little preparation, but mature dry Cowpea seed should not be fed raw in meaningful quantities because it contains antinutritional factors that can interfere with digestion and nutrient use. Mature seed should be thoroughly cooked or subjected to another validated heat treatment, then cooled and offered in moderation alongside a nutritionally complete poultry ration.",
+
+        detailedAnswer:
+          "Cowpea is a versatile warm-season grain legume that can provide chickens with several distinctly different feed products. Young leaves, tender vine tips, immature pods, and fresh green peas can serve as seasonal fresh supplements when they are clean, healthy, correctly identified, and offered in controlled amounts. Mature dry Cowpea seed provides substantially more concentrated protein and starch, including useful lysine relative to many cereal grains, but it also contains trypsin inhibitors, lectin activity, tannins, phytate, phenolic compounds, non-starch polysaccharides, and other antinutritional factors whose concentrations vary among cultivars and seed types. Meaningful use of mature seed therefore requires thorough cooking or another validated heat-treatment process. Proper processing improves suitability but does not make Cowpeas nutritionally complete. Cowpea protein remains limited in methionine and other sulfur-containing amino acids, calcium is inadequate for laying hens, and neither fresh forage nor processed seed can replace a complete poultry ration.",
+
+        primaryFeedingRole:
+          "Protein-and-starch-oriented processed legume supplement with fresh warm-season forage value",
+
+        secondaryFeedingRoles: [
+          "Tender warm-season leafy forage",
+          "Fresh vine-tip supplementation",
+          "Immature-pod supplementation",
+          "Fresh green-pea supplementation",
+          "Properly cooked mature-seed supplement",
+          "Heat-treated ingredient in a professionally balanced poultry ration",
+          "Seasonal cut-and-carry forage",
+          "Postharvest gleaning crop",
+          "Household-food and poultry-feed integration",
+          "Nitrogen-fixing multipurpose homestead crop"
+        ],
+
+        overallRecommendation:
+          "Recommended as a multipurpose supplemental crop for established adult chickens when fresh plant material is offered conservatively and mature dry seed is properly processed before feeding.",
+
+        recommendationStrength:
+          "moderate-to-high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-cowpeas-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe-when-form-and-processing-are-appropriate",
+
+        trafficLightRating:
+          "yellow",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "form-dependent",
+
+        primaryProductType:
+          "processed-grain-legume-and-fresh-forage",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          true,
+
+        wholeHeadEnrichmentSuitable:
+          false,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          4,
+
+        adultChickenSuitabilityScore:
+          4,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          3,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          3,
+
+        proteinValueScore:
+          4,
+
+        enrichmentValueScore:
+          3,
+
+        winterValueScore:
+          3,
+
+        storageValueScore:
+          4,
+
+        preparationSimplicityScore:
+          2,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          2,
+
+        confinedFlockValueScore:
+          4,
+
+        pasturedFlockValueScore:
+          4,
+
+        directGardenAccessScore:
+          2,
+
+        notes: [
+          "Scores describe Cowpea's value as a collection of separate supplemental feed forms rather than as one uniform poultry-feed product.",
+          "The overall score reflects strong warm-season forage value, useful processed-seed protein, household-food integration, storage potential, and multipurpose homestead value.",
+          "The feeding-safety score is reduced because meaningful mature-seed use requires proper cooking or another validated heat treatment.",
+          "The preparation-simplicity and beginner-friendliness scores are reduced because underprocessing can leave antinutritional activity while excessive heating can reduce protein quality.",
+          "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration and should not receive informal Cowpea supplementation in place of balanced nutrition.",
+          "Fresh young leaves, vine tips, immature pods, and green peas are simpler to use than mature dry seed but contain substantially more moisture and less concentrated nutrition.",
+          "Processed mature seed contributes useful protein and lysine but remains limited in methionine and other sulfur-containing amino acids.",
+          "Whole dry Cowpea seed stores well when fully dried and protected, but cooked seed is highly perishable.",
+          "Direct flock access can provide enrichment but may destroy seedlings, damage established plants, and make intake difficult to control.",
+          "Cut-and-carry feeding, rotational access, protected forage systems, and postharvest gleaning are generally more manageable than continuous unrestricted access."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          false,
+
+        cookingRequired:
+          true,
+
+        heatTreatmentRequired:
+          true,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Cowpeas are safe for established adult chickens when the exact feed form is considered. Clean tender foliage, young vine tips, immature pods, and fresh green peas may be offered raw in controlled supplemental amounts. Mature dry Cowpea seed should not be fed raw in meaningful quantities because it contains variable concentrations of protease inhibitors, lectin activity, tannins, phytate, phenolic compounds, non-starch polysaccharides, and other antinutritional factors. Thorough cooking or another validated heat treatment is required for routine mature-seed use.",
+
+        whyModerationIsRequired:
+          "Fresh Cowpea forage and processed seed are supplemental foods rather than complete poultry rations. Excessive intake can displace balanced feed and dilute essential amino acids, calcium, vitamins, trace minerals, and other nutrients. Mature seed also supplies substantial starch and protein, while cooked Cowpeas contain considerable moisture and can fill the crop without providing the complete nutrient balance required by productive birds.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean young Cowpea leaves",
+
+            status:
+              "safe-as-a-supplement",
+
+            explanation:
+              "Tender young leaves from healthy, correctly identified, untreated plants may be offered fresh in measured amounts. They are seasonal forage rather than concentrated stored feed."
+          },
+
+          {
+            item:
+              "Tender Cowpea vine tips",
+
+            status:
+              "safe-as-a-supplement",
+
+            explanation:
+              "Soft young growing tips may be used as cut-and-carry forage when free from pesticides, disease, mold, manure contamination, and chemical exposure."
+          },
+
+          {
+            item:
+              "Tender immature Cowpea pods",
+
+            status:
+              "safe",
+
+            explanation:
+              "Clean, tender, immature pods may be offered in controlled quantities. Mature fibrous pods have much less practical feeding value."
+          },
+
+          {
+            item:
+              "Fresh immature green Cowpea seeds",
+
+            status:
+              "safe",
+
+            explanation:
+              "Fresh peas harvested before full dry-seed maturity may be offered as a supplemental food after inspection and cleaning. They are not nutritionally equivalent to mature dry seed."
+          },
+
+          {
+            item:
+              "Thoroughly cooked mature Cowpeas",
+
+            status:
+              "safe-when-properly-processed",
+
+            explanation:
+              "Mature Cowpeas may be used after thorough cooking that heats the entire seed sufficiently to reduce important heat-labile antinutritional factors. Cooked peas should be cooled, drained, offered promptly, and treated as highly perishable."
+          },
+
+          {
+            item:
+              "Validated heat-treated mature Cowpea seed",
+
+            status:
+              "safe-when-properly-processed",
+
+            explanation:
+              "A controlled heat-treatment method may produce a usable dry or semi-dry ingredient when temperature, moisture, time, seed size, batch depth, and processing uniformity are sufficient."
+          },
+
+          {
+            item:
+              "Heat-treated and coarsely ground Cowpea seed",
+
+            status:
+              "safe-with-formulation-and-storage-precautions",
+
+            explanation:
+              "Properly heat-treated seed may be coarsely ground for measured supplemental use or incorporation into a professionally formulated ration. Grinding does not replace heat treatment and reduces storage stability."
+          },
+
+          {
+            item:
+              "Clean postharvest residual peas",
+
+            status:
+              "safe-with-inspection",
+
+            explanation:
+              "Sound peas remaining after household or garden harvest may be offered when they are untreated, clean, correctly matured, free from spoilage, and processed appropriately for their stage of maturity."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Raw mature dry Cowpea seed offered in meaningful quantities",
+
+            status:
+              "not-recommended",
+
+            explanation:
+              "Raw mature seed contains antinutritional factors that can interfere with protein digestion, mineral availability, feed efficiency, and nutrient use. Small accidental consumption is not equivalent to planned routine feeding."
+          },
+
+          {
+            item:
+              "Underprocessed mature Cowpea seed",
+
+            status:
+              "never-use-as-processed-feed",
+
+            explanation:
+              "Casual warming, surface browning, brief heating, sunlight, or incomplete cooking may fail to heat the entire seed sufficiently to reduce heat-labile antinutritional factors."
+          },
+
+          {
+            item:
+              "Severely overheated or scorched Cowpeas",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Excessive heat can reduce protein quality, damage heat-sensitive amino acids, create unevenly processed material, and reduce feed acceptance."
+          },
+
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Planting seed may be coated with fungicides, insecticides, polymers, colorants, inoculants, or other products that are not approved for poultry consumption."
+          },
+
+          {
+            item:
+              "Moldy, musty, heated, or visibly deteriorated dry Cowpeas",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, abnormal heating, discoloration, damp clumping, or fungal growth indicates unsafe storage deterioration."
+          },
+
+          {
+            item:
+              "Slimy, sour, fermented, or spoiled cooked Cowpeas",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Cooked Cowpeas are moist and highly perishable. Slime, sour odor, gas production, fermentation, or prolonged warm holding indicates spoilage."
+          },
+
+          {
+            item:
+              "Heavily insect-damaged stored Cowpeas",
+
+            status:
+              "avoid-or-discard",
+
+            explanation:
+              "Bruchid beetles and other stored-product insects can hollow seeds, create dust and webbing, introduce contamination, and substantially reduce feed quality."
+          },
+
+          {
+            item:
+              "Rodent-contaminated Cowpeas",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Seed or cooked material contaminated by rodent urine, feces, nesting debris, chewing damage, or carcasses should be discarded."
+          },
+
+          {
+            item:
+              "Salted, seasoned, sweetened, or canned-in-brine Cowpeas",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Prepared human foods may contain excessive sodium, sugar, oils, spices, preservatives, flavorings, or other ingredients unnecessary or unsuitable for chickens."
+          },
+
+          {
+            item:
+              "Pesticide-contaminated foliage, pods, or seed",
+
+            status:
+              "never-feed-unless-label-permits",
+
+            explanation:
+              "Do not feed material treated with a pesticide, herbicide, fungicide, desiccant, or other product unless the label specifically permits feed or grazing use and all required restrictions and intervals have been followed."
+          },
+
+          {
+            item:
+              "Diseased, slimy, fermented, or decaying Cowpea foliage",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Fresh plant material showing disease, decay, abnormal discoloration, fermentation, heating, or slime should be removed rather than fed."
+          },
+
+          {
+            item:
+              "Unknown vining legumes mistaken for Cowpea",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Not every vining legume is Cowpea or suitable for poultry. Plant identity should be confirmed before leaves, vines, pods, or seeds enter a feeding pathway."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Antinutritional factors in raw mature seed",
+
+            riskLevel:
+              "high-for-meaningful-unprocessed-use",
+
+            explanation:
+              "Trypsin inhibitors, other protease inhibitors, lectin activity, tannins, phytate, phenolic compounds, non-starch polysaccharides, and seed-coat fiber can reduce digestion and nutrient availability."
+          },
+
+          {
+            hazard:
+              "Underprocessing",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Heating only the seed surface or using an uncontrolled household process may leave substantial antinutritional activity in the center of the seed."
+          },
+
+          {
+            hazard:
+              "Excessive heat damage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Overheating may reduce protein quality and amino-acid availability, particularly when processing conditions are severe or uneven."
+          },
+
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Fresh foliage, pods, peas, or cooked seed may reduce consumption of the nutritionally complete ration when offered too freely."
+          },
+
+          {
+            hazard:
+              "Incomplete amino-acid balance",
+
+            riskLevel:
+              "high-as-a-ration-foundation",
+
+            explanation:
+              "Cowpea contributes useful protein and lysine but remains limited in methionine, cysteine, and total sulfur-containing amino acids."
+          },
+
+          {
+            hazard:
+              "Insufficient calcium",
+
+            riskLevel:
+              "high-for-laying-hens-if-feed-is-displaced",
+
+            explanation:
+              "Cowpea seed and foliage do not supply the calcium concentration required for eggshell formation."
+          },
+
+          {
+            hazard:
+              "Cooked-seed spoilage",
+
+            riskLevel:
+              "high-with-poor-holding-practices",
+
+            explanation:
+              "Cooked Cowpeas contain substantial moisture and can spoil rapidly when left warm, held too long, or contaminated after cooking."
+          },
+
+          {
+            hazard:
+              "Stored-product insects",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Whole dry Cowpea seed is vulnerable to bruchid beetles and other stored-seed pests during warm or prolonged storage."
+          },
+
+          {
+            hazard:
+              "Mold and moisture damage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Seed sealed before fully dry or exposed to humidity, condensation, or water leaks may heat, mold, ferment, or deteriorate."
+          },
+
+          {
+            hazard:
+              "Pesticide or treated-seed exposure",
+
+            riskLevel:
+              "critical",
+
+            explanation:
+              "Planting seed and treated crops may carry chemical restrictions that prohibit poultry feeding, grazing, household-food use, or use of crop residues."
+          },
+
+          {
+            hazard:
+              "Destruction of the living crop",
+
+            riskLevel:
+              "moderate-to-high-with-unrestricted-access",
+
+            explanation:
+              "Chickens can uproot seedlings, strip leaves, trample vines, damage flowers and pods, and sharply reduce mature-seed production."
+          },
+
+          {
+            hazard:
+              "Wet-forage spoilage in litter",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Uneaten leaves, pods, or vines left in damp litter, mud, manure, or feeders may become contaminated, slimy, fermented, or moldy."
+          }
+        ],
+
+        emergencyUse:
+          "Properly cooked Cowpeas can contribute short-term protein and starch, while fresh Cowpea forage can provide moisture and dietary variety. Neither form is a complete emergency ration. An appropriate complete poultry feed or professionally formulated ration remains necessary for sustained feeding.",
+
+        veterinaryCaution:
+          "Birds with digestive disease, crop disorders, impaired kidney or liver function, obesity, poor body condition, unexplained weight loss, or other medical concerns may require individualized dietary guidance from a poultry veterinarian."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-when-form-and-processing-are-appropriate",
+
+          preferredForms: [
+            "Young Cowpea leaves",
+            "Tender vine tips",
+            "Tender immature pods",
+            "Fresh immature green peas",
+            "Thoroughly cooked mature Cowpeas",
+            "Validated heat-treated mature seed",
+            "Heat-treated coarsely ground seed used promptly",
+            "Controlled postharvest gleaning"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for Cowpea supplementation. Fresh vegetative material and immature produce should be offered conservatively, while mature dry seed should be thoroughly cooked or otherwise properly heat treated before meaningful use. Complete poultry feed should remain the nutritional foundation."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "useful-but-processing-and-balance-required",
+
+          benefits: [
+            "Supplemental plant protein",
+            "Useful lysine contribution relative to cereal grains",
+            "Starch energy from processed mature seed",
+            "Fresh warm-season forage",
+            "Seasonal dietary variety",
+            "Controlled enrichment through cut-and-carry or protected access"
+          ],
+
+          limitations: [
+            "Raw mature seed is not recommended for routine feeding",
+            "Does not provide sufficient calcium for eggshell production",
+            "Methionine and other sulfur-containing amino acids are limiting",
+            "Cannot replace a complete layer ration",
+            "Excess supplementation may reduce complete-feed intake",
+            "Cooked seed is highly perishable",
+            "Fresh forage is much less nutrient dense than mature dry seed"
+          ],
+
+          guidance:
+            "Laying hens may receive fresh Cowpea forage, immature produce, or properly processed mature seed as supplements. A complete layer ration and an appropriate calcium program must remain the nutritional foundation because Cowpea cannot supply adequate calcium or complete amino-acid balance."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets may receive small amounts of tender foliage, immature pods, fresh peas, or properly processed mature seed, but their complete grower or developer ration should remain dominant. Raw mature seed and large irregular portions should be avoided."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete starter ration. Informal Cowpea supplementation can displace balanced starter feed, and raw mature seed presents antinutritional concerns. Whole peas, fibrous pods, coarse foliage, and inconsistent household processing are poorly suited to newly hatched or very young birds.",
+
+          possibleException:
+            "A qualified poultry nutritionist may use appropriately processed Cowpea ingredients in a complete chick or broiler ration formulated for energy, digestible amino acids, fiber, minerals, vitamins, and particle size. That controlled use is not equivalent to offering cooked peas, raw seed, or garden forage as an informal chick treat.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Antinutritional factors in raw mature seed",
+            "Need for validated heat processing",
+            "Methionine and sulfur-amino-acid limitations",
+            "Large whole-seed size",
+            "Variable particle size",
+            "Fibrous pods and mature foliage",
+            "High moisture and spoilage risk of cooked seed",
+            "Need for careful ration formulation",
+            "Limited evidence for informal backyard use in young chicks"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "processing-and-formulation-dependent",
+
+          guidance:
+            "Properly processed Cowpea seed can be incorporated into balanced meat-bird diets, but published inclusion levels apply to specific cultivars, processing methods, bird ages, and complete experimental formulations. Backyard keepers should not copy a commercial inclusion percentage into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters may receive the same clean fresh Cowpea materials and properly processed seed forms as adult hens. Portion control remains important because supplementation should not create excess energy intake or displace a balanced maintenance or all-flock ration."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-and-balance-required",
+
+          guidance:
+            "Breeding birds may receive Cowpea supplements, but fertility, hatchability, body condition, and reproductive performance depend on complete nutrition. Processed Cowpea seed cannot independently supply the required amino-acid, vitamin, mineral, or calcium balance."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight chickens may receive small supplemental amounts, but intake and body condition should be monitored. Soft cooked Cowpeas may be physically easy to consume, yet their moisture and bulk can still reduce complete-feed intake."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-protein-only",
+
+          guidance:
+            "Properly processed Cowpea seed contributes useful protein and lysine, but methionine and other sulfur-containing amino acids remain limiting for feather production. A complete ration with adequate digestible protein and amino-acid balance is more important than simply increasing Cowpea intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Soft cooked Cowpeas may appear suitable for a weak or underweight bird, but illness can alter digestive capacity, hydration needs, energy needs, and nutrient tolerance. Cowpeas should not replace diagnostic care, supportive treatment, or a veterinarian-recommended recovery diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Young Cowpea leaves",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Tender young leaves from healthy, correctly identified Cowpea plants can provide fresh warm-season forage and dietary variety. They should be offered as a supplement rather than treated as concentrated protein feed."
+          },
+
+          {
+            part:
+              "Tender Cowpea vine tips",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Soft actively growing vine tips can be harvested as cut-and-carry forage. Long vines may be coarsely chopped or placed in a safe forage holder to reduce tangling and waste."
+          },
+
+          {
+            part:
+              "Tender immature pods",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Young pods harvested before they become fibrous may be offered fresh after inspection and cleaning. Pod tenderness and poultry acceptance vary among vegetable, grain, forage, and yardlong-type cultivars."
+          },
+
+          {
+            part:
+              "Fresh immature green peas",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fresh shelled Cowpeas harvested before full dry maturity provide useful seasonal protein, starch, moisture, and dietary variety. They are less concentrated than mature dry seed because they contain substantially more water."
+          },
+
+          {
+            part:
+              "Thoroughly cooked mature Cowpeas",
+
+            suitability:
+              "excellent-when-properly-processed",
+
+            explanation:
+              "Mature dry Cowpea seed can become a useful protein-and-starch supplement after thorough cooking that heats the entire seed sufficiently to reduce important heat-labile antinutritional factors."
+          },
+
+          {
+            part:
+              "Validated heat-treated mature Cowpea seed",
+
+            suitability:
+              "excellent-when-properly-processed",
+
+            explanation:
+              "Controlled moist-heat, extrusion, autoclaving, or another validated process may produce a useful dry feed ingredient when temperature, moisture, duration, seed size, and batch uniformity are adequate."
+          },
+
+          {
+            part:
+              "Heat-treated cracked or coarsely ground Cowpea seed",
+
+            suitability:
+              "good-with-storage-and-formulation-precautions",
+
+            explanation:
+              "Properly processed seed may be cracked or ground for measured feeding or incorporation into a balanced ration. Grinding does not neutralize antinutritional factors and shortens practical storage life."
+          },
+
+          {
+            part:
+              "Postharvest residual peas",
+
+            suitability:
+              "good-with-inspection",
+
+            explanation:
+              "Sound peas remaining after household or garden harvest may be offered through controlled gleaning or collection when they are untreated, clean, free from spoilage, and processed appropriately for their maturity stage."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Raw mature dry Cowpea seed",
+
+            reason:
+              "Meaningful raw-seed feeding is not recommended because mature seed contains variable concentrations of protease inhibitors, lectin activity, tannins, phytate, phenolic compounds, non-starch polysaccharides, and other antinutritional factors."
+          },
+
+          {
+            part:
+              "Coarse mature vines",
+
+            reason:
+              "Older vines become fibrous, less palatable, more difficult to consume, and less nutritionally useful than tender vegetative growth."
+          },
+
+          {
+            part:
+              "Dry mature pod hulls",
+
+            reason:
+              "Dry pod walls are highly fibrous and contain substantially less usable nutrition than the peas."
+          },
+
+          {
+            part:
+              "Loose seed coats and dehulling waste",
+
+            reason:
+              "Seed coats may contain concentrated fiber and, in some cultivars, tannins or other phenolic compounds. They are not a desirable primary poultry-feed product."
+          },
+
+          {
+            part:
+              "Roots and nodules",
+
+            reason:
+              "Roots are valuable for soil structure and biological nitrogen cycling but have no practical backyard poultry-feed role."
+          },
+
+          {
+            part:
+              "Diseased or pesticide-restricted crop residue",
+
+            reason:
+              "Residue affected by disease, mold, decay, chemical treatment, floodwater, manure contamination, or unknown pesticide restrictions should not enter the poultry-feed pathway."
+          }
+        ],
+
+        ediblePartSummary:
+          "Cowpea provides several useful poultry-feed products, but each form must be treated separately. Tender foliage, immature pods, and fresh peas are fresh seasonal supplements, while mature dry seed requires thorough cooking or another validated heat treatment before meaningful poultry use."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Thoroughly cooked mature Cowpeas",
+
+            rating:
+              "excellent-when-properly-processed",
+
+            bestUse:
+              "Measured protein-and-starch supplementation for established adult chickens."
+          },
+
+          {
+            form:
+              "Fresh immature green peas",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Seasonal fresh supplementation and household-food harvest integration."
+          },
+
+          {
+            form:
+              "Tender immature pods",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Fresh seasonal treats and dietary variety."
+          },
+
+          {
+            form:
+              "Young leaves and tender vine tips",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Cut-and-carry forage, safe hanging enrichment, or controlled rotational access."
+          },
+
+          {
+            form:
+              "Validated heat-treated whole dry seed",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Stored supplemental feed or a calculated ingredient in a properly balanced ration."
+          },
+
+          {
+            form:
+              "Heat-treated cracked seed",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Measured feeding where easier physical access and improved mixing are desired."
+          },
+
+          {
+            form:
+              "Heat-treated coarsely ground seed",
+
+            rating:
+              "good-with-formulation-guidance",
+
+            bestUse:
+              "A feed ingredient used promptly in a properly balanced poultry ration."
+          },
+
+          {
+            form:
+              "Controlled postharvest gleaning",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Allowing established adult birds to collect sound residual peas after the primary harvest."
+          }
+        ],
+
+        acceptableForms: [
+          "Young Cowpea leaves",
+          "Tender vine tips",
+          "Tender immature pods",
+          "Fresh immature green peas",
+          "Thoroughly cooked mature Cowpeas",
+          "Validated heat-treated whole Cowpea seed",
+          "Heat-treated cracked Cowpeas",
+          "Heat-treated coarsely ground Cowpea meal",
+          "Briefly refrigerated cooked Cowpeas",
+          "Controlled postharvest residual peas",
+          "Protected living forage",
+          "Cut-and-carry young forage"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Cooked mature Cowpeas",
+
+            concern:
+              "Cooked seed contains substantial moisture, spoils rapidly, and should be cooled, drained, fed promptly, refrigerated briefly, or frozen in manageable portions."
+          },
+
+          {
+            form:
+              "Dry-roasted whole Cowpeas",
+
+            concern:
+              "Household roasting may heat the seed unevenly. Surface browning does not prove that the center received sufficient processing."
+          },
+
+          {
+            form:
+              "Heat-treated cracked seed",
+
+            concern:
+              "Cracked material absorbs moisture and deteriorates more rapidly than intact dry seed."
+          },
+
+          {
+            form:
+              "Heat-treated ground seed",
+
+            concern:
+              "Grinding increases exposed surface area, reduces storage stability, and may encourage selective feeding when poorly mixed."
+          },
+
+          {
+            form:
+              "Dehulled Cowpea seed",
+
+            concern:
+              "Dehulling can reduce fiber and some seed-coat tannins but adds labor, changes nutrient concentration, and removes physical protection during storage."
+          },
+
+          {
+            form:
+              "Soaked mature Cowpeas",
+
+            concern:
+              "Soaking may shorten cooking time and alter soluble compounds, but soaking alone should not be treated as adequate processing for mature poultry-feed seed."
+          },
+
+          {
+            form:
+              "Sprouted Cowpeas",
+
+            concern:
+              "Sprouting changes moisture, microbial risk, enzyme activity, nutrient distribution, and antinutritional-factor concentration. Household sprouting requires a separate controlled food-safety pathway."
+          },
+
+          {
+            form:
+              "Fermented Cowpeas",
+
+            concern:
+              "Fermentation may alter antinutritional factors, but uncontrolled household fermentation should not be assumed safe or nutritionally predictable."
+          },
+
+          {
+            form:
+              "Living Cowpea forage",
+
+            concern:
+              "Unrestricted access can destroy seedlings, strip vines, reduce pod production, compact soil, and make intake difficult to control."
+          }
+        ],
+
+        avoidForms: [
+          "Raw mature dry Cowpea seed offered in meaningful quantities",
+          "Underprocessed mature Cowpea seed",
+          "Casually warmed whole Cowpeas",
+          "Surface-browned but internally raw Cowpeas",
+          "Severely scorched Cowpeas",
+          "Chemically treated planting seed",
+          "Moldy Cowpeas",
+          "Musty Cowpeas",
+          "Heated or fermenting dry seed",
+          "Slimy cooked Cowpeas",
+          "Sour cooked Cowpeas",
+          "Cooked Cowpeas held warm for prolonged periods",
+          "Salted Cowpeas",
+          "Seasoned Cowpeas",
+          "Sweetened Cowpeas",
+          "Canned Cowpeas in brine",
+          "Heavily insect-damaged seed",
+          "Rodent-contaminated seed",
+          "Pesticide-contaminated foliage or pods",
+          "Diseased or decaying forage",
+          "Unknown vining legumes mistaken for Cowpea"
+        ],
+
+        wholeHeadAdvantages: [],
+
+        looseSeedAdvantages: [
+          "Dry whole seed is easy to measure before processing",
+          "Separate batches can be inspected and processed uniformly",
+          "Processed seed can be portioned accurately",
+          "Heat-treated seed can be mixed with other ingredients",
+          "Sound whole dry seed stores more efficiently than fresh forage",
+          "Household-food and poultry-feed quantities can be separated"
+        ],
+
+        wholeHeadDisadvantages: [],
+
+        looseSeedDisadvantages: [
+          "Mature dry seed requires shelling and cleaning",
+          "Raw seed requires adequate heat processing",
+          "Processing requires water, fuel, time, and supervision",
+          "Cooked seed is highly perishable",
+          "Dry-roasting uniformity can be difficult to verify",
+          "Grinding shortens storage life",
+          "Stored whole seed is vulnerable to bruchid beetles",
+          "Processed seed can displace complete feed when overfed",
+          "Cowpea cannot replace soybean meal directly",
+          "Nutrient composition varies by cultivar and processing method"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Cowpea cultivars differ substantially in growth habit, maturity, photoperiod response, pod type, seed size, seed-coat color, tannin concentration, forage production, household-food quality, pest resistance, and suitability for mature dry-seed production. One Cowpea cultivar should not be assumed to represent the entire species.",
+
+        blackOilSunflower: {
+          recommended:
+            null,
+
+          explanation:
+            null
+        },
+
+        confectionSunflower: {
+          recommended:
+            null,
+
+          explanation:
+            null
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            null,
+
+          explanation:
+            null
+        },
+
+        pollenFreeCultivars: {
+          recommended:
+            null,
+
+          explanation:
+            null
+        },
+
+        branchingCultivars: {
+          advantages: [
+            "Bush and erect Cowpea cultivars may provide compact growth, concentrated pod set, easier harvest access, and stronger suitability for small gardens.",
+            "Semi-vining cultivars may combine reasonable ground cover with manageable pod harvest.",
+            "Trailing and prostrate cultivars can provide dense summer soil cover, weed suppression, and greater vegetative forage.",
+            "Climbing cultivars can use fences or trellises and may reduce ground-level crowding where vertical support is available."
+          ]
+        },
+
+        giantSingleHeadCultivars: {
+          advantages: [
+            "Early photoperiod-insensitive cultivars are generally more dependable for mature dry-seed production in short-season regions.",
+            "Vegetable cultivars may provide superior tender pods or fresh shell peas but are not automatically the best dry-feed seed producers.",
+            "Grain cultivars may provide more dependable mature seed, easier dry-down, and improved shelling characteristics.",
+            "Forage cultivars may provide greater biomass and regrowth but may mature later or produce less convenient dry-seed harvests.",
+            "Low-tannin or lighter-seeded cultivars may have feeding advantages, but seed color alone is not a complete safety or nutrient test.",
+            "Cultivar-specific resistance to root-knot nematodes, Fusarium wilt, Cowpea curculio, viruses, and other regional pests can materially affect usable harvest."
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate-to-high-for-mature-seed-and-low-for-fresh-forage",
+
+        preparationSummary:
+          "Cowpea preparation depends entirely on the harvested form. Tender leaves, vine tips, immature pods, and fresh peas require inspection, cleaning, portioning, and prompt feeding. Mature dry Cowpea seed requires sorting, cleaning, thorough cooking or another validated heat treatment, cooling, and careful handling before meaningful poultry use.",
+
+        requiredPreparation: [
+          "Identify the harvested material as Cowpea, Vigna unguiculata.",
+          "Separate fresh foliage, immature pods, fresh peas, and mature dry seed into different handling pathways.",
+          "Inspect all material for disease, mold, insects, pesticides, treated-seed contamination, rodents, manure, and chemical exposure.",
+          "Use only tender healthy foliage for fresh feeding.",
+          "Remove coarse stems and mature fibrous vines.",
+          "Feed fresh forage and immature produce promptly.",
+          "Shell mature dry pods and remove chaff, stones, damaged seed, insect-infested seed, and foreign material.",
+          "Do not use chemically treated planting seed.",
+          "Thoroughly cook mature seed or use another validated heat-treatment process.",
+          "Ensure the entire seed receives adequate heat rather than relying on surface appearance.",
+          "Allow cooked or heat-treated seed to cool completely before feeding or enclosed storage.",
+          "Drain excess cooking water before feeding.",
+          "Offer only manageable supplemental quantities.",
+          "Refrigerate cooked leftovers promptly or freeze suitable portions.",
+          "Store dry seed only after it is fully dry and cool."
+        ],
+
+        optionalPreparation: [
+          "Soak mature seed to shorten cooking time.",
+          "Discard soak water when appropriate for the chosen cooking method.",
+          "Dehull seed to reduce seed-coat fiber and potentially reduce tannins in some cultivars.",
+          "Crack heat-treated seed for easier handling.",
+          "Coarsely grind properly heat-treated seed for ration mixing.",
+          "Coarsely chop long fresh vines.",
+          "Bundle tender foliage for enrichment.",
+          "Place fresh forage in a safe hanging holder.",
+          "Separate household-food-quality peas from lower-priority flock supplements.",
+          "Freeze cooked Cowpeas in small portions for later use.",
+          "Use a food scale for more consistent supplemental portions."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking tender young leaves",
+          "Cooking tender vine tips",
+          "Cooking tender immature pods for ordinary adult-chicken supplementation",
+          "Grinding fresh peas before offering them to established adult chickens",
+          "Fermenting Cowpeas as a routine requirement",
+          "Sprouting Cowpeas as a routine requirement",
+          "Dehulling every batch",
+          "Grinding whole dry seed before heat treatment unless the selected process is designed for ground material",
+          "Adding salt, seasoning, oil, sugar, or flavorings"
+        ],
+
+        preparationMistakes: [
+          "Treating soaking alone as adequate processing for mature dry seed.",
+          "Feeding meaningful quantities of raw mature Cowpeas.",
+          "Assuming brief heating or surface browning proves adequate processing.",
+          "Using an excessively deep batch that heats unevenly.",
+          "Overheating Cowpeas until they are scorched or severely browned.",
+          "Grinding raw seed and assuming grinding removes antinutritional factors.",
+          "Storing cooked Cowpeas at room temperature for prolonged periods.",
+          "Sealing warm heat-treated seed before it has cooled.",
+          "Mixing wet cooked seed with dry stored feed.",
+          "Grinding large quantities long before feeding.",
+          "Feeding moldy seed after cooking.",
+          "Using chemically treated planting seed.",
+          "Failing to inspect for stored-seed insects.",
+          "Treating fresh foliage and mature seed as nutritionally equivalent.",
+          "Allowing supplements to displace complete poultry feed."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "protein-and-starch-oriented-processed-grain-legume-with-fresh-forage-value",
+
+        nutritionSummary:
+          "Mature Cowpea seed is a moderately high-protein, starch-rich grain legume that can contribute lysine, phosphorus, potassium, magnesium, iron, zinc, copper, manganese, folate, other B vitamins, and dietary fiber. Its poultry value depends strongly on cultivar, seed coat, processing, and complete-ration formulation. Cowpea protein remains limited in methionine and other sulfur-containing amino acids, while raw mature seed contains antinutritional factors that reduce effective nutrient use.",
+
+        compositionBasis:
+          "Cowpea leaves, vine tips, immature pods, fresh peas, mature whole dry seed, dehulled seed, cooked seed, roasted seed, sprouted seed, fermented seed, and processed Cowpea meal are nutritionally distinct products. Fresh-weight forage and fresh peas contain far more water than dry seed and must not be compared pound for pound.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Moderately high plant protein",
+
+            importance:
+              "high",
+
+            explanation:
+              "Mature Cowpea seed commonly contains substantially more crude protein than cereal grains, although crude-protein percentage does not establish digestible amino-acid adequacy."
+          },
+
+          {
+            nutrientRole:
+              "Useful lysine contribution",
+
+            importance:
+              "high",
+
+            explanation:
+              "Cowpea generally supplies more lysine than Corn, Wheat, Barley, Oats, Millet, and Sorghum, making it potentially complementary to cereal ingredients within a properly formulated ration."
+          },
+
+          {
+            nutrientRole:
+              "Starch energy",
+
+            importance:
+              "high",
+
+            explanation:
+              "Mature seed contains a substantial starch fraction and can contribute moderate dietary energy after adequate processing."
+          },
+
+          {
+            nutrientRole:
+              "Low natural fat concentration",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Cowpea seed is far lower in oil than Sunflower or Soybeans, which reduces rancidity pressure but also means it should not be treated as a concentrated high-fat energy ingredient."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental phosphorus and minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Cowpea contributes phosphorus, potassium, magnesium, iron, zinc, copper, manganese, and other minerals, although phytate can reduce mineral availability."
+          },
+
+          {
+            nutrientRole:
+              "Fresh warm-season forage",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Tender leaves and vine tips can contribute moisture, plant protein, fiber, pigments, vitamins, minerals, and enrichment during hot weather, but fresh forage is much less nutrient dense than mature dry seed."
+          },
+
+          {
+            nutrientRole:
+              "Household-food integration",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Tender pods, fresh peas, and mature dry peas can support household food production while surplus or lower-priority sound material provides supplemental flock value."
+          }
+        ],
+
+        notableNutrients: [
+          "Moderately high crude protein",
+          "Starch",
+          "Lysine",
+          "Phosphorus",
+          "Potassium",
+          "Magnesium",
+          "Iron",
+          "Zinc",
+          "Copper",
+          "Manganese",
+          "Folate",
+          "Other B vitamins",
+          "Dietary fiber",
+          "Fresh-leaf pigments and micronutrients"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderately high, commonly near the mid-twenties as a percentage of dry matter, with substantial cultivar and sample variation.",
+
+          fat:
+            "Low, commonly around 1.5% to 2% of dry matter for mature whole seed.",
+
+          fiber:
+            "Moderate, with seed-coat thickness and dehulling materially affecting crude fiber and neutral-detergent fiber.",
+
+          starch:
+            "High for a grain legume, commonly near half of dry matter in mature whole seed.",
+
+          calcium:
+            "Low and inadequate to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Moderate in total concentration, but a meaningful portion may be associated with phytate and unavailable to poultry.",
+
+          energy:
+            "Moderate and generally lower than Corn or Wheat, with usable energy influenced by seed coat, fiber, antinutritional factors, heat treatment, and complete-diet formulation."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole mature Cowpea seed contains the cotyledons, embryo, and fibrous seed coat. The seed coat can contribute fiber, tannins, phenolic compounds, color, and physical protection during storage.",
+
+          dehulledKernel:
+            "Dehulling removes much of the seed coat, generally increasing protein and starch concentration on an equal-weight basis while reducing fiber and potentially reducing seed-coat-associated tannins.",
+
+          practicalMeaning:
+            "Whole and dehulled Cowpeas should not be treated as nutritionally identical. Dehulling can improve nutrient density but adds labor, creates hull waste, and reduces physical protection during storage."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole dry Cowpea seed contains intact starch, protein, seed-coat fiber, and antinutritional factors whose concentrations vary by cultivar.",
+
+          sunflowerMeal:
+            "Cowpea meal generally refers to ground whole or dehulled seed rather than an oil-extraction byproduct. Grinding changes particle size and storage behavior but does not independently neutralize antinutritional factors.",
+
+          practicalMeaning:
+            "Research involving cooked, autoclaved, extruded, roasted, dehulled, or finely ground Cowpea ingredients must not automatically be applied to raw whole seed or casual household feeding."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cultivar",
+          "Seed-coat color",
+          "Seed-coat thickness",
+          "Tannin concentration",
+          "Trypsin-inhibitor concentration",
+          "Lectin activity",
+          "Phytate concentration",
+          "Phenolic concentration",
+          "Growth habit",
+          "Seed maturity",
+          "Growing environment",
+          "Heat and drought stress",
+          "Soil fertility",
+          "Nodulation",
+          "Harvest timing",
+          "Drying conditions",
+          "Storage duration",
+          "Stored-insect damage",
+          "Dehulling",
+          "Soaking",
+          "Cooking method",
+          "Cooking duration",
+          "Roasting temperature",
+          "Batch depth",
+          "Heat-treatment uniformity",
+          "Extrusion",
+          "Grinding",
+          "Germination",
+          "Fermentation",
+          "Fresh versus dry weight",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Useful Supplemental Plant Protein",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Properly processed mature Cowpea seed can contribute substantially more protein than most cereal grains and may help diversify a homegrown supplemental-feed system."
+          },
+
+          {
+            title:
+              "Strong Lysine Contribution",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Cowpea generally provides more lysine than cereal grains and can complement lysine-poor grain ingredients within a professionally balanced ration."
+          },
+
+          {
+            title:
+              "Multiple Distinct Feed Products",
+
+            importance:
+              "primary",
+
+            explanation:
+              "One Cowpea planting may provide young leaves, tender vine tips, immature pods, fresh peas, mature dry seed, postharvest residual peas, and crop residue."
+          },
+
+          {
+            title:
+              "Excellent Warm-Season Adaptation",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Cowpeas tolerate heat and summer drought better than many common garden legumes, allowing fresh forage and seed production during periods when cool-season forage crops decline."
+          },
+
+          {
+            title:
+              "Useful Fresh Forage",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Tender leaves and vine tips can provide cut-and-carry forage, safe hanging enrichment, or controlled rotational grazing for established adult chickens."
+          },
+
+          {
+            title:
+              "Household Food and Flock Integration",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Tender pods, fresh shell peas, and dry peas have strong human-food value, while sound surplus material and fresh vegetative growth can support supplemental poultry feeding."
+          },
+
+          {
+            title:
+              "Dry-Seed Storage Potential",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Fully dried whole seed can remain usable for extended periods when protected from moisture, insects, heat, chemicals, and rodents."
+          },
+
+          {
+            title:
+              "Biological Nitrogen Fixation",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Healthy nodulated Cowpeas can fix atmospheric nitrogen through compatible Bradyrhizobium bacteria, reducing reliance on purchased nitrogen fertilizer and supporting crop rotation."
+          },
+
+          {
+            title:
+              "Summer Soil Cover and Weed Competition",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Bush, semi-vining, trailing, and forage cultivars can cover warm soil, suppress weeds, reduce erosion, and contribute organic matter."
+          },
+
+          {
+            title:
+              "Flexible Growth Habits",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Compact bush, erect, semi-vining, trailing, prostrate, and climbing cultivars allow the crop to fit rows, beds, fences, trellises, forage plots, and cover-crop systems."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Fresh forage investigation",
+
+            explanation:
+              "Tender Cowpea foliage encourages pecking, tearing, manipulation, and investigation when offered in a basket or safe hanging holder."
+          },
+
+          {
+            benefit:
+              "Seasonal pod and pea discovery",
+
+            explanation:
+              "Birds may investigate and consume fresh pods or residual peas through controlled harvest or postharvest gleaning."
+          },
+
+          {
+            benefit:
+              "Rotational living forage",
+
+            explanation:
+              "Established plants can provide temporary supervised access when the planting is protected between grazing periods."
+          },
+
+          {
+            benefit:
+              "Cut-and-carry variety",
+
+            explanation:
+              "Fresh Cowpea forage can diversify the flock's feeding environment without allowing continuous destructive access to the crop."
+          },
+
+          {
+            benefit:
+              "Natural scratching after harvest",
+
+            explanation:
+              "Postharvest areas may provide limited gleaning and scratching opportunities after valuable household or seed crops have been collected."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Fresh forage can be portioned through cut-and-carry feeding",
+          "Multiple forage baskets can reduce competition",
+          "Tender pods and peas can be offered in measured dishes",
+          "Cooked seed can be weighed accurately",
+          "Dry seed can be stored separately by harvest lot",
+          "Protected plots allow regrowth between flock-access periods",
+          "Postharvest gleaning can recover sound residual peas",
+          "Different forms can be matched to season and labor availability",
+          "The crop provides a lower-fat alternative to oilseed supplements"
+        ],
+
+        homesteadBenefits: [
+          "Heat-tolerant warm-season annual",
+          "Drought-adapted after establishment",
+          "Large seed is easy to plant by hand",
+          "Direct sowing avoids transplant production",
+          "Can fix atmospheric nitrogen",
+          "Can suppress warm-season weeds",
+          "Can provide summer soil cover",
+          "Can support household vegetable production",
+          "Can provide mature dry peas for storage",
+          "Can support seed saving with suitable open-pollinated cultivars",
+          "Can contribute compost and mulch biomass",
+          "Can fit crop rotations after cool-season crops",
+          "Can provide forage where cool-season legumes struggle in summer",
+          "Can serve as a cover crop, food crop, forage crop, and poultry supplement"
+        ],
+
+        benefitSummary:
+          "Cowpea's strongest value comes from combining processed-seed protein, fresh warm-season forage, household food, heat and drought adaptation, nitrogen fixation, soil cover, and several separate harvest pathways. Its value is reduced by mature-seed processing requirements and incomplete amino-acid balance."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Raw Mature Seed Requires Processing",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Raw mature Cowpea seed contains protease inhibitors, lectin activity, tannins, phytate, phenolic compounds, non-starch polysaccharides, and other antinutritional factors. Meaningful routine feeding requires thorough cooking or another validated heat treatment."
+          },
+
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Cowpea does not supply the complete balance of energy, digestible amino acids, calcium, sodium, vitamins, trace minerals, and other nutrients required by productive poultry."
+          },
+
+          {
+            title:
+              "Methionine and Sulfur Amino Acids Are Limiting",
+
+            severity:
+              "high",
+
+            explanation:
+              "Cowpea contributes useful lysine but remains limited in methionine, cysteine, and total sulfur-containing amino acids."
+          },
+
+          {
+            title:
+              "Not a Direct Substitute for Soybean Meal",
+
+            severity:
+              "high",
+
+            explanation:
+              "Cowpea generally provides less protein, less digestible sulfur amino acids, and different energy, fiber, and antinutritional characteristics than properly processed soybean meal."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Cowpea seed and forage do not supply the calcium concentration necessary for eggshell production."
+          },
+
+          {
+            title:
+              "Processing Can Fail in Two Directions",
+
+            severity:
+              "high",
+
+            explanation:
+              "Underprocessing may leave excessive antinutritional activity, while excessive heat can reduce protein quality and damage heat-sensitive amino acids."
+          },
+
+          {
+            title:
+              "Cooked Seed Is Highly Perishable",
+
+            severity:
+              "high",
+
+            explanation:
+              "Cooking creates a moist product that can support rapid bacterial, yeast, and mold growth when held warm or stored improperly."
+          },
+
+          {
+            title:
+              "Stored-Seed Insects Can Cause Severe Losses",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Bruchid beetles and other stored-product insects can hollow seeds, create dust, reduce germination and feed value, and contaminate storage containers."
+          },
+
+          {
+            title:
+              "Fresh Forage Has Low Dry-Matter Density",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Tender leaves and vine tips contain substantial water and should not be treated as equivalent to mature dry seed on an equal-weight basis."
+          },
+
+          {
+            title:
+              "Unrestricted Chicken Access Can Destroy the Crop",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Chickens may uproot seedlings, strip leaves, trample vines, damage flowers, consume immature pods, and sharply reduce seed production."
+          },
+
+          {
+            title:
+              "Cultivar Performance Is Highly Variable",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Maturity, photoperiod response, growth habit, seed type, tannin concentration, pod quality, pest resistance, forage value, and seed yield differ substantially among cultivars."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Bird age, production stage, cultivar, processing method, moisture content, seed form, base ration, body condition, and total flock intake vary too greatly for one universal Cowpea feeding percentage."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Methionine is limiting",
+          "Cysteine and total sulfur-containing amino acids are limited",
+          "Does not provide adequate calcium for laying hens",
+          "Raw mature seed contains antinutritional factors",
+          "Phytate reduces mineral availability",
+          "Seed-coat fiber reduces usable nutrient density",
+          "Tannins may reduce protein and nutrient use",
+          "Lectin activity varies among cultivars",
+          "Protease inhibitors can reduce protein digestion",
+          "Fresh forage contains substantial moisture",
+          "Fresh forage is less concentrated than mature dry seed",
+          "Cooked seed contains more water than dry seed",
+          "Crude-protein percentage does not establish digestible amino-acid adequacy",
+          "Cowpea is lower in protein quality than properly processed soybean meal",
+          "Cowpea is generally lower in energy than Corn",
+          "Cowpea is generally lower in energy than Wheat",
+          "Total phosphorus is not fully available to poultry",
+          "Vitamin and trace-mineral balance is incomplete",
+          "Processing changes nutrient availability and retention"
+        ],
+
+        practicalLimitations: [
+          "Mature seed must be shelled",
+          "Dry seed must be cleaned",
+          "Mature seed requires cooking or validated heat treatment",
+          "Cooking requires water and fuel",
+          "Cooking requires cooling and draining",
+          "Cooked seed must be fed promptly",
+          "Cooked leftovers require refrigeration or freezing",
+          "Dry roasting may be uneven",
+          "Overheating may damage protein quality",
+          "Dehulling adds labor and creates hull waste",
+          "Grinding shortens storage life",
+          "Fresh forage wilts quickly",
+          "Wet forage may become slimy or ferment",
+          "Fresh intake is difficult to measure precisely",
+          "Heavy foliage harvest reduces seed production",
+          "Direct flock access may destroy plants",
+          "Stored seed requires insect monitoring",
+          "Dry pods may shatter before harvest",
+          "Repeated pod picking may require substantial labor",
+          "Wildlife and insects may reduce the crop",
+          "Photoperiod-sensitive cultivars may mature too late",
+          "Short-season regions may not obtain mature dry seed",
+          "Root-knot nematodes may reduce production",
+          "Cowpea curculio may ruin pods and seed in affected regions"
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Replacing soybean meal pound for pound",
+          "Feeding raw mature seed without processing",
+          "Using soaking alone as complete processing",
+          "Assuming any home roasting method is adequate",
+          "Supplying all required amino acids",
+          "Serving as the flock's primary calcium source",
+          "Providing unrestricted free-choice processed seed",
+          "Supporting young chicks as a routine informal supplement",
+          "Treating fresh forage as equivalent to dry seed",
+          "Treating fresh peas as equivalent to dry peas",
+          "Guaranteeing a specific feed inclusion percentage",
+          "Guaranteeing increased egg production",
+          "Guaranteeing faster molt recovery",
+          "Guaranteeing complete-feed savings",
+          "Guaranteeing mature seed in every climate",
+          "Guaranteeing full yield under drought",
+          "Surviving continuous chicken access",
+          "Providing permanent year-round forage",
+          "Eliminating the need for purchased protein ingredients",
+          "Eliminating the need for ration formulation"
+        ],
+
+        limitationSummary:
+          "Cowpea can provide valuable protein-oriented seed and fresh warm-season forage, but its mature seed requires reliable processing, its amino-acid and calcium balance is incomplete, cooked material spoils rapidly, and unrestricted flock access can destroy the crop."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "high-for-raw-mature-seed-and-moderate-after-proper-processing",
+
+        requiresDetoxification:
+          true,
+
+        cookingRequired:
+          true,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Trypsin inhibitors",
+
+            concernLevel:
+              "high-in-raw-mature-seed",
+
+            explanation:
+              "Raw mature Cowpea seed contains trypsin-inhibiting compounds that can interfere with digestive enzymes responsible for protein breakdown. Concentrations vary among cultivars, but meaningful routine feeding of untreated mature seed is not recommended."
+          },
+
+          {
+            factor:
+              "Other protease inhibitors",
+
+            concernLevel:
+              "high-in-raw-mature-seed",
+
+            explanation:
+              "Cowpeas may contain additional protease-inhibiting activity, including chymotrypsin inhibitors. These compounds can reduce protein digestion and effective amino-acid availability when mature seed is inadequately processed."
+          },
+
+          {
+            factor:
+              "Lectin activity",
+
+            concernLevel:
+              "moderate-to-high-in-raw-mature-seed",
+
+            explanation:
+              "Raw mature Cowpea seed may contain lectin activity capable of interfering with normal intestinal function and nutrient use. Lectin concentration and biological activity vary with cultivar and processing."
+          },
+
+          {
+            factor:
+              "Tannins",
+
+            concernLevel:
+              "moderate-and-cultivar-dependent",
+
+            explanation:
+              "Tannins can bind proteins and other nutrients, reduce palatability, and interfere with digestive utilization. They are often concentrated in the seed coat and may be higher in some strongly pigmented cultivars, although seed color alone is not a reliable safety test."
+          },
+
+          {
+            factor:
+              "Phytate",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Phytate can bind phosphorus, calcium, zinc, iron, and other minerals, reducing the proportion available to poultry. Total mineral concentration therefore does not equal biologically available mineral supply."
+          },
+
+          {
+            factor:
+              "Phenolic compounds",
+
+            concernLevel:
+              "moderate-and-variable",
+
+            explanation:
+              "Cowpea seed may contain several phenolic compounds whose concentrations vary with cultivar, seed coat, growing environment, maturity, and processing. These compounds can affect palatability, protein use, and nutrient availability."
+          },
+
+          {
+            factor:
+              "Non-starch polysaccharides",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Non-starch polysaccharides and pectic substances contribute structural carbohydrate that poultry digest less efficiently than starch. Higher concentrations can reduce usable energy and alter digestive characteristics."
+          },
+
+          {
+            factor:
+              "Seed-coat fiber",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "The Cowpea seed coat contributes fiber while containing less usable protein and starch than the cotyledons. Greater seed-coat proportion lowers nutrient density on an equal-weight basis."
+          },
+
+          {
+            factor:
+              "Methionine and sulfur-amino-acid limitation",
+
+            concernLevel:
+              "high-as-a-ration-foundation",
+
+            explanation:
+              "This is not a toxin, but it is one of Cowpea's most important poultry-nutrition limitations. Cowpea contributes useful lysine while remaining deficient in methionine, cysteine, and total sulfur-containing amino acids."
+          },
+
+          {
+            factor:
+              "Inadequate calcium",
+
+            concernLevel:
+              "high-for-laying-hens-if-complete-feed-is-displaced",
+
+            explanation:
+              "Cowpea seed contains too little calcium to support eggshell production. Large amounts can dilute the calcium concentration of the total diet when they replace complete layer feed."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Beta-glucans",
+
+            explanation:
+              "Cowpea does not carry the same beta-glucan limitation associated with Barley and Oats."
+          },
+
+          {
+            factor:
+              "Excessive natural oil",
+
+            explanation:
+              "Cowpea seed is relatively low in fat and does not present the same high-oil calorie and rancidity concern associated with Sunflower seed or full-fat Soybeans."
+          },
+
+          {
+            factor:
+              "Cyanogenic compounds",
+
+            explanation:
+              "Cowpea is not classified in this database as a cyanogenic crop requiring processing specifically for hydrogen-cyanide removal."
+          },
+
+          {
+            factor:
+              "Solanine or related nightshade glycoalkaloids",
+
+            explanation:
+              "Cowpea is a legume rather than a nightshade crop and does not carry the solanine concern associated with green or sprouted Potatoes."
+          },
+
+          {
+            factor:
+              "Glucosinolates",
+
+            explanation:
+              "Cowpea does not carry the glucosinolate concern associated with Brassica crops such as Kale, Collards, Mustard, or Rapeseed."
+          },
+
+          {
+            factor:
+              "Oxalates as the primary seed limitation",
+
+            explanation:
+              "Oxalates are not treated as Cowpea mature seed's principal poultry-specific concern. Protease inhibitors, lectin activity, tannins, phytate, fiber, and amino-acid balance are more important."
+          },
+
+          {
+            factor:
+              "Acute toxicity from clean tender foliage",
+
+            explanation:
+              "Clean young Cowpea leaves and tender vine tips are not treated as acutely toxic to adult chickens. Their limitations are supplemental-feed displacement, moisture, fiber, chemical contamination, disease, and unrestricted crop damage."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Soaking",
+
+            effect:
+              "Can shorten cooking time and remove some water-soluble compounds, but soaking alone should not be treated as adequate processing for mature poultry-feed seed."
+          },
+
+          {
+            process:
+              "Discarding soak water",
+
+            effect:
+              "May remove some soluble compounds, pigments, and antinutritional material, but it also removes soluble nutrients and does not replace thorough heat treatment."
+          },
+
+          {
+            process:
+              "Boiling or thorough moist cooking",
+
+            effect:
+              "Can substantially reduce important heat-labile protease inhibitors and lectin activity when the entire seed reaches adequate temperature for sufficient time."
+          },
+
+          {
+            process:
+              "Pressure cooking",
+
+            effect:
+              "May provide more rapid and uniform moist-heat treatment than ordinary boiling when batch size, water level, pressure, duration, and cooling are controlled appropriately."
+          },
+
+          {
+            process:
+              "Dry roasting",
+
+            effect:
+              "Can reduce some heat-labile antinutritional activity, but household roasting may heat seeds unevenly. Surface browning does not prove that the center of every seed was processed adequately."
+          },
+
+          {
+            process:
+              "Extrusion",
+
+            effect:
+              "Controlled commercial extrusion can combine heat, pressure, moisture, and mechanical shear to reduce antinutritional activity and alter starch and protein characteristics."
+          },
+
+          {
+            process:
+              "Autoclaving",
+
+            effect:
+              "Research autoclaving can substantially reduce heat-labile factors, but published autoclave conditions should not be treated as directly equivalent to ordinary household cooking."
+          },
+
+          {
+            process:
+              "Dehulling",
+
+            effect:
+              "Reduces seed-coat fiber and may reduce tannins or phenolic compounds when those factors are concentrated in the seed coat. It also increases nutrient density and creates a separate fibrous hull byproduct."
+          },
+
+          {
+            process:
+              "Cracking",
+
+            effect:
+              "Reduces particle size and may improve processing uniformity or physical access, but cracking alone does not neutralize antinutritional factors."
+          },
+
+          {
+            process:
+              "Grinding",
+
+            effect:
+              "Improves mixing and may support uniform heat penetration in a process designed for ground material, but grinding alone does not make raw seed safe and shortens storage stability."
+          },
+
+          {
+            process:
+              "Germination",
+
+            effect:
+              "Changes moisture, enzyme activity, carbohydrate use, nutrient distribution, and some antinutritional-factor concentrations, but it does not create additional dry matter or guarantee safe poultry-feed processing."
+          },
+
+          {
+            process:
+              "Fermentation",
+
+            effect:
+              "May alter pH, microbial populations, protein characteristics, and antinutritional factors, but uncontrolled household fermentation should not be considered validated."
+          },
+
+          {
+            process:
+              "Excessive heating",
+
+            effect:
+              "Can reduce protein quality, damage heat-sensitive amino acids, lower lysine availability through heat reactions, reduce palatability, and create scorched or unevenly processed material."
+          },
+
+          {
+            process:
+              "Insufficient heating",
+
+            effect:
+              "May leave substantial protease-inhibitor or lectin activity even when the seed surface appears dry, browned, toasted, or cooked."
+          },
+
+          {
+            process:
+              "Cooling after wet processing",
+
+            effect:
+              "Does not further reduce antinutritional factors, but rapid clean cooling is necessary to limit post-cooking microbial growth and prevent warm wet material from spoiling."
+          },
+
+          {
+            process:
+              "Drying after heat treatment",
+
+            effect:
+              "Can improve storage stability only when the processed seed is dried uniformly, cooled completely, protected from recontamination, and stored without condensation."
+          }
+        ],
+
+        antinutritionalSummary:
+          "Raw mature Cowpea seed presents meaningful antinutritional concerns and should not be treated as an ordinary raw poultry grain. Thorough cooking or another validated heat treatment is required to reduce important heat-labile protease inhibitors and lectin activity. Processing does not completely remove phytate, fiber, tannins, phenolic compounds, or Cowpea's methionine and calcium limitations, and excessive heating can reduce protein quality. Tender foliage, immature pods, and fresh peas belong to separate supplemental feeding pathways and should not be treated as nutritionally or procedurally identical to mature dry seed."
+      },
+
+      complementaryFeeding: {
+        summary:
+          "Cowpeas perform best when they complement rather than replace a nutritionally complete poultry ration. Their strongest nutritional contribution comes from supplemental plant protein, lysine, and starch, while other feeds continue supplying calcium, sulfur-containing amino acids, vitamins, trace minerals, and balanced energy.",
+
+        worksEspeciallyWellWith: [
+          {
+            companion:
+              "Complete poultry feed",
+
+            reason:
+              "Provides the calcium, vitamins, minerals, amino-acid balance, and nutritional consistency that Cowpeas cannot supply independently."
+          },
+
+          {
+            companion:
+              "Corn",
+
+            reason:
+              "Corn contributes concentrated energy while Cowpeas contribute additional protein and lysine."
+          },
+
+          {
+            companion:
+              "Wheat",
+
+            reason:
+              "Wheat provides energy while Cowpeas improve overall protein diversity."
+          },
+
+          {
+            companion:
+              "Barley",
+
+            reason:
+              "Barley contributes cool-season grain production while Cowpeas provide warm-season protein-oriented supplementation."
+          },
+
+          {
+            companion:
+              "Oats",
+
+            reason:
+              "Oats diversify grain production while Cowpeas provide complementary legume protein."
+          },
+
+          {
+            companion:
+              "Sunflower",
+
+            reason:
+              "Sunflower contributes concentrated oil and energy while Cowpeas provide considerably more protein and lysine."
+          },
+
+          {
+            companion:
+              "Pumpkin and Winter Squash",
+
+            reason:
+              "Pumpkins provide moisture, carotenoids, and enrichment while Cowpeas contribute substantially more protein."
+          },
+
+          {
+            companion:
+              "Comfrey",
+
+            reason:
+              "Comfrey offers fresh leafy forage while Cowpeas contribute both forage and processed seed."
+          },
+
+          {
+            companion:
+              "White Clover",
+
+            reason:
+              "White Clover extends grazing opportunities while Cowpeas thrive during hotter summer conditions."
+          },
+
+          {
+            companion:
+              "Mulberry",
+
+            reason:
+              "Mulberry leaves and fruit provide seasonal variety while Cowpeas add protein-oriented supplementation."
+          }
+        ],
+
+        doesNotReplace: [
+          "Complete poultry feed",
+          "Layer ration",
+          "Grower ration",
+          "Starter ration",
+          "Soybean meal in balanced commercial diets",
+          "Calcium supplementation for laying hens",
+          "Balanced amino-acid supplementation",
+          "Vitamin supplementation",
+          "Trace-mineral supplementation"
+        ],
+
+        balancingConsiderations: [
+          "Maintain unrestricted access to an appropriate complete ration.",
+          "Treat Cowpeas as one ingredient within a diversified feeding program.",
+          "Balance Cowpeas with higher-calcium feeds for laying hens.",
+          "Do not rely on Cowpeas to supply adequate methionine or total sulfur amino acids.",
+          "Fresh forage and mature seed should be viewed as different feed products.",
+          "Processed mature seed contributes considerably more concentrated nutrition than fresh foliage.",
+          "Seasonal forage can diversify the diet without replacing balanced feed.",
+          "Adjust supplemental feeding according to body condition, production stage, and complete-feed intake."
+        ],
+
+        seasonalUseSuggestions: [
+          {
+            season:
+              "Spring",
+
+            recommendation:
+              "Use young leaves and tender vegetative growth conservatively as plants become established."
+          },
+
+          {
+            season:
+              "Summer",
+
+            recommendation:
+              "Fresh foliage, vine tips, immature pods, and green peas provide the greatest seasonal value."
+          },
+
+          {
+            season:
+              "Autumn",
+
+            recommendation:
+              "Harvest mature dry seed for processing and long-term storage while allowing limited postharvest gleaning."
+          },
+
+          {
+            season:
+              "Winter",
+
+            recommendation:
+              "Feed properly processed stored mature seed while relying primarily on complete poultry feed."
+          }
+        ],
+
+        complementarySummary:
+          "Cowpeas work best as one component of a diversified backyard feeding system where grains, leafy crops, complete poultry feed, calcium sources, and seasonal garden crops all contribute different nutritional strengths."
+      },
+
+      feedingMethods: {
+        overview:
+          "Several practical feeding methods are appropriate depending on whether the harvested material is fresh forage, immature pods, fresh peas, or properly processed mature seed.",
+
+        recommendedMethods: [
+          {
+            method:
+              "Measured dish feeding",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Cooked or properly processed mature Cowpeas can be portioned accurately in shallow feeders or dishes, allowing intake to be monitored."
+          },
+
+          {
+            method:
+              "Cut-and-carry forage",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Harvest tender leaves and vine tips and bring them to the flock rather than allowing unrestricted access to the crop."
+          },
+
+          {
+            method:
+              "Safe forage basket or hanging holder",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Bundles of tender vines or leaves encourage natural pecking behavior while reducing contamination from wet litter."
+          },
+
+          {
+            method:
+              "Fresh pod feeding",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Offer tender immature pods in moderate quantities after inspection and cleaning."
+          },
+
+          {
+            method:
+              "Fresh green-pea feeding",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fresh shelled immature peas are easily portioned and readily accepted by many adult chickens."
+          },
+
+          {
+            method:
+              "Controlled rotational grazing",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Established Cowpea stands may tolerate carefully managed, temporary flock access, but unrestricted grazing usually damages the crop."
+          },
+
+          {
+            method:
+              "Postharvest gleaning",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Allow birds to recover sound residual peas after the primary harvest while preventing access to moldy or spoiled material."
+          },
+
+          {
+            method:
+              "Balanced ration ingredient",
+
+            suitability:
+              "good-with-formulation",
+
+            explanation:
+              "Properly processed Cowpeas may be incorporated into professionally balanced rations where nutrient balance is calculated."
+          }
+        ],
+
+        methodsToAvoid: [
+          {
+            method:
+              "Free-choice raw mature Cowpeas",
+
+            reason:
+              "Raw mature seed contains antinutritional factors and should not be offered as unrestricted feed."
+          },
+
+          {
+            method:
+              "Continuous unrestricted access to living Cowpea plantings",
+
+            reason:
+              "Chickens commonly uproot seedlings, strip foliage, damage flowers, consume immature pods, and reduce seed production."
+          },
+
+          {
+            method:
+              "Large piles of cooked Cowpeas left for extended periods",
+
+            reason:
+              "Cooked material spoils rapidly in warm weather and attracts insects and rodents."
+          },
+
+          {
+            method:
+              "Mixing wet cooked Cowpeas into stored dry feed",
+
+            reason:
+              "Moisture can reduce storage life and promote spoilage of otherwise stable feed."
+          },
+
+          {
+            method:
+              "Using treated planting seed",
+
+            reason:
+              "Planting seed may contain pesticides or other seed treatments not intended for poultry consumption."
+          }
+        ],
+
+        managementTips: [
+          "Introduce Cowpeas gradually rather than making sudden dietary changes.",
+          "Observe flock acceptance before increasing supplemental quantities.",
+          "Remove uneaten cooked material promptly.",
+          "Harvest forage while still tender.",
+          "Separate household-food harvest from poultry-feed harvest when practical.",
+          "Protect living plantings until they are well established.",
+          "Inspect stored seed regularly for insects, moisture, and mold.",
+          "Rotate feeding locations to reduce litter contamination.",
+          "Continue providing unlimited access to complete poultry feed."
+        ],
+
+        feedingMethodSummary:
+          "Measured feeding, cut-and-carry forage, fresh seasonal supplementation, and properly processed mature seed provide the safest and most practical backyard uses for Cowpeas. Unrestricted access to living plantings and routine feeding of raw mature seed should be avoided."
+      },
+
+      storage: {
+        storageSuitability:
+          "good-for-whole-dry-seed-and-poor-for-cooked-or-fresh-material",
+
+        preferredStorageForms: [
+          {
+            form:
+              "Clean whole mature dry Cowpea seed",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fully mature, clean, sound, dry whole seed is the preferred long-term storage form because the intact seed coat provides physical protection and the low natural oil concentration reduces rancidity pressure compared with oilseeds."
+          },
+
+          {
+            form:
+              "Validated heat-treated whole dry Cowpea seed",
+
+            suitability:
+              "very-good-when-fully-redried",
+
+            explanation:
+              "Heat-treated seed may be stored when the process produces a uniformly dry product and the seed is cooled completely before sealing. Any residual moisture materially increases spoilage risk."
+          },
+
+          {
+            form:
+              "Dehulled dry Cowpea seed",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Dehulled seed can remain useful when kept cool and dry, but removing the seed coat reduces physical protection and may shorten practical storage life."
+          },
+
+          {
+            form:
+              "Cracked heat-treated Cowpeas",
+
+            suitability:
+              "limited",
+
+            explanation:
+              "Cracking increases exposed surface area and moisture absorption. Cracked seed should be prepared in smaller quantities and used sooner than intact seed."
+          },
+
+          {
+            form:
+              "Ground heat-treated Cowpea meal",
+
+            suitability:
+              "short-term-only",
+
+            explanation:
+              "Ground material absorbs moisture readily, compacts, becomes dusty, and is more difficult to inspect internally. It should be produced in small batches and used promptly."
+          },
+
+          {
+            form:
+              "Cooked mature Cowpeas",
+
+            suitability:
+              "refrigerated-or-frozen-only",
+
+            explanation:
+              "Cooked Cowpeas are a moist perishable food and should not be treated as shelf-stable feed. They require prompt cooling, short refrigerated holding, or freezing."
+          },
+
+          {
+            form:
+              "Fresh green peas and immature pods",
+
+            suitability:
+              "short-term-refrigerated",
+
+            explanation:
+              "Fresh peas and pods lose quality rapidly and should be fed promptly or refrigerated briefly under clean food-handling conditions."
+          },
+
+          {
+            form:
+              "Fresh leaves and vine tips",
+
+            suitability:
+              "immediate-use-preferred",
+
+            explanation:
+              "Fresh forage wilts, heats, ferments, and becomes contaminated quickly after harvest. It is best used soon after cutting."
+          }
+        ],
+
+        dryingRequirements: {
+          thoroughDryingRequired:
+            true,
+
+          targetCondition:
+            "Mature dry Cowpea seed must be fully dry, cool, stable, and free from internal dampness before enclosed storage.",
+
+          goodDryingPractices: [
+            "Allow pods to mature and dry as fully as weather permits.",
+            "Harvest before prolonged rain, severe pod deterioration, or major shattering.",
+            "Keep harvested pods and shelled seed off damp soil and wet surfaces.",
+            "Dry pods or seed in shallow layers.",
+            "Maintain dependable airflow around the material.",
+            "Turn or stir drying seed when necessary for uniform drying.",
+            "Remove wet pods, green plant material, chaff, and damaged seed.",
+            "Protect drying material from rainfall, dew, condensation, animals, and dust.",
+            "Shell pods only when they are sufficiently dry for clean separation.",
+            "Allow recently heated or sun-warmed seed to cool before enclosed storage.",
+            "Keep individual harvest lots separate until stability is confirmed.",
+            "Use a suitable grain-moisture meter when practical."
+          ],
+
+          unsafeDryingPractices: [
+            "Sealing seed that still feels warm",
+            "Storing seed while pods or internal seed tissue remain damp",
+            "Leaving harvested pods in deep compacted piles",
+            "Mixing wet newly harvested seed with dry stored seed",
+            "Drying seed directly on contaminated soil or concrete",
+            "Leaving seed exposed to repeated rainfall or nighttime dew",
+            "Assuming a dry seed coat proves the entire seed is dry",
+            "Ignoring heating, condensation, or insect activity"
+          ],
+
+          dryingFailureIndicators: [
+            "Condensation inside a container",
+            "Warmth developing within stored seed",
+            "Musty odor",
+            "Sour or fermented odor",
+            "Seed clumping",
+            "Soft or swollen seed",
+            "Visible fungal growth",
+            "Unexpected discoloration",
+            "Rapid insect activity",
+            "Moisture collecting at the bottom of the container"
+          ]
+        },
+
+        storageEnvironment: {
+          idealConditions: [
+            "Cool",
+            "Dry",
+            "Dark",
+            "Clean",
+            "Protected from temperature swings",
+            "Protected from condensation",
+            "Protected from direct sunlight",
+            "Protected from rodents",
+            "Protected from stored-product insects",
+            "Separated from chemicals and treated planting seed",
+            "Located where spills can be cleaned promptly"
+          ],
+
+          avoidConditions: [
+            "Hot sheds with large daily temperature swings",
+            "Damp basements",
+            "Open bags accessible to insects or rodents",
+            "Areas exposed to roof leaks",
+            "Containers with residual wash water",
+            "Storage beside pesticides, fuels, solvents, fertilizers, or treated seed",
+            "Locations where livestock, wildlife, pets, or children can contaminate the seed",
+            "Areas where old infested grain or feed residue remains"
+          ]
+        },
+
+        containerGuidance: {
+          looseSeed: [
+            "Use clean, completely dry, food-safe or feed-safe containers.",
+            "Use tight-fitting lids only after seed is fully dry and cool.",
+            "Choose containers that prevent rodent access.",
+            "Use manageable container sizes so each lot can be inspected.",
+            "Label containers clearly.",
+            "Avoid repeatedly introducing damp scoops, hands, or utensils.",
+            "Clean spilled seed promptly.",
+            "Do not top off an old questionable batch with new seed."
+          ],
+
+          wholeHeads: [],
+
+          kernelsAndProcessedSeed: [
+            "Keep dehulled, cracked, or ground Cowpeas in smaller containers than intact whole seed.",
+            "Use processed lots before intact whole-seed lots.",
+            "Store only material that is uniformly dry and completely cool.",
+            "Do not seal warm material after roasting or another dry-heat process.",
+            "Keep processed material away from humidity and water.",
+            "Prepare ground material in small quantities.",
+            "Refrigerate or freeze processed material when its moisture content makes dry storage uncertain."
+          ],
+
+          cookedMaterial: [
+            "Cool cooked Cowpeas promptly in shallow containers.",
+            "Do not leave cooked Cowpeas at warm room or coop temperatures for prolonged periods.",
+            "Refrigerate only manageable short-term quantities.",
+            "Freeze portions that will not be used promptly.",
+            "Use clean utensils when removing portions.",
+            "Do not repeatedly warm and cool the same batch.",
+            "Discard leftovers contaminated by litter, manure, insects, rodents, wild birds, or dirty utensils."
+          ],
+
+          freshForageAndPods: [
+            "Harvest only the quantity expected to be used promptly.",
+            "Keep fresh forage shaded and cool after cutting.",
+            "Do not compress warm wet vines into sealed bags.",
+            "Refrigerate clean pods or fresh peas briefly when needed.",
+            "Keep fresh material separate from dry stored feed.",
+            "Discard wilted material that becomes slimy, sour, hot, moldy, or fermented."
+          ]
+        },
+
+        inventoryManagement: {
+          firstInFirstOutRecommended:
+            true,
+
+          batchSeparationRecommended:
+            true,
+
+          labelingRecommended:
+            true,
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Cultivar when known",
+            "Harvest date",
+            "Shelling date",
+            "Drying completion date",
+            "Processing method",
+            "Processing date",
+            "Storage form",
+            "Container date",
+            "Last inspection date",
+            "Observed condition"
+          ],
+
+          guidance:
+            "Keep harvest and processing lots separate whenever practical. Raw seed requiring processing should be clearly separated from ready-to-feed material. A questionable batch should never be blended with sound seed because blending conceals deterioration rather than correcting it."
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect frequently during the first several weeks because residual moisture, hidden field infestation, seed weevils, bruchid beetles, condensation, and heating may become apparent soon after storage.",
+
+          longTermStorage:
+            "Continue periodic inspection throughout storage, with greater frequency during warm weather, humid conditions, or after major temperature changes.",
+
+          inspectionChecklist: [
+            "No condensation",
+            "No unusual warmth",
+            "No musty odor",
+            "No sour or fermented odor",
+            "No visible mold",
+            "No wet clumping",
+            "No soft or swollen seed",
+            "No excessive dust",
+            "No exit holes in seeds",
+            "No live beetles or larvae",
+            "No webbing",
+            "No rodent droppings or chewing",
+            "No leaking container",
+            "No chemical odor",
+            "No moisture entering the storage area"
+          ]
+        },
+
+        storageLifeGuidance:
+          "Sound whole dry Cowpea seed may remain usable for many months and potentially longer than one year under favorable household storage conditions, but no universal expiration period should be assigned. Practical storage life depends on initial seed moisture, cultivar, seed damage, sanitation, temperature, humidity, insects, rodents, container quality, and inspection frequency. Cooked Cowpeas, cracked seed, ground seed, sprouts, fresh peas, pods, and forage have substantially shorter safe holding periods.",
+
+        disposalGuidance:
+          "Discard material affected by mold, mustiness, fermentation, chemical contamination, treated-seed exposure, rodent contamination, severe insect damage, floodwater, sewage, or uncertain processing. Disposal should prevent access by chickens, livestock, pets, wildlife, and children.",
+
+        storageSummary:
+          "Cowpeas store best as clean, fully dried, intact whole mature seed. Whole seed offers strong non-refrigerated storage potential but remains highly vulnerable to bruchid beetles and other stored-seed insects. Cooking, sprouting, cracking, grinding, and fresh harvesting greatly shorten practical storage life."
+      },
+
+      spoilageAndContamination: {
+        overallRiskLevel:
+          "moderate-to-high",
+
+        primarySpoilageRisks: [
+          {
+            risk:
+              "Mold growth in dry seed",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Insufficient drying",
+              "High humidity",
+              "Condensation",
+              "Water leaks",
+              "Warm seed sealed too soon",
+              "Wet pods mixed with dry seed",
+              "Poor container sanitation"
+            ],
+
+            warningSigns: [
+              "Visible fungal growth",
+              "Musty odor",
+              "Seed clumping",
+              "Dark or unusual discoloration",
+              "Softened seed",
+              "Unexpected warmth",
+              "Condensation"
+            ],
+
+            response:
+              "Discard affected and suspicious material. Do not attempt to make moldy Cowpeas safe by washing, cooking, roasting, drying them again, grinding them, or blending them with sound seed."
+          },
+
+          {
+            risk:
+              "Fermentation or heating in stored seed",
+
+            likelihood:
+              "low-to-moderate",
+
+            primaryCauses: [
+              "Excess seed moisture",
+              "Storing warm seed",
+              "Deep compacted storage",
+              "Poor ventilation before sealing",
+              "Microbial activity",
+              "Mixing fresh and dry material"
+            ],
+
+            warningSigns: [
+              "Sour odor",
+              "Sweet-fermented odor",
+              "Alcohol-like odor",
+              "Warm or hot seed",
+              "Moist clumps",
+              "Gas pressure in a container",
+              "Rapid decline in seed quality"
+            ],
+
+            response:
+              "Remove the lot from flock access. Discard material when feed safety cannot be confirmed."
+          },
+
+          {
+            risk:
+              "Spoilage of cooked Cowpeas",
+
+            likelihood:
+              "high-with-poor-handling",
+
+            primaryCauses: [
+              "Slow cooling",
+              "Prolonged warm holding",
+              "Dirty utensils",
+              "Large deep storage containers",
+              "Repeated warming and cooling",
+              "Mixing fresh and old cooked batches",
+              "Exposure to litter, manure, flies, or rodents"
+            ],
+
+            warningSigns: [
+              "Sour odor",
+              "Slimy surface",
+              "Gas bubbles",
+              "Foaming",
+              "Fermentation odor",
+              "Mold growth",
+              "Abnormal discoloration",
+              "Unusual softness or breakdown"
+            ],
+
+            response:
+              "Discard spoiled or questionable cooked Cowpeas immediately. Reheating does not reliably restore safety."
+          },
+
+          {
+            risk:
+              "Bruchid beetle or seed-weevil infestation",
+
+            likelihood:
+              "high",
+
+            primaryCauses: [
+              "Infested seed entering storage",
+              "Warm storage temperatures",
+              "Unsealed containers",
+              "Old infested seed nearby",
+              "Poor sanitation",
+              "Long storage without inspection"
+            ],
+
+            warningSigns: [
+              "Small round exit holes",
+              "Hollow seed",
+              "Powder or dust",
+              "Live beetles",
+              "Larvae",
+              "Eggs attached to seed",
+              "Rapid seed-weight loss",
+              "Increased broken material"
+            ],
+
+            response:
+              "Isolate the lot immediately. Material with severe infestation, contamination, moisture, heating, or mold should be discarded. Do not blend infested seed into clean feed."
+          },
+
+          {
+            risk:
+              "Spoilage of fresh forage, pods, or peas",
+
+            likelihood:
+              "moderate-to-high",
+
+            primaryCauses: [
+              "Harvesting wet foliage",
+              "Leaving cut material in direct sun",
+              "Compressing warm vines",
+              "Sealing wet material in plastic",
+              "Prolonged storage",
+              "Litter or manure contamination",
+              "Poor refrigeration"
+            ],
+
+            warningSigns: [
+              "Sliminess",
+              "Sour odor",
+              "Heating",
+              "Fermentation",
+              "Mold",
+              "Blackened tissue",
+              "Excessive water leakage",
+              "Bird refusal"
+            ],
+
+            response:
+              "Discard deteriorated fresh material rather than attempting to rinse or dry it for feeding."
+          }
+        ],
+
+        contaminationRisks: [
+          {
+            contaminant:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Bright artificial coloring",
+              "Seed-treatment warning",
+              "Commercial planting-seed packaging",
+              "Unknown coating",
+              "Unknown seed source"
+            ],
+
+            guidance:
+              "Never feed planting seed unless it is clearly documented as untreated and suitable for food or feed use."
+          },
+
+          {
+            contaminant:
+              "Pesticide or herbicide residues",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Known crop treatment",
+              "Recent spraying",
+              "Unknown reentry or grazing interval",
+              "Drift from neighboring areas",
+              "Chemical odor or visible residue"
+            ],
+
+            guidance:
+              "Do not feed treated foliage, pods, peas, seed, or residue unless the product label explicitly permits the intended feed or grazing use and all restrictions have been satisfied."
+          },
+
+          {
+            contaminant:
+              "Rodent contamination",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Droppings",
+              "Urine staining",
+              "Chewed containers",
+              "Nesting material",
+              "Rodent hair",
+              "Carcasses or body parts"
+            ],
+
+            guidance:
+              "Discard contaminated material. Do not attempt to salvage it by washing, cooking, or screening."
+          },
+
+          {
+            contaminant:
+              "Floodwater, sewage, or contaminated runoff",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Known flooding",
+              "Sewage exposure",
+              "Industrial runoff",
+              "Unknown standing water",
+              "Oil or chemical residue"
+            ],
+
+            guidance:
+              "Exclude exposed material from every poultry-feed and household-food pathway."
+          },
+
+          {
+            contaminant:
+              "Manure and dirty litter",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Visible droppings",
+              "Material recovered from muddy runs",
+              "Wet litter attached to pods or forage",
+              "Strong manure odor"
+            ],
+
+            guidance:
+              "Prevent contamination through clean harvesting and feeding practices. Discard heavily contaminated material."
+          },
+
+          {
+            contaminant:
+              "Unknown legumes or mixed seed",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Different seed shapes or colors",
+              "Mixed volunteer vines",
+              "Uncertain crop identity",
+              "Weed seed in screenings"
+            ],
+
+            guidance:
+              "Confirm identity before feeding. Do not assume every bean, pea, or vining legume has the same safety profile as Cowpea."
+          },
+
+          {
+            contaminant:
+              "Foreign material",
+
+            riskLevel:
+              "moderate-to-high",
+
+            identificationClues: [
+              "Stones",
+              "Metal fragments",
+              "Glass",
+              "Wire",
+              "Plastic",
+              "Treated wood debris",
+              "Excess soil or chaff"
+            ],
+
+            guidance:
+              "Sort and clean harvested seed carefully before processing or feeding."
+          }
+        ],
+
+        spoilageIndicators: [
+          {
+            indicator:
+              "Visible mold",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Musty odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Sour or fermented odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Slimy cooked seed or forage",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Unexpected warmth or heating",
+
+            action:
+              "remove-from-storage-and-discard-if-safety-is-uncertain"
+          },
+
+          {
+            indicator:
+              "Condensation",
+
+            action:
+              "inspect-immediately-and-do-not-feed-until-safety-is-confirmed"
+          },
+
+          {
+            indicator:
+              "Wet clumping",
+
+            action:
+              "discard-questionable-material"
+          },
+
+          {
+            indicator:
+              "Soft or swollen stored seed",
+
+            action:
+              "discard-if-moisture-damage-or-spoilage-is-suspected"
+          },
+
+          {
+            indicator:
+              "Rodent droppings, urine, or chewing",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Chemical odor or treated-seed appearance",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Severe beetle infestation or hollow seed",
+
+            action:
+              "discard-when-quality-or-safety-is-compromised"
+          },
+
+          {
+            indicator:
+              "Bird refusal of a normally accepted batch",
+
+            action:
+              "stop-feeding-and-investigate-quality"
+          }
+        ],
+
+        sensoryInspectionLimitations:
+          "Appearance, temperature, texture, and odor are useful screening tools but cannot detect every mycotoxin, pesticide residue, pathogen, chemical contaminant, or inadequately reduced antinutritional factor. Material with a known contamination or processing failure should not be fed merely because it appears normal.",
+
+        salvageWarning:
+          "Questionable Cowpeas should not be salvaged by washing, cooking, roasting, drying again, freezing, grinding, mixing with clean feed, or feeding smaller amounts.",
+
+        spoilageSummary:
+          "Cowpea spoilage risk differs sharply by form. Whole dry seed is relatively stable but vulnerable to moisture, mold, rodents, and stored-seed insects. Cooked seed and fresh forage are highly perishable and require prompt clean handling."
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Feeding raw mature Cowpeas as an ordinary grain",
+
+            whyItHappens:
+              "Dry Cowpeas resemble other whole grains or peas that may be offered directly to chickens.",
+
+            whyItIsAProblem:
+              "Raw mature seed contains protease inhibitors, lectin activity, tannins, phytate, and other antinutritional factors that can reduce digestion and nutrient use.",
+
+            correction:
+              "Thoroughly cook mature Cowpeas or use another validated heat-treatment process before meaningful poultry feeding."
+          },
+
+          {
+            mistake:
+              "Treating soaking as complete processing",
+
+            whyItHappens:
+              "Soaking softens the seed and may reduce cooking time.",
+
+            whyItIsAProblem:
+              "Soaking alone does not reliably reduce heat-labile antinutritional factors to an acceptable level.",
+
+            correction:
+              "Follow soaking with thorough cooking or another validated heat treatment."
+          },
+
+          {
+            mistake:
+              "Assuming surface browning proves adequate roasting",
+
+            whyItHappens:
+              "Roasted seeds may look dry and fully processed externally.",
+
+            whyItIsAProblem:
+              "The interior may remain underheated, especially in large whole seeds or deep batches.",
+
+            correction:
+              "Use a validated method that controls temperature, moisture, time, seed size, and batch depth."
+          },
+
+          {
+            mistake:
+              "Overheating or scorching the seed",
+
+            whyItHappens:
+              "Additional heat may appear safer than risking underprocessing.",
+
+            whyItIsAProblem:
+              "Severe heat can reduce protein quality, damage lysine and other amino acids, and reduce palatability.",
+
+            correction:
+              "Use controlled processing rather than relying on extreme heat."
+          },
+
+          {
+            mistake:
+              "Replacing complete feed with cooked Cowpeas",
+
+            whyItHappens:
+              "Cowpeas are protein oriented and may appear capable of replacing commercial feed.",
+
+            whyItIsAProblem:
+              "They do not supply complete amino-acid balance, adequate calcium, vitamins, minerals, sodium, or the complete nutrient profile required by poultry.",
+
+            correction:
+              "Restore an age-appropriate complete feed as the nutritional foundation and use Cowpeas only as a supplement."
+          },
+
+          {
+            mistake:
+              "Treating Cowpeas as equivalent to soybean meal",
+
+            whyItHappens:
+              "Both are legumes associated with higher protein than cereal grains.",
+
+            whyItIsAProblem:
+              "Cowpeas differ substantially in crude protein, amino-acid balance, processing response, fiber, energy, and antinutritional factors.",
+
+            correction:
+              "Do not substitute Cowpeas pound for pound for soybean meal without complete ration formulation."
+          },
+
+          {
+            mistake:
+              "Ignoring methionine and sulfur-amino-acid limitations",
+
+            whyItHappens:
+              "The crude-protein percentage appears relatively high.",
+
+            whyItIsAProblem:
+              "Protein percentage does not guarantee an adequate digestible amino-acid profile for growth, eggs, feathers, or reproduction.",
+
+            correction:
+              "Maintain a complete ration or use professional formulation that accounts for digestible amino acids."
+          },
+
+          {
+            mistake:
+              "Using Cowpeas as the primary calcium source for laying hens",
+
+            whyItHappens:
+              "Legumes are sometimes perceived as mineral rich.",
+
+            whyItIsAProblem:
+              "Cowpeas contain far too little calcium to support eggshell formation.",
+
+            correction:
+              "Maintain a complete layer ration and an appropriate calcium program."
+          },
+
+          {
+            mistake:
+              "Leaving cooked Cowpeas in the coop for prolonged periods",
+
+            whyItHappens:
+              "The keeper offers more than the flock can consume immediately.",
+
+            whyItIsAProblem:
+              "Cooked seed is moist and can spoil quickly, especially during warm weather.",
+
+            correction:
+              "Offer smaller portions and remove leftovers promptly."
+          },
+
+          {
+            mistake:
+              "Mixing wet cooked Cowpeas into stored dry feed",
+
+            whyItHappens:
+              "Mixing appears to distribute the supplement evenly.",
+
+            whyItIsAProblem:
+              "Added moisture can destabilize the entire feed mixture and promote mold or fermentation.",
+
+            correction:
+              "Mix only the amount that will be consumed immediately and never return moistened feed to storage."
+          },
+
+          {
+            mistake:
+              "Grinding raw seed and assuming it is safe",
+
+            whyItHappens:
+              "Grinding makes seed easier for chickens to eat.",
+
+            whyItIsAProblem:
+              "Particle-size reduction does not neutralize protease inhibitors, lectins, or other antinutritional factors.",
+
+            correction:
+              "Apply adequate heat treatment before or through a process specifically designed for ground material."
+          },
+
+          {
+            mistake:
+              "Storing cooked Cowpeas like dry grain",
+
+            whyItHappens:
+              "Both products came from the same mature seed.",
+
+            whyItIsAProblem:
+              "Cooking changes dry stable seed into a moist perishable food.",
+
+            correction:
+              "Cool promptly, refrigerate briefly, freeze suitable portions, or feed immediately."
+          },
+
+          {
+            mistake:
+              "Ignoring stored-seed insects",
+
+            whyItHappens:
+              "The container appears dry and intact from the outside.",
+
+            whyItIsAProblem:
+              "Bruchid beetles can develop inside individual seeds before emerging and spreading through the lot.",
+
+            correction:
+              "Inspect frequently for exit holes, beetles, larvae, dust, and hollow seed."
+          },
+
+          {
+            mistake:
+              "Feeding chemically treated planting seed",
+
+            whyItHappens:
+              "Unused seed appears identical to ordinary food or feed Cowpeas.",
+
+            whyItIsAProblem:
+              "Planting seed may carry pesticides, coatings, or other treatments not intended for animal consumption.",
+
+            correction:
+              "Feed only clearly documented untreated Cowpeas intended for food or feed."
+          },
+
+          {
+            mistake:
+              "Treating fresh forage and dry seed as nutritionally equivalent",
+
+            whyItHappens:
+              "Both materials come from the same plant.",
+
+            whyItIsAProblem:
+              "Fresh foliage contains much more water, more fiber, and far less concentrated starch and protein than mature dry seed.",
+
+            correction:
+              "Evaluate and portion each feed form separately."
+          },
+
+          {
+            mistake:
+              "Allowing unrestricted access to young Cowpea plants",
+
+            whyItHappens:
+              "Cowpeas are being grown partly as poultry forage.",
+
+            whyItIsAProblem:
+              "Chickens may uproot seedlings, strip leaves, trample vines, and eliminate later pod or seed production.",
+
+            correction:
+              "Use cut-and-carry feeding, protected forage systems, or brief rotational access after establishment."
+          },
+
+          {
+            mistake:
+              "Harvesting excessive foliage from plants intended for seed",
+
+            whyItHappens:
+              "Tender leaves provide convenient summer forage.",
+
+            whyItIsAProblem:
+              "Repeated or severe defoliation can reduce flowering, pod set, seed filling, and total mature-seed yield.",
+
+            correction:
+              "Separate forage-oriented plantings from seed-production plantings or limit vegetative harvest."
+          },
+
+          {
+            mistake:
+              "Feeding moldy or insect-damaged seed after cooking",
+
+            whyItHappens:
+              "Cooking may appear capable of correcting poor-quality seed.",
+
+            whyItIsAProblem:
+              "Heat treatment does not reliably eliminate every toxin, contaminant, spoilage product, or quality defect.",
+
+            correction:
+              "Begin only with clean sound seed and discard questionable material."
+          },
+
+          {
+            mistake:
+              "Applying published experimental inclusion percentages directly to backyard feeding",
+
+            whyItHappens:
+              "Research percentages appear to provide a simple universal limit.",
+
+            whyItIsAProblem:
+              "Published diets involve specific cultivars, processing methods, bird ages, nutrient calculations, and complete ration formulations.",
+
+            correction:
+              "Use Cowpeas conservatively as supplements unless the entire ration is professionally formulated."
+          },
+
+          {
+            mistake:
+              "Assuming every Cowpea cultivar has identical feeding value",
+
+            whyItHappens:
+              "All cultivars share the same common crop name.",
+
+            whyItIsAProblem:
+              "Cultivars differ in tannins, seed-coat fiber, seed size, maturity, protein, antinutritional activity, forage value, and processing behavior.",
+
+            correction:
+              "Identify the cultivar or seed type when possible and avoid unsupported precision."
+          }
+        ],
+
+        mistakeSummary:
+          "Most Cowpea-feeding problems result from feeding raw mature seed, using unreliable processing, allowing cooked material to spoil, confusing fresh forage with dry seed, or treating a useful protein-oriented supplement as a complete poultry ration."
+      },
+
+      troubleshooting: {
+        flockIgnoresCookedCowpeas: {
+          possibleCauses: [
+            "Birds are unfamiliar with the food",
+            "The cooked seed is too wet or sticky",
+            "The seed was overcooked or scorched",
+            "The flock already has adequate feed",
+            "The portion is too large",
+            "The batch has an unusual odor or poor quality"
+          ],
+
+          recommendedActions: [
+            "Confirm that the Cowpeas are clean, properly processed, fresh, and free from spoilage.",
+            "Introduce a very small amount gradually.",
+            "Allow cooked Cowpeas to cool before feeding.",
+            "Drain excessive cooking water before offering them.",
+            "Offer the supplement in a clean shallow dish.",
+            "Do not withhold complete feed to force consumption.",
+            "Discard the batch if odor, texture, or processing quality is questionable."
+          ]
+        },
+
+        flockIgnoresFreshForage: {
+          possibleCauses: [
+            "The birds are unfamiliar with Cowpea foliage",
+            "The stems are too mature or fibrous",
+            "The forage has wilted excessively",
+            "The foliage is dirty or contaminated",
+            "The flock already has access to preferred forage",
+            "The plant material has an unusual odor"
+          ],
+
+          recommendedActions: [
+            "Offer only clean tender leaves and vine tips.",
+            "Chop or tear a small amount to expose fresh plant surfaces.",
+            "Place forage in a clean basket or hanging holder.",
+            "Harvest younger growth rather than coarse mature vines.",
+            "Remove uneaten material before it becomes wet, slimy, or contaminated.",
+            "Do not force consumption by removing complete feed."
+          ]
+        },
+
+        flockIgnoresFreshPodsOrPeas: {
+          possibleCauses: [
+            "The birds do not recognize the pods as food",
+            "The pods are too mature or fibrous",
+            "The peas are enclosed in tough pods",
+            "The material is wilted or stale",
+            "The flock already has adequate feed",
+            "The pods or peas are spoiled"
+          ],
+
+          recommendedActions: [
+            "Confirm that the pods are tender, clean, and untreated.",
+            "Open several pods to expose the fresh peas.",
+            "Offer a small amount in a shallow dish.",
+            "Use younger pods when mature pods are too fibrous.",
+            "Inspect for mold, sour odor, slime, or chemical contamination.",
+            "Remove the material if the flock continues to avoid it."
+          ]
+        },
+
+        dominantBirdsMonopolizeFeed: {
+          possibleCauses: [
+            "Too few feeding stations",
+            "Supplement portions are concentrated in one location",
+            "Limited enclosure space",
+            "Strong existing flock hierarchy",
+            "The supplement is highly preferred"
+          ],
+
+          recommendedActions: [
+            "Provide several dishes, forage bundles, or feeding locations.",
+            "Space feeding stations widely apart.",
+            "Place some stations behind visual barriers.",
+            "Distribute small portions simultaneously.",
+            "Observe lower-ranking birds to confirm access."
+          ]
+        },
+
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "The Cowpea supplement is too abundant, too frequent, or more accessible than the complete poultry ration.",
+
+          recommendedActions: [
+            "Reduce or temporarily stop supplemental Cowpea feeding.",
+            "Provide fresh complete feed in adequate feeder space.",
+            "Confirm that the complete feed is not stale, wet, moldy, or inaccessible.",
+            "Avoid offering Cowpeas before the flock has consumed its normal ration.",
+            "Monitor whether normal complete-feed consumption resumes."
+          ]
+        },
+
+        looseDroppingsAfterIntroduction: {
+          possibleCauses: [
+            "Sudden dietary change",
+            "Excessive intake of cooked Cowpeas",
+            "Excess intake of fresh foliage, pods, or peas",
+            "Cooked material was held too long",
+            "The Cowpeas were spoiled or contaminated",
+            "An unrelated health problem"
+          ],
+
+          recommendedActions: [
+            "Stop the new supplement temporarily.",
+            "Inspect the Cowpeas for spoilage or contamination.",
+            "Discard any remaining cooked batch.",
+            "Maintain access to clean water and complete feed.",
+            "Reintroduce only a very small amount after droppings return to normal.",
+            "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+          ]
+        },
+
+        poorGrowthOrWeightLossAfterDietChange: {
+          possibleCauses: [
+            "Cowpeas displaced too much complete feed",
+            "Raw or inadequately processed mature seed was fed",
+            "The total diet is deficient in methionine or other essential amino acids",
+            "The ration contains inadequate energy",
+            "The supplement is too fibrous",
+            "The birds have an unrelated disease, parasite burden, or management problem"
+          ],
+
+          recommendedActions: [
+            "Stop feeding the questionable Cowpea material.",
+            "Restore an age-appropriate complete poultry ration.",
+            "Review the mature-seed processing method.",
+            "Do not use Cowpeas as a direct replacement for soybean meal or complete feed.",
+            "Monitor body weight, appetite, activity, and droppings.",
+            "Seek veterinary or poultry-nutrition guidance when poor growth or weight loss continues."
+          ]
+        },
+
+        eggProductionDeclines: {
+          possibleCauses: [
+            "Cowpeas displaced balanced layer feed",
+            "The total diet is deficient in calcium",
+            "The total diet is deficient in methionine or other essential amino acids",
+            "Supplemental feeding reduced overall nutrient density",
+            "Heat stress, molt, age, daylight, disease, parasites, or another management factor"
+          ],
+
+          recommendedActions: [
+            "Reduce or stop Cowpea supplementation temporarily.",
+            "Restore unrestricted access to a complete layer ration.",
+            "Confirm that hens have an appropriate calcium program.",
+            "Review all treats and supplemental feeds, not only Cowpeas.",
+            "Investigate environmental, seasonal, and health-related causes.",
+            "Seek veterinary guidance when the decline is severe, prolonged, or accompanied by illness."
+          ]
+        },
+
+        eggshellQualityDeclines: {
+          likelyCauses: [
+            "Cowpeas displaced calcium-fortified layer feed",
+            "The total diet contains inadequate available calcium",
+            "The flock lacks an appropriate supplemental calcium source",
+            "Birds are consuming excessive treats",
+            "Heat stress or an unrelated health problem is affecting shell formation"
+          ],
+
+          recommendedActions: [
+            "Reduce Cowpea and other supplemental feeds.",
+            "Restore unrestricted access to complete layer feed.",
+            "Provide an appropriate separate calcium source when suitable for the flock-management system.",
+            "Confirm that clean water is continuously available.",
+            "Seek veterinary guidance when thin shells persist."
+          ]
+        },
+
+        birdsRefuseProcessedSeedBatch: {
+          possibleInterpretations: [
+            "The batch may be scorched or overprocessed.",
+            "The batch may be incompletely cooked and unusually hard.",
+            "The seed may have become stale, musty, fermented, or contaminated.",
+            "The flock may be unfamiliar with the texture.",
+            "The cultivar may have a less acceptable flavor or seed coat.",
+            "The birds may not be hungry because adequate feed is already available."
+          ],
+
+          recommendedAction:
+            "Inspect the batch carefully and do not force consumption. Discard it when odor, processing adequacy, contamination, or storage quality is uncertain."
+        },
+
+        cookedCowpeasBecomeSlimyOrSour: {
+          likelyCauses: [
+            "Cooked Cowpeas were held too long at warm temperatures",
+            "The batch cooled too slowly",
+            "Dirty utensils or containers introduced contamination",
+            "Fresh and older batches were mixed",
+            "The material was repeatedly warmed and cooled",
+            "The storage temperature was inadequate"
+          ],
+
+          recommendedActions: [
+            "Discard the entire affected batch.",
+            "Do not attempt to salvage it by rinsing or reheating.",
+            "Clean and dry all containers and utensils.",
+            "Cool future batches promptly in shallow containers.",
+            "Prepare smaller portions.",
+            "Refrigerate briefly or freeze portions that will not be used promptly."
+          ]
+        },
+
+        storedSeedDevelopsCondensation: {
+          likelyCauses: [
+            "Seed was stored before fully dry",
+            "Warm seed was sealed",
+            "Temperature fluctuations caused moisture migration",
+            "The container is exposed to a damp environment",
+            "Recently processed seed retained moisture"
+          ],
+
+          recommendedActions: [
+            "Remove the seed from flock access.",
+            "Inspect for heat, odor, mold, swelling, and clumping.",
+            "Discard questionable material.",
+            "Do not blend the lot with dry sound seed.",
+            "Correct the drying and storage environment before storing a new batch."
+          ]
+        },
+
+        storedSeedSmellsUnusual: {
+          possibleInterpretations: [
+            "Musty odor may indicate mold.",
+            "Sweet-sour or alcohol-like odor may indicate fermentation.",
+            "Earthy or damp odor may indicate excess moisture.",
+            "Chemical odor may indicate contamination or treated planting seed.",
+            "Burned odor may indicate excessive heat processing."
+          ],
+
+          recommendedAction:
+            "Do not feed Cowpeas with an abnormal odor. Discard them rather than attempting to wash, air out, recook, roast, or blend the material."
+        },
+
+        storedSeedContainsSmallRoundHoles: {
+          likelyCause:
+            "Cowpea weevils or other bruchid beetles have developed inside the stored seed and emerged through the seed coat.",
+
+          recommendedActions: [
+            "Isolate the affected container immediately.",
+            "Inspect neighboring seed and feed containers.",
+            "Look for live beetles, larvae, eggs, powder, and hollow seed.",
+            "Discard heavily damaged, contaminated, damp, moldy, or poor-quality material.",
+            "Clean the storage area thoroughly.",
+            "Use clean secure containers for future storage.",
+            "Do not mix infested seed with sound seed."
+          ]
+        },
+
+        storedSeedContainsLiveBeetles: {
+          likelyCauses: [
+            "Seed entered storage with hidden field infestation",
+            "Storage containers were not insect resistant",
+            "Old infested Cowpeas or legumes remained nearby",
+            "Warm storage conditions accelerated insect development",
+            "The seed was stored for a long period without inspection"
+          ],
+
+          recommendedActions: [
+            "Separate the affected lot from all other feed.",
+            "Inspect the entire storage area.",
+            "Dispose of severely damaged or questionable material.",
+            "Vacuum or clean cracks, shelves, and spilled seed.",
+            "Wash and completely dry reusable containers.",
+            "Do not apply an insecticide directly to poultry feed unless it is explicitly labeled for that use."
+          ]
+        },
+
+        storedSeedHeatsInsideContainer: {
+          likelyCauses: [
+            "Seed moisture is too high",
+            "The seed was sealed while warm",
+            "Microbial activity is occurring",
+            "Insect activity is extensive",
+            "The storage mass is too deep or compacted"
+          ],
+
+          recommendedActions: [
+            "Remove the container from the feed-storage area if it can be handled safely.",
+            "Prevent flock access.",
+            "Inspect for condensation, odor, insects, and mold.",
+            "Discard the lot when safety is uncertain.",
+            "Do not feed heated material after simply cooling it."
+          ]
+        },
+
+        chickensDamageLivingCowpeaCrop: {
+          possibleCauses: [
+            "Birds were given access before the plants were established",
+            "The stocking density is too high",
+            "Access duration is too long",
+            "The flock lacks other forage or enrichment",
+            "Plants intended for seed production were not protected"
+          ],
+
+          recommendedActions: [
+            "Remove the flock from the planting.",
+            "Protect remaining plants with fencing or crop covers.",
+            "Use cut-and-carry feeding instead of unrestricted grazing.",
+            "Allow future plantings to establish before controlled access.",
+            "Use brief rotational access with recovery periods.",
+            "Separate forage plantings from seed-production plantings."
+          ]
+        },
+
+        cowpeaPlantsProduceFewPods: {
+          possibleCauses: [
+            "Chickens removed excessive foliage",
+            "Plants were grazed during flowering or pod formation",
+            "Heat, drought, excessive nitrogen, or poor pollination reduced pod set",
+            "The cultivar is strongly forage oriented",
+            "Wildlife or insects damaged flowers and pods",
+            "Harvest timing or plant density was unsuitable"
+          ],
+
+          recommendedActions: [
+            "Protect seed-production plants from poultry access.",
+            "Limit foliage harvest before and during flowering.",
+            "Review cultivar selection and local planting timing.",
+            "Inspect for insect and wildlife damage.",
+            "Maintain appropriate soil fertility without excessive nitrogen.",
+            "Use separate plots when both forage and mature seed are desired."
+          ]
+        },
+
+        birdsGainExcessWeight: {
+          possibleCauses: [
+            "Excessive supplemental feeding",
+            "Cowpeas were combined with several other calorie sources",
+            "Low activity",
+            "Highly confined management",
+            "Multiple household treat sources",
+            "Underlying health or metabolic issues"
+          ],
+
+          recommendedActions: [
+            "Reduce Cowpeas and other supplemental foods.",
+            "Measure all supplemental feed rather than estimating.",
+            "Restore complete poultry feed as the principal diet.",
+            "Encourage safe activity and foraging.",
+            "Review body condition regularly.",
+            "Seek veterinary guidance when weight changes are substantial or unexplained."
+          ]
+        },
+
+        rodentsAppearNearStorageOrCoop: {
+          likelyCauses: [
+            "Spilled Cowpeas",
+            "Open storage containers",
+            "Cooked leftovers remain overnight",
+            "Damaged storage bins",
+            "Feed is scattered into inaccessible spaces",
+            "Rodents are attracted to other stored feed nearby"
+          ],
+
+          recommendedActions: [
+            "Remove spilled and uneaten feed.",
+            "Use secure rodent-resistant containers.",
+            "Repair structural access points.",
+            "Clean beneath racks, feeders, appliances, and storage shelves.",
+            "Feed cooked Cowpeas only in quantities consumed promptly.",
+            "Do not use poison in a way that endangers chickens, pets, wildlife, or children."
+          ]
+        }
+      },
+
+      faq: [
+        {
+          question:
+            "Can chickens eat Cowpeas?",
+
+          answer:
+            "Yes, but the safe feeding method depends on the plant part and stage of maturity. Tender leaves, vine tips, immature pods, and fresh green peas may be offered as limited supplements. Mature dry Cowpea seed should be thoroughly cooked or otherwise properly heat treated before meaningful poultry feeding."
+        },
+
+        {
+          question:
+            "Can chickens eat raw dry Cowpeas?",
+
+          answer:
+            "Raw mature Cowpeas are not recommended as routine backyard chicken feed. They contain protease inhibitors, lectin activity, tannins, phytate, and other antinutritional factors that can interfere with digestion and nutrient use."
+        },
+
+        {
+          question:
+            "Do Cowpeas need to be cooked before chickens eat them?",
+
+          answer:
+            "Mature dry Cowpea seed should be thoroughly cooked or processed with another validated heat-treatment method. Fresh tender foliage, immature pods, and fresh green peas belong to different feeding pathways and do not require the same dry-seed cooking process."
+        },
+
+        {
+          question:
+            "Can soaking make raw Cowpeas safe for chickens?",
+
+          answer:
+            "Soaking may shorten cooking time and remove some soluble compounds, but soaking alone should not be treated as adequate processing for mature dry seed. Follow it with thorough cooking or another validated heat treatment."
+        },
+
+        {
+          question:
+            "Can chickens eat boiled Cowpeas?",
+
+          answer:
+            "Yes. Plain thoroughly cooked Cowpeas may be offered in measured amounts after cooling. They should contain no added salt, seasoning, sauce, onion, garlic mixture, excessive fat, or spoiled ingredients."
+        },
+
+        {
+          question:
+            "Can chickens eat pressure-cooked Cowpeas?",
+
+          answer:
+            "Plain pressure-cooked Cowpeas can be suitable when the entire batch is fully cooked, cooled safely, and handled cleanly. Pressure cooking does not make Cowpeas a complete ration."
+        },
+
+        {
+          question:
+            "Can chickens eat roasted Cowpeas?",
+
+          answer:
+            "Properly controlled roasting may reduce heat-sensitive antinutritional factors, but household roasting can heat seeds unevenly. Surface browning alone does not prove that every seed was processed adequately."
+        },
+
+        {
+          question:
+            "Can chickens eat canned black-eyed peas?",
+
+          answer:
+            "Plain canned black-eyed peas are cooked, but many canned products contain substantial added sodium or seasonings. A low-sodium or no-salt-added product that is rinsed may be offered only occasionally and in a limited amount. Home-grown plain cooked Cowpeas are usually a more controllable option."
+        },
+
+        {
+          question:
+            "Are black-eyed peas Cowpeas?",
+
+          answer:
+            "Yes. Black-eyed peas are a familiar type of Cowpea within the species Vigna unguiculata. Other Cowpea types may differ in seed size, color, seed-coat proportion, maturity, and nutritional characteristics."
+        },
+
+        {
+          question:
+            "Can chickens eat Crowder peas?",
+
+          answer:
+            "Crowder peas are Cowpeas. Fresh immature peas may be offered in moderation, while mature dry seed should be thoroughly cooked or otherwise properly heat treated before feeding."
+        },
+
+        {
+          question:
+            "Can chickens eat Purple Hull peas?",
+
+          answer:
+            "Purple Hull peas are Cowpeas. Fresh shelled peas may be offered as a seasonal supplement. Fully mature dried peas should receive appropriate heat treatment before feeding."
+        },
+
+        {
+          question:
+            "Can chickens eat Cowpea pods?",
+
+          answer:
+            "Tender immature pods can be offered in limited amounts after inspection and cleaning. Mature dry pods are fibrous and provide little feed value compared with the seed."
+        },
+
+        {
+          question:
+            "Can chickens eat Cowpea leaves?",
+
+          answer:
+            "Yes. Clean tender leaves and vine tips can be used as seasonal forage supplements. Older stems and leaves become increasingly fibrous and should not displace complete poultry feed."
+        },
+
+        {
+          question:
+            "Can chickens eat Cowpea vines?",
+
+          answer:
+            "Chickens may consume tender vine tips and leaves, but coarse mature vines are fibrous and less useful. Cut-and-carry feeding usually protects the crop better than unrestricted flock access."
+        },
+
+        {
+          question:
+            "Can chickens forage in a Cowpea patch?",
+
+          answer:
+            "They can, but access should be controlled. Chickens may uproot young plants, strip foliage, damage flowers, consume immature pods, and greatly reduce mature-seed yield."
+        },
+
+        {
+          question:
+            "Can chickens eat Cowpea sprouts?",
+
+          answer:
+            "Sprouting changes the seed but does not automatically establish poultry-feed safety. Sprouts are moist, highly perishable, and vulnerable to microbial contamination. They should not be treated as a substitute for validated mature-seed processing."
+        },
+
+        {
+          question:
+            "Can chicks eat Cowpeas?",
+
+          answer:
+            "Young chicks should rely on an age-appropriate complete starter ration. Informal feeding of whole raw seed, large cooked peas, or bulky forage is not recommended. Professionally formulated starter feed containing analyzed and properly processed Cowpea ingredients is a different situation."
+        },
+
+        {
+          question:
+            "Do chickens need grit when eating Cowpeas?",
+
+          answer:
+            "Adult chickens consuming fibrous forage, pods, cracked seed, or other coarse supplemental material should have access to appropriately sized insoluble grit when they do not obtain enough natural grit from their environment."
+        },
+
+        {
+          question:
+            "Are Cowpeas a good protein source for chickens?",
+
+          answer:
+            "Cowpeas provide useful plant protein and lysine, but crude-protein percentage does not make them nutritionally complete. They remain limited in methionine and other sulfur-containing amino acids and must be used within a balanced feeding program."
+        },
+
+        {
+          question:
+            "Can Cowpeas replace soybean meal?",
+
+          answer:
+            "They should not be substituted pound for pound for soybean meal without complete ration formulation. Cowpeas differ in protein concentration, digestible amino acids, fiber, energy, antinutritional factors, and processing requirements."
+        },
+
+        {
+          question:
+            "Can Cowpeas replace commercial chicken feed?",
+
+          answer:
+            "No. Cowpeas do not provide the complete balance of amino acids, calcium, sodium, vitamins, trace minerals, energy, and other nutrients required for long-term poultry health and production."
+        },
+
+        {
+          question:
+            "Are Cowpeas good for laying hens?",
+
+          answer:
+            "Properly processed Cowpeas may provide supplemental protein and energy, but they contain too little calcium to support eggshell production and should not displace complete layer feed."
+        },
+
+        {
+          question:
+            "Are Cowpeas good during molt?",
+
+          answer:
+            "They can contribute supplemental protein, but feather growth requires a complete balance of digestible amino acids, especially sulfur-containing amino acids. A complete poultry ration remains more important."
+        },
+
+        {
+          question:
+            "Are Cowpeas good for chickens in summer?",
+
+          answer:
+            "Cowpeas are particularly useful as a warm-season crop. Tender foliage, green pods, and fresh peas can provide seasonal variety and enrichment, but they should remain limited supplements."
+        },
+
+        {
+          question:
+            "Are Cowpeas useful in winter?",
+
+          answer:
+            "Properly dried whole seed stores well and can be processed for winter supplementation. Mature dry seed must still be cooked or otherwise properly heat treated before feeding."
+        },
+
+        {
+          question:
+            "Can chickens eat Cowpeas every day?",
+
+          answer:
+            "Daily use is not automatically appropriate. The amount, feed form, processing method, bird stage, complete-feed intake, body condition, and total quantity of other treats must all be considered."
+        },
+
+        {
+          question:
+            "How much Cowpea should I give my chickens?",
+
+          answer:
+            "There is no single backyard amount suitable for every flock or every Cowpea product. Use it as a limited part of total supplemental feeding, introduce it gradually, protect complete-ration intake, and adjust according to bird age, body condition, production stage, and feed form."
+        },
+
+        {
+          question:
+            "Can I use research inclusion percentages for my home flock?",
+
+          answer:
+            "Not directly. Research diets use identified cultivars, controlled processing, analyzed ingredients, specific bird types, and calculated amino-acid, mineral, vitamin, and energy balance. A published percentage is not a universal treat allowance."
+        },
+
+        {
+          question:
+            "Can chickens eat moldy Cowpeas if I cook them?",
+
+          answer:
+            "No. Cooking does not reliably remove every mold toxin, spoilage product, or contaminant. Moldy, musty, fermented, or otherwise questionable Cowpeas should be discarded."
+        },
+
+        {
+          question:
+            "Can I feed insect-damaged Cowpeas?",
+
+          answer:
+            "A few sound seeds with minor cosmetic damage are different from a heavily infested lot. Seed containing extensive holes, powder, live beetles, larvae, moisture damage, mold, heating, or contamination should be rejected."
+        },
+
+        {
+          question:
+            "Why do stored Cowpeas develop small round holes?",
+
+          answer:
+            "Small round holes commonly indicate Cowpea weevils or related bruchid beetles that developed inside the seed and emerged during storage."
+        },
+
+        {
+          question:
+            "Can I feed leftover Cowpea planting seed?",
+
+          answer:
+            "Only when it is clearly documented as untreated and suitable for food or feed. Chemically treated, coated, colored, or unidentified planting seed must never be fed."
+        },
+
+        {
+          question:
+            "Should I grind Cowpeas before feeding them?",
+
+          answer:
+            "Grinding is optional after adequate processing and may help with ration mixing, but grinding raw seed does not make it safe. Ground material also absorbs moisture and deteriorates faster than intact dry seed."
+        },
+
+        {
+          question:
+            "Can cooked Cowpeas be mixed into dry chicken feed?",
+
+          answer:
+            "Only mix a small amount that will be consumed immediately. Wet cooked Cowpeas should never be mixed into feed intended for later storage because the added moisture can promote mold and fermentation."
+        },
+
+        {
+          question:
+            "How long can cooked Cowpeas stay in the coop?",
+
+          answer:
+            "Cooked Cowpeas should be treated as a moist perishable food. Offer only an immediately usable quantity and remove leftovers promptly, especially during warm weather."
+        },
+
+        {
+          question:
+            "Can chickens eat salted or seasoned Cowpeas?",
+
+          answer:
+            "Plain Cowpeas are preferred. Avoid heavily salted products and dishes containing sauces, excessive fat, strong seasoning mixtures, or ingredients that are inappropriate for poultry."
+        },
+
+        {
+          question:
+            "Are all Cowpea cultivars nutritionally identical?",
+
+          answer:
+            "No. Cultivars can differ in protein, tannins, seed-coat fiber, seed size, maturity, antinutritional activity, forage value, and processing response."
+        }
+      ],
+
+      expertSummary: {
+        oneSentence:
+          "Cowpea is a highly useful warm-season supplemental crop for backyard chickens because it can provide fresh forage, edible green pods, and protein-oriented mature seed, but dry mature seed requires proper processing and the crop must remain secondary to a complete poultry ration.",
+
+        oneParagraph:
+          "Cowpea offers more feeding pathways than many backyard feed crops. Tender foliage and vine tips provide warm-season cut-and-carry forage, immature pods and fresh peas offer seasonal enrichment, and mature dry seed can be stored for later use. Its seed contributes useful plant protein, lysine, and starch, making Cowpea especially valuable where a homesteader wants a home-grown legume rather than another energy-dense cereal grain. Its value is limited by protease inhibitors, lectin activity, tannins, phytate, fiber, cultivar variability, and inadequate sulfur-containing amino acids and calcium. Mature dry seed should therefore be thoroughly cooked or processed through another validated heat-treatment method, and even properly processed Cowpeas should not replace complete poultry feed or be substituted directly for soybean meal without full ration formulation.",
+
+        recommendation:
+          "Recommended With Proper Processing",
+
+        recommendationReasoning: [
+          "Useful warm-season plant-protein crop",
+          "Provides both forage and seed feeding pathways",
+          "Fresh leaves, vine tips, pods, and peas offer seasonal enrichment",
+          "Mature dry seed has good storage potential",
+          "Cowpeas contribute useful lysine",
+          "The crop can support garden-to-coop feed diversification",
+          "Mature seed requires reliable heat treatment",
+          "Methionine, calcium, and complete-ration limitations require careful use",
+          "Stored seed requires protection from bruchid beetles"
+        ],
+
+        idealUseCase:
+          "A warm-season homestead crop used for controlled fresh forage during growth and properly processed stored seed during autumn and winter, always alongside an appropriate complete poultry ration.",
+
+        notRecommendedAs: [
+          "Primary flock ration",
+          "Direct pound-for-pound soybean-meal replacement",
+          "Primary calcium source",
+          "Primary methionine source",
+          "Raw mature seed offered free choice",
+          "Routine chick treat",
+          "Unrestricted forage planting",
+          "Universal ration ingredient without formulation"
+        ]
+      },
+
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Vigna unguiculata",
+
+          family:
+            "Fabaceae"
+        },
+
+        researchNotes: [
+          "Cowpea is a highly variable species containing numerous grain, vegetable, dual-purpose, and forage-oriented cultivars.",
+
+          "Published poultry research commonly evaluates identified Cowpea cultivars as measured ingredients in fully formulated diets rather than as informal backyard supplements.",
+
+          "Raw seed, cooked seed, dehulled seed, ground meal, extruded material, fresh peas, pods, and forage are nutritionally distinct products and should not be treated as interchangeable.",
+
+          "Cowpea seed contains useful protein and lysine but is limited by methionine, cysteine, total sulfur-containing amino acids, and low calcium relative to poultry requirements.",
+
+          "Protease inhibitors, lectin activity, tannins, phytate, phenolic compounds, seed-coat fiber, and other antinutritional factors vary with cultivar and processing.",
+
+          "Heat-treatment effectiveness depends on temperature, time, moisture, pressure, seed size, particle size, and processing uniformity.",
+
+          "Insufficient heating can leave substantial antinutritional activity, while excessive heating can reduce protein quality and amino-acid availability.",
+
+          "Published successful inclusion levels should be interpreted only within the context of the tested cultivar, processing method, bird stage, and complete diet formulation.",
+
+          "Cowpea forage has a much higher moisture and fiber concentration than mature dry seed and therefore supplies far less concentrated nutrition on an as-fed basis.",
+
+          "Cowpea weevils and related bruchid beetles are major stored-seed pests and may begin developing inside seeds before visible adult emergence."
+        ],
+
+        plannerConsiderations: [
+          "Warm-season protein-oriented crop",
+
+          "Multiple usable plant parts",
+
+          "Useful cut-and-carry forage",
+
+          "Useful immature-pod and fresh-pea crop",
+
+          "Mature seed requires processing",
+
+          "Good whole-seed storage potential",
+
+          "High stored-seed insect pressure",
+
+          "Moderate cultivar variability",
+
+          "Methionine limitation",
+
+          "Low calcium contribution",
+
+          "Suitable for seasonal feeding",
+
+          "Not a complete ration",
+
+          "Not a direct soybean-meal equivalent",
+
+          "Requires separation of raw and ready-to-feed seed"
+        ],
+
+        futureResearchTopics: [
+          "Cultivar-specific antinutritional-factor profiles",
+
+          "Backyard-scale processing validation",
+
+          "Comparative effectiveness of boiling, pressure cooking, roasting, extrusion, germination, and fermentation",
+
+          "Minimum processing conditions for whole mature seed",
+
+          "Effects of household processing on digestible amino acids",
+
+          "Cultivar differences in methionine and lysine availability",
+
+          "Comparative feeding value of fresh peas, mature seed, and forage",
+
+          "Optimal cut-and-carry harvest stages",
+
+          "Effects of repeated foliage harvest on seed yield",
+
+          "Practical long-term storage performance in humid climates",
+
+          "Nonchemical bruchid-management methods for household feed storage",
+
+          "Layer-specific use of processed Cowpeas in fully balanced diets",
+
+          "Effects of processed Cowpea supplementation on egg quality and flock behavior"
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Warm-season cut-and-carry forage",
+
+          "Fresh green-pea supplementation",
+
+          "Tender immature-pod feeding",
+
+          "Garden-to-coop feeding",
+
+          "Home-grown plant-protein diversification",
+
+          "Properly processed winter seed supplementation",
+
+          "Seasonal flock enrichment",
+
+          "Rotational forage access",
+
+          "Postharvest gleaning",
+
+          "Emergency stored ingredient reserve"
+        ],
+
+        lessSuitableUses: [
+          "Raw mature-seed feeding",
+
+          "Complete ration replacement",
+
+          "Direct soybean-meal substitution",
+
+          "Primary chick nutrition",
+
+          "Primary calcium supplementation",
+
+          "Primary methionine supplementation",
+
+          "Unrestricted grazing of young plantings",
+
+          "Wet cooked feed stored at room temperature"
+        ],
+
+        backyardRecommendation:
+          "Grow Cowpeas primarily as a diversified warm-season crop that can provide limited fresh forage, pods, green peas, and a manageable quantity of mature seed for later processing. Protect complete poultry-feed intake, process mature seed thoroughly, and avoid attempting to replace the flock's purchased balanced ration.",
+
+        commercialRecommendation:
+          "Commercial use is most appropriate through analyzed Cowpea ingredients incorporated into professionally formulated diets with verified processing, amino-acid balance, energy values, mineral supplementation, quality control, and storage-pest management."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Properly processed mature seeds",
         "Cooked mature seeds",
