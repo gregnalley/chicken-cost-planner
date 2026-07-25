@@ -1220,6 +1220,14 @@ renderFAQ(
   crop
 );
 
+renderScientificNotes(
+  crop
+);
+
+renderExpertSummary(
+  crop
+);
+
   resultsSection.scrollIntoView({
     behavior:
       "smooth",
@@ -5631,8 +5639,471 @@ Show More
 
 }
 
+/* ------------------------------------------------------------
+   Scientific Notes Tile
+------------------------------------------------------------ */
+
+function renderScientificNotes(
+  crop
+){
+
+  const scientificNotes =
+    crop.feedingReference
+      .scientificNotes;
+
+  if(
+    !scientificNotes
+  ){
+
+    return;
+
+  }
 
 
+  const nutritionalConsiderations =
+    Array.isArray(
+      scientificNotes.nutritionalConsiderations
+    )
+      ? scientificNotes.nutritionalConsiderations
+      : [];
+
+
+  const feedingConsiderations =
+    Array.isArray(
+      scientificNotes.feedingConsiderations
+    )
+      ? feedingConsiderations
+      : [];
+
+
+  const researchConsiderations =
+    Array.isArray(
+      scientificNotes.researchConsiderations
+    )
+      ? scientificNotes.researchConsiderations
+      : [];
+
+
+  const nutritionalHtml =
+    nutritionalConsiderations
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+
+  const feedingHtml =
+    feedingConsiderations
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+
+  const researchHtml =
+    researchConsiderations
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+
+  const hasExtraContent =
+    Boolean(
+      nutritionalHtml ||
+      feedingHtml ||
+      researchHtml
+    );
+
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--wide feed-tile--information"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🔬
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Scientific Notes
+</h2>
+
+</div>
+
+</div>
+
+
+<div class="feed-tile-preview">
+
+${scientificNotes.summary
+  ? `
+    <p>
+      ${scientificNotes.summary}
+    </p>
+  `
+  : ""
+}
+
+
+${nutritionalHtml
+  ? `
+    <h3>
+      Nutritional Considerations
+    </h3>
+
+    <ul>
+      ${nutritionalHtml}
+    </ul>
+  `
+  : ""
+}
+
+
+</div>
+
+
+
+${hasExtraContent
+  ? `
+
+<div
+class="feed-tile-extra"
+id="scientific-notes-extra"
+hidden
+>
+
+
+${feedingHtml
+  ? `
+    <h3>
+      Feeding Considerations
+    </h3>
+
+    <ul>
+      ${feedingHtml}
+    </ul>
+  `
+  : ""
+}
+
+
+${researchHtml
+  ? `
+    <h3>
+      Research Considerations
+    </h3>
+
+    <ul>
+      ${researchHtml}
+    </ul>
+  `
+  : ""
+}
+
+
+</div>
+
+
+<button
+class="feed-expand-button"
+type="button"
+data-expand-target="scientific-notes-extra"
+aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+`
+  : ""
+}
+
+
+</div>
+`;
+
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Expert Summary Tile
+------------------------------------------------------------ */
+
+function renderExpertSummary(
+  crop
+){
+
+  const expertSummary =
+    crop.feedingReference
+      .expertSummary;
+
+  if(
+    !expertSummary
+  ){
+
+    return;
+
+  }
+
+
+  const strengths =
+    Array.isArray(
+      expertSummary.keyStrengths
+    )
+      ? expertSummary.keyStrengths
+      : [];
+
+
+  const cautions =
+    Array.isArray(
+      expertSummary.keyCautions
+    )
+      ? expertSummary.keyCautions
+      : [];
+
+
+  const bestUses =
+    Array.isArray(
+      expertSummary.bestUses
+    )
+      ? expertSummary.bestUses
+      : [];
+
+
+  const strengthHtml =
+    strengths
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+
+  const cautionHtml =
+    cautions
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+
+  const bestUsesHtml =
+    bestUses
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--wide feed-tile--safe"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🐔
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Expert Summary
+</h2>
+
+</div>
+
+</div>
+
+
+<div class="feed-tile-preview">
+
+
+${expertSummary.summary
+  ? `
+    <p class="feed-expert-summary">
+
+      ${expertSummary.summary}
+
+    </p>
+  `
+  : ""
+}
+
+
+${expertSummary.recommendation
+  ? `
+    <p>
+
+      <strong>
+        Overall Recommendation:
+      </strong>
+
+      ${expertSummary.recommendation}
+
+    </p>
+  `
+  : ""
+}
+
+
+</div>
+
+
+
+<div
+class="feed-tile-extra"
+id="expert-summary-extra"
+hidden
+>
+
+
+${strengthHtml
+  ? `
+    <h3>
+      Why This Crop Works Well
+    </h3>
+
+    <ul>
+
+      ${strengthHtml}
+
+    </ul>
+  `
+  : ""
+}
+
+
+${bestUsesHtml
+  ? `
+    <h3>
+      Best Backyard Uses
+    </h3>
+
+    <ul>
+
+      ${bestUsesHtml}
+
+    </ul>
+  `
+  : ""
+}
+
+
+${cautionHtml
+  ? `
+    <h3>
+      Important Considerations
+    </h3>
+
+    <ul>
+
+      ${cautionHtml}
+
+    </ul>
+  `
+  : ""
+}
+
+
+${expertSummary.finalRecommendation
+  ? `
+    <h3>
+      Final Recommendation
+    </h3>
+
+    <p>
+
+      ${expertSummary.finalRecommendation}
+
+    </p>
+  `
+  : ""
+}
+
+
+</div>
+
+
+<button
+class="feed-expand-button"
+type="button"
+data-expand-target="expert-summary-extra"
+aria-expanded="false"
+>
+
+Show More
+
+</button>
+
+
+</div>
+`;
+
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
 
 
 document
