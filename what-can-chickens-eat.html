@@ -750,7 +750,10 @@ Choose a food above to view its complete chicken feeding reference.
      BEFORE A SEARCH IS MADE
 =========================================== -->
 
-<section class="section">
+<section
+  class="section"
+  id="feed-welcome-section"
+>
 
 <h2>🐔 Welcome to the Backyard Chicken Feeding Reference</h2>
 
@@ -892,6 +895,11 @@ const resultsSection =
   document.getElementById(
     "feed-results"
   );
+
+ const welcomeSection =
+  document.getElementById(
+    "feed-welcome-section"
+  ); 
 
 /* ------------------------------------------------------------
    Retrieve Crop Collection
@@ -1057,6 +1065,9 @@ function loadCropReference(
     resultsSection.hidden =
       true;
 
+    welcomeSection.hidden =
+      false;
+
     pageMessage.hidden =
       false;
 
@@ -1077,6 +1088,9 @@ function loadCropReference(
   pageMessage.classList.remove(
     "is-error"
   );
+
+  welcomeSection.hidden =
+    true;
 
   resultsSection.hidden =
     false;
@@ -1101,6 +1115,26 @@ function loadCropReference(
   renderBirdStages(
     crop
   );
+
+  renderEdibleParts(
+    crop
+  );
+
+  renderFeedingForms(
+    crop
+  );
+
+  renderPreparation(
+    crop
+  );
+
+  resultsSection.scrollIntoView({
+    behavior:
+      "smooth",
+
+    block:
+      "start"
+  });
 
 }
 
@@ -1166,6 +1200,52 @@ function createStars(
 
   return "★".repeat(score) +
          "☆".repeat(5-score);
+
+}
+
+function formatDisplayValue(
+  value
+){
+
+  if(
+    value === null ||
+    value === undefined ||
+    value === ""
+  ){
+
+    return "Not specified";
+
+  }
+
+  if(
+    typeof value !==
+    "string"
+  ){
+
+    return String(
+      value
+    );
+
+  }
+
+  const formatted =
+    value
+      .replace(
+        /-/g,
+        " "
+      )
+      .replace(
+        /\s+/g,
+        " "
+      )
+      .trim();
+
+  return formatted.charAt(
+    0
+  ).toUpperCase() +
+  formatted.slice(
+    1
+  );
 
 }
 
@@ -1414,6 +1494,724 @@ ${stages.youngChicks.suitabilityLevel}
     );
 
 }
+
+/* ------------------------------------------------------------
+   Edible Parts Tile
+------------------------------------------------------------ */
+
+function renderEdibleParts(
+  crop
+){
+
+  const edibleParts =
+    crop.feedingReference
+      .edibleParts;
+
+  if(
+    !edibleParts
+  ){
+
+    return;
+
+  }
+
+  const primaryParts =
+    Array.isArray(
+      edibleParts.primaryEdibleParts
+    )
+      ? edibleParts.primaryEdibleParts
+      : [];
+
+  const nonRecommendedParts =
+    Array.isArray(
+      edibleParts.nonRecommendedPlantParts
+    )
+      ? edibleParts.nonRecommendedPlantParts
+      : [];
+
+  const previewItems =
+    primaryParts
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.part}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const remainingPrimaryItems =
+    primaryParts
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.part}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const nonRecommendedItems =
+    nonRecommendedParts
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.part}
+            </strong>
+
+            <br>
+
+            ${item.reason}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const hasAdditionalContent =
+    remainingPrimaryItems ||
+    nonRecommendedItems;
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--wide feed-tile--safe"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🌻
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Edible Parts
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${edibleParts.ediblePartSummary || ""}
+
+</p>
+
+${previewItems
+  ? `
+    <h3>
+      Best Parts to Feed
+    </h3>
+
+    <ul>
+      ${previewItems}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasAdditionalContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="edible-parts-extra"
+      hidden
+    >
+
+    ${remainingPrimaryItems
+      ? `
+        <h3>
+          Additional Edible Forms
+        </h3>
+
+        <ul>
+          ${remainingPrimaryItems}
+        </ul>
+      `
+      : ""
+    }
+
+    ${nonRecommendedItems
+      ? `
+        <h3>
+          Parts With Little Practical Feed Value
+        </h3>
+
+        <ul>
+          ${nonRecommendedItems}
+        </ul>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="edible-parts-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Feeding Forms Tile
+------------------------------------------------------------ */
+
+function renderFeedingForms(
+  crop
+){
+
+  const feedingForms =
+    crop.feedingReference
+      .feedingForms;
+
+  if(
+    !feedingForms
+  ){
+
+    return;
+
+  }
+
+  const preferredForms =
+    Array.isArray(
+      feedingForms.preferredForms
+    )
+      ? feedingForms.preferredForms
+      : [];
+
+  const careForms =
+    Array.isArray(
+      feedingForms.formsRequiringAdditionalCare
+    )
+      ? feedingForms.formsRequiringAdditionalCare
+      : [];
+
+  const avoidForms =
+    Array.isArray(
+      feedingForms.avoidForms
+    )
+      ? feedingForms.avoidForms
+      : [];
+
+  const preferredPreview =
+    preferredForms
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.form}
+            </strong>
+
+            <br>
+
+            ${item.bestUse}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const additionalPreferred =
+    preferredForms
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.form}
+            </strong>
+
+            <br>
+
+            ${item.bestUse}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const careItems =
+    careForms
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.form}
+            </strong>
+
+            <br>
+
+            ${item.concern}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const avoidItems =
+    avoidForms
+      .map(function(item){
+
+        return `
+          <li>
+            ${formatDisplayValue(
+              item
+            )}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--information"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🥣
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Feeding Forms
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<h3>
+Preferred Forms
+</h3>
+
+<ul>
+  ${preferredPreview}
+</ul>
+
+</div>
+
+<div
+  class="feed-tile-extra"
+  id="feeding-forms-extra"
+  hidden
+>
+
+${additionalPreferred
+  ? `
+    <h3>
+      Additional Forms
+    </h3>
+
+    <ul>
+      ${additionalPreferred}
+    </ul>
+  `
+  : ""
+}
+
+${careItems
+  ? `
+    <h3>
+      Requires Extra Care
+    </h3>
+
+    <ul>
+      ${careItems}
+    </ul>
+  `
+  : ""
+}
+
+${avoidItems
+  ? `
+    <h3>
+      Avoid These Forms
+    </h3>
+
+    <ul>
+      ${avoidItems}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+<button
+  class="feed-expand-button"
+  type="button"
+  data-expand-target="feeding-forms-extra"
+  aria-expanded="false"
+>
+  Show More
+</button>
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Preparation Tile
+------------------------------------------------------------ */
+
+function renderPreparation(
+  crop
+){
+
+  const preparation =
+    crop.feedingReference
+      .preparation;
+
+  if(
+    !preparation
+  ){
+
+    return;
+
+  }
+
+  const requiredItems =
+    Array.isArray(
+      preparation.requiredPreparation
+    )
+      ? preparation.requiredPreparation
+      : [];
+
+  const optionalItems =
+    Array.isArray(
+      preparation.optionalPreparation
+    )
+      ? preparation.optionalPreparation
+      : [];
+
+  const unnecessaryItems =
+    Array.isArray(
+      preparation.unnecessaryPreparation
+    )
+      ? preparation.unnecessaryPreparation
+      : [];
+
+  const mistakeItems =
+    Array.isArray(
+      preparation.preparationMistakes
+    )
+      ? preparation.preparationMistakes
+      : [];
+
+  const requiredHtml =
+    requiredItems
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const optionalHtml =
+    optionalItems
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const unnecessaryHtml =
+    unnecessaryItems
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const mistakesHtml =
+    mistakeItems
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--caution"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🧺
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Preparation
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${preparation.preparationSummary || ""}
+
+</p>
+
+<p>
+
+<strong>
+Difficulty:
+</strong>
+
+${formatDisplayValue(
+  preparation.preparationDifficulty
+)}
+
+</p>
+
+<h3>
+Required Steps
+</h3>
+
+<ul>
+  ${requiredHtml}
+</ul>
+
+</div>
+
+<div
+  class="feed-tile-extra"
+  id="preparation-extra"
+  hidden
+>
+
+${optionalHtml
+  ? `
+    <h3>
+      Optional Preparation
+    </h3>
+
+    <ul>
+      ${optionalHtml}
+    </ul>
+  `
+  : ""
+}
+
+${unnecessaryHtml
+  ? `
+    <h3>
+      Usually Unnecessary
+    </h3>
+
+    <ul>
+      ${unnecessaryHtml}
+    </ul>
+  `
+  : ""
+}
+
+${mistakesHtml
+  ? `
+    <h3>
+      Preparation Mistakes
+    </h3>
+
+    <ul>
+      ${mistakesHtml}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+<button
+  class="feed-expand-button"
+  type="button"
+  data-expand-target="preparation-extra"
+  aria-expanded="false"
+>
+  Show More
+</button>
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+document
+  .getElementById(
+    "feed-tile-grid"
+  )
+  .addEventListener(
+    "click",
+    function(event){
+
+      const button =
+        event.target.closest(
+          ".feed-expand-button"
+        );
+
+      if(
+        !button
+      ){
+
+        return;
+
+      }
+
+      const targetId =
+        button.getAttribute(
+          "data-expand-target"
+        );
+
+      const target =
+        document.getElementById(
+          targetId
+        );
+
+      if(
+        !target
+      ){
+
+        return;
+
+      }
+
+      const isExpanded =
+        button.getAttribute(
+          "aria-expanded"
+        ) ===
+        "true";
+
+      target.hidden =
+        isExpanded;
+
+      button.setAttribute(
+        "aria-expanded",
+        String(
+          !isExpanded
+        )
+      );
+
+      button.textContent =
+        isExpanded
+          ? "Show More"
+          : "Show Less";
+
+    }
+  );
 
 
 
