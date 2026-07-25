@@ -1128,6 +1128,18 @@ function loadCropReference(
     crop
   );
 
+  renderNutritionHighlights(
+    crop
+  );
+
+  renderBenefits(
+    crop
+  );
+
+  renderLimitations(
+    crop
+  );
+
   resultsSection.scrollIntoView({
     behavior:
       "smooth",
@@ -2149,6 +2161,845 @@ ${mistakesHtml
     );
 
 }
+
+/* ------------------------------------------------------------
+   Nutrition Highlights Tile
+------------------------------------------------------------ */
+
+function renderNutritionHighlights(
+  crop
+){
+
+  const nutrition =
+    crop.feedingReference
+      .nutritionHighlights;
+
+  if(
+    !nutrition
+  ){
+
+    return;
+
+  }
+
+  const strengths =
+    Array.isArray(
+      nutrition.primaryNutritionalStrengths
+    )
+      ? nutrition.primaryNutritionalStrengths
+      : [];
+
+  const notableNutrients =
+    Array.isArray(
+      nutrition.notableNutrients
+    )
+      ? nutrition.notableNutrients
+      : [];
+
+  const variabilityFactors =
+    Array.isArray(
+      nutrition.nutritionalVariabilityFactors
+    )
+      ? nutrition.nutritionalVariabilityFactors
+      : [];
+
+  const previewStrengths =
+    strengths
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.nutrientRole}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const remainingStrengths =
+    strengths
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.nutrientRole}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const nutrientTags =
+    notableNutrients
+      .map(function(item){
+
+        return `
+          <span class="feed-tag">
+            ${item}
+          </span>
+        `;
+
+      })
+      .join("");
+
+  const variabilityHtml =
+    variabilityFactors
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const wholeSeedCharacteristics =
+    nutrition.typicalWholeSeedCharacteristics ||
+    {};
+
+  const characteristicItems =
+    Object.entries(
+      wholeSeedCharacteristics
+    )
+      .map(function(entry){
+
+        const key =
+          entry[0];
+
+        const value =
+          entry[1];
+
+        return `
+          <li>
+            <strong>
+              ${formatDisplayValue(
+                key
+              )}:
+            </strong>
+
+            ${value}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const hasExtraContent =
+    Boolean(
+      remainingStrengths ||
+      characteristicItems ||
+      variabilityHtml
+    );
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--wide feed-tile--information"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🥗
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Nutrition Highlights
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+<p>
+
+${nutrition.nutritionSummary || ""}
+
+</p>
+
+${nutrientTags
+  ? `
+    <div class="feed-tag-list">
+      ${nutrientTags}
+    </div>
+  `
+  : ""
+}
+
+${previewStrengths
+  ? `
+    <h3>
+      Primary Nutritional Strengths
+    </h3>
+
+    <ul>
+      ${previewStrengths}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="nutrition-highlights-extra"
+      hidden
+    >
+
+    ${remainingStrengths
+      ? `
+        <h3>
+          Additional Nutritional Strengths
+        </h3>
+
+        <ul>
+          ${remainingStrengths}
+        </ul>
+      `
+      : ""
+    }
+
+    ${characteristicItems
+      ? `
+        <h3>
+          Typical Whole-Seed Characteristics
+        </h3>
+
+        <ul>
+          ${characteristicItems}
+        </ul>
+      `
+      : ""
+    }
+
+    ${variabilityHtml
+      ? `
+        <h3>
+          Why Nutrition Can Vary
+        </h3>
+
+        <ul>
+          ${variabilityHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="nutrition-highlights-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Benefits Tile
+------------------------------------------------------------ */
+
+function renderBenefits(
+  crop
+){
+
+  const benefits =
+    crop.feedingReference
+      .benefits;
+
+  if(
+    !benefits
+  ){
+
+    return;
+
+  }
+
+  const primaryBenefits =
+    Array.isArray(
+      benefits.primaryBenefits
+    )
+      ? benefits.primaryBenefits
+      : [];
+
+  const enrichmentBenefits =
+    Array.isArray(
+      benefits.enrichmentBenefits
+    )
+      ? benefits.enrichmentBenefits
+      : [];
+
+  const flockManagementBenefits =
+    Array.isArray(
+      benefits.flockManagementBenefits
+    )
+      ? benefits.flockManagementBenefits
+      : [];
+
+  const homesteadBenefits =
+    Array.isArray(
+      benefits.homesteadBenefits
+    )
+      ? benefits.homesteadBenefits
+      : [];
+
+  const previewBenefits =
+    primaryBenefits
+      .slice(
+        0,
+        4
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.title}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const remainingBenefits =
+    primaryBenefits
+      .slice(
+        4
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.title}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const enrichmentHtml =
+    enrichmentBenefits
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.benefit}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const flockManagementHtml =
+    flockManagementBenefits
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const homesteadHtml =
+    homesteadBenefits
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const hasExtraContent =
+    Boolean(
+      remainingBenefits ||
+      enrichmentHtml ||
+      flockManagementHtml ||
+      homesteadHtml
+    );
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--safe"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+🌟
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Benefits
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+${benefits.benefitSummary
+  ? `
+    <p>
+      ${benefits.benefitSummary}
+    </p>
+  `
+  : ""
+}
+
+${previewBenefits
+  ? `
+    <h3>
+      Primary Benefits
+    </h3>
+
+    <ul>
+      ${previewBenefits}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="benefits-extra"
+      hidden
+    >
+
+    ${remainingBenefits
+      ? `
+        <h3>
+          Additional Benefits
+        </h3>
+
+        <ul>
+          ${remainingBenefits}
+        </ul>
+      `
+      : ""
+    }
+
+    ${enrichmentHtml
+      ? `
+        <h3>
+          Enrichment Benefits
+        </h3>
+
+        <ul>
+          ${enrichmentHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${flockManagementHtml
+      ? `
+        <h3>
+          Flock-Management Benefits
+        </h3>
+
+        <ul>
+          ${flockManagementHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${homesteadHtml
+      ? `
+        <h3>
+          Homestead Benefits
+        </h3>
+
+        <ul>
+          ${homesteadHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="benefits-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Limitations Tile
+------------------------------------------------------------ */
+
+function renderLimitations(
+  crop
+){
+
+  const limitations =
+    crop.feedingReference
+      .limitations;
+
+  if(
+    !limitations
+  ){
+
+    return;
+
+  }
+
+  const primaryLimitations =
+    Array.isArray(
+      limitations.primaryLimitations
+    )
+      ? limitations.primaryLimitations
+      : [];
+
+  const nutritionalLimitations =
+    Array.isArray(
+      limitations.nutritionalLimitations
+    )
+      ? limitations.nutritionalLimitations
+      : [];
+
+  const practicalLimitations =
+    Array.isArray(
+      limitations.practicalLimitations
+    )
+      ? limitations.practicalLimitations
+      : [];
+
+  const unsuitableExpectations =
+    Array.isArray(
+      limitations.unsuitableExpectations
+    )
+      ? limitations.unsuitableExpectations
+      : [];
+
+  const previewLimitations =
+    primaryLimitations
+      .slice(
+        0,
+        4
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.title}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const remainingLimitations =
+    primaryLimitations
+      .slice(
+        4
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.title}
+            </strong>
+
+            <br>
+
+            ${item.explanation}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const nutritionalHtml =
+    nutritionalLimitations
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const practicalHtml =
+    practicalLimitations
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const expectationHtml =
+    unsuitableExpectations
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const hasExtraContent =
+    Boolean(
+      remainingLimitations ||
+      nutritionalHtml ||
+      practicalHtml ||
+      expectationHtml
+    );
+
+  const html =
+`
+<div
+  class="feed-tile feed-tile--caution"
+>
+
+<div class="feed-tile-header">
+
+<div class="feed-tile-icon">
+⚠️
+</div>
+
+<div class="feed-tile-title">
+
+<h2>
+Limitations
+</h2>
+
+</div>
+
+</div>
+
+<div class="feed-tile-preview">
+
+${limitations.limitationSummary
+  ? `
+    <p>
+      ${limitations.limitationSummary}
+    </p>
+  `
+  : ""
+}
+
+${previewLimitations
+  ? `
+    <h3>
+      Important Limitations
+    </h3>
+
+    <ul>
+      ${previewLimitations}
+    </ul>
+  `
+  : ""
+}
+
+</div>
+
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="limitations-extra"
+      hidden
+    >
+
+    ${remainingLimitations
+      ? `
+        <h3>
+          Additional Limitations
+        </h3>
+
+        <ul>
+          ${remainingLimitations}
+        </ul>
+      `
+      : ""
+    }
+
+    ${nutritionalHtml
+      ? `
+        <h3>
+          Nutritional Limitations
+        </h3>
+
+        <ul>
+          ${nutritionalHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${practicalHtml
+      ? `
+        <h3>
+          Practical Limitations
+        </h3>
+
+        <ul>
+          ${practicalHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${expectationHtml
+      ? `
+        <h3>
+          What This Crop Should Not Be Expected to Do
+        </h3>
+
+        <ul>
+          ${expectationHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="limitations-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
+
+</div>
+`;
+
+  document
+    .getElementById(
+      "feed-tile-grid"
+    )
+    .insertAdjacentHTML(
+      "beforeend",
+      html
+    );
+
+}
+
+
 
 document
   .getElementById(
