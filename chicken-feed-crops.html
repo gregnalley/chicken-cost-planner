@@ -342,9 +342,13 @@ grid-template-columns:1fr;
 }
 
 .crop-summary {
-  flex-grow: 1;
+  display: -webkit-box;
+  min-height: calc(1.65em * 3);
   margin: 0 0 17px;
+  overflow: hidden;
   line-height: 1.65;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .crop-best-value {
