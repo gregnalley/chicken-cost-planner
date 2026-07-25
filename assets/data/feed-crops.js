@@ -14217,302 +14217,224 @@ const BCP_FEED_CROPS = {
       },
 
       complementaryFeeding: {
-        summary:
-          "Cowpeas perform best when they complement rather than replace a nutritionally complete poultry ration. Their strongest nutritional contribution comes from supplemental plant protein, lysine, and starch, while other feeds continue supplying calcium, sulfur-containing amino acids, vitamins, trace minerals, and balanced energy.",
+        purpose:
+          "Cowpeas are best used as a supplemental source of plant protein, lysine, starch, fresh forage, and seasonal variety. They should complement rather than replace a nutritionally complete poultry ration.",
 
-        worksEspeciallyWellWith: [
+        bestFoundation:
+          "An age-appropriate complete poultry ration that supplies balanced amino acids, calcium, vitamins, trace minerals, sodium, and dependable energy.",
+
+        complements: [
           {
-            companion:
+            feedType:
               "Complete poultry feed",
 
-            reason:
+            relationship:
               "Provides the calcium, vitamins, minerals, amino-acid balance, and nutritional consistency that Cowpeas cannot supply independently."
           },
 
           {
-            companion:
+            feedType:
               "Corn",
 
-            reason:
+            relationship:
               "Corn contributes concentrated energy while Cowpeas contribute additional protein and lysine."
           },
 
           {
-            companion:
+            feedType:
               "Wheat",
 
-            reason:
-              "Wheat provides energy while Cowpeas improve overall protein diversity."
+            relationship:
+              "Wheat supplies dietary energy while Cowpeas improve overall protein and ingredient diversity."
           },
 
           {
-            companion:
+            feedType:
               "Barley",
 
-            reason:
-              "Barley contributes cool-season grain production while Cowpeas provide warm-season protein-oriented supplementation."
+            relationship:
+              "Barley provides cool-season grain production while Cowpeas supply warm-season protein-oriented supplementation."
           },
 
           {
-            companion:
+            feedType:
               "Oats",
 
-            reason:
-              "Oats diversify grain production while Cowpeas provide complementary legume protein."
+            relationship:
+              "Oats diversify home-grown grain production while Cowpeas contribute complementary legume protein."
           },
 
           {
-            companion:
+            feedType:
               "Sunflower",
 
-            reason:
-              "Sunflower contributes concentrated oil and energy while Cowpeas provide considerably more protein and lysine."
+            relationship:
+              "Sunflower supplies concentrated oil and energy while Cowpeas contribute substantially more protein and lysine."
           },
 
           {
-            companion:
+            feedType:
               "Pumpkin and Winter Squash",
 
-            reason:
-              "Pumpkins provide moisture, carotenoids, and enrichment while Cowpeas contribute substantially more protein."
+            relationship:
+              "Pumpkins provide moisture, carotenoids, and enrichment while Cowpeas contribute more concentrated plant protein."
           },
 
           {
-            companion:
-              "Comfrey",
-
-            reason:
-              "Comfrey offers fresh leafy forage while Cowpeas contribute both forage and processed seed."
-          },
-
-          {
-            companion:
+            feedType:
               "White Clover",
 
-            reason:
-              "White Clover extends grazing opportunities while Cowpeas thrive during hotter summer conditions."
+            relationship:
+              "White Clover can extend cool-season grazing while Cowpeas provide forage during hotter summer conditions."
           },
 
           {
-            companion:
+            feedType:
               "Mulberry",
 
-            reason:
-              "Mulberry leaves and fruit provide seasonal variety while Cowpeas add protein-oriented supplementation."
+            relationship:
+              "Mulberry leaves and fruit provide seasonal variety while Cowpeas add forage and protein-oriented seed supplementation."
+          },
+
+          {
+            feedType:
+              "Appropriate calcium source",
+
+            relationship:
+              "Supports laying hens because Cowpeas contain too little calcium to maintain eggshell production."
           }
         ],
 
-        doesNotReplace: [
-          "Complete poultry feed",
-          "Layer ration",
-          "Grower ration",
-          "Starter ration",
-          "Soybean meal in balanced commercial diets",
-          "Calcium supplementation for laying hens",
-          "Balanced amino-acid supplementation",
-          "Vitamin supplementation",
-          "Trace-mineral supplementation"
+        doesNotCorrect: [
+          "An incomplete or poorly formulated poultry ration",
+          "Methionine or total sulfur-amino-acid deficiency",
+          "Calcium deficiency in laying hens",
+          "Vitamin or trace-mineral deficiency",
+          "Insufficient dietary sodium",
+          "Poor-quality or spoiled complete feed",
+          "Inadequate access to clean drinking water",
+          "Disease, parasites, heat stress, or other management problems"
         ],
 
-        balancingConsiderations: [
-          "Maintain unrestricted access to an appropriate complete ration.",
-          "Treat Cowpeas as one ingredient within a diversified feeding program.",
-          "Balance Cowpeas with higher-calcium feeds for laying hens.",
-          "Do not rely on Cowpeas to supply adequate methionine or total sulfur amino acids.",
-          "Fresh forage and mature seed should be viewed as different feed products.",
-          "Processed mature seed contributes considerably more concentrated nutrition than fresh foliage.",
-          "Seasonal forage can diversify the diet without replacing balanced feed.",
-          "Adjust supplemental feeding according to body condition, production stage, and complete-feed intake."
-        ],
+        pairingWarning:
+          "Pairing Cowpeas with cereal grains does not automatically create a complete poultry ration. Mature seed processing, digestible amino acids, calcium, vitamins, minerals, energy, sodium, and total ingredient proportions must still be considered.",
 
-        seasonalUseSuggestions: [
-          {
-            season:
-              "Spring",
-
-            recommendation:
-              "Use young leaves and tender vegetative growth conservatively as plants become established."
-          },
-
-          {
-            season:
-              "Summer",
-
-            recommendation:
-              "Fresh foliage, vine tips, immature pods, and green peas provide the greatest seasonal value."
-          },
-
-          {
-            season:
-              "Autumn",
-
-            recommendation:
-              "Harvest mature dry seed for processing and long-term storage while allowing limited postharvest gleaning."
-          },
-
-          {
-            season:
-              "Winter",
-
-            recommendation:
-              "Feed properly processed stored mature seed while relying primarily on complete poultry feed."
-          }
-        ],
-
-        complementarySummary:
-          "Cowpeas work best as one component of a diversified backyard feeding system where grains, leafy crops, complete poultry feed, calcium sources, and seasonal garden crops all contribute different nutritional strengths."
+        practicalBackyardApproach:
+          "Maintain unrestricted access to an appropriate complete feed. Offer tender forage, immature pods, fresh peas, or properly processed mature seed in controlled portions, and consider every other treat or garden supplement when judging total supplemental intake."
       },
 
-      feedingMethods: {
-        overview:
-          "Several practical feeding methods are appropriate depending on whether the harvested material is fresh forage, immature pods, fresh peas, or properly processed mature seed.",
+            feedingMethods: {
+        philosophy:
+          "Use feeding methods that keep portions measurable, protect complete-feed consumption, separate raw mature seed from ready-to-feed material, and prevent moist Cowpeas from remaining in the coop long enough to spoil.",
 
-        recommendedMethods: [
+        primaryMethods: [
           {
             method:
               "Measured dish feeding",
 
-            suitability:
-              "excellent",
+            recommendation:
+              "highly-recommended",
 
             explanation:
-              "Cooked or properly processed mature Cowpeas can be portioned accurately in shallow feeders or dishes, allowing intake to be monitored."
+              "Offer cooled, properly cooked or otherwise adequately heat-treated mature Cowpeas in a clean shallow dish so intake and leftovers can be monitored."
           },
 
           {
             method:
               "Cut-and-carry forage",
 
-            suitability:
-              "excellent",
+            recommendation:
+              "highly-recommended",
 
             explanation:
-              "Harvest tender leaves and vine tips and bring them to the flock rather than allowing unrestricted access to the crop."
-          },
-
-          {
-            method:
-              "Safe forage basket or hanging holder",
-
-            suitability:
-              "very-good",
-
-            explanation:
-              "Bundles of tender vines or leaves encourage natural pecking behavior while reducing contamination from wet litter."
-          },
-
-          {
-            method:
-              "Fresh pod feeding",
-
-            suitability:
-              "very-good",
-
-            explanation:
-              "Offer tender immature pods in moderate quantities after inspection and cleaning."
+              "Harvest clean tender leaves and vine tips and bring them to the flock instead of allowing unrestricted access to the growing crop."
           },
 
           {
             method:
               "Fresh green-pea feeding",
 
-            suitability:
-              "excellent",
+            recommendation:
+              "recommended",
 
             explanation:
-              "Fresh shelled immature peas are easily portioned and readily accepted by many adult chickens."
+              "Offer clean shelled immature peas in limited portions as a seasonal supplement."
+          },
+
+          {
+            method:
+              "Tender immature-pod feeding",
+
+            recommendation:
+              "recommended",
+
+            explanation:
+              "Offer young clean pods in moderate quantities while they remain tender and before they become coarse and fibrous."
+          },
+
+          {
+            method:
+              "Hanging forage holder",
+
+            recommendation:
+              "recommended",
+
+            explanation:
+              "Place tender vines or foliage in a clean hanging holder to encourage pecking behavior while limiting contact with wet litter and manure."
           },
 
           {
             method:
               "Controlled rotational grazing",
 
-            suitability:
-              "good",
+            recommendation:
+              "use-with-caution",
 
             explanation:
-              "Established Cowpea stands may tolerate carefully managed, temporary flock access, but unrestricted grazing usually damages the crop."
+              "Allow brief access only after plants are well established, then remove the flock before serious defoliation, trampling, or pod loss occurs."
           },
 
           {
             method:
               "Postharvest gleaning",
 
-            suitability:
-              "good",
+            recommendation:
+              "conditionally-recommended",
 
             explanation:
-              "Allow birds to recover sound residual peas after the primary harvest while preventing access to moldy or spoiled material."
+              "Allow birds to recover sound residual peas after the primary harvest while excluding moldy, wet, chemically treated, or heavily insect-damaged material."
           },
 
           {
             method:
-              "Balanced ration ingredient",
+              "Professionally formulated ration ingredient",
 
-            suitability:
-              "good-with-formulation",
+            recommendation:
+              "formulation-required",
 
             explanation:
-              "Properly processed Cowpeas may be incorporated into professionally balanced rations where nutrient balance is calculated."
+              "Properly processed Cowpeas may be incorporated into balanced feed when nutrient composition, digestible amino acids, energy, calcium, and inclusion level are calculated."
           }
         ],
 
-        methodsToAvoid: [
-          {
-            method:
-              "Free-choice raw mature Cowpeas",
+        introductionGuidelines: {
+          explanation:
+            "Introduce only one Cowpea form at a time and begin with a small quantity. Mature dry seed must first receive proper heat treatment. Continue supplying complete feed, observe acceptance and droppings, and increase supplemental use only when the flock remains normal."
+        },
 
-            reason:
-              "Raw mature seed contains antinutritional factors and should not be offered as unrestricted feed."
-          },
-
-          {
-            method:
-              "Continuous unrestricted access to living Cowpea plantings",
-
-            reason:
-              "Chickens commonly uproot seedlings, strip foliage, damage flowers, consume immature pods, and reduce seed production."
-          },
-
-          {
-            method:
-              "Large piles of cooked Cowpeas left for extended periods",
-
-            reason:
-              "Cooked material spoils rapidly in warm weather and attracts insects and rodents."
-          },
-
-          {
-            method:
-              "Mixing wet cooked Cowpeas into stored dry feed",
-
-            reason:
-              "Moisture can reduce storage life and promote spoilage of otherwise stable feed."
-          },
-
-          {
-            method:
-              "Using treated planting seed",
-
-            reason:
-              "Planting seed may contain pesticides or other seed treatments not intended for poultry consumption."
-          }
-        ],
-
-        managementTips: [
-          "Introduce Cowpeas gradually rather than making sudden dietary changes.",
-          "Observe flock acceptance before increasing supplemental quantities.",
-          "Remove uneaten cooked material promptly.",
-          "Harvest forage while still tender.",
-          "Separate household-food harvest from poultry-feed harvest when practical.",
-          "Protect living plantings until they are well established.",
-          "Inspect stored seed regularly for insects, moisture, and mold.",
-          "Rotate feeding locations to reduce litter contamination.",
-          "Continue providing unlimited access to complete poultry feed."
-        ],
-
-        feedingMethodSummary:
-          "Measured feeding, cut-and-carry forage, fresh seasonal supplementation, and properly processed mature seed provide the safest and most practical backyard uses for Cowpeas. Unrestricted access to living plantings and routine feeding of raw mature seed should be avoided."
+        observationChecklist: [
+          "Complete-feed consumption remains normal",
+          "Birds maintain normal appetite and activity",
+          "Droppings remain normal",
+          "No bird repeatedly consumes a disproportionate share",
+          "Lower-ranking birds retain access",
+          "No cooked material remains long enough to sour or become slimy",
+          "No coughing or difficulty swallowing occurs",
+          "Body condition remains appropriate",
+          "Egg production and shell quality remain stable",
+          "Stored seed remains dry, cool, insect free, and free from unusual odor",
+          "Living Cowpea plants are not being excessively stripped or uprooted"
+        ]
       },
 
       storage: {
