@@ -36,64 +36,6 @@ async function loadSiteScripts() {
     "recommended-products"
   );
 
-console.log(
-  "Recommendation container:",
-  recommendedProductsContainer
-);
-
-console.log(
-  "Loaded PRD-001:",
-  window.BCP_PRODUCTS &&
-    window.BCP_PRODUCTS["PRD-001"]
-);
-
-console.log(
-  "Loaded PRD-002:",
-  window.BCP_PRODUCTS &&
-    window.BCP_PRODUCTS["PRD-002"]
-);
-
-console.log(
-  "PRD-002 testMarker:",
-  window.BCP_PRODUCTS &&
-    window.BCP_PRODUCTS["PRD-002"] &&
-    window.BCP_PRODUCTS["PRD-002"].testMarker
-);
-
-console.log(
-  "PRD-002 recommendationData:",
-  window.BCP_PRODUCTS &&
-    window.BCP_PRODUCTS["PRD-002"] &&
-    window.BCP_PRODUCTS["PRD-002"].recommendationData
-);
-
-console.log(
-  "Loaded PRD-001 recommendationData:",
-  window.BCP_PRODUCTS &&
-    window.BCP_PRODUCTS["PRD-001"] &&
-    window.BCP_PRODUCTS["PRD-001"]
-      .recommendationData
-);
-
-console.log(
-  "Products with recommendationData:",
-  Object.entries(
-    window.BCP_PRODUCTS || {}
-  )
-    .filter(function (entry) {
-      const product =
-        entry[1];
-
-      return Boolean(
-        product &&
-        product.recommendationData
-      );
-    })
-    .map(function (entry) {
-      return entry[0];
-    })
-);
-
 if (
   recommendedProductsContainer &&
   typeof window.renderRecommendedProducts ===
@@ -108,11 +50,6 @@ if (
         ]
       }
     );
-
-  console.log(
-    "Recommendation results:",
-    recommendationResults
-  );
 }
 
 
