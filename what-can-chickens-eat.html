@@ -3099,23 +3099,285 @@ function renderStorage(
 
   }
 
-  const bestMethods =
+  const preferredStorageForms =
     Array.isArray(
-      storage.recommendedStorageMethods
+      storage.preferredStorageForms
     )
-      ? storage.recommendedStorageMethods
+      ? storage.preferredStorageForms
       : [];
 
-  const mistakes =
+  const dryingRequirements =
+    storage.dryingRequirements ||
+    {};
+
+  const storageEnvironment =
+    storage.storageEnvironment ||
+    {};
+
+  const containerGuidance =
+    storage.containerGuidance ||
+    {};
+
+  const inventoryManagement =
+    storage.inventoryManagement ||
+    {};
+
+  const inspectionSchedule =
+    storage.inspectionSchedule ||
+    {};
+
+  const goodDryingPractices =
     Array.isArray(
-      storage.storageMistakes
+      dryingRequirements.goodDryingPractices
     )
-      ? storage.storageMistakes
+      ? dryingRequirements.goodDryingPractices
       : [];
+
+  const unsafeDryingPractices =
+    Array.isArray(
+      dryingRequirements.unsafeDryingPractices
+    )
+      ? dryingRequirements.unsafeDryingPractices
+      : [];
+
+  const dryingFailureIndicators =
+    Array.isArray(
+      dryingRequirements.dryingFailureIndicators
+    )
+      ? dryingRequirements.dryingFailureIndicators
+      : [];
+
+  const idealConditions =
+    Array.isArray(
+      storageEnvironment.idealConditions
+    )
+      ? storageEnvironment.idealConditions
+      : [];
+
+  const avoidConditions =
+    Array.isArray(
+      storageEnvironment.avoidConditions
+    )
+      ? storageEnvironment.avoidConditions
+      : [];
+
+  const looseSeedGuidance =
+    Array.isArray(
+      containerGuidance.looseSeed
+    )
+      ? containerGuidance.looseSeed
+      : [];
+
+  const wholeHeadGuidance =
+    Array.isArray(
+      containerGuidance.wholeHeads
+    )
+      ? containerGuidance.wholeHeads
+      : [];
+
+  const processedSeedGuidance =
+    Array.isArray(
+      containerGuidance.kernelsAndProcessedSeed
+    )
+      ? containerGuidance.kernelsAndProcessedSeed
+      : [];
+
+  const recommendedLabelFields =
+    Array.isArray(
+      inventoryManagement.recommendedLabelFields
+    )
+      ? inventoryManagement.recommendedLabelFields
+      : [];
+
+  const inspectionChecklist =
+    Array.isArray(
+      inspectionSchedule.inspectionChecklist
+    )
+      ? inspectionSchedule.inspectionChecklist
+      : [];
+
+  const storageFormPreview =
+    preferredStorageForms
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.form || "Storage form"}
+            </strong>
+
+            ${item.suitability
+              ? `
+                <br>
+
+                <span class="feed-tag">
+                  ${formatDisplayValue(
+                    item.suitability
+                  )}
+                </span>
+              `
+              : ""
+            }
+
+            ${item.explanation
+              ? `
+                <br>
+
+                ${item.explanation}
+              `
+              : ""
+            }
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const remainingStorageForms =
+    preferredStorageForms
+      .slice(
+        3
+      )
+      .map(function(item){
+
+        return `
+          <li>
+            <strong>
+              ${item.form || "Storage form"}
+            </strong>
+
+            ${item.suitability
+              ? `
+                <br>
+
+                <span class="feed-tag">
+                  ${formatDisplayValue(
+                    item.suitability
+                  )}
+                </span>
+              `
+              : ""
+            }
+
+            ${item.explanation
+              ? `
+                <br>
+
+                ${item.explanation}
+              `
+              : ""
+            }
+          </li>
+        `;
+
+      })
+      .join("");
+
+  function createStorageList(
+    items
+  ){
+
+    return items
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  }
+
+  const goodDryingHtml =
+    createStorageList(
+      goodDryingPractices
+    );
+
+  const unsafeDryingHtml =
+    createStorageList(
+      unsafeDryingPractices
+    );
+
+  const dryingFailureHtml =
+    createStorageList(
+      dryingFailureIndicators
+    );
+
+  const idealConditionsHtml =
+    createStorageList(
+      idealConditions
+    );
+
+  const avoidConditionsHtml =
+    createStorageList(
+      avoidConditions
+    );
+
+  const looseSeedHtml =
+    createStorageList(
+      looseSeedGuidance
+    );
+
+  const wholeHeadHtml =
+    createStorageList(
+      wholeHeadGuidance
+    );
+
+  const processedSeedHtml =
+    createStorageList(
+      processedSeedGuidance
+    );
+
+  const labelFieldsHtml =
+    createStorageList(
+      recommendedLabelFields
+    );
+
+  const inspectionChecklistHtml =
+    createStorageList(
+      inspectionChecklist
+    );
+
+  const storageSuitability =
+    storage.storageSuitability
+      ? formatDisplayValue(
+          storage.storageSuitability
+        )
+      : "";
+
+  const hasExtraContent =
+    Boolean(
+      remainingStorageForms ||
+      dryingRequirements.targetCondition ||
+      goodDryingHtml ||
+      unsafeDryingHtml ||
+      dryingFailureHtml ||
+      idealConditionsHtml ||
+      avoidConditionsHtml ||
+      looseSeedHtml ||
+      wholeHeadHtml ||
+      processedSeedHtml ||
+      inventoryManagement.guidance ||
+      labelFieldsHtml ||
+      inspectionSchedule.initialStoragePeriod ||
+      inspectionSchedule.longTermStorage ||
+      inspectionChecklistHtml ||
+      storage.storageLifeGuidance ||
+      storage.disposalGuidance
+    );
 
   const html =
 `
-<div class="feed-tile feed-tile--information">
+<div
+  class="feed-tile feed-tile--information"
+>
 
 <div class="feed-tile-header">
 
@@ -3135,74 +3397,285 @@ Storage
 
 <div class="feed-tile-preview">
 
-<p>
+${storage.storageSummary
+  ? `
+    <p>
+      ${storage.storageSummary}
+    </p>
+  `
+  : ""
+}
 
-${storage.storageSummary || ""}
+${storageSuitability
+  ? `
+    <p>
+      <strong>
+        Storage Suitability:
+      </strong>
 
-</p>
+      ${storageSuitability}
+    </p>
+  `
+  : ""
+}
 
-<p>
+${storageFormPreview
+  ? `
+    <h3>
+      Best Storage Forms
+    </h3>
 
-<strong>
-Shelf Life:
-</strong>
-
-${storage.expectedShelfLife || "Varies"}
-
-</p>
-
-<h3>
-Recommended Storage
-</h3>
-
-<ul>
-
-${bestMethods.map(function(item){
-
-return `
-<li>${item}</li>
-`;
-
-}).join("")}
-
-</ul>
-
-</div>
-
-<div
-class="feed-tile-extra"
-id="storage-extra"
-hidden
->
-
-<h3>
-Avoid These Mistakes
-</h3>
-
-<ul>
-
-${mistakes.map(function(item){
-
-return `
-<li>${item}</li>
-`;
-
-}).join("")}
-
-</ul>
+    <ul>
+      ${storageFormPreview}
+    </ul>
+  `
+  : ""
+}
 
 </div>
 
-<button
-class="feed-expand-button"
-type="button"
-data-expand-target="storage-extra"
-aria-expanded="false"
->
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="storage-extra"
+      hidden
+    >
 
-Show More
+    ${remainingStorageForms
+      ? `
+        <h3>
+          Additional Storage Forms
+        </h3>
 
-</button>
+        <ul>
+          ${remainingStorageForms}
+        </ul>
+      `
+      : ""
+    }
+
+    ${dryingRequirements.targetCondition
+      ? `
+        <h3>
+          Drying Target
+        </h3>
+
+        <p>
+          ${dryingRequirements.targetCondition}
+        </p>
+      `
+      : ""
+    }
+
+    ${goodDryingHtml
+      ? `
+        <h3>
+          Good Drying Practices
+        </h3>
+
+        <ul>
+          ${goodDryingHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${unsafeDryingHtml
+      ? `
+        <h3>
+          Unsafe Drying Practices
+        </h3>
+
+        <ul>
+          ${unsafeDryingHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${dryingFailureHtml
+      ? `
+        <h3>
+          Drying Failure Indicators
+        </h3>
+
+        <ul>
+          ${dryingFailureHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${idealConditionsHtml
+      ? `
+        <h3>
+          Ideal Storage Conditions
+        </h3>
+
+        <ul>
+          ${idealConditionsHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${avoidConditionsHtml
+      ? `
+        <h3>
+          Storage Conditions to Avoid
+        </h3>
+
+        <ul>
+          ${avoidConditionsHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${looseSeedHtml
+      ? `
+        <h3>
+          Loose Seed Containers
+        </h3>
+
+        <ul>
+          ${looseSeedHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${wholeHeadHtml
+      ? `
+        <h3>
+          Whole-Head Storage
+        </h3>
+
+        <ul>
+          ${wholeHeadHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${processedSeedHtml
+      ? `
+        <h3>
+          Kernels and Processed Seed
+        </h3>
+
+        <ul>
+          ${processedSeedHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${inventoryManagement.guidance
+      ? `
+        <h3>
+          Inventory Management
+        </h3>
+
+        <p>
+          ${inventoryManagement.guidance}
+        </p>
+      `
+      : ""
+    }
+
+    ${labelFieldsHtml
+      ? `
+        <h3>
+          Recommended Container Labels
+        </h3>
+
+        <ul>
+          ${labelFieldsHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${inspectionSchedule.initialStoragePeriod
+      ? `
+        <h3>
+          Initial Storage Inspections
+        </h3>
+
+        <p>
+          ${inspectionSchedule.initialStoragePeriod}
+        </p>
+      `
+      : ""
+    }
+
+    ${inspectionSchedule.longTermStorage
+      ? `
+        <h3>
+          Long-Term Inspections
+        </h3>
+
+        <p>
+          ${inspectionSchedule.longTermStorage}
+        </p>
+      `
+      : ""
+    }
+
+    ${inspectionChecklistHtml
+      ? `
+        <h3>
+          Inspection Checklist
+        </h3>
+
+        <ul>
+          ${inspectionChecklistHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${storage.storageLifeGuidance
+      ? `
+        <h3>
+          Storage-Life Guidance
+        </h3>
+
+        <p>
+          ${storage.storageLifeGuidance}
+        </p>
+      `
+      : ""
+    }
+
+    ${storage.disposalGuidance
+      ? `
+        <h3>
+          Disposal Guidance
+        </h3>
+
+        <p>
+          ${storage.disposalGuidance}
+        </p>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="storage-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
 
 </div>
 `;
