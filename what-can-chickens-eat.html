@@ -3732,9 +3732,20 @@ function renderSpoilageAndContamination(
       ? spoilage.spoilageIndicators
       : [];
 
-  function createList(
+  function createTextList(
     items
   ){
+
+    if(
+      !Array.isArray(
+        items
+      ) ||
+      items.length === 0
+    ){
+
+      return "";
+
+    }
 
     return items
       .map(function(item){
@@ -3751,9 +3762,39 @@ function renderSpoilageAndContamination(
   }
 
   const indicatorHtml =
-    createList(
-      spoilageIndicators
-    );
+    spoilageIndicators
+      .map(function(item){
+
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        return `
+          <li>
+            <strong>
+              ${item.indicator || "Warning sign"}
+            </strong>
+
+            ${item.action
+              ? `
+                <br>
+
+                Recommended action:
+                ${formatDisplayValue(
+                  item.action
+                )}
+              `
+              : ""
+            }
+          </li>
+        `;
+
+      })
+      .join("");
 
   const previewRisks =
     primarySpoilageRisks
@@ -3763,127 +3804,143 @@ function renderSpoilageAndContamination(
       )
       .map(function(item){
 
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        const warningSignsHtml =
+          createTextList(
+            item.warningSigns
+          );
+
         return `
-<li>
+          <li>
+            <strong>
+              ${item.risk || "Spoilage risk"}
+            </strong>
 
-<strong>
+            ${item.likelihood
+              ? `
+                <br>
 
-${item.risk}
+                <span class="feed-tag">
+                  ${formatDisplayValue(
+                    item.likelihood
+                  )}
+                </span>
+              `
+              : ""
+            }
 
-</strong>
+            ${warningSignsHtml
+              ? `
+                <br>
 
-${item.likelihood
-  ? `
-<br>
+                <strong>
+                  Warning signs:
+                </strong>
 
-<span class="feed-tag">
-
-${formatDisplayValue(
-  item.likelihood
-)}
-
-</span>
-`
-  : ""
-}
-
-${item.warningSigns
-  ? `
-<br>
-
-${item.warningSigns}
-`
-  : ""
-}
-
-</li>
-`;
+                <ul>
+                  ${warningSignsHtml}
+                </ul>
+              `
+              : ""
+            }
+          </li>
+        `;
 
       })
       .join("");
 
-  const remainingRisks =
+  const detailedSpoilageRisks =
     primarySpoilageRisks
-      .slice(
-        2
-      )
       .map(function(item){
 
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        const causesHtml =
+          createTextList(
+            item.primaryCauses
+          );
+
+        const warningSignsHtml =
+          createTextList(
+            item.warningSigns
+          );
+
         return `
-<div
-class="feed-troubleshooting-item"
->
+          <div class="feed-troubleshooting-item">
 
-<h3>
+            <h3>
+              ${item.risk || "Spoilage Risk"}
+            </h3>
 
-${item.risk}
+            ${item.likelihood
+              ? `
+                <p>
+                  <strong>
+                    Likelihood:
+                  </strong>
 
-</h3>
+                  ${formatDisplayValue(
+                    item.likelihood
+                  )}
+                </p>
+              `
+              : ""
+            }
 
-${item.likelihood
-  ? `
-<p>
+            ${causesHtml
+              ? `
+                <h4>
+                  Primary Causes
+                </h4>
 
-<strong>
-Likelihood:
-</strong>
+                <ul>
+                  ${causesHtml}
+                </ul>
+              `
+              : ""
+            }
 
-${formatDisplayValue(
-  item.likelihood
-)}
+            ${warningSignsHtml
+              ? `
+                <h4>
+                  Warning Signs
+                </h4>
 
-</p>
-`
-  : ""
-}
+                <ul>
+                  ${warningSignsHtml}
+                </ul>
+              `
+              : ""
+            }
 
-${item.primaryCauses
-  ? `
-<p>
+            ${item.response
+              ? `
+                <p>
+                  <strong>
+                    Recommended Response:
+                  </strong>
 
-<strong>
-Primary Causes:
-</strong>
+                  ${item.response}
+                </p>
+              `
+              : ""
+            }
 
-${item.primaryCauses}
-
-</p>
-`
-  : ""
-}
-
-${item.warningSigns
-  ? `
-<p>
-
-<strong>
-Warning Signs:
-</strong>
-
-${item.warningSigns}
-
-</p>
-`
-  : ""
-}
-
-${item.response
-  ? `
-<p>
-
-<strong>
-Recommended Response:
-</strong>
-
-${item.response}
-
-</p>
-`
-  : ""
-}
-
-</div>
-`;
+          </div>
+        `;
 
       })
       .join("");
@@ -3892,103 +3949,97 @@ ${item.response}
     contaminationRisks
       .map(function(item){
 
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        const cluesHtml =
+          createTextList(
+            item.identificationClues
+          );
+
         return `
-<div
-class="feed-troubleshooting-item"
->
+          <div class="feed-troubleshooting-item">
 
-<h3>
+            <h3>
+              ${item.contaminant || "Contamination Risk"}
+            </h3>
 
-${item.contaminant}
+            ${item.riskLevel
+              ? `
+                <p>
+                  <strong>
+                    Risk Level:
+                  </strong>
 
-</h3>
+                  ${formatDisplayValue(
+                    item.riskLevel
+                  )}
+                </p>
+              `
+              : ""
+            }
 
-${item.riskLevel
-  ? `
-<p>
+            ${cluesHtml
+              ? `
+                <h4>
+                  Identification Clues
+                </h4>
 
-<strong>
-Risk Level:
-</strong>
+                <ul>
+                  ${cluesHtml}
+                </ul>
+              `
+              : ""
+            }
 
-${formatDisplayValue(
-  item.riskLevel
-)}
+            ${item.guidance
+              ? `
+                <p>
+                  <strong>
+                    Guidance:
+                  </strong>
 
-</p>
-`
-  : ""
-}
+                  ${item.guidance}
+                </p>
+              `
+              : ""
+            }
 
-${item.identificationClues
-  ? `
-<p>
-
-<strong>
-Identification:
-</strong>
-
-${item.identificationClues}
-
-</p>
-`
-  : ""
-}
-
-${item.guidance
-  ? `
-<p>
-
-<strong>
-Guidance:
-</strong>
-
-${item.guidance}
-
-</p>
-`
-  : ""
-}
-
-</div>
-`;
+          </div>
+        `;
 
       })
       .join("");
 
   const hasExtraContent =
     Boolean(
-
-      remainingRisks ||
-
+      detailedSpoilageRisks ||
       contaminationHtml ||
-
       spoilage.sensoryInspectionLimitations ||
-
       spoilage.salvageWarning
-
     );
 
   const html =
 `
 <div
-class="feed-tile feed-tile--danger"
+  class="feed-tile feed-tile--danger"
 >
 
 <div class="feed-tile-header">
 
 <div class="feed-tile-icon">
-
 🚫
-
 </div>
 
 <div class="feed-tile-title">
 
 <h2>
-
 Spoilage & Contamination
-
 </h2>
 
 </div>
@@ -3999,46 +4050,36 @@ Spoilage & Contamination
 
 ${spoilage.spoilageSummary
   ? `
-<p>
-
-${spoilage.spoilageSummary}
-
-</p>
-`
+    <p>
+      ${spoilage.spoilageSummary}
+    </p>
+  `
   : ""
 }
 
 ${indicatorHtml
   ? `
-<h3>
+    <h3>
+      Primary Warning Signs
+    </h3>
 
-Primary Warning Signs
-
-</h3>
-
-<ul>
-
-${indicatorHtml}
-
-</ul>
-`
+    <ul>
+      ${indicatorHtml}
+    </ul>
+  `
   : ""
 }
 
 ${previewRisks
   ? `
-<h3>
+    <h3>
+      Highest Risks
+    </h3>
 
-Highest Risks
-
-</h3>
-
-<ul>
-
-${previewRisks}
-
-</ul>
-`
+    <ul>
+      ${previewRisks}
+    </ul>
+  `
   : ""
 }
 
@@ -4046,74 +4087,71 @@ ${previewRisks}
 
 ${hasExtraContent
   ? `
-<div
-class="feed-tile-extra"
-id="spoilage-extra"
-hidden
->
+    <div
+      class="feed-tile-extra"
+      id="spoilage-extra"
+      hidden
+    >
 
-${remainingRisks}
+    ${detailedSpoilageRisks
+      ? `
+        <h3>
+          Spoilage Risks and Responses
+        </h3>
 
-${contaminationHtml
-  ? `
-<h3>
+        ${detailedSpoilageRisks}
+      `
+      : ""
+    }
 
-Contamination Risks
+    ${contaminationHtml
+      ? `
+        <h3>
+          Contamination Risks
+        </h3>
 
-</h3>
+        ${contaminationHtml}
+      `
+      : ""
+    }
 
-${contaminationHtml}
-`
-  : ""
-}
+    ${spoilage.sensoryInspectionLimitations
+      ? `
+        <h3>
+          Inspection Limitations
+        </h3>
 
-${spoilage.sensoryInspectionLimitations
-  ? `
-<h3>
+        <p>
+          ${spoilage.sensoryInspectionLimitations}
+        </p>
+      `
+      : ""
+    }
 
-Inspection Limitations
+    ${spoilage.salvageWarning
+      ? `
+        <h3>
+          Salvage Warning
+        </h3>
 
-</h3>
+        <p>
+          ${spoilage.salvageWarning}
+        </p>
+      `
+      : ""
+    }
 
-<p>
+    </div>
 
-${spoilage.sensoryInspectionLimitations}
-
-</p>
-`
-  : ""
-}
-
-${spoilage.salvageWarning
-  ? `
-<h3>
-
-Salvage Warning
-
-</h3>
-
-<p>
-
-${spoilage.salvageWarning}
-
-</p>
-`
-  : ""
-}
-
-</div>
-
-<button
-class="feed-expand-button"
-type="button"
-data-expand-target="spoilage-extra"
-aria-expanded="false"
->
-
-Show More
-
-</button>
-`
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="spoilage-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
   : ""
 }
 
