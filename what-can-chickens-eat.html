@@ -4170,34 +4170,153 @@ ${hasExtraContent
 }
 
 /* ------------------------------------------------------------
-   Common Feeding Mistakes
+   Common Feeding Mistakes Tile
 ------------------------------------------------------------ */
 
 function renderCommonFeedingMistakes(
   crop
 ){
 
-  const mistakes =
+  const feedingMistakes =
     crop.feedingReference
       .commonFeedingMistakes;
 
   if(
-    !mistakes
+    !feedingMistakes
   ){
 
     return;
 
   }
 
-  const items =
-    mistakes.commonMistakes || [];
+  const mistakes =
+    Array.isArray(
+      feedingMistakes.mistakes
+    )
+      ? feedingMistakes.mistakes
+      : [];
 
-  const prevention =
-    mistakes.preventionTips || [];
+  if(
+    mistakes.length === 0 &&
+    !feedingMistakes.mistakeSummary
+  ){
+
+    return;
+
+  }
+
+  const previewMistakes =
+    mistakes
+      .slice(
+        0,
+        3
+      )
+      .map(function(item){
+
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        return `
+          <li>
+
+            <strong>
+              ${item.mistake || "Feeding mistake"}
+            </strong>
+
+            ${item.whyItIsAProblem
+              ? `
+                <br>
+
+                ${item.whyItIsAProblem}
+              `
+              : ""
+            }
+
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const detailedMistakes =
+    mistakes
+      .map(function(item){
+
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        return `
+          <div class="feed-troubleshooting-item">
+
+            <h3>
+              ${item.mistake || "Feeding Mistake"}
+            </h3>
+
+            ${item.whyItHappens
+              ? `
+                <h4>
+                  Why It Happens
+                </h4>
+
+                <p>
+                  ${item.whyItHappens}
+                </p>
+              `
+              : ""
+            }
+
+            ${item.whyItIsAProblem
+              ? `
+                <h4>
+                  Why It Is a Problem
+                </h4>
+
+                <p>
+                  ${item.whyItIsAProblem}
+                </p>
+              `
+              : ""
+            }
+
+            ${item.correction
+              ? `
+                <h4>
+                  How to Correct It
+                </h4>
+
+                <p>
+                  ${item.correction}
+                </p>
+              `
+              : ""
+            }
+
+          </div>
+        `;
+
+      })
+      .join("");
+
+  const hasExtraContent =
+    Boolean(
+      detailedMistakes
+    );
 
   const html =
 `
-<div class="feed-tile feed-tile--caution">
+<div
+  class="feed-tile feed-tile--caution"
+>
 
 <div class="feed-tile-header">
 
@@ -4217,74 +4336,57 @@ Common Feeding Mistakes
 
 <div class="feed-tile-preview">
 
-<p>
+${feedingMistakes.mistakeSummary
+  ? `
+    <p>
+      ${feedingMistakes.mistakeSummary}
+    </p>
+  `
+  : ""
+}
 
-${mistakes.summary || ""}
+${previewMistakes
+  ? `
+    <h3>
+      Mistakes to Avoid
+    </h3>
 
-</p>
-
-<ul>
-
-${items.map(function(item){
-
-return `
-<li>
-
-<strong>
-
-${item.mistake}
-
-</strong>
-
-<br>
-
-${item.explanation}
-
-</li>
-`;
-
-}).join("")}
-
-</ul>
+    <ul>
+      ${previewMistakes}
+    </ul>
+  `
+  : ""
+}
 
 </div>
 
-<div
-class="feed-tile-extra"
-id="feeding-mistakes-extra"
-hidden
->
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="feeding-mistakes-extra"
+      hidden
+    >
 
-<h3>
+    <h3>
+      Detailed Mistakes and Corrections
+    </h3>
 
-How to Avoid Them
+    ${detailedMistakes}
 
-</h3>
+    </div>
 
-<ul>
-
-${prevention.map(function(item){
-
-return `
-<li>${item}</li>
-`;
-
-}).join("")}
-
-</ul>
-
-</div>
-
-<button
-class="feed-expand-button"
-type="button"
-data-expand-target="feeding-mistakes-extra"
-aria-expanded="false"
->
-
-Show More
-
-</button>
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="feeding-mistakes-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
 
 </div>
 `;
