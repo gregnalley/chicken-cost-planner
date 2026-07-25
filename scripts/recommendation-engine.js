@@ -262,24 +262,11 @@
         recommendedFor.calculators,
         context.calculators
       ) ||
-      
-    (() => {
-  console.log(
-    "PAGE TYPE CHECK",
-    recommendedFor.pageTypes,
-    context.pageTypes,
-    hasAnyMatch(
-      recommendedFor.pageTypes,
-      context.pageTypes
-    )
-  );
 
-  return hasAnyMatch(
-    recommendedFor.pageTypes,
-    context.pageTypes
-  );
-})()
-
+       hasAnyMatch(
+  recommendedFor.pageTypes,
+  context.pageTypes
+)
       
        ||
       hasAnyMatch(
