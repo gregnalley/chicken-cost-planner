@@ -27363,7 +27363,7 @@ const BCP_FEED_CROPS = {
         }
       },
 
-      frequentlyAskedQuestions: [
+      faq: [
         {
           question:
             "Can chickens eat Proso Millet?",
