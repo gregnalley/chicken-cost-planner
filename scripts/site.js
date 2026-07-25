@@ -48,6 +48,26 @@ console.log(
 );
 
 console.log(
+  "Loaded PRD-002:",
+  window.BCP_PRODUCTS &&
+    window.BCP_PRODUCTS["PRD-002"]
+);
+
+console.log(
+  "PRD-002 testMarker:",
+  window.BCP_PRODUCTS &&
+    window.BCP_PRODUCTS["PRD-002"] &&
+    window.BCP_PRODUCTS["PRD-002"].testMarker
+);
+
+console.log(
+  "PRD-002 recommendationData:",
+  window.BCP_PRODUCTS &&
+    window.BCP_PRODUCTS["PRD-002"] &&
+    window.BCP_PRODUCTS["PRD-002"].recommendationData
+);
+
+console.log(
   "Loaded PRD-001 recommendationData:",
   window.BCP_PRODUCTS &&
     window.BCP_PRODUCTS["PRD-001"] &&
