@@ -36,6 +36,87 @@
       });
   }
 
+  function normalizeSignals(
+  value
+) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value
+    .filter(function (signal) {
+      return (
+        signal &&
+        typeof signal ===
+          "object"
+      );
+    })
+    .map(function (signal) {
+      const type =
+        typeof signal.type ===
+          "string"
+          ? signal.type
+              .trim()
+              .toLowerCase()
+          : "";
+
+      const signalValue =
+        typeof signal.value ===
+          "string"
+          ? signal.value
+              .trim()
+              .toLowerCase()
+          : "";
+
+      const source =
+        typeof signal.source ===
+          "string"
+          ? signal.source
+              .trim()
+              .toLowerCase()
+          : "";
+
+      const weight =
+        Number(
+          signal.weight
+        );
+
+      if (
+        !type ||
+        !signalValue ||
+        !source ||
+        !Number.isFinite(
+          weight
+        )
+      ) {
+        return null;
+      }
+
+      return {
+        type:
+          type,
+
+        value:
+          signalValue,
+
+        weight:
+          Math.max(
+            0,
+            Math.min(
+              100,
+              weight
+            )
+          ),
+
+        source:
+          source
+      };
+    })
+    .filter(function (signal) {
+      return signal !== null;
+    });
+}
+
   function hasAnyMatch(productValues, contextValues) {
     if (
       productValues.length === 0 ||
@@ -140,9 +221,15 @@
 
       audiences: normalizeArray(
         safeContext.audiences
+      ),
+
+      signals: normalizeSignals(
+        safeContext.signals
       )
     };
   }
+
+  
 
   function productMatchesContext(
     recommendationData,
@@ -175,10 +262,26 @@
         recommendedFor.calculators,
         context.calculators
       ) ||
-      hasAnyMatch(
-        recommendedFor.pageTypes,
-        context.pageTypes
-      ) ||
+      
+    (() => {
+  console.log(
+    "PAGE TYPE CHECK",
+    recommendedFor.pageTypes,
+    context.pageTypes,
+    hasAnyMatch(
+      recommendedFor.pageTypes,
+      context.pageTypes
+    )
+  );
+
+  return hasAnyMatch(
+    recommendedFor.pageTypes,
+    context.pageTypes
+  );
+})()
+
+      
+       ||
       hasAnyMatch(
         recommendedFor.tags,
         context.tags
@@ -189,6 +292,151 @@
       )
     );
   }
+
+  function calculateMatchScore(
+  recommendationData,
+  context
+) {
+  if (
+    !recommendationData ||
+    recommendationData.enabled !== true
+  ) {
+    return 0;
+  }
+
+  let score = 0;
+
+  const recommendedFor =
+    recommendationData.recommendedFor;
+
+  if (
+    hasAnyMatch(
+      recommendedFor.crops,
+      context.crops
+    )
+  ) {
+    score += 100;
+  }
+
+  if (
+    hasAnyMatch(
+      recommendedFor.planners,
+      context.planners
+    )
+  ) {
+    score += 50;
+  }
+
+  if (
+    hasAnyMatch(
+      recommendedFor.calculators,
+      context.calculators
+    )
+  ) {
+    score += 40;
+  }
+
+  if (
+    hasAnyMatch(
+      recommendedFor.pageTypes,
+      context.pageTypes
+    )
+  ) {
+    score += 30;
+  }
+
+  if (
+    hasAnyMatch(
+      recommendedFor.tags,
+      context.tags
+    )
+  ) {
+    score += 20;
+  }
+
+  if (
+    hasAnyMatch(
+      recommendedFor.audiences,
+      context.audiences
+    )
+  ) {
+    score += 10;
+  }
+
+  return score;
+}
+
+  function calculateSignalScore(
+  recommendationData,
+  context
+) {
+  if (
+    !recommendationData ||
+    recommendationData.enabled !== true ||
+    !Array.isArray(
+      context.signals
+    )
+  ) {
+    return 0;
+  }
+
+  const recommendedFor =
+    recommendationData.recommendedFor;
+
+  let signalScore = 0;
+
+  context.signals.forEach(
+    function (signal) {
+      let productValues = [];
+
+      switch (signal.type) {
+        case "crop":
+          productValues =
+            recommendedFor.crops;
+          break;
+
+        case "planner":
+          productValues =
+            recommendedFor.planners;
+          break;
+
+        case "calculator":
+          productValues =
+            recommendedFor.calculators;
+          break;
+
+        case "page-type":
+          productValues =
+            recommendedFor.pageTypes;
+          break;
+
+        case "tag":
+          productValues =
+            recommendedFor.tags;
+          break;
+
+        case "audience":
+          productValues =
+            recommendedFor.audiences;
+          break;
+
+        default:
+          return;
+      }
+
+      if (
+        productValues.includes(
+          signal.value
+        )
+      ) {
+        signalScore +=
+          signal.weight;
+      }
+    }
+  );
+
+  return signalScore;
+}
 
   function getRecommendations(
     context,
@@ -229,17 +477,48 @@
           const productId = entry[0];
           const product = entry[1];
 
-          const recommendationData =
-            getProductRecommendationData(
-              product
-            );
+         const recommendationData =
+  getProductRecommendationData(
+    product
+  );
 
-          return {
-            productId: productId,
-            product: product,
-            recommendationData:
-              recommendationData
-          };
+const matchScore =
+  calculateMatchScore(
+    recommendationData,
+    normalizedContext
+  );
+
+const signalScore =
+  calculateSignalScore(
+    recommendationData,
+    normalizedContext
+  );
+
+const totalScore =
+  matchScore +
+  signalScore;
+
+return {
+  productId:
+    productId,
+
+  product:
+    product,
+
+  recommendationData:
+    recommendationData,
+
+  matchScore:
+    matchScore,
+
+  signalScore:
+    signalScore,
+
+  totalScore:
+    totalScore
+};    
+   
+
         })
         .filter(function (item) {
           return productMatchesContext(
@@ -247,14 +526,28 @@
             normalizedContext
           );
         })
-        .sort(function (first, second) {
-          return (
-            second.recommendationData
-              .priority -
-            first.recommendationData
-              .priority
-          );
-        });
+        
+        .sort(function (
+  first,
+  second
+) {
+  if (
+    second.totalScore !==
+    first.totalScore
+  ) {
+    return (
+      second.totalScore -
+      first.totalScore
+    );
+  }
+
+  return (
+    second.recommendationData
+      .priority -
+    first.recommendationData
+      .priority
+  );
+});
 
     if (limit !== null) {
       return matches.slice(0, limit);
