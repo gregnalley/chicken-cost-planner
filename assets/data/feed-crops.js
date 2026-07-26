@@ -103369,7 +103369,2744 @@ feedingReference: {
     summary:
       "Wheat is a cool-season annual cereal that can provide young green forage, protected living forage, mature whole seed heads, storable grain, cracked or coarsely ground grain, sprouts, postharvest gleaning, straw, erosion protection, nutrient scavenging, and winter cover. Wheat grain is primarily an energy ingredient with moderate protein and relatively low fiber compared with ordinary hulled Barley or Oats. Its practical backyard value depends heavily on available growing area, whether the intended product is forage, whole heads, or cleaned loose grain, and whether the grower is willing to manage cutting, drying, threshing, cleaning, storage, wildlife protection, and ration balance.",
 
-    chickenUse: {
+    
+    ///////////////////////////
+//
+//  Wheat - What can chickens eat?
+//
+//////////////////////////
+
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Wheat?",
+
+        answerLabel:
+          "Yes — mature Wheat grain, seed heads, and young forage are safe supplemental feeds for established adult chickens.",
+
+        quickAnswer:
+          "Chickens can safely eat clean mature Wheat grain, cracked Wheat, coarsely ground Wheat, mature Wheat seed heads, young Wheat forage, and properly produced Wheat sprouts. Wheat is especially valuable as a cool-season forage crop, moderate-to-high energy cereal grain, stored winter feed, and whole-head enrichment crop. Although Wheat provides more protein than Corn, it remains an incomplete poultry feed and should always supplement rather than replace a nutritionally complete ration.",
+
+        detailedAnswer:
+          "Wheat is one of the world's most important cereal grains and is well suited for backyard chicken keepers who wish to produce both forage and grain from a cool-season planting. Young vegetative Wheat provides nutritious fresh forage, while mature grain supplies concentrated starch, moderate protein, and useful minerals. Whole seed heads also provide excellent behavioral enrichment by encouraging natural pecking and foraging behavior. However, Wheat is not a complete poultry ration. It remains relatively low in calcium, provides an incomplete amino-acid profile, contains phytate that reduces phosphorus availability, and excessive supplementation can displace nutritionally balanced feed. Wheat should therefore be used as a measured supplement, enrichment crop, forage source, or ingredient within a properly balanced poultry ration rather than as unrestricted staple feed.",
+
+        primaryFeedingRole:
+          "Moderate-to-high energy cereal-grain supplement and whole-head enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Cool-season forage crop",
+          "Stored winter grain",
+          "Whole-head enrichment",
+          "Fresh cut-and-carry forage",
+          "Sprouted supplemental feed",
+          "Postharvest gleaning",
+          "Seasonal garden-to-flock feed",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Highly recommended as a versatile cool-season supplemental crop when properly managed, harvested, stored, and fed alongside a complete poultry ration.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-wheat-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal",
+
+        primaryProductType:
+          "mature-cereal-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          true,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          5,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          4,
+
+        nutritionalUsefulnessScore:
+          5,
+
+        energyValueScore:
+          5,
+
+        proteinValueScore:
+          3,
+
+        enrichmentValueScore:
+          5,
+
+        winterValueScore:
+          5,
+
+        storageValueScore:
+          5,
+
+        preparationSimplicityScore:
+          4,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          5,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          5,
+
+        directGardenAccessScore:
+          4,
+
+        notes: [
+          "Scores describe Wheat as a supplemental backyard chicken feed rather than a complete poultry ration.",
+          "Wheat receives excellent scores because it provides forage, grain, whole-head enrichment, winter storage, and strong versatility within backyard systems.",
+          "The feeding-safety score is slightly reduced because excessive Wheat supplementation can displace balanced feed and phytate reduces phosphorus availability.",
+          "Young-chick suitability remains intentionally low because chicks should rely on an age-appropriate complete starter ration.",
+          "Whole seed heads provide outstanding enrichment but make precise intake measurement more difficult than feeding loose grain.",
+          "Loose grain offers better portion control and storage efficiency than whole heads."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean mature Wheat grain, mature seed heads, young forage, and properly produced sprouts are safe supplemental feeds for established adult chickens. Primary concerns involve excessive supplementation, complete-feed displacement, mold, storage deterioration, mycotoxins, ergot contamination, chemically treated seed, and poor-quality stored grain.",
+
+        whyModerationIsRequired:
+          "Although Wheat is an excellent cereal grain, excessive consumption may reduce intake of complete poultry feed and dilute calcium, vitamins, minerals, essential amino acids, and other nutrients required for long-term flock health and egg production.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Wheat grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound mature grain is an excellent supplemental cereal feed for established adult chickens."
+          },
+
+          {
+            item:
+              "Freshly cracked Wheat",
+
+            status:
+              "safe",
+
+            explanation:
+              "Cracked grain improves accessibility for some birds but should be used sooner because processing reduces storage stability."
+          },
+
+          {
+            item:
+              "Freshly coarsely ground Wheat",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Coarsely ground Wheat is appropriate for supplemental feeding or balanced ration preparation but stores less reliably than whole grain."
+          },
+
+          {
+            item:
+              "Fresh mature Wheat seed heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "Clean mature heads provide excellent natural enrichment when harvested after grain maturity."
+          },
+
+          {
+            item:
+              "Thoroughly dried mature Wheat heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "Properly dried heads store well and provide outstanding winter enrichment when protected from moisture and contamination."
+          },
+
+          {
+            item:
+              "Young vegetative Wheat forage",
+
+            status:
+              "safe",
+
+            explanation:
+              "Fresh actively growing forage provides valuable cool-season greens when offered before plants become coarse or deteriorated."
+          },
+
+          {
+            item:
+              "Properly produced Wheat sprouts",
+
+            status:
+              "safe",
+
+            explanation:
+              "Clean sprouts produced from untreated grain under sanitary conditions provide fresh supplemental forage but remain highly perishable."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Planting seed may contain fungicides, insecticides, polymers, dyes, or other agricultural treatments unsuitable for poultry."
+          },
+
+          {
+            item:
+              "Moldy or musty Wheat",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, caking, heating, or fungal growth indicates unsafe grain."
+          },
+
+          {
+            item:
+              "Ergot-contaminated grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Ergot bodies contain toxic alkaloids and contaminated grain should never be fed."
+          },
+
+          {
+            item:
+              "Fusarium-damaged grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Fusarium infection may produce harmful mycotoxins even when damage appears limited."
+          },
+
+          {
+            item:
+              "Storage-sprouted, heated, or fermenting grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heating, fermentation, or uncontrolled sprouting indicates serious storage deterioration."
+          },
+
+          {
+            item:
+              "Rodent-contaminated Wheat",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Rodent contamination presents significant disease and sanitation risks."
+          },
+
+          {
+            item:
+              "Insect-infested grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heavy insect infestation often accompanies declining grain quality, contamination, moisture problems, or spoilage."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Large quantities of Wheat may reduce consumption of complete poultry feed."
+          },
+
+          {
+            hazard:
+              "Phytate",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Much of Wheat's phosphorus is associated with phytate and is not fully available to poultry."
+          },
+
+          {
+            hazard:
+              "Mycotoxins",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Poor storage or fungal infection can allow development of dangerous mycotoxins."
+          },
+
+          {
+            hazard:
+              "Ergot contamination",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Ergot contamination represents one of the most serious grain safety concerns and contaminated grain should never be fed."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Whole seed heads may allow dominant birds to monopolize access."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Loose grain scattered into damp litter may spoil or attract rodents and insects."
+          },
+
+          {
+            hazard:
+              "Hanging-material entanglement",
+
+            riskLevel:
+              "low-but-preventable",
+
+            explanation:
+              "Strings, wire, or hanging devices used for whole heads should not create entanglement hazards."
+          }
+        ],
+
+        emergencyUse:
+          "Wheat can provide valuable short-term dietary energy during temporary feed shortages, but it is not nutritionally complete and should not serve as the flock's sole ration.",
+
+        veterinaryCaution:
+          "Birds with digestive disorders, obesity, crop abnormalities, reduced mobility, or other medical conditions may require individualized feeding recommendations from a poultry veterinarian."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-supplement",
+
+          preferredForms: [
+            "Whole mature Wheat grain",
+            "Fresh mature Wheat seed heads",
+            "Thoroughly dried Wheat seed heads",
+            "Freshly cracked Wheat",
+            "Coarsely ground Wheat used promptly",
+            "Young Wheat forage",
+            "Properly produced Wheat sprouts"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for whole Wheat grain, mature seed heads, young forage, and properly produced sprouts. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Concentrated supplemental energy",
+            "Moderate supplemental protein",
+            "Cool-season forage",
+            "Behavioral enrichment",
+            "Stored winter grain",
+            "Seasonal dietary diversity"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Excessive intake may displace essential amino acids, vitamins, minerals, and calcium",
+            "Phytate reduces the availability of some phosphorus",
+            "Arabinoxylans and other non-starch polysaccharides may reduce nutrient utilization"
+          ],
+
+          guidance:
+            "Laying hens may receive Wheat grain, forage, sprouts, or whole heads as measured supplements, but a complete layer ration and an appropriate calcium program must remain the nutritional foundation."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult supplements may receive small amounts of whole grain, cracked Wheat, young forage, sprouts, or mature heads, but their nutritionally complete grower or developer ration should remain dominant."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Informal feeding of whole Wheat grain, coarse cracked grain, mature heads, or substantial quantities of sprouts may displace balanced starter feed and provide unsuitable particle size or nutrient balance.",
+
+          possibleException:
+            "A qualified poultry nutritionist may include appropriately processed Wheat ingredients within a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering whole grain, seed heads, or sprouts as an informal backyard supplement.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Need for age-appropriate particle size",
+            "Incomplete amino-acid balance",
+            "Very low calcium concentration",
+            "Phytate-bound phosphorus",
+            "Non-starch-polysaccharide concerns",
+            "Need for appropriately sized insoluble grit when whole grain is offered"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Wheat is widely used in balanced meat-bird diets, but published inclusion levels assume professional formulation for energy, amino acids, minerals, vitamins, particle size, and non-starch-polysaccharide management. Backyard keepers should not copy commercial inclusion percentages into an otherwise unbalanced homemade ration."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume clean Wheat grain, young forage, sprouts, and mature heads as measured supplements while continuing to receive balanced nutrition."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Wheat as a supplemental grain, forage, or enrichment crop, but reproductive performance depends on complete and balanced nutrition. Excessive Wheat intake should not dilute essential amino acids, vitamins, minerals, or controlled body condition."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may benefit from fresh forage and whole-head enrichment, but supplemental grain should remain controlled so complete-feed intake and healthy body condition are maintained."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Wheat supplies useful energy and moderate protein but does not provide a complete amino-acid profile for feather production. A balanced ration with adequate digestible protein and essential amino acids remains more important than increasing Wheat intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Wheat may provide dietary energy, but illness can change digestive and nutritional needs. It should not replace diagnostic care, hydration support, or a veterinarian-recommended recovery diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Young vegetative leaves and shoots",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Tender, actively growing Wheat forage provides useful cool-season greens and enrichment when protected from overgrazing, soil contamination, chemicals, and decay."
+          },
+
+          {
+            part:
+              "Short young Wheat forage",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fresh cut-and-carry forage or protected living forage can provide seasonal dietary diversity without requiring grain harvest or processing."
+          },
+
+          {
+            part:
+              "Mature whole Wheat grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Clean, fully mature Wheat grain provides concentrated starch energy and moderate protein for established adult chickens."
+          },
+
+          {
+            part:
+              "Whole mature Wheat seed heads",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Whole mature heads provide valuable pecking and grain-removal enrichment with less processing than cleaned loose grain."
+          },
+
+          {
+            part:
+              "Freshly cracked mature Wheat grain",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Cracked Wheat improves accessibility and mixing but should be used promptly because processing reduces storage stability."
+          },
+
+          {
+            part:
+              "Freshly coarsely ground Wheat grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Coarsely ground Wheat may be used promptly as a supplemental ingredient or within a properly balanced ration, but very fine grinding should be avoided."
+          },
+
+          {
+            part:
+              "Clean Wheat sprouts",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Short sprouts produced from clean untreated grain under sanitary conditions provide fresh supplemental forage but remain highly perishable and contain substantial moisture."
+          },
+
+          {
+            part:
+              "Residual mature grain after harvest",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Postharvest gleaning allows birds to recover missed grain naturally where the site is clean, dry, chemically safe, and protected from dangerous debris."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Mature coarse stems",
+
+            reason:
+              "Highly fibrous and of little practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Wheat straw",
+
+            reason:
+              "Useful primarily for bedding, mulch, compost carbon, or soil protection rather than as concentrated poultry feed."
+          },
+
+          {
+            part:
+              "Awns and coarse chaff",
+
+            reason:
+              "May be irritating and provide little usable nutritional value."
+          },
+
+          {
+            part:
+              "Roots",
+
+            reason:
+              "No practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Empty harvested heads",
+
+            reason:
+              "Contain little remaining grain and are more useful as compost material."
+          },
+
+          {
+            part:
+              "Unsorted screenings",
+
+            reason:
+              "May concentrate weed seed, stones, soil, ergot bodies, diseased kernels, insects, treated seed, and other contaminants."
+          }
+        ],
+
+        ediblePartSummary:
+          "Wheat provides useful poultry value through young green forage, mature grain, whole seed heads, sprouts, and limited postharvest gleaning. Mature grain is the primary nutritional product, while forage and intact heads add strong seasonal enrichment value."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Whole mature Wheat grain",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Measured supplemental cereal-grain feeding."
+          },
+
+          {
+            form:
+              "Whole mature Wheat seed heads",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Behavioral enrichment and natural grain harvesting."
+          },
+
+          {
+            form:
+              "Protected living Wheat forage",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Cool-season browsing and confined-flock enrichment."
+          },
+
+          {
+            form:
+              "Fresh cut-and-carry Wheat forage",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Controlled fresh-green supplementation without crop destruction."
+          },
+
+          {
+            form:
+              "Freshly cracked Wheat grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Birds needing easier grain access or measured grain mixtures."
+          },
+
+          {
+            form:
+              "Freshly coarsely ground Wheat",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Prompt use as a supplemental ingredient or within a properly formulated ration."
+          },
+
+          {
+            form:
+              "Clean short Wheat sprouts",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Fresh supplemental forage produced under sanitary conditions."
+          }
+        ],
+
+        acceptableForms: [
+          "Fresh young cut-and-carry forage",
+          "Protected living forage",
+          "Controlled rotational grazing",
+          "Whole dried Wheat seed heads",
+          "Whole dry Wheat grain",
+          "Freshly cracked Wheat grain",
+          "Freshly coarsely ground Wheat",
+          "Clean short Wheat sprouts",
+          "Postharvest field gleaning",
+          "Professionally formulated Wheat-based ration ingredient"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Coarsely ground Wheat",
+
+            concern:
+              "Grinding increases dust, moisture absorption, oxidation, separation, and storage deterioration."
+          },
+
+          {
+            form:
+              "Cracked Wheat",
+
+            concern:
+              "Cracked grain stores less reliably than intact whole grain."
+          },
+
+          {
+            form:
+              "Wheat sprouts",
+
+            concern:
+              "Sprouts are highly perishable and require clean untreated grain, sanitation, drainage, airflow, and rapid feeding."
+          },
+
+          {
+            form:
+              "Living forage",
+
+            concern:
+              "Requires protected or rotational access to prevent uprooting, soil compaction, crown damage, and overgrazing."
+          },
+
+          {
+            form:
+              "Whole seed heads",
+
+            concern:
+              "Actual intake is difficult to measure, and damp heads may develop mold during storage or feeding."
+          },
+
+          {
+            form:
+              "Wheat screenings",
+
+            concern:
+              "Screenings may concentrate ergot bodies, Fusarium-damaged kernels, weed seed, stones, insects, treated seed, and other contaminants."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Moldy Wheat",
+          "Musty Wheat",
+          "Ergot-contaminated Wheat",
+          "Fusarium-damaged Wheat",
+          "Mycotoxin-contaminated Wheat",
+          "Heated grain",
+          "Fermenting grain",
+          "Wet stored grain",
+          "Storage-sprouted grain",
+          "Flood-contaminated grain",
+          "Rodent-contaminated grain",
+          "Heavily insect-damaged grain",
+          "Chemically contaminated forage",
+          "Rotting Wheat forage",
+          "Very finely ground Wheat used informally"
+        ],
+
+        wholeHeadAdvantages: [
+          "Excellent enrichment",
+          "Encourages natural pecking behavior",
+          "Minimal processing",
+          "Avoids threshing and winnowing",
+          "Extends feeding activity",
+          "Useful stored winter enrichment"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Simple to mix with other feeds",
+          "Better portion control",
+          "Reduced competition when several feeding stations are used",
+          "More compact storage than whole heads",
+          "Easier grain-quality inspection"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Actual grain intake is difficult to estimate",
+          "Dominant birds may monopolize access",
+          "Requires more storage volume",
+          "Awns and coarse chaff may be undesirable",
+          "Damp heads may mold",
+          "Spilled grain may attract rodents or wild birds"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires threshing",
+          "Requires winnowing and cleaning",
+          "Requires drying and protected storage",
+          "Hand-processing losses may be significant",
+          "Cracked or ground grain spoils faster",
+          "Loose grain scattered into damp litter may be wasted or contaminated"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Wheat classes and cultivars differ substantially in growth habit, winter hardiness, maturity, protein concentration, kernel hardness, disease resistance, awn production, grain quality, forage value, and regional adaptation. Spring, winter, and facultative Wheat should not be treated as interchangeable crops.",
+
+        blackOilSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Winter Wheat is well suited to autumn planting, cool-season soil protection, early spring forage, and earlier grain harvest where a locally adapted cultivar can survive winter and complete vernalization."
+        },
+
+        confectionSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Spring Wheat is appropriate where winters are too severe for dependable autumn establishment or where growers need a rapidly maturing cool-season grain planted as early as workable spring conditions allow."
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Facultative Wheat has an intermediate cold requirement and may offer flexible planting options in regions where winter conditions are mild or inconsistent."
+        },
+
+        pollenFreeCultivars: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Hard Wheat classes generally contain more protein and produce harder kernels than soft Wheat classes, but higher crude protein does not make the grain nutritionally complete for poultry."
+        },
+
+        branchingCultivars: {
+          advantages: [
+            "Awnless cultivars may be more convenient for whole-head poultry enrichment.",
+            "Awned cultivars may offer agronomic advantages in some regions but require additional care during whole-head handling and feeding.",
+            "Locally adapted cultivars may provide stronger winter survival, disease resistance, lodging resistance, and harvest reliability."
+          ]
+        },
+
+        giantSingleHeadCultivars: {
+          advantages: [
+            "Hard red and hard white Wheats commonly provide higher protein grain.",
+            "Soft red and soft white Wheats may provide softer kernels and different regional adaptation.",
+            "Disease-resistant cultivars reduce the risk of Fusarium head blight, rusts, and other grain-quality problems.",
+            "Early-maturing cultivars improve harvest reliability in short-season or high-elevation climates."
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate",
+
+        preparationSummary:
+          "Wheat requires little preparation when used as protected living forage, cut-and-carry greens, short sprouts, or intact mature heads. Producing clean loose grain requires more labor because mature heads must be cut, dried, threshed, winnowed, cleaned, sorted, inspected, and stored correctly. Cooking is not required. Cracking or coarse grinding may improve accessibility and mixing but should be performed only in quantities that can be used promptly.",
+
+        requiredPreparation: [
+          "Use only clean, correctly identified Wheat forage or mature grain.",
+          "Confirm that seed intended for feeding or sprouting is untreated.",
+          "Allow young forage stands to establish before controlled access or cutting.",
+          "Stop grazing or repeated cutting before jointing when mature grain production is intended.",
+          "Allow kernels and seed heads to mature fully before grain harvest.",
+          "Harvest before prolonged wet weather whenever practical.",
+          "Dry mature heads or threshed grain thoroughly with strong airflow.",
+          "Thresh, winnow, clean, and sort loose grain before storage.",
+          "Inspect carefully for mold, Fusarium damage, ergot bodies, insects, heating, sprouting, and contamination.",
+          "Store only completely dry, cool, sound material."
+        ],
+
+        optionalPreparation: [
+          "Cut young forage for controlled feeding.",
+          "Offer clean mature heads for enrichment.",
+          "Thresh and winnow grain for measured feeding.",
+          "Crack grain for easier access.",
+          "Coarsely grind small quantities immediately before use.",
+          "Produce short sprouts from clean untreated grain under sanitary conditions.",
+          "Separate broken, lightweight, diseased, sprouted, insect-damaged, or contaminated kernels during cleaning."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Routine heat treatment"
+        ],
+
+        preparationMistakes: [
+          "Allowing unrestricted access to newly established forage.",
+          "Continuing heavy grazing after stem jointing when grain production is expected.",
+          "Harvesting heads before grain maturity.",
+          "Storing damp heads or grain.",
+          "Failing to remove ergot bodies or Fusarium-damaged kernels.",
+          "Grinding Wheat excessively fine.",
+          "Grinding large quantities long before feeding.",
+          "Leaving harvested heads exposed to rain or dew.",
+          "Using treated planting seed for feeding or sprouting.",
+          "Failing to inspect stored grain regularly."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "high-energy-moderate-protein-cereal-grain-supplement",
+
+        nutritionSummary:
+          "Mature Wheat grain is a high-starch cereal ingredient containing substantial usable poultry energy, moderate crude protein, phosphorus, potassium, magnesium, B vitamins, vitamin E within the germ, and relatively low crude fiber compared with ordinary hulled Barley or Oats. Wheat often provides energy reasonably close to Corn and commonly contains more crude protein, lysine, and tryptophan than Corn on an equal-weight basis. However, Wheat remains incomplete as a poultry feed because lysine and sulfur amino acids remain limiting, calcium is very low, much of its phosphorus is associated with phytate, and arabinoxylans and other non-starch polysaccharides may reduce nutrient utilization in some grain samples.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary substantially among hard Wheat, soft Wheat, spring Wheat, winter Wheat, facultative Wheat, whole grain, cracked grain, ground grain, fresh forage, sprouts, bran, middlings, screenings, flour, and other Wheat products. These materials must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Concentrated starch energy",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Wheat commonly contains approximately 60 to 70 percent starch on a dry-matter basis and generally provides high metabolizable energy for poultry."
+          },
+
+          {
+            nutrientRole:
+              "Moderate plant protein",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Wheat commonly contains more crude protein than Corn and can contribute meaningful amino acids when incorporated into a properly balanced ration."
+          },
+
+          {
+            nutrientRole:
+              "Relatively low cereal-grain fiber",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Whole Wheat generally contains less crude fiber and more usable poultry energy than ordinary hulled Barley or Oats."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental phosphorus",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Wheat contains meaningful total phosphorus, although much of it is associated with phytate and should not be assumed to be fully available to poultry."
+          },
+
+          {
+            nutrientRole:
+              "B vitamins and vitamin E",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Whole Wheat contributes several B vitamins and vitamin E concentrated partly within the germ, although storage, processing, grain condition, and actual intake influence the nutritional contribution."
+          },
+
+          {
+            nutrientRole:
+              "Cool-season green forage",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Young Wheat leaves provide fresh seasonal plant material and enrichment, but their high moisture content makes them much less energy dense on a fresh-weight basis than mature dry grain."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Moderate crude protein",
+          "Phosphorus",
+          "Potassium",
+          "Magnesium",
+          "B vitamins",
+          "Vitamin E in the germ",
+          "Moderate lysine relative to Corn",
+          "Moderate tryptophan relative to Corn",
+          "Dietary fiber concentrated primarily in the bran layers"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate, averaging approximately 12.6 percent of dry matter, with substantial variation among Wheat classes, cultivars, growing environments, and individual grain samples.",
+
+          fat:
+            "Low, commonly around 1.7 percent of dry matter, with much of the lipid concentrated within the germ.",
+
+          fiber:
+            "Relatively low for a whole cereal grain and generally lower than ordinary hulled Barley or Oats.",
+
+          starch:
+            "High, commonly approximately 60 to 70 percent of dry matter depending on Wheat class, cultivar, environment, grain quality, and analytical method.",
+
+          calcium:
+            "Very low, commonly around 0.05 percent of dry matter, and insufficient to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Moderate total phosphorus, commonly approximately 0.35 to 0.40 percent of dry matter, although much is associated with phytate and is not fully available to poultry.",
+
+          energy:
+            "High for a cereal grain and often reasonably close to Corn, with exact usable energy affected by Wheat class, grain quality, non-starch-polysaccharide concentration, processing, and bird age."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Wheat grain contains the starchy endosperm, protein-rich tissues, germ, and fibrous bran layers. The intact grain generally stores more reliably and provides a different nutrient and fiber profile than separated or milled Wheat products.",
+
+          dehulledKernel:
+            "Wheat normally does not require hull removal because the hull separates from the grain during threshing. Products with bran or germ removed contain different concentrations of starch, protein, fiber, vitamins, minerals, and fat than intact whole grain.",
+
+          practicalMeaning:
+            "Whole Wheat grain should not be treated as nutritionally identical to refined flour, bran, middlings, screenings, or other separated milling products."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Wheat grain retains its natural proportions of endosperm, bran, and germ and functions primarily as a concentrated cereal-energy ingredient.",
+
+          sunflowerMeal:
+            "Ground Wheat, flour, bran, middlings, and screenings may contain very different proportions of starch, protein, fiber, germ, damaged grain, foreign material, and fine particles. Their feeding value depends on the exact product and processing method.",
+
+          practicalMeaning:
+            "Research involving Wheat flour, bran, middlings, screenings, or professionally formulated ground Wheat should not automatically be applied to ordinary whole grain, sprouts, forage, or intact mature heads."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Wheat class",
+          "Spring, winter, or facultative growth habit",
+          "Hard versus soft grain type",
+          "Cultivar",
+          "Crude protein concentration",
+          "Kernel hardness",
+          "Test weight",
+          "Grain maturity",
+          "Growing environment",
+          "Nitrogen availability",
+          "Rainfall",
+          "Heat during grain filling",
+          "Disease pressure",
+          "Fusarium damage",
+          "Ergot contamination",
+          "Preharvest sprouting",
+          "Postharvest drying",
+          "Storage duration",
+          "Storage temperature",
+          "Moisture exposure",
+          "Cracking",
+          "Grinding",
+          "Milling",
+          "Product form",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "High Supplemental Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature Wheat grain contains a high concentration of starch and can provide substantial supplemental poultry energy, often reasonably close to Corn depending on grain quality and composition."
+          },
+
+          {
+            title:
+              "Versatile Cool-Season Feed Crop",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Wheat can provide young forage, protected living greens, mature grain, whole-head enrichment, sprouts, stored winter feed, and postharvest gleaning from the same annual crop."
+          },
+
+          {
+            title:
+              "Excellent Whole-Head Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature Wheat heads encourage sustained pecking, kernel removal, scratching, investigation, and natural feed-seeking behavior."
+          },
+
+          {
+            title:
+              "Strong Dry-Grain Storage Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Sound, thoroughly dried whole Wheat grain can remain usable for many months when protected from moisture, condensation, insects, rodents, heat, and contamination."
+          },
+
+          {
+            title:
+              "Moderate Supplemental Protein",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Wheat commonly contains more crude protein than Corn and can contribute useful amino acids when fed within a balanced nutritional program."
+          },
+
+          {
+            title:
+              "Useful Fresh-Forage Potential",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Young Wheat growth can provide cool-season forage through protected frames, controlled rotational grazing, or cut-and-carry feeding."
+          },
+
+          {
+            title:
+              "Flexible Feeding Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Wheat can be offered as living forage, fresh cut greens, short sprouts, intact mature heads, loose whole grain, cracked grain, or freshly coarsely ground grain."
+          },
+
+          {
+            title:
+              "Lower Fiber Than Hulled Barley or Oats",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Whole Wheat generally contains less fiber and provides greater usable poultry energy than ordinary hulled Barley or Oats."
+          },
+
+          {
+            title:
+              "Strong Confined-Flock Enrichment",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Protected forage trays, short sprouts, and mature heads can diversify the environment of confined birds and encourage natural feeding behaviors."
+          },
+
+          {
+            title:
+              "Multipurpose Homestead Value",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "A Wheat planting may provide poultry forage, grain, whole heads, household-food grain, straw, bedding material, mulch, compost carbon, erosion control, nutrient capture, winter cover, and crop-rotation value."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Pecking activity",
+
+            explanation:
+              "Chickens must locate and remove individual kernels from an intact Wheat head."
+          },
+
+          {
+            benefit:
+              "Fresh-forage investigation",
+
+            explanation:
+              "Protected living Wheat encourages browsing and pecking while preventing immediate destruction of the roots and crowns."
+          },
+
+          {
+            benefit:
+              "Extended feeding time",
+
+            explanation:
+              "Whole-head feeding and protected forage access generally take longer than consuming loose grain from a feeder."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Birds can pull leaves, strip kernels, move heads, scratch around protected plantings, and investigate the crop."
+          },
+
+          {
+            benefit:
+              "Cool-season activity",
+
+            explanation:
+              "Wheat can provide green plant material and structured enrichment when warm-season forage and insects are less available."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Can be grown behind forage-frame protection",
+          "Can be offered through several separate feeding stations",
+          "Can provide fresh greens during cool weather",
+          "Can be cut and carried to prevent stand destruction",
+          "Whole heads reduce threshing labor",
+          "Loose grain permits better measurement than intact heads",
+          "Whole grain stores efficiently",
+          "Can provide short sprouts during periods of limited outdoor forage",
+          "Can be removed easily when offered in a tray, feeder, or holder"
+        ],
+
+        homesteadBenefits: [
+          "Annual crop that fits into rotation",
+          "Direct seeding avoids transplant production",
+          "Spring and winter types provide regional flexibility",
+          "Useful cool-season cover crop",
+          "Captures residual soil nitrogen",
+          "Reduces erosion",
+          "Suppresses some weeds after establishment",
+          "Produces straw for bedding, mulch, or compost carbon",
+          "Can serve forage, grain, enrichment, household-food, and soil-building goals",
+          "Can occupy garden ground while warm-season crops are absent"
+        ],
+
+        benefitSummary:
+          "Wheat's greatest overall value comes from combining high-energy grain, moderate protein, cool-season forage, whole-head enrichment, long-term storage, and multiple homestead uses. Its nutritional value remains supplemental because Wheat alone cannot provide adequate amino-acid balance, calcium, available phosphorus, vitamins, minerals, or complete poultry nutrition."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Wheat does not supply the complete balance of energy, digestible protein, essential amino acids, calcium, available phosphorus, vitamins, trace minerals, sodium, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Wheat protein cannot independently meet poultry amino-acid requirements. Lysine remains limiting, and methionine and other sulfur amino acids may also require balancing."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Wheat contains very little calcium and cannot support eggshell production without a complete layer ration and an appropriate calcium program."
+          },
+
+          {
+            title:
+              "Phytate Reduces Phosphorus Availability",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Much of Wheat's phosphorus is associated with phytate and should not be treated as fully available to poultry."
+          },
+
+          {
+            title:
+              "Arabinoxylans and Other Non-Starch Polysaccharides",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Some Wheat samples contain soluble non-starch polysaccharides that can increase intestinal viscosity, reduce nutrient use, and contribute to sticky droppings, wet litter, or dirty eggs."
+          },
+
+          {
+            title:
+              "Fine Grinding Can Reduce Feed Quality",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Very finely ground Wheat can increase dust, feed separation, selective consumption, waste, respiratory irritation, and physical feed-quality problems."
+          },
+
+          {
+            title:
+              "Forage and Grain Production Compete",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Repeated grazing or cutting, especially after stem jointing begins, can reduce or eliminate later grain production."
+          },
+
+          {
+            title:
+              "Whole Heads Are Difficult to Measure",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Kernel fill, head size, awns, flock competition, spillage, and actual consumption vary among heads, making whole-head feeding better suited to enrichment than precise ration delivery."
+          },
+
+          {
+            title:
+              "Serious Grain-Quality Hazards Are Possible",
+
+            severity:
+              "high",
+
+            explanation:
+              "Fusarium head blight, ergot, storage mold, preharvest sprouting, insects, rodents, and chemically treated planting seed can make Wheat unsafe."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Flock size, bird age, body condition, Wheat class, grain quality, activity, climate, base ration, forage intake, and management system differ too greatly for one crop-specific serving percentage to apply safely to every flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Lysine remains limiting",
+          "Methionine and other sulfur amino acids may remain limiting",
+          "Phytate reduces phosphorus availability",
+          "Arabinoxylans may reduce nutrient utilization",
+          "Some Wheat samples may increase digestive viscosity",
+          "Large supplemental servings can displace complete feed",
+          "Vitamin and mineral balance is incomplete",
+          "Protein concentration varies among Wheat classes and samples",
+          "Fresh forage and sprouts are much less energy dense by fresh weight than dry grain",
+          "Sprouting does not create additional dry feed matter",
+          "Whole grain, flour, bran, middlings, screenings, forage, and sprouts are not nutritionally equivalent"
+        ],
+
+        practicalLimitations: [
+          "Unrestricted grazing may destroy young stands",
+          "Protected forage systems require barriers or frames",
+          "Repeated cutting may reduce regrowth",
+          "Grazing after jointing may sharply reduce grain production",
+          "Whole heads are difficult to measure accurately",
+          "Dominant birds may monopolize a single head or forage area",
+          "Awned heads may be irritating or inconvenient",
+          "Loose grain requires cutting, drying, threshing, winnowing, cleaning, and storage",
+          "Cracked and ground Wheat deteriorate faster than intact grain",
+          "Very fine grinding creates dust and separation",
+          "Sprouts require strict sanitation and rapid use",
+          "Stored grain can attract insects and rodents",
+          "Wild birds may remove grain before harvest",
+          "Wet harvest weather can cause sprouting, mold, and grain-quality loss",
+          "Fusarium head blight may destroy feed value",
+          "Ergot contamination may make the harvest unsafe",
+          "Small grain plots may produce little feed relative to processing labor",
+          "Spring, winter, and facultative Wheat require different planting and management strategies"
+        ]
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "moderate-for-supplemental-adult-use",
+
+        requiresDetoxification:
+          false,
+
+        cookingRequired:
+          false,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Phytate",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "A substantial portion of Wheat phosphorus is associated with phytate, which reduces phosphorus availability and may also bind other minerals. This is primarily a ration-formulation concern rather than a reason to prohibit limited supplemental feeding."
+          },
+
+          {
+            factor:
+              "Arabinoxylans",
+
+            concernLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Wheat contains arabinoxylans and other non-starch polysaccharides that may increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings, wet litter, or dirty eggs when unsuitable quantities are incorporated into poultry diets."
+          },
+
+          {
+            factor:
+              "Incomplete amino-acid balance",
+
+            concernLevel:
+              "high-when-used-as-a-major-feed",
+
+            explanation:
+              "Wheat provides moderate crude protein but remains deficient in the amino-acid balance required by productive poultry. Lysine is an important limitation, and methionine and other sulfur amino acids may also require correction within a complete ration."
+          },
+
+          {
+            factor:
+              "Very low calcium concentration",
+
+            concernLevel:
+              "high-for-laying-hens",
+
+            explanation:
+              "Wheat does not provide enough calcium to support eggshell formation and must not replace a complete layer ration or an appropriate calcium program."
+          },
+
+          {
+            factor:
+              "Possible enzyme inhibitors",
+
+            concernLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Some Wheat samples may contain enzyme-inhibiting compounds that affect nutrient digestion. Their practical importance depends on grain type, processing, bird stage, and total ration composition."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Beta-glucans",
+
+            explanation:
+              "Wheat does not carry the same principal beta-glucan concern associated with Barley and Oats. Its more important soluble-fiber concern is generally arabinoxylans."
+          },
+
+          {
+            factor:
+              "Hull-associated fiber",
+
+            explanation:
+              "Wheat normally separates from its hull during threshing and generally contains less fiber than ordinary hulled Barley or Oats."
+          },
+
+          {
+            factor:
+              "Trypsin inhibitors",
+
+            explanation:
+              "Clean mature Wheat does not require the same routine heat treatment used to deactivate the major trypsin-inhibitor concern in raw mature Soybeans."
+          },
+
+          {
+            factor:
+              "Lectin toxicity",
+
+            explanation:
+              "Clean mature Wheat grain is not treated as a raw legume requiring routine cooking to control lectin toxicity before ordinary supplemental use."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Threshing and cleaning",
+
+            effect:
+              "Remove straw, chaff, foreign material, damaged kernels, insects, weed seeds, ergot bodies, and other contaminants from the usable grain."
+          },
+
+          {
+            process:
+              "Cracking",
+
+            effect:
+              "Improves physical access and mixing but increases exposed surface area, moisture absorption, insect access, and storage deterioration."
+          },
+
+          {
+            process:
+              "Coarse grinding",
+
+            effect:
+              "Improves incorporation into a formulated ration but increases dust, separation, oxidation, and moisture-absorption risk."
+          },
+
+          {
+            process:
+              "Very fine grinding",
+
+            effect:
+              "May reduce physical feed quality and increase dust, selective feeding, waste, respiratory irritation, and digestive-management problems."
+          },
+
+          {
+            process:
+              "Sprouting",
+
+            effect:
+              "Changes physical form, moisture content, palatability, enzyme activity, and some nutrient characteristics but does not create additional dry matter. Respiration consumes part of the grain's stored carbohydrate."
+          },
+
+          {
+            process:
+              "Xylanase supplementation",
+
+            effect:
+              "May improve nutrient use in professionally formulated Wheat-based poultry diets by reducing some arabinoxylan-related limitations, but it does not make an incomplete homemade ration nutritionally balanced."
+          }
+        ],
+
+        antinutritionalSummary:
+          "Wheat does not require routine cooking or detoxification before feeding. Its most important nutritional limitations are phytate, arabinoxylans and other non-starch polysaccharides, incomplete amino-acid balance, very low calcium, and the risk of complete-feed displacement rather than an acute toxin in clean mature grain."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Wheat should complement a complete ration rather than be used as the nutritional foundation.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, amino acids, vitamins, minerals, sodium, and calcium that Wheat cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration provides complete nutritional balance for mixed or breeding flocks while Wheat remains an optional energy-oriented supplement."
+          },
+
+          {
+            feedType:
+              "Protein-oriented formulated ingredients",
+
+            relationship:
+              "Properly processed Soybeans, soybean meal, Field Peas, Cowpeas, or other formulated protein ingredients may help balance the amino-acid limitations of Wheat within a professionally designed ration."
+          },
+
+          {
+            feedType:
+              "Other cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Barley, Oats, Millet, and Sorghum provide different energy, starch, fiber, and protein characteristics. Combining several grains informally does not by itself create a balanced ration."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address Wheat's very low calcium concentration."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, Clover, Alfalfa, Comfrey, and other suitable forage crops provide fresh-leaf diversity and enrichment characteristics that mature Wheat grain does not."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient lysine",
+          "Insufficient methionine",
+          "Insufficient available phosphorus",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Excessive arabinoxylan exposure",
+          "Poor-quality complete feed",
+          "Moldy or mycotoxin-contaminated grain",
+          "Ergot contamination",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed"
+        ],
+
+        pairingWarning:
+          "Combining Wheat with several other homegrown ingredients does not automatically produce a nutritionally complete diet. Significant ration inclusion requires calculation of energy, protein, digestible amino acids, fiber, calcium, available phosphorus, sodium, vitamins, trace minerals, non-starch-polysaccharide effects, particle size, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use Wheat in measured supplemental amounts, as controlled fresh forage, or as occasional whole-head enrichment."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Wheat should be treated as a supplemental cereal-energy grain, cool-season forage, and enrichment crop rather than as staple feed. Every feeding method should preserve normal consumption of the flock's complete ration while controlling spoilage, grain quality, flock competition, and crop damage.",
+
+        primaryMethods: [
+          {
+            method:
+              "Clean loose whole Wheat grain",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "The best form for accurately measuring supplemental intake. Whole grain generally stores more reliably than cracked or ground Wheat when thoroughly dried and protected."
+          },
+
+          {
+            method:
+              "Whole mature Wheat seed heads",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Mature heads allow chickens to remove kernels gradually while pecking and manipulating the head, providing strong enrichment without requiring threshing."
+          },
+
+          {
+            method:
+              "Protected living Wheat forage",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Young Wheat grown beneath a forage frame provides cool-season browsing while protecting roots, crowns, and soil from scratching and rapid destruction."
+          },
+
+          {
+            method:
+              "Fresh cut-and-carry young forage",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Harvesting clean tender growth and carrying it to the flock provides fresh greens while preserving the stand and allowing better control over the quantity offered."
+          },
+
+          {
+            method:
+              "Freshly cracked Wheat grain",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Cracking may improve accessibility and mixing but does not correct Wheat's amino-acid, calcium, phytate, or arabinoxylan limitations. Cracked grain should be used sooner than intact grain."
+          },
+
+          {
+            method:
+              "Freshly coarsely ground Wheat",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Best used promptly as an ingredient within a properly balanced ration. Coarse grinding may improve mixing, but very fine grinding should be avoided because it increases dust, separation, waste, and physical feed-quality problems."
+          },
+
+          {
+            method:
+              "Controlled rotational grazing",
+
+            recommendation:
+              "Seasonally Useful",
+
+            explanation:
+              "Established Wheat stands may support limited cool-season grazing when soil conditions are firm and access is controlled. Grazing should stop before jointing when mature grain production remains a goal."
+          },
+
+          {
+            method:
+              "Properly produced short Wheat sprouts",
+
+            recommendation:
+              "Use With Special Care",
+
+            explanation:
+              "Short Wheat sprouts may provide fresh supplemental forage when produced from clean, viable, explicitly untreated grain under sanitary conditions. They are highly perishable and should be discarded if they become sour, slimy, moldy, unusually warm, or discolored."
+          },
+
+          {
+            method:
+              "Postharvest gleaning",
+
+            recommendation:
+              "Seasonally Useful",
+
+            explanation:
+              "Chickens may recover clean missed kernels and heads after harvest where the site is safe and chemically appropriate. Gleaning provides natural foraging but does not allow precise measurement of intake."
+          }
+        ],
+
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce Wheat grain, forage, sprouts, or whole heads gradually while observing complete-feed intake, droppings, litter moisture, crop function, flock behavior, body condition, and competition. Begin with a small amount so birds can recognize the new feed without allowing it to displace their complete ration."
+        },
+
+        observationChecklist: [
+          "Complete feed consumption remains normal.",
+          "Birds do not wait for Wheat while refusing balanced feed.",
+          "Droppings remain normal.",
+          "Sticky droppings do not develop.",
+          "Litter remains reasonably dry.",
+          "Eggs do not become unusually dirty because of wet litter.",
+          "Crop emptying appears normal.",
+          "No unusual selective feeding develops.",
+          "No evidence of excessive weight gain or declining body condition develops.",
+          "Whole grain is being consumed successfully.",
+          "Appropriate insoluble grit remains available where needed.",
+          "No excessive dust is produced from ground Wheat.",
+          "Fresh forage is consumed before becoming wilted, trampled, heated, slimy, or heavily soiled.",
+          "Sprouts remain fresh, cool, clean, and free from mold or sour odor.",
+          "Whole heads and loose grain are consumed before spoilage occurs.",
+          "No mold develops on remaining heads or grain.",
+          "No ergot bodies, Fusarium-damaged kernels, or suspicious discoloration are present.",
+          "Dominant birds do not prevent lower-ranking birds from accessing the supplement.",
+          "Protected forage remains rooted and capable of regrowth.",
+          "Birds are not destroying stands intended for later grain production.",
+          "Rodents, insects, and wild birds are not attracted to persistent leftovers."
+        ]
+      },
+
+
+      storage: {
+        storageDifficulty:
+          "moderate",
+
+        storageSummary:
+          "Properly matured, thoroughly dried, cleaned Wheat grain stores exceptionally well when protected from moisture, condensation, insects, rodents, mold, heating, and contamination. Whole grain generally stores substantially longer than cracked or ground Wheat.",
+
+        bestStorageForms: [
+          {
+            form:
+              "Whole mature Wheat grain",
+
+            rating:
+              "excellent",
+
+            explanation:
+              "Whole grain provides the longest dependable storage life when properly dried and protected."
+          },
+
+          {
+            form:
+              "Thoroughly dried whole Wheat heads",
+
+            rating:
+              "very-good",
+
+            explanation:
+              "Whole heads store well for seasonal enrichment when fully dried and protected from moisture and pests."
+          },
+
+          {
+            form:
+              "Freshly cracked Wheat",
+
+            rating:
+              "fair",
+
+            explanation:
+              "Cracked grain should be stored only briefly because exposed surfaces deteriorate more rapidly."
+          },
+
+          {
+            form:
+              "Freshly coarsely ground Wheat",
+
+            rating:
+              "fair",
+
+            explanation:
+              "Ground Wheat absorbs moisture more readily, produces dust, and should be prepared close to feeding time."
+          },
+
+          {
+            form:
+              "Fresh Wheat sprouts",
+
+            rating:
+              "poor",
+
+            explanation:
+              "Sprouts are highly perishable and should be fed promptly after production."
+          }
+        ],
+
+        idealStorageConditions: [
+          "Cool temperatures",
+          "Low humidity",
+          "Stable temperatures",
+          "Excellent ventilation before sealing",
+          "Food-safe containers",
+          "Rodent-resistant storage",
+          "Protection from insects",
+          "Protection from condensation",
+          "Protection from standing water",
+          "Dark storage conditions"
+        ],
+
+        storageContainers: [
+          "Food-grade sealed buckets",
+          "Rodent-resistant bins",
+          "Metal grain containers",
+          "Heavy-duty food-safe containers",
+          "Breathable drying racks before storage",
+          "Dry mesh bags during curing when appropriate"
+        ],
+
+        inspectionChecklist: [
+          "No condensation.",
+          "No heating.",
+          "No mold.",
+          "No musty odor.",
+          "No sour odor.",
+          "No ergot bodies.",
+          "No Fusarium-damaged kernels.",
+          "No insects.",
+          "No rodent contamination.",
+          "No caking.",
+          "No sprouting.",
+          "No excessive broken kernels.",
+          "No abnormal discoloration."
+        ],
+
+        expectedStorageLife:
+          "Whole mature Wheat commonly stores for many months when properly dried, cleaned, cooled, and protected. Whole heads generally store well for seasonal enrichment, while cracked or ground Wheat should be used much sooner. Fresh sprouts should be fed immediately after production."
+      },
+
+      spoilageAndContamination: {
+        spoilageRisk:
+          "moderate",
+
+        primarySpoilageConcerns: [
+          {
+            concern:
+              "Storage mold",
+
+            severity:
+              "high",
+
+            explanation:
+              "Moisture, condensation, inadequate drying, or poor ventilation may allow mold development."
+          },
+
+          {
+            concern:
+              "Fusarium head blight",
+
+            severity:
+              "high",
+
+            explanation:
+              "Fusarium infection can produce harmful mycotoxins that may render grain unsuitable for poultry."
+          },
+
+          {
+            concern:
+              "Ergot contamination",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Ergot bodies contain toxic alkaloids and contaminated grain should never be fed."
+          },
+
+          {
+            concern:
+              "Heating",
+
+            severity:
+              "high",
+
+            explanation:
+              "Grain stored before reaching safe moisture content may heat internally and deteriorate rapidly."
+          },
+
+          {
+            concern:
+              "Insect infestation",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Stored-product insects reduce grain quality and frequently accompany moisture or sanitation problems."
+          },
+
+          {
+            concern:
+              "Rodent contamination",
+
+            severity:
+              "high",
+
+            explanation:
+              "Rodents contaminate grain with urine, feces, nesting material, and disease organisms."
+          },
+
+          {
+            concern:
+              "Preharvest sprouting",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Rainfall before harvest may initiate sprouting and reduce grain quality."
+          }
+        ],
+
+        signsOfSpoilage: [
+          "Visible mold",
+          "Musty odor",
+          "Sour odor",
+          "Heating",
+          "Condensation",
+          "Sprouted kernels",
+          "Caking",
+          "Ergot bodies",
+          "Pink or discolored Fusarium-damaged kernels",
+          "Extensive insect activity",
+          "Rodent evidence",
+          "Abnormal discoloration"
+        ],
+
+        discardImmediatelyIf: [
+          "Visible mold develops.",
+          "Musty or sour odors appear.",
+          "Grain heats during storage.",
+          "Ergot bodies are present.",
+          "Fusarium head blight is suspected.",
+          "Rodent contamination occurs.",
+          "Chemical contamination is possible.",
+          "Treated planting seed becomes mixed with feed.",
+          "Grain ferments.",
+          "Water damage or flooding occurs."
+        ],
+
+        prevention: [
+          "Harvest only mature grain.",
+          "Dry thoroughly before storage.",
+          "Cool grain before sealing.",
+          "Use food-grade rodent-resistant containers.",
+          "Inspect stored grain regularly.",
+          "Keep storage areas clean and dry.",
+          "Prevent condensation.",
+          "Rotate stored grain.",
+          "Remove damaged kernels during cleaning.",
+          "Never mix questionable grain with sound grain."
+        ]
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Allowing Wheat to replace the complete poultry ration",
+
+            whyItIsAProblem:
+              "Wheat supplies valuable energy and moderate protein but cannot provide the complete balance of calcium, amino acids, vitamins, minerals, sodium, and other nutrients required by poultry.",
+
+            betterApproach:
+              "Maintain unrestricted access to an age-appropriate complete feed and use Wheat only as a measured supplement, forage crop, or enrichment item."
+          },
+
+          {
+            mistake:
+              "Feeding moldy, musty, heated, or damp Wheat",
+
+            whyItIsAProblem:
+              "Poor storage conditions may allow mold growth, heating, spoilage, insect infestation, or mycotoxin development.",
+
+            betterApproach:
+              "Inspect every batch carefully and discard questionable grain rather than attempting to salvage it."
+          },
+
+          {
+            mistake:
+              "Feeding chemically treated planting seed",
+
+            whyItIsAProblem:
+              "Commercial planting seed may contain fungicides, insecticides, colorants, polymers, or other treatments intended only for planting.",
+
+            betterApproach:
+              "Feed or sprout only clean, untreated Wheat intended for feed or food use."
+          },
+
+          {
+            mistake:
+              "Ignoring ergot or Fusarium contamination",
+
+            whyItIsAProblem:
+              "Ergot alkaloids and Fusarium-associated mycotoxins may create serious health risks for poultry.",
+
+            betterApproach:
+              "Remove contaminated grain completely and never attempt to dilute unsafe grain with good grain."
+          },
+
+          {
+            mistake:
+              "Grinding large quantities long before feeding",
+
+            whyItIsAProblem:
+              "Ground Wheat absorbs moisture more readily, produces dust, and deteriorates faster than intact grain.",
+
+            betterApproach:
+              "Grind only the quantity needed for near-term feeding."
+          },
+
+          {
+            mistake:
+              "Harvesting Wheat before full grain maturity",
+
+            whyItIsAProblem:
+              "Immature grain dries poorly, stores poorly, and contains less usable feed value.",
+
+            betterApproach:
+              "Allow kernels to mature fully before harvesting for storage."
+          },
+
+          {
+            mistake:
+              "Continuing heavy grazing after stem jointing",
+
+            whyItIsAProblem:
+              "Repeated grazing after jointing may greatly reduce or eliminate the later grain harvest.",
+
+            betterApproach:
+              "Remove birds before jointing whenever grain production remains an objective."
+          },
+
+          {
+            mistake:
+              "Offering unlimited whole grain",
+
+            whyItIsAProblem:
+              "Birds may preferentially consume Wheat while reducing intake of their nutritionally balanced ration.",
+
+            betterApproach:
+              "Measure supplemental grain and monitor complete-feed consumption."
+          },
+
+          {
+            mistake:
+              "Poor grain storage sanitation",
+
+            whyItIsAProblem:
+              "Rodents, insects, moisture, and poor housekeeping rapidly reduce grain quality.",
+
+            betterApproach:
+              "Use clean food-grade rodent-resistant containers and inspect stored grain routinely."
+          },
+
+          {
+            mistake:
+              "Assuming sprouts are nutritionally identical to dry grain",
+
+            whyItIsAProblem:
+              "Sprouting changes moisture content and nutrient concentration and does not create additional dry feed matter.",
+
+            betterApproach:
+              "Treat sprouts as fresh supplemental forage rather than as a direct replacement for stored grain."
+          }
+        ],
+
+        summary:
+          "Nearly every Wheat feeding problem results from poor storage, contaminated grain, excessive supplementation, or allowing Wheat to replace nutritionally balanced poultry feed."
+      },
+
+      troubleshooting: {
+        commonProblems: [
+          {
+            problem:
+              "Birds ignore the Wheat.",
+
+            likelyCauses: [
+              "Unfamiliar feed",
+              "Birds already satisfied",
+              "Poor grain quality",
+              "Spoiled grain",
+              "Particle size not preferred"
+            ],
+
+            solutions: [
+              "Introduce gradually.",
+              "Offer small measured amounts.",
+              "Use clean fresh grain.",
+              "Try whole heads for enrichment.",
+              "Remove spoiled material."
+            ]
+          },
+
+          {
+            problem:
+              "Birds eat Wheat but reduce complete-feed intake.",
+
+            likelyCauses: [
+              "Supplement offered too freely",
+              "Highly palatable grain",
+              "Poor portion control"
+            ],
+
+            solutions: [
+              "Reduce supplemental quantity.",
+              "Offer complete feed first.",
+              "Continue monitoring feed consumption."
+            ]
+          },
+
+          {
+            problem:
+              "Stored grain develops mold or musty odor.",
+
+            likelyCauses: [
+              "Grain stored too wet",
+              "Condensation",
+              "Poor airflow",
+              "Water leaks"
+            ],
+
+            solutions: [
+              "Discard affected grain.",
+              "Improve drying procedures.",
+              "Prevent moisture entry.",
+              "Inspect storage more frequently."
+            ]
+          },
+
+          {
+            problem:
+              "Whole heads become moldy during storage.",
+
+            likelyCauses: [
+              "Heads not completely dry",
+              "High humidity",
+              "Poor ventilation"
+            ],
+
+            solutions: [
+              "Dry heads longer before storage.",
+              "Increase airflow.",
+              "Discard moldy heads immediately."
+            ]
+          },
+
+          {
+            problem:
+              "Sticky droppings or wetter litter develop.",
+
+            likelyCauses: [
+              "Large Wheat supplementation",
+              "High arabinoxylan intake",
+              "Overall dietary imbalance"
+            ],
+
+            solutions: [
+              "Reduce Wheat intake.",
+              "Increase complete-feed proportion.",
+              "Evaluate the overall ration."
+            ]
+          },
+
+          {
+            problem:
+              "Grain becomes insect infested.",
+
+            likelyCauses: [
+              "Long storage",
+              "Warm temperatures",
+              "Poor sanitation"
+            ],
+
+            solutions: [
+              "Discard severely infested grain.",
+              "Clean storage containers.",
+              "Improve storage conditions.",
+              "Rotate stored grain more frequently."
+            ]
+          },
+
+          {
+            problem:
+              "Rodents continually attack stored Wheat.",
+
+            likelyCauses: [
+              "Poor container security",
+              "Accessible storage",
+              "Spilled grain"
+            ],
+
+            solutions: [
+              "Use rodent-resistant containers.",
+              "Clean spilled grain immediately.",
+              "Improve rodent control around storage."
+            ]
+          },
+
+          {
+            problem:
+              "Forage stand disappears quickly.",
+
+            likelyCauses: [
+              "Continuous unrestricted flock access",
+              "Young plants not protected",
+              "Heavy scratching"
+            ],
+
+            solutions: [
+              "Use forage frames.",
+              "Rotate grazing.",
+              "Use cut-and-carry feeding."
+            ]
+          },
+
+          {
+            problem:
+              "Very little grain is harvested.",
+
+            likelyCauses: [
+              "Continued grazing after jointing",
+              "Heat stress",
+              "Disease",
+              "Wildlife losses",
+              "Poor harvest timing"
+            ],
+
+            solutions: [
+              "Stop grazing before jointing.",
+              "Protect grain from wildlife.",
+              "Harvest promptly at maturity.",
+              "Select locally adapted cultivars."
+            ]
+          },
+
+          {
+            problem:
+              "Grain quality appears poor after harvest.",
+
+            likelyCauses: [
+              "Immature harvest",
+              "Weather damage",
+              "Disease",
+              "Improper drying",
+              "Storage problems"
+            ],
+
+            solutions: [
+              "Harvest only mature grain.",
+              "Improve drying procedures.",
+              "Inspect carefully before storage.",
+              "Discard questionable material."
+            ]
+          }
+        ],
+
+        troubleshootingSummary:
+          "Most Wheat feeding problems originate from excessive supplementation, contaminated grain, inadequate drying, poor storage, uncontrolled grazing, or failure to maintain the flock's complete ration as the nutritional foundation."
+      },
+
+      faq: {
+        questions: [
+          {
+            question:
+              "Can chickens eat whole Wheat?",
+
+            answer:
+              "Yes. Clean mature whole Wheat grain is an excellent supplemental cereal grain for established adult chickens when offered in measured quantities alongside a complete poultry ration."
+          },
+
+          {
+            question:
+              "Can chickens eat Wheat every day?",
+
+            answer:
+              "Wheat may be offered regularly as a measured supplement, but it should never replace the flock's nutritionally complete feed because it cannot independently meet poultry nutrient requirements."
+          },
+
+          {
+            question:
+              "Can chicks eat Wheat?",
+
+            answer:
+              "Routine backyard supplementation is not recommended for young chicks. They should receive an age-appropriate complete chick starter. Professionally formulated chick diets may contain Wheat ingredients, but that is not equivalent to feeding whole grain informally."
+          },
+
+          {
+            question:
+              "Is cracked Wheat better than whole Wheat?",
+
+            answer:
+              "Neither is inherently superior. Whole Wheat generally stores longer and is easier to keep sound during storage, while freshly cracked Wheat may improve accessibility and mixing but should be used sooner."
+          },
+
+          {
+            question:
+              "Can chickens eat Wheat sprouts?",
+
+            answer:
+              "Yes. Properly produced Wheat sprouts grown from clean untreated grain under sanitary conditions are safe supplemental forage. Sprouts are highly perishable and should be discarded if they become moldy, slimy, sour, overheated, or discolored."
+          },
+
+          {
+            question:
+              "Can chickens eat young Wheat grass?",
+
+            answer:
+              "Yes. Young vegetative Wheat forage provides useful cool-season greens and enrichment when clean, actively growing, and offered as a supplement rather than as the flock's primary feed."
+          },
+
+          {
+            question:
+              "Can chickens eat whole Wheat heads?",
+
+            answer:
+              "Yes. Mature Wheat heads provide excellent behavioral enrichment by encouraging birds to remove kernels naturally. Whole heads should be mature, thoroughly dried, clean, and free from mold or contamination."
+          },
+
+          {
+            question:
+              "Does Wheat provide enough calcium for laying hens?",
+
+            answer:
+              "No. Wheat contains very little calcium and cannot support eggshell production without a complete layer ration and appropriate calcium supplementation."
+          },
+
+          {
+            question:
+              "Is Wheat higher in protein than Corn?",
+
+            answer:
+              "Generally yes. Wheat commonly contains more crude protein than Corn, but it still does not provide the amino-acid balance required to serve as a complete poultry feed."
+          },
+
+          {
+            question:
+              "Can Wheat replace Corn in chicken feed?",
+
+            answer:
+              "Professionally formulated poultry diets may substitute Wheat for part or all of the cereal-grain portion, but backyard keepers should not replace Corn with Wheat unless the overall ration remains nutritionally balanced."
+          },
+
+          {
+            question:
+              "Why does Wheat sometimes cause sticky droppings?",
+
+            answer:
+              "Some Wheat contains arabinoxylans and other soluble non-starch polysaccharides that can increase intestinal viscosity and contribute to sticky droppings or wetter litter when included improperly in poultry diets."
+          },
+
+          {
+            question:
+              "Can Wheat be stored for winter feeding?",
+
+            answer:
+              "Yes. Properly dried, cleaned, and protected whole Wheat grain stores exceptionally well and is one of the best homegrown cereal grains for long-term supplemental feeding."
+          }
+        ]
+      },
+
+            scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Triticum aestivum",
+
+          family:
+            "Poaceae"
+        },
+
+        researchNotes: [
+          "Most published poultry research evaluates Wheat as a measured cereal ingredient within professionally formulated diets rather than as informal backyard supplementation with loose whole grain, mature seed heads, forage, or sprouts.",
+
+          "Whole Wheat grain, cracked Wheat, ground Wheat, Wheat flour, bran, middlings, screenings, sprouts, and young forage are nutritionally distinct materials and should not be treated as interchangeable feed products.",
+
+          "Wheat commonly provides high metabolizable energy and moderate crude protein, but its protein remains limited in lysine and may also require correction for methionine and other sulfur-containing amino acids.",
+
+          "A substantial portion of Wheat phosphorus is associated with phytate and is not fully available to poultry without appropriate ration formulation.",
+
+          "Arabinoxylans and other non-starch polysaccharides may increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings or wet litter when Wheat is incorporated improperly into poultry diets.",
+
+          "Spring Wheat, winter Wheat, and facultative Wheat have different planting requirements, cold responses, maturity patterns, and regional adaptation and should not be treated as identical production systems.",
+
+          "Hard and soft Wheat classes differ in kernel hardness, typical protein concentration, milling characteristics, and practical feed composition.",
+
+          "Sprouting changes moisture content, physical form, enzyme activity, and some nutrient characteristics but does not create additional dry feed matter from the original grain.",
+
+          "Fusarium head blight, ergot contamination, preharvest sprouting, storage mold, insects, rodents, and chemically treated planting seed are important feed-safety concerns.",
+
+          "Whole mature Wheat heads provide a distinct enrichment use that should be evaluated separately from measured loose-grain feeding."
+        ],
+
+        plannerConsiderations: [
+          "High-energy supplemental crop",
+
+          "Moderate-protein cereal crop",
+
+          "Excellent whole-head enrichment crop",
+
+          "Excellent winter-storage crop",
+
+          "Useful cool-season forage crop",
+
+          "Suitable for protected grazing and cut-and-carry feeding",
+
+          "Requires moderation",
+
+          "Requires complete-feed protection",
+
+          "Requires grain drying and storage management",
+
+          "Forage use may reduce later grain production",
+
+          "Strong bird attraction near grain maturity",
+
+          "Moderate-to-high rodent attraction during storage"
+        ],
+
+        futureResearchTopics: [
+          "Backyard whole-head consumption rates",
+
+          "Small-scale Wheat threshing and cleaning efficiency",
+
+          "Regional spring versus winter Wheat performance",
+
+          "Backyard grain-yield validation",
+
+          "Comparative enrichment value of awned and awnless Wheat heads",
+
+          "Effects of Wheat class on backyard flock preference",
+
+          "Long-term whole-grain storage performance",
+
+          "Protected-forage regrowth under small-flock use",
+
+          "Backyard Wheat-sprout production efficiency",
+
+          "Seasonal variation in grain composition under different climates"
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Cool-season supplemental forage",
+
+          "Protected forage-frame planting",
+
+          "Fresh cut-and-carry greens",
+
+          "Measured whole-grain supplementation",
+
+          "Whole-head seasonal enrichment",
+
+          "Winter supplemental feeding",
+
+          "Emergency stored-feed reserve",
+
+          "Postharvest flock gleaning",
+
+          "Garden-to-coop feeding",
+
+          "Cover-crop and poultry-feed integration",
+
+          "Homestead feed diversification"
+        ],
+
+        lessSuitableUses: [
+          "Large-scale complete ration replacement",
+
+          "Primary chick nutrition",
+
+          "Primary protein supplementation",
+
+          "Primary calcium supplementation",
+
+          "Unrestricted free-choice grain feeding",
+
+          "Continuous grazing of stands intended for grain production",
+
+          "Long-term storage of cracked or ground Wheat"
+        ],
+
+        backyardRecommendation:
+          "Grow Wheat as a versatile cool-season crop that can provide protected forage, fresh cut greens, mature grain, stored seed heads, and seasonal enrichment. Use the harvested material to supplement an age-appropriate complete poultry feed rather than attempting to replace purchased balanced feed.",
+
+        commercialRecommendation:
+          "Commercial use is generally most effective through professionally formulated rations using analyzed Wheat grain or Wheat-derived ingredients rather than informal whole-grain supplementation."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Young vegetative leaves",
         "Tender shoots",
