@@ -128089,45 +128089,40 @@ feedingReference: {
         ]
       },
 
-            expertSummary: {
-        summary:
-          "Buckwheat is a rapidly maturing annual pseudocereal valued for supplemental grain production, pollinator support, weed suppression, phosphorus scavenging, and flexible short-season crop rotations. For poultry, its safest and most useful feeding value comes from clean mature grain rather than green leaves, flowers, or stems.",
+             expertSummary: {
+        oneSentence:
+          "Buckwheat is a useful short-season supplemental grain crop for adult chickens when the mature seed is harvested, dried, stored safely, and offered in measured amounts alongside complete poultry feed.",
 
-        overallRecommendation:
-          "Recommended as a useful short-season supplemental grain for established adult chickens when the mature seed is harvested, thoroughly dried, properly stored, and offered in measured amounts alongside a nutritionally complete poultry ration.",
+        recommendation:
+          "Recommended as a seasonal supplemental grain, but not as a complete feed or unrestricted green forage.",
 
-        agronomicSummary:
-          "Buckwheat is a rapidly maturing annual pseudocereal valued for grain production, weed suppression, pollinator support, phosphorus scavenging, short crop rotations, and temporary summer soil cover. Most backyard plantings mature within approximately 70 to 90 days under favorable conditions.",
+        oneParagraph:
+          "Buckwheat is a rapidly maturing annual pseudocereal that can provide useful starch-based energy, moderate protein, and amino-acid diversity for established adult chickens. Its strongest homestead advantages include rapid production, pollinator support, weed suppression, flexible crop rotation, and dry-grain storage potential. The safest poultry use comes from clean mature grain rather than green leaves, flowers, or stems, which contain higher concentrations of fagopyrins. Whole grain, dehulled groats, cracked grain, and coarsely ground grain may all be used as measured supplements, but Buckwheat remains nutritionally incomplete and should never replace a balanced poultry ration.",
 
-        feedingSummary:
-          "For poultry, Buckwheat's value comes almost entirely from mature cleaned grain rather than green vegetation. Whole grain, dehulled groats, cracked grain, and coarsely ground grain can all serve as measured supplements for established adult chickens. Buckwheat contributes useful starch-based energy, moderate protein, relatively favorable lysine compared with many cereal grains, and nutritional diversity, but it remains nutritionally incomplete and should never replace a balanced poultry ration.",
-
-        managementSummary:
-          "Successful Buckwheat feeding depends primarily on proper harvest timing, thorough drying, careful cleaning, rodent-resistant storage, routine inspection, moderate supplementation, and maintaining unrestricted access to complete feed. Green plant tissues should not be treated as unrestricted forage because they contain greater concentrations of fagopyrins.",
-
-        bestUseCases: [
-          "Seasonal supplemental grain",
-          "Short-season feed-garden crop",
-          "Pollinator-support plantings",
-          "Crop rotations",
-          "Stored winter grain",
-          "Diversified homestead feed production",
-          "Measured scratch-grain ingredient",
-          "Controlled postharvest enrichment"
+        recommendationReasoning: [
+          "Mature Buckwheat grain provides useful supplemental energy.",
+          "Its protein contains relatively favorable lysine compared with many cereal grains.",
+          "The crop matures quickly and fits well into short garden rotations.",
+          "Dry grain can be stored for seasonal feeding.",
+          "Flowers provide strong pollinator and beneficial-insect support.",
+          "The crop can suppress weeds and provide temporary soil cover.",
+          "Several grain forms can be used depending on available processing equipment."
         ],
 
-        notRecommendedFor: [
-          "Complete poultry diets",
-          "Routine chick supplementation",
-          "Unrestricted grazing of green Buckwheat",
-          "Feeding moldy or contaminated grain",
-          "Using treated planting seed as feed",
-          "Long-term storage of spoiled sprouts"
-        ],
+        idealUseCase:
+          "A homestead grows Buckwheat as a short-season grain and pollinator crop, harvests the mature seed before excessive shattering, dries and cleans it thoroughly, and feeds small measured portions to established adult chickens while complete feed remains continuously available.",
 
-        overallConclusion:
-          "Buckwheat is an excellent short-season homestead grain that fits well within a diversified backyard feeding system. Its greatest strengths are rapid production, useful mature grain, pollinator value, weed suppression, and flexible crop rotation. Its greatest limitations are incomplete poultry nutrition, fibrous hulls, uneven grain maturity, seed shattering, storage management, and the elevated fagopyrin concentration found in green vegetative tissues."
-      },
+        notRecommendedAs: [
+          "A complete poultry ration",
+          "The primary feed for laying hens",
+          "A routine supplement for young chicks",
+          "An unrestricted green forage crop",
+          "The flock's primary protein source",
+          "The flock's primary calcium source",
+          "A way to correct an unbalanced homemade ration",
+          "Feed when moldy, heated, fermented, chemically treated, or rodent contaminated"
+        ]
+      },     
 
       scientificNotes: {
         taxonomy: {
