@@ -94877,7 +94877,3046 @@ feedingReference: {
     summary:
       "Oats are a cool-season annual cereal that can provide young vegetative forage, mature grain-bearing heads, threshed whole grain, processed grain, seasonal ground cover, and crop-residue value. Oats establish readily under suitable cool conditions and can support forage frames, rotational paddocks, enrichment feeding, winter grain storage, erosion control, weed suppression, residual-nitrogen capture, and organic-matter production. Ordinary covered oats retain a fibrous hull and generally provide less usable poultry energy than Corn or Grain Sorghum, while beta-glucans and substantial fiber limit their value as an unrestricted poultry grain. Hull-less or naked oats differ materially from ordinary covered oats and must not be treated as nutritionally identical products.",
 
-    chickenUse: {
+    ///////////////////////////
+//
+//  Oats - What can chickens eat?
+//
+//////////////////////////
+
+
+feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Oats?",
+
+        answerLabel:
+          "Yes — young Oat forage, mature Oat grain, and mature grain heads are safe supplemental feeds for established adult chickens.",
+
+        quickAnswer:
+          "Chickens can safely eat clean young Oat forage, mature whole grain, cracked grain, coarsely ground grain, and mature Oat heads. Oats are especially useful as a cool-season living forage, cut-and-carry green feed, moderate-energy grain supplement, stored winter feed, and flock-enrichment crop. Ordinary covered Oats contain substantial fibrous hull material and beta-glucans, so they should be offered in moderation and should never replace a nutritionally complete poultry ration.",
+
+        detailedAnswer:
+          "Oats are a versatile cool-season cereal crop that can provide both young vegetative forage and mature grain for established adult chickens. Tender green growth can support protected forage frames, controlled rotational grazing, cut-and-carry feeding, and seasonal pasture diversity. Mature grain contributes starch, moderate protein, unsaturated fat, linoleic acid, phosphorus, manganese, magnesium, B vitamins, and dietary fiber. Whole mature heads can also provide behavioral enrichment by allowing chickens to remove grain through natural pecking and foraging. However, ordinary covered Oats are not a complete poultry feed. Their attached hull contributes substantial fiber, their beta-glucans may reduce nutrient utilization and increase intestinal viscosity, their amino-acid balance is incomplete, and they do not provide sufficient calcium, vitamins, minerals, or usable energy to serve as the flock's primary ration. Hull-less or naked Oats differ materially from ordinary covered Oats and should not be treated as nutritionally identical products. Oats should therefore be used as a measured supplement, seasonal forage, enrichment item, or properly formulated feed ingredient rather than as unrestricted staple food.",
+
+        primaryFeedingRole:
+          "Cool-season forage, moderate-energy cereal-grain supplement, and whole-head enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Protected living forage",
+          "Cut-and-carry fresh greens",
+          "Controlled rotational grazing",
+          "Stored winter grain",
+          "Natural pecking enrichment",
+          "Seasonal garden-to-flock feed",
+          "Moderate supplemental protein",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Recommended as a versatile supplemental crop for established adult chickens when young forage is managed carefully and mature grain or heads are harvested, dried, stored, and fed correctly.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-oats-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal",
+
+        primaryProductType:
+          "young-cereal-forage-and-mature-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          true,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          4,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          4,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          3,
+
+        proteinValueScore:
+          2,
+
+        enrichmentValueScore:
+          5,
+
+        winterValueScore:
+          4,
+
+        storageValueScore:
+          4,
+
+        preparationSimplicityScore:
+          4,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          4,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          5,
+
+        directGardenAccessScore:
+          3,
+
+        notes: [
+          "Scores describe Oats' practical value as a supplemental backyard-chicken feed rather than as a complete ration.",
+          "The strong overall score reflects the crop's combined forage, enrichment, seasonal-cover, and dry-grain value.",
+          "The energy score is lower than Corn or Grain Sorghum because ordinary covered Oats contain substantial fibrous hull material and generally provide less usable poultry energy.",
+          "The feeding-safety score reflects the need to control complete-feed displacement, hull fiber, beta-glucans, grain quality, treated seed, and storage contamination.",
+          "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration and should not receive ordinary whole Oat grain as a routine backyard supplement.",
+          "Protected living forage and mature whole heads provide excellent enrichment but require careful access management to prevent uprooting, overgrazing, waste, and flock competition.",
+          "Loose grain is easier to measure but requires harvesting, drying, threshing, winnowing, cleaning, and protected storage."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean young Oat forage, mature Oat grain, and mature grain heads are safe for established adult chickens when offered as supplemental food. The principal concerns are excessive intake, displacement of complete feed, substantial hull fiber, beta-glucans, sticky droppings, wet litter, mold, mycotoxins, rancidity, chemically treated planting seed, and poor-quality or contaminated forage and grain.",
+
+        whyModerationIsRequired:
+          "Ordinary covered Oats contain substantial fibrous hull material and beta-glucans and generally provide less usable poultry energy than Corn or Grain Sorghum. Chickens may consume supplemental Oats instead of their balanced feed, particularly when grain is offered freely. Excessive intake can dilute protein, essential amino acids, calcium, vitamins, trace minerals, and usable energy supplied by the complete ration and may contribute to sticky droppings, wet litter, dirty eggs, or reduced performance.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean young Oat leaves and shoots",
+
+            status:
+              "safe",
+
+            explanation:
+              "Tender, healthy vegetative growth may be offered through protected living forage, controlled rotational access, or cut-and-carry feeding when the crop is correctly identified and free from disease, chemicals, flooding, manure contamination, and spoilage."
+          },
+
+          {
+            item:
+              "Clean mature whole Oat grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound, fully developed whole grain may be offered to established adult chickens as a measured supplement. Ordinary covered Oats retain a fibrous hull that reduces usable energy and increases dietary fiber."
+          },
+
+          {
+            item:
+              "Dehulled Oat groats",
+
+            status:
+              "safe",
+
+            explanation:
+              "Plain, clean Oat groats are safe and contain less hull fiber than ordinary covered Oats. Because groats differ materially in fiber, energy density, processing, and storage behavior, they should not be treated as nutritionally identical to whole covered grain."
+          },
+
+          {
+            item:
+              "Cracked mature Oat grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Cracked grain is safe when freshly prepared from clean mature Oats. Cracking changes particle size but does not remove hull fiber, beta-glucans, calcium deficiency, or amino-acid limitations."
+          },
+
+          {
+            item:
+              "Coarsely ground mature Oat grain",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Ground Oats may be used promptly as a supplemental ingredient or in a properly formulated ration. Grinding increases exposed surface area and may accelerate moisture absorption, oxidation, rancidity, insect activity, and spoilage."
+          },
+
+          {
+            item:
+              "Fresh mature Oat heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "A mature head containing fully developed, sound grain may be offered soon after harvest when it is clean, dry on the surface, free from disease, and not beginning to spoil."
+          },
+
+          {
+            item:
+              "Thoroughly dried mature Oat heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "Dried whole heads provide useful enrichment when they have cured thoroughly and remain free from mold, insects, rodents, wild-bird contamination, moisture, and rancidity."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, colorants, polymers, or other treatments that are not intended for animal consumption."
+          },
+
+          {
+            item:
+              "Moldy or musty Oats",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, damp clumping, abnormal discoloration, fungal growth, or heating indicates unsafe deterioration. Questionable material should be discarded rather than blended with sound grain."
+          },
+
+          {
+            item:
+              "Sour, heated, or fermenting grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Sour odors, unexpected warmth, condensation, caking, or fermentation indicate unstable moisture conditions and possible spoilage."
+          },
+
+          {
+            item:
+              "Rancid Oats or Oat products",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Oat grain contains meaningful unsaturated fat that can deteriorate after poor storage or processing. Sharp, stale, bitter, paint-like, soapy, or otherwise abnormal odors may indicate rancidity."
+          },
+
+          {
+            item:
+              "Moldy, diseased, or spoiled Oat forage",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Forage showing mold, rot, disease, sour odors, heating, slime, or abnormal discoloration should not be fed."
+          },
+
+          {
+            item:
+              "Flood-contaminated Oat forage or grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Floodwater may introduce sewage, pathogens, petroleum products, pesticides, heavy metals, and other contaminants that cannot be removed reliably through ordinary washing or drying."
+          },
+
+          {
+            item:
+              "Rodent-contaminated grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Grain contaminated by rodent urine, feces, nesting material, hair, or carcasses should be discarded because of disease and contamination risks."
+          },
+
+          {
+            item:
+              "Heavily insect-damaged stored grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Extensive insect activity, webbing, larvae, heating, excess dust, or severe kernel damage may indicate poor storage, contamination, and declining feed quality."
+          },
+
+          {
+            item:
+              "Chemically contaminated forage or grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Oats exposed to pesticides, herbicides, fertilizers, fuels, solvents, treated lumber runoff, or unknown chemicals should not be fed when poultry-use safety cannot be confirmed."
+          },
+
+          {
+            item:
+              "Diseased or rotting Oat heads",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heads affected by extensive fungal growth, soft decay, sprouting, severe weather damage, or suspicious internal discoloration should not be fed."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Oats may cause birds to reduce consumption of their nutritionally complete feed when supplemental grain or forage is offered too freely."
+          },
+
+          {
+            hazard:
+              "Hull fiber",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Ordinary covered Oats retain a substantial fibrous hull that reduces usable energy and nutrient density for poultry."
+          },
+
+          {
+            hazard:
+              "Beta-glucans",
+
+            riskLevel:
+              "moderate-to-high-when-overfed",
+
+            explanation:
+              "Oat beta-glucans may increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings, wet litter, dirty eggs, or reduced performance when unsuitable quantities are fed."
+          },
+
+          {
+            hazard:
+              "Mold and mycotoxins",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Insufficient drying, delayed harvest, prolonged moisture, disease, insects, or unsafe storage may permit fungal deterioration and possible mycotoxin contamination."
+          },
+
+          {
+            hazard:
+              "Rancidity",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "The unsaturated fat concentrated within the Oat groat may deteriorate after cracking, grinding, heat exposure, light exposure, moisture, or prolonged storage."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A single whole head, forage tray, or small grazing area may create crowding or allow dominant birds to monopolize access."
+          },
+
+          {
+            hazard:
+              "Overgrazing and crop destruction",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Unrestricted chicken access may uproot seedlings, scratch out seed, damage crowns, overgraze leaves, compact wet soil, and eliminate regrowth or grain production."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Loose grain or cut forage left in damp litter may become soiled, moldy, sour, rancid, or attractive to rodents and insects."
+          },
+
+          {
+            hazard:
+              "Entanglement from hanging materials",
+
+            riskLevel:
+              "low-but-preventable",
+
+            explanation:
+              "String, wire, netting, or other materials used to suspend Oat heads or protect forage must not form loops or loose sections that could trap feet, legs, wings, necks, or wild birds."
+          }
+        ],
+
+        emergencyUse:
+          "Oat grain can provide moderate short-term energy and young forage can provide fresh plant material, but neither is a nutritionally complete emergency ration. Oats should be combined with an appropriate complete poultry feed or included within a ration formulated to meet poultry requirements.",
+
+        veterinaryCaution:
+          "Birds showing persistent sticky droppings, wet-litter-related illness, reduced intake, weight loss, abnormal droppings, weakness, respiratory signs, sudden production changes, or illness after consuming questionable Oats should receive prompt poultry-veterinary evaluation."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-supplement",
+
+          preferredForms: [
+            "Protected living forage",
+            "Cut-and-carry young greens",
+            "Whole mature Oat heads",
+            "Whole mature grain",
+            "Cracked grain",
+            "Coarsely ground grain"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for Oat forage, mature grain, and whole-head enrichment. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Cool-season fresh forage",
+            "Moderate supplemental energy",
+            "Behavioral enrichment",
+            "Moderate supplemental protein",
+            "Seasonal dietary diversity"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Excessive intake may displace amino acids, vitamins, minerals, calcium, and usable energy",
+            "Ordinary covered Oats contain substantial hull fiber and beta-glucans"
+          ],
+
+          guidance:
+            "Laying hens may receive Oats as forage, grain, or whole-head enrichment, but a complete layer feed and an appropriate calcium program must remain the nutritional foundation."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult supplements may receive limited amounts of young forage, whole grain, cracked grain, or whole heads, but their nutritionally complete grower or developer ration should remain dominant."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Ordinary whole covered Oats contain substantial hull fiber and are not appropriate as a routine backyard supplement.",
+
+          possibleException:
+            "A qualified poultry nutritionist may include properly processed Oat ingredients within a professionally formulated chick ration. That controlled formulation is not equivalent to offering ordinary whole grain or forage as an informal backyard supplement.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Need for age-appropriate particle size",
+            "Ordinary covered Oats contain substantial hull fiber",
+            "Beta-glucans may reduce nutrient utilization",
+            "Incomplete amino-acid balance",
+            "Low calcium concentration",
+            "Need for appropriately sized grit when whole grain is offered"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Oats may be included in balanced meat-bird diets, but published inclusion levels assume professionally formulated complete rations. Backyard keepers should not copy commercial inclusion percentages into otherwise unbalanced homemade mixtures."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume young forage, mature grain, and whole heads as measured supplements while continuing to receive balanced nutrition."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Oats as forage or supplemental grain, but reproductive performance depends on complete and balanced nutrition. Excessive Oat intake should not dilute essential amino acids, vitamins, minerals, or controlled body condition."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may benefit from fresh forage enrichment, but supplemental grain should remain controlled so complete-feed intake is maintained."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Oats provide moderate energy and moderate protein but do not supply a complete amino-acid profile for feather growth. A balanced ration with adequate usable protein and amino acids remains more important than increasing Oat intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Fresh forage or Oat grain may appear beneficial, but illness can change nutritional and digestive needs. Oats should not replace diagnostic care, hydration support, or a veterinarian-recommended recovery diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Young vegetative leaves and shoots",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Tender, healthy vegetative growth provides excellent cool-season forage when protected from overgrazing and contamination."
+          },
+
+          {
+            part:
+              "Tender green Oat forage",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fresh cut-and-carry forage or protected living forage provides enrichment and seasonal dietary diversity."
+          },
+
+          {
+            part:
+              "Mature whole Oat grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fully mature whole grain provides a moderate-energy supplemental cereal feed for established adult chickens."
+          },
+
+          {
+            part:
+              "Whole mature Oat heads",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Whole mature heads provide valuable behavioral enrichment while allowing birds to harvest grain naturally."
+          },
+
+          {
+            part:
+              "Freshly cracked mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Cracked grain improves access but does not remove hull fiber or change the crop's nutritional limitations."
+          },
+
+          {
+            part:
+              "Freshly ground mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Ground grain blends easily into supplemental mixtures but should be prepared only in small quantities because storage stability declines after grinding."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Roots",
+
+            reason:
+              "No practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Dead mature stems",
+
+            reason:
+              "Highly fibrous with little nutritional value."
+          },
+
+          {
+            part:
+              "Empty harvested panicles",
+
+            reason:
+              "Contain little remaining nutrition and are better suited for compost."
+          },
+
+          {
+            part:
+              "Loose hulls",
+
+            reason:
+              "Contain substantial fiber with relatively little usable poultry nutrition."
+          }
+        ],
+
+        ediblePartSummary:
+          "Oats provide useful poultry value through both young vegetative forage and mature grain, making them one of the more versatile cool-season feed crops available for backyard flocks."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Protected living forage",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Cool-season enrichment and controlled grazing."
+          },
+
+          {
+            form:
+              "Cut-and-carry young greens",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Fresh seasonal forage without allowing birds to destroy the stand."
+          },
+
+          {
+            form:
+              "Whole mature Oat heads",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Behavioral enrichment and natural grain harvesting."
+          },
+
+          {
+            form:
+              "Whole mature grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured supplemental cereal grain."
+          },
+
+          {
+            form:
+              "Freshly cracked grain",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Birds that benefit from easier grain access."
+          },
+
+          {
+            form:
+              "Freshly ground grain",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Fresh supplemental ingredient used soon after grinding."
+          }
+        ],
+
+        acceptableForms: [
+          "Protected living forage",
+          "Controlled rotational grazing",
+          "Cut-and-carry young greens",
+          "Whole mature Oat heads",
+          "Whole mature grain",
+          "Cracked grain",
+          "Coarsely ground grain",
+          "Professionally formulated feed ingredient",
+          "Postharvest gleaning"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Ground grain",
+
+            concern:
+              "Reduced storage life because of increased moisture exposure, oxidation, insects, and rancidity."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            concern:
+              "Particle-size reduction improves access but shortens storage stability."
+          },
+
+          {
+            form:
+              "Living forage",
+
+            concern:
+              "Requires controlled access to prevent overgrazing, uprooting, and stand destruction."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Moldy grain",
+          "Musty grain",
+          "Rancid grain",
+          "Heated grain",
+          "Fermenting grain",
+          "Wet stored grain",
+          "Flood-contaminated grain",
+          "Flood-contaminated forage",
+          "Rodent-contaminated grain",
+          "Heavily insect-damaged grain",
+          "Diseased forage"
+        ],
+
+        wholeHeadAdvantages: [
+          "Excellent enrichment",
+          "Encourages natural pecking behavior",
+          "Minimal processing",
+          "Reduced threshing labor",
+          "Extended feeding activity",
+          "Useful winter enrichment"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Simple to mix with other feeds",
+          "Better portion control",
+          "Reduced flock competition"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Actual grain consumption is difficult to estimate",
+          "Dominant birds may monopolize access",
+          "Requires more storage volume",
+          "Spoiled heads must be removed promptly"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires threshing and cleaning",
+          "Requires drying",
+          "Requires rodent-resistant storage",
+          "Greater spoilage potential when scattered into damp litter"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Not all Oats produce identical poultry feed. Covered Oats, hull-less or naked Oats, groats, and processed Oat products differ substantially in fiber, energy, processing requirements, storage characteristics, and feeding value.",
+
+        ordinaryCoveredOats: {
+          recommended:
+            true,
+
+          explanation:
+            "Ordinary covered Oats are the standard reference crop. The attached hull contributes substantial fiber and reduces usable poultry energy compared with hull-less Oats."
+        },
+
+        hullLessOrNakedOats: {
+          recommended:
+            true,
+
+          explanation:
+            "Hull-less or naked Oats contain considerably less hull fiber and generally provide greater usable poultry energy. They should not be treated as nutritionally identical to ordinary covered Oats."
+        },
+
+        oatGroats: {
+          recommended:
+            true,
+
+          explanation:
+            "Dehulled groats provide less fiber and greater nutrient density but differ materially from whole covered Oats."
+        },
+
+        awnedCultivars: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Some awned cultivars may require additional evaluation before whole-head feeding because awn characteristics vary among cultivars."
+        },
+
+        awnlessCultivars: {
+          recommended:
+            true,
+
+          explanation:
+            "Awnless cultivars may be more convenient for whole-head enrichment where locally adapted varieties are available."
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "low-to-moderate",
+
+        preparationSummary:
+          "Oats require little preparation when used as protected living forage, cut-and-carry greens, or intact mature heads. Loose grain requires more labor because it must be harvested, dried, threshed, winnowed, cleaned, and stored correctly. Cooking is not required, and cracking or grinding should be performed only when it serves a clear feeding or ration-formulation purpose.",
+
+        requiredPreparation: [
+          "Use only clean, correctly identified Oat forage or mature grain.",
+          "Protect young stands from unrestricted flock access.",
+          "Harvest forage while leaves remain young, healthy, and vegetative.",
+          "Allow grain and panicles to mature fully before grain harvest.",
+          "Harvest before prolonged wet weather whenever practical.",
+          "Dry mature heads or threshed grain thoroughly with strong airflow.",
+          "Inspect carefully for mold, disease, insects, heating, sprouting, rancidity, or contamination.",
+          "Store only completely dry, cool, sound material."
+        ],
+
+        optionalPreparation: [
+          "Cut young forage for controlled feeding.",
+          "Offer whole mature heads for enrichment.",
+          "Thresh and winnow grain for measured feeding.",
+          "Crack grain for easier access.",
+          "Grind small quantities immediately before use.",
+          "Separate damaged, lightweight, sprouted, or contaminated grain during cleaning."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Routine heat treatment"
+        ],
+
+        preparationMistakes: [
+          "Allowing unrestricted access to newly established forage.",
+          "Cutting forage so heavily that the stand cannot recover.",
+          "Harvesting grain before full maturity.",
+          "Storing damp heads or grain.",
+          "Grinding large quantities long before feeding.",
+          "Leaving harvested heads exposed to rain or dew.",
+          "Failing to inspect stored grain regularly.",
+          "Assuming cracking or grinding removes hull fiber or beta-glucan concerns."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "moderate-energy-moderate-protein-high-fiber-cereal-supplement",
+
+        nutritionSummary:
+          "Ordinary whole covered Oats are a moderate-energy cereal grain containing starch, moderate protein, unsaturated fat, linoleic acid, beta-glucans, phosphorus, manganese, magnesium, B vitamins, and substantial dietary fiber. Their attached hull materially reduces usable poultry energy compared with Corn, Grain Sorghum, hull-less Oats, and dehulled groats. Oats can contribute useful supplemental energy and protein, but their greatest backyard value often comes from combining cool-season forage, whole-head enrichment, storage, and soil-cover functions rather than from serving as a highly concentrated grain feed.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary substantially among ordinary covered Oats, hull-less or naked Oats, dehulled groats, rolled Oats, cracked grain, ground grain, Oat bran, Oat flour, isolated hulls, and different cultivars or grain lots. These products must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Supplemental cereal energy",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "The groat contains useful starch and fat, but the attached hull in ordinary covered Oats lowers the grain's usable energy concentration for poultry."
+          },
+
+          {
+            nutrientRole:
+              "Moderate plant protein",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Oats contribute useful protein, but they are not a concentrated protein crop and do not provide a complete amino-acid balance for productive poultry."
+          },
+
+          {
+            nutrientRole:
+              "Unsaturated fat",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Oat groats contain more fat than many common cereal grains, including meaningful unsaturated fatty acids and linoleic acid."
+          },
+
+          {
+            nutrientRole:
+              "Beta-glucans",
+
+            importance:
+              "management-significant",
+
+            explanation:
+              "Beta-glucans are soluble fibers that may increase intestinal viscosity and reduce nutrient utilization when unsuitable quantities of Oats are included in poultry diets."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Oats can contribute phosphorus, manganese, magnesium, and other minerals, but they do not provide a complete mineral balance and remain very low in calcium."
+          },
+
+          {
+            nutrientRole:
+              "Cool-season green forage",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Young Oat leaves provide fresh seasonal plant material, moisture, and enrichment, but their high water content means they should not be equated with an equal fresh weight of dry grain."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Moderate crude protein",
+          "Unsaturated fat",
+          "Linoleic acid",
+          "Beta-glucans",
+          "Phosphorus",
+          "Manganese",
+          "Magnesium",
+          "B vitamins",
+          "Dietary fiber"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate, commonly around 11 percent for ordinary whole covered Oats, with meaningful variation among cultivars, grain lots, hull proportions, and growing conditions.",
+
+          fat:
+            "Moderate for a cereal grain, commonly around 4 percent, with most of the fat concentrated in the groat.",
+
+          fiber:
+            "High relative to many cereal grains because ordinary covered Oats retain a substantial fibrous hull.",
+
+          starch:
+            "Substantial, but the usable energy contribution is diluted by hull fiber and may be affected by beta-glucans.",
+
+          calcium:
+            "Very low and insufficient to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Present at a moderate total concentration, but some phosphorus is associated with phytate and should not be assumed to be fully available.",
+
+          energy:
+            "Moderate and generally lower for poultry than Corn or Grain Sorghum because of the attached hull and higher fiber concentration."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Ordinary whole covered Oat grain consists of the nutrient-dense groat enclosed within a substantial fibrous hull. The hull increases total fiber and lowers usable energy and nutrient density on an equal-weight basis.",
+
+          dehulledKernel:
+            "The dehulled Oat groat contains much less hull fiber and therefore provides a greater concentration of starch, fat, protein, and usable energy. Removing the hull also reduces physical protection during handling and storage.",
+
+          practicalMeaning:
+            "A pound of ordinary whole covered Oats should not be treated as nutritionally equivalent to a pound of dehulled groats or hull-less Oats."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Ordinary whole covered grain retains both the fibrous hull and the intact groat and is used primarily as a moderate-energy cereal supplement.",
+
+          sunflowerMeal:
+            "Ground or milled Oat products may contain different proportions of groat, bran, flour, and hull material. Their fiber, fat, starch, protein, particle size, storage stability, and feeding value depend on the exact product and processing method.",
+
+          practicalMeaning:
+            "Research involving rolled Oats, groats, Oat flour, bran, hulls, or specially processed Oat ingredients must not automatically be applied to ordinary whole covered grain or intact mature heads."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cultivar",
+          "Covered versus hull-less grain type",
+          "Hull percentage",
+          "Test weight",
+          "Groat-to-hull ratio",
+          "Grain maturity",
+          "Growing environment",
+          "Soil fertility",
+          "Water availability",
+          "Heat during grain filling",
+          "Disease pressure",
+          "Preharvest weathering",
+          "Postharvest drying",
+          "Storage duration",
+          "Storage temperature",
+          "Moisture exposure",
+          "Cracking",
+          "Grinding",
+          "Dehulling",
+          "Rolling",
+          "Product form",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Versatile Cool-Season Feed Crop",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Oats can provide young vegetative forage, mature grain, whole-head enrichment, stored winter feed, seasonal pasture diversity, and soil-cover value from the same annual crop."
+          },
+
+          {
+            title:
+              "Excellent Fresh-Forage Potential",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Young Oat leaves and shoots provide useful cool-season forage through protected frames, controlled paddocks, or cut-and-carry feeding."
+          },
+
+          {
+            title:
+              "Strong Whole-Head Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature Oat panicles encourage sustained pecking, grain removal, scratching, investigation, and natural feed-seeking behavior."
+          },
+
+          {
+            title:
+              "Useful Moderate-Energy Grain",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature grain provides supplemental starch, fat, and moderate protein, although ordinary covered Oats supply less usable poultry energy than Corn or Grain Sorghum."
+          },
+
+          {
+            title:
+              "Dry Winter Storage Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Thoroughly dried whole grain or mature heads can be stored for later feeding and enrichment without refrigeration when protected from heat, moisture, insects, rodents, oxidation, and contamination."
+          },
+
+          {
+            title:
+              "Flexible Feeding Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Oats can be used as living forage, cut greens, intact mature heads, loose whole grain, cracked grain, or freshly ground grain."
+          },
+
+          {
+            title:
+              "Moderate Supplemental Protein",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Oats contribute useful plant protein, although their amino-acid balance remains incomplete and they should not be classified as a concentrated protein crop."
+          },
+
+          {
+            title:
+              "Good Confined-Flock Enrichment",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Protected forage trays, cut greens, and mature heads can diversify the environment of confined birds and encourage natural feeding behavior."
+          },
+
+          {
+            title:
+              "Strong Soil-Cover Value",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Oats establish rapidly under suitable cool conditions and can suppress weeds, reduce erosion, capture residual nitrogen, and contribute organic matter."
+          },
+
+          {
+            title:
+              "Useful Dual-Purpose Production",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "A stand may provide either early forage, later grain, or a managed balance between the two, although heavy early grazing or cutting can reduce grain production."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Pecking activity",
+
+            explanation:
+              "Chickens must locate and remove individual grains from a mature panicle."
+          },
+
+          {
+            benefit:
+              "Fresh-forage investigation",
+
+            explanation:
+              "Protected living Oats encourage pecking and browsing without allowing immediate destruction of the root system."
+          },
+
+          {
+            benefit:
+              "Extended feeding time",
+
+            explanation:
+              "Whole-head feeding and forage access generally take longer than consuming loose grain from a dish."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Birds can pull leaves, strip grain, scratch around protected plantings, and investigate the crop."
+          },
+
+          {
+            benefit:
+              "Cool-season activity",
+
+            explanation:
+              "Oats can provide green plant material and structured enrichment during periods when warm-season forage is unavailable."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Can be grown behind forage-frame protection",
+          "Can be offered through several separate feeding stations",
+          "Can provide fresh greens during cool weather",
+          "Can be cut and carried to prevent stand destruction",
+          "Whole heads reduce threshing labor",
+          "Loose grain permits better measurement than intact heads",
+          "Can be stored for periods of limited fresh forage",
+          "Can be removed easily when offered in a tray, feeder, or holder"
+        ],
+
+        homesteadBenefits: [
+          "Annual crop that fits easily into rotation",
+          "Direct seeding avoids transplant production",
+          "Rapid establishment under suitable cool conditions",
+          "Useful seasonal cover crop",
+          "Captures residual soil nitrogen",
+          "Suppresses weeds",
+          "Reduces erosion",
+          "Produces compostable residue and straw",
+          "Can serve forage, grain, enrichment, and soil-building goals",
+          "Winter-killed residue may continue protecting soil in cold climates"
+        ],
+
+        benefitSummary:
+          "Oats' greatest overall value comes from combining cool-season forage, moderate-energy grain, whole-head enrichment, winter storage, and cover-crop benefits. Their value as a concentrated poultry grain is limited by hull fiber, beta-glucans, incomplete amino-acid balance, and low calcium."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Oats do not supply the complete balance of usable energy, protein, essential amino acids, calcium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Substantial Hull Fiber",
+
+            severity:
+              "high",
+
+            explanation:
+              "Ordinary covered Oats retain a large fibrous hull that poultry digest poorly and that lowers usable energy and nutrient density."
+          },
+
+          {
+            title:
+              "Beta-Glucan Concerns",
+
+            severity:
+              "high",
+
+            explanation:
+              "Oat beta-glucans can increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings, wet litter, dirty eggs, or reduced flock performance when unsuitable quantities are fed."
+          },
+
+          {
+            title:
+              "Lower Usable Energy Than Major Cereal Grains",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Ordinary covered Oats generally provide less metabolizable energy to poultry than Corn or Grain Sorghum because of their high hull and fiber concentration."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Oat protein cannot independently meet poultry amino-acid requirements and should not replace a balanced protein program."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Oats contain very little calcium and cannot support eggshell production without a complete layer ration and appropriate calcium program."
+          },
+
+          {
+            title:
+              "Covered and Hull-Less Oats Differ Materially",
+
+            severity:
+              "high",
+
+            explanation:
+              "Ordinary covered Oats, hull-less Oats, groats, bran, flour, and isolated hulls differ greatly in fiber, energy, nutrient density, and processing characteristics."
+          },
+
+          {
+            title:
+              "Heavy Forage Use Reduces Grain Production",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Repeated or severe grazing and cutting remove leaf area and growing points, reduce stand recovery, and may eliminate later grain production."
+          },
+
+          {
+            title:
+              "Direct Access Can Destroy the Stand",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Chickens may uproot seedlings, scratch out seed, damage crowns, compact wet soil, and overgraze young plants when access is unrestricted."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Flock size, bird age, grain type, hull proportion, activity, climate, body condition, base ration, forage intake, and management system differ too greatly for one crop-specific serving percentage to apply safely to every flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Ordinary covered Oats contain substantial hull fiber",
+          "Beta-glucans may reduce nutrient utilization",
+          "Usable energy is generally lower than Corn or Grain Sorghum",
+          "Total phosphorus should not be treated as fully available phosphorus",
+          "Large supplemental servings can displace complete feed",
+          "Vitamin and mineral balance is incomplete",
+          "Protein concentration is moderate rather than high",
+          "Whole covered grain and hull-less Oats are not nutritionally equivalent",
+          "Cracking or grinding does not remove fiber, beta-glucans, calcium deficiency, or amino-acid limitations"
+        ],
+
+        practicalLimitations: [
+          "Unrestricted grazing may destroy young stands",
+          "Protected forage systems require barriers or frames",
+          "Repeated cutting may reduce regrowth",
+          "Fresh forage and mature grain production compete for the same plant growth",
+          "Whole heads are difficult to measure accurately",
+          "Dominant birds may monopolize a single head or forage area",
+          "Loose grain requires threshing, winnowing, cleaning, drying, and storage",
+          "Cracked and ground grain deteriorate faster than intact grain",
+          "Stored grain can attract insects and rodents",
+          "Oats are less drought tolerant than Proso Millet or Grain Sorghum",
+          "Heat during heading and grain filling can reduce performance",
+          "Fall-planted stands may winter-kill in cold regions",
+          "Lodging, disease, rain, and delayed harvest can reduce grain quality"
+        ]
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "moderate",
+
+        summary:
+          "The principal nutritional limitations of ordinary covered Oats are their substantial fibrous hull, beta-glucans, incomplete amino-acid balance, low calcium concentration, and lower usable poultry energy compared with Corn, Grain Sorghum, or hull-less Oats. These characteristics do not make Oats unsafe, but they do require moderation and proper use within a balanced feeding program.",
+
+        primaryConcerns: [
+          {
+            concern:
+              "Hull fiber",
+
+            significance:
+              "high",
+
+            explanation:
+              "Ordinary covered Oats retain a substantial fibrous hull that poultry digest poorly. The hull lowers nutrient density and metabolizable energy compared with dehulled groats or hull-less Oats."
+          },
+
+          {
+            concern:
+              "Beta-glucans",
+
+            significance:
+              "high",
+
+            explanation:
+              "Beta-glucans are soluble fibers naturally present in Oats that may increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings, wet litter, or reduced flock performance when unsuitable quantities are fed."
+          },
+
+          {
+            concern:
+              "Incomplete amino-acid profile",
+
+            significance:
+              "high",
+
+            explanation:
+              "Although Oats provide moderate protein, they do not supply a complete balance of essential amino acids needed by productive poultry."
+          },
+
+          {
+            concern:
+              "Low calcium",
+
+            significance:
+              "high",
+
+            explanation:
+              "Ordinary Oats contain very little calcium and cannot meet the calcium requirements of laying hens."
+          },
+
+          {
+            concern:
+              "Phytate-bound phosphorus",
+
+            significance:
+              "moderate",
+
+            explanation:
+              "Some phosphorus within Oats is associated with phytate and should not automatically be considered completely available to poultry."
+          }
+        ],
+
+        processingEffects: [
+          {
+            method:
+              "Cracking",
+
+            effect:
+              "Improves physical access to the grain but does not remove hull fiber, beta-glucans, calcium deficiency, or amino-acid limitations."
+          },
+
+          {
+            method:
+              "Grinding",
+
+            effect:
+              "Reduces particle size for easier mixing and consumption but does not materially improve nutritional completeness and shortens storage life."
+          },
+
+          {
+            method:
+              "Dehulling",
+
+            effect:
+              "Removes much of the fibrous hull, reducing fiber concentration and increasing usable energy. Dehulled groats should not be considered nutritionally identical to ordinary covered Oats."
+          },
+
+          {
+            method:
+              "Sprouting",
+
+            effect:
+              "Produces fresh living forage with high moisture content but does not create additional dry-matter nutrition or eliminate the need for a balanced ration."
+          }
+        ],
+
+        mitigation: [
+          "Use Oats as a measured supplement rather than a complete feed.",
+          "Maintain unrestricted access to an appropriate complete poultry ration.",
+          "Prefer mature, sound, well-dried grain.",
+          "Use fresh young vegetative forage rather than overly mature coarse forage.",
+          "Avoid excessive supplemental grain that displaces complete feed.",
+          "Recognize that hull-less Oats and dehulled groats differ materially from ordinary covered Oats.",
+          "Discard grain showing mold, heating, insects, rancidity, or contamination."
+        ],
+
+        plannerConsiderations: [
+          "Reduce suitability for flocks relying heavily on supplemental grain.",
+          "Do not score ordinary covered Oats as nutritionally equivalent to hull-less Oats.",
+          "Penalize excessive reliance on Oats for energy compared with Corn or Grain Sorghum.",
+          "Retain strong positive scores for forage diversity, enrichment, and cover-crop value.",
+          "Never recommend Oats as a complete-feed replacement."
+        ]
+      },
+
+      complementaryFeeding: {
+        complements: [
+          {
+            feedType:
+              "High-protein legumes",
+
+            relationship:
+              "Help balance the moderate protein and incomplete amino-acid profile of Oats.",
+
+            examples: [
+              "Cowpeas",
+              "Field Peas",
+              "Soybeans",
+              "Alfalfa"
+            ]
+          },
+
+          {
+            feedType:
+              "High-energy cereal grains",
+
+            relationship:
+              "Can provide greater metabolizable energy than ordinary covered Oats while allowing dietary diversity.",
+
+            examples: [
+              "Field Corn",
+              "Grain Sorghum",
+              "Proso Millet"
+            ]
+          },
+
+          {
+            feedType:
+              "Leafy green crops",
+
+            relationship:
+              "Increase dietary diversity and provide additional vitamins and enrichment.",
+
+            examples: [
+              "Kale",
+              "Collards",
+              "Comfrey",
+              "White Clover"
+            ]
+          },
+
+          {
+            feedType:
+              "Calcium supplementation",
+
+            relationship:
+              "Required for laying hens because Oats provide very little calcium.",
+
+            examples: [
+              "Free-choice oyster shell",
+              "Commercial layer ration"
+            ]
+          },
+
+          {
+            feedType:
+              "Complete poultry feed",
+
+            relationship:
+              "Should remain the nutritional foundation of the flock while Oats serve only as a supplement."
+          }
+        ],
+
+        doesNotCorrect: [
+          {
+            limitation:
+              "Incomplete amino-acid balance",
+
+            explanation:
+              "Simply feeding more Oats cannot correct their amino-acid limitations."
+          },
+
+          {
+            limitation:
+              "Low calcium",
+
+            explanation:
+              "Additional Oats do not improve calcium intake for laying hens."
+          },
+
+          {
+            limitation:
+              "Hull fiber",
+
+            explanation:
+              "Increasing the feeding rate only increases fiber intake rather than improving usable energy."
+          },
+
+          {
+            limitation:
+              "Beta-glucans",
+
+            explanation:
+              "Greater quantities may increase digestive viscosity concerns rather than improving nutrition."
+          },
+
+          {
+            limitation:
+              "Complete-feed displacement",
+
+            explanation:
+              "Offering larger quantities of Oats increases the likelihood that birds consume less balanced feed."
+          }
+        ],
+
+        summary:
+          "Oats perform best when combined with a balanced complete ration and complemented by protein-rich crops, calcium sources, and other feed crops rather than attempting to make Oats serve every nutritional role."
+      },
+
+      feedingMethods: {
+        preferredMethods: [
+          {
+            method:
+              "Protected living forage",
+
+            rating:
+              "excellent",
+
+            explanation:
+              "Allows chickens to browse young growth while protecting roots and preventing rapid destruction of the stand."
+          },
+
+          {
+            method:
+              "Cut-and-carry fresh greens",
+
+            rating:
+              "excellent",
+
+            explanation:
+              "Provides fresh forage while preserving stand longevity."
+          },
+
+          {
+            method:
+              "Whole mature Oat heads",
+
+            rating:
+              "excellent",
+
+            explanation:
+              "Provides outstanding behavioral enrichment with minimal processing."
+          },
+
+          {
+            method:
+              "Measured loose whole grain",
+
+            rating:
+              "very-good",
+
+            explanation:
+              "Allows better portion control while maintaining good storage stability."
+          },
+
+          {
+            method:
+              "Freshly cracked grain",
+
+            rating:
+              "good",
+
+            explanation:
+              "Useful where easier grain access is desired."
+          },
+
+          {
+            method:
+              "Freshly ground grain",
+
+            rating:
+              "good",
+
+            explanation:
+              "Useful as a freshly prepared supplemental ingredient but should not be stored for long periods."
+          }
+        ],
+
+        feedingFrequency:
+          "Occasional to regular supplemental feeding while maintaining unrestricted access to a complete poultry ration.",
+
+        bestSeasonalUses: [
+          "Cool-season forage production",
+          "Autumn and winter living forage",
+          "Spring fresh-green feeding",
+          "Whole-head enrichment after grain maturity",
+          "Stored winter grain supplementation"
+        ],
+
+        enrichmentValue:
+          "High, particularly when protected forage or mature whole heads encourage prolonged pecking, browsing, scratching, and natural feeding behavior.",
+
+        managementTips: [
+          "Protect new forage from unrestricted access.",
+          "Rotate grazing areas to prevent stand destruction.",
+          "Harvest greens while still tender.",
+          "Allow grain to mature fully before harvest.",
+          "Dry grain and heads thoroughly before storage.",
+          "Inspect stored material regularly for spoilage.",
+          "Feed measured supplemental quantities rather than free-choice grain."
+        ],
+
+        feedingMethodSummary:
+          "The greatest practical backyard value comes from combining protected cool-season forage with mature whole-head enrichment and measured supplemental grain rather than relying on Oats as a major feed source."
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Protected cool-season living forage",
+          "Cut-and-carry fresh greens",
+          "Controlled rotational grazing",
+          "Whole-head flock enrichment",
+          "Measured supplemental grain feeding",
+          "Dry winter grain storage",
+          "Seasonal garden-to-coop feeding",
+          "Cool-season pasture diversification",
+          "Postharvest gleaning",
+          "Confined-flock forage enrichment",
+          "Winter-killed cover cropping",
+          "Residual-nitrogen capture",
+          "Erosion control",
+          "Weed suppression",
+          "Compost and residue biomass",
+          "Dual-purpose forage and grain production"
+        ],
+
+        lessSuitableUses: [
+          "Complete poultry-ration replacement",
+          "Primary chick nutrition",
+          "Primary protein supplementation",
+          "Primary calcium supplementation",
+          "Highest-energy grain production",
+          "Unrestricted free-choice grain feeding",
+          "Unrestricted access to newly established forage",
+          "Dependable hot-season forage production",
+          "Drought-prone production without irrigation",
+          "Long-term storage after cracking or grinding",
+          "Feeding without grain-quality inspection",
+          "Using ordinary covered Oats as though they were hull-less Oats",
+          "Heavy forage harvest followed by an expectation of full grain production",
+          "Commercial ration formulation without nutrient analysis"
+        ],
+
+        backyardRecommendation:
+          "Grow Oats primarily as a versatile cool-season forage, whole-head enrichment crop, moderate-energy supplemental grain, and seasonal soil-building crop rather than attempting to replace purchased complete poultry feed. Protected living forage and cut-and-carry greens offer excellent value for confined flocks, while mature whole heads provide enrichment with less processing than loose grain. Keep access controlled, allow grain intended for storage to mature fully, dry harvested material thoroughly, and continue providing an age-appropriate complete ration.",
+
+        commercialRecommendation:
+          "Commercial poultry use is most appropriate through analyzed Oat grain incorporated into professionally formulated diets. Covered Oats, hull-less Oats, groats, bran, flour, and other processed Oat products must be evaluated separately because hull percentage, fiber, beta-glucans, usable energy, particle size, and nutrient composition differ materially. Inclusion levels should be based on current nutrient analysis, bird stage, enzyme strategy where appropriate, ingredient pricing, and complete ration formulation rather than informal substitution for Corn or another cereal grain."
+      },
+
+      storage: {
+        storageSuitability:
+          "good-for-whole-dry-grain-and-mature-heads",
+
+        preferredStorageForms: [
+          "Clean thoroughly dried whole Oat grain",
+          "Thoroughly dried mature Oat heads",
+          "Clean dehulled Oat groats stored for shorter periods",
+          "Small freshly prepared batches of cracked Oats",
+          "Small freshly prepared batches of coarsely ground Oats"
+        ],
+
+        dryingRequirements:
+          "Mature Oat heads and threshed grain must be dried thoroughly with strong airflow before enclosed storage. Harvested heads should be spread in shallow layers or suspended where air can circulate around and through the panicles. Grain should be cooled after drying and should not be sealed while warm. Thick piles, trapped chaff, rain exposure, high humidity, condensation, and uneven drying increase the risks of heating, mold, sprouting, insects, and grain deterioration.",
+
+        storageEnvironment:
+          "Store sound dry Oats in a clean, cool, dark, dry, well-ventilated, rodent-resistant, and insect-resistant location. Protect stored material from leaking roofs, concrete-floor moisture, condensation, direct sunlight, large temperature changes, wild birds, chemicals, treated seed, and contaminated tools or containers.",
+
+        containerGuidance:
+          "Use clean food-safe containers suitable for dry grain and capable of excluding rodents and insects. Seal grain only after it has dried and cooled completely. Intact mature heads require more storage volume and may need breathable racks, bags, or bins during final curing before transfer to protected dry storage.",
+
+        inventoryManagement:
+          "Label stored batches with crop identity, cultivar or grain type when known, harvest date, drying date, processing form, and storage location. Keep ordinary covered Oats separate from hull-less Oats, groats, planting seed, and chemically treated seed. Rotate older sound grain ahead of newer grain and avoid mixing questionable material with clean inventory.",
+
+        inspectionSchedule:
+          "Inspect stored Oats frequently during the first several weeks after harvest and regularly throughout storage. Check the center and lower portions of containers or head bundles for heating, moisture migration, condensation, caking, insects, webbing, unusual dust, sprouting, mold, off odors, rancidity, rodents, and water damage.",
+
+        storageLifeGuidance:
+          "Sound whole Oat grain may remain usable for several months or longer when thoroughly dried, cooled, cleaned, and protected from moisture, heat, insects, rodents, oxidation, and contamination. No universal backyard storage duration is assigned. Whole grain generally stores more reliably than cracked, ground, rolled, or dehulled products because processing exposes more of the fat-containing groat to oxygen, moisture, and deterioration.",
+
+        disposalGuidance:
+          "Discard Oats showing mold, mustiness, sour or fermented odor, unexpected heating, damp clumping, severe insect activity, rancidity, sprouting during storage, rodent contamination, flood contamination, chemical exposure, or other questionable deterioration. Do not attempt to salvage unsafe grain by redrying it, washing it, grinding it, cooking it, removing only visibly damaged kernels, or blending it with sound feed.",
+
+        storageSummary:
+          "Oats store best as thoroughly dried intact whole grain. Mature heads can also be stored successfully but require more space and careful airflow around the panicles. Cracking, grinding, rolling, or dehulling may improve accessibility or change nutritional concentration, but every processing step generally reduces storage stability."
+      },
+
+      spoilageAndContamination: {
+        overallRiskLevel:
+          "moderate",
+
+        primarySpoilageRisks: [
+          {
+            risk:
+              "Mold growth and possible mycotoxin contamination",
+
+            likelihood:
+              "moderate-to-high",
+
+            primaryCauses: [
+              "Insufficient drying",
+              "Delayed harvest",
+              "Rain during grain maturity",
+              "High humidity",
+              "Condensation",
+              "Water leaks",
+              "Poor airflow",
+              "Deep piles of harvested heads",
+              "Storing grain while warm",
+              "Disease-damaged kernels",
+              "Insect damage"
+            ],
+
+            warningSigns: [
+              "Visible fuzzy growth",
+              "Musty odor",
+              "Dark or unusual discoloration",
+              "Kernel clumping",
+              "Softened head tissue",
+              "Unexpected heating",
+              "Caking",
+              "Abnormal dust",
+              "Bird refusal"
+            ],
+
+            response:
+              "Discard affected and suspicious material. Visible mold may represent only part of the deterioration, and ordinary household methods cannot reliably remove mycotoxins. Do not attempt to make questionable Oats safe by redrying, brushing off mold, washing, cooking, grinding, or blending them with sound grain."
+          },
+
+          {
+            risk:
+              "Rancidity",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Long storage",
+              "Warm storage temperatures",
+              "Direct sunlight",
+              "Oxygen exposure",
+              "Moisture exposure",
+              "Cracking",
+              "Grinding",
+              "Rolling",
+              "Dehulling",
+              "Damaged kernels",
+              "Poor container protection"
+            ],
+
+            warningSigns: [
+              "Sharp stale odor",
+              "Paint-like odor",
+              "Soapy odor",
+              "Bitter odor or flavor",
+              "Unusual oily residue",
+              "Discoloration",
+              "Bird refusal"
+            ],
+
+            response:
+              "Discard rancid or suspicious material. Mixing deteriorated Oats with fresh grain does not restore quality or make them suitable for feeding."
+          },
+
+          {
+            risk:
+              "Fermentation or storage heating",
+
+            likelihood:
+              "low-to-moderate",
+
+            primaryCauses: [
+              "Enclosing damp grain",
+              "Storing warm grain",
+              "Inadequate airflow",
+              "High biological activity",
+              "Deep compacted piles",
+              "Moist chaff retained with grain",
+              "Temperature-driven moisture migration"
+            ],
+
+            warningSigns: [
+              "Sweet-sour odor",
+              "Alcohol-like odor",
+              "Warm or hot grain",
+              "Condensation",
+              "Wet clumping",
+              "Caking",
+              "Rapid quality decline"
+            ],
+
+            response:
+              "Remove the material from flock access immediately. Grain showing heating, fermentation, persistent dampness, or abnormal odor should be discarded when feed safety cannot be confidently established."
+          },
+
+          {
+            risk:
+              "Insect infestation",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Existing field insects",
+              "Warm storage",
+              "Open or damaged containers",
+              "Old grain residue",
+              "Poor sanitation",
+              "Long storage",
+              "Cracked or damaged grain",
+              "Failure to inspect inventory"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Excess dust",
+              "Hollow or damaged kernels",
+              "Unusual grain movement",
+              "Heating",
+              "Rapid weight loss from stored grain"
+            ],
+
+            response:
+              "Separate the affected batch and evaluate its overall condition. Material with extensive insect damage, webbing, heating, moisture, mold, abnormal odor, or contamination should be discarded."
+          },
+
+          {
+            risk:
+              "Sprouting during storage",
+
+            likelihood:
+              "low-to-moderate",
+
+            primaryCauses: [
+              "Grain harvested too wet",
+              "Rain before harvest",
+              "Condensation",
+              "Water leaks",
+              "Persistent high humidity",
+              "Improperly sealed warm grain"
+            ],
+
+            warningSigns: [
+              "Emerging roots or shoots",
+              "Swollen kernels",
+              "Clumping",
+              "Dampness",
+              "Heating",
+              "Sweet or sour odor"
+            ],
+
+            response:
+              "Remove sprouted stored grain from flock access when moisture exposure, heating, mold, or deterioration is present. Correct the storage moisture source before placing a new batch into storage."
+          },
+
+          {
+            risk:
+              "Fresh-forage deterioration",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Leaving cut forage in thick piles",
+              "Warm humid conditions",
+              "Rain exposure",
+              "Contact with wet litter",
+              "Manure contamination",
+              "Delayed feeding",
+              "Poor airflow"
+            ],
+
+            warningSigns: [
+              "Wilting combined with heating",
+              "Sour odor",
+              "Slime",
+              "Darkened tissue",
+              "Visible mold",
+              "Wet clumping",
+              "Bird refusal"
+            ],
+
+            response:
+              "Remove deteriorating forage promptly. Feed only clean fresh cut material in quantities the flock can consume before it becomes trampled, soiled, heated, or spoiled."
+          }
+        ],
+
+        contaminationRisks: [
+          {
+            contaminant:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Bright artificial coloring",
+              "Printed treatment warning",
+              "Commercial seed-treatment label",
+              "Unknown seed remaining from a planting package"
+            ],
+
+            guidance:
+              "Never feed planting seed unless it is clearly documented as untreated and suitable for food or animal-feed use."
+          },
+
+          {
+            contaminant:
+              "Rodent contamination",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Droppings",
+              "Urine staining",
+              "Gnawed containers",
+              "Nesting material",
+              "Hair",
+              "Rodent odor",
+              "Carcasses"
+            ],
+
+            guidance:
+              "Discard contaminated grain or heads. Do not attempt to remove only the visibly affected portion."
+          },
+
+          {
+            contaminant:
+              "Wild-bird contamination",
+
+            riskLevel:
+              "moderate",
+
+            identificationClues: [
+              "Droppings on stored heads or grain",
+              "Feathers",
+              "Nesting material",
+              "Repeated wild-bird access",
+              "Open storage containers"
+            ],
+
+            guidance:
+              "Prevent wild-bird access to stored feed and discard material contaminated with droppings or other biological waste."
+          },
+
+          {
+            contaminant:
+              "Floodwater contamination",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Known floodwater contact",
+              "Mud or silt deposits",
+              "Sewage odor",
+              "Oil sheen",
+              "Unknown debris",
+              "Water staining"
+            ],
+
+            guidance:
+              "Discard Oat forage, heads, or grain exposed to floodwater because sewage, pathogens, petroleum products, pesticides, heavy metals, and other contaminants may be present."
+          },
+
+          {
+            contaminant:
+              "Agricultural chemicals",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Recent pesticide or herbicide application",
+              "Chemical odor",
+              "Visible spray residue",
+              "Unknown preharvest treatment history",
+              "Use of a product without confirmed poultry-feed compatibility"
+            ],
+
+            guidance:
+              "Follow all product labels, harvest restrictions, grazing restrictions, and feeding restrictions. Do not feed treated material when safety cannot be confirmed."
+          },
+
+          {
+            contaminant:
+              "Fuel, solvent, fertilizer, or household chemical exposure",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Chemical odor",
+              "Oil staining",
+              "Storage beside fuels or solvents",
+              "Container previously used for chemicals",
+              "Fertilizer dust or granules",
+              "Unknown spill exposure"
+            ],
+
+            guidance:
+              "Discard contaminated material. Washing or airing it out does not reliably make it safe."
+          },
+
+          {
+            contaminant:
+              "Manure and dirty-litter contamination",
+
+            riskLevel:
+              "moderate",
+
+            identificationClues: [
+              "Grain or forage mixed with feces",
+              "Wet bedding attached to feed",
+              "Strong ammonia odor",
+              "Material trampled into heavily soiled ground"
+            ],
+
+            guidance:
+              "Remove contaminated feed promptly and offer future Oats in clean feeders, protected forage systems, or dry areas."
+          }
+        ],
+
+        sensoryInspectionLimitations:
+          "Visual appearance, odor, temperature, and texture are useful screening tools but cannot prove that Oats are free from mycotoxins, pathogens, pesticide residues, or other invisible contaminants. Grain from a high-risk batch may require professional testing or rejection even when obvious mold is absent.",
+
+        salvageWarning:
+          "Do not attempt to salvage questionable Oats by removing visible mold, washing, redrying, cooking, roasting, fermenting, cracking, grinding, or mixing them with sound feed. These actions cannot reliably remove mycotoxins, chemical residues, rodent contamination, rancidity, or other hazards.",
+
+        spoilageSummary:
+          "The most important Oat spoilage risks are mold and possible mycotoxins, moisture-driven heating or fermentation, rancidity of the fat-containing groat, insect infestation, storage sprouting, and rapid deterioration of cut fresh forage. Thorough drying, cooling, sanitation, protected storage, regular inspection, and prompt rejection of questionable material are essential."
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Allowing Oats to replace a complete poultry ration",
+
+            whyItHappens:
+              "Homegrown grain or forage may appear abundant, wholesome, and nutritionally substantial, leading keepers to assume that it can serve as the flock's primary feed.",
+
+            whyItIsAProblem:
+              "Oats do not provide the complete balance of usable energy, essential amino acids, calcium, vitamins, trace minerals, sodium, and other nutrients required for long-term poultry health and production.",
+
+            correction:
+              "Continue providing an age-appropriate complete poultry ration while using Oat forage, grain, or mature heads only as supplemental feed."
+          },
+
+          {
+            mistake:
+              "Feeding ordinary covered Oats as though they were hull-less Oats",
+
+            whyItHappens:
+              "Research, ingredient labels, and feeding discussions may refer broadly to Oats without clearly distinguishing ordinary covered grain from naked Oats or dehulled groats.",
+
+            whyItIsAProblem:
+              "Ordinary covered Oats retain a substantial fibrous hull and generally provide less usable poultry energy than hull-less Oats or groats.",
+
+            correction:
+              "Identify the actual grain form and apply feeding information appropriate to ordinary covered Oats unless hull-less grain or dehulled groats are specifically documented."
+          },
+
+          {
+            mistake:
+              "Offering unrestricted quantities of Oat grain",
+
+            whyItHappens:
+              "Whole grain is easy to scatter, chickens may consume it readily, and no single serving appears excessive when viewed separately.",
+
+            whyItIsAProblem:
+              "Large grain servings can reduce complete-feed consumption and dilute usable energy, essential amino acids, calcium, vitamins, minerals, and other balanced nutrients. Excessive Oats may also increase hull-fiber and beta-glucan intake.",
+
+            correction:
+              "Offer measured supplemental quantities, observe how much is actually consumed, and protect the flock's intake of complete feed."
+          },
+
+          {
+            mistake:
+              "Ignoring sticky droppings or wet litter after introducing Oats",
+
+            whyItHappens:
+              "Changes in droppings may be attributed only to weather, water consumption, or bedding rather than to increased Oat intake.",
+
+            whyItIsAProblem:
+              "Oat beta-glucans may increase intestinal viscosity and contribute to sticky droppings, wet litter, dirty eggs, reduced nutrient utilization, and worsening coop sanitation.",
+
+            correction:
+              "Reduce or discontinue supplemental Oats, restore complete-feed intake, replace wet bedding, improve ventilation, and seek veterinary guidance if abnormal droppings or illness persist."
+          },
+
+          {
+            mistake:
+              "Assuming cracking or grinding removes Oat nutritional limitations",
+
+            whyItHappens:
+              "Processed grain appears easier to consume and may resemble ingredients used in commercial poultry feed.",
+
+            whyItIsAProblem:
+              "Cracking or grinding changes particle size but does not remove hull fiber, beta-glucans, low calcium, incomplete amino-acid balance, or the need for complete ration formulation.",
+
+            correction:
+              "Use cracked or ground Oats only for accessibility or accurate mixing, and do not treat processing as a substitute for nutritional balancing."
+          },
+
+          {
+            mistake:
+              "Grinding large quantities long before feeding",
+
+            whyItHappens:
+              "Processing one large batch appears more convenient than cracking or grinding smaller amounts as needed.",
+
+            whyItIsAProblem:
+              "Grinding exposes more of the fat-containing groat to oxygen, moisture, heat, insects, and contamination, increasing the risk of rancidity and storage deterioration.",
+
+            correction:
+              "Process only small quantities that can be used promptly and store them in a clean, cool, dry, protected container."
+          },
+
+          {
+            mistake:
+              "Allowing unrestricted access to newly established Oat forage",
+
+            whyItHappens:
+              "The fast-growing seedlings may appear ready for grazing before their roots and crowns are strong enough to withstand scratching and repeated pecking.",
+
+            whyItIsAProblem:
+              "Chickens may uproot seedlings, uncover seed, damage crowns, compact wet soil, overgraze leaves, and destroy the stand before it becomes productive.",
+
+            correction:
+              "Use forage frames, fencing, rotational access, or cut-and-carry feeding until the plants are well rooted and capable of recovering."
+          },
+
+          {
+            mistake:
+              "Expecting full grain production after heavy grazing or repeated cutting",
+
+            whyItHappens:
+              "Oats can regrow after light vegetative harvest, creating the impression that forage removal has little effect on later grain production.",
+
+            whyItIsAProblem:
+              "Heavy or repeated defoliation removes photosynthetic leaf area, weakens plants, may damage growing points, delays maturity, and can greatly reduce or eliminate the grain harvest.",
+
+            correction:
+              "Choose the primary use of each stand. Manage lightly and stop grazing early when grain production is a major goal, or dedicate separate plantings to forage and grain."
+          },
+
+          {
+            mistake:
+              "Storing Oat heads or grain before they are completely dry and cool",
+
+            whyItHappens:
+              "The outer material may feel dry while moisture remains within kernels, panicles, chaff, or the center of a storage container.",
+
+            whyItIsAProblem:
+              "Residual moisture can cause condensation, heating, fermentation, sprouting, mold, insect activity, grain deterioration, and possible mycotoxin risk.",
+
+            correction:
+              "Dry harvested material thoroughly in shallow layers with strong airflow, cool it completely, and inspect internal portions before enclosed storage."
+          },
+
+          {
+            mistake:
+              "Feeding chemically treated planting seed",
+
+            whyItHappens:
+              "Leftover planting seed may appear identical to ordinary feed grain once removed from its original package.",
+
+            whyItIsAProblem:
+              "Planting seed may carry fungicides, insecticides, polymers, colorants, or other chemical treatments not approved for animal consumption.",
+
+            correction:
+              "Feed only Oats clearly documented as untreated and suitable for food or animal-feed use."
+          },
+
+          {
+            mistake:
+              "Feeding moldy, musty, heated, rancid, or contaminated Oats",
+
+            whyItHappens:
+              "Keepers may attempt to avoid waste by removing visibly damaged material, washing grain, redrying it, or blending it with sound feed.",
+
+            whyItIsAProblem:
+              "Visible deterioration may extend beyond the affected kernels, and household processing cannot reliably remove mycotoxins, rancidity, chemical residues, pathogens, or rodent contamination.",
+
+            correction:
+              "Discard questionable forage, grain, and heads completely rather than attempting to salvage them."
+          },
+
+          {
+            mistake:
+              "Treating sprouted Oats or hydroponic Oat forage as newly created feed",
+
+            whyItHappens:
+              "The large increase in fresh weight and volume after germination may appear to represent an equivalent increase in nutritional feed yield.",
+
+            whyItIsAProblem:
+              "Most of the fresh-weight increase comes from absorbed water. Sprouting does not create additional feed dry matter and may create mold or sanitation risks when poorly managed.",
+
+            correction:
+              "Evaluate sprouted Oats by dry-matter contribution, maintain strict sanitation, and continue using them only as supplemental forage or enrichment."
+          },
+
+          {
+            mistake:
+              "Offering only one Oat head or one small forage station to the entire flock",
+
+            whyItHappens:
+              "A single enrichment item appears sufficient because all birds can see and approach it.",
+
+            whyItIsAProblem:
+              "Dominant chickens may monopolize access while subordinate birds are excluded, crowded, pecked, or unable to consume a fair portion.",
+
+            correction:
+              "Provide several widely separated heads, trays, or forage-access points so subordinate birds can participate."
+          }
+        ],
+
+        mistakeSummary:
+          "The most serious Oat-feeding mistakes come from treating Oats as complete feed, confusing ordinary covered Oats with hull-less products, ignoring hull fiber and beta-glucans, allowing uncontrolled forage access, and storing or feeding material of questionable quality."
+      },
+
+      troubleshooting: {
+        flockIgnoresWholeSeeds: {
+          likelyCause:
+            "The flock may be unfamiliar with whole Oats, may prefer other feeds, may find the fibrous covered kernels less appealing, or may have access to more desirable food.",
+
+          possibleCauses: [
+            "The grain is newly introduced",
+            "The flock strongly prefers complete feed or another supplement",
+            "Ordinary covered kernels are fibrous or difficult for some birds to handle",
+            "The grain is lightweight, poorly filled, weather damaged, stale, insect damaged, moldy, or rancid",
+            "Young birds are not developmentally suited to whole grain",
+            "Appropriate insoluble grit is unavailable",
+            "The birds are already satiated"
+          ],
+
+          recommendedActions: [
+            "Inspect the grain carefully for mold, mustiness, rancidity, insects, heating, moisture, or poor kernel development.",
+            "Discard the batch when quality is questionable.",
+            "Introduce only a small amount beside the normal complete ration.",
+            "Allow established adult birds time to investigate without withholding complete feed.",
+            "Confirm access to appropriately sized insoluble grit when adequate natural grit is absent.",
+            "Try a small freshly cracked portion when accessibility rather than grain quality appears to be the problem.",
+            "Do not force consumption by removing complete feed."
+          ],
+
+          whenToStopFeeding:
+            "Stop feeding the batch if birds consistently refuse it and the grain has an abnormal odor, visible deterioration, moisture damage, insects, heating, or uncertain treatment history."
+        },
+
+        flockIgnoresWholeHead: {
+          likelyCause:
+            "The mature Oat head may be unfamiliar, may contain poorly filled grain, may be difficult to access, or may have deteriorated during harvest or storage.",
+
+          possibleCauses: [
+            "The flock has never encountered intact Oat panicles",
+            "The heads were harvested before grain maturity",
+            "Kernels are lightweight or poorly filled",
+            "The heads are positioned too high, too low, or in an unstable holder",
+            "The panicles contain excessive coarse stems, awns, or chaff",
+            "The heads are damp, stale, musty, moldy, insect damaged, or contaminated",
+            "The flock has access to more desirable supplements"
+          ],
+
+          recommendedActions: [
+            "Inspect the heads internally and externally before offering them again.",
+            "Discard heads showing mold, mustiness, dampness, insects, heating, or abnormal discoloration.",
+            "Place the head at a comfortable pecking height in a stable holder.",
+            "Open or bend a small portion of the panicle to expose several grains.",
+            "Offer several heads at separate locations.",
+            "Allow time for investigation while keeping complete feed available.",
+            "Do not force birds to consume questionable heads."
+          ],
+
+          whenToStopFeeding:
+            "Remove and discard the head if it becomes wet, moldy, heavily soiled, rancid, insect infested, or persistently ignored because of suspected poor quality."
+        },
+
+        dominantBirdsMonopolizeFeed: {
+          likelyCause:
+            "Too few feeding locations allow higher-ranking chickens to control access to whole heads, forage trays, or loose supplemental grain.",
+
+          possibleCauses: [
+            "Only one whole head is available",
+            "Only one forage tray or frame opening is accessible",
+            "Feeding stations are positioned too close together",
+            "The enrichment item is placed in a confined corner",
+            "The flock has a strong social hierarchy",
+            "The supplemental feed is offered in an unusually desirable form"
+          ],
+
+          recommendedActions: [
+            "Provide several Oat heads or feeding stations at the same time.",
+            "Separate stations far enough that one bird cannot guard all of them.",
+            "Use long forage-frame openings or several protected trays.",
+            "Scatter measured grain across a broad clean dry area only when waste and contamination can be controlled.",
+            "Observe subordinate birds to confirm that they receive access.",
+            "Remove or reposition enrichment items that create trapping or crowding points."
+          ],
+
+          whenToIntervene:
+            "Intervene when subordinate birds are repeatedly excluded, chased, injured, losing condition, or unable to reach complete feed and water."
+        },
+
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "The flock is consuming too much supplemental Oat forage, grain, or whole-head material and is reducing its intake of nutritionally complete feed.",
+
+          possibleCauses: [
+            "Oats are available free choice",
+            "Supplemental portions are too large",
+            "Several supplemental feeds are being offered together",
+            "Whole heads remain available throughout the day",
+            "Fresh forage is being supplied in excessive quantities",
+            "Complete feed is stale, damp, inaccessible, or less palatable",
+            "Dominant birds are limiting access to the complete feeder"
+          ],
+
+          recommendedActions: [
+            "Reduce or temporarily discontinue supplemental Oats.",
+            "Measure the complete feed offered and remaining.",
+            "Inspect the complete ration for freshness, moisture, contamination, and correct storage.",
+            "Provide adequate feeder space for all birds.",
+            "Offer Oats only after the flock has consumed an appropriate amount of complete feed.",
+            "Monitor body condition, egg production, eggshell quality, droppings, litter moisture, and flock behavior.",
+            "Seek professional nutrition guidance when Oats are intended as a meaningful ration ingredient."
+          ],
+
+          whenToSeekHelp:
+            "Seek poultry-veterinary or qualified nutrition guidance if reduced feed intake continues, birds lose weight, egg production declines, shell quality worsens, or other signs of illness appear."
+        },
+
+        looseDroppingsAfterIntroduction: {
+          likelyCause:
+            "The flock may have received too much Oat grain or fresh forage too quickly, and beta-glucans, hull fiber, increased moisture intake, or complete-feed displacement may be affecting digestion.",
+
+          possibleCauses: [
+            "Rapid dietary change",
+            "Excessive Oat grain intake",
+            "Large quantities of high-moisture fresh forage",
+            "Beta-glucan-related intestinal viscosity",
+            "Excessive hull fiber",
+            "Spoiled, moldy, contaminated, or rancid Oats",
+            "Unrelated infection, parasites, heat stress, or illness"
+          ],
+
+          recommendedActions: [
+            "Remove supplemental Oats temporarily.",
+            "Restore unrestricted access to fresh complete feed and clean water.",
+            "Inspect all remaining grain, forage, and heads for spoilage or contamination.",
+            "Replace wet or heavily soiled litter.",
+            "Reintroduce only a much smaller amount after droppings return to normal.",
+            "Monitor the entire flock for lethargy, reduced appetite, weight loss, abnormal color, blood, or persistent diarrhea."
+          ],
+
+          whenToSeekVeterinaryCare:
+            "Seek prompt poultry-veterinary care when abnormal droppings persist, multiple birds are affected, blood is present, birds become weak or dehydrated, feed intake declines, or illness is suspected."
+        },
+
+        storedSeedDevelopsCondensation: {
+          likelyCause:
+            "The Oats were stored before they were fully dried or cooled, or changing temperatures caused moisture to migrate and collect inside the container.",
+
+          possibleCauses: [
+            "Grain was sealed while warm",
+            "Internal kernel moisture remained too high",
+            "Mature heads were packed too deeply",
+            "Chaff retained moisture",
+            "The container experiences large temperature fluctuations",
+            "The storage area is humid",
+            "Water entered through a roof, wall, floor, or damaged container"
+          ],
+
+          recommendedActions: [
+            "Remove the material from enclosed storage immediately.",
+            "Spread it in a shallow layer under cover with strong airflow.",
+            "Inspect for heating, mold, sprouting, sour odors, discoloration, and insects.",
+            "Discard material showing deterioration or uncertain safety.",
+            "Clean and dry the storage container.",
+            "Correct the temperature or moisture source before storing another batch.",
+            "Do not reseal grain until it is thoroughly dry and completely cool."
+          ],
+
+          whenToDiscard:
+            "Discard the batch when condensation is accompanied by mold, heating, fermentation odor, caking, sprouting, severe insect activity, or uncertain internal quality."
+        },
+
+        storedSeedSmellsUnusual: {
+          likelyCause:
+            "The grain may be moldy, fermenting, heated, chemically contaminated, or rancid.",
+
+          possibleCauses: [
+            "Insufficient drying",
+            "Moisture migration or condensation",
+            "Fungal growth",
+            "Storage fermentation",
+            "Oxidation of Oat fat",
+            "Chemical exposure",
+            "Rodent contamination",
+            "Contaminated storage containers",
+            "Long storage under warm conditions"
+          ],
+
+          recommendedActions: [
+            "Do not feed the grain while investigating the odor.",
+            "Inspect the entire batch rather than only the surface.",
+            "Check for warmth, moisture, clumping, mold, insects, rodent evidence, and chemical exposure.",
+            "Compare the odor with a known sound batch only as a screening measure.",
+            "Discard material with musty, sour, paint-like, soapy, chemical, rodent, or otherwise abnormal odors.",
+            "Clean and inspect the storage area before adding new grain."
+          ],
+
+          whenToDiscard:
+            "Discard Oats whenever the odor is abnormal and the cause cannot be confidently shown to be harmless."
+        },
+
+        storedSeedContainsInsects: {
+          likelyCause:
+            "Insects entered from the field, survived in old grain residue, or gained access through an inadequately protected storage container.",
+
+          possibleCauses: [
+            "Warm storage conditions",
+            "Long storage duration",
+            "Existing infestation in the harvested grain",
+            "Cracked or damaged kernels",
+            "Unclean containers",
+            "Open lids or damaged packaging",
+            "Failure to rotate inventory",
+            "Infested grain stored nearby"
+          ],
+
+          recommendedActions: [
+            "Isolate the affected batch from other feed.",
+            "Inspect for larvae, webbing, dust, heating, moisture, mold, and kernel damage.",
+            "Discard heavily infested, heated, moldy, damp, or foul-smelling material.",
+            "Empty and thoroughly clean the storage area and containers.",
+            "Remove old grain residue from cracks and corners.",
+            "Improve container sealing and inventory rotation.",
+            "Inspect nearby feed for spread of the infestation."
+          ],
+
+          whenToDiscard:
+            "Discard the batch when insect activity is extensive or accompanied by webbing, heating, moisture, mold, severe kernel damage, abnormal odor, or contamination."
+        },
+
+        wholeHeadsDevelopMold: {
+          likelyCause:
+            "The Oat heads retained internal moisture, were stored too densely, or were exposed to rain, humidity, condensation, or poor airflow.",
+
+          possibleCauses: [
+            "Harvest before adequate maturity or dry-down",
+            "Rain or heavy dew after harvest",
+            "Heads bundled or stacked too tightly",
+            "Chaff trapping moisture",
+            "Storage against a damp wall or floor",
+            "Poor ventilation",
+            "Leaking roof",
+            "Temperature-driven condensation",
+            "Disease present before harvest"
+          ],
+
+          recommendedActions: [
+            "Remove moldy heads from flock access immediately.",
+            "Inspect surrounding heads because visible mold may not be isolated.",
+            "Discard affected and suspicious material rather than trimming away visible growth.",
+            "Dry future heads in shallow layers or suspended arrangements with airflow on all sides.",
+            "Turn or rearrange heads during drying.",
+            "Store only after stems, panicles, chaff, and kernels are thoroughly dry.",
+            "Continue regular inspection throughout storage."
+          ],
+
+          whenToDiscard:
+            "Discard any head showing visible mold, musty odor, soft decay, heating, damp internal material, suspicious discoloration, or uncertain safety."
+        },
+
+        grainPassesThroughDroppings: {
+          likelyCause:
+            "Whole Oat kernels may be escaping adequate grinding in the gizzard, or empty hulls may be mistaken for undigested whole grain.",
+
+          possibleCauses: [
+            "Insufficient access to appropriately sized insoluble grit",
+            "Young or compromised birds are receiving whole grain",
+            "The kernels are unusually hard",
+            "Birds are swallowing grain rapidly",
+            "Digestive or gizzard dysfunction",
+            "Visible material is an empty fibrous hull rather than an intact grain",
+            "Excessive whole-grain feeding"
+          ],
+
+          recommendedActions: [
+            "Examine the material carefully to distinguish empty hulls from intact kernels.",
+            "Confirm that established adult birds have access to appropriately sized insoluble grit when natural grit is inadequate.",
+            "Reduce the amount of whole Oats offered.",
+            "Try a small quantity of freshly cracked grain.",
+            "Keep complete feed continuously available.",
+            "Monitor body condition, appetite, droppings, and production.",
+            "Seek veterinary evaluation if intact grain continues passing or other digestive signs develop."
+          ],
+
+          whenToSeekVeterinaryCare:
+            "Seek poultry-veterinary care when repeated passage of intact grain occurs with weight loss, reduced appetite, crop abnormalities, weakness, diarrhea, or declining production."
+        }
+      },
+
+      faq: [
+        {
+          question:
+            "Can chickens eat Oats?",
+
+          answer:
+            "Yes. Established adult chickens can safely eat clean young Oat forage, mature whole grain, cracked grain, coarsely ground grain, and mature Oat heads as supplemental feeds. Oats should supplement rather than replace a complete poultry ration."
+        },
+
+        {
+          question:
+            "Can chickens eat whole Oats?",
+
+          answer:
+            "Yes. Healthy established adult chickens can generally consume whole mature Oat grain when it is introduced gradually and appropriate insoluble grit is available whenever adequate natural grit is absent."
+        },
+
+        {
+          question:
+            "Can chickens eat Oat heads?",
+
+          answer:
+            "Yes. Mature whole Oat heads provide excellent behavioral enrichment while allowing chickens to remove grain naturally. Heads should be harvested after full maturity, dried thoroughly, and discarded if they become moldy, damp, insect infested, rancid, or otherwise questionable."
+        },
+
+        {
+          question:
+            "Can chickens eat fresh Oat grass?",
+
+          answer:
+            "Yes. Young healthy Oat forage can be offered through protected forage frames, controlled rotational grazing, or cut-and-carry feeding. New stands should be protected because unrestricted access may allow chickens to uproot or destroy the crop."
+        },
+
+        {
+          question:
+            "Can chickens eat rolled Oats?",
+
+          answer:
+            "Plain rolled Oats differ from ordinary whole covered Oats because processing changes particle size and physical characteristics. Rolled Oats can be fed as an occasional supplement, but research concerning rolled products should not automatically be applied to whole grain or mature Oat heads."
+        },
+
+        {
+          question:
+            "Are ordinary covered Oats the same as hull-less Oats?",
+
+          answer:
+            "No. Ordinary covered Oats retain a substantial fibrous hull that reduces usable poultry energy and increases fiber. Hull-less or naked Oats contain much less hull material and should not be treated as nutritionally identical."
+        },
+
+        {
+          question:
+            "Can chicks eat Oats?",
+
+          answer:
+            "Ordinary whole covered Oats are not recommended as a routine backyard supplement for young chicks. Chicks should rely on an age-appropriate complete starter ration. Professionally formulated chick feeds containing processed Oat ingredients represent a different situation."
+        },
+
+        {
+          question:
+            "Do chickens need grit to eat whole Oats?",
+
+          answer:
+            "Adult chickens consuming whole Oat grain should have access to appropriately sized insoluble grit whenever they do not obtain adequate natural grit from their environment."
+        },
+
+        {
+          question:
+            "Should Oats be cracked before feeding?",
+
+          answer:
+            "Healthy adult chickens can generally consume whole mature Oats, so cracking is optional. Cracking improves access for some birds but shortens storage life because more of the grain is exposed to oxygen, moisture, insects, and deterioration."
+        },
+
+        {
+          question:
+            "Do Oats need to be cooked before feeding chickens?",
+
+          answer:
+            "No. Clean mature Oats do not require cooking, boiling, roasting, fermentation, or routine heat treatment before supplemental feeding."
+        },
+
+        {
+          question:
+            "Are Oats a complete chicken feed?",
+
+          answer:
+            "No. Oats do not provide the complete balance of usable energy, essential amino acids, calcium, vitamins, minerals, and other nutrients required by poultry. They should remain a supplement unless incorporated into a professionally formulated complete ration."
+        },
+
+        {
+          question:
+            "Why do Oats contain less usable energy than Corn?",
+
+          answer:
+            "Ordinary covered Oats retain a substantial fibrous hull that poultry digest poorly. The hull lowers nutrient density and metabolizable energy compared with Corn, Grain Sorghum, hull-less Oats, or dehulled groats."
+        },
+
+        {
+          question:
+            "What are beta-glucans, and why do they matter?",
+
+          answer:
+            "Beta-glucans are soluble fibers naturally present in Oats. Excessive intake may increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings, wet litter, dirty eggs, or reduced performance."
+        },
+
+        {
+          question:
+            "Can Oats replace Corn in chicken feed?",
+
+          answer:
+            "Oats may replace part of the cereal-grain component in a professionally formulated poultry ration, but they generally provide less usable poultry energy than Corn. Ingredient substitutions require complete nutritional balancing rather than simple volume-for-volume replacement."
+        },
+
+        {
+          question:
+            "Can Oats replace complete poultry feed?",
+
+          answer:
+            "No. Oats should never replace a nutritionally complete poultry ration for long-term feeding."
+        },
+
+        {
+          question:
+            "Are Oats high in protein?",
+
+          answer:
+            "Oats provide moderate protein but are not considered a high-protein poultry feed. Their amino-acid balance remains incomplete and cannot independently satisfy poultry nutritional requirements."
+        },
+
+        {
+          question:
+            "Are Oats good for laying hens?",
+
+          answer:
+            "Yes, as a measured supplement. Oats can provide forage, enrichment, and moderate supplemental energy, but laying hens still require complete layer feed and an appropriate calcium program."
+        },
+
+        {
+          question:
+            "Will feeding Oats increase egg production?",
+
+          answer:
+            "No single feed crop guarantees increased egg production. Egg output depends on genetics, age, lighting, health, water, stress, environment, and complete balanced nutrition. Excessive Oat intake may actually reduce production if birds consume less complete feed."
+        },
+
+        {
+          question:
+            "Can chickens eat Oats every day?",
+
+          answer:
+            "Measured supplemental amounts may fit many backyard feeding programs, but Oats should not become the dominant feed source. Complete-feed intake should always remain the priority."
+        },
+
+        {
+          question:
+            "How much Oats should I feed my chickens?",
+
+          answer:
+            "There is no universal amount appropriate for every flock. Appropriate supplementation depends on flock size, age, activity level, body condition, climate, forage availability, grain type, complete ration, and overall management."
+        },
+
+        {
+          question:
+            "Can chickens eat moldy Oats if the damaged grain is removed?",
+
+          answer:
+            "No. Mold, possible mycotoxins, and other contamination may extend beyond visibly damaged kernels. Questionable grain should be discarded rather than cleaned, washed, cooked, dried, or mixed with sound grain."
+        },
+
+        {
+          question:
+            "Can I feed leftover Oat planting seed?",
+
+          answer:
+            "Only when it is clearly documented as untreated and suitable for food or feed. Seed treated with fungicides, insecticides, polymers, colorants, or other planting chemicals must never be fed."
+        },
+
+        {
+          question:
+            "Why are my chickens refusing Oats?",
+
+          answer:
+            "Possible reasons include unfamiliarity, poor grain quality, stale or rancid grain, mold, insects, poor kernel development, excessive hull fiber, lack of grit, or the availability of more desirable feed. Complete feed should never be removed simply to force Oat consumption."
+        },
+
+        {
+          question:
+            "How should Oats be stored?",
+
+          answer:
+            "Store only thoroughly dried, cooled, clean, sound grain or mature heads in a cool, dry, dark, rodent-resistant location protected from moisture, condensation, insects, wild birds, chemicals, and large temperature changes. Inspect stored material regularly."
+        }
+      ],
+
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Avena sativa",
+
+          family:
+            "Poaceae"
+        },
+
+        researchNotes: [
+          "Ordinary covered Oats provide moderate supplemental energy but generally less metabolizable poultry energy than Corn or Grain Sorghum because of their attached hull.",
+          "The fibrous hull substantially increases dietary fiber while reducing usable nutrient density on an equal-weight basis.",
+          "Beta-glucans are naturally occurring soluble fibers that may increase intestinal viscosity and reduce nutrient utilization when excessive quantities are fed.",
+          "Hull-less or naked Oats differ materially from ordinary covered Oats and should not be considered nutritionally identical.",
+          "Dehulled Oat groats differ substantially from whole covered grain because removal of the hull changes fiber concentration, energy density, and nutrient availability.",
+          "Young vegetative Oat forage and mature grain represent fundamentally different feeding products with different moisture content, nutritional density, storage characteristics, and management goals.",
+          "Fresh-forage production and mature grain production compete when the same stand is repeatedly grazed or harvested.",
+          "Grinding and cracking improve accessibility but do not eliminate hull fiber, beta-glucans, low calcium, or incomplete amino-acid balance.",
+          "Ordinary Oats remain low in calcium and cannot independently support eggshell production.",
+          "Commercial inclusion rates published for formulated poultry feeds should not be copied directly into backyard supplemental-feeding recommendations.",
+          "Storage stability depends heavily on moisture content, drying quality, processing level, sanitation, temperature, insects, rodents, and grain condition.",
+          "Whole grain generally stores more successfully than cracked, ground, rolled, or dehulled Oat products."
+        ],
+
+        plannerConsiderations: [
+          "Treat ordinary covered Oats as the planner baseline unless another product is explicitly identified.",
+          "Do not score hull-less Oats and ordinary covered Oats identically.",
+          "Give strong positive weight to cool-season forage production, whole-head enrichment, and cover-crop value.",
+          "Reduce energy scores compared with Corn and Grain Sorghum because of hull fiber.",
+          "Apply penalties where prolonged heat or drought reduce Oat performance.",
+          "Reward protected-forage systems that reduce stand destruction.",
+          "Reduce suitability when users cannot dry and store grain properly.",
+          "Whole-head feeding should receive stronger enrichment scores but lower intake-precision scores than loose grain.",
+          "Fresh forage should receive higher enrichment scores than direct feed-cost-reduction scores.",
+          "Do not recommend Oats as a complete-feed replacement or primary calcium source.",
+          "Maintain separate planner treatment for forage production and grain production where heavy grazing reduces later grain harvest.",
+          "Treat cracked and ground grain as having shorter storage life than whole grain."
+        ],
+
+        futureResearchTopics: [
+          "Backyard-scale grain yield from ordinary covered Oats under small-plot production",
+          "Comparison of ordinary covered Oats and hull-less Oats under backyard conditions",
+          "Whole-head enrichment duration by flock size and cultivar",
+          "Consumption rates of mature Oat heads by backyard laying hens",
+          "Influence of awned versus awnless cultivars during whole-head feeding",
+          "Practical threshing efficiency for small homesteads",
+          "Long-term storage characteristics of mature Oat heads",
+          "Best protected-forage-frame designs for Oats",
+          "Comparative economics of forage versus grain production",
+          "Small-scale drying methods suitable for humid climates",
+          "Regional disease effects on backyard Oat quality",
+          "Comparative land-use efficiency among Oats, Wheat, Barley, Rye, Proso Millet, and Grain Sorghum on approximately 100-square-foot plantings",
+          "Influence of different grit availability on whole-grain utilization",
+          "Volunteer Oat regrowth after seasonal grazing",
+          "Relationships between beta-glucans and backyard flock digestive performance"
+        ]
+      },
+
+      expertSummary: {
+        oneSentence:
+          "Oats are one of the most versatile cool-season supplemental crops for backyard chickens because they combine fresh forage, moderate-energy grain, whole-head enrichment, winter storage, and valuable cover-crop benefits, but they should never replace a nutritionally complete poultry ration.",
+
+        oneParagraph:
+          "Ordinary covered Oats offer exceptional versatility for homesteads by producing both cool-season forage and mature grain from a single annual planting. Young vegetative growth provides valuable fresh greens and enrichment, while mature whole heads encourage natural pecking behavior with relatively little processing. Mature grain supplies moderate supplemental energy, starch, protein, and useful minerals, although the attached hull reduces usable poultry energy and increases fiber compared with Corn, Grain Sorghum, hull-less Oats, or dehulled groats. Beta-glucans, low calcium, incomplete amino-acid balance, and lower metabolizable energy prevent Oats from serving as a complete poultry feed. Their greatest practical value comes from integrating forage, enrichment, grain storage, cover-crop benefits, and seasonal diversity within a balanced feeding program.",
+
+        recommendation:
+          "Highly recommended as a cool-season supplemental forage, enrichment, and moderate-energy grain crop when managed correctly and fed alongside a complete poultry ration.",
+
+        recommendationReasoning:
+          "Oats combine rapid cool-season establishment, forage production, mature grain, whole-head enrichment, winter storage potential, soil-building value, and relatively simple production. Their limitations—substantial hull fiber, beta-glucans, incomplete amino-acid balance, low calcium, moderate energy value, and sensitivity to prolonged heat and drought—are manageable through appropriate crop management, measured supplementation, proper drying and storage, and continued reliance on nutritionally complete poultry feed.",
+
+        idealUseCase:
+          "A backyard or homestead seeking fresh cool-season forage, moderate supplemental grain, whole-head enrichment, winter feed storage, and seasonal cover-crop benefits while maintaining complete commercial poultry feed as the nutritional foundation.",
+
+        notRecommendedAs:
+          "A complete poultry feed, a primary protein source, a primary calcium source, an unrestricted free-choice grain, a routine young-chick supplement, or a substitute for professionally balanced poultry nutrition."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Young vegetative leaves and shoots",
         "Tender green oat forage",
