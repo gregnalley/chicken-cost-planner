@@ -132176,7 +132176,3379 @@ feedingReference: {
     summary:
       "Amaranth is a warm-season broadleaf annual grown for small protein-rich grain, edible young leaves, ornamental seed heads, pollinator activity, and household food. Cultivated grain amaranths can tolerate heat and temporary dry conditions after establishment, produce substantial biomass, and provide several distinct poultry-supplement pathways. Mature grain may contribute energy, protein, fat, minerals, and enrichment, while young tender leaves may provide limited seasonal greens. Raw grain, heat-treated grain, ground grain, leafy material, and whole seed heads should be treated as separate products because their nutritional characteristics, processing requirements, storage risks, and safe poultry uses differ. Amaranth should remain supplemental to a complete poultry ration, and controlled poultry-study inclusion levels should not be copied directly into an unbalanced backyard feed mixture.",
 
-    chickenUse: {
+    
+    ///////////////////////////
+//
+//  Amaranth - What can chickens eat?
+//
+//////////////////////////
+
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Amaranth?",
+
+        answerLabel:
+          "Yes — mature Amaranth grain, tender young leaves, and mature seed heads can be used as supplemental feeds when correctly identified and managed.",
+
+        quickAnswer:
+          "Chickens can eat clean, mature Amaranth grain, appropriately processed grain, tender young leaves, and mature seed heads from positively identified cultivated food-grade Amaranth. The grain contributes energy, moderate fat, comparatively high protein, and more lysine than many common cereal grains. Tender leaves can provide limited seasonal greens, while dried mature seed heads offer natural pecking enrichment. Because raw grain contains variable antinutritional compounds and leafy tissues may accumulate nitrates or oxalates, Amaranth should be fed carefully and should never replace a nutritionally complete poultry ration.",
+
+        detailedAnswer:
+          "Amaranth is a multipurpose warm-season crop that can provide several distinct supplemental feed products for established adult chickens. Its mature grain contains substantial starch, moderate fat, useful minerals, and generally more crude protein and lysine than many conventional cereal grains. Tender young leaves may provide fresh seasonal greenery, moisture, pigments, vitamins, and minerals, while fully mature dried seed heads can encourage natural pecking and foraging behavior. These feed forms must not be treated as nutritionally identical. Raw grain may contain phytate, tannins, oxalates, saponins, protease inhibitors, and other compounds that can reduce nutrient utilization. Leaf and stem tissues may accumulate nitrates or oxalates, particularly under excessive nitrogen fertility, drought, interrupted growth, or other stressful conditions. Mature foliage also becomes increasingly fibrous. Amaranth should therefore be used as a measured supplement, occasional green feed, enrichment item, or properly evaluated ration ingredient rather than as an unrestricted staple food.",
+
+        primaryFeedingRole:
+          "Multipurpose supplemental grain, limited leafy green, and whole-seed-head enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Warm-season supplemental grain",
+          "Comparatively protein-rich alternative to conventional cereal grains",
+          "Supplemental lysine contribution",
+          "Tender seasonal leafy green",
+          "Stored winter grain",
+          "Natural pecking enrichment",
+          "Seasonal garden-to-flock feed",
+          "Household-food and poultry-feed dual-use crop",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Recommended as a carefully managed supplemental crop for established adult chickens when cultivated food-grade Amaranth is positively identified and the selected grain, foliage, or seed-head form is harvested, prepared, stored, and fed appropriately.",
+
+        recommendationStrength:
+          "moderate-to-high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-amaranth-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe-with-cautions",
+
+        trafficLightRating:
+          "yellow-green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "form-dependent",
+
+        primaryProductType:
+          "mature-pseudocereal-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "moderate-to-high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          4,
+
+        adultChickenSuitabilityScore:
+          4,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          3,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          4,
+
+        proteinValueScore:
+          4,
+
+        enrichmentValueScore:
+          4,
+
+        winterValueScore:
+          4,
+
+        storageValueScore:
+          4,
+
+        preparationSimplicityScore:
+          2,
+
+        portionControlEaseScore:
+          3,
+
+        beginnerFriendlinessScore:
+          3,
+
+        confinedFlockValueScore:
+          4,
+
+        pasturedFlockValueScore:
+          3,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Amaranth's practical value as a supplemental backyard-chicken crop rather than as a complete ration.",
+          "The overall score reflects useful grain protein, lysine, energy, storage, leafy-feed, and enrichment value.",
+          "The feeding-safety score is reduced because raw grain contains variable antinutritional compounds and leafy tissues may accumulate nitrates or oxalates.",
+          "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration.",
+          "The preparation-simplicity score is lower than Sunflower because cleaned grain may require careful drying, threshing, winnowing, screening, and optional heat processing.",
+          "Whole mature seed heads provide useful enrichment but make exact consumption difficult to measure.",
+          "Clean loose grain is easier to measure but requires more harvest and postharvest processing.",
+          "Direct garden access is rated low because birds may damage plants, consume immature or stressed foliage, interfere with grain production, and make intake difficult to control."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          "limited-and-form-dependent",
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean, mature grain, tender young leaves, and mature seed heads from positively identified cultivated food-grade Amaranth can be used as supplemental feeds for established adult chickens. The principal concerns are raw-grain antinutritional compounds, nitrate or oxalate accumulation in leafy tissues, excessive intake that displaces complete feed, coarse mature foliage, chemical contamination, and mold or spoilage caused by inadequate drying or storage.",
+
+        whyModerationIsRequired:
+          "Amaranth contains useful energy, protein, fat, lysine, minerals, and other nutrients, but it is not nutritionally complete. Raw grain may contain phytate, tannins, oxalates, saponins, protease inhibitors, and related compounds that can reduce nutrient utilization. Leaves and stems may contain variable nitrate and oxalate concentrations, particularly under stressful growing conditions. Excessive grain or foliage intake may therefore dilute the complete ration and create avoidable nutritional or safety concerns.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Amaranth grain",
+
+            status:
+              "safe-with-moderation",
+
+            explanation:
+              "Sound, fully mature grain from positively identified cultivated food-grade Amaranth may be offered to established adult chickens in measured supplemental amounts. Raw whole grain should not be provided without restriction."
+          },
+
+          {
+            item:
+              "Appropriately heat-treated mature Amaranth grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Proper heat processing may reduce or alter some raw-grain antinutritional compounds and can improve the grain's practical value when it is used as a more significant ingredient in a balanced ration."
+          },
+
+          {
+            item:
+              "Freshly cracked mature Amaranth grain",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Cracked grain may be used promptly as a supplement or ration ingredient. Cracking increases exposed surface area and reduces storage stability."
+          },
+
+          {
+            item:
+              "Freshly ground mature Amaranth grain",
+
+            status:
+              "safe-with-formulation-and-storage-precautions",
+
+            explanation:
+              "Ground grain may be incorporated into a properly balanced poultry ration. Grinding does not eliminate antinutritional compounds or make an incomplete homemade ration nutritionally complete."
+          },
+
+          {
+            item:
+              "Tender young Amaranth leaves",
+
+            status:
+              "safe-in-limited-amounts",
+
+            explanation:
+              "Young, soft leaves from healthy cultivated plants may be offered as limited seasonal greens. Leaf composition varies with species, cultivar, maturity, soil fertility, moisture, light, and environmental stress."
+          },
+
+          {
+            item:
+              "Tender young shoots and growing tips",
+
+            status:
+              "safe-in-limited-amounts",
+
+            explanation:
+              "Soft shoots and growing tips may be fed similarly to young leaves when they are clean, correctly identified, and free from coarse mature stem tissue."
+          },
+
+          {
+            item:
+              "Fresh mature Amaranth seed heads",
+
+            status:
+              "safe-with-inspection",
+
+            explanation:
+              "A mature seed head containing fully developed, sound grain may be offered soon after harvest when it is clean, free from disease, and not beginning to heat, ferment, or spoil."
+          },
+
+          {
+            item:
+              "Thoroughly dried mature Amaranth seed heads",
+
+            status:
+              "safe",
+
+            explanation:
+              "Properly dried mature seed heads may be offered as pecking enrichment when they remain free from mold, insects, rodents, wild-bird contamination, and abnormal odors."
+          },
+
+          {
+            item:
+              "Plain cooked Amaranth grain",
+
+            status:
+              "safe-in-small-amounts",
+
+            explanation:
+              "Plain cooked grain may be offered occasionally when it contains no salt, sugar, butter, oil, sauces, seasonings, or unsafe ingredients. Moist leftovers must be removed before spoilage begins."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Unidentified wild Amaranthus or pigweed material",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Species identity, nitrate concentration, oxalate concentration, maturity, pesticide exposure, growing-site contamination, and overall feeding suitability may be unknown."
+          },
+
+          {
+            item:
+              "Palmer amaranth, waterhemp, or other unknown weedy Amaranth collected as feed",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Wild or weedy Amaranthus species should not be assumed equivalent to cultivated food-grade grain or vegetable Amaranth."
+          },
+
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, polymers, colorants, or other treatments that are not intended for animal consumption."
+          },
+
+          {
+            item:
+              "Moldy or musty Amaranth grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, damp clumping, abnormal discoloration, or fungal growth indicates unsafe deterioration. Questionable material should be discarded."
+          },
+
+          {
+            item:
+              "Damp, heated, fermenting, or sour grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heating, condensation, fermentation odors, sourness, or persistent dampness indicate unstable storage and possible microbial spoilage."
+          },
+
+          {
+            item:
+              "Moldy or incompletely dried seed heads",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Dense Amaranth seed heads may retain moisture internally even when their outer surfaces appear dry. Moldy or damp heads should be discarded."
+          },
+
+          {
+            item:
+              "Rodent-contaminated grain or seed heads",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Material contaminated by rodent urine, feces, nesting material, or carcasses presents disease and sanitation risks."
+          },
+
+          {
+            item:
+              "Wild-bird-contaminated drying material",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Seed heads or grain contaminated by wild-bird droppings should be discarded rather than cleaned and fed."
+          },
+
+          {
+            item:
+              "Foliage from severely drought-stressed plants",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Drought, interrupted growth, and related stress may increase nitrate accumulation and reduce leafy-feed quality."
+          },
+
+          {
+            item:
+              "Foliage from excessively nitrogen-fertilized plants when nitrate safety is uncertain",
+
+            status:
+              "avoid",
+
+            explanation:
+              "High nitrogen fertility combined with interrupted growth, drought, low light, cold, or other stress can increase nitrate accumulation in leaves and stems."
+          },
+
+          {
+            item:
+              "Large quantities of mature Amaranth foliage",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Older leaves and stems become increasingly fibrous and may contain variable nitrate and oxalate concentrations. Heavy intake can dilute complete feed."
+          },
+
+          {
+            item:
+              "Coarse mature Amaranth stems",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Mature stems are tough, fibrous, bulky, and provide little practical poultry-feed value."
+          },
+
+          {
+            item:
+              "Ornamental Amaranth with an unknown pesticide history",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Ornamental plants may have been treated with chemicals without regard to food or livestock-feed harvest restrictions."
+          },
+
+          {
+            item:
+              "Salted, seasoned, sweetened, or flavored Amaranth products",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Human snack and prepared-food products may contain excessive sodium, oils, sugar, sweeteners, spices, sauces, or other unnecessary ingredients."
+          },
+
+          {
+            item:
+              "Material collected from roadsides, waste sites, drainage areas, or contaminated soil",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Such material may contain pesticide residues, petroleum contaminants, heavy metals, road debris, pathogens, or other unknown hazards."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Unidentified Amaranthus species",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Cultivated grain and vegetable Amaranth should not be confused with every wild or weedy plant in the Amaranthus genus. Species identity, chemical exposure, nitrate accumulation, oxalate concentration, maturity, and contamination history may be unknown."
+          },
+
+          {
+            hazard:
+              "Antinutritional compounds in raw grain",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Raw Amaranth grain may contain phytate, tannins, oxalates, saponins, protease inhibitors, and other compounds that can reduce nutrient digestibility or availability. Concentrations and poultry responses vary among species, cultivars, processing methods, and complete-diet formulations."
+          },
+
+          {
+            hazard:
+              "Nitrate accumulation in leafy material",
+
+            riskLevel:
+              "moderate-to-high-under-risk-conditions",
+
+            explanation:
+              "Amaranth leaves and stems may accumulate nitrates, especially when plants receive excessive nitrogen, experience drought or interrupted growth, or grow under other stressful conditions. Appearance alone cannot confirm nitrate safety."
+          },
+
+          {
+            hazard:
+              "Oxalates in leaves and other plant tissues",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Oxalate concentrations vary among Amaranth species, cultivars, plant parts, maturity stages, and growing conditions. Heavy or repeated intake may interfere with mineral use."
+          },
+
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Amaranth grain, seed heads, or leafy material may reduce consumption of the flock's nutritionally complete ration when offered too freely."
+          },
+
+          {
+            hazard:
+              "Mold and moisture damage",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Tiny grain, dense seed heads, chaff, and retained plant moisture can support mold, heating, fermentation, or spoilage when harvested material is stored before it is thoroughly dry."
+          },
+
+          {
+            hazard:
+              "Chemical treatment or environmental contamination",
+
+            riskLevel:
+              "critical",
+
+            explanation:
+              "Planting seed, roadside plants, ornamental material, and crops exposed to unknown pesticides may contain residues or coatings that are unsuitable for poultry consumption."
+          },
+
+          {
+            hazard:
+              "Excess mature foliage and coarse stems",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "As Amaranth matures, its leaves and stems become increasingly fibrous. Coarse plant material has lower practical feed value and may dilute the nutritional quality of the flock's diet."
+          },
+
+          {
+            hazard:
+              "Inaccurate application of research inclusion rates",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Published poultry studies may use measured Amaranth inclusion levels inside complete experimental diets balanced for energy, amino acids, vitamins, and minerals. Those percentages do not directly establish a safe backyard serving amount."
+          }
+        ],
+
+        emergencyUse:
+          "Amaranth grain can provide short-term supplemental energy and protein, but it is not a nutritionally complete emergency ration. It should be combined with an appropriate complete poultry feed or used only within a ration formulated to meet poultry requirements.",
+
+        veterinaryCaution:
+          "Birds with kidney, liver, metabolic, digestive, mineral-balance, obesity, crop, or other medical concerns may require individualized feeding guidance from a poultry veterinarian. Amaranth should not be used to treat illness, poor growth, weight loss, or reduced egg production."
+      },
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-managed-supplement",
+
+          preferredForms: [
+            "Clean mature whole grain",
+            "Appropriately heat-treated mature grain",
+            "Freshly cracked grain",
+            "Freshly ground grain used promptly",
+            "Tender young leaves",
+            "Tender young shoots",
+            "Fresh mature seed heads",
+            "Thoroughly dried mature seed heads",
+            "Plain cooked grain"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for Amaranth supplementation. Mature birds can utilize measured amounts of grain, tender greens, and whole seed-head enrichment when complete poultry feed remains freely available. Raw grain should remain limited, mature foliage should be avoided, and grain or seed heads should never replace a balanced ration."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Useful supplemental energy",
+            "Comparatively high plant protein",
+            "Good lysine contribution compared with many cereal grains",
+            "Seasonal leafy-green supplementation",
+            "Whole-seed-head enrichment"
+          ],
+
+          limitations: [
+            "Does not provide adequate calcium for eggshell production",
+            "Cannot replace a complete layer ration",
+            "Does not provide a complete amino-acid balance",
+            "Raw grain contains variable antinutritional compounds",
+            "Excessive supplements may reduce complete-feed intake"
+          ],
+
+          guidance:
+            "Laying hens may benefit from carefully managed Amaranth supplementation, but complete layer feed and an appropriate calcium program must remain the nutritional foundation. Grain, leaves, and seed heads should complement—not replace—the primary ration."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets may receive small amounts of appropriately prepared Amaranth after they are firmly established on a complete grower ration. Nutritional dilution during development should be avoided, and whole grain should be introduced gradually with access to suitable grit."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Whole Amaranth grain, leafy greens, and seed heads should not become routine backyard chick feeds because they may dilute complete nutrition and are not equivalent to professionally formulated starter diets.",
+
+          possibleException:
+            "Qualified poultry nutritionists may incorporate processed Amaranth ingredients into professionally formulated chick diets. Those controlled formulations are not equivalent to feeding raw grain, leaves, or seed heads directly.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Need for precise amino-acid balance",
+            "Need for controlled nutrient density",
+            "Variable raw-grain antinutritional compounds",
+            "Potential nitrate and oxalate concerns in leafy material",
+            "Need for age-appropriate particle size",
+            "Need for appropriately sized grit when whole grain is introduced"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Amaranth has been studied as a poultry-feed ingredient, but published inclusion levels assume complete diets have been professionally balanced for energy, amino acids, vitamins, minerals, and overall nutrient density. Backyard keepers should not copy experimental inclusion percentages into otherwise unbalanced homemade feeds."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume the same properly prepared Amaranth products as adult hens. Portion control remains important because unrestricted grain may contribute unnecessary calorie intake and reduce consumption of balanced feed."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive carefully measured Amaranth supplements, but fertility, hatchability, and reproductive performance depend on complete balanced nutrition rather than any individual feed crop."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, overweight, or lower-ranking birds may require smaller supplemental portions. Monitor body condition, complete-feed intake, and the bird's ability to compete for grain or seed-head enrichment."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Amaranth contributes useful supplemental protein and lysine compared with many cereal grains, but feather production requires a complete amino-acid balance. Complete poultry feed remains considerably more important than increasing Amaranth intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Although Amaranth provides useful nutrients, illness can substantially change nutritional requirements. It should not replace veterinary care, hydration support, or a veterinarian-recommended recovery diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature whole grain",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Fully mature, cleaned Amaranth grain is the crop's primary concentrated poultry-feed product. It provides useful energy, moderate fat, comparatively high plant protein, lysine, minerals, and dietary variety. Raw grain should remain a measured supplement unless it has been appropriately processed and incorporated into a balanced ration."
+          },
+
+          {
+            part:
+              "Appropriately heat-treated mature grain",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Proper heat treatment may reduce or alter some raw-grain antinutritional compounds and can improve practical nutrient utilization. Processing effectiveness depends on the method, temperature, duration, cultivar, and final diet."
+          },
+
+          {
+            part:
+              "Tender young leaves",
+
+            suitability:
+              "good-in-limited-amounts",
+
+            explanation:
+              "Young Amaranth leaves may provide seasonal greens, moisture, pigments, vitamins, minerals, and feeding variety. They should be harvested while tender and offered conservatively because nitrate, oxalate, moisture, fiber, and nutrient concentrations vary."
+          },
+
+          {
+            part:
+              "Tender young shoots and growing tips",
+
+            suitability:
+              "good-in-limited-amounts",
+
+            explanation:
+              "Soft young shoots and growing tips may be offered similarly to tender leaves when they are clean, positively identified, and free from coarse mature stem tissue."
+          },
+
+          {
+            part:
+              "Fresh mature seed heads",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Freshly harvested mature seed heads containing fully developed grain may be offered as supervised enrichment when they are clean, sound, dry on the surface, and free from disease or spoilage."
+          },
+
+          {
+            part:
+              "Thoroughly dried mature seed heads",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Properly dried mature heads allow chickens to remove the tiny grain through natural pecking behavior. Whole-head use reduces threshing labor but makes actual consumption and waste more difficult to measure."
+          },
+
+          {
+            part:
+              "Freshly cracked mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Cracking may improve physical access to the small grain and make it easier to combine with other feed ingredients. Cracked grain should be prepared in small quantities because increased surface exposure reduces storage stability."
+          },
+
+          {
+            part:
+              "Freshly ground mature grain",
+
+            suitability:
+              "good-with-formulation-care",
+
+            explanation:
+              "Ground Amaranth can be distributed more uniformly within a properly formulated ration. Grinding does not eliminate antinutritional factors or make an incomplete homemade feed nutritionally balanced."
+          },
+
+          {
+            part:
+              "Plain cooked mature grain",
+
+            suitability:
+              "good-as-an-occasional-supplement",
+
+            explanation:
+              "Plain cooked Amaranth may be offered in small amounts when it contains no salt, sugar, oil, butter, sauces, seasoning, or unsafe ingredients. Moist cooked grain should be used promptly and removed before spoilage begins."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Coarse mature stems",
+
+            reason:
+              "Mature Amaranth stems become tough, woody, fibrous, bulky, and low in practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Large quantities of mature foliage",
+
+            reason:
+              "Older leaves and attached stems become increasingly fibrous and may contain variable nitrate and oxalate concentrations. Heavy feeding can dilute complete-ration intake."
+          },
+
+          {
+            part:
+              "Foliage from severely drought-stressed plants",
+
+            reason:
+              "Drought and interrupted plant growth may increase nitrate accumulation and reduce leafy-feed quality. Visual inspection alone cannot confirm nitrate safety."
+          },
+
+          {
+            part:
+              "Foliage from excessively nitrogen-fertilized plants",
+
+            reason:
+              "High nitrogen availability may increase nitrate accumulation, particularly when plant growth is interrupted by drought, low light, cold, or other stress."
+          },
+
+          {
+            part:
+              "Immature green seed heads",
+
+            reason:
+              "Immature heads contain incompletely developed grain and substantial plant moisture. They provide less practical feed value and are more vulnerable to heating, fermentation, and mold."
+          },
+
+          {
+            part:
+              "Roots",
+
+            reason:
+              "Amaranth roots have no established practical poultry-feed role and may carry soil, manure, stones, chemical residues, or other contaminants."
+          },
+
+          {
+            part:
+              "Unidentified wild pigweed or weedy Amaranthus plants",
+
+            reason:
+              "Species identity, nitrate concentration, oxalate concentration, pesticide exposure, maturity, growing-site contamination, and overall suitability may be unknown."
+          },
+
+          {
+            part:
+              "Ornamental Amaranth from an unknown chemical program",
+
+            reason:
+              "Plants grown for ornamental use may have been treated with pesticides or other chemicals without regard to food or livestock-feed harvest restrictions."
+          },
+
+          {
+            part:
+              "Moldy, fermented, or contaminated plant material",
+
+            reason:
+              "Spoiled or contaminated material remains unsafe regardless of whether the original plant part would otherwise be edible. Cooking, drying, grinding, or blending does not reliably restore safety."
+          }
+        ],
+
+        ediblePartSummary:
+          "Amaranth's primary poultry value comes from its mature grain, tender young leaves, and mature grain-filled seed heads. These products are not nutritionally identical: grain is the most concentrated and storable form, young foliage functions as a limited fresh green, and whole seed heads are best used as enrichment rather than precise ration delivery."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Measured whole mature grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Small supplemental portions for established adult chickens when the grain is clean, fully mature, thoroughly dry, and introduced gradually."
+          },
+
+          {
+            form:
+              "Appropriately heat-treated grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "A controlled feeding form when processing is used to reduce some raw-grain antinutritional concerns before incorporation into a balanced ration."
+          },
+
+          {
+            form:
+              "Tender young leaves",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Limited fresh seasonal greens offered while the foliage remains soft, healthy, clean, and free from suspected nitrate-risk conditions."
+          },
+
+          {
+            form:
+              "Thoroughly dried mature seed heads",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Supervised pecking and foraging enrichment when reducing threshing labor is more important than precise portion measurement."
+          },
+
+          {
+            form:
+              "Freshly cracked grain",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Prompt supplemental feeding or incorporation into a balanced mixture when easier grain access or more even distribution is desired."
+          },
+
+          {
+            form:
+              "Freshly ground grain",
+
+            rating:
+              "good-with-formulation-care",
+
+            bestUse:
+              "Immediate use as a measured ingredient in a properly formulated poultry ration."
+          },
+
+          {
+            form:
+              "Plain cooked grain",
+
+            rating:
+              "acceptable",
+
+            bestUse:
+              "Occasional use of small amounts of plain cooked Amaranth containing no salt, sugar, butter, oil, sauces, or seasoning."
+          }
+        ],
+
+        acceptableForms: [
+          "Clean mature whole grain",
+          "Appropriately heat-treated mature grain",
+          "Freshly cracked mature grain",
+          "Freshly ground mature grain used promptly",
+          "Plain cooked mature grain",
+          "Tender young leaves",
+          "Tender young shoots and growing tips",
+          "Fresh mature seed heads",
+          "Thoroughly dried mature seed heads",
+          "Managed postharvest access to limited spilled grain"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Raw whole grain",
+
+            concern:
+              "Raw Amaranth contains variable phytate, tannins, oxalates, saponins, protease inhibitors, and other compounds that may reduce nutrient utilization. It should not be offered unrestricted."
+          },
+
+          {
+            form:
+              "Popped grain",
+
+            concern:
+              "Popping changes moisture, texture, and density but does not establish a universal safe feeding level or prove that every antinutritional concern has been eliminated."
+          },
+
+          {
+            form:
+              "Roasted grain",
+
+            concern:
+              "Roasting may alter antinutritional compounds, but underheating may be ineffective and excessive heat may damage amino acids or reduce nutritional quality."
+          },
+
+          {
+            form:
+              "Boiled or steamed grain",
+
+            concern:
+              "Moist cooked grain spoils quickly, particularly in warm weather. It should be cooled, offered plain, and removed before souring or contamination."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            concern:
+              "Cracking increases exposed surface area and shortens storage stability. Prepare only manageable quantities and protect the grain from moisture, insects, rodents, and contamination."
+          },
+
+          {
+            form:
+              "Ground grain",
+
+            concern:
+              "Fine meal may separate from other ingredients, become dusty, absorb moisture, or deteriorate during storage. Grinding does not make an unbalanced ration complete."
+          },
+
+          {
+            form:
+              "Whole seed heads",
+
+            concern:
+              "Seed maturity, grain quantity, flock competition, shattering, waste, and actual consumption vary among heads. Thorough drying and regular inspection are required."
+          },
+
+          {
+            form:
+              "Young leafy material",
+
+            concern:
+              "Leaf composition varies with species, cultivar, maturity, fertility, drought, light, and other environmental conditions. Avoid stressed or questionable foliage."
+          },
+
+          {
+            form:
+              "Managed postharvest garden access",
+
+            concern:
+              "The amount consumed is difficult to measure, and birds may encounter moldy debris, contaminated soil, toxic weeds, sharp objects, chemicals, or predators."
+          }
+        ],
+
+        avoidForms: [
+          "Unidentified wild Amaranthus",
+          "Palmer amaranth or waterhemp collected as feed",
+          "Chemically treated planting seed",
+          "Moldy grain",
+          "Musty grain",
+          "Damp or heated grain",
+          "Fermenting or sour grain",
+          "Moldy or incompletely dried seed heads",
+          "Rodent-contaminated grain",
+          "Wild-bird-contaminated drying material",
+          "Grain with an abnormal chemical odor",
+          "Unrestricted raw grain",
+          "Large quantities of mature foliage",
+          "Coarse mature stems",
+          "Severely drought-stressed foliage",
+          "Questionable high-nitrate foliage",
+          "Ornamental plants with an unknown pesticide history",
+          "Salted or seasoned Amaranth products",
+          "Material collected from roadsides or contaminated sites"
+        ],
+
+        wholeHeadAdvantages: [
+          "Provides natural pecking enrichment",
+          "Encourages sustained foraging behavior",
+          "Requires less threshing and cleaning labor",
+          "Allows gradual grain removal",
+          "Can provide useful cold-season activity",
+          "Makes practical use of smaller household harvests"
+        ],
+
+        looseSeedAdvantages: [
+          "Easier to measure",
+          "Simpler to divide among multiple birds",
+          "More suitable for controlled supplementation",
+          "Can be cleaned and inspected more thoroughly",
+          "Can be heat-treated when desired",
+          "Can be incorporated into a properly formulated ration"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Actual grain intake is difficult to measure",
+          "Dominant birds may monopolize access",
+          "Tiny grain may shatter into litter or soil",
+          "Dense heads may retain hidden moisture",
+          "Heads require removal if mold or spoilage develops",
+          "Grain maturity and fill may vary among heads"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires threshing",
+          "Requires winnowing and cleaning",
+          "Requires careful drying",
+          "Tiny grain can be difficult to handle",
+          "Requires insect-resistant and rodent-resistant storage",
+          "Cracked or ground grain has reduced storage stability",
+          "More processing labor is required than for whole-head enrichment"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Amaranth species and cultivars differ meaningfully in grain production, seed color, plant size, leaf quality, maturity, antinutritional compounds, nitrate and oxalate concentrations, and suitability for grain, vegetable, ornamental, or dual-purpose use. A cultivar selected for poultry supplementation should be a positively identified cultivated food-grade type rather than an unknown wild or ornamental Amaranthus plant.",
+
+        grainAmaranth: {
+          recommended:
+            true,
+
+          explanation:
+            "Cultivated grain Amaranths such as Amaranthus cruentus, Amaranthus hypochondriacus, and Amaranthus caudatus are generally the most appropriate types when mature grain production is the primary poultry-feed objective. Cultivar performance, seed yield, maturity, lodging resistance, and processing characteristics still vary."
+        },
+
+        vegetableAmaranth: {
+          recommended:
+            true,
+
+          explanation:
+            "Vegetable Amaranth cultivars may be useful when tender young leaves and shoots are the primary supplemental product. Their foliage should still be offered conservatively because nitrate, oxalate, fiber, and nutrient concentrations vary with cultivar, maturity, fertility, moisture, and environmental stress."
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Some ornamental Amaranth cultivars produce edible grain or foliage, but ornamental use alone does not establish food-grade suitability. Chemical-treatment history, species identity, seed production, maturity, and intended use must be confirmed before feeding."
+        },
+
+        wildOrWeedyAmaranthus: {
+          recommended:
+            false,
+
+          explanation:
+            "Unknown pigweeds, Palmer amaranth, waterhemp, and other wild or weedy Amaranthus plants should not be collected casually as poultry feed. Species identity, nitrate and oxalate concentrations, herbicide exposure, roadside contamination, and growing-site history may be uncertain."
+        },
+
+        lightSeededCultivars: {
+          advantages: [
+            "Often associated with cultivated grain types",
+            "May be easier to inspect for discoloration or contamination",
+            "Commonly selected for household-food grain production"
+          ]
+        },
+
+        darkSeededCultivars: {
+          advantages: [
+            "May provide useful grain yields in some cultivars",
+            "Can remain suitable when the cultivar is positively identified as food-grade",
+            "May offer different seed-coat, antioxidant, or processing characteristics"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate-to-high",
+
+        preparationSummary:
+          "Amaranth preparation varies substantially by feed form. Tender young leaves require positive identification, inspection, removal of coarse stems, and prompt feeding. Mature seed heads must be fully developed and dried thoroughly before storage or enrichment use. Loose grain requires careful harvest timing, drying, threshing, winnowing, screening, and storage. Raw grain may be used only as a limited supplement, while grain intended for greater dietary inclusion should be appropriately processed and incorporated into a properly balanced ration.",
+
+        requiredPreparation: [
+          "Confirm that the crop is a positively identified cultivated food-grade grain or vegetable Amaranth.",
+          "Verify that planting seed was untreated or otherwise approved for food or feed production.",
+          "Confirm that pesticides, herbicides, fungicides, fertilizers, or other chemicals were used in a manner compatible with the intended poultry-feed harvest.",
+          "Choose the intended feed product before harvest because leaves, loose grain, processed grain, and whole seed heads require different handling.",
+          "Inspect all harvested material for mold, insects, bird droppings, rodent contamination, foreign objects, chemical odor, and other signs of deterioration.",
+          "Harvest leafy material while leaves and shoots remain young, tender, and actively growing.",
+          "Avoid foliage from severely drought-stressed, growth-interrupted, excessively nitrogen-fertilized, or otherwise questionable plants.",
+          "Remove tough, woody, or coarse mature stems from leafy harvests.",
+          "Offer fresh leafy material promptly and remove leftovers before they wilt, sour, mold, or become heavily soiled.",
+          "Allow grain intended for harvest to reach full maturity before cutting seed heads.",
+          "Harvest mature heads before extensive shattering, prolonged wet weather, lodging, or wildlife feeding causes major losses.",
+          "Keep harvested heads off wet soil, manure, dirty floors, and contaminated surfaces.",
+          "Dry seed heads under cover with strong airflow and protection from rain, dew, rodents, insects, and wild birds.",
+          "Spread, hang, or arrange heads so air can circulate around the dense flower cluster and attached stem tissue.",
+          "Turn, rearrange, or separate heads when necessary to promote uniform drying.",
+          "Confirm that the interior of each dense seed head is dry rather than judging only the outside surface.",
+          "Allow dried heads and grain to cool before placing them into enclosed storage.",
+          "Thresh grain only after the heads and grain are sufficiently dry.",
+          "Winnow and screen threshed grain to remove chaff, dust, stem fragments, stones, weed seed, insects, and other debris.",
+          "Inspect cleaned grain again before feeding or storage.",
+          "Store whole grain only when it is dry, cool, clean, and free from condensation or heating.",
+          "Keep raw whole-grain portions limited unless the grain is appropriately processed and incorporated into a balanced ration.",
+          "Cool cooked grain completely before feeding.",
+          "Remove moist cooked grain before it sours, molds, or becomes contaminated.",
+          "Use cracked or ground grain promptly because processing shortens practical storage stability.",
+          "Maintain an age-appropriate complete poultry ration as the flock's primary feed regardless of the preparation method."
+        ],
+
+        optionalPreparation: [
+          "Rub, beat, or roll thoroughly dried seed heads inside a clean container or over a clean tarp to release mature grain.",
+          "Use fine screens or sieves to separate the tiny grain from larger chaff and plant fragments.",
+          "Use gentle airflow, a fan, or repeated pouring between containers to winnow lighter debris from sound grain.",
+          "Repeat threshing and winnowing when the first pass leaves excessive chaff.",
+          "Use a suitable small-grain moisture meter when dependable measurement is available.",
+          "Freeze dry grain using an appropriate food-safe method when storage-insect control is necessary.",
+          "Heat-treat mature grain using an appropriate researched method when it will be used as more than an occasional minor supplement.",
+          "Boil or steam small quantities of grain and cool them completely before offering them plain.",
+          "Toast or roast grain carefully when using a researched method that avoids scorching or excessive heat damage.",
+          "Pop small amounts of grain when the product will be used promptly without salt, oil, sugar, or seasoning.",
+          "Crack dry grain shortly before feeding when easier physical access or mixing is desired.",
+          "Grind dry grain immediately before incorporating it into a properly balanced feed mixture.",
+          "Chop tender leaves into manageable pieces for birds that have difficulty tearing whole foliage.",
+          "Hang thoroughly dried mature seed heads securely to extend pecking time and reduce contact with wet litter.",
+          "Divide seed heads among several feeding locations to reduce crowding and monopolization.",
+          "Use trays, pans, or clean feeding surfaces to reduce loss of tiny grain into litter or soil.",
+          "Label stored grain by crop, cultivar when known, harvest date, processing method, and intended use."
+        ],
+
+        unnecessaryPreparation: [
+          "Removing an outer hull from every Amaranth grain before limited adult-chicken use",
+          "Grinding clean whole grain solely because adult chickens cannot physically consume the tiny seed",
+          "Cooking tender young leaves before every supplemental feeding",
+          "Seasoning cooked Amaranth to improve acceptance",
+          "Adding salt, oil, butter, sugar, sauces, or flavorings",
+          "Washing clean dry grain immediately before storage",
+          "Sprouting grain as a required safety treatment",
+          "Fermenting grain as a required safety treatment",
+          "Grinding whole dried seed heads before enrichment use",
+          "Threshing every seed head when whole-head feeding is the intended use",
+          "Using expensive commercial grain-processing equipment for a very small household harvest",
+          "Applying one universal processing method to grain, foliage, seed heads, and cooked leftovers",
+          "Using heat treatment as a substitute for complete-ration formulation",
+          "Attempting to make unidentified wild pigweed acceptable through cooking",
+          "Attempting to rescue moldy or contaminated grain through washing, drying, roasting, or grinding"
+        ],
+
+        preparationMistakes: [
+          "Harvesting unidentified pigweed or another wild Amaranthus species merely because it resembles cultivated Amaranth",
+          "Assuming all Amaranth species, cultivars, plant parts, and maturity stages have identical feeding characteristics",
+          "Using chemically treated planting seed as poultry feed",
+          "Harvesting grain before it is fully mature",
+          "Cutting tender foliage from severely stressed or excessively nitrogen-fertilized plants without considering nitrate risk",
+          "Feeding large quantities of coarse mature leaves and stems",
+          "Storing seed heads while their interiors remain damp",
+          "Sealing warm grain inside airtight containers",
+          "Failing to remove chaff, weed seed, stones, dust, or insect debris from threshed grain",
+          "Offering unrestricted raw grain because Amaranth contains more protein than many cereal grains",
+          "Assuming heat processing eliminates every antinutritional or ration-balance concern",
+          "Grinding or cracking large quantities long before feeding",
+          "Leaving cooked grain in feeders during warm weather",
+          "Allowing whole seed heads to remain in wet litter",
+          "Failing to inspect stored grain and seed heads for insects, mold, heating, condensation, or abnormal odors",
+          "Copying experimental poultry-diet inclusion rates into an unbalanced backyard feed mixture",
+          "Allowing Amaranth supplements to reduce consumption of complete poultry feed"
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "moderate-fat-high-protein-pseudocereal-grain-and-limited-leafy-supplement",
+
+        nutritionSummary:
+          "Mature Amaranth grain is a nutrient-dense pseudocereal containing substantial starch, moderate fat, comparatively high crude protein, useful lysine, minerals, and other nutrients. Its practical poultry value comes from providing more protein and a stronger lysine contribution than many conventional cereal grains while still supplying useful dietary energy. Tender young leaves form a separate fresh-feed product that may contribute moisture, pigments, vitamins, minerals, and dietary variety. Neither the grain nor the foliage provides complete poultry nutrition.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary substantially among Amaranth species, cultivars, growing conditions, grain maturity, leafy maturity, whole raw grain, heat-treated grain, popped grain, cooked grain, cracked grain, ground grain, flour, bran fractions, seed heads, and young foliage. These products must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Comparatively high grain protein",
+
+            importance:
+              "high",
+
+            explanation:
+              "Mature Amaranth grain commonly contains more crude protein than Corn, Sorghum, Millet, Barley, Wheat, and many other conventional cereal grains. Protein concentration still varies by species, cultivar, environment, processing method, and analytical basis."
+          },
+
+          {
+            nutrientRole:
+              "Useful lysine contribution",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Amaranth generally contains more lysine than most cereal grains. This makes its amino-acid profile nutritionally interesting, although favorable lysine content does not make Amaranth a complete poultry-protein source."
+          },
+
+          {
+            nutrientRole:
+              "Dietary energy",
+
+            importance:
+              "high",
+
+            explanation:
+              "The mature grain contains substantial starch together with moderate fat, allowing it to function as a useful supplemental energy source."
+          },
+
+          {
+            nutrientRole:
+              "Moderate grain fat",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Amaranth grain generally contains more fat than many common cereal grains but considerably less than high-oil crops such as Sunflower. Fat concentration and fatty-acid composition vary among cultivars and products."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "The grain can contribute phosphorus, magnesium, iron, manganese, potassium, and other minerals. Mineral concentration does not establish complete availability or a balanced mineral profile for poultry."
+          },
+
+          {
+            nutrientRole:
+              "Tender leafy-green nutrition",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Young Amaranth leaves may contribute moisture, pigments, vitamins, minerals, and seasonal dietary variety. Leaf composition differs substantially from mature grain and changes with species, cultivar, maturity, fertility, moisture, light, and environmental stress."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Comparatively high crude protein",
+          "Lysine",
+          "Moderate grain fat",
+          "Linoleic acid",
+          "Oleic acid",
+          "Phosphorus",
+          "Magnesium",
+          "Iron",
+          "Manganese",
+          "Potassium",
+          "Dietary fiber",
+          "Leaf pigments",
+          "Leaf vitamins and minerals"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Comparatively high for a grain crop, commonly reported in approximately the mid-teen range on a dry-matter basis, with substantial variation among species, cultivars, environments, and analytical methods.",
+
+          fat:
+            "Moderate for a grain crop and generally higher than many conventional cereal grains, but much lower than high-oil seed crops such as Sunflower.",
+
+          fiber:
+            "Moderate, although reported values vary according to species, seed-coat characteristics, processing, and analytical method.",
+
+          starch:
+            "High and responsible for a substantial portion of the mature grain's dietary energy.",
+
+          calcium:
+            "Present in greater concentration than in some cereal grains, but not sufficient or dependable enough to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Present in useful amounts, although some phosphorus may be associated with phytate and should not be assumed to be completely available.",
+
+          energy:
+            "High because of the combination of starch and moderate fat, but generally less concentrated than oil-rich seeds such as Sunflower kernels."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Amaranth grain includes the seed coat, embryo, and starchy internal tissues. Because the grain is extremely small, household dehulling into a clean kernel fraction is generally impractical.",
+
+          dehulledKernel:
+            "A mechanically separated or refined internal fraction would contain less seed-coat material and a different concentration of starch, protein, fat, fiber, minerals, and antinutritional compounds than intact whole grain.",
+
+          practicalMeaning:
+            "Research or food-composition values for refined Amaranth flour, isolated starch, bran, or dehulled fractions should not automatically be applied to homegrown whole grain."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole mature grain retains its natural starch, fat, protein, fiber, minerals, and seed-coat components and can function as a concentrated supplemental grain.",
+
+          sunflowerMeal:
+            "Amaranth meal or flour is produced by grinding the whole grain or selected grain fractions. Its composition depends on whether the entire seed is included, whether oil or bran has been removed, and how the product was processed.",
+
+          practicalMeaning:
+            "Research involving Amaranth flour, processed meal, extruded products, heat-treated grain, or refined fractions must not automatically be used to establish backyard feeding quantities for intact raw grain or whole seed heads."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Amaranth species",
+          "Cultivar",
+          "Grain type versus vegetable type",
+          "Seed color",
+          "Seed-coat characteristics",
+          "Grain maturity",
+          "Leaf maturity",
+          "Growing environment",
+          "Soil fertility",
+          "Nitrogen availability",
+          "Water availability",
+          "Drought stress",
+          "Interrupted growth",
+          "Temperature",
+          "Light intensity",
+          "Harvest timing",
+          "Postharvest drying",
+          "Storage duration",
+          "Storage temperature",
+          "Raw versus heat-treated grain",
+          "Boiling",
+          "Steaming",
+          "Roasting",
+          "Popping",
+          "Extrusion",
+          "Cracking",
+          "Grinding",
+          "Fractionation",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Higher-Protein Grain Than Many Common Cereals",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature Amaranth grain generally contains more crude protein than Corn, Wheat, Barley, Oats, Millet, and Sorghum. This makes it a potentially useful supplemental grain or formulated ration ingredient, although crude-protein percentage alone does not establish complete poultry nutrition."
+          },
+
+          {
+            title:
+              "Useful Lysine Contribution",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Amaranth generally contains more lysine than most traditional cereal grains. This improves its comparative amino-acid value when used within a properly balanced ration, but it does not independently provide every amino acid in the proportions poultry require."
+          },
+
+          {
+            title:
+              "Useful Supplemental Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "The mature grain contains substantial starch together with moderate fat, allowing it to contribute useful dietary energy without being as oil-dense as Sunflower seed."
+          },
+
+          {
+            title:
+              "Multiple Poultry-Feeding Forms",
+
+            importance:
+              "primary",
+
+            explanation:
+              "One Amaranth planting may produce measured whole grain, appropriately heat-treated grain, cracked or ground grain, tender young greens, and mature seed heads for enrichment. These products provide valuable flexibility when each form is managed according to its own preparation, storage, and feeding requirements."
+          },
+
+          {
+            title:
+              "Storable Dry Grain",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Clean whole Amaranth grain can be stored without refrigeration when it is fully mature, thoroughly dried, cooled, cleaned, and protected from humidity, insects, rodents, and contamination."
+          },
+
+          {
+            title:
+              "Whole-Seed-Head Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Fully mature dried seed heads encourage chickens to peck, investigate, loosen, and recover the tiny grain. This produces a longer and more behaviorally engaging feeding activity than simply placing loose grain in an open dish."
+          },
+
+          {
+            title:
+              "Tender Seasonal Greens",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Young leaves and growing tips can provide limited fresh greenery, moisture, pigments, vitamins, minerals, and dietary variety during active warm-season growth."
+          },
+
+          {
+            title:
+              "Warm-Season Production",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Amaranth grows during hot summer conditions when many cool-season forage crops decline. This can help extend the period during which a backyard flock receives homegrown supplemental material."
+          },
+
+          {
+            title:
+              "Household-Food and Poultry-Feed Flexibility",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Clean food-grade grain may be reserved for household use, planting seed, poultry supplementation, or appropriately formulated feed. This flexibility may increase the crop's overall homestead value."
+          },
+
+          {
+            title:
+              "Compact Grain Storage",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Cleaned loose grain occupies considerably less storage space than bulky fresh greens or whole unthreshed plants and can be divided into small measured portions."
+          },
+
+          {
+            title:
+              "Seasonal Crop Diversity",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Amaranth adds a broadleaf pseudocereal to a feeding system that might otherwise rely heavily on cereal grains, legumes, leafy brassicas, or purchased supplements."
+          },
+
+          {
+            title:
+              "Pollinator and Garden Value",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Flowering Amaranth can contribute ornamental interest, insect activity, vertical garden structure, and substantial compostable residue while also producing poultry-supplement products."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Pecking activity",
+
+            explanation:
+              "Chickens must locate, loosen, and remove the tiny grain from an intact mature seed head."
+          },
+
+          {
+            benefit:
+              "Extended feeding time",
+
+            explanation:
+              "Whole-head feeding generally takes longer than consuming the same amount of cleaned grain from an open container."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Birds can pull, turn, scratch, investigate, and dismantle portions of the seed head rather than simply swallowing loose grain."
+          },
+
+          {
+            benefit:
+              "Cold-season activity",
+
+            explanation:
+              "Stored dried heads can provide structured activity when winter weather, confinement, or dormant vegetation reduces natural foraging opportunities."
+          },
+
+          {
+            benefit:
+              "Reduced boredom",
+
+            explanation:
+              "Appropriately placed seed heads may occupy birds and diversify the feeding environment, although enrichment does not correct overcrowding, inadequate space, bullying, or poor flock management."
+          },
+
+          {
+            benefit:
+              "Foraging variety",
+
+            explanation:
+              "Amaranth grain is much smaller than many common seeds, requiring different pecking and searching behavior from the flock."
+          },
+
+          {
+            benefit:
+              "Seasonal leafy exploration",
+
+            explanation:
+              "Small amounts of tender leaves or shoots can provide a fresh texture and feeding experience that differs from dry grain and complete feed."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Can be offered through several separate feeding stations",
+          "Can be stored and used during periods of limited fresh forage",
+          "Whole seed heads can reduce threshing and cleaning labor",
+          "Loose cleaned grain permits better measurement than whole seed heads",
+          "Processed grain can be incorporated more uniformly into a properly formulated ration",
+          "Can be introduced in very small quantities",
+          "Can be removed easily when offered in a dish, pan, or secure holder",
+          "Tender leaves can be harvested through controlled cut-and-carry feeding",
+          "Several feed forms allow the grower to match use with available labor and equipment",
+          "Whole grain can remain stored until a later decision is made to feed, cook, crack, grind, or reserve it as seed"
+        ],
+
+        homesteadBenefits: [
+          "Annual crop that can be rotated through garden areas",
+          "Warm-season growth complements cool-season feeding crops",
+          "Produces both grain and edible young foliage",
+          "Can serve household-food and poultry-supplement purposes",
+          "Mature seed heads can be used without complete threshing",
+          "Clean dried grain requires no refrigeration",
+          "Grain occupies relatively little storage space",
+          "Flowers provide ornamental value",
+          "Flowering plants may support insect and pollinator activity",
+          "Tall growth can provide seasonal screening or visual structure",
+          "Selected cultivars may provide planting seed for future seasons",
+          "Stems, chaff, damaged leaves, and empty heads can contribute compost biomass",
+          "Small household harvests can remain useful even when production is insufficient for bulk ration formulation"
+        ],
+
+        benefitSummary:
+          "Amaranth's greatest overall value comes from combining a comparatively protein-rich and lysine-rich grain, useful supplemental energy, tender seasonal greens, dry-grain storage, whole-seed-head enrichment, warm-season production, and household-food flexibility. Its benefits are strongest when each harvested form is managed separately and when Amaranth remains a measured supplement rather than a replacement for complete poultry feed."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Amaranth does not supply the complete balance of energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Raw Grain Contains Antinutritional Compounds",
+
+            severity:
+              "high",
+
+            explanation:
+              "Raw Amaranth grain may contain phytate, tannins, oxalates, saponins, protease inhibitors, and other compounds that can reduce nutrient digestibility or availability. Concentrations and poultry responses vary among species, cultivars, processing methods, and complete-diet formulations."
+          },
+
+          {
+            title:
+              "Leafy Material May Accumulate Nitrates",
+
+            severity:
+              "high-under-risk-conditions",
+
+            explanation:
+              "Amaranth leaves and stems may accumulate nitrates when plants receive excessive nitrogen or experience drought, low light, interrupted growth, cold stress, or other unfavorable conditions. Appearance alone cannot establish nitrate safety."
+          },
+
+          {
+            title:
+              "Leafy Material Contains Variable Oxalates",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Oxalate concentration varies among species, cultivars, plant parts, maturity stages, and growing conditions. Heavy or repeated leafy intake may interfere with mineral use and makes unrestricted foliage feeding inappropriate."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Although Amaranth generally contains more lysine than many cereal grains, its protein does not independently provide every essential amino acid in the proportions required by poultry."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Amaranth grain and foliage do not provide a dependable calcium concentration sufficient for eggshell production. They must not replace complete layer feed or an appropriate calcium program."
+          },
+
+          {
+            title:
+              "Heat Processing Is Not Universally Standardized",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Heating may reduce or alter some antinutritional compounds, but effectiveness depends on temperature, duration, moisture, particle size, cultivar, and processing method. No single household treatment can be assumed suitable for every Amaranth product or feeding situation."
+          },
+
+          {
+            title:
+              "Mature Foliage Becomes Fibrous",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "As Amaranth plants mature, leaves and stems become increasingly coarse and fibrous. Older foliage has lower practical poultry-feed value and can dilute the nutrient density of the flock's overall diet."
+          },
+
+          {
+            title:
+              "Tiny Grain Is Difficult to Handle",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Amaranth grain is extremely small and can be difficult to thresh, winnow, screen, measure, contain, and recover from litter or soil. Unsuitable feeders may allow substantial grain loss."
+          },
+
+          {
+            title:
+              "Portioning Whole Seed Heads Is Imprecise",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Grain maturity, seed fill, head size, shattering, flock competition, spillage, and actual consumption vary among seed heads. Whole-head feeding is best treated as enrichment rather than precise ration delivery."
+          },
+
+          {
+            title:
+              "Dense Seed Heads Can Retain Moisture",
+
+            severity:
+              "high",
+
+            explanation:
+              "The interior of a mature Amaranth seed head may remain damp even when the outer surface appears dry. Storing incompletely dried heads can result in heating, fermentation, mold, and feed loss."
+          },
+
+          {
+            title:
+              "Species and Cultivar Differences Matter",
+
+            severity:
+              "high",
+
+            explanation:
+              "Cultivated grain, vegetable, ornamental, wild, and weedy Amaranthus plants are not automatically equivalent. Grain yield, leaf quality, maturity, antinutritional compounds, nitrate accumulation, oxalate concentration, and pesticide history can differ substantially."
+          },
+
+          {
+            title:
+              "Wildlife and Rodent Attraction",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Developing seed heads, shattered grain, drying material, stored grain, and spilled feed can attract wild birds, mice, rats, and other animals."
+          },
+
+          {
+            title:
+              "Research Inclusion Rates Are Easy to Misapply",
+
+            severity:
+              "high",
+
+            explanation:
+              "Published poultry studies generally evaluate measured Amaranth ingredients inside complete experimental diets balanced for energy, amino acids, vitamins, minerals, and other nutrients. Those percentages do not establish an equivalent backyard serving amount."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Species, cultivar, feed form, processing method, flock age, body condition, activity, climate, complete ration, and feeding purpose differ too greatly for one Amaranth-specific serving percentage to apply safely to every backyard flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Favorable lysine concentration does not make the grain a complete protein source",
+          "Crude-protein percentage does not predict total ration quality",
+          "Raw grain may contain protease inhibitors",
+          "Raw grain may contain phytate",
+          "Raw grain may contain tannins and other phenolic compounds",
+          "Raw grain may contain saponins",
+          "Oxalate concentration varies among grain and leafy tissues",
+          "Leaf nitrate concentration varies with fertility, stress, and growing conditions",
+          "Phosphorus availability may be reduced partly by phytate",
+          "Heat processing may improve some characteristics without correcting every limitation",
+          "Excessive heating may damage amino acids or other nutrients",
+          "Young leaves and mature grain are nutritionally different products",
+          "Older foliage contains more fiber",
+          "Published experimental inclusion levels apply to formulated diets rather than informal treats",
+          "Vitamin and trace-mineral balance remains incomplete",
+          "Composition varies among species, cultivars, environments, and processing methods"
+        ],
+
+        practicalLimitations: [
+          "The extremely small seed can be difficult to sow evenly",
+          "Young seedlings may compete poorly with weeds",
+          "Seed heads may mature unevenly",
+          "Mature grain may shatter before harvest",
+          "Wild birds may remove seed before harvest",
+          "Rodents may consume spilled or stored grain",
+          "Tall plants may lodge during storms",
+          "Dense seed heads require thorough drying",
+          "Whole heads require more storage space than cleaned grain",
+          "Hand threshing can be time consuming",
+          "Winnowing tiny grain requires suitable airflow and technique",
+          "Fine chaff can be difficult to separate completely",
+          "Tiny grain may pass through unsuitable feeders",
+          "Loose grain can disappear into deep litter or soil",
+          "Dominant birds may monopolize whole seed heads",
+          "Whole-head consumption is difficult to measure",
+          "Fresh leaves wilt and spoil quickly",
+          "Coarse mature stems have little practical feed value",
+          "Cracked grain stores less reliably than intact grain",
+          "Ground grain should be used promptly",
+          "Moist cooked grain spoils rapidly",
+          "Exact backyard yield is difficult to predict",
+          "Exact processing loss is difficult to predict",
+          "Exact economic savings depend on local labor, yield, feed prices, and household use"
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Serving as the flock's only protein source",
+          "Supplying all required amino acids",
+          "Serving as the primary calcium source for laying hens",
+          "Correcting an incomplete homemade ration",
+          "Making raw grain nutritionally equivalent to properly processed grain",
+          "Making every wild Amaranthus species suitable for feeding",
+          "Providing unrestricted leafy forage without nitrate or oxalate concerns",
+          "Supporting young chicks as a staple food",
+          "Guaranteeing increased egg production",
+          "Guaranteeing improved feather growth",
+          "Guaranteeing higher fertility or hatchability",
+          "Treating disease, parasites, or nutritional deficiency",
+          "Providing a universal safe feeding percentage",
+          "Providing a universal heat-processing method",
+          "Providing predictable pounds of usable grain per plant",
+          "Eliminating commercial feed purchases",
+          "Guaranteeing lower feed costs",
+          "Remaining safe after mold, fermentation, chemical contamination, or rodent contamination",
+          "Allowing preparation methods to substitute for complete-ration formulation"
+        ],
+
+        limitationSummary:
+          "Amaranth is valuable because it combines a comparatively protein-rich grain, favorable lysine concentration, moderate fat, tender greens, storage potential, and seed-head enrichment. Its greatest limitations are raw-grain antinutritional compounds, variable nitrate and oxalate risk in foliage, incomplete overall nutrition, processing complexity, tiny-seed handling, and the absence of one universal backyard feeding rate."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "moderate",
+
+        summary:
+          "Amaranth contains several naturally occurring compounds that can reduce nutrient utilization or create feeding concerns when consumed in excessive amounts or when improperly managed. The significance of these compounds depends on species, cultivar, plant part, maturity, processing method, dietary inclusion rate, and the balance of the complete ration. Most concerns are minimized when Amaranth remains a measured supplement rather than the primary feed.",
+
+        compounds: [
+          {
+            compound:
+              "Phytate (Phytic Acid)",
+
+            importance:
+              "high",
+
+            naturallyPresent:
+              true,
+
+            primaryConcern:
+              "Can reduce availability of certain minerals by binding them during digestion.",
+
+            practicalBackyardSignificance:
+              "Generally modest when Amaranth is offered only as a limited supplement alongside a balanced commercial ration."
+          },
+
+          {
+            compound:
+              "Protease Inhibitors",
+
+            importance:
+              "moderate",
+
+            naturallyPresent:
+              true,
+
+            primaryConcern:
+              "May reduce protein digestion when large quantities of raw grain are consumed.",
+
+            practicalBackyardSignificance:
+              "Rarely significant when feeding small supplemental amounts but more important in high-inclusion homemade rations."
+          },
+
+          {
+            compound:
+              "Tannins and Other Phenolic Compounds",
+
+            importance:
+              "moderate",
+
+            naturallyPresent:
+              "varies-by-species-and-cultivar",
+
+            primaryConcern:
+              "Can reduce palatability and decrease nutrient digestibility at higher concentrations.",
+
+            practicalBackyardSignificance:
+              "Concentrations vary considerably among cultivated types and generally pose limited concern in modest supplemental feeding."
+          },
+
+          {
+            compound:
+              "Saponins",
+
+            importance:
+              "low-to-moderate",
+
+            naturallyPresent:
+              true,
+
+            primaryConcern:
+              "May influence palatability and nutrient utilization depending on concentration.",
+
+            practicalBackyardSignificance:
+              "Usually not a major concern when Amaranth is fed conservatively."
+          },
+
+          {
+            compound:
+              "Oxalates",
+
+            importance:
+              "moderate",
+
+            naturallyPresent:
+              true,
+
+            primaryConcern:
+              "Can interfere with calcium utilization and contribute to mineral-binding effects when consumed excessively.",
+
+            practicalBackyardSignificance:
+              "Primarily associated with leafy tissues rather than mature grain. Heavy leafy feeding should be avoided."
+          },
+
+          {
+            compound:
+              "Nitrates",
+
+            importance:
+              "high-under-risk-conditions",
+
+            naturallyPresent:
+              "accumulates-under-certain-growing-conditions",
+
+            primaryConcern:
+              "Leaves and stems may accumulate elevated nitrate concentrations during drought, excessive nitrogen fertilization, low light, cold stress, or interrupted growth.",
+
+            practicalBackyardSignificance:
+              "Healthy unstressed plants generally present much lower risk, but stressed foliage should be avoided because visual appearance alone cannot confirm nitrate safety."
+          },
+
+          {
+            compound:
+              "Dietary Fiber",
+
+            importance:
+              "moderate",
+
+            naturallyPresent:
+              true,
+
+            primaryConcern:
+              "Fiber increases substantially as leaves and stems mature and may reduce practical feeding value.",
+
+            practicalBackyardSignificance:
+              "Tender young foliage is preferred over mature fibrous growth."
+          }
+        ],
+
+        effectOfHeatProcessing: {
+          beneficial:
+            true,
+
+          explanation:
+            "Appropriate heat processing may reduce or alter several raw-grain antinutritional compounds and improve practical feeding value. The effectiveness depends on processing method, temperature, moisture, duration, particle size, cultivar, and the compound being evaluated.",
+
+          limitations: [
+            "No single household heat treatment eliminates every antinutritional compound.",
+            "Heat treatment does not convert Amaranth into a complete poultry ration.",
+            "Excessive heating may reduce nutritional quality or damage heat-sensitive nutrients.",
+            "Published research methods should not be assumed identical to household processing."
+          ]
+        },
+
+        practicalBackyardGuidance: [
+          "Feed Amaranth as a supplement rather than a primary feed ingredient.",
+          "Offer complete poultry feed free-choice at all times.",
+          "Use mature grain rather than immature seed.",
+          "Harvest leafy material while young and tender.",
+          "Avoid foliage from severely drought-stressed or excessively nitrogen-fertilized plants.",
+          "Consider heat processing when Amaranth will represent a larger dietary ingredient.",
+          "Do not assume every cultivar contains identical concentrations of antinutritional compounds.",
+          "Introduce Amaranth gradually so birds adapt to the new feed source.",
+          "Avoid relying on Amaranth as the principal protein source."
+        ],
+
+        researchNotes: [
+          "Most published poultry research evaluates processed Amaranth ingredients within nutritionally balanced experimental diets rather than unrestricted backyard supplementation.",
+          "Responses differ among poultry species, bird age, cultivar, processing method, dietary inclusion rate, and complete-ration formulation.",
+          "Reported improvements from research diets should not be interpreted as evidence that unrestricted raw Amaranth feeding is appropriate."
+        ],
+
+        conclusion:
+          "Antinutritional compounds are one of the principal reasons Amaranth should remain a carefully managed supplemental crop. Moderate feeding, good harvest practices, proper processing when appropriate, and continued use of a balanced complete ration reduce the practical importance of these naturally occurring compounds for most backyard flocks."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Amaranth should complement a complete ration rather than be used as the nutritional foundation.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, digestible amino acids, vitamins, minerals, sodium, and calcium that Amaranth grain, foliage, and seed heads cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration provides the nutritional balance required by mixed or breeding flocks while Amaranth remains an optional measured supplement."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the calcium limitation of Amaranth."
+          },
+
+          {
+            feedType:
+              "Appropriately processed legume ingredients",
+
+            relationship:
+              "Properly processed Soybeans, Field Peas, Cowpeas, or other suitable legumes can contribute additional protein and amino-acid diversity when used within a professionally balanced ration."
+          },
+
+          {
+            feedType:
+              "Cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Wheat, Barley, Oats, Millet, and Sorghum provide different starch, energy, fiber, and amino-acid characteristics. Amaranth may improve grain diversity, but informal grain combinations do not automatically create a balanced feed."
+          },
+
+          {
+            feedType:
+              "Oilseed ingredients within a formulated ration",
+
+            relationship:
+              "Sunflower and other appropriate oilseed ingredients can contribute additional fat, energy, and nutrient diversity. Their combined use must still account for total dietary energy, fat, fiber, and amino-acid balance."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, White Clover, Alfalfa, Comfrey, Mulberry, and other appropriate forage crops can provide leafy variety and seasonal enrichment that differs from Amaranth grain."
+          },
+
+          {
+            feedType:
+              "Carotenoid-rich produce",
+
+            relationship:
+              "Pumpkin, Winter Squash, dark leafy greens, and other suitable produce can contribute pigments, moisture, and dietary variety that Amaranth grain does not provide."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient methionine",
+          "Any remaining essential amino-acid imbalance",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Excessive dietary energy",
+          "Excessive total supplemental grain",
+          "Raw-grain antinutritional concerns",
+          "High nitrate concentration in stressed foliage",
+          "High oxalate intake from excessive leafy feeding",
+          "Poor-quality complete feed",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed"
+        ],
+
+        pairingWarning:
+          "Combining Amaranth with several other homegrown crops does not automatically produce a nutritionally complete poultry diet. Significant ration inclusion requires calculation of metabolizable energy, digestible amino acids, crude protein, fat, fiber, calcium, available phosphorus, sodium, vitamins, trace minerals, antinutritional factors, processing effects, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use Amaranth as a measured grain supplement, a limited tender green, or occasional mature-seed-head enrichment."
+      },
+
+      feedingMethods: {
+        preferredMethods: [
+          {
+            method:
+              "Measured loose mature grain",
+
+            effectiveness:
+              "excellent",
+
+            explanation:
+              "Clean mature grain placed in a dish, pan, or feeder allows the best control over intake, simplifies observation, and reduces unnecessary waste."
+          },
+
+          {
+            method:
+              "Whole mature seed-head enrichment",
+
+            effectiveness:
+              "excellent-for-enrichment",
+
+            explanation:
+              "Properly dried mature seed heads encourage prolonged pecking and natural foraging behavior while reducing household threshing labor."
+          },
+
+          {
+            method:
+              "Tender leafy cut-and-carry feeding",
+
+            effectiveness:
+              "good",
+
+            explanation:
+              "Freshly harvested young leaves and growing tips can be offered in small quantities to provide seasonal greens and dietary variety."
+          },
+
+          {
+            method:
+              "Mixed into a balanced ration",
+
+            effectiveness:
+              "excellent-when-formulated-correctly",
+
+            explanation:
+              "Appropriately processed Amaranth grain may be incorporated into a professionally balanced ration where total nutrient balance is maintained."
+          }
+        ],
+
+        acceptableMethods: [
+          "Dish feeding",
+          "Pan feeding",
+          "Small trough feeding",
+          "Scattered measured grain in clean bedding",
+          "Suspended mature seed heads",
+          "Fresh cut-and-carry leafy feeding",
+          "Cooked plain grain offered separately",
+          "Freshly cracked grain",
+          "Freshly ground grain immediately after preparation"
+        ],
+
+        methodsToAvoid: [
+          "Unlimited free-choice Amaranth grain",
+          "Large piles of mature foliage",
+          "Feeding moldy seed heads",
+          "Leaving cooked grain in feeders overnight",
+          "Allowing wet seed heads to remain outdoors",
+          "Feeding unidentified wild Amaranthus plants",
+          "Offering chemically treated planting seed",
+          "Allowing spilled grain to remain damp",
+          "Using contaminated drying racks or surfaces"
+        ],
+
+        introductionMethod:
+          "Introduce Amaranth gradually over several feedings while maintaining unrestricted access to the flock's normal complete feed. Observe acceptance, manure consistency, complete-feed intake, and any evidence that dominant birds are monopolizing grain or seed heads.",
+
+        feedingFrequency:
+          "Occasional to regular supplemental feeding depending upon the overall diet, season, and flock management goals.",
+
+        monitoringPoints: [
+          "Complete-feed consumption remains normal.",
+          "Birds continue maintaining healthy body condition.",
+          "Laying hens continue receiving adequate calcium.",
+          "No evidence of mold or spoilage develops.",
+          "Seed heads remain dry throughout use.",
+          "Tender greens are consumed before wilting or spoilage.",
+          "Dominant birds do not monopolize enrichment.",
+          "Spilled grain does not accumulate in damp litter.",
+          "Rodents and wild birds are not becoming attracted to feeding areas."
+        ],
+
+        seasonalUse:
+          {
+            spring:
+              "Young leaves become available before grain maturity and may be harvested conservatively while plants continue developing.",
+
+            summer:
+              "Tender foliage continues to provide seasonal greens while grain and seed heads develop.",
+
+            autumn:
+              "Primary grain harvest season. Mature seed heads, cleaned grain, and storage preparation become the primary management focus.",
+
+            winter:
+              "Stored grain and thoroughly dried seed heads provide supplemental feed and enrichment when fresh forage is limited."
+          },
+
+        practicalBackyardRecommendation:
+          "For most backyard flocks, the most practical system combines measured loose grain with occasional whole mature seed heads for enrichment while using tender young leaves only as a limited seasonal green. Complete poultry feed should always remain the flock's primary diet."
+      },
+
+      storage: {
+        storageSuitability:
+          "excellent-when-properly-dried",
+
+        preferredStorageForms: [
+          {
+            form:
+              "Clean mature whole grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Properly cleaned, thoroughly dried, and cooled whole grain provides the longest practical storage life and is the preferred form for most backyard flocks."
+          },
+
+          {
+            form:
+              "Thoroughly dried mature seed heads",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Whole seed heads store well when completely dry and protected from moisture, rodents, insects, and wild birds. They provide convenient winter enrichment."
+          },
+
+          {
+            form:
+              "Freshly cracked grain",
+
+            suitability:
+              "fair",
+
+            explanation:
+              "Cracked grain should be used relatively soon after processing because exposed surfaces reduce storage stability."
+          },
+
+          {
+            form:
+              "Freshly ground grain",
+
+            suitability:
+              "fair",
+
+            explanation:
+              "Ground grain absorbs moisture more readily and should generally be prepared close to the time it will be incorporated into feed."
+          },
+
+          {
+            form:
+              "Plain cooked grain",
+
+            suitability:
+              "poor",
+
+            explanation:
+              "Cooked grain is intended only for immediate use and should never be stored at room temperature for extended periods."
+          }
+        ],
+
+        dryingRequirements: [
+          "Harvest only fully mature grain intended for storage.",
+          "Dry seed heads thoroughly before threshing or enclosed storage.",
+          "Provide continuous airflow during drying whenever practical.",
+          "Protect drying material from rain, dew, and ground moisture.",
+          "Spread heads in shallow layers or hang individually to improve airflow.",
+          "Rotate or rearrange drying heads periodically for even drying.",
+          "Verify that the center of dense seed heads is dry before storage.",
+          "Allow grain to cool before sealing containers.",
+          "Never package grain while it remains warm.",
+          "Confirm grain is free from condensation before long-term storage."
+        ],
+
+        storageEnvironment: {
+          temperature:
+            "Cool and stable temperatures are preferred.",
+
+          humidity:
+            "Keep grain and seed heads dry. High humidity greatly increases spoilage risk.",
+
+          light:
+            "Dark storage is preferred but is less important than moisture control.",
+
+          airflow:
+            "Good airflow is valuable during drying. Long-term storage containers should remain dry and properly sealed after grain has cooled."
+        },
+
+        containerGuidance: [
+          "Use clean food-grade containers whenever practical.",
+          "Protect stored grain from rodents.",
+          "Protect stored grain from insects.",
+          "Prevent condensation inside containers.",
+          "Label containers with harvest date.",
+          "Store different cultivars separately when practical.",
+          "Avoid containers that previously held chemicals or pesticides.",
+          "Inspect containers regularly for moisture or insect activity."
+        ],
+
+        inventoryManagement: [
+          "Rotate older grain before newer harvests whenever practical.",
+          "Store only clean, dry grain.",
+          "Separate questionable grain until it can be inspected.",
+          "Use smaller containers if frequent opening introduces moisture.",
+          "Maintain good sanitation around storage areas.",
+          "Keep spilled grain cleaned up to discourage rodents."
+        ],
+
+        inspectionSchedule: [
+          "Inspect shortly after storage.",
+          "Inspect periodically throughout storage.",
+          "Inspect after unusually humid weather.",
+          "Inspect whenever containers are opened.",
+          "Inspect before feeding.",
+          "Inspect immediately if abnormal odors develop."
+        ],
+
+        storageLifeGuidance: {
+          wholeGrain:
+            "Properly dried whole grain generally provides the longest storage life.",
+
+          seedHeads:
+            "Well-dried mature seed heads can remain useful for extended enrichment storage when protected from moisture.",
+
+          crackedGrain:
+            "Use relatively promptly after processing.",
+
+          groundGrain:
+            "Best prepared shortly before use.",
+
+          cookedGrain:
+            "Feed promptly and discard leftovers before spoilage."
+        },
+
+        disposalGuidance: [
+          "Discard any moldy grain.",
+          "Discard grain with a musty odor.",
+          "Discard grain showing heating or fermentation.",
+          "Discard insect-infested grain when contamination is extensive.",
+          "Discard rodent-contaminated grain.",
+          "Discard wild-bird-contaminated seed heads.",
+          "Discard seed heads showing internal mold.",
+          "Discard material contaminated with chemicals or petroleum products.",
+          "When uncertain about safety, discard rather than feed."
+        ]
+      },
+
+      spoilageAndContamination: {
+        overallRisk:
+          "moderate",
+
+        summary:
+          "Amaranth stores well when mature grain and seed heads are harvested at the proper stage, dried thoroughly, cleaned carefully, and protected from moisture, insects, rodents, and wild birds. Most storage failures result from inadequate drying, poor sanitation, moisture intrusion, or delayed inspection rather than from the crop itself.",
+
+        commonSpoilageRisks: [
+          {
+            issue:
+              "Mold development",
+
+            severity:
+              "high",
+
+            explanation:
+              "Grain or dense seed heads stored before complete drying may develop mold that renders the material unsuitable for poultry feed."
+          },
+
+          {
+            issue:
+              "Heating",
+
+            severity:
+              "high",
+
+            explanation:
+              "Warm grain sealed before cooling may heat internally, encouraging microbial growth and reducing feed quality."
+          },
+
+          {
+            issue:
+              "Fermentation",
+
+            severity:
+              "high",
+
+            explanation:
+              "Excess moisture can cause fermentation, sour odors, and rapid deterioration."
+          },
+
+          {
+            issue:
+              "Condensation",
+
+            severity:
+              "high",
+
+            explanation:
+              "Temperature fluctuations inside storage containers may create condensation that wets otherwise dry grain."
+          },
+
+          {
+            issue:
+              "Insect infestation",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Stored-product insects may reproduce in inadequately protected grain, reducing both quality and usable quantity."
+          },
+
+          {
+            issue:
+              "Rodent contamination",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Rodent urine, feces, nesting material, and chewing damage contaminate stored grain and create disease risks."
+          },
+
+          {
+            issue:
+              "Wild bird contamination",
+
+            severity:
+              "high",
+
+            explanation:
+              "Drying seed heads exposed to wild birds may become contaminated with droppings that cannot be considered safe poultry feed."
+          },
+
+          {
+            issue:
+              "Chemical contamination",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Storage near pesticides, fuels, solvents, fertilizers, or other chemicals may contaminate otherwise usable feed."
+          }
+        ],
+
+        warningSigns: [
+          "Musty odor",
+          "Sour odor",
+          "Visible mold",
+          "Discoloration",
+          "Condensation inside containers",
+          "Warm grain",
+          "Heating seed heads",
+          "Clumped grain",
+          "Live insects",
+          "Insect webbing",
+          "Rodent droppings",
+          "Rodent-chewed containers",
+          "Wild bird droppings",
+          "Abnormal chemical odor"
+        ],
+
+        prevention: [
+          "Harvest only mature grain intended for storage.",
+          "Dry thoroughly before storage.",
+          "Confirm dense seed heads are dry internally.",
+          "Cool grain before sealing containers.",
+          "Store only clean grain.",
+          "Protect grain from rain and humidity.",
+          "Use rodent-resistant containers whenever practical.",
+          "Prevent insect access.",
+          "Keep storage areas clean.",
+          "Inspect stored grain regularly.",
+          "Rotate inventory.",
+          "Remove spilled grain promptly.",
+          "Store away from chemicals and fuels."
+        ],
+
+        contaminationSources: [
+          "Rodents",
+          "Wild birds",
+          "Stored-product insects",
+          "Mold",
+          "Condensation",
+          "Floodwater",
+          "Dirty harvest equipment",
+          "Contaminated drying surfaces",
+          "Chemical residues",
+          "Fuel spills",
+          "Petroleum products",
+          "Pesticides",
+          "Herbicides",
+          "Fertilizers",
+          "Animal waste"
+        ],
+
+        whenToDiscard: [
+          "Visible mold is present.",
+          "The grain smells musty or sour.",
+          "Heating or fermentation has occurred.",
+          "Rodent contamination is discovered.",
+          "Wild-bird contamination is evident.",
+          "Chemical contamination is suspected.",
+          "Standing moisture has entered the container.",
+          "The safety of the grain cannot be determined."
+        ],
+
+        practicalBackyardGuidance:
+          "When any doubt exists regarding mold, contamination, fermentation, heating, or chemical exposure, discard the affected material rather than attempting to salvage it. The value of the harvested grain is never worth risking flock health."
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Treating Amaranth as a complete poultry feed",
+
+            whyItIsAProblem:
+              "Amaranth grain, foliage, and seed heads do not provide the complete balance of amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and other nutrients required by poultry.",
+
+            correction:
+              "Keep an age-appropriate complete poultry ration available as the flock's primary feed and use Amaranth only as a managed supplement."
+          },
+
+          {
+            mistake:
+              "Offering unrestricted raw grain",
+
+            whyItIsAProblem:
+              "Raw Amaranth grain contains variable antinutritional compounds and can displace nutritionally complete feed when offered without limits.",
+
+            correction:
+              "Use measured portions, introduce the grain gradually, and consider appropriate processing when Amaranth will represent more than a minor supplement."
+          },
+
+          {
+            mistake:
+              "Assuming higher protein makes Amaranth nutritionally complete",
+
+            whyItIsAProblem:
+              "A favorable crude-protein percentage and useful lysine concentration do not ensure a complete amino-acid profile or balanced poultry ration.",
+
+            correction:
+              "Evaluate Amaranth as one ingredient within the complete diet rather than as a stand-alone protein source."
+          },
+
+          {
+            mistake:
+              "Copying research inclusion percentages into a homemade feed",
+
+            whyItIsAProblem:
+              "Published poultry studies generally use complete experimental diets balanced for energy, amino acids, minerals, vitamins, and other nutrients.",
+
+            correction:
+              "Do not apply research inclusion rates directly unless the entire ration has been formulated by a qualified poultry nutritionist."
+          },
+
+          {
+            mistake:
+              "Feeding unidentified wild pigweed",
+
+            whyItIsAProblem:
+              "Unknown Amaranthus species may differ in nitrate accumulation, oxalate concentration, maturity, chemical exposure, and overall feeding suitability.",
+
+            correction:
+              "Feed only positively identified cultivated food-grade grain or vegetable Amaranth with a known growing history."
+          },
+
+          {
+            mistake:
+              "Feeding chemically treated planting seed",
+
+            whyItIsAProblem:
+              "Planting seed may contain fungicides, insecticides, polymers, dyes, or other coatings not intended for animal consumption.",
+
+            correction:
+              "Use only untreated food-grade or feed-grade grain."
+          },
+
+          {
+            mistake:
+              "Harvesting leafy material from severely stressed plants",
+
+            whyItIsAProblem:
+              "Drought, excessive nitrogen fertility, low light, cold, or interrupted growth may increase nitrate accumulation in leaves and stems.",
+
+            correction:
+              "Avoid questionable foliage and harvest only healthy, actively growing, tender plant material."
+          },
+
+          {
+            mistake:
+              "Feeding large quantities of mature foliage",
+
+            whyItIsAProblem:
+              "Older leaves and stems become increasingly fibrous and may contain variable nitrate and oxalate concentrations.",
+
+            correction:
+              "Use only limited amounts of tender young leaves and growing tips."
+          },
+
+          {
+            mistake:
+              "Storing seed heads before they are dry internally",
+
+            whyItIsAProblem:
+              "Dense seed heads may retain moisture beneath an apparently dry outer surface, allowing heating, fermentation, and mold to develop.",
+
+            correction:
+              "Dry heads thoroughly with strong airflow and inspect their interiors before enclosed storage."
+          },
+
+          {
+            mistake:
+              "Sealing warm grain in airtight containers",
+
+            whyItIsAProblem:
+              "Warm grain can release moisture after sealing, leading to condensation and spoilage.",
+
+            correction:
+              "Allow grain to dry and cool completely before storage."
+          },
+
+          {
+            mistake:
+              "Trying to salvage moldy grain",
+
+            whyItIsAProblem:
+              "Washing, drying, cooking, roasting, or grinding does not reliably make mold-damaged grain safe.",
+
+            correction:
+              "Discard moldy, musty, heated, sour, or otherwise questionable material."
+          },
+
+          {
+            mistake:
+              "Grinding or cracking too much grain in advance",
+
+            whyItIsAProblem:
+              "Breaking the grain exposes more surface area to oxygen, humidity, insects, and contamination and reduces storage stability.",
+
+            correction:
+              "Store grain whole and process only the amount expected to be used promptly."
+          },
+
+          {
+            mistake:
+              "Leaving cooked Amaranth in the run",
+
+            whyItIsAProblem:
+              "Moist cooked grain can sour, mold, attract flies, and become contaminated quickly, especially in warm weather.",
+
+            correction:
+              "Offer only a small amount and remove uneaten material promptly."
+          },
+
+          {
+            mistake:
+              "Using deep litter as the feeding surface for tiny grain",
+
+            whyItIsAProblem:
+              "Amaranth grain can disappear into bedding, become damp, attract rodents, and remain unavailable to the flock.",
+
+            correction:
+              "Use a shallow pan, tray, trough, or other clean feeding surface."
+          },
+
+          {
+            mistake:
+              "Offering one seed head to a large flock",
+
+            whyItIsAProblem:
+              "Dominant birds may monopolize access while lower-ranking birds receive little or none.",
+
+            correction:
+              "Provide several heads or feeding stations spaced far enough apart to reduce competition."
+          },
+
+          {
+            mistake:
+              "Ignoring complete-feed consumption",
+
+            whyItIsAProblem:
+              "Highly palatable supplements may reduce intake of the balanced ration, leading to nutritional dilution.",
+
+            correction:
+              "Monitor complete-feed intake and reduce Amaranth portions if normal ration consumption declines."
+          },
+
+          {
+            mistake:
+              "Assuming laying hens receive enough calcium from Amaranth",
+
+            whyItIsAProblem:
+              "Neither Amaranth grain nor foliage supplies dependable calcium in the concentration required for sustained eggshell production.",
+
+            correction:
+              "Maintain complete layer feed and an appropriate calcium-management program."
+          },
+
+          {
+            mistake:
+              "Using Amaranth to treat illness or poor production",
+
+            whyItIsAProblem:
+              "Reduced laying, weight loss, poor feathering, weakness, or digestive changes may reflect disease, parasites, environmental stress, or broader nutritional problems.",
+
+            correction:
+              "Investigate the underlying cause and seek poultry-veterinary guidance when appropriate."
+          }
+        ],
+
+        preventionSummary:
+          "Most feeding errors are prevented by positive plant identification, conservative portions, proper harvest timing, thorough drying, clean storage, prompt removal of moist leftovers, and continued reliance on a complete poultry ration."
+      },
+
+      troubleshooting: {
+        flockRefusesGrain: {
+          possibleCauses: [
+            "The grain is unfamiliar",
+            "Birds have ample access to preferred complete feed",
+            "The grain is mixed with excessive chaff",
+            "The grain has an abnormal odor",
+            "The feeding container is unfamiliar",
+            "The flock prefers whole seed heads to loose grain"
+          ],
+
+          recommendedActions: [
+            "Confirm the grain is clean, mature, dry, and free from spoilage.",
+            "Introduce a very small amount alongside familiar feed.",
+            "Offer the grain in a shallow clean dish.",
+            "Try a thoroughly dried mature seed head as enrichment.",
+            "Do not withhold complete feed to force acceptance.",
+            "Discard the grain if an abnormal odor or appearance is present."
+          ]
+        },
+
+        flockRefusesLeaves: {
+          possibleCauses: [
+            "Leaves are too mature or fibrous",
+            "The material has wilted",
+            "The flock is unfamiliar with fresh Amaranth",
+            "Coarse stems remain attached",
+            "Birds have access to more preferred forage"
+          ],
+
+          recommendedActions: [
+            "Harvest younger, more tender leaves and growing tips.",
+            "Remove coarse stems.",
+            "Offer leaves immediately after harvest.",
+            "Chop a small amount into manageable pieces.",
+            "Introduce gradually without reducing complete feed."
+          ]
+        },
+
+        completeFeedConsumptionDeclines: {
+          possibleCauses: [
+            "Too much grain is being offered",
+            "Whole seed heads remain available continuously",
+            "Multiple supplemental feeds are being offered together",
+            "Dominant birds are consuming excessive supplements"
+          ],
+
+          recommendedActions: [
+            "Reduce the amount and frequency of Amaranth feeding.",
+            "Offer supplements only after birds have consumed their normal ration.",
+            "Remove seed heads after a limited enrichment period.",
+            "Review all treats and supplements rather than Amaranth alone.",
+            "Monitor body condition and egg production."
+          ]
+        },
+
+        looseDroppingsAfterFeeding: {
+          possibleCauses: [
+            "The flock consumed too much fresh foliage",
+            "Cooked grain was offered in excessive quantity",
+            "A new feed was introduced too rapidly",
+            "Spoiled or contaminated material was consumed",
+            "An unrelated health problem is present"
+          ],
+
+          recommendedActions: [
+            "Stop Amaranth supplementation temporarily.",
+            "Return the flock to its normal complete ration and clean water.",
+            "Discard any questionable grain, foliage, or seed heads.",
+            "Reintroduce only a very small amount after droppings normalize.",
+            "Seek veterinary guidance if abnormal droppings persist or additional symptoms develop."
+          ]
+        },
+
+        grainIsBeingWasted: {
+          possibleCauses: [
+            "The seed is falling through the feeder",
+            "Grain is being scattered into deep litter",
+            "Seed heads are shattering excessively",
+            "Birds are sorting grain from another feed mixture",
+            "Wind is blowing tiny grain from the feeding area"
+          ],
+
+          recommendedActions: [
+            "Use a shallow tray or fine-bottomed feeder.",
+            "Feed on a clean solid surface.",
+            "Place seed heads over a catch pan.",
+            "Offer smaller measured amounts.",
+            "Move feeding away from strong wind.",
+            "Avoid mixing tiny grain into a ration from which birds can selectively sort ingredients."
+          ]
+        },
+
+        seedHeadsDevelopMold: {
+          possibleCauses: [
+            "Heads were stored before fully dry",
+            "Dense interior material retained moisture",
+            "Stored heads absorbed humidity",
+            "Air circulation was inadequate",
+            "Heads contacted damp walls, floors, or bedding"
+          ],
+
+          recommendedActions: [
+            "Discard every moldy or musty head.",
+            "Inspect nearby stored material carefully.",
+            "Improve drying time and airflow for future harvests.",
+            "Store heads off floors and away from exterior walls.",
+            "Use smaller bundles or shallower layers.",
+            "Do not attempt to salvage moldy heads by reheating or redrying."
+          ]
+        },
+
+        storedGrainFeelsWarm: {
+          possibleCauses: [
+            "Grain was sealed before cooling",
+            "Moisture content remains too high",
+            "Microbial activity has begun",
+            "Condensation has developed",
+            "Insect activity is present"
+          ],
+
+          recommendedActions: [
+            "Stop feeding from the affected container.",
+            "Open and inspect the grain in a well-ventilated area.",
+            "Check for moisture, sour odor, mold, clumping, and insects.",
+            "Discard grain showing heating, fermentation, mold, or contamination.",
+            "Review drying and cooling practices before storing future harvests."
+          ]
+        },
+
+        storedGrainHasInsects: {
+          possibleCauses: [
+            "Insects entered during drying",
+            "Containers were not insect resistant",
+            "Previously infested grain or equipment was used",
+            "Storage sanitation was inadequate"
+          ],
+
+          recommendedActions: [
+            "Isolate the affected container.",
+            "Inspect all nearby grain and seed heads.",
+            "Discard heavily contaminated or deteriorated material.",
+            "Clean the storage area and equipment thoroughly.",
+            "Use clean, tightly closing food-grade containers for future storage.",
+            "Consider an appropriate food-safe freezing procedure for clean dry grain when insect control is needed."
+          ]
+        },
+
+        rodentsAreAttractedToTheArea: {
+          possibleCauses: [
+            "Spilled grain remains in litter or soil",
+            "Seed heads are stored in accessible containers",
+            "Feed is left available overnight",
+            "Storage containers are not rodent resistant",
+            "Harvest debris has accumulated"
+          ],
+
+          recommendedActions: [
+            "Clean spilled grain promptly.",
+            "Store grain and seed heads in rodent-resistant containers or structures.",
+            "Remove supplemental feed before nightfall.",
+            "Clean chaff and harvest debris from storage areas.",
+            "Inspect for gnawing, droppings, urine, and nesting material.",
+            "Discard any rodent-contaminated feed."
+          ]
+        },
+
+        layingPerformanceDeclines: {
+          possibleCauses: [
+            "Amaranth or other supplements are displacing complete layer feed",
+            "Calcium intake is inadequate",
+            "The flock is molting",
+            "Day length has decreased",
+            "Heat, cold, disease, parasites, age, or stress is affecting production"
+          ],
+
+          recommendedActions: [
+            "Reduce all supplemental feeds.",
+            "Confirm that a complete layer ration is continuously available.",
+            "Review calcium access and flock water intake.",
+            "Evaluate season, molt status, body condition, and environmental stress.",
+            "Seek veterinary assistance when decline is unexplained, severe, or accompanied by illness."
+          ]
+        },
+
+        birdsCompeteAggressivelyForSeedHeads: {
+          possibleCauses: [
+            "Too few heads are being offered",
+            "Heads are placed too close together",
+            "The flock has limited feeding space",
+            "The enrichment item is unusually novel or desirable"
+          ],
+
+          recommendedActions: [
+            "Provide several seed heads at widely separated locations.",
+            "Use multiple hanging heights appropriate for the flock.",
+            "Supervise the first feeding sessions.",
+            "Remove the heads if competition becomes injurious.",
+            "Address broader crowding or bullying problems separately."
+          ]
+        },
+
+        troubleshootingSummary:
+          "When a problem follows Amaranth feeding, first remove the supplement, inspect its condition, restore the flock's normal complete ration, and evaluate whether excessive intake, spoilage, poor preparation, competition, or an unrelated health issue is responsible."
+      },
+
+
+            faq: [
+        {
+          question:
+            "Can chickens eat Amaranth?",
+
+          answer:
+            "Yes. Chickens can eat clean mature Amaranth grain, appropriately processed grain, tender young leaves, and fully mature dried seed heads from positively identified cultivated food-grade Amaranth. All forms should remain supplemental to a nutritionally complete poultry ration."
+        },
+
+        {
+          question:
+            "Can chickens eat raw Amaranth grain?",
+
+          answer:
+            "Healthy adult chickens can consume limited amounts of clean mature raw Amaranth grain. However, unrestricted raw-grain feeding is not recommended because the grain contains variable phytate, tannins, oxalates, protease inhibitors, saponins, and other antinutritional compounds."
+        },
+
+        {
+          question:
+            "Can chickens eat cooked Amaranth?",
+
+          answer:
+            "Yes. Plain cooked Amaranth grain may be offered in small amounts when it contains no salt, butter, oil, sauces, seasonings, or unsafe ingredients. Remove uneaten cooked grain promptly because moist food spoils quickly."
+        },
+
+        {
+          question:
+            "Does Amaranth grain have to be cooked before feeding?",
+
+          answer:
+            "No. Cooking is not required for occasional limited supplementation of clean mature grain to healthy adult chickens. Appropriate processing may improve feeding value when Amaranth will make up a more meaningful portion of a professionally balanced ration."
+        },
+
+        {
+          question:
+            "Can chickens eat Amaranth leaves?",
+
+          answer:
+            "Yes. Tender young leaves and growing tips from positively identified cultivated Amaranth may be offered in moderation. Young foliage is preferred because older leaves and stems become fibrous, while nitrate and oxalate concentrations may vary with species, maturity, fertility, and growing stress."
+        },
+
+        {
+          question:
+            "Can chickens eat Amaranth stems?",
+
+          answer:
+            "Tender young stem tips may be pecked along with young leaves, but coarse mature stems have little practical feeding value. Mature stems are fibrous, difficult to consume, and should generally be removed from harvested leafy material."
+        },
+
+        {
+          question:
+            "Can chickens eat Amaranth seed heads?",
+
+          answer:
+            "Yes. Fully mature, sound seed heads can provide excellent pecking enrichment. Feed them fresh and clean or after they have been dried thoroughly, and remove any head that becomes wet, moldy, fermented, or contaminated."
+        },
+
+        {
+          question:
+            "Can chickens eat immature Amaranth seed heads?",
+
+          answer:
+            "Immature seed heads are not the preferred feeding form because the grain may be poorly developed, moist, and less suitable for storage. Allow heads intended for grain or enrichment to mature fully before harvest."
+        },
+
+        {
+          question:
+            "Are all pigweeds safe for chickens?",
+
+          answer:
+            "No. Numerous cultivated and wild plants belong to the genus Amaranthus. Species identity, pesticide exposure, nitrate accumulation, oxalate concentration, maturity, and environmental contamination may differ. Feed only positively identified cultivated food-grade Amaranth from a known source."
+        },
+
+        {
+          question:
+            "Can baby chicks eat Amaranth?",
+
+          answer:
+            "Whole grain, seed heads, and leafy Amaranth are not recommended as routine feeds for young chicks. Chicks should rely on an age-appropriate complete starter ration. A professionally formulated starter containing an evaluated processed Amaranth ingredient is a different feeding situation."
+        },
+
+        {
+          question:
+            "Do chickens need grit to eat Amaranth grain?",
+
+          answer:
+            "Adult chickens consuming whole Amaranth grain should have access to appropriately sized insoluble grit whenever they do not obtain enough natural grit from their environment."
+        },
+
+        {
+          question:
+            "Is Amaranth a good protein source for chickens?",
+
+          answer:
+            "Amaranth grain generally contains more crude protein and a stronger lysine contribution than many common cereal grains. However, it does not provide the complete amino-acid, vitamin, mineral, energy, and calcium balance required for a complete poultry ration."
+        },
+
+        {
+          question:
+            "Can Amaranth improve egg production?",
+
+          answer:
+            "Amaranth does not guarantee increased egg production. Laying performance depends on genetics, age, daylight, health, stress, water intake, body condition, and complete layer nutrition. Excessive supplementation may reduce production if balanced feed consumption declines."
+        },
+
+        {
+          question:
+            "Is Amaranth good for chickens during molt?",
+
+          answer:
+            "Amaranth grain can contribute supplemental protein, lysine, energy, and dietary variety during molt. It does not provide the complete digestible amino-acid balance, vitamins, and minerals required for feather replacement, so complete feed remains more important."
+        },
+
+        {
+          question:
+            "Is Amaranth useful for chickens in winter?",
+
+          answer:
+            "Yes. Properly dried grain and mature seed heads can provide stored winter supplementation and enrichment. Amaranth should not be used to compensate for inadequate shelter, frozen water, poor body condition, or an incomplete ration."
+        },
+
+        {
+          question:
+            "Can chickens eat Amaranth every day?",
+
+          answer:
+            "A small supplemental amount may fit some flock-management programs, but daily use is not automatically appropriate for every flock. The total amount of Amaranth and all other treats must remain limited enough to protect complete-feed intake."
+        },
+
+        {
+          question:
+            "How much Amaranth should I give my chickens?",
+
+          answer:
+            "There is no single crop-specific serving amount suitable for every flock. Use Amaranth as a limited part of total supplemental feeding and adjust according to bird age, flock size, body condition, activity, weather, base ration, and the form being offered."
+        },
+
+        {
+          question:
+            "Can Amaranth replace commercial chicken feed?",
+
+          answer:
+            "No. Amaranth does not contain the complete balance of energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and other nutrients required for long-term poultry health and production."
+        },
+
+        {
+          question:
+            "Should Amaranth grain be cracked or ground?",
+
+          answer:
+            "Healthy adult chickens can generally consume the tiny grain whole. Cracking or grinding is optional and may help when incorporating Amaranth into a formulated feed mixture, but processing shortens storage life by exposing more of the grain to moisture, oxygen, insects, and contamination."
+        },
+
+        {
+          question:
+            "Does processing eliminate all Amaranth antinutritional compounds?",
+
+          answer:
+            "No. Boiling, roasting, popping, extrusion, germination, fermentation, and other processing methods may reduce or alter certain antinutritional compounds, but no single household treatment should be assumed to eliminate every nutritional limitation."
+        },
+
+        {
+          question:
+            "Can moldy Amaranth be salvaged?",
+
+          answer:
+            "No. Moldy, musty, fermented, heated, chemically contaminated, or rodent-contaminated grain and seed heads should be discarded. Washing, reheating, redrying, grinding, or mixing questionable material with clean feed does not make it reliably safe."
+        },
+
+        {
+          question:
+            "Can I feed leftover Amaranth planting seed?",
+
+          answer:
+            "Only when the seed is clearly documented as untreated and suitable for food or feed. Seed coated with fungicides, insecticides, polymers, dyes, or other planting treatments must never be fed to chickens."
+        },
+
+        {
+          question:
+            "Can whole Amaranth seed heads be stored?",
+
+          answer:
+            "Yes. Fully mature seed heads may be stored for later enrichment after they have dried completely. Dense heads require strong airflow and periodic inspection because moisture can remain trapped inside even when the exterior appears dry."
+        },
+
+        {
+          question:
+            "Why are my chickens refusing stored Amaranth?",
+
+          answer:
+            "Possible reasons include unfamiliarity, excessive chaff, poor grain fill, moisture damage, mold, insects, fermentation, contamination, or abnormal odor. Inspect the grain carefully and discard it whenever quality or safety is uncertain."
+        }
+      ],
+
+            expertSummary: {
+        oneSentence:
+          "Amaranth is a versatile supplemental crop that can provide mature grain, limited tender greens, and dried seed-head enrichment for backyard chickens when it is positively identified, harvested carefully, processed appropriately, and fed without displacing complete poultry feed.",
+
+        oneParagraph:
+          "Amaranth offers several useful backyard-flock applications, especially as a warm-season source of mature grain, occasional tender foliage, and whole-head enrichment. Its grain generally provides more protein and a stronger lysine contribution than many common cereal grains, but it remains nutritionally incomplete and contains variable antinutritional compounds. Young leaves may be offered sparingly, while mature foliage is increasingly fibrous and may contain variable nitrate and oxalate concentrations. Thorough drying, clean storage, conservative portions, and continued access to an age-appropriate complete poultry ration are essential.",
+
+        recommendation:
+          "Use Amaranth primarily as a measured supplemental grain and occasional whole-seed-head enrichment crop, with limited amounts of tender young foliage offered only from healthy, positively identified cultivated plants.",
+
+        recommendationReasoning:
+          "Mature Amaranth grain is the crop's most concentrated, storable, and nutritionally useful poultry-feed form. Dried seed heads add enrichment while reducing threshing labor, and young leaves can provide seasonal dietary variety. However, raw-grain antinutritional compounds, variable nitrate and oxalate levels in foliage, tiny-grain handling losses, and the risk of complete-feed displacement make unrestricted feeding inappropriate.",
+
+        idealUseCase:
+          "A backyard keeper grows a known food-grade Amaranth cultivar, harvests tender leaves only in small amounts, allows seed heads to mature fully, dries them thoroughly, stores clean grain or whole heads safely, and offers them occasionally while maintaining unrestricted access to complete poultry feed.",
+
+        notRecommendedAs:
+          "A complete poultry ration, an unrestricted free-choice grain, a dependable layer-calcium source, a primary feed for chicks, a treatment for illness or poor production, or a substitute for professionally formulated feed."
+      },
+
+      scientificNotes: {
+        taxonomy:
+          "Amaranth belongs to the genus Amaranthus within the family Amaranthaceae. Cultivated grain species commonly include Amaranthus cruentus, Amaranthus hypochondriacus, and Amaranthus caudatus, while vegetable, ornamental, and weedy species may differ substantially in agronomic and nutritional characteristics.",
+
+        grainClassification:
+          "Amaranth is classified as a pseudocereal rather than a true cereal grass. Its tiny seeds are used similarly to grain but are produced by a broadleaf plant rather than a member of the grass family.",
+
+        nutrientInterpretation:
+          "Reported nutrient values vary according to species, cultivar, growing environment, grain maturity, analytical method, dry-matter basis, processing treatment, and whether the sample consists of whole grain, flour, meal, bran, starch, leaf tissue, or another fraction.",
+
+        aminoAcidInterpretation:
+          "Amaranth's lysine concentration is generally more favorable than that of many cereal grains, but the complete amino-acid pattern and digestibility still must be considered within the total ration.",
+
+        antinutritionalInterpretation:
+          "Phytate, tannins, oxalates, saponins, protease inhibitors, and related compounds have been reported in Amaranth. Their concentrations and practical effects vary among cultivars, plant parts, processing methods, bird stages, and dietary inclusion levels.",
+
+        processingInterpretation:
+          "Boiling, steaming, roasting, popping, extrusion, germination, fermentation, and other treatments may alter nutrient availability and antinutritional compounds. Results from one processing method should not be assumed to apply to every household preparation.",
+
+        nitrateInterpretation:
+          "Nitrate accumulation is influenced by nitrogen availability, drought, low light, cold, interrupted growth, maturity, plant part, and other environmental factors. Visual appearance cannot confirm nitrate concentration.",
+
+        oxalateInterpretation:
+          "Oxalate concentrations vary among species, cultivars, plant parts, maturity stages, and growing conditions. Leaf values should not be applied directly to mature grain, and grain values should not be applied to foliage.",
+
+        researchApplication:
+          "Poultry studies often evaluate measured Amaranth ingredients within complete experimental diets formulated for specific bird stages and production goals. Those studies provide useful evidence about ingredient potential but do not establish one universal backyard serving amount.",
+
+        evidenceLimitations: [
+          "Published studies use different Amaranth species and cultivars.",
+          "Raw and processed products are not nutritionally identical.",
+          "Whole grain, flour, meal, leaf meal, and extracted fractions should not be treated as equivalent.",
+          "Experimental diets are usually balanced for nutrients beyond the Amaranth ingredient.",
+          "Broiler, layer, chick, and adult-backyard-flock results are not automatically interchangeable.",
+          "Laboratory composition values do not predict exact homegrown crop composition.",
+          "No single research inclusion percentage applies to every backyard flock."
+        ],
+
+        confidenceStatement:
+          "Confidence is high that cultivated food-grade Amaranth can provide useful supplemental grain and limited leafy-feed value. Confidence is moderate regarding exact backyard serving quantities because species, cultivar, processing, complete ration, bird stage, and management conditions vary substantially."
+      },
+
+      practicalUse: {
+        easiestBackyardUse:
+          "Harvest fully mature seed heads, dry them thoroughly, and offer them occasionally as supervised pecking enrichment while complete feed remains freely available.",
+
+        mostControlledUse:
+          "Thresh, winnow, clean, dry, and measure loose mature grain before offering it in a shallow feeder.",
+
+        mostNutritionallyAdvancedUse:
+          "Use appropriately processed Amaranth grain as a calculated ingredient in a professionally formulated poultry ration.",
+
+        lowestLaborUse:
+          "Offer a limited number of thoroughly dried mature seed heads without complete threshing.",
+
+        highestLaborUse:
+          "Harvest, dry, thresh, winnow, screen, heat-process, crack or grind, measure, and incorporate the grain into a balanced feed mixture.",
+
+        freshSeasonalUse:
+          "Harvest small amounts of tender young leaves and growing tips from healthy, unstressed plants and offer them promptly as supplemental greens.",
+
+        winterUse:
+          "Store cleaned whole grain or thoroughly dried mature seed heads for measured supplementation and enrichment during periods of limited fresh forage.",
+
+        smallHarvestUse:
+          "Reserve a modest harvest for whole-head enrichment, occasional loose-grain feeding, household cooking, or planting seed rather than attempting bulk ration formulation.",
+
+        largeHarvestUse:
+          "Separate the harvest into household grain, planting seed, whole-head enrichment, stored poultry grain, and any quantity intended for professionally formulated feed use.",
+
+        practicalSequence: [
+          "Select a cultivated food-grade grain or vegetable Amaranth.",
+          "Choose whether the primary goal is grain, tender leaves, seed-head enrichment, or dual-purpose use.",
+          "Harvest only clean material from plants with a known growing and chemical history.",
+          "Use tender foliage while young and avoid stressed or questionable plants.",
+          "Allow grain to reach full maturity.",
+          "Dry seed heads thoroughly with strong airflow.",
+          "Store whole heads for enrichment or thresh and clean the grain.",
+          "Keep whole grain dry, cool, clean, and protected from pests.",
+          "Introduce small supplemental portions gradually.",
+          "Monitor complete-feed intake, body condition, droppings, and flock competition.",
+          "Discard any moldy, musty, heated, fermented, chemically contaminated, or rodent-contaminated material."
+        ],
+
+        finalBackyardRecommendation:
+          "For most backyard keepers, the best balance of nutrition, safety, and labor is to use tender young leaves sparingly during the growing season, save fully mature dried seed heads for enrichment, and offer cleaned mature grain only in measured amounts. Complete poultry feed should remain continuously available."
+      },
+
+            metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "moderate-to-high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+
+    
+    
+    
+      chickenUse: {
       edibleParts: [
         "Clean mature grain from cultivated food-grade amaranth varieties",
         "Properly dried whole grain",
