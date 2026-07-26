@@ -35344,7 +35344,3568 @@ mechanicalProcessingSuitabilityScore:
     summary:
       "Pumpkins and Winter Squash are frost-sensitive annual Cucurbita crops that can provide moisture-rich mature flesh, nutrient-dense seeds, whole-fruit pecking enrichment, household food, non-electric winter storage, pollinator support, broad seasonal ground cover, compost biomass, and use of sound surplus fruit. Their poultry value varies substantially by harvested product: fresh flesh is bulky and water-rich, while dried seeds and seed kernels are more concentrated in fat, protein, phosphorus, and energy. Neither flesh nor seeds should be treated as a complete replacement for balanced poultry feed.",
 
-    chickenUse: {
+    ///////////////////////////
+//
+//  Pumpkin and Winter Squash - What can chickens eat?
+//
+//////////////////////////
+
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Pumpkins and Winter Squash?",
+
+        answerLabel:
+          "Yes — mature edible Pumpkin and Winter Squash flesh, pulp, and seeds are safe supplemental foods for established adult chickens.",
+
+        quickAnswer:
+          "Chickens can safely eat sound, mature edible Pumpkins and Winter Squash, including raw flesh, soft internal pulp, plain cooked flesh, mature whole seeds, and plain hulled seed kernels. Split or punctured whole fruit can provide excellent pecking enrichment, while properly cured intact fruit can provide useful fall and winter storage. Fresh flesh is moisture rich and relatively low in concentrated nutrition, whereas dried seeds and kernels contain much more fat, protein, phosphorus, and energy. Neither flesh nor seeds should replace a nutritionally complete poultry ration. Moldy, rotten, fermented, contaminated, decorative, or abnormally bitter fruit should never be fed.",
+
+        detailedAnswer:
+          "Pumpkins and Winter Squash are practical multipurpose homestead crops that can provide moisture-rich supplemental produce, carotenoid-containing flesh, mature seeds, whole-fruit enrichment, household food, and non-electric seasonal storage. Established adult chickens may consume the mature flesh, pulp, and seeds of correctly identified edible Cucurbita cultivars. Hard-rinded fruit should generally be split, quartered, punctured, or otherwise opened so birds can reach the edible interior. Fresh flesh contains substantial water and relatively little concentrated protein or energy, while dried whole seeds, hulled kernels, and seed meal are much more nutrient dense and must be evaluated separately. Seeds can contribute oil, energy, protein, phosphorus, magnesium, vitamin E compounds, and unsaturated fatty acids, but they remain nutritionally incomplete and may contribute excessive calories or fat when fed freely. The crop should therefore be used as supplemental produce, measured seed supplementation, seasonal enrichment, stored whole fruit, or a professionally formulated feed ingredient rather than as unrestricted staple food. Fruit that is extremely bitter, moldy, fermenting, leaking, slimy, rotten, frozen and decomposing, rodent contaminated, flood contaminated, chemically treated, or of uncertain ornamental or volunteer-cross origin should be rejected.",
+
+        primaryFeedingRole:
+          "Moisture-rich supplemental produce and whole-fruit enrichment crop with a separate nutrient-dense seed component",
+
+        secondaryFeedingRoles: [
+          "Fall and winter pecking enrichment",
+          "Stored seasonal produce",
+          "Carotenoid-containing flesh supplement",
+          "Moisture-rich garden-to-flock feed",
+          "Supplemental source of seed oil",
+          "Moderate-to-high seed-protein contribution",
+          "Use of sound surplus or cosmetically imperfect fruit",
+          "Shared household-and-flock food crop",
+          "Plain cooked or frozen supplemental produce",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Highly recommended as a seasonal supplemental produce and enrichment crop for established adult chickens when edible cultivars are harvested mature, stored correctly, opened safely, and removed before spoilage.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-pumpkins-and-winter-squash-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe-with-important-quality-precautions",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal",
+
+        primaryProductType:
+          "mature-storage-fruit-and-seed",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          5,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          4,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          3,
+
+        proteinValueScore:
+          2,
+
+        enrichmentValueScore:
+          5,
+
+        winterValueScore:
+          5,
+
+        storageValueScore:
+          5,
+
+        preparationSimplicityScore:
+          4,
+
+        portionControlEaseScore:
+          2,
+
+        beginnerFriendlinessScore:
+          4,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          3,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Pumpkins and Winter Squash as supplemental backyard-chicken crops rather than as complete poultry feed.",
+
+          "The high overall score reflects excellent whole-fruit enrichment, strong seasonal-storage value, simple low-processing use, household-food value, and usefulness for confined adult flocks.",
+
+          "The feeding-safety score is reduced because rotten fruit may be hidden beneath an apparently sound rind, abnormally bitter fruit may contain unsafe cucurbitacin concentrations, and opened fruit spoils rapidly.",
+
+          "The energy score represents the combined crop record. Fresh flesh has low energy density because of its high water content, while dried seeds and kernels are substantially more energy dense.",
+
+          "The protein score reflects the crop's most common backyard feeding form. Fresh flesh is low in protein even though dried seed products may contain moderate-to-high protein.",
+
+          "Young-chick suitability is intentionally low because chicks should receive an age-appropriate complete starter ration and should not have balanced-feed intake displaced by bulky flesh, whole seeds, or informal seed products.",
+
+          "Whole split fruit provides outstanding enrichment but makes actual intake, edible yield, rind waste, seed consumption, and nutrient contribution difficult to measure.",
+
+          "Preparation is simple when sound mature fruit is washed and split, but seed cleaning, drying, hulling, grinding, dehydration, freezing, and puree storage require additional labor.",
+
+          "Storage value applies primarily to sound mature whole fruit of suitable storage cultivars. Cut fruit, thawed flesh, puree, and fresh seed pulp have much shorter usable lives.",
+
+          "Direct garden access receives a low score because chickens can damage vines, flowers, immature fruit, mulch, and developing crops before harvest.",
+
+          "Pumpkin seeds should not receive a higher score based on claims that they are a proven poultry dewormer because dependable treatment evidence is not established."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Sound, mature flesh, pulp, and seeds from correctly identified edible Pumpkin and Winter Squash cultivars are safe supplemental foods for established adult chickens. The principal concerns are abnormally bitter fruit containing elevated cucurbitacins, hidden internal decay, mold, fermentation, bacterial spoilage, chemical or rodent contamination, nutrient dilution from excessive watery flesh, excessive fat and calorie intake from unrestricted seeds, and unsafe reliance on Pumpkin seeds as a parasite treatment.",
+
+        whyModerationIsRequired:
+          "Fresh Pumpkin and Winter Squash flesh contains substantial water and may fill the digestive tract while supplying much less protein, energy, calcium, and balanced nutrition than complete poultry feed. Seeds and hulled kernels create the opposite concern because they contain much more concentrated fat, calories, protein, and phosphorus. Excessive intake of either form can reduce complete-feed consumption and disturb overall ration balance. Moderation must therefore consider whether the flock is consuming watery flesh, whole seeds, kernels, dehydrated flesh, seed meal, or another processed form.",
+
+        safeMaterials: [
+          {
+            item:
+              "Sound mature raw Pumpkin or Winter Squash flesh",
+
+            status:
+              "safe",
+
+            explanation:
+              "Clean flesh from a mature, correctly identified edible cultivar may be offered raw as supplemental produce. Hard fruit should be opened so chickens can reach the interior."
+          },
+
+          {
+            item:
+              "Soft internal pulp from sound mature fruit",
+
+            status:
+              "safe",
+
+            explanation:
+              "The soft fibrous interior surrounding mature seeds may be offered when the fruit is fresh, sound, clean, and free from abnormal bitterness or spoilage."
+          },
+
+          {
+            item:
+              "Whole mature fruit split or punctured open",
+
+            status:
+              "safe",
+
+            explanation:
+              "A sound mature fruit may be split, quartered, punctured, or otherwise opened to provide sustained pecking enrichment. The exterior should be washed before cutting, and leftovers should be removed before decay develops."
+          },
+
+          {
+            item:
+              "Sound mature whole seeds",
+
+            status:
+              "safe",
+
+            explanation:
+              "Fresh mature seeds from a sound edible fruit may be consumed by established adult chickens. Seeds are substantially more energy and fat dense than the surrounding flesh and should remain supplemental."
+          },
+
+          {
+            item:
+              "Cleaned and thoroughly dried whole seeds",
+
+            status:
+              "safe",
+
+            explanation:
+              "Plain mature seeds may be stored and fed after cleaning and complete drying. Whole seeds contain more hull fiber and less concentrated usable nutrition than hulled kernels."
+          },
+
+          {
+            item:
+              "Plain hulled seed kernels",
+
+            status:
+              "safe",
+
+            explanation:
+              "Plain unsalted kernels are safe but highly concentrated in oil, calories, protein, and phosphorus relative to fresh flesh. Portion control and careful storage are especially important."
+          },
+
+          {
+            item:
+              "Plain cooked and cooled flesh",
+
+            status:
+              "safe",
+
+            explanation:
+              "Plain cooked flesh may be offered after cooling when it contains no butter, oil, salt, sugar, syrup, seasoning, onion, garlic, unsafe food scraps, or spoiled ingredients."
+          },
+
+          {
+            item:
+              "Plain frozen and thawed flesh",
+
+            status:
+              "safe-with-spoilage-precautions",
+
+            explanation:
+              "Previously frozen plain flesh or puree is safe when it was frozen while sound, thawed hygienically, and offered promptly. Thawed tissue softens and spoils rapidly at warm temperatures."
+          },
+
+          {
+            item:
+              "Properly dehydrated plain flesh",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Plain dehydrated flesh may be used when dried thoroughly and protected from moisture. Removing water concentrates the remaining nutrients by weight but does not create complete poultry nutrition."
+          },
+
+          {
+            item:
+              "Sound edible household preparation scraps",
+
+            status:
+              "safe",
+
+            explanation:
+              "Clean rind-adjacent flesh, pulp, seeds, and plain trimmings from edible cultivars may be offered when they have not contacted unsafe ingredients or contaminated surfaces."
+          },
+
+          {
+            item:
+              "Sound cosmetically imperfect fruit",
+
+            status:
+              "safe-after-inspection",
+
+            explanation:
+              "Superficial scarring, shape irregularity, or cosmetic defects do not automatically make fruit unsafe. The rind and interior must remain firm, sound, normally colored, and free from mold, leakage, fermentation, rodent damage, or hidden decay."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Abnormally bitter Pumpkin, Winter Squash, or gourd material",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Pronounced unusual bitterness may indicate elevated cucurbitacin concentrations. Extremely bitter flesh, pulp, juice, or seeds should be rejected rather than cooked, frozen, dried, diluted, or mixed with other feed."
+          },
+
+          {
+            item:
+              "Moldy fruit or flesh",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, fungal growth, internal discoloration, soft decay, or mold beneath the rind indicates unsafe deterioration. Removing only the visible mold does not make the remaining fruit dependable poultry feed."
+          },
+
+          {
+            item:
+              "Rotten, leaking, slimy, or fermented fruit",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Leakage, slime, bubbling, sour odor, alcoholic odor, soft collapse, or decomposing tissue indicates microbial spoilage and possible toxin or pathogen exposure."
+          },
+
+          {
+            item:
+              "Fruit with hidden internal decay",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "An apparently intact rind may conceal rotten, fermented, discolored, or moldy flesh. Every stored fruit should be inspected after opening before it is given to the flock."
+          },
+
+          {
+            item:
+              "Frozen and decomposing fruit",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Fruit damaged by uncontrolled field or storage freezing may become watery, collapsed, leaking, and highly susceptible to rapid microbial decomposition."
+          },
+
+          {
+            item:
+              "Rodent-contaminated fruit or seeds",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Fruit or seed contaminated by rodent urine, feces, nesting material, chewing damage, hair, or carcasses should be discarded because of disease and contamination risks."
+          },
+
+          {
+            item:
+              "Flood-contaminated fruit",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Floodwater may expose the rind, flesh, stem cavity, or damaged tissue to sewage, petroleum products, agricultural chemicals, pathogens, heavy metals, and other contaminants that cannot be corrected reliably through washing or cooking."
+          },
+
+          {
+            item:
+              "Fruit exposed to unsafe pesticide restrictions",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Fruit should not be fed when pesticide labels, preharvest intervals, postharvest treatments, or known chemical exposure make it unsuitable for food or feed use."
+          },
+
+          {
+            item:
+              "Painted, glittered, preserved, or chemically decorated fruit",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Decorative Pumpkins and Squash may be treated with paint, glitter, glue, preservatives, artificial snow, waxes, dyes, flame retardants, or other materials not intended for poultry consumption."
+          },
+
+          {
+            item:
+              "Ornamental gourds of uncertain edibility",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Ornamental gourds vary in bitterness, cucurbitacin content, intended use, and chemical treatment. They should not automatically be treated as equivalent to edible Pumpkin or Winter Squash cultivars."
+          },
+
+          {
+            item:
+              "Unknown volunteer Cucurbita crosses",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Volunteer plants may result from uncontrolled crosses involving ornamental, bitter, or poorly identified Cucurbita types. Fruit with uncertain identity or abnormal bitterness should not be fed."
+          },
+
+          {
+            item:
+              "Salted, seasoned, sweetened, candied, or flavored seeds",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Human snack seeds may contain excessive sodium, oils, sugar, sweeteners, spices, flavorings, or coatings unnecessary or unsuitable for chickens."
+          },
+
+          {
+            item:
+              "Butter-, oil-, sugar-, syrup-, salt-, onion-, or garlic-containing cooked Squash dishes",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Prepared household dishes are not equivalent to plain cooked Squash and may contain unsuitable ingredients, excessive sodium, added fat, added sugar, or spoiled leftovers."
+          },
+
+          {
+            item:
+              "Moldy or incompletely dried stored seeds",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Seeds stored with excessive moisture may heat, mold, ferment, attract insects, develop abnormal odors, and become unsafe."
+          },
+
+          {
+            item:
+              "Rancid seed kernels or ground seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "The oil-rich kernel can oxidize after hulling or grinding. Bitter, stale, paint-like, sharp, soapy, or otherwise abnormal odors and flavors may indicate rancidity."
+          },
+
+          {
+            item:
+              "Spoiled thawed puree or flesh",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Thawed Squash products are highly perishable and should be discarded when left warm too long or when they develop sour odor, slime, gas, mold, or abnormal discoloration."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Abnormally high cucurbitacin concentration",
+
+            riskLevel:
+              "potentially-severe-but-uncommon-in-proper-edible-cultivars",
+
+            explanation:
+              "Cucurbitacins produce pronounced bitterness and may cause serious digestive illness. Any Pumpkin, Winter Squash, gourd, volunteer fruit, seed, or prepared material with unusually strong bitterness should be rejected completely."
+          },
+
+          {
+            hazard:
+              "Dietary displacement from moisture-rich flesh",
+
+            riskLevel:
+              "moderate-to-high-when-overfed",
+
+            explanation:
+              "Fresh flesh contains substantial water and relatively little concentrated protein, energy, calcium, or complete nutrition. Large quantities may fill birds while reducing consumption of balanced feed."
+          },
+
+          {
+            hazard:
+              "Excessive calorie and fat intake from seeds",
+
+            riskLevel:
+              "moderate-to-high-when-unrestricted",
+
+            explanation:
+              "Whole seeds and especially hulled kernels are much more energy dense than the flesh. Unrestricted feeding can contribute excessive calories, dietary fat, selective feeding, and reduced complete-ration intake."
+          },
+
+          {
+            hazard:
+              "Mold and hidden internal decay",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A hard rind may conceal mold, bacterial soft rot, fermentation, or decomposition. Stored fruit must be inspected externally and again after cutting."
+          },
+
+          {
+            hazard:
+              "Rapid spoilage after opening",
+
+            riskLevel:
+              "high-in-warm-or-wet-conditions",
+
+            explanation:
+              "Cut, punctured, chopped, cooked, thawed, or pureed flesh has exposed moist surfaces that support rapid microbial growth and attract insects, rodents, and wild animals."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A single opened fruit may allow dominant birds to control the most accessible flesh, pulp, and seeds while lower-ranking birds receive little."
+          },
+
+          {
+            hazard:
+              "Whole-fruit portioning uncertainty",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Fruit size, rind weight, cavity size, seed content, flesh thickness, water content, actual intake, and waste vary greatly, making whole-fruit feeding unsuitable for precise ration delivery."
+          },
+
+          {
+            hazard:
+              "Seed phytate",
+
+            riskLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Some phosphorus and other minerals in seeds may be associated with phytate and should not be assumed to be completely available to poultry."
+          },
+
+          {
+            hazard:
+              "Seed-hull fiber",
+
+            riskLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Whole seeds contain more structural fiber and less concentrated usable nutrition than hulled kernels. Hulls are not normally toxic but may reduce nutrient density."
+          },
+
+          {
+            hazard:
+              "Unsafe decorative treatments",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Paint, glitter, glue, preservatives, waxes, artificial finishes, pesticide residues, and other decorative or postharvest treatments may make otherwise edible fruit unsuitable for poultry."
+          },
+
+          {
+            hazard:
+              "Rodent and wildlife attraction",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Opened fruit, loose seeds, stored whole fruit, discarded rind, and uneaten pulp can attract mice, rats, raccoons, opossums, insects, wild birds, and other animals."
+          },
+
+          {
+            hazard:
+              "Cutting and lifting injury",
+
+            riskLevel:
+              "low-to-moderate-but-preventable",
+
+            explanation:
+              "Large hard-rinded fruit can be heavy, unstable, and difficult to cut. Growers should use a stable surface, suitable tools, controlled cutting technique, and appropriate lifting practices."
+          },
+
+          {
+            hazard:
+              "Unsupported parasite-treatment claims",
+
+            riskLevel:
+              "high-if-effective-treatment-is-delayed",
+
+            explanation:
+              "Pumpkin seeds are widely promoted informally as natural dewormers, but they should not replace fecal testing, veterinary diagnosis, sanitation, pasture management, or an effective parasite-treatment plan."
+          }
+        ],
+
+        emergencyUse:
+          "Sound Pumpkin or Winter Squash flesh can provide short-term moisture and carbohydrate, while seeds can provide more concentrated energy and fat, but neither form is a nutritionally complete emergency ration. A suitable complete poultry feed or properly formulated ration remains necessary.",
+
+        veterinaryCaution:
+          "Seek veterinary guidance when birds consume extremely bitter Cucurbita material, show vomiting-like regurgitation, severe diarrhea, weakness, dehydration, loss of appetite, abdominal distress, neurologic signs, or suspected mold or chemical exposure. Suspected internal parasites should be evaluated through appropriate diagnosis rather than treated only with Pumpkin seeds."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-supplement",
+
+          preferredForms: [
+            "Whole mature fruit split or punctured open",
+            "Halved or quartered mature fruit",
+            "Chopped raw flesh",
+            "Soft internal pulp",
+            "Fresh mature whole seeds",
+            "Cleaned and dried whole seeds",
+            "Plain hulled seed kernels",
+            "Plain cooked and cooled flesh",
+            "Plain frozen and thawed flesh",
+            "Properly dehydrated flesh"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for whole-fruit enrichment, raw mature flesh, pulp, and whole seeds. A nutritionally complete adult ration should remain continuously available unless the entire diet has been professionally formulated. Open hard-rinded fruit before feeding, inspect the interior carefully, and remove leftovers before spoilage develops."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Whole-fruit pecking enrichment",
+            "Moisture-rich supplemental produce",
+            "Carotenoid-containing flesh",
+            "Seasonal fall and winter feeding",
+            "Supplemental seed fat and energy",
+            "Use of sound surplus fruit"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Fresh flesh is low in concentrated protein and energy",
+            "Seeds are substantially more calorie and fat dense than flesh",
+            "Cannot replace a complete layer ration",
+            "Large portions may reduce balanced-feed intake",
+            "Seed phosphorus may be partly associated with phytate"
+          ],
+
+          guidance:
+            "Laying hens may receive sound Pumpkin and Winter Squash flesh, pulp, and seeds as measured supplements, but a complete layer ration and an appropriate calcium program must remain the nutritional foundation. Fresh flesh should be treated as watery supplemental produce, while seeds and kernels require tighter portion control because they are more energy dense."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets may receive small amounts of plain mature flesh or appropriately sized seed material, but their complete grower or developer ration should remain dominant. Bulky produce and energy-dense seeds should not displace nutrients needed for skeletal development, feathering, and preparation for egg production."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete starter ration as their nutritional foundation. Large pieces of flesh, fibrous rind, whole seeds, kernels, and informal seed products may introduce unsuitable particle sizes and dilute starter-feed intake.",
+
+          possibleException:
+            "A qualified poultry nutritionist may use analyzed Pumpkin seed meal, processed seed products, or other Cucurbita ingredients in a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering whole seeds, chunks of fruit, pulp, puree, or kernels as informal backyard treats.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Fresh flesh has low dry-matter nutrient density",
+            "Whole seeds may be too large",
+            "Seed hulls contribute structural fiber",
+            "Kernels are highly calorie dense",
+            "Amino-acid balance is incomplete",
+            "Calcium concentration is inadequate",
+            "Need for age-appropriate particle size",
+            "Greater sensitivity to spoiled or contaminated food"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Pumpkin flesh, seed, kernel, or seed-meal products may be used in balanced meat-bird diets only when their moisture, dry matter, energy, amino acids, fat, fiber, calcium, phosphorus, vitamins, and minerals are included in complete ration formulation. Backyard keepers should not copy research inclusion percentages into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters may consume the same sound mature flesh, pulp, and seed forms as adult hens. Portion control remains important, particularly with hulled kernels and dried seeds, because inactive birds can gain unnecessary weight from repeated energy-dense supplementation."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Pumpkin or Winter Squash as seasonal enrichment and supplemental food, but reproductive performance depends on complete and balanced nutrition. Excessive watery flesh or high-fat seed intake should not dilute amino acids, vitamins, minerals, fatty acids, calcium, or other nutrients required for fertility and hatchability."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may benefit from the enrichment provided by opened fruit, but seed and kernel intake should remain limited because these forms are much more energy dense than fresh flesh. Body condition and complete-feed consumption should be monitored."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Seeds can contribute energy, oil, and moderate-to-high protein, while orange flesh may contribute carotenoid-containing plant material. Neither form supplies the complete digestible amino-acid balance required for feather replacement. A balanced ration with adequate usable protein and essential amino acids remains more important than increasing Pumpkin or Squash intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Plain soft flesh may appear easy to consume and can contribute moisture, but illness can change digestive, swallowing, hydration, energy, and nutrient needs. Pumpkin or Winter Squash should not replace diagnostic care, complete recovery nutrition, hydration support, or a veterinarian-recommended feeding program."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature edible flesh",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Sound flesh from a correctly identified edible Pumpkin or Winter Squash cultivar is the primary moisture-rich poultry supplement. Its nutritional contribution varies with cultivar, maturity, flesh color, dry matter, and preparation."
+          },
+
+          {
+            part:
+              "Soft internal pulp",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "The fibrous interior surrounding mature seeds is readily accessible after a fruit is opened and can provide moisture, plant material, and pecking enrichment."
+          },
+
+          {
+            part:
+              "Mature whole seeds",
+
+            suitability:
+              "excellent-in-moderation",
+
+            explanation:
+              "Mature seeds are much more concentrated in fat, energy, protein, phosphorus, magnesium, and dry matter than the surrounding flesh. Whole seeds also retain their fibrous hull."
+          },
+
+          {
+            part:
+              "Cleaned and dried whole seeds",
+
+            suitability:
+              "excellent-in-moderation",
+
+            explanation:
+              "Properly cleaned and thoroughly dried seeds can be stored for later supplemental feeding. They require careful protection from moisture, insects, rodents, and rancidity."
+          },
+
+          {
+            part:
+              "Plain hulled seed kernels",
+
+            suitability:
+              "excellent-with-strict-portion-control",
+
+            explanation:
+              "Removing the hull increases the concentration of oil, calories, protein, and usable nutrients by weight while reducing storage protection."
+          },
+
+          {
+            part:
+              "Plain cooked and cooled flesh",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Cooking softens the flesh and can make handling easier. It remains supplemental produce and must contain no salt, butter, oil, sugar, syrup, seasoning, onion, garlic, or unsuitable leftovers."
+          },
+
+          {
+            part:
+              "Plain frozen and thawed flesh",
+
+            suitability:
+              "good-with-spoilage-precautions",
+
+            explanation:
+              "Frozen flesh can extend seasonal availability, but thawed tissue becomes soft and highly perishable and should be fed promptly."
+          },
+
+          {
+            part:
+              "Plain frozen puree",
+
+            suitability:
+              "good-with-portion-control",
+
+            explanation:
+              "Puree can be frozen in measured portions, but it is easy to overfeed, difficult to use as enrichment, and spoils quickly after thawing."
+          },
+
+          {
+            part:
+              "Properly dehydrated flesh",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Dehydration removes water and concentrates the remaining nutrients by weight. Thorough drying is essential because incompletely dried pieces may mold during storage."
+          },
+
+          {
+            part:
+              "Ground mature seed",
+
+            suitability:
+              "formulation-dependent",
+
+            explanation:
+              "Ground seed can be mixed more evenly into a professionally formulated ration but exposes oil to oxygen and should be used promptly."
+          },
+
+          {
+            part:
+              "Defatted seed meal",
+
+            suitability:
+              "formulation-dependent",
+
+            explanation:
+              "Seed meal remaining after oil extraction differs substantially from whole seed and kernels. It may contain more concentrated protein and less fat but should be used only with ingredient analysis and complete ration formulation."
+          },
+
+          {
+            part:
+              "Sound edible household preparation scraps",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Plain flesh, pulp, seeds, and trimmings may be offered when they come from edible cultivars and have not contacted spoiled food, unsafe ingredients, contaminated surfaces, or chemical treatments."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Hard mature rind after the edible interior is removed",
+
+            reason:
+              "Some chickens may peck limited soft rind-adjacent tissue, but thick mature rind contributes little dependable nutrition and often remains as bulky waste."
+          },
+
+          {
+            part:
+              "Tough mature stems",
+
+            reason:
+              "Highly fibrous with no meaningful poultry-feed value."
+          },
+
+          {
+            part:
+              "Mature vines",
+
+            reason:
+              "Fibrous plant material better suited to composting or soil-organic-matter uses than concentrated poultry feeding."
+          },
+
+          {
+            part:
+              "Mature leaves",
+
+            reason:
+              "Provide limited dependable poultry-feed value and may carry pesticide residue, disease, soil contamination, or physical damage."
+          },
+
+          {
+            part:
+              "Seed hulls separated from kernels",
+
+            reason:
+              "Primarily structural fiber with relatively little usable nutrition compared with the kernel."
+          },
+
+          {
+            part:
+              "Diseased vines or leaves",
+
+            reason:
+              "Plant material affected by disease should not automatically be fed or composted without considering the disease involved and local Extension guidance."
+          },
+
+          {
+            part:
+              "Ornamental gourd tissue",
+
+            reason:
+              "May be intensely bitter, chemically treated, poorly identified, or unsuitable for food and feed use."
+          },
+
+          {
+            part:
+              "Unknown volunteer-cross fruit",
+
+            reason:
+              "Uncontrolled Cucurbita crosses may produce unexpected bitterness, poor palatability, or uncertain safety."
+          }
+        ],
+
+        ediblePartSummary:
+          "Pumpkins and Winter Squash provide two nutritionally distinct poultry products: moisture-rich mature flesh and concentrated mature seeds. Flesh, whole seeds, hulled kernels, seed meal, and seed oil should never be treated as equivalent feed materials."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Whole mature fruit split or punctured open",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Whole-fruit pecking enrichment and gradual access to flesh, pulp, and seeds."
+          },
+
+          {
+            form:
+              "Halved or quartered mature fruit",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Seasonal enrichment with easier inspection and improved flock access."
+          },
+
+          {
+            form:
+              "Chopped raw flesh",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured supplemental produce distributed among several feeding locations."
+          },
+
+          {
+            form:
+              "Fresh pulp and mature seeds",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Immediate feeding after household preparation or fruit opening."
+          },
+
+          {
+            form:
+              "Plain cooked and cooled flesh",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Soft supplemental produce for prompt feeding."
+          },
+
+          {
+            form:
+              "Cleaned and dried whole seeds",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured higher-energy supplementation and seasonal storage."
+          },
+
+          {
+            form:
+              "Plain hulled kernels",
+
+            rating:
+              "good-with-strict-portion-control",
+
+            bestUse:
+              "Concentrated supplemental feeding in very small measured amounts."
+          },
+
+          {
+            form:
+              "Properly dehydrated flesh",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Compact seasonal storage when drying is complete and moisture protection is dependable."
+          }
+        ],
+
+        acceptableForms: [
+          "Whole mature fruit split open",
+          "Whole mature fruit punctured open",
+          "Halved mature fruit",
+          "Quartered mature fruit",
+          "Chopped raw flesh",
+          "Soft internal pulp",
+          "Fresh mature whole seeds",
+          "Cleaned and dried whole seeds",
+          "Plain hulled kernels",
+          "Plain cooked and cooled flesh",
+          "Plain frozen and thawed flesh",
+          "Plain frozen puree",
+          "Properly dehydrated flesh",
+          "Ground seed used promptly",
+          "Defatted seed meal used in a formulated ration",
+          "Sound household preparation scraps"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Whole hard-rinded fruit",
+
+            concern:
+              "Many birds cannot reach the edible interior until the rind is split, punctured, or cut open."
+          },
+
+          {
+            form:
+              "Large fruit halves",
+
+            concern:
+              "A single large feeding point can allow dominant birds to monopolize access and may produce substantial rind waste."
+          },
+
+          {
+            form:
+              "Chopped flesh",
+
+            concern:
+              "Cutting increases exposed surface area, contamination risk, moisture loss, and spoilage speed."
+          },
+
+          {
+            form:
+              "Cooked flesh",
+
+            concern:
+              "Must be plain, cooled, hygienically handled, and free from unsuitable household ingredients."
+          },
+
+          {
+            form:
+              "Frozen or thawed flesh",
+
+            concern:
+              "Thawed tissue becomes soft, wet, and highly perishable and should be fed promptly."
+          },
+
+          {
+            form:
+              "Puree",
+
+            concern:
+              "Difficult to use as enrichment, easy to overfeed, messy in litter, and highly perishable after thawing."
+          },
+
+          {
+            form:
+              "Dehydrated flesh",
+
+            concern:
+              "Incomplete drying or later moisture absorption can support mold during storage."
+          },
+
+          {
+            form:
+              "Whole seeds",
+
+            concern:
+              "More calorie and fat dense than flesh and contain additional hull fiber."
+          },
+
+          {
+            form:
+              "Hulled kernels",
+
+            concern:
+              "Much more nutrient and calorie dense by weight and more vulnerable to oxidation and rancidity."
+          },
+
+          {
+            form:
+              "Ground seed",
+
+            concern:
+              "Grinding accelerates oxidation, moisture absorption, odor absorption, and quality loss."
+          },
+
+          {
+            form:
+              "Seed meal",
+
+            concern:
+              "Nutritional composition varies with species, hull removal, oil extraction, processing, moisture, and analytical basis and therefore requires ration formulation."
+          }
+        ],
+
+        avoidForms: [
+          "Abnormally bitter flesh",
+          "Abnormally bitter pulp",
+          "Abnormally bitter seeds",
+          "Moldy fruit",
+          "Rotten fruit",
+          "Leaking fruit",
+          "Slimy fruit",
+          "Fermenting fruit",
+          "Frozen and decomposing fruit",
+          "Rodent-contaminated fruit",
+          "Flood-contaminated fruit",
+          "Chemically restricted fruit",
+          "Painted decorative Pumpkins",
+          "Glittered decorative Pumpkins",
+          "Glued decorations",
+          "Chemically preserved decorative fruit",
+          "Ornamental gourds of uncertain edibility",
+          "Unknown volunteer Cucurbita crosses",
+          "Salted seeds",
+          "Seasoned seeds",
+          "Sweetened seeds",
+          "Candied seeds",
+          "Rancid kernels",
+          "Moldy stored seeds",
+          "Butter-containing Squash dishes",
+          "Salted cooked Squash",
+          "Sweetened Pumpkin desserts",
+          "Spoiled thawed puree"
+        ],
+
+        wholeHeadAdvantages: [
+          "Excellent pecking enrichment",
+          "Encourages natural investigation",
+          "Extends feeding time",
+          "Provides gradual access to flesh and seeds",
+          "Requires little processing beyond washing and opening",
+          "Can occupy confined birds",
+          "Uses sound cosmetically imperfect fruit",
+          "Provides fall and winter activity"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Easy to divide among multiple feeding stations",
+          "More compact than whole fruit",
+          "Can be stored after proper cleaning and drying",
+          "Can be ground for formulated feed",
+          "Allows separate control of the concentrated seed portion"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Actual intake is difficult to measure",
+          "Fruit size varies greatly",
+          "Rind weight may be substantial",
+          "Dominant birds may control access",
+          "Opened fruit spoils quickly",
+          "Large pieces may become soiled",
+          "Leftovers can attract rodents and wildlife",
+          "Interior decay may be hidden until cutting",
+          "Heavy fruit may be difficult to move and open"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires separation from pulp",
+          "Requires cleaning",
+          "Requires thorough drying",
+          "Requires protected storage",
+          "Whole seeds contain hull fiber",
+          "Kernels are highly calorie dense",
+          "Ground seed becomes rancid more quickly",
+          "Spilled seed can attract rodents",
+          "Seed products are easy to overfeed"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Pumpkins and Winter Squash include several Cucurbita species and hundreds of cultivars with major differences in fruit size, flesh thickness, dry matter, sweetness, carotenoid concentration, rind hardness, seed-cavity size, seed yield, vine habit, maturity, disease resistance, storage life, and practical poultry-feed value.",
+
+        storageWinterSquash: {
+          recommended:
+            true,
+
+          explanation:
+            "Well-cured storage Squash cultivars are among the strongest choices for fall and winter feeding because sound whole fruit may remain usable for weeks or months without refrigeration. Actual storage life varies substantially by species and cultivar."
+        },
+
+        piePumpkins: {
+          recommended:
+            true,
+
+          explanation:
+            "Pie and culinary Pumpkins often provide relatively thick edible flesh, manageable fruit size, household-food value, and useful poultry enrichment."
+        },
+
+        jackOLanternPumpkins: {
+          recommended:
+            true,
+
+          explanation:
+            "Plain, untreated jack-o'-lantern Pumpkins may provide useful enrichment and flesh after seasonal display, but they often contain thinner flesh, larger cavities, and more rind relative to culinary cultivars. Fruit exposed to candles, wax, paint, preservatives, mold, weathering, or contamination should not be fed."
+        },
+
+        giantPumpkins: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Giant cultivars can produce enormous fruit and high fresh weight but may require excessive space, water, lifting effort, cutting labor, and waste handling. Large fresh weight should not be interpreted as equivalent dry-feed production."
+        },
+
+        ornamentalGourds: {
+          recommended:
+            false,
+
+          explanation:
+            "Ornamental gourds may be intensely bitter, chemically treated, poorly identified, or unsuitable for food and feed use. They should not be treated as equivalent to edible Pumpkin and Winter Squash cultivars."
+        },
+
+        volunteerCrosses: {
+          recommended:
+            false,
+
+          explanation:
+            "Volunteer Cucurbita plants may result from uncontrolled cross-pollination and can produce unexpected fruit quality or abnormal bitterness. Uncertain or bitter fruit should be rejected."
+        },
+
+        orangeFleshedCultivars: {
+          advantages: [
+            "Often contain visible carotenoid pigments",
+            "May support yolk-pigment contribution when used within a balanced feeding program",
+            "Provide strong household-food value",
+            "Make internal spoilage and discoloration easier to notice in some cases"
+          ]
+        },
+
+        thickFleshedCultivars: {
+          advantages: [
+            "Greater edible flesh proportion",
+            "Reduced rind and cavity waste",
+            "Potentially higher dry-matter yield per fruit",
+            "Improved household and poultry dual-use value"
+          ]
+        },
+
+        compactBushCultivars: {
+          advantages: [
+            "Better fit for smaller gardens",
+            "More predictable plant footprint",
+            "Easier fruit access",
+            "Reduced vine-management difficulty"
+          ]
+        },
+
+        vigorousViningCultivars: {
+          advantages: [
+            "Can cover large unused areas",
+            "May provide substantial ground cover",
+            "Can produce multiple fruit under favorable conditions",
+            "Useful where vines can spread beyond intensive garden beds"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "low-to-moderate",
+
+        preparationSummary:
+          "Pumpkins and Winter Squash require little processing when offered as whole-fruit enrichment, but preparation needs vary substantially among intact fruit, chopped flesh, cooked flesh, frozen puree, dehydrated flesh, whole seeds, hulled kernels, and seed meal. The essential steps are confirming that the fruit is an edible cultivar, harvesting it mature, washing the rind, inspecting for damage or abnormal bitterness, opening hard-rinded fruit safely, and removing leftovers before spoilage. Seed processing and long-term storage require additional cleaning, drying, and moisture control.",
+
+        requiredPreparation: [
+          "Use only mature fruit from a correctly identified edible Pumpkin or Winter Squash cultivar.",
+          "Inspect the entire fruit for cracks, bruising, leakage, soft areas, rodent damage, mold, frost injury, and chemical treatment.",
+          "Wash soil, manure, chemical residue, and other contamination from the rind before cutting.",
+          "Use a stable cutting surface and suitable tools when opening hard-rinded fruit.",
+          "Split, quarter, puncture, or otherwise open hard fruit so chickens can reach the flesh, pulp, and seeds.",
+          "Inspect the interior after cutting for mold, fermentation, abnormal discoloration, slime, leakage, and unusual odor.",
+          "Reject fruit with pronounced abnormal bitterness.",
+          "Offer only an amount the flock can consume before deterioration.",
+          "Remove uneaten flesh, pulp, seeds, and rind before spoilage or contamination develops.",
+          "Clean and dry seeds thoroughly before placing them into storage.",
+          "Keep complete poultry feed available as the flock's nutritional foundation."
+        ],
+
+        optionalPreparation: [
+          "Cut flesh into smaller pieces for easier distribution and portion control.",
+          "Scoop pulp and seeds into several feeding locations to reduce competition.",
+          "Cook flesh plainly and cool it before feeding.",
+          "Freeze plain flesh or puree in measured portions.",
+          "Dehydrate plain flesh completely for compact storage.",
+          "Separate seeds from pulp for controlled feeding.",
+          "Clean and dry whole seeds for later use.",
+          "Remove seed hulls when a more concentrated kernel product is desired.",
+          "Grind a small quantity of mature seed immediately before use in a formulated ration.",
+          "Cure mature storage fruit when recommended for the selected cultivar.",
+          "Use sound household preparation scraps promptly.",
+          "Reserve the best-quality flesh for household food while directing sound surplus material to the flock."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking before ordinary adult-chicken feeding",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Heat treatment",
+          "Sweetening",
+          "Salting",
+          "Adding butter or oil",
+          "Adding syrup",
+          "Adding spices or seasoning",
+          "Removing every seed before whole-fruit enrichment",
+          "Removing every piece of rind before offering an opened fruit",
+          "Grinding whole seeds for healthy established adult chickens",
+          "Using vinegar, bleach, or chemical washes on edible flesh",
+          "Attempting to neutralize bitter fruit through cooking",
+          "Attempting to salvage moldy or rotten fruit through processing"
+        ],
+
+        preparationMistakes: [
+          "Feeding an unknown ornamental gourd or volunteer cross without confirming edibility.",
+          "Ignoring pronounced abnormal bitterness.",
+          "Cutting an unwashed rind and transferring surface contamination into the flesh.",
+          "Using an unstable cutting surface for large hard-rinded fruit.",
+          "Offering an unopened hard fruit that chickens cannot access.",
+          "Assuming an intact rind guarantees a sound interior.",
+          "Feeding moldy, fermented, slimy, leaking, or rotten flesh after trimming only the visibly damaged area.",
+          "Leaving opened fruit in warm weather for extended periods.",
+          "Allowing cut flesh or puree to remain in wet litter.",
+          "Feeding an entire large fruit when the flock cannot consume it promptly.",
+          "Offering cooked Squash containing salt, sugar, syrup, butter, oil, onion, garlic, sauces, or seasoning.",
+          "Freezing spoiled fruit rather than discarding it.",
+          "Thawing more flesh or puree than the flock can use promptly.",
+          "Dehydrating pieces unevenly and storing material that still contains internal moisture.",
+          "Storing seeds before they are fully clean, dry, and cool.",
+          "Grinding large quantities of oily seed far in advance of feeding.",
+          "Treating whole seed, hulled kernels, and defatted seed meal as nutritionally equivalent.",
+          "Relying on Pumpkin seeds as a proven parasite treatment."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "moisture-rich-carotenoid-produce-with-separate-energy-dense-seed-component",
+
+        nutritionSummary:
+          "Pumpkins and Winter Squash provide two fundamentally different poultry-feed materials. Fresh mature flesh is moisture rich, bulky, relatively low in protein and fat, and low in concentrated energy on an as-fed basis. It can contribute carbohydrates, fiber, potassium, vitamin C, carotenoid pigments, and useful seasonal plant diversity. Mature seeds and especially hulled kernels are much drier and more concentrated in oil, energy, protein, phosphorus, magnesium, vitamin E compounds, and unsaturated fatty acids. Defatted seed meal differs again because oil extraction lowers fat while concentrating other dry-matter components. None of these forms provides complete poultry nutrition, sufficient calcium for laying hens, or a dependable stand-alone amino-acid balance.",
+
+        compositionBasis:
+          "Nutrient values and practical feeding characteristics vary substantially among Cucurbita species, cultivars, fruit maturities, flesh colors, flesh dry-matter concentrations, rind proportions, seed-cavity sizes, whole seeds, hulled kernels, ground seed, defatted seed meal, extracted seed oil, raw flesh, cooked flesh, frozen flesh, puree, and dehydrated flesh. Fresh flesh is normally evaluated on an as-fed basis and contains substantial water, while seeds and dried products are much more concentrated. These materials must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Moisture-rich supplemental produce",
+
+            importance:
+              "high",
+
+            explanation:
+              "Fresh mature flesh contains substantial water and can provide seasonal dietary variety and moisture. This is useful as supplemental produce but also means that fresh fruit weight greatly exaggerates its dry-matter feed contribution."
+          },
+
+          {
+            nutrientRole:
+              "Carotenoid-containing flesh",
+
+            importance:
+              "high",
+
+            explanation:
+              "Many orange-fleshed cultivars contain beta-carotene and other carotenoid pigments. Actual concentration varies greatly among species, cultivars, maturity stages, growing conditions, storage periods, and preparation methods."
+          },
+
+          {
+            nutrientRole:
+              "Concentrated seed oil and energy",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Mature seeds and hulled kernels contain much more oil and usable energy per pound than fresh flesh. This makes them valuable as measured supplements but inappropriate for unrestricted feeding."
+          },
+
+          {
+            nutrientRole:
+              "Moderate-to-high seed protein",
+
+            importance:
+              "high",
+
+            explanation:
+              "Dried seed products may contain substantial crude protein compared with fresh flesh. Protein concentration varies with species, hull proportion, kernel percentage, moisture, and oil extraction, and crude-protein percentage does not establish complete amino-acid balance."
+          },
+
+          {
+            nutrientRole:
+              "Unsaturated fatty acids",
+
+            importance:
+              "high",
+
+            explanation:
+              "Pumpkin and Winter Squash seeds contain oil rich in unsaturated fatty acids. Exact fatty-acid composition varies by species, cultivar, growing conditions, storage, and processing."
+          },
+
+          {
+            nutrientRole:
+              "Vitamin E compounds",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Seeds and seed oil may contribute vitamin E compounds, although the practical amount supplied to the flock depends on the product, storage quality, oxidation, processing, and quantity consumed."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental phosphorus and magnesium",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Seeds can contribute meaningful phosphorus and magnesium, but some seed phosphorus may be associated with phytate and should not be assumed to be completely available to poultry."
+          },
+
+          {
+            nutrientRole:
+              "Potassium and vitamin-containing fresh flesh",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Fresh flesh may contribute potassium, vitamin C, carotenoids, and other plant compounds, but the amount supplied depends on cultivar, maturity, storage, cooking, and actual intake."
+          },
+
+          {
+            nutrientRole:
+              "Dietary fiber",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Flesh, pulp, rind-adjacent tissue, and whole-seed hulls contribute fiber. Fiber level and usefulness vary substantially among fruit parts and seed forms."
+          },
+
+          {
+            nutrientRole:
+              "Potential yolk-pigment contribution",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Carotenoid-containing flesh may contribute to yolk pigmentation when consumed as part of the total diet, but response depends on pigment concentration, intake, absorption, base ration, bird health, and other dietary pigment sources."
+          }
+        ],
+
+        notableNutrients: [
+          "Water in fresh flesh",
+          "Carbohydrates in mature flesh",
+          "Beta-carotene in many orange-fleshed cultivars",
+          "Other carotenoids",
+          "Potassium",
+          "Vitamin C in fresh flesh",
+          "Dietary fiber",
+          "Vegetable oil in seeds",
+          "Unsaturated fatty acids",
+          "Moderate-to-high protein in dried seed products",
+          "Vitamin E compounds in seeds and seed oil",
+          "Phosphorus in seeds",
+          "Magnesium in seeds",
+          "Pigment compounds that may contribute to yolk coloration"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate to high relative to many whole cereal grains, but highly variable among Cucurbita species, cultivars, whole seeds, hulled kernels, and defatted seed meals.",
+
+          fat:
+            "High in mature whole seeds and especially concentrated in hulled kernels. Defatted seed meal contains substantially less fat after oil extraction.",
+
+          fiber:
+            "Moderate and highly dependent on hull proportion. Whole seeds contain more structural fiber than hulled kernels because the seed coat remains attached.",
+
+          starch:
+            "Not assigned a universal value because composition varies among species and seed products, and the crop record does not support one dependable combined percentage.",
+
+          calcium:
+            "Insufficient to satisfy the calcium requirement of laying hens and unsuitable as a replacement for complete layer feed or an appropriate calcium program.",
+
+          phosphorus:
+            "Present in nutritionally meaningful amounts, but some may be associated with phytate and should not be assumed to be completely available.",
+
+          energy:
+            "High in dried whole seeds and very high in oil-rich kernels compared with fresh flesh. Exact poultry metabolizable-energy values vary with species, product form, hull content, oil concentration, processing, and analytical basis."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "A whole mature Pumpkin or Winter Squash seed contains the oil- and protein-rich kernel plus a fibrous outer seed coat. The hull provides physical protection during storage but increases fiber and reduces the concentration of oil, protein, and usable energy on an equal-weight basis.",
+
+          dehulledKernel:
+            "The hulled kernel contains less structural fiber and a greater concentration of oil, calories, protein, phosphorus, magnesium, vitamin E compounds, and other kernel nutrients. Removing the hull also exposes the oil-rich material more directly to oxygen, moisture, insects, odors, and rancidity.",
+
+          practicalMeaning:
+            "A pound of whole seeds should not be treated as nutritionally identical to a pound of hulled kernels. Kernels are more concentrated, easier to overfeed, and generally less stable during extended storage."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole mature seed retains its natural oil, protein, fiber, minerals, and intact physical structure. It functions primarily as a concentrated fat-and-energy supplement with a useful but incomplete protein contribution.",
+
+          sunflowerMeal:
+            "Pumpkin seed meal is the material remaining after some or most seed oil has been removed. Depending on species, dehulling, extraction method, residual oil, moisture, and processing, it may contain more concentrated protein and less fat than intact seed while retaining variable fiber and phytate.",
+
+          practicalMeaning:
+            "Research involving defatted Pumpkin seed meal must not automatically be used to justify informal feeding quantities for whole seeds, hulled kernels, fresh pulp, or whole fruit. Each product requires separate nutrient evaluation and ration formulation."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cucurbita species",
+          "Cultivar",
+          "Fruit maturity",
+          "Flesh color",
+          "Flesh thickness",
+          "Flesh dry-matter concentration",
+          "Rind thickness",
+          "Seed-cavity size",
+          "Seed yield",
+          "Kernel-to-hull ratio",
+          "Whole seed versus hulled kernel",
+          "Raw flesh versus cooked flesh",
+          "Fresh flesh versus dehydrated flesh",
+          "Fresh flesh versus frozen or thawed flesh",
+          "Whole seed versus ground seed",
+          "Whole seed versus defatted seed meal",
+          "Residual oil after extraction",
+          "Growing environment",
+          "Irrigation",
+          "Soil fertility",
+          "Harvest maturity",
+          "Curing",
+          "Storage duration",
+          "Storage temperature",
+          "Moisture loss during storage",
+          "Cooking",
+          "Freezing",
+          "Dehydration",
+          "Grinding",
+          "Oil extraction",
+          "Laboratory analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Outstanding Whole-Fruit Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A split, quartered, or punctured mature Pumpkin or Winter Squash encourages sustained pecking, pulling, scratching, investigation, seed removal, and natural feed-seeking behavior. This makes the crop especially valuable for confined flocks during fall and winter."
+          },
+
+          {
+            title:
+              "Strong Seasonal Storage Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Sound mature fruit from suitable storage cultivars can remain usable for weeks or months without refrigeration when harvested correctly, cured where appropriate, protected from freezing, and stored under cool, dry, ventilated conditions."
+          },
+
+          {
+            title:
+              "Useful Moisture-Rich Supplemental Produce",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Fresh mature flesh provides water, carbohydrates, fiber, potassium, carotenoid-containing plant material, and seasonal dietary variety. Its moisture-rich nature makes it useful as supplemental produce rather than concentrated feed."
+          },
+
+          {
+            title:
+              "Separate Nutrient-Dense Seed Component",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature seeds provide a nutritionally distinct product containing much more fat, energy, protein, phosphorus, magnesium, vitamin E compounds, and dry matter than the surrounding flesh."
+          },
+
+          {
+            title:
+              "Strong Fall and Winter Flock Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Properly stored whole fruit can extend garden-to-flock feeding beyond the growing season and provide both fresh plant material and structured enrichment when pasture, insects, and green forage are less available."
+          },
+
+          {
+            title:
+              "Low-Processing Whole-Fruit Use Path",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A sound mature fruit can often be washed, inspected, opened, and offered without cooking, grinding, fermenting, dehydrating, or separating the seeds."
+          },
+
+          {
+            title:
+              "Excellent Household-and-Flock Dual Use",
+
+            importance:
+              "primary",
+
+            explanation:
+              "The same planting can produce household food, poultry supplements, stored winter produce, seed, compost material, pollinator resources, and sound surplus fruit for the flock."
+          },
+
+          {
+            title:
+              "Useful Carotenoid Contribution",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Many orange-fleshed cultivars contain beta-carotene and other carotenoid pigments that may contribute dietary plant pigments and yolk coloration when consumed as part of a balanced ration."
+          },
+
+          {
+            title:
+              "Flexible Feeding Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "The crop can be offered as opened whole fruit, chopped raw flesh, pulp and seeds, plain cooked flesh, frozen portions, dehydrated pieces, cleaned whole seeds, hulled kernels, or formulated seed meal."
+          },
+
+          {
+            title:
+              "Use of Sound Surplus and Cosmetic Seconds",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Sound fruit that is misshapen, scarred, oversized, undersized, or cosmetically unsuitable for household use may still provide valuable poultry enrichment and supplemental food after careful inspection."
+          },
+
+          {
+            title:
+              "Non-Electric Food Preservation",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Storage cultivars can preserve substantial household and flock food value without freezing, canning, or continuous electrical use."
+          },
+
+          {
+            title:
+              "Potential Seed-Storage Value",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Clean mature whole seeds can be dried and stored compactly for measured supplemental feeding when protected from moisture, insects, rodents, oxidation, and contamination."
+          },
+
+          {
+            title:
+              "Potential Seed-Meal Ingredient",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Analyzed Pumpkin seed meal may have value as a protein-oriented ingredient in professionally formulated poultry diets, although it should not be treated as equivalent to whole seed, kernels, or fresh fruit."
+          },
+
+          {
+            title:
+              "Pollinator Support",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Pumpkin and Winter Squash flowers provide seasonal resources for bees and other insect pollinators. Successful pollination also directly supports fruit production."
+          },
+
+          {
+            title:
+              "Substantial Compost Biomass",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Vines, leaves, stems, rind, seed hulls, and sound unused plant residue can contribute organic matter to compost systems when disease and contamination concerns are managed appropriately."
+          },
+
+          {
+            title:
+              "Seasonal Ground Cover",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Vigorous vines may shade soil, suppress some weeds, reduce direct soil exposure, and occupy garden margins or overflow areas where other crops would be difficult to manage."
+          },
+
+          {
+            title:
+              "Seed-Saving Potential",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Suitable open-pollinated cultivars may provide seed-saving opportunities, although uncontrolled Cucurbita cross-pollination can affect future fruit characteristics and may create undesirable bitterness."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Extended pecking activity",
+
+            explanation:
+              "Birds must work gradually through the rind opening, flesh, fibrous pulp, and seed cavity rather than consuming all material immediately from a dish."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Chickens can peck, pull, scrape, turn, stand on, and investigate the fruit while accessing different edible layers."
+          },
+
+          {
+            benefit:
+              "Longer feeding duration",
+
+            explanation:
+              "A large opened fruit normally requires more time to consume than an equivalent quantity of chopped produce or loose seed."
+          },
+
+          {
+            benefit:
+              "Seasonal novelty",
+
+            explanation:
+              "Whole Pumpkins and Winter Squash provide a feeding form that differs substantially from ordinary pellets, crumbles, grains, and leafy greens."
+          },
+
+          {
+            benefit:
+              "Cold-season activity",
+
+            explanation:
+              "Stored fruit can provide structured flock activity during winter confinement or periods when natural vegetation and insects are limited."
+          },
+
+          {
+            benefit:
+              "Reduced boredom",
+
+            explanation:
+              "Appropriately distributed fruit can diversify the flock environment and encourage exploration, although enrichment does not correct overcrowding, inadequate housing, or poor flock management."
+          },
+
+          {
+            benefit:
+              "Seed-finding behavior",
+
+            explanation:
+              "Birds can search through pulp and fibrous tissue to locate mature seeds, closely resembling natural foraging and food-selection behavior."
+          },
+
+          {
+            benefit:
+              "Multiple feeding stations",
+
+            explanation:
+              "Several halves, quarters, or chopped sections can be distributed around the run to encourage movement and reduce monopolization by dominant birds."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Can be divided among multiple feeding stations",
+          "Can provide enrichment without specialized equipment",
+          "Whole fruit can be removed when feeding is complete",
+          "Stored fruit can extend seasonal garden production",
+          "Chopped flesh allows better portion control than whole fruit",
+          "Separated seeds allow tighter control of high-energy intake",
+          "Can occupy confined birds during poor weather",
+          "Can use sound household preparation scraps",
+          "Can use sound cosmetically imperfect fruit",
+          "Plain frozen portions can extend availability",
+          "Dehydrated flesh can reduce storage volume",
+          "Whole stored fruit requires no refrigeration",
+          "Different feeding forms can be matched to flock age and condition",
+          "Fruit sections can be spaced apart to reduce competition",
+          "Visible opened fruit is easy to inspect and remove"
+        ],
+
+        homesteadBenefits: [
+          "Produces household food and poultry supplements from one planting",
+          "Provides a non-electric storage crop",
+          "Offers substantial seasonal food-security value",
+          "Can produce large harvests from relatively few plants",
+          "Supports bees and other pollinators",
+          "Provides broad seasonal ground cover",
+          "Can occupy garden margins and overflow areas",
+          "Produces substantial compost biomass",
+          "Can utilize sound surplus fruit",
+          "Can utilize cosmetically imperfect fruit",
+          "Allows several preservation methods",
+          "Seeds can be cleaned and stored separately",
+          "Some cultivars support seed saving",
+          "Bush and compact forms are available for smaller spaces",
+          "Vining forms can use large unused areas",
+          "May reduce household food waste",
+          "Can be shared among people, poultry, livestock, and compost systems",
+          "Curing and storage require no specialized machinery",
+          "Fruit can often be harvested and handled manually",
+          "Variety selection allows strong customization for storage, household food, fruit size, vine habit, and maturity"
+        ],
+
+        benefitSummary:
+          "Pumpkins and Winter Squash provide their greatest value by combining whole-fruit enrichment, moisture-rich supplemental flesh, a separate nutrient-dense seed component, long seasonal storage, household-food production, pollinator support, compost biomass, and use of sound surplus fruit. Their strongest backyard role is as a multipurpose seasonal supplement and enrichment crop rather than as a direct replacement for complete poultry feed."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Neither Pumpkin and Winter Squash flesh nor their seeds supply the complete balance of energy, protein, digestible amino acids, calcium, vitamins, minerals, and other nutrients required by laying hens, growing birds, breeding flocks, or meat birds."
+          },
+
+          {
+            title:
+              "Fresh Flesh Has Low Dry-Matter Nutrient Density",
+
+            severity:
+              "high",
+
+            explanation:
+              "Fresh flesh contains substantial water. A large weight of harvested fruit may therefore provide much less protein, energy, minerals, and usable dry matter than the same weight of dry poultry feed."
+          },
+
+          {
+            title:
+              "Fresh Flesh Can Displace Balanced Feed",
+
+            severity:
+              "high",
+
+            explanation:
+              "Large quantities of watery flesh may fill birds and reduce consumption of complete feed without supplying equivalent protein, amino acids, calcium, energy, vitamins, or trace minerals."
+          },
+
+          {
+            title:
+              "Seeds Are High in Fat and Calories",
+
+            severity:
+              "high",
+
+            explanation:
+              "Whole seeds and especially hulled kernels contain much more concentrated oil and energy than the flesh. Unrestricted feeding can contribute excessive calorie intake, selective eating, and reduced consumption of balanced feed."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Pumpkin-seed protein does not independently satisfy all poultry amino-acid requirements. Total crude protein should not be mistaken for complete or properly balanced protein."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Flesh, whole seeds, kernels, and seed meal do not provide the calcium concentration necessary for dependable eggshell formation and must not replace a complete layer ration or appropriate calcium program."
+          },
+
+          {
+            title:
+              "Abnormal Bitterness May Signal Cucurbitacin Risk",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Pronounced abnormal bitterness may indicate elevated cucurbitacins capable of causing serious illness. Bitter fruit should be rejected completely rather than cooked, diluted, frozen, dried, or mixed with other feed."
+          },
+
+          {
+            title:
+              "Internal Spoilage May Be Hidden",
+
+            severity:
+              "high",
+
+            explanation:
+              "A hard rind may appear normal while concealing mold, fermentation, soft rot, bacterial decay, abnormal discoloration, or decomposition. Stored fruit must be inspected again after opening."
+          },
+
+          {
+            title:
+              "Opened Fruit Spoils Rapidly",
+
+            severity:
+              "high",
+
+            explanation:
+              "Cut, punctured, chopped, cooked, thawed, or pureed flesh exposes moist surfaces that deteriorate quickly, particularly during warm, humid, or wet conditions."
+          },
+
+          {
+            title:
+              "Whole-Fruit Portioning Is Imprecise",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Fruit size, flesh thickness, rind weight, seed-cavity size, water content, flock competition, waste, and actual intake vary greatly, making whole-fruit feeding unsuitable for precise ration delivery."
+          },
+
+          {
+            title:
+              "Cultivar Variation Is Extreme",
+
+            severity:
+              "high",
+
+            explanation:
+              "This crop group includes several Cucurbita species and many cultivars with enormous differences in fruit size, vine habit, flesh quality, dry matter, seed yield, maturity, rind thickness, storage life, disease resistance, and poultry-feed value."
+          },
+
+          {
+            title:
+              "Large Space Requirement",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Many vigorous vining cultivars require substantially more garden space than compact feed crops and may spread into paths, neighboring beds, fences, or other production areas."
+          },
+
+          {
+            title:
+              "Pollination Dependence",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Poor insect activity, bad weather, flower timing, heat stress, pesticide exposure, or inadequate pollinator populations may reduce fruit set and cause misshapen or aborted fruit."
+          },
+
+          {
+            title:
+              "Significant Pest and Disease Pressure",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Squash vine borers, squash bugs, cucumber beetles, powdery mildew, downy mildew, bacterial diseases, viruses, rodents, and wildlife can reduce or eliminate usable harvest."
+          },
+
+          {
+            title:
+              "Storage Conditions Matter",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Fruit harvested immature, bruised, frost damaged, poorly cured, stacked too deeply, or stored in damp, freezing, stagnant, or excessively warm conditions may deteriorate quickly."
+          },
+
+          {
+            title:
+              "Seed Processing Adds Labor",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Separating seeds from pulp, cleaning, drying, hulling, grinding, oil extraction, labeling, and protected storage require considerably more labor than offering opened whole fruit."
+          },
+
+          {
+            title:
+              "Seed Products Are Not Nutritionally Equivalent",
+
+            severity:
+              "high",
+
+            explanation:
+              "Whole seed, hulled kernel, ground seed, defatted seed meal, and extracted oil differ materially in protein, fat, fiber, phosphorus, energy, storage behavior, and appropriate use."
+          },
+
+          {
+            title:
+              "Seed Oil Is Vulnerable to Rancidity",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Hulling, cracking, grinding, heat, light, oxygen, moisture, and long storage accelerate deterioration of the oil-rich kernel."
+          },
+
+          {
+            title:
+              "Whole Seeds Contain Hull Fiber",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "The seed coat contributes structural fiber and lowers the concentration of oil, protein, and usable energy compared with hulled kernels."
+          },
+
+          {
+            title:
+              "Seed Phosphorus May Be Partly Bound by Phytate",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Some phosphorus and other minerals in seeds may be associated with phytate and should not be assumed to be fully available to poultry."
+          },
+
+          {
+            title:
+              "Large Fruit Can Be Difficult to Handle",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Heavy hard-rinded fruit may require substantial lifting, stable cutting surfaces, sharp tools, storage space, and repeated waste removal."
+          },
+
+          {
+            title:
+              "Rind and Cavity Waste Can Be Substantial",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "A large percentage of some fruits may consist of thick rind, stem, fibrous cavity material, or uneaten residue rather than usable poultry feed."
+          },
+
+          {
+            title:
+              "Rodent and Wildlife Attraction",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Developing fruit, stored fruit, loose seeds, spilled kernels, open flesh, and discarded rind may attract rodents, insects, raccoons, opossums, deer, and other wildlife."
+          },
+
+          {
+            title:
+              "Decorative Fruit May Be Unsafe",
+
+            severity:
+              "high",
+
+            explanation:
+              "Painted, glittered, waxed, glued, preserved, pesticide-treated, candle-contaminated, or otherwise decorated fruit should not be assumed suitable for poultry consumption."
+          },
+
+          {
+            title:
+              "Ornamental Gourds and Volunteer Crosses Are Unreliable",
+
+            severity:
+              "high",
+
+            explanation:
+              "Unknown gourds and uncontrolled Cucurbita crosses may be intensely bitter, poorly identified, chemically treated, or unsuitable for food and feed use."
+          },
+
+          {
+            title:
+              "Pumpkin Seeds Are Not a Proven Dewormer",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Pumpkin seeds should not replace fecal testing, veterinary diagnosis, sanitation, pasture management, or effective parasite treatment. Reliance on unsupported claims may delay appropriate care."
+          },
+
+          {
+            title:
+              "No Universal Backyard Feeding Amount Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Fruit size, seed form, moisture, flock size, bird age, body condition, climate, activity, complete-feed intake, and feeding purpose differ too greatly for one crop-specific serving amount to be applied safely to every flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Fresh flesh is low in protein",
+          "Fresh flesh is low in concentrated energy",
+          "Fresh flesh contains substantial water",
+          "Fresh fruit weight exaggerates dry-matter feed value",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Seed crude protein does not establish amino-acid adequacy",
+          "Methionine and other limiting amino acids must be evaluated across the complete ration",
+          "Seeds are substantially more energy dense than flesh",
+          "Unrestricted seeds may provide excessive dietary fat",
+          "Whole seeds contain more fiber than hulled kernels",
+          "Seed phosphorus may be partly associated with phytate",
+          "Mineral availability varies with product form and processing",
+          "Fresh flesh may dilute complete-feed intake",
+          "Seeds may encourage selective feeding",
+          "Orange flesh does not guarantee identical carotenoid concentration",
+          "Cooking may reduce some heat-sensitive nutrients",
+          "Dehydration concentrates nutrients but does not correct ration imbalance",
+          "Whole seed, kernel, seed meal, and seed oil are not equivalent",
+          "No universal poultry metabolizable-energy value applies to all forms",
+          "No universal backyard inclusion percentage is supported"
+        ],
+
+        practicalLimitations: [
+          "Many cultivars require substantial garden space",
+          "Vines may spread into paths and neighboring beds",
+          "Fruit production depends on successful insect pollination",
+          "Squash vine borers may destroy vines",
+          "Squash bugs may reduce plant vigor",
+          "Cucumber beetles may damage plants and transmit disease",
+          "Powdery mildew may reduce late-season production",
+          "Downy mildew may develop under humid conditions",
+          "Fruit size varies enormously",
+          "Fruit number varies enormously",
+          "Bush and vining cultivars require different spacing",
+          "Large fruit may be difficult to lift",
+          "Hard fruit may be difficult to cut",
+          "Whole fruit requires substantial storage space",
+          "Storage fruit must be inspected regularly",
+          "Bruising can shorten storage life",
+          "Freezing can damage stored fruit",
+          "Condensation can promote decay",
+          "Opened fruit spoils rapidly",
+          "Cut flesh may become contaminated in litter",
+          "Uneaten pulp attracts insects",
+          "Uneaten fruit attracts rodents",
+          "Dominant birds may monopolize one fruit",
+          "Rind waste may be substantial",
+          "Seed separation requires labor",
+          "Seed cleaning requires labor",
+          "Seed drying requires careful moisture control",
+          "Hulling requires additional processing",
+          "Ground seed has reduced storage stability",
+          "Frozen puree requires freezer space",
+          "Thawed puree is highly perishable",
+          "Dehydration requires dependable drying",
+          "Inadequately dried flesh may mold",
+          "Ornamental or decorated fruit may be unsafe",
+          "Volunteer crosses may be bitter or unreliable",
+          "Commercial yield figures do not translate directly to backyard conditions"
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Providing complete protein",
+          "Meeting laying-hen calcium requirements",
+          "Providing a universal deworming treatment",
+          "Eliminating the need for fecal testing",
+          "Eliminating the need for veterinary diagnosis",
+          "Correcting an unbalanced homemade ration",
+          "Guaranteeing increased egg production",
+          "Guaranteeing darker yolks",
+          "Guaranteeing improved fertility",
+          "Guaranteeing improved hatchability",
+          "Guaranteeing winter weight maintenance",
+          "Providing high dry-matter yield merely because fruit is heavy",
+          "Treating one pound of fresh flesh as equal to one pound of dry feed",
+          "Treating fresh flesh and seed as nutritionally equivalent",
+          "Treating whole seeds and kernels as nutritionally equivalent",
+          "Treating whole seeds and seed meal as nutritionally equivalent",
+          "Treating all Cucurbita cultivars as agronomically identical",
+          "Treating all Pumpkins as strong storage fruit",
+          "Treating all Winter Squash as equally productive",
+          "Treating ornamental gourds as edible Squash",
+          "Treating volunteer crosses as automatically safe",
+          "Making bitter fruit safe by cooking",
+          "Making moldy fruit safe by trimming",
+          "Making spoiled fruit safe by freezing",
+          "Making contaminated fruit safe by washing",
+          "Providing exact portion control through whole-fruit feeding",
+          "Providing dependable small-space yield from vigorous vining cultivars",
+          "Producing fruit without sufficient pollination",
+          "Preventing pest and disease loss without management"
+        ],
+
+        limitationSummary:
+          "Pumpkins and Winter Squash are highly useful multipurpose supplemental crops, but their feeding value must be interpreted carefully. Fresh flesh is moisture rich and nutritionally dilute, while seeds and kernels are concentrated in fat, calories, protein, and phosphorus. Neither form is complete feed. The greatest safety concerns are abnormal bitterness, hidden internal decay, rapid spoilage after opening, contamination, and unsupported parasite-treatment claims. The greatest practical limitations are extreme cultivar variation, substantial space requirements, pest and disease pressure, pollination dependence, bulky storage, rind waste, and the difficulty of measuring actual whole-fruit intake."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "low-for-sound-edible-flesh-and-moderate-for-seed-products",
+
+        requiresDetoxification:
+          false,
+
+        cookingRequired:
+          false,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Cucurbitacins in abnormally bitter fruit",
+
+            concernLevel:
+              "potentially-high",
+
+            explanation:
+              "Edible Pumpkin and Winter Squash cultivars are normally selected for very low bitterness, but unusually bitter fruit may contain elevated cucurbitacins. Pronounced bitterness should be treated as a rejection signal because cooking, freezing, drying, dilution, or mixing does not provide a dependable safety correction."
+          },
+
+          {
+            factor:
+              "Phytate in mature seeds",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "A portion of the phosphorus and certain other minerals in Pumpkin and Winter Squash seeds may be associated with phytate, reducing mineral availability. This is primarily a ration-formulation concern rather than a reason to prohibit limited supplemental feeding."
+          },
+
+          {
+            factor:
+              "Hull-associated fiber",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Whole mature seeds retain a fibrous seed coat that lowers the concentration of oil, protein, energy, and other kernel nutrients on an equal-weight basis. Increasing hull content reduces nutrient density and may limit practical inclusion in formulated diets."
+          },
+
+          {
+            factor:
+              "High seed-oil concentration",
+
+            concernLevel:
+              "high-when-overfed",
+
+            explanation:
+              "The high oil concentration of mature seeds and hulled kernels is not a classical toxin, but it becomes a major nutritional concern when excessive intake displaces balanced feed, raises total dietary fat, or contributes unnecessary calories."
+          },
+
+          {
+            factor:
+              "Incomplete amino-acid balance",
+
+            concernLevel:
+              "moderate-to-high-in-significant-ration-use",
+
+            explanation:
+              "Pumpkin seed products may contain substantial crude protein, but crude-protein percentage does not establish complete poultry amino-acid adequacy. Methionine, lysine, and the full digestible amino-acid profile must be evaluated across the complete ration."
+          },
+
+          {
+            factor:
+              "Moisture-driven nutrient dilution in fresh flesh",
+
+            concernLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Fresh Pumpkin and Winter Squash flesh contains substantial water. Although this is not an antinutritional compound, excessive intake can dilute total dietary energy, protein, amino acids, calcium, vitamins, and trace minerals by reducing consumption of complete feed."
+          },
+
+          {
+            factor:
+              "Phenolic and other plant compounds in seed products",
+
+            concernLevel:
+              "low-to-moderate",
+
+            explanation:
+              "Pumpkin seed products may contain phenolic and other naturally occurring plant compounds whose practical importance depends on species, cultivar, processing, product type, analytical method, and dietary inclusion. Limited supplemental adult use does not normally require special treatment."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Trypsin inhibitors",
+
+            explanation:
+              "Pumpkin and Winter Squash do not require the routine heat treatment used to address the major trypsin-inhibitor concern associated with raw mature Soybeans."
+          },
+
+          {
+            factor:
+              "Lectin toxicity",
+
+            explanation:
+              "Sound mature flesh and seeds from edible Cucurbita cultivars are not treated as lectin-limited raw legumes requiring cooking before ordinary adult-chicken supplemental use."
+          },
+
+          {
+            factor:
+              "Beta-glucans",
+
+            explanation:
+              "Pumpkin and Winter Squash do not carry the same soluble beta-glucan concern associated with Barley and Oats."
+          },
+
+          {
+            factor:
+              "Cyanogenic compounds",
+
+            explanation:
+              "Edible mature Pumpkin and Winter Squash flesh and seeds are not classified in this database as requiring processing for cyanogenic-compound removal."
+          },
+
+          {
+            factor:
+              "Routine cooking requirement",
+
+            explanation:
+              "Sound mature edible flesh, pulp, and seeds may be offered raw to established adult chickens. Cooking can soften flesh but is not required for detoxification."
+          },
+
+          {
+            factor:
+              "Seed hull toxicity",
+
+            explanation:
+              "Pumpkin and Winter Squash seed hulls are fibrous rather than inherently toxic. Their main limitation is reduced nutrient density and digestibility relative to hulled kernels."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Cooking flesh",
+
+            effect:
+              "Softens tissue and may improve handling, but does not convert the flesh into complete poultry feed and should not be used to salvage bitter, moldy, rotten, fermented, or contaminated fruit."
+          },
+
+          {
+            process:
+              "Freezing flesh",
+
+            effect:
+              "Extends seasonal availability but does not improve protein concentration or correct nutritional imbalance. Thawed tissue becomes soft and highly perishable."
+          },
+
+          {
+            process:
+              "Dehydrating flesh",
+
+            effect:
+              "Removes water and concentrates the remaining nutrients by weight, but also concentrates any existing imbalance and requires complete drying to prevent mold."
+          },
+
+          {
+            process:
+              "Dehulling seeds",
+
+            effect:
+              "Reduces structural fiber and increases the concentration of oil, protein, energy, phosphorus, magnesium, and other kernel nutrients."
+          },
+
+          {
+            process:
+              "Grinding seeds",
+
+            effect:
+              "Improves mixing uniformity and physical access to the kernel but greatly reduces storage stability by exposing oil-rich tissue to oxygen, moisture, and heat."
+          },
+
+          {
+            process:
+              "Oil extraction",
+
+            effect:
+              "Creates a fundamentally different feed ingredient with less oil, more concentrated protein, and fiber content influenced by the degree of dehulling and extraction."
+          },
+
+          {
+            process:
+              "Roasting seeds",
+
+            effect:
+              "May alter flavor, moisture, physical characteristics, and nutrient quality but is not required to make clean mature seed safe for established adult-chicken supplemental use."
+          },
+
+          {
+            process:
+              "Soaking or sprouting seeds",
+
+            effect:
+              "May alter phytate, moisture, texture, microbial risk, and nutrient availability, but requires strict sanitation and does not create a complete ration."
+          },
+
+          {
+            process:
+              "Fermentation",
+
+            effect:
+              "Is not required for safety and introduces additional microbial-control, sanitation, temperature, acidity, and spoilage concerns."
+          }
+        ],
+
+        antinutritionalSummary:
+          "Sound mature flesh and seeds from edible Pumpkin and Winter Squash cultivars do not require routine cooking or detoxification before supplemental adult-chicken feeding. The most important concerns are abnormally bitter cucurbitacin-containing fruit, seed phytate, hull fiber, incomplete amino-acid balance, concentrated seed oil, and dilution of complete-feed intake by excessive moisture-rich flesh."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Pumpkins and Winter Squash should complement a complete poultry ration rather than serve as the nutritional foundation. Fresh flesh contributes moisture, plant diversity, carotenoids, and enrichment, while seeds contribute concentrated fat, energy, and moderate-to-high protein.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, digestible amino acids, vitamins, minerals, sodium, and calcium that Pumpkin flesh and seeds cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration maintains nutritional balance for mixed or breeding flocks while Pumpkin or Winter Squash remains an optional seasonal supplement."
+          },
+
+          {
+            feedType:
+              "Complete grower or developer feed",
+
+            relationship:
+              "A balanced grower ration supports skeletal development, feathering, and appropriate growth while small amounts of Squash remain supplemental."
+          },
+
+          {
+            feedType:
+              "Protein-oriented formulated ingredients",
+
+            relationship:
+              "Appropriately processed Soybeans, Field Peas, Cowpeas, Alfalfa meal, fish meal, insect meal, or other formulated protein ingredients can address protein and amino-acid needs that watery flesh cannot meet and seed protein cannot fully balance alone."
+          },
+
+          {
+            feedType:
+              "Cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Wheat, Barley, Oats, Millet, and Sorghum contribute starch-based energy and different fiber characteristics, while Pumpkin seeds contribute more oil. Informally combining these ingredients does not automatically create complete feed."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the calcium deficiency of Pumpkin flesh and seeds."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, Clover, Alfalfa, Comfrey, Mulberry leaves, and other appropriate forage crops provide leafy nutrients and feeding variety that differ from moisture-rich Squash flesh and concentrated seeds."
+          },
+
+          {
+            feedType:
+              "Lower-fat supplemental produce",
+
+            relationship:
+              "Leafy greens, garden vegetables, and other sound produce can diversify enrichment without adding the concentrated oil and calories supplied by hulled Pumpkin seed kernels."
+          },
+
+          {
+            feedType:
+              "Appropriate insoluble grit",
+
+            relationship:
+              "Established birds consuming whole seeds or other coarse material should have access to appropriately sized insoluble grit when adequate natural grit is not available."
+          },
+
+          {
+            feedType:
+              "Clean water",
+
+            relationship:
+              "Continuous access to clean water remains necessary even when birds consume moisture-rich Pumpkin or Winter Squash flesh."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient methionine",
+          "Insufficient lysine",
+          "Incomplete amino-acid balance",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Sodium deficiency",
+          "Excessive total dietary fat",
+          "Excessive dietary energy",
+          "Poor-quality complete feed",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed",
+          "Overcrowding",
+          "Poor sanitation",
+          "Rodent contamination",
+          "Mold exposure",
+          "Internal parasites",
+          "Delayed veterinary treatment"
+        ],
+
+        pairingWarning:
+          "Combining Pumpkin flesh, Pumpkin seeds, cereal grains, leafy crops, and other homegrown ingredients does not automatically produce a nutritionally complete poultry diet. Significant ration inclusion requires calculation of dry matter, metabolizable energy, digestible amino acids, fat, fiber, calcium, available phosphorus, sodium, vitamins, trace minerals, ingredient variability, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to keep an age-appropriate complete ration continuously available, offer sound opened Pumpkin or Winter Squash as occasional seasonal enrichment, and treat cleaned seeds or kernels as a separate concentrated supplement requiring tighter portion control."
+      },
+
+      feedingMethods: {
+        primaryMethod:
+          "Whole mature fruit split, quartered, or punctured open for natural pecking enrichment while maintaining free-choice access to a complete poultry ration.",
+
+        recommendedMethods: [
+          {
+            method:
+              "Opened whole-fruit enrichment",
+
+            rating:
+              "excellent",
+
+            explanation:
+              "Wash the rind, inspect the fruit, split or puncture it, and allow birds to peck the flesh, pulp, and seeds naturally. Remove leftovers before spoilage develops."
+          },
+
+          {
+            method:
+              "Halved or quartered fruit",
+
+            rating:
+              "excellent",
+
+            explanation:
+              "Provides easier access for multiple birds while still encouraging natural foraging behavior."
+          },
+
+          {
+            method:
+              "Chopped raw flesh",
+
+            rating:
+              "very-good",
+
+            explanation:
+              "Useful when distributing supplements across multiple feeding areas or when portion control is desired."
+          },
+
+          {
+            method:
+              "Fresh pulp with mature seeds",
+
+            rating:
+              "very-good",
+
+            explanation:
+              "Suitable immediately after processing household fruit."
+          },
+
+          {
+            method:
+              "Plain cooked and cooled flesh",
+
+            rating:
+              "good",
+
+            explanation:
+              "Useful for utilizing excess household produce provided no salt, sugar, butter, oil, spices, onions, garlic, or seasonings are present."
+          },
+
+          {
+            method:
+              "Cleaned dried whole seeds",
+
+            rating:
+              "good",
+
+            explanation:
+              "Offer only in measured quantities because seeds are much more concentrated than fresh flesh."
+          },
+
+          {
+            method:
+              "Plain hulled kernels",
+
+            rating:
+              "good-with-care",
+
+            explanation:
+              "Highly concentrated source of oil and calories. Portion carefully."
+          },
+
+          {
+            method:
+              "Ground seed incorporated into a formulated ration",
+
+            rating:
+              "specialized",
+
+            explanation:
+              "Most appropriate when professionally balancing homemade poultry feed."
+          },
+
+          {
+            method:
+              "Pumpkin seed meal",
+
+            rating:
+              "specialized",
+
+            explanation:
+              "Appropriate only as an analyzed ingredient within a properly formulated ration."
+          }
+        ],
+
+        methodsToAvoid: [
+          "Feeding unopened hard-rinded fruit",
+          "Offering moldy fruit",
+          "Offering fermented fruit",
+          "Offering rotten fruit",
+          "Offering leaking fruit",
+          "Offering slimy fruit",
+          "Offering fruit with hidden decay",
+          "Offering abnormally bitter fruit",
+          "Offering decorative painted Pumpkins",
+          "Offering glittered decorative fruit",
+          "Offering chemically preserved fruit",
+          "Offering salted roasted seeds",
+          "Offering flavored kernels",
+          "Offering sweetened Pumpkin products",
+          "Offering spoiled thawed puree",
+          "Offering rancid seed kernels",
+          "Offering moldy stored seeds",
+          "Leaving opened fruit available until spoiled"
+        ],
+
+        feedingFrequency:
+          "Occasional seasonal supplementation.",
+
+        feedingTiming:
+          "May be offered at any convenient time while ensuring birds continue consuming their complete balanced ration.",
+
+        portionGuidance:
+          "No universal serving size is appropriate because intake varies with flock size, bird age, body condition, complete-feed consumption, fruit size, cultivar, moisture content, weather, activity level, and whether flesh or seeds are being offered.",
+
+        monitoringRecommendations: [
+          "Observe complete-feed intake.",
+          "Monitor body condition.",
+          "Remove spoiled leftovers promptly.",
+          "Watch for dominant birds monopolizing fruit.",
+          "Inspect opened fruit daily during warm weather.",
+          "Discard fruit showing mold, fermentation, slime, leakage, or abnormal odor.",
+          "Inspect seed storage routinely for insects, rodents, moisture, heating, or mold."
+        ],
+
+        practicalNotes: [
+          "Opened fruit generally provides more enrichment than chopped flesh.",
+          "Several smaller fruit sections often reduce competition better than one large fruit.",
+          "Seeds should be viewed separately from flesh because their nutrient density is much greater.",
+          "Keep complete feed continuously available.",
+          "Do not rely on Pumpkin seeds as a parasite-control program."
+        ]
+      },
+
+      storage: {
+        storageDifficulty:
+          "easy-to-moderate",
+
+        storageSummary:
+          "Properly matured Pumpkins and Winter Squash are among the best backyard crops for non-electric seasonal storage. Storage success depends on cultivar selection, harvest maturity, careful handling, curing where appropriate, good airflow, moderate temperatures, low free moisture, and routine inspection. Once fruit is cut open, storage life decreases dramatically.",
+
+        wholeFruitStorage: {
+          recommended:
+            true,
+
+          explanation:
+            "Store mature, sound fruit in a cool, dry, well-ventilated location protected from freezing, excessive heat, rodents, insects, and direct sunlight. Inspect regularly and remove damaged fruit immediately."
+        },
+
+        seedStorage: {
+          recommended:
+            true,
+
+          explanation:
+            "Clean seeds thoroughly, dry completely, cool before packaging, and store in moisture-resistant containers protected from insects, rodents, heat, light, and humidity."
+        },
+
+        frozenStorage: {
+          recommended:
+            true,
+
+          explanation:
+            "Plain cooked or raw flesh and puree may be frozen to extend availability. Thawed material should be used promptly and never refrozen after spoilage begins."
+        },
+
+        dehydratedStorage: {
+          recommended:
+            true,
+
+          explanation:
+            "Completely dehydrated flesh may store well when protected from moisture and light. Incomplete drying greatly increases mold risk."
+        },
+
+        refrigeration: {
+          recommended:
+            "after-cutting",
+
+          explanation:
+            "Once fruit has been opened, refrigeration slows spoilage but does not stop it."
+        },
+
+        idealStorageConditions: [
+          "Cool temperatures",
+          "Good air circulation",
+          "Low humidity",
+          "Protection from freezing",
+          "Protection from direct sunlight",
+          "Protection from rodents",
+          "Protection from insects",
+          "Routine inspection",
+          "Careful handling to avoid bruising"
+        ],
+
+        storageEnemies: [
+          "Bruising",
+          "Cuts",
+          "Cracks",
+          "High humidity",
+          "Standing moisture",
+          "Condensation",
+          "Poor airflow",
+          "Freezing",
+          "Excessive heat",
+          "Rodent damage",
+          "Insect feeding",
+          "Mold",
+          "Soft rot",
+          "Hidden internal decay"
+        ],
+
+        expectedStorageLife: {
+          wholeFruit:
+            "Highly dependent on Cucurbita species, cultivar, harvest maturity, curing, storage conditions, and fruit quality. Suitable storage cultivars commonly remain usable for weeks to months.",
+
+          choppedFlesh:
+            "Short.",
+
+          cookedFlesh:
+            "Short.",
+
+          thawedFlesh:
+            "Very short.",
+
+          puree:
+            "Very short after thawing.",
+
+          driedSeeds:
+            "Long when thoroughly dried and properly protected.",
+
+          hulledKernels:
+            "Shorter than whole seeds because exposed oils oxidize more rapidly.",
+
+          groundSeed:
+            "Shortest of the dry seed products because grinding greatly accelerates oxidation."
+        },
+
+        storageRecommendations: [
+          "Harvest fully mature fruit.",
+          "Handle gently to prevent bruising.",
+          "Cure storage cultivars when appropriate.",
+          "Do not stack fruit excessively deep.",
+          "Inspect stored fruit routinely.",
+          "Remove damaged fruit immediately.",
+          "Wash fruit before feeding rather than before long-term storage when practical.",
+          "Dry seeds completely before storage.",
+          "Store seed in sealed moisture-resistant containers.",
+          "Label stored seed with harvest date.",
+          "Rotate stored inventory so older material is used first."
+        ]
+      },
+
+      spoilageAndContamination: {
+        spoilageRisk:
+          "moderate-to-high-after-opening",
+
+        overallSummary:
+          "Whole sound mature Pumpkins and Winter Squash can store exceptionally well, but once opened they become highly perishable. Moist flesh, exposed pulp, damaged rind, thawed puree, improperly dried seeds, and oil-rich kernels all require careful inspection because spoilage can progress rapidly.",
+
+        signsOfGoodQuality: [
+          "Firm mature rind",
+          "Normal cultivar color",
+          "No soft spots",
+          "No leakage",
+          "No mold",
+          "Fresh natural odor",
+          "Firm flesh",
+          "Normal seed appearance",
+          "Dry clean stored seeds",
+          "No insect activity",
+          "No rodent damage"
+        ],
+
+        signsOfSpoilage: [
+          "Visible mold",
+          "Slimy flesh",
+          "Soft collapse",
+          "Fermented odor",
+          "Alcohol-like odor",
+          "Sour odor",
+          "Leaking liquid",
+          "Internal discoloration",
+          "Blackened tissue",
+          "Stringy decomposing flesh",
+          "Heating stored seeds",
+          "Condensation inside storage containers",
+          "Musty odor",
+          "Rancid kernel odor",
+          "Insect infestation",
+          "Rodent contamination"
+        ],
+
+        contaminationRisks: [
+          {
+            source:
+              "Rodents",
+
+            concern:
+              "Urine, feces, hair, chewing damage, and disease transmission."
+          },
+
+          {
+            source:
+              "Wildlife",
+
+            concern:
+              "Raccoons, opossums, deer, birds, and other animals may contaminate opened fruit."
+          },
+
+          {
+            source:
+              "Insects",
+
+            concern:
+              "Flies, beetles, ants, and other insects rapidly colonize exposed flesh."
+          },
+
+          {
+            source:
+              "Floodwater",
+
+            concern:
+              "Flood contamination cannot be corrected by washing."
+          },
+
+          {
+            source:
+              "Chemical treatments",
+
+            concern:
+              "Decorative coatings, paint, glitter, waxes, preservatives, pesticides, and similar products make fruit unsuitable for poultry feed."
+          },
+
+          {
+            source:
+              "Household preparation",
+
+            concern:
+              "Cross-contamination from dirty cutting boards, knives, countertops, spoiled food, or raw meat."
+          }
+        ],
+
+        storageInspectionChecklist: [
+          "Inspect rind before storage.",
+          "Inspect again before opening.",
+          "Inspect flesh immediately after cutting.",
+          "Reject abnormal bitterness.",
+          "Reject mold.",
+          "Reject fermentation.",
+          "Reject slime.",
+          "Reject leakage.",
+          "Reject unusual odor.",
+          "Inspect stored seeds for moisture.",
+          "Inspect containers for insects.",
+          "Inspect containers for rodents.",
+          "Discard questionable material rather than risking flock health."
+        ],
+
+        spoilagePrevention: [
+          "Harvest mature fruit carefully.",
+          "Avoid bruising.",
+          "Cure storage cultivars appropriately.",
+          "Store in cool dry ventilated conditions.",
+          "Protect from freezing.",
+          "Protect from excessive heat.",
+          "Inspect routinely.",
+          "Open only when needed.",
+          "Feed promptly after opening.",
+          "Remove leftovers before spoilage.",
+          "Dry seeds thoroughly.",
+          "Store seeds only after cooling.",
+          "Use moisture-resistant containers.",
+          "Rotate stored inventory."
+        ],
+
+        discardImmediatelyIf: [
+          "Fruit is abnormally bitter.",
+          "Visible mold develops.",
+          "Fermentation occurs.",
+          "Fruit becomes slimy.",
+          "Fruit leaks.",
+          "Internal decay is discovered.",
+          "Rodent contamination is present.",
+          "Flood contamination occurred.",
+          "Decorative chemical treatments are present.",
+          "Stored seeds become moldy.",
+          "Stored kernels smell rancid.",
+          "Containers show insect infestation."
+        ]
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Treating Pumpkin as complete poultry feed",
+
+            consequence:
+              "Protein, amino acids, calcium, vitamins, minerals, and overall nutritional balance become inadequate."
+          },
+
+          {
+            mistake:
+              "Overfeeding fresh flesh",
+
+            consequence:
+              "Birds fill on watery produce while consuming less balanced feed."
+          },
+
+          {
+            mistake:
+              "Overfeeding seeds",
+
+            consequence:
+              "Excess calories and fat may reduce complete-feed intake and contribute to obesity."
+          },
+
+          {
+            mistake:
+              "Ignoring bitter taste",
+
+            consequence:
+              "Birds may be exposed to elevated cucurbitacins."
+          },
+
+          {
+            mistake:
+              "Feeding moldy fruit",
+
+            consequence:
+              "Potential exposure to molds, toxins, and spoilage organisms."
+          },
+
+          {
+            mistake:
+              "Assuming intact rind guarantees safe fruit",
+
+            consequence:
+              "Hidden internal decay may go unnoticed."
+          },
+
+          {
+            mistake:
+              "Leaving opened fruit too long",
+
+            consequence:
+              "Rapid spoilage, insect activity, and contamination."
+          },
+
+          {
+            mistake:
+              "Using decorative Pumpkins",
+
+            consequence:
+              "Birds may consume paint, glitter, preservatives, waxes, or other chemicals."
+          },
+
+          {
+            mistake:
+              "Using ornamental gourds",
+
+            consequence:
+              "Unknown bitterness and uncertain safety."
+          },
+
+          {
+            mistake:
+              "Depending on Pumpkin seeds for parasite control",
+
+            consequence:
+              "Delayed diagnosis and ineffective treatment of internal parasites."
+          },
+
+          {
+            mistake:
+              "Improper seed drying",
+
+            consequence:
+              "Heating, mold development, and storage losses."
+          },
+
+          {
+            mistake:
+              "Grinding large quantities of seed long before use",
+
+            consequence:
+              "Accelerated oxidation and rancidity."
+          },
+
+          {
+            mistake:
+              "Treating kernels and whole seeds as nutritionally identical",
+
+            consequence:
+              "Inaccurate ration formulation."
+          },
+
+          {
+            mistake:
+              "Not removing spoiled leftovers",
+
+            consequence:
+              "Rodent attraction and disease risk."
+          },
+
+          {
+            mistake:
+              "Using household Pumpkin dishes",
+
+            consequence:
+              "Birds consume salt, sugar, butter, oils, spices, or other unsuitable ingredients."
+          }
+        ],
+
+        overallAdvice:
+          "Think of Pumpkins and Winter Squash primarily as seasonal enrichment and supplemental produce rather than as major feed ingredients unless they are being used within a professionally formulated ration."
+      },
+
+      troubleshooting: {
+        commonProblems: [
+          {
+            problem:
+              "Chickens ignore the Pumpkin",
+
+            possibleCauses: [
+              "Fruit not opened",
+              "Birds unfamiliar with it",
+              "Complete feed already satisfies appetite",
+              "Fruit is immature or poor quality"
+            ],
+
+            solutions: [
+              "Split or puncture the fruit.",
+              "Expose seeds and pulp.",
+              "Offer smaller sections.",
+              "Introduce gradually."
+            ]
+          },
+
+          {
+            problem:
+              "Fruit spoils before flock finishes it",
+
+            possibleCauses: [
+              "Fruit too large",
+              "Warm weather",
+              "Small flock"
+            ],
+
+            solutions: [
+              "Offer smaller portions.",
+              "Quarter large fruit.",
+              "Refrigerate unused portions.",
+              "Remove leftovers promptly."
+            ]
+          },
+
+          {
+            problem:
+              "Dominant birds monopolize access",
+
+            possibleCauses: [
+              "Single feeding location",
+              "Crowded run"
+            ],
+
+            solutions: [
+              "Offer several fruit sections.",
+              "Spread feeding locations apart."
+            ]
+          },
+
+          {
+            problem:
+              "Stored fruit develops rot",
+
+            possibleCauses: [
+              "Bruising",
+              "Poor curing",
+              "High humidity",
+              "Freezing",
+              "Poor ventilation"
+            ],
+
+            solutions: [
+              "Improve storage conditions.",
+              "Inspect more frequently.",
+              "Remove damaged fruit immediately."
+            ]
+          },
+
+          {
+            problem:
+              "Stored seeds become moldy",
+
+            possibleCauses: [
+              "Insufficient drying",
+              "Warm storage",
+              "Humidity",
+              "Poor containers"
+            ],
+
+            solutions: [
+              "Dry more thoroughly.",
+              "Cool before storage.",
+              "Use sealed moisture-resistant containers.",
+              "Discard moldy seed."
+            ]
+          },
+
+          {
+            problem:
+              "Seed kernels smell stale or paint-like",
+
+            possibleCauses: [
+              "Oxidation",
+              "Extended storage",
+              "Heat exposure"
+            ],
+
+            solutions: [
+              "Discard rancid kernels.",
+              "Store in cooler conditions.",
+              "Prepare smaller batches."
+            ]
+          },
+
+          {
+            problem:
+              "Birds eat only seeds",
+
+            possibleCauses: [
+              "Highly palatable kernels",
+              "Limited access to complete feed"
+            ],
+
+            solutions: [
+              "Reduce seed quantities.",
+              "Keep balanced feed continuously available.",
+              "Offer flesh separately if desired."
+            ]
+          },
+
+          {
+            problem:
+              "Concern about internal parasites",
+
+            possibleCauses: [
+              "Internet claims regarding Pumpkin seeds"
+            ],
+
+            solutions: [
+              "Perform fecal testing when appropriate.",
+              "Consult a veterinarian.",
+              "Use evidence-based parasite management.",
+              "Treat Pumpkin seeds as food rather than medication."
+            ]
+          }
+        ],
+
+        troubleshootingSummary:
+          "Most problems with Pumpkins and Winter Squash involve spoilage, storage quality, portion size, or misunderstanding their nutritional role. Proper storage, careful inspection, moderate feeding, and continuous access to a balanced poultry ration prevent the overwhelming majority of issues."
+      },
+
+      faq: [
+        {
+          question:
+            "Can chickens eat raw Pumpkin and Winter Squash?",
+
+          answer:
+            "Yes. Sound mature flesh, pulp, and seeds from edible Pumpkin and Winter Squash cultivars may be fed raw as supplemental food for established adult chickens. Cooking is optional and should not be viewed as a safety requirement."
+        },
+
+        {
+          question:
+            "Can chickens eat Pumpkin seeds?",
+
+          answer:
+            "Yes. Mature whole seeds and plain hulled kernels are safe supplemental foods, but they are much more concentrated in fat, calories, and protein than fresh flesh and should be fed in moderation."
+        },
+
+        {
+          question:
+            "Do Pumpkin seeds deworm chickens?",
+
+          answer:
+            "Current evidence does not support relying on Pumpkin seeds as a dependable parasite treatment. Birds with suspected internal parasites should be evaluated through appropriate diagnostic methods and treated using evidence-based parasite-management practices."
+        },
+
+        {
+          question:
+            "Should Pumpkins replace commercial feed?",
+
+          answer:
+            "No. Pumpkins and Winter Squash are valuable supplemental crops but cannot replace a complete poultry ration."
+        },
+
+        {
+          question:
+            "Can chickens eat cooked Pumpkin?",
+
+          answer:
+            "Yes. Plain cooked and cooled Pumpkin or Winter Squash without salt, butter, oil, sugar, spices, onions, garlic, or other unsuitable ingredients is appropriate as a supplement."
+        },
+
+        {
+          question:
+            "Can chickens eat decorative Halloween Pumpkins?",
+
+          answer:
+            "Only if they are untreated edible Pumpkins. Painted, glittered, waxed, chemically preserved, candle-contaminated, or otherwise decorated fruit should not be fed."
+        },
+
+        {
+          question:
+            "Can the rind be fed?",
+
+          answer:
+            "Chickens generally consume the softer flesh attached to the rind while leaving much of the thick mature rind behind. The rind itself contributes relatively little nutritional value."
+        },
+
+        {
+          question:
+            "How should whole Pumpkins be offered?",
+
+          answer:
+            "Wash the fruit, inspect it carefully, then split, quarter, or puncture it so birds can access the flesh, pulp, and seeds naturally."
+        },
+
+        {
+          question:
+            "Can spoiled Pumpkin be trimmed and fed?",
+
+          answer:
+            "No. Moldy, fermented, leaking, slimy, rotten, or abnormally bitter fruit should be discarded entirely."
+        },
+
+        {
+          question:
+            "Are all Pumpkins and Squash equally good for chickens?",
+
+          answer:
+            "No. Different Cucurbita species and cultivars vary greatly in storage life, flesh quality, seed production, vine habit, fruit size, and overall poultry-feed value."
+        }
+      ],
+
+      expertSummary: {
+        title:
+          "Expert Feeding Summary",
+
+        summary:
+          "Pumpkins and Winter Squash are among the most valuable seasonal enrichment crops available for backyard chickens. Their greatest strengths are long storage life, excellent whole-fruit enrichment, moisture-rich supplemental flesh, and a separate nutrient-dense seed component. Fresh flesh and mature seeds should always be viewed as different feed materials because their nutritional characteristics differ substantially. Sound edible fruit can become an outstanding seasonal supplement when used alongside a complete poultry ration, while spoiled, moldy, chemically treated, or unusually bitter fruit should always be discarded. The crop is best viewed as a multipurpose homestead food and enrichment crop—not as a replacement for balanced poultry nutrition."
+      },
+
+      scientificNotes: {
+        evidenceBasis:
+          "Agricultural Extension publications, poultry nutrition references, Cucurbita production literature, seed-composition research, and practical backyard poultry management guidance.",
+
+        importantConsiderations: [
+          "Fresh flesh is evaluated differently from dried seed products because moisture content changes nutrient concentration dramatically.",
+          "Whole seeds, hulled kernels, ground seed, and seed meal are nutritionally distinct ingredients.",
+          "Cultivar selection strongly affects storage life, dry matter, seed production, and practical feeding value.",
+          "Research involving Pumpkin seed meal should not automatically be applied to whole seeds or fresh fruit.",
+          "Claims regarding natural parasite control remain insufficient to replace evidence-based veterinary care."
+        ],
+
+        researchNeeds: [
+          "Improved poultry-specific feeding data across Cucurbita species.",
+          "More controlled studies comparing whole seeds, kernels, and seed meal.",
+          "Additional work evaluating practical backyard feeding rates.",
+          "Further evaluation of cultivar differences affecting poultry nutrition."
+        ]
+      },
+
+      practicalUse: {
+        bestUses: [
+          "Whole-fruit fall enrichment",
+          "Winter supplemental produce",
+          "Seasonal flock boredom reduction",
+          "Household food plus poultry crop",
+          "Stored winter feeding",
+          "Measured seed supplementation",
+          "Use of cosmetically imperfect fruit",
+          "Compost and homestead nutrient cycling"
+        ],
+
+        avoidUsingFor: [
+          "Complete ration replacement",
+          "Primary protein source",
+          "Primary calcium source",
+          "Parasite treatment",
+          "Exclusive winter feed",
+          "Precise ration formulation without nutrient analysis"
+        ],
+
+        backyardRecommendation:
+          "Grow one or more storage cultivars that fit available garden space. Reserve the best fruit for household use, feed sound surplus fruit to the flock after opening it, clean and dry mature seeds for measured supplemental feeding, and maintain a complete commercial ration as the nutritional foundation."
+      },
+
+      metadata: {
+        version:
+          "2.0.0",
+
+        template:
+          "Sunflower feedingReference master schema",
+
+        lastUpdated:
+          "2026-07",
+
+        reviewedForSchemaCompliance:
+          true,
+
+        notes:
+          "Structure follows the Sunflower master schema exactly. Crop-specific content reflects Pumpkins and Winter Squash while preserving all shared property names for renderer compatibility."
+      }
+    },
+    
+      chickenUse: {
       edibleParts: [
         "Mature edible flesh",
         "Soft internal pulp",
