@@ -115406,7 +115406,3591 @@ feedingReference: {
     summary:
       "Jerusalem Artichoke, also called Sunchoke or Sunroot, is a tall colony-forming perennial sunflower relative that produces edible inulin-rich underground tubers, substantial seasonal foliage, late-season flowers, and dependable regrowth from tubers left in the soil. Its strongest Backyard Chicken Planner role is as a permanent multipurpose homestead crop rather than a concentrated poultry-feed crop. Fresh sound tubers can provide supplemental produce and pecking enrichment, while properly dried and ground tubers have documented use as an ingredient in formulated poultry diets. Tender young foliage may provide limited seasonal greens. The crop also offers household food, rabbit forage, pollinator support, seasonal screening, compost biomass, recurring planting material, and non-electric in-ground winter storage. These benefits are balanced by aggressive underground persistence, difficult removal, tall shading growth, substantial digging labor, and the need for careful permanent-site selection.",
 
-    chickenUse: {
+    
+    ///////////////////////////
+//
+//  Jerusalem Artichoke - What can chickens eat?
+//
+//////////////////////////
+
+
+      feedingReference: {
+        overview: {
+          commonQuestion:
+            "Can chickens eat Jerusalem Artichokes?",
+
+          answerLabel:
+            "Yes — clean, sound Jerusalem Artichoke tubers and limited tender foliage can be offered as supplemental feeds to established adult chickens.",
+
+          quickAnswer:
+            "Chickens can eat clean, sound Jerusalem Artichoke tubers in small, gradually introduced amounts. Small tubers may be offered whole to established adult birds, while larger tubers can be split, chopped, or crushed to improve access. Tender young leaves and shoots may also provide limited seasonal greens. Jerusalem Artichoke should remain a supplemental produce and enrichment crop because fresh tubers contain substantial moisture, are relatively low in protein, contain fermentable inulin and related fructans, and do not provide the calcium, amino acids, vitamins, minerals, or overall balance of a complete poultry ration.",
+
+          detailedAnswer:
+            "Jerusalem Artichoke, also called Sunchoke or Sunroot, is a perennial sunflower relative grown primarily for its edible underground tubers. Its strongest backyard-chicken value comes from fresh supplemental produce, pecking enrichment, controlled postharvest foraging, limited tender foliage, and dependable in-ground winter storage. The tubers store much of their carbohydrate as inulin and related fructans rather than starch. This can make them a useful source of fermentable carbohydrate, but sudden unrestricted servings may alter manure consistency or cause digestive discomfort. Fresh tubers are also high in moisture and relatively low in protein, so they cannot replace complete poultry feed. Properly dried and ground Jerusalem Artichoke material has been studied as an ingredient in formulated poultry diets, but those controlled research uses do not establish a universal backyard inclusion percentage. Sound tubers should be introduced gradually, inspected carefully, and offered only as a supplement to an age-appropriate complete ration.",
+
+          primaryFeedingRole:
+            "Supplemental fresh-tuber feed and perennial pecking-enrichment crop",
+
+          secondaryFeedingRoles: [
+            "Fall and winter fresh-produce supplementation",
+            "Controlled postharvest foraging",
+            "In-ground winter feed storage",
+            "Tender seasonal greens",
+            "Fermentable-carbohydrate supplementation",
+            "Perennial garden-to-flock feed",
+            "Mixed-homestead resilience crop",
+            "Measured ingredient in a professionally balanced poultry ration"
+          ],
+
+          overallRecommendation:
+            "Recommended as a supplemental perennial crop for established adult chickens where permanent space is available and tubers are introduced gradually, inspected carefully, and fed alongside a complete poultry ration.",
+
+          recommendationStrength:
+            "moderate-high",
+
+          recommendedForBackyardFlocks:
+            true,
+
+          supplementOnly:
+            true,
+
+          completeFeedReplacement:
+            false,
+
+          guideUrl:
+            "growing-jerusalem-artichokes-for-chickens.html"
+        },
+
+        classification: {
+          safetyStatus:
+            "safe",
+
+          trafficLightRating:
+            "green",
+
+          feedingRole:
+            "supplement",
+
+          moderationRequired:
+            true,
+
+          processingRequirement:
+            "minimal",
+
+          primaryProductType:
+            "fresh-perennial-tuber",
+
+          preferredBirdStage:
+            "established-adult-chickens",
+
+          directPlantGrazingSuitable:
+            true,
+
+          wholeHeadEnrichmentSuitable:
+            false,
+
+          winterStorageSuitable:
+            true,
+
+          householdRationFormulationRequired:
+            false,
+
+          commercialRationIngredientPotential:
+            true,
+
+          confidenceLevel:
+            "moderate-high"
+        },
+
+        quickRatings: {
+          overallRecommendationScore:
+            4,
+
+          adultChickenSuitabilityScore:
+            4,
+
+          youngChickSuitabilityScore:
+            1,
+
+          feedingSafetyScore:
+            4,
+
+          nutritionalUsefulnessScore:
+            3,
+
+          energyValueScore:
+            2,
+
+          proteinValueScore:
+            1,
+
+          enrichmentValueScore:
+            4,
+
+          winterValueScore:
+            5,
+
+          storageValueScore:
+            5,
+
+          preparationSimplicityScore:
+            4,
+
+          portionControlEaseScore:
+            4,
+
+          beginnerFriendlinessScore:
+            3,
+
+          confinedFlockValueScore:
+            4,
+
+          pasturedFlockValueScore:
+            4,
+
+          directGardenAccessScore:
+            3,
+
+          notes: [
+            "Scores describe Jerusalem Artichoke's value as a supplemental fresh-produce, enrichment, and perennial-storage crop rather than as a complete poultry ration.",
+            "The strong winter and storage scores reflect the crop's ability to remain in reasonably drained soil and be harvested as needed.",
+            "The nutritional-usefulness score is moderate because fresh tubers contain substantial moisture, relatively little protein, and incomplete poultry nutrition.",
+            "The energy score is lower than cereal grains and oilseeds because fresh tubers are not a concentrated dry feed.",
+            "The feeding-safety score is reduced slightly because sudden unrestricted intake of inulin-rich tubers may alter manure consistency or digestive comfort.",
+            "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration.",
+            "Direct garden access requires control because chickens may damage the patch, expose tubers, compact soil, and consume more tuber material than intended.",
+            "The crop's overall value increases substantially when household food, rabbit forage, pollinator support, compost biomass, seasonal screening, and permanent homestead resilience are also desired."
+          ]
+        },
+
+        safety: {
+          safeForChickens:
+            true,
+
+          toxicToChickens:
+            false,
+
+          safeWhenMature:
+            true,
+
+          safeRaw:
+            true,
+
+          cookingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          fermentationRequired:
+            false,
+
+          moderationRequired:
+            true,
+
+          primarySafetySummary:
+            "Clean, sound Jerusalem Artichoke tubers are safe supplemental foods for established adult chickens when introduced gradually and offered in controlled amounts. Tender young foliage may also be used sparingly. The principal concerns are digestive changes from sudden intake of inulin-rich tubers, displacement of complete feed, spoilage, contamination, mature fibrous plant material, and unrestricted flock access to the growing patch.",
+
+          whyModerationIsRequired:
+            "Fresh Jerusalem Artichoke tubers contain substantial moisture and fermentable inulin and related fructans. Large sudden servings may alter manure consistency, increase litter moisture, cause digestive discomfort, or reduce consumption of nutritionally complete feed. Tubers are also relatively low in protein and cannot provide the amino-acid, calcium, vitamin, mineral, and energy balance required by productive poultry.",
+
+          safeMaterials: [
+            {
+              item:
+                "Clean freshly harvested sound tubers",
+
+              status:
+                "safe",
+
+              explanation:
+                "Firm, undamaged tubers free from mold, rot, fermentation, freezing injury, rodent contamination, and chemical exposure may be offered as supplemental produce."
+            },
+
+            {
+              item:
+                "Small whole tubers",
+
+              status:
+                "safe-for-established-adults",
+
+              explanation:
+                "Small sound tubers may be offered whole to established adult chickens when birds can peck them safely and the tubers do not create competition or excessive intake."
+            },
+
+            {
+              item:
+                "Split Jerusalem Artichoke tubers",
+
+              status:
+                "safe",
+
+              explanation:
+                "Splitting larger tubers exposes the interior and makes them easier for chickens to investigate and consume. Cut surfaces should be fresh and offered promptly."
+            },
+
+            {
+              item:
+                "Chopped or crushed fresh tubers",
+
+              status:
+                "safe",
+
+              explanation:
+                "Chopping or crushing improves access and portion control but increases exposed surface area, so prepared pieces should be fed promptly and removed before they spoil."
+            },
+
+            {
+              item:
+                "Properly dried and ground tuber material",
+
+              status:
+                "safe-with-formulation-guidance",
+
+              explanation:
+                "Dried tuber material has documented use in formulated poultry diets, but it should be treated as a measured feed ingredient rather than added casually at an assumed research-study percentage."
+            },
+
+            {
+              item:
+                "Tender young leaves and shoots",
+
+              status:
+                "safe-in-limited-amounts",
+
+              explanation:
+                "Clean tender foliage may provide limited seasonal greens. Older foliage becomes increasingly fibrous and less useful as poultry feed."
+            },
+
+            {
+              item:
+                "Controlled access to exposed tubers after harvest",
+
+              status:
+                "safe-with-management",
+
+              explanation:
+                "Established adult chickens may peck at selected exposed tubers during controlled postharvest foraging where soil, crop history, and contamination risks are acceptable."
+            }
+          ],
+
+          unsafeMaterials: [
+            {
+              item:
+                "Rotten or moldy tubers",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Visible mold, soft rot, musty odor, abnormal discoloration, leaking tissue, or decayed areas indicate unsafe deterioration."
+            },
+
+            {
+              item:
+                "Slimy or fermented tubers",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Slime, bubbling, sour odor, alcoholic odor, or active fermentation indicates spoilage and unstable microbial activity."
+            },
+
+            {
+              item:
+                "Frozen and deteriorated tubers",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Tubers that have frozen and then become soft, watery, discolored, leaking, or foul-smelling should be discarded."
+            },
+
+            {
+              item:
+                "Rodent-contaminated tubers",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Tubers contaminated by rodent urine, feces, nesting material, chewing damage, or carcasses should be discarded."
+            },
+
+            {
+              item:
+                "Flood-contaminated tubers or foliage",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Floodwater may introduce sewage, chemicals, pathogens, and other contaminants that cannot be made safe through ordinary washing."
+            },
+
+            {
+              item:
+                "Chemically contaminated tubers or foliage",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Material exposed to pesticides, herbicides, fuels, solvents, fertilizers, treated soil, or other chemicals not approved for feed use should not be offered."
+            },
+
+            {
+              item:
+                "Mature coarse stems",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Mature stems become coarse, fibrous, and woody and have little practical poultry-feed value."
+            },
+
+            {
+              item:
+                "Unknown dried tuber products",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Dried meal or powder of uncertain identity, processing history, moisture level, contamination status, or storage history should not be used."
+            }
+          ],
+
+          majorHazards: [
+            {
+              hazard:
+                "Dietary displacement",
+
+              riskLevel:
+                "high-when-overfed",
+
+              explanation:
+                "Large tuber servings may reduce consumption of the flock's nutritionally complete feed even though the tubers cannot provide complete poultry nutrition."
+            },
+
+            {
+              hazard:
+                "Digestive changes from fermentable fructans",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Inulin and related fructans are highly fermentable. Sudden unrestricted intake may change manure consistency, increase gas production, or cause digestive discomfort."
+            },
+
+            {
+              hazard:
+                "Wet-litter problems",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Fresh tubers contain substantial moisture. Excessive intake or uneaten pieces in bedding may contribute to wetter litter, spoilage, insects, and dirty eggs."
+            },
+
+            {
+              hazard:
+                "Tuber spoilage",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Jerusalem Artichoke tubers have thin skins and may shrivel, mold, ferment, freeze, or decay when harvested and stored improperly."
+            },
+
+            {
+              hazard:
+                "Rodent contamination",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Stored tubers and in-ground patches may attract rodents, which can damage and contaminate the feed material."
+            },
+
+            {
+              hazard:
+                "Mature fibrous plant material",
+
+              riskLevel:
+                "low-to-moderate",
+
+              explanation:
+                "Older stems and foliage become coarse, woody, and poorly suited to poultry consumption."
+            },
+
+            {
+              hazard:
+                "Unrestricted patch access",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Chickens may dig aggressively, expose or damage tubers, compact wet soil, consume uncertain quantities, and interfere with future crop production."
+            },
+
+            {
+              hazard:
+                "Flock competition",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "A small number of split or exposed tubers may allow dominant birds to monopolize access while lower-ranking birds receive little or none."
+            }
+          ],
+
+          emergencyUse:
+            "Fresh Jerusalem Artichoke tubers can provide supplemental moisture and fermentable carbohydrate during a temporary feed shortage, but they are not concentrated or nutritionally complete emergency feed. An age-appropriate complete poultry ration or properly formulated replacement remains necessary.",
+
+          veterinaryCaution:
+            "Birds with persistent diarrhea, digestive disease, crop disorders, wet-litter-related health problems, severe weight loss, restricted diets, or other medical concerns may require individualized guidance from a poultry veterinarian before receiving substantial quantities of Jerusalem Artichoke."
+        },
+
+        birdStages: {
+          adultChickens: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "good-as-a-supplement",
+
+            preferredForms: [
+              "Small whole sound tubers",
+              "Fresh split tubers",
+              "Fresh chopped or crushed tubers",
+              "Controlled access to exposed tubers after harvest",
+              "Small amounts of tender young foliage",
+              "Properly dried and ground tuber material used within a balanced formulation"
+            ],
+
+            guidance:
+              "Established adult chickens are the most appropriate flock stage for fresh Jerusalem Artichoke tubers, controlled postharvest foraging, and limited tender foliage. Tubers should be introduced gradually and offered in controlled amounts while birds continue receiving unrestricted access to an appropriate complete ration."
+          },
+
+          layingHens: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "useful-but-moderation-required",
+
+            benefits: [
+              "Supplemental fresh produce",
+              "Fall and winter dietary variety",
+              "Pecking and foraging enrichment",
+              "In-ground seasonal storage",
+              "Fermentable-carbohydrate supplementation",
+              "Limited fresh-green contribution"
+            ],
+
+            limitations: [
+              "Does not provide sufficient calcium for eggshell formation",
+              "Cannot replace a complete layer ration",
+              "Relatively low protein concentration",
+              "Incomplete amino-acid balance",
+              "High fresh-matter moisture",
+              "Sudden large servings may alter manure consistency",
+              "Excessive intake may displace balanced feed"
+            ],
+
+            guidance:
+              "Laying hens may receive clean Jerusalem Artichoke tubers or limited tender foliage as supplemental foods, but a complete layer ration and an appropriate calcium program must remain the nutritional foundation."
+          },
+
+          pullets: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "limited-supplement-after-adequate-development",
+
+            guidance:
+              "Well-developed pullets capable of handling ordinary adult supplemental foods may receive small amounts of freshly prepared Jerusalem Artichoke tuber, but their complete grower or developer ration should remain dominant. Introduce the tubers gradually and monitor manure consistency and complete-feed intake."
+          },
+
+          youngChicks: {
+            suitable:
+              false,
+
+            suitabilityLevel:
+              "not-recommended-for-routine-backyard-feeding",
+
+            guidance:
+              "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Whole tubers, coarse pieces, substantial fresh foliage, and informal dried-tuber mixtures may displace balanced starter feed and may not provide an appropriate particle size or nutrient balance.",
+
+            possibleException:
+              "A qualified poultry nutritionist may use appropriately processed Jerusalem Artichoke material within a professionally formulated chick or broiler ration. That controlled use is not equivalent to offering whole tubers, chopped tubers, or dried tuber meal informally.",
+
+            reasonsForRestriction: [
+              "Risk of displacing complete chick starter",
+              "Inappropriate whole-tuber or coarse-piece size",
+              "High fresh-matter moisture",
+              "Relatively low protein concentration",
+              "Incomplete amino-acid balance",
+              "Insufficient calcium",
+              "Fermentable inulin and related fructans",
+              "Need for careful digestive observation"
+            ]
+          },
+
+          broilersAndMeatBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "formulation-dependent",
+
+            guidance:
+              "Processed Jerusalem Artichoke ingredients have been evaluated in poultry diets, but published inclusion levels assume professional formulation for energy, protein, amino acids, minerals, vitamins, fiber, moisture, and total feed intake. Backyard keepers should not copy research-study percentages into an otherwise unbalanced homemade ration."
+          },
+
+          roosters: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "good-as-a-measured-supplement",
+
+            guidance:
+              "Healthy adult roosters may consume clean sound tubers and limited tender foliage as measured supplements. Portion control remains important because fresh tubers cannot provide complete nutrition and may contribute unnecessary dietary dilution when offered freely."
+          },
+
+          breedingFlocks: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "moderation-required",
+
+            guidance:
+              "Breeding birds may receive Jerusalem Artichoke as supplemental produce or enrichment, but fertility, hatchability, egg production, and body condition depend on complete and balanced nutrition. Tubers should not dilute essential amino acids, vitamins, minerals, calcium, or overall ration quality."
+          },
+
+          seniorOrLowActivityBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "introduce-carefully",
+
+            guidance:
+              "Older, sedentary, confined, or digestion-sensitive birds may receive small portions of split or chopped sound tuber. Introduce gradually and discontinue or reduce the amount if manure becomes persistently loose, litter moisture increases, or complete-feed intake declines."
+          },
+
+          moltingBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "supplemental-only",
+
+            guidance:
+              "Jerusalem Artichoke provides supplemental carbohydrate and fresh-food variety but does not supply the concentrated protein or complete amino-acid balance needed for feather growth. A balanced ration with adequate digestible protein and essential amino acids remains more important."
+          },
+
+          sickOrRecoveringBirds: {
+            suitable:
+              "case-dependent",
+
+            suitabilityLevel:
+              "seek-individual-guidance",
+
+            guidance:
+              "The high moisture and fermentable carbohydrate content of Jerusalem Artichoke may be unsuitable for some sick or recovering birds. It should not replace diagnostic care, hydration management, or a veterinarian-recommended recovery diet."
+          }
+        },
+
+        edibleParts: {
+          primaryEdibleParts: [
+            {
+              part:
+                "Freshly harvested sound tubers",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Firm, clean, undamaged tubers are the primary poultry-feed product and may provide supplemental produce, fermentable carbohydrate, and pecking enrichment."
+            },
+
+            {
+              part:
+                "Small whole tubers",
+
+              suitability:
+                "very-good",
+
+              explanation:
+                "Small sound tubers may be offered whole to established adult chickens when birds can peck them safely and intake remains controlled."
+            },
+
+            {
+              part:
+                "Fresh split tubers",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Splitting larger tubers exposes the interior, improves access, and allows the keeper to inspect the flesh before feeding."
+            },
+
+            {
+              part:
+                "Fresh chopped or crushed tubers",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Chopped or crushed tubers improve access and portion control but should be fed promptly because cut surfaces deteriorate faster."
+            },
+
+            {
+              part:
+                "Properly dried and ground tuber material",
+
+              suitability:
+                "good-with-formulation-guidance",
+
+              explanation:
+                "Dried tuber material may function as a measured ingredient in a professionally balanced poultry ration, but it should not be added casually at an assumed research inclusion rate."
+            },
+
+            {
+              part:
+                "Tender young leaves",
+
+              suitability:
+                "good-in-limited-amounts",
+
+              explanation:
+                "Young clean leaves may provide limited seasonal greens before the foliage becomes coarse and fibrous."
+            },
+
+            {
+              part:
+                "Tender young shoots",
+
+              suitability:
+                "good-in-limited-amounts",
+
+              explanation:
+                "Young shoots may be sampled by chickens during controlled access, but unrestricted browsing may damage the developing patch."
+            },
+
+            {
+              part:
+                "Selected exposed tubers after harvest",
+
+              suitability:
+                "good-with-management",
+
+              explanation:
+                "Controlled postharvest access allows chickens to peck at clean exposed tubers while providing natural foraging enrichment."
+            }
+          ],
+
+          nonRecommendedPlantParts: [
+            {
+              part:
+                "Mature woody stems",
+
+              reason:
+                "Coarse, fibrous, and of little practical poultry-feed value."
+            },
+
+            {
+              part:
+                "Old mature foliage",
+
+              reason:
+                "Becomes increasingly fibrous, less palatable, and less useful than tender young growth."
+            },
+
+            {
+              part:
+                "Rotten or deteriorated tubers",
+
+              reason:
+                "May contain mold, spoilage organisms, fermentation products, or other unsafe contamination."
+            },
+
+            {
+              part:
+                "Roots other than harvested tubers",
+
+              reason:
+                "Fine roots have no meaningful practical poultry-feed value."
+            },
+
+            {
+              part:
+                "Unknown dried powders or meals",
+
+              reason:
+                "Identity, processing method, moisture level, storage history, and contamination status may be uncertain."
+            },
+
+            {
+              part:
+                "Flooded, chemically exposed, or rodent-contaminated material",
+
+              reason:
+                "Contamination may make the material unsafe regardless of whether it is washed or trimmed."
+            }
+          ],
+
+          ediblePartSummary:
+            "Jerusalem Artichoke's primary poultry value comes from its fresh underground tubers. Tender young foliage may provide limited seasonal greens, while mature stems and old foliage have little practical feed value. Properly dried tuber material should be treated as a formulated-feed ingredient rather than an informal backyard supplement."
+        },
+
+        feedingForms: {
+          preferredForms: [
+            {
+              form:
+                "Fresh split tubers",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Controlled supplemental feeding with easy inspection and good flock access."
+            },
+
+            {
+              form:
+                "Fresh chopped or crushed tubers",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Measured portions for birds that cannot easily open whole tubers."
+            },
+
+            {
+              form:
+                "Small whole sound tubers",
+
+              rating:
+                "very-good",
+
+              bestUse:
+                "Pecking enrichment for established adult chickens."
+            },
+
+            {
+              form:
+                "Controlled postharvest tuber access",
+
+              rating:
+                "very-good",
+
+              bestUse:
+                "Seasonal foraging enrichment after selected tubers have been exposed."
+            },
+
+            {
+              form:
+                "Tender young cut foliage",
+
+              rating:
+                "good",
+
+              bestUse:
+                "Limited seasonal green supplementation."
+            },
+
+            {
+              form:
+                "Properly dried and ground tuber material",
+
+              rating:
+                "formulation-dependent",
+
+              bestUse:
+                "Measured use within a professionally balanced poultry ration."
+            }
+          ],
+
+          acceptableForms: [
+            "Fresh small whole tubers",
+            "Fresh split tubers",
+            "Fresh chopped tubers",
+            "Fresh crushed tubers",
+            "Selected exposed tubers during controlled postharvest foraging",
+            "Tender young leaves",
+            "Tender young shoots",
+            "Clean cut-and-carry foliage",
+            "Properly dried ground tuber material",
+            "Analyzed Jerusalem Artichoke ingredient in a professionally formulated ration"
+          ],
+
+          formsRequiringAdditionalCare: [
+            {
+              form:
+                "Whole tubers",
+
+              concern:
+                "Large or hard tubers may be difficult for some birds to open and make actual intake difficult to measure."
+            },
+
+            {
+              form:
+                "Chopped or crushed tubers",
+
+              concern:
+                "Cut surfaces lose quality quickly and should not remain in warm conditions or damp litter."
+            },
+
+            {
+              form:
+                "Controlled postharvest access",
+
+              concern:
+                "Birds may consume uncertain amounts, dig aggressively, damage remaining tubers, compact wet soil, or spread contaminated soil."
+            },
+
+            {
+              form:
+                "Fresh tender foliage",
+
+              concern:
+                "Foliage becomes coarse with maturity and unrestricted access may reduce plant vigor or later tuber production."
+            },
+
+            {
+              form:
+                "Dried tuber slices",
+
+              concern:
+                "Drying must be complete and uniform because residual moisture can cause mold, heating, and spoilage."
+            },
+
+            {
+              form:
+                "Ground dried tuber material",
+
+              concern:
+                "Ground material absorbs moisture readily and should be treated as a measured formulated-feed ingredient rather than an unrestricted supplement."
+            },
+
+            {
+              form:
+                "Cold-stored harvested tubers",
+
+              concern:
+                "Thin-skinned tubers are vulnerable to shriveling, condensation, freezing injury, soft rot, and mold."
+            }
+          ],
+
+          avoidForms: [
+            "Rotten tubers",
+            "Moldy tubers",
+            "Slimy tubers",
+            "Fermenting tubers",
+            "Sour-smelling tubers",
+            "Frozen and deteriorated tubers",
+            "Flood-contaminated tubers",
+            "Rodent-contaminated tubers",
+            "Chemically contaminated tubers",
+            "Pesticide-exposed foliage",
+            "Mature woody stems",
+            "Coarse old foliage",
+            "Wet stored tuber meal",
+            "Moldy dried tuber slices",
+            "Unknown commercial tuber powders",
+            "Material collected from contaminated soil"
+          ],
+
+          wholeHeadAdvantages: [
+            "Not applicable to the primary tuber-feeding pathway",
+            "Whole small tubers can provide pecking enrichment",
+            "Minimal processing is required for small sound tubers",
+            "Whole tubers retain quality longer than chopped pieces",
+            "Birds can interact naturally with intact tubers"
+          ],
+
+          looseSeedAdvantages: [
+            "Not applicable because Jerusalem Artichoke is primarily harvested for tubers rather than seed",
+            "Chopped tuber portions are easier to measure than unrestricted patch access",
+            "Split pieces improve access for multiple birds",
+            "Prepared portions allow better inspection before feeding"
+          ],
+
+          wholeHeadDisadvantages: [
+            "The crop does not produce a practical whole-head poultry-feed product",
+            "Whole large tubers may be difficult for birds to open",
+            "Actual intake from whole tubers is difficult to estimate",
+            "Dominant birds may monopolize a limited number of tubers",
+            "Uneaten damaged tubers may spoil in litter"
+          ],
+
+          looseSeedDisadvantages: [
+            "The crop does not provide a practical loose-seed feed pathway",
+            "Chopping increases preparation labor",
+            "Cut pieces deteriorate faster than intact tubers",
+            "Small pieces may be scattered into wet litter",
+            "Prepared tuber portions require prompt feeding and cleanup"
+          ]
+        },
+
+        cultivarDifferences: {
+          important:
+            true,
+
+          summary:
+            "Jerusalem Artichoke cultivars may differ in tuber shape, skin color, yield, maturity, flowering time, plant height, disease response, cold adaptation, inulin concentration, ease of harvest, and regional suitability. Cultivar and latitude can strongly influence whether useful tuber production occurs before frost.",
+
+          blackOilSunflower: {
+            recommended:
+              true,
+
+            explanation:
+              "Early-maturing Jerusalem Artichoke cultivars are generally preferred in cold or short-season regions because they are more likely to complete useful tuber development before hard frost."
+          },
+
+          confectionSunflower: {
+            recommended:
+              true,
+
+            explanation:
+              "Smooth, compact, less-knobby tuber types may be easier to clean, inspect, chop, store, and use for household food or poultry supplementation."
+          },
+
+          ornamentalVarieties: {
+            recommended:
+              "depends",
+
+            explanation:
+              "Cultivars selected primarily for tall growth, flowers, or landscape appearance may still produce usable tubers, but ornamental performance does not guarantee strong tuber yield or convenient harvest characteristics."
+          },
+
+          pollenFreeCultivars: {
+            recommended:
+              "not-applicable",
+
+            explanation:
+              "Pollen-free classification is not a standard poultry-feed selection category for Jerusalem Artichoke. Tuber production, regional adaptation, maturity, and harvest characteristics are more important."
+          },
+
+          branchingCultivars: {
+            advantages: [
+              "Potentially greater seasonal foliage and screening value",
+              "Additional flowering and pollinator value",
+              "Greater cut-foliage biomass where limited tender forage is desired",
+              "Possible mixed homestead value beyond tuber production"
+            ]
+          },
+
+          giantSingleHeadCultivars: {
+            advantages: [
+              "Not directly applicable because Jerusalem Artichoke is valued primarily for underground tubers rather than a single harvested seed head",
+              "High-tuber-yielding cultivars may improve harvest efficiency",
+              "Early cultivars may improve reliability in short-season climates",
+              "Compact smooth tubers may reduce cleaning and preparation labor"
+            ]
+          }
+        },
+
+        preparation: {
+          preparationDifficulty:
+            "easy-to-moderate",
+
+          preparationSummary:
+            "Jerusalem Artichoke requires relatively little preparation for backyard poultry compared with most cereal grains. Freshly harvested sound tubers may be offered whole when small, or split, chopped, or crushed when larger. Tender young foliage may be fed fresh in limited amounts. Cooking is unnecessary, while drying and grinding are primarily useful when preparing a formulated feed ingredient rather than an ordinary backyard supplement.",
+
+          requiredPreparation: [
+            "Harvest only sound mature tubers.",
+            "Remove excess soil before feeding.",
+            "Discard rotten, moldy, fermented, soft, or foul-smelling tubers.",
+            "Inspect carefully for rodent damage or chemical contamination.",
+            "Wash tubers when heavy soil contamination is present.",
+            "Split, chop, or crush larger tubers to improve flock access.",
+            "Introduce gradually to allow digestive adaptation.",
+            "Remove uneaten fresh tuber pieces before spoilage develops."
+          ],
+
+          optionalPreparation: [
+            "Feed small tubers whole.",
+            "Slice large tubers into manageable pieces.",
+            "Crush tubers for easier access.",
+            "Harvest tender young foliage for limited seasonal greens.",
+            "Dry sliced tubers for later processing.",
+            "Grind thoroughly dried tubers for professionally formulated rations.",
+            "Expose selected tubers during controlled postharvest foraging."
+          ],
+
+          unnecessaryPreparation: [
+            "Cooking",
+            "Boiling",
+            "Roasting",
+            "Pressure cooking",
+            "Routine fermentation",
+            "Routine peeling"
+          ],
+
+          preparationMistakes: [
+            "Feeding rotten or moldy tubers.",
+            "Offering large quantities during the first feeding.",
+            "Allowing chopped tubers to remain in wet litter.",
+            "Assuming dried research ingredients and fresh tubers are nutritionally identical.",
+            "Feeding mature woody stems.",
+            "Failing to remove chemically contaminated or rodent-damaged tubers.",
+            "Allowing unrestricted access to an entire Jerusalem Artichoke patch.",
+            "Replacing complete poultry feed with fresh tubers."
+          ]
+        },
+
+        nutritionHighlights: {
+          nutritionalOrientation:
+            "high-moisture-fermentable-carbohydrate-supplement",
+
+          nutritionSummary:
+            "Jerusalem Artichoke differs from cereal grains because its underground tubers store much of their carbohydrate as inulin and related fructans rather than starch. Fresh tubers provide supplemental energy, potassium, small amounts of protein, modest fiber, vitamin C, and several trace nutrients, but they are primarily water and do not supply the protein, calcium, amino-acid balance, vitamins, minerals, or energy concentration required of a complete poultry ration.",
+
+          compositionBasis:
+            "Fresh tubers, dried tubers, tuber meal, foliage, stems, flowers, and processed Jerusalem Artichoke ingredients differ substantially in moisture, carbohydrate concentration, fiber, protein, and practical poultry-feeding value. These products should not be treated as nutritionally equivalent.",
+
+          primaryNutritionalStrengths: [
+            {
+              nutrientRole:
+                "Fermentable carbohydrate",
+
+              importance:
+                "high",
+
+              explanation:
+                "Tubers provide fermentable inulin and related fructans that serve as the crop's principal stored carbohydrate."
+            },
+
+            {
+              nutrientRole:
+                "Fresh supplemental produce",
+
+              importance:
+                "high",
+
+              explanation:
+                "Fresh tubers diversify the diet and provide seasonal homegrown produce during autumn and winter."
+            },
+
+            {
+              nutrientRole:
+                "Potassium",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Jerusalem Artichoke provides useful potassium along with smaller quantities of additional minerals."
+            },
+
+            {
+              nutrientRole:
+                "Dietary fiber",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Fresh tubers contribute fiber in addition to fermentable carbohydrates."
+            },
+
+            {
+              nutrientRole:
+                "Vitamin C and minor micronutrients",
+
+              importance:
+                "low-to-moderate",
+
+              explanation:
+                "Fresh tubers contain vitamin C and several trace nutrients, although these are not sufficient to replace balanced poultry nutrition."
+            },
+
+            {
+              nutrientRole:
+                "Seasonal fresh greens",
+
+              importance:
+                "low",
+
+              explanation:
+                "Tender young foliage contributes limited seasonal green material before becoming coarse and fibrous."
+            }
+          ],
+
+          notableNutrients: [
+            "Inulin",
+            "Fructans",
+            "Potassium",
+            "Dietary fiber",
+            "Vitamin C",
+            "Small amounts of B vitamins",
+            "Iron",
+            "Magnesium",
+            "Phosphorus",
+            "Trace minerals"
+          ],
+
+          typicalWholeSeedCharacteristics: {
+            crudeProtein:
+              "Low, typically around 2 percent on a fresh-weight basis and unsuitable as a primary poultry protein source.",
+
+            fat:
+              "Very low.",
+
+            fiber:
+              "Moderate because of both structural fiber and fermentable carbohydrate components.",
+
+            starch:
+              "Low compared with cereal grains because Jerusalem Artichoke stores most reserve carbohydrate as inulin rather than starch.",
+
+            calcium:
+              "Low and inadequate for laying hens.",
+
+            phosphorus:
+              "Present in modest amounts but insufficient to balance poultry diets.",
+
+            energy:
+              "Moderate on a fresh-weight basis because high moisture substantially dilutes energy concentration."
+          },
+
+          wholeSeedVersusKernel: {
+            nutritionallyEquivalent:
+              false,
+
+            wholeSeed:
+              "Fresh whole tubers retain their natural moisture, skin, fiber, and carbohydrate profile.",
+
+            dehulledKernel:
+              "Not applicable because Jerusalem Artichoke is harvested for underground tubers rather than dehulled edible kernels.",
+
+            practicalMeaning:
+              "Fresh tubers, peeled tubers, dried slices, tuber meal, and processed ingredients should not be considered nutritionally interchangeable."
+          },
+
+          wholeSeedVersusMeal: {
+            nutritionallyEquivalent:
+              false,
+
+            wholeSeed:
+              "Fresh tubers are high-moisture produce intended primarily for supplemental feeding.",
+
+            sunflowerMeal:
+              "Properly dried and ground Jerusalem Artichoke ingredients are concentrated feed materials intended for measured use within professionally formulated poultry diets.",
+
+            practicalMeaning:
+              "Research involving dried Jerusalem Artichoke meal should not automatically be applied to feeding fresh whole tubers."
+          },
+
+          nutritionalVariabilityFactors: [
+            "Cultivar",
+            "Growing season",
+            "Harvest timing",
+            "Tuber maturity",
+            "Storage duration",
+            "In-ground overwintering",
+            "Soil fertility",
+            "Moisture availability",
+            "Drying method",
+            "Processing method",
+            "Fresh versus dried product",
+            "Analytical basis"
+          ]
+        },
+
+        benefits: {
+          primaryBenefits: [
+            {
+              title:
+                "Excellent Winter Produce",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Tubers can remain in the ground through much of the winter and harvested as needed for fresh supplemental feeding."
+            },
+
+            {
+              title:
+                "Perennial Feed Crop",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Jerusalem Artichoke returns each year from surviving tubers, reducing annual planting requirements."
+            },
+
+            {
+              title:
+                "Natural Pecking Enrichment",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Whole, split, and partially exposed tubers encourage investigation, pecking, scratching, and natural foraging behaviors."
+            },
+
+            {
+              title:
+                "Minimal Processing Requirements",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Most backyard feeding requires only harvesting, cleaning, inspection, and simple chopping when necessary."
+            },
+
+            {
+              title:
+                "Reliable Homestead Resilience",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "The crop tolerates a wide range of growing conditions and frequently survives where annual crops fail."
+            },
+
+            {
+              title:
+                "Useful Fresh Dietary Variety",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Fresh tubers diversify supplemental feeding during seasons when other garden produce may be limited."
+            },
+
+            {
+              title:
+                "Excellent Pollinator Plant",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Tall flowering plants provide additional ecological value beyond poultry feeding."
+            },
+
+            {
+              title:
+                "Multi-purpose Homestead Crop",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Jerusalem Artichoke supports household food production, poultry feeding, wildlife habitat, pollinators, screening, biomass, and soil improvement."
+            }
+          ],
+
+          enrichmentBenefits: [
+            {
+              benefit:
+                "Natural pecking",
+
+              explanation:
+                "Whole and split tubers encourage repeated pecking and investigation."
+            },
+
+            {
+              benefit:
+                "Controlled digging behavior",
+
+              explanation:
+                "Postharvest access allows chickens to search for exposed tubers naturally."
+            },
+
+            {
+              benefit:
+                "Fresh seasonal produce",
+
+              explanation:
+                "Tubers provide variety beyond conventional grains."
+            },
+
+            {
+              benefit:
+                "Longer feeding activity",
+
+              explanation:
+                "Whole tubers require more manipulation than prepared grain."
+            },
+
+            {
+              benefit:
+                "Environmental enrichment",
+
+              explanation:
+                "Harvested tubers and controlled patch access provide behavioral diversity."
+            }
+          ],
+
+          flockManagementBenefits: [
+            "Minimal annual replanting",
+            "Harvest as needed",
+            "Useful during autumn and winter",
+            "Simple preparation",
+            "Suitable for garden-to-coop feeding",
+            "Supports controlled postharvest foraging",
+            "Produces dependable perennial food reserves",
+            "Provides fresh produce without grain processing"
+          ],
+
+          homesteadBenefits: [
+            "Perennial crop",
+            "Household food production",
+            "Pollinator support",
+            "Privacy screening",
+            "Wildlife habitat",
+            "Compost biomass",
+            "Soil improvement",
+            "Emergency food reserve",
+            "Excellent cold tolerance",
+            "Homestead resilience"
+          ],
+
+          benefitSummary:
+            "Jerusalem Artichoke is valued primarily as a perennial fresh-produce crop that supplies dependable winter tubers, natural enrichment, and long-term homestead resilience rather than concentrated poultry nutrition."
+        },
+
+        limitations: {
+          primaryLimitations: [
+            {
+              title:
+                "Not a Complete Poultry Feed",
+
+              severity:
+                "critical",
+
+              explanation:
+                "Fresh Jerusalem Artichoke cannot provide the protein, amino acids, calcium, vitamins, minerals, or energy concentration required for complete poultry nutrition."
+            },
+
+            {
+              title:
+                "High Moisture Content",
+
+              severity:
+                "high",
+
+              explanation:
+                "Fresh tubers contain substantial moisture that dilutes nutrients on a fresh-weight basis and limits storage after harvest."
+            },
+
+            {
+              title:
+                "Low Protein",
+
+              severity:
+                "high",
+
+              explanation:
+                "Protein concentration is far below the needs of productive poultry."
+            },
+
+            {
+              title:
+                "Digestive Changes Possible",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Sudden large servings of inulin-rich tubers may alter manure consistency or digestive comfort."
+            },
+
+            {
+              title:
+                "Storage Challenges After Harvest",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Harvested tubers can shrivel, rot, mold, freeze, or ferment more readily than properly stored cereal grain."
+            },
+
+            {
+              title:
+                "Aggressive Perennial Spread",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Remaining tubers frequently regenerate, making long-term garden management more difficult."
+            },
+
+            {
+              title:
+                "Fresh Produce Rather Than Concentrated Feed",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Large harvest volumes may be required to provide meaningful supplemental feed compared with dry grains."
+            }
+          ],
+
+          nutritionalLimitations: [
+            "Cannot replace complete poultry feed",
+            "Low protein",
+            "Incomplete amino-acid profile",
+            "Very low calcium",
+            "High moisture",
+            "Lower energy density than dry grain",
+            "Limited vitamin contribution",
+            "Limited mineral contribution",
+            "Fresh produce rather than concentrated feed",
+            "Digestive changes possible with excessive intake"
+          ],
+
+          practicalLimitations: [
+            "Harvest requires digging",
+            "Patch spreads aggressively",
+            "Harvested tubers store less reliably than grain",
+            "Rodents may damage stored tubers",
+            "Whole tubers may require chopping",
+            "Fresh pieces spoil quickly",
+            "Unlimited flock access may damage future production",
+            "Mature stems have little feed value",
+            "Storage conditions require careful monitoring",
+            "Research on dried ingredients should not be applied directly to fresh tubers"
+          ]
+        },
+
+        antinutritionalConcerns: {
+          overallConcernLevel:
+            "moderate-for-fresh-supplemental-use",
+
+          requiresDetoxification:
+            false,
+
+          cookingRequired:
+            false,
+
+          primaryConcerns: [
+            {
+              factor:
+                "Inulin and related fructans",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Jerusalem Artichoke stores much of its carbohydrate as inulin and related fructans rather than starch. These fermentable carbohydrates may alter manure consistency, increase gas production, or cause digestive discomfort when large quantities are introduced suddenly."
+            },
+
+            {
+              factor:
+                "High fresh-matter moisture",
+
+              concernLevel:
+                "high-when-used-as-feed-replacement",
+
+              explanation:
+                "High moisture is not a classical antinutritional factor, but it substantially dilutes energy, protein, minerals, and dry matter on an as-fed basis. Birds may fill themselves with tubers while consuming too little complete feed."
+            },
+
+            {
+              factor:
+                "Low protein concentration",
+
+              concernLevel:
+                "high-when-used-as-a-major-feed",
+
+              explanation:
+                "Fresh tubers are relatively low in protein and cannot provide the total protein or digestible amino-acid balance required by laying hens, growing birds, breeding stock, or meat birds."
+            },
+
+            {
+              factor:
+                "Incomplete amino-acid balance",
+
+              concernLevel:
+                "high-when-used-as-a-major-feed",
+
+              explanation:
+                "The protein present in Jerusalem Artichoke tubers does not independently meet poultry requirements for lysine, methionine, and other essential amino acids."
+            },
+
+            {
+              factor:
+                "Very low calcium contribution",
+
+              concernLevel:
+                "high-for-laying-hens",
+
+              explanation:
+                "Jerusalem Artichoke tubers do not supply enough calcium to support eggshell formation and must not replace a complete layer ration or an appropriate calcium program."
+            },
+
+            {
+              factor:
+                "Structural fiber in mature foliage",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Young leaves and shoots may provide limited greens, but mature foliage and stems become coarse, fibrous, woody, and much less useful as poultry feed."
+            },
+
+            {
+              factor:
+                "Nutrient concentration after drying",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Drying removes water and concentrates inulin, fiber, carbohydrate, minerals, and other constituents per unit weight. Equal weights of fresh tuber and dried tuber material are not nutritionally equivalent."
+            }
+          ],
+
+          notPrimaryConcerns: [
+            {
+              factor:
+                "Trypsin inhibitors",
+
+              explanation:
+                "Jerusalem Artichoke tubers do not require the routine heat treatment used to control the major trypsin-inhibitor concern in raw mature Soybeans."
+            },
+
+            {
+              factor:
+                "Lectin toxicity",
+
+              explanation:
+                "Sound Jerusalem Artichoke tubers are not treated as raw lectin-limited legumes requiring cooking before ordinary supplemental feeding."
+            },
+
+            {
+              factor:
+                "Solanine",
+
+              explanation:
+                "Jerusalem Artichoke is a sunflower relative rather than a member of the nightshade family and does not carry the solanine concern associated with green or sprouted Potato tissue."
+            },
+
+            {
+              factor:
+                "Cyanogenic compounds",
+
+              explanation:
+                "Jerusalem Artichoke tubers are not classified in this feeding reference as requiring processing to remove cyanogenic compounds."
+            },
+
+            {
+              factor:
+                "Starch overload",
+
+              explanation:
+                "Jerusalem Artichoke stores its principal carbohydrate as inulin and related fructans rather than the high starch concentration found in cereal grains or Potatoes."
+            }
+          ],
+
+          processingEffects: [
+            {
+              process:
+                "Splitting or chopping",
+
+              effect:
+                "Improves flock access, inspection, and portion control but exposes moist tissue and shortens usable feeding time."
+            },
+
+            {
+              process:
+                "Crushing",
+
+              effect:
+                "Makes hard tubers easier for birds to consume but increases surface area, moisture loss, contamination risk, and spoilage."
+            },
+
+            {
+              process:
+                "Washing",
+
+              effect:
+                "Removes loose soil but does not make chemically contaminated, flood-contaminated, moldy, rotten, or rodent-contaminated tubers safe."
+            },
+
+            {
+              process:
+                "Cooking",
+
+              effect:
+                "Softens tuber tissue and may alter some carbohydrate characteristics, but cooking is not required to make sound Jerusalem Artichoke tubers safe for established adult chickens."
+            },
+
+            {
+              process:
+                "Drying",
+
+              effect:
+                "Removes water and concentrates the remaining carbohydrate, fiber, minerals, and dry matter. Incomplete drying creates mold, heating, and storage-spoilage risks."
+            },
+
+            {
+              process:
+                "Grinding dried tubers",
+
+              effect:
+                "Improves mixing precision in formulated feed but increases moisture absorption, dust, surface exposure, and the need for careful storage."
+            },
+
+            {
+              process:
+                "Uncontrolled fermentation",
+
+              effect:
+                "Is not an approved ordinary backyard preparation method in this feeding reference. Sour odor, alcoholic odor, bubbling, slime, heating, or uncontrolled fermentation should be treated as spoilage."
+            }
+          ],
+
+          antinutritionalSummary:
+            "Jerusalem Artichoke does not require routine cooking or detoxification before ordinary supplemental feeding. Its principal concerns are fermentable inulin and related fructans, high moisture, low protein, incomplete amino-acid balance, very low calcium, mature-foliage fiber, dietary displacement, and the increased concentration of dried tuber products."
+        },
+
+        complementaryFeeding: {
+          purpose:
+            "Jerusalem Artichoke should provide supplemental fresh produce, fermentable carbohydrate, seasonal greens, and enrichment while a complete ration supplies the concentrated energy, balanced protein, essential amino acids, calcium, available phosphorus, vitamins, minerals, sodium, and trace nutrients that the tubers cannot provide.",
+
+          bestFoundation:
+            "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+          complements: [
+            {
+              feedType:
+                "Complete layer feed",
+
+              relationship:
+                "The complete ration supplies balanced protein, amino acids, vitamins, minerals, sodium, and calcium that Jerusalem Artichoke tubers cannot provide."
+            },
+
+            {
+              feedType:
+                "Complete all-flock, grower, developer, or breeder feed",
+
+              relationship:
+                "The formulated ration provides life-stage-appropriate nutrition while Jerusalem Artichoke remains an optional fresh-produce and enrichment supplement."
+            },
+
+            {
+              feedType:
+                "Energy-oriented cereal grains",
+
+              relationship:
+                "Corn, Wheat, Barley, Oats, Millet, and Sorghum provide substantially more concentrated dry energy than fresh Jerusalem Artichoke tubers. Combining them informally still does not create a complete ration."
+            },
+
+            {
+              feedType:
+                "Formulated protein ingredients",
+
+              relationship:
+                "Properly processed Soybeans, Field Peas, Cowpeas, or other analyzed protein ingredients may help provide protein and amino acids that Jerusalem Artichoke tubers cannot supply adequately within a professionally balanced ration."
+            },
+
+            {
+              feedType:
+                "Calcium source for laying hens",
+
+              relationship:
+                "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the tuber's inadequate calcium contribution."
+            },
+
+            {
+              feedType:
+                "Fresh leafy forage",
+
+              relationship:
+                "Kale, Collards, Clover, Alfalfa, Comfrey, Mulberry leaves, and other suitable forage crops provide more dependable leafy-feed value than mature Jerusalem Artichoke stems and foliage."
+            },
+
+            {
+              feedType:
+                "Oilseed supplements",
+
+              relationship:
+                "Sunflower and other suitable oilseeds provide more concentrated dietary fat and energy than fresh Jerusalem Artichoke tubers."
+            },
+
+            {
+              feedType:
+                "Insoluble grit where needed",
+
+              relationship:
+                "Appropriately sized insoluble grit supports mechanical digestion when birds consume coarse plant material and adequate natural grit is unavailable."
+            }
+          ],
+
+          doesNotCorrect: [
+            "An incomplete homemade ration",
+            "Insufficient dietary energy",
+            "Insufficient total protein",
+            "Insufficient lysine",
+            "Insufficient methionine",
+            "Insufficient calcium",
+            "Incorrect calcium-to-phosphorus balance",
+            "Vitamin deficiency",
+            "Trace-mineral deficiency",
+            "Excessive tuber intake",
+            "Excessive fermentable-carbohydrate intake",
+            "Persistent loose droppings",
+            "Wet litter",
+            "Poor-quality complete feed",
+            "Inadequate access to clean water",
+            "Overcrowding",
+            "Inadequate feeder space",
+            "Lack of appropriate grit where needed"
+          ],
+
+          pairingWarning:
+            "Combining Jerusalem Artichoke tubers with several other homegrown crops does not automatically create a nutritionally complete diet. Significant ration inclusion requires calculation of metabolizable energy, protein, digestible amino acids, fiber, fat, calcium, available phosphorus, sodium, vitamins, trace minerals, dry matter, inulin and fructan concentration, moisture, and total feed intake.",
+
+          practicalBackyardApproach:
+            "For the ordinary backyard flock, maintain an age-appropriate complete ration as the primary feed and offer Jerusalem Artichoke as small whole tubers, split or chopped fresh tubers, limited tender foliage, or controlled postharvest forage introduced gradually and removed before spoilage."
+        },
+
+        feedingMethods: {
+          philosophy:
+            "Jerusalem Artichoke should be treated as supplemental fresh produce, controlled forage, and pecking enrichment rather than as staple feed. Every feeding method should preserve normal complete-feed consumption while limiting sudden fructan intake, wet droppings, spoilage, soil contamination, flock competition, and damage to the permanent production patch.",
+
+          primaryMethods: [
+            {
+              method:
+                "Fresh split Jerusalem Artichoke tubers",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Splitting sound tubers exposes the interior, allows inspection for hidden deterioration, improves flock access, and provides better portion control than unrestricted access to a tuber pile."
+            },
+
+            {
+              method:
+                "Fresh chopped or crushed tubers",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Prepared pieces are useful for controlled supplemental feeding and for birds unable to open larger tubers. Offer only an amount the flock can consume promptly."
+            },
+
+            {
+              method:
+                "Small whole sound tubers",
+
+              recommendation:
+                "Recommended",
+
+              explanation:
+                "Small intact tubers can provide sustained pecking enrichment for established adult birds. Whole tubers generally retain quality longer than cut pieces."
+            },
+
+            {
+              method:
+                "Controlled postharvest access to exposed tubers",
+
+              recommendation:
+                "Recommended With Management",
+
+              explanation:
+                "Birds may forage for selected exposed tubers after harvest where the soil and crop history are safe. Access should be time-limited to reduce uncontrolled intake, soil compaction, contamination, and damage to retained tubers."
+            },
+
+            {
+              method:
+                "Fresh tender cut-and-carry foliage",
+
+              recommendation:
+                "Occasionally Recommended",
+
+              explanation:
+                "Tender young leaves and shoots may provide limited seasonal greens. Mature stems and old foliage should be excluded because they become coarse, fibrous, and poorly consumed."
+            },
+
+            {
+              method:
+                "Fresh tuber pieces in a raised produce feeder",
+
+              recommendation:
+                "Recommended",
+
+              explanation:
+                "A clean raised feeder reduces contact with litter and manure while allowing several birds to access the tubers."
+            },
+
+            {
+              method:
+                "Properly dried and ground tuber material",
+
+              recommendation:
+                "Formulation Dependent",
+
+              explanation:
+                "Dried Jerusalem Artichoke material should be used only as a measured ingredient within a professionally balanced ration. Controlled research percentages should not be copied into an unbalanced backyard mixture."
+            },
+
+            {
+              method:
+                "Unrestricted access to a freshly dug tuber pile",
+
+              recommendation:
+                "Not Recommended",
+
+              explanation:
+                "Unrestricted access prevents meaningful portion control and may lead to excessive fructan intake, complete-feed displacement, wet droppings, spoilage, flock competition, and rodent attraction."
+            }
+          ],
+
+          introductionGuidelines: {
+            suddenDietChangeRecommended:
+              false,
+
+            gradualIntroductionRecommended:
+              true,
+
+            explanation:
+              "Introduce Jerusalem Artichoke tubers gradually because their inulin and related fructans are highly fermentable. Begin with a small amount, allow the flock to consume it alongside complete feed, and increase only when droppings, litter condition, appetite, crop function, and body condition remain normal."
+          },
+
+          observationChecklist: [
+            "Complete-feed consumption remains normal.",
+            "Birds do not wait for tubers while refusing balanced feed.",
+            "Droppings remain within the flock's normal range.",
+            "Persistent loose or watery droppings do not develop.",
+            "Litter remains reasonably dry.",
+            "Eggs do not become unusually dirty because of wetter litter.",
+            "Crop filling and emptying appear normal.",
+            "No signs of digestive discomfort are observed.",
+            "Body condition remains appropriate.",
+            "Egg production and shell quality remain normal.",
+            "Tubers are firm, fresh, and free from mold, slime, rot, or fermentation.",
+            "Cut pieces are consumed before drying, warming, contamination, or spoilage occurs.",
+            "Uneaten pieces are removed promptly.",
+            "Rodents and insects are not attracted to persistent leftovers.",
+            "Dominant birds do not prevent lower-ranking birds from accessing the supplement.",
+            "Whole tubers are small enough for safe pecking and manipulation.",
+            "Large or hard tubers are split when necessary.",
+            "Fresh foliage is tender rather than coarse or woody.",
+            "Controlled patch access does not destroy future production.",
+            "Birds are not digging in saturated, manure-contaminated, chemically treated, or otherwise unsafe soil."
+          ]
+        },
+
+        practicalUse: {
+          idealHomesteadUses: [
+            "Fall and winter supplemental tuber feeding",
+
+            "In-ground seasonal feed storage",
+
+            "Fresh split-tuber enrichment",
+
+            "Controlled postharvest flock foraging",
+
+            "Permanent perennial feed production",
+
+            "Garden-to-coop supplemental feeding",
+
+            "Household food and poultry-feed integration",
+
+            "Mixed chicken and rabbit homestead systems",
+
+            "Pollinator support",
+
+            "Seasonal privacy screening",
+
+            "Compost and mulch biomass",
+
+            "Long-term homestead feed diversification"
+          ],
+
+          lessSuitableUses: [
+            "Large-scale complete ration replacement",
+
+            "Primary chick nutrition",
+
+            "High-protein feed replacement",
+
+            "Primary calcium supplementation",
+
+            "Concentrated dry-energy production",
+
+            "Temporary annual garden beds",
+
+            "Small-space or container feed production",
+
+            "Sites where underground spread cannot be tolerated",
+
+            "Unrestricted permanent flock access",
+
+            "Long-term room-temperature storage of harvested fresh tubers"
+          ],
+
+          backyardRecommendation:
+            "Grow Jerusalem Artichoke as a permanent multipurpose homestead crop where its underground spread can be managed. Harvest sound tubers as needed, introduce them gradually, and offer them whole when small or split, chopped, or crushed when larger. Use controlled postharvest access and limited tender foliage for enrichment while continuing to provide an age-appropriate complete poultry ration as the flock's nutritional foundation.",
+
+          commercialRecommendation:
+            "Commercial poultry use is generally most appropriate through analyzed dried Jerusalem Artichoke ingredients incorporated into professionally formulated rations rather than unrestricted feeding of fresh tubers."
+        },
+
+        storage: {
+          storageSuitability:
+            "excellent-in-ground-but-limited-after-harvest",
+
+          preferredStorageForms: [
+            {
+              form:
+                "Sound mature tubers left in well-drained soil",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Leaving mature tubers in reasonably drained soil and digging only the quantity needed is the most dependable low-energy storage method. This reduces moisture loss and shriveling associated with harvested storage."
+            },
+
+            {
+              form:
+                "Fresh unwashed harvested tubers under cold humid storage",
+
+              suitability:
+                "good-for-short-term-storage",
+
+              explanation:
+                "Sound intact tubers may be held under cold, dark, very humid conditions when protected from freezing, condensation, rodents, mold, and standing moisture."
+            },
+
+            {
+              form:
+                "Fresh cleaned harvested tubers",
+
+              suitability:
+                "limited",
+
+              explanation:
+                "Washing removes soil but may increase surface moisture and shorten storage life. Cleaned tubers should be dried on the surface, refrigerated appropriately, inspected frequently, and used promptly."
+            },
+
+            {
+              form:
+                "Properly dried tuber slices",
+
+              suitability:
+                "good-with-complete-drying",
+
+              explanation:
+                "Uniform slices may be stored after thorough dehydration, complete cooling, inspection, and protection from moisture. This form is intended primarily for later grinding or formulated-feed use."
+            },
+
+            {
+              form:
+                "Ground dried Jerusalem Artichoke tuber material",
+
+              suitability:
+                "limited",
+
+              explanation:
+                "Ground dried material absorbs moisture readily and should be stored only in small, clearly labeled batches for measured use within a properly formulated ration."
+            },
+
+            {
+              form:
+                "Fresh chopped or crushed tubers",
+
+              suitability:
+                "poor-for-storage",
+
+              explanation:
+                "Cut and crushed tubers lose moisture, oxidize, become contaminated, and deteriorate more rapidly than intact tubers. They should be prepared close to feeding time."
+            },
+
+            {
+              form:
+                "Fresh tender foliage",
+
+              suitability:
+                "poor-for-storage",
+
+              explanation:
+                "Fresh foliage wilts rapidly and should generally be fed the same day. It should not be packed warm or wet into enclosed containers."
+            }
+          ],
+
+          dryingRequirements: {
+            thoroughDryingRequired:
+              true,
+
+            targetCondition:
+              "Tuber slices intended for dry storage must be uniformly dry throughout, cool, stable, and free from flexible centers, surface moisture, condensation, warmth, or hidden internal dampness before enclosed storage.",
+
+            goodDryingPractices: [
+              "Use only sound tubers free from mold, rot, fermentation, freezing injury, rodent damage, and chemical contamination.",
+              "Remove excess soil and wash when needed.",
+              "Trim away only minor sound surface damage before slicing.",
+              "Discard tubers with deep decay, slime, foul odor, or uncertain internal condition.",
+              "Slice tubers uniformly so all pieces dry at a similar rate.",
+              "Use clean knives, cutting surfaces, trays, and drying equipment.",
+              "Arrange slices in a single layer without overlapping.",
+              "Maintain strong airflow around all surfaces.",
+              "Use a dependable dehydrator, drying oven, or other controlled drying system.",
+              "Rotate trays when necessary for uniform drying.",
+              "Protect drying material from insects, rodents, pets, poultry, dust, soil, and chemicals.",
+              "Check the thickest pieces rather than judging dryness from thin edges.",
+              "Allow dried slices to cool completely before packaging.",
+              "Condition and inspect dried material for hidden moisture before long-term storage.",
+              "Grind only thoroughly dried material.",
+              "Prepare ground material in small batches when practical."
+            ],
+
+            unsafeDryingPractices: [
+              "Drying rotten, moldy, slimy, fermented, frozen-and-deteriorated, or chemically contaminated tubers",
+              "Cutting tubers on dirty or chemically treated surfaces",
+              "Using thick uneven slices",
+              "Overlapping or deeply piling wet slices",
+              "Drying in a humid poorly ventilated room",
+              "Allowing repeated exposure to condensation",
+              "Packaging slices while they remain warm",
+              "Sealing material while centers remain flexible or damp",
+              "Assuming dry outer surfaces prove complete internal drying",
+              "Grinding tuber material before drying is complete",
+              "Mixing newly dried material with an older batch before inspection",
+              "Storing dried material in containers holding residual moisture",
+              "Attempting to make spoiled tubers safe through drying"
+            ],
+
+            dryingFailureIndicators: [
+              "Condensation inside the container",
+              "Unexpected warmth",
+              "Flexible or leathery slice centers",
+              "Softening after storage",
+              "Pieces sticking together",
+              "Musty odor",
+              "Sour or fermented odor",
+              "Dark or unusual discoloration",
+              "Visible mold",
+              "Clumping of ground material",
+              "Moisture collecting at the bottom of the container",
+              "Rapid insect activity"
+            ]
+          },
+
+          storageEnvironment: {
+            idealConditions: [
+              "Cold",
+              "Dark",
+              "Clean",
+              "High relative humidity without free water",
+              "Stable temperature",
+              "Protected from freezing injury after harvest",
+              "Protected from condensation",
+              "Protected from mold",
+              "Protected from rodents",
+              "Protected from insects",
+              "Protected from direct sunlight",
+              "Protected from physical crushing",
+              "Separated from manure and poultry litter",
+              "Separated from pesticides, herbicides, fertilizers, fuels, solvents, and treated seed",
+              "Well-drained soil for in-ground storage",
+              "Accessible soil when winter harvest is expected"
+            ],
+
+            avoidConditions: [
+              "Warm dry indoor storage",
+              "Heated rooms",
+              "Direct sunlight",
+              "Low-humidity storage that causes rapid shriveling",
+              "Wet bags or sealed containers with condensation",
+              "Standing water",
+              "Chronically waterlogged soil",
+              "Flood-prone storage areas",
+              "Deeply frozen inaccessible soil when winter feeding is planned",
+              "Repeated freezing and thawing after harvest",
+              "Open containers accessible to rodents",
+              "Storage beside manure or wet litter",
+              "Storage near pesticides, fuels, solvents, fertilizers, or treated seed",
+              "Containers that crush or bruise thin-skinned tubers",
+              "Large temperature swings"
+            ],
+
+            temperatureGuidance:
+              "Harvested tubers store best under consistently cold conditions without damaging freezing. Warm storage accelerates moisture loss, sprouting, fermentation, mold, and decay, while repeated temperature changes may create condensation.",
+
+            humidityGuidance:
+              "High relative humidity helps limit shriveling because Jerusalem Artichoke tubers have thin skins and lose moisture readily. High humidity must not create free water or condensation, which increases mold and soft-rot risk.",
+
+            lightGuidance:
+              "Store harvested tubers and dried material away from direct sunlight. Light can warm containers, encourage temperature swings, accelerate moisture loss, and reduce storage stability."
+          },
+
+          containerGuidance: {
+            looseSeed: [
+              "Use this field for fresh loose Jerusalem Artichoke tubers rather than seed.",
+              "Use clean, food-safe or feed-safe containers.",
+              "Choose shallow or ventilated containers that reduce crushing and trapped moisture.",
+              "Do not seal freshly washed tubers while surface moisture remains.",
+              "Use clean baskets, perforated crates, or suitable refrigerated produce containers.",
+              "Protect stored tubers from rodents.",
+              "Keep containers away from wet floors and exterior condensation.",
+              "Do not use containers that previously held pesticides, fertilizers, fuels, solvents, cleaners, or treated seed.",
+              "Separate damaged tubers from sound storage tubers.",
+              "Inspect the bottom and center of each container for hidden moisture or decay.",
+              "Use stored tubers before they become soft, shriveled, moldy, slimy, sprouted, or foul-smelling.",
+              "Do not mix questionable tubers into a sound batch."
+            ],
+
+            wholeHeads: [
+              "Use this field for sound whole Jerusalem Artichoke tubers because the crop does not have a whole-head storage pathway.",
+              "Leave tubers in well-drained soil when practical and harvest only the quantity needed.",
+              "Mark the planting location before top growth disappears.",
+              "Apply mulch where appropriate to keep soil workable and reduce severe freezing.",
+              "Avoid leaving tubers in chronically saturated or flood-prone soil.",
+              "Inspect harvested whole tubers for cuts, bruises, rodent damage, mold, freezing injury, and decay.",
+              "Use damaged-but-still-sound tubers promptly rather than storing them with intact tubers.",
+              "Do not wash whole storage tubers unless necessary.",
+              "Protect harvested tubers from drying air.",
+              "Keep retained planting tubers clearly separated from tubers intended for poultry or household use.",
+              "Do not treat in-ground storage as unlimited where rodents, flooding, waterlogging, or deep freezing are severe."
+            ],
+
+            kernelsAndProcessedSeed: [
+              "Use this field for dried slices and ground Jerusalem Artichoke material rather than kernels or processed seed.",
+              "Store only material that has been dried completely and cooled fully.",
+              "Use clean, dry, food-safe or feed-safe moisture-resistant containers.",
+              "Use tight-fitting lids after dryness has been verified.",
+              "Store small batches so deterioration can be identified before a large quantity is affected.",
+              "Label ground material clearly as Jerusalem Artichoke tuber ingredient.",
+              "Record the drying and grinding dates.",
+              "Protect from humidity, condensation, insects, rodents, heat, and direct light.",
+              "Use a clean dry scoop reserved for feed ingredients.",
+              "Close containers promptly after removing material.",
+              "Inspect ground material for clumping, warmth, insects, musty odor, sour odor, or mold.",
+              "Do not confuse dried tuber material with complete poultry feed.",
+              "Do not blend questionable dried material with a sound batch."
+            ]
+          },
+
+          inventoryManagement: {
+            firstInFirstOutRecommended:
+              true,
+
+            batchSeparationRecommended:
+              true,
+
+            labelingRecommended:
+              true,
+
+            recommendedLabelFields: [
+              "Crop name",
+              "Cultivar when known",
+              "Harvest date",
+              "Storage form",
+              "Washing date when applicable",
+              "Drying completion date when applicable",
+              "Grinding date when applicable",
+              "Container date",
+              "Planting location",
+              "Intended use",
+              "Last inspection date",
+              "Observed condition"
+            ],
+
+            guidance:
+              "Keep harvested tuber lots separate whenever practical. Use damaged-but-sound tubers before intact storage tubers, and use older sound batches before newer ones. Do not preserve inventory merely to avoid waste when mold, rot, fermentation, freezing injury, rodent contamination, or uncertain quality is present."
+          },
+
+          inspectionSchedule: {
+            initialStoragePeriod:
+              "Inspect harvested tubers frequently during the first several days and weeks because hidden digging damage, condensation, freezing injury, moisture loss, mold, and soft rot may become apparent soon after storage begins. Dried material should also be checked closely for hidden moisture after packaging.",
+
+            longTermStorage:
+              "Continue regular inspection throughout storage. Increase inspection frequency after temperature changes, refrigerator problems, power outages, water leaks, severe freezes, flooding, rodent activity, or any evidence of condensation or mold.",
+
+            inspectionChecklist: [
+              "No condensation",
+              "No standing moisture",
+              "No unexpected warmth",
+              "No musty odor",
+              "No sour or fermentation odor",
+              "No visible mold",
+              "No slime",
+              "No soft rot",
+              "No leaking tissue",
+              "No severe shriveling",
+              "No damaging sprout growth",
+              "No freezing injury",
+              "No rodent droppings, urine, chewing, or nesting material",
+              "No insect activity",
+              "No chemical odor",
+              "No damaged tubers contaminating sound tubers",
+              "No clumping in dried ground material",
+              "No moisture entering dry-storage containers",
+              "Labels remain readable",
+              "Older sound batches are being used first"
+            ]
+          },
+
+          storageLifeGuidance:
+            "A single guaranteed harvested storage duration should not be assigned because Jerusalem Artichoke stability depends on tuber maturity, skin damage, washing, temperature, humidity, condensation, freezing, cultivar, rodent pressure, and storage method. Sound tubers stored in suitable soil may remain available through much of the cool season, while harvested fresh tubers generally require cold, humid storage and frequent inspection. Chopped tubers and fresh foliage should be used promptly. Properly dried material may store longer only when dehydration is complete and moisture is excluded.",
+
+          disposalGuidance:
+            "Jerusalem Artichoke tubers or processed material suspected of mold, rot, fermentation, slime, freezing deterioration, flood contamination, chemical contamination, rodent contamination, or serious insect damage should be discarded in a way that prevents access by chickens, livestock, pets, wildlife, and children. Do not attempt to make questionable material safe by washing, trimming around extensive decay, cooking, redrying, grinding, or blending it with sound material.",
+
+          storageSummary:
+            "Jerusalem Artichoke stores best when sound mature tubers remain in reasonably drained soil and are dug only as needed. Harvested tubers have thin skins and require cold, very humid, carefully monitored storage, while chopped tubers and fresh foliage should be used promptly. Properly dried tuber material requires complete dehydration and protected storage."
+        },
+
+        spoilageAndContamination: {
+          overallRiskLevel:
+            "moderate-to-high-after-harvest",
+
+          primarySpoilageRisks: [
+            {
+              risk:
+                "Soft rot and tissue breakdown",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Digging damage",
+                "Bruising",
+                "Warm storage",
+                "Condensation",
+                "Standing moisture",
+                "Poor airflow",
+                "Extended harvested storage"
+              ],
+
+              warningSigns: [
+                "Soft or collapsing tissue",
+                "Leaking moisture",
+                "Slimy surfaces",
+                "Dark sunken areas",
+                "Foul odor",
+                "Rapid spread of decay between tubers"
+              ],
+
+              response:
+                "Discard affected and suspicious tubers. Separate deteriorating material from sound tubers immediately, clean the storage area, and inspect nearby tubers for hidden damage."
+            },
+
+            {
+              risk:
+                "Mold growth",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Condensation",
+                "Wet storage surfaces",
+                "Inadequate airflow",
+                "Damaged tuber tissue",
+                "Warm humid storage",
+                "Incomplete drying of sliced tubers",
+                "Moisture entering dried material"
+              ],
+
+              warningSigns: [
+                "Visible fuzzy growth",
+                "Musty odor",
+                "Unusual surface discoloration",
+                "Softened tissue",
+                "Clumping of dried material",
+                "Condensation inside containers"
+              ],
+
+              response:
+                "Discard moldy and suspicious material. Do not attempt to make it safe by washing, trimming around extensive mold, cooking, redrying, grinding, or blending it with sound feed."
+            },
+
+            {
+              risk:
+                "Fermentation",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Warm storage",
+                "Sealing wet tubers",
+                "Storing freshly washed tubers before surface drying",
+                "Leaving chopped pieces uneaten",
+                "Packing damp foliage tightly",
+                "Residual moisture in dried tuber material"
+              ],
+
+              warningSigns: [
+                "Sour odor",
+                "Alcohol-like odor",
+                "Bubbling",
+                "Foaming",
+                "Unexpected warmth",
+                "Slime",
+                "Wet clumping"
+              ],
+
+              response:
+                "Remove the material from flock access and discard it. Uncontrolled fermentation should be treated as spoilage rather than as an approved preparation method."
+            },
+
+            {
+              risk:
+                "Shriveling and moisture loss",
+
+              likelihood:
+                "high-after-harvest",
+
+              primaryCauses: [
+                "Low storage humidity",
+                "Warm dry air",
+                "Thin tuber skin",
+                "Extended harvested storage",
+                "Excess airflow directly across tubers",
+                "Storage in open heated rooms"
+              ],
+
+              warningSigns: [
+                "Wrinkled skin",
+                "Rubbery texture",
+                "Reduced tuber weight",
+                "Severe softness without active rot",
+                "Dry collapsed tissue",
+                "Loss of normal firmness"
+              ],
+
+              response:
+                "Use mildly shriveled but otherwise sound tubers promptly when quality remains acceptable. Discard severely deteriorated tubers or any material with mold, slime, off odors, or uncertain safety."
+            },
+
+            {
+              risk:
+                "Freezing injury and post-thaw deterioration",
+
+              likelihood:
+                "location-and-storage-dependent",
+
+              primaryCauses: [
+                "Harvested tubers exposed to freezing temperatures",
+                "Repeated freezing and thawing",
+                "Storage against freezer coils",
+                "Unprotected outdoor containers",
+                "Rapid warming after freezing"
+              ],
+
+              warningSigns: [
+                "Watery tissue after thawing",
+                "Soft translucent areas",
+                "Leaking fluid",
+                "Skin separation",
+                "Rapid discoloration",
+                "Foul odor following thawing"
+              ],
+
+              response:
+                "Discard frozen tubers that become soft, watery, slimy, discolored, leaking, or foul-smelling. Do not assume that all post-thaw tissue remains suitable for poultry."
+            },
+
+            {
+              risk:
+                "Deterioration of chopped or crushed tubers",
+
+              likelihood:
+                "high-if-not-fed-promptly",
+
+              primaryCauses: [
+                "Large exposed surface area",
+                "Warm feeding conditions",
+                "Contact with wet litter",
+                "Manure contamination",
+                "Leaving prepared pieces overnight",
+                "Preparing excessive quantities"
+              ],
+
+              warningSigns: [
+                "Surface drying",
+                "Sliminess",
+                "Darkening",
+                "Sour odor",
+                "Litter adhesion",
+                "Fly or insect activity"
+              ],
+
+              response:
+                "Prepare only the amount the flock can consume promptly. Remove and discard uneaten pieces before spoilage, contamination, or pest attraction develops."
+            },
+
+            {
+              risk:
+                "Dried-material moisture failure",
+
+              likelihood:
+                "moderate-with-home-processing",
+
+              primaryCauses: [
+                "Slices cut too thickly",
+                "Uneven drying",
+                "Packaging while warm",
+                "Hidden moisture in slice centers",
+                "Humidity entering the container",
+                "Grinding before drying is complete"
+              ],
+
+              warningSigns: [
+                "Flexible slice centers",
+                "Condensation",
+                "Clumping",
+                "Unexpected warmth",
+                "Musty odor",
+                "Softening after storage",
+                "Visible mold"
+              ],
+
+              response:
+                "Discard questionable dried material. Do not rely on redrying to make moldy, musty, heated, or fermented material safe."
+            }
+          ],
+
+          contaminationRisks: [
+            {
+              contaminant:
+                "Rodent urine, feces, or chewing damage",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Droppings",
+                "Urine odor",
+                "Chewed tubers",
+                "Chewed containers",
+                "Nesting material",
+                "Tracks",
+                "Dead rodents"
+              ],
+
+              guidance:
+                "Discard contaminated tubers and processed material. Clean and secure the storage area before introducing a new batch."
+            },
+
+            {
+              contaminant:
+                "Floodwater or unsafe runoff",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Known flooding",
+                "Standing contaminated water",
+                "Sewage exposure",
+                "Runoff from roads, livestock areas, or chemical-storage locations",
+                "Sediment deposited on plants or tubers"
+              ],
+
+              guidance:
+                "Do not feed tubers or foliage exposed to floodwater or unsafe runoff. Washing does not reliably remove all biological or chemical contamination."
+            },
+
+            {
+              contaminant:
+                "Pesticide, herbicide, or fungicide exposure",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Known treatment of the crop or nearby vegetation",
+                "Spray drift",
+                "Unknown application history",
+                "Harvest before the required interval",
+                "Use of a product not approved for feed crops"
+              ],
+
+              guidance:
+                "Do not feed material when the product identity, application rate, feed-use status, or required harvest interval is uncertain."
+            },
+
+            {
+              contaminant:
+                "Fertilizer, fuel, oil, solvent, or chemical exposure",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Chemical or petroleum odor",
+                "Storage beside fuel or solvents",
+                "Spill exposure",
+                "Tubers harvested from contaminated soil",
+                "Unknown residue on storage containers"
+              ],
+
+              guidance:
+                "Discard contaminated material. Washing, peeling, trimming, or odor reduction does not prove that the feed is safe."
+            },
+
+            {
+              contaminant:
+                "Manure, dirty litter, or poultry-run contamination",
+
+              riskLevel:
+                "moderate-to-high",
+
+              identificationClues: [
+                "Visible manure",
+                "Tubers trampled into wet litter",
+                "Strong ammonia odor",
+                "Mud mixed with poultry waste",
+                "Prepared pieces left beneath roosts or feeders"
+              ],
+
+              guidance:
+                "Discard heavily contaminated tubers and pieces. Use clean feeding surfaces and remove leftovers promptly."
+            },
+
+            {
+              contaminant:
+                "Wildlife feces or carcass contamination",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Visible droppings",
+                "Chewed tubers",
+                "Animal tracks",
+                "Nesting material",
+                "Dead wildlife near stored tubers",
+                "Open storage accessible to wild animals"
+              ],
+
+              guidance:
+                "Discard contaminated material and prevent future wildlife access."
+            },
+
+            {
+              contaminant:
+                "Contaminated soil from an unsafe site",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Former industrial use",
+                "Roadside planting",
+                "Treated utility corridor",
+                "Known heavy-metal contamination",
+                "Unknown fill soil",
+                "History of chemical dumping"
+              ],
+
+              guidance:
+                "Do not use tubers or foliage from sites with known or suspected unsafe soil contamination unless the site has been appropriately evaluated."
+            }
+          ],
+
+          spoilageIndicators: [
+            {
+              indicator:
+                "Visible mold",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Musty odor",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Soft, collapsing, or leaking tissue",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Slime",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Sour, fermented, or alcohol-like odor",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Unexpected warmth or heating",
+
+              action:
+                "remove-from-storage-and-discard-if-safety-is-uncertain"
+            },
+
+            {
+              indicator:
+                "Condensation",
+
+              action:
+                "inspect-immediately-and-do-not-feed-until-safety-is-confirmed"
+            },
+
+            {
+              indicator:
+                "Watery post-thaw tissue",
+
+              action:
+                "discard-if-deterioration-is-present"
+            },
+
+            {
+              indicator:
+                "Wet clumping in dried material",
+
+              action:
+                "discard-questionable-material"
+            },
+
+            {
+              indicator:
+                "Rodent droppings, urine, or chewing damage",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Manure or floodwater contamination",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Chemical or petroleum odor",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Severe unexplained discoloration",
+
+              action:
+                "discard-if-spoilage-or-contamination-cannot-be-ruled-out"
+            },
+
+            {
+              indicator:
+                "Heavy insect activity",
+
+              action:
+                "discard-when-quality-or-safety-is-compromised"
+            }
+          ],
+
+          sensoryInspectionLimitations:
+            "Appearance, texture, temperature, and odor are useful screening tools but cannot identify every pathogen, mycotoxin, pesticide residue, herbicide residue, heavy metal, or chemical contaminant. Tubers or foliage with a known unsafe exposure history should not be fed merely because they appear normal.",
+
+          salvageWarning:
+            "Questionable Jerusalem Artichoke material should not be salvaged by washing, peeling, trimming around extensive decay, cooking, drying again, grinding, blending with clean feed, or feeding a smaller amount.",
+
+          spoilageSummary:
+            "Jerusalem Artichoke tubers are thin-skinned, moisture-rich, and more vulnerable after harvest than dry cereal grain. Digging damage, warm storage, low humidity, condensation, freezing injury, mold, fermentation, rodents, and contaminated soil can all reduce safety. Leaving sound tubers in reasonably drained soil and harvesting only what is needed generally provides the strongest storage pathway."
+        },
+
+        commonFeedingMistakes: {
+          mistakes: [
+            {
+              mistake:
+                "Replacing complete poultry feed with Jerusalem Artichoke tubers",
+
+              whyItHappens:
+                "The patch may produce a large quantity of edible tubers, making them appear capable of replacing purchased feed.",
+
+              whyItIsAProblem:
+                "Fresh tubers are high in moisture, relatively low in protein, incomplete in essential amino acids, low in calcium, and unable to provide balanced poultry nutrition.",
+
+              correction:
+                "Restore an age-appropriate complete ration as the flock's primary feed and use Jerusalem Artichoke only as supplemental produce, forage, enrichment, or a professionally formulated ingredient."
+            },
+
+            {
+              mistake:
+                "Offering a large quantity during the first feeding",
+
+              whyItHappens:
+                "Tubers appear similar to ordinary garden vegetables and may be offered freely without considering their fermentable inulin and fructans.",
+
+              whyItIsAProblem:
+                "Sudden unrestricted intake may alter manure consistency, increase litter moisture, cause digestive discomfort, and reduce complete-feed consumption.",
+
+              correction:
+                "Introduce small amounts gradually and increase only when droppings, litter condition, appetite, and complete-feed intake remain normal."
+            },
+
+            {
+              mistake:
+                "Assuming fresh tubers are equivalent to dry cereal grain",
+
+              whyItHappens:
+                "Both are described as carbohydrate feeds.",
+
+              whyItIsAProblem:
+                "Fresh Jerusalem Artichoke contains much more water, less concentrated energy, and primarily inulin-related fructans rather than the starch found in cereal grains.",
+
+              correction:
+                "Treat fresh tubers as supplemental produce rather than as an equal-weight replacement for Wheat, Corn, Barley, Oats, Millet, or Sorghum."
+            },
+
+            {
+              mistake:
+                "Applying dried-meal research percentages directly to fresh backyard feeding",
+
+              whyItHappens:
+                "Published poultry studies may list Jerusalem Artichoke inclusion percentages that appear to provide a simple feeding rule.",
+
+              whyItIsAProblem:
+                "Research diets typically use analyzed processed ingredients within complete formulations. Fresh tubers differ greatly in moisture, concentration, processing, and total ration context.",
+
+              correction:
+                "Keep informal fresh-tuber feeding supplemental unless the complete ration has been properly formulated."
+            },
+
+            {
+              mistake:
+                "Feeding rotten, moldy, slimy, or fermented tubers",
+
+              whyItHappens:
+                "The keeper may try to avoid wasting a difficult harvest.",
+
+              whyItIsAProblem:
+                "Spoiled tubers may contain harmful microorganisms, fermentation products, mold, or contamination that cannot be corrected by trimming or cooking.",
+
+              correction:
+                "Discard questionable tubers and feed only firm, sound material with a known safe history."
+            },
+
+            {
+              mistake:
+                "Leaving chopped tubers in the run too long",
+
+              whyItHappens:
+                "Prepared pieces may appear durable enough to remain available throughout the day or overnight.",
+
+              whyItIsAProblem:
+                "Cut surfaces deteriorate rapidly and may become contaminated by manure, wet litter, insects, rodents, mud, or warm weather.",
+
+              correction:
+                "Prepare only the amount birds can consume promptly and remove leftovers before deterioration develops."
+            },
+
+            {
+              mistake:
+                "Allowing unrestricted access to the permanent patch",
+
+              whyItHappens:
+                "Direct foraging appears to eliminate harvest and preparation labor.",
+
+              whyItIsAProblem:
+                "Birds may consume uncertain quantities, damage young shoots, expose retained tubers, compact wet soil, spread contaminated soil, and reduce future production.",
+
+              correction:
+                "Use temporary fencing, rotational access, or controlled postharvest foraging rather than continuous unrestricted access."
+            },
+
+            {
+              mistake:
+                "Feeding mature stems and coarse foliage",
+
+              whyItHappens:
+                "The crop produces a large amount of visible biomass that may appear useful as forage.",
+
+              whyItIsAProblem:
+                "Mature stems and older leaves become coarse, fibrous, woody, poorly consumed, and much less useful than tender young foliage.",
+
+              correction:
+                "Offer only limited tender young leaves and shoots, and direct mature biomass to compost or mulch."
+            },
+
+            {
+              mistake:
+                "Harvesting too much foliage when tuber production is the goal",
+
+              whyItHappens:
+                "Repeated cut-and-carry feeding may appear to provide free greens throughout the season.",
+
+              whyItIsAProblem:
+                "Heavy repeated defoliation reduces photosynthetic area and may weaken plants or reduce later tuber development.",
+
+              correction:
+                "Limit foliage harvest and preserve enough healthy leaf area to support the desired tuber crop."
+            },
+
+            {
+              mistake:
+                "Storing harvested tubers in a warm dry room",
+
+              whyItHappens:
+                "The tubers may be handled like Potatoes or other storage vegetables.",
+
+              whyItIsAProblem:
+                "Jerusalem Artichoke has thin skin and may shrivel, soften, sprout, mold, ferment, or decay rapidly under unsuitable conditions.",
+
+              correction:
+                "Leave sound tubers in well-drained soil when practical or provide cold, dark, very humid storage without condensation or freezing injury."
+            },
+
+            {
+              mistake:
+                "Sealing freshly washed tubers while wet",
+
+              whyItHappens:
+                "A closed container seems likely to preserve humidity and prevent drying.",
+
+              whyItIsAProblem:
+                "Free surface moisture and trapped condensation increase mold, fermentation, and soft-rot risk.",
+
+              correction:
+                "Allow surface moisture to dry before packaging and inspect containers frequently for condensation."
+            },
+
+            {
+              mistake:
+                "Assuming frozen tubers remain sound after thawing",
+
+              whyItHappens:
+                "Dormant tubers survive freezing soil, so harvested tubers may be assumed to tolerate freezing equally well.",
+
+              whyItIsAProblem:
+                "Harvested tubers that freeze and thaw may become watery, soft, leaking, discolored, and rapidly deteriorated.",
+
+              correction:
+                "Inspect thawed tubers carefully and discard any with post-thaw tissue breakdown or uncertain quality."
+            },
+
+            {
+              mistake:
+                "Using contaminated soil as harmless dirt",
+
+              whyItHappens:
+                "Tubers naturally emerge covered with soil, making all soil residue appear equivalent.",
+
+              whyItIsAProblem:
+                "Soil from roadsides, flooded sites, treated lawns, industrial areas, manure-heavy runs, or chemically contaminated locations may carry unsafe biological or chemical contaminants.",
+
+              correction:
+                "Harvest only from known safe ground and discard material exposed to floodwater, unsafe runoff, chemicals, manure contamination, or questionable soil."
+            },
+
+            {
+              mistake:
+                "Feeding young chicks whole or chopped tubers",
+
+              whyItHappens:
+                "The tubers are soft enough to appear suitable for birds of any age.",
+
+              whyItIsAProblem:
+                "Young chicks need an age-appropriate complete starter ration, suitable particle size, and stable nutrition. Supplemental tubers can displace essential nutrients and create unnecessary digestive variability.",
+
+              correction:
+                "Reserve routine Jerusalem Artichoke supplementation for adequately developed birds and keep chick starter as the sole nutritional foundation for young chicks."
+            }
+          ],
+
+          mistakeSummary:
+            "Most Jerusalem Artichoke feeding problems result from replacing complete feed, introducing too much too quickly, confusing fresh tubers with dried formulated ingredients, feeding spoiled material, storing harvested tubers incorrectly, or allowing uncontrolled access to the permanent patch."
+        },
+
+        troubleshooting: {
+          commonQuestions: [
+            {
+              problem:
+                "My chickens refuse to eat Jerusalem Artichoke tubers.",
+
+              likelyCauses: [
+                "The flock has never encountered the food before.",
+                "Pieces are too large.",
+                "Birds are already full from complete feed.",
+                "The tubers are immature or poor quality.",
+                "A preferred supplemental food is available."
+              ],
+
+              recommendedSolutions: [
+                "Introduce only small amounts alongside familiar feed.",
+                "Split, chop, or lightly crush larger tubers.",
+                "Offer the supplement after birds have begun eating their complete ration.",
+                "Use only firm, mature, sound tubers.",
+                "Allow several short introductions before deciding the flock dislikes the crop."
+              ]
+            },
+
+            {
+              problem:
+                "Droppings became looser after introducing Jerusalem Artichokes.",
+
+              likelyCauses: [
+                "Too much was offered too quickly.",
+                "High intake of fermentable inulin and related fructans.",
+                "Fresh tubers displaced normal feed intake."
+              ],
+
+              recommendedSolutions: [
+                "Reduce the amount immediately.",
+                "Return to the previous feeding level until droppings normalize.",
+                "Introduce more gradually over future feedings.",
+                "Maintain unrestricted access to the complete ration."
+              ]
+            },
+
+            {
+              problem:
+                "The flock ignores the tender foliage.",
+
+              likelyCauses: [
+                "Birds prefer the tubers.",
+                "The foliage is too mature.",
+                "Other green forage is available."
+              ],
+
+              recommendedSolutions: [
+                "Harvest only young tender growth.",
+                "Offer small freshly cut portions.",
+                "Remove uneaten foliage before it wilts or spoils."
+              ]
+            },
+
+            {
+              problem:
+                "Harvested tubers shrivel quickly.",
+
+              likelyCauses: [
+                "Storage humidity is too low.",
+                "Storage temperature is too warm.",
+                "Tubers were damaged during harvest.",
+                "Tubers have been stored too long after harvest."
+              ],
+
+              recommendedSolutions: [
+                "Leave tubers in the ground until needed whenever practical.",
+                "Store harvested tubers cold, dark, and humid.",
+                "Handle tubers carefully during harvest.",
+                "Use harvested tubers before quality declines."
+              ]
+            },
+
+            {
+              problem:
+                "Tubers developed mold or soft rot during storage.",
+
+              likelyCauses: [
+                "Condensation formed inside the container.",
+                "Damaged tubers were stored with sound ones.",
+                "Poor airflow.",
+                "Storage temperatures were too warm.",
+                "Tubers were stored wet."
+              ],
+
+              recommendedSolutions: [
+                "Discard affected tubers immediately.",
+                "Inspect the remaining batch carefully.",
+                "Improve ventilation and temperature control.",
+                "Allow washed tubers to dry before storage.",
+                "Separate damaged tubers from sound ones."
+              ]
+            },
+
+            {
+              problem:
+                "The patch is spreading farther than expected.",
+
+              likelyCauses: [
+                "Missed tubers remained in the soil.",
+                "Small tuber fragments regenerated.",
+                "Natural perennial colony expansion."
+              ],
+
+              recommendedSolutions: [
+                "Harvest thoroughly each season.",
+                "Remove volunteer shoots promptly.",
+                "Maintain a defined permanent planting area.",
+                "Use mowing or repeated digging outside the desired boundary."
+              ]
+            },
+
+            {
+              problem:
+                "Chickens are digging up the entire patch.",
+
+              likelyCauses: [
+                "Unrestricted access to growing plants.",
+                "Birds discovered exposed tubers.",
+                "The patch is being used as a permanent run."
+              ],
+
+              recommendedSolutions: [
+                "Fence the crop during active growth.",
+                "Allow only controlled postharvest access.",
+                "Expose only selected tubers during enrichment sessions."
+              ]
+            },
+
+            {
+              problem:
+                "Birds are eating less complete feed.",
+
+              likelyCauses: [
+                "Too much Jerusalem Artichoke is being offered.",
+                "The supplement is too readily available.",
+                "Highly palatable fresh tubers are replacing balanced feed."
+              ],
+
+              recommendedSolutions: [
+                "Reduce supplemental quantities.",
+                "Offer tubers after birds have begun consuming their complete ration.",
+                "Continue monitoring body condition and egg production."
+              ]
+            }
+          ],
+
+          troubleshootingSummary:
+            "Nearly all feeding problems are corrected by treating Jerusalem Artichoke as supplemental produce rather than staple feed, introducing it gradually, maintaining complete-feed intake, harvesting only sound tubers, storing harvested tubers correctly, and limiting flock access to the growing patch."
+        },
+
+                faq: [
+          {
+            question:
+              "Can chickens eat Jerusalem Artichokes?",
+
+            answer:
+              "Yes. Chickens can eat clean, sound Jerusalem Artichoke tubers as supplemental produce. They are most appropriate for established adult birds and should be introduced gradually while a complete poultry ration remains the flock's nutritional foundation."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichokes raw?",
+
+            answer:
+              "Yes. Sound Jerusalem Artichoke tubers may be fed raw. Cooking, boiling, roasting, fermentation, and heat treatment are not required for ordinary supplemental feeding."
+          },
+
+          {
+            question:
+              "Can chickens eat whole Jerusalem Artichoke tubers?",
+
+            answer:
+              "Yes. Small, firm, sound tubers may be offered whole to established adult chickens. Larger or harder tubers are usually easier for the flock to consume when they are split, chopped, or lightly crushed."
+          },
+
+          {
+            question:
+              "Should Jerusalem Artichokes be chopped before feeding?",
+
+            answer:
+              "Chopping is optional for small tubers but useful for larger ones. Split or chopped tubers are easier to inspect, portion, and share among several birds. Prepared pieces should be fed promptly because cut surfaces deteriorate faster than intact tubers."
+          },
+
+          {
+            question:
+              "Do Jerusalem Artichokes need to be peeled before chickens eat them?",
+
+            answer:
+              "No. Routine peeling is unnecessary. Remove excessive soil, inspect the skin carefully, and discard tubers that are rotten, moldy, slimy, chemically contaminated, flood-contaminated, or otherwise questionable."
+          },
+
+          {
+            question:
+              "Do Jerusalem Artichokes need to be washed before feeding?",
+
+            answer:
+              "Loose soil should be brushed away, and heavily soiled tubers may be washed. Washing does not make chemically contaminated, flood-contaminated, moldy, rotten, or rodent-contaminated tubers safe."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichoke leaves?",
+
+            answer:
+              "Chickens may eat limited amounts of tender young leaves and shoots. Older foliage becomes increasingly coarse and fibrous and has much less practical poultry-feed value."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichoke stems?",
+
+            answer:
+              "Mature stems are not recommended as feed. They become tall, coarse, woody, and highly fibrous, with little practical nutritional value for chickens."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichoke flowers?",
+
+            answer:
+              "Occasional pecking at clean, untreated flowers is not normally considered the crop's primary hazard, but the flowers provide little meaningful feed value compared with the tubers."
+          },
+
+          {
+            question:
+              "Can young chicks eat Jerusalem Artichokes?",
+
+            answer:
+              "Routine feeding is not recommended for young chicks. Chicks should receive an age-appropriate complete starter ration with suitable particle size and stable nutrient balance. Whole tubers, chopped tubers, and informal dried-tuber mixtures may displace essential starter feed."
+          },
+
+          {
+            question:
+              "Can pullets eat Jerusalem Artichokes?",
+
+            answer:
+              "Well-developed pullets may receive small amounts of prepared Jerusalem Artichoke tuber after they can handle ordinary adult supplements. Their complete grower or developer ration should remain dominant."
+          },
+
+          {
+            question:
+              "Can laying hens eat Jerusalem Artichokes?",
+
+            answer:
+              "Yes. Laying hens may receive them as supplemental produce and enrichment. Jerusalem Artichokes do not provide enough calcium, protein, amino acids, vitamins, or minerals to replace complete layer feed."
+          },
+
+          {
+            question:
+              "Can roosters eat Jerusalem Artichokes?",
+
+            answer:
+              "Yes. Healthy adult roosters may eat clean whole, split, chopped, or crushed tubers as measured supplements. Portion control remains important because the tubers are not complete poultry nutrition."
+          },
+
+          {
+            question:
+              "Are Jerusalem Artichokes good for chickens during molt?",
+
+            answer:
+              "They can provide supplemental carbohydrate and dietary variety, but they are relatively low in protein and do not provide the complete amino-acid balance needed for feather growth. A balanced ration remains more important."
+          },
+
+          {
+            question:
+              "Are Jerusalem Artichokes good for chickens in winter?",
+
+            answer:
+              "Yes. Winter use is one of their strongest homestead advantages. Mature tubers may remain in reasonably well-drained soil and be harvested as needed when the ground remains accessible."
+          },
+
+          {
+            question:
+              "Can chickens dig their own Jerusalem Artichokes?",
+
+            answer:
+              "Controlled postharvest access can provide useful scratching and pecking enrichment. Unrestricted access is not recommended because birds may consume uncertain amounts, damage retained tubers, compact wet soil, and reduce future production."
+          },
+
+          {
+            question:
+              "Do chickens need grit to eat Jerusalem Artichokes?",
+
+            answer:
+              "Appropriately sized insoluble grit should be available when birds consume coarse plant material and do not obtain enough natural grit from their environment. Soft chopped tubers generally require less mechanical breakdown than hard whole grains."
+          },
+
+          {
+            question:
+              "Will Jerusalem Artichokes make chickens lay more eggs?",
+
+            answer:
+              "No crop supplement can guarantee increased egg production. Egg output depends on genetics, age, daylight, health, water, stress, body condition, and complete nutrition. Excessive tuber intake may reduce production if it displaces balanced layer feed."
+          },
+
+          {
+            question:
+              "Can Jerusalem Artichokes improve eggshell quality?",
+
+            answer:
+              "No. Jerusalem Artichoke tubers are low in calcium and should not be relied upon for eggshell formation. Laying hens need a complete layer ration and an appropriate calcium program."
+          },
+
+          {
+            question:
+              "Are Jerusalem Artichokes a good protein source for chickens?",
+
+            answer:
+              "No. Fresh tubers contain relatively little protein and do not provide a complete amino-acid balance. Their principal value is supplemental produce, fermentable carbohydrate, enrichment, and seasonal homestead storage."
+          },
+
+          {
+            question:
+              "Are Jerusalem Artichokes a high-energy chicken feed?",
+
+            answer:
+              "They provide carbohydrate, but fresh tubers contain substantial water and are much less energy dense than dry cereal grains or oilseeds. They should be treated as fresh supplemental produce rather than concentrated feed."
+          },
+
+          {
+            question:
+              "Why can Jerusalem Artichokes cause loose droppings?",
+
+            answer:
+              "The tubers contain inulin and related fructans that are readily fermented in the digestive system. Large or sudden servings may change manure consistency, increase moisture, or cause digestive discomfort."
+          },
+
+          {
+            question:
+              "How should Jerusalem Artichokes be introduced to a flock?",
+
+            answer:
+              "Begin with a small amount alongside the flock's normal complete feed. Increase gradually only when droppings, litter moisture, appetite, crop function, body condition, egg production, and complete-feed intake remain normal."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichokes every day?",
+
+            answer:
+              "Small supplemental servings may fit some flock-management systems, but daily feeding is not automatically appropriate for every flock. Total supplemental intake, manure consistency, litter condition, body condition, and complete-feed consumption should be monitored."
+          },
+
+          {
+            question:
+              "How much Jerusalem Artichoke should I give my chickens?",
+
+            answer:
+              "There is no single crop-specific amount suitable for every flock. Use a small supplemental amount, introduce it gradually, prevent displacement of complete feed, and adjust according to bird age, flock size, activity, weather, body condition, tuber form, and digestive response."
+          },
+
+          {
+            question:
+              "Can Jerusalem Artichokes replace chicken feed?",
+
+            answer:
+              "No. They do not provide the concentrated energy, protein, essential amino acids, calcium, phosphorus balance, vitamins, minerals, sodium, and trace nutrients required for complete poultry nutrition."
+          },
+
+          {
+            question:
+              "Can dried Jerusalem Artichoke meal replace fresh tubers?",
+
+            answer:
+              "No. Drying removes water and concentrates the remaining carbohydrate, fiber, minerals, and dry matter. Fresh tubers, dried slices, and ground tuber meal are nutritionally different products."
+          },
+
+          {
+            question:
+              "Can I use poultry-research inclusion percentages for backyard feeding?",
+
+            answer:
+              "Not directly. Poultry studies commonly use analyzed dried Jerusalem Artichoke ingredients within professionally balanced rations. Those percentages should not be copied into an otherwise unbalanced homemade feed or applied directly to fresh tubers."
+          },
+
+          {
+            question:
+              "Can Jerusalem Artichokes be fermented for chickens?",
+
+            answer:
+              "Routine fermentation is not required and uncontrolled fermentation is not recommended. Sour odor, alcohol-like odor, bubbling, slime, foaming, or unexpected warmth should be treated as spoilage."
+          },
+
+          {
+            question:
+              "Can chickens eat cooked Jerusalem Artichokes?",
+
+            answer:
+              "Plain cooked and cooled tubers are not automatically unsafe, but cooking is unnecessary. Do not feed preparations containing excessive salt, butter, oil, seasonings, sauces, sweeteners, onions, or other unsuitable ingredients."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichoke kitchen scraps?",
+
+            answer:
+              "Plain sound trimmings may be suitable when they contain no mold, rot, excessive salt, sauces, seasonings, chemical residues, or unsafe added ingredients. Prepared scraps should be offered promptly and removed before spoilage."
+          },
+
+          {
+            question:
+              "Can chickens eat moldy Jerusalem Artichokes if the mold is removed?",
+
+            answer:
+              "No. Mold may extend beyond the visible area, and some hazards cannot be corrected by washing, peeling, trimming, cooking, drying, or mixing the tuber with clean feed. Discard questionable material."
+          },
+
+          {
+            question:
+              "Can chickens eat soft or shriveled Jerusalem Artichokes?",
+
+            answer:
+              "Mild shriveling caused only by moisture loss may not automatically make a tuber unsafe, but severely soft, collapsing, slimy, leaking, moldy, sour-smelling, or otherwise deteriorated tubers should be discarded."
+          },
+
+          {
+            question:
+              "Can chickens eat Jerusalem Artichokes after they freeze?",
+
+            answer:
+              "Dormant tubers may survive freezing soil, but harvested tubers can deteriorate after freezing and thawing. Discard tubers that become watery, soft, translucent, leaking, discolored, slimy, or foul-smelling."
+          },
+
+          {
+            question:
+              "Can chickens eat sprouting Jerusalem Artichokes?",
+
+            answer:
+              "Sprouting alone is not equivalent to the solanine hazard associated with green Potatoes, but heavily sprouted, shriveled, soft, moldy, or deteriorated tubers should not be fed. Sound planting tubers are usually better reserved for replanting."
+          },
+
+          {
+            question:
+              "How should harvested Jerusalem Artichokes be stored?",
+
+            answer:
+              "Store harvested tubers cold, dark, and at high relative humidity without standing water or condensation. Protect them from freezing injury, drying air, mold, insects, rodents, chemicals, and physical damage."
+          },
+
+          {
+            question:
+              "Is it better to leave Jerusalem Artichokes in the ground?",
+
+            answer:
+              "Often, yes. In reasonably well-drained soil, leaving mature tubers underground and harvesting only what is needed is generally the most dependable low-energy storage method."
+          },
+
+          {
+            question:
+              "How long do harvested Jerusalem Artichokes store?",
+
+            answer:
+              "No universal shelf life applies. Storage duration depends on cultivar, maturity, digging damage, washing, temperature, humidity, condensation, freezing, rodents, and storage method. Inspect harvested tubers frequently and use them before quality declines."
+          },
+
+          {
+            question:
+              "Can Jerusalem Artichokes be dried for chicken feed?",
+
+            answer:
+              "Yes, but drying must be complete and uniform. Slice sound tubers evenly, use clean equipment and strong airflow, cool the slices fully, and inspect for hidden moisture before storage."
+          },
+
+          {
+            question:
+              "Can dried Jerusalem Artichokes be ground?",
+
+            answer:
+              "Thoroughly dried tuber slices may be ground for measured use within a professionally balanced ration. Ground material absorbs moisture readily and should be prepared in small batches and stored carefully."
+          },
+
+          {
+            question:
+              "What are the warning signs that stored Jerusalem Artichokes are unsafe?",
+
+            answer:
+              "Discard material showing visible mold, musty odor, sour or alcohol-like odor, slime, leaking tissue, soft rot, unexpected warmth, condensation-related deterioration, rodent contamination, chemical odor, or uncertain contamination."
+          },
+
+          {
+            question:
+              "Will Jerusalem Artichokes attract rodents?",
+
+            answer:
+              "They can. Stored tubers, exposed field tubers, and uneaten pieces may attract mice, rats, voles, and other wildlife. Use secure storage, clean up leftovers, and inspect for chewing, droppings, urine, and nesting material."
+          },
+
+          {
+            question:
+              "Are Jerusalem Artichokes invasive?",
+
+            answer:
+              "They can spread aggressively because missed tubers and small fragments may regrow. Plant them only where a long-term perennial colony can be tolerated and managed."
+          },
+
+          {
+            question:
+              "Will chickens control the spread of Jerusalem Artichokes?",
+
+            answer:
+              "Chickens may consume some exposed tubers and young shoots, but they should not be relied upon to eliminate the crop. Small missed tubers can survive and regenerate."
+          },
+
+          {
+            question:
+              "Can Jerusalem Artichokes grow inside a permanent chicken run?",
+
+            answer:
+              "They are usually difficult to establish under continuous flock pressure. Chickens may damage young shoots, compact soil, expose roots, and dig tubers. Protected establishment or rotational access is more dependable."
+          },
+
+          {
+            question:
+              "What is the best Jerusalem Artichoke feeding form for backyard chickens?",
+
+            answer:
+              "Fresh split or chopped sound tubers provide the best combination of inspection, flock access, and portion control. Small whole tubers and controlled postharvest foraging can provide additional enrichment."
+          },
+
+          {
+            question:
+              "What is Jerusalem Artichoke's greatest value for backyard chickens?",
+
+            answer:
+              "Its greatest value is as a perennial homestead crop that provides dependable fall and winter supplemental produce, natural pecking and digging enrichment, controlled postharvest foraging, and excellent in-ground seasonal storage."
+          }
+        ],
+
+        expertSummary: {
+          oneSentence:
+            "Jerusalem Artichoke is one of the best perennial supplemental produce crops for backyard chickens, offering dependable winter tubers, natural enrichment, and exceptional homestead resilience while remaining a supplement—not a replacement—for complete poultry feed.",
+
+          oneParagraph:
+            "Jerusalem Artichoke is best viewed as a permanent homestead-support crop rather than a concentrated feed crop. Its edible tubers provide seasonal variety, fermentable carbohydrate, pecking enrichment, and reliable in-ground winter storage, while the plants also contribute pollinator support, compost biomass, privacy screening, and household food. Fresh tubers contain substantial moisture, relatively little protein, incomplete amino-acid balance, and very little calcium, so they should always supplement a balanced poultry ration rather than replace it. Success comes from harvesting only sound tubers, introducing them gradually, maintaining complete-feed intake, managing the permanent patch responsibly, and using controlled postharvest access instead of unrestricted grazing.",
+
+          recommendation:
+            "Highly recommended as a permanent supplemental homestead crop where underground spread can be managed.",
+
+          recommendationReasoning: [
+            "Excellent perennial reliability.",
+            "Outstanding in-ground winter storage.",
+            "Minimal annual replanting.",
+            "Useful fresh supplemental produce.",
+            "Excellent pecking enrichment.",
+            "Strong multi-purpose homestead value.",
+            "Simple preparation requirements.",
+            "Not suitable as complete poultry nutrition."
+          ],
+
+          idealUseCase:
+            "Homesteads wanting a permanent low-maintenance crop that provides fresh winter supplemental feed, enrichment, household food, pollinator habitat, compost biomass, and long-term resilience.",
+
+          notRecommendedAs: [
+            "A complete poultry feed.",
+            "A high-protein feed source.",
+            "A calcium supplement.",
+            "A primary chick feed.",
+            "A concentrated dry-energy feed.",
+            "A temporary annual garden crop.",
+            "An unrestricted free-choice flock feed."
+          ]
+        },
+
+        scientificNotes: {
+          researchSummary:
+            "Research strongly supports Jerusalem Artichoke as a perennial tuber crop with significant homestead value and documented use as a supplemental poultry ingredient. Fresh tubers are valued primarily for seasonal produce, fermentable carbohydrate, enrichment, and winter storage, while processed dried ingredients have been evaluated within professionally formulated poultry diets. Current evidence does not support replacing complete poultry feed with fresh tubers or applying processed-feed inclusion percentages directly to backyard supplementation.",
+
+          evidenceStrength:
+            "moderate-to-high",
+
+          evidenceLimitations: [
+            "Most poultry research evaluates processed ingredients rather than fresh backyard feeding.",
+            "Cultivar, climate, harvest timing, storage method, and moisture content create substantial variability.",
+            "Fresh tubers and dried ingredients are not nutritionally equivalent.",
+            "Few studies evaluate ordinary backyard feeding practices directly."
+          ],
+
+          futureResearchNeeds: [
+            "Backyard flock consumption behavior.",
+            "Long-term supplemental feeding performance.",
+            "Small-flock economic value.",
+            "Cultivar comparisons for poultry use.",
+            "Fresh-tuber digestibility under backyard conditions.",
+            "Seasonal feeding-management recommendations."
+          ]
+        },
+
+                metadata: {
+          feedingReferenceVersion:
+            "1.0.0",
+
+          templateVersion:
+            "1.0.0",
+
+          cropSpecificReviewStatus:
+            "reviewed",
+
+          confidenceLevel:
+            "high",
+
+          lastReviewed:
+            "2026-07",
+
+          intendedAudience: [
+            "Backyard chicken keepers",
+            "Homesteaders",
+            "Small flock owners",
+            "Educators",
+            "Feed-planner engine",
+            "Future AI assistant"
+          ],
+
+          sourceRecordFields: [
+            "identity",
+            "summary",
+            "chickenUse",
+            "nutrition",
+            "harvest",
+            "storage",
+            "risks",
+            "usePaths",
+            "seasonalRoles",
+            "dataQuality"
+          ],
+
+          designGoals: [
+            "Power the 'Can My Chickens Eat This?' tool",
+            "Provide structured data for future calculators",
+            "Support FAQ generation",
+            "Support AI responses",
+            "Support printable crop sheets",
+            "Support comparison tables",
+            "Support feed recommendations",
+            "Maintain consistency across all feed crops"
+          ]
+        }
+      },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Freshly harvested sound tubers",
         "Clean split or chopped tubers",
