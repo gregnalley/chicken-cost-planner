@@ -159836,13 +159836,29 @@ usePaths: [
         }
       },
 
-      faq: [
+    faq: [
         {
           question:
             "Can chickens eat Barley?",
 
           answer:
-            "Yes. Established adult chickens can eat clean, mature, untreated Barley grain as a measured supplemental feed. Barley should not replace a nutritionally complete poultry ration."
+            "Yes. Established adult chickens can eat clean, mature Barley grain as a measured supplement. Whole, cracked, coarsely ground, hull-less, or carefully sprouted Barley may be used depending on the feeding purpose, but complete poultry feed should remain the nutritional foundation."
+        },
+
+        {
+          question:
+            "Is Barley safe for chickens?",
+
+          answer:
+            "Clean mature Barley is generally safe for established adult chickens. Important limitations include beta-glucans, hull fiber, lower usable energy than Corn or Wheat, complete-feed displacement, mold, Fusarium damage, ergot, treated planting seed, and poor storage conditions."
+        },
+
+        {
+          question:
+            "What parts of the Barley plant can chickens eat?",
+
+          answer:
+            "The primary edible part is the mature grain. Chickens may also receive clean short sprouts, tender young shoots, limited green forage, and residual sound grain during controlled postharvest gleaning. Sharp awns, coarse chaff, mature fibrous stems, roots, and diseased heads are not recommended."
         },
 
         {
@@ -159850,23 +159866,7 @@ usePaths: [
             "Can chickens eat whole Barley grain?",
 
           answer:
-            "Yes. Healthy established adult chickens can generally consume whole mature Barley when the kernels are clean, dry, sound, appropriately sized, and free from sharp awns or excessive chaff. Appropriate insoluble grit should be available."
-        },
-
-        {
-          question:
-            "Can chickens eat hulled Barley?",
-
-          answer:
-            "Yes, but ordinary covered or hulled Barley contains more fibrous hull material and generally provides less usable poultry energy than hull-less Barley, Corn, or Wheat. It should therefore be offered conservatively as a supplement."
-        },
-
-        {
-          question:
-            "Can chickens eat hull-less Barley?",
-
-          answer:
-            "Yes. Hull-less Barley generally contains less structural fiber and may provide greater usable nutrient density than ordinary covered Barley. It is still not a complete poultry feed and must be used in moderation."
+            "Healthy established adult chickens can generally consume sound whole Barley grain when they have access to appropriately sized insoluble grit. Whole grain should still be offered in measured amounts so that it does not displace complete feed."
         },
 
         {
@@ -159874,7 +159874,7 @@ usePaths: [
             "Can chickens eat cracked Barley?",
 
           answer:
-            "Yes. Freshly cracked Barley may be easier for some chickens to consume and can be mixed more evenly with other ingredients. Cracking shortens storage life by exposing the kernel to moisture, insects, oxidation, and spoilage."
+            "Yes. Freshly cracked Barley can be used as a measured supplement or ration ingredient. Cracking increases exposed surface area, however, so the grain absorbs moisture and deteriorates faster than intact whole grain."
         },
 
         {
@@ -159882,47 +159882,87 @@ usePaths: [
             "Can chickens eat ground Barley?",
 
           answer:
-            "Yes, when it is clean, freshly prepared, and used appropriately. Ground Barley is best treated as an ingredient in a properly balanced ration because grinding does not correct beta-glucans, fiber, amino-acid limitations, mineral deficiencies, or overall nutrient imbalance."
+            "Ground Barley can be used as an ingredient in a properly balanced poultry ration. Grinding does not remove beta-glucans, eliminate hull fiber, or correct Barley's incomplete amino-acid, mineral, and vitamin balance."
         },
 
         {
           question:
-            "Does Barley need to be cooked before chickens eat it?",
+            "Can chickens eat hull-less Barley?",
 
           answer:
-            "No. Cooking is not required for small supplemental amounts of clean mature Barley offered to healthy adult chickens. Cooking also does not make an unbalanced Barley-heavy ration nutritionally complete."
+            "Yes. Hull-less Barley generally contains less structural fiber and a greater proportion of usable kernel than ordinary covered Barley. It must still be fed in moderation or included through proper ration formulation."
         },
 
         {
           question:
-            "Can chickens eat Barley grain heads?",
+            "Can chickens eat Barley sprouts?",
 
           answer:
-            "Yes. Mature, sound Barley heads can provide pecking enrichment after they have been dried, inspected, and cleared of dangerous contamination. Sharp awns and excessive coarse chaff should be removed before feeding."
+            "Clean short sprouts produced from untreated food-grade or feed-grade Barley may be offered in limited amounts. Sprouting requires strict sanitation, good drainage, frequent rinsing, strong airflow, temperature control, and immediate rejection of sprouts that become moldy, warm, slimy, sour, or discolored."
         },
 
         {
           question:
-            "Can chickens eat green or immature Barley heads?",
+            "Can chickens eat hydroponic Barley fodder?",
 
           answer:
-            "Immature grain heads are not the preferred stored-feed form because the kernels may be watery, poorly filled, difficult to thresh, and vulnerable to spoilage. Grain intended for storage should normally be allowed to mature and dry properly."
+            "Properly produced hydroponic Barley fodder may be used as a moist supplemental feed, but it should not replace complete poultry feed. Much of the apparent weight increase during sprouting is water rather than newly created feed dry matter."
         },
 
         {
           question:
-            "Can chickens eat green Barley grass?",
+            "Can chickens graze growing Barley?",
 
           answer:
-            "Yes. Chickens may consume limited amounts of young tender Barley growth as seasonal forage or green chop. Mature stems and straw become highly fibrous and should not be treated as concentrated poultry feed."
+            "Established chickens may graze tender young Barley under controlled conditions. Access should be limited to prevent destruction of the stand, excessive forage intake, mud formation, manure buildup, and exposure to treated seed or agricultural chemicals."
         },
 
         {
           question:
-            "Can chickens eat Barley straw?",
+            "Can chickens eat mature Barley heads?",
 
           answer:
-            "Barley straw is not considered a useful concentrated feed. Clean dry straw may have value as bedding, mulch, or compost carbon, but coarse stems and sharp awns can create irritation or handling concerns."
+            "Sound, dry mature heads may provide occasional pecking enrichment, but they should be inspected carefully for sharp awns, coarse chaff, mold, Fusarium damage, ergot, insects, immature grain, and chemical contamination."
+        },
+
+        {
+          question:
+            "Is Barley a good source of protein for chickens?",
+
+          answer:
+            "Barley provides moderate plant protein, but it is not a complete protein source for poultry. Its digestible amino-acid balance does not independently satisfy the needs of growing, laying, breeding, or molting birds."
+        },
+
+        {
+          question:
+            "Is Barley a good energy feed for chickens?",
+
+          answer:
+            "Barley provides useful starch-based energy, but ordinary covered Barley generally contains more fiber and supplies less usable poultry energy than Corn and commonly less than Wheat."
+        },
+
+        {
+          question:
+            "Why can Barley cause sticky droppings?",
+
+          answer:
+            "Barley contains soluble non-starch polysaccharides, especially beta-glucans, that can increase intestinal viscosity. Excessive or poorly formulated inclusion may contribute to sticky manure, wet litter, dirty vents, dirty feathers, and dirty eggs."
+        },
+
+        {
+          question:
+            "Does grinding Barley remove beta-glucans?",
+
+          answer:
+            "No. Grinding changes particle size but does not remove beta-glucans or eliminate their effects on intestinal viscosity and nutrient use."
+        },
+
+        {
+          question:
+            "Can enzymes make Barley safer for chickens?",
+
+          answer:
+            "Beta-glucanase and related enzymes may improve Barley use in professionally formulated poultry diets. Enzyme-supported commercial formulations are not equivalent to informally adding large quantities of Barley to an unbalanced backyard mixture."
         },
 
         {
@@ -159930,7 +159970,7 @@ usePaths: [
             "Can chicks eat Barley?",
 
           answer:
-            "Routine backyard supplementation is not recommended for young chicks. Chicks are more sensitive to fiber, particle size, nutrient displacement, beta-glucans, sticky droppings, and wet litter. They should rely on an age-appropriate complete chick starter."
+            "Routine backyard feeding of whole Barley, homemade Barley mixtures, sprouts, or forage is not recommended for young chicks. Chicks are especially sensitive to beta-glucans, fiber, particle size, nutrient dilution, sanitation failures, and incomplete ration formulation. They should rely on an age-appropriate complete chick starter."
         },
 
         {
@@ -160040,40 +160080,44 @@ usePaths: [
 
       expertSummary: {
         oneSentence:
-          "Barley is a useful cool-season supplemental grain and forage crop for backyard chickens, especially where early planting, winter cover, stored grain, and whole-head enrichment are valuable, but its fiber and beta-glucan content require more restraint than many other cereal grains.",
+          "Barley is a useful cool-season supplemental grain and forage crop for backyard chickens, especially where early planting, winter cover, stored grain, and seasonal forage are valuable, but its hull fiber and beta-glucan content require more restraint than many other cereal grains.",
 
         oneParagraph:
-          "Barley provides several practical benefits to a backyard poultry system. It can establish rapidly during cool weather, function as a cover crop, produce young seasonal forage, yield mature grain for storage, supply whole heads for pecking enrichment, and leave useful straw and crop residue after harvest. Mature grain contributes starch, energy, and moderate protein, while hull-less varieties may offer greater usable poultry value than ordinary covered Barley. Its main limitations are equally important: covered grain contains substantial hull fiber, soluble beta-glucans can contribute to intestinal viscosity and sticky droppings, and Barley does not provide the amino-acid, calcium, mineral, or vitamin balance required of a complete poultry ration. It is most useful when grown and fed as one measured component of a diversified supplemental program rather than as the flock's primary grain or sole homegrown feed.",
+          "Barley provides several practical benefits within a backyard poultry system. It can establish rapidly during cool weather, function as a cover crop, produce young seasonal forage, yield mature grain for storage, support short-sprout production, provide limited whole-head enrichment, and leave useful straw and crop residue after harvest. Mature grain contributes starch-based energy and moderate protein, while hull-less varieties may offer greater usable poultry value than ordinary covered Barley. Its main limitations are equally important: covered grain contains substantial hull fiber, soluble beta-glucans can increase intestinal viscosity and contribute to sticky droppings and wet litter, and Barley does not provide the amino-acid, calcium, mineral, vitamin, or energy balance required of a complete poultry ration. It is most useful when grown and fed as one measured component of a diversified supplemental program rather than as the flock's primary grain or sole homegrown feed.",
 
         recommendation:
-          "Recommended with Moderation",
+          "Recommended with Limitations",
 
         recommendationReasoning: [
-          "Useful cool-season grain crop",
-          "Strong autumn and winter cover-crop value",
-          "Good stored-grain potential",
-          "Useful whole-head enrichment",
-          "Multiple feed and non-feed use paths",
-          "Hull-less varieties may improve poultry feeding value",
-          "Requires restraint because of beta-glucans and fiber"
+          "Useful starch-based supplemental energy",
+          "Moderate supplemental protein contribution",
+          "Excellent whole-grain storage potential",
+          "Strong cool-season crop value",
+          "Useful seasonal forage and sprouting options",
+          "Hull-less varieties may provide improved poultry-feed value",
+          "Beta-glucans require moderation and careful ration management",
+          "Covered grain contains substantial hull fiber",
+          "Excessive feeding may contribute to sticky droppings and wet litter",
+          "Requires more harvesting and processing labor than Sunflower",
+          "Cannot replace a complete poultry ration"
         ],
 
         idealUseCase:
-          "A cool-season multipurpose crop used for measured whole-grain or cracked-grain supplementation, controlled young forage, whole-head enrichment, winter soil cover, straw production, and postharvest gleaning alongside a nutritionally complete poultry ration.",
+          "A cool-season multipurpose crop used for measured adult-flock grain supplementation, controlled young forage, short sprouts, postharvest gleaning, soil cover, crop rotation, and winter feed storage while an age-appropriate complete poultry ration remains the nutritional foundation.",
 
         notRecommendedAs: [
           "Primary flock ration",
-          "Only grain in a homemade ration",
+          "Only energy source",
           "Only protein source",
           "Primary calcium source",
-          "Unlimited free-choice feed",
-          "Routine young-chick supplement",
-          "Unrestricted wet hydroponic fodder",
-          "Replacement for professional ration formulation"
+          "Unlimited free-choice grain",
+          "Routine chick feed",
+          "Unformulated high-inclusion ration ingredient",
+          "Replacement for complete layer, grower, breeder, or meat-bird feed"
         ]
       },
 
-            scientificNotes: {
+      scientificNotes: {
         taxonomy: {
           scientificName:
             "Hordeum vulgare",
@@ -160083,79 +160127,79 @@ usePaths: [
         },
 
         researchNotes: [
-          "Most published poultry research evaluates Barley as a measured ingredient within professionally formulated complete diets rather than as an informal backyard supplemental grain.",
+          "Most poultry-feeding research evaluates Barley as a measured ingredient within professionally formulated complete diets rather than as an informal backyard supplemental grain.",
 
-          "Covered Barley, hull-less Barley, whole grain, cracked grain, ground grain, sprouts, forage, and enzyme-supported formulated diets are nutritionally distinct and should not be treated as interchangeable.",
+          "Covered Barley, hull-less Barley, whole grain, cracked grain, ground grain, sprouts, forage, and enzyme-supported formulated diets differ in nutritional characteristics and should not be treated as interchangeable.",
 
-          "Barley's feeding value is strongly influenced by hull content, beta-glucan concentration, cultivar, grain quality, bird age, processing method, enzyme inclusion, and total ration formulation.",
+          "Barley's feeding value is strongly influenced by hull content, beta-glucan concentration, cultivar, grain quality, processing method, bird age, enzyme supplementation, and total ration formulation.",
 
-          "Published research consistently identifies soluble beta-glucans as an important limitation because they can increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings and wet litter.",
+          "Research consistently identifies soluble beta-glucans as the primary nutritional limitation because they increase intestinal viscosity and may reduce nutrient utilization when inclusion is excessive.",
 
-          "Hull-less Barley generally contains less structural fiber and may provide greater usable nutrient and energy density than ordinary covered Barley.",
+          "Hull-less cultivars generally provide greater usable nutrient density than ordinary covered Barley because they contain less structural fiber.",
 
-          "Hydroponic Barley fodder changes moisture content and physical feed form but does not create substantial additional feed dry matter.",
+          "Hydroponic Barley fodder changes moisture content and feeding form but does not create significant additional dry matter.",
 
-          "Storage, harvest weather, Fusarium infection, ergot contamination, grain moisture, insects, rodents, and sprouting sanitation can materially affect feed safety and quality."
+          "Harvest timing, drying, storage moisture, Fusarium infection, ergot contamination, insects, rodents, and sprouting sanitation all have major effects on feed quality and safety."
         ],
 
         plannerConsiderations: [
-          "Moderate-energy supplemental cereal grain",
+          "Moderate-energy cereal grain",
 
-          "Moderate supplemental protein contribution",
+          "Moderate supplemental protein",
 
-          "Excellent dry-grain storage potential",
+          "Excellent dry-grain storage crop",
 
-          "Useful cool-season crop",
+          "Strong cool-season production value",
 
-          "Suitable for measured adult-flock supplementation",
+          "Useful seasonal forage",
 
-          "Suitable for controlled seasonal forage",
+          "Suitable for controlled sprouting",
 
-          "Suitable for short-sprout production with strict sanitation",
+          "Useful crop-rotation and cover-crop species",
 
-          "Hull-less cultivars may provide improved feed value",
+          "Hull-less cultivars improve feed value",
 
-          "Beta-glucans require special consideration",
+          "Beta-glucans require moderation",
 
-          "Ordinary covered grain contains substantial hull fiber",
+          "Covered grain contains substantial hull fiber",
 
-          "Young birds are more sensitive than established adults",
+          "Young birds are more sensitive than adults",
 
-          "Excessive feeding may contribute to sticky droppings and wet litter",
+          "Sticky droppings and wet litter become more likely when Barley is overfed",
 
-          "Complete-feed displacement must be prevented",
+          "Complete-feed displacement should always be avoided",
 
-          "Whole grain requires appropriate insoluble grit",
+          "Whole grain requires access to insoluble grit",
 
-          "Commercial inclusion rates should not be copied into unbalanced homemade rations",
+          "Commercial inclusion rates should not be copied into homemade rations",
 
-          "Mold, Fusarium damage, ergot, heating, and chemical seed treatments are serious safety concerns"
+          "Mold, Fusarium, ergot, heating, and chemically treated seed represent significant safety concerns"
         ],
 
         futureResearchTopics: [
           "Cultivar-specific beta-glucan concentrations",
 
-          "Comparative poultry-feed value of covered and hull-less Barley",
+          "Covered versus hull-less Barley performance in backyard flocks",
 
-          "Backyard-flock tolerance for measured whole-grain supplementation",
+          "Long-term effects of supplemental whole-grain Barley feeding",
 
-          "Effects of supplemental Barley on litter moisture and egg cleanliness",
+          "Relationships between Barley intake, litter moisture, and egg cleanliness",
 
-          "Small-scale storage performance under different humidity conditions",
+          "Small-scale storage performance under humid backyard conditions",
 
-          "Comparative feeding value of whole, cracked, and coarsely ground Barley",
+          "Comparative value of whole, cracked, and ground Barley",
 
-          "Sanitation and microbial risks in backyard Barley-sprouting systems",
+          "Backyard sanitation practices for hydroponic Barley fodder",
 
-          "Practical forage-frame management for young Barley growth",
+          "Protected forage-frame management techniques",
 
-          "Regional grain yield and processing-loss estimates for backyard production",
+          "Regional backyard grain-yield comparisons",
 
-          "Comparative enrichment value of Barley heads and loose grain",
+          "Comparative enrichment value of whole heads versus loose grain",
 
-          "Effects of cultivar awn characteristics on small-scale harvesting and feeding",
+          "Effects of awn characteristics on poultry feeding",
 
-          "Long-term feed-cost value within diversified backyard poultry systems"
+          "Feed-cost reduction within diversified backyard poultry systems"
         ]
       },
 
@@ -160201,7 +160245,7 @@ usePaths: [
 
           "Homemade rations without nutrient formulation",
 
-          "Large-scale feeding where beta-glucans are not managed",
+          "High dietary inclusion where beta-glucans are not managed",
 
           "Long-term storage after cracking or grinding",
 
