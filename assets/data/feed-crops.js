@@ -57207,156 +57207,52 @@ mechanicalProcessingSuitabilityScore:
             "White Clover is well supported agronomically as a perennial legume forage, but direct poultry-specific evidence is more limited and context dependent. The strongest conclusions are that it can provide useful managed forage and enrichment, cannot replace complete feed, varies in cyanogenic potential, and should be evaluated differently in fresh and dehydrated forms."
         },
 
-        practicalUse: {
-          easiestBackyardMethod:
-            "Establish White Clover in a mixed pasture or beneath a forage frame, allow it to root and spread fully, and then provide controlled flock access while complete feed remains continuously available.",
+                practicalUse: {
+          idealHomesteadUses: [
+            "Managed perennial grazing forage",
 
-          lowLaborMethod:
-            "Use an established mixed lawn or orchard-floor stand with a known chemical history and rotate access to prevent complete removal.",
+            "Rotational mixed pasture",
 
-          confinedFlockMethod:
-            "Grow White Clover beneath protected forage frames or harvest small amounts of clean tender growth for immediate cut-and-carry feeding.",
+            "Protected forage-frame growth",
 
-          preservationMethod:
-            "Dehydrate only surplus clean forage in thin layers with dependable airflow, cool it fully, and store it as flakes in moisture-resistant containers.",
+            "Fresh cut-and-carry greens",
 
-          smallSpaceUse:
-            "Use raised forage trays, protected frames, narrow rotational strips, orchard-floor patches, or periodically replaced containers rather than exposing one small planting continuously.",
+            "Cool-season forage production",
 
-          largeSpaceUse:
-            "Integrate White Clover into rotational mixed pasture with multiple paddocks, recovery periods, controlled stocking pressure, and protection during establishment or environmental stress.",
+            "Living orchard-floor ground cover",
 
-          orchardUse:
-            "White Clover may provide living ground cover and poultry forage beneath suitable orchard trees when shade is not excessive, soil moisture is adequate, tree roots and trunks are protected, and no unsafe orchard chemicals are used.",
+            "Low-growing lawn forage where chemical history is known",
 
-          lawnUse:
-            "Untreated White Clover lawns may provide useful grazing, but herbicide, pesticide, fertilizer, pet-waste, wildlife, runoff, and mowing history must be considered before poultry access or harvest.",
+            "Seasonal flock enrichment",
 
-          forageFrameUse:
-            "Use mesh openings large enough for birds to reach leaves but small and strong enough to prevent scratching into the root zone. Maintain sufficient frame height to protect stolons and crowns while permitting foliage to grow through.",
+            "Confined-flock forage trays",
 
-          rotationalUse:
-            "Move birds before the stand is grazed to bare stolons or exposed soil. Resume access only after adequate leaf area and active growth have returned.",
-
-          cutAndCarryUse:
-            "Harvest clean young leafy growth, inspect it carefully, place it in a clean feeder, and remove uneaten material before deterioration develops.",
-
-          driedUse:
-            "Use dehydrated flakes or meal more conservatively than fresh forage. Meaningful meal inclusion should be based on formulation rather than visual estimation.",
-
-          seasonalManagement: [
-            {
-              season:
-                "Spring",
-
-              priorities: [
-                "Protect new seedlings",
-                "Allow strong early growth",
-                "Begin rotational grazing only after establishment",
-                "Use fresh cut-and-carry forage",
-                "Monitor wet-soil damage",
-                "Control early weeds"
-              ]
-            },
-
-            {
-              season:
-                "Summer",
-
-              priorities: [
-                "Reduce pressure during heat and drought",
-                "Maintain soil moisture where practical",
-                "Avoid grazing wilted or dormant stands heavily",
-                "Protect shallow roots",
-                "Watch for thinning and bare soil",
-                "Use alternative forage when growth declines"
-              ]
-            },
-
-            {
-              season:
-                "Autumn",
-
-              priorities: [
-                "Use renewed cool-season growth",
-                "Reseed damaged areas",
-                "Allow stand recovery",
-                "Resume rotational grazing",
-                "Prepare limited dried forage where appropriate",
-                "Correct soil-fertility limitations"
-              ]
-            },
-
-            {
-              season:
-                "Winter",
-
-              priorities: [
-                "Protect dormant or slow-growing stands",
-                "Avoid excessive traffic on wet or frozen soil",
-                "Continue complete feed without relying on pasture",
-                "Use stored dried Clover conservatively",
-                "Plan spring reseeding",
-                "Inspect crowns and stolons for survival"
-              ]
-            }
+            "Homestead forage diversification"
           ],
 
-          implementationSteps: [
-            "Select a planting area with suitable drainage, moisture, light, and a safe chemical history.",
-            "Choose a locally adapted White Clover cultivar.",
-            "Test and correct soil pH and major nutrient deficiencies when practical.",
-            "Prepare a firm shallow seedbed or create adequate seed-to-soil contact within existing pasture.",
-            "Use an appropriate rhizobial inoculant when compatible nodulation is uncertain.",
-            "Plant seed very shallowly.",
-            "Maintain surface moisture during germination and early establishment.",
-            "Exclude chickens until plants are firmly rooted and producing spreading stolons.",
-            "Introduce brief controlled grazing or use a forage frame.",
-            "Monitor stand damage and complete-feed intake.",
-            "Rotate access before bare soil develops.",
-            "Provide recovery time after grazing.",
-            "Harvest only sound clean growth for cut-and-carry use.",
-            "Remove uneaten fresh forage promptly.",
-            "Preserve surplus only when complete drying and safe storage can be achieved.",
-            "Reassess stand productivity after heat, drought, flooding, disease, or heavy traffic."
+          lessSuitableUses: [
+            "Complete poultry-feed replacement",
+
+            "Primary chick nutrition",
+
+            "Primary dietary energy source",
+
+            "Primary laying-hen calcium source",
+
+            "Unrestricted grazing of newly established stands",
+
+            "Continuous grazing without recovery periods",
+
+            "Large informal additions of dehydrated Clover meal",
+
+            "Harvest from chemically treated lawns or roadsides"
           ],
 
-          successIndicators: [
-            "Dense leafy growth",
-            "Active stolon spread",
-            "Multiple rooted nodes",
-            "Minimal exposed soil",
-            "Rapid regrowth after controlled grazing",
-            "Normal complete-feed consumption",
-            "Normal body condition",
-            "Normal droppings",
-            "Good flock interest without feed refusal",
-            "No persistent manure contamination",
-            "No herbicide or pesticide exposure",
-            "No mold or spoilage",
-            "Stable mixed-pasture diversity"
-          ],
+          backyardRecommendation:
+            "Establish White Clover in mixed pasture, protected forage frames, rotational strips, or safe untreated lawn and orchard areas. Allow the stand to root and spread fully before flock access, rotate grazing before stolons and soil are exposed, and keep a complete poultry ration continuously available.",
 
-          failureIndicators: [
-            "Seedlings repeatedly uprooted",
-            "Bare stolons",
-            "Exposed roots",
-            "Expanding bare soil",
-            "Severe soil compaction",
-            "Persistent wilting",
-            "Summer stand collapse",
-            "Waterlogged crowns",
-            "Root or crown rot",
-            "Heavy manure accumulation",
-            "Continuous complete-feed refusal",
-            "Moldy or fermented cut forage",
-            "Unknown chemical exposure",
-            "Poor regrowth after rest",
-            "Loss of Clover from the pasture"
-          ],
-
-          practicalUseSummary:
-            "The most dependable White Clover system protects establishment, limits grazing pressure, preserves stolons and rooted nodes, maintains botanical diversity, and keeps complete poultry feed available at all times. For most backyard flocks, living forage and fresh cut-and-carry use are more practical than producing dried Clover meal."
+          commercialRecommendation:
+            "Commercial or meaningful ration use is most appropriate through analyzed dehydrated White Clover ingredients incorporated into a professionally formulated poultry diet. Fresh pasture use should be managed for forage quality, cyanogenic variability, botanical diversity, stocking pressure, and stand recovery."
         },
 
         metadata: {
