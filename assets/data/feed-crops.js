@@ -159876,78 +159876,6 @@ usePaths: [
         }
       ],
 
-      practicalUse: {
-        bestUses: [
-          {
-            use:
-              "Measured supplemental whole grain",
-
-            explanation:
-              "Clean mature whole Barley can be offered in moderation to established adult chickens as a supplemental energy grain while maintaining complete-feed intake."
-          },
-
-          {
-            use:
-              "Freshly cracked grain",
-
-            explanation:
-              "Freshly cracked Barley may improve accessibility for some birds while still functioning as a measured supplemental feed."
-          },
-
-          {
-            use:
-              "Whole-head enrichment",
-
-            explanation:
-              "Properly dried mature Barley heads encourage natural pecking behavior and provide enrichment while allowing birds to remove kernels gradually."
-          },
-
-          {
-            use:
-              "Cool-season forage",
-
-            explanation:
-              "Young Barley growth can be harvested as green chop or grazed under controlled conditions before plants become coarse and fibrous."
-          },
-
-          {
-            use:
-              "Hydroponic sprouts or fodder",
-
-            explanation:
-              "Properly managed sprouts provide a moist supplemental feed form but should not be viewed as creating additional feed dry matter."
-          },
-
-          {
-            use:
-              "Postharvest gleaning",
-
-            explanation:
-              "Allowing chickens controlled access after harvest helps recover spilled kernels while providing exercise and enrichment."
-          }
-        ],
-
-        worksBestWhen: [
-          "Used as a measured supplement rather than a primary ration.",
-          "Fed alongside a nutritionally complete poultry feed.",
-          "Stored as clean, mature, thoroughly dried whole grain.",
-          "Introduced gradually.",
-          "Combined with diverse homegrown feeds instead of relying on a single crop.",
-          "Managed with regular observation of manure quality, litter condition, body condition, and flock performance."
-        ],
-
-        lessSuitableWhen: [
-          "The goal is complete nutritional replacement of commercial feed.",
-          "Young chicks are being fed.",
-          "Grain quality or storage history is uncertain.",
-          "The grain shows evidence of mold, heating, insects, Fusarium, ergot, or chemical contamination.",
-          "Large amounts would displace balanced layer or grower feed."
-        ],
-
-        overallRecommendation:
-          "Barley is one of the better cool-season cereal crops for diversified backyard poultry systems because it can provide forage, grain, enrichment, cover-crop value, and useful straw. It performs best as one component of a balanced supplemental feeding program rather than as the flock's primary feed source."
-      },
-
       expertSummary: {
         oneSentence:
           "Barley is a useful cool-season supplemental grain and forage crop for backyard chickens, especially where early planting, winter cover, stored grain, and whole-head enrichment are valuable, but its fiber and beta-glucan content require more restraint than many other cereal grains.",
@@ -159983,92 +159911,146 @@ usePaths: [
         ]
       },
 
-      scientificNotes: {
-        evidenceQuality:
-          "moderate-to-high",
+            scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Hordeum vulgare",
 
-        evidenceSummary:
-          "Barley is among the most extensively researched cereal grains used in livestock feeding, including substantial poultry nutrition research. Most published studies evaluate Barley within scientifically formulated complete diets rather than as a backyard supplemental feed. Research consistently demonstrates that Barley can be a useful energy grain, but its feeding value depends on cultivar, hull content, soluble beta-glucan concentration, processing method, enzyme use, bird age, total diet formulation, and management. Literature also supports the use of Barley as a cool-season forage, cover crop, sprouting grain, and dual-purpose grain crop, although comparatively fewer studies specifically evaluate those uses in small backyard poultry systems.",
+          family:
+            "Poaceae"
+        },
 
-        majorResearchFindings: [
-          {
-            topic:
-              "Energy source",
+        researchNotes: [
+          "Most published poultry research evaluates Barley as a measured ingredient within professionally formulated complete diets rather than as an informal backyard supplemental grain.",
 
-            finding:
-              "Barley provides useful dietary energy for poultry but generally supplies less metabolizable energy than Corn because of greater fiber content and soluble beta-glucans."
-          },
+          "Covered Barley, hull-less Barley, whole grain, cracked grain, ground grain, sprouts, forage, and enzyme-supported formulated diets are nutritionally distinct and should not be treated as interchangeable.",
 
-          {
-            topic:
-              "Beta-glucans",
+          "Barley's feeding value is strongly influenced by hull content, beta-glucan concentration, cultivar, grain quality, bird age, processing method, enzyme inclusion, and total ration formulation.",
 
-            finding:
-              "Soluble beta-glucans can increase intestinal viscosity, reduce nutrient utilization, contribute to sticky droppings, and negatively affect feed efficiency when diets are not properly formulated."
-          },
+          "Published research consistently identifies soluble beta-glucans as an important limitation because they can increase intestinal viscosity, reduce nutrient utilization, and contribute to sticky droppings and wet litter.",
 
-          {
-            topic:
-              "Feed enzymes",
+          "Hull-less Barley generally contains less structural fiber and may provide greater usable nutrient and energy density than ordinary covered Barley.",
 
-            finding:
-              "Commercial poultry diets containing Barley frequently benefit from beta-glucanase and related enzyme supplementation that improves nutrient availability and reduces viscosity."
-          },
+          "Hydroponic Barley fodder changes moisture content and physical feed form but does not create substantial additional feed dry matter.",
 
-          {
-            topic:
-              "Hull-less cultivars",
-
-            finding:
-              "Hull-less Barley generally contains less structural fiber and may provide greater usable nutrient density than traditional covered Barley."
-          },
-
-          {
-            topic:
-              "Protein quality",
-
-            finding:
-              "Barley supplies moderate protein but does not provide the complete amino-acid profile required as the primary protein source in poultry diets."
-          },
-
-          {
-            topic:
-              "Whole-grain feeding",
-
-            finding:
-              "Research indicates that whole-grain feeding can be incorporated successfully under appropriate management, although diet formulation, grit availability, bird age, and total ration composition remain important."
-          },
-
-          {
-            topic:
-              "Cool-season production",
-
-            finding:
-              "Barley establishes rapidly in cool weather and performs well as a winter annual, spring grain, forage crop, cover crop, or dual-purpose production system in many temperate regions."
-          },
-
-          {
-            topic:
-              "Hydroponic sprouts and fodder",
-
-            finding:
-              "Hydroponic Barley fodder primarily changes moisture content and feed form rather than creating substantial additional feed dry matter. Management and sanitation remain critical."
-          }
+          "Storage, harvest weather, Fusarium infection, ergot contamination, grain moisture, insects, rodents, and sprouting sanitation can materially affect feed safety and quality."
         ],
 
-        researchLimitations: [
-          "Most poultry studies evaluate Barley inside precisely formulated commercial diets.",
-          "Research frequently involves broilers or commercial laying hens rather than diverse backyard flocks.",
-          "Cultivar differences create meaningful nutritional variation.",
-          "Hull status significantly affects feeding value.",
-          "Responses vary with enzyme inclusion.",
-          "Climate, soil, fertility, harvest timing, and storage practices influence final grain quality.",
-          "Backyard management practices differ considerably from commercial research conditions.",
-          "Relatively little peer-reviewed research directly evaluates whole-head enrichment or informal supplemental feeding practices."
+        plannerConsiderations: [
+          "Moderate-energy supplemental cereal grain",
+
+          "Moderate supplemental protein contribution",
+
+          "Excellent dry-grain storage potential",
+
+          "Useful cool-season crop",
+
+          "Suitable for measured adult-flock supplementation",
+
+          "Suitable for controlled seasonal forage",
+
+          "Suitable for short-sprout production with strict sanitation",
+
+          "Hull-less cultivars may provide improved feed value",
+
+          "Beta-glucans require special consideration",
+
+          "Ordinary covered grain contains substantial hull fiber",
+
+          "Young birds are more sensitive than established adults",
+
+          "Excessive feeding may contribute to sticky droppings and wet litter",
+
+          "Complete-feed displacement must be prevented",
+
+          "Whole grain requires appropriate insoluble grit",
+
+          "Commercial inclusion rates should not be copied into unbalanced homemade rations",
+
+          "Mold, Fusarium damage, ergot, heating, and chemical seed treatments are serious safety concerns"
         ],
 
-        practicalTakeaway:
-          "Scientific evidence strongly supports Barley as a useful cereal grain and cool-season crop when incorporated appropriately into balanced poultry nutrition. For backyard flocks it is best viewed as a versatile supplemental grain and forage rather than a complete feed replacement, with particular attention given to beta-glucans, hull fiber, grain quality, sanitation, and storage management."
+        futureResearchTopics: [
+          "Cultivar-specific beta-glucan concentrations",
+
+          "Comparative poultry-feed value of covered and hull-less Barley",
+
+          "Backyard-flock tolerance for measured whole-grain supplementation",
+
+          "Effects of supplemental Barley on litter moisture and egg cleanliness",
+
+          "Small-scale storage performance under different humidity conditions",
+
+          "Comparative feeding value of whole, cracked, and coarsely ground Barley",
+
+          "Sanitation and microbial risks in backyard Barley-sprouting systems",
+
+          "Practical forage-frame management for young Barley growth",
+
+          "Regional grain yield and processing-loss estimates for backyard production",
+
+          "Comparative enrichment value of Barley heads and loose grain",
+
+          "Effects of cultivar awn characteristics on small-scale harvesting and feeding",
+
+          "Long-term feed-cost value within diversified backyard poultry systems"
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Measured supplemental grain for established adult chickens",
+
+          "Cool-season grain production",
+
+          "Winter stored-feed reserves",
+
+          "Seasonal green forage",
+
+          "Protected forage-frame production",
+
+          "Short sprouted-grain feeding",
+
+          "Postharvest flock gleaning",
+
+          "Garden and field crop rotation",
+
+          "Cover-crop production",
+
+          "Soil protection and weed suppression",
+
+          "Straw production for bedding, mulch, or compost",
+
+          "Homestead feed diversification"
+        ],
+
+        lessSuitableUses: [
+          "Complete poultry-feed replacement",
+
+          "Primary chick nutrition",
+
+          "Unrestricted free-choice grain feeding",
+
+          "Primary calcium supplementation",
+
+          "Sole protein source",
+
+          "High-energy replacement for Corn",
+
+          "Homemade rations without nutrient formulation",
+
+          "Large-scale feeding where beta-glucans are not managed",
+
+          "Long-term storage after cracking or grinding",
+
+          "Sprouting where sanitation, airflow, drainage, and temperature cannot be controlled"
+        ],
+
+        backyardRecommendation:
+          "Barley is a useful multipurpose cool-season crop for backyard chicken keepers who want storable supplemental grain, limited seasonal forage, sprouted-feed options, crop-rotation value, and useful straw. Grow and feed it as one part of a diversified system, keep portions measured, maintain complete poultry feed as the nutritional foundation, and closely monitor droppings, litter moisture, grain quality, and storage conditions.",
+
+        commercialRecommendation:
+          "Commercial use is most appropriate through professionally formulated poultry rations that account for Barley type, hull content, beta-glucans, metabolizable energy, digestible amino acids, minerals, vitamins, enzyme use, bird age, and production goals."
       },
 
       metadata: {
