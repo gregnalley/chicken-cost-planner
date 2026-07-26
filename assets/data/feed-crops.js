@@ -105288,110 +105288,301 @@ feedingReference: {
       },
 
 
-      storage: {
-        storageDifficulty:
-          "moderate",
-
-        storageSummary:
-          "Properly matured, thoroughly dried, cleaned Wheat grain stores exceptionally well when protected from moisture, condensation, insects, rodents, mold, heating, and contamination. Whole grain generally stores substantially longer than cracked or ground Wheat.",
-
-        bestStorageForms: [
+            storage: {
+        preferredStorageForms: [
           {
             form:
               "Whole mature Wheat grain",
 
-            rating:
+            suitability:
               "excellent",
 
             explanation:
-              "Whole grain provides the longest dependable storage life when properly dried and protected."
+              "Clean, fully mature, thoroughly dried whole Wheat grain is the preferred storage form. The intact kernel generally resists moisture absorption, oxidation, and quality loss better than cracked or ground Wheat."
           },
 
           {
             form:
-              "Thoroughly dried whole Wheat heads",
+              "Thoroughly dried whole Wheat seed heads",
 
-            rating:
+            suitability:
               "very-good",
 
             explanation:
-              "Whole heads store well for seasonal enrichment when fully dried and protected from moisture and pests."
+              "Whole mature heads can be stored for seasonal enrichment when every part of the head is fully dry and protected from humidity, insects, rodents, mold, and physical damage."
+          },
+
+          {
+            form:
+              "Clean threshed Wheat stored in small batches",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Separating the harvest into manageable labeled batches makes inspection easier and prevents one questionable lot from contaminating the entire stored supply."
           },
 
           {
             form:
               "Freshly cracked Wheat",
 
-            rating:
-              "fair",
+            suitability:
+              "short-term-only",
 
             explanation:
-              "Cracked grain should be stored only briefly because exposed surfaces deteriorate more rapidly."
+              "Cracking exposes the interior of the kernel and increases moisture absorption, oxidation, insect access, and storage deterioration. Crack only quantities expected to be used promptly."
           },
 
           {
             form:
               "Freshly coarsely ground Wheat",
 
-            rating:
-              "fair",
+            suitability:
+              "short-term-only",
 
             explanation:
-              "Ground Wheat absorbs moisture more readily, produces dust, and should be prepared close to feeding time."
+              "Ground Wheat has substantially more exposed surface area, creates dust, absorbs atmospheric moisture readily, and should be prepared close to feeding time."
           },
 
           {
             form:
-              "Fresh Wheat sprouts",
+              "Wheat sprouts",
 
-            rating:
-              "poor",
+            suitability:
+              "not-suitable-for-long-term-storage",
 
             explanation:
-              "Sprouts are highly perishable and should be fed promptly after production."
+              "Sprouts are living, high-moisture material rather than durable stored grain. They should be produced in small sanitary batches, inspected carefully, and fed promptly."
+          },
+
+          {
+            form:
+              "Fresh Wheat forage",
+
+            suitability:
+              "not-suitable-for-dry-grain-storage",
+
+            explanation:
+              "Fresh cut Wheat forage should be fed promptly or held only briefly under refrigeration. It should not be packed warm or wet into sealed containers."
           }
         ],
 
-        idealStorageConditions: [
-          "Cool temperatures",
-          "Low humidity",
-          "Stable temperatures",
-          "Excellent ventilation before sealing",
-          "Food-safe containers",
-          "Rodent-resistant storage",
-          "Protection from insects",
-          "Protection from condensation",
-          "Protection from standing water",
-          "Dark storage conditions"
-        ],
+        dryingRequirements: {
+          dryingRequired:
+            true,
 
-        storageContainers: [
-          "Food-grade sealed buckets",
-          "Rodent-resistant bins",
-          "Metal grain containers",
-          "Heavy-duty food-safe containers",
-          "Breathable drying racks before storage",
-          "Dry mesh bags during curing when appropriate"
-        ],
+          targetCondition:
+            "Kernels and seed heads should be completely mature, dry, cool, firm, and free from internal warmth or condensation before enclosed storage.",
 
-        inspectionChecklist: [
-          "No condensation.",
-          "No heating.",
-          "No mold.",
-          "No musty odor.",
-          "No sour odor.",
-          "No ergot bodies.",
-          "No Fusarium-damaged kernels.",
-          "No insects.",
-          "No rodent contamination.",
-          "No caking.",
-          "No sprouting.",
-          "No excessive broken kernels.",
-          "No abnormal discoloration."
-        ],
+          goodDryingPractices: [
+            "Harvest after kernels have reached full maturity.",
+            "Avoid harvesting immediately after rainfall or heavy dew.",
+            "Spread harvested heads or grain in shallow layers.",
+            "Use clean drying screens, racks, trays, or tarps.",
+            "Maintain strong airflow around and beneath the material.",
+            "Turn or rearrange heads periodically so hidden areas dry evenly.",
+            "Keep drying grain protected from poultry, wild birds, rodents, insects, pets, and precipitation.",
+            "Separate wet, green, sprouted, moldy, Fusarium-damaged, ergot-contaminated, or insect-damaged material.",
+            "Allow grain to cool fully after warm-weather drying.",
+            "Use a suitable grain-moisture meter when practical.",
+            "Check grain from the center of the drying mass rather than inspecting only the surface.",
+            "Confirm that stems, glumes, chaff, and enclosed portions of whole heads are dry before storage.",
+            "Continue drying whenever kernels feel soft, cool-damp, pliable, or unusually heavy.",
+            "Move only fully dry and cool material into enclosed containers."
+          ],
 
-        expectedStorageLife:
-          "Whole mature Wheat commonly stores for many months when properly dried, cleaned, cooled, and protected. Whole heads generally store well for seasonal enrichment, while cracked or ground Wheat should be used much sooner. Fresh sprouts should be fed immediately after production."
+          unsafeDryingPractices: [
+            "Storing Wheat immediately after wet harvest.",
+            "Packing damp heads into deep piles.",
+            "Drying directly on contaminated soil, manure, litter, or chemically treated surfaces.",
+            "Leaving harvested grain exposed to repeated dew or rainfall.",
+            "Sealing warm grain inside airtight containers.",
+            "Assuming dry outer kernels prove that the center of the batch is dry.",
+            "Mixing newly harvested damp Wheat into an older dry batch.",
+            "Using containers that retain water or condensation.",
+            "Ignoring internal warmth during drying.",
+            "Attempting to dry visibly moldy grain for later feeding.",
+            "Storing grain with substantial green plant material mixed through it.",
+            "Using treated planting seed bags or chemically contaminated containers for feed storage."
+          ],
+
+          dryingFailureIndicators: [
+            "Condensation inside a container",
+            "Unexpected warmth within grain or seed heads",
+            "Musty odor",
+            "Sour or fermenting odor",
+            "Soft or pliable kernels",
+            "Damp chaff",
+            "Grain clumping",
+            "Visible fungal growth",
+            "Rapid insect activity",
+            "Sprouting",
+            "Abnormal discoloration",
+            "Caking",
+            "Moisture concentrated near the center of the batch"
+          ]
+        },
+
+        storageEnvironment: {
+          idealConditions: [
+            "Cool",
+            "Dry",
+            "Dark",
+            "Clean",
+            "Low humidity",
+            "Stable temperature",
+            "Protected from condensation",
+            "Protected from insects",
+            "Protected from rodents",
+            "Protected from wild birds",
+            "Protected from pets and livestock",
+            "Protected from roof leaks",
+            "Protected from direct sunlight",
+            "Protected from chemical fumes",
+            "Separated from manure and poultry litter",
+            "Separated from pesticides, herbicides, fuels, solvents, fertilizers, and treated seed",
+            "Containers elevated above damp floors",
+            "Storage area inspected regularly"
+          ],
+
+          avoidConditions: [
+            "Warm humid rooms",
+            "Wet poultry houses",
+            "Damp basements",
+            "Leaking sheds",
+            "Direct sunlight",
+            "Repeated temperature swings",
+            "Condensation-prone exterior walls",
+            "Open feed bags accessible to rodents",
+            "Containers placed directly on damp concrete",
+            "Storage beside manure or wet litter",
+            "Storage near pesticides, fuels, solvents, fertilizers, or treated planting seed",
+            "Areas where spilled grain cannot be cleaned easily",
+            "Unsealed containers in insect-prone areas",
+            "Locations subject to flooding",
+            "Containers exposed to rain or roof runoff"
+          ],
+
+          temperatureGuidance:
+            "Lower, stable storage temperatures generally slow insect activity, grain respiration, oxidation, and overall deterioration. Temperature stability is especially important because repeated warming and cooling may create condensation even when the grain was initially dry.",
+
+          humidityGuidance:
+            "Low humidity is essential. Wheat can absorb moisture from humid air after drying, particularly when containers are opened repeatedly or when cracked and ground grain is stored for extended periods.",
+
+          lightGuidance:
+            "Protect stored Wheat from direct sunlight. Sunlight can heat containers, create temperature fluctuations, encourage condensation, and accelerate quality deterioration."
+        },
+
+        containerGuidance: {
+          looseSeed: [
+            "Use clean, dry, food-safe or feed-safe containers.",
+            "Use tight-fitting lids only after the grain is completely dry and cool.",
+            "Choose containers that prevent rodent and insect access.",
+            "Metal bins or durable food-grade buckets are preferable where rodents are persistent.",
+            "Use manageable container sizes so grain can be inspected and rotated easily.",
+            "Keep containers off damp floors and away from exterior walls.",
+            "Do not reuse containers that held pesticides, herbicides, fertilizers, fuels, solvents, cleaners, or treated seed.",
+            "Use a clean, dry scoop reserved for feed.",
+            "Do not introduce wet hands, damp scoops, or contaminated utensils.",
+            "Close containers promptly after removing grain.",
+            "Clean spilled grain immediately.",
+            "Do not blend questionable grain into a sound batch."
+          ],
+
+          wholeHeads: [
+            "Use racks, shallow crates, breathable sacks, screens, or mesh containers while final drying continues.",
+            "Do not compress heads tightly while residual moisture may remain.",
+            "Keep heads loose enough for air circulation.",
+            "Inspect the stem base and underside of heads for hidden moisture.",
+            "Protect heads from rodents, insects, wild birds, poultry, pets, and humidity.",
+            "Move fully dried and cooled heads into protected containers or enclosed storage.",
+            "Avoid sealed plastic storage until every part of each head is fully dry.",
+            "Store whole heads in small batches so mold or insects can be identified quickly.",
+            "Remove broken chaff and loose grain that accumulate beneath stored heads.",
+            "Discard any head showing mold, unusual warmth, sour odor, insect tunneling, rodent contamination, Fusarium damage, or ergot."
+          ],
+
+          kernelsAndProcessedSeed: [
+            "Store cracked or ground Wheat only in small quantities.",
+            "Use clean, dry, moisture-resistant containers.",
+            "Prepare processed Wheat close to feeding time.",
+            "Keep processed grain away from heat, humidity, and direct light.",
+            "Avoid repeated opening during humid weather.",
+            "Label containers clearly as cracked or ground supplemental Wheat.",
+            "Do not mistake processed Wheat for complete poultry feed.",
+            "Inspect for clumping, musty odor, insects, moisture, or heating before every use.",
+            "Discard any processed Wheat that becomes damp, caked, moldy, sour, heated, or contaminated.",
+            "Do not mix old questionable processed grain into a fresh batch."
+          ]
+        },
+
+        inventoryManagement: {
+          firstInFirstOutRecommended:
+            true,
+
+          batchSeparationRecommended:
+            true,
+
+          labelingRecommended:
+            true,
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Wheat class or cultivar when known",
+            "Spring, winter, or facultative type",
+            "Harvest date",
+            "Drying completion date",
+            "Storage form",
+            "Container date",
+            "Field or planting location",
+            "Last inspection date",
+            "Observed condition"
+          ],
+
+          guidance:
+            "Keep harvest lots separate whenever practical. Use older sound Wheat before newer Wheat, but never feed an older batch merely to avoid waste when its condition is questionable. A suspect batch should not be blended into sound grain because blending conceals deterioration rather than correcting it."
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect frequently during the first several weeks because residual moisture, hidden insects, internal heating, Fusarium-damaged grain, and incomplete drying are most likely to become apparent during this period.",
+
+          longTermStorage:
+            "Continue periodic inspection throughout storage. Inspect more frequently during warm or humid weather, after major temperature changes, after power outages affecting climate control, after roof leaks, or whenever rodent or insect activity is detected nearby.",
+
+          inspectionChecklist: [
+            "No condensation",
+            "No unusual warmth",
+            "No musty odor",
+            "No sour or fermentation odor",
+            "No visible mold",
+            "No grain clumping",
+            "No sprouting",
+            "No soft kernels",
+            "No caking",
+            "No Fusarium-like pink, salmon, reddish, or bleached kernels",
+            "No dark ergot bodies",
+            "No rodent droppings, urine, hair, nesting material, or chewing damage",
+            "No excessive insect activity",
+            "No larvae or webbing",
+            "No leaking container",
+            "No moisture entering the storage area",
+            "No chemical odor",
+            "No treated planting seed mixed with feed grain",
+            "Labels remain readable",
+            "Older batches are being used before newer sound batches"
+          ]
+        },
+
+        storageLifeGuidance:
+          "A single guaranteed storage duration should not be assigned because Wheat stability depends on harvest maturity, grain moisture, kernel damage, cleanliness, temperature, humidity, insects, rodents, disease, container quality, processing form, and inspection frequency. Properly dried intact whole grain may remain useful for many months, while cracked or ground Wheat should be used much sooner and fresh sprouts or forage should be fed promptly.",
+
+        disposalGuidance:
+          "Wheat suspected of mold, Fusarium damage, mycotoxin contamination, ergot, chemical treatment, rodent contamination, flooding, fermentation, internal heating, or serious insect deterioration should be discarded in a way that prevents access by chickens, livestock, pets, wildlife, and children. Do not attempt to preserve questionable grain by washing, cooking, drying, grinding, sprouting, or blending it with sound grain.",
+
+        storageSummary:
+          "Properly matured, thoroughly dried, cleaned Wheat grain stores exceptionally well when protected from moisture, condensation, insects, rodents, mold, heating, and contamination. Whole grain generally stores substantially longer than cracked or ground Wheat."
       },
 
             spoilageAndContamination: {
