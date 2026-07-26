@@ -57013,68 +57013,40 @@ mechanicalProcessingSuitabilityScore:
         
         ],
 
-        expertSummary: {
-                    bottomLine:
-            "White Clover is an excellent managed perennial forage for backyard chickens when it is used for grazing enrichment, pasture diversity, and limited fresh supplementation alongside a complete poultry ration.",
+                expertSummary: {
+          oneSentence:
+            "White Clover is an excellent managed perennial forage for backyard chickens because it provides repeated leafy growth, natural grazing enrichment, and useful pasture diversity, but it should remain supplemental to a nutritionally complete poultry ration.",
 
-          bestUse:
-            "Established rotational pasture, mixed grass-and-Clover pasture, protected forage frames, and fresh cut-and-carry forage.",
+          oneParagraph:
+            "White Clover is most valuable as living forage in rotational pasture, mixed grass-and-Clover stands, protected forage frames, and limited cut-and-carry feeding. Its young leafy growth can provide protein-oriented forage dry matter, carotenoids, minerals, and natural pecking enrichment while the established stand contributes nitrogen fixation and living ground cover. Its limitations are equally important: fresh Clover contains substantial water and little concentrated energy, actual grazing intake is difficult to measure, mature growth becomes more fibrous, and some plants or cultivars may contain variable cyanogenic glucoside concentrations. Continuous chicken pressure can also destroy stolons and rooted nodes. Used with controlled access, pasture recovery, a known chemical history, and uninterrupted complete-feed availability, White Clover is one of the most useful perennial forage crops for backyard flocks.",
 
-          strongestAdvantages: [
-            "Perennial regrowth",
-            "Natural grazing enrichment",
-            "Protein-oriented leafy dry matter",
-            "Cool-season forage production",
-            "Nitrogen fixation",
-            "Living ground cover",
-            "Mixed-pasture compatibility",
-            "Protected forage-frame suitability",
-            "Low establishment cost",
-            "Minimal fresh-use processing"
+          recommendation:
+            "Highly Recommended With Managed Access",
+
+          recommendationReasoning: [
+            "Excellent perennial grazing and pecking enrichment",
+            "Useful protein-oriented leafy forage",
+            "Strong fit for rotational mixed pasture",
+            "Well suited to protected forage frames",
+            "Provides repeated cool-season regrowth",
+            "Supports nitrogen fixation and living ground cover",
+            "Requires little preparation for fresh use",
+            "Useful for both pastured and confined flocks"
           ],
 
-          primaryCautions: [
-            "Cannot replace complete poultry feed",
-            "Low concentrated energy",
-            "High fresh moisture",
-            "Incomplete amino-acid balance",
-            "Insufficient calcium and sodium",
-            "Variable cyanogenic glucoside content",
-            "Uncertain poultry-specific cyanogenic thresholds",
-            "Structural fiber",
-            "Phytoestrogenic compounds",
-            "Rapid deterioration after cutting",
-            "Chemical contamination from treated lawns",
-            "Manure contamination of low-growing foliage",
-            "Stand destruction under continuous grazing",
-            "Greater concentration in dehydrated forms"
-          ],
+          idealUseCase:
+            "An established White Clover stand used for rotational grazing, mixed pasture, protected forage-frame growth, or limited fresh cut-and-carry feeding while a complete poultry ration remains continuously available.",
 
-          expertRecommendation:
-            "Use White Clover primarily as living forage rather than as a bulk harvested feed ingredient. Establish it well before flock access, favor mixed pasture or protected forage frames, rotate grazing pressure, maintain unrestricted access to an age-appropriate complete ration, and avoid material from lawns or sites with an uncertain chemical history.",
-
-          suitabilityByKeeperType: {
-            beginner:
-              "good-with-basic-management",
-
-            experienced:
-              "excellent",
-
-            intensiveHomestead:
-              "excellent-with-rotation",
-
-            confinedFlock:
-              "good-through-cut-and-carry-or-forage-frames",
-
-            pastureBasedFlock:
-              "excellent",
-
-            formulatedFeedProducer:
-              "useful-with-analysis-and-controlled-inclusion"
-          },
-
-          finalAssessment:
-            "White Clover deserves a strong recommendation as a perennial forage and enrichment crop, but not as a primary ration ingredient. Its greatest value comes from repeated managed access to clean, young leafy growth. Its greatest risks come from dietary displacement, variable cyanogenic potential, contamination, spoilage, and loss of the stand through unrestricted chicken pressure."
+          notRecommendedAs: [
+            "Primary flock ration",
+            "Complete protein source",
+            "Primary dietary energy source",
+            "Primary calcium source for laying hens",
+            "Routine young-chick feed",
+            "Unlimited Clover-dominant grazing",
+            "Unmeasured dried forage supplement",
+            "Forage harvested from chemically treated lawns or roadsides"
+          ]
         },
 
         scientificNotes: {
