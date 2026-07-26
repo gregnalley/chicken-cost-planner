@@ -119068,27 +119068,127 @@ feedingReference: {
           ]
         },
 
-        scientificNotes: {
-          researchSummary:
-            "Research strongly supports Jerusalem Artichoke as a perennial tuber crop with significant homestead value and documented use as a supplemental poultry ingredient. Fresh tubers are valued primarily for seasonal produce, fermentable carbohydrate, enrichment, and winter storage, while processed dried ingredients have been evaluated within professionally formulated poultry diets. Current evidence does not support replacing complete poultry feed with fresh tubers or applying processed-feed inclusion percentages directly to backyard supplementation.",
+                scientificNotes: {
+          taxonomy: {
+            scientificName:
+              "Helianthus tuberosus",
 
-          evidenceStrength:
-            "moderate-to-high",
+            family:
+              "Asteraceae"
+          },
 
-          evidenceLimitations: [
-            "Most poultry research evaluates processed ingredients rather than fresh backyard feeding.",
-            "Cultivar, climate, harvest timing, storage method, and moisture content create substantial variability.",
-            "Fresh tubers and dried ingredients are not nutritionally equivalent.",
-            "Few studies evaluate ordinary backyard feeding practices directly."
+          researchNotes: [
+            "Jerusalem Artichoke is a perennial sunflower relative grown primarily for its underground tubers rather than for mature seed.",
+
+            "The principal storage carbohydrate in Jerusalem Artichoke tubers is inulin and related fructans rather than the starch characteristic of cereal grains and Potatoes.",
+
+            "Fresh tubers, dried tuber slices, ground tuber material, tender foliage, mature foliage, and whole plants are nutritionally distinct materials and should not be treated as interchangeable.",
+
+            "Fresh tubers contain substantial moisture and are relatively low in protein, so their practical backyard role is supplemental produce and enrichment rather than concentrated complete feed.",
+
+            "Published poultry research generally evaluates measured quantities of dried or processed Jerusalem Artichoke ingredients within professionally formulated diets rather than unrestricted fresh-tuber feeding.",
+
+            "Controlled poultry-study inclusion percentages should not be converted directly into a universal backyard feeding percentage for fresh tubers.",
+
+            "The tuber's fermentable inulin and fructans may influence digestive response and manure consistency, particularly when large quantities are introduced suddenly.",
+
+            "Cultivar, latitude, growing season, harvest maturity, storage conditions, and processing method can substantially affect tuber yield, composition, inulin concentration, and practical feeding value.",
+
+            "Mature aerial growth becomes increasingly fibrous and woody, while tender young leaves and shoots have greater practical forage value.",
+
+            "In-ground storage is generally the strongest low-energy preservation pathway where soil remains reasonably well drained, safe, and accessible.",
+
+            "Harvested Jerusalem Artichoke tubers have thin skins and lose moisture more readily than many common storage vegetables, increasing their susceptibility to shriveling and deterioration.",
+
+            "Jerusalem Artichoke's long-term homestead value includes perennial regrowth, household food, supplemental poultry feed, rabbit forage, pollinator support, seasonal screening, compost biomass, and retained planting material.",
+
+            "No medicinal, disease-treatment, digestive-health, or veterinary claims should be inferred from the crop's inulin content or reported prebiotic potential."
           ],
 
-          futureResearchNeeds: [
-            "Backyard flock consumption behavior.",
-            "Long-term supplemental feeding performance.",
-            "Small-flock economic value.",
-            "Cultivar comparisons for poultry use.",
-            "Fresh-tuber digestibility under backyard conditions.",
-            "Seasonal feeding-management recommendations."
+          plannerConsiderations: [
+            "Perennial supplemental tuber crop",
+
+            "Fresh-produce feeding role",
+
+            "Strong fall and winter value",
+
+            "Excellent in-ground storage potential",
+
+            "Useful pecking and digging enrichment",
+
+            "Controlled postharvest foraging suitable",
+
+            "Relatively low protein contribution",
+
+            "Low calcium contribution",
+
+            "High fresh-matter moisture",
+
+            "Fermentable inulin and fructan content",
+
+            "Gradual introduction recommended",
+
+            "Fresh tubers and dried ingredients must be modeled separately",
+
+            "Tender foliage and mature woody growth must be modeled separately",
+
+            "Complete-feed displacement must be prevented",
+
+            "Permanent planting location is important",
+
+            "Aggressive underground persistence requires management",
+
+            "Tuber harvest requires digging labor",
+
+            "Harvested storage is less dependable than in-ground storage",
+
+            "Rodent attraction may be substantial",
+
+            "Drought survival should not be treated as full tuber-yield retention",
+
+            "Cold-hardy dormant tubers should be distinguished from frost-sensitive top growth",
+
+            "Commercial ration inclusion requires analyzed ingredients and professional formulation",
+
+            "No universal fresh-tuber feeding percentage should be assigned"
+          ],
+
+          futureResearchTopics: [
+            "Cultivar-specific fresh-tuber composition",
+
+            "Cultivar-specific inulin and fructan concentrations",
+
+            "Fresh-tuber digestibility in adult laying hens",
+
+            "Backyard flock acceptance of whole, split, chopped, and crushed tubers",
+
+            "Effects of gradual versus sudden introduction on manure consistency",
+
+            "Practical supplemental serving ranges for different flock sizes",
+
+            "Long-term effects of repeated fresh-tuber supplementation",
+
+            "Comparative feeding value of fresh and dried Jerusalem Artichoke products",
+
+            "Influence of harvest timing on poultry-feed value",
+
+            "Influence of winter soil storage on tuber composition and palatability",
+
+            "Small-plot tuber yield under backyard growing conditions",
+
+            "Cultivar suitability across different frost-free periods",
+
+            "Effects of limited foliage harvest on final tuber yield",
+
+            "Practical containment methods for permanent homestead plantings",
+
+            "Rodent losses during in-ground and harvested storage",
+
+            "Comparative enrichment value of exposed tubers and harvested whole tubers",
+
+            "Economic value compared with annual supplemental feed crops",
+
+            "Use within mixed chicken, rabbit, household-food, and pollinator systems"
           ]
         },
 
