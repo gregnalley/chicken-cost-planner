@@ -44472,7 +44472,3670 @@ mechanicalProcessingSuitabilityScore:
       summary:
         "Kale and Collard Greens are cool-season leafy Brassica crops that can provide repeated harvests of fresh foliage, carotenoid-rich green material, household vegetables, protected living forage, cut-and-carry enrichment, and useful production during spring, fall, and mild winter weather. Their leaves are highly moisture-rich and low in concentrated dietary energy, so they should remain supplemental foods rather than replacements for a complete poultry ration.",
 
-      chickenUse: {
+      ///////////////////////////
+//
+//  Kale and Collards - What can chickens eat?
+//
+//////////////////////////
+
+
+      feedingReference: {
+        overview: {
+          commonQuestion:
+            "Can chickens eat Kale and Collard Greens?",
+
+          answerLabel:
+            "Yes — fresh Kale and Collard leaves are safe supplemental greens for chickens when offered in moderation.",
+
+          quickAnswer:
+            "Chickens can safely eat sound fresh Kale and Collard leaves, young greens, tender stems, plain cooked leaves, and properly preserved leaf products. These crops are especially useful as cool-season leafy supplements, pecking enrichment, protected living forage, and a source of carotenoid-rich plant material. Because fresh leaves contain substantial water and relatively little concentrated energy or protein, they should supplement rather than replace a nutritionally complete poultry ration.",
+
+          detailedAnswer:
+            "Kale and Collard Greens are practical cool-season leafy crops for established backyard chickens. Fresh leaves provide moisture-rich plant material, carotenoids, lutein, zeaxanthin, vitamins, minerals, fiber, and useful behavioral enrichment. Plants can be harvested repeatedly by removing healthy outer leaves while preserving the central growing point, or they can be protected beneath forage frames so chickens can peck emerging foliage without destroying the crowns and roots. However, Kale and Collards are not concentrated poultry feeds. Fresh leaves contain substantial water, little fat, relatively little energy, and insufficient balanced protein and calcium to serve as a primary ration. Brassica foliage also contains glucosinolates, oxalates, and related compounds that support moderate supplemental use rather than unrestricted dietary dominance. These greens should therefore be offered as fresh forage, cut-and-carry enrichment, household garden trimmings, or a carefully measured dried ingredient while complete feed remains the flock's nutritional foundation.",
+
+          primaryFeedingRole:
+            "Cool-season leafy-green supplement and pecking-enrichment crop",
+
+          secondaryFeedingRoles: [
+            "Carotenoid-containing plant supplement",
+            "Protected living forage",
+            "Repeated cut-and-carry harvest",
+            "Cool-season garden-to-flock feed",
+            "Spring and fall enrichment",
+            "Mild-winter fresh-green production",
+            "Use of sound household vegetable trimmings",
+            "Measured dried-leaf ingredient in a properly balanced ration"
+          ],
+
+          overallRecommendation:
+            "Highly recommended as a supplemental leafy crop for established chickens when sound leaves are harvested, handled, and fed in moderation.",
+
+          recommendationStrength:
+            "high",
+
+          recommendedForBackyardFlocks:
+            true,
+
+          supplementOnly:
+            true,
+
+          completeFeedReplacement:
+            false,
+
+          guideUrl:
+            "growing-kale-and-collards-for-chickens.html"
+        },
+
+        classification: {
+          safetyStatus:
+            "safe",
+
+          trafficLightRating:
+            "green",
+
+          feedingRole:
+            "supplement",
+
+          moderationRequired:
+            true,
+
+          processingRequirement:
+            "minimal",
+
+          primaryProductType:
+            "fresh-leafy-green",
+
+          preferredBirdStage:
+            "established-chickens",
+
+          directPlantGrazingSuitable:
+            true,
+
+          wholeHeadEnrichmentSuitable:
+            false,
+
+          winterStorageSuitable:
+            false,
+
+          householdRationFormulationRequired:
+            false,
+
+          commercialRationIngredientPotential:
+            true,
+
+          confidenceLevel:
+            "high"
+        },
+
+        quickRatings: {
+          overallRecommendationScore:
+            4,
+
+          adultChickenSuitabilityScore:
+            5,
+
+          youngChickSuitabilityScore:
+            2,
+
+          feedingSafetyScore:
+            4,
+
+          nutritionalUsefulnessScore:
+            3,
+
+          energyValueScore:
+            1,
+
+          proteinValueScore:
+            2,
+
+          enrichmentValueScore:
+            5,
+
+          winterValueScore:
+            4,
+
+          storageValueScore:
+            2,
+
+          preparationSimplicityScore:
+            5,
+
+          portionControlEaseScore:
+            4,
+
+          beginnerFriendlinessScore:
+            4,
+
+          confinedFlockValueScore:
+            5,
+
+          pasturedFlockValueScore:
+            3,
+
+          directGardenAccessScore:
+            3,
+
+          notes: [
+            "Scores describe Kale and Collard Greens as supplemental leafy forage and enrichment rather than as complete poultry feed.",
+            "The strong overall score reflects excellent enrichment value, repeated harvest, cool-season production, and usefulness for confined flocks.",
+            "The feeding-safety score is reduced slightly because excessive Brassica intake can displace balanced feed and increase exposure to glucosinolates and related compounds.",
+            "The energy score is intentionally low because fresh leaves contain substantial water and very little concentrated fat or starch.",
+            "The protein score reflects limited fresh-weight protein contribution rather than the higher concentration sometimes reported for dehydrated leaf material.",
+            "Young-chick suitability is limited because chicks should rely primarily on an age-appropriate complete starter ration.",
+            "Fresh leaves are easy to prepare, but freezing, dehydration, and powder production require additional labor and storage control.",
+            "Direct garden access must be managed carefully because chickens can rapidly scratch up roots, damage crowns, contaminate foliage, and destroy a small planting."
+          ]
+        },
+
+        safety: {
+          safeForChickens:
+            true,
+
+          toxicToChickens:
+            false,
+
+          safeWhenMature:
+            true,
+
+          safeRaw:
+            true,
+
+          cookingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          fermentationRequired:
+            false,
+
+          moderationRequired:
+            true,
+
+          primarySafetySummary:
+            "Sound fresh Kale and Collard leaves are safe supplemental foods for chickens. The principal concerns are displacement of complete feed, excessive intake of glucosinolate-containing Brassica foliage, high fresh-leaf moisture, fibrous mature stems, pesticide or manure contamination, and rapid spoilage after harvest.",
+
+          whyModerationIsRequired:
+            "Fresh Kale and Collard leaves contain substantial water and relatively little concentrated energy or balanced protein. Chickens offered excessive quantities may fill their digestive tract with leafy material while consuming less complete feed. Brassica foliage also contains glucosinolates and related compounds that should not dominate an improperly balanced diet. Dried leaves require even tighter portion control because removing water greatly concentrates the remaining nutrients and plant compounds by weight.",
+
+          safeMaterials: [
+            {
+              item:
+                "Sound fresh mature Kale leaves",
+
+              status:
+                "safe",
+
+              explanation:
+                "Clean mature Kale leaves may be offered whole, torn, chopped, or suspended for pecking. Tough midribs and stems may be less readily consumed than the leaf blades."
+            },
+
+            {
+              item:
+                "Sound fresh mature Collard leaves",
+
+              status:
+                "safe",
+
+              explanation:
+                "Clean mature Collard leaves are suitable as fresh supplemental greens. Larger or older leaves may be torn or chopped to improve flock access."
+            },
+
+            {
+              item:
+                "Young tender leaves and baby greens",
+
+              status:
+                "safe",
+
+              explanation:
+                "Young leaves are generally tender, highly palatable, and easy for established chickens to peck and tear."
+            },
+
+            {
+              item:
+                "Tender leaf stems",
+
+              status:
+                "safe",
+
+              explanation:
+                "Soft tender stems may be consumed with the leaf tissue. Large mature stems may be too fibrous for useful consumption."
+            },
+
+            {
+              item:
+                "Sound outer leaves from household harvest",
+
+              status:
+                "safe",
+
+              explanation:
+                "Clean untreated outer leaves removed during household vegetable preparation can be redirected to the flock when they remain sound and uncontaminated."
+            },
+
+            {
+              item:
+                "Protected living plants",
+
+              status:
+                "safe-with-management",
+
+              explanation:
+                "Plants beneath a forage frame can provide repeated pecking access while protecting crowns and roots from scratching. Access should be managed to prevent overgrazing and manure accumulation."
+            },
+
+            {
+              item:
+                "Plain cooked and cooled leaves",
+
+              status:
+                "safe",
+
+              explanation:
+                "Plain cooked Kale or Collards may be offered after cooling completely when they contain no excessive salt, butter, grease, sauces, onions, garlic, meat drippings, or unsuitable seasonings."
+            },
+
+            {
+              item:
+                "Blanched frozen and thawed leaves",
+
+              status:
+                "safe-with-storage-precautions",
+
+              explanation:
+                "Properly blanched, frozen, thawed, and promptly fed leaves are suitable supplemental foods. Thawed material becomes highly perishable and should not remain in warm feeding areas."
+            },
+
+            {
+              item:
+                "Fully dehydrated leaf flakes",
+
+              status:
+                "safe-with-portion-control",
+
+              explanation:
+                "Properly dried leaf flakes may be used in small amounts. Removing water greatly increases nutrient and plant-compound concentration per pound."
+            },
+
+            {
+              item:
+                "Measured dried leaf powder",
+
+              status:
+                "safe-with-formulation-precautions",
+
+              explanation:
+                "Dried leaf powder may be incorporated in carefully measured amounts, but it should not be added freely to homemade feed without accounting for total ration balance and Brassica inclusion."
+            }
+          ],
+
+          unsafeMaterials: [
+            {
+              item:
+                "Moldy or musty leaves",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Visible mold, musty odor, abnormal discoloration, or fungal growth indicates deterioration and possible contamination."
+            },
+
+            {
+              item:
+                "Slimy, fermented, or rotten leaves",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Sliminess, sour odors, bubbling, tissue collapse, or uncontrolled fermentation indicates spoilage."
+            },
+
+            {
+              item:
+                "Leaves contaminated with manure or dirty litter",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Heavily contaminated foliage should be discarded rather than rinsed and returned to the flock."
+            },
+
+            {
+              item:
+                "Pesticide-contaminated foliage",
+
+              status:
+                "never-feed-unless-label-clearly-permits",
+
+              explanation:
+                "Do not feed foliage exposed to a pesticide unless the product label, application rate, preharvest interval, and livestock-feed restrictions clearly permit that use."
+            },
+
+            {
+              item:
+                "Chemically contaminated garden trimmings",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Leaves exposed to herbicides, fuels, solvents, treated lumber residue, cleaners, or unknown chemicals should be discarded."
+            },
+
+            {
+              item:
+                "Roadside or polluted-site foliage",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Plants grown where contamination from traffic, dumping, industrial residue, or polluted water is possible should not be used as poultry food."
+            },
+
+            {
+              item:
+                "Heavily pest-contaminated leaves",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Leaves heavily covered with insect waste, webbing, eggs, larvae, or extensive feeding damage may be unsanitary and should be discarded."
+            },
+
+            {
+              item:
+                "Seasoned restaurant or household leftovers",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Prepared greens may contain excessive salt, grease, meat drippings, sugar, hot peppers, onions, garlic, sauces, or other ingredients unsuitable for routine poultry feeding."
+            },
+
+            {
+              item:
+                "Improperly dried or moisture-damaged leaf powder",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Dried leaves that reabsorb moisture may mold, heat, clump, or develop musty odors."
+            },
+
+            {
+              item:
+                "Diseased plant material",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Leaves with extensive rot, bacterial ooze, fungal growth, severe leaf spots, or suspicious disease symptoms should not be fed."
+            }
+          ],
+
+          majorHazards: [
+            {
+              hazard:
+                "Dietary displacement",
+
+              riskLevel:
+                "high-when-overfed",
+
+              explanation:
+                "Large quantities of leafy greens may fill birds while reducing consumption of nutritionally complete feed."
+            },
+
+            {
+              hazard:
+                "Excessive Brassica intake",
+
+              riskLevel:
+                "moderate-to-high-when-dietary-dominance-occurs",
+
+              explanation:
+                "Kale and Collards contain glucosinolates and related compounds. These naturally occurring substances support moderation, especially when several Brassica feeds are offered together."
+            },
+
+            {
+              hazard:
+                "Low dietary energy",
+
+              riskLevel:
+                "moderate-when-used-as-feed-replacement",
+
+              explanation:
+                "Fresh leaves contain substantial water and little concentrated fat or starch and therefore cannot replace the energy supplied by complete poultry feed."
+            },
+
+            {
+              hazard:
+                "High moisture and spoilage",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Harvested leaves deteriorate rapidly in warm, humid, dirty, or poorly ventilated conditions."
+            },
+
+            {
+              hazard:
+                "Pesticide contamination",
+
+              riskLevel:
+                "high",
+
+              explanation:
+                "Brassica crops are frequently treated for caterpillars, aphids, beetles, and diseases. Products suitable for vegetable production are not automatically approved for poultry-feed use."
+            },
+
+            {
+              hazard:
+                "Manure and soil contamination",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Low-growing leaves, direct-grazed plants, and greens dropped into litter may become contaminated with manure, mud, or decaying organic material."
+            },
+
+            {
+              hazard:
+                "Fibrous mature stems",
+
+              riskLevel:
+                "low-to-moderate",
+
+              explanation:
+                "Large mature midribs and stems are not toxic but may be poorly consumed and provide less practical nutritional value than tender leaf tissue."
+            },
+
+            {
+              hazard:
+                "Crop destruction during direct access",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Unrestricted chickens can rapidly strip leaves, damage the growing point, expose roots, scratch plants from the soil, and contaminate the remaining foliage."
+            },
+
+            {
+              hazard:
+                "Dried-leaf overconcentration",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Dehydration removes water and makes equal-weight portions much more concentrated than fresh foliage."
+            }
+          ],
+
+          emergencyUse:
+            "Kale and Collard leaves may provide short-term fresh plant material and moisture, but they are not nutritionally complete emergency feeds. They should be offered only alongside an appropriate complete poultry ration or a diet professionally formulated to meet poultry requirements.",
+
+          veterinaryCaution:
+            "Birds with thyroid disorders, kidney concerns, unusual mineral restrictions, digestive illness, severe weight loss, or other medical conditions may require individualized feeding guidance from a poultry veterinarian."
+        },
+
+        birdStages: {
+          adultChickens: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "excellent-as-a-supplement",
+
+            preferredForms: [
+              "Whole fresh leaves hung for pecking",
+              "Torn or chopped fresh leaves",
+              "Young tender leaves",
+              "Protected living plants",
+              "Plain cooked and cooled leaves",
+              "Small measured amounts of dehydrated leaf flakes"
+            ],
+
+            guidance:
+              "Established adult chickens are the most appropriate flock stage for fresh Kale and Collard leaves, cut-and-carry greens, hanging-leaf enrichment, and protected living forage. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated."
+          },
+
+          layingHens: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "valuable-but-moderation-required",
+
+            benefits: [
+              "Fresh leafy-green enrichment",
+              "Carotenoid-containing plant material",
+              "Cool-season garden supplementation",
+              "Moisture-rich seasonal produce",
+              "Repeated outer-leaf harvest"
+            ],
+
+            limitations: [
+              "Does not provide sufficient calcium for eggshell formation",
+              "Cannot replace a complete layer ration",
+              "Excessive intake may displace protein, amino acids, vitamins, minerals, energy, and calcium",
+              "Fresh leaves provide very little concentrated dietary energy",
+              "Excessive Brassica intake may increase exposure to glucosinolates and related compounds"
+            ],
+
+            guidance:
+              "Laying hens may receive Kale and Collard Greens as supplemental forage and enrichment, but a complete layer feed and an appropriate calcium program must remain the nutritional foundation."
+          },
+
+          pullets: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "limited-supplement-after-adequate-development",
+
+            guidance:
+              "Well-developed pullets capable of handling ordinary adult supplements may receive small amounts of tender fresh leaves, but their nutritionally complete grower or developer ration should remain dominant. Large quantities of watery greens should not displace balanced growth nutrition."
+          },
+
+          youngChicks: {
+            suitable:
+              false,
+
+            suitabilityLevel:
+              "not-recommended-for-routine-backyard-feeding",
+
+            guidance:
+              "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Fresh Kale and Collard leaves contain substantial water, little concentrated energy, and insufficient balanced protein. Large or fibrous pieces may also be difficult for young birds to handle safely.",
+
+            possibleException:
+              "A qualified poultry nutritionist may use analyzed and appropriately processed Brassica leaf ingredients in a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering fresh leaves or dried leaf powder as an informal backyard supplement.",
+
+            reasonsForRestriction: [
+              "Risk of displacing complete chick starter",
+              "Low concentrated dietary energy",
+              "High fresh-leaf moisture",
+              "Limited protein contribution",
+              "Incomplete amino-acid balance",
+              "Glucosinolate exposure",
+              "Fibrous mature leaf tissue",
+              "Need for age-appropriate particle size"
+            ]
+          },
+
+          broilersAndMeatBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "formulation-dependent",
+
+            guidance:
+              "Kale, Collard, or other Brassica leaf meals may be used in balanced meat-bird diets, but published inclusion levels assume that the complete ration has been formulated for energy, protein, digestible amino acids, fiber, glucosinolate exposure, calcium, phosphorus, vitamins, and trace minerals. Backyard keepers should not copy a research inclusion percentage into an otherwise unbalanced mixture."
+          },
+
+          roosters: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "good-as-a-measured-supplement",
+
+            guidance:
+              "Healthy adult roosters can consume the same sound fresh leaves and plain prepared forms as adult hens. Kale and Collards remain supplemental forage rather than a major feed source."
+          },
+
+          breedingFlocks: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "moderation-required",
+
+            guidance:
+              "Breeding birds may receive Kale and Collard Greens as supplements, but reproductive performance depends on complete and balanced nutrition. Excessive leafy intake should not dilute essential amino acids, vitamins, minerals, energy, or controlled body condition."
+          },
+
+          seniorOrLowActivityBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "use-conservatively",
+
+            guidance:
+              "Older, sedentary, confined, or overweight birds may benefit from low-energy leafy enrichment, but large quantities can still displace balanced feed. Tough stems and coarse mature leaves may also be less suitable for birds with reduced feeding efficiency."
+          },
+
+          moltingBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "supplemental-only",
+
+            guidance:
+              "Kale and Collard leaves provide carotenoids, vitamins, minerals, moisture, and small amounts of plant protein, but they do not provide the concentrated digestible amino-acid balance needed for feather growth. A balanced ration containing adequate usable protein and amino acids remains more important than increasing leafy-green intake."
+          },
+
+          sickOrRecoveringBirds: {
+            suitable:
+              "case-dependent",
+
+            suitabilityLevel:
+              "seek-individual-guidance",
+
+            guidance:
+              "Fresh tender greens may appear useful for hydration or appetite stimulation, but illness can change nutritional, digestive, thyroid, kidney, and mineral needs. Kale and Collards should not replace diagnostic care, hydration support, complete recovery nutrition, or a veterinarian-recommended diet."
+          }
+        },
+
+        edibleParts: {
+          primaryEdibleParts: [
+            {
+              part:
+                "Fresh mature leaves",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Sound mature Kale and Collard leaves are the primary poultry-use product. They may be offered whole, torn, chopped, hung for pecking, or placed in a clean feeder."
+            },
+
+            {
+              part:
+                "Young tender leaves",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Young leaves are generally softer, less fibrous, and easier for chickens to tear and consume than old mature foliage."
+            },
+
+            {
+              part:
+                "Baby greens",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Baby-leaf Kale and Collards provide tender fresh forage but should still remain supplemental because their high moisture content limits concentrated nutritional value."
+            },
+
+            {
+              part:
+                "Tender leaf stems and midribs",
+
+              suitability:
+                "good",
+
+              explanation:
+                "Soft young stems and midribs may be consumed along with the leaves. Large mature stems become increasingly fibrous and may be ignored."
+            },
+
+            {
+              part:
+                "Sound outer leaves from household harvest",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Clean untreated outer leaves removed during household vegetable preparation can provide a useful shared garden-to-flock harvest pathway."
+            },
+
+            {
+              part:
+                "Plain cooked leaves",
+
+              suitability:
+                "good",
+
+              explanation:
+                "Plain cooked and cooled leaves may be offered when they contain no excessive salt, butter, grease, meat drippings, sauces, onions, garlic, sugar, or unsuitable seasonings."
+            }
+          ],
+
+          nonRecommendedPlantParts: [
+            {
+              part:
+                "Large mature stalks",
+
+              reason:
+                "Coarse, fibrous, and of little practical poultry-feed value."
+            },
+
+            {
+              part:
+                "Woody flowering stems",
+
+              reason:
+                "Tough, fibrous, and generally poorly consumed."
+            },
+
+            {
+              part:
+                "Roots",
+
+              reason:
+                "Provide little practical poultry-feed value and may carry soil or manure contamination."
+            },
+
+            {
+              part:
+                "Diseased leaves",
+
+              reason:
+                "May contain fungal growth, bacterial decay, pest residue, or pathogens and should not be fed."
+            },
+
+            {
+              part:
+                "Heavily contaminated crop residue",
+
+              reason:
+                "Leaves or stems contaminated with manure, pesticides, chemicals, mud, or decaying litter should be discarded."
+            }
+          ],
+
+          ediblePartSummary:
+            "Nearly all practical poultry value from Kale and Collard Greens comes from sound leaf tissue and tender stems rather than from roots, woody stalks, mature flowering stems, or diseased crop residue."
+        },
+
+        feedingForms: {
+          preferredForms: [
+            {
+              form:
+                "Whole fresh leaves hung for pecking",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Behavioral enrichment and controlled fresh-leaf access."
+            },
+
+            {
+              form:
+                "Torn or chopped fresh leaves",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Measured supplemental feeding and easier flock distribution."
+            },
+
+            {
+              form:
+                "Protected living plants",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Repeated pecking access while protecting crowns and roots."
+            },
+
+            {
+              form:
+                "Young tender leaves or baby greens",
+
+              rating:
+                "very-good",
+
+              bestUse:
+                "Tender seasonal supplementation for established birds."
+            },
+
+            {
+              form:
+                "Plain cooked and cooled leaves",
+
+              rating:
+                "good",
+
+              bestUse:
+                "Use of plain household vegetable portions without unsuitable ingredients."
+            }
+          ],
+
+          acceptableForms: [
+            "Whole fresh Kale leaves",
+            "Whole fresh Collard leaves",
+            "Torn fresh leaves",
+            "Chopped fresh leaves",
+            "Young tender leaves",
+            "Baby greens",
+            "Tender stems",
+            "Protected living forage",
+            "Plain cooked and cooled leaves",
+            "Properly blanched and thawed leaves",
+            "Fully dehydrated leaf flakes",
+            "Measured dried leaf powder",
+            "Sound untreated household harvest trimmings"
+          ],
+
+          formsRequiringAdditionalCare: [
+            {
+              form:
+                "Dehydrated leaf flakes",
+
+              concern:
+                "Removing water greatly concentrates nutrients, fiber, glucosinolates, oxalates, and other plant compounds by weight."
+            },
+
+            {
+              form:
+                "Dried leaf powder",
+
+              concern:
+                "Powder is easy to overuse, may create dust, absorbs moisture readily, and should be measured carefully within the total ration."
+            },
+
+            {
+              form:
+                "Frozen and thawed leaves",
+
+              concern:
+                "Thawed foliage becomes soft, wet, and highly perishable and should be fed promptly."
+            }
+          ],
+
+          avoidForms: [
+            "Moldy leaves",
+            "Musty leaves",
+            "Slimy leaves",
+            "Fermenting leaves",
+            "Rotten leaves",
+            "Heavily manure-contaminated leaves",
+            "Pesticide-contaminated foliage",
+            "Chemically contaminated garden trimmings",
+            "Roadside or polluted-site foliage",
+            "Heavily diseased leaves",
+            "Improperly dried leaf powder",
+            "Moisture-damaged dried leaves",
+            "Heavily salted cooked greens",
+            "Greasy cooked greens",
+            "Greens containing onions or garlic",
+            "Seasoned restaurant leftovers"
+          ],
+
+          wholeHeadAdvantages: [
+            "Large whole leaves provide sustained pecking activity",
+            "Hanging leaves keeps them above dirty litter",
+            "Minimal preparation is required",
+            "Leaf tissue remains easy to inspect",
+            "Large leaves can be divided among several feeding stations",
+            "Useful enrichment for confined flocks"
+          ],
+
+          looseSeedAdvantages: [
+            "Chopped or torn leaves are easy to measure",
+            "Small pieces can be divided among several feeding stations",
+            "Portion control is easier than with unrestricted living forage",
+            "Tender and tough portions can be separated during preparation"
+          ],
+
+          wholeHeadDisadvantages: [
+            "Large leaves may be monopolized by dominant birds",
+            "Leaves can become soiled if they fall into litter",
+            "Tough midribs may remain uneaten",
+            "Exact consumption is difficult to measure"
+          ],
+
+          looseSeedDisadvantages: [
+            "Chopping increases preparation labor",
+            "Small pieces spoil rapidly",
+            "Leaf fragments may be scattered into litter",
+            "Wet chopped greens can become slimy or contaminated quickly",
+            "Dried powder requires careful measuring and moisture-resistant storage"
+          ]
+        },
+
+        cultivarDifferences: {
+          important:
+            true,
+
+          summary:
+            "Kale and Collard Greens include multiple Brassica oleracea Acephala Group cultivars with meaningful differences in leaf texture, plant size, maturity, cold hardiness, heat tolerance, regrowth, color, glucosinolate concentration, disease resistance, and suitability for baby-leaf, mature-leaf, container, or protected-forage production.",
+
+          blackOilSunflower: {
+            recommended:
+              true,
+
+            explanation:
+              "Cold-hardy curly, Russian-type, or other winter-adapted Kale cultivars are generally among the strongest choices where extended fall, winter, and early-spring leaf production is the primary objective."
+          },
+
+          confectionSunflower: {
+            recommended:
+              true,
+
+            explanation:
+              "Heat-tolerant Collard cultivars are generally among the strongest choices for warm Southern climates, long shoulder seasons, large mature leaves, and repeated outer-leaf harvest."
+          },
+
+          ornamentalVarieties: {
+            recommended:
+              "depends",
+
+            explanation:
+              "Some ornamental Kale cultivars are edible, but they may be selected primarily for color, compact decorative form, or appearance rather than leaf yield, tenderness, regrowth, or practical poultry value. Plants exposed to decorative chemicals should not be fed."
+          },
+
+          pollenFreeCultivars: {
+            recommended:
+              false,
+
+            explanation:
+              "Cultivars selected primarily for ornamental display, very tough foliage, poor edible quality, or unknown chemical treatment are poor choices when dependable household food and poultry supplementation are the main objectives."
+          },
+
+          branchingCultivars: {
+            advantages: [
+              "Compact Kale cultivars fit containers and small raised beds",
+              "Baby-leaf cultivars support dense repeated young-leaf harvest"
+            ]
+          },
+
+          giantSingleHeadCultivars: {
+            advantages: [
+              "Large Collard cultivars can provide repeated harvests of broad outer leaves",
+              "Tall or tree-like Kale types may produce extended leaf harvest where climate permits"
+            ]
+          }
+        },
+
+        preparation: {
+          preparationDifficulty:
+            "very-low",
+
+          preparationSummary:
+            "Kale and Collard Greens require very little preparation before feeding. Most backyard flocks can safely consume fresh leaves after they have been inspected, cleaned when necessary, and offered whole, torn, chopped, or suspended for enrichment. Additional preparation is primarily associated with preservation methods such as blanching, freezing, or dehydration.",
+
+          requiredPreparation: [
+            "Harvest only sound healthy leaves.",
+            "Discard leaves showing mold, slime, rot, or severe disease.",
+            "Remove obvious dirt, manure, insects, or contaminated debris.",
+            "Wash leaves when necessary to remove soil or contamination.",
+            "Inspect carefully for pesticide contamination before feeding."
+          ],
+
+          optionalPreparation: [
+            "Tear large leaves into manageable pieces.",
+            "Chop leaves for easier flock distribution.",
+            "Hang whole leaves for enrichment.",
+            "Blanch before freezing.",
+            "Cook plainly and cool completely.",
+            "Dehydrate for long-term storage.",
+            "Grind dried leaves into measured powder."
+          ],
+
+          unnecessaryPreparation: [
+            "Routine cooking",
+            "Fermentation",
+            "Peeling",
+            "Removing leaf veins",
+            "Chemical treatment"
+          ],
+
+          preparationMistakes: [
+            "Feeding moldy or slimy leaves.",
+            "Leaving dirt or manure on harvested foliage.",
+            "Using pesticide-treated leaves.",
+            "Adding butter, grease, salt, meat drippings, onions, garlic, or seasonings.",
+            "Offering excessive quantities that displace complete feed.",
+            "Storing damp dried leaves.",
+            "Grinding large batches long before use.",
+            "Leaving chopped greens in hot weather until spoilage develops."
+          ]
+        },
+
+        nutritionHighlights: {
+          nutritionalOrientation:
+            "moisture-rich-carotenoid-containing-leafy-green",
+
+          nutritionSummary:
+            "Fresh Kale and Collard Greens are moisture-rich leafy vegetables that provide carotenoids, lutein, zeaxanthin, vitamins, minerals, fiber, and modest amounts of plant protein. They are valuable as supplemental fresh forage but contain too little concentrated energy, fat, balanced protein, and calcium to function as complete poultry feeds.",
+
+          compositionBasis:
+            "Values vary among Kale cultivars, Collard cultivars, baby greens, mature leaves, fresh foliage, cooked leaves, frozen leaves, dehydrated products, growing conditions, fertility, harvest stage, and analytical method.",
+
+          primaryNutritionalStrengths: [
+            {
+              nutrientRole:
+                "Carotenoid-rich leafy forage",
+
+              importance:
+                "high",
+
+              explanation:
+                "Leaves contain carotenoids including lutein and related pigments that contribute useful plant nutrients and may support yolk pigmentation when included within balanced diets."
+            },
+
+            {
+              nutrientRole:
+                "Fresh moisture-rich greens",
+
+              importance:
+                "high",
+
+              explanation:
+                "Fresh leaves provide water-rich seasonal forage and dietary variety while encouraging natural pecking behavior."
+            },
+
+            {
+              nutrientRole:
+                "Vitamin contribution",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Fresh foliage contributes useful vitamins including vitamin A precursors, vitamin K, vitamin C, and several B vitamins, although concentrations vary among cultivars and handling methods."
+            },
+
+            {
+              nutrientRole:
+                "Mineral contribution",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Leaves provide potassium, calcium, magnesium, manganese, and other minerals but should not be relied upon to satisfy complete poultry mineral requirements."
+            },
+
+            {
+              nutrientRole:
+                "Dietary fiber",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Leaf tissue contributes structural fiber that supports natural forage characteristics but limits its usefulness as a concentrated feed ingredient."
+            },
+
+            {
+              nutrientRole:
+                "Plant protein",
+
+              importance:
+                "low-to-moderate",
+
+              explanation:
+                "Fresh leaves contribute some protein but cannot provide the digestible amino-acid balance required for complete poultry nutrition."
+            }
+          ],
+
+          notableNutrients: [
+            "Water",
+            "Carotenoids",
+            "Lutein",
+            "Zeaxanthin",
+            "Beta-carotene",
+            "Vitamin A precursors",
+            "Vitamin K",
+            "Vitamin C",
+            "Folate",
+            "Potassium",
+            "Calcium",
+            "Magnesium",
+            "Manganese",
+            "Dietary fiber"
+          ],
+
+          typicalWholeSeedCharacteristics: {
+            crudeProtein:
+              "Fresh leaves contain modest amounts of plant protein but much lower concentrations than dedicated protein feed ingredients.",
+
+            fat:
+              "Very low.",
+
+            fiber:
+              "Moderate because of leafy plant tissue and structural cell walls.",
+
+            starch:
+              "Very low.",
+
+            calcium:
+              "Present in useful amounts but insufficient as the flock's primary calcium source for egg production.",
+
+            phosphorus:
+              "Present in relatively modest concentrations.",
+
+            energy:
+              "Low because fresh leaves contain substantial water and little concentrated fat or starch."
+          },
+
+          wholeSeedVersusKernel: {
+            nutritionallyEquivalent:
+              false,
+
+            wholeSeed:
+              "Not applicable because Kale and Collards are fed primarily for their leaves rather than their seed.",
+
+            dehulledKernel:
+              "Not applicable.",
+
+            practicalMeaning:
+              "The practical poultry product is leafy foliage rather than seed."
+          },
+
+          wholeSeedVersusMeal: {
+            nutritionallyEquivalent:
+              false,
+
+            wholeSeed:
+              "Not applicable.",
+
+            sunflowerMeal:
+              "Commercial Brassica leaf meals are processed products that differ substantially from fresh leaves in moisture content and nutrient concentration.",
+
+            practicalMeaning:
+              "Research involving dried leaf meals should not automatically be applied to informal backyard feeding of fresh leaves."
+          },
+
+          nutritionalVariabilityFactors: [
+            "Cultivar",
+            "Leaf age",
+            "Harvest timing",
+            "Growing temperature",
+            "Soil fertility",
+            "Moisture availability",
+            "Season",
+            "Fresh versus cooked",
+            "Fresh versus frozen",
+            "Fresh versus dehydrated",
+            "Leaf maturity",
+            "Storage duration",
+            "Analytical method"
+          ]
+        },
+
+        benefits: {
+          primaryBenefits: [
+            {
+              title:
+                "Excellent Fresh-Green Enrichment",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Whole hanging leaves encourage prolonged pecking, stretching, exploration, and natural foraging behavior while reducing boredom."
+            },
+
+            {
+              title:
+                "Repeated Harvest Crop",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Healthy plants can be harvested repeatedly by removing outer leaves while preserving the growing point, providing a dependable seasonal supply of fresh greens."
+            },
+
+            {
+              title:
+                "Outstanding Cool-Season Production",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Kale and Collards remain productive during cool weather when many warm-season forage crops are no longer available."
+            },
+
+            {
+              title:
+                "Rich Source of Leaf Pigments",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Leaves contribute carotenoids including lutein and beta-carotene that provide valuable plant pigments and nutritional diversity."
+            },
+
+            {
+              title:
+                "Minimal Preparation Required",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Fresh leaves usually require only inspection and basic cleaning before feeding."
+            },
+
+            {
+              title:
+                "Garden-to-Coop Integration",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Outer leaves, thinning harvests, and household vegetable trimmings can all become useful flock supplements instead of waste."
+            },
+
+            {
+              title:
+                "Protected Living Forage",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Plants can be grown beneath simple forage frames that allow repeated pecking while protecting roots and crowns from destruction."
+            },
+
+            {
+              title:
+                "Useful Preservation Options",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Leaves may be frozen, dehydrated, or dried into flakes or powder for later measured supplemental use."
+            },
+
+            {
+              title:
+                "Suitable for Small Gardens",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Kale and Collards produce large amounts of edible foliage in relatively modest garden space."
+            },
+
+            {
+              title:
+                "Strong Homestead Value",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "These crops simultaneously support household food production, poultry supplementation, composting, pollinator habitat, and year-round garden productivity."
+            }
+          ],
+
+          enrichmentBenefits: [
+            {
+              benefit:
+                "Natural pecking activity",
+
+              explanation:
+                "Whole suspended leaves encourage repeated pecking and stretching."
+            },
+
+            {
+              benefit:
+                "Extended feeding time",
+
+              explanation:
+                "Large leaves occupy birds longer than finely chopped greens."
+            },
+
+            {
+              benefit:
+                "Environmental enrichment",
+
+              explanation:
+                "Fresh hanging greens diversify the coop and run environment."
+            },
+
+            {
+              benefit:
+                "Reduced boredom",
+
+              explanation:
+                "Leafy enrichment provides constructive activity for confined birds."
+            },
+
+            {
+              benefit:
+                "Seasonal variety",
+
+              explanation:
+                "Fresh greens diversify the flock's supplemental feeding throughout cool seasons."
+            }
+          ],
+
+          flockManagementBenefits: [
+            "Simple garden-to-coop harvest",
+            "Minimal processing",
+            "Repeated harvest without replanting",
+            "Easy portion control",
+            "Useful household vegetable trimmings",
+            "Supports rotational garden planning",
+            "Can reduce supplemental-feed costs modestly"
+          ],
+
+          homesteadBenefits: [
+            "Excellent household vegetable crop",
+            "Repeated harvest over an extended season",
+            "Suitable for raised beds and gardens",
+            "Can support protected living forage systems",
+            "Excellent compost biomass",
+            "Supports beneficial insects before flowering",
+            "Easy seed saving for open-pollinated cultivars",
+            "Useful dual-purpose food and poultry crop"
+          ],
+
+          benefitSummary:
+            "Kale and Collard Greens provide exceptional value as cool-season leafy supplements because they combine repeated harvest, fresh-green enrichment, carotenoid-rich foliage, minimal preparation, and strong household-food production while fitting well into diversified backyard homesteads."
+        },
+
+        limitations: {
+          primaryLimitations: [
+            {
+              title:
+                "Not a Complete Poultry Feed",
+
+              severity:
+                "critical",
+
+              explanation:
+                "Kale and Collard Greens do not supply the concentrated energy, balanced protein, essential amino acids, calcium, vitamins, trace minerals, and other nutrients required as the flock's primary ration."
+            },
+
+            {
+              title:
+                "Very Low Concentrated Energy",
+
+              severity:
+                "high",
+
+              explanation:
+                "Fresh leaves contain substantial water and very little fat or starch. A large fresh-leaf portion contributes much less usable dietary energy than an equal weight of complete poultry feed."
+            },
+
+            {
+              title:
+                "Dietary Displacement",
+
+              severity:
+                "high-when-overfed",
+
+              explanation:
+                "Chickens may fill their digestive tract with bulky moisture-rich foliage and reduce consumption of nutritionally complete feed when greens are offered without reasonable limits."
+            },
+
+            {
+              title:
+                "Incomplete Protein and Amino-Acid Contribution",
+
+              severity:
+                "high",
+
+              explanation:
+                "Although leaf tissue contains some plant protein, Kale and Collards cannot independently provide the quantity or digestible amino-acid balance required by growing, laying, breeding, or molting birds."
+            },
+
+            {
+              title:
+                "Insufficient Calcium for Laying Hens",
+
+              severity:
+                "high",
+
+              explanation:
+                "The measurable calcium present in Kale and Collard leaves does not make them a replacement for complete layer feed or an appropriate supplemental calcium program."
+            },
+
+            {
+              title:
+                "Glucosinolates and Related Brassica Compounds",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Kale and Collards naturally contain glucosinolates. Their practical importance depends on cultivar, maturity, growing conditions, processing, total dietary inclusion, iodine status, bird stage, and the composition of the complete ration."
+            },
+
+            {
+              title:
+                "Oxalate Content",
+
+              severity:
+                "low-to-moderate",
+
+              explanation:
+                "Leaf oxalates may bind a portion of certain minerals. This is primarily a reason to avoid dietary dominance rather than a reason to prohibit ordinary supplemental feeding."
+            },
+
+            {
+              title:
+                "Increasing Fiber With Leaf Maturity",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Older leaves, large midribs, and mature stems become tougher and more fibrous, which can reduce palatability, consumption, and practical nutritional value."
+            },
+
+            {
+              title:
+                "Short Fresh Storage Life",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Freshly harvested leaves wilt and deteriorate quickly when they are warm, wet, bruised, contaminated, or stored without suitable cooling and moisture management."
+            },
+
+            {
+              title:
+                "Preserved Forms Are More Concentrated",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Dehydration removes water and greatly increases the concentration of nutrients, fiber, glucosinolates, oxalates, and other leaf compounds per pound. Dried flakes and powder should not be portioned like fresh leaves."
+            },
+
+            {
+              title:
+                "Pesticide and Contamination Risk",
+
+              severity:
+                "high",
+
+              explanation:
+                "Brassica foliage may receive repeated treatments for caterpillars, aphids, beetles, and diseases. Vegetable-crop approval does not automatically establish that treated foliage is suitable for poultry feeding."
+            },
+
+            {
+              title:
+                "No Universal Backyard Portion Is Supported",
+
+              severity:
+                "high",
+
+              explanation:
+                "Appropriate use depends on flock size, bird age, production stage, body condition, base ration, total supplemental feeding, leaf form, moisture content, cultivar, and the amount of other Brassica material being consumed."
+            }
+          ],
+
+          nutritionalLimitations: [
+            "Does not provide complete poultry nutrition",
+            "Provides very little concentrated dietary energy",
+            "Contains very little fat",
+            "Does not provide a complete amino-acid profile",
+            "Cannot independently satisfy methionine requirements",
+            "Cannot independently satisfy lysine requirements",
+            "Does not provide sufficient calcium for laying hens",
+            "Fresh leaves contain substantial water",
+            "Older leaves and stems may contain substantial structural fiber",
+            "Glucosinolates and related compounds require moderation",
+            "Oxalates may reduce availability of some minerals",
+            "Fresh and dried forms are not nutritionally equivalent",
+            "Dried-leaf composition cannot be applied directly to fresh-leaf feeding",
+            "Kale and Collards should not be assumed to have identical composition",
+            "Total nutrient contribution depends on actual intake",
+            "A universal supplemental inclusion percentage is not supported"
+          ],
+
+          practicalLimitations: [
+            "Fresh leaves wilt quickly after harvest",
+            "Harvested leaves require protection from heat and contamination",
+            "Chopped leaves spoil faster than intact leaves",
+            "Thawed leaves become highly perishable",
+            "Dehydration requires time, energy, and moisture control",
+            "Dried powder can create dust",
+            "Dried material absorbs moisture readily",
+            "Direct chicken access may destroy crowns and roots",
+            "Unprotected plants may be stripped rapidly",
+            "Leaves touching soil or litter may become contaminated",
+            "Frequent harvesting adds labor",
+            "Large mature stems may remain uneaten",
+            "Insect pressure can be severe",
+            "Disease pressure can be severe during wet weather",
+            "Deer, rabbits, groundhogs, and other wildlife may damage plants",
+            "Heat can reduce tenderness and regrowth",
+            "Severe cold can stop production or damage plants",
+            "Fresh harvest weight does not represent equivalent dry-feed yield",
+            "Dependable purchased-feed savings cannot be calculated from fresh-leaf weight"
+          ],
+
+          unsuitableExpectations: [
+            "Replacing complete poultry feed",
+            "Supplying the flock's primary dietary energy",
+            "Supplying all required protein",
+            "Correcting methionine deficiency",
+            "Correcting lysine deficiency",
+            "Serving as the flock's primary calcium source",
+            "Correcting an improperly balanced homemade ration",
+            "Supporting young chicks as a staple food",
+            "Guaranteeing increased egg production",
+            "Guaranteeing darker egg yolks",
+            "Guaranteeing improved feather growth",
+            "Preventing or treating disease",
+            "Correcting thyroid disease",
+            "Providing unrestricted free-choice forage without dietary consequences",
+            "Providing predictable pounds of complete-feed replacement",
+            "Providing one universal safe feeding percentage"
+          ],
+
+          limitationSummary:
+            "Kale and Collard Greens are highly useful as fresh leafy supplements, repeated-harvest crops, and pecking enrichment. Their principal limitations are high moisture, low concentrated energy, incomplete protein and mineral balance, glucosinolate exposure, rapid fresh-leaf spoilage, and the risk that excessive intake will displace complete feed."
+        },
+
+        antinutritionalConcerns: {
+          overallConcernLevel:
+            "moderate-for-excessive-or-dietary-dominant-use",
+
+          requiresDetoxification:
+            false,
+
+          cookingRequired:
+            false,
+
+          primaryConcerns: [
+            {
+              factor:
+                "Glucosinolates",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Kale and Collards naturally contain glucosinolates. Their concentrations and breakdown products vary with cultivar, plant part, maturity, growing temperature, fertility, stress, processing, and storage. Limited supplemental use is substantially different from allowing Brassica foliage to dominate the ration."
+            },
+
+            {
+              factor:
+                "Goitrogenic glucosinolate breakdown products",
+
+              concernLevel:
+                "moderate-when-excessive",
+
+              explanation:
+                "Certain glucosinolate breakdown products can interfere with thyroid-related nutrient use when exposure is sufficiently high, particularly within an improperly balanced diet. This supports moderation and preservation of complete-feed intake."
+            },
+
+            {
+              factor:
+                "Oxalates",
+
+              concernLevel:
+                "low-to-moderate",
+
+              explanation:
+                "Oxalates may bind a portion of minerals such as calcium. The calcium measured in the leaves should therefore not be treated as equivalent to a formulated poultry calcium source."
+            },
+
+            {
+              factor:
+                "Structural fiber",
+
+              concernLevel:
+                "moderate-in-mature-leaves-and-stems",
+
+              explanation:
+                "Mature leaf tissue, large midribs, and stems contain increasing structural fiber. High intake can lower overall nutrient density and reduce the practical feeding value of the foliage."
+            },
+
+            {
+              factor:
+                "High moisture and nutrient dilution",
+
+              concernLevel:
+                "high-when-used-as-feed-replacement",
+
+              explanation:
+                "High moisture is not a classical antinutritional factor, but it substantially dilutes energy, protein, minerals, and dry matter on an as-fed basis and can cause birds to consume less complete feed."
+            }
+          ],
+
+          notPrimaryConcerns: [
+            {
+              factor:
+                "Trypsin inhibitors",
+
+              explanation:
+                "Kale and Collard leaves do not require the routine heat treatment used to address the major trypsin-inhibitor concern in raw mature Soybeans."
+            },
+
+            {
+              factor:
+                "Lectin toxicity",
+
+              explanation:
+                "Sound edible Kale and Collard leaves are not treated as raw lectin-limited legumes requiring cooking before ordinary supplemental feeding."
+            },
+
+            {
+              factor:
+                "Cyanogenic compounds",
+
+              explanation:
+                "Kale and Collard leaves are not classified in this database as requiring processing for cyanogenic-compound removal."
+            },
+
+            {
+              factor:
+                "Solanine",
+
+              explanation:
+                "Kale and Collards are Brassica vegetables and do not carry the solanine concern associated with green or sprouted Potato tissue."
+            }
+          ],
+
+          processingEffects: [
+            {
+              process:
+                "Chopping or tearing",
+
+              effect:
+                "Reduces particle size and may improve flock access, but it does not remove glucosinolates, correct nutritional limitations, or create additional nutrients."
+            },
+
+            {
+              process:
+                "Cooking",
+
+              effect:
+                "Softens leaf tissue and may reduce some heat-sensitive or water-soluble nutrients. Plain cooking is optional and is not required to make sound leaves safe for established adult chickens."
+            },
+
+            {
+              process:
+                "Blanching",
+
+              effect:
+                "Changes texture and may reduce some water-soluble compounds before freezing. The discarded blanching water may contain dissolved nutrients."
+            },
+
+            {
+              process:
+                "Freezing",
+
+              effect:
+                "Preserves leaf material but damages cellular structure and produces softer, wetter foliage after thawing. Freezing does not make the leaves nutritionally complete."
+            },
+
+            {
+              process:
+                "Dehydration",
+
+              effect:
+                "Removes water and increases the concentration of nutrients, fiber, glucosinolates, oxalates, and other plant compounds per unit weight."
+            },
+
+            {
+              process:
+                "Grinding dried leaves",
+
+              effect:
+                "Improves mixing precision but creates dust, increases exposed surface area, and increases the risk of moisture absorption and quality deterioration."
+            },
+
+            {
+              process:
+                "Uncontrolled fermentation",
+
+              effect:
+                "Is not an approved preservation method for this feeding reference. Sour odor, bubbling, slime, heating, or uncontrolled fermentation should be treated as spoilage."
+            }
+          ],
+
+          antinutritionalSummary:
+            "Kale and Collard Greens do not require routine cooking or detoxification before ordinary supplemental feeding. Their principal concerns are glucosinolates and related breakdown products, oxalates, mature-leaf fiber, high moisture, and displacement of complete feed when excessive quantities are offered."
+        },
+
+        complementaryFeeding: {
+          purpose:
+            "Kale and Collard Greens should provide fresh leafy diversity and enrichment while a complete ration supplies the concentrated energy, balanced protein, amino acids, calcium, vitamins, minerals, and trace nutrients that the leaves cannot provide.",
+
+          bestFoundation:
+            "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+          complements: [
+            {
+              feedType:
+                "Complete layer feed",
+
+              relationship:
+                "The complete feed supplies balanced energy, protein, amino acids, vitamins, trace minerals, and calcium that Kale and Collard leaves cannot provide."
+            },
+
+            {
+              feedType:
+                "Complete all-flock, grower, or breeder feed",
+
+              relationship:
+                "The formulated ration provides life-stage-appropriate nutrition while Kale and Collards remain optional leafy supplements."
+            },
+
+            {
+              feedType:
+                "Calcium source for laying hens",
+
+              relationship:
+                "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address calcium needs that leafy greens cannot reliably satisfy."
+            },
+
+            {
+              feedType:
+                "Energy-oriented supplemental crops",
+
+              relationship:
+                "Corn, Wheat, Barley, Oats, Millet, Sorghum, Sunflower, and other energy-oriented crops provide substantially more concentrated calories than fresh Kale and Collard leaves. Combining them informally still does not produce a complete ration."
+            },
+
+            {
+              feedType:
+                "Protein-oriented formulated ingredients",
+
+              relationship:
+                "Properly processed Soybeans, Field Peas, Cowpeas, Alfalfa meal, or other analyzed protein ingredients may contribute nutrients that fresh leaves lack when they are incorporated into a professionally balanced ration."
+            },
+
+            {
+              feedType:
+                "Seasonal fruits and vegetables",
+
+              relationship:
+                "Pumpkin, Winter Squash, Mulberry, and other suitable produce can increase supplemental variety, but the total amount of all non-complete foods must remain controlled."
+            },
+
+            {
+              feedType:
+                "Insects and natural pasture forage",
+
+              relationship:
+                "Insects and diverse pasture may contribute animal protein, plant diversity, and enrichment that leafy Brassica foliage alone cannot provide."
+            },
+
+            {
+              feedType:
+                "Insoluble grit where needed",
+
+              relationship:
+                "Appropriately sized insoluble grit supports mechanical digestion when birds consume coarse fibrous plant material and adequate natural grit is unavailable."
+            }
+          ],
+
+          doesNotCorrect: [
+            "An incomplete homemade ration",
+            "Insufficient dietary energy",
+            "Insufficient total protein",
+            "Insufficient methionine",
+            "Insufficient lysine",
+            "Insufficient calcium",
+            "Vitamin deficiency",
+            "Trace-mineral deficiency",
+            "Excessive total Brassica intake",
+            "Poor-quality complete feed",
+            "Inadequate access to clean water",
+            "Poor sanitation",
+            "Overcrowding",
+            "Inadequate feeder space",
+            "Lack of suitable grit where needed"
+          ],
+
+          pairingWarning:
+            "Combining Kale and Collards with several other homegrown crops does not automatically create a nutritionally complete diet. Significant ration inclusion requires calculation of energy, protein, digestible amino acids, fiber, fat, calcium, available phosphorus, sodium, vitamins, trace minerals, glucosinolate exposure, dry matter, and total feed intake.",
+
+          practicalBackyardApproach:
+            "For the ordinary backyard flock, maintain an age-appropriate complete ration as the primary feed and offer sound fresh Kale or Collard leaves in limited amounts through hanging-leaf enrichment, clean feeders, cut-and-carry harvest, or protected forage frames."
+        },
+
+        feedingMethods: {
+          philosophy:
+            "Kale and Collard Greens should be treated as supplemental leafy forage and enrichment rather than as staple feed. Every feeding method should preserve normal consumption of the flock's complete ration while preventing spoilage, contamination, excessive Brassica intake, and destruction of the growing plants.",
+
+          primaryMethods: [
+            {
+              method:
+                "Whole fresh leaves hung for pecking",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "One of the simplest and most useful backyard methods. Suspending sound whole leaves encourages pecking, stretching, investigation, and gradual consumption while helping keep the foliage above dirty litter."
+            },
+
+            {
+              method:
+                "Torn or chopped fresh leaves in a clean feeder",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Tearing or chopping large leaves makes them easier to distribute among several birds and allows better portion control than unrestricted garden access."
+            },
+
+            {
+              method:
+                "Protected living forage",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Kale or Collard plants grown beneath a forage frame can provide repeated pecking access while protecting crowns and roots from scratching. The frame must prevent birds from reaching deeply enough to destroy the plants."
+            },
+
+            {
+              method:
+                "Fresh cut-and-carry outer leaves",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Harvesting healthy outer leaves while preserving the central growing point supports repeated plant regrowth and lets the keeper inspect, clean, and portion the foliage before feeding."
+            },
+
+            {
+              method:
+                "Controlled access to established plants",
+
+              recommendation:
+                "Seasonally Useful",
+
+              explanation:
+                "Brief supervised or rotational access may allow natural grazing, but chickens can rapidly strip foliage, damage growing points, expose roots, scratch plants from the soil, and contaminate the remaining leaves."
+            },
+
+            {
+              method:
+                "Plain cooked and cooled leaves",
+
+              recommendation:
+                "Occasional",
+
+              explanation:
+                "Plain cooked Kale or Collards may be offered after cooling completely when they contain no excessive salt, butter, grease, sauces, meat drippings, onions, garlic, sugar, or unsuitable seasonings."
+            },
+
+            {
+              method:
+                "Blanched frozen and thawed leaves",
+
+              recommendation:
+                "Occasional",
+
+              explanation:
+                "Properly blanched and frozen leaves can extend seasonal availability. Thawed greens become wet, soft, and highly perishable and should be offered only in amounts the flock will consume promptly."
+            },
+
+            {
+              method:
+                "Fully dehydrated leaf flakes",
+
+              recommendation:
+                "Use With Care",
+
+              explanation:
+                "Properly dried flakes can provide stored leafy material, but dehydration greatly concentrates nutrients, fiber, glucosinolates, oxalates, and other plant compounds by weight."
+            },
+
+            {
+              method:
+                "Measured dried leaf powder",
+
+              recommendation:
+                "Formulation Dependent",
+
+              explanation:
+                "Leaf powder may be used in carefully measured amounts within a properly balanced ration. Grinding does not correct the crop's energy, protein, amino-acid, calcium, mineral, or glucosinolate limitations."
+            }
+          ],
+
+          introductionGuidelines: {
+            suddenDietChangeRecommended:
+              false,
+
+            gradualIntroductionRecommended:
+              true,
+
+            explanation:
+              "Introduce Kale or Collard leaves gradually while observing complete-feed intake, droppings, crop function, flock behavior, palatability, and competition. Begin with a modest amount so the flock becomes familiar with the foliage without allowing leafy material to displace the complete ration."
+          },
+
+          observationChecklist: [
+            "Complete feed consumption remains normal.",
+            "Birds do not wait for greens while refusing balanced feed.",
+            "Droppings remain normal for the flock.",
+            "Crop filling and emptying appear normal.",
+            "No unusual selective feeding develops.",
+            "Birds are able to tear and consume the offered leaf form.",
+            "Large mature stems are not accumulating uneaten.",
+            "Lower-ranking birds have reasonable access to the supplement.",
+            "Leaves are consumed before wilting, sliminess, heating, or spoilage develops.",
+            "No sour, musty, fermented, or rotten odor develops.",
+            "Fresh leaves do not remain scattered in wet litter.",
+            "Thawed leaves are removed promptly when uneaten.",
+            "Dried flakes or powder remain dry, loose, and free from mold.",
+            "Direct garden access is not destroying plant crowns or roots.",
+            "Manure is not accumulating on protected living forage.",
+            "Total intake of Kale, Collards, and other Brassica supplements remains moderate."
+          ],
+
+          wholeHeadManagement: {
+            recommended:
+              true,
+
+            advantages: [
+              "Whole leaves provide prolonged pecking enrichment",
+              "Suspended foliage remains cleaner than leaves placed on litter",
+              "Minimal preparation is required",
+              "Leaf quality is easy to inspect",
+              "Several leaves can be distributed across multiple feeding stations"
+            ],
+
+            managementTips: [
+              "Use sound leaves free from mold, rot, pesticide residue, and manure contamination.",
+              "Hang leaves securely without creating loops or entanglement hazards.",
+              "Provide several leaves or feeding locations for larger flocks.",
+              "Keep leaves high enough to avoid dirty litter but low enough for safe access.",
+              "Remove fallen, wilted, slimy, or contaminated leaves promptly.",
+              "Do not leave fibrous stems or spoiled remnants accumulating in the run."
+            ]
+          },
+
+          looseSeedManagement: {
+            recommended:
+              true,
+
+            advantages: [
+              "Torn or chopped leaves are easy to portion",
+              "Leaf pieces can be divided among several feeders",
+              "Tender and fibrous portions can be separated",
+              "Actual supplemental intake is easier to observe",
+              "Household vegetable trimmings can be used efficiently"
+            ],
+
+            managementTips: [
+              "Prepare only the amount likely to be consumed promptly.",
+              "Use clean feeders rather than scattering chopped leaves into litter.",
+              "Avoid leaving wet chopped greens in warm weather.",
+              "Refrigerate unserved fresh leaves promptly when appropriate.",
+              "Discard thawed greens that become slimy, sour, warm, or contaminated.",
+              "Store dried flakes or powder in clean moisture-resistant containers.",
+              "Measure dried material more conservatively than fresh leaves."
+            ]
+          },
+
+          gritConsiderations: {
+            gritHelpful:
+              true,
+
+            explanation:
+              "Established chickens consuming coarse mature leaves, fibrous stems, dehydrated flakes, or other insoluble plant material should have access to appropriately sized insoluble grit whenever adequate natural grit is unavailable. Oyster shell and other soluble calcium sources do not replace digestive grit."
+          },
+
+          feedingFrequency: {
+            dailyStaple:
+              false,
+
+            supplemental:
+              true,
+
+            enrichment:
+              true,
+
+            seasonal:
+              true,
+
+            explanation:
+              "Feeding frequency should depend on the complete ration, bird age, production stage, flock activity, body condition, season, weather, leaf form, total supplemental feeding, and the amount of other Brassica material being consumed. Kale and Collards should not become the flock's unrestricted daily staple."
+          },
+
+          seasonalUse: {
+            spring:
+              "Excellent for fresh cut-and-carry leaves, hanging-leaf enrichment, baby greens, and controlled use of established plants. Harvest regularly while preserving the central growing point and before rising temperatures substantially reduce leaf quality.",
+
+            summer:
+              "Use leaves from heat-tolerant Collards, cool-climate Kale, shaded beds, or preserved supplies where available. Remove wilted material promptly and avoid allowing watery supplements to reduce complete-feed intake during heat stress.",
+
+            autumn:
+              "One of the strongest feeding seasons. Cool weather supports tender growth, repeated outer-leaf harvest, protected forage, household vegetable production, and preservation of surplus leaves.",
+
+            winter:
+              "Fresh leaves may remain available in mild climates or under suitable protection. Frozen or dehydrated leaves can provide stored seasonal variety, but neither form replaces complete winter nutrition, dry shelter, ventilation, or unfrozen water."
+          },
+
+          weatherConsiderations: {
+            coldWeather:
+              "Cold-tolerant plants may provide valuable fresh greens during cool weather, but Kale and Collards supply little concentrated energy and should not be used as substitutes for an adequate complete winter ration.",
+
+            hotWeather:
+              "Offer only fresh sound leaves during cooler parts of the day and remove leftovers promptly. Heat can reduce leaf tenderness, accelerate wilting and spoilage, and reduce birds' consumption of complete feed.",
+
+            rainyWeather:
+              "Keep harvested leaves out of mud, standing water, wet litter, and manure-contaminated areas. Prolonged leaf wetness increases contamination and spoilage risk.",
+
+            humidClimate:
+              "Use prompt cooling, strong airflow, clean handling, and frequent inspection because fresh and dehydrating leaves can retain moisture and deteriorate quickly.",
+
+            freezingWeather:
+              "Frozen standing leaves may become limp or damaged after thawing. Inspect them carefully and feed only tissue that remains sound, clean, and free from rot."
+          },
+
+          managementWarnings: [
+            "Do not allow Kale or Collard Greens to replace balanced complete feed.",
+            "Do not provide unrestricted quantities of fresh or dried leaves.",
+            "Do not assume that measured leaf calcium replaces complete layer feed or a suitable calcium program.",
+            "Do not treat leaf protein as a complete amino-acid source.",
+            "Account for the total intake of all Brassica supplements rather than evaluating Kale or Collards in isolation.",
+            "Do not feed moldy, musty, slimy, sour, fermented, rotten, or severely diseased leaves.",
+            "Do not feed foliage contaminated with manure, dirty litter, polluted water, herbicides, or unknown chemicals.",
+            "Do not feed pesticide-treated foliage unless the product label and all livestock-feed restrictions clearly permit that use.",
+            "Remove uneaten fresh or thawed greens before they spoil.",
+            "Do not store incompletely dried leaves in sealed containers.",
+            "Measure dehydrated flakes and powder more carefully than fresh foliage.",
+            "Do not allow direct flock access to destroy roots, crowns, or central growing points.",
+            "Use several feeding locations where dominant birds may monopolize hanging leaves.",
+            "Provide appropriate insoluble grit when coarse fibrous material is consumed and natural grit is inadequate.",
+            "Reserve meaningful dried-leaf inclusion for properly formulated diets."
+          ]
+        },
+
+        storage: {
+          storageSuitability:
+            "limited-fresh-good-when-properly-frozen-or-dehydrated",
+
+          preferredStorageForms: [
+            {
+              form:
+                "Fresh intact refrigerated leaves",
+
+              suitability:
+                "good-for-short-term-storage",
+
+              explanation:
+                "Sound intact leaves retain quality better than chopped foliage when they are cooled promptly, protected from crushing, and refrigerated under suitable humidity without excessive free moisture."
+            },
+
+            {
+              form:
+                "Blanched frozen leaves",
+
+              suitability:
+                "very-good-for-longer-seasonal-storage",
+
+              explanation:
+                "Properly blanched, cooled, drained, packaged, and frozen leaves can extend availability well beyond the fresh harvest season. Thawed leaves become soft and highly perishable."
+            },
+
+            {
+              form:
+                "Fully dehydrated leaf flakes",
+
+              suitability:
+                "very-good-when-thoroughly-dried",
+
+              explanation:
+                "Fully dried flakes require little storage space and can remain useful when protected from moisture, heat, light, insects, rodents, and contamination."
+            },
+
+            {
+              form:
+                "Dried leaf powder",
+
+              suitability:
+                "moderate",
+
+              explanation:
+                "Powder is compact and easy to measure, but its large exposed surface area increases moisture absorption, oxidation, dust, odor transfer, and quality-loss risk."
+            },
+
+            {
+              form:
+                "Chopped fresh leaves",
+
+              suitability:
+                "limited",
+
+              explanation:
+                "Cutting damages leaf tissue and increases exposed surface area, moisture loss, microbial access, bruising, and deterioration. Chopped leaves should be prepared close to feeding time."
+            },
+
+            {
+              form:
+                "Plain cooked leaves",
+
+              suitability:
+                "limited",
+
+              explanation:
+                "Cooked greens are moisture-rich and highly perishable. They should be cooled promptly, refrigerated briefly when necessary, and fed without prolonged holding."
+            }
+          ],
+
+          idealStorageConditions: [
+            "Harvest sound leaves during cool conditions when practical",
+            "Remove diseased, slimy, moldy, pest-contaminated, and damaged tissue",
+            "Cool fresh leaves promptly after harvest",
+            "Use clean food-safe containers or produce bags",
+            "Maintain refrigeration for fresh harvested leaves",
+            "Prevent excessive free water from accumulating around fresh leaves",
+            "Protect leaves from crushing and bruising",
+            "Keep fresh leaves away from raw meat, chemicals, fuels, pesticides, and strong odors",
+            "Blanch leaves appropriately before freezing",
+            "Cool blanched leaves promptly",
+            "Drain excess water before freezer packaging",
+            "Use clean freezer-safe packaging",
+            "Freeze in practical flock-sized portions",
+            "Dehydrate leaves until fully dry and brittle",
+            "Allow dried leaves to cool before packaging",
+            "Use clean moisture-resistant containers for dehydrated material",
+            "Protect dried leaves from heat, light, humidity, insects, and rodents",
+            "Label each stored batch clearly",
+            "Inspect all stored forms regularly"
+          ],
+
+          unsuitableStorageConditions: [
+            "Fresh leaves left in direct sunlight",
+            "Fresh leaves held in a hot vehicle",
+            "Warm leaves sealed immediately after harvest",
+            "Wet leaves packed tightly without cooling",
+            "Standing water inside produce bags or containers",
+            "Fresh leaves stored in dirty buckets or feed containers",
+            "Fresh foliage mixed with moldy or diseased leaves",
+            "Chopped leaves held for extended periods at warm temperatures",
+            "Cooked leaves left at room temperature for prolonged periods",
+            "Thawed leaves repeatedly warmed and rechilled",
+            "Improperly blanched frozen leaves",
+            "Freezer packages with damaged seals",
+            "Repeated thawing and refreezing",
+            "Partially dried leaves sealed in containers",
+            "Warm dried leaves packaged before cooling",
+            "Dried flakes stored in open bags",
+            "Powder stored where humidity can enter",
+            "Containers accessible to rodents or insects",
+            "Storage beside pesticides, fuels, cleaners, medicines, or strong odors",
+            "Any stored material showing condensation, mold, slime, fermentation, heating, or abnormal odor"
+          ],
+
+          containerRecommendations: [
+            "Clean produce bags suitable for short-term refrigerated storage",
+            "Clean rigid food-safe containers for protecting fresh leaves from crushing",
+            "Freezer-safe bags with excess air removed",
+            "Rigid freezer-safe containers",
+            "Small freezer packages sized for one feeding period",
+            "Food-safe jars with secure lids for dehydrated flakes",
+            "Food-safe moisture-resistant containers for dried powder",
+            "Food-safe buckets with secure lids for larger dried-leaf quantities",
+            "Rigid containers that prevent rodent access and moisture entry",
+            "Clearly labeled containers dedicated to food or feed use"
+          ],
+
+          wholeHeadStorage: {
+            recommended:
+              true,
+
+            guidance: [
+              "Treat whole intact leaves as the preferred short-term fresh-storage form.",
+              "Harvest only sound leaves free from mold, slime, rot, severe disease, and unsafe chemical exposure.",
+              "Remove loose soil, insects, damaged tissue, and contaminated debris.",
+              "Avoid unnecessary washing before storage when the leaves are already clean because trapped water can accelerate deterioration.",
+              "When washing is necessary, drain or dry the leaves before refrigeration.",
+              "Cool leaves promptly after harvest.",
+              "Store leaves loosely enough to prevent crushing and allow some air movement.",
+              "Maintain suitable humidity without allowing visible water to collect around the foliage.",
+              "Keep leaves separate from raw animal products, chemicals, and strong odors.",
+              "Use older sound leaves before newer harvests.",
+              "Inspect frequently for wilting, yellowing, slime, mold, sour odor, or tissue collapse.",
+              "Discard questionable leaves rather than mixing them with sound foliage."
+            ]
+          },
+
+          looseSeedStorage: {
+            recommended:
+              true,
+
+            guidance: [
+              "Treat chopped, cooked, frozen, dehydrated, and powdered leaves as separate storage forms.",
+              "Prepare chopped fresh leaves only in quantities likely to be used promptly.",
+              "Refrigerate prepared fresh leaves when they cannot be fed immediately.",
+              "Cool cooked or blanched leaves promptly before refrigeration or freezing.",
+              "Use clean utensils, hands, preparation surfaces, and containers.",
+              "Freeze leaves in practical flock-sized portions to avoid repeated thawing.",
+              "Label frozen packages with crop, preparation form, and freezing date.",
+              "Thaw only the amount needed for one short feeding period.",
+              "Do not repeatedly thaw and refreeze leaf material.",
+              "Dry leaves fully before placing them in sealed storage.",
+              "Allow dehydrated leaves to cool completely before packaging.",
+              "Keep dried flakes and powder in moisture-resistant containers.",
+              "Prepare powder in smaller batches than intact dried flakes when practical.",
+              "Discard dried material that becomes damp, clumped, moldy, musty, insect-infested, or otherwise abnormal."
+            ]
+          },
+
+          inventoryManagement: {
+            firstInFirstOutRecommended:
+              true,
+
+            batchSeparationRecommended:
+              true,
+
+            labelingRecommended:
+              true,
+
+            recommendedLabelFields: [
+              "Crop name",
+              "Kale or Collard type",
+              "Cultivar when known",
+              "Harvest date",
+              "Preparation date",
+              "Storage form",
+              "Freezing or drying completion date",
+              "Container date",
+              "Last inspection date",
+              "Observed condition"
+            ],
+
+            guidance:
+              "Keep harvest and processing batches separate whenever practical. Fresh, frozen, dehydrated, and powdered leaves have different storage requirements and should not be combined. A questionable batch should not be blended with sound material because blending conceals deterioration rather than correcting it."
+          },
+
+          inspectionSchedule: {
+            initialStoragePeriod:
+              "Inspect fresh refrigerated leaves frequently because wilting, trapped moisture, bruising, slime, and decay may develop rapidly. Inspect newly packaged dehydrated material during the first several days for condensation, softening, or moisture redistribution.",
+
+            longTermStorage:
+              "Continue periodic inspection of frozen and dehydrated material throughout storage. Increase inspection frequency after power interruptions, freezer-temperature changes, humid weather, damaged packaging, pest activity, or suspected moisture exposure.",
+
+            inspectionChecklist: [
+              "No visible mold",
+              "No slimy tissue",
+              "No sour odor",
+              "No fermentation odor",
+              "No unusual heating",
+              "No standing water around fresh leaves",
+              "No severe yellowing or tissue collapse",
+              "No damaged refrigerator or freezer packaging",
+              "No freezer thawing",
+              "No freezer burn severe enough to indicate packaging failure",
+              "No condensation inside dried-leaf containers",
+              "No soft or flexible areas in fully dried leaves",
+              "No powder clumping from moisture",
+              "No musty odor",
+              "No insect activity",
+              "No rodent evidence",
+              "No leaking container",
+              "No chemical or foreign odor",
+              "No unexplained flock refusal"
+            ]
+          },
+
+          storageLifeGuidance:
+            "A single guaranteed storage duration should not be assigned because stability depends on leaf maturity, harvest condition, sanitation, cooling speed, preparation method, refrigerator or freezer temperature, packaging, initial dryness, humidity, power reliability, and frequency of handling. Fresh leaves should be evaluated frequently and used while sound. Frozen and dehydrated products require condition-based inspection rather than reliance only on a calendar date.",
+
+          disposalGuidance:
+            "Leaves or preserved material suspected of mold, slime, uncontrolled fermentation, chemical contamination, manure contamination, refrigerator spoilage, freezer failure, rodent contamination, insect contamination, or moisture-damaged dehydration should be discarded in a way that prevents access by chickens, livestock, pets, wildlife, and children.",
+
+          storageSummary:
+            "Kale and Collard Greens have limited fresh storage life but can be preserved successfully by proper freezing or complete dehydration. Intact refrigerated leaves are the simplest short-term form, frozen portions provide dependable seasonal extension, and fully dried flakes provide compact non-refrigerated storage. Chopping, cooking, thawing, grinding, and moisture exposure progressively reduce storage stability."
+        },
+
+        spoilageAndContamination: {
+          overallRiskLevel:
+            "moderate-to-high-for-fresh-leaves",
+
+          primarySpoilageRisks: [
+            {
+              risk:
+                "Bacterial and soft-rot deterioration",
+
+              likelihood:
+                "moderate-to-high",
+
+              primaryCauses: [
+                "Warm storage temperatures",
+                "Delayed refrigeration",
+                "Bruised or crushed leaves",
+                "Excess free moisture",
+                "Dirty harvesting containers",
+                "Contaminated cutting tools",
+                "Prolonged storage",
+                "Diseased tissue mixed with sound leaves"
+              ],
+
+              warningSigns: [
+                "Slimy leaf surfaces",
+                "Soft water-soaked tissue",
+                "Rapid tissue collapse",
+                "Sour or rotten odor",
+                "Dark wet lesions",
+                "Leaking plant fluid",
+                "Leaves sticking together",
+                "Unusual flock refusal"
+              ],
+
+              response:
+                "Discard affected and suspicious leaves. Do not rinse, trim, cook, freeze, dry, or mix visibly deteriorated foliage in an attempt to make it safe."
+            },
+
+            {
+              risk:
+                "Mold growth",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Prolonged leaf wetness",
+                "Condensation inside containers",
+                "High humidity",
+                "Poor airflow",
+                "Damaged leaf tissue",
+                "Improper refrigeration",
+                "Incomplete dehydration",
+                "Moisture entering dried-leaf containers"
+              ],
+
+              warningSigns: [
+                "Visible fuzzy growth",
+                "Powdery fungal patches",
+                "Musty odor",
+                "Abnormal dark spotting",
+                "White, gray, green, or black growth",
+                "Softened tissue around lesions",
+                "Damp clumping in dried leaves or powder"
+              ],
+
+              response:
+                "Discard moldy and nearby suspicious material. Visible mold may represent only part of the affected area, and drying, washing, cooking, or removing the visible growth does not reliably restore safety."
+            },
+
+            {
+              risk:
+                "Uncontrolled fermentation",
+
+              likelihood:
+                "low-to-moderate",
+
+              primaryCauses: [
+                "Wet chopped leaves held in sealed containers",
+                "Warm storage",
+                "Compressed plant material",
+                "Insufficient airflow",
+                "Delayed feeding after preparation",
+                "Improper thawing",
+                "Attempted preservation without a validated process"
+              ],
+
+              warningSigns: [
+                "Sour odor",
+                "Alcohol-like odor",
+                "Bubbling",
+                "Foam",
+                "Gas-swollen packaging",
+                "Unexpected warmth",
+                "Slimy texture",
+                "Rapid discoloration"
+              ],
+
+              response:
+                "Remove the material from flock access and discard it. Uncontrolled fermentation should not be treated as an acceptable preservation method for this feeding reference."
+            },
+
+            {
+              risk:
+                "Wilting and quality decline",
+
+              likelihood:
+                "high",
+
+              primaryCauses: [
+                "Heat exposure",
+                "Low storage humidity",
+                "Delayed cooling",
+                "Direct sunlight",
+                "Wind exposure",
+                "Damaged leaves",
+                "Extended storage"
+              ],
+
+              warningSigns: [
+                "Limp leaves",
+                "Dry curled edges",
+                "Loss of crispness",
+                "Yellowing",
+                "Shriveled stems",
+                "Reduced palatability",
+                "Increasingly tough texture"
+              ],
+
+              response:
+                "Mild wilting alone does not automatically establish that a leaf is unsafe, but wilted material should be inspected carefully for slime, mold, abnormal odor, heating, and decay. Discard the leaves when condition is uncertain."
+            },
+
+            {
+              risk:
+                "Freezer failure or thaw damage",
+
+              likelihood:
+                "low-to-moderate",
+
+              primaryCauses: [
+                "Power interruption",
+                "Damaged freezer packaging",
+                "Repeated thawing and refreezing",
+                "Inadequate freezer temperature",
+                "Packages left at room temperature",
+                "Large portions thawed more slowly than expected"
+              ],
+
+              warningSigns: [
+                "Fully thawed packages",
+                "Leaking liquid",
+                "Swollen packaging",
+                "Sour odor after opening",
+                "Slimy texture",
+                "Unexpected warmth",
+                "Evidence of repeated ice melting and refreezing"
+              ],
+
+              response:
+                "Discard thawed material when its temperature history or condition cannot be verified. Refreezing does not reverse microbial growth or spoilage that occurred while the leaves were warm."
+            },
+
+            {
+              risk:
+                "Moisture damage in dehydrated leaves",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Incomplete initial drying",
+                "Packaging leaves while still warm",
+                "Humid storage conditions",
+                "Poor container seals",
+                "Frequent container opening",
+                "Wet utensils",
+                "Condensation",
+                "Storage near damp floors or walls"
+              ],
+
+              warningSigns: [
+                "Flexible leaves that were previously brittle",
+                "Soft spots",
+                "Clumping",
+                "Condensation",
+                "Musty odor",
+                "Visible mold",
+                "Powder caking",
+                "Unexpected color change",
+                "Insect activity"
+              ],
+
+              response:
+                "Discard moisture-damaged dried material when mold, mustiness, clumping, condensation, or uncertain quality is present. Redrying questionable material does not reliably restore safety."
+            },
+
+            {
+              risk:
+                "Insect infestation",
+
+              likelihood:
+                "low-to-moderate",
+
+              primaryCauses: [
+                "Field insects carried indoors",
+                "Open storage containers",
+                "Poor sanitation",
+                "Warm storage",
+                "Long storage periods",
+                "Previously infested containers",
+                "Improperly sealed dried-leaf products"
+              ],
+
+              warningSigns: [
+                "Live insects",
+                "Larvae",
+                "Webbing",
+                "Egg masses",
+                "Frass",
+                "Chewed leaf material",
+                "Unexpected powder or dust",
+                "Damaged packaging"
+              ],
+
+              response:
+                "Evaluate the entire batch. Material with extensive insect activity, webbing, moisture, mold, droppings, or uncertain contamination should be discarded."
+            }
+          ],
+
+          contaminationRisks: [
+            {
+              contaminant:
+                "Pesticide-treated foliage",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Known recent insecticide or fungicide application",
+                "Visible spray residue",
+                "Uncertain spray history",
+                "Leaves obtained from an ornamental landscape",
+                "Crop treated with a product lacking livestock-feed directions",
+                "Required harvest interval not completed"
+              ],
+
+              guidance:
+                "Do not feed treated Kale or Collard foliage unless the pesticide label clearly permits the intended use and every required harvest, grazing, and livestock-feed restriction has been followed."
+            },
+
+            {
+              contaminant:
+                "Herbicide or chemical drift",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Recent nearby herbicide application",
+                "Twisted or distorted new growth",
+                "Abnormal leaf cupping",
+                "Sudden unexplained plant injury",
+                "Chemical odor",
+                "Unknown roadside or neighboring-field exposure"
+              ],
+
+              guidance:
+                "Do not feed foliage suspected of herbicide exposure, chemical drift, industrial contamination, or unknown treatment."
+            },
+
+            {
+              contaminant:
+                "Manure and dirty-litter contamination",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Visible fecal material",
+                "Leaves lying in the chicken run",
+                "Splashing from manure-contaminated soil",
+                "Plants positioned beneath roosts",
+                "Dirty forage-frame surfaces",
+                "Strong manure odor"
+              ],
+
+              guidance:
+                "Discard heavily contaminated foliage. Washing may remove visible dirt but does not guarantee removal of microbial contamination from damaged or heavily soiled leaves."
+            },
+
+            {
+              contaminant:
+                "Contaminated irrigation or wash water",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Use of flood water",
+                "Untreated surface water with uncertain quality",
+                "Water contaminated by manure runoff",
+                "Dirty wash tubs",
+                "Standing water with algae or foul odor",
+                "Recent sewage or drainage failure"
+              ],
+
+              guidance:
+                "Use clean water for irrigation where edible foliage is contacted and for any washing before feeding. Discard leaves exposed to sewage, flood water, or known manure-contaminated water."
+            },
+
+            {
+              contaminant:
+                "Diseased crop tissue",
+
+              riskLevel:
+                "moderate-to-high",
+
+              identificationClues: [
+                "Expanding dark lesions",
+                "Soft rot",
+                "Fuzzy fungal growth",
+                "Yellow halos around lesions",
+                "Severe leaf spotting",
+                "Blackened veins",
+                "Rapid plant collapse"
+              ],
+
+              guidance:
+                "Do not feed severely diseased or rotting foliage. Remove affected material from the usable harvest and manage it according to appropriate crop-disease sanitation practices."
+            },
+
+            {
+              contaminant:
+                "Rodent contamination",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Rodent droppings",
+                "Urine odor",
+                "Gnaw marks",
+                "Nesting material",
+                "Damaged containers",
+                "Rodent carcasses",
+                "Tracks or grease marks"
+              ],
+
+              guidance:
+                "Discard contaminated leaves and preserved products. Do not attempt to salvage them by washing, cooking, freezing, drying, or removing only the visibly affected portion."
+            },
+
+            {
+              contaminant:
+                "Wild-bird and wildlife contamination",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Wild-bird droppings",
+                "Animal feces",
+                "Feathers mixed with stored material",
+                "Chewed leaves",
+                "Tracks around storage containers",
+                "Damaged packaging",
+                "Carcass contamination"
+              ],
+
+              guidance:
+                "Discard heavily contaminated material and improve exclusion, sanitation, and storage protection before collecting or storing another batch."
+            },
+
+            {
+              contaminant:
+                "Roadside and polluted-site contamination",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Plants growing beside heavily traveled roads",
+                "Exposure to road salt",
+                "Vehicle-fluid contamination",
+                "Industrial dust",
+                "Unknown soil history",
+                "Nearby dumping or chemical storage"
+              ],
+
+              guidance:
+                "Do not collect poultry greens from roadsides, industrial sites, treated rights-of-way, contaminated soil, or locations with uncertain chemical history."
+            },
+
+            {
+              contaminant:
+                "Household cooking ingredients",
+
+              riskLevel:
+                "moderate-to-high",
+
+              identificationClues: [
+                "Heavy salt",
+                "Butter or grease",
+                "Meat drippings",
+                "Rich sauce",
+                "Onions",
+                "Garlic",
+                "Artificial sweeteners",
+                "Unknown seasoning mixture"
+              ],
+
+              guidance:
+                "Use only plain cooked greens. Heavily salted, greasy, seasoned, sauced, or otherwise unsuitable leftovers should not be treated as equivalent to plain Kale or Collards."
+            },
+
+            {
+              contaminant:
+                "Foreign objects and harvesting debris",
+
+              riskLevel:
+                "moderate",
+
+              identificationClues: [
+                "Wire fragments",
+                "Plastic pieces",
+                "Twine",
+                "Staples",
+                "Glass",
+                "Stones",
+                "Metal fragments",
+                "Row-cover clips"
+              ],
+
+              guidance:
+                "Inspect harvested and processed leaves carefully and remove foreign material before feeding. Discard a batch when dangerous debris cannot be removed confidently."
+            }
+          ],
+
+          spoilageIndicators: [
+            {
+              indicator:
+                "Visible mold",
+
+              action:
+                "Discard the affected batch and nearby suspicious material. Do not trim away only the visible growth."
+            },
+
+            {
+              indicator:
+                "Slimy leaf surfaces",
+
+              action:
+                "Discard the leaves because bacterial deterioration or soft rot is likely."
+            },
+
+            {
+              indicator:
+                "Sour, rotten, musty, or alcohol-like odor",
+
+              action:
+                "Remove the material from flock access and discard it."
+            },
+
+            {
+              indicator:
+                "Unexpected warmth or heating",
+
+              action:
+                "Treat the batch as unstable and discard it when safety cannot be confirmed."
+            },
+
+            {
+              indicator:
+                "Bubbling, foaming, or swollen packaging",
+
+              action:
+                "Treat as uncontrolled fermentation or microbial activity and discard."
+            },
+
+            {
+              indicator:
+                "Standing water or heavy condensation",
+
+              action:
+                "Inspect the entire batch closely and discard material showing slime, mold, odor, or uncertain quality."
+            },
+
+            {
+              indicator:
+                "Soft water-soaked lesions",
+
+              action:
+                "Discard affected and nearby deteriorating leaves."
+            },
+
+            {
+              indicator:
+                "Severe yellowing with tissue collapse",
+
+              action:
+                "Do not feed when accompanied by odor, slime, mold, or decay."
+            },
+
+            {
+              indicator:
+                "Dried leaves becoming flexible or damp",
+
+              action:
+                "Inspect for moisture intrusion, clumping, mustiness, and mold. Discard when quality is uncertain."
+            },
+
+            {
+              indicator:
+                "Powder clumping or caking",
+
+              action:
+                "Check for moisture exposure and discard the powder if it is damp, musty, moldy, or otherwise abnormal."
+            },
+
+            {
+              indicator:
+                "Insect webbing, larvae, or frass",
+
+              action:
+                "Inspect the full container and discard heavily infested or contaminated material."
+            },
+
+            {
+              indicator:
+                "Rodent droppings or urine evidence",
+
+              action:
+                "Discard the entire affected batch and sanitize the storage area and containers."
+            },
+
+            {
+              indicator:
+                "Unknown pesticide or chemical exposure",
+
+              action:
+                "Do not feed the foliage unless safety and label compliance can be documented."
+            },
+
+            {
+              indicator:
+                "Sudden flock refusal",
+
+              action:
+                "Stop feeding the material and inspect it for spoilage, contamination, toughness, abnormal odor, or preparation problems."
+            }
+          ],
+
+          sensoryInspectionLimitations:
+            "Appearance, smell, and texture are useful screening tools but cannot confirm that foliage is free from pesticide residues, herbicide drift, pathogenic microorganisms, environmental contaminants, or every harmful spoilage product. Material with uncertain treatment, contamination, or storage history should not be fed merely because it appears normal.",
+
+          salvageWarning:
+            "Do not attempt to salvage questionable Kale or Collard material by washing, trimming, cooking, freezing, drying, redrying, grinding, diluting, or blending it with sound feed. These actions may hide deterioration without removing microbial, chemical, mold-related, or environmental hazards.",
+
+          spoilageSummary:
+            "Fresh Kale and Collard leaves are highly perishable and can deteriorate rapidly when warm, wet, bruised, chopped, contaminated, or stored without prompt cooling. Frozen leaves are vulnerable after thawing, while dehydrated flakes and powders become unsafe when they absorb moisture. Feed only sound material with a known handling history, and discard any batch showing mold, slime, abnormal odor, fermentation, rodent contamination, chemical exposure, or uncertain quality."
+        },
+
+        portionGuidance: {
+          universalPortionAvailable:
+            false,
+
+          exactServingSizeEstablished:
+            false,
+
+          maximumSafePercentageEstablished:
+            false,
+
+          portionPhilosophy:
+            "Kale and Collard Greens should be offered as limited supplemental leafy forage while an age-appropriate complete poultry ration remains the flock's primary food. Portion decisions should be based on complete-feed consumption, bird stage, total supplemental feeding, leaf form, moisture content, flock response, and the amount of other Brassica material being consumed.",
+
+          generalGuidance:
+            "Offer an amount that the flock can consume promptly without reducing normal complete-feed intake. Fresh leaves are bulky and moisture-rich, while dried flakes and powders are much more concentrated. A visually large fresh portion may contain relatively little dry matter, but it can still fill the digestive tract and displace balanced feed.",
+
+          freshLeafGuidance:
+            "For established adult chickens, begin with a modest quantity of clean tender leaves distributed across several feeding locations. Observe how quickly the flock consumes them and whether normal complete-feed intake remains unchanged before increasing future portions.",
+
+          wholeLeafGuidance:
+            "Whole hanging leaves are best treated as measured enrichment rather than unrestricted feed. Use enough separate leaves or stations to reduce competition, and remove leftovers before they become wilted, slimy, contaminated, or spoiled.",
+
+          choppedLeafGuidance:
+            "Torn or chopped leaves are easier to divide and observe than whole hanging leaves. Prepare only the amount likely to be consumed promptly and avoid scattering wet leaf pieces into litter.",
+
+          livingPlantGuidance:
+            "Access to living Kale or Collard plants should be controlled through forage frames, rotational access, or brief supervised grazing. Unrestricted access makes actual consumption difficult to measure and may allow birds to strip the crop while reducing complete-feed intake.",
+
+          cookedLeafGuidance:
+            "Plain cooked and cooled leaves should be offered conservatively because cooking softens the tissue and may allow birds to consume a large quantity quickly. Cooked portions must contain no excessive salt, butter, grease, sauces, onions, garlic, or unsuitable seasonings.",
+
+          frozenLeafGuidance:
+            "Thawed leaves should be portioned similarly to cooked greens and fed promptly. Freezing changes texture but does not make the leaves nutritionally complete or eliminate the need for moderation.",
+
+          dehydratedLeafGuidance:
+            "Use substantially smaller amounts of dehydrated flakes than fresh leaves because water removal concentrates dry matter, nutrients, fiber, glucosinolates, oxalates, and other plant compounds by weight.",
+
+          powderedLeafGuidance:
+            "Dried Kale or Collard powder should be measured carefully rather than added freely. Meaningful inclusion in a mixed ration requires proper formulation because powder can alter dietary fiber, mineral balance, glucosinolate exposure, nutrient density, palatability, and feed consumption.",
+
+          youngChickGuidance:
+            "Do not establish an informal routine portion for young chicks. Chicks should rely on an age-appropriate complete starter ration unless a qualified poultry nutritionist has formulated a diet containing an analyzed Brassica leaf ingredient.",
+
+          layingHenGuidance:
+            "For laying hens, leafy supplements must not reduce consumption of complete layer feed or interfere with an appropriate calcium program. The presence of calcium in the leaves does not justify increasing the portion or replacing formulated layer nutrition.",
+
+          roosterGuidance:
+            "Healthy adult roosters may receive the same limited fresh-leaf enrichment as adult hens, but the leaves should remain supplemental to an appropriate balanced ration.",
+
+          moltingBirdGuidance:
+            "Molting birds may consume limited Kale or Collard supplements, but larger portions do not replace the concentrated digestible protein and amino acids required for feather growth.",
+
+          seniorOrLowActivityBirdGuidance:
+            "Older, sedentary, confined, or overweight birds may benefit from low-energy leafy enrichment, but portions should still be limited so bulky greens do not displace complete nutrition.",
+
+          flockSizeConsiderations: [
+            "Increase the number of feeding stations as flock size increases.",
+            "Do not assume one large leaf provides equal access for every bird.",
+            "Observe whether dominant birds monopolize hanging or whole-leaf portions.",
+            "Distribute chopped leaves widely enough for lower-ranking birds to participate.",
+            "Judge the portion by actual consumption rather than by the amount initially offered."
+          ],
+
+          factorsThatReduceAppropriatePortion: [
+            "Young bird age",
+            "Poor body condition",
+            "Illness or recovery",
+            "Reduced complete-feed intake",
+            "Existing thyroid-related concerns",
+            "Large intake of other Brassica crops",
+            "Use of dehydrated leaf flakes",
+            "Use of concentrated leaf powder",
+            "High total treat intake",
+            "Large quantities of other garden produce",
+            "Cold or heat stress reducing normal feed intake",
+            "Low flock activity",
+            "Digestive disturbance",
+            "Unfamiliarity with the supplement",
+            "Tough or highly fibrous mature leaves"
+          ],
+
+          factorsThatMaySupportLimitedUse: [
+            "Established healthy adult birds",
+            "Normal complete-feed consumption",
+            "Good body condition",
+            "Fresh tender leaves",
+            "Several feeding stations",
+            "Use as brief enrichment",
+            "Cool-season shortage of natural forage",
+            "Prompt removal of leftovers",
+            "Low intake of other supplemental foods",
+            "Controlled cut-and-carry feeding",
+            "Protected forage-frame access"
+          ],
+
+          indicatorsThePortionMayBeTooLarge: [
+            "Complete-feed consumption decreases.",
+            "Birds wait for greens instead of eating balanced feed.",
+            "Leafy material remains uneaten for extended periods.",
+            "Watery or unusually loose droppings develop.",
+            "Crop filling or emptying appears abnormal.",
+            "Birds consume large quantities of leaves very rapidly.",
+            "Lower-ranking birds are excluded from complete-feed stations.",
+            "Body condition changes unexpectedly.",
+            "Egg production or eggshell quality declines.",
+            "Wet leaf material accumulates in litter.",
+            "The flock receives substantial quantities of several supplemental foods on the same day.",
+            "Dried flakes or powder are being estimated rather than measured."
+          ],
+
+          adjustmentGuidance: [
+            "Reduce the amount when complete-feed consumption falls.",
+            "Reduce the amount when droppings become persistently abnormal.",
+            "Reduce the amount when several other supplements are also being offered.",
+            "Reduce dried forms more aggressively than fresh forms.",
+            "Separate feeding stations when dominant birds monopolize access.",
+            "Use younger and more tender foliage when mature stems are wasted.",
+            "Stop feeding the batch when spoilage or contamination is suspected.",
+            "Seek veterinary guidance when appetite, weight, egg production, droppings, or behavior change substantially."
+          ],
+
+          measuringRecommendations: [
+            "Measure dehydrated flakes and powder by weight when practical.",
+            "Record the number or approximate weight of whole leaves offered.",
+            "Record how much remains after the feeding period.",
+            "Keep fresh and dried forms separate in feeding records.",
+            "Account for all treats and supplemental crops together.",
+            "Do not compare fresh-leaf weight directly with dry complete-feed weight.",
+            "Use repeated flock observations rather than relying on a single feeding."
+          ],
+
+          completeFeedProtectionRule:
+            "The appropriate Kale or Collard portion is always small enough that birds continue consuming the amount of complete feed needed for their life stage, production level, body condition, health, and environment.",
+
+          noUniversalPercentageReason:
+            "A universal crop-specific percentage cannot be assigned responsibly because fresh Kale, fresh Collards, cooked leaves, frozen leaves, dehydrated flakes, and leaf powder differ greatly in water content and concentration. Flocks also differ in breed, size, age, production stage, climate, activity, health, base ration, and total supplemental intake.",
+
+          rationFormulationThreshold:
+            "When dried Kale or Collard material is intentionally incorporated as a meaningful percentage of the daily ration rather than used as an occasional supplement, the entire diet should be formulated or reviewed by a qualified poultry nutritionist.",
+
+          portionWarning:
+            "Do not interpret enthusiastic consumption as proof that a larger portion is nutritionally appropriate. Chickens may readily consume preferred supplemental foods even when those foods reduce intake of a more balanced ration.",
+
+          portionSummary:
+            "No exact Kale-and-Collard serving size is appropriate for every flock. Use modest portions of fresh leaves, much smaller measured amounts of dried material, controlled access to living plants, and continued observation of complete-feed intake, droppings, body condition, flock behavior, and total Brassica consumption."
+        },
+
+        productionEffects: {
+          overallProductionValue:
+            "valuable-supporting-supplement",
+
+          summary:
+            "Kale and Collard Greens can support overall flock management by providing fresh seasonal forage, behavioral enrichment, carotenoid-rich plant material, and dietary variety. They should be viewed as supporting crops rather than production-enhancing feed ingredients because they do not provide the concentrated energy, balanced amino acids, or mineral profile required to directly drive egg production, growth, or reproduction.",
+
+          eggProduction: {
+            directIncreaseExpected:
+              false,
+
+            explanation:
+              "No dependable increase in egg production should be expected simply from feeding Kale or Collard Greens. Egg production depends primarily on adequate energy intake, balanced amino acids, calcium, phosphorus, lighting, genetics, flock health, stress level, and complete nutrition.",
+
+            potentialBenefits: [
+              "Provides seasonal dietary variety",
+              "Encourages natural feeding behavior",
+              "Supports overall flock welfare",
+              "May contribute useful carotenoids within a balanced diet",
+              "Can modestly reduce dependence on purchased supplemental treats"
+            ],
+
+            limitations: [
+              "Cannot replace complete layer feed",
+              "Does not supply sufficient calcium",
+              "Provides very little concentrated dietary energy",
+              "Cannot independently support sustained laying performance"
+            ]
+          },
+
+          eggQuality: {
+            shellQuality:
+              "indirect-only",
+
+            yolkColor:
+              "may-contribute",
+
+            albumenQuality:
+              "no-direct-effect-established",
+
+            explanation:
+              "Carotenoids naturally present in Kale and Collard Greens may contribute to richer yolk pigmentation when consumed within an otherwise balanced diet. Shell quality continues to depend primarily upon adequate calcium, phosphorus, vitamin D status, and complete layer nutrition."
+          },
+
+          growthPerformance: {
+            suitableForGrowthPromotion:
+              false,
+
+            explanation:
+              "Fresh Kale and Collard Greens should not be relied upon to improve growth rates because they contain too little concentrated energy and insufficient balanced digestible amino acids. Growth remains dependent upon properly formulated starter, grower, or broiler diets."
+          },
+
+          featherCondition: {
+            directImprovementExpected:
+              "limited",
+
+            explanation:
+              "Healthy leafy supplements contribute nutritional diversity, but feather development depends primarily upon adequate digestible protein, sulfur-containing amino acids such as methionine, overall nutrition, and flock health."
+          },
+
+          breedingPerformance: {
+            directImprovementExpected:
+              false,
+
+            explanation:
+              "Breeding performance is determined primarily by balanced nutrition, body condition, genetics, fertility, environmental management, and disease control rather than supplemental leafy vegetables."
+          },
+
+          behaviorEffects: {
+            enrichmentValue:
+              "very-high",
+
+            positiveEffects: [
+              "Encourages natural pecking",
+              "Provides environmental enrichment",
+              "Extends feeding activity",
+              "Helps reduce boredom",
+              "Supports exploratory behavior",
+              "Can reduce idle feather pecking in some management situations"
+            ],
+
+            explanation:
+              "Behavioral enrichment is one of the strongest practical benefits of Kale and Collard Greens for backyard flocks."
+          },
+
+          healthSupport: {
+            diseasePrevention:
+              false,
+
+            treatment:
+              false,
+
+            supportiveBenefits: [
+              "Provides fresh forage diversity",
+              "Provides carotenoid-containing plant material",
+              "Supplies vitamins and minerals as supplements",
+              "Encourages natural foraging behavior",
+              "Supports overall flock enrichment"
+            ],
+
+            explanation:
+              "Kale and Collard Greens should never be viewed as treatments for disease or nutritional deficiencies. They support good flock management but do not replace veterinary care or balanced nutrition."
+          },
+
+          seasonalValue: {
+            spring:
+              "High value because fresh leafy growth is abundant and repeated harvesting begins.",
+
+            summer:
+              "Moderate value depending upon cultivar selection, irrigation, and heat stress.",
+
+            autumn:
+              "Excellent value because cool weather promotes vigorous leafy growth.",
+
+            winter:
+              "Excellent in mild climates or protected gardens where fresh greens remain available after many other forage crops have stopped producing."
+          },
+
+          economicValue: {
+            feedSavingsPotential:
+              "modest",
+
+            explanation:
+              "Repeated harvests of homegrown Kale and Collard Greens may reduce spending on supplemental treats and fresh produce, but they should not be expected to replace significant quantities of complete poultry feed."
+          },
+
+          productionLimitations: [
+            "Cannot replace balanced poultry feed.",
+            "Cannot independently improve egg production.",
+            "Cannot independently improve growth rate.",
+            "Cannot replace calcium supplementation.",
+            "Cannot replace high-quality protein sources.",
+            "Benefits depend on maintaining complete-feed intake.",
+            "Fresh production varies with season and climate.",
+            "Heat stress may reduce leaf quality.",
+            "Heavy grazing pressure can destroy unprotected plants.",
+            "Fresh leaves have limited storage life."
+          ],
+
+          productionSummary:
+            "The greatest production value of Kale and Collard Greens lies in providing dependable cool-season leafy supplementation, behavioral enrichment, and garden integration rather than directly increasing flock production. Their role is supportive, not foundational."
+        },
+
+        scientificSupport: {
+          evidenceLevel:
+            "moderate",
+
+          researchSummary:
+            "Kale and Collard Greens are among the best-studied leafy Brassica vegetables for human nutrition, but considerably less poultry research exists than for conventional feed ingredients such as corn, soybean meal, wheat, barley, or sunflower meal. Available poultry literature generally supports their use as supplemental leafy forage or as carefully formulated dried leaf meals rather than as primary feed ingredients.",
+
+          wellSupportedFindings: [
+            {
+              finding:
+                "Fresh Kale and Collard Greens provide valuable supplemental leafy forage.",
+
+              confidence:
+                "high",
+
+              explanation:
+                "Extension publications and practical poultry management guidance consistently recognize leafy Brassica crops as useful supplemental greens when complete rations remain the nutritional foundation."
+            },
+
+            {
+              finding:
+                "Leaves contain carotenoids, vitamins, minerals, and dietary fiber.",
+
+              confidence:
+                "high",
+
+              explanation:
+                "Food composition databases consistently document substantial concentrations of carotenoids, vitamin A precursors, vitamin K, vitamin C, potassium, calcium, and other micronutrients."
+            },
+
+            {
+              finding:
+                "Fresh leaves contain relatively little concentrated dietary energy.",
+
+              confidence:
+                "high",
+
+              explanation:
+                "Because fresh foliage contains substantial water and little fat or starch, it cannot serve as the flock's principal energy source."
+            },
+
+            {
+              finding:
+                "Excessive leafy supplementation can reduce complete-feed intake.",
+
+              confidence:
+                "moderate",
+
+              explanation:
+                "General poultry nutrition principles support limiting bulky supplemental feeds so they do not dilute balanced formulated diets."
+            },
+
+            {
+              finding:
+                "Brassica crops naturally contain glucosinolates.",
+
+              confidence:
+                "high",
+
+              explanation:
+                "Plant science literature consistently documents glucosinolate production throughout Brassica crops, although concentrations vary substantially among cultivars and growing conditions."
+            },
+
+            {
+              finding:
+                "Proper dehydration greatly improves storage life.",
+
+              confidence:
+                "high",
+
+              explanation:
+                "Food preservation research consistently shows that sufficiently dried leafy vegetables remain stable when protected from moisture, insects, rodents, light, and heat."
+            }
+          ],
+
+          areasWithLimitedEvidence: [
+            {
+              topic:
+                "Exact safe backyard feeding percentage",
+
+              explanation:
+                "Published research does not establish one universally appropriate inclusion rate for every flock, management system, preparation method, or cultivar."
+            },
+
+            {
+              topic:
+                "Comparison of individual Kale cultivars for poultry",
+
+              explanation:
+                "Most available research evaluates Brassica species or processed leaf meals rather than detailed cultivar-by-cultivar backyard feeding performance."
+            },
+
+            {
+              topic:
+                "Long-term backyard flock productivity",
+
+              explanation:
+                "Controlled commercial nutrition trials generally differ substantially from backyard management conditions."
+            },
+
+            {
+              topic:
+                "Behavioral enrichment outcomes",
+
+              explanation:
+                "Practical experience strongly supports hanging leafy greens as enrichment, but relatively few controlled scientific studies quantify those behavioral benefits."
+            },
+
+            {
+              topic:
+                "Optimal preservation methods for backyard poultry use",
+
+              explanation:
+                "Most preservation guidance comes from food science and extension literature rather than poultry-specific feeding trials."
+            }
+          ],
+
+          researchLimitations: [
+            "Cultivar differences are often not reported.",
+            "Preparation methods differ among studies.",
+            "Fresh and dried leaves are frequently evaluated separately.",
+            "Commercial nutrition trials may not represent backyard conditions.",
+            "Diet formulation varies considerably between experiments.",
+            "Bird genetics differ among studies.",
+            "Environmental management influences results.",
+            "Measured inclusion rates cannot automatically be applied to informal supplemental feeding.",
+            "Many studies evaluate complete formulated diets rather than free-choice leafy supplementation."
+          ],
+
+          practicalInterpretation:
+            "Current evidence supports Kale and Collard Greens as valuable supplemental leafy crops that contribute enrichment, dietary diversity, and useful micronutrients. The available literature does not support replacing complete poultry feed with fresh Brassica foliage or assuming that research inclusion percentages for processed leaf meals apply directly to backyard feeding.",
+
+          extensionRecommendations: [
+            "Maintain a complete commercial ration as the nutritional foundation.",
+            "Offer leafy greens only as supplements.",
+            "Introduce new feeds gradually.",
+            "Avoid moldy, spoiled, or chemically contaminated foliage.",
+            "Prevent excessive dietary displacement.",
+            "Use proper sanitation during harvesting and storage.",
+            "Monitor flock response whenever introducing new feeds."
+          ],
+
+          primaryReferenceTypes: [
+            "University Extension publications",
+            "Peer-reviewed poultry nutrition research",
+            "Peer-reviewed Brassica crop research",
+            "Food composition databases",
+            "Agronomic production guides",
+            "Veterinary nutrition references",
+            "Food preservation research"
+          ],
+
+          evidenceStrengthSummary:
+            "The scientific literature provides strong support for the nutritional composition, agronomic production, and preservation of Kale and Collard Greens and moderate support for their use as supplemental poultry forage. Evidence consistently favors moderate supplemental use alongside balanced complete rations rather than major dietary replacement."
+        },
+
+        troubleshooting: {
+          birdsIgnoringLeaves: {
+            symptoms: [
+              "Leaves remain untouched.",
+              "Birds continue eating only complete feed.",
+              "Fresh foliage wilts before being consumed."
+            ],
+
+            likelyCauses: [
+              "Flock has never been offered leafy greens.",
+              "Leaves are overly mature or fibrous.",
+              "Birds already have abundant natural forage.",
+              "Leaves are contaminated or have begun deteriorating."
+            ],
+
+            mitigation: [
+              "Introduce small amounts gradually.",
+              "Offer young tender leaves first.",
+              "Hang leaves for pecking enrichment.",
+              "Try chopping or tearing large leaves.",
+              "Always use freshly harvested sound foliage."
+            ]
+          },
+
+          completeFeedDisplacement: {
+            symptoms: [
+              "Birds consume greens before balanced feed.",
+              "Complete feed remains in feeders.",
+              "Supplement intake becomes excessive."
+            ],
+
+            likelyCauses: [
+              "Too many leafy supplements.",
+              "Large unrestricted portions.",
+              "Too many treats offered throughout the day."
+            ],
+
+            mitigation: [
+              "Reduce the amount offered.",
+              "Offer greens after birds have eaten balanced feed.",
+              "Limit total supplemental feeding.",
+              "Monitor complete-feed intake."
+            ]
+          },
+
+          rapidPlantDestruction: {
+            symptoms: [
+              "Plants stripped to stems.",
+              "Growing points destroyed.",
+              "Roots exposed from scratching."
+            ],
+
+            likelyCauses: [
+              "Direct unrestricted flock access.",
+              "Small planting area.",
+              "Heavy stocking density."
+            ],
+
+            mitigation: [
+              "Use forage protection frames.",
+              "Harvest leaves instead of allowing unrestricted grazing.",
+              "Rotate grazing locations.",
+              "Increase planting area."
+            ]
+          },
+
+          spoilageProblems: {
+            symptoms: [
+              "Slimy leaves.",
+              "Sour odor.",
+              "Visible mold.",
+              "Wilted decomposing foliage."
+            ],
+
+            likelyCauses: [
+              "Delayed refrigeration.",
+              "Warm humid weather.",
+              "Wet storage.",
+              "Old harvested leaves."
+            ],
+
+            mitigation: [
+              "Harvest more frequently.",
+              "Refrigerate promptly.",
+              "Discard spoiled material immediately.",
+              "Prepare only what will be consumed promptly."
+            ]
+          },
+
+          driedLeafProblems: {
+            symptoms: [
+              "Leaf flakes soften.",
+              "Powder clumps.",
+              "Musty odor develops."
+            ],
+
+            likelyCauses: [
+              "Incomplete drying.",
+              "Moisture entering storage.",
+              "Poor container seal."
+            ],
+
+            mitigation: [
+              "Dry completely before storage.",
+              "Use airtight moisture-resistant containers.",
+              "Inspect stored material regularly.",
+              "Discard questionable batches."
+            ]
+          }
+        },
+
+        faq: [
+          {
+            question:
+              "Can chickens eat Kale every day?",
+
+            answer:
+              "Kale may be offered regularly as a supplement, but it should never replace an age-appropriate complete poultry ration."
+          },
+
+          {
+            question:
+              "Are Collard Greens safe for chickens?",
+
+            answer:
+              "Yes. Sound untreated Collard Greens are generally considered an excellent supplemental leafy vegetable for established chickens."
+          },
+
+          {
+            question:
+              "Should Kale or Collards be cooked first?",
+
+            answer:
+              "No. Fresh clean leaves are generally suitable. Plain cooked leaves are also acceptable but are not required."
+          },
+
+          {
+            question:
+              "Can baby chicks eat Kale?",
+
+            answer:
+              "Routine feeding is not recommended. Young chicks should receive a complete chick starter as their primary nutrition."
+          },
+
+          {
+            question:
+              "Can chickens eat Kale stems?",
+
+            answer:
+              "Tender stems may be eaten, but large mature stems are often fibrous and have relatively little feeding value."
+          },
+
+          {
+            question:
+              "Can I freeze Kale for winter feeding?",
+
+            answer:
+              "Yes. Proper blanching followed by freezing is an effective preservation method, although thawed leaves should be fed promptly."
+          },
+
+          {
+            question:
+              "Can dehydrated Kale replace fresh leaves?",
+
+            answer:
+              "No. Dehydrated leaves are much more concentrated and should be used in considerably smaller measured amounts."
+          },
+
+          {
+            question:
+              "Will Kale increase egg production?",
+
+            answer:
+              "No dependable increase should be expected. Kale supports dietary variety but does not replace balanced layer nutrition."
+          },
+
+          {
+            question:
+              "Does Kale darken egg yolks?",
+
+            answer:
+              "Carotenoids present in the leaves may contribute to yolk pigmentation when consumed within a balanced diet."
+          },
+
+          {
+            question:
+              "Can chickens graze living Kale plants?",
+
+            answer:
+              "Yes, but unrestricted access often destroys the crop. Protected forage systems usually produce better long-term results."
+          }
+        ],
+
+        expertSummary: {
+          oneSentence:
+            "Kale and Collard Greens are among the best cool-season leafy supplements available for backyard chickens when used alongside a complete balanced ration.",
+
+          oneParagraph:
+            "Their greatest strengths are repeated harvest, excellent enrichment value, dependable cool-season production, and nutrient-rich leafy forage. Their primary limitations are low concentrated energy, incomplete protein and amino-acid balance, glucosinolate content, rapid fresh-leaf spoilage, and the possibility of reducing complete-feed intake if offered excessively.",
+
+          recommendation:
+            "Highly Recommended",
+
+          recommendationReasoning:
+            "Excellent supplemental crop for backyard flocks because it combines strong agronomic performance, repeated harvest, outstanding enrichment value, and useful nutritional diversity while integrating well into household gardens.",
+
+          idealUseCase:
+            "Fresh hanging leaves, cut-and-carry harvests, protected forage systems, household vegetable production, and cool-season supplemental feeding.",
+
+          notRecommendedAs:
+            "A replacement for complete poultry feed, a primary energy source, a complete protein source, or the flock's primary calcium supply."
+        },
+
+        scientificNotes: {
+          taxonomy:
+            "Brassica oleracea Acephala Group",
+
+          researchNotes: [
+            "Most poultry literature evaluates Brassica crops as supplemental leafy forage or processed leaf meals.",
+            "Human food composition databases provide extensive nutrient analyses.",
+            "Glucosinolate concentrations vary substantially among cultivars and environmental conditions.",
+            "Fresh and dehydrated products should not be considered nutritionally equivalent.",
+            "Commercial ration research should not automatically be applied to backyard supplemental feeding."
+          ],
+
+          plannerConsiderations: [
+            "Treat as a supplemental leafy crop.",
+            "Avoid allowing complete-feed displacement.",
+            "Recognize differences between fresh, frozen, cooked, and dehydrated forms.",
+            "Account for glucosinolate exposure from all Brassica crops combined.",
+            "Emphasize enrichment value within recommendation scoring."
+          ],
+
+          futureResearchTopics: [
+            "Cultivar-specific poultry preference.",
+            "Long-term backyard production studies.",
+            "Optimal protected-forage management.",
+            "Behavioral enrichment measurements.",
+            "Comparison of dehydration methods.",
+            "Seasonal nutrient variation among cultivars."
+          ]
+        },
+
+        practicalUse: {
+          idealHomesteadUses: [
+            "Backyard laying flocks",
+            "Cut-and-carry feeding",
+            "Hanging leaf enrichment",
+            "Protected forage systems",
+            "Raised-bed production",
+            "Household vegetable gardens",
+            "Winter and cool-season supplementation",
+            "Garden-to-coop nutrient cycling"
+          ],
+
+          lessSuitableUses: [
+            "Large commercial feed replacement",
+            "Primary poultry feed production",
+            "High-energy feed production",
+            "Long-term fresh storage without preservation",
+            "Unprotected continuous grazing"
+          ],
+
+          backyardRecommendation:
+            "One of the best leafy crops a backyard chicken keeper can grow. Easy production, repeated harvest, exceptional enrichment value, and dependable cool-season performance make Kale and Collard Greens excellent additions to nearly every diversified homestead.",
+
+          commercialRecommendation:
+            "Most commercial poultry operations would use processed Brassica ingredients only as formulated ration components rather than relying on fresh leafy feeding systems."
+        }
+      },
+
+        metadata: {
+          feedingReferenceVersion:
+            "1.0.0",
+
+          templateVersion:
+            "1.0.0",
+
+          cropSpecificReviewStatus:
+            "reviewed",
+
+          confidenceLevel:
+            "high",
+
+          lastReviewed:
+            "2026-07",
+
+          intendedAudience: [
+            "Backyard chicken keepers",
+            "Homesteaders",
+            "Small flock owners",
+            "Educators",
+            "Feed-planner engine",
+            "Future AI assistant"
+          ],
+
+          sourceRecordFields: [
+            "identity",
+            "summary",
+            "chickenUse",
+            "nutrition",
+            "harvest",
+            "storage",
+            "risks",
+            "usePaths",
+            "seasonalRoles",
+            "dataQuality"
+          ],
+
+          designGoals: [
+            "Power the 'Can My Chickens Eat This?' tool",
+            "Provide structured data for future calculators",
+            "Support FAQ generation",
+            "Support AI responses",
+            "Support printable crop sheets",
+            "Support comparison tables",
+            "Support feed recommendations",
+            "Maintain consistency across all feed crops"
+          ]
+        
+      },
+      
+        chickenUse: {
         edibleParts: [
           "Fresh mature leaves",
           "Young tender leaves",
