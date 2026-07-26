@@ -159703,7 +159703,6 @@ usePaths: [
 
           recommendedAction:
             "Do not feed Barley with an abnormal odor. Remove the lot from flock access and discard it rather than attempting to air it out, dry it again, cook it, grind it, sprout it, or blend it with sound grain."
-      },
 
         },
 
@@ -160181,7 +160180,7 @@ usePaths: [
           "Support feed recommendations",
           "Maintain consistency across all feed crops"
         ]
-      
+      }
     },
     
     
