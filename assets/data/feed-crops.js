@@ -128089,7 +128089,13 @@ feedingReference: {
         ]
       },
 
-      expertSummary: {
+            expertSummary: {
+        summary:
+          "Buckwheat is a rapidly maturing annual pseudocereal valued for supplemental grain production, pollinator support, weed suppression, phosphorus scavenging, and flexible short-season crop rotations. For poultry, its safest and most useful feeding value comes from clean mature grain rather than green leaves, flowers, or stems.",
+
+        overallRecommendation:
+          "Recommended as a useful short-season supplemental grain for established adult chickens when the mature seed is harvested, thoroughly dried, properly stored, and offered in measured amounts alongside a nutritionally complete poultry ration.",
+
         agronomicSummary:
           "Buckwheat is a rapidly maturing annual pseudocereal valued for grain production, weed suppression, pollinator support, phosphorus scavenging, short crop rotations, and temporary summer soil cover. Most backyard plantings mature within approximately 70 to 90 days under favorable conditions.",
 
@@ -128097,7 +128103,7 @@ feedingReference: {
           "For poultry, Buckwheat's value comes almost entirely from mature cleaned grain rather than green vegetation. Whole grain, dehulled groats, cracked grain, and coarsely ground grain can all serve as measured supplements for established adult chickens. Buckwheat contributes useful starch-based energy, moderate protein, relatively favorable lysine compared with many cereal grains, and nutritional diversity, but it remains nutritionally incomplete and should never replace a balanced poultry ration.",
 
         managementSummary:
-          "Successful Buckwheat feeding depends primarily on proper harvest timing, thorough drying, careful cleaning, rodent-proof storage, routine inspection, moderate supplementation, and maintaining unrestricted access to complete feed. Green plant tissues should not be treated as unrestricted forage because they contain greater concentrations of fagopyrins.",
+          "Successful Buckwheat feeding depends primarily on proper harvest timing, thorough drying, careful cleaning, rodent-resistant storage, routine inspection, moderate supplementation, and maintaining unrestricted access to complete feed. Green plant tissues should not be treated as unrestricted forage because they contain greater concentrations of fagopyrins.",
 
         bestUseCases: [
           "Seasonal supplemental grain",
