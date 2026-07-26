@@ -105394,129 +105394,353 @@ feedingReference: {
           "Whole mature Wheat commonly stores for many months when properly dried, cleaned, cooled, and protected. Whole heads generally store well for seasonal enrichment, while cracked or ground Wheat should be used much sooner. Fresh sprouts should be fed immediately after production."
       },
 
-      spoilageAndContamination: {
-        spoilageRisk:
-          "moderate",
+            spoilageAndContamination: {
+        spoilageSummary:
+          "Wheat grain and seed heads can remain useful for many months when fully mature, thoroughly dried, cooled, cleaned, and protected. The principal hazards are moisture-related mold, internal heating, Fusarium-damaged grain, ergot contamination, preharvest sprouting, storage insects, rodents, treated planting seed, and other chemical or biological contamination.",
 
-        primarySpoilageConcerns: [
+        primarySpoilageRisks: [
           {
-            concern:
+            risk:
               "Storage mold",
 
-            severity:
-              "high",
-
-            explanation:
-              "Moisture, condensation, inadequate drying, or poor ventilation may allow mold development."
-          },
-
-          {
-            concern:
-              "Fusarium head blight",
-
-            severity:
-              "high",
-
-            explanation:
-              "Fusarium infection can produce harmful mycotoxins that may render grain unsuitable for poultry."
-          },
-
-          {
-            concern:
-              "Ergot contamination",
-
-            severity:
-              "critical",
-
-            explanation:
-              "Ergot bodies contain toxic alkaloids and contaminated grain should never be fed."
-          },
-
-          {
-            concern:
-              "Heating",
-
-            severity:
-              "high",
-
-            explanation:
-              "Grain stored before reaching safe moisture content may heat internally and deteriorate rapidly."
-          },
-
-          {
-            concern:
-              "Insect infestation",
-
-            severity:
+            likelihood:
               "moderate",
 
-            explanation:
-              "Stored-product insects reduce grain quality and frequently accompany moisture or sanitation problems."
+            primaryCauses: [
+              "Grain stored above a safe moisture level",
+              "Seed heads stored before complete drying",
+              "Condensation inside storage containers",
+              "High storage humidity",
+              "Water leaks",
+              "Poor airflow during drying",
+              "Mixing damp grain with dry grain"
+            ],
+
+            warningSigns: [
+              "Visible fungal growth",
+              "Musty odor",
+              "Damp clumping",
+              "Abnormal discoloration",
+              "Soft or deteriorating kernels",
+              "Condensation inside the container"
+            ],
+
+            response:
+              "Discard moldy or musty Wheat. Do not attempt to dry it again, mix it with sound grain, or feed around the visibly affected material."
           },
 
           {
-            concern:
-              "Rodent contamination",
+            risk:
+              "Internal heating",
 
-            severity:
-              "high",
+            likelihood:
+              "moderate",
 
-            explanation:
-              "Rodents contaminate grain with urine, feces, nesting material, and disease organisms."
+            primaryCauses: [
+              "Grain stored too wet",
+              "Seed heads packed together before cooling",
+              "High respiration in immature or damaged grain",
+              "Insect activity",
+              "Poor ventilation",
+              "Large warm grain masses sealed too quickly"
+            ],
+
+            warningSigns: [
+              "Grain feels warmer than the surrounding air",
+              "Warm air escapes when the container is opened",
+              "Condensation",
+              "Sour or fermenting odor",
+              "Caking",
+              "Rapid insect activity"
+            ],
+
+            response:
+              "Do not feed heated Wheat. Separate it from sound grain and discard it because heating may indicate active spoilage that is not visible throughout the entire batch."
           },
 
           {
-            concern:
+            risk:
               "Preharvest sprouting",
 
-            severity:
+            likelihood:
+              "weather-dependent",
+
+            primaryCauses: [
+              "Prolonged rainfall after grain maturity",
+              "Repeated dew exposure",
+              "Delayed harvest",
+              "Cultivar susceptibility",
+              "Lodged heads remaining close to wet soil"
+            ],
+
+            warningSigns: [
+              "Visible roots or shoots emerging from kernels",
+              "Soft kernels",
+              "Shriveled grain",
+              "Uneven grain color",
+              "Reduced kernel hardness",
+              "Musty odor after wet harvest weather"
+            ],
+
+            response:
+              "Inspect sprouted grain carefully. Grain showing mold, heating, sour odor, severe deterioration, or uncertain quality should be discarded rather than stored or fed."
+          },
+
+          {
+            risk:
+              "Insect deterioration",
+
+            likelihood:
+              "moderate-during-long-storage",
+
+            primaryCauses: [
+              "Warm storage conditions",
+              "Long storage periods",
+              "Previously infested containers",
+              "Cracked or broken kernels",
+              "Poor storage sanitation",
+              "Failure to rotate stored grain"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Powdery grain residue",
+              "Hollow kernels",
+              "Unusual heating",
+              "Rapid increase in broken material"
+            ],
+
+            response:
+              "Discard heavily infested or deteriorated grain. Clean and sanitize the storage area and containers before introducing a new batch."
+          },
+
+          {
+            risk:
+              "Wet-litter spoilage after feeding",
+
+            likelihood:
               "moderate",
 
-            explanation:
-              "Rainfall before harvest may initiate sprouting and reduce grain quality."
+            primaryCauses: [
+              "Loose grain scattered into wet bedding",
+              "Whole heads left outdoors during rain",
+              "Offering more grain than the flock consumes promptly",
+              "Feed accumulating beneath hanging heads",
+              "Waterer leakage"
+            ],
+
+            warningSigns: [
+              "Swollen or soft kernels",
+              "Mold in litter",
+              "Sour odor",
+              "Persistent uneaten grain",
+              "Rodent or insect activity around leftovers"
+            ],
+
+            response:
+              "Remove uneaten wet grain and affected litter promptly. Reduce the amount offered and correct water leaks or other sources of moisture."
           }
         ],
 
-        signsOfSpoilage: [
-          "Visible mold",
-          "Musty odor",
-          "Sour odor",
-          "Heating",
-          "Condensation",
-          "Sprouted kernels",
-          "Caking",
-          "Ergot bodies",
-          "Pink or discolored Fusarium-damaged kernels",
-          "Extensive insect activity",
-          "Rodent evidence",
-          "Abnormal discoloration"
+        contaminationRisks: [
+          {
+            contaminant:
+              "Fusarium-damaged Wheat and associated mycotoxins",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Bleached or prematurely whitened heads",
+              "Pink, salmon, orange, or reddish fungal discoloration",
+              "Shriveled lightweight kernels",
+              "Chalky or discolored grain",
+              "Known Fusarium head blight in the crop"
+            ],
+
+            guidance:
+              "Do not feed Wheat suspected of Fusarium head blight or mycotoxin contamination. Visual inspection cannot establish toxin concentration, and apparently unaffected kernels may still be part of a contaminated lot."
+          },
+
+          {
+            contaminant:
+              "Ergot",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Dark purple, black, or brown elongated bodies replacing normal kernels",
+              "Hard irregular structures within harvested grain",
+              "Known ergot infection in nearby grasses or cereal crops"
+            ],
+
+            guidance:
+              "Do not feed ergot-contaminated Wheat. Remove and discard the entire questionable batch rather than trying to dilute it with sound grain."
+          },
+
+          {
+            contaminant:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Brightly colored seed coating",
+              "Printed treatment warnings on the seed bag",
+              "Fungicide or insecticide labeling",
+              "Seed sold specifically for planting",
+              "Uncertain source or treatment history"
+            ],
+
+            guidance:
+              "Never feed or sprout planting seed unless it is explicitly documented as untreated and suitable for animal feed or human food use."
+          },
+
+          {
+            contaminant:
+              "Rodent contamination",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Droppings",
+              "Urine staining",
+              "Chewed containers",
+              "Nesting material",
+              "Rodent hair",
+              "Dead rodents",
+              "Strong ammonia-like odor"
+            ],
+
+            guidance:
+              "Discard rodent-contaminated Wheat. Do not screen, wash, or feed around visibly contaminated portions."
+          },
+
+          {
+            contaminant:
+              "Floodwater, soil, manure, or chemical contamination",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Known flood exposure",
+              "Contact with fuel, oil, pesticides, cleaners, or fertilizers",
+              "Persistent unusual odor",
+              "Heavy soil or manure contamination",
+              "Unknown storage history"
+            ],
+
+            guidance:
+              "Discard Wheat exposed to floodwater, chemicals, manure contamination, or an unknown contaminant. Washing does not reliably restore unsafe grain."
+          },
+
+          {
+            contaminant:
+              "Weed seed and foreign material in screenings",
+
+            riskLevel:
+              "variable",
+
+            identificationClues: [
+              "Large quantities of unidentified weed seed",
+              "Stones",
+              "Metal fragments",
+              "Glass",
+              "Twine",
+              "Treated seed",
+              "Diseased or badly damaged kernels"
+            ],
+
+            guidance:
+              "Do not feed unsorted screenings unless every component has been identified and determined to be safe. Screenings may concentrate contaminants removed from otherwise usable grain."
+          }
         ],
 
-        discardImmediatelyIf: [
-          "Visible mold develops.",
-          "Musty or sour odors appear.",
-          "Grain heats during storage.",
-          "Ergot bodies are present.",
-          "Fusarium head blight is suspected.",
-          "Rodent contamination occurs.",
-          "Chemical contamination is possible.",
-          "Treated planting seed becomes mixed with feed.",
-          "Grain ferments.",
-          "Water damage or flooding occurs."
+        spoilageIndicators: [
+          {
+            indicator:
+              "Visible mold or fungal growth",
+
+            action:
+              "Discard the affected Wheat and inspect nearby stored material."
+          },
+
+          {
+            indicator:
+              "Musty, sour, fermenting, or otherwise abnormal odor",
+
+            action:
+              "Do not feed the Wheat. Discard the questionable batch."
+          },
+
+          {
+            indicator:
+              "Grain or seed heads feel warm during storage",
+
+            action:
+              "Treat the material as actively deteriorating and do not feed it."
+          },
+
+          {
+            indicator:
+              "Condensation inside the container",
+
+            action:
+              "Inspect the entire batch for moisture damage, heating, and mold. Discard material of uncertain quality."
+          },
+
+          {
+            indicator:
+              "Dark ergot-like bodies",
+
+            action:
+              "Do not feed any part of the contaminated batch."
+          },
+
+          {
+            indicator:
+              "Pink, salmon, reddish, bleached, or severely shriveled kernels",
+
+            action:
+              "Treat the grain as possible Fusarium-damaged Wheat and do not feed it without appropriate professional evaluation."
+          },
+
+          {
+            indicator:
+              "Extensive insect activity, webbing, or powdery residue",
+
+            action:
+              "Discard heavily infested grain and clean the storage system."
+          },
+
+          {
+            indicator:
+              "Rodent droppings, urine, nesting material, or chewing damage",
+
+            action:
+              "Discard contaminated grain and improve rodent exclusion."
+          },
+
+          {
+            indicator:
+              "Wet, caked, slimy, or heavily sprouted grain",
+
+            action:
+              "Do not feed the material."
+          }
         ],
 
-        prevention: [
-          "Harvest only mature grain.",
-          "Dry thoroughly before storage.",
-          "Cool grain before sealing.",
-          "Use food-grade rodent-resistant containers.",
-          "Inspect stored grain regularly.",
-          "Keep storage areas clean and dry.",
-          "Prevent condensation.",
-          "Rotate stored grain.",
-          "Remove damaged kernels during cleaning.",
-          "Never mix questionable grain with sound grain."
-        ]
+        sensoryInspectionLimitations:
+          "Visual appearance, smell, touch, and temperature checks are useful for finding obvious spoilage, but they cannot prove that Wheat is free from mycotoxins, pesticide residues, chemical contamination, or invisible microbial hazards. Grain associated with Fusarium head blight, ergot, flooding, treated seed, or uncertain contamination should not be considered safe merely because some kernels appear normal.",
+
+        salvageWarning:
+          "Do not attempt to salvage unsafe Wheat by drying it again, washing it, removing only visibly damaged kernels, blending it with sound grain, cooking it, sprouting it, or feeding smaller quantities. When mold, ergot, Fusarium damage, chemical treatment, rodent contamination, heating, or unknown contamination is suspected, discard the questionable batch."
       },
 
       commonFeedingMistakes: {
@@ -105923,6 +106147,39 @@ feedingReference: {
             answer:
               "Yes. Properly dried, cleaned, and protected whole Wheat grain stores exceptionally well and is one of the best homegrown cereal grains for long-term supplemental feeding."
           }
+        ]
+      },
+
+                 expertSummary: {
+        oneSentence:
+          "Wheat is one of the most versatile supplemental feed crops for backyard chickens because it can provide cool-season forage, high-energy grain, whole-head enrichment, sprouts, and dependable winter storage, but it should never replace a nutritionally complete poultry ration.",
+
+        oneParagraph:
+          "Among practical homestead cereal crops, Wheat offers an unusually broad range of uses. Young plants can provide cool-season forage, mature grain supplies concentrated starch energy and moderate protein, and intact seed heads provide valuable pecking and foraging enrichment without requiring complete threshing and cleaning. Thoroughly dried whole grain can also remain useful for many months in protected storage. Wheat's limitations are primarily nutritional and management-related: it supplies very little calcium, its amino-acid balance is incomplete, much of its phosphorus is associated with phytate, and arabinoxylans may reduce nutrient utilization when Wheat is incorporated improperly into poultry diets. Used in measured amounts alongside an age-appropriate complete ration, Wheat is one of the strongest multipurpose feed crops available to backyard chicken keepers.",
+
+        recommendation:
+          "Highly Recommended",
+
+        recommendationReasoning: [
+          "Excellent supplemental cereal-energy source",
+          "Useful cool-season forage crop",
+          "Outstanding whole-head enrichment",
+          "Excellent winter-storage value",
+          "Moderate supplemental protein contribution",
+          "Multiple feeding forms from one annual crop",
+          "Strong cover-crop and homestead value"
+        ],
+
+        idealUseCase:
+          "A multipurpose cool-season crop used for protected forage, cut-and-carry greens, mature grain, stored seed heads, postharvest gleaning, and seasonal enrichment alongside a balanced complete poultry ration.",
+
+        notRecommendedAs: [
+          "Primary flock ration",
+          "Only protein source",
+          "Primary calcium source",
+          "Unlimited free-choice grain",
+          "Routine young-chick supplement",
+          "Replacement for a professionally balanced poultry feed"
         ]
       },
 
