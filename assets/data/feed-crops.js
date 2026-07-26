@@ -158179,6 +158179,168 @@ usePaths: [
           "Most Barley feeding concerns can be managed successfully through moderation, proper ration formulation, careful harvest and storage practices, appropriate processing, and strict rejection of contaminated grain."
       },
 
+            complementaryFeeding: {
+        purpose:
+          "Barley should complement a complete ration rather than be used as the nutritional foundation.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, digestible amino acids, vitamins, minerals, sodium, and calcium that Barley cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration provides the nutritional balance required by mixed or breeding flocks while Barley remains a measured supplemental grain."
+          },
+
+          {
+            feedType:
+              "Protein-oriented formulated ingredients",
+
+            relationship:
+              "Properly processed Soybeans, Field Peas, Cowpeas, soybean meal, or other suitable protein ingredients can help address the protein and amino-acid limitations of Barley when included in a professionally balanced ration."
+          },
+
+          {
+            feedType:
+              "Higher-energy cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Wheat, Grain Sorghum, Proso Millet, and other grains provide different starch, energy, fiber, and protein characteristics. Combining grains informally does not by itself create a balanced poultry ration."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the calcium deficiency of Barley."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, Clover, Alfalfa, Comfrey, Mulberry, and other appropriate forage crops contribute fresh leaves, carotenoids, minerals, moisture, and enrichment that dry Barley grain does not provide."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient methionine",
+          "Insufficient lysine",
+          "Insufficient threonine",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Insufficient sodium",
+          "Excessive dietary fiber",
+          "Excessive beta-glucan exposure",
+          "Poor-quality complete feed",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed"
+        ],
+
+        pairingWarning:
+          "Combining Barley with several other homegrown ingredients does not automatically produce a nutritionally complete diet. Significant ration inclusion requires calculation of metabolizable energy, protein, digestible amino acids, beta-glucans, fiber, fat, calcium, available phosphorus, sodium, vitamins, trace minerals, enzyme use, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use clean Barley grain, tender forage, sprouts, or sound mature heads only in measured supplemental amounts."
+      },
+
+            complementaryFeeding: {
+        purpose:
+          "Barley should complement a complete ration rather than be used as the nutritional foundation.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, digestible amino acids, vitamins, minerals, sodium, and calcium that Barley cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration provides the nutritional balance required by mixed or breeding flocks while Barley remains a measured supplemental grain."
+          },
+
+          {
+            feedType:
+              "Protein-oriented formulated ingredients",
+
+            relationship:
+              "Properly processed Soybeans, Field Peas, Cowpeas, soybean meal, or other suitable protein ingredients can help address the protein and amino-acid limitations of Barley when included in a professionally balanced ration."
+          },
+
+          {
+            feedType:
+              "Higher-energy cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Wheat, Grain Sorghum, Proso Millet, and other grains provide different starch, energy, fiber, and protein characteristics. Combining grains informally does not by itself create a balanced poultry ration."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the calcium deficiency of Barley."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, Clover, Alfalfa, Comfrey, Mulberry, and other appropriate forage crops contribute fresh leaves, carotenoids, minerals, moisture, and enrichment that dry Barley grain does not provide."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient methionine",
+          "Insufficient lysine",
+          "Insufficient threonine",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Insufficient sodium",
+          "Excessive dietary fiber",
+          "Excessive beta-glucan exposure",
+          "Poor-quality complete feed",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed"
+        ],
+
+        pairingWarning:
+          "Combining Barley with several other homegrown ingredients does not automatically produce a nutritionally complete diet. Significant ration inclusion requires calculation of metabolizable energy, protein, digestible amino acids, beta-glucans, fiber, fat, calcium, available phosphorus, sodium, vitamins, trace minerals, enzyme use, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use clean Barley grain, tender forage, sprouts, or sound mature heads only in measured supplemental amounts."
+      },
+
+      
+
       feedingMethods: {
         philosophy:
           "Barley should be treated as a measured supplemental grain, seasonal forage, sprouting crop, enrichment material, or properly formulated ration ingredient rather than as an unrestricted staple feed. Every feeding method should protect consumption of the flock's complete ration and account for Barley's beta-glucans, hull fiber, storage risks, and incomplete nutrient balance.",
