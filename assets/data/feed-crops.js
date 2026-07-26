@@ -118346,159 +118346,313 @@ feedingReference: {
             "Most Jerusalem Artichoke feeding problems result from replacing complete feed, introducing too much too quickly, confusing fresh tubers with dried formulated ingredients, feeding spoiled material, storing harvested tubers incorrectly, or allowing uncontrolled access to the permanent patch."
         },
 
-        troubleshooting: {
-          commonQuestions: [
-            {
-              problem:
-                "My chickens refuse to eat Jerusalem Artichoke tubers.",
+                troubleshooting: {
+          flockIgnoresWholeTubers: {
+            possibleCauses: [
+              "Birds are unfamiliar with the food",
+              "The tubers are too large or hard to open",
+              "The flock already has adequate complete feed",
+              "The tubers are immature",
+              "The tubers are shriveled, deteriorated, or poor quality",
+              "Another preferred supplemental food is available"
+            ],
 
-              likelyCauses: [
-                "The flock has never encountered the food before.",
-                "Pieces are too large.",
-                "Birds are already full from complete feed.",
-                "The tubers are immature or poor quality.",
-                "A preferred supplemental food is available."
-              ],
+            recommendedActions: [
+              "Confirm that the tubers are firm, sound, clean, and free from spoilage.",
+              "Split, chop, or lightly crush larger tubers.",
+              "Introduce only a small amount alongside familiar feed.",
+              "Offer the supplement after birds have begun consuming their complete ration.",
+              "Do not withhold complete feed to force consumption.",
+              "Discard the tubers if odor, texture, or quality is questionable."
+            ]
+          },
 
-              recommendedSolutions: [
-                "Introduce only small amounts alongside familiar feed.",
-                "Split, chop, or lightly crush larger tubers.",
-                "Offer the supplement after birds have begun eating their complete ration.",
-                "Use only firm, mature, sound tubers.",
-                "Allow several short introductions before deciding the flock dislikes the crop."
-              ]
-            },
+          flockIgnoresChoppedTubers: {
+            possibleCauses: [
+              "The flock does not recognize the pieces as food",
+              "The tubers have dried out after cutting",
+              "The pieces are contaminated with soil or litter",
+              "The flock already has adequate complete feed",
+              "The tubers have an abnormal odor or texture"
+            ],
 
-            {
-              problem:
-                "Droppings became looser after introducing Jerusalem Artichokes.",
+            recommendedActions: [
+              "Prepare a very small fresh portion.",
+              "Offer the pieces in a clean raised feeder or produce pan.",
+              "Lightly crush one piece to expose the moist interior.",
+              "Remove pieces that become dry, dirty, warm, slimy, or otherwise deteriorated.",
+              "Do not force consumption by removing the complete ration."
+            ]
+          },
 
-              likelyCauses: [
-                "Too much was offered too quickly.",
-                "High intake of fermentable inulin and related fructans.",
-                "Fresh tubers displaced normal feed intake."
-              ],
+          flockIgnoresTenderFoliage: {
+            possibleCauses: [
+              "The foliage is too mature",
+              "Leaves or shoots have become coarse and fibrous",
+              "The foliage has wilted",
+              "Birds prefer the tubers or other available greens",
+              "The flock is unfamiliar with the plant material"
+            ],
 
-              recommendedSolutions: [
-                "Reduce the amount immediately.",
-                "Return to the previous feeding level until droppings normalize.",
-                "Introduce more gradually over future feedings.",
-                "Maintain unrestricted access to the complete ration."
-              ]
-            },
+            recommendedActions: [
+              "Harvest only clean tender young leaves and shoots.",
+              "Offer a very small freshly cut portion.",
+              "Place the foliage where birds can inspect and peck it easily.",
+              "Remove wilted or contaminated leftovers.",
+              "Direct mature stems and coarse foliage to compost or mulch rather than poultry feed."
+            ]
+          },
 
-            {
-              problem:
-                "The flock ignores the tender foliage.",
+          dominantBirdsMonopolizeFeed: {
+            possibleCauses: [
+              "Too few tubers or feeding stations",
+              "Prepared pieces are placed in one small pile",
+              "Limited enclosure space",
+              "Strong existing flock hierarchy",
+              "Unrestricted access to one exposed digging location"
+            ],
 
-              likelyCauses: [
-                "Birds prefer the tubers.",
-                "The foliage is too mature.",
-                "Other green forage is available."
-              ],
+            recommendedActions: [
+              "Provide several separate tubers, dishes, or feeding locations.",
+              "Space feeding locations widely apart.",
+              "Distribute split pieces among multiple clean pans.",
+              "Place some stations behind visual barriers.",
+              "Observe lower-ranking birds to confirm access."
+            ]
+          },
 
-              recommendedSolutions: [
-                "Harvest only young tender growth.",
-                "Offer small freshly cut portions.",
-                "Remove uneaten foliage before it wilts or spoils."
-              ]
-            },
+          completeFeedConsumptionDeclines: {
+            likelyCause:
+              "The Jerusalem Artichoke supplement is too abundant, too frequent, or more accessible than the complete ration.",
 
-            {
-              problem:
-                "Harvested tubers shrivel quickly.",
+            recommendedActions: [
+              "Reduce or temporarily stop Jerusalem Artichoke feeding.",
+              "Provide fresh complete feed in adequate feeder space.",
+              "Offer tubers only after birds have begun consuming their complete ration.",
+              "Confirm that the complete feed is not stale, wet, moldy, or inaccessible.",
+              "Monitor whether normal complete-feed consumption resumes."
+            ]
+          },
 
-              likelyCauses: [
-                "Storage humidity is too low.",
-                "Storage temperature is too warm.",
-                "Tubers were damaged during harvest.",
-                "Tubers have been stored too long after harvest."
-              ],
+          looseDroppingsAfterIntroduction: {
+            possibleCauses: [
+              "Sudden dietary change",
+              "Excessive tuber intake",
+              "High intake of fermentable inulin and related fructans",
+              "Fresh tubers displaced normal complete-feed intake",
+              "Consumption of spoiled or fermenting tubers",
+              "An unrelated health problem"
+            ],
 
-              recommendedSolutions: [
-                "Leave tubers in the ground until needed whenever practical.",
-                "Store harvested tubers cold, dark, and humid.",
-                "Handle tubers carefully during harvest.",
-                "Use harvested tubers before quality declines."
-              ]
-            },
+            recommendedActions: [
+              "Stop the Jerusalem Artichoke supplement temporarily.",
+              "Restore unrestricted access to fresh complete feed and clean water.",
+              "Inspect all remaining tubers for mold, rot, slime, fermentation, freezing injury, or contamination.",
+              "Replace wet or heavily soiled litter.",
+              "Reintroduce only a much smaller amount after droppings return to normal.",
+              "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+            ]
+          },
 
-            {
-              problem:
-                "Tubers developed mold or soft rot during storage.",
+          litterBecomesTooWet: {
+            possibleCauses: [
+              "Excessive intake of high-moisture fresh tubers",
+              "Loose droppings following rapid introduction",
+              "Chopped pieces scattered into bedding",
+              "Uneaten tubers retaining moisture in the run",
+              "Poor ventilation or unrelated water leakage"
+            ],
 
-              likelyCauses: [
-                "Condensation formed inside the container.",
-                "Damaged tubers were stored with sound ones.",
-                "Poor airflow.",
-                "Storage temperatures were too warm.",
-                "Tubers were stored wet."
-              ],
+            recommendedActions: [
+              "Reduce or stop the fresh-tuber supplement.",
+              "Remove uneaten pieces promptly.",
+              "Replace wet or heavily soiled bedding.",
+              "Improve ventilation and correct leaking waterers or rain entry.",
+              "Reintroduce only small controlled portions after conditions normalize."
+            ]
+          },
 
-              recommendedSolutions: [
-                "Discard affected tubers immediately.",
-                "Inspect the remaining batch carefully.",
-                "Improve ventilation and temperature control.",
-                "Allow washed tubers to dry before storage.",
-                "Separate damaged tubers from sound ones."
-              ]
-            },
+          tubersShrivelDuringStorage: {
+            likelyCauses: [
+              "Storage humidity is too low",
+              "Storage temperature is too warm",
+              "The tubers were damaged during harvest",
+              "Thin-skinned tubers have been stored too long after harvest",
+              "Excess dry airflow is passing directly over the tubers"
+            ],
 
-            {
-              problem:
-                "The patch is spreading farther than expected.",
+            recommendedActions: [
+              "Leave sound mature tubers in well-drained soil until needed whenever practical.",
+              "Move harvested tubers to cold, dark, high-humidity storage without free water.",
+              "Protect tubers from warm dry air.",
+              "Use mildly shriveled but otherwise sound tubers promptly.",
+              "Discard severely deteriorated tubers or any material with mold, slime, leakage, or abnormal odor."
+            ]
+          },
 
-              likelyCauses: [
-                "Missed tubers remained in the soil.",
-                "Small tuber fragments regenerated.",
-                "Natural perennial colony expansion."
-              ],
+          storedTubersDevelopCondensation: {
+            likelyCauses: [
+              "Freshly washed tubers were sealed before surface drying",
+              "Warm tubers were placed into cold storage",
+              "Temperature fluctuations caused moisture migration",
+              "The container has insufficient ventilation",
+              "The storage environment contains excessive free moisture"
+            ],
 
-              recommendedSolutions: [
-                "Harvest thoroughly each season.",
-                "Remove volunteer shoots promptly.",
-                "Maintain a defined permanent planting area.",
-                "Use mowing or repeated digging outside the desired boundary."
-              ]
-            },
+            recommendedActions: [
+              "Remove the tubers from the closed container.",
+              "Inspect the entire batch for mold, soft rot, slime, warmth, and fermentation odor.",
+              "Discard questionable material.",
+              "Allow sound tubers to become dry on the surface under clean cool conditions.",
+              "Clean and dry the storage container.",
+              "Correct the temperature, ventilation, or moisture problem before storing another batch."
+            ]
+          },
 
-            {
-              problem:
-                "Chickens are digging up the entire patch.",
+          storedTubersDevelopSoftRot: {
+            possibleCauses: [
+              "Digging damage",
+              "Bruising",
+              "Warm storage",
+              "Condensation",
+              "Standing moisture",
+              "Poor airflow",
+              "Damaged tubers stored with sound tubers"
+            ],
 
-              likelyCauses: [
-                "Unrestricted access to growing plants.",
-                "Birds discovered exposed tubers.",
-                "The patch is being used as a permanent run."
-              ],
+            recommendedActions: [
+              "Remove affected tubers immediately.",
+              "Discard soft, leaking, slimy, foul-smelling, or suspicious tubers.",
+              "Inspect neighboring tubers for hidden damage.",
+              "Separate damaged-but-sound tubers for immediate use.",
+              "Clean and dry the storage area.",
+              "Improve temperature, humidity, and airflow management."
+            ]
+          },
 
-              recommendedSolutions: [
-                "Fence the crop during active growth.",
-                "Allow only controlled postharvest access.",
-                "Expose only selected tubers during enrichment sessions."
-              ]
-            },
+          storedTubersSmellUnusual: {
+            possibleInterpretations: [
+              "Musty odor may indicate mold.",
+              "Sour or alcohol-like odor may indicate fermentation.",
+              "Putrid odor may indicate soft rot.",
+              "Chemical or petroleum odor may indicate contamination.",
+              "Rodent or ammonia odor may indicate biological contamination."
+            ],
 
-            {
-              problem:
-                "Birds are eating less complete feed.",
+            recommendedAction:
+              "Do not feed Jerusalem Artichoke tubers with an abnormal odor. Discard them rather than attempting to wash, peel, trim, cook, dry, or blend the odor away."
+          },
 
-              likelyCauses: [
-                "Too much Jerusalem Artichoke is being offered.",
-                "The supplement is too readily available.",
-                "Highly palatable fresh tubers are replacing balanced feed."
-              ],
+          tubersBecomeWateryAfterFreezing: {
+            likelyCauses: [
+              "Harvested tubers froze during storage",
+              "Tubers experienced repeated freezing and thawing",
+              "Frozen tubers were warmed rapidly",
+              "Freezing damaged the internal tissues"
+            ],
 
-              recommendedSolutions: [
-                "Reduce supplemental quantities.",
-                "Offer tubers after birds have begun consuming their complete ration.",
-                "Continue monitoring body condition and egg production."
-              ]
-            }
-          ],
+            recommendedActions: [
+              "Inspect thawed tubers carefully.",
+              "Discard tubers that are watery, translucent, leaking, slimy, discolored, collapsing, or foul-smelling.",
+              "Do not return deteriorated tubers to storage.",
+              "Protect future harvested batches from damaging freezing.",
+              "Leave tubers in the soil when suitable in-ground storage is available."
+            ]
+          },
 
-          troubleshootingSummary:
-            "Nearly all feeding problems are corrected by treating Jerusalem Artichoke as supplemental produce rather than staple feed, introducing it gradually, maintaining complete-feed intake, harvesting only sound tubers, storing harvested tubers correctly, and limiting flock access to the growing patch."
+          driedSlicesDevelopCondensation: {
+            likelyCauses: [
+              "Slices were stored before fully dry",
+              "Warm slices were sealed",
+              "Thick centers retained hidden moisture",
+              "Temperature fluctuations caused moisture migration",
+              "Humidity entered the storage container"
+            ],
+
+            recommendedActions: [
+              "Remove the dried material from flock access.",
+              "Inspect for flexibility, warmth, clumping, musty odor, discoloration, and mold.",
+              "Discard questionable material.",
+              "Clean and dry the container.",
+              "Correct the drying and storage process before preparing another batch.",
+              "Do not rely on redrying to make moldy or musty material safe."
+            ]
+          },
+
+          groundTuberMaterialClumps: {
+            possibleCauses: [
+              "The tuber material was not completely dry before grinding",
+              "Humidity entered the container",
+              "The material was packaged while warm",
+              "A wet scoop was used",
+              "The container was opened frequently in a humid environment"
+            ],
+
+            recommendedActions: [
+              "Stop using the material until it is inspected.",
+              "Check for warmth, musty odor, sour odor, mold, insects, and condensation.",
+              "Discard material when moisture damage or safety cannot be ruled out.",
+              "Use clean dry containers and scoops.",
+              "Prepare and store smaller batches in the future."
+            ]
+          },
+
+          birdsDamageTheGrowingPatch: {
+            likelyCauses: [
+              "The flock has unrestricted access during active growth",
+              "Young shoots are unprotected",
+              "Birds discovered exposed tubers",
+              "The patch is being used as a permanent chicken run",
+              "Soil is loose enough for persistent digging"
+            ],
+
+            recommendedActions: [
+              "Fence the patch during establishment and active growth.",
+              "Use rotational or supervised access.",
+              "Allow controlled postharvest foraging only after selected tubers have been exposed.",
+              "Protect the portion of the patch reserved for future production.",
+              "Avoid access when soil is saturated and vulnerable to compaction."
+            ]
+          },
+
+          patchSpreadsBeyondItsBoundary: {
+            likelyCauses: [
+              "Small tubers remained in the soil",
+              "Tuber fragments regenerated",
+              "Harvest was incomplete",
+              "Soil or compost containing tubers was moved",
+              "Volunteer shoots were allowed to mature"
+            ],
+
+            recommendedActions: [
+              "Dig beyond the visible colony edge and remove stray tubers.",
+              "Remove volunteer shoots promptly.",
+              "Harvest the boundary area thoroughly each season.",
+              "Avoid moving soil containing tuber fragments.",
+              "Use repeated mowing or digging outside the intended permanent area.",
+              "Maintain the crop only where long-term underground spread can be tolerated."
+            ]
+          },
+
+          rodentsAppearNearStorageOrPatch: {
+            likelyCauses: [
+              "Exposed field tubers",
+              "Open storage containers",
+              "Damaged storage bins",
+              "Uneaten tuber pieces left near the coop",
+              "Stored tubers are accessible to mice, rats, or voles",
+              "Discarded tubers remain near poultry areas"
+            ],
+
+            recommendedActions: [
+              "Remove uneaten and discarded tubers.",
+              "Use secure rodent-resistant storage.",
+              "Repair access points and damaged containers.",
+              "Inspect for chewing, droppings, urine, nesting material, and contaminated tubers.",
+              "Discard rodent-contaminated material.",
+              "Do not use rodent-control methods in a way that endangers chickens, pets, wildlife, or children."
+            ]
+          }
         },
 
                 faq: [
