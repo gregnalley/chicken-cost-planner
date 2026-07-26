@@ -96593,101 +96593,143 @@ feedingReference: {
           "Oats perform best when combined with a balanced complete ration and complemented by protein-rich crops, calcium sources, and other feed crops rather than attempting to make Oats serve every nutritional role."
       },
 
-      feedingMethods: {
-        preferredMethods: [
+            feedingMethods: {
+        philosophy:
+          "Oats should be treated as a supplemental forage, cereal grain, and enrichment crop rather than as a staple feed. Every feeding method should protect consumption of the flock's age-appropriate complete ration.",
+
+        primaryMethods: [
           {
             method:
               "Protected living forage",
 
-            rating:
-              "excellent",
+            recommendation:
+              "Highly Recommended",
 
             explanation:
-              "Allows chickens to browse young growth while protecting roots and preventing rapid destruction of the stand."
+              "Young Oat growth can provide excellent cool-season browsing and enrichment when chickens can reach the leaves but cannot uproot seedlings, scratch out seed, or destroy the crowns."
           },
 
           {
             method:
-              "Cut-and-carry fresh greens",
+              "Cut-and-carry young forage",
 
-            rating:
-              "excellent",
+            recommendation:
+              "Highly Recommended",
 
             explanation:
-              "Provides fresh forage while preserving stand longevity."
+              "Harvesting clean, tender vegetative growth and carrying it to the flock provides fresh forage while preserving the stand and allowing better control over the amount offered."
           },
 
           {
             method:
               "Whole mature Oat heads",
 
-            rating:
-              "excellent",
+            recommendation:
+              "Highly Recommended",
 
             explanation:
-              "Provides outstanding behavioral enrichment with minimal processing."
+              "Mature whole heads provide valuable pecking and grain-removal enrichment with less processing than loose grain. Offer several heads or feeding locations so dominant birds cannot monopolize access."
           },
 
           {
             method:
-              "Measured loose whole grain",
+              "Clean loose whole grain",
 
-            rating:
-              "very-good",
+            recommendation:
+              "Highly Recommended",
 
             explanation:
-              "Allows better portion control while maintaining good storage stability."
+              "Whole grain is the best form for measuring supplemental intake accurately and generally stores more reliably than cracked, ground, rolled, or dehulled Oat products."
           },
 
           {
             method:
               "Freshly cracked grain",
 
-            rating:
-              "good",
+            recommendation:
+              "Recommended",
 
             explanation:
-              "Useful where easier grain access is desired."
+              "Cracking may improve access for some birds and make the grain easier to mix, but it does not remove hull fiber, beta-glucans, low calcium, or incomplete amino-acid balance. Cracked grain should be used promptly."
           },
 
           {
             method:
-              "Freshly ground grain",
+              "Freshly coarsely ground grain",
 
-            rating:
-              "good",
+            recommendation:
+              "Occasional",
 
             explanation:
-              "Useful as a freshly prepared supplemental ingredient but should not be stored for long periods."
+              "Coarsely ground Oats may be used promptly as a supplemental ingredient or within a professionally balanced ration. Grinding shortens storage life and does not make Oats nutritionally complete."
+          },
+
+          {
+            method:
+              "Controlled rotational grazing",
+
+            recommendation:
+              "Seasonally Useful",
+
+            explanation:
+              "Established Oat stands may support limited rotational access during cool weather when soil conditions are firm and grazing periods are short enough to prevent uprooting, crown damage, and severe defoliation."
+          },
+
+          {
+            method:
+              "Postharvest gleaning",
+
+            recommendation:
+              "Seasonally Useful",
+
+            explanation:
+              "Chickens may recover clean mature grain and missed heads after harvest where the site is safe. This provides natural foraging but does not allow precise measurement of supplemental intake."
+          },
+
+          {
+            method:
+              "Properly produced Oat sprouts",
+
+            recommendation:
+              "Use With Special Care",
+
+            explanation:
+              "Sprouted Oats may provide fresh supplemental forage when produced from clean, viable, explicitly untreated grain under sanitary conditions. Sprouts are highly perishable and must be discarded if they become sour, slimy, moldy, unusually warm, or discolored."
           }
         ],
 
-        feedingFrequency:
-          "Occasional to regular supplemental feeding while maintaining unrestricted access to a complete poultry ration.",
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
 
-        bestSeasonalUses: [
-          "Cool-season forage production",
-          "Autumn and winter living forage",
-          "Spring fresh-green feeding",
-          "Whole-head enrichment after grain maturity",
-          "Stored winter grain supplementation"
-        ],
+          gradualIntroductionRecommended:
+            true,
 
-        enrichmentValue:
-          "High, particularly when protected forage or mature whole heads encourage prolonged pecking, browsing, scratching, and natural feeding behavior.",
+          explanation:
+            "Introduce Oat forage, grain, or whole heads gradually while observing complete-feed intake, droppings, litter moisture, crop function, flock behavior, body condition, and competition. Begin with a small amount so birds can learn to recognize the new feed without allowing it to displace their complete ration."
+        },
 
-        managementTips: [
-          "Protect new forage from unrestricted access.",
-          "Rotate grazing areas to prevent stand destruction.",
-          "Harvest greens while still tender.",
-          "Allow grain to mature fully before harvest.",
-          "Dry grain and heads thoroughly before storage.",
-          "Inspect stored material regularly for spoilage.",
-          "Feed measured supplemental quantities rather than free-choice grain."
-        ],
-
-        feedingMethodSummary:
-          "The greatest practical backyard value comes from combining protected cool-season forage with mature whole-head enrichment and measured supplemental grain rather than relying on Oats as a major feed source."
+        observationChecklist: [
+          "Complete feed consumption remains normal.",
+          "Birds do not wait for Oats while refusing balanced feed.",
+          "Droppings remain normal.",
+          "Sticky droppings do not develop.",
+          "Litter remains reasonably dry.",
+          "Crop emptying appears normal.",
+          "No unusual selective feeding develops.",
+          "No evidence of excessive weight gain or declining body condition develops.",
+          "Whole grain is being consumed successfully.",
+          "Appropriate insoluble grit remains available where needed.",
+          "Fresh forage is consumed before it becomes wilted, trampled, heated, slimy, or heavily soiled.",
+          "Whole heads and loose grain are consumed before spoilage occurs.",
+          "No mold develops on remaining heads or grain.",
+          "No sour, musty, stale, paint-like, or otherwise abnormal odor develops.",
+          "Cracked or ground grain does not remain stored for extended periods.",
+          "Dominant birds do not prevent lower-ranking birds from accessing the supplement.",
+          "Protected forage remains rooted and capable of regrowth.",
+          "Birds are not uprooting seedlings or destroying the stand.",
+          "Rodents, insects, and wild birds are not attracted to persistent leftovers."
+        ]
       },
 
       practicalUse: {
