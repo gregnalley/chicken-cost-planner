@@ -71956,7 +71956,3343 @@ mechanicalProcessingSuitabilityScore:
     summary:
       "Mulberry is one of the most versatile long-term poultry support crops available to homesteads. Depending on species and cultivar, it can provide repeated leafy forage harvests, seasonal fruit, summer shade, wildlife value, soil protection, and decades of production after establishment. Leaves contribute moderate-to-high protein on a dry-matter basis, while ripe fruit provides moisture, natural sugars, antioxidants, and seasonal enrichment. Species selection is critical because growth habit, mature size, cold hardiness, invasiveness, fruiting characteristics, and long-term management differ substantially among mulberry species and cultivars.",
 
-    chickenUse: {
+    ///////////////////////////
+//
+//  Mulberry - What can chickens eat?
+//
+//////////////////////////
+
+
+      feedingReference: {
+        overview: {
+          commonQuestion:
+            "Can chickens eat Mulberries?",
+
+          answerLabel:
+            "Yes — chickens can eat clean ripe Mulberry fruit and sound Mulberry leaves as supplemental food when offered appropriately.",
+
+          quickAnswer:
+            "Chickens can safely eat clean ripe Mulberry fruit, fresh tender leaves, sound leafy shoots, properly dried leaves, and carefully measured Mulberry leaf meal. Ripe fruit provides moisture, natural sugars, pigments, antioxidants, and seasonal enrichment, while the leaves provide protein-oriented perennial forage, carotenoids, minerals, and useful dry matter. Because fruit and leaves are nutritionally different, neither should replace a balanced complete poultry ration. Feed only correctly identified Mulberry material, use ripe fruit rather than unripe fruit, and never offer moldy, fermented, chemically contaminated, roadside, or spoiled material.",
+
+          detailedAnswer:
+            "Mulberry is a long-lived deciduous tree or large shrub that can provide two distinct supplemental poultry foods: ripe fruit and leafy forage. Ripe Mulberry fruit is moisture-rich and primarily contributes natural sugars, carbohydrates, pigments, vitamin C, flavonoids, anthocyanins, and seasonal feeding enrichment. Mulberry leaves are nutritionally different and may contribute moderate-to-high crude protein on a dry-matter basis, carotenoids, calcium, potassium, magnesium, iron, fiber, and other plant nutrients. Chickens may consume naturally fallen ripe fruit, hand-harvested ripe fruit, fresh leaves, tender shoots, leafy branch tips, properly dried leaves, coarse dried leaf flakes, or carefully measured leaf meal. Mulberry is not a complete poultry feed. Fruit is too moisture-rich and sugar-oriented to provide balanced nutrition, while leaves contain fiber, have an incomplete amino-acid profile, vary greatly among species and maturity stages, and may reduce complete-feed intake if offered excessively. Mulberry should therefore remain a supplemental fruit, forage, enrichment, shade, and seasonal homestead crop rather than the flock's primary ration.",
+
+          primaryFeedingRole:
+            "Perennial leafy forage and seasonal ripe-fruit enrichment crop",
+
+          secondaryFeedingRoles: [
+            "Fresh cut-and-carry leafy forage",
+            "Naturally fallen seasonal fruit",
+            "Hand-harvested ripe fruit",
+            "Summer shade and silvopasture enrichment",
+            "Protein-oriented dried leaf forage",
+            "Seasonal carbohydrate supplementation",
+            "Carotenoid and antioxidant contribution",
+            "Properly dried winter leaf forage",
+            "Long-term perennial feed production",
+            "Hung leafy-branch enrichment",
+            "Homestead orchard integration",
+            "Ingredient in a professionally balanced poultry ration"
+          ],
+
+          overallRecommendation:
+            "Highly recommended as a long-term supplemental homestead crop when ripe fruit and sound leaves are managed as separate feed products, complete poultry feed remains continuously available, and spoiled or contaminated material is removed promptly.",
+
+          recommendationStrength:
+            "high",
+
+          recommendedForBackyardFlocks:
+            true,
+
+          supplementOnly:
+            true,
+
+          completeFeedReplacement:
+            false,
+
+          guideUrl:
+            "growing-mulberry-for-chickens.html"
+        },
+
+        classification: {
+          safetyStatus:
+            "safe-with-managed-moderation",
+
+          trafficLightRating:
+            "green",
+
+          feedingRole:
+            "supplement",
+
+          moderationRequired:
+            true,
+
+          processingRequirement:
+            "minimal-for-fresh-fruit-and-leaves-careful-for-drying",
+
+          primaryProductType:
+            "perennial-tree-forage-and-ripe-fruit",
+
+          preferredBirdStage:
+            "established-adult-chickens",
+
+          directPlantGrazingSuitable:
+            true,
+
+          wholeHeadEnrichmentSuitable:
+            false,
+
+          winterStorageSuitable:
+            true,
+
+          householdRationFormulationRequired:
+            false,
+
+          commercialRationIngredientPotential:
+            true,
+
+          confidenceLevel:
+            "moderate-to-high"
+        },
+
+        quickRatings: {
+          overallRecommendationScore:
+            5,
+
+          adultChickenSuitabilityScore:
+            5,
+
+          youngChickSuitabilityScore:
+            1,
+
+          feedingSafetyScore:
+            4,
+
+          nutritionalUsefulnessScore:
+            4,
+
+          energyValueScore:
+            2,
+
+          proteinValueScore:
+            4,
+
+          enrichmentValueScore:
+            5,
+
+          winterValueScore:
+            3,
+
+          storageValueScore:
+            3,
+
+          preparationSimplicityScore:
+            4,
+
+          portionControlEaseScore:
+            3,
+
+          beginnerFriendlinessScore:
+            3,
+
+          confinedFlockValueScore:
+            5,
+
+          pasturedFlockValueScore:
+            5,
+
+          directGardenAccessScore:
+            3,
+
+          notes: [
+            "Scores describe Mulberry as a supplemental perennial fruit and forage crop rather than as a complete poultry ration.",
+            "The overall score reflects Mulberry's combination of leafy forage, ripe fruit, enrichment, shade, long productive life, and low recurring input after establishment.",
+            "The nutritional-usefulness score reflects the combined value of protein-oriented leaves and carbohydrate-oriented ripe fruit, although these products must be evaluated separately.",
+            "The energy score is intentionally moderate-to-low because ripe fruit contains substantial moisture and leaves provide much less concentrated energy than grain or oilseed crops.",
+            "The protein score applies primarily to young leafy material on a dry-matter basis rather than to ripe fruit or equal fresh weights.",
+            "The feeding-safety score is reduced slightly because unripe fruit, spoiled fallen fruit, fermentation, mold, chemical contamination, roadside harvesting, and uncontrolled complete-feed displacement require active management.",
+            "The winter score reflects properly dried Mulberry leaves rather than fresh winter production from a deciduous tree.",
+            "The storage score is reduced because ripe fruit is highly perishable and dried leaves require careful moisture control.",
+            "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration.",
+            "Direct-access value depends on protecting young trunks and roots, managing fallen fruit, and preventing excessive contamination beneath the canopy.",
+            "Confined flocks can benefit from harvested fruit, hung leafy branches, chopped fresh leaves, dried flakes, and carefully measured leaf meal.",
+            "Pastured flocks may benefit from shade, fallen ripe fruit, low reachable foliage, insects, and silvopasture enrichment."
+          ]
+        },
+
+        safety: {
+          safeForChickens:
+            true,
+
+          toxicToChickens:
+            false,
+
+          safeWhenMature:
+            true,
+
+          safeRaw:
+            true,
+
+          cookingRequired:
+            false,
+
+          heatTreatmentRequired:
+            false,
+
+          fermentationRequired:
+            false,
+
+          moderationRequired:
+            true,
+
+          primarySafetySummary:
+            "Clean ripe Mulberry fruit and sound Mulberry leaves are safe supplemental foods for established chickens. The principal concerns are unripe fruit, excessive fruit intake, complete-feed displacement, spoiled or fermented fallen fruit, mold, manure and soil contamination, chemical exposure, roadside harvesting, coarse woody material, dust from dried leaves, and nutritional differences among fruit, fresh leaves, dried leaves, and leaf meal.",
+
+          whyModerationIsRequired:
+            "Ripe Mulberry fruit contains substantial water and natural sugars, while Mulberry leaves contain structural fiber and provide an incomplete amino-acid and mineral profile. Large amounts of either product may reduce consumption of nutritionally complete poultry feed. Dried leaves and leaf meal are much more concentrated by weight than fresh foliage, and fruit availability beneath a productive tree can be difficult to control during peak drop. Moderate use helps preserve balanced intake, normal body condition, digestive stability, and appropriate consumption of complete feed.",
+
+          safeMaterials: [
+            {
+              item:
+                "Clean ripe Mulberry fruit",
+
+              status:
+                "safe-with-managed-moderation",
+
+              explanation:
+                "Fully ripe, sound fruit may be offered as a seasonal supplement. Fruit color at ripeness varies among species and cultivars, so ripeness should be determined from the known tree rather than color alone."
+            },
+
+            {
+              item:
+                "Naturally fallen ripe Mulberry fruit",
+
+              status:
+                "safe-with-frequent-inspection",
+
+              explanation:
+                "Freshly fallen ripe fruit beneath a known untreated tree may be consumed when the ground remains reasonably clean and spoiled, moldy, fermented, manure-contaminated, or insect-damaged fruit is removed promptly."
+            },
+
+            {
+              item:
+                "Hand-harvested ripe Mulberry fruit",
+
+              status:
+                "safe-with-managed-moderation",
+
+              explanation:
+                "Clean ripe fruit harvested directly from the tree allows better inspection, portion control, and separation from spoiled ground fruit."
+            },
+
+            {
+              item:
+                "Sound fresh Mulberry leaves",
+
+              status:
+                "safe-with-managed-moderation",
+
+              explanation:
+                "Healthy leaves from a correctly identified untreated Mulberry tree may be consumed directly or offered as fresh cut-and-carry forage."
+            },
+
+            {
+              item:
+                "Tender young Mulberry leaves",
+
+              status:
+                "safe-with-managed-moderation",
+
+              explanation:
+                "Tender young leaves are generally more palatable and contain less coarse structural fiber than mature leaves and woody branch material."
+            },
+
+            {
+              item:
+                "Fresh leafy Mulberry shoots",
+
+              status:
+                "safe-with-management",
+
+              explanation:
+                "Sound leafy shoots may be offered when coarse wood, damaged tissue, contaminants, and unsuitable branch hardware have been removed."
+            },
+
+            {
+              item:
+                "Tender twig tips attached to leafy branches",
+
+              status:
+                "safe-with-supervision",
+
+              explanation:
+                "Tender branch tips may be included with harvested foliage, but thick, sharp, splintered, or excessively woody branches provide little feed value and should not remain where they could cause injury."
+            },
+
+            {
+              item:
+                "Hung fresh Mulberry branches",
+
+              status:
+                "safe-with-hanging-precautions",
+
+              explanation:
+                "Fresh leafy branches may provide pecking enrichment when suspended securely with materials that cannot entangle feet, wings, legs, necks, or wild birds."
+            },
+
+            {
+              item:
+                "Properly dried Mulberry leaves",
+
+              status:
+                "safe-with-portion-control",
+
+              explanation:
+                "Leaves dried rapidly and completely may provide stored forage. Water removal concentrates dry matter, protein, minerals, fiber, and other plant compounds per pound."
+            },
+
+            {
+              item:
+                "Coarse dried Mulberry leaf flakes",
+
+              status:
+                "safe-with-portion-control",
+
+              explanation:
+                "Coarsely crumbled dried leaves may be easier to inspect and create less dust than finely ground leaf meal."
+            },
+
+            {
+              item:
+                "Measured Mulberry leaf meal",
+
+              status:
+                "safe-with-formulation-precautions",
+
+              explanation:
+                "Properly dried and ground leaf meal may be incorporated in carefully measured quantities within a balanced poultry ration. It should not be added freely to an informal homemade mixture."
+            }
+          ],
+
+          unsafeMaterials: [
+            {
+              item:
+                "Unripe Mulberry fruit",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Unripe fruit should not be intentionally fed. Ripeness varies by species and cultivar, so fruit should come from a known tree and be offered only when fully ripe."
+            },
+
+            {
+              item:
+                "Moldy Mulberry fruit",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Visible mold, fuzzy growth, musty odor, abnormal discoloration, or tissue breakdown indicates unsafe deterioration."
+            },
+
+            {
+              item:
+                "Fermented fallen Mulberry fruit",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Fruit that develops alcoholic, sour, yeasty, bubbling, or strongly fermented characteristics should be removed and discarded."
+            },
+
+            {
+              item:
+                "Rotten or slimy Mulberry fruit",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Soft collapse, slime, foul odor, leakage, or extensive decay indicates spoilage and possible microbial contamination."
+            },
+
+            {
+              item:
+                "Manure-contaminated fallen fruit",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Fruit heavily contaminated by manure, dirty litter, mud, standing water, or decomposing organic matter should be discarded rather than returned to the flock."
+            },
+
+            {
+              item:
+                "Moldy or musty Mulberry leaves",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Fresh or dried leaves showing visible mold, musty odor, damp clumping, abnormal fungal growth, or suspicious discoloration should not be fed."
+            },
+
+            {
+              item:
+                "Heated or improperly dried Mulberry leaves",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Leaves stored before complete drying may heat, ferment, mold, clump, or deteriorate internally."
+            },
+
+            {
+              item:
+                "Extremely dusty Mulberry leaf meal",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Excessive dust may irritate birds and handlers, indicates severe physical breakdown, and makes uniform feeding difficult."
+            },
+
+            {
+              item:
+                "Chemically treated Mulberry foliage or fruit",
+
+              status:
+                "never-feed-unless-label-clearly-permits",
+
+              explanation:
+                "Do not feed fruit or leaves exposed to pesticides, herbicides, fungicides, growth regulators, or other treatments unless the product label clearly permits livestock feed use and the required harvest or grazing interval has passed."
+            },
+
+            {
+              item:
+                "Roadside Mulberry fruit or leaves",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Roadside material may be contaminated by exhaust residue, oil, fuel, road salt, herbicides, litter, heavy metals, dumping, or unknown chemical exposure."
+            },
+
+            {
+              item:
+                "Utility-area or industrial-site Mulberry material",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Trees growing along treated rights-of-way, industrial properties, rail corridors, dumping areas, or other chemically uncertain sites should not be used as poultry food."
+            },
+
+            {
+              item:
+                "Severely diseased Mulberry foliage",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Leaves showing extensive fungal disease, bacterial decay, tissue collapse, suspicious spotting, rot, or heavy pest contamination should be discarded."
+            },
+
+            {
+              item:
+                "Coarse mature woody branches",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Thick woody branches contain little practical poultry nutrition and may create splinter, impact, or obstruction hazards."
+            },
+
+            {
+              item:
+                "Unknown tree fruit or foliage assumed to be Mulberry",
+
+              status:
+                "never-feed",
+
+              explanation:
+                "Only material from a correctly identified Mulberry tree should be used. Unknown berries, leaves, and trees should not be identified solely by resemblance."
+            },
+
+            {
+              item:
+                "Unknown concentrated Mulberry extracts",
+
+              status:
+                "avoid",
+
+              explanation:
+                "Concentrated powders, extracts, supplements, or purified compounds are not nutritionally equivalent to ripe fruit, fresh leaves, dried leaves, or ordinary leaf meal."
+            }
+          ],
+
+          majorHazards: [
+            {
+              hazard:
+                "Dietary displacement",
+
+              riskLevel:
+                "high-when-overconsumed",
+
+              explanation:
+                "Large quantities of sweet ripe fruit or leafy forage may reduce consumption of nutritionally complete poultry feed."
+            },
+
+            {
+              hazard:
+                "Excessive seasonal fruit intake",
+
+              riskLevel:
+                "moderate-to-high-during-heavy-fruit-drop",
+
+              explanation:
+                "A productive tree may drop more fruit than the flock should consume. Heavy access can increase sugar intake, loose droppings, sanitation problems, and complete-feed displacement."
+            },
+
+            {
+              hazard:
+                "Fruit fermentation",
+
+              riskLevel:
+                "moderate-to-high-in-warm-wet-conditions",
+
+              explanation:
+                "Ripe fallen fruit can ferment rapidly during warm, humid, or wet weather, particularly when it accumulates beneath the canopy."
+            },
+
+            {
+              hazard:
+                "Fruit mold and decay",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Soft ripe fruit has a short usable life and may develop mold, slime, sour odors, insect damage, and bacterial deterioration."
+            },
+
+            {
+              hazard:
+                "Manure and ground contamination",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Fallen fruit and low-growing foliage may contact manure, mud, dirty litter, runoff, animal feces, and decomposing material beneath the tree."
+            },
+
+            {
+              hazard:
+                "Chemical contamination",
+
+              riskLevel:
+                "high",
+
+              explanation:
+                "Fruit and leaves from treated orchards, roadsides, utility areas, sprayed landscapes, or unknown properties may carry unsuitable chemical residues."
+            },
+
+            {
+              hazard:
+                "Structural fiber",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Mulberry leaves contain fiber, and feed value declines when mature leaves, coarse stems, and woody branch material are included."
+            },
+
+            {
+              hazard:
+                "Incomplete amino-acid balance",
+
+              riskLevel:
+                "moderate-to-high-when-used-as-protein-replacement",
+
+              explanation:
+                "Relatively strong leaf crude-protein values do not establish that Mulberry leaves independently supply the balanced digestible amino acids required by poultry."
+            },
+
+            {
+              hazard:
+                "Dried-leaf overconcentration",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Removing water concentrates protein, fiber, calcium, minerals, and other plant compounds per pound compared with fresh leaves."
+            },
+
+            {
+              hazard:
+                "Dust exposure",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Very dry shattered leaves and finely ground leaf meal may create airborne dust that can irritate birds and handlers."
+            },
+
+            {
+              hazard:
+                "Wildlife and insect attraction",
+
+              riskLevel:
+                "moderate-to-high",
+
+              explanation:
+                "Ripening and fallen fruit may attract wild birds, wasps, flies, bees, rodents, raccoons, opossums, deer, and other animals."
+            },
+
+            {
+              hazard:
+                "Flock competition",
+
+              riskLevel:
+                "moderate",
+
+              explanation:
+                "Concentrated fruit drop, a single fruit dish, or one hanging branch may allow dominant birds to monopolize access."
+            },
+
+            {
+              hazard:
+                "Young-tree damage",
+
+              riskLevel:
+                "moderate-to-high",
+
+              explanation:
+                "Scratching, bark pecking, root exposure, trampling, and repeated disturbance may damage young trunks and root systems before the tree is established."
+            },
+
+            {
+              hazard:
+                "Hanging-material entanglement",
+
+              riskLevel:
+                "low-but-preventable",
+
+              explanation:
+                "String, wire, netting, clips, or other materials used to suspend branches must not form loose loops or snagging points."
+            },
+
+            {
+              hazard:
+                "Invasive spread or regional restriction",
+
+              riskLevel:
+                "location-dependent",
+
+              explanation:
+                "White Mulberry and some hybrids may spread aggressively, may be restricted in some locations, and may hybridize with native Red Mulberry populations."
+            }
+          ],
+
+          emergencyUse:
+            "Ripe Mulberry fruit may provide short-term moisture and carbohydrate-oriented supplementation, while sound Mulberry leaves may contribute protein-oriented forage dry matter. Neither product is a nutritionally complete emergency ration. Mulberry should be offered only alongside an appropriate complete poultry feed or within a diet professionally formulated to meet poultry requirements.",
+
+          veterinaryCaution:
+            "Birds showing weakness, breathing difficulty, tremors, abnormal behavior, severe diarrhea, crop dysfunction, sudden feed refusal, intoxication-like behavior, or suspected chemical or fermented-fruit exposure require prompt veterinary evaluation. Birds with diabetes-like metabolic concerns, obesity, liver disease, digestive disorders, or other medical conditions may require individualized feeding guidance."
+        },
+
+        birdStages: {
+          adultChickens: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "excellent-as-managed-supplemental-fruit-and-forage",
+
+            preferredForms: [
+              "Naturally fallen clean ripe Mulberry fruit",
+              "Hand-harvested ripe Mulberry fruit",
+              "Fresh tender Mulberry leaves",
+              "Fresh cut-and-carry leafy shoots",
+              "Hung leafy Mulberry branches",
+              "Properly dried Mulberry leaf flakes",
+              "Measured Mulberry leaf meal used within a balanced ration"
+            ],
+
+            guidance:
+              "Established adult chickens are the most appropriate flock stage for ripe Mulberry fruit, fresh leafy forage, hanging branches, dried leaf flakes, and measured leaf meal. Fruit and leaves should remain supplemental, and an age-appropriate complete poultry ration should remain continuously available unless the entire diet has been professionally formulated."
+          },
+
+          layingHens: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "valuable-but-moderation-required",
+
+            benefits: [
+              "Seasonal ripe-fruit enrichment",
+              "Protein-oriented leafy forage",
+              "Carotenoid and pigment contribution",
+              "Fresh grazing and pecking activity",
+              "Supplemental minerals from leaves",
+              "Summer shade beneath established trees",
+              "Repeated perennial forage production"
+            ],
+
+            limitations: [
+              "Cannot replace a complete layer ration",
+              "Ripe fruit contains substantial water and natural sugars",
+              "Leaves do not provide a complete digestible amino-acid balance",
+              "Leaf protein values are generally reported on a dry-matter basis",
+              "Large fruit intake may reduce complete-feed consumption",
+              "Large leaf intake may dilute dietary energy",
+              "Leaf calcium does not replace a balanced layer-calcium program",
+              "Fruit and leaves are not nutritionally interchangeable",
+              "Dried leaves are more concentrated than fresh foliage"
+            ],
+
+            guidance:
+              "Laying hens may consume ripe Mulberry fruit and sound leaves as supplemental foods, but a complete layer ration and an appropriate calcium program must remain the nutritional foundation. Heavy seasonal fruit drop should be managed so birds do not consume excessive fruit while ignoring balanced feed."
+          },
+
+          pullets: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "limited-managed-access-after-adequate-development",
+
+            guidance:
+              "Well-developed pullets may receive small amounts of ripe fruit or tender leaves after they are consuming their complete grower or developer ration reliably. Large amounts of fruit, fibrous foliage, dried leaves, or leaf meal may dilute the balanced nutrition required for normal growth and skeletal development."
+          },
+
+          youngChicks: {
+            suitable:
+              false,
+
+            suitabilityLevel:
+              "not-recommended-for-routine-backyard-feeding",
+
+            guidance:
+              "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Ripe Mulberry fruit is moisture-rich and sugar-oriented, while leaves contain fiber and may alter the starter ration's energy, amino-acid, mineral, vitamin, and particle-size balance.",
+
+            possibleException:
+              "A qualified poultry nutritionist may use analyzed Mulberry leaf meal or another processed Mulberry ingredient within a professionally formulated chick or broiler ration. That controlled use is not equivalent to offering fruit, fresh leaves, dried flakes, or household-ground leaf meal as an informal supplement.",
+
+            reasonsForRestriction: [
+              "Risk of displacing complete chick starter",
+              "High moisture content of ripe fruit",
+              "Natural sugar concentration in ripe fruit",
+              "Structural fiber in leaves",
+              "Incomplete amino-acid balance",
+              "Variable leaf composition",
+              "Potential mineral imbalance",
+              "Need for age-appropriate particle size",
+              "Difficulty measuring intake beneath a fruiting tree"
+            ]
+          },
+
+          broilersAndMeatBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "formulation-dependent",
+
+            guidance:
+              "Meat birds may receive limited ripe fruit or leafy forage as enrichment, while analyzed Mulberry leaf meal may be used within professionally balanced rations. Published inclusion levels assume control of metabolizable energy, digestible amino acids, fiber, calcium, phosphorus, sodium, vitamins, minerals, total feed intake, and the composition of the Mulberry product used."
+          },
+
+          roosters: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "good-as-managed-supplement",
+
+            guidance:
+              "Healthy adult roosters may consume clean ripe Mulberry fruit and sound leafy forage with the flock. Portion control remains important because heavy fruit consumption adds moisture and sugar, while excessive leaf intake may dilute dietary energy and balanced nutrition."
+          },
+
+          breedingFlocks: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "moderation-required",
+
+            guidance:
+              "Breeding birds may receive Mulberry fruit and leaves as supplemental foods, but reproductive performance depends on complete and balanced nutrition. Excessive fruit or forage intake should not dilute dietary energy, digestible amino acids, sodium, vitamins, trace minerals, or controlled mineral balance."
+          },
+
+          seniorOrLowActivityBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "use-conservatively",
+
+            guidance:
+              "Older, sedentary, confined, or overweight birds may benefit from fresh leafy enrichment and limited ripe fruit. Heavy fruit intake may add unnecessary sugars and calories, while coarse fibrous leaves and stems may be poorly consumed or utilized."
+          },
+
+          moltingBirds: {
+            suitable:
+              true,
+
+            suitabilityLevel:
+              "supplemental-only",
+
+            guidance:
+              "Mulberry leaves can contribute crude protein and pigments, but they do not independently provide the concentrated digestible amino-acid balance required for feather production. A complete ration with adequate usable protein, methionine, and other essential amino acids remains more important than increasing Mulberry intake."
+          },
+
+          sickOrRecoveringBirds: {
+            suitable:
+              "case-dependent",
+
+            suitabilityLevel:
+              "seek-individual-guidance",
+
+            guidance:
+              "Ripe fruit may appear useful for moisture and palatability, and tender leaves may encourage limited feeding activity, but illness can change nutritional, digestive, liver, kidney, and metabolic requirements. Mulberry should not replace diagnosis, hydration support, complete recovery nutrition, or a veterinarian-recommended diet."
+          }
+        },
+
+        edibleParts: {
+          primaryEdibleParts: [
+            {
+              part:
+                "Ripe Mulberry fruit",
+
+              suitability:
+                "excellent-with-managed-moderation",
+
+              explanation:
+                "Fully ripe sound fruit provides moisture, natural sugars, carbohydrates, pigments, flavonoids, anthocyanins in dark-fruited cultivars, vitamin C, and seasonal enrichment."
+            },
+
+            {
+              part:
+                "Naturally fallen ripe Mulberry fruit",
+
+              suitability:
+                "excellent-with-frequent-inspection",
+
+              explanation:
+                "Freshly fallen ripe fruit may be consumed beneath an untreated known tree when spoiled, fermented, moldy, manure-contaminated, or insect-damaged fruit is removed promptly."
+            },
+
+            {
+              part:
+                "Hand-harvested ripe Mulberry fruit",
+
+              suitability:
+                "excellent-with-managed-moderation",
+
+              explanation:
+                "Hand harvesting allows better inspection, portioning, and separation from spoiled fruit on the ground."
+            },
+
+            {
+              part:
+                "Tender young Mulberry leaves",
+
+              suitability:
+                "excellent-with-managed-moderation",
+
+              explanation:
+                "Young leaves generally provide a favorable leaf-to-stem ratio, moderate-to-high crude protein on a dry-matter basis, carotenoids, minerals, and less structural fiber than older foliage."
+            },
+
+            {
+              part:
+                "Fresh mature Mulberry leaves",
+
+              suitability:
+                "good-with-managed-moderation",
+
+              explanation:
+                "Sound mature leaves may provide useful forage, although fiber generally increases with age and palatability may decline compared with tender young leaves."
+            },
+
+            {
+              part:
+                "Fresh leafy Mulberry shoots",
+
+              suitability:
+                "excellent-with-management",
+
+              explanation:
+                "Fresh leafy shoots may provide cut-and-carry forage when thick woody material, damaged tissue, and contaminated portions are removed."
+            },
+
+            {
+              part:
+                "Tender twig tips attached to leafy growth",
+
+              suitability:
+                "good-with-supervision",
+
+              explanation:
+                "Tender twig tips may be consumed along with leaves, but their feed value declines rapidly as the wood becomes thicker, tougher, and more fibrous."
+            },
+
+            {
+              part:
+                "Properly dried Mulberry leaves",
+
+              suitability:
+                "excellent-with-portion-control",
+
+              explanation:
+                "Thoroughly dried leaves can provide stored protein-oriented forage. Dehydration concentrates dry matter, protein, fiber, minerals, and other plant compounds by weight."
+            },
+
+            {
+              part:
+                "Coarse dried Mulberry leaf flakes",
+
+              suitability:
+                "very-good-with-portion-control",
+
+              explanation:
+                "Coarse flakes can be measured more easily than direct browse and generally create less airborne dust than finely ground leaf meal."
+            },
+
+            {
+              part:
+                "Measured Mulberry leaf meal",
+
+              suitability:
+                "good-with-formulation-precautions",
+
+              explanation:
+                "Properly dried and ground leaf meal may be used as a carefully measured ration ingredient when its composition and effect on the total diet are considered."
+            }
+          ],
+
+          nonRecommendedPlantParts: [
+            {
+              part:
+                "Unripe Mulberry fruit",
+
+              reason:
+                "Unripe fruit should not be intentionally fed. Fruit should come from a known tree and be offered only when fully ripe for that species or cultivar."
+            },
+
+            {
+              part:
+                "Coarse woody branches",
+
+              reason:
+                "Thick woody branches contain little practical poultry nutrition and may create splinter, impact, or obstruction hazards."
+            },
+
+            {
+              part:
+                "Large mature stems",
+
+              reason:
+                "Large stems increase structural fiber and reduce the overall nutritional value of harvested leafy material."
+            },
+
+            {
+              part:
+                "Bark",
+
+              reason:
+                "Bark has little practical poultry-feed value, and repeated bark damage may weaken or kill young trees."
+            },
+
+            {
+              part:
+                "Roots",
+
+              reason:
+                "Roots provide no practical ordinary poultry-feed value and should remain protected to preserve tree health and stability."
+            },
+
+            {
+              part:
+                "Diseased leaves or fruit",
+
+              reason:
+                "Material showing fungal disease, bacterial decay, slime, rot, suspicious discoloration, or extensive pest damage should not be fed."
+            },
+
+            {
+              part:
+                "Moldy, fermented, or rotten fallen fruit",
+
+              reason:
+                "Spoiled fruit may contain undesirable microbial growth, fermentation products, insects, and environmental contamination."
+            },
+
+            {
+              part:
+                "Heavily contaminated low foliage",
+
+              reason:
+                "Low leaves may contact manure, mud, dirty litter, polluted runoff, or chemical residues beneath the tree."
+            },
+
+            {
+              part:
+                "Unknown berries or foliage resembling Mulberry",
+
+              reason:
+                "Only correctly identified Mulberry fruit and foliage should be used. Similar-looking unknown plants should never be assumed safe."
+            }
+          ],
+
+          ediblePartSummary:
+            "Mulberry provides two principal edible products for chickens: fully ripe fruit and sound leafy forage. Ripe fruit offers seasonal moisture, carbohydrates, pigments, and enrichment, while young leaves and properly dried leaf products provide protein-oriented forage. Unripe fruit, spoiled fruit, coarse wood, roots, bark, diseased material, and contaminated foliage are not recommended."
+        },
+
+        feedingForms: {
+          preferredForms: [
+            {
+              form:
+                "Naturally fallen clean ripe Mulberry fruit",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Low-labor seasonal enrichment beneath an established tree with frequent sanitation."
+            },
+
+            {
+              form:
+                "Hand-harvested ripe Mulberry fruit",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Measured seasonal supplementation with improved inspection and portion control."
+            },
+
+            {
+              form:
+                "Fresh cut-and-carry leafy Mulberry branches",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Protein-oriented forage and pecking enrichment for confined flocks."
+            },
+
+            {
+              form:
+                "Hung fresh leafy Mulberry branches",
+
+              rating:
+                "excellent",
+
+              bestUse:
+                "Extended pecking activity while reducing contact with litter and manure."
+            },
+
+            {
+              form:
+                "Fresh chopped Mulberry leaves",
+
+              rating:
+                "very-good",
+
+              bestUse:
+                "Measured distribution among several birds when offered promptly after preparation."
+            },
+
+            {
+              form:
+                "Properly dried Mulberry leaf flakes",
+
+              rating:
+                "very-good",
+
+              bestUse:
+                "Stored seasonal forage and winter supplementation."
+            },
+
+            {
+              form:
+                "Measured Mulberry leaf meal",
+
+              rating:
+                "good",
+
+              bestUse:
+                "A controlled ingredient incorporated into a properly balanced poultry ration."
+            }
+          ],
+
+          acceptableForms: [
+            "Naturally fallen clean ripe fruit",
+            "Hand-harvested ripe fruit",
+            "Fresh tender Mulberry leaves",
+            "Fresh mature Mulberry leaves",
+            "Fresh leafy Mulberry shoots",
+            "Fresh cut-and-carry branches",
+            "Hung leafy branches",
+            "Coarsely chopped fresh leaves",
+            "Fresh leaves in a clean forage feeder",
+            "Briefly refrigerated ripe fruit",
+            "Briefly refrigerated fresh leaves",
+            "Properly dried Mulberry leaves",
+            "Coarse dried leaf flakes",
+            "Measured Mulberry leaf meal"
+          ],
+
+          formsRequiringAdditionalCare: [
+            {
+              form:
+                "Naturally fallen ripe fruit",
+
+              concern:
+                "Fruit deteriorates rapidly after falling and may become contaminated with manure, soil, insects, mold, fermentation organisms, or standing water."
+            },
+
+            {
+              form:
+                "Hand-harvested ripe fruit",
+
+              concern:
+                "Ripe fruit is soft, highly perishable, easily crushed, and may ferment or mold quickly during warm storage."
+            },
+
+            {
+              form:
+                "Fresh chopped Mulberry leaves",
+
+              concern:
+                "Cutting damages tissue, accelerates wilting and microbial deterioration, and may create a wet compressed mass when stored improperly."
+            },
+
+            {
+              form:
+                "Hung leafy branches",
+
+              concern:
+                "Branches and suspension materials must be secured so they cannot fall, splinter, entangle birds, or create sharp protrusions."
+            },
+
+            {
+              form:
+                "Dried Mulberry leaves",
+
+              concern:
+                "Leaves must be dried rapidly and completely because partially dried material may heat, ferment, clump, or mold."
+            },
+
+            {
+              form:
+                "Coarse dried Mulberry leaf flakes",
+
+              concern:
+                "Water removal concentrates dry matter, protein, minerals, fiber, and other plant compounds per pound."
+            },
+
+            {
+              form:
+                "Ground Mulberry leaf meal",
+
+              concern:
+                "Fine meal creates dust, absorbs moisture readily, may separate from other ration ingredients, and is easy to overuse."
+            },
+
+            {
+              form:
+                "Commercial Mulberry leaf products",
+
+              concern:
+                "Powders, extracts, teas, supplements, and concentrates may differ substantially from ordinary whole dried leaves or leaf meal."
+            }
+          ],
+
+          avoidForms: [
+            "Unripe Mulberry fruit",
+            "Moldy Mulberry fruit",
+            "Musty Mulberry fruit",
+            "Fermented fallen fruit",
+            "Alcoholic-smelling fruit",
+            "Sour fruit",
+            "Rotten fruit",
+            "Slimy fruit",
+            "Manure-contaminated fruit",
+            "Mud-covered fruit",
+            "Chemically contaminated fruit",
+            "Roadside fruit",
+            "Utility-area fruit",
+            "Moldy Mulberry leaves",
+            "Musty Mulberry leaves",
+            "Heated dried leaves",
+            "Improperly dried leaves",
+            "Extremely dusty leaf meal",
+            "Chemically contaminated foliage",
+            "Roadside foliage",
+            "Severely diseased foliage",
+            "Thick woody branches",
+            "Sharp splintered branches",
+            "Unknown concentrated extracts",
+            "Material from an unidentified tree"
+          ],
+
+          wholeHeadAdvantages: [
+            "Established trees provide natural seasonal fruit drop",
+            "Low branches may support direct browsing",
+            "Living trees provide summer shade",
+            "Canopies support insects and natural flock exploration",
+            "Perennial trees provide repeated annual production",
+            "Mature trees may require little routine feeding labor"
+          ],
+
+          looseSeedAdvantages: [
+            "Hand-harvested fruit is easier to inspect and portion",
+            "Fresh cut branches can be distributed among several feeding locations",
+            "Hung foliage can reduce litter contamination",
+            "Chopped leaves can be measured more consistently",
+            "Dried flakes can be stored for seasonal use",
+            "Leaf meal permits precise measurement within a formulated ration"
+          ],
+
+          wholeHeadDisadvantages: [
+            "Actual fruit consumption beneath the canopy is difficult to measure",
+            "Heavy fruit drop may overwhelm the flock's appropriate intake",
+            "Fallen fruit may ferment, mold, or attract insects",
+            "Wildlife may compete for fruit",
+            "Young trunks and roots may be damaged by chickens",
+            "Low foliage and fruit may become manure contaminated"
+          ],
+
+          looseSeedDisadvantages: [
+            "Fresh ripe fruit deteriorates rapidly",
+            "Hand harvesting can be messy and time consuming",
+            "Fruit bruises and leaks easily",
+            "Fresh cut foliage wilts quickly",
+            "Chopping increases preparation labor",
+            "Drying requires careful moisture control",
+            "Leaf separation adds labor",
+            "Ground leaf meal creates respiratory dust",
+            "Dried material can absorb moisture and mold",
+            "Stored leaves may attract insects and rodents",
+            "Dried forms are substantially more concentrated by weight"
+          ]
+        },
+
+        cultivarDifferences: {
+          important:
+            true,
+
+          summary:
+            "Mulberry species and cultivars differ substantially in mature size, growth habit, cold hardiness, heat tolerance, drought response, fruit color, fruit flavor, fruit size, fruiting season, fruit yield, seed production, leaf size, leaf texture, leaf protein, disease resistance, invasiveness, and suitability for pruning, pollarding, coppicing, orchards, or forage hedges. Correct species and cultivar selection is essential because Mulberry trees can remain in place for decades.",
+
+          blackOilSunflower: {
+            recommended:
+              true,
+
+            explanation:
+              "Red Mulberry, Morus rubra, and regionally adapted Red Mulberry selections may be desirable where native-tree conservation, cold hardiness, wildlife value, and local ecological compatibility are priorities."
+          },
+
+          confectionSunflower: {
+            recommended:
+              true,
+
+            explanation:
+              "Named fruiting cultivars and selected hybrids may provide more predictable fruit size, flavor, ripening season, mature tree size, productivity, and ease of harvest than seed-grown trees."
+          },
+
+          ornamentalVarieties: {
+            recommended:
+              "depends",
+
+            explanation:
+              "Fruitless, dwarf, weeping, contorted, ornamental, hedge, coppice, and pollard-oriented cultivars may provide shade or leaves but may differ greatly in fruit production, harvest accessibility, and long-term poultry-feed value."
+          },
+
+          pollenFreeCultivars: {
+            recommended:
+              false,
+
+            explanation:
+              "Unknown seedlings, poorly adapted cultivars, highly invasive selections, and trees with unsuitable mature size or uncertain fruiting characteristics are poor choices when predictable poultry-feed production is the primary objective."
+          },
+
+          branchingCultivars: {
+            advantages: [
+              "Dwarf or compact cultivars may improve harvest accessibility",
+              "Bush-forming selections may support cut-and-carry leaf production",
+              "Pollard- or coppice-tolerant trees may provide repeated leafy shoots",
+              "Low-branching trees may improve direct flock access",
+              "Named fruiting cultivars may provide predictable seasonal fruit"
+            ]
+          },
+
+          giantSingleHeadCultivars: {
+            advantages: [
+              "Large full-sized trees may provide substantial shade",
+              "Large canopies may produce heavy seasonal fruit crops",
+              "Deep-rooted mature trees may tolerate drought after establishment",
+              "Long-lived trees may provide decades of recurring forage and fruit",
+              "Large trees may be valuable in orchards and silvopasture systems"
+            ]
+          }
+        },
+
+        preparation: {
+          preparationDifficulty:
+            "low-to-moderate",
+
+          preparationSummary:
+            "Fresh ripe Mulberry fruit and sound fresh leaves require little preparation before feeding. Proper harvesting, sanitation, drying, moisture control, and storage are considerably more important than cooking or heat treatment. Leaf meal requires additional drying and grinding but should still be considered a supplemental ingredient rather than a complete feed.",
+
+          requiredPreparation: [
+            "Harvest only fully ripe fruit.",
+            "Harvest only healthy leaves from correctly identified trees.",
+            "Inspect fruit for spoilage before feeding.",
+            "Remove moldy, fermented, or damaged fruit.",
+            "Remove diseased or contaminated leaves.",
+            "Dry leaves rapidly with good airflow before storage.",
+            "Store only completely dry leaf material.",
+            "Inspect stored leaves regularly for moisture, mold, insects, and rodents."
+          ],
+
+          optionalPreparation: [
+            "Wash dusty fruit when practical.",
+            "Chop fresh leaves for easier distribution.",
+            "Hang leafy branches for enrichment.",
+            "Separate leaves from coarse woody stems.",
+            "Break dried leaves into coarse flakes.",
+            "Grind dried leaves into measured leaf meal.",
+            "Mix measured leaf meal into a balanced formulated ration."
+          ],
+
+          unnecessaryPreparation: [
+            "Cooking",
+            "Boiling",
+            "Roasting",
+            "Fermentation",
+            "Heat treatment",
+            "Peeling ripe fruit"
+          ],
+
+          preparationMistakes: [
+            "Feeding unripe fruit.",
+            "Allowing fruit to ferment beneath the tree.",
+            "Feeding moldy or spoiled fruit.",
+            "Using chemically treated foliage.",
+            "Harvesting roadside trees.",
+            "Including large woody stems.",
+            "Drying leaves too slowly.",
+            "Storing leaves before completely dry.",
+            "Grinding large quantities of leaf meal long before use.",
+            "Allowing stored leaves to absorb moisture."
+          ]
+        },
+
+        nutritionHighlights: {
+          nutritionalOrientation:
+            "protein-oriented-perennial-forage-with-seasonal-fruit",
+
+          nutritionSummary:
+            "Mulberry provides two nutritionally distinct poultry feeds. Ripe fruit primarily supplies water, carbohydrates, natural sugars, pigments, antioxidants, and seasonal enrichment, while leaves contribute moderate-to-high crude protein on a dry-matter basis together with carotenoids, calcium, potassium, magnesium, iron, fiber, and other plant nutrients. Neither product alone provides complete poultry nutrition.",
+
+          compositionBasis:
+            "Fruit composition is normally measured fresh and contains high moisture, while leaf composition is commonly reported on a dry-matter basis. Nutritional values vary substantially among species, cultivars, maturity stages, growing conditions, pruning systems, drying methods, and leaf-to-stem ratio.",
+
+          primaryNutritionalStrengths: [
+            {
+              nutrientRole:
+                "Protein-oriented leafy forage",
+
+              importance:
+                "high",
+
+              explanation:
+                "Young Mulberry leaves commonly contain moderate-to-high crude protein on a dry-matter basis, making them one of the more useful perennial forage crops available to backyard poultry keepers."
+            },
+
+            {
+              nutrientRole:
+                "Seasonal carbohydrate enrichment",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Ripe fruit supplies readily available carbohydrates, moisture, and natural sugars that make it attractive as a seasonal supplemental treat."
+            },
+
+            {
+              nutrientRole:
+                "Carotenoids and plant pigments",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Leaves contribute carotenoids while darker-fruited cultivars contribute anthocyanins and other natural pigments."
+            },
+
+            {
+              nutrientRole:
+                "Plant antioxidants",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Fruit and leaves contain naturally occurring flavonoids and antioxidant compounds that contribute to overall dietary diversity."
+            },
+
+            {
+              nutrientRole:
+                "Supplemental minerals",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Mulberry leaves contribute calcium, potassium, magnesium, iron, and other minerals, although they should not be considered complete mineral supplements."
+            },
+
+            {
+              nutrientRole:
+                "Dietary fiber",
+
+              importance:
+                "moderate",
+
+              explanation:
+                "Leaves contain structural fiber that supports Mulberry's role as forage rather than as a concentrated energy feed."
+            }
+          ],
+
+          notableNutrients: [
+            "Crude protein (leaf dry matter)",
+            "Carotenoids",
+            "Vitamin C",
+            "Anthocyanins",
+            "Flavonoids",
+            "Calcium",
+            "Potassium",
+            "Magnesium",
+            "Iron",
+            "Natural antioxidants",
+            "Readily available carbohydrates in ripe fruit"
+          ],
+
+          typicalWholeSeedCharacteristics: {
+            crudeProtein:
+              "Leaves commonly contain approximately 15%–25% crude protein on a dry-matter basis, while ripe fruit contributes considerably less protein.",
+
+            fat:
+              "Low in both ripe fruit and leaves.",
+
+            fiber:
+              "Moderate in leaves and increases substantially as stems become woody.",
+
+            starch:
+              "Relatively low. Ripe fruit stores energy primarily as natural sugars rather than starch.",
+
+            calcium:
+              "Leaves contribute useful calcium but not enough to replace a balanced layer-calcium program.",
+
+            phosphorus:
+              "Present in moderate amounts but not sufficient to balance poultry diets independently.",
+
+            energy:
+              "Moderate overall. Fruit provides carbohydrate energy while leaves remain considerably less energy dense than cereal grains or oilseeds."
+          },
+
+          wholeSeedVersusKernel: {
+            nutritionallyEquivalent:
+              false,
+
+            wholeSeed:
+              "Mulberry does not produce a significant poultry feed based on seed use. The practical poultry feed products are ripe fruit and leafy forage.",
+
+            dehulledKernel:
+              "Not applicable.",
+
+            practicalMeaning:
+              "Fruit and leaves should never be considered nutritionally interchangeable because they serve different feeding roles."
+          },
+
+          wholeSeedVersusMeal: {
+            nutritionallyEquivalent:
+              false,
+
+            wholeSeed:
+              "Fresh leaves provide bulky forage with substantial moisture.",
+
+            sunflowerMeal:
+              "Properly dried and ground Mulberry leaf meal represents a concentrated forage ingredient with much less moisture than fresh foliage.",
+
+            practicalMeaning:
+              "Research involving Mulberry leaf meal should not automatically be applied to fresh leaves, ripe fruit, or dried leaf flakes because dehydration substantially changes nutrient concentration by weight."
+          },
+
+          nutritionalVariabilityFactors: [
+            "Species",
+            "Cultivar",
+            "Leaf maturity",
+            "Fruit maturity",
+            "Leaf-to-stem ratio",
+            "Growing environment",
+            "Soil fertility",
+            "Water availability",
+            "Pruning system",
+            "Harvest timing",
+            "Drying method",
+            "Storage duration",
+            "Storage moisture",
+            "Grinding",
+            "Analytical basis"
+          ]
+        },
+
+        benefits: {
+          primaryBenefits: [
+            {
+              title:
+                "Exceptional Long-Term Perennial Feed Crop",
+
+              importance:
+                "primary",
+
+              explanation:
+                "A properly located Mulberry tree can provide useful leafy forage, seasonal fruit, shade, and enrichment for decades after establishment."
+            },
+
+            {
+              title:
+                "High-Quality Leaf Forage",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Young Mulberry leaves provide one of the better perennial protein-oriented forage sources available for backyard poultry systems."
+            },
+
+            {
+              title:
+                "Seasonal Fruit Enrichment",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Ripe fruit encourages natural foraging behavior while providing moisture, carbohydrates, pigments, and seasonal dietary variety."
+            },
+
+            {
+              title:
+                "Outstanding Silvopasture Value",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Established trees provide shade, cooling, insect habitat, browsing opportunities, and recurring annual production within integrated poultry systems."
+            },
+
+            {
+              title:
+                "Repeated Annual Harvest",
+
+              importance:
+                "primary",
+
+              explanation:
+                "Leaves may be harvested repeatedly through the growing season while fruit production returns annually without replanting."
+            },
+
+            {
+              title:
+                "Excellent Cut-and-Carry Crop",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Fresh branches can be harvested and offered directly to confined flocks with very little processing."
+            },
+
+            {
+              title:
+                "Useful Winter Leaf Storage",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Properly dried leaves provide a practical stored forage that can supplement fresh forage during dormant periods."
+            },
+
+            {
+              title:
+                "Multiple Homestead Benefits",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Mulberry contributes poultry feed, wildlife habitat, human fruit, compost biomass, shade, erosion protection, and ornamental value from a single planting."
+            },
+
+            {
+              title:
+                "Low Recurring Annual Inputs",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Once established, Mulberry generally requires relatively little annual planting expense compared with repeatedly planted annual feed crops."
+            },
+
+            {
+              title:
+                "Long Productive Life",
+
+              importance:
+                "secondary",
+
+              explanation:
+                "Well-managed trees may remain productive for decades, making Mulberry one of the highest long-term-value feed crops available."
+            }
+          ],
+
+          enrichmentBenefits: [
+            {
+              benefit:
+                "Natural fruit foraging",
+
+              explanation:
+                "Birds search beneath the canopy for freshly fallen ripe fruit."
+            },
+
+            {
+              benefit:
+                "Leaf browsing",
+
+              explanation:
+                "Fresh branches encourage prolonged pecking and browsing activity."
+            },
+
+            {
+              benefit:
+                "Summer shade",
+
+              explanation:
+                "Large canopies reduce heat stress while encouraging outdoor activity."
+            },
+
+            {
+              benefit:
+                "Insect attraction",
+
+              explanation:
+                "Established trees support insects that may become supplemental poultry forage."
+            },
+
+            {
+              benefit:
+                "Seasonal environmental diversity",
+
+              explanation:
+                "Fruiting trees provide changing seasonal feeding opportunities throughout the year."
+            }
+          ],
+
+          flockManagementBenefits: [
+            "Fresh leafy forage can be harvested repeatedly.",
+            "Naturally fallen fruit reduces harvest labor.",
+            "Branches can be hung for enrichment.",
+            "Trees provide shade during hot weather.",
+            "Suitable for rotational paddocks.",
+            "Useful in silvopasture systems.",
+            "Can be incorporated into orchard management.",
+            "Provides both fresh and stored forage options."
+          ],
+
+          homesteadBenefits: [
+            "Long-lived perennial crop",
+            "Minimal annual replanting cost",
+            "Produces both poultry and human food",
+            "Provides summer shade",
+            "Supports wildlife",
+            "Useful pollarding and coppicing potential",
+            "Suitable for hedgerows",
+            "Provides compost biomass",
+            "Excellent orchard integration",
+            "Can improve long-term property productivity"
+          ],
+
+          benefitSummary:
+            "Mulberry combines perennial leafy forage, seasonal fruit, shade, enrichment, silvopasture value, and decades of recurring production better than almost any other backyard poultry feed crop."
+        },
+
+        limitations: {
+          primaryLimitations: [
+            {
+              title:
+                "Not a Complete Poultry Feed",
+
+              severity:
+                "critical",
+
+              explanation:
+                "Neither ripe fruit nor Mulberry leaves independently provide the complete balance of nutrients required by productive poultry."
+            },
+
+            {
+              title:
+                "Fruit and Leaves Are Nutritionally Different",
+
+              severity:
+                "high",
+
+              explanation:
+                "Fruit and foliage serve different feeding roles and should never be treated as nutritionally equivalent."
+            },
+
+            {
+              title:
+                "Highly Perishable Fruit",
+
+              severity:
+                "high",
+
+              explanation:
+                "Ripe fruit deteriorates rapidly after harvest or after falling beneath the tree."
+            },
+
+            {
+              title:
+                "Large Permanent Tree",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Many Mulberry cultivars require considerable long-term space and thoughtful site selection."
+            },
+
+            {
+              title:
+                "Fruit Drop Management",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Heavy seasonal fruit production can create sanitation, insect, wildlife, staining, and fermentation concerns."
+            },
+
+            {
+              title:
+                "Leaf Drying Requires Care",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Leaves intended for storage must be dried rapidly and completely to prevent mold."
+            },
+
+            {
+              title:
+                "Species and Cultivar Variation",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Growth habit, hardiness, invasiveness, productivity, and feed value vary substantially among Mulberry species and cultivars."
+            },
+
+            {
+              title:
+                "Young Trees Require Protection",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Young trunks and roots may be damaged by scratching, bark pecking, and repeated poultry traffic before establishment."
+            },
+
+            {
+              title:
+                "No Universal Feeding Quantity Exists",
+
+              severity:
+                "high",
+
+              explanation:
+                "Safe supplementation depends upon flock size, age, season, tree productivity, complete ration, and management goals."
+            }
+          ],
+
+          nutritionalLimitations: [
+            "Not nutritionally complete.",
+            "Fruit contains substantial moisture.",
+            "Fruit is primarily carbohydrate oriented.",
+            "Leaves contain structural fiber.",
+            "Leaf protein is incomplete.",
+            "Does not replace balanced amino-acid nutrition.",
+            "Does not replace layer calcium.",
+            "Nutrition varies by species and cultivar.",
+            "Fresh and dried leaves differ substantially by weight.",
+            "Fruit and leaves are not nutritionally interchangeable."
+          ],
+
+          practicalLimitations: [
+            "Requires permanent planting.",
+            "Several years before meaningful fruit production.",
+            "Heavy fruit drop may stain surfaces.",
+            "Fruit attracts insects and wildlife.",
+            "Fruit spoils rapidly.",
+            "Leaf meal requires additional processing.",
+            "Large trees may require pruning.",
+            "Harvest becomes more difficult as trees grow taller.",
+            "Roadside trees should not be harvested.",
+            "White Mulberry may be invasive in some regions."
+          ],
+
+          unsuitableExpectations: [
+            "Replacing complete poultry feed",
+            "Serving as the flock's primary dietary energy source",
+            "Serving as a complete protein source",
+            "Correcting methionine deficiency by itself",
+            "Correcting lysine deficiency by itself",
+            "Providing a complete amino-acid balance",
+            "Serving as the sole calcium source for laying hens",
+            "Providing a correct mineral balance for every bird stage",
+            "Treating fruit and leaves as nutritionally interchangeable",
+            "Applying dry-matter leaf protein percentages directly to fresh leaf weight",
+            "Using ripe fruit as a concentrated protein feed",
+            "Using leafy forage as a concentrated energy feed",
+            "Providing one universal feeding percentage for every flock",
+            "Guaranteeing darker egg yolks",
+            "Guaranteeing increased egg production",
+            "Guaranteeing improved fertility",
+            "Preventing disease",
+            "Treating illness",
+            "Serving as a dewormer",
+            "Eliminating purchased feed",
+            "Remaining productive without appropriate cultivar selection",
+            "Producing fruit from a fruitless cultivar",
+            "Remaining small without pruning or cultivar control",
+            "Producing clean usable fruit without ground sanitation",
+            "Remaining safe when fruit is allowed to ferment beneath the tree",
+            "Providing dependable winter fresh forage from a deciduous tree"
+          ],
+
+          limitationSummary:
+            "Mulberry is an exceptionally useful long-term fruit, forage, shade, and enrichment crop, but it is not a complete poultry feed. Its main limitations are the nutritional differences between fruit and leaves, high fruit moisture and sugar, leaf fiber, incomplete amino-acid balance, rapidly perishable fruit, difficult intake measurement during heavy fruit drop, careful leaf-drying requirements, large permanent space needs, cultivar variation, young-tree vulnerability, wildlife attraction, and possible invasive spread."
+        },
+
+        antinutritionalConcerns: {
+          overallConcernLevel:
+            "low-to-moderate-with-correct-identification-ripeness-and-moderation",
+
+          requiresDetoxification:
+            false,
+
+          cookingRequired:
+            false,
+
+          primaryConcerns: [
+            {
+              factor:
+                "High ripe-fruit moisture",
+
+              concernLevel:
+                "high-when-used-as-feed-replacement",
+
+              explanation:
+                "Fresh Mulberry fruit contains substantial water, so its dry-matter, protein, mineral, and energy contribution is much lower than the same fresh weight of concentrated poultry feed."
+            },
+
+            {
+              factor:
+                "Natural sugars in ripe fruit",
+
+              concernLevel:
+                "moderate-when-overconsumed",
+
+              explanation:
+                "Ripe fruit contains readily available carbohydrates and natural sugars. Heavy seasonal consumption may displace complete feed, contribute to loose droppings, and create excessive dependence on a sweet supplemental food."
+            },
+
+            {
+              factor:
+                "Structural fiber in leaves",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Mulberry leaves contain structural fiber, and total fiber increases when mature leaves, petioles, coarse stems, and woody shoots are included."
+            },
+
+            {
+              factor:
+                "Incomplete amino-acid balance",
+
+              concernLevel:
+                "moderate-to-high-when-used-as-protein-replacement",
+
+              explanation:
+                "Moderate-to-high crude protein in Mulberry leaves does not mean the foliage independently supplies the balanced digestible amino acids required for poultry growth, egg production, feather replacement, or reproduction."
+            },
+
+            {
+              factor:
+                "Dietary displacement",
+
+              concernLevel:
+                "high-when-overconsumed",
+
+              explanation:
+                "Heavy intake of ripe fruit, fresh leaves, dried flakes, or leaf meal may reduce consumption of nutritionally complete poultry feed."
+            },
+
+            {
+              factor:
+                "Concentration after dehydration",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Drying removes water and increases the concentration of protein, fiber, minerals, and naturally occurring plant compounds per pound compared with fresh leaves."
+            },
+
+            {
+              factor:
+                "Unripe fruit and immature plant compounds",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Unripe Mulberry fruit should not be intentionally fed. Fruit should come from a correctly identified known tree and should be fully ripe for that species or cultivar."
+            },
+
+            {
+              factor:
+                "Fruit fermentation",
+
+              concernLevel:
+                "moderate-to-high",
+
+              explanation:
+                "Soft ripe fruit may ferment rapidly after falling or being crushed, particularly during warm and humid weather. Fermented fruit is a spoilage concern rather than an approved feeding form."
+            },
+
+            {
+              factor:
+                "Dust from dried leaf meal",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Very dry shattered leaves and finely ground leaf meal may create airborne dust that irritates birds and handlers and makes uniform feeding more difficult."
+            },
+
+            {
+              factor:
+                "Variable species and cultivar composition",
+
+              concernLevel:
+                "moderate",
+
+              explanation:
+                "Leaf protein, fiber, minerals, secondary plant compounds, fruit composition, palatability, and growth characteristics vary among Mulberry species, hybrids, cultivars, maturity stages, and growing conditions."
+            }
+          ],
+
+          notPrimaryConcerns: [
+            {
+              factor:
+                "Trypsin inhibitors",
+
+              explanation:
+                "Mulberry fruit and ordinary leafy forage do not require the routine heat treatment used to manage major trypsin-inhibitor concerns in raw mature Soybeans."
+            },
+
+            {
+              factor:
+                "Lectin toxicity",
+
+              explanation:
+                "Correctly identified ripe Mulberry fruit and sound foliage are not treated as raw lectin-limited grain legumes that must be cooked before ordinary supplemental use."
+            },
+
+            {
+              factor:
+                "Beta-glucans",
+
+              explanation:
+                "Beta-glucans are not identified as the primary practical feeding limitation for Mulberry fruit or leaves."
+            },
+
+            {
+              factor:
+                "Glucosinolates",
+
+              explanation:
+                "Glucosinolates are not identified as the principal practical concern for Mulberry in this feeding reference."
+            },
+
+            {
+              factor:
+                "Oil rancidity",
+
+              explanation:
+                "Mulberry fruit and leaves are relatively low in fat, so oil oxidation is not the central storage concern. Moisture, fermentation, mold, and contamination are more important."
+            },
+
+            {
+              factor:
+                "Hull fiber",
+
+              explanation:
+                "Mulberry is used as ripe fruit and leafy forage rather than as a fibrous hulled poultry grain."
+            }
+          ],
+
+          processingEffects: [
+            {
+              process:
+                "Harvesting only fully ripe fruit",
+
+              effect:
+                "Reduces concern about unripe fruit and provides the fruit form most suitable for ordinary supplemental feeding."
+            },
+
+            {
+              process:
+                "Hand harvesting ripe fruit",
+
+              effect:
+                "Improves inspection and portion control and reduces exposure to manure, soil, insects, fermentation, and ground contamination."
+            },
+
+            {
+              process:
+                "Collecting naturally fallen fruit",
+
+              effect:
+                "Reduces harvest labor but increases the need for frequent inspection and prompt removal of spoiled, fermented, moldy, or contaminated fruit."
+            },
+
+            {
+              process:
+                "Refrigeration",
+
+              effect:
+                "Temporarily slows fruit and fresh-leaf deterioration but does not create long-term storage or correct nutritional limitations."
+            },
+
+            {
+              process:
+                "Chopping fresh leaves",
+
+              effect:
+                "Improves distribution and portion observation but damages plant tissue, accelerates wilting, and increases exposed surface area for microbial deterioration."
+            },
+
+            {
+              process:
+                "Removing coarse woody stems",
+
+              effect:
+                "Improves the leaf-to-stem ratio, reduces structural fiber, and increases the relative nutritional value of harvested foliage."
+            },
+
+            {
+              process:
+                "Dehydration",
+
+              effect:
+                "Removes water and concentrates protein, fiber, minerals, and other plant compounds by weight while creating a storable forage product."
+            },
+
+            {
+              process:
+                "Prolonged sun exposure during drying",
+
+              effect:
+                "May reduce moisture but can increase leaf shatter and contribute to losses of color, carotenoids, and other light-sensitive compounds."
+            },
+
+            {
+              process:
+                "Grinding dried Mulberry leaves",
+
+              effect:
+                "Improves measurement and mixing precision but creates dust, increases exposed surface area, and raises moisture-absorption and storage-deterioration risks."
+            },
+
+            {
+              process:
+                "Commercial leaf extraction or concentration",
+
+              effect:
+                "Produces a specialized ingredient that is not nutritionally equivalent to ripe fruit, fresh leaves, dried leaf flakes, or ordinary whole-leaf meal."
+            },
+
+            {
+              process:
+                "Uncontrolled fermentation",
+
+              effect:
+                "Is not an approved ordinary backyard preservation method in this feeding reference. Alcoholic odor, sour odor, bubbling, heating, slime, or uncontrolled fermentation should be treated as spoilage."
+            }
+          ],
+
+          antinutritionalSummary:
+            "Mulberry does not require routine cooking or household detoxification before ordinary feeding of correctly identified ripe fruit and sound leaves. Its principal concerns are high fruit moisture, natural sugars, structural leaf fiber, incomplete amino-acid balance, dietary displacement, concentration of dried leaf products, unripe fruit, fermentation, dust, and substantial species and cultivar variation. These concerns support moderation, separation of fruit and leaf feeding roles, careful sanitation, and continued reliance on complete poultry nutrition."
+        },
+
+        complementaryFeeding: {
+          purpose:
+            "Mulberry should provide seasonal ripe-fruit enrichment, protein-oriented leafy forage, pigments, shade, and natural feeding activity while a complete ration supplies the concentrated energy, balanced digestible amino acids, sodium, vitamins, trace minerals, calcium, phosphorus, and controlled nutrient balance that Mulberry cannot provide.",
+
+          bestFoundation:
+            "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+          complements: [
+            {
+              feedType:
+                "Complete layer feed",
+
+              relationship:
+                "The complete ration supplies concentrated energy, balanced amino acids, sodium, vitamins, trace minerals, calcium, and phosphorus that Mulberry fruit and leaves cannot provide reliably."
+            },
+
+            {
+              feedType:
+                "Complete all-flock, grower, developer, or breeder feed",
+
+              relationship:
+                "The formulated ration provides life-stage-appropriate nutrition while Mulberry remains an optional seasonal fruit and forage supplement."
+            },
+
+            {
+              feedType:
+                "Energy-oriented grain crops",
+
+              relationship:
+                "Corn, Wheat, Barley, Oats, Millet, and Sorghum provide substantially more concentrated energy than fresh Mulberry leaves or moisture-rich ripe fruit. Combining them informally still does not create a complete ration."
+            },
+
+            {
+              feedType:
+                "Oilseed crops",
+
+              relationship:
+                "Sunflower and other suitable oilseeds provide concentrated fat and energy that Mulberry leaves and fruit do not supply in comparable amounts."
+            },
+
+            {
+              feedType:
+                "Formulated protein ingredients",
+
+              relationship:
+                "Properly processed Soybeans, Field Peas, Cowpeas, or other analyzed protein ingredients may help provide amino acids that Mulberry leaves alone cannot supply adequately within a professionally balanced ration."
+            },
+
+            {
+              feedType:
+                "Mixed pasture grasses",
+
+              relationship:
+                "Pasture grasses provide different textures, growth habits, and nutritional characteristics while increasing botanical diversity beneath or near Mulberry trees."
+            },
+
+            {
+              feedType:
+                "Other suitable forage crops",
+
+              relationship:
+                "Alfalfa, White Clover, Kale, Collards, Comfrey, and other appropriate forage crops can broaden seasonal forage availability and reduce dependence on Mulberry leaves."
+            },
+
+            {
+              feedType:
+                "Other seasonal fruits and vegetables",
+
+              relationship:
+                "Pumpkin, Winter Squash, and other suitable produce can add seasonal variety, but the total amount of all fruit, vegetables, and other non-complete foods should remain controlled."
+            },
+
+            {
+              feedType:
+                "Insects and diverse natural pasture",
+
+              relationship:
+                "Insects and diverse pasture organisms beneath the canopy may contribute animal protein and natural feeding opportunities that Mulberry alone cannot provide."
+            },
+
+            {
+              feedType:
+                "Appropriate calcium program",
+
+              relationship:
+                "Although Mulberry leaves may contain calcium, laying hens still require a complete layer ration and, where appropriate, a properly managed supplemental calcium source."
+            },
+
+            {
+              feedType:
+                "Insoluble grit where needed",
+
+              relationship:
+                "Appropriately sized insoluble grit supports mechanical digestion when birds consume coarse fibrous foliage and adequate natural grit is unavailable."
+            }
+          ],
+
+          doesNotCorrect: [
+            "An incomplete homemade ration",
+            "Insufficient dietary energy",
+            "Insufficient total protein",
+            "Insufficient methionine",
+            "Insufficient lysine",
+            "Insufficient sodium",
+            "Insufficient calcium",
+            "Incorrect calcium-to-phosphorus balance",
+            "Vitamin deficiency",
+            "Trace-mineral deficiency",
+            "Excessive fruit intake",
+            "Excessive total forage intake",
+            "Excessive structural fiber",
+            "Poor-quality complete feed",
+            "Inadequate access to clean water",
+            "Poor sanitation beneath the tree",
+            "Overcrowding",
+            "Inadequate feeder space",
+            "Lack of appropriate grit where needed"
+          ],
+
+          pairingWarning:
+            "Combining Mulberry fruit or leaves with several other homegrown crops does not automatically create a nutritionally complete diet. Significant ration inclusion requires calculation of metabolizable energy, protein, digestible amino acids, fiber, fat, calcium, available phosphorus, sodium, vitamins, trace minerals, dry matter, fruit sugar, leaf composition, and total feed intake.",
+
+          practicalBackyardApproach:
+            "For the ordinary backyard flock, maintain an age-appropriate complete ration as the primary feed and provide Mulberry through limited ripe-fruit access, promptly harvested clean fallen fruit, fresh cut-and-carry leafy branches, coarse dried leaf flakes, or carefully measured leaf meal."
+        },
+
+        feedingMethods: {
+          philosophy:
+            "Mulberry should be treated as supplemental fruit, managed leafy forage, and environmental enrichment rather than as staple feed. Every feeding method should preserve normal complete-feed consumption while limiting excessive fruit intake, fiber dilution, spoilage, fermentation, contamination, dust, flock competition, and damage to young trees.",
+
+          primaryMethods: [
+            {
+              method:
+                "Managed access beneath an established fruiting Mulberry tree",
+
+              recommendation:
+                "Highly Recommended With Sanitation",
+
+              explanation:
+                "Established trees allow chickens to forage for freshly fallen ripe fruit while receiving shade and natural enrichment. Fallen fruit should be inspected frequently, and spoiled accumulations should be removed."
+            },
+
+            {
+              method:
+                "Hand-harvested ripe Mulberry fruit",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Direct harvesting improves ripeness selection, inspection, cleanliness, and portion control compared with unrestricted consumption beneath a heavily fruiting tree."
+            },
+
+            {
+              method:
+                "Fresh cut-and-carry leafy branches",
+
+              recommendation:
+                "Highly Recommended",
+
+              explanation:
+                "Healthy leafy branches may be harvested from an untreated tree and carried to confined birds after coarse wood, damaged tissue, and contaminated material are removed."
+            },
+
+            {
+              method:
+                "Hung fresh leafy Mulberry branches",
+
+              recommendation:
+                "Highly Recommended With Safety Precautions",
+
+              explanation:
+                "Suspended branches provide extended pecking and browsing activity while reducing contact with litter. Branches and hanging materials must be secured against falling, sharp edges, and entanglement."
+            },
+
+            {
+              method:
+                "Fresh Mulberry leaves in a raised forage feeder",
+
+              recommendation:
+                "Recommended",
+
+              explanation:
+                "A clean raised feeder reduces manure and litter contamination while allowing several birds to consume tender leaves."
+            },
+
+            {
+              method:
+                "Coarsely chopped fresh Mulberry leaves",
+
+              recommendation:
+                "Use With Care",
+
+              explanation:
+                "Chopping improves distribution and portion observation but accelerates wilting and microbial deterioration. Chopped leaves should be offered promptly."
+            },
+
+            {
+              method:
+                "Briefly refrigerated ripe Mulberry fruit",
+
+              recommendation:
+                "Occasional",
+
+              explanation:
+                "Refrigeration may slow deterioration briefly, but ripe fruit remains highly perishable and should be inspected and used promptly."
+            },
+
+            {
+              method:
+                "Properly dried Mulberry leaf flakes",
+
+              recommendation:
+                "Recommended With Portion Control",
+
+              explanation:
+                "Thoroughly dried coarse leaf flakes can provide stored forage while creating less dust than fine meal. Water removal substantially concentrates the material by weight."
+            },
+
+            {
+              method:
+                "Measured Mulberry leaf meal",
+
+              recommendation:
+                "Formulation Dependent",
+
+              explanation:
+                "Properly dried and ground leaf meal may be used as a carefully measured ingredient within a balanced ration. It should not be added freely to an informal homemade feed."
+            },
+
+            {
+              method:
+                "Commercial Mulberry leaf powder or concentrate",
+
+              recommendation:
+                "Professional Formulation Only",
+
+              explanation:
+                "Commercial powders, extracts, concentrates, and specialized leaf products may be substantially different from ordinary whole-leaf meal and require precise nutritional evaluation."
+            }
+          ],
+
+          introductionGuidelines: {
+            suddenDietChangeRecommended:
+              false,
+
+            gradualIntroductionRecommended:
+              true,
+
+            explanation:
+              "Introduce Mulberry gradually while observing complete-feed intake, droppings, crop function, fruit and leaf acceptance, flock competition, tree damage, and sanitation beneath the canopy. Begin with a small amount of ripe fruit or a modest leafy branch rather than unrestricted access to a heavy fruit drop."
+          },
+
+          observationChecklist: [
+            "Complete feed consumption remains normal.",
+            "Birds do not wait for Mulberry fruit while refusing balanced feed.",
+            "Ripe fruit consumption remains moderate.",
+            "Droppings remain normal for the flock.",
+            "Crop filling and emptying appear normal.",
+            "No unusual weakness, tremors, breathing difficulty, or abnormal behavior develops.",
+            "Only fully ripe fruit from a known tree is consumed.",
+            "Fallen fruit is removed before mold, fermentation, slime, or foul odor develops.",
+            "Fruit does not accumulate in wet depressions beneath the tree.",
+            "Manure-contaminated fruit is removed.",
+            "Wildlife attraction does not create an unacceptable predator or disease concern.",
+            "Fresh cut foliage is consumed before wilting, heating, slime, or mold develops.",
+            "Birds consume primarily leaves and tender shoots rather than excessive woody material.",
+            "Hanging branches and fasteners remain secure.",
+            "No loose loops, sharp wire, splinters, or snagging points are present.",
+            "Lower-ranking birds retain reasonable access to complete feed.",
+            "Dried leaves remain fully dry, loose, and free from mold.",
+            "Stored leaf flakes do not develop musty odors or damp clumps.",
+            "Leaf meal does not create excessive airborne dust.",
+            "Young trunks are protected from bark pecking.",
+            "Roots and root flares are not being exposed by scratching.",
+            "Fruit-drop areas remain clean enough for safe flock access.",
+            "No unsafe pesticide, herbicide, roadside, or environmental contamination is suspected."
+          ]
+        },
+
+        practicalUse: {
+          idealHomesteadUses: [
+            "Naturally fallen seasonal ripe-fruit feeding",
+            "Fresh hand-harvested ripe fruit",
+            "Fresh cut-and-carry leafy forage",
+            "Hung leafy-branch enrichment",
+            "Seasonal shade for poultry runs",
+            "Silvopasture integration",
+            "Rotational paddock tree crop",
+            "Protein-oriented perennial forage production",
+            "Properly dried winter leaf forage",
+            "Measured Mulberry leaf meal",
+            "Long-term orchard feed production",
+            "Dual-purpose human fruit and poultry forage"
+          ],
+
+          lessSuitableUses: [
+            "Small temporary gardens",
+            "Short-term feed production",
+            "Raised-bed feed production",
+            "Container feed production",
+            "Primary dietary energy production",
+            "Complete ration replacement",
+            "Large-scale annual feed production",
+            "Continuous unrestricted fruit feeding",
+            "Young-tree grazing without protection"
+          ],
+
+          backyardRecommendation:
+            "Grow Mulberry as a permanent long-term orchard or silvopasture crop that provides seasonal ripe fruit, repeated leafy forage harvests, summer shade, and environmental enrichment while continuing to feed an age-appropriate complete poultry ration as the flock's nutritional foundation.",
+
+          commercialRecommendation:
+            "Commercial poultry use is generally most appropriate through professionally formulated Mulberry leaf ingredients, carefully managed forage systems, or specialized perennial feeding programs rather than unrestricted fruit feeding."
+        },
+
+        storage: {
+          storageSuitability:
+            "good-for-dried-leaves-poor-for-fresh-fruit",
+
+          preferredStorageForms: [
+            "Properly dried whole leaves",
+            "Coarse dried Mulberry leaf flakes",
+            "Measured Mulberry leaf meal",
+            "Fresh refrigerated ripe fruit for short-term use"
+          ],
+
+          dryingRequirements:
+            "Leaves intended for storage should be dried rapidly with excellent airflow until completely dry before packaging. Thick piles, slow drying, trapped moisture, rain exposure, and humid storage conditions greatly increase the risk of mold and spoilage.",
+
+          storageEnvironment:
+            "Store dried leaves inside clean, dry, rodent-resistant, insect-resistant containers protected from moisture, sunlight, excessive heat, condensation, and large temperature swings. Fresh ripe fruit should be refrigerated and used promptly.",
+
+          containerGuidance:
+            "Use food-safe moisture-resistant containers with tight-fitting lids for dried leaf products. Refrigerated fruit should be stored in shallow breathable containers that minimize crushing and moisture accumulation.",
+
+          inventoryManagement:
+            "Label stored batches with harvest date, species or cultivar when known, drying date, and storage location. Rotate inventory so older dried leaves are used before newer harvests while routinely inspecting for moisture, insects, rodents, mold, unusual odor, or deterioration.",
+
+          inspectionSchedule:
+            "Inspect stored dried leaves regularly throughout storage. Fresh refrigerated fruit should be inspected daily because deterioration occurs rapidly.",
+
+          storageLifeGuidance:
+            "Fresh ripe fruit normally remains usable only for a short refrigerated period. Properly dried leaves generally store for several months when kept completely dry under good storage conditions.",
+
+          disposalGuidance:
+            "Discard fruit or leaves showing mold, fermentation, slime, foul odor, heating, insect infestation, rodent contamination, water damage, suspicious discoloration, or any other indication of spoilage. Do not attempt to salvage questionable material by mixing it with good feed.",
+
+          storageSummary:
+            "Mulberry storage differs greatly between fruit and leaves. Ripe fruit is highly perishable and intended for immediate or short-term refrigerated use, while properly dried leaves may become an excellent long-term stored forage when moisture is carefully controlled."
+        },
+
+        spoilageAndContamination: {
+          overallRiskLevel:
+            "moderate",
+
+          primarySpoilageRisks: [
+            "Fruit fermentation",
+            "Fruit mold",
+            "Fruit soft rot",
+            "Improper leaf drying",
+            "Leaf mold",
+            "Moisture absorption during storage",
+            "Insect infestation",
+            "Rodent contamination",
+            "Wet ground contamination beneath trees"
+          ],
+
+          contaminationRisks: [
+            "Roadside pollution",
+            "Pesticide residues",
+            "Herbicide residues",
+            "Fungicide residues",
+            "Manure contamination",
+            "Standing water contamination",
+            "Wildlife feces",
+            "Rodent contamination",
+            "Bird droppings",
+            "Industrial contaminants",
+            "Unknown tree identification"
+          ],
+
+          spoilageIndicators: [
+            "Alcohol or fermented odor",
+            "Sour odor",
+            "Musty odor",
+            "Visible mold",
+            "Slimy fruit",
+            "Fruit collapse",
+            "Fruit leakage",
+            "Heating stored leaves",
+            "Damp leaf clumps",
+            "Leaf discoloration",
+            "Fungal growth",
+            "Insect activity",
+            "Rodent droppings",
+            "Rodent nesting material",
+            "Condensation inside storage containers"
+          ],
+
+          sensoryInspectionLimitations:
+            "Some microbial contamination cannot be identified by appearance or odor alone. Material with uncertain history, chemical exposure, excessive contamination, or questionable storage should not be fed even when it appears acceptable.",
+
+          salvageWarning:
+            "Do not attempt to rescue moldy, fermented, chemically contaminated, insect-infested, rodent-contaminated, or otherwise questionable Mulberry products by removing visibly damaged portions or mixing them with sound material. Dispose of the entire affected batch.",
+
+          spoilageSummary:
+            "Fruit spoilage occurs rapidly because of high moisture and sugar content, while dried-leaf spoilage is driven primarily by moisture, mold, insects, and poor storage conditions. Routine inspection remains essential for both products."
+        },
+
+        commonFeedingMistakes: [
+          {
+            mistake:
+              "Allowing ripe fruit to replace complete feed",
+
+            consequence:
+              "Reduced intake of balanced nutrition, excessive sugar intake, and dietary imbalance.",
+
+            prevention:
+              "Treat Mulberry as a seasonal supplement rather than staple feed."
+          },
+
+          {
+            mistake:
+              "Feeding unripe fruit",
+
+            consequence:
+              "Reduced suitability and increased digestive concerns.",
+
+            prevention:
+              "Offer only fully ripe fruit from correctly identified trees."
+          },
+
+          {
+            mistake:
+              "Leaving fallen fruit beneath the tree too long",
+
+            consequence:
+              "Fermentation, mold, insects, wildlife attraction, and contamination.",
+
+            prevention:
+              "Remove spoiled fruit promptly and monitor fruit-drop areas frequently."
+          },
+
+          {
+            mistake:
+              "Feeding moldy fruit or leaves",
+
+            consequence:
+              "Potential exposure to harmful microorganisms and spoilage products.",
+
+            prevention:
+              "Discard any questionable material immediately."
+          },
+
+          {
+            mistake:
+              "Harvesting roadside trees",
+
+            consequence:
+              "Possible chemical or environmental contamination.",
+
+            prevention:
+              "Harvest only from known untreated locations."
+          },
+
+          {
+            mistake:
+              "Including coarse woody stems",
+
+            consequence:
+              "Reduced nutritional value and unnecessary fiber.",
+
+            prevention:
+              "Harvest primarily leafy material and tender shoots."
+          },
+
+          {
+            mistake:
+              "Drying leaves too slowly",
+
+            consequence:
+              "Heating, mold development, and storage failure.",
+
+            prevention:
+              "Dry rapidly using excellent airflow."
+          },
+
+          {
+            mistake:
+              "Grinding large quantities of leaf meal months before use",
+
+            consequence:
+              "Greater dust production, moisture absorption, and reduced storage quality.",
+
+            prevention:
+              "Grind only amounts expected to be used within a reasonable period."
+          },
+
+          {
+            mistake:
+              "Failing to protect young trees",
+
+            consequence:
+              "Bark damage, root injury, poor establishment, or tree death.",
+
+            prevention:
+              "Protect trunks and root zones until trees become well established."
+          },
+
+          {
+            mistake:
+              "Assuming all Mulberry species are identical",
+
+            consequence:
+              "Unexpected differences in size, hardiness, productivity, invasiveness, or fruiting.",
+
+            prevention:
+              "Select appropriate species and cultivars before planting."
+          },
+
+          {
+            mistake:
+              "Treating fruit and leaves as nutritionally equivalent",
+
+            consequence:
+              "Incorrect ration planning and unrealistic nutritional expectations.",
+
+            prevention:
+              "Remember that fruit and foliage serve very different feeding roles."
+          },
+
+          {
+            mistake:
+              "Failing to inspect stored dried leaves",
+
+            consequence:
+              "Undetected moisture, mold, insects, or rodents.",
+
+            prevention:
+              "Inspect storage routinely throughout the storage period."
+          },
+
+          {
+            mistake:
+              "Using unidentified berries or foliage",
+
+            consequence:
+              "Possible accidental feeding of unsafe plant material.",
+
+            prevention:
+              "Only feed correctly identified Mulberry species."
+          },
+
+          {
+            mistake:
+              "Allowing hanging branches to become hazardous",
+
+            consequence:
+              "Potential injury or entanglement.",
+
+            prevention:
+              "Inspect hanging hardware and branches regularly."
+          },
+
+          {
+            mistake:
+              "Expecting Mulberry to eliminate purchased feed",
+
+            consequence:
+              "Poor flock nutrition and reduced performance.",
+
+            prevention:
+              "Continue providing complete poultry feed at all times."
+          }
+        ],
+
+        troubleshooting: {
+          flockIgnoresRipeFruit: {
+            possibleCauses: [
+              "The flock is unfamiliar with Mulberry fruit",
+              "The fruit is not fully ripe",
+              "The fruit has an unfamiliar color or texture",
+              "The birds already have adequate complete feed",
+              "The fruit is stale, fermented, moldy, or contaminated"
+            ],
+
+            recommendedActions: [
+              "Confirm that the fruit is fully ripe and comes from a correctly identified Mulberry tree.",
+              "Offer a very small amount of clean hand-harvested fruit.",
+              "Split or lightly crush one ripe fruit so the flock can inspect the interior.",
+              "Do not withhold complete feed to force consumption.",
+              "Discard the fruit if its odor, texture, cleanliness, or quality is questionable."
+            ]
+          },
+
+          flockIgnoresFreshLeaves: {
+            possibleCauses: [
+              "The birds are unfamiliar with leafy Mulberry forage",
+              "The leaves are too mature or fibrous",
+              "Too much woody stem is included",
+              "The foliage has wilted before feeding",
+              "The flock already has access to more desirable forage",
+              "The leaves are diseased, dusty, contaminated, or chemically exposed"
+            ],
+
+            recommendedActions: [
+              "Offer a small quantity of tender young leaves.",
+              "Remove coarse stems and thick woody branches.",
+              "Suspend a fresh leafy branch at a comfortable pecking height.",
+              "Offer the leaves promptly after harvest.",
+              "Do not withhold complete feed to encourage acceptance.",
+              "Discard foliage with questionable quality or exposure history."
+            ]
+          },
+
+          dominantBirdsMonopolizeFruitOrBranches: {
+            possibleCauses: [
+              "Too few feeding locations",
+              "Fruit is concentrated in one small area",
+              "Only one branch has been provided",
+              "Feeding stations are positioned too closely together",
+              "Limited enclosure space",
+              "Strong existing flock hierarchy"
+            ],
+
+            recommendedActions: [
+              "Provide several small fruit portions or leafy branches.",
+              "Space feeding locations widely apart.",
+              "Place some feeding stations behind visual barriers.",
+              "Distribute fruit across a broad clean area rather than one pile.",
+              "Observe lower-ranking birds to confirm access.",
+              "Maintain adequate complete-feed feeder space."
+            ]
+          },
+
+          completeFeedConsumptionDeclines: {
+            likelyCause:
+              "Mulberry fruit, fresh leaves, dried flakes, or leaf meal are being offered too abundantly, too frequently, or more accessibly than the complete poultry ration.",
+
+            recommendedActions: [
+              "Reduce or temporarily stop Mulberry supplementation.",
+              "Restrict flock access beneath a heavily fruiting tree when practical.",
+              "Remove excessive fallen fruit.",
+              "Provide fresh complete feed through adequate feeder space.",
+              "Confirm that the complete ration is not stale, wet, moldy, or difficult to access.",
+              "Monitor whether normal complete-feed consumption resumes."
+            ]
+          },
+
+          looseDroppingsAfterFruitFeeding: {
+            possibleCauses: [
+              "Excessive ripe-fruit consumption",
+              "Sudden introduction of a high-moisture food",
+              "Consumption of fermented or spoiled fruit",
+              "Fruit contaminated by manure, mud, insects, or standing water",
+              "An unrelated digestive or health problem"
+            ],
+
+            recommendedActions: [
+              "Stop Mulberry fruit temporarily.",
+              "Remove all accumulated fallen fruit from the flock area.",
+              "Inspect the remaining fruit for fermentation, mold, slime, or abnormal odor.",
+              "Maintain unrestricted access to clean water and complete feed.",
+              "Reintroduce only a small amount of clean ripe fruit after droppings normalize.",
+              "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+            ]
+          },
+
+          droppingsChangeAfterLeafFeeding: {
+            possibleCauses: [
+              "Sudden increase in green forage intake",
+              "Excessive fresh-leaf consumption",
+              "High intake of fibrous mature leaves",
+              "Consumption of wilted or spoiled foliage",
+              "An unrelated digestive or health problem"
+            ],
+
+            recommendedActions: [
+              "Reduce or stop the Mulberry leaves temporarily.",
+              "Offer only small quantities of tender sound leaves during reintroduction.",
+              "Remove coarse stems and overly mature foliage.",
+              "Maintain unrestricted access to complete feed and clean water.",
+              "Seek veterinary guidance if abnormal droppings persist or the flock shows illness."
+            ]
+          },
+
+          fallenFruitFermentsQuickly: {
+            likelyCauses: [
+              "Warm weather",
+              "High humidity",
+              "Rain or irrigation wetting fallen fruit",
+              "Fruit accumulating in thick layers",
+              "Fruit being crushed by poultry or foot traffic",
+              "Infrequent cleanup beneath the tree"
+            ],
+
+            recommendedActions: [
+              "Remove fallen fruit more frequently.",
+              "Collect ripe fruit before heavy rain when practical.",
+              "Restrict access when fruit accumulation cannot be managed safely.",
+              "Improve drainage beneath the tree.",
+              "Avoid allowing fruit to collect in wet litter, mud, or low depressions.",
+              "Discard fruit with sour, alcoholic, yeasty, bubbling, or otherwise abnormal characteristics."
+            ]
+          },
+
+          fliesOrWaspsIncreaseBeneathTree: {
+            likelyCauses: [
+              "Accumulated ripe or damaged fruit",
+              "Fermenting fruit",
+              "Crushed fruit residue",
+              "Wet organic material beneath the canopy",
+              "Infrequent sanitation"
+            ],
+
+            recommendedActions: [
+              "Remove fallen and damaged fruit promptly.",
+              "Clean crushed fruit residue from poultry structures and hard surfaces.",
+              "Reduce access during periods of uncontrollable fruit accumulation.",
+              "Improve drainage and airflow beneath the canopy.",
+              "Avoid pesticide use that could contaminate poultry forage or harm the flock.",
+              "Use only flock-safe pest-management practices."
+            ]
+          },
+
+          wildlifeConsumesMostFruit: {
+            possibleCauses: [
+              "Wild birds are feeding in the canopy",
+              "Deer or mammals are browsing low branches",
+              "Raccoons, opossums, squirrels, or rodents are visiting the tree",
+              "Fruit is being left overnight",
+              "The tree is located near wildlife cover"
+            ],
+
+            recommendedActions: [
+              "Harvest ripe fruit directly when practical.",
+              "Collect fallen fruit promptly.",
+              "Remove spoiled and leftover fruit before nighttime.",
+              "Use appropriate fencing or tree protection.",
+              "Avoid netting that could entangle poultry or wild birds.",
+              "Evaluate whether wildlife activity creates predator, disease, or sanitation concerns."
+            ]
+          },
+
+          chickensDamageYoungTree: {
+            likelyCauses: [
+              "Scratching around the root zone",
+              "Bark pecking",
+              "Trampling near the trunk",
+              "Dust bathing beneath the tree",
+              "Mulch being displaced",
+              "The tree was exposed before becoming established"
+            ],
+
+            recommendedActions: [
+              "Install a secure trunk guard.",
+              "Fence the root zone temporarily.",
+              "Replace displaced soil without burying the root flare.",
+              "Restore mulch while keeping it several inches away from the trunk.",
+              "Prevent direct flock access until the tree is firmly established.",
+              "Inspect the trunk regularly for wounds, girdling, or bark loss."
+            ]
+          },
+
+          leafyBranchesWiltBeforeConsumption: {
+            possibleCauses: [
+              "Branches were harvested too far in advance",
+              "Harvest occurred during the hottest part of the day",
+              "Branches were left in direct sun",
+              "The flock received more foliage than it could consume",
+              "The foliage was stored in a compact pile"
+            ],
+
+            recommendedActions: [
+              "Harvest smaller amounts closer to feeding time.",
+              "Harvest during the cooler part of the day when practical.",
+              "Keep branches shaded and well ventilated before feeding.",
+              "Offer only what the flock can use promptly.",
+              "Remove wilted, heated, slimy, or contaminated leftovers."
+            ]
+          },
+
+          hangingBranchFallsOrBecomesHazardous: {
+            possibleCauses: [
+              "Weak suspension material",
+              "An excessively heavy branch",
+              "Poor attachment points",
+              "Loose loops of string or wire",
+              "Sharp branch ends",
+              "Repeated pulling by several birds"
+            ],
+
+            recommendedActions: [
+              "Remove the branch immediately.",
+              "Use a smaller and lighter branch.",
+              "Use secure poultry-safe attachment hardware.",
+              "Eliminate loose loops and snagging points.",
+              "Trim sharp, splintered, or protruding wood.",
+              "Inspect suspended forage during every feeding period."
+            ]
+          },
+
+          driedLeavesDevelopCondensation: {
+            likelyCauses: [
+              "Leaves were stored before completely dry",
+              "Warm dried leaves were sealed",
+              "Temperature fluctuations caused moisture migration",
+              "The container is exposed to a damp environment",
+              "The lid or container seal is damaged"
+            ],
+
+            recommendedActions: [
+              "Remove the material from flock access.",
+              "Inspect for heat, musty odor, mold, discoloration, and clumping.",
+              "Discard questionable material.",
+              "Do not attempt to redry visibly moldy leaves.",
+              "Correct the drying and storage environment before storing a new batch."
+            ]
+          },
+
+          driedLeavesSmellUnusual: {
+            possibleInterpretations: [
+              "A musty odor may indicate mold.",
+              "A sour or fermented odor may indicate storage before complete drying.",
+              "A chemical odor may indicate environmental contamination.",
+              "A rodent-like or ammonia odor may indicate pest contamination.",
+              "A scorched odor may indicate excessive drying heat."
+            ],
+
+            recommendedAction:
+              "Do not feed dried Mulberry leaves with an abnormal odor. Discard the affected batch rather than attempting to air it out, redry it, or blend it with sound forage."
+          },
+
+          leafMealCreatesExcessiveDust: {
+            likelyCauses: [
+              "Leaves were ground too finely",
+              "The meal has become excessively dry and powdery",
+              "The batch contains shattered stems and petioles",
+              "The meal is being poured from excessive height",
+              "Poor ventilation is allowing airborne dust to accumulate"
+            ],
+
+            recommendedActions: [
+              "Stop feeding the excessively dusty meal.",
+              "Use coarse dried leaf flakes instead of fine powder.",
+              "Grind to a coarser texture.",
+              "Handle meal gently and close to the mixing container.",
+              "Wear appropriate respiratory protection during grinding.",
+              "Do not expose birds to visible clouds of airborne plant dust."
+            ]
+          },
+
+          storedLeavesDevelopInsects: {
+            likelyCauses: [
+              "Insects entered during drying",
+              "The storage container is not tightly sealed",
+              "The storage area contains other infested feed",
+              "Leaves were stored with excess moisture",
+              "Inventory remained unused for too long"
+            ],
+
+            recommendedActions: [
+              "Remove the affected batch from flock access.",
+              "Inspect for webbing, larvae, beetles, odor, moisture, and mold.",
+              "Discard heavily infested or questionable material.",
+              "Clean the storage area and nearby containers.",
+              "Use clean pest-resistant containers for future batches.",
+              "Rotate stored inventory more promptly."
+            ]
+          },
+
+          rodentsAppearNearStorageOrTree: {
+            likelyCauses: [
+              "Fallen fruit remains overnight",
+              "Dried leaves are stored in open containers",
+              "Fruit residue has accumulated beneath the tree",
+              "Storage bins are damaged",
+              "Leaf meal or flakes have been spilled"
+            ],
+
+            recommendedActions: [
+              "Remove fallen fruit and spilled forage.",
+              "Use secure rodent-resistant storage containers.",
+              "Repair storage and coop access points.",
+              "Clean beneath shelves, feeders, and drying racks.",
+              "Remove fruit residue before nighttime.",
+              "Do not use poison in a manner that endangers chickens, pets, wildlife, or children."
+            ]
+          },
+
+          flockShowsAbnormalBehaviorAfterEatingFruit: {
+            possibleCauses: [
+              "Consumption of fermented fruit",
+              "Chemical contamination",
+              "Consumption of unknown or misidentified fruit",
+              "Mold or microbial spoilage",
+              "An unrelated medical emergency"
+            ],
+
+            recommendedActions: [
+              "Remove all Mulberry material immediately.",
+              "Prevent access to fallen fruit and the affected tree area.",
+              "Preserve a sample of the suspected material when it can be handled safely.",
+              "Provide clean water and normal complete feed unless a veterinarian advises otherwise.",
+              "Contact a poultry veterinarian promptly.",
+              "Treat weakness, tremors, loss of coordination, breathing difficulty, collapse, or intoxication-like behavior as urgent."
+            ]
+          }
+        },
+
+        faq: [
+          {
+            question:
+              "Can chickens eat Mulberries?",
+
+            answer:
+              "Yes. Chickens can eat clean, fully ripe Mulberry fruit and sound Mulberry leaves as supplemental foods. Neither fruit nor leaves should replace a nutritionally complete poultry ration."
+          },
+
+          {
+            question:
+              "Can chickens eat Mulberry fruit that has fallen from the tree?",
+
+            answer:
+              "Yes, when the fruit is freshly fallen, fully ripe, clean, and free from mold, fermentation, manure, mud, standing water, insects, and chemical contamination. Fallen fruit should be inspected frequently because it spoils rapidly."
+          },
+
+          {
+            question:
+              "Can chickens eat unripe Mulberries?",
+
+            answer:
+              "Unripe Mulberry fruit should not be intentionally fed. Fruit color at ripeness varies among species and cultivars, so fruit should come from a correctly identified known tree and should be fully ripe for that tree."
+          },
+
+          {
+            question:
+              "Can chickens eat Mulberry leaves?",
+
+            answer:
+              "Yes. Sound fresh Mulberry leaves are useful supplemental forage. Tender young leaves generally provide better palatability and less structural fiber than older leaves and woody stems."
+          },
+
+          {
+            question:
+              "Can chickens eat Mulberry branches?",
+
+            answer:
+              "Fresh leafy branches may be offered for pecking and browsing, but chickens receive most of the feed value from the leaves and tender shoots. Thick, sharp, splintered, or heavily woody branches should be removed."
+          },
+
+          {
+            question:
+              "Can chickens eat dried Mulberry leaves?",
+
+            answer:
+              "Yes. Properly dried Mulberry leaves may be offered as coarse flakes or used in measured quantities. They must be completely dry and free from mold, moisture, insects, rodents, and abnormal odors."
+          },
+
+          {
+            question:
+              "Can Mulberry leaves be ground into chicken feed?",
+
+            answer:
+              "Properly dried leaves can be ground into leaf meal, but the meal should be measured carefully within a balanced ration. Fine meal can create dust and should not be added freely to an informal homemade feed mixture."
+          },
+
+          {
+            question:
+              "Are Mulberry leaves high in protein?",
+
+            answer:
+              "Mulberry leaves commonly contain moderate-to-high crude protein when measured on a dry-matter basis, often in the upper teens or low twenties. Fresh leaves contain substantial water, and crude-protein percentage alone does not establish a complete amino-acid balance for chickens."
+          },
+
+          {
+            question:
+              "Is Mulberry fruit high in protein?",
+
+            answer:
+              "No. Ripe Mulberry fruit is primarily a high-moisture carbohydrate-oriented food. The leaf portion of the tree provides substantially more protein than the fruit."
+          },
+
+          {
+            question:
+              "Can Mulberries replace chicken feed?",
+
+            answer:
+              "No. Mulberry fruit and leaves are supplemental foods. They do not provide the complete balance of energy, digestible amino acids, calcium, phosphorus, sodium, vitamins, and trace minerals required by poultry."
+          },
+
+          {
+            question:
+              "How much Mulberry can chickens eat?",
+
+            answer:
+              "No universal crop-specific quantity is appropriate for every flock. Amounts should remain limited enough that complete-feed intake, normal droppings, body condition, and flock behavior remain stable. Heavy natural fruit drop may require cleanup or temporary access control."
+          },
+
+          {
+            question:
+              "Can chickens eat fermented Mulberries?",
+
+            answer:
+              "No. Fruit with alcoholic, sour, yeasty, bubbling, slimy, or otherwise fermented characteristics should be treated as spoiled and removed from flock access."
+          },
+
+          {
+            question:
+              "Can chickens eat moldy Mulberries?",
+
+            answer:
+              "No. Moldy, musty, rotten, slimy, or suspicious fruit and leaves should be discarded. Do not attempt to salvage questionable material by removing the visibly affected portions."
+          },
+
+          {
+            question:
+              "Can baby chicks eat Mulberries?",
+
+            answer:
+              "Mulberry fruit and leaves are not recommended as routine backyard supplements for young chicks. Chicks should receive an age-appropriate complete starter ration as their nutritional foundation."
+          },
+
+          {
+            question:
+              "Do chickens need grit when eating Mulberry leaves?",
+
+            answer:
+              "Chickens consuming coarse fibrous leaves may benefit from appropriately sized insoluble grit when adequate natural grit is unavailable. Grit does not make an unbalanced diet nutritionally complete."
+          },
+
+          {
+            question:
+              "Can laying hens get enough calcium from Mulberry leaves?",
+
+            answer:
+              "No. Mulberry leaves may contribute calcium, but they cannot replace a complete layer ration or an appropriately managed supplemental calcium program."
+          },
+
+          {
+            question:
+              "Can chickens eat White Mulberry fruit and leaves?",
+
+            answer:
+              "Correctly identified ripe White Mulberry fruit and sound leaves may be used as supplements. White Mulberry can be invasive or restricted in some regions and may hybridize with native Red Mulberry, so local planting guidance should be checked."
+          },
+
+          {
+            question:
+              "Are Red, White, and Black Mulberries nutritionally identical?",
+
+            answer:
+              "No. Species, hybrids, cultivars, maturity, growing conditions, and processing influence fruit and leaf composition. The tree's mature size, hardiness, fruiting, invasiveness, and forage value may also differ substantially."
+          },
+
+          {
+            question:
+              "Can chickens live beneath a Mulberry tree?",
+
+            answer:
+              "Established trees can provide excellent shade, fruit-drop feeding, insect activity, and enrichment. Young trunks and roots require protection, and fallen fruit must be managed to prevent fermentation, mold, flies, wasps, wildlife attraction, and ground contamination."
+          },
+
+          {
+            question:
+              "Should Mulberry fruit be washed before feeding?",
+
+            answer:
+              "Clean hand-harvested fruit may not always require washing, but dusty or lightly soiled fruit can be rinsed with clean water and fed promptly. Washing does not make moldy, fermented, chemically contaminated, roadside, or manure-contaminated fruit safe."
+          }
+        ],
+
+        scientificNotes: {
+          taxonomy: {
+            scientificName:
+              "Morus spp., including Morus rubra, Morus alba, Morus nigra, and selected hybrids",
+
+            family:
+              "Moraceae"
+          },
+
+          researchNotes: [
+            "Mulberry fruit and Mulberry leaves must be treated as nutritionally distinct feed products.",
+            "Leaf composition is generally reported on a dry-matter basis, while fruit composition is usually reported on a fresh-weight basis.",
+            "Mulberry leaves commonly contain approximately 15%–25% crude protein on a dry-matter basis, but values vary among species, cultivars, harvest stages, growing conditions, and analytical methods.",
+            "Crude-protein concentration does not establish that Mulberry leaves provide a complete digestible amino-acid balance for poultry.",
+            "Leaf fiber generally increases with maturity and with inclusion of petioles, coarse stems, and woody shoots.",
+            "Ripe Mulberry fruit primarily provides water, natural sugars, carbohydrates, pigments, vitamin C, flavonoids, anthocyanins in darker fruit, and seasonal enrichment.",
+            "Published poultry studies frequently evaluate processed Mulberry leaf meal within complete formulated diets rather than unrestricted fresh-leaf or fruit feeding.",
+            "Research inclusion percentages cannot be transferred directly into informal backyard mixtures without considering the complete ration.",
+            "Fresh leaves, dried leaves, leaf flakes, leaf meal, extracts, and commercial concentrates are not nutritionally interchangeable.",
+            "Removing water during drying greatly increases nutrient and fiber concentration per pound.",
+            "Mulberry species and cultivars vary substantially in hardiness, mature size, growth habit, fruiting, leaf characteristics, productivity, and invasive potential.",
+            "White Mulberry may spread aggressively in some regions and may hybridize with native Red Mulberry populations.",
+            "Backyard flock intake data for naturally fallen Mulberry fruit and fresh leafy branches remain limited.",
+            "Long-term livestock-forage evidence is stronger than crop-specific backyard laying-flock evidence.",
+            "Tree productivity is difficult to express through ordinary garden yield per square foot because canopy size, age, cultivar, and pruning system strongly affect production."
+          ],
+
+          plannerConsiderations: [
+            "The planner should distinguish ripe fruit from fresh leaves, dried leaves, and leaf meal.",
+            "Fresh fruit should be scored as a high-moisture seasonal carbohydrate and enrichment product rather than as a protein feed.",
+            "Leaves should be scored as protein-oriented perennial forage rather than as a concentrated complete protein ingredient.",
+            "Dry-matter leaf values should not be applied directly to equal fresh weights.",
+            "Whole-tree fruit access provides low labor but poor intake measurement precision.",
+            "Hand-harvested fruit provides better inspection and portion control.",
+            "Fresh cut-and-carry foliage provides strong value for confined flocks.",
+            "Dried leaf forage adds storage value but substantially increases processing labor and mold risk.",
+            "Leaf meal offers better measurement precision but requires grinding, dust control, dependable drying, and careful ration inclusion.",
+            "Cultivar selection should account for mature size, fruiting status, cold hardiness, harvest accessibility, invasiveness, and intended management system.",
+            "Fruitless cultivars should receive no fruit-production value.",
+            "Young trees require trunk and root-zone protection before direct poultry access.",
+            "Heavy seasonal fruit drop should increase spoilage, wildlife, insect, sanitation, and dietary-displacement risk scores.",
+            "Permanent placement should penalize users with small spaces, temporary housing, utility conflicts, pavement, patios, vehicles, septic systems, or restricted landscapes.",
+            "Orchards, silvopasture, rotational paddocks, hedgerows, and unused lawn should receive strong suitability scores.",
+            "Container and ordinary raised-bed production should receive very low practical feed-production scores.",
+            "The planner should not claim a universal backyard feeding percentage.",
+            "Tree yield should eventually be modeled by canopy footprint, cultivar, age, pruning system, and years after establishment."
+          ],
+
+          futureResearchTopics: [
+            "Backyard laying-hen intake of naturally fallen ripe Mulberry fruit",
+            "Backyard flock intake of fresh Mulberry leaves and leafy branches",
+            "Species-specific fruit and leaf composition",
+            "Cultivar-specific crude-protein and fiber variation",
+            "Digestible amino-acid profiles of Mulberry leaf products",
+            "Safe practical inclusion levels for home-produced leaf meal",
+            "Effects of Mulberry leaf maturity on poultry acceptance and nutrient availability",
+            "Carotenoid retention under different leaf-drying methods",
+            "Mold risk under household leaf-drying systems",
+            "Fruit-drop intake control beneath mature trees",
+            "Canopy-footprint yield modeling",
+            "Leaf yield under pollarding, coppicing, and hedgerow management",
+            "Effects of repeated leaf harvest on long-term fruit production",
+            "Regional invasiveness and hybridization risk among Mulberry species",
+            "Long-term economic value compared with annual poultry forage crops"
+          ]
+        },
+
+        expertSummary: {
+          oneSentence:
+            "Mulberry is one of the most versatile long-term supplemental poultry crops because it can provide protein-oriented leaves, seasonal ripe fruit, shade, enrichment, and repeated production for decades.",
+
+          oneParagraph:
+            "A well-placed Mulberry tree can support backyard chickens through fresh leafy forage, naturally fallen or hand-harvested ripe fruit, hanging-branch enrichment, properly dried winter forage, summer shade, and silvopasture integration. Its leaves offer substantially more protein and fiber than its fruit, while ripe fruit primarily supplies moisture, natural sugars, carbohydrates, pigments, and seasonal variety. Because Mulberry fruit is highly perishable, leaves contain structural fiber and incomplete protein, species and cultivars vary greatly, and neither product provides complete poultry nutrition, Mulberry should complement rather than replace an age-appropriate complete ration.",
+
+          recommendation:
+            "Highly recommended as a managed supplemental perennial tree-forage and seasonal fruit crop.",
+
+          recommendationReasoning:
+            "Few homestead crops combine perennial leaf production, seasonal fruit, shade, enrichment, wildlife value, low recurring annual cost, and long productive life as effectively as Mulberry. Its principal limitations—fruit spoilage, intake control, leaf fiber, drying requirements, young-tree vulnerability, large permanent size, cultivar variation, and possible invasive spread—can usually be managed through careful cultivar selection, permanent site planning, sanitation, pruning, controlled flock access, and continued reliance on complete feed.",
+
+          idealUseCase:
+            "A long-term backyard, orchard, rotational-paddock, hedgerow, or silvopasture system with sufficient permanent space for an appropriately selected Mulberry cultivar and an owner willing to manage seasonal fruit drop, young-tree protection, pruning, and optional leaf drying.",
+
+          notRecommendedAs:
+            "A replacement for complete poultry feed, a sole protein source, a primary concentrated energy crop, a routine young-chick supplement, a temporary annual planting, an ordinary container crop, or an unmanaged fruit-drop tree in a location where spoilage, staining, wildlife, invasiveness, or structural conflicts cannot be controlled."
+        },
+
+        metadata: {
+          feedingReferenceVersion:
+            "1.0.0",
+
+          templateVersion:
+            "1.0.0",
+
+          cropSpecificReviewStatus:
+            "reviewed",
+
+          confidenceLevel:
+            "high",
+
+          lastReviewed:
+            "2026-07",
+
+          intendedAudience: [
+            "Backyard chicken keepers",
+            "Homesteaders",
+            "Small flock owners",
+            "Educators",
+            "Feed-planner engine",
+            "Future AI assistant"
+          ],
+
+          sourceRecordFields: [
+            "identity",
+            "summary",
+            "chickenUse",
+            "nutrition",
+            "harvest",
+            "storage",
+            "risks",
+            "usePaths",
+            "seasonalRoles",
+            "dataQuality"
+          ],
+
+          designGoals: [
+            "Power the 'Can My Chickens Eat This?' tool",
+            "Provide structured data for future calculators",
+            "Support FAQ generation",
+            "Support AI responses",
+            "Support printable crop sheets",
+            "Support comparison tables",
+            "Support feed recommendations",
+            "Maintain consistency across all feed crops"
+          ]
+        }
+      },
+    
+    
+      chickenUse: {
       edibleParts: [
         "Ripe fruit",
         "Fresh mature leaves",
