@@ -74436,16 +74436,298 @@ mechanicalProcessingSuitabilityScore:
           overallRiskLevel:
             "moderate",
 
-          primarySpoilageRisks: [
-            "Fruit fermentation",
-            "Fruit mold",
-            "Fruit soft rot",
-            "Improper leaf drying",
-            "Leaf mold",
-            "Moisture absorption during storage",
-            "Insect infestation",
-            "Rodent contamination",
-            "Wet ground contamination beneath trees"
+                    primarySpoilageRisks: [
+            {
+              risk:
+                "Fruit fermentation",
+
+              likelihood:
+                "high-during-warm-humid-weather",
+
+              primaryCauses: [
+                "Ripe fruit remaining beneath the tree too long",
+                "Warm temperatures",
+                "High humidity",
+                "Rain or irrigation",
+                "Fruit accumulating in thick layers",
+                "Fruit being crushed by poultry or foot traffic",
+                "Poor drainage beneath the tree",
+                "Infrequent collection or cleanup"
+              ],
+
+              warningSigns: [
+                "Alcohol-like odor",
+                "Sweet-sour odor",
+                "Yeasty odor",
+                "Bubbling liquid",
+                "Foam",
+                "Fruit heating",
+                "Collapsed fruit",
+                "Excessive liquid around fallen fruit"
+              ],
+
+              response:
+                "Remove fermented and suspicious fruit from flock access immediately. Clean the affected area and discard the fruit rather than attempting to rinse, dry, or blend it with sound fruit."
+            },
+
+            {
+              risk:
+                "Fruit mold",
+
+              likelihood:
+                "high-when-ripe-fruit-remains-wet",
+
+              primaryCauses: [
+                "Rain-wet fruit",
+                "High humidity",
+                "Fruit stored while damp",
+                "Fruit held in deep containers",
+                "Poor airflow",
+                "Bruised or damaged fruit",
+                "Contact with moldy fruit",
+                "Delayed cleanup beneath the tree"
+              ],
+
+              warningSigns: [
+                "Visible fuzzy growth",
+                "White, gray, green, blue, or black patches",
+                "Musty odor",
+                "Unusual discoloration",
+                "Soft collapsing fruit",
+                "Fruit clumping together",
+                "Bird refusal",
+                "Abnormal surface film"
+              ],
+
+              response:
+                "Discard moldy fruit and nearby suspicious fruit. Do not attempt to make moldy fruit safe by washing it, removing the visible mold, drying it, or mixing it with clean fruit."
+            },
+
+            {
+              risk:
+                "Fruit soft rot",
+
+              likelihood:
+                "high-after-bruising-or-ground-contact",
+
+              primaryCauses: [
+                "Overripe fruit",
+                "Bruising during harvest",
+                "Fruit being crushed beneath the tree",
+                "Warm storage",
+                "Wet storage",
+                "Bacterial or fungal deterioration",
+                "Fruit held too long before feeding"
+              ],
+
+              warningSigns: [
+                "Slimy texture",
+                "Watery collapse",
+                "Leaking fruit",
+                "Foul odor",
+                "Dark sunken areas",
+                "Excessive softness",
+                "Sticky liquid accumulation",
+                "Rapid breakdown after handling"
+              ],
+
+              response:
+                "Discard soft, slimy, leaking, foul-smelling, or collapsing fruit. Remove accumulated fruit residue from the flock area to reduce insects, wildlife attraction, and additional contamination."
+            },
+
+            {
+              risk:
+                "Leaf mold during drying",
+
+              likelihood:
+                "moderate-to-high-with-slow-drying",
+
+              primaryCauses: [
+                "Leaves piled too deeply",
+                "Insufficient airflow",
+                "High humidity",
+                "Rain exposure",
+                "Drying whole branches too closely together",
+                "Including wet or damaged foliage",
+                "Drying in an enclosed unventilated area"
+              ],
+
+              warningSigns: [
+                "Musty odor",
+                "Visible fuzzy growth",
+                "Dark or unusual spotting",
+                "Leaves sticking together",
+                "Damp inner layers",
+                "Unexpected heating",
+                "Softened leaf tissue",
+                "Uneven drying"
+              ],
+
+              response:
+                "Discard moldy and suspicious leaves. Do not attempt to make moldy foliage safe by redrying it, brushing away visible growth, grinding it, or blending it with sound leaves."
+            },
+
+            {
+              risk:
+                "Heating or fermentation of stored leaves",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Leaves stored before completely dry",
+                "Warm leaves sealed in containers",
+                "Thick compacted storage",
+                "Moisture trapped inside containers",
+                "Temperature fluctuations",
+                "Poor ventilation during drying"
+              ],
+
+              warningSigns: [
+                "Warm or hot stored material",
+                "Condensation inside the container",
+                "Sweet-sour odor",
+                "Fermented odor",
+                "Damp clumps",
+                "Leaf discoloration",
+                "Loss of crisp texture",
+                "Rapid decline in storage quality"
+              ],
+
+              response:
+                "Remove the affected material from flock access. Discard leaves when complete dryness and feed safety cannot be confirmed."
+            },
+
+            {
+              risk:
+                "Moisture absorption during storage",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Humid storage conditions",
+                "Damaged container seals",
+                "Opening containers frequently",
+                "Condensation",
+                "Storage near exterior walls or concrete floors",
+                "Temperature fluctuations",
+                "Water leaks"
+              ],
+
+              warningSigns: [
+                "Damp leaf flakes",
+                "Loss of crispness",
+                "Clumping",
+                "Condensation",
+                "Musty odor",
+                "Darkened material",
+                "Container-wall moisture",
+                "Early mold growth"
+              ],
+
+              response:
+                "Remove damp material from flock access and inspect it carefully. Discard any batch with mustiness, mold, heating, discoloration, or uncertain storage quality."
+            },
+
+            {
+              risk:
+                "Insect infestation",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Insects entering during drying",
+                "Open storage containers",
+                "Warm storage conditions",
+                "Old forage residue",
+                "Poor storage sanitation",
+                "Long storage periods",
+                "Nearby infested feed products"
+              ],
+
+              warningSigns: [
+                "Live insects",
+                "Larvae",
+                "Webbing",
+                "Small holes in leaves",
+                "Excess powder or dust",
+                "Unusual movement in stored material",
+                "Insect casings",
+                "Rapid deterioration"
+              ],
+
+              response:
+                "Evaluate the severity and overall condition of the leaves. Material with extensive infestation, webbing, moisture, mold, unusual odor, or contamination should be discarded."
+            },
+
+            {
+              risk:
+                "Rodent contamination",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Open or damaged containers",
+                "Fruit or leaf spills",
+                "Poor storage-room sanitation",
+                "Fallen fruit remaining overnight",
+                "Unsealed building openings",
+                "Storage containers that rodents can chew"
+              ],
+
+              warningSigns: [
+                "Rodent droppings",
+                "Urine odor",
+                "Chewed containers",
+                "Nesting material",
+                "Scattered leaf flakes",
+                "Tracks",
+                "Gnaw marks",
+                "Contaminated storage surfaces"
+              ],
+
+              response:
+                "Discard material exposed to rodents. Clean and sanitize the storage area, repair entry points, and move future Mulberry products into secure rodent-resistant containers."
+            },
+
+          
+
+            {
+              risk:
+                "Wet-ground contamination beneath trees",
+
+              likelihood:
+                "moderate-to-high-during-fruit-drop",
+
+              primaryCauses: [
+                "Poor drainage",
+                "Standing water",
+                "Mud",
+                "Wet litter",
+                "Manure accumulation",
+                "Heavy poultry traffic",
+                "Rain during peak fruit drop",
+                "Fruit collecting in low areas"
+              ],
+
+              warningSigns: [
+                "Mud-coated fruit",
+                "Manure on fruit",
+                "Fruit submerged in water",
+                "Foul ground odor",
+                "Slimy fruit surfaces",
+                "Heavy fly activity",
+                "Fruit mixed with dirty litter",
+                "Rapid fruit deterioration"
+              ],
+
+              response:
+                "Discard fruit that has contacted manure, standing water, dirty litter, or heavily contaminated mud. Improve drainage and remove accumulated fruit before returning the flock to the area."
+            
+            }
           ],
 
           contaminationRisks: [
@@ -74460,24 +74742,6 @@ mechanicalProcessingSuitabilityScore:
             "Bird droppings",
             "Industrial contaminants",
             "Unknown tree identification"
-          ],
-
-          spoilageIndicators: [
-            "Alcohol or fermented odor",
-            "Sour odor",
-            "Musty odor",
-            "Visible mold",
-            "Slimy fruit",
-            "Fruit collapse",
-            "Fruit leakage",
-            "Heating stored leaves",
-            "Damp leaf clumps",
-            "Leaf discoloration",
-            "Fungal growth",
-            "Insect activity",
-            "Rodent droppings",
-            "Rodent nesting material",
-            "Condensation inside storage containers"
           ],
 
           sensoryInspectionLimitations:
