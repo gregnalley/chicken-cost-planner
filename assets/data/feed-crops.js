@@ -79211,7 +79211,3239 @@ perennial:
     summary:
       "Field Corn is one of the world's most productive cereal crops and serves as a concentrated energy source for poultry through its mature grain. Unlike sweet corn, Field Corn is grown primarily for dry kernels that store well for extended periods when properly dried. Mature grain supplies abundant starch and metabolizable energy but relatively little protein quality, calcium, or available phosphorus compared with a complete poultry ration. Successful production requires warm temperatures, full sun, fertile soil, dependable pollination, adequate moisture during tasseling and silking, and careful postharvest drying to reduce mold and mycotoxin risk.",
 
-    chickenUse: {
+    ///////////////////////////
+//
+//  Field Corn - What can chickens eat?
+//
+//////////////////////////
+
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Field Corn?",
+
+        answerLabel:
+          "Yes — clean, mature, properly dried Field Corn grain is safe for established adult chickens as a supplemental high-energy feed.",
+
+        quickAnswer:
+          "Chickens can safely eat clean mature Field Corn kernels, shelled dry grain, cracked grain, coarsely ground grain, properly sprouted untreated grain, and thoroughly dried whole ears. Field Corn is especially valuable as a concentrated source of starch and dietary energy, a winter supplement, a stored grain, and a whole-ear enrichment crop. Because Corn is relatively low in protein quality, lysine, tryptophan, calcium, available phosphorus, vitamins, and several trace minerals, it must remain supplemental unless incorporated into a professionally balanced poultry ration. Never feed moldy, musty, heated, fermented, chemically treated, rodent-contaminated, or otherwise questionable Corn.",
+
+        detailedAnswer:
+          "Field Corn is a warm-season cereal crop grown primarily for mature dry grain rather than for fresh sweet kernels. Its mature kernels contain a high concentration of starch and provide more metabolizable energy than many other cereal grains commonly used in poultry diets. Yellow Field Corn may also contribute natural xanthophyll and carotenoid pigments. Chickens may consume mature whole kernels, shelled dry grain, cracked grain, coarsely ground grain, thoroughly dried whole ears, properly sprouted untreated grain, limited quantities of fresh immature kernels, or sound postharvest gleanings. However, Field Corn is not a complete poultry feed. Its protein concentration is relatively modest, its protein quality is limited by low lysine and tryptophan, it contains very little calcium, much of its phosphorus is associated with phytate, and it does not provide the vitamin, mineral, amino-acid, or overall nutrient balance required as the flock's primary ration. Poorly dried or stored Corn may also develop molds and dangerous mycotoxins even when visible mold is absent. Field Corn should therefore be used as a measured energy supplement, whole-ear enrichment item, stored seasonal grain, or correctly formulated ration ingredient rather than as unrestricted staple food.",
+
+        primaryFeedingRole:
+          "High-energy cereal-grain supplement and whole-ear enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Concentrated starch and energy supplementation",
+          "Cold-weather calorie supplementation",
+          "Stored winter grain",
+          "Scratch-feed ingredient",
+          "Whole-ear pecking enrichment",
+          "Measured homegrown grain supplement",
+          "Yellow-pigment contribution",
+          "Postharvest field gleaning",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Highly useful as a supplemental high-energy grain for established adult chickens when mature Corn is harvested, dried, inspected, stored, and fed correctly.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-field-corn-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe-with-storage-precautions",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal-to-moderate",
+
+        primaryProductType:
+          "mature-cereal-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          4,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          3,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          5,
+
+        proteinValueScore:
+          2,
+
+        enrichmentValueScore:
+          4,
+
+        winterValueScore:
+          5,
+
+        storageValueScore:
+          5,
+
+        preparationSimplicityScore:
+          3,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          3,
+
+        confinedFlockValueScore:
+          4,
+
+        pasturedFlockValueScore:
+          3,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Field Corn's practical value as a supplemental cereal grain rather than as a complete poultry ration.",
+          "The overall score reflects excellent energy, storage, winter, and ration-ingredient value, balanced against low protein quality and important mold and mycotoxin concerns.",
+          "The feeding-safety score is reduced because inadequate drying, moisture migration, ear rots, mold, rodents, insects, and mycotoxins can make apparently usable grain unsafe.",
+          "The energy score is very high because mature Corn contains a large concentration of starch and provides exceptionally high metabolizable energy relative to most cereal grains.",
+          "The protein score is intentionally low because Field Corn contains only modest crude protein and is particularly limited in lysine and tryptophan.",
+          "Young-chick suitability is intentionally low because chicks require an age-appropriate complete starter ration and appropriate particle size.",
+          "Whole dried ears provide useful pecking enrichment but make exact intake measurement less precise.",
+          "Shelled whole grain is easier to measure and stores efficiently when thoroughly dried.",
+          "Cracking or grinding improves accessibility and mixing but shortens storage life.",
+          "The winter score reflects the ability to store thoroughly dried mature grain for use during periods of limited natural forage.",
+          "Direct garden access is low because standing Corn should generally mature and dry before feeding, and premature flock access can destroy developing ears.",
+          "Field Corn should not be scored as a high-protein crop simply because it is a major commercial poultry-feed ingredient."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean, mature, properly dried Field Corn grain and thoroughly dried whole ears are safe supplemental feeds for established adult chickens. The principal concerns are displacement of complete feed, poor protein and mineral balance, mold, ear rot, mycotoxins, inadequate drying, moisture migration, heating, insect damage, rodent contamination, chemically treated planting seed, and deterioration after cracking or grinding.",
+
+        whyModerationIsRequired:
+          "Field Corn provides concentrated starch and dietary energy but relatively little lysine, tryptophan, calcium, available phosphorus, vitamins, trace minerals, and balanced protein. Chickens may preferentially consume Corn instead of their complete ration, particularly when it is offered freely as scratch grain or whole ears. Excessive intake can dilute amino acids, calcium, vitamins, minerals, and other nutrients supplied by complete feed and may contribute to excessive energy intake or unwanted body condition.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Field Corn kernels",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound, fully mature, properly dried kernels may be offered to established adult chickens as a measured energy supplement when appropriate insoluble grit is available where needed."
+          },
+
+          {
+            item:
+              "Shelled dry Field Corn grain",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Clean shelled grain is compact, measurable, and suitable for storage when thoroughly dried, cooled, and protected from moisture, insects, rodents, condensation, mold, and heating."
+          },
+
+          {
+            item:
+              "Thoroughly dried whole Field Corn ears",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound mature ears may be offered as pecking enrichment after they have dried completely and been inspected for ear rot, insect injury, mold, discoloration, and damaged kernels."
+          },
+
+          {
+            item:
+              "Freshly cracked mature Field Corn",
+
+            status:
+              "safe-with-short-storage",
+
+            explanation:
+              "Cracked Corn is safe when produced from clean mature grain and used promptly. Cracking exposes the kernel interior and increases moisture absorption, oxidation, insect access, and deterioration."
+          },
+
+          {
+            item:
+              "Freshly coarsely ground Field Corn",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Coarsely ground Corn may be used promptly as a supplemental or formulated ration ingredient. Grinding increases exposed surface area and reduces storage stability."
+          },
+
+          {
+            item:
+              "Properly sprouted untreated Field Corn grain",
+
+            status:
+              "safe-with-strict-sanitation",
+
+            explanation:
+              "Clean untreated grain may be sprouted under sanitary conditions and offered promptly. Sprouting greatly increases moisture and microbial risk and does not create additional dry matter."
+          },
+
+          {
+            item:
+              "Limited fresh immature Field Corn kernels",
+
+            status:
+              "safe-in-limited-amounts",
+
+            explanation:
+              "Fresh immature kernels from untreated plants may be consumed as an occasional supplement, but their higher moisture content makes them nutritionally and physically different from mature dry grain."
+          },
+
+          {
+            item:
+              "Sound postharvest Field Corn gleanings",
+
+            status:
+              "safe-with-inspection",
+
+            explanation:
+              "Chickens may collect clean mature kernels remaining after harvest when the field has not been chemically restricted and damaged, moldy, diseased, sprouted, or contaminated grain has been removed."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated Field Corn planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, polymers, colorants, biological treatments, or other products not intended for animal consumption."
+          },
+
+          {
+            item:
+              "Moldy or musty Field Corn",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, fungal growth, damp clumping, suspicious discoloration, or decayed kernels indicate unsafe deterioration. Removing visible mold does not make the remaining Corn safe."
+          },
+
+          {
+            item:
+              "Corn suspected of mycotoxin contamination",
+
+            status:
+              "never-feed-without-qualified-safety-determination",
+
+            explanation:
+              "Aflatoxins, fumonisins, deoxynivalenol, zearalenone, ochratoxin, and other mycotoxins may remain dangerous even when visible mold is limited or absent. Questionable grain may require representative sampling and laboratory testing."
+          },
+
+          {
+            item:
+              "Heated or fermenting stored Corn",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Warm grain, condensation, sweet-sour odor, alcoholic odor, wet clumping, or fermentation indicates unstable storage and possible microbial deterioration."
+          },
+
+          {
+            item:
+              "Wet or incompletely dried Field Corn",
+
+            status:
+              "never-store-or-feed-as-stable-grain",
+
+            explanation:
+              "Grain stored before adequate drying may heat, mold, ferment, attract insects, and develop dangerous mycotoxins."
+          },
+
+          {
+            item:
+              "Severely insect-damaged Field Corn",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Extensive insect injury creates broken kernels, dust, heating, moisture migration, fungal entry points, and possible contamination."
+          },
+
+          {
+            item:
+              "Rodent-contaminated Field Corn",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Corn contaminated by rodent urine, feces, nesting material, hair, carcasses, or gnawing debris should be discarded."
+          },
+
+          {
+            item:
+              "Diseased or rotting Field Corn ears",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Ears affected by extensive rot, fungal growth, soft decay, suspicious kernel color, strong abnormal odor, or internal deterioration should not be fed."
+          },
+
+          {
+            item:
+              "Questionable Corn screenings",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Screenings may concentrate broken, moldy, insect-damaged, discolored, lightweight, diseased, or contaminated kernels and require stricter inspection than sound whole grain."
+          },
+
+          {
+            item:
+              "Salted, buttered, seasoned, or flavored Corn products",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Human snack products may contain excessive sodium, fats, sweeteners, seasonings, flavorings, or other ingredients unnecessary or unsuitable for chickens."
+          },
+
+          {
+            item:
+              "Fermented household Corn of uncertain process",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Uncontrolled household fermentation is not required for Field Corn and may produce spoilage, alcohol, harmful microbial growth, or an unsafe final product."
+          },
+
+          {
+            item:
+              "Corn exposed to unsafe pesticide or herbicide treatment",
+
+            status:
+              "never-feed-unless-label-clearly-permits",
+
+            explanation:
+              "Do not feed grain, ears, or field gleanings when pesticide, herbicide, fungicide, desiccant, or other treatment restrictions prohibit livestock feeding or the required interval has not passed."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Corn is highly palatable and energy dense, so birds may reduce consumption of their nutritionally complete feed when it is offered freely."
+          },
+
+          {
+            hazard:
+              "Incomplete protein and amino-acid balance",
+
+            riskLevel:
+              "high-when-used-as-staple-feed",
+
+            explanation:
+              "Field Corn is particularly limited in lysine and tryptophan and cannot independently meet the amino-acid requirements of growing, laying, breeding, or meat-producing poultry."
+          },
+
+          {
+            hazard:
+              "Low calcium and incomplete mineral balance",
+
+            riskLevel:
+              "high-when-used-as-feed-replacement",
+
+            explanation:
+              "Field Corn contains very little calcium and cannot replace complete layer feed, balanced mineral nutrition, or an appropriate calcium program."
+          },
+
+          {
+            hazard:
+              "Mold and ear rot",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Field infection, insect injury, delayed harvest, wet ears, insufficient drying, condensation, and poor storage may allow molds and ear-rotting fungi to develop."
+          },
+
+          {
+            hazard:
+              "Mycotoxins",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Corn is susceptible to several important mycotoxins, including aflatoxins, fumonisins, deoxynivalenol, zearalenone, and ochratoxin. Visible mold absence does not prove that grain is safe."
+          },
+
+          {
+            hazard:
+              "Heating and moisture migration",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Warm or insufficiently dried grain may develop condensation, wet pockets, caking, microbial activity, and rapid spoilage during storage."
+          },
+
+          {
+            hazard:
+              "Insect infestation",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Stored-grain insects may damage kernels, create dust, raise temperature, redistribute moisture, and increase fungal deterioration."
+          },
+
+          {
+            hazard:
+              "Rodent contamination",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Stored Corn strongly attracts rodents, which may contaminate grain with feces, urine, hair, nesting material, and disease organisms."
+          },
+
+          {
+            hazard:
+              "Deterioration after cracking or grinding",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Broken or ground kernels absorb moisture more readily, expose more oil and starch, attract insects, and deteriorate faster than intact dry grain."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A single whole ear or concentrated pile of kernels may allow dominant birds to monopolize access."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Loose Corn scattered into damp litter may become contaminated, moldy, fermented, or attractive to rodents and insects."
+          },
+
+          {
+            hazard:
+              "Entanglement from whole-ear hanging materials",
+
+            riskLevel:
+              "low-but-preventable",
+
+            explanation:
+              "String, wire, netting, clips, or other materials used to suspend whole ears must not form loose loops or snagging points."
+          }
+        ],
+
+        emergencyUse:
+          "Field Corn can provide concentrated short-term energy during a feed shortage, but it is not a nutritionally complete emergency ration. It must be combined with an appropriate complete poultry feed or a professionally formulated ration that supplies adequate protein, amino acids, calcium, phosphorus, sodium, vitamins, and trace minerals.",
+
+        veterinaryCaution:
+          "Birds showing sudden feed refusal, weakness, reduced egg production, poor growth, abnormal droppings, tremors, neurological signs, breathing difficulty, liver-related illness, or suspected mold or mycotoxin exposure require prompt veterinary evaluation. Do not continue feeding a questionable batch while waiting for symptoms to appear."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-measured-energy-supplement",
+
+          preferredForms: [
+            "Clean mature whole kernels",
+            "Shelled dry grain",
+            "Thoroughly dried whole ears",
+            "Freshly cracked grain",
+            "Freshly coarsely ground grain",
+            "Properly sprouted untreated grain",
+            "Sound postharvest gleanings"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for whole Field Corn kernels, dried whole-ear enrichment, cracked grain, ground grain, and limited postharvest gleaning. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Concentrated supplemental energy",
+            "Cold-weather calorie support",
+            "Whole-ear behavioral enrichment",
+            "Stored winter grain",
+            "Natural yellow pigments",
+            "Flexible whole, cracked, and ground feeding forms"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Low lysine and tryptophan limit protein quality",
+            "Much of the phosphorus is associated with phytate",
+            "Excessive intake may displace amino acids, vitamins, minerals, and calcium",
+            "High starch intake may contribute to excessive body condition",
+            "Mold and mycotoxin risks require careful storage management"
+          ],
+
+          guidance:
+            "Laying hens may receive Field Corn as a measured energy supplement, but a complete layer ration and an appropriate calcium program must remain the nutritional foundation. Corn should not be used to dilute the complete ration simply because it is inexpensive, palatable, or readily available."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult supplements may receive small amounts of clean whole, cracked, or coarsely ground Field Corn. Their complete grower or developer ration should remain dominant because Corn alone cannot support proper skeletal growth, body development, or preparation for egg production."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Whole Field Corn kernels are too large for routine chick feeding, while cracked or ground Corn can still dilute the starter ration's protein, amino acids, calcium, phosphorus, sodium, vitamins, trace minerals, and overall nutrient balance.",
+
+          possibleException:
+            "A qualified poultry nutritionist may use appropriately ground Field Corn within a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering cracked Corn, Cornmeal, or whole kernels as an informal backyard supplement.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Large whole-kernel size",
+            "Low lysine concentration",
+            "Low tryptophan concentration",
+            "Low calcium concentration",
+            "Incomplete vitamin and mineral balance",
+            "Need for age-appropriate particle size",
+            "Need for correctly formulated dietary energy",
+            "Need for appropriately sized grit when insoluble whole grain is offered"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Field Corn is widely used as an energy ingredient in balanced meat-bird diets, but published inclusion levels assume that the complete ration has been formulated for metabolizable energy, protein, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, particle size, and feed intake. Backyard keepers should not copy a commercial Corn percentage into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters may consume the same clean mature Field Corn forms as adult hens. Portion control remains important because roosters may gain unnecessary weight when high-energy grain is offered freely."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Field Corn as a supplemental energy source, but fertility, hatchability, body condition, and reproductive performance depend on complete and balanced nutrition. Excessive Corn intake should not dilute essential amino acids, vitamins, minerals, fatty acids, or controlled dietary energy."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may require smaller amounts because Field Corn provides concentrated starch and energy. Body condition, activity, and complete-feed intake should be monitored."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Field Corn supplies energy needed during molt but does not provide the complete amino-acid profile required for feather growth. A balanced ration with adequate usable protein, methionine, lysine, and other essential amino acids remains more important than increasing Corn intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Field Corn's energy density may appear useful for an underweight or recovering bird, but illness can change digestive, metabolic, liver, kidney, and nutritional requirements. Corn should not replace diagnosis, hydration support, complete recovery nutrition, or a veterinarian-recommended diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature whole Field Corn kernels",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Clean, fully mature, properly dried kernels are the primary poultry-feed product and provide concentrated starch and metabolizable energy."
+          },
+
+          {
+            part:
+              "Shelled dry Field Corn grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Shelled grain is compact, easy to measure, suitable for cracking or grinding, and capable of long storage when dried and protected correctly."
+          },
+
+          {
+            part:
+              "Thoroughly dried whole Field Corn ears",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Sound mature ears provide natural pecking enrichment and allow adult chickens to remove kernels directly from the cob."
+          },
+
+          {
+            part:
+              "Freshly cracked mature Field Corn",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Cracking makes the kernel interior more accessible and may improve handling by smaller adult birds, but it shortens storage life."
+          },
+
+          {
+            part:
+              "Freshly coarsely ground mature Field Corn",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Coarsely ground grain mixes more uniformly into formulated feed but should be used promptly because exposed kernel material deteriorates faster."
+          },
+
+          {
+            part:
+              "Properly sprouted untreated Field Corn",
+
+            suitability:
+              "good-with-strict-sanitation",
+
+            explanation:
+              "Clean untreated grain may be sprouted under controlled sanitary conditions, but the high-moisture product must be fed promptly and should not be confused with dry stored grain."
+          },
+
+          {
+            part:
+              "Limited fresh immature Field Corn kernels",
+
+            suitability:
+              "acceptable-in-limited-amounts",
+
+            explanation:
+              "Fresh immature kernels may be consumed as an occasional garden supplement but contain considerably more moisture and less dry matter than mature Field Corn grain."
+          },
+
+          {
+            part:
+              "Sound postharvest Field Corn gleanings",
+
+            suitability:
+              "good-with-inspection",
+
+            explanation:
+              "Clean mature kernels remaining after harvest may provide seasonal forage when chemical restrictions, ear rot, mold, wildlife contamination, and damaged grain are not concerns."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Mature Corn stalks",
+
+            reason:
+              "Highly fibrous and provide little practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Mature Corn leaves",
+
+            reason:
+              "Coarse mature leaves contain substantial structural fiber and are not a concentrated poultry-feed product."
+          },
+
+          {
+            part:
+              "Corn roots",
+
+            reason:
+              "No practical ordinary poultry-feed use."
+          },
+
+          {
+            part:
+              "Empty Corn cobs",
+
+            reason:
+              "Cobs are highly fibrous and contain little remaining nutrition after kernels have been removed."
+          },
+
+          {
+            part:
+              "Dry husks",
+
+            reason:
+              "Husks provide little usable poultry nutrition and may create coarse fibrous litter."
+          },
+
+          {
+            part:
+              "Corn silks",
+
+            reason:
+              "Silks contain little practical feed value and are not a meaningful poultry-feed product."
+          },
+
+          {
+            part:
+              "Moldy, diseased, or rotting ears",
+
+            reason:
+              "Ear rot and kernel deterioration may be associated with dangerous molds and mycotoxins."
+          },
+
+          {
+            part:
+              "Questionable screenings",
+
+            reason:
+              "Screenings may concentrate broken, lightweight, moldy, insect-damaged, discolored, or contaminated grain."
+          },
+
+          {
+            part:
+              "Chemically treated planting kernels",
+
+            reason:
+              "Treated seed may contain fungicides, insecticides, polymers, dyes, or other products not intended for animal consumption."
+          }
+        ],
+
+        ediblePartSummary:
+          "Nearly all of Field Corn's practical poultry value comes from clean mature kernels. Whole dried ears, shelled grain, cracked grain, ground grain, sprouted untreated kernels, and sound field gleanings are usable forms, while stalks, leaves, roots, husks, silks, empty cobs, diseased ears, and questionable screenings provide little value or create avoidable risk."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Whole mature Field Corn kernels",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Measured supplemental energy feeding for established adult chickens."
+          },
+
+          {
+            form:
+              "Thoroughly dried whole Field Corn ears",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Behavioral enrichment and low-processing seasonal feeding."
+          },
+
+          {
+            form:
+              "Shelled dry Field Corn grain",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Long-term storage, measured feeding, cracking, grinding, or ration formulation."
+          },
+
+          {
+            form:
+              "Freshly cracked Field Corn",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured supplementation and easier kernel access."
+          },
+
+          {
+            form:
+              "Freshly coarsely ground Field Corn",
+
+            rating:
+              "good",
+
+            bestUse:
+              "A high-energy ingredient used promptly within a balanced feed mixture."
+          },
+
+          {
+            form:
+              "Properly sprouted untreated Field Corn",
+
+            rating:
+              "acceptable",
+
+            bestUse:
+              "Occasional high-moisture enrichment produced under strict sanitation."
+          }
+        ],
+
+        acceptableForms: [
+          "Whole mature kernels",
+          "Shelled dry grain",
+          "Thoroughly dried whole ears",
+          "Freshly cracked grain",
+          "Freshly coarsely ground grain",
+          "Properly sprouted untreated grain",
+          "Limited fresh immature kernels",
+          "Sound postharvest field gleanings"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Whole dried ears",
+
+            concern:
+              "Internal kernels may retain moisture or conceal ear rot, insects, discoloration, or mold even when the outer husk appears dry."
+          },
+
+          {
+            form:
+              "Shelled grain",
+
+            concern:
+              "Shelled Corn requires thorough drying, cooling, rodent-resistant storage, insect control, and regular inspection for moisture migration and heating."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            concern:
+              "Broken kernels absorb moisture more readily, produce fines, expose the kernel interior, and deteriorate faster than whole grain."
+          },
+
+          {
+            form:
+              "Ground grain",
+
+            concern:
+              "Grinding greatly increases exposed surface area, reduces storage stability, encourages separation when poorly mixed, and makes mold or insect damage harder to identify."
+          },
+
+          {
+            form:
+              "Sprouted grain",
+
+            concern:
+              "Sprouting creates a warm, wet environment favorable to mold and bacterial growth and requires strict sanitation, rinsing, drainage, and prompt feeding."
+          },
+
+          {
+            form:
+              "Postharvest field gleanings",
+
+            concern:
+              "Field leftovers may contain moldy ears, insect-damaged kernels, wildlife feces, chemical residues, mud, sprouted grain, or weather-damaged material."
+          },
+
+          {
+            form:
+              "Fresh immature kernels",
+
+            concern:
+              "Fresh kernels contain more moisture, spoil faster, and provide less dry matter per pound than mature stored grain."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Moldy Field Corn",
+          "Musty Field Corn",
+          "Mycotoxin-suspect Field Corn",
+          "Wet stored grain",
+          "Heated grain",
+          "Fermenting grain",
+          "Rotten ears",
+          "Ear-rot-damaged Corn",
+          "Rodent-contaminated grain",
+          "Wildlife-contaminated grain",
+          "Severely insect-damaged grain",
+          "Questionable screenings",
+          "Salted Corn products",
+          "Buttered Corn products",
+          "Seasoned Corn products",
+          "Sweetened Corn products",
+          "Corn contaminated by unsafe pesticide or herbicide use",
+          "Uncontrolled fermented Corn",
+          "Spoiled sprouts"
+        ],
+
+        wholeHeadAdvantages: [
+          "Excellent pecking enrichment",
+          "Encourages natural kernel removal",
+          "Minimal processing before feeding",
+          "Avoids immediate shelling labor",
+          "Can provide extended feeding activity",
+          "Useful for seasonal or winter enrichment",
+          "Allows visual inspection of entire ears",
+          "Cobs remain easy to remove after feeding"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Simple to divide among several feeding stations",
+          "More precise ration management",
+          "Easy to mix with other feed ingredients",
+          "More compact storage than whole ears",
+          "Can be cracked or ground as needed",
+          "Reduced competition compared with a single whole ear",
+          "Allows damaged kernels to be sorted during cleaning"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Actual kernel consumption is difficult to measure",
+          "Dominant birds may monopolize a single ear",
+          "Internal moisture may remain hidden",
+          "Ear rot may be concealed beneath husks",
+          "Whole ears require substantial storage space",
+          "Kernels may be scattered into litter",
+          "Cobs must be removed after feeding",
+          "Wildlife and rodents may damage stored ears"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires shelling",
+          "Requires cleaning",
+          "Requires thorough drying",
+          "Requires rodent-resistant storage",
+          "May attract insects",
+          "Spilled grain may mold in damp litter",
+          "Broken kernels deteriorate faster",
+          "Fine particles may separate during handling",
+          "Mycotoxin risk may be difficult to detect visually",
+          "Cracking or grinding adds labor and equipment needs"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Field Corn varieties and kernel types differ in maturity, yield, starch characteristics, kernel hardness, protein quality, pigment concentration, oil content, drying rate, disease resistance, lodging resistance, drought tolerance, insect resistance, and suitability for whole-ear feeding, cracking, grinding, seed saving, or ration formulation.",
+
+        blackOilSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Yellow Dent Corn is widely used as a high-energy poultry-feed grain and may contribute natural xanthophyll pigments associated with skin and yolk coloration."
+        },
+
+        confectionSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Flint Corn, Flour Corn, and suitable open-pollinated grain varieties may provide useful poultry grain, but kernel hardness, maturity, yield, drying characteristics, and processing needs differ from standard Dent Corn."
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Decorative, multicolored, miniature, waxy, flour, heritage, or specialty Corn varieties may produce edible mature grain, but appearance does not guarantee high yield, desirable nutrient composition, reliable maturity, or practical poultry-feed value."
+        },
+
+        pollenFreeCultivars: {
+          recommended:
+            false,
+
+          explanation:
+            "Sweet Corn, ornamental Corn, Silage Corn, Popcorn, and other specialty products should not automatically be treated as nutritionally or practically equivalent to mature dry Field Corn grown specifically for grain."
+        },
+
+        branchingCultivars: {
+          advantages: [
+            "Open-pollinated varieties may permit seed saving when isolation and population management are adequate",
+            "Short-season varieties improve maturity reliability in cool or short growing seasons",
+            "Flint types may dry more reliably in some northern regions",
+            "Disease-resistant varieties may reduce ear-rot risk",
+            "Strong-stalked varieties may reduce lodging",
+            "Locally adapted heritage varieties may perform well under low-input homestead conditions"
+          ]
+        },
+
+        giantSingleHeadCultivars: {
+          advantages: [
+            "High-yielding Dent hybrids may produce substantial grain under fertile, well-watered conditions",
+            "Large uniform ears simplify harvest and whole-ear feeding",
+            "Modern hybrids may provide improved standability",
+            "Commercial hybrids may offer strong disease and insect resistance",
+            "Yellow-grain hybrids may provide greater pigment value",
+            "Rapid dry-down hybrids may improve storage safety"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate",
+
+        preparationSummary:
+          "Field Corn does not require cooking or heat treatment before ordinary supplemental feeding, but successful use depends heavily on full grain maturity, careful harvest, thorough drying, sorting, storage, and inspection. Whole dried ears require the least processing, while shelled, cracked, ground, or sprouted grain requires progressively more labor and more careful spoilage management.",
+
+        requiredPreparation: [
+          "Allow ears and kernels to reach physiological maturity.",
+          "Harvest before prolonged wet weather or severe wildlife damage whenever practical.",
+          "Remove visibly diseased, moldy, rotten, insect-damaged, or suspicious ears.",
+          "Dry ears and kernels thoroughly with strong airflow.",
+          "Confirm that grain is cool and dry before sealed storage.",
+          "Inspect stored Corn regularly for heating, condensation, insects, rodents, mold, clumping, and abnormal odors.",
+          "Use only untreated seed or grain intended for food or feed."
+        ],
+
+        optionalPreparation: [
+          "Remove husks to improve drying and inspection.",
+          "Shell kernels from fully dried ears.",
+          "Clean grain to remove broken kernels, cob fragments, dust, and debris.",
+          "Crack only the amount expected to be used within a relatively short period.",
+          "Coarsely grind grain immediately before ration use.",
+          "Sprout small quantities of untreated grain under strict sanitation.",
+          "Separate damaged kernels during shelling and cleaning.",
+          "Use a suitable grain-moisture meter when practical."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Heat treatment"
+        ],
+
+        preparationMistakes: [
+          "Harvesting ears before grain maturity.",
+          "Assuming dry husks prove that internal kernels are dry.",
+          "Storing whole ears in deep compact piles without airflow.",
+          "Shelling and sealing grain while it remains warm or damp.",
+          "Grinding large quantities long before feeding.",
+          "Blending moldy or suspicious Corn with sound grain.",
+          "Feeding untreated screenings without careful inspection.",
+          "Using chemically treated planting seed.",
+          "Ignoring insect damage or rodent contamination.",
+          "Assuming absence of visible mold proves absence of mycotoxins."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "high-energy-high-starch-cereal-grain-supplement",
+
+        nutritionSummary:
+          "Mature Field Corn grain is an energy-dense cereal containing a high concentration of starch, modest crude protein, approximately moderate fat for a cereal grain, linoleic acid, phosphorus, potassium, magnesium, B vitamins, and natural yellow carotenoid pigments in yellow-grain varieties. Its primary practical value for chickens comes from concentrated metabolizable energy rather than from high-quality protein, calcium, balanced amino acids, or complete vitamin and mineral nutrition.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary substantially among Dent Corn, Flint Corn, Flour Corn, Waxy Corn, high-oil Corn, high-lysine Corn, yellow Corn, white Corn, whole kernels, cracked grain, ground grain, sprouted grain, fresh immature kernels, and processed commercial Corn ingredients. These products must not be treated as nutritionally identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Concentrated dietary energy",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Field Corn is one of the highest-energy cereal grains commonly used in poultry diets and supplies substantial metabolizable energy through its starch-rich kernel."
+          },
+
+          {
+            nutrientRole:
+              "High starch concentration",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Mature grain commonly contains approximately 65%–72% starch, making carbohydrate energy the crop's dominant nutritional contribution."
+          },
+
+          {
+            nutrientRole:
+              "Natural yellow pigments",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Yellow Field Corn can supply xanthophylls and carotenoid pigments that may contribute to yolk and skin coloration when included appropriately within the total diet."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental linoleic acid",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Corn oil contributes linoleic acid, although Field Corn remains much lower in total fat than high-oil crops such as Sunflower."
+          },
+
+          {
+            nutrientRole:
+              "Useful cereal-grain phosphorus",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Field Corn contributes phosphorus, but much of it is associated with phytate and should not be assumed to be fully available to poultry."
+          },
+
+          {
+            nutrientRole:
+              "Long-term dry-matter storage",
+
+            importance:
+              "high",
+
+            explanation:
+              "Properly dried mature grain stores a large amount of usable dietary energy in a compact form that does not require refrigeration."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Metabolizable energy",
+          "Linoleic acid",
+          "Yellow xanthophyll pigments",
+          "Carotenoids",
+          "Phosphorus",
+          "Potassium",
+          "Magnesium",
+          "B vitamins",
+          "Modest crude protein"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Relatively low to moderate, commonly approximately 8%–10% on a dry-matter basis.",
+
+          fat:
+            "Moderate for a cereal grain, commonly approximately 4% on a dry-matter basis.",
+
+          fiber:
+            "Relatively low, commonly approximately 2%–3% crude fiber in mature grain.",
+
+          starch:
+            "Very high, commonly approximately 65%–72% depending on hybrid, environment, and analytical basis.",
+
+          calcium:
+            "Very low, commonly approximately 0.05% of dry matter, and insufficient for laying-hen calcium requirements.",
+
+          phosphorus:
+            "Approximately 0.30% of dry matter, with a substantial portion associated with phytate.",
+
+          energy:
+            "Very high relative to most cereal grains used in poultry feeding."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "A whole Field Corn kernel includes the bran, endosperm, germ, and tip cap. It retains the kernel's natural physical protection and generally stores longer than cracked or ground Corn.",
+
+          dehulledKernel:
+            "Field Corn is not ordinarily dehulled for routine backyard poultry feeding. Removal of outer kernel fractions would alter fiber, minerals, vitamins, oil, protein, and processing characteristics.",
+
+          practicalMeaning:
+            "Whole kernels should not be assumed nutritionally or practically identical to refined, degermed, debranned, or otherwise fractionated Corn products."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole mature Field Corn retains the intact kernel and functions primarily as a stable high-starch energy grain when properly dried.",
+
+          sunflowerMeal:
+            "Ground Field Corn or Cornmeal is the same basic grain reduced in particle size rather than an oil-extraction meal. Grinding improves mixing and accessibility but does not correct Corn's low lysine, low tryptophan, low calcium, phytate-bound phosphorus, or incomplete nutrient balance.",
+
+          practicalMeaning:
+            "Research involving Corn gluten meal, Corn gluten feed, distillers grains, hominy feed, germ meal, starch fractions, or other commercial Corn coproducts must not automatically be applied to whole, cracked, or ground Field Corn."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Hybrid",
+          "Open-pollinated variety",
+          "Dent versus Flint type",
+          "Kernel color",
+          "High-oil or high-lysine genetics",
+          "Growing environment",
+          "Soil fertility",
+          "Nitrogen availability",
+          "Water availability",
+          "Heat stress during grain fill",
+          "Kernel maturity",
+          "Ear disease",
+          "Insect damage",
+          "Harvest timing",
+          "Drying method",
+          "Final grain moisture",
+          "Storage duration",
+          "Storage temperature",
+          "Cracking",
+          "Grinding",
+          "Sprouting",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Exceptional Cereal-Grain Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Field Corn is among the most concentrated starch-energy crops that can be grown for poultry. Properly dried mature grain provides substantially more usable energy per pound than most fresh vegetables, leafy forage crops, and moisture-rich fruits."
+          },
+
+          {
+            title:
+              "Excellent Winter Storage Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Thoroughly dried mature grain can be stored for many months without refrigeration when protected from moisture, insects, rodents, heating, condensation, and mold."
+          },
+
+          {
+            title:
+              "Useful Whole-Ear Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A sound dried ear encourages pecking, kernel removal, scratching, investigation, and natural feed manipulation while avoiding immediate shelling labor."
+          },
+
+          {
+            title:
+              "Flexible Processing Options",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Field Corn can be offered as whole dried ears, loose whole kernels, cracked grain, coarsely ground grain, properly sprouted grain, or a professionally formulated ration ingredient."
+          },
+
+          {
+            title:
+              "Widely Recognized Poultry-Feed Ingredient",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Corn's energy contribution, starch concentration, nutrient composition, processing characteristics, and limitations are supported by extensive poultry and livestock-feed research."
+          },
+
+          {
+            title:
+              "Natural Pigment Contribution",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Yellow Field Corn supplies xanthophyll and carotenoid pigments that may contribute to egg-yolk and skin coloration within a balanced feeding program."
+          },
+
+          {
+            title:
+              "Compact Stored Dry Matter",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Shelled dry grain stores a large amount of dietary energy in less space than bulky fresh forage, whole plants, or high-moisture garden produce."
+          },
+
+          {
+            title:
+              "Low-Cost Whole-Grain Use Path",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Whole dried ears can be harvested, dried, inspected, and offered without purchasing a sheller, cracker, or grain mill."
+          },
+
+          {
+            title:
+              "Useful Postharvest Gleaning",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Chickens may recover sound kernels left after harvest while gaining outdoor activity and helping clean the production area."
+          },
+
+          {
+            title:
+              "Multipurpose Homestead Crop",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Field Corn can provide poultry grain, seed-saving opportunities from suitable open-pollinated varieties, compost carbon, mulch, stalk biomass, husks, cobs, seasonal screening, and educational value."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Whole-ear pecking",
+
+            explanation:
+              "Birds must loosen and remove kernels from the cob rather than consuming loose grain immediately."
+          },
+
+          {
+            benefit:
+              "Extended feeding activity",
+
+            explanation:
+              "A dried ear generally takes longer to consume than an equivalent amount of loose cracked grain."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Chickens can turn, pull, peck, scratch, and investigate an ear during feeding."
+          },
+
+          {
+            benefit:
+              "Postharvest field exploration",
+
+            explanation:
+              "Supervised gleaning allows birds to search for kernels remaining after harvest."
+          },
+
+          {
+            benefit:
+              "Cold-season activity",
+
+            explanation:
+              "Stored whole ears can provide structured pecking activity when winter weather limits insects and fresh forage."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Whole kernels are easy to measure.",
+          "Shelled grain can be divided among several feeding locations.",
+          "Whole ears can reduce immediate processing labor.",
+          "Stored grain can be used when fresh forage is unavailable.",
+          "Cracked Corn can be prepared in small quantities as needed.",
+          "Ground Corn mixes more uniformly into formulated feeds.",
+          "Postharvest gleaning can recover otherwise wasted kernels.",
+          "Whole ears and dishes can be removed when feeding is complete."
+        ],
+
+        homesteadBenefits: [
+          "Annual crop suitable for garden rotation",
+          "Widely available seed",
+          "Large seed is easy to plant by hand",
+          "Direct sowing avoids transplant production",
+          "Produces concentrated dry grain",
+          "Whole-ear use avoids immediate shelling",
+          "Properly dried grain requires no refrigeration",
+          "Open-pollinated varieties may support seed saving",
+          "Stalks and leaves provide compost carbon",
+          "Husks and cobs provide additional dry biomass",
+          "Tall plants provide temporary seasonal screening"
+        ],
+
+        benefitSummary:
+          "Field Corn's greatest poultry value comes from combining exceptionally concentrated cereal energy, excellent dry-grain storage, whole-ear enrichment, flexible feeding forms, and extensive research support. It is much less valuable as a protein, calcium, vitamin, mineral, or complete-ration crop."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Field Corn does not supply the complete balance of protein, essential amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Low Protein Quality",
+
+            severity:
+              "high",
+
+            explanation:
+              "Corn's modest crude-protein concentration overstates its practical protein value because lysine and tryptophan are especially limiting."
+          },
+
+          {
+            title:
+              "Extremely Low Calcium",
+
+            severity:
+              "high",
+
+            explanation:
+              "Field Corn contains very little calcium and must not replace complete layer feed or an appropriate calcium program."
+          },
+
+          {
+            title:
+              "Phytate-Bound Phosphorus",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "A substantial portion of Corn phosphorus is associated with phytate and may not be fully available to poultry without appropriate ration formulation."
+          },
+
+          {
+            title:
+              "High Risk From Mold and Mycotoxins",
+
+            severity:
+              "high",
+
+            explanation:
+              "Field Corn is susceptible to ear rots, storage molds, aflatoxins, fumonisins, deoxynivalenol, zearalenone, ochratoxin, and other contaminants that may remain dangerous even when visible mold is limited."
+          },
+
+          {
+            title:
+              "Drying and Storage Require Care",
+
+            severity:
+              "high",
+
+            explanation:
+              "Grain stored while warm or damp may heat, condense, clump, ferment, mold, attract insects, and deteriorate rapidly."
+          },
+
+          {
+            title:
+              "Whole-Ear Portioning Is Imprecise",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Ear size, kernel fill, damage, spillage, flock competition, and actual intake vary considerably, making whole ears more suitable for enrichment than precise ration delivery."
+          },
+
+          {
+            title:
+              "Cracked and Ground Grain Deteriorates Faster",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Breaking the kernel increases exposed surface area, moisture absorption, oxidation, fines, insect access, and microbial deterioration."
+          },
+
+          {
+            title:
+              "Requires More Growing Space Than Small Grains",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Field Corn requires individually spaced plants arranged in a compact pollination block and may perform poorly in very small or narrow garden spaces."
+          },
+
+          {
+            title:
+              "Purchased Commodity Corn May Be Inexpensive",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Homegrown Field Corn may cost more than purchased grain once fertility, irrigation, wildlife protection, harvest, drying, shelling, storage, equipment, and labor are included."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Bird age, breed, body condition, season, activity, climate, base ration, grain form, and purpose vary too greatly for one crop-specific feeding percentage to be applied safely to every flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Lysine is strongly limiting",
+          "Tryptophan is strongly limiting",
+          "Methionine balance may remain limiting within an unbalanced ration",
+          "Crude protein concentration is relatively low",
+          "Much of the phosphorus is associated with phytate",
+          "Vitamin balance is incomplete",
+          "Trace-mineral balance is incomplete",
+          "High starch can dilute other nutrients when overfed",
+          "Whole grain does not become nutritionally complete through cracking or grinding",
+          "Sprouting does not create additional dry matter",
+          "Nutritional composition varies among varieties and Corn products"
+        ],
+
+        practicalLimitations: [
+          "Requires warm soil and a sufficiently long frost-free season",
+          "Requires compact block planting for dependable pollination",
+          "Requires fertile soil and substantial nitrogen",
+          "Requires dependable water during tasseling and silking",
+          "May require irrigation in dry climates",
+          "Can lodge during severe storms",
+          "Wildlife may consume developing ears",
+          "Ear rots and insects may damage grain before harvest",
+          "Hand harvesting requires concentrated seasonal labor",
+          "Whole ears require substantial drying space",
+          "Shelling adds labor or equipment cost",
+          "Cracking and grinding add processing cost",
+          "Rodent-resistant storage is essential",
+          "Stored grain requires regular inspection",
+          "Mycotoxin contamination may destroy the value of an entire harvest",
+          "Small poorly pollinated plots may produce little usable grain",
+          "Hybrid seed does not reliably reproduce the same traits when saved",
+          "Home production may not reduce feed cost"
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Serving as the flock's sole protein source",
+          "Providing complete amino-acid nutrition",
+          "Correcting lysine deficiency by itself",
+          "Correcting tryptophan deficiency by itself",
+          "Correcting methionine deficiency by itself",
+          "Serving as the sole calcium source for laying hens",
+          "Providing fully available phosphorus",
+          "Providing a complete vitamin balance",
+          "Providing a complete trace-mineral balance",
+          "Creating a balanced ration when mixed only with other cereal grains",
+          "Becoming nutritionally complete after cracking",
+          "Becoming nutritionally complete after grinding",
+          "Creating additional dry matter through sprouting",
+          "Providing one universal feeding percentage for every flock",
+          "Guaranteeing darker egg yolks",
+          "Guaranteeing increased egg production",
+          "Guaranteeing faster growth",
+          "Guaranteeing improved fertility",
+          "Preventing disease",
+          "Treating illness",
+          "Eliminating purchased feed",
+          "Producing dependable grain from one or two isolated rows",
+          "Producing a profitable crop without accounting for labor and inputs",
+          "Remaining safe when stored warm or damp",
+          "Proving mycotoxin safety through visual inspection alone",
+          "Making moldy grain safe by drying it again",
+          "Making contaminated grain safe by mixing it with sound Corn"
+        ],
+
+        limitationSummary:
+          "Field Corn is an exceptionally useful high-energy cereal grain, but it remains nutritionally incomplete and storage sensitive. Its greatest limitations are low protein quality, severe lysine and tryptophan limitations, very low calcium, phytate-bound phosphorus, mold and mycotoxin risk, drying and storage requirements, wildlife losses, processing labor, space and pollination needs, and the possibility that home production will cost more than purchased commodity grain."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "moderate",
+
+        requiresDetoxification:
+          false,
+
+        cookingRequired:
+          false,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Low lysine concentration",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Field Corn protein is particularly deficient in lysine, making Corn unsuitable as a sole protein source despite its importance as an energy grain."
+          },
+
+          {
+            factor:
+              "Low tryptophan concentration",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Tryptophan is another limiting amino acid in conventional Field Corn and contributes to Corn's incomplete protein quality."
+          },
+
+          {
+            factor:
+              "Phytate-bound phosphorus",
+
+            concernLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Much of the phosphorus naturally present in mature Corn grain occurs in phytate form and is not completely available to poultry without appropriate diet formulation."
+          },
+
+          {
+            factor:
+              "Very low calcium",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Field Corn supplies very little calcium and cannot support eggshell production or skeletal health when used as a major dietary component."
+          },
+
+          {
+            factor:
+              "Dietary displacement",
+
+            concernLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Because chickens readily consume Corn, excessive supplementation may reduce complete-feed intake and create nutritional imbalance."
+          },
+
+          {
+            factor:
+              "High starch concentration",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Field Corn contains a very high proportion of starch, making it valuable for dietary energy but inappropriate as the dominant component of an unbalanced homemade ration."
+          },
+
+          {
+            factor:
+              "Mycotoxin susceptibility",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Corn is among the cereal grains most commonly associated with important poultry mycotoxins including aflatoxins, fumonisins, deoxynivalenol, zearalenone, and ochratoxin."
+          },
+
+          {
+            factor:
+              "Storage deterioration",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Warm or damp grain may heat, ferment, mold, attract insects, and rapidly lose feeding quality."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Trypsin inhibitors",
+
+            explanation:
+              "Unlike raw Soybeans, mature Field Corn does not require heat treatment to destroy significant trypsin inhibitors."
+          },
+
+          {
+            factor:
+              "Lectin toxicity",
+
+            explanation:
+              "Lectins are not considered a major practical feeding limitation in mature Field Corn grain."
+          },
+
+          {
+            factor:
+              "Glucosinolates",
+
+            explanation:
+              "Glucosinolates are associated with Brassica crops rather than mature Corn grain."
+          },
+
+          {
+            factor:
+              "Oxalates",
+
+            explanation:
+              "Oxalates are not considered a major nutritional limitation for mature Field Corn."
+          },
+
+          {
+            factor:
+              "Saponins",
+
+            explanation:
+              "Naturally occurring saponins are not regarded as a significant practical feeding limitation for mature Field Corn."
+          },
+
+          {
+            factor:
+              "Excessive oil rancidity",
+
+            explanation:
+              "Although Corn contains some oil, oxidation is generally a smaller concern than moisture, mold, heating, and mycotoxins when grain is properly stored."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Proper drying",
+
+            effect:
+              "Greatly improves storage life by reducing mold, heating, and microbial activity."
+          },
+
+          {
+            process:
+              "Shelling",
+
+            effect:
+              "Produces compact grain that is easier to measure, transport, inspect, crack, grind, and store."
+          },
+
+          {
+            process:
+              "Cracking",
+
+            effect:
+              "Improves accessibility but increases exposed surface area, moisture absorption, insect attack, and storage deterioration."
+          },
+
+          {
+            process:
+              "Grinding",
+
+            effect:
+              "Improves ration mixing while shortening storage life and increasing susceptibility to oxidation, moisture absorption, and spoilage."
+          },
+
+          {
+            process:
+              "Sprouting",
+
+            effect:
+              "Produces a moist supplemental feed that requires careful sanitation and prompt feeding but does not increase total dry matter."
+          },
+
+          {
+            process:
+              "Proper storage",
+
+            effect:
+              "Reduces insect activity, moisture migration, rodent damage, heating, mold, and quality loss."
+          },
+
+          {
+            process:
+              "Poor storage",
+
+            effect:
+              "Rapidly increases the risk of mold, fermentation, insect infestation, heating, and dangerous mycotoxin development."
+          }
+        ],
+
+        antinutritionalSummary:
+          "Field Corn does not require cooking or detoxification before feeding. Its primary nutritional limitations are incomplete protein quality, lysine deficiency, tryptophan deficiency, phytate-bound phosphorus, very low calcium, dietary displacement, and susceptibility to mold and mycotoxins under poor storage conditions."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Field Corn supplies concentrated dietary energy while complementary feeds provide the protein, amino acids, calcium, vitamins, minerals, and forage diversity that Corn lacks.",
+
+        bestFoundation:
+          "A complete age-appropriate poultry ration should remain the nutritional foundation.",
+
+        complements: [
+          {
+            feedType:
+              "Complete poultry ration",
+
+            relationship:
+              "Provides balanced protein, amino acids, vitamins, minerals, calcium, phosphorus, sodium, and other nutrients that Field Corn cannot supply."
+          },
+
+          {
+            feedType:
+              "High-protein legumes",
+
+            relationship:
+              "Soybeans, Field Peas, Cowpeas, and similar crops help compensate for Corn's relatively low protein quality."
+          },
+
+          {
+            feedType:
+              "Leafy forage crops",
+
+            relationship:
+              "Alfalfa, Comfrey, Kale, White Clover, and other leafy crops contribute vitamins, minerals, carotenoids, and forage diversity."
+          },
+
+          {
+            feedType:
+              "Oilseed crops",
+
+            relationship:
+              "Sunflower and other oilseeds provide additional fat, essential fatty acids, and complementary nutrition."
+          },
+
+          {
+            feedType:
+              "Pasture and insects",
+
+            relationship:
+              "Natural pasture and insects increase dietary diversity while contributing additional protein and enrichment."
+          },
+
+          {
+            feedType:
+              "Layer-calcium program",
+
+            relationship:
+              "Laying hens still require an appropriate calcium source because Field Corn contributes very little calcium."
+          },
+
+          {
+            feedType:
+              "Appropriate grit",
+
+            relationship:
+              "Whole kernels and whole-ear feeding may require insoluble grit where adequate natural grit is unavailable."
+          }
+        ],
+
+        doesNotCorrect: [
+          "Protein deficiency",
+          "Lysine deficiency",
+          "Tryptophan deficiency",
+          "Calcium deficiency",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Poor-quality complete feed",
+          "Inadequate water",
+          "Improper storage",
+          "Mycotoxin contamination",
+          "Overcrowding",
+          "Poor sanitation",
+          "Excessive body condition"
+        ],
+
+        pairingWarning:
+          "Mixing Field Corn with one or more homegrown crops does not automatically create a nutritionally balanced poultry ration. Proper formulation still requires attention to energy, digestible amino acids, calcium, phosphorus, sodium, vitamins, minerals, fat, fiber, and expected feed intake.",
+
+        practicalBackyardApproach:
+          "For most backyard flocks, continue feeding a complete ration while using clean mature Field Corn as a measured supplemental energy grain, seasonal whole-ear enrichment item, or winter feed reserve."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Field Corn should function as a supplemental energy grain, enrichment crop, and stored feed reserve rather than replacing a balanced poultry ration.",
+
+        primaryMethods: [
+          {
+            method:
+              "Measured whole-kernel feeding",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Whole mature kernels provide concentrated energy while allowing accurate portion measurement."
+          },
+
+          {
+            method:
+              "Whole dried ear feeding",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Whole ears encourage prolonged pecking behavior and natural enrichment while minimizing immediate shelling labor."
+          },
+
+          {
+            method:
+              "Shelled grain feeding",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Shelled grain stores efficiently and can be distributed evenly among multiple feeding locations."
+          },
+
+          {
+            method:
+              "Freshly cracked grain",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Cracking improves accessibility but should be performed shortly before feeding because storage life decreases."
+          },
+
+          {
+            method:
+              "Coarsely ground grain",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Ground grain mixes well into formulated rations but should not be stored for long periods."
+          },
+
+          {
+            method:
+              "Properly sprouted untreated grain",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Sprouted grain provides variety but requires strict sanitation and prompt feeding."
+          }
+        ],
+
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce supplemental Field Corn gradually while monitoring complete-feed intake, droppings, body condition, and flock behavior."
+        },
+
+        observationChecklist: [
+          "Complete-feed consumption remains normal.",
+          "Birds continue eating the balanced ration.",
+          "Whole ears remain free of mold.",
+          "No musty odor develops.",
+          "Stored grain remains cool and dry.",
+          "No condensation develops inside storage containers.",
+          "No insect infestation appears.",
+          "No rodent contamination develops.",
+          "Whole ears remain free of ear rot.",
+          "Broken grain is used before deterioration occurs.",
+          "Body condition remains appropriate.",
+          "Lower-ranking birds have equal access.",
+          "Whole-ear hanging hardware remains secure.",
+          "No spoiled sprouts remain after feeding.",
+          "Spilled grain is removed from damp litter."
+        ]
+      },
+      practicalUse: {
+        idealHomesteadUses: [
+          "Measured whole-kernel energy supplementation",
+          "Whole dried-ear enrichment",
+          "Stored winter grain",
+          "Scratch-grain ingredient",
+          "Freshly cracked grain",
+          "Coarsely ground ration ingredient",
+          "Postharvest flock gleaning",
+          "Long-term dry-grain storage",
+          "Small-scale homestead grain production",
+          "Open-pollinated seed-saving projects",
+          "Seasonal poultry-garden integration",
+          "High-energy ingredient in a professionally balanced ration"
+        ],
+
+        lessSuitableUses: [
+          "Complete poultry-feed replacement",
+          "Primary protein production",
+          "Primary calcium production",
+          "Small narrow garden strips",
+          "Heavily shaded gardens",
+          "Very short frost-free climates without adapted varieties",
+          "Water-limited production without irrigation",
+          "Unmanaged direct flock access before grain maturity",
+          "Long-term storage without drying and inspection",
+          "Home ration formulation without nutritional calculations"
+        ],
+
+        backyardRecommendation:
+          "Grow Field Corn where adequate full sun, fertile soil, dependable pollination, sufficient growing-season heat, water during tasseling and silking, drying space, and rodent-resistant storage are available. Use the harvested grain primarily as measured whole kernels, whole-ear enrichment, cracked grain, or a carefully formulated ration ingredient while maintaining an age-appropriate complete poultry feed as the flock's nutritional foundation.",
+
+        commercialRecommendation:
+          "Commercial poultry use is most appropriate when analyzed Field Corn is incorporated into professionally formulated diets that balance metabolizable energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, particle size, and total feed intake."
+      },
+
+      storage: {
+        storageSuitability:
+          "excellent-when-thoroughly-dried-and-protected",
+
+        preferredStorageForms: [
+          "Clean mature whole kernels",
+          "Shelled dry Field Corn grain",
+          "Thoroughly dried whole ears",
+          "Small quantities of freshly cracked grain",
+          "Small quantities of freshly ground grain"
+        ],
+
+        dryingRequirements:
+          "Field Corn must be dried thoroughly before long-term storage. Ears should be exposed to strong airflow, protected from rain, and spread or arranged so moisture can escape from all sides. Shelled grain should not be sealed while warm or damp. Whole ears may require additional protected drying after harvest, especially in humid, cool, or wet climates.",
+
+        storageEnvironment:
+          "Store clean dry Field Corn in a cool, dark, dry, well-ventilated, insect-resistant, and rodent-resistant location protected from condensation, flooding, direct sunlight, rapid temperature swings, and contact with damp floors or walls.",
+
+        containerGuidance:
+          "Use clean food-safe containers with secure lids only after grain has dried and cooled completely. Large sealed containers should not be used to hide uncertain moisture conditions. Whole ears may be stored in ventilated cribs, racks, mesh containers, or other protected systems that maintain airflow while excluding rodents and wildlife.",
+
+        inventoryManagement:
+          "Label each batch with harvest date, variety when known, drying date, shelling date, and storage location. Rotate older grain before newer grain and keep cracked or ground Corn separate from intact kernels because processed grain has a shorter storage life.",
+
+        inspectionSchedule:
+          "Inspect stored Field Corn frequently during the first weeks after harvest and regularly throughout storage. Check for temperature changes, condensation, damp pockets, caking, mold, musty odor, sour odor, insects, webbing, rodent activity, broken kernels, discoloration, and unusual dust.",
+
+        storageLifeGuidance:
+          "Properly dried intact grain may remain usable for many months under cool, dry, stable conditions. Whole ears may also store well but occupy more space and can conceal internal moisture or ear rot. Cracked and ground Corn should be produced in small quantities and used substantially sooner than intact grain.",
+
+        disposalGuidance:
+          "Discard grain or ears showing mold, musty odor, heating, fermentation, wet clumping, insect infestation, rodent contamination, water damage, ear rot, suspicious discoloration, or other evidence of deterioration. Grain suspected of mycotoxin contamination should not be blended with sound grain or fed without an appropriate safety determination.",
+
+        storageSummary:
+          "Field Corn has excellent storage value only when mature grain is dried thoroughly, cooled, protected from moisture, and inspected routinely. Intact kernels generally store longer than cracked or ground Corn, while whole ears require greater space and may conceal internal spoilage."
+      },
+
+      spoilageAndContamination: {
+        overallRiskLevel:
+          "high",
+
+        primarySpoilageRisks: [
+          {
+            risk:
+              "Storage mold",
+
+            likelihood:
+              "high-when-grain-is-stored-damp",
+
+            primaryCauses: [
+              "Inadequate grain drying",
+              "Sealing grain while warm",
+              "Condensation",
+              "High humidity",
+              "Water leaks",
+              "Contact with damp floors or walls",
+              "Poor airflow",
+              "Moisture migration within stored grain"
+            ],
+
+            warningSigns: [
+              "Musty odor",
+              "Visible fungal growth",
+              "White, green, blue, gray, or black discoloration",
+              "Damp clumping",
+              "Caked grain",
+              "Warm spots",
+              "Bird refusal",
+              "Abnormal dust"
+            ],
+
+            response:
+              "Stop feeding the affected batch immediately. Isolate it from sound grain and discard it unless representative laboratory testing and qualified guidance establish a safe use."
+          },
+
+          {
+            risk:
+              "Mycotoxin contamination",
+
+            likelihood:
+              "variable-but-potentially-serious",
+
+            primaryCauses: [
+              "Ear-rot fungi",
+              "Drought stress",
+              "Heat stress",
+              "Insect-damaged kernels",
+              "Delayed harvest",
+              "Wet field conditions",
+              "Poor postharvest drying",
+              "Warm humid storage",
+              "Mold growth before or after harvest"
+            ],
+
+            warningSigns: [
+              "Ear rot",
+              "Moldy kernels",
+              "Suspicious kernel discoloration",
+              "Lightweight damaged grain",
+              "Musty odor",
+              "Reduced flock intake",
+              "Unexplained illness",
+              "No visible warning signs despite contamination"
+            ],
+
+            response:
+              "Do not rely on appearance or odor alone. Stop feeding suspicious Corn and obtain representative laboratory testing or qualified veterinary, Extension, or feed-safety guidance when mycotoxin contamination is possible."
+          },
+
+          {
+            risk:
+              "Ear rot",
+
+            likelihood:
+              "moderate-to-high-under-favorable-disease-conditions",
+
+            primaryCauses: [
+              "Wet weather during grain development",
+              "Insect injury",
+              "Bird damage",
+              "Husk damage",
+              "Delayed harvest",
+              "Poor disease resistance",
+              "Warm humid conditions",
+              "Kernel injury"
+            ],
+
+            warningSigns: [
+              "Fungal growth beneath the husk",
+              "Pink, red, white, gray, green, or black kernels",
+              "Rotten ear tips",
+              "Shriveled kernels",
+              "Musty odor",
+              "Lightweight ears",
+              "Soft cob tissue",
+              "Abnormal kernel pattern"
+            ],
+
+            response:
+              "Separate and discard affected ears. Do not shell diseased ears into sound grain or use visibly affected kernels as poultry feed."
+          },
+
+          {
+            risk:
+              "Heating in storage",
+
+            likelihood:
+              "moderate-to-high-when-grain-is-warm-or-damp",
+
+            primaryCauses: [
+              "Excess grain moisture",
+              "Sealing grain before cooling",
+              "Microbial activity",
+              "Insect activity",
+              "Deep unaerated storage",
+              "Moisture migration",
+              "Large temperature differences"
+            ],
+
+            warningSigns: [
+              "Warm containers",
+              "Hot spots",
+              "Condensation",
+              "Sweet-sour odor",
+              "Musty odor",
+              "Caking",
+              "Steam or moisture release",
+              "Increased insect activity"
+            ],
+
+            response:
+              "Stop feeding and separate the affected grain. Do not assume that cooling alone restores safety because mold growth or mycotoxin contamination may already have occurred."
+          },
+
+          {
+            risk:
+              "Fermentation",
+
+            likelihood:
+              "moderate-when-wet-grain-is-confined",
+
+            primaryCauses: [
+              "Wet kernels",
+              "Warm storage",
+              "Sealed containers",
+              "Poor drainage",
+              "Sprouting failures",
+              "Rain exposure",
+              "Fresh kernels stored too long",
+              "Cracked grain absorbing moisture"
+            ],
+
+            warningSigns: [
+              "Alcohol-like odor",
+              "Sour odor",
+              "Yeasty odor",
+              "Bubbling moisture",
+              "Foam",
+              "Heating",
+              "Wet clumps",
+              "Slimy material"
+            ],
+
+            response:
+              "Discard fermented or suspicious Corn. Uncontrolled fermentation is not an approved preservation method for this feeding reference."
+          },
+
+          {
+            risk:
+              "Stored-grain insect infestation",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Warm storage temperatures",
+              "Long storage duration",
+              "Infested containers",
+              "Unclean storage areas",
+              "Broken kernels",
+              "High moisture",
+              "Failure to rotate inventory",
+              "Mixing new grain with old infested grain"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Kernel holes",
+              "Excessive fines",
+              "Dust accumulation",
+              "Heating",
+              "Unusual movement within grain"
+            ],
+
+            response:
+              "Isolate the batch and evaluate the extent of infestation and possible mold damage. Discard heavily infested, heated, damp, moldy, or contaminated grain."
+          },
+
+          {
+            risk:
+              "Rodent contamination",
+
+            likelihood:
+              "high-with-unprotected-storage",
+
+            primaryCauses: [
+              "Open containers",
+              "Damaged lids",
+              "Unprotected whole-ear storage",
+              "Spilled grain",
+              "Poor building exclusion",
+              "Long-term unattended storage",
+              "Nearby nesting material",
+              "Accessible feed rooms"
+            ],
+
+            warningSigns: [
+              "Droppings",
+              "Urine odor",
+              "Gnawed kernels",
+              "Chewed containers",
+              "Nesting material",
+              "Hair",
+              "Tracks",
+              "Rodent carcasses"
+            ],
+
+            response:
+              "Discard contaminated grain and clean and repair the storage area. Do not remove visible droppings and feed the remaining batch."
+          },
+
+          {
+            risk:
+              "Moisture absorption after cracking or grinding",
+
+            likelihood:
+              "moderate-to-high",
+
+            primaryCauses: [
+              "High humidity",
+              "Open containers",
+              "Warm storage",
+              "Long storage duration",
+              "Grinding large quantities",
+              "Contact with damp equipment",
+              "Condensation",
+              "Poor packaging"
+            ],
+
+            warningSigns: [
+              "Clumping",
+              "Caking",
+              "Musty odor",
+              "Color change",
+              "Warm meal",
+              "Reduced flow",
+              "Insect activity",
+              "Bird refusal"
+            ],
+
+            response:
+              "Discard questionable cracked or ground Corn. Produce smaller batches and store processed grain for substantially less time than intact kernels."
+          },
+
+          {
+            risk:
+              "Wet-litter contamination",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Scattering excessive grain",
+              "Leaking waterers",
+              "Rain exposure",
+              "Damp bedding",
+              "Poor drainage",
+              "Feeding more than birds consume promptly",
+              "Whole ears left on wet ground",
+              "Failure to remove leftovers"
+            ],
+
+            warningSigns: [
+              "Swollen kernels",
+              "Soft kernels",
+              "Mold",
+              "Sour odor",
+              "Fermentation",
+              "Dirty grain",
+              "Manure coating",
+              "Insect attraction"
+            ],
+
+            response:
+              "Remove wet, dirty, moldy, or manure-contaminated Corn from the feeding area. Correct water leaks, drainage, and overfeeding before offering more grain."
+          }
+        ],
+
+        contaminationRisks: [
+          "Chemically treated planting seed",
+          "Pesticide residues",
+          "Herbicide residues",
+          "Fungicide residues",
+          "Desiccant residues",
+          "Mycotoxins",
+          "Rodent urine and feces",
+          "Wild-bird droppings",
+          "Manure contamination",
+          "Standing-water contamination",
+          "Stored-grain insects",
+          "Mold spores",
+          "Dirty harvesting equipment",
+          "Contaminated shellers or mills",
+          "Fuel or oil contamination",
+          "Unknown grain screenings"
+        ],
+
+        sensoryInspectionLimitations:
+          "Visual appearance and odor cannot reliably prove that Field Corn is free from mycotoxins, chemical residues, or microbial contamination. Some dangerous mycotoxins may be present in grain that appears relatively normal, and contamination may be unevenly distributed within a batch.",
+
+        salvageWarning:
+          "Do not attempt to make moldy, musty, heated, fermented, rodent-contaminated, chemically contaminated, or mycotoxin-suspect Field Corn safe by washing it, drying it again, removing visibly damaged kernels, diluting it with clean grain, or feeding it in smaller amounts.",
+
+        spoilageSummary:
+          "Field Corn's greatest feeding hazard is deterioration associated with moisture, ear rot, mold, insects, rodents, and mycotoxins. Thorough drying and proper storage reduce risk but cannot reverse contamination that has already occurred."
+      },
+
+            commonFeedingMistakes: {
+        mistakes: [
+        {
+          mistake:
+            "Using Field Corn as the flock's primary ration",
+
+          whyItIsAProblem:
+            "Corn supplies concentrated energy but lacks adequate protein quality, calcium, available phosphorus, vitamins, trace minerals, and balanced amino acids.",
+
+          correction:
+            "Maintain an age-appropriate complete poultry feed as the nutritional foundation."
+        },
+
+        {
+          mistake:
+            "Offering unrestricted scratch Corn",
+
+          whyItIsAProblem:
+            "Highly palatable grain may displace complete feed and contribute excessive dietary energy.",
+
+          correction:
+            "Offer Corn as a measured supplement rather than as continuously available free-choice feed."
+        },
+
+        {
+          mistake:
+            "Assuming Corn is a high-protein feed",
+
+          whyItIsAProblem:
+            "Field Corn commonly contains only modest crude protein and is strongly limited in lysine and tryptophan.",
+
+          correction:
+            "Treat Corn primarily as an energy ingredient and rely on complete feed or properly formulated protein ingredients."
+        },
+
+        {
+          mistake:
+            "Feeding Corn to supply calcium",
+
+          whyItIsAProblem:
+            "Corn contains very little calcium and cannot support eggshell formation by itself.",
+
+          correction:
+            "Continue providing complete layer feed and an appropriate calcium program."
+        },
+
+        {
+          mistake:
+            "Feeding moldy or musty Corn",
+
+          whyItIsAProblem:
+            "Mold growth may be associated with harmful mycotoxins that cannot be corrected by removing visible mold.",
+
+          correction:
+            "Discard questionable grain and investigate the drying and storage failure."
+        },
+
+        {
+          mistake:
+            "Assuming visually clean Corn is free of mycotoxins",
+
+          whyItIsAProblem:
+            "Mycotoxins may occur without obvious mold and may be unevenly distributed throughout a batch.",
+
+          correction:
+            "Use representative testing and qualified guidance when field conditions, ear rot, storage history, or flock symptoms create concern."
+        },
+
+        {
+          mistake:
+            "Storing grain before it is fully dry",
+
+          whyItIsAProblem:
+            "Warm or damp grain may heat, mold, ferment, attract insects, and develop dangerous contamination.",
+
+          correction:
+            "Continue drying with strong airflow until the grain is suitable for the intended storage method."
+        },
+
+        {
+          mistake:
+            "Sealing warm grain in airtight containers",
+
+          whyItIsAProblem:
+            "Cooling grain releases moisture that may condense inside the container and create wet pockets.",
+
+          correction:
+            "Allow grain to dry and cool completely before sealed storage."
+        },
+
+        {
+          mistake:
+            "Grinding the entire harvest at once",
+
+          whyItIsAProblem:
+            "Ground Corn absorbs moisture and deteriorates much faster than intact kernels.",
+
+          correction:
+            "Crack or grind only the amount expected to be used within a short period."
+        },
+
+        {
+          mistake:
+            "Ignoring damaged kernels during shelling",
+
+          whyItIsAProblem:
+            "Broken, discolored, insect-damaged, or moldy kernels may reduce storage stability and concentrate contamination.",
+
+          correction:
+            "Sort and remove questionable kernels before storage or feeding."
+        },
+
+        {
+          mistake:
+            "Feeding chemically treated planting seed",
+
+          whyItIsAProblem:
+            "Planting seed may carry pesticide coatings that are not approved for animal consumption.",
+
+          correction:
+            "Use only untreated grain known to be suitable for food or feed."
+        },
+
+        {
+          mistake:
+            "Feeding questionable screenings",
+
+          whyItIsAProblem:
+            "Screenings may concentrate lightweight, broken, moldy, diseased, insect-damaged, or contaminated kernels.",
+
+          correction:
+            "Inspect screenings more strictly than sound whole grain and discard uncertain material."
+        },
+
+        {
+          mistake:
+            "Leaving whole ears in wet litter",
+
+          whyItIsAProblem:
+            "Kernels may absorb moisture, become manure contaminated, mold, ferment, or attract rodents.",
+
+          correction:
+            "Offer ears in a clean dry holder and remove leftovers before deterioration occurs."
+        },
+
+        {
+          mistake:
+            "Hanging ears with unsafe string or wire",
+
+          whyItIsAProblem:
+            "Loose loops, wire ends, clips, or netting may entangle feet, wings, legs, necks, or wild birds.",
+
+          correction:
+            "Use secure hardware without loose loops, sharp ends, or snagging points."
+        },
+
+        {
+          mistake:
+            "Allowing one bird to control access",
+
+          whyItIsAProblem:
+            "A single ear or small grain pile may be monopolized by dominant birds.",
+
+          correction:
+            "Use several feeding stations spaced far enough apart to allow lower-ranking birds access."
+        },
+
+        {
+          mistake:
+            "Ignoring spilled grain",
+
+          whyItIsAProblem:
+            "Spilled Corn may attract rodents, wild birds, insects, and moisture-related spoilage.",
+
+          correction:
+            "Feed only what the flock can consume promptly and clean up persistent leftovers."
+        },
+
+        {
+          mistake:
+            "Assuming sprouting makes Corn nutritionally complete",
+
+          whyItIsAProblem:
+            "Sprouting changes moisture, texture, and some nutrient characteristics but does not correct the grain's overall amino-acid, calcium, vitamin, or mineral deficiencies.",
+
+          correction:
+            "Treat sprouts as a supplemental feeding form while maintaining complete nutrition."
+        },
+
+        {
+          mistake:
+            "Using fresh ear weight to calculate dry-feed savings",
+
+          whyItIsAProblem:
+            "Fresh ears contain cob, husk, moisture, and other non-grain weight that cannot be compared directly with bagged dry poultry feed.",
+
+          correction:
+            "Base calculations on clean, dry, usable kernel weight after harvest, drying, shelling, sorting, and storage losses."
+        }
+      ],
+        
+
+        mistakeSummary:
+          "Most Field Corn feeding problems result from overfeeding, incomplete nutrition, inadequate drying, unsafe storage, contaminated grain, inappropriate processing, or treating a high-energy supplement as a complete poultry ration."
+      },
+
+      troubleshooting: {
+        flockIgnoresWholeSeeds: {
+          possibleCauses: [
+            "Birds are unfamiliar with whole Field Corn kernels",
+            "The kernels are too large or hard for the birds",
+            "The flock already has adequate complete feed",
+            "The grain is stale or poor quality",
+            "The grain has an abnormal odor",
+            "The birds prefer cracked grain"
+          ],
+
+          recommendedActions: [
+            "Confirm that the grain is clean, mature, thoroughly dried, and untreated.",
+            "Introduce a small amount gradually.",
+            "Try freshly cracked Corn for established adult birds.",
+            "Confirm that appropriately sized insoluble grit is available where needed.",
+            "Do not withhold complete feed to force consumption.",
+            "Discard the batch if its odor, appearance, storage history, or quality is questionable."
+          ]
+        },
+
+        flockIgnoresWholeHead: {
+          possibleCauses: [
+            "The birds do not recognize the ear as food",
+            "The kernels are immature",
+            "The kernels are difficult to remove",
+            "The ear is positioned poorly",
+            "The ear is damp, moldy, stale, diseased, or insect damaged"
+          ],
+
+          recommendedActions: [
+            "Expose a small patch of kernels by removing several manually.",
+            "Place the ear at a comfortable pecking height.",
+            "Confirm full kernel maturity and adequate drying.",
+            "Inspect beneath the husk for ear rot, mold, insects, and discoloration.",
+            "Remove the ear if the flock continues to avoid it."
+          ]
+        },
+
+        dominantBirdsMonopolizeFeed: {
+          possibleCauses: [
+            "Too few feeding stations",
+            "Whole ears positioned too close together",
+            "Limited enclosure space",
+            "Strong existing flock hierarchy"
+          ],
+
+          recommendedActions: [
+            "Provide several ears or dishes.",
+            "Space feeding locations widely apart.",
+            "Place some stations behind visual barriers.",
+            "Observe lower-ranking birds to confirm access."
+          ]
+        },
+
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "The Field Corn supplement is too abundant, too frequent, or more accessible and palatable than the complete ration.",
+
+          recommendedActions: [
+            "Reduce or temporarily stop supplemental Corn feeding.",
+            "Provide fresh complete feed in adequate feeder space.",
+            "Confirm that the complete feed is not stale, wet, moldy, or inaccessible.",
+            "Remove unrestricted scratch grain and whole ears.",
+            "Monitor whether normal complete-ration consumption resumes."
+          ]
+        },
+
+        looseDroppingsAfterIntroduction: {
+          possibleCauses: [
+            "Sudden dietary change",
+            "Excessive supplemental grain intake",
+            "Consumption of spoiled, fermented, or contaminated Corn",
+            "Consumption of wet sprouts or fresh immature kernels",
+            "An unrelated health problem"
+          ],
+
+          recommendedActions: [
+            "Stop the new supplement temporarily.",
+            "Inspect the Corn for mold, fermentation, contamination, and abnormal odor.",
+            "Maintain access to clean water and complete feed.",
+            "Remove wet or spoiled leftovers from the feeding area.",
+            "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+          ]
+        },
+
+        storedSeedDevelopsCondensation: {
+          likelyCauses: [
+            "Corn was stored before fully dry",
+            "Warm grain was sealed",
+            "Temperature fluctuations caused moisture migration",
+            "The container is exposed to a damp environment"
+          ],
+
+          recommendedActions: [
+            "Remove the Corn from flock access.",
+            "Inspect for heating, odor, mold, insects, discoloration, and clumping.",
+            "Discard questionable material.",
+            "Do not assume that redrying restores contaminated grain to safety.",
+            "Correct the drying and storage environment before storing a new batch."
+          ]
+        },
+
+        storedSeedSmellsUnusual: {
+          possibleInterpretations: [
+            "Musty odor may indicate mold.",
+            "Sweet-sour or alcohol-like odor may indicate fermentation.",
+            "Burned or unusually warm odor may indicate heating.",
+            "Chemical odor may indicate pesticide, fuel, or other contamination."
+          ],
+
+          recommendedAction:
+            "Do not feed Field Corn with an abnormal odor. Discard it rather than attempting to air it out, redry it, wash it, or blend it with sound grain."
+        },
+
+        birdsGainExcessWeight: {
+          possibleCauses: [
+            "Excessive high-energy Corn supplementation",
+            "Low activity",
+            "Highly confined management",
+            "Multiple household treat sources",
+            "Corn displacing the balanced ration",
+            "Underlying health or metabolic issues"
+          ],
+
+          recommendedActions: [
+            "Reduce Field Corn and other calorie-dense supplements.",
+            "Measure all supplemental feed rather than estimating.",
+            "Remove unrestricted scratch grain.",
+            "Encourage safe activity and foraging.",
+            "Review the base diet and body condition.",
+            "Seek veterinary guidance when body-condition changes are substantial or unexplained."
+          ]
+        },
+
+        rodentsAppearNearStorageOrCoop: {
+          likelyCauses: [
+            "Spilled Corn",
+            "Open containers",
+            "Uneaten whole ears left overnight",
+            "Damaged storage bins",
+            "Unprotected whole-ear storage",
+            "Feed scattered into inaccessible spaces"
+          ],
+
+          recommendedActions: [
+            "Remove spilled and uneaten grain.",
+            "Use secure rodent-resistant containers.",
+            "Repair access points and damaged storage structures.",
+            "Clean beneath racks, feeders, mills, and storage shelves.",
+            "Remove whole ears after the flock finishes feeding.",
+            "Do not use poison in a way that endangers chickens, pets, wildlife, or children."
+          ]
+        }
+      },
+
+      faq: [
+        {
+          question:
+            "Can chickens eat Field Corn?",
+
+          answer:
+            "Yes. Clean, mature, untreated, properly dried Field Corn is safe for established adult chickens as a measured high-energy supplement. It should not replace a nutritionally complete poultry ration."
+        },
+
+        {
+          question:
+            "Can chickens eat whole Field Corn kernels?",
+
+          answer:
+            "Established adult chickens can consume sound whole kernels. Appropriate insoluble grit should be available when birds do not obtain adequate natural grit, and complete feed should remain the nutritional foundation."
+        },
+
+        {
+          question:
+            "Can chickens eat whole dried Corn ears?",
+
+          answer:
+            "Yes. Thoroughly dried, disease-free whole ears can provide useful pecking enrichment. Inspect beneath the husk for retained moisture, insects, mold, discoloration, and ear rot before feeding."
+        },
+
+        {
+          question:
+            "Is cracked Corn better than whole Corn for chickens?",
+
+          answer:
+            "Cracking makes the kernel interior easier to access and may be useful for smaller adult birds, but it does not improve Corn's amino-acid, calcium, vitamin, or mineral balance. Cracked Corn also deteriorates faster than intact grain."
+        },
+
+        {
+          question:
+            "Can chickens eat ground Field Corn?",
+
+          answer:
+            "Yes. Clean freshly ground Field Corn can be used as a supplemental or professionally formulated feed ingredient. Ground Corn should be used promptly because it absorbs moisture and deteriorates faster than intact kernels."
+        },
+
+        {
+          question:
+            "Can baby chicks eat Field Corn?",
+
+          answer:
+            "Whole Field Corn is not recommended as a routine treat for young chicks. Chicks should rely on an age-appropriate complete starter ration. Professionally formulated starter feed containing ground Corn is a different situation."
+        },
+
+        {
+          question:
+            "Do chickens need grit to eat whole Corn?",
+
+          answer:
+            "Adult chickens consuming whole kernels or removing kernels from whole ears should have access to appropriately sized insoluble grit when adequate natural grit is unavailable."
+        },
+
+        {
+          question:
+            "Is Field Corn a good protein source for chickens?",
+
+          answer:
+            "No. Field Corn contains only modest crude protein and is particularly limited in lysine and tryptophan. Its primary nutritional role is concentrated dietary energy."
+        },
+
+        {
+          question:
+            "Will Field Corn make chickens lay more eggs?",
+
+          answer:
+            "Field Corn does not guarantee increased egg production. Egg output depends on genetics, age, daylight, health, stress, water, body condition, and complete nutrition. Excess Corn can reduce production when it displaces balanced layer feed."
+        },
+
+        {
+          question:
+            "Is Field Corn good for chickens during molt?",
+
+          answer:
+            "It can supply supplemental energy, but it does not provide the complete protein and amino-acid balance required for feather growth. A nutritionally complete ration remains more important."
+        },
+
+        {
+          question:
+            "Is Field Corn good for chickens in winter?",
+
+          answer:
+            "Properly dried Field Corn can be useful as a measured cold-weather energy supplement and stored enrichment crop. It should not compensate for inadequate shelter, frozen water, poor body condition, or an incomplete ration."
+        },
+
+        {
+          question:
+            "Can chickens eat Field Corn every day?",
+
+          answer:
+            "A limited amount may fit some flock-management programs, but daily use is not automatically appropriate for every flock. Total supplemental intake, body condition, activity, climate, and complete-feed consumption must be considered."
+        },
+
+        {
+          question:
+            "How much Field Corn should I give my chickens?",
+
+          answer:
+            "There is no single crop-specific amount suitable for every flock. Use Field Corn as a limited part of total supplemental feeding, protect complete-ration intake, and adjust according to bird age, size, activity, weather, body condition, and grain form."
+        },
+
+        {
+          question:
+            "Can Field Corn replace commercial chicken feed?",
+
+          answer:
+            "No. Field Corn lacks adequate protein quality, lysine, tryptophan, calcium, available phosphorus, vitamins, trace minerals, and the overall nutrient balance required for long-term poultry health and production."
+        },
+
+        {
+          question:
+            "Can chickens eat moldy Corn if the moldy kernels are removed?",
+
+          answer:
+            "No. Mold and mycotoxin contamination may extend beyond visibly damaged kernels. Washing, sorting, drying, grinding, or blending questionable Corn with sound grain does not reliably make it safe."
+        },
+
+        {
+          question:
+            "Can Corn contain mycotoxins when no mold is visible?",
+
+          answer:
+            "Yes. Some mycotoxins may be present even when grain looks relatively normal. Field history, ear-rot conditions, insect injury, drying, storage history, representative sampling, and laboratory testing may all be important."
+        },
+
+        {
+          question:
+            "Can I feed leftover Field Corn planting seed?",
+
+          answer:
+            "Only when the seed is clearly documented as untreated and suitable for food or feed. Seed treated with fungicides, insecticides, polymers, dyes, or other planting products must never be fed."
+        },
+
+        {
+          question:
+            "Can chickens eat fresh immature Field Corn?",
+
+          answer:
+            "Limited quantities of clean untreated fresh kernels are generally acceptable for established chickens, but fresh kernels contain considerably more moisture and less dry matter than mature stored Field Corn."
+        },
+
+        {
+          question:
+            "Can chickens eat sprouted Field Corn?",
+
+          answer:
+            "Properly sprouted untreated grain may be offered as an occasional supplement, but sprouting requires strict sanitation and prompt feeding. Moldy, slimy, sour-smelling, overheated, or spoiled sprouts must be discarded."
+        },
+
+        {
+          question:
+            "Does sprouting Corn create more feed?",
+
+          answer:
+            "No. Sprouting increases water weight and changes the physical form of the grain, but it does not create additional dry matter."
+        },
+
+        {
+          question:
+            "Is yellow Corn better than white Corn for chickens?",
+
+          answer:
+            "Yellow Corn generally contributes more natural xanthophyll and carotenoid pigment than white Corn, but neither type is a complete poultry feed. Overall ration balance remains more important than kernel color."
+        },
+
+        {
+          question:
+            "Can chickens glean a harvested Corn patch?",
+
+          answer:
+            "Yes, when harvest is complete and the area is free from significant mold, ear rot, chemical restrictions, wildlife contamination, and dangerous debris. Complete feed should remain available because gleaning intake cannot be measured precisely."
+        }
+      ],
+
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Zea mays",
+
+          family:
+            "Poaceae"
+        },
+
+        researchNotes: [
+          "Field Corn should be distinguished from Sweet Corn, Popcorn, Silage Corn, Corn gluten meal, Corn gluten feed, distillers grains, hominy feed, Corn oil, and other processed Corn products.",
+          "Mature dry Field Corn functions primarily as a high-starch, high-energy cereal grain.",
+          "Typical crude-protein concentration does not reflect protein quality because lysine and tryptophan are strongly limiting.",
+          "Field Corn contains very little calcium and cannot support laying-hen calcium requirements.",
+          "A substantial portion of Corn phosphorus is associated with phytate.",
+          "Yellow Corn can contribute xanthophyll and carotenoid pigments.",
+          "Whole, cracked, ground, sprouted, fresh, and commercially processed Corn products are not nutritionally or physically identical.",
+          "Cracking and grinding improve particle accessibility but reduce storage stability.",
+          "Sprouting changes moisture and physical characteristics but does not create additional dry matter.",
+          "Corn is susceptible to aflatoxins, fumonisins, deoxynivalenol, zearalenone, ochratoxin, and other mycotoxins.",
+          "Absence of visible mold does not establish that Corn is free from mycotoxins.",
+          "Representative laboratory testing may be necessary when field conditions, ear rot, storage history, or flock illness creates concern.",
+          "Commercial poultry-ration inclusion levels assume complete formulation and should not be copied into unbalanced backyard mixtures.",
+          "No universal crop-specific backyard serving percentage is supported."
+        ],
+
+        plannerConsiderations: [
+          "Classify Field Corn primarily as a high-energy cereal grain rather than a protein crop.",
+          "Give strong weight to storage value, winter value, whole-ear enrichment, and concentrated dry-matter production.",
+          "Apply substantial penalties for low protein quality, low calcium, phytate-bound phosphorus, and complete-feed displacement.",
+          "Treat mold and mycotoxin risk as major safety considerations.",
+          "Do not equate fresh ear weight with clean usable dry-kernel yield.",
+          "Do not convert commercial bushels-per-acre figures directly into guaranteed backyard yield.",
+          "Distinguish whole-ear enrichment from measured loose-grain feeding.",
+          "Distinguish intact kernels from cracked and ground grain when evaluating storage life.",
+          "Recognize that compact block planting is required for dependable wind pollination.",
+          "Penalize very small, narrow, shaded, short-season, infertile, drought-prone, or wildlife-exposed sites.",
+          "Account for harvest, drying, shelling, cleaning, processing, storage, and rodent-control labor.",
+          "Do not assume homegrown Field Corn costs less than purchased commodity Corn.",
+          "Maintain complete feed as the default nutritional foundation."
+        ],
+
+        futureResearchTopics: [
+          "Comparable backyard dry-grain yield per square foot",
+          "Usable dry-kernel yield after shelling and sorting losses",
+          "Home-scale whole-ear drying performance in humid climates",
+          "Safe storage-moisture verification for backyard producers",
+          "Whole-ear versus shelled-grain storage losses",
+          "Hand-shelling time per pound",
+          "Small-scale cracking and grinding efficiency",
+          "Storage life of cracked and ground homegrown Corn",
+          "Backyard flock intake from whole dried ears",
+          "Whole-kernel acceptance by breed and body size",
+          "Practical home-scale mycotoxin sampling procedures",
+          "Economic comparison with purchased commodity Corn",
+          "Open-pollinated versus hybrid performance in small plots",
+          "Short-season variety performance in northern and high-elevation gardens",
+          "Regional ear-rot resistance under backyard management",
+          "Long-term effects of small supplemental quantities on complete-feed intake"
+        ]
+      },
+
+      expertSummary: {
+        oneSentence:
+          "Field Corn is one of the strongest homegrown energy and storage grains for established adult chickens, but its low protein quality, very low calcium, and serious mold and mycotoxin risks require measured supplemental use and careful postharvest management.",
+
+        oneParagraph:
+          "Properly matured, thoroughly dried Field Corn can provide concentrated starch energy, excellent winter storage, whole-ear pecking enrichment, measured whole-grain supplementation, natural yellow pigments, and a useful ingredient for professionally balanced poultry rations. Its greatest value lies in energy rather than protein, because conventional Corn is relatively low in crude protein and strongly limited in lysine and tryptophan. It also contains very little calcium, much of its phosphorus is associated with phytate, and it cannot supply complete vitamin or mineral nutrition. Ear rot, inadequate drying, condensation, insects, rodents, storage mold, and mycotoxins create important safety risks that cannot always be detected visually. Field Corn should therefore complement rather than replace an age-appropriate complete poultry ration.",
+
+        recommendation:
+          "Highly recommended as a measured high-energy grain, whole-ear enrichment crop, and properly managed winter feed reserve.",
+
+        recommendationReasoning:
+          "Field Corn combines exceptionally high cereal-grain energy, long dry-storage potential, flexible feeding forms, whole-ear enrichment, widespread seed availability, and extensive agricultural research. Its main limitations—low protein quality, lysine and tryptophan deficiency, very low calcium, phytate-bound phosphorus, complete-feed displacement, drying labor, storage requirements, wildlife losses, and mycotoxin risk—are significant but manageable when sound grain is fed conservatively and complete poultry nutrition remains the foundation.",
+
+        idealUseCase:
+          "An established adult backyard flock on a homestead with enough sunny fertile space for a compact pollination block, dependable water during tasseling and silking, protected drying capacity, rodent-resistant storage, and an owner seeking whole-ear enrichment or a measurable stored energy grain.",
+
+        notRecommendedAs:
+          "A replacement for complete poultry feed, a sole protein source, a calcium source for laying hens, a universal chick supplement, an unrestricted scratch grain, an untested homemade ration base, or a way to salvage moldy, musty, heated, chemically treated, rodent-contaminated, or mycotoxin-suspect grain."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+
+
+    
+      chickenUse: {
       edibleParts: [
         "Mature dried kernels",
         "Whole dried ears",
