@@ -134362,112 +134362,197 @@ feedingReference: {
           "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use Amaranth as a measured grain supplement, a limited tender green, or occasional mature-seed-head enrichment."
       },
 
-      feedingMethods: {
-        preferredMethods: [
+            feedingMethods: {
+        philosophy:
+          "Amaranth should be treated as a form-specific supplemental crop rather than as a staple feed. Mature grain, processed grain, tender foliage, and whole seed heads require different handling, and every feeding method should protect consumption of the flock's complete ration.",
+
+        primaryMethods: [
           {
             method:
               "Measured loose mature grain",
 
-            effectiveness:
-              "excellent",
+            recommendation:
+              "Highly Recommended",
 
             explanation:
-              "Clean mature grain placed in a dish, pan, or feeder allows the best control over intake, simplifies observation, and reduces unnecessary waste."
+              "Clean, fully mature grain can be measured accurately and offered in limited supplemental portions to established adult chickens."
           },
 
           {
             method:
-              "Whole mature seed-head enrichment",
+              "Appropriately processed mature grain",
 
-            effectiveness:
-              "excellent-for-enrichment",
+            recommendation:
+              "Highly Recommended",
 
             explanation:
-              "Properly dried mature seed heads encourage prolonged pecking and natural foraging behavior while reducing household threshing labor."
+              "Heat-treated or otherwise appropriately processed grain is the preferred form when Amaranth will contribute more than an occasional minor supplement or will be incorporated into a balanced ration."
           },
 
           {
             method:
-              "Tender leafy cut-and-carry feeding",
+              "Thoroughly dried mature seed heads",
 
-            effectiveness:
-              "good",
+            recommendation:
+              "Recommended",
 
             explanation:
-              "Freshly harvested young leaves and growing tips can be offered in small quantities to provide seasonal greens and dietary variety."
+              "Whole seed heads provide natural pecking enrichment while reducing threshing labor, although actual grain intake and waste are less precise."
           },
 
           {
             method:
-              "Mixed into a balanced ration",
+              "Tender young leaves and growing tips",
 
-            effectiveness:
-              "excellent-when-formulated-correctly",
+            recommendation:
+              "Occasional",
 
             explanation:
-              "Appropriately processed Amaranth grain may be incorporated into a professionally balanced ration where total nutrient balance is maintained."
+              "Young foliage from healthy, positively identified cultivated Amaranth may be offered in small amounts as seasonal greens."
+          },
+
+          {
+            method:
+              "Plain cooked grain",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Plain cooked Amaranth may be offered promptly in small amounts but should contain no salt, oils, sauces, seasonings, or unsafe ingredients."
           }
         ],
 
-        acceptableMethods: [
-          "Dish feeding",
-          "Pan feeding",
-          "Small trough feeding",
-          "Scattered measured grain in clean bedding",
-          "Suspended mature seed heads",
-          "Fresh cut-and-carry leafy feeding",
-          "Cooked plain grain offered separately",
-          "Freshly cracked grain",
-          "Freshly ground grain immediately after preparation"
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce each Amaranth form gradually while observing complete-feed intake, droppings, crop function, flock behavior, and acceptance. Grain and foliage should be introduced separately because they have different nutritional and digestive characteristics."
+        },
+
+        observationChecklist: [
+          "Complete feed consumption remains normal.",
+          "Birds do not selectively consume Amaranth while ignoring balanced feed.",
+          "Droppings remain normal.",
+          "No digestive upset develops.",
+          "Birds maintain appropriate body condition.",
+          "Tender foliage is consumed before wilting or contamination.",
+          "Loose grain is consumed before it is scattered into litter.",
+          "Whole seed heads remain dry and free from mold.",
+          "Dominant birds do not prevent lower-ranking birds from feeding.",
+          "Rodents and wild birds are not attracted to leftover grain."
         ],
 
-        methodsToAvoid: [
-          "Unlimited free-choice Amaranth grain",
-          "Large piles of mature foliage",
-          "Feeding moldy seed heads",
-          "Leaving cooked grain in feeders overnight",
-          "Allowing wet seed heads to remain outdoors",
-          "Feeding unidentified wild Amaranthus plants",
-          "Offering chemically treated planting seed",
-          "Allowing spilled grain to remain damp",
-          "Using contaminated drying racks or surfaces"
-        ],
+        wholeHeadManagement: {
+          recommended:
+            true,
 
-        introductionMethod:
-          "Introduce Amaranth gradually over several feedings while maintaining unrestricted access to the flock's normal complete feed. Observe acceptance, manure consistency, complete-feed intake, and any evidence that dominant birds are monopolizing grain or seed heads.",
+          advantages: [
+            "Natural pecking enrichment",
+            "Reduced threshing labor",
+            "Extended feeding activity",
+            "Useful winter storage form"
+          ],
 
-        feedingFrequency:
-          "Occasional to regular supplemental feeding depending upon the overall diet, season, and flock management goals.",
+          managementTips: [
+            "Use only fully mature seed heads.",
+            "Dry heads thoroughly before storage or prolonged feeding.",
+            "Provide several heads for larger flocks.",
+            "Position heads where birds can peck without unsafe string, wire, or netting.",
+            "Remove heads that become wet, moldy, fermented, or heavily contaminated.",
+            "Use a tray beneath the head when practical to reduce grain loss."
+          ]
+        },
 
-        monitoringPoints: [
-          "Complete-feed consumption remains normal.",
-          "Birds continue maintaining healthy body condition.",
-          "Laying hens continue receiving adequate calcium.",
-          "No evidence of mold or spoilage develops.",
-          "Seed heads remain dry throughout use.",
-          "Tender greens are consumed before wilting or spoilage.",
-          "Dominant birds do not monopolize enrichment.",
-          "Spilled grain does not accumulate in damp litter.",
-          "Rodents and wild birds are not becoming attracted to feeding areas."
-        ],
+        looseSeedManagement: {
+          recommended:
+            true,
 
-        seasonalUse:
-          {
-            spring:
-              "Young leaves become available before grain maturity and may be harvested conservatively while plants continue developing.",
+          advantages: [
+            "Easy to measure",
+            "Easy to inspect",
+            "Easy to process",
+            "More precise than whole-head feeding"
+          ],
 
-            summer:
-              "Tender foliage continues to provide seasonal greens while grain and seed heads develop.",
+          managementTips: [
+            "Feed only clean, mature, thoroughly dried grain.",
+            "Offer small measured amounts.",
+            "Use a shallow dish or fine-bottomed feeder.",
+            "Avoid scattering tiny grain into wet or deep litter.",
+            "Store remaining grain in clean rodent-resistant containers.",
+            "Process only the quantity expected to be used promptly."
+          ]
+        },
 
-            autumn:
-              "Primary grain harvest season. Mature seed heads, cleaned grain, and storage preparation become the primary management focus.",
+        gritConsiderations: {
+          gritHelpful:
+            true,
 
-            winter:
-              "Stored grain and thoroughly dried seed heads provide supplemental feed and enrichment when fresh forage is limited."
-          },
+          explanation:
+            "Established adult chickens consuming whole Amaranth grain should have access to appropriate insoluble grit whenever they do not obtain adequate natural grit from their environment."
+        },
 
-        practicalBackyardRecommendation:
-          "For most backyard flocks, the most practical system combines measured loose grain with occasional whole mature seed heads for enrichment while using tender young leaves only as a limited seasonal green. Complete poultry feed should always remain the flock's primary diet."
+        feedingFrequency: {
+          dailyStaple:
+            false,
+
+          supplemental:
+            true,
+
+          enrichment:
+            true,
+
+          seasonal:
+            true,
+
+          explanation:
+            "Frequency should depend on the Amaranth form, total supplemental feeding, complete-ration intake, flock age, body condition, activity, production stage, and environmental conditions rather than a fixed daily schedule."
+        },
+
+        seasonalUse: {
+          spring:
+            "Use stored mature grain or dried seed heads conservatively while preparing new plantings.",
+
+          summer:
+            "Offer small amounts of tender young foliage from healthy plants and continue measured grain use where stored supplies remain available.",
+
+          autumn:
+            "Use freshly harvested mature grain and fully developed seed heads after proper drying and inspection.",
+
+          winter:
+            "Use stored whole grain or thoroughly dried seed heads as measured supplementation and enrichment when fresh forage is limited."
+        },
+
+        weatherConsiderations: {
+          coldWeather:
+            "Stored grain can contribute supplemental energy but should not replace complete cold-weather nutrition.",
+
+          hotWeather:
+            "Avoid excessive grain or moist cooked feed during heat stress, and remove leftovers promptly.",
+
+          rainyWeather:
+            "Protect harvested grain and seed heads from repeated wetting and contaminated mud or litter.",
+
+          humidClimate:
+            "Increase drying time, airflow, and storage inspections because dense seed heads and tiny grain can retain or absorb moisture."
+        },
+
+        managementWarnings: [
+          "Do not allow Amaranth to replace complete poultry feed.",
+          "Do not offer unrestricted raw grain.",
+          "Do not feed unidentified wild pigweed.",
+          "Do not feed chemically treated planting seed.",
+          "Avoid foliage from drought-stressed, heavily fertilized, or otherwise questionable plants.",
+          "Use mature foliage sparingly because it becomes increasingly fibrous.",
+          "Dry seed heads thoroughly before storage.",
+          "Remove cooked or moist leftovers promptly.",
+          "Discard moldy, heated, fermented, chemically contaminated, or rodent-contaminated material."
+        ]
       },
 
       storage: {
@@ -134617,167 +134702,347 @@ feedingReference: {
         ]
       },
 
-      spoilageAndContamination: {
-        overallRisk:
+            spoilageAndContamination: {
+        overallRiskLevel:
           "moderate",
 
-        summary:
-          "Amaranth stores well when mature grain and seed heads are harvested at the proper stage, dried thoroughly, cleaned carefully, and protected from moisture, insects, rodents, and wild birds. Most storage failures result from inadequate drying, poor sanitation, moisture intrusion, or delayed inspection rather than from the crop itself.",
-
-        commonSpoilageRisks: [
+        primarySpoilageRisks: [
           {
-            issue:
-              "Mold development",
+            risk:
+              "Mold growth",
 
-            severity:
-              "high",
-
-            explanation:
-              "Grain or dense seed heads stored before complete drying may develop mold that renders the material unsuitable for poultry feed."
-          },
-
-          {
-            issue:
-              "Heating",
-
-            severity:
-              "high",
-
-            explanation:
-              "Warm grain sealed before cooling may heat internally, encouraging microbial growth and reducing feed quality."
-          },
-
-          {
-            issue:
-              "Fermentation",
-
-            severity:
-              "high",
-
-            explanation:
-              "Excess moisture can cause fermentation, sour odors, and rapid deterioration."
-          },
-
-          {
-            issue:
-              "Condensation",
-
-            severity:
-              "high",
-
-            explanation:
-              "Temperature fluctuations inside storage containers may create condensation that wets otherwise dry grain."
-          },
-
-          {
-            issue:
-              "Insect infestation",
-
-            severity:
+            likelihood:
               "moderate",
 
-            explanation:
-              "Stored-product insects may reproduce in inadequately protected grain, reducing both quality and usable quantity."
+            primaryCauses: [
+              "Insufficient grain drying",
+              "Dense seed heads stored before drying internally",
+              "High humidity",
+              "Condensation",
+              "Poor airflow",
+              "Rain or dew exposure",
+              "Damp storage surfaces"
+            ],
+
+            warningSigns: [
+              "Visible fuzzy growth",
+              "Musty odor",
+              "Dark or unusual discoloration",
+              "Grain clumping",
+              "Softened seed-head tissue",
+              "Unexpected warmth",
+              "Persistent internal dampness"
+            ],
+
+            response:
+              "Discard affected and suspicious material. Do not attempt to make moldy Amaranth safe by brushing it off, washing it, reheating it, redrying it, grinding it, or mixing it with clean grain."
           },
 
           {
-            issue:
-              "Rodent contamination",
+            risk:
+              "Fermentation or heating",
 
-            severity:
-              "critical",
+            likelihood:
+              "low-to-moderate",
 
-            explanation:
-              "Rodent urine, feces, nesting material, and chewing damage contaminate stored grain and create disease risks."
+            primaryCauses: [
+              "Sealing grain before it is fully dry",
+              "Storing grain while warm",
+              "Moisture trapped inside dense seed heads",
+              "Poor ventilation",
+              "Deep compacted storage",
+              "Condensation inside containers"
+            ],
+
+            warningSigns: [
+              "Sweet-sour odor",
+              "Alcohol-like odor",
+              "Warm or hot grain",
+              "Warm seed heads",
+              "Condensation",
+              "Wet clumping",
+              "Rapid deterioration"
+            ],
+
+            response:
+              "Remove the material from flock access immediately and discard it whenever heating, fermentation, or feed safety cannot be confidently ruled out."
           },
 
           {
-            issue:
-              "Wild bird contamination",
+            risk:
+              "Moisture deterioration",
 
-            severity:
-              "high",
+            likelihood:
+              "moderate",
 
-            explanation:
-              "Drying seed heads exposed to wild birds may become contaminated with droppings that cannot be considered safe poultry feed."
+            primaryCauses: [
+              "High storage humidity",
+              "Leaking roofs or containers",
+              "Repeated temperature fluctuations",
+              "Wet scoops or hands",
+              "Grain stored against damp walls or floors",
+              "Seed heads exposed to rain after drying"
+            ],
+
+            warningSigns: [
+              "Condensation",
+              "Damp grain",
+              "Clumping",
+              "Soft seed heads",
+              "Musty odor",
+              "Visible sprouting",
+              "Mold development"
+            ],
+
+            response:
+              "Inspect the entire batch immediately. Discard material showing mold, odor, heating, fermentation, or persistent dampness."
           },
 
           {
-            issue:
-              "Chemical contamination",
+            risk:
+              "Insect infestation",
 
-            severity:
-              "critical",
+            likelihood:
+              "moderate",
 
-            explanation:
-              "Storage near pesticides, fuels, solvents, fertilizers, or other chemicals may contaminate otherwise usable feed."
+            primaryCauses: [
+              "Field insects entering with harvested heads",
+              "Warm storage",
+              "Open containers",
+              "Old grain residue",
+              "Poor storage sanitation",
+              "Long storage periods"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Excess dust",
+              "Damaged grain",
+              "Unusual movement",
+              "Rapid loss of stored grain"
+            ],
+
+            response:
+              "Isolate the affected batch and inspect its condition. Discard material with extensive insect activity, webbing, moisture, mold, contamination, or major deterioration."
           }
         ],
 
-        warningSigns: [
-          "Musty odor",
-          "Sour odor",
-          "Visible mold",
-          "Discoloration",
-          "Condensation inside containers",
-          "Warm grain",
-          "Heating seed heads",
-          "Clumped grain",
-          "Live insects",
-          "Insect webbing",
-          "Rodent droppings",
-          "Rodent-chewed containers",
-          "Wild bird droppings",
-          "Abnormal chemical odor"
+        contaminationRisks: [
+          {
+            contaminant:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Bright artificial coloring",
+              "Seed-treatment warning",
+              "Commercial chemical coating",
+              "Unknown planting seed",
+              "Fungicide or insecticide labeling"
+            ],
+
+            guidance:
+              "Never feed planting seed unless it is clearly documented as untreated and suitable for food or feed."
+          },
+
+          {
+            contaminant:
+              "Rodent urine or feces",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Droppings",
+              "Urine odor",
+              "Chewed containers",
+              "Nesting material",
+              "Tracks",
+              "Rodent carcasses"
+            ],
+
+            guidance:
+              "Discard contaminated grain or seed heads and clean the storage area before introducing new feed."
+          },
+
+          {
+            contaminant:
+              "Wild-bird droppings",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Visible droppings on drying heads",
+              "Wild-bird access to drying racks",
+              "Bird access to open storage",
+              "Perching directly above harvested material"
+            ],
+
+            guidance:
+              "Protect drying and stored Amaranth from wild birds and discard heavily contaminated material."
+          },
+
+          {
+            contaminant:
+              "Pesticide, herbicide, or fertilizer exposure",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Known application near harvest",
+              "Uncertain product identity",
+              "Unknown harvest interval",
+              "Direct spray contact",
+              "Chemical drift",
+              "Improper fertilizer contamination"
+            ],
+
+            guidance:
+              "Do not feed Amaranth when chemical identity, application rate, harvest interval, or animal-feed restrictions are uncertain."
+          },
+
+          {
+            contaminant:
+              "Fuel, oil, solvent, or chemical fumes",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Chemical or petroleum odor",
+              "Storage beside fuel or solvents",
+              "Visible spill exposure",
+              "Contaminated storage container"
+            ],
+
+            guidance:
+              "Discard contaminated material. Airing it out or removing the odor does not establish that the feed is safe."
+          },
+
+          {
+            contaminant:
+              "Wet or dirty litter",
+
+            riskLevel:
+              "moderate",
+
+            identificationClues: [
+              "Tiny grain embedded in manure",
+              "Moist clumping",
+              "Strong ammonia odor",
+              "Visible dirt",
+              "Old grain accumulated beneath feeders"
+            ],
+
+            guidance:
+              "Do not encourage chickens to consume Amaranth grain that has remained in wet, dirty, or manure-contaminated litter."
+          }
         ],
 
-        prevention: [
-          "Harvest only mature grain intended for storage.",
-          "Dry thoroughly before storage.",
-          "Confirm dense seed heads are dry internally.",
-          "Cool grain before sealing containers.",
-          "Store only clean grain.",
-          "Protect grain from rain and humidity.",
-          "Use rodent-resistant containers whenever practical.",
-          "Prevent insect access.",
-          "Keep storage areas clean.",
-          "Inspect stored grain regularly.",
-          "Rotate inventory.",
-          "Remove spilled grain promptly.",
-          "Store away from chemicals and fuels."
+        spoilageIndicators: [
+          {
+            indicator:
+              "Visible mold",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Musty odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Sour or fermented odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Alcohol-like odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Unexpected warmth or heating",
+
+            action:
+              "remove-from-storage-and-discard-if-safety-is-uncertain"
+          },
+
+          {
+            indicator:
+              "Condensation",
+
+            action:
+              "inspect-immediately-and-do-not-feed-until-safety-is-confirmed"
+          },
+
+          {
+            indicator:
+              "Wet or sticky clumping",
+
+            action:
+              "discard-questionable-material"
+          },
+
+          {
+            indicator:
+              "Rodent droppings or urine contamination",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Wild-bird droppings",
+
+            action:
+              "discard-heavily-contaminated-material"
+          },
+
+          {
+            indicator:
+              "Chemical or petroleum odor",
+
+            action:
+              "discard"
+          },
+
+          {
+            indicator:
+              "Severe insect infestation",
+
+            action:
+              "discard-when-quality-or-safety-is-compromised"
+          }
         ],
 
-        contaminationSources: [
-          "Rodents",
-          "Wild birds",
-          "Stored-product insects",
-          "Mold",
-          "Condensation",
-          "Floodwater",
-          "Dirty harvest equipment",
-          "Contaminated drying surfaces",
-          "Chemical residues",
-          "Fuel spills",
-          "Petroleum products",
-          "Pesticides",
-          "Herbicides",
-          "Fertilizers",
-          "Animal waste"
-        ],
+        sensoryInspectionLimitations:
+          "Appearance and odor are useful screening tools but cannot detect every toxin, pesticide residue, pathogen, nitrate concentration, or chemical contaminant. Amaranth with a known contamination history should not be fed merely because it appears normal.",
 
-        whenToDiscard: [
-          "Visible mold is present.",
-          "The grain smells musty or sour.",
-          "Heating or fermentation has occurred.",
-          "Rodent contamination is discovered.",
-          "Wild-bird contamination is evident.",
-          "Chemical contamination is suspected.",
-          "Standing moisture has entered the container.",
-          "The safety of the grain cannot be determined."
-        ],
+        salvageWarning:
+          "Questionable Amaranth grain, foliage, or seed heads should not be salvaged by washing, cooking, roasting, redrying, grinding, removing visible mold, mixing with clean feed, or feeding smaller quantities.",
 
-        practicalBackyardGuidance:
-          "When any doubt exists regarding mold, contamination, fermentation, heating, or chemical exposure, discard the affected material rather than attempting to salvage it. The value of the harvested grain is never worth risking flock health."
+        spoilageSummary:
+          "Amaranth grain stores well only after thorough drying, while dense seed heads require special attention because moisture may remain trapped internally. When mold, heating, fermentation, chemical exposure, or animal contamination is suspected, discarding the material is safer than attempting to rescue it."
       },
 
       commonFeedingMistakes: {
@@ -135448,50 +135713,48 @@ feedingReference: {
           "Confidence is high that cultivated food-grade Amaranth can provide useful supplemental grain and limited leafy-feed value. Confidence is moderate regarding exact backyard serving quantities because species, cultivar, processing, complete ration, bird stage, and management conditions vary substantially."
       },
 
-      practicalUse: {
-        easiestBackyardUse:
-          "Harvest fully mature seed heads, dry them thoroughly, and offer them occasionally as supervised pecking enrichment while complete feed remains freely available.",
+            practicalUse: {
+        idealHomesteadUses: [
+          "Measured supplemental mature grain",
 
-        mostControlledUse:
-          "Thresh, winnow, clean, dry, and measure loose mature grain before offering it in a shallow feeder.",
+          "Whole-seed-head enrichment",
 
-        mostNutritionallyAdvancedUse:
-          "Use appropriately processed Amaranth grain as a calculated ingredient in a professionally formulated poultry ration.",
+          "Stored winter supplementation",
 
-        lowestLaborUse:
-          "Offer a limited number of thoroughly dried mature seed heads without complete threshing.",
+          "Limited tender summer greens",
 
-        highestLaborUse:
-          "Harvest, dry, thresh, winnow, screen, heat-process, crack or grind, measure, and incorporate the grain into a balanced feed mixture.",
+          "Warm-season grain production",
 
-        freshSeasonalUse:
-          "Harvest small amounts of tender young leaves and growing tips from healthy, unstressed plants and offer them promptly as supplemental greens.",
+          "Garden-to-coop feeding",
 
-        winterUse:
-          "Store cleaned whole grain or thoroughly dried mature seed heads for measured supplementation and enrichment during periods of limited fresh forage.",
+          "Dual-purpose household-food and poultry-feed production",
 
-        smallHarvestUse:
-          "Reserve a modest harvest for whole-head enrichment, occasional loose-grain feeding, household cooking, or planting seed rather than attempting bulk ration formulation.",
-
-        largeHarvestUse:
-          "Separate the harvest into household grain, planting seed, whole-head enrichment, stored poultry grain, and any quantity intended for professionally formulated feed use.",
-
-        practicalSequence: [
-          "Select a cultivated food-grade grain or vegetable Amaranth.",
-          "Choose whether the primary goal is grain, tender leaves, seed-head enrichment, or dual-purpose use.",
-          "Harvest only clean material from plants with a known growing and chemical history.",
-          "Use tender foliage while young and avoid stressed or questionable plants.",
-          "Allow grain to reach full maturity.",
-          "Dry seed heads thoroughly with strong airflow.",
-          "Store whole heads for enrichment or thresh and clean the grain.",
-          "Keep whole grain dry, cool, clean, and protected from pests.",
-          "Introduce small supplemental portions gradually.",
-          "Monitor complete-feed intake, body condition, droppings, and flock competition.",
-          "Discard any moldy, musty, heated, fermented, chemically contaminated, or rodent-contaminated material."
+          "Homestead feed diversification"
         ],
 
-        finalBackyardRecommendation:
-          "For most backyard keepers, the best balance of nutrition, safety, and labor is to use tender young leaves sparingly during the growing season, save fully mature dried seed heads for enrichment, and offer cleaned mature grain only in measured amounts. Complete poultry feed should remain continuously available."
+        lessSuitableUses: [
+          "Complete poultry-ration replacement",
+
+          "Unrestricted raw-grain feeding",
+
+          "Primary chick nutrition",
+
+          "Primary layer-calcium supplementation",
+
+          "Direct grazing of unidentified plants",
+
+          "Heavy feeding of mature foliage",
+
+          "No-processing bulk feed production",
+
+          "Informal high-percentage ration formulation"
+        ],
+
+        backyardRecommendation:
+          "Grow Amaranth primarily for mature grain, whole-seed-head enrichment, limited tender greens, and household use rather than attempting to replace purchased complete poultry feed.",
+
+        commercialRecommendation:
+          "Meaningful commercial or high-inclusion poultry use is most appropriate through analyzed and appropriately processed Amaranth ingredients incorporated into professionally formulated rations."
       },
 
             metadata: {
