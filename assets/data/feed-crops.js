@@ -57049,134 +57049,100 @@ mechanicalProcessingSuitabilityScore:
           ]
         },
 
-        scientificNotes: {
-          taxonomicNotes:
-            "White Clover is Trifolium repens, a perennial stoloniferous legume in the Fabaceae family. It spreads primarily through creeping aboveground stolons that root at nodes.",
+                scientificNotes: {
+          taxonomy: {
+            scientificName:
+              "Trifolium repens",
 
-          terminologyNotes: [
-            {
-              term:
-                "White Clover",
-
-              explanation:
-                "The common name used throughout this feeding reference for Trifolium repens."
-            },
-
-            {
-              term:
-                "Ladino Clover",
-
-              explanation:
-                "A large-leaf group of White Clover cultivars generally selected for greater forage production."
-            },
-
-            {
-              term:
-                "Small-leaf White Clover",
-
-              explanation:
-                "Compact types commonly associated with dense stolon production, close grazing tolerance, lawns, and persistent low-growing ground cover."
-            },
-
-            {
-              term:
-                "Cyanogenic",
-
-              explanation:
-                "Capable of producing hydrogen cyanide through the interaction of cyanogenic glucosides and plant enzymes after tissue damage."
-            },
-
-            {
-              term:
-                "Acyanogenic",
-
-              explanation:
-                "Lacking one or more genetic components required for meaningful cyanide release."
-            },
-
-            {
-              term:
-                "Dry-matter basis",
-
-              explanation:
-                "A nutrient concentration calculated after excluding water. Dry-matter values cannot be applied directly to equal fresh weights of moisture-rich Clover."
-            },
-
-            {
-              term:
-                "As-fed basis",
-
-              explanation:
-                "A nutrient concentration measured in the material as it is actually offered, including its water content."
-            }
-          ],
-
-          evidenceStrength: {
-            poultrySpecificFeedingEvidence:
-              "limited-to-moderate",
-
-            forageCompositionEvidence:
-              "strong",
-
-            agronomicEvidence:
-              "strong",
-
-            backyardServingSizeEvidence:
-              "weak",
-
-            cultivarSafetyEvidence:
-              "moderate-but-not-poultry-specific",
-
-            longTermBackyardOutcomeEvidence:
-              "limited"
+            family:
+              "Fabaceae"
           },
 
-          evidenceLimitations: [
-            "Much White Clover research focuses on cattle, sheep, dairy systems, pasture ecology, turf, or forage agronomy rather than backyard poultry.",
-            "Fresh grazing intake by individual chickens is difficult to measure.",
-            "Cultivars and naturalized populations differ substantially in cyanogenic potential.",
-            "Research diets using dehydrated Clover meal are not equivalent to unrestricted fresh pasture access.",
-            "Dry-matter nutrient values can be misleading when interpreted as fresh-weight values.",
-            "Published poultry studies may use controlled diets, analyzed ingredients, specific bird strains, and conditions unlike backyard systems.",
-            "A universal poultry-safe cyanogenic exposure threshold for fresh backyard White Clover has not been established.",
-            "Plant maturity, disease, temperature, moisture, fertility, and preservation method can change composition.",
-            "Visible pasture biomass does not establish actual nutrient intake.",
-            "Short-term production outcomes do not establish long-term nutritional completeness."
+          researchNotes: [
+            "Most White Clover research focuses on ruminant grazing systems, forage agronomy, pasture ecology, turf management, and dairy production rather than direct backyard-poultry feeding.",
+
+            "Fresh living forage, fresh cut-and-carry Clover, wilted forage, dehydrated flakes, and ground Clover meal are not nutritionally or toxicologically identical forms.",
+
+            "Published dry-matter protein values should not be applied directly to equal weights of fresh White Clover because fresh forage contains substantial water.",
+
+            "White Clover cultivars and naturalized populations can differ substantially in leaf size, stolon density, persistence, forage yield, disease resistance, and cyanogenic glucoside potential.",
+
+            "Some White Clover plants contain cyanogenic glucosides capable of releasing hydrogen cyanide after tissue damage, but poultry-specific backyard exposure thresholds are not adequately established.",
+
+            "Research diets containing analyzed dehydrated Clover meal are not equivalent to unrestricted fresh pasture grazing.",
+
+            "Plant maturity, leaf-to-stem ratio, season, moisture, temperature, fertility, disease, and preservation method can substantially alter forage composition.",
+
+            "Visible pasture biomass does not establish how much dry matter individual chickens actually consume.",
+
+            "Relatively high crude protein on a dry-matter basis does not mean White Clover supplies a complete or balanced amino-acid profile.",
+
+            "Measurable calcium in Clover does not make it an adequate primary calcium source for laying hens."
           ],
 
-          interpretationWarnings: [
-            "Do not convert ruminant grazing recommendations directly into poultry feeding recommendations.",
-            "Do not convert dehydrated meal inclusion percentages directly into fresh-forage percentages.",
-            "Do not assume that high crude protein means complete protein.",
-            "Do not assume that measurable calcium makes Clover an adequate laying-hen calcium source.",
-            "Do not assume every White Clover cultivar has the same cyanogenic potential.",
-            "Do not assume naturalized lawn Clover has a safe chemical-treatment history.",
-            "Do not assume wilting, drying, freezing, or chopping guarantees detoxification.",
-            "Do not assume visible consumption means complete-feed intake remains adequate.",
-            "Do not assign precise feed savings without measuring total ration consumption.",
-            "Do not treat forage access as a substitute for formulated nutrition."
+          plannerConsiderations: [
+            "Excellent managed perennial forage crop",
+
+            "Excellent grazing and pecking enrichment",
+
+            "Strong fit for rotational mixed pasture",
+
+            "Strong fit for protected forage frames",
+
+            "Useful cool-season forage production",
+
+            "Moderate protein-oriented forage value",
+
+            "Low concentrated dietary energy",
+
+            "Fresh forage contains substantial moisture",
+
+            "Actual pasture intake is difficult to measure",
+
+            "Variable cyanogenic glucoside potential",
+
+            "Complete poultry feed must remain continuously available",
+
+            "Continuous grazing can destroy the stand",
+
+            "Fresh cut forage has a short storage life",
+
+            "Dehydrated forms require stricter portion control",
+
+            "Chemical-treatment history must be known"
           ],
 
-          researchPriorities: [
+          futureResearchTopics: [
             "Measured fresh White Clover intake by backyard chickens",
-            "Poultry-specific cyanogenic exposure thresholds",
-            "Cultivar comparisons for poultry forage systems",
-            "Fresh versus dehydrated White Clover utilization",
-            "Digestible amino-acid availability",
-            "Effects on complete-feed displacement",
-            "Effects on egg-yolk pigmentation",
-            "Effects on egg production and egg quality",
-            "Long-term reproductive effects of phytoestrogen exposure",
-            "Effects of plant disease on coumestan concentrations",
-            "Forage-frame productivity under chicken pressure",
-            "Rotational recovery intervals",
-            "Regional persistence under heat and drought",
-            "Economic feed-offset measurements",
-            "Storage stability of household-dehydrated Clover"
-          ],
 
-          scientificSummary:
-            "White Clover is well supported agronomically as a perennial legume forage, but direct poultry-specific evidence is more limited and context dependent. The strongest conclusions are that it can provide useful managed forage and enrichment, cannot replace complete feed, varies in cyanogenic potential, and should be evaluated differently in fresh and dehydrated forms."
+            "Poultry-specific cyanogenic exposure thresholds",
+
+            "Cultivar comparisons for poultry forage systems",
+
+            "Fresh versus dehydrated White Clover utilization",
+
+            "Digestible amino-acid availability",
+
+            "Effects on complete-feed displacement",
+
+            "Effects on egg-yolk pigmentation",
+
+            "Effects on egg production and egg quality",
+
+            "Long-term reproductive effects of phytoestrogen exposure",
+
+            "Effects of plant disease on coumestan concentrations",
+
+            "Forage-frame productivity under chicken pressure",
+
+            "Rotational recovery intervals",
+
+            "Regional persistence under heat and drought",
+
+            "Economic feed-offset measurements",
+
+            "Storage stability of household-dehydrated Clover"
+          ]
         },
 
                 practicalUse: {
