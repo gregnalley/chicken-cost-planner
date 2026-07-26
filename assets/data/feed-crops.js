@@ -38070,489 +38070,488 @@ mechanicalProcessingSuitabilityScore:
           "Most Pumpkin and Winter Squash feeding problems result from excessive dietary displacement, failure to distinguish watery flesh from concentrated seeds, unsafe fruit selection, spoilage after opening, poor seed drying, or unsupported health claims."
       },
 
-      troubleshooting: {
-        commonProblems: [
-          {
-            problem:
-              "The flock ignores the Pumpkin or Winter Squash.",
+            troubleshooting: {
+        flockIgnoresOpenedFruit: {
+          possibleCauses: [
+            "The birds are unfamiliar with Pumpkin or Winter Squash.",
+            "Too little flesh or seed is exposed.",
+            "The fruit is immature or has poor eating quality.",
+            "The flock already has abundant complete feed or other supplements.",
+            "The fruit is beginning to spoil or has an abnormal odor."
+          ],
 
-            likelyCauses: [
-              "Birds have never seen the food before.",
-              "The fruit has not been opened.",
-              "The rind is too hard to penetrate.",
-              "The flock has abundant alternative feed available.",
-              "The fruit is immature or poor quality."
-            ],
+          recommendedActions: [
+            "Confirm that the fruit is a sound, correctly identified edible cultivar.",
+            "Split, quarter, or chop the fruit to expose more flesh, pulp, and seeds.",
+            "Place a few loose seeds or pieces of flesh on the exposed surface.",
+            "Introduce only a small amount and allow the flock time to investigate.",
+            "Do not withhold complete feed to force consumption.",
+            "Remove and discard the fruit if its odor, appearance, or quality is questionable."
+          ]
+        },
 
-            recommendedSolutions: [
-              "Split or quarter the fruit to expose the flesh and seeds.",
-              "Place a few seeds or chopped flesh on top of the exposed cavity.",
-              "Introduce small portions before offering large whole fruit.",
-              "Allow birds time to investigate unfamiliar foods naturally.",
-              "Remove uneaten material before spoilage develops."
-            ]
-          },
+        flockIgnoresWholeSeeds: {
+          possibleCauses: [
+            "The birds are unfamiliar with the seeds.",
+            "The seeds are too large for younger or smaller birds.",
+            "The seed coats are unusually thick.",
+            "The flock already has adequate feed.",
+            "The seeds are stale, moldy, insect damaged, or rancid."
+          ],
 
-          {
-            problem:
-              "Only a few dominant birds consume the supplement.",
+          recommendedActions: [
+            "Confirm that the seeds are clean, mature, dry, untreated, and fresh.",
+            "Introduce a small measured quantity gradually.",
+            "Try freshly cracked or coarsely ground seed for established adult birds.",
+            "Maintain unrestricted access to complete feed.",
+            "Discard the batch if odor, moisture, mold, insects, or rancidity is suspected."
+          ]
+        },
 
-            likelyCauses: [
-              "Only one feeding location is available.",
-              "Large flock competition.",
-              "Limited access around the fruit."
-            ],
+        dominantBirdsMonopolizeFruit: {
+          possibleCauses: [
+            "Only one fruit or feeding location is available.",
+            "The fruit has been opened in only one small area.",
+            "Feeding locations are positioned too close together.",
+            "Strong flock hierarchy limits access for lower-ranking birds."
+          ],
 
-            recommendedSolutions: [
-              "Cut the fruit into several pieces.",
-              "Provide multiple feeding stations.",
-              "Separate timid birds when necessary.",
-              "Observe flock behavior during feeding."
-            ]
-          },
+          recommendedActions: [
+            "Divide the fruit into several halves or quarters.",
+            "Place pieces at widely separated feeding locations.",
+            "Use visual barriers when practical.",
+            "Observe lower-ranking birds to confirm that they can reach the supplement.",
+            "Provide only an amount the flock can consume before spoilage."
+          ]
+        },
 
-          {
-            problem:
-              "The fruit begins molding before the flock finishes it.",
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "Pumpkin flesh, seeds, or other supplements are being offered too abundantly, too frequently, or before the flock consumes enough of its complete ration.",
 
-            likelyCauses: [
-              "Portions are too large.",
-              "Hot or humid weather.",
-              "Fruit left outdoors too long.",
-              "Poor sanitation around feeding areas."
-            ],
+          recommendedActions: [
+            "Reduce or temporarily stop Pumpkin and Winter Squash supplementation.",
+            "Provide fresh complete feed continuously in adequate feeder space.",
+            "Offer supplemental fruit only after normal complete-feed consumption is established.",
+            "Measure separated seeds rather than offering them without limits.",
+            "Monitor whether complete-ration consumption returns to normal."
+          ]
+        },
 
-            recommendedSolutions: [
-              "Offer smaller portions.",
-              "Remove leftovers promptly.",
-              "Feed during cooler parts of the day when practical.",
-              "Keep feeding areas clean and dry.",
-              "Discard questionable material immediately."
-            ]
-          },
+        looseDroppingsAfterIntroduction: {
+          possibleCauses: [
+            "Sudden dietary change",
+            "Excessive consumption of moisture-rich flesh",
+            "Excessive supplemental intake",
+            "Consumption of spoiled or fermenting fruit",
+            "An unrelated health problem"
+          ],
 
-          {
-            problem:
-              "Seeds disappear immediately while flesh remains.",
+          recommendedActions: [
+            "Stop the new supplement temporarily.",
+            "Inspect all remaining fruit and seeds for spoilage.",
+            "Maintain access to clean water and complete feed.",
+            "Reintroduce only a small amount after droppings return to normal.",
+            "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+          ]
+        },
 
-            likelyCauses: [
-              "Seeds are much more energy dense and attractive.",
-              "Birds selectively consume the richest portions first."
-            ],
+        openedFruitSpoilsBeforeConsumption: {
+          likelyCauses: [
+            "The portion is too large for the flock.",
+            "The weather is hot or humid.",
+            "The fruit is resting in wet litter, mud, or manure.",
+            "Opened fruit is being left outdoors too long.",
+            "The fruit was already bruised or damaged before feeding."
+          ],
 
-            recommendedSolutions: [
-              "Accept this as normal feeding behavior.",
-              "Limit overall seed intake if calorie control is needed.",
-              "Do not assume the remaining flesh is worthless—it still provides enrichment and supplemental produce."
-            ]
-          },
+          recommendedActions: [
+            "Offer smaller portions.",
+            "Divide large fruit across multiple feeding sessions.",
+            "Place fruit on a clean, dry surface.",
+            "Remove leftovers promptly.",
+            "Refrigerate unused cut portions when appropriate.",
+            "Discard fruit that becomes moldy, slimy, sour, fermented, leaking, or heavily contaminated."
+          ]
+        },
 
-          {
-            problem:
-              "Birds eat less complete feed after receiving Pumpkin.",
+        storedFruitDevelopsSoftSpots: {
+          likelyCauses: [
+            "Hidden bruising or rind damage",
+            "Incomplete maturity or curing",
+            "Poor airflow",
+            "High humidity or condensation",
+            "Freezing injury",
+            "Internal decay"
+          ],
 
-            likelyCauses: [
-              "Supplemental portions are too large.",
-              "Pumpkin is offered before the complete ration.",
-              "Too many high-calorie seeds are being fed."
-            ],
+          recommendedActions: [
+            "Separate the affected fruit from sound stored fruit immediately.",
+            "Inspect the underside, stem area, and blossom end.",
+            "Check nearby fruit for similar damage.",
+            "Improve airflow and reduce stacking pressure.",
+            "Discard fruit showing mold, leakage, slime, fermentation, or internal decay.",
+            "Increase inspection frequency for the remaining storage crop."
+          ]
+        },
 
-            recommendedSolutions: [
-              "Reduce supplemental amounts.",
-              "Ensure complete feed is continuously available.",
-              "Offer Pumpkin after birds have already consumed balanced feed.",
-              "Monitor body condition and production."
-            ]
-          },
+        storedSeedsDevelopCondensation: {
+          likelyCauses: [
+            "Seeds were stored before they were fully dry.",
+            "Warm seeds were sealed before cooling.",
+            "Wet pulp remained attached to the seeds.",
+            "Temperature fluctuations caused moisture migration.",
+            "The storage environment is excessively humid."
+          ],
 
-          {
-            problem:
-              "Stored seeds develop a musty odor.",
+          recommendedActions: [
+            "Remove the seeds from flock access.",
+            "Inspect for heat, clumping, odor, mold, and insects.",
+            "Discard questionable material.",
+            "Clean and dry future seed batches more thoroughly.",
+            "Allow dried seeds to cool before sealing.",
+            "Correct the storage environment before storing another batch."
+          ]
+        },
 
-            likelyCauses: [
-              "Seeds were not fully dried.",
-              "Condensation formed inside the container.",
-              "Storage humidity is excessive."
-            ],
+        storedSeedsSmellUnusual: {
+          possibleInterpretations: [
+            "A musty odor may indicate mold.",
+            "A sweet-sour or alcohol-like odor may indicate fermentation.",
+            "A paint-like, bitter, sharp, oily, or soapy odor may indicate rancidity.",
+            "A chemical odor may indicate contamination."
+          ],
 
-            recommendedSolutions: [
-              "Discard affected seeds.",
-              "Improve drying before future storage.",
-              "Store only completely dry, cooled seeds.",
-              "Inspect storage containers regularly."
-            ]
-          },
+          recommendedAction:
+            "Do not feed seeds or kernels with an abnormal odor. Discard them rather than attempting to air them out, roast them, wash them, or blend them with sound feed."
+        },
 
-          {
-            problem:
-              "Ground seed develops an off odor quickly.",
+        birdsGainExcessWeight: {
+          possibleCauses: [
+            "Excessive Pumpkin-seed or kernel supplementation",
+            "Multiple calorie-dense treat sources",
+            "Low activity",
+            "Highly confined management",
+            "Whole-fruit seed intake is greater than expected",
+            "An unrelated health or metabolic problem"
+          ],
 
-            likelyCauses: [
-              "Oil oxidation after grinding.",
-              "Exposure to heat, air, or light.",
-              "Long storage after processing."
-            ],
+          recommendedActions: [
+            "Reduce Pumpkin seeds, kernels, and other calorie-dense supplements.",
+            "Measure all separated seed portions.",
+            "Continue supplying an appropriate complete ration.",
+            "Encourage safe activity and foraging.",
+            "Assess body condition periodically.",
+            "Seek veterinary guidance when weight changes are substantial or unexplained."
+          ]
+        },
 
-            recommendedSolutions: [
-              "Grind only small quantities immediately before feeding.",
-              "Store whole seeds whenever possible.",
-              "Discard rancid processed material."
-            ]
-          },
+        rodentsAppearNearStorageOrCoop: {
+          likelyCauses: [
+            "Loose seeds remain on the ground.",
+            "Opened fruit or uneaten rind is left overnight.",
+            "Storage containers are open or damaged.",
+            "Spoiled fruit has not been removed.",
+            "Feed has accumulated beneath shelves, feeders, or storage racks."
+          ],
 
-          {
-            problem:
-              "Stored fruit suddenly develops soft spots.",
-
-            likelyCauses: [
-              "Hidden bruising.",
-              "Internal decay.",
-              "Poor airflow.",
-              "Temperature fluctuations.",
-              "Excess humidity."
-            ],
-
-            recommendedSolutions: [
-              "Inspect surrounding fruit.",
-              "Remove affected fruit immediately.",
-              "Improve storage airflow.",
-              "Reduce stacking pressure.",
-              "Increase inspection frequency."
-            ]
-          },
-
-          {
-            problem:
-              "Birds refuse one particular fruit.",
-
-            likelyCauses: [
-              "Abnormal bitterness.",
-              "Beginning spoilage.",
-              "Unknown cultivar differences.",
-              "Decorative or ornamental fruit."
-            ],
-
-            recommendedSolutions: [
-              "Do not force consumption.",
-              "Inspect carefully.",
-              "Discard fruit showing bitterness or spoilage.",
-              "Use only known edible cultivars."
-            ]
-          },
-
-          {
-            problem:
-              "Rodents begin visiting feeding areas.",
-
-            likelyCauses: [
-              "Uneaten flesh left overnight.",
-              "Loose seeds remaining on the ground.",
-              "Poor sanitation."
-            ],
-
-            recommendedSolutions: [
-              "Remove leftovers daily.",
-              "Feed only what birds will consume promptly.",
-              "Store seeds in rodent-resistant containers.",
-              "Clean feeding areas regularly."
-            ]
-          }
-        ],
-
-        frequentlyAskedQuestions: [
-          {
-            question:
-              "Can chickens eat raw Pumpkin?",
-
-            answer:
-              "Yes. Sound mature edible Pumpkin and Winter Squash flesh may be offered raw after the fruit has been opened and inspected."
-          },
-
-          {
-            question:
-              "Do I need to cook Pumpkin before feeding it?",
-
-            answer:
-              "No. Cooking is optional and generally performed for convenience rather than safety. Any cooked product should be plain and completely cooled."
-          },
-
-          {
-            question:
-              "Can chickens eat the seeds?",
-
-            answer:
-              "Yes. Clean mature seeds are appropriate supplemental feed for adult birds, but they are considerably more calorie dense than the flesh and should be offered in moderation."
-          },
-
-          {
-            question:
-              "Can chickens eat the rind?",
-
-            answer:
-              "Most birds consume little of the hard rind. They normally focus on the softer flesh, pulp, and seeds."
-          },
-
-          {
-            question:
-              "Can I feed Halloween Pumpkins?",
-
-            answer:
-              "Only if the fruit remains an untreated edible Pumpkin that has not been painted, preserved, chemically treated, contaminated, frozen and spoiled, or allowed to decay."
-          },
-
-          {
-            question:
-              "Do Pumpkin seeds naturally deworm chickens?",
-
-            answer:
-              "Pumpkin seeds should not be relied upon as a proven deworming treatment. Good parasite control depends upon appropriate management, diagnosis, and evidence-based treatment when necessary."
-          },
-
-          {
-            question:
-              "Can Pumpkin replace commercial feed?",
-
-            answer:
-              "No. Pumpkin and Winter Squash are valuable supplements and enrichment crops but do not provide complete poultry nutrition."
-          },
-
-          {
-            question:
-              "Can I freeze leftover Pumpkin?",
-
-            answer:
-              "Yes. Plain flesh or puree may be frozen in useful portions and thawed before feeding, but thawed material should be fed promptly because spoilage develops much faster after thawing."
-          },
-
-          {
-            question:
-              "How long will whole Pumpkins store?",
-
-            answer:
-              "Storage life varies greatly by species, cultivar, maturity, curing quality, storage conditions, and rind condition. Regular inspection is more reliable than relying on a fixed calendar."
-          },
-
-          {
-            question:
-              "Can chicks eat Pumpkin?",
-
-            answer:
-              "Routine supplementation for young chicks is generally not recommended because complete chick starter should remain the primary food during early growth."
-          }
-        ],
-
-        troubleshootingSummary:
-          "Most Pumpkin and Winter Squash feeding problems are solved by using sound edible fruit, introducing it gradually, preventing spoilage, controlling seed intake, maintaining excellent storage practices, and ensuring that a balanced complete ration remains the foundation of the flock's nutrition."
+          recommendedActions: [
+            "Remove spilled seed and uneaten fruit promptly.",
+            "Use secure rodent-resistant seed containers.",
+            "Inspect stored fruit regularly and discard spoiled material.",
+            "Clean beneath feeders, shelves, and storage racks.",
+            "Repair rodent entry points where practical.",
+            "Do not use poison in a manner that endangers chickens, pets, wildlife, or children."
+          ]
+        }
       },
 
-      faq: {
-        title:
-          "Frequently Asked Questions",
+      faq: [
+        {
+          question:
+            "Can chickens eat raw Pumpkin and Winter Squash?",
 
-        introduction:
-          "These answers address the questions backyard chicken keepers most commonly ask about feeding Pumpkins and Winter Squash. They are intended for supplemental feeding and enrichment, not complete ration formulation.",
+          answer:
+            "Yes. Sound, mature, correctly identified edible Pumpkins and Winter Squash may be offered raw after the fruit has been opened and inspected for spoilage, contamination, and abnormal bitterness."
+        },
 
-        questions: [
-          {
-            question:
-              "Can chickens eat raw Pumpkin and Winter Squash?",
+        {
+          question:
+            "Do I need to cook Pumpkin before feeding it?",
 
-            answer:
-              "Yes. Sound, mature, edible Pumpkins and Winter Squash may be offered raw after the fruit has been opened and inspected for spoilage, contamination, and abnormal bitterness."
-          },
+          answer:
+            "No. Cooking is optional rather than required. Cooked flesh should be plain, fully cooled, and free from butter, oil, salt, sugar, syrup, sauces, onions, garlic, and seasonings."
+        },
 
-          {
-            question:
-              "Should I cook Pumpkin before feeding it?",
+        {
+          question:
+            "Can chickens eat Pumpkin seeds?",
 
-            answer:
-              "No. Cooking is optional rather than required. If cooked, the flesh should be plain, fully cooled, and free from butter, salt, sugar, oils, seasonings, onions, garlic, sauces, or other added ingredients."
-          },
+          answer:
+            "Yes. Clean mature seeds are suitable supplemental food for established adult chickens. Seeds are substantially more concentrated in fat, calories, protein, phosphorus, and dry matter than the fresh flesh, so moderation is important."
+        },
 
-          {
-            question:
-              "Can chickens eat Pumpkin seeds?",
+        {
+          question:
+            "Can chickens eat Pumpkin-seed kernels?",
 
-            answer:
-              "Yes. Mature clean seeds are an excellent supplemental feed for adult birds, but they are substantially more concentrated in fat, calories, and nutrients than the flesh and should be offered in moderation."
-          },
+          answer:
+            "Yes. Plain unsalted kernels are suitable in small measured amounts. Removing the hull increases the concentration of fat, calories, protein, and other nutrients and also shortens storage stability."
+        },
 
-          {
-            question:
-              "Can chickens eat the skin or rind?",
+        {
+          question:
+            "Can chickens eat the rind?",
 
-            answer:
-              "Chickens usually consume very little of the hard rind. Most feeding value comes from the flesh, pulp, and mature seeds."
-          },
+          answer:
+            "Chickens usually consume little of the hard mature rind. Most practical feeding value comes from the flesh, internal pulp, and mature seeds."
+        },
 
-          {
-            question:
-              "Can I feed leftover Halloween Pumpkins?",
+        {
+          question:
+            "Can I feed leftover Halloween Pumpkins?",
 
-            answer:
-              "Only if they remain untreated edible Pumpkins that have not been painted, waxed, chemically preserved, contaminated, frozen and spoiled, or allowed to decay."
-          },
+          answer:
+            "Only when the fruit is an untreated edible Pumpkin that remains sound and has not been painted, glittered, waxed, chemically preserved, candle contaminated, frozen and spoiled, or allowed to decay."
+        },
 
-          {
-            question:
-              "Can Pumpkins replace commercial chicken feed?",
+        {
+          question:
+            "Can I feed ornamental gourds?",
 
-            answer:
-              "No. Pumpkin and Winter Squash are valuable supplemental feeds and enrichment crops but cannot replace a properly balanced complete poultry ration."
-          },
+          answer:
+            "Unknown ornamental gourds, decorative hybrids, and unidentified volunteer Cucurbita fruit should not automatically be considered safe. Feed only correctly identified edible cultivars."
+        },
 
-          {
-            question:
-              "Are Pumpkin seeds a proven natural dewormer?",
+        {
+          question:
+            "What should I do if a Pumpkin tastes extremely bitter?",
 
-            answer:
-              "Current evidence does not support using ordinary Pumpkin-seed feeding as a reliable replacement for proper parasite diagnosis, management, or treatment."
-          },
+          answer:
+            "Discard the entire fruit. Pronounced unusual bitterness may indicate elevated cucurbitacins. Cooking, freezing, dehydrating, diluting, or mixing the fruit with other feed should not be used to make it acceptable."
+        },
 
-          {
-            question:
-              "Can I freeze extra Pumpkin?",
+        {
+          question:
+            "Are Pumpkin seeds a proven natural dewormer for chickens?",
 
-            answer:
-              "Yes. Plain cooked or raw flesh and puree may be frozen for later use. Thawed material should be fed promptly because spoilage develops much faster after thawing."
-          },
+          answer:
+            "No dependable backyard deworming recommendation can be based on ordinary Pumpkin-seed feeding. Parasite management should rely on appropriate sanitation, diagnosis, fecal testing, pasture management, veterinary guidance, and effective treatment when needed."
+        },
 
-          {
-            question:
-              "Can young chicks eat Pumpkin?",
+        {
+          question:
+            "Can Pumpkin replace complete chicken feed?",
 
-            answer:
-              "Routine Pumpkin supplementation is generally not recommended for young chicks because complete chick starter should remain the nutritional foundation during early growth."
-          },
+          answer:
+            "No. Pumpkin flesh and seeds do not provide the complete balance of energy, digestible amino acids, calcium, vitamins, minerals, and other nutrients required by poultry."
+        },
 
-          {
-            question:
-              "Which is more nutritious—the flesh or the seeds?",
+        {
+          question:
+            "Can young chicks eat Pumpkin?",
 
-            answer:
-              "They serve different purposes. Fresh flesh is primarily a moisture-rich supplemental produce, while mature seeds are much more concentrated in fat, calories, protein, phosphorus, and dry matter."
-          },
+          answer:
+            "Routine Pumpkin supplementation is not recommended for young chicks. An age-appropriate complete chick starter should remain their nutritional foundation."
+        },
 
-          {
-            question:
-              "Can I feed ornamental gourds?",
+        {
+          question:
+            "Do chickens need grit when eating Pumpkin seeds?",
 
-            answer:
-              "No. Unknown ornamental gourds, decorative hybrids, or unidentified volunteer Cucurbita fruit should not be assumed safe. Feed only correctly identified edible cultivars."
-          },
+          answer:
+            "Established adult chickens consuming whole seeds should have access to appropriately sized insoluble grit whenever adequate natural grit is unavailable. Oyster shell does not replace digestive grit."
+        },
 
-          {
-            question:
-              "How can I tell if a Pumpkin should not be fed?",
+        {
+          question:
+            "Which is more nutritious, Pumpkin flesh or Pumpkin seeds?",
 
-            answer:
-              "Discard fruit showing mold, slime, fermentation, leaking fluids, severe soft spots, rodent contamination, chemical contamination, or pronounced abnormal bitterness."
-          }
-        ],
+          answer:
+            "They are nutritionally different. Fresh flesh is moisture rich and relatively low in concentrated nutrients, while mature seeds are much denser in oil, calories, protein, phosphorus, magnesium, and dry matter."
+        },
 
-        quickTips: [
-          "Keep complete feed available at all times.",
-          "Treat Pumpkin as a supplement rather than a staple.",
-          "Inspect every fruit before feeding.",
-          "Discard unusually bitter fruit.",
-          "Remove leftovers before spoilage develops.",
-          "Measure seed portions carefully.",
-          "Store only thoroughly dried seeds.",
-          "Monitor body condition and complete-feed intake."
-        ],
+        {
+          question:
+            "Can chickens eat Pumpkin every day?",
 
-        faqSummary:
-          "Pumpkins and Winter Squash are among the most useful backyard supplemental crops because they combine whole-fruit enrichment, seasonal storage, moisture-rich flesh, and nutrient-dense seeds. Their value is greatest when they supplement—rather than replace—a balanced poultry ration."
-      },
+          answer:
+            "Frequent small supplemental use may fit some flock-management programs, but Pumpkin should not become an unrestricted staple. Total supplement intake, complete-feed consumption, body condition, bird stage, and the amount of seed consumed must be considered."
+        },
+
+        {
+          question:
+            "How much Pumpkin should I give my chickens?",
+
+          answer:
+            "There is no single crop-specific portion appropriate for every flock. Use Pumpkin as a limited part of total supplemental feeding, protect complete-ration intake, and adjust according to flock size, bird age, activity, body condition, weather, fruit form, and seed quantity."
+        },
+
+        {
+          question:
+            "Can I freeze leftover Pumpkin?",
+
+          answer:
+            "Yes. Plain raw or cooked flesh and puree may be frozen in flock-sized portions. Thawed material should be fed promptly because it deteriorates much faster after thawing."
+        },
+
+        {
+          question:
+            "How long can whole Pumpkins and Winter Squash be stored?",
+
+          answer:
+            "Storage life varies greatly by species, cultivar, maturity, rind condition, curing, temperature, humidity, and handling. Regular condition-based inspection is more reliable than one universal storage duration."
+        },
+
+        {
+          question:
+            "Can chickens eat moldy Pumpkin after the damaged area is removed?",
+
+          answer:
+            "No. Mold and microbial deterioration may extend beyond the visibly damaged area, particularly in moist soft flesh. Discard questionable fruit rather than cutting away the visible damage and feeding the remainder."
+        }
+      ],
 
       expertSummary: {
-        overallRating:
-          "excellent-supplemental-enrichment-crop",
+        oneSentence:
+          "Pumpkins and Winter Squash are excellent multipurpose supplemental crops for backyard chickens because they combine long-storage fruit, moisture-rich flesh, concentrated seeds, and outstanding whole-fruit enrichment, but they cannot replace a nutritionally complete poultry ration.",
 
-        executiveSummary:
-          "Pumpkins and Winter Squash are among the most valuable seasonal supplemental crops available to backyard chicken keepers. Their greatest strengths come from combining long-storage whole fruit, excellent behavioral enrichment, moisture-rich edible flesh, and a separate high-energy seed product. They are not complete poultry feeds and should always supplement—not replace—a properly balanced ration.",
+        oneParagraph:
+          "Pumpkins and Winter Squash provide two nutritionally distinct flock products. The fresh mature flesh is bulky, moisture rich, and useful primarily as supplemental produce and behavioral enrichment, while the mature seeds are much more concentrated in oil, calories, protein, phosphorus, magnesium, and dry matter. Sound mature storage cultivars can extend garden value well into autumn and winter without refrigeration, and opened whole fruit encourages prolonged pecking and feed-seeking behavior. Their principal limitations are dietary displacement, concentrated seed calories, rapid spoilage after cutting, cultivar variability, and the danger associated with abnormally bitter fruit. Used in moderation alongside complete feed, they are among the most practical multipurpose crops for the backyard poultry keeper.",
 
-        greatestStrengths: [
+        recommendation:
+          "Highly Recommended",
+
+        recommendationReasoning: [
           "Outstanding whole-fruit enrichment",
-          "Excellent fall and winter supplemental crop",
-          "Long storage potential for many cultivars",
-          "Moisture-rich seasonal produce",
-          "Highly nutritious mature seeds",
-          "Minimal preparation required",
-          "Excellent homestead versatility",
-          "Useful surplus-garden crop"
+          "Excellent fall and winter supplemental value",
+          "Strong storage potential among suitable cultivars",
+          "Useful moisture-rich seasonal produce",
+          "Nutrient-dense mature seeds",
+          "Minimal processing for whole-fruit feeding",
+          "Excellent household and homestead versatility",
+          "Useful pathway for sound surplus garden fruit"
         ],
 
-        primaryLimitations: [
-          "Not nutritionally complete",
-          "Fresh flesh is low in concentrated nutrients",
-          "Seeds are calorie dense and require moderation",
-          "Opened fruit spoils rapidly",
-          "Abnormally bitter fruit must never be fed",
-          "Large fruit portions are difficult to measure precisely"
-        ],
+        idealUseCase:
+          "A mature storage fruit opened periodically for adult-flock enrichment, with seeds treated as a more concentrated measured supplement, while an appropriate complete poultry ration remains continuously available.",
 
-        bestUses: [
-          "Whole-fruit flock enrichment",
-          "Seasonal supplemental produce",
-          "Measured seed supplementation",
-          "Homestead food-production systems",
-          "Fall and winter feed diversification",
-          "Utilizing surplus garden harvests"
-        ],
-
-        notRecommendedFor: [
-          "Replacing complete poultry feed",
-          "Routine feeding of young chicks",
-          "Correcting nutritional deficiencies",
-          "Serving as a calcium supplement",
-          "Supporting homemade rations without formulation",
-          "Using as a proven parasite treatment"
-        ],
-
-        finalRecommendation:
-          "Grow Pumpkins and Winter Squash primarily as multipurpose homestead crops that provide household food, long-term storage, flock enrichment, seasonal supplemental feeding, and measured seed supplementation. Continue relying on a complete poultry ration as the nutritional foundation for every flock."
+        notRecommendedAs: [
+          "Primary flock ration",
+          "Only protein source",
+          "Primary calcium source",
+          "Unlimited free-choice seed or kernel feed",
+          "Routine young-chick feed",
+          "A correction for an unbalanced homemade ration",
+          "A proven poultry deworming treatment"
+        ]
       },
 
       scientificNotes: {
-        evidenceQuality:
-          "high",
+        taxonomy: {
+          scientificName:
+            "Cucurbita spp.",
 
-        researchSummary:
-          "The nutritional composition and management recommendations presented here are based on established agricultural, horticultural, poultry nutrition, and extension literature covering edible Cucurbita species, poultry feeding practices, seed composition, postharvest handling, and backyard flock management.",
+          family:
+            "Cucurbitaceae"
+        },
 
-        importantScientificConsiderations: [
-          "Large variation exists among Cucurbita species and cultivars.",
-          "Fresh flesh and mature seeds differ dramatically in nutritional composition.",
-          "Fresh flesh contains substantial water, reducing nutrient density on an as-fed basis.",
-          "Seed nutrient concentrations vary with cultivar, maturity, growing conditions, and processing.",
-          "Whole seeds, hulled kernels, seed meal, and extracted oil are nutritionally different products.",
-          "Pronounced bitterness may indicate elevated cucurbitacin concentrations and should always be treated as unsafe.",
-          "Published feeding trials involving formulated seed meals should not be interpreted as backyard whole-seed feeding recommendations."
+        researchNotes: [
+          "Pumpkins and Winter Squash include several cultivated Cucurbita species and many cultivars with substantial differences in fruit size, flesh composition, dry matter, carotenoid concentration, seed yield, rind thickness, maturity, and storage life.",
+
+          "Fresh flesh, whole seeds, hulled kernels, full-fat seed meal, defatted seed meal, and extracted seed oil are nutritionally distinct materials and should not be treated as interchangeable.",
+
+          "Fresh flesh contains substantial water and therefore provides much less concentrated nutrition on an as-fed basis than dried seed products.",
+
+          "Published poultry-feeding research commonly evaluates analyzed Pumpkin seed meal, kernel meal, extracted oil, or other processed ingredients incorporated into balanced formulated diets rather than informal backyard feeding of whole fruit.",
+
+          "Research inclusion percentages depend on the analyzed ingredient, bird stage, energy density, protein quality, amino-acid balance, fiber, fat, calcium, phosphorus, vitamins, minerals, and the rest of the formulated ration.",
+
+          "Pronounced abnormal bitterness may indicate elevated cucurbitacins and should be treated as a rejection signal.",
+
+          "Carotenoid concentration varies greatly among Cucurbita species, cultivars, flesh colors, maturity stages, and storage conditions.",
+
+          "Seed oil is susceptible to oxidative deterioration after hulling, cracking, or grinding, making processed seed less stable than intact thoroughly dried whole seed.",
+
+          "Pumpkin-seed feeding should not be presented as a dependable poultry deworming treatment without appropriate product-specific and species-specific evidence."
         ],
 
-        interpretationGuidance:
-          "Published nutrient values should always be interpreted within the context of cultivar differences, analytical methods, processing, moisture content, and ration formulation rather than being treated as universal constants."
+        plannerConsiderations: [
+          "Excellent whole-fruit enrichment crop",
+          "Strong fall and winter storage value",
+          "Moisture-rich fresh-flesh supplement",
+          "Separate high-energy seed product",
+          "Moderate-to-high seed protein contribution",
+          "High seed-fat concentration",
+          "Low fresh-flesh nutrient density",
+          "Low calcium contribution",
+          "Incomplete amino-acid balance",
+          "Requires moderation",
+          "Opened fruit spoils rapidly",
+          "Cultivar storage performance varies substantially",
+          "Abnormally bitter fruit must be rejected",
+          "Whole-fruit intake is difficult to measure precisely",
+          "Separated seeds allow better portion control",
+          "Large garden-space requirement for many cultivars",
+          "Strong household-food value",
+          "Strong multipurpose homestead value",
+          "Not suitable as a complete-ration replacement"
+        ],
+
+        futureResearchTopics: [
+          "Species- and cultivar-specific poultry nutrient profiles",
+          "Cultivar-specific flesh dry-matter and carotenoid values",
+          "Cultivar-specific whole-seed and kernel composition",
+          "Practical backyard supplementation rates for different flock stages",
+          "Comparative flock acceptance of flesh, pulp, whole seed, and hulled kernels",
+          "Effects of fruit maturity and storage duration on feeding quality",
+          "Comparative storage performance among edible cultivars",
+          "Practical seed-recovery percentages from different fruit types",
+          "Effects of seed hulling and grinding on storage stability",
+          "Practical enrichment duration by fruit size and flock size",
+          "Effects of Pumpkin flesh on yolk pigmentation under controlled complete-ration conditions",
+          "Product-specific evidence concerning Pumpkin seed ingredients and poultry parasites",
+          "Economic comparison of whole-fruit storage, freezing, dehydration, and seed processing",
+          "Regional yield performance under small-scale homestead conditions"
+        ]
       },
 
       practicalUse: {
+        idealHomesteadUses: [
+          "Whole-fruit flock enrichment",
+          "Fall and winter supplemental feeding",
+          "Stored cold-season enrichment",
+          "Moisture-rich seasonal produce",
+          "Measured seed supplementation",
+          "Household food production",
+          "Use of sound surplus fruit",
+          "Garden-to-coop feeding",
+          "Non-electric food storage",
+          "Homestead feed diversification",
+          "Pollinator-support planting",
+          "Compost and garden-biomass production"
+        ],
+
+        lessSuitableUses: [
+          "Complete ration replacement",
+          "Primary young-chick nutrition",
+          "Primary protein supplementation",
+          "Primary methionine supplementation",
+          "Primary lysine supplementation",
+          "Primary calcium supplementation",
+          "Unrestricted free-choice seed feeding",
+          "Correction of an unbalanced homemade ration",
+          "Precise ration delivery through whole-fruit feeding",
+          "Feeding unidentified ornamental or abnormally bitter fruit",
+          "Long-term storage after seed grinding",
+          "Use as a proven poultry deworming treatment"
+        ],
+
         backyardRecommendation:
-          "Excellent",
+          "Grow Pumpkins and Winter Squash primarily as multipurpose household-food, whole-fruit enrichment, seasonal produce, and winter-storage crops. Open sound mature fruit for established adult chickens, measure separated seeds when tighter calorie control is needed, and maintain a complete poultry ration as the flock's nutritional foundation.",
 
-        recommendedRole:
-          "Seasonal supplemental crop and enrichment crop",
-
-        easiestFeedingMethod:
-          "Split open a mature sound fruit and allow adult birds supervised access while maintaining unrestricted access to complete feed.",
-
-        simplestStorageMethod:
-          "Store sound mature fruit intact in a cool, dry, well-ventilated location and clean, thoroughly dry seeds before sealed storage.",
-
-        idealHomesteadRole:
-          "Pumpkins and Winter Squash fit exceptionally well into diversified backyard food-production systems by supplying household food, poultry supplementation, compost material, seed-saving opportunities, pollinator support, and valuable cold-season enrichment.",
-
-        practicalSummary:
-          "Very few garden crops combine human food value, poultry enrichment, long storage life, and supplemental feeding as effectively as Pumpkins and Winter Squash. Their greatest success comes from using them consistently in moderation while allowing complete feed to remain the flock's primary nutrition."
+        commercialRecommendation:
+          "Larger-scale poultry use is most appropriate through analyzed Cucurbita seed, meal, oil, or other clearly defined ingredients incorporated into professionally formulated diets. Inclusion levels should be based on the specific processed product, current nutrient analysis, bird stage, energy and amino-acid balance, fiber, fat, calcium, available phosphorus, vitamins, minerals, ingredient pricing, and professional ration formulation."
       },
 
       metadata: {
