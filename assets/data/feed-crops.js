@@ -67108,7 +67108,7 @@ mechanicalProcessingSuitabilityScore:
 
           notRecommendedAs:
             "A replacement for complete poultry feed, a sole protein source, a universal feed ingredient at fixed percentages, or unrestricted continuous pasture without rotational management."
-        }
+        
       },
 
       practicalUse: {
@@ -67191,6 +67191,7 @@ mechanicalProcessingSuitabilityScore:
             "Support feed recommendations",
             "Maintain consistency across all feed crops"
           ]
+        }
         
       },
       
