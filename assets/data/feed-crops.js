@@ -87104,7 +87104,3118 @@ perennial:
     summary:
       "Grain Sorghum (Milo) is a warm-season cereal grown for its small, energy-rich grain. It is one of the most drought-tolerant grain crops available and can provide long-term stored feed, whole seed-head enrichment, cracked grain, ground grain, sprouted grain, and postharvest gleaning opportunities for backyard chicken keepers. Grain Sorghum is best suited as a supplemental energy ingredient because it is relatively low in calcium and essential amino acids compared with a complete poultry ration.",
 
-    chickenUse: {
+    ///////////////////////////
+//
+//  Grain Sorghum - What can chickens eat?
+//
+//////////////////////////
+
+
+feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Grain Sorghum?",
+
+        answerLabel:
+          "Yes — mature Grain Sorghum grain and seed heads are safe supplemental feeds for established adult chickens.",
+
+        quickAnswer:
+          "Chickens can safely eat clean, mature Grain Sorghum as whole grain, cracked grain, coarsely ground grain, and mature seed heads. Grain Sorghum is especially useful as a high-energy supplement, drought-resilient homestead grain, stored winter feed, and flock-enrichment crop. Because it is primarily a starch-rich cereal grain with incomplete protein, low calcium, and cultivar-dependent tannin concerns, it should be offered in moderation and should never replace a nutritionally complete poultry ration.",
+
+        detailedAnswer:
+          "Grain Sorghum is one of the most practical warm-season cereal grains for established adult chickens, especially in hot or drought-prone climates. Its mature grain contains concentrated starch energy, moderate protein, useful minerals, and B vitamins. Whole mature panicles can also provide valuable behavioral enrichment by allowing chickens to remove the grain through natural pecking and foraging. However, Grain Sorghum is not a complete poultry feed. It is relatively low in lysine, methionine remains limiting, it does not provide adequate calcium, and high-tannin cultivars may reduce palatability and nutrient utilization. Grain Sorghum should therefore be used as a measured supplement, occasional enrichment item, stored seasonal feed, or properly formulated feed ingredient rather than as unrestricted staple food. Only correctly identified mature Grain Sorghum should be used; fresh green Sorghum plants, forage Sorghum, Sudangrass, and Sorghum-Sudangrass hybrids are not interchangeable with mature dry grain.",
+
+        primaryFeedingRole:
+          "High-energy cereal-grain supplement and whole-panicle enrichment crop",
+
+        secondaryFeedingRoles: [
+          "Cold-weather calorie supplementation",
+          "Stored winter grain",
+          "Natural pecking enrichment",
+          "Seasonal garden-to-flock feed",
+          "Moderate supplemental protein",
+          "Drought-resilient homestead grain",
+          "Postharvest gleaning crop",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Highly recommended as a supplemental crop for established adult chickens when a documented low-tannin or tannin-free variety is selected and mature grain is harvested, dried, stored, and fed correctly.",
+
+        recommendationStrength:
+          "high",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-grain-sorghum-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe-with-cultivar-and-storage-precautions",
+
+        trafficLightRating:
+          "green",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "minimal",
+
+        primaryProductType:
+          "mature-cereal-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          true,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          4,
+
+        adultChickenSuitabilityScore:
+          5,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          3,
+
+        nutritionalUsefulnessScore:
+          4,
+
+        energyValueScore:
+          5,
+
+        proteinValueScore:
+          2,
+
+        enrichmentValueScore:
+          5,
+
+        winterValueScore:
+          5,
+
+        storageValueScore:
+          5,
+
+        preparationSimplicityScore:
+          3,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          3,
+
+        confinedFlockValueScore:
+          5,
+
+        pasturedFlockValueScore:
+          3,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Grain Sorghum's practical value as a supplemental backyard-chicken feed rather than as a complete ration.",
+          "The high energy, enrichment, winter, and storage scores reflect the value of mature dry grain and whole mature panicles.",
+          "The feeding-safety score is reduced because cultivar identity, tannin concentration, mold, mycotoxins, ergot, treated seed, and confusion with vegetative Sorghum types require careful management.",
+          "Young-chick suitability is intentionally low because chicks should rely on an age-appropriate complete starter ration and should not receive whole grain as a routine backyard supplement.",
+          "Whole mature panicles provide excellent enrichment but make exact portion measurement more difficult.",
+          "Loose grain is easier to measure but requires more harvesting, drying, threshing, winnowing, cleaning, and storage labor."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean, mature Grain Sorghum and mature panicles from a correctly identified grain-producing variety are safe for established adult chickens when offered as supplemental food. The principal concerns are high-tannin cultivars, excessive grain intake, displacement of complete feed, mold, mycotoxins, ergot, poor drying, storage deterioration, chemically treated planting seed, and confusion with fresh green forage Sorghum, Sudangrass, or Sorghum-Sudangrass hybrids.",
+
+        whyModerationIsRequired:
+          "Grain Sorghum is a concentrated starch-energy grain that chickens may preferentially consume instead of their balanced feed. Excessive intake can dilute protein, lysine, methionine, calcium, available phosphorus, vitamins, and trace minerals supplied by the complete ration and may contribute to excessive calorie intake.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Grain Sorghum",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound, fully developed whole grain from a correctly identified Grain Sorghum variety may be offered to established adult chickens as a measured supplement. A documented low-tannin or tannin-free cultivar is preferred."
+          },
+
+          {
+            item:
+              "Clean threshed Grain Sorghum",
+
+            status:
+              "safe",
+
+            explanation:
+              "Properly dried, winnowed, cleaned, and sorted mature grain is safe when free from mold, ergot, insects, rodents, chemicals, and abnormal discoloration."
+          },
+
+          {
+            item:
+              "Freshly cracked mature Grain Sorghum",
+
+            status:
+              "safe",
+
+            explanation:
+              "Cracked mature grain is safe when freshly prepared from clean sound grain. Cracking increases exposed surface area, so processed grain should be stored for less time than intact grain."
+          },
+
+          {
+            item:
+              "Coarsely ground mature Grain Sorghum",
+
+            status:
+              "safe-with-storage-precautions",
+
+            explanation:
+              "Ground grain may be used promptly as a supplemental ingredient or in a properly formulated ration. Grinding increases moisture exposure, dust, oxidation, and spoilage risk."
+          },
+
+          {
+            item:
+              "Fresh mature Grain Sorghum panicles",
+
+            status:
+              "safe",
+
+            explanation:
+              "A physiologically mature panicle containing fully developed, sound grain may be offered soon after harvest when it is clean, dry on the surface, correctly identified, and free from disease or deterioration."
+          },
+
+          {
+            item:
+              "Thoroughly dried mature Grain Sorghum panicles",
+
+            status:
+              "safe",
+
+            explanation:
+              "Dried whole panicles provide excellent enrichment when fully cured and protected from mold, ergot, insects, rodents, wild-bird contamination, and moisture."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, colorants, polymers, or other treatments that are not intended for animal consumption."
+          },
+
+          {
+            item:
+              "Moldy or musty grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, heating, damp clumping, abnormal discoloration, or fungal growth indicates unsafe deterioration. Questionable material should be discarded rather than blended with sound grain."
+          },
+
+          {
+            item:
+              "Ergot-contaminated grain or panicles",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Panicles showing ergot honeydew, abnormal fungal structures, replaced kernels, or suspected ergot contamination should not be fed."
+          },
+
+          {
+            item:
+              "Fresh green or stressed Sorghum vegetation",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Young, rapidly regrowing, drought-stressed, wilted, damaged, frost-affected, or otherwise stressed Sorghum vegetation may contain dangerous cyanogenic compounds or elevated nitrate concentrations."
+          },
+
+          {
+            item:
+              "Forage Sorghum, Sudangrass, or Sorghum-Sudangrass hybrids",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "These crops are not interchangeable with mature dry Grain Sorghum seed and require separate forage-safety management because of prussic-acid and nitrate risks."
+          },
+
+          {
+            item:
+              "Rodent-contaminated grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Grain contaminated by rodent urine, feces, nesting material, hair, or carcasses should be discarded because of disease and contamination risks."
+          },
+
+          {
+            item:
+              "Heated, damp, insect-infested, or fermenting stored grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Heating, condensation, fermentation odors, extensive insect activity, or persistent dampness indicates unstable storage and possible spoilage or mycotoxin development."
+          },
+
+          {
+            item:
+              "Diseased or rotting Grain Sorghum panicles",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Panicles affected by grain mold, extensive fungal growth, soft decay, weathering, ergot, or suspicious discoloration should not be fed."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Grain Sorghum is energy dense and may cause birds to reduce consumption of their nutritionally complete feed."
+          },
+
+          {
+            hazard:
+              "High-tannin cultivars",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Condensed tannins can reduce palatability, protein digestion, energy utilization, and overall poultry-feed value. Grain color alone does not reliably establish tannin concentration."
+          },
+
+          {
+            hazard:
+              "Mold and mycotoxins",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Grain mold before harvest or poor postharvest drying and storage may cause deterioration and mycotoxin contamination that cannot always be detected visually."
+          },
+
+          {
+            hazard:
+              "Ergot contamination",
+
+            riskLevel:
+              "low-but-serious",
+
+            explanation:
+              "Ergot infection may contaminate flowering panicles and mature grain with fungal material that is unsafe for poultry."
+          },
+
+          {
+            hazard:
+              "Cyanogenic compounds and nitrates in vegetative tissue",
+
+            riskLevel:
+              "high-for-unsafe-plant-material",
+
+            explanation:
+              "Fresh green, young, damaged, wilted, drought-stressed, frost-affected, or rapidly regrowing Sorghum vegetation may present prussic-acid or nitrate hazards and should not be treated as equivalent to mature dry grain."
+          },
+
+          {
+            hazard:
+              "Flock competition",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "A single whole panicle may create crowding or allow dominant birds to monopolize access."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Loose grain scattered into damp litter may become soiled, moldy, fermented, or attractive to rodents and insects."
+          },
+
+          {
+            hazard:
+              "Entanglement from hanging materials",
+
+            riskLevel:
+              "low-but-preventable",
+
+            explanation:
+              "String, wire, netting, or other materials used to suspend panicles must not form loops or loose sections that could trap feet, legs, wings, necks, or wild birds."
+          }
+        ],
+
+        emergencyUse:
+          "Grain Sorghum can provide concentrated short-term energy, but it is not a nutritionally complete emergency ration. It should be combined with an appropriate complete poultry feed or a ration formulated to meet poultry requirements.",
+
+        veterinaryCaution:
+          "Birds showing weakness, reduced intake, abnormal droppings, tremors, impaired coordination, respiratory distress, sudden production changes, or illness after consuming questionable Sorghum grain or plant material should receive prompt poultry-veterinary evaluation."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "excellent-as-a-supplement",
+
+          preferredForms: [
+            "Whole mature Grain Sorghum",
+            "Freshly threshed mature grain",
+            "Fresh mature panicles",
+            "Thoroughly dried mature panicles",
+            "Freshly cracked grain",
+            "Coarsely ground grain used promptly"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for mature Grain Sorghum and whole-panicle enrichment. Birds should continue receiving unrestricted access to an appropriate complete ration unless their entire diet has been professionally formulated."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "valuable-but-moderation-required",
+
+          benefits: [
+            "Concentrated supplemental energy",
+            "Cold-weather calorie support",
+            "Behavioral enrichment",
+            "Useful cereal-grain ingredient",
+            "Moderate supplemental protein"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Excessive intake may displace amino acids, vitamins, minerals, and calcium",
+            "High grain intake may reduce complete-feed consumption"
+          ],
+
+          guidance:
+            "Laying hens may receive Grain Sorghum as a supplement, but a complete layer feed and an appropriate calcium program must remain the nutritional foundation."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult supplements may receive small amounts, but their nutritionally complete grower or developer ration should remain dominant. Whole grain should not become a major feed."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Whole Grain Sorghum is relatively hard, energy dense, and inappropriate as a routine backyard chick supplement.",
+
+          possibleException:
+            "A qualified poultry nutritionist may use appropriately processed Grain Sorghum ingredients in a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering whole grain as an informal backyard treat.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Whole-grain particle size",
+            "Incomplete amino-acid balance",
+            "Need for age-appropriate particle size",
+            "Need for appropriately sized grit when insoluble whole grain is offered",
+            "Reduced digestibility compared with properly processed starter feeds",
+            "Potential cultivar-related tannin concerns"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Grain Sorghum can be used successfully in balanced meat-bird diets, but published inclusion levels assume that the complete ration has been professionally formulated for energy, protein, amino acids, minerals, vitamins, and performance. Backyard keepers should not copy a commercial inclusion percentage into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume the same clean mature grain forms as adult hens. Portion control remains important because roosters may gain unnecessary weight from unrestricted energy-dense grain."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-required",
+
+          guidance:
+            "Breeding birds may receive Grain Sorghum as a supplement, but reproductive performance depends upon complete and balanced nutrition. Excessive grain intake should not dilute essential amino acids, vitamins, minerals, or controlled body condition."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may require smaller supplemental amounts because Grain Sorghum provides concentrated dietary energy. Body condition and complete-feed intake should be monitored."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Grain Sorghum supplies useful energy and moderate protein but does not provide the complete amino-acid profile needed for feather growth. A balanced ration with adequate usable protein and amino acids remains more important than simply increasing grain intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Grain Sorghum's energy density may appear useful for an underweight bird, but illness can change nutritional and digestive needs. It should not replace diagnostic care, hydration support, or a veterinarian-recommended recovery diet."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature whole Grain Sorghum",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fully mature grain is the standard poultry-feed product and stores exceptionally well when harvested and dried correctly."
+          },
+
+          {
+            part:
+              "Freshly threshed mature grain",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Clean threshed grain provides concentrated starch energy and is easily measured during feeding."
+          },
+
+          {
+            part:
+              "Fresh mature panicles",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Fresh mature panicles provide outstanding behavioral enrichment while allowing birds to remove grain naturally."
+          },
+
+          {
+            part:
+              "Thoroughly dried mature panicles",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Properly dried panicles store well and remain one of the easiest ways to provide winter enrichment."
+          },
+
+          {
+            part:
+              "Freshly cracked mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Cracking improves accessibility while shortening storage life because additional surface area is exposed."
+          },
+
+          {
+            part:
+              "Freshly ground mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Ground grain blends more uniformly into feed mixtures but should be prepared only in small quantities because storage stability declines."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Leaves",
+
+            reason:
+              "Leaves are not the intended poultry-feed product and should not be confused with mature grain."
+          },
+
+          {
+            part:
+              "Stems",
+
+            reason:
+              "Highly fibrous with little practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Roots",
+
+            reason:
+              "No practical poultry-feed use."
+          },
+
+          {
+            part:
+              "Empty harvested panicles",
+
+            reason:
+              "Useful for compost but contain little remaining nutrition."
+          },
+
+          {
+            part:
+              "Fresh green forage",
+
+            reason:
+              "Green Sorghum vegetation should never be treated as equivalent to mature grain because cyanogenic-compound and nitrate concerns may exist."
+          }
+        ],
+
+        ediblePartSummary:
+          "Nearly all of Grain Sorghum's poultry value comes from the mature grain itself rather than the vegetative portions of the plant."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Whole mature panicles",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Behavioral enrichment and seasonal treats."
+          },
+
+          {
+            form:
+              "Whole mature Grain Sorghum",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Measured supplemental feeding."
+          },
+
+          {
+            form:
+              "Freshly threshed mature grain",
+
+            rating:
+              "excellent",
+
+            bestUse:
+              "Accurately measured supplemental grain."
+          },
+
+          {
+            form:
+              "Freshly cracked grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Birds needing easier access to the grain."
+          },
+
+          {
+            form:
+              "Freshly ground grain",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Feed ingredient used immediately after grinding."
+          }
+        ],
+
+        acceptableForms: [
+          "Fresh mature panicles",
+          "Naturally dried mature panicles",
+          "Whole mature Grain Sorghum",
+          "Freshly threshed grain",
+          "Freshly cracked grain",
+          "Freshly ground grain"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Ground grain",
+
+            concern:
+              "Shortened storage life and greater moisture exposure."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            concern:
+              "Reduced storage stability after processing."
+          },
+
+          {
+            form:
+              "Whole panicles",
+
+            concern:
+              "Require thorough drying and careful inspection before storage."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Moldy grain",
+          "Musty grain",
+          "Ergot-contaminated grain",
+          "Mycotoxin-suspect grain",
+          "Fresh green Sorghum vegetation",
+          "Forage Sorghum",
+          "Sudangrass",
+          "Sorghum-Sudangrass hybrids",
+          "Fermenting grain",
+          "Wet stored grain",
+          "Rodent-contaminated grain",
+          "Heavily insect-damaged grain"
+        ],
+
+        wholeHeadAdvantages: [
+          "Excellent enrichment",
+          "Encourages natural foraging",
+          "Minimal processing",
+          "Reduced threshing labor",
+          "Very enjoyable for backyard flocks",
+          "Excellent winter activity"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Simple to mix with other feeds",
+          "Reduced competition between birds",
+          "More precise ration management"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Hard to estimate actual consumption",
+          "Dominant birds may monopolize access",
+          "Grain loss beneath feeders is common",
+          "Requires removal if mold develops"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires threshing",
+          "Requires cleaning",
+          "Requires drying",
+          "Requires rodent-proof storage",
+          "Greater spoilage potential if scattered into damp litter"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Not all Grain Sorghum cultivars produce identical poultry feed. Tannin concentration, grain color, grain size, maturity, bird resistance, and nutritional value vary substantially among cultivar groups.",
+
+        blackOilSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Modern low-tannin or tannin-free Grain Sorghum cultivars are generally the preferred choice for poultry feeding because they provide better palatability and nutrient utilization."
+        },
+
+        confectionSunflower: {
+          recommended:
+            true,
+
+          explanation:
+            "Traditional food-grade Grain Sorghum cultivars may also provide excellent poultry feed when mature, low in tannins, and properly harvested."
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Decorative or specialty Sorghum selections may produce usable grain, but bird resistance, tannin concentration, maturity, and grain production vary considerably."
+        },
+
+        pollenFreeCultivars: {
+          recommended:
+            false,
+
+          explanation:
+            "Not applicable. Grain Sorghum does not have a meaningful pollen-free cultivar category comparable to ornamental Sunflowers."
+        },
+
+        branchingCultivars: {
+          advantages: [
+            "Multiple productive tillers",
+            "Potentially greater total grain production under favorable conditions"
+          ]
+        },
+
+        giantSingleHeadCultivars: {
+          advantages: [
+            "Large compact panicles",
+            "Excellent whole-panicle enrichment"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate",
+
+        preparationSummary:
+          "Grain Sorghum requires no cooking or detoxification when clean mature grain from a suitable low-tannin variety is used. The most important preparation steps are correct crop identification, full grain maturity, careful harvest, thorough drying, cleaning, inspection, and safe storage.",
+
+        requiredPreparation: [
+          "Confirm that the crop is Grain Sorghum intended for mature grain production.",
+          "Allow panicles and grain to reach full physiological maturity.",
+          "Harvest before severe bird, weather, mold, or shattering losses occur.",
+          "Dry panicles and grain thoroughly with strong airflow.",
+          "Thresh, winnow, clean, and sort grain when loose grain is desired.",
+          "Inspect carefully for ergot, mold, insects, discoloration, and contamination.",
+          "Store only completely dry, cool, sound grain."
+        ],
+
+        optionalPreparation: [
+          "Offer intact mature panicles for enrichment.",
+          "Crack grain for easier access.",
+          "Grind small quantities close to feeding time.",
+          "Separate damaged grain during cleaning.",
+          "Use a grain-moisture meter when practical.",
+          "Save sound seed from an appropriate open-pollinated low-tannin cultivar."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking",
+          "Boiling",
+          "Roasting",
+          "Fermentation",
+          "Heat treatment"
+        ],
+
+        preparationMistakes: [
+          "Confusing mature Grain Sorghum with forage Sorghum, Sudangrass, or Sorghum-Sudangrass hybrids.",
+          "Feeding fresh green or stressed Sorghum vegetation.",
+          "Harvesting before grain maturity.",
+          "Storing damp panicles or grain.",
+          "Assuming grain color proves low tannin content.",
+          "Grinding large quantities long before feeding.",
+          "Leaving mature panicles exposed to prolonged rain.",
+          "Failing to inspect for ergot, grain mold, insects, or storage heating."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "high-energy-high-starch-cereal-grain-supplement",
+
+        nutritionSummary:
+          "Mature Grain Sorghum is an energy-oriented cereal grain containing substantial starch, moderate protein, modest fat, phosphorus, potassium, magnesium, iron, zinc, and B vitamins. Modern low-tannin varieties may provide metabolizable energy comparable with Corn in properly formulated poultry diets. Its primary practical value comes from concentrated carbohydrate energy rather than complete protein, calcium, or balanced-ration nutrition.",
+
+        compositionBasis:
+          "Values and feeding characteristics vary substantially among low-tannin, tannin-containing, food-grade, feed-grain, bird-resistant, waxy, white, yellow, red, bronze, brown, and specialty Grain Sorghum cultivars. Whole grain, cracked grain, ground grain, sprouts, commercial Sorghum products, and fresh vegetative Sorghum must not be treated as nutritionally or physically identical.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Concentrated dietary energy",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Grain Sorghum stores most of its usable energy as starch and can function as a major cereal-energy ingredient in properly formulated poultry diets."
+          },
+
+          {
+            nutrientRole:
+              "High starch concentration",
+
+            importance:
+              "very-high",
+
+            explanation:
+              "Mature grain commonly contains a high proportion of starch, making it useful for measured energy supplementation and winter storage."
+          },
+
+          {
+            nutrientRole:
+              "Moderate plant protein",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Grain Sorghum contributes moderate crude protein, but its protein quality is incomplete because lysine is low and methionine remains limiting."
+          },
+
+          {
+            nutrientRole:
+              "Comparable energy potential to Corn",
+
+            importance:
+              "high",
+
+            explanation:
+              "Modern low-tannin Grain Sorghum varieties can provide energy value approaching Corn when grain quality, processing, and complete ration formulation are appropriate."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Grain Sorghum can contribute phosphorus, potassium, magnesium, iron, zinc, and other minerals, although it does not provide a complete poultry mineral balance."
+          },
+
+          {
+            nutrientRole:
+              "B vitamins",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "The grain contains several B vitamins, but their presence does not make Grain Sorghum a nutritionally complete ration."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Carbohydrate energy",
+          "Moderate crude protein",
+          "Phosphorus",
+          "Potassium",
+          "Magnesium",
+          "Iron",
+          "Zinc",
+          "B vitamins",
+          "Modest fat"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate, commonly around approximately 9% to 13% of dry matter, with substantial variation among cultivars, growing environments, and analytical methods.",
+
+          fat:
+            "Modest, commonly around approximately 3% to 4% of dry matter.",
+
+          fiber:
+            "Relatively low compared with hulled cereal grains, although cultivar, seed coat, and processing influence the measured value.",
+
+          starch:
+            "High, commonly around approximately 65% to 75% of dry matter.",
+
+          calcium:
+            "Insufficient to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Present, but a meaningful portion may be associated with phytate and should not be assumed to be completely available.",
+
+          energy:
+            "High, with modern low-tannin varieties often providing energy value comparable with Corn in balanced poultry diets."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Grain Sorghum retains the intact seed coat, germ, and starchy endosperm. The intact grain generally stores more reliably and is suitable for established adult chickens when appropriately sized grit is available.",
+
+          dehulledKernel:
+            "Dehulled or decorticated Sorghum has part of the outer grain layer removed. This may reduce some fiber, pigments, phenolic compounds, and tannins while changing nutrient concentration and storage behavior.",
+
+          practicalMeaning:
+            "A pound of whole Grain Sorghum should not automatically be treated as nutritionally identical to a pound of dehulled, polished, cracked, or ground Sorghum."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Grain Sorghum functions primarily as an intact starch-rich cereal grain with relatively good storage stability.",
+
+          sunflowerMeal:
+            "Ground Grain Sorghum is the same grain reduced to smaller particles rather than an oil-extraction byproduct. Grinding changes particle size, mixing behavior, dust production, digestibility, and storage stability without correcting the grain's amino-acid or mineral limitations.",
+
+          practicalMeaning:
+            "Research involving finely ground Sorghum in a complete formulated ration must not automatically be used to justify informal feeding quantities of whole grain or intact panicles."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cultivar",
+          "Tannin concentration",
+          "Seed-coat characteristics",
+          "Grain color",
+          "Low-tannin versus high-tannin type",
+          "Growing environment",
+          "Fertility",
+          "Water availability",
+          "Heat stress",
+          "Grain maturity",
+          "Grain-mold pressure",
+          "Postharvest drying",
+          "Storage duration",
+          "Storage temperature",
+          "Moisture exposure",
+          "Insect damage",
+          "Dehulling",
+          "Cracking",
+          "Grinding",
+          "Sprouting",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Excellent Supplemental Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Grain Sorghum is a starch-rich cereal capable of supplying concentrated energy in a compact, dry, and easily stored form."
+          },
+
+          {
+            title:
+              "Exceptional Drought Resilience",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Grain Sorghum is among the most drought-tolerant cereal grains and may produce a usable harvest under hot, water-limited conditions where Field Corn becomes less reliable."
+          },
+
+          {
+            title:
+              "Strong Winter-Storage Value",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Thoroughly dried whole grain can remain useful for many months without refrigeration when protected from moisture, insects, rodents, mold, and temperature extremes."
+          },
+
+          {
+            title:
+              "Outstanding Whole-Panicle Enrichment",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A mature panicle encourages sustained pecking, grain removal, scratching, investigation, and natural feed-seeking behavior."
+          },
+
+          {
+            title:
+              "Useful Low-Processing Path",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Sound mature panicles can be harvested, dried, inspected, and offered for enrichment without threshing, grinding, cooking, or fermentation."
+          },
+
+          {
+            title:
+              "Flexible Feeding Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "The crop can be offered as intact mature panicles, loose whole grain, freshly cracked grain, or freshly ground grain used as part of a properly balanced feed mixture."
+          },
+
+          {
+            title:
+              "Moderate Supplemental Protein",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Grain Sorghum contributes moderate protein, although its lysine and methionine limitations prevent it from serving as a complete protein source."
+          },
+
+          {
+            title:
+              "Comparable Cereal-Grain Function to Corn",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Modern low-tannin varieties may substitute for part of the Corn component in professionally balanced poultry diets when differences in nutrient composition are considered."
+          },
+
+          {
+            title:
+              "Good Non-Electric Storage Potential",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Clean, fully dried intact grain requires no refrigeration or freezing for ordinary storage."
+          },
+
+          {
+            title:
+              "Multipurpose Homestead Value",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "A planting may provide poultry grain, human-food grain from suitable cultivars, seed-saving opportunities, seasonal screening, drought-resilient biomass, compost material, and crop-rotation value."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Pecking activity",
+
+            explanation:
+              "Chickens must locate and remove individual grains from the mature panicle."
+          },
+
+          {
+            benefit:
+              "Extended feeding time",
+
+            explanation:
+              "Whole-panicle feeding generally takes longer than consuming the same amount of loose grain from a dish."
+          },
+
+          {
+            benefit:
+              "Natural feed manipulation",
+
+            explanation:
+              "Birds can pull, turn, scratch, and investigate the panicle rather than simply swallowing loose grain."
+          },
+
+          {
+            benefit:
+              "Cold-season activity",
+
+            explanation:
+              "Stored panicles can provide structured activity when weather or confinement reduces access to insects and vegetation."
+          },
+
+          {
+            benefit:
+              "Reduced boredom",
+
+            explanation:
+              "Appropriately placed panicles may occupy birds and diversify the feeding environment, although enrichment does not correct overcrowding, inadequate space, or poor flock management."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Can be offered through several separate feeding stations",
+          "Can be stored and used during periods of limited fresh forage",
+          "Whole panicles can reduce household processing labor",
+          "Loose grain permits better measurement than whole panicles",
+          "Can be introduced in very small quantities",
+          "Can be removed easily when offered in a dish or holder",
+          "Provides a durable winter enrichment product",
+          "Supports measured energy supplementation"
+        ],
+
+        homesteadBenefits: [
+          "Warm-season annual suited to crop rotation",
+          "High heat tolerance",
+          "Exceptional drought tolerance",
+          "Normally established by direct seeding",
+          "Mature panicles can be harvested without specialized machinery",
+          "Whole-panicle use avoids threshing",
+          "Dried grain requires no refrigeration",
+          "Some cultivars serve both poultry-feed and human-food purposes",
+          "Open-pollinated cultivars may support seed saving",
+          "Stalks and empty panicles can contribute compost biomass",
+          "Tall plantings may provide seasonal privacy screening"
+        ],
+
+        benefitSummary:
+          "Grain Sorghum's greatest overall value comes from combining concentrated cereal energy, drought resilience, long-term storage, whole-panicle enrichment, and flexible processing. It is less valuable as a primary protein source, calcium source, fresh forage crop, or direct replacement for complete poultry feed."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Grain Sorghum does not supply the complete balance of protein, essential amino acids, calcium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Grain Sorghum protein is low in lysine, and methionine remains limiting. It cannot independently meet poultry amino-acid requirements."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Grain Sorghum contains too little calcium to support eggshell production and must not replace complete layer feed or an appropriate calcium program."
+          },
+
+          {
+            title:
+              "Cultivar-Dependent Tannin Concern",
+
+            severity:
+              "high",
+
+            explanation:
+              "High-tannin Grain Sorghum may reduce palatability, protein digestion, amino-acid availability, and energy utilization. Grain color alone does not reliably identify tannin concentration."
+          },
+
+          {
+            title:
+              "Mold, Ergot, and Mycotoxin Risk",
+
+            severity:
+              "high",
+
+            explanation:
+              "Humid growing conditions, delayed harvest, insect injury, poor drying, and unsafe storage can allow fungal deterioration, ergot contamination, and mycotoxins."
+          },
+
+          {
+            title:
+              "Vegetative-Tissue Safety Confusion",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Mature dry grain must not be confused with fresh green Sorghum vegetation, forage Sorghum, Sudangrass, or Sorghum-Sudangrass hybrids, which may present prussic-acid or nitrate hazards."
+          },
+
+          {
+            title:
+              "Portioning Whole Panicles Is Imprecise",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Grain fill, panicle size, flock competition, spillage, and actual consumption vary among panicles. Whole-panicle feeding is best treated as enrichment rather than precise ration delivery."
+          },
+
+          {
+            title:
+              "Postharvest Processing Can Be Labor Intensive",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Loose-grain use requires drying, threshing, winnowing, cleaning, sorting, inspection, and secure storage."
+          },
+
+          {
+            title:
+              "Wild-Bird and Rodent Attraction",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Developing panicles, harvested grain, spilled grain, and stored panicles can attract wild birds, mice, rats, squirrels, and other animals."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Flock size, age, body condition, activity, weather, base ration, cultivar, tannin level, grain form, and production purpose differ too greatly for one crop-specific serving percentage to be applied safely to every backyard flock."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete amino-acid profile",
+          "Lysine is limiting",
+          "Methionine remains limiting",
+          "Phosphorus availability may be reduced partly by phytate",
+          "High-tannin cultivars may reduce nutrient utilization",
+          "Vitamin and mineral balance is incomplete",
+          "Protein concentration is moderate rather than high",
+          "Primarily energy-oriented rather than protein-oriented",
+          "Nutritional composition varies among cultivars",
+          "Whole grain and processed grain are not physically identical"
+        ],
+
+        practicalLimitations: [
+          "Whole panicles are difficult to measure accurately",
+          "Dominant birds may monopolize a single panicle",
+          "Grain may be scattered into litter",
+          "Spilled grain can attract rodents",
+          "Damp panicles may mold",
+          "Loose grain requires threshing and cleaning",
+          "Cracked grain stores less reliably",
+          "Ground grain should be used promptly",
+          "Wild birds may remove much of the harvest",
+          "Humid weather may slow grain dry-down",
+          "Dense panicles may conceal damp or moldy grain",
+          "Bird-resistant high-tannin cultivars may have reduced feed value",
+          "Cultivar identity may be uncertain",
+          "Fresh vegetative material requires separate safety evaluation"
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Supplying all required protein",
+          "Serving as the flock's primary calcium source",
+          "Correcting a poorly balanced homemade ration",
+          "Providing unrestricted free-choice grain",
+          "Supporting young chicks as a staple food",
+          "Treating all Sorghum species and hybrids as interchangeable",
+          "Using fresh green Sorghum as ordinary poultry forage",
+          "Assuming grain color proves tannin concentration",
+          "Guaranteeing increased egg production",
+          "Guaranteeing reduced winter feed cost",
+          "Providing predictable pounds of usable grain per plant",
+          "Providing a universal safe feeding percentage"
+        ],
+
+        limitationSummary:
+          "Grain Sorghum is highly useful because it is energy dense, drought resilient, storable, and enriching. Its value depends on correct crop identification, low-tannin cultivar selection, complete-feed protection, thorough drying, safe storage, and careful rejection of moldy, ergot-contaminated, treated, or otherwise questionable grain."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "moderate-and-cultivar-dependent",
+
+        requiresDetoxification:
+          false,
+
+        cookingRequired:
+          false,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Condensed tannins",
+
+            concernLevel:
+              "moderate-to-high-in-tannin-containing-cultivars",
+
+            explanation:
+              "Some Grain Sorghum cultivars contain condensed tannins concentrated primarily in the outer grain layers. High tannin levels can reduce palatability, bind dietary protein, inhibit digestive enzymes, lower amino-acid availability, and reduce metabolizable-energy value. Modern low-tannin or tannin-free cultivars are generally preferred for poultry feeding."
+          },
+
+          {
+            factor:
+              "Phytate",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "A portion of the phosphorus and other minerals in Grain Sorghum may be associated with phytate, which reduces their availability to poultry. This is primarily a ration-formulation concern rather than a reason to prohibit limited supplemental feeding."
+          },
+
+          {
+            factor:
+              "Kafirin protein digestibility",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Much of Grain Sorghum's storage protein is present as kafirin. Its structure and interaction with starch and other grain components can reduce protein and starch digestibility compared with ideal poultry-feed ingredients, particularly after some forms of heat processing."
+          },
+
+          {
+            factor:
+              "Incomplete amino-acid balance",
+
+            concernLevel:
+              "high-when-used-as-a-major-feed",
+
+            explanation:
+              "Grain Sorghum is low in lysine, while methionine also remains limiting. This is not an acute toxin, but it becomes a serious nutritional problem when the grain displaces a properly balanced ration."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Trypsin inhibitors",
+
+            explanation:
+              "Mature Grain Sorghum does not require the same routine heat treatment used to deactivate the major trypsin-inhibitor concern in raw mature Soybeans."
+          },
+
+          {
+            factor:
+              "Lectin toxicity",
+
+            explanation:
+              "Clean mature Grain Sorghum is not treated as a lectin-limited raw legume requiring cooking before ordinary supplemental adult-chicken use."
+          },
+
+          {
+            factor:
+              "Beta-glucans",
+
+            explanation:
+              "Grain Sorghum does not carry the same soluble beta-glucan concern commonly associated with Barley and Oats."
+          },
+
+          {
+            factor:
+              "Cyanogenic compounds in mature dry grain",
+
+            explanation:
+              "The principal cyanogenic-compound concern applies to young, damaged, wilted, drought-stressed, frost-affected, or rapidly regrowing vegetative Sorghum tissue rather than clean mature dry grain."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Dehulling or decortication",
+
+            effect:
+              "May remove part of the outer grain layer and reduce tannins, pigments, fiber, and some minerals while changing nutrient concentration and storage behavior."
+          },
+
+          {
+            process:
+              "Cracking",
+
+            effect:
+              "Reduces particle size and improves physical access while increasing exposed surface area, dust, moisture absorption, and storage deterioration."
+          },
+
+          {
+            process:
+              "Grinding",
+
+            effect:
+              "Improves mixing uniformity and may improve access to starch, but fine grinding can increase dust, reduce storage stability, and promote selective feeding or feed wastage."
+          },
+
+          {
+            process:
+              "Heat processing",
+
+            effect:
+              "May alter starch availability and physical characteristics, but excessive or inappropriate heating can strengthen protein interactions and reduce digestibility. Heat treatment is not required to make clean mature grain safe."
+          },
+
+          {
+            process:
+              "Sprouting",
+
+            effect:
+              "Changes starch, enzyme activity, moisture content, and handling characteristics but creates additional sanitation and mold risks. Sprouting does not convert Grain Sorghum into a complete poultry feed."
+          }
+        ],
+
+        antinutritionalSummary:
+          "Clean mature Grain Sorghum does not require routine cooking or detoxification before supplemental feeding. Its most important antinutritional concerns are cultivar-dependent tannins, phytate, kafirin-related digestibility, and incomplete amino-acid balance rather than an acute toxin in sound mature grain."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Grain Sorghum should complement a complete ration rather than be used as the nutritional foundation.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "The complete feed supplies balanced protein, amino acids, vitamins, minerals, and calcium that Grain Sorghum cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock or breeder feed",
+
+            relationship:
+              "The formulated ration provides the nutritional balance needed by mixed or breeding flocks while Grain Sorghum remains an optional energy supplement."
+          },
+
+          {
+            feedType:
+              "Protein-oriented formulated ingredients",
+
+            relationship:
+              "Appropriately processed Soybean meal, Field Peas, Cowpeas, or other protein ingredients can help address protein and amino-acid needs that Grain Sorghum alone cannot meet."
+          },
+
+          {
+            feedType:
+              "Other cereal grains within a formulated ration",
+
+            relationship:
+              "Corn, Wheat, Barley, Oats, and Millet provide different starch, energy, fiber, fat, and protein characteristics. Combining several grains informally does not by itself create a balanced ration."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source address the calcium deficiency of Grain Sorghum."
+          },
+
+          {
+            feedType:
+              "Fresh leafy forage",
+
+            relationship:
+              "Kale, Collards, Clover, Alfalfa, Comfrey, and other appropriate forage crops provide fresh-leaf and enrichment characteristics that mature Grain Sorghum grain does not."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient calcium",
+          "Insufficient lysine",
+          "Insufficient methionine",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Excessive total grain intake",
+          "High tannin concentration",
+          "Mold or mycotoxin contamination",
+          "Poor-quality complete feed",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed"
+        ],
+
+        pairingWarning:
+          "Combining Grain Sorghum with several other homegrown ingredients does not automatically produce a nutritionally complete diet. Significant ration inclusion requires calculation of energy, protein, digestible amino acids, starch, fat, fiber, calcium, available phosphorus, sodium, vitamins, trace minerals, tannin effects, and total feed intake.",
+
+        practicalBackyardApproach:
+          "For the ordinary backyard flock, the simplest and safest approach is to maintain an age-appropriate complete ration as the primary feed and use clean low-tannin Grain Sorghum in measured supplemental amounts or as occasional whole-panicle enrichment."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Grain Sorghum should be viewed as a supplement and enrichment crop rather than as a staple feed. Every feeding method should protect consumption of the flock's complete ration.",
+
+        primaryMethods: [
+          {
+            method:
+              "Whole mature panicles",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "One of the most natural ways to feed Grain Sorghum. Birds remove individual grains gradually while pecking, extending feeding time and providing excellent enrichment."
+          },
+
+          {
+            method:
+              "Loose whole grain",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "The easiest method for accurately measuring supplemental Grain Sorghum."
+          },
+
+          {
+            method:
+              "Freshly threshed and cleaned grain",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Clean loose grain is easy to inspect, measure, mix in small supplemental amounts, and store in rodent-resistant containers."
+          },
+
+          {
+            method:
+              "Freshly cracked grain",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Useful when smaller particle size is desired, but cracked grain should not be stored for long periods."
+          },
+
+          {
+            method:
+              "Freshly ground grain",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Best used promptly as an ingredient in a balanced feed mixture rather than offered as a dusty free-choice meal."
+          }
+        ],
+
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce any new supplemental grain gradually while observing complete-feed intake, droppings, flock behavior, body condition, and acceptance."
+        },
+
+        observationChecklist: [
+          "Complete feed consumption remains normal.",
+          "Birds do not ignore balanced feed.",
+          "Droppings remain normal.",
+          "No unusual selective feeding develops.",
+          "No evidence of excessive weight gain develops over time.",
+          "Grain is consumed before spoilage occurs.",
+          "No mold develops on remaining panicles.",
+          "Rodents are not attracted to leftover grain."
+        ],
+
+        wholeHeadManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Longest enrichment duration",
+            "Natural pecking behavior",
+            "Minimal processing",
+            "Simple harvest"
+          ],
+
+          managementTips: [
+            "Hang securely without creating entanglement hazards.",
+            "Provide multiple panicles for larger flocks.",
+            "Remove wet, moldy, ergot-affected, or deteriorating panicles immediately.",
+            "Inspect regularly for spoilage and contamination."
+          ]
+        },
+
+        looseSeedManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Easy to measure",
+            "Easy to mix",
+            "Simple storage"
+          ],
+
+          managementTips: [
+            "Feed only what birds will consume promptly.",
+            "Avoid scattering grain into wet litter.",
+            "Store remaining grain in rodent-proof containers.",
+            "Inspect regularly for insects, mold, heating, and abnormal odors."
+          ]
+        },
+
+        gritConsiderations: {
+          gritHelpful:
+            true,
+
+          explanation:
+            "Adult chickens consuming whole Grain Sorghum generally benefit from access to appropriate insoluble grit whenever adequate natural grit is unavailable."
+        },
+
+        feedingFrequency: {
+          dailyStaple:
+            false,
+
+          supplemental:
+            true,
+
+          enrichment:
+            true,
+
+          seasonal:
+            true,
+
+          explanation:
+            "Frequency depends upon the complete diet, flock condition, weather, production goals, activity level, and total grain intake rather than a fixed calendar schedule."
+        },
+
+        seasonalUse: {
+          spring:
+            "Use stored grain conservatively while new forage becomes available and complete feed remains primary.",
+
+          summer:
+            "Use moderately during hot weather because birds generally require less supplemental dietary energy and uneaten grain can spoil quickly in humid conditions.",
+
+          autumn:
+            "Excellent use of freshly harvested mature panicles and newly dried grain.",
+
+          winter:
+            "A valuable stored enrichment and energy crop when offered in measured amounts alongside complete feed."
+        },
+
+        weatherConsiderations: {
+          coldWeather:
+            "Useful supplemental cereal energy, although it remains less calorie dense than high-oil seeds such as Sunflower.",
+
+          hotWeather:
+            "Avoid excessive grain supplementation when birds are eating less complete feed because of heat stress.",
+
+          rainyWeather:
+            "Protect mature panicles and harvested grain from prolonged moisture before feeding.",
+
+          humidClimate:
+            "Monitor carefully for grain mold, ergot, slow drying, heating, insects, and moisture migration during storage."
+        },
+
+        managementWarnings: [
+          "Do not allow supplemental grain to replace balanced feed.",
+          "Avoid unrestricted free-choice feeding.",
+          "Use a documented low-tannin or tannin-free cultivar when possible.",
+          "Do not feed fresh green or stressed Sorghum vegetation as though it were mature grain.",
+          "Protect harvested grain from rodents, insects, wild birds, and moisture.",
+          "Discard moldy, ergot-contaminated, treated, heated, or otherwise questionable material.",
+          "Monitor body condition and complete-feed intake throughout the year."
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Measured supplemental cereal grain for established adult chickens",
+          "Whole-panicle flock enrichment",
+          "Cold-weather energy supplementation",
+          "Stored winter grain",
+          "Drought-resilient homestead grain production",
+          "Hot-climate cereal production",
+          "Postharvest gleaning after the crop is fully mature and safely managed",
+          "Small quantities of freshly cracked grain",
+          "Small quantities of freshly ground grain used promptly",
+          "One calculated ingredient in a professionally formulated poultry ration",
+          "Seasonal garden-to-flock feeding",
+          "Low-processing whole-panicle use",
+          "Rodent-protected dry-grain storage",
+          "Crop rotation with broadleaf crops",
+          "Seed saving from suitable open-pollinated low-tannin varieties"
+        ],
+
+        lessSuitableUses: [
+          "Replacing complete poultry feed",
+          "Serving as the flock's primary protein source",
+          "Serving as the primary calcium source for laying hens",
+          "Routine supplemental feeding for young chicks",
+          "Unrestricted free-choice grain feeding",
+          "Fresh green poultry forage",
+          "Feeding forage Sorghum, Sudangrass, or Sorghum-Sudangrass hybrids",
+          "Feeding an unidentified Sorghum cultivar",
+          "Using an undocumented high-tannin cultivar",
+          "Producing grain in cool, shaded, or short-season locations without an adapted early cultivar",
+          "Producing dependable grain in persistently wet or poorly drained soil",
+          "Long-term storage without dependable drying and pest protection",
+          "Precise ration delivery through whole-panicle feeding",
+          "Homemade ration formulation without nutritional calculations",
+          "Using chemically treated planting seed as feed",
+          "Salvaging moldy, ergot-contaminated, heated, or questionable grain"
+        ],
+
+        backyardRecommendation:
+          "Grain Sorghum is a strong backyard supplemental crop where summers are warm, sunlight is abundant, and the keeper can identify a suitable low-tannin grain cultivar, protect developing panicles from birds, dry the harvest thoroughly, and store it safely. Whole mature panicles offer the simplest low-processing pathway and provide excellent enrichment, while loose whole grain offers better portion control. The crop is especially valuable in hot or drought-prone regions, but the flock's age-appropriate complete ration must remain the nutritional foundation.",
+
+        commercialRecommendation:
+          "Grain Sorghum is a well-established commercial poultry-feed ingredient and may replace part of another cereal-energy ingredient when its nutrient composition, tannin status, grain quality, particle size, price, and availability are incorporated into complete ration formulation. Commercial inclusion rates should not be transferred directly to informal backyard mixtures because balanced commercial diets also account for metabolizable energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, enzymes, processing effects, and total expected feed intake."
+      },
+
+      storage: {
+        storageSuitability:
+          "excellent-when-thoroughly-dried",
+
+        preferredStorageForms: [
+          {
+            form:
+              "Whole intact Grain Sorghum",
+
+            suitability:
+              "excellent",
+
+            explanation:
+              "Whole mature grain stores exceptionally well when thoroughly dried because the intact seed coat protects the starchy kernel from moisture, insects, and physical damage better than processed grain."
+          },
+
+          {
+            form:
+              "Thoroughly dried mature panicles",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Whole mature panicles can be stored successfully for seasonal enrichment when fully cured, kept dry, protected from pests, and inspected regularly."
+          },
+
+          {
+            form:
+              "Freshly cracked grain",
+
+            suitability:
+              "moderate",
+
+            explanation:
+              "Cracked grain stores less reliably because additional surface area is exposed to moisture, insects, oxidation, and spoilage."
+          },
+
+          {
+            form:
+              "Coarsely ground grain",
+
+            suitability:
+              "limited",
+
+            explanation:
+              "Ground grain absorbs moisture more readily, produces dust, and should generally be used soon after grinding."
+          },
+
+          {
+            form:
+              "Sprouted Grain Sorghum",
+
+            suitability:
+              "poor-for-long-storage",
+
+            explanation:
+              "Sprouted grain is a fresh feed that should be consumed promptly and should not be stored for extended periods."
+          }
+        ],
+
+        dryingRequirements: {
+          thoroughDryingRequired:
+            true,
+
+          targetCondition:
+            "Grain and panicles must be completely dry, cool, stable, and free of internal moisture before enclosed storage.",
+
+          goodDryingPractices: [
+            "Harvest fully mature grain during relatively dry weather whenever practical.",
+            "Keep harvested panicles off damp soil and wet surfaces.",
+            "Arrange panicles in shallow layers or suspend individually.",
+            "Maintain strong airflow around harvested material.",
+            "Turn or rearrange drying panicles as needed.",
+            "Protect drying grain from rain, condensation, and nighttime dew.",
+            "Allow warm grain to cool before sealing containers.",
+            "Inspect panicle interiors as well as exposed grain.",
+            "Use a grain-moisture meter when practical.",
+            "Do not assume surface dryness means the interior is fully cured."
+          ],
+
+          unsafeDryingPractices: [
+            "Stacking damp panicles in deep piles",
+            "Sealing freshly harvested grain before it has cooled",
+            "Drying in poorly ventilated humid buildings",
+            "Leaving harvested grain exposed to repeated rainfall",
+            "Mixing damp grain with previously dried grain",
+            "Ignoring heat buildup inside storage containers",
+            "Storing grain with visible mold or ergot"
+          ],
+
+          dryingFailureIndicators: [
+            "Condensation inside containers",
+            "Unexpected warmth",
+            "Musty odor",
+            "Fermentation odor",
+            "Visible mold",
+            "Grain clumping",
+            "Persistent internal dampness",
+            "Rapid insect activity"
+          ]
+        },
+
+        storageEnvironment: {
+          idealConditions: [
+            "Cool",
+            "Dry",
+            "Dark",
+            "Well ventilated before sealing",
+            "Protected from temperature swings",
+            "Protected from condensation",
+            "Protected from direct sunlight",
+            "Protected from rodents",
+            "Protected from insects",
+            "Separated from chemicals and treated seed"
+          ],
+
+          avoidConditions: [
+            "Hot sheds with large temperature swings",
+            "Damp basements",
+            "Open grain bags accessible to rodents",
+            "Direct sunlight",
+            "Areas exposed to roof leaks",
+            "Containers holding residual moisture",
+            "Storage beside pesticides, fuels, solvents, or treated seed",
+            "Locations where spilled grain cannot be cleaned easily"
+          ]
+        },
+
+        containerGuidance: {
+          looseSeed: [
+            "Use clean, dry, food-safe or feed-safe containers.",
+            "Use tight-fitting lids after grain is fully dried and cooled.",
+            "Choose containers that prevent rodent access.",
+            "Use manageable container sizes for easy inspection.",
+            "Label each container with crop, cultivar when known, harvest date, and inspection notes.",
+            "Avoid introducing moist scoops or wet hands."
+          ],
+
+          wholeHeads: [
+            "Use breathable sacks, racks, shelves, crates, or hanging storage while final curing continues.",
+            "Do not compress panicles tightly together.",
+            "Maintain airflow between panicles.",
+            "Protect from mice, rats, squirrels, and wild birds.",
+            "Move fully cured panicles into protected storage.",
+            "Inspect panicle interiors regularly for mold, ergot, insects, or heating."
+          ],
+
+          kernelsAndProcessedSeed: [
+            "Store cracked or ground grain in small airtight containers after confirming it is completely dry.",
+            "Keep away from heat and direct sunlight.",
+            "Use older batches before newer batches.",
+            "Avoid storing large quantities after cracking or grinding.",
+            "Discard any lot showing mold, heating, moisture damage, or abnormal odor."
+          ]
+        },
+
+        inventoryManagement: {
+          firstInFirstOutRecommended:
+            true,
+
+          batchSeparationRecommended:
+            true,
+
+          labelingRecommended:
+            true,
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Cultivar when known",
+            "Harvest date",
+            "Drying completion date",
+            "Storage form",
+            "Container date",
+            "Last inspection date",
+            "Observed condition"
+          ],
+
+          guidance:
+            "Keep harvest lots separate whenever practical. A questionable batch should never be blended into sound grain because blending hides deterioration rather than correcting it."
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect frequently during the first several weeks because hidden moisture, insects, heating, or mold problems usually appear early during storage.",
+
+          longTermStorage:
+            "Continue periodic inspection throughout storage, increasing inspection frequency during warm or humid weather.",
+
+          inspectionChecklist: [
+            "No condensation",
+            "No unusual warmth",
+            "No musty odor",
+            "No fermentation odor",
+            "No visible mold",
+            "No ergot contamination",
+            "No grain clumping",
+            "No rodent evidence",
+            "No excessive insect activity",
+            "No leaking containers",
+            "No moisture entering the storage area"
+          ]
+        },
+
+        storageLifeGuidance:
+          "A single guaranteed storage duration should not be assigned because storage life depends on grain moisture, cultivar, processing, storage temperature, humidity, sanitation, oxygen exposure, insects, rodents, and container quality. Condition-based inspection is more reliable than relying only on elapsed time.",
+
+        disposalGuidance:
+          "Material suspected of mold, ergot, mycotoxins, chemical contamination, rodent contamination, fermentation, heating, or severe insect damage should be discarded in a manner that prevents access by poultry, livestock, pets, wildlife, and children.",
+
+        storageSummary:
+          "Grain Sorghum stores best as thoroughly dried intact grain. Every processing step that increases exposed surface area generally reduces long-term storage stability."
+      },
+
+      spoilageAndContamination: {
+        overallRiskLevel:
+          "moderate",
+
+        primarySpoilageRisks: [
+          {
+            risk:
+              "Grain mold",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Insufficient drying",
+              "High humidity",
+              "Condensation",
+              "Water leaks",
+              "Poor airflow",
+              "Delayed harvest",
+              "Damp storage"
+            ],
+
+            warningSigns: [
+              "Visible mold",
+              "Musty odor",
+              "Abnormal discoloration",
+              "Grain clumping",
+              "Heating",
+              "Soft or deteriorating grain"
+            ],
+
+            response:
+              "Discard affected and suspicious grain. Do not attempt to make moldy grain safe by drying, cleaning, grinding, or blending it with sound grain."
+          },
+
+          {
+            risk:
+              "Ergot contamination",
+
+            likelihood:
+              "low",
+
+            primaryCauses: [
+              "Flower infection",
+              "Humid flowering conditions",
+              "Delayed harvest"
+            ],
+
+            warningSigns: [
+              "Abnormal fungal structures replacing grain",
+              "Honeydew residue",
+              "Dark hardened fungal bodies",
+              "Suspicious panicles"
+            ],
+
+            response:
+              "Discard contaminated panicles or grain immediately. Do not attempt to salvage ergot-contaminated material."
+          },
+
+          {
+            risk:
+              "Storage heating",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Grain stored too wet",
+              "Poor ventilation",
+              "Warm grain sealed too quickly",
+              "Biological activity"
+            ],
+
+            warningSigns: [
+              "Unexpected warmth",
+              "Condensation",
+              "Musty odor",
+              "Rapid quality decline"
+            ],
+
+            response:
+              "Remove the grain from flock access and discard material whenever feed safety cannot be confidently confirmed."
+          },
+
+          {
+            risk:
+              "Insect infestation",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Warm storage",
+              "Open containers",
+              "Existing insects",
+              "Poor sanitation",
+              "Long-term storage"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Excess dust",
+              "Damaged grain",
+              "Rapid grain loss"
+            ],
+
+            response:
+              "Evaluate the severity of infestation. Grain showing extensive insect damage, mold, moisture, contamination, or heating should be discarded."
+          }
+        ],
+
+        contaminationRisks: [
+          {
+            contaminant:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Artificial coloring",
+              "Treatment labels",
+              "Commercial planting-seed packaging",
+              "Unknown seed origin"
+            ],
+
+            guidance:
+              "Never feed planting seed unless it is clearly documented as untreated and suitable for food or feed use."
+          },
+
+          {
+            contaminant:
+              "Rodent urine or feces",
+
+            riskLevel:
+              "critical",
+
+            identificationClues: [
+              "Droppings",
+              "Urine odor",
+              "Chewed containers",
+              "Nesting material",
+              "Dead rodents"
+            ],
+
+            guidance:
+              "Discard contaminated grain and thoroughly clean the storage area before storing new feed."
+          },
+
+          {
+            contaminant:
+              "Wild-bird droppings",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Visible droppings",
+              "Bird access to drying grain",
+              "Perching above stored grain"
+            ],
+
+            guidance:
+              "Protect harvested grain from wild birds and discard heavily contaminated material."
+          },
+
+          {
+            contaminant:
+              "Pesticide drift or direct spray",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Known pesticide application",
+              "Unknown harvest interval",
+              "Direct chemical exposure"
+            ],
+
+            guidance:
+              "Do not feed grain when pesticide identity or feed-use restrictions are uncertain."
+          },
+
+          {
+            contaminant:
+              "Fuel, oil, solvent, or chemical fumes",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Chemical odor",
+              "Storage beside fuels or solvents",
+              "Spill exposure"
+            ],
+
+            guidance:
+              "Discard contaminated grain. Odor removal does not make it safe."
+          },
+
+          {
+            contaminant:
+              "Wet or dirty litter",
+
+            riskLevel:
+              "moderate",
+
+            identificationClues: [
+              "Grain mixed with manure",
+              "Moist clumping",
+              "Ammonia odor",
+              "Visible dirt"
+            ],
+
+            guidance:
+              "Do not encourage birds to consume old Grain Sorghum that has remained in contaminated litter."
+          }
+        ],
+
+        sensoryInspectionLimitations:
+          "Appearance and odor provide useful screening but cannot detect every mycotoxin, pesticide residue, pathogen, or chemical contaminant. Grain with a known contamination history should never be fed simply because it appears normal.",
+
+        salvageWarning:
+          "Questionable grain should not be salvaged by washing, drying again, grinding, mixing with clean feed, or feeding smaller amounts.",
+
+        spoilageSummary:
+          "Grain Sorghum stores exceptionally well when harvested mature and thoroughly dried, but moisture, mold, ergot, insects, rodents, and poor storage practices can quickly make grain unsafe."
+      },
+
+      commonFeedingMistakes: {
+        mistakes: [
+          {
+            mistake:
+              "Replacing complete poultry feed with Grain Sorghum",
+
+            whyItHappens:
+              "Grain Sorghum is an established poultry-feed grain and may appear capable of replacing a substantial portion of purchased complete feed.",
+
+            whyItIsAProblem:
+              "Grain Sorghum is primarily a starch-energy ingredient. It does not provide sufficient lysine, methionine, calcium, vitamins, trace minerals, or overall nutrient balance to serve as a complete backyard poultry ration by itself.",
+
+            correction:
+              "Restore an age-appropriate complete poultry ration as the flock's primary feed and use Grain Sorghum only as a measured supplement or as one calculated ingredient in a professionally balanced ration."
+          },
+
+          {
+            mistake:
+              "Offering Grain Sorghum free choice",
+
+            whyItHappens:
+              "The grain stores well, is easy to pour into a feeder, and may be readily consumed by the flock.",
+
+            whyItIsAProblem:
+              "Unrestricted access may cause chickens to fill up on starch-rich grain and reduce their consumption of nutritionally complete feed.",
+
+            correction:
+              "Offer only measured supplemental quantities and monitor whether normal complete-feed intake remains unchanged."
+          },
+
+          {
+            mistake:
+              "Assuming all Grain Sorghum cultivars have equal feed value",
+
+            whyItHappens:
+              "Grain Sorghum is often discussed as though every red, white, bronze, brown, or yellow grain type is nutritionally interchangeable.",
+
+            whyItIsAProblem:
+              "Cultivars can differ substantially in tannin concentration, palatability, protein digestibility, starch availability, grain size, maturity, and resistance to birds and grain mold.",
+
+            correction:
+              "Choose a documented low-tannin or tannin-free Grain Sorghum cultivar intended for food or feed production whenever possible."
+          },
+
+          {
+            mistake:
+              "Using grain color as proof of tannin concentration",
+
+            whyItHappens:
+              "Dark grain is often assumed to contain tannins while light-colored grain is assumed to be tannin free.",
+
+            whyItIsAProblem:
+              "Grain color alone does not reliably determine whether a cultivar contains condensed tannins or how strongly those compounds may affect poultry-feed value.",
+
+            correction:
+              "Use cultivar documentation, seed-supplier information, plant-breeding records, or laboratory analysis rather than grain color alone."
+          },
+
+          {
+            mistake:
+              "Treating fresh green Sorghum vegetation as equivalent to mature dry grain",
+
+            whyItHappens:
+              "The leaves and stalks come from the same crop and may appear to be ordinary green forage.",
+
+            whyItIsAProblem:
+              "Young, damaged, wilted, drought-stressed, frost-affected, or rapidly regrowing Sorghum vegetation may contain dangerous cyanogenic compounds or elevated nitrate concentrations.",
+
+            correction:
+              "Restrict ordinary poultry feeding to clean mature grain and mature panicles. Do not offer fresh vegetative Sorghum without separate crop-specific forage-safety guidance."
+          },
+
+          {
+            mistake:
+              "Confusing Grain Sorghum with forage Sorghum or Sudangrass",
+
+            whyItHappens:
+              "Grain Sorghum, forage Sorghum, Sweet Sorghum, Sudangrass, and Sorghum-Sudangrass hybrids may look similar during vegetative growth.",
+
+            whyItIsAProblem:
+              "These crop types have different intended uses, maturity patterns, forage hazards, and feeding-management requirements. Mature dry Grain Sorghum seed cannot be used to justify unrestricted access to other Sorghum vegetation.",
+
+            correction:
+              "Confirm crop identity, cultivar purpose, and seed source before feeding any harvested material."
+          },
+
+          {
+            mistake:
+              "Feeding chemically treated planting seed",
+
+            whyItHappens:
+              "Unused planting seed may resemble ordinary feed grain and may remain after the growing season.",
+
+            whyItIsAProblem:
+              "Planting seed may be treated with fungicides, insecticides, polymers, colorants, or other products not approved for poultry consumption.",
+
+            correction:
+              "Never feed planting seed unless it is clearly documented as untreated and suitable for food or feed use."
+          },
+
+          {
+            mistake:
+              "Storing Grain Sorghum before it is completely dry",
+
+            whyItHappens:
+              "The exposed grain surface may feel dry even though moisture remains within dense panicles or recently harvested grain.",
+
+            whyItIsAProblem:
+              "Residual moisture can cause heating, condensation, fermentation, mold development, insect activity, grain deterioration, and possible mycotoxin contamination.",
+
+            correction:
+              "Dry grain and panicles thoroughly with strong airflow, allow them to cool, and confirm stable moisture before enclosed storage."
+          },
+
+          {
+            mistake:
+              "Feeding moldy or ergot-contaminated grain",
+
+            whyItHappens:
+              "A keeper may attempt to remove visibly damaged kernels or assume that chickens can safely sort questionable grain.",
+
+            whyItIsAProblem:
+              "Fungal contamination may extend beyond visible damage, and mycotoxins or ergot alkaloids cannot reliably be removed by hand sorting, washing, grinding, or feeding smaller amounts.",
+
+            correction:
+              "Discard the affected batch whenever mold, ergot, heating, mustiness, abnormal discoloration, or contamination cannot be confidently ruled out."
+          },
+
+          {
+            mistake:
+              "Grinding large quantities far in advance",
+
+            whyItHappens:
+              "Preparing one large batch appears more convenient than grinding small amounts repeatedly.",
+
+            whyItIsAProblem:
+              "Grinding exposes additional surface area to humidity, oxygen, insects, contamination, and spoilage while also increasing dust and reducing storage stability.",
+
+            correction:
+              "Store Grain Sorghum whole and process only manageable quantities close to feeding or ration-mixing time."
+          },
+
+          {
+            mistake:
+              "Scattering excessive grain into litter",
+
+            whyItHappens:
+              "Scattering grain is commonly used to encourage scratching and flock activity.",
+
+            whyItIsAProblem:
+              "Uneaten grain may become mixed with manure, damp bedding, mud, spilled water, insects, and rodent contamination.",
+
+            correction:
+              "Scatter only a small amount that the flock will consume promptly, use dry areas, and remove accumulated residue when practical."
+          },
+
+          {
+            mistake:
+              "Offering only one whole panicle to a large flock",
+
+            whyItHappens:
+              "A single panicle appears to contain enough grain for several birds.",
+
+            whyItIsAProblem:
+              "Dominant birds may monopolize the panicle while lower-ranking birds receive little or no access.",
+
+            correction:
+              "Provide several widely spaced panicles or separate feeding stations and observe whether subordinate birds can feed without persistent interference."
+          },
+
+          {
+            mistake:
+              "Copying commercial ration inclusion levels into a homemade mixture",
+
+            whyItHappens:
+              "Published poultry studies may report successful use of Grain Sorghum at substantial percentages of complete commercial diets.",
+
+            whyItIsAProblem:
+              "Those diets are formulated with analyzed ingredients and calculated amino acids, minerals, vitamins, energy, enzymes, and other nutrients. A household grain mixture does not automatically reproduce that nutritional balance.",
+
+            correction:
+              "Use published inclusion levels only within competent ration formulation based on current ingredient analysis and poultry nutrient requirements."
+          },
+
+          {
+            mistake:
+              "Assuming Grain Sorghum eliminates the need for grit",
+
+            whyItHappens:
+              "The grain is small enough for adult chickens to swallow whole.",
+
+            whyItIsAProblem:
+              "Swallowing whole grain does not eliminate the bird's need for appropriate grinding material within the gizzard when adequate natural grit is unavailable.",
+
+            correction:
+              "Provide established adult chickens with access to appropriately sized insoluble grit whenever whole grain is fed and sufficient natural grit is not available."
+          }
+        ],
+
+        mistakeSummary:
+          "The most serious Grain Sorghum feeding mistakes involve allowing it to replace complete feed, using an unknown or high-tannin cultivar, confusing mature grain with potentially hazardous green Sorghum vegetation, feeding treated or contaminated grain, and storing grain before it is completely dry."
+      },
+
+      troubleshooting: {
+        flockIgnoresWholeSeeds: {
+          possibleCauses: [
+            "Birds are unfamiliar with the grain",
+            "The grain is unusually hard",
+            "The flock already has adequate feed",
+            "The cultivar has reduced palatability",
+            "Tannin concentration is high",
+            "Grain quality is poor",
+            "The grain is stale, moldy, musty, or contaminated"
+          ],
+
+          recommendedActions: [
+            "Confirm that the grain is clean, mature, untreated, and correctly identified.",
+            "Introduce a small amount gradually.",
+            "Try freshly cracked grain for established adult birds.",
+            "Verify that the cultivar is documented as low tannin or tannin free.",
+            "Do not withhold complete feed to force consumption.",
+            "Discard the batch if odor, appearance, moisture, or treatment history is questionable."
+          ]
+        },
+
+        flockIgnoresWholeHead: {
+          possibleCauses: [
+            "The birds do not recognize the panicle as food",
+            "Grain is immature",
+            "Grain is difficult to remove",
+            "The panicle is positioned poorly",
+            "The cultivar has tightly held grain",
+            "The panicle is stale, moldy, ergot affected, or otherwise spoiled"
+          ],
+
+          recommendedActions: [
+            "Expose a small section of mature grain by loosening several kernels manually.",
+            "Place the panicle at a comfortable pecking height.",
+            "Confirm full grain maturity and kernel fill.",
+            "Inspect carefully for mold, ergot, insects, heating, or abnormal odor.",
+            "Remove the panicle if the flock continues to avoid it."
+          ]
+        },
+
+        dominantBirdsMonopolizeFeed: {
+          possibleCauses: [
+            "Too few feeding stations",
+            "Panicles positioned too close together",
+            "Limited enclosure space",
+            "Strong existing flock hierarchy"
+          ],
+
+          recommendedActions: [
+            "Provide several panicles or dishes.",
+            "Space feeding locations widely apart.",
+            "Place some stations behind visual barriers.",
+            "Observe lower-ranking birds to confirm access."
+          ]
+        },
+
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "The Grain Sorghum supplement is too abundant, too frequent, or more accessible than the complete ration.",
+
+          recommendedActions: [
+            "Reduce or temporarily stop supplemental Grain Sorghum.",
+            "Provide fresh complete feed in adequate feeder space.",
+            "Confirm that the complete feed is not stale, wet, moldy, or inaccessible.",
+            "Monitor whether normal ration consumption resumes."
+          ]
+        },
+
+        looseDroppingsAfterIntroduction: {
+          possibleCauses: [
+            "Sudden dietary change",
+            "Excessive supplemental grain intake",
+            "Consumption of spoiled or contaminated grain",
+            "An unrelated health problem"
+          ],
+
+          recommendedActions: [
+            "Stop the new supplement temporarily.",
+            "Inspect the grain for mold, ergot, heating, unusual odor, or contamination.",
+            "Maintain access to clean water and complete feed.",
+            "Seek veterinary guidance when abnormal droppings persist or birds appear ill."
+          ]
+        },
+
+        storedSeedDevelopsCondensation: {
+          likelyCauses: [
+            "Grain was stored before fully dry",
+            "Warm grain was sealed",
+            "Temperature fluctuations caused moisture migration",
+            "The container is exposed to a damp environment"
+          ],
+
+          recommendedActions: [
+            "Remove the grain from flock access.",
+            "Inspect for heat, odor, mold, clumping, insects, and discoloration.",
+            "Discard questionable material.",
+            "Correct the drying and storage environment before storing a new batch."
+          ]
+        },
+
+        storedSeedSmellsUnusual: {
+          possibleInterpretations: [
+            "Musty odor may indicate mold.",
+            "Sweet-sour or alcohol-like odor may indicate fermentation.",
+            "Heated or toasted odor may indicate storage heating.",
+            "Chemical odor may indicate pesticide, fuel, solvent, or planting-seed contamination."
+          ],
+
+          recommendedAction:
+            "Do not feed Grain Sorghum with an abnormal odor. Discard it rather than attempting to air it out, wash it, grind it, or blend it with sound feed."
+        },
+
+        storedSeedContainsInsects: {
+          possibleCauses: [
+            "Grain entered storage with an existing infestation",
+            "The container is not insect resistant",
+            "Storage temperatures are warm",
+            "Grain has been stored for an extended period",
+            "Cracked or damaged kernels increased insect access"
+          ],
+
+          recommendedActions: [
+            "Separate the affected lot from sound grain.",
+            "Inspect for heating, mold, moisture, webbing, larvae, dust, and extensive kernel damage.",
+            "Discard heavily damaged or deteriorated grain.",
+            "Clean storage containers and surrounding areas before adding a new batch.",
+            "Improve sanitation, cooling, inspection, and container protection."
+          ]
+        },
+
+        wholeHeadsDevelopMold: {
+          possibleCauses: [
+            "Panicles were stored before fully cured",
+            "Dense panicle interiors retained moisture",
+            "Airflow was inadequate",
+            "Humidity remained high",
+            "Rain or condensation rewetted stored panicles",
+            "Panicles were packed too tightly"
+          ],
+
+          recommendedActions: [
+            "Remove all affected panicles from flock access.",
+            "Discard moldy or suspicious material.",
+            "Inspect neighboring panicles for hidden moisture and fungal growth.",
+            "Increase drying time and airflow for future harvests.",
+            "Do not attempt to salvage moldy panicles by removing only visible growth."
+          ]
+        },
+
+        grainPassesThroughDroppings: {
+          possibleCauses: [
+            "Birds lack adequate insoluble grit",
+            "Whole grain was introduced suddenly",
+            "Grain particle size is poorly suited to the bird",
+            "The digestive tract is moving feed unusually rapidly",
+            "An unrelated digestive or health problem is present"
+          ],
+
+          recommendedActions: [
+            "Confirm access to appropriately sized insoluble grit.",
+            "Reduce or temporarily stop whole-grain supplementation.",
+            "Try a small amount of freshly cracked grain for established adult birds.",
+            "Monitor complete-feed intake and flock condition.",
+            "Seek veterinary guidance when the problem persists or birds show illness, weight loss, or reduced production."
+          ]
+        }
+      },
+      faq: [
+        {
+          question:
+            "Can chickens eat Grain Sorghum?",
+
+          answer:
+            "Yes. Established adult chickens can eat clean, mature Grain Sorghum as whole grain, cracked grain, coarsely ground grain, or mature panicles. It should remain a measured supplement rather than replace complete poultry feed."
+        },
+
+        {
+          question:
+            "Is Grain Sorghum the same as Milo?",
+
+          answer:
+            "Milo is a common name used for Grain Sorghum grown primarily for its mature cereal grain. Regional terminology varies, so the crop and cultivar should still be correctly identified before feeding."
+        },
+
+        {
+          question:
+            "Can chickens eat whole Grain Sorghum?",
+
+          answer:
+            "Healthy established adult chickens can generally consume whole mature Grain Sorghum when it is introduced gradually and appropriate insoluble grit is available whenever sufficient natural grit is absent."
+        },
+
+        {
+          question:
+            "Can chickens eat Grain Sorghum panicles?",
+
+          answer:
+            "Yes. Clean, mature panicles containing fully developed grain can provide excellent pecking and foraging enrichment. They must be thoroughly dried for storage and discarded if they develop mold, ergot, heating, insects, or abnormal odors."
+        },
+
+        {
+          question:
+            "Can chickens eat Grain Sorghum straight from the garden?",
+
+          answer:
+            "They may eat mature sound grain or clean mature panicles after correct identification and inspection. Fresh green leaves, stems, young growth, wilted vegetation, drought-stressed vegetation, and frost-damaged Sorghum should not be treated as equivalent to mature dry grain."
+        },
+
+        {
+          question:
+            "Can chickens eat green Sorghum plants?",
+
+          answer:
+            "Fresh green Sorghum vegetation is not recommended as ordinary backyard poultry forage. Young, damaged, wilted, rapidly regrowing, drought-stressed, or frost-affected plants may contain dangerous cyanogenic compounds or elevated nitrate concentrations."
+        },
+
+        {
+          question:
+            "Is Grain Sorghum the same as forage Sorghum or Sudangrass?",
+
+          answer:
+            "No. Grain Sorghum, forage Sorghum, Sweet Sorghum, Sudangrass, and Sorghum-Sudangrass hybrids have different intended uses and safety-management requirements. Guidance for mature Grain Sorghum seed does not authorize feeding the green vegetation of these other crop types."
+        },
+
+        {
+          question:
+            "Are tannins in Grain Sorghum harmful to chickens?",
+
+          answer:
+            "High concentrations of condensed tannins can reduce palatability, protein digestion, amino-acid availability, and energy utilization. Modern low-tannin or tannin-free cultivars are generally preferred for poultry feeding."
+        },
+
+        {
+          question:
+            "Can I identify low-tannin Grain Sorghum by its color?",
+
+          answer:
+            "No. Grain color alone does not reliably establish tannin concentration. Cultivar documentation, seed-supplier information, breeding records, or laboratory analysis provide better evidence."
+        },
+
+        {
+          question:
+            "Can chicks eat Grain Sorghum?",
+
+          answer:
+            "Whole Grain Sorghum is not recommended as a routine backyard supplement for young chicks. Chicks should rely on an age-appropriate complete starter ration. Professionally formulated chick feed containing properly processed Sorghum is a different situation."
+        },
+
+        {
+          question:
+            "Do chickens need grit to eat Grain Sorghum?",
+
+          answer:
+            "Adult chickens consuming whole Grain Sorghum should have access to appropriately sized insoluble grit whenever they do not obtain adequate natural grit from their environment."
+        },
+
+        {
+          question:
+            "Should Grain Sorghum be cracked before feeding?",
+
+          answer:
+            "Healthy adult chickens can generally consume whole grain, so cracking is optional. Cracked grain may be easier to access, but processing shortens storage life by exposing more surface area to moisture, oxygen, insects, and contamination."
+        },
+
+        {
+          question:
+            "Can Grain Sorghum be ground into homemade chicken feed?",
+
+          answer:
+            "Ground Grain Sorghum can serve as an energy ingredient in a properly balanced ration. Grinding the grain does not make an otherwise incomplete homemade mixture nutritionally complete, and ground grain should be used promptly because it deteriorates faster."
+        },
+
+        {
+          question:
+            "Does Grain Sorghum need to be cooked before chickens eat it?",
+
+          answer:
+            "No. Clean mature Grain Sorghum does not require cooking, boiling, roasting, fermentation, or routine heat treatment before supplemental feeding."
+        },
+
+        {
+          question:
+            "Can Grain Sorghum replace Corn in chicken feed?",
+
+          answer:
+            "Modern low-tannin Grain Sorghum may replace part or sometimes much of the Corn component in a professionally formulated poultry ration. The substitution must account for actual energy, protein, amino acids, tannins, minerals, processing, and ingredient quality."
+        },
+
+        {
+          question:
+            "Can Grain Sorghum replace complete chicken feed?",
+
+          answer:
+            "No. Grain Sorghum does not provide the complete amino-acid, calcium, vitamin, mineral, and overall nutrient balance required for long-term poultry health and production."
+        },
+
+        {
+          question:
+            "Is Grain Sorghum a high-protein chicken feed?",
+
+          answer:
+            "No. Grain Sorghum contains moderate protein but is primarily an energy-oriented cereal grain. Its lysine content is low, methionine remains limiting, and its protein cannot independently satisfy poultry requirements."
+        },
+
+        {
+          question:
+            "Is Grain Sorghum good for laying hens?",
+
+          answer:
+            "It can provide supplemental energy and enrichment for laying hens, but it contains too little calcium and has an incomplete amino-acid balance. Complete layer feed and an appropriate calcium program must remain the nutritional foundation."
+        },
+
+        {
+          question:
+            "Will Grain Sorghum increase egg production?",
+
+          answer:
+            "Grain Sorghum does not guarantee increased egg production. Egg output depends on genetics, age, daylight, health, stress, water, body condition, and complete nutrition. Excess grain may reduce production if it displaces balanced layer feed."
+        },
+
+        {
+          question:
+            "Is Grain Sorghum useful during winter?",
+
+          answer:
+            "Yes. Thoroughly dried Grain Sorghum can provide measured supplemental energy and stored whole-panicle enrichment during winter. It should not compensate for inadequate shelter, frozen water, poor body condition, or an incomplete ration."
+        },
+
+        {
+          question:
+            "Can chickens eat Grain Sorghum every day?",
+
+          answer:
+            "A limited supplemental amount may fit some flock-management programs, but daily use is not automatically appropriate for every flock. Total grain intake, body condition, activity, weather, and complete-feed consumption must be considered."
+        },
+
+        {
+          question:
+            "How much Grain Sorghum should I feed my chickens?",
+
+          answer:
+            "There is no single crop-specific amount appropriate for every flock. Use Grain Sorghum as a controlled part of total supplemental feeding, protect complete-ration intake, and adjust according to flock size, age, activity, body condition, climate, grain form, and production purpose."
+        },
+
+        {
+          question:
+            "Can chickens eat moldy Grain Sorghum after the damaged kernels are removed?",
+
+          answer:
+            "No. Visible fungal damage may extend beyond what can be seen, and mycotoxins cannot reliably be removed through sorting, washing, drying, cooking, grinding, or mixing with clean grain. Discard questionable material."
+        },
+
+        {
+          question:
+            "Can chickens eat ergot-contaminated Grain Sorghum?",
+
+          answer:
+            "No. Grain or panicles showing ergot honeydew, replaced kernels, hardened fungal structures, or suspected ergot contamination should be discarded and kept away from poultry and other animals."
+        },
+
+        {
+          question:
+            "Can I feed leftover Grain Sorghum planting seed?",
+
+          answer:
+            "Only when the seed is clearly documented as untreated and suitable for food or feed. Seed treated with fungicides, insecticides, colorants, polymers, or other planting chemicals must never be fed."
+        },
+
+        {
+          question:
+            "Why are my chickens refusing Grain Sorghum?",
+
+          answer:
+            "Possible reasons include unfamiliarity, hard grain, poor kernel development, high tannin concentration, mold, ergot, insects, mustiness, contamination, or an unsuitable cultivar. Do not withhold complete feed to force consumption."
+        },
+
+        {
+          question:
+            "How should Grain Sorghum be stored?",
+
+          answer:
+            "Store only fully mature, thoroughly dried, cool grain in clean containers protected from moisture, condensation, insects, rodents, direct sunlight, chemicals, and temperature extremes. Inspect stored grain regularly."
+        }
+      ],
+
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Sorghum bicolor",
+
+          family:
+            "Poaceae"
+        },
+
+        researchNotes: [
+          "Grain Sorghum is a cereal grain whose primary poultry-feed value comes from starch and metabolizable energy rather than concentrated oil or complete protein.",
+
+          "Modern low-tannin Grain Sorghum may provide poultry-feed energy value approaching that of Corn when grain quality, processing, and complete ration formulation are appropriate.",
+
+          "Condensed tannins are concentrated mainly in particular outer grain layers and may reduce palatability, protein digestion, digestive-enzyme activity, amino-acid availability, and metabolizable energy.",
+
+          "Visible grain color alone does not reliably establish tannin concentration.",
+
+          "Grain Sorghum protein contains substantial kafirin storage proteins and remains limited in lysine, while methionine balance must also be addressed within the complete ration.",
+
+          "Grinding and other particle-size reduction may improve physical access to the grain but also increase dust, moisture exposure, contamination risk, and storage deterioration.",
+
+          "Whole mature grain and fresh or stressed vegetative Sorghum tissue have fundamentally different safety profiles.",
+
+          "Cyanogenic-compound and nitrate concerns are most strongly associated with young, damaged, wilted, drought-stressed, frost-affected, or rapidly regrowing vegetative tissue rather than clean mature dry grain.",
+
+          "Forage Sorghum, Sudangrass, Sweet Sorghum, and Sorghum-Sudangrass hybrids should not be treated as interchangeable with Grain Sorghum harvested for mature seed.",
+
+          "Preharvest grain mold, ergot, delayed harvest, poor drying, and unsafe storage may reduce feed quality and create hazards that ordinary visual inspection cannot always detect.",
+
+          "Published poultry inclusion rates normally describe complete diets formulated with analyzed ingredients rather than informal backyard mixtures.",
+
+          "The nutritional composition of Grain Sorghum varies with genetics, tannin status, growing environment, maturity, grain damage, storage conditions, and processing."
+        ],
+
+        plannerConsiderations: [
+          "Prefer Grain Sorghum cultivars documented as low tannin or tannin free.",
+
+          "Do not infer tannin concentration solely from grain color.",
+
+          "Distinguish Grain Sorghum from forage Sorghum, Sweet Sorghum, Sudangrass, and Sorghum-Sudangrass hybrids.",
+
+          "Treat mature grain and vegetative plant access as separate safety questions.",
+
+          "Give strong positive weight to hot climates, drought exposure, full sun, long warm seasons, dry-grain storage goals, and whole-panicle enrichment goals.",
+
+          "Reduce suitability in cool short-season climates unless an adapted early-maturing cultivar is available.",
+
+          "Reduce suitability where the user cannot dry grain thoroughly or protect it from rodents, insects, wild birds, and moisture.",
+
+          "Whole-panicle use should receive lower processing-labor penalties than loose threshed grain.",
+
+          "Loose whole grain should receive stronger portion-control and storage scores than intact panicles.",
+
+          "Cracked and ground forms should receive shorter storage-life assumptions than intact grain.",
+
+          "The planner should not recommend Grain Sorghum as a complete-feed replacement, sole protein source, primary calcium source, or routine young-chick supplement.",
+
+          "The planner should not present commercial ration-inclusion percentages as direct backyard serving recommendations.",
+
+          "Any suspected mold, ergot, mycotoxin exposure, treated seed, chemical contamination, rodent contamination, heating, fermentation, or abnormal odor should trigger rejection rather than a salvage recommendation.",
+
+          "Whole-panicle feeding should be classified primarily as enrichment because actual grain intake is difficult to measure precisely.",
+
+          "Where only approximately 100 square feet is available, Grain Sorghum should compete as a drought-resilient stored-grain and enrichment option rather than automatically outranking repeated-harvest forage crops."
+        ],
+
+        futureResearchTopics: [
+          "Backyard-scale usable grain yield among low-tannin Grain Sorghum cultivars",
+
+          "Comparative flock preference among white, yellow, red, bronze, and specialty low-tannin grain types",
+
+          "Practical relationships between cultivar tannin status and voluntary intake by backyard chickens",
+
+          "Whole-grain versus cracked-grain utilization in established adult backyard flocks",
+
+          "Whole-panicle enrichment duration by panicle size, grain density, and flock size",
+
+          "Small-scale drying methods suitable for humid climates",
+
+          "Practical moisture thresholds for long-term household storage of intact panicles",
+
+          "Comparative storage stability of whole, cracked, and ground Grain Sorghum under homestead conditions",
+
+          "Grain-mold and ergot incidence among backyard plantings across climate regions",
+
+          "Wild-bird losses and effective nonchemical protection methods for small plantings",
+
+          "Comparative land-use efficiency of Grain Sorghum, Proso Millet, Wheat, Barley, Oats, and Field Corn in approximately 100-square-foot plots",
+
+          "Economic value of whole-panicle use compared with threshing and processing loose grain",
+
+          "Effects of different insoluble-grit access levels on whole-grain utilization",
+
+          "Performance of early-maturing low-tannin cultivars in cool and short-season regions",
+
+          "Comparative drought productivity of Grain Sorghum and Field Corn under backyard-scale management"
+        ]
+      },
+
+      expertSummary: {
+        oneSentence:
+          "Grain Sorghum is an excellent drought-resilient supplemental cereal crop for established adult chickens because it combines concentrated starch energy, dependable dry-grain storage, and outstanding whole-panicle enrichment, but it must never replace a nutritionally complete poultry ration.",
+
+        oneParagraph:
+          "Grain Sorghum occupies an important place among practical homestead poultry crops because it can produce useful cereal grain under hot and water-limited conditions where Field Corn may be less dependable. Mature grain provides concentrated starch energy and moderate protein, while intact mature panicles offer a simple low-processing enrichment pathway that encourages natural pecking and foraging. Thoroughly dried whole grain also stores well without refrigeration. Its limitations remain significant: Grain Sorghum is low in lysine, methionine remains limiting, calcium is inadequate for laying hens, tannin concentration varies among cultivars, and mold, ergot, mycotoxins, treated seed, and improper storage can make grain unsafe. Fresh green Sorghum vegetation must not be treated as equivalent to mature dry grain. Grain Sorghum is therefore best used as a measured supplement, stored seasonal feed, whole-panicle enrichment crop, or calculated ingredient in a professionally balanced ration.",
+
+        recommendation:
+          "Highly recommended as a measured supplemental grain and whole-panicle enrichment crop where warm-season conditions, suitable cultivar selection, dependable drying, and protected storage are available.",
+
+        recommendationReasoning:
+          "Grain Sorghum combines exceptional drought tolerance, strong heat adaptation, concentrated cereal energy, excellent whole-grain storage, flexible feeding forms, and valuable whole-panicle enrichment. It is especially useful in hot or drought-prone regions and for keepers seeking a storable homegrown grain. Its principal limitations—cultivar-dependent tannins, incomplete amino-acid balance, insufficient calcium, possible grain mold and ergot, substantial postharvest labor for loose grain, wildlife pressure, and confusion between mature grain and potentially hazardous vegetative Sorghum—can be managed through careful cultivar selection, crop identification, harvest timing, drying, inspection, storage, portion control, and continued reliance on complete poultry feed.",
+
+        idealUseCase:
+          "A warm, sunny backyard or homestead with a sufficiently long growing season, periodic drought risk, secure crop protection, dependable grain-drying conditions, rodent-resistant storage, established adult chickens, and an owner seeking stored supplemental energy or low-processing whole-panicle enrichment.",
+
+        notRecommendedAs:
+          "A replacement for complete poultry feed, a sole protein source, a primary calcium source, an unrestricted free-choice grain, a routine young-chick supplement, ordinary fresh poultry forage, a justification for feeding forage Sorghum or Sudangrass, or a crop for keepers unable to identify cultivars, dry grain thoroughly, inspect for mold and ergot, or maintain protected storage."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small flock owners",
+          "Educators",
+          "Feed-planner engine",
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "summary",
+          "chickenUse",
+          "nutrition",
+          "harvest",
+          "storage",
+          "risks",
+          "usePaths",
+          "seasonalRoles",
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+          "Provide structured data for future calculators",
+          "Support FAQ generation",
+          "Support AI responses",
+          "Support printable crop sheets",
+          "Support comparison tables",
+          "Support feed recommendations",
+          "Maintain consistency across all feed crops"
+        ]
+      }
+    },
+
+    
+      chickenUse: {
       edibleParts: [
         "Mature whole grain",
         "Whole dried seed heads",
