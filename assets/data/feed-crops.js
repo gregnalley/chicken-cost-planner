@@ -125166,7 +125166,3079 @@ feedingReference: {
     summary:
       "Buckwheat is a rapidly establishing annual broadleaf pseudocereal grown for mature grain, short-season soil cover, weed suppression, pollinator support, beneficial-insect habitat, nutrient scavenging, and fast crop rotation. For backyard chickens, its strongest direct feed role is mature dry grain offered whole, cracked, ground, or incorporated as a measured ingredient within a balanced ration. Flowering stands may also increase insect-foraging opportunities, but green leaves and stems contain fagopyrins and should not be treated as unrestricted living poultry forage. Buckwheat matures quickly and performs on many low-fertility soils, yet it is sensitive to frost, waterlogging, prolonged drought, extreme flowering heat, herbicide carryover, lodging, uneven grain maturity, seed shattering, and volunteer reseeding.",
 
-    chickenUse: {
+    
+    ///////////////////////////
+//
+//  Buckwheat - What can chickens eat?
+//
+//////////////////////////
+
+
+    feedingReference: {
+      overview: {
+        commonQuestion:
+          "Can chickens eat Buckwheat?",
+
+        answerLabel:
+          "Yes — clean, mature Buckwheat grain can be fed to established adult chickens as a measured supplement.",
+
+        quickAnswer:
+          "Chickens can eat clean, mature Buckwheat grain in whole, cracked, coarsely ground, dehulled, or carefully sprouted forms. Buckwheat is a short-season pseudocereal that provides supplemental carbohydrate energy, moderate protein, useful amino-acid diversity, and seasonal stored grain. However, it is not a complete poultry feed, and its fibrous hull lowers the usable nutrient density of whole grain. Green leaves, flowers, and stems contain greater concentrations of photoreactive fagopyrins than mature grain and should not be treated as unrestricted poultry forage. Buckwheat should therefore remain a measured grain supplement or a properly formulated ration ingredient rather than a staple feed or free-access living forage crop.",
+
+        detailedAnswer:
+          "Buckwheat is a rapidly growing annual pseudocereal that can provide mature grain, short-season soil cover, weed suppression, pollinator support, postharvest gleaning, and limited sprouted-feed use. Clean mature grain may be consumed by established adult chickens as whole seed, cracked grain, dehulled groats, or a coarsely ground ingredient. Its protein concentration is moderate, and its amino-acid pattern can add diversity to mixed feeds, but Buckwheat does not provide the complete digestible amino acids, calcium, vitamins, minerals, or overall nutrient balance required as the flock's primary ration. Whole grain also contains a substantial fibrous hull that reduces usable energy density compared with dehulled groats. Buckwheat foliage, flowers, and other green tissues contain fagopyrins, photoreactive compounds associated with photosensitization in susceptible animals. Mature grain contains less fagopyrin than green plant material, but unrestricted grazing of dense living stands is not an appropriate primary chicken-feeding method. Buckwheat is therefore best used as a controlled mature-grain supplement, carefully managed sprouted feed, limited postharvest enrichment crop, or ingredient in a complete ration formulated for the bird's life stage.",
+
+        primaryFeedingRole:
+          "Short-season supplemental pseudocereal grain and diversified ration ingredient",
+
+        secondaryFeedingRoles: [
+          "Stored supplemental grain",
+          "Energy-oriented scratch-grain ingredient",
+          "Moderate supplemental protein",
+          "Amino-acid diversity within mixed feeds",
+          "Carefully managed sprouted-grain feed",
+          "Postharvest seed gleaning",
+          "Seasonal pecking and foraging enrichment",
+          "Ingredient in a professionally balanced poultry ration"
+        ],
+
+        overallRecommendation:
+          "Recommended as a measured mature-grain supplement for established adult chickens, with important restrictions concerning green plant tissues, hull fiber, complete-feed displacement, sprouting sanitation, harvest quality, and storage condition.",
+
+        recommendationStrength:
+          "moderate",
+
+        recommendedForBackyardFlocks:
+          true,
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        guideUrl:
+          "growing-buckwheat-for-chickens.html"
+      },
+
+      classification: {
+        safetyStatus:
+          "safe-grain-with-plant-tissue-cautions",
+
+        trafficLightRating:
+          "yellow",
+
+        feedingRole:
+          "supplement",
+
+        moderationRequired:
+          true,
+
+        processingRequirement:
+          "form-dependent",
+
+        primaryProductType:
+          "mature-pseudocereal-grain",
+
+        preferredBirdStage:
+          "established-adult-chickens",
+
+        directPlantGrazingSuitable:
+          false,
+
+        wholeHeadEnrichmentSuitable:
+          false,
+
+        winterStorageSuitable:
+          true,
+
+        householdRationFormulationRequired:
+          false,
+
+        commercialRationIngredientPotential:
+          true,
+
+        confidenceLevel:
+          "moderate-to-high"
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          3,
+
+        adultChickenSuitabilityScore:
+          4,
+
+        youngChickSuitabilityScore:
+          1,
+
+        feedingSafetyScore:
+          3,
+
+        nutritionalUsefulnessScore:
+          3,
+
+        energyValueScore:
+          3,
+
+        proteinValueScore:
+          3,
+
+        enrichmentValueScore:
+          3,
+
+        winterValueScore:
+          4,
+
+        storageValueScore:
+          4,
+
+        preparationSimplicityScore:
+          3,
+
+        portionControlEaseScore:
+          4,
+
+        beginnerFriendlinessScore:
+          3,
+
+        confinedFlockValueScore:
+          3,
+
+        pasturedFlockValueScore:
+          2,
+
+        directGardenAccessScore:
+          1,
+
+        notes: [
+          "Scores describe Buckwheat's practical value as a supplemental backyard-chicken crop rather than as a complete ration.",
+          "Adult suitability is strongest for clean mature grain offered in controlled amounts.",
+          "Young-chick suitability is intentionally low because chicks require an age-appropriate complete starter ration and are more vulnerable to particle-size, fiber, sanitation, and nutrient-dilution problems.",
+          "Whole grain contains a fibrous hull and provides less usable nutrient density than dehulled groats.",
+          "Buckwheat protein offers useful amino-acid diversity but remains incomplete for productive poultry.",
+          "Direct garden-access value is low because green leaves, stems, and flowers contain greater concentrations of fagopyrins than mature grain.",
+          "Sprouted Buckwheat may provide seasonal variety but requires strict sanitation, drainage, airflow, and spoilage monitoring.",
+          "Stored-grain value is good when grain is mature, thoroughly dried, cleaned, cooled, and protected from moisture, insects, rodents, and chemical contamination."
+        ]
+      },
+
+      safety: {
+        safeForChickens:
+          true,
+
+        toxicToChickens:
+          false,
+
+        safeWhenMature:
+          true,
+
+        safeRaw:
+          true,
+
+        cookingRequired:
+          false,
+
+        heatTreatmentRequired:
+          false,
+
+        fermentationRequired:
+          false,
+
+        moderationRequired:
+          true,
+
+        primarySafetySummary:
+          "Clean, mature Buckwheat grain is generally safe for established adult chickens when offered in measured supplemental amounts. The principal concerns are complete-feed displacement, hull fiber, incomplete nutrient balance, mold or storage deterioration, contaminated planting seed, unsafe sprouting conditions, and excessive consumption of green plant tissues containing fagopyrins.",
+
+        whyModerationIsRequired:
+          "Buckwheat grain provides useful carbohydrate energy and moderate protein but does not supply complete poultry nutrition. Excessive supplementation can reduce consumption of balanced feed and dilute calcium, digestible amino acids, vitamins, minerals, sodium, and other essential nutrients. Whole grain also contains substantial hull fiber, while unrestricted consumption of green foliage or flowers may increase exposure to photoreactive fagopyrins.",
+
+        safeMaterials: [
+          {
+            item:
+              "Clean mature whole Buckwheat grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Sound, fully mature, thoroughly dried whole grain may be offered in measured amounts to established adult chickens. The attached hull contributes substantial fiber and lowers usable nutrient density compared with dehulled groats."
+          },
+
+          {
+            item:
+              "Dehulled Buckwheat groats",
+
+            status:
+              "safe",
+
+            explanation:
+              "Plain, clean, unseasoned groats are safe as a measured supplement. Removing the fibrous hull increases the concentration of usable starch, protein, and energy on an equal-weight basis."
+          },
+
+          {
+            item:
+              "Freshly cracked mature Buckwheat grain",
+
+            status:
+              "safe",
+
+            explanation:
+              "Cracked grain is safe when prepared from clean mature seed and used promptly. Cracking increases exposure to oxygen, humidity, insects, and contamination."
+          },
+
+          {
+            item:
+              "Coarsely ground mature Buckwheat grain",
+
+            status:
+              "safe-with-formulation-precautions",
+
+            explanation:
+              "Coarsely ground grain may be incorporated into a properly balanced ration or used promptly as a measured supplement. Grinding does not make Buckwheat nutritionally complete or remove all hull-associated fiber."
+          },
+
+          {
+            item:
+              "Clean short Buckwheat sprouts",
+
+            status:
+              "safe-with-sanitation-precautions",
+
+            explanation:
+              "Short sprouts grown from untreated food-grade or feed-grade seed may be offered in limited amounts when potable water, clean equipment, frequent rinsing, effective drainage, airflow, temperature control, and spoilage inspection are maintained."
+          },
+
+          {
+            item:
+              "Residual mature grain after harvest",
+
+            status:
+              "safe-with-field-inspection",
+
+            explanation:
+              "Controlled postharvest gleaning may allow established adult chickens to recover sound mature seed when the area is free from moldy plants, treated seed, chemical residues, toxic weeds, excessive green Buckwheat growth, standing water, and contaminated debris."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            item:
+              "Chemically treated planting seed",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, dyes, polymers, inoculants, or other materials that are not intended for poultry consumption."
+          },
+
+          {
+            item:
+              "Large quantities of green Buckwheat leaves, stems, or flowers",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Green Buckwheat tissues contain greater concentrations of photoreactive fagopyrins than mature grain. Dense living stands should not be treated as unrestricted poultry forage."
+          },
+
+          {
+            item:
+              "Moldy or musty Buckwheat grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Visible mold, musty odor, damp clumping, abnormal discoloration, or fungal growth indicates unsafe deterioration or possible mycotoxin contamination."
+          },
+
+          {
+            item:
+              "Heated or fermenting stored grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Unexpected warmth, sour odor, alcohol-like odor, condensation, or wet clumping indicates unstable storage and microbial deterioration."
+          },
+
+          {
+            item:
+              "Unintentionally sprouted stored grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Uncontrolled sprouting indicates moisture intrusion and may occur together with mold, heating, bacterial growth, or nutrient deterioration."
+          },
+
+          {
+            item:
+              "Moldy, slimy, sour, or overheated Buckwheat sprouts",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Sprouts showing fuzzy growth, slime, sour odor, abnormal matting, discoloration, or heat buildup should be discarded immediately."
+          },
+
+          {
+            item:
+              "Rodent-contaminated grain",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Grain contaminated by rodent urine, feces, nesting material, chewing damage, or carcasses presents serious sanitation and disease risks."
+          },
+
+          {
+            item:
+              "Heavily insect-damaged grain",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Extensive insect activity reduces feed quality and may indicate prolonged warm, humid, or poorly sealed storage."
+          },
+
+          {
+            item:
+              "Herbicide- or pesticide-contaminated grain or plants",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Do not feed material when pesticide identity, application rate, grazing restriction, harvest interval, or feed-use approval is uncertain."
+          },
+
+          {
+            item:
+              "Grain mixed with toxic weed seeds or foreign material",
+
+            status:
+              "never-feed",
+
+            explanation:
+              "Poorly cleaned grain may contain toxic seeds, stones, metal, soil, moldy kernels, excessive hull fragments, or other hazardous contaminants."
+          },
+
+          {
+            item:
+              "Salted, sweetened, flavored, or seasoned Buckwheat products",
+
+            status:
+              "avoid",
+
+            explanation:
+              "Human snack and prepared-food products may contain excessive sodium, sugar, oil, flavorings, or other ingredients that are unnecessary or unsuitable for chickens."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Fagopyrin exposure from green plant tissues",
+
+            riskLevel:
+              "moderate-to-high-with-heavy-consumption",
+
+            explanation:
+              "Buckwheat leaves, stems, flowers, and other green tissues contain photoreactive fagopyrins associated with photosensitization. Mature grain contains substantially less than green plant material, but unrestricted grazing of dense stands should be avoided."
+          },
+
+          {
+            hazard:
+              "Dietary displacement",
+
+            riskLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Chickens consuming excessive Buckwheat grain may reduce intake of their nutritionally complete ration."
+          },
+
+          {
+            hazard:
+              "Hull fiber",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Whole Buckwheat grain retains a fibrous hull that lowers usable energy and nutrient density and may be less suitable for young or nutritionally stressed birds."
+          },
+
+          {
+            hazard:
+              "Incomplete amino-acid and mineral balance",
+
+            riskLevel:
+              "high-as-a-staple-feed",
+
+            explanation:
+              "Buckwheat alone does not provide the balanced digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and total nutrient concentration required for complete poultry nutrition."
+          },
+
+          {
+            hazard:
+              "Young-bird sensitivity",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Chicks and young growing birds are more vulnerable to inappropriate particle size, hull fiber, nutritional displacement, sanitation failures, and incomplete ration formulation."
+          },
+
+          {
+            hazard:
+              "Mold and storage deterioration",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Uneven grain maturity, insufficient drying, condensation, insect activity, or moisture intrusion may allow heating, fungal growth, sprouting, fermentation, or possible mycotoxin contamination."
+          },
+
+          {
+            hazard:
+              "Sprouting-system contamination",
+
+            riskLevel:
+              "moderate-to-high",
+
+            explanation:
+              "Warm moist sprouting conditions can support mold, yeast, and bacterial growth when sanitation, rinsing, drainage, airflow, and temperature control are inadequate."
+          },
+
+          {
+            hazard:
+              "Rodent and wild-bird contamination",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Standing seed, fallen grain, drying plants, and stored Buckwheat may attract rodents and wild birds that contaminate the feed with droppings, urine, nesting debris, feathers, or disease organisms."
+          },
+
+          {
+            hazard:
+              "Wet-litter spoilage",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Loose grain scattered into damp litter may become soiled, moldy, fermented, or attractive to rodents and insects."
+          },
+
+          {
+            hazard:
+              "Uneven grain maturity",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Buckwheat flowers and ripens over an extended period, so harvested material may contain mature grain, immature seed, green tissue, and high-moisture plant debris that complicate drying and storage."
+          },
+
+          {
+            hazard:
+              "Chemical contamination",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Treated planting seed, pesticide exposure, herbicide residue, fuel, fertilizer, or storage chemicals can make Buckwheat unsuitable for poultry feeding."
+          }
+        ],
+
+        emergencyUse:
+          "Clean mature Buckwheat grain can provide short-term supplemental energy during an emergency, but it is not a complete emergency ration. It should be combined with an appropriate complete poultry feed or a professionally formulated emergency diet.",
+
+        veterinaryCaution:
+          "Seek poultry-veterinary guidance if birds develop unusual skin redness, swelling, itching, avoidance of sunlight, reduced appetite, weakness, digestive abnormalities, or illness after consuming substantial Buckwheat foliage or questionable grain."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          preferredForms: [
+            "Clean mature whole grain",
+            "Plain dehulled groats",
+            "Freshly cracked mature grain",
+            "Coarsely ground grain used promptly",
+            "Clean short sprouts",
+            "Controlled postharvest mature-seed gleaning"
+          ],
+
+          guidance:
+            "Established adult chickens are the most appropriate flock stage for supplemental Buckwheat grain. Whole grain may be offered in measured amounts when birds have access to appropriate insoluble grit. Dehulled groats, cracked grain, or coarsely ground grain may be easier to consume or mix with other feeds. Green leaves, stems, and flowers should not be offered freely because they contain greater concentrations of fagopyrins than mature grain. An age-appropriate complete poultry ration should remain the nutritional foundation."
+        },
+
+        layingHens: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-with-moderation",
+
+          benefits: [
+            "Supplemental carbohydrate energy",
+            "Moderate supplemental protein",
+            "Amino-acid diversity within mixed feeds",
+            "Stored seasonal grain",
+            "Postharvest enrichment",
+            "Carefully managed sprouted-grain variety"
+          ],
+
+          limitations: [
+            "Does not provide sufficient calcium for eggshell formation",
+            "Cannot replace a complete layer ration",
+            "Amino-acid balance remains incomplete",
+            "Whole grain contains substantial hull fiber",
+            "Excessive supplementation may displace complete feed",
+            "Green plant tissues contain fagopyrins",
+            "Sprouted grain requires strict sanitation"
+          ],
+
+          guidance:
+            "Laying hens may receive measured Buckwheat grain supplements, but complete layer feed and an appropriate calcium-management program must remain the nutritional foundation. Monitor complete-feed intake, droppings, body condition, egg production, egg-shell quality, and any unusual skin or sunlight-related reactions."
+        },
+
+        pullets: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "limited-supplement-after-adequate-development",
+
+          guidance:
+            "Well-developed pullets capable of handling ordinary adult supplemental grains may receive small amounts of clean mature Buckwheat. Their complete grower or developer ration should remain dominant because excessive grain can dilute energy balance, digestible amino acids, vitamins, minerals, and other nutrients required for continued growth."
+        },
+
+        youngChicks: {
+          suitable:
+            false,
+
+          suitabilityLevel:
+            "not-recommended-for-routine-backyard-feeding",
+
+          guidance:
+            "Young chicks should receive an age-appropriate complete chick starter as their nutritional foundation. Whole Buckwheat grain, homemade Buckwheat mixtures, sprouts, and green plant material are not appropriate routine substitutes because chicks are more vulnerable to hull fiber, unsuitable particle size, nutritional displacement, sprouting contamination, incomplete ration formulation, and possible fagopyrin exposure from green tissues.",
+
+          possibleException:
+            "A qualified poultry nutritionist may include appropriately processed Buckwheat ingredients in a professionally formulated chick or broiler ration. That controlled formulation is not equivalent to offering whole grain, homemade mixtures, sprouts, or living plants as informal backyard feed.",
+
+          reasonsForRestriction: [
+            "Risk of displacing complete chick starter",
+            "Fibrous hull",
+            "Need for age-appropriate particle size",
+            "Incomplete amino-acid balance",
+            "Insufficient calcium, vitamins, and minerals",
+            "Sprouting sanitation risks",
+            "Fagopyrin exposure from green tissues",
+            "Need for appropriately sized grit when insoluble whole material is offered"
+          ]
+        },
+
+        broilersAndMeatBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "formulation-dependent",
+
+          guidance:
+            "Buckwheat may be used in balanced meat-bird diets, but published inclusion levels generally refer to complete experimental or commercial rations formulated for metabolizable energy, digestible amino acids, fiber, minerals, vitamins, and bird age. Backyard keepers should not copy a research inclusion percentage into an otherwise unbalanced mixture."
+        },
+
+        roosters: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "good-as-a-measured-supplement",
+
+          guidance:
+            "Healthy adult roosters can consume the same clean mature Buckwheat forms as adult hens. Portion control remains important because unrestricted supplemental grain may contribute excess calories while diluting protein, vitamins, minerals, and other nutrients supplied by the complete ration."
+        },
+
+        breedingFlocks: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "moderation-and-formulation-required",
+
+          guidance:
+            "Breeding birds may receive Buckwheat grain as a limited supplement, but fertility, hatchability, reproductive performance, and body condition depend upon complete nutrition. Excessive Buckwheat should not dilute digestible amino acids, vitamins, minerals, essential fatty acids, or total dietary energy balance."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "use-conservatively",
+
+          guidance:
+            "Older, sedentary, confined, or overweight birds may require smaller portions of supplemental Buckwheat grain. Monitor body condition, mobility, complete-feed intake, droppings, and the bird's ability to consume whole grain safely."
+        },
+
+        moltingBirds: {
+          suitable:
+            true,
+
+          suitabilityLevel:
+            "supplemental-only",
+
+          guidance:
+            "Buckwheat contributes moderate protein and useful amino-acid diversity, but it does not provide the complete digestible amino-acid profile required for feather replacement. A balanced ration with adequate usable protein, methionine, vitamins, and minerals remains more important than increasing grain intake."
+        },
+
+        sickOrRecoveringBirds: {
+          suitable:
+            "case-dependent",
+
+          suitabilityLevel:
+            "seek-individual-guidance",
+
+          guidance:
+            "Illness can change energy, protein, hydration, fiber, and digestive requirements. Buckwheat should not replace diagnostic care, hydration support, complete nutrition, or a veterinarian-recommended recovery diet. Birds showing possible photosensitivity, skin irritation, weakness, digestive problems, or illness after consuming Buckwheat foliage require individualized guidance."
+        }
+      },
+
+      edibleParts: {
+        primaryEdibleParts: [
+          {
+            part:
+              "Mature whole grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Clean, fully mature, thoroughly dried Buckwheat grain may be offered in measured amounts to established adult chickens. The attached hull contributes fiber and reduces usable nutrient density."
+          },
+
+          {
+            part:
+              "Dehulled groats",
+
+            suitability:
+              "very-good",
+
+            explanation:
+              "Plain dehulled groats contain less structural fiber and a greater concentration of usable starch, protein, and energy than whole in-hull grain."
+          },
+
+          {
+            part:
+              "Cracked mature grain",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Freshly cracked Buckwheat can be used as a measured supplement or ration ingredient. Cracking shortens storage life by exposing internal grain tissue to oxygen, humidity, insects, and contamination."
+          },
+
+          {
+            part:
+              "Coarsely ground mature grain",
+
+            suitability:
+              "good-with-formulation-precautions",
+
+            explanation:
+              "Coarsely ground Buckwheat may be incorporated into a properly balanced poultry ration or used promptly in a measured supplemental mixture. Grinding does not correct incomplete nutrient balance."
+          },
+
+          {
+            part:
+              "Clean short sprouts",
+
+            suitability:
+              "good-with-sanitation-precautions",
+
+            explanation:
+              "Short sprouts produced from untreated food-grade or feed-grade seed may provide supplemental variety when grown with potable water, clean equipment, frequent rinsing, effective drainage, airflow, temperature control, and careful spoilage inspection."
+          },
+
+          {
+            part:
+              "Residual mature seed after harvest",
+
+            suitability:
+              "good-with-field-inspection",
+
+            explanation:
+              "Controlled postharvest access may allow established adult chickens to recover sound mature seed when the area is free from pesticide residues, treated seed, toxic weeds, moldy plant material, standing water, and excessive green Buckwheat growth."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Green leaves",
+
+            reason:
+              "Leaves contain greater concentrations of photoreactive fagopyrins than mature grain and should not be deliberately fed in large quantities."
+          },
+
+          {
+            part:
+              "Green stems",
+
+            reason:
+              "Green stems provide limited practical feed value and may contribute to unnecessary fagopyrin exposure when consumed heavily."
+          },
+
+          {
+            part:
+              "Flowers",
+
+            reason:
+              "Flowers and flowering green tissues contain fagopyrins and should not be treated as unrestricted poultry forage."
+          },
+
+          {
+            part:
+              "Immature green seed",
+
+            reason:
+              "Immature seed contains more moisture, stores poorly, and is commonly harvested together with green plant tissue."
+          },
+
+          {
+            part:
+              "Loose hulls",
+
+            reason:
+              "Buckwheat hulls are highly fibrous and contain little usable poultry nutrition."
+          },
+
+          {
+            part:
+              "Coarse mature stems",
+
+            reason:
+              "Mature stems are fibrous and have little practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Roots",
+
+            reason:
+              "Roots have no meaningful poultry-feed use and may carry excessive soil, manure, or chemical contamination."
+          },
+
+          {
+            part:
+              "Moldy or diseased plants",
+
+            reason:
+              "Diseased, rotting, or moldy plant material may contain unsafe fungi, contaminants, or deteriorated seed."
+          }
+        ],
+
+        ediblePartSummary:
+          "Buckwheat's primary poultry-feed value comes from clean mature grain. Dehulled groats, cracked grain, ground grain, and carefully produced short sprouts are secondary forms. Green leaves, stems, and flowers should not be used as unrestricted poultry forage because they contain greater concentrations of fagopyrins."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Clean mature whole grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured supplemental feeding for established adult chickens with access to appropriate insoluble grit."
+          },
+
+          {
+            form:
+              "Plain dehulled groats",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Lower-fiber measured supplementation or use in a properly formulated ration."
+          },
+
+          {
+            form:
+              "Freshly cracked mature grain",
+
+            rating:
+              "very-good",
+
+            bestUse:
+              "Measured supplementation and mixing with other feeds when used promptly after processing."
+          },
+
+          {
+            form:
+              "Coarsely ground grain",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Use as a promptly fed supplemental ingredient or within a properly balanced poultry ration."
+          },
+
+          {
+            form:
+              "Clean short sprouts",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Limited supplemental feeding where sanitation, drainage, airflow, rinsing, temperature control, and spoilage monitoring are dependable."
+          },
+
+          {
+            form:
+              "Controlled postharvest mature-seed gleaning",
+
+            rating:
+              "good",
+
+            bestUse:
+              "Supervised seasonal enrichment after green foliage has declined and the area has been inspected for hazards."
+          }
+        ],
+
+        acceptableForms: [
+          "Whole mature dry grain",
+          "Plain dehulled groats",
+          "Freshly cracked mature grain",
+          "Coarsely ground mature grain",
+          "A measured ingredient in a properly balanced ration",
+          "Clean short sprouts",
+          "Residual mature seed after harvest",
+          "A limited ingredient in a diversified scratch-grain mixture"
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Whole in-hull grain",
+
+            concern:
+              "The fibrous hull lowers usable energy and nutrient density and may be less suitable for young or nutritionally stressed birds."
+          },
+
+          {
+            form:
+              "Dehulled groats",
+
+            concern:
+              "Removing the hull increases nutrient concentration but also exposes the groat more directly to moisture, insects, oxidation, and contamination."
+          },
+
+          {
+            form:
+              "Cracked grain",
+
+            concern:
+              "Shorter storage life and greater exposure to moisture, oxygen, insects, and contamination."
+          },
+
+          {
+            form:
+              "Ground grain",
+
+            concern:
+              "Increased dust, ingredient separation, rapid moisture absorption, and greater need for proper ration formulation."
+          },
+
+          {
+            form:
+              "Sprouted grain",
+
+            concern:
+              "Warm moist conditions can support mold, yeast, bacterial growth, slime, souring, and heating."
+          },
+
+          {
+            form:
+              "Postharvest gleaning",
+
+            concern:
+              "The area must be inspected for green plant material, moldy seed, toxic weeds, pesticide residues, treated seed, mud, standing water, and foreign debris."
+          }
+        ],
+
+        avoidForms: [
+          "Chemically treated planting seed",
+          "Large quantities of green leaves",
+          "Large quantities of green stems",
+          "Large quantities of flowers",
+          "Immature wet seed",
+          "Moldy grain",
+          "Musty grain",
+          "Heated grain",
+          "Fermenting grain",
+          "Wet stored grain",
+          "Unintentionally sprouted stored grain",
+          "Moldy sprouts",
+          "Slimy sprouts",
+          "Sour-smelling sprouts",
+          "Overheated sprouts",
+          "Rodent-contaminated grain",
+          "Wild-bird-contaminated grain",
+          "Heavily insect-damaged grain",
+          "Grain mixed with toxic weed seeds",
+          "Pesticide-contaminated grain or plants",
+          "Salted Buckwheat products",
+          "Sweetened Buckwheat products",
+          "Seasoned Buckwheat products"
+        ],
+
+        wholeHeadAdvantages: [
+          "Allows limited pecking at mature seed clusters",
+          "May reduce complete threshing labor for immediate seasonal enrichment",
+          "Provides postharvest foraging activity",
+          "Can extend feeding time compared with loose grain"
+        ],
+
+        looseSeedAdvantages: [
+          "Easy to measure",
+          "Easy to inspect and clean",
+          "Easy to crack or grind",
+          "Easy to mix with other supplemental ingredients",
+          "Supports more precise ration management",
+          "Reduces exposure to green leaves, flowers, and stems",
+          "Stores more efficiently than whole harvested plants"
+        ],
+
+        wholeHeadDisadvantages: [
+          "Buckwheat seed clusters are small and not equivalent to large Sunflower heads",
+          "Actual grain intake is difficult to measure",
+          "Harvested plants may retain green leaves, flowers, and stems containing fagopyrins",
+          "Seed ripens unevenly",
+          "Immature seed and moist plant tissue complicate drying",
+          "Mature seed may shatter during handling",
+          "Birds may scatter grain and plant debris",
+          "Whole harvested plants are inefficient for long-term enclosed storage"
+        ],
+
+        looseSeedDisadvantages: [
+          "Requires cutting or gathering",
+          "Requires drying",
+          "Requires threshing",
+          "Requires winnowing and cleaning",
+          "Requires separation of immature seed and plant debris",
+          "Requires rodent-resistant storage",
+          "Cracked or ground grain has a shorter storage life",
+          "Small grain may disappear into deep or wet litter"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Buckwheat cultivars differ in maturity, plant height, branching, lodging resistance, seed size, hull percentage, flowering period, shattering tendency, grain yield, heat response, and regional adaptation. Cultivar selection affects both agronomic performance and the amount of usable cleaned grain produced.",
+
+        blackOilSunflower: {
+          recommended:
+            null,
+
+          explanation:
+            "Not applicable to Buckwheat. This field is retained only to preserve the exact Sunflower schema."
+        },
+
+        confectionSunflower: {
+          recommended:
+            null,
+
+          explanation:
+            "Not applicable to Buckwheat. This field is retained only to preserve the exact Sunflower schema."
+        },
+
+        ornamentalVarieties: {
+          recommended:
+            "depends",
+
+          explanation:
+            "Ornamental or specialty Buckwheat types may provide flowers, pollinator value, or unusual grain characteristics, but ornamental value does not guarantee high grain yield, low shattering, suitable maturity, favorable hull proportion, or local adaptation."
+        },
+
+        pollenFreeCultivars: {
+          recommended:
+            null,
+
+          explanation:
+            "Not applicable to Buckwheat. Buckwheat depends substantially on insect activity for effective pollination and grain formation."
+        },
+
+        branchingCultivars: {
+          advantages: [
+            "May produce more flowering sites",
+            "May extend the flowering period",
+            "Can provide strong pollinator support",
+            "May produce additional seed clusters under favorable conditions",
+            "May increase uneven maturity and complicate harvest timing"
+          ]
+        },
+
+        giantSingleHeadCultivars: {
+          advantages: [
+            "Not applicable in the Sunflower sense",
+            "Buckwheat produces many small flower clusters rather than one large central seed head",
+            "Uniform maturity and reduced shattering are more useful than unusually large individual clusters",
+            "Strong stems and lodging resistance may improve harvest efficiency"
+          ]
+        }
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "moderate",
+
+        preparationSummary:
+          "Buckwheat requires harvest timing, drying, threshing, cleaning, and careful separation of mature grain from immature seed and green plant material. Because the crop flowers and ripens unevenly, harvested plants may contain mature dark grain, immature green seed, flowers, leaves, and moist stems at the same time. Whole clean grain may be offered in measured amounts to established adult chickens, while cracking, grinding, dehulling, sprouting, or ration formulation adds additional labor and safety requirements.",
+
+        requiredPreparation: [
+          "Allow a substantial portion of the grain to reach physiological maturity.",
+          "Harvest before excessive mature seed shatters onto the ground.",
+          "Avoid gathering large amounts of wet or moldy plant material.",
+          "Dry harvested plants or seed thoroughly with strong airflow.",
+          "Thresh mature grain from the plant material.",
+          "Winnow and clean the grain.",
+          "Remove green plant fragments, immature seed, hull debris, weed seeds, stones, and foreign material.",
+          "Separate moldy, discolored, insect-damaged, heated, or suspicious grain.",
+          "Cool grain completely before enclosed storage.",
+          "Store only clean, dry grain in food-safe or feed-safe rodent-resistant containers."
+        ],
+
+        optionalPreparation: [
+          "Dehull grain to produce lower-fiber groats.",
+          "Crack grain shortly before feeding.",
+          "Coarsely grind grain for prompt use.",
+          "Screen grain to improve uniformity.",
+          "Produce short sprouts under controlled sanitary conditions.",
+          "Use controlled postharvest gleaning after the area has been inspected for hazards.",
+          "Include processed Buckwheat as a measured ingredient in a properly formulated poultry ration."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking whole mature grain for occasional adult-chicken supplementation",
+          "Boiling mature grain before every feeding",
+          "Roasting",
+          "Fermentation",
+          "Fine grinding for ordinary supplemental feeding",
+          "Removing every hull by hand before limited adult-chicken use"
+        ],
+
+        preparationMistakes: [
+          "Harvesting before enough grain has matured.",
+          "Waiting until excessive mature seed has shattered.",
+          "Storing grain with green leaves, stems, flowers, or immature seed.",
+          "Storing damp grain.",
+          "Failing to dry the harvested material uniformly.",
+          "Failing to remove moldy or discolored seed.",
+          "Grinding large quantities long before feeding.",
+          "Feeding chemically treated planting seed.",
+          "Assuming sprouts are automatically safe because they appear fresh.",
+          "Producing sprouts without adequate sanitation, drainage, airflow, rinsing, and temperature control.",
+          "Allowing chickens unrestricted access to dense green Buckwheat stands.",
+          "Assuming fagopyrin concerns apply equally to mature grain and green foliage.",
+          "Using published research inclusion percentages in an unbalanced homemade ration.",
+          "Allowing Buckwheat supplements to displace complete poultry feed."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionalOrientation:
+          "moderate-energy-moderate-protein-pseudocereal-grain-supplement",
+
+        nutritionSummary:
+          "Mature Buckwheat grain is primarily a starch-based energy feed containing moderate crude protein, a relatively favorable lysine concentration compared with many true cereal grains, low to moderate fat, phosphorus, magnesium, manganese, potassium, dietary fiber, rutin, and other phenolic compounds. Its practical poultry-feed value depends strongly on whether the grain is fed whole with the hull attached, dehulled as groats, cracked, ground, sprouted, or incorporated into a balanced ration. Buckwheat can contribute useful energy and amino-acid diversity, but it does not provide the calcium, digestible amino-acid balance, vitamins, minerals, or total nutrient concentration required as the flock's primary feed.",
+
+        compositionBasis:
+          "Composition and feeding value vary substantially among whole in-hull Buckwheat grain, dehulled groats, bran, hulls, flour, cracked grain, ground meal, sprouts, immature seed, and mature cleaned grain. Cultivar, environment, harvest maturity, hull percentage, processing, storage condition, analytical method, and whether results are reported on an as-fed or dry-matter basis also affect reported nutrient values.",
+
+        primaryNutritionalStrengths: [
+          {
+            nutrientRole:
+              "Starch-based dietary energy",
+
+            importance:
+              "high",
+
+            explanation:
+              "Buckwheat grain contains substantial digestible carbohydrate and can provide useful supplemental energy. Its usable energy is reduced when a large proportion of fibrous hull remains attached."
+          },
+
+          {
+            nutrientRole:
+              "Moderate plant protein",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Whole mature Buckwheat commonly contains moderate crude protein. Protein concentration varies with cultivar, environment, fertility, hull content, harvest maturity, and processing."
+          },
+
+          {
+            nutrientRole:
+              "Relatively favorable lysine contribution",
+
+            importance:
+              "moderate-to-high",
+
+            explanation:
+              "Buckwheat protein commonly contains more lysine than many traditional cereal grains, making it useful for increasing amino-acid diversity within a properly balanced feed mixture."
+          },
+
+          {
+            nutrientRole:
+              "Methionine and threonine contribution",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Buckwheat contributes methionine, threonine, and other amino acids, but the overall digestible amino-acid profile remains incomplete for productive poultry."
+          },
+
+          {
+            nutrientRole:
+              "Supplemental minerals",
+
+            importance:
+              "moderate",
+
+            explanation:
+              "Buckwheat can contribute phosphorus, magnesium, manganese, potassium, and other minerals, but it does not provide a complete mineral balance and is not an adequate calcium source for laying hens."
+          },
+
+          {
+            nutrientRole:
+              "Phenolic and flavonoid compounds",
+
+            importance:
+              "context-dependent",
+
+            explanation:
+              "Buckwheat contains rutin and related phenolic compounds. These compounds are nutritionally interesting, but their presence does not make the grain a complete feed or establish a specific backyard feeding rate."
+          },
+
+          {
+            nutrientRole:
+              "Dietary fiber",
+
+            importance:
+              "form-dependent",
+
+            explanation:
+              "Fiber is concentrated heavily in the hull. Whole grain therefore contains considerably more structural fiber and less usable energy per pound than dehulled groats."
+          }
+        ],
+
+        notableNutrients: [
+          "Starch",
+          "Moderate crude protein",
+          "Lysine",
+          "Methionine",
+          "Threonine",
+          "Phosphorus",
+          "Magnesium",
+          "Manganese",
+          "Potassium",
+          "Rutin",
+          "Phenolic compounds",
+          "Dietary fiber"
+        ],
+
+        typicalWholeSeedCharacteristics: {
+          crudeProtein:
+            "Moderate, commonly approximately 10% to 15% of dry matter, with substantial variation among cultivars, environments, hull proportions, maturity levels, and analytical sources.",
+
+          fat:
+            "Low to moderate, commonly approximately 2% to 4% of dry matter in whole mature grain.",
+
+          fiber:
+            "Moderate to high when the hull remains attached. Hull-rich fractions contain substantially more structural fiber than dehulled groats or flour.",
+
+          starch:
+            "High and generally the principal source of dietary energy in mature grain.",
+
+          calcium:
+            "Insufficient to satisfy the calcium requirement of laying hens.",
+
+          phosphorus:
+            "Present in meaningful amounts, although some may be associated with phytate and should not be assumed to be fully available.",
+
+          energy:
+            "Moderate for poultry and strongly affected by hull percentage, processing form, and total ration composition."
+        },
+
+        wholeSeedVersusKernel: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole Buckwheat grain includes the edible groat and a tough fibrous hull. The hull protects the internal grain during handling but contributes substantial fiber and lowers usable nutrient and energy density on an equal-weight basis.",
+
+          dehulledKernel:
+            "The dehulled groat contains less structural fiber and a greater concentration of starch, protein, minerals, and usable energy. It is also more directly exposed to moisture, insects, oxidation, and contamination.",
+
+          practicalMeaning:
+            "A pound of whole in-hull Buckwheat should not be treated as nutritionally equivalent to a pound of dehulled groats. Hull percentage materially affects energy density, fiber intake, processing effort, and appropriate portion size."
+        },
+
+        wholeSeedVersusMeal: {
+          nutritionallyEquivalent:
+            false,
+
+          wholeSeed:
+            "Whole mature grain retains the fibrous hull and intact groat and generally stores more reliably than cracked or ground material.",
+
+          sunflowerMeal:
+            "Ground Buckwheat meal is produced by reducing whole grain or dehulled groats to smaller particles. Depending on the starting material, it may retain substantial hull fiber or contain primarily groat material. Grinding changes particle size and storage stability but does not make the product nutritionally complete.",
+
+          practicalMeaning:
+            "Research involving Buckwheat flour, dehulled groats, bran, hulls, finely ground meal, pelleted diets, or complete experimental rations should not automatically be applied to informal feeding of whole backyard-grown grain."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Cultivar",
+          "Common Buckwheat versus specialty Buckwheat types",
+          "Hull percentage",
+          "Groat-to-hull ratio",
+          "Seed size",
+          "Grain maturity",
+          "Growing environment",
+          "Soil fertility",
+          "Water availability",
+          "Heat during flowering",
+          "Pollination success",
+          "Harvest timing",
+          "Seed shattering",
+          "Postharvest drying",
+          "Cleaning efficiency",
+          "Storage duration",
+          "Storage moisture",
+          "Dehulling",
+          "Cracking",
+          "Grinding",
+          "Sprouting",
+          "Analytical basis"
+        ]
+      },
+
+      benefits: {
+        primaryBenefits: [
+          {
+            title:
+              "Useful Supplemental Grain Energy",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Mature Buckwheat grain provides useful starch-based energy and can diversify the grain portion of a supplemental feeding program."
+          },
+
+          {
+            title:
+              "Moderate Protein with Useful Lysine Contribution",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Buckwheat contributes moderate crude protein and commonly contains a relatively favorable lysine concentration compared with many true cereal grains. It still requires complementary ingredients and complete-ration balancing."
+          },
+
+          {
+            title:
+              "Rapid Short-Season Production",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Buckwheat can commonly flower and mature within approximately 70 to 90 days, allowing grain production between major spring and fall crops where sufficient frost-free time remains."
+          },
+
+          {
+            title:
+              "Strong Crop-Rotation Flexibility",
+
+            importance:
+              "primary",
+
+            explanation:
+              "The short growth cycle allows Buckwheat to occupy temporary garden gaps, follow early vegetables, precede autumn crops, or serve as a rapid summer cover crop."
+          },
+
+          {
+            title:
+              "Excellent Pollinator Support",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Buckwheat flowers attract bees and beneficial insects. Increased insect activity may provide indirect flock-foraging value near safely managed poultry areas, although the living green crop itself should not be treated as unrestricted chicken forage."
+          },
+
+          {
+            title:
+              "Rapid Weed Suppression",
+
+            importance:
+              "primary",
+
+            explanation:
+              "A dense, quickly closing Buckwheat canopy can suppress many annual weeds and reduce the time that garden soil remains bare."
+          },
+
+          {
+            title:
+              "Useful Dry-Grain Storage Potential",
+
+            importance:
+              "primary",
+
+            explanation:
+              "Clean mature grain can be stored for later supplemental use when it is thoroughly dried, cooled, protected from insects and rodents, and kept away from moisture and chemical contamination."
+          },
+
+          {
+            title:
+              "Flexible Grain Forms",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Buckwheat can be offered as whole mature grain, dehulled groats, freshly cracked grain, coarsely ground grain, or carefully produced short sprouts."
+          },
+
+          {
+            title:
+              "Postharvest Gleaning Opportunity",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Controlled postharvest access may allow adult chickens to recover fallen mature seed while providing seasonal pecking and foraging enrichment."
+          },
+
+          {
+            title:
+              "Low Fertility Requirement",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Buckwheat can perform on moderately low-fertility soils and generally requires less nitrogen than demanding grain crops such as Corn."
+          },
+
+          {
+            title:
+              "Phosphorus Scavenging Ability",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "Buckwheat roots can mobilize and absorb forms of soil phosphorus that are less available to some other crops. Nutrients may later return near the soil surface as residue decomposes."
+          },
+
+          {
+            title:
+              "Multiple Homestead Functions",
+
+            importance:
+              "secondary",
+
+            explanation:
+              "A Buckwheat planting may provide mature grain, pollinator habitat, temporary soil cover, green-manure biomass, weed suppression, rotation value, beneficial-insect support, and compostable crop residue."
+          }
+        ],
+
+        enrichmentBenefits: [
+          {
+            benefit:
+              "Postharvest seed searching",
+
+            explanation:
+              "Chickens may search for scattered mature seed after harvest when the area has been inspected and green plant exposure is limited."
+          },
+
+          {
+            benefit:
+              "Pecking at mature seed clusters",
+
+            explanation:
+              "Small quantities of fully mature, dry seed-bearing material may provide supervised pecking activity after excessive green foliage has been removed."
+          },
+
+          {
+            benefit:
+              "Extended feed-seeking behavior",
+
+            explanation:
+              "Controlled gleaning generally requires more searching and manipulation than consuming loose grain from an open feeder."
+          },
+
+          {
+            benefit:
+              "Seasonal feeding variety",
+
+            explanation:
+              "Whole grain, groats, cracked grain, and clean short sprouts provide textures and feeding experiences different from ordinary complete feed."
+          },
+
+          {
+            benefit:
+              "Indirect insect-foraging support",
+
+            explanation:
+              "Flowering stands attract insects that may increase local foraging opportunities when poultry access is safely separated from unrestricted consumption of the green crop."
+          },
+
+          {
+            benefit:
+              "Reduced feeding monotony",
+
+            explanation:
+              "Measured Buckwheat grain can diversify occasional supplemental feeding without replacing complete nutrition."
+          }
+        ],
+
+        flockManagementBenefits: [
+          "Whole dry grain can be measured accurately.",
+          "Dehulled groats reduce hull-associated fiber.",
+          "Cracked grain can be mixed with other supplemental ingredients.",
+          "Coarsely ground grain can be incorporated into a properly formulated ration.",
+          "Dry grain can be stored for periods when fresh garden crops are unavailable.",
+          "Stored grain requires no refrigeration.",
+          "Several feeding stations can reduce competition among birds.",
+          "Small grain quantities can be introduced gradually.",
+          "Postharvest gleaning may recover seed that would otherwise be lost.",
+          "Unused dry grain can remain stored instead of being offered all at once.",
+          "Measured supplementation helps protect complete-feed consumption.",
+          "Different processing forms allow the keeper to match labor and equipment to the intended use."
+        ],
+
+        homesteadBenefits: [
+          "Rapidly establishing warm-season annual crop.",
+          "Short maturity supports flexible crop rotations.",
+          "Direct sowing avoids transplant production.",
+          "Dense stands provide quick temporary soil cover.",
+          "Can suppress many annual weeds.",
+          "Flowers provide strong pollinator support.",
+          "Supports beneficial-insect activity.",
+          "Can occupy vacant garden beds between major crops.",
+          "Can follow early spring vegetables.",
+          "Can precede autumn vegetables or cover crops.",
+          "Generally requires little supplemental nitrogen.",
+          "Can perform on moderately low-fertility soils.",
+          "Roots can improve the condition of the upper soil layer.",
+          "Can scavenge soil phosphorus.",
+          "Residue may be incorporated as green manure.",
+          "Mature grain can serve poultry, household-food, or seed-saving uses.",
+          "Dry grain can be stored without refrigeration.",
+          "Small plots can still provide pollinator and soil-cover benefits.",
+          "Larger plots improve grain-harvest and biomass value.",
+          "Crop residue can contribute to compost or soil organic matter."
+        ],
+
+        benefitSummary:
+          "Buckwheat's greatest value comes from combining rapid maturity, useful supplemental grain, moderate protein, amino-acid diversity, strong pollinator support, weed suppression, soil improvement, and flexible crop rotation. Its direct poultry-feed value comes mainly from mature cleaned grain rather than unrestricted access to the living green crop."
+      },
+
+      limitations: {
+        primaryLimitations: [
+          {
+            title:
+              "Not a Complete Poultry Feed",
+
+            severity:
+              "critical",
+
+            explanation:
+              "Buckwheat does not provide the complete balance of metabolizable energy, digestible amino acids, calcium, available phosphorus, sodium, vitamins, trace minerals, and other nutrients required by laying hens, growing birds, breeding stock, or meat birds."
+          },
+
+          {
+            title:
+              "Fagopyrins in Green Plant Tissues",
+
+            severity:
+              "high",
+
+            explanation:
+              "Leaves, flowers, stems, and other green Buckwheat tissues contain photoreactive fagopyrins associated with photosensitization. Dense living stands should not be treated as unrestricted poultry forage."
+          },
+
+          {
+            title:
+              "Fibrous Hull",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Whole Buckwheat grain retains a tough fibrous hull that reduces usable energy and nutrient density compared with dehulled groats."
+          },
+
+          {
+            title:
+              "Incomplete Amino-Acid Balance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Buckwheat provides useful lysine and moderate protein but cannot independently satisfy the full digestible amino-acid requirements of productive poultry."
+          },
+
+          {
+            title:
+              "Insufficient Calcium for Laying Hens",
+
+            severity:
+              "high",
+
+            explanation:
+              "Buckwheat does not provide the calcium concentration required for eggshell production and must not replace complete layer feed or an appropriate calcium-management program."
+          },
+
+          {
+            title:
+              "Young Birds Are More Vulnerable",
+
+            severity:
+              "high",
+
+            explanation:
+              "Chicks and young growing birds are more vulnerable to unsuitable particle size, hull fiber, incomplete nutrient balance, supplemental-feed displacement, sprouting contamination, and green-tissue exposure."
+          },
+
+          {
+            title:
+              "Uneven Flowering and Grain Maturity",
+
+            severity:
+              "high",
+
+            explanation:
+              "Buckwheat may continue flowering while older seed is already mature. Harvested material can therefore contain mature grain, immature seed, flowers, leaves, and moist stems at the same time."
+          },
+
+          {
+            title:
+              "Seed Shattering",
+
+            severity:
+              "high",
+
+            explanation:
+              "Mature seed can fall from the plant before or during harvest. Delayed harvest may sharply reduce recoverable grain."
+          },
+
+          {
+            title:
+              "Harvest and Processing Labor",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Small-scale use commonly requires cutting, drying, threshing, winnowing, cleaning, separating immature seed, final drying, storage preparation, and repeated quality inspection."
+          },
+
+          {
+            title:
+              "Poor Drought Tolerance",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Buckwheat may wilt rapidly during hot dry weather, and water stress during flowering or seed development can greatly reduce grain yield."
+          },
+
+          {
+            title:
+              "High Heat During Flowering",
+
+            severity:
+              "high",
+
+            explanation:
+              "Prolonged extreme heat during flowering can reduce nectar production, pollination, flower retention, seed formation, and final grain harvest."
+          },
+
+          {
+            title:
+              "Very Low Frost Tolerance",
+
+            severity:
+              "high",
+
+            explanation:
+              "Buckwheat seedlings, flowers, and mature plants are readily damaged or killed by frost, making planting-date selection critical."
+          },
+
+          {
+            title:
+              "Waterlogging Sensitivity",
+
+            severity:
+              "high",
+
+            explanation:
+              "Chronically saturated soil, standing water, and poor drainage can cause weak establishment, root damage, lodging, disease, and crop failure."
+          },
+
+          {
+            title:
+              "Lodging Risk",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Dense stands may lodge during strong wind or heavy rain, especially where nitrogen is excessive, stems are weak, or soil is saturated."
+          },
+
+          {
+            title:
+              "Sprouting Requires Strict Sanitation",
+
+            severity:
+              "high",
+
+            explanation:
+              "Warm moist sprouting conditions can support mold, yeast, and bacterial growth when sanitation, drainage, rinsing, airflow, or temperature control is inadequate."
+          },
+
+          {
+            title:
+              "Processed Grain Stores Less Reliably",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Dehulling, cracking, and grinding expose internal grain tissue to oxygen, moisture, insects, and contamination, shortening practical storage life."
+          },
+
+          {
+            title:
+              "Wildlife and Rodent Attraction",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Flowering plants, developing seed, fallen grain, drying material, and stored Buckwheat may attract birds, rodents, deer, and other wildlife."
+          },
+
+          {
+            title:
+              "No Universal Backyard Portion Is Supported",
+
+            severity:
+              "high",
+
+            explanation:
+              "Flock size, age, breed, body condition, activity, complete ration, grain form, hull percentage, processing, and feeding purpose differ too greatly for one universal crop-specific serving percentage."
+          }
+        ],
+
+        nutritionalLimitations: [
+          "Does not provide complete poultry nutrition",
+          "Does not provide adequate calcium for laying hens",
+          "Does not provide a complete digestible amino-acid profile",
+          "Useful lysine content does not make the protein complete",
+          "Methionine and total amino-acid balance still require formulation",
+          "Whole grain contains substantial hull fiber",
+          "Usable energy depends strongly on hull percentage",
+          "Phosphorus availability may be reduced partly by phytate",
+          "Vitamin and trace-mineral balance is incomplete",
+          "Sodium concentration is insufficient for complete nutrition",
+          "Protein concentration is moderate rather than exceptionally high",
+          "Whole grain, groats, hulls, bran, flour, and sprouts are not nutritionally identical",
+          "Sprouting does not make Buckwheat nutritionally complete",
+          "Green foliage cannot be evaluated as equivalent to mature grain",
+          "Published inclusion studies may involve processed ingredients and complete formulated diets",
+          "Research percentages should not be copied into informal homemade mixtures"
+        ],
+
+        practicalLimitations: [
+          "Frost can kill the crop at any growth stage.",
+          "Hot flowering weather may reduce seed formation.",
+          "Drought can reduce flowering and grain filling.",
+          "Chronically wet soil can cause crop failure.",
+          "Flowering and seed maturity are uneven.",
+          "Mature seed may shatter before harvest.",
+          "Harvest timing requires compromise between maturity and seed loss.",
+          "Harvested plants may contain moist green tissue.",
+          "Drying bulky plant material requires protected space and airflow.",
+          "Threshing small seed can be time consuming.",
+          "Winnowing and cleaning require suitable equipment or technique.",
+          "Immature seed and hull fragments may be difficult to separate.",
+          "Whole plants are inefficient for enclosed storage.",
+          "Whole grain contains substantial hull fiber.",
+          "Household dehulling may be inefficient.",
+          "Loose grain may disappear into litter.",
+          "Spilled grain can attract rodents and wild birds.",
+          "Damp grain may heat, mold, sprout, or ferment.",
+          "Cracked grain stores less reliably than intact grain.",
+          "Ground grain should be used promptly.",
+          "Sprouting systems require repeated cleaning and inspection.",
+          "Sprouts can sour, slime, heat, or mold rapidly.",
+          "Unrestricted grazing increases green-tissue exposure.",
+          "Dense stands may lodge in storms.",
+          "Herbicide carryover can damage the crop.",
+          "Exact backyard yield is difficult to predict.",
+          "Exact processing loss is difficult to predict.",
+          "Exact feed savings depend on yield, labor, storage losses, complete-feed use, and local feed prices."
+        ],
+
+        unsuitableExpectations: [
+          "Replacing complete poultry feed",
+          "Serving as the flock's only energy source",
+          "Serving as the flock's only protein source",
+          "Supplying every required amino acid",
+          "Serving as the primary calcium source for laying hens",
+          "Correcting an incomplete homemade ration",
+          "Making whole in-hull grain nutritionally equivalent to dehulled groats",
+          "Making sprouts nutritionally complete",
+          "Making green foliage nutritionally equivalent to mature grain",
+          "Using dense living stands as unrestricted poultry pasture",
+          "Eliminating fagopyrin exposure through drying alone",
+          "Supporting young chicks as a staple food",
+          "Guaranteeing increased egg production",
+          "Guaranteeing improved growth",
+          "Guaranteeing improved feather quality",
+          "Guaranteeing improved fertility or hatchability",
+          "Treating disease, parasites, digestive problems, or nutritional deficiency",
+          "Providing a universal safe feeding percentage",
+          "Providing predictable pounds of usable grain per planting",
+          "Preventing seed shattering completely",
+          "Guaranteeing lower feed costs",
+          "Eliminating commercial feed purchases",
+          "Remaining safe after mold, heating, fermentation, chemical contamination, or rodent contamination",
+          "Allowing processing methods to substitute for complete-ration formulation"
+        ],
+
+        limitationSummary:
+          "Buckwheat is useful because it combines rapid growth, mature supplemental grain, moderate protein, amino-acid diversity, pollinator value, weed suppression, and crop-rotation flexibility. Its greatest limitations are fagopyrins in green tissues, hull fiber, incomplete nutrition, uneven maturity, seed shattering, frost sensitivity, drought and heat risk, processing labor, and the absence of one universal backyard feeding rate."
+      },
+
+      antinutritionalConcerns: {
+        overview:
+          "Buckwheat is generally considered a safe supplemental grain for established adult chickens when clean mature grain is fed in measured amounts. However, several naturally occurring compounds, physical characteristics, processing differences, and storage risks require consideration. Mature grain should not be treated as nutritionally equivalent to green plant tissues, dehulled groats, sprouts, flour, bran, or complete poultry feed.",
+
+        naturallyOccurringCompounds: [
+          {
+            compound:
+              "Fagopyrins",
+
+            significance:
+              "primary-concern",
+
+            location:
+              "Concentrated primarily in green leaves, flowers, stems, and other living plant tissues; substantially lower in mature grain.",
+
+            explanation:
+              "Fagopyrins are naturally occurring photoreactive compounds associated with photosensitization in susceptible animals. Mature Buckwheat grain contains considerably less than green vegetative tissue. Chickens should not be allowed unrestricted access to dense green Buckwheat stands or deliberately fed large quantities of green leaves, flowers, or stems."
+          },
+
+          {
+            compound:
+              "Phytate",
+
+            significance:
+              "moderate",
+
+            location:
+              "Within the mature grain.",
+
+            explanation:
+              "Some phosphorus occurs in phytate form and should not automatically be assumed to be completely available to poultry. Buckwheat should not be relied upon as the flock's primary phosphorus source."
+          },
+
+          {
+            compound:
+              "Phenolic compounds",
+
+            significance:
+              "low",
+
+            location:
+              "Throughout the grain.",
+
+            explanation:
+              "Buckwheat naturally contains rutin and other phenolic compounds. Their presence does not eliminate the need for a nutritionally complete poultry ration."
+          }
+        ],
+
+        physicalLimitations: [
+          {
+            concern:
+              "Fibrous hull",
+
+            explanation:
+              "Whole Buckwheat grain retains a relatively tough fibrous hull that lowers usable energy density compared with dehulled groats and contributes additional structural fiber."
+          },
+
+          {
+            concern:
+              "Small seed size",
+
+            explanation:
+              "The small grain size generally presents little difficulty for adult chickens but can complicate cleaning, harvesting, processing, and measuring losses during handling."
+          },
+
+          {
+            concern:
+              "Uneven maturity",
+
+            explanation:
+              "Buckwheat flowers continuously over an extended period, making it common for mature grain, immature seed, flowers, and green stems to be present simultaneously at harvest."
+          }
+        ],
+
+        sproutingConsiderations: [
+          {
+            concern:
+              "Microbial growth",
+
+            explanation:
+              "Warm, moist sprouting conditions may encourage mold, yeast, and bacterial growth when sanitation, drainage, airflow, rinsing, or temperature control are inadequate."
+          },
+
+          {
+            concern:
+              "Short storage life",
+
+            explanation:
+              "Sprouted Buckwheat should be fed promptly and should never be stored like dry grain."
+          },
+
+          {
+            concern:
+              "False assumption of improved nutrition",
+
+            explanation:
+              "Sprouting changes moisture content and some nutritional characteristics but does not transform Buckwheat into a complete poultry feed."
+          }
+        ],
+
+        processingDifferences: [
+          {
+            product:
+              "Whole grain",
+
+            explanation:
+              "Retains the fibrous hull and generally stores better than processed forms."
+          },
+
+          {
+            product:
+              "Dehulled groats",
+
+            explanation:
+              "Contain less fiber and greater usable nutrient density but require more processing and somewhat greater storage attention."
+          },
+
+          {
+            product:
+              "Cracked grain",
+
+            explanation:
+              "Shorter storage life because internal tissues are exposed to oxygen, humidity, insects, and contamination."
+          },
+
+          {
+            product:
+              "Ground meal",
+
+            explanation:
+              "Most susceptible to moisture absorption, separation, dust generation, and quality deterioration during storage."
+          }
+        ],
+
+        nutritionalReality:
+          "Buckwheat contributes useful starch, moderate protein, relatively favorable lysine compared with many cereal grains, and several minerals, but it remains nutritionally incomplete for productive poultry. Neither mature grain, sprouts, nor processed forms eliminate the need for a balanced complete ration.",
+
+        plannerGuidance:
+          "The planner should reward mature clean grain, penalize unrestricted green-plant consumption, distinguish whole grain from dehulled groats, recognize sanitation risks associated with sprouting, and never assume that processing alone creates a nutritionally complete feed."
+      },
+
+      complementaryFeeding: {
+        philosophy:
+          "Buckwheat performs best as one component within a diverse supplemental feeding program. Its moderate protein, useful lysine contribution, starch-based energy, and rapid seasonal availability complement other crops that provide calcium, highly digestible protein, essential amino acids, vitamins, minerals, leafy forage, or concentrated energy. Buckwheat should improve dietary diversity rather than replace a nutritionally complete poultry ration.",
+
+        complements: [
+          {
+            feedType:
+              "High-protein legumes",
+
+            relationship:
+              "Legumes such as Cowpeas, Soybeans (properly processed), Field Peas, or Alfalfa help complement Buckwheat's incomplete amino-acid profile and moderate protein concentration."
+          },
+
+          {
+            feedType:
+              "Oilseed crops",
+
+            relationship:
+              "Sunflower and properly managed oilseed supplements contribute concentrated dietary energy and essential fatty acids that differ from Buckwheat's primarily starch-based energy."
+          },
+
+          {
+            feedType:
+              "Calcium sources",
+
+            relationship:
+              "Free-choice oyster shell or another appropriate calcium source remains necessary for laying hens because Buckwheat provides insufficient calcium for eggshell production."
+          },
+
+          {
+            feedType:
+              "Leafy forage crops",
+
+            relationship:
+              "Appropriate forage crops such as Kale, Collards, White Clover, or Mulberry leaves can diversify vitamin and mineral intake without relying on Buckwheat foliage."
+          },
+
+          {
+            feedType:
+              "Other cereal grains",
+
+            relationship:
+              "Barley, Wheat, Oats, Grain Sorghum, or Corn may be blended in measured amounts to diversify supplemental grain feeding while maintaining a complete commercial ration as the dietary foundation."
+          },
+
+          {
+            feedType:
+              "Insect protein",
+
+            relationship:
+              "Mealworms, Black Soldier Fly larvae, and naturally foraged insects provide concentrated animal protein that complements Buckwheat's moderate plant-protein contribution."
+          },
+
+          {
+            feedType:
+              "Garden vegetables",
+
+            relationship:
+              "Seasonal vegetables can increase dietary variety and enrichment without depending on Buckwheat to satisfy every nutritional requirement."
+          }
+        ],
+
+        doesNotCorrect: [
+          {
+            limitation:
+              "Complete-feed displacement",
+
+            explanation:
+              "Adding Buckwheat to an unbalanced diet does not prevent nutritional deficiencies if complete-feed intake declines."
+          },
+
+          {
+            limitation:
+              "Insufficient calcium",
+
+            explanation:
+              "Buckwheat cannot replace an appropriate calcium-management program for laying hens."
+          },
+
+          {
+            limitation:
+              "Incomplete amino-acid balance",
+
+            explanation:
+              "Although Buckwheat contributes relatively favorable lysine compared with many cereal grains, it still cannot independently satisfy poultry amino-acid requirements."
+          },
+
+          {
+            limitation:
+              "Green-tissue fagopyrins",
+
+            explanation:
+              "Combining Buckwheat with other feeds does not eliminate the greater fagopyrin concentration found in green leaves, flowers, and stems."
+          },
+
+          {
+            limitation:
+              "Storage spoilage",
+
+            explanation:
+              "Mixing good grain with moldy, heated, damp, fermented, or contaminated grain never makes the feed safe."
+          },
+
+          {
+            limitation:
+              "Sprouting sanitation failures",
+
+            explanation:
+              "Combining contaminated sprouts with clean feed does not eliminate mold, bacterial contamination, slime, or spoilage."
+          },
+
+          {
+            limitation:
+              "Poor harvest timing",
+
+            explanation:
+              "Harvesting immature grain or allowing excessive seed shattering cannot be corrected later by blending with other feeds."
+          }
+        ],
+
+        complementarySummary:
+          "Buckwheat works best alongside legumes, leafy forage, calcium supplementation, insect protein, and other supplemental grains while complete poultry feed remains the nutritional foundation."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Buckwheat should be treated as a supplemental grain rather than a complete poultry feed. Mature, clean grain is the preferred feeding form because it provides useful starch-based energy, moderate protein, and amino-acid diversity while avoiding the elevated fagopyrin concentrations present in green Buckwheat tissues. Supplemental Buckwheat should diversify the flock's diet without reducing consumption of a nutritionally complete poultry ration.",
+
+        primaryMethods: [
+          {
+            method:
+              "Measured whole-grain supplementation",
+
+            recommendation:
+              "preferred",
+
+            explanation:
+              "Offer clean mature whole Buckwheat grain in measured amounts alongside unrestricted access to a complete poultry ration. Adult chickens consuming whole grain should have access to appropriate insoluble grit."
+          },
+
+          {
+            method:
+              "Dehulled groats",
+
+            recommendation:
+              "preferred",
+
+            explanation:
+              "Plain dehulled groats provide lower fiber and greater usable nutrient density than whole in-hull grain while remaining suitable as a measured supplement."
+          },
+
+          {
+            method:
+              "Cracked grain",
+
+            recommendation:
+              "recommended",
+
+            explanation:
+              "Freshly cracked Buckwheat may improve acceptance or mixing with other supplemental ingredients. Because cracking shortens storage life, process only the amount expected to be used promptly."
+          },
+
+          {
+            method:
+              "Coarsely ground grain",
+
+            recommendation:
+              "recommended-with-care",
+
+            explanation:
+              "Ground Buckwheat may be incorporated into balanced homemade formulations or mixed with other grains immediately before feeding. Long-term storage after grinding is discouraged."
+          },
+
+          {
+            method:
+              "Sprouted Buckwheat",
+
+            recommendation:
+              "limited-use",
+
+            explanation:
+              "Clean short sprouts may provide seasonal variety when produced under sanitary conditions using untreated seed, potable water, frequent rinsing, excellent drainage, airflow, and careful spoilage monitoring."
+          },
+
+          {
+            method:
+              "Controlled postharvest gleaning",
+
+            recommendation:
+              "seasonal",
+
+            explanation:
+              "Allow supervised access to harvested Buckwheat fields only after the area has been inspected for mold, excessive green vegetation, treated seed, standing water, toxic weeds, sharp debris, and other hazards."
+          }
+        ],
+
+        methodsToAvoid: [
+          {
+            method:
+              "Unrestricted grazing of dense green Buckwheat",
+
+            reason:
+              "Green leaves, flowers, and stems contain substantially greater concentrations of fagopyrins than mature grain and should not serve as unrestricted poultry forage."
+          },
+
+          {
+            method:
+              "Free-choice Buckwheat as the primary feed",
+
+            reason:
+              "Buckwheat can reduce complete-feed intake and create nutritional imbalance when offered without portion control."
+          },
+
+          {
+            method:
+              "Feeding moldy or heated grain",
+
+            reason:
+              "Spoiled grain should always be discarded rather than blended with sound grain."
+          },
+
+          {
+            method:
+              "Long-term storage of cracked or ground grain",
+
+            reason:
+              "Processing accelerates deterioration by exposing the grain to oxygen, moisture, insects, and contamination."
+          },
+
+          {
+            method:
+              "Feeding chemically treated planting seed",
+
+            reason:
+              "Seed treatments are not intended for poultry consumption."
+          }
+        ],
+
+        feedingFrequency: {
+          philosophy:
+            "Buckwheat should remain an occasional or rotational supplement rather than a daily staple replacing complete feed.",
+
+          guidance: [
+            "Maintain unrestricted access to an age-appropriate complete poultry ration.",
+            "Introduce Buckwheat gradually so birds adapt to the new grain.",
+            "Observe flock acceptance before increasing the amount offered.",
+            "Rotate Buckwheat with other supplemental crops instead of relying on one grain year-round.",
+            "Reduce or discontinue supplementation if complete-feed intake noticeably declines."
+          ]
+        },
+
+        seasonalStrategies: {
+          spring:
+            "Freshly harvested Buckwheat is generally unavailable. Stored grain from the previous season may be used while new plantings establish.",
+
+          summer:
+            "As Buckwheat matures, protect developing stands from unrestricted chicken access. Harvest mature grain before excessive shattering occurs.",
+
+          autumn:
+            "This is generally the primary harvest period. Dry, thresh, clean, inspect, and store grain before routine supplemental feeding begins.",
+
+          winter:
+            "Properly stored mature grain provides useful seasonal dietary variety when fresh garden production is limited."
+        },
+
+        rotationStrategies: [
+          "Alternate Buckwheat with other supplemental grains to improve dietary diversity.",
+          "Combine Buckwheat with protein-rich supplemental crops instead of relying on Buckwheat alone.",
+          "Use Buckwheat primarily during the months immediately following harvest while maintaining proper storage practices for later use.",
+          "Reserve sprouted Buckwheat for occasional enrichment rather than routine feeding."
+        ],
+
+        observationPoints: [
+          "Monitor complete-feed consumption.",
+          "Watch for excessive selective feeding.",
+          "Inspect droppings after introducing Buckwheat.",
+          "Observe body condition over time.",
+          "Discard any grain showing mold, heating, unusual odor, insects, or rodent contamination.",
+          "Watch harvested fields for volunteer Buckwheat plants before allowing repeated postharvest access."
+        ],
+
+        practicalRecommendations: [
+          "Harvest only mature grain.",
+          "Dry thoroughly before storage.",
+          "Store grain cool, dry, and rodent-proof.",
+          "Inspect stored grain regularly.",
+          "Use cracked or ground grain promptly.",
+          "Keep sprouting equipment exceptionally clean.",
+          "Treat Buckwheat as one component of a diverse supplemental feeding program.",
+          "Never assume that processing changes Buckwheat into a complete poultry feed."
+        ],
+
+        feedingMethodSummary:
+          "The safest and most practical backyard use is clean mature Buckwheat grain offered in measured amounts while a nutritionally complete poultry ration remains continuously available. Avoid unrestricted access to green Buckwheat stands and maintain strict standards for harvesting, drying, storage, and sprouting."
+      },
+
+      storage: {
+        storageSummary:
+          "Properly harvested, thoroughly dried, cleaned, and cooled Buckwheat grain stores well for long periods and is one of the better seasonal grain crops for backyard poultry supplementation. Storage success depends primarily on moisture control, cleanliness, rodent exclusion, insect management, temperature stability, and routine inspection.",
+
+        storageGoals: [
+          "Prevent moisture accumulation.",
+          "Prevent mold development.",
+          "Prevent heating.",
+          "Prevent unintended sprouting.",
+          "Prevent insect infestation.",
+          "Prevent rodent contamination.",
+          "Maintain grain quality until feeding."
+        ],
+
+        recommendedStorageConditions: {
+          temperature:
+            "Cool, stable temperatures are preferred.",
+
+          humidity:
+            "Low humidity with completely dry grain.",
+
+          airflow:
+            "Excellent airflow during drying; sealed rodent-resistant storage after grain has completely cooled and dried.",
+
+          light:
+            "Store in a dark location whenever practical.",
+
+          containers:
+            [
+              "Food-grade buckets with tight-fitting lids",
+              "Rodent-resistant bins",
+              "Metal grain containers",
+              "Other clean feed-storage containers designed to exclude moisture and pests"
+            ]
+        },
+
+        preparationBeforeStorage: [
+          "Harvest when sufficient mature grain has developed.",
+          "Dry harvested material thoroughly.",
+          "Thresh grain completely.",
+          "Remove stems, leaves, flowers, immature seed, hull fragments, stones, weed seeds, and other foreign material.",
+          "Allow grain to cool before sealing.",
+          "Inspect carefully before placing into long-term storage."
+        ],
+
+        inspectionChecklist: [
+          "Look for condensation.",
+          "Check for mold.",
+          "Check for unusual odors.",
+          "Look for insect activity.",
+          "Inspect for rodent damage.",
+          "Look for heating or warm grain.",
+          "Verify containers remain dry and sealed."
+        ],
+
+        storageProblems: [
+          {
+            problem:
+              "Condensation",
+
+            consequence:
+              "Can initiate mold growth, heating, fermentation, or sprouting."
+          },
+
+          {
+            problem:
+              "Rodent access",
+
+            consequence:
+              "Creates contamination with urine, feces, nesting material, chewing damage, and disease organisms."
+          },
+
+          {
+            problem:
+              "Insect infestation",
+
+            consequence:
+              "Reduces feed quality and may accelerate spoilage."
+          },
+
+          {
+            problem:
+              "Improper drying",
+
+            consequence:
+              "One of the leading causes of storage failure."
+          },
+
+          {
+            problem:
+              "Ground or cracked grain stored too long",
+
+            consequence:
+              "Shorter storage life than intact grain."
+          }
+        ],
+
+        unsuitableStorage: [
+          "Wet grain",
+          "Warm grain sealed immediately after drying",
+          "Containers exposed to rain",
+          "Open bags accessible to rodents",
+          "Containers with repeated condensation",
+          "Areas exposed to flooding",
+          "Containers with obvious insect infestation"
+        ],
+
+        storageSummaryStatement:
+          "Good storage begins with proper harvest timing and thorough drying. Clean, dry, cool grain stored in sealed rodent-resistant containers provides the safest long-term Buckwheat supplement for backyard poultry."
+      },
+
+      spoilageAndContamination: {
+        overview:
+          "Buckwheat is generally a stable storage grain when harvested at proper maturity, dried thoroughly, cleaned well, cooled before storage, and protected from moisture, insects, rodents, and chemical contamination. Most feeding hazards develop after harvest rather than while the crop is growing. Any grain showing evidence of mold, heating, fermentation, chemical contamination, or significant rodent activity should be discarded rather than blended with sound grain.",
+
+        spoilageIndicators: [
+          {
+            indicator:
+              "Visible mold",
+
+            seriousness:
+              "critical",
+
+            explanation:
+              "White, gray, green, blue, black, pink, or fuzzy fungal growth indicates unsafe grain that should never be fed."
+          },
+
+          {
+            indicator:
+              "Musty odor",
+
+            seriousness:
+              "critical",
+
+            explanation:
+              "A musty or earthy odor commonly indicates mold growth or excessive moisture exposure."
+          },
+
+          {
+            indicator:
+              "Heating",
+
+            seriousness:
+              "critical",
+
+            explanation:
+              "Unexpected warmth within stored grain may indicate excessive moisture, microbial activity, or developing spoilage."
+          },
+
+          {
+            indicator:
+              "Fermentation odor",
+
+            seriousness:
+              "critical",
+
+            explanation:
+              "Sour, alcoholic, sweet-fermented, or otherwise abnormal odors indicate deterioration and possible microbial growth."
+          },
+
+          {
+            indicator:
+              "Condensation",
+
+            seriousness:
+              "high",
+
+            explanation:
+              "Moisture on container walls or damp grain greatly increases the likelihood of mold development and spoilage."
+          },
+
+          {
+            indicator:
+              "Unexpected sprouting",
+
+            seriousness:
+              "high",
+
+            explanation:
+              "Grain that begins sprouting during storage indicates excessive moisture and should be evaluated carefully before any feeding decision."
+          },
+
+          {
+            indicator:
+              "Heavy insect activity",
+
+            seriousness:
+              "moderate-to-high",
+
+            explanation:
+              "Numerous insects, webbing, insect dust, cast skins, or extensive feeding damage reduce grain quality and may indicate unsuitable storage conditions."
+          },
+
+          {
+            indicator:
+              "Rodent contamination",
+
+            seriousness:
+              "critical",
+
+            explanation:
+              "Urine, feces, nesting material, chewed grain, carcasses, or other rodent contamination makes the grain unsuitable for poultry feeding."
+          }
+        ],
+
+        contaminationSources: [
+          {
+            source:
+              "Chemically treated planting seed",
+
+            riskLevel:
+              "critical",
+
+            explanation:
+              "Commercial planting seed may be coated with fungicides, insecticides, dyes, polymers, or other treatment materials that are not approved for poultry feeding."
+          },
+
+          {
+            source:
+              "Herbicide contamination",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Plants or harvested grain exposed to inappropriate herbicide residues should not be fed unless feed safety is clearly established."
+          },
+
+          {
+            source:
+              "Pesticide contamination",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Unknown pesticide exposure, improper application timing, or uncertainty regarding feed restrictions should disqualify harvested grain."
+          },
+
+          {
+            source:
+              "Fuel or petroleum contamination",
+
+            riskLevel:
+              "critical",
+
+            explanation:
+              "Gasoline, diesel fuel, oils, solvents, lubricants, or similar contaminants render grain unsuitable for feeding."
+          },
+
+          {
+            source:
+              "Fertilizer contamination",
+
+            riskLevel:
+              "high",
+
+            explanation:
+              "Grain contaminated with commercial fertilizers should be discarded."
+          },
+
+          {
+            source:
+              "Foreign material",
+
+            riskLevel:
+              "moderate",
+
+            explanation:
+              "Stones, glass, metal fragments, plastic, baling twine, toxic weed seeds, excessive soil, or other debris should be removed during cleaning."
+          }
+        ],
+
+        sproutContamination: {
+          overview:
+            "Buckwheat sprouts require much stricter sanitation than dry grain because warm, moist growing conditions favor microbial growth.",
+
+          discardImmediatelyIf: [
+            "Visible mold develops.",
+            "Slimy surfaces appear.",
+            "Sprouts become sticky.",
+            "A sour odor develops.",
+            "An alcoholic odor develops.",
+            "The sprout container becomes unusually warm.",
+            "Water becomes cloudy or foul-smelling.",
+            "Black, pink, green, blue, or fuzzy growth appears."
+          ],
+
+          sanitationRequirements: [
+            "Use untreated food-grade or feed-grade seed.",
+            "Use potable water.",
+            "Clean equipment before every batch.",
+            "Rinse regularly.",
+            "Maintain excellent drainage.",
+            "Provide continuous airflow.",
+            "Avoid prolonged standing water.",
+            "Discard questionable batches immediately."
+          ]
+        },
+
+        wildlifeContamination: {
+          birds:
+            "Wild birds may introduce droppings, feathers, parasites, or disease organisms into drying or stored grain.",
+
+          rodents:
+            "Rodents are among the most significant storage hazards because they contaminate grain through urine, feces, nesting material, chewing damage, and disease transmission.",
+
+          insects:
+            "Storage insects reduce feed quality and frequently indicate excessive moisture or prolonged storage.",
+
+          deer:
+            "Primarily a preharvest concern through crop damage rather than postharvest contamination."
+        },
+
+        disposalGuidance: [
+          "Never blend spoiled grain with clean grain.",
+          "Never attempt to hide mold by mixing grain.",
+          "Discard chemically contaminated grain.",
+          "Discard rodent-contaminated grain.",
+          "Discard heavily fermented grain.",
+          "Discard grain showing active heating.",
+          "Discard questionable sprouts.",
+          "When uncertainty exists regarding feed safety, choose disposal rather than feeding."
+        ],
+
+        plannerWarnings: [
+          "Processing cannot restore spoiled grain.",
+          "Drying moldy grain does not remove existing contamination.",
+          "Grinding contaminated grain spreads contamination more uniformly.",
+          "Sprouting contaminated grain increases rather than decreases biological risk.",
+          "Visual appearance alone does not guarantee grain safety."
+        ],
+
+        contaminationSummary:
+          "Buckwheat should be fed only when it is clean, mature, thoroughly dried, properly stored, and free from mold, heating, fermentation, insects, rodents, chemical contamination, and other signs of deterioration."
+      },
+
+      commonFeedingMistakes: {
+        overview:
+          "Most Buckwheat feeding problems result from management decisions rather than from the grain itself. Mature Buckwheat grain is generally a useful supplemental feed, but inappropriate harvesting, storage, processing, or overfeeding can significantly reduce both nutritional value and feeding safety.",
+
+        mistakes: [
+          {
+            mistake:
+              "Replacing complete feed with Buckwheat",
+
+            consequence:
+              "Creates nutritional imbalance because Buckwheat is not a complete poultry ration."
+          },
+
+          {
+            mistake:
+              "Allowing unrestricted access to green Buckwheat stands",
+
+            consequence:
+              "Increases unnecessary exposure to green tissues containing higher concentrations of fagopyrins."
+          },
+
+          {
+            mistake:
+              "Harvesting too early",
+
+            consequence:
+              "Produces immature grain with excessive moisture and poor storage characteristics."
+          },
+
+          {
+            mistake:
+              "Harvesting too late",
+
+            consequence:
+              "Allows mature seed to shatter before collection, reducing usable harvest."
+          },
+
+          {
+            mistake:
+              "Storing damp grain",
+
+            consequence:
+              "Promotes mold, heating, fermentation, insects, and spoilage."
+          },
+
+          {
+            mistake:
+              "Using chemically treated planting seed",
+
+            consequence:
+              "Introduces potentially hazardous treatment chemicals into the flock."
+          },
+
+          {
+            mistake:
+              "Failing to inspect stored grain",
+
+            consequence:
+              "Allows contamination to develop unnoticed until feed quality has already deteriorated."
+          },
+
+          {
+            mistake:
+              "Grinding large quantities far in advance",
+
+            consequence:
+              "Reduces storage life and increases exposure to moisture, insects, and contamination."
+          },
+
+          {
+            mistake:
+              "Assuming sprouts are automatically safer",
+
+            consequence:
+              "Sprouting requires significantly greater sanitation than dry-grain storage."
+          },
+
+          {
+            mistake:
+              "Ignoring complete-feed intake",
+
+            consequence:
+              "Birds may preferentially consume Buckwheat while reducing consumption of balanced feed."
+          },
+
+          {
+            mistake:
+              "Feeding moldy grain because only a small portion appears spoiled",
+
+            consequence:
+              "Unsafe grain should never be salvaged by removing only visibly affected kernels."
+          },
+
+          {
+            mistake:
+              "Treating all Buckwheat products as nutritionally identical",
+
+            consequence:
+              "Whole grain, groats, flour, bran, hulls, sprouts, and processed ingredients differ substantially in feeding characteristics."
+          }
+        ],
+
+        preventionStrategies: [
+          "Feed only mature, properly dried grain.",
+          "Maintain a complete poultry ration as the dietary foundation.",
+          "Inspect stored grain routinely.",
+          "Process only the quantity expected to be used soon.",
+          "Maintain excellent sanitation when sprouting.",
+          "Introduce Buckwheat gradually.",
+          "Rotate Buckwheat with other supplemental crops.",
+          "Monitor flock condition and complete-feed consumption."
+        ],
+
+        summary:
+          "Nearly every common Buckwheat feeding mistake is preventable through careful harvesting, proper storage, routine inspection, moderate supplementation, and maintaining complete poultry feed as the nutritional foundation."
+      },
+
+      troubleshooting: {
+        birdsRefuseBuckwheat: {
+          possibleInterpretations: [
+            "Birds may be unfamiliar with the grain.",
+            "Particle size may differ from the flock's normal feed.",
+            "Complete feed may already satisfy appetite.",
+            "Grain quality may be poor.",
+            "The flock may simply require gradual introduction."
+          ],
+
+          recommendedAction:
+            "Introduce small measured amounts mixed with familiar feed while continuing unrestricted access to the complete ration."
+        },
+
+        grainDevelopsMold: {
+          possibleInterpretations: [
+            "Grain was stored before reaching a safe moisture content.",
+            "Condensation developed inside the storage container.",
+            "Humidity entered the storage area.",
+            "Containers were not completely sealed."
+          ],
+
+          recommendedAction:
+            "Discard the affected grain. Clean the storage container thoroughly before future use and correct the moisture problem before storing additional Buckwheat."
+        },
+
+        storedGrainFeelsWarm: {
+          possibleInterpretations: [
+            "Moisture content remains too high.",
+            "Microbial activity may be occurring.",
+            "Heating may precede mold development.",
+            "Ventilation during drying may have been inadequate."
+          ],
+
+          recommendedAction:
+            "Do not feed warm grain until its condition has been fully evaluated. Grain showing heating, spoilage, mold, or abnormal odor should be discarded."
+        },
+
+        insectsAppearInStorage: {
+          possibleInterpretations: [
+            "Storage containers were not insect-proof.",
+            "Grain remained in storage too long.",
+            "Moisture and temperature favored insect development.",
+            "Previously contaminated containers were reused."
+          ],
+
+          recommendedAction:
+            "Inspect the grain carefully. Heavy infestations or evidence of spoilage warrant disposal. Clean and sanitize storage containers before reuse."
+        },
+
+        sproutsBecomeSlimy: {
+          possibleInterpretations: [
+            "Insufficient drainage.",
+            "Poor airflow.",
+            "Inadequate rinsing.",
+            "Excessive temperature.",
+            "Microbial contamination."
+          ],
+
+          recommendedAction:
+            "Discard the entire batch immediately. Thoroughly sanitize all sprouting equipment before producing another batch."
+        },
+
+        birdsIgnoreCompleteFeed: {
+          possibleInterpretations: [
+            "Too much Buckwheat is being offered.",
+            "Supplemental grain is overly attractive.",
+            "Birds are selectively eating preferred feeds."
+          ],
+
+          recommendedAction:
+            "Reduce Buckwheat supplementation until birds resume normal complete-feed consumption."
+        },
+
+        grainContainsGreenPlantMaterial: {
+          possibleInterpretations: [
+            "Harvest occurred before uniform maturity.",
+            "Cleaning was incomplete.",
+            "Harvest timing favored grain retention over plant maturity."
+          ],
+
+          recommendedAction:
+            "Remove green leaves, flowers, stems, and immature material before storage or feeding whenever practical."
+        },
+
+        storedGrainSmellsMusty: {
+          possibleInterpretations: [
+            "Moisture entered the storage container.",
+            "Mold growth has begun.",
+            "Grain was not fully dried before storage.",
+            "Condensation developed during storage."
+          ],
+
+          recommendedAction:
+            "Discard the affected grain. Clean and thoroughly dry the storage container before storing additional Buckwheat."
+        },
+
+        birdsGainExcessWeight: {
+          possibleInterpretations: [
+            "Too much supplemental grain is being offered.",
+            "Complete-feed intake has declined.",
+            "Overall calorie intake exceeds flock requirements.",
+            "Bird activity has decreased."
+          ],
+
+          recommendedAction:
+            "Reduce Buckwheat supplementation, encourage normal complete-feed consumption, and monitor body condition over several weeks."
+        },
+
+        rodentActivityAppears: {
+          possibleInterpretations: [
+            "Storage containers are not rodent resistant.",
+            "Grain has been spilled around storage areas.",
+            "Containers remain open too long.",
+            "Storage sanitation has declined."
+          ],
+
+          recommendedAction:
+            "Remove spilled grain, replace damaged containers, improve rodent exclusion, and discard any grain showing evidence of contamination."
+        },
+
+        volunteerBuckwheatAppearsAfterHarvest: {
+          possibleInterpretations: [
+            "Some mature seed shattered before harvest.",
+            "Postharvest cleanup left viable grain on the soil surface.",
+            "Natural reseeding occurred."
+          ],
+
+          recommendedAction:
+            "Monitor volunteer plants and remove unwanted stands before flowering if reseeding is not desired."
+        },
+
+        floweringStandReceivesChickenDamage: {
+          possibleInterpretations: [
+            "Birds gained unrestricted access before harvest.",
+            "Temporary fencing failed.",
+            "The crop was intentionally used as living forage."
+          ],
+
+          recommendedAction:
+            "Protect growing Buckwheat until grain harvest is complete. Use controlled postharvest access rather than unrestricted grazing of living stands."
+        }
+      },
+
+      faq: {
+        questions: [
+          {
+            question:
+              "Can chickens eat Buckwheat?",
+
+            answer:
+              "Yes. Clean, mature Buckwheat grain is a safe supplemental feed for established adult chickens when offered in moderation alongside a complete poultry ration."
+          },
+
+          {
+            question:
+              "Can Buckwheat replace commercial feed?",
+
+            answer:
+              "No. Buckwheat does not provide the complete balance of nutrients required for productive poultry."
+          },
+
+          {
+            question:
+              "Can chickens eat Buckwheat leaves?",
+
+            answer:
+              "Routine feeding of Buckwheat leaves, flowers, and other green tissues is not recommended because they contain greater concentrations of fagopyrins than mature grain."
+          },
+
+          {
+            question:
+              "Can chickens eat Buckwheat sprouts?",
+
+            answer:
+              "Yes, clean short sprouts grown under strict sanitary conditions may be offered occasionally in limited amounts. Spoiled or questionable sprouts should always be discarded."
+          },
+
+          {
+            question:
+              "Do chickens need grit when eating whole Buckwheat?",
+
+            answer:
+              "Adult chickens consuming whole grains should have access to appropriate insoluble grit to aid normal grinding within the gizzard."
+          },
+
+          {
+            question:
+              "Can chicks eat Buckwheat?",
+
+            answer:
+              "Routine backyard supplementation is not recommended. Chicks should receive a complete chick starter ration unless a qualified poultry nutritionist has formulated a Buckwheat-containing diet specifically for young birds."
+          },
+
+          {
+            question:
+              "Can Buckwheat be stored for winter feeding?",
+
+            answer:
+              "Yes. Properly harvested, thoroughly dried, cleaned, cooled, and rodent-protected Buckwheat stores well for seasonal supplemental feeding."
+          },
+
+          {
+            question:
+              "Is whole Buckwheat the same as dehulled groats?",
+
+            answer:
+              "No. Whole grain retains the fibrous hull, while dehulled groats contain less fiber and greater usable nutrient density."
+          },
+
+          {
+            question:
+              "Should I feed moldy Buckwheat if only a few kernels look bad?",
+
+            answer:
+              "No. Moldy grain should always be discarded rather than sorted or mixed with clean grain."
+          },
+
+          {
+            question:
+              "Why shouldn't chickens graze mature Buckwheat fields freely?",
+
+            answer:
+              "Living Buckwheat plants contain green leaves, flowers, and stems with higher fagopyrin concentrations than mature grain. Controlled postharvest access is generally a safer management approach."
+          }
+        ]
+      },
+
+      expertSummary: {
+        agronomicSummary:
+          "Buckwheat is a rapidly maturing annual pseudocereal valued for grain production, weed suppression, pollinator support, phosphorus scavenging, short crop rotations, and temporary summer soil cover. Most backyard plantings mature within approximately 70 to 90 days under favorable conditions.",
+
+        feedingSummary:
+          "For poultry, Buckwheat's value comes almost entirely from mature cleaned grain rather than green vegetation. Whole grain, dehulled groats, cracked grain, and coarsely ground grain can all serve as measured supplements for established adult chickens. Buckwheat contributes useful starch-based energy, moderate protein, relatively favorable lysine compared with many cereal grains, and nutritional diversity, but it remains nutritionally incomplete and should never replace a balanced poultry ration.",
+
+        managementSummary:
+          "Successful Buckwheat feeding depends primarily on proper harvest timing, thorough drying, careful cleaning, rodent-proof storage, routine inspection, moderate supplementation, and maintaining unrestricted access to complete feed. Green plant tissues should not be treated as unrestricted forage because they contain greater concentrations of fagopyrins.",
+
+        bestUseCases: [
+          "Seasonal supplemental grain",
+          "Short-season feed-garden crop",
+          "Pollinator-support plantings",
+          "Crop rotations",
+          "Stored winter grain",
+          "Diversified homestead feed production",
+          "Measured scratch-grain ingredient",
+          "Controlled postharvest enrichment"
+        ],
+
+        notRecommendedFor: [
+          "Complete poultry diets",
+          "Routine chick supplementation",
+          "Unrestricted grazing of green Buckwheat",
+          "Feeding moldy or contaminated grain",
+          "Using treated planting seed as feed",
+          "Long-term storage of spoiled sprouts"
+        ],
+
+        overallConclusion:
+          "Buckwheat is an excellent short-season homestead grain that fits well within a diversified backyard feeding system. Its greatest strengths are rapid production, useful mature grain, pollinator value, weed suppression, and flexible crop rotation. Its greatest limitations are incomplete poultry nutrition, fibrous hulls, uneven grain maturity, seed shattering, storage management, and the elevated fagopyrin concentration found in green vegetative tissues."
+      },
+
+      scientificNotes: {
+        taxonomy: {
+          commonName:
+            "Buckwheat",
+
+          scientificName:
+            "Fagopyrum esculentum",
+
+          family:
+            "Polygonaceae",
+
+          plantType:
+            "Annual broadleaf pseudocereal"
+        },
+
+        researchNotes: [
+          "Buckwheat is a pseudocereal rather than a true cereal grain.",
+          "Protein quality differs from most cereal grains because of relatively favorable lysine concentration.",
+          "Whole grain, dehulled groats, bran, flour, hulls, and sprouts differ nutritionally.",
+          "Green tissues contain substantially greater concentrations of fagopyrins than mature grain.",
+          "Published poultry research commonly evaluates formulated diets rather than informal backyard supplementation.",
+          "Backyard yield and feeding efficiency remain highly dependent upon local management."
+        ],
+
+        plannerConsiderations: [
+          "Treat mature grain separately from green vegetative tissues.",
+          "Differentiate whole grain from dehulled groats.",
+          "Reward proper harvest timing and storage quality.",
+          "Penalize unrestricted grazing of green stands.",
+          "Penalize poor storage practices.",
+          "Recognize Buckwheat primarily as a supplemental grain rather than a forage crop."
+        ],
+
+        futureResearchTopics: [
+          "Backyard grain yield per square foot.",
+          "Small-scale harvesting efficiency.",
+          "Processing labor under homestead conditions.",
+          "Long-term storage performance.",
+          "Feed-cost reduction studies.",
+          "Practical comparisons between whole grain and dehulled groats in backyard flocks."
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Diversified feed gardens",
+          "Short-season grain production",
+          "Pollinator strips",
+          "Summer cover crops",
+          "Temporary weed suppression",
+          "Seasonal stored poultry grain",
+          "Crop rotations",
+          "Small homestead grain production"
+        ],
+
+        lessSuitableUses: [
+          "Permanent forage systems",
+          "Continuous chicken pasture",
+          "Primary flock nutrition",
+          "Heavy drought-prone sites",
+          "Poorly drained soils",
+          "Very late frost-prone plantings"
+        ],
+
+        backyardRecommendation:
+          "Highly recommended as a rapid-growing supplemental grain crop for diversified backyard feed gardens when harvested, dried, stored, and fed correctly.",
+
+        commercialRecommendation:
+          "Commercial poultry operations generally use Buckwheat only as one ingredient within professionally formulated complete rations rather than as a stand-alone feed ingredient."
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "2.0.0",
+
+        cropSpecificReviewStatus:
+          "complete",
+
+        confidenceLevel:
+          "high",
+
+        lastReviewed:
+          null,
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+          "Homesteaders",
+          "Small-scale poultry producers",
+          "Feed-garden planners"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+          "nutrition",
+          "growing",
+          "plannerData",
+          "research literature",
+          "extension publications"
+        ],
+
+        designGoals: [
+          "Provide scientifically accurate backyard feeding guidance.",
+          "Differentiate mature grain from green vegetative tissues.",
+          "Promote complete-feed-first nutrition.",
+          "Encourage safe harvest and storage practices.",
+          "Support planner recommendations using practical homestead management."
+        ]
+      }
+    },
+    
+    
+    
+      chickenUse: {
       edibleParts: [
         "Clean mature dry grain",
         "Whole buckwheat seed",
