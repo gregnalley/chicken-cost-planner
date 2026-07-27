@@ -4027,8 +4027,58 @@ function renderSpoilageAndContamination(
 
   }
 
-  const indicatorHtml =
+  const summaryText =
+    typeof spoilage.spoilageSummary === "string"
+      ? spoilage.spoilageSummary.trim()
+      : "";
+
+  const previewSummary =
+    summaryText.length > 190
+      ? `${
+          summaryText
+            .slice(
+              0,
+              190
+            )
+            .replace(
+              /\s+\S*$/,
+              ""
+            )
+        }…`
+      : summaryText;
+
+  const previewIndicatorHtml =
     spoilageIndicators
+      .slice(
+        0,
+        2
+      )
+      .map(function(item){
+
+        if(
+          !item
+        ){
+
+          return "";
+
+        }
+
+        return `
+          <li>
+            <strong>
+              ${item.indicator || "Warning sign"}
+            </strong>
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const additionalIndicatorHtml =
+    spoilageIndicators
+      .slice(
+        2
+      )
       .map(function(item){
 
         if(
@@ -4066,7 +4116,7 @@ function renderSpoilageAndContamination(
     primarySpoilageRisks
       .slice(
         0,
-        2
+        1
       )
       .map(function(item){
 
@@ -4077,11 +4127,6 @@ function renderSpoilageAndContamination(
           return "";
 
         }
-
-        const warningSignsHtml =
-          createTextList(
-            item.warningSigns
-          );
 
         return `
           <li>
@@ -4098,21 +4143,6 @@ function renderSpoilageAndContamination(
                     item.likelihood
                   )}
                 </span>
-              `
-              : ""
-            }
-
-            ${warningSignsHtml
-              ? `
-                <br>
-
-                <strong>
-                  Warning signs:
-                </strong>
-
-                <ul>
-                  ${warningSignsHtml}
-                </ul>
               `
               : ""
             }
@@ -4284,6 +4314,8 @@ function renderSpoilageAndContamination(
 
   const hasExtraContent =
     Boolean(
+      summaryText !== previewSummary ||
+      additionalIndicatorHtml ||
       detailedSpoilageRisks ||
       contaminationHtml ||
       spoilage.sensoryInspectionLimitations ||
@@ -4293,7 +4325,7 @@ function renderSpoilageAndContamination(
   const html =
 `
 <div
-  class="feed-tile feed-tile--danger"
+  class="feed-tile feed-tile--avoid"
 >
 
 <div class="feed-tile-header">
@@ -4314,23 +4346,23 @@ Spoilage & Contamination
 
 <div class="feed-tile-preview">
 
-${spoilage.spoilageSummary
+${previewSummary
   ? `
     <p>
-      ${spoilage.spoilageSummary}
+      ${previewSummary}
     </p>
   `
   : ""
 }
 
-${indicatorHtml
+${previewIndicatorHtml
   ? `
     <h3>
       Primary Warning Signs
     </h3>
 
     <ul>
-      ${indicatorHtml}
+      ${previewIndicatorHtml}
     </ul>
   `
   : ""
@@ -4339,7 +4371,7 @@ ${indicatorHtml
 ${previewRisks
   ? `
     <h3>
-      Highest Risks
+      Highest Risk
     </h3>
 
     <ul>
@@ -4358,6 +4390,32 @@ ${hasExtraContent
       id="spoilage-extra"
       hidden
     >
+
+    ${summaryText !== previewSummary
+      ? `
+        <h3>
+          Full Spoilage Summary
+        </h3>
+
+        <p>
+          ${summaryText}
+        </p>
+      `
+      : ""
+    }
+
+    ${additionalIndicatorHtml
+      ? `
+        <h3>
+          Additional Warning Signs
+        </h3>
+
+        <ul>
+          ${additionalIndicatorHtml}
+        </ul>
+      `
+      : ""
+    }
 
     ${detailedSpoilageRisks
       ? `
