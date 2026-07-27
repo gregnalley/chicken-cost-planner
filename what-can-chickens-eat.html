@@ -5270,8 +5270,54 @@ function renderPracticalUse(
       ? practicalUse.lessSuitableUses
       : [];
 
-  const idealUsesHtml =
+  const recommendationText =
+    typeof practicalUse.backyardRecommendation === "string"
+      ? practicalUse.backyardRecommendation.trim()
+      : "";
+
+  const previewRecommendation =
+    recommendationText.length > 210
+      ? `${
+          recommendationText
+            .slice(
+              0,
+              210
+            )
+            .replace(
+              /\s+\S*$/,
+              ""
+            )
+        }…`
+      : recommendationText;
+
+  const previewIdealUses =
     idealUses
+      .slice(
+        0,
+        3
+      );
+
+  const additionalIdealUses =
+    idealUses
+      .slice(
+        3
+      );
+
+  const previewIdealUsesHtml =
+    previewIdealUses
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const additionalIdealUsesHtml =
+    additionalIdealUses
       .map(function(item){
 
         return `
@@ -5298,6 +5344,8 @@ function renderPracticalUse(
 
   const hasExtraContent =
     Boolean(
+      recommendationText !== previewRecommendation ||
+      additionalIdealUsesHtml ||
       lessSuitableHtml ||
       practicalUse.commercialRecommendation
     );
@@ -5326,27 +5374,27 @@ Practical Use
 
 <div class="feed-tile-preview">
 
-${practicalUse.backyardRecommendation
+${previewRecommendation
   ? `
     <h3>
       Backyard Recommendation
     </h3>
 
     <p>
-      ${practicalUse.backyardRecommendation}
+      ${previewRecommendation}
     </p>
   `
   : ""
 }
 
-${idealUsesHtml
+${previewIdealUsesHtml
   ? `
     <h3>
       Best Homestead Uses
     </h3>
 
     <ul>
-      ${idealUsesHtml}
+      ${previewIdealUsesHtml}
     </ul>
   `
   : ""
@@ -5361,6 +5409,32 @@ ${hasExtraContent
       id="practical-use-extra"
       hidden
     >
+
+    ${recommendationText !== previewRecommendation
+      ? `
+        <h3>
+          Full Backyard Recommendation
+        </h3>
+
+        <p>
+          ${recommendationText}
+        </p>
+      `
+      : ""
+    }
+
+    ${additionalIdealUsesHtml
+      ? `
+        <h3>
+          Additional Homestead Uses
+        </h3>
+
+        <ul>
+          ${additionalIdealUsesHtml}
+        </ul>
+      `
+      : ""
+    }
 
     ${lessSuitableHtml
       ? `
