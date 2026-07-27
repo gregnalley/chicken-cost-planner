@@ -2192,8 +2192,34 @@ function renderPreparation(
       ? preparation.preparationMistakes
       : [];
 
-  const requiredHtml =
+  const previewRequiredItems =
     requiredItems
+      .slice(
+        0,
+        2
+      );
+
+  const additionalRequiredItems =
+    requiredItems
+      .slice(
+        2
+      );
+
+  const previewRequiredHtml =
+    previewRequiredItems
+      .map(function(item){
+
+        return `
+          <li>
+            ${item}
+          </li>
+        `;
+
+      })
+      .join("");
+
+  const additionalRequiredHtml =
+    additionalRequiredItems
       .map(function(item){
 
         return `
@@ -2244,6 +2270,14 @@ function renderPreparation(
       })
       .join("");
 
+  const hasExtraContent =
+    Boolean(
+      additionalRequiredHtml ||
+      optionalHtml ||
+      unnecessaryHtml ||
+      mistakesHtml
+    );
+
   const html =
 `
 <div
@@ -2268,74 +2302,40 @@ Preparation
 
 <div class="feed-tile-preview">
 
-<p>
-
-${preparation.preparationSummary || ""}
-
-</p>
-
-<p>
-
-<strong>
-Difficulty:
-</strong>
-
-${formatDisplayValue(
-  preparation.preparationDifficulty
-)}
-
-</p>
-
-<h3>
-Required Steps
-</h3>
-
-<ul>
-  ${requiredHtml}
-</ul>
-
-</div>
-
-<div
-  class="feed-tile-extra"
-  id="preparation-extra"
-  hidden
->
-
-${optionalHtml
+${preparation.preparationSummary
   ? `
-    <h3>
-      Optional Preparation
-    </h3>
-
-    <ul>
-      ${optionalHtml}
-    </ul>
+    <p>
+      ${preparation.preparationSummary}
+    </p>
   `
   : ""
 }
 
-${unnecessaryHtml
+${preparation.preparationDifficulty
   ? `
-    <h3>
-      Usually Unnecessary
-    </h3>
+    <p>
 
-    <ul>
-      ${unnecessaryHtml}
-    </ul>
+      <strong>
+        Difficulty:
+      </strong>
+
+      ${formatDisplayValue(
+        preparation.preparationDifficulty
+      )}
+
+    </p>
   `
   : ""
 }
 
-${mistakesHtml
+${previewRequiredHtml
   ? `
     <h3>
-      Preparation Mistakes
+      Key Required Steps
     </h3>
 
     <ul>
-      ${mistakesHtml}
+      ${previewRequiredHtml}
     </ul>
   `
   : ""
@@ -2343,14 +2343,79 @@ ${mistakesHtml
 
 </div>
 
-<button
-  class="feed-expand-button"
-  type="button"
-  data-expand-target="preparation-extra"
-  aria-expanded="false"
->
-  Show More
-</button>
+${hasExtraContent
+  ? `
+    <div
+      class="feed-tile-extra"
+      id="preparation-extra"
+      hidden
+    >
+
+    ${additionalRequiredHtml
+      ? `
+        <h3>
+          Additional Required Steps
+        </h3>
+
+        <ul>
+          ${additionalRequiredHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${optionalHtml
+      ? `
+        <h3>
+          Optional Preparation
+        </h3>
+
+        <ul>
+          ${optionalHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${unnecessaryHtml
+      ? `
+        <h3>
+          Usually Unnecessary
+        </h3>
+
+        <ul>
+          ${unnecessaryHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    ${mistakesHtml
+      ? `
+        <h3>
+          Preparation Mistakes
+        </h3>
+
+        <ul>
+          ${mistakesHtml}
+        </ul>
+      `
+      : ""
+    }
+
+    </div>
+
+    <button
+      class="feed-expand-button"
+      type="button"
+      data-expand-target="preparation-extra"
+      aria-expanded="false"
+    >
+      Show More
+    </button>
+  `
+  : ""
+}
 
 </div>
 `;
