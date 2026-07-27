@@ -2472,11 +2472,31 @@ function renderNutritionHighlights(
       ? nutrition.nutritionalVariabilityFactors
       : [];
 
+  const summaryText =
+    typeof nutrition.nutritionSummary === "string"
+      ? nutrition.nutritionSummary.trim()
+      : "";
+
+  const previewSummary =
+    summaryText.length > 220
+      ? `${
+          summaryText
+            .slice(
+              0,
+              220
+            )
+            .replace(
+              /\s+\S*$/,
+              ""
+            )
+        }…`
+      : summaryText;
+
   const previewStrengths =
     strengths
       .slice(
         0,
-        2
+        1
       )
       .map(function(item){
 
@@ -2498,7 +2518,7 @@ function renderNutritionHighlights(
   const remainingStrengths =
     strengths
       .slice(
-        2
+        1
       )
       .map(function(item){
 
@@ -2517,8 +2537,34 @@ function renderNutritionHighlights(
       })
       .join("");
 
-  const nutrientTags =
+  const previewNutrients =
     notableNutrients
+      .slice(
+        0,
+        4
+      );
+
+  const additionalNutrients =
+    notableNutrients
+      .slice(
+        4
+      );
+
+  const previewNutrientTags =
+    previewNutrients
+      .map(function(item){
+
+        return `
+          <span class="feed-tag">
+            ${item}
+          </span>
+        `;
+
+      })
+      .join("");
+
+  const additionalNutrientTags =
+    additionalNutrients
       .map(function(item){
 
         return `
@@ -2576,6 +2622,8 @@ function renderNutritionHighlights(
 
   const hasExtraContent =
     Boolean(
+      summaryText !== previewSummary ||
+      additionalNutrientTags ||
       remainingStrengths ||
       characteristicItems ||
       variabilityHtml
@@ -2605,16 +2653,19 @@ Nutrition Highlights
 
 <div class="feed-tile-preview">
 
-<p>
+${previewSummary
+  ? `
+    <p>
+      ${previewSummary}
+    </p>
+  `
+  : ""
+}
 
-${nutrition.nutritionSummary || ""}
-
-</p>
-
-${nutrientTags
+${previewNutrientTags
   ? `
     <div class="feed-tag-list">
-      ${nutrientTags}
+      ${previewNutrientTags}
     </div>
   `
   : ""
@@ -2623,7 +2674,7 @@ ${nutrientTags
 ${previewStrengths
   ? `
     <h3>
-      Primary Nutritional Strengths
+      Primary Nutritional Strength
     </h3>
 
     <ul>
@@ -2642,6 +2693,32 @@ ${hasExtraContent
       id="nutrition-highlights-extra"
       hidden
     >
+
+    ${summaryText !== previewSummary
+      ? `
+        <h3>
+          Full Nutrition Summary
+        </h3>
+
+        <p>
+          ${summaryText}
+        </p>
+      `
+      : ""
+    }
+
+    ${additionalNutrientTags
+      ? `
+        <h3>
+          Additional Notable Nutrients
+        </h3>
+
+        <div class="feed-tag-list">
+          ${additionalNutrientTags}
+        </div>
+      `
+      : ""
+    }
 
     ${remainingStrengths
       ? `
