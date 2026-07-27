@@ -154014,151 +154014,297 @@ feedingReference: {
           ]
         },
 
-        nutritionHighlights: {
-          nutritionSummary:
-            "Properly heat-processed Soybeans are among the most protein-rich feed crops available for poultry. Whole processed Soybeans combine high-quality protein with substantial natural oil, while soybean meal provides even more concentrated protein after oil extraction. Neither form is nutritionally complete by itself, but both serve as valuable ingredients in balanced poultry rations.",
+                  primaryNutritionalStrengths: [
+            {
+              nutrientRole:
+                "Concentrated Protein",
 
-          notableNutrients: [
-            "High-quality protein",
-            "Lysine",
-            "Arginine",
-            "Leucine",
-            "Essential amino acids",
-            "Natural soybean oil",
-            "Linoleic acid",
-            "Phosphorus",
-            "Potassium",
-            "Magnesium",
-            "Iron",
-            "B vitamins"
+              explanation:
+                "Properly processed Soybeans provide one of the highest protein concentrations available from a practical feed crop, supporting growth, feather production, tissue maintenance, and egg production."
+            },
+
+            {
+              nutrientRole:
+                "Strong Amino-Acid Profile",
+
+              explanation:
+                "Soybean protein supplies substantial amounts of essential amino acids and is especially valued for its lysine content, which complements the lower lysine concentration of many cereal grains."
+            },
+
+            {
+              nutrientRole:
+                "High Dietary Energy",
+
+              explanation:
+                "Whole processed Soybeans retain their natural oil, providing considerably more dietary energy than soybean meal from which much of the oil has been removed."
+            },
+
+            {
+              nutrientRole:
+                "Useful Grain Complement",
+
+              explanation:
+                "Processed Soybeans pair well nutritionally with corn, wheat, barley, oats, millet, and grain sorghum because their protein helps strengthen the amino-acid balance of grain-based rations."
+            },
+
+            {
+              nutrientRole:
+                "Essential Fatty Acids",
+
+              explanation:
+                "The oil in whole Soybeans contributes linoleic acid and other fatty acids that support energy intake, skin and feather condition, and normal poultry nutrition."
+            },
+
+            {
+              nutrientRole:
+                "Phosphorus Contribution",
+
+              explanation:
+                "Soybeans contribute meaningful phosphorus, although some is bound in phytate and the ingredient remains too low in calcium to meet the mineral requirements of laying hens by itself."
+            }
           ],
 
-          primaryNutritionalStrengths: [
-            "Excellent source of highly digestible protein after proper heat processing.",
-            "Outstanding lysine content helps complement cereal grains that are naturally lower in lysine.",
-            "Whole processed Soybeans provide substantial dietary energy from retained natural oil.",
-            "Soybean meal offers one of the highest practical protein concentrations available for poultry feeds.",
-            "Supports feather development through excellent amino-acid availability when properly processed.",
-            "Provides valuable essential fatty acids in full-fat Soybean products.",
-            "Long-established ingredient in commercial poultry nutrition.",
-            "Suitable for long-term dry storage after proper drying and handling."
-          ],
-
-          nutritionalVariabilityFactors: [
-            "Whole processed Soybeans and soybean meal differ greatly because oil extraction changes nutrient concentration.",
-            "Protein concentration varies among cultivars, growing conditions, and processing methods.",
-            "Oil content differs between varieties and environmental conditions.",
-            "Heat-processing quality directly influences protein digestibility.",
-            "Excessive heating may reduce lysine availability and overall protein quality.",
-            "Moisture content influences reported nutrient percentages.",
-            "Immature edamame differs nutritionally from mature dry Soybeans.",
-            "Storage conditions may influence oil quality and freshness over time."
-          ],
-
-          typicalWholeSeedCharacteristics: {
-            protein:
-              "Very high",
-
-            energy:
-              "Very high",
-
-            fat:
-              "High",
-
-            fiber:
-              "Moderate",
-
-            calcium:
-              "Low",
-
-            phosphorus:
-              "Moderate",
-
-            moisture:
-              "Low after proper drying",
-
-            storagePotential:
-              "Excellent after proper drying and processing"
-          }
-        },
-
-        benefits: {
+                benefits: {
           benefitSummary:
-            "Properly processed Soybeans provide one of the most valuable homegrown protein sources available for poultry. Their exceptional amino-acid profile, high energy content, nitrogen-fixing ability, and excellent storage characteristics make them an outstanding feed crop when processing requirements are consistently met.",
+            "Properly processed Soybeans provide exceptional protein value and can strengthen grain-based poultry diets when they are accurately incorporated into a balanced ration. Their benefits are greatest when processing quality, storage, and total-diet formulation are carefully controlled.",
 
           primaryBenefits: [
-            "Exceptional protein concentration after proper processing.",
-            "Excellent lysine content complements grain-based rations.",
-            "Natural oil contributes concentrated dietary energy.",
-            "Widely researched and extensively used in commercial poultry nutrition.",
-            "Stores well after proper drying and processing.",
-            "Supports homegrown feed self-sufficiency.",
-            "Can reduce dependence on purchased protein ingredients when processed correctly.",
-            "Suitable for long-term storage as a strategic feed reserve."
+            {
+              title:
+                "Exceptional Protein Contribution",
+
+              explanation:
+                "Properly processed Soybeans provide one of the most concentrated and practical plant-protein sources available for poultry feeding."
+            },
+
+            {
+              title:
+                "Strong Lysine Contribution",
+
+              explanation:
+                "Soybean protein is especially useful in grain-based rations because it supplies substantial lysine, an essential amino acid that is comparatively limited in many cereal grains."
+            },
+
+            {
+              title:
+                "Supports Growth and Feather Development",
+
+              explanation:
+                "The protein and amino acids in processed Soybeans support muscle growth, tissue maintenance, feather formation, and recovery from normal feather loss."
+            },
+
+            {
+              title:
+                "Supports Egg Production",
+
+              explanation:
+                "When included at an appropriate level in a complete layer ration, processed Soybeans help supply the amino acids needed for sustained egg production."
+            },
+
+            {
+              title:
+                "Provides Concentrated Energy",
+
+              explanation:
+                "Whole full-fat Soybeans retain their natural oil and contribute substantially more dietary energy than soybean meal."
+            },
+
+            {
+              title:
+                "Complements Cereal Grains",
+
+              explanation:
+                "Processed Soybeans pair effectively with corn, wheat, barley, oats, millet, and grain sorghum because they improve the protein quality of grain-heavy rations."
+            },
+
+            {
+              title:
+                "Flexible Processed Forms",
+
+              explanation:
+                "Soybeans may be used as commercially prepared soybean meal, properly roasted whole beans, extruded full-fat Soybeans, or other professionally processed products."
+            },
+
+            {
+              title:
+                "Useful Stored Protein Crop",
+
+              explanation:
+                "Properly dried mature Soybeans can provide a valuable stored protein resource for use beyond the growing season."
+            }
           ],
 
           enrichmentBenefits: [
-            "Occasional whole processed Soybeans encourage natural pecking behavior.",
-            "Limited postharvest gleaning opportunities may provide supervised foraging enrichment.",
-            "Seasonal cooked edamame offers dietary variety.",
-            "Changing feed texture can increase flock interest without changing the nutritional foundation."
+            {
+              benefit:
+                "Occasional Cooked Edamame Enrichment",
+
+              explanation:
+                "Plain cooked immature green Soybeans may provide limited pecking and feeding enrichment when offered occasionally in modest portions."
+            },
+
+            {
+              benefit:
+                "Varied Supplemental Feeding",
+
+              explanation:
+                "Small amounts of suitable processed Soybean products can add variety to a carefully managed supplemental-feeding program."
+            }
           ],
 
           flockManagementBenefits: [
-            "High-quality protein supports feather replacement during molt.",
-            "Excellent amino-acid profile supports productive laying hens when incorporated into balanced rations.",
-            "Provides concentrated nutrition with relatively little storage space.",
-            "Reliable long-term storage simplifies feed planning.",
-            "Works well alongside cereal grains in balanced home feed formulations."
+            "A concentrated protein ingredient may reduce the amount of bulky low-protein material needed within a properly formulated ration.",
+
+            "Commercial soybean meal provides relatively predictable nutritional composition and simplifies ration formulation compared with many variable homegrown protein sources.",
+
+            "Stored processed Soybeans can help support year-round feed planning when current-crop forage and garden supplements are unavailable.",
+
+            "Separating raw beans, processed beans, and planting seed encourages safer feed-storage and labeling practices.",
+
+            "Accurately measured Soybean ingredients can support consistent feeding across different seasons."
           ],
 
           homesteadBenefits: [
-            "Produces both a valuable feed crop and an important rotation crop.",
-            "Biological nitrogen fixation can benefit crop rotations.",
-            "Improves overall farm feed independence.",
-            "Compatible with diversified warm-season cropping systems.",
-            "Produces valuable crop residue after harvest.",
-            "May reduce purchased protein costs where dependable processing equipment is available.",
-            "Provides both feed value and soil-building benefits within the same production system."
+            "Soybeans can improve homestead feed self-reliance when the grower has dependable processing equipment and ration-formulation knowledge.",
+
+            "The crop can serve both poultry-feed and broader household or livestock-planning goals where suitable food-grade or feed-grade varieties are selected.",
+
+            "Soybeans contribute biological nitrogen fixation within crop rotations when effective nodulation occurs.",
+
+            "Crop residues may contribute organic matter after harvest when managed appropriately.",
+
+            "Dry beans are compact relative to many fresh forage crops and can be stored efficiently before processing.",
+
+            "Homegrown Soybeans may reduce reliance on purchased protein ingredients when yields, processing costs, and storage losses remain favorable."
           ]
         },
 
         limitations: {
           limitationSummary:
-            "Soybeans provide exceptional nutritional value only after proper processing. Raw mature Soybeans are unsuitable for poultry feeding, and even processed Soybeans must remain part of a nutritionally balanced ration rather than serving as complete feed.",
+            "Soybeans have major nutritional value, but they are also among the least forgiving feed crops when processing is uncertain. Mature raw beans are unsuitable for poultry, and even properly processed Soybeans cannot replace the nutritional balance of a complete ration.",
 
           primaryLimitations: [
-            "Raw mature Soybeans require heat processing before feeding.",
-            "Underprocessing leaves harmful antinutritional compounds active.",
-            "Overheating may reduce protein quality.",
-            "Processing requires additional labor, equipment, and management.",
-            "Whole processed Soybeans and soybean meal cannot be substituted directly without ration adjustments.",
-            "Not a complete poultry feed by themselves.",
-            "Require careful long-term storage because retained oil may become rancid."
+            {
+              title:
+                "Raw Mature Beans Are Unsuitable",
+
+              explanation:
+                "Mature raw Soybeans contain trypsin inhibitors, lectins, and other antinutritional compounds that interfere with digestion and nutrient use."
+            },
+
+            {
+              title:
+                "Dependable Heat Processing Is Essential",
+
+              explanation:
+                "Mature Soybeans must receive adequate and uniform heat treatment before feeding, and casual warming or uneven roasting may leave a batch underprocessed."
+            },
+
+            {
+              title:
+                "Overheating Can Damage Protein Quality",
+
+              explanation:
+                "Excessive heating can reduce amino-acid availability, particularly lysine, even when the beans appear thoroughly cooked."
+            },
+
+            {
+              title:
+                "Not a Complete Poultry Feed",
+
+              explanation:
+                "Processed Soybeans do not independently provide the correct balance of energy, calcium, vitamins, minerals, and all other nutrients required by chickens."
+            },
+
+            {
+              title:
+                "Whole Beans and Soybean Meal Are Not Equivalent",
+
+              explanation:
+                "Whole full-fat Soybeans contain substantially more oil and generally less concentrated protein than soybean meal, so one cannot replace the other on a simple one-for-one basis."
+            },
+
+            {
+              title:
+                "Home Processing Can Be Inconsistent",
+
+              explanation:
+                "Small-batch processing may produce uneven heating because of differences in bean moisture, batch depth, equipment, exposure time, and heat distribution."
+            },
+
+            {
+              title:
+                "Full-Fat Products Can Become Rancid",
+
+              explanation:
+                "The natural oil in whole processed Soybeans increases the risk of oxidative rancidity, especially after the beans are cracked or ground."
+            },
+
+            {
+              title:
+                "Accurate Formulation Is Required",
+
+              explanation:
+                "Because Soybeans are concentrated ingredients, inaccurate inclusion levels can distort the protein, energy, fat, and mineral balance of the total ration."
+            }
           ],
 
           nutritionalLimitations: [
-            "Insufficient calcium for laying hens when fed alone.",
-            "Require balancing with vitamins, minerals, and other feed ingredients.",
-            "Protein alone does not create a complete ration.",
-            "Whole full-fat Soybeans contain considerably more oil than soybean meal.",
-            "Immature edamame is not nutritionally equivalent to mature processed Soybeans."
+            "Soybeans are too low in calcium to satisfy the needs of laying hens.",
+
+            "Soybean ingredients do not supply a complete vitamin-and-mineral package.",
+
+            "Some phosphorus is bound in phytate and may not be fully available to poultry.",
+
+            "Soybeans are not nutritionally interchangeable with complete starter, grower, layer, breeder, or maintenance feed.",
+
+            "The amino-acid profile is valuable but still must be balanced within the complete diet.",
+
+            "Whole full-fat Soybeans can raise dietary fat and energy more rapidly than expected when substituted for soybean meal.",
+
+            "Excessive Soybean inclusion may reduce the dietary space available for other essential ingredients.",
+
+            "Cooked immature edamame contains much more moisture and far less concentrated nutrition than dry processed Soybean products."
           ],
 
           practicalLimitations: [
-            "Home heat processing requires dependable temperature control.",
-            "Commercial soybean meal is often easier and more consistent than home processing.",
-            "Large quantities require rodent-resistant storage.",
-            "Oil-rich products have shorter storage life after grinding.",
-            "Planting seed must never be confused with feed-grade Soybeans."
+            "Reliable home processing may require specialized roasting, extrusion, cooking, drying, or temperature-control equipment.",
+
+            "Visual inspection alone cannot reliably prove that mature beans were processed adequately.",
+
+            "Raw and processed beans must be stored and labeled separately to prevent accidental feeding errors.",
+
+            "Chemically treated planting seed must never enter the poultry-feed supply.",
+
+            "Cracked or ground full-fat Soybeans generally have a shorter practical storage life than intact dry beans.",
+
+            "Mold, moisture damage, insects, rodents, and rancidity can cause substantial postharvest losses.",
+
+            "Harvesting, threshing, cleaning, drying, processing, and grinding can require considerable labor at backyard scale.",
+
+            "Purchased soybean meal may be more economical and dependable than growing and processing a small home crop.",
+
+            "Different processed products can vary enough in protein, oil, moisture, and digestibility that accurate substitution requires reformulation.",
+
+            "Small flocks may consume processed batches too slowly to avoid quality decline after grinding."
           ],
 
           unsuitableExpectations: [
-            "Soybeans cannot safely replace complete poultry feed by themselves.",
-            "Raw beans should never be viewed as a shortcut to inexpensive protein.",
-            "Simply cooking, soaking, or sprouting without proper processing does not guarantee safety.",
-            "Growing Soybeans alone does not eliminate the need for balanced poultry nutrition.",
-            "Nitrogen fixation benefits the cropping system but does not directly improve the nutritional quality of harvested beans."
+            "Soybeans should not be expected to serve as a complete feed by themselves.",
+
+            "Raw mature Soybeans should not be expected to become safe through soaking, sprouting, cracking, or light warming alone.",
+
+            "Heat processing should not be expected to make moldy, rancid, chemically contaminated, or treated seed suitable for feeding.",
+
+            "Whole processed Soybeans should not be expected to replace soybean meal without adjusting the complete ration.",
+
+            "Soybeans should not be expected to correct inadequate calcium, vitamins, minerals, sodium, or overall energy balance automatically.",
+
+            "Cooked edamame should not be expected to provide the concentrated nutritional value of mature dry Soybean products.",
+
+            "A homegrown Soybean crop should not automatically be expected to reduce feed costs after labor, equipment, processing fuel, and storage losses are considered.",
+
+            "High protein content should not be interpreted as permission to feed Soybeans free choice or without measured inclusion limits."
           ]
         },
 
