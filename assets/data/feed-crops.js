@@ -158790,7 +158790,4947 @@ feedingReference: {
     summary:
       "Field peas are cool-season annual grain legumes grown for dry mature seed, immature green peas, forage, household food, livestock feed, biological nitrogen fixation, and crop rotation. Dry field peas can provide chickens with protein, starch, lysine, minerals, and stored-feed value, but they remain an incomplete ration ingredient and vary substantially among cultivars. White-flowered, low-tannin feed-pea varieties are generally more suitable for poultry feeding than strongly pigmented, high-tannin types. Mature peas may be fed raw when an appropriate low-antinutritional-factor variety is used within a correctly formulated ration, although cracking, grinding, dehulling, cooking, or other processing may improve handling or nutritional use in some situations. Field peas are not equivalent to southern field peas or cowpeas, which belong to Vigna unguiculata. The crop performs best during cool weather, tolerates light frost, fixes nitrogen when properly nodulated, and is damaged by prolonged heat, waterlogging, disease pressure, lodging, wildlife, and delayed harvest.",
 
-    chickenUse: {
+    
+    
+    ///////////////////////////
+//
+//  Field Pea - What can chickens eat?
+//
+//////////////////////////
+
+
+      feedingReference: {
+        overview: {
+          answerLabel:
+            "Useful Protein-Oriented Supplement When Properly Managed",
+
+          quickAnswer:
+            "Chickens may eat clean, sound Field Peas in several forms, including mature dry peas, cracked or coarsely ground peas, plain cooked peas, fresh immature peas, and limited tender foliage. Mature low-tannin feed or food varieties can provide useful protein, lysine, starch, and stored-feed value, but Field Peas are not a complete ration and are relatively limited in methionine and other sulfur-containing amino acids. Cultivar identity and processing matter. Never feed chemically treated planting seed, moldy peas, musty peas, heated grain, rodent-contaminated material, or unidentified peas.",
+
+          guideUrl:
+            "growing-field-peas-for-chickens.html",
+
+          primaryUse:
+            "Protein-oriented and starch-containing supplemental grain for properly balanced poultry feeding systems",
+
+          primaryWarning:
+            "Field Peas vary substantially by cultivar, seed-coat type, tannin level, and antinutritional-factor profile. They must not replace a nutritionally complete poultry ration or be formulated from crude-protein percentage alone.",
+
+          supplementOnly:
+            true,
+
+          completeFeedReplacement:
+            false,
+
+          unrestrictedAccessRecommended:
+            false
+        },
+
+        classification: {
+          trafficLightRating:
+            "green-with-formulation-and-cultivar-cautions",
+
+          safetyStatus:
+            "generally-suitable-when-clean-identified-and-properly-used",
+
+          primaryFeedRole:
+            "protein-oriented-starch-containing-grain-supplement",
+
+          cropUseCategory:
+            "cool-season-grain-legume-and-dual-purpose-food-crop",
+
+          primaryEdibleMaterial:
+            "Clean mature dry peas from identified untreated food or feed varieties",
+
+          primaryAvoidMaterial:
+            "Chemically treated seed, moldy or heated peas, rodent-contaminated peas, unidentified cultivars, spoiled cooked peas, and excessive unbalanced quantities",
+
+          requiresPositiveIdentification:
+            true,
+
+          requiresCompleteBaseRation:
+            true,
+
+          suitableForRoutineFreeChoiceFeeding:
+            false,
+
+          suitableForUnrestrictedLivingForage:
+            false,
+
+          cookingUniversallyRequired:
+            false,
+
+          universalBackyardFeedingRateEstablished:
+            false
+        },
+
+        quickRatings: {
+          overallRecommendationScore:
+            4,
+
+          energyValueScore:
+            3,
+
+          storageValueScore:
+            5,
+
+          enrichmentValueScore:
+            3,
+
+          adultChickenSuitabilityScore:
+            4,
+
+          layingHenSuitabilityScore:
+            4,
+
+          youngChickSuitabilityScore:
+            2,
+
+          preparationEaseScore:
+            3,
+
+          safetySimplicityScore:
+            3,
+
+          homesteadSupportValueScore:
+            5
+        },
+
+        safety: {
+          primarySafetySummary:
+            "Clean, sound Field Peas from identified untreated food or feed varieties can be useful poultry-feed ingredients or measured supplements. White-flowered, light-seeded, low-tannin feed peas are generally preferred for poultry use because darker or strongly pigmented types may contain more tannins and seed-coat fiber. Field Peas are not nutritionally complete, are relatively limited in methionine, and should not displace an age-appropriate complete ration. Never feed chemically treated planting seed or peas that are moldy, musty, heated, sprouted in storage, insect-damaged, rodent-contaminated, chemically contaminated, or otherwise questionable.",
+
+          generalSafetyRating:
+            "generally-safe-with-cultivar-processing-and-ration-controls",
+
+          coreSafetyPrinciple:
+            "Field Peas are useful supplemental or formulated feed ingredients, but safe use depends on correct crop identity, untreated seed, suitable cultivar choice, sound storage, appropriate particle size, and protection of complete-ration intake.",
+
+          safestPracticalUse:
+            "Clean low-tannin mature peas offered in small measured portions, cracked or coarsely ground for easier consumption, or incorporated into a professionally balanced ration.",
+
+          primaryConcern:
+            "Nutritional imbalance, cultivar-dependent antinutritional factors, and contamination of stored or treated seed",
+
+          safeMaterials: [
+            {
+              material:
+                "Clean whole mature dry Field Peas",
+
+              conditions:
+                "Use only positively identified untreated food or feed peas that are fully mature, adequately dried, free from mold and insects, and stored under cool dry conditions."
+            },
+
+            {
+              material:
+                "Cracked mature Field Peas",
+
+              conditions:
+                "Prepared from clean dry peas and offered in measured amounts or used within a properly balanced ration."
+            },
+
+            {
+              material:
+                "Coarsely ground Field Peas",
+
+              conditions:
+                "Ground only from clean sound peas, kept coarse enough to reduce dust, and used promptly or stored carefully because processed peas are less stable than intact grain."
+            },
+
+            {
+              material:
+                "Professionally formulated pea meal",
+
+              conditions:
+                "Used only in a complete ration that accounts for metabolizable energy, digestible amino acids, methionine limitation, calcium, available phosphorus, sodium, vitamins, trace minerals, and the characteristics of the actual pea lot."
+            },
+
+            {
+              material:
+                "Plain cooked mature peas",
+
+              conditions:
+                "Cooked without salt, butter, sauces, onions, garlic, or unsuitable seasonings, cooled fully, and offered in modest portions."
+            },
+
+            {
+              material:
+                "Fresh immature green peas",
+
+              conditions:
+                "Clean, sound, and offered as a seasonal high-moisture treat rather than as a concentrated protein ingredient."
+            },
+
+            {
+              material:
+                "Tender edible pods",
+
+              conditions:
+                "Use only young clean pods from varieties intended for pod consumption and offer them in limited amounts."
+            },
+
+            {
+              material:
+                "Young clean pea foliage",
+
+              conditions:
+                "Offered conservatively through cut-and-carry feeding, without allowing birds to destroy the grain crop unless forage production is the intended goal."
+            },
+
+            {
+              material:
+                "Sound unseasoned household-food peas",
+
+              conditions:
+                "Plain, fresh, free from spoilage, and offered in small amounts that do not reduce complete-feed intake."
+            }
+          ],
+
+          unsafeMaterials: [
+            {
+              material:
+                "Chemically treated planting seed",
+
+              reason:
+                "Seed treated with fungicides, insecticides, colored coatings, or other planting chemicals must never be fed."
+            },
+
+            {
+              material:
+                "Unidentified peas",
+
+              reason:
+                "Field Peas must not be confused with Cowpeas, southern peas, ornamental peas, or other unrelated plants commonly called peas."
+            },
+
+            {
+              material:
+                "Moldy or musty peas",
+
+              reason:
+                "Mold and associated contamination may be present beyond what is visibly apparent."
+            },
+
+            {
+              material:
+                "Heated or damp stored peas",
+
+              reason:
+                "Heating or retained moisture indicates unsafe storage conditions and increased mold risk."
+            },
+
+            {
+              material:
+                "Rodent-contaminated peas",
+
+              reason:
+                "Rodent urine, droppings, hair, and gnaw damage create biological contamination risks."
+            },
+
+            {
+              material:
+                "Insect-damaged or webbed peas",
+
+              reason:
+                "Heavy infestation lowers quality and may accompany contamination, moisture damage, or poor storage."
+            },
+
+            {
+              material:
+                "Sprouted peas from accidental wet storage",
+
+              reason:
+                "Uncontrolled sprouting during storage indicates moisture exposure and possible microbial deterioration."
+            },
+
+            {
+              material:
+                "Fermented or sour-smelling peas",
+
+              reason:
+                "Uncontrolled fermentation or sour odor indicates spoilage rather than safe processing."
+            },
+
+            {
+              material:
+                "Salted or seasoned cooked peas",
+
+              reason:
+                "Household preparations containing excess salt, butter, sauces, onions, garlic, or unsuitable ingredients should not be fed."
+            },
+
+            {
+              material:
+                "Large quantities of whole peas for young chicks",
+
+              reason:
+                "Young chicks need a complete starter ration and may not handle large whole peas efficiently."
+            },
+
+            {
+              material:
+                "Dark-seeded or high-tannin peas used without evaluation",
+
+              reason:
+                "Pigmented varieties may contain more tannins and fiber and should not automatically receive the same feeding recommendation as documented low-tannin feed peas."
+            },
+
+            {
+              material:
+                "Peas harvested from chemically contaminated areas",
+
+              reason:
+                "Material exposed to pesticides, herbicides, fuel, floodwater, sewage, or unknown contaminants should not be fed."
+            }
+          ],
+
+          majorHazards: [
+            {
+              hazard:
+                "Chemically treated planting seed",
+
+              severity:
+                "high",
+
+              explanation:
+                "Commercial planting seed may carry fungicides, insecticides, dyes, or other coatings that make it unsuitable for food or feed."
+            },
+
+            {
+              hazard:
+                "Cultivar-dependent tannins",
+
+              severity:
+                "moderate-to-high",
+
+              explanation:
+                "Colored-flowered and dark-seeded peas may contain more tannins than white-flowered, light-seeded feed types, reducing protein and energy utilization."
+            },
+
+            {
+              hazard:
+                "Methionine limitation",
+
+              severity:
+                "high-when-used-as-a-primary-protein-source",
+
+              explanation:
+                "Field Peas contribute useful lysine but are relatively limited in methionine and other sulfur-containing amino acids, so they cannot serve as the sole protein ingredient."
+            },
+
+            {
+              hazard:
+                "Complete-ration displacement",
+
+              severity:
+                "high",
+
+              explanation:
+                "Large supplemental portions may reduce intake of balanced feed and create deficiencies in energy, amino acids, calcium, sodium, vitamins, and trace minerals."
+            },
+
+            {
+              hazard:
+                "Trypsin inhibitors and lectins",
+
+              severity:
+                "moderate-and-cultivar-dependent",
+
+              explanation:
+                "Field Peas generally contain lower antinutritional activity than raw Soybeans, but levels vary and should not be described as absent."
+            },
+
+            {
+              hazard:
+                "Phytate",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Phytate may reduce the availability of phosphorus and certain minerals."
+            },
+
+            {
+              hazard:
+                "Non-starch polysaccharides and seed-coat fiber",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Fiber and non-starch polysaccharides can reduce usable energy and nutrient utilization, particularly in heavily coated or pigmented varieties."
+            },
+
+            {
+              hazard:
+                "Mold and storage deterioration",
+
+              severity:
+                "high",
+
+              explanation:
+                "Insufficiently dried peas may heat, mold, clump, ferment, or develop musty odors during storage."
+            },
+
+            {
+              hazard:
+                "Storage insects",
+
+              severity:
+                "moderate-to-high",
+
+              explanation:
+                "Whole dry peas are vulnerable to seed beetles and other pantry pests when storage containers and sanitation are inadequate."
+            },
+
+            {
+              hazard:
+                "Rodent contamination",
+
+              severity:
+                "high",
+
+              explanation:
+                "Rodents may consume, damage, and contaminate stored peas."
+            },
+
+            {
+              hazard:
+                "Excessively fine grinding",
+
+              severity:
+                "moderate",
+
+              explanation:
+                "Fine pea meal may create inhalable dust, separate from other feed ingredients, absorb moisture rapidly, and be difficult to mix evenly."
+            },
+
+            {
+              hazard:
+                "Young-bird nutritional dilution",
+
+              severity:
+                "high",
+
+              explanation:
+                "Chicks and growing pullets require precise age-appropriate nutrition and should not receive substantial informal pea supplementation."
+            }
+          ],
+
+          requiredSafetyPractices: [
+            "Confirm that the crop is Pisum sativum Field Peas rather than Cowpeas or another crop called peas.",
+            "Use only peas intended for food or feed.",
+            "Never feed chemically treated planting seed.",
+            "Prefer documented low-tannin food or feed varieties.",
+            "Do not assume flower or seed color alone replaces reliable cultivar information or feed analysis.",
+            "Harvest only mature sound seed for dry storage.",
+            "Dry peas thoroughly before sealed storage.",
+            "Remove stones, soil, chaff, broken seed, diseased peas, moldy peas, insects, and foreign material.",
+            "Store whole peas cool, dry, dark, and protected from insects and rodents.",
+            "Inspect stored peas regularly for condensation, heating, webbing, insects, clumping, discoloration, and off odors.",
+            "Use cracking or coarse grinding when whole peas are consumed inefficiently.",
+            "Avoid excessively fine dusty grinding.",
+            "Keep an age-appropriate complete poultry ration available.",
+            "Introduce peas gradually.",
+            "Do not formulate a ration from crude-protein percentage alone.",
+            "Account for methionine and other sulfur-amino-acid limitations.",
+            "Keep fresh or cooked pea portions modest because they contain more moisture and spoil faster than dry peas.",
+            "Discard questionable material rather than attempting to salvage it."
+          ],
+
+          specialWarnings: [
+            "Field Peas are Pisum sativum and are not the same crop as Cowpeas or southern field peas.",
+            "White-flowered and light-seeded feed varieties are generally preferred, but flower color alone is not a complete feed-safety test.",
+            "Raw mature low-tannin feed peas do not universally require cooking when used appropriately.",
+            "Cooking is optional processing, not proof that contaminated peas have become safe.",
+            "Grinding changes particle size but does not correct amino-acid imbalance or antinutritional factors.",
+            "Published poultry inclusion rates come from balanced experimental diets and should not be copied into an unbalanced backyard mixture.",
+            "Peas are not a sufficient calcium source for laying hens.",
+            "Fresh green peas are much less nutrient-dense per pound than mature dry peas.",
+            "Whole dry peas store better than cracked or ground peas under otherwise equal conditions.",
+            "No universal safe backyard inclusion percentage has been established."
+          ],
+
+          stopFeedingAndEvaluateIf: [
+            "Complete-feed intake declines.",
+            "Birds selectively consume peas while leaving balanced feed.",
+            "Droppings change persistently.",
+            "Growth or body condition declines.",
+            "Egg production changes unexpectedly.",
+            "Eggshell quality worsens.",
+            "Birds become weak, quiet, or unusually inactive.",
+            "Stored peas develop condensation, heat, musty odor, mold, insects, webbing, or clumping.",
+            "Cooked peas become sour, slimy, or fermented.",
+            "The cultivar or treatment history becomes uncertain.",
+            "Chemically treated seed may have entered the feed supply."
+          ],
+
+          safetyConclusion:
+            "Field Peas are one of the more useful homegrown protein-oriented grain crops for chickens when clean low-tannin peas are selected, stored safely, processed appropriately, and used within a nutritionally complete feeding system. Their value does not eliminate the need for balanced amino acids, adequate calcium, sound storage, and strict rejection of treated or contaminated seed."
+        },
+
+        birdStages: {
+          adultChickens: {
+            suitabilityLevel:
+              "Highly suitable as a controlled supplement",
+
+            recommendation:
+              "Healthy established adult chickens may receive clean mature Field Peas in measured amounts, either whole when readily consumed, cracked, coarsely ground, plain cooked, or incorporated into a properly balanced ration. Complete poultry feed should remain continuously available.",
+
+            preferredForms: [
+              "Cracked mature dry peas",
+              "Coarsely ground mature peas",
+              "Small measured portions of whole dry peas",
+              "Plain cooked peas",
+              "Fresh immature green peas",
+              "Professionally formulated pea meal"
+            ],
+
+            primaryConcerns: [
+              "Methionine and sulfur-amino-acid limitation",
+              "Cultivar-dependent tannins and antinutritional factors",
+              "Complete-feed displacement",
+              "Poor consumption of large whole peas",
+              "Dust from excessively fine grinding",
+              "Storage mold, insects, and rodent contamination"
+            ],
+
+            managementGuidance:
+              "Introduce peas gradually, observe how efficiently the flock consumes the chosen particle size, and keep total supplementation controlled. Use cracked or coarsely ground peas when birds leave whole peas uneaten or sort them from other feed."
+          },
+
+          layingHens: {
+            suitabilityLevel:
+              "Useful within a balanced layer-feeding program",
+
+            recommendation:
+              "Laying hens may receive measured Field Peas as a protein-oriented and starch-containing supplement, but peas do not supply a complete amino-acid profile or sufficient calcium for egg production. Complete layer feed and appropriate calcium management must remain the foundation.",
+
+            preferredForms: [
+              "Cracked mature dry peas",
+              "Coarsely ground peas",
+              "Pea meal in a balanced layer ration",
+              "Plain cooked peas",
+              "Fresh green peas as a seasonal treat"
+            ],
+
+            primaryConcerns: [
+              "Insufficient methionine",
+              "Insufficient calcium",
+              "Reduced layer-feed intake",
+              "Unbalanced homemade mixtures",
+              "Changes in egg production or shell quality",
+              "High-tannin or heavily pigmented varieties"
+            ],
+
+            managementGuidance:
+              "Do not use Field Peas as a substitute for complete layer feed, oyster shell, or another appropriate calcium source. Reduce supplementation if egg production, shell quality, body condition, or normal layer-feed consumption declines."
+          },
+
+          pullets: {
+            suitabilityLevel:
+              "Limited and secondary to complete grower feed",
+
+            recommendation:
+              "Growing pullets should receive a complete age-appropriate grower ration. Small amounts of appropriately processed Field Peas may be used cautiously, but substantial informal supplementation can dilute energy, amino acids, vitamins, and minerals needed for proper development.",
+
+            preferredForms: [
+              "Small amounts of cracked peas",
+              "Coarsely ground peas within a balanced grower ration",
+              "Plain cooked peas in very limited quantities"
+            ],
+
+            primaryConcerns: [
+              "Nutrient dilution during growth",
+              "Methionine limitation",
+              "Reduced complete-feed intake",
+              "Large particle size",
+              "Uneven consumption",
+              "Excessive reliance on crude-protein percentage"
+            ],
+
+            managementGuidance:
+              "Keep complete grower feed dominant and avoid allowing pullets to fill up on whole peas, cooked peas, fresh peas, or other supplements."
+          },
+
+          youngChicks: {
+            suitabilityLevel:
+              "Not recommended as a meaningful supplement",
+
+            recommendation:
+              "Young chicks should receive a nutritionally complete chick starter. Whole peas, home-ground pea mixtures, and substantial cooked-pea portions are not appropriate replacements for starter feed.",
+
+            preferredForms: [],
+
+            primaryConcerns: [
+              "Very small body size",
+              "High growth-related nutrient requirements",
+              "Particle size and swallowing difficulty",
+              "Methionine and amino-acid imbalance",
+              "Complete-starter displacement",
+              "Inability to control individual intake"
+            ],
+
+            managementGuidance:
+              "Do not deliberately provide substantial Field Pea supplements to young chicks. Any pea ingredient in chick feed should be properly processed and included through professional ration formulation."
+          },
+
+          broilersAndMeatBirds: {
+            suitabilityLevel:
+              "Suitable only within controlled ration formulation",
+
+            recommendation:
+              "Field Peas may be used in meat-bird diets when the actual variety and nutrient composition are known and the ration is balanced for energy, digestible amino acids, methionine, vitamins, and minerals. Research inclusion levels should not be copied directly into informal backyard mixtures.",
+
+            preferredForms: [
+              "Coarsely ground peas",
+              "Properly processed pea meal",
+              "Professionally formulated complete feed containing peas"
+            ],
+
+            primaryConcerns: [
+              "Rapid growth requirements",
+              "Methionine limitation",
+              "Variable energy value",
+              "Cultivar-dependent tannins",
+              "Excessive fiber",
+              "Reduced growth from unbalanced inclusion"
+            ],
+
+            managementGuidance:
+              "Use complete broiler feed for ordinary backyard management. Meaningful pea inclusion belongs in a calculated ration rather than a hand-estimated grain mixture."
+          },
+
+          roosters: {
+            suitabilityLevel:
+              "Suitable as a measured supplement",
+
+            recommendation:
+              "Healthy adult roosters may receive clean whole, cracked, coarsely ground, or plain cooked Field Peas in modest amounts while a complete adult ration remains available.",
+
+            preferredForms: [
+              "Cracked dry peas",
+              "Coarsely ground peas",
+              "Small whole-pea portions",
+              "Plain cooked peas"
+            ],
+
+            primaryConcerns: [
+              "Excess calorie intake",
+              "Complete-feed displacement",
+              "Uneven consumption",
+              "Storage contamination",
+              "Cultivar-dependent antinutritional factors"
+            ],
+
+            managementGuidance:
+              "Use the same gradual introduction and portion control recommended for other adult chickens."
+          },
+
+          breedingFlocks: {
+            suitabilityLevel:
+              "Use only within a nutritionally controlled program",
+
+            recommendation:
+              "Breeding flocks may receive Field Peas only as part of a feeding program that protects breeder-feed intake and reproductive nutrient balance. Peas alone cannot supply the complete amino-acid, vitamin, mineral, and energy profile needed for fertility and hatchability.",
+
+            preferredForms: [
+              "Coarsely ground peas in a balanced breeder ration",
+              "Small measured cracked-pea supplements"
+            ],
+
+            primaryConcerns: [
+              "Reduced breeder-feed intake",
+              "Methionine deficiency",
+              "Mineral imbalance",
+              "Declining fertility",
+              "Reduced hatchability",
+              "Variable cultivar feeding value"
+            ],
+
+            managementGuidance:
+              "Keep complete breeder feed dominant and stop or reduce pea supplementation if fertility, hatchability, body condition, or normal feed intake changes adversely."
+          },
+
+          seniorOrLowActivityBirds: {
+            suitabilityLevel:
+              "Suitable in small controlled portions",
+
+            recommendation:
+              "Older or less active chickens may receive small amounts of cracked, coarsely ground, or softened plain cooked peas, but energy intake and body condition should be monitored carefully.",
+
+            preferredForms: [
+              "Cracked peas",
+              "Coarsely ground peas",
+              "Plain cooked peas"
+            ],
+
+            primaryConcerns: [
+              "Reduced total feed intake",
+              "Weight gain",
+              "Difficulty handling large whole peas",
+              "Nutrient displacement",
+              "Individual health limitations"
+            ],
+
+            managementGuidance:
+              "Choose an easy-to-consume form, keep portions modest, and discontinue use if appetite, droppings, activity, or body condition worsens."
+          },
+
+          moltingBirds: {
+            suitabilityLevel:
+              "Potentially useful but not a complete molt supplement",
+
+            recommendation:
+              "Field Peas can contribute plant protein during molt, but their crude-protein level should not be confused with complete feather-building nutrition. Molting birds still require balanced digestible amino acids, especially methionine.",
+
+            preferredForms: [
+              "Cracked mature peas",
+              "Coarsely ground peas",
+              "Pea meal within a balanced complete ration"
+            ],
+
+            primaryConcerns: [
+              "Methionine limitation",
+              "Incomplete amino-acid balance",
+              "Insufficient dietary energy",
+              "Reduced complete-feed consumption",
+              "Overestimating protein value from crude-protein percentage"
+            ],
+
+            managementGuidance:
+              "Maintain a complete ration appropriate for the flock and use peas only as a secondary ingredient or measured supplement."
+          },
+
+          sickOrRecoveringBirds: {
+            suitabilityLevel:
+              "Use cautiously and only when appropriate",
+
+            recommendation:
+              "Field Peas should not be used as a treatment for illness. Sick or recovering birds may have reduced appetite, impaired digestion, or special nutritional needs and should receive appropriate supportive care and veterinary guidance.",
+
+            preferredForms: [
+              "Small amounts of plain soft cooked peas only when suitable for the individual bird"
+            ],
+
+            primaryConcerns: [
+              "Reduced appetite",
+              "Dehydration",
+              "Digestive intolerance",
+              "Nutritional dilution",
+              "Delay in diagnosis or treatment"
+            ],
+
+            managementGuidance:
+              "Do not introduce Field Peas as a remedy for illness. Prioritize water, complete feed, supportive care, and veterinary evaluation."
+          },
+
+          birdStageSummary:
+            "Field Peas are most useful for healthy established adult chickens and in professionally balanced grower, layer, breeder, or meat-bird rations. Young chicks should not receive meaningful informal pea supplementation, and all flock stages require an age-appropriate complete feed as the nutritional foundation."
+        },
+
+        edibleParts: {
+          ediblePartSummary:
+            "The primary poultry-feed portion of Field Peas is the mature seed. Clean dry peas may be fed whole, cracked, coarsely ground, cooked, or incorporated into a balanced ration. Fresh immature peas, tender edible pods, and limited young foliage may also be offered, but they provide less concentrated nutrition than mature dry seed.",
+
+          primaryEdibleParts: [
+            {
+              part:
+                "Mature Dry Peas",
+
+              explanation:
+                "Clean fully mature seed from an identified untreated food or feed variety is the principal stored-feed product. Low-tannin, light-seeded feed peas are generally preferred for poultry use."
+            },
+
+            {
+              part:
+                "Cracked Mature Peas",
+
+              explanation:
+                "Cracking improves handling and may help chickens consume peas more efficiently while avoiding the excessive dust associated with very fine grinding."
+            },
+
+            {
+              part:
+                "Coarsely Ground Peas",
+
+              explanation:
+                "Coarse grinding produces a useful ration ingredient when particle size remains manageable and the peas are combined with complementary nutrients in a properly balanced feed."
+            },
+
+            {
+              part:
+                "Pea Meal",
+
+              explanation:
+                "Properly processed pea meal may be incorporated into a formulated poultry ration that accounts for energy, digestible amino acids, methionine, fiber, calcium, phosphorus, sodium, vitamins, and trace minerals."
+            },
+
+            {
+              part:
+                "Plain Cooked Mature Peas",
+
+              explanation:
+                "Mature peas may be cooked in plain water, cooled completely, and offered in modest quantities. Cooking is optional for suitable feed peas and does not make contaminated seed safe."
+            },
+
+            {
+              part:
+                "Fresh Immature Green Peas",
+
+              explanation:
+                "Clean green peas may be offered as a seasonal treat. Their high moisture content makes them much less nutrient-dense per pound than mature dry peas."
+            },
+
+            {
+              part:
+                "Tender Immature Edible Pods",
+
+              explanation:
+                "Young pods from edible-pod varieties may be offered in small amounts while tender and clean."
+            },
+
+            {
+              part:
+                "Young Pea Foliage",
+
+              explanation:
+                "Small amounts of clean tender foliage may be offered through controlled cut-and-carry feeding. Poultry-specific evidence for unrestricted pea-vine feeding is limited."
+            },
+
+            {
+              part:
+                "Postharvest Sound Peas",
+
+              explanation:
+                "Chickens may receive supervised access to small quantities of sound peas remaining after the primary crop is harvested, provided spoiled, treated, or contaminated material has been removed."
+            },
+
+            {
+              part:
+                "Plain Household-Food Peas",
+
+              explanation:
+                "Fresh unseasoned peas left from household food preparation may be offered in limited amounts when they contain no salt, butter, sauce, onions, garlic, or spoilage."
+            }
+          ],
+
+          nonRecommendedPlantParts: [
+            {
+              part:
+                "Chemically Treated Seed",
+
+              reason:
+                "Planting seed coated with fungicide, insecticide, dye, or other chemical treatment is not food or feed and must never be offered."
+            },
+
+            {
+              part:
+                "Mature Dry Pods",
+
+              reason:
+                "Fully mature pods are fibrous, low in practical feed value, and may carry mold, soil, or harvest contamination."
+            },
+
+            {
+              part:
+                "Coarse Mature Vines",
+
+              reason:
+                "Old vines and stems become fibrous and provide little useful poultry nutrition."
+            },
+
+            {
+              part:
+                "Diseased Foliage",
+
+              reason:
+                "Leaves or vines affected by rot, mildew, chemical injury, or unidentified disease should not be fed."
+            },
+
+            {
+              part:
+                "Moldy or Heated Peas",
+
+              reason:
+                "Mold, mustiness, heating, clumping, or fermentation indicates unsafe storage deterioration."
+            },
+
+            {
+              part:
+                "Rodent-Contaminated Peas",
+
+              reason:
+                "Material exposed to rodent droppings, urine, hair, nesting material, or gnawing should be discarded."
+            },
+
+            {
+              part:
+                "Heavily Insect-Damaged Peas",
+
+              reason:
+                "Severe infestation may reduce quality and accompany webbing, contamination, moisture exposure, or spoilage."
+            },
+
+            {
+              part:
+                "Unidentified Pea-Like Seeds",
+
+              reason:
+                "Do not assume every crop called a pea is Pisum sativum or suitable for poultry feeding."
+            },
+
+            {
+              part:
+                "Strongly Seasoned Cooked Peas",
+
+              reason:
+                "Peas prepared with excessive salt, butter, sauces, onions, garlic, or unsuitable ingredients should not be fed."
+            },
+
+            {
+              part:
+                "Sour, Slimy, or Fermented Cooked Peas",
+
+              reason:
+                "Wet cooked peas spoil quickly and should be discarded when they develop off odors, slime, bubbling, or abnormal texture."
+            },
+
+            {
+              part:
+                "Chemically Contaminated Plants or Seed",
+
+              reason:
+                "Do not feed material exposed to pesticides, herbicides, fuel, sewage, floodwater, or unknown chemical contamination."
+            }
+          ],
+
+          plantPartWarnings: [
+            "Confirm that the crop is Pisum sativum Field Peas.",
+            "Do not confuse Field Peas with Cowpeas or southern peas.",
+            "Never feed chemically treated planting seed.",
+            "Do not assume all cultivars have equal tannin or antinutritional-factor levels.",
+            "Use edible pods only from varieties intended for pod consumption.",
+            "Do not treat coarse mature vines and pods as valuable poultry feed.",
+            "Fresh green peas and foliage contain more moisture and less dry matter than mature seed.",
+            "Remove moldy, musty, heated, sprouted, insect-damaged, or rodent-contaminated material.",
+            "Cooked peas must remain plain and should be removed before spoilage.",
+            "Postharvest access should occur only after unsafe and damaged material has been removed."
+          ],
+
+          ediblePartsConclusion:
+            "For practical backyard poultry feeding, focus on clean mature untreated Field Pea seed in whole, cracked, coarsely ground, or professionally formulated form. Fresh peas, tender pods, and young foliage can provide limited seasonal variety but should remain secondary to the mature grain and the flock's complete ration."
+        },
+
+        feedingForms: {
+          preferredForms: [
+            {
+              form:
+                "Cracked Mature Dry Peas",
+
+              bestUse:
+                "Crack clean, fully dried Field Peas into coarse pieces for established adult chickens. Cracking makes the peas easier to consume and measure while producing less dust than fine grinding."
+            },
+
+            {
+              form:
+                "Coarsely Ground Mature Peas",
+
+              bestUse:
+                "Use coarsely ground peas as a measured supplement or as an ingredient in a correctly balanced poultry ration. Keep the particle size coarse enough to reduce dust, ingredient separation, and rapid moisture absorption."
+            },
+
+            {
+              form:
+                "Whole Mature Dry Peas",
+
+              bestUse:
+                "Offer small measured portions of clean whole peas to established adult chickens that consume them efficiently and have access to appropriately sized insoluble grit."
+            },
+
+            {
+              form:
+                "Professionally Formulated Pea Meal",
+
+              bestUse:
+                "Incorporate properly processed pea meal only into a complete ration formulated for the flock's age and production stage. The formulation must account for energy, digestible amino acids, methionine, calcium, available phosphorus, sodium, vitamins, and trace minerals."
+            },
+
+            {
+              form:
+                "Plain Cooked Mature Peas",
+
+              bestUse:
+                "Cook mature peas in plain water, cool them fully, and offer a modest amount as a soft supplemental food. Cooking is optional for suitable low-tannin feed peas and is not a method for making contaminated peas safe."
+            },
+
+            {
+              form:
+                "Fresh Immature Green Peas",
+
+              bestUse:
+                "Offer clean fresh green peas as a seasonal treat. Their high moisture content means they provide much less dry matter and concentrated nutrition per pound than mature dry peas."
+            },
+
+            {
+              form:
+                "Tender Edible Pods",
+
+              bestUse:
+                "Offer small quantities of young tender pods only from varieties intended for edible-pod use. Remove tough, mature, damaged, or contaminated pods."
+            },
+
+            {
+              form:
+                "Young Pea Foliage",
+
+              bestUse:
+                "Provide a limited quantity of clean young foliage through controlled cut-and-carry feeding. Keep poultry away from the main crop before harvest unless forage production is the intended use."
+            },
+
+            {
+              form:
+                "Sound Postharvest Peas",
+
+              bestUse:
+                "Allow limited supervised gleaning only after the main crop has been harvested and after moldy peas, treated seed, damaged pods, toxic weeds, chemicals, and foreign material have been removed."
+            },
+
+            {
+              form:
+                "Plain Household-Food Peas",
+
+              bestUse:
+                "Offer fresh unseasoned leftover peas in modest quantities when they contain no excess salt, butter, sauces, onions, garlic, or spoilage."
+            }
+          ],
+
+          formsRequiringAdditionalCare: [
+            {
+              form:
+                "Whole Large Dry Peas",
+
+              concern:
+                "Some chickens may leave large whole peas uneaten, swallow them inefficiently, or selectively consume them. Observe the flock and crack the peas when whole-seed consumption is poor."
+            },
+
+            {
+              form:
+                "Finely Ground Pea Meal",
+
+              concern:
+                "Very fine meal may create inhalable dust, separate from other feed ingredients, absorb moisture rapidly, cake during storage, and produce an uneven home-mixed ration."
+            },
+
+            {
+              form:
+                "Pea Meal Mixed Into Complete Feed",
+
+              concern:
+                "Adding pea meal to a complete commercial feed by guesswork lowers the ration's existing nutrient density and may create methionine, mineral, vitamin, or energy imbalance."
+            },
+
+            {
+              form:
+                "Dark-Seeded or Pigmented Peas",
+
+              concern:
+                "Strongly pigmented peas may contain higher tannin concentrations and more seed-coat fiber than documented low-tannin feed varieties. Their poultry feeding value should not be assumed to be identical."
+            },
+
+            {
+              form:
+                "Unknown Field Pea Cultivars",
+
+              concern:
+                "Cultivars vary in tannins, trypsin inhibitors, lectins, seed-coat fiber, starch characteristics, seed size, and nutrient composition. Use identified food or feed varieties whenever possible."
+            },
+
+            {
+              form:
+                "Cooked Peas",
+
+              concern:
+                "Cooked peas contain substantial moisture and spoil quickly. They must be plain, fully cooled, offered in small portions, and removed before souring, slime, fermentation, or mold develops."
+            },
+
+            {
+              form:
+                "Soaked Peas",
+
+              concern:
+                "Soaking increases moisture and greatly shortens storage stability. Soaked peas must be handled hygienically, used promptly, and should not be assumed to have become nutritionally complete or free of antinutritional factors."
+            },
+
+            {
+              form:
+                "Sprouted Peas",
+
+              concern:
+                "Sprouting requires warm, wet conditions that can support mold, yeast, bacteria, slime, souring, and heating. Sprouting does not make contaminated or treated seed safe."
+            },
+
+            {
+              form:
+                "Fermented Peas",
+
+              concern:
+                "Uncontrolled backyard fermentation introduces risks involving acidity, harmful microbial growth, heating, spoilage, inconsistent processing, and uncertain nutrient changes."
+            },
+
+            {
+              form:
+                "Dehulled Peas",
+
+              concern:
+                "Dehulling may reduce seed-coat fiber and tannins in some varieties, but it adds processing labor, changes nutrient concentration, and does not correct methionine limitation or create a complete ration."
+            },
+
+            {
+              form:
+                "Fresh Green Peas",
+
+              concern:
+                "Fresh immature peas contain much more water than dry peas and should be treated as a seasonal supplemental food rather than as an equivalent replacement for dry grain or protein meal."
+            },
+
+            {
+              form:
+                "Tender Foliage and Vines",
+
+              concern:
+                "Poultry-specific evidence for unrestricted Field Pea forage is limited. Excessive access may destroy the crop, displace complete feed, and expose birds to soil, manure, disease, or chemical contamination."
+            },
+
+            {
+              form:
+                "Direct Access to Growing Plants",
+
+              concern:
+                "Chickens may uproot seedlings, consume flowers, destroy pods, scratch around roots, and eliminate the harvest before mature peas develop."
+            },
+
+            {
+              form:
+                "Postharvest Field Gleaning",
+
+              concern:
+                "The area must be inspected for moldy peas, treated planting seed, rodent contamination, standing water, toxic weeds, chemicals, broken equipment, wire, twine, and other hazards."
+            },
+
+            {
+              form:
+                "Stored Cracked or Ground Peas",
+
+              concern:
+                "Processed peas expose more surface area than intact seed and therefore absorb moisture, support insects, and deteriorate more quickly."
+            }
+          ],
+
+          avoidForms: [
+            "Chemically treated planting seed",
+            "Fungicide-treated seed",
+            "Insecticide-treated seed",
+            "Dyed or coated planting seed",
+            "Seed carrying unidentified treatment",
+            "Moldy peas",
+            "Musty peas",
+            "Heated stored peas",
+            "Wet stored peas",
+            "Clumped peas",
+            "Fermenting peas",
+            "Sour-smelling peas",
+            "Unintentionally sprouted stored peas",
+            "Slimy soaked peas",
+            "Moldy sprouts",
+            "Sour sprouts",
+            "Rodent-contaminated peas",
+            "Wild-bird-contaminated peas",
+            "Heavily insect-damaged peas",
+            "Peas containing insect webbing",
+            "Peas contaminated with droppings",
+            "Peas contaminated with floodwater",
+            "Peas contaminated with sewage",
+            "Peas exposed to fuel or oil",
+            "Peas exposed to herbicides or pesticides not approved for feed use",
+            "Peas mixed with toxic weed seed",
+            "Unidentified pea-like seed",
+            "Ornamental sweet-pea seed",
+            "Large unrestricted quantities",
+            "Peas used as the complete ration",
+            "Peas used as the sole protein ingredient",
+            "Home-mixed pea meal formulated from crude-protein percentage alone",
+            "Large whole peas offered to young chicks",
+            "Salted cooked peas",
+            "Butter-covered peas",
+            "Peas in cream sauce",
+            "Peas containing onions or garlic",
+            "Spoiled household leftovers",
+            "Coarse mature dry pods",
+            "Moldy vines",
+            "Diseased foliage",
+            "Chemically treated foliage"
+          ]
+        },
+
+        preparation: {
+          preparationDifficulty:
+            "moderate",
+
+          preparationSummary:
+            "Field Peas require more preparation than crops that can be fed directly from the plant. Dry-seed use generally involves harvesting mature pods, completing dry-down when necessary, threshing or shelling, cleaning, inspecting, storing, and sometimes cracking or coarse grinding. Suitable low-tannin feed peas do not universally require cooking, but cultivar identity, seed treatment, particle size, ration balance, moisture control, and storage sanitation are essential.",
+
+          requiredPreparation: [
+            "Confirm that the crop is Pisum sativum Field Peas.",
+            "Do not confuse Field Peas with Cowpeas, southern peas, ornamental sweet peas, or other crops called peas.",
+            "Confirm that the peas are intended for food or animal feed.",
+            "Verify that the seed has not been treated with fungicide, insecticide, dye, or another planting chemical.",
+            "Prefer an identified low-tannin food or feed variety.",
+            "Do not rely only on flower color or seed color as proof of feeding quality.",
+            "Allow dry-feed peas to reach full seed maturity.",
+            "Harvest before prolonged rain, severe lodging, pod shattering, or major wildlife loss.",
+            "Finish drying pods or harvested plants under cover when field conditions remain damp.",
+            "Maintain strong airflow during postharvest drying.",
+            "Thresh or shell mature peas from the pods.",
+            "Remove stones, soil, chaff, stems, pod fragments, weed seed, and foreign material.",
+            "Remove broken, diseased, discolored, sprouted, insect-damaged, moldy, or otherwise questionable peas.",
+            "Confirm that peas are uniformly dry and cool before sealed storage.",
+            "Inspect for musty odor, heating, condensation, clumping, webbing, insects, droppings, and rodent damage.",
+            "Use whole peas only when the flock consumes them efficiently.",
+            "Crack or coarsely grind large peas when whole-seed consumption is poor.",
+            "Avoid producing excessively fine dusty meal.",
+            "Keep processed peas separate from the complete ration unless the full ration has been correctly formulated.",
+            "Introduce peas gradually.",
+            "Maintain an age-appropriate complete poultry ration as the primary feed.",
+            "Account for methionine and other sulfur-containing amino-acid limitations when peas are used as a ration ingredient.",
+            "Maintain proper calcium management for laying hens.",
+            "Provide appropriately sized insoluble grit when chickens consume whole or coarse dry peas and do not obtain adequate natural grit.",
+            "Use fresh or cooked peas promptly.",
+            "Remove wet leftovers before they sour, ferment, become slimy, or mold."
+          ],
+
+          optionalPreparation: [
+            "Crack dry peas into coarse pieces for easier consumption.",
+            "Coarsely grind peas for use in a professionally balanced ration.",
+            "Screen cracked or ground peas to remove excessive dust.",
+            "Weigh pea ingredients rather than estimating them by volume when formulating a ration.",
+            "Dehull peas when a qualified formulation specifically benefits from reduced seed-coat fiber or tannins.",
+            "Cook mature peas in plain water for household food or a soft supplemental feeding form.",
+            "Cool cooked peas completely before offering them.",
+            "Offer fresh immature peas directly from clean food-grade plants.",
+            "Cut tender edible pods into manageable pieces.",
+            "Offer a small quantity of young clean foliage through cut-and-carry feeding.",
+            "Divide stored peas into small labeled batches.",
+            "Label containers with crop name, cultivar, harvest date, drying date, treatment status, and processing form.",
+            "Freeze small sealed batches when used as part of a deliberate stored-insect-control program.",
+            "Retain whole peas until needed and crack or grind only manageable quantities.",
+            "Use a moisture meter when available and appropriate for the seed lot.",
+            "Condition a small test container before sealing a large homegrown harvest.",
+            "Inspect stored peas more frequently during warm or humid weather.",
+            "Use several feeding locations to reduce competition among birds."
+          ],
+
+          unnecessaryPreparation: [
+            "Cooking every identified low-tannin feed-pea variety before poultry use",
+            "Roasting every batch of mature Field Peas",
+            "Boiling peas to make a complete ration",
+            "Soaking peas solely to eliminate every antinutritional factor",
+            "Sprouting peas to create additional dry feed mass",
+            "Fermenting peas as a universal safety requirement",
+            "Grinding all peas into fine flour",
+            "Removing seed coats for ordinary small supplemental feeding",
+            "Adding salt to cooked peas",
+            "Adding butter, oil, sugar, molasses, sauce, or seasoning",
+            "Mixing peas into the entire complete-feed supply",
+            "Applying research inclusion percentages without complete ration formulation",
+            "Using crude-protein percentage as the only formulation value",
+            "Trying to clean and reuse chemically treated planting seed",
+            "Trying to salvage moldy peas by cooking",
+            "Trying to salvage musty peas by grinding",
+            "Trying to salvage rodent-contaminated peas by washing",
+            "Trying to salvage insect-infested peas by mixing them with sound grain"
+          ],
+
+          preparationMistakes: [
+            "Confusing Field Peas with Cowpeas or southern peas.",
+            "Feeding ornamental sweet-pea seed or another unidentified pea-like seed.",
+            "Feeding chemically treated planting seed.",
+            "Assuming colored seed treatment is harmless.",
+            "Using a cultivar without knowing whether it is suitable for food or feed.",
+            "Assuming every white-flowered pea has an identical nutrient and antinutritional profile.",
+            "Assuming every dark-seeded pea is unusable without evaluating the actual variety.",
+            "Copying a poultry-research inclusion percentage into an unbalanced backyard mixture.",
+            "Formulating feed from crude-protein percentage alone.",
+            "Ignoring methionine and sulfur-amino-acid limitations.",
+            "Treating Field Peas as a direct replacement for soybean meal.",
+            "Treating Field Peas as the sole protein ingredient.",
+            "Using peas to replace complete starter, grower, layer, breeder, or broiler feed.",
+            "Failing to provide an appropriate calcium program for laying hens.",
+            "Offering large quantities of whole dry peas to young chicks.",
+            "Offering whole peas that the flock repeatedly leaves uneaten.",
+            "Grinding peas so finely that the feed becomes dusty.",
+            "Allowing fine pea meal to separate from the rest of a ration.",
+            "Grinding large quantities far in advance of use.",
+            "Storing cracked or ground peas as though they were as stable as intact seed.",
+            "Sealing peas before they are fully dry.",
+            "Sealing peas while they remain warm after drying.",
+            "Mixing a newly harvested batch with older stored peas.",
+            "Ignoring condensation inside a storage container.",
+            "Ignoring heating, clumping, insects, webbing, or musty odor.",
+            "Trying to salvage moldy or musty peas through cooking.",
+            "Trying to salvage treated seed through washing or soaking.",
+            "Using soaked peas after they have become sour or slimy.",
+            "Using sprouts that smell sour, feel slimy, or show mold.",
+            "Leaving cooked peas in the run until they ferment or spoil.",
+            "Feeding heavily salted or seasoned household peas.",
+            "Allowing unrestricted flock access before flowering and grain harvest.",
+            "Allowing birds to destroy seedlings and developing pods when seed production is the crop goal.",
+            "Using mature fibrous pods and vines as though they were concentrated feed.",
+            "Allowing postharvest gleaning before inspecting the plot for unsafe material.",
+            "Failing to provide suitable grit when whole-grain digestion requires it.",
+            "Assuming processing corrects contamination or creates a nutritionally complete ration."
+          ]
+        },
+
+        nutritionHighlights: {
+          nutritionSummary:
+            "Mature dry Field Peas are protein-oriented grain legumes that combine moderate-to-high crude protein with substantial starch, useful lysine, low fat, minerals, B vitamins, and long-term storage potential. They generally provide more protein and lysine than cereal grains but less concentrated protein than soybean meal. Their principal nutritional weakness is a relative shortage of methionine and other sulfur-containing amino acids. Field Peas must therefore be combined with complementary ingredients within a balanced ration rather than treated as a complete protein source.",
+
+          notableNutrients: [
+            "Moderate-to-high crude protein",
+
+            "Useful lysine",
+
+            "Starch",
+
+            "Digestible carbohydrates",
+
+            "Low fat",
+
+            "Arginine",
+
+            "Threonine",
+
+            "Potassium",
+
+            "Phosphorus",
+
+            "Magnesium",
+
+            "Iron",
+
+            "Zinc",
+
+            "Manganese",
+
+            "B vitamins",
+
+            "Dietary fiber",
+
+            "Natural seed pigments"
+          ],
+
+          primaryNutritionalStrengths: [
+            {
+              nutrientRole:
+                "Protein-oriented grain",
+
+              explanation:
+                "Mature dry Field Peas commonly contain substantially more crude protein than cereal grains. This makes them a useful homegrown protein-oriented ingredient, although their total protein concentration is generally lower than soybean meal and does not independently create a complete poultry ration."
+            },
+
+            {
+              nutrientRole:
+                "Useful lysine contribution",
+
+              explanation:
+                "Field Peas generally contribute more lysine than Corn, Wheat, Barley, Oats, and many other cereal grains. This makes peas especially useful as a nutritional complement to grain-based ingredients that are relatively limited in lysine."
+            },
+
+            {
+              nutrientRole:
+                "Starch-based dietary energy",
+
+              explanation:
+                "A large portion of mature pea seed consists of starch and other digestible carbohydrates. Field Peas therefore contribute dietary energy in addition to protein and should not be classified as though they were a pure protein concentrate."
+            },
+
+            {
+              nutrientRole:
+                "Low-fat protein source",
+
+              explanation:
+                "Field Peas are naturally low in oil compared with Soybeans and Sunflower seed. This can be useful where a ration requires plant protein and starch without the higher fat concentration associated with oilseeds."
+            },
+
+            {
+              nutrientRole:
+                "Arginine contribution",
+
+              explanation:
+                "Pea protein supplies arginine as part of its amino-acid profile. Its presence contributes to overall protein value but does not correct the crop's relative limitation in methionine and other sulfur-containing amino acids."
+            },
+
+            {
+              nutrientRole:
+                "Threonine contribution",
+
+              explanation:
+                "Field Peas provide threonine as part of their protein fraction. The actual digestible contribution depends on cultivar, seed quality, processing, fiber, tannins, and the complete ration."
+            },
+
+            {
+              nutrientRole:
+                "Potassium and magnesium",
+
+              explanation:
+                "Mature peas contain useful amounts of potassium and magnesium as part of their natural mineral profile. Their presence does not make peas a complete poultry mineral supplement."
+            },
+
+            {
+              nutrientRole:
+                "Phosphorus contribution",
+
+              explanation:
+                "Field Peas contain phosphorus, but a portion may be bound in phytate and therefore less available to poultry without appropriate formulation or phytase management."
+            },
+
+            {
+              nutrientRole:
+                "Trace-mineral contribution",
+
+              explanation:
+                "Field Peas naturally provide iron, zinc, manganese, copper, and other trace minerals. Concentrations and biological availability vary and cannot replace a balanced poultry mineral premix."
+            },
+
+            {
+              nutrientRole:
+                "B-vitamin contribution",
+
+              explanation:
+                "Mature pea seed contains naturally occurring B vitamins that contribute to its overall feed value. A dependable poultry ration still requires a complete and correctly balanced vitamin supply."
+            },
+
+            {
+              nutrientRole:
+                "Moderate dietary fiber",
+
+              explanation:
+                "Whole Field Peas provide structural carbohydrate and seed-coat fiber. Moderate fiber may contribute to ration structure, but excessive hull material or heavily pigmented seed coats can reduce usable energy and nutrient utilization."
+            },
+
+            {
+              nutrientRole:
+                "Dry-grain nutrient concentration",
+
+              explanation:
+                "Mature dried peas contain much more dry matter and concentrated nutrition per pound than immature green peas, cooked peas, soaked peas, sprouts, pods, or foliage."
+            },
+
+            {
+              nutrientRole:
+                "Complement to cereal grains",
+
+              explanation:
+                "Field Peas can complement grain-based ingredients because peas generally contribute more lysine and protein while grains often contribute more concentrated energy and different amino-acid strengths. Combining them casually still does not guarantee a balanced ration."
+            },
+
+            {
+              nutrientRole:
+                "Alternative protein diversification",
+
+              explanation:
+                "Field Peas can diversify the protein ingredients available to a homestead and may reduce total dependence on soybean-derived ingredients when a qualified ration formulation supports their use."
+            },
+
+            {
+              nutrientRole:
+                "Stored-feed value",
+
+              explanation:
+                "Properly dried whole peas retain their protein, starch, and mineral value in a compact nonrefrigerated form that can be measured and used over an extended period."
+            }
+          ],
+
+          typicalWholeSeedCharacteristics: {
+            cropIdentity:
+              "Mature seed of Pisum sativum, not Cowpeas, southern peas, Chickpeas, Pigeon Peas, ornamental sweet peas, or other crops commonly called peas.",
+
+            primaryFeedType:
+              "Protein-oriented, starch-containing cool-season grain legume.",
+
+            crudeProtein:
+              "Commonly about 20% to 28% of dry matter, with the actual value varying by cultivar, environment, maturity, storage, and analytical method.",
+
+            proteinConcentrationComparedWithCerealGrains:
+              "Generally higher than Corn, Wheat, Barley, Oats, Grain Sorghum, and Millet.",
+
+            proteinConcentrationComparedWithSoybeanMeal:
+              "Generally lower and less concentrated than properly processed soybean meal.",
+
+            lysineValue:
+              "Usually stronger than that of cereal grains and one of the crop's principal amino-acid advantages.",
+
+            methionineValue:
+              "Relatively limited and inadequate for Field Peas to serve as the sole poultry protein ingredient.",
+
+            sulfurAminoAcidBalance:
+              "Requires complementary ingredients or formulated amino-acid support when peas make a meaningful contribution to the ration.",
+
+            starch:
+              "Substantial; mature peas contribute dietary energy as well as protein.",
+
+            fat:
+              "Low, commonly near approximately 1% to 2% of dry matter.",
+
+            fiber:
+              "Moderate and influenced strongly by seed coat, cultivar, dehulling, and pigmentation.",
+
+            tanninLevel:
+              "Usually lower in white-flowered, light-seeded feed types and potentially higher in strongly pigmented or dark-seeded varieties.",
+
+            trypsinInhibitorActivity:
+              "Generally lower than in raw mature Soybeans but variable and not absent.",
+
+            lectinActivity:
+              "Cultivar-dependent and generally less severe than the principal concerns associated with raw Soybeans.",
+
+            phytate:
+              "Present and capable of reducing phosphorus and mineral availability.",
+
+            nonStarchPolysaccharides:
+              "Present and capable of reducing nutrient utilization, especially when inclusion becomes substantial.",
+
+            calciumValue:
+              "Low and not adequate for laying-hen calcium requirements.",
+
+            wholeSeedHandling:
+              "Large intact peas may be consumed inefficiently by some chickens and may benefit from cracking or coarse grinding.",
+
+            storageStability:
+              "Strong when peas are intact, fully dry, cool, clean, and protected from insects and rodents.",
+
+            processedSeedStability:
+              "Lower than intact whole seed because cracking and grinding expose more surface area to moisture, oxygen, insects, and deterioration.",
+
+            freshGreenPeaValue:
+              "Useful as a seasonal treat but much higher in moisture and lower in nutrient density per pound than mature dry peas.",
+
+            cookedPeaValue:
+              "Soft and readily consumed but higher in moisture, less storage-stable, and not nutritionally equivalent pound-for-pound to dry peas.",
+
+            primaryNutritionalStrength:
+              "A combination of plant protein, useful lysine, starch, low fat, and dry storage value.",
+
+            primaryNutritionalWeakness:
+              "Relative methionine and sulfur-amino-acid limitation combined with incomplete mineral and vitamin balance.",
+
+            principalCultivarConcern:
+              "Tannins, seed-coat fiber, enzyme inhibitors, lectins, starch characteristics, and poultry feeding value vary among cultivars."
+          },
+
+          nutritionalVariabilityFactors: [
+            "Field Pea cultivar",
+
+            "Flower color",
+
+            "Seed-coat color",
+
+            "Seed pigmentation",
+
+            "Low-tannin versus higher-tannin genetics",
+
+            "Feed variety versus food variety",
+
+            "Seed size",
+
+            "Seed-coat thickness",
+
+            "Whole versus dehulled seed",
+
+            "Growing environment",
+
+            "Temperature during flowering and seed filling",
+
+            "Drought stress",
+
+            "Soil fertility",
+
+            "Plant health",
+
+            "Disease pressure",
+
+            "Seed maturity",
+
+            "Harvest timing",
+
+            "Rain exposure before harvest",
+
+            "Postharvest drying quality",
+
+            "Storage moisture",
+
+            "Storage temperature",
+
+            "Insect damage",
+
+            "Rodent damage",
+
+            "Whole versus cracked form",
+
+            "Coarse versus fine grinding",
+
+            "Raw versus cooked form",
+
+            "Fresh immature versus mature dry seed",
+
+            "Soaking or sprouting",
+
+            "Length and conditions of storage",
+
+            "Proportion of seed coat retained",
+
+            "Laboratory analytical method",
+
+            "Whether values are reported as-fed or on a dry-matter basis",
+
+            "Digestible rather than total amino-acid values",
+
+            "Bird age and digestive capacity",
+
+            "Total pea inclusion within the complete ration",
+
+            "Interactions with other ration ingredients"
+          ]
+        },
+
+        benefits: {
+          benefitSummary:
+            "Field Peas combine poultry-feed value with household-food production, cool-season growth, nitrogen fixation, crop rotation, forage potential, and dependable dry storage. Their strongest poultry contribution is as a protein-oriented, lysine-contributing, starch-containing ingredient that can complement cereal grains within a balanced feeding program.",
+
+          primaryBenefits: [
+            {
+              title:
+                "Useful Plant Protein",
+
+              explanation:
+                "Mature dry Field Peas generally contain substantially more crude protein than cereal grains and can contribute meaningfully to a correctly formulated poultry ration."
+            },
+
+            {
+              title:
+                "Strong Lysine Contribution",
+
+              explanation:
+                "Field Peas generally supply more lysine than cereal grains, making them useful for complementing Corn, Wheat, Barley, Oats, Grain Sorghum, and Millet."
+            },
+
+            {
+              title:
+                "Starch-Based Energy",
+
+              explanation:
+                "Pea seed contributes substantial starch and digestible carbohydrate in addition to protein, giving it broader feed value than a pure protein concentrate."
+            },
+
+            {
+              title:
+                "Excellent Dry Storage Potential",
+
+              explanation:
+                "Whole mature peas can be stored for an extended period without refrigeration when they are fully dry, clean, cool, and protected from moisture, insects, and rodents."
+            },
+
+            {
+              title:
+                "Cool-Season Production",
+
+              explanation:
+                "Field Peas can be planted and grown during cool periods when many warm-season feed crops are not productive."
+            },
+
+            {
+              title:
+                "Low-Fat Protein-Oriented Grain",
+
+              explanation:
+                "Field Peas contribute protein without the high oil concentration associated with Soybeans and Sunflower seed."
+            },
+
+            {
+              title:
+                "Multiple Feeding Forms",
+
+              explanation:
+                "The seed can be offered whole, cracked, coarsely ground, cooked, or incorporated into a formulated ration, while immature peas and tender pods provide seasonal treat options."
+            },
+
+            {
+              title:
+                "Human-Food and Poultry-Feed Dual Use",
+
+              explanation:
+                "A Field Pea planting may produce food for the household while sound surplus or feed-designated peas support the flock."
+            },
+
+            {
+              title:
+                "Alternative to Exclusive Soybean Dependence",
+
+              explanation:
+                "Field Peas can diversify ration ingredients and may replace part of the protein contribution otherwise supplied by soybean products when the entire ration is properly formulated."
+            },
+
+            {
+              title:
+                "Nitrogen-Fixing Crop",
+
+              explanation:
+                "When successfully nodulated by compatible Rhizobium bacteria, Field Peas can fix atmospheric nitrogen and contribute to a broader crop-rotation system."
+            },
+
+            {
+              title:
+                "Crop-Rotation Value",
+
+              explanation:
+                "Field Peas can interrupt some cereal-crop cycles, diversify planting schedules, and provide a cool-season broadleaf rotation option."
+            },
+
+            {
+              title:
+                "Shorter Seasonal Commitment",
+
+              explanation:
+                "As an annual crop, Field Peas do not require permanent space and can be moved, resized, or removed from the rotation after one season."
+            },
+
+            {
+              title:
+                "Seed-Saving Potential",
+
+              explanation:
+                "Healthy mature untreated seed from an appropriate open-pollinated variety may be saved when varietal identity, isolation, disease status, maturity, and storage quality are adequately managed."
+            },
+
+            {
+              title:
+                "Postharvest Gleaning Opportunity",
+
+              explanation:
+                "After the primary harvest and safety inspection, chickens may recover limited sound peas and provide cleanup enrichment."
+            }
+          ],
+
+          enrichmentBenefits: [
+            {
+              benefit:
+                "Whole-seed pecking activity",
+
+              explanation:
+                "Small measured quantities of whole or cracked peas can encourage natural pecking and searching behavior."
+            },
+
+            {
+              benefit:
+                "Scattered-feed enrichment",
+
+              explanation:
+                "A controlled amount of clean dry peas may be scattered across clean dry litter or suitable ground to encourage movement and foraging."
+            },
+
+            {
+              benefit:
+                "Fresh seasonal variety",
+
+              explanation:
+                "Immature green peas and tender edible pods can provide occasional seasonal variety."
+            },
+
+            {
+              benefit:
+                "Soft-food variety",
+
+              explanation:
+                "Plain cooked and cooled peas provide a different texture from dry grain while remaining easy to portion."
+            },
+
+            {
+              benefit:
+                "Cut-and-carry foliage activity",
+
+              explanation:
+                "Small amounts of young clean foliage may be offered for supervised pecking without sacrificing the entire crop."
+            },
+
+            {
+              benefit:
+                "Postharvest exploration",
+
+              explanation:
+                "Supervised access after harvest can provide short-term searching and cleanup activity when hazards have been removed."
+            },
+
+            {
+              benefit:
+                "Multiple particle sizes",
+
+              explanation:
+                "Whole, cracked, and coarse-ground forms allow feeding presentation to be adjusted for bird size and flock behavior."
+            }
+          ],
+
+          flockManagementBenefits: [
+            "Allows measured distribution among several feeding stations.",
+
+            "Can be cracked to improve consumption by birds that reject large whole peas.",
+
+            "Dry peas are easy to weigh for controlled supplementation.",
+
+            "Whole seed makes visual inspection easier than fine meal.",
+
+            "Small stored batches can be labeled and rotated by harvest date.",
+
+            "Dry grain can be retained until needed and processed in manageable quantities.",
+
+            "Fresh, cooked, whole, cracked, and ground forms can be kept separate for different uses.",
+
+            "Can support seasonal ration diversity when incorporated correctly.",
+
+            "Offers a nonpermanent annual crop option for changing flock or garden needs.",
+
+            "Provides a feed ingredient that can be grown during cool weather.",
+
+            "Can be combined with cereal-grain production in a planned crop rotation.",
+
+            "Postharvest access can support cleanup after the principal human-food or dry-grain harvest."
+          ],
+
+          homesteadBenefits: [
+            "Produces food for both people and poultry.",
+
+            "Provides a cool-season annual crop.",
+
+            "Supports crop rotation.",
+
+            "Can contribute biological nitrogen fixation when nodulation is successful.",
+
+            "Provides a broadleaf break within grain-growing systems.",
+
+            "Can function as a cover crop or green-manure component.",
+
+            "Can provide forage where forage production is deliberately chosen.",
+
+            "Supports seed-saving systems when an appropriate variety is used.",
+
+            "Provides compact nonrefrigerated food and feed storage.",
+
+            "May reduce dependence on a single purchased protein ingredient.",
+
+            "Allows temporary rather than permanent land commitment.",
+
+            "Can fit spring or autumn garden windows.",
+
+            "May be followed by a warm-season crop where the growing season permits.",
+
+            "Provides flowers that may attract pollinators and other beneficial insects.",
+
+            "Can be grown at garden or field scale.",
+
+            "Creates usable straw, vine, or residue for composting when disease-free and chemically appropriate.",
+
+            "Allows surplus human-food peas to be redirected conservatively to poultry.",
+
+            "Provides a locally produced feed ingredient with known treatment and storage history."
+          ]
+        },
+
+        limitations: {
+          limitationSummary:
+            "Field Peas are valuable protein-oriented grain legumes, but they are not complete poultry feed. Their principal limitations are methionine and sulfur-amino-acid deficiency, cultivar-dependent tannins and other antinutritional factors, lower protein concentration than soybean meal, substantial processing and storage labor, variable whole-seed acceptance, and the risk that poorly balanced pea supplementation will displace complete feed.",
+
+          primaryLimitations: [
+            {
+              title:
+                "Incomplete Amino-Acid Balance",
+
+              explanation:
+                "Field Peas contribute useful lysine but are relatively limited in methionine and other sulfur-containing amino acids. They cannot serve as the sole protein ingredient."
+            },
+
+            {
+              title:
+                "Not a Complete Poultry Ration",
+
+              explanation:
+                "Peas do not independently supply the correct balance of energy, amino acids, calcium, available phosphorus, sodium, vitamins, and trace minerals required by poultry."
+            },
+
+            {
+              title:
+                "Cultivar-Dependent Feeding Value",
+
+              explanation:
+                "Tannins, seed-coat fiber, trypsin inhibitors, lectins, starch characteristics, seed size, and nutrient composition vary among varieties."
+            },
+
+            {
+              title:
+                "Lower Protein Concentration Than Soybean Meal",
+
+              explanation:
+                "Although peas contain more protein than most cereal grains, they generally provide substantially less concentrated protein than properly processed soybean meal."
+            },
+
+            {
+              title:
+                "Tannin Concerns",
+
+              explanation:
+                "Strongly pigmented, colored-flowered, or dark-seeded peas may contain more tannins, which can reduce protein digestibility, feed intake, and usable energy."
+            },
+
+            {
+              title:
+                "Trypsin Inhibitors and Lectins",
+
+              explanation:
+                "Field Peas generally contain lower levels than raw Soybeans, but concentrations vary and should not be treated as zero."
+            },
+
+            {
+              title:
+                "Phytate-Bound Phosphorus",
+
+              explanation:
+                "A portion of the phosphorus may be bound in phytate and unavailable to poultry without appropriate formulation or phytase activity."
+            },
+
+            {
+              title:
+                "Non-Starch Polysaccharides",
+
+              explanation:
+                "Non-starch polysaccharides can reduce nutrient utilization, especially when peas form a substantial part of a diet."
+            },
+
+            {
+              title:
+                "Seed-Coat Fiber",
+
+              explanation:
+                "Whole seed coats increase fiber and may lower usable energy, particularly in strongly pigmented or thick-coated cultivars."
+            },
+
+            {
+              title:
+                "Whole-Seed Acceptance",
+
+              explanation:
+                "Some chickens may leave large whole peas uneaten or consume them less efficiently than cracked or coarsely ground seed."
+            },
+
+            {
+              title:
+                "Grinding and Mixing Requirements",
+
+              explanation:
+                "Meaningful ration use may require cracking, grinding, weighing, mixing, and quality control beyond what is needed for simple whole-grain treats."
+            },
+
+            {
+              title:
+                "Fine-Meal Dust",
+
+              explanation:
+                "Excessively fine grinding creates dust, encourages ingredient separation, absorbs moisture rapidly, and complicates uniform feeding."
+            },
+
+            {
+              title:
+                "Harvest and Threshing Labor",
+
+              explanation:
+                "Dry-seed production may require cutting, drying, threshing, shelling, cleaning, sorting, weighing, and storage."
+            },
+
+            {
+              title:
+                "Lodging and Shattering Loss",
+
+              explanation:
+                "Tall or vining plants may lodge, and delayed harvest can increase pod shattering, weather damage, wildlife loss, and difficult threshing."
+            },
+
+            {
+              title:
+                "Wet-Soil Sensitivity",
+
+              explanation:
+                "Field Peas are vulnerable to poor emergence, seed decay, damping-off, root rot, and poor nodulation in saturated or poorly drained soil."
+            },
+
+            {
+              title:
+                "Heat Sensitivity",
+
+              explanation:
+                "High temperatures during flowering and pod filling may reduce seed set, seed size, and final yield."
+            },
+
+            {
+              title:
+                "Disease Pressure",
+
+              explanation:
+                "Root rots, seedling disease, foliar disease, pod disease, and storage mold may reduce usable harvest."
+            },
+
+            {
+              title:
+                "Storage-Pest Risk",
+
+              explanation:
+                "Stored peas can be damaged by seed beetles, pantry pests, rodents, and moisture migration."
+            },
+
+            {
+              title:
+                "No Universal Backyard Feeding Percentage",
+
+              explanation:
+                "Published inclusion levels depend on cultivar, nutrient analysis, bird type, age, processing, and complete experimental ration design."
+            }
+          ],
+
+          nutritionalLimitations: [
+            "Field Peas are not a complete feed.",
+
+            "Crude-protein percentage does not establish protein quality.",
+
+            "Methionine is relatively limited.",
+
+            "Other sulfur-containing amino acids may also be limiting.",
+
+            "Peas cannot serve as the sole protein ingredient.",
+
+            "Peas generally contain less protein than soybean meal.",
+
+            "Whole peas contain substantial starch and are not a pure protein concentrate.",
+
+            "Energy value varies among cultivars.",
+
+            "Tannins may reduce protein and energy utilization.",
+
+            "Trypsin-inhibitor levels vary.",
+
+            "Lectin levels vary.",
+
+            "Phytate may reduce available phosphorus.",
+
+            "Non-starch polysaccharides may reduce nutrient utilization.",
+
+            "Seed coats increase fiber.",
+
+            "Pigmented varieties may contain more tannins and fiber.",
+
+            "Fresh green peas contain much more moisture than mature dry peas.",
+
+            "Cooked peas contain much more moisture than dry peas.",
+
+            "Sprouted peas should not be compared pound-for-pound with dry seed.",
+
+            "Peas contain inadequate calcium for laying hens.",
+
+            "Peas do not supply a complete vitamin or trace-mineral program.",
+
+            "Young birds are especially vulnerable to complete-feed displacement.",
+
+            "Large supplemental amounts may dilute dietary energy and essential nutrients.",
+
+            "Processing changes particle size and moisture but does not automatically correct nutrient imbalance.",
+
+            "Research results from one cultivar cannot be transferred automatically to another cultivar.",
+
+            "As-fed and dry-matter nutrient values must not be confused."
+          ],
+
+          practicalLimitations: [
+            "Requires correct identification as Pisum sativum.",
+
+            "Must not be confused with Cowpeas, southern peas, or ornamental sweet peas.",
+
+            "Requires untreated food- or feed-grade seed.",
+
+            "Chemically treated planting seed must be kept completely separate.",
+
+            "Low-tannin cultivar sourcing may require advance planning.",
+
+            "Flower color alone does not fully predict feed value.",
+
+            "Dry-seed production requires sufficient growing area.",
+
+            "Early planting is important in climates with rapidly developing heat.",
+
+            "Poor drainage can cause crop failure.",
+
+            "Birds may damage seedlings, flowers, and pods before harvest.",
+
+            "Tall varieties may require support in small gardens.",
+
+            "Lodged crops are harder to harvest and dry.",
+
+            "Mature pods may shatter if harvest is delayed.",
+
+            "Wet weather can interrupt field dry-down.",
+
+            "Harvested plants may require protected drying.",
+
+            "Threshing or shelling can be labor-intensive.",
+
+            "Cleaning is necessary to remove chaff, stones, weeds, insects, and damaged seed.",
+
+            "Whole peas may require cracking.",
+
+            "Grinding equipment may be needed for ration use.",
+
+            "Fine meal is difficult to manage without dust control.",
+
+            "Whole, cracked, and ground peas require different storage expectations.",
+
+            "Storage containers must resist moisture, insects, and rodents.",
+
+            "Cooked and soaked forms spoil quickly.",
+
+            "Sprouting requires intensive sanitation.",
+
+            "Small garden harvests may have greater household-food value than feed-replacement value.",
+
+            "Exact backyard yield per square foot remains uncertain.",
+
+            "Exact feed savings remain uncertain.",
+
+            "Hand production may not compete economically with purchased commercial ingredients."
+          ],
+
+          unsuitableExpectations: [
+            "Replacing complete starter feed",
+
+            "Replacing complete grower feed",
+
+            "Replacing complete layer feed",
+
+            "Replacing complete breeder feed",
+
+            "Replacing complete broiler feed",
+
+            "Serving as the sole protein source",
+
+            "Directly replacing soybean meal pound for pound",
+
+            "Supplying adequate methionine without formulation",
+
+            "Supplying adequate calcium for laying hens",
+
+            "Correcting an incomplete homemade ration",
+
+            "Creating balanced feed by mixing peas with grain by guesswork",
+
+            "Using crude-protein percentage as the only formulation value",
+
+            "Applying one universal feeding percentage to every cultivar",
+
+            "Treating all white-flowered varieties as chemically identical",
+
+            "Treating all dark-seeded varieties as unsuitable without evaluation",
+
+            "Assuming cooking creates a complete feed",
+
+            "Assuming soaking removes every antinutritional factor",
+
+            "Assuming sprouting creates more dry matter or protein",
+
+            "Assuming fermentation makes questionable peas safe",
+
+            "Making moldy peas safe through cooking",
+
+            "Making treated seed safe through washing",
+
+            "Making rodent-contaminated peas safe through screening",
+
+            "Safely storing peas before complete drying",
+
+            "Storing cracked peas as long as intact whole peas",
+
+            "Storing cooked peas without refrigeration or prompt use",
+
+            "Feeding large whole peas freely to young chicks",
+
+            "Allowing unrestricted flock access without crop loss",
+
+            "Guaranteeing a particular garden yield",
+
+            "Guaranteeing a particular reduction in purchased feed",
+
+            "Guaranteeing increased egg production",
+
+            "Guaranteeing faster growth",
+
+            "Guaranteeing improved feather growth",
+
+            "Treating disease, parasites, weakness, or nutritional deficiency",
+
+            "Replacing appropriate insoluble grit",
+
+            "Replacing clean drinking water",
+
+            "Replacing veterinary diagnosis or treatment"
+          ]
+        },
+
+        storage: {
+          storageSummary:
+            "Mature whole Field Peas have excellent nonrefrigerated storage potential when they are fully mature, thoroughly dried, cleaned, cooled, and protected from moisture, insects, and rodents. Whole intact peas are the preferred long-term storage form. Cracked or ground peas expose more surface area and should be produced in smaller batches because they absorb moisture, oxidize, attract pests, and deteriorate more quickly. Fresh, cooked, soaked, or sprouted peas require prompt use and should not be stored as though they were dry grain.",
+
+          storageSuitability:
+            "excellent-for-clean-fully-dried-whole-seed",
+
+          preferredStorageForms: [
+            {
+              form:
+                "Whole Mature Dry Peas",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Fully dried intact peas are the strongest long-term storage form because the unbroken seed coat provides greater protection from moisture absorption, oxidation, insects, and physical deterioration."
+            },
+
+            {
+              form:
+                "Cleaned Whole Peas in Sealed Food-Safe Containers",
+
+              suitability:
+                "excellent",
+
+              explanation:
+                "Use only after the peas are uniformly dry and cool. Containers should exclude moisture, insects, rodents, dust, and foreign material."
+            },
+
+            {
+              form:
+                "Whole Peas Stored in Small Labeled Batches",
+
+              suitability:
+                "very-good",
+
+              explanation:
+                "Dividing the harvest into manageable containers limits the amount exposed during inspection or use and makes it easier to isolate a problem batch."
+            },
+
+            {
+              form:
+                "Cracked Dry Peas",
+
+              suitability:
+                "moderate",
+
+              explanation:
+                "Cracked peas are convenient for feeding but expose more internal seed tissue. Store only limited quantities and inspect more frequently than intact whole peas."
+            },
+
+            {
+              form:
+                "Coarsely Ground Peas",
+
+              suitability:
+                "limited",
+
+              explanation:
+                "Ground peas absorb moisture readily, create dust, cake more easily, and provide greater access for insects and microorganisms. Grind only manageable quantities."
+            },
+
+            {
+              form:
+                "Pea Meal Incorporated Into Complete Feed",
+
+              suitability:
+                "depends-on-feed-manufacturer-guidance",
+
+              explanation:
+                "Once incorporated into a formulated ration, storage life depends on the complete feed, packaging, fat content, environmental conditions, manufacturing date, and label instructions."
+            },
+
+            {
+              form:
+                "Fresh Immature Green Peas",
+
+              suitability:
+                "short-term-only",
+
+              explanation:
+                "Fresh peas contain substantial moisture and should be refrigerated or used promptly. Discard them if they become slimy, sour, moldy, or unusually soft."
+            },
+
+            {
+              form:
+                "Plain Cooked Peas",
+
+              suitability:
+                "very-short-term-only",
+
+              explanation:
+                "Cooked peas spoil quickly and should be cooled promptly, refrigerated when not fed immediately, and removed from the flock before souring or fermentation begins."
+            },
+
+            {
+              form:
+                "Soaked or Sprouted Peas",
+
+              suitability:
+                "very-short-term-and-high-care",
+
+              explanation:
+                "High moisture and warm handling conditions greatly increase microbial risk. These forms require strict sanitation and prompt use."
+            }
+          ],
+
+          dryingRequirements: {
+            targetCondition:
+              "Peas should be uniformly hard, cool, free-flowing, and dry enough for safe sealed storage without condensation, heating, clumping, soft centers, or moisture migration. A suitable grain-moisture meter may provide more reliable confirmation than touch alone.",
+
+            goodDryingPractices: [
+              "Allow pods and seed to mature fully before harvest.",
+              "Harvest before prolonged rainfall, severe lodging, pod shattering, or major wildlife loss.",
+              "Finish drying harvested plants or pods under cover when field conditions remain damp.",
+              "Spread material in shallow layers.",
+              "Maintain strong airflow around pods and peas.",
+              "Turn or rearrange drying material to promote uniform drying.",
+              "Keep harvested peas protected from rain, dew, soil moisture, and condensation.",
+              "Separate wet or immature material from dry mature peas.",
+              "Thresh or shell only when pods are dry enough to release seed cleanly.",
+              "Remove damp chaff and plant material promptly.",
+              "Allow newly dried peas to cool before sealing them.",
+              "Use a clean moisture meter when practical.",
+              "Condition a small test batch before sealing the entire harvest.",
+              "Reinspect containers shortly after sealing.",
+              "Return peas to drying conditions if condensation or warming develops."
+            ],
+
+            unsafeDryingPractices: [
+              "Sealing peas while they remain warm.",
+              "Sealing peas before the centers are fully dry.",
+              "Drying peas in deep piles without airflow.",
+              "Leaving harvested pods in rain or heavy dew.",
+              "Allowing peas to remain in contact with damp soil.",
+              "Mixing wet peas with an already dry batch.",
+              "Relying only on surface dryness.",
+              "Using dirty floors, tarps, screens, or containers.",
+              "Drying near fuel, pesticides, herbicides, treated lumber, or chemical fumes.",
+              "Allowing rodents, wild birds, pets, or poultry access during drying.",
+              "Ignoring musty odor, clumping, heating, or visible mold.",
+              "Attempting to dry peas that are already rotten or heavily mold-damaged.",
+              "Using excessive heat that scorches the seed or traps moisture unevenly.",
+              "Storing peas immediately after mechanical grinding while they remain warm."
+            ],
+
+            dryingFailureIndicators: [
+              "Condensation inside the container",
+              "Peas that feel warm after sealing",
+              "Soft or pliable seed centers",
+              "Clumping or sticking",
+              "Musty odor",
+              "Sour odor",
+              "Visible mold",
+              "Discoloration",
+              "Seed swelling",
+              "Unintended sprouting",
+              "Moisture collecting at the container bottom",
+              "Rapid insect activity",
+              "Heating within a stored batch",
+              "Damp chaff remaining among the peas"
+            ]
+          },
+
+          storageEnvironment: {
+            idealConditions: [
+              "Cool temperature",
+              "Low humidity",
+              "Darkness",
+              "Stable temperature",
+              "Clean storage area",
+              "Dry shelves or pallets",
+              "Protection from direct sunlight",
+              "Protection from condensation",
+              "Protection from insects",
+              "Protection from rodents",
+              "Protection from wild birds",
+              "Protection from pets and livestock",
+              "Food-safe containers",
+              "Containers elevated above damp floors",
+              "Separation from chemicals and treated seed",
+              "Clear batch labeling",
+              "Routine inspection"
+            ],
+
+            avoidConditions: [
+              "Hot sheds or attics",
+              "Humid basements",
+              "Unsealed outdoor storage",
+              "Direct sunlight",
+              "Repeated temperature swings",
+              "Condensation-prone walls",
+              "Damp concrete floors",
+              "Leaking roofs",
+              "Open sacks accessible to insects",
+              "Containers accessible to rodents",
+              "Storage beside chemically treated planting seed",
+              "Storage beside pesticides or herbicides",
+              "Storage near fuel, oil, paint, or solvents",
+              "Dirty reused containers",
+              "Containers previously holding chemicals",
+              "Mixing new harvests with old questionable peas",
+              "Long-term storage of cooked, soaked, or sprouted peas"
+            ]
+          },
+
+          containerGuidance: {
+            looseSeed: [
+              "Use clean food-safe buckets, bins, jars, or other moisture-resistant containers.",
+              "Confirm that peas are fully dry and cool before sealing.",
+              "Use tight-fitting lids that exclude pantry pests.",
+              "Use rodent-resistant outer protection where necessary.",
+              "Divide large harvests into multiple manageable containers.",
+              "Avoid repeatedly opening the entire stored supply.",
+              "Keep containers off damp floors.",
+              "Do not reuse chemical, fertilizer, paint, fuel, or pesticide containers.",
+              "Inspect seams, lids, and gaskets for insect entry points.",
+              "Do not overfill containers so tightly that inspection becomes impossible."
+            ],
+
+            wholeHeads: [
+              "Whole-head storage is not applicable to Field Peas in the same way it is to Sunflower or Grain Sorghum.",
+              "Dry pods may be held temporarily before threshing when they are fully dry and protected by strong airflow.",
+              "Do not treat unthreshed pods as the preferred long-term storage form.",
+              "Pods retain chaff, stems, dust, insects, and moisture pockets that complicate inspection.",
+              "Thresh and clean peas before extended sealed storage.",
+              "Discard pods showing mold, decay, rodent damage, or heavy insect infestation."
+            ],
+
+            kernelsAndProcessedSeed: [
+              "Store cracked or ground peas separately from intact whole seed.",
+              "Process only quantities expected to be used within a manageable period.",
+              "Use airtight food-safe containers after processed peas have cooled.",
+              "Label the processing date.",
+              "Inspect processed peas more frequently.",
+              "Protect fine meal from humidity and condensation.",
+              "Discard caked, sour, musty, or heated meal.",
+              "Avoid storing fine pea meal in open paper bags.",
+              "Do not mix a deteriorating processed batch into sound feed.",
+              "Follow the complete-feed manufacturer's storage guidance when pea meal is incorporated into a formulated ration."
+            ]
+          },
+
+          inventoryManagement: {
+            guidance:
+              "Store Field Peas by harvest batch, cultivar, treatment status, and processing form. Use older sound material first, but never keep a questionable batch merely to avoid waste. Whole peas should generally remain intact until needed because cracking and grinding shorten practical storage life.",
+
+            recommendedLabelFields: [
+              "Crop name",
+              "Scientific identity when useful",
+              "Cultivar or variety",
+              "Food-grade or feed-grade status",
+              "Untreated-seed confirmation",
+              "Harvest date",
+              "Threshing date",
+              "Drying completion date",
+              "Storage date",
+              "Whole, cracked, or ground form",
+              "Processing date",
+              "Source or field location",
+              "Moisture reading when available",
+              "Container number",
+              "Inspection dates",
+              "Observed insect activity",
+              "Any unusual storage event",
+              "Intended flock stage or ration use"
+            ]
+          },
+
+          inspectionSchedule: {
+            initialStoragePeriod:
+              "Inspect newly sealed peas within the first several days and again during the first few weeks. Early inspections should check for condensation, internal warmth, clumping, odor changes, insects, and moisture migration that may reveal incomplete drying.",
+
+            longTermStorage:
+              "Inspect stored peas periodically throughout storage and more often during warm, humid, or rapidly changing weather. Open containers carefully, examine material from more than one depth, and document any problem before it spreads to adjacent batches.",
+
+            inspectionChecklist: [
+              "Condensation",
+              "Internal warmth",
+              "Musty odor",
+              "Sour odor",
+              "Mold",
+              "Clumping",
+              "Soft peas",
+              "Discoloration",
+              "Unintended sprouting",
+              "Insects",
+              "Larvae",
+              "Exit holes in seed",
+              "Webbing",
+              "Fine insect dust",
+              "Rodent droppings",
+              "Urine odor",
+              "Gnaw damage",
+              "Damaged lids",
+              "Leaking containers",
+              "Damp shelving",
+              "Nearby chemical contamination",
+              "Broken or heavily powdered seed",
+              "Changes in meal texture"
+            ]
+          },
+
+          storageLifeGuidance:
+            "No single storage-life guarantee applies to every homegrown Field Pea harvest. Properly dried intact peas stored under cool, dry, dark, insect-resistant, and rodent-resistant conditions may remain usable for an extended period. Warmth, humidity, seed damage, imperfect drying, repeated opening, insects, and grinding shorten practical storage life. Fresh, cooked, soaked, and sprouted peas should be treated as perishable foods rather than dry grain.",
+
+          disposalGuidance:
+            "Discard peas that are moldy, musty, sour, heated, slimy, chemically treated, rodent-contaminated, sewage-contaminated, flood-contaminated, or of uncertain safety. Do not attempt to make unsafe peas suitable by washing, drying, cooking, grinding, freezing, fermenting, or blending them with sound feed. Dispose of contaminated material where poultry, pets, wildlife, and livestock cannot recover it."
+        },
+
+        spoilageAndContamination: {
+          spoilageSummary:
+            "Field Peas are storage-stable only while they remain clean, cool, and adequately dry. Moisture, retained field debris, insects, damaged seed, warm storage, and rodent access can rapidly convert a useful harvest into unsafe feed. Fresh, cooked, soaked, sprouted, cracked, and ground peas are more perishable than intact dry seed. Questionable peas should be discarded rather than salvaged.",
+
+          primarySpoilageRisks: [
+            {
+              risk:
+                "Mold Growth",
+
+              likelihood:
+                "moderate-to-high-when-moisture-control-fails",
+
+              primaryCauses: [
+                "Peas sealed before complete drying",
+                "Condensation",
+                "Rain exposure before harvest",
+                "Damp chaff retained after threshing",
+                "High storage humidity",
+                "Leaking containers",
+                "Temperature swings",
+                "Wet floors or walls",
+                "Rewetting during handling"
+              ],
+
+              warningSigns: [
+                "Visible fuzzy growth",
+                "Musty odor",
+                "Discoloration",
+                "Clumping",
+                "Soft seed",
+                "Condensation",
+                "Heating",
+                "Powdery residue",
+                "Abnormal dust"
+              ],
+
+              response:
+                "Stop feeding the entire affected batch. Isolate it from sound peas and discard it where animals cannot access it. Do not rely on removing only visibly moldy peas."
+            },
+
+            {
+              risk:
+                "Heating and Moisture Migration",
+
+              likelihood:
+                "moderate",
+
+              primaryCauses: [
+                "Incomplete drying",
+                "Seed sealed while warm",
+                "Large containers",
+                "Temperature differences within the storage area",
+                "Respiration from damp seed",
+                "Insect activity",
+                "Poor airflow before sealing"
+              ],
+
+              warningSigns: [
+                "Warm container walls",
+                "Warm seed in the center",
+                "Condensation near the lid",
+                "Moisture at the container bottom",
+                "Clumping",
+                "Off odor",
+                "Seed swelling",
+                "Rapid insect activity"
+              ],
+
+              response:
+                "Do not feed peas from a heating batch. Open and evaluate the material cautiously away from animals. If heating, odor, mold, or uncertainty is present, discard the batch."
+            },
+
+            {
+              risk:
+                "Stored-Seed Insects",
+
+              likelihood:
+                "moderate-to-high-with-unprotected-storage",
+
+              primaryCauses: [
+                "Infested seed entering storage",
+                "Open sacks",
+                "Unsealed lids",
+                "Dirty reused containers",
+                "Warm storage",
+                "Long storage periods",
+                "Failure to rotate stock",
+                "Nearby infested grain"
+              ],
+
+              warningSigns: [
+                "Small holes in peas",
+                "Adult beetles",
+                "Larvae",
+                "Webbing",
+                "Fine powder",
+                "Hollow seed",
+                "Unusual movement",
+                "Increased broken material"
+              ],
+
+              response:
+                "Isolate the affected container immediately. Do not mix it with sound peas. Heavily infested, heated, damp, or contaminated material should be discarded."
+            },
+
+            {
+              risk:
+                "Rodent Contamination",
+
+              likelihood:
+                "moderate-with-inadequate-exclusion",
+
+              primaryCauses: [
+                "Open sacks",
+                "Plastic containers that can be gnawed",
+                "Food spills",
+                "Unsealed buildings",
+                "Poor sanitation",
+                "Storage against walls",
+                "Failure to inspect"
+              ],
+
+              warningSigns: [
+                "Droppings",
+                "Urine odor",
+                "Gnaw marks",
+                "Hair",
+                "Nesting material",
+                "Torn packaging",
+                "Scattered peas",
+                "Tracks"
+              ],
+
+              response:
+                "Discard contaminated peas. Clean and disinfect the storage area appropriately, improve rodent exclusion, and move sound material into secure containers."
+            },
+
+            {
+              risk:
+                "Cooked-Pea Spoilage",
+
+              likelihood:
+                "high-when-left-warm-or-wet",
+
+              primaryCauses: [
+                "Leaving cooked peas at warm temperatures",
+                "Large uneaten portions",
+                "Dirty feeding dishes",
+                "Mixing old and fresh leftovers",
+                "Warm humid weather",
+                "Failure to refrigerate unused portions"
+              ],
+
+              warningSigns: [
+                "Sour odor",
+                "Slimy texture",
+                "Bubbling",
+                "Foam",
+                "Mold",
+                "Unusual discoloration",
+                "Fermented smell"
+              ],
+
+              response:
+                "Discard spoiled cooked peas immediately and clean the feeding area. Do not feed leftovers merely because birds appear willing to eat them."
+            },
+
+            {
+              risk:
+                "Soaked or Sprouted Pea Deterioration",
+
+              likelihood:
+                "high-with-poor-sanitation",
+
+              primaryCauses: [
+                "Warm standing water",
+                "Infrequent rinsing",
+                "Dirty containers",
+                "Crowded seed",
+                "Poor drainage",
+                "Excessive sprouting time",
+                "Contaminated starting seed"
+              ],
+
+              warningSigns: [
+                "Slime",
+                "Sour odor",
+                "Foam",
+                "Mold",
+                "Heating",
+                "Abnormal discoloration",
+                "Sticky seed",
+                "Rotten odor"
+              ],
+
+              response:
+                "Discard the entire affected batch. Do not rinse and reuse slimy, sour, heated, or moldy sprouts."
+            },
+
+            {
+              risk:
+                "Processed-Meal Deterioration",
+
+              likelihood:
+                "moderate-to-high",
+
+              primaryCauses: [
+                "Fine grinding",
+                "Warm meal sealed immediately",
+                "High humidity",
+                "Open storage",
+                "Long storage",
+                "Dirty grinding equipment",
+                "Mixing old and new meal"
+              ],
+
+              warningSigns: [
+                "Caking",
+                "Hard lumps",
+                "Musty odor",
+                "Sour odor",
+                "Heating",
+                "Insects",
+                "Webbing",
+                "Color change"
+              ],
+
+              response:
+                "Stop feeding questionable meal. Clean the grinder and storage equipment, reduce batch size, and grind whole peas closer to the time of use."
+            }
+          ],
+
+          contaminationRisks: [
+            {
+              contaminant:
+                "Chemically Treated Planting Seed",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Bright artificial color",
+                "Powdered coating",
+                "Chemical odor",
+                "Seed-treatment label",
+                "Warning statements",
+                "Unknown planting-seed source",
+                "Separate commercial seed bag"
+              ],
+
+              guidance:
+                "Never feed treated planting seed. Keep it physically separated from all food- and feed-grade peas and dispose of leftovers according to the product label."
+            },
+
+            {
+              contaminant:
+                "Rodent Waste",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Droppings",
+                "Urine odor",
+                "Hair",
+                "Gnaw damage",
+                "Nesting material",
+                "Tracks",
+                "Torn containers"
+              ],
+
+              guidance:
+                "Discard contaminated material. Screening, washing, or cooking does not provide a dependable backyard salvage method."
+            },
+
+            {
+              contaminant:
+                "Wild-Bird or Poultry Droppings",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Droppings on drying peas",
+                "Bird access to drying screens",
+                "Feathers",
+                "Tracks",
+                "Contaminated tarps"
+              ],
+
+              guidance:
+                "Prevent animal access during drying and storage. Discard directly contaminated peas."
+            },
+
+            {
+              contaminant:
+                "Floodwater or Sewage",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Known flooding",
+                "Silt lines",
+                "Sewage odor",
+                "Debris deposits",
+                "Unknown standing-water exposure"
+              ],
+
+              guidance:
+                "Do not feed peas exposed to floodwater or sewage. Discard them where animals cannot recover them."
+            },
+
+            {
+              contaminant:
+                "Pesticides, Herbicides, Fuel, or Other Chemicals",
+
+              riskLevel:
+                "critical",
+
+              identificationClues: [
+                "Chemical odor",
+                "Storage beside chemicals",
+                "Visible spill",
+                "Unknown spray history",
+                "Fuel staining",
+                "Contaminated equipment"
+              ],
+
+              guidance:
+                "Do not feed chemically contaminated peas or foliage. Processing does not make such material safe."
+            },
+
+            {
+              contaminant:
+                "Toxic Weed Seed or Foreign Plant Material",
+
+              riskLevel:
+                "moderate-to-high",
+
+              identificationClues: [
+                "Unfamiliar seed mixed with peas",
+                "Harvest from a weedy field",
+                "Pods or stems from unidentified plants",
+                "Poor cleaning",
+                "Mixed volunteer crops"
+              ],
+
+              guidance:
+                "Identify and remove foreign material. Discard a batch when toxic plant contamination cannot be excluded."
+            },
+
+            {
+              contaminant:
+                "Metal, Stone, Glass, Twine, or Equipment Debris",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Visible foreign objects",
+                "Damaged harvesting equipment",
+                "Wire fragments",
+                "Broken glass",
+                "Stones",
+                "Plastic pieces"
+              ],
+
+              guidance:
+                "Screen and inspect peas carefully. Discard material that cannot be cleaned reliably."
+            },
+
+            {
+              contaminant:
+                "Mold or Microbial Growth",
+
+              riskLevel:
+                "high",
+
+              identificationClues: [
+                "Musty odor",
+                "Visible growth",
+                "Clumping",
+                "Heat",
+                "Slime",
+                "Sour odor",
+                "Discoloration"
+              ],
+
+              guidance:
+                "Discard the affected batch. Do not attempt salvage through cooking, drying, or dilution."
+            }
+          ],
+
+          spoilageIndicators: [
+            {
+              indicator:
+                "Visible Mold",
+
+              action:
+                "discard-entire-affected-batch"
+            },
+
+            {
+              indicator:
+                "Musty Odor",
+
+              action:
+                "stop-feeding-and-discard"
+            },
+
+            {
+              indicator:
+                "Sour or Fermented Odor",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Condensation",
+
+              action:
+                "open-isolate-and-evaluate-immediately"
+            },
+
+            {
+              indicator:
+                "Heating",
+
+              action:
+                "stop-feeding-and-discard-if-safety-is-uncertain"
+            },
+
+            {
+              indicator:
+                "Clumping or Caking",
+
+              action:
+                "inspect-for-moisture-and-spoilage"
+            },
+
+            {
+              indicator:
+                "Soft or Swollen Dry Peas",
+
+              action:
+                "reject-as-improperly-stored"
+            },
+
+            {
+              indicator:
+                "Unintended Sprouting",
+
+              action:
+                "discard-as-moisture-damaged-storage-grain"
+            },
+
+            {
+              indicator:
+                "Insects, Larvae, or Webbing",
+
+              action:
+                "isolate-batch-and-reject-heavy-infestation"
+            },
+
+            {
+              indicator:
+                "Rodent Droppings or Urine Odor",
+
+              action:
+                "discard"
+            },
+
+            {
+              indicator:
+                "Slime on Cooked or Sprouted Peas",
+
+              action:
+                "discard-immediately"
+            },
+
+            {
+              indicator:
+                "Unknown Chemical Odor",
+
+              action:
+                "do-not-feed"
+            }
+          ],
+
+          sensoryInspectionLimitations:
+            "Visual appearance, smell, texture, and temperature are useful screening tools but cannot prove that peas are free from toxins, chemical residues, pathogenic microorganisms, or invisible contamination. A batch may be unsafe even when only part of it appears damaged. When treatment history, moisture exposure, contamination, or storage safety is uncertain, rejection is safer than backyard salvage.",
+
+          salvageWarning:
+            "Do not attempt to rescue moldy, musty, heated, chemically treated, rodent-contaminated, flood-contaminated, sour, or slimy peas by washing, sorting, cooking, drying, grinding, freezing, fermenting, or blending them with sound feed. These methods do not reliably remove all hazards."
+        },
+
+        commonFeedingMistakes: {
+          mistakeSummary:
+            "The most serious Field Pea feeding mistakes involve confusing the crop with other peas, feeding treated planting seed, assuming all cultivars have equal poultry value, using peas as a complete protein source, copying research inclusion rates into unbalanced backyard mixtures, and failing to dry or store peas safely.",
+
+          mistakes: [
+            {
+              mistake:
+                "Confusing Field Peas With Cowpeas or Other Pea-Like Crops",
+
+              whyItHappens:
+                "The word pea is used for several unrelated legumes, and common names vary by region.",
+
+              whyItIsAProblem:
+                "Different species have different nutrient profiles, antinutritional factors, processing requirements, and feeding recommendations.",
+
+              correction:
+                "Confirm that the crop is Pisum sativum before applying this feeding reference."
+            },
+
+            {
+              mistake:
+                "Feeding Chemically Treated Planting Seed",
+
+              whyItHappens:
+                "Leftover seed may resemble ordinary dry peas or may be mistakenly viewed as waste that can be redirected to poultry.",
+
+              whyItIsAProblem:
+                "Fungicides, insecticides, dyes, and other seed treatments are not intended for poultry consumption.",
+
+              correction:
+                "Use only untreated food- or feed-grade peas and keep treated planting seed physically separated."
+            },
+
+            {
+              mistake:
+                "Assuming Every Field Pea Cultivar Has Equal Feeding Value",
+
+              whyItHappens:
+                "Field Peas are often discussed as one ingredient even though cultivars differ substantially.",
+
+              whyItIsAProblem:
+                "Tannins, seed-coat fiber, trypsin inhibitors, lectins, starch characteristics, seed size, and nutrient composition vary.",
+
+              correction:
+                "Prefer identified low-tannin food or feed varieties and use feed analysis when peas make a meaningful ration contribution."
+            },
+
+            {
+              mistake:
+                "Treating Flower Color as a Complete Laboratory Test",
+
+              whyItHappens:
+                "White-flowered peas are commonly associated with lower tannin levels.",
+
+              whyItIsAProblem:
+                "Flower color is a useful cultivar clue but does not establish the complete nutrient or antinutritional profile of every seed lot.",
+
+              correction:
+                "Use reliable cultivar identity, seed-source information, and analysis rather than flower color alone."
+            },
+
+            {
+              mistake:
+                "Using Peas as the Sole Protein Ingredient",
+
+              whyItHappens:
+                "Their crude-protein percentage appears high compared with cereal grains.",
+
+              whyItIsAProblem:
+                "Field Peas are relatively limited in methionine and other sulfur-containing amino acids and do not provide complete poultry nutrition.",
+
+              correction:
+                "Use peas only as one ingredient within a balanced ration or as a controlled supplement to complete feed."
+            },
+
+            {
+              mistake:
+                "Replacing Soybean Meal Pound for Pound",
+
+              whyItHappens:
+                "Both crops are described as protein ingredients.",
+
+              whyItIsAProblem:
+                "Field Peas generally contain less concentrated protein and have a different digestible amino-acid, energy, fiber, and antinutritional profile.",
+
+              correction:
+                "Reformulate the complete ration rather than making a direct weight-for-weight substitution."
+            },
+
+            {
+              mistake:
+                "Formulating From Crude-Protein Percentage Alone",
+
+              whyItHappens:
+                "Crude protein is easy to compare and often appears prominently in feed references.",
+
+              whyItIsAProblem:
+                "Birds require digestible amino acids, energy, minerals, vitamins, and appropriate nutrient ratios—not only total crude protein.",
+
+              correction:
+                "Use complete ration formulation that includes digestible amino acids, metabolizable energy, calcium, phosphorus, sodium, vitamins, and trace minerals."
+            },
+
+            {
+              mistake:
+                "Copying Research Inclusion Rates Into a Backyard Mixture",
+
+              whyItHappens:
+                "Published studies may report apparently successful pea percentages.",
+
+              whyItIsAProblem:
+                "Experimental diets are balanced for the specific cultivar, bird age, nutrient analysis, processing method, and complementary ingredients.",
+
+              correction:
+                "Do not copy the percentage without reproducing the complete calculated ration."
+            },
+
+            {
+              mistake:
+                "Allowing Peas to Displace Complete Feed",
+
+              whyItHappens:
+                "Chickens may readily consume cracked, cooked, or scattered peas.",
+
+              whyItIsAProblem:
+                "Excessive supplementation can dilute amino acids, energy, calcium, vitamins, and trace minerals.",
+
+              correction:
+                "Keep complete feed continuously available and reduce peas if normal ration intake declines."
+            },
+
+            {
+              mistake:
+                "Using Peas as a Calcium Source for Layers",
+
+              whyItHappens:
+                "Peas contain several minerals and may be viewed as nutritionally dense.",
+
+              whyItIsAProblem:
+                "They do not supply enough calcium or the complete mineral balance required for eggshell production.",
+
+              correction:
+                "Maintain complete layer feed and appropriate separate calcium management."
+            },
+
+            {
+              mistake:
+                "Offering Large Whole Peas to Young Chicks",
+
+              whyItHappens:
+                "Whole peas appear natural and minimally processed.",
+
+              whyItIsAProblem:
+                "Young chicks require small particles and precisely balanced starter nutrition and may consume whole peas inefficiently.",
+
+              correction:
+                "Keep chicks on complete starter feed and avoid meaningful informal pea supplementation."
+            },
+
+            {
+              mistake:
+                "Ignoring Poor Whole-Pea Consumption",
+
+              whyItHappens:
+                "The peas are technically edible, so uneaten seed may be blamed on the birds.",
+
+              whyItIsAProblem:
+                "Large peas may be difficult or unattractive for some flocks and create waste or uneven intake.",
+
+              correction:
+                "Crack or coarsely grind the peas and observe whether consumption becomes more uniform."
+            },
+
+            {
+              mistake:
+                "Grinding Peas Into Fine Dust",
+
+              whyItHappens:
+                "Fine grinding appears to make peas easier to mix.",
+
+              whyItIsAProblem:
+                "Dust may be inhaled, separate from the ration, absorb moisture, cake, and produce inconsistent intake.",
+
+              correction:
+                "Use coarse grinding and screen out excessive powder."
+            },
+
+            {
+              mistake:
+                "Grinding Too Much in Advance",
+
+              whyItHappens:
+                "Processing one large batch seems more efficient.",
+
+              whyItIsAProblem:
+                "Ground peas deteriorate more quickly than intact seed and are more vulnerable to humidity, insects, and contamination.",
+
+              correction:
+                "Store peas whole and process only manageable quantities."
+            },
+
+            {
+              mistake:
+                "Sealing Peas Before Complete Drying",
+
+              whyItHappens:
+                "Seed surfaces may feel dry while internal moisture remains.",
+
+              whyItIsAProblem:
+                "Residual moisture can cause condensation, heating, mold, fermentation, and insect activity.",
+
+              correction:
+                "Dry uniformly, cool the peas, condition a test batch, and inspect soon after sealing."
+            },
+
+            {
+              mistake:
+                "Storing Peas While They Are Warm",
+
+              whyItHappens:
+                "Peas may be sealed immediately after sun drying or mechanical processing.",
+
+              whyItIsAProblem:
+                "Warm seed can create condensation and moisture migration inside the container.",
+
+              correction:
+                "Allow peas to cool completely before sealed storage."
+            },
+
+            {
+              mistake:
+                "Trying to Salvage Moldy or Musty Peas",
+
+              whyItHappens:
+                "Only part of the batch may look visibly damaged.",
+
+              whyItIsAProblem:
+                "Contamination may extend beyond the visibly affected seed, and backyard processing cannot prove safety.",
+
+              correction:
+                "Discard the affected batch rather than cooking, washing, drying, or diluting it."
+            },
+
+            {
+              mistake:
+                "Treating Cooking as a Universal Safety Correction",
+
+              whyItHappens:
+                "Heat is assumed to solve every antinutritional or contamination concern.",
+
+              whyItIsAProblem:
+                "Cooking does not reliably remove chemical treatments, mold hazards, rodent contamination, or every cultivar-related limitation.",
+
+              correction:
+                "Cook only clean suitable peas as an optional feeding form, never as a salvage method."
+            },
+
+            {
+              mistake:
+                "Assuming Soaking or Sprouting Creates a Complete Feed",
+
+              whyItHappens:
+                "Visible germination may be interpreted as major nutrient creation.",
+
+              whyItIsAProblem:
+                "Sprouting changes moisture and nutrient distribution but does not create complete poultry nutrition and introduces microbial-management risks.",
+
+              correction:
+                "Treat soaked or sprouted peas as highly perishable supplemental material, not as a complete ration."
+            },
+
+            {
+              mistake:
+                "Leaving Cooked Peas in the Run Too Long",
+
+              whyItHappens:
+                "Wet leftovers may look acceptable for several hours.",
+
+              whyItIsAProblem:
+                "Cooked peas can sour, ferment, become slimy, attract pests, and support microbial growth.",
+
+              correction:
+                "Offer only what the flock will consume promptly and remove leftovers."
+            },
+
+            {
+              mistake:
+                "Feeding Seasoned Household Peas",
+
+              whyItHappens:
+                "Leftover human food appears convenient.",
+
+              whyItIsAProblem:
+                "Salt, butter, sauces, onions, garlic, and other ingredients may be unsuitable or nutritionally disruptive.",
+
+              correction:
+                "Offer only plain fresh unseasoned peas."
+            },
+
+            {
+              mistake:
+                "Allowing Unrestricted Access Before Harvest",
+
+              whyItHappens:
+                "The plants are edible and may be viewed as living forage.",
+
+              whyItIsAProblem:
+                "Chickens may uproot seedlings, consume flowers, destroy pods, and eliminate the dry-seed harvest.",
+
+              correction:
+                "Use fencing or controlled cut-and-carry feeding until the principal crop is harvested."
+            },
+
+            {
+              mistake:
+                "Assuming Mature Pods and Vines Equal Grain Feed",
+
+              whyItHappens:
+                "The entire plant is harvested together.",
+
+              whyItIsAProblem:
+                "Mature pods and coarse vines are fibrous and provide much less concentrated nutrition than mature seed.",
+
+              correction:
+                "Thresh the crop and focus poultry feeding on clean peas."
+            },
+
+            {
+              mistake:
+                "Skipping Storage Inspections",
+
+              whyItHappens:
+                "Dry peas appear stable once sealed.",
+
+              whyItIsAProblem:
+                "Moisture migration, insects, damaged lids, and rodent entry can develop after storage begins.",
+
+              correction:
+                "Inspect early after sealing and periodically throughout storage."
+            }
+          ]
+        },
+
+        complementaryFeeding: {
+          purpose:
+            "Field Peas contribute useful plant protein, lysine, starch, and dry-storage value, but they do not provide a complete amino-acid, mineral, vitamin, or energy balance by themselves. Their best use is as one measured ingredient within a complete ration or as a limited supplement alongside nutritionally complete poultry feed.",
+
+          bestFoundation:
+            "An age-appropriate complete poultry ration formulated for the flock's life stage, with clean water continuously available and separate calcium management for laying hens when appropriate.",
+
+          complements: [
+            {
+              feedType:
+                "Complete Commercial Poultry Feed",
+
+              relationship:
+                "Complete feed supplies the balanced energy, amino acids, vitamins, minerals, and stage-specific nutrition that Field Peas cannot provide alone. Peas should remain secondary unless they are incorporated through complete ration formulation."
+            },
+
+            {
+              feedType:
+                "Methionine-Rich Protein Sources",
+
+              relationship:
+                "Field Peas contribute useful lysine but are relatively limited in methionine and other sulfur-containing amino acids. Properly selected complementary protein ingredients or formulated amino-acid supplementation may help correct this limitation within a complete ration."
+            },
+
+            {
+              feedType:
+                "Cereal Grains",
+
+              relationship:
+                "Corn, Wheat, Barley, Oats, Grain Sorghum, and Millet often provide concentrated starch energy and different amino-acid patterns. Peas can strengthen lysine and total protein contribution, but merely mixing peas with grain does not guarantee a balanced ration."
+            },
+
+            {
+              feedType:
+                "Properly Processed Soybean Ingredients",
+
+              relationship:
+                "Soybean meal generally supplies more concentrated protein and a different amino-acid profile than Field Peas. The two ingredients may complement one another in formulated feed, but substitutions must be calculated rather than made pound for pound."
+            },
+
+            {
+              feedType:
+                "Sunflower Seed or Sunflower Meal",
+
+              relationship:
+                "Sunflower ingredients may contribute energy, fat, and protein diversity. Their fiber, amino-acid balance, and energy concentration vary, so the complete ration still requires formulation."
+            },
+
+            {
+              feedType:
+                "Animal-Derived Protein Ingredients Approved for Poultry Feed",
+
+              relationship:
+                "Appropriate animal-derived ingredients may supply highly digestible protein and amino acids that differ from those in peas. Their use should follow feed-safety, legal, and ration-formulation requirements."
+            },
+
+            {
+              feedType:
+                "Appropriate Layer Calcium Source",
+
+              relationship:
+                "Field Peas do not supply enough calcium for laying hens. Complete layer feed and, where appropriate, free-choice oyster shell or another suitable calcium source must remain available."
+            },
+
+            {
+              feedType:
+                "Vitamin and Mineral Premix",
+
+              relationship:
+                "When peas are incorporated into a home-formulated complete ration, a properly selected poultry premix may be required to supply nutrients not present in adequate or dependable amounts."
+            },
+
+            {
+              feedType:
+                "Phytase-Supported Formulation",
+
+              relationship:
+                "Because some pea phosphorus is bound in phytate, phytase may improve phosphorus availability in professionally formulated diets. This is a ration-formulation tool rather than a casual backyard treatment."
+            },
+
+            {
+              feedType:
+                "Fresh Leafy Greens",
+
+              relationship:
+                "Leafy greens may provide seasonal enrichment, moisture, pigments, and dietary variety. They do not correct the amino-acid or mineral limitations of Field Peas and should not displace complete feed."
+            },
+
+            {
+              feedType:
+                "Appropriately Sized Insoluble Grit",
+
+              relationship:
+                "Chickens consuming whole or coarsely cracked dry peas may benefit from suitable insoluble grit when they do not obtain enough naturally. Grit aids mechanical digestion but does not add nutritional balance."
+            },
+
+            {
+              feedType:
+                "Clean Water",
+
+              relationship:
+                "Dry peas and meal increase the importance of dependable water access. Water remains essential for digestion, feed intake, temperature regulation, egg production, and overall health."
+            }
+          ],
+
+          doesNotCorrect: [
+            "Methionine deficiency when no suitable complementary source is provided",
+            "Deficiencies in other sulfur-containing amino acids",
+            "Insufficient calcium for laying hens",
+            "Insufficient available phosphorus",
+            "Sodium deficiency",
+            "Vitamin deficiency",
+            "Trace-mineral deficiency",
+            "Energy imbalance",
+            "Excess dietary fiber",
+            "High tannin content",
+            "Cultivar-specific trypsin-inhibitor activity",
+            "Cultivar-specific lectin activity",
+            "Phytate-related mineral limitations",
+            "Mold contamination",
+            "Chemically treated seed",
+            "Rodent contamination",
+            "Poor storage quality",
+            "Incorrect particle size",
+            "Excessive complete-feed displacement",
+            "An improperly formulated homemade ration",
+            "Inadequate chick-starter nutrition",
+            "Inadequate grower nutrition",
+            "Inadequate layer nutrition",
+            "Inadequate breeder nutrition",
+            "Inadequate broiler nutrition",
+            "Lack of clean drinking water",
+            "Lack of appropriate insoluble grit"
+          ],
+
+          pairingWarning:
+            "Combining Field Peas with one or more other homegrown ingredients does not automatically create complete poultry feed. Peas and cereal grains may appear complementary because peas provide more lysine and protein while grains provide starch energy, but the mixture may still be deficient in methionine, calcium, sodium, available phosphorus, vitamins, trace minerals, and total energy. Meaningful ration inclusion requires calculation using the actual ingredients and flock stage.",
+
+          practicalBackyardApproach:
+            "For most backyard flocks, the simplest approach is to keep complete feed continuously available and offer clean cracked, coarsely ground, whole, fresh, or plain cooked Field Peas only in controlled amounts. Growers wishing to replace a meaningful share of purchased feed should obtain reliable cultivar information, analyze the ingredient where practical, and use qualified poultry-ration formulation rather than estimating proportions."
+        },
+
+        feedingMethods: {
+          philosophy:
+            "Field Peas should be introduced gradually, offered in a form the flock can consume efficiently, and managed so that they do not reduce intake of complete feed. Whole or cracked peas can provide measured enrichment, while larger nutritional use belongs within a fully formulated ration.",
+
+          primaryMethods: [
+            {
+              method:
+                "Measured Cracked-Pea Supplement",
+
+              recommendation:
+                "recommended",
+
+              explanation:
+                "Offer a controlled amount of clean cracked dry peas after chickens have access to their complete ration. Cracking improves consumption while avoiding much of the dust created by fine grinding."
+            },
+
+            {
+              method:
+                "Measured Whole-Pea Feeding",
+
+              recommendation:
+                "conditionally-recommended",
+
+              explanation:
+                "Whole dry peas may be offered to established adult chickens when the flock consumes them efficiently and appropriate grit is available. Switch to cracked peas if whole seed is repeatedly left behind."
+            },
+
+            {
+              method:
+                "Coarsely Ground Ration Ingredient",
+
+              recommendation:
+                "recommended-with-formulation",
+
+              explanation:
+                "Use coarsely ground peas as part of a calculated complete ration. The formulation must account for the actual pea cultivar, nutrient composition, energy value, amino-acid profile, fiber, tannins, vitamins, and minerals."
+            },
+
+            {
+              method:
+                "Professionally Formulated Complete Feed Containing Peas",
+
+              recommendation:
+                "strongly-recommended-for-meaningful-inclusion",
+
+              explanation:
+                "This is the safest way to use Field Peas as more than a small supplement because the complete feed can be balanced for the flock's age, production level, and nutrient requirements."
+            },
+
+            {
+              method:
+                "Plain Cooked Peas",
+
+              recommendation:
+                "suitable-as-an-occasional-supplement",
+
+              explanation:
+                "Cook peas in plain water, cool them completely, and offer only a modest amount. Remove leftovers promptly because cooked peas spoil quickly."
+            },
+
+            {
+              method:
+                "Fresh Green Peas",
+
+              recommendation:
+                "suitable-as-a-seasonal-treat",
+
+              explanation:
+                "Offer clean immature peas in limited amounts. Treat them as high-moisture seasonal variety rather than as the nutritional equivalent of mature dry peas."
+            },
+
+            {
+              method:
+                "Tender Edible Pods",
+
+              recommendation:
+                "limited-use",
+
+              explanation:
+                "Young pods from edible-pod varieties may be offered in manageable pieces. Avoid mature tough pods and damaged or moldy material."
+            },
+
+            {
+              method:
+                "Cut-and-Carry Young Foliage",
+
+              recommendation:
+                "limited-and-supervised",
+
+              explanation:
+                "Offer a small amount of clean tender foliage away from the main crop. Poultry-specific evidence for unrestricted pea forage is limited, and excessive feeding may displace complete feed."
+            },
+
+            {
+              method:
+                "Scattered Dry-Pea Enrichment",
+
+              recommendation:
+                "limited-use",
+
+              explanation:
+                "Scatter a small measured amount of whole or cracked peas over clean dry litter or suitable ground to encourage pecking and movement. Avoid wet, muddy, contaminated, or manure-heavy areas."
+            },
+
+            {
+              method:
+                "Postharvest Gleaning",
+
+              recommendation:
+                "conditionally-recommended",
+
+              explanation:
+                "Allow supervised access only after the principal crop is harvested and the area has been checked for treated seed, moldy peas, toxic weeds, wire, twine, chemicals, standing water, and other hazards."
+            },
+
+            {
+              method:
+                "Adding Pea Meal to Complete Feed by Guesswork",
+
+              recommendation:
+                "not-recommended",
+
+              explanation:
+                "Adding an uncalculated amount of pea meal dilutes the nutrient balance already present in commercial feed and may create energy, methionine, calcium, vitamin, and mineral deficiencies."
+            },
+
+            {
+              method:
+                "Free-Choice Pea Feeding",
+
+              recommendation:
+                "not-recommended",
+
+              explanation:
+                "Unrestricted access encourages selective feeding and makes total intake difficult to control. Peas should not be treated as a nutritionally complete free-choice ingredient."
+            },
+
+            {
+              method:
+                "Large Whole-Pea Portions for Chicks",
+
+              recommendation:
+                "not-recommended",
+
+              explanation:
+                "Young chicks require complete starter feed with appropriate particle size and precise nutrient density."
+            },
+
+            {
+              method:
+                "Feeding Questionable Stored Peas",
+
+              recommendation:
+                "never-recommended",
+
+              explanation:
+                "Do not feed peas that are moldy, musty, heated, damp, clumped, rodent-contaminated, chemically treated, insect-damaged, or of uncertain safety."
+            }
+          ],
+
+          introductionGuidelines: {
+            explanation:
+              "Begin with a very small amount after the flock has eaten its normal complete feed. Use one feeding form at a time so acceptance and digestive response can be observed. Increase only when birds continue eating their complete ration normally, consume the peas without excessive sorting, and show no persistent adverse change in droppings, activity, body condition, egg production, or shell quality. Young chicks should not be used for informal introduction trials."
+          },
+
+          observationChecklist: [
+            "Normal complete-feed intake",
+            "Whether whole peas are left uneaten",
+            "Selective feeding or sorting",
+            "Competition around feeding stations",
+            "Crop fill after feeding",
+            "Normal drinking behavior",
+            "Persistent changes in manure consistency",
+            "Undigested pea fragments in droppings",
+            "Reduced appetite",
+            "Body-condition change",
+            "Unexpected weight gain",
+            "Unexpected weight loss",
+            "Changes in activity",
+            "Changes in feather condition",
+            "Changes in egg production",
+            "Changes in eggshell quality",
+            "Changes in growth among pullets",
+            "Dust accumulation around feeders",
+            "Caking or moisture in ground peas",
+            "Sour or fermented odor from wet leftovers",
+            "Signs of mold or storage insects",
+            "Rodent activity around stored feed",
+            "Whether lower-ranking birds receive a fair share"
+          ]
+        },
+
+        practicalUse: {
+          idealHomesteadUses: [
+            "Producing a cool-season protein-oriented grain crop",
+            "Supplementing healthy adult chickens in measured amounts",
+            "Providing a ration ingredient for qualified home feed formulation",
+            "Diversifying protein sources beyond exclusive soybean dependence",
+            "Complementing cereal-grain production",
+            "Producing household food and poultry feed from the same crop",
+            "Growing a nitrogen-fixing annual within crop rotation",
+            "Using early-spring garden space before warm-season planting",
+            "Using autumn or winter production windows in mild climates",
+            "Storing intact dry seed without refrigeration",
+            "Saving seed from an appropriate untreated open-pollinated variety",
+            "Providing seasonal green-pea treats",
+            "Providing limited postharvest gleaning",
+            "Growing feed on medium or larger homestead plots",
+            "Using temporary annual production rather than permanent perennial space",
+            "Supporting cover-crop or green-manure goals",
+            "Producing forage when forage is the deliberate primary use"
+          ],
+
+          lessSuitableUses: [
+            "Replacing a complete poultry ration",
+            "Serving as the sole protein ingredient",
+            "Directly replacing soybean meal pound for pound",
+            "Feeding young chicks substantial homeprocessed peas",
+            "Providing unrestricted free-choice grain",
+            "Providing laying-hen calcium",
+            "Correcting methionine deficiency without complementary ingredients",
+            "Building a homemade ration from crude-protein percentage alone",
+            "Using unknown or unidentified cultivars",
+            "Using chemically treated planting seed",
+            "Using dark-seeded varieties without understanding tannin level",
+            "Producing large feed savings from a very small garden plot",
+            "Growing in chronically wet or waterlogged soil",
+            "Growing through prolonged hot summer conditions",
+            "Planting late where flowering will occur during extreme heat",
+            "Depending on hand threshing for very large acreage",
+            "Long-term storage of cracked or ground peas",
+            "Long-term storage of cooked, soaked, or sprouted peas",
+            "Using mature vines and dry pods as concentrated feed",
+            "Allowing flock access before the grain crop is harvested",
+            "Treating sick birds or nutritional disease",
+            "Guaranteeing higher egg production or faster growth"
+          ],
+
+          backyardRecommendation:
+            "Field Peas are a strong cool-season crop for backyard keepers who want a storable homegrown protein-oriented grain and are willing to harvest, dry, thresh, clean, and process it carefully. For ordinary flock management, use clean low-tannin peas as a small measured supplement while complete feed remains the nutritional foundation. For meaningful ration replacement, use reliable cultivar information and proper poultry-feed formulation.",
+
+          commercialRecommendation:
+            "At larger scale, Field Peas can serve as a useful regional poultry-feed ingredient where agronomic conditions are favorable, low-tannin cultivars are available, grain quality is monitored, and rations are formulated from current nutrient and digestible amino-acid values. Commercial usefulness depends on price, local yield, transportation, storage, milling, anti-nutritional-factor profile, and the cost of complementary methionine and other ingredients."
+        },
+
+        troubleshooting: {
+          chickensIgnoreWholePeas: {
+            likelyCauses: [
+              "The peas are too large for comfortable consumption.",
+              "The flock prefers smaller particles.",
+              "Birds have not previously encountered whole dry peas.",
+              "Complete feed or more attractive supplements are available nearby.",
+              "The peas are excessively hard, stale, damaged, or contaminated.",
+              "Lower-ranking birds cannot access the feeding area."
+            ],
+
+            recommendedActions: [
+              "Inspect the peas for mold, mustiness, insects, chemical treatment, and storage damage.",
+              "Crack the peas into coarse pieces.",
+              "Offer only a small measured amount after birds have eaten their complete feed.",
+              "Use several feeding locations.",
+              "Remove repeatedly uneaten peas rather than allowing them to become wet or contaminated.",
+              "Do not assume that hunger should be used to force acceptance."
+            ]
+          },
+
+          peasAreRepeatedlyLeftInTheFeeder: {
+            possibleCauses: [
+              "Particle size is too large.",
+              "The flock is selectively eating other ingredients.",
+              "Too many peas are being offered.",
+              "The peas have an off odor or poor palatability.",
+              "The cultivar has a higher tannin level.",
+              "The peas were mixed unevenly into the feed."
+            ],
+
+            recommendedActions: [
+              "Reduce the amount offered.",
+              "Crack or coarsely grind the peas.",
+              "Check cultivar identity and seed quality.",
+              "Avoid adding loose peas to a complete ration where birds can sort ingredients.",
+              "Use properly mixed formulated feed for meaningful inclusion.",
+              "Discard peas with musty, sour, chemical, or otherwise abnormal odor."
+            ]
+          },
+
+          birdsSortPeasFromOtherFeed: {
+            likelyCause:
+              "The mixture contains visibly different particle sizes, allowing chickens to select preferred ingredients and leave others behind.",
+
+            recommendedActions: [
+              "Avoid informal loose mixtures of whole peas and complete feed.",
+              "Use more uniform particle sizes.",
+              "Coarsely grind peas when they are part of a calculated ration.",
+              "Mix only quantities that can remain uniform.",
+              "Do not allow fine meal to settle at the feeder bottom.",
+              "Return to complete commercial feed when a uniform home ration cannot be maintained."
+            ]
+          },
+
+          completeFeedIntakeDrops: {
+            likelyCauses: [
+              "Too many peas are being offered.",
+              "Cooked or cracked peas are more attractive than the complete ration.",
+              "Peas are being supplied before normal feed.",
+              "The flock is filling up on supplemental starch and protein.",
+              "Several other treats are also being offered."
+            ],
+
+            recommendedActions: [
+              "Stop or sharply reduce supplemental peas.",
+              "Keep complete feed continuously available.",
+              "Offer supplements only after normal feed intake.",
+              "Review all treats and homegrown feeds together rather than evaluating peas alone.",
+              "Monitor egg production, shell quality, growth, body condition, and manure.",
+              "Seek qualified ration formulation if peas are intended to replace a meaningful share of purchased feed."
+            ]
+          },
+
+          droppingsBecomeLooseAfterFeeding: {
+            possibleCauses: [
+              "Peas were introduced too rapidly.",
+              "Fresh or cooked peas supplied substantial additional moisture.",
+              "The total supplemental quantity was excessive.",
+              "The peas were spoiled, fermented, sour, or contaminated.",
+              "Another feed or health condition is responsible."
+            ],
+
+            recommendedActions: [
+              "Stop feeding the suspect batch.",
+              "Inspect peas for sour odor, slime, mold, heating, or contamination.",
+              "Return the flock to its normal complete ration.",
+              "Ensure clean water remains available.",
+              "Reintroduce only a very small amount of sound peas after droppings normalize.",
+              "Seek veterinary guidance if diarrhea is severe, persistent, bloody, or accompanied by weakness."
+            ]
+          },
+
+          wholePeaFragmentsAppearInDroppings: {
+            possibleInterpretations: [
+              "Whole peas are not being mechanically reduced efficiently.",
+              "Birds may lack suitable insoluble grit.",
+              "The peas may be too large or hard.",
+              "Feed is moving rapidly through the digestive tract.",
+              "The visible material may be seed coat rather than an entirely undigested pea."
+            ],
+
+            recommendedActions: [
+              "Crack or coarsely grind the peas.",
+              "Confirm access to appropriately sized insoluble grit.",
+              "Reduce the amount offered.",
+              "Observe whether the problem occurs only after pea feeding.",
+              "Do not rely on whole peas for young birds.",
+              "Consult a veterinarian if poor digestion affects multiple feeds or is accompanied by weight loss."
+            ]
+          },
+
+          birdsDevelopPoorFeatherCondition: {
+            possibleCauses: [
+              "Peas or other supplements are displacing complete feed.",
+              "The ration is deficient in methionine or other essential amino acids.",
+              "Overall protein quality is inadequate despite an acceptable crude-protein percentage.",
+              "Parasites, feather pecking, molt, disease, or environmental stress are responsible.",
+              "The problem is unrelated to Field Peas."
+            ],
+
+            recommendedActions: [
+              "Return the flock to a dependable complete ration.",
+              "Reduce unformulated pea inclusion.",
+              "Review all protein and amino-acid sources.",
+              "Check for molt, external parasites, feather pecking, overcrowding, and disease.",
+              "Do not attempt to correct feather problems by simply increasing pea quantity.",
+              "Seek veterinary or poultry-nutrition guidance when the cause remains unclear."
+            ]
+          },
+
+          eggProductionDeclines: {
+            possibleCauses: [
+              "Complete layer feed is being displaced.",
+              "Dietary energy or amino-acid balance has changed.",
+              "Methionine intake is inadequate.",
+              "Calcium or available phosphorus intake has fallen.",
+              "The flock is molting, stressed, overheated, aging, broody, or receiving less daylight.",
+              "Disease or parasites are present."
+            ],
+
+            recommendedActions: [
+              "Stop or reduce Field Pea supplementation.",
+              "Restore unrestricted access to complete layer feed.",
+              "Maintain appropriate separate calcium availability.",
+              "Review water access, daylight, heat stress, molt, age, and flock health.",
+              "Do not assume additional peas will increase production.",
+              "Seek veterinary guidance when the decline is sudden, severe, or unexplained."
+            ]
+          },
+
+          eggshellQualityDeclines: {
+            likelyCauses: [
+              "Peas are displacing complete layer feed.",
+              "Calcium intake is inadequate.",
+              "Available phosphorus or vitamin D balance is inadequate.",
+              "Birds are unable to access the calcium source.",
+              "Age, disease, heat stress, or other flock factors are contributing."
+            ],
+
+            recommendedActions: [
+              "Reduce supplemental peas.",
+              "Restore complete layer feed as the primary ration.",
+              "Provide an appropriate separate calcium source.",
+              "Ensure lower-ranking hens can reach feed and calcium.",
+              "Check water availability and heat stress.",
+              "Do not use Field Peas as a mineral supplement."
+            ]
+          },
+
+          youngBirdsGrowPoorly: {
+            possibleCauses: [
+              "Starter or grower feed is being diluted.",
+              "Peas are supplied in particles that are too large.",
+              "Digestible amino-acid balance is inadequate.",
+              "Energy density is too low.",
+              "Tannins, fiber, or other cultivar-related factors are reducing nutrient use.",
+              "Disease, parasites, brooder conditions, or water problems are present."
+            ],
+
+            recommendedActions: [
+              "Remove informal pea supplementation.",
+              "Feed an age-appropriate complete starter or grower ration.",
+              "Do not use whole dry peas for young chicks.",
+              "Review brooder temperature, sanitation, water, and disease signs.",
+              "Use professional formulation before including peas in a young-bird ration.",
+              "Seek veterinary assistance when growth failure persists."
+            ]
+          },
+
+          flockCompetitionIncreases: {
+            likelyCauses: [
+              "Peas are being offered in one small feeding location.",
+              "The quantity is limited and highly attractive.",
+              "Dominant birds are excluding lower-ranking birds.",
+              "Scattered feeding is occurring in a confined area."
+            ],
+
+            recommendedActions: [
+              "Use several widely separated feeding locations.",
+              "Scatter only over a clean area large enough for flock distribution.",
+              "Avoid hand-feeding from one point when bullying occurs.",
+              "Ensure complete feed remains available at multiple feeders.",
+              "Observe lower-ranking birds directly."
+            ]
+          },
+
+          peaMealBecomesDusty: {
+            likelyCause:
+              "The peas were ground too finely or the meal dried and separated during handling.",
+
+            recommendedActions: [
+              "Adjust the grinder for a coarser particle size.",
+              "Screen out excessive powder.",
+              "Wear appropriate dust protection during processing.",
+              "Avoid pouring meal from unnecessary height.",
+              "Do not add water merely to suppress dust unless the entire moistened batch will be handled as perishable feed.",
+              "Clean dusty feeders and processing equipment."
+            ]
+          },
+
+          peaMealCakesInStorage: {
+            possibleCauses: [
+              "The meal absorbed humidity.",
+              "Peas were ground before they were completely dry.",
+              "Warm meal was sealed immediately.",
+              "The container is leaking.",
+              "Condensation developed.",
+              "The batch has begun to spoil."
+            ],
+
+            recommendedActions: [
+              "Stop feeding the affected meal until it is evaluated.",
+              "Check for musty odor, sour odor, heating, mold, insects, or discoloration.",
+              "Discard questionable material.",
+              "Store future peas whole and grind smaller quantities.",
+              "Allow processed meal to cool before sealing.",
+              "Use clean moisture-resistant containers."
+            ]
+          },
+
+          storedPeasFeelWarm: {
+            possibleCauses: [
+              "They were sealed while warm.",
+              "Internal moisture remains.",
+              "Insect activity is generating heat.",
+              "Microbial activity has begun.",
+              "Temperature differences are causing moisture migration."
+            ],
+
+            recommendedActions: [
+              "Stop feeding the batch.",
+              "Move it away from sound stored feed.",
+              "Open the container cautiously in a well-ventilated area.",
+              "Inspect for condensation, mold, odor, insects, and clumping.",
+              "Discard the batch when heating or spoilage is confirmed or safety is uncertain.",
+              "Do not mix it into sound peas."
+            ]
+          },
+
+          condensationAppearsInsideContainer: {
+            likelyCauses: [
+              "Peas were not fully dry.",
+              "Peas were sealed while warm.",
+              "The storage temperature fluctuates.",
+              "The container is exposed to a cold wall or floor.",
+              "Moisture entered through a damaged lid."
+            ],
+
+            recommendedActions: [
+              "Open and isolate the container immediately.",
+              "Inspect peas from the top, center, and bottom.",
+              "Do not continue sealed storage while condensation is present.",
+              "Discard peas showing mold, heating, mustiness, swelling, or sprouting.",
+              "Correct the drying or storage problem before storing another batch.",
+              "Elevate containers away from damp floors and condensation-prone walls."
+            ]
+          },
+
+          insectsAppearInStoredPeas: {
+            possibleCauses: [
+              "Infested peas entered storage.",
+              "Containers are not insect-tight.",
+              "The storage area contains infested grain.",
+              "Warm conditions encouraged reproduction.",
+              "Storage continued too long without inspection."
+            ],
+
+            recommendedActions: [
+              "Isolate the container.",
+              "Inspect nearby stored grain.",
+              "Discard heavily infested, heated, damp, or contaminated peas.",
+              "Clean cracks, shelves, grinders, and containers thoroughly.",
+              "Use smaller sealed batches.",
+              "Do not mix infested peas into sound feed."
+            ]
+          },
+
+          storedPeasSmellMusty: {
+            likelyCause:
+              "Moisture exposure or mold growth has occurred even when visible mold is limited.",
+
+            recommendedAction:
+              "Stop feeding and discard the affected batch. Do not attempt to salvage it through airing, cooking, grinding, or dilution."
+          },
+
+          storedPeasSmellSour: {
+            likelyCause:
+              "Fermentation or microbial spoilage has begun because moisture and temperature were not controlled.",
+
+            recommendedAction:
+              "Discard the batch and inspect the storage system for leaks, condensation, incomplete drying, and contaminated containers."
+          },
+
+          cookedPeasBecomeSlimy: {
+            likelyCause:
+              "Cooked peas were held too long under warm, wet conditions and microbial deterioration has begun.",
+
+            recommendedAction:
+              "Discard them immediately, clean the feeding container, and offer smaller portions in the future."
+          },
+
+          sproutedPeasDevelopMold: {
+            likelyCauses: [
+              "Poor sanitation",
+              "Contaminated starting seed",
+              "Insufficient drainage",
+              "Crowded seed",
+              "Warm stagnant conditions",
+              "Inadequate rinsing",
+              "Excessive sprouting duration"
+            ],
+
+            recommendedActions: [
+              "Discard the entire batch.",
+              "Do not rinse off visible mold and continue feeding.",
+              "Clean and sanitize the sprouting equipment.",
+              "Review drainage and batch size.",
+              "Use only clean untreated food-grade seed.",
+              "Discontinue sprouting when sanitation cannot be controlled reliably."
+            ]
+          },
+
+          cropProducesFewPods: {
+            possibleCauses: [
+              "Planting occurred too late and flowering experienced heat.",
+              "Excess nitrogen encouraged vegetative growth.",
+              "Poor pollination or flower abortion occurred.",
+              "Plants experienced drought during flowering.",
+              "Disease or insect pressure damaged flowers.",
+              "Shading reduced reproductive growth."
+            ],
+
+            recommendedActions: [
+              "Plant earlier in the cool season.",
+              "Avoid unnecessary nitrogen fertilizer where nodulation is adequate.",
+              "Maintain even moisture during flowering and pod fill.",
+              "Inspect for disease and insects.",
+              "Improve sunlight exposure.",
+              "Select cultivars adapted to the local growing window."
+            ]
+          },
+
+          plantsGrowButNodulesAreAbsent: {
+            possibleCauses: [
+              "Compatible inoculant was not used.",
+              "The inoculant was expired or improperly stored.",
+              "Soil conditions were too acidic, wet, dry, hot, or otherwise unfavorable.",
+              "Residual soil nitrogen reduced nodulation.",
+              "The field lacked compatible Rhizobium bacteria."
+            ],
+
+            recommendedActions: [
+              "Check roots carefully for nodules.",
+              "Use fresh crop-specific inoculant for future planting when appropriate.",
+              "Follow inoculant storage and application directions.",
+              "Correct severe soil pH or drainage problems.",
+              "Avoid assuming nitrogen fixation occurred merely because the crop is a legume."
+            ]
+          },
+
+          plantsLodgeBeforeHarvest: {
+            possibleCauses: [
+              "The cultivar is tall or vining.",
+              "Dense planting encouraged weak stems.",
+              "Excess nitrogen increased vegetative growth.",
+              "Wind, rain, or saturated soil caused lodging.",
+              "Plants were allowed to become overly mature."
+            ],
+
+            recommendedActions: [
+              "Harvest promptly when seed maturity is reached.",
+              "Use support or trellising in small garden plantings.",
+              "Select shorter or more lodging-resistant cultivars.",
+              "Avoid excessive nitrogen.",
+              "Improve drainage.",
+              "Reduce planting density when crowding is severe."
+            ]
+          },
+
+          podsShatterBeforeHarvest: {
+            likelyCauses: [
+              "Harvest was delayed.",
+              "Pods became excessively dry.",
+              "Alternating wet and dry weather stressed pod walls.",
+              "The cultivar is prone to shattering.",
+              "Wind or animal activity disturbed mature plants."
+            ],
+
+            recommendedActions: [
+              "Harvest slightly earlier before severe shattering begins.",
+              "Monitor mature pods frequently.",
+              "Complete final drying under cover.",
+              "Use tarps or catch surfaces during hand harvest.",
+              "Select less shatter-prone varieties where available."
+            ]
+          }
+        },
+
+        faq: [
+          {
+            question:
+              "Can chickens eat Field Peas?",
+
+            answer:
+              "Yes. Chickens can eat clean untreated Field Peas in whole, cracked, coarsely ground, fresh, or plain cooked forms. They should remain a supplement or a properly formulated ration ingredient rather than replacing complete poultry feed."
+          },
+
+          {
+            question:
+              "Are Field Peas the same as Cowpeas?",
+
+            answer:
+              "No. Field Peas in this record are Pisum sativum, the cool-season crop also called dry peas or feed peas. Cowpeas are Vigna unguiculata, a different warm-season species with different growing and feeding characteristics."
+          },
+
+          {
+            question:
+              "Are Field Peas the same as garden peas?",
+
+            answer:
+              "They belong to the same species, Pisum sativum, but cultivars are selected for different uses. Garden peas are often harvested immature for human food, while Field Peas are commonly grown to mature dry seed, forage, or feed."
+          },
+
+          {
+            question:
+              "Can chickens eat whole dry Field Peas?",
+
+            answer:
+              "Established adult chickens may consume whole dry peas, but some flocks reject or inefficiently consume large seed. Cracking the peas is often more practical. Appropriate insoluble grit should be available when natural grit is inadequate."
+          },
+
+          {
+            question:
+              "Do Field Peas need to be cooked before chickens eat them?",
+
+            answer:
+              "Not universally. Identified low-tannin food- or feed-grade Field Peas can be used raw in properly designed poultry diets. Cooking is an optional form for small supplemental servings, not a method for making treated, moldy, or contaminated peas safe."
+          },
+
+          {
+            question:
+              "Can raw Field Peas replace raw Soybeans?",
+
+            answer:
+              "No. Raw Soybeans have substantially different antinutritional concerns and generally require proper heat processing. Field Peas also differ from soybean meal in protein concentration, amino-acid balance, energy, and fiber, so they cannot be substituted pound for pound."
+          },
+
+          {
+            question:
+              "Can Field Peas replace soybean meal?",
+
+            answer:
+              "They may replace part of soybean meal in a professionally formulated ration, depending on cultivar, nutrient analysis, bird stage, processing, and the other ingredients. They should not be substituted directly by weight."
+          },
+
+          {
+            question:
+              "Are Field Peas a complete protein for chickens?",
+
+            answer:
+              "No. They supply useful lysine and moderate-to-high crude protein but are relatively limited in methionine and other sulfur-containing amino acids."
+          },
+
+          {
+            question:
+              "Can I mix Field Peas with Corn to make complete chicken feed?",
+
+            answer:
+              "Not by simple guesswork. Peas and Corn can complement one another in some respects, but the mixture may still be deficient in methionine, calcium, available phosphorus, sodium, vitamins, trace minerals, and overall nutrient balance."
+          },
+
+          {
+            question:
+              "How much Field Pea can I feed?",
+
+            answer:
+              "There is no single safe universal percentage for every flock and cultivar. Small measured supplemental use is different from ration inclusion. Meaningful inclusion should be calculated from the actual peas, the complete ingredient list, and the flock's age and production stage."
+          },
+
+          {
+            question:
+              "Can chicks eat Field Peas?",
+
+            answer:
+              "Young chicks should receive complete starter feed as their nutritional foundation. Large whole peas and informal homemade mixtures are inappropriate. Peas should be used for chicks only within a correctly formulated starter ration."
+          },
+
+          {
+            question:
+              "Are Field Peas good for laying hens?",
+
+            answer:
+              "They can contribute protein and lysine, but they do not supply enough calcium and are not complete layer feed. Excessive supplementation may reduce complete-feed intake and harm production or shell quality."
+          },
+
+          {
+            question:
+              "Will Field Peas increase egg production?",
+
+            answer:
+              "Not predictably. Egg production depends on the complete ration, water, daylight, genetics, age, health, temperature, and management. Adding peas to an already balanced diet does not guarantee more eggs."
+          },
+
+          {
+            question:
+              "Are dark-seeded Field Peas safe?",
+
+            answer:
+              "Some are usable, but dark or strongly pigmented varieties may contain more tannins and seed-coat fiber. Their feeding value should be evaluated rather than assumed to match low-tannin light-seeded feed peas."
+          },
+
+          {
+            question:
+              "Does white flower color guarantee a low-tannin pea?",
+
+            answer:
+              "White flowers are commonly associated with low-tannin cultivars, but flower color is not a substitute for reliable cultivar identification or nutrient analysis."
+          },
+
+          {
+            question:
+              "Can chickens eat fresh green peas?",
+
+            answer:
+              "Yes. Clean immature green peas can be offered as a seasonal treat. Because they contain much more water than dry peas, they are not nutritionally equivalent pound for pound."
+          },
+
+          {
+            question:
+              "Can chickens eat pea pods?",
+
+            answer:
+              "Young tender pods from edible-pod varieties may be offered in small quantities. Mature dry pods are fibrous and are not equivalent to pea seed."
+          },
+
+          {
+            question:
+              "Can chickens eat pea vines and leaves?",
+
+            answer:
+              "Small quantities of clean young foliage may be used for controlled cut-and-carry feeding. Mature vines are fibrous, and unrestricted access may destroy the crop or displace complete feed."
+          },
+
+          {
+            question:
+              "Can I sprout Field Peas for chickens?",
+
+            answer:
+              "They can be sprouted, but warm wet conditions increase mold, yeast, bacterial, and slime risks. Use only untreated food-grade seed, maintain strict sanitation, and discard any batch with sour odor, slime, heating, or mold."
+          },
+
+          {
+            question:
+              "Does sprouting create more protein?",
+
+            answer:
+              "Sprouting changes moisture and nutrient distribution but does not create additional dry matter. Comparisons must be made on a dry-matter basis rather than by the heavier wet weight of sprouts."
+          },
+
+          {
+            question:
+              "Can Field Peas be fermented?",
+
+            answer:
+              "Controlled fermentation is possible, but informal backyard fermentation can produce inconsistent acidity, spoilage, heating, and microbial risk. It is not required for safe use of suitable dry peas."
+          },
+
+          {
+            question:
+              "Can I feed leftover cooked peas?",
+
+            answer:
+              "Yes, when they are plain, fresh, unseasoned, and offered in modest amounts. Avoid peas containing excess salt, butter, sauces, onions, garlic, or spoilage."
+          },
+
+          {
+            question:
+              "Can chickens eat treated pea seed?",
+
+            answer:
+              "No. Seed treated with fungicide, insecticide, dye, or another planting chemical must never be fed."
+          },
+
+          {
+            question:
+              "Can moldy peas be cooked and then fed?",
+
+            answer:
+              "No. Cooking does not reliably remove all mold-related hazards. Moldy, musty, heated, or otherwise questionable peas should be discarded."
+          },
+
+          {
+            question:
+              "How should whole dry Field Peas be stored?",
+
+            answer:
+              "Store them only after they are fully dry and cool, using clean food-safe moisture-resistant containers in a cool, dark, dry area protected from insects, rodents, chemicals, and condensation."
+          },
+
+          {
+            question:
+              "Should Field Peas be stored whole or ground?",
+
+            answer:
+              "Whole intact peas are preferred for long-term storage. Cracked and ground peas expose more surface area and should be processed in smaller batches closer to feeding."
+          },
+
+          {
+            question:
+              "How long will stored Field Peas last?",
+
+            answer:
+              "There is no dependable universal storage period for every homegrown batch. Storage life depends on initial moisture, temperature, humidity, seed damage, insects, container quality, and inspection."
+          },
+
+          {
+            question:
+              "Why are my chickens leaving the peas uneaten?",
+
+            answer:
+              "The peas may be too large, too hard, unfamiliar, poorly mixed, unpalatable, or offered in excess. Inspect their quality and try a small amount of cracked peas."
+          },
+
+          {
+            question:
+              "Why do I see pea pieces in droppings?",
+
+            answer:
+              "Whole peas may not be reduced efficiently, especially when they are large or suitable grit is unavailable. Crack the peas, reduce the amount, and monitor the flock."
+          },
+
+          {
+            question:
+              "Can Field Peas reduce my chicken-feed bill?",
+
+            answer:
+              "They may reduce dependence on purchased ingredients when yields, labor, processing, storage, and ration formulation are favorable. Small garden plantings may provide enrichment and feed diversity without producing major dollar savings."
+          },
+
+          {
+            question:
+              "Are Field Peas worth growing for a small flock?",
+
+            answer:
+              "They can be worthwhile where cool-season space is available and the grower values household food, crop rotation, nitrogen fixation, seed saving, or ingredient diversity. They are less suitable when the only goal is maximum feed savings from a very small area."
+          }
+        ],
+
+        scientificNotes: {
+          taxonomy: {
+            scientificName:
+              "Pisum sativum",
+
+            family:
+              "Fabaceae"
+          },
+
+          researchNotes: [
+            "Field Peas are cool-season grain legumes used for human food, livestock feed, forage, cover cropping, and green manure.",
+
+            "The common name Field Pea should not be confused with Cowpea, Vigna unguiculata.",
+
+            "Mature dry pea seed commonly contains substantially more crude protein than cereal grains but less concentrated protein than soybean meal.",
+
+            "Field Peas are generally recognized for useful lysine concentration relative to cereal grains.",
+
+            "Methionine and total sulfur-containing amino acids are commonly limiting when peas make a substantial contribution to poultry diets.",
+
+            "Pea seed also contains substantial starch, so its feed value includes both protein and dietary energy.",
+
+            "Whole-seed crude-protein concentration varies by cultivar, environment, maturity, and analytical basis.",
+
+            "Low-tannin, white-flowered cultivars are commonly preferred for monogastric feed use.",
+
+            "Pigmented seed coats and colored flowers are often associated with higher tannin concentrations, though cultivar identity remains more informative than appearance alone.",
+
+            "Tannins may reduce protein digestibility, feed intake, and metabolizable energy.",
+
+            "Field Peas contain trypsin inhibitors and lectins, although concentrations are generally lower than the major raw-seed concerns associated with Soybeans.",
+
+            "Phytate can reduce phosphorus and mineral availability.",
+
+            "Non-starch polysaccharides and seed-coat fiber can influence nutrient use and energy value.",
+
+            "Dehulling may reduce fiber and some seed-coat-associated antinutritional factors but changes the ingredient's nutrient concentration and processing cost.",
+
+            "Particle size affects feed acceptance, dust generation, ingredient separation, and storage stability.",
+
+            "Whole peas may be used successfully by some adult poultry, but cracking or grinding is common in compounded feed.",
+
+            "Published poultry inclusion levels vary widely because studies use different cultivars, nutrient analyses, bird ages, processing methods, and complete diet formulations.",
+
+            "A successful experimental inclusion percentage should not be interpreted as a universal backyard feeding recommendation.",
+
+            "Digestible amino-acid values are more useful than crude protein alone for complete ration formulation.",
+
+            "Metabolizable-energy values may differ among pea cultivars and research methods.",
+
+            "Exogenous enzymes, including phytase and enzymes targeting non-starch polysaccharides, may influence nutrient utilization in formulated diets.",
+
+            "Peas may replace part of soybean meal or other protein ingredients when the complete ration is reformulated.",
+
+            "Field Peas should not be treated as a pound-for-pound substitute for soybean meal.",
+
+            "Fresh green peas, cooked peas, soaked peas, and sprouts contain substantially more moisture than mature dry seed.",
+
+            "Nutrient comparisons among wet and dry forms should be made on a dry-matter basis.",
+
+            "Sprouting changes seed metabolism and moisture but does not create additional dry matter.",
+
+            "Dry whole peas generally store better than cracked or ground peas.",
+
+            "Storage safety depends strongly on seed moisture, temperature, insect exclusion, rodent exclusion, and sanitation.",
+
+            "Moldy, musty, heated, chemically treated, or rodent-contaminated peas are not appropriate poultry feed.",
+
+            "Field Peas can fix atmospheric nitrogen through symbiosis with compatible Rhizobium bacteria when nodulation is successful.",
+
+            "Nitrogen fixation is not guaranteed merely because the crop is a legume.",
+
+            "Poor drainage, soil acidity, inoculant failure, and unfavorable temperature may reduce nodulation.",
+
+            "Field Peas generally perform best under cool conditions and may lose flowers or yield when exposed to excessive heat.",
+
+            "Lodging, pod shattering, disease, rain, and wildlife can reduce harvestable dry-seed yield.",
+
+            "Agronomic performance and poultry-feed value must be evaluated together when estimating homestead usefulness."
+          ],
+
+          plannerConsiderations: [
+            "Use Pisum sativum as the authoritative species identity.",
+
+            "Keep Field Peas separate from Cowpeas and other crops called peas.",
+
+            "Prefer low-tannin food- or feed-grade cultivars.",
+
+            "Reject chemically treated planting seed.",
+
+            "Treat crude-protein percentage as incomplete information.",
+
+            "Give substantial weight to lysine contribution.",
+
+            "Penalize use as a sole protein source because of methionine limitation.",
+
+            "Do not classify Field Peas as nutritionally equivalent to soybean meal.",
+
+            "Recognize that peas contribute starch energy as well as protein.",
+
+            "Account for cultivar-related tannins, fiber, trypsin inhibitors, lectins, and starch differences.",
+
+            "Distinguish whole dry seed from fresh, cooked, soaked, and sprouted forms.",
+
+            "Treat intact whole seed as the preferred long-term storage form.",
+
+            "Apply additional storage-risk penalties to cracked and ground forms.",
+
+            "Require drying, threshing, cleaning, inspection, and protected storage for dry-grain use.",
+
+            "Recognize moderate-to-high labor for hand harvest and threshing.",
+
+            "Account for lodging and shattering risk.",
+
+            "Penalize poorly drained or waterlogged sites.",
+
+            "Favor cool-season planting windows.",
+
+            "Penalize planting schedules that place flowering and pod fill into extreme heat.",
+
+            "Recognize value as a nitrogen-fixing rotation crop.",
+
+            "Do not assume successful nitrogen fixation without compatible nodulation.",
+
+            "Recognize household-food and poultry-feed dual use.",
+
+            "Recognize crop value beyond direct feed replacement, including rotation, soil cover, and seed saving.",
+
+            "Do not guarantee feed-cost savings.",
+
+            "Do not use a single backyard inclusion percentage.",
+
+            "Recommend complete feed as the foundation for ordinary backyard use.",
+
+            "Require complete ration formulation for meaningful ingredient inclusion.",
+
+            "Maintain separate calcium management for laying hens.",
+
+            "Avoid meaningful informal use for young chicks.",
+
+            "Recognize whole-seed acceptance as flock-dependent.",
+
+            "Recommend cracking when whole peas are left uneaten.",
+
+            "Require appropriate insoluble grit when whole or coarse seed is fed and natural grit is inadequate.",
+
+            "Reject moldy, musty, heated, chemically contaminated, flood-contaminated, or rodent-contaminated material.",
+
+            "Treat cooked, soaked, and sprouted peas as highly perishable.",
+
+            "Prevent unrestricted flock access when mature seed harvest is the crop goal."
+          ],
+
+          futureResearchTopics: [
+            "Backyard-scale Field Pea yield per square foot across different climates",
+
+            "Cultivar-specific poultry acceptance of whole dry peas",
+
+            "Cultivar-specific tannin levels in commonly available home-garden seed",
+
+            "Digestible amino-acid profiles of small-scale Field Pea cultivars",
+
+            "Practical backyard inclusion limits within professionally formulated layer diets",
+
+            "Practical backyard inclusion limits within professionally formulated grower diets",
+
+            "Effects of coarse cracking versus whole-seed feeding in adult hens",
+
+            "Effects of home-scale dehulling on nutrient use and labor",
+
+            "Storage life of homegrown whole peas under typical household conditions",
+
+            "Storage life of cracked and ground peas under typical household conditions",
+
+            "Economic comparison of homegrown Field Peas with purchased soybean meal",
+
+            "Labor-adjusted feed savings from small and medium homestead plots",
+
+            "Effects of pea cultivar on egg production and shell quality",
+
+            "Effects of pea cultivar on broiler growth and feed conversion",
+
+            "Use of enzyme supplementation in small-scale formulated pea diets",
+
+            "Methionine-complement strategies using other homegrown ingredients",
+
+            "Poultry use of Field Pea forage and young foliage",
+
+            "Safety and nutrient effects of controlled pea sprouting",
+
+            "Safety and nutrient effects of controlled pea fermentation",
+
+            "Regional differences in heat stress during flowering and pod fill",
+
+            "Lodging-resistant cultivars suited to backyard hand harvest",
+
+            "Low-shattering cultivars suited to small-scale dry-seed production",
+
+            "Reliable visual indicators of low-tannin cultivars for home growers",
+
+            "Influence of successful nodulation on seed yield and protein concentration",
+
+            "Best crop-rotation sequences combining Field Peas with warm-season poultry-feed crops"
+          ]
+        },
+
+        expertSummary: {
+          oneSentence:
+            "Field Peas are a valuable cool-season, protein-oriented grain legume for chickens when clean low-tannin seed is used as a measured supplement or as one ingredient in a correctly formulated complete ration.",
+
+          recommendation:
+            "recommended-with-formulation-and-controlled-use",
+
+          oneParagraph:
+            "Field Peas are one of the more useful homegrown grain legumes for poultry because mature dry seed contributes moderate-to-high protein, useful lysine, substantial starch, low fat, and excellent storage potential. They are especially valuable as a cool-season crop that can also provide household food, crop-rotation benefits, and biological nitrogen fixation. Their principal weakness is an incomplete amino-acid profile, particularly low methionine and other sulfur-containing amino acids, along with cultivar-dependent tannins, fiber, enzyme inhibitors, and lectins. For most backyard flocks, clean cracked or whole peas should remain a modest supplement to complete feed. Larger inclusion belongs within a fully formulated ration based on the actual cultivar and flock stage.",
+
+          recommendationReasoning: [
+            "Mature dry Field Peas generally contain substantially more protein than cereal grains.",
+
+            "They contribute useful lysine, which complements the weaker lysine profile of many cereal grains.",
+
+            "Their substantial starch content contributes dietary energy as well as protein.",
+
+            "They are naturally low in fat compared with Soybeans and Sunflower seed.",
+
+            "Whole dry peas can be stored for an extended period without refrigeration when moisture, insects, and rodents are controlled.",
+
+            "They provide a cool-season feed-crop option when many warm-season grains are not productive.",
+
+            "The crop can serve both household-food and poultry-feed goals.",
+
+            "Successful nodulation can provide nitrogen-fixing and crop-rotation benefits.",
+
+            "Peas can diversify a ration and reduce exclusive dependence on soybean-derived ingredients.",
+
+            "Whole, cracked, coarsely ground, cooked, and fresh forms allow flexible small-scale use.",
+
+            "The crop is annual and does not require permanent land commitment.",
+
+            "The seed is relatively compact and easy to weigh for controlled feeding.",
+
+            "Their principal nutritional limitation is predictable and manageable through proper ration formulation.",
+
+            "Low-tannin food and feed cultivars are well established as poultry-feed ingredients.",
+
+            "The strongest value comes from combining feed use with soil, rotation, food, and storage benefits."
+          ],
+
+          idealUseCase:
+            "A backyard or homestead keeper with well-drained cool-season growing space who wants a storable protein-oriented crop, is willing to harvest and thresh dry seed carefully, can obtain untreated low-tannin Field Pea seed, and will keep complete poultry feed as the nutritional foundation unless using qualified ration formulation.",
+
+          notRecommendedAs: [
+            "A complete poultry ration",
+
+            "The sole protein ingredient",
+
+            "A direct pound-for-pound replacement for soybean meal",
+
+            "A methionine-complete protein source",
+
+            "A calcium source for laying hens",
+
+            "A vitamin and mineral premix",
+
+            "A free-choice grain offered without intake control",
+
+            "A substantial informal supplement for young chicks",
+
+            "A treatment for disease, weakness, parasites, poor feathering, or low egg production",
+
+            "A method for correcting an already unbalanced homemade ration",
+
+            "A universal high-percentage ingredient for every cultivar and flock stage",
+
+            "A safe use for chemically treated planting seed",
+
+            "A salvage destination for moldy, musty, heated, rodent-contaminated, or flood-contaminated peas",
+
+            "A guaranteed method of lowering feed expenses",
+
+            "A guaranteed method of increasing egg production or growth",
+
+            "A crop for chronically wet or poorly drained ground",
+
+            "A dependable hot-summer grain crop",
+
+            "A low-labor feed source when harvesting and threshing are done entirely by hand"
+          ]
+        },
+
+        metadata: {
+          recordStatus:
+            "complete",
+
+          recordVersion:
+            "1.0.0",
+
+          schemaVersion:
+            "feeding-reference-1.0.0",
+
+          cropId:
+            "field-peas",
+
+          cropName:
+            "Field Peas",
+
+          scientificName:
+            "Pisum sativum",
+
+          commonNameClarification:
+            "This record covers cool-season Field Peas, dry peas, and feed peas belonging to Pisum sativum. It does not cover Cowpeas or southern peas, which belong to Vigna unguiculata, and it does not cover ornamental sweet peas.",
+
+          primaryFeedMaterial:
+            "Mature dry seed",
+
+          secondaryFeedMaterials: [
+            "Fresh immature peas",
+            "Young edible pods",
+            "Limited young foliage",
+            "Plain cooked peas",
+            "Sound postharvest gleanings"
+          ],
+
+          primaryAudience:
+            "Backyard chicken keepers, homesteaders, small-scale growers, and poultry-feed planners",
+
+          primaryUseClassification:
+            "Supplemental protein-oriented grain and formulated-ration ingredient",
+
+          overallRecommendation:
+            "Recommended in controlled amounts for adult chickens and suitable for meaningful ration inclusion only when the complete diet is correctly formulated.",
+
+          confidenceLevel:
+            "moderate-to-high",
+
+          evidenceStrength:
+            "Strong general evidence supports Field Peas as a poultry-feed ingredient, but exact inclusion rates and performance vary by cultivar, antinutritional profile, processing, nutrient analysis, bird stage, and complete ration design.",
+
+          majorEvidenceLimitations: [
+            "Published studies use different Field Pea cultivars.",
+
+            "Tannin and seed-coat characteristics vary substantially.",
+
+            "Nutrient values differ by climate, soil, maturity, and analytical method.",
+
+            "Research diets are fully formulated and cannot be reproduced by copying only the pea percentage.",
+
+            "Digestible amino-acid and metabolizable-energy values are not identical among seed lots.",
+
+            "Backyard-scale feeding research is limited.",
+
+            "Exact garden yield per square foot is highly variable.",
+
+            "Exact labor-adjusted feed savings are uncertain.",
+
+            "Poultry-specific evidence for unrestricted foliage and forage use is limited.",
+
+            "Storage-life claims depend heavily on moisture, temperature, sanitation, insects, and containers."
+          ],
+
+          safetyPriorities: [
+            "Correctly identify the crop as Pisum sativum.",
+
+            "Never feed chemically treated planting seed.",
+
+            "Prefer identified low-tannin food or feed cultivars.",
+
+            "Reject moldy, musty, heated, damp, sour, or contaminated peas.",
+
+            "Dry whole peas thoroughly before sealed storage.",
+
+            "Keep complete poultry feed as the nutritional foundation.",
+
+            "Do not use Field Peas as the sole protein ingredient.",
+
+            "Account for methionine and sulfur-amino-acid limitations.",
+
+            "Maintain appropriate calcium management for laying hens.",
+
+            "Use complete ration formulation for meaningful inclusion.",
+
+            "Avoid large whole peas for young chicks.",
+
+            "Treat cooked, soaked, and sprouted peas as perishable."
+          ],
+
+          formulationPriorities: [
+            "Digestible methionine",
+
+            "Total sulfur-containing amino acids",
+
+            "Digestible lysine",
+
+            "Metabolizable energy",
+
+            "Crude protein",
+
+            "Calcium",
+
+            "Available phosphorus",
+
+            "Sodium",
+
+            "Fiber",
+
+            "Tannin concentration",
+
+            "Trypsin-inhibitor activity",
+
+            "Lectin activity",
+
+            "Phytate",
+
+            "Vitamin balance",
+
+            "Trace-mineral balance",
+
+            "Bird age",
+
+            "Production stage",
+
+            "Actual cultivar nutrient analysis"
+          ],
+
+          storagePriorities: [
+            "Complete drying",
+
+            "Cooling before sealing",
+
+            "Whole-seed storage",
+
+            "Clean food-safe containers",
+
+            "Low humidity",
+
+            "Cool temperature",
+
+            "Insect exclusion",
+
+            "Rodent exclusion",
+
+            "Batch labeling",
+
+            "Early inspection after sealing",
+
+            "Periodic long-term inspection",
+
+            "Small processing batches"
+          ],
+
+          plannerWarnings: [
+            "Do not confuse Field Peas with Cowpeas.",
+
+            "Do not infer complete poultry-feed suitability from crude-protein percentage.",
+
+            "Do not treat peas as equivalent to soybean meal.",
+
+            "Do not apply a universal inclusion percentage.",
+
+            "Do not assume flower color alone proves low tannin concentration.",
+
+            "Do not allow homegrown peas to displace complete feed unintentionally.",
+
+            "Do not assume sprouting creates additional dry matter.",
+
+            "Do not use cooking, drying, or grinding to salvage contaminated seed.",
+
+            "Do not estimate feed savings without accounting for labor, yield, processing, and storage losses."
+          ],
+
+          primaryUncertainties: [
+            "Exact cultivar-specific feeding limit",
+
+            "Exact backyard supplemental amount",
+
+            "Exact homegrown yield per square foot",
+
+            "Exact feed-cost savings",
+
+            "Exact long-term storage duration",
+
+            "Exact nutritional value of locally grown seed without analysis",
+
+            "Exact tannin concentration without cultivar data or laboratory testing",
+
+            "Exact suitability of pea foliage for unrestricted poultry forage"
+          ],
+
+          reviewTriggers: [
+            "New cultivar-specific poultry research",
+
+            "New digestible amino-acid data",
+
+            "New metabolizable-energy research",
+
+            "New backyard-scale feeding studies",
+
+            "New storage-safety guidance",
+
+            "New evidence concerning sprouts or fermented peas",
+
+            "Changes to the feeding-reference renderer schema",
+
+            "Changes to the Backyard Chicken Planner nutrition model"
+          ],
+
+          editorialNotes: [
+            "Use the term Field Peas consistently for Pisum sativum.",
+
+            "Clarify the difference from Cowpeas wherever confusion is likely.",
+
+            "Keep whole dry seed as the primary feed form.",
+
+            "Keep complete feed as the default nutritional foundation.",
+
+            "Present published inclusion percentages only with complete ration context.",
+
+            "Avoid unsupported claims of guaranteed egg production, growth, health improvement, or feed savings.",
+
+            "Leave uncertain numerical values unclaimed rather than presenting false precision."
+          ],
+
+          lastReviewed:
+            null,
+
+          nextReview:
+            null
+        }
+      },
+    
+    
+    
+      chickenUse: {
       edibleParts: [
         "Clean mature dry peas from suitable feed or food varieties",
         "Whole dry peas",
