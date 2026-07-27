@@ -144996,111 +144996,213 @@ feedingReference: {
         ]
       },
 
-      nutritionHighlights: {
+            nutritionHighlights: {
         nutritionSummary:
-          "Comfrey is valued primarily as a mineral-rich leafy supplement rather than a concentrated poultry feed. Fresh leaves contain very high moisture, while properly dried leaves contain a much higher concentration of dry matter. Although dried foliage may contain moderate-to-high crude protein, Comfrey should never be viewed as a complete protein source or replacement for a balanced poultry ration because it also contains pyrrolizidine alkaloids.",
+          "Comfrey is a moisture-rich perennial leafy crop that may contribute supplemental plant protein, minerals, fiber, and natural leaf pigments. Properly dried leaves contain a much greater concentration of dry matter and nutrients than fresh leaves, but this concentration also makes careful portion control more important. Comfrey is not a concentrated energy feed, complete protein source, balanced mineral supplement, or replacement for formulated poultry feed, and its pyrrolizidine-alkaloid content requires limited use.",
 
-        moistureLevel:
-          "very-high-fresh",
+        notableNutrients: [
+          "Leaf protein",
 
-        energyDensity:
-          "low",
+          "Potassium",
 
-        proteinQuality:
-          "moderate",
+          "Calcium",
 
-        fiberLevel:
-          "moderate",
+          "Magnesium",
 
-        primaryNutrients: [
+          "Phosphorus",
+
+          "Iron",
+
+          "Manganese",
+
+          "Zinc",
+
+          "Copper",
+
+          "Carotenoids",
+
+          "Chlorophyll",
+
+          "Vitamin A precursors",
+
+          "Vitamin K",
+
+          "Fiber"
+        ],
+
+        primaryNutritionalStrengths: [
           {
-            nutrient:
-              "Leaf Protein",
+            nutrientRole:
+              "Supplemental leaf protein",
 
-            importance:
-              "Provides supplemental plant protein but does not replace the balanced amino-acid profile of complete poultry feed."
+            explanation:
+              "Comfrey foliage may contain moderate-to-high crude protein when measured on a dry-matter basis. This can contribute limited supplemental plant protein, but it does not provide the verified digestible amino-acid balance needed to replace complete poultry feed or properly formulated protein ingredients."
           },
 
           {
-            nutrient:
-              "Potassium",
+            nutrientRole:
+              "Mineral-rich leafy tissue",
 
-            importance:
-              "Supports normal cellular function and contributes to the crop's reputation as a mineral accumulator."
+            explanation:
+              "Comfrey leaves naturally contain potassium, calcium, magnesium, phosphorus, iron, manganese, zinc, copper, and other minerals. These nutrients contribute to the plant's value as leafy forage, but their presence does not mean the foliage supplies poultry minerals in correct amounts or ratios."
           },
 
           {
-            nutrient:
-              "Calcium",
+            nutrientRole:
+              "Natural leaf pigments",
 
-            importance:
-              "Present within the foliage but not in sufficient balance to replace formulated layer nutrition."
+            explanation:
+              "Green Comfrey leaves contain chlorophyll and carotenoid pigments associated with actively growing leafy tissue. These compounds contribute to the nutritional variety of green forage, although their presence does not establish a particular feeding rate or health claim."
           },
 
           {
-            nutrient:
-              "Magnesium",
+            nutrientRole:
+              "Vitamin A precursors",
 
-            importance:
-              "Contributes to normal metabolic processes and skeletal function."
+            explanation:
+              "Leaf carotenoids may provide provitamin A compounds. Chickens still require a balanced and dependable vitamin supply from an appropriate complete ration rather than relying on variable amounts from Comfrey."
           },
 
           {
-            nutrient:
-              "Phosphorus",
+            nutrientRole:
+              "Naturally occurring vitamin K",
 
-            importance:
-              "Present as one component of overall mineral nutrition."
+            explanation:
+              "Green leaf tissue may contain vitamin K and related plant compounds. This is a secondary nutritional contribution rather than a reason to feed Comfrey in large or frequent amounts."
           },
 
           {
-            nutrient:
-              "Iron",
+            nutrientRole:
+              "Structural plant fiber",
 
-            importance:
-              "Naturally present within leafy tissue as part of the plant's mineral profile."
+            explanation:
+              "Comfrey leaves provide natural plant fiber that may contribute limited forage variety and pecking interest. Older leaves, petioles, and stems become increasingly fibrous and offer less practical nutritional value."
           },
 
           {
-            nutrient:
-              "Leaf Pigments",
+            nutrientRole:
+              "Fresh seasonal greens",
 
-            importance:
-              "Provide naturally occurring green plant pigments associated with leafy vegetation."
+            explanation:
+              "Clean young leaves can provide occasional fresh leafy variety during the growing season. Their principal backyard value is controlled enrichment and forage diversity rather than concentrated calories."
           },
 
           {
-            nutrient:
-              "Allantoin",
+            nutrientRole:
+              "Concentrated dry matter after drying",
 
-            importance:
-              "Naturally present plant compound frequently discussed in Comfrey literature, although it should not be interpreted as providing a poultry health benefit."
+            explanation:
+              "Removing water greatly increases the concentration of dry matter and nutrients in a measured weight of dried leaves. This improves storage and measurement but also makes dried Comfrey easier to overfeed than an equal weight of fresh foliage."
+          },
+
+          {
+            nutrientRole:
+              "Repeated perennial harvest potential",
+
+            explanation:
+              "Established plants may produce several leafy harvests during the growing season. This creates a dependable source of limited supplemental greens without annual reseeding."
+          },
+
+          {
+            nutrientRole:
+              "Multipurpose homestead nutrition support",
+
+            explanation:
+              "Comfrey foliage can support a broader homestead feeding system by providing occasional greens while most harvested biomass is directed toward mulch, compost, orchard support, and soil-organic-matter management."
           }
         ],
 
-        nutritionalStrengths: [
-          "Provides fresh leafy variety.",
-          "Contains useful plant protein on a dry-matter basis.",
-          "Naturally rich in several plant minerals.",
-          "Supports seasonal forage diversity.",
-          "May encourage natural pecking behavior.",
-          "Can be harvested repeatedly from established perennial plants.",
-          "Useful as a homestead biomass crop beyond poultry feeding."
-        ],
+        typicalWholeSeedCharacteristics: {
+          freshLeafMoisture:
+            "Very high. Fresh Comfrey leaves contain a large amount of water and therefore provide relatively little dry matter or dietary energy per pound as fed.",
 
-        nutritionalLimitations: [
-          "Very low energy compared with cereal grains.",
-          "Fresh leaves contain extremely high moisture.",
-          "Cannot replace complete poultry feed.",
-          "Does not provide a balanced amino-acid profile.",
-          "Does not provide balanced calcium nutrition for laying hens.",
-          "Contains pyrrolizidine alkaloids.",
-          "Large quantities may dilute overall diet quality.",
-          "No universal safe feeding percentage has been established."
-        ],
+          driedLeafConcentration:
+            "Much higher than fresh foliage because drying removes water. Dried leaf values should not be compared directly with fresh-leaf values without accounting for moisture.",
 
-        nutritionConclusion:
-          "Comfrey should be viewed as an occasional leafy supplement that adds dietary variety rather than as a significant energy or protein ingredient. Complete poultry feed should remain the nutritional foundation."
+          energyDensity:
+            "Low compared with mature grains, oilseeds, and complete poultry feeds.",
+
+          crudeProtein:
+            "Potentially moderate to high on a dry-matter basis, but variable and not equivalent to balanced digestible poultry protein.",
+
+          aminoAcidBalance:
+            "Incomplete and insufficiently predictable for Comfrey to serve as a primary poultry protein source.",
+
+          fiber:
+            "Moderate in leaves and progressively higher in older foliage, petioles, and coarse stems.",
+
+          mineralDensity:
+            "Potentially substantial for several minerals, but highly variable and not appropriately balanced as a complete poultry mineral source.",
+
+          calciumValue:
+            "Present in leafy tissue but not a dependable replacement for complete layer feed or an appropriate separate calcium source.",
+
+          vitaminAndPigmentValue:
+            "Provides natural leaf pigments and plant-derived vitamin compounds whose concentrations vary with plant age, health, environment, storage, and processing.",
+
+          primaryFeedValue:
+            "Limited leafy variety and supervised enrichment rather than concentrated energy, balanced protein, or complete-ration nutrition.",
+
+          principalNutritionalLimitation:
+            "Low energy density, high fresh-leaf moisture, incomplete amino-acid balance, variable mineral composition, and the risk of complete-feed displacement.",
+
+          principalSafetyLimitation:
+            "Pyrrolizidine alkaloids remain the controlling limitation regardless of the foliage's apparent nutrient content."
+        },
+
+        nutritionalVariabilityFactors: [
+          "Comfrey species",
+
+          "Cultivar or named selection",
+
+          "Whether the plant is common Comfrey, Russian Comfrey, or an unidentified hybrid",
+
+          "Plant genetics",
+
+          "Leaf age",
+
+          "Regrowth stage",
+
+          "Harvest timing",
+
+          "Season",
+
+          "Temperature",
+
+          "Rainfall",
+
+          "Drought stress",
+
+          "Soil fertility",
+
+          "Soil mineral availability",
+
+          "Fertilizer and amendment history",
+
+          "Plant health",
+
+          "Disease or insect damage",
+
+          "Proportion of leaf blade to petiole and stem",
+
+          "Fresh versus wilted form",
+
+          "Fresh versus dried form",
+
+          "Final moisture content after drying",
+
+          "Drying temperature",
+
+          "Drying duration",
+
+          "Storage time",
+
+          "Exposure to light, air, heat, and humidity during storage",
+
+          "Analytical method",
+
+          "Whether reported values are expressed as-fed or on a dry-matter basis"
+        ]
       },
 
       benefits: {
