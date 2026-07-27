@@ -127407,115 +127407,221 @@ feedingReference: {
           "The safest and most practical backyard use is clean mature Buckwheat grain offered in measured amounts while a nutritionally complete poultry ration remains continuously available. Avoid unrestricted access to green Buckwheat stands and maintain strict standards for harvesting, drying, storage, and sprouting."
       },
 
-      storage: {
+            storage: {
         storageSummary:
-          "Properly harvested, thoroughly dried, cleaned, and cooled Buckwheat grain stores well for long periods and is one of the better seasonal grain crops for backyard poultry supplementation. Storage success depends primarily on moisture control, cleanliness, rodent exclusion, insect management, temperature stability, and routine inspection.",
+          "Properly harvested, thoroughly dried, cleaned, and cooled Buckwheat grain stores well for seasonal poultry supplementation. Storage success depends primarily on moisture control, cleanliness, rodent exclusion, insect management, stable temperatures, and routine inspection.",
 
-        storageGoals: [
-          "Prevent moisture accumulation.",
-          "Prevent mold development.",
-          "Prevent heating.",
-          "Prevent unintended sprouting.",
-          "Prevent insect infestation.",
-          "Prevent rodent contamination.",
-          "Maintain grain quality until feeding."
-        ],
+        storageSuitability:
+          "high",
 
-        recommendedStorageConditions: {
-          temperature:
-            "Cool, stable temperatures are preferred.",
-
-          humidity:
-            "Low humidity with completely dry grain.",
-
-          airflow:
-            "Excellent airflow during drying; sealed rodent-resistant storage after grain has completely cooled and dried.",
-
-          light:
-            "Store in a dark location whenever practical.",
-
-          containers:
-            [
-              "Food-grade buckets with tight-fitting lids",
-              "Rodent-resistant bins",
-              "Metal grain containers",
-              "Other clean feed-storage containers designed to exclude moisture and pests"
-            ]
-        },
-
-        preparationBeforeStorage: [
-          "Harvest when sufficient mature grain has developed.",
-          "Dry harvested material thoroughly.",
-          "Thresh grain completely.",
-          "Remove stems, leaves, flowers, immature seed, hull fragments, stones, weed seeds, and other foreign material.",
-          "Allow grain to cool before sealing.",
-          "Inspect carefully before placing into long-term storage."
-        ],
-
-        inspectionChecklist: [
-          "Look for condensation.",
-          "Check for mold.",
-          "Check for unusual odors.",
-          "Look for insect activity.",
-          "Inspect for rodent damage.",
-          "Look for heating or warm grain.",
-          "Verify containers remain dry and sealed."
-        ],
-
-        storageProblems: [
+        preferredStorageForms: [
           {
-            problem:
-              "Condensation",
+            form:
+              "Whole Clean Dry Grain",
 
-            consequence:
-              "Can initiate mold growth, heating, fermentation, or sprouting."
+            suitability:
+              "excellent",
+
+            explanation:
+              "Intact mature Buckwheat grain is the preferred long-term storage form because the hull helps protect the groat and the unbroken grain generally resists deterioration better than cracked or ground material."
           },
 
           {
-            problem:
-              "Rodent access",
+            form:
+              "Dehulled Groats",
 
-            consequence:
-              "Creates contamination with urine, feces, nesting material, chewing damage, and disease organisms."
+            suitability:
+              "good",
+
+            explanation:
+              "Plain dry groats store reasonably well but are more exposed to oxygen, moisture, insects, and physical damage than intact whole grain."
           },
 
           {
-            problem:
-              "Insect infestation",
+            form:
+              "Small Batches of Cracked Grain",
 
-            consequence:
-              "Reduces feed quality and may accelerate spoilage."
+            suitability:
+              "limited",
+
+            explanation:
+              "Cracked Buckwheat should be stored only briefly because processing exposes internal tissues and shortens practical storage life."
           },
 
           {
-            problem:
-              "Improper drying",
+            form:
+              "Coarsely Ground Buckwheat",
 
-            consequence:
-              "One of the leading causes of storage failure."
+            suitability:
+              "short-term-only",
+
+            explanation:
+              "Ground Buckwheat absorbs moisture more readily, creates fine particles, and deteriorates faster than intact grain. Grind only what can be used promptly."
           },
 
           {
-            problem:
-              "Ground or cracked grain stored too long",
+            form:
+              "Dried Unthreshed Plants",
 
-            consequence:
-              "Shorter storage life than intact grain."
+            suitability:
+              "temporary",
+
+            explanation:
+              "Fully dried harvested plants may be held temporarily before threshing when protected from rain, humidity, rodents, wild birds, and ground moisture."
+          },
+
+          {
+            form:
+              "Sprouted Buckwheat",
+
+            suitability:
+              "not-for-storage",
+
+            explanation:
+              "Sprouts are a fresh feed and should be offered promptly after production. They should never be stored like dry grain."
           }
         ],
 
-        unsuitableStorage: [
-          "Wet grain",
-          "Warm grain sealed immediately after drying",
-          "Containers exposed to rain",
-          "Open bags accessible to rodents",
-          "Containers with repeated condensation",
-          "Areas exposed to flooding",
-          "Containers with obvious insect infestation"
-        ],
+        dryingRequirements: {
+          targetCondition:
+            "Buckwheat intended for enclosed storage should be uniformly dry, cool, free-flowing, and free from damp stems, green plant material, condensation, heating, musty odor, or visible fungal growth.",
 
-        storageSummaryStatement:
-          "Good storage begins with proper harvest timing and thorough drying. Clean, dry, cool grain stored in sealed rodent-resistant containers provides the safest long-term Buckwheat supplement for backyard poultry."
+          goodDryingPractices: [
+            "Harvest when a substantial portion of the seed is mature but before excessive shattering occurs.",
+            "Spread cut plants or threshed grain in shallow layers.",
+            "Provide strong airflow around drying material.",
+            "Protect grain from rain, dew, soil moisture, and nighttime condensation.",
+            "Turn or rearrange material as needed for uniform drying.",
+            "Remove damp stems, leaves, flowers, immature seed, and other plant debris.",
+            "Allow grain to cool completely before sealing it in storage containers.",
+            "Use a suitable grain-moisture meter when practical.",
+            "Recheck recently stored grain for condensation or warming."
+          ],
+
+          unsafeDryingPractices: [
+            "Sealing grain while it is still warm.",
+            "Storing grain that contains damp green plant material.",
+            "Drying grain in deep piles with poor airflow.",
+            "Leaving harvested material exposed to rain or heavy dew.",
+            "Assuming the outside of a pile is dry while the center remains damp.",
+            "Mixing newly harvested damp grain with previously dried grain.",
+            "Using containers that still contain moisture from washing.",
+            "Attempting to salvage visibly moldy grain by drying it again."
+          ],
+
+          dryingFailureIndicators: [
+            "Condensation inside the container.",
+            "Grain that feels warm after storage.",
+            "Musty, sour, fermented, or alcoholic odors.",
+            "Clumping or sticking grain.",
+            "Unexpected sprouting.",
+            "Visible white, gray, green, blue, black, or pink growth.",
+            "Increasing insect activity.",
+            "Damp hulls or plant fragments."
+          ]
+        },
+
+        storageEnvironment: {
+          idealConditions: [
+            "Cool and relatively stable temperature.",
+            "Low humidity.",
+            "Dry flooring and walls.",
+            "Protection from direct rainfall and flooding.",
+            "Dark or shaded storage location.",
+            "Rodent-resistant construction.",
+            "Minimal exposure to wild birds.",
+            "Separation from fertilizers, fuels, pesticides, solvents, and other chemicals.",
+            "Containers raised away from damp concrete or soil when practical.",
+            "Enough access around containers for routine inspection."
+          ],
+
+          avoidConditions: [
+            "Unheated buildings with repeated condensation problems.",
+            "Areas exposed to roof leaks or wind-driven rain.",
+            "Flood-prone floors.",
+            "Open sheds accessible to rodents and wild birds.",
+            "Direct contact with damp concrete or bare soil.",
+            "Locations beside gasoline, diesel fuel, pesticides, fertilizer, paint, or solvents.",
+            "Large temperature swings that cause moisture to condense inside containers.",
+            "Hot enclosed spaces with poor ventilation.",
+            "Storage areas that cannot be inspected easily."
+          ]
+        },
+
+        containerGuidance: {
+          looseSeed: [
+            "Use clean food-grade buckets with tight-fitting lids.",
+            "Use metal grain cans or other rodent-resistant feed containers.",
+            "Confirm containers are completely dry before filling.",
+            "Do not overfill containers if doing so prevents inspection or mixing checks.",
+            "Keep lids closed except when grain is being removed.",
+            "Clean spilled grain around containers immediately.",
+            "Do not combine new grain with older grain until both have been inspected."
+          ],
+
+          wholeHeads: [
+            "Buckwheat does not form true grain heads like Sunflower, Wheat, or Barley.",
+            "If whole harvested plants are retained temporarily, they must be fully dry before stacking or bundling.",
+            "Store dried plants above the floor and away from walls where moisture may collect.",
+            "Provide airflow until threshing is completed.",
+            "Inspect bundles for damp stems, mold, insects, and rodent nesting.",
+            "Thresh and clean the crop before long-term storage whenever practical."
+          ],
+
+          kernelsAndProcessedSeed: [
+            "Store dehulled groats in clean airtight food-grade containers.",
+            "Use cracked Buckwheat within a relatively short period.",
+            "Grind only the amount expected to be fed promptly.",
+            "Protect processed grain from moisture absorption and insects.",
+            "Discard processed grain that develops unusual odor, clumping, heating, or visible spoilage.",
+            "Do not return leftover wet feed or sprouts to a dry-grain container."
+          ]
+        },
+
+        inventoryManagement: {
+          guidance:
+            "Store Buckwheat in manageable batches so each container can be inspected independently. Use older sound grain before newer grain, avoid continuously topping off partially empty containers, and keep questionable batches isolated until their condition is determined.",
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Cultivar or seed source when known",
+            "Harvest date",
+            "Final drying date",
+            "Storage date",
+            "Whole, dehulled, cracked, or ground form",
+            "Field or planting location",
+            "Any chemical applications or exposure concerns",
+            "Inspection dates",
+            "Notes about insects, rodents, condensation, or unusual odor"
+          ]
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect newly stored Buckwheat within the first several days and again during the first two weeks because hidden moisture, residual plant material, or warm grain may reveal itself after the container is sealed.",
+
+          longTermStorage:
+            "After the initial storage period, inspect containers regularly and immediately after major temperature changes, roof leaks, flooding, rodent activity, or unusually humid weather.",
+
+          inspectionChecklist: [
+            "Check the lid and container for damage.",
+            "Look for condensation.",
+            "Feel for unexpected warmth.",
+            "Smell for musty, sour, fermented, chemical, or otherwise abnormal odors.",
+            "Look for mold or discoloration.",
+            "Check for insects, webbing, dust, or cast skins.",
+            "Inspect for rodent chewing, urine, feces, or nesting material.",
+            "Look for clumping or unintended sprouting.",
+            "Check the surrounding floor for spilled grain.",
+            "Confirm the container label remains readable."
+          ]
+        },
+
+        storageLifeGuidance:
+          "No single storage-life guarantee applies to every backyard situation. Clean, intact, thoroughly dried Buckwheat grain generally stores much longer than cracked, ground, sprouted, or moisture-exposed material. Actual storage life depends on grain moisture, temperature, humidity, cleanliness, processing form, pest pressure, container quality, and frequency of inspection.",
+
+        disposalGuidance:
+          "Discard Buckwheat that is moldy, heated, fermented, chemically contaminated, heavily insect damaged, rodent contaminated, or otherwise questionable. Do not mix spoiled grain with clean grain, do not attempt to make moldy grain safe by drying or grinding it, and do not feed sprouts that are slimy, sour, warm, discolored, or visibly moldy."
       },
 
       spoilageAndContamination: {
