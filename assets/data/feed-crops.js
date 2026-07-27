@@ -143838,7 +143838,4312 @@ feedingReference: {
     summary:
       "Comfrey is a deep-rooted herbaceous perennial grown primarily for repeated leafy biomass, mulch, compost material, pollinator support, and limited supplemental livestock forage. Common comfrey, Russian comfrey, and named Bocking cultivars should not be treated as identical. Common comfrey may produce viable seed, while sterile Bocking selections are normally propagated vegetatively. Chickens may consume fresh, wilted, or dried leaves, but comfrey contains pyrrolizidine alkaloids and should remain a minor supplement rather than a primary ration ingredient. Roots should not be fed, and drying should not be represented as eliminating pyrrolizidine alkaloids. Comfrey is strongest in the planner as a permanent biomass and homestead-support crop rather than as a direct replacement for complete poultry feed.",
 
-    chickenUse: {
+    
+    ///////////////////////////
+//
+//  Comfrey - What can chickens eat?
+//
+//////////////////////////
+
+
+    feedingReference: {
+      overview: {
+        answerLabel:
+          "Use Only as a Limited Supplement",
+
+        quickAnswer:
+          "Chickens may consume small controlled amounts of clean, positively identified Comfrey leaves, but Comfrey contains pyrrolizidine alkaloids and should not be treated as unrestricted forage or a routine feed ingredient. Offer only modest portions to established adult chickens while an age-appropriate complete poultry ration remains continuously available. Do not feed the roots, and do not assume that wilting or drying removes the alkaloids.",
+
+        guideUrl:
+          "growing-comfrey-for-chickens.html",
+
+        primaryUse:
+          "Limited supplemental leafy forage and pecking enrichment for established adult chickens",
+
+        primaryWarning:
+          "Comfrey contains pyrrolizidine alkaloids that may cause liver injury after sufficient exposure. Roots warrant particular concern, and no universal safe backyard feeding percentage has been established.",
+
+        supplementOnly:
+          true,
+
+        completeFeedReplacement:
+          false,
+
+        unrestrictedAccessRecommended:
+          false
+      },
+
+      classification: {
+        trafficLightRating:
+          "yellow",
+
+        safetyStatus:
+          "limited-use-with-pyrrolizidine-alkaloid-caution",
+
+        primaryFeedRole:
+          "limited-supplemental-leafy-forage",
+
+        cropUseCategory:
+          "perennial-leafy-biomass-and-homestead-support-crop",
+
+        primaryEdibleMaterial:
+          "Clean Comfrey leaves offered in controlled quantities",
+
+        primaryAvoidMaterial:
+          "Roots, crowns, unidentified plants, contaminated foliage, moldy material, and unrestricted quantities",
+
+        requiresPositiveIdentification:
+          true,
+
+        requiresCompleteBaseRation:
+          true,
+
+        suitableForRoutineFreeChoiceFeeding:
+          false,
+
+        suitableForUnrestrictedLivingForage:
+          false,
+
+        dryingEliminatesPrimaryConcern:
+          false,
+
+        universalBackyardFeedingRateEstablished:
+          false
+      },
+
+      quickRatings: {
+        overallRecommendationScore:
+          2,
+
+        energyValueScore:
+          1,
+
+        storageValueScore:
+          2,
+
+        enrichmentValueScore:
+          3,
+
+        adultChickenSuitabilityScore:
+          2,
+
+        layingHenSuitabilityScore:
+          2,
+
+        youngChickSuitabilityScore:
+          1,
+
+        preparationEaseScore:
+          4,
+
+        safetySimplicityScore:
+          1,
+
+        homesteadSupportValueScore:
+          5
+      },
+
+      safety: {
+        primarySafetySummary:
+          "Comfrey leaves should be used only as a limited, carefully controlled supplement because the plant contains pyrrolizidine alkaloids associated with liver injury after sufficient exposure. Feed only clean, positively identified leaves to established adult chickens in modest quantities while complete feed remains available. Do not feed roots or crowns, do not allow unrestricted access to dense living stands, and do not assume that wilting or drying eliminates pyrrolizidine alkaloids.",
+
+        generalSafetyRating:
+          "caution",
+
+        coreSafetyPrinciple:
+          "Comfrey is a minor supplemental forage and homestead-support crop, not a complete feed, primary protein source, or unrestricted poultry pasture.",
+
+        safestPracticalUse:
+          "Small measured portions of clean fresh, briefly wilted, or properly dried leaves offered occasionally to established adult chickens.",
+
+        primaryConcern:
+          "Pyrrolizidine alkaloid exposure",
+
+        safeMaterials: [
+          {
+            material:
+              "Clean young Comfrey leaves",
+
+            conditions:
+              "Positively identified, free from soil contamination, mold, chemicals, animal waste, and roadside pollutants, and offered in small controlled amounts."
+          },
+
+          {
+            material:
+              "Clean mature Comfrey leaves",
+
+            conditions:
+              "Offered conservatively after coarse stems, damaged tissue, and contaminated material have been removed."
+          },
+
+          {
+            material:
+              "Briefly wilted Comfrey leaves",
+
+            conditions:
+              "Wilted only briefly in a clean, shaded, well-ventilated location and fed the same day before heating, fermentation, slime, or mold develops."
+          },
+
+          {
+            material:
+              "Properly dried Comfrey leaves",
+
+            conditions:
+              "Dried thoroughly with strong airflow, stored dry, and offered only in measured supplemental quantities. Drying does not eliminate pyrrolizidine alkaloids."
+          },
+
+          {
+            material:
+              "Coarsely crumbled dried leaf",
+
+            conditions:
+              "Prepared from clean fully dried leaves and used only as a controlled supplement."
+          },
+
+          {
+            material:
+              "Measured Comfrey leaf meal",
+
+            conditions:
+              "Appropriate only when included in a professionally formulated ration that accounts for nutrient balance and toxicological limitations."
+          }
+        ],
+
+        unsafeMaterials: [
+          {
+            material:
+              "Comfrey roots",
+
+            reason:
+              "Roots generally warrant greater pyrrolizidine-alkaloid concern than leaves and should not be fed."
+          },
+
+          {
+            material:
+              "Comfrey crowns",
+
+            reason:
+              "Crowns are not an appropriate poultry feed material and may contain root tissue and soil contamination."
+          },
+
+          {
+            material:
+              "Unidentified Symphytum plants",
+
+            reason:
+              "Common Comfrey, Russian Comfrey, Bocking selections, and seed-grown plants should not be assumed to have identical chemistry."
+          },
+
+          {
+            material:
+              "Unrestricted quantities of leaves",
+
+            reason:
+              "Repeated or excessive exposure increases concern because a universal safe backyard intake level has not been established."
+          },
+
+          {
+            material:
+              "Dense living Comfrey stands used as free-choice forage",
+
+            reason:
+              "Unrestricted access prevents reliable intake control and allows repeated consumption over time."
+          },
+
+          {
+            material:
+              "Moldy or spoiled leaves",
+
+            reason:
+              "Mold, heating, fermentation, slime, or abnormal odor introduces additional contamination hazards."
+          },
+
+          {
+            material:
+              "Chemically contaminated foliage",
+
+            reason:
+              "Leaves exposed to pesticides, herbicides, fuels, solvents, fertilizer spills, or unknown chemicals should not be fed."
+          },
+
+          {
+            material:
+              "Roadside or polluted-site foliage",
+
+            reason:
+              "Road salt, exhaust residue, metals, oil, litter, and other pollutants may contaminate the leaves."
+          },
+
+          {
+            material:
+              "Leaves contaminated with animal waste",
+
+            reason:
+              "Feces, urine, carcass material, or dirty bedding can introduce harmful microorganisms and other contaminants."
+          },
+
+          {
+            material:
+              "Rotten or waterlogged plant material",
+
+            reason:
+              "Decaying material may contain mold, bacteria, fermentation products, or other spoilage hazards."
+          }
+        ],
+
+        majorHazards: [
+          {
+            hazard:
+              "Pyrrolizidine alkaloids",
+
+            severity:
+              "high",
+
+            explanation:
+              "Comfrey naturally contains pyrrolizidine alkaloids associated with liver injury after sufficient exposure. Concentrations vary among species, cultivars, plant parts, growth stages, environments, and analytical methods."
+          },
+
+          {
+            hazard:
+              "Root consumption",
+
+            severity:
+              "high",
+
+            explanation:
+              "Roots generally contain greater or more concerning pyrrolizidine-alkaloid profiles than leaves and should be excluded from poultry feeding."
+          },
+
+          {
+            hazard:
+              "Repeated uncontrolled intake",
+
+            severity:
+              "high",
+
+            explanation:
+              "Unrestricted access makes cumulative intake difficult to estimate and is inconsistent with conservative supplemental use."
+          },
+
+          {
+            hazard:
+              "Complete-feed displacement",
+
+            severity:
+              "high",
+
+            explanation:
+              "Large quantities of Comfrey can reduce intake of nutritionally complete feed and dilute energy, amino acids, calcium, sodium, vitamins, and trace minerals."
+          },
+
+          {
+            hazard:
+              "Young-bird vulnerability",
+
+            severity:
+              "high",
+
+            explanation:
+              "Young chicks require a complete starter ration and should not receive meaningful Comfrey supplementation."
+          },
+
+          {
+            hazard:
+              "Species and cultivar uncertainty",
+
+            severity:
+              "moderate-to-high",
+
+            explanation:
+              "Common Comfrey, Russian Comfrey, named Bocking cultivars, and unidentified seed-grown plants may differ in fertility, growth, spread, and chemical composition."
+          },
+
+          {
+            hazard:
+              "False confidence after drying",
+
+            severity:
+              "high",
+
+            explanation:
+              "Drying removes moisture but should not be represented as reliably removing or neutralizing pyrrolizidine alkaloids."
+          },
+
+          {
+            hazard:
+              "Fresh-leaf spoilage",
+
+            severity:
+              "moderate",
+
+            explanation:
+              "Fresh leaves contain high moisture and can wilt, heat, ferment, slime, or mold rapidly when piled or left uneaten."
+          },
+
+          {
+            hazard:
+              "Stored-leaf mold",
+
+            severity:
+              "high",
+
+            explanation:
+              "Leaves stored before they are completely dry may develop mold, heating, condensation, or fermentation."
+          },
+
+          {
+            hazard:
+              "Chemical or environmental contamination",
+
+            severity:
+              "high",
+
+            explanation:
+              "Comfrey harvested from treated, polluted, roadside, sewage-exposed, or waste-contaminated areas should not be fed."
+          }
+        ],
+
+        requiredSafetyPractices: [
+          "Positively identify the Comfrey planting before feeding.",
+          "Know whether the plant is common Comfrey, Russian Comfrey, a named Bocking cultivar, or an unidentified seed-grown plant whenever possible.",
+          "Harvest leaves above the soil surface.",
+          "Exclude all roots and crown tissue.",
+          "Use only clean leaves free from mold, slime, decay, animal waste, and chemical contamination.",
+          "Offer only small controlled quantities.",
+          "Keep an age-appropriate complete poultry ration continuously available.",
+          "Introduce Comfrey gradually.",
+          "Remove uneaten fresh leaves before spoilage begins.",
+          "Dry leaves thoroughly before enclosed storage.",
+          "Do not state or assume that drying removes pyrrolizidine alkaloids.",
+          "Discontinue feeding if appetite, droppings, behavior, body condition, egg production, or general health changes adversely."
+        ],
+
+        specialWarnings: [
+          "No universal safe backyard inclusion percentage has been established.",
+          "Published poultry studies using formulated diets should not be copied directly into informal home mixtures.",
+          "Leaf crude-protein values do not establish a safe feeding rate.",
+          "Bocking 14 should not automatically be described as free of pyrrolizidine alkaloids.",
+          "Sterility affects seed production, not necessarily feeding safety.",
+          "Comfrey should not be recommended as medicine or as treatment for illness, injury, parasites, or nutritional deficiency.",
+          "Long-term cumulative exposure is more important than whether a single small serving causes an immediate visible reaction."
+        ],
+
+        stopFeedingAndEvaluateIf: [
+          "Birds reduce complete-feed intake.",
+          "Appetite declines.",
+          "Droppings change persistently.",
+          "Birds become unusually quiet, weak, or inactive.",
+          "Body condition declines.",
+          "Egg production changes unexpectedly.",
+          "Fresh leaves become slimy, warm, sour, or moldy.",
+          "Stored leaves develop condensation, musty odor, insects, or visible fungal growth.",
+          "The identity or contamination history of the plant becomes uncertain."
+        ],
+
+        safetyConclusion:
+          "Comfrey can be used conservatively as an occasional leafy supplement for established adult chickens, but its pyrrolizidine-alkaloid content makes strict quantity control, positive identification, root exclusion, complete-feed protection, and careful spoilage management essential."
+      },
+
+      birdStages: {
+        adultChickens: {
+          suitabilityLevel:
+            "Limited supplemental use",
+
+          recommendation:
+            "Established adult chickens may receive small controlled portions of clean Comfrey leaves while an age-appropriate complete poultry ration remains continuously available.",
+
+          preferredForms: [
+            "Small pieces of fresh clean leaf",
+            "Briefly wilted leaf",
+            "Properly dried leaf",
+            "Coarsely crumbled dried leaf"
+          ],
+
+          primaryConcerns: [
+            "Pyrrolizidine alkaloid exposure",
+            "Repeated uncontrolled intake",
+            "Complete-feed displacement",
+            "Fresh-leaf spoilage",
+            "Species and cultivar uncertainty"
+          ],
+
+          managementGuidance:
+            "Introduce Comfrey gradually, keep portions modest, remove uneaten fresh material before spoilage, and avoid routine free-choice feeding."
+        },
+
+        layingHens: {
+          suitabilityLevel:
+            "Limited supplemental use",
+
+          recommendation:
+            "Laying hens may receive small occasional amounts of clean Comfrey leaves, but Comfrey should never displace complete layer feed or an appropriate calcium-management program.",
+
+          preferredForms: [
+            "Small chopped fresh portions",
+            "Briefly wilted leaves",
+            "Measured dried leaf"
+          ],
+
+          primaryConcerns: [
+            "Reduced complete layer-feed intake",
+            "Insufficient dietary calcium",
+            "Incomplete amino-acid balance",
+            "Cumulative pyrrolizidine alkaloid exposure",
+            "Reduced production if supplements become excessive"
+          ],
+
+          managementGuidance:
+            "Keep complete layer feed available at all times and continue appropriate free-choice calcium support. Reduce or stop Comfrey supplementation if normal feed intake or egg production declines."
+        },
+
+        pullets: {
+          suitabilityLevel:
+            "Generally not recommended",
+
+          recommendation:
+            "Growing pullets should receive a complete age-appropriate grower ration. Meaningful Comfrey supplementation is not recommended because nutrient dilution and cumulative alkaloid exposure are unnecessary risks during development.",
+
+          preferredForms: [],
+
+          primaryConcerns: [
+            "Nutrient dilution during growth",
+            "Incomplete amino-acid intake",
+            "Reduced complete-feed consumption",
+            "Pyrrolizidine alkaloid exposure",
+            "Small body size"
+          ],
+
+          managementGuidance:
+            "Avoid routine Comfrey feeding during the pullet stage. Maintain a complete grower ration as the dietary foundation."
+        },
+
+        youngChicks: {
+          suitabilityLevel:
+            "Not recommended",
+
+          recommendation:
+            "Young chicks should not receive meaningful Comfrey supplementation. They require a complete chick starter ration formulated for rapid growth and early development.",
+
+          preferredForms: [],
+
+          primaryConcerns: [
+            "Very small body size",
+            "High nutrient requirements",
+            "Complete-feed displacement",
+            "Pyrrolizidine alkaloid exposure",
+            "Difficulty evaluating safe intake"
+          ],
+
+          managementGuidance:
+            "Do not deliberately add Comfrey to chick starter or offer it as a routine treat."
+        },
+
+        broilersAndMeatBirds: {
+          suitabilityLevel:
+            "Use only within controlled feeding systems",
+
+          recommendation:
+            "Backyard meat birds should not receive substantial informal Comfrey supplementation. Research involving Comfrey in broiler diets uses controlled formulated rations and should not be copied directly into home mixtures.",
+
+          preferredForms: [
+            "Professionally formulated dried leaf meal"
+          ],
+
+          primaryConcerns: [
+            "Rapid growth requirements",
+            "Reduced dietary energy density",
+            "Incomplete amino-acid balance",
+            "Pyrrolizidine alkaloid exposure",
+            "Misuse of experimental inclusion rates"
+          ],
+
+          managementGuidance:
+            "For ordinary backyard use, rely on complete broiler feed. Any meaningful inclusion of dried Comfrey leaf meal should be managed through professional ration formulation."
+        },
+
+        roosters: {
+          suitabilityLevel:
+            "Limited supplemental use",
+
+          recommendation:
+            "Healthy adult roosters may receive small occasional portions of clean Comfrey leaves while complete feed remains available.",
+
+          preferredForms: [
+            "Small fresh leaf portions",
+            "Briefly wilted leaves",
+            "Measured dried leaves"
+          ],
+
+          primaryConcerns: [
+            "Repeated cumulative intake",
+            "Complete-feed displacement",
+            "Spoiled fresh material",
+            "Excessive supplemental feeding"
+          ],
+
+          managementGuidance:
+            "Use the same conservative approach recommended for other established adult chickens."
+        },
+
+        breedingFlocks: {
+          suitabilityLevel:
+            "Use conservatively",
+
+          recommendation:
+            "Breeding flocks should rely on nutritionally complete breeder feed. Comfrey may be offered only in small occasional amounts because reproductive performance depends on precise nutrient intake.",
+
+          preferredForms: [
+            "Small measured fresh portions",
+            "Briefly wilted leaves"
+          ],
+
+          primaryConcerns: [
+            "Reduced breeder-feed intake",
+            "Incomplete nutrition",
+            "Unknown long-term reproductive effects",
+            "Cumulative pyrrolizidine alkaloid exposure",
+            "Potential decline in fertility or hatchability if the diet becomes unbalanced"
+          ],
+
+          managementGuidance:
+            "Avoid routine or large Comfrey portions in breeding flocks. Stop supplementation if fertility, hatchability, body condition, or feed intake changes adversely."
+        },
+
+        seniorOrLowActivityBirds: {
+          suitabilityLevel:
+            "Use sparingly",
+
+          recommendation:
+            "Older or low-activity chickens may receive very small occasional portions, but conservative use is appropriate because dietary needs, liver function, appetite, and body condition may differ from those of younger adults.",
+
+          preferredForms: [
+            "Small soft fresh-leaf pieces",
+            "Briefly wilted leaves"
+          ],
+
+          primaryConcerns: [
+            "Lower total feed intake",
+            "Greater sensitivity to nutrient displacement",
+            "Possible age-related health limitations",
+            "Cumulative pyrrolizidine alkaloid exposure"
+          ],
+
+          managementGuidance:
+            "Keep portions especially small and discontinue use if appetite, droppings, behavior, or body condition changes."
+        },
+
+        moltingBirds: {
+          suitabilityLevel:
+            "Limited supplemental use",
+
+          recommendation:
+            "Molting birds require adequate energy and balanced digestible amino acids for feather replacement. Comfrey may provide limited leafy variety but should not be relied upon as the primary protein supplement during molt.",
+
+          preferredForms: [
+            "Small fresh leaf portions",
+            "Briefly wilted leaves"
+          ],
+
+          primaryConcerns: [
+            "Insufficient dietary energy",
+            "Incomplete amino-acid balance",
+            "Reduced intake of complete feed",
+            "Misinterpreting leaf protein as complete feather-building nutrition"
+          ],
+
+          managementGuidance:
+            "Maintain complete feed formulated for the flock's production stage and use Comfrey only as a minor optional supplement."
+        },
+
+        sickOrRecoveringBirds: {
+          suitabilityLevel:
+            "Not recommended without veterinary guidance",
+
+          recommendation:
+            "Do not use Comfrey as a treatment for illness, injury, digestive problems, parasites, liver disease, or nutritional deficiency.",
+
+          preferredForms: [],
+
+          primaryConcerns: [
+            "Underlying liver or metabolic disease",
+            "Reduced appetite",
+            "Dehydration",
+            "Medication interactions",
+            "Delay in appropriate diagnosis and treatment"
+          ],
+
+          managementGuidance:
+            "Provide appropriate supportive care and veterinary guidance rather than introducing Comfrey during illness or recovery."
+        },
+
+        birdStageSummary:
+          "Comfrey is most appropriate only for established healthy adult chickens receiving complete feed. It is not recommended for young chicks, is generally unnecessary for growing pullets, and should be used very conservatively in breeding, senior, molting, meat-production, sick, or recovering birds."
+      },
+
+      edibleParts: {
+        ediblePartSummary:
+          "Clean Comfrey leaves are the only plant part with practical poultry-feed value, and even the leaves should remain a limited supplement because they contain pyrrolizidine alkaloids. Roots and crowns should not be fed.",
+
+        primaryEdibleParts: [
+          {
+            part:
+              "Young Leaves",
+
+            explanation:
+              "Young clean leaves are generally softer and less fibrous than older foliage. They may be offered in small controlled portions after positive plant identification and inspection for contamination."
+          },
+
+          {
+            part:
+              "Mature Leaves",
+
+            explanation:
+              "Clean mature leaves may be fed conservatively after coarse stems, damaged tissue, soil, insects, mold, and contaminated material have been removed."
+          },
+
+          {
+            part:
+              "Briefly Wilted Leaves",
+
+            explanation:
+              "Fresh leaves may be wilted briefly in a clean shaded location to reduce surface moisture and improve texture. Wilting does not remove pyrrolizidine alkaloids."
+          },
+
+          {
+            part:
+              "Properly Dried Leaves",
+
+            explanation:
+              "Leaves may be dried thoroughly for later supplemental use. Drying improves storage potential but should not be represented as neutralizing the plant's pyrrolizidine alkaloids."
+          },
+
+          {
+            part:
+              "Coarsely Crumbled Dried Leaf",
+
+            explanation:
+              "Fully dried leaves may be crumbled into manageable pieces and offered only in measured amounts."
+          },
+
+          {
+            part:
+              "Dried Leaf Meal",
+
+            explanation:
+              "Finely processed leaf meal may be used only within a professionally formulated ration that accounts for nutritional balance, ingredient quality, and toxicological limitations."
+          }
+        ],
+
+        nonRecommendedPlantParts: [
+          {
+            part:
+              "Roots",
+
+            reason:
+              "Comfrey roots generally warrant greater pyrrolizidine-alkaloid concern than leaves and should not be fed to chickens."
+          },
+
+          {
+            part:
+              "Crowns",
+
+            reason:
+              "Crowns are not a practical feed material and may include root tissue, soil, decay, and contamination."
+          },
+
+          {
+            part:
+              "Root Cuttings",
+
+            reason:
+              "Propagation material should remain separate from poultry feed and may contain concentrated root tissue."
+          },
+
+          {
+            part:
+              "Coarse Mature Stems",
+
+            reason:
+              "Large mature stems are fibrous, poorly consumed, difficult to digest, and provide little practical poultry-feed value."
+          },
+
+          {
+            part:
+              "Flower Stalks",
+
+            reason:
+              "Flower stalks become coarse and fibrous and are more useful as compost or mulch material than poultry feed."
+          },
+
+          {
+            part:
+              "Flowers",
+
+            reason:
+              "Flowers are not needed for poultry supplementation and should not be deliberately fed in quantity when the safer practical focus is controlled use of leaves."
+          },
+
+          {
+            part:
+              "Seed",
+
+            reason:
+              "Seed is not an established or useful Comfrey poultry-feed product. Named sterile Bocking cultivars generally do not produce viable seed."
+          },
+
+          {
+            part:
+              "Unidentified Symphytum Material",
+
+            reason:
+              "Unidentified plants should not be fed because species, cultivar, plant-part identity, and chemical composition may be uncertain."
+          },
+
+          {
+            part:
+              "Moldy, Slimy, or Fermented Material",
+
+            reason:
+              "Spoiled plant material may contain mold, harmful microorganisms, fermentation products, or other contaminants."
+          },
+
+          {
+            part:
+              "Chemically Contaminated Material",
+
+            reason:
+              "Plants exposed to pesticides, herbicides, fertilizer spills, fuels, solvents, roadside pollutants, or unknown chemicals should not be fed."
+          },
+
+          {
+            part:
+              "Soil- or Waste-Contaminated Material",
+
+            reason:
+              "Leaves contaminated with mud, manure, feces, urine, carcass material, dirty bedding, or wastewater should be discarded."
+          }
+        ],
+
+        plantPartWarnings: [
+          "Do not pull entire plants for feeding because roots and crowns should be excluded.",
+          "Harvest leaves above the soil surface to reduce soil contamination.",
+          "Do not assume every Comfrey species or cultivar has the same alkaloid profile.",
+          "Do not feed leaves merely because the plant is labeled Bocking 14.",
+          "Sterile propagation does not prove toxicological safety.",
+          "Dry leaves remain subject to the same conservative quantity limits as fresh leaves.",
+          "Leaves harvested after pesticide or herbicide exposure should not be fed unless label restrictions clearly permit feed use.",
+          "Discard foliage showing mold, slime, heat, fermentation, decay, or abnormal odor."
+        ],
+
+        ediblePartsConclusion:
+          "For practical backyard use, restrict Comfrey feeding to small controlled quantities of clean, positively identified leaves. Keep all roots, crowns, coarse stems, contaminated material, and spoiled foliage out of the flock's feed."
+      },
+
+      feedingForms: {
+        preferredForms: [
+          {
+            form:
+              "Small Pieces of Fresh Leaf",
+
+            bestUse:
+              "Offer a small measured portion of clean, positively identified Comfrey leaves to established adult chickens while complete feed remains available."
+          },
+
+          {
+            form:
+              "Briefly Wilted Leaves",
+
+            bestUse:
+              "Wilt clean leaves briefly in a shaded, well-ventilated location and offer them the same day before heating, fermentation, slime, or mold develops."
+          },
+
+          {
+            form:
+              "Whole Leaves Secured for Supervised Pecking",
+
+            bestUse:
+              "Secure one or a few clean leaves where adult chickens can peck them under supervision, then remove the remaining material before it becomes dirty or spoiled."
+          },
+
+          {
+            form:
+              "Chopped Fresh Leaves",
+
+            bestUse:
+              "Chop a small controlled quantity into manageable pieces to reduce dragging, trampling, and contamination."
+          },
+
+          {
+            form:
+              "Properly Dried Whole Leaves",
+
+            bestUse:
+              "Use fully dried leaves as an occasional measured supplement when fresh foliage is unavailable."
+          },
+
+          {
+            form:
+              "Coarsely Crumbled Dried Leaf",
+
+            bestUse:
+              "Crumble fully dried leaves into larger recognizable pieces and offer only a modest amount."
+          }
+        ],
+
+        formsRequiringAdditionalCare: [
+          {
+            form:
+              "Finely Ground Dried Leaf Meal",
+
+            concern:
+              "Fine meal is easy to overuse, creates dust, may separate from other feed ingredients, and should not be added to an informal ration without professional formulation."
+          },
+
+          {
+            form:
+              "Comfrey Mixed Into Complete Feed",
+
+            concern:
+              "Mixing Comfrey into complete feed can reduce nutrient density and makes it difficult for chickens to regulate how much of the supplemental ingredient they consume."
+          },
+
+          {
+            form:
+              "Fresh Leaves Placed on the Ground",
+
+            concern:
+              "Leaves placed directly on soil, mud, manure, or wet litter can become contaminated and should be removed promptly if not consumed."
+          },
+
+          {
+            form:
+              "Fresh Leaves Offered in a Pile",
+
+            concern:
+              "High-moisture leaves can heat, compress, ferment, slime, or mold when piled together."
+          },
+
+          {
+            form:
+              "Dried Leaves Stored in Bulk",
+
+            concern:
+              "Leaves must be uniformly dry and cool before enclosed storage because residual moisture can cause condensation, heating, and mold."
+          },
+
+          {
+            form:
+              "Direct Access to Living Plants",
+
+            concern:
+              "Unrestricted access prevents intake control, encourages repeated consumption, exposes crowns and soil, and may damage the permanent planting."
+          },
+
+          {
+            form:
+              "Leaves From Unknown Comfrey Plants",
+
+            concern:
+              "Common Comfrey, Russian Comfrey, named Bocking cultivars, and seed-grown plants should not be assumed to have identical pyrrolizidine-alkaloid profiles."
+          },
+
+          {
+            form:
+              "Leaves Harvested After Chemical Treatment",
+
+            concern:
+              "The pesticide, herbicide, or other product label must specifically permit harvest for animal feed before any treated foliage is offered."
+          }
+        ],
+
+        avoidForms: [
+          "Comfrey roots",
+          "Comfrey crowns",
+          "Root cuttings",
+          "Whole uprooted plants",
+          "Unidentified Symphytum plants",
+          "Unrestricted free-choice Comfrey",
+          "Large daily portions",
+          "Comfrey used as the primary ration",
+          "Comfrey used as the primary protein source",
+          "Comfrey added freely to chick starter",
+          "Comfrey added freely to grower feed",
+          "Comfrey used as a medical treatment",
+          "Moldy leaves",
+          "Musty dried leaves",
+          "Slimy leaves",
+          "Fermenting leaves",
+          "Sour-smelling leaves",
+          "Heated plant material",
+          "Waterlogged or rotten foliage",
+          "Leaves contaminated with manure or feces",
+          "Leaves exposed to road pollution",
+          "Leaves exposed to pesticides or herbicides not approved for feed use",
+          "Leaves contaminated with fuel, oil, solvents, or fertilizer spills"
+        ],
+
+        freshLeafAdvantages: [
+          "Requires little processing",
+          "Provides seasonal leafy variety",
+          "Supports supervised pecking enrichment",
+          "Can be harvested repeatedly from established plants",
+          "Easy to inspect before feeding",
+          "Easy to limit when offered as individual leaves or small chopped portions"
+        ],
+
+        freshLeafDisadvantages: [
+          "Very high moisture content",
+          "Low energy density",
+          "Spoils rapidly after harvest",
+          "Can become dirty when dragged through litter",
+          "Can dilute complete-feed intake when overfed",
+          "Contains pyrrolizidine alkaloids",
+          "Requires strict portion control"
+        ],
+
+        driedLeafAdvantages: [
+          "Can extend seasonal availability",
+          "Occupies less storage space than fresh foliage",
+          "Can be measured more consistently",
+          "Can be crumbled into manageable supplemental portions",
+          "Reduces immediate wilting compared with fresh leaves"
+        ],
+
+        driedLeafDisadvantages: [
+          "Drying does not eliminate pyrrolizidine alkaloids",
+          "Concentrated dry matter makes overfeeding easier",
+          "Incomplete drying creates mold and heating risk",
+          "Fine particles can create dust",
+          "Stored material requires moisture, insect, and rodent control",
+          "Drying adds labor and handling"
+        ]
+      },
+
+      cultivarDifferences: {
+        important:
+          true,
+
+        summary:
+          "Comfrey species, hybrids, cultivars, and seed-grown plants should not be treated as identical. They may differ in fertility, growth habit, flowering, spread, leaf texture, biomass production, and pyrrolizidine-alkaloid composition. Sterility does not establish feeding safety, and the name Bocking 14 should not be used as proof that a plant is free of pyrrolizidine alkaloids.",
+
+        commonComfrey: {
+          scientificName:
+            "Symphytum officinale",
+
+          seedFertility:
+            "often-fertile",
+
+          poultryUseRecommendation:
+            "limited",
+
+          explanation:
+            "Common Comfrey may produce viable seed and spread through seedlings as well as persistent roots. Its leaves may be offered only in small controlled amounts under the same conservative safety limits applied to other Comfrey types."
+        },
+
+        russianComfrey: {
+          scientificName:
+            "Symphytum × uplandicum",
+
+          seedFertility:
+            "variable-by-selection",
+
+          poultryUseRecommendation:
+            "limited",
+
+          explanation:
+            "Russian Comfrey is a hybrid associated with vigorous growth and high biomass. Individual selections differ, so the hybrid name alone does not establish sterility, alkaloid concentration, or feeding safety."
+        },
+
+        bocking14: {
+          scientificName:
+            "Symphytum × uplandicum selection",
+
+          seedFertility:
+            "generally-sterile",
+
+          poultryUseRecommendation:
+            "limited",
+
+          explanation:
+            "Bocking 14 is commonly selected for vigorous biomass production and is generally propagated by crown divisions or root cuttings because it is sterile. Sterility limits seed spread but does not mean the leaves are free of pyrrolizidine alkaloids or suitable for unrestricted feeding."
+        },
+
+        otherBockingSelections: {
+          seedFertility:
+            "selection-dependent",
+
+          poultryUseRecommendation:
+            "limited",
+
+          explanation:
+            "Other named Bocking selections may differ in growth, flowering, fertility, leaf characteristics, and intended agricultural use. They should not automatically be treated as equivalent to Bocking 14."
+        },
+
+        seedGrownPlants: {
+          identificationReliability:
+            "variable",
+
+          poultryUseRecommendation:
+            "use-only-after-positive-identification",
+
+          explanation:
+            "Seed-grown plants may vary genetically and may not match the parent plant's growth habit, fertility, biomass production, or chemical composition."
+        },
+
+        unidentifiedPlants: {
+          poultryUseRecommendation:
+            "avoid",
+
+          explanation:
+            "Do not feed unidentified Comfrey-like plants. Positive identification is necessary because appearance alone may not establish species, cultivar, plant history, or chemical profile."
+        },
+
+        cultivarSelectionPriorities: [
+          "Positive botanical identification",
+          "Known propagation source",
+          "Permanent-site suitability",
+          "Local winter survival",
+          "Dependable biomass production",
+          "Disease resistance",
+          "Manageable spread",
+          "Leaf quality",
+          "Intended mulch and compost use",
+          "Pollinator value"
+        ],
+
+        cultivarSafetyPrinciples: [
+          "Do not assume all Comfrey plants contain the same alkaloid concentration.",
+          "Do not assume sterile plants are safer to feed than fertile plants.",
+          "Do not claim Bocking 14 is pyrrolizidine-alkaloid-free.",
+          "Do not use cultivar identity to justify unrestricted intake.",
+          "Apply the same conservative leaf-only feeding limits to every cultivar.",
+          "Exclude roots and crowns regardless of cultivar."
+        ]
+      },
+
+      preparation: {
+        preparationDifficulty:
+          "low-with-important-safety-controls",
+
+        preparationSummary:
+          "Comfrey leaves require little mechanical preparation, but safe use depends on positive plant identification, root exclusion, contamination inspection, strict portion control, prompt handling of fresh foliage, and complete drying before storage. Preparation does not remove the plant's pyrrolizidine alkaloids.",
+
+        requiredPreparation: [
+          "Positively identify the plant as Comfrey before harvesting it for poultry use.",
+          "Determine the species or named cultivar when possible.",
+          "Confirm that the planting has not been exposed to prohibited pesticides, herbicides, roadside pollutants, wastewater, fuel, solvents, or other chemical contamination.",
+          "Harvest leaves above the soil surface.",
+          "Exclude roots, crowns, and root cuttings.",
+          "Remove coarse stems when they are too fibrous for practical consumption.",
+          "Inspect every harvest for mold, decay, insects, animal waste, dirt, slime, and abnormal odor.",
+          "Discard damaged, contaminated, diseased, or questionable foliage.",
+          "Offer only a small controlled amount.",
+          "Keep complete poultry feed available before and during Comfrey supplementation.",
+          "Remove uneaten fresh material before it becomes dirty, warm, slimy, fermented, or moldy.",
+          "Dry storage leaves thoroughly before placing them in an enclosed container.",
+          "Allow dried leaves to cool completely before sealing them.",
+          "Continue treating dried Comfrey as a limited supplement because drying does not eliminate pyrrolizidine alkaloids."
+        ],
+
+        optionalPreparation: [
+          "Rinse visibly dusty leaves with clean potable water when contamination is limited to removable surface dirt.",
+          "Drain and surface-dry rinsed leaves before feeding.",
+          "Chop large leaves into manageable pieces.",
+          "Wilt leaves briefly in a shaded, clean, well-ventilated location.",
+          "Secure one or two whole leaves for supervised pecking enrichment.",
+          "Dry leaves in single or shallow layers with strong airflow.",
+          "Turn drying leaves periodically to promote uniform moisture loss.",
+          "Remove thick leaf stems before drying when they slow the drying process.",
+          "Crumble fully dried leaves into coarse pieces for easier measurement.",
+          "Divide dried leaves into small labeled storage batches.",
+          "Record harvest, drying, and inspection dates."
+        ],
+
+        unnecessaryPreparation: [
+          "Cooking the leaves before ordinary supplemental use",
+          "Boiling the leaves to remove pyrrolizidine alkaloids",
+          "Soaking leaves to make them safe",
+          "Fermenting leaves to make them safe",
+          "Grinding leaves for established adult chickens",
+          "Mixing Comfrey into the entire complete-feed supply",
+          "Adding oils, salt, sugar, molasses, seasoning, or flavoring",
+          "Peeling leaves",
+          "Removing ordinary soft leaf veins",
+          "Dehydrating leaves at excessive heat",
+          "Producing fine leaf powder for casual backyard feeding"
+        ],
+
+        preparationMistakes: [
+          "Feeding roots or crown tissue.",
+          "Assuming a sterile cultivar is free of pyrrolizidine alkaloids.",
+          "Assuming drying, wilting, boiling, soaking, or fermenting makes unrestricted feeding safe.",
+          "Harvesting unidentified Comfrey-like plants.",
+          "Pulling entire plants and allowing birds access to the roots.",
+          "Cutting foliage at soil level and collecting mud, manure, or crown material.",
+          "Feeding roadside plants.",
+          "Feeding leaves from chemically treated plants without confirming feed-use permission.",
+          "Offering large armfuls of fresh foliage.",
+          "Allowing Comfrey to replace substantial complete-feed intake.",
+          "Adding dried leaf meal by guesswork to a home-mixed ration.",
+          "Copying experimental broiler inclusion rates into a backyard ration.",
+          "Leaving fresh chopped leaves in a warm pile.",
+          "Storing leaves before they are completely dry.",
+          "Sealing dried leaves while they are still warm.",
+          "Grinding questionable leaves instead of discarding them.",
+          "Attempting to rescue moldy material by redrying it.",
+          "Returning wet or leftover material to a dry storage container.",
+          "Using Comfrey as treatment for illness, injury, parasites, or nutritional deficiency."
+        ]
+      },
+
+      nutritionHighlights: {
+        nutritionSummary:
+          "Comfrey is valued primarily as a mineral-rich leafy supplement rather than a concentrated poultry feed. Fresh leaves contain very high moisture, while properly dried leaves contain a much higher concentration of dry matter. Although dried foliage may contain moderate-to-high crude protein, Comfrey should never be viewed as a complete protein source or replacement for a balanced poultry ration because it also contains pyrrolizidine alkaloids.",
+
+        moistureLevel:
+          "very-high-fresh",
+
+        energyDensity:
+          "low",
+
+        proteinQuality:
+          "moderate",
+
+        fiberLevel:
+          "moderate",
+
+        primaryNutrients: [
+          {
+            nutrient:
+              "Leaf Protein",
+
+            importance:
+              "Provides supplemental plant protein but does not replace the balanced amino-acid profile of complete poultry feed."
+          },
+
+          {
+            nutrient:
+              "Potassium",
+
+            importance:
+              "Supports normal cellular function and contributes to the crop's reputation as a mineral accumulator."
+          },
+
+          {
+            nutrient:
+              "Calcium",
+
+            importance:
+              "Present within the foliage but not in sufficient balance to replace formulated layer nutrition."
+          },
+
+          {
+            nutrient:
+              "Magnesium",
+
+            importance:
+              "Contributes to normal metabolic processes and skeletal function."
+          },
+
+          {
+            nutrient:
+              "Phosphorus",
+
+            importance:
+              "Present as one component of overall mineral nutrition."
+          },
+
+          {
+            nutrient:
+              "Iron",
+
+            importance:
+              "Naturally present within leafy tissue as part of the plant's mineral profile."
+          },
+
+          {
+            nutrient:
+              "Leaf Pigments",
+
+            importance:
+              "Provide naturally occurring green plant pigments associated with leafy vegetation."
+          },
+
+          {
+            nutrient:
+              "Allantoin",
+
+            importance:
+              "Naturally present plant compound frequently discussed in Comfrey literature, although it should not be interpreted as providing a poultry health benefit."
+          }
+        ],
+
+        nutritionalStrengths: [
+          "Provides fresh leafy variety.",
+          "Contains useful plant protein on a dry-matter basis.",
+          "Naturally rich in several plant minerals.",
+          "Supports seasonal forage diversity.",
+          "May encourage natural pecking behavior.",
+          "Can be harvested repeatedly from established perennial plants.",
+          "Useful as a homestead biomass crop beyond poultry feeding."
+        ],
+
+        nutritionalLimitations: [
+          "Very low energy compared with cereal grains.",
+          "Fresh leaves contain extremely high moisture.",
+          "Cannot replace complete poultry feed.",
+          "Does not provide a balanced amino-acid profile.",
+          "Does not provide balanced calcium nutrition for laying hens.",
+          "Contains pyrrolizidine alkaloids.",
+          "Large quantities may dilute overall diet quality.",
+          "No universal safe feeding percentage has been established."
+        ],
+
+        nutritionConclusion:
+          "Comfrey should be viewed as an occasional leafy supplement that adds dietary variety rather than as a significant energy or protein ingredient. Complete poultry feed should remain the nutritional foundation."
+      },
+
+      benefits: {
+        benefitSummary:
+          "Comfrey's greatest value comes from combining limited poultry supplementation with exceptional homestead productivity. It produces repeated leafy harvests while simultaneously supporting compost production, mulch generation, pollinators, and long-term perennial biomass.",
+
+        primaryBenefits: [
+          {
+            title:
+              "Repeated Seasonal Harvests",
+
+            explanation:
+              "Established plants commonly provide multiple leafy harvests during the growing season without annual replanting."
+          },
+
+          {
+            title:
+              "Excellent Biomass Production",
+
+            explanation:
+              "Produces large quantities of leafy material useful for mulch, compost, and garden nutrient cycling."
+          },
+
+          {
+            title:
+              "Permanent Perennial Crop",
+
+            explanation:
+              "Well-established crowns may remain productive for many years with proper management."
+          },
+
+          {
+            title:
+              "Fresh Supplemental Greens",
+
+            explanation:
+              "Provides occasional leafy forage that can increase dietary variety for adult chickens."
+          },
+
+          {
+            title:
+              "Pollinator Support",
+
+            explanation:
+              "Flowering plants attract bees and many other beneficial pollinating insects."
+          },
+
+          {
+            title:
+              "Cut-and-Carry Feeding",
+
+            explanation:
+              "Leaves can be harvested as needed without allowing chickens unrestricted access to permanent plants."
+          }
+        ],
+
+        secondaryBenefits: [
+          "Deep-rooted perennial growth habit.",
+          "Excellent compost ingredient.",
+          "Useful living mulch source.",
+          "Supports food forest systems.",
+          "Provides repeated organic matter production.",
+          "Reduces annual planting labor after establishment.",
+          "Can fit well around orchards and perennial gardens.",
+          "Produces dependable biomass in suitable climates."
+        ],
+
+        indirectHomesteadBenefits: [
+          "Supports compost production.",
+          "Provides mulch for gardens.",
+          "Improves pollinator habitat.",
+          "Reduces purchased mulch needs.",
+          "Contributes organic matter to garden systems.",
+          "Functions as a long-term perennial support crop.",
+          "Integrates well into regenerative garden designs."
+        ],
+
+        enrichmentBenefits: [
+          "Encourages natural pecking behavior.",
+          "Introduces occasional dietary variety.",
+          "Provides seasonal fresh forage opportunities.",
+          "Supports supervised treat feeding."
+        ],
+
+        bestUseCases: [
+          "Small backyard flocks.",
+          "Permanent homesteads.",
+          "Food forests.",
+          "Orchards.",
+          "Compost-centered gardens.",
+          "Cut-and-carry feeding systems.",
+          "Gardeners seeking perennial biomass."
+        ],
+
+        benefitsConclusion:
+          "Comfrey's strongest contribution is usually its overall homestead value rather than the quantity of poultry nutrition it provides."
+      },
+
+      limitations: {
+        limitationSummary:
+          "Although Comfrey has many homestead advantages, several important limitations prevent it from becoming a major poultry feed ingredient. Conservative feeding remains essential.",
+
+        primaryLimitations: [
+          {
+            limitation:
+              "Pyrrolizidine Alkaloids",
+
+            explanation:
+              "The plant naturally contains pyrrolizidine alkaloids, making unrestricted feeding inappropriate."
+          },
+
+          {
+            limitation:
+              "Not a Complete Feed",
+
+            explanation:
+              "Comfrey lacks the balanced nutrition required to replace a complete poultry ration."
+          },
+
+          {
+            limitation:
+              "Low Energy",
+
+            explanation:
+              "Fresh leafy material contributes relatively little usable dietary energy compared with cereal grains."
+          },
+
+          {
+            limitation:
+              "High Moisture",
+
+            explanation:
+              "Fresh leaves contain large amounts of water, limiting dry-matter intake."
+          },
+
+          {
+            limitation:
+              "Permanent Placement",
+
+            explanation:
+              "Established plants are difficult to remove because roots readily regenerate."
+          },
+
+          {
+            limitation:
+              "Storage Challenges",
+
+            explanation:
+              "Fresh leaves spoil quickly and dried leaves require careful drying before storage."
+          }
+        ],
+
+        managementLimitations: [
+          "Requires careful intake control.",
+          "Requires positive plant identification.",
+          "Should not be grazed freely.",
+          "Requires regular harvesting.",
+          "Fresh material spoils rapidly.",
+          "Drying adds labor.",
+          "Requires periodic inspection during storage.",
+          "Roots should never be fed."
+        ],
+
+        planningLimitations: [
+          "Poor temporary crop.",
+          "Unsuitable where future excavation is planned.",
+          "Not easily removed once established.",
+          "Requires permanent growing space.",
+          "Less useful where biomass production is unnecessary."
+        ],
+
+        nutritionalLimitations: [
+          "Cannot replace balanced poultry feed.",
+          "Cannot replace supplemental calcium for laying hens.",
+          "Cannot replace grain-based energy sources.",
+          "Does not establish a safe feeding percentage simply because protein content is relatively high.",
+          "Should remain a minor dietary supplement."
+        ],
+
+        limitationsConclusion:
+          "Comfrey should be managed as a valuable perennial homestead support crop that provides occasional poultry supplementation—not as a major feed ingredient or unrestricted forage source."
+      },
+
+      antinutritionalConcerns: {
+        overallConcernLevel:
+          "high-because-of-pyrrolizidine-alkaloids",
+
+        requiresDetoxification:
+          false,
+
+        cookingRequired:
+          false,
+
+        unrestrictedFeedingAppropriate:
+          false,
+
+        primaryConcerns: [
+          {
+            factor:
+              "Pyrrolizidine Alkaloids",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Comfrey naturally contains pyrrolizidine alkaloids associated with liver injury after sufficient exposure. The practical concern is cumulative intake over time rather than whether one small serving causes an immediate visible reaction."
+          },
+
+          {
+            factor:
+              "Greater Root-Associated Concern",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Comfrey roots generally warrant greater toxicological concern than leaves and should not be offered to chickens."
+          },
+
+          {
+            factor:
+              "Species and Cultivar Variation",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Pyrrolizidine-alkaloid concentrations and profiles may vary among common Comfrey, Russian Comfrey, named Bocking cultivars, seed-grown plants, plant parts, maturity stages, growing conditions, and analytical methods."
+          },
+
+          {
+            factor:
+              "Cumulative Exposure",
+
+            concernLevel:
+              "high",
+
+            explanation:
+              "Repeated small exposures may be more important than a single serving because pyrrolizidine-alkaloid effects are associated with total exposure over time."
+          },
+
+          {
+            factor:
+              "High Fresh-Leaf Moisture",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Fresh Comfrey leaves contain very high moisture, limiting their energy contribution and allowing large volumes of foliage to displace more nutrient-dense complete feed."
+          },
+
+          {
+            factor:
+              "Dietary Fiber",
+
+            concernLevel:
+              "moderate",
+
+            explanation:
+              "Older leaves and stems become increasingly fibrous. Excessive fibrous material can lower usable energy density and reduce the amount of complete feed consumed."
+          },
+
+          {
+            factor:
+              "Incomplete Amino-Acid Balance",
+
+            concernLevel:
+              "high-when-used-as-a-protein-source",
+
+            explanation:
+              "A moderate or high crude-protein value on a dry-matter basis does not mean Comfrey supplies the digestible amino-acid balance required by growing, laying, breeding, or molting chickens."
+          },
+
+          {
+            factor:
+              "Mineral Imbalance",
+
+            concernLevel:
+              "high-when-overused",
+
+            explanation:
+              "Mineral-rich foliage is not the same as nutritionally balanced poultry feed. Comfrey cannot be relied upon to supply correct calcium, available phosphorus, sodium, trace minerals, or the mineral ratios required by chickens."
+          },
+
+          {
+            factor:
+              "Nutrient Dilution",
+
+            concernLevel:
+              "high-when-overfed",
+
+            explanation:
+              "Large portions can reduce intake of complete feed and dilute energy, digestible amino acids, vitamins, minerals, sodium, and other essential nutrients."
+          }
+        ],
+
+        notPrimaryConcerns: [
+          {
+            factor:
+              "Trypsin Inhibitors",
+
+            explanation:
+              "Comfrey is not treated like raw mature Soybeans, which require heat processing to control major trypsin-inhibitor activity."
+          },
+
+          {
+            factor:
+              "Lectin Detoxification",
+
+            explanation:
+              "Comfrey leaves are not managed as a raw dry bean or pulse requiring routine cooking for lectin reduction."
+          },
+
+          {
+            factor:
+              "Cyanogenic Glycosides",
+
+            explanation:
+              "Comfrey is not classified in this database as requiring cyanogenic-compound removal before limited leaf supplementation."
+          },
+
+          {
+            factor:
+              "Solanine",
+
+            explanation:
+              "Comfrey is not a nightshade crop and is not managed under the solanine precautions applied to green potato tissue."
+          },
+
+          {
+            factor:
+              "Mandatory Cooking",
+
+            explanation:
+              "Cooking is not established as a required or reliable home method for making Comfrey suitable for unrestricted feeding."
+          }
+        ],
+
+        processingEffects: [
+          {
+            process:
+              "Brief Wilting",
+
+            effect:
+              "May soften the leaf and reduce some surface moisture, but it does not reliably eliminate pyrrolizidine alkaloids."
+          },
+
+          {
+            process:
+              "Drying",
+
+            effect:
+              "Removes water, reduces bulk, and improves storage potential when performed correctly. Drying does not reliably remove or neutralize pyrrolizidine alkaloids."
+          },
+
+          {
+            process:
+              "Crumbling",
+
+            effect:
+              "Produces manageable dried pieces but does not reduce the underlying toxicological concern."
+          },
+
+          {
+            process:
+              "Grinding",
+
+            effect:
+              "Creates a concentrated fine meal that is easy to overuse, difficult for birds to sort, and unsuitable for casual addition to complete feed."
+          },
+
+          {
+            process:
+              "Boiling",
+
+            effect:
+              "Is not established as a dependable backyard detoxification method and should not be represented as making unrestricted feeding safe."
+          },
+
+          {
+            process:
+              "Soaking",
+
+            effect:
+              "Does not establish safe unrestricted use and may create spoilage risk if wet leaves are held too long."
+          },
+
+          {
+            process:
+              "Fermentation",
+
+            effect:
+              "Should not be relied upon to eliminate pyrrolizidine alkaloids and introduces additional risks from uncontrolled microbial growth, heating, acidity, and spoilage."
+          },
+
+          {
+            process:
+              "Professional Ration Formulation",
+
+            effect:
+              "Can control ingredient inclusion and overall nutrient balance more precisely, but does not mean the ingredient is free of toxicological limitations."
+          }
+        ],
+
+        exposureFactors: [
+          "Comfrey species",
+          "Cultivar or selection",
+          "Whether the plant is seed-grown or vegetatively propagated",
+          "Plant part",
+          "Leaf maturity",
+          "Harvest timing",
+          "Growing environment",
+          "Soil and fertility conditions",
+          "Drought or other plant stress",
+          "Fresh versus dried form",
+          "Amount offered",
+          "Frequency of feeding",
+          "Duration of exposure",
+          "Bird age",
+          "Bird body size",
+          "Existing health status",
+          "Total complete-feed intake"
+        ],
+
+        riskReductionPractices: [
+          "Use only positively identified Comfrey.",
+          "Feed leaves only.",
+          "Exclude roots and crowns.",
+          "Offer small controlled portions.",
+          "Avoid daily unrestricted feeding.",
+          "Maintain an age-appropriate complete poultry ration.",
+          "Avoid meaningful supplementation for chicks and growing pullets.",
+          "Do not copy experimental research inclusion levels into a backyard ration.",
+          "Do not assume Bocking 14 is pyrrolizidine-alkaloid-free.",
+          "Do not assume drying, boiling, soaking, or fermenting eliminates the primary concern.",
+          "Stop feeding if appetite, droppings, behavior, body condition, or production changes adversely."
+        ],
+
+        antinutritionalSummary:
+          "Comfrey’s dominant feeding limitation is its pyrrolizidine-alkaloid content. Because no universal safe backyard inclusion percentage has been established, the crop should remain a leaf-only, limited, infrequent supplement for established adult chickens receiving complete feed. Roots should not be fed, and no home-processing method should be represented as making unrestricted feeding safe."
+      },
+
+      complementaryFeeding: {
+        purpose:
+          "Comfrey should add limited leafy variety and pecking enrichment to an already complete feeding program. It should not serve as the nutritional foundation, primary protein ingredient, primary mineral source, or major forage ration.",
+
+        bestFoundation:
+          "An age-appropriate complete poultry feed formulated for the bird's life stage and production purpose.",
+
+        complements: [
+          {
+            feedType:
+              "Complete layer feed",
+
+            relationship:
+              "Complete layer feed supplies balanced energy, digestible amino acids, vitamins, sodium, trace minerals, available phosphorus, and appropriately managed calcium that Comfrey cannot provide."
+          },
+
+          {
+            feedType:
+              "Complete all-flock feed",
+
+            relationship:
+              "A complete all-flock ration provides the primary nutritional foundation for mixed adult flocks while Comfrey remains a small occasional leafy supplement."
+          },
+
+          {
+            feedType:
+              "Complete breeder feed",
+
+            relationship:
+              "Breeder feed provides the controlled nutrient balance needed for fertility, hatchability, body condition, and reproductive performance. Comfrey should remain a minor optional addition."
+          },
+
+          {
+            feedType:
+              "Complete grower or starter feed",
+
+            relationship:
+              "Young birds require complete age-appropriate feed. Comfrey should not be used to dilute chick starter or pullet grower rations."
+          },
+
+          {
+            feedType:
+              "Higher-energy supplemental crops",
+
+            relationship:
+              "Small controlled amounts of Corn, Wheat, Barley, Oats, Grain Sorghum, Proso Millet, Sunflower seed, or other suitable crops provide more concentrated energy than Comfrey leaves. Combining these crops informally still does not create a complete ration."
+          },
+
+          {
+            feedType:
+              "Properly balanced protein ingredients",
+
+            relationship:
+              "Properly processed Soybeans, Field Peas, Cowpeas, soybean meal, insect protein, or other suitable ingredients may contribute protein within a formulated ration. They should not be paired with Comfrey by guesswork as though crude-protein values alone create a balanced diet."
+          },
+
+          {
+            feedType:
+              "Calcium source for laying hens",
+
+            relationship:
+              "A complete layer ration and, where appropriate, properly managed free-choice oyster shell or another suitable calcium source meet laying-hen calcium needs more reliably than Comfrey foliage."
+          },
+
+          {
+            feedType:
+              "Diverse safe seasonal greens",
+
+            relationship:
+              "Kale, Collards, White Clover, Alfalfa, Mulberry leaves, garden vegetables, and other appropriate greens can provide forage diversity so the flock is not repeatedly exposed to one supplemental plant."
+          },
+
+          {
+            feedType:
+              "Clean water",
+
+            relationship:
+              "Constant access to fresh clean water is essential for digestion, temperature regulation, egg production, and normal feed intake. Moist Comfrey leaves do not replace drinking water."
+          },
+
+          {
+            feedType:
+              "Appropriate insoluble grit",
+
+            relationship:
+              "Birds consuming coarse supplemental plant material may need suitable insoluble grit when they do not obtain adequate natural grit from their environment."
+          },
+
+          {
+            feedType:
+              "Supervised enrichment materials",
+
+            relationship:
+              "Hanging vegetables, forage bundles, scattered complete-feed pellets, and other controlled enrichment can provide pecking activity without encouraging repeated heavy Comfrey intake."
+          }
+        ],
+
+        doesNotCorrect: [
+          "An incomplete homemade ration",
+          "Insufficient dietary energy",
+          "Insufficient digestible lysine",
+          "Insufficient digestible methionine",
+          "Insufficient threonine",
+          "Insufficient balanced protein",
+          "Insufficient calcium for laying hens",
+          "Incorrect calcium-to-phosphorus balance",
+          "Vitamin deficiency",
+          "Trace-mineral deficiency",
+          "Insufficient sodium",
+          "Poor-quality complete feed",
+          "Reduced complete-feed intake",
+          "Inadequate access to clean water",
+          "Lack of suitable grit where needed",
+          "Liver disease",
+          "Parasites",
+          "Infectious disease",
+          "Poor body condition",
+          "Low egg production",
+          "Poor fertility",
+          "Poor hatchability",
+          "Feather loss caused by an unbalanced diet",
+          "Unsafe exposure to another toxic plant",
+          "Pyrrolizidine-alkaloid exposure from Comfrey itself"
+        ],
+
+        pairingWarning:
+          "Pairing Comfrey with grains, legumes, seeds, greens, minerals, or other homegrown ingredients does not make the mixture nutritionally complete or remove the pyrrolizidine-alkaloid concern. Significant ration formulation requires calculation of metabolizable energy, digestible amino acids, fiber, fat, calcium, available phosphorus, sodium, vitamins, trace minerals, ingredient interactions, toxicological limits, and expected total intake.",
+
+        practicalBackyardApproach:
+          "For an ordinary backyard flock, keep an age-appropriate complete ration continuously available and use Comfrey only as a small occasional leaf supplement. Rotate it with other safe enrichment materials, exclude roots and crowns, remove leftovers promptly, and avoid repeated free-choice access."
+      },
+
+      feedingMethods: {
+        philosophy:
+          "Comfrey should be offered only as a small, controlled, leaf-only supplement for established adult chickens. The safest backyard methods make intake easy to limit, keep roots and crowns away from the flock, protect normal complete-feed consumption, and allow uneaten material to be removed before it becomes contaminated or spoiled.",
+
+        primaryMethods: [
+          {
+            method:
+              "Small measured fresh-leaf portions",
+
+            recommendation:
+              "Preferred",
+
+            explanation:
+              "Offer a small quantity of clean, positively identified Comfrey leaves to established adult chickens after they have access to their normal complete ration. Fresh portions should be limited enough that they are consumed promptly."
+          },
+
+          {
+            method:
+              "Whole leaves secured for supervised pecking",
+
+            recommendation:
+              "Preferred",
+
+            explanation:
+              "Hang or secure one or a few clean leaves where birds can peck at them under supervision. This provides enrichment while making the amount offered visible and easier to control."
+          },
+
+          {
+            method:
+              "Small chopped fresh-leaf portions",
+
+            recommendation:
+              "Recommended",
+
+            explanation:
+              "Large leaves may be chopped into manageable pieces and placed in a clean feeder or dry container. Chopping can reduce dragging and trampling but does not change the need for conservative intake."
+          },
+
+          {
+            method:
+              "Briefly wilted leaves",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Clean leaves may be wilted briefly in a shaded, well-ventilated area and offered the same day. Wilting may improve texture but does not remove pyrrolizidine alkaloids."
+          },
+
+          {
+            method:
+              "Coarsely crumbled dried leaves",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Thoroughly dried leaves may be crumbled into recognizable pieces and offered in a small measured amount when fresh foliage is unavailable. Dry material is more concentrated than fresh foliage and is easier to overfeed."
+          },
+
+          {
+            method:
+              "Whole properly dried leaves",
+
+            recommendation:
+              "Occasional",
+
+            explanation:
+              "Fully dried leaves may be offered individually or in a small bundle for controlled pecking. They must remain dry, clean, mold-free, and limited in quantity."
+          },
+
+          {
+            method:
+              "Measured dried leaf added to a separate supplement dish",
+
+            recommendation:
+              "Use With Caution",
+
+            explanation:
+              "A small amount of coarse dried leaf may be offered separately so consumption can be observed. Do not mix it throughout the flock's complete feed, because that makes intake harder to control and dilutes the formulated ration."
+          },
+
+          {
+            method:
+              "Professionally formulated Comfrey leaf meal",
+
+            recommendation:
+              "Formulation Required",
+
+            explanation:
+              "Meaningful use of finely ground Comfrey leaf meal belongs only in a professionally formulated ration that accounts for complete nutrient balance, ingredient variation, expected intake, and toxicological limitations."
+          },
+
+          {
+            method:
+              "Cut-and-carry harvest",
+
+            recommendation:
+              "Highly Recommended",
+
+            explanation:
+              "Harvest leaves from the permanent planting and carry only the intended portion to the flock. This prevents birds from exposing crowns or roots and provides much better intake control than direct access to living plants."
+          },
+
+          {
+            method:
+              "Controlled access to a protected forage cage",
+
+            recommendation:
+              "Use With Caution",
+
+            explanation:
+              "Leaves may grow through a protective cage or barrier where birds can reach only limited foliage. The system must prevent scratching around the crown, root exposure, and continuous unrestricted consumption."
+          },
+
+          {
+            method:
+              "Direct unrestricted access to established plants",
+
+            recommendation:
+              "Not Recommended",
+
+            explanation:
+              "Free access makes cumulative intake difficult to control, allows birds to damage permanent crowns, increases contact with soil and manure, and may expose roots or crown tissue."
+          },
+
+          {
+            method:
+              "Large piles of freshly cut leaves",
+
+            recommendation:
+              "Not Recommended",
+
+            explanation:
+              "Large piles encourage uncontrolled consumption and may compact, heat, ferment, become slimy, or develop mold before all material is eaten."
+          },
+
+          {
+            method:
+              "Comfrey mixed into the complete ration by guesswork",
+
+            recommendation:
+              "Not Recommended",
+
+            explanation:
+              "Adding Comfrey directly to complete feed without ration formulation lowers nutrient density, prevents birds from avoiding the ingredient, and provides no reliable control over pyrrolizidine-alkaloid exposure."
+          },
+
+          {
+            method:
+              "Roots, crowns, or whole uprooted plants",
+
+            recommendation:
+              "Never Feed",
+
+            explanation:
+              "Roots and crowns should be excluded from poultry feeding because root tissue warrants greater pyrrolizidine-alkaloid concern and may also carry soil, decay, or other contamination."
+          }
+        ],
+
+        introductionGuidelines: {
+          suddenDietChangeRecommended:
+            false,
+
+          gradualIntroductionRecommended:
+            true,
+
+          explanation:
+            "Introduce Comfrey only to healthy, established adult chickens that are already eating an age-appropriate complete ration. Begin with a very small amount of clean leaf material, observe the flock, and avoid offering another portion simply because the first serving was consumed quickly. Consumption speed does not establish safety. Keep use occasional and controlled rather than increasing toward unrestricted daily feeding."
+        },
+
+        observationChecklist: [
+          "Complete-feed consumption remains normal.",
+          "Birds continue eating their age-appropriate balanced ration.",
+          "No bird is monopolizing most of the Comfrey portion.",
+          "Young chicks and growing pullets do not have access to meaningful amounts.",
+          "Leaves are consumed promptly rather than trampled into litter.",
+          "No roots or crown tissue are present.",
+          "Fresh leaves remain cool, clean, and free from slime or fermentation.",
+          "Dried leaves remain crisp and free from moisture or musty odor.",
+          "Droppings remain normal for the flock.",
+          "Appetite remains normal.",
+          "Birds remain alert and active.",
+          "Body condition remains stable.",
+          "Egg production does not decline unexpectedly.",
+          "Eggshell quality does not worsen.",
+          "No persistent change in water consumption develops.",
+          "No unexplained weakness, lethargy, or reduced activity appears.",
+          "No signs of mold, insects, rodents, or chemical contamination are present.",
+          "The flock is not receiving Comfrey so frequently that cumulative intake becomes difficult to judge."
+        ],
+
+        portionControlPrinciples: [
+          "Offer Comfrey only after confirming that complete feed is available.",
+          "Use a measured or countable portion rather than an armful.",
+          "Offer several small feeding stations when flock competition is likely.",
+          "Do not refill Comfrey immediately after birds finish the first portion.",
+          "Rotate Comfrey with other safe forms of enrichment rather than using it repeatedly.",
+          "Keep fresh and dried Comfrey supplements separate from the complete ration.",
+          "Reduce or stop use whenever complete-feed consumption falls.",
+          "Do not establish a universal percentage or serving size for all flocks."
+        ],
+
+        feedingFrequency: {
+          dailyStaple:
+            false,
+
+          supplemental:
+            true,
+
+          enrichment:
+            true,
+
+          seasonal:
+            true,
+
+          unrestricted:
+            false,
+
+          explanation:
+            "Comfrey should be used as an occasional controlled supplement rather than a daily staple. Appropriate frequency depends on bird age, body size, health, complete-feed intake, the amount offered, whether leaves are fresh or dried, and the flock's total exposure over time. No universal safe backyard schedule has been established."
+        },
+
+        flockCompetitionManagement: {
+          concernLevel:
+            "moderate",
+
+          explanation:
+            "Dominant birds may consume a disproportionate share of a limited supplement, making individual exposure uneven.",
+
+          managementTips: [
+            "Provide several small portions in separate locations.",
+            "Space feeding points far enough apart to reduce guarding.",
+            "Supervise the flock during introduction.",
+            "Avoid one dense pile that can be controlled by a dominant bird.",
+            "Remove leftovers after the feeding period.",
+            "Ensure timid birds still have uninterrupted access to complete feed."
+          ]
+        },
+
+        freshLeafManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Easy to inspect before feeding.",
+            "Easy to count or measure.",
+            "Provides supervised pecking enrichment.",
+            "Requires little processing.",
+            "Allows prompt removal of leftovers."
+          ],
+
+          managementTips: [
+            "Harvest above the soil surface.",
+            "Exclude roots and crowns.",
+            "Remove coarse stems when necessary.",
+            "Inspect for insects, disease, mold, chemicals, and animal waste.",
+            "Offer in a clean feeder, dry pan, or secured hanging position.",
+            "Keep portions small.",
+            "Do not leave fresh leaves piled in direct heat.",
+            "Remove uneaten material before it becomes dirty, slimy, sour, warm, or moldy."
+          ]
+        },
+
+        driedLeafManagement: {
+          recommended:
+            true,
+
+          advantages: [
+            "Extends seasonal availability.",
+            "Requires less storage space than fresh foliage.",
+            "Can be divided into measured batches.",
+            "Can be offered as whole or coarsely crumbled leaves."
+          ],
+
+          managementTips: [
+            "Use only leaves dried completely with strong airflow.",
+            "Allow leaves to cool before storage.",
+            "Store in clean, dry, labeled containers.",
+            "Inspect for condensation, musty odor, insects, and mold.",
+            "Keep dried leaves coarse enough to remain recognizable.",
+            "Avoid creating airborne fine dust.",
+            "Remember that drying concentrates dry matter.",
+            "Do not interpret drying as removal of pyrrolizidine alkaloids."
+          ]
+        },
+
+        livingPlantManagement: {
+          unrestrictedAccessRecommended:
+            false,
+
+          preferredApproach:
+            "Protected planting with cut-and-carry harvest",
+
+          explanation:
+            "Permanent Comfrey plants are best kept outside the flock's unrestricted run. Harvesting leaves and carrying them to the birds allows better control of intake, prevents crown damage, limits soil contamination, and keeps roots inaccessible.",
+
+          managementTips: [
+            "Plant outside the primary chicken run.",
+            "Protect crowns with fencing or a rigid forage cage.",
+            "Do not allow birds to excavate around roots.",
+            "Harvest only the portion intended for immediate use.",
+            "Leave enough leaf area for plant recovery.",
+            "Use excess biomass for compost or mulch rather than feeding it all.",
+            "Inspect protected plants regularly for exposed roots or damaged barriers."
+          ]
+        },
+
+        gritConsiderations: {
+          gritHelpful:
+            true,
+
+          explanation:
+            "Established adult chickens consuming coarse leaves or dried plant material may benefit from appropriately sized insoluble grit when their environment does not reliably supply it. Grit assists mechanical digestion but does not correct nutrient imbalance, excessive fiber, contamination, spoilage, or pyrrolizidine-alkaloid exposure."
+        },
+
+        waterConsiderations: {
+          cleanWaterRequired:
+            true,
+
+          explanation:
+            "Fresh Comfrey leaves contain considerable moisture, but they do not replace unrestricted access to clean drinking water. Normal water access is especially important during hot weather, illness, egg production, and any dietary change."
+        },
+
+        weatherConsiderations: {
+          hotWeather:
+            "During hot weather, avoid allowing supplemental foliage to reduce complete-feed intake. Offer only a small fresh portion during a cooler part of the day and remove leftovers promptly because warm wet leaves spoil quickly.",
+
+          wetWeather:
+            "Do not place Comfrey directly into mud, wet litter, or standing water. Rain-soaked harvested leaves should be drained and used promptly rather than piled or stored.",
+
+          coldWeather:
+            "Dried Comfrey may provide occasional winter variety but contributes little concentrated energy. It should not be used to compensate for inadequate complete feed, frozen water, poor shelter, or low body condition.",
+
+          humidWeather:
+            "High humidity slows drying and increases mold risk. Use shallow layers, strong airflow, and repeated inspection when preserving leaves.",
+
+          freezingWeather:
+            "Frost-damaged or frozen leaves should be inspected carefully and used only when clean and sound. Do not store thawing wet foliage in an enclosed container."
+        },
+
+        stopOrReduceFeedingWhen: [
+          "Complete-feed intake declines.",
+          "Birds begin waiting for Comfrey while ignoring balanced feed.",
+          "Droppings change persistently.",
+          "Appetite declines.",
+          "Body condition worsens.",
+          "Egg production falls unexpectedly.",
+          "Eggshell quality declines.",
+          "Birds become weak, quiet, or unusually inactive.",
+          "Fresh leaves develop slime, heat, sour odor, or mold.",
+          "Stored leaves develop condensation, insects, musty odor, or fungal growth.",
+          "Roots or crown tissue are accidentally included.",
+          "Plant identity becomes uncertain.",
+          "Chemical exposure cannot be ruled out.",
+          "The amount or frequency offered is no longer being tracked."
+        ]
+      },
+
+      practicalUse: {
+        idealHomesteadUses: [
+          "Occasional measured leafy supplementation for established adult chickens",
+
+          "Controlled cut-and-carry feeding",
+
+          "Supervised pecking enrichment",
+
+          "Small backyard flocks receiving complete poultry feed",
+
+          "Permanent perennial homestead plantings",
+
+          "Repeated seasonal biomass harvests",
+
+          "Compost production",
+
+          "Garden and orchard mulch production",
+
+          "Food-forest support plantings",
+
+          "Pollinator-support plantings",
+
+          "Orchard understory systems where spread can be controlled",
+
+          "Perennial garden borders away from future excavation",
+
+          "Homesteads seeking a multipurpose biomass crop",
+
+          "Protected plantings where chickens cannot reach roots or crowns",
+
+          "Seasonal drying of small leaf quantities for controlled later use",
+
+          "Diversified forage systems where Comfrey is only one of several supplemental plants"
+        ],
+
+        lessSuitableUses: [
+          "Complete poultry-feed replacement",
+
+          "Primary protein production",
+
+          "Primary energy production",
+
+          "Primary calcium supplementation",
+
+          "Primary feed-cost reduction crop",
+
+          "Daily unrestricted poultry forage",
+
+          "Free-choice feeding",
+
+          "Dense living forage stands inside the chicken run",
+
+          "Young-chick feeding",
+
+          "Routine pullet supplementation",
+
+          "Sick-bird treatment",
+
+          "Liver-support treatment",
+
+          "Parasite treatment",
+
+          "Homemade medicinal preparations for chickens",
+
+          "Unformulated commercial poultry rations",
+
+          "Informal inclusion of dried leaf meal in complete feed",
+
+          "Temporary garden beds",
+
+          "Locations likely to be excavated or redesigned",
+
+          "Small spaces where permanent root persistence is unacceptable",
+
+          "Sites where plant identity is uncertain",
+
+          "Roadside or polluted growing locations",
+
+          "Areas exposed to pesticides or herbicides not approved for feed crops",
+
+          "Wet storage systems",
+
+          "Uncontrolled fermentation",
+
+          "Large-volume winter feed storage",
+
+          "Situations where feeding amounts cannot be observed or controlled"
+        ],
+
+        backyardRecommendation:
+          "Comfrey is best used by backyard chicken keepers as a permanent multipurpose homestead crop that supplies compost material, mulch, pollinator forage, and only limited poultry supplementation. Keep the planting outside the flock's unrestricted run, harvest leaves through a controlled cut-and-carry system, exclude roots and crowns, and offer only small occasional portions to healthy established adult chickens. An age-appropriate complete poultry ration should remain continuously available, and Comfrey use should be reduced or stopped whenever normal feed intake, droppings, behavior, body condition, egg production, or general health changes adversely.",
+
+        commercialRecommendation:
+          "Comfrey should not be adopted as a major commercial poultry-feed ingredient without qualified feed-formulation and toxicological review. Any commercial use would require confirmed botanical identity, cultivar and plant-part documentation, representative pyrrolizidine-alkaloid analysis, contaminant testing, controlled inclusion, complete nutrient formulation, quality-assurance procedures, batch traceability, storage controls, and compliance with applicable feed regulations. Research inclusion levels from individual poultry studies should not be transferred directly to commercial or backyard feeding programs."
+      },
+
+      storage: {
+        storageSummary:
+          "Fresh Comfrey leaves have poor storage value and should normally be fed, wilted briefly, composted, or used as mulch soon after harvest. Longer storage requires complete drying with strong airflow. Properly dried leaves may be stored in small labeled batches, but drying does not eliminate pyrrolizidine alkaloids and does not change the need for conservative feeding.",
+
+        storageSuitability:
+          "moderate-only-when-thoroughly-dried",
+
+        preferredStorageForms: [
+          {
+            form:
+              "Fresh Leaves for Immediate Use",
+
+            suitability:
+              "poor-for-storage",
+
+            explanation:
+              "Fresh Comfrey leaves contain very high moisture and should normally be offered or otherwise used shortly after harvest. They wilt, heat, ferment, slime, and mold readily when piled or enclosed."
+          },
+
+          {
+            form:
+              "Briefly Wilted Leaves",
+
+            suitability:
+              "very-short-term-only",
+
+            explanation:
+              "Leaves may be wilted briefly in a clean, shaded, well-ventilated location and used the same day. Wilting is a preparation step rather than a dependable storage method."
+          },
+
+          {
+            form:
+              "Whole Dried Leaves",
+
+            suitability:
+              "preferred",
+
+            explanation:
+              "Whole leaves dried completely until crisp are the preferred stored form because they remain easy to inspect, identify, measure, and discard if quality declines."
+          },
+
+          {
+            form:
+              "Coarsely Crumbled Dried Leaves",
+
+            suitability:
+              "good",
+
+            explanation:
+              "Fully dried leaves may be crumbled into coarse recognizable pieces after drying. Coarse material is easier to inspect and creates less dust than finely ground leaf meal."
+          },
+
+          {
+            form:
+              "Dried Leaf Flakes",
+
+            suitability:
+              "good-with-moisture-control",
+
+            explanation:
+              "Small dry leaf flakes may be stored in tightly managed batches when they remain crisp, cool, clean, and free from condensation."
+          },
+
+          {
+            form:
+              "Finely Ground Leaf Meal",
+
+            suitability:
+              "limited",
+
+            explanation:
+              "Fine meal has greater surface area, absorbs moisture readily, creates dust, hides small areas of mold or contamination, and is easier to overfeed. It should be produced only for controlled formulated use."
+          },
+
+          {
+            form:
+              "Frozen Fresh Leaves",
+
+            suitability:
+              "limited-and-generally-unnecessary",
+
+            explanation:
+              "Freezing may preserve leaf material temporarily, but thawed leaves become wet and fragile and must be used promptly. Freezing does not eliminate pyrrolizidine alkaloids."
+          }
+        ],
+
+        dryingRequirements: {
+          targetCondition:
+            "Leaves intended for enclosed storage should be uniformly crisp, cool, and dry throughout, with no flexible damp areas, cool moist centers, condensation, musty odor, heating, or soft stems. Thick stems should be removed or dried separately because they retain moisture longer than leaf blades.",
+
+          goodDryingPractices: [
+            "Harvest during dry weather after surface moisture has evaporated.",
+            "Use only clean, sound leaves.",
+            "Remove roots, crowns, damaged tissue, coarse stems, and contaminated material.",
+            "Dry leaves as soon as practical after harvest.",
+            "Arrange leaves in single or very shallow layers.",
+            "Maintain strong airflow around all leaf surfaces.",
+            "Use clean screens, racks, trays, or hanging bundles small enough to dry evenly.",
+            "Keep drying material protected from rain, dew, animals, dust, and direct contamination.",
+            "Use shade or moderate drying temperatures to prevent scorching.",
+            "Turn, separate, or rearrange leaves as needed.",
+            "Break apart clumps that trap moisture.",
+            "Remove thick petioles or stems when they slow drying.",
+            "Check the center of stacked or bundled material rather than judging only the outer leaves.",
+            "Continue drying until leaves are uniformly crisp.",
+            "Allow fully dried leaves to cool before placing them in containers.",
+            "Condition a small test batch in a clear container and inspect for condensation before sealing the full harvest.",
+            "Store only sound material that remains dry after cooling.",
+            "Keep fresh harvests separate from previously dried material."
+          ],
+
+          unsafeDryingPractices: [
+            "Piling fresh leaves deeply.",
+            "Drying wet leaves in an enclosed container.",
+            "Leaving harvested leaves packed in bags, buckets, carts, or tubs.",
+            "Drying directly on contaminated soil or dirty floors.",
+            "Allowing leaves to remain wet overnight without airflow.",
+            "Using large dense bundles that stay damp in the center.",
+            "Adding partially dried leaves to already dry material.",
+            "Sealing leaves while they are still warm.",
+            "Grinding leaves before they are completely dry.",
+            "Assuming surface dryness proves the stems and interior tissue are dry.",
+            "Using excessive heat that scorches or darkens the material.",
+            "Attempting to dry material that has already become slimy, sour, moldy, or fermented.",
+            "Allowing chickens, rodents, pets, wild birds, or insects access during drying.",
+            "Treating wilting as complete drying.",
+            "Assuming drying removes pyrrolizidine alkaloids."
+          ],
+
+          dryingFailureIndicators: [
+            "Leaves remain flexible rather than crisp.",
+            "Thick stems bend without snapping.",
+            "Material feels cool or damp inside a bundle.",
+            "Leaves stick together.",
+            "Condensation forms inside a test container.",
+            "A musty, sour, fermented, or unusual odor develops.",
+            "Material becomes warm after being piled or sealed.",
+            "Leaves darken abnormally.",
+            "White, gray, green, blue, or black fungal growth appears.",
+            "Fine dust has an unusual mold-like odor.",
+            "The container walls become damp.",
+            "Leaf meal clumps after storage.",
+            "Stored leaves soften after initially seeming dry.",
+            "Insects increase rapidly within the material."
+          ]
+        },
+
+        storageEnvironment: {
+          idealConditions: [
+            "Cool location",
+            "Dry air",
+            "Low humidity",
+            "Stable temperature",
+            "Protection from direct sunlight",
+            "Protection from rain and condensation",
+            "Clean shelving",
+            "Good room ventilation",
+            "Rodent-resistant storage area",
+            "Insect-controlled environment",
+            "Separation from chemicals, fuels, pesticides, and fertilizers",
+            "Containers raised above damp floors",
+            "Small batches that can be inspected easily",
+            "Clear labeling and inventory rotation"
+          ],
+
+          avoidConditions: [
+            "Warm humid rooms",
+            "Unventilated sheds with large temperature swings",
+            "Direct sunlight",
+            "Damp basements",
+            "Leaking roofs",
+            "Condensation-prone walls",
+            "Containers placed directly on concrete or soil",
+            "Open access by rodents or wild birds",
+            "Storage near manure, litter, compost leachate, or animal waste",
+            "Storage near gasoline, diesel fuel, oil, solvents, pesticides, herbicides, or fertilizer",
+            "Mixing old and new harvests",
+            "Large containers that conceal heating or mold",
+            "Frequent exposure to outdoor humidity",
+            "Areas where labels may be lost or damaged"
+          ]
+        },
+
+        containerGuidance: {
+          looseSeed: [
+            "For Comfrey, use this category for coarsely crumbled dried leaves or dried leaf flakes rather than seed.",
+            "Use clean, dry, food-safe containers.",
+            "Store only material that is fully cooled and uniformly crisp.",
+            "Use small containers rather than one large bulk container.",
+            "Avoid compressing dried leaves tightly.",
+            "Choose containers that prevent rodent, insect, dust, and moisture entry.",
+            "Clear containers may help reveal condensation, but they must be protected from light.",
+            "Reseal containers promptly after removing a portion.",
+            "Never return unused or damp material to the storage container.",
+            "Discard the entire affected batch when mold or unexplained moisture is present."
+          ],
+
+          wholeHeads: [
+            "For Comfrey, use this category for whole dried leaves rather than seed heads.",
+            "Whole dried leaves are preferred because their condition remains easy to inspect.",
+            "Store leaves loosely enough to prevent crushing and trapped moisture.",
+            "Use breathable temporary storage only when dryness is still being verified.",
+            "Move fully conditioned leaves into clean moisture-resistant containers.",
+            "Separate thick dried stems from leaf blades when stem moisture is uncertain.",
+            "Do not include roots, crown fragments, soil, or coarse green stems.",
+            "Inspect leaves for softening, spots, insects, webbing, or abnormal odor before feeding."
+          ],
+
+          kernelsAndProcessedSeed: [
+            "For Comfrey, use this category for finely crumbled leaf or leaf meal rather than kernels.",
+            "Process only leaves that are already fully dry and sound.",
+            "Use clean grinding or crumbling equipment.",
+            "Avoid creating unnecessary fine airborne dust.",
+            "Store processed material in small tightly managed batches.",
+            "Keep processed leaf meal especially dry because it absorbs moisture readily.",
+            "Do not mix new meal into an older batch.",
+            "Do not mix Comfrey meal into complete poultry feed during storage unless the ration was professionally formulated.",
+            "Discard caked, damp, musty, insect-infested, or discolored meal.",
+            "Remember that processing concentrates dry matter but does not remove pyrrolizidine alkaloids."
+          ]
+        },
+
+        inventoryManagement: {
+          guidance:
+            "Store only modest quantities that can be used conservatively and inspected frequently. Divide each harvest into small batches, keep different harvest dates and plant sources separate, use the oldest sound material first, and discard questionable material rather than attempting to salvage it. Because no universal long-term household storage duration has been verified, condition and inspection should determine whether a batch remains usable.",
+
+          recommendedLabelFields: [
+            "Crop name",
+            "Scientific name when known",
+            "Cultivar or plant source",
+            "Leaf-only confirmation",
+            "Harvest date",
+            "Drying start date",
+            "Drying completion date",
+            "Storage date",
+            "Fresh, whole dried, crumbled, or ground form",
+            "Harvest location",
+            "Chemical-treatment status",
+            "Batch number",
+            "Container number",
+            "Initial inspection date",
+            "Most recent inspection date",
+            "Observed moisture or quality concerns",
+            "Intended limited supplemental use",
+            "Warning that roots are not included",
+            "Warning that drying does not remove pyrrolizidine alkaloids"
+          ]
+        },
+
+        inspectionSchedule: {
+          initialStoragePeriod:
+            "Inspect newly stored dried Comfrey within the first 24 to 48 hours and again several times during the first one to two weeks. Early checks are important because residual moisture may migrate from thicker tissue into apparently dry leaves and create condensation, softening, heating, or mold.",
+
+          longTermStorage:
+            "After the batch remains stable, inspect it regularly and whenever the container is opened, moved, exposed to humid weather, or subjected to temperature changes. More frequent inspection is appropriate in warm or humid climates. Do not rely on a calendar alone; discard material whenever quality is uncertain.",
+
+          inspectionChecklist: [
+            "Container remains dry inside and outside.",
+            "No condensation is visible.",
+            "Leaves remain crisp.",
+            "Stems remain fully dry.",
+            "Material is cool rather than warm.",
+            "No musty, sour, fermented, rancid, or chemical odor is present.",
+            "No white, gray, green, blue, or black fungal growth is visible.",
+            "No unusual discoloration has developed.",
+            "No clumping or caking is present.",
+            "No insect larvae, webbing, droppings, or live infestation is present.",
+            "No rodent damage or contamination is present.",
+            "No water, chemical, manure, or litter contamination has occurred.",
+            "The label remains readable.",
+            "The batch identity and harvest date remain known.",
+            "The stored form still matches the intended controlled feeding use.",
+            "No roots or crown fragments are present.",
+            "The material has not been mixed with a questionable batch."
+          ]
+        },
+
+        storageLifeGuidance:
+          "A single dependable storage-life guarantee should not be assigned to home-dried Comfrey because actual stability depends on final moisture, stem thickness, drying uniformity, humidity, temperature, sanitation, container type, insect pressure, and inspection quality. Use properly dried material within a conservative seasonal rotation when possible, retain it only while it remains crisp, dry, cool, clean, and odor-free, and discard it at the first sign of moisture, heating, infestation, or mold. Storage duration does not reduce pyrrolizidine-alkaloid concern.",
+
+        disposalGuidance:
+          "Do not feed moldy, musty, damp, heated, fermented, chemically contaminated, rodent-contaminated, or unidentified stored Comfrey. Do not attempt to rescue questionable material by redrying, cooking, grinding, or mixing it with sound feed. Isolate it from poultry and other livestock. Dispose of contaminated material according to the type of contamination and local requirements; chemically contaminated material should not be composted casually. Sound excess Comfrey that was never intended for feeding may be used as ordinary mulch or compost material when it is free from prohibited chemicals, animal waste, and serious plant disease."
+      },
+
+      spoilageAndContamination: {
+        spoilageSummary:
+          "Fresh Comfrey leaves spoil quickly because of their high moisture content. Harvested foliage can wilt, heat, ferment, become slimy, or develop mold when piled, enclosed, or left uneaten. Dried Comfrey is more stable only when every part of the leaf and stem is completely dry before storage. Any moldy, musty, chemically contaminated, animal-waste-contaminated, or otherwise questionable material should be discarded rather than fed.",
+
+        primarySpoilageRisks: [
+          {
+            risk:
+              "Heating and Fermentation of Fresh Leaves",
+
+            likelihood:
+              "high-when-piled-or-enclosed",
+
+            primaryCauses: [
+              "Fresh leaves placed in deep piles",
+              "Poor airflow",
+              "Warm weather",
+              "Leaves packed into bags, buckets, tubs, or containers",
+              "Harvesting wet foliage",
+              "Leaving cut leaves uneaten for too long",
+              "Mixing fresh leaves with already wilting material"
+            ],
+
+            warningSigns: [
+              "Leaves feel warm in the center of the pile",
+              "Sour or fermented odor",
+              "Darkening foliage",
+              "Wet compressed leaf layers",
+              "Softening tissue",
+              "Bubbles or liquid seepage",
+              "Rapid collapse of the leaf material"
+            ],
+
+            response:
+              "Do not feed heated or fermented Comfrey. Remove it from the flock immediately and discard it. Offer future fresh portions in much smaller amounts and avoid piling harvested leaves."
+          },
+
+          {
+            risk:
+              "Slime and Bacterial Decay",
+
+            likelihood:
+              "high-in-wet-or-warm-conditions",
+
+            primaryCauses: [
+              "High leaf moisture",
+              "Rain-soaked harvests",
+              "Poor drainage",
+              "Fresh leaves placed on wet litter",
+              "Leaves stored in sealed containers",
+              "Warm stagnant conditions",
+              "Delayed removal of leftovers"
+            ],
+
+            warningSigns: [
+              "Slimy leaf surfaces",
+              "Soft translucent tissue",
+              "Foul or sour odor",
+              "Sticky residue",
+              "Dark water-soaked patches",
+              "Leaves adhering together",
+              "Rapid tissue breakdown"
+            ],
+
+            response:
+              "Discard slimy or decaying material. Do not rinse and reuse it. Clean the feeder or contact surface and reduce the amount offered at future feedings."
+          },
+
+          {
+            risk:
+              "Mold Growth on Fresh or Wilted Leaves",
+
+            likelihood:
+              "moderate-to-high",
+
+            primaryCauses: [
+              "Holding fresh leaves too long",
+              "Inadequate airflow",
+              "High humidity",
+              "Dense piles",
+              "Wet harvesting conditions",
+              "Contaminated drying surfaces",
+              "Mixing old and new foliage"
+            ],
+
+            warningSigns: [
+              "White, gray, green, blue, or black fuzzy growth",
+              "Musty odor",
+              "Dust-like spores",
+              "Unusual spotting",
+              "Soft or collapsing tissue",
+              "Warm material",
+              "Birds refusing previously accepted leaves"
+            ],
+
+            response:
+              "Discard the entire affected batch. Do not remove only the visibly moldy portion because fungal growth may extend beyond what can be seen."
+          },
+
+          {
+            risk:
+              "Incomplete Drying Before Storage",
+
+            likelihood:
+              "high-with-thick-stems-or-dense-layers",
+
+            primaryCauses: [
+              "Judging dryness only by the outer leaf surface",
+              "Leaving thick stems attached",
+              "Insufficient airflow",
+              "Drying in deep layers",
+              "High humidity",
+              "Sealing leaves while warm",
+              "Grinding before drying is complete"
+            ],
+
+            warningSigns: [
+              "Leaves soften after storage",
+              "Stems remain flexible",
+              "Condensation inside the container",
+              "Cool damp centers",
+              "Clumping",
+              "Musty odor",
+              "Heating inside the stored batch"
+            ],
+
+            response:
+              "Discard material showing condensation, heating, mustiness, or mold. Do not attempt to salvage questionable leaves by redrying them."
+          },
+
+          {
+            risk:
+              "Moisture Reabsorption During Storage",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Opening containers in humid weather",
+              "Poorly sealed containers",
+              "Storage near damp floors or walls",
+              "Large temperature swings",
+              "Returning wet utensils or leaves to the container",
+              "Repeated exposure to outdoor air",
+              "Mixing dry leaves with newer material"
+            ],
+
+            warningSigns: [
+              "Previously crisp leaves become flexible",
+              "Leaf meal begins to cake",
+              "Condensation appears",
+              "Musty odor develops",
+              "Stored material feels cool and damp",
+              "Insects increase",
+              "Small mold spots appear"
+            ],
+
+            response:
+              "Discard any batch with uncertain moisture quality, mold, heating, or musty odor. Improve container sealing and store future batches in smaller units."
+          },
+
+          {
+            risk:
+              "Insect Infestation",
+
+            likelihood:
+              "moderate",
+
+            primaryCauses: [
+              "Open or poorly sealed containers",
+              "Storing leaves near infested grain or feed",
+              "Failure to inspect harvested material",
+              "Warm storage temperatures",
+              "Long storage periods",
+              "Mixing old and new batches"
+            ],
+
+            warningSigns: [
+              "Live insects",
+              "Larvae",
+              "Webbing",
+              "Fine debris",
+              "Small holes in leaves",
+              "Insect droppings",
+              "Unexpected powder accumulation"
+            ],
+
+            response:
+              "Discard heavily infested or contaminated material. Clean the storage area, inspect nearby feed, and use sealed pest-resistant containers for future batches."
+          },
+
+          {
+            risk:
+              "Rodent Contamination",
+
+            likelihood:
+              "moderate-with-unprotected-storage",
+
+            primaryCauses: [
+              "Open bags or containers",
+              "Storage on floors",
+              "Rodent access to sheds or feed rooms",
+              "Damaged container lids",
+              "Nearby food sources",
+              "Poor sanitation"
+            ],
+
+            warningSigns: [
+              "Droppings",
+              "Urine staining",
+              "Gnaw marks",
+              "Nesting material",
+              "Unusual odor",
+              "Tracks or disturbed dust",
+              "Damaged packaging"
+            ],
+
+            response:
+              "Discard any material exposed to rodents. Do not feed around contaminated portions. Clean and sanitize the storage area and use rodent-resistant containers."
+          }
+        ],
+
+        contaminationRisks: [
+          {
+            contaminant:
+              "Pesticides and Herbicides",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Known recent treatment",
+              "Spray drift from nearby areas",
+              "Chemical odor",
+              "Visible spray residue",
+              "Plant injury after nearby herbicide use",
+              "Unknown maintenance history"
+            ],
+
+            guidance:
+              "Do not feed treated or drift-exposed Comfrey unless the product label specifically permits use on animal-feed crops and all harvest restrictions have been satisfied."
+          },
+
+          {
+            contaminant:
+              "Roadside Pollution",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Planting beside a roadway",
+              "Oil or fuel residue",
+              "Road salt exposure",
+              "Dust and exhaust deposits",
+              "Litter accumulation",
+              "Stormwater runoff"
+            ],
+
+            guidance:
+              "Avoid harvesting Comfrey from roadsides, parking areas, drainage ditches, or locations exposed to vehicle pollution."
+          },
+
+          {
+            contaminant:
+              "Animal Feces and Urine",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Visible droppings",
+              "Urine odor",
+              "Leaves growing beneath roosting areas",
+              "Wild-bird activity",
+              "Rodent evidence",
+              "Foliage touching contaminated bedding"
+            ],
+
+            guidance:
+              "Discard contaminated leaves. Washing does not reliably make heavily fecal-contaminated foliage suitable for feeding."
+          },
+
+          {
+            contaminant:
+              "Soil and Mud",
+
+            riskLevel:
+              "moderate-to-high",
+
+            identificationClues: [
+              "Leaves harvested at soil level",
+              "Rain splash",
+              "Mud on leaf undersides",
+              "Root or crown fragments",
+              "Grit embedded in damaged tissue"
+            ],
+
+            guidance:
+              "Harvest above the soil surface and discard heavily soiled material. Do not include roots or crowns."
+          },
+
+          {
+            contaminant:
+              "Fuel, Oil, Solvents, and Workshop Chemicals",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Chemical odor",
+              "Oily sheen",
+              "Planting near equipment storage",
+              "Spill history",
+              "Discolored runoff",
+              "Visible residue"
+            ],
+
+            guidance:
+              "Do not feed any material exposed to fuels, oils, solvents, paints, cleaners, or unknown workshop chemicals."
+          },
+
+          {
+            contaminant:
+              "Fertilizer Spills or Concentrated Amendments",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Visible granules on leaves",
+              "Localized leaf burn",
+              "Recent spill",
+              "Strong chemical residue",
+              "Unknown concentrated soil treatment"
+            ],
+
+            guidance:
+              "Discard directly contaminated foliage. Do not assume rinsing removes all risk."
+          },
+
+          {
+            contaminant:
+              "Mold and Fungal Growth",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Fuzzy growth",
+              "Musty odor",
+              "Unusual dust",
+              "Soft wet patches",
+              "Darkening",
+              "Heating",
+              "Clumping"
+            ],
+
+            guidance:
+              "Discard the entire affected batch. Never blend moldy Comfrey with sound feed."
+          },
+
+          {
+            contaminant:
+              "Unidentified Plant Material",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Mixed weeds in the harvest",
+              "Uncertain species identification",
+              "Unknown seed-grown plants",
+              "Different leaf shapes within the batch",
+              "Unknown harvest source"
+            ],
+
+            guidance:
+              "Feed only positively identified Comfrey leaves. Remove all mixed or uncertain plant material."
+          },
+
+          {
+            contaminant:
+              "Roots and Crown Tissue",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Brown or pale root fragments",
+              "Dense crown pieces",
+              "Soil-covered plant bases",
+              "Whole uprooted plants",
+              "Root cuttings mixed with leaves"
+            ],
+
+            guidance:
+              "Exclude roots, crowns, and root cuttings from poultry feeding because they warrant greater pyrrolizidine-alkaloid concern."
+          },
+
+          {
+            contaminant:
+              "Wastewater or Floodwater",
+
+            riskLevel:
+              "high",
+
+            identificationClues: [
+              "Recent flooding",
+              "Sewage odor",
+              "Drainage from livestock areas",
+              "Industrial runoff",
+              "Standing contaminated water",
+              "Unknown upstream sources"
+            ],
+
+            guidance:
+              "Do not feed Comfrey exposed to sewage, floodwater, manure runoff, or unknown wastewater."
+          }
+        ],
+
+        spoilageIndicators: [
+          {
+            indicator:
+              "Musty or Moldy Odor",
+
+            action:
+              "Discard the entire batch and inspect nearby stored feed."
+          },
+
+          {
+            indicator:
+              "Visible Mold",
+
+            action:
+              "Do not feed or attempt to salvage the material."
+          },
+
+          {
+            indicator:
+              "Slimy Leaf Surfaces",
+
+            action:
+              "Discard immediately and clean the feeding container."
+          },
+
+          {
+            indicator:
+              "Sour or Fermented Odor",
+
+            action:
+              "Remove from the flock and discard."
+          },
+
+          {
+            indicator:
+              "Heating Inside a Pile or Container",
+
+            action:
+              "Treat the material as spoiled and discard it."
+          },
+
+          {
+            indicator:
+              "Condensation Inside Storage",
+
+            action:
+              "Discard questionable material and review the drying process."
+          },
+
+          {
+            indicator:
+              "Softening of Previously Crisp Leaves",
+
+            action:
+              "Assume moisture reabsorption and inspect carefully for mold or mustiness."
+          },
+
+          {
+            indicator:
+              "Clumping or Caking of Leaf Meal",
+
+            action:
+              "Do not feed when moisture exposure or spoilage cannot be ruled out."
+          },
+
+          {
+            indicator:
+              "Rodent Droppings or Gnawing",
+
+            action:
+              "Discard the full exposed batch and secure the storage area."
+          },
+
+          {
+            indicator:
+              "Chemical Odor or Oily Residue",
+
+            action:
+              "Do not feed or compost casually; dispose of it according to the contamination source."
+          },
+
+          {
+            indicator:
+              "Unknown Plant Material Mixed Into the Batch",
+
+            action:
+              "Discard the unidentified material and any batch that cannot be sorted confidently."
+          },
+
+          {
+            indicator:
+              "Roots or Crown Fragments Present",
+
+            action:
+              "Remove the entire questionable portion and do not feed root-containing material."
+          }
+        ],
+
+        sensoryInspectionLimitations:
+          "Visual inspection, smell, texture, and temperature checks are useful but cannot detect every toxin, pesticide residue, pyrrolizidine-alkaloid concentration, pathogen, or environmental contaminant. Material may appear normal while still being unsuitable because of its plant identity, treatment history, harvest location, or cumulative toxicological risk.",
+
+        salvageWarning:
+          "Do not attempt to make spoiled or contaminated Comfrey safe by washing, redrying, cooking, fermenting, grinding, freezing, or mixing it with sound feed. Discard questionable material. Processing does not remove the crop's underlying pyrrolizidine-alkaloid concern."
+      },
+
+      commonFeedingMistakes: {
+        mistakeSummary:
+          "The most serious Comfrey-feeding mistakes involve treating it as unrestricted forage, feeding roots, assuming a named cultivar is alkaloid-free, allowing it to replace complete feed, or trying to rescue spoiled material. Comfrey should remain a limited leaf-only supplement for established adult chickens.",
+
+        mistakes: [
+          {
+            mistake:
+              "Allowing Unrestricted Access to Living Comfrey",
+
+            whyItHappens:
+              "Comfrey grows vigorously and is often described as a productive forage or livestock plant, leading keepers to assume chickens can regulate their own intake safely.",
+
+            whyItIsAProblem:
+              "Unrestricted access prevents intake control, increases cumulative exposure, allows crown damage, exposes roots, and may cause birds to consume less complete feed.",
+
+            correction:
+              "Keep permanent plants outside the flock's unrestricted run and use a controlled cut-and-carry system."
+          },
+
+          {
+            mistake:
+              "Feeding Roots or Crown Tissue",
+
+            whyItHappens:
+              "Whole plants may be pulled during thinning, transplanting, or garden cleanup and offered without separating the plant parts.",
+
+            whyItIsAProblem:
+              "Roots generally warrant greater pyrrolizidine-alkaloid concern and may also carry soil, decay, or chemical contamination.",
+
+            correction:
+              "Feed leaves only. Keep all roots, crowns, and root cuttings away from poultry."
+          },
+
+          {
+            mistake:
+              "Assuming Bocking 14 Is Alkaloid-Free",
+
+            whyItHappens:
+              "Bocking 14 is sterile and widely promoted as a productive garden cultivar, so sterility is sometimes confused with feeding safety.",
+
+            whyItIsAProblem:
+              "Sterility refers to seed production and does not prove the plant is free of pyrrolizidine alkaloids.",
+
+            correction:
+              "Apply the same conservative leaf-only portion control to Bocking 14 as to other Comfrey types."
+          },
+
+          {
+            mistake:
+              "Using Comfrey as a Primary Protein Source",
+
+            whyItHappens:
+              "Dried Comfrey may show a moderate or high crude-protein value in published analyses.",
+
+            whyItIsAProblem:
+              "Crude protein alone does not establish digestible amino-acid balance, dietary adequacy, or toxicological safety.",
+
+            correction:
+              "Use complete poultry feed as the nutritional foundation and treat Comfrey only as a minor leafy supplement."
+          },
+
+          {
+            mistake:
+              "Replacing Complete Feed With Large Leaf Portions",
+
+            whyItHappens:
+              "The crop is abundant, homegrown, and inexpensive after establishment.",
+
+            whyItIsAProblem:
+              "Large amounts can dilute energy, amino acids, calcium, sodium, vitamins, and trace minerals while increasing cumulative alkaloid exposure.",
+
+            correction:
+              "Offer only a small measured portion after confirming that complete feed remains available and normally consumed."
+          },
+
+          {
+            mistake:
+              "Feeding Comfrey Daily Because Birds Like It",
+
+            whyItHappens:
+              "Rapid consumption is interpreted as proof that the crop is safe or nutritionally needed.",
+
+            whyItIsAProblem:
+              "Palatability does not establish safety, and cumulative exposure may matter more than the reaction to one serving.",
+
+            correction:
+              "Keep use occasional, rotate with other safe enrichment, and do not increase frequency merely because birds consume it quickly."
+          },
+
+          {
+            mistake:
+              "Copying Research Inclusion Rates Into a Backyard Ration",
+
+            whyItHappens:
+              "Published poultry studies may report specific percentages of Comfrey leaf meal.",
+
+            whyItIsAProblem:
+              "Research diets are formulated and controlled, while Comfrey chemistry, bird type, study duration, and ration composition may differ substantially from backyard conditions.",
+
+            correction:
+              "Do not apply experimental percentages informally. Meaningful ration inclusion requires professional formulation and toxicological review."
+          },
+
+          {
+            mistake:
+              "Assuming Drying Removes Pyrrolizidine Alkaloids",
+
+            whyItHappens:
+              "Drying improves storage and changes the appearance and texture of the leaves.",
+
+            whyItIsAProblem:
+              "Drying removes water but should not be represented as reliably neutralizing the crop's primary toxicological concern.",
+
+            correction:
+              "Use dried leaves only in small measured amounts and maintain the same conservative exposure limits used for fresh leaves."
+          },
+
+          {
+            mistake:
+              "Mixing Fine Comfrey Meal Into Complete Feed",
+
+            whyItHappens:
+              "Grinding appears to make the ingredient easier to distribute evenly.",
+
+            whyItIsAProblem:
+              "Birds cannot avoid the ingredient, the complete ration is diluted, intake becomes harder to evaluate, and fine meal is easy to overuse.",
+
+            correction:
+              "Keep Comfrey separate from complete feed unless the ration has been professionally formulated."
+          },
+
+          {
+            mistake:
+              "Offering Comfrey to Young Chicks",
+
+            whyItHappens:
+              "Leaves are viewed as a natural food or harmless green treat.",
+
+            whyItIsAProblem:
+              "Chicks have small body size and high nutrient requirements and should not have their complete starter intake diluted.",
+
+            correction:
+              "Do not deliberately feed meaningful Comfrey amounts to young chicks."
+          },
+
+          {
+            mistake:
+              "Using Comfrey as Medicine",
+
+            whyItHappens:
+              "Comfrey has a long history of traditional topical and herbal use.",
+
+            whyItIsAProblem:
+              "Feeding it as a treatment may increase exposure, delay proper diagnosis, and create risk for birds with liver or other health problems.",
+
+            correction:
+              "Do not use Comfrey to treat illness, wounds, parasites, digestive problems, or nutritional deficiencies. Seek appropriate veterinary guidance."
+          },
+
+          {
+            mistake:
+              "Leaving Fresh Leaves in the Run Too Long",
+
+            whyItHappens:
+              "Large leaves appear sturdy and may be assumed to remain safe for the entire day.",
+
+            whyItIsAProblem:
+              "Fresh leaves can become trampled, manure-contaminated, heated, slimy, fermented, or moldy.",
+
+            correction:
+              "Offer smaller portions and remove leftovers before spoilage or contamination begins."
+          },
+
+          {
+            mistake:
+              "Storing Leaves Before They Are Fully Dry",
+
+            whyItHappens:
+              "The leaf blades may feel dry even while thick stems or interior tissue retain moisture.",
+
+            whyItIsAProblem:
+              "Residual moisture can cause condensation, heating, fermentation, and mold after sealing.",
+
+            correction:
+              "Dry leaves until uniformly crisp, remove thick stems when needed, cool the batch, and condition a test sample before full storage."
+          },
+
+          {
+            mistake:
+              "Trying to Salvage Moldy Material",
+
+            whyItHappens:
+              "Only part of the batch may show visible mold, and the remaining material appears usable.",
+
+            whyItIsAProblem:
+              "Fungal growth and contamination may extend beyond visible areas.",
+
+            correction:
+              "Discard the entire affected batch. Do not wash, redry, cook, grind, or blend it with sound material."
+          },
+
+          {
+            mistake:
+              "Harvesting From Treated or Polluted Areas",
+
+            whyItHappens:
+              "Comfrey may be growing near roads, buildings, fence lines, orchards, or areas receiving chemical maintenance.",
+
+            whyItIsAProblem:
+              "Leaves can carry pesticide residue, herbicide drift, fuel, road pollution, animal waste, or contaminated runoff.",
+
+            correction:
+              "Harvest only from known clean locations with a documented treatment history."
+          },
+
+          {
+            mistake:
+              "Assuming All Comfrey Plants Are Chemically Identical",
+
+            whyItHappens:
+              "Different species and cultivars look similar and share the same common name.",
+
+            whyItIsAProblem:
+              "Species, cultivar, plant part, age, environment, and growing conditions may affect chemical composition.",
+
+            correction:
+              "Positively identify the plant and never use cultivar identity to justify unrestricted feeding."
+          }
+        ]
+      },
+
+      troubleshooting: {
+        chickensIgnoreFreshLeaves: {
+          likelyCause:
+            "The birds may be unfamiliar with Comfrey, may dislike the texture, may already be satisfied by their complete feed, or may simply prefer other available foods.",
+
+          possibleCauses: [
+            "The crop is being offered for the first time.",
+            "Leaves are too large or coarse.",
+            "Leaves are wilted, damaged, dirty, or old.",
+            "The flock has access to more familiar forage.",
+            "The birds have already eaten their normal ration.",
+            "Individual birds differ in plant preference.",
+            "The plant may not be positively identified as the same material previously accepted."
+          ],
+
+          recommendedActions: [
+            "Do not force consumption.",
+            "Confirm the plant is positively identified Comfrey.",
+            "Offer one or two clean young leaves rather than a large pile.",
+            "Secure a leaf for supervised pecking or chop it into manageable pieces.",
+            "Keep complete feed continuously available.",
+            "Remove rejected leaves before they spoil.",
+            "Accept that some flocks may show little interest in Comfrey."
+          ]
+        },
+
+        birdsConsumeComfreyTooQuickly: {
+          possibleInterpretations: [
+            "The flock finds the leaves highly palatable.",
+            "Dominant birds may be consuming most of the portion.",
+            "The birds may be responding to novelty rather than nutritional need.",
+            "Normal complete-feed access may be inadequate or temporarily interrupted.",
+            "The portion may be too concentrated in one feeding location."
+          ],
+
+          recommendedActions: [
+            "Do not immediately offer a second portion.",
+            "Confirm that complete poultry feed is available.",
+            "Use several small feeding locations.",
+            "Observe whether one or two dominant birds consume most of the leaves.",
+            "Reduce the amount offered at the next feeding.",
+            "Keep future use occasional rather than increasing frequency.",
+            "Remember that rapid consumption does not establish safety."
+          ]
+        },
+
+        completeFeedConsumptionDeclines: {
+          likelyCause:
+            "Too much Comfrey or too many other supplements may be displacing the flock's balanced complete ration.",
+
+          possibleCauses: [
+            "Comfrey portions are too large.",
+            "Comfrey is being offered before the birds eat complete feed.",
+            "Multiple treats or forage supplements are being offered on the same day.",
+            "Fresh leaves are available continuously.",
+            "Comfrey has been mixed into the complete ration.",
+            "The complete feed may be stale, spoiled, poorly stored, or otherwise less appealing.",
+            "Illness or environmental stress may be reducing appetite."
+          ],
+
+          recommendedActions: [
+            "Stop Comfrey and other nonessential supplements temporarily.",
+            "Provide fresh age-appropriate complete poultry feed.",
+            "Inspect the complete feed for moisture, mold, insects, rancidity, or contamination.",
+            "Confirm normal access to clean water.",
+            "Observe each bird for reduced appetite, weakness, or illness.",
+            "Resume only a much smaller occasional leaf portion after normal feed consumption is restored.",
+            "Seek veterinary guidance when appetite remains reduced."
+          ]
+        },
+
+        oneBirdMonopolizesThePortion: {
+          likelyCause:
+            "The supplement is concentrated in one location where a dominant bird can guard it.",
+
+          recommendedActions: [
+            "Divide the portion among several widely separated feeding stations.",
+            "Hang separate leaves in different parts of the run.",
+            "Keep portions small and supervised.",
+            "Ensure timid birds can reach complete feed without harassment.",
+            "Do not increase the total Comfrey amount merely to ensure every bird receives some.",
+            "Remove remaining foliage after the supervised feeding period."
+          ]
+        },
+
+        looseOrChangedDroppingsAfterFeeding: {
+          possibleCauses: [
+            "The birds consumed more fresh leafy material than usual.",
+            "The moisture and fiber content caused a temporary manure change.",
+            "Another new feed or treat was introduced at the same time.",
+            "Spoiled, contaminated, or wilted material was consumed.",
+            "The flock may have an unrelated digestive or health problem."
+          ],
+
+          recommendedActions: [
+            "Stop feeding Comfrey.",
+            "Return the flock to its normal complete ration and clean water.",
+            "Inspect the remaining leaves and storage supply.",
+            "Discard any questionable material.",
+            "Avoid introducing other new supplements during observation.",
+            "Monitor appetite, activity, hydration, and droppings.",
+            "Seek veterinary guidance for persistent diarrhea, blood, weakness, dehydration, or other signs of illness."
+          ]
+        },
+
+        birdsBecomeQuietOrWeak: {
+          likelyCause:
+            "Weakness or reduced activity is not a normal expected response to Comfrey feeding and may indicate illness, excessive dietary displacement, contamination, or another urgent problem.",
+
+          recommendedActions: [
+            "Stop Comfrey and all nonessential supplements immediately.",
+            "Remove the remaining material from the flock.",
+            "Provide fresh complete feed and clean water.",
+            "Separate and closely observe affected birds when appropriate.",
+            "Check for heat stress, cold stress, injury, parasites, toxic exposure, or unrelated disease.",
+            "Preserve the plant identity and feeding history for the veterinarian.",
+            "Contact a poultry veterinarian or animal poison resource promptly when toxic exposure is possible."
+          ]
+        },
+
+        eggProductionDeclines: {
+          possibleCauses: [
+            "Complete-feed intake has been displaced by supplements.",
+            "The flock is consuming insufficient energy, protein, calcium, or other nutrients.",
+            "Heat, cold, molt, broodiness, age, stress, parasites, or illness may be involved.",
+            "Water access may be inadequate.",
+            "The timing may be coincidental and unrelated to Comfrey."
+          ],
+
+          recommendedActions: [
+            "Stop Comfrey and other dietary extras temporarily.",
+            "Confirm unrestricted access to an appropriate layer ration.",
+            "Confirm clean water is always available.",
+            "Review all treats and forage sources rather than evaluating Comfrey alone.",
+            "Observe shell quality, appetite, body condition, behavior, and molt status.",
+            "Investigate environmental and health causes.",
+            "Seek veterinary guidance when the decline is unexplained or accompanied by illness."
+          ]
+        },
+
+        eggshellQualityWorsens: {
+          possibleCauses: [
+            "Balanced layer feed is being diluted by excessive supplements.",
+            "Calcium intake may be inadequate.",
+            "Birds may not be consuming enough complete feed.",
+            "Heat stress, age, disease, or reproductive problems may be involved.",
+            "Comfrey has been incorrectly treated as a reliable calcium replacement."
+          ],
+
+          recommendedActions: [
+            "Stop or sharply reduce Comfrey.",
+            "Restore normal layer-feed consumption.",
+            "Provide an appropriate separate calcium source when suitable for the flock.",
+            "Confirm continuous clean-water access.",
+            "Do not rely on Comfrey to correct calcium or shell-quality problems.",
+            "Seek veterinary guidance for persistent shell abnormalities."
+          ]
+        },
+
+        freshLeavesHeatAfterHarvest: {
+          likelyCauses: [
+            "Leaves were piled too deeply.",
+            "The harvest was placed in a bag, bucket, or enclosed container.",
+            "Wet foliage was harvested.",
+            "The material was left in warm conditions without airflow.",
+            "Too much foliage was harvested at one time."
+          ],
+
+          recommendedActions: [
+            "Do not feed the heated material.",
+            "Remove it from poultry access.",
+            "Discard it rather than attempting to cool and reuse it.",
+            "Harvest smaller amounts in the future.",
+            "Spread leaves in a single or shallow layer.",
+            "Use harvested foliage promptly.",
+            "Keep fresh leaves out of enclosed containers."
+          ]
+        },
+
+        freshLeavesBecomeSlimy: {
+          likelyCause:
+            "The leaves have begun bacterial decay because of moisture, warmth, poor airflow, contamination, or excessive holding time.",
+
+          recommendedAction:
+            "Discard the leaves immediately, clean the feeding or storage surface, and offer smaller freshly harvested portions in the future."
+        },
+
+        driedLeavesBecomeSoft: {
+          possibleCauses: [
+            "The leaves were not fully dry before storage.",
+            "Thick stems retained moisture.",
+            "The container admitted humid air.",
+            "Temperature changes produced condensation.",
+            "A damp utensil or newer harvest was introduced.",
+            "The storage area is too humid."
+          ],
+
+          recommendedActions: [
+            "Open and inspect the batch carefully.",
+            "Check for condensation, heating, mustiness, clumping, insects, and mold.",
+            "Discard the batch whenever quality is uncertain.",
+            "Do not feed material with musty odor or fungal growth.",
+            "Do not assume redrying makes spoiled material safe.",
+            "Review drying and container practices before storing another batch."
+          ]
+        },
+
+        condensationAppearsInStorageContainer: {
+          likelyCause:
+            "Residual moisture remained in the leaves, the material was sealed while warm, or changing temperatures caused moisture to condense.",
+
+          recommendedActions: [
+            "Do not feed the batch until its condition has been evaluated.",
+            "Inspect for heating, softening, mustiness, clumping, and mold.",
+            "Discard questionable material.",
+            "Do not mix it with a sound batch.",
+            "Dry future leaves more thoroughly.",
+            "Cool dried leaves completely before sealing.",
+            "Use a small conditioning sample before storing the full harvest."
+          ]
+        },
+
+        storedLeavesDevelopMustyOdor: {
+          likelyCause:
+            "Moisture exposure and fungal growth are likely even when visible mold is limited or absent.",
+
+          recommendedAction:
+            "Discard the entire batch. Do not feed, wash, redry, cook, grind, or mix it with sound material."
+        },
+
+        insectsAppearInStoredLeaves: {
+          possibleCauses: [
+            "The leaves or container were infested before storage.",
+            "The container was not sealed adequately.",
+            "The batch was stored near infested grain or poultry feed.",
+            "Warm conditions supported insect reproduction.",
+            "Old and new batches were mixed."
+          ],
+
+          recommendedActions: [
+            "Isolate the affected container.",
+            "Inspect nearby stored feed and dried crops.",
+            "Discard heavily infested or contaminated material.",
+            "Clean the storage area thoroughly.",
+            "Use clean pest-resistant containers.",
+            "Store future batches separately by harvest date."
+          ]
+        },
+
+        rootsWereAccidentallyIncluded: {
+          likelyCause:
+            "The plant was uprooted, harvested too close to the crown, or processed without separating the leaves from underground tissue.",
+
+          recommendedActions: [
+            "Do not feed the affected portion.",
+            "Remove all roots, crown pieces, and soil-contaminated material.",
+            "Discard the batch when separation cannot be completed confidently.",
+            "Harvest future leaves above the soil surface.",
+            "Keep uprooted plants and root divisions away from poultry.",
+            "Do not assume drying or cooking makes roots appropriate for feeding."
+          ]
+        },
+
+        plantIdentityIsUncertain: {
+          likelyCause:
+            "The plant came from an unknown source, was grown from unidentified seed, or was mixed with similar-looking weeds or other species.",
+
+          recommendedAction:
+            "Do not feed it. Confirm botanical identity before any poultry use and discard mixed material that cannot be identified confidently."
+        },
+
+        comfreyWasExposedToSprayDrift: {
+          possibleCauses: [
+            "Herbicide or pesticide application occurred nearby.",
+            "Wind carried spray into the planting.",
+            "The treatment history of the property is unknown.",
+            "A neighboring property or roadside crew treated adjacent vegetation."
+          ],
+
+          recommendedActions: [
+            "Do not harvest or feed the exposed foliage.",
+            "Identify the product when possible.",
+            "Follow all product-label harvest restrictions.",
+            "Do not rely on washing to remove systemic or unknown residues.",
+            "Discard the foliage when the chemical and exposure level cannot be confirmed."
+          ]
+        },
+
+        flockHasContinuousAccessToThePlant: {
+          likelyCause:
+            "The Comfrey was planted inside the run or the protective barrier has failed.",
+
+          recommendedActions: [
+            "Restrict access to the planting.",
+            "Inspect for exposed roots and damaged crowns.",
+            "Move to a cut-and-carry system.",
+            "Repair or enlarge the forage cage or fence.",
+            "Observe whether complete-feed consumption returns to normal.",
+            "Avoid placing new permanent Comfrey plantings in unrestricted poultry areas."
+          ]
+        },
+
+        householdHasTooMuchComfreyBiomass: {
+          likelyCause:
+            "Established Comfrey can produce more foliage than a flock can use safely as a limited supplement.",
+
+          recommendedActions: [
+            "Do not increase poultry intake merely to use the harvest.",
+            "Use excess leaves as compost material.",
+            "Apply sound foliage as mulch where appropriate.",
+            "Use it in orchard or biomass-management systems.",
+            "Harvest less frequently when the material is not needed.",
+            "Maintain poultry feeding as a minor use rather than the primary disposal method."
+          ]
+        }
+      },
+
+      faq: [
+        {
+          question:
+            "Can chickens eat Comfrey leaves?",
+
+          answer:
+            "Established adult chickens may be offered small, occasional portions of clean, positively identified Comfrey leaves. Comfrey should remain a limited supplement rather than a staple, and an age-appropriate complete poultry ration should remain the flock's nutritional foundation."
+        },
+
+        {
+          question:
+            "Are Comfrey roots safe for chickens?",
+
+          answer:
+            "Roots and crowns should not be fed. Root tissue generally warrants greater concern for pyrrolizidine alkaloids and may also carry soil, decay, or environmental contamination. Use leaves only."
+        },
+
+        {
+          question:
+            "How much Comfrey can I feed my chickens?",
+
+          answer:
+            "There is no universally established safe backyard percentage or serving size that applies to every flock, plant source, cultivar, and feeding form. Use a small, measured, occasional leaf portion that does not reduce complete-feed consumption."
+        },
+
+        {
+          question:
+            "Can chickens eat Comfrey every day?",
+
+          answer:
+            "Routine unrestricted daily feeding is not recommended. Repeated exposure may be more important than the response to a single serving, and daily use can displace balanced feed. Occasional controlled use is the more conservative approach."
+        },
+
+        {
+          question:
+            "Is Bocking 14 Comfrey safe for chickens?",
+
+          answer:
+            "Bocking 14 is a sterile cultivar, but sterility does not mean it is free from pyrrolizidine alkaloids. It should still be treated conservatively as a leaf-only, limited supplement."
+        },
+
+        {
+          question:
+            "Does drying Comfrey remove pyrrolizidine alkaloids?",
+
+          answer:
+            "Drying removes moisture and improves storage, but it should not be presented as reliably eliminating pyrrolizidine alkaloids. Dried material still requires conservative portion control."
+        },
+
+        {
+          question:
+            "Can I grind dried Comfrey into chicken feed?",
+
+          answer:
+            "Finely ground Comfrey should not be mixed into complete feed by guesswork. Grinding makes it easier to overuse, prevents birds from avoiding the ingredient, and dilutes the formulated ration. Meaningful ration inclusion requires professional formulation and toxicological review."
+        },
+
+        {
+          question:
+            "Can Comfrey replace part of my chickens' protein feed?",
+
+          answer:
+            "Comfrey should not be relied upon as a primary protein replacement. A crude-protein value does not prove that the crop supplies balanced digestible amino acids or that a particular inclusion rate is appropriate and safe."
+        },
+
+        {
+          question:
+            "Can I feed Comfrey to baby chicks?",
+
+          answer:
+            "Meaningful Comfrey supplementation is not recommended for young chicks. Chicks have very high nutrient requirements relative to body size and should consume a properly formulated chick starter without unnecessary dilution."
+        },
+
+        {
+          question:
+            "Can growing pullets eat Comfrey?",
+
+          answer:
+            "Growing pullets should receive a balanced grower ration as their nutritional foundation. Because growth-stage birds are sensitive to dietary dilution, deliberate Comfrey use should be avoided or kept extremely limited under qualified guidance."
+        },
+
+        {
+          question:
+            "Can laying hens eat Comfrey?",
+
+          answer:
+            "Healthy established laying hens may receive a small occasional leaf portion, but Comfrey must not displace layer feed or be treated as a dependable calcium, protein, or vitamin supplement."
+        },
+
+        {
+          question:
+            "Can roosters eat Comfrey?",
+
+          answer:
+            "Healthy adult roosters may receive the same conservative leaf-only treatment as other established adult chickens. Their normal balanced ration should remain available, and roots should never be included."
+        },
+
+        {
+          question:
+            "Can broody hens eat Comfrey?",
+
+          answer:
+            "A broody hen may already eat less complete feed than usual, so dietary extras should be especially limited. Do not use Comfrey to replace the concentrated nutrition she receives when she leaves the nest to eat."
+        },
+
+        {
+          question:
+            "Can molting chickens eat Comfrey?",
+
+          answer:
+            "Molting birds need adequate energy and balanced amino acids for feather growth. Comfrey should not be used as a protein substitute or allowed to reduce consumption of a suitable complete ration."
+        },
+
+        {
+          question:
+            "Can sick chickens eat Comfrey?",
+
+          answer:
+            "Comfrey should not be used as a home treatment for illness. Sick birds may have reduced appetite or impaired liver function and require diagnosis, supportive care, and appropriate veterinary guidance rather than an uncertain herbal supplement."
+        },
+
+        {
+          question:
+            "Is Comfrey good for a chicken's liver?",
+
+          answer:
+            "Comfrey should not be promoted as a liver treatment. Its pyrrolizidine-alkaloid content is the reason conservative exposure is advised, particularly when liver health is already a concern."
+        },
+
+        {
+          question:
+            "Will Comfrey treat worms or parasites?",
+
+          answer:
+            "Comfrey should not be relied upon as a dewormer or parasite treatment. Suspected parasites should be identified and managed with appropriate husbandry, testing, and veterinary guidance."
+        },
+
+        {
+          question:
+            "Can Comfrey improve egg production?",
+
+          answer:
+            "Comfrey should not be expected to increase egg production reliably. Egg output depends primarily on genetics, age, daylight, health, water, environmental conditions, and consumption of a properly balanced layer ration."
+        },
+
+        {
+          question:
+            "Does Comfrey improve eggshell quality?",
+
+          answer:
+            "Comfrey is not a dependable replacement for balanced layer feed or an appropriate separate calcium source. Poor shell quality should prompt a review of complete-feed intake, calcium access, water, age, stress, and health."
+        },
+
+        {
+          question:
+            "Can Comfrey reduce my poultry-feed bill?",
+
+          answer:
+            "Because Comfrey should be fed only in limited amounts, it is unlikely to replace enough complete feed to create major savings safely. Its greater homestead value often comes from perennial biomass, mulch, compost, and pollinator support."
+        },
+
+        {
+          question:
+            "Should I plant Comfrey inside the chicken run?",
+
+          answer:
+            "A permanent planting is generally better outside the unrestricted run. Chickens can damage crowns, expose roots, contaminate the foliage, and consume amounts that are difficult to track. Protected cut-and-carry management provides better control."
+        },
+
+        {
+          question:
+            "Can chickens forage directly through a Comfrey cage?",
+
+          answer:
+            "A rigid forage cage may allow limited access to leaves while protecting the crown, but it must prevent scratching around the roots and should not provide unlimited continuous foliage. Intake and plant condition still require observation."
+        },
+
+        {
+          question:
+            "Do chickens need grit when eating Comfrey?",
+
+          answer:
+            "Adult chickens consuming coarse leaves or dried plant material should have access to appropriately sized insoluble grit when their environment does not reliably provide it. Grit aids grinding but does not correct nutritional imbalance or toxicological concerns."
+        },
+
+        {
+          question:
+            "Should Comfrey be fed before or after complete feed?",
+
+          answer:
+            "Offer any Comfrey supplement only after confirming that normal complete feed is available and being consumed. This reduces the chance that birds will fill up on leafy material first."
+        },
+
+        {
+          question:
+            "Can I mix Comfrey with kitchen scraps?",
+
+          answer:
+            "Combining several supplements makes total dietary displacement harder to judge. Keep the entire collection of treats, scraps, forage, and Comfrey limited so the complete ration remains dominant."
+        },
+
+        {
+          question:
+            "Can fresh Comfrey leaves be left in the run all day?",
+
+          answer:
+            "Fresh leaves should be offered in amounts the flock can consume promptly. Leftovers can become trampled, manure-contaminated, warm, slimy, fermented, or moldy and should be removed."
+        },
+
+        {
+          question:
+            "How should fresh Comfrey be prepared?",
+
+          answer:
+            "Use clean positively identified leaves, exclude roots and crown tissue, remove contamination and damaged areas, and offer a small whole, secured, or coarsely chopped portion. Washing does not correct chemical or heavy fecal contamination."
+        },
+
+        {
+          question:
+            "Can Comfrey leaves be wilted before feeding?",
+
+          answer:
+            "Clean leaves may be wilted briefly in a shaded, well-ventilated area and used the same day. Wilting can change texture but does not neutralize pyrrolizidine alkaloids or make spoiled leaves usable."
+        },
+
+        {
+          question:
+            "How should Comfrey leaves be dried?",
+
+          answer:
+            "Dry clean leaves promptly in single or shallow layers with strong airflow. Remove or separately dry thick stems, protect the material from contamination, and do not store it until every part is crisp, cool, and free from retained moisture."
+        },
+
+        {
+          question:
+            "How long can dried Comfrey be stored?",
+
+          answer:
+            "A universal home-storage duration cannot be guaranteed. Storage stability depends on final moisture, humidity, temperature, sanitation, stem thickness, and container quality. Retain it only while it remains crisp, cool, dry, clean, insect-free, and odor-free."
+        },
+
+        {
+          question:
+            "Can slightly moldy Comfrey be salvaged?",
+
+          answer:
+            "No. Discard the entire affected batch. Removing visible mold, washing, redrying, cooking, grinding, or blending it with sound material does not make questionable foliage appropriate for feeding."
+        },
+
+        {
+          question:
+            "Can I ferment Comfrey for chickens?",
+
+          answer:
+            "Uncontrolled home fermentation is not recommended. Fermentation introduces additional variables involving acidity, microbial growth, spoilage, dosage, and storage and should not be assumed to remove pyrrolizidine alkaloids."
+        },
+
+        {
+          question:
+            "Can Comfrey be frozen for later feeding?",
+
+          answer:
+            "Freezing can hold leaves temporarily, but thawed foliage becomes wet and fragile and must be used promptly. Freezing does not remove pyrrolizidine alkaloids and offers limited practical advantage over careful drying."
+        },
+
+        {
+          question:
+            "Can I harvest Comfrey growing beside a road?",
+
+          answer:
+            "Roadside Comfrey should be avoided because it may be exposed to exhaust deposits, oil, fuel, road salt, contaminated runoff, herbicides, and other pollutants."
+        },
+
+        {
+          question:
+            "Can I feed Comfrey after using pesticides or herbicides nearby?",
+
+          answer:
+            "Do not feed treated or drift-exposed foliage unless the exact product is known, its label permits use on animal-feed crops, and every harvest restriction has been satisfied. Washing alone is not an adequate safeguard."
+        },
+
+        {
+          question:
+            "What should I do if roots were accidentally mixed into the leaves?",
+
+          answer:
+            "Do not feed the affected material. Remove all roots, crown tissue, and heavily soil-contaminated portions, and discard the batch when separation cannot be completed confidently."
+        },
+
+        {
+          question:
+            "What should I do if my chickens ate a large amount of Comfrey?",
+
+          answer:
+            "Remove further access, provide fresh complete feed and clean water, record the plant source, amount, form, and time of exposure, and observe the birds closely. Contact a poultry veterinarian or animal poison resource promptly when the amount was substantial or any bird shows weakness, poor appetite, abnormal behavior, or other illness."
+        },
+
+        {
+          question:
+            "Why is Comfrey still useful on a homestead if feeding must be limited?",
+
+          answer:
+            "Comfrey can produce repeated perennial biomass for compost, mulch, orchard support, pollinator forage, and controlled enrichment. These uses do not require poultry to consume the entire harvest."
+        }
+      ],
+
+      expertSummary: {
+        oneSentence:
+          "Comfrey is a productive multipurpose perennial, but for chickens it should be treated only as a small, occasional, leaf-only supplement because pyrrolizidine-alkaloid exposure, dietary displacement, and plant-part differences prevent unrestricted feeding recommendations.",
+
+        recommendation:
+          "Limited Supplemental Use",
+
+        oneParagraph:
+          "Comfrey can provide supervised leafy enrichment and a small amount of supplemental plant material for healthy established adult chickens, but it should not be treated as a major poultry-feed crop. Feed only clean, positively identified leaves; exclude roots and crowns; keep portions small and occasional; and maintain an age-appropriate complete poultry ration as the flock's nutritional foundation. Drying, wilting, freezing, grinding, or fermentation should not be represented as reliably removing pyrrolizidine alkaloids. Comfrey's strongest homestead value is often its repeated production of mulch, compost material, pollinator forage, and orchard-support biomass rather than the amount that can prudently be fed to poultry.",
+
+        recommendationReasoning: [
+          "Established plants can produce repeated harvests of leafy biomass.",
+
+          "Clean leaves may provide limited supervised pecking enrichment.",
+
+          "Cut-and-carry harvesting allows better portion control than unrestricted grazing.",
+
+          "The crop is perennial and can remain productive for many years.",
+
+          "Excess foliage has valuable non-feed uses as mulch and compost material.",
+
+          "Flowers can support pollinators.",
+
+          "Fresh leaves are easy to inspect before feeding.",
+
+          "Whole dried leaves can be stored in small identifiable batches.",
+
+          "Pyrrolizidine-alkaloid concerns require conservative exposure management.",
+
+          "Roots and crowns warrant greater concern and should not be fed.",
+
+          "Plant chemistry may vary by species, cultivar, plant part, maturity, and growing conditions.",
+
+          "Published poultry trials do not establish a universal safe backyard serving size.",
+
+          "Comfrey cannot replace the balanced energy, amino acids, minerals, vitamins, and trace nutrients supplied by complete poultry feed.",
+
+          "Young, sick, nutritionally stressed, or otherwise vulnerable birds are poor candidates for intentional Comfrey supplementation.",
+
+          "Drying improves storage but should not be interpreted as detoxification."
+        ],
+
+        idealUseCase:
+          "A permanent protected Comfrey planting maintained outside the unrestricted chicken run, with small quantities of clean leaves harvested through a cut-and-carry system for occasional supervised use by healthy established adult chickens. Most of the plant's biomass is directed toward mulch, compost, pollinator support, or orchard management rather than poultry consumption.",
+
+        notRecommendedAs: [
+          "Complete poultry-feed replacement",
+
+          "Primary protein source",
+
+          "Primary energy source",
+
+          "Primary calcium source",
+
+          "Daily staple feed",
+
+          "Unlimited free-choice forage",
+
+          "Routine young-chick feed",
+
+          "Routine growing-pullet supplement",
+
+          "Treatment for illness or injury",
+
+          "Liver-support treatment",
+
+          "Parasite treatment",
+
+          "Medicinal poultry herb",
+
+          "Large-volume feed-cost reduction crop",
+
+          "Unformulated commercial ration ingredient",
+
+          "Root or crown feed",
+
+          "A crop whose safety can be determined solely by cultivar name",
+
+          "A feed made safe through drying, cooking, freezing, grinding, or fermentation"
+        ]
+      },
+
+      scientificNotes: {
+        taxonomy: {
+          scientificName:
+            "Symphytum spp.",
+
+          family:
+            "Boraginaceae"
+        },
+
+        researchNotes: [
+          "The common name Comfrey may refer to several plants within the genus Symphytum, including common Comfrey, Symphytum officinale, and hybrid Russian Comfrey, commonly identified as Symphytum × uplandicum.",
+
+          "Species, hybrid, cultivar, plant part, plant maturity, growing conditions, harvest timing, and analytical method can influence reported chemical composition.",
+
+          "Comfrey contains pyrrolizidine alkaloids, which are the principal toxicological reason that unrestricted or high-level feeding should not be recommended.",
+
+          "Pyrrolizidine-alkaloid concentration is not necessarily uniform throughout the plant, and roots generally warrant greater concern than leaves.",
+
+          "A cultivar described as sterile is not necessarily free from pyrrolizidine alkaloids. Sterility describes reproductive behavior rather than toxicological composition.",
+
+          "Published nutrient analyses may report useful crude-protein, mineral, or vitamin concentrations, but compositional value alone does not establish an appropriate poultry inclusion rate.",
+
+          "Crude-protein concentration does not establish digestible amino-acid adequacy or prove that Comfrey can replace formulated protein ingredients.",
+
+          "Fresh-leaf nutrient values and dried-leaf nutrient values should not be compared without accounting for their very different moisture concentrations.",
+
+          "Dried Comfrey is more concentrated on an as-fed basis because water has been removed, making portion control especially important.",
+
+          "Drying, wilting, grinding, freezing, and ordinary household processing should not be assumed to eliminate pyrrolizidine alkaloids.",
+
+          "Some historical poultry and livestock trials have evaluated Comfrey or Comfrey leaf meal at measured dietary inclusion levels, but study design, plant source, bird type, exposure duration, ration formulation, and analytical methods vary.",
+
+          "Experimental inclusion percentages should not be copied directly into informal backyard rations.",
+
+          "Research performed with formulated diets does not necessarily support unrestricted access to living plants or unmeasured piles of harvested leaves.",
+
+          "Short-term acceptance or the absence of immediate visible illness does not establish long-term safety.",
+
+          "Potential concern involves cumulative exposure, meaning repeated small servings may require consideration in addition to the size of a single serving.",
+
+          "Young birds have high nutrient requirements relative to body size and are particularly vulnerable to displacement of complete starter or grower feed.",
+
+          "Birds with illness, poor appetite, low body condition, suspected liver impairment, or other health problems should not be treated with Comfrey.",
+
+          "Comfrey should not be characterized as a proven poultry dewormer, liver remedy, wound treatment, egg-production enhancer, or eggshell-quality treatment.",
+
+          "High-moisture fresh leaves can deteriorate rapidly through heating, bacterial decay, fermentation, and mold growth when piled or enclosed.",
+
+          "Home-dried leaves remain subject to mold, moisture reabsorption, insects, rodents, and chemical contamination.",
+
+          "Sensory inspection cannot determine pyrrolizidine-alkaloid concentration or detect every pesticide residue, pathogen, mycotoxin, or environmental contaminant.",
+
+          "A complete poultry ration remains necessary because Comfrey does not independently provide a verified balance of energy, digestible amino acids, calcium, phosphorus, sodium, vitamins, and trace minerals.",
+
+          "Comfrey may have greater practical value as a perennial biomass, mulch, compost, orchard-support, and pollinator plant than as a poultry-feed ingredient."
+        ],
+
+        plannerConsiderations: [
+          "Leaf-only supplemental use",
+
+          "Roots and crowns excluded",
+
+          "Limited adult-flock suitability",
+
+          "Not recommended for unrestricted access",
+
+          "No universal safe backyard feeding percentage",
+
+          "No universal safe serving size",
+
+          "No universal safe daily feeding schedule",
+
+          "Cumulative exposure requires consideration",
+
+          "Pyrrolizidine-alkaloid concern remains after drying",
+
+          "Cultivar sterility does not establish toxicological safety",
+
+          "Plant identity must be confirmed",
+
+          "Species and cultivar variation may be meaningful",
+
+          "Fresh and dried material require different portion interpretation",
+
+          "Dried material is concentrated by moisture removal",
+
+          "Complete-feed displacement must be prevented",
+
+          "Not suitable as a primary protein source",
+
+          "Not suitable as a primary energy source",
+
+          "Not suitable as a primary calcium source",
+
+          "Not suitable as deliberate young-chick feed",
+
+          "Not suitable as a treatment for sick birds",
+
+          "Cut-and-carry management is preferred",
+
+          "Protected plantings are preferable to access inside the run",
+
+          "Fresh foliage has high spoilage risk",
+
+          "Drying requires strong airflow and complete moisture removal",
+
+          "Moldy or musty material must be discarded",
+
+          "Chemical-treatment history must be known",
+
+          "Roadside and polluted harvest locations should be avoided",
+
+          "Most harvested biomass should not need to be fed",
+
+          "Strong value as a compost and mulch crop",
+
+          "Strong value as a permanent homestead biomass plant",
+
+          "Useful pollinator-support potential",
+
+          "Permanent root persistence affects planting-location decisions"
+        ],
+
+        futureResearchTopics: [
+          "Species-specific pyrrolizidine-alkaloid profiles within the genus Symphytum",
+
+          "Cultivar-specific pyrrolizidine-alkaloid concentrations",
+
+          "Comparison of leaf and root alkaloid profiles",
+
+          "Effects of plant age and regrowth stage on alkaloid concentration",
+
+          "Seasonal changes in pyrrolizidine-alkaloid content",
+
+          "Effects of soil, fertility, drought, temperature, and harvest frequency on plant chemistry",
+
+          "Effects of drying temperature and duration on individual pyrrolizidine alkaloids",
+
+          "Effects of wilting, freezing, ensiling, and fermentation on alkaloid composition",
+
+          "Long-term controlled feeding studies in laying hens",
+
+          "Long-term controlled feeding studies in mature dual-purpose chickens",
+
+          "Age-related differences in poultry tolerance",
+
+          "Effects of repeated low-level exposure compared with short-term higher exposure",
+
+          "Transfer of Comfrey-related compounds or metabolites into eggs",
+
+          "Effects of measured Comfrey intake on liver biomarkers and tissue health",
+
+          "Comparative digestibility of fresh and dried Comfrey leaves",
+
+          "Digestible amino-acid profiles of identified Comfrey species and cultivars",
+
+          "Effects of measured supplementation on complete-feed consumption",
+
+          "Effects on body condition, egg production, shell quality, and egg composition",
+
+          "Reliable analytical screening methods practical for small feed producers",
+
+          "Backyard-flock intake under protected forage-cage systems",
+
+          "Individual-bird consumption differences within mixed flocks",
+
+          "Small-scale drying methods that minimize mold and storage losses",
+
+          "Storage stability of whole dried leaves compared with crumbled leaves and leaf meal",
+
+          "Practical decision thresholds for excluding chemically exposed plant material",
+
+          "Comparative homestead value of Comfrey used as poultry supplementation, compost biomass, and mulch",
+
+          "Long-term management of permanent plantings near poultry systems",
+
+          "Evidence-based conservative exposure guidance for backyard flocks"
+        ]
+      },
+
+      metadata: {
+        feedingReferenceVersion:
+          "1.0.0",
+
+        templateVersion:
+          "1.0.0",
+
+        cropSpecificReviewStatus:
+          "reviewed",
+
+        confidenceLevel:
+          "moderate",
+
+        lastReviewed:
+          "2026-07",
+
+        intendedAudience: [
+          "Backyard chicken keepers",
+
+          "Homesteaders",
+
+          "Small flock owners",
+
+          "Educators",
+
+          "Feed-planner engine",
+
+          "Future AI assistant"
+        ],
+
+        sourceRecordFields: [
+          "identity",
+
+          "summary",
+
+          "chickenUse",
+
+          "nutrition",
+
+          "harvest",
+
+          "storage",
+
+          "risks",
+
+          "usePaths",
+
+          "seasonalRoles",
+
+          "dataQuality"
+        ],
+
+        designGoals: [
+          "Power the 'Can My Chickens Eat This?' tool",
+
+          "Provide structured data for future calculators",
+
+          "Support FAQ generation",
+
+          "Support AI responses",
+
+          "Support printable crop sheets",
+
+          "Support comparison tables",
+
+          "Support feed recommendations",
+
+          "Maintain consistency across all feed crops",
+
+          "Distinguish established evidence from uncertain feeding claims",
+
+          "Prevent roots and crowns from being represented as poultry feed",
+
+          "Avoid unsupported universal feeding percentages",
+
+          "Preserve conservative pyrrolizidine-alkaloid warnings",
+
+          "Keep complete poultry feed as the nutritional foundation",
+
+          "Recognize Comfrey's greater value as a multipurpose homestead biomass crop"
+        ]
+      }
+      },
+
+    
+    
+    
+      chickenUse: {
       edibleParts: [
         "Clean leaves offered in limited amounts",
         "Freshly cut leaves",
