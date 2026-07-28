@@ -340,6 +340,48 @@ flex-shrink:0;
   color: #ffffff;
 }
 
+/* =========================================
+   CROP IMAGE GALLERY
+   ========================================= */
+
+.feed-crop-gallery {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.feed-crop-gallery[hidden] {
+  display: none;
+}
+
+.feed-crop-photo {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.feed-crop-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #eef2e9;
+}
+
+.feed-crop-photo figcaption {
+  padding: 13px 15px 15px;
+  color: #505750;
+  font-size: 0.91rem;
+  line-height: 1.5;
+}
+
 
 /* =========================================
    TILE GRID
@@ -718,6 +760,15 @@ color:#475248;
     gap: 13px;
   }
 
+    .feed-crop-gallery {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .feed-crop-photo:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
   .feed-tile--wide {
     grid-column: span 1;
   }
@@ -735,6 +786,14 @@ color:#475248;
     padding:
       0
       12px;
+  }
+
+    .feed-crop-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .feed-crop-photo:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .feed-search-hero {
@@ -937,6 +996,14 @@ Free calculators, planning tools, practical guides, and equipment recommendation
 </div>
 
 <div
+  class="feed-crop-gallery"
+  id="feed-crop-gallery"
+  aria-label="Crop photographs"
+  hidden
+>
+</div>
+
+<div
   class="feed-tile-grid"
   id="feed-tile-grid"
 >
@@ -1073,6 +1140,343 @@ Plants and foods that should never be offered to chickens. (Coming Soon)
    WHAT CAN CHICKENS EAT?
    VERSION 1
 ============================================================ */
+
+/* ------------------------------------------------------------
+   Feed Crop Image Registry
+
+   This is being kept inside this page during the initial test.
+   After the system is confirmed to work, it can be moved into
+   a shared feed-crop-images.js file.
+------------------------------------------------------------ */
+
+const FEED_CROP_IMAGES =
+  Object.freeze({
+
+    mulberry:
+      Object.freeze({
+
+        aliases:
+          Object.freeze([
+            "mulberry"
+          ]),
+
+        images:
+          Object.freeze([
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/mulberry/mulberry-tree.webp",
+
+              alt:
+                "Mature mulberry tree growing outdoors",
+
+              caption:
+                "A mature mulberry tree can provide seasonal fruit, leafy forage, shade, and enrichment for a backyard flock."
+            }),
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/mulberry/ripe-mulberries.webp",
+
+              alt:
+                "Ripe mulberries growing among green mulberry leaves",
+
+              caption:
+                "Ripe, sound mulberries may be offered as a seasonal supplemental food."
+            }),
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/mulberry/chickens-under-mulberry.webp",
+
+              alt:
+                "Chickens foraging beneath a mature mulberry tree",
+
+              caption:
+                "Chickens may forage for fallen fruit and insects while using the tree canopy for shade."
+            })
+
+          ])
+
+      }),
+
+    kale:
+      Object.freeze({
+
+        aliases:
+          Object.freeze([
+            "kale",
+            "kale-and-collards",
+            "kale-collards",
+            "kale-collard-greens"
+          ]),
+
+        images:
+          Object.freeze([
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/kale/kale-plant.webp",
+
+              alt:
+                "Mature kale plant growing in a garden",
+
+              caption:
+                "Kale is a productive cool-season leafy crop that can provide repeated harvests."
+            }),
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/kale/harvested-kale.webp",
+
+              alt:
+                "Freshly harvested kale leaves",
+
+              caption:
+                "Outer kale leaves can be harvested while leaving the central growing point intact."
+            }),
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/kale/chickens-eating-kale.webp",
+
+              alt:
+                "Backyard chickens eating fresh kale leaves",
+
+              caption:
+                "Fresh kale may be offered as supplemental leafy forage or hung to encourage pecking activity."
+            })
+
+          ])
+
+      }),
+
+    jerusalemArtichoke:
+      Object.freeze({
+
+        aliases:
+          Object.freeze([
+            "jerusalem-artichoke",
+            "jerusalem-artichokes",
+            "jerusalem-artichoke-tubers"
+          ]),
+
+        images:
+          Object.freeze([
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/jerusalem-artichoke/jerusalem-artichoke-plant.webp",
+
+              alt:
+                "Tall Jerusalem artichoke plants with yellow flowers",
+
+              caption:
+                "Jerusalem artichoke develops into a tall sunflower-like plant before producing underground tubers."
+            }),
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/jerusalem-artichoke/harvested-jerusalem-artichokes.webp",
+
+              alt:
+                "Freshly harvested Jerusalem artichoke tubers",
+
+              caption:
+                "The edible tubers develop underground and are generally harvested after the growing season."
+            }),
+
+            Object.freeze({
+              src:
+                "assets/images/feed-crops/jerusalem-artichoke/prepared-jerusalem-artichokes.webp",
+
+              alt:
+                "Jerusalem artichoke tubers prepared for supplemental chicken feeding",
+
+              caption:
+                "Clean tubers may require cutting or other preparation before being offered in controlled supplemental amounts."
+            })
+
+          ])
+
+      })
+
+  });
+
+  /* ------------------------------------------------------------
+   Normalize Image Lookup Value
+------------------------------------------------------------ */
+
+function normalizeCropImageLookupValue(
+  value
+){
+
+  return String(
+    value || ""
+  )
+    .toLowerCase()
+    .trim()
+    .replace(
+      /&/g,
+      " and "
+    )
+    .replace(
+      /[^a-z0-9]+/g,
+      "-"
+    )
+    .replace(
+      /^-+|-+$/g,
+      ""
+    );
+
+}
+
+/* ------------------------------------------------------------
+   Find Registered Crop Images
+------------------------------------------------------------ */
+
+function getRegisteredCropImages(
+  crop
+){
+
+  if(
+    !crop
+  ){
+
+    return [];
+
+  }
+
+  const possibleValues = [
+    crop.id,
+    crop.name
+  ]
+    .map(
+      normalizeCropImageLookupValue
+    )
+    .filter(Boolean);
+
+  const registryEntries =
+    Object.values(
+      FEED_CROP_IMAGES
+    );
+
+  const matchingEntry =
+    registryEntries.find(
+      function(entry){
+
+        const normalizedAliases =
+          entry.aliases.map(
+            normalizeCropImageLookupValue
+          );
+
+        return possibleValues.some(
+          function(value){
+
+            return normalizedAliases.includes(
+              value
+            );
+
+          }
+        );
+
+      }
+    );
+
+  if(
+    !matchingEntry ||
+    !Array.isArray(
+      matchingEntry.images
+    )
+  ){
+
+    return [];
+
+  }
+
+  return matchingEntry.images;
+
+}
+
+/* ------------------------------------------------------------
+   Render Crop Image Gallery
+------------------------------------------------------------ */
+
+function renderCropImageGallery(
+  crop
+){
+
+  const gallery =
+    document.getElementById(
+      "feed-crop-gallery"
+    );
+
+  if(
+    !gallery
+  ){
+
+    return;
+
+  }
+
+  gallery.innerHTML =
+    "";
+
+  gallery.hidden =
+    true;
+
+  const images =
+    getRegisteredCropImages(
+      crop
+    );
+
+  if(
+    images.length === 0
+  ){
+
+    return;
+
+  }
+
+  const galleryHtml =
+    images
+      .map(
+        function(image){
+
+          return `
+            <figure class="feed-crop-photo">
+
+              <img
+                src="${image.src}"
+                alt="${image.alt}"
+                loading="lazy"
+                decoding="async"
+              >
+
+              ${
+                image.caption
+                  ? `
+                    <figcaption>
+                      ${image.caption}
+                    </figcaption>
+                  `
+                  : ""
+              }
+
+            </figure>
+          `;
+
+        }
+      )
+      .join("");
+
+  gallery.innerHTML =
+    galleryHtml;
+
+  gallery.hidden =
+    false;
+
+}
 
 const cropSelect =
   document.getElementById(
@@ -1299,6 +1703,10 @@ function loadCropReference(
     "";
 
   renderSummary(
+    crop
+  );
+
+   renderCropImageGallery(
     crop
   );
 
