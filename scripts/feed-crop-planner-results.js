@@ -2054,6 +2054,69 @@ console.log(
       "Supplemental flock crop"
     );
 
+      const cropId =
+    firstDefined(
+      result.cropId,
+      result.crop?.id,
+      identity.id,
+      identity.cropId,
+      null
+    );
+
+  const cropImageSet =
+    cropId &&
+    window.BCPFeedCropImages
+      ? window.BCPFeedCropImages.getImages(
+          cropId
+        )
+      : null;
+
+  const plantImage =
+    cropImageSet?.images?.find(function(
+      image
+    ) {
+
+      return (
+        image.type ===
+        "plant"
+      );
+
+    }) ||
+    cropImageSet?.images?.[0] ||
+    null;
+
+  const plantImageMarkup =
+    plantImage
+      ? `
+          <figure class="feed-crop-top-image">
+
+            <img
+              src="${escapeHTML(
+                plantImage.src
+              )}"
+              alt="${escapeHTML(
+                plantImage.alt
+              )}"
+              loading="eager"
+              decoding="async"
+            >
+
+            ${
+              plantImage.caption
+                ? `
+                    <figcaption>
+                      ${escapeHTML(
+                        plantImage.caption
+                      )}
+                    </figcaption>
+                  `
+                : ""
+            }
+
+          </figure>
+        `
+      : "";
+
   return `
     <section class="feed-crop-top-recommendation">
 
@@ -2068,6 +2131,10 @@ console.log(
       <div class="feed-crop-top-grid">
 
         <div class="feed-crop-top-main">
+
+        ${plantImageMarkup}
+
+        <div class="feed-crop-top-content">
 
           <div class="feed-crop-top-title-row">
 
@@ -2153,6 +2220,8 @@ console.log(
       </span>
     `
 }
+
+          </div>
 
           </div>
 
