@@ -3250,3 +3250,63 @@ nav a:hover{
     min-height: 0;
   }
 }
+
+/* =========================================================
+   Crop Guide Image Features
+   ========================================================= */
+
+.crop-guide-feature-card {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    280px
+    minmax(0, 1fr);
+
+  gap:
+    28px;
+
+  align-items:
+    center;
+
+  margin:
+    40px 0;
+
+}
+
+
+.crop-guide-feature-image {
+
+  width:
+    280px;
+
+}
+
+
+.crop-guide-feature-image img {
+
+  width:
+    100%;
+
+  height:
+    260px;
+
+  object-fit:
+    cover;
+
+  border-radius:
+    18px;
+
+  display:
+    block;
+
+}
+
+
+.crop-guide-feature-content h2 {
+
+  margin-top:
+    0;
+
+} 
