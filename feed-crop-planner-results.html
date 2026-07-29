@@ -1174,6 +1174,99 @@ body {
     center;
 }
 
+.feed-crop-top-main {
+
+  display: grid;
+
+  grid-template-columns:
+    250px
+    minmax(0, 1fr);
+
+  gap: 24px;
+
+  align-items: start;
+
+}
+
+.feed-crop-top-image {
+  align-self:
+    stretch;
+
+  min-width:
+    0;
+
+  margin:
+    0;
+
+  overflow:
+    hidden;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.96
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.32
+    );
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 14px 30px
+    rgba(
+      0,
+      0,
+      0,
+      0.18
+    );
+}
+
+.feed-crop-top-image img {
+  display:
+    block;
+
+  width:
+    100%;
+
+  aspect-ratio:
+    4 / 3;
+
+  object-fit:
+    cover;
+}
+
+.feed-crop-top-image figcaption {
+  padding:
+    10px 13px;
+
+  color:
+    var(--results-green-dark);
+
+  background:
+    #ffffff;
+
+  font-size:
+    0.76rem;
+
+  line-height:
+    1.45;
+}
+
+.feed-crop-top-content {
+  min-width:
+    0;
+}
+
 .feed-crop-top-title-row {
   display:
     flex;
@@ -3083,6 +3176,18 @@ summary:focus-visible {
       1fr;
   }
 
+    .feed-crop-top-main {
+    grid-template-columns:
+      minmax(
+        210px,
+        0.65fr
+      )
+      minmax(
+        0,
+        1fr
+      );
+  }
+
   .feed-crop-results-hero-art {
     max-width:
       520px;
@@ -3145,6 +3250,27 @@ summary:focus-visible {
 
     margin:
       20px auto 34px;
+  }
+
+    .feed-crop-top-main {
+    grid-template-columns:
+      1fr;
+  }
+
+  .feed-crop-top-image {
+    width:
+      min(
+        100%,
+        520px
+      );
+
+    margin:
+      0 auto;
+  }
+
+  .feed-crop-top-image img {
+    aspect-ratio:
+      16 / 9;
   }
 
   .feed-crop-results-shell {
