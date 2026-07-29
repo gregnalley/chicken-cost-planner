@@ -3310,3 +3310,30 @@ nav a:hover{
     0;
 
 } 
+
+@media(max-width:760px){
+
+  .crop-guide-feature-card {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .crop-guide-feature-image {
+
+    width:
+      100%;
+
+  }
+
+
+  .crop-guide-feature-image img {
+
+    height:
+      220px;
+
+  }
+
+}
