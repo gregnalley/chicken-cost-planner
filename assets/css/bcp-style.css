@@ -3505,3 +3505,14 @@ nav a:hover{
     left;
 
 }
+
+/* =========================================================
+   Crop Guide Section Spacing
+   ========================================================= */
+
+.page-container > section {
+
+  margin-bottom:
+    48px;
+
+}
