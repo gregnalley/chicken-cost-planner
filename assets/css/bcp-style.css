@@ -3647,3 +3647,67 @@ margin-bottom:
     20px;
 
 }
+
+/* Prevent nested crop guide grids from overflowing section cards */
+
+.section-card > * {
+
+  max-width:
+    100%;
+
+}
+
+
+.section-card .crop-grid,
+.section-card .growth-stage-grid,
+.section-card .planting-steps-grid,
+.section-card .benefits-grid {
+
+  width:
+    100%;
+
+  box-sizing:
+    border-box;
+
+}
+
+/* Crop guide overflow protection */
+
+.crop-guide-page,
+.section-card {
+
+  overflow-x:
+    hidden;
+
+}
+
+.crop-comparison-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.crop-learning-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 17px;
+}
+
+.next-guide-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+  gap: 17px;
+}
+
+.section-card {
+  overflow: hidden;
+}
+
+.section-card * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
