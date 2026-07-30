@@ -3516,3 +3516,47 @@ nav a:hover{
     48px;
 
 }
+
+.crop-info-grid {
+
+display:
+grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(240px,1fr));
+
+gap:
+24px;
+
+margin:
+35px 0;
+
+}
+
+
+.crop-info-card {
+
+background:
+#ffffff;
+
+padding:
+24px;
+
+border-radius:
+16px;
+
+box-shadow:
+0 4px 12px rgba(0,0,0,.08);
+
+}
+
+
+.crop-info-card h3 {
+
+margin-top:
+0;
+
+color:
+var(--primary-color);
+
+}
