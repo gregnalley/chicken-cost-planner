@@ -3711,3 +3711,59 @@ margin-bottom:
   max-width: 100%;
   box-sizing: border-box;
 }
+
+.crop-content-media-card {
+
+display:grid;
+grid-template-columns:
+280px 1fr;
+gap:28px;
+align-items:center;
+
+margin:30px 0;
+padding:24px;
+
+background:#f8fbf7;
+border:1px solid #d7e3d6;
+border-radius:16px;
+
+}
+
+
+.crop-content-media-image img {
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+border-radius:14px;
+
+box-shadow:
+0 10px 25px
+rgba(25,79,42,0.12);
+
+}
+
+
+.crop-content-media-text h2 {
+
+margin-top:0;
+
+}
+
+
+@media(max-width:760px){
+
+.crop-content-media-card{
+
+grid-template-columns:1fr;
+
+}
+
+.crop-content-media-image img{
+
+height:auto;
+
+}
+
+}
