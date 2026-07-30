@@ -3596,3 +3596,54 @@ margin-bottom:
 10px;
 
 }
+
+/* =========================================
+   Crop Guide Section Cards
+   ========================================= */
+
+.section-card {
+
+  background:
+    #ffffff;
+
+  border-radius:
+    18px;
+
+  padding:
+    32px;
+
+  margin-bottom:
+    40px;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.06);
+
+}
+
+
+.section-card h2 {
+
+  margin-top:
+    0;
+
+  margin-bottom:
+    18px;
+
+}
+
+/* =========================================
+   Crop Guide Notice Spacing
+   ========================================= */
+
+.crop-warning-box,
+.crop-success-box,
+.crop-danger-box,
+.crop-notice-box {
+
+  margin-top:
+    20px;
+
+  margin-bottom:
+    20px;
+
+}
