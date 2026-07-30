@@ -3767,3 +3767,49 @@ height:auto;
 }
 
 }
+
+.crop-feature-image-row {
+
+display: grid;
+grid-template-columns:
+minmax(220px, 320px)
+1fr;
+
+gap: 24px;
+
+align-items: center;
+
+margin: 25px 0;
+
+}
+
+
+.crop-feature-image img {
+
+width: 100%;
+
+border-radius: 16px;
+
+box-shadow:
+0 10px 25px
+rgba(0,0,0,0.12);
+
+}
+
+
+.crop-feature-image-text {
+
+line-height: 1.7;
+
+}
+
+
+@media (max-width:760px){
+
+.crop-feature-image-row {
+
+grid-template-columns:1fr;
+
+}
+
+}
