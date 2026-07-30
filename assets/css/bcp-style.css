@@ -3271,7 +3271,7 @@ nav a:hover{
     center;
 
   margin:
-    40px 0;
+    56px 0;
 
 }
 
@@ -3317,6 +3317,13 @@ nav a:hover{
 
     grid-template-columns:
       1fr;
+
+  }
+
+  .crop-guide-feature-card {
+
+    margin:
+      32px 0;
 
   }
 
