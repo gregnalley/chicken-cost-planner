@@ -3560,3 +3560,39 @@ color:
 var(--primary-color);
 
 }
+
+.quick-answer-box {
+
+background:
+#eef7ee;
+
+border-left:
+6px solid #4b8f4b;
+
+padding:
+24px;
+
+margin:
+35px 0;
+
+border-radius:
+14px;
+
+font-size:
+1.05rem;
+
+}
+
+
+.quick-answer-box strong {
+
+display:
+block;
+
+font-size:
+1.25rem;
+
+margin-bottom:
+10px;
+
+}
