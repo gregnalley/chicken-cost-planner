@@ -1400,48 +1400,48 @@ window.BCP_PRODUCTS = {
 
   subcategory:[
 
-    "feeders",
+    "automatic-feeders",
 
-    "gravity-feeders",
+    "treadle-feeders",
 
-    "diy-feeders",
+    "rodent-control",
 
-    "bulk-feeding"
+    "premium-feeders"
 
   ],
 
 
   badge:
-    "🏡 Homestead Feeding Solution",
+    "⭐ Premium Feeding Solution",
 
 
   title:
-    "PVC Gravity Feeder / Bulk Feeder System",
+    "Grandpa's Feeders Automatic Treadle Feeder",
 
 
   description:
-    "A PVC gravity feeder system provides a way to store and dispense chicken feed automatically using a larger capacity container and gravity-fed delivery. These systems can reduce daily feeding chores, limit feed waste, and work well for backyard flocks and homesteads.",
+    "An automatic treadle feeder helps protect chicken feed from rodents, wild birds, and weather exposure while providing a cleaner and more efficient feeding system. This premium feeder is designed for backyard chicken keepers who want to reduce feed waste and simplify daily flock management.",
 
 
   shortDescription:
-    "A bulk feeding solution for reducing daily feeding chores.",
+    "Premium automatic feeder designed to reduce waste and pests.",
 
 
   tileBadge:
-    "🏡 Homestead Pick",
+    "⭐ Premium Pick",
 
 
   tileButtonText:
-    "View Product →",
+    "View Price →",
 
 
   bullets:[
 
-    "Reduces the need for frequent refilling",
+    "Helps prevent rodent and wild bird access",
 
-    "Useful for larger backyard flocks",
+    "Reduces daily feeding chores",
 
-    "Can help manage feed waste and labor"
+    "Designed for long-term flock use"
 
   ],
 
@@ -1451,7 +1451,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "",
+    "https://amzn.to/4jQf1up",
 
 
   image:
@@ -1466,7 +1466,7 @@ window.BCP_PRODUCTS = {
   recommendationData:{
 
         productType:
-      "gravity-feeder-system",
+      "automatic-treadle-feeder",
 
 
 
@@ -1476,7 +1476,7 @@ window.BCP_PRODUCTS = {
 
       "PRD-002",
 
-      "PRD-004"
+      "PRD-003"
 
     ],
 
@@ -1494,7 +1494,7 @@ window.BCP_PRODUCTS = {
 
 
       affiliatePotential:
-        "low-medium"
+        "high"
 
 
     },
@@ -1506,11 +1506,11 @@ window.BCP_PRODUCTS = {
 
       buyerStages:[
 
+        "beginner-setup",
+
         "homestead",
 
-        "flock-expansion",
-
-        "labor-reduction"
+        "flock-expansion"
 
       ],
 
@@ -1518,13 +1518,13 @@ window.BCP_PRODUCTS = {
 
       commonProblems:[
 
-        "reduce-feeding-time",
-
         "reduce-feed-waste",
 
-        "bulk-feed-management",
+        "prevent-rodent-access",
 
-        "feeding-consistency"
+        "reduce-daily-feeding-time",
+
+        "protect-feed-storage"
 
       ],
 
@@ -1532,11 +1532,13 @@ window.BCP_PRODUCTS = {
 
       idealUsers:[
 
+        "backyard-flock-owner",
+
         "homesteader",
 
         "small-flock-owner",
 
-        "experienced-backyard-keeper"
+        "experienced-keeper"
 
       ]
 
@@ -1547,11 +1549,11 @@ window.BCP_PRODUCTS = {
 
     recommendedTogether:[
 
-      "PRD-001",
+      "PRD-006",
 
-      "PRD-004",
+      "PRD-008",
 
-      "PRD-006"
+      "PRD-037"
 
     ],
 
@@ -1583,13 +1585,13 @@ window.BCP_PRODUCTS = {
 
       pageTypes:[
 
+        "best-chicken-feeders",
+
         "chicken-feeders",
 
-        "diy-chicken-projects",
+        "flock-planner",
 
-        "feed-cost-calculator",
-
-        "flock-planner"
+        "feed-cost-calculator"
 
       ],
 
@@ -1599,39 +1601,39 @@ window.BCP_PRODUCTS = {
 
       useCases:[
 
-        "bulk-feeding",
+        "daily-feeding",
 
-        "feed-management",
+        "feed-waste-reduction",
 
-        "reduce-labor",
+        "predator-and-pest-control",
 
-        "feed-waste-reduction"
+        "automated-feeding"
 
       ],
 
 
       tags:[
 
-        "gravity-feeder",
+        "treadle-feeder",
 
-        "diy-feeder",
+        "automatic-feeder",
 
-        "bulk-feeding",
+        "rodent-control",
 
-        "homestead",
+        "feed-management",
 
-        "labor-saving"
+        "premium-feeder"
 
       ],
 
 
       audiences:[
 
-        "homesteader",
+        "beginner",
 
         "small-flock",
 
-        "experienced-keeper",
+        "homesteader",
 
         "backyard-flock-owner"
 
@@ -1646,18 +1648,14 @@ window.BCP_PRODUCTS = {
 
       "flock-planner",
 
-      "feed-cost-calculator",
-
-      "crop-planner",
-
-      "diy-chicken-projects"
+      "feed-cost-calculator"
 
     ],
 
 
 
     productRole:
-      "supporting",
+      "primary",
 
 
 
@@ -1665,28 +1663,30 @@ window.BCP_PRODUCTS = {
 
 
       minimumExperience:
-        "intermediate",
+        "beginner",
 
 
       advancedOnly:
         false,
 
 
-      skillRequirements:[
-
-        "basic-diy-skills"
-
-      ],
+      skillRequirements:[],
 
 
       flockSize:[
 
-        "10+ chickens"
+        "small",
+
+        "medium",
+
+        "large"
 
       ],
 
 
       spaceConsiderations:[
+
+        "small",
 
         "medium",
 
@@ -1699,7 +1699,7 @@ window.BCP_PRODUCTS = {
 
 
     priority:
-      70,
+      95,
 
 
 
@@ -1712,9 +1712,7 @@ window.BCP_PRODUCTS = {
 
       "feeding",
 
-      "diy-projects",
-
-      "homestead-tools"
+      "feed-management"
 
     ],
 
@@ -1722,15 +1720,13 @@ window.BCP_PRODUCTS = {
 
     tags:[
 
-      "gravity-feeder",
+      "automatic-feeder",
 
-      "bulk-feeder",
+      "treadle-feeder",
 
-      "diy-feeder",
+      "premium-feeder",
 
-      "feed-management",
-
-      "homestead"
+      "feed-waste-reduction"
 
     ],
 
