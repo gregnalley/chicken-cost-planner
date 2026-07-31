@@ -446,10 +446,9 @@ score +=
   cropMatch.score;
 
 
-reasons =
-  reasons.concat(
-    cropMatch.reasons
-  );
+reasons.push(
+  ...cropMatch.reasons
+);
 
 /*
   Priority Adjustment
