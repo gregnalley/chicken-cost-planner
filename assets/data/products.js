@@ -102,6 +102,40 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "beginner-setup",
+
+    "flock-expansion",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "reduce-feed-waste",
+
+    "rodent-control",
+
+    "feeding-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "small-homestead"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -323,6 +357,36 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "basic-feeding",
+
+    "feed-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -537,6 +601,36 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "basic-feeding",
+
+    "feed-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -746,6 +840,36 @@ purchaseBehavior:{
 
   affiliatePotential:
     "low"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "homestead",
+
+    "coop-upgrade"
+
+  ],
+
+
+  commonProblems:[
+
+    "reduce-feed-waste",
+
+    "diy-feeding-system"
+
+  ],
+
+
+  idealUsers:[
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
 
 },
 
@@ -1181,6 +1305,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup",
+
+    "flock-expansion"
+
+  ],
+
+
+  commonProblems:[
+
+    "water-management",
+
+    "clean-water-access"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -1390,6 +1546,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup",
+
+    "flock-expansion"
+
+  ],
+
+
+  commonProblems:[
+
+    "water-management",
+
+    "clean-water-access"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -1604,6 +1792,40 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "coop-upgrade",
+
+    "problem-solving",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "predator-protection",
+
+    "flock-security"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
 
 },
 
@@ -2235,6 +2457,36 @@ recommendedTogether:[
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "homestead",
+
+    "coop-upgrade"
+
+  ],
+
+
+  commonProblems:[
+
+    "water-cleanliness",
+
+    "diy-watering-system"
+
+  ],
+
+
+  idealUsers:[
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
+
+},
+
 
     recommendationContexts:[
 
@@ -2418,6 +2670,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup",
+
+    "flock-expansion"
+
+  ],
+
+
+  commonProblems:[
+
+    "housing-needs",
+
+    "predator-protection"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -2631,6 +2915,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup",
+
+    "flock-expansion"
+
+  ],
+
+
+  commonProblems:[
+
+    "housing-needs",
+
+    "predator-protection"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -2828,6 +3144,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup",
+
+    "flock-expansion"
+
+  ],
+
+
+  commonProblems:[
+
+    "housing-needs",
+
+    "predator-protection"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -3030,6 +3378,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup",
+
+    "flock-expansion"
+
+  ],
+
+
+  commonProblems:[
+
+    "housing-needs",
+
+    "predator-protection"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -4846,6 +5226,40 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "coop-upgrade",
+
+    "problem-solving",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "predator-protection",
+
+    "flock-security"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -5050,6 +5464,40 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "coop-upgrade",
+
+    "problem-solving",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "predator-protection",
+
+    "flock-security"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -5251,6 +5699,40 @@ purchaseBehavior:{
 
   affiliatePotential:
     "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "coop-upgrade",
+
+    "problem-solving",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "predator-protection",
+
+    "flock-security"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
 
 },
 
@@ -5870,6 +6352,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -6069,6 +6583,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -6276,6 +6822,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -6478,6 +7056,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -6669,6 +7279,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "low"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -6874,6 +7516,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -7067,6 +7741,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -7272,6 +7978,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -7471,6 +8209,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -7680,6 +8450,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -7880,6 +8682,38 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
 recommendedTogether:[
 
   "PRD-038"
@@ -8072,6 +8906,38 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
 
 },
 
@@ -8269,6 +9135,36 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "problem-solving"
+
+  ],
+
+
+  commonProblems:[
+
+    "sick-chick",
+
+    "injury-care",
+
+    "sanitation"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "small-homestead"
+
+  ]
 
 },
 
@@ -8476,6 +9372,36 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "problem-solving"
+
+  ],
+
+
+  commonProblems:[
+
+    "sick-chick",
+
+    "injury-care",
+
+    "sanitation"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "small-homestead"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -8676,6 +9602,36 @@ purchaseBehavior:{
 
 },
 
+buyerIntent:{
+
+  buyerStages:[
+
+    "problem-solving"
+
+  ],
+
+
+  commonProblems:[
+
+    "sick-chick",
+
+    "injury-care",
+
+    "sanitation"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "small-homestead"
+
+  ]
+
+},
+
 
 recommendedTogether:[
 
@@ -8869,6 +9825,36 @@ purchaseBehavior:{
 
   affiliatePotential:
     "low"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "problem-solving"
+
+  ],
+
+
+  commonProblems:[
+
+    "sick-chick",
+
+    "injury-care",
+
+    "sanitation"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "small-homestead"
+
+  ]
 
 },
 
@@ -9067,6 +10053,40 @@ purchaseBehavior:{
 
   affiliatePotential:
     "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "coop-upgrade",
+
+    "problem-solving",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "predator-protection",
+
+    "flock-security"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
 
 },
 
