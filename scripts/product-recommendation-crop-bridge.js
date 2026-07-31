@@ -75,6 +75,72 @@ window.BCPProductCropBridge =
         };
 
 
+           },
+
+
+    getCropProductRecommendations:
+
+      function(cropProfile){
+
+
+        if(
+          !cropProfile
+        ){
+
+          return [];
+
+        }
+
+
+
+        const recommendationProfile = {
+
+
+          context:
+            "crop-planner",
+
+
+          applicableCrops:
+
+            cropProfile.applicableCrops || [],
+
+
+          cropStages:
+
+            cropProfile.cropStages || [],
+
+
+          useCases:
+
+            cropProfile.useCases || [],
+
+
+          buyerStage:
+            "homestead",
+
+
+          userType:
+            "backyard-flock-owner",
+
+
+          problems:
+            []
+
+
+        };
+
+
+
+        return (
+
+          BCPProductRecommendation
+            .getRecommendations(
+              recommendationProfile
+            )
+
+        );
+
+
       }
 
 
