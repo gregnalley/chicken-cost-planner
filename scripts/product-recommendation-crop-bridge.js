@@ -196,28 +196,78 @@ window.BCPProductCropBridge =
           */
 
 
-          if(
-            Array.isArray(
-              data.applicableCrops
-            )
-            &&
-            data.applicableCrops.some(function(crop){
+          /*
+  Crop-specific product match
 
-              return (
+  Supports:
 
-                cropProfile.applicableCrops.includes(
-                  crop
-                )
+  Legacy:
+  recommendationData.applicableCrops
 
-              );
+  New crop schema:
+  recommendationData.recommendedFor.crops
+*/
 
-            })
-          ){
 
-            include =
-              true;
+const productCrops = [];
 
-          }
+
+/*
+  Legacy crop field
+*/
+
+if(
+  Array.isArray(
+    data.applicableCrops
+  )
+){
+
+  productCrops.push(
+    ...data.applicableCrops
+  );
+
+}
+
+
+/*
+  New crop planner field
+*/
+
+if(
+  data.recommendedFor
+  &&
+  Array.isArray(
+    data.recommendedFor.crops
+  )
+){
+
+  productCrops.push(
+    ...data.recommendedFor.crops
+  );
+
+}
+
+
+
+if(
+  productCrops.some(function(crop){
+
+    return (
+
+      cropProfile.applicableCrops.includes(
+        crop
+      )
+
+    );
+
+  })
+)
+{
+
+  include =
+    true;
+
+}
 
 
 
