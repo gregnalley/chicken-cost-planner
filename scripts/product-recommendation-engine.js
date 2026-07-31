@@ -474,6 +474,125 @@ if(
 
 }
 
+function scoreCropMatch(
+  product,
+  profile
+){
+
+  let score =
+    0;
+
+
+  let reasons =
+    [];
+
+
+  if(
+    !product ||
+    !profile
+  ){
+
+    return {
+
+      score:
+        score,
+
+      reasons:
+        reasons
+
+    };
+
+  }
+
+
+  const recommendationData =
+    product.recommendationData;
+
+
+  if(
+    !recommendationData
+  ){
+
+    return {
+
+      score:
+        score,
+
+      reasons:
+        reasons
+
+    };
+
+  }
+
+
+  const productCrops =
+    Array.isArray(
+      recommendationData.applicableCrops
+    )
+
+      ?
+
+      recommendationData.applicableCrops
+
+      :
+
+      [];
+
+
+  const userCrops =
+    Array.isArray(
+      profile.applicableCrops
+    )
+
+      ?
+
+      profile.applicableCrops
+
+      :
+
+      [];
+
+
+  userCrops.forEach(function(crop){
+
+
+    if(
+      productCrops.includes(
+        crop
+      )
+    ){
+
+      score +=
+        40;
+
+
+      reasons.push(
+
+        "Matches crop: " +
+        crop
+
+      );
+
+    }
+
+
+  });
+
+
+  return {
+
+    score:
+      score,
+
+    reasons:
+      reasons
+
+  };
+
+
+}
+
 function getRecommendations(
   profile,
   limit
@@ -549,6 +668,9 @@ function getRecommendations(
 
   namespace.scoreProduct =
     scoreProduct;
+
+  namespace.scoreCropMatch =
+    scoreCropMatch;  
     
   namespace.getRecommendations =
     getRecommendations;  
