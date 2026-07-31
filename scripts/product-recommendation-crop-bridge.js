@@ -141,6 +141,142 @@ window.BCPProductCropBridge =
         );
 
 
+           },
+
+
+    filterCropPlannerProducts:
+
+      function(products, cropProfile){
+
+
+        if(
+          !Array.isArray(products)
+          ||
+          !cropProfile
+        ){
+
+          return [];
+
+        }
+
+
+
+        const results =
+          [];
+
+
+
+        products.forEach(function(product){
+
+
+          if(
+            !product
+            ||
+            !product.recommendationData
+          ){
+
+            return;
+
+          }
+
+
+
+          const data =
+            product.recommendationData;
+
+
+
+          let include =
+            false;
+
+
+
+          /*
+            Crop-specific product match
+          */
+
+
+          if(
+            Array.isArray(
+              data.applicableCrops
+            )
+            &&
+            data.applicableCrops.some(function(crop){
+
+              return (
+
+                cropProfile.applicableCrops.includes(
+                  crop
+                )
+
+              );
+
+            })
+          ){
+
+            include =
+              true;
+
+          }
+
+
+
+          /*
+            Crop planner context match
+          */
+
+
+          if(
+            Array.isArray(
+              data.recommendationContexts
+            )
+            &&
+            data.recommendationContexts.includes(
+              "crop-planner"
+            )
+          ){
+
+            include =
+              true;
+
+          }
+
+
+
+          /*
+            Universal products
+          */
+
+
+          if(
+            data.universal === true
+          ){
+
+            include =
+              true;
+
+          }
+
+
+
+          if(
+            include
+          ){
+
+            results.push(
+              product
+            );
+
+          }
+
+
+        });
+
+
+
+        return results;
+
+
       }
 
 
