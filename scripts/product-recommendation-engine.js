@@ -323,6 +323,31 @@ if(
 
 }
 
+/*
+  Recommendation Context Match
+*/
+
+
+if(
+  hasMatch(
+    recommendationData.recommendationContexts,
+    userProfile.context
+  )
+){
+
+  score +=
+    SCORE_VALUES.contextMatch;
+
+
+  reasons.push(
+
+    "Matches context: " +
+    userProfile.context
+
+  );
+
+}
+
 
 
   return {
