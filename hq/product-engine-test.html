@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Product Recommendation Engine Test
+</title>
+
+</head>
+
+
+<body>
+
+<h1>
+Product Recommendation Engine Test
+</h1>
+
+
+<p>
+Open the browser console.
+</p>
+
+
+<script src="../assets/data/products.js"></script>
+
+<script src="../scripts/product-recommendation-engine.js"></script>
+
+
+<script>
+
+console.log(
+  "BCP_PRODUCTS:",
+  window.BCP_PRODUCTS
+);
+
+
+console.log(
+  "Recommendation Engine:",
+  window.BCPProductRecommendation
+);
+
+
+console.log(
+  "Engine Version:",
+  BCPProductRecommendation.VERSION
+);
+
+
+console.log(
+  "Product Count:",
+  BCPProductRecommendation
+    .getProductList()
+    .length
+);
+
+
+console.log(
+  "PRD-001 Test:",
+  BCPProductRecommendation
+    .getProducts()["PRD-001"]
+);
+
+
+</script>
+
+
+</body>
+
+</html>
