@@ -184,6 +184,24 @@
 
   }
 
+  function getRecommendationData(
+  product
+){
+
+  if(
+    !product ||
+    !product.recommendationData
+  ){
+
+    return {};
+
+  }
+
+
+  return product.recommendationData;
+
+}
+
 
 
   namespace.VERSION =
@@ -208,6 +226,9 @@
 
   namespace.hasMatch =
     hasMatch;
+
+  namespace.getRecommendationData =
+    getRecommendationData;
 
 
 
