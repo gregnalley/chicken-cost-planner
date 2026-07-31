@@ -401,6 +401,22 @@ switch(
 
 }
 
+/*
+  Priority Adjustment
+*/
+
+
+if(
+  typeof recommendationData.priority ===
+  "number"
+){
+
+  score +=
+    recommendationData.priority *
+    SCORE_VALUES.priorityMultiplier;
+
+}
+
 
 
   return {
