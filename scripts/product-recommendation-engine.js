@@ -478,7 +478,11 @@ function getRecommendations(
   profile
 ){
 
-  return [];
+  const products =
+    getActiveProducts();
+
+
+  return products;
 
 }
 
