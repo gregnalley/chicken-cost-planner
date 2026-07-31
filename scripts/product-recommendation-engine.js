@@ -474,6 +474,13 @@ if(
 
 }
 
+function getRecommendations(
+  profile
+){
+
+  return [];
+
+}
 
 
   namespace.VERSION =
@@ -505,7 +512,10 @@ if(
     getRecommendationData;
 
   namespace.scoreProduct =
-    scoreProduct; 
+    scoreProduct;
+    
+  namespace.getRecommendations =
+    getRecommendations;  
 
 
   namespace.SCORE_VALUES =
