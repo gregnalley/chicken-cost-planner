@@ -482,12 +482,20 @@ function getRecommendations(
     getActiveProducts();
 
 
-  return products.map(function(product){
+  const scoredProducts =
+    products.map(function(product){
 
-    return scoreProduct(
-      product,
-      profile
-    );
+      return scoreProduct(
+        product,
+        profile
+      );
+
+    });
+
+
+  return scoredProducts.sort(function(a,b){
+
+    return b.score - a.score;
 
   });
 
