@@ -153,6 +153,40 @@
 
   }
 
+  function getActiveProducts()
+{
+
+  return getProductList()
+
+    .filter(function(product){
+
+
+      if(
+        !product
+      ){
+
+        return false;
+
+      }
+
+
+      if(
+        product.recommendationData &&
+        product.recommendationData.enabled === false
+      ){
+
+        return false;
+
+      }
+
+
+      return true;
+
+
+    });
+
+}
+
 
 
   function normalizeArray(
@@ -455,6 +489,8 @@ if(
   namespace.getProductList =
     getProductList;
 
+  namespace.getActiveProducts =
+    getActiveProducts;  
 
 
   namespace.normalizeArray =
