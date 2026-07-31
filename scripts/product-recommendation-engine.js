@@ -202,6 +202,31 @@
 
 }
 
+function scoreProduct(
+  product,
+  profile
+){
+
+  return {
+
+    productId:
+      product.id,
+
+
+    title:
+      product.title,
+
+
+    score:
+      0,
+
+
+    reasons:[]
+
+  };
+
+}
+
 
 
   namespace.VERSION =
@@ -230,6 +255,8 @@
   namespace.getRecommendationData =
     getRecommendationData;
 
+  namespace.scoreProduct =
+    scoreProduct; 
 
 
   namespace.SCORE_VALUES =
