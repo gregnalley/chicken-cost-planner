@@ -475,7 +475,8 @@ if(
 }
 
 function getRecommendations(
-  profile
+  profile,
+  limit
 ){
 
   const products =
@@ -493,11 +494,27 @@ function getRecommendations(
     });
 
 
-  return scoredProducts.sort(function(a,b){
+  const sortedProducts =
+    scoredProducts.sort(function(a,b){
 
-    return b.score - a.score;
+      return b.score - a.score;
 
-  });
+    });
+
+
+  if(
+    typeof limit === "number"
+  ){
+
+    return sortedProducts.slice(
+      0,
+      limit
+    );
+
+  }
+
+
+  return sortedProducts;
 
 }
 
