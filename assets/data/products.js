@@ -349,18 +349,11 @@ window.BCP_PRODUCTS = {
 },
 
 
-
-
-
-
-
-
-  
-
-"PRD-004": {
+"PRD-002": {
 
   id:
-    "PRD-004",
+    "PRD-002",
+
 
   category:
     "Feeding & Nutrition",
@@ -368,35 +361,35 @@ window.BCP_PRODUCTS = {
 
   subcategory:[
 
-    "diy-feeders",
+    "feeders",
 
-    "bulk-feeding",
+    "hanging-feeders",
 
-    "feed-waste-reduction",
+    "feed-storage",
 
-    "homestead-projects"
+    "flock-feeding"
 
   ],
 
 
   badge:
-    "🛠 DIY Homestead Pick",
+    "💰 Budget Pick",
 
 
   title:
-    "PVC DIY Chicken Feeder Ports",
+    "Large Plastic Hanging Chicken Feeder - 25 lbs.",
 
 
   description:
-    "DIY feeder ports allow chicken keepers to build their own gravity-style PVC feeder system. This approach can reduce feed waste, keep feed cleaner, and provide a customizable solution for backyard flocks.",
+    "A large hanging chicken feeder provides a simple and affordable way to supply feed to backyard flocks. The elevated design helps keep feed cleaner while reducing some scratching, spilling, and contamination compared with open feeding trays.",
 
 
   shortDescription:
-    "Build a customizable low-waste chicken feeder system.",
+    "Affordable hanging feeder for everyday backyard flock feeding.",
 
 
   tileBadge:
-    "🛠 DIY Pick",
+    "💰 Budget Choice",
 
 
   tileButtonText:
@@ -405,11 +398,11 @@ window.BCP_PRODUCTS = {
 
   bullets:[
 
-    "Allows custom feeder builds",
+    "Provides convenient feed access for small flocks",
 
-    "Can reduce feed waste and scratching",
+    "Helps reduce feed contamination from the ground",
 
-    "Great project for homesteaders"
+    "Useful for beginners setting up a first coop"
 
   ],
 
@@ -419,7 +412,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4kYzW7h",
+    "",
 
 
   image:
@@ -433,306 +426,177 @@ window.BCP_PRODUCTS = {
 
   recommendationData:{
 
-
-    productType:
-      "diy-feeder-component",
-
-      relatedProducts:[
-
-  "PRD-001",
-
-  "PRD-002",
-
-  "PRD-005"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "project-material",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "homestead",
-
-    "coop-upgrade"
-
-  ],
+        productType:
+      "hanging-feeder",
 
 
-  commonProblems:[
 
-    "reduce-feed-waste",
+    relatedProducts:[
 
-    "diy-feeding-system"
+      "PRD-001",
 
-  ],
+      "PRD-003",
 
-
-  idealUsers:[
-
-    "diy-builder",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-006"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "diy-feeder-build",
-
-      "feed-waste-reduction",
-
-      "bulk-feeding",
-
-      "homestead-project"
+      "PRD-006"
 
     ],
 
 
-    recommendationContexts:[
 
-      "diy-projects",
-
-      "best-chicken-feeders",
-
-      "flock-planner",
-
-      "feed-cost-calculator"
-
-    ],
+    purchaseBehavior:{
 
 
-    productRole:
-      "diy-solution",
+      purchaseType:
+        "one-time",
 
 
-    userCompatibility:{
+      replacementFrequency:
+        "2-5 years",
 
 
-      minimumExperience:
-        "intermediate",
+      affiliatePotential:
+        "medium"
 
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small",
-
-        "medium",
-
-        "large"
-
-      ]
 
     },
 
 
-    priority:
-      70,
+
+    buyerIntent:{
 
 
-    universal:
-      true,
+      buyerStages:[
+
+        "beginner-setup",
+
+        "flock-expansion"
+
+      ],
 
 
-    universalCategories:[
 
-      "chicken-care",
+      commonProblems:[
 
-      "feeding",
+        "basic-feed-access",
 
-      "diy-projects",
+        "reduce-feed-waste",
 
-      "homestead"
+        "keep-feed-clean"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "small-flock-owner",
+
+        "beginner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-006",
+
+      "PRD-037"
 
     ],
 
 
-    tags:[
 
-      "feeding",
+    recommendedFor:{
 
-      "diy",
 
-      "pvc-feeder",
+      crops:[],
 
-      "gravity-feeder",
 
-      "feed-waste",
+      planners:[
 
-      "homestead"
+        "flock-planner",
 
-    ],
+        "feed-crop-planner"
 
+      ],
 
-    enabled:
-      true
 
-  }
+      calculators:[
 
-},
+        "feed-cost-calculator",
 
-"PRD-005": {
+        "egg-profit-calculator"
 
-  id:
-    "PRD-005",
+      ],
 
-  category:
-    "Feeding & Nutrition",
 
+      pageTypes:[
 
-  subcategory:[
+        "best-chicken-feeders",
 
-    "automatic-feeders",
+        "chicken-feed-guide",
 
-    "treadle-feeders",
+        "chicken-supplies",
 
-    "rodent-control",
+        "flock-planner"
 
-    "premium-feeders"
+      ],
 
-  ],
 
+      cropStages:[],
 
-  badge:
-    "⭐ Premium Feeding Solution",
 
+      useCases:[
 
-  title:
-    "Grandpa's Feeders Automatic Treadle Feeder",
+        "daily-feeding",
 
+        "feed-access",
 
-  description:
-    "An automatic treadle feeder helps protect feed from rodents, wild birds, and weather exposure while providing convenient feeding for backyard chicken keepers who want a lower-maintenance solution.",
+        "feed-management",
 
+        "feed-waste-reduction"
 
-  shortDescription:
-    "Premium automatic feeder designed to reduce waste and pests.",
+      ],
 
 
-  tileBadge:
-    "⭐ Premium Pick",
+      tags:[
 
+        "feeder",
 
-  tileButtonText:
-    "View Price →",
+        "hanging-feeder",
 
+        "backyard-flock",
 
-  bullets:[
+        "beginner-equipment",
 
-    "Helps prevent rodent and wild bird access",
+        "feed-management"
 
-    "Reduces daily feeding chores",
+      ],
 
-    "Designed for long-term flock use"
 
-  ],
+      audiences:[
 
+        "beginner",
 
-  buttonText:
-    "View Current Price on Amazon →",
+        "small-flock",
 
+        "homesteader",
 
-  url:
-    "https://amzn.to/4jQf1uP",
+        "backyard-flock-owner"
 
+      ]
 
-  image:
-    "",
 
+    },
 
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "automatic-treadle-feeder",
-
-      relatedProducts:[
-
-  "PRD-001",
-
-  "PRD-002",
-
-  "PRD-004"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-006",
-
-  "PRD-007"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "automatic-feeding",
-
-      "feed-protection",
-
-      "rodent-control",
-
-      "feed-waste-reduction"
-
-    ],
 
 
     recommendationContexts:[
@@ -741,15 +605,17 @@ recommendedTogether:[
 
       "flock-planner",
 
-      "busy-owner",
+      "feed-cost-calculator",
 
-      "feed-cost-calculator"
+      "crop-planner"
 
     ],
 
 
+
     productRole:
-      "premium",
+      "primary",
+
 
 
     userCompatibility:{
@@ -767,6 +633,704 @@ recommendedTogether:[
 
         "small",
 
+        "medium"
+
+      ]
+
+    },
+
+
+
+    priority:
+      80,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "feeding",
+
+      "chicken-care",
+
+      "flock-management"
+
+    ],
+
+
+
+    tags:[
+
+      "feeder",
+
+      "hanging-feeder",
+
+      "backyard-flock",
+
+      "feed-management",
+
+      "beginner-equipment"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-003": {
+
+  id:
+    "PRD-003",
+
+
+  category:
+    "Feeding & Nutrition",
+
+
+  subcategory:[
+
+    "feeders",
+
+    "hanging-feeders",
+
+    "small-flock-feeders",
+
+    "beginner-equipment"
+
+  ],
+
+
+  badge:
+    "⭐ Best For Beginners",
+
+
+  title:
+    "10 lb Hanging Feeder",
+
+
+  description:
+    "A 10 lb hanging chicken feeder is a practical option for smaller backyard flocks. The elevated design helps keep feed cleaner than ground feeding while providing a simple and affordable solution for new chicken keepers.",
+
+
+  shortDescription:
+    "Compact feeder option for small backyard flocks and beginners.",
+
+
+  tileBadge:
+    "⭐ Beginner Pick",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Good fit for smaller backyard flocks",
+
+    "Helps keep feed cleaner off the ground",
+
+    "Simple setup for new chicken keepers"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+        productType:
+      "hanging-feeder",
+
+
+
+    relatedProducts:[
+
+      "PRD-001",
+
+      "PRD-002",
+
+      "PRD-006"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "2-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "first-flock"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "basic-feed-access",
+
+        "keep-feed-clean",
+
+        "simple-feeding-setup"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "beginner",
+
+        "small-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-006",
+
+      "PRD-037",
+
+      "PRD-038"
+
+    ],
+
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[
+
+        "feed-cost-calculator",
+
+        "egg-profit-calculator"
+
+      ],
+
+
+      pageTypes:[
+
+        "best-chicken-feeders",
+
+        "best-chickens-for-beginners",
+
+        "chicken-supplies",
+
+        "flock-planner"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "daily-feeding",
+
+        "small-flock-feeding",
+
+        "feed-management",
+
+        "clean-feeding"
+
+      ],
+
+
+      tags:[
+
+        "feeder",
+
+        "hanging-feeder",
+
+        "small-flock",
+
+        "beginner-equipment",
+
+        "backyard-chicken"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendationContexts:[
+
+      "best-chicken-feeders",
+
+      "best-chickens-for-beginners",
+
+      "flock-planner",
+
+      "feed-cost-calculator",
+
+      "crop-planner"
+
+    ],
+
+
+
+    productRole:
+      "primary",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      flockSize:[
+
+        "1-10 chickens",
+
+        "small-flock"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+
+    priority:
+      75,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "feeding",
+
+      "chicken-care",
+
+      "flock-management"
+
+    ],
+
+
+
+    tags:[
+
+      "feeder",
+
+      "hanging-feeder",
+
+      "small-flock",
+
+      "beginner-equipment",
+
+      "feed-management"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-004": {
+
+  id:
+    "PRD-004",
+
+
+  category:
+    "Feeding & Nutrition",
+
+
+  subcategory:[
+
+    "feeders",
+
+    "diy-feeders",
+
+    "pvc-feeders",
+
+    "feed-waste-reduction"
+
+  ],
+
+
+  badge:
+    "🔨 DIY Homestead Pick",
+
+
+  title:
+    "PVC DIY Chicken Feeder Ports",
+
+
+  description:
+    "PVC DIY chicken feeder ports allow backyard chicken keepers to build custom gravity feeders using PVC pipe and storage containers. This approach can reduce feed waste, limit scratching, and provide an affordable option for homesteaders who enjoy building their own equipment.",
+
+
+  shortDescription:
+    "Build a custom low-waste feeder using PVC components.",
+
+
+  tileBadge:
+    "🔨 DIY Project",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Allows custom DIY feeder construction",
+
+    "Can reduce feed waste and scratching",
+
+    "Useful for homesteads and budget-conscious keepers"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+        productType:
+      "diy-feeder-component",
+
+
+
+    relatedProducts:[
+
+      "PRD-001",
+
+      "PRD-002",
+
+      "PRD-005"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "homestead",
+
+        "diy-project",
+
+        "cost-saving"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "reduce-feed-cost",
+
+        "reduce-feed-waste",
+
+        "build-custom-equipment",
+
+        "feeding-management"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "homesteader",
+
+        "diy-builder",
+
+        "budget-conscious-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-002",
+
+      "PRD-005",
+
+      "PRD-037"
+
+    ],
+
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[
+
+        "feed-cost-calculator"
+
+      ],
+
+
+      pageTypes:[
+
+        "diy-chicken-projects",
+
+        "chicken-feeders",
+
+        "feed-cost-calculator",
+
+        "flock-planner"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "diy-feeding-system",
+
+        "feed-waste-reduction",
+
+        "custom-feeder-build",
+
+        "low-cost-feeding"
+
+      ],
+
+
+      tags:[
+
+        "diy-feeder",
+
+        "pvc-feeder",
+
+        "homestead-project",
+
+        "feed-waste",
+
+        "cost-saving"
+
+      ],
+
+
+      audiences:[
+
+        "homesteader",
+
+        "diy-builder",
+
+        "small-flock",
+
+        "budget-conscious"
+
+      ]
+
+
+    },
+
+
+
+    recommendationContexts:[
+
+      "flock-planner",
+
+      "feed-cost-calculator",
+
+      "crop-planner",
+
+      "diy-chicken-projects"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "intermediate",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements:[
+
+        "basic-diy-skills"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small",
+
         "medium",
 
         "large"
@@ -776,50 +1340,420 @@ recommendedTogether:[
     },
 
 
+
     priority:
-      95,
+      65,
+
 
 
     universal:
       true,
 
 
-    universalCategories:[
 
-      "chicken-care",
+    universalCategories:[
 
       "feeding",
 
-      "automation",
+      "diy-projects",
 
-      "flock-management"
+      "homestead-tools"
 
     ],
+
 
 
     tags:[
 
-      "feeding",
+      "diy-feeder",
 
-      "automatic-feeder",
+      "pvc-feeder",
 
-      "treadle-feeder",
+      "homestead",
 
-      "rodent-control",
+      "feed-management",
 
-      "premium",
-
-      "automation"
+      "low-cost"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
 
+
 },
+
+"PRD-005": {
+
+  id:
+    "PRD-005",
+
+
+  category:
+    "Feeding & Nutrition",
+
+
+  subcategory:[
+
+    "feeders",
+
+    "gravity-feeders",
+
+    "diy-feeders",
+
+    "bulk-feeding"
+
+  ],
+
+
+  badge:
+    "🏡 Homestead Feeding Solution",
+
+
+  title:
+    "PVC Gravity Feeder / Bulk Feeder System",
+
+
+  description:
+    "A PVC gravity feeder system provides a way to store and dispense chicken feed automatically using a larger capacity container and gravity-fed delivery. These systems can reduce daily feeding chores, limit feed waste, and work well for backyard flocks and homesteads.",
+
+
+  shortDescription:
+    "A bulk feeding solution for reducing daily feeding chores.",
+
+
+  tileBadge:
+    "🏡 Homestead Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Reduces the need for frequent refilling",
+
+    "Useful for larger backyard flocks",
+
+    "Can help manage feed waste and labor"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+        productType:
+      "gravity-feeder-system",
+
+
+
+    relatedProducts:[
+
+      "PRD-001",
+
+      "PRD-002",
+
+      "PRD-004"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "low-medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "homestead",
+
+        "flock-expansion",
+
+        "labor-reduction"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "reduce-feeding-time",
+
+        "reduce-feed-waste",
+
+        "bulk-feed-management",
+
+        "feeding-consistency"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "homesteader",
+
+        "small-flock-owner",
+
+        "experienced-backyard-keeper"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-004",
+
+      "PRD-006"
+
+    ],
+
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[
+
+        "feed-cost-calculator",
+
+        "egg-profit-calculator"
+
+      ],
+
+
+      pageTypes:[
+
+        "chicken-feeders",
+
+        "diy-chicken-projects",
+
+        "feed-cost-calculator",
+
+        "flock-planner"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "bulk-feeding",
+
+        "feed-management",
+
+        "reduce-labor",
+
+        "feed-waste-reduction"
+
+      ],
+
+
+      tags:[
+
+        "gravity-feeder",
+
+        "diy-feeder",
+
+        "bulk-feeding",
+
+        "homestead",
+
+        "labor-saving"
+
+      ],
+
+
+      audiences:[
+
+        "homesteader",
+
+        "small-flock",
+
+        "experienced-keeper",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendationContexts:[
+
+      "flock-planner",
+
+      "feed-cost-calculator",
+
+      "crop-planner",
+
+      "diy-chicken-projects"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "intermediate",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements:[
+
+        "basic-diy-skills"
+
+      ],
+
+
+      flockSize:[
+
+        "10+ chickens"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    priority:
+      70,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "feeding",
+
+      "diy-projects",
+
+      "homestead-tools"
+
+    ],
+
+
+
+    tags:[
+
+      "gravity-feeder",
+
+      "bulk-feeder",
+
+      "diy-feeder",
+
+      "feed-management",
+
+      "homestead"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+
+
+
+
+
+
+  
+
+
 
 "PRD-006": {
 
