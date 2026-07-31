@@ -184,6 +184,12 @@ window.BCPProductCropBridge =
           const data =
             product.recommendationData;
 
+console.log(
+  "TEST PRODUCT:",
+  product.id,
+  data.recommendedFor
+);
+
 
 
           let include =
