@@ -348,6 +348,59 @@ if(
 
 }
 
+/*
+  Product Role Match
+*/
+
+
+switch(
+  recommendationData.productRole
+){
+
+
+  case PRODUCT_ROLES.PRIMARY:
+
+    score +=
+      SCORE_VALUES.primaryProductRole;
+
+
+    reasons.push(
+      "Primary recommendation"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.SUPPORTING:
+
+    score +=
+      SCORE_VALUES.supportingProductRole;
+
+
+    reasons.push(
+      "Supporting product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.CONSUMABLE:
+
+    score +=
+      SCORE_VALUES.consumableProductRole;
+
+
+    reasons.push(
+      "Consumable product"
+    );
+
+    break;
+
+
+}
+
 
 
   return {
