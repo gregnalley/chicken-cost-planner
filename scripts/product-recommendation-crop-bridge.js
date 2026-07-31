@@ -330,7 +330,68 @@ if(
 
 
 
-        return results;
+                return results;
+
+
+      },
+
+
+
+    rankCropProducts:
+
+      function(products){
+
+
+        if(
+          !Array.isArray(products)
+        ){
+
+          return [];
+
+        }
+
+
+        return (
+
+          products
+            .slice()
+            .sort(function(a,b){
+
+
+              const priorityA =
+                a.recommendationData &&
+                a.recommendationData.priority
+
+                  ? 
+
+                  a.recommendationData.priority
+
+                  :
+
+                  0;
+
+
+
+              const priorityB =
+                b.recommendationData &&
+                b.recommendationData.priority
+
+                  ? 
+
+                  b.recommendationData.priority
+
+                  :
+
+                  0;
+
+
+
+              return priorityB - priorityA;
+
+
+            })
+
+        );
 
 
       }
