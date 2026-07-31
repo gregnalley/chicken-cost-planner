@@ -435,6 +435,22 @@ switch(
 
 }
 
+const cropMatch =
+  scoreCropMatch(
+    product,
+    profile
+  );
+
+
+score +=
+  cropMatch.score;
+
+
+reasons =
+  reasons.concat(
+    cropMatch.reasons
+  );
+
 /*
   Priority Adjustment
 */
