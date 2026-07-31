@@ -207,6 +207,56 @@ function scoreProduct(
   profile
 ){
 
+  let score =
+    0;
+
+
+  const reasons =
+    [];
+
+
+  const recommendationData =
+    getRecommendationData(
+      product
+    );
+
+
+  const buyerIntent =
+    recommendationData.buyerIntent ||
+    {};
+
+
+  const userProfile =
+    profile || {};
+
+
+
+  /*
+    Buyer Stage Match
+  */
+
+  if(
+    hasMatch(
+      buyerIntent.buyerStages,
+      userProfile.buyerStage
+    )
+  ){
+
+    score +=
+      SCORE_VALUES.buyerStageMatch;
+
+
+    reasons.push(
+
+      "Matches buyer stage: " +
+      userProfile.buyerStage
+
+    );
+
+  }
+
+
+
   return {
 
     productId:
@@ -218,10 +268,11 @@ function scoreProduct(
 
 
     score:
-      0,
+      score,
 
 
-    reasons:[]
+    reasons:
+      reasons
 
   };
 
