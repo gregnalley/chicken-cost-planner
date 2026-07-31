@@ -482,7 +482,14 @@ function getRecommendations(
     getActiveProducts();
 
 
-  return products;
+  return products.map(function(product){
+
+    return scoreProduct(
+      product,
+      profile
+    );
+
+  });
 
 }
 
