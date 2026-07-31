@@ -1,14 +1,15 @@
 window.BCP_PRODUCTS = {
 
 
-
- "PRD-001": {
+"PRD-001": {
 
   id:
     "PRD-001",
 
+
   category:
     "Feeding & Nutrition",
+
 
   subcategory:[
 
@@ -77,94 +78,179 @@ window.BCP_PRODUCTS = {
 
   recommendationData:{
 
-
-    productType:
+        productType:
       "treadle-feeder",
 
-      relatedProducts:[
-
-  "PRD-004",
-
-  "PRD-005"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "beginner-setup",
-
-    "flock-expansion",
-
-    "homestead"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "reduce-feed-waste",
+      "PRD-004",
 
-    "rodent-control",
-
-    "feeding-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-002",
-
-  "PRD-003"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "feed-protection",
-
-      "rodent-control",
-
-      "wild-bird-control",
-
-      "feed-waste-reduction",
-
-      "clean-feeding"
+      "PRD-005"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "flock-expansion",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "reduce-feed-waste",
+
+        "rodent-control",
+
+        "feeding-management"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-002",
+
+      "PRD-003"
+
+    ],
+
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[
+
+        "feed-cost-calculator",
+
+        "egg-profit-calculator"
+
+      ],
+
+
+      pageTypes:[
+
+        "best-chicken-feeders",
+
+        "chicken-feed-guide",
+
+        "flock-planner",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "feed-protection",
+
+        "rodent-control",
+
+        "wild-bird-control",
+
+        "feed-waste-reduction",
+
+        "clean-feeding"
+
+      ],
+
+
+      tags:[
+
+        "feeding",
+
+        "treadle-feeder",
+
+        "rodent-control",
+
+        "wild-bird-control",
+
+        "feed-waste",
+
+        "clean-feed",
+
+        "backyard-flock"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
 
 
     recommendationContexts:[
@@ -180,8 +266,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
-      "primary",
+      "supporting",
+
 
 
     userCompatibility:{
@@ -208,12 +296,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -225,6 +316,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -246,499 +338,24 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
 
-}, 
+
+},
+
+
+
+
+
+
+
 
   
-"PRD-002": {
-
-  id:
-    "PRD-002",
-
-  category:
-    "Feeding & Nutrition",
-
-
-  subcategory:[
-
-    "feeders",
-
-    "hanging-feeders",
-
-    "bulk-feeding",
-
-    "feed-storage"
-
-  ],
-
-
-  badge:
-    "Budget Pick",
-
-
-  title:
-    "Large Plastic Hanging Chicken Feeder - 25 lbs.",
-
-
-  description:
-    "A large hanging feeder is a straightforward and affordable option for small and medium backyard flocks. Suspending the feeder above the floor can help keep bedding out of the feed while reducing scratching and spilled-feed waste.",
-
-
-  shortDescription:
-    "Affordable large-capacity hanging feeder for small and medium flocks.",
-
-
-  tileBadge:
-    "Budget Pick",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Good capacity for small and medium flocks",
-
-    "Easy to refill and clean",
-
-    "Affordable option for first-time chicken keepers"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4p6kqHJ",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "hanging-feeder",
-
-      relatedProducts:[
-
-  "PRD-001",
-
-  "PRD-003",
-
-  "PRD-004"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "basic-feeding",
-
-    "feed-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-006",
-
-  "PRD-007"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "daily-feeding",
-
-      "bulk-feed-storage",
-
-      "feed-waste-reduction",
-
-      "easy-refill"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "best-chicken-feeders",
-
-      "flock-planner",
-
-      "feed-cost-calculator",
-
-      "crop-planner"
-
-    ],
-
-
-    productRole:
-      "primary",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small",
-
-        "medium",
-
-        "large"
-
-      ]
-
-    },
-
-
-    priority:
-      75,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "chicken-care",
-
-      "feeding",
-
-      "flock-management"
-
-    ],
-
-
-    tags:[
-
-      "feeding",
-
-      "hanging-feeder",
-
-      "bulk-feeding",
-
-      "feed-waste",
-
-      "easy-refill",
-
-      "backyard-flock"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
- "PRD-003": {
-
-  id:
-    "PRD-003",
-
-  category:
-    "Feeding & Nutrition",
-
-
-  subcategory:[
-
-    "feeders",
-
-    "hanging-feeders",
-
-    "small-flock-feeders"
-
-  ],
-
-
-  badge:
-    "Best For Beginners",
-
-
-  title:
-    "10 lb Hanging Feeder",
-
-
-  description:
-    "A compact hanging feeder is a practical option for a small backyard flock. Raising the feeder to approximately the chickens' back height can help keep bedding and dirt out of the feed while reducing scratching and unnecessary feed waste.",
-
-
-  shortDescription:
-    "A simple, affordable hanging feeder for small backyard flocks.",
-
-
-  tileBadge:
-    "Beginner Pick",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Well suited to very small backyard flocks",
-
-    "Simple to refill, clean, and reposition",
-
-    "An affordable option for first-time chicken keepers"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4eIMldo",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "small-flock-feeder",
-
-      relatedProducts:[
-
-  "PRD-001",
-
-  "PRD-002",
-
-  "PRD-004"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "basic-feeding",
-
-    "feed-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-006",
-
-  "PRD-007"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "daily-feeding",
-
-      "small-flock-management",
-
-      "feed-waste-reduction",
-
-      "easy-refill"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "best-chicken-feeders",
-
-      "beginner-chicken-guide",
-
-      "flock-planner",
-
-      "crop-planner"
-
-    ],
-
-
-    productRole:
-      "primary",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      65,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "chicken-care",
-
-      "feeding",
-
-      "small-flock"
-
-    ],
-
-
-    tags:[
-
-      "feeding",
-
-      "small-flock",
-
-      "hanging-feeder",
-
-      "beginner",
-
-      "feed-waste",
-
-      "easy-refill"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-}, 
 
 "PRD-004": {
 
@@ -8113,44 +7730,45 @@ recommendedTogether:[
 
 },
 
-"PRD-037": {
+
+"PRD-025": {
 
   id:
-    "PRD-037",
+    "PRD-025",
 
   category:
-    "Feeding & Nutrition",
+    "Predator Protection",
 
 
   subcategory:[
 
-    "poultry-grit",
+    "electric-fence-accessories",
 
-    "digestion-support",
+    "solar-energizers",
 
-    "supplemental-feeding"
+    "portable-power"
 
   ],
 
 
   badge:
-    "🐣 Poultry Grit",
+    "⚡ Electric Netting Power Source",
 
 
   title:
-    "Poultry Grit",
+    "Rent A Coop - Solar Energizer",
 
 
   description:
-    "Poultry grit provides chickens with a source of insoluble material that helps grind feed and other materials in the gizzard. As chicks begin consuming items beyond starter feed, appropriate grit can support normal digestion.",
+    "A solar energizer provides power for electric poultry netting systems, allowing portable predator protection setups without requiring a permanent electrical connection.",
 
 
   shortDescription:
-    "Supports digestion as chicks begin eating varied foods.",
+    "Solar power supply for portable poultry fencing systems.",
 
 
   tileBadge:
-    "🐣 Digestion Support",
+    "⚡ Required Companion Product",
 
 
   tileButtonText:
@@ -8159,11 +7777,11 @@ recommendedTogether:[
 
   bullets:[
 
-    "Made from natural washed granite",
+    "Powers poultry netting systems",
 
-    "Supports digestion",
+    "Portable solar operation",
 
-    "High quality and good value"
+    "Includes grounding components"
 
   ],
 
@@ -8173,7 +7791,7 @@ recommendedTogether:[
 
 
   url:
-    "https://amzn.to/4aGba7i",
+    "https://amzn.to/4f1ilZ7",
 
 
   image:
@@ -8189,483 +7807,11 @@ recommendedTogether:[
 
 
     productType:
-      "poultry-grit",
+      "electric-fence-energizer",
 
       relatedProducts:[
 
-  "PRD-035",
-
-  "PRD-036"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "recurring",
-
-  replacementFrequency:
-    "monthly-to-seasonal",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-035"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "digestion-support",
-
-      "supplemental-feeding",
-
-      "transition-to-adult-feed"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chicken-feed-guide",
-
-      "nutrition-guide"
-
-    ],
-
-
-    productRole:
-      "consumable",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small",
-
-        "medium",
-
-        "large"
-
-      ]
-
-    },
-
-
-    priority:
-      65,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "nutrition",
-
-      "chicken-health",
-
-      "baby-chicks"
-
-    ],
-
-
-    tags:[
-
-      "grit",
-
-      "digestion",
-
-      "nutrition",
-
-      "baby-chicks"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-038": {
-
-  id:
-    "PRD-038",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "isolation",
-
-    "temporary-care",
-
-    "sick-chick-management"
-
-  ],
-
-
-  badge:
-    "🐣 Chick Isolation Area",
-
-
-  title:
-    "Small Isolation Pen",
-
-
-  description:
-    "A small isolation area provides a temporary space for separating weak, injured, or recovering chicks. Many chicken keepers use simple DIY solutions such as plastic totes or small containers lined with bedding.",
-
-
-  shortDescription:
-    "Temporary isolation solution for vulnerable chicks.",
-
-
-  tileBadge:
-    "🐣 Health Support",
-
-
-  tileButtonText:
-    "View Options →",
-
-
-  bullets:[
-
-    "Best as a DIY temporary solution",
-
-    "Many low-cost container options",
-
-    "Simple and inexpensive to create"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "chick-isolation-area",
-
-      relatedProducts:[
-
-  "PRD-030",
-
-  "PRD-039",
-
-  "PRD-043",
-
-  "PRD-044"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "project-material",
-
-  replacementFrequency:
-    "as-needed",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-041"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "chick-isolation",
-
-      "weak-chick-care",
-
-      "temporary-recovery"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "chick-health-guide",
-
-      "baby-chick-hub",
-
-      "sick-chick-guide"
-
-    ],
-
-
-    productRole:
-      "diy-solution",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      70,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "health",
-
-      "emergency-care"
-
-    ],
-
-
-    tags:[
-
-      "isolation",
-
-      "weak-chick",
-
-      "health",
-
-      "temporary"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-039": {
-
-  id:
-    "PRD-039",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "weight-monitoring",
-
-    "health-tracking",
-
-    "chick-care-tools"
-
-  ],
-
-
-  badge:
-    "🐣 Chick Monitoring Tool",
-
-
-  title:
-    "Small Kitchen Scale",
-
-
-  description:
-    "A small digital kitchen scale allows chicken keepers to monitor chick weight changes and identify potential growth concerns early.",
-
-
-  shortDescription:
-    "Track chick growth and health changes.",
-
-
-  tileBadge:
-    "🐣 Monitoring Tool",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Compact and easy to store",
-
-    "Battery operated",
-
-    "Easy to clean"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4veJ5LB",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "chick-weight-scale",
-
-      relatedProducts:[
-
-  "PRD-038",
-
-  "PRD-034",
-
-  "PRD-040"
+  "PRD-024"
 
 ],
 
@@ -8675,1381 +7821,7 @@ purchaseBehavior:{
     "one-time",
 
   replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-recommendedTogether:[
-
-  "PRD-038"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "growth-monitoring",
-
-      "health-monitoring",
-
-      "weak-chick-identification"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "chick-health-guide",
-
-      "baby-chick-hub"
-
-    ],
-
-
-    productRole:
-      "diagnostic",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      70,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "health-monitoring"
-
-    ],
-
-
-    tags:[
-
-      "scale",
-
-      "weight-monitoring",
-
-      "chick-health",
-
-      "growth"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-040": {
-
-  id:
-    "PRD-040",
-
-  category:
-    "Chicken Health & Maintenance",
-
-
-  subcategory:[
-
-    "probiotics",
-
-    "digestive-support",
-
-    "supplements"
-
-  ],
-
-
-  badge:
-    "🐣 Digestive Health Support",
-
-
-  title:
-    "Probiotics",
-
-
-  description:
-    "Probiotic supplements can support digestive health in chicks by helping maintain beneficial gut bacteria, especially during stressful periods or transitions.",
-
-
-  shortDescription:
-    "Digestive support supplement for baby chicks.",
-
-
-  tileBadge:
-    "🐣 Health Support",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Easy to add to food or water",
-
-    "Convenient premeasured packets",
-
-    "Simple chick health support"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4b9tANW",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "poultry-probiotic",
-
-      relatedProducts:[
-
-  "PRD-034",
-
-  "PRD-035",
-
-  "PRD-039"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "as-needed",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-recommendedTogether:[
-
-  "PRD-034"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "digestive-support",
-
-      "stress-support",
-
-      "baby-chick-health"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "chick-health-guide",
-
-      "baby-chick-hub"
-
-    ],
-
-
-    productRole:
-      "consumable",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      70,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "health-support"
-
-    ],
-
-
-    tags:[
-
-      "probiotics",
-
-      "chick-health",
-
-      "supplement",
-
-      "digestion"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-041": {
-
-  id:
-    "PRD-041",
-
-  category:
-    "Chicken Health & Maintenance",
-
-
-  subcategory:[
-
-    "brooder-cleaning",
-
-    "brooder-liners",
-
-    "chick-safety",
-
-    "isolation-supplies"
-
-  ],
-
-
-  badge:
-    "🐣 Pasty Butt Prevention Support",
-
-
-  title:
-    "Non-slip Brooder Liner",
-
-
-  description:
-    "Non-slip brooder liners provide a cleaner and safer surface for young chicks while helping improve footing and reduce mess in brooders or isolation areas.",
-
-
-  shortDescription:
-    "Reusable liner option for cleaner chick environments.",
-
-
-  tileBadge:
-    "🐣 Brooder Support",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Can be cut to fit isolation areas",
-
-    "Helps control odors",
-
-    "Good value reusable option"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/44jtXld",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "brooder-liner",
-
-      relatedProducts:[
-
-  "PRD-029",
-
-  "PRD-038",
-
-  "PRD-042"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "seasonal",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "problem-solving"
-
-  ],
-
-
-  commonProblems:[
-
-    "sick-chick",
-
-    "injury-care",
-
-    "sanitation"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-030"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "brooder-cleaning",
-
-      "chick-safety",
-
-      "isolation-care",
-
-      "sanitation"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chick-health-guide",
-
-      "brooder-guide"
-
-    ],
-
-
-    productRole:
-      "supporting",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      65,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "cleanliness",
-
-      "health-support"
-
-    ],
-
-
-    tags:[
-
-      "brooder",
-
-      "liner",
-
-      "chick-health",
-
-      "cleaning",
-
-      "isolation"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-042": {
-
-  id:
-    "PRD-042",
-
-  category:
-    "Chicken Health & Maintenance",
-
-
-  subcategory:[
-
-    "sanitation",
-
-    "cleaning",
-
-    "brooder-maintenance"
-
-  ],
-
-
-  badge:
-    "🧼 Sanitation Supply",
-
-
-  title:
-    "Disinfecting Wipes",
-
-
-  description:
-    "Disinfecting wipes provide a convenient way to sanitize brooder equipment, isolation areas, feeders, and waterers to help maintain cleaner chick environments.",
-
-
-  shortDescription:
-    "Convenient sanitation supply for chick care areas.",
-
-
-  tileBadge:
-    "🧼 Health Essential",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Powerful germ control",
-
-    "Unscented options are preferred around chicks",
-
-    "Useful for equipment cleaning"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4y9iJgJ",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "disinfecting-wipes",
-
-      relatedProducts:[
-
-  "PRD-029",
-
-  "PRD-036",
-
-  "PRD-038"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "monthly",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "problem-solving"
-
-  ],
-
-
-  commonProblems:[
-
-    "sick-chick",
-
-    "injury-care",
-
-    "sanitation"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-043"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "brooder-cleaning",
-
-      "equipment-sanitizing",
-
-      "disease-prevention"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chick-health-guide",
-
-      "brooder-guide"
-
-    ],
-
-
-    productRole:
-      "supporting",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small",
-
-        "medium"
-
-      ]
-
-    },
-
-
-    priority:
-      70,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "health",
-
-      "cleanliness"
-
-    ],
-
-
-    tags:[
-
-      "sanitation",
-
-      "cleaning",
-
-      "brooder",
-
-      "health"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-043": {
-
-  id:
-    "PRD-043",
-
-  category:
-    "First Aid & Emergency Care",
-
-
-  subcategory:[
-
-    "protective-equipment",
-
-    "sick-chick-care",
-
-    "sanitation"
-
-  ],
-
-
-  badge:
-    "🩺 First Aid Supply",
-
-
-  title:
-    "Disposable Gloves",
-
-
-  description:
-    "Disposable gloves provide a protective barrier when handling sick or injured chicks and can help reduce the chance of spreading contaminants between birds.",
-
-
-  shortDescription:
-    "Protective gloves for chick care and sanitation.",
-
-
-  tileBadge:
-    "🩺 Health Supply",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Creates a barrier during care",
-
-    "Nitrile and latex-free options",
-
-    "100 count box"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4byS8jx",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "disposable-gloves",
-
-      relatedProducts:[
-
-  "PRD-038",
-
-  "PRD-044"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "as-needed",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "problem-solving"
-
-  ],
-
-
-  commonProblems:[
-
-    "sick-chick",
-
-    "injury-care",
-
-    "sanitation"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-042"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "sick-chick-care",
-
-      "first-aid",
-
-      "sanitation"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "chick-health-guide",
-
-      "baby-chick-hub"
-
-    ],
-
-
-    productRole:
-      "emergency",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      60,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "health",
-
-      "emergency-care"
-
-    ],
-
-
-    tags:[
-
-      "gloves",
-
-      "first-aid",
-
-      "sanitation",
-
-      "chick-health"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-044": {
-
-  id:
-    "PRD-044",
-
-  category:
-    "First Aid & Emergency Care",
-
-
-  subcategory:[
-
-    "oral-medication",
-
-    "hydration-support",
-
-    "sick-chick-care"
-
-  ],
-
-
-  badge:
-    "🩺 Emergency Care Tool",
-
-
-  title:
-    "Syringe",
-
-
-  description:
-    "Small syringes are useful tools for providing oral medications, hydration support, or measured amounts of fluids when caring for weak or sick chicks.",
-
-
-  shortDescription:
-    "Small dosing tool for chick emergency care.",
-
-
-  tileBadge:
-    "🩺 First Aid Tool",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Useful for oral medication delivery",
-
-    "1 ml size for small dosages",
-
-    "Excellent value pack"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4go7VVP",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "oral-syringe",
-
-      relatedProducts:[
-
-  "PRD-034",
-
-  "PRD-038",
-
-  "PRD-040"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "emergency-supply",
-
-  replacementFrequency:
-    "as-needed",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "problem-solving"
-
-  ],
-
-
-  commonProblems:[
-
-    "sick-chick",
-
-    "injury-care",
-
-    "sanitation"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-034"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "sick-chick-care",
-
-      "hydration-support",
-
-      "medication-delivery"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "chick-health-guide",
-
-      "baby-chick-hub"
-
-    ],
-
-
-    productRole:
-      "emergency",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      65,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "health",
-
-      "emergency-care"
-
-    ],
-
-
-    tags:[
-
-      "syringe",
-
-      "first-aid",
-
-      "medication",
-
-      "chick-health"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-045": {
-
-  id:
-    "PRD-045",
-
-  category:
-    "Predator Protection",
-
-
-  subcategory:[
-
-    "hardware-cloth",
-
-    "coop-security",
-
-    "predator-exclusion",
-
-    "fencing"
-
-  ],
-
-
-  badge:
-    "🛡 Hardware Cloth Essential",
-
-
-  title:
-    "Hardware Cloth Installation Supplies",
-
-
-  description:
-    "1/2 inch hardware cloth is a critical material for protecting chickens by closing openings where predators and pests may enter. Proper installation with secure fasteners improves coop security.",
-
-
-  shortDescription:
-    "Essential material for predator-proofing chicken areas.",
-
-
-  tileBadge:
-    "🛡 Predator Protection",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Helps keep out predators",
-
-    "Hot-dipped galvanized for durability",
-
-    "1/2 inch openings help block pests"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4paq2Rd",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "hardware-cloth",
-
-      relatedProducts:[
-
-  "PRD-008",
-
-  "PRD-019",
-
-  "PRD-024"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "project-material",
-
-  replacementFrequency:
-    "5+ years",
+    "3-5 years",
 
   affiliatePotential:
     "medium"
@@ -10093,7 +7865,7 @@ buyerIntent:{
 
 recommendedTogether:[
 
-  "PRD-008"
+  "PRD-024"
 
 ],
 
@@ -10106,11 +7878,11 @@ recommendedTogether:[
 
     useCases:[
 
-      "predator-prevention",
+      "electric-fence-power",
 
-      "coop-security",
+      "predator-protection",
 
-      "pest-exclusion"
+      "portable-pasture"
 
     ],
 
@@ -10119,15 +7891,257 @@ recommendedTogether:[
 
       "predator-guide",
 
-      "coop-planner",
+      "electric-netting-products",
 
-      "flock-planner"
+      "pasture-management"
 
     ],
 
 
     productRole:
-      "diy-solution",
+      "companion",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "intermediate",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    priority:
+      85,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "predator-protection",
+
+      "pasture-management"
+
+    ],
+
+
+    tags:[
+
+      "energizer",
+
+      "solar",
+
+      "electric-fence",
+
+      "predator",
+
+      "portable"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-026": {
+
+  id:
+    "PRD-026",
+
+  category:
+    "Predator Protection",
+
+
+  subcategory:[
+
+    "trail-cameras",
+
+    "predator-identification",
+
+    "cellular-monitoring",
+
+    "security-monitoring"
+
+  ],
+
+
+  badge:
+    "📷 Predator Investigation Tool",
+
+
+  title:
+    "Spypoint Twin Pack Cellular Cameras",
+
+
+  description:
+    "If you are having an issue with predators but don't know what might be the cause, a trail camera can help identify what is visiting your property and provide valuable information for improving flock protection.",
+
+
+  shortDescription:
+    "Identify unknown predators affecting your flock.",
+
+
+  tileBadge:
+    "📷 Predator Detection",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Cellular photo delivery",
+
+    "Helps identify predator activity",
+
+    "Useful around coops and runs"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4y8zfh8",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "cellular-trail-camera",
+
+      relatedProducts:[
+
+  "PRD-027",
+
+  "PRD-008",
+
+  "PRD-024"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "3-5 years",
+
+  affiliatePotential:
+    "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "coop-upgrade",
+
+    "problem-solving",
+
+    "homestead"
+
+  ],
+
+
+  commonProblems:[
+
+    "predator-protection",
+
+    "flock-security"
+
+  ],
+
+
+  idealUsers:[
+
+    "backyard-flock-owner",
+
+    "diy-builder",
+
+    "small-homestead"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-027"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "predator-identification",
+
+      "property-monitoring",
+
+      "flock-security",
+
+      "wildlife-monitoring"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "predator-guide",
+
+      "missing-chicken-guide",
+
+      "flock-security",
+
+      "coop-planner"
+
+    ],
+
+
+    productRole:
+      "diagnostic",
 
 
     userCompatibility:{
@@ -10155,7 +8169,7 @@ recommendedTogether:[
 
 
     priority:
-      95,
+      85,
 
 
     universal:
@@ -10166,24 +8180,2292 @@ recommendedTogether:[
 
       "predator-protection",
 
-      "coop-building",
+      "security",
 
-      "security"
+      "flock-management"
 
     ],
 
 
     tags:[
 
-      "hardware-cloth",
+      "trail-camera",
 
       "predator",
 
-      "coop",
+      "wildlife",
 
       "security",
 
-      "fencing"
+      "monitoring"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-027": {
+
+  id:
+    "PRD-027",
+
+  category:
+    "Predator Protection",
+
+
+  subcategory:[
+
+    "trail-camera-accessories",
+
+    "memory-storage",
+
+    "camera-supplies"
+
+  ],
+
+
+  badge:
+    "📷 Trail Camera Accessory",
+
+
+  title:
+    "microSD Card",
+
+
+  description:
+    "A microSD card provides local storage for trail cameras that capture photos and videos of predator activity around chicken coops and property areas.",
+
+
+  shortDescription:
+    "Required storage accessory for trail cameras.",
+
+
+  tileBadge:
+    "📷 Camera Accessory",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "High-speed memory storage",
+
+    "Durable outdoor design options",
+
+    "Includes SD adapter"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4v9ycux",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "camera-storage-accessory",
+
+      relatedProducts:[
+
+  "PRD-026"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "consumable",
+
+  replacementFrequency:
+    "1-3 years",
+
+  affiliatePotential:
+    "low"
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-026"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "camera-storage",
+
+      "predator-monitoring",
+
+      "wildlife-recording"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "predator-guide",
+
+      "trail-camera-guide"
+
+    ],
+
+
+    productRole:
+      "companion",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    priority:
+      60,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "security",
+
+      "predator-protection"
+
+    ],
+
+
+    tags:[
+
+      "micro-sd",
+
+      "trail-camera",
+
+      "storage",
+
+      "camera-accessory"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-028": {
+
+  id:
+    "PRD-028",
+
+  category:
+    "Chicken Health & Maintenance",
+
+
+  subcategory:[
+
+    "hot-weather-protection",
+
+    "shade",
+
+    "heat-management"
+
+  ],
+
+
+  badge:
+    "☀️ Hot Weather Protection",
+
+
+  title:
+    "Shade Cloth",
+
+
+  description:
+    "Providing adequate shade is essential during hot weather. Shade cloth can help reduce direct sunlight exposure and create cooler areas where chickens can escape extreme heat.",
+
+
+  shortDescription:
+    "Helps protect chickens during hot weather.",
+
+
+  tileBadge:
+    "☀️ Summer Essential",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Provides up to 90% shade",
+
+    "Durable outdoor material",
+
+    "Available in multiple sizes"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4aI0NQl",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "shade-cloth",
+
+      relatedProducts:[
+
+  "PRD-007",
+
+  "PRD-006",
+
+  "PRD-014"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "3-5 years",
+
+  affiliatePotential:
+    "medium"
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-007"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "heat-management",
+
+      "summer-flock-care",
+
+      "weather-protection"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "hot-weather-chickens",
+
+      "flock-planner",
+
+      "coop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    priority:
+      90,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "chicken-health",
+
+      "weather-management",
+
+      "flock-care"
+
+    ],
+
+
+    tags:[
+
+      "shade",
+
+      "heat",
+
+      "summer",
+
+      "weather",
+
+      "chicken-comfort"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-029": {
+
+  id:
+    "PRD-029",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "brooders",
+
+    "chick-housing",
+
+    "starter-systems"
+
+  ],
+
+
+  badge:
+    "🐣 Brooder All-Inclusive System",
+
+
+  title:
+    "Rent A Coop Brooder",
+
+
+  description:
+    "A complete brooder system provides a controlled environment for raising baby chicks during their first weeks of life. This system includes components designed to simplify chick care.",
+
+
+  shortDescription:
+    "Complete brooder setup for raising baby chicks.",
+
+
+  tileBadge:
+    "🐣 Chick Starter Pick",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "All-inclusive chick setup",
+
+    "Easy to clean",
+
+    "Designed for chicks through their first six weeks"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4yeBpvO",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "brooder-system",
+
+      relatedProducts:[
+
+  "PRD-031",
+
+  "PRD-033",
+
+  "PRD-035",
+
+  "PRD-036",
+
+  "PRD-030"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "5+ years",
+
+  affiliatePotential:
+    "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-031",
+
+  "PRD-033",
+
+  "PRD-036"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "baby-chick-care",
+
+      "chick-housing",
+
+      "brooding"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "chick-health-guide",
+
+      "beginner-chicken-guide"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      95,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "chicken-care"
+
+    ],
+
+
+    tags:[
+
+      "brooder",
+
+      "baby-chicks",
+
+      "chick-care",
+
+      "beginner"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-030": {
+
+  id:
+    "PRD-030",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "brooder-bedding",
+
+    "pine-shavings",
+
+    "cleanliness"
+
+  ],
+
+
+  badge:
+    "🐣 Brooder Bedding Essential",
+
+
+  title:
+    "Pine Shaving Bedding",
+
+
+  description:
+    "Pine shavings provide absorbent bedding material for brooders. Proper bedding management helps maintain cleaner conditions while reducing moisture buildup around growing chicks.",
+
+
+  shortDescription:
+    "Absorbent bedding for cleaner brooders.",
+
+
+  tileBadge:
+    "🐣 Chick Care Essential",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "100% pine and compostable",
+
+    "Fresh natural smell",
+
+    "Low dust and absorbent"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4f1Y1a5",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "brooder-bedding",
+
+      relatedProducts:[
+
+  "PRD-029",
+
+  "PRD-038",
+
+  "PRD-041"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "recurring",
+
+  replacementFrequency:
+    "weekly-to-monthly",
+
+  affiliatePotential:
+    "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-029"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "baby-chick-care",
+
+      "brooder-cleaning",
+
+      "moisture-management"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "chick-health-guide",
+
+      "brooder-guide"
+
+    ],
+
+
+    productRole:
+      "consumable",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      85,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "chicken-care",
+
+      "cleanliness"
+
+    ],
+
+
+    tags:[
+
+      "bedding",
+
+      "pine-shavings",
+
+      "brooder",
+
+      "chicks",
+
+      "cleaning"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-031": {
+
+  id:
+    "PRD-031",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "brooder-heating",
+
+    "heat-plates",
+
+    "radiant-heat",
+
+    "chick-comfort"
+
+  ],
+
+
+  badge:
+    "🐣 Brooder Heating Plate",
+
+
+  title:
+    "Rent A Coop Brooder Plate",
+
+
+  description:
+    "Radiant heat helps chicks regulate their body temperature naturally, similar to the way they would warm themselves under a mother hen. Adjustable heat plates provide an efficient brooder heating option.",
+
+
+  shortDescription:
+    "Energy-efficient radiant heat source for baby chicks.",
+
+
+  tileBadge:
+    "🐣 Recommended Heat Source",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Adjustable feet grow with chicks",
+
+    "Energy efficient heating option",
+
+    "Anti-roosting cone included"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4ys7ssn",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "brooder-heat-plate",
+
+      relatedProducts:[
+
+  "PRD-029",
+
+  "PRD-032",
+
+  "PRD-033"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "3-5 years",
+
+  affiliatePotential:
+    "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-029",
+
+  "PRD-033"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "baby-chick-heating",
+
+      "brooder-temperature-control",
+
+      "energy-efficient-brooding"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "brooder-guide",
+
+      "beginner-chicken-guide"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      95,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "chick-care",
+
+      "brooding"
+
+    ],
+
+
+    tags:[
+
+      "brooder",
+
+      "heat-plate",
+
+      "baby-chicks",
+
+      "radiant-heat",
+
+      "energy-efficient"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-032": {
+
+  id:
+    "PRD-032",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "brooder-heating",
+
+    "heat-lamps",
+
+    "supplemental-heat"
+
+  ],
+
+
+  badge:
+    "🔥 Brooder Heat Lamp",
+
+
+  title:
+    "300 Watt Brooder Heat Lamp",
+
+
+  description:
+    "A brooder heat lamp provides directional heat for chick brooding environments and can also be used in certain coop heating applications when properly installed and monitored.",
+
+
+  shortDescription:
+    "Traditional brooder heating option for chick warmth.",
+
+
+  tileBadge:
+    "🔥 Heat Option",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Adjustable temperature settings",
+
+    "Provides wider heat coverage",
+
+    "Protective grill helps protect chicks"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4ys7ssn",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "brooder-heat-lamp",
+
+      relatedProducts:[
+
+  "PRD-031",
+
+  "PRD-033"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "1-3 years",
+
+  affiliatePotential:
+    "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-033"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "baby-chick-heating",
+
+      "brooder-temperature-control"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "brooder-guide"
+
+    ],
+
+
+    productRole:
+      "alternative",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      75,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "brooding"
+
+    ],
+
+
+    tags:[
+
+      "heat-lamp",
+
+      "brooder",
+
+      "baby-chicks",
+
+      "heating"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-033": {
+
+  id:
+    "PRD-033",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "brooder-monitoring",
+
+    "temperature-monitoring",
+
+    "chick-health"
+
+  ],
+
+
+  badge:
+    "🌡 Brooder Monitoring Tool",
+
+
+  title:
+    "Temp Pro Digital Thermometer",
+
+
+  description:
+    "A digital thermometer helps chicken keepers monitor brooder temperatures and make adjustments to maintain a comfortable environment for growing chicks.",
+
+
+  shortDescription:
+    "Monitor brooder temperatures accurately.",
+
+
+  tileBadge:
+    "🌡 Chick Safety Tool",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Fast refresh rate",
+
+    "Large easy-to-read display",
+
+    "Helps prevent temperature mistakes"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4wx83ag",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "digital-thermometer",
+
+      relatedProducts:[
+
+  "PRD-031",
+
+  "PRD-032",
+
+  "PRD-039"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "3-5 years",
+
+  affiliatePotential:
+    "low"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-031",
+
+  "PRD-032"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "temperature-monitoring",
+
+      "brooder-management",
+
+      "chick-health-monitoring"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "brooder-guide",
+
+      "chick-health-guide"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      85,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "monitoring",
+
+      "chick-health"
+
+    ],
+
+
+    tags:[
+
+      "thermometer",
+
+      "brooder",
+
+      "temperature",
+
+      "chick-health"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-034": {
+
+  id:
+    "PRD-034",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "electrolytes",
+
+    "hydration-support",
+
+    "chick-supplements"
+
+  ],
+
+
+  badge:
+    "💧 Chick Health Support",
+
+
+  title:
+    "Sav-A-Chick Electrolyte Supplement",
+
+
+  description:
+    "Electrolyte supplements can provide hydration support during stressful situations such as shipping, environmental changes, or periods when chicks may need additional support.",
+
+
+  shortDescription:
+    "Hydration support supplement for baby chicks.",
+
+
+  tileBadge:
+    "💧 Chick Support",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Convenient premeasured packets",
+
+    "Supports hydration",
+
+    "Easy to add to drinking water"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4gwEjFT",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "electrolyte-supplement",
+
+      relatedProducts:[
+
+  "PRD-040",
+
+  "PRD-039",
+
+  "PRD-044"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "consumable",
+
+  replacementFrequency:
+    "as-needed",
+
+  affiliatePotential:
+    "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-036"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "hydration-support",
+
+      "stress-support",
+
+      "baby-chick-care"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "chick-health-guide"
+
+    ],
+
+
+    productRole:
+      "consumable",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      70,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "health-support"
+
+    ],
+
+
+    tags:[
+
+      "electrolytes",
+
+      "chicks",
+
+      "hydration",
+
+      "supplement"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-035": {
+
+  id:
+    "PRD-035",
+
+  category:
+    "Feeding & Nutrition",
+
+
+  subcategory:[
+
+    "starter-feed",
+
+    "chick-nutrition",
+
+    "medicated-feed"
+
+  ],
+
+
+  badge:
+    "🐣 Chick Starter Feed",
+
+
+  title:
+    "Medicated Chick Starter Feed",
+
+
+  description:
+    "Medicated chick starter feed provides young chicks with a balanced nutritional foundation while including amprolium as a coccidiosis prevention aid when used according to label directions.",
+
+
+  shortDescription:
+    "Complete starter nutrition for growing chicks.",
+
+
+  tileBadge:
+    "🐣 Nutrition Essential",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "5 lb starter bag option",
+
+    "Provides chick nutrition support",
+
+    "Good value for beginning flocks"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4foryfh",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "chick-starter-feed",
+
+      relatedProducts:[
+
+  "PRD-036",
+
+  "PRD-037",
+
+  "PRD-029"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "recurring",
+
+  replacementFrequency:
+    "weekly-to-monthly",
+
+  affiliatePotential:
+    "high"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-036"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "baby-chick-nutrition",
+
+      "starter-feeding",
+
+      "early-growth"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "chick-feeding-guide",
+
+      "beginner-chicken-guide"
+
+    ],
+
+
+    productRole:
+      "consumable",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      95,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "nutrition",
+
+      "chicken-feed"
+
+    ],
+
+
+    tags:[
+
+      "chick-feed",
+
+      "starter-feed",
+
+      "baby-chicks",
+
+      "nutrition"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-036": {
+
+  id:
+    "PRD-036",
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "chick-feeders",
+
+    "chick-waterers",
+
+    "brooder-supplies",
+
+    "starter-equipment"
+
+  ],
+
+
+  badge:
+    "🐣 Small Chick Feeder and Waterer Combo",
+
+
+  title:
+    "Small Chick Feeder and Waterer Combo",
+
+
+  description:
+    "Small chick feeder and waterer sets provide beginner chicken keepers with simple equipment for raising young chicks. Keeping feed and water elevated slightly helps reduce contamination from bedding and scratching.",
+
+
+  shortDescription:
+    "Starter feeding and watering set for baby chicks.",
+
+
+  tileBadge:
+    "🐣 Beginner Essential",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Perfect combo for beginners",
+
+    "Easy to fill and clean",
+
+    "Excellent value for new chick owners"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4f2OIq6",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    productType:
+      "chick-feeder-waterer-combo",
+
+      relatedProducts:[
+
+  "PRD-035",
+
+  "PRD-037",
+
+  "PRD-029"
+
+],
+
+purchaseBehavior:{
+
+  purchaseType:
+    "one-time",
+
+  replacementFrequency:
+    "1-3 years",
+
+  affiliatePotential:
+    "medium"
+
+},
+
+buyerIntent:{
+
+  buyerStages:[
+
+    "new-owner",
+
+    "beginner-setup"
+
+  ],
+
+
+  commonProblems:[
+
+    "new-chicks",
+
+    "chick-health",
+
+    "brooder-management"
+
+  ],
+
+
+  idealUsers:[
+
+    "new-chicken-owner",
+
+    "backyard-flock-owner"
+
+  ]
+
+},
+
+
+recommendedTogether:[
+
+  "PRD-035",
+
+  "PRD-029"
+
+],
+
+
+    applicableCrops:[],
+
+
+    cropStages:[],
+
+
+    useCases:[
+
+      "baby-chick-feeding",
+
+      "baby-chick-watering",
+
+      "brooder-management"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "brooder-guide",
+
+      "beginner-chicken-guide"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+    priority:
+      90,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "feeding",
+
+      "watering"
+
+    ],
+
+
+    tags:[
+
+      "chick-feeder",
+
+      "chick-waterer",
+
+      "brooder",
+
+      "beginner",
+
+      "baby-chicks"
 
     ],
 
