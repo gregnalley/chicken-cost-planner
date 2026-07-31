@@ -298,6 +298,31 @@ problems.forEach(function(problem){
 
 });
 
+/*
+  User Type Match
+*/
+
+
+if(
+  hasMatch(
+    buyerIntent.idealUsers,
+    userProfile.userType
+  )
+){
+
+  score +=
+    SCORE_VALUES.userMatch;
+
+
+  reasons.push(
+
+    "Matches user type: " +
+    userProfile.userType
+
+  );
+
+}
+
 
 
   return {
