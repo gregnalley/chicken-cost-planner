@@ -255,6 +255,49 @@ function scoreProduct(
 
   }
 
+  /*
+  Problem Match
+*/
+
+
+const problems =
+  normalizeArray(
+    userProfile.problems
+  );
+
+
+const productProblems =
+  normalizeArray(
+    buyerIntent.commonProblems
+  );
+
+
+problems.forEach(function(problem){
+
+
+  if(
+    hasMatch(
+      productProblems,
+      problem
+    )
+  ){
+
+    score +=
+      SCORE_VALUES.problemMatch;
+
+
+    reasons.push(
+
+      "Solves problem: " +
+      problem
+
+    );
+
+  }
+
+
+});
+
 
 
   return {
