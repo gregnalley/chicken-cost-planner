@@ -1,424 +1,509 @@
 "use strict";
 
 
-window.BCPProductCropBridge =
-  {
+(function initializeProductCropBridge(
+  global
+){
 
 
-    VERSION:
-      "1.0.0",
+  const namespace =
+    global.BCPProductCropBridge =
+      global.BCPProductCropBridge ||
+      {};
+
+
+  const VERSION =
+    "1.1.0";
+
+
+  const CROP_PLANNER_PAGE_TYPES =
+    Object.freeze([
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ]);
 
 
 
-    getCropProductProfile:
+  function normalizeArray(
+    value
+  ){
 
-      function(cropData){
+    return Array.isArray(value)
+      ? value
+      : [];
+
+  }
+
+
+
+  function getRecommendationData(
+    product
+  ){
+
+    if(
+      !product
+      ||
+      !product.recommendationData
+    ){
+
+      return {};
+
+    }
+
+
+    return product.recommendationData;
+
+  }
+
+
+
+  function getRecommendedFor(
+    product
+  ){
+
+    const data =
+      getRecommendationData(
+        product
+      );
+
+
+    return data.recommendedFor || {};
+
+  }
+
+
+
+  function getProductCrops(
+    product
+  ){
+
+    const data =
+      getRecommendationData(
+        product
+      );
+
+
+    const recommendedFor =
+      getRecommendedFor(
+        product
+      );
+
+
+    return [
+
+      ...normalizeArray(
+        data.applicableCrops
+      ),
+
+      ...normalizeArray(
+        recommendedFor.crops
+      )
+
+    ];
+
+  }
+
+
+
+  function hasExactCropMatch(
+    product,
+    cropProfile
+  ){
+
+    const productCrops =
+      getProductCrops(
+        product
+      );
+
+
+    const profileCrops =
+      normalizeArray(
+        cropProfile &&
+        cropProfile.applicableCrops
+      );
+
+
+    return profileCrops.some(function(cropId){
+
+      return productCrops.includes(
+        cropId
+      );
+
+    });
+
+  }
+
+
+
+  function hasCropPlannerPageType(
+    product
+  ){
+
+    const recommendedFor =
+      getRecommendedFor(
+        product
+      );
+
+
+    const pageTypes =
+      normalizeArray(
+        recommendedFor.pageTypes
+      );
+
+
+    return pageTypes.some(function(pageType){
+
+      return CROP_PLANNER_PAGE_TYPES.includes(
+        pageType
+      );
+
+    });
+
+  }
+
+
+
+  function isEligibleCropPlannerProduct(
+    product,
+    cropProfile
+  ){
+
+    if(
+      !product
+      ||
+      !product.recommendationData
+    ){
+
+      return false;
+
+    }
+
+
+    if(
+      product.recommendationData.enabled ===
+      false
+    ){
+
+      return false;
+
+    }
+
+
+    /*
+      Exact crop-specific products always qualify.
+    */
+
+    if(
+      hasExactCropMatch(
+        product,
+        cropProfile
+      )
+    ){
+
+      return true;
+
+    }
+
+
+    /*
+      General crop-planner tools qualify only when
+      their page metadata explicitly identifies them
+      as Feed Crop Guide or Growing Guide products.
+
+      This prevents unrelated products such as:
+      - chicken feeders
+      - nesting boxes
+      - automatic coop doors
+      - brooders
+      - first-aid supplies
+
+      from entering the Feed Crop Planner pool merely
+      because they were marked universal or assigned
+      to multiple planners.
+    */
+
+    if(
+      hasCropPlannerPageType(
+        product
+      )
+    ){
+
+      return true;
+
+    }
+
+
+    return false;
+
+  }
+
+
+
+  function getCropProductProfile(
+    cropData
+  ){
+
+    return {
+
+      context:
+        "crop-planner",
+
+
+      applicableCrops:
+
+        cropData &&
+        cropData.cropId
+
+          ?
+
+          [
+            cropData.cropId
+          ]
+
+          :
+
+          [],
+
+
+      cropStages:
+
+        cropData &&
+        cropData.stage
+
+          ?
+
+          [
+            cropData.stage
+          ]
+
+          :
+
+          [],
+
+
+      useCases:
+
+        cropData &&
+        Array.isArray(
+          cropData.useCases
+        )
+
+          ?
+
+          cropData.useCases
+
+          :
+
+          [],
+
+
+      buyerStage:
+        "homestead",
+
+
+      userType:
+        "backyard-flock-owner",
+
+
+      problems:
+        []
+
+    };
+
+  }
+
+
+
+  function filterCropPlannerProducts(
+    products,
+    cropProfile
+  ){
+
+    if(
+      !Array.isArray(products)
+      ||
+      !cropProfile
+    ){
+
+      return [];
+
+    }
+
+
+    return products.filter(function(product){
+
+      return isEligibleCropPlannerProduct(
+        product,
+        cropProfile
+      );
+
+    });
+
+  }
+
+
+
+  function rankCropProducts(
+    products,
+    cropProfile
+  ){
+
+    if(
+      !Array.isArray(products)
+      ||
+      !cropProfile
+      ||
+      !global.BCPProductRecommendation
+    ){
+
+      return [];
+
+    }
+
+
+    return products
+      .map(function(product){
+
+        const scored =
+          global.BCPProductRecommendation
+            .scoreProduct(
+              product,
+              cropProfile
+            );
 
 
         return {
 
+          product:
+            product,
 
-          context:
-            "crop-planner",
+          productId:
+            scored.productId,
 
+          title:
+            scored.title,
 
+          score:
+            scored.score,
 
-          applicableCrops:
-
-            cropData &&
-            cropData.cropId
-
-              ?
-
-              [
-                cropData.cropId
-              ]
-
-              :
-
-              [],
-
-
-
-          cropStages:
-
-            cropData &&
-            cropData.stage
-
-              ?
-
-              [
-                cropData.stage
-              ]
-
-              :
-
-              [],
-
-
-
-          useCases:
-
-            cropData &&
-            cropData.useCases
-
-              ?
-
-              cropData.useCases
-
-              :
-
-              []
-
-
+          reasons:
+            scored.reasons
 
         };
 
+      })
+      .sort(function(a,b){
 
-           },
+        return b.score - a.score;
 
+      });
 
-    getCropProductRecommendations:
+  }
 
-      function(cropProfile){
 
 
-        if(
-          !cropProfile
-        ){
+  function getCropProductRecommendations(
+    cropProfile,
+    limit
+  ){
 
-          return [];
+    if(
+      !cropProfile
+      ||
+      !global.BCPProductRecommendation
+    ){
 
-        }
+      return [];
 
+    }
 
 
-        const recommendationProfile = {
+    const activeProducts =
+      global.BCPProductRecommendation
+        .getActiveProducts();
 
 
-          context:
-            "crop-planner",
+    const eligibleProducts =
+      filterCropPlannerProducts(
+        activeProducts,
+        cropProfile
+      );
 
 
-          applicableCrops:
+    const rankedProducts =
+      rankCropProducts(
+        eligibleProducts,
+        cropProfile
+      );
 
-            cropProfile.applicableCrops || [],
 
+    if(
+      typeof limit === "number"
+    ){
 
-          cropStages:
+      return rankedProducts.slice(
+        0,
+        limit
+      );
 
-            cropProfile.cropStages || [],
+    }
 
 
-          useCases:
+    return rankedProducts;
 
-            cropProfile.useCases || [],
+  }
 
 
-          buyerStage:
-            "homestead",
 
+  namespace.VERSION =
+    VERSION;
 
-          userType:
-            "backyard-flock-owner",
 
+  namespace.normalizeArray =
+    normalizeArray;
 
-          problems:
-            []
 
+  namespace.getRecommendationData =
+    getRecommendationData;
 
-        };
 
+  namespace.getRecommendedFor =
+    getRecommendedFor;
 
 
-        return (
+  namespace.getProductCrops =
+    getProductCrops;
 
-          BCPProductRecommendation
-            .getRecommendations(
-              recommendationProfile
-            )
 
-        );
+  namespace.hasExactCropMatch =
+    hasExactCropMatch;
 
 
-           },
+  namespace.hasCropPlannerPageType =
+    hasCropPlannerPageType;
 
 
-    filterCropPlannerProducts:
+  namespace.isEligibleCropPlannerProduct =
+    isEligibleCropPlannerProduct;
 
-      function(products, cropProfile){
 
+  namespace.getCropProductProfile =
+    getCropProductProfile;
 
-        if(
-          !Array.isArray(products)
-          ||
-          !cropProfile
-        ){
 
-          return [];
+  namespace.filterCropPlannerProducts =
+    filterCropPlannerProducts;
 
-        }
 
+  namespace.rankCropProducts =
+    rankCropProducts;
 
 
-        const results =
-          [];
+  namespace.getCropProductRecommendations =
+    getCropProductRecommendations;
 
 
-
-        products.forEach(function(product){
-
-
-          if(
-            !product
-            ||
-            !product.recommendationData
-          ){
-
-            return;
-
-          }
-
-
-
-          const data =
-            product.recommendationData;
-
-
-          let include =
-            false;
-
-
-
-          /*
-            Crop-specific product match
-          */
-
-
-          /*
-  Crop-specific product match
-
-  Supports:
-
-  Legacy:
-  recommendationData.applicableCrops
-
-  New crop schema:
-  recommendationData.recommendedFor.crops
-*/
-
-
-const productCrops = [];
-
-
-/*
-  Legacy crop field
-*/
-
-if(
-  Array.isArray(
-    data.applicableCrops
-  )
-){
-
-  productCrops.push(
-    ...data.applicableCrops
-  );
-
-}
-
-
-/*
-  New crop planner field
-*/
-
-if(
-  data.recommendedFor
-  &&
-  Array.isArray(
-    data.recommendedFor.crops
-  )
-){
-
-  productCrops.push(
-    ...data.recommendedFor.crops
-  );
-
-}
-
-
-
-if(
-  productCrops.some(function(crop){
-
-    return (
-
-      cropProfile.applicableCrops.includes(
-        crop
-      )
-
-    );
-
-  })
-)
-{
-
-  include =
-    true;
-
-}
-
-
-
-          /*
-            Crop planner context match
-          */
-
-
-          if(
-            Array.isArray(
-              data.recommendationContexts
-            )
-            &&
-            data.recommendationContexts.includes(
-              "crop-planner"
-            )
-          ){
-
-            include =
-              true;
-
-          }
-
-
-
-         /*
-  Universal Feed Crop Planner products
-
-  A product should not enter the crop-planner
-  recommendation pool merely because it is
-  universal elsewhere on the website.
-
-  It must also be assigned to the
-  Feed Crop Planner.
-*/
-
-
-const recommendedFor =
-  data.recommendedFor ||
-  {};
-
-
-const productPlanners =
-  Array.isArray(
-    recommendedFor.planners
-  )
-
-    ?
-
-    recommendedFor.planners
-
-    :
-
-    [];
-
-
-if(
-  data.universal === true
-  &&
-  productPlanners.includes(
-    "feed-crop-planner"
-  )
-){
-
-  include =
-    true;
-
-}
-
-
-
-          if(
-            include
-          ){
-
-            results.push(
-              product
-            );
-
-          }
-
-
-        });
-
-
-
-                return results;
-
-
-      },
-
-
-
-    rankCropProducts:
-
-      function(products){
-
-
-        if(
-          !Array.isArray(products)
-        ){
-
-          return [];
-
-        }
-
-
-        return (
-
-          products
-            .slice()
-            .sort(function(a,b){
-
-
-              const priorityA =
-                a.recommendationData &&
-                a.recommendationData.priority
-
-                  ? 
-
-                  a.recommendationData.priority
-
-                  :
-
-                  0;
-
-
-
-              const priorityB =
-                b.recommendationData &&
-                b.recommendationData.priority
-
-                  ? 
-
-                  b.recommendationData.priority
-
-                  :
-
-                  0;
-
-
-
-              return priorityB - priorityA;
-
-
-            })
-
-        );
-
-
-      }
-
-
-
-  };
+})(window);
