@@ -101,7 +101,7 @@
                   "plant",
 
                 src:
-                  "assets/images/feed-crops/cowpea/cowpea-plant.webp",
+                  "assets/images/feed-crops/cowpeas/cowpea-plant.webp",
 
                 alt:
                   "Cowpea plants growing in a backyard garden.",
@@ -115,7 +115,7 @@
                   "harvest",
 
                 src:
-                  "assets/images/feed-crops/cowpea/harvest-cowpea.webp",
+                  "assets/images/feed-crops/cowpeas/harvest-cowpea.webp",
 
                 alt:
                   "Harvesting mature cowpea pods.",
@@ -129,7 +129,7 @@
                   "chickens-eating",
 
                 src:
-                  "assets/images/feed-crops/cowpea/chickens-eating-cowpeas.webp",
+                  "assets/images/feed-crops/cowpeas/chickens-eating-cowpeas.webp",
 
                 alt:
                   "Backyard chickens eating cowpeas.",
@@ -266,7 +266,7 @@
                   "plant",
 
                 src:
-                  "assets/images/feed-crops/kale-collards/kale-collards-plant.webp",
+                  "assets/images/feed-crops/kale/kale-plant.webp",
 
                 alt:
                   "Healthy kale and collard green plants growing in a garden.",
@@ -280,7 +280,7 @@
                   "harvest",
 
                 src:
-                  "assets/images/feed-crops/kale-collards/harvesting-kale-collards.webp",
+                  "assets/images/feed-crops/kale/harvested-kale.webp",
 
                 alt:
                   "Harvesting fresh kale and collard green leaves.",
@@ -294,7 +294,7 @@
                   "chickens-eating",
 
                 src:
-                  "assets/images/feed-crops/kale-collards/chickens-eating-kale-collards.webp",
+                  "assets/images/feed-crops/kale/chickens-eating-kale.webp",
 
                 alt:
                   "Backyard chickens eating fresh kale and collard greens.",
