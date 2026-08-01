@@ -184,13 +184,6 @@ window.BCPProductCropBridge =
           const data =
             product.recommendationData;
 
-console.log(
-  "TEST PRODUCT:",
-  product.id,
-  data.recommendedFor
-);
-
-
 
           let include =
             false;
@@ -299,19 +292,49 @@ if(
 
 
 
-          /*
-            Universal products
-          */
+         /*
+  Universal Feed Crop Planner products
+
+  A product should not enter the crop-planner
+  recommendation pool merely because it is
+  universal elsewhere on the website.
+
+  It must also be assigned to the
+  Feed Crop Planner.
+*/
 
 
-          if(
-            data.universal === true
-          ){
+const recommendedFor =
+  data.recommendedFor ||
+  {};
 
-            include =
-              true;
 
-          }
+const productPlanners =
+  Array.isArray(
+    recommendedFor.planners
+  )
+
+    ?
+
+    recommendedFor.planners
+
+    :
+
+    [];
+
+
+if(
+  data.universal === true
+  &&
+  productPlanners.includes(
+    "feed-crop-planner"
+  )
+){
+
+  include =
+    true;
+
+}
 
 
 
