@@ -1,0 +1,4511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Crop Product Recommendation Test | Backyard Chicken Planner
+</title>
+
+<meta
+  name="robots"
+  content="noindex,nofollow"
+>
+
+<link
+  rel="stylesheet"
+  href="../assets/css/bcp-style.css"
+>
+
+<style>
+
+:root {
+
+  --test-green-dark:
+    #173f25;
+
+  --test-green:
+    #2f7444;
+
+  --test-green-medium:
+    #4f9461;
+
+  --test-green-light:
+    #eaf5eb;
+
+  --test-green-pale:
+    #f6faf6;
+
+  --test-gold:
+    #d59a2c;
+
+  --test-gold-dark:
+    #98610a;
+
+  --test-gold-light:
+    #fff3d6;
+
+  --test-blue-light:
+    #edf6fa;
+
+  --test-red:
+    #9f4141;
+
+  --test-red-light:
+    #fff1f1;
+
+  --test-border:
+    #d5e1d7;
+
+  --test-border-dark:
+    #b8cbbb;
+
+  --test-text:
+    #26342a;
+
+  --test-muted:
+    #5c6960;
+
+  --test-white:
+    #ffffff;
+
+  --test-shadow:
+    0 14px 34px
+    rgba(
+      30,
+      73,
+      42,
+      0.1
+    );
+
+}
+
+
+* {
+
+  box-sizing:
+    border-box;
+
+}
+
+
+body {
+
+  margin:
+    0;
+
+  color:
+    var(--test-text);
+
+  background:
+    #f3f7f3;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+}
+
+
+.crop-product-test-page {
+
+  width:
+    min(
+      calc(100% - 28px),
+      1180px
+    );
+
+  margin:
+    34px auto 60px;
+
+}
+
+
+.crop-product-test-shell {
+
+  overflow:
+    hidden;
+
+  background:
+    var(--test-white);
+
+  border:
+    1px solid
+    var(--test-border);
+
+  border-radius:
+    24px;
+
+  box-shadow:
+    var(--test-shadow);
+
+}
+
+
+/*
+  ==================================================
+  Hero
+  ==================================================
+*/
+
+.crop-product-test-hero {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  padding:
+    42px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #153d23 0%,
+      #2c7141 58%,
+      #4d9159 100%
+    );
+
+}
+
+
+.crop-product-test-hero::after {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    -120px;
+
+  right:
+    -70px;
+
+  width:
+    310px;
+
+  height:
+    310px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  border-radius:
+    50%;
+
+}
+
+
+.crop-product-test-hero-content {
+
+  position:
+    relative;
+
+  z-index:
+    1;
+
+  max-width:
+    820px;
+
+}
+
+
+.crop-product-test-kicker {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    14px;
+
+  padding:
+    7px 13px;
+
+  color:
+    #fff1bd;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.22
+    );
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.78rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.06em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.crop-product-test-hero h1 {
+
+  margin:
+    0 0 13px;
+
+  color:
+    #ffffff;
+
+  font-size:
+    clamp(
+      2rem,
+      5vw,
+      3.1rem
+    );
+
+  line-height:
+    1.08;
+
+}
+
+
+.crop-product-test-hero p {
+
+  max-width:
+    780px;
+
+  margin:
+    0;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  font-size:
+    1.02rem;
+
+  line-height:
+    1.7;
+
+}
+
+
+/*
+  ==================================================
+  Main Application
+  ==================================================
+*/
+
+.crop-product-test-app {
+
+  padding:
+    32px 36px 46px;
+
+}
+
+
+.crop-product-test-section {
+
+  margin-bottom:
+    28px;
+
+  padding:
+    25px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--test-border);
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 8px 22px
+    rgba(
+      31,
+      72,
+      43,
+      0.05
+    );
+
+}
+
+
+.crop-product-test-section:last-child {
+
+  margin-bottom:
+    0;
+
+}
+
+
+.crop-product-test-heading {
+
+  max-width:
+    820px;
+
+  margin-bottom:
+    20px;
+
+}
+
+
+.crop-product-test-heading span {
+
+  display:
+    block;
+
+  margin-bottom:
+    6px;
+
+  color:
+    var(--test-gold-dark);
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.07em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.crop-product-test-heading h2 {
+
+  margin:
+    0 0 7px;
+
+  color:
+    var(--test-green-dark);
+
+}
+
+
+.crop-product-test-heading p {
+
+  margin:
+    0;
+
+  color:
+    var(--test-muted);
+
+  line-height:
+    1.65;
+
+}
+
+
+/*
+  ==================================================
+  Test Controls
+  ==================================================
+*/
+
+.crop-product-test-controls {
+
+  background:
+    var(--test-green-pale);
+
+}
+
+
+.crop-product-test-control-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    16px;
+
+}
+
+
+.crop-product-test-field {
+
+  display:
+    grid;
+
+  gap:
+    7px;
+
+}
+
+
+.crop-product-test-field label,
+.crop-product-test-field legend {
+
+  color:
+    var(--test-green-dark);
+
+  font-size:
+    0.82rem;
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-field select,
+.crop-product-test-field input {
+
+  width:
+    100%;
+
+  min-height:
+    46px;
+
+  padding:
+    10px 12px;
+
+  color:
+    var(--test-text);
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--test-border-dark);
+
+  border-radius:
+    11px;
+
+  font:
+    inherit;
+
+}
+
+
+.crop-product-test-field select:focus,
+.crop-product-test-field input:focus {
+
+  outline:
+    3px solid
+    rgba(
+      213,
+      154,
+      44,
+      0.28
+    );
+
+  border-color:
+    var(--test-gold);
+
+}
+
+
+.crop-product-test-use-cases {
+
+  margin:
+    18px 0 0;
+
+  padding:
+    18px;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--test-border);
+
+  border-radius:
+    14px;
+
+}
+
+
+.crop-product-test-use-cases legend {
+
+  padding:
+    0 6px;
+
+  color:
+    var(--test-green-dark);
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-use-case-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    9px;
+
+  margin-top:
+    7px;
+
+}
+
+
+.crop-product-test-checkbox {
+
+  display:
+    flex;
+
+  gap:
+    8px;
+
+  align-items:
+    flex-start;
+
+  padding:
+    10px;
+
+  cursor:
+    pointer;
+
+  background:
+    var(--test-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    10px;
+
+  font-size:
+    0.88rem;
+
+  line-height:
+    1.4;
+
+}
+
+
+.crop-product-test-checkbox input {
+
+  width:
+    auto;
+
+  min-height:
+    auto;
+
+  margin-top:
+    2px;
+
+}
+
+
+.crop-product-test-actions {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    10px;
+
+  align-items:
+    center;
+
+  margin-top:
+    18px;
+
+}
+
+
+.crop-product-test-button {
+
+  display:
+    inline-flex;
+
+  min-height:
+    46px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    7px;
+
+  padding:
+    11px 18px;
+
+  cursor:
+    pointer;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--test-green),
+      #438954
+    );
+
+  border:
+    0;
+
+  border-radius:
+    11px;
+
+  box-shadow:
+    0 8px 18px
+    rgba(
+      47,
+      116,
+      68,
+      0.2
+    );
+
+  font:
+    inherit;
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-button:hover {
+
+  transform:
+    translateY(
+      -1px
+    );
+
+}
+
+
+.crop-product-test-button.is-secondary {
+
+  color:
+    var(--test-green-dark);
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--test-border-dark);
+
+  box-shadow:
+    none;
+
+}
+
+
+/*
+  ==================================================
+  Status and Error Messages
+  ==================================================
+*/
+
+.crop-product-test-message {
+
+  margin-top:
+    16px;
+
+  padding:
+    14px 16px;
+
+  color:
+    var(--test-green-dark);
+
+  background:
+    var(--test-green-light);
+
+  border:
+    1px solid
+    #bfd9c4;
+
+  border-radius:
+    11px;
+
+  line-height:
+    1.55;
+
+}
+
+
+.crop-product-test-message.is-error {
+
+  color:
+    #702d2d;
+
+  background:
+    var(--test-red-light);
+
+  border-color:
+    #e2bdbd;
+
+}
+
+
+/*
+  ==================================================
+  Crop Preview
+  ==================================================
+*/
+
+.crop-product-test-crop-preview {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(
+      180px,
+      0.45fr
+    )
+    minmax(
+      0,
+      1fr
+    );
+
+  gap:
+    22px;
+
+  align-items:
+    stretch;
+
+}
+
+
+.crop-product-test-crop-image {
+
+  overflow:
+    hidden;
+
+  min-height:
+    190px;
+
+  background:
+    var(--test-green-light);
+
+  border:
+    1px solid
+    #c7dccb;
+
+  border-radius:
+    16px;
+
+}
+
+
+.crop-product-test-crop-image img {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  min-height:
+    190px;
+
+  object-fit:
+    cover;
+
+}
+
+
+.crop-product-test-crop-image-placeholder {
+
+  display:
+    grid;
+
+  min-height:
+    190px;
+
+  place-items:
+    center;
+
+  font-size:
+    4rem;
+
+}
+
+
+.crop-product-test-crop-content {
+
+  padding:
+    22px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #173f25,
+      #367c49
+    );
+
+  border-radius:
+    16px;
+
+}
+
+
+.crop-product-test-crop-content small {
+
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  color:
+    #ffe5a0;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.05em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.crop-product-test-crop-content h2 {
+
+  margin:
+    0 0 12px;
+
+  color:
+    #ffffff;
+
+}
+
+
+.crop-product-test-crop-content p {
+
+  margin:
+    0 0 16px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.9
+    );
+
+  line-height:
+    1.65;
+
+}
+
+
+.crop-product-test-pill-list {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    7px;
+
+}
+
+
+.crop-product-test-pill {
+
+  display:
+    inline-flex;
+
+  padding:
+    6px 10px;
+
+  color:
+    var(--test-green-dark);
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.92
+    );
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.76rem;
+
+  font-weight:
+    850;
+
+}
+
+
+/*
+  ==================================================
+  Summary Cards
+  ==================================================
+*/
+
+.crop-product-test-summary-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+
+}
+
+
+.crop-product-test-summary-card {
+
+  padding:
+    16px;
+
+  background:
+    var(--test-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    13px;
+
+}
+
+
+.crop-product-test-summary-card span {
+
+  display:
+    block;
+
+  margin-bottom:
+    4px;
+
+  color:
+    var(--test-muted);
+
+  font-size:
+    0.74rem;
+
+  font-weight:
+    850;
+
+  letter-spacing:
+    0.03em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.crop-product-test-summary-card strong {
+
+  color:
+    var(--test-green-dark);
+
+  font-size:
+    1.08rem;
+
+}
+
+
+/*
+  ==================================================
+  Responsive
+  ==================================================
+*/
+
+@media
+(max-width: 880px) {
+
+  .crop-product-test-control-grid,
+  .crop-product-test-summary-grid {
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+
+  }
+
+
+  .crop-product-test-use-case-grid {
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+
+  }
+
+}
+
+
+@media
+(max-width: 680px) {
+
+  .crop-product-test-page {
+
+    width:
+      min(
+        calc(100% - 18px),
+        1180px
+      );
+
+    margin:
+      18px auto 34px;
+
+  }
+
+
+  .crop-product-test-hero {
+
+    padding:
+      30px 21px;
+
+  }
+
+
+  .crop-product-test-app {
+
+    padding:
+      22px 16px 30px;
+
+  }
+
+
+  .crop-product-test-section {
+
+    padding:
+      19px;
+
+  }
+
+
+  .crop-product-test-control-grid,
+  .crop-product-test-use-case-grid,
+  .crop-product-test-summary-grid,
+  .crop-product-test-crop-preview {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .crop-product-test-actions {
+
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+
+  }
+
+
+  .crop-product-test-button {
+
+    width:
+      100%;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="crop-product-test-page">
+
+<div class="crop-product-test-shell">
+
+<section class="crop-product-test-hero">
+
+<div class="crop-product-test-hero-content">
+
+<span class="crop-product-test-kicker">
+🧪 HQ Integration Test
+</span>
+
+<h1>
+Crop Product Recommendation Tester
+</h1>
+
+<p>
+Select a feed crop, growth stage, and relevant use cases to simulate the product recommendations that may appear beneath a crop on the public Feed Crop Planner results page.
+</p>
+
+</div>
+
+</section>
+
+
+<div class="crop-product-test-app">
+
+
+<section class="crop-product-test-section crop-product-test-controls">
+
+<div class="crop-product-test-heading">
+
+<span>
+Test configuration
+</span>
+
+<h2>
+Choose a Crop Recommendation Scenario
+</h2>
+
+<p>
+The crop list is loaded from the production Feed Crop Research Database. The test uses the live product catalog, recommendation engine, and crop bridge.
+</p>
+
+</div>
+
+
+<div class="crop-product-test-control-grid">
+
+<div class="crop-product-test-field">
+
+<label for="crop-product-test-crop">
+Crop
+</label>
+
+<select id="crop-product-test-crop">
+
+<option value="">
+Loading crops...
+</option>
+
+</select>
+
+</div>
+
+
+<div class="crop-product-test-field">
+
+<label for="crop-product-test-stage">
+Crop Stage
+</label>
+
+<select id="crop-product-test-stage">
+
+<option value="planning">
+Planning
+</option>
+
+<option value="planting">
+Planting
+</option>
+
+<option value="growing">
+Growing
+</option>
+
+<option value="harvesting">
+Harvesting
+</option>
+
+<option value="processing">
+Processing
+</option>
+
+<option value="storage">
+Storage
+</option>
+
+</select>
+
+</div>
+
+
+<div class="crop-product-test-field">
+
+<label for="crop-product-test-limit">
+Products to Display
+</label>
+
+<select id="crop-product-test-limit">
+
+<option value="3">
+3 products
+</option>
+
+<option value="5">
+5 products
+</option>
+
+<option value="10" selected>
+10 products
+</option>
+
+<option value="15">
+15 products
+</option>
+
+<option value="20">
+20 products
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<fieldset class="crop-product-test-use-cases">
+
+<legend>
+Relevant Use Cases
+</legend>
+
+<div
+  id="crop-product-test-use-case-grid"
+  class="crop-product-test-use-case-grid"
+>
+
+<p>
+Select a crop to load relevant use cases.
+</p>
+
+</div>
+
+</fieldset>
+
+
+<div class="crop-product-test-actions">
+
+<button
+  id="crop-product-test-run"
+  type="button"
+  class="crop-product-test-button"
+>
+▶ Run Product Recommendation Test
+</button>
+
+<button
+  id="crop-product-test-reset"
+  type="button"
+  class="crop-product-test-button is-secondary"
+>
+↻ Reset Test
+</button>
+
+</div>
+
+
+<div
+  id="crop-product-test-message"
+  class="crop-product-test-message"
+  hidden
+></div>
+
+</section>
+
+
+<section
+  id="crop-product-test-preview-section"
+  class="crop-product-test-section"
+  hidden
+>
+
+<div class="crop-product-test-heading">
+
+<span>
+Simulated planner result
+</span>
+
+<h2>
+Selected Crop Preview
+</h2>
+
+<p>
+This preview confirms the crop identity and recommendation profile being passed into the product bridge.
+</p>
+
+</div>
+
+
+<div
+  id="crop-product-test-crop-preview"
+  class="crop-product-test-crop-preview"
+></div>
+
+</section>
+
+
+<section
+  id="crop-product-test-summary-section"
+  class="crop-product-test-section"
+  hidden
+>
+
+<div class="crop-product-test-heading">
+
+<span>
+Recommendation summary
+</span>
+
+<h2>
+Product Eligibility and Link Status
+</h2>
+
+<p>
+These totals help verify that the bridge selected the correct crop-related and general crop-planner products.
+</p>
+
+</div>
+
+
+<div
+  id="crop-product-test-summary-grid"
+  class="crop-product-test-summary-grid"
+></div>
+
+</section>
+
+
+<section
+  id="crop-product-test-products-section"
+  class="crop-product-test-section"
+  hidden
+>
+
+<div class="crop-product-test-heading">
+
+<span>
+Visitor-facing preview
+</span>
+
+<h2>
+Recommended Products
+</h2>
+
+<p>
+These cards simulate the product section that may appear beneath a crop recommendation on the public results page.
+</p>
+
+</div>
+
+
+<div
+  id="crop-product-test-product-grid"
+  class="crop-product-test-product-grid"
+></div>
+
+</section>
+
+
+<section
+  id="crop-product-test-diagnostics-section"
+  class="crop-product-test-section"
+  hidden
+>
+
+<div class="crop-product-test-heading">
+
+<span>
+HQ diagnostics
+</span>
+
+<h2>
+Recommendation Score Details
+</h2>
+
+<p>
+This table is for testing only. It exposes scores, roles, priorities, URL status, and the reasons each product earned its position.
+</p>
+
+</div>
+
+
+<div class="crop-product-test-table-wrap">
+
+<table class="crop-product-test-table">
+
+<thead>
+
+<tr>
+
+<th>
+Rank
+</th>
+
+<th>
+Product
+</th>
+
+<th>
+Score
+</th>
+
+<th>
+Role
+</th>
+
+<th>
+Priority
+</th>
+
+<th>
+URL
+</th>
+
+<th>
+Score Breakdown
+</th>
+
+<th>
+Reasons
+</th>
+
+</tr>
+
+</thead>
+
+<tbody id="crop-product-test-table-body">
+
+<tr>
+
+<td colspan="8">
+Run a test to view recommendation diagnostics.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section
+  id="crop-product-test-profile-section"
+  class="crop-product-test-section"
+  hidden
+>
+
+<div class="crop-product-test-heading">
+
+<span>
+Generated data contract
+</span>
+
+<h2>
+Recommendation Profile Sent to the Bridge
+</h2>
+
+<p>
+This is the exact profile object generated by the test controls and passed into the recommendation system.
+</p>
+
+</div>
+
+
+<pre
+  id="crop-product-test-profile-output"
+  class="crop-product-test-profile-output"
+></pre>
+
+</section>
+
+
+</div>
+
+</div>
+
+</main>
+
+
+<script src="../assets/data/feed-crops.js"></script>
+
+<script src="../assets/data/feed-crop-images.js"></script>
+
+<script src="../assets/data/products.js"></script>
+
+<script src="../scripts/product-recommendation-engine.js"></script>
+
+<script src="../scripts/product-recommendation-crop-bridge.js"></script>
+
+<style>
+
+/*
+  ==================================================
+  Product Recommendation Cards
+  ==================================================
+*/
+
+.crop-product-test-product-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap:
+    16px;
+
+}
+
+
+.crop-product-test-product-card {
+
+  display:
+    flex;
+
+  min-width:
+    0;
+
+  flex-direction:
+    column;
+
+  overflow:
+    hidden;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid
+    var(--test-border);
+
+  border-radius:
+    17px;
+
+  box-shadow:
+    0 9px 24px
+    rgba(
+      30,
+      73,
+      42,
+      0.07
+    );
+
+}
+
+
+.crop-product-test-product-card-header {
+
+  display:
+    flex;
+
+  gap:
+    10px;
+
+  align-items:
+    flex-start;
+
+  justify-content:
+    space-between;
+
+  padding:
+    18px 18px 0;
+
+}
+
+
+.crop-product-test-product-badge {
+
+  display:
+    inline-flex;
+
+  min-height:
+    29px;
+
+  align-items:
+    center;
+
+  padding:
+    5px 9px;
+
+  color:
+    var(--test-green-dark);
+
+  background:
+    var(--test-green-light);
+
+  border:
+    1px solid
+    #c8ddcc;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    900;
+
+  line-height:
+    1.3;
+
+}
+
+
+.crop-product-test-product-rank {
+
+  display:
+    grid;
+
+  width:
+    34px;
+
+  height:
+    34px;
+
+  flex:
+    0 0 auto;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    var(--test-gold-dark);
+
+  border-radius:
+    50%;
+
+  font-size:
+    0.75rem;
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-product-body {
+
+  display:
+    flex;
+
+  flex:
+    1;
+
+  flex-direction:
+    column;
+
+  padding:
+    17px 18px 18px;
+
+}
+
+
+.crop-product-test-product-id {
+
+  display:
+    block;
+
+  margin-bottom:
+    5px;
+
+  color:
+    var(--test-muted);
+
+  font-size:
+    0.7rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.05em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.crop-product-test-product-card h3 {
+
+  margin:
+    0 0 10px;
+
+  color:
+    var(--test-green-dark);
+
+  font-size:
+    1.12rem;
+
+  line-height:
+    1.35;
+
+}
+
+
+.crop-product-test-product-description {
+
+  margin:
+    0 0 13px;
+
+  color:
+    var(--test-muted);
+
+  font-size:
+    0.9rem;
+
+  line-height:
+    1.6;
+
+}
+
+
+.crop-product-test-product-bullets {
+
+  display:
+    grid;
+
+  gap:
+    7px;
+
+  margin:
+    0 0 16px;
+
+  padding:
+    0;
+
+  list-style:
+    none;
+
+}
+
+
+.crop-product-test-product-bullets li {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    18px 1fr;
+
+  gap:
+    6px;
+
+  color:
+    var(--test-text);
+
+  font-size:
+    0.85rem;
+
+  line-height:
+    1.45;
+
+}
+
+
+.crop-product-test-product-bullets li::before {
+
+  content:
+    "✓";
+
+  color:
+    var(--test-green);
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-product-meta {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    7px;
+
+  margin-top:
+    auto;
+
+  margin-bottom:
+    15px;
+
+}
+
+
+.crop-product-test-product-meta span {
+
+  display:
+    inline-flex;
+
+  padding:
+    5px 8px;
+
+  color:
+    var(--test-green-dark);
+
+  background:
+    var(--test-green-pale);
+
+  border:
+    1px solid
+    #dce8de;
+
+  border-radius:
+    999px;
+
+  font-size:
+    0.7rem;
+
+  font-weight:
+    850;
+
+}
+
+
+.crop-product-test-product-link {
+
+  display:
+    inline-flex;
+
+  min-height:
+    44px;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    10px 13px;
+
+  color:
+    #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--test-green),
+      #438954
+    );
+
+  border-radius:
+    10px;
+
+  font-size:
+    0.86rem;
+
+  font-weight:
+    900;
+
+  line-height:
+    1.35;
+
+  text-align:
+    center;
+
+  text-decoration:
+    none;
+
+}
+
+
+.crop-product-test-product-link:hover {
+
+  transform:
+    translateY(
+      -1px
+    );
+
+}
+
+
+.crop-product-test-product-link-unavailable {
+
+  display:
+    grid;
+
+  min-height:
+    44px;
+
+  place-items:
+    center;
+
+  padding:
+    10px 13px;
+
+  color:
+    var(--test-muted);
+
+  background:
+    #f3f5f3;
+
+  border:
+    1px dashed
+    var(--test-border-dark);
+
+  border-radius:
+    10px;
+
+  font-size:
+    0.84rem;
+
+  font-weight:
+    850;
+
+  text-align:
+    center;
+
+}
+
+
+/*
+  ==================================================
+  Diagnostic Table
+  ==================================================
+*/
+
+.crop-product-test-table-wrap {
+
+  overflow-x:
+    auto;
+
+  border:
+    1px solid
+    var(--test-border);
+
+  border-radius:
+    14px;
+
+}
+
+
+.crop-product-test-table {
+
+  width:
+    100%;
+
+  min-width:
+    1180px;
+
+  border-collapse:
+    collapse;
+
+}
+
+
+.crop-product-test-table th,
+.crop-product-test-table td {
+
+  padding:
+    12px;
+
+  border-bottom:
+    1px solid
+    var(--test-border);
+
+  text-align:
+    left;
+
+  vertical-align:
+    top;
+
+}
+
+
+.crop-product-test-table th {
+
+  position:
+    sticky;
+
+  top:
+    0;
+
+  z-index:
+    1;
+
+  color:
+    var(--test-green-dark);
+
+  background:
+    var(--test-green-light);
+
+  font-size:
+    0.73rem;
+
+  letter-spacing:
+    0.03em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.crop-product-test-table td {
+
+  font-size:
+    0.82rem;
+
+  line-height:
+    1.45;
+
+}
+
+
+.crop-product-test-table tbody tr:last-child td {
+
+  border-bottom:
+    0;
+
+}
+
+
+.crop-product-test-table tbody tr:nth-child(even) {
+
+  background:
+    var(--test-green-pale);
+
+}
+
+
+.crop-product-test-score {
+
+  color:
+    var(--test-green-dark);
+
+  font-size:
+    1rem;
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-url-ready {
+
+  color:
+    var(--test-green);
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-url-missing {
+
+  color:
+    var(--test-red);
+
+  font-weight:
+    900;
+
+}
+
+
+.crop-product-test-breakdown {
+
+  display:
+    grid;
+
+  gap:
+    2px;
+
+  min-width:
+    175px;
+
+}
+
+
+.crop-product-test-breakdown span {
+
+  display:
+    flex;
+
+  gap:
+    8px;
+
+  justify-content:
+    space-between;
+
+}
+
+
+.crop-product-test-reasons {
+
+  min-width:
+    260px;
+
+  color:
+    var(--test-muted);
+
+}
+
+
+/*
+  ==================================================
+  Profile Output and Empty States
+  ==================================================
+*/
+
+.crop-product-test-profile-output {
+
+  overflow-x:
+    auto;
+
+  margin:
+    0;
+
+  padding:
+    18px;
+
+  color:
+    #dcefdc;
+
+  background:
+    #183421;
+
+  border-radius:
+    13px;
+
+  font-family:
+    Consolas,
+    Monaco,
+    monospace;
+
+  font-size:
+    0.84rem;
+
+  line-height:
+    1.55;
+
+  white-space:
+    pre-wrap;
+
+  word-break:
+    break-word;
+
+}
+
+
+.crop-product-test-empty {
+
+  grid-column:
+    1 / -1;
+
+  padding:
+    25px;
+
+  color:
+    var(--test-muted);
+
+  background:
+    var(--test-green-pale);
+
+  border:
+    1px dashed
+    var(--test-border-dark);
+
+  border-radius:
+    13px;
+
+  text-align:
+    center;
+
+}
+
+
+@media
+(max-width: 980px) {
+
+  .crop-product-test-product-grid {
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+
+  }
+
+}
+
+
+@media
+(max-width: 650px) {
+
+  .crop-product-test-product-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}
+
+</style>
+
+
+<script>
+
+"use strict";
+
+
+(function initializeCropProductTestHelpers(
+  global
+){
+
+
+  const testNamespace =
+    global.BCPCropProductTest =
+      global.BCPCropProductTest ||
+      {};
+
+
+  /*
+    Return an array or an empty array.
+  */
+
+  function asArray(
+    value
+  ){
+
+    return Array.isArray(value)
+      ? value
+      : [];
+
+  }
+
+
+
+  /*
+    Escape text before inserting it into HTML.
+  */
+
+  function escapeHTML(
+    value
+  ){
+
+    return String(
+      value === undefined ||
+      value === null
+
+        ?
+
+        ""
+
+        :
+
+        value
+    )
+      .replace(
+        /&/g,
+        "&amp;"
+      )
+      .replace(
+        /</g,
+        "&lt;"
+      )
+      .replace(
+        />/g,
+        "&gt;"
+      )
+      .replace(
+        /"/g,
+        "&quot;"
+      )
+      .replace(
+        /'/g,
+        "&#039;"
+      );
+
+  }
+
+
+
+  /*
+    Convert an identifier into a readable label.
+  */
+
+  function formatIdentifier(
+    value
+  ){
+
+    if(
+      typeof value !==
+        "string"
+      ||
+      value.trim() ===
+        ""
+    ){
+
+      return "Not specified";
+
+    }
+
+
+    return value
+      .split(
+        "-"
+      )
+      .filter(
+        Boolean
+      )
+      .map(function(word){
+
+        return (
+          word.charAt(
+            0
+          ).toUpperCase()
+          +
+          word.slice(
+            1
+          )
+        );
+
+      })
+      .join(
+        " "
+      );
+
+  }
+
+
+
+  /*
+    Return unique non-empty strings.
+  */
+
+  function uniqueStrings(
+    values
+  ){
+
+    return [
+
+      ...new Set(
+
+        asArray(
+          values
+        )
+          .filter(function(value){
+
+            return (
+              typeof value ===
+                "string"
+              &&
+              value.trim() !==
+                ""
+            );
+
+          })
+          .map(function(value){
+
+            return value.trim();
+
+          })
+
+      )
+
+    ];
+
+  }
+
+
+
+  /*
+    Convert the crop database into a flat array.
+
+    Supports either an array-based or object-based
+    BCP_FEED_CROPS collection.
+  */
+
+  function getCropRecords(){
+
+    if(
+      !global.BCP_FEED_CROPS
+    ){
+
+      return [];
+
+    }
+
+
+    if(
+      Array.isArray(
+        global.BCP_FEED_CROPS
+      )
+    ){
+
+      return global.BCP_FEED_CROPS
+        .filter(
+          Boolean
+        );
+
+    }
+
+
+    if(
+      typeof global.BCP_FEED_CROPS ===
+        "object"
+    ){
+
+      return Object
+        .keys(
+          global.BCP_FEED_CROPS
+        )
+        .map(function(key){
+
+          return global
+            .BCP_FEED_CROPS[
+              key
+            ];
+
+        })
+        .filter(
+          Boolean
+        );
+
+    }
+
+
+    return [];
+
+  }
+
+
+
+  /*
+    Return the identity metadata for a crop record.
+  */
+
+  function getCropIdentity(
+    cropRecord
+  ){
+
+    if(
+      !cropRecord
+    ){
+
+      return {};
+
+    }
+
+
+    return (
+      cropRecord.plannerData &&
+      cropRecord.plannerData.identity
+    )
+
+      ?
+
+      cropRecord.plannerData.identity
+
+      :
+
+      (
+        cropRecord.identity ||
+        {}
+      );
+
+  }
+
+
+
+  /*
+    Resolve the crop ID used by product metadata.
+  */
+
+  function getCropId(
+    cropRecord
+  ){
+
+    const identity =
+      getCropIdentity(
+        cropRecord
+      );
+
+
+    return (
+      identity.id
+      ||
+      identity.cropId
+      ||
+      cropRecord.cropId
+      ||
+      cropRecord.id
+      ||
+      ""
+    );
+
+  }
+
+
+
+  /*
+    Resolve the public crop name.
+  */
+
+  function getCropName(
+    cropRecord
+  ){
+
+    const identity =
+      getCropIdentity(
+        cropRecord
+      );
+
+
+    return (
+      identity.commonName
+      ||
+      identity.name
+      ||
+      identity.shortLabel
+      ||
+      cropRecord.cropName
+      ||
+      cropRecord.name
+      ||
+      getCropId(
+        cropRecord
+      )
+      ||
+      "Unnamed crop"
+    );
+
+  }
+
+
+
+  /*
+    Resolve the short crop description.
+  */
+
+  function getCropDescription(
+    cropRecord
+  ){
+
+    const identity =
+      getCropIdentity(
+        cropRecord
+      );
+
+
+    return (
+      identity.summary
+      ||
+      identity.description
+      ||
+      cropRecord.description
+      ||
+      "This crop is being used to simulate a recommendation from the Feed Crop Planner results page."
+    );
+
+  }
+
+
+
+  /*
+    Resolve the crop icon.
+  */
+
+  function getCropIcon(
+    cropRecord
+  ){
+
+    const identity =
+      getCropIdentity(
+        cropRecord
+      );
+
+
+    return (
+      identity.icon ||
+      "🌱"
+    );
+
+  }
+
+
+
+  /*
+    Find a crop record by its exact production ID.
+  */
+
+  function findCropById(
+    cropId
+  ){
+
+    return getCropRecords()
+      .find(function(cropRecord){
+
+        return (
+          getCropId(
+            cropRecord
+          ) ===
+          cropId
+        );
+
+      })
+      ||
+      null;
+
+  }
+
+
+
+  /*
+    Resolve the first available crop image.
+  */
+
+  function getCropImage(
+    cropId
+  ){
+
+    if(
+      !cropId
+      ||
+      !global.BCPFeedCropImages
+      ||
+      typeof global
+        .BCPFeedCropImages
+        .getImages !==
+        "function"
+    ){
+
+      return null;
+
+    }
+
+
+    const imageSet =
+      global.BCPFeedCropImages
+        .getImages(
+          cropId
+        );
+
+
+    if(
+      !imageSet
+      ||
+      !Array.isArray(
+        imageSet.images
+      )
+    ){
+
+      return null;
+
+    }
+
+
+    return (
+      imageSet.images.find(function(image){
+
+        return (
+          image &&
+          image.type ===
+            "plant"
+        );
+
+      })
+      ||
+      imageSet.images[0]
+      ||
+      null
+    );
+
+  }
+
+
+
+  /*
+    Return all active products.
+  */
+
+  function getActiveProducts(){
+
+    if(
+      !global.BCPProductRecommendation
+      ||
+      typeof global
+        .BCPProductRecommendation
+        .getActiveProducts !==
+        "function"
+    ){
+
+      return [];
+
+    }
+
+
+    return global
+      .BCPProductRecommendation
+      .getActiveProducts();
+
+  }
+
+
+
+  /*
+    Return crops assigned to one product.
+
+    Supports legacy and current catalog fields.
+  */
+
+  function getProductCrops(
+    product
+  ){
+
+    if(
+      global.BCPProductCropBridge
+      &&
+      typeof global
+        .BCPProductCropBridge
+        .getProductCrops ===
+        "function"
+    ){
+
+      return global
+        .BCPProductCropBridge
+        .getProductCrops(
+          product
+        );
+
+    }
+
+
+    const recommendationData =
+      product &&
+      product.recommendationData
+
+        ?
+
+        product.recommendationData
+
+        :
+
+        {};
+
+
+    const recommendedFor =
+      recommendationData.recommendedFor ||
+      {};
+
+
+    return [
+
+      ...asArray(
+        recommendationData.applicableCrops
+      ),
+
+      ...asArray(
+        recommendedFor.crops
+      )
+
+    ];
+
+  }
+
+
+
+  /*
+    Collect crop-specific use cases from products
+    assigned directly to the selected crop.
+  */
+
+  function getCropUseCases(
+    cropId
+  ){
+
+    const useCases =
+      [];
+
+
+    getActiveProducts()
+      .forEach(function(product){
+
+
+        if(
+          !getProductCrops(
+            product
+          ).includes(
+            cropId
+          )
+        ){
+
+          return;
+
+        }
+
+
+        const recommendationData =
+          product.recommendationData ||
+          {};
+
+
+        const recommendedFor =
+          recommendationData.recommendedFor ||
+          {};
+
+
+        useCases.push(
+          ...asArray(
+            recommendationData.useCases
+          ),
+          ...asArray(
+            recommendedFor.useCases
+          )
+        );
+
+
+      });
+
+
+    return uniqueStrings(
+      useCases
+    )
+      .sort(function(a,b){
+
+        return a.localeCompare(
+          b
+        );
+
+      });
+
+  }
+
+
+
+  /*
+    Determine whether a product has a usable URL.
+  */
+
+  function hasProductUrl(
+    product
+  ){
+
+    return Boolean(
+      product
+      &&
+      typeof product.url ===
+        "string"
+      &&
+      product.url.trim() !==
+        ""
+    );
+
+  }
+
+
+
+  /*
+    Return the product metadata used in diagnostics.
+  */
+
+  function getProductRole(
+    product
+  ){
+
+    return (
+      product &&
+      product.recommendationData &&
+      product.recommendationData.productRole
+    )
+      ||
+      "unassigned";
+
+  }
+
+
+
+  function getProductPriority(
+    product
+  ){
+
+    const priority =
+      product &&
+      product.recommendationData
+
+        ?
+
+        product.recommendationData.priority
+
+        :
+
+        null;
+
+
+    return Number.isFinite(
+      priority
+    )
+
+      ?
+
+      priority
+
+      :
+
+      0;
+
+  }
+
+
+
+  /*
+    Expose shared helpers to Part 4.
+  */
+
+  testNamespace.asArray =
+    asArray;
+
+
+  testNamespace.escapeHTML =
+    escapeHTML;
+
+
+  testNamespace.formatIdentifier =
+    formatIdentifier;
+
+
+  testNamespace.uniqueStrings =
+    uniqueStrings;
+
+
+  testNamespace.getCropRecords =
+    getCropRecords;
+
+
+  testNamespace.getCropIdentity =
+    getCropIdentity;
+
+
+  testNamespace.getCropId =
+    getCropId;
+
+
+  testNamespace.getCropName =
+    getCropName;
+
+
+  testNamespace.getCropDescription =
+    getCropDescription;
+
+
+  testNamespace.getCropIcon =
+    getCropIcon;
+
+
+  testNamespace.findCropById =
+    findCropById;
+
+
+  testNamespace.getCropImage =
+    getCropImage;
+
+
+  testNamespace.getActiveProducts =
+    getActiveProducts;
+
+
+  testNamespace.getProductCrops =
+    getProductCrops;
+
+
+  testNamespace.getCropUseCases =
+    getCropUseCases;
+
+
+  testNamespace.hasProductUrl =
+    hasProductUrl;
+
+
+  testNamespace.getProductRole =
+    getProductRole;
+
+
+  testNamespace.getProductPriority =
+    getProductPriority;
+
+
+})(window);
+
+</script>
+
+<script>
+
+"use strict";
+
+
+(function initializeCropProductTestPage(
+  global
+){
+
+
+  const helpers =
+    global.BCPCropProductTest;
+
+
+  const elements = {
+
+    cropSelect:
+      document.getElementById(
+        "crop-product-test-crop"
+      ),
+
+    stageSelect:
+      document.getElementById(
+        "crop-product-test-stage"
+      ),
+
+    limitSelect:
+      document.getElementById(
+        "crop-product-test-limit"
+      ),
+
+    useCaseGrid:
+      document.getElementById(
+        "crop-product-test-use-case-grid"
+      ),
+
+    runButton:
+      document.getElementById(
+        "crop-product-test-run"
+      ),
+
+    resetButton:
+      document.getElementById(
+        "crop-product-test-reset"
+      ),
+
+    message:
+      document.getElementById(
+        "crop-product-test-message"
+      ),
+
+    previewSection:
+      document.getElementById(
+        "crop-product-test-preview-section"
+      ),
+
+    cropPreview:
+      document.getElementById(
+        "crop-product-test-crop-preview"
+      ),
+
+    summarySection:
+      document.getElementById(
+        "crop-product-test-summary-section"
+      ),
+
+    summaryGrid:
+      document.getElementById(
+        "crop-product-test-summary-grid"
+      ),
+
+    productsSection:
+      document.getElementById(
+        "crop-product-test-products-section"
+      ),
+
+    productGrid:
+      document.getElementById(
+        "crop-product-test-product-grid"
+      ),
+
+    diagnosticsSection:
+      document.getElementById(
+        "crop-product-test-diagnostics-section"
+      ),
+
+    tableBody:
+      document.getElementById(
+        "crop-product-test-table-body"
+      ),
+
+    profileSection:
+      document.getElementById(
+        "crop-product-test-profile-section"
+      ),
+
+    profileOutput:
+      document.getElementById(
+        "crop-product-test-profile-output"
+      )
+
+  };
+
+
+
+  /*
+    Confirm required production files loaded.
+  */
+
+  function validateDependencies(){
+
+    const missing =
+      [];
+
+
+    if(
+      !global.BCP_FEED_CROPS
+    ){
+
+      missing.push(
+        "BCP_FEED_CROPS"
+      );
+
+    }
+
+
+    if(
+      !global.BCP_PRODUCTS
+    ){
+
+      missing.push(
+        "BCP_PRODUCTS"
+      );
+
+    }
+
+
+    if(
+      !global.BCPProductRecommendation
+    ){
+
+      missing.push(
+        "BCPProductRecommendation"
+      );
+
+    }
+
+
+    if(
+      !global.BCPProductCropBridge
+    ){
+
+      missing.push(
+        "BCPProductCropBridge"
+      );
+
+    }
+
+
+    return missing;
+
+  }
+
+
+
+  /*
+    Show a status or error message.
+  */
+
+  function showMessage(
+    message,
+    isError
+  ){
+
+    elements.message.hidden =
+      false;
+
+
+    elements.message.className =
+      isError
+
+        ?
+
+        "crop-product-test-message is-error"
+
+        :
+
+        "crop-product-test-message";
+
+
+    elements.message.textContent =
+      message;
+
+  }
+
+
+
+  function hideMessage(){
+
+    elements.message.hidden =
+      true;
+
+
+    elements.message.textContent =
+      "";
+
+  }
+
+
+
+  /*
+    Hide all generated-result sections.
+  */
+
+  function hideResults(){
+
+    elements.previewSection.hidden =
+      true;
+
+
+    elements.summarySection.hidden =
+      true;
+
+
+    elements.productsSection.hidden =
+      true;
+
+
+    elements.diagnosticsSection.hidden =
+      true;
+
+
+    elements.profileSection.hidden =
+      true;
+
+  }
+
+
+
+  /*
+    Populate the crop selector using the real database.
+  */
+
+  function populateCropSelector(){
+
+    const crops =
+      helpers
+        .getCropRecords()
+        .map(function(cropRecord){
+
+          return {
+
+            cropRecord:
+              cropRecord,
+
+            cropId:
+              helpers.getCropId(
+                cropRecord
+              ),
+
+            cropName:
+              helpers.getCropName(
+                cropRecord
+              )
+
+          };
+
+        })
+        .filter(function(item){
+
+          return Boolean(
+            item.cropId
+          );
+
+        })
+        .sort(function(a,b){
+
+          return a.cropName.localeCompare(
+            b.cropName
+          );
+
+        });
+
+
+    elements.cropSelect.innerHTML =
+      crops
+        .map(function(item){
+
+          return `
+            <option
+              value="${helpers.escapeHTML(
+                item.cropId
+              )}"
+            >
+              ${helpers.escapeHTML(
+                item.cropName
+              )}
+            </option>
+          `;
+
+        })
+        .join("");
+
+
+    const cowpeaExists =
+      crops.some(function(item){
+
+        return item.cropId ===
+          "CROP-COWPEA";
+
+      });
+
+
+    if(
+      cowpeaExists
+    ){
+
+      elements.cropSelect.value =
+        "CROP-COWPEA";
+
+    }
+
+  }
+
+
+
+  /*
+    Render use cases assigned to products for the
+    selected crop.
+  */
+
+  function renderUseCaseOptions(){
+
+    const cropId =
+      elements.cropSelect.value;
+
+
+    const useCases =
+      helpers.getCropUseCases(
+        cropId
+      );
+
+
+    if(
+      useCases.length ===
+      0
+    ){
+
+      elements.useCaseGrid.innerHTML = `
+        <div class="crop-product-test-empty">
+          No crop-specific use cases were found for this crop.
+          The test can still run using crop, stage, planner,
+          product role, and priority.
+        </div>
+      `;
+
+      return;
+
+    }
+
+
+    elements.useCaseGrid.innerHTML =
+      useCases
+        .map(function(useCase){
+
+          return `
+            <label class="crop-product-test-checkbox">
+
+              <input
+                type="checkbox"
+                value="${helpers.escapeHTML(
+                  useCase
+                )}"
+              >
+
+              <span>
+                ${helpers.escapeHTML(
+                  helpers.formatIdentifier(
+                    useCase
+                  )
+                )}
+              </span>
+
+            </label>
+          `;
+
+        })
+        .join("");
+
+  }
+
+
+
+  /*
+    Return the selected use-case IDs.
+  */
+
+  function getSelectedUseCases(){
+
+    return Array
+      .from(
+        elements.useCaseGrid
+          .querySelectorAll(
+            'input[type="checkbox"]:checked'
+          )
+      )
+      .map(function(input){
+
+        return input.value;
+
+      });
+
+  }
+
+
+
+  /*
+    Render the selected crop preview.
+  */
+
+  function renderCropPreview(
+    cropRecord,
+    cropProfile
+  ){
+
+    const cropId =
+      helpers.getCropId(
+        cropRecord
+      );
+
+
+    const cropName =
+      helpers.getCropName(
+        cropRecord
+      );
+
+
+    const cropDescription =
+      helpers.getCropDescription(
+        cropRecord
+      );
+
+
+    const cropIcon =
+      helpers.getCropIcon(
+        cropRecord
+      );
+
+
+    const cropImage =
+      helpers.getCropImage(
+        cropId
+      );
+
+
+    const imageMarkup =
+      cropImage
+
+        ?
+
+        `
+          <div class="crop-product-test-crop-image">
+
+            <img
+              src="${helpers.escapeHTML(
+                cropImage.src
+              )}"
+              alt="${helpers.escapeHTML(
+                cropImage.alt ||
+                cropName
+              )}"
+            >
+
+          </div>
+        `
+
+        :
+
+        `
+          <div class="crop-product-test-crop-image">
+
+            <div class="crop-product-test-crop-image-placeholder">
+              ${helpers.escapeHTML(
+                cropIcon
+              )}
+            </div>
+
+          </div>
+        `;
+
+
+    const useCasePills =
+      cropProfile.useCases.length > 0
+
+        ?
+
+        cropProfile.useCases
+          .map(function(useCase){
+
+            return `
+              <span class="crop-product-test-pill">
+                ${helpers.escapeHTML(
+                  helpers.formatIdentifier(
+                    useCase
+                  )
+                )}
+              </span>
+            `;
+
+          })
+          .join("")
+
+        :
+
+        `
+          <span class="crop-product-test-pill">
+            No use cases selected
+          </span>
+        `;
+
+
+    elements.cropPreview.innerHTML = `
+
+      ${imageMarkup}
+
+      <div class="crop-product-test-crop-content">
+
+        <small>
+          Simulated Feed Crop Planner Recommendation
+        </small>
+
+        <h2>
+          ${helpers.escapeHTML(
+            cropIcon
+          )}
+          ${helpers.escapeHTML(
+            cropName
+          )}
+        </h2>
+
+        <p>
+          ${helpers.escapeHTML(
+            cropDescription
+          )}
+        </p>
+
+        <div class="crop-product-test-pill-list">
+
+          <span class="crop-product-test-pill">
+            Crop ID:
+            ${helpers.escapeHTML(
+              cropId
+            )}
+          </span>
+
+          <span class="crop-product-test-pill">
+            Stage:
+            ${helpers.escapeHTML(
+              helpers.formatIdentifier(
+                cropProfile.cropStages[0] ||
+                "not-specified"
+              )
+            )}
+          </span>
+
+          ${useCasePills}
+
+        </div>
+
+      </div>
+    `;
+
+
+    elements.previewSection.hidden =
+      false;
+
+  }
+
+
+
+  /*
+    Render recommendation totals.
+  */
+
+  function renderSummary(
+    activeProducts,
+    eligibleProducts,
+    recommendations
+  ){
+
+    const productsWithUrls =
+      recommendations.filter(function(result){
+
+        return helpers.hasProductUrl(
+          result.product
+        );
+
+      }).length;
+
+
+    const productsWithoutUrls =
+      recommendations.length -
+      productsWithUrls;
+
+
+    const summaryItems = [
+
+      {
+        label:
+          "Active Catalog",
+
+        value:
+          activeProducts.length
+      },
+
+      {
+        label:
+          "Eligible Products",
+
+        value:
+          eligibleProducts.length
+      },
+
+      {
+        label:
+          "Displayed",
+
+        value:
+          recommendations.length
+      },
+
+      {
+        label:
+          "Links Added",
+
+        value:
+          productsWithUrls +
+          " ready / " +
+          productsWithoutUrls +
+          " missing"
+      }
+
+    ];
+
+
+    elements.summaryGrid.innerHTML =
+      summaryItems
+        .map(function(item){
+
+          return `
+            <article class="crop-product-test-summary-card">
+
+              <span>
+                ${helpers.escapeHTML(
+                  item.label
+                )}
+              </span>
+
+              <strong>
+                ${helpers.escapeHTML(
+                  item.value
+                )}
+              </strong>
+
+            </article>
+          `;
+
+        })
+        .join("");
+
+
+    elements.summarySection.hidden =
+      false;
+
+  }
+
+
+
+  /*
+    Render one visitor-facing product card.
+  */
+
+  function renderProductCard(
+    result,
+    index
+  ){
+
+    const product =
+      result.product;
+
+
+    const bullets =
+      helpers
+        .asArray(
+          product.bullets
+        )
+        .slice(
+          0,
+          3
+        );
+
+
+    const hasUrl =
+      helpers.hasProductUrl(
+        product
+      );
+
+
+    const linkMarkup =
+      hasUrl
+
+        ?
+
+        `
+          <a
+            class="crop-product-test-product-link"
+            href="${helpers.escapeHTML(
+              product.url
+            )}"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+          >
+            ${helpers.escapeHTML(
+              product.buttonText ||
+              "View Current Price on Amazon →"
+            )}
+          </a>
+        `
+
+        :
+
+        `
+          <div class="crop-product-test-product-link-unavailable">
+            Product link not added yet
+          </div>
+        `;
+
+
+    return `
+      <article class="crop-product-test-product-card">
+
+        <div class="crop-product-test-product-card-header">
+
+          <span class="crop-product-test-product-badge">
+            ${helpers.escapeHTML(
+              product.tileBadge ||
+              product.badge ||
+              "Recommended Product"
+            )}
+          </span>
+
+          <span class="crop-product-test-product-rank">
+            #${index + 1}
+          </span>
+
+        </div>
+
+        <div class="crop-product-test-product-body">
+
+          <span class="crop-product-test-product-id">
+            ${helpers.escapeHTML(
+              product.id
+            )}
+          </span>
+
+          <h3>
+            ${helpers.escapeHTML(
+              product.title ||
+              "Untitled product"
+            )}
+          </h3>
+
+          <p class="crop-product-test-product-description">
+            ${helpers.escapeHTML(
+              product.shortDescription ||
+              product.description ||
+              "No description available."
+            )}
+          </p>
+
+          ${
+            bullets.length > 0
+              ? `
+                  <ul class="crop-product-test-product-bullets">
+
+                    ${bullets
+                      .map(function(bullet){
+
+                        return `
+                          <li>
+                            ${helpers.escapeHTML(
+                              bullet
+                            )}
+                          </li>
+                        `;
+
+                      })
+                      .join("")}
+
+                  </ul>
+                `
+              : ""
+          }
+
+          <div class="crop-product-test-product-meta">
+
+            <span>
+              Score:
+              ${helpers.escapeHTML(
+                result.score.toFixed(
+                  1
+                )
+              )}
+            </span>
+
+            <span>
+              Role:
+              ${helpers.escapeHTML(
+                helpers.formatIdentifier(
+                  helpers.getProductRole(
+                    product
+                  )
+                )
+              )}
+            </span>
+
+            <span>
+              Priority:
+              ${helpers.escapeHTML(
+                helpers.getProductPriority(
+                  product
+                )
+              )}
+            </span>
+
+          </div>
+
+          ${linkMarkup}
+
+        </div>
+
+      </article>
+    `;
+
+  }
+
+
+
+  /*
+    Render all recommendation cards.
+  */
+
+  function renderProductCards(
+    recommendations
+  ){
+
+    if(
+      recommendations.length ===
+      0
+    ){
+
+      elements.productGrid.innerHTML = `
+        <div class="crop-product-test-empty">
+          No eligible products were returned for this scenario.
+        </div>
+      `;
+
+    }else{
+
+      elements.productGrid.innerHTML =
+        recommendations
+          .map(
+            renderProductCard
+          )
+          .join("");
+
+    }
+
+
+    elements.productsSection.hidden =
+      false;
+
+  }
+
+
+
+  /*
+    Render the score-breakdown diagnostic markup.
+  */
+
+  function renderScoreBreakdown(
+    scoreBreakdown
+  ){
+
+    const breakdown =
+      scoreBreakdown ||
+      {};
+
+
+    return `
+      <div class="crop-product-test-breakdown">
+
+        ${Object
+          .keys(
+            breakdown
+          )
+          .map(function(key){
+
+            return `
+              <span>
+
+                <strong>
+                  ${helpers.escapeHTML(
+                    helpers.formatIdentifier(
+                      key
+                    )
+                  )}
+                </strong>
+
+                <span>
+                  ${helpers.escapeHTML(
+                    breakdown[key]
+                  )}
+                </span>
+
+              </span>
+            `;
+
+          })
+          .join("")}
+
+      </div>
+    `;
+
+  }
+
+
+
+  /*
+    Render the HQ diagnostic table.
+  */
+
+  function renderDiagnostics(
+    recommendations
+  ){
+
+    if(
+      recommendations.length ===
+      0
+    ){
+
+      elements.tableBody.innerHTML = `
+        <tr>
+          <td colspan="8">
+            No recommendation diagnostics are available.
+          </td>
+        </tr>
+      `;
+
+    }else{
+
+      elements.tableBody.innerHTML =
+        recommendations
+          .map(function(result,index){
+
+            const product =
+              result.product;
+
+
+            const hasUrl =
+              helpers.hasProductUrl(
+                product
+              );
+
+
+            return `
+              <tr>
+
+                <td>
+                  ${index + 1}
+                </td>
+
+                <td>
+
+                  <strong>
+                    ${helpers.escapeHTML(
+                      product.id
+                    )}
+                  </strong>
+
+                  <br>
+
+                  ${helpers.escapeHTML(
+                    product.title
+                  )}
+
+                </td>
+
+                <td class="crop-product-test-score">
+                  ${helpers.escapeHTML(
+                    result.score.toFixed(
+                      1
+                    )
+                  )}
+                </td>
+
+                <td>
+                  ${helpers.escapeHTML(
+                    helpers.formatIdentifier(
+                      helpers.getProductRole(
+                        product
+                      )
+                    )
+                  )}
+                </td>
+
+                <td>
+                  ${helpers.escapeHTML(
+                    helpers.getProductPriority(
+                      product
+                    )
+                  )}
+                </td>
+
+                <td>
+
+                  <span class="${
+                    hasUrl
+                      ? "crop-product-test-url-ready"
+                      : "crop-product-test-url-missing"
+                  }">
+
+                    ${
+                      hasUrl
+                        ? "Ready"
+                        : "Missing"
+                    }
+
+                  </span>
+
+                </td>
+
+                <td>
+                  ${renderScoreBreakdown(
+                    result.scoreBreakdown
+                  )}
+                </td>
+
+                <td class="crop-product-test-reasons">
+                  ${helpers.escapeHTML(
+                    result.reasons.join(
+                      " | "
+                    )
+                  )}
+                </td>
+
+              </tr>
+            `;
+
+          })
+          .join("");
+
+    }
+
+
+    elements.diagnosticsSection.hidden =
+      false;
+
+  }
+
+
+
+  /*
+    Run the complete recommendation test.
+  */
+
+  function runRecommendationTest(){
+
+    hideMessage();
+
+
+    const cropId =
+      elements.cropSelect.value;
+
+
+    const cropRecord =
+      helpers.findCropById(
+        cropId
+      );
+
+
+    if(
+      !cropRecord
+    ){
+
+      showMessage(
+        "The selected crop could not be found in BCP_FEED_CROPS.",
+        true
+      );
+
+      hideResults();
+
+      return;
+
+    }
+
+
+    const stage =
+      elements.stageSelect.value;
+
+
+    const limit =
+      Number(
+        elements.limitSelect.value
+      );
+
+
+    const useCases =
+      getSelectedUseCases();
+
+
+    const cropProfile =
+      global.BCPProductCropBridge
+        .getCropProductProfile({
+
+          cropId:
+            cropId,
+
+          stage:
+            stage,
+
+          useCases:
+            useCases
+
+        });
+
+
+    const activeProducts =
+      global.BCPProductRecommendation
+        .getActiveProducts();
+
+
+    const eligibleProducts =
+      global.BCPProductCropBridge
+        .filterCropPlannerProducts(
+          activeProducts,
+          cropProfile
+        );
+
+
+    const recommendations =
+      global.BCPProductCropBridge
+        .getCropProductRecommendations(
+          cropProfile,
+          limit
+        );
+
+
+    renderCropPreview(
+      cropRecord,
+      cropProfile
+    );
+
+
+    renderSummary(
+      activeProducts,
+      eligibleProducts,
+      recommendations
+    );
+
+
+    renderProductCards(
+      recommendations
+    );
+
+
+    renderDiagnostics(
+      recommendations
+    );
+
+
+    elements.profileOutput.textContent =
+      JSON.stringify(
+        cropProfile,
+        null,
+        2
+      );
+
+
+    elements.profileSection.hidden =
+      false;
+
+
+    showMessage(
+      "Recommendation test completed for " +
+      helpers.getCropName(
+        cropRecord
+      ) +
+      ".",
+      false
+    );
+
+
+    console.log(
+      "Crop product test profile:",
+      cropProfile
+    );
+
+
+    console.log(
+      "Eligible crop products:",
+      eligibleProducts
+    );
+
+
+    console.log(
+      "Ranked recommendations:",
+      recommendations
+    );
+
+  }
+
+
+
+  /*
+    Reset controls and generated results.
+  */
+
+  function resetTest(){
+
+    hideResults();
+
+    hideMessage();
+
+
+    const cowpeaOption =
+      Array
+        .from(
+          elements.cropSelect.options
+        )
+        .find(function(option){
+
+          return option.value ===
+            "CROP-COWPEA";
+
+        });
+
+
+    if(
+      cowpeaOption
+    ){
+
+      elements.cropSelect.value =
+        "CROP-COWPEA";
+
+    }else{
+
+      elements.cropSelect.selectedIndex =
+        0;
+
+    }
+
+
+    elements.stageSelect.value =
+      "planning";
+
+
+    elements.limitSelect.value =
+      "10";
+
+
+    renderUseCaseOptions();
+
+  }
+
+
+
+  /*
+    Initialize the test page.
+  */
+
+  function initialize(){
+
+    const missingDependencies =
+      validateDependencies();
+
+
+    if(
+      missingDependencies.length >
+      0
+    ){
+
+      showMessage(
+        "The following required production files did not load: " +
+        missingDependencies.join(
+          ", "
+        ),
+        true
+      );
+
+      return;
+
+    }
+
+
+    populateCropSelector();
+
+
+    renderUseCaseOptions();
+
+
+    elements.cropSelect
+      .addEventListener(
+        "change",
+        function(){
+
+          renderUseCaseOptions();
+
+          hideResults();
+
+          hideMessage();
+
+        }
+      );
+
+
+    elements.runButton
+      .addEventListener(
+        "click",
+        runRecommendationTest
+      );
+
+
+    elements.resetButton
+      .addEventListener(
+        "click",
+        resetTest
+      );
+
+
+    showMessage(
+      "The production crop database, product catalog, recommendation engine, and crop bridge loaded successfully.",
+      false
+    );
+
+  }
+
+
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    initialize
+  );
+
+
+})(window);
+
+</script>
+
+</body>
+
+</html>
