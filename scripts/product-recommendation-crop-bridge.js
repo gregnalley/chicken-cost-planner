@@ -1,6 +1,33 @@
 "use strict";
 
 
+/*
+  Backyard Chicken Planner
+  Product Recommendation Crop Bridge
+
+  Bridge Version:
+  1.2.0
+
+  Status:
+  Stable
+
+  Purpose:
+  - Translate Feed Crop Planner data into a product profile
+  - Identify products eligible for crop recommendations
+  - Rank eligible products through the shared recommendation engine
+  - Keep crop-planner-specific filtering outside the core engine
+
+  Eligibility rules:
+  - Products assigned directly to the selected crop qualify
+  - PRD-100 through PRD-119 qualify as general crop-planner products
+  - Disabled products do not qualify
+
+  Dependencies:
+  - window.BCP_PRODUCTS
+  - window.BCPProductRecommendation
+*/
+
+
 (function initializeProductCropBridge(
   global
 ){
@@ -13,19 +40,25 @@
 
 
   const VERSION =
-    "1.1.0";
+    "1.2.0";
 
 
-  const CROP_PLANNER_PAGE_TYPES =
-    Object.freeze([
+  const GENERAL_PRODUCT_RANGE =
+    Object.freeze({
 
-      "feed-crop-guide",
+      minimum:
+        100,
 
-      "growing-guide"
+      maximum:
+        119
 
-    ]);
+    });
 
 
+
+  /*
+    Return an array or an empty array.
+  */
 
   function normalizeArray(
     value
@@ -38,6 +71,10 @@
   }
 
 
+
+  /*
+    Return a product's recommendation metadata.
+  */
 
   function getRecommendationData(
     product
@@ -60,27 +97,38 @@
 
 
 
+  /*
+    Return the standardized recommendedFor object.
+  */
+
   function getRecommendedFor(
     product
   ){
 
-    const data =
+    const recommendationData =
       getRecommendationData(
         product
       );
 
 
-    return data.recommendedFor || {};
+    return recommendationData.recommendedFor || {};
 
   }
 
 
 
+  /*
+    Return all crop IDs assigned to a product.
+
+    Both the legacy and current crop fields are
+    supported during the catalog transition.
+  */
+
   function getProductCrops(
     product
   ){
 
-    const data =
+    const recommendationData =
       getRecommendationData(
         product
       );
@@ -95,7 +143,7 @@
     return [
 
       ...normalizeArray(
-        data.applicableCrops
+        recommendationData.applicableCrops
       ),
 
       ...normalizeArray(
@@ -107,6 +155,11 @@
   }
 
 
+
+  /*
+    Determine whether a product is assigned directly
+    to any crop in the supplied profile.
+  */
 
   function hasExactCropMatch(
     product,
@@ -138,153 +191,150 @@
 
 
 
-  function hasCropPlannerPageType(
+  /*
+    Identify the intentional general crop-planner
+    product group: PRD-100 through PRD-119.
+  */
+
+  function isGeneralCropPlannerProduct(
     product
   ){
 
-    const recommendedFor =
-      getRecommendedFor(
+    if(
+      !product
+      ||
+      typeof product.id !==
+        "string"
+    ){
+
+      return false;
+
+    }
+
+
+    const match =
+      product.id.match(
+        /^PRD-(\d+)$/
+      );
+
+
+    if(
+      !match
+    ){
+
+      return false;
+
+    }
+
+
+    const productNumber =
+      Number(
+        match[1]
+      );
+
+
+    return (
+      productNumber >=
+        GENERAL_PRODUCT_RANGE.minimum
+      &&
+      productNumber <=
+        GENERAL_PRODUCT_RANGE.maximum
+    );
+
+  }
+
+
+
+  /*
+    Determine whether a product belongs in the
+    Feed Crop Planner recommendation pool.
+  */
+
+  function isEligibleCropPlannerProduct(
+    product,
+    cropProfile
+  ){
+
+    const recommendationData =
+      getRecommendationData(
         product
       );
 
 
-    const pageTypes =
-      normalizeArray(
-        recommendedFor.pageTypes
-      );
+    if(
+      !product
+      ||
+      !product.id
+      ||
+      Object.keys(
+        recommendationData
+      ).length === 0
+    ){
+
+      return false;
+
+    }
 
 
-    return pageTypes.some(function(pageType){
+    if(
+      recommendationData.enabled ===
+      false
+    ){
 
-      return CROP_PLANNER_PAGE_TYPES.includes(
-        pageType
-      );
+      return false;
 
-    });
+    }
 
-  }
 
-  function isGeneralCropPlannerProduct(
-  product
-){
+    if(
+      hasExactCropMatch(
+        product,
+        cropProfile
+      )
+    ){
 
-  if(
-    !product
-    ||
-    typeof product.id !==
-      "string"
-  ){
+      return true;
+
+    }
+
+
+    if(
+      isGeneralCropPlannerProduct(
+        product
+      )
+    ){
+
+      return true;
+
+    }
+
 
     return false;
 
   }
 
-
-  const match =
-    product.id.match(
-      /^PRD-(\d+)$/
-    );
-
-
-  if(
-    !match
-  ){
-
-    return false;
-
-  }
-
-
-  const productNumber =
-    Number(
-      match[1]
-    );
-
-
-  return (
-    productNumber >= 100
-    &&
-    productNumber <= 119
-  );
-
-}
-
-
-
-  function isEligibleCropPlannerProduct(
-  product,
-  cropProfile
-){
-
-  if(
-    !product
-    ||
-    !product.recommendationData
-  ){
-
-    return false;
-
-  }
-
-
-  if(
-    product.recommendationData.enabled ===
-    false
-  ){
-
-    return false;
-
-  }
 
 
   /*
-    Any product with an exact crop match qualifies.
+    Convert crop-result data into the standard
+    recommendation profile expected by the engine.
 
-    This covers the crop-specific products beginning
-    with PRD-120 and any future product explicitly
-    assigned to the selected crop.
+    cropData shape:
+
+    {
+      cropId: "CROP-SUNFLOWER",
+      stage: "planning",
+      useCases: [...]
+    }
   */
-
-  if(
-    hasExactCropMatch(
-      product,
-      cropProfile
-    )
-  ){
-
-    return true;
-
-  }
-
-
-  /*
-    PRD-100 through PRD-119 are the intentional
-    general Feed Crop Planner products.
-
-    These include tools, soil products, irrigation,
-    seed-starting supplies, and organization items.
-  */
-
-  if(
-    isGeneralCropPlannerProduct(
-      product
-    )
-  ){
-
-    return true;
-
-  }
-
-
-  return false;
-
-}
-
-
 
   function getCropProductProfile(
     cropData
   ){
+
+    const source =
+      cropData || {};
+
 
     return {
 
@@ -292,15 +342,21 @@
         "crop-planner",
 
 
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
       applicableCrops:
 
-        cropData &&
-        cropData.cropId
+        source.cropId
 
           ?
 
           [
-            cropData.cropId
+            source.cropId
           ]
 
           :
@@ -310,13 +366,12 @@
 
       cropStages:
 
-        cropData &&
-        cropData.stage
+        source.stage
 
           ?
 
           [
-            cropData.stage
+            source.stage
           ]
 
           :
@@ -325,31 +380,43 @@
 
 
       useCases:
-
-        cropData &&
-        Array.isArray(
-          cropData.useCases
-        )
-
-          ?
-
-          cropData.useCases
-
-          :
-
-          [],
+        normalizeArray(
+          source.useCases
+        ),
 
 
       buyerStage:
-        "homestead",
+
+        typeof source.buyerStage ===
+          "string"
+
+          ?
+
+          source.buyerStage
+
+          :
+
+          "homestead",
 
 
       userType:
-        "backyard-flock-owner",
+
+        typeof source.userType ===
+          "string"
+
+          ?
+
+          source.userType
+
+          :
+
+          "backyard-flock-owner",
 
 
       problems:
-        []
+        normalizeArray(
+          source.problems
+        )
 
     };
 
@@ -357,13 +424,20 @@
 
 
 
+  /*
+    Filter an array to products eligible for the
+    supplied crop profile.
+  */
+
   function filterCropPlannerProducts(
     products,
     cropProfile
   ){
 
     if(
-      !Array.isArray(products)
+      !Array.isArray(
+        products
+      )
       ||
       !cropProfile
     ){
@@ -386,13 +460,20 @@
 
 
 
+  /*
+    Score and rank an eligible product collection
+    through the shared recommendation engine.
+  */
+
   function rankCropProducts(
     products,
     cropProfile
   ){
 
     if(
-      !Array.isArray(products)
+      !Array.isArray(
+        products
+      )
       ||
       !cropProfile
       ||
@@ -407,7 +488,7 @@
     return products
       .map(function(product){
 
-        const scored =
+        const scoredProduct =
           global.BCPProductRecommendation
             .scoreProduct(
               product,
@@ -421,16 +502,16 @@
             product,
 
           productId:
-            scored.productId,
+            scoredProduct.productId,
 
           title:
-            scored.title,
+            scoredProduct.title,
 
           score:
-            scored.score,
+            scoredProduct.score,
 
           reasons:
-            scored.reasons
+            scoredProduct.reasons
 
         };
 
@@ -444,6 +525,12 @@
   }
 
 
+
+  /*
+    Return ranked crop-product recommendations.
+
+    Pass a numeric limit to restrict the result count.
+  */
 
   function getCropProductRecommendations(
     cropProfile,
@@ -481,7 +568,10 @@
 
 
     if(
-      typeof limit === "number"
+      typeof limit ===
+        "number"
+      &&
+      limit >= 0
     ){
 
       return rankedProducts.slice(
@@ -498,8 +588,16 @@
 
 
 
+  /*
+    Public API
+  */
+
   namespace.VERSION =
     VERSION;
+
+
+  namespace.GENERAL_PRODUCT_RANGE =
+    GENERAL_PRODUCT_RANGE;
 
 
   namespace.normalizeArray =
@@ -522,8 +620,8 @@
     hasExactCropMatch;
 
 
-  namespace.hasCropPlannerPageType =
-    hasCropPlannerPageType;
+  namespace.isGeneralCropPlannerProduct =
+    isGeneralCropPlannerProduct;
 
 
   namespace.isEligibleCropPlannerProduct =
@@ -544,9 +642,6 @@
 
   namespace.getCropProductRecommendations =
     getCropProductRecommendations;
-
-  namespace.isGeneralCropPlannerProduct =
-    isGeneralCropPlannerProduct; 
 
 
 })(window);
