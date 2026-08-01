@@ -164,81 +164,121 @@
 
   }
 
+  function isGeneralCropPlannerProduct(
+  product
+){
 
-
-  function isEligibleCropPlannerProduct(
-    product,
-    cropProfile
+  if(
+    !product
+    ||
+    typeof product.id !==
+      "string"
   ){
-
-    if(
-      !product
-      ||
-      !product.recommendationData
-    ){
-
-      return false;
-
-    }
-
-
-    if(
-      product.recommendationData.enabled ===
-      false
-    ){
-
-      return false;
-
-    }
-
-
-    /*
-      Exact crop-specific products always qualify.
-    */
-
-    if(
-      hasExactCropMatch(
-        product,
-        cropProfile
-      )
-    ){
-
-      return true;
-
-    }
-
-
-    /*
-      General crop-planner tools qualify only when
-      their page metadata explicitly identifies them
-      as Feed Crop Guide or Growing Guide products.
-
-      This prevents unrelated products such as:
-      - chicken feeders
-      - nesting boxes
-      - automatic coop doors
-      - brooders
-      - first-aid supplies
-
-      from entering the Feed Crop Planner pool merely
-      because they were marked universal or assigned
-      to multiple planners.
-    */
-
-    if(
-      hasCropPlannerPageType(
-        product
-      )
-    ){
-
-      return true;
-
-    }
-
 
     return false;
 
   }
+
+
+  const match =
+    product.id.match(
+      /^PRD-(\d+)$/
+    );
+
+
+  if(
+    !match
+  ){
+
+    return false;
+
+  }
+
+
+  const productNumber =
+    Number(
+      match[1]
+    );
+
+
+  return (
+    productNumber >= 100
+    &&
+    productNumber <= 119
+  );
+
+}
+
+
+
+  function isEligibleCropPlannerProduct(
+  product,
+  cropProfile
+){
+
+  if(
+    !product
+    ||
+    !product.recommendationData
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    product.recommendationData.enabled ===
+    false
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    Any product with an exact crop match qualifies.
+
+    This covers the crop-specific products beginning
+    with PRD-120 and any future product explicitly
+    assigned to the selected crop.
+  */
+
+  if(
+    hasExactCropMatch(
+      product,
+      cropProfile
+    )
+  ){
+
+    return true;
+
+  }
+
+
+  /*
+    PRD-100 through PRD-119 are the intentional
+    general Feed Crop Planner products.
+
+    These include tools, soil products, irrigation,
+    seed-starting supplies, and organization items.
+  */
+
+  if(
+    isGeneralCropPlannerProduct(
+      product
+    )
+  ){
+
+    return true;
+
+  }
+
+
+  return false;
+
+}
 
 
 
@@ -504,6 +544,9 @@
 
   namespace.getCropProductRecommendations =
     getCropProductRecommendations;
+
+  namespace.isGeneralCropPlannerProduct =
+    isGeneralCropPlannerProduct; 
 
 
 })(window);
