@@ -1741,20 +1741,11 @@ window.BCP_PRODUCTS = {
 
 },
 
-
-
-
-
-
-
-  
-
-
-
 "PRD-006": {
 
   id:
     "PRD-006",
+
 
   category:
     "Watering Systems",
@@ -1782,7 +1773,7 @@ window.BCP_PRODUCTS = {
 
 
   description:
-    "A 5 gallon bucket-style waterer provides a convenient way to supply clean drinking water to backyard chickens while reducing the frequency of refilling compared to smaller water containers.",
+    "A 5 gallon bucket-style waterer provides a convenient way to supply clean drinking water to backyard chickens while reducing the frequency of refilling compared with smaller water containers.",
 
 
   shortDescription:
@@ -1827,90 +1818,173 @@ window.BCP_PRODUCTS = {
 
   recommendationData:{
 
-
-    productType:
+        productType:
       "bucket-waterer",
 
-      relatedProducts:[
-
-  "PRD-007",
-
-  "PRD-011"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup",
-
-    "flock-expansion"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "water-management",
+      "PRD-007",
 
-    "clean-water-access"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-001",
-
-  "PRD-002"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "automatic-watering",
-
-      "clean-water-access",
-
-      "flock-management",
-
-      "reduced-maintenance"
+      "PRD-011"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "flock-expansion"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "water-management",
+
+        "clean-water-access",
+
+        "reduce-refill-frequency",
+
+        "daily-flock-care"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-002",
+
+      "PRD-007"
+
+    ],
+
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "chicken-supplies",
+
+        "beginner-chicken-guide",
+
+        "flock-planner"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "automatic-watering",
+
+        "clean-water-access",
+
+        "flock-management",
+
+        "reduced-maintenance"
+
+      ],
+
+
+      tags:[
+
+        "bucket-waterer",
+
+        "automatic-watering",
+
+        "clean-water",
+
+        "backyard-flock",
+
+        "low-maintenance"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
 
 
     recommendationContexts:[
@@ -1926,8 +2000,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -1939,6 +2015,15 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      flockSize:[
+
+        "small",
+
+        "medium"
+
+      ],
 
 
       spaceConsiderations:[
@@ -1954,12 +2039,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -1973,6 +2061,7 @@ recommendedTogether:[
     ],
 
 
+
     tags:[
 
       "waterer",
@@ -1983,15 +2072,20 @@ recommendedTogether:[
 
       "clean-water",
 
-      "backyard-flock"
+      "backyard-flock",
+
+      "low-maintenance"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -1999,6 +2093,7 @@ recommendedTogether:[
 
   id:
     "PRD-007",
+
 
   category:
     "Watering Systems",
@@ -2072,89 +2167,162 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "chicken-supplies",
+
+        "coop-planning",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "clean-water-access",
+
+        "daily-watering",
+
+        "flock-management",
+
+        "reduced-maintenance"
+
+      ],
+
+
+      tags:[
+
+        "waterer",
+
+        "gravity-waterer",
+
+        "large-capacity",
+
+        "clean-water",
+
+        "backyard-flock"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "gravity-waterer",
 
-      relatedProducts:[
-
-  "PRD-006",
-
-  "PRD-011"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup",
-
-    "flock-expansion"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "water-management",
+      "PRD-006",
 
-    "clean-water-access"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-001",
-
-  "PRD-002"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "clean-water-access",
-
-      "daily-watering",
-
-      "flock-management",
-
-      "reduced-maintenance"
+      "PRD-011"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "flock-expansion"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "water-management",
+
+        "clean-water-access"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-002"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -2170,8 +2338,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -2198,12 +2368,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -2215,6 +2388,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -2232,17 +2406,21 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
-"PRD-008": {
+ "PRD-008": {
 
   id:
     "PRD-008",
+
 
   category:
     "Predator Protection",
@@ -2316,91 +2494,170 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "coop-size-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "predator-guide",
+
+        "coop-building-guide",
+
+        "chicken-run-guide",
+
+        "coop-security-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "predator-prevention",
+
+        "coop-security",
+
+        "run-protection",
+
+        "pest-exclusion"
+
+      ],
+
+
+      tags:[
+
+        "predator",
+
+        "hardware-cloth",
+
+        "coop-security",
+
+        "fencing",
+
+        "protection"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "diy-builder",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+    
+        productType:
       "hardware-cloth",
 
-      relatedProducts:[
-
-  "PRD-019",
-
-  "PRD-024",
-
-  "PRD-026"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "project-material",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "coop-upgrade",
-
-    "problem-solving",
-
-    "homestead"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "predator-protection",
+      "PRD-019",
 
-    "flock-security"
+      "PRD-024",
 
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "diy-builder",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-025"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "predator-prevention",
-
-      "coop-security",
-
-      "run-protection",
-
-      "pest-exclusion"
+      "PRD-026"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "project-material",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "predator-protection",
+
+        "flock-security"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "diy-builder",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-025"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -2416,8 +2673,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
-      "upgrade",
+      "primary",
+
 
 
     userCompatibility:{
@@ -2444,12 +2703,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       95,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -2461,6 +2723,7 @@ recommendedTogether:[
       "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -2478,10 +2741,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -2489,6 +2755,7 @@ recommendedTogether:[
 
   id:
     "PRD-009",
+
 
   category:
     "Chicken Housing",
@@ -2560,61 +2827,180 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "automatic-coop-door-page",
+
+        "best-chicken-coops",
+
+        "coop-security-guide",
+
+        "coop-planner"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "coop-automation",
+
+        "predator-protection",
+
+        "daily-routine-management"
+
+      ],
+
+
+      tags:[
+
+        "automatic-door",
+
+        "coop",
+
+        "automation",
+
+        "predator-protection",
+
+        "security"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "busy-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "automatic-coop-door",
 
-      relatedProducts:[
-
-  "PRD-019",
-
-  "PRD-020",
-
-  "PRD-021",
-
-  "PRD-022",
-
-  "PRD-023"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-008",
+      "PRD-019",
 
-  "PRD-026"
+      "PRD-020",
 
-],
+      "PRD-021",
 
+      "PRD-022",
 
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "coop-automation",
-
-      "predator-protection",
-
-      "daily-routine-management"
+      "PRD-023"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nighttime-predator-risk",
+
+        "daily-coop-door-management",
+
+        "busy-owner-schedule",
+
+        "flock-security"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "busy-owner",
+
+        "small-homestead",
+
+        "security-focused-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008",
+
+      "PRD-026"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -2623,13 +3009,17 @@ recommendedTogether:[
 
       "coop-planner",
 
-      "busy-owner"
+      "busy-owner",
+
+      "flock-planner"
 
     ],
 
 
+
     productRole:
-      "premium",
+      "upgrade",
+
 
 
     userCompatibility:{
@@ -2641,6 +3031,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation"
+
+      ],
 
 
       spaceConsiderations:[
@@ -2656,12 +3053,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -2675,6 +3075,7 @@ recommendedTogether:[
     ],
 
 
+
     tags:[
 
       "automatic-door",
@@ -2685,15 +3086,20 @@ recommendedTogether:[
 
       "predator-protection",
 
-      "security"
+      "security",
+
+      "busy-owner"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -2701,6 +3107,7 @@ recommendedTogether:[
 
   id:
     "PRD-010",
+
 
   category:
     "Chicken Health & Maintenance",
@@ -2774,40 +3181,176 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "chicken-supplies",
+
+        "coop-cleaning-guide",
+
+        "coop-maintenance-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "coop-cleaning",
+
+        "moisture-control",
+
+        "odor-management",
+
+        "chicken-comfort"
+
+      ],
+
+
+      tags:[
+
+        "bedding",
+
+        "coop-cleaning",
+
+        "odor-control",
+
+        "moisture-control",
+
+        "housing"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "coop-bedding",
 
 
-    applicableCrops:[],
 
+    relatedProducts:[
 
-    cropStages:[],
+      "PRD-012",
 
+      "PRD-014",
 
-    useCases:[
-
-      "coop-cleaning",
-
-      "moisture-control",
-
-      "odor-management",
-
-      "chicken-comfort"
+      "PRD-015"
 
     ],
 
+
+
     purchaseBehavior:{
 
-  purchaseType:
-    "recurring",
 
-  replacementFrequency:
-    "monthly",
+      purchaseType:
+        "recurring",
 
-  affiliatePotential:
-    "high"
 
-},
+      replacementFrequency:
+        "monthly",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "coop-maintenance",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "odor-control",
+
+        "moisture-management",
+
+        "dirty-coop",
+
+        "bird-comfort"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-012",
+
+      "PRD-015",
+
+      "PRD-025"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -2823,8 +3366,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "consumable",
+
 
 
     userCompatibility:{
@@ -2851,12 +3396,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       80,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -2868,6 +3416,7 @@ recommendedTogether:[
       "housing"
 
     ],
+
 
 
     tags:[
@@ -2885,10 +3434,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -2896,6 +3448,7 @@ recommendedTogether:[
 
   id:
     "PRD-011",
+
 
   category:
     "Watering Systems",
@@ -2935,7 +3488,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -2969,70 +3522,166 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "diy-projects",
+
+        "coop-planner",
+
+        "chicken-supplies"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "clean-water-access",
+
+        "diy-waterer-build",
+
+        "heated-watering",
+
+        "low-maintenance-watering"
+
+      ],
+
+
+      tags:[
+
+        "waterer",
+
+        "poultry-nipple",
+
+        "watering-cup",
+
+        "diy",
+
+        "clean-water"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "diy-builder",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "watering-cup-system",
 
 
-    applicableCrops:[],
 
+    relatedProducts:[
 
-    cropStages:[],
+      "PRD-006",
 
+      "PRD-007",
 
-    useCases:[
-
-      "clean-water-access",
-
-      "diy-waterer-build",
-
-      "heated-watering",
-
-      "low-maintenance-watering"
+      "PRD-004"
 
     ],
 
+
+
     purchaseBehavior:{
 
-  purchaseType:
-    "project-material",
 
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "homestead",
-
-    "coop-upgrade"
-
-  ],
+      purchaseType:
+        "project-material",
 
 
-  commonProblems:[
-
-    "water-cleanliness",
-
-    "diy-watering-system"
-
-  ],
+      replacementFrequency:
+        "5+ years",
 
 
-  idealUsers:[
+      affiliatePotential:
+        "medium"
 
-    "diy-builder",
 
-    "small-homestead"
+    },
 
-  ]
 
-},
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "homestead",
+
+        "coop-upgrade"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "water-cleanliness",
+
+        "diy-watering-system"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "diy-builder",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-006",
+
+      "PRD-007",
+
+      "PRD-010"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -3048,8 +3697,10 @@ buyerIntent:{
     ],
 
 
+
     productRole:
-       "diy-solution",
+      "diy-solution",
+
 
 
     userCompatibility:{
@@ -3061,6 +3712,13 @@ buyerIntent:{
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-diy-skills"
+
+      ],
 
 
       spaceConsiderations:[
@@ -3076,12 +3734,15 @@ buyerIntent:{
     },
 
 
+
     priority:
       80,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -3093,6 +3754,7 @@ buyerIntent:{
       "diy-projects"
 
     ],
+
 
 
     tags:[
@@ -3110,10 +3772,13 @@ buyerIntent:{
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -3121,6 +3786,7 @@ buyerIntent:{
 
   id:
     "PRD-012",
+
 
   category:
     "Chicken Housing",
@@ -3160,7 +3826,7 @@ buyerIntent:{
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -3194,91 +3860,174 @@ buyerIntent:{
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "chicken-coop-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "best-chicken-coops",
+
+        "coop-size-guide",
+
+        "chicken-coop-estimator",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "flock-housing",
+
+        "coop-upgrade",
+
+        "predator-protection",
+
+        "larger-flock-management"
+
+      ],
+
+
+      tags:[
+
+        "coop",
+
+        "walk-in",
+
+        "large-flock",
+
+        "housing",
+
+        "predator-protection"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "expanding-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "walk-in-coop",
 
-      relatedProducts:[
-
-  "PRD-008",
-
-  "PRD-019",
-
-  "PRD-016"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup",
-
-    "flock-expansion"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "housing-needs",
+      "PRD-008",
 
-    "predator-protection"
+      "PRD-010",
 
-  ],
+      "PRD-016",
 
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-010",
-
-  "PRD-007"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "flock-housing",
-
-      "coop-upgrade",
-
-      "predator-protection",
-
-      "larger-flock-management"
+      "PRD-019"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "flock-expansion"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "housing-needs",
+
+        "predator-protection"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-010",
+
+      "PRD-007"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -3294,8 +4043,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -3309,6 +4060,13 @@ recommendedTogether:[
         false,
 
 
+      skillRequirements:[
+
+        "basic-assembly"
+
+      ],
+
+
       spaceConsiderations:[
 
         "medium",
@@ -3320,12 +4078,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -3337,6 +4098,7 @@ recommendedTogether:[
       "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -3354,10 +4116,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -3365,6 +4130,7 @@ recommendedTogether:[
 
   id:
     "PRD-013",
+
 
   category:
     "Chicken Housing",
@@ -3402,7 +4168,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -3436,87 +4202,166 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "chicken-coop-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "best-chicken-coops",
+
+        "beginner-chicken-guide",
+
+        "coop-estimator",
+
+        "coop-size-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "beginner-flock-housing",
+
+        "small-flock-management",
+
+        "starter-coop-setup"
+
+      ],
+
+
+      tags:[
+
+        "starter-coop",
+
+        "small-flock",
+
+        "beginner",
+
+        "housing"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "starter-coop",
 
-      relatedProducts:[
-
-  "PRD-008",
-
-  "PRD-017",
-
-  "PRD-018"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup",
-
-    "flock-expansion"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "housing-needs",
+      "PRD-008",
 
-    "predator-protection"
+      "PRD-017",
 
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-007",
-
-  "PRD-002"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "beginner-flock-housing",
-
-      "small-flock-management"
+      "PRD-018"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "flock-expansion"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "housing-needs",
+
+        "predator-protection"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-007",
+
+      "PRD-002"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -3532,8 +4377,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "entry-level",
+
 
 
     userCompatibility:{
@@ -3547,6 +4394,13 @@ recommendedTogether:[
         false,
 
 
+      flockSize:[
+
+        "2-4 chickens"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -3556,12 +4410,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       65,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -3571,6 +4428,7 @@ recommendedTogether:[
       "beginner-chicken-care"
 
     ],
+
 
 
     tags:[
@@ -3586,10 +4444,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -3597,6 +4458,7 @@ recommendedTogether:[
 
   id:
     "PRD-014",
+
 
   category:
     "Chicken Housing",
@@ -3634,7 +4496,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -3668,87 +4530,162 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "chicken-run-guide",
+
+        "pasture-management",
+
+        "best-chicken-coops",
+
+        "rotational-grazing-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "rotational-grazing",
+
+        "pasture-access",
+
+        "mobile-housing",
+
+        "supplemental-foraging"
+
+      ],
+
+
+      tags:[
+
+        "chicken-tractor",
+
+        "mobile-coop",
+
+        "grazing",
+
+        "pasture"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "pasture-based-keeper",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "chicken-tractor",
 
-      relatedProducts:[
-
-  "PRD-024",
-
-  "PRD-025",
-
-  "PRD-007"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup",
-
-    "flock-expansion"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "housing-needs",
+      "PRD-024",
 
-    "predator-protection"
+      "PRD-025",
 
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-008"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "rotational-grazing",
-
-      "pasture-access",
-
-      "mobile-housing"
+      "PRD-007"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "flock-expansion"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "housing-needs",
+
+        "predator-protection"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -3762,8 +4699,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "specialized",
+
 
 
     userCompatibility:{
@@ -3777,6 +4716,15 @@ recommendedTogether:[
         false,
 
 
+      flockSize:[
+
+        "small",
+
+        "medium"
+
+      ],
+
+
       spaceConsiderations:[
 
         "medium",
@@ -3788,12 +4736,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       75,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -3805,6 +4756,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -3820,10 +4772,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -3831,6 +4786,7 @@ recommendedTogether:[
 
   id:
     "PRD-015",
+
 
   category:
     "Chicken Housing",
@@ -3868,7 +4824,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -3902,89 +4858,176 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "chicken-coop-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "coop-size-guide",
+
+        "chicken-coop-estimator",
+
+        "best-chicken-coops",
+
+        "large-flock-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "large-flock-housing",
+
+        "custom-coop-building",
+
+        "coop-expansion"
+
+      ],
+
+
+      tags:[
+
+        "shed-coop",
+
+        "large-flock",
+
+        "housing",
+
+        "customization"
+
+      ],
+
+
+      audiences:[
+
+        "intermediate",
+
+        "experienced",
+
+        "large-flock-owner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "shed-coop",
 
-      relatedProducts:[
-
-  "PRD-008",
-
-  "PRD-016",
-
-  "PRD-019"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup",
-
-    "flock-expansion"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "housing-needs",
+      "PRD-008",
 
-    "predator-protection"
+      "PRD-016",
 
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-010",
-
-  "PRD-007"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "large-flock-housing",
-
-      "custom-coop-building",
-
-      "coop-expansion"
+      "PRD-019"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "flock-expansion",
+
+        "coop-upgrade",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "housing-needs",
+
+        "large-flock-housing",
+
+        "predator-protection",
+
+        "coop-expansion"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "experienced-backyard-keeper",
+
+        "large-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-010",
+
+      "PRD-007",
+
+      "PRD-008"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -3993,13 +5036,17 @@ recommendedTogether:[
 
       "chicken-coop-estimator",
 
-      "flock-planner"
+      "flock-planner",
+
+      "best-chicken-coops"
 
     ],
 
 
+
     productRole:
       "premium",
+
 
 
     userCompatibility:{
@@ -4013,6 +5060,24 @@ recommendedTogether:[
         false,
 
 
+      skillRequirements:[
+
+        "assembly",
+
+        "basic-coop-upgrades"
+
+      ],
+
+
+      flockSize:[
+
+        "medium",
+
+        "large"
+
+      ],
+
+
       spaceConsiderations:[
 
         "large"
@@ -4022,21 +5087,27 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
+
 
 
     universal:
       true,
 
 
+
     universalCategories:[
 
       "housing",
 
-      "large-flock-management"
+      "large-flock-management",
+
+      "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -4047,15 +5118,20 @@ recommendedTogether:[
 
       "housing",
 
-      "customization"
+      "customization",
+
+      "coop-expansion"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -4063,6 +5139,7 @@ recommendedTogether:[
 
   id:
     "PRD-016",
+
 
   category:
     "Chicken Housing",
@@ -4102,7 +5179,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -4136,40 +5213,184 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "egg-profit-calculator",
+
+        "chicken-coop-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "nesting-box-guide",
+
+        "egg-production-guide",
+
+        "chicken-coop-guide",
+
+        "large-flock-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "egg-collection",
+
+        "nest-management",
+
+        "clean-egg-production",
+
+        "large-flock-management"
+
+      ],
+
+
+      tags:[
+
+        "nesting-box",
+
+        "roll-away",
+
+        "eggs",
+
+        "egg-collection",
+
+        "large-flock"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "medium-flock",
+
+        "large-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "roll-away-nesting-box",
 
 
-    applicableCrops:[],
 
+    relatedProducts:[
 
-    cropStages:[],
+      "PRD-015",
 
+      "PRD-017",
 
-    useCases:[
-
-      "egg-collection",
-
-      "nest-management",
-
-      "clean-egg-production",
-
-      "large-flock-management"
+      "PRD-018"
 
     ],
 
+
+
     purchaseBehavior:{
 
-  purchaseType:
-    "one-time",
 
-  replacementFrequency:
-    "5+ years",
+      purchaseType:
+        "one-time",
 
-  affiliatePotential:
-    "medium"
 
-},
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "flock-expansion",
+
+        "egg-production",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "dirty-eggs",
+
+        "broken-eggs",
+
+        "egg-collection",
+
+        "nest-management"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "large-flock-owner",
+
+        "egg-producer"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-015",
+
+      "PRD-010",
+
+      "PRD-017"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -4185,8 +5406,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -4200,6 +5423,15 @@ recommendedTogether:[
         false,
 
 
+      flockSize:[
+
+        "medium",
+
+        "large"
+
+      ],
+
+
       spaceConsiderations:[
 
         "medium",
@@ -4211,12 +5443,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -4228,6 +5463,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -4245,10 +5481,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -4256,6 +5495,7 @@ recommendedTogether:[
 
   id:
     "PRD-017",
+
 
   category:
     "Chicken Housing",
@@ -4293,7 +5533,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -4327,38 +5567,174 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "egg-profit-calculator",
+
+        "chicken-coop-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "nesting-box-guide",
+
+        "egg-production-guide",
+
+        "beginner-chicken-guide",
+
+        "chicken-coop-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "egg-laying-management",
+
+        "nesting-area",
+
+        "egg-collection"
+
+      ],
+
+
+      tags:[
+
+        "nesting-box",
+
+        "plastic",
+
+        "beginner",
+
+        "eggs"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "plastic-nesting-box",
 
 
-    applicableCrops:[],
 
+    relatedProducts:[
 
-    cropStages:[],
+      "PRD-013",
 
+      "PRD-016",
 
-    useCases:[
-
-      "egg-laying-management",
-
-      "nesting-area",
-
-      "egg-collection"
+      "PRD-018"
 
     ],
 
+
+
     purchaseBehavior:{
 
-  purchaseType:
-    "one-time",
 
-  replacementFrequency:
-    "3-5 years",
+      purchaseType:
+        "one-time",
 
-  affiliatePotential:
-    "medium"
 
-},
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "egg-production"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "lack-of-nesting-space",
+
+        "dirty-eggs",
+
+        "egg-collection"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-013",
+
+      "PRD-010",
+
+      "PRD-018"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -4367,13 +5743,17 @@ recommendedTogether:[
 
       "flock-planner",
 
-      "egg-production-guide"
+      "egg-production-guide",
+
+      "chicken-coop-guide"
 
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -4387,6 +5767,13 @@ recommendedTogether:[
         false,
 
 
+      flockSize:[
+
+        "small"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small",
@@ -4398,12 +5785,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       70,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -4417,6 +5807,7 @@ recommendedTogether:[
     ],
 
 
+
     tags:[
 
       "nesting-box",
@@ -4425,15 +5816,20 @@ recommendedTogether:[
 
       "beginner",
 
-      "eggs"
+      "eggs",
+
+      "small-flock"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -4441,6 +5837,7 @@ recommendedTogether:[
 
   id:
     "PRD-018",
+
 
   category:
     "Chicken Housing",
@@ -4478,7 +5875,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -4512,38 +5909,174 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[
+
+        "egg-profit-calculator",
+
+        "chicken-coop-estimator"
+
+      ],
+
+
+      pageTypes:[
+
+        "nesting-box-guide",
+
+        "beginner-chicken-guide",
+
+        "egg-production-guide",
+
+        "chicken-coop-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "egg-laying-management",
+
+        "small-flock-nesting",
+
+        "egg-collection"
+
+      ],
+
+
+      tags:[
+
+        "nesting-box",
+
+        "small-flock",
+
+        "beginner",
+
+        "eggs"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "single-nesting-box",
 
 
-    applicableCrops:[],
 
+    relatedProducts:[
 
-    cropStages:[],
+      "PRD-013",
 
+      "PRD-016",
 
-    useCases:[
-
-      "egg-laying-management",
-
-      "small-flock-nesting",
-
-      "egg-collection"
+      "PRD-017"
 
     ],
 
+
+
     purchaseBehavior:{
 
-  purchaseType:
-    "one-time",
 
-  replacementFrequency:
-    "3-5 years",
+      purchaseType:
+        "one-time",
 
-  affiliatePotential:
-    "medium"
 
-},
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "egg-production"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "lack-of-nesting-space",
+
+        "egg-laying-location",
+
+        "egg-collection"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-013",
+
+      "PRD-010",
+
+      "PRD-017"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -4552,13 +6085,17 @@ recommendedTogether:[
 
       "flock-planner",
 
-      "coop-estimator"
+      "coop-estimator",
+
+      "egg-production-guide"
 
     ],
 
 
+
     productRole:
       "entry-level",
+
 
 
     userCompatibility:{
@@ -4572,6 +6109,13 @@ recommendedTogether:[
         false,
 
 
+      flockSize:[
+
+        "2-4 chickens"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -4581,12 +6125,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       60,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -4600,6 +6147,7 @@ recommendedTogether:[
     ],
 
 
+
     tags:[
 
       "nesting-box",
@@ -4608,15 +6156,20 @@ recommendedTogether:[
 
       "beginner",
 
-      "eggs"
+      "eggs",
+
+      "starter-flock"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -4624,6 +6177,7 @@ recommendedTogether:[
 
   id:
     "PRD-019",
+
 
   category:
     "Chicken Automation",
@@ -4661,7 +6215,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -4695,61 +6249,178 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "automatic-coop-door-page",
+
+        "coop-security-guide",
+
+        "best-chicken-coops",
+
+        "predator-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "coop-security",
+
+        "automation",
+
+        "predator-prevention",
+
+        "daily-routine-management"
+
+      ],
+
+
+      tags:[
+
+        "automatic-door",
+
+        "coop-security",
+
+        "automation",
+
+        "predator-protection"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "busy-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "automatic-coop-door",
 
-      relatedProducts:[
-
-  "PRD-020",
-
-  "PRD-021",
-
-  "PRD-022",
-
-  "PRD-023"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-008",
+      "PRD-020",
 
-  "PRD-026"
+      "PRD-021",
 
-],
+      "PRD-022",
 
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "coop-security",
-
-      "automation",
-
-      "predator-prevention",
-
-      "daily-routine-management"
+      "PRD-023"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nighttime-predator-risk",
+
+        "daily-coop-door-management",
+
+        "busy-owner-schedule",
+
+        "flock-security"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "busy-owner",
+
+        "small-homestead",
+
+        "security-focused-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008",
+
+      "PRD-026"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -4765,8 +6436,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "upgrade",
+
 
 
     userCompatibility:{
@@ -4778,6 +6451,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation"
+
+      ],
 
 
       spaceConsiderations:[
@@ -4793,12 +6473,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       95,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -4810,6 +6493,7 @@ recommendedTogether:[
       "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -4825,10 +6509,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -4836,6 +6523,7 @@ recommendedTogether:[
 
   id:
     "PRD-020",
+
 
   category:
     "Chicken Automation",
@@ -4873,7 +6561,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -4907,57 +6595,176 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "automatic-coop-door-page",
+
+        "coop-security-guide",
+
+        "best-chicken-coops",
+
+        "predator-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "coop-security",
+
+        "automation",
+
+        "predator-prevention",
+
+        "convenience"
+
+      ],
+
+
+      tags:[
+
+        "automatic-door",
+
+        "coop",
+
+        "security",
+
+        "automation",
+
+        "timer"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "busy-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "automatic-coop-door",
 
-      relatedProducts:[
-
-  "PRD-019",
-
-  "PRD-021",
-
-  "PRD-022"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-008"
+      "PRD-019",
 
-],
+      "PRD-021",
 
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "coop-security",
-
-      "automation",
-
-      "predator-prevention",
-
-      "convenience"
+      "PRD-022"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nighttime-predator-risk",
+
+        "daily-coop-door-management",
+
+        "weather-exposure",
+
+        "busy-owner-schedule"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "busy-owner",
+
+        "small-homestead",
+
+        "security-focused-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -4971,8 +6778,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "upgrade",
+
 
 
     userCompatibility:{
@@ -4984,6 +6793,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation"
+
+      ],
 
 
       spaceConsiderations:[
@@ -4999,12 +6815,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -5016,6 +6835,7 @@ recommendedTogether:[
       "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -5033,10 +6853,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -5044,6 +6867,7 @@ recommendedTogether:[
 
   id:
     "PRD-021",
+
 
   category:
     "Chicken Automation",
@@ -5081,7 +6905,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -5115,59 +6939,174 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "automatic-coop-door-page",
+
+        "beginner-chicken-guide",
+
+        "coop-security-guide",
+
+        "best-chicken-coops"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "coop-automation",
+
+        "daily-routine-management",
+
+        "predator-protection",
+
+        "beginner-automation"
+
+      ],
+
+
+      tags:[
+
+        "automatic-door",
+
+        "battery-powered",
+
+        "beginner",
+
+        "coop",
+
+        "automation"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "backyard-flock-owner",
+
+        "busy-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "battery-automatic-coop-door",
 
-      relatedProducts:[
-
-  "PRD-019",
-
-  "PRD-020",
-
-  "PRD-022",
-
-  "PRD-023"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-008"
+      "PRD-019",
 
-],
+      "PRD-020",
 
+      "PRD-022",
 
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "coop-automation",
-
-      "daily-routine-management",
-
-      "predator-protection",
-
-      "beginner-automation"
+      "PRD-023"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "coop-upgrade"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nighttime-predator-risk",
+
+        "daily-coop-door-management",
+
+        "manual-coop-door",
+
+        "beginner-automation"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "budget-conscious-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -5181,8 +7120,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "upgrade",
+
 
 
     userCompatibility:{
@@ -5194,6 +7135,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation"
+
+      ],
 
 
       spaceConsiderations:[
@@ -5209,12 +7157,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       75,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -5226,6 +7177,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -5243,10 +7195,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -5254,6 +7209,7 @@ recommendedTogether:[
 
   id:
     "PRD-022",
+
 
   category:
     "Chicken Automation",
@@ -5293,7 +7249,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -5327,59 +7283,178 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "automatic-coop-door-page",
+
+        "smart-chicken-products",
+
+        "coop-security-guide",
+
+        "best-chicken-coops"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "remote-monitoring",
+
+        "coop-automation",
+
+        "security-monitoring",
+
+        "predator-awareness"
+
+      ],
+
+
+      tags:[
+
+        "automatic-door",
+
+        "smart-coop",
+
+        "camera",
+
+        "solar",
+
+        "monitoring"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "technology-enthusiast",
+
+        "homesteader",
+
+        "busy-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "smart-automatic-coop-door",
 
-      relatedProducts:[
-
-  "PRD-019",
-
-  "PRD-020",
-
-  "PRD-023"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-026",
+      "PRD-019",
 
-  "PRD-027"
+      "PRD-020",
 
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "remote-monitoring",
-
-      "coop-automation",
-
-      "security-monitoring",
-
-      "predator-awareness"
+      "PRD-023"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "coop-upgrade",
+
+        "technology-upgrade",
+
+        "homestead",
+
+        "problem-solving"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nighttime-predator-risk",
+
+        "remote-monitoring",
+
+        "daily-coop-door-management",
+
+        "security-monitoring"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "technology-enthusiast",
+
+        "busy-owner",
+
+        "security-focused-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-026",
+
+      "PRD-027"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -5393,8 +7468,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "upgrade",
+
 
 
     userCompatibility:{
@@ -5406,6 +7483,15 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation",
+
+        "wifi-setup"
+
+      ],
 
 
       spaceConsiderations:[
@@ -5421,12 +7507,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -5438,6 +7527,7 @@ recommendedTogether:[
       "technology"
 
     ],
+
 
 
     tags:[
@@ -5455,10 +7545,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -5466,6 +7559,7 @@ recommendedTogether:[
 
   id:
     "PRD-023",
+
 
   category:
     "Chicken Automation",
@@ -5505,7 +7599,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -5539,57 +7633,174 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "automatic-coop-door-page",
+
+        "predator-guide",
+
+        "cold-weather-chickens",
+
+        "coop-security-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "predator-protection",
+
+        "coop-security",
+
+        "extreme-weather-management",
+
+        "automation"
+
+      ],
+
+
+      tags:[
+
+        "automatic-door",
+
+        "steel",
+
+        "heavy-duty",
+
+        "predator",
+
+        "security"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "cold-climate-keeper",
+
+        "security-focused-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "heavy-duty-automatic-coop-door",
 
-      relatedProducts:[
-
-  "PRD-019",
-
-  "PRD-022"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "high"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-008",
+      "PRD-019",
 
-  "PRD-026"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "predator-protection",
-
-      "coop-security",
-
-      "extreme-weather-management",
-
-      "automation"
+      "PRD-022"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nighttime-predator-risk",
+
+        "extreme-weather",
+
+        "coop-security",
+
+        "long-term-durability"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "homesteader",
+
+        "cold-climate-keeper",
+
+        "security-focused-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008",
+
+      "PRD-026"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -5603,8 +7814,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "upgrade",
+
 
 
     userCompatibility:{
@@ -5616,6 +7829,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation"
+
+      ],
 
 
       spaceConsiderations:[
@@ -5631,12 +7851,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       95,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -5648,6 +7871,7 @@ recommendedTogether:[
       "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -5665,10 +7889,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -5676,6 +7903,7 @@ recommendedTogether:[
 
   id:
     "PRD-024",
+
 
   category:
     "Predator Protection",
@@ -5715,7 +7943,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -5749,89 +7977,176 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "predator-guide",
+
+        "chicken-tractor-guide",
+
+        "pasture-management",
+
+        "electric-fencing-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "predator-protection",
+
+        "rotational-grazing",
+
+        "pasture-management",
+
+        "mobile-flock-management"
+
+      ],
+
+
+      tags:[
+
+        "electric-fence",
+
+        "poultry-netting",
+
+        "predator",
+
+        "pasture",
+
+        "mobile"
+
+      ],
+
+
+      audiences:[
+
+        "homesteader",
+
+        "pasture-based-keeper",
+
+        "intermediate",
+
+        "large-flock-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "electric-poultry-netting",
 
-      relatedProducts:[
-
-  "PRD-025",
-
-  "PRD-026"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "coop-upgrade",
-
-    "problem-solving",
-
-    "homestead"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "predator-protection",
+      "PRD-025",
 
-    "flock-security"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "diy-builder",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-025"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "predator-protection",
-
-      "rotational-grazing",
-
-      "pasture-management",
-
-      "mobile-flock-management"
+      "PRD-026"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "predator-protection",
+
+        "flock-security",
+
+        "free-ranging-risk",
+
+        "pasture-management"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "diy-builder",
+
+        "small-homestead",
+
+        "pasture-based-keeper"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-025",
+
+      "PRD-014",
+
+      "PRD-026"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -5847,8 +8162,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -5862,6 +8179,24 @@ recommendedTogether:[
         false,
 
 
+      skillRequirements:[
+
+        "basic-fence-installation"
+
+      ],
+
+
+      flockSize:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ],
+
+
       spaceConsiderations:[
 
         "medium",
@@ -5873,12 +8208,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -5890,6 +8228,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -5907,10 +8246,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -5918,6 +8260,7 @@ recommendedTogether:[
 
   id:
     "PRD-025",
+
 
   category:
     "Predator Protection",
@@ -5955,7 +8298,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -5989,85 +8332,160 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "feed-crop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "predator-guide",
+
+        "electric-fencing-guide",
+
+        "pasture-management",
+
+        "chicken-tractor-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "electric-fence-power",
+
+        "predator-protection",
+
+        "portable-pasture"
+
+      ],
+
+
+      tags:[
+
+        "energizer",
+
+        "solar",
+
+        "electric-fence",
+
+        "predator",
+
+        "portable"
+
+      ],
+
+
+      audiences:[
+
+        "intermediate",
+
+        "homesteader",
+
+        "pasture-based-keeper",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "electric-fence-energizer",
 
-      relatedProducts:[
-
-  "PRD-024"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "coop-upgrade",
-
-    "problem-solving",
-
-    "homestead"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "predator-protection",
-
-    "flock-security"
-
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "diy-builder",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-024"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "electric-fence-power",
-
-      "predator-protection",
-
-      "portable-pasture"
+      "PRD-024"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "predator-protection",
+
+        "flock-security"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "diy-builder",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-024"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -6081,8 +8499,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "companion",
+
 
 
     userCompatibility:{
@@ -6096,6 +8516,13 @@ recommendedTogether:[
         false,
 
 
+      skillRequirements:[
+
+        "basic-fence-installation"
+
+      ],
+
+
       spaceConsiderations:[
 
         "medium",
@@ -6107,12 +8534,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -6122,6 +8552,7 @@ recommendedTogether:[
       "pasture-management"
 
     ],
+
 
 
     tags:[
@@ -6139,10 +8570,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -6150,6 +8584,7 @@ recommendedTogether:[
 
   id:
     "PRD-026",
+
 
   category:
     "Predator Protection",
@@ -6189,7 +8624,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -6223,91 +8658,172 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "predator-guide",
+
+        "missing-chicken-guide",
+
+        "flock-security",
+
+        "coop-planner"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "predator-identification",
+
+        "property-monitoring",
+
+        "flock-security",
+
+        "wildlife-monitoring"
+
+      ],
+
+
+      tags:[
+
+        "trail-camera",
+
+        "predator",
+
+        "wildlife",
+
+        "security",
+
+        "monitoring"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner",
+
+        "property-owner",
+
+        "security-conscious-owner"
+
+      ]
+
+    },
+
+        productType:
       "cellular-trail-camera",
 
-      relatedProducts:[
-
-  "PRD-027",
-
-  "PRD-008",
-
-  "PRD-024"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "coop-upgrade",
-
-    "problem-solving",
-
-    "homestead"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "predator-protection",
+      "PRD-027",
 
-    "flock-security"
+      "PRD-008",
 
-  ],
-
-
-  idealUsers:[
-
-    "backyard-flock-owner",
-
-    "diy-builder",
-
-    "small-homestead"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-027"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "predator-identification",
-
-      "property-monitoring",
-
-      "flock-security",
-
-      "wildlife-monitoring"
+      "PRD-024"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "coop-upgrade",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "predator-protection",
+
+        "flock-security",
+
+        "unknown-predator",
+
+        "missing-chickens"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "diy-builder",
+
+        "small-homestead",
+
+        "security-conscious-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-027"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -6323,8 +8839,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "diagnostic",
+
 
 
     userCompatibility:{
@@ -6336,6 +8854,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-camera-setup"
+
+      ],
 
 
       spaceConsiderations:[
@@ -6351,12 +8876,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -6368,6 +8896,7 @@ recommendedTogether:[
       "flock-management"
 
     ],
+
 
 
     tags:[
@@ -6385,10 +8914,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -6396,6 +8928,7 @@ recommendedTogether:[
 
   id:
     "PRD-027",
+
 
   category:
     "Predator Protection",
@@ -6433,7 +8966,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -6467,51 +9000,150 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "predator-guide",
+
+        "trail-camera-guide",
+
+        "flock-security"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "camera-storage",
+
+        "predator-monitoring",
+
+        "wildlife-recording"
+
+      ],
+
+
+      tags:[
+
+        "micro-sd",
+
+        "trail-camera",
+
+        "storage",
+
+        "camera-accessory"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "backyard-flock-owner",
+
+        "homesteader",
+
+        "trail-camera-owner"
+
+      ]
+
+    },
+
+        productType:
       "camera-storage-accessory",
 
-      relatedProducts:[
-
-  "PRD-026"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "1-3 years",
-
-  affiliatePotential:
-    "low"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-026"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "camera-storage",
-
-      "predator-monitoring",
-
-      "wildlife-recording"
+      "PRD-026"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "1-3 years",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "problem-solving",
+
+        "equipment-setup"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "camera-storage",
+
+        "trail-camera-setup"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "trail-camera-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-026"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -6523,8 +9155,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "companion",
+
 
 
     userCompatibility:{
@@ -6536,6 +9170,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "insert-memory-card"
+
+      ],
 
 
       spaceConsiderations:[
@@ -6551,12 +9192,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       60,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -6566,6 +9210,7 @@ recommendedTogether:[
       "predator-protection"
 
     ],
+
 
 
     tags:[
@@ -6581,10 +9226,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -6592,6 +9240,7 @@ recommendedTogether:[
 
   id:
     "PRD-028",
+
 
   category:
     "Chicken Health & Maintenance",
@@ -6629,7 +9278,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -6663,55 +9312,168 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner",
+
+        "coop-planner",
+
+        "backyard-flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "hot-weather-chickens",
+
+        "summer-chicken-care",
+
+        "coop-planner",
+
+        "chicken-health-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "heat-management",
+
+        "summer-flock-care",
+
+        "weather-protection"
+
+      ],
+
+
+      tags:[
+
+        "shade",
+
+        "heat",
+
+        "summer",
+
+        "weather",
+
+        "chicken-comfort"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+        productType:
       "shade-cloth",
 
-      relatedProducts:[
-
-  "PRD-007",
-
-  "PRD-006",
-
-  "PRD-014"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
 
 
-recommendedTogether:[
+    relatedProducts:[
 
-  "PRD-007"
+      "PRD-007",
 
-],
+      "PRD-006",
 
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "heat-management",
-
-      "summer-flock-care",
-
-      "weather-protection"
+      "PRD-014"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "summer-preparation",
+
+        "problem-solving",
+
+        "homestead"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "heat-stress",
+
+        "lack-of-shade",
+
+        "summer-flock-care"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "small-homestead",
+
+        "hot-climate-keeper"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-007"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -6725,8 +9487,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -6738,6 +9502,13 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      skillRequirements:[
+
+        "basic-installation"
+
+      ],
 
 
       spaceConsiderations:[
@@ -6753,12 +9524,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -6770,6 +9544,7 @@ recommendedTogether:[
       "flock-care"
 
     ],
+
 
 
     tags:[
@@ -6787,10 +9562,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -6798,6 +9576,7 @@ recommendedTogether:[
 
   id:
     "PRD-029",
+
 
   category:
     "Baby Chick Care",
@@ -6835,7 +9614,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -6869,95 +9648,166 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "brooder-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "baby-chick-care",
+
+        "chick-housing",
+
+        "brooding"
+
+      ],
+
+
+      tags:[
+
+        "brooder",
+
+        "baby-chicks",
+
+        "chick-care",
+
+        "beginner"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "brooder-system",
 
-      relatedProducts:[
-
-  "PRD-031",
-
-  "PRD-033",
-
-  "PRD-035",
-
-  "PRD-036",
-
-  "PRD-030"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-031",
 
-    "chick-health",
+      "PRD-033",
 
-    "brooder-management"
+      "PRD-035",
 
-  ],
+      "PRD-036",
 
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-031",
-
-  "PRD-033",
-
-  "PRD-036"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-care",
-
-      "chick-housing",
-
-      "brooding"
+      "PRD-030"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "new-chicks",
+
+        "chick-health",
+
+        "brooder-management"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-031",
+
+      "PRD-033",
+
+      "PRD-036"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -6971,8 +9821,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -6986,6 +9838,15 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -6995,12 +9856,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       95,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -7010,6 +9874,7 @@ recommendedTogether:[
       "chicken-care"
 
     ],
+
 
 
     tags:[
@@ -7025,10 +9890,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -7036,6 +9904,7 @@ recommendedTogether:[
 
   id:
     "PRD-030",
+
 
   category:
     "Baby Chick Care",
@@ -7073,7 +9942,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -7107,87 +9976,160 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "brooder-guide",
+
+        "chick-health-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "baby-chick-care",
+
+        "brooder-cleaning",
+
+        "moisture-management"
+
+      ],
+
+
+      tags:[
+
+        "bedding",
+
+        "pine-shavings",
+
+        "brooder",
+
+        "chicks",
+
+        "cleaning"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "brooder-bedding",
 
-      relatedProducts:[
-
-  "PRD-029",
-
-  "PRD-038",
-
-  "PRD-041"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "recurring",
-
-  replacementFrequency:
-    "weekly-to-monthly",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-029",
 
-    "chick-health",
+      "PRD-038",
 
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-029"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-care",
-
-      "brooder-cleaning",
-
-      "moisture-management"
+      "PRD-041"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "recurring",
+
+
+      replacementFrequency:
+        "weekly-to-monthly",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "new-chicks",
+
+        "chick-health",
+
+        "brooder-management"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-029"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -7201,8 +10143,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "consumable",
+
 
 
     userCompatibility:{
@@ -7216,6 +10160,15 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -7225,12 +10178,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -7242,6 +10198,7 @@ recommendedTogether:[
       "cleanliness"
 
     ],
+
 
 
     tags:[
@@ -7259,10 +10216,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -7270,6 +10230,7 @@ recommendedTogether:[
 
   id:
     "PRD-031",
+
 
   category:
     "Baby Chick Care",
@@ -7309,7 +10270,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -7343,89 +10304,168 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "brooder-guide",
+
+        "chick-health-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "baby-chick-heating",
+
+        "brooder-temperature-control",
+
+        "energy-efficient-brooding"
+
+      ],
+
+
+      tags:[
+
+        "brooder",
+
+        "heat-plate",
+
+        "baby-chicks",
+
+        "radiant-heat",
+
+        "energy-efficient"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "brooder-heat-plate",
 
-      relatedProducts:[
-
-  "PRD-029",
-
-  "PRD-032",
-
-  "PRD-033"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-029",
 
-    "chick-health",
+      "PRD-032",
 
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-029",
-
-  "PRD-033"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-heating",
-
-      "brooder-temperature-control",
-
-      "energy-efficient-brooding"
+      "PRD-033"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "brooder-setup"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "new-chicks",
+
+        "brooder-heating",
+
+        "temperature-control",
+
+        "energy-efficient-heating"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-029",
+
+      "PRD-033"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -7439,8 +10479,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -7454,6 +10496,15 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -7463,12 +10514,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       95,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -7480,6 +10534,7 @@ recommendedTogether:[
       "brooding"
 
     ],
+
 
 
     tags:[
@@ -7497,10 +10552,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -7508,6 +10566,7 @@ recommendedTogether:[
 
   id:
     "PRD-032",
+
 
   category:
     "Baby Chick Care",
@@ -7545,7 +10604,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -7579,83 +10638,162 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "brooder-guide",
+
+        "chick-health-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "baby-chick-heating",
+
+        "brooder-temperature-control",
+
+        "supplemental-heat"
+
+      ],
+
+
+      tags:[
+
+        "heat-lamp",
+
+        "brooder",
+
+        "baby-chicks",
+
+        "heating"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "brooder-heat-lamp",
 
-      relatedProducts:[
-
-  "PRD-031",
-
-  "PRD-033"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "1-3 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-031",
 
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-033"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-heating",
-
-      "brooder-temperature-control"
+      "PRD-033"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "1-3 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "brooder-setup"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "new-chicks",
+
+        "brooder-heating",
+
+        "temperature-control",
+
+        "supplemental-heat"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-033"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -7667,8 +10805,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "alternative",
+
 
 
     userCompatibility:{
@@ -7682,6 +10822,24 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
+      skillRequirements:[
+
+        "secure-heat-lamp-installation",
+
+        "temperature-monitoring"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -7691,12 +10849,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       75,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -7706,6 +10867,7 @@ recommendedTogether:[
       "brooding"
 
     ],
+
 
 
     tags:[
@@ -7721,10 +10883,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -7732,6 +10897,7 @@ recommendedTogether:[
 
   id:
     "PRD-033",
+
 
   category:
     "Baby Chick Care",
@@ -7769,7 +10935,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -7803,89 +10969,168 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "brooder-guide",
+
+        "chick-health-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "temperature-monitoring",
+
+        "brooder-management",
+
+        "chick-health-monitoring"
+
+      ],
+
+
+      tags:[
+
+        "thermometer",
+
+        "brooder",
+
+        "temperature",
+
+        "chick-health"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "digital-thermometer",
 
-      relatedProducts:[
-
-  "PRD-031",
-
-  "PRD-032",
-
-  "PRD-039"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-031",
 
-    "chick-health",
+      "PRD-032",
 
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-031",
-
-  "PRD-032"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "temperature-monitoring",
-
-      "brooder-management",
-
-      "chick-health-monitoring"
+      "PRD-039"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "brooder-setup",
+
+        "problem-solving"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "brooder-temperature-control",
+
+        "overheating-risk",
+
+        "chilling-risk",
+
+        "chick-health-monitoring"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-031",
+
+      "PRD-032"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -7899,8 +11144,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "supporting",
+
 
 
     userCompatibility:{
@@ -7914,6 +11161,22 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
+      skillRequirements:[
+
+        "basic-temperature-monitoring"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -7923,12 +11186,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       85,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -7940,6 +11206,7 @@ recommendedTogether:[
       "chick-health"
 
     ],
+
 
 
     tags:[
@@ -7955,10 +11222,13 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -7966,6 +11236,7 @@ recommendedTogether:[
 
   id:
     "PRD-034",
+
 
   category:
     "Baby Chick Care",
@@ -8003,7 +11274,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -8037,100 +11308,183 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "sick-chick-guide",
+
+        "beginner-chicken-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "hydration-support",
+
+        "stress-support",
+
+        "baby-chick-care"
+
+      ],
+
+
+      tags:[
+
+        "electrolytes",
+
+        "hydration",
+
+        "baby-chicks",
+
+        "supplement",
+
+        "stress-support"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "electrolyte-supplement",
 
-      relatedProducts:[
-
-  "PRD-040",
-
-  "PRD-039",
-
-  "PRD-044"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "as-needed",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-040",
 
-    "chick-health",
+      "PRD-039",
 
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-036"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "hydration-support",
-
-      "stress-support",
-
-      "baby-chick-care"
+      "PRD-044"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "as-needed",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "problem-solving",
+
+        "emergency-preparedness"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "shipping-stress",
+
+        "dehydration",
+
+        "weak-chicks",
+
+        "heat-stress"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-036"
+
+    ],
+
 
 
     recommendationContexts:[
 
       "baby-chick-hub",
 
-      "chick-health-guide"
+      "chick-health-guide",
+
+      "sick-chick-guide"
 
     ],
 
 
+
     productRole:
       "consumable",
+
 
 
     userCompatibility:{
@@ -8144,6 +11498,15 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -8153,12 +11516,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       70,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -8170,23 +11536,29 @@ recommendedTogether:[
     ],
 
 
+
     tags:[
 
       "electrolytes",
 
-      "chicks",
-
       "hydration",
 
-      "supplement"
+      "baby-chicks",
+
+      "supplement",
+
+      "stress-support"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -8194,6 +11566,7 @@ recommendedTogether:[
 
   id:
     "PRD-035",
+
 
   category:
     "Feeding & Nutrition",
@@ -8231,7 +11604,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -8265,87 +11638,168 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-feeding-guide",
+
+        "beginner-chicken-guide",
+
+        "starter-feed-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "baby-chick-nutrition",
+
+        "starter-feeding",
+
+        "early-growth"
+
+      ],
+
+
+      tags:[
+
+        "chick-feed",
+
+        "starter-feed",
+
+        "baby-chicks",
+
+        "nutrition",
+
+        "medicated-feed"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "chick-starter-feed",
 
-      relatedProducts:[
-
-  "PRD-036",
-
-  "PRD-037",
-
-  "PRD-029"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "recurring",
-
-  replacementFrequency:
-    "weekly-to-monthly",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-036",
 
-    "chick-health",
+      "PRD-037",
 
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-036"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-nutrition",
-
-      "starter-feeding",
-
-      "early-growth"
+      "PRD-029"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "recurring",
+
+
+      replacementFrequency:
+        "weekly-to-monthly",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "feeding-program"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "baby-chick-nutrition",
+
+        "starter-feeding",
+
+        "early-growth",
+
+        "balanced-diet"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-036"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -8359,8 +11813,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "consumable",
+
 
 
     userCompatibility:{
@@ -8374,21 +11830,37 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-8 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
-        "small"
+        "small",
+
+        "medium",
+
+        "large"
 
       ]
 
     },
 
 
+
     priority:
       95,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -8402,6 +11874,7 @@ recommendedTogether:[
     ],
 
 
+
     tags:[
 
       "chick-feed",
@@ -8410,15 +11883,20 @@ recommendedTogether:[
 
       "baby-chicks",
 
-      "nutrition"
+      "nutrition",
+
+      "medicated-feed"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
@@ -8426,6 +11904,7 @@ recommendedTogether:[
 
   id:
     "PRD-036",
+
 
   category:
     "Baby Chick Care",
@@ -8465,7 +11944,7 @@ recommendedTogether:[
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
@@ -8499,89 +11978,172 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "brooder-guide",
+
+        "beginner-chicken-guide",
+
+        "chick-feeding-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "baby-chick-feeding",
+
+        "baby-chick-watering",
+
+        "brooder-management"
+
+      ],
+
+
+      tags:[
+
+        "chick-feeder",
+
+        "chick-waterer",
+
+        "brooder",
+
+        "beginner",
+
+        "baby-chicks"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "small-flock",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
       "chick-feeder-waterer-combo",
 
-      relatedProducts:[
-
-  "PRD-035",
-
-  "PRD-037",
-
-  "PRD-029"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "1-3 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
 
 
-  commonProblems:[
+    relatedProducts:[
 
-    "new-chicks",
+      "PRD-035",
 
-    "chick-health",
+      "PRD-037",
 
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-035",
-
-  "PRD-029"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-feeding",
-
-      "baby-chick-watering",
-
-      "brooder-management"
+      "PRD-029"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "1-3 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "brooder-setup"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "baby-chick-feeding",
+
+        "baby-chick-watering",
+
+        "feed-and-water-contamination",
+
+        "starter-equipment-needs"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-flock-owner"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-035",
+
+      "PRD-029"
+
+    ],
+
 
 
     recommendationContexts:[
@@ -8595,8 +12157,10 @@ recommendedTogether:[
     ],
 
 
+
     productRole:
       "primary",
+
 
 
     userCompatibility:{
@@ -8610,6 +12174,15 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-8 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -8619,12 +12192,15 @@ recommendedTogether:[
     },
 
 
+
     priority:
       90,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
@@ -8636,6 +12212,7 @@ recommendedTogether:[
       "watering"
 
     ],
+
 
 
     tags:[
@@ -8653,65 +12230,68 @@ recommendedTogether:[
     ],
 
 
+
     enabled:
       true
 
+
   }
+
 
 },
 
-
-"PRD-025": {
+"PRD-037": {
 
   id:
-    "PRD-025",
+    "PRD-037",
+
 
   category:
-    "Predator Protection",
+    "Feeding & Nutrition",
 
 
   subcategory:[
 
-    "electric-fence-accessories",
+    "poultry-grit",
 
-    "solar-energizers",
+    "digestion-support",
 
-    "portable-power"
+    "supplemental-feeding"
 
   ],
 
 
   badge:
-    "⚡ Electric Netting Power Source",
+    "🐣 Poultry Grit",
 
 
   title:
-    "Rent A Coop - Solar Energizer",
+    "Poultry Grit",
 
 
   description:
-    "A solar energizer provides power for electric poultry netting systems, allowing portable predator protection setups without requiring a permanent electrical connection.",
+    "Poultry grit provides chickens with a source of insoluble material that helps grind feed and other materials in the gizzard. As chicks begin consuming items beyond starter feed, appropriate grit can support normal digestion.",
 
 
   shortDescription:
-    "Solar power supply for portable poultry fencing systems.",
+    "Supports digestion as chicks begin eating varied foods.",
 
 
   tileBadge:
-    "⚡ Required Companion Product",
+    "🐣 Digestion Support",
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
 
-    "Powers poultry netting systems",
+    "Made from natural washed granite",
 
-    "Portable solar operation",
+    "Supports digestion",
 
-    "Includes grounding components"
+    "High quality and good value"
 
   ],
 
@@ -8721,7 +12301,7 @@ recommendedTogether:[
 
 
   url:
-    "https://amzn.to/4f1ilZ7",
+    "https://amzn.to/4aGba7i",
 
 
   image:
@@ -8736,114 +12316,208 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
-      "electric-fence-energizer",
-
-      relatedProducts:[
-
-  "PRD-024"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "coop-upgrade",
-
-    "problem-solving",
-
-    "homestead"
-
-  ],
+    recommendedFor:{
 
 
-  commonProblems:[
-
-    "predator-protection",
-
-    "flock-security"
-
-  ],
+      crops:[],
 
 
-  idealUsers:[
+      planners:[
 
-    "backyard-flock-owner",
+        "feed-crop-planner",
 
-    "diy-builder",
+        "backyard-flock-planner",
 
-    "small-homestead"
+        "flock-planner"
 
-  ]
-
-},
+      ],
 
 
-recommendedTogether:[
-
-  "PRD-024"
-
-],
+      calculators:[],
 
 
-    applicableCrops:[],
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chicken-feed-guide",
+
+        "nutrition-guide",
+
+        "feeding-supplements"
+
+      ],
 
 
-    cropStages:[],
+      cropStages:[],
 
 
-    useCases:[
+      useCases:[
 
-      "electric-fence-power",
+        "digestion-support",
 
-      "predator-protection",
+        "supplemental-feeding",
 
-      "portable-pasture"
+        "transition-to-adult-feed"
+
+      ],
+
+
+      tags:[
+
+        "grit",
+
+        "digestion",
+
+        "nutrition",
+
+        "baby-chicks",
+
+        "supplemental-feed"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "poultry-grit",
+
+
+
+    relatedProducts:[
+
+      "PRD-035",
+
+      "PRD-036"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "recurring",
+
+
+      replacementFrequency:
+        "monthly-to-seasonal",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "feeding-program",
+
+        "transition-feeding",
+
+        "nutrition-management"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "poor-digestion",
+
+        "supplemental-feeding",
+
+        "transition-to-forage",
+
+        "gizzard-support"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "small-homestead",
+
+        "feed-crop-grower"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-035"
+
+    ],
+
 
 
     recommendationContexts:[
 
-      "predator-guide",
+      "baby-chick-hub",
 
-      "electric-netting-products",
+      "chicken-feed-guide",
 
-      "pasture-management"
+      "nutrition-guide"
 
     ],
 
 
+
     productRole:
-      "companion",
+      "consumable",
+
 
 
     userCompatibility:{
 
 
       minimumExperience:
-        "intermediate",
+        "beginner",
 
 
       advancedOnly:
         false,
 
 
+      flockAge:[
+
+        "2+ weeks",
+
+        "supplemental-feeding-stage"
+
+      ],
+
+
       spaceConsiderations:[
+
+        "small",
 
         "medium",
 
@@ -8854,98 +12528,106 @@ recommendedTogether:[
     },
 
 
+
     priority:
-      85,
+      65,
+
 
 
     universal:
       true,
 
 
+
     universalCategories:[
 
-      "predator-protection",
+      "nutrition",
 
-      "pasture-management"
+      "chicken-health",
+
+      "baby-chicks"
 
     ],
+
 
 
     tags:[
 
-      "energizer",
+      "grit",
 
-      "solar",
+      "digestion",
 
-      "electric-fence",
+      "nutrition",
 
-      "predator",
+      "baby-chicks",
 
-      "portable"
+      "supplemental-feed"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
-"PRD-026": {
+"PRD-038": {
 
   id:
-    "PRD-026",
+    "PRD-038",
+
 
   category:
-    "Predator Protection",
+    "Baby Chick Care",
 
 
   subcategory:[
 
-    "trail-cameras",
+    "isolation",
 
-    "predator-identification",
+    "temporary-care",
 
-    "cellular-monitoring",
-
-    "security-monitoring"
+    "sick-chick-management"
 
   ],
 
 
   badge:
-    "📷 Predator Investigation Tool",
+    "🐣 Chick Isolation Area",
 
 
   title:
-    "Spypoint Twin Pack Cellular Cameras",
+    "Small Isolation Pen",
 
 
   description:
-    "If you are having an issue with predators but don't know what might be the cause, a trail camera can help identify what is visiting your property and provide valuable information for improving flock protection.",
+    "A small isolation area provides a temporary space for separating weak, injured, or recovering chicks. Many chicken keepers use simple DIY solutions such as plastic totes or small containers lined with bedding.",
 
 
   shortDescription:
-    "Identify unknown predators affecting your flock.",
+    "Temporary isolation solution for vulnerable chicks.",
 
 
   tileBadge:
-    "📷 Predator Detection",
+    "🐣 Health Support",
 
 
   tileButtonText:
-    "View Price →",
+    "View Options →",
 
 
   bullets:[
 
-    "Cellular photo delivery",
+    "Best as a DIY temporary solution",
 
-    "Helps identify predator activity",
+    "Many low-cost container options",
 
-    "Useful around coops and runs"
+    "Simple and inexpensive to create"
 
   ],
 
@@ -8955,7 +12637,7 @@ recommendedTogether:[
 
 
   url:
-    "https://amzn.to/4y8zfh8",
+    "",
 
 
   image:
@@ -8970,309 +12652,518 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
-      "cellular-trail-camera",
-
-      relatedProducts:[
-
-  "PRD-027",
-
-  "PRD-008",
-
-  "PRD-024"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "coop-upgrade",
-
-    "problem-solving",
-
-    "homestead"
-
-  ],
+    recommendedFor:{
 
 
-  commonProblems:[
-
-    "predator-protection",
-
-    "flock-security"
-
-  ],
+      crops:[],
 
 
-  idealUsers:[
+      planners:[
 
-    "backyard-flock-owner",
+        "backyard-flock-planner",
 
-    "diy-builder",
+        "flock-planner"
 
-    "small-homestead"
-
-  ]
-
-},
+      ],
 
 
-recommendedTogether:[
-
-  "PRD-027"
-
-],
+      calculators:[],
 
 
-    applicableCrops:[],
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "sick-chick-guide",
+
+        "weak-chick-guide"
+
+      ],
 
 
-    cropStages:[],
+      cropStages:[],
 
 
-    useCases:[
+      useCases:[
 
-      "predator-identification",
+        "chick-isolation",
 
-      "property-monitoring",
+        "weak-chick-care",
 
-      "flock-security",
+        "temporary-recovery"
 
-      "wildlife-monitoring"
+      ],
+
+
+      tags:[
+
+        "isolation",
+
+        "weak-chick",
+
+        "health",
+
+        "temporary",
+
+        "recovery"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "chick-isolation-area",
+
+
+
+    relatedProducts:[
+
+      "PRD-030",
+
+      "PRD-039",
+
+      "PRD-043",
+
+      "PRD-044"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "project-material",
+
+
+      replacementFrequency:
+        "as-needed",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "problem-solving",
+
+        "emergency-preparedness",
+
+        "sick-chick-care"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "weak-chicks",
+
+        "injured-chicks",
+
+        "disease-isolation",
+
+        "temporary-recovery"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "new-chicken-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-041"
+
+    ],
+
 
 
     recommendationContexts:[
 
-      "predator-guide",
+      "chick-health-guide",
 
-      "missing-chicken-guide",
+      "baby-chick-hub",
 
-      "flock-security",
-
-      "coop-planner"
+      "sick-chick-guide"
 
     ],
+
+
+
+    productRole:
+      "diy-solution",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      flockAge:[
+
+        "day-old",
+
+        "juvenile"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+
+    priority:
+      70,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "health",
+
+      "emergency-care"
+
+    ],
+
+
+
+    tags:[
+
+      "isolation",
+
+      "weak-chick",
+
+      "health",
+
+      "temporary",
+
+      "recovery"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-039": {
+
+  id:
+    "PRD-039",
+
+
+  category:
+    "Baby Chick Care",
+
+
+  subcategory:[
+
+    "weight-monitoring",
+
+    "health-tracking",
+
+    "chick-care-tools"
+
+  ],
+
+
+  badge:
+    "🐣 Chick Monitoring Tool",
+
+
+  title:
+    "Small Kitchen Scale",
+
+
+  description:
+    "A small digital kitchen scale allows chicken keepers to monitor chick weight changes and identify potential growth concerns early.",
+
+
+  shortDescription:
+    "Track chick growth and health changes.",
+
+
+  tileBadge:
+    "🐣 Monitoring Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Compact and easy to store",
+
+    "Battery operated",
+
+    "Easy to clean"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4veJ5LB",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "weak-chick-guide",
+
+        "sick-chick-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "growth-monitoring",
+
+        "health-monitoring",
+
+        "weak-chick-identification"
+
+      ],
+
+
+      tags:[
+
+        "scale",
+
+        "weight-monitoring",
+
+        "chick-health",
+
+        "growth",
+
+        "diagnostics"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "chick-weight-scale",
+
+
+
+    relatedProducts:[
+
+      "PRD-038",
+
+      "PRD-034",
+
+      "PRD-040"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "problem-solving",
+
+        "health-monitoring",
+
+        "emergency-preparedness"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "poor-weight-gain",
+
+        "weak-chicks",
+
+        "growth-monitoring",
+
+        "health-tracking"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "new-chicken-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-038"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "chick-health-guide",
+
+      "baby-chick-hub",
+
+      "weak-chick-guide"
+
+    ],
+
 
 
     productRole:
       "diagnostic",
 
 
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small",
-
-        "medium",
-
-        "large"
-
-      ]
-
-    },
-
-
-    priority:
-      85,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "predator-protection",
-
-      "security",
-
-      "flock-management"
-
-    ],
-
-
-    tags:[
-
-      "trail-camera",
-
-      "predator",
-
-      "wildlife",
-
-      "security",
-
-      "monitoring"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-027": {
-
-  id:
-    "PRD-027",
-
-  category:
-    "Predator Protection",
-
-
-  subcategory:[
-
-    "trail-camera-accessories",
-
-    "memory-storage",
-
-    "camera-supplies"
-
-  ],
-
-
-  badge:
-    "📷 Trail Camera Accessory",
-
-
-  title:
-    "microSD Card",
-
-
-  description:
-    "A microSD card provides local storage for trail cameras that capture photos and videos of predator activity around chicken coops and property areas.",
-
-
-  shortDescription:
-    "Required storage accessory for trail cameras.",
-
-
-  tileBadge:
-    "📷 Camera Accessory",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "High-speed memory storage",
-
-    "Durable outdoor design options",
-
-    "Includes SD adapter"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4v9ycux",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "camera-storage-accessory",
-
-      relatedProducts:[
-
-  "PRD-026"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "1-3 years",
-
-  affiliatePotential:
-    "low"
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-026"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "camera-storage",
-
-      "predator-monitoring",
-
-      "wildlife-recording"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "predator-guide",
-
-      "trail-camera-guide"
-
-    ],
-
-
-    productRole:
-      "companion",
-
 
     userCompatibility:{
 
@@ -9285,60 +13176,75 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "juvenile"
+
+      ],
+
+
       spaceConsiderations:[
 
-        "small",
-
-        "medium",
-
-        "large"
+        "small"
 
       ]
 
     },
 
 
+
     priority:
-      60,
+      70,
+
 
 
     universal:
       true,
 
 
+
     universalCategories:[
 
-      "security",
+      "baby-chicks",
 
-      "predator-protection"
+      "health-monitoring"
 
     ],
+
 
 
     tags:[
 
-      "micro-sd",
+      "scale",
 
-      "trail-camera",
+      "weight-monitoring",
 
-      "storage",
+      "chick-health",
 
-      "camera-accessory"
+      "growth",
+
+      "diagnostics"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
+
 
 },
 
-"PRD-028": {
+"PRD-040": {
 
   id:
-    "PRD-028",
+    "PRD-040",
+
 
   category:
     "Chicken Health & Maintenance",
@@ -9346,46 +13252,46 @@ recommendedTogether:[
 
   subcategory:[
 
-    "hot-weather-protection",
+    "probiotics",
 
-    "shade",
+    "digestive-support",
 
-    "heat-management"
+    "supplements"
 
   ],
 
 
   badge:
-    "☀️ Hot Weather Protection",
+    "🐣 Digestive Health Support",
 
 
   title:
-    "Shade Cloth",
+    "Probiotics",
 
 
   description:
-    "Providing adequate shade is essential during hot weather. Shade cloth can help reduce direct sunlight exposure and create cooler areas where chickens can escape extreme heat.",
+    "Probiotic supplements can support digestive health in chicks by helping maintain beneficial gut bacteria, especially during stressful periods or transitions.",
 
 
   shortDescription:
-    "Helps protect chickens during hot weather.",
+    "Digestive support supplement for baby chicks.",
 
 
   tileBadge:
-    "☀️ Summer Essential",
+    "🐣 Health Support",
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
 
-    "Provides up to 90% shade",
+    "Easy to add to food or water",
 
-    "Durable outdoor material",
+    "Convenient premeasured packets",
 
-    "Available in multiple sizes"
+    "Simple chick health support"
 
   ],
 
@@ -9395,7 +13301,7 @@ recommendedTogether:[
 
 
   url:
-    "https://amzn.to/4aI0NQl",
+    "https://amzn.to/4b9tANW",
 
 
   image:
@@ -9410,70 +13316,185 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
-      "shade-cloth",
-
-      relatedProducts:[
-
-  "PRD-007",
-
-  "PRD-006",
-
-  "PRD-014"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
+    recommendedFor:{
 
 
-recommendedTogether:[
-
-  "PRD-007"
-
-],
+      crops:[],
 
 
-    applicableCrops:[],
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner",
+
+        "feed-crop-planner"
+
+      ],
 
 
-    cropStages:[],
+      calculators:[],
 
 
-    useCases:[
+      pageTypes:[
 
-      "heat-management",
+        "baby-chick-hub",
 
-      "summer-flock-care",
+        "chick-health-guide",
 
-      "weather-protection"
+        "nutrition-guide",
+
+        "digestive-health-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "digestive-support",
+
+        "stress-support",
+
+        "baby-chick-health"
+
+      ],
+
+
+      tags:[
+
+        "probiotics",
+
+        "chick-health",
+
+        "supplement",
+
+        "digestion",
+
+        "gut-health"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "poultry-probiotic",
+
+
+
+    relatedProducts:[
+
+      "PRD-034",
+
+      "PRD-035",
+
+      "PRD-039"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "as-needed",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "problem-solving",
+
+        "health-support",
+
+        "emergency-preparedness"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "digestive-upset",
+
+        "stress-recovery",
+
+        "gut-health",
+
+        "poor-digestion"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "new-chicken-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-034"
+
+    ],
+
 
 
     recommendationContexts:[
 
-      "hot-weather-chickens",
+      "chick-health-guide",
 
-      "flock-planner",
+      "baby-chick-hub",
 
-      "coop-planner"
+      "nutrition-guide"
 
     ],
 
 
+
     productRole:
-      "primary",
+      "consumable",
+
 
 
     userCompatibility:{
@@ -9485,6 +13506,17 @@ recommendedTogether:[
 
       advancedOnly:
         false,
+
+
+      flockAge:[
+
+        "day-old",
+
+        "juvenile",
+
+        "adult"
+
+      ],
 
 
       spaceConsiderations:[
@@ -9500,1728 +13532,108 @@ recommendedTogether:[
     },
 
 
-    priority:
-      90,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "chicken-health",
-
-      "weather-management",
-
-      "flock-care"
-
-    ],
-
-
-    tags:[
-
-      "shade",
-
-      "heat",
-
-      "summer",
-
-      "weather",
-
-      "chicken-comfort"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-029": {
-
-  id:
-    "PRD-029",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "brooders",
-
-    "chick-housing",
-
-    "starter-systems"
-
-  ],
-
-
-  badge:
-    "🐣 Brooder All-Inclusive System",
-
-
-  title:
-    "Rent A Coop Brooder",
-
-
-  description:
-    "A complete brooder system provides a controlled environment for raising baby chicks during their first weeks of life. This system includes components designed to simplify chick care.",
-
-
-  shortDescription:
-    "Complete brooder setup for raising baby chicks.",
-
-
-  tileBadge:
-    "🐣 Chick Starter Pick",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "All-inclusive chick setup",
-
-    "Easy to clean",
-
-    "Designed for chicks through their first six weeks"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4yeBpvO",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "brooder-system",
-
-      relatedProducts:[
-
-  "PRD-031",
-
-  "PRD-033",
-
-  "PRD-035",
-
-  "PRD-036",
-
-  "PRD-030"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "5+ years",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-031",
-
-  "PRD-033",
-
-  "PRD-036"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-care",
-
-      "chick-housing",
-
-      "brooding"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chick-health-guide",
-
-      "beginner-chicken-guide"
-
-    ],
-
-
-    productRole:
-      "primary",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      95,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "chicken-care"
-
-    ],
-
-
-    tags:[
-
-      "brooder",
-
-      "baby-chicks",
-
-      "chick-care",
-
-      "beginner"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-030": {
-
-  id:
-    "PRD-030",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "brooder-bedding",
-
-    "pine-shavings",
-
-    "cleanliness"
-
-  ],
-
-
-  badge:
-    "🐣 Brooder Bedding Essential",
-
-
-  title:
-    "Pine Shaving Bedding",
-
-
-  description:
-    "Pine shavings provide absorbent bedding material for brooders. Proper bedding management helps maintain cleaner conditions while reducing moisture buildup around growing chicks.",
-
-
-  shortDescription:
-    "Absorbent bedding for cleaner brooders.",
-
-
-  tileBadge:
-    "🐣 Chick Care Essential",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "100% pine and compostable",
-
-    "Fresh natural smell",
-
-    "Low dust and absorbent"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4f1Y1a5",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "brooder-bedding",
-
-      relatedProducts:[
-
-  "PRD-029",
-
-  "PRD-038",
-
-  "PRD-041"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "recurring",
-
-  replacementFrequency:
-    "weekly-to-monthly",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-029"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-care",
-
-      "brooder-cleaning",
-
-      "moisture-management"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chick-health-guide",
-
-      "brooder-guide"
-
-    ],
-
-
-    productRole:
-      "consumable",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      85,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "chicken-care",
-
-      "cleanliness"
-
-    ],
-
-
-    tags:[
-
-      "bedding",
-
-      "pine-shavings",
-
-      "brooder",
-
-      "chicks",
-
-      "cleaning"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-031": {
-
-  id:
-    "PRD-031",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "brooder-heating",
-
-    "heat-plates",
-
-    "radiant-heat",
-
-    "chick-comfort"
-
-  ],
-
-
-  badge:
-    "🐣 Brooder Heating Plate",
-
-
-  title:
-    "Rent A Coop Brooder Plate",
-
-
-  description:
-    "Radiant heat helps chicks regulate their body temperature naturally, similar to the way they would warm themselves under a mother hen. Adjustable heat plates provide an efficient brooder heating option.",
-
-
-  shortDescription:
-    "Energy-efficient radiant heat source for baby chicks.",
-
-
-  tileBadge:
-    "🐣 Recommended Heat Source",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Adjustable feet grow with chicks",
-
-    "Energy efficient heating option",
-
-    "Anti-roosting cone included"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4ys7ssn",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "brooder-heat-plate",
-
-      relatedProducts:[
-
-  "PRD-029",
-
-  "PRD-032",
-
-  "PRD-033"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-029",
-
-  "PRD-033"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-heating",
-
-      "brooder-temperature-control",
-
-      "energy-efficient-brooding"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "brooder-guide",
-
-      "beginner-chicken-guide"
-
-    ],
-
-
-    productRole:
-      "primary",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      95,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "chick-care",
-
-      "brooding"
-
-    ],
-
-
-    tags:[
-
-      "brooder",
-
-      "heat-plate",
-
-      "baby-chicks",
-
-      "radiant-heat",
-
-      "energy-efficient"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-032": {
-
-  id:
-    "PRD-032",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "brooder-heating",
-
-    "heat-lamps",
-
-    "supplemental-heat"
-
-  ],
-
-
-  badge:
-    "🔥 Brooder Heat Lamp",
-
-
-  title:
-    "300 Watt Brooder Heat Lamp",
-
-
-  description:
-    "A brooder heat lamp provides directional heat for chick brooding environments and can also be used in certain coop heating applications when properly installed and monitored.",
-
-
-  shortDescription:
-    "Traditional brooder heating option for chick warmth.",
-
-
-  tileBadge:
-    "🔥 Heat Option",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Adjustable temperature settings",
-
-    "Provides wider heat coverage",
-
-    "Protective grill helps protect chicks"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4ys7ssn",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "brooder-heat-lamp",
-
-      relatedProducts:[
-
-  "PRD-031",
-
-  "PRD-033"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "1-3 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-033"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-heating",
-
-      "brooder-temperature-control"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "brooder-guide"
-
-    ],
-
-
-    productRole:
-      "alternative",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      75,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "brooding"
-
-    ],
-
-
-    tags:[
-
-      "heat-lamp",
-
-      "brooder",
-
-      "baby-chicks",
-
-      "heating"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-033": {
-
-  id:
-    "PRD-033",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "brooder-monitoring",
-
-    "temperature-monitoring",
-
-    "chick-health"
-
-  ],
-
-
-  badge:
-    "🌡 Brooder Monitoring Tool",
-
-
-  title:
-    "Temp Pro Digital Thermometer",
-
-
-  description:
-    "A digital thermometer helps chicken keepers monitor brooder temperatures and make adjustments to maintain a comfortable environment for growing chicks.",
-
-
-  shortDescription:
-    "Monitor brooder temperatures accurately.",
-
-
-  tileBadge:
-    "🌡 Chick Safety Tool",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Fast refresh rate",
-
-    "Large easy-to-read display",
-
-    "Helps prevent temperature mistakes"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4wx83ag",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "digital-thermometer",
-
-      relatedProducts:[
-
-  "PRD-031",
-
-  "PRD-032",
-
-  "PRD-039"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "3-5 years",
-
-  affiliatePotential:
-    "low"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-031",
-
-  "PRD-032"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "temperature-monitoring",
-
-      "brooder-management",
-
-      "chick-health-monitoring"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "brooder-guide",
-
-      "chick-health-guide"
-
-    ],
-
-
-    productRole:
-      "supporting",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      85,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "monitoring",
-
-      "chick-health"
-
-    ],
-
-
-    tags:[
-
-      "thermometer",
-
-      "brooder",
-
-      "temperature",
-
-      "chick-health"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-034": {
-
-  id:
-    "PRD-034",
-
-  category:
-    "Baby Chick Care",
-
-
-  subcategory:[
-
-    "electrolytes",
-
-    "hydration-support",
-
-    "chick-supplements"
-
-  ],
-
-
-  badge:
-    "💧 Chick Health Support",
-
-
-  title:
-    "Sav-A-Chick Electrolyte Supplement",
-
-
-  description:
-    "Electrolyte supplements can provide hydration support during stressful situations such as shipping, environmental changes, or periods when chicks may need additional support.",
-
-
-  shortDescription:
-    "Hydration support supplement for baby chicks.",
-
-
-  tileBadge:
-    "💧 Chick Support",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "Convenient premeasured packets",
-
-    "Supports hydration",
-
-    "Easy to add to drinking water"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4gwEjFT",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "electrolyte-supplement",
-
-      relatedProducts:[
-
-  "PRD-040",
-
-  "PRD-039",
-
-  "PRD-044"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "consumable",
-
-  replacementFrequency:
-    "as-needed",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-036"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "hydration-support",
-
-      "stress-support",
-
-      "baby-chick-care"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chick-health-guide"
-
-    ],
-
-
-    productRole:
-      "consumable",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
 
     priority:
       70,
 
 
+
     universal:
       true,
+
 
 
     universalCategories:[
 
       "baby-chicks",
 
-      "health-support"
-
-    ],
-
-
-    tags:[
-
-      "electrolytes",
-
-      "chicks",
-
-      "hydration",
-
-      "supplement"
-
-    ],
-
-
-    enabled:
-      true
-
-  }
-
-},
-
-"PRD-035": {
-
-  id:
-    "PRD-035",
-
-  category:
-    "Feeding & Nutrition",
-
-
-  subcategory:[
-
-    "starter-feed",
-
-    "chick-nutrition",
-
-    "medicated-feed"
-
-  ],
-
-
-  badge:
-    "🐣 Chick Starter Feed",
-
-
-  title:
-    "Medicated Chick Starter Feed",
-
-
-  description:
-    "Medicated chick starter feed provides young chicks with a balanced nutritional foundation while including amprolium as a coccidiosis prevention aid when used according to label directions.",
-
-
-  shortDescription:
-    "Complete starter nutrition for growing chicks.",
-
-
-  tileBadge:
-    "🐣 Nutrition Essential",
-
-
-  tileButtonText:
-    "View Price →",
-
-
-  bullets:[
-
-    "5 lb starter bag option",
-
-    "Provides chick nutrition support",
-
-    "Good value for beginning flocks"
-
-  ],
-
-
-  buttonText:
-    "View Current Price on Amazon →",
-
-
-  url:
-    "https://amzn.to/4foryfh",
-
-
-  image:
-    "",
-
-
-  note:
-    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-
-  recommendationData:{
-
-
-    productType:
-      "chick-starter-feed",
-
-      relatedProducts:[
-
-  "PRD-036",
-
-  "PRD-037",
-
-  "PRD-029"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "recurring",
-
-  replacementFrequency:
-    "weekly-to-monthly",
-
-  affiliatePotential:
-    "high"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
-
-
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
-
-
-  idealUsers:[
-
-    "new-chicken-owner",
-
-    "backyard-flock-owner"
-
-  ]
-
-},
-
-
-recommendedTogether:[
-
-  "PRD-036"
-
-],
-
-
-    applicableCrops:[],
-
-
-    cropStages:[],
-
-
-    useCases:[
-
-      "baby-chick-nutrition",
-
-      "starter-feeding",
-
-      "early-growth"
-
-    ],
-
-
-    recommendationContexts:[
-
-      "baby-chick-hub",
-
-      "chick-feeding-guide",
-
-      "beginner-chicken-guide"
-
-    ],
-
-
-    productRole:
-      "consumable",
-
-
-    userCompatibility:{
-
-
-      minimumExperience:
-        "beginner",
-
-
-      advancedOnly:
-        false,
-
-
-      spaceConsiderations:[
-
-        "small"
-
-      ]
-
-    },
-
-
-    priority:
-      95,
-
-
-    universal:
-      true,
-
-
-    universalCategories:[
-
-      "baby-chicks",
-
-      "nutrition",
-
-      "chicken-feed"
-
-    ],
-
-
-    tags:[
-
-      "chick-feed",
-
-      "starter-feed",
-
-      "baby-chicks",
+      "health-support",
 
       "nutrition"
 
     ],
 
 
+
+    tags:[
+
+      "probiotics",
+
+      "chick-health",
+
+      "supplement",
+
+      "digestion",
+
+      "gut-health"
+
+    ],
+
+
+
     enabled:
       true
 
+
   }
+
 
 },
 
-"PRD-036": {
+"PRD-041": {
 
   id:
-    "PRD-036",
+    "PRD-041",
+
 
   category:
-    "Baby Chick Care",
+    "Chicken Health & Maintenance",
 
 
   subcategory:[
 
-    "chick-feeders",
+    "brooder-cleaning",
 
-    "chick-waterers",
+    "brooder-liners",
 
-    "brooder-supplies",
+    "chick-safety",
 
-    "starter-equipment"
+    "isolation-supplies"
 
   ],
 
 
   badge:
-    "🐣 Small Chick Feeder and Waterer Combo",
+    "🐣 Pasty Butt Prevention Support",
 
 
   title:
-    "Small Chick Feeder and Waterer Combo",
+    "Non-slip Brooder Liner",
 
 
   description:
-    "Small chick feeder and waterer sets provide beginner chicken keepers with simple equipment for raising young chicks. Keeping feed and water elevated slightly helps reduce contamination from bedding and scratching.",
+    "Non-slip brooder liners provide a cleaner and safer surface for young chicks while helping improve footing and reduce mess in brooders or isolation areas.",
 
 
   shortDescription:
-    "Starter feeding and watering set for baby chicks.",
+    "Reusable liner option for cleaner chick environments.",
 
 
   tileBadge:
-    "🐣 Beginner Essential",
+    "🐣 Brooder Support",
 
 
   tileButtonText:
-    "View Price →",
+    "View Product →",
 
 
   bullets:[
 
-    "Perfect combo for beginners",
+    "Can be cut to fit isolation areas",
 
-    "Easy to fill and clean",
+    "Helps control odors",
 
-    "Excellent value for new chick owners"
+    "Good value reusable option"
 
   ],
 
@@ -11231,7 +13643,7 @@ recommendedTogether:[
 
 
   url:
-    "https://amzn.to/4f2OIq6",
+    "https://amzn.to/44jtXld",
 
 
   image:
@@ -11246,104 +13658,187 @@ recommendedTogether:[
   recommendationData:{
 
 
-    productType:
-      "chick-feeder-waterer-combo",
-
-      relatedProducts:[
-
-  "PRD-035",
-
-  "PRD-037",
-
-  "PRD-029"
-
-],
-
-purchaseBehavior:{
-
-  purchaseType:
-    "one-time",
-
-  replacementFrequency:
-    "1-3 years",
-
-  affiliatePotential:
-    "medium"
-
-},
-
-buyerIntent:{
-
-  buyerStages:[
-
-    "new-owner",
-
-    "beginner-setup"
-
-  ],
+    recommendedFor:{
 
 
-  commonProblems:[
-
-    "new-chicks",
-
-    "chick-health",
-
-    "brooder-management"
-
-  ],
+      crops:[],
 
 
-  idealUsers:[
+      planners:[
 
-    "new-chicken-owner",
+        "backyard-flock-planner",
 
-    "backyard-flock-owner"
+        "flock-planner"
 
-  ]
-
-},
+      ],
 
 
-recommendedTogether:[
-
-  "PRD-035",
-
-  "PRD-029"
-
-],
+      calculators:[],
 
 
-    applicableCrops:[],
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "brooder-guide",
+
+        "sick-chick-guide"
+
+      ],
 
 
-    cropStages:[],
+      cropStages:[],
 
 
-    useCases:[
+      useCases:[
 
-      "baby-chick-feeding",
+        "brooder-cleaning",
 
-      "baby-chick-watering",
+        "chick-safety",
 
-      "brooder-management"
+        "isolation-care",
+
+        "sanitation"
+
+      ],
+
+
+      tags:[
+
+        "brooder",
+
+        "liner",
+
+        "chick-health",
+
+        "cleaning",
+
+        "isolation"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "brooder-liner",
+
+
+
+    relatedProducts:[
+
+      "PRD-029",
+
+      "PRD-038",
+
+      "PRD-042"
 
     ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "seasonal",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "brooder-setup",
+
+        "problem-solving"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "slippery-brooder-floor",
+
+        "brooder-cleaning",
+
+        "odor-control",
+
+        "isolation-area-setup"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-030"
+
+    ],
+
 
 
     recommendationContexts:[
 
       "baby-chick-hub",
 
-      "brooder-guide",
+      "chick-health-guide",
 
-      "beginner-chicken-guide"
+      "brooder-guide"
 
     ],
 
 
+
     productRole:
-      "primary",
+      "supporting",
+
 
 
     userCompatibility:{
@@ -11357,6 +13852,15 @@ recommendedTogether:[
         false,
 
 
+      flockAge:[
+
+        "day-old",
+
+        "0-6 weeks"
+
+      ],
+
+
       spaceConsiderations:[
 
         "small"
@@ -11366,46 +13870,1419 @@ recommendedTogether:[
     },
 
 
+
     priority:
-      90,
+      65,
+
 
 
     universal:
       true,
 
 
+
     universalCategories:[
 
       "baby-chicks",
 
-      "feeding",
+      "cleanliness",
 
-      "watering"
+      "health-support"
 
     ],
+
 
 
     tags:[
 
-      "chick-feeder",
-
-      "chick-waterer",
-
       "brooder",
 
-      "beginner",
+      "liner",
 
-      "baby-chicks"
+      "chick-health",
+
+      "cleaning",
+
+      "isolation"
 
     ],
+
 
 
     enabled:
       true
 
+
   }
 
+
 },
+
+"PRD-042": {
+
+  id:
+    "PRD-042",
+
+
+  category:
+    "Chicken Health & Maintenance",
+
+
+  subcategory:[
+
+    "sanitation",
+
+    "cleaning",
+
+    "brooder-maintenance"
+
+  ],
+
+
+  badge:
+    "🧼 Sanitation Supply",
+
+
+  title:
+    "Disinfecting Wipes",
+
+
+  description:
+    "Disinfecting wipes provide a convenient way to sanitize brooder equipment, isolation areas, feeders, and waterers to help maintain cleaner chick environments.",
+
+
+  shortDescription:
+    "Convenient sanitation supply for chick care areas.",
+
+
+  tileBadge:
+    "🧼 Health Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Powerful germ control",
+
+    "Unscented options are preferred around chicks",
+
+    "Useful for equipment cleaning"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4y9iJgJ",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "brooder-guide",
+
+        "sick-chick-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "brooder-cleaning",
+
+        "equipment-sanitizing",
+
+        "disease-prevention"
+
+      ],
+
+
+      tags:[
+
+        "sanitation",
+
+        "cleaning",
+
+        "brooder",
+
+        "health",
+
+        "disinfecting"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "disinfecting-wipes",
+
+
+
+    relatedProducts:[
+
+      "PRD-029",
+
+      "PRD-036",
+
+      "PRD-038"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "monthly",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "brooder-setup",
+
+        "problem-solving",
+
+        "emergency-preparedness"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "dirty-brooder-equipment",
+
+        "cross-contamination",
+
+        "disease-prevention",
+
+        "isolation-area-cleaning"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-043"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "baby-chick-hub",
+
+      "chick-health-guide",
+
+      "brooder-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      flockAge:[
+
+        "day-old",
+
+        "juvenile",
+
+        "adult"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+
+    priority:
+      70,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "baby-chicks",
+
+      "health",
+
+      "cleanliness"
+
+    ],
+
+
+
+    tags:[
+
+      "sanitation",
+
+      "cleaning",
+
+      "brooder",
+
+      "health",
+
+      "disinfecting"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-043": {
+
+  id:
+    "PRD-043",
+
+
+  category:
+    "First Aid & Emergency Care",
+
+
+  subcategory:[
+
+    "protective-equipment",
+
+    "sick-chick-care",
+
+    "sanitation"
+
+  ],
+
+
+  badge:
+    "🩺 First Aid Supply",
+
+
+  title:
+    "Disposable Gloves",
+
+
+  description:
+    "Disposable gloves provide a protective barrier when handling sick or injured chicks and can help reduce the chance of spreading contaminants between birds.",
+
+
+  shortDescription:
+    "Protective gloves for chick care and sanitation.",
+
+
+  tileBadge:
+    "🩺 Health Supply",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Creates a barrier during care",
+
+    "Nitrile and latex-free options",
+
+    "100 count box"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4byS8jx",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "first-aid-kit",
+
+        "sick-chick-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "sick-chick-care",
+
+        "first-aid",
+
+        "sanitation"
+
+      ],
+
+
+      tags:[
+
+        "gloves",
+
+        "first-aid",
+
+        "sanitation",
+
+        "chick-health",
+
+        "biosecurity"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "disposable-gloves",
+
+
+
+    relatedProducts:[
+
+      "PRD-038",
+
+      "PRD-044"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "as-needed",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "problem-solving",
+
+        "emergency-preparedness",
+
+        "sick-chick-care"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "handling-sick-chicks",
+
+        "cross-contamination",
+
+        "first-aid-care",
+
+        "biosecurity"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "new-chicken-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-042"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "chick-health-guide",
+
+      "baby-chick-hub",
+
+      "first-aid-kit"
+
+    ],
+
+
+
+    productRole:
+      "emergency",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      flockAge:[
+
+        "day-old",
+
+        "juvenile",
+
+        "adult"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+
+    priority:
+      60,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "health",
+
+      "emergency-care",
+
+      "biosecurity"
+
+    ],
+
+
+
+    tags:[
+
+      "gloves",
+
+      "first-aid",
+
+      "sanitation",
+
+      "chick-health",
+
+      "biosecurity"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-044": {
+
+  id:
+    "PRD-044",
+
+
+  category:
+    "First Aid & Emergency Care",
+
+
+  subcategory:[
+
+    "oral-medication",
+
+    "hydration-support",
+
+    "sick-chick-care"
+
+  ],
+
+
+  badge:
+    "🩺 Emergency Care Tool",
+
+
+  title:
+    "Oral Syringe",
+
+
+  description:
+    "Small oral syringes are useful for providing medications, electrolyte solutions, probiotics, or measured amounts of fluids when caring for weak, dehydrated, or recovering chicks.",
+
+
+  shortDescription:
+    "Precision dosing tool for emergency chick care.",
+
+
+  tileBadge:
+    "🩺 First Aid Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Excellent for oral medication delivery",
+
+    "1 mL size provides accurate dosing",
+
+    "Useful for hydration support"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4go7VVP",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "baby-chick-hub",
+
+        "chick-health-guide",
+
+        "first-aid-kit",
+
+        "sick-chick-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "sick-chick-care",
+
+        "hydration-support",
+
+        "medication-delivery"
+
+      ],
+
+
+      tags:[
+
+        "syringe",
+
+        "first-aid",
+
+        "medication",
+
+        "hydration",
+
+        "chick-health"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "oral-syringe",
+
+
+
+    relatedProducts:[
+
+      "PRD-034",
+
+      "PRD-038",
+
+      "PRD-040"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "emergency-supply",
+
+
+      replacementFrequency:
+        "as-needed",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "problem-solving",
+
+        "emergency-preparedness",
+
+        "sick-chick-care"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "dehydrated-chicks",
+
+        "medication-administration",
+
+        "oral-hydration",
+
+        "weak-chicks"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "new-chicken-owner",
+
+        "small-homestead"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-034",
+
+      "PRD-040"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "chick-health-guide",
+
+      "baby-chick-hub",
+
+      "first-aid-kit",
+
+      "sick-chick-guide"
+
+    ],
+
+
+
+    productRole:
+      "emergency",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      flockAge:[
+
+        "day-old",
+
+        "juvenile",
+
+        "adult"
+
+      ],
+
+
+      skillRequirements:[
+
+        "basic-oral-medication",
+
+        "safe-chick-handling"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small"
+
+      ]
+
+    },
+
+
+
+    priority:
+      65,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "health",
+
+      "emergency-care",
+
+      "first-aid"
+
+    ],
+
+
+
+    tags:[
+
+      "syringe",
+
+      "first-aid",
+
+      "medication",
+
+      "hydration",
+
+      "chick-health"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-045": {
+
+  id:
+    "PRD-045",
+
+
+  category:
+    "Predator Protection",
+
+
+  subcategory:[
+
+    "hardware-cloth",
+
+    "coop-security",
+
+    "predator-exclusion",
+
+    "fencing"
+
+  ],
+
+
+  badge:
+    "🛡 Hardware Cloth Essential",
+
+
+  title:
+    "Hardware Cloth Installation Supplies",
+
+
+  description:
+    "1/2 inch hardware cloth is one of the most important materials for predator-proofing a chicken coop. Properly installed hardware cloth helps block raccoons, rats, snakes, weasels, and many other predators from entering vulnerable areas.",
+
+
+  shortDescription:
+    "Essential material for predator-proofing chicken areas.",
+
+
+  tileBadge:
+    "🛡 Predator Protection",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "1/2 inch mesh helps exclude common predators",
+
+    "Hot-dipped galvanized for long service life",
+
+    "Suitable for coops, runs, vents, and windows"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4paq2Rd",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "coop-planner",
+
+        "backyard-flock-planner",
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "predator-guide",
+
+        "coop-planner",
+
+        "coop-building-guide",
+
+        "hardware-cloth-guide",
+
+        "chicken-run-guide"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "predator-prevention",
+
+        "coop-security",
+
+        "pest-exclusion"
+
+      ],
+
+
+      tags:[
+
+        "hardware-cloth",
+
+        "predator",
+
+        "coop",
+
+        "security",
+
+        "fencing"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "backyard-flock-owner",
+
+        "homesteader",
+
+        "diy-builder"
+
+      ]
+
+    },
+
+        productType:
+      "hardware-cloth",
+
+
+
+    relatedProducts:[
+
+      "PRD-008",
+
+      "PRD-019",
+
+      "PRD-024"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "project-material",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "beginner-setup",
+
+        "coop-construction",
+
+        "coop-upgrade",
+
+        "predator-protection"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "predator-entry",
+
+        "rodent-control",
+
+        "coop-security",
+
+        "run-protection"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "backyard-flock-owner",
+
+        "homesteader",
+
+        "diy-builder"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-008",
+
+      "PRD-024"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "predator-guide",
+
+      "coop-planner",
+
+      "coop-building-guide",
+
+      "flock-planner"
+
+    ],
+
+
+
+    productRole:
+      "primary",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements:[
+
+        "basic-hand-tools",
+
+        "hardware-cloth-installation"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    priority:
+      95,
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "predator-protection",
+
+      "coop-building",
+
+      "security"
+
+    ],
+
+
+
+    tags:[
+
+      "hardware-cloth",
+
+      "predator",
+
+      "coop",
+
+      "security",
+
+      "fencing"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
 
 
   ///////////////////////////////////////////////////
@@ -11420,2895 +15297,6431 @@ recommendedTogether:[
   ///
   ///////////////////////////////////////////////////
 
-            "PRD-100": {
+      "PRD-100": {
 
-        id:
-          "PRD-100",
+  id:
+    "PRD-100",
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🧤 Garden Essential",
+  category:
+    "Gardening Tools",
 
-        title:
-          "Garden Gloves",
 
-        description:
-          "Garden gloves help protect hands while planting, maintaining, and harvesting backyard feed crops. A dependable pair of gloves is useful throughout the entire growing season.",
+  badge:
+    "🧤 Garden Essential",
 
-        shortDescription:
-          "Protect hands during planting, growing, and harvesting.",
 
-        tileBadge:
-          "🌱 Crop Planner Pick",
+  title:
+    "Garden Gloves",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "Garden gloves help protect hands while planting, maintaining, and harvesting backyard feed crops. A dependable pair of gloves is useful throughout the entire growing season.",
 
-          "Useful for planting and harvesting tasks",
 
-          "Protects hands during soil contact",
+  shortDescription:
+    "Protect hands during planting, growing, and harvesting.",
 
-          "Helpful for gardeners of all experience levels"
 
-        ],
+  tileBadge:
+    "🌱 Crop Planner Pick",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Useful for planting and harvesting tasks",
 
-          recommendedFor: {
+    "Protects hands during soil contact",
 
-            crops: [],
+    "Helpful for gardeners of all experience levels"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "planting",
+  recommendationData:{
 
-              "growing",
 
-              "harvesting"
+    recommendedFor:{
 
-            ],
 
-            useCases: [
+      crops:[],
 
-              "crop-maintenance",
 
-              "harvesting"
+      planners:[
 
-            ],
+        "feed-crop-planner"
 
-            tags: [
+      ],
 
-              "garden",
 
-              "tool",
+      calculators:[],
 
-              "beginner",
 
-              "homestead"
+      pageTypes:[
 
-            ],
+        "feed-crop-guide",
 
-            audiences: [
+        "growing-guide"
 
-              "beginner",
+      ],
 
-              "small-flock",
 
-              "homesteader"
+      cropStages:[
 
-            ]
+        "planting",
 
-          },
+        "growing",
 
+        "harvesting"
 
-          productType:
-            "garden-protection",
+      ],
 
 
-          productRole:
-            "primary",
+      useCases:[
 
+        "crop-maintenance",
 
-          universal:
-            true,
+        "harvesting",
 
+        "hand-protection"
 
-          universalCategories: [
+      ],
 
-            "gardening",
 
-            "planting",
+      tags:[
 
-            "harvesting"
+        "garden",
 
-          ],
+        "tool",
 
+        "beginner",
 
-          priority:
-            95,
+        "homestead",
 
+        "hand-protection"
 
-          enabled:
-            true
+      ],
 
-        }
 
-      },
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader"
+
+      ]
+
+    },
+    
+        productType:
+      "garden-protection",
+
+
+
+    relatedProducts:[
+
+      "PRD-101",
+
+      "PRD-102",
+
+      "PRD-103",
+
+      "PRD-105"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "recurring",
+
+
+      replacementFrequency:
+        "1-3 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-setup",
+
+        "planting",
+
+        "crop-maintenance",
+
+        "harvesting"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "hand-protection",
+
+        "soil-contact",
+
+        "garden-debris",
+
+        "harvest-handling"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "beginner-gardener",
+
+        "feed-crop-grower",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-101",
+
+      "PRD-102"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "planting",
+
+      "harvesting"
+
+    ],
+
+
+
+    priority:
+      75,
+
+
+
+    tags:[
+
+      "garden",
+
+      "tool",
+
+      "beginner",
+
+      "homestead",
+
+      "hand-protection"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
 
       "PRD-101": {
 
-        id:
-          "PRD-101",
+  id:
+    "PRD-101",
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🌱 Planting Essential",
+  category:
+    "Gardening Tools",
 
-        title:
-          "Hand Trowel",
 
-        description:
-          "A hand trowel is one of the most useful small garden tools for planting seeds, transplanting seedlings, adding compost, and maintaining backyard feed crop areas.",
+  badge:
+    "🌱 Planting Essential",
 
-        shortDescription:
-          "A versatile tool for planting and soil work.",
 
-        tileBadge:
-          "🌱 Crop Planner Pick",
+  title:
+    "Hand Trowel",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "A hand trowel is one of the most useful small garden tools for planting seeds, transplanting seedlings, adding compost, and maintaining backyard feed crop areas.",
 
-          "Useful for planting seeds",
 
-          "Helpful for transplanting seedlings",
+  shortDescription:
+    "A versatile tool for planting and soil work.",
 
-          "Ideal for small backyard gardens"
 
-        ],
+  tileBadge:
+    "🌱 Crop Planner Pick",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Useful for planting seeds",
 
-          recommendedFor: {
+    "Helpful for transplanting seedlings",
 
-            crops: [],
+    "Ideal for small backyard gardens"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "planning",
+  recommendationData:{
 
-              "planting",
 
-              "growing"
+    recommendedFor:{
 
-            ],
 
-            useCases: [
+      crops:[],
 
-              "soil-preparation",
 
-              "seed-starting",
+      planners:[
 
-              "crop-maintenance"
+        "feed-crop-planner"
 
-            ],
+      ],
 
-            tags: [
 
-              "garden-tool",
+      calculators:[],
 
-              "planting",
 
-              "soil",
+      pageTypes:[
 
-              "beginner"
+        "feed-crop-guide",
 
-            ],
+        "growing-guide"
 
-            audiences: [
+      ],
 
-              "beginner",
 
-              "small-flock",
+      cropStages:[
 
-              "homesteader"
+        "planning",
 
-            ]
+        "planting",
 
-          },
+        "growing"
 
+      ],
 
-          productType:
-            "garden-tool",
 
+      useCases:[
 
-          productRole:
-            "primary",
+        "soil-preparation",
 
+        "seed-starting",
 
-          universal:
-            true,
+        "crop-maintenance",
 
+        "transplanting"
 
-          universalCategories: [
+      ],
 
-            "gardening",
 
-            "planting",
+      tags:[
 
-            "soil-preparation"
+        "garden-tool",
 
-          ],
+        "planting",
 
+        "soil",
 
-          priority:
-            90,
+        "beginner",
 
+        "transplanting"
 
-          enabled:
-            true
+      ],
 
-        }
 
-      },
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "garden-tool",
+
+
+
+    relatedProducts:[
+
+      "PRD-100",
+
+      "PRD-102",
+
+      "PRD-104",
+
+      "PRD-107"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-setup",
+
+        "planning",
+
+        "planting",
+
+        "crop-maintenance"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "seed-planting",
+
+        "transplanting",
+
+        "small-space-soil-work",
+
+        "compost-application"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "beginner-gardener",
+
+        "small-space-grower",
+
+        "feed-crop-grower",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-100",
+
+      "PRD-107"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "planting",
+
+      "soil-preparation"
+
+    ],
+
+
+
+    priority:
+      80,
+
+
+
+    tags:[
+
+      "garden-tool",
+
+      "planting",
+
+      "soil",
+
+      "beginner",
+
+      "transplanting"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
 
       "PRD-102": {
 
-        id:
-          "PRD-102",
+  id:
+    "PRD-102",
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🪴 Garden Foundation Tool",
+  category:
+    "Gardening Tools",
 
-        title:
-          "Garden Shovel",
 
-        description:
-          "A garden shovel helps with deeper soil preparation, compost addition, planting larger crops, and establishing perennial feed crops such as mulberry and comfrey.",
+  badge:
+    "🪴 Garden Foundation Tool",
 
-        shortDescription:
-          "A larger tool for soil preparation and planting.",
 
-        tileBadge:
-          "🌱 Homestead Essential",
+  title:
+    "Garden Shovel",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "A garden shovel helps with deeper soil preparation, compost addition, planting larger crops, and establishing perennial feed crops such as mulberry and comfrey.",
 
-          "Helps prepare garden beds",
 
-          "Useful for compost and soil work",
+  shortDescription:
+    "A larger tool for soil preparation and planting.",
 
-          "Helpful for perennial crop planting"
 
-        ],
+  tileBadge:
+    "🌱 Homestead Essential",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Helps prepare garden beds",
 
-          recommendedFor: {
+    "Useful for compost and soil work",
 
-            crops: [
+    "Helpful for perennial crop planting"
 
-              "CROP-MULBERRY",
+  ],
 
-              "CROP-COMFREY",
 
-              "CROP-JERUSALEM-ARTICHOKE"
+  buttonText:
+    "View Current Price on Amazon →",
 
-            ],
 
-            planners: [
+  url:
+    "",
 
-              "feed-crop-planner"
 
-            ],
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            calculators: [],
 
-            pageTypes: [
 
-              "feed-crop-guide",
+  recommendationData:{
 
-              "growing-guide"
 
-            ],
+    recommendedFor:{
 
-            cropStages: [
 
-              "planning",
+      crops:[
 
-              "planting"
+        "CROP-MULBERRY",
 
-            ],
+        "CROP-COMFREY",
 
-            useCases: [
+        "CROP-JERUSALEM-ARTICHOKE"
 
-              "soil-preparation",
+      ],
 
-              "planting"
 
-            ],
+      planners:[
 
-            tags: [
+        "feed-crop-planner"
 
-              "garden-tool",
+      ],
 
-              "soil",
 
-              "perennial"
+      calculators:[],
 
-            ],
 
-            audiences: [
+      pageTypes:[
 
-              "beginner",
+        "feed-crop-guide",
 
-              "homesteader"
+        "growing-guide"
 
-            ]
+      ],
 
-          },
 
+      cropStages:[
 
-          productType:
-            "garden-tool",
+        "planning",
 
+        "planting"
 
-          productRole:
-            "supporting",
+      ],
 
 
-          universal:
-            true,
+      useCases:[
 
+        "soil-preparation",
 
-          universalCategories: [
+        "planting",
 
-            "gardening",
+        "perennial-establishment"
 
-            "soil-preparation"
+      ],
 
-          ],
 
+      tags:[
 
-          priority:
-            80,
+        "garden-tool",
 
+        "soil",
 
-          enabled:
-            true
+        "perennial",
 
-        }
+        "digging",
 
-      },
+        "compost"
 
-            "PRD-103": {
+      ],
 
-        id:
-          "PRD-103",
 
-        category:
-          "Gardening Tools",
+      audiences:[
 
-        badge:
-          "🌿 Crop Maintenance Tool",
+        "beginner",
 
-        title:
-          "Garden Hoe",
+        "homesteader"
 
-        description:
-          "A garden hoe helps maintain backyard feed crops by controlling weeds, preparing planting rows, and keeping growing areas productive. It is especially useful for larger row crops such as corn, sorghum, millet, wheat, barley, and soybeans.",
+      ]
 
-        shortDescription:
-          "A practical tool for weed control and row crop maintenance.",
+    },
 
-        tileBadge:
-          "🌱 Crop Planner Pick",
+        productType:
+      "garden-tool",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
 
-          "Helps control weeds around growing crops",
+    relatedProducts:[
 
-          "Useful for preparing planting rows",
+      "PRD-101",
 
-          "Helpful for larger garden areas"
+      "PRD-103",
 
-        ],
+      "PRD-105"
 
-        buttonText:
-          "View Current Price on Amazon →",
+    ],
 
-        url:
-          "",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    purchaseBehavior:{
 
-        recommendationData: {
 
-          recommendedFor: {
+      purchaseType:
+        "one-time",
 
-            crops: [
 
-              "CROP-FIELD-CORN",
+      replacementFrequency:
+        "5+ years",
 
-              "CROP-GRAIN-SORGHUM",
 
-              "CROP-PROSO-MILLET",
+      affiliatePotential:
+        "medium"
 
-              "CROP-WHEAT",
 
-              "CROP-BARLEY",
+    },
 
-              "CROP-SOYBEANS"
 
-            ],
 
-            planners: [
+    buyerIntent:{
 
-              "feed-crop-planner"
 
-            ],
+      buyerStages:[
 
-            calculators: [],
+        "garden-setup",
 
-            pageTypes: [
+        "planning",
 
-              "feed-crop-guide",
+        "planting",
 
-              "growing-guide"
+        "perennial-establishment"
 
-            ],
+      ],
 
-            cropStages: [
 
-              "planting",
 
-              "growing"
+      commonProblems:[
 
-            ],
+        "hard-soil",
 
-            useCases: [
+        "compost-incorporation",
 
-              "weed-control",
+        "deep-planting",
 
-              "crop-maintenance",
+        "perennial-establishment"
 
-              "soil-preparation"
+      ],
 
-            ],
 
-            tags: [
 
-              "garden-tool",
+      idealUsers:[
 
-              "hoe",
+        "feed-crop-grower",
 
-              "weed-control",
+        "homesteader",
 
-              "row-crops"
+        "backyard-gardener"
 
-            ],
+      ]
 
-            audiences: [
 
-              "beginner",
+    },
 
-              "homesteader",
 
-              "small-flock"
 
-            ]
+    recommendedTogether:[
 
-          },
+      "PRD-105"
 
+    ],
 
-          productType:
-            "garden-tool",
 
 
-          productRole:
-            "supporting",
+    recommendationContexts:[
 
+      "feed-crop-planner",
 
-          universal:
-            true,
+      "growing-guide",
 
+      "feed-crop-guide"
 
-          universalCategories: [
+    ],
 
-            "gardening",
 
-            "weed-control",
 
-            "row-crops"
+    productRole:
+      "supporting",
 
-          ],
 
 
-          priority:
-            85,
+    userCompatibility:{
 
 
-          enabled:
-            true
+      minimumExperience:
+        "beginner",
 
-        }
 
-      },
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "soil-preparation"
+
+    ],
+
+
+
+    priority:
+      80,
+
+
+
+    tags:[
+
+      "garden-tool",
+
+      "soil",
+
+      "perennial",
+
+      "digging",
+
+      "compost"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+      "PRD-103": {
+
+  id:
+    "PRD-103",
+
+
+  category:
+    "Gardening Tools",
+
+
+  badge:
+    "🌿 Crop Maintenance Tool",
+
+
+  title:
+    "Garden Hoe",
+
+
+  description:
+    "A garden hoe helps maintain backyard feed crops by controlling weeds, preparing planting rows, and keeping growing areas productive. It is especially useful for larger row crops such as corn, sorghum, millet, wheat, barley, and soybeans.",
+
+
+  shortDescription:
+    "A practical tool for weed control and row crop maintenance.",
+
+
+  tileBadge:
+    "🌱 Crop Planner Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Helps control weeds around growing crops",
+
+    "Useful for preparing planting rows",
+
+    "Helpful for larger garden areas"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[
+
+        "CROP-FIELD-CORN",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-PROSO-MILLET",
+
+        "CROP-WHEAT",
+
+        "CROP-BARLEY",
+
+        "CROP-SOYBEANS",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-COWPEA"
+
+      ],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "weed-control",
+
+        "crop-maintenance",
+
+        "soil-preparation",
+
+        "row-crop-maintenance"
+
+      ],
+
+
+      tags:[
+
+        "garden-tool",
+
+        "hoe",
+
+        "weed-control",
+
+        "row-crops",
+
+        "cultivation"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock"
+
+      ]
+
+    },
+    
+        productType:
+      "garden-tool",
+
+
+
+    relatedProducts:[
+
+      "PRD-101",
+
+      "PRD-102",
+
+      "PRD-104"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-setup",
+
+        "planting",
+
+        "crop-maintenance"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "weed-pressure",
+
+        "row-maintenance",
+
+        "soil-crusting",
+
+        "garden-cultivation"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "row-crop-grower",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-104"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "weed-control",
+
+      "row-crops"
+
+    ],
+
+
+
+    priority:
+      85,
+
+
+
+    tags:[
+
+      "garden-tool",
+
+      "hoe",
+
+      "weed-control",
+
+      "row-crops",
+
+      "cultivation"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
 
       "PRD-104": {
 
-        id:
-          "PRD-104",
+  id:
+    "PRD-104",
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🪴 Garden Preparation Tool",
+  category:
+    "Gardening Tools",
 
-        title:
-          "Garden Rake",
 
-        description:
-          "A garden rake helps prepare planting areas, level soil, spread compost, remove debris, and maintain productive growing spaces for backyard feed crops throughout the season.",
+  badge:
+    "🪴 Garden Preparation Tool",
 
-        shortDescription:
-          "Prepare beds and maintain productive garden areas.",
 
-        tileBadge:
-          "🌱 Garden Essential",
+  title:
+    "Garden Rake",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "A garden rake helps prepare planting areas, level soil, spread compost, remove debris, and maintain productive growing spaces for backyard feed crops throughout the season.",
 
-          "Helps prepare seed beds",
 
-          "Useful for spreading compost and amendments",
+  shortDescription:
+    "Prepare beds and maintain productive garden areas.",
 
-          "Helpful for garden cleanup after harvest"
 
-        ],
+  tileBadge:
+    "🌱 Garden Essential",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Helps prepare seed beds",
 
-          recommendedFor: {
+    "Useful for spreading compost and amendments",
 
-            crops: [],
+    "Helpful for garden cleanup after harvest"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "planning",
+  recommendationData:{
 
-              "planting",
 
-              "harvesting"
+    recommendedFor:{
 
-            ],
 
-            useCases: [
+      crops:[],
 
-              "soil-preparation",
 
-              "compost-application",
+      planners:[
 
-              "crop-maintenance"
+        "feed-crop-planner"
 
-            ],
+      ],
 
-            tags: [
 
-              "garden-tool",
+      calculators:[],
 
-              "soil",
 
-              "cleanup",
+      pageTypes:[
 
-              "preparation"
+        "feed-crop-guide",
 
-            ],
+        "growing-guide"
 
-            audiences: [
+      ],
 
-              "beginner",
 
-              "homesteader"
+      cropStages:[
 
-            ]
+        "planning",
 
-          },
+        "planting",
 
+        "harvesting"
 
-          productType:
-            "garden-tool",
+      ],
 
 
-          productRole:
-            "supporting",
+      useCases:[
 
+        "soil-preparation",
 
-          universal:
-            true,
+        "compost-application",
 
+        "crop-maintenance",
 
-          universalCategories: [
+        "garden-cleanup"
 
-            "gardening",
+      ],
 
-            "soil-preparation",
 
-            "cleanup"
+      tags:[
 
-          ],
+        "garden-tool",
 
+        "soil",
 
-          priority:
-            85,
+        "cleanup",
 
+        "preparation",
 
-          enabled:
-            true
+        "compost"
 
-        }
+      ],
 
-      },
 
-            "PRD-105": {
+      audiences:[
 
-        id:
-          "PRD-105",
+        "beginner",
 
-        category:
-          "Gardening Tools",
+        "homesteader"
 
-        badge:
-          "🌱 Soil & Root Crop Tool",
+      ]
 
-        title:
-          "Garden Fork",
+    },
 
-        description:
-          "A garden fork helps loosen compacted soil, incorporate compost, divide perennial plants, and harvest underground crops. It is especially useful for perennial feed crops such as comfrey and Jerusalem artichoke.",
+        productType:
+      "garden-tool",
 
-        shortDescription:
-          "Loosen soil and manage perennial crops more easily.",
 
-        tileBadge:
-          "🌱 Homestead Essential",
 
-        tileButtonText:
-          "View Product →",
+    relatedProducts:[
 
-        bullets: [
+      "PRD-101",
 
-          "Helps loosen compacted soil",
+      "PRD-102",
 
-          "Useful for compost incorporation",
+      "PRD-103",
 
-          "Helpful for root and perennial crops"
+      "PRD-105"
 
-        ],
+    ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    purchaseBehavior:{
 
 
-        recommendationData: {
+      purchaseType:
+        "one-time",
 
-          recommendedFor: {
 
-            crops: [
+      replacementFrequency:
+        "5+ years",
 
-              "CROP-JERUSALEM-ARTICHOKE",
 
-              "CROP-COMFREY",
+      affiliatePotential:
+        "medium"
 
-              "CROP-MULBERRY"
 
-            ],
+    },
 
-            planners: [
 
-              "feed-crop-planner"
 
-            ],
+    buyerIntent:{
 
-            calculators: [],
 
-            pageTypes: [
+      buyerStages:[
 
-              "feed-crop-guide",
+        "garden-setup",
 
-              "growing-guide"
+        "planning",
 
-            ],
+        "planting",
 
-            cropStages: [
+        "harvesting"
 
-              "planning",
+      ],
 
-              "planting",
 
-              "harvesting"
 
-            ],
+      commonProblems:[
 
-            useCases: [
+        "uneven-seedbeds",
 
-              "soil-preparation",
+        "garden-cleanup",
 
-              "compost-application",
+        "compost-distribution",
 
-              "root-harvesting"
+        "soil-leveling"
 
-            ],
+      ],
 
-            tags: [
 
-              "garden-tool",
 
-              "root-crops",
+      idealUsers:[
 
-              "perennial",
+        "feed-crop-grower",
 
-              "soil"
+        "homesteader",
 
-            ],
+        "backyard-gardener"
 
-            audiences: [
+      ]
 
-              "beginner",
 
-              "homesteader"
+    },
 
-            ]
 
-          },
 
+    recommendedTogether:[
 
-          productType:
-            "garden-tool",
+      "PRD-102",
 
+      "PRD-103"
 
-          productRole:
-            "supporting",
+    ],
 
 
-          universal:
-            true,
 
+    recommendationContexts:[
 
-          universalCategories: [
+      "feed-crop-planner",
 
-            "gardening",
+      "feed-crop-guide",
 
-            "soil-preparation",
+      "growing-guide"
 
-            "perennial-crops"
+    ],
 
-          ],
 
 
-          priority:
-            75,
+    productRole:
+      "supporting",
 
 
-          enabled:
-            true
 
-        }
+    userCompatibility:{
 
-      },
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "soil-preparation",
+
+      "cleanup"
+
+    ],
+
+
+
+    priority:
+      85,
+
+
+
+    tags:[
+
+      "garden-tool",
+
+      "soil",
+
+      "cleanup",
+
+      "preparation",
+
+      "compost"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+     "PRD-105": {
+
+  id:
+    "PRD-105",
+
+
+  category:
+    "Gardening Tools",
+
+
+  badge:
+    "🌱 Soil & Root Crop Tool",
+
+
+  title:
+    "Garden Fork",
+
+
+  description:
+    "A garden fork helps loosen compacted soil, incorporate compost, divide perennial plants, and harvest underground crops. It is especially useful for perennial feed crops such as comfrey and Jerusalem artichoke.",
+
+
+  shortDescription:
+    "Loosen soil and manage perennial crops more easily.",
+
+
+  tileBadge:
+    "🌱 Homestead Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Helps loosen compacted soil",
+
+    "Useful for compost incorporation",
+
+    "Helpful for root and perennial crops"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[
+
+        "CROP-JERUSALEM-ARTICHOKE",
+
+        "CROP-COMFREY",
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planning",
+
+        "planting",
+
+        "harvesting"
+
+      ],
+
+
+      useCases:[
+
+        "soil-preparation",
+
+        "compost-application",
+
+        "root-harvesting",
+
+        "perennial-maintenance"
+
+      ],
+
+
+      tags:[
+
+        "garden-tool",
+
+        "root-crops",
+
+        "perennial",
+
+        "soil",
+
+        "garden-fork"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader"
+
+      ]
+
+    },
+    
+        productType:
+      "garden-tool",
+
+
+
+    relatedProducts:[
+
+      "PRD-102",
+
+      "PRD-104",
+
+      "PRD-114"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-setup",
+
+        "perennial-establishment",
+
+        "harvesting"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "compacted-soil",
+
+        "root-harvesting",
+
+        "dividing-perennials",
+
+        "compost-incorporation"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-gardener"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-102"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "soil-preparation",
+
+      "perennial-crops"
+
+    ],
+
+
+
+    priority:
+      80,
+
+
+
+    tags:[
+
+      "garden-tool",
+
+      "root-crops",
+
+      "perennial",
+
+      "soil",
+
+      "garden-fork"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
 
       "PRD-106": {
 
-        id:
-          "PRD-106",
+  id:
+    "PRD-106",
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🛒 Homestead Garden Helper",
+  category:
+    "Gardening Tools",
 
-        title:
-          "Garden Cart / Wheelbarrow",
 
-        description:
-          "A garden cart or wheelbarrow makes it easier to move compost, soil, mulch, harvested crops, and other garden materials. It becomes increasingly valuable as backyard feed crop production expands.",
+  badge:
+    "🛒 Homestead Garden Helper",
 
-        shortDescription:
-          "Move soil, compost, mulch, and harvest materials.",
 
-        tileBadge:
-          "🌱 Homestead Essential",
+  title:
+    "Garden Cart / Wheelbarrow",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "A garden cart or wheelbarrow makes it easier to move compost, soil, mulch, harvested crops, and other garden materials. It becomes increasingly valuable as backyard feed crop production expands.",
 
-          "Useful for transporting garden materials",
 
-          "Helps with larger growing areas",
+  shortDescription:
+    "Move soil, compost, mulch, and harvest materials.",
 
-          "Reduces physical effort during garden work"
 
-        ],
+  tileBadge:
+    "🌱 Homestead Essential",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Useful for transporting garden materials",
 
-          recommendedFor: {
+    "Helps with larger growing areas",
 
-            crops: [],
+    "Reduces physical effort during garden work"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "planning",
+  recommendationData:{
 
-              "planting",
 
-              "growing",
+    recommendedFor:{
 
-              "harvesting"
 
-            ],
+      crops:[],
 
-            useCases: [
 
-              "soil-preparation",
+      planners:[
 
-              "compost-application",
+        "feed-crop-planner"
 
-              "harvesting",
+      ],
 
-              "crop-maintenance"
 
-            ],
+      calculators:[],
 
-            tags: [
 
-              "garden-tool",
+      pageTypes:[
 
-              "homestead",
+        "feed-crop-guide",
 
-              "harvest",
+        "growing-guide"
 
-              "compost"
+      ],
 
-            ],
 
-            audiences: [
+      cropStages:[
 
-              "homesteader",
+        "planning",
 
-              "small-flock"
+        "planting",
 
-            ]
+        "growing",
 
-          },
+        "harvesting"
 
+      ],
 
-          productType:
-            "garden-tool",
 
+      useCases:[
 
-          productRole:
-            "supporting",
+        "soil-preparation",
 
+        "compost-application",
 
-          universal:
-            true,
+        "harvesting",
 
+        "crop-maintenance",
 
-          universalCategories: [
+        "material-transport"
 
-            "gardening",
+      ],
 
-            "homestead",
 
-            "harvesting"
+      tags:[
 
-          ],
+        "garden-tool",
 
+        "homestead",
 
-          priority:
-            70,
+        "harvest",
 
+        "compost",
 
-          enabled:
-            true
+        "material-transport"
 
-        }
+      ],
 
-      },
 
+      audiences:[
 
-      "PRD-107": {
+        "homesteader",
 
-        id:
-          "PRD-107",
+        "small-flock",
 
-        category:
-          "Soil & Fertility",
+        "large-garden"
 
-        badge:
-          "🧪 Recommended Before Planting",
+      ]
 
-        title:
-          "Soil Test Kit",
+    },
 
-        description:
-          "A soil test kit helps gardeners understand soil conditions before planting feed crops. Testing soil can improve crop success, reduce unnecessary fertilizer use, and guide better planting decisions.",
+        productType:
+      "garden-tool",
 
-        shortDescription:
-          "Understand your soil before investing in crops.",
 
-        tileBadge:
-          "🌱 Crop Planner Pick",
 
-        tileButtonText:
-          "View Product →",
+    relatedProducts:[
 
-        bullets: [
+      "PRD-102",
 
-          "Helps identify soil conditions",
+      "PRD-104",
 
-          "Supports better crop planning",
+      "PRD-108",
 
-          "Useful for nearly every feed crop"
+      "PRD-110"
 
-        ],
+    ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    purchaseBehavior:{
 
 
-        recommendationData: {
+      purchaseType:
+        "one-time",
 
-          recommendedFor: {
 
-            crops: [],
+      replacementFrequency:
+        "5+ years",
 
-            planners: [
 
-              "feed-crop-planner"
+      affiliatePotential:
+        "medium"
 
-            ],
 
-            calculators: [],
+    },
 
-            pageTypes: [
 
-              "feed-crop-guide",
 
-              "growing-guide"
+    buyerIntent:{
 
-            ],
 
-            cropStages: [
+      buyerStages:[
 
-              "planning",
+        "garden-expansion",
 
-              "planting",
+        "homestead",
 
-              "growing"
+        "harvesting",
 
-            ],
+        "soil-improvement"
 
-            useCases: [
+      ],
 
-              "soil-testing",
 
-              "crop-planning",
 
-              "nutrient-management"
+      commonProblems:[
 
-            ],
+        "moving-compost",
 
-            tags: [
+        "moving-soil",
 
-              "soil",
+        "harvest-transport",
 
-              "testing",
+        "physical-workload"
 
-              "garden",
+      ],
 
-              "beginner",
 
-              "crop-planning"
 
-            ],
+      idealUsers:[
 
-            audiences: [
+        "homesteader",
 
-              "beginner",
+        "large-garden-owner",
 
-              "homesteader",
+        "feed-crop-grower"
 
-              "small-flock"
+      ]
 
-            ]
 
-          },
+    },
 
 
-          productType:
-            "soil-testing",
 
+    recommendedTogether:[
 
-          productRole:
-            "primary",
+      "PRD-108",
 
+      "PRD-110"
 
-          universal:
-            true,
+    ],
 
 
-          universalCategories: [
 
-            "gardening",
+    recommendationContexts:[
 
-            "crop-planning",
+      "feed-crop-planner",
 
-            "soil-management"
+      "feed-crop-guide",
 
-          ],
+      "growing-guide"
 
+    ],
 
-          priority:
-            95,
 
 
-          enabled:
-            true
+    productRole:
+      "supporting",
 
-        }
 
-      },
 
-            "PRD-108": {
+    userCompatibility:{
 
-        id:
-          "PRD-108",
 
-        category:
-          "Soil & Fertility",
+      minimumExperience:
+        "beginner",
 
-        badge:
-          "🌱 Build Better Soil",
 
-        title:
-          "Compost",
+      advancedOnly:
+        false,
 
-        description:
-          "Compost improves soil structure, adds organic matter, supports beneficial soil organisms, and helps create healthier growing conditions for backyard feed crops.",
 
-        shortDescription:
-          "Improve soil health naturally before planting.",
+      spaceConsiderations:[
 
-        tileBadge:
-          "🌱 Crop Planner Pick",
+        "medium",
 
-        tileButtonText:
-          "View Product →",
+        "large"
 
-        bullets: [
+      ]
 
-          "Adds organic matter to garden soil",
+    },
 
-          "Improves moisture retention",
 
-          "Supports long-term soil health"
 
-        ],
+    universal:
+      true,
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    universalCategories:[
 
+      "gardening",
 
-        recommendationData: {
+      "homestead",
 
-          recommendedFor: {
+      "harvesting"
 
-            crops: [],
+    ],
 
-            planners: [
 
-              "feed-crop-planner"
 
-            ],
+    priority:
+      70,
 
-            calculators: [],
 
-            pageTypes: [
 
-              "feed-crop-guide",
+    tags:[
 
-              "growing-guide"
+      "garden-tool",
 
-            ],
+      "homestead",
 
-            cropStages: [
+      "harvest",
 
-              "planning",
+      "compost",
 
-              "planting",
+      "material-transport"
 
-              "growing"
+    ],
 
-            ],
 
-            useCases: [
 
-              "soil-preparation",
+    enabled:
+      true
 
-              "compost-application",
 
-              "nutrient-management"
+  }
 
-            ],
 
-            tags: [
+},
 
-              "compost",
 
-              "soil",
+        "PRD-107": {
 
-              "organic",
+  id:
+    "PRD-107",
 
-              "garden",
 
-              "homestead"
+  category:
+    "Soil & Fertility",
 
-            ],
 
-            audiences: [
+  badge:
+    "🧪 Recommended Before Planting",
 
-              "beginner",
 
-              "homesteader",
+  title:
+    "Soil Test Kit",
 
-              "small-flock"
 
-            ]
+  description:
+    "A soil test kit helps gardeners understand soil conditions before planting feed crops. Testing soil can improve crop success, reduce unnecessary fertilizer use, and guide better planting decisions.",
 
-          },
 
+  shortDescription:
+    "Understand your soil before investing in crops.",
 
-          productType:
-            "soil-amendment",
 
+  tileBadge:
+    "🌱 Crop Planner Pick",
 
-          productRole:
-            "primary",
 
+  tileButtonText:
+    "View Product →",
 
-          universal:
-            true,
 
+  bullets:[
 
-          universalCategories: [
+    "Helps identify soil conditions",
 
-            "gardening",
+    "Supports better crop planning",
 
-            "soil-health",
+    "Useful for nearly every feed crop"
 
-            "planting"
+  ],
 
-          ],
 
+  buttonText:
+    "View Current Price on Amazon →",
 
-          priority:
-            90,
 
+  url:
+    "",
 
-          enabled:
-            true
 
-        }
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-      },
 
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planning",
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "soil-testing",
+
+        "crop-planning",
+
+        "nutrient-management",
+
+        "site-evaluation"
+
+      ],
+
+
+      tags:[
+
+        "soil",
+
+        "testing",
+
+        "garden",
+
+        "crop-planning",
+
+        "soil-health"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock"
+
+      ]
+
+    },
+
+        productType:
+      "soil-testing",
+
+
+
+    relatedProducts:[
+
+      "PRD-108",
+
+      "PRD-109",
+
+      "PRD-110"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "every-2-3-years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "planning",
+
+        "garden-setup",
+
+        "site-selection",
+
+        "soil-improvement"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "unknown-soil-quality",
+
+        "poor-crop-performance",
+
+        "incorrect-fertilization",
+
+        "poor-ph"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-gardener"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-108",
+
+      "PRD-109"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "primary",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "soil-management",
+
+      "crop-planning"
+
+    ],
+
+
+
+    priority:
+      95,
+
+
+
+    tags:[
+
+      "soil",
+
+      "testing",
+
+      "garden",
+
+      "crop-planning",
+
+      "soil-health"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+      "PRD-108": {
+
+  id:
+    "PRD-108",
+
+
+  category:
+    "Soil & Fertility",
+
+
+  badge:
+    "🌱 Build Better Soil",
+
+
+  title:
+    "Compost",
+
+
+  description:
+    "Compost improves soil structure, adds organic matter, supports beneficial soil organisms, and helps create healthier growing conditions for backyard feed crops. Nearly every feed crop benefits from well-developed, biologically active soil.",
+
+
+  shortDescription:
+    "Improve soil health naturally before planting.",
+
+
+  tileBadge:
+    "🌱 Crop Planner Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Adds organic matter to garden soil",
+
+    "Improves moisture retention",
+
+    "Supports long-term soil health"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planning",
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "soil-preparation",
+
+        "compost-application",
+
+        "nutrient-management",
+
+        "soil-building"
+
+      ],
+
+
+      tags:[
+
+        "compost",
+
+        "soil",
+
+        "organic",
+
+        "garden",
+
+        "soil-health"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock"
+
+      ]
+
+    },
+    
+        productType:
+      "soil-amendment",
+
+
+
+    relatedProducts:[
+
+      "PRD-107",
+
+      "PRD-109",
+
+      "PRD-110"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "seasonal",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "planning",
+
+        "soil-improvement",
+
+        "garden-setup",
+
+        "organic-gardening"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "poor-soil",
+
+        "low-organic-matter",
+
+        "poor-drainage",
+
+        "low-moisture-retention"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "organic-gardener"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-107",
+
+      "PRD-109"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "primary",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "soil-health",
+
+      "organic-gardening"
+
+    ],
+
+
+
+    priority:
+      90,
+
+
+
+    tags:[
+
+      "compost",
+
+      "soil",
+
+      "organic",
+
+      "garden",
+
+      "soil-health"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
       "PRD-109": {
 
-        id:
-          "PRD-109",
+  id:
+    "PRD-109",
 
-        category:
-          "Soil & Fertility",
 
-        badge:
-          "🌿 Crop Nutrition Support",
+  category:
+    "Soil & Fertility",
 
-        title:
-          "Organic Fertilizer",
 
-        description:
-          "Organic fertilizer provides additional nutrients when crops require extra support. It can help improve plant growth when soil conditions or crop demands indicate additional fertility is needed.",
+  badge:
+    "🌿 Crop Nutrition Support",
 
-        shortDescription:
-          "Provide nutrients when crops need additional support.",
 
-        tileBadge:
-          "🌱 Growing Support",
+  title:
+    "Organic Fertilizer",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "Organic fertilizer provides supplemental nutrients when crops require additional fertility. It works best when used alongside healthy soil-building practices such as compost application and soil testing.",
 
-          "Supports healthy plant growth",
 
-          "Useful for nutrient-demanding crops",
+  shortDescription:
+    "Supplement soil nutrients when crops need additional support.",
 
-          "Can supplement compost-based soil improvement"
 
-        ],
+  tileBadge:
+    "🌱 Growing Support",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Supports healthy plant growth",
 
-          recommendedFor: {
+    "Useful for nutrient-demanding crops",
 
-            crops: [],
+    "Works well alongside compost"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "planting",
+  recommendationData:{
 
-              "growing"
 
-            ],
+    recommendedFor:{
 
-            useCases: [
 
-              "nutrient-management",
+      crops:[
 
-              "crop-maintenance"
+        "CROP-FIELD-CORN",
 
-            ],
+        "CROP-GRAIN-SORGHUM",
 
-            tags: [
+        "CROP-PUMPKIN-WINTER-SQUASH",
 
-              "fertilizer",
+        "CROP-SUNFLOWER"
 
-              "organic",
+      ],
 
-              "soil",
 
-              "plant-growth"
+      planners:[
 
-            ],
+        "feed-crop-planner"
 
-            audiences: [
+      ],
 
-              "beginner",
 
-              "homesteader"
+      calculators:[],
 
-            ]
 
-          },
+      pageTypes:[
 
+        "feed-crop-guide",
 
-          productType:
-            "soil-amendment",
+        "growing-guide"
 
+      ],
 
-          productRole:
-            "supporting",
 
+      cropStages:[
 
-          universal:
-            true,
+        "planting",
 
+        "growing"
 
-          universalCategories: [
+      ],
 
-            "gardening",
 
-            "soil-management"
+      useCases:[
 
-          ],
+        "nutrient-management",
 
+        "crop-maintenance",
 
-          priority:
-            75,
+        "soil-improvement"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      tags:[
 
-      },
+        "fertilizer",
 
+        "organic",
+
+        "soil",
+
+        "plant-growth",
+
+        "soil-fertility"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "soil-amendment",
+
+
+
+    relatedProducts:[
+
+      "PRD-107",
+
+      "PRD-108",
+
+      "PRD-110"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "seasonal",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "soil-improvement",
+
+        "planting",
+
+        "crop-maintenance"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "nutrient-deficiency",
+
+        "poor-growth",
+
+        "low-fertility",
+
+        "heavy-feeding-crops"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "organic-gardener"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-107",
+
+      "PRD-108"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "soil-management"
+
+    ],
+
+
+
+    priority:
+      75,
+
+
+
+    tags:[
+
+      "fertilizer",
+
+      "organic",
+
+      "soil",
+
+      "plant-growth",
+
+      "soil-fertility"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
       "PRD-110": {
 
-        id:
-          "PRD-110",
+  id:
+    "PRD-110",
 
-        category:
-          "Soil & Fertility",
 
-        badge:
-          "🍂 Reduce Garden Maintenance",
+  category:
+    "Soil & Fertility",
 
-        title:
-          "Garden Mulch",
 
-        description:
-          "Mulch helps conserve moisture, reduce weed pressure, moderate soil temperatures, and improve overall garden management for backyard feed crops.",
+  badge:
+    "🍂 Reduce Garden Maintenance",
 
-        shortDescription:
-          "Protect soil while reducing garden maintenance.",
 
-        tileBadge:
-          "🌱 Garden Helper",
+  title:
+    "Garden Mulch",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "Mulch helps conserve moisture, suppress weeds, moderate soil temperatures, and improve long-term soil health. It is especially beneficial for perennial crops and gardens that experience hot, dry conditions.",
 
-          "Helps retain soil moisture",
 
-          "Reduces weed competition",
+  shortDescription:
+    "Protect soil while reducing garden maintenance.",
 
-          "Supports healthier garden beds"
 
-        ],
+  tileBadge:
+    "🌱 Garden Helper",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Helps retain soil moisture",
 
-          recommendedFor: {
+    "Reduces weed competition",
 
-            crops: [],
+    "Supports healthier garden beds"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "growing"
+  recommendationData:{
 
-            ],
 
-            useCases: [
+    recommendedFor:{
 
-              "weed-control",
 
-              "moisture-management",
+      crops:[
 
-              "crop-maintenance"
+        "CROP-COMFREY",
 
-            ],
+        "CROP-MULBERRY",
 
-            tags: [
+        "CROP-JERUSALEM-ARTICHOKE",
 
-              "mulch",
+        "CROP-PUMPKIN-WINTER-SQUASH",
 
-              "garden",
+        "CROP-SUNFLOWER",
 
-              "moisture",
+        "CROP-KALE-COLLARDS",
 
-              "weed-control"
+        "CROP-COWPEA"
 
-            ],
+      ],
 
-            audiences: [
 
-              "beginner",
+      planners:[
 
-              "homesteader"
+        "feed-crop-planner"
 
-            ]
+      ],
 
-          },
 
+      calculators:[],
 
-          productType:
-            "soil-amendment",
 
+      pageTypes:[
 
-          productRole:
-            "supporting",
+        "feed-crop-guide",
 
+        "growing-guide"
 
-          universal:
-            true,
+      ],
 
 
-          universalCategories: [
+      cropStages:[
 
-            "gardening",
+        "planting",
 
-            "water-management",
+        "growing"
 
-            "weed-control"
+      ],
 
-          ],
 
+      useCases:[
 
-          priority:
-            75,
+        "weed-control",
 
+        "moisture-management",
 
-          enabled:
-            true
+        "soil-protection",
 
-        }
+        "crop-maintenance"
 
-      },
+      ],
 
-            "PRD-111": {
 
-        id:
-          "PRD-111",
+      tags:[
 
-        category:
-          "Gardening Tools",
+        "mulch",
 
-        badge:
-          "🏷️ Garden Organization",
+        "garden",
 
-        title:
-          "Garden Markers",
+        "moisture",
 
-        description:
-          "Garden markers help identify crops, varieties, planting dates, and growing notes. They are especially useful when managing multiple feed crops in the same garden space.",
+        "weed-control",
 
-        shortDescription:
-          "Keep track of what you planted and where.",
+        "soil-health"
 
-        tileBadge:
-          "🌱 Garden Helper",
+      ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      audiences:[
 
-          "Helps organize multiple crops",
+        "beginner",
 
-          "Useful for seed varieties",
+        "homesteader"
 
-          "Supports better garden planning"
+      ]
 
-        ],
+    },
 
-        buttonText:
-          "View Current Price on Amazon →",
+        productType:
+      "soil-amendment",
 
-        url:
-          "",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    relatedProducts:[
 
-        recommendationData: {
+      "PRD-107",
 
-          recommendedFor: {
+      "PRD-108",
 
-            crops: [],
+      "PRD-109",
 
-            planners: [
+      "PRD-106"
 
-              "feed-crop-planner"
+    ],
 
-            ],
 
-            calculators: [],
 
-            pageTypes: [
+    purchaseBehavior:{
 
-              "feed-crop-guide",
 
-              "growing-guide"
+      purchaseType:
+        "consumable",
 
-            ],
 
-            cropStages: [
+      replacementFrequency:
+        "seasonal",
 
-              "planning",
 
-              "planting",
+      affiliatePotential:
+        "high"
 
-              "growing"
 
-            ],
+    },
 
-            useCases: [
 
-              "crop-planning",
 
-              "garden-organization",
+    buyerIntent:{
 
-              "seed-identification"
 
-            ],
+      buyerStages:[
 
-            tags: [
+        "garden-setup",
 
-              "garden",
+        "soil-improvement",
 
-              "labels",
+        "crop-maintenance",
 
-              "organization",
+        "water-conservation"
 
-              "planning"
+      ],
 
-            ],
 
-            audiences: [
 
-              "beginner",
+      commonProblems:[
 
-              "homesteader"
+        "dry-soil",
 
-            ]
+        "weed-pressure",
 
-          },
+        "soil-temperature",
 
+        "moisture-loss"
 
-          productType:
-            "garden-tool",
+      ],
 
 
-          productRole:
-            "supporting",
 
+      idealUsers:[
 
-          universal:
-            true,
+        "feed-crop-grower",
 
+        "homesteader",
 
-          universalCategories: [
+        "organic-gardener"
 
-            "gardening",
+      ]
 
-            "organization",
 
-            "planning"
+    },
 
-          ],
 
 
-          priority:
-            65,
+    recommendedTogether:[
 
+      "PRD-108",
 
-          enabled:
-            true
+      "PRD-109"
 
-        }
+    ],
 
-      },
 
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "water-management",
+
+      "weed-control",
+
+      "soil-health"
+
+    ],
+
+
+
+    priority:
+      80,
+
+
+
+    tags:[
+
+      "mulch",
+
+      "garden",
+
+      "moisture",
+
+      "weed-control",
+
+      "soil-health"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+      "PRD-111": {
+
+  id:
+    "PRD-111",
+
+
+  category:
+    "Gardening Tools",
+
+
+  badge:
+    "🏷️ Garden Organization",
+
+
+  title:
+    "Garden Markers",
+
+
+  description:
+    "Garden markers help identify crops, varieties, planting dates, and growing notes. They are especially useful when managing multiple feed crops in the same garden space.",
+
+
+  shortDescription:
+    "Keep track of what you planted and where.",
+
+
+  tileBadge:
+    "🌱 Garden Helper",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Helps organize multiple crops",
+
+    "Useful for seed varieties",
+
+    "Supports better garden planning"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planning",
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "crop-planning",
+
+        "garden-organization",
+
+        "seed-identification",
+
+        "record-keeping"
+
+      ],
+
+
+      tags:[
+
+        "garden",
+
+        "labels",
+
+        "organization",
+
+        "planning",
+
+        "record-keeping"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "garden-tool",
+
+
+
+    relatedProducts:[
+
+      "PRD-112",
+
+      "PRD-114"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "recurring",
+
+
+      replacementFrequency:
+        "1-3 years",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "planning",
+
+        "planting",
+
+        "garden-organization"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "forgotten-varieties",
+
+        "unlabeled-crops",
+
+        "planting-date-tracking",
+
+        "garden-records"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "beginner-gardener",
+
+        "feed-crop-grower",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-112",
+
+      "PRD-114"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "optional",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "gardening",
+
+      "organization",
+
+      "planning"
+
+    ],
+
+
+
+    priority:
+      60,
+
+
+
+    tags:[
+
+      "garden",
+
+      "labels",
+
+      "organization",
+
+      "planning",
+
+      "record-keeping"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
       "PRD-112": {
 
-        id:
-          "PRD-112",
+  id:
+    "PRD-112",
 
-        category:
-          "Seeds & Planting",
 
-        badge:
-          "🌱 Start Seeds Early",
+  category:
+    "Seeds & Planting",
 
-        title:
-          "Seed Starting Trays",
 
-        description:
-          "Seed starting trays allow growers to begin crops before transplanting them into the garden. They can help extend growing seasons and improve seedling organization.",
+  badge:
+    "🌱 Start Seeds Early",
 
-        shortDescription:
-          "Start seedlings before moving them into the garden.",
 
-        tileBadge:
-          "🌱 Seed Starting Supply",
+  title:
+    "Seed Starting Trays",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "Seed starting trays allow growers to begin crops before transplanting them into the garden. They help organize seedlings, extend the growing season, and improve transplant success for many feed crops.",
 
-          "Helps organize seedlings",
 
-          "Useful for early planting",
+  shortDescription:
+    "Start seedlings before moving them into the garden.",
 
-          "Supports transplant production"
 
-        ],
+  tileBadge:
+    "🌱 Seed Starting Supply",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Helps organize seedlings",
 
-          recommendedFor: {
+    "Useful for early planting",
 
-            crops: [
+    "Supports healthy transplants"
 
-              "CROP-KALE-COLLARDS",
+  ],
 
-              "CROP-PUMPKIN-WINTER-SQUASH",
 
-              "CROP-AMARANTH",
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "CROP-COMFREY"
 
-            ],
+  url:
+    "",
 
-            planners: [
 
-              "feed-crop-planner"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            calculators: [],
 
-            pageTypes: [
+  recommendationData:{
 
-              "feed-crop-guide",
 
-              "growing-guide"
+    recommendedFor:{
 
-            ],
 
-            cropStages: [
+      crops:[
 
-              "planning",
+        "CROP-KALE-COLLARDS",
 
-              "planting"
+        "CROP-PUMPKIN-WINTER-SQUASH",
 
-            ],
+        "CROP-AMARANTH",
 
-            useCases: [
+        "CROP-SUNFLOWER"
 
-              "seed-starting",
+      ],
 
-              "transplanting"
 
-            ],
+      planners:[
 
-            tags: [
+        "feed-crop-planner"
 
-              "seed-starting",
+      ],
 
-              "seedlings",
 
-              "garden"
+      calculators:[],
 
-            ],
 
-            audiences: [
+      pageTypes:[
 
-              "beginner",
+        "feed-crop-guide",
 
-              "homesteader"
+        "growing-guide"
 
-            ]
+      ],
 
-          },
 
+      cropStages:[
 
-          productType:
-            "seed-starting",
+        "planning",
 
+        "planting"
 
-          productRole:
-            "supporting",
+      ],
 
 
-          universal:
-            false,
+      useCases:[
 
+        "seed-starting",
 
-          universalCategories: [],
+        "transplanting",
 
+        "season-extension"
 
-          priority:
-            70,
+      ],
 
 
-          enabled:
-            true
+      tags:[
 
-        }
+        "seed-starting",
 
-      },
+        "seedlings",
 
+        "transplants",
+
+        "garden",
+
+        "early-growing"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "seed-starting",
+
+
+
+    relatedProducts:[
+
+      "PRD-113",
+
+      "PRD-111",
+
+      "PRD-114"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "reusable",
+
+
+      replacementFrequency:
+        "2-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "planning",
+
+        "seed-starting",
+
+        "season-extension"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "late-planting",
+
+        "poor-germination",
+
+        "short-growing-season",
+
+        "seedling-organization"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "beginner-gardener",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-113"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+
+    universal:
+      false,
+
+
+
+    universalCategories:[],
+
+
+
+    priority:
+      75,
+
+
+
+    tags:[
+
+      "seed-starting",
+
+      "seedlings",
+
+      "transplants",
+
+      "garden",
+
+      "early-growing"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
       "PRD-113": {
 
-        id:
-          "PRD-113",
+  id:
+    "PRD-113",
 
-        category:
-          "Soil & Fertility",
 
-        badge:
-          "🌱 Seedling Support",
+  category:
+    "Soil & Fertility",
 
-        title:
-          "Seed Starting Mix",
 
-        description:
-          "Seed starting mix provides a lightweight growing medium designed for germinating seeds and supporting young seedlings before transplanting.",
+  badge:
+    "🌱 Seedling Support",
 
-        shortDescription:
-          "A quality medium for starting healthy seedlings.",
 
-        tileBadge:
-          "🌱 Seed Starting Supply",
+  title:
+    "Seed Starting Mix",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "Seed starting mix provides a lightweight, well-drained growing medium designed for germinating seeds and supporting healthy seedlings before they are transplanted into the garden.",
 
-          "Supports early seed development",
 
-          "Helps improve germination conditions",
+  shortDescription:
+    "A quality medium for starting healthy seedlings.",
 
-          "Works with seed starting trays"
 
-        ],
+  tileBadge:
+    "🌱 Seed Starting Supply",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Supports early seed development",
 
-          recommendedFor: {
+    "Improves germination conditions",
 
-            crops: [
+    "Designed specifically for seedlings"
 
-              "CROP-KALE-COLLARDS",
+  ],
 
-              "CROP-PUMPKIN-WINTER-SQUASH",
 
-              "CROP-AMARANTH",
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "CROP-COMFREY"
 
-            ],
+  url:
+    "",
 
-            planners: [
 
-              "feed-crop-planner"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            calculators: [],
 
-            pageTypes: [
+  recommendationData:{
 
-              "feed-crop-guide",
 
-              "growing-guide"
+    recommendedFor:{
 
-            ],
 
-            cropStages: [
+      crops:[
 
-              "planting"
+        "CROP-KALE-COLLARDS",
 
-            ],
+        "CROP-PUMPKIN-WINTER-SQUASH",
 
-            useCases: [
+        "CROP-AMARANTH",
 
-              "seed-starting",
+        "CROP-SUNFLOWER"
 
-              "germination"
+      ],
 
-            ],
 
-            tags: [
+      planners:[
 
-              "seed-starting",
+        "feed-crop-planner"
 
-              "soil",
+      ],
 
-              "seedlings"
 
-            ],
+      calculators:[],
 
-            audiences: [
 
-              "beginner",
+      pageTypes:[
 
-              "homesteader"
+        "feed-crop-guide",
 
-            ]
+        "growing-guide"
 
-          },
+      ],
 
 
-          productType:
-            "soil-amendment",
+      cropStages:[
 
+        "planning",
 
-          productRole:
-            "supporting",
+        "planting"
 
+      ],
 
-          universal:
-            false,
 
+      useCases:[
 
-          universalCategories: [],
+        "seed-starting",
 
+        "germination",
 
-          priority:
-            70,
+        "transplant-production"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      tags:[
 
-      },
+        "seed-starting",
 
+        "soil",
+
+        "seedlings",
+
+        "germination",
+
+        "transplants"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "seed-starting-medium",
+
+
+
+    relatedProducts:[
+
+      "PRD-112",
+
+      "PRD-107",
+
+      "PRD-108"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "consumable",
+
+
+      replacementFrequency:
+        "seasonal",
+
+
+      affiliatePotential:
+        "high"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "planning",
+
+        "seed-starting",
+
+        "season-extension"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "poor-germination",
+
+        "heavy-garden-soil",
+
+        "weak-seedlings",
+
+        "transplant-production"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "beginner-gardener",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-112"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "supporting",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+
+    universal:
+      false,
+
+
+
+    universalCategories:[],
+
+
+
+    priority:
+      75,
+
+
+
+    tags:[
+
+      "seed-starting",
+
+      "soil",
+
+      "seedlings",
+
+      "germination",
+
+      "transplants"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
 
       "PRD-114": {
 
-        id:
-          "PRD-114",
+  id:
+    "PRD-114",
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🏷️ Keep Records Organized",
+  category:
+    "Gardening Tools",
 
-        title:
-          "Plant Labels",
 
-        description:
-          "Plant labels help growers track crop varieties, planting dates, and garden locations. They are useful when growing multiple chicken feed crops together.",
+  badge:
+    "🏷️ Seedling Identification",
 
-        shortDescription:
-          "Track varieties and planting information.",
 
-        tileBadge:
-          "🌱 Garden Helper",
+  title:
+    "Plant Labels",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  description:
+    "Plant labels help identify seedlings, crop varieties, and transplant groups during the early stages of growth. They are especially useful when multiple varieties are started indoors or transplanted into the garden.",
 
-          "Helps identify crops",
 
-          "Useful for multiple varieties",
+  shortDescription:
+    "Identify seedlings and transplant varieties.",
 
-          "Supports better garden records"
 
-        ],
+  tileBadge:
+    "🌱 Seed Starting Helper",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+  tileButtonText:
+    "View Product →",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  bullets:[
 
-        recommendationData: {
+    "Helps identify seedlings",
 
-          recommendedFor: {
+    "Useful for transplant production",
 
-            crops: [],
+    "Supports better garden records"
 
-            planners: [
+  ],
 
-              "feed-crop-planner"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            calculators: [],
 
-            pageTypes: [
+  url:
+    "",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            cropStages: [
 
-              "planning",
+  recommendationData:{
 
-              "planting",
 
-              "growing"
+    recommendedFor:{
 
-            ],
 
-            useCases: [
+      crops:[
 
-              "crop-planning",
+        "CROP-KALE-COLLARDS",
 
-              "garden-organization"
+        "CROP-PUMPKIN-WINTER-SQUASH",
 
-            ],
+        "CROP-AMARANTH",
 
-            tags: [
+        "CROP-SUNFLOWER"
 
-              "labels",
+      ],
 
-              "garden",
 
-              "organization"
+      planners:[
 
-            ],
+        "feed-crop-planner"
 
-            audiences: [
+      ],
 
-              "beginner",
 
-              "homesteader"
+      calculators:[],
 
-            ]
 
-          },
+      pageTypes:[
 
+        "feed-crop-guide",
 
-          productType:
-            "garden-tool",
+        "growing-guide"
 
+      ],
 
-          productRole:
-            "optional",
 
+      cropStages:[
 
-          universal:
-            true,
+        "planning",
 
+        "planting"
 
-          universalCategories: [
+      ],
 
-            "gardening",
 
-            "organization"
+      useCases:[
 
-          ],
+        "seed-starting",
 
+        "garden-organization",
 
-          priority:
-            60,
+        "transplant-identification"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      tags:[
 
-      },
+        "labels",
 
-            "PRD-115": {
+        "seedlings",
 
-        id:
-          "PRD-115",
+        "organization",
 
-        category:
-          "Irrigation",
+        "transplants",
 
-        badge:
-          "💧 Garden Watering Essential",
+        "garden"
 
-        title:
-          "Garden Hose",
+      ],
 
-        description:
-          "A quality garden hose provides a simple and flexible way to water backyard feed crops, establish young plants, and maintain consistent moisture during dry periods.",
 
-        shortDescription:
-          "A basic watering solution for backyard gardens.",
+      audiences:[
 
-        tileBadge:
-          "💧 Garden Essential",
+        "beginner",
 
-        tileButtonText:
-          "View Product →",
+        "homesteader"
 
-        bullets: [
+      ]
 
-          "Useful for nearly every garden",
+    },
 
-          "Helps maintain crop moisture",
+        productType:
+      "garden-label",
 
-          "Works with many watering accessories"
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+    relatedProducts:[
 
-        url:
-          "",
+      "PRD-111",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      "PRD-112",
 
+      "PRD-113"
 
-        recommendationData: {
+    ],
 
-          recommendedFor: {
 
-            crops: [],
 
-            planners: [
+    purchaseBehavior:{
 
-              "feed-crop-planner"
 
-            ],
+      purchaseType:
+        "recurring",
 
-            calculators: [],
 
-            pageTypes: [
+      replacementFrequency:
+        "1-3 years",
 
-              "feed-crop-guide",
 
-              "growing-guide"
+      affiliatePotential:
+        "low"
 
-            ],
 
-            cropStages: [
+    },
 
-              "planting",
 
-              "growing"
 
-            ],
+    buyerIntent:{
 
-            useCases: [
 
-              "irrigation",
+      buyerStages:[
 
-              "water-management",
+        "planning",
 
-              "crop-maintenance"
+        "seed-starting",
 
-            ],
+        "garden-organization"
 
-            tags: [
+      ],
 
-              "watering",
 
-              "garden",
 
-              "irrigation"
+      commonProblems:[
 
-            ],
+        "unidentified-seedlings",
 
-            audiences: [
+        "mixed-varieties",
 
-              "beginner",
+        "transplant-identification",
 
-              "homesteader",
+        "garden-records"
 
-              "small-flock"
+      ],
 
-            ]
 
-          },
 
+      idealUsers:[
 
-          productType:
-            "watering-system",
+        "beginner-gardener",
 
+        "feed-crop-grower",
 
-          productRole:
-            "primary",
+        "homesteader"
 
+      ]
 
-          universal:
-            true,
 
+    },
 
-          universalCategories: [
 
-            "gardening",
 
-            "watering"
+    recommendedTogether:[
 
-          ],
+      "PRD-112",
 
+      "PRD-113"
 
-          priority:
-            80,
+    ],
 
 
-          enabled:
-            true
 
-        }
+    recommendationContexts:[
 
-      },
+      "feed-crop-planner",
 
+      "feed-crop-guide",
 
-      "PRD-116": {
+      "growing-guide"
 
-        id:
-          "PRD-116",
+    ],
 
-        category:
-          "Irrigation",
 
-        badge:
-          "⏱️ Automated Watering",
 
-        title:
-          "Garden Hose Timer",
+    productRole:
+      "optional",
 
-        description:
-          "A hose timer helps automate watering schedules and provides more consistent moisture for backyard feed crops, especially during hot weather or busy periods.",
 
-        shortDescription:
-          "Automate watering for more consistent crop care.",
 
-        tileBadge:
-          "💧 Watering Upgrade",
+    userCompatibility:{
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      minimumExperience:
+        "beginner",
 
-          "Reduces manual watering time",
 
-          "Helps maintain consistent moisture",
+      advancedOnly:
+        false,
 
-          "Useful during hot or dry periods"
 
-        ],
+      spaceConsiderations:[
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "small",
 
-        url:
-          "",
+        "medium"
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      ]
 
+    },
 
-        recommendationData: {
 
-          recommendedFor: {
 
-            crops: [],
+    universal:
+      false,
 
-            planners: [
 
-              "feed-crop-planner"
 
-            ],
+    universalCategories:[],
 
-            calculators: [],
 
-            pageTypes: [
 
-              "feed-crop-guide",
+    priority:
+      55,
 
-              "growing-guide"
 
-            ],
 
-            cropStages: [
+    tags:[
 
-              "growing"
+      "labels",
 
-            ],
+      "seedlings",
 
-            useCases: [
+      "organization",
 
-              "irrigation",
+      "transplants",
 
-              "water-management"
+      "garden"
 
-            ],
+    ],
 
-            tags: [
 
-              "watering",
 
-              "automation",
+    enabled:
+      true
 
-              "garden"
 
-            ],
+  }
 
-            audiences: [
 
-              "beginner",
+},
 
-              "homesteader"
+      "PRD-115": {
 
-            ]
+  id:
+    "PRD-115",
 
-          },
 
+  category:
+    "Irrigation",
 
-          productType:
-            "watering-system",
 
+  badge:
+    "💧 Garden Watering Essential",
 
-          productRole:
-            "supporting",
 
+  title:
+    "Garden Hose",
 
-          universal:
-            true,
 
+  description:
+    "A quality garden hose provides a simple and flexible way to water backyard feed crops, establish young plants, and maintain consistent moisture during dry periods. Reliable irrigation is one of the most important factors in successful crop establishment.",
 
-          universalCategories: [
 
-            "watering",
+  shortDescription:
+    "A dependable watering solution for backyard gardens.",
 
-            "garden-automation"
 
-          ],
+  tileBadge:
+    "💧 Garden Essential",
 
 
-          priority:
-            75,
+  tileButtonText:
+    "View Product →",
 
 
-          enabled:
-            true
+  bullets:[
 
-        }
+    "Useful for nearly every garden",
 
-      },
+    "Helps maintain consistent soil moisture",
 
+    "Works with many watering accessories"
 
-      "PRD-117": {
+  ],
 
-        id:
-          "PRD-117",
 
-        category:
-          "Irrigation",
+  buttonText:
+    "View Current Price on Amazon →",
 
-        badge:
-          "💧 Efficient Watering",
 
-        title:
-          "Drip Irrigation Kit",
+  url:
+    "",
 
-        description:
-          "Drip irrigation systems deliver water directly to plant roots and can improve water efficiency for backyard feed crops, especially in warmer climates or larger gardens.",
 
-        shortDescription:
-          "Deliver water efficiently directly to crops.",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-        tileBadge:
-          "💧 Water Saving Option",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  recommendationData:{
 
-          "Reduces water waste",
 
-          "Helps maintain soil moisture",
+    recommendedFor:{
 
-          "Useful for larger gardens"
 
-        ],
+      crops:[
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "CROP-KALE-COLLARDS",
 
-        url:
-          "",
+        "CROP-PUMPKIN-WINTER-SQUASH",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "CROP-SUNFLOWER",
 
+        "CROP-COMFREY",
 
-        recommendationData: {
+        "CROP-MULBERRY"
 
-          recommendedFor: {
+      ],
 
-            crops: [],
 
-            planners: [
+      planners:[
 
-              "feed-crop-planner"
+        "feed-crop-planner"
 
-            ],
+      ],
 
-            calculators: [],
 
-            pageTypes: [
+      calculators:[],
 
-              "feed-crop-guide",
 
-              "growing-guide"
+      pageTypes:[
 
-            ],
+        "feed-crop-guide",
 
-            cropStages: [
+        "growing-guide"
 
-              "planting",
+      ],
 
-              "growing"
 
-            ],
+      cropStages:[
 
-            useCases: [
+        "planting",
 
-              "irrigation",
+        "growing"
 
-              "water-management",
+      ],
 
-              "drought-management"
 
-            ],
+      useCases:[
 
-            tags: [
+        "irrigation",
 
-              "drip-irrigation",
+        "water-management",
 
-              "watering",
+        "crop-maintenance",
 
-              "water-efficiency"
+        "plant-establishment"
 
-            ],
+      ],
 
-            audiences: [
 
-              "homesteader",
+      tags:[
 
-              "small-flock"
+        "watering",
 
-            ]
+        "garden",
 
-          },
+        "irrigation",
 
+        "hose",
 
-          productType:
-            "watering-system",
+        "plant-establishment"
 
+      ],
 
-          productRole:
-            "supporting",
 
+      audiences:[
 
-          universal:
-            true,
+        "beginner",
 
+        "homesteader",
 
-          universalCategories: [
+        "small-flock"
 
-            "watering",
+      ]
 
-            "water-efficiency"
+    },
 
-          ],
+        productType:
+      "watering-system",
 
 
-          priority:
-            70,
 
+    relatedProducts:[
 
-          enabled:
-            true
+      "PRD-107",
 
-        }
+      "PRD-108",
 
-      },
+      "PRD-110",
 
-            "PRD-118": {
+      "PRD-116"
 
-        id:
-          "PRD-118",
+    ],
 
-        category:
-          "Gardening Tools",
 
-        badge:
-          "🌿 Garden Maintenance Tool",
 
-        title:
-          "Garden Sprayer",
+    purchaseBehavior:{
 
-        description:
-          "A garden sprayer can help apply organic treatments, liquid fertilizers, and other garden solutions when managing backyard feed crops. It provides more even application compared to hand pouring.",
 
-        shortDescription:
-          "Apply garden treatments and liquid nutrients evenly.",
+      purchaseType:
+        "one-time",
 
-        tileBadge:
-          "🌱 Garden Helper",
 
-        tileButtonText:
-          "View Product →",
+      replacementFrequency:
+        "5+ years",
 
-        bullets: [
 
-          "Useful for liquid fertilizer applications",
+      affiliatePotential:
+        "medium"
 
-          "Supports organic garden care",
 
-          "Helps apply treatments evenly"
+    },
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "",
+    buyerIntent:{
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+      buyerStages:[
 
-        recommendationData: {
+        "garden-setup",
 
-          recommendedFor: {
+        "planting",
 
-            crops: [],
+        "crop-maintenance",
 
-            planners: [
+        "water-management"
 
-              "feed-crop-planner"
+      ],
 
-            ],
 
-            calculators: [],
 
-            pageTypes: [
+      commonProblems:[
 
-              "feed-crop-guide",
+        "dry-soil",
 
-              "growing-guide"
+        "poor-establishment",
 
-            ],
+        "inconsistent-watering",
 
-            cropStages: [
+        "summer-heat"
 
-              "growing"
+      ],
 
-            ],
 
-            useCases: [
 
-              "crop-maintenance",
+      idealUsers:[
 
-              "nutrient-management"
+        "feed-crop-grower",
 
-            ],
+        "homesteader",
 
-            tags: [
+        "backyard-gardener"
 
-              "sprayer",
+      ]
 
-              "garden-care",
 
-              "fertilizer"
+    },
 
-            ],
 
-            audiences: [
 
-              "beginner",
+    recommendedTogether:[
 
-              "homesteader"
+      "PRD-116"
 
-            ]
+    ],
 
-          },
 
 
-          productType:
-            "garden-tool",
+    recommendationContexts:[
 
+      "feed-crop-planner",
 
-          productRole:
-            "optional",
+      "feed-crop-guide",
 
+      "growing-guide"
 
-          universal:
-            true,
+    ],
 
 
-          universalCategories: [
 
-            "gardening",
+    productRole:
+      "primary",
 
-            "maintenance"
 
-          ],
 
+    userCompatibility:{
 
-          priority:
-            65,
 
+      minimumExperience:
+        "beginner",
 
-          enabled:
-            true
 
-        }
+      advancedOnly:
+        false,
 
-      },
 
+      spaceConsiderations:[
 
-      "PRD-119": {
+        "small",
 
-        id:
-          "PRD-119",
+        "medium",
 
-        category:
-          "Storage",
+        "large"
 
-        badge:
-          "📦 Garden Organization",
+      ]
 
-        title:
-          "Garden Storage Tote",
+    },
 
-        description:
-          "A garden storage tote helps organize seeds, hand tools, labels, and smaller gardening supplies used throughout the growing season. Keeping supplies organized makes seasonal garden planning easier.",
 
-        shortDescription:
-          "Organize seeds and garden supplies.",
 
-        tileBadge:
-          "🌱 Garden Helper",
+    universal:
+      true,
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
 
-          "Keeps tools and supplies organized",
+    universalCategories:[
 
-          "Protects seed packets and small equipment",
+      "gardening",
 
-          "Useful for seasonal storage"
+      "watering",
 
-        ],
+      "irrigation"
 
-        buttonText:
-          "View Current Price on Amazon →",
+    ],
 
-        url:
-          "",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    priority:
+      85,
 
-        recommendationData: {
 
-          recommendedFor: {
 
-            crops: [],
+    tags:[
 
-            planners: [
+      "watering",
 
-              "feed-crop-planner"
+      "garden",
 
-            ],
+      "irrigation",
 
-            calculators: [],
+      "hose",
 
-            pageTypes: [
+      "plant-establishment"
 
-              "feed-crop-guide",
+    ],
 
-              "growing-guide"
 
-            ],
 
-            cropStages: [
+    enabled:
+      true
 
-              "planning",
 
-              "planting",
+  }
 
-              "storage"
 
-            ],
+},
+      
+       "PRD-116": {
 
-            useCases: [
+  id:
+    "PRD-116",
 
-              "organization",
 
-              "seed-storage",
+  category:
+    "Irrigation",
 
-              "tool-storage"
 
-            ],
+  badge:
+    "⏱️ Automated Watering",
 
-            tags: [
 
-              "storage",
+  title:
+    "Garden Hose Timer",
 
-              "organization",
 
-              "garden"
+  description:
+    "A garden hose timer automates watering schedules and helps provide more consistent moisture for backyard feed crops. It is especially useful during hot weather, dry periods, vacations, or busy weeks when manual watering may be inconsistent.",
 
-            ],
 
-            audiences: [
+  shortDescription:
+    "Automate watering for more consistent crop care.",
 
-              "beginner",
 
-              "homesteader"
+  tileBadge:
+    "💧 Watering Upgrade",
 
-            ]
 
-          },
+  tileButtonText:
+    "View Product →",
 
 
-          productType:
-            "storage-equipment",
+  bullets:[
 
+    "Reduces manual watering time",
 
-          productRole:
-            "optional",
+    "Helps maintain consistent soil moisture",
 
+    "Useful during hot, dry, or busy periods"
 
-          universal:
-            true,
+  ],
 
 
-          universalCategories: [
+  buttonText:
+    "View Current Price on Amazon →",
 
-            "organization",
 
-            "storage"
+  url:
+    "",
 
-          ],
 
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-          priority:
-            60,
 
 
-          enabled:
-            true
+  recommendationData:{
 
-        }
 
-      },
+    recommendedFor:{
 
+
+      crops:[
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-COMFREY",
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "irrigation",
+
+        "water-management",
+
+        "watering-automation",
+
+        "drought-management"
+
+      ],
+
+
+      tags:[
+
+        "watering",
+
+        "automation",
+
+        "garden",
+
+        "irrigation",
+
+        "hose-timer"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "busy-gardener",
+
+        "small-flock"
+
+      ]
+
+    },
+
+        productType:
+      "watering-automation",
+
+
+
+    relatedProducts:[
+
+      "PRD-115",
+
+      "PRD-117",
+
+      "PRD-110"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-setup",
+
+        "irrigation-upgrade",
+
+        "crop-maintenance",
+
+        "water-management"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "inconsistent-watering",
+
+        "forgotten-watering",
+
+        "summer-heat",
+
+        "busy-schedule"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "busy-gardener",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-115",
+
+      "PRD-117"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "upgrade",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements:[
+
+        "basic-hose-setup"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "watering",
+
+      "garden-automation",
+
+      "irrigation"
+
+    ],
+
+
+
+    priority:
+      75,
+
+
+
+    tags:[
+
+      "watering",
+
+      "automation",
+
+      "garden",
+
+      "irrigation",
+
+      "hose-timer"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+       "PRD-117": {
+
+  id:
+    "PRD-117",
+
+
+  category:
+    "Irrigation",
+
+
+  badge:
+    "💧 Efficient Watering",
+
+
+  title:
+    "Drip Irrigation Kit",
+
+
+  description:
+    "A drip irrigation kit delivers water directly to crop root zones, helping reduce water loss and maintain more consistent soil moisture. It can be especially useful in warmer climates, dry conditions, raised beds, and larger feed-crop gardens.",
+
+
+  shortDescription:
+    "Deliver water efficiently and consistently to crop roots.",
+
+
+  tileBadge:
+    "💧 Water Saving Option",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Reduces water waste",
+
+    "Helps maintain consistent soil moisture",
+
+    "Useful for larger gardens and dry conditions"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-COMFREY",
+
+        "CROP-MULBERRY",
+
+        "CROP-COWPEA",
+
+        "CROP-SOYBEANS"
+
+      ],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "irrigation",
+
+        "water-management",
+
+        "drought-management",
+
+        "root-zone-watering",
+
+        "water-efficiency"
+
+      ],
+
+
+      tags:[
+
+        "drip-irrigation",
+
+        "watering",
+
+        "water-efficiency",
+
+        "drought-management",
+
+        "root-zone-watering"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "large-garden",
+
+        "dry-climate-grower"
+
+      ]
+
+    },
+
+        productType:
+      "drip-irrigation-system",
+
+
+
+    relatedProducts:[
+
+      "PRD-115",
+
+      "PRD-116",
+
+      "PRD-110"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-setup",
+
+        "irrigation-upgrade",
+
+        "garden-expansion",
+
+        "water-management"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "water-waste",
+
+        "inconsistent-watering",
+
+        "dry-soil",
+
+        "summer-heat",
+
+        "large-garden-watering"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "large-garden-owner",
+
+        "dry-climate-grower"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-115",
+
+      "PRD-116",
+
+      "PRD-110"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "upgrade",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements:[
+
+        "basic-irrigation-setup"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "watering",
+
+      "water-efficiency",
+
+      "irrigation"
+
+    ],
+
+
+
+    priority:
+      80,
+
+
+
+    tags:[
+
+      "drip-irrigation",
+
+      "watering",
+
+      "water-efficiency",
+
+      "drought-management",
+
+      "root-zone-watering"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+       "PRD-118": {
+
+  id:
+    "PRD-118",
+
+
+  category:
+    "Gardening Tools",
+
+
+  badge:
+    "🌿 Garden Maintenance Tool",
+
+
+  title:
+    "Garden Sprayer",
+
+
+  description:
+    "A garden sprayer provides an even way to apply liquid fertilizers, compost tea, organic foliar feeds, and approved organic garden treatments. It offers more consistent coverage than hand pouring and can simplify routine crop maintenance.",
+
+
+  shortDescription:
+    "Apply liquid nutrients and garden treatments evenly.",
+
+
+  tileBadge:
+    "🌱 Garden Helper",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Useful for liquid fertilizer applications",
+
+    "Supports compost tea and organic foliar feeds",
+
+    "Provides even application over larger areas"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-COMFREY",
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "growing"
+
+      ],
+
+
+      useCases:[
+
+        "crop-maintenance",
+
+        "liquid-fertilizer",
+
+        "foliar-feeding",
+
+        "organic-treatment"
+
+      ],
+
+
+      tags:[
+
+        "sprayer",
+
+        "garden-care",
+
+        "liquid-fertilizer",
+
+        "foliar-feed",
+
+        "organic-gardening"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader",
+
+        "organic-gardener"
+
+      ]
+
+    },
+
+        productType:
+      "garden-sprayer",
+
+
+
+    relatedProducts:[
+
+      "PRD-108",
+
+      "PRD-109",
+
+      "PRD-110"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "crop-maintenance",
+
+        "organic-gardening",
+
+        "soil-improvement"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "uneven-liquid-application",
+
+        "foliar-feeding",
+
+        "liquid-fertilizer-application",
+
+        "organic-treatment"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "organic-gardener",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-108",
+
+      "PRD-109"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "optional",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements:[
+
+        "basic-liquid-mixing"
+
+      ],
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      false,
+
+
+
+    universalCategories:[],
+
+
+
+    priority:
+      60,
+
+
+
+    tags:[
+
+      "sprayer",
+
+      "garden-care",
+
+      "liquid-fertilizer",
+
+      "foliar-feed",
+
+      "organic-gardening"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+       "PRD-119": {
+
+  id:
+    "PRD-119",
+
+
+  category:
+    "Storage",
+
+
+  badge:
+    "📦 Garden Organization",
+
+
+  title:
+    "Garden Storage Tote",
+
+
+  description:
+    "A garden storage tote helps organize seed packets, hand tools, plant labels, gloves, and other gardening supplies between growing seasons. Keeping supplies together makes seasonal planning and planting much easier.",
+
+
+  shortDescription:
+    "Organize seeds, tools, and garden supplies.",
+
+
+  tileBadge:
+    "🌱 Garden Helper",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets:[
+
+    "Keeps seed packets organized",
+
+    "Stores small gardening tools",
+
+    "Protects seasonal gardening supplies"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages:[
+
+        "planning",
+
+        "planting",
+
+        "storage"
+
+      ],
+
+
+      useCases:[
+
+        "organization",
+
+        "seed-storage",
+
+        "tool-storage",
+
+        "seasonal-storage"
+
+      ],
+
+
+      tags:[
+
+        "storage",
+
+        "organization",
+
+        "garden",
+
+        "seed-storage",
+
+        "tools"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "homesteader"
+
+      ]
+
+    },
+
+        productType:
+      "garden-storage",
+
+
+
+    relatedProducts:[
+
+      "PRD-111",
+
+      "PRD-112",
+
+      "PRD-113",
+
+      "PRD-114"
+
+    ],
+
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5+ years",
+
+
+      affiliatePotential:
+        "low"
+
+
+    },
+
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "garden-organization",
+
+        "seasonal-planning",
+
+        "off-season-storage"
+
+      ],
+
+
+
+      commonProblems:[
+
+        "lost-seed-packets",
+
+        "disorganized-tools",
+
+        "seasonal-storage",
+
+        "garden-clutter"
+
+      ],
+
+
+
+      idealUsers:[
+
+        "feed-crop-grower",
+
+        "beginner-gardener",
+
+        "homesteader"
+
+      ]
+
+
+    },
+
+
+
+    recommendedTogether:[
+
+      "PRD-111",
+
+      "PRD-114"
+
+    ],
+
+
+
+    recommendationContexts:[
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide"
+
+    ],
+
+
+
+    productRole:
+      "optional",
+
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+
+    universal:
+      true,
+
+
+
+    universalCategories:[
+
+      "organization",
+
+      "storage",
+
+      "gardening"
+
+    ],
+
+
+
+    priority:
+      55,
+
+
+
+    tags:[
+
+      "storage",
+
+      "organization",
+
+      "garden",
+
+      "seed-storage",
+
+      "tools"
+
+    ],
+
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+      
             "PRD-120": {
 
         id:
