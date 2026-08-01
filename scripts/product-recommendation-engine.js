@@ -34,7 +34,7 @@
 
 
   const ENGINE_VERSION =
-    "1.0.0";
+    "1.1.0";
 
 
 
@@ -44,74 +44,126 @@
 
 
   const SCORE_VALUES =
-    Object.freeze({
+  Object.freeze({
 
 
-      buyerStageMatch:
-        30,
+    buyerStageMatch:
+      10,
 
 
-      problemMatch:
-        40,
+    problemMatch:
+      40,
 
 
-      userMatch:
-        20,
+    userMatch:
+      5,
 
 
-      contextMatch:
-        25,
+    contextMatch:
+      10,
 
 
-      primaryProductRole:
-        10,
+    primaryProductRole:
+      25,
 
 
-      supportingProductRole:
-        5,
+    supportingProductRole:
+      10,
 
 
-      consumableProductRole:
-        5,
+    consumableProductRole:
+      10,
 
 
-      priorityMultiplier:
-        0.1
+    upgradeProductRole:
+      5,
 
 
-    });
+    alternativeProductRole:
+      3,
+
+
+    companionProductRole:
+      5,
+
+
+    diagnosticProductRole:
+      5,
+
+
+    diyProductRole:
+      3,
+
+
+    emergencyProductRole:
+      3,
+
+
+    entryLevelProductRole:
+      8,
+
+
+    optionalProductRole:
+      -20,
+
+
+    priorityMultiplier:
+      0.1
+
+
+  });
 
 
 
   const PRODUCT_ROLES =
-    Object.freeze({
+  Object.freeze({
 
 
-      PRIMARY:
-        "primary",
+    PRIMARY:
+      "primary",
 
 
-      SUPPORTING:
-        "supporting",
+    SUPPORTING:
+      "supporting",
 
 
-      CONSUMABLE:
-        "consumable",
+    CONSUMABLE:
+      "consumable",
 
 
-      DIY:
-        "diy-solution",
+    UPGRADE:
+      "upgrade",
 
 
-      EMERGENCY:
-        "emergency",
+    ALTERNATIVE:
+      "alternative",
 
 
-      UPGRADE:
-        "upgrade"
+    COMPANION:
+      "companion",
 
 
-    });
+    DIAGNOSTIC:
+      "diagnostic",
+
+
+    DIY:
+      "diy-solution",
+
+
+    EMERGENCY:
+      "emergency",
+
+
+    ENTRY_LEVEL:
+      "entry-level",
+
+
+    OPTIONAL:
+      "optional"
+
+
+  });
 
 
 
@@ -428,6 +480,118 @@ switch(
 
     reasons.push(
       "Consumable product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.UPGRADE:
+
+    score +=
+      SCORE_VALUES.upgradeProductRole;
+
+
+    reasons.push(
+      "Optional upgrade"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.ALTERNATIVE:
+
+    score +=
+      SCORE_VALUES.alternativeProductRole;
+
+
+    reasons.push(
+      "Alternative product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.COMPANION:
+
+    score +=
+      SCORE_VALUES.companionProductRole;
+
+
+    reasons.push(
+      "Companion product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.DIAGNOSTIC:
+
+    score +=
+      SCORE_VALUES.diagnosticProductRole;
+
+
+    reasons.push(
+      "Diagnostic product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.DIY:
+
+    score +=
+      SCORE_VALUES.diyProductRole;
+
+
+    reasons.push(
+      "DIY solution"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.EMERGENCY:
+
+    score +=
+      SCORE_VALUES.emergencyProductRole;
+
+
+    reasons.push(
+      "Emergency product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.ENTRY_LEVEL:
+
+    score +=
+      SCORE_VALUES.entryLevelProductRole;
+
+
+    reasons.push(
+      "Entry-level product"
+    );
+
+    break;
+
+
+
+  case PRODUCT_ROLES.OPTIONAL:
+
+    score +=
+      SCORE_VALUES.optionalProductRole;
+
+
+    reasons.push(
+      "Optional product"
     );
 
     break;
