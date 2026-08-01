@@ -43,75 +43,111 @@
 
 
 
-  const SCORE_VALUES =
+  const ENGINE_CONFIG =
   Object.freeze({
 
 
-    buyerStageMatch:
-      10,
+    scoring:
+      Object.freeze({
 
 
-    problemMatch:
-      40,
+        buyerStageMatch:
+          10,
 
 
-    userMatch:
-      5,
+        problemMatch:
+          40,
 
 
-    contextMatch:
-      10,
+        userMatch:
+          5,
 
 
-    primaryProductRole:
-      25,
+        contextMatch:
+          10,
 
 
-    supportingProductRole:
-      10,
+        cropMatch:
+          100,
 
 
-    consumableProductRole:
-      10,
+        plannerMatch:
+          25,
 
 
-    upgradeProductRole:
-      5,
+        cropStageMatch:
+          20,
 
 
-    alternativeProductRole:
-      3,
+        useCaseMatch:
+          30,
 
 
-    companionProductRole:
-      5,
+        primaryProductRole:
+          25,
 
 
-    diagnosticProductRole:
-      5,
+        supportingProductRole:
+          10,
 
 
-    diyProductRole:
-      3,
+        consumableProductRole:
+          10,
 
 
-    emergencyProductRole:
-      3,
+        upgradeProductRole:
+          5,
 
 
-    entryLevelProductRole:
-      8,
+        alternativeProductRole:
+          3,
 
 
-    optionalProductRole:
-      -20,
+        companionProductRole:
+          5,
 
 
-    priorityMultiplier:
-      0.1
+        diagnosticProductRole:
+          5,
+
+
+        diyProductRole:
+          3,
+
+
+        emergencyProductRole:
+          3,
+
+
+        entryLevelProductRole:
+          8,
+
+
+        optionalProductRole:
+          -20,
+
+
+        priorityMultiplier:
+          0.1
+
+
+      })
 
 
   });
+
+
+
+/*
+  Temporary compatibility alias.
+
+  This prevents any existing test code or future
+  files that reference SCORE_VALUES from breaking
+  while the engine transitions to ENGINE_CONFIG.
+*/
+
+const SCORE_VALUES =
+  ENGINE_CONFIG.scoring;
 
 
 
@@ -800,7 +836,9 @@ function scoreCropMatch(
     ){
 
       score +=
-        100;
+        ENGINE_CONFIG
+          .scoring
+          .cropMatch;
 
 
       reasons.push(
@@ -828,7 +866,9 @@ function scoreCropMatch(
   ){
 
     score +=
-      25;
+      ENGINE_CONFIG
+       .scoring
+       .plannerMatch;
 
 
     reasons.push(
@@ -853,7 +893,9 @@ function scoreCropMatch(
     ){
 
       score +=
-        20;
+       ENGINE_CONFIG
+        .scoring
+        .cropStageMatch;
 
 
       reasons.push(
@@ -884,7 +926,9 @@ function scoreCropMatch(
     ){
 
       score +=
-        30;
+       ENGINE_CONFIG
+        .scoring
+        .useCaseMatch;
 
 
       reasons.push(
@@ -995,6 +1039,8 @@ function getRecommendations(
   namespace.getRecommendations =
     getRecommendations;  
 
+  namespace.ENGINE_CONFIG =
+    ENGINE_CONFIG;
 
   namespace.SCORE_VALUES =
     SCORE_VALUES;
