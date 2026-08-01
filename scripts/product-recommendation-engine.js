@@ -498,12 +498,13 @@ function scoreCropMatch(
     0;
 
 
-  let reasons =
+  const reasons =
     [];
 
 
   if(
-    !product ||
+    !product
+    ||
     !profile
   ){
 
@@ -521,52 +522,108 @@ function scoreCropMatch(
 
 
   const recommendationData =
-    product.recommendationData;
+    getRecommendationData(
+      product
+    );
 
 
-  if(
-    !recommendationData
-  ){
-
-    return {
-
-      score:
-        score,
-
-      reasons:
-        reasons
-
-    };
-
-  }
+  const recommendedFor =
+    recommendationData.recommendedFor ||
+    {};
 
 
-  const productCrops =
-    Array.isArray(
+  /*
+    Product metadata
+
+    Supports both:
+
+    Legacy:
+    recommendationData.applicableCrops
+    recommendationData.cropStages
+    recommendationData.useCases
+
+    New:
+    recommendationData.recommendedFor.crops
+    recommendationData.recommendedFor.cropStages
+    recommendationData.recommendedFor.useCases
+    recommendationData.recommendedFor.planners
+  */
+
+
+  const productCrops = [
+
+    ...normalizeArray(
       recommendationData.applicableCrops
+    ),
+
+    ...normalizeArray(
+      recommendedFor.crops
     )
 
-      ?
+  ];
 
-      recommendationData.applicableCrops
 
-      :
+  const productStages = [
 
-      [];
+    ...normalizeArray(
+      recommendationData.cropStages
+    ),
+
+    ...normalizeArray(
+      recommendedFor.cropStages
+    )
+
+  ];
+
+
+  const productUseCases = [
+
+    ...normalizeArray(
+      recommendationData.useCases
+    ),
+
+    ...normalizeArray(
+      recommendedFor.useCases
+    )
+
+  ];
+
+
+  const productPlanners =
+    normalizeArray(
+      recommendedFor.planners
+    );
+
+
+  /*
+    Profile metadata
+  */
 
 
   const userCrops =
-    Array.isArray(
+    normalizeArray(
       profile.applicableCrops
-    )
+    );
 
-      ?
 
-      profile.applicableCrops
+  const userStages =
+    normalizeArray(
+      profile.cropStages
+    );
 
-      :
 
-      [];
+  const userUseCases =
+    normalizeArray(
+      profile.useCases
+    );
+
+
+  /*
+    Exact crop match
+
+    This must be the strongest match so
+    crop-specific products outrank generic tools.
+  */
 
 
   userCrops.forEach(function(crop){
@@ -579,13 +636,97 @@ function scoreCropMatch(
     ){
 
       score +=
-        40;
+        100;
 
 
       reasons.push(
 
         "Matches crop: " +
         crop
+
+      );
+
+    }
+
+
+  });
+
+
+  /*
+    Feed Crop Planner match
+  */
+
+
+  if(
+    productPlanners.includes(
+      "feed-crop-planner"
+    )
+  ){
+
+    score +=
+      25;
+
+
+    reasons.push(
+      "Designed for the Feed Crop Planner"
+    );
+
+  }
+
+
+  /*
+    Crop stage match
+  */
+
+
+  userStages.forEach(function(stage){
+
+
+    if(
+      productStages.includes(
+        stage
+      )
+    ){
+
+      score +=
+        20;
+
+
+      reasons.push(
+
+        "Matches crop stage: " +
+        stage
+
+      );
+
+    }
+
+
+  });
+
+
+  /*
+    Use-case match
+  */
+
+
+  userUseCases.forEach(function(useCase){
+
+
+    if(
+      productUseCases.includes(
+        useCase
+      )
+    ){
+
+      score +=
+        30;
+
+
+      reasons.push(
+
+        "Matches use case: " +
+        useCase
 
       );
 
