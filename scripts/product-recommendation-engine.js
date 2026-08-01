@@ -151,52 +151,162 @@ const SCORE_VALUES =
 
 
 
-  const PRODUCT_ROLES =
+  const PRODUCT_ROLE_CONFIG =
   Object.freeze({
 
 
-    PRIMARY:
-      "primary",
+    primary:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .primaryProductRole,
+
+        reason:
+          "Primary recommendation"
+
+      }),
 
 
-    SUPPORTING:
-      "supporting",
+    supporting:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .supportingProductRole,
+
+        reason:
+          "Supporting product"
+
+      }),
 
 
-    CONSUMABLE:
-      "consumable",
+    consumable:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .consumableProductRole,
+
+        reason:
+          "Consumable product"
+
+      }),
 
 
-    UPGRADE:
-      "upgrade",
+    upgrade:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .upgradeProductRole,
+
+        reason:
+          "Optional upgrade"
+
+      }),
 
 
-    ALTERNATIVE:
-      "alternative",
+    alternative:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .alternativeProductRole,
+
+        reason:
+          "Alternative product"
+
+      }),
 
 
-    COMPANION:
-      "companion",
+    companion:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .companionProductRole,
+
+        reason:
+          "Companion product"
+
+      }),
 
 
-    DIAGNOSTIC:
-      "diagnostic",
+    diagnostic:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .diagnosticProductRole,
+
+        reason:
+          "Diagnostic product"
+
+      }),
 
 
-    DIY:
-      "diy-solution",
+    "diy-solution":
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .diyProductRole,
+
+        reason:
+          "DIY solution"
+
+      }),
 
 
-    EMERGENCY:
-      "emergency",
+    emergency:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .emergencyProductRole,
+
+        reason:
+          "Emergency product"
+
+      }),
 
 
-    ENTRY_LEVEL:
-      "entry-level",
+    "entry-level":
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .entryLevelProductRole,
+
+        reason:
+          "Entry-level product"
+
+      }),
 
 
-    OPTIONAL:
-      "optional"
+    optional:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .optionalProductRole,
+
+        reason:
+          "Optional product"
+
+      })
 
 
   });
@@ -475,163 +585,23 @@ if(
 */
 
 
-switch(
-  recommendationData.productRole
+const roleConfig =
+  PRODUCT_ROLE_CONFIG[
+    recommendationData.productRole
+  ];
+
+
+if(
+  roleConfig
 ){
 
+  score +=
+    roleConfig.score;
 
-  case PRODUCT_ROLES.PRIMARY:
 
-    score +=
-      SCORE_VALUES.primaryProductRole;
-
-
-    reasons.push(
-      "Primary recommendation"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.SUPPORTING:
-
-    score +=
-      SCORE_VALUES.supportingProductRole;
-
-
-    reasons.push(
-      "Supporting product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.CONSUMABLE:
-
-    score +=
-      SCORE_VALUES.consumableProductRole;
-
-
-    reasons.push(
-      "Consumable product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.UPGRADE:
-
-    score +=
-      SCORE_VALUES.upgradeProductRole;
-
-
-    reasons.push(
-      "Optional upgrade"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.ALTERNATIVE:
-
-    score +=
-      SCORE_VALUES.alternativeProductRole;
-
-
-    reasons.push(
-      "Alternative product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.COMPANION:
-
-    score +=
-      SCORE_VALUES.companionProductRole;
-
-
-    reasons.push(
-      "Companion product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.DIAGNOSTIC:
-
-    score +=
-      SCORE_VALUES.diagnosticProductRole;
-
-
-    reasons.push(
-      "Diagnostic product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.DIY:
-
-    score +=
-      SCORE_VALUES.diyProductRole;
-
-
-    reasons.push(
-      "DIY solution"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.EMERGENCY:
-
-    score +=
-      SCORE_VALUES.emergencyProductRole;
-
-
-    reasons.push(
-      "Emergency product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.ENTRY_LEVEL:
-
-    score +=
-      SCORE_VALUES.entryLevelProductRole;
-
-
-    reasons.push(
-      "Entry-level product"
-    );
-
-    break;
-
-
-
-  case PRODUCT_ROLES.OPTIONAL:
-
-    score +=
-      SCORE_VALUES.optionalProductRole;
-
-
-    reasons.push(
-      "Optional product"
-    );
-
-    break;
-
+  reasons.push(
+    roleConfig.reason
+  );
 
 }
 
@@ -1045,10 +1015,8 @@ function getRecommendations(
   namespace.SCORE_VALUES =
     SCORE_VALUES;
 
-
-
-  namespace.PRODUCT_ROLES =
-    PRODUCT_ROLES;
+  namespace.PRODUCT_ROLE_CONFIG =
+    PRODUCT_ROLE_CONFIG;
 
 
 
