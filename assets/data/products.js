@@ -32883,4 +32883,4 @@ window.BCP_PRODUCTS = {
 
       },
 
-      }(window);      
+    };  
