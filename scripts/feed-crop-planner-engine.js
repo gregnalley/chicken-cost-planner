@@ -23333,6 +23333,33 @@ if (pathResults.length > 0) {
     final.rankingScore =
       rankingScore;
 
+    final.finalScore =
+  suitabilityScore;
+
+final.compatibilityScore =
+  Number.isFinite(
+    evaluation.compatibility
+      ?.score
+  )
+    ? evaluation.compatibility.score
+    : null;
+
+final.goalScore =
+  Number.isFinite(
+    evaluation.goals
+      ?.score
+  )
+    ? evaluation.goals.score
+    : null;
+
+final.usePathScore =
+  Number.isFinite(
+    evaluation.usePaths
+      ?.score
+  )
+    ? evaluation.usePaths.score
+    : null;
+
     final.riskAdjustment =
       riskAdjustment;
 
