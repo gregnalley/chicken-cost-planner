@@ -49823,6 +49823,80 @@ mechanicalProcessingSuitabilityScore:
               "Trellises and vertical supports provide little ordinary benefit.",
               "Minimum trial area and useful production area remain null because flock size, cultivar, harvest system, season length, and regrowth rate greatly affect usefulness."
             ]
+          },
+        
+          practicalSpace: {
+
+            growthForm:
+              "biennial-leafy-crop",
+
+            productionScale:
+              "small-space",
+
+            spaceTypeSuitability: {
+
+              raisedBed:
+                "excellent",
+
+              container:
+                "excellent",
+
+              smallGardenPlot:
+                "excellent",
+
+              largeGardenPlot:
+                "excellent",
+
+              fieldOrAcreage:
+                "good",
+
+              yardOrLandscape:
+                "good",
+
+              orchardOrFoodForest:
+                "conditional"
+
+            },
+
+            areaRequirements: {
+
+              minimumPracticalSquareFeet:
+                4,
+
+              preferredSquareFeet:
+                16,
+
+              areaRule:
+                "soft",
+
+              areaBasis:
+                "dedicated-crop-area"
+
+            },
+
+            smallSpaceEfficiency:
+              "excellent",
+
+            repeatedHarvestValue:
+              "high",
+
+            dedicatedSpaceRequired:
+              false,
+
+            permanentPlacementRequired:
+              false,
+
+            containmentConcern:
+              "none",
+
+            notes: [
+              "Kale and Collards are highly practical in raised beds, containers, small garden plots, and protected forage frames.",
+              "Repeated outer-leaf harvest can provide useful flock supplements from limited space.",
+              "Baby-leaf systems and compact Kale cultivars can use smaller areas efficiently.",
+              "Larger Collard cultivars require more spacing but remain practical in ordinary garden beds.",
+              "Small plantings can provide enrichment and dietary variety even when they do not materially replace purchased feed."
+            ]
+
           }
         },
 
