@@ -34020,33 +34020,21 @@ if (pathResults.length > 0) {
       );
 
     const minimumDays =
-      getFirstFiniteValue?.([
+  [
 
-        climate.minimumFrostFreeDays,
+    climate.minimumFrostFreeDays,
 
-        climate.minimumSeasonLengthDays,
+    climate.minimumSeasonLengthDays,
 
-        climate.minimumGrowingSeasonDays,
+    climate.minimumGrowingSeasonDays,
 
-        climate.daysToMaturityMaximum,
+    climate.daysToMaturityMaximum,
 
-        climate.maximumDaysToMaturity
+    climate.maximumDaysToMaturity
 
-      ]) ?? [
-
-        climate.minimumFrostFreeDays,
-
-        climate.minimumSeasonLengthDays,
-
-        climate.minimumGrowingSeasonDays,
-
-        climate.daysToMaturityMaximum,
-
-        climate.maximumDaysToMaturity
-
-      ].find(
-        Number.isFinite
-      ) ?? null;
+  ].find(
+    Number.isFinite
+  ) ?? null;
 
     if (
       !Number.isFinite(
