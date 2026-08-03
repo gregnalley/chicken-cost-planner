@@ -109,6 +109,9 @@
           supportingProductRole:
             10,
 
+          specializedProductRole:
+            8,
+
 
           consumableProductRole:
             10,
@@ -143,11 +146,27 @@
 
 
           optionalProductRole:
-            -20,
+           -20,
+
+
+          coreRecommendationTier:
+            20,
+
+
+          recommendedRecommendationTier:
+            10,
+
+
+          situationalRecommendationTier:
+            -5,
+
+
+          specialtyRecommendationTier:
+            5,
 
 
           priorityMultiplier:
-            0.1
+           0.1
 
 
         })
@@ -203,6 +222,19 @@
 
           reason:
             "Supporting product"
+
+        }),
+
+        specialized:
+         Object.freeze({
+
+          score:
+           ENGINE_CONFIG
+            .scoring
+            .specializedProductRole,
+
+          reason:
+           "Specialized product"
 
         }),
 
@@ -336,6 +368,74 @@
     });
 
 
+    /*
+  Recommendation-tier scoring and explanations.
+
+  Tiers describe how strongly a product should be
+  presented after it has already qualified.
+*/
+
+const RECOMMENDATION_TIER_CONFIG =
+  Object.freeze({
+
+
+    core:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .coreRecommendationTier,
+
+        reason:
+          "Core recommendation"
+
+      }),
+
+
+    recommended:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .recommendedRecommendationTier,
+
+        reason:
+          "Recommended product"
+
+      }),
+
+
+    situational:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .situationalRecommendationTier,
+
+        reason:
+          "Situational product"
+
+      }),
+
+
+    specialty:
+      Object.freeze({
+
+        score:
+          ENGINE_CONFIG
+            .scoring
+            .specialtyRecommendationTier,
+
+        reason:
+          "Specialty product"
+
+      })
+
+
+  });
 
   /*
     Return the shared product catalog.
@@ -541,6 +641,9 @@
 
       productRole:
         0,
+
+      recommendationTier:
+        0, 
 
       crop:
         0,
@@ -767,6 +870,33 @@
     }
 
 
+    /*
+  Recommendation-tier adjustment
+*/
+
+const tierConfig =
+  RECOMMENDATION_TIER_CONFIG[
+    recommendationData.recommendationTier
+  ];
+
+
+if(
+  tierConfig
+){
+
+  score +=
+    tierConfig.score;
+
+
+  scoreBreakdown.recommendationTier +=
+    tierConfig.score;
+
+
+  reasons.push(
+    tierConfig.reason
+  );
+
+}
 
     /*
       Crop-planner-specific scoring
@@ -1271,6 +1401,9 @@
 
   namespace.PRODUCT_ROLE_CONFIG =
     PRODUCT_ROLE_CONFIG;
+
+  namespace.RECOMMENDATION_TIER_CONFIG =
+    RECOMMENDATION_TIER_CONFIG;  
 
 
   namespace.getProducts =
