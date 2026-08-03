@@ -2119,6 +2119,292 @@ function getAlternativePlanProductRecommendations(
   );
 }
 
+/*
+  Render one product recommendation card.
+
+  The same card renderer will be used for:
+  - Best Overall Match products
+  - Strong Alternatives products
+*/
+
+function renderProductRecommendationCard(
+  recommendation,
+  options = {}
+) {
+
+  if (
+    !recommendation ||
+    !recommendation.product
+  ) {
+    return "";
+  }
+
+  const product =
+    recommendation.product;
+
+  const recommendationData =
+    product.recommendationData ||
+    {};
+
+  const bullets =
+    asArray(
+      product.bullets
+    )
+      .filter(
+        bullet =>
+          typeof bullet ===
+            "string" &&
+          bullet.trim() !==
+            ""
+      )
+      .slice(
+        0,
+        3
+      );
+
+  const groupLabel =
+    firstDefined(
+      options.groupLabel,
+      product.tileBadge,
+      product.badge,
+      "Recommended Product"
+    );
+
+  const recommendationReason =
+    firstDefined(
+      options.reason,
+      recommendation.reasons?.[
+        recommendation.reasons.length -
+        1
+      ],
+      null
+    );
+
+  return `
+    <article class="feed-crop-product-card">
+
+      <div class="feed-crop-product-card-header">
+
+        <span class="feed-crop-product-badge">
+          ${escapeHTML(
+            groupLabel
+          )}
+        </span>
+
+        ${
+          options.cropLabel
+            ? `
+                <span class="feed-crop-product-crop-label">
+                  ${escapeHTML(
+                    options.cropLabel
+                  )}
+                </span>
+              `
+            : ""
+        }
+
+      </div>
+
+      <span class="feed-crop-product-id">
+        ${escapeHTML(
+          product.id
+        )}
+      </span>
+
+      <h3>
+        ${escapeHTML(
+          product.title
+        )}
+      </h3>
+
+      <p class="feed-crop-product-description">
+        ${escapeHTML(
+          firstDefined(
+            product.shortDescription,
+            product.description,
+            "Recommended for this crop plan."
+          )
+        )}
+      </p>
+
+      ${
+        bullets.length > 0
+          ? `
+              <ul class="feed-crop-product-bullets">
+
+                ${bullets
+                  .map(
+                    bullet => `
+                      <li>
+                        <span aria-hidden="true">
+                          ✓
+                        </span>
+
+                        <span>
+                          ${escapeHTML(
+                            bullet
+                          )}
+                        </span>
+                      </li>
+                    `
+                  )
+                  .join("")}
+
+              </ul>
+            `
+          : ""
+      }
+
+      ${
+        recommendationReason
+          ? `
+              <p class="feed-crop-product-reason">
+                <strong>
+                  Why it was selected:
+                </strong>
+
+                ${escapeHTML(
+                  recommendationReason
+                )}
+              </p>
+            `
+          : ""
+      }
+
+      <a
+        class="feed-crop-product-button"
+        href="${escapeHTML(
+          product.url
+        )}"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        ${escapeHTML(
+          firstDefined(
+            product.buttonText,
+            product.tileButtonText,
+            "View Current Price →"
+          )
+        )}
+      </a>
+
+      ${
+        product.note
+          ? `
+              <p class="feed-crop-product-disclosure">
+                ${escapeHTML(
+                  product.note
+                )}
+              </p>
+            `
+          : ""
+      }
+
+    </article>
+  `;
+}
+
+/*
+  Render the four products shown directly beneath the
+  Best Overall Match card.
+*/
+
+function renderTopCropProducts(
+  topResult,
+  answers
+) {
+
+  const recommendations =
+    getTopCropProductRecommendations(
+      topResult,
+      answers
+    );
+
+  if (
+    recommendations.length ===
+      0
+  ) {
+    return "";
+  }
+
+  const cropName =
+    firstDefined(
+      topResult?.cropName,
+      getCropShortLabel(
+        topResult
+      ),
+      "this crop"
+    );
+
+  return `
+    <section class="feed-crop-results-product-section feed-crop-results-top-products">
+
+      <div class="feed-crop-results-section-heading">
+
+        <span class="feed-crop-results-kicker">
+          Products for your best match
+        </span>
+
+        <h2>
+          🛒 Recommended Products for
+          ${escapeHTML(
+            cropName
+          )}
+        </h2>
+
+        <p>
+          These products were selected from the crop, harvest path, processing needs, and planting goals used in your personalized result.
+        </p>
+
+      </div>
+
+      <div class="feed-crop-product-grid feed-crop-product-grid-four">
+
+        ${recommendations
+          .map(function(
+            recommendation,
+            index
+          ) {
+
+            let groupLabel =
+              "Recommended Product";
+
+            if (
+              index ===
+                0
+            ) {
+              groupLabel =
+                "⭐ Best Place to Start";
+            } else if (
+              index <=
+                2
+            ) {
+              groupLabel =
+                "🛠️ Recommended Tool";
+            } else {
+              groupLabel =
+                "💡 Helpful Addition";
+            }
+
+            return renderProductRecommendationCard(
+              recommendation,
+              {
+                groupLabel,
+
+                cropLabel:
+                  cropName
+              }
+            );
+
+          })
+          .join("")}
+
+      </div>
+
+    </section>
+  `;
+}
+
   /*
     ==================================================
     Strength and limitation extraction
@@ -4262,6 +4548,11 @@ function getAlternativePlanProductRecommendations(
 
       renderRecommendationHero(
         topResult
+      ),
+
+      renderTopCropProducts(
+        topResult,
+        answers
       ),
 
       renderStrengthsAndLimitations(
