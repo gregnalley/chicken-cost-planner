@@ -701,6 +701,65 @@
       return;
     }
 
+    const practicalSpace =
+  space.practicalSpace;
+
+const practicalSuitability =
+  practicalSpace
+    ?.spaceTypeSuitability;
+
+
+if (
+  practicalSuitability &&
+  typeof practicalSuitability ===
+    "object"
+) {
+
+  const practicalRatings =
+    availableSpaceTypes
+      .map(function(
+        spaceType
+      ) {
+
+        return practicalSuitability[
+          spaceType
+        ];
+
+      })
+      .filter(function(
+        rating
+      ) {
+
+        return typeof rating ===
+          "string";
+
+      });
+
+
+  if (
+    practicalRatings.length >
+      0 &&
+    practicalRatings.every(function(
+      rating
+    ) {
+
+      return rating ===
+        "unsuitable";
+
+    })
+  ) {
+
+    failEligibility(
+      evaluation,
+      "None of the available growing-space types are practically suitable for this crop."
+    );
+
+    return;
+
+  }
+
+}
+
     const knownScores =
       availableSpaceTypes
         .map(
