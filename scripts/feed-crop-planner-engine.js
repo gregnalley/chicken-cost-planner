@@ -28906,26 +28906,26 @@ if (pathResults.length > 0) {
 
 
 
-  function getFinalScoreBandLabel(
-    evaluation
-  ) {
+  function getEvaluationFinalScoreBandLabel(
+  evaluation
+) {
 
-    return (
+  return (
 
-      evaluation.final
-        ?.scoreBandLabel ??
+    evaluation.final
+      ?.scoreBandLabel ??
 
-      getFinalScoreBandLabel(
-        getFinalScoreBand(
-          getFinalSuitabilityScore(
-            evaluation
-          )
+    getFinalScoreBandLabel(
+      getFinalScoreBand(
+        getFinalSuitabilityScore(
+          evaluation
         )
       )
+    )
 
-    );
+  );
 
-  }
+}
 
 
 
@@ -29391,7 +29391,7 @@ if (pathResults.length > 0) {
       );
 
     const scoreBandLabel =
-      getFinalScoreBandLabel(
+      getEvaluationFinalScoreBandLabel(
         evaluation
       );
 
