@@ -15297,7 +15297,7 @@ window.BCP_PRODUCTS = {
   ///
   ///////////////////////////////////////////////////
 
-      "PRD-100": {
+"PRD-100": {
 
   id:
     "PRD-100",
@@ -22313,7 +22313,27 @@ window.BCP_PRODUCTS = {
 
       crops: [
 
-        "CROP-SUNFLOWER"
+        "CROP-SUNFLOWER",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-PROSO-MILLET",
+
+        "CROP-WHEAT",
+
+        "CROP-BARLEY",
+
+        "CROP-OATS",
+
+        "CROP-AMARANTH",
+
+        "CROP-SOYBEANS",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS"
 
       ],
 
@@ -23518,9369 +23538,16843 @@ window.BCP_PRODUCTS = {
 
 },
 
+"PRD-125": {
 
+  id:
+    "PRD-125",
 
 
-            "PRD-125": {
+  category:
+    "Seeds",
 
-        id:
-          "PRD-125",
 
-        category:
-          "Seeds",
+  badge:
+    "🌱 Crop Starter",
 
-        badge:
-          "🌱 Crop Starter",
 
-        title:
-          "Non-GMO Soybean Seeds",
+  title:
+    "Non-GMO Soybean Seeds",
 
-        description:
-          "Soybean seeds allow backyard growers to produce a high-protein crop that can be used as part of a sustainable chicken feeding strategy. Properly grown and prepared soybeans can provide valuable nutrition for flock supplementation.",
 
-        shortDescription:
-          "Grow soybeans as a high-protein supplemental feed crop.",
+  description:
+    "Non-GMO soybean seeds allow backyard growers to produce a high-protein warm-season crop for homestead feed production. Harvested soybeans must be properly dried and heat-treated before they are used as supplemental chicken feed.",
 
-        tileBadge:
-          "🌱 Soybean Pick",
 
-        tileButtonText:
-          "View Product →",
+  shortDescription:
+    "Grow a high-protein soybean crop for properly processed flock feed.",
 
-        bullets: [
 
-          "High-protein feed crop option",
+  tileBadge:
+    "🌱 Top Soybean Pick",
 
-          "Useful for sustainable homestead production",
 
-          "Works well in warm-season gardens"
+  tileButtonText:
+    "View Product →",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+  bullets: [
 
-        url:
-          "https://amzn.to/4brBh2e",
+    "Produces a high-protein homestead feed crop",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    "Well suited to warm-season garden production",
 
+    "Requires proper processing before feeding to chickens"
 
-        recommendationData: {
+  ],
 
-          recommendedFor: {
 
-            crops: [
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "CROP-SOYBEANS"
 
-            ],
+  url:
+    "https://amzn.to/4brBh2e",
 
-            planners: [
 
-              "feed-crop-planner"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            calculators: [],
+  recommendationData: {
 
-            pageTypes: [
 
-              "growing-soybeans-for-chickens",
+    recommendedFor: {
 
-              "feed-crop-guide"
 
-            ],
+      crops: [
 
-            cropStages: [
+        "CROP-SOYBEANS"
 
-              "planning",
+      ],
 
-              "planting"
 
-            ],
+      planners: [
 
-            useCases: [
+        "feed-crop-planner"
 
-              "seed-production",
+      ],
 
-              "feed-production"
 
-            ],
+      calculators: [],
 
-            tags: [
 
-              "soybeans",
+      pageTypes: [
 
-              "seed",
+        "growing-soybeans-for-chickens",
 
-              "protein",
+        "feed-crop-guide"
 
-              "feed-crop"
+      ],
 
-            ],
 
-            audiences: [
+      cropStages: [
 
-              "beginner",
+        "planning",
 
-              "homesteader",
+        "planting"
 
-              "small-flock"
+      ],
 
-            ]
 
-          },
+      useCases: [
 
+        "seed-production",
 
-          productType:
-            "seed",
+        "protein-feed-production",
 
+        "homestead-feed-production"
 
-          productRole:
-            "primary",
+      ],
 
 
-          universal:
-            false,
+      tags: [
 
+        "soybeans",
 
-          universalCategories: [],
+        "non-gmo",
 
+        "seed",
 
-          priority:
-            95,
+        "protein-feed",
 
+        "warm-season-crop"
 
-          enabled:
-            true
+      ],
 
-        }
 
-      },
+      audiences: [
 
-            "PRD-126": {
+        "beginner",
 
-        id:
-          "PRD-126",
+        "small-flock",
 
-        category:
-          "Soil & Fertility",
+        "homesteader",
 
-        badge:
-          "🌱 Improve Nitrogen Fixation",
+        "backyard-flock-owner"
 
-        title:
-          "Soybean Inoculant",
+      ]
 
-        description:
-          "Soybean inoculant contains beneficial bacteria that help soybean plants form nitrogen-fixing root nodules. It can be especially useful when soybeans have not previously been grown in an area.",
 
-        shortDescription:
-          "Support soybean nitrogen fixation and plant health.",
+    },
 
-        tileBadge:
-          "🌱 Soybean Support",
 
-        tileButtonText:
-          "View Product →",
+    productType:
+      "seed",
 
-        bullets: [
 
-          "Supports nitrogen fixation",
+    requiredProducts: [],
 
-          "Helpful for new soybean growing areas",
 
-          "Improves confidence for first-time growers"
+    relatedProducts: [
 
-        ],
+      "PRD-126",
 
-        buttonText:
-          "View Current Price on Amazon →",
+      "PRD-122",
 
-        url:
-          "https://amzn.to/4cfRIPn",
+      "PRD-121"
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    ],
 
 
-        recommendationData: {
+    purchaseBehavior: {
 
-          recommendedFor: {
 
-            crops: [
+      purchaseType:
+        "seasonal",
 
-              "CROP-SOYBEANS"
 
-            ],
+      replacementFrequency:
+        "annual",
 
-            planners: [
 
-              "feed-crop-planner"
+      affiliatePotential:
+        "high"
 
-            ],
+    },
 
-            calculators: [],
 
-            pageTypes: [
+    buyerIntent: {
 
-              "growing-soybeans-for-chickens",
 
-              "feed-crop-guide"
+      buyerStages: [
 
-            ],
+        "planning",
 
-            cropStages: [
+        "planting",
 
-              "planning",
+        "protein-feed-production",
 
-              "planting"
+        "homestead"
 
-            ],
+      ],
 
-            useCases: [
 
-              "soil-preparation",
+      commonProblems: [
 
-              "nutrient-management",
+        "starting-soybean-crops",
 
-              "crop-establishment"
+        "finding-non-gmo-seed",
 
-            ],
+        "producing-homegrown-protein-feed"
 
-            tags: [
+      ],
 
-              "soybeans",
 
-              "inoculant",
+      idealUsers: [
 
-              "nitrogen-fixation",
+        "beginner-gardener",
 
-              "soil"
+        "feed-crop-grower",
 
-            ],
+        "homesteader",
 
-            audiences: [
+        "backyard-flock-owner"
 
-              "beginner",
+      ]
 
-              "homesteader"
+    },
 
-            ]
 
-          },
+    recommendedTogether: [
 
+      "PRD-126",
 
-          productType:
-            "soil-amendment",
+      "PRD-122"
 
+    ],
 
-          productRole:
-            "supporting",
 
+    recommendationContexts: [
 
-          universal:
-            false,
+      "feed-crop-planner",
 
+      "feed-crop-guide",
 
-          universalCategories: [],
+      "growing-guide",
 
+      "crop-planner"
 
-          priority:
-            80,
+    ],
 
 
-          enabled:
-            true
+    productRole:
+      "primary",
 
-        }
 
-      },
+    recommendationTier:
+      "core",
 
-            "PRD-127": {
 
-        id:
-          "PRD-127",
+    userCompatibility: {
 
-        category:
-          "Storage",
 
-        badge:
-          "🌱 Protect Your Harvest",
+      minimumExperience:
+        "beginner",
 
-        title:
-          "Soybean Harvest Storage Bags",
 
-        description:
-          "Harvest storage bags help protect dried soybeans after harvest. Proper storage helps maintain feed quality and reduces problems caused by moisture and pests.",
+      advancedOnly:
+        false,
 
-        shortDescription:
-          "Store harvested soybeans safely.",
 
-        tileBadge:
-          "🌱 Harvest Support",
+      skillRequirements: [
 
-        tileButtonText:
-          "View Product →",
+        "basic-soybean-processing-awareness"
 
-        bullets: [
+      ],
 
-          "Helps protect harvested beans",
 
-          "Supports feed storage",
+      spaceConsiderations: [
 
-          "Useful for multiple grain crops"
+        "medium",
 
-        ],
+        "large"
 
-        buttonText:
-          "View Current Price on Amazon →",
+      ]
 
-        url:
-          "https://amzn.to/4xlJde1",
+    },
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    universal:
+      false,
 
-        recommendationData: {
 
-          recommendedFor: {
+    universalCategories: [],
 
-            crops: [
 
-              "CROP-SOYBEANS"
+    priority:
+      100,
 
-            ],
 
-            planners: [
+    tags: [
 
-              "feed-crop-planner"
+      "soybeans",
 
-            ],
+      "non-gmo",
 
-            calculators: [],
+      "seed",
 
-            pageTypes: [
+      "protein-feed",
 
-              "growing-soybeans-for-chickens",
+      "warm-season-crop",
 
-              "feed-crop-guide"
+      "homestead",
 
-            ],
+      "chicken-feed"
 
-            cropStages: [
+    ],
 
-              "harvesting",
 
-              "drying",
+    enabled:
+      true
 
-              "storage"
 
-            ],
+  }
 
-            useCases: [
 
-              "storage",
+},
 
-              "feed-preservation"
+"PRD-126": {
 
-            ],
+  id:
+    "PRD-126",
 
-            tags: [
 
-              "soybeans",
+  category:
+    "Soil & Fertility",
 
-              "storage",
 
-              "harvest"
+  badge:
+    "🌱 Improve Nitrogen Fixation",
 
-            ],
 
-            audiences: [
+  title:
+    "Soybean Inoculant",
 
-              "homesteader"
 
-            ]
+  description:
+    "Soybean inoculant contains beneficial rhizobia bacteria that help soybean roots form nitrogen-fixing nodules. It is especially useful when soybeans have not previously been grown in the planting area or when compatible bacteria may not already be present in the soil.",
 
-          },
 
+  shortDescription:
+    "Support soybean root nodulation and nitrogen fixation.",
 
-          productType:
-            "storage-equipment",
 
+  tileBadge:
+    "🌱 Soybean Support",
 
-          productRole:
-            "supporting",
 
+  tileButtonText:
+    "View Product →",
 
-          universal:
-            false,
 
+  bullets: [
 
-          universalCategories: [],
+    "Supports nitrogen-fixing root nodules",
 
+    "Especially useful in new soybean planting areas",
 
-          priority:
-            70,
+    "Applied directly to seed before planting"
 
+  ],
 
-          enabled:
-            true
 
-        }
+  buttonText:
+    "View Current Price on Amazon →",
 
-      },
 
-            "PRD-128": {
+  url:
+    "https://amzn.to/4cfRIPn",
 
-        id:
-          "PRD-128",
 
-        category:
-          "Processing Equipment",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-        badge:
-          "⚙️ Advanced Processing",
 
-        title:
-          "Small Grain Processing Equipment",
+  recommendationData: {
 
-        description:
-          "Processing equipment can help advanced homesteaders prepare harvested soybeans and other grains for storage or animal feed preparation. This type of equipment is best suited for growers producing larger quantities.",
 
-        shortDescription:
-          "For advanced growers processing harvested crops.",
+    recommendedFor: {
 
-        tileBadge:
-          "⚙️ Advanced Option",
 
-        tileButtonText:
-          "View Product →",
+      crops: [
 
-        bullets: [
+        "CROP-SOYBEANS"
 
-          "Useful for larger harvests",
+      ],
 
-          "Supports homestead feed production",
 
-          "Best for experienced growers"
+      planners: [
 
-        ],
+        "feed-crop-planner"
 
-        buttonText:
-          "View Current Price on Amazon →",
+      ],
 
-        url:
-          "https://amzn.to/3RHHccS",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      calculators: [],
 
 
-        recommendationData: {
+      pageTypes: [
 
-          recommendedFor: {
+        "growing-soybeans-for-chickens",
 
-            crops: [
+        "feed-crop-guide"
 
-              "CROP-SOYBEANS"
+      ],
 
-            ],
 
-            planners: [
+      cropStages: [
 
-              "feed-crop-planner"
+        "planning",
 
-            ],
+        "planting"
 
-            calculators: [],
+      ],
 
-            pageTypes: [
 
-              "growing-soybeans-for-chickens",
+      useCases: [
 
-              "feed-crop-guide"
+        "seed-inoculation",
 
-            ],
+        "nitrogen-fixation",
 
-            cropStages: [
+        "crop-establishment",
 
-              "processing"
+        "soil-fertility-management"
 
-            ],
+      ],
 
-            useCases: [
 
-              "processing",
+      tags: [
 
-              "feed-production"
+        "soybeans",
 
-            ],
+        "soybean-inoculant",
 
-            tags: [
+        "rhizobia",
 
-              "soybeans",
+        "nitrogen-fixation",
 
-              "processing",
+        "root-nodulation"
 
-              "homestead"
+      ],
 
-            ],
 
-            audiences: [
+      audiences: [
 
-              "advanced",
+        "beginner",
 
-              "homesteader"
+        "small-flock",
 
-            ]
+        "homesteader",
 
-          },
+        "backyard-flock-owner"
 
+      ]
 
-          productType:
-            "processing-equipment",
 
+    },
 
-          productRole:
-            "optional",
 
+    productType:
+      "seed-inoculant",
 
-          universal:
-            false,
 
+    requiredProducts: [
 
-          universalCategories: [],
+      "PRD-125"
 
+    ],
 
-          priority:
-            55,
 
+    relatedProducts: [
 
-          enabled:
-            true
+      "PRD-125",
 
-        }
+      "PRD-107"
 
-      },
+    ],
 
-            "PRD-129": {
 
-        id:
-          "PRD-129",
+    purchaseBehavior: {
 
-        category:
-          "Storage",
 
-        badge:
-          "🌱 Seed Storage",
+      purchaseType:
+        "consumable",
 
-        title:
-          "Seed Storage Container",
 
-        description:
-          "A sealed storage container helps protect soybean seed and other stored planting materials from moisture, pests, and damage between growing seasons.",
+      replacementFrequency:
+        "annual",
 
-        shortDescription:
-          "Protect seeds between planting seasons.",
 
-        tileBadge:
-          "🌱 Storage Support",
+      affiliatePotential:
+        "medium"
 
-        tileButtonText:
-          "View Product →",
+    },
 
-        bullets: [
 
-          "Protects saved seed",
+    buyerIntent: {
 
-          "Helps reduce moisture problems",
 
-          "Useful for multiple crops"
+      buyerStages: [
 
-        ],
+        "planning",
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "planting",
 
-        url:
-          "https://amzn.to/4xjHBRW",
+        "crop-establishment",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "soil-fertility-management",
 
+        "homestead"
 
-        recommendationData: {
+      ],
 
-          recommendedFor: {
 
-            crops: [
+      commonProblems: [
 
-              "CROP-SOYBEANS"
+        "poor-root-nodulation",
 
-            ],
+        "new-soybean-growing-area",
 
-            planners: [
+        "limited-soil-rhizobia",
 
-              "feed-crop-planner"
+        "weak-nitrogen-fixation"
 
-            ],
+      ],
 
-            calculators: [],
 
-            pageTypes: [
+      idealUsers: [
 
-              "growing-soybeans-for-chickens",
+        "first-time-soybean-grower",
 
-              "feed-crop-guide"
+        "feed-crop-grower",
 
-            ],
+        "homesteader",
 
-            cropStages: [
+        "backyard-flock-owner"
 
-              "storage",
+      ]
 
-              "planning"
+    },
 
-            ],
 
-            useCases: [
+    recommendedTogether: [
 
-              "seed-storage",
+      "PRD-125",
 
-              "crop-planning"
+      "PRD-107"
 
-            ],
+    ],
 
-            tags: [
 
-              "soybeans",
+    recommendationContexts: [
 
-              "seed",
+      "feed-crop-planner",
 
-              "storage"
+      "feed-crop-guide",
 
-            ],
+      "growing-guide",
 
-            audiences: [
+      "crop-planner"
 
-              "beginner",
+    ],
 
-              "homesteader"
 
-            ]
+    productRole:
+      "supporting",
 
-          },
 
+    recommendationTier:
+      "situational",
 
-          productType:
-            "storage-equipment",
 
+    userCompatibility: {
 
-          productRole:
-            "supporting",
 
+      minimumExperience:
+        "beginner",
 
-          universal:
-            false,
 
+      advancedOnly:
+        false,
 
-          universalCategories: [],
 
+      skillRequirements: [
 
-          priority:
-            65,
+        "basic-seed-inoculation"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      spaceConsiderations: [
 
-      },
+        "small",
 
-            "PRD-130": {
+        "medium",
 
-        id:
-          "PRD-130",
+        "large"
 
-        category:
-          "Seeds",
+      ]
 
-        badge:
-          "🌽 Crop Starter",
+    },
 
-        title:
-          "Field Corn Seed",
 
-        description:
-          "Field corn seed allows backyard growers to produce a high-energy grain crop that can be used as part of a supplemental chicken feeding strategy. Field corn is different from sweet corn because it is grown primarily for grain production.",
+    universal:
+      false,
 
-        shortDescription:
-          "Grow your own high-energy grain crop for chickens.",
 
-        tileBadge:
-          "🌽 Corn Pick",
+    universalCategories: [],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+    priority:
+      85,
 
-          "High-energy grain crop",
 
-          "Useful for chicken feed supplementation",
+    tags: [
 
-          "Stores well when properly dried"
+      "soybeans",
 
-        ],
+      "soybean-inoculant",
 
-        buttonText:
-          "View Current Price on Amazon →",
+      "rhizobia",
 
-        url:
-          "https://amzn.to/4fIuxjb",
+      "nitrogen-fixation",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      "root-nodulation",
 
+      "seed-treatment",
 
-        recommendationData: {
+      "homestead"
 
-          recommendedFor: {
+    ],
 
-            crops: [
 
-              "CROP-FIELD-CORN"
+    enabled:
+      true
 
-            ],
 
-            planners: [
+  }
 
-              "feed-crop-planner"
 
-            ],
+},
 
-            calculators: [],
+"PRD-128": {
 
-            pageTypes: [
+  id:
+    "PRD-128",
 
-              "growing-field-corn-for-chickens",
 
-              "feed-crop-guide"
+  category:
+    "Feed Processing",
 
-            ],
 
-            cropStages: [
+  badge:
+    "🌾 Feed Processing",
 
-              "planning",
 
-              "planting"
+  title:
+    "Home Grain Mill Grinder",
 
-            ],
 
-            useCases: [
+  description:
+    "A home grain mill allows gardeners and homesteaders to grind properly dried grains, legumes, and other harvested feed crops into smaller particles for custom feed preparation. It is useful for processing many backyard feed crops after appropriate drying and, where required, proper heat treatment.",
 
-              "seed-production",
 
-              "feed-production"
+  shortDescription:
+    "Grind harvested feed crops for custom feed preparation.",
 
-            ],
 
-            tags: [
+  tileBadge:
+    "🌾 Processing Tool",
 
-              "corn",
 
-              "field-corn",
+  tileButtonText:
+    "View Product →",
 
-              "grain",
 
-              "feed-crop"
+  bullets: [
 
-            ],
+    "Processes many harvested grains and legumes",
 
-            audiences: [
+    "Useful for producing custom feed blends",
 
-              "beginner",
+    "Supports small-scale homestead feed preparation"
 
-              "homesteader",
+  ],
 
-              "small-flock"
 
-            ]
+  buttonText:
+    "View Current Price on Amazon →",
 
-          },
 
+  url:
+    "https://amzn.to/4fKj8Pn",
 
-          productType:
-            "seed",
 
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-          productRole:
-            "primary",
 
+  recommendationData: {
 
-          universal:
-            false,
 
+    recommendedFor: {
 
-          universalCategories: [],
 
+      crops: [
 
-          priority:
-            95,
+        "CROP-SOYBEANS",
 
+        "CROP-WHEAT",
 
-          enabled:
-            true
+        "CROP-BARLEY",
 
-        }
+        "CROP-OATS",
 
-      },
+        "CROP-GRAIN-SORGHUM",
 
-            "PRD-131": {
+        "CROP-PROSO-MILLET",
 
-        id:
-          "PRD-131",
+        "CROP-AMARANTH",
 
-        category:
-          "Storage",
+        "CROP-FIELD-CORN"
 
-        badge:
-          "🌽 Protect Your Grain",
+      ],
 
-        title:
-          "Grain Storage Container",
 
-        description:
-          "Proper storage helps protect dried field corn from moisture, insects, and spoilage. Airtight containers are useful for maintaining feed quality after harvest.",
+      planners: [
 
-        shortDescription:
-          "Store harvested corn safely after drying.",
+        "feed-crop-planner"
 
-        tileBadge:
-          "🌽 Harvest Support",
+      ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      calculators: [],
 
-          "Protects harvested grain",
 
-          "Helps reduce moisture issues",
+      pageTypes: [
 
-          "Supports long-term feed storage"
+        "feed-crop-guide"
 
-        ],
+      ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4xjHBRW",
+      cropStages: [
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "processing"
 
+      ],
 
-        recommendationData: {
 
-          recommendedFor: {
+      useCases: [
 
-            crops: [
+        "feed-processing",
 
-              "CROP-FIELD-CORN"
+        "grain-grinding",
 
-            ],
+        "feed-preparation",
 
-            planners: [
+        "custom-feed-mixing"
 
-              "feed-crop-planner"
+      ],
 
-            ],
 
-            calculators: [],
+      tags: [
 
-            pageTypes: [
+        "grain-mill",
 
-              "growing-field-corn-for-chickens",
+        "feed-processing",
 
-              "feed-crop-guide"
+        "grain-grinder",
 
-            ],
+        "homestead"
 
-            cropStages: [
+      ],
 
-              "drying",
 
-              "storage"
+      audiences: [
 
-            ],
+        "intermediate",
 
-            useCases: [
+        "advanced",
 
-              "storage",
+        "homesteader"
 
-              "feed-preservation"
+      ]
 
-            ],
+    },
 
-            tags: [
 
-              "corn",
+    productType:
+      "grain-mill",
 
-              "grain",
 
-              "storage",
+    requiredProducts: [],
 
-              "feed"
 
-            ],
+    relatedProducts: [
 
-            audiences: [
+      "PRD-121",
 
-              "beginner",
+      "PRD-122"
 
-              "homesteader"
+    ],
 
-            ]
 
-          },
+    purchaseBehavior: {
 
 
-          productType:
-            "storage-equipment",
+      purchaseType:
+        "one-time",
 
 
-          productRole:
-            "supporting",
+      replacementFrequency:
+        "10+ years",
 
 
-          universal:
-            false,
+        affiliatePotential:
+        "medium"
 
+    },
 
-          universalCategories: [],
 
+    buyerIntent: {
 
-          priority:
-            80,
 
+      buyerStages: [
 
-          enabled:
-            true
+        "processing",
 
-        }
+        "feed-production",
 
-      },
+        "custom-feed",
 
-            "PRD-132": {
+        "homestead"
 
-        id:
-          "PRD-132",
+      ],
 
-        category:
-          "Processing Equipment",
 
-        badge:
-          "⚙️ Grain Processing",
+      commonProblems: [
 
-        title:
-          "Corn Sheller / Grain Processing Tool",
+        "large-feed-particles",
 
-        description:
-          "A corn sheller or grain processing tool can help remove kernels from harvested ears and prepare grain for storage or feeding. These tools are most useful for growers producing larger quantities.",
+        "custom-feed-preparation",
 
-        shortDescription:
-          "Process harvested corn for storage and feeding.",
+        "processing-homegrown-grains"
 
-        tileBadge:
-          "⚙️ Advanced Option",
+      ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      idealUsers: [
 
-          "Useful for larger harvests",
+        "feed-crop-grower",
 
-          "Reduces manual processing time",
+        "homesteader",
 
-          "Supports homegrown feed production"
+        "advanced-gardener"
 
-        ],
+      ]
 
-        buttonText:
-          "View Current Price on Amazon →",
+    },
 
-        url:
-          "https://amzn.to/4g3GTlT",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    recommendedTogether: [
 
+      "PRD-121",
 
-        recommendationData: {
+      "PRD-122"
 
-          recommendedFor: {
+    ],
 
-            crops: [
 
-              "CROP-FIELD-CORN"
+    recommendationContexts: [
 
-            ],
+      "feed-crop-planner",
 
-            planners: [
+      "feed-crop-guide",
 
-              "feed-crop-planner"
+      "crop-planner"
 
-            ],
+    ],
 
-            calculators: [],
 
-            pageTypes: [
+    productRole:
+      "specialized",
 
-              "growing-field-corn-for-chickens",
 
-              "feed-crop-guide"
+    recommendationTier:
+      "specialty",
 
-            ],
 
-            cropStages: [
+    userCompatibility: {
 
-              "processing"
 
-            ],
+      minimumExperience:
+        "intermediate",
 
-            useCases: [
 
-              "processing",
+      advancedOnly:
+        false,
 
-              "feed-production"
 
-            ],
+      skillRequirements: [
 
-            tags: [
+        "basic-feed-processing"
 
-              "corn",
+      ],
 
-              "processing",
 
-              "grain"
+      spaceConsiderations: [
 
-            ],
+        "medium",
 
-            audiences: [
+        "large"
 
-              "advanced",
+      ]
 
-              "homesteader"
+    },
 
-            ]
 
-          },
+    universal:
+      false,
 
 
-          productType:
-            "processing-equipment",
+    universalCategories: [],
 
 
-          productRole:
-            "optional",
+    priority:
+      60,
 
 
-          universal:
-            false,
+    tags: [
 
+      "grain-mill",
 
-          universalCategories: [],
+      "feed-processing",
 
+      "grain-grinder",
 
-          priority:
-            55,
+      "custom-feed",
 
+      "homestead"
 
-          enabled:
-            true
+    ],
 
-        }
 
-      },
+    enabled:
+      true
 
-            "PRD-133": {
 
-        id:
-          "PRD-133",
+  }
 
-        category:
-          "Harvest Tools",
 
-        badge:
-          "🌽 Harvest Helper",
+},
 
-        title:
-          "Grain Harvest Tote",
+"PRD-130": {
 
-        description:
-          "A harvest tote helps collect ears of field corn and transport harvested grain crops. It is useful for backyard growers managing multiple feed crops.",
+  id:
+    "PRD-130",
 
-        shortDescription:
-          "Collect and move harvested grain crops.",
 
-        tileBadge:
-          "🌽 Harvest Support",
+  category:
+    "Seeds",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  badge:
+    "🌽 Crop Starter",
 
-          "Useful during harvest season",
 
-          "Helps transport harvested crops",
+  title:
+    "Field Corn Seed",
 
-          "Works across multiple grain crops"
 
-        ],
+  description:
+    "Field corn seed allows backyard growers to produce a high-energy grain crop for supplemental chicken feed. Unlike sweet corn, field corn is grown primarily for grain production, making it an excellent choice for homesteaders raising poultry.",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4xl0vrI",
+  shortDescription:
+    "Grow a high-energy grain crop for your flock.",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  tileBadge:
+    "🌽 Top Field Corn Pick",
 
-        recommendationData: {
 
-          recommendedFor: {
+  tileButtonText:
+    "View Product →",
 
-            crops: [
 
-              "CROP-FIELD-CORN"
+  bullets: [
 
-            ],
+    "Produces a high-energy grain crop",
 
-            planners: [
+    "Well suited for backyard chicken feed production",
 
-              "feed-crop-planner"
+    "Stores well after proper drying"
 
-            ],
+  ],
 
-            calculators: [],
 
-            pageTypes: [
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "growing-field-corn-for-chickens",
 
-              "feed-crop-guide"
+  url:
+    "https://amzn.to/4fIuxjb",
 
-            ],
 
-            cropStages: [
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-              "harvesting"
 
-            ],
+  recommendationData: {
 
-            useCases: [
 
-              "harvesting",
+    recommendedFor: {
 
-              "crop-transport"
 
-            ],
+      crops: [
 
-            tags: [
+        "CROP-FIELD-CORN"
 
-              "corn",
+      ],
 
-              "harvest",
 
-              "grain"
+      planners: [
 
-            ],
+        "feed-crop-planner"
 
-            audiences: [
+      ],
 
-              "beginner",
 
-              "homesteader"
+      calculators: [],
 
-            ]
 
-          },
+      pageTypes: [
 
+        "growing-field-corn-for-chickens",
 
-          productType:
-            "harvest-tool",
+        "feed-crop-guide"
 
+      ],
 
-          productRole:
-            "supporting",
 
+      cropStages: [
 
-          universal:
-            false,
+        "planning",
 
+        "planting"
 
-          universalCategories: [],
+      ],
 
 
-          priority:
-            65,
+      useCases: [
 
+        "seed-production",
 
-          enabled:
-            true
+        "grain-production",
 
-        }
+        "feed-production"
 
-      },
+      ],
 
-            "PRD-134": {
 
-        id:
-          "PRD-134",
+      tags: [
 
-        category:
-          "Crop Protection",
+        "field-corn",
 
-        badge:
-          "🛡️ Protect Developing Corn",
+        "corn-seed",
 
-        title:
-          "Wildlife Protection Netting",
+        "grain",
 
-        description:
-          "Wildlife protection netting can help reduce damage from birds and other animals when growing field corn for grain production.",
+        "feed-crop",
 
-        shortDescription:
-          "Help protect developing grain crops.",
+        "warm-season-crop"
 
-        tileBadge:
-          "🌽 Crop Protection",
+      ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      audiences: [
 
-          "Helps reduce wildlife pressure",
+        "beginner",
 
-          "Protects developing crops",
+        "small-flock",
 
-          "Reusable for future gardens"
+        "homesteader",
 
-        ],
+        "backyard-flock-owner"
 
-        buttonText:
-          "View Current Price on Amazon →",
+      ]
 
-        url:
-          "https://amzn.to/4fywChp",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    },
 
 
-        recommendationData: {
+    productType:
+      "seed",
 
-          recommendedFor: {
 
-            crops: [
+    requiredProducts: [],
 
-              "CROP-FIELD-CORN"
 
-            ],
+    relatedProducts: [
 
-            planners: [
+      "PRD-132",
 
-              "feed-crop-planner"
+      "PRD-134",
 
-            ],
+      "PRD-121"
 
-            calculators: [],
+    ],
 
-            pageTypes: [
 
-              "growing-field-corn-for-chickens",
+    purchaseBehavior: {
 
-              "feed-crop-guide"
 
-            ],
+      purchaseType:
+        "seasonal",
 
-            cropStages: [
 
-              "growing",
+      replacementFrequency:
+        "annual",
 
-              "harvesting"
 
-            ],
+      affiliatePotential:
+        "high"
 
-            useCases: [
+    },
 
-              "crop-protection",
 
-              "wildlife-management"
+    buyerIntent: {
 
-            ],
 
-            tags: [
+      buyerStages: [
 
-              "corn",
+        "planning",
 
-              "protection",
+        "planting",
 
-              "wildlife"
+        "grain-production",
 
-            ],
+        "feed-production",
 
-            audiences: [
+        "homestead"
 
-              "homesteader"
+      ],
 
-            ]
 
-          },
+      commonProblems: [
 
+        "starting-field-corn",
 
-          productType:
-            "crop-protection",
+        "finding-quality-seed",
 
+        "producing-homegrown-grain"
 
-          productRole:
-            "optional",
+      ],
 
 
-          universal:
-            false,
+      idealUsers: [
 
+        "beginner-gardener",
 
-          universalCategories: [],
+        "feed-crop-grower",
 
+        "homesteader",
 
-          priority:
-            60,
+        "backyard-flock-owner"
 
+      ]
 
-          enabled:
-            true
+    },
 
-        }
 
-      },
+    recommendedTogether: [
 
-            "PRD-135": {
+      "PRD-134",
 
-        id:
-          "PRD-135",
+      "PRD-132"
 
-        category:
-          "Seeds",
+    ],
 
-        badge:
-          "🌾 Crop Starter",
 
-        title:
-          "Grain Sorghum Seed",
+    recommendationContexts: [
 
-        description:
-          "Grain sorghum seed allows backyard growers to produce a drought-tolerant grain crop that can provide supplemental feed resources for chickens. Sorghum can be a useful alternative where water availability or heat makes other grain crops more challenging.",
+      "feed-crop-planner",
 
-        shortDescription:
-          "Grow a resilient grain crop for chicken supplementation.",
+      "feed-crop-guide",
 
-        tileBadge:
-          "🌾 Sorghum Pick",
+      "growing-guide",
 
-        tileButtonText:
-          "View Product →",
+      "crop-planner"
 
-        bullets: [
+    ],
 
-          "Drought-tolerant grain option",
 
-          "Useful for warm climates",
+    productRole:
+      "primary",
 
-          "Produces harvestable grain for storage"
 
-        ],
+    recommendationTier:
+      "core",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4yTs6Si",
+    userCompatibility: {
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+      minimumExperience:
+        "beginner",
 
-        recommendationData: {
 
-          recommendedFor: {
+      advancedOnly:
+        false,
 
-            crops: [
 
-              "CROP-GRAIN-SORGHUM"
+      skillRequirements: [],
 
-            ],
 
-            planners: [
+      spaceConsiderations: [
 
-              "feed-crop-planner"
+        "medium",
 
-            ],
+        "large"
 
-            calculators: [],
+      ]
 
-            pageTypes: [
+    },
 
-              "growing-grain-sorghum-for-chickens",
 
-              "feed-crop-guide"
+    universal:
+      false,
 
-            ],
 
-            cropStages: [
+    universalCategories: [],
 
-              "planning",
 
-              "planting"
+    priority:
+      100,
 
-            ],
 
-            useCases: [
+    tags: [
 
-              "seed-production",
+      "field-corn",
 
-              "feed-production"
+      "corn-seed",
 
-            ],
+      "grain",
 
-            tags: [
+      "feed-crop",
 
-              "sorghum",
+      "homestead",
 
-              "grain",
+      "chicken-feed"
 
-              "feed-crop",
+    ],
 
-              "drought-tolerant"
 
-            ],
+    enabled:
+      true
 
-            audiences: [
 
-              "beginner",
+  }
 
-              "homesteader",
 
-              "small-flock"
+},
 
-            ]
+"PRD-132": {
 
-          },
+  id:
+    "PRD-132",
 
 
-          productType:
-            "seed",
+  category:
+    "Harvest & Processing",
 
 
-          productRole:
-            "primary",
+  badge:
+    "🌽 Corn Processing",
 
 
-          universal:
-            false,
+  title:
+    "Hand Corn Sheller",
 
 
-          universalCategories: [],
+  description:
+    "A hand corn sheller quickly removes kernels from dried ears of field corn, making harvest processing faster and easier than shelling by hand. It is an excellent tool for backyard growers producing field corn for supplemental chicken feed or seed saving.",
 
 
-          priority:
-            95,
+  shortDescription:
+    "Quickly shell dried ears of field corn.",
 
 
-          enabled:
-            true
+  tileBadge:
+    "🌽 Processing Tool",
 
-        }
 
-      },
+  tileButtonText:
+    "View Product →",
 
-            
 
-            "PRD-137": {
+  bullets: [
 
-        id:
-          "PRD-137",
+    "Removes kernels from dried ears of corn",
 
-        category:
-          "Processing Equipment",
+    "Reduces manual shelling time",
 
-        badge:
-          "🌾 Grain Preparation",
+    "Ideal for backyard and homestead harvests"
 
-        title:
-          "Grain Cleaning Screen / Sieve",
+  ],
 
-        description:
-          "A grain cleaning screen helps remove debris, chaff, and unwanted material from harvested sorghum before storage or feeding.",
 
-        shortDescription:
-          "Clean harvested grain before storage.",
+  buttonText:
+    "View Current Price on Amazon →",
 
-        tileBadge:
-          "🌾 Advanced Harvest Tool",
 
-        tileButtonText:
-          "View Product →",
+  url:
+    "https://amzn.to/4g3GTlT",
 
-        bullets: [
 
-          "Helps clean harvested grain",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-          "Improves storage preparation",
 
-          "Useful for multiple grain crops"
+  recommendationData: {
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+    recommendedFor: {
 
-        url:
-          "https://amzn.to/45AW67W",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      crops: [
 
+        "CROP-FIELD-CORN"
 
-        recommendationData: {
+      ],
 
-          recommendedFor: {
 
-            crops: [
+      planners: [
 
-              "CROP-GRAIN-SORGHUM"
+        "feed-crop-planner"
 
-            ],
+      ],
 
-            planners: [
 
-              "feed-crop-planner"
+      calculators: [],
 
-            ],
 
-            calculators: [],
+      pageTypes: [
 
-            pageTypes: [
+        "growing-field-corn-for-chickens",
 
-              "growing-grain-sorghum-for-chickens",
+        "feed-crop-guide"
 
-              "feed-crop-guide"
+      ],
 
-            ],
 
-            cropStages: [
+      cropStages: [
 
-              "processing",
+        "harvesting",
 
-              "storage"
+        "processing"
 
-            ],
+      ],
 
-            useCases: [
 
-              "processing",
+      useCases: [
 
-              "grain-cleaning"
+        "corn-shelling",
 
-            ],
+        "harvest-processing",
 
-            tags: [
+        "seed-saving",
 
-              "sorghum",
+        "feed-preparation"
 
-              "grain",
+      ],
 
-              "processing"
 
-            ],
+      tags: [
 
-            audiences: [
+        "corn-sheller",
 
-              "advanced",
+        "field-corn",
 
-              "homesteader"
+        "processing",
 
-            ]
+        "harvest"
 
-          },
+      ],
 
 
-          productType:
-            "processing-equipment",
+      audiences: [
 
+        "beginner",
 
-          productRole:
-            "optional",
+        "homesteader",
 
+        "backyard-flock-owner"
 
-          universal:
-            false,
+      ]
 
 
-          universalCategories: [],
+    },
 
 
-          priority:
-            60,
+    productType:
+      "corn-sheller",
 
 
-          enabled:
-            true
+    requiredProducts: [
 
-        }
+      "PRD-130"
 
-      },
+    ],
 
-            "PRD-138": {
 
-        id:
-          "PRD-138",
+    relatedProducts: [
 
-        category:
-          "Harvest Tools",
+      "PRD-130",
 
-        badge:
-          "🌾 Harvest Helper",
+      "PRD-121",
 
-        title:
-          "Grain Harvest Tote",
+      "PRD-122",
 
-        description:
-          "A harvest tote helps collect sorghum heads and move harvested grain material during processing. It is useful for backyard growers managing multiple feed crops.",
+      "PRD-128"
 
-        shortDescription:
-          "Collect and transport harvested grain crops.",
+    ],
 
-        tileBadge:
-          "🌾 Harvest Support",
 
-        tileButtonText:
-          "View Product →",
+    purchaseBehavior: {
 
-        bullets: [
 
-          "Useful during harvest",
+      purchaseType:
+        "one-time",
 
-          "Helps transport crop material",
 
-          "Works across multiple grain crops"
+      replacementFrequency:
+        "10+ years",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+      affiliatePotential:
+        "medium"
 
-        url:
-          "https://amzn.to/4yPlDYB",
+    },
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    buyerIntent: {
 
-        recommendationData: {
 
-          recommendedFor: {
+      buyerStages: [
 
-            crops: [
+        "harvesting",
 
-              "CROP-GRAIN-SORGHUM"
+        "processing",
 
-            ],
+        "feed-production",
 
-            planners: [
+        "homestead"
 
-              "feed-crop-planner"
+      ],
 
-            ],
 
-            calculators: [],
+      commonProblems: [
 
-            pageTypes: [
+        "slow-hand-shelling",
 
-              "growing-grain-sorghum-for-chickens",
+        "processing-large-harvests",
 
-              "feed-crop-guide"
+        "kernel-removal"
 
-            ],
+      ],
 
-            cropStages: [
 
-              "harvesting"
+      idealUsers: [
 
-            ],
+        "field-corn-grower",
 
-            useCases: [
+        "feed-crop-grower",
 
-              "harvesting",
+        "homesteader",
 
-              "crop-transport"
+        "backyard-flock-owner"
 
-            ],
+      ]
 
-            tags: [
+    },
 
-              "sorghum",
 
-              "harvest",
+    recommendedTogether: [
 
-              "grain"
+      "PRD-121",
 
-            ],
+      "PRD-122",
 
-            audiences: [
+      "PRD-128"
 
-              "beginner",
+    ],
 
-              "homesteader"
 
-            ]
+    recommendationContexts: [
 
-          },
+      "feed-crop-planner",
 
+      "feed-crop-guide",
 
-          productType:
-            "harvest-tool",
+      "growing-guide",
 
+      "crop-planner"
 
-          productRole:
-            "supporting",
+    ],
 
 
-          universal:
-            false,
+    productRole:
+      "specialized",
 
 
-          universalCategories: [],
+    recommendationTier:
+      "specialty",
 
 
-          priority:
-            65,
+    userCompatibility: {
 
 
-          enabled:
-            true
+      minimumExperience:
+        "beginner",
 
-        }
 
-      },
+      advancedOnly:
+        false,
 
-            "PRD-139": {
 
-        id:
-          "PRD-139",
+      skillRequirements: [],
 
-        category:
-          "Crop Protection",
 
-        badge:
-          "🛡️ Protect Grain Heads",
+      spaceConsiderations: [
 
-        title:
-          "Bird Protection Netting",
+        "small",
 
-        description:
-          "Bird protection netting can help reduce losses from wildlife when sorghum heads begin developing grain. It is most useful in areas with heavy bird pressure.",
+        "medium",
 
-        shortDescription:
-          "Protect developing grain from wildlife damage.",
+        "large"
 
-        tileBadge:
-          "🌾 Crop Protection",
+      ]
 
-        tileButtonText:
-          "View Product →",
+    },
 
-        bullets: [
 
-          "Helps protect developing grain heads",
+    universal:
+      false,
 
-          "Useful where wildlife pressure exists",
 
-          "Reusable across seasons"
+    universalCategories: [],
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+    priority:
+      70,
 
-        url:
-          "https://amzn.to/4fywChp",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    tags: [
 
+      "corn-sheller",
 
-        recommendationData: {
+      "field-corn",
 
-          recommendedFor: {
+      "processing",
 
-            crops: [
+      "harvest",
 
-              "CROP-GRAIN-SORGHUM"
+      "homestead",
 
-            ],
+      "seed-saving"
 
-            planners: [
+    ],
 
-              "feed-crop-planner"
 
-            ],
+    enabled:
+      true
 
-            calculators: [],
 
-            pageTypes: [
+  }
 
-              "growing-grain-sorghum-for-chickens",
 
-              "feed-crop-guide"
+},
 
-            ],
+"PRD-133": {
 
-            cropStages: [
+  id:
+    "PRD-133",
 
-              "growing",
 
-              "harvesting"
+  category:
+    "Harvest & Storage",
 
-            ],
 
-            useCases: [
+  badge:
+    "🧺 Homestead Harvest Helper",
 
-              "crop-protection",
 
-              "wildlife-management"
+  title:
+    "Grain Harvest Tote",
 
-            ],
 
-            tags: [
+  description:
+    "A sturdy grain harvest tote provides a practical way to collect and transport bulky garden harvests such as ears of corn, sunflower heads, grain stalks, and other feed-crop materials. Its larger capacity makes it especially useful for homestead-style harvesting and moving crops from the garden to the drying or processing area.",
 
-              "sorghum",
 
-              "protection",
+  shortDescription:
+    "Collect and transport larger homestead harvests.",
 
-              "birds"
 
-            ],
+  tileBadge:
+    "🌾 Homestead Harvest Pick",
 
-            audiences: [
 
-              "homesteader"
+  tileButtonText:
+    "View Product →",
 
-            ]
 
-          },
+  bullets: [
 
+    "Useful for carrying bulky or high-volume harvests",
 
-          productType:
-            "crop-protection",
+    "Well suited to ears of corn and sunflower heads",
 
+    "Reusable for garden, homestead, and feed-crop work"
 
-          productRole:
-            "optional",
+  ],
 
 
-          universal:
-            false,
+  buttonText:
+    "View Current Price on Amazon →",
 
 
-          universalCategories: [],
+  url:
+    "https://amzn.to/4xl0vrI",
 
 
-          priority:
-            60,
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
 
-          enabled:
-            true
+  recommendationData: {
 
-        }
 
-      },
+    recommendedFor: {
 
-            "PRD-140": {
 
-        id:
-          "PRD-140",
+      crops: [
 
-        category:
-          "Seeds",
+        "CROP-FIELD-CORN",
 
-        badge:
-          "🌾 Crop Starter",
+        "CROP-SUNFLOWER",
 
-        title:
-          "Proso Millet Seed",
+        "CROP-GRAIN-SORGHUM",
 
-        description:
-          "Proso millet seed allows backyard growers to produce a fast-growing grain crop that can provide supplemental feed resources for chickens. Its smaller size and shorter growing season make it a practical option for many backyard gardens.",
+        "CROP-PROSO-MILLET",
 
-        shortDescription:
-          "Grow a fast and productive grain crop for chickens.",
+        "CROP-WHEAT",
 
-        tileBadge:
-          "🌾 Millet Pick",
+        "CROP-BARLEY",
 
-        tileButtonText:
-          "View Product →",
+        "CROP-OATS",
 
-        bullets: [
+        "CROP-AMARANTH"
 
-          "Fast-growing grain crop",
+      ],
 
-          "Good option for smaller growing spaces",
 
-          "Produces harvestable seed for chickens"
+      planners: [
 
-        ],
+        "feed-crop-planner"
 
-        buttonText:
-          "View Current Price on Amazon →",
+      ],
 
-        url:
-          "https://amzn.to/4pPsxJ8",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      calculators: [],
 
 
-        recommendationData: {
+      pageTypes: [
 
-          recommendedFor: {
+        "feed-crop-guide",
 
-            crops: [
+        "growing-guide"
 
-              "CROP-PROSO-MILLET"
+      ],
 
-            ],
 
-            planners: [
+      cropStages: [
 
-              "feed-crop-planner"
+        "harvesting",
 
-            ],
+        "transport"
 
-            calculators: [],
+      ],
 
-            pageTypes: [
 
-              "growing-proso-millet-for-chickens",
+      useCases: [
 
-              "feed-crop-guide"
+        "harvesting",
 
-            ],
+        "bulk-crop-collection",
 
-            cropStages: [
+        "crop-transport",
 
-              "planning",
+        "homestead-harvesting"
 
-              "planting"
+      ],
 
-            ],
 
-            useCases: [
+      tags: [
 
-              "seed-production",
+        "grain-harvest-tote",
 
-              "feed-production"
+        "harvest",
 
-            ],
+        "bulk-collection",
 
-            tags: [
+        "crop-transport",
 
-              "millet",
+        "homestead"
 
-              "grain",
+      ],
 
-              "small-space",
 
-              "feed-crop"
+      audiences: [
 
-            ],
+        "beginner",
 
-            audiences: [
+        "homesteader",
 
-              "beginner",
+        "large-garden",
 
-              "small-flock",
+        "backyard-flock-owner"
 
-              "homesteader"
+      ]
 
-            ]
 
-          },
+    },
 
 
-          productType:
-            "seed",
+    productType:
+      "harvest-container",
 
 
-          productRole:
-            "primary",
+    requiredProducts: [],
 
 
-          universal:
-            false,
+    relatedProducts: [
 
+      "PRD-123",
 
-          universalCategories: [],
+      "PRD-121",
 
+      "PRD-172"
 
-          priority:
-            95,
+    ],
 
 
-          enabled:
-            true
+    purchaseBehavior: {
 
-        }
 
-      },
+      purchaseType:
+        "one-time",
 
-            
 
-            "PRD-142": {
+      replacementFrequency:
+        "5+ years",
 
-        id:
-          "PRD-142",
 
-        category:
-          "Processing Equipment",
+      affiliatePotential:
+        "medium"
 
-        badge:
-          "🌾 Grain Preparation",
+    },
 
-        title:
-          "Small Grain Cleaning Screen",
 
-        description:
-          "A grain cleaning screen helps separate harvested millet seed from plant debris and unwanted material before storage or feeding.",
+    buyerIntent: {
 
-        shortDescription:
-          "Clean harvested millet before storage.",
 
-        tileBadge:
-          "🌾 Advanced Tool",
+      buyerStages: [
 
-        tileButtonText:
-          "View Product →",
+        "harvesting",
 
-        bullets: [
+        "crop-transport",
 
-          "Helps remove debris",
+        "feed-production",
 
-          "Improves storage preparation",
+        "homestead"
 
-          "Useful for multiple grain crops"
+      ],
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+      commonProblems: [
 
-        url:
-          "https://amzn.to/4wBscw8",
+        "carrying-bulky-harvests",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "multiple-harvest-trips",
 
+        "moving-crops-to-storage",
 
-        recommendationData: {
+        "large-volume-crop-collection"
 
-          recommendedFor: {
+      ],
 
-            crops: [
 
-              "CROP-PROSO-MILLET"
+      idealUsers: [
 
-            ],
+        "feed-crop-grower",
 
-            planners: [
+        "homesteader",
 
-              "feed-crop-planner"
+        "large-garden-owner",
 
-            ],
+        "backyard-flock-owner"
 
-            calculators: [],
+      ]
 
-            pageTypes: [
+    },
 
-              "growing-proso-millet-for-chickens",
 
-              "feed-crop-guide"
+    recommendedTogether: [
 
-            ],
+      "PRD-172",
 
-            cropStages: [
+      "PRD-121",
 
-              "processing",
+      "PRD-122"
 
-              "storage"
+    ],
 
-            ],
 
-            useCases: [
+    recommendationContexts: [
 
-              "grain-cleaning",
+      "feed-crop-planner",
 
-              "processing"
+      "feed-crop-guide",
 
-            ],
+      "growing-guide",
 
-            tags: [
+      "crop-planner"
 
-              "millet",
+    ],
 
-              "grain",
 
-              "processing"
+    productRole:
+      "supporting",
 
-            ],
 
-            audiences: [
+    recommendationTier:
+      "situational",
 
-              "advanced",
 
-              "homesteader"
+    userCompatibility: {
 
-            ]
 
-          },
+      minimumExperience:
+        "beginner",
 
 
-          productType:
-            "processing-equipment",
+      advancedOnly:
+        false,
 
 
-          productRole:
-            "optional",
+      skillRequirements: [],
 
 
-          universal:
-            false,
+      spaceConsiderations: [
 
+        "medium",
 
-          universalCategories: [],
+        "large"
 
+      ]
 
-          priority:
-            55,
+    },
 
 
-          enabled:
-            true
+    universal:
+      false,
 
-        }
 
-      },
+    universalCategories: [],
 
 
-            "PRD-145": {
+    priority:
+      70,
 
-        id:
-          "PRD-145",
 
-        category:
-          "Seeds",
+    tags: [
 
-        badge:
-          "🌾 Crop Starter",
+      "grain-harvest-tote",
 
-        title:
-          "Wheat Seed",
+      "harvest",
 
-        description:
-          "Wheat seed allows backyard growers to produce a cool-season grain crop that can provide supplemental feed resources for chickens. Growing wheat at home can support small-scale feed production and homestead sustainability.",
+      "bulk-collection",
 
-        shortDescription:
-          "Grow wheat as a homegrown supplemental feed crop.",
+      "crop-transport",
 
-        tileBadge:
-          "🌾 Wheat Pick",
+      "homestead",
 
-        tileButtonText:
-          "View Product →",
+      "feed-crops"
 
-        bullets: [
+    ],
 
-          "Cool-season grain crop option",
 
-          "Produces storable grain",
+    enabled:
+      true
 
-          "Useful for sustainable feed production"
 
-        ],
+  }
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4qbHllL",
+},
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+"PRD-134": {
 
+  id:
+    "PRD-134",
 
-        recommendationData: {
 
-          recommendedFor: {
+  category:
+    "Crop Protection",
 
-            crops: [
 
-              "CROP-WHEAT"
+  badge:
+    "🛡️ Whole Crop Protection",
 
-            ],
 
-            planners: [
+  title:
+    "Garden Wildlife Protection Netting",
 
-              "feed-crop-planner"
 
-            ],
+  description:
+    "Garden wildlife protection netting provides broad coverage for protecting rows or larger plantings from birds and other wildlife. It is well suited for feed crops that produce exposed grain, seed heads, or ears that become attractive as they mature.",
 
-            calculators: [],
 
-            pageTypes: [
+  shortDescription:
+    "Protect entire rows or garden beds from wildlife.",
 
-              "growing-wheat-for-chickens",
 
-              "feed-crop-guide"
+  tileBadge:
+    "🛡️ Crop Protection",
 
-            ],
 
-            cropStages: [
+  tileButtonText:
+    "View Product →",
 
-              "planning",
 
-              "planting"
+  bullets: [
 
-            ],
+    "Protects entire rows instead of individual plants",
 
-            useCases: [
+    "Reusable for multiple growing seasons",
 
-              "seed-production",
+    "Helps reduce wildlife damage before harvest"
 
-              "feed-production"
+  ],
 
-            ],
 
-            tags: [
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "wheat",
 
-              "grain",
+  url:
+    "https://amzn.to/4fywChp",
 
-              "feed-crop",
 
-              "cool-season"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            audiences: [
+  recommendationData: {
 
-              "beginner",
 
-              "homesteader",
+    recommendedFor: {
 
-              "small-flock"
 
-            ]
+      crops: [
 
-          },
+        "CROP-FIELD-CORN",
 
+        "CROP-AMARANTH",
 
-          productType:
-            "seed",
+        "CROP-GRAIN-SORGHUM",
 
+        "CROP-WHEAT",
 
-          productRole:
-            "primary",
+        "CROP-BARLEY",
 
+        "CROP-OATS",
 
-          universal:
-            false,
+        "CROP-PROSO-MILLET"
 
+      ],
 
-          universalCategories: [],
 
+      planners: [
 
-          priority:
-            95,
+        "feed-crop-planner"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      calculators: [],
 
-      },
 
-            
+      pageTypes: [
 
-            "PRD-147": {
+        "feed-crop-guide",
 
-        id:
-          "PRD-147",
+        "growing-guide"
 
-        category:
-          "Processing Equipment",
+      ],
 
-        badge:
-          "⚙️ Grain Processing",
 
-        title:
-          "Small Grain Threshing Tool",
+      cropStages: [
 
-        description:
-          "A small grain threshing tool helps separate wheat kernels from harvested heads. These tools are most useful for homesteaders processing small harvests manually.",
+        "growing",
 
-        shortDescription:
-          "Process harvested wheat on a small scale.",
+        "harvesting"
 
-        tileBadge:
-          "⚙️ Advanced Option",
+      ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      useCases: [
 
-          "Helps separate grain from heads",
+        "crop-protection",
 
-          "Useful for small harvests",
+        "bird-protection",
 
-          "Supports homegrown feed production"
+        "wildlife-management",
 
-        ],
+        "row-protection"
 
-        buttonText:
-          "View Current Price on Amazon →",
+      ],
 
-        url:
-          "https://amzn.to/4pULURh",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      tags: [
 
+        "wildlife-netting",
 
-        recommendationData: {
+        "row-netting",
 
-          recommendedFor: {
+        "bird-protection",
 
-            crops: [
+        "crop-protection",
 
-              "CROP-WHEAT"
+        "garden"
 
-            ],
+      ],
 
-            planners: [
 
-              "feed-crop-planner"
+      audiences: [
 
-            ],
+        "beginner",
 
-            calculators: [],
+        "homesteader",
 
-            pageTypes: [
+        "backyard-flock-owner"
 
-              "growing-wheat-for-chickens",
+      ]
 
-              "feed-crop-guide"
+    },
 
-            ],
 
-            cropStages: [
+    productType:
+      "row-protection-netting",
 
-              "processing"
 
-            ],
+    requiredProducts: [],
 
-            useCases: [
 
-              "processing",
+    relatedProducts: [
 
-              "grain-preparation"
+      "PRD-130",
 
-            ],
+      "PRD-120",
 
-            tags: [
+      "PRD-125"
 
-              "wheat",
+    ],
 
-              "threshing",
 
-              "processing"
+    purchaseBehavior: {
 
-            ],
 
-            audiences: [
+      purchaseType:
+        "one-time",
 
-              "advanced",
 
-              "homesteader"
+      replacementFrequency:
+        "3-5 years",
 
-            ]
 
-          },
+      affiliatePotential:
+        "medium"
 
+    },
 
-          productType:
-            "processing-equipment",
 
+    buyerIntent: {
 
-          productRole:
-            "optional",
 
+      buyerStages: [
 
-          universal:
-            false,
+        "growing",
 
+        "crop-protection",
 
-          universalCategories: [],
+        "harvesting",
 
+        "homestead"
 
-          priority:
-            55,
+      ],
 
 
-          enabled:
-            true
+      commonProblems: [
 
-        }
+        "bird-damage",
 
-      },
+        "wildlife-damage",
 
-            
+        "crop-loss",
 
-            "PRD-149": {
+        "grain-loss"
 
-        id:
-          "PRD-149",
+      ],
 
-        category:
-          "Processing Equipment",
 
-        badge:
-          "🌾 Grain Preparation",
+      idealUsers: [
 
-        title:
-          "Grain Cleaning Screen",
+        "feed-crop-grower",
 
-        description:
-          "A grain cleaning screen helps remove chaff, debris, and unwanted material from harvested wheat before storage or feeding.",
+        "homesteader",
 
-        shortDescription:
-          "Prepare harvested wheat for storage.",
+        "backyard-flock-owner"
 
-        tileBadge:
-          "🌾 Grain Tool",
+      ]
 
-        tileButtonText:
-          "View Product →",
+    },
 
-        bullets: [
 
-          "Helps clean harvested grain",
+    recommendedTogether: [
 
-          "Improves storage preparation",
+      "PRD-130",
 
-          "Useful for multiple grain crops"
+      "PRD-133"
 
-        ],
+    ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/3TvdOqN",
+    recommendationContexts: [
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      "feed-crop-planner",
 
+      "feed-crop-guide",
 
-        recommendationData: {
+      "growing-guide",
 
-          recommendedFor: {
+      "crop-planner"
 
-            crops: [
+    ],
 
-              "CROP-WHEAT"
 
-            ],
+    productRole:
+      "supporting",
 
-            planners: [
 
-              "feed-crop-planner"
+    recommendationTier:
+      "situational",
 
-            ],
 
-            calculators: [],
+    userCompatibility: {
 
-            pageTypes: [
 
-              "growing-wheat-for-chickens",
+      minimumExperience:
+        "beginner",
 
-              "feed-crop-guide"
 
-            ],
+      advancedOnly:
+        false,
 
-            cropStages: [
 
-              "processing",
+      skillRequirements: [],
 
-              "storage"
 
-            ],
+      spaceConsiderations: [
 
-            useCases: [
+        "medium",
 
-              "grain-cleaning",
+        "large"
 
-              "processing"
+      ]
 
-            ],
+    },
 
-            tags: [
 
-              "wheat",
+    universal:
+      false,
 
-              "grain",
 
-              "cleaning"
+    universalCategories: [],
 
-            ],
 
-            audiences: [
+    priority:
+      75,
 
-              "advanced",
 
-              "homesteader"
+    tags: [
 
-            ]
+      "wildlife-netting",
 
-          },
+      "row-netting",
 
+      "crop-protection",
 
-          productType:
-            "processing-equipment",
+      "bird-protection",
 
+      "grain-crops",
 
-          productRole:
-            "optional",
+      "homestead"
 
+    ],
 
-          universal:
-            false,
 
+    enabled:
+      true
 
-          universalCategories: [],
 
+  }
 
-          priority:
-            60,
 
+},
 
-          enabled:
-            true
+"PRD-135": {
 
-        }
+  id:
+    "PRD-135",
 
-      },
 
-            "PRD-150": {
+  category:
+    "Seeds",
 
-        id:
-          "PRD-150",
 
-        category:
-          "Seeds",
+  badge:
+    "🌾 Crop Starter",
 
-        badge:
-          "🌾 Crop Starter",
 
-        title:
-          "Barley Seed",
+  title:
+    "Grain Sorghum Seed",
 
-        description:
-          "Barley seed allows backyard growers to produce a cool-season grain crop that can provide supplemental feed resources for chickens. Barley can also be used for sprouting and forage production depending on the growing system.",
 
-        shortDescription:
-          "Grow barley for grain, sprouts, and chicken supplementation.",
+  description:
+    "Grain sorghum seed allows backyard growers to produce a drought-tolerant grain crop that performs well in hot, dry climates. Grain sorghum produces compact seed heads that can provide supplemental feed for backyard chickens after proper harvesting and preparation.",
 
-        tileBadge:
-          "🌾 Barley Pick",
 
-        tileButtonText:
-          "View Product →",
+  shortDescription:
+    "Grow a drought-tolerant grain crop for your flock.",
 
-        bullets: [
 
-          "Cool-season grain option",
+  tileBadge:
+    "🌾 Top Sorghum Pick",
 
-          "Useful for grain or sprouting",
 
-          "Stores well when properly dried"
+  tileButtonText:
+    "View Product →",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+  bullets: [
 
-        url:
-          "https://amzn.to/4zbn6J1",
+    "Excellent drought tolerance",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    "Well suited for hot summer climates",
 
+    "Produces compact grain heads for harvest"
 
-        recommendationData: {
+  ],
 
-          recommendedFor: {
 
-            crops: [
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "CROP-BARLEY"
 
-            ],
+  url:
+    "https://amzn.to/4yTs6Si",
 
-            planners: [
 
-              "feed-crop-planner"
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            ],
 
-            calculators: [],
+  recommendationData: {
 
-            pageTypes: [
 
-              "growing-barley-for-chickens",
+    recommendedFor: {
 
-              "feed-crop-guide"
 
-            ],
+      crops: [
 
-            cropStages: [
+        "CROP-GRAIN-SORGHUM"
 
-              "planning",
+      ],
 
-              "planting"
 
-            ],
+      planners: [
 
-            useCases: [
+        "feed-crop-planner"
 
-              "seed-production",
+      ],
 
-              "feed-production",
 
-              "sprouting"
+      calculators: [],
 
-            ],
 
-            tags: [
+      pageTypes: [
 
-              "barley",
+        "growing-grain-sorghum-for-chickens",
 
-              "grain",
+        "feed-crop-guide"
 
-              "sprouting",
+      ],
 
-              "feed-crop"
 
-            ],
+      cropStages: [
 
-            audiences: [
+        "planning",
 
-              "beginner",
+        "planting"
 
-              "homesteader",
+      ],
 
-              "small-flock"
 
-            ]
+      useCases: [
 
-          },
+        "seed-production",
 
+        "grain-production",
 
-          productType:
-            "seed",
+        "feed-production"
 
+      ],
 
-          productRole:
-            "primary",
 
+      tags: [
 
-          universal:
-            false,
+        "grain-sorghum",
 
+        "sorghum-seed",
 
-          universalCategories: [],
+        "grain",
 
+        "feed-crop",
 
-          priority:
-            95,
+        "drought-tolerant"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      audiences: [
 
-      },
+        "beginner",
 
-            
+        "small-flock",
 
-            "PRD-152": {
+        "homesteader",
 
-        id:
-          "PRD-152",
+        "backyard-flock-owner"
 
-        category:
-          "Sprouting Equipment",
+      ]
 
-        badge:
-          "🌱 Fresh Greens Option",
 
-        title:
-          "Barley Sprouting Tray Kit",
+    },
 
-        description:
-          "A barley sprouting tray kit allows growers to produce fresh sprouts as a supplemental feed option for backyard chickens. Sprouting can provide a way to use barley beyond traditional grain feeding.",
 
-        shortDescription:
-          "Grow fresh barley sprouts for chickens.",
+    productType:
+      "seed",
 
-        tileBadge:
-          "🌱 Sprouting Option",
 
-        tileButtonText:
-          "View Product →",
+    requiredProducts: [],
 
-        bullets: [
 
-          "Supports sprouted feed production",
+    relatedProducts: [
 
-          "Useful during limited forage periods",
+      "PRD-137",
 
-          "Provides a fresh supplemental option"
+      "PRD-121",
 
-        ],
+      "PRD-134"
 
-        buttonText:
-          "View Current Price on Amazon →",
+    ],
 
-        url:
-          "https://amzn.to/4z02Tpp",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    purchaseBehavior: {
 
 
-        recommendationData: {
+      purchaseType:
+        "seasonal",
 
-          recommendedFor: {
 
-            crops: [
+      replacementFrequency:
+        "annual",
 
-              "CROP-BARLEY"
 
-            ],
+      affiliatePotential:
+        "high"
 
-            planners: [
+    },
 
-              "feed-crop-planner"
 
-            ],
+    buyerIntent: {
 
-            calculators: [],
 
-            pageTypes: [
+      buyerStages: [
 
-              "growing-barley-for-chickens",
+        "planning",
 
-              "feed-crop-guide"
+        "planting",
 
-            ],
+        "grain-production",
 
-            cropStages: [
+        "feed-production",
 
-              "feeding",
+        "homestead"
 
-              "processing"
+      ],
 
-            ],
 
-            useCases: [
+      commonProblems: [
 
-              "sprouting",
+        "starting-grain-sorghum",
 
-              "fresh-feed-production"
+        "finding-quality-seed",
 
-            ],
+        "growing-feed-grain-in-hot-climates"
 
-            tags: [
+      ],
 
-              "barley",
 
-              "sprouting",
+      idealUsers: [
 
-              "fresh-feed"
+        "beginner-gardener",
 
-            ],
+        "feed-crop-grower",
 
-            audiences: [
+        "homesteader",
 
-              "small-flock",
+        "backyard-flock-owner"
 
-              "homesteader"
+      ]
 
-            ]
+    },
 
-          },
 
+    recommendedTogether: [
 
-          productType:
-            "sprouting-equipment",
+      "PRD-137",
 
+      "PRD-121"
 
-          productRole:
-            "optional",
+    ],
 
 
-          universal:
-            false,
+    recommendationContexts: [
 
+      "feed-crop-planner",
 
-          universalCategories: [],
+      "feed-crop-guide",
 
+      "growing-guide",
 
-          priority:
-            70,
+      "crop-planner"
 
+    ],
 
-          enabled:
-            true
 
-        }
+    productRole:
+      "primary",
 
-      },
 
-            "PRD-153": {
+    recommendationTier:
+      "core",
 
-        id:
-          "PRD-153",
 
-        category:
-          "Harvest Tools",
+    userCompatibility: {
 
-        badge:
-          "🌾 Harvest Helper",
 
-        title:
-          "Grain Harvest Tote",
+      minimumExperience:
+        "beginner",
 
-        description:
-          "A grain harvest tote helps collect barley heads and transport harvested material during drying, cleaning, and storage.",
 
-        shortDescription:
-          "Collect and transport harvested barley.",
+      advancedOnly:
+        false,
 
-        tileBadge:
-          "🌾 Harvest Support",
 
-        tileButtonText:
-          "View Product →",
+      skillRequirements: [],
 
-        bullets: [
 
-          "Useful during harvest",
+      spaceConsiderations: [
 
-          "Helps move harvested grain",
+        "small",
 
-          "Works with multiple grain crops"
+        "medium",
 
-        ],
+        "large"
 
-        buttonText:
-          "View Current Price on Amazon →",
+      ]
 
-        url:
-          "https://amzn.to/4yPlDYB",
+    },
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    universal:
+      false,
 
-        recommendationData: {
 
-          recommendedFor: {
+    universalCategories: [],
 
-            crops: [
 
-              "CROP-BARLEY"
+    priority:
+      100,
 
-            ],
 
-            planners: [
+    tags: [
 
-              "feed-crop-planner"
+      "grain-sorghum",
 
-            ],
+      "sorghum-seed",
 
-            calculators: [],
+      "grain",
 
-            pageTypes: [
+      "feed-crop",
 
-              "growing-barley-for-chickens",
+      "drought-tolerant",
 
-              "feed-crop-guide"
+      "homestead",
 
-            ],
+      "chicken-feed"
 
-            cropStages: [
+    ],
 
-              "harvesting"
 
-            ],
+    enabled:
+      true
 
-            useCases: [
 
-              "harvesting",
+  }
 
-              "crop-transport"
 
-            ],
+},
 
-            tags: [
+"PRD-137": {
 
-              "barley",
+  id:
+    "PRD-137",
 
-              "harvest",
 
-              "grain"
+  category:
+    "Harvest & Processing",
 
-            ],
 
-            audiences: [
+  badge:
+    "🌾 Grain Cleaning",
 
-              "beginner",
 
-              "homesteader"
+  title:
+    "Grain Sorghum Cleaning Screen",
 
-            ]
 
-          },
+  description:
+    "A grain sorghum cleaning screen is designed to help separate grain sorghum seed from chaff, stems, dust, and other field debris after harvest. Selecting a screen with openings appropriate for grain sorghum improves cleaning efficiency while minimizing grain loss.",
 
 
-          productType:
-            "harvest-tool",
+  shortDescription:
+    "Clean harvested grain sorghum before storage.",
 
 
-          productRole:
-            "supporting",
+  tileBadge:
+    "🌾 Processing Tool",
 
 
-          universal:
-            false,
+  tileButtonText:
+    "View Product →",
 
 
-          universalCategories: [],
+  bullets: [
 
+    "Sized specifically for grain sorghum",
 
-          priority:
-            65,
+    "Helps remove chaff and field debris",
 
+    "Improves grain quality before storage"
 
-          enabled:
-            true
+  ],
 
-        }
 
-      },
+  buttonText:
+    "View Current Price on Amazon →",
 
-            "PRD-154": {
 
-        id:
-          "PRD-154",
+  url:
+    "https://amzn.to/45AW67W",
 
-        category:
-          "Processing Equipment",
 
-        badge:
-          "🌾 Grain Preparation",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-        title:
-          "Grain Cleaning Screen",
 
-        description:
-          "A grain cleaning screen helps remove chaff and unwanted material from harvested barley before storage or feeding.",
+  recommendationData: {
 
-        shortDescription:
-          "Prepare harvested barley for storage.",
 
-        tileBadge:
-          "🌾 Grain Tool",
+    recommendedFor: {
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      crops: [
 
-          "Helps clean harvested grain",
+        "CROP-GRAIN-SORGHUM"
 
-          "Improves storage preparation",
+      ],
 
-          "Useful for multiple grain crops"
 
-        ],
+      planners: [
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "feed-crop-planner"
 
-        url:
-          "https://amzn.to/3TvdOqN",
+      ],
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+      calculators: [],
 
-        recommendationData: {
 
-          recommendedFor: {
+      pageTypes: [
 
-            crops: [
+        "growing-grain-sorghum-for-chickens",
 
-              "CROP-BARLEY"
+        "feed-crop-guide"
 
-            ],
+      ],
 
-            planners: [
 
-              "feed-crop-planner"
+      cropStages: [
 
-            ],
+        "processing",
 
-            calculators: [],
+        "storage"
 
-            pageTypes: [
+      ],
 
-              "growing-barley-for-chickens",
 
-              "feed-crop-guide"
+      useCases: [
 
-            ],
+        "grain-cleaning",
 
-            cropStages: [
+        "seed-cleaning",
 
-              "processing",
+        "post-harvest-processing",
 
-              "storage"
+        "storage-preparation"
 
-            ],
+      ],
 
-            useCases: [
 
-              "grain-cleaning",
+      tags: [
 
-              "processing"
+        "grain-sorghum",
 
-            ],
+        "cleaning-screen",
 
-            tags: [
+        "grain-cleaning",
 
-              "barley",
+        "processing"
 
-              "grain",
+      ],
 
-              "cleaning"
 
-            ],
+      audiences: [
 
-            audiences: [
+        "intermediate",
 
-              "advanced",
+        "advanced",
 
-              "homesteader"
+        "homesteader"
 
-            ]
+      ]
 
-          },
 
+    },
 
-          productType:
-            "processing-equipment",
 
+    productType:
+      "grain-cleaning-screen",
 
-          productRole:
-            "optional",
 
+    requiredProducts: [
 
-          universal:
-            false,
+      "PRD-135"
 
+    ],
 
-          universalCategories: [],
 
+    relatedProducts: [
 
-          priority:
-            60,
+      "PRD-121",
 
+      "PRD-122",
 
-          enabled:
-            true
+      "PRD-128"
 
-        }
+    ],
 
-      },
 
-            "PRD-155": {
+    purchaseBehavior: {
 
-        id:
-          "PRD-155",
 
-        category:
-          "Seeds",
+      purchaseType:
+        "one-time",
 
-        badge:
-          "🌾 Crop Starter",
 
-        title:
-          "Oat Seed",
+      replacementFrequency:
+        "10+ years",
 
-        description:
-          "Oat seed allows backyard growers to produce a cool-season crop that can provide supplemental grain, sprouts, or forage options for chickens. Oats are adaptable and useful in many homestead growing systems.",
 
-        shortDescription:
-          "Grow oats for grain, sprouts, and supplemental feed.",
+      affiliatePotential:
+        "low"
 
-        tileBadge:
-          "🌾 Oat Pick",
+    },
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+    buyerIntent: {
 
-          "Cool-season crop option",
 
-          "Useful for grain or sprouting",
+      buyerStages: [
 
-          "Works well in diversified gardens"
+        "harvesting",
 
-        ],
+        "processing",
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "storage",
 
-        url:
-          "https://amzn.to/4hawc1U",
+        "feed-production",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "homestead"
 
+      ],
 
-        recommendationData: {
 
-          recommendedFor: {
+      commonProblems: [
 
-            crops: [
+        "dirty-grain",
 
-              "CROP-OATS"
+        "excess-chaff",
 
-            ],
+        "poor-storage-quality",
 
-            planners: [
+        "seed-cleaning"
 
-              "feed-crop-planner"
+      ],
 
-            ],
 
-            calculators: [],
+      idealUsers: [
 
-            pageTypes: [
+        "grain-sorghum-grower",
 
-              "growing-oats-for-chickens",
+        "feed-crop-grower",
 
-              "feed-crop-guide"
+        "homesteader"
 
-            ],
+      ]
 
-            cropStages: [
+    },
 
-              "planning",
 
-              "planting"
+    recommendedTogether: [
 
-            ],
+      "PRD-121",
 
-            useCases: [
+      "PRD-122",
 
-              "seed-production",
+      "PRD-128"
 
-              "feed-production",
+    ],
 
-              "sprouting"
 
-            ],
+    recommendationContexts: [
 
-            tags: [
+      "feed-crop-planner",
 
-              "oats",
+      "feed-crop-guide",
 
-              "grain",
+      "growing-guide",
 
-              "sprouting",
+      "crop-planner"
 
-              "feed-crop"
+    ],
 
-            ],
 
-            audiences: [
+    productRole:
+      "specialized",
 
-              "beginner",
 
-              "small-flock",
+    recommendationTier:
+      "specialty",
 
-              "homesteader"
 
-            ]
+    userCompatibility: {
 
-          },
 
+      minimumExperience:
+        "intermediate",
 
-          productType:
-            "seed",
 
+      advancedOnly:
+        false,
 
-          productRole:
-            "primary",
 
+      skillRequirements: [
 
-          universal:
-            false,
+        "basic-post-harvest-processing"
 
+      ],
 
-          universalCategories: [],
 
+      spaceConsiderations: [
 
-          priority:
-            95,
+        "small",
 
+        "medium",
 
-          enabled:
-            true
+        "large"
 
-        }
+      ]
 
-      },
+    },
 
-            
 
-            "PRD-157": {
+    universal:
+      false,
 
-        id:
-          "PRD-157",
 
-        category:
-          "Sprouting Equipment",
+    universalCategories: [],
 
-        badge:
-          "🌱 Fresh Feed Option",
 
-        title:
-          "Oat Sprouting Tray Kit",
+    priority:
+      65,
 
-        description:
-          "A sprouting tray kit allows growers to produce fresh oat sprouts as a supplemental feed option for backyard chickens. Sprouting can be especially useful when outdoor forage is limited.",
 
-        shortDescription:
-          "Grow fresh oat sprouts for chickens.",
+    tags: [
 
-        tileBadge:
-          "🌱 Sprouting Option",
+      "grain-sorghum",
 
-        tileButtonText:
-          "View Product →",
+      "cleaning-screen",
 
-        bullets: [
+      "grain-cleaning",
 
-          "Provides fresh supplemental feed",
+      "processing",
 
-          "Useful during limited forage periods",
+      "post-harvest",
 
-          "Works well for small flocks"
+      "homestead"
 
-        ],
+    ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4z02Tpp",
+    enabled:
+      true
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  }
 
-        recommendationData: {
 
-          recommendedFor: {
+},
 
-            crops: [
+"PRD-138": {
 
-              "CROP-OATS"
+  id:
+    "PRD-138",
 
-            ],
 
-            planners: [
+  category:
+    "Harvest Tools",
 
-              "feed-crop-planner"
 
-            ],
+  badge:
+    "🌾 Hands-Free Harvesting",
 
-            calculators: [],
 
-            pageTypes: [
+  title:
+    "Harvest Apron",
 
-              "growing-oats-for-chickens",
 
-              "feed-crop-guide"
+  description:
+    "A harvest apron provides a convenient hands-free way to collect grain heads, seed heads, pods, and other harvested crops while working through the garden. The large front pouch keeps both hands available for cutting and harvesting, making it especially useful for grain crops grown in rows.",
 
-            ],
 
-            cropStages: [
+  shortDescription:
+    "Harvest grain crops while keeping both hands free.",
 
-              "feeding",
 
-              "processing"
+  tileBadge:
+    "🌾 Harvest Favorite",
 
-            ],
 
-            useCases: [
+  tileButtonText:
+    "View Product →",
 
-              "sprouting",
 
-              "fresh-feed-production"
+  bullets: [
 
-            ],
+    "Keeps both hands free during harvest",
 
-            tags: [
+    "Large pouch holds harvested grain heads and pods",
 
-              "oats",
+    "Comfortable for harvesting long crop rows"
 
-              "sprouting",
+  ],
 
-              "fresh-feed"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            audiences: [
 
-              "small-flock",
+  url:
+    "https://amzn.to/4yPlDYB",
 
-              "homesteader"
 
-            ]
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-          },
 
+  recommendationData: {
 
-          productType:
-            "sprouting-equipment",
 
+    recommendedFor: {
 
-          productRole:
-            "optional",
 
+      crops: [
 
-          universal:
-            false,
+        "CROP-GRAIN-SORGHUM",
 
+        "CROP-WHEAT",
 
-          universalCategories: [],
+        "CROP-BARLEY",
 
+        "CROP-OATS",
 
-          priority:
-            70,
+        "CROP-AMARANTH"
 
+      ],
 
-          enabled:
-            true
 
-        }
+      planners: [
 
-      },
+        "feed-crop-planner"
 
-            "PRD-158": {
+      ],
 
-        id:
-          "PRD-158",
 
-        category:
-          "Harvest Tools",
+      calculators: [],
 
-        badge:
-          "🌾 Harvest Helper",
 
-        title:
-          "Grain Harvest Tote",
+      pageTypes: [
 
-        description:
-          "A grain harvest tote helps collect oat heads and transport harvested material during drying, cleaning, and storage.",
+        "feed-crop-guide",
 
-        shortDescription:
-          "Collect and transport harvested oats.",
+        "growing-guide"
 
-        tileBadge:
-          "🌾 Harvest Support",
+      ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      cropStages: [
 
-          "Useful during harvest",
+        "harvesting"
 
-          "Helps move harvested grain",
+      ],
 
-          "Works with multiple grain crops"
 
-        ],
+      useCases: [
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "grain-harvesting",
 
-        url:
-          "https://amzn.to/4yPlDYB",
+        "hands-free-harvesting",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "crop-collection",
 
+        "row-harvesting"
 
-        recommendationData: {
+      ],
 
-          recommendedFor: {
 
-            crops: [
+      tags: [
 
-              "CROP-OATS"
+        "harvest-apron",
 
-            ],
+        "grain-harvest",
 
-            planners: [
+        "hands-free",
 
-              "feed-crop-planner"
+        "row-crops",
 
-            ],
+        "homestead"
 
-            calculators: [],
+      ],
 
-            pageTypes: [
 
-              "growing-oats-for-chickens",
+      audiences: [
 
-              "feed-crop-guide"
+        "beginner",
 
-            ],
+        "homesteader",
 
-            cropStages: [
+        "backyard-flock-owner"
 
-              "harvesting"
+      ]
 
-            ],
+    },
 
-            useCases: [
 
-              "harvesting",
+    productType:
+      "harvest-apron",
 
-              "crop-transport"
 
-            ],
+    requiredProducts: [],
 
-            tags: [
 
-              "oats",
+    relatedProducts: [
 
-              "harvest",
+      "PRD-172",
 
-              "grain"
+      "PRD-133",
 
-            ],
+      "PRD-121"
 
-            audiences: [
+    ],
 
-              "beginner",
 
-              "homesteader"
+    purchaseBehavior: {
 
-            ]
 
-          },
+      purchaseType:
+        "one-time",
 
 
-          productType:
-            "harvest-tool",
+      replacementFrequency:
+        "5+ years",
 
 
-          productRole:
-            "supporting",
+      affiliatePotential:
+        "medium"
 
+    },
 
-          universal:
-            false,
 
+    buyerIntent: {
 
-          universalCategories: [],
 
+      buyerStages: [
 
-          priority:
-            65,
+        "harvesting",
 
+        "crop-collection",
 
-          enabled:
-            true
+        "feed-production",
 
-        }
+        "homestead"
 
-      },
+      ],
 
-            "PRD-159": {
 
-        id:
-          "PRD-159",
+      commonProblems: [
 
-        category:
-          "Processing Equipment",
+        "full-hands",
 
-        badge:
-          "🌾 Grain Preparation",
+        "dropping-harvest",
 
-        title:
-          "Grain Cleaning Screen",
+        "repeated-trips",
 
-        description:
-          "A grain cleaning screen helps remove chaff and debris from harvested oats before storage or feeding.",
+        "slow-harvesting"
 
-        shortDescription:
-          "Prepare harvested oats for storage.",
+      ],
 
-        tileBadge:
-          "🌾 Grain Tool",
 
-        tileButtonText:
-          "View Product →",
+      idealUsers: [
 
-        bullets: [
+        "grain-grower",
 
-          "Helps clean harvested grain",
+        "feed-crop-grower",
 
-          "Improves storage preparation",
+        "homesteader",
 
-          "Useful for multiple grain crops"
+        "backyard-flock-owner"
 
-        ],
+      ]
 
-        buttonText:
-          "View Current Price on Amazon →",
+    },
 
-        url:
-          "https://amzn.to/3TvdOqN",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    recommendedTogether: [
 
+      "PRD-172",
 
-        recommendationData: {
+      "PRD-133",
 
-          recommendedFor: {
+      "PRD-121"
 
-            crops: [
+    ],
 
-              "CROP-OATS"
 
-            ],
+    recommendationContexts: [
 
-            planners: [
+      "feed-crop-planner",
 
-              "feed-crop-planner"
+      "feed-crop-guide",
 
-            ],
+      "growing-guide",
 
-            calculators: [],
+      "crop-planner"
 
-            pageTypes: [
+    ],
 
-              "growing-oats-for-chickens",
 
-              "feed-crop-guide"
+    productRole:
+      "supporting",
 
-            ],
 
-            cropStages: [
+    recommendationTier:
+      "situational",
 
-              "processing",
 
-              "storage"
+    userCompatibility: {
 
-            ],
 
-            useCases: [
+      minimumExperience:
+        "beginner",
 
-              "grain-cleaning",
 
-              "processing"
+      advancedOnly:
+        false,
 
-            ],
 
-            tags: [
+      skillRequirements: [],
 
-              "oats",
 
-              "grain",
+      spaceConsiderations: [
 
-              "cleaning"
+        "small",
 
-            ],
+        "medium",
 
-            audiences: [
+        "large"
 
-              "advanced",
+      ]
 
-              "homesteader"
+    },
 
-            ]
 
-          },
+    universal:
+      false,
 
 
-          productType:
-            "processing-equipment",
+    universalCategories: [],
 
 
-          productRole:
-            "optional",
+    priority:
+      70,
 
 
-          universal:
-            false,
+    tags: [
 
+      "harvest-apron",
 
-          universalCategories: [],
+      "grain-harvest",
 
+      "hands-free",
 
-          priority:
-            60,
+      "row-crops",
 
+      "homestead",
 
-          enabled:
-            true
+      "feed-crops"
 
-        }
+    ],
 
-      },
 
-            "PRD-160": {
+    enabled:
+      true
 
-        id:
-          "PRD-160",
 
-        category:
-          "Seeds",
+  }
 
-        badge:
-          "🌱 Crop Starter",
 
-        title:
-          "Buckwheat Seed",
+},
 
-        description:
-          "Buckwheat seed allows backyard growers to establish a fast-growing crop that can provide supplemental chicken feed while also improving garden diversity. Buckwheat is useful as both a seed crop and a soil-supporting plant.",
+"PRD-140": {
 
-        shortDescription:
-          "Grow buckwheat for seed, chickens, and soil support.",
+  id:
+    "PRD-140",
 
-        tileBadge:
-          "🌱 Buckwheat Pick",
 
-        tileButtonText:
-          "View Product →",
+  category:
+    "Seeds",
 
-        bullets: [
 
-          "Fast-growing warm-season crop",
+  badge:
+    "🌾 Crop Starter",
 
-          "Produces seed for chicken supplementation",
 
-          "Useful for improving garden diversity"
+  title:
+    "Proso Millet Seed",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+  description:
+    "Proso millet seed allows backyard growers to produce a fast-growing, warm-season grain crop for supplemental chicken feed. Its relatively short growing season and compact grain heads can make it a practical option for smaller homestead gardens and areas with limited rainfall.",
 
-        url:
-          "https://amzn.to/4pXR66Y",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+  shortDescription:
+    "Grow a fast-maturing grain crop for your flock.",
 
 
-        recommendationData: {
+  tileBadge:
+    "🌾 Top Millet Pick",
 
-          recommendedFor: {
 
-            crops: [
+  tileButtonText:
+    "View Product →",
 
-              "CROP-BUCKWHEAT"
 
-            ],
+  bullets: [
 
-            planners: [
+    "Fast-growing warm-season grain crop",
 
-              "feed-crop-planner"
+    "Can work well in smaller growing areas",
 
-            ],
+    "Produces harvestable seed for supplemental flock feed"
 
-            calculators: [],
+  ],
 
-            pageTypes: [
 
-              "growing-buckwheat-for-chickens",
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "feed-crop-guide"
 
-            ],
+  url:
+    "https://amzn.to/4pPsxJ8",
 
-            cropStages: [
 
-              "planning",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-              "planting"
 
-            ],
+  recommendationData: {
 
-            useCases: [
 
-              "seed-production",
+    recommendedFor: {
 
-              "feed-production",
 
-              "soil-improvement"
+      crops: [
 
-            ],
+        "CROP-PROSO-MILLET"
 
-            tags: [
+      ],
 
-              "buckwheat",
 
-              "seed",
+      planners: [
 
-              "cover-crop",
+        "feed-crop-planner"
 
-              "feed-crop"
+      ],
 
-            ],
 
-            audiences: [
+      calculators: [],
 
-              "beginner",
 
-              "homesteader",
+      pageTypes: [
 
-              "small-flock"
+        "growing-proso-millet-for-chickens",
 
-            ]
+        "feed-crop-guide"
 
-          },
+      ],
 
 
-          productType:
-            "seed",
+      cropStages: [
 
+        "planning",
 
-          productRole:
-            "primary",
+        "planting"
 
+      ],
 
-          universal:
-            false,
 
+      useCases: [
 
-          universalCategories: [],
+        "seed-production",
 
+        "grain-production",
 
-          priority:
-            95,
+        "feed-production",
 
+        "small-space-grain-production"
 
-          enabled:
-            true
+      ],
 
-        }
 
-      },
+      tags: [
 
-            
+        "proso-millet",
 
-            "PRD-162": {
+        "millet-seed",
 
-        id:
-          "PRD-162",
+        "grain",
 
-        category:
-          "Garden Tools",
+        "feed-crop",
 
-        badge:
-          "🌱 Weed Control",
+        "short-season-crop"
 
-        title:
-          "Stirrup Hoe",
+      ],
 
-        description:
-          "A stirrup hoe (also called an oscillating hoe) slices weeds just below the soil surface with minimal soil disturbance. It is ideal for maintaining feed crop rows, reducing weed competition, and managing cover crops between plantings.",
-        
-        shortDescription:
-          "Quickly remove weeds with minimal soil disturbance.",
 
-        tileBadge:
-          "🌱 Advanced Garden Tool",
+      audiences: [
 
-        tileButtonText:
-          "View Product →",
+        "beginner",
 
-        bullets: [
+        "small-flock",
 
-          "Cuts weeds just below the soil surface",
+        "homesteader",
 
-          "Excellent for maintaining feed crop rows",
+        "backyard-flock-owner"
 
-          "Helps manage cover crops between plantings"
+      ]
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+    },
 
-        url:
-          "https://amzn.to/45A1vvV",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    productType:
+      "seed",
 
 
-        recommendationData: {
+    requiredProducts: [],
 
-          recommendedFor: {
 
-            crops: [
+    relatedProducts: [
 
-              "CROP-BUCKWHEAT"
+      "PRD-142",
 
-            ],
+      "PRD-121",
 
-            planners: [
+      "PRD-122",
 
-              "feed-crop-planner"
+      "PRD-134",
 
-            ],
+      "PRD-138"
 
-            calculators: [],
+    ],
 
-            pageTypes: [
 
-              "growing-buckwheat-for-chickens",
+    purchaseBehavior: {
 
-              "feed-crop-guide"
 
-            ],
+      purchaseType:
+        "seasonal",
 
-            cropStages: [
 
-              "growing"
+      replacementFrequency:
+        "annual",
 
-            ],
 
-            useCases: [
+      affiliatePotential:
+        "high"
 
-              "cover-crop-management",
+    },
 
-              "soil-improvement"
 
-            ],
+    buyerIntent: {
 
-            tags: [
 
-              "buckwheat",
+      buyerStages: [
 
-              "cover-crop",
+        "planning",
 
-              "soil"
+        "planting",
 
-            ],
+        "grain-production",
 
-            audiences: [
+        "feed-production",
 
-              "homesteader",
+        "homestead"
 
-              "advanced"
+      ],
 
-            ]
 
-          },
+      commonProblems: [
 
+        "starting-proso-millet",
 
-          productType:
-            "garden-tool",
+        "finding-quality-millet-seed",
 
+        "limited-growing-space",
 
-          productRole:
-            "optional",
+        "short-growing-season",
 
+        "producing-homegrown-grain"
 
-          universal:
-            false,
+      ],
 
 
-          universalCategories: [],
+      idealUsers: [
 
+        "beginner-gardener",
 
-          priority:
-            45,
+        "small-space-grower",
 
+        "feed-crop-grower",
 
-          enabled:
-            true
+        "homesteader",
 
-        }
+        "backyard-flock-owner"
 
-      },
+      ]
 
-            "PRD-163": {
 
-        id:
-          "PRD-163",
+    },
 
-        category:
-          "Seeds",
 
-        badge:
-          "🐝 Support Garden Diversity",
+    recommendedTogether: [
 
-        title:
-          "Pollinator Garden Seed Mix",
+      "PRD-142",
 
-        description:
-          "Pollinator-friendly seed mixes can complement buckwheat plantings by supporting beneficial insects and improving overall garden biodiversity.",
+      "PRD-138",
 
-        shortDescription:
-          "Support pollinators around your chicken feed crops.",
+      "PRD-121"
 
-        tileBadge:
-          "🐝 Ecosystem Support",
+    ],
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+    recommendationContexts: [
 
-          "Supports beneficial insects",
+      "feed-crop-planner",
 
-          "Improves garden diversity",
+      "feed-crop-guide",
 
-          "Pairs well with homestead gardens"
+      "growing-guide",
 
-        ],
+      "crop-planner"
 
-        buttonText:
-          "View Current Price on Amazon →",
+    ],
 
-        url:
-          "https://amzn.to/4yTy6u8",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    productRole:
+      "primary",
 
 
-        recommendationData: {
+    recommendationTier:
+      "core",
 
-          recommendedFor: {
 
-            crops: [
+    userCompatibility: {
 
-              "CROP-BUCKWHEAT"
 
-            ],
+      minimumExperience:
+        "beginner",
 
-            planners: [
 
-              "feed-crop-planner"
+      advancedOnly:
+        false,
 
-            ],
 
-            calculators: [],
+      skillRequirements: [],
 
-            pageTypes: [
 
-              "growing-buckwheat-for-chickens",
+      spaceConsiderations: [
 
-              "feed-crop-guide"
+        "small",
 
-            ],
+        "medium",
 
-            cropStages: [
+        "large"
 
-              "planning",
+      ]
 
-              "planting"
 
-            ],
+    },
 
-            useCases: [
 
-              "pollinator-support",
+    universal:
+      false,
 
-              "garden-diversity"
 
-            ],
+    universalCategories: [],
 
-            tags: [
 
-              "buckwheat",
+    priority:
+      100,
 
-              "pollinator",
 
-              "garden"
+    tags: [
 
-            ],
+      "proso-millet",
 
-            audiences: [
+      "millet-seed",
 
-              "homesteader"
+      "grain",
 
-            ]
+      "feed-crop",
 
-          },
+      "short-season-crop",
 
+      "small-space-grain",
 
-          productType:
-            "seed",
+      "homestead",
 
+      "chicken-feed"
 
-          productRole:
-            "optional",
+    ],
 
 
-          universal:
-            false,
+    enabled:
+      true
 
 
-          universalCategories: [],
+  }
 
 
-          priority:
-            50,
+},
 
+"PRD-142": {
 
-          enabled:
-            true
+  id:
+    "PRD-142",
 
-        }
 
-      },
+  category:
+    "Harvest & Processing",
 
-            "PRD-164": {
 
-        id:
-          "PRD-164",
+  badge:
+    "🌾 Millet Grain Cleaning",
 
-        category:
-          "Harvest Tools",
 
-        badge:
-          "🌱 Harvest Helper",
+  title:
+    "Proso Millet Cleaning Screen",
 
-        title:
-          "Harvest Collection Apron",
 
-        description:
-          "A harvest container helps collect buckwheat seed heads and move harvested material during drying and storage.",
+  description:
+    "A Proso millet cleaning screen helps separate harvested millet seed from chaff, stems, dust, and other field debris. Using a screen with openings suited to the small size of Proso millet helps improve cleaning efficiency while reducing seed loss before storage or feeding.",
 
-        shortDescription:
-          "Collect and transport harvested buckwheat.",
 
-        tileBadge:
-          "🌱 Harvest Support",
+  shortDescription:
+    "Clean harvested Proso millet before storage.",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+  tileBadge:
+    "🌾 Processing Tool",
 
-          "Useful during harvest",
 
-          "Helps transport seed material",
+  tileButtonText:
+    "View Product →",
 
-          "Works for multiple crops"
 
-        ],
+  bullets: [
 
-        buttonText:
-          "View Current Price on Amazon →",
+    "Sized for small Proso millet seed",
 
-        url:
-          "https://amzn.to/4yPlDYB",
+    "Helps remove chaff and field debris",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    "Improves grain quality before storage"
 
+  ],
 
-        recommendationData: {
 
-          recommendedFor: {
+  buttonText:
+    "View Current Price on Amazon →",
 
-            crops: [
 
-              "CROP-BUCKWHEAT"
+  url:
+    "https://amzn.to/4wBscw8",
 
-            ],
 
-            planners: [
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-              "feed-crop-planner"
 
-            ],
+  recommendationData: {
 
-            calculators: [],
 
-            pageTypes: [
+    recommendedFor: {
 
-              "growing-buckwheat-for-chickens",
 
-              "feed-crop-guide"
+      crops: [
 
-            ],
+        "CROP-PROSO-MILLET"
 
-            cropStages: [
+      ],
 
-              "harvesting"
 
-            ],
+      planners: [
 
-            useCases: [
+        "feed-crop-planner"
 
-              "harvesting",
+      ],
 
-              "crop-transport"
 
-            ],
+      calculators: [],
 
-            tags: [
 
-              "buckwheat",
+      pageTypes: [
 
-              "harvest"
+        "growing-proso-millet-for-chickens",
 
-            ],
+        "feed-crop-guide"
 
-            audiences: [
+      ],
 
-              "beginner",
 
-              "homesteader"
+      cropStages: [
 
-            ]
+        "processing",
 
-          },
+        "storage"
 
+      ],
 
-          productType:
-            "harvest-tool",
 
+      useCases: [
 
-          productRole:
-            "supporting",
+        "grain-cleaning",
 
+        "seed-cleaning",
 
-          universal:
-            false,
+        "post-harvest-processing",
 
+        "storage-preparation"
 
-          universalCategories: [],
+      ],
 
 
-          priority:
-            60,
+      tags: [
 
+        "proso-millet",
 
-          enabled:
-            true
+        "millet-cleaning-screen",
 
-        }
+        "small-seed-cleaning",
 
-      },
+        "grain-cleaning",
 
-            "PRD-165": {
+        "processing"
 
-        id:
-          "PRD-165",
+      ],
 
-        category:
-          "Planting Stock",
 
-        badge:
-          "🌻 Perennial Crop Starter",
+      audiences: [
 
-        title:
-          "Jerusalem Artichoke Tubers",
+        "intermediate",
 
-        description:
-          "Jerusalem artichoke tubers are used as planting stock for establishing a perennial crop. Once established, Jerusalem artichokes can provide a recurring source of biomass and supplemental feed resources for backyard chicken systems.",
+        "advanced",
 
-        shortDescription:
-          "Plant perennial Jerusalem artichokes for long-term production.",
+        "homesteader",
 
-        tileBadge:
-          "🌻 Sunchoke Pick",
+        "backyard-flock-owner"
 
-        tileButtonText:
-          "View Product →",
+      ]
 
-        bullets: [
 
-          "Establishes a perennial feed crop",
+    },
 
-          "Returns growth year after year",
 
-          "Useful for homestead systems"
+    productType:
+      "grain-cleaning-screen",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+    requiredProducts: [
 
-        url:
-          "https://amzn.to/4w175Ci",
+      "PRD-140"
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    ],
 
 
-        recommendationData: {
+    relatedProducts: [
 
-          recommendedFor: {
+      "PRD-121",
 
-            crops: [
+      "PRD-122",
 
-              "CROP-JERUSALEM-ARTICHOKE"
+      "PRD-128",
 
-            ],
+      "PRD-138"
 
-            planners: [
+    ],
 
-              "feed-crop-planner"
 
-            ],
+    purchaseBehavior: {
 
-            calculators: [],
 
-            pageTypes: [
+      purchaseType:
+        "one-time",
 
-              "growing-jerusalem-artichokes-for-chickens",
 
-              "feed-crop-guide"
+      replacementFrequency:
+        "10+ years",
 
-            ],
 
-            cropStages: [
+      affiliatePotential:
+        "low"
 
-              "planning",
+    },
 
-              "planting"
 
-            ],
+    buyerIntent: {
 
-            useCases: [
 
-              "perennial-establishment",
+      buyerStages: [
 
-              "root-production"
+        "harvesting",
 
-            ],
+        "processing",
 
-            tags: [
+        "storage",
 
-              "jerusalem-artichoke",
+        "feed-production",
 
-              "sunchoke",
+        "homestead"
 
-              "perennial",
+      ],
 
-              "tubers"
 
-            ],
+      commonProblems: [
 
-            audiences: [
+        "dirty-millet-seed",
 
-              "homesteader",
+        "excess-chaff",
 
-              "small-flock"
+        "small-seed-loss",
 
-            ]
+        "poor-storage-preparation"
 
-          },
+      ],
 
 
-          productType:
-            "planting-stock",
+      idealUsers: [
 
+        "proso-millet-grower",
 
-          productRole:
-            "primary",
+        "feed-crop-grower",
 
+        "homesteader",
 
-          universal:
-            false,
+        "backyard-flock-owner"
 
+      ]
 
-          universalCategories: [],
 
+    },
 
-          priority:
-            95,
 
+    recommendedTogether: [
 
-          enabled:
-            true
+      "PRD-121",
 
-        }
+      "PRD-122",
 
-      },
+      "PRD-138"
 
-            
+    ],
 
-            "PRD-167": {
 
-        id:
-          "PRD-167",
+    recommendationContexts: [
 
-        category:
-          "Harvest Tools",
+      "feed-crop-planner",
 
-        badge:
-          "🌻 Root Harvest Tool",
+      "feed-crop-guide",
 
-        title:
-          "Root Harvest Fork",
+      "growing-guide",
 
-        description:
-          "A root harvest fork helps loosen soil and remove Jerusalem artichoke tubers during harvest while reducing damage to the underground crop.",
+      "crop-planner"
 
-        shortDescription:
-          "Harvest underground Jerusalem artichoke tubers.",
+    ],
 
-        tileBadge:
-          "🌻 Harvest Tool",
 
-        tileButtonText:
-          "View Product →",
+    productRole:
+      "specialized",
 
-        bullets: [
 
-          "Designed for root crops",
+    recommendationTier:
+      "specialty",
 
-          "Helps loosen compact soil",
 
-          "Useful for perennial harvests"
+    userCompatibility: {
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+      minimumExperience:
+        "intermediate",
 
-        url:
-          "https://amzn.to/4pNEtek",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      advancedOnly:
+        false,
 
 
-        recommendationData: {
+      skillRequirements: [
 
-          recommendedFor: {
+        "basic-post-harvest-processing"
 
-            crops: [
+      ],
 
-              "CROP-JERUSALEM-ARTICHOKE"
 
-            ],
+      spaceConsiderations: [
 
-            planners: [
+        "small",
 
-              "feed-crop-planner"
+        "medium",
 
-            ],
+        "large"
 
-            calculators: [],
+      ]
 
-            pageTypes: [
 
-              "growing-jerusalem-artichokes-for-chickens",
+    },
 
-              "feed-crop-guide"
 
-            ],
+    universal:
+      false,
 
-            cropStages: [
 
-              "harvesting"
+    universalCategories: [],
 
-            ],
 
-            useCases: [
+    priority:
+      65,
 
-              "root-harvesting",
 
-              "crop-maintenance"
+    tags: [
 
-            ],
+      "proso-millet",
 
-            tags: [
+      "millet-cleaning-screen",
 
-              "jerusalem-artichoke",
+      "small-seed-cleaning",
 
-              "root-crop",
+      "grain-cleaning",
 
-              "harvest"
+      "post-harvest",
 
-            ],
+      "homestead"
 
-            audiences: [
+    ],
 
-              "beginner",
 
-              "homesteader"
+    enabled:
+      true
 
-            ]
 
-          },
+  }
 
 
-          productType:
-            "harvest-tool",
+},
 
+"PRD-145": {
 
-          productRole:
-            "supporting",
+  id:
+    "PRD-145",
 
 
-          universal:
-            false,
+  category:
+    "Seeds",
 
 
-          universalCategories: [],
+  badge:
+    "🌾 Crop Starter",
 
 
-          priority:
-            75,
+  title:
+    "Wheat Seed",
 
 
-          enabled:
-            true
+  description:
+    "Wheat seed allows backyard growers to produce a cool-season grain crop for supplemental chicken feed and small-scale homestead grain production. Properly harvested and dried wheat can be stored for later use or incorporated into custom feed preparations.",
 
-        }
 
-      },
+  shortDescription:
+    "Grow a cool-season grain crop for your flock.",
 
-            "PRD-168": {
 
-        id:
-          "PRD-168",
+  tileBadge:
+    "🌾 Top Wheat Pick",
 
-        category:
-          "Storage",
 
-        badge:
-          "🌻 Protect Your Harvest",
+  tileButtonText:
+    "View Product →",
 
-        title:
-          "Root Vegetable Storage Container",
 
-        description:
-          "Storage containers help protect harvested Jerusalem artichoke tubers and other root crops after harvest. Proper storage can help maintain quality before feeding or replanting.",
+  bullets: [
 
-        shortDescription:
-          "Store harvested root crops properly.",
+    "Produces a dependable cool-season grain crop",
 
-        tileBadge:
-          "🌻 Storage Support",
+    "Can support small-scale homegrown feed production",
 
-        tileButtonText:
-          "View Product →",
+    "Stores well after proper harvesting and drying"
 
-        bullets: [
+  ],
 
-          "Protects harvested tubers",
 
-          "Supports winter storage",
+  buttonText:
+    "View Current Price on Amazon →",
 
-          "Useful for root crops"
 
-        ],
+  url:
+    "https://amzn.to/4qbHllL",
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4hau4r2",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+  recommendationData: {
 
-        recommendationData: {
 
-          recommendedFor: {
+    recommendedFor: {
 
-            crops: [
 
-              "CROP-JERUSALEM-ARTICHOKE"
+      crops: [
 
-            ],
+        "CROP-WHEAT"
 
-            planners: [
+      ],
 
-              "feed-crop-planner"
 
-            ],
+      planners: [
 
-            calculators: [],
+        "feed-crop-planner"
 
-            pageTypes: [
+      ],
 
-              "growing-jerusalem-artichokes-for-chickens",
 
-              "feed-crop-guide"
+      calculators: [],
 
-            ],
 
-            cropStages: [
+      pageTypes: [
 
-              "harvesting",
+        "growing-wheat-for-chickens",
 
-              "storage"
+        "feed-crop-guide"
 
-            ],
+      ],
 
-            useCases: [
 
-              "storage",
+      cropStages: [
 
-              "root-preservation"
+        "planning",
 
-            ],
+        "planting"
 
-            tags: [
+      ],
 
-              "jerusalem-artichoke",
 
-              "storage",
+      useCases: [
 
-              "tuber"
+        "seed-production",
 
-            ],
+        "grain-production",
 
-            audiences: [
+        "feed-production",
 
-              "homesteader"
+        "cool-season-growing"
 
-            ]
+      ],
 
-          },
 
+      tags: [
 
-          productType:
-            "storage-equipment",
+        "wheat",
 
+        "wheat-seed",
 
-          productRole:
-            "supporting",
+        "grain",
 
+        "feed-crop",
 
-          universal:
-            false,
+        "cool-season-crop"
 
+      ],
 
-          universalCategories: [],
 
+      audiences: [
 
-          priority:
-            65,
+        "beginner",
 
+        "small-flock",
 
-          enabled:
-            true
+        "homesteader",
 
-        }
+        "backyard-flock-owner"
 
-      },
+      ]
 
-            "PRD-169": {
 
-        id:
-          "PRD-169",
+    },
 
-        category:
-          "Garden Management",
 
-        badge:
-          "🌻 Perennial Management",
+    productType:
+      "seed",
 
-        title:
-          "Root Barrier Material",
 
-        description:
-          "Root barriers can help manage spreading perennial crops such as Jerusalem artichokes by creating boundaries and helping keep plantings organized.",
+    requiredProducts: [],
 
-        shortDescription:
-          "Manage spreading perennial crops.",
 
-        tileBadge:
-          "🌱 Garden Planning Tool",
+    relatedProducts: [
 
-        tileButtonText:
-          "View Product →",
+      "PRD-147",
 
-        bullets: [
+      "PRD-149",
 
-          "Helps control spreading roots",
+      "PRD-121",
 
-          "Useful for perennial gardens",
+      "PRD-122",
 
-          "Supports organized planting areas"
+      "PRD-134",
 
-        ],
+      "PRD-138"
 
-        buttonText:
-          "View Current Price on Amazon →",
+    ],
 
-        url:
-          "https://amzn.to/4521alG",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    purchaseBehavior: {
 
 
-        recommendationData: {
+      purchaseType:
+        "seasonal",
 
-          recommendedFor: {
 
-            crops: [
+      replacementFrequency:
+        "annual",
 
-              "CROP-JERUSALEM-ARTICHOKE"
 
-            ],
+      affiliatePotential:
+        "high"
 
-            planners: [
+    },
 
-              "feed-crop-planner"
 
-            ],
+    buyerIntent: {
 
-            calculators: [],
 
-            pageTypes: [
+      buyerStages: [
 
-              "growing-jerusalem-artichokes-for-chickens",
+        "planning",
 
-              "feed-crop-guide"
+        "planting",
 
-            ],
+        "grain-production",
 
-            cropStages: [
+        "feed-production",
 
-              "planning",
+        "homestead"
 
-              "growing"
+      ],
 
-            ],
 
-            useCases: [
+      commonProblems: [
 
-              "perennial-management",
+        "starting-wheat-crops",
 
-              "garden-organization"
+        "finding-quality-wheat-seed",
 
-            ],
+        "producing-homegrown-grain",
 
-            tags: [
+        "cool-season-feed-production"
 
-              "jerusalem-artichoke",
+      ],
 
-              "perennial",
 
-              "root-control"
+      idealUsers: [
 
-            ],
+        "beginner-gardener",
 
-            audiences: [
+        "feed-crop-grower",
 
-              "homesteader",
+        "homesteader",
 
-              "advanced"
+        "backyard-flock-owner"
 
-            ]
+      ]
 
-          },
 
+    },
 
-          productType:
-            "garden-management",
 
+    recommendedTogether: [
 
-          productRole:
-            "optional",
+      "PRD-147",
 
+      "PRD-149",
 
-          universal:
-            false,
+      "PRD-121"
 
+    ],
 
-          universalCategories: [],
 
+    recommendationContexts: [
 
-          priority:
-            45,
+      "feed-crop-planner",
 
+      "feed-crop-guide",
 
-          enabled:
-            true
+      "growing-guide",
 
-        }
+      "crop-planner"
 
-      },
+    ],
 
-            "PRD-170": {
 
-        id:
-          "PRD-170",
+    productRole:
+      "primary",
 
-        category:
-          "Seeds",
 
-        badge:
-          "🌱 Dual-Purpose Crop Starter",
+    recommendationTier:
+      "core",
 
-        title:
-          "Amaranth Seed",
 
-        description:
-          "Amaranth seed allows backyard growers to establish a versatile crop that can provide edible leaves, harvestable seed, and supplemental feeding opportunities for chickens. Amaranth is well suited for warm-season gardens and diverse homestead systems.",
+    userCompatibility: {
 
-        shortDescription:
-          "Grow amaranth for leaves, seed, and chicken supplementation.",
 
-        tileBadge:
-          "🌱 Amaranth Pick",
+      minimumExperience:
+        "beginner",
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+      advancedOnly:
+        false,
 
-          "Produces both leaves and seeds",
 
-          "Warm-season crop option",
+      skillRequirements: [],
 
-          "Useful for diversified homesteads"
 
-        ],
+      spaceConsiderations: [
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "medium",
 
-        url:
-          "https://amzn.to/3RPcxdF",
+        "large"
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      ]
 
 
-        recommendationData: {
+    },
 
-          recommendedFor: {
 
-            crops: [
+    universal:
+      false,
 
-              "CROP-AMARANTH"
 
-            ],
+    universalCategories: [],
 
-            planners: [
 
-              "feed-crop-planner"
+    priority:
+      100,
 
-            ],
 
-            calculators: [],
+    tags: [
 
-            pageTypes: [
+      "wheat",
 
-              "growing-amaranth-for-chickens",
+      "wheat-seed",
 
-              "feed-crop-guide"
+      "grain",
 
-            ],
+      "feed-crop",
 
-            cropStages: [
+      "cool-season-crop",
 
-              "planning",
+      "homestead",
 
-              "planting"
+      "chicken-feed"
 
-            ],
+    ],
 
-            useCases: [
 
-              "seed-production",
+    enabled:
+      true
 
-              "leaf-production",
 
-              "feed-production"
+  }
 
-            ],
 
-            tags: [
+},
 
-              "amaranth",
+"PRD-147": {
 
-              "seed",
+  id:
+    "PRD-147",
 
-              "leafy-green",
 
-              "feed-crop"
+  category:
+    "Harvest & Processing",
 
-            ],
 
-            audiences: [
+  badge:
+    "🌾 Traditional Processing",
 
-              "beginner",
 
-              "small-flock",
+  title:
+    "Large Canvas Threshing Bag",
 
-              "homesteader"
 
-            ]
+  description:
+    "A heavy-duty canvas threshing bag provides a simple, traditional way to thresh harvested grain on a small homestead. After grain heads have dried, they can be placed inside the bag and gently beaten, shaken, or rolled to separate the grain while helping contain chaff and reduce seed loss.",
 
-          },
 
+  shortDescription:
+    "A traditional, low-cost method for threshing small grain harvests.",
 
-          productType:
-            "seed",
 
+  tileBadge:
+    "🌾 Homestead Favorite",
 
-          productRole:
-            "primary",
 
+  tileButtonText:
+    "View Product →",
 
-          universal:
-            false,
 
+  bullets: [
 
-          universalCategories: [],
+    "Simple traditional threshing method",
 
+    "Reusable for many harvest seasons",
 
-          priority:
-            95,
+    "Ideal for backyard grain growers"
 
+  ],
 
-          enabled:
-            true
 
-        }
+  buttonText:
+    "View Current Price on Amazon →",
 
-      },
 
-            
+  url:
+    "https://amzn.to/4yOW7CR",
 
-            "PRD-172": {
 
-        id:
-          "PRD-172",
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-        category:
-          "Harvest Tools",
 
-        badge:
-          "🌱 Leaf Harvest Tool",
+  recommendationData: {
 
-        title:
-          "Pruning Shears",
 
-        description:
-          "Garden harvest scissors or pruning shears help collect amaranth leaves and manage plant growth during the growing season. They are useful for crops harvested for both forage and greens.",
+    recommendedFor: {
 
-        shortDescription:
-          "Harvest leaves and maintain amaranth plants.",
 
-        tileBadge:
-          "🌱 Harvest Helper",
+      crops: [
 
-        tileButtonText:
-          "View Product →",
+        "CROP-WHEAT",
 
-        bullets: [
+        "CROP-BARLEY",
 
-          "Useful for leaf harvesting",
+        "CROP-OATS",
 
-          "Supports repeated plant maintenance",
+        "CROP-GRAIN-SORGHUM",
 
-          "Works across many garden crops"
+        "CROP-PROSO-MILLET"
 
-        ],
+      ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4yXpYck",
+      planners: [
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "feed-crop-planner"
 
+      ],
 
-        recommendationData: {
 
-          recommendedFor: {
+      calculators: [],
 
-            crops: [
 
-              "CROP-AMARANTH"
+      pageTypes: [
 
-            ],
+        "feed-crop-guide",
 
-            planners: [
+        "growing-guide"
 
-              "feed-crop-planner"
+      ],
 
-            ],
 
-            calculators: [],
+      cropStages: [
 
-            pageTypes: [
+        "processing"
 
-              "growing-amaranth-for-chickens",
+      ],
 
-              "feed-crop-guide"
 
-            ],
+      useCases: [
 
-            cropStages: [
+        "grain-threshing",
 
-              "growing",
+        "post-harvest-processing",
 
-              "harvesting"
+        "traditional-processing",
 
-            ],
+        "small-scale-feed-production"
 
-            useCases: [
+      ],
 
-              "leaf-harvesting",
 
-              "crop-maintenance"
+      tags: [
 
-            ],
+        "canvas-bag",
 
-            tags: [
+        "grain-threshing",
 
-              "amaranth",
+        "homestead",
 
-              "harvesting",
+        "traditional"
 
-              "leafy-green"
+      ],
 
-            ],
 
-            audiences: [
+      audiences: [
 
-              "beginner",
+        "beginner",
 
-              "homesteader"
+        "homesteader",
 
-            ]
+        "backyard-flock-owner"
 
-          },
+      ]
 
+    },
 
-          productType:
-            "harvest-tool",
 
+    productType:
+      "threshing-bag",
 
-          productRole:
-            "supporting",
 
+    requiredProducts: [],
 
-          universal:
-            false,
 
+    relatedProducts: [
 
-          universalCategories: [],
+      "PRD-121",
 
+      "PRD-122",
 
-          priority:
-            65,
+      "PRD-137",
 
+      "PRD-142",
 
-          enabled:
-            true
+      "PRD-149"
 
-        }
+    ],
 
-      },
 
-            "PRD-173": {
+    purchaseBehavior: {
 
-        id:
-          "PRD-173",
 
-        category:
-          "Harvest Equipment",
+      purchaseType:
+        "one-time",
 
-        badge:
-          "🌱 Harvest Processing",
 
-        title:
-          "Garden Drying Rack",
+      replacementFrequency:
+        "10+ years",
 
-        description:
-          "A drying rack helps growers dry harvested amaranth seed heads and plant material before storage. Proper drying helps reduce spoilage risk.",
 
-        shortDescription:
-          "Dry harvested plant material before storage.",
+      affiliatePotential:
+        "medium"
 
-        tileBadge:
-          "🌱 Processing Support",
+    },
 
-        tileButtonText:
-          "View Product →",
 
-        bullets: [
+    buyerIntent: {
 
-          "Supports seed drying",
 
-          "Helps prepare harvested material",
+      buyerStages: [
 
-          "Useful for multiple crops"
+        "harvesting",
 
-        ],
+        "processing",
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "feed-production",
 
-        url:
-          "https://amzn.to/4hKelPy",
+        "homestead"
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+      ],
 
 
-        recommendationData: {
+      commonProblems: [
 
-          recommendedFor: {
+        "small-scale-threshing",
 
-            crops: [
+        "manual-grain-processing",
 
-              "CROP-AMARANTH"
+        "expensive-equipment",
 
-            ],
+        "grain-loss"
 
-            planners: [
+      ],
 
-              "feed-crop-planner"
 
-            ],
+      idealUsers: [
 
-            calculators: [],
+        "grain-grower",
 
-            pageTypes: [
+        "feed-crop-grower",
 
-              "growing-amaranth-for-chickens",
+        "homesteader",
 
-              "feed-crop-guide"
+        "backyard-flock-owner"
 
-            ],
+      ]
 
-            cropStages: [
+    },
 
-              "harvesting",
 
-              "drying"
+    recommendedTogether: [
 
-            ],
+      "PRD-121",
 
-            useCases: [
+      "PRD-122"
 
-              "drying",
+    ],
 
-              "seed-processing"
 
-            ],
+    recommendationContexts: [
 
-            tags: [
+      "feed-crop-planner",
 
-              "amaranth",
+      "feed-crop-guide",
 
-              "drying",
+      "growing-guide",
 
-              "harvest"
+      "crop-planner"
 
-            ],
+    ],
 
-            audiences: [
 
-              "homesteader"
+    productRole:
+      "supporting",
 
-            ]
 
-          },
+    recommendationTier:
+      "situational",
 
 
-          productType:
-            "processing-equipment",
+    userCompatibility: {
 
 
-          productRole:
-            "optional",
+      minimumExperience:
+        "beginner",
 
 
-          universal:
-            false,
+      advancedOnly:
+        false,
 
 
-          universalCategories: [],
+      skillRequirements: [],
 
 
-          priority:
-            55,
+      spaceConsiderations: [
 
+        "small",
 
-          enabled:
-            true
+        "medium",
 
-        }
+        "large"
 
-      },
+      ]
 
-            "PRD-174": {
+    },
 
-        id:
-          "PRD-174",
 
-        category:
-          "Processing Equipment",
+    universal:
+      false,
 
-        badge:
-          "🌱 Seed Preparation",
 
-        title:
-          "Small Seed Cleaning Screen",
+    universalCategories: [],
 
-        description:
-          "A small seed cleaning screen helps separate harvested amaranth seed from plant debris before storage or feeding.",
 
-        shortDescription:
-          "Clean harvested amaranth seed.",
+    priority:
+      75,
 
-        tileBadge:
-          "🌱 Seed Processing",
 
-        tileButtonText:
-          "View Product →",
+    tags: [
 
-        bullets: [
+      "canvas-threshing-bag",
 
-          "Helps clean small seeds",
+      "grain-processing",
 
-          "Improves storage preparation",
+      "traditional-threshing",
 
-          "Useful for small grain crops"
+      "homestead",
 
-        ],
+      "small-grains",
 
-        buttonText:
-          "View Current Price on Amazon →",
+      "feed-crops"
 
-        url:
-          "https://amzn.to/4pVSruT",
+    ],
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    enabled:
+      true
 
-        recommendationData: {
 
-          recommendedFor: {
+  }
 
-            crops: [
 
-              "CROP-AMARANTH"
+},
 
-            ],
+"PRD-149": {
 
-            planners: [
+  id:
+    "PRD-149",
 
-              "feed-crop-planner"
 
-            ],
+  category:
+    "Harvest & Processing",
 
-            calculators: [],
 
-            pageTypes: [
+  badge:
+    "🌾 Wheat Grain Cleaning",
 
-              "growing-amaranth-for-chickens",
 
-              "feed-crop-guide"
+  title:
+    "Wheat Cleaning Screen",
 
-            ],
 
-            cropStages: [
+  description:
+    "A wheat cleaning screen helps separate harvested wheat kernels from chaff, stems, dust, and other field debris after threshing. Using a screen sized for wheat improves cleaning efficiency while minimizing grain loss before storage or feed preparation.",
 
-              "processing",
 
-              "storage"
+  shortDescription:
+    "Clean harvested wheat before storage.",
 
-            ],
 
-            useCases: [
+  tileBadge:
+    "🌾 Processing Tool",
 
-              "seed-cleaning",
 
-              "processing"
+  tileButtonText:
+    "View Product →",
 
-            ],
 
-            tags: [
+  bullets: [
 
-              "amaranth",
+    "Sized specifically for wheat kernels",
 
-              "seed",
+    "Removes chaff and harvest debris",
 
-              "processing"
+    "Improves grain quality before storage"
 
-            ],
+  ],
 
-            audiences: [
 
-              "advanced",
+  buttonText:
+    "View Current Price on Amazon →",
 
-              "homesteader"
 
-            ]
+  url:
+    "https://amzn.to/4xHxkeT",
 
-          },
 
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-          productType:
-            "processing-equipment",
 
+  recommendationData: {
 
-          productRole:
-            "optional",
 
+    recommendedFor: {
 
-          universal:
-            false,
 
+      crops: [
 
-          universalCategories: [],
+        "CROP-WHEAT"
 
+      ],
 
-          priority:
-            55,
 
+      planners: [
 
-          enabled:
-            true
+        "feed-crop-planner"
 
-        }
+      ],
 
-      },
 
-            "PRD-175": {
+      calculators: [],
 
-        id:
-          "PRD-175",
 
-        category:
-          "Planting Stock",
+      pageTypes: [
 
-        badge:
-          "🌿 Grow Comfrey",
+        "growing-wheat-for-chickens",
 
-        title:
-          "Comfrey Seeds",
+        "feed-crop-guide"
 
-        description:
-          "Comfrey seeds allow gardeners to establish a long-lived perennial feed crop that can provide repeated harvests of nutrient-rich foliage for compost, mulch, and supplemental chicken forage. Starting from seed requires more patience than root cuttings but offers an accessible option for many backyard growers.",
+      ],
 
-        shortDescription:
-          "Start a productive perennial comfrey patch from seed.",
 
-        tileBadge:
-          "🌿 Planting Essential",
+      cropStages: [
 
-        tileButtonText:
-          "View Product →",
+        "processing",
 
-        bullets: [
+        "storage"
 
-          "Establish a long-lived perennial feed crop",
+      ],
 
-          "Provides repeated harvests of nutrient-rich foliage",
 
-          "Suitable for compost, mulch, and supplemental chicken forage"
+      useCases: [
 
-        ],
+        "grain-cleaning",
 
-        buttonText:
-          "View Current Price on Amazon →",
+        "seed-cleaning",
 
-        url:
-          "https://amzn.to/4pVSruT",
+        "post-harvest-processing",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "storage-preparation"
 
+      ],
 
-        recommendationData: {
 
-          recommendedFor: {
+      tags: [
 
-            crops: [
+        "wheat",
 
-              "CROP-COMFREY"
+        "wheat-cleaning-screen",
 
-            ],
+        "grain-cleaning",
 
-            planners: [
+        "processing"
 
-              "feed-crop-planner"
+      ],
 
-            ],
 
-            calculators: [],
+      audiences: [
 
-            pageTypes: [
+        "intermediate",
 
-              "growing-comfrey-for-chickens",
+        "advanced",
 
-              "feed-crop-guide"
+        "homesteader",
 
-            ],
+        "backyard-flock-owner"
 
-            cropStages: [
+      ]
 
-              "planning",
+    },
 
-              "planting"
 
-            ],
+    productType:
+      "grain-cleaning-screen",
 
-            useCases: [
 
-              "perennial-establishment",
+    requiredProducts: [
 
-              "biomass-production"
+      "PRD-145"
 
-            ],
+    ],
 
-            tags: [
 
-              "comfrey",
+    relatedProducts: [
 
-              "seeds",
+      "PRD-121",
 
-              "perennial",
+      "PRD-122",
 
-              "feed-crop",
+      "PRD-128",
 
-              "medicinal-plant"
+      "PRD-147"
 
-            ],
+    ],
 
-            audiences: [
 
-              "homesteader",
+    purchaseBehavior: {
 
-              "small-flock"
 
-            ]
+      purchaseType:
+        "one-time",
 
-          },
 
+      replacementFrequency:
+        "10+ years",
 
-          productType:
-            "seed",
 
+      affiliatePotential:
+        "low"
 
-          productRole:
-            "primary",
+    },
 
 
-          universal:
-            false,
+    buyerIntent: {
 
 
-          universalCategories: [],
+      buyerStages: [
 
+        "harvesting",
 
-          priority:
-            95,
+        "processing",
 
+        "storage",
 
-          enabled:
-            true
+        "feed-production",
 
-        }
+        "homestead"
 
-      },
+      ],
 
-            "PRD-176": {
 
-        id:
-          "PRD-176",
+      commonProblems: [
 
-        category:
-          "Composting",
+        "dirty-wheat",
 
-        badge:
-          "🌿 Biomass Utilization",
+        "excess-chaff",
 
-        title:
-          "Compost Bin System",
+        "poor-storage-quality",
 
-        description:
-          "A compost bin helps convert harvested comfrey leaves, garden waste, and chicken manure into valuable soil amendments. Comfrey is often grown as part of a nutrient cycling system.",
+        "kernel-cleaning"
 
-        shortDescription:
-          "Turn comfrey and garden waste into compost.",
+      ],
 
-        tileBadge:
-          "🌱 Homestead System",
 
-        tileButtonText:
-          "View Product →",
+      idealUsers: [
 
-        bullets: [
+        "wheat-grower",
 
-          "Uses comfrey biomass effectively",
+        "feed-crop-grower",
 
-          "Supports soil improvement",
+        "homesteader",
 
-          "Works with chicken manure composting"
+        "backyard-flock-owner"
 
-        ],
+      ]
 
-        buttonText:
-          "View Current Price on Amazon →",
+    },
 
-        url:
-          "https://amzn.to/4xgjjrJ",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+    recommendedTogether: [
 
+      "PRD-147",
 
-        recommendationData: {
+      "PRD-121",
 
-          recommendedFor: {
+      "PRD-122"
 
-            crops: [
+    ],
 
-              "CROP-COMFREY"
 
-            ],
+    recommendationContexts: [
 
-            planners: [
+      "feed-crop-planner",
 
-              "feed-crop-planner"
+      "feed-crop-guide",
 
-            ],
+      "growing-guide",
 
-            calculators: [],
+      "crop-planner"
 
-            pageTypes: [
+    ],
 
-              "growing-comfrey-for-chickens",
 
-              "feed-crop-guide"
+    productRole:
+      "specialized",
 
-            ],
 
-            cropStages: [
+    recommendationTier:
+      "specialty",
 
-              "growing",
 
-              "harvesting"
+    userCompatibility: {
 
-            ],
 
-            useCases: [
+      minimumExperience:
+        "intermediate",
 
-              "compost-production",
 
-              "biomass-use"
+      advancedOnly:
+        false,
 
-            ],
 
-            tags: [
+      skillRequirements: [
 
-              "comfrey",
+        "basic-post-harvest-processing"
 
-              "compost",
+      ],
 
-              "soil"
 
-            ],
+      spaceConsiderations: [
 
-            audiences: [
+        "small",
 
-              "homesteader"
+        "medium",
 
-            ]
+        "large"
 
-          },
+      ]
 
+    },
 
-          productType:
-            "compost-equipment",
 
+    universal:
+      false,
 
-          productRole:
-            "supporting",
 
+    universalCategories: [],
 
-          universal:
-            false,
 
+    priority:
+      65,
 
-          universalCategories: [],
 
+    tags: [
 
-          priority:
-            75,
+      "wheat",
 
+      "wheat-cleaning-screen",
 
-          enabled:
-            true
+      "grain-cleaning",
 
-        }
+      "post-harvest",
 
-      },
+      "homestead"
 
-            "PRD-177": {
+    ],
 
-        id:
-          "PRD-177",
 
-        category:
-          "Harvest Tools",
+    enabled:
+      true
 
-        badge:
-          "🌿 Repeat Harvest Tool",
 
-        title:
-          "Garden Harvest Shears",
+  }
 
-        description:
-          "Garden harvest shears help cut comfrey leaves during repeated harvest cycles. They are useful for maintaining perennial biomass crops and collecting fresh forage.",
 
-        shortDescription:
-          "Harvest comfrey leaves throughout the growing season.",
+},
 
-        tileBadge:
-          "🌿 Harvest Helper",
+"PRD-150": {
 
-        tileButtonText:
-          "View Product →",
+  id:
+    "PRD-150",
 
-        bullets: [
 
-          "Supports repeated leaf harvesting",
+  category:
+    "Seeds",
 
-          "Useful for perennial crops",
 
-          "Helps manage plant growth"
+  badge:
+    "🌾 Crop Starter",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+  title:
+    "Barley Seed",
 
-        url:
-          "https://amzn.to/4yXpYck",
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+  description:
+    "Barley seed allows backyard growers to produce a versatile cool-season crop for grain, sprouted feed, or young forage. Properly harvested and dried barley can support small-scale supplemental feed production, while clean untreated seed may also be used in managed sprouting systems.",
 
 
-        recommendationData: {
+  shortDescription:
+    "Grow barley for grain, sprouts, or young forage.",
 
-          recommendedFor: {
 
-            crops: [
+  tileBadge:
+    "🌾 Top Barley Pick",
 
-              "CROP-COMFREY"
 
-            ],
+  tileButtonText:
+    "View Product →",
 
-            planners: [
 
-              "feed-crop-planner"
+  bullets: [
 
-            ],
+    "Produces a versatile cool-season grain crop",
 
-            calculators: [],
+    "Can be used for grain, sprouting, or young forage",
 
-            pageTypes: [
+    "Stores well after proper harvesting and drying"
 
-              "growing-comfrey-for-chickens",
+  ],
 
-              "feed-crop-guide"
 
-            ],
+  buttonText:
+    "View Current Price on Amazon →",
 
-            cropStages: [
 
-              "growing",
+  url:
+    "https://amzn.to/4zbn6J1",
 
-              "harvesting"
 
-            ],
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
-            useCases: [
 
-              "leaf-harvesting",
+  recommendationData: {
 
-              "biomass-production"
 
-            ],
+    recommendedFor: {
 
-            tags: [
 
-              "comfrey",
+      crops: [
 
-              "harvesting",
+        "CROP-BARLEY"
 
-              "forage"
+      ],
 
-            ],
 
-            audiences: [
+      planners: [
 
-              "beginner",
+        "feed-crop-planner"
 
-              "homesteader"
+      ],
 
-            ]
 
-          },
+      calculators: [],
 
 
-          productType:
-            "harvest-tool",
+      pageTypes: [
 
+        "growing-barley-for-chickens",
 
-          productRole:
-            "supporting",
+        "feed-crop-guide"
 
+      ],
 
-          universal:
-            false,
 
+      cropStages: [
 
-          universalCategories: [],
+        "planning",
 
+        "planting"
 
-          priority:
-            75,
+      ],
 
 
-          enabled:
-            true
+      useCases: [
 
-        }
+        "seed-production",
 
-      },
+        "grain-production",
 
-            "PRD-178": {
+        "feed-production",
 
-        id:
-          "PRD-178",
+        "sprouting",
 
-        category:
-          "Garden Management",
+        "young-forage-production",
 
-        badge:
-          "🌿 Biomass Handling",
+        "cool-season-growing"
 
-        title:
-          "Garden Collection Tarp",
+      ],
 
-        description:
-          "A garden collection tarp helps gather comfrey leaves and other biomass for composting, mulching, or garden applications.",
 
-        shortDescription:
-          "Collect and move harvested plant biomass.",
+      tags: [
 
-        tileBadge:
-          "🌱 Garden Helper",
+        "barley",
 
-        tileButtonText:
-          "View Product →",
+        "barley-seed",
 
-        bullets: [
+        "grain",
 
-          "Helps collect plant material",
+        "sprouting",
 
-          "Useful for compost and mulch",
+        "forage",
 
-          "Supports larger biomass harvests"
+        "cool-season-crop"
 
-        ],
+      ],
 
-        buttonText:
-          "View Current Price on Amazon →",
 
-        url:
-          "https://amzn.to/4fJS8P4",
+      audiences: [
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+        "beginner",
 
+        "small-flock",
 
-        recommendationData: {
+        "homesteader",
 
-          recommendedFor: {
+        "backyard-flock-owner"
 
-            crops: [
+      ]
 
-              "CROP-COMFREY"
 
-            ],
+    },
 
-            planners: [
 
-              "feed-crop-planner"
+    productType:
+      "seed",
 
-            ],
 
-            calculators: [],
+    requiredProducts: [],
 
-            pageTypes: [
 
-              "growing-comfrey-for-chickens",
+    relatedProducts: [
 
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "harvesting"
-
-            ],
-
-            useCases: [
-
-              "biomass-handling",
-
-              "mulching",
-
-              "composting"
-
-            ],
-
-            tags: [
-
-              "comfrey",
-
-              "biomass",
-
-              "mulch"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "garden-management",
-
-
-          productRole:
-            "optional",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            55,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-179": {
-
-        id:
-          "PRD-179",
-
-        category:
-          "Irrigation",
-
-        badge:
-          "🌿 Perennial Crop Support",
-
-        title:
-          "Garden Watering System",
-
-        description:
-          "A reliable watering system helps establish young comfrey plants and maintain productive perennial growth during dry periods.",
-
-        shortDescription:
-          "Support healthy perennial plant growth.",
-
-        tileBadge:
-          "💧 Garden Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps establish new plantings",
-
-          "Supports dry-season growth",
-
-          "Useful across the homestead garden"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4z00lrl",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-COMFREY"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-comfrey-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planting",
-
-              "growing"
-
-            ],
-
-            useCases: [
-
-              "establishment",
-
-              "irrigation"
-
-            ],
-
-            tags: [
-
-              "comfrey",
-
-              "watering",
-
-              "perennial"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "watering-system",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            65,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-180": {
-
-        id:
-          "PRD-180",
-
-        category:
-          "Planting Stock",
-
-        badge:
-          "🌳 Perennial Feed Tree",
-
-        title:
-          "Mulberry Tree Sapling",
-
-        description:
-          "Mulberry tree saplings allow backyard chicken keepers to establish a long-term perennial feed resource. Mature mulberry trees can provide leaves and fruit that support diversified homestead feeding systems.",
-
-        shortDescription:
-          "Plant a long-term tree-based chicken feed resource.",
-
-        tileBadge:
-          "🌳 Mulberry Pick",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Creates a long-term feed resource",
-
-          "Produces leaves and fruit",
-
-          "Useful for sustainable homesteads"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4xgjpzB",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-MULBERRY"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-mulberry-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "tree-establishment",
-
-              "perennial-feed-production"
-
-            ],
-
-            tags: [
-
-              "mulberry",
-
-              "tree",
-
-              "perennial",
-
-              "forage"
-
-            ],
-
-            audiences: [
-
-              "homesteader",
-
-              "small-flock"
-
-            ]
-
-          },
-
-
-          productType:
-            "planting-stock",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            95,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-181": {
-
-        id:
-          "PRD-181",
-
-        category:
-          "Tree Care",
-
-        badge:
-          "🌳 Establish Healthy Growth",
-
-        title:
-          "Fruit Tree Soil Amendment",
-
-        description:
-          "Tree-focused soil amendments help establish young mulberry trees by improving soil conditions and supporting healthy root development during early growth.",
-
-        shortDescription:
-          "Support healthy establishment of young mulberry trees.",
-
-        tileBadge:
-          "🌱 Tree Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports young tree development",
-
-          "Improves planting conditions",
-
-          "Useful for perennial crops"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4fO5av6",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-MULBERRY"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-mulberry-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planting",
-
-              "growing"
-
-            ],
-
-            useCases: [
-
-              "soil-preparation",
-
-              "tree-establishment"
-
-            ],
-
-            tags: [
-
-              "mulberry",
-
-              "tree",
-
-              "fertility"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "soil-amendment",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            70,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-182": {
-
-        id:
-          "PRD-182",
-
-        category:
-          "Tree Maintenance",
-
-        badge:
-          "✂️ Tree Management Tool",
-
-        title:
-          "Pruning Shears and Tree Loppers",
-
-        description:
-          "Pruning tools help manage mulberry trees by controlling growth, encouraging productive branching, and making leaf harvest easier.",
-
-        shortDescription:
-          "Maintain productive mulberry tree growth.",
-
-        tileBadge:
-          "🌳 Tree Care Tool",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports annual pruning",
-
-          "Helps manage tree size",
-
-          "Makes leaf harvesting easier"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4w5HCI7",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-MULBERRY"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-mulberry-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "growing",
-
-              "harvesting"
-
-            ],
-
-            useCases: [
-
-              "tree-maintenance",
-
-              "leaf-harvesting"
-
-            ],
-
-            tags: [
-
-              "mulberry",
-
-              "pruning",
-
-              "tree-care"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "tree-tool",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            80,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-183": {
-
-        id:
-          "PRD-183",
-
-        category:
-          "Harvest Tools",
-
-        badge:
-          "🌳 Harvest Support",
-
-        title:
-          "Fruit Harvest Collection Net",
-
-        description:
-          "Harvest collection nets help collect fallen mulberries and other tree-produced foods while reducing waste during harvest season.",
-
-        shortDescription:
-          "Collect mulberries and reduce harvest waste.",
-
-        tileBadge:
-          "🌳 Harvest Helper",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps collect fallen fruit",
-
-          "Reduces wasted harvest",
-
-          "Useful for backyard fruit trees"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4pSGTZ9",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-MULBERRY"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-mulberry-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "harvesting"
-
-            ],
-
-            useCases: [
-
-              "fruit-harvesting",
-
-              "crop-collection"
-
-            ],
-
-            tags: [
-
-              "mulberry",
-
-              "harvest",
-
-              "fruit"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "harvest-tool",
-
-
-          productRole:
-            "optional",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            55,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-184": {
-
-        id:
-          "PRD-184",
-
-        category:
-          "Irrigation",
-
-        badge:
-          "💧 Young Tree Support",
-
-        title:
-          "Tree Watering System",
-
-        description:
-          "Tree watering bags and deep watering systems help newly planted mulberry trees establish strong root systems during the early years after planting.",
-
-        shortDescription:
-          "Support young tree establishment.",
-
-        tileBadge:
-          "💧 Tree Care",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports young tree growth",
-
-          "Helps maintain moisture",
-
-          "Useful during dry periods"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/3TC15m8",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-MULBERRY"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-mulberry-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planting",
-
-              "growing"
-
-            ],
-
-            useCases: [
-
-              "tree-establishment",
-
-              "irrigation"
-
-            ],
-
-            tags: [
-
-              "mulberry",
-
-              "watering",
-
-              "tree"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "watering-system",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            70,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-185": {
-
-        id:
-          "PRD-185",
-
-        category:
-          "Seeds",
-
-        badge:
-          "🌿 Perennial Forage Starter",
-
-        title:
-          "Alfalfa Seed",
-
-        description:
-          "Alfalfa seed allows backyard growers to establish a long-term perennial forage crop. Once established, alfalfa can provide repeated harvests of nutrient-rich foliage that may be used as a supplemental resource for backyard chickens.",
-
-        shortDescription:
-          "Establish perennial forage for repeated harvests.",
-
-        tileBadge:
-          "🌿 Alfalfa Pick",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Creates a long-term forage planting",
-
-          "Provides repeated biomass harvests",
-
-          "Useful for sustainable chicken feeding systems"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4g3JRXz",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-ALFALFA"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-alfalfa-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "forage-establishment",
-
-              "biomass-production"
-
-            ],
-
-            tags: [
-
-              "alfalfa",
-
-              "forage",
-
-              "perennial",
-
-              "protein"
-
-            ],
-
-            audiences: [
-
-              "homesteader",
-
-              "small-flock"
-
-            ]
-
-          },
-
-
-          productType:
-            "seed",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            95,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-186": {
-
-        id:
-          "PRD-186",
-
-        category:
-          "Soil Testing",
-
-        badge:
-          "🌿 Soil Preparation",
-
-        title:
-          "Soil pH Test Kit",
-
-        description:
-          "A soil pH test kit helps growers evaluate soil conditions before establishing alfalfa. Proper soil preparation is important because alfalfa performs best in suitable soil conditions.",
-
-        shortDescription:
-          "Test soil before planting perennial forage.",
-
-        tileBadge:
-          "🌱 Soil Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps evaluate planting conditions",
-
-          "Supports better soil decisions",
-
-          "Useful before perennial crops"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4w1tgZ6",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-ALFALFA"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-alfalfa-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "soil-testing",
-
-              "soil-preparation"
-
-            ],
-
-            tags: [
-
-              "alfalfa",
-
-              "soil",
-
-              "pH",
-
-              "testing"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "soil-testing",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            75,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-187": {
-
-        id:
-          "PRD-187",
-
-        category:
-          "Harvest Tools",
-
-        badge:
-          "🌿 Forage Harvest Tool",
-
-        title:
-          "Japanese Hand Sickle",
-
-        description:
-          "A forage cutting tool helps harvest alfalfa foliage during repeated cutting cycles. Small-scale growers can use hand tools for managing backyard forage plots.",
-
-        shortDescription:
-          "Harvest alfalfa forage throughout the season.",
-
-        tileBadge:
-          "🌿 Harvest Helper",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports repeated forage harvests",
-
-          "Useful for small plots",
-
-          "Helps manage perennial growth"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4pVT33F",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-ALFALFA"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-alfalfa-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "growing",
-
-              "harvesting"
-
-            ],
-
-            useCases: [
-
-              "forage-harvesting",
-
-              "biomass-production"
-
-            ],
-
-            tags: [
-
-              "alfalfa",
-
-              "forage",
-
-              "harvesting"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "harvest-tool",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            80,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-188": {
-
-        id:
-          "PRD-188",
-
-        category:
-          "Processing Equipment",
-
-        badge:
-          "🌿 Preserve Forage Quality",
-
-        title:
-          "Forage Drying Rack",
-
-        description:
-          "A forage drying rack helps preserve harvested alfalfa leaves by allowing plant material to dry before storage or later use as a supplemental chicken feed ingredient.",
-
-        shortDescription:
-          "Dry harvested forage for storage.",
-
-        tileBadge:
-          "🌿 Processing Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps preserve harvested leaves",
-
-          "Supports homemade forage storage",
-
-          "Useful for biomass crops"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4hKelPy",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-ALFALFA"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-alfalfa-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "harvesting",
-
-              "storage"
-
-            ],
-
-            useCases: [
-
-              "drying",
-
-              "forage-preservation"
-
-            ],
-
-            tags: [
-
-              "alfalfa",
-
-              "drying",
-
-              "forage"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "processing-equipment",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            70,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-189": {
-
-        id:
-          "PRD-189",
-
-        category:
-          "Storage",
-
-        badge:
-          "🌿 Preserve Harvest",
-
-        title:
-          "Feed Storage Tote",
-
-        description:
-          "A feed storage tote helps protect dried alfalfa leaves and forage materials after harvesting. Proper storage helps reduce moisture exposure and maintain quality.",
-
-        shortDescription:
-          "Store dried forage after harvest.",
-
-        tileBadge:
-          "🌿 Storage Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Protects dried forage",
-
-          "Helps organize stored feed",
-
-          "Useful for multiple crops"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4xjHBRW",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-ALFALFA"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-alfalfa-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "harvesting",
-
-              "storage"
-
-            ],
-
-            useCases: [
-
-              "feed-storage",
-
-              "forage-preservation"
-
-            ],
-
-            tags: [
-
-              "alfalfa",
-
-              "storage",
-
-              "feed"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "storage-equipment",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            70,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-190": {
-
-        id:
-          "PRD-190",
-
-        category:
-          "Seeds",
-
-        badge:
-          "🍀 Living Forage Starter",
-
-        title:
-          "White Clover Seed",
-
-        description:
-          "White clover seed allows backyard chicken keepers to establish a persistent forage groundcover. Clover can provide supplemental grazing opportunities while also improving soil through nitrogen fixation.",
-
-        shortDescription:
-          "Establish living forage for chickens and soil improvement.",
-
-        tileBadge:
-          "🍀 Clover Pick",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Creates long-lasting forage areas",
-
-          "Supports chicken grazing systems",
-
-          "Improves soil naturally"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4w6SYLU",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-WHITE-CLOVER"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-white-clover-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "pasture-establishment",
-
-              "forage-production"
-
-            ],
-
-            tags: [
-
-              "white-clover",
-
-              "forage",
-
-              "groundcover",
-
-              "pasture"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader",
-
-              "small-flock"
-
-            ]
-
-          },
-
-
-          productType:
-            "seed",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            95,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-191": {
-
-        id:
-          "PRD-191",
-
-        category:
-          "Soil Improvement",
-
-        badge:
-          "🍀 Establish Better Growth",
-
-        title:
-          "Legume Seed Inoculant",
-
-        description:
-          "Legume seed inoculant helps support beneficial nitrogen-fixing bacteria associated with clover and other legumes. Proper inoculation can help improve establishment in new plantings.",
-
-        shortDescription:
-          "Support healthy legume establishment.",
-
-        tileBadge:
-          "🍀 Soil Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports legume establishment",
-
-          "Helps encourage nitrogen fixation",
-
-          "Useful for new clover plantings"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4cfRIPn",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-WHITE-CLOVER"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-white-clover-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "soil-improvement",
-
-              "legume-establishment"
-
-            ],
-
-            tags: [
-
-              "white-clover",
-
-              "inoculant",
-
-              "legume"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "soil-amendment",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            70,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-192": {
-
-        id:
-          "PRD-192",
-
-        category:
-          "Planting Equipment",
-
-        badge:
-          "🍀 Pasture Establishment",
-
-        title:
-          "Broadcast Seed Spreader",
-
-        description:
-          "A broadcast seed spreader helps distribute small clover seed evenly across lawns, pasture areas, and chicken forage spaces.",
-
-        shortDescription:
-          "Spread small forage seeds evenly.",
-
-        tileBadge:
-          "🍀 Planting Tool",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Improves seed distribution",
-
-          "Useful for small seeds",
-
-          "Works across pasture areas"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4xgG5jw",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-WHITE-CLOVER"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-white-clover-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "seed-distribution",
-
-              "pasture-establishment"
-
-            ],
-
-            tags: [
-
-              "white-clover",
-
-              "seeding",
-
-              "pasture"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "planting-equipment",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            80,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-193": {
-
-        id:
-          "PRD-193",
-
-        category:
-          "Chicken Management",
-
-        badge:
-          "🍀 Protect Your Forage",
-
-        title:
-          "Portable Chicken Grazing Fence",
-
-        description:
-          "A portable grazing fence helps manage chicken access to clover areas by preventing overgrazing and allowing forage recovery.",
-
-        shortDescription:
-          "Manage chicken access to living forage.",
-
-        tileBadge:
-          "🐔 Pasture Management",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps protect forage areas",
-
-          "Supports rotational grazing",
-
-          "Useful for backyard flocks"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4blrJ94",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-WHITE-CLOVER"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-white-clover-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "growing",
-
-              "feeding"
-
-            ],
-
-            useCases: [
-
-              "forage-management",
-
-              "rotational-grazing"
-
-            ],
-
-            tags: [
-
-              "white-clover",
-
-              "pasture",
-
-              "chickens"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "flock-management",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            75,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-194": {
-
-        id:
-          "PRD-194",
-
-        category:
-          "Irrigation",
-
-        badge:
-          "💧 Forage Support",
-
-        title:
-          "Garden Irrigation System",
-
-        description:
-          "A simple irrigation system can help establish and maintain productive clover areas, especially during dry periods when forage growth slows.",
-
-        shortDescription:
-          "Maintain healthy forage growth.",
-
-        tileBadge:
-          "💧 Groundcover Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports seed establishment",
-
-          "Helps during dry conditions",
-
-          "Useful for forage areas"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4yTuUyO",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-WHITE-CLOVER"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-white-clover-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planting",
-
-              "growing"
-
-            ],
-
-            useCases: [
-
-              "establishment",
-
-              "forage-maintenance"
-
-            ],
-
-            tags: [
-
-              "white-clover",
-
-              "watering",
-
-              "forage"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "watering-system",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            65,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-195": {
-
-        id:
-          "PRD-195",
-
-        category:
-          "Seeds",
-
-        badge:
-          "🥬 Seasonal Feed Crop Starter",
-
-        title:
-          "Kale and Collard Seed Packets",
-
-        description:
-          "Kale and collard seeds allow backyard growers to produce nutrient-rich leafy greens that can provide supplemental forage for chickens. These crops are especially useful for extending fresh feed availability into cooler seasons.",
-
-        shortDescription:
-          "Grow cold-tolerant leafy greens for chickens.",
-
-        tileBadge:
-          "🥬 Leafy Green Pick",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Cold-tolerant chicken forage crop",
-
-          "Supports repeated leaf harvests",
-
-          "Useful for small backyard gardens"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4yTuUyO",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-KALE-COLLARDS"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-kale-and-collards-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "leaf-production",
-
-              "fresh-feed-production"
-
-            ],
-
-            tags: [
-
-              "kale",
-
-              "collards",
-
-              "leafy-green",
-
-              "cold-season"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "small-flock",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "seed",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            95,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-           
-
-            "PRD-197": {
-
-        id:
-          "PRD-197",
-
-        category:
-          "Harvest Tools",
-
-        badge:
-          "🥬 Leaf Harvest Tool",
-
-        title:
-          "Garden Harvest Knife and Shears",
-
-        description:
-          "Harvest knives and garden shears help collect kale and collard leaves while allowing plants to continue producing additional growth.",
-
-        shortDescription:
-          "Harvest leafy greens throughout the season.",
-
-        tileBadge:
-          "🥬 Harvest Helper",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Supports repeated leaf harvesting",
-
-          "Helps maintain plant productivity",
-
-          "Useful for many garden crops"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4hLiBhH",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-KALE-COLLARDS"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-kale-and-collards-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "growing",
-
-              "harvesting"
-
-            ],
-
-            useCases: [
-
-              "leaf-harvesting",
-
-              "fresh-feed-production"
-
-            ],
-
-            tags: [
-
-              "kale",
-
-              "collards",
-
-              "harvest"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "harvest-tool",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            75,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-198": {
-
-        id:
-          "PRD-198",
-
-        category:
-          "Crop Protection",
-
-        badge:
-          "❄️ Season Extension",
-
-        title:
-          "Garden Row Cover",
-
-        description:
-          "Garden row covers help protect kale and collard plants from frost, pests, and harsh weather while extending the growing season.",
-
-        shortDescription:
-          "Extend leafy green production into colder weather.",
-
-        tileBadge:
-          "❄️ Cold Weather Support",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Protects plants from frost",
-
-          "Extends harvest season",
-
-          "Helps reduce pest damage"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4fLhKLj",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-KALE-COLLARDS"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-kale-and-collards-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "growing"
-
-            ],
-
-            useCases: [
-
-              "frost-protection",
-
-              "season-extension"
-
-            ],
-
-            tags: [
-
-              "kale",
-
-              "collards",
-
-              "winter-garden"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "crop-protection",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            70,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-199": {
-
-        id:
-          "PRD-199",
-
-        category:
-          "Chicken Feeding Equipment",
-
-        badge:
-          "🐔 Direct Feed Tool",
-
-        title:
-          "Chicken Treat Hanging Feeder",
-
-        description:
-          "A hanging treat feeder provides a clean way to offer harvested kale and collard leaves to chickens while reducing waste and keeping greens off dirty surfaces.",
-
-        shortDescription:
-          "Offer fresh greens with less waste.",
-
-        tileBadge:
-          "🐔 Flock Feeding",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Reduces wasted leafy greens",
-
-          "Encourages natural foraging behavior",
-
-          "Keeps treats cleaner"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4wBBKre",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-KALE-COLLARDS"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-kale-and-collards-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "feeding"
-
-            ],
-
-            useCases: [
-
-              "fresh-feed-delivery",
-
-              "flock-enrichment"
-
-            ],
-
-            tags: [
-
-              "kale",
-
-              "collards",
-
-              "treat-feeder",
-
-              "chicken-enrichment"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "small-flock"
-
-            ]
-
-          },
-
-
-          productType:
-            "flock-equipment",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            85,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-200": {
-
-        id:
-          "PRD-200",
-
-        category:
-          "Seeds",
-
-        badge:
-          "🎃 Seasonal Feed Crop Starter",
-
-        title:
-          "Pumpkin and Winter Squash Seeds",
-
-        description:
-          "Pumpkin and winter squash seeds allow backyard growers to produce nutrient-rich fruits that can supplement chicken diets. These crops provide both edible flesh and seeds while offering excellent storage potential.",
-
-        shortDescription:
-          "Grow storage crops that provide winter chicken supplements.",
-
-        tileBadge:
-          "🎃 Squash Pick",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Produces stored winter feed resources",
-
-          "Provides both flesh and seeds",
-
-          "Useful for backyard gardens"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4w3rPJI",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-PUMPKIN-WINTER-SQUASH"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-pumpkins-and-winter-squash-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "fruit-production",
-
-              "seed-production",
-
-              "winter-feed-storage"
-
-            ],
-
-            tags: [
-
-              "pumpkin",
-
-              "winter-squash",
-
-              "storage-crop",
-
-              "chicken-feed"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "small-flock",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "seed",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            95,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-
-            "PRD-202": {
-
-        id:
-          "PRD-202",
-
-        category:
-          "Garden Support",
-
-        badge:
-          "🎃 Vine Management",
-
-        title:
-          "Garden Trellis and Vine Support",
-
-        description:
-          "Garden support systems can help manage smaller winter squash varieties by keeping vines organized and improving airflow around plants.",
-
-        shortDescription:
-          "Support and organize squash vines.",
-
-        tileBadge:
-          "🎃 Garden Management",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps organize growing space",
-
-          "Improves airflow",
-
-          "Useful for smaller squash varieties"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/3TnwqsR",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-PUMPKIN-WINTER-SQUASH"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-pumpkins-and-winter-squash-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "growing"
-
-            ],
-
-            useCases: [
-
-              "space-management",
-
-              "vine-support"
-
-            ],
-
-            tags: [
-
-              "pumpkin",
-
-              "squash",
-
-              "trellis"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "garden-support",
-
-
-          productRole:
-            "optional",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            45,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-203": {
-
-        id:
-          "PRD-203",
-
-        category:
-          "Harvest Tools",
-
-        badge:
-          "🎃 Harvest Helper",
-
-        title:
-          "Garden Harvest Knife",
-
-        description:
-          "A harvest knife helps safely cut mature pumpkins and winter squash from vines while reducing damage to the stored fruit.",
-
-        shortDescription:
-          "Harvest mature squash and pumpkins safely.",
-
-        tileBadge:
-          "🎃 Harvest Tool",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Helps harvest mature fruit",
-
-          "Reduces vine damage",
-
-          "Useful across garden crops"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4xjD5mv",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-PUMPKIN-WINTER-SQUASH"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-pumpkins-and-winter-squash-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "harvesting"
-
-            ],
-
-            useCases: [
-
-              "fruit-harvesting"
-
-            ],
-
-            tags: [
-
-              "pumpkin",
-
-              "squash",
-
-              "harvest"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "harvest-tool",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            65,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-204": {
-
-        id:
-          "PRD-204",
-
-        category:
-          "Storage",
-
-        badge:
-          "🧺 Harvest Helper",
-
-        title:
-          "Collapsible Harvest Basket",
-
-        description:
-          "A collapsible harvest basket provides a lightweight and convenient way to collect vegetables, forage crops, seed heads, herbs, and other garden harvests. The ventilated design promotes airflow around freshly harvested produce, while the collapsible construction allows it to fold flat for easy storage when not in use.",
-
-        shortDescription:
-          "Lightweight basket for harvesting vegetables and feed crops.",
-
-        tileBadge:
-          "🌾 Harvest Essential",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Ideal for harvesting vegetables, forage crops, and seed heads",
-
-          "Collapsible design folds flat for compact storage",
-
-          "Ventilated construction helps improve airflow around fresh harvests"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4wzjWN8",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-PUMPKIN-WINTER-SQUASH"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-pumpkins-and-winter-squash-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "harvesting",
-
-              "storage"
-
-            ],
-
-            useCases: [
-
-              "harvesting",
-
-              "produce-collection",
-
-              "forage-harvesting"
-
-            ],
-
-            tags: [
-
-              "harvest",
-
-              "basket",
-
-              "garden",
-
-              "produce",
-
-              "forage"
-
-            ],
-
-            audiences: [
-
-              "homesteader"
-
-            ]
-
-          },
-
-
-          productType:
-            "harvest-equipment",
-
-
-          productRole:
-            "supporting",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            80,
-
-
-          enabled:
-            true
-
-        }
-
-      },
-
-            "PRD-205": {
-
-        id:
-          "PRD-205",
-
-        category:
-          "Seeds",
-
-        badge:
-          "🌱 Protein Crop Starter",
-
-        title:
-          "Field Pea Seed",
-
-        description:
-          "Field pea seed allows backyard growers to establish an annual legume crop that can provide a protein-rich supplemental feed resource for chickens. Field peas are useful for diversified homestead feed production.",
-
-        shortDescription:
-          "Grow a protein-rich legume crop for chickens.",
-
-        tileBadge:
-          "🌱 Field Pea Pick",
-
-        tileButtonText:
-          "View Product →",
-
-        bullets: [
-
-          "Protein-rich annual legume",
-
-          "Useful for grain production",
-
-          "Supports diversified feed systems"
-
-        ],
-
-        buttonText:
-          "View Current Price on Amazon →",
-
-        url:
-          "https://amzn.to/4pS5du9",
-
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
-
-
-        recommendationData: {
-
-          recommendedFor: {
-
-            crops: [
-
-              "CROP-FIELD-PEAS"
-
-            ],
-
-            planners: [
-
-              "feed-crop-planner"
-
-            ],
-
-            calculators: [],
-
-            pageTypes: [
-
-              "growing-field-peas-for-chickens",
-
-              "feed-crop-guide"
-
-            ],
-
-            cropStages: [
-
-              "planning",
-
-              "planting"
-
-            ],
-
-            useCases: [
-
-              "seed-production",
-
-              "protein-feed-production"
-
-            ],
-
-            tags: [
-
-              "field-pea",
-
-              "legume",
-
-              "protein",
-
-              "feed-crop"
-
-            ],
-
-            audiences: [
-
-              "beginner",
-
-              "homesteader",
-
-              "small-flock"
-
-            ]
-
-          },
-
-
-          productType:
-            "seed",
-
-
-          productRole:
-            "primary",
-
-
-          universal:
-            false,
-
-
-          universalCategories: [],
-
-
-          priority:
-            95,
-
-
-          enabled:
-            true
-
-        }
-
-      },
+      "PRD-152",
      
+      "PRD-133",
 
-            "PRD-210": {
+      "PRD-147",
 
-        id:
-          "PRD-210",
+      "PRD-154",
 
-        category:
-          "Seeds",
+      "PRD-121",
 
-        badge:
-          "🌱 Warm-Season Protein Crop",
+      "PRD-122",
 
-        title:
-          "Cowpea Seed",
+      "PRD-134",
 
-        description:
-          "Cowpea seed allows backyard growers to establish a heat-tolerant annual legume crop that can provide supplemental protein resources for chickens. Cowpeas are especially useful in warm climates where other crops may struggle.",
+      "PRD-138"
 
-        shortDescription:
-          "Grow heat-tolerant legumes for chicken supplementation.",
+    ],
 
-        tileBadge:
-          "🌱 Cowpea Pick",
 
-        tileButtonText:
-          "View Product →",
+    purchaseBehavior: {
 
-        bullets: [
 
-          "Excellent warm-season crop",
+      purchaseType:
+        "seasonal",
 
-          "Tolerates heat and drought conditions",
 
-          "Produces protein-rich seed"
+      replacementFrequency:
+        "annual",
 
-        ],
 
-        buttonText:
-          "View Current Price on Amazon →",
+      affiliatePotential:
+        "high"
 
-        url:
-          "https://amzn.to/4wAl4jE",
+    },
 
-        note:
-          "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
 
+    buyerIntent: {
 
-        recommendationData: {
 
-          recommendedFor: {
+      buyerStages: [
 
-            crops: [
+        "planning",
 
-              "CROP-COWPEA"
+        "planting",
 
-            ],
+        "grain-production",
 
-            planners: [
+        "sprouting",
 
-              "feed-crop-planner"
+        "forage-production",
 
-            ],
+        "feed-production",
 
-            calculators: [],
+        "homestead"
 
-            pageTypes: [
+      ],
 
-              "growing-cowpeas-for-chickens",
 
-              "feed-crop-guide"
+      commonProblems: [
 
-            ],
+        "starting-barley-crops",
 
-            cropStages: [
+        "finding-quality-barley-seed",
 
-              "planning",
+        "producing-homegrown-grain",
 
-              "planting"
+        "producing-fresh-sprouted-feed",
 
-            ],
+        "cool-season-feed-production"
 
-            useCases: [
+      ],
 
-              "seed-production",
 
-              "protein-feed-production"
+      idealUsers: [
 
-            ],
+        "beginner-gardener",
 
-            tags: [
+        "feed-crop-grower",
 
-              "cowpea",
+        "small-grain-grower",
 
-              "legume",
+        "homesteader",
 
-              "protein",
+        "backyard-flock-owner"
 
-              "warm-season"
+      ]
 
-            ],
+    },
 
-            audiences: [
 
-              "beginner",
+    recommendedTogether: [
 
-              "homesteader",
+      "PRD-152",
 
-              "small-flock"
+      "PRD-147",
 
-            ]
+      "PRD-154"
 
-          },
+    ],
 
 
-          productType:
-            "seed",
+    recommendationContexts: [
 
+      "feed-crop-planner",
 
-          productRole:
-            "primary",
+      "feed-crop-guide",
 
+      "growing-guide",
 
-          universal:
-            false,
+      "crop-planner"
 
+    ],
 
-          universalCategories: [],
 
+    productRole:
+      "primary",
 
-          priority:
-            95,
 
+    recommendationTier:
+      "core",
 
-          enabled:
-            true
 
-        }
+    userCompatibility: {
 
-      },
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "barley",
+
+      "barley-seed",
+
+      "grain",
+
+      "sprouting",
+
+      "young-forage",
+
+      "feed-crop",
+
+      "cool-season-crop",
+
+      "homestead",
+
+      "chicken-feed"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-152": {
+
+  id:
+    "PRD-152",
+
+
+  category:
+    "Sprouting & Microgreen Equipment",
+
+
+  badge:
+    "🌱 Fresh Greens Production",
+
+
+  title:
+    "Microgreen & Fodder Growing Tray Kit",
+
+
+  description:
+    "A microgreen and fodder growing tray kit provides a compact way to grow fresh shoots, microgreens, cereal grasses, and young fodder indoors or in a protected growing area. It can be used with several feed crops, including sunflower, field peas, kale and collards, amaranth, wheat, barley, oats, field corn, and buckwheat.",
+
+
+  shortDescription:
+    "Grow fresh microgreens, shoots, and young fodder in reusable trays.",
+
+
+  tileBadge:
+    "🌱 Fresh Feed Option",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Supports microgreens, pea shoots, and young cereal grasses",
+
+    "Useful when outdoor forage is limited",
+
+    "Reusable for several feed-crop species"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4z02Tpp",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-SUNFLOWER",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-AMARANTH",
+
+        "CROP-WHEAT",
+
+        "CROP-BARLEY",
+
+        "CROP-OATS",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-BUCKWHEAT"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting",
+
+        "growing",
+
+        "feeding"
+
+      ],
+
+
+      useCases: [
+
+        "microgreen-production",
+
+        "pea-shoot-production",
+
+        "cereal-grass-production",
+
+        "young-fodder-production",
+
+        "fresh-feed-production",
+
+        "indoor-growing",
+
+        "limited-forage-support"
+
+      ],
+
+
+      tags: [
+
+        "microgreens",
+
+        "fodder-trays",
+
+        "sprouting-trays",
+
+        "fresh-greens",
+
+        "indoor-growing",
+
+        "young-fodder"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner",
+
+        "small-space-grower"
+
+      ]
+
+
+    },
+
+
+    productType:
+      "microgreen-fodder-tray-system",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-113",
+
+      "PRD-114",
+
+      "PRD-120",
+
+      "PRD-150"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "reusable",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "indoor-growing",
+
+        "fresh-feed-production",
+
+        "limited-forage",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "limited-outdoor-forage",
+
+        "winter-forage-shortage",
+
+        "small-growing-space",
+
+        "indoor-feed-production",
+
+        "fresh-greens-production"
+
+      ],
+
+
+      idealUsers: [
+
+        "small-flock-owner",
+
+        "small-space-grower",
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-113",
+
+      "PRD-114"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "situational",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [
+
+        "basic-indoor-growing",
+
+        "basic-moisture-management",
+
+        "basic-cleaning-and-sanitation"
+
+      ],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      80,
+
+
+    tags: [
+
+      "microgreen-trays",
+
+      "fodder-trays",
+
+      "sprouting",
+
+      "fresh-greens",
+
+      "indoor-growing",
+
+      "small-space",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-154": {
+
+  id:
+    "PRD-154",
+
+
+  category:
+    "Harvest & Processing",
+
+
+  badge:
+    "🌾 Barley Grain Cleaning",
+
+
+  title:
+    "Barley Cleaning Screen",
+
+
+  description:
+    "A barley cleaning screen helps separate harvested barley kernels from chaff, awns, stems, dust, and other field debris after threshing. Using a screen sized specifically for barley improves cleaning efficiency while minimizing grain loss before storage or feed preparation.",
+
+
+  shortDescription:
+    "Clean harvested barley before storage.",
+
+
+  tileBadge:
+    "🌾 Processing Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Sized specifically for barley kernels",
+
+    "Removes chaff, awns, and harvest debris",
+
+    "Improves grain quality before storage"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/3TvdOqN",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-BARLEY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-barley-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "processing",
+
+        "storage"
+
+      ],
+
+
+      useCases: [
+
+        "grain-cleaning",
+
+        "seed-cleaning",
+
+        "post-harvest-processing",
+
+        "storage-preparation"
+
+      ],
+
+
+      tags: [
+
+        "barley",
+
+        "barley-cleaning-screen",
+
+        "grain-cleaning",
+
+        "processing"
+
+      ],
+
+
+      audiences: [
+
+        "intermediate",
+
+        "advanced",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "grain-cleaning-screen",
+
+
+    requiredProducts: [
+
+      "PRD-150"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-147",
+
+      "PRD-121",
+
+      "PRD-122",
+
+      "PRD-128"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "low"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "processing",
+
+        "storage",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "dirty-barley",
+
+        "excess-chaff",
+
+        "poor-storage-quality",
+
+        "kernel-cleaning"
+
+      ],
+
+
+      idealUsers: [
+
+        "barley-grower",
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-147",
+
+      "PRD-121",
+
+      "PRD-122"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "specialized",
+
+
+    recommendationTier:
+      "specialty",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "intermediate",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [
+
+        "basic-post-harvest-processing"
+
+      ],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      65,
+
+
+    tags: [
+
+      "barley",
+
+      "barley-cleaning-screen",
+
+      "grain-cleaning",
+
+      "post-harvest",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-155": {
+
+  id:
+    "PRD-155",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌾 Crop Starter",
+
+
+  title:
+    "Oat Seed",
+
+
+  description:
+    "Oat seed allows backyard growers to produce a versatile cool-season crop for grain, sprouts, cereal grass, or young forage. Properly harvested and dried oats can support small-scale supplemental feed production, while clean untreated seed may also be used in managed sprouting or fodder systems.",
+
+
+  shortDescription:
+    "Grow oats for grain, sprouts, cereal grass, or young forage.",
+
+
+  tileBadge:
+    "🌾 Top Oat Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces a versatile cool-season grain crop",
+
+    "Can be used for grain, sprouts, or young forage",
+
+    "Stores well after proper harvesting and drying"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4hawc1U",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-OATS"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-oats-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "seed-production",
+
+        "grain-production",
+
+        "feed-production",
+
+        "sprouting",
+
+        "cereal-grass-production",
+
+        "young-forage-production",
+
+        "cool-season-growing"
+
+      ],
+
+
+      tags: [
+
+        "oats",
+
+        "oat-seed",
+
+        "grain",
+
+        "sprouting",
+
+        "cereal-grass",
+
+        "forage",
+
+        "cool-season-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-152",
+
+      "PRD-133",
+
+      "PRD-138",
+
+      "PRD-147",
+
+      "PRD-159",
+
+      "PRD-121",
+
+      "PRD-122",
+
+      "PRD-134"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "annual",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "grain-production",
+
+        "sprouting",
+
+        "forage-production",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-oat-crops",
+
+        "finding-quality-oat-seed",
+
+        "producing-homegrown-grain",
+
+        "producing-fresh-sprouted-feed",
+
+        "cool-season-feed-production"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "feed-crop-grower",
+
+        "small-grain-grower",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-152",
+
+      "PRD-147",
+
+      "PRD-159"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "oats",
+
+      "oat-seed",
+
+      "grain",
+
+      "sprouting",
+
+      "cereal-grass",
+
+      "young-forage",
+
+      "feed-crop",
+
+      "cool-season-crop",
+
+      "homestead",
+
+      "chicken-feed"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-159": {
+
+  id:
+    "PRD-159",
+
+
+  category:
+    "Harvest & Processing",
+
+
+  badge:
+    "🌾 Oat Grain Cleaning",
+
+
+  title:
+    "Oat Cleaning Screen",
+
+
+  description:
+    "An oat cleaning screen helps separate harvested oat kernels from chaff, hulls, stems, dust, and other field debris after threshing. Using a screen sized specifically for oats improves cleaning efficiency while reducing grain loss before storage or feed preparation.",
+
+
+  shortDescription:
+    "Clean harvested oats before storage.",
+
+
+  tileBadge:
+    "🌾 Processing Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Sized specifically for oat kernels",
+
+    "Removes chaff, hulls, and harvest debris",
+
+    "Improves grain quality before storage"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/3TvdOqN",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-OATS"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-oats-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "processing",
+
+        "storage"
+
+      ],
+
+
+      useCases: [
+
+        "grain-cleaning",
+
+        "seed-cleaning",
+
+        "post-harvest-processing",
+
+        "storage-preparation"
+
+      ],
+
+
+      tags: [
+
+        "oats",
+
+        "oat-cleaning-screen",
+
+        "grain-cleaning",
+
+        "processing"
+
+      ],
+
+
+      audiences: [
+
+        "intermediate",
+
+        "advanced",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "grain-cleaning-screen",
+
+
+    requiredProducts: [
+
+      "PRD-155"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-147",
+
+      "PRD-121",
+
+      "PRD-122",
+
+      "PRD-128"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "low"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "processing",
+
+        "storage",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "dirty-oats",
+
+        "excess-chaff",
+
+        "poor-storage-quality",
+
+        "kernel-cleaning"
+
+      ],
+
+
+      idealUsers: [
+
+        "oat-grower",
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-147",
+
+      "PRD-121",
+
+      "PRD-122"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "specialized",
+
+
+    recommendationTier:
+      "specialty",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "intermediate",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [
+
+        "basic-post-harvest-processing"
+
+      ],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      65,
+
+
+    tags: [
+
+      "oats",
+
+      "oat-cleaning-screen",
+
+      "grain-cleaning",
+
+      "post-harvest",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-160": {
+
+  id:
+    "PRD-160",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌱 Crop Starter",
+
+
+  title:
+    "Buckwheat Seed",
+
+
+  description:
+    "Buckwheat seed allows backyard growers to establish a fast-growing warm-season crop that produces supplemental chicken feed while also supporting pollinators, improving soil health, and suppressing weeds. It is one of the most versatile crops for small gardens and homesteads.",
+
+
+  shortDescription:
+    "Grow buckwheat for seed, pollinators, and soil improvement.",
+
+
+  tileBadge:
+    "🌱 Top Buckwheat Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Fast-growing warm-season crop",
+
+    "Produces nutritious seed for chickens",
+
+    "Supports pollinators and soil health"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4pXR66Y",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-BUCKWHEAT"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-buckwheat-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "seed-production",
+
+        "feed-production",
+
+        "soil-improvement",
+
+        "pollinator-support",
+
+        "cover-crop"
+
+      ],
+
+
+      tags: [
+
+        "buckwheat",
+
+        "cover-crop",
+
+        "pollinators",
+
+        "soil-health",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-162",
+
+      "PRD-163",
+
+      "PRD-138",
+
+      "PRD-121",
+
+      "PRD-122"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "annual",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "soil-improvement",
+
+        "pollinator-support",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "poor-soil",
+
+        "low-pollinator-activity",
+
+        "weed-pressure",
+
+        "starting-buckwheat"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "feed-crop-grower",
+
+        "organic-gardener",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-162",
+
+      "PRD-163"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "buckwheat",
+
+      "buckwheat-seed",
+
+      "cover-crop",
+
+      "pollinator",
+
+      "soil-health",
+
+      "homestead",
+
+      "chicken-feed"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-162": {
+
+  id:
+    "PRD-162",
+
+
+  category:
+    "Garden Tools",
+
+
+  badge:
+    "🌱 Row Crop Maintenance",
+
+
+  title:
+    "Stirrup Hoe",
+
+
+  description:
+    "A stirrup hoe (also called an oscillating hoe or scuffle hoe) slices weeds just below the soil surface with minimal soil disturbance. It is one of the most efficient hand tools for maintaining feed crop rows, reducing weed competition, and cultivating around young plants while preserving soil structure.",
+
+
+  shortDescription:
+    "Quickly remove weeds with minimal soil disturbance.",
+
+
+  tileBadge:
+    "🌱 Garden Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Slices weeds just below the soil surface",
+
+    "Disturbs less soil than traditional hoes",
+
+    "Excellent for maintaining feed crop rows"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/45A1vvV",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-SUNFLOWER",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-PROSO-MILLET",
+
+        "CROP-SOYBEANS",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-BUCKWHEAT",
+
+        "CROP-AMARANTH",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-JERUSALEM-ARTICHOKE"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases: [
+
+        "weed-control",
+
+        "row-crop-maintenance",
+
+        "soil-conservation",
+
+        "garden-maintenance"
+
+      ],
+
+
+      tags: [
+
+        "stirrup-hoe",
+
+        "oscillating-hoe",
+
+        "scuffle-hoe",
+
+        "weed-control",
+
+        "garden-tool"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "garden-tool",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-111",
+
+      "PRD-107",
+
+      "PRD-113"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "growing",
+
+        "garden-maintenance",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "weed-pressure",
+
+        "row-maintenance",
+
+        "soil-disturbance",
+
+        "time-consuming-weeding"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "feed-crop-grower",
+
+        "organic-gardener",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-107",
+
+      "PRD-111"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      80,
+
+
+    tags: [
+
+      "stirrup-hoe",
+
+      "oscillating-hoe",
+
+      "scuffle-hoe",
+
+      "weed-control",
+
+      "row-crops",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-163": {
+
+  id:
+    "PRD-163",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🐝 Pollinator Support",
+
+
+  title:
+    "Pollinator Wildflower Seed Mix",
+
+
+  description:
+    "A pollinator wildflower seed mix helps attract bees, butterflies, and other beneficial insects that support a healthy garden ecosystem. When planted near feed crops, it can improve pollinator activity, increase biodiversity, and provide season-long habitat for beneficial insects.",
+
+
+  shortDescription:
+    "Support pollinators and beneficial insects around your garden.",
+
+
+  tileBadge:
+    "🐝 Garden Ecosystem",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Supports bees, butterflies, and other pollinators",
+
+    "Improves biodiversity around feed crops",
+
+    "Provides season-long flowering habitat"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4yTy6u8",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-BUCKWHEAT",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-COWPEA",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "pollinator-support",
+
+        "beneficial-insect-habitat",
+
+        "garden-biodiversity",
+
+        "companion-planting"
+
+      ],
+
+
+      tags: [
+
+        "pollinators",
+
+        "wildflowers",
+
+        "beneficial-insects",
+
+        "garden-diversity",
+
+        "biodiversity"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+    productType:
+      "wildflower-seed-mix",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-160",
+
+      "PRD-120",
+
+      "PRD-162"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "annual",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "pollinator-support",
+
+        "garden-improvement",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "low-pollinator-activity",
+
+        "poor-garden-biodiversity",
+
+        "lack-of-beneficial-insects"
+
+      ],
+
+
+      idealUsers: [
+
+        "organic-gardener",
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-160",
+
+      "PRD-162"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "situational",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      70,
+
+
+    tags: [
+
+      "pollinators",
+
+      "wildflowers",
+
+      "beneficial-insects",
+
+      "garden-biodiversity",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-165": {
+
+  id:
+    "PRD-165",
+
+
+  category:
+    "Planting Stock",
+
+
+  badge:
+    "🌻 Perennial Crop Starter",
+
+
+  title:
+    "Jerusalem Artichoke Tubers",
+
+
+  description:
+    "Jerusalem artichoke tubers are the planting stock used to establish a productive perennial patch. Once established, plants return each year and can produce edible tubers, abundant biomass, and seasonal forage while requiring relatively little replanting effort.",
+
+
+  shortDescription:
+    "Establish a perennial Jerusalem artichoke patch.",
+
+
+  tileBadge:
+    "🌻 Top Sunchoke Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Establishes a productive perennial crop",
+
+    "Returns year after year",
+
+    "Produces tubers and abundant biomass"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4w175Ci",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-JERUSALEM-ARTICHOKE"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-jerusalem-artichokes-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "perennial-establishment",
+
+        "tuber-production",
+
+        "feed-production",
+
+        "biomass-production"
+
+      ],
+
+
+      tags: [
+
+        "jerusalem-artichoke",
+
+        "sunchoke",
+
+        "tubers",
+
+        "perennial",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+    productType:
+      "planting-stock",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-105",
+
+      "PRD-167",
+
+      "PRD-168",
+
+      "PRD-169"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "perennial",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "perennial-growing",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-jerusalem-artichokes",
+
+        "finding-quality-tubers",
+
+        "establishing-perennial-feed-crops",
+
+        "long-term-feed-production"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "perennial-gardener",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-169",
+
+      "PRD-167"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "jerusalem-artichoke",
+
+      "sunchoke",
+
+      "tubers",
+
+      "perennial",
+
+      "homestead",
+
+      "feed-crop"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-167": {
+
+  id:
+    "PRD-167",
+
+
+  category:
+    "Harvest Tools",
+
+
+  badge:
+    "🌻 Root Crop Harvest",
+
+
+  title:
+    "Root Harvest Fork",
+
+
+  description:
+    "A root harvest fork is designed to loosen soil and lift underground crops while helping reduce damage to tubers. It is especially useful for harvesting Jerusalem artichokes, allowing gardeners to recover more tubers with less digging and less breakage than many traditional digging tools.",
+
+
+  shortDescription:
+    "Lift Jerusalem artichoke tubers with less damage.",
+
+
+  tileBadge:
+    "🌻 Harvest Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Designed for harvesting underground crops",
+
+    "Helps reduce damage to tubers",
+
+    "Makes harvesting easier in compacted soil"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4pNEtek",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-JERUSALEM-ARTICHOKE"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-jerusalem-artichokes-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "harvesting"
+
+      ],
+
+
+      useCases: [
+
+        "root-harvesting",
+
+        "tuber-harvesting",
+
+        "crop-maintenance"
+
+      ],
+
+
+      tags: [
+
+        "jerusalem-artichoke",
+
+        "sunchoke",
+
+        "root-crop",
+
+        "tuber-harvest"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "root-harvest-tool",
+
+
+    requiredProducts: [
+
+      "PRD-165"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-105",
+
+      "PRD-168",
+
+      "PRD-169"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "perennial-growing",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "damaged-tubers",
+
+        "difficult-harvest",
+
+        "compacted-soil",
+
+        "recovering-underground-crops"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "root-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-165",
+
+      "PRD-168"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      80,
+
+
+    tags: [
+
+      "root-harvest-fork",
+
+      "jerusalem-artichoke",
+
+      "sunchoke",
+
+      "tuber-harvest",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-168": {
+
+  id:
+    "PRD-168",
+
+
+  category:
+    "Storage",
+
+
+  badge:
+    "🌻 Root Crop Storage",
+
+
+  title:
+    "Root Vegetable Storage Crate",
+
+
+  description:
+    "A ventilated root vegetable storage crate helps protect harvested Jerusalem artichoke tubers during short- and long-term storage. Good airflow helps reduce excess moisture while making harvested tubers easier to organize for feeding, replanting, or later use.",
+
+
+  shortDescription:
+    "Store harvested tubers with proper airflow.",
+
+
+  tileBadge:
+    "🌻 Storage Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Provides airflow around harvested tubers",
+
+    "Useful for storing root crops before feeding or replanting",
+
+    "Helps organize harvested tubers"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4hau4r2",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-JERUSALEM-ARTICHOKE"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-jerusalem-artichokes-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "harvesting",
+
+        "storage"
+
+      ],
+
+
+      useCases: [
+
+        "tuber-storage",
+
+        "root-crop-storage",
+
+        "winter-storage",
+
+        "planting-stock-storage"
+
+      ],
+
+
+      tags: [
+
+        "jerusalem-artichoke",
+
+        "sunchoke",
+
+        "root-storage",
+
+        "tubers"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "root-crop-storage",
+
+
+    requiredProducts: [
+
+      "PRD-165"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-167",
+
+      "PRD-169"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "storage",
+
+        "winter-storage",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "tuber-rot",
+
+        "poor-airflow",
+
+        "harvest-organization",
+
+        "saving-tubers-for-replanting"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "perennial-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-165",
+
+      "PRD-167"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      75,
+
+
+    tags: [
+
+      "root-storage",
+
+      "tuber-storage",
+
+      "jerusalem-artichoke",
+
+      "sunchoke",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-169": {
+
+  id:
+    "PRD-169",
+
+
+  category:
+    "Garden Management",
+
+
+  badge:
+    "🌻 Perennial Management",
+
+
+  title:
+    "Root Barrier Panel",
+
+
+  description:
+    "A root barrier panel helps contain spreading perennial crops such as Jerusalem artichokes by creating an underground boundary that limits tuber expansion. Installing a barrier during bed preparation makes long-term maintenance easier while helping keep neighboring garden areas free from unwanted spread.",
+
+
+  shortDescription:
+    "Help contain spreading Jerusalem artichokes.",
+
+
+  tileBadge:
+    "🌻 Long-Term Control",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Helps contain spreading underground tubers",
+
+    "Makes perennial beds easier to manage",
+
+    "Reduces unwanted spread into nearby garden areas"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4521alG",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-JERUSALEM-ARTICHOKE"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-jerusalem-artichokes-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "perennial-management",
+
+        "root-containment",
+
+        "garden-organization",
+
+        "long-term-bed-management"
+
+      ],
+
+
+      tags: [
+
+        "jerusalem-artichoke",
+
+        "sunchoke",
+
+        "root-barrier",
+
+        "perennial"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+
+    },
+
+
+    productType:
+      "root-barrier",
+
+
+    requiredProducts: [
+
+      "PRD-165"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-105",
+
+      "PRD-167",
+
+      "PRD-168"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "perennial-growing",
+
+        "garden-management",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "spreading-tubers",
+
+        "plants-taking-over-garden",
+
+        "poor-bed-organization",
+
+        "perennial-management"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "perennial-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-165",
+
+      "PRD-167"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      70,
+
+
+    tags: [
+
+      "root-barrier",
+
+      "jerusalem-artichoke",
+
+      "sunchoke",
+
+      "perennial",
+
+      "garden-management",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-170": {
+
+  id:
+    "PRD-170",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌱 Dual-Purpose Crop Starter",
+
+
+  title:
+    "Amaranth Seed",
+
+
+  description:
+    "Amaranth seed allows backyard growers to establish a versatile warm-season crop that produces nutritious leaves, abundant seed, and large amounts of biomass. It is one of the few feed crops that can provide multiple harvest opportunities throughout the growing season while also producing a storable grain-like seed for supplemental chicken feed.",
+
+
+  shortDescription:
+    "Grow amaranth for leaves, seed, and biomass.",
+
+
+  tileBadge:
+    "🌱 Top Amaranth Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces edible leaves and nutrient-rich seed",
+
+    "Excellent warm-season feed crop",
+
+    "Provides abundant biomass for the homestead"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/3RPcxdF",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-AMARANTH"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-amaranth-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "seed-production",
+
+        "leaf-production",
+
+        "feed-production",
+
+        "biomass-production",
+
+        "warm-season-growing"
+
+      ],
+
+
+      tags: [
+
+        "amaranth",
+
+        "amaranth-seed",
+
+        "leafy-green",
+
+        "grain",
+
+        "feed-crop",
+
+        "warm-season"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-173",
+
+      "PRD-174",
+
+      "PRD-138",
+
+      "PRD-121",
+
+      "PRD-122",
+
+      "PRD-134"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "annual",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "leaf-production",
+
+        "seed-production",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-amaranth",
+
+        "finding-quality-seed",
+
+        "growing-feed-crops",
+
+        "producing-homegrown-feed"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "feed-crop-grower",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-173",
+
+      "PRD-174"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "amaranth",
+
+      "amaranth-seed",
+
+      "dual-purpose-crop",
+
+      "grain",
+
+      "leafy-greens",
+
+      "biomass",
+
+      "feed-crop",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-172": {
+
+  id:
+    "PRD-172",
+
+
+  category:
+    "Garden Tools",
+
+
+  badge:
+    "✂️ Harvest Essential",
+
+
+  title:
+    "Pruning Shears",
+
+
+  description:
+    "A quality pair of pruning shears is one of the most versatile tools for harvesting and maintaining feed crops. They make it easy to cut sunflower heads, harvest comfrey leaves, trim kale and collards, prune mulberry branches, and collect mature seed heads while producing clean cuts that help reduce plant damage.",
+
+
+  shortDescription:
+    "A versatile tool for harvesting and maintaining many feed crops.",
+
+
+  tileBadge:
+    "✂️ Garden Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces clean, precise cuts",
+
+    "Excellent for harvesting leaves, stems, and seed heads",
+
+    "Useful across many backyard feed crops"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4yRuv3J",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-SUNFLOWER",
+
+        "CROP-AMARANTH",
+
+        "CROP-COMFREY",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-MULBERRY",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-ALFALFA",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-JERUSALEM-ARTICHOKE"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "growing",
+
+        "harvesting",
+
+        "maintenance"
+
+      ],
+
+
+      useCases: [
+
+        "leaf-harvesting",
+
+        "seed-head-harvesting",
+
+        "plant-maintenance",
+
+        "seasonal-pruning"
+
+      ],
+
+
+      tags: [
+
+        "pruning-shears",
+
+        "garden-tool",
+
+        "harvesting",
+
+        "maintenance"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "garden-tool",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-138",
+
+      "PRD-133",
+
+      "PRD-176"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planting",
+
+        "maintenance",
+
+        "harvesting",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "difficult-harvesting",
+
+        "damaging-plants",
+
+        "seasonal-pruning",
+
+        "harvesting-seed-heads"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-138",
+
+      "PRD-176"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      85,
+
+
+    tags: [
+
+      "pruning-shears",
+
+      "garden-tool",
+
+      "harvesting",
+
+      "plant-maintenance",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-173": {
+
+  id:
+    "PRD-173",
+
+
+  category:
+    "Harvest & Processing",
+
+
+  badge:
+    "🌬️ Harvest Drying",
+
+
+  title:
+    "Multi-Tier Hanging Mesh Drying Rack",
+
+
+  description:
+    "A multi-tier hanging mesh drying rack provides excellent airflow for drying harvested leaves, seed heads, pods, herbs, and other lightweight crops. The zippered mesh enclosure protects drying harvests from insects, birds, dust, and debris while allowing air to circulate freely for faster and more even drying.",
+
+
+  shortDescription:
+    "Dry harvested crops with excellent airflow and insect protection.",
+
+
+  tileBadge:
+    "🌬️ Post-Harvest Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Excellent airflow promotes even drying",
+
+    "Mesh enclosure helps keep insects and debris away",
+
+    "Useful for leaves, seed heads, pods, herbs, and flowers"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4wJ7S2S",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-AMARANTH",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-SOYBEANS",
+
+        "CROP-COMFREY",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA",
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "harvesting",
+
+        "processing"
+
+      ],
+
+
+      useCases: [
+
+        "crop-drying",
+
+        "seed-head-drying",
+
+        "leaf-drying",
+
+        "pod-drying",
+
+        "post-harvest-processing"
+
+      ],
+
+
+      tags: [
+
+        "drying-rack",
+
+        "mesh-drying",
+
+        "post-harvest",
+
+        "harvest-processing"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "drying-rack",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-121",
+
+      "PRD-122",
+
+      "PRD-174"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "processing",
+
+        "seed-saving",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "poor-drying",
+
+        "mold-during-drying",
+
+        "insect-contamination",
+
+        "limited-drying-space"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "seed-saver",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-122"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      75,
+
+
+    tags: [
+
+      "drying-rack",
+
+      "mesh-drying-rack",
+
+      "post-harvest",
+
+      "seed-saving",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-174": {
+
+  id:
+    "PRD-174",
+
+
+  category:
+    "Harvest & Processing",
+
+
+  badge:
+    "🌱 Amaranth Seed Cleaning",
+
+
+  title:
+    "Amaranth Seed Cleaning Screen",
+
+
+  description:
+    "An amaranth seed cleaning screen helps separate tiny harvested amaranth seeds from chaff, flower material, dust, and other plant debris after threshing. Using a screen sized specifically for amaranth improves cleaning efficiency while helping reduce the loss of its very small seeds before storage or feeding.",
+
+
+  shortDescription:
+    "Clean tiny harvested amaranth seeds before storage.",
+
+
+  tileBadge:
+    "🌱 Processing Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Sized specifically for tiny amaranth seeds",
+
+    "Helps remove chaff and flower debris",
+
+    "Reduces seed loss during post-harvest cleaning"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4pVSruT",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-AMARANTH"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-amaranth-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "processing",
+
+        "storage"
+
+      ],
+
+
+      useCases: [
+
+        "seed-cleaning",
+
+        "small-seed-cleaning",
+
+        "post-harvest-processing",
+
+        "storage-preparation"
+
+      ],
+
+
+      tags: [
+
+        "amaranth",
+
+        "amaranth-cleaning-screen",
+
+        "small-seed-cleaning",
+
+        "seed-processing"
+
+      ],
+
+
+      audiences: [
+
+        "intermediate",
+
+        "advanced",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed-cleaning-screen",
+
+
+    requiredProducts: [
+
+      "PRD-170"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-173",
+
+      "PRD-121",
+
+      "PRD-122",
+
+      "PRD-138"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "low"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "processing",
+
+        "storage",
+
+        "seed-saving",
+
+        "feed-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "tiny-seed-loss",
+
+        "excess-chaff",
+
+        "dirty-amaranth-seed",
+
+        "difficult-small-seed-cleaning",
+
+        "poor-storage-preparation"
+
+      ],
+
+
+      idealUsers: [
+
+        "amaranth-grower",
+
+        "small-seed-grower",
+
+        "feed-crop-grower",
+
+        "seed-saver",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-173",
+
+      "PRD-121",
+
+      "PRD-122"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "specialized",
+
+
+    recommendationTier:
+      "specialty",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "intermediate",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [
+
+        "basic-small-seed-processing"
+
+      ],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      65,
+
+
+    tags: [
+
+      "amaranth",
+
+      "amaranth-cleaning-screen",
+
+      "small-seed-cleaning",
+
+      "seed-processing",
+
+      "post-harvest",
+
+      "seed-saving",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-175": {
+
+  id:
+    "PRD-175",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌿 Perennial Crop Starter",
+
+
+  title:
+    "Comfrey Seed",
+
+
+  description:
+    "Comfrey seed allows gardeners to establish a productive perennial planting that can provide repeated harvests of nutrient-rich leaves for supplemental chicken feed, compost production, mulch, and garden improvement. Once established, healthy plants can continue producing for many years with regular harvesting.",
+
+
+  shortDescription:
+    "Establish a perennial comfrey patch for years of harvests.",
+
+
+  tileBadge:
+    "🌿 Top Comfrey Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Establishes a long-lived perennial crop",
+
+    "Produces repeated harvests of nutrient-rich leaves",
+
+    "Excellent for mulch, compost, and supplemental chicken feed"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4x4xXXX",   // Keep your existing Amazon URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-COMFREY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-comfrey-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "perennial-establishment",
+
+        "leaf-production",
+
+        "feed-production",
+
+        "compost-production",
+
+        "mulch-production"
+
+      ],
+
+
+      tags: [
+
+        "comfrey",
+
+        "comfrey-seed",
+
+        "perennial",
+
+        "mulch",
+
+        "compost",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-176",
+
+      "PRD-178"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "perennial",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "feed-production",
+
+        "composting",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-comfrey",
+
+        "finding-comfrey-seed",
+
+        "building-compost",
+
+        "creating-mulch",
+
+        "growing-perennial-feed-crops"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-176",
+
+      "PRD-178"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "comfrey",
+
+      "comfrey-seed",
+
+      "perennial",
+
+      "mulch",
+
+      "compost",
+
+      "feed-crop",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-176": {
+
+  id:
+    "PRD-176",
+
+
+  category:
+    "Garden & Composting",
+
+
+  badge:
+    "♻️ Homestead Essential",
+
+
+  title:
+    "Outdoor Compost Bin",
+
+
+  description:
+    "An outdoor compost bin helps transform garden trimmings, crop residues, chicken manure, bedding, and other organic materials into nutrient-rich compost for future gardens. It is one of the most valuable long-term investments for backyard chicken keepers and homesteaders, reducing waste while creating a sustainable source of organic soil amendments.",
+
+
+  shortDescription:
+    "Turn garden waste and chicken manure into valuable compost.",
+
+
+  tileBadge:
+    "♻️ Composting Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Converts garden waste into nutrient-rich compost",
+
+    "Excellent for chicken manure, bedding, and crop residues",
+
+    "Supports healthier gardens year after year"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-COMFREY",
+
+        "CROP-AMARANTH",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-MULBERRY",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-SOYBEANS",
+
+        "CROP-BUCKWHEAT"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "maintenance",
+
+        "cleanup",
+
+        "composting"
+
+      ],
+
+
+      useCases: [
+
+        "compost-production",
+
+        "garden-cleanup",
+
+        "soil-improvement",
+
+        "organic-gardening",
+
+        "waste-reduction"
+
+      ],
+
+
+      tags: [
+
+        "compost",
+
+        "compost-bin",
+
+        "organic-gardening",
+
+        "soil-health",
+
+        "homestead"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "compost-bin",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-178"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "garden-maintenance",
+
+        "season-cleanup",
+
+        "soil-improvement",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "garden-waste",
+
+        "crop-residue",
+
+        "chicken-manure-management",
+
+        "poor-soil",
+
+        "organic-fertilizer"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-178"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      85,
+
+
+    tags: [
+
+      "compost",
+
+      "compost-bin",
+
+      "garden-cleanup",
+
+      "organic-gardening",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-178": {
+
+  id:
+    "PRD-178",
+
+
+  category:
+    "Harvest Tools",
+
+
+  badge:
+    "🍃 Biomass Collection",
+
+
+  title:
+    "Heavy-Duty Garden Tarp",
+
+
+  description:
+    "A heavy-duty garden tarp makes collecting large amounts of leaves, stalks, vines, and other plant material much easier during harvest and seasonal garden cleanup. It can be dragged through the garden, used to gather bulky crop residues, and quickly transport biomass to compost bins, mulch piles, or other work areas.",
+
+
+  shortDescription:
+    "Move leaves, vines, and garden debris with less effort.",
+
+
+  tileBadge:
+    "🍃 Homestead Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Collects large amounts of garden biomass",
+
+    "Reduces trips while harvesting and cleaning up",
+
+    "Excellent for composting and mulch production"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-COMFREY",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-AMARANTH",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-MULBERRY",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+      cropStages: [
+
+        "harvesting",
+
+        "garden-cleanup"
+
+      ],
+
+      useCases: [
+
+        "biomass-collection",
+
+        "garden-cleanup",
+
+        "composting",
+
+        "mulch-production",
+
+        "crop-transport"
+
+      ],
+
+      tags: [
+
+        "garden-tarp",
+
+        "biomass",
+
+        "compost",
+
+        "mulch",
+
+        "garden-cleanup"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "garden-tarp",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-176"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "10+ years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "harvesting",
+
+        "garden-cleanup",
+
+        "composting",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "moving-large-amounts-of-biomass",
+
+        "garden-cleanup",
+
+        "collecting-leaves",
+
+        "compost-collection"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-176"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      80,
+
+
+    tags: [
+
+      "garden-tarp",
+
+      "garden-cleanup",
+
+      "composting",
+
+      "mulch",
+
+      "biomass",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-180": {
+
+  id:
+    "PRD-180",
+
+
+  category:
+    "Planting Stock",
+
+
+  badge:
+    "🌳 Perennial Feed Tree",
+
+
+  title:
+    "Mulberry Tree Sapling",
+
+
+  description:
+    "A mulberry tree sapling allows backyard chicken keepers to establish a long-lived perennial feed resource that can provide nutritious leaves, seasonal fruit, shade, and valuable biomass for many years. Once established, mulberry trees require relatively little maintenance while becoming one of the most productive feed plants on a homestead.",
+
+
+  shortDescription:
+    "Establish a long-lived tree that produces leaves and fruit for chickens.",
+
+
+  tileBadge:
+    "🌳 Top Mulberry Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces nutritious leaves and seasonal fruit",
+
+    "Long-lived perennial requiring minimal annual maintenance",
+
+    "Excellent feed resource for sustainable homesteads"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xgjpzB",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-mulberry-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "tree-establishment",
+
+        "leaf-production",
+
+        "fruit-production",
+
+        "perennial-feed-production",
+
+        "shade-production"
+
+      ],
+
+
+      tags: [
+
+        "mulberry",
+
+        "tree",
+
+        "perennial",
+
+        "leaves",
+
+        "fruit",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "planting-stock",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-181",
+
+      "PRD-172",
+
+      "PRD-183",
+
+      "PRD-184"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "20+ years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "perennial-growing",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-mulberry-trees",
+
+        "finding-quality-saplings",
+
+        "creating-long-term-feed-sources",
+
+        "planting-perennial-feed-crops"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "permaculture-gardener",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-181",
+
+      "PRD-172",
+
+      "PRD-183"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "mulberry",
+
+      "mulberry-tree",
+
+      "perennial",
+
+      "fruit-tree",
+
+      "feed-crop",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-181": {
+
+  id:
+    "PRD-181",
+
+
+  category:
+    "Soil Amendments",
+
+
+  badge:
+    "🌳 Tree Nutrition",
+
+
+  title:
+    "Fruit Tree & Shrub Fertilizer",
+
+
+  description:
+    "A balanced fruit tree and shrub fertilizer helps young mulberry trees establish strong roots, healthy foliage, and vigorous seasonal growth. Regular feeding during establishment supports long-term productivity and encourages abundant leaf and fruit production for years to come.",
+
+
+  shortDescription:
+    "Support healthy growth and long-term productivity of mulberry trees.",
+
+
+  tileBadge:
+    "🌳 Tree Care",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Supports healthy root establishment",
+
+    "Promotes vigorous leaf and branch growth",
+
+    "Helps maintain productive perennial trees"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-mulberry-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planting",
+
+        "growing"
+
+      ],
+
+
+      useCases: [
+
+        "tree-establishment",
+
+        "soil-fertility",
+
+        "long-term-tree-care"
+
+      ],
+
+
+      tags: [
+
+        "mulberry",
+
+        "fruit-tree",
+
+        "fertilizer",
+
+        "tree-care"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "tree-fertilizer",
+
+
+    requiredProducts: [
+
+      "PRD-180"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-176"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "annual",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planting",
+
+        "tree-care",
+
+        "maintenance",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "slow-tree-growth",
+
+        "poor-foliage",
+
+        "poor-soil",
+
+        "establishing-young-trees"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "orchard-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-180",
+
+      "PRD-176"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      70,
+
+
+    tags: [
+
+      "tree-fertilizer",
+
+      "mulberry",
+
+      "fruit-tree",
+
+      "soil-health",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-182": {
+
+  id:
+    "PRD-182",
+
+
+  category:
+    "Tree Care Tools",
+
+
+  badge:
+    "🌳 Tree Maintenance",
+
+
+  title:
+    "Bypass Tree Loppers",
+
+
+  description:
+    "Bypass tree loppers make it easy to remove larger branches that are too thick for standard pruning shears. They are ideal for maintaining productive mulberry trees by controlling height, improving air circulation, encouraging vigorous new growth, and harvesting leafy branches for supplemental chicken feed.",
+
+
+  shortDescription:
+    "Cut larger tree branches with less effort.",
+
+
+  tileBadge:
+    "🌳 Tree Care Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Cuts branches too large for hand pruners",
+
+    "Helps maintain productive mulberry trees",
+
+    "Encourages vigorous new leafy growth"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-MULBERRY"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-mulberry-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "maintenance",
+
+        "harvesting"
+
+      ],
+
+      useCases: [
+
+        "tree-pruning",
+
+        "tree-maintenance",
+
+        "leaf-harvesting",
+
+        "canopy-management"
+
+      ],
+
+      tags: [
+
+        "mulberry",
+
+        "tree-loppers",
+
+        "tree-care",
+
+        "pruning"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "tree-loppers",
+
+
+    requiredProducts: [
+
+      "PRD-180"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-181",
+
+      "PRD-183"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "10+ years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "tree-maintenance",
+
+        "harvesting",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "overgrown-trees",
+
+        "branches-too-large-for-pruners",
+
+        "tree-height-management",
+
+        "poor-air-circulation"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "orchard-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-181"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      70,
+
+
+    tags: [
+
+      "tree-loppers",
+
+      "mulberry",
+
+      "tree-pruning",
+
+      "tree-maintenance",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-183": {
+
+  id:
+    "PRD-183",
+
+
+  category:
+    "Harvest Tools",
+
+
+  badge:
+    "🍇 Fruit Collection",
+
+
+  title:
+    "Tree Fruit Harvest Collection Mat",
+
+
+  description:
+    "A tree fruit harvest collection mat fits around the base of a tree and catches ripe fruit as it naturally falls from the branches. This helps keep mulberries clean, reduces fruit loss to the ground, minimizes cleanup, and makes harvesting much faster during the peak fruiting season.",
+
+
+  shortDescription:
+    "Catch ripe mulberries as they naturally fall from the tree.",
+
+
+  tileBadge:
+    "🍇 Harvest Helper",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Collects ripe fruit before it contacts the soil",
+
+    "Reduces harvest time and cleanup",
+
+    "Fits around the tree trunk during harvest season"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-mulberry-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "harvesting"
+
+      ],
+
+
+      useCases: [
+
+        "fruit-harvesting",
+
+        "fruit-collection",
+
+        "clean-harvest",
+
+        "reduced-fruit-loss"
+
+      ],
+
+
+      tags: [
+
+        "mulberry",
+
+        "fruit-harvest",
+
+        "collection-mat",
+
+        "tree-harvest"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "fruit-collection-mat",
+
+
+    requiredProducts: [
+
+      "PRD-180"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-182"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "harvesting",
+
+        "fruit-production",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "fruit-falling-on-ground",
+
+        "dirty-fruit",
+
+        "fruit-loss",
+
+        "slow-harvesting"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "fruit-tree-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-182"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      75,
+
+
+    tags: [
+
+      "mulberry",
+
+      "fruit-collection",
+
+      "harvest-mat",
+
+      "fruit-tree",
+
+      "homestead",
+
+      "feed-crops"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-184": {
+
+  id:
+    "PRD-184",
+
+
+  category:
+    "Tree Care",
+
+
+  badge:
+    "💧 Tree Establishment",
+
+
+  title:
+    "Slow-Release Tree Watering Bag",
+
+
+  description:
+    "A slow-release tree watering bag wraps around the trunk of a young tree and gradually releases water directly into the root zone over several hours. This deep watering method encourages stronger root development while reducing runoff and helping newly planted mulberry trees become established during dry weather.",
+
+
+  shortDescription:
+    "Provide deep, slow watering for newly planted trees.",
+
+
+  tileBadge:
+    "💧 Tree Care",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Provides slow, deep watering directly to the root zone",
+
+    "Helps establish young trees during dry periods",
+
+    "Reduces runoff and water waste"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-MULBERRY"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-mulberry-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planting",
+
+        "establishment"
+
+      ],
+
+
+      useCases: [
+
+        "tree-establishment",
+
+        "deep-watering",
+
+        "drought-protection",
+
+        "young-tree-care"
+
+      ],
+
+
+      tags: [
+
+        "mulberry",
+
+        "tree-watering",
+
+        "irrigation",
+
+        "tree-care"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "tree-watering-bag",
+
+
+    requiredProducts: [
+
+      "PRD-180"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-181",
+
+      "PRD-182"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "5-10 years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planting",
+
+        "tree-establishment",
+
+        "maintenance"
+
+      ],
+
+
+      commonProblems: [
+
+        "young-tree-drought-stress",
+
+        "watering-new-trees",
+
+        "poor-root-development"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "backyard-flock-owner",
+
+        "first-time-tree-grower"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-180",
+
+      "PRD-181"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "situational",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      65,
+
+
+    tags: [
+
+      "tree-watering-bag",
+
+      "slow-release-irrigation",
+
+      "mulberry",
+
+      "tree-establishment",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-185": {
+
+  id:
+    "PRD-185",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌿 Perennial Forage Starter",
+
+
+  title:
+    "Alfalfa Seed",
+
+
+  description:
+    "Alfalfa seed allows backyard growers to establish one of the most productive perennial forage crops available. Once established, alfalfa provides repeated harvests of nutrient-rich forage for chickens while also improving soil health through nitrogen fixation and supporting pollinators with seasonal blooms.",
+
+
+  shortDescription:
+    "Establish a productive perennial forage crop for chickens.",
+
+
+  tileBadge:
+    "🌿 Top Alfalfa Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces repeated harvests of nutrient-rich forage",
+
+    "Improves soil through natural nitrogen fixation",
+
+    "Excellent long-term feed crop for homesteads"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-ALFALFA"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-alfalfa-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "forage-production",
+
+        "leaf-production",
+
+        "feed-production",
+
+        "nitrogen-fixation",
+
+        "soil-improvement",
+
+        "pollinator-support"
+
+      ],
+
+
+      tags: [
+
+        "alfalfa",
+
+        "forage",
+
+        "perennial",
+
+        "nitrogen-fixing",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-173",
+
+      "PRD-187",
+
+      "PRD-176",
+
+      "PRD-178"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "5-10 years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "forage-production",
+
+        "soil-improvement",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-alfalfa",
+
+        "finding-quality-seed",
+
+        "building-perennial-forage",
+
+        "improving-soil"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-187",
+
+      "PRD-176"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "alfalfa",
+
+      "alfalfa-seed",
+
+      "forage",
+
+      "perennial",
+
+      "nitrogen-fixing",
+
+      "homestead",
+
+      "feed-crop"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-187": {
+
+  id:
+    "PRD-187",
+
+
+  category:
+    "Harvest Tools",
+
+
+  badge:
+    "🌾 Hand Harvest Tool",
+
+
+  title:
+    "Japanese Hand Sickle",
+
+
+  description:
+    "A Japanese hand sickle is a traditional harvesting tool designed for quickly cutting forage, grasses, grains, legumes, and leafy crops by hand. Its razor-sharp curved blade makes it ideal for harvesting small plots of feed crops while producing clean cuts that encourage healthy regrowth in perennial plants such as alfalfa and clover.",
+
+
+  shortDescription:
+    "Harvest forage, grains, and leafy crops with precision.",
+
+
+  tileBadge:
+    "🌾 Harvest Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Excellent for harvesting forage and small grain crops",
+
+    "Produces clean cuts for healthier regrowth",
+
+    "Ideal for backyard gardens and homesteads"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-ALFALFA",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-COMFREY",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-COWPEA",
+
+        "CROP-WHEAT",
+
+        "CROP-BARLEY",
+
+        "CROP-OATS",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-PROSO-MILLET"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+      cropStages: [
+
+        "harvesting"
+
+      ],
+
+      useCases: [
+
+        "forage-harvesting",
+
+        "grain-harvesting",
+
+        "leaf-harvesting",
+
+        "small-plot-harvesting"
+
+      ],
+
+      tags: [
+
+        "hand-sickle",
+
+        "harvesting",
+
+        "forage",
+
+        "grain"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "hand-sickle",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-138",
+
+      "PRD-173",
+
+      "PRD-176"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "10+ years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "harvesting",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "slow-harvesting",
+
+        "small-plot-harvest",
+
+        "clean-cutting",
+
+        "forage-management"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-138",
+
+      "PRD-173"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      75,
+
+
+    tags: [
+
+      "japanese-sickle",
+
+      "hand-sickle",
+
+      "harvesting",
+
+      "forage",
+
+      "grain",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-190": {
+
+  id:
+    "PRD-190",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🍀 Living Forage Starter",
+
+
+  title:
+    "White Clover Seed",
+
+
+  description:
+    "White clover seed allows backyard chicken keepers to establish a long-lived living groundcover that provides nutritious forage, improves soil through natural nitrogen fixation, supports pollinators, and helps reduce erosion. Once established, white clover can provide years of productive growth while benefiting both the garden and the flock.",
+
+
+  shortDescription:
+    "Establish living forage that benefits both chickens and the garden.",
+
+
+  tileBadge:
+    "🍀 Top White Clover Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Creates long-lasting forage areas",
+
+    "Naturally fixes nitrogen to improve soil",
+
+    "Supports pollinators and beneficial insects"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4w6SYLU",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-WHITE-CLOVER"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-white-clover-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "forage-production",
+
+        "pasture-establishment",
+
+        "nitrogen-fixation",
+
+        "groundcover",
+
+        "pollinator-support",
+
+        "soil-improvement"
+
+      ],
+
+
+      tags: [
+
+        "white-clover",
+
+        "clover",
+
+        "forage",
+
+        "groundcover",
+
+        "nitrogen-fixing",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-126",
+
+      "PRD-191",
+
+      "PRD-192",
+
+      "PRD-193"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "5-10 years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "pasture-management",
+
+        "soil-improvement",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "starting-clover",
+
+        "poor-pasture",
+
+        "building-living-groundcover",
+
+        "improving-soil",
+
+        "creating-chicken-forage"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "pasture-manager",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-126",
+
+      "PRD-191",
+
+      "PRD-192",
+
+      "PRD-193"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "white-clover",
+
+      "clover-seed",
+
+      "living-mulch",
+
+      "nitrogen-fixing",
+
+      "pollinator",
+
+      "pasture",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-192": {
+
+  id:
+    "PRD-192",
+
+
+  category:
+    "Planting Equipment",
+
+
+  badge:
+    "🌱 Planting Essential",
+
+
+  title:
+    "Hand Crank Broadcast Seed Spreader",
+
+
+  description:
+    "A hand crank broadcast seed spreader distributes small seeds quickly and evenly across lawns, gardens, pasture areas, food plots, and forage plantings. It is especially useful for establishing forage crops, cover crops, and small grains where uniform seed distribution improves germination and stand quality.",
+
+
+  shortDescription:
+    "Broadcast small seeds evenly for better crop establishment.",
+
+
+  tileBadge:
+    "🌱 Planting Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Provides even seed distribution",
+
+    "Excellent for forage crops and small grains",
+
+    "Speeds planting while improving coverage"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xgG5jw",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA",
+
+        "CROP-BUCKWHEAT",
+
+        "CROP-WHEAT",
+
+        "CROP-BARLEY",
+
+        "CROP-OATS",
+
+        "CROP-PROSO-MILLET",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-AMARANTH"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "broadcast-seeding",
+
+        "pasture-establishment",
+
+        "cover-crop-planting",
+
+        "small-grain-planting"
+
+      ],
+
+
+      tags: [
+
+        "broadcast-spreader",
+
+        "seed-spreader",
+
+        "planting",
+
+        "forage"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "broadcast-seeder",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-126",
+
+      "PRD-190",
+
+      "PRD-185"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "pasture-establishment",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "uneven-seed-distribution",
+
+        "slow-planting",
+
+        "poor-seed-coverage",
+
+        "establishing-forage"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "pasture-manager",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-126",
+
+      "PRD-190",
+
+      "PRD-185"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      80,
+
+
+    tags: [
+
+      "broadcast-seeder",
+
+      "seed-spreader",
+
+      "planting",
+
+      "pasture",
+
+      "forage",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-193": {
+
+  id:
+    "PRD-193",
+
+
+  category:
+    "Flock Management",
+
+
+  badge:
+    "🐔 Rotational Grazing",
+
+
+  title:
+    "Portable Chicken Grazing Tunnel",
+
+
+  description:
+    "A portable chicken grazing tunnel allows chickens to safely graze living forage while protecting the surrounding garden. The lightweight tunnel can be moved to fresh areas of white clover as forage is consumed, encouraging rotational grazing and giving previously grazed sections time to recover before birds return.",
+
+
+  shortDescription:
+    "Rotate chickens through living forage with minimal effort.",
+
+
+  tileBadge:
+    "🐔 Grazing System",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Supports rotational grazing of living forage",
+
+    "Allows grazed areas time to recover",
+
+    "Encourages natural foraging behavior"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4blrJ94",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-WHITE-CLOVER"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-white-clover-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "growing",
+
+        "feeding"
+
+      ],
+
+
+      useCases: [
+
+        "rotational-grazing",
+
+        "living-forage",
+
+        "pasture-management",
+
+        "controlled-grazing"
+
+      ],
+
+
+      tags: [
+
+        "white-clover",
+
+        "grazing",
+
+        "rotational-grazing",
+
+        "portable-run",
+
+        "forage"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "pasture-manager",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "portable-grazing-system",
+
+
+    requiredProducts: [
+
+      "PRD-190"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-192",
+
+      "PRD-126"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "grazing",
+
+        "pasture-management",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "overgrazing",
+
+        "damaged-forage",
+
+        "poor-pasture-recovery",
+
+        "keeping-chickens-contained"
+
+      ],
+
+
+      idealUsers: [
+
+        "homesteader",
+
+        "pasture-manager",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-190",
+
+      "PRD-192",
+
+      "PRD-126"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      85,
+
+
+    tags: [
+
+      "portable-grazing-tunnel",
+
+      "rotational-grazing",
+
+      "white-clover",
+
+      "living-forage",
+
+      "pasture-management",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-195": {
+
+  id:
+    "PRD-195",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🥬 Cool-Season Crop Starter",
+
+
+  title:
+    "Kale & Collard Seed Collection",
+
+
+  description:
+    "Kale and collard seeds allow backyard chicken keepers to establish productive cool-season leafy greens that provide repeated harvests of nutritious foliage. Unlike many annual feed crops, leaves can be harvested throughout the growing season while plants continue producing fresh growth, extending supplemental feed availability into fall and winter.",
+
+
+  shortDescription:
+    "Grow cool-season leafy greens for repeated harvests.",
+
+
+  tileBadge:
+    "🥬 Top Leafy Green Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces repeated harvests of nutritious leaves",
+
+    "Thrives during cool-season growing conditions",
+
+    "Excellent fresh supplemental feed for backyard flocks"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4yTuUyO",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+
+    recommendedFor: {
+
+
+      crops: [
+
+        "CROP-KALE-COLLARDS"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "growing-kale-and-collards-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "leaf-production",
+
+        "fresh-feed-production",
+
+        "cool-season-growing",
+
+        "extended-harvest"
+
+      ],
+
+
+      tags: [
+
+        "kale",
+
+        "collards",
+
+        "leafy-greens",
+
+        "cool-season",
+
+        "feed-crop"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "small-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-198",
+
+      "PRD-199"
+
+    ],
+
+
+    purchaseBehavior: {
+
+
+      purchaseType:
+        "seasonal",
+
+
+      replacementFrequency:
+        "annual",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "fresh-feed-production",
+
+        "cool-season-gardening",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "extending-feed-season",
+
+        "growing-fresh-greens",
+
+        "cool-season-gardening",
+
+        "providing-fresh-chicken-feed"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172",
+
+      "PRD-198",
+
+      "PRD-199"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "kale",
+
+      "collards",
+
+      "leafy-greens",
+
+      "cool-season",
+
+      "fresh-feed",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+
+  }
+
+
+},
+
+"PRD-197": {
+
+  id:
+    "PRD-197",
+
+
+  category:
+    "Harvest Tools",
+
+
+  badge:
+    "✂️ Harvest Essential",
+
+
+  title:
+    "Garden Harvest Scissors",
+
+
+  description:
+    "Garden harvest scissors are designed for quickly harvesting leafy vegetables, herbs, tender forage crops, and other delicate plant material without crushing or damaging stems. Their compact size and precision make repeated harvesting faster and more comfortable than using larger pruning shears.",
+
+
+  shortDescription:
+    "Harvest leafy crops with clean, precise cuts.",
+
+
+  tileBadge:
+    "✂️ Harvest Tool",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Ideal for harvesting leafy greens and herbs",
+
+    "Produces clean cuts with minimal plant damage",
+
+    "Lightweight and comfortable for repeated harvesting"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA",
+
+        "CROP-COMFREY",
+
+        "CROP-MULBERRY"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+      cropStages: [
+
+        "harvesting"
+
+      ],
+
+      useCases: [
+
+        "leaf-harvesting",
+
+        "fresh-feed-production",
+
+        "repeated-harvesting"
+
+      ],
+
+      tags: [
+
+        "garden-scissors",
+
+        "harvesting",
+
+        "leafy-greens",
+
+        "fresh-feed"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "garden-scissors",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-172",
+
+      "PRD-173",
+
+      "PRD-178"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "10+ years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "harvesting",
+
+        "feeding",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "harvesting-leafy-crops",
+
+        "damaging-leaves",
+
+        "slow-harvesting"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-173",
+
+      "PRD-178"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      70,
+
+
+    tags: [
+
+      "garden-scissors",
+
+      "leaf-harvest",
+
+      "fresh-greens",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-198": {
+
+  id:
+    "PRD-198",
+
+
+  category:
+    "Season Extension",
+
+
+  badge:
+    "🥬 Crop Protection",
+
+
+  title:
+    "Garden Row Cover Tunnel System",
+
+
+  description:
+    "A garden row cover tunnel system supports protective fabric or insect netting above the crop using flexible hoops, creating a lightweight tunnel that shields plants from insect pests, frost, wind, and weather damage. It is especially effective for kale and collards, helping extend the growing season while reducing damage from common brassica pests.",
+
+
+  shortDescription:
+    "Protect leafy crops with a reusable row tunnel system.",
+
+
+  tileBadge:
+    "🥬 Season Extender",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Protects crops from insects and frost",
+
+    "Supports healthier, cleaner leafy greens",
+
+    "Reusable season after season"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-KALE-COLLARDS"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-kale-and-collards-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "growing",
+
+        "maintenance"
+
+      ],
+
+      useCases: [
+
+        "season-extension",
+
+        "frost-protection",
+
+        "insect-protection",
+
+        "crop-protection"
+
+      ],
+
+      tags: [
+
+        "row-cover",
+
+        "low-tunnel",
+
+        "kale",
+
+        "collards",
+
+        "season-extension"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "row-cover-tunnel",
+
+
+    requiredProducts: [
+
+      "PRD-195"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-197",
+
+      "PRD-172"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "5-10 years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "planting",
+
+        "growing",
+
+        "season-extension",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "insect-damage",
+
+        "frost-damage",
+
+        "short-growing-season",
+
+        "protecting-leafy-greens"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "organic-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-195",
+
+      "PRD-197"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      80,
+
+
+    tags: [
+
+      "row-cover-tunnel",
+
+      "low-tunnel",
+
+      "season-extension",
+
+      "crop-protection",
+
+      "kale",
+
+      "collards"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-199": {
+
+  id:
+    "PRD-199",
+
+
+  category:
+    "Chicken Feeding",
+
+
+  badge:
+    "🐔 Flock Enrichment",
+
+
+  title:
+    "Hanging Chicken Treat Basket",
+
+
+  description:
+    "A hanging chicken treat basket provides a simple way to offer fresh greens, vegetables, forage crops, seed heads, and other supplemental feeds while encouraging natural pecking behavior. Suspending feed above the ground helps reduce waste, keeps food cleaner, and provides enrichment that keeps chickens active and engaged.",
+
+
+  shortDescription:
+    "Hang fresh crops for cleaner feeding and natural enrichment.",
+
+
+  tileBadge:
+    "🐔 Feeding Favorite",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Reduces feed waste and contamination",
+
+    "Encourages natural pecking behavior",
+
+    "Works with leafy greens, seed heads, and vegetables"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xxxxxxxx",   // Keep your affiliate URL
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA",
+
+        "CROP-COMFREY",
+
+        "CROP-MULBERRY",
+
+        "CROP-SUNFLOWER",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-COWPEA",
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-AMARANTH",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-PROSO-MILLET"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+      cropStages: [
+
+        "feeding"
+
+      ],
+
+      useCases: [
+
+        "fresh-feed",
+
+        "flock-enrichment",
+
+        "supplemental-feeding",
+
+        "reduced-feed-waste"
+
+      ],
+
+      tags: [
+
+        "treat-basket",
+
+        "fresh-feed",
+
+        "chicken-enrichment",
+
+        "feeding"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "hanging-treat-basket",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-195",
+
+      "PRD-172"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "5-10 years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "feeding",
+
+        "flock-management",
+
+        "enrichment"
+
+      ],
+
+      commonProblems: [
+
+        "feed-waste",
+
+        "dirty-feed",
+
+        "bored-chickens",
+
+        "feeding-fresh-greens"
+
+      ],
+
+      idealUsers: [
+
+        "backyard-flock-owner",
+
+        "homesteader",
+
+        "small-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-172"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "feeding-guide"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      85,
+
+
+    tags: [
+
+      "treat-basket",
+
+      "chicken-enrichment",
+
+      "fresh-feed",
+
+      "supplemental-feeding",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-200": {
+
+  id:
+    "PRD-200",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🎃 Seasonal Feed Crop Starter",
+
+
+  title:
+    "Pumpkin & Winter Squash Seed Collection",
+
+
+  description:
+    "Pumpkin and winter squash seeds allow backyard chicken keepers to grow productive storage crops that provide nutritious supplemental feed throughout the fall and winter. A single planting can produce large fruits containing edible flesh and protein-rich seeds, making these crops one of the best long-term supplemental feed options for homesteads.",
+
+
+  shortDescription:
+    "Grow long-storing pumpkins and squash for seasonal chicken feed.",
+
+
+  tileBadge:
+    "🎃 Top Storage Crop",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces nutritious flesh and edible seeds",
+
+    "Excellent long-term winter storage crop",
+
+    "High yields from relatively few plants"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4w3rPJI",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-PUMPKIN-WINTER-SQUASH"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-pumpkins-and-winter-squash-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+      useCases: [
+
+        "fruit-production",
+
+        "seed-production",
+
+        "winter-feed-storage",
+
+        "supplemental-feeding"
+
+      ],
+
+      tags: [
+
+        "pumpkin",
+
+        "winter-squash",
+
+        "storage-crop",
+
+        "feed-crop",
+
+        "winter-feed"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-202",
+
+      "PRD-203",
+
+      "PRD-199"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "seasonal",
+
+      replacementFrequency:
+        "annual",
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "winter-feed-production",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "growing-winter-feed",
+
+        "storing-chicken-feed",
+
+        "producing-large-harvests",
+
+        "seasonal-feed-shortages"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-202",
+
+      "PRD-203",
+
+      "PRD-199"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "pumpkin",
+
+      "winter-squash",
+
+      "storage-crop",
+
+      "winter-feed",
+
+      "feed-crop",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-202": {
+
+  id:
+    "PRD-202",
+
+
+  category:
+    "Garden Support",
+
+
+  badge:
+    "🌿 Vertical Growing",
+
+
+  title:
+    "Garden Trellis System",
+
+
+  description:
+    "A garden trellis system provides sturdy vertical support for climbing crops such as field peas and cowpeas. Growing vines upward improves airflow, reduces disease pressure, makes harvesting easier, and allows gardeners to produce more food in a smaller growing area.",
+
+
+  shortDescription:
+    "Support climbing crops while saving valuable garden space.",
+
+
+  tileBadge:
+    "🌿 Garden Support",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Supports climbing legumes and vining crops",
+
+    "Improves airflow and simplifies harvesting",
+
+    "Makes better use of limited garden space"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/3TnwqsR",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-FIELD-PEAS",
+
+        "CROP-COWPEA"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-field-peas-for-chickens",
+
+        "growing-cowpeas-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "planting",
+
+        "growing"
+
+      ],
+
+      useCases: [
+
+        "vertical-growing",
+
+        "vine-support",
+
+        "space-management"
+
+      ],
+
+      tags: [
+
+        "trellis",
+
+        "vertical-growing",
+
+        "peas",
+
+        "cowpeas",
+
+        "garden-support"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "garden-trellis",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-205",
+
+      "PRD-210"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "10+ years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "planting",
+
+        "growing",
+
+        "space-management",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "limited-garden-space",
+
+        "vine-support",
+
+        "difficult-harvesting",
+
+        "poor-airflow"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "small-space-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-205",
+
+      "PRD-210"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      70,
+
+
+    tags: [
+
+      "garden-trellis",
+
+      "vertical-growing",
+
+      "vine-support",
+
+      "peas",
+
+      "cowpeas",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-203": {
+
+  id:
+    "PRD-203",
+
+
+  category:
+    "Harvest Tools",
+
+
+  badge:
+    "🎃 Heavy Harvest Tool",
+
+
+  title:
+    "Garden Harvest Knife",
+
+
+  description:
+    "A garden harvest knife is designed to cleanly cut through the thick, tough stems of mature pumpkins and winter squash without damaging the fruit. The strong blade makes harvesting faster, safer, and easier while helping preserve the stem, which can improve storage life for many winter squash varieties.",
+
+
+  shortDescription:
+    "Cleanly harvest pumpkins and winter squash with thick stems.",
+
+
+  tileBadge:
+    "🎃 Harvest Essential",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Cuts thick pumpkin and squash stems with ease",
+
+    "Helps preserve stems for improved storage",
+
+    "Designed for harvesting large garden vegetables"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xjD5mv",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-PUMPKIN-WINTER-SQUASH"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-pumpkins-and-winter-squash-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "harvesting"
+
+      ],
+
+      useCases: [
+
+        "fruit-harvesting",
+
+        "storage-harvest",
+
+        "large-fruit-harvesting"
+
+      ],
+
+      tags: [
+
+        "pumpkin",
+
+        "winter-squash",
+
+        "harvest-knife",
+
+        "harvesting"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "harvest-knife",
+
+
+    requiredProducts: [
+
+      "PRD-200"
+
+    ],
+
+
+    relatedProducts: [
+
+      "PRD-199"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+      replacementFrequency:
+        "10+ years",
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "harvesting",
+
+        "winter-feed-production",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "cutting-thick-stems",
+
+        "damaging-pumpkins-during-harvest",
+
+        "preserving-storage-life"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "vegetable-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-200",
+
+      "PRD-199"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      75,
+
+
+    tags: [
+
+      "harvest-knife",
+
+      "pumpkin",
+
+      "winter-squash",
+
+      "vegetable-harvest",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-205": {
+
+  id:
+    "PRD-205",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌱 Cool-Season Protein Crop",
+
+
+  title:
+    "Field Pea Seed",
+
+
+  description:
+    "Field pea seed allows backyard chicken keepers to establish a productive cool-season legume that provides protein-rich supplemental feed while naturally improving soil through nitrogen fixation. Field peas can be harvested as tender forage, fresh peas, or mature dry seed, making them one of the most versatile feed crops for diversified homesteads.",
+
+
+  shortDescription:
+    "Grow a productive cool-season legume for chickens and healthier soil.",
+
+
+  tileBadge:
+    "🌱 Top Field Pea Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Produces protein-rich forage and mature seed",
+
+    "Naturally fixes nitrogen to improve soil",
+
+    "Excellent cool-season crop for diversified gardens"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4pS5du9",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-FIELD-PEAS"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-field-peas-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+      useCases: [
+
+        "protein-feed-production",
+
+        "seed-production",
+
+        "forage-production",
+
+        "nitrogen-fixation",
+
+        "soil-improvement"
+
+      ],
+
+      tags: [
+
+        "field-pea",
+
+        "legume",
+
+        "protein",
+
+        "cool-season",
+
+        "feed-crop"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-126",
+
+      "PRD-187",
+
+      "PRD-173"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "seasonal",
+
+      replacementFrequency:
+        "annual",
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "protein-feed-production",
+
+        "soil-improvement",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "growing-protein-crops",
+
+        "cool-season-feed-production",
+
+        "improving-soil",
+
+        "starting-field-peas"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-126",
+
+      "PRD-187",
+
+      "PRD-173"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "field-pea",
+
+      "pea-seed",
+
+      "protein-crop",
+
+      "nitrogen-fixing",
+
+      "cool-season",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-210": {
+
+  id:
+    "PRD-210",
+
+
+  category:
+    "Seeds",
+
+
+  badge:
+    "🌱 Warm-Season Protein Crop",
+
+
+  title:
+    "Cowpea Seed",
+
+
+  description:
+    "Cowpea seed allows backyard chicken keepers to establish a productive warm-season legume that provides protein-rich supplemental feed while naturally improving soil through nitrogen fixation. Cowpeas thrive during hot, dry weather and can produce nutritious forage, edible pods, and mature seed throughout the growing season.",
+
+
+  shortDescription:
+    "Grow a heat-tolerant protein crop that also improves soil.",
+
+
+  tileBadge:
+    "🌱 Top Cowpea Pick",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Excellent heat- and drought-tolerant legume",
+
+    "Produces protein-rich forage and mature seed",
+
+    "Naturally fixes nitrogen to improve soil"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4wAl4jE",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-COWPEA"
+
+      ],
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+      calculators: [],
+
+      pageTypes: [
+
+        "growing-cowpeas-for-chickens",
+
+        "feed-crop-guide"
+
+      ],
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+      useCases: [
+
+        "protein-feed-production",
+
+        "seed-production",
+
+        "forage-production",
+
+        "nitrogen-fixation",
+
+        "soil-improvement"
+
+      ],
+
+      tags: [
+
+        "cowpea",
+
+        "legume",
+
+        "protein",
+
+        "warm-season",
+
+        "feed-crop"
+
+      ],
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "seed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-126",
+
+      "PRD-187",
+
+      "PRD-173"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "seasonal",
+
+      replacementFrequency:
+        "annual",
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "planning",
+
+        "planting",
+
+        "protein-feed-production",
+
+        "soil-improvement",
+
+        "homestead"
+
+      ],
+
+      commonProblems: [
+
+        "growing-protein-crops",
+
+        "poor-summer-production",
+
+        "hot-weather-gardening",
+
+        "improving-soil",
+
+        "starting-cowpeas"
+
+      ],
+
+      idealUsers: [
+
+        "homesteader",
+
+        "feed-crop-grower",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-126",
+
+      "PRD-187",
+
+      "PRD-173"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    recommendationTier:
+      "core",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+      advancedOnly:
+        false,
+
+      skillRequirements: [],
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    universal:
+      false,
+
+
+    universalCategories: [],
+
+
+    priority:
+      100,
+
+
+    tags: [
+
+      "cowpea",
+
+      "cowpea-seed",
+
+      "protein-crop",
+
+      "warm-season",
+
+      "nitrogen-fixing",
+
+      "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
 
     };  
