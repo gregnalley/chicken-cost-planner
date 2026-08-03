@@ -8419,71 +8419,75 @@ function normalizeRegistrationReport(
 
 
   function getEvaluationUsePathResults(
+  evaluation
+) {
+
+  const usePaths =
     evaluation
+      ?.usePaths;
+
+
+  const possibleCollections = [
+
+    usePaths
+      ?.results,
+
+    usePaths
+      ?.evaluations,
+
+    usePaths
+      ?.paths,
+
+    usePaths
+      ?.rankedPaths,
+
+    usePaths
+      ?.evaluated,
+
+    evaluation
+      ?.usePathResults
+
+  ];
+
+
+  for (
+    const collection of
+      possibleCollections
   ) {
 
-    const usePaths =
-      evaluation
-        ?.usePaths;
-
-
-    const possibleCollections = [
-
-  usePaths
-    ?.results,
-
-  usePaths
-    ?.evaluations,
-
-  usePaths
-    ?.paths,
-
-  usePaths
-    ?.rankedPaths,
-
-  usePaths
-    ?.evaluated,
-
-  evaluation
-    ?.usePathResults
-
-];
-
-
-    for (
-      const collection of
-        possibleCollections
+    if (
+      Array.isArray(
+        collection
+      ) &&
+      collection.length >
+        0
     ) {
 
-      if (
-        Array.isArray(
-          collection
-        )
-      ) {
-
-        return collection;
-
-      }
+      return collection;
 
     }
 
-    if (
-  usePaths
-    ?.bestPath &&
-  typeof usePaths
-    .bestPath ===
-    "object"
-) {
+  }
 
-  return [
-    usePaths.bestPath
-  ];
 
-}
+  if (
+    usePaths
+      ?.bestPath &&
+    typeof usePaths
+      .bestPath ===
+      "object"
+  ) {
 
-    return [];
+    return [
+      usePaths.bestPath
+    ];
 
   }
+
+
+  return [];
+
+}
 
 
 
