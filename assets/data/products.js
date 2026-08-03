@@ -16710,7 +16710,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/3Vw4Qfj",
+    "https://amzn.to/4cdEyCs",
 
 
   note:
@@ -18023,7 +18023,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4m0k7GW",
+    "https://amzn.to/44XMBQ2",
 
 
   note:
@@ -18353,7 +18353,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/45qRrJH",
+    "https://amzn.to/4hbymhM",
 
 
   note:
@@ -20020,7 +20020,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/3IQOvTQ",
+    "https://amzn.to/3TsAKqJ",
 
 
   note:
@@ -20338,7 +20338,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4lNpY1E",
+    "https://amzn.to/4c9KLzh",
 
 
   note:
@@ -21661,7 +21661,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/45zbMlR",
+    "https://amzn.to/4h5CQGL",
 
 
   note:
@@ -22298,7 +22298,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4m3R6Qe",
+    "https://amzn.to/4xjHBRW",
 
 
   note:
@@ -24228,7 +24228,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4fKj8Pn",
+    "https://amzn.to/3RHHccS",
 
 
   note:
@@ -28084,7 +28084,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xHxkeT",
+    "https://amzn.to/3TvdOqN",
 
 
   note:
@@ -32703,7 +32703,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4yRuv3J",
+    "https://amzn.to/4yXpYck",
 
 
   note:
@@ -33033,7 +33033,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4wJ7S2S",
+    "https://amzn.to/4hKelPy",
 
 
   note:
@@ -33703,7 +33703,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4x4xXXX",   // Keep your existing Amazon URL
+    "https://amzn.to/4fRLlTC", 
 
 
   note:
@@ -34027,7 +34027,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xgjjrJ",   // Keep your existing affiliate link
+    "https://amzn.to/4xgjjrJ",  
 
 
   note:
@@ -37774,7 +37774,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4yTuUyO",
+    "https://amzn.to/4hLxCA9",
 
 
   note:
@@ -38092,7 +38092,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4hLiBhH",   // Keep your existing affiliate link
+    "https://amzn.to/4hLiBhH",
 
 
   note:
