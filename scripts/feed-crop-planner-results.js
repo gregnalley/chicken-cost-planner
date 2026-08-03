@@ -2539,19 +2539,25 @@ function renderAlternativePlanProducts(
             }
 
             return renderProductRecommendationCard(
-  recommendation,
-  {
-    groupLabel,
+              recommendation,
+              {
+                groupLabel,
 
-    cropLabel:
-      cropName
-  }
-);
+                cropLabel,
+
+                compact:
+                  true
+              }
+            );
 
           })
           .join("")}
 
       </div>
+
+      <p class="feed-crop-product-grid-disclosure">
+        As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.
+      </p>
 
     </section>
   `;
