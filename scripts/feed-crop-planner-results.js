@@ -2413,23 +2413,19 @@ function renderTopCropProducts(
             }
 
             return renderProductRecommendationCard(
-  recommendation,
-  {
-    groupLabel,
-    cropLabel,
-    compact:
-      true
-  }
-);
+              recommendation,
+              {
+                groupLabel,
+
+                cropLabel:
+                  cropName
+              }
+            );
 
           })
           .join("")}
 
-            </div>
-
-      <p class="feed-crop-product-grid-disclosure">
-        As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.
-      </p>
+      </div>
 
     </section>
   `;
