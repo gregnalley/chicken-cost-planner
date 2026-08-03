@@ -715,17 +715,50 @@ if (
     "object"
 ) {
 
-  const practicalRatings =
-    availableSpaceTypes
-      .map(function(
-        spaceType
-      ) {
+  const practicalSpaceTypeMap =
+  Object.freeze({
 
-        return practicalSuitability[
+    "raised-bed":
+      "raisedBed",
+
+    "container":
+      "container",
+
+    "small-garden-plot":
+      "smallGardenPlot",
+
+    "large-garden-plot":
+      "largeGardenPlot",
+
+    "field-or-acreage":
+      "fieldOrAcreage",
+
+    "yard-or-landscape":
+      "yardOrLandscape",
+
+    "orchard-or-food-forest":
+      "orchardOrFoodForest"
+
+  });
+
+
+const practicalRatings =
+  availableSpaceTypes
+    .map(function(
+      spaceType
+    ) {
+
+      const practicalSpaceType =
+        practicalSpaceTypeMap[
           spaceType
-        ];
+        ] ||
+        spaceType;
 
-      })
+      return practicalSuitability[
+        practicalSpaceType
+      ];
+
+    })
       .filter(function(
         rating
       ) {
