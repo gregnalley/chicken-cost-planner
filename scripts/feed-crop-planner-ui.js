@@ -272,29 +272,50 @@
   */
 
 
-  function normalizeText(
-    value
+ function normalizeText(
+  value
+) {
+
+  if (
+    value ===
+      null ||
+    value ===
+      undefined
   ) {
+    return "";
+  }
 
-    if (
-      value ===
-        null ||
-      value ===
-        undefined
-    ) {
-      return "";
-    }
 
-    return String(
+  if (
+    typeof value ===
+      "object" &&
+    !Array.isArray(
       value
     )
-      .replace(
-        /\s+/g,
-        " "
-      )
-      .trim();
+  ) {
+
+    value =
+      value.message ||
+      value.label ||
+      value.summary ||
+      value.description ||
+      value.reason ||
+      value.id ||
+      "";
 
   }
+
+
+  return String(
+    value
+  )
+    .replace(
+      /\s+/g,
+      " "
+    )
+    .trim();
+
+}
 
 
 
