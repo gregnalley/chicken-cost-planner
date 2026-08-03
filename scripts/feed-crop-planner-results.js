@@ -2543,12 +2543,14 @@ function renderAlternativePlanProducts(
             }
 
             return renderProductRecommendationCard(
-              recommendation,
-              {
-                groupLabel,
-                cropLabel
-              }
-            );
+  recommendation,
+  {
+    groupLabel,
+
+    cropLabel:
+      cropName
+  }
+);
 
           })
           .join("")}
