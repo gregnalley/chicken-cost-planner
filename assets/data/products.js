@@ -34027,7 +34027,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+    "https://amzn.to/4xgjjrJ",   // Keep your existing affiliate link
 
 
   note:
@@ -34365,7 +34365,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+    "https://amzn.to/4fJS8P4", 
 
 
   note:
@@ -34988,7 +34988,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+    "https://amzn.to/4fO5av6", 
 
 
   note:
@@ -35292,7 +35292,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+    "https://amzn.to/4w5HCI7",  
 
 
   note:
@@ -35577,7 +35577,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+    "https://amzn.to/4pSGTZ9",  
 
 
   note:
@@ -35881,7 +35881,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your affiliate URL
+    "https://amzn.to/3TC15m8",  
 
 
   note:
@@ -36183,7 +36183,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+    "https://amzn.to/4g3JRXz", 
 
 
   note:
@@ -36507,7 +36507,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+    "https://amzn.to/4pVT33F",  
 
 
   note:
@@ -36916,8 +36916,6 @@ window.BCP_PRODUCTS = {
 
       "PRD-126",
 
-      "PRD-191",
-
       "PRD-192",
 
       "PRD-193"
@@ -36993,8 +36991,6 @@ window.BCP_PRODUCTS = {
     recommendedTogether: [
 
       "PRD-126",
-
-      "PRD-191",
 
       "PRD-192",
 
@@ -38096,7 +38092,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate link
+    "https://amzn.to/4hLiBhH",   // Keep your existing affiliate link
 
 
   note:
@@ -38382,7 +38378,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your existing affiliate URL
+    "https://amzn.to/4fLhKLj",  
 
 
   note:
@@ -38671,7 +38667,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4xxxxxxxx",   // Keep your affiliate URL
+    "https://amzn.to/4wBBKre", 
 
 
   note:
@@ -40365,6 +40361,351 @@ window.BCP_PRODUCTS = {
       "nitrogen-fixing",
 
       "homestead"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-211": {
+
+  id:
+    "PRD-211",
+
+
+  category:
+    "Garden Infrastructure",
+
+
+  badge:
+    "🌱 Backyard Essential",
+
+
+  title:
+    "Raised Garden Bed Kit",
+
+
+  description:
+    "A raised garden bed provides an ideal growing environment for backyard chicken feed crops by improving drainage, reducing soil compaction, and allowing complete control over soil quality. Raised beds make gardening more productive in small spaces and simplify planting, maintenance, and harvesting throughout the growing season.",
+
+
+  shortDescription:
+    "Create healthier soil and grow more food in less space.",
+
+
+  tileBadge:
+    "🌱 Garden Upgrade",
+
+
+  tileButtonText:
+    "View Product →",
+
+
+  bullets: [
+
+    "Improves drainage and soil quality",
+
+    "Ideal for small-space backyard gardens",
+
+    "Supports nearly every feed crop in the planner"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4w1z0Ck",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+  recommendationData: {
+
+    recommendedFor: {
+
+      crops: [
+
+        "CROP-SUNFLOWER",
+
+        "CROP-COWPEA",
+
+        "CROP-PROSO-MILLET",
+
+        "CROP-PUMPKIN-WINTER-SQUASH",
+
+        "CROP-KALE-COLLARDS",
+
+        "CROP-WHITE-CLOVER",
+
+        "CROP-ALFALFA",
+
+        "CROP-MULBERRY",
+
+        "CROP-FIELD-CORN",
+
+        "CROP-GRAIN-SORGHUM",
+
+        "CROP-OATS",
+
+        "CROP-WHEAT",
+
+        "CROP-JERUSALEM-ARTICHOKE",
+
+        "CROP-BARLEY",
+
+        "CROP-BUCKWHEAT",
+
+        "CROP-AMARANTH",
+
+        "CROP-COMFREY",
+
+        "CROP-SOYBEANS",
+
+        "CROP-FIELD-PEAS"
+
+      ],
+
+
+      planners: [
+
+        "feed-crop-planner"
+
+      ],
+
+
+      calculators: [],
+
+
+      pageTypes: [
+
+        "feed-crop-guide",
+
+        "growing-guide"
+
+      ],
+
+
+      cropStages: [
+
+        "planning",
+
+        "planting"
+
+      ],
+
+
+      useCases: [
+
+        "raised-bed-gardening",
+
+        "small-space-gardening",
+
+        "soil-improvement",
+
+        "garden-establishment"
+
+      ],
+
+
+      tags: [
+
+        "raised-bed",
+
+        "garden-bed",
+
+        "garden-infrastructure",
+
+        "small-space",
+
+        "homestead"
+
+      ],
+
+
+      audiences: [
+
+        "beginner",
+
+        "homesteader",
+
+        "small-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "raised-garden-bed",
+
+
+    requiredProducts: [],
+
+
+    relatedProducts: [
+
+      "PRD-005",
+
+      "PRD-006",
+
+      "PRD-185"
+
+    ],
+
+
+    purchaseBehavior: {
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "10+ years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent: {
+
+      buyerStages: [
+
+        "planning",
+
+        "garden-establishment",
+
+        "small-space-gardening",
+
+        "homestead"
+
+      ],
+
+
+      commonProblems: [
+
+        "poor-native-soil",
+
+        "limited-garden-space",
+
+        "poor-drainage",
+
+        "starting-a-garden"
+
+      ],
+
+
+      idealUsers: [
+
+        "beginner-gardener",
+
+        "homesteader",
+
+        "urban-gardener",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether: [
+
+      "PRD-005",
+
+      "PRD-006"
+
+    ],
+
+
+    recommendationContexts: [
+
+      "feed-crop-planner",
+
+      "feed-crop-guide",
+
+      "growing-guide",
+
+      "crop-planner"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    recommendationTier:
+      "recommended",
+
+
+    userCompatibility: {
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      skillRequirements: [],
+
+
+      spaceConsiderations: [
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+    universal:
+      true,
+
+
+    universalCategories: [
+
+      "garden-establishment",
+
+      "small-space-gardening"
+
+    ],
+
+
+    priority:
+      85,
+
+
+    tags: [
+
+      "raised-bed",
+
+      "garden-infrastructure",
+
+      "small-space-gardening",
+
+      "homestead",
+
+      "soil-improvement"
 
     ],
 
