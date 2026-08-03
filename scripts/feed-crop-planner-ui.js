@@ -8013,115 +8013,131 @@ function normalizeRegistrationReport(
 
 
   function getEligibilityStatus(
+  evaluation
+) {
+
+  const eligibility =
     evaluation
-  ) {
-
-    const eligibility =
-      evaluation
-        ?.eligibility;
+      ?.eligibility;
 
 
-    if (
-      eligibility
-        ?.eligible ===
+  if (
+    evaluation
+      ?.eligible ===
         true
-    ) {
-
-      return {
-        eligible:
-          true,
-
-        label:
-          "Eligible"
-      };
-
-    }
-
-
-    if (
-      eligibility
-        ?.eligible ===
-        false
-    ) {
-
-      return {
-        eligible:
-          false,
-
-        label:
-          "Rejected"
-      };
-
-    }
-
-
-    const status =
-      getEvaluationPhaseStatus(
-        evaluation,
-        "eligibility"
-      );
-
-
-    if (
-      [
-        "eligible",
-        "passed",
-        "pass"
-      ].includes(
-        status
-      )
-    ) {
-
-      return {
-        eligible:
-          true,
-
-        label:
-          formatIdentifier(
-            status
-          )
-      };
-
-    }
-
-
-    if (
-      [
-        "rejected",
-        "failed",
-        "ineligible",
-        "hard-failure"
-      ].includes(
-        status
-      )
-    ) {
-
-      return {
-        eligible:
-          false,
-
-        label:
-          formatIdentifier(
-            status
-          )
-      };
-
-    }
-
+    ||
+    eligibility
+      ?.eligible ===
+        true
+    ||
+    eligibility
+      ?.passed ===
+        true
+  ) {
 
     return {
       eligible:
-        null,
+        true,
 
       label:
-        status
-          ? formatIdentifier(
-              status
-            )
-          : "Not Reported"
+        "Eligible"
     };
 
   }
+
+
+  if (
+    evaluation
+      ?.eligible ===
+        false
+    ||
+    eligibility
+      ?.eligible ===
+        false
+    ||
+    eligibility
+      ?.passed ===
+        false
+  ) {
+
+    return {
+      eligible:
+        false,
+
+      label:
+        "Rejected"
+    };
+
+  }
+
+
+  const status =
+    getEvaluationPhaseStatus(
+      evaluation,
+      "eligibility"
+    );
+
+
+  if (
+    [
+      "eligible",
+      "passed",
+      "pass"
+    ].includes(
+      status
+    )
+  ) {
+
+    return {
+      eligible:
+        true,
+
+      label:
+        formatIdentifier(
+          status
+        )
+    };
+
+  }
+
+
+  if (
+    [
+      "rejected",
+      "failed",
+      "ineligible",
+      "hard-failure"
+    ].includes(
+      status
+    )
+  ) {
+
+    return {
+      eligible:
+        false,
+
+      label:
+        formatIdentifier(
+          status
+        )
+    };
+
+  }
+
+
+  return {
+    eligible:
+      null,
+
+    label:
+      status
+        ? formatIdentifier(
+            status
+          )
+        : "Not Reported"
+  };
+
+}
 
 
 
