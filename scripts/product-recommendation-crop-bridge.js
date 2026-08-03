@@ -1540,35 +1540,65 @@ function isUniversalCropPlannerProduct(
   */
 
   function isHelpfulAddition(
-    product
-  ){
+  product
+){
 
-    const role =
-      getProductRole(
-        product
-      );
-
-
-    const tier =
-      getRecommendationTier(
-        product
-      );
-
-
-    return (
-
-      HELPFUL_ADDITION_ROLES.includes(
-        role
-      )
-
-      ||
-
-      tier ===
-        "situational"
-
+  const role =
+    getProductRole(
+      product
     );
 
+
+  const tier =
+    getRecommendationTier(
+      product
+    );
+
+
+  /*
+    Explicit situational products belong in the
+    Helpful Additions group.
+  */
+
+  if(
+    tier ===
+      "situational"
+  ){
+
+    return true;
+
   }
+
+
+  /*
+    Core, recommended, and specialty tiers are handled
+    by the Primary or Recommended Tools groups.
+
+    This prevents an optional role from overriding a
+    stronger recommendation tier.
+  */
+
+  if(
+    tier ===
+      "core"
+    ||
+    tier ===
+      "recommended"
+    ||
+    tier ===
+      "specialty"
+  ){
+
+    return false;
+
+  }
+
+
+  return HELPFUL_ADDITION_ROLES.includes(
+    role
+  );
+
+}
 
 
 
@@ -1578,40 +1608,60 @@ function isUniversalCropPlannerProduct(
   */
 
   function isRecommendedTool(
-    product
-  ){
+  product
+){
 
-    const role =
-      getProductRole(
-        product
-      );
-
-
-    const tier =
-      getRecommendationTier(
-        product
-      );
-
-
-    return (
-
-      RECOMMENDED_TOOL_ROLES.includes(
-        role
-      )
-
-      ||
-
-      tier ===
-        "recommended"
-
-      ||
-
-      tier ===
-        "specialty"
-
+  const role =
+    getProductRole(
+      product
     );
 
+
+  const tier =
+    getRecommendationTier(
+      product
+    );
+
+
+  /*
+    Explicit recommendation tiers take precedence
+    over broader product-role labels.
+  */
+
+  if(
+    tier ===
+      "recommended"
+    ||
+    tier ===
+      "specialty"
+  ){
+
+    return true;
+
   }
+
+
+  /*
+    Situational products belong in Helpful Additions,
+    even if their role would otherwise qualify them
+    as a recommended tool.
+  */
+
+  if(
+    tier ===
+      "situational"
+  ){
+
+    return false;
+
+  }
+
+
+  return RECOMMENDED_TOOL_ROLES.includes(
+    role
+  );
+
+}
 
 
 
@@ -1680,51 +1730,58 @@ function isUniversalCropPlannerProduct(
 
 
       if(
-        isGardenEssential(
-          product
-        )
-      ){
+  isGardenEssential(
+    product
+  )
+){
 
-        gardenEssentials.push(
-          item
-        );
-
-
-        return;
-
-      }
+  gardenEssentials.push(
+    item
+  );
 
 
-      if(
-        isHelpfulAddition(
-          product
-        )
-      ){
+  return;
 
-        helpfulAdditions.push(
-          item
-        );
+}
 
 
-        return;
+/*
+  Check recommended tools before helpful additions.
 
-      }
+  This allows a specialty or recommended tier to
+  take precedence over a broader optional role.
+*/
+
+if(
+  isRecommendedTool(
+    product
+  )
+){
+
+  recommendedTools.push(
+    item
+  );
 
 
-      if(
-        isRecommendedTool(
-          product
-        )
-      ){
+  return;
 
-        recommendedTools.push(
-          item
-        );
+}
 
 
-        return;
+if(
+  isHelpfulAddition(
+    product
+  )
+){
 
-      }
+  helpfulAdditions.push(
+    item
+  );
+
+
+  return;
+
+}
 
 
       helpfulAdditions.push(
