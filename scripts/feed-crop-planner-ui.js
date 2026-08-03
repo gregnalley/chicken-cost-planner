@@ -2405,7 +2405,408 @@
 
   }
 
+/*
+  ============================================================
+  PRACTICAL SPACE VALIDATION
+  ============================================================
+*/
 
+function validateCropPracticalSpace(
+  crop,
+  validation
+) {
+
+  const record =
+    getCropPlannerRecord(
+      crop
+    );
+
+  const practicalSpace =
+    record
+      ?.space
+      ?.practicalSpace;
+
+  if (
+    !hasOwnField(
+      record?.space,
+      "practicalSpace"
+    )
+  ) {
+
+    addCropValidationWarning(
+      validation,
+      "MISSING_PRACTICAL_SPACE",
+      "The crop does not yet contain practical-space decision data.",
+      "space.practicalSpace"
+    );
+
+    return;
+
+  }
+
+
+  if (
+    !isPlainObject(
+      practicalSpace
+    )
+  ) {
+
+    addCropValidationError(
+      validation,
+      "INVALID_PRACTICAL_SPACE",
+      "The practicalSpace section must be an object.",
+      "space.practicalSpace"
+    );
+
+    return;
+
+  }
+
+
+  const config =
+    getPlannerConfig();
+
+  const vocabulary =
+    config
+      ?.practicalSpace ||
+    {};
+
+
+  const requiredFields = [
+
+    "growthForm",
+
+    "productionScale",
+
+    "spaceTypeSuitability",
+
+    "areaRequirements",
+
+    "smallSpaceEfficiency",
+
+    "repeatedHarvestValue",
+
+    "dedicatedSpaceRequired",
+
+    "permanentPlacementRequired",
+
+    "containmentConcern",
+
+    "notes"
+
+  ];
+
+
+  requiredFields.forEach(
+    fieldName => {
+
+      if (
+        !hasOwnField(
+          practicalSpace,
+          fieldName
+        )
+      ) {
+
+        addCropValidationError(
+          validation,
+          "MISSING_PRACTICAL_SPACE_FIELD",
+          `The practicalSpace section is missing "${fieldName}".`,
+          `space.practicalSpace.${fieldName}`
+        );
+
+      }
+
+    }
+  );
+
+
+  const validateAllowedValue =
+    function validateAllowedValue(
+      value,
+      allowedValues,
+      fieldPath,
+      fieldLabel
+    ) {
+
+      if (
+        value ===
+          null
+      ) {
+        return;
+      }
+
+
+      if (
+        !Array.isArray(
+          allowedValues
+        ) ||
+        !allowedValues.includes(
+          value
+        )
+      ) {
+
+        addCropValidationError(
+          validation,
+          "INVALID_PRACTICAL_SPACE_VALUE",
+          `${fieldLabel} contains an unsupported value: "${value}".`,
+          fieldPath
+        );
+
+      }
+
+    };
+
+
+  validateAllowedValue(
+    practicalSpace.growthForm,
+    vocabulary.growthForms,
+    "space.practicalSpace.growthForm",
+    "growthForm"
+  );
+
+
+  validateAllowedValue(
+    practicalSpace.productionScale,
+    vocabulary.productionScales,
+    "space.practicalSpace.productionScale",
+    "productionScale"
+  );
+
+
+  validateAllowedValue(
+    practicalSpace.smallSpaceEfficiency,
+    vocabulary.efficiencyLevels,
+    "space.practicalSpace.smallSpaceEfficiency",
+    "smallSpaceEfficiency"
+  );
+
+
+  validateAllowedValue(
+    practicalSpace.repeatedHarvestValue,
+    vocabulary.repeatedHarvestLevels,
+    "space.practicalSpace.repeatedHarvestValue",
+    "repeatedHarvestValue"
+  );
+
+
+  validateAllowedValue(
+    practicalSpace.containmentConcern,
+    vocabulary.containmentLevels,
+    "space.practicalSpace.containmentConcern",
+    "containmentConcern"
+  );
+
+
+  const spaceTypeSuitability =
+    practicalSpace.spaceTypeSuitability;
+
+
+  if (
+    !isPlainObject(
+      spaceTypeSuitability
+    )
+  ) {
+
+    addCropValidationError(
+      validation,
+      "INVALID_SPACE_TYPE_SUITABILITY",
+      "spaceTypeSuitability must be an object.",
+      "space.practicalSpace.spaceTypeSuitability"
+    );
+
+  } else {
+
+    const requiredSpaceTypes =
+      Array.isArray(
+        vocabulary.spaceTypes
+      )
+        ? vocabulary.spaceTypes
+        : [];
+
+
+    requiredSpaceTypes.forEach(
+      spaceType => {
+
+        if (
+          !hasOwnField(
+            spaceTypeSuitability,
+            spaceType
+          )
+        ) {
+
+          addCropValidationError(
+            validation,
+            "MISSING_SPACE_TYPE_SUITABILITY",
+            `spaceTypeSuitability is missing "${spaceType}".`,
+            `space.practicalSpace.spaceTypeSuitability.${spaceType}`
+          );
+
+          return;
+
+        }
+
+
+        validateAllowedValue(
+          spaceTypeSuitability[
+            spaceType
+          ],
+          vocabulary
+            .spaceTypeSuitabilityLevels,
+          `space.practicalSpace.spaceTypeSuitability.${spaceType}`,
+          `spaceTypeSuitability.${spaceType}`
+        );
+
+      }
+    );
+
+  }
+
+
+  const areaRequirements =
+    practicalSpace.areaRequirements;
+
+
+  if (
+    !isPlainObject(
+      areaRequirements
+    )
+  ) {
+
+    addCropValidationError(
+      validation,
+      "INVALID_AREA_REQUIREMENTS",
+      "areaRequirements must be an object.",
+      "space.practicalSpace.areaRequirements"
+    );
+
+  } else {
+
+    [
+      "minimumPracticalSquareFeet",
+      "preferredSquareFeet"
+    ].forEach(
+      fieldName => {
+
+        const value =
+          areaRequirements[
+            fieldName
+          ];
+
+
+        if (
+          value !==
+            null &&
+          (
+            !Number.isFinite(
+              value
+            ) ||
+            value <
+              0
+          )
+        ) {
+
+          addCropValidationError(
+            validation,
+            "INVALID_PRACTICAL_AREA_VALUE",
+            `${fieldName} must be a non-negative number or null.`,
+            `space.practicalSpace.areaRequirements.${fieldName}`
+          );
+
+        }
+
+      }
+    );
+
+
+    validateAllowedValue(
+      areaRequirements.areaRule,
+      vocabulary.areaRules,
+      "space.practicalSpace.areaRequirements.areaRule",
+      "areaRequirements.areaRule"
+    );
+
+
+    validateAllowedValue(
+      areaRequirements.areaBasis,
+      vocabulary.areaBases,
+      "space.practicalSpace.areaRequirements.areaBasis",
+      "areaRequirements.areaBasis"
+    );
+
+
+    if (
+      Number.isFinite(
+        areaRequirements
+          .minimumPracticalSquareFeet
+      ) &&
+      Number.isFinite(
+        areaRequirements
+          .preferredSquareFeet
+      ) &&
+      areaRequirements
+        .preferredSquareFeet <
+      areaRequirements
+        .minimumPracticalSquareFeet
+    ) {
+
+      addCropValidationError(
+        validation,
+        "INVALID_PRACTICAL_AREA_ORDER",
+        "preferredSquareFeet cannot be smaller than minimumPracticalSquareFeet.",
+        "space.practicalSpace.areaRequirements"
+      );
+
+    }
+
+  }
+
+
+  [
+    "dedicatedSpaceRequired",
+    "permanentPlacementRequired"
+  ].forEach(
+    fieldName => {
+
+      const value =
+        practicalSpace[
+          fieldName
+        ];
+
+
+      if (
+        typeof value !==
+          "boolean"
+      ) {
+
+        addCropValidationError(
+          validation,
+          "INVALID_PRACTICAL_SPACE_BOOLEAN",
+          `${fieldName} must be true or false.`,
+          `space.practicalSpace.${fieldName}`
+        );
+
+      }
+
+    }
+  );
+
+
+  if (
+    !Array.isArray(
+      practicalSpace.notes
+    )
+  ) {
+
+    addCropValidationError(
+      validation,
+      "INVALID_PRACTICAL_SPACE_NOTES",
+      "The practicalSpace notes field must be an array.",
+      "space.practicalSpace.notes"
+    );
+
+  }
+
+}
 
   /*
     ============================================================
@@ -3370,6 +3771,11 @@
 
 
     validateRequiredCropSections(
+      crop,
+      validation
+    );
+
+    validateCropPracticalSpace(
       crop,
       validation
     );
