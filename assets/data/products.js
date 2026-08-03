@@ -27967,7 +27967,7 @@ window.BCP_PRODUCTS = {
 
 
     recommendationTier:
-      "situational",
+      "recommended",
 
 
     userCompatibility: {
