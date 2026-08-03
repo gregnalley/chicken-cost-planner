@@ -8429,22 +8429,25 @@ function normalizeRegistrationReport(
 
     const possibleCollections = [
 
-      usePaths
-        ?.results,
+  usePaths
+    ?.results,
 
-      usePaths
-        ?.evaluations,
+  usePaths
+    ?.evaluations,
 
-      usePaths
-        ?.paths,
+  usePaths
+    ?.paths,
 
-      usePaths
-        ?.rankedPaths,
+  usePaths
+    ?.rankedPaths,
 
-      evaluation
-        ?.usePathResults
+  usePaths
+    ?.evaluated,
 
-    ];
+  evaluation
+    ?.usePathResults
+
+];
 
 
     for (
@@ -8464,6 +8467,19 @@ function normalizeRegistrationReport(
 
     }
 
+    if (
+  usePaths
+    ?.bestPath &&
+  typeof usePaths
+    .bestPath ===
+    "object"
+) {
+
+  return [
+    usePaths.bestPath
+  ];
+
+}
 
     return [];
 
