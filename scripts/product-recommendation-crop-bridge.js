@@ -111,7 +111,46 @@
   const RECOMMENDED_TOGETHER_SCORE =
     8;
 
+  const CROP_PLANNER_UNIVERSAL_CATEGORIES =
+  Object.freeze([
 
+    "garden-establishment",
+
+    "small-space-gardening",
+
+    "garden-tools",
+
+    "garden-maintenance",
+
+    "soil-health",
+
+    "soil-fertility",
+
+    "soil-improvement",
+
+    "soil-testing",
+
+    "planting",
+
+    "planting-equipment",
+
+    "irrigation",
+
+    "watering",
+
+    "harvesting",
+
+    "harvest-tools",
+
+    "processing",
+
+    "storage",
+
+    "composting",
+
+    "homestead-tools"
+
+  ]);
 
   /*
     Product roles that usually belong in the primary
@@ -611,37 +650,80 @@
 
   }
 
-
-
   /*
-    Determine whether a product is a relevant universal
-    product for the Feed Crop Planner.
-  */
+  Determine whether a universal product belongs to
+  a garden-related category appropriate for the
+  Feed Crop Planner.
+*/
 
-  function isUniversalCropPlannerProduct(
-    product
-  ){
+function hasCropPlannerUniversalCategory(
+  product
+){
 
-    const recommendationData =
-      getRecommendationData(
-        product
-      );
-
-
-    return (
-
-      recommendationData.universal ===
-        true
-
-      &&
-
-      supportsFeedCropPlanner(
-        product
-      )
-
+  const recommendationData =
+    getRecommendationData(
+      product
     );
 
-  }
+
+  const universalCategories =
+    normalizeArray(
+      recommendationData.universalCategories
+    );
+
+
+  return universalCategories.some(function(category){
+
+    return CROP_PLANNER_UNIVERSAL_CATEGORIES
+      .includes(
+        category
+      );
+
+  });
+
+}
+
+  /*
+  Determine whether a product is a relevant universal
+  product for the Feed Crop Planner.
+
+  Universal products must:
+
+  - Be marked universal
+  - Explicitly support the Feed Crop Planner
+  - Belong to a garden-related universal category
+*/
+
+function isUniversalCropPlannerProduct(
+  product
+){
+
+  const recommendationData =
+    getRecommendationData(
+      product
+    );
+
+
+  return (
+
+    recommendationData.universal ===
+      true
+
+    &&
+
+    supportsFeedCropPlanner(
+      product
+    )
+
+    &&
+
+    hasCropPlannerUniversalCategory(
+      product
+    )
+
+  );
+
+}
 
 
 
@@ -1881,6 +1963,9 @@
   namespace.RECOMMENDED_TOGETHER_SCORE =
     RECOMMENDED_TOGETHER_SCORE;
 
+  namespace.CROP_PLANNER_UNIVERSAL_CATEGORIES =
+    CROP_PLANNER_UNIVERSAL_CATEGORIES;  
+
 
   namespace.PRIMARY_PRODUCT_ROLES =
     PRIMARY_PRODUCT_ROLES;
@@ -1948,6 +2033,9 @@
 
   namespace.supportsFeedCropPlanner =
     supportsFeedCropPlanner;
+
+  namespace.hasCropPlannerUniversalCategory =
+    hasCropPlannerUniversalCategory;
 
 
   namespace.isUniversalCropPlannerProduct =
