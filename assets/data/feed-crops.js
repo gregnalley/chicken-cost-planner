@@ -76686,6 +76686,87 @@ mechanicalProcessingSuitabilityScore:
             "Future planner models should calculate production from canopy footprint, management style, and years after establishment rather than conventional spacing.",
             "Permanent site planning is far more important than maximizing planting density."
           ]
+        },
+      
+              directFacts: {
+          orchardSuitable:
+            true,
+
+          // Keep all existing directFacts content exactly as it is.
+        },
+
+        practicalSpace: {
+
+          growthForm:
+            "tree",
+
+          productionScale:
+            "permanent-landscape",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "unsuitable",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "poor",
+
+            largeGardenPlot:
+              "conditional",
+
+            fieldOrAcreage:
+              "good",
+
+            yardOrLandscape:
+              "excellent",
+
+            orchardOrFoodForest:
+              "excellent"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              null,
+
+            preferredSquareFeet:
+              null,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "very-poor",
+
+          repeatedHarvestValue:
+            "high",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            true,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Mulberry requires permanent woody-plant space and should not be recommended for a conventional raised bed.",
+            "Mature size varies substantially among full-sized trees, dwarf cultivars, pollards, coppiced plants, and managed hedgerows.",
+            "Container growing may be possible for compact cultivars, but containers are generally inefficient for meaningful poultry-feed production.",
+            "Orchards, food forests, pasture edges, unused lawn, hedgerows, and silvopasture systems are the most practical locations.",
+            "The crop should be evaluated using managed canopy footprint and long-term site commitment rather than annual garden-bed density."
+          ]
+
         }
       },
 
