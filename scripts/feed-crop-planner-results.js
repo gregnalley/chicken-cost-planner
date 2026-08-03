@@ -1314,6 +1314,812 @@ console.log(
   }
 
   /*
+  Return the standardized crop ID from a scored
+  recommendation result.
+
+  The Version 2 engine may expose the crop ID through
+  more than one property, so this helper checks the
+  known locations in a consistent order.
+*/
+
+function getCropResultId(
+  result
+) {
+
+  if (!result) {
+    return null;
+  }
+
+  const identity =
+    getCropIdentity(
+      result
+    );
+
+  return firstDefined(
+    result.cropId,
+    result.crop?.id,
+    result.cropRecord?.id,
+    result.cropRecord
+      ?.plannerData
+      ?.identity
+      ?.id,
+    identity.id,
+    identity.cropId,
+    null
+  );
+}
+
+/*
+  Build the product-recommendation profile for one
+  scored crop result.
+
+  This translates the selected crop, its best use path,
+  and the visitor's questionnaire answers into the
+  structure expected by the Product Crop Bridge.
+*/
+
+function createProductProfileForResult(
+  result,
+  answers
+) {
+
+  if (
+    !result ||
+    !global.BCPProductCropBridge ||
+    typeof global.BCPProductCropBridge
+      .getCropProductProfile !==
+      "function"
+  ) {
+    return null;
+  }
+
+  const cropId =
+    getCropResultId(
+      result
+    );
+
+  if (!cropId) {
+    return null;
+  }
+
+  const usePath =
+    getRawUsePath(
+      result
+    );
+
+  const processingTasks =
+    asArray(
+      usePath
+        ?.requiredProcessingTasks
+    );
+
+  const feedingMethods =
+    asArray(
+      usePath
+        ?.suitableFeedingMethods
+    );
+
+  const harvestProducts =
+    asArray(
+      usePath
+        ?.harvestProducts
+    );
+
+  const goalPriorities =
+    asArray(
+      answers
+        ?.preferences
+        ?.goalPriorities
+    )
+      .map(
+        priority =>
+          priority?.goal
+      )
+      .filter(Boolean);
+
+  const cropStages = [
+    "planning",
+    "planting",
+    "growing",
+    "harvesting",
+    "processing",
+    "storage",
+    "feeding"
+  ];
+
+  const useCases =
+    uniqueStrings([
+      ...processingTasks,
+      ...feedingMethods,
+      ...harvestProducts,
+      ...goalPriorities
+    ]);
+
+  const problems =
+    uniqueStrings([
+      ...processingTasks,
+      ...(usePath?.dryingRequired === true
+        ? [
+            "drying-harvest"
+          ]
+        : []),
+      ...(answers
+        ?.water
+        ?.irrigationAvailable ===
+          false
+        ? [
+            "limited-irrigation"
+          ]
+        : [])
+    ]);
+
+  return global.BCPProductCropBridge
+    .getCropProductProfile({
+
+      cropId,
+
+      cropStages,
+
+      useCases,
+
+      buyerStage:
+        "homestead",
+
+      userType:
+        "backyard-flock-owner",
+
+      problems,
+
+      experienceLevel:
+        firstDefined(
+          answers
+            ?.preferences
+            ?.experienceLevel,
+          "beginner"
+        ),
+
+      spaceLevel:
+        firstDefined(
+          answers
+            ?.space
+            ?.spaceLevel,
+          null
+        ),
+
+      flockSize:
+        firstDefined(
+          answers
+            ?.flock
+            ?.flockSize,
+          null
+        ),
+
+      budgetLevel:
+        firstDefined(
+          answers
+            ?.preferences
+            ?.budgetLevel,
+          null
+        ),
+
+      storageAvailable:
+        answers
+          ?.harvest
+          ?.storageAvailable ===
+          true,
+
+      irrigationAvailable:
+        answers
+          ?.water
+          ?.irrigationAvailable ===
+          true,
+
+      growingMethods:
+        asArray(
+          answers
+            ?.space
+            ?.availableSpaceTypes
+        ),
+
+      goals:
+        goalPriorities
+
+    });
+}
+
+/*
+  Return the four product recommendations shown directly
+  beneath the Best Overall Match card.
+
+  Selection order:
+  - One primary crop product
+  - Up to two recommended tools
+  - One helpful addition or garden essential
+
+  Duplicate product IDs are removed automatically.
+*/
+
+function getTopCropProductRecommendations(
+  result,
+  answers
+) {
+
+  if (
+    !result ||
+    !global.BCPProductCropBridge ||
+    typeof global.BCPProductCropBridge
+      .getGroupedCropProductRecommendations !==
+      "function"
+  ) {
+    return [];
+  }
+
+  const cropProfile =
+    createProductProfileForResult(
+      result,
+      answers
+    );
+
+  if (!cropProfile) {
+    return [];
+  }
+
+  const groupedRecommendations =
+    global.BCPProductCropBridge
+      .getGroupedCropProductRecommendations(
+        cropProfile
+      );
+
+  const selectedProducts = [
+    ...asArray(
+      groupedRecommendations.primary
+    ).slice(
+      0,
+      1
+    ),
+
+    ...asArray(
+      groupedRecommendations
+        .recommendedTools
+    ).slice(
+      0,
+      2
+    ),
+
+    ...asArray(
+      groupedRecommendations
+        .helpfulAdditions
+    ).slice(
+      0,
+      1
+    )
+  ];
+
+  /*
+    If no helpful addition was available, use one
+    garden essential for the fourth card.
+  */
+
+  if (
+    selectedProducts.length < 4
+  ) {
+    selectedProducts.push(
+      ...asArray(
+        groupedRecommendations
+          .gardenEssentials
+      ).slice(
+        0,
+        4 -
+        selectedProducts.length
+      )
+    );
+  }
+
+  /*
+    If one of the preferred groups did not contain
+    enough products, fill remaining positions from
+    the complete ranked list.
+  */
+
+  if (
+    selectedProducts.length < 4
+  ) {
+    const alreadySelectedIds =
+      new Set(
+        selectedProducts.map(
+          item =>
+            item.productId
+        )
+      );
+
+    const remainingProducts =
+      asArray(
+        groupedRecommendations.allRanked
+      )
+        .filter(
+          item =>
+            item &&
+            item.productId &&
+            !alreadySelectedIds.has(
+              item.productId
+            )
+        )
+        .slice(
+          0,
+          4 -
+          selectedProducts.length
+        );
+
+    selectedProducts.push(
+      ...remainingProducts
+    );
+  }
+
+  const seenProductIds =
+    new Set();
+
+  return selectedProducts
+    .filter(item => {
+
+      if (
+        !item ||
+        !item.productId ||
+        seenProductIds.has(
+          item.productId
+        )
+      ) {
+        return false;
+      }
+
+      seenProductIds.add(
+        item.productId
+      );
+
+      return true;
+
+    })
+    .slice(
+      0,
+      4
+    );
+}
+
+/*
+  Return the strongest primary product for one scored
+  crop result.
+
+  This is used to reserve one crop-specific product
+  card for each Strong Alternative.
+*/
+
+function getPrimaryProductRecommendationForResult(
+  result,
+  answers
+) {
+
+  if (
+    !result ||
+    !global.BCPProductCropBridge ||
+    typeof global.BCPProductCropBridge
+      .getGroupedCropProductRecommendations !==
+      "function"
+  ) {
+    return null;
+  }
+
+  const cropProfile =
+    createProductProfileForResult(
+      result,
+      answers
+    );
+
+  if (!cropProfile) {
+    return null;
+  }
+
+  const groupedRecommendations =
+    global.BCPProductCropBridge
+      .getGroupedCropProductRecommendations(
+        cropProfile
+      );
+
+  const primaryRecommendation =
+    asArray(
+      groupedRecommendations.primary
+    )[0];
+
+  if (
+    primaryRecommendation &&
+    primaryRecommendation.productId
+  ) {
+    return primaryRecommendation;
+  }
+
+  /*
+    Fallback:
+    If a crop does not contain a formally grouped
+    primary product, use its highest-ranked exact
+    crop match.
+  */
+
+  const cropId =
+    getCropResultId(
+      result
+    );
+
+  return (
+    asArray(
+      groupedRecommendations.allRanked
+    )
+      .find(item => {
+
+        const productCrops =
+          global.BCPProductCropBridge
+            .getProductCrops(
+              item.product
+            );
+
+        return (
+          cropId &&
+          productCrops.includes(
+            cropId
+          )
+        );
+
+      }) ||
+    null
+  );
+}
+
+/*
+  Return the eight products shown beneath the
+  Strong Alternatives section.
+
+  Selection strategy:
+  - Reserve one primary product for each alternative crop
+  - Exclude products already shown under the top crop
+  - Combine recommendations from all displayed crops
+  - Prefer products relevant to multiple selected crops
+  - Remove duplicate product IDs
+  - Fill up to eight total cards
+*/
+
+function getAlternativePlanProductRecommendations(
+  displayedRecommendations,
+  answers,
+  topCropProducts
+) {
+
+  const recommendations =
+    asArray(
+      displayedRecommendations
+    );
+
+  if (
+    recommendations.length < 2 ||
+    !global.BCPProductCropBridge
+  ) {
+    return [];
+  }
+
+  const topProductIds =
+    new Set(
+      asArray(
+        topCropProducts
+      )
+        .map(
+          item =>
+            item?.productId
+        )
+        .filter(Boolean)
+    );
+
+  const selectedProducts =
+    [];
+
+  const selectedProductIds =
+    new Set();
+
+  /*
+    The first recommendation is the Best Overall Match.
+
+    All remaining recommendations are the crops displayed
+    inside the Strong Alternatives section.
+  */
+
+  const alternativeResults =
+    recommendations.slice(
+      1
+    );
+
+  /*
+    Reserve one primary product for each alternative crop.
+  */
+
+  alternativeResults.forEach(function(
+    result
+  ) {
+
+    const primaryProduct =
+      getPrimaryProductRecommendationForResult(
+        result,
+        answers
+      );
+
+    if (
+      !primaryProduct ||
+      !primaryProduct.productId ||
+      topProductIds.has(
+        primaryProduct.productId
+      ) ||
+      selectedProductIds.has(
+        primaryProduct.productId
+      )
+    ) {
+      return;
+    }
+
+    selectedProducts.push(
+      primaryProduct
+    );
+
+    selectedProductIds.add(
+      primaryProduct.productId
+    );
+
+  });
+
+  /*
+    Build a combined pool from every displayed crop,
+    including the Best Overall Match.
+
+    This allows shared products such as harvest tools,
+    irrigation equipment, composting products, and garden
+    infrastructure to qualify when they support the overall
+    three-crop plan.
+  */
+
+  const combinedCandidates =
+    [];
+
+  recommendations.forEach(function(
+    result
+  ) {
+
+    const cropProfile =
+      createProductProfileForResult(
+        result,
+        answers
+      );
+
+    if (!cropProfile) {
+      return;
+    }
+
+    const groupedRecommendations =
+      global.BCPProductCropBridge
+        .getGroupedCropProductRecommendations(
+          cropProfile
+        );
+
+    asArray(
+      groupedRecommendations.allRanked
+    ).forEach(function(item) {
+
+      if (
+        !item ||
+        !item.productId ||
+        topProductIds.has(
+          item.productId
+        ) ||
+        selectedProductIds.has(
+          item.productId
+        )
+      ) {
+        return;
+      }
+
+      combinedCandidates.push({
+        ...item,
+
+        matchedCropId:
+          getCropResultId(
+            result
+          )
+      });
+
+    });
+
+  });
+
+  /*
+    Merge duplicate candidates.
+
+    A product recommended for several selected crops receives
+    a higher cropMatchCount and keeps its highest individual
+    recommendation score.
+  */
+
+  const candidateMap =
+    new Map();
+
+  combinedCandidates.forEach(function(
+    item
+  ) {
+
+    const existing =
+      candidateMap.get(
+        item.productId
+      );
+
+    if (!existing) {
+      candidateMap.set(
+        item.productId,
+        {
+          ...item,
+
+          matchedCropIds:
+            item.matchedCropId
+              ? [
+                  item.matchedCropId
+                ]
+              : [],
+
+          cropMatchCount:
+            item.matchedCropId
+              ? 1
+              : 0
+        }
+      );
+
+      return;
+    }
+
+    if (
+      item.matchedCropId &&
+      !existing.matchedCropIds.includes(
+        item.matchedCropId
+      )
+    ) {
+      existing.matchedCropIds.push(
+        item.matchedCropId
+      );
+
+      existing.cropMatchCount +=
+        1;
+    }
+
+    if (
+      Number(item.score) >
+      Number(existing.score)
+    ) {
+      existing.score =
+        item.score;
+
+      existing.baseScore =
+        item.baseScore;
+
+      existing.specificity =
+        item.specificity;
+
+      existing.specificityScore =
+        item.specificityScore;
+
+      existing.relationshipScore =
+        item.relationshipScore;
+
+      existing.scoreBreakdown =
+        item.scoreBreakdown;
+
+      existing.reasons =
+        item.reasons;
+    }
+
+  });
+
+  /*
+    Prefer products that support multiple selected crops.
+
+    The original product score remains important, but each
+    additional selected-crop match receives a substantial
+    combined-plan bonus.
+  */
+
+  const rankedSharedCandidates =
+    Array.from(
+      candidateMap.values()
+    )
+      .map(function(item) {
+
+        const sharedCropBonus =
+          Math.max(
+            0,
+            item.cropMatchCount -
+            1
+          ) * 35;
+
+        return {
+          ...item,
+
+          sharedCropBonus,
+
+          combinedPlanScore:
+            Number(
+              item.score
+            ) +
+            sharedCropBonus
+        };
+
+      })
+      .sort(function(
+        first,
+        second
+      ) {
+
+        if (
+          second.cropMatchCount !==
+          first.cropMatchCount
+        ) {
+          return (
+            second.cropMatchCount -
+            first.cropMatchCount
+          );
+        }
+
+        return (
+          second.combinedPlanScore -
+          first.combinedPlanScore
+        );
+
+      });
+
+  /*
+    Fill the remaining card positions.
+
+    With two alternative crops, two positions are normally
+    reserved for their seed or planting-stock products,
+    leaving six positions for shared and general products.
+  */
+
+  rankedSharedCandidates.forEach(function(
+    item
+  ) {
+
+    if (
+      selectedProducts.length >=
+      8
+    ) {
+      return;
+    }
+
+    if (
+      topProductIds.has(
+        item.productId
+      ) ||
+      selectedProductIds.has(
+        item.productId
+      )
+    ) {
+      return;
+    }
+
+    selectedProducts.push(
+      item
+    );
+
+    selectedProductIds.add(
+      item.productId
+    );
+
+  });
+
+  return selectedProducts.slice(
+    0,
+    8
+  );
+}
+
+  /*
     ==================================================
     Strength and limitation extraction
     ==================================================
@@ -3859,6 +4665,16 @@ console.log(
       getCurrentProfile,
 
       getCurrentReport,
+
+      getCropResultId,
+
+      createProductProfileForResult,
+
+      getTopCropProductRecommendations,
+
+      getPrimaryProductRecommendationForResult,
+
+      getAlternativePlanProductRecommendations,
 
       printResults,
 
