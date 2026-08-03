@@ -2142,6 +2142,10 @@ function renderProductRecommendationCard(
   const product =
     recommendation.product;
 
+    const compact =
+    options.compact ===
+      true;  
+
   const recommendationData =
     product.recommendationData ||
     {};
@@ -2157,9 +2161,11 @@ function renderProductRecommendationCard(
           bullet.trim() !==
             ""
       )
-      .slice(
+            .slice(
         0,
-        3
+        compact
+          ? 2
+          : 3
       );
 
   const groupLabel =
@@ -2181,7 +2187,13 @@ function renderProductRecommendationCard(
     );
 
   return `
-    <article class="feed-crop-product-card">
+        <article
+      class="feed-crop-product-card${
+        compact
+          ? " feed-crop-product-card--compact"
+          : ""
+      }"
+    >
 
       <div class="feed-crop-product-card-header">
 
@@ -2205,11 +2217,17 @@ function renderProductRecommendationCard(
 
       </div>
 
-      <span class="feed-crop-product-id">
-        ${escapeHTML(
-          product.id
-        )}
-      </span>
+            ${
+        compact
+          ? ""
+          : `
+              <span class="feed-crop-product-id">
+                ${escapeHTML(
+                  product.id
+                )}
+              </span>
+            `
+      }
 
       <h3>
         ${escapeHTML(
@@ -2217,15 +2235,21 @@ function renderProductRecommendationCard(
         )}
       </h3>
 
-      <p class="feed-crop-product-description">
-        ${escapeHTML(
-          firstDefined(
-            product.shortDescription,
-            product.description,
-            "Recommended for this crop plan."
-          )
-        )}
-      </p>
+            ${
+        compact
+          ? ""
+          : `
+              <p class="feed-crop-product-description">
+                ${escapeHTML(
+                  firstDefined(
+                    product.shortDescription,
+                    product.description,
+                    "Recommended for this crop plan."
+                  )
+                )}
+              </p>
+            `
+      }
 
       ${
         bullets.length > 0
@@ -2255,8 +2279,9 @@ function renderProductRecommendationCard(
           : ""
       }
 
-      ${
-        recommendationReason
+            ${
+        recommendationReason &&
+        !compact
           ? `
               <p class="feed-crop-product-reason">
                 <strong>
@@ -2288,8 +2313,9 @@ function renderProductRecommendationCard(
         )}
       </a>
 
-      ${
-        product.note
+            ${
+        product.note &&
+        !compact
           ? `
               <p class="feed-crop-product-disclosure">
                 ${escapeHTML(
@@ -2387,12 +2413,140 @@ function renderTopCropProducts(
             }
 
             return renderProductRecommendationCard(
+  recommendation,
+  {
+    groupLabel,
+    cropLabel,
+    compact:
+      true
+  }
+);
+
+          })
+          .join("")}
+
+            </div>
+
+      <p class="feed-crop-product-grid-disclosure">
+        As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.
+      </p>
+
+    </section>
+  `;
+}
+
+/*
+  Render the eight-product combined plan shown beneath
+  the Strong Alternatives section.
+*/
+
+function renderAlternativePlanProducts(
+  displayedRecommendations,
+  answers,
+  topCropProducts
+) {
+
+  const recommendations =
+    getAlternativePlanProductRecommendations(
+      displayedRecommendations,
+      answers,
+      topCropProducts
+    );
+
+  if (
+    recommendations.length ===
+      0
+  ) {
+    return "";
+  }
+
+  const alternativeResults =
+    asArray(
+      displayedRecommendations
+    ).slice(
+      1
+    );
+
+  const alternativeCropNames =
+    alternativeResults
+      .map(
+        result =>
+          result?.cropName
+      )
+      .filter(Boolean);
+
+  return `
+    <section class="feed-crop-results-product-section feed-crop-results-alternative-products">
+
+      <div class="feed-crop-results-section-heading">
+
+        <span class="feed-crop-results-kicker">
+          Products for your broader crop plan
+        </span>
+
+        <h2>
+          🛒 Products That Support Your Strong Alternatives
+        </h2>
+
+        <p>
+          This group includes one starting product for each alternative crop, followed by shared tools and garden supplies that can support more than one crop in your plan.
+        </p>
+
+      </div>
+
+      <div class="feed-crop-product-grid feed-crop-product-grid-eight">
+
+        ${recommendations
+          .map(function(
+            recommendation,
+            index
+          ) {
+
+            let groupLabel =
+              "🌱 Shared Garden Product";
+
+            let cropLabel =
+              null;
+
+            if (
+              index <
+                alternativeResults.length
+            ) {
+              groupLabel =
+                "⭐ Alternative Crop Starter";
+
+              cropLabel =
+                alternativeCropNames[
+                  index
+                ] ||
+                null;
+            } else if (
+              recommendation.cropMatchCount >=
+                2
+            ) {
+              groupLabel =
+                "🔗 Supports Multiple Crops";
+
+              cropLabel =
+                `${recommendation.cropMatchCount} selected crops`;
+            } else if (
+              recommendation.product
+                ?.recommendationData
+                ?.universal ===
+                true
+            ) {
+              groupLabel =
+                "🌱 General Garden Essential";
+            } else {
+              groupLabel =
+                "🛠️ Helpful Crop Tool";
+            }
+
+            return renderProductRecommendationCard(
               recommendation,
               {
                 groupLabel,
-
-                cropLabel:
-                  cropName
+                cropLabel
               }
             );
 
@@ -4569,6 +4723,15 @@ function renderTopCropProducts(
 
       renderAlternatives(
         displayedRecommendations
+      ),
+
+      renderAlternativePlanProducts(
+        displayedRecommendations,
+        answers,
+      getTopCropProductRecommendations(
+       topResult,
+       answers
+        )
       ),
 
       renderGoalComplementTable(
