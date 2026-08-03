@@ -17,6 +17,170 @@
 
 (function initializeFeedCropPlannerConfig(global) {
 
+  /*
+  ============================================================
+  Practical Space Vocabulary
+
+  These values standardize how crop records describe practical
+  planting scale, growing-space suitability, space efficiency,
+  harvest pattern, and containment concerns.
+
+  They describe whether a crop is a sensible use of the
+  visitor's available growing space—not merely whether the crop
+  could physically survive there.
+  ============================================================
+*/
+
+
+const PRACTICAL_SPACE_GROWTH_FORMS =
+  Object.freeze([
+
+    "compact-annual",
+
+    "spreading-annual",
+
+    "upright-annual",
+
+    "annual-grain",
+
+    "annual-legume",
+
+    "biennial-leafy-crop",
+
+    "herbaceous-perennial",
+
+    "spreading-perennial",
+
+    "root-or-tuber-perennial",
+
+    "shrub",
+
+    "tree",
+
+    "vine"
+
+  ]);
+
+
+const PRACTICAL_SPACE_PRODUCTION_SCALES =
+  Object.freeze([
+
+    "micro-space",
+
+    "small-space",
+
+    "garden-plot",
+
+    "large-garden-plot",
+
+    "field-plot",
+
+    "permanent-landscape"
+
+  ]);
+
+
+const PRACTICAL_SPACE_TYPE_SUITABILITY_LEVELS =
+  Object.freeze([
+
+    "excellent",
+
+    "good",
+
+    "conditional",
+
+    "poor",
+
+    "unsuitable"
+
+  ]);
+
+
+const PRACTICAL_SPACE_AREA_RULES =
+  Object.freeze([
+
+    "hard",
+
+    "soft",
+
+    "contextual"
+
+  ]);
+
+
+const PRACTICAL_SPACE_AREA_BASES =
+  Object.freeze([
+
+    "dedicated-crop-area"
+
+  ]);
+
+
+const PRACTICAL_SPACE_EFFICIENCY_LEVELS =
+  Object.freeze([
+
+    "excellent",
+
+    "good",
+
+    "moderate",
+
+    "poor",
+
+    "very-poor"
+
+  ]);
+
+
+const PRACTICAL_SPACE_REPEATED_HARVEST_LEVELS =
+  Object.freeze([
+
+    "very-high",
+
+    "high",
+
+    "moderate",
+
+    "low",
+
+    "single-harvest"
+
+  ]);
+
+
+const PRACTICAL_SPACE_CONTAINMENT_LEVELS =
+  Object.freeze([
+
+    "none",
+
+    "low",
+
+    "moderate",
+
+    "high"
+
+  ]);
+
+
+const PRACTICAL_SPACE_TYPES =
+  Object.freeze([
+
+    "raisedBed",
+
+    "container",
+
+    "smallGardenPlot",
+
+    "largeGardenPlot",
+
+    "fieldOrAcreage",
+
+    "yardOrLandscape",
+
+    "orchardOrFoodForest"
+
+  ]);
+  
   const SUITABILITY_SCALE = Object.freeze({
     VERY_POOR: 1,
     POOR: 2,
@@ -5555,7 +5719,7 @@ const PLANNER_CONFIG = Object.freeze({
       risk: RISK_SCALE
     }),
 
-    enums: Object.freeze({
+        enums: Object.freeze({
       workloadLevels: WORKLOAD_LEVELS,
       costLevels: COST_LEVELS,
       evidenceStatuses: EVIDENCE_STATUSES,
@@ -5575,7 +5739,38 @@ const PLANNER_CONFIG = Object.freeze({
       equipmentIds: EQUIPMENT_IDS
     }),
 
-        scoring: Object.freeze({
+    practicalSpace: Object.freeze({
+
+      growthForms:
+        PRACTICAL_SPACE_GROWTH_FORMS,
+
+      productionScales:
+        PRACTICAL_SPACE_PRODUCTION_SCALES,
+
+      spaceTypeSuitabilityLevels:
+        PRACTICAL_SPACE_TYPE_SUITABILITY_LEVELS,
+
+      areaRules:
+        PRACTICAL_SPACE_AREA_RULES,
+
+      areaBases:
+        PRACTICAL_SPACE_AREA_BASES,
+
+      efficiencyLevels:
+        PRACTICAL_SPACE_EFFICIENCY_LEVELS,
+
+      repeatedHarvestLevels:
+        PRACTICAL_SPACE_REPEATED_HARVEST_LEVELS,
+
+      containmentLevels:
+        PRACTICAL_SPACE_CONTAINMENT_LEVELS,
+
+      spaceTypes:
+        PRACTICAL_SPACE_TYPES
+
+    }),
+
+    scoring: Object.freeze({
 
       /*
         Legacy properties are preserved so the current engine
