@@ -57,425 +57,58 @@
 
 <style>
 
+/*
+  Buckwheat-specific presentation
+  Shared growing-guide components are in bcp-style.css.
+*/
+
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(82, 70, 45, 0.97),
       rgba(139, 99, 49, 0.95)
     );
-  border-radius: 20px;
+
   box-shadow:
     0 16px 36px
     rgba(69, 72, 35, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 780px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #402d1d;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #ead4a7;
-  border-radius: 999px;
+  border-color:
+    rgba(64, 45, 29, 0.16);
 }
 
-.crop-snapshot {
-  margin-top: 24px;
-  padding: 24px;
-  background:
-    linear-gradient(
-      135deg,
-      #f8fbf7,
-      #fffaf0
-    );
-  border: 1px solid #d7e3d6;
-  border-radius: 16px;
-  box-shadow:
-    0 10px 25px
-    rgba(25, 79, 42, 0.07);
-}
+/*
+  Buckwheat sometimes uses two, three, or more
+  comparison cards, so these grids remain flexible.
+*/
 
-.crop-snapshot-header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-}
-
-.crop-snapshot-header h2 {
-  margin: 0;
-  color: #194f2a;
-}
-
-.crop-snapshot-rating {
-  padding: 8px 13px;
-  color: #5e4515;
-  font-size: 0.95rem;
-  font-weight: 800;
-  background: #fff2c9;
-  border: 1px solid #e7cf82;
-  border-radius: 999px;
-}
-
-.crop-snapshot-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 13px;
-}
-
-.crop-snapshot-item {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid #dde7dc;
-  border-radius: 11px;
-}
-
-.crop-snapshot-item strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-recommendation {
-  margin-top: 24px;
-  padding: 24px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 7px solid #4c8b5d;
-  border-radius: 14px;
-}
-
-.crop-recommendation h2 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-recommendation-rating {
-  display: inline-block;
-  margin-bottom: 15px;
-  padding: 7px 12px;
-  color: #285c37;
-  font-weight: 800;
-  background: #dff0e3;
-  border: 1px solid #bdd9c4;
-  border-radius: 999px;
-}
-
-.crop-recommendation-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.crop-recommendation-card {
-  padding: 18px;
-  background: #ffffff;
-  border: 1px solid #d4e3d6;
-  border-radius: 12px;
-}
-
-.crop-recommendation-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-recommendation-card ul {
-  margin-bottom: 0;
-}
-
-.crop-recommendation-caution {
-  background: #fffaf0;
-  border-color: #e8d9b8;
-}
-
-.crop-recommendation-caution h3 {
-  color: #74511d;
-}
-
-.crop-planner-button-row {
-  margin-top: 19px;
-}
-
-.crop-planner-button {
-  display: inline-block;
-  padding: 12px 18px;
-  color: #ffffff;
-  font-weight: 800;
-  text-decoration: none;
-  background: #2f7245;
-  border-radius: 10px;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.crop-planner-button:hover {
-  color: #ffffff;
-  background: #245c37;
-  transform: translateY(-2px);
-  box-shadow:
-    0 8px 18px
-    rgba(25, 79, 42, 0.18);
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-rating {
-  color: #a46f18;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.crop-learning-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin-top: 17px;
-}
-
-.crop-learning-item {
-  position: relative;
-  padding: 11px 12px 11px 38px;
-  background: #f8fbf8;
-  border: 1px solid #dce6dd;
-  border-radius: 10px;
-}
-
-.crop-learning-item::before {
-  content: "✓";
-  position: absolute;
-  top: 10px;
-  left: 13px;
-  color: #2f7245;
-  font-weight: 900;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-danger-box {
-  padding: 20px;
-  color: #5d2929;
-  background: #fff1f1;
-  border: 1px solid #e4bcbc;
-  border-left: 6px solid #9d4444;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: crop-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: crop-step;
-  content: counter(crop-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-timeline {
-  position: relative;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-timeline::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  bottom: 17px;
-  left: 19px;
-  width: 3px;
-  background: #cbdccb;
-}
-
-.crop-timeline li {
-  position: relative;
-  margin-bottom: 14px;
-  padding: 15px 16px 15px 54px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 11px;
-}
-
-.crop-timeline li::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 11px;
-  width: 17px;
-  height: 17px;
-  background: #337747;
-  border: 4px solid #e7f1e8;
-  border-radius: 50%;
-}
-
-.crop-timeline strong {
-  color: #194f2a;
-}
-
+.buckwheat-guide-page
 .crop-comparison-grid {
-  display: grid;
   grid-template-columns:
-    repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
 }
 
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
+.buckwheat-guide-page
+.next-guide-grid {
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );
 }
 
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.crop-scorecard {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-scorecard th,
-.crop-scorecard td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: middle;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-scorecard th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-scorecard tr:nth-child(even) td {
-  background: #f7faf7;
-}
+/*
+  Buckwheat scorecards display ratings
+  in the final column.
+*/
 
 .crop-scorecard td:last-child {
   color: #a46f18;
@@ -483,90 +116,14 @@
   letter-spacing: 1px;
 }
 
-.crop-checklist {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-checklist li {
-  position: relative;
-  margin-bottom: 10px;
-  padding: 12px 14px 12px 43px;
-  background: #f8fbf8;
-  border: 1px solid #d9e4da;
-  border-radius: 10px;
-}
-
-.crop-checklist li::before {
-  content: "☐";
-  position: absolute;
-  top: 10px;
-  left: 14px;
-  color: #337747;
-  font-size: 1.15rem;
-  font-weight: 800;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
 @media (max-width: 760px) {
 
-  .crop-snapshot-grid,
-  .crop-recommendation-grid,
-  .quick-facts-grid,
-  .crop-learning-grid,
+  .buckwheat-guide-page
   .crop-comparison-grid,
+
+  .buckwheat-guide-page
   .next-guide-grid {
     grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-snapshot,
-  .crop-recommendation {
-    padding: 19px;
-  }
-
-  .crop-calendar,
-  .crop-scorecard {
-    font-size: 0.92rem;
   }
 
 }
@@ -716,7 +273,7 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div class="growing-guide-page">
+<div class="growing-guide-page buckwheat-guide-page">
 
 <div class="content">
 
