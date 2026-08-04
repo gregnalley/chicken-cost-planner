@@ -29932,7 +29932,86 @@ const BCP_FEED_CROPS = {
             "The planner should ask how much land the user is willing to dedicate and whether whole-panicle use is acceptable.",
             "The planner should distinguish a small enrichment patch from a feed-production block."
           ]
+        },
+      
+               practicalSpace: {
+
+          growthForm:
+            "annual-grain",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "conditional",
+
+            container:
+              "poor",
+
+            smallGardenPlot:
+              "good",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "conditional",
+
+            orchardOrFoodForest:
+              "poor"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              25,
+
+            preferredSquareFeet:
+              100,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "moderate",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Proso Millet can provide useful whole panicles, enrichment material, seed-saving experience, or a small seasonal harvest from a modest garden bed.",
+            "Small raised-bed plantings are more practical when whole-panicle feeding is acceptable because threshing and grain-cleaning labor can be avoided.",
+            "A small planting should not be presented as likely to replace a meaningful quantity of purchased complete feed.",
+            "Producing measurable amounts of clean loose grain generally requires a larger dedicated plot, bird protection, drying space, and postharvest processing.",
+            "The practical area requirement depends strongly on whether the visitor wants whole panicles, loose grain, cover-crop value, or only a demonstration planting.",
+            "Mature seed may create volunteers, but Proso Millet is not ordinarily a permanent containment problem."
+          ]
+
         }
+        
       },
 
       flock: {
