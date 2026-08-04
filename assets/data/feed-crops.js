@@ -40899,7 +40899,86 @@ mechanicalProcessingSuitabilityScore:
             "Minimum useful area remains null because flock size, fruit size, vine habit, intended use path, and available overflow space vary substantially.",
             "Preferred production area remains null because there is no defensible universal square-foot requirement for this combined crop record."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "vine",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "conditional",
+
+            container:
+              "poor",
+
+            smallGardenPlot:
+              "conditional",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "excellent",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              25,
+
+            preferredSquareFeet:
+              100,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "moderate",
+
+          repeatedHarvestValue:
+            "moderate",
+
+          harvestReturnPattern:
+            "seasonal",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Pumpkins and Winter Squash can be rooted in a raised bed, but the bed dimensions do not represent the crop's full occupied area when vines trail beyond it.",
+            "Small-space success depends heavily on cultivar choice, available overflow space, and whether smaller fruit can be supported safely on a trellis.",
+            "Compact bush and short-vine cultivars are more practical in modest gardens than full-vining cultivars.",
+            "Containers are generally inefficient because the crop requires substantial root volume, dependable moisture, fertility, and room for vines and fruit.",
+            "Unused lawn, garden edges, fence lines, and open areas can provide valuable overflow space without consuming the entire cultivated bed.",
+            "The crop may provide several fruits over a season, but it does not offer the frequent repeated cut-and-carry harvest pattern of leafy forage crops."
+          ]
+
         }
+
       },
 
       flock: {
