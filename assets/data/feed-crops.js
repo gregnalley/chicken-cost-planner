@@ -108287,7 +108287,85 @@ feedingReference: {
             "No minimum useful grain-production area has been assigned because usable yield, processing efficiency, flock size, and desired use differ too widely.",
             "Commercial Wheat seeding rates and field yields should not be converted directly into guaranteed backyard harvests."
           ]
+        },
+      
+              practicalSpace: {
+
+          growthForm:
+            "annual-grain",
+
+          productionScale:
+            "field-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "poor",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "conditional",
+
+            largeGardenPlot:
+              "good",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "conditional",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              100,
+
+            preferredSquareFeet:
+              300,
+
+            areaRule:
+              "soft",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "poor",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Wheat can physically grow in raised beds and small plots, but small plantings usually provide limited grain relative to the space and postharvest labor required.",
+            "Raised beds may be useful for trial plantings, young forage, whole heads, or educational harvests, but they are generally inefficient for meaningful stored-grain production.",
+            "Containers are best suited to sprouts, fodder, demonstration stands, or very small harvest trials rather than useful household grain production.",
+            "A continuous dedicated stand is more practical than scattered plants because productive head density, uniform maturity, and efficient harvesting are important.",
+            "Areas below the minimum practical threshold may still provide cover-crop, forage-frame, enrichment, or learning value, but should not normally outrank productive small-space crops."
+          ]
+
         }
+        
       },
 
       flock: {
