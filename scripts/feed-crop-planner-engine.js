@@ -6752,6 +6752,39 @@ const preferredArea =
         ]
       },
 
+            {
+        family:
+          "verify",
+
+        patterns: [
+          "verify"
+        ]
+      },
+
+      {
+        family:
+          "discard-unsafe-material",
+
+        patterns: [
+          "remove-diseased",
+          "remove-insect-damaged",
+          "remove-contaminated",
+          "discard-damaged",
+          "discard-contaminated"
+        ]
+      },
+
+      {
+        family:
+          "offer",
+
+        patterns: [
+          "offer-promptly",
+          "offer-immediately",
+          "offer-fresh"
+        ]
+      },
+
       {
         family:
           "trim",
@@ -6996,6 +7029,12 @@ const preferredArea =
     "identify",
 
     "select",
+
+    "verify",
+
+    "discard-unsafe-material",
+
+    "offer",
 
     "trim",
 
@@ -12785,6 +12824,12 @@ const aliasedGoalField =
     "identify",
 
     "select",
+
+    "verify",
+
+    "discard-unsafe-material",
+
+    "offer",
 
     "trim",
 
