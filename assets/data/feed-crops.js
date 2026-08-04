@@ -130577,7 +130577,86 @@ feedingReference: {
             "Minimum trial, useful, and preferred production areas remain null because no dependable relationship between backyard area, cleaned grain yield, processing loss, flock size, and feed value has been established.",
             "Commercial seeding rates and field yields should not be converted directly into guaranteed backyard production."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "upright-annual",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "good",
+
+            container:
+              "poor",
+
+            smallGardenPlot:
+              "excellent",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "good",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              16,
+
+            preferredSquareFeet:
+              75,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "good",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            false,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Buckwheat is practical in small beds because a modest planting can provide flowers, pollinator activity, temporary soil cover, weed suppression, and a limited mature-seed harvest.",
+            "Raised beds are well suited to short-term pollinator, cover-crop, and soil-building uses, although premium bed space may be inefficient when bulk grain production is the primary goal.",
+            "Containers provide little useful grain or biomass relative to watering and harvesting effort.",
+            "The short production cycle allows the space to return quickly to annual crop rotation.",
+            "Larger plots improve grain, green-manure, weed-suppression, and pollinator value, but a large area is not required for the crop to provide a useful result.",
+            "Mature seed may produce volunteers, but Buckwheat does not create a persistent underground-spread problem."
+          ]
+
         }
+
       },
 
       flock: {
