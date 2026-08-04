@@ -99303,8 +99303,87 @@ feedingReference: {
             "Minimum useful and preferred production areas remain null because credible flock-use and small-plot yield thresholds are not established.",
             "A small trial area can still be useful for evaluating germination, winter survival, forage acceptance, disease, wildlife pressure, and harvesting labor."
           ]
+        },
+      
+                practicalSpace: {
+
+          growthForm:
+            "annual-grain",
+
+          productionScale:
+            "field-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "poor",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "conditional",
+
+            largeGardenPlot:
+              "good",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "conditional",
+
+            orchardOrFoodForest:
+              "poor"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              100,
+
+            preferredSquareFeet:
+              300,
+
+            areaRule:
+              "soft",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "poor",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Oats can physically grow in raised beds and small plots, but limited plantings usually provide only modest forage, seed-head, or grain return.",
+            "Raised beds are generally an inefficient use of valuable garden space when the main goal is mature grain production.",
+            "Containers and trays are better suited to temporary fresh greens than to meaningful grain harvest.",
+            "A continuous stand in a dedicated plot is more practical than scattered plants or very small plantings.",
+            "Areas below the minimum practical threshold may still have educational, enrichment, cover-crop, or trial value, but should not normally outrank productive small-space crops."
+          ]
+
         }
+
       },
+        
 
       flock: {
         suitableForAdultChickens:
