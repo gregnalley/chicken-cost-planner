@@ -150321,7 +150321,86 @@ feedingReference: {
             "The planner should strongly penalize containers, rental properties, temporary gardens, raised beds needed for future annual crops, and areas requiring easy removal.",
             "Minimum trial, useful, and preferred production areas remain null because dependable backyard biomass per plant and flock-displacement values are not established."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "herbaceous-perennial",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "conditional",
+
+            container:
+              "poor",
+
+            smallGardenPlot:
+              "good",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "good",
+
+            yardOrLandscape:
+              "good",
+
+            orchardOrFoodForest:
+              "excellent"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              16,
+
+            preferredSquareFeet:
+              50,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "good",
+
+          repeatedHarvestValue:
+            "very-high",
+
+          harvestReturnPattern:
+            "repeated",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            true,
+
+          containmentConcern:
+            "high",
+
+          notes: [
+            "A small number of mature Comfrey plants can provide repeated cut-and-carry biomass from a relatively modest permanent area.",
+            "Raised beds can support Comfrey, but the bed may become permanently occupied and difficult to return to annual crop production.",
+            "Containers are suitable mainly for temporary holding, demonstrations, or cultivar trials rather than dependable long-term biomass production.",
+            "Orchard edges, compost areas, perennial borders, fence lines, and other permanent sites are usually more practical than premium annual garden space.",
+            "Root fragments commonly regenerate, so placement should be considered permanent even when sterile cultivars are used.",
+            "The crop should be strongly penalized where the visitor needs easy removal, temporary planting, rental-property flexibility, or future access for construction and utilities."
+          ]
+
         }
+
       },
 
       flock: {
