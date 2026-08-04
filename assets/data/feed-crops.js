@@ -18313,7 +18313,86 @@ const BCP_FEED_CROPS = {
             "Overflow space is useful for trailing cultivars, crop rotation, wildlife buffers, drying access, and separate forage and seed-production zones.",
             "The planner should eventually distinguish space requirements for bush vegetables, climbing yardlong types, grain cultivars, forage cultivars, and cover-crop stands."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "annual-legume",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "excellent",
+
+            container:
+              "good",
+
+            smallGardenPlot:
+              "excellent",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "good",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              9,
+
+            preferredSquareFeet:
+              50,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "excellent",
+
+          repeatedHarvestValue:
+            "high",
+
+          harvestReturnPattern:
+            "repeated",
+
+          dedicatedSpaceRequired:
+            false,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Cowpeas are among the most flexible warm-season feed crops for raised beds, small garden plots, fence lines, and larger production areas.",
+            "Compact bush cultivars can provide leaves, tender vine tips, immature pods, fresh peas, and limited dry seed from relatively small spaces.",
+            "Climbing cultivars can use fences or trellises to preserve bed space and improve harvest access.",
+            "Containers can provide useful household food and supplemental flock harvests, although they remain less efficient than in-ground production.",
+            "Larger plots improve dry-seed, forage, cover-crop, and feed-reduction potential, but small plantings can still provide repeated practical value.",
+            "Trailing and semi-vining cultivars may spread into paths or neighboring crops, so cultivar growth habit should guide placement."
+          ]
+
         }
+
       },
 
       flock: {
