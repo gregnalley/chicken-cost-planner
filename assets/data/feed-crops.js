@@ -58878,6 +58878,84 @@ mechanicalProcessingSuitabilityScore:
               "Because the crop spreads naturally, production should be evaluated by stand density rather than individual plant count.",
               "Minimum useful planting area remains intentionally null until flock size, recovery rate, and rotational management are better quantified."
             ]
+          },
+
+                    practicalSpace: {
+
+            growthForm:
+              "spreading-perennial",
+
+            productionScale:
+              "garden-plot",
+
+            spaceTypeSuitability: {
+
+              raisedBed:
+                "conditional",
+
+              container:
+                "poor",
+
+              smallGardenPlot:
+                "good",
+
+              largeGardenPlot:
+                "excellent",
+
+              fieldOrAcreage:
+                "excellent",
+
+              yardOrLandscape:
+                "excellent",
+
+              orchardOrFoodForest:
+                "excellent"
+
+            },
+
+            areaRequirements: {
+
+              minimumPracticalSquareFeet:
+                25,
+
+              preferredSquareFeet:
+                100,
+
+              areaRule:
+                "contextual",
+
+              areaBasis:
+                "dedicated-crop-area"
+
+            },
+
+            smallSpaceEfficiency:
+              "good",
+
+            repeatedHarvestValue:
+              "very-high",
+
+            harvestReturnPattern:
+              "continuous",
+
+            dedicatedSpaceRequired:
+              false,
+
+            permanentPlacementRequired:
+              true,
+
+            containmentConcern:
+              "moderate",
+
+            notes: [
+              "White Clover is most practical as a continuous living stand, orchard-floor planting, lawn overseeding, forage frame, or rotational-paddock crop.",
+              "A small raised bed can support Clover, but unrestricted chicken access may quickly destroy a limited stand through scratching and repeated grazing.",
+              "Containers provide little practical flock forage because they restrict stolon spread and dry rapidly.",
+              "The crop uses irregular lawn, orchard, and pasture space more efficiently than many row crops.",
+              "Repeated grazing or clipping can provide ongoing forage when the stand is protected and allowed to recover.",
+              "Because White Clover spreads by rooted stolons, long-term placement and containment should be considered before planting it in intensively managed garden beds."
+            ]
+
           }
         },
 
