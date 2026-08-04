@@ -4911,7 +4911,7 @@ const BCP_FEED_CROPS = {
                 practicalSpace: {
 
           growthForm:
-            "annual-broadleaf",
+            "upright-annual",
 
           productionScale:
             "garden-plot",
