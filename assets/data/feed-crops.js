@@ -168194,7 +168194,86 @@ feedingReference: {
             "Dry-grain production becomes more practical as available planting area increases.",
             "Minimum practical production area remains null because household goals, flock size, expected yield, and processing efficiency vary too widely for a universal value."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "annual-legume",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "good",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "excellent",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "good",
+
+            yardOrLandscape:
+              "conditional",
+
+            orchardOrFoodForest:
+              "poor"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              16,
+
+            preferredSquareFeet:
+              75,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "good",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            false,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Field Peas can use raised beds and small garden plots efficiently, especially where rows or trellising improve access and reduce lodging.",
+            "Containers can support fresh pods, demonstrations, or seed-saving trials, but they are generally inefficient for meaningful mature dry-grain production.",
+            "Small plantings may provide fresh household peas, seasonal flock treats, or limited dry seed, while larger dedicated plots improve the practicality of dry-grain harvest.",
+            "Trellising can improve space use in compact gardens even though many field varieties do not strictly require support.",
+            "The crop should be protected from unrestricted chicken access until pods and seeds are ready for harvest.",
+            "Field Peas are better suited to small gardens than most cereal grains, but very small plantings should not be presented as likely to replace substantial purchased feed."
+          ]
+
         }
+
       },
 
       flock: {
