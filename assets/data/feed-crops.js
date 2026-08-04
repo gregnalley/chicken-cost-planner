@@ -157671,7 +157671,86 @@ feedingReference: {
             "Minimum trial, useful, and preferred production areas remain null because no dependable relationship among backyard area, cleaned bean yield, processing loss, flock size, ration formulation, and feed savings has been established.",
             "Commercial plant populations and field yields should not be converted directly into guaranteed backyard production."
           ]
+        },
+  
+                practicalSpace: {
+
+          growthForm:
+            "annual-legume",
+
+          productionScale:
+            "large-garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "conditional",
+
+            container:
+              "poor",
+
+            smallGardenPlot:
+              "conditional",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "poor",
+
+            orchardOrFoodForest:
+              "poor"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              50,
+
+            preferredSquareFeet:
+              150,
+
+            areaRule:
+              "soft",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "poor",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Soybeans can physically grow in raised beds and small plots, but very small plantings usually provide limited mature dry-bean return relative to the planting and processing effort required.",
+            "Raised beds may be useful for edamame, seed saving, crop-rotation value, or small grain trials, but they are generally inefficient for meaningful poultry-protein production.",
+            "Containers are best suited to compact cultivars, edamame, demonstrations, or seed-saving trials rather than dependable dry-bean feed production.",
+            "A dedicated row or block planting is more practical than scattered plants because uniform maturity, pod harvest, drying, threshing, heat processing, and storage are important.",
+            "Medium and large plots improve labor efficiency and make the mature-seed use path more practical.",
+            "Areas below the minimum practical threshold may still provide household food, soil-building, learning, or limited enrichment value, but should not normally outrank productive small-space crops."
+          ]
+
         }
+
       },
 
       flock: {
