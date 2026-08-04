@@ -3991,3 +3991,466 @@ summary::after {
   }
 
 }
+
+/* ==================================================
+   GROWING GUIDE DESIGN SYSTEM
+   Version 2.0
+   ================================================== */
+
+
+/* --------------------------------------------------
+   PAGE LAYOUT
+   -------------------------------------------------- */
+
+.growing-guide-page,
+.kale-guide-page {
+  max-width: 1180px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.growing-guide-page .section,
+.kale-guide-page .section {
+  overflow-wrap: anywhere;
+}
+
+.growing-guide-page .section p,
+.growing-guide-page .section li,
+.growing-guide-page .section td,
+.growing-guide-page .section th,
+.kale-guide-page .section p,
+.kale-guide-page .section li,
+.kale-guide-page .section td,
+.kale-guide-page .section th {
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.growing-guide-page .section h2,
+.kale-guide-page .section h2 {
+  line-height: 1.2;
+}
+
+
+/* --------------------------------------------------
+   COMPACT GUIDE HERO
+   -------------------------------------------------- */
+
+.crop-guide-hero {
+  padding: 22px;
+  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(42, 91, 52, 0.97),
+      rgba(87, 126, 54, 0.95)
+    );
+  border-radius: 20px;
+  box-shadow:
+    0 16px 36px
+    rgba(41, 78, 42, 0.18);
+}
+
+.crop-guide-hero-grid {
+  display: grid;
+  grid-template-columns:
+    215px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.crop-guide-hero-image {
+  width: 100%;
+}
+
+.crop-guide-hero-image img {
+  display: block;
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.crop-guide-hero-content {
+  min-width: 0;
+}
+
+.crop-guide-hero-content h1 {
+  margin: 0 0 9px;
+  font-size:
+    clamp(
+      1.9rem,
+      3vw,
+      2.4rem
+    );
+  line-height: 1.08;
+}
+
+.crop-guide-hero-content p {
+  max-width: 760px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.48;
+}
+
+.crop-guide-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.crop-guide-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  color: #21442a;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  font-weight: 750;
+  background: #dcefcf;
+  border:
+    1px solid
+    rgba(33, 68, 42, 0.16);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+
+/* --------------------------------------------------
+   QUICK FACTS
+   -------------------------------------------------- */
+
+.quick-facts-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.quick-fact {
+  padding: 18px;
+  background: #f8fbf7;
+  border: 1px solid #d7e3d6;
+  border-radius: 13px;
+}
+
+.quick-fact strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #194f2a;
+}
+
+
+/* --------------------------------------------------
+   CALLOUT BOXES
+   -------------------------------------------------- */
+
+.crop-notice-box,
+.greens-notice,
+.pumpkin-notice {
+  padding: 20px;
+  color: #5d4217;
+  background: #fff8e8;
+  border: 1px solid #ead7aa;
+  border-left: 6px solid #c99735;
+  border-radius: 12px;
+}
+
+.crop-success-box,
+.greens-success-box,
+.pumpkin-success-box {
+  padding: 20px;
+  background: #f1f8f2;
+  border: 1px solid #cae0ce;
+  border-left: 6px solid #4c8b5d;
+  border-radius: 12px;
+}
+
+.crop-warning-box,
+.greens-warning-box,
+.pumpkin-warning-box {
+  padding: 20px;
+  color: #613e19;
+  background: #fff5e9;
+  border: 1px solid #ead1af;
+  border-left: 6px solid #b46b2e;
+  border-radius: 12px;
+}
+
+.crop-danger-box {
+  padding: 20px;
+  color: #5d2929;
+  background: #fff1f1;
+  border: 1px solid #e4bcbc;
+  border-left: 6px solid #9d4444;
+  border-radius: 12px;
+}
+
+
+/* --------------------------------------------------
+   NUMBERED STEPS
+   -------------------------------------------------- */
+
+.crop-steps,
+.greens-steps,
+.pumpkin-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crop-steps {
+  counter-reset: crop-step;
+}
+
+.greens-steps {
+  counter-reset: greens-step;
+}
+
+.pumpkin-steps {
+  counter-reset: pumpkin-step;
+}
+
+.crop-steps li,
+.greens-steps li,
+.pumpkin-steps li {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 18px 18px 18px 62px;
+  background: #f8fbf8;
+  border: 1px solid #d8e4d9;
+  border-radius: 12px;
+}
+
+.crop-steps li::before,
+.greens-steps li::before,
+.pumpkin-steps li::before {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  background: #337747;
+  border-radius: 50%;
+}
+
+.crop-steps li::before {
+  counter-increment: crop-step;
+  content: counter(crop-step);
+}
+
+.greens-steps li::before {
+  counter-increment: greens-step;
+  content: counter(greens-step);
+}
+
+.pumpkin-steps li::before {
+  counter-increment: pumpkin-step;
+  content: counter(pumpkin-step);
+}
+
+.crop-steps strong,
+.greens-steps strong,
+.pumpkin-steps strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #194f2a;
+}
+
+
+/* --------------------------------------------------
+   COMPARISON CARDS
+   -------------------------------------------------- */
+
+.crop-comparison-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.crop-comparison-card {
+  padding: 18px;
+  background: #fafcf9;
+  border: 1px solid #d8e4d9;
+  border-radius: 13px;
+}
+
+.crop-comparison-card h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
+
+.crop-comparison-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* --------------------------------------------------
+   GUIDE TABLES
+   -------------------------------------------------- */
+
+.crop-calendar,
+.greens-calendar,
+.pumpkin-calendar,
+.crop-scorecard {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.crop-calendar th,
+.crop-calendar td,
+.greens-calendar th,
+.greens-calendar td,
+.pumpkin-calendar th,
+.pumpkin-calendar td,
+.crop-scorecard th,
+.crop-scorecard td {
+  padding: 13px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #d8e2d8;
+}
+
+.crop-calendar th,
+.greens-calendar th,
+.pumpkin-calendar th,
+.crop-scorecard th {
+  color: #ffffff;
+  background: #356f44;
+}
+
+.crop-calendar tr:nth-child(even) td,
+.greens-calendar tr:nth-child(even) td,
+.pumpkin-calendar tr:nth-child(even) td,
+.crop-scorecard tr:nth-child(even) td {
+  background: #f7faf7;
+}
+
+
+/* --------------------------------------------------
+   SOURCES AND RELATED GUIDES
+   -------------------------------------------------- */
+
+.source-card {
+  margin-bottom: 12px;
+  padding: 15px;
+  background: #f7faf7;
+  border: 1px solid #dbe5dc;
+  border-radius: 10px;
+}
+
+.source-card strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.source-card p {
+  margin: 5px 0 0;
+}
+
+.next-guide-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.next-guide-card {
+  padding: 19px;
+  background: #f8fbf8;
+  border: 1px solid #d7e3d8;
+  border-radius: 13px;
+}
+
+.next-guide-card h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
+
+
+/* --------------------------------------------------
+   GUIDE FAQ
+   -------------------------------------------------- */
+
+.growing-guide-page details,
+.kale-guide-page details {
+  margin-bottom: 12px;
+  padding: 15px 17px;
+  background: #f8fbf8;
+  border: 1px solid #d9e4da;
+  border-radius: 11px;
+}
+
+.growing-guide-page summary,
+.kale-guide-page summary {
+  color: #194f2a;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.growing-guide-page details p:last-child,
+.kale-guide-page details p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+  .growing-guide-page,
+  .kale-guide-page {
+    margin-top: 22px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .quick-facts-grid,
+  .crop-comparison-grid,
+  .next-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crop-guide-hero {
+    padding: 18px;
+  }
+
+  .crop-guide-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .crop-guide-hero-image {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+
+  .crop-guide-hero-image img {
+    height: 190px;
+  }
+
+  .crop-guide-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .crop-guide-hero-content p {
+    font-size: 0.98rem;
+  }
+
+  .crop-calendar,
+  .greens-calendar,
+  .pumpkin-calendar,
+  .crop-scorecard {
+    font-size: 0.92rem;
+  }
+
+}
