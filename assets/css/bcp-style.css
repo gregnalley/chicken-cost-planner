@@ -4097,6 +4097,8 @@ summary::after {
 
 .crop-guide-hero-content {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .crop-guide-hero-content h1 {
@@ -4122,6 +4124,8 @@ summary::after {
   flex-wrap: wrap;
   gap: 7px;
   margin-top: 12px;
+  justify-content: center;
+  align-self: center;
 }
 
 .crop-guide-tag {
