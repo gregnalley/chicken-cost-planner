@@ -121440,7 +121440,86 @@ feedingReference: {
             "Minimum useful and preferred production areas remain null because dependable backyard tuber yield per square foot has not been established.",
             "Planner scoring should reward permanent land availability and strongly penalize temporary, rental, container-only, or annual-rotation situations."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "root-or-tuber-perennial",
+
+          productionScale:
+            "large-garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "poor",
+
+            container:
+              "unsuitable",
+
+            smallGardenPlot:
+              "poor",
+
+            largeGardenPlot:
+              "good",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "good",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              50,
+
+            preferredSquareFeet:
+              150,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "poor",
+
+          repeatedHarvestValue:
+            "high",
+
+          harvestReturnPattern:
+            "seasonal",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            true,
+
+          containmentConcern:
+            "high",
+
+          notes: [
+            "Jerusalem Artichoke is best treated as a permanent tuber-producing colony rather than as an ordinary annual garden crop.",
+            "Raised beds may simplify digging, but the bed can become permanently occupied and may not reliably contain every viable tuber or fragment.",
+            "Containers are unsuitable for meaningful production because of restricted root volume, drying, crowding, difficult harvest, and unreliable long-term containment.",
+            "Long strips, fence lines, hedgerows, field edges, and unused permanent ground are generally more practical than small garden beds.",
+            "The crop can provide recurring seasonal tuber harvests, but unharvested tubers commonly regenerate and may spread beyond the original planting area.",
+            "The crop should be strongly penalized where the visitor needs annual rotation, easy removal, rental-property flexibility, or future access for construction and utilities."
+          ]
+
         }
+
       },
 
       flock: {
