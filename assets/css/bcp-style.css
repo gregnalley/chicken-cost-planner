@@ -3995,6 +3995,30 @@ summary::after {
 /* ==================================================
    GROWING GUIDE DESIGN SYSTEM
    Version 2.0
+
+   SECTION MAP
+
+   01. Page Layout
+   02. Compact Guide Hero
+   03. Hero Color Themes
+   04. Quick Facts
+   05. Crop Snapshot
+   06. Crop Recommendation
+   07. Crop Planner Button
+   08. Learning Grids and Ratings
+   09. Callout Boxes
+   10. Numbered Steps
+   11. Timelines and Checklists
+   12. Comparison Cards
+   13. Guide Tables
+   14. Sources and Related Guides
+   15. Guide FAQ
+   16. Mobile Layout
+   ================================================== */
+
+/* ==================================================
+   GROWING GUIDE DESIGN SYSTEM
+   Version 2.0
    ================================================== */
 
 
@@ -4118,6 +4142,31 @@ summary::after {
 
 
 /* --------------------------------------------------
+   HERO COLOR THEMES
+   -------------------------------------------------- */
+
+.crop-guide-hero--buckwheat {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(82, 70, 45, 0.97),
+      rgba(139, 99, 49, 0.95)
+    );
+  box-shadow:
+    0 16px 36px
+    rgba(69, 72, 35, 0.18);
+}
+
+.crop-guide-hero--buckwheat
+.crop-guide-tag {
+  color: #402d1d;
+  background: #ead4a7;
+  border-color:
+    rgba(64, 45, 29, 0.16);
+}
+
+
+/* --------------------------------------------------
    QUICK FACTS
    -------------------------------------------------- */
 
@@ -4139,6 +4188,283 @@ summary::after {
   display: block;
   margin-bottom: 6px;
   color: #194f2a;
+}
+
+
+/* --------------------------------------------------
+   CROP SNAPSHOT
+   -------------------------------------------------- */
+
+.crop-snapshot {
+  margin-top: 24px;
+  padding: 24px;
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbf7,
+      #fffaf0
+    );
+  border: 1px solid #d7e3d6;
+  border-radius: 16px;
+  box-shadow:
+    0 10px 25px
+    rgba(25, 79, 42, 0.07);
+}
+
+.crop-snapshot-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.crop-snapshot-header h2 {
+  margin: 0;
+  color: #194f2a;
+}
+
+.crop-snapshot-rating {
+  padding: 8px 13px;
+  color: #5e4515;
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: #fff2c9;
+  border: 1px solid #e7cf82;
+  border-radius: 999px;
+}
+
+.crop-snapshot-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.crop-snapshot-item {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid #dde7dc;
+  border-radius: 11px;
+}
+
+.crop-snapshot-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #194f2a;
+}
+
+
+/* --------------------------------------------------
+   CROP RECOMMENDATION
+   -------------------------------------------------- */
+
+.crop-recommendation {
+  margin-top: 24px;
+  padding: 24px;
+  background: #f1f8f2;
+  border: 1px solid #cae0ce;
+  border-left: 7px solid #4c8b5d;
+  border-radius: 14px;
+}
+
+.crop-recommendation h2 {
+  margin-top: 0;
+  color: #194f2a;
+}
+
+.crop-recommendation-rating {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 7px 12px;
+  color: #285c37;
+  font-weight: 800;
+  background: #dff0e3;
+  border: 1px solid #bdd9c4;
+  border-radius: 999px;
+}
+
+.crop-recommendation-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.crop-recommendation-card {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #d4e3d6;
+  border-radius: 12px;
+}
+
+.crop-recommendation-card h3 {
+  margin-top: 0;
+  color: #194f2a;
+}
+
+.crop-recommendation-card ul {
+  margin-bottom: 0;
+}
+
+.crop-recommendation-caution {
+  background: #fffaf0;
+  border-color: #e8d9b8;
+}
+
+.crop-recommendation-caution h3 {
+  color: #74511d;
+}
+
+
+/* --------------------------------------------------
+   CROP PLANNER BUTTON
+   -------------------------------------------------- */
+
+.crop-planner-button-row {
+  margin-top: 19px;
+}
+
+.crop-planner-button {
+  display: inline-block;
+  padding: 12px 18px;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  background: #2f7245;
+  border-radius: 10px;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.crop-planner-button:hover {
+  color: #ffffff;
+  background: #245c37;
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 18px
+    rgba(25, 79, 42, 0.18);
+}
+
+
+/* --------------------------------------------------
+   LEARNING GRID
+   -------------------------------------------------- */
+
+.crop-learning-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 17px;
+}
+
+.crop-learning-item {
+  position: relative;
+  padding: 11px 12px 11px 38px;
+  background: #f8fbf8;
+  border: 1px solid #dce6dd;
+  border-radius: 10px;
+}
+
+.crop-learning-item::before {
+  content: "✓";
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  color: #2f7245;
+  font-weight: 900;
+}
+
+
+/* --------------------------------------------------
+   CROP RATING
+   -------------------------------------------------- */
+
+.crop-rating {
+  color: #a46f18;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+/* --------------------------------------------------
+   CROP TIMELINE
+   -------------------------------------------------- */
+
+.crop-timeline {
+  position: relative;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crop-timeline::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  bottom: 17px;
+  left: 19px;
+  width: 3px;
+  background: #cbdccb;
+}
+
+.crop-timeline li {
+  position: relative;
+  margin-bottom: 14px;
+  padding: 15px 16px 15px 54px;
+  background: #f8fbf8;
+  border: 1px solid #d8e4d9;
+  border-radius: 11px;
+}
+
+.crop-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 11px;
+  width: 17px;
+  height: 17px;
+  background: #337747;
+  border: 4px solid #e7f1e8;
+  border-radius: 50%;
+}
+
+.crop-timeline strong {
+  color: #194f2a;
+}
+
+
+/* --------------------------------------------------
+   CROP CHECKLIST
+   -------------------------------------------------- */
+
+.crop-checklist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crop-checklist li {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 12px 14px 12px 43px;
+  background: #f8fbf8;
+  border: 1px solid #d9e4da;
+  border-radius: 10px;
+}
+
+.crop-checklist li::before {
+  content: "☐";
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  color: #337747;
+  font-size: 1.15rem;
+  font-weight: 800;
 }
 
 
@@ -4415,6 +4741,9 @@ summary::after {
   }
 
   .quick-facts-grid,
+  .crop-snapshot-grid,
+  .crop-recommendation-grid,
+  .crop-learning-grid,
   .crop-comparison-grid,
   .next-guide-grid {
     grid-template-columns: 1fr;
@@ -4422,6 +4751,11 @@ summary::after {
 
   .crop-guide-hero {
     padding: 18px;
+  }
+
+  .crop-snapshot,
+  .crop-recommendation {
+    padding: 19px;
   }
 
   .crop-guide-hero-grid {
