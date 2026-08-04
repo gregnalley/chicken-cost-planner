@@ -91714,7 +91714,86 @@ feedingReference: {
             "Minimum trial area, minimum useful area, and preferred production area remain null until backyard yield, wildlife-loss, processing-efficiency, and flock-size relationships are measured.",
             "Commercial plant populations and per-acre yields must not be converted into guaranteed backyard pounds per square foot."
           ]
+        },
+      
+              practicalSpace: {
+
+          growthForm:
+            "annual-grain",
+
+          productionScale:
+            "field-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "poor",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "conditional",
+
+            largeGardenPlot:
+              "good",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "poor",
+
+            orchardOrFoodForest:
+              "poor"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              100,
+
+            preferredSquareFeet:
+              300,
+
+            areaRule:
+              "soft",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "poor",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Grain Sorghum can physically grow in raised beds and small plots, but small plantings usually provide limited mature grain relative to the space, watering, bird protection, and processing labor required.",
+            "Raised beds may support trial plantings or limited whole-head enrichment harvests, but they are generally inefficient for meaningful grain production.",
+            "Containers are best suited to demonstration plants, ornamental heads, or very small enrichment harvests rather than dependable household grain production.",
+            "A continuous dedicated stand is more practical than scattered plants because productive head density, uniform maturity, and efficient harvest access are important.",
+            "Tall plants may also shade nearby crops, increasing the opportunity cost of using limited garden space.",
+            "Areas below the minimum practical threshold may still have educational or enrichment value, but should not normally outrank productive small-space crops."
+          ]
+
         }
+        
       },
 
       flock: {
