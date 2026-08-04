@@ -2486,6 +2486,8 @@ function validateCropPracticalSpace(
 
     "repeatedHarvestValue",
 
+    "harvestReturnPattern",
+
     "dedicatedSpaceRequired",
 
     "permanentPlacementRequired",
@@ -2586,6 +2588,13 @@ function validateCropPracticalSpace(
     vocabulary.repeatedHarvestLevels,
     "space.practicalSpace.repeatedHarvestValue",
     "repeatedHarvestValue"
+  );
+
+  validateAllowedValue(
+    practicalSpace.harvestReturnPattern,
+    vocabulary.harvestReturnPatterns,
+    "space.practicalSpace.harvestReturnPattern",
+    "harvestReturnPattern"
   );
 
 

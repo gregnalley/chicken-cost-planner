@@ -147,6 +147,21 @@ const PRACTICAL_SPACE_REPEATED_HARVEST_LEVELS =
 
   ]);
 
+const PRACTICAL_SPACE_HARVEST_RETURN_PATTERNS =
+  Object.freeze([
+
+    "continuous",
+
+    "repeated",
+
+    "seasonal",
+
+    "single",
+
+    "long-establishment"
+
+  ]);  
+
 
 const PRACTICAL_SPACE_CONTAINMENT_LEVELS =
   Object.freeze([
@@ -5761,6 +5776,9 @@ const PLANNER_CONFIG = Object.freeze({
 
       repeatedHarvestLevels:
         PRACTICAL_SPACE_REPEATED_HARVEST_LEVELS,
+
+      harvestReturnPatterns:
+        PRACTICAL_SPACE_HARVEST_RETURN_PATTERNS, 
 
       containmentLevels:
         PRACTICAL_SPACE_CONTAINMENT_LEVELS,
