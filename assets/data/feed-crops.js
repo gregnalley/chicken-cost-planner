@@ -176984,7 +176984,85 @@ usePaths: [
             "No minimum useful grain-production area has been assigned because cleaned yield and flock value vary too widely.",
             "Commercial seed rates should not be converted directly into a guaranteed backyard harvest."
           ]
+        },
+      
+               practicalSpace: {
+
+          growthForm:
+            "annual-grain",
+
+          productionScale:
+            "field-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "poor",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "conditional",
+
+            largeGardenPlot:
+              "good",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "conditional",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              100,
+
+            preferredSquareFeet:
+              300,
+
+            areaRule:
+              "soft",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "poor",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Barley can physically grow in raised beds and small plots, but small plantings usually provide limited mature grain relative to the space and processing labor required.",
+            "Raised beds may be useful for trials, small seed-head harvests, or young forage, but they are generally an inefficient use of limited garden space for stored-grain production.",
+            "Containers are best suited to sprouts, shoots, educational stands, or very small harvest trials rather than meaningful household grain production.",
+            "A continuous dedicated stand is more practical than scattered plants because productive head density and uniform maturity are important.",
+            "Areas below the minimum practical threshold may still have cover-crop, forage-frame, enrichment, or learning value, but should not normally outrank productive small-space crops."
+          ]
+
         }
+        
       },
 
       flock: {
