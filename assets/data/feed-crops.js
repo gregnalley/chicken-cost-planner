@@ -49880,6 +49880,9 @@ mechanicalProcessingSuitabilityScore:
             repeatedHarvestValue:
               "high",
 
+            harvestReturnPattern:
+              "repeated", 
+
             dedicatedSpaceRequired:
               false,
 
@@ -76823,6 +76826,9 @@ mechanicalProcessingSuitabilityScore:
 
           repeatedHarvestValue:
             "high",
+
+          harvestReturnPattern:
+            "long-establishment", 
 
           dedicatedSpaceRequired:
             true,
