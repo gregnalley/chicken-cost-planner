@@ -48,8 +48,8 @@
 
 .crop-guide-hero-grid {
   display: grid;
-  grid-template-columns: 235px minmax(0, 1fr);
-  gap: 26px;
+  grid-template-columns: 215px minmax(0, 1fr);
+  gap: 24px;
   align-items: center;
 }
 
@@ -60,7 +60,7 @@
 .crop-guide-hero-image img {
   display: block;
   width: 100%;
-  height: 235px;
+  height: 215px;
   object-fit: cover;
   border-radius: 14px;
 }
@@ -70,18 +70,20 @@
 }
 
 .crop-guide-hero-content h1 {
-  margin: 0 0 10px;
+  margin: 0 0 9px;
   font-size: clamp(
-    2rem,
-    4vw,
-    2.75rem
+    1.9rem,
+    3vw,
+    2.4rem
   );
   line-height: 1.08;
 }
 
 .crop-guide-hero-content p {
-  max-width: 680px;
-  line-height: 1.55;
+  max-width: 760px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.48;
 }
 
 .crop-guide-tags {
@@ -91,14 +93,23 @@
   margin-top: 14px;
 }
 
-.crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
-  color: #21442a;
-  font-size: 0.86rem;
-  font-weight: 750;
-  background: #dcefcf;
-  border-radius: 999px;
+.crop-guide-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 11px;
+}
+
+.kale-guide-page .section p,
+.kale-guide-page .section li,
+.kale-guide-page .section td,
+.kale-guide-page .section th {
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.kale-guide-page .section h2 {
+  line-height: 1.2;
 }
 
 .quick-facts-grid {
@@ -294,6 +305,16 @@
     font-size: 2rem;
   }
 
+  .kale-guide-page {
+  margin-top: 22px !important;
+  padding-right: 14px !important;
+  padding-left: 14px !important;
+}
+
+.crop-guide-hero-content p {
+  font-size: 0.98rem;
+}
+
   .greens-calendar {
     font-size: 0.92rem;
   }
@@ -421,7 +442,10 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+<div
+  class="kale-guide-page"
+  style="max-width:1180px; margin:32px auto; padding:0 20px;"
+>
 
 <div class="content">
 
