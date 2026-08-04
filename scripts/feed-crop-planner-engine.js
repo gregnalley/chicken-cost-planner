@@ -12778,17 +12778,25 @@ const aliasedGoalField =
       [];
 
     const ordinaryTaskFamilies =
-      new Set([
+  new Set([
 
-        "harvest",
+    "harvest",
 
-        "clean-sort",
+    "identify",
 
-        "measure",
+    "select",
 
-        "manage-crop"
+    "trim",
 
-      ]);
+    "feed",
+
+    "clean-sort",
+
+    "measure",
+
+    "manage-crop"
+
+  ]);
 
     return requiredTasks.filter(
       task => {
