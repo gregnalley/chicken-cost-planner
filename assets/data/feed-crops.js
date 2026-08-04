@@ -69070,7 +69070,87 @@ mechanicalProcessingSuitabilityScore:
               "Minimum useful planting area remains null until backyard yield and flock-demand relationships are better documented.",
               "Dedicated drying, storage, and processing space should be considered part of overall production planning."
             ]
+          },
+        
+
+                    practicalSpace: {
+
+            growthForm:
+              "herbaceous-perennial",
+
+            productionScale:
+              "large-garden-plot",
+
+            spaceTypeSuitability: {
+
+              raisedBed:
+                "poor",
+
+              container:
+                "unsuitable",
+
+              smallGardenPlot:
+                "conditional",
+
+              largeGardenPlot:
+                "excellent",
+
+              fieldOrAcreage:
+                "excellent",
+
+              yardOrLandscape:
+                "conditional",
+
+              orchardOrFoodForest:
+                "conditional"
+
+            },
+
+            areaRequirements: {
+
+              minimumPracticalSquareFeet:
+                100,
+
+              preferredSquareFeet:
+                300,
+
+              areaRule:
+                "soft",
+
+              areaBasis:
+                "dedicated-crop-area"
+
+            },
+
+            smallSpaceEfficiency:
+              "poor",
+
+            repeatedHarvestValue:
+              "high",
+
+            harvestReturnPattern:
+              "repeated",
+
+            dedicatedSpaceRequired:
+              true,
+
+            permanentPlacementRequired:
+              true,
+
+            containmentConcern:
+              "low",
+
+            notes: [
+              "Alfalfa is most practical as a dedicated perennial forage stand rather than as a small ornamental or raised-bed planting.",
+              "A 4-by-8 raised bed can grow Alfalfa, but the limited area usually provides little flock forage relative to the long-term space commitment.",
+              "Containers are unsuitable for meaningful production because restricted root depth, rapid drying, and crown stress reduce long-term stand performance.",
+              "Medium and large plots, rotational paddocks, and cut-and-carry forage areas provide substantially better production value.",
+              "Repeated harvest improves its long-term usefulness, but the crop occupies the same ground for multiple seasons and creates high opportunity cost in very limited garden space.",
+              "Small plantings may still have trial, pollinator, soil-building, or enrichment value, but should not normally outrank productive small-space leafy crops."
+            ]
+
           }
+
         },
 
                 flock: {
