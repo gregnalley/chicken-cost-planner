@@ -12798,76 +12798,64 @@ const aliasedGoalField =
 
 
   function getUnacceptedRequiredTasks(
-    usePath,
-    answers
-  ) {
+  usePath,
+  answers
+) {
 
-    const requiredTasks =
-      Array.isArray(
-        usePath
-          ?.requiredProcessingTasks
-      )
-        ? usePath
-            .requiredProcessingTasks
-        : [];
+  const requiredTasks =
+    Array.isArray(
+      usePath
+        ?.requiredProcessingTasks
+    )
+      ? usePath
+          .requiredProcessingTasks
+      : [];
 
-    const acceptedTasks =
-      answers.labor
-        ?.acceptedProcessingTasks ||
-      [];
+  const acceptedTasks =
+    answers.labor
+      ?.acceptedProcessingTasks ||
+    [];
 
-    const ordinaryTaskFamilies =
-  new Set([
+  const approvalRequiredFamilies =
+    new Set([
 
-    "harvest",
+      "cook",
 
-    "identify",
+      "grind",
 
-    "select",
+      "mix",
 
-    "verify",
+      "ferment",
 
-    "discard-unsafe-material",
+      "extract-oil"
 
-    "offer",
+    ]);
 
-    "trim",
+  return requiredTasks.filter(
+    task => {
 
-    "feed",
-
-    "clean-sort",
-
-    "measure",
-
-    "manage-crop"
-
-  ]);
-
-    return requiredTasks.filter(
-      task => {
-
-        const taskFamily =
-          getProcessingTaskFamily(
-            task
-          );
-
-        if (
-          ordinaryTaskFamilies.has(
-            taskFamily
-          )
-        ) {
-          return false;
-        }
-
-        return !userAcceptsProcessingTask(
-          task,
-          acceptedTasks
+      const taskFamily =
+        getProcessingTaskFamily(
+          task
         );
 
+      if (
+        !approvalRequiredFamilies.has(
+          taskFamily
+        )
+      ) {
+        return false;
       }
-    );
 
-  }
+      return !userAcceptsProcessingTask(
+        task,
+        acceptedTasks
+      );
+
+    }
+  );
+
+}
 
 
 
