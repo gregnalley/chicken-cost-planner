@@ -4270,73 +4270,158 @@ const practicalRatings =
 
 
   function findSpaceTypeScore(
-    space,
-    spaceType
+  space,
+  spaceType
+) {
+
+  if (
+    !space ||
+    !spaceType
+  ) {
+    return null;
+  }
+
+
+  const practicalSpaceTypeMap =
+    Object.freeze({
+
+      "raised-bed":
+        "raisedBed",
+
+      "container":
+        "container",
+
+      "small-garden-plot":
+        "smallGardenPlot",
+
+      "large-garden-plot":
+        "largeGardenPlot",
+
+      "field-or-acreage":
+        "fieldOrAcreage",
+
+      "yard-or-landscape":
+        "yardOrLandscape",
+
+      "orchard-or-food-forest":
+        "orchardOrFoodForest"
+
+    });
+
+
+  const practicalSpaceType =
+    practicalSpaceTypeMap[
+      spaceType
+    ] ||
+    spaceType;
+
+
+  const practicalRating =
+    space.practicalSpace
+      ?.spaceTypeSuitability
+      ?.[
+        practicalSpaceType
+      ];
+
+
+  const practicalScoreMap =
+    Object.freeze({
+
+      excellent:
+        100,
+
+      good:
+        82,
+
+      conditional:
+        62,
+
+      poor:
+        35,
+
+      unsuitable:
+        0
+
+    });
+
+
+  if (
+    typeof practicalRating ===
+      "string" &&
+    Number.isFinite(
+      practicalScoreMap[
+        practicalRating
+      ]
+    )
   ) {
 
-    if (
-      !space ||
-      !spaceType
-    ) {
-      return null;
-    }
+    return practicalScoreMap[
+      practicalRating
+    ];
 
-    const scoreCollections = [
+  }
 
-      space.spaceTypeScores,
 
-      space.suitableSpaceTypeScores,
+  const scoreCollections = [
 
-      space.growingSpaceScores,
+    space.spaceTypeScores,
 
-      space.layoutTypeScores
+    space.suitableSpaceTypeScores,
 
-    ].filter(
-      collection =>
-        collection &&
-        typeof collection ===
-          "object"
+    space.growingSpaceScores,
+
+    space.layoutTypeScores
+
+  ].filter(
+    collection =>
+      collection &&
+      typeof collection ===
+        "object"
+  );
+
+
+  const possibleKeys =
+    getSpaceTypeScoreKeys(
+      spaceType
     );
 
-    const possibleKeys =
-      getSpaceTypeScoreKeys(
-        spaceType
-      );
+
+  for (
+    const collection
+    of scoreCollections
+  ) {
 
     for (
-      const collection
-      of scoreCollections
+      const key
+      of possibleKeys
     ) {
 
-      for (
-        const key
-        of possibleKeys
+      const value =
+        collection[
+          key
+        ];
+
+
+      if (
+        Number.isFinite(
+          value
+        )
       ) {
 
-        const value =
-          collection[
-            key
-          ];
-
-        if (
-          Number.isFinite(
-            value
-          )
-        ) {
-
-          return convertFivePointScore(
-            value
-          );
-
-        }
+        return convertFivePointScore(
+          value
+        );
 
       }
 
     }
 
-    return null;
-
   }
+
+
+  return null;
+
+}
 
 
 
