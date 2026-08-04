@@ -4906,7 +4906,86 @@ const BCP_FEED_CROPS = {
             "The planner should distinguish small-space ornamental or enrichment value from meaningful loose-seed production.",
             "Commercial plant populations and field yields should never be converted directly into guaranteed backyard production."
           ]
+        },
+        
+                practicalSpace: {
+
+          growthForm:
+            "annual-broadleaf",
+
+          productionScale:
+            "garden-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "excellent",
+
+            container:
+              "conditional",
+
+            smallGardenPlot:
+              "excellent",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "excellent",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              9,
+
+            preferredSquareFeet:
+              75,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "excellent",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            false,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Sunflowers are among the most practical feed crops for small gardens because even a handful of plants can produce whole seed heads for flock enrichment.",
+            "Raised beds work well for most garden cultivars, although giant varieties may overwhelm narrow beds and shade neighboring crops.",
+            "Containers are most appropriate for dwarf or compact cultivars and generally produce less dependable seed harvests than in-ground plantings.",
+            "Fence lines, borders, and narrow strips make excellent use of vertical space while preserving the center of the garden for lower-growing crops.",
+            "Larger plantings improve total seed production but are not required for a useful seasonal harvest.",
+            "The crop provides excellent enrichment value from small spaces, but visitors should not expect a few plants to replace a meaningful amount of purchased poultry feed."
+          ]
+
         }
+
       },
 
             flock: {
