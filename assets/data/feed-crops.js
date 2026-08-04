@@ -141269,7 +141269,86 @@ feedingReference: {
             "A drying area may require as much planning as the growing area when clean grain is the primary goal.",
             "Exact plants-per-square-foot values remain dependent on cultivar, spacing, and whether the goal is leaves, grain, ornament, or biomass."
           ]
+        },
+
+                practicalSpace: {
+
+          growthForm:
+            "upright-annual",
+
+          productionScale:
+            "small-space",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "excellent",
+
+            container:
+              "good",
+
+            smallGardenPlot:
+              "excellent",
+
+            largeGardenPlot:
+              "excellent",
+
+            fieldOrAcreage:
+              "good",
+
+            yardOrLandscape:
+              "good",
+
+            orchardOrFoodForest:
+              "conditional"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              9,
+
+            preferredSquareFeet:
+              50,
+
+            areaRule:
+              "contextual",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "excellent",
+
+          repeatedHarvestValue:
+            "high",
+
+          harvestReturnPattern:
+            "repeated",
+
+          dedicatedSpaceRequired:
+            false,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "low",
+
+          notes: [
+            "Amaranth is highly practical in raised beds and small garden plots because it can provide repeated leaf harvests, mature seed heads, biomass, and ornamental value from limited space.",
+            "Plants grown primarily for young leaves can be spaced more densely than plants grown for large mature grain heads.",
+            "Large containers can support useful leaf and seed production, although frequent irrigation and structural stability become important as plants mature.",
+            "Tall cultivars can shade neighboring crops and should be positioned where seasonal shading will not reduce the productivity of shorter plants.",
+            "A dedicated grain plot improves uniform maturity, harvest access, drying, and threshing, but dedicated space is not required when leaves or a few seed heads are the main goal.",
+            "Dropped seed may produce volunteers, but Amaranth does not create a persistent underground-spread problem."
+          ]
+
         }
+
       },
 
       flock: {
