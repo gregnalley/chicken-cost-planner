@@ -84110,7 +84110,86 @@ perennial:
             "Actual useful area depends on flock size, variety, plant population, fertility, irrigation, pollination, and wildlife losses.",
             "The stored area thresholds are planning values rather than guaranteed feed-production amounts."
           ]
+        },
+      
+              practicalSpace: {
+
+          growthForm:
+            "annual-grain",
+
+          productionScale:
+            "field-plot",
+
+          spaceTypeSuitability: {
+
+            raisedBed:
+              "poor",
+
+            container:
+              "unsuitable",
+
+            smallGardenPlot:
+              "poor",
+
+            largeGardenPlot:
+              "good",
+
+            fieldOrAcreage:
+              "excellent",
+
+            yardOrLandscape:
+              "poor",
+
+            orchardOrFoodForest:
+              "unsuitable"
+
+          },
+
+          areaRequirements: {
+
+            minimumPracticalSquareFeet:
+              100,
+
+            preferredSquareFeet:
+              300,
+
+            areaRule:
+              "hard",
+
+            areaBasis:
+              "dedicated-crop-area"
+
+          },
+
+          smallSpaceEfficiency:
+            "very-poor",
+
+          repeatedHarvestValue:
+            "low",
+
+          harvestReturnPattern:
+            "single",
+
+          dedicatedSpaceRequired:
+            true,
+
+          permanentPlacementRequired:
+            false,
+
+          containmentConcern:
+            "none",
+
+          notes: [
+            "Field Corn requires a compact block with enough plants and rows to support dependable wind pollination.",
+            "A conventional 4-by-8 raised bed is generally too small to provide both a practical pollination block and meaningful grain production.",
+            "Containers are unsuitable for dependable poultry-feed grain production because of restricted rooting volume, rapid drying, high fertility demand, and poor pollination.",
+            "The crop is most practical in a dedicated in-ground block with room for at least four short rows, harvest access, drying, shelling, and storage.",
+            "Tall growth can shade nearby crops and increases the opportunity cost of using limited garden space.",
+            "Areas below the minimum practical threshold may support educational trials, but they should not receive a normal feed-production recommendation."
+          ]
+
         }
+        
       },
 
       flock: {
