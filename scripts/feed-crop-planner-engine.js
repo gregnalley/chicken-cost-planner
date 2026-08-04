@@ -4445,15 +4445,33 @@ const practicalRatings =
       return null;
     }
 
-    const minimumUsefulArea =
-      space.minimumUsefulAreaSqFt ??
-      space.minimumPracticalAreaSqFt ??
-      null;
+    const practicalSpace =
+  space.practicalSpace &&
+  typeof space.practicalSpace ===
+    "object"
+    ? space.practicalSpace
+    : {};
 
-    const preferredArea =
-      space.preferredAreaSqFt ??
-      space.preferredProductionAreaSqFt ??
-      null;
+const areaRequirements =
+  practicalSpace.areaRequirements &&
+  typeof practicalSpace.areaRequirements ===
+    "object"
+    ? practicalSpace.areaRequirements
+    : {};
+
+    const minimumUsefulArea =
+  areaRequirements
+    .minimumPracticalSquareFeet ??
+  space.minimumUsefulAreaSqFt ??
+  space.minimumPracticalAreaSqFt ??
+  null;
+
+const preferredArea =
+  areaRequirements
+    .preferredSquareFeet ??
+  space.preferredAreaSqFt ??
+  space.preferredProductionAreaSqFt ??
+  null;
 
     if (
       Number.isFinite(
