@@ -3583,18 +3583,16 @@ font-size:
 
 }
 
-
 .quick-answer-box strong {
+  display: inline;
+  font-size: inherit;
+  margin-bottom: 0;
+}
 
-display:
-block;
-
-font-size:
-1.25rem;
-
-margin-bottom:
-10px;
-
+.quick-answer-box p:first-child > strong:first-child {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
 }
 
 /* =========================================
