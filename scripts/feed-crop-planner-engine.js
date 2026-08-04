@@ -6734,6 +6734,47 @@ const preferredArea =
         ]
       },
 
+            {
+        family:
+          "identify",
+
+        patterns: [
+          "identify"
+        ]
+      },
+
+      {
+        family:
+          "select",
+
+        patterns: [
+          "select"
+        ]
+      },
+
+      {
+        family:
+          "trim",
+
+        patterns: [
+          "remove-coarse",
+          "trim-stem",
+          "trim-leaf"
+        ]
+      },
+
+      {
+        family:
+          "feed",
+
+        patterns: [
+          "feed-fresh",
+          "feed-direct",
+          "offer-fresh",
+          "serve-fresh"
+        ]
+      },
+
       {
         family:
           "dry",
@@ -6948,12 +6989,25 @@ const preferredArea =
     */
 
     const ordinaryTaskFamilies =
-      new Set([
-        "harvest",
-        "clean-sort",
-        "measure",
-        "manage-crop"
-      ]);
+  new Set([
+
+    "harvest",
+
+    "identify",
+
+    "select",
+
+    "trim",
+
+    "feed",
+
+    "clean-sort",
+
+    "measure",
+
+    "manage-crop"
+
+  ]);
 
     let acceptedCount = 0;
 
