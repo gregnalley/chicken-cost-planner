@@ -167,7 +167,7 @@
     #194f2a;
 }
 
-.oats-notice {
+.crop-notice-box {
   padding:
     20px;
 
@@ -189,7 +189,7 @@
     12px;
 }
 
-.oats-success-box {
+.crop-success-box {
   padding:
     20px;
 
@@ -208,7 +208,7 @@
     12px;
 }
 
-.oats-warning-box {
+.crop-warning-box {
   padding:
     20px;
 
@@ -230,7 +230,7 @@
     12px;
 }
 
-.oats-danger-box {
+.crop-danger-box {
   padding:
     20px;
 
@@ -252,7 +252,7 @@
     12px;
 }
 
-.oats-steps {
+.crop-steps {
   counter-reset:
     oats-step;
 
@@ -266,7 +266,7 @@
     none;
 }
 
-.oats-steps li {
+.crop-steps li {
   position:
     relative;
 
@@ -287,7 +287,7 @@
     12px;
 }
 
-.oats-steps li::before {
+.crop-steps li::before {
   counter-increment:
     oats-step;
 
@@ -333,7 +333,7 @@
     800;
 }
 
-.oats-steps strong {
+.crop-steps strong {
   display:
     block;
 
@@ -389,7 +389,7 @@
     0;
 }
 
-.oats-calendar {
+.crop-calendar {
   width:
     100%;
 
@@ -397,8 +397,8 @@
     collapse;
 }
 
-.oats-calendar th,
-.oats-calendar td {
+.crop-calendar th,
+.crop-calendar td {
   padding:
     13px;
 
@@ -413,7 +413,7 @@
     #d8e2d8;
 }
 
-.oats-calendar th {
+.crop-calendar th {
   color:
     #ffffff;
 
@@ -421,7 +421,7 @@
     #356f44;
 }
 
-.oats-calendar tr:nth-child(even) td {
+.crop-calendar tr:nth-child(even) td {
   background:
     #f7faf7;
 }
@@ -512,7 +512,7 @@
       23px;
   }
 
-  .oats-calendar {
+  .crop-calendar {
     font-size:
       0.92rem;
   }
@@ -751,13 +751,7 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div
-  style="
-    max-width:900px;
-    margin:40px auto;
-    padding:0 16px;
-  "
->
+<div class="growing-guide-page oats-guide-page">
 
 <div class="content">
 
@@ -771,9 +765,10 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 <div class="crop-guide-hero-image">
 
 <img
-src="assets/images/feed-crops/oats/oats-plant.webp"
-alt="Oat plants growing as a cool-season grain and forage crop for backyard chickens"
-loading="lazy"
+  src="assets/images/feed-crops/oats/oats-plant.webp"
+  alt="Oat plants growing as a cool-season grain and forage crop for backyard chickens"
+  loading="eager"
+  fetchpriority="high"
 >
 
 </div>
@@ -1084,7 +1079,7 @@ Purchased groats should not be assumed to have the same nutrition or storage cha
 </div>
 
 <div
-  class="oats-warning-box"
+  class="crop-warning-box"
   style="margin-top:20px;"
 >
 
@@ -1161,7 +1156,7 @@ This is the strongest long-storage oat path but requires the most hand processin
 </div>
 
 <div
-  class="oats-success-box"
+  class="crop-success-box"
   style="margin-top:20px;"
 >
 
@@ -1193,7 +1188,7 @@ Oats grow during cool weather, but planting strategy varies by region.
 In colder climates, oats are commonly planted during early spring as soon as the soil is workable. In mild-winter regions, adapted oats may be planted during fall for winter forage or a late-spring grain harvest.
 </p>
 
-<table class="oats-calendar">
+<table class="crop-calendar">
 
 <tr>
 
@@ -1326,7 +1321,7 @@ Cool-season forage or grain harvested before prolonged damp weather.
 </table>
 
 <div
-  class="oats-warning-box"
+  class="crop-warning-box"
   style="margin-top:20px;"
 >
 
@@ -1394,7 +1389,7 @@ Using spring oats where winter survival is unreliable
 
 </ul>
 
-<div class="oats-notice">
+<div class="crop-notice-box">
 
 <strong>
 Winter-killed oats may still provide cover-crop residue.
@@ -1558,7 +1553,7 @@ The database intentionally does not promise a specific number of pounds per 100 
 🪴 How to Plant Oats
 </h2>
 
-<ol class="oats-steps">
+<ol class="crop-steps">
 
 <li>
 
@@ -1692,7 +1687,7 @@ Openings small enough to prevent full scratching access
 As oat leaves grow through the mesh, chickens can clip the tops while the roots and crowns remain partially protected.
 </p>
 
-<div class="oats-warning-box">
+<div class="crop-warning-box">
 
 <strong>
 A forage frame does not guarantee continuous regrowth.
@@ -1778,7 +1773,7 @@ Prevent stem and seed-head development
 
 </ul>
 
-<div class="oats-success-box">
+<div class="crop-success-box">
 
 <strong>
 Decide whether the stand is for forage or grain.
@@ -1864,7 +1859,7 @@ Organic-matter management
 Oats capture available soil nitrogen but do not fix atmospheric nitrogen like clover, alfalfa, or cowpeas.
 </p>
 
-<div class="oats-warning-box">
+<div class="crop-warning-box">
 
 <strong>
 Avoid excessive nitrogen.
@@ -1934,7 +1929,7 @@ Rainfall-only production may be practical in climates with dependable cool-seaso
 Oats are not as drought resilient as Proso Millet or Grain Sorghum. Water stress during heading and grain filling may reduce seed number, kernel size, and final yield.
 </p>
 
-<div class="oats-warning-box">
+<div class="crop-warning-box">
 
 <strong>
 Do not confuse wet-weather adaptation with waterlogging tolerance.
@@ -2185,7 +2180,7 @@ Store only clean dry grain and inspect containers regularly.
 </table>
 
 <div
-  class="oats-warning-box"
+  class="crop-warning-box"
   style="margin-top:20px;"
 >
 
@@ -2326,7 +2321,7 @@ Reduces grain quality and may create feed-safety concerns.
 </table>
 
 <div
-  class="oats-danger-box"
+  class="crop-danger-box"
   style="margin-top:20px;"
 >
 
@@ -2390,7 +2385,7 @@ Mature grain separates more readily after drying
 Physiological maturity does not automatically mean the grain is dry enough for sealed storage.
 </p>
 
-<div class="oats-warning-box">
+<div class="crop-warning-box">
 
 <strong>
 Inspect several panicles from different parts of the plot.
@@ -2409,7 +2404,7 @@ Plants may mature unevenly because of soil, moisture, planting depth, shade, dis
 <div class="section">
 
 
-<div class="crop-guide-feature">
+<div class="crop-guide-feature-card">
 
 <div class="crop-guide-feature-image">
 
@@ -2439,7 +2434,7 @@ Harvesting oats at the correct maturity is important for both feed quality and s
 
 </div>
 
-<ol class="oats-steps">
+<ol class="crop-steps">
 
 <li>
 
@@ -2567,7 +2562,7 @@ Do not seal damp heads in buckets or plastic bags
 
 </ul>
 
-<div class="oats-danger-box">
+<div class="crop-danger-box">
 
 <strong>
 Dry-looking hulls do not prove the kernels are safe to store.
@@ -2661,7 +2656,7 @@ Insects
 
 </ul>
 
-<div class="oats-warning-box">
+<div class="crop-warning-box">
 
 <strong>
 Protect your eyes and lungs.
@@ -2829,7 +2824,7 @@ Rodent contamination
 Whole grain generally stores better than cracked or ground grain. Process only the amount expected to be used within a reasonable period.
 </p>
 
-<div class="oats-notice">
+<div class="crop-notice-box">
 
 <strong>
 Whole dried heads are better suited to shorter storage than clean loose grain.
@@ -2847,7 +2842,7 @@ Intact heads are bulky, contain more plant material, and may be harder to inspec
 
 <div class="section">
 
-<div class="crop-guide-feature">
+<div class="crop-guide-feature-card">
 
 <div class="crop-guide-feature-image">
 
@@ -2917,7 +2912,7 @@ Whole dried seed heads may be secured inside the run so chickens can peck grain 
 Adult chickens eating whole oats should have access to appropriate insoluble grit.
 </p>
 
-<div class="oats-notice">
+<div class="crop-notice-box">
 
 <strong>
 Keep oats supplemental.
@@ -3093,7 +3088,7 @@ Oats contain beta-glucans
 Beta-glucans can bind water and increase intestinal viscosity. In formulated poultry diets, commercial enzymes may be used to reduce these effects.
 </p>
 
-<div class="oats-warning-box">
+<div class="crop-warning-box">
 
 <strong>
 Grinding does not remove the hull or beta-glucans.
@@ -3331,7 +3326,7 @@ Keep young chicks on an age-appropriate complete starter ration.
 ☠️ Never Feed Chemically Treated Oat Seed
 </h2>
 
-<div class="oats-danger-box">
+<div class="crop-danger-box">
 
 <strong>
 Planting seed may be treated with fungicides, insecticides, colorants, or other agricultural chemicals.
@@ -3491,7 +3486,7 @@ Oats often provide their greatest value when forage, soil protection, education,
 🌾 A Simple Beginner Oat Plan
 </h2>
 
-<div class="oats-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 For a first attempt, plant a small sunny bed with untreated oats adapted to your region and season.
