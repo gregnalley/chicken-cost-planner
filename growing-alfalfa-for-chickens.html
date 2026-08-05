@@ -81,7 +81,7 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   color: #194f2a;
 }
 
-.alfalfa-notice {
+.crop-notice-box {
   padding: 20px;
   color: #5d4217;
   background: #fff8e8;
@@ -90,7 +90,7 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   border-radius: 12px;
 }
 
-.alfalfa-success-box {
+.crop-success-box {
   padding: 20px;
   background: #f1f8f2;
   border: 1px solid #cae0ce;
@@ -98,7 +98,7 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   border-radius: 12px;
 }
 
-.alfalfa-warning-box {
+.crop-warning-box {
   padding: 20px;
   color: #613e19;
   background: #fff5e9;
@@ -107,14 +107,14 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   border-radius: 12px;
 }
 
-.alfalfa-steps {
+.crop-steps {
   counter-reset: alfalfa-step;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.alfalfa-steps li {
+.crop-steps li {
   position: relative;
   margin-bottom: 15px;
   padding: 18px 18px 18px 62px;
@@ -123,7 +123,7 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   border-radius: 12px;
 }
 
-.alfalfa-steps li::before {
+.crop-steps li::before {
   counter-increment: alfalfa-step;
   content: counter(alfalfa-step);
   position: absolute;
@@ -140,7 +140,7 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   border-radius: 50%;
 }
 
-.alfalfa-steps strong {
+.crop-steps strong {
   display: block;
   margin-bottom: 5px;
   color: #194f2a;
@@ -168,25 +168,25 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
   margin-bottom: 0;
 }
 
-.alfalfa-calendar {
+.crop-calendar {
   width: 100%;
   border-collapse: collapse;
 }
 
-.alfalfa-calendar th,
-.alfalfa-calendar td {
+.crop-calendar th,
+.crop-calendar td {
   padding: 13px;
   text-align: left;
   vertical-align: top;
   border: 1px solid #d8e2d8;
 }
 
-.alfalfa-calendar th {
+.crop-calendar th {
   color: #ffffff;
   background: #356f44;
 }
 
-.alfalfa-calendar tr:nth-child(even) td {
+.crop-calendar tr:nth-child(even) td {
   background: #f7faf7;
 }
 
@@ -237,7 +237,7 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
     padding: 23px;
   }
 
-  .alfalfa-calendar {
+  .crop-calendar {
     font-size: 0.92rem;
   }
 
@@ -374,20 +374,21 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+<div class="growing-guide-page alfalfa-guide-page">
 
 <div class="content">
 
-<div class="crop-guide-hero">
+<header class="crop-guide-hero">
 
 <div class="crop-guide-hero-grid">
 
 <div class="crop-guide-hero-image">
 
 <img
-src="assets/images/feed-crops/alfalfa/alfalfa-plant.webp"
-alt="Alfalfa plants growing as a backyard chicken feed crop"
-loading="lazy"
+  src="assets/images/feed-crops/alfalfa/alfalfa-plant.webp"
+  alt="Alfalfa plants growing as perennial supplemental forage for backyard chickens"
+  loading="eager"
+  fetchpriority="high"
 >
 
 </div>
@@ -432,11 +433,77 @@ Protein-Oriented Crop
 
 </div>
 
+</header>
+
+<div class="section">
+
+<h2>
+🌿 Can Chickens Eat Alfalfa?
+</h2>
+
+<p>
+<strong>Yes.</strong> Chickens can eat clean alfalfa leaves, tender stems, properly dried leafy hay, softened alfalfa pellets, alfalfa meal, and fresh alfalfa sprouts as supplemental foods.
+</p>
+
+<p>
+Fresh young alfalfa is generally more useful than coarse mature stems because chickens can more easily consume the leafy portions. Properly dried leafy hay may also provide winter forage and enrichment, although long fibrous stems are often ignored.
+</p>
+
+<p>
+Practical feeding forms include:
+</p>
+
+<ul>
+
+<li>
+<strong>Fresh leaves and tender stems:</strong>
+Offer clean young growth in small amounts as supplemental forage.
+</li>
+
+<li>
+<strong>Properly dried alfalfa hay:</strong>
+Choose leafy, mold-free hay with minimal dust and no musty odor.
+</li>
+
+<li>
+<strong>Alfalfa pellets:</strong>
+Plain commercial pellets may be offered dry or softened with clean water. Remove wet leftovers before spoilage begins.
+</li>
+
+<li>
+<strong>Alfalfa meal:</strong>
+Commercial dehydrated meal may be used as a measured ingredient in a properly formulated ration.
+</li>
+
+<li>
+<strong>Alfalfa sprouts:</strong>
+Clean seed intended for sprouting may be grown under sanitary conditions with good rinsing, drainage, and airflow.
+</li>
+
+<li>
+<strong>Controlled grazing:</strong>
+Brief access to an established stand may be possible, but continuous scratching and close grazing can damage crowns and roots.
+</li>
+
+</ul>
+
+<div class="crop-warning-box">
+
+<strong>
+Keep alfalfa supplemental.
+</strong>
+
+<p style="margin-bottom:0;">
+Alfalfa provides protein-oriented forage, fiber, minerals, and carotenoid pigments, but it is lower in usable energy than grain and does not provide the complete amino-acid, vitamin, mineral, and calcium balance required by chickens. Never feed moldy, damp, heated, chemically contaminated, or spoiled alfalfa.
+</p>
+
+</div>
+
 </div>
 
 <div class="section">
 
-<h2>🌿 Is Alfalfa a Good Crop for Chickens?</h2>
+<h2>🌿 Can Chickens Eat Alfalfa? Growing Alfalfa for Chickens</h2>
 
 <p>
 Alfalfa is one of the world’s most important forage crops. It develops a substantial crown and deep root system, then produces repeated leafy growth that can be cut several times during a productive season.
@@ -621,7 +688,7 @@ They still require rest and should not be expected to survive constant chicken s
 
 </div>
 
-<div class="alfalfa-success-box" style="margin-top:20px;">
+<div class="crop-success-box" style="margin-top:20px;">
 
 <strong>Practical beginner choice:</strong>
 
@@ -641,7 +708,7 @@ Choose a certified variety recommended by your state Extension service, with sui
 Alfalfa may be planted in spring or late summer, depending on climate, rainfall, irrigation, weed pressure, and winter timing.
 </p>
 
-<table class="alfalfa-calendar">
+<table class="crop-calendar">
 
 <tr>
 <th>Region</th>
@@ -744,7 +811,7 @@ The required amount depends on:</p>
 <li>Regional production recommendations</li>
 </ul>
 
-<div class="alfalfa-notice">
+<div class="crop-notice-box">
 
 <strong>Why the database leaves plant density blank:</strong>
 
@@ -784,7 +851,7 @@ A soil test can identify:</p>
 Alfalfa generally performs best in near-neutral soil. Strongly acidic soil can reduce root growth, nodulation, nutrient availability, persistence, and yield.
 </p>
 
-<div class="alfalfa-warning-box">
+<div class="crop-warning-box">
 
 <strong>Correct soil pH before seeding whenever possible.</strong>
 
@@ -800,7 +867,7 @@ Lime incorporated before planting is more effective than trying to correct acidi
 
 <h2>🪴 How to Plant Alfalfa</h2>
 
-<ol class="alfalfa-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Choose a well-drained site.</strong>
@@ -959,38 +1026,40 @@ More mature alfalfa generally provides:</p>
 </ul>
 
 <p>
-For small-scale poultry forage, cutting near the bud to early-bloom stage provides a reasonable balance between leafy quality and plant recovery. Commercial alfalfa is often harvested around the bud or early-bloom stages, depending on management goals. :contentReference[oaicite:1]{index=1}
+For small-scale poultry forage, cutting near the bud to early-bloom stage provides a reasonable balance between leafy quality and plant recovery. Commercial alfalfa is often harvested around the bud or early-bloom stages, depending on management goals.
 </p>
 
 </div>
 
 <div class="section">
 
-  <div class="crop-feature-image-row">
+<div class="crop-guide-feature-card">
 
-<div class="crop-feature-image">
+<div class="crop-guide-feature-image">
 
 <img
-src="assets/images/feed-crops/alfalfa/harvesting-alfalfa.webp"
-alt="Harvesting alfalfa by hand for drying and storage"
-loading="lazy"
+  src="assets/images/feed-crops/alfalfa/harvesting-alfalfa.webp"
+  alt="Harvesting alfalfa by hand for drying and supplemental chicken forage"
+  loading="lazy"
 >
 
 </div>
 
-<div class="crop-feature-image-text">
+<div class="crop-guide-feature-content">
+
+<h2>
+✂️ How to Harvest Alfalfa by Hand
+</h2>
 
 <p>
-Small-scale harvesting allows backyard growers to cut only the amount needed, protect the stand from overharvesting, and dry the leafy material properly before storage or feeding.
+Small-scale harvesting allows backyard growers to cut only the amount needed, protect the stand from overharvesting, preserve valuable leaves, and dry the forage properly before storage or feeding.
 </p>
 
 </div>
 
 </div>
 
-<h2>✂️ How to Harvest Alfalfa by Hand</h2>
-
-<ol class="alfalfa-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Choose a dry weather window.</strong>
@@ -1052,7 +1121,7 @@ For a small harvest:</p>
 <li>Discard any material that develops mold or a musty odor</li>
 </ul>
 
-<div class="alfalfa-warning-box">
+<div class="crop-warning-box">
 
 <strong>Damp alfalfa can heat in storage.</strong>
 
@@ -1185,34 +1254,35 @@ Storage requires thorough drying and continued mold monitoring.</p>
 
 <div class="section">
 
-  <div class="crop-section-image">
+<div class="crop-guide-feature-card">
 
-<div class="crop-feature-image-row">
-
-<div class="crop-feature-image">
+<div class="crop-guide-feature-image">
 
 <img
-src="assets/images/feed-crops/alfalfa/chickens-eating-alfalfa.webp"
-alt="Chickens eating alfalfa as supplemental forage"
-loading="lazy"
+  src="assets/images/feed-crops/alfalfa/chickens-eating-alfalfa.webp"
+  alt="Chickens eating alfalfa as supplemental forage"
+  loading="lazy"
 >
 
 </div>
 
-<div class="crop-feature-image-text">
+<div class="crop-guide-feature-content">
+
+<h2>
+🐔 How to Feed Alfalfa to Chickens
+</h2>
 
 <p>
-Fresh alfalfa can provide chickens with supplemental forage, natural pigments, fiber, and enrichment. Because chickens are not efficient at digesting large amounts of fibrous plant material, alfalfa should complement rather than replace a balanced poultry ration.
+Fresh alfalfa can provide supplemental forage, plant pigments, fiber, and enrichment. Leafy material is generally more useful than mature coarse stems, and alfalfa should complement rather than replace a balanced poultry ration.
 </p>
 
 </div>
 
-</div>    
-
-<h2>🐔 How to Feed Alfalfa to Chickens</h2>
+</div>
 
 <p>
-Alfalfa may be offered in several forms:</p>
+Alfalfa may be offered in several forms:
+</p>
 
 <ul>
 <li>Freshly cut leaves and tender stems</li>
@@ -1227,7 +1297,7 @@ Alfalfa may be offered in several forms:</p>
 <p>
 Long, coarse stems may be ignored and can create waste. Chopping or selecting leafy material improves practical consumption.</p>
 
-<div class="alfalfa-notice">
+<div class="crop-notice-box">
 
 <strong>Keep alfalfa supplemental.</strong>
 
@@ -1296,12 +1366,12 @@ Alfalfa composition varies greatly with cutting stage, leaf-to-stem ratio, weath
 </table>
 
 <p>
-Dehydrated alfalfa meal and leaf concentrates are used in some poultry diets, especially for natural pigmentation, but commercial inclusion rates should not be copied directly into an informal backyard feeding system. :contentReference[oaicite:2]{index=2}
+Dehydrated alfalfa meal and leaf concentrates are used in some poultry diets, especially for natural pigmentation, but commercial inclusion rates should not be copied directly into an informal backyard feeding system.
 </p>
 
 </div>
 
-<div class="section-card">
+<div class="section">
 
 <h2>
 🌾 Can Chickens Eat Alfalfa Hay?
@@ -1369,7 +1439,7 @@ Although alfalfa contains valuable nutrients, it does not provide the complete b
 
 </div>
 
-<div class="section-card">
+<div class="section">
 
 <h2>
 🌱 Can Chickens Eat Alfalfa Sprouts?
@@ -1594,7 +1664,7 @@ For many small flocks, buying clean alfalfa pellets or hay may be cheaper than p
 
 <h2>🌿 A Simple Beginner Alfalfa Plan</h2>
 
-<div class="alfalfa-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 For a first attempt, establish a protected patch of approximately 50–100 square feet outside the permanent chicken run.
@@ -1788,7 +1858,7 @@ Read Mulberry Guide →
 
 </div>
 
-<div class="section"></div>
+<div class="section">
 
 <h2>
 🌱 Related Perennial Chicken Feed Crops
