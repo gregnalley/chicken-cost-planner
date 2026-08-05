@@ -4055,6 +4055,46 @@ summary::after {
   line-height: 1.2;
 }
 
+/* --------------------------------------------------
+   SHARED GROWING-GUIDE TABLES
+   -------------------------------------------------- */
+
+.growing-guide-page table {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+}
+
+.growing-guide-page table th,
+.growing-guide-page table td {
+  padding: 13px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #d8e2d8;
+}
+
+.growing-guide-page table th {
+  color: #ffffff;
+  font-weight: 800;
+  background: #356f44;
+}
+
+.growing-guide-page table tr:nth-child(even) td {
+  background: #f7faf7;
+}
+
+.growing-guide-page table td {
+  color: #303a33;
+}
+
+@media (max-width: 760px) {
+
+  .growing-guide-page table {
+    font-size: 0.92rem;
+  }
+
+}
+
 
 /* --------------------------------------------------
    COMPACT GUIDE HERO
