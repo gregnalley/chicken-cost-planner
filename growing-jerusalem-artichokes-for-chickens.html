@@ -57,518 +57,36 @@
 
 <style>
 
+/*
+  Jerusalem Artichoke-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   JERUSALEM ARTICHOKE HERO THEME
+   -------------------------------------------------- */
+
+.jerusalem-artichoke-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(53, 92, 48, 0.97),
       rgba(161, 108, 45, 0.95)
     );
-  border-radius: 20px;
+
   box-shadow:
     0 16px 36px
     rgba(69, 72, 35, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 780px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.jerusalem-artichoke-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #402d1d;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f3d9aa;
-  border-radius: 999px;
-}
-
-.crop-snapshot {
-  margin-top: 24px;
-  padding: 24px;
-  background:
-    linear-gradient(
-      135deg,
-      #f8fbf7,
-      #fffaf0
-    );
-  border: 1px solid #d7e3d6;
-  border-radius: 16px;
-  box-shadow:
-    0 10px 25px
-    rgba(25, 79, 42, 0.07);
-}
-
-.crop-snapshot-header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-}
-
-.crop-snapshot-header h2 {
-  margin: 0;
-  color: #194f2a;
-}
-
-.crop-snapshot-rating {
-  padding: 8px 13px;
-  color: #5e4515;
-  font-size: 0.95rem;
-  font-weight: 800;
-  background: #fff2c9;
-  border: 1px solid #e7cf82;
-  border-radius: 999px;
-}
-
-.crop-snapshot-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 13px;
-}
-
-.crop-snapshot-item {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid #dde7dc;
-  border-radius: 11px;
-}
-
-.crop-snapshot-item strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-recommendation {
-  margin-top: 24px;
-  padding: 24px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 7px solid #4c8b5d;
-  border-radius: 14px;
-}
-
-.crop-recommendation h2 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-recommendation-rating {
-  display: inline-block;
-  margin-bottom: 15px;
-  padding: 7px 12px;
-  color: #285c37;
-  font-weight: 800;
-  background: #dff0e3;
-  border: 1px solid #bdd9c4;
-  border-radius: 999px;
-}
-
-.crop-recommendation-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.crop-recommendation-card {
-  padding: 18px;
-  background: #ffffff;
-  border: 1px solid #d4e3d6;
-  border-radius: 12px;
-}
-
-.crop-recommendation-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-recommendation-card ul {
-  margin-bottom: 0;
-}
-
-.crop-recommendation-caution {
-  background: #fffaf0;
-  border-color: #e8d9b8;
-}
-
-.crop-recommendation-caution h3 {
-  color: #74511d;
-}
-
-.crop-planner-button-row {
-  margin-top: 19px;
-}
-
-.crop-planner-button {
-  display: inline-block;
-  padding: 12px 18px;
-  color: #ffffff;
-  font-weight: 800;
-  text-decoration: none;
-  background: #2f7245;
-  border-radius: 10px;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.crop-planner-button:hover {
-  color: #ffffff;
-  background: #245c37;
-  transform: translateY(-2px);
-  box-shadow:
-    0 8px 18px
-    rgba(25, 79, 42, 0.18);
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-rating {
-  color: #a46f18;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.crop-learning-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 10px 22px;
-  margin-top: 17px;
-}
-
-.crop-learning-item {
-  position: relative;
-  padding: 11px 12px 11px 38px;
-  background: #f8fbf8;
-  border: 1px solid #dce6dd;
-  border-radius: 10px;
-}
-
-.crop-learning-item::before {
-  content: "✓";
-  position: absolute;
-  top: 10px;
-  left: 13px;
-  color: #2f7245;
-  font-weight: 900;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-danger-box {
-  padding: 20px;
-  color: #5d2929;
-  background: #fff1f1;
-  border: 1px solid #e4bcbc;
-  border-left: 6px solid #9d4444;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: crop-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: crop-step;
-  content: counter(crop-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-timeline {
-  position: relative;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-timeline::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  bottom: 17px;
-  left: 19px;
-  width: 3px;
-  background: #cbdccb;
-}
-
-.crop-timeline li {
-  position: relative;
-  margin-bottom: 14px;
-  padding: 15px 16px 15px 54px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 11px;
-}
-
-.crop-timeline li::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 11px;
-  width: 17px;
-  height: 17px;
-  background: #337747;
-  border: 4px solid #e7f1e8;
-  border-radius: 50%;
-}
-
-.crop-timeline strong {
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.crop-scorecard {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-scorecard th,
-.crop-scorecard td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: middle;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-scorecard th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-scorecard tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.crop-scorecard td:last-child {
-  color: #a46f18;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.crop-checklist {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-checklist li {
-  position: relative;
-  margin-bottom: 10px;
-  padding: 12px 14px 12px 43px;
-  background: #f8fbf8;
-  border: 1px solid #d9e4da;
-  border-radius: 10px;
-}
-
-.crop-checklist li::before {
-  content: "☐";
-  position: absolute;
-  top: 10px;
-  left: 14px;
-  color: #337747;
-  font-size: 1.15rem;
-  font-weight: 800;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .crop-snapshot-grid,
-  .crop-recommendation-grid,
-  .quick-facts-grid,
-  .crop-learning-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-snapshot,
-  .crop-recommendation {
-    padding: 19px;
-  }
-
-  .crop-calendar,
-  .crop-scorecard {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(64, 45, 29, 0.16);
 }
 
 </style>
@@ -618,7 +136,15 @@ gtag("config", "G-88486JDN1Z");
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Are Jerusalem artichokes related to globe artichokes?",
+      "name": "Can chickens eat Jerusalem artichokes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Chickens can eat clean, sound Jerusalem artichoke tubers as a supplemental food. The tubers may be offered raw, chopped, grated, crushed, or plain cooked after cooling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Jerusalem artichokes the same as globe artichokes?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Jerusalem artichoke, Helianthus tuberosus, is a perennial member of the sunflower family grown primarily for its underground tubers. It is not the same crop as the globe artichoke."
@@ -626,10 +152,18 @@ gtag("config", "G-88486JDN1Z");
     },
     {
       "@type": "Question",
-      "name": "Can chickens eat Jerusalem artichokes?",
+      "name": "Can chickens eat raw Jerusalem artichokes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may be offered clean Jerusalem artichoke tubers as a supplemental food. Tubers should be free from mold, rot, soil contamination, pesticides, and other unsafe residues, and they should not replace a nutritionally complete poultry ration."
+        "text": "Yes. Clean raw tubers may be offered in moderation. Because whole tubers are firm, cutting, grating, crushing, or otherwise exposing the interior usually makes them easier for chickens to investigate and consume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat cooked Jerusalem artichokes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain cooked Jerusalem artichokes may be offered after they have cooled. Serve them without butter, oils, salt, sugar, milk, sauces, garlic, onions, spices, or other seasonings."
       }
     },
     {
@@ -637,47 +171,55 @@ gtag("config", "G-88486JDN1Z");
       "name": "Should Jerusalem artichokes be chopped before feeding chickens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chopping, grating, crushing, or otherwise opening the firm tubers can make them easier for chickens to investigate and consume. Pieces should be appropriately sized and any uneaten portions should be removed before they spoil."
+        "text": "Chopping is not strictly required, but it is usually helpful. Cutting, grating, crushing, or breaking the firm tubers exposes the moist interior and may improve flock acceptance while reducing waste."
       }
     },
     {
       "@type": "Question",
-      "name": "Are Jerusalem artichokes invasive?",
+      "name": "Should I peel Jerusalem artichokes before feeding them?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jerusalem artichokes can spread aggressively because new plants grow from underground tubers and tuber fragments left in the soil. Planting them in a dedicated, contained area and harvesting carefully can help limit unwanted spread."
+        "text": "No. Peeling is generally unnecessary. Wash away excessive soil, inspect the tubers carefully, and cut them into manageable pieces when needed."
       }
     },
     {
       "@type": "Question",
-      "name": "Do Jerusalem artichokes return every year?",
+      "name": "Can baby chicks eat Jerusalem artichokes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Jerusalem artichokes are perennial plants, and even small tubers left in the ground can produce new shoots during the following growing season."
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental Jerusalem artichokes are better reserved for older birds unless they are included appropriately in a professionally formulated ration."
       }
     },
     {
       "@type": "Question",
-      "name": "When should Jerusalem artichokes be harvested?",
+      "name": "Can chickens eat Jerusalem artichokes every day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tubers are generally harvested after the tops have died back and the plants have entered dormancy. Gardeners often begin harvesting after frost and continue while the soil remains workable."
+        "text": "Small amounts may be offered regularly, but the tubers should remain supplemental. Feeding too much may reduce the flock's intake of nutritionally complete poultry feed."
       }
     },
     {
       "@type": "Question",
-      "name": "Can Jerusalem artichokes remain in the ground through winter?",
+      "name": "Can Jerusalem artichokes replace layer feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In climates where the soil remains accessible, tubers can often be left in the ground and harvested as needed. Heavy freezing, saturated soil, rodents, and local winter conditions may affect this approach."
+        "text": "No. Jerusalem artichoke tubers are primarily an energy-oriented supplemental food and do not provide enough balanced protein, essential amino acids, calcium, vitamins, or minerals to replace a complete layer ration."
       }
     },
     {
       "@type": "Question",
-      "name": "Can Jerusalem artichokes replace complete chicken feed?",
+      "name": "Can chickens eat moldy or rotten Jerusalem artichokes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Jerusalem artichoke tubers are a supplemental energy-oriented food and do not provide the complete balance of protein, amino acids, calcium, vitamins, and minerals required by chickens."
+        "text": "No. Do not feed tubers that are moldy, slimy, badly rotted, foul smelling, chemically contaminated, or damaged by disease. Questionable tubers should be discarded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will chickens dig up Jerusalem artichoke tubers themselves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chickens may scratch around shallow or exposed tubers, but they generally do not harvest deeply buried tubers reliably. Digging and preparing the tubers yourself provides better control over feeding and crop management."
       }
     },
     {
@@ -685,7 +227,71 @@ gtag("config", "G-88486JDN1Z");
       "name": "What part of the Jerusalem artichoke plant is normally harvested?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The primary harvest is the underground tuber. Aboveground stalks and leaves may also have uses around the homestead, but the tubers are the principal food crop."
+        "text": "The underground tuber is the primary food harvest. The flowers may support pollinators, and healthy stalks and leaves may provide seasonal biomass, screening, or compost material."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should Jerusalem artichokes be harvested?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tubers are generally harvested after the tops have died back and the plants have entered dormancy. Many gardeners begin digging after frost and continue while the soil remains workable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Jerusalem artichokes remain in the ground through winter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in many climates. Tubers may remain underground and be harvested as needed while the soil stays accessible. Heavy freezing, saturated soil, rodents, and local winter conditions may affect this storage method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Jerusalem artichokes survive freezing winters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Healthy dormant tubers survive winter beneath the soil in many temperate climates and produce new shoots the following spring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Jerusalem artichokes return every year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jerusalem artichokes are perennial, and even small tubers or fragments left in the soil may produce new plants during the next growing season."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Jerusalem artichokes invasive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They can spread aggressively within a garden because new plants grow from tubers and tuber fragments left in the soil. A dedicated contained planting area and careful harvesting help limit unwanted spread."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly do Jerusalem artichokes spread?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The rate varies with soil, moisture, climate, variety, and harvest practices. Even small overlooked tubers may produce full plants the following season, allowing a patch to expand beyond its original boundary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Jerusalem artichokes be grown in raised beds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but the bed should be treated as a permanent Jerusalem artichoke planting. Tubers left behind can make future crop rotation difficult."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Jerusalem artichokes be grown entirely in containers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Large, sturdy, well-drained containers can help limit spreading and simplify harvest. Mature plants may become very tall and top-heavy, so the container must be stable and receive dependable water."
       }
     },
     {
@@ -693,7 +299,15 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can people eat Jerusalem artichokes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Jerusalem artichoke tubers are edible for people and may be eaten raw or cooked. They contain substantial inulin, which can cause digestive discomfort or gas in some individuals, especially when eaten in large amounts."
+        "text": "Yes. The tubers are edible for people and may be eaten raw or cooked. They contain substantial inulin, which may cause gas or digestive discomfort in some people, especially when eaten in large amounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing Jerusalem artichokes lower my chicken-feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but savings depend on tuber yield, available space, harvesting labor, storage losses, flock acceptance, and continued complete-feed requirements. Their greatest value may come from perennial production, enrichment, screening, pollinator support, and human food use."
       }
     }
   ]
@@ -4260,26 +3874,142 @@ After one growing season, decide whether you'd like to enlarge your perennial pa
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
 <h2>
-
 ❓ Frequently Asked Questions
-
 </h2>
 
+<div class="faq-list">
+
 <details>
 
 <summary>
+Can chickens eat Jerusalem artichokes?
+</summary>
 
+<p>
+Yes. Chickens can eat clean, sound Jerusalem artichoke tubers as a supplemental food. The tubers may be offered raw, chopped, grated, crushed, or plain cooked after cooling.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are Jerusalem artichokes the same as globe artichokes?
+</summary>
+
+<p>
+No. Jerusalem artichoke, <em>Helianthus tuberosus</em>, is a perennial member of the sunflower family grown primarily for its underground tubers. It is not the same crop as the globe artichoke.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat raw Jerusalem artichokes?
+</summary>
+
+<p>
+Yes. Clean raw tubers may be offered in moderation. Because whole tubers are firm, cutting, grating, crushing, or otherwise exposing the interior usually makes them easier for chickens to investigate and consume.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat cooked Jerusalem artichokes?
+</summary>
+
+<p>
+Yes. Plain cooked Jerusalem artichokes may be offered after they have cooled. Serve them <u>without</u> butter, oils, salt, sugar, milk, sauces, garlic, onions, spices, or other seasonings.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Should Jerusalem artichokes be chopped before feeding chickens?
+</summary>
+
+<p>
+Chopping is not strictly required, but it is usually helpful. Cutting, grating, crushing, or breaking the firm tubers exposes the moist interior and may improve flock acceptance while reducing waste.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Should I peel Jerusalem artichokes before feeding them?
+</summary>
+
+<p>
+No. Peeling is generally unnecessary. Wash away excessive soil, inspect the tubers carefully, and cut them into manageable pieces when needed.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat Jerusalem artichokes?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental Jerusalem artichokes are better reserved for older birds unless they are included appropriately in a professionally formulated ration.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat Jerusalem artichokes every day?
+</summary>
+
+<p>
+Small amounts may be offered regularly, but the tubers should remain supplemental. Feeding too much may reduce the flock’s intake of nutritionally complete poultry feed.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can Jerusalem artichokes replace layer feed?
+</summary>
+
+<p>
+No. Jerusalem artichoke tubers are primarily an energy-oriented supplemental food and do not provide enough balanced protein, essential amino acids, calcium, vitamins, or minerals to replace a complete layer ration.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat moldy or rotten Jerusalem artichokes?
+</summary>
+
+<p>
+No. Do not feed tubers that are moldy, slimy, badly rotted, foul smelling, chemically contaminated, or damaged by disease. Questionable tubers should be discarded.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Will chickens dig up Jerusalem artichoke tubers themselves?
-
 </summary>
 
 <p>
-
-Chickens may scratch around exposed tubers, but they generally do not harvest deeply buried tubers on their own. Harvesting and preparing the tubers yourself provides much better control over feeding.
-
+Chickens may scratch around shallow or exposed tubers, but they generally do not harvest deeply buried tubers reliably. Digging and preparing the tubers yourself provides better control over feeding and crop management.
 </p>
 
 </details>
@@ -4287,15 +4017,47 @@ Chickens may scratch around exposed tubers, but they generally do not harvest de
 <details>
 
 <summary>
+What part of the Jerusalem artichoke plant is normally harvested?
+</summary>
 
+<p>
+The underground tuber is the primary food harvest. The flowers may support pollinators, and healthy stalks and leaves may provide seasonal biomass, screening, or compost material.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+When should Jerusalem artichokes be harvested?
+</summary>
+
+<p>
+Tubers are generally harvested after the tops have died back and the plants have entered dormancy. Many gardeners begin digging after frost and continue while the soil remains workable.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can Jerusalem artichokes remain in the ground through winter?
+</summary>
+
+<p>
+Yes, in many climates. Tubers may remain underground and be harvested as needed while the soil stays accessible. Heavy freezing, saturated soil, rodents, and local winter conditions may affect this storage method.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Can Jerusalem artichokes survive freezing winters?
-
 </summary>
 
 <p>
-
-Yes. In many climates, healthy tubers overwinter successfully beneath the soil and produce new shoots the following spring.
-
+Yes. Healthy dormant tubers survive winter beneath the soil in many temperate climates and produce new shoots the following spring.
 </p>
 
 </details>
@@ -4303,15 +4065,35 @@ Yes. In many climates, healthy tubers overwinter successfully beneath the soil a
 <details>
 
 <summary>
+Do Jerusalem artichokes return every year?
+</summary>
 
+<p>
+Yes. Jerusalem artichokes are perennial, and even small tubers or fragments left in the soil may produce new plants during the next growing season.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are Jerusalem artichokes invasive?
+</summary>
+
+<p>
+They can spread aggressively within a garden because new plants grow from tubers and tuber fragments left in the soil. A dedicated contained planting area and careful harvesting help limit unwanted spread.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 How quickly do Jerusalem artichokes spread?
-
 </summary>
 
 <p>
-
-The rate varies with growing conditions, but even small tubers or tuber fragments left behind during harvest can produce new plants the following season.
-
+The rate varies with soil, moisture, climate, variety, and harvest practices. Even small overlooked tubers may produce full plants the following season, allowing a patch to expand beyond its original boundary.
 </p>
 
 </details>
@@ -4319,15 +4101,11 @@ The rate varies with growing conditions, but even small tubers or tuber fragment
 <details>
 
 <summary>
-
-Should I peel the tubers before feeding them?
-
+Can Jerusalem artichokes be grown in raised beds?
 </summary>
 
 <p>
-
-No. Peeling is generally unnecessary. Simply ensure the tubers are clean, healthy, and prepared in appropriately sized pieces.
-
+Yes, but the bed should be treated as a permanent Jerusalem artichoke planting. Tubers left behind can make future crop rotation difficult.
 </p>
 
 </details>
@@ -4335,18 +4113,40 @@ No. Peeling is generally unnecessary. Simply ensure the tubers are clean, health
 <details>
 
 <summary>
-
-Can I grow Jerusalem artichokes entirely in containers?
-
+Can Jerusalem artichokes be grown entirely in containers?
 </summary>
 
 <p>
-
-Yes. Large containers can help limit spreading, although mature plants may become quite tall and require stable containers and regular watering.
-
+Yes. Large, sturdy, well-drained containers can help limit spreading and simplify harvest. Mature plants may become very tall and top-heavy, so the container must be stable and receive dependable water.
 </p>
 
 </details>
+
+<details>
+
+<summary>
+Can people eat Jerusalem artichokes?
+</summary>
+
+<p>
+Yes. The tubers are edible for people and may be eaten raw or cooked. They contain substantial inulin, which may cause gas or digestive discomfort in some people, especially when eaten in large amounts.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will growing Jerusalem artichokes lower my chicken-feed bill?
+</summary>
+
+<p>
+Possibly, but savings depend on tuber yield, available space, harvesting labor, storage losses, flock acceptance, and continued complete-feed requirements. Their greatest value may come from perennial production, enrichment, screening, pollinator support, and human food use.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
