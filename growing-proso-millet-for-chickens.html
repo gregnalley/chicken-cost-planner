@@ -23,225 +23,36 @@
 
 <style>
 
+/*
+  Proso Millet-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   PROSO MILLET HERO THEME
+   -------------------------------------------------- */
+
+.proso-millet-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(73, 94, 42, 0.97),
       rgba(161, 119, 38, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(53, 76, 34, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(53, 76, 34, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.proso-millet-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #29411f;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f5dfad;
-  border-radius: 999px;
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: millet-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: millet-step;
-  content: counter(millet-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(41, 65, 31, 0.16);
 }
 
 </style>
@@ -294,7 +105,15 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat proso millet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can eat plain, mature proso millet grain as a supplemental food. Millet provides carbohydrate energy and moderate protein but does not replace a balanced poultry ration."
+        "text": "Yes. Adult chickens can eat clean, mature proso millet as a supplemental grain. It may be offered whole, cracked, coarsely ground, cooked, sprouted, or on thoroughly dried seed heads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is proso millet the same as regular millet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Proso millet is one specific type of millet. The word millet can also refer to pearl millet, foxtail millet, Japanese millet, finger millet, and other crops with different growth habits and uses."
       }
     },
     {
@@ -302,23 +121,95 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat whole millet seeds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can generally consume whole proso millet seeds. The grain may also be cracked, ground, sprouted, or offered on dried seed heads."
+        "text": "Yes. Proso millet seeds are small enough for most healthy adult chickens to consume whole. Appropriate insoluble grit should be available when birds receive whole grains and do not otherwise have access to suitable grit."
       }
     },
     {
       "@type": "Question",
-      "name": "Is proso millet easy to grow?",
+      "name": "Does millet need to be cooked for chickens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Proso millet is a short-season, warm-season grain that is comparatively drought tolerant. It must be planted after frost in warm soil and may require protection from weeds and wild birds."
+        "text": "No. Clean, mature proso millet does not normally need to be cooked for adult chickens. Whole raw grain may be offered in measured amounts as a supplemental food."
       }
     },
     {
       "@type": "Question",
-      "name": "Is millet a complete chicken feed?",
+      "name": "Can chickens eat cooked millet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Millet is low in lysine and does not provide enough calcium, vitamins, minerals, or balanced amino acids to serve as a complete poultry ration."
+        "text": "Yes. Plain cooked millet may be offered after it has cooled. Serve it without butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat millet from birdseed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some birdseed mixtures contain millet that chickens can eat, but check the complete ingredient list first. Avoid products containing treated seed, added chemicals, excessive fillers, or ingredients that are not appropriate for poultry. Clean feed-grade or food-grade millet is a better choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat millet seed heads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mature, thoroughly dried millet seed heads may be offered as natural pecking enrichment when they are clean, untreated, and free from mold, insects, rodents, and other contamination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat millet spray?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Millet spray is a mature millet seed head and may be offered as an enrichment treat. It should be clean, dry, untreated, and fed in moderation alongside complete poultry feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sprouted millet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean, untreated millet may be sprouted under sanitary conditions. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, discoloration, heating, fermentation, or unpleasant odors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat millet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental millet is better reserved for older birds unless it is appropriately processed and included in a professionally formulated starter ration. Chicks receiving supplemental foods also need appropriately sized grit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat millet every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small amounts may be offered regularly, but millet should remain supplemental. Feeding too much grain can reduce the flock's intake of complete poultry feed and dilute the overall nutritional balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is proso millet better than corn for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither crop is universally better. Proso millet may mature faster, require less space, and tolerate dry conditions better, while corn may produce more grain under favorable conditions. Both are primarily energy grains and neither is a complete poultry feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can millet replace layer feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Proso millet is low in lysine and does not provide enough calcium, balanced amino acids, vitamins, or minerals to replace a complete layer ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat moldy millet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed millet that is moldy, musty, damp, heated, unintentionally fermented, insect-infested, chemically treated, or contaminated by rodents. Questionable grain should be discarded."
       }
     },
     {
@@ -326,7 +217,15 @@ gtag("config", "G-88486JDN1Z");
       "name": "How long does proso millet take to mature?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many proso millet varieties mature in approximately 60 to 90 days, although weather, variety, planting date, and growing conditions can change the harvest date."
+        "text": "Many proso millet varieties mature in approximately 60 to 90 days, although variety, planting date, temperature, rainfall, and growing conditions can change the actual harvest date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing millet reduce my chicken-feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but savings depend on usable grain yield, wild-bird losses, harvesting labor, threshing efficiency, drying, storage success, and local feed prices. Small plots may provide more enrichment and educational value than major feed-cost savings."
       }
     }
   ]
@@ -1516,83 +1415,207 @@ This trial will show whether millet matures reliably in your climate and whether
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat proso millet?</h3>
+<div class="faq-list">
+
+<details>
+
+<summary>
+Can chickens eat proso millet?
+</summary>
 
 <p>
-Yes. Adult chickens can eat plain, mature proso millet grain as a supplemental food.
+Yes. Adult chickens can eat clean, mature proso millet as a supplemental grain. It may be offered whole, cracked, coarsely ground, cooked, sprouted, or on thoroughly dried seed heads.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
 Is proso millet the same as regular millet?
-</h3>
+</summary>
 
 <p>
-Proso millet is one specific type of millet. The word "millet" can refer to several different crops, including pearl millet, foxtail millet, Japanese millet, and others. For growing and feeding backyard chickens, it is important to know which millet species is being planted because growth habits and uses can vary significantly.
+Proso millet is one specific type of millet. The word “millet” can also refer to pearl millet, foxtail millet, Japanese millet, finger millet, and other crops with different growth habits and uses.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat whole millet seeds?
+</summary>
+
+<p>
+Yes. Proso millet seeds are small enough for most healthy adult chickens to consume whole. Appropriate insoluble grit should be available when birds receive whole grains and do not otherwise have access to suitable grit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does millet need to be cooked for chickens?
+</summary>
+
+<p>
+No. Clean, mature proso millet does not normally need to be cooked for adult chickens. Whole raw grain may be offered in measured amounts as a supplemental food.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat cooked millet?
+</summary>
+
+<p>
+Yes. Plain cooked millet may be offered after it has cooled. Serve it <u>without</u> butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Can chickens eat millet from birdseed?
-</h3>
+</summary>
 
 <p>
-Some birdseed mixtures contain millet that chickens can eat, but always check the ingredients and avoid products containing treated seed, added chemicals, excessive fillers, or ingredients that are not appropriate for poultry. Growing or purchasing clean food-grade or feed-grade millet is a better option when the goal is supplemental chicken feeding.
+Some birdseed mixtures contain millet that chickens can eat, but check the complete ingredient list first. Avoid products containing treated seed, added chemicals, excessive fillers, or ingredients that are not appropriate for poultry. Clean feed-grade or food-grade millet is a better choice.
 </p>
 
-<h3>Can chickens eat whole millet seeds?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat millet seed heads?
+</summary>
 
 <p>
-Yes. Proso millet seeds are small enough for adult chickens to consume whole.
+Yes. Mature, thoroughly dried millet seed heads may be offered as natural pecking enrichment when they are clean, untreated, and free from mold, insects, rodents, and other contamination.
 </p>
 
-<h3>Can chickens eat millet seed heads?</h3>
+</details>
 
-<p>
-Yes, provided the heads are mature, thoroughly dried, clean, and free from mold or chemical contamination.
-</p>
+<details>
 
-<h3>
+<summary>
 Can chickens eat millet spray?
-</h3>
+</summary>
 
 <p>
-Yes. Millet spray is simply a seed head containing millet grain and can be offered to adult chickens as an enrichment treat when it is clean, dry, mature, and free from mold or chemical treatments. Because it is still a grain supplement, it should be offered in moderation.
+Yes. Millet spray is a mature millet seed head and may be offered as an enrichment treat. It should be clean, dry, untreated, and fed in moderation alongside complete poultry feed.
 </p>
 
-<h3>Does millet need to be cooked?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sprouted millet?
+</summary>
 
 <p>
-Mature proso millet does not normally require cooking for adult chickens. It should be clean, dry, untreated, and fed in moderation.
+Yes. Clean, untreated millet may be sprouted under sanitary conditions. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, discoloration, heating, fermentation, or unpleasant odors.
 </p>
 
-<h3>Can chickens eat sprouted millet?</h3>
+</details>
 
-<p>
-Sprouted millet may be offered when produced under clean conditions. Discard sprouts that smell sour, become slimy, heat excessively, or develop mold.
-</p>
+<details>
 
-<h3>
+<summary>
 Can baby chicks eat millet?
-</h3>
+</summary>
 
 <p>
-Baby chicks require a properly formulated chick starter feed as their primary diet. Small amounts of millet may be introduced later as an occasional treat, but young chicks should not replace starter feed with grains or treats because they need carefully balanced nutrition for growth.
+Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental millet is better reserved for older birds unless it is appropriately processed and included in a professionally formulated starter ration. Chicks receiving supplemental foods also need appropriately sized grit.
 </p>
 
-<h3>Is proso millet better than corn?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat millet every day?
+</summary>
 
 <p>
-Millet may mature faster and tolerate dry conditions better, while corn usually provides greater familiarity and potentially higher grain production under favorable conditions. Neither is a complete feed.
+Small amounts may be offered regularly, but millet should remain supplemental. Feeding too much grain can reduce the flock’s intake of complete poultry feed and dilute the overall nutritional balance.
 </p>
 
-<h3>Will millet reduce my chicken-feed bill?</h3>
+</details>
+
+<details>
+
+<summary>
+Is proso millet better than corn for chickens?
+</summary>
 
 <p>
-That depends on usable grain yield, bird losses, labor, threshing efficiency, storage success, and local feed prices. Small plots are more likely to provide enrichment than major savings.
+Neither crop is universally better. Proso millet may mature faster, require less space, and tolerate dry conditions better, while corn may produce more grain under favorable conditions. Both are primarily energy grains and neither is a complete poultry feed.
 </p>
+
+</details>
+
+<details>
+
+<summary>
+Can millet replace layer feed?
+</summary>
+
+<p>
+No. Proso millet is low in lysine and does not provide enough calcium, balanced amino acids, vitamins, or minerals to replace a complete layer ration.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat moldy millet?
+</summary>
+
+<p>
+No. Do not feed millet that is moldy, musty, damp, heated, unintentionally fermented, insect-infested, chemically treated, or contaminated by rodents. Questionable grain should be discarded.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+How long does proso millet take to mature?
+</summary>
+
+<p>
+Many proso millet varieties mature in approximately 60 to 90 days, although variety, planting date, temperature, rainfall, and growing conditions can change the actual harvest date.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will growing millet reduce my chicken-feed bill?
+</summary>
+
+<p>
+Possibly, but savings depend on usable grain yield, wild-bird losses, harvesting labor, threshing efficiency, drying, storage success, and local feed prices. Small plots may provide more enrichment and educational value than major feed-cost savings.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
