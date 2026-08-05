@@ -56,64 +56,64 @@ Learn how to grow amaranth for chickens, including planting, harvesting grain an
 
 <style>
 
+/*
+  Amaranth-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   AMARANTH HERO THEME
+   -------------------------------------------------- */
+
+.amaranth-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(95, 41, 67, 0.97),
       rgba(151, 68, 71, 0.95)
     );
-  border-radius: 20px;
+
   box-shadow:
     0 16px 36px
-    rgba(79, 37, 55, 0.2);
+    rgba(79, 37, 55, 0.20);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 790px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.amaranth-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #57233a;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f2ccd4;
-  border-radius: 999px;
+  border-color:
+    rgba(87, 35, 58, 0.16);
 }
 
+
+/* --------------------------------------------------
+   AMARANTH AT-A-GLANCE PANEL
+   -------------------------------------------------- */
+
+.amaranth-guide-page
 .crop-at-a-glance {
   margin-top: 24px;
   padding: 24px;
+
   background:
     linear-gradient(
       135deg,
       #fff9fa,
       #fffdf6
     );
+
   border: 1px solid #ead4da;
   border-radius: 16px;
+
   box-shadow:
     0 10px 25px
     rgba(95, 41, 67, 0.08);
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-header {
   display: flex;
   flex-wrap: wrap;
@@ -123,11 +123,13 @@ Learn how to grow amaranth for chickens, including planting, harvesting grain an
   margin-bottom: 18px;
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-header h2 {
   margin: 0;
   color: #6d2945;
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-badge {
   padding: 8px 13px;
   color: #6d2945;
@@ -138,6 +140,7 @@ Learn how to grow amaranth for chickens, including planting, harvesting grain an
   border-radius: 999px;
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-grid {
   display: grid;
   grid-template-columns:
@@ -145,6 +148,7 @@ Learn how to grow amaranth for chickens, including planting, harvesting grain an
   gap: 12px;
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-item {
   display: flex;
   gap: 16px;
@@ -156,10 +160,12 @@ Learn how to grow amaranth for chickens, including planting, harvesting grain an
   border-radius: 11px;
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-item strong {
   color: #5d2740;
 }
 
+.amaranth-guide-page
 .crop-at-a-glance-rating {
   flex-shrink: 0;
   color: #a46f18;
@@ -167,498 +173,26 @@ Learn how to grow amaranth for chickens, including planting, harvesting grain an
   letter-spacing: 1px;
 }
 
-.crop-snapshot {
-  margin-top: 24px;
-  padding: 24px;
-  background:
-    linear-gradient(
-      135deg,
-      #f8fbf7,
-      #fffaf0
-    );
-  border: 1px solid #d7e3d6;
-  border-radius: 16px;
-  box-shadow:
-    0 10px 25px
-    rgba(25, 79, 42, 0.07);
-}
 
-.crop-snapshot-header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-}
-
-.crop-snapshot-header h2 {
-  margin: 0;
-  color: #194f2a;
-}
-
-.crop-snapshot-rating {
-  padding: 8px 13px;
-  color: #5e4515;
-  font-size: 0.95rem;
-  font-weight: 800;
-  background: #fff2c9;
-  border: 1px solid #e7cf82;
-  border-radius: 999px;
-}
-
-.crop-snapshot-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 13px;
-}
-
-.crop-snapshot-item {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid #dde7dc;
-  border-radius: 11px;
-}
-
-.crop-snapshot-item strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-recommendation {
-  margin-top: 24px;
-  padding: 24px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 7px solid #4c8b5d;
-  border-radius: 14px;
-}
-
-.crop-recommendation h2 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-recommendation-rating {
-  display: inline-block;
-  margin-bottom: 15px;
-  padding: 7px 12px;
-  color: #285c37;
-  font-weight: 800;
-  background: #dff0e3;
-  border: 1px solid #bdd9c4;
-  border-radius: 999px;
-}
-
-.crop-recommendation-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.crop-recommendation-card {
-  padding: 18px;
-  background: #ffffff;
-  border: 1px solid #d4e3d6;
-  border-radius: 12px;
-}
-
-.crop-recommendation-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-recommendation-card ul {
-  margin-bottom: 0;
-}
-
-.crop-recommendation-caution {
-  background: #fffaf0;
-  border-color: #e8d9b8;
-}
-
-.crop-recommendation-caution h3 {
-  color: #74511d;
-}
-
-.crop-planner-button-row {
-  margin-top: 19px;
-}
-
-.crop-planner-button {
-  display: inline-block;
-  padding: 12px 18px;
-  color: #ffffff;
-  font-weight: 800;
-  text-decoration: none;
-  background: #2f7245;
-  border-radius: 10px;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.crop-planner-button:hover {
-  color: #ffffff;
-  background: #245c37;
-  transform: translateY(-2px);
-  box-shadow:
-    0 8px 18px
-    rgba(25, 79, 42, 0.18);
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-rating {
-  color: #a46f18;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.crop-learning-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 10px 22px;
-  margin-top: 17px;
-}
-
-.crop-learning-item {
-  position: relative;
-  padding: 11px 12px 11px 38px;
-  background: #f8fbf8;
-  border: 1px solid #dce6dd;
-  border-radius: 10px;
-}
-
-.crop-learning-item::before {
-  content: "✓";
-  position: absolute;
-  top: 10px;
-  left: 13px;
-  color: #2f7245;
-  font-weight: 900;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-danger-box {
-  padding: 20px;
-  color: #5d2929;
-  background: #fff1f1;
-  border: 1px solid #e4bcbc;
-  border-left: 6px solid #9d4444;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: crop-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: crop-step;
-  content: counter(crop-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-timeline {
-  position: relative;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-timeline::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  bottom: 17px;
-  left: 19px;
-  width: 3px;
-  background: #cbdccb;
-}
-
-.crop-timeline li {
-  position: relative;
-  margin-bottom: 14px;
-  padding: 15px 16px 15px 54px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 11px;
-}
-
-.crop-timeline li::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 11px;
-  width: 17px;
-  height: 17px;
-  background: #337747;
-  border: 4px solid #e7f1e8;
-  border-radius: 50%;
-}
-
-.crop-timeline strong {
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.crop-scorecard {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-scorecard th,
-.crop-scorecard td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: middle;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-scorecard th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-scorecard tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.crop-scorecard td:last-child {
-  color: #a46f18;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.crop-checklist {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-checklist li {
-  position: relative;
-  margin-bottom: 10px;
-  padding: 12px 14px 12px 43px;
-  background: #f8fbf8;
-  border: 1px solid #d9e4da;
-  border-radius: 10px;
-}
-
-.crop-checklist li::before {
-  content: "☐";
-  position: absolute;
-  top: 10px;
-  left: 14px;
-  color: #337747;
-  font-size: 1.15rem;
-  font-weight: 800;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-details {
-  margin-bottom: 12px;
-  padding: 15px 17px;
-  background: #f8fbf8;
-  border: 1px solid #d9e4da;
-  border-radius: 11px;
-}
-
-summary {
-  color: #194f2a;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-details p:last-child {
-  margin-bottom: 0;
-}
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
 
 @media (max-width: 760px) {
 
-  .crop-at-a-glance-grid,
-  .crop-snapshot-grid,
-  .crop-recommendation-grid,
-  .quick-facts-grid,
-  .crop-learning-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-at-a-glance,
-  .crop-snapshot,
-  .crop-recommendation {
+  .amaranth-guide-page
+  .crop-at-a-glance {
     padding: 19px;
   }
 
-  .crop-at-a-glance-item {
-    align-items: flex-start;
+  .amaranth-guide-page
+  .crop-at-a-glance-grid {
+    grid-template-columns: 1fr;
   }
 
-  .crop-calendar,
-  .crop-scorecard {
-    font-size: 0.92rem;
+  .amaranth-guide-page
+  .crop-at-a-glance-item {
+    align-items: flex-start;
   }
 
 }
@@ -719,7 +253,7 @@ gtag(
       "name": "Can chickens eat amaranth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may receive properly identified and prepared amaranth grain or limited quantities of suitable plant material as supplemental food. Amaranth should not replace a nutritionally complete poultry ration."
+        "text": "Yes. Established adult chickens may receive clean mature amaranth grain, appropriately processed grain, limited quantities of tender young leaves, or thoroughly dried mature seed heads from a positively identified cultivated food-grade variety. Amaranth should remain supplemental to a complete poultry ration."
       }
     },
     {
@@ -727,7 +261,47 @@ gtag(
       "name": "Can chickens eat raw amaranth grain?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Raw amaranth grain contains antinutritional compounds that can reduce feeding value. Heat treatment or other appropriate processing is the more conservative approach before grain is used as a poultry supplement."
+        "text": "Clean mature raw grain may be offered conservatively in small measured amounts, but it contains variable antinutritional compounds that can reduce nutrient use. Heat processing is the more cautious approach when amaranth will be fed regularly or used as more than a minor supplement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does amaranth need to be cooked for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily for every small supplemental serving. However, plain cooking, toasting, popping, or another appropriate heat-treatment method may reduce or alter some raw-grain antinutritional compounds and improve practical feeding value. No household method should be assumed to eliminate every concern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat cooked amaranth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain cooked amaranth grain may be offered after it has cooled. Serve it without butter, oils, salt, sugar, milk, sauces, garlic, onions, spices, or other seasonings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat popped amaranth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plain popped amaranth may be offered in moderation when it contains no salt, oil, sugar, flavoring, or other added ingredients. Popping is a form of heat processing, but it does not make amaranth nutritionally complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sprouted amaranth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean untreated amaranth seed may be sprouted under carefully controlled sanitary conditions, but sprouting should not automatically be assumed to remove every antinutritional concern. Discard sprouts that become slimy, moldy, heated, discolored, fermented, or foul smelling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat amaranth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete age-appropriate chick starter feed as their primary diet. Substantial amaranth supplements are not recommended for young chicks unless the ingredient is properly evaluated and included in a professionally formulated starter ration."
       }
     },
     {
@@ -735,55 +309,79 @@ gtag(
       "name": "Can chickens eat amaranth leaves?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Young leaves from a positively identified edible amaranth may be offered only in controlled supplemental quantities. Amaranth species can accumulate nitrates and oxalates, especially under certain environmental and fertility conditions, so unrestricted feeding is not recommended."
+        "text": "Young tender leaves from a positively identified edible grain, vegetable, or dual-purpose amaranth may be offered in small controlled quantities. Nitrate, oxalate, and fiber levels vary with species, maturity, fertility, drought, and other growing conditions, so unrestricted leafy feeding is not recommended."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does amaranth take to grow?",
+      "name": "Can chickens eat amaranth stems?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Young leaves may be harvested within several weeks, while mature grain commonly requires approximately 90 to 100 days under suitable growing conditions. Variety, weather, planting date, and management affect actual maturity."
+        "text": "Tender young stems from an identified edible variety may be included with small amounts of leafy material. Older stems become coarse and fibrous and may contain variable nitrate concentrations, so mature stems should not be treated as a significant feed source."
       }
     },
     {
       "@type": "Question",
-      "name": "When should amaranth be planted?",
+      "name": "Can chickens eat drought-stressed amaranth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Amaranth should be planted after frost danger has passed and the soil has warmed. The tiny seeds and seedlings establish best in a warm, finely prepared, weed-free seedbed."
+        "text": "It is safer to avoid foliage from severely drought-stressed plants. Amaranth leaves and stems may accumulate elevated nitrates under drought, excessive nitrogen fertility, low light, interrupted growth, or other stressful conditions, and appearance alone cannot confirm nitrate safety."
       }
     },
     {
       "@type": "Question",
-      "name": "Is amaranth drought tolerant?",
+      "name": "Can chickens eat wild amaranth or pigweed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Established amaranth is relatively tolerant of heat and periods of limited moisture, but seedlings need dependable moisture and severe drought during flowering or grain filling can reduce yield."
+        "text": "Do not feed unknown wild or weedy amaranth based only on visual resemblance or a common name. The species, growing history, chemical exposure, nitrate concentration, and possible contamination may be unknown. Use a positively identified cultivated food-grade variety instead."
       }
     },
     {
       "@type": "Question",
-      "name": "Can amaranth be grown for both leaves and grain?",
+      "name": "Can chickens eat ornamental amaranth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Some varieties can provide young edible leaves followed by grain, although heavy or repeated leaf harvest may reduce plant growth and final seed yield."
+        "text": "Do not assume an ornamental amaranth is suitable for feeding. Some ornamental types belong to edible species, but nursery or landscape plants may have been treated with systemic pesticides, growth regulators, or other products not intended for food or feed crops."
       }
     },
     {
       "@type": "Question",
-      "name": "How is amaranth grain harvested?",
+      "name": "Can chickens eat amaranth seed heads?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mature seed heads can be cut, dried over a tarp, threshed, screened, winnowed, and dried again before storage. Because the seeds are extremely small, careful containment and cleaning are important."
+        "text": "Yes. Thoroughly dried mature seed heads from a correctly identified cultivated variety may be offered sparingly as supervised pecking enrichment. Inspect them for mold, moisture, insects, chemicals, rodent contamination, and unidentified plant material."
       }
     },
     {
       "@type": "Question",
-      "name": "Can chickens eat whole amaranth seed heads?",
+      "name": "Can chickens eat amaranth every day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thoroughly dried mature seed heads may be offered as supervised enrichment, but cleaned and processed grain is easier to inspect, portion, and keep free of mold and contamination."
+        "text": "Small measured amounts may be offered regularly, but amaranth should not displace normal complete-feed intake. Grain, greens, and seed heads all remain supplemental and should not become the foundation of the flock's diet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much amaranth can chickens eat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single backyard amount appropriate for every flock or every form of amaranth. Begin with small portions, introduce the material gradually, and keep most nutrition coming from a complete poultry feed formulated for the birds' age and production needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is amaranth high in protein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mature amaranth grain commonly contains more crude protein and lysine than many conventional cereal grains. Protein percentage alone does not make it a complete protein concentrate or a balanced poultry ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is amaranth better than corn for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither crop is universally better. Corn is primarily a concentrated energy grain, while amaranth generally provides more protein and lysine along with useful dietary diversity. Both require balanced use and neither can replace complete poultry feed."
       }
     },
     {
@@ -791,26 +389,73 @@ gtag(
       "name": "Can amaranth replace commercial chicken feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Amaranth does not provide the complete balance of amino acids, energy, calcium, vitamins, minerals, and other nutrients required by chicks, laying hens, or breeding birds."
+        "text": "No. Amaranth does not provide the complete balance of energy, essential amino acids, calcium, vitamins, minerals, and other nutrients required by chicks, laying hens, or breeding birds."
       }
     },
     {
-  "@type": "Question",
-  "name": "Is amaranth better than corn for chickens?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Amaranth and corn provide different nutritional benefits. Corn is primarily an energy source, while amaranth provides additional protein and diversity. A balanced feeding program can include multiple grains rather than relying on a single crop."
-  }
-},
-
-{
-  "@type": "Question",
-  "name": "How much amaranth can chickens eat?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Amaranth should be offered as a supplement rather than the primary feed source. The majority of a flock's nutrition should still come from a complete poultry feed designed to provide the correct balance of energy, amino acids, vitamins, and minerals."
-  }
-}
+      "@type": "Question",
+      "name": "Can chickens eat treated amaranth seed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Seed coated with fungicides, insecticides, dyes, or other chemical treatments must not be fed to chickens. Always check the original seed label and use only untreated grain or seed intended for food or feed use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat moldy amaranth grain or seed heads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed amaranth that is moldy, musty, damp, heated, fermented, insect-damaged, chemically contaminated, or exposed to rodents. Questionable grain, sprouts, leaves, or seed heads should be discarded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does amaranth take to grow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Young leaves may often be harvested within several weeks, while mature grain commonly requires approximately 90 to 100 days under favorable conditions. Variety, planting date, temperature, moisture, spacing, and weather can change actual maturity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should amaranth be planted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plant amaranth after frost danger has passed and the soil has warmed. Its tiny seed and young seedlings establish best in a warm, finely prepared, weed-free seedbed with dependable surface moisture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is amaranth drought tolerant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Established amaranth is relatively tolerant of heat and temporary dryness, but seedlings require dependable moisture. Severe drought during flowering or grain filling may reduce yield and can increase concern about nitrate accumulation in foliage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can amaranth be grown for both leaves and grain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Some varieties can provide a limited early leaf harvest followed by mature grain. Repeated or heavy leaf removal can reduce plant growth, delay maturity, weaken seed heads, and lower final grain yield."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is amaranth grain harvested?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mature seed heads may be cut, dried over a clean tarp, threshed, screened, winnowed, and dried again before storage. Because the seeds are extremely small, careful containment and fine cleaning equipment are helpful."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should amaranth grain be stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Store only clean, fully dried, cool grain in a dry, food-safe, insect-resistant and rodent-resistant container. Inspect it periodically for condensation, heating, webbing, insects, musty odors, or mold."
+      }
+    }
   ]
 }
 </script>
@@ -8908,69 +8553,190 @@ Track planting date, harvest date, cleaned grain, and labor so the next crop can
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
 <h2>
+❓ Frequently Asked Questions
+</h2>
 
-❓ Frequently Asked Questions</h2>
+<div class="faq-list">
 
 <details>
 
 <summary>
-
 Can chickens eat amaranth?
-
 </summary>
 
 <p>
-
-Chickens may receive properly identified and prepared amaranth grain or limited quantities of suitable plant material as supplemental food. Amaranth should not replace a nutritionally complete poultry ration.</p>
+Yes. Established adult chickens may receive clean mature amaranth grain, appropriately processed grain, limited quantities of tender young leaves, or thoroughly dried mature seed heads from a positively identified cultivated food-grade variety. Amaranth should remain supplemental to a complete poultry ration.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
 Can chickens eat raw amaranth grain?
-
 </summary>
 
 <p>
-
-Raw amaranth grain contains antinutritional compounds that can reduce feeding value. Heat treatment is the more conservative approach before grain is used as a poultry supplement.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Is amaranth better than corn for chickens?
-
-</summary>
-
-<p>
-
-Amaranth and corn provide different nutritional benefits. Corn is primarily an energy source, while amaranth provides additional protein, variety, and nutritional diversity. A balanced feeding program can include multiple grains rather than relying on a single crop.
-
+Clean mature raw grain may be offered conservatively in small measured amounts, but it contains variable antinutritional compounds that can reduce nutrient use. Heat processing is the more cautious approach when amaranth will be fed regularly or used as more than a minor supplement.
 </p>
 
 </details>
 
+<details>
+
+<summary>
+Does amaranth need to be cooked for chickens?
+</summary>
+
+<p>
+Not necessarily for every small supplemental serving. However, plain cooking, toasting, popping, or another appropriate heat-treatment method may reduce or alter some raw-grain antinutritional compounds and improve practical feeding value. No household method should be assumed to eliminate every concern.
+</p>
+
+</details>
 
 <details>
 
 <summary>
+Can chickens eat cooked amaranth?
+</summary>
 
+<p>
+Yes. Plain cooked amaranth grain may be offered after it has cooled. Serve it without butter, oils, salt, sugar, milk, sauces, garlic, onions, spices, or other seasonings.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat popped amaranth?
+</summary>
+
+<p>
+Plain popped amaranth may be offered in moderation when it contains no salt, oil, sugar, flavoring, or other added ingredients. Popping is a form of heat processing, but it does not make amaranth nutritionally complete.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sprouted amaranth?
+</summary>
+
+<p>
+Clean untreated amaranth seed may be sprouted under carefully controlled sanitary conditions, but sprouting should not automatically be assumed to remove every antinutritional concern. Discard sprouts that become slimy, moldy, heated, discolored, fermented, or foul smelling.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat amaranth?
+</summary>
+
+<p>
+Baby chicks should receive a complete age-appropriate chick starter feed as their primary diet. Substantial amaranth supplements are not recommended for young chicks unless the ingredient is properly evaluated and included in a professionally formulated starter ration.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat amaranth leaves?
+</summary>
+
+<p>
+Young tender leaves from a positively identified edible grain, vegetable, or dual-purpose amaranth may be offered in small controlled quantities. Nitrate, oxalate, and fiber levels vary with species, maturity, fertility, drought, and other growing conditions, so unrestricted leafy feeding is not recommended.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat amaranth stems?
+</summary>
+
+<p>
+Tender young stems from an identified edible variety may be included with small amounts of leafy material. Older stems become coarse and fibrous and may contain variable nitrate concentrations, so mature stems should not be treated as a significant feed source.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat drought-stressed amaranth?
+</summary>
+
+<p>
+It is safer to avoid foliage from severely drought-stressed plants. Amaranth leaves and stems may accumulate elevated nitrates under drought, excessive nitrogen fertility, low light, interrupted growth, or other stressful conditions, and appearance alone cannot confirm nitrate safety.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat wild amaranth or pigweed?
+</summary>
+
+<p>
+Do not feed unknown wild or weedy amaranth based only on visual resemblance or a common name. The species, growing history, chemical exposure, nitrate concentration, and possible contamination may be unknown. Use a positively identified cultivated food-grade variety instead.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat ornamental amaranth?
+</summary>
+
+<p>
+Do not assume an ornamental amaranth is suitable for feeding. Some ornamental types belong to edible species, but nursery or landscape plants may have been treated with systemic pesticides, growth regulators, or other products not intended for food or feed crops.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat amaranth seed heads?
+</summary>
+
+<p>
+Yes. Thoroughly dried mature seed heads from a correctly identified cultivated variety may be offered sparingly as supervised pecking enrichment. Inspect them for mold, moisture, insects, chemicals, rodent contamination, and unidentified plant material.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat amaranth every day?
+</summary>
+
+<p>
+Small measured amounts may be offered regularly, but amaranth should not displace normal complete-feed intake. Grain, greens, and seed heads all remain supplemental and should not become the foundation of the flock’s diet.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 How much amaranth can chickens eat?
-
 </summary>
 
 <p>
-
-Amaranth should be offered as a supplement rather than the primary feed source. The majority of a flock's nutrition should still come from a complete poultry feed designed to provide the correct balance of energy, amino acids, vitamins, and minerals.
-
+There is no single backyard amount appropriate for every flock or every form of amaranth. Begin with small portions, introduce the material gradually, and keep most nutrition coming from a complete poultry feed formulated for the birds’ age and production needs.
 </p>
 
 </details>
@@ -8978,266 +8744,136 @@ Amaranth should be offered as a supplement rather than the primary feed source. 
 <details>
 
 <summary>
-
-Can chickens eat amaranth leaves?</summary>
+Is amaranth high in protein?
+</summary>
 
 <p>
-
-Young leaves from a positively identified edible amaranth may be offered in controlled supplemental quantities. Nitrate and oxalate levels vary, so unrestricted feeding is not recommended.</p>
+Mature amaranth grain commonly contains more crude protein and lysine than many conventional cereal grains. Protein percentage alone does not make it a complete protein concentrate or a balanced poultry ration.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Can chickens eat amaranth stems?</summary>
+Is amaranth better than corn for chickens?
+</summary>
 
 <p>
-
-Tender stems may be associated with edible vegetable types, but older stems become fibrous and may contain variable nitrate concentrations. Do not use mature stems as a major feed source.</p>
+Neither crop is universally better. Corn is primarily a concentrated energy grain, while amaranth generally provides more protein and lysine along with useful dietary diversity. Both require balanced use and neither can replace complete poultry feed.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Can chickens eat amaranth seed heads?</summary>
+Can amaranth replace commercial chicken feed?
+</summary>
 
 <p>
-
-Thoroughly dried mature seed heads may be offered sparingly as supervised enrichment. Inspect them for mold, chemicals, rodent contamination, and unknown plant material.</p>
+No. Amaranth does not provide the complete balance of energy, essential amino acids, calcium, vitamins, minerals, and other nutrients required by chicks, laying hens, or breeding birds.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Does amaranth need to be cooked for chickens?</summary>
+Can chickens eat treated amaranth seed?
+</summary>
 
 <p>
-
-Heat processing is recommended because raw grain contains antinutritional compounds that can reduce feeding performance. Cooking does not make amaranth a complete ration.</p>
+No. Seed coated with fungicides, insecticides, dyes, or other chemical treatments must not be fed to chickens. Always check the original seed label and use only untreated grain or seed intended for food or feed use.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-How long does amaranth take to grow?</summary>
+Can chickens eat moldy amaranth grain or seed heads?
+</summary>
 
 <p>
-
-Young leaves may be harvested within several weeks, while mature grain commonly requires approximately 90–100 days under suitable conditions. Variety and weather affect actual maturity.</p>
+No. Do not feed amaranth that is moldy, musty, damp, heated, fermented, insect-damaged, chemically contaminated, or exposed to rodents. Questionable grain, sprouts, leaves, or seed heads should be discarded.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-When should amaranth be planted?</summary>
+How long does amaranth take to grow?
+</summary>
 
 <p>
-
-Plant after frost danger has passed and the soil has warmed to approximately 60°F or higher. Continued warm weather supports faster establishment.</p>
+Young leaves may often be harvested within several weeks, while mature grain commonly requires approximately 90 to 100 days under favorable conditions. Variety, planting date, temperature, moisture, spacing, and weather can change actual maturity.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-How deep should amaranth seed be planted?</summary>
+When should amaranth be planted?
+</summary>
 
 <p>
-
-Amaranth seed should remain near the soil surface. Press it into a fine firm seedbed or cover it only very lightly.</p>
+Plant amaranth after frost danger has passed and the soil has warmed. Its tiny seed and young seedlings establish best in a warm, finely prepared, weed-free seedbed with dependable surface moisture.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Why did my amaranth fail to germinate?</summary>
+Is amaranth drought tolerant?
+</summary>
 
 <p>
-
-Common causes include cold soil, deep planting, surface drying, crusted soil, heavy rain, washed seed, poor seed quality, and competition from weeds.</p>
+Established amaranth is relatively tolerant of heat and temporary dryness, but seedlings require dependable moisture. Severe drought during flowering or grain filling may reduce yield and can increase concern about nitrate accumulation in foliage.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Is amaranth drought tolerant?</summary>
+Can amaranth be grown for both leaves and grain?
+</summary>
 
 <p>
-
-Established plants tolerate temporary dryness relatively well, but seedlings require dependable moisture and drought during flowering or grain filling can reduce yield.</p>
+Yes. Some varieties can provide a limited early leaf harvest followed by mature grain. Repeated or heavy leaf removal can reduce plant growth, delay maturity, weaken seed heads, and lower final grain yield.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Can amaranth grow in containers?</summary>
+How is amaranth grain harvested?
+</summary>
 
 <p>
-
-Yes. Vegetable and compact types grow well in large containers. Tall grain varieties need substantial soil volume, moisture, and support.</p>
+Mature seed heads may be cut, dried over a clean tarp, threshed, screened, winnowed, and dried again before storage. Because the seeds are extremely small, careful containment and fine cleaning equipment are helpful.
+</p>
 
 </details>
 
 <details>
 
 <summary>
-
-Can amaranth grow in partial shade?</summary>
+How should amaranth grain be stored?
+</summary>
 
 <p>
-
-Plants may survive in partial shade, but full sun generally supports stronger stems, greater leaf production, and better grain development.</p>
+Store only clean, fully dried, cool grain in a dry, food-safe, insect-resistant and rodent-resistant container. Inspect it periodically for condensation, heating, webbing, insects, musty odors, or mold.
+</p>
 
 </details>
 
-<details>
-
-<summary>
-
-Can amaranth be grown for leaves and grain?</summary>
-
-<p>
-
-Yes. Harvest a modest number of young leaves early, then stop cutting and allow selected plants to mature. Heavy repeated leaf harvest may reduce grain yield.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-How do I know when amaranth grain is mature?</summary>
-
-<p>
-
-Mature seed is hard, shows its final color, and releases when the seed head is rubbed. Lower leaves may also yellow or fall.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-How do I thresh amaranth?</summary>
-
-<p>
-
-Dry the heads thoroughly, then rub, roll, or gently beat them over a clean contained surface. Screen and winnow the resulting mixture.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Why is amaranth difficult to winnow?</summary>
-
-<p>
-
-The grain is extremely small and light, so airflow strong enough to move chaff may also move good seed. Use gentle airflow and test a small quantity first.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-How should amaranth grain be stored?</summary>
-
-<p>
-
-Store thoroughly dried and cleaned grain in a labeled food-safe container in a cool, dry, dark, rodent-resistant area.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Can grain from ornamental amaranth be fed to chickens?</summary>
-
-<p>
-
-Do not assume ornamental plants are suitable. Confirm the species, variety, edible use, and chemical-treatment history before considering any food or feed use.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Can wild pigweed be fed to chickens?</summary>
-
-<p>
-
-Wild plants introduce uncertainties involving identification, nitrates, herbicides, contamination, and aggressive weed seed. Named cultivated varieties are the safer choice.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Does amaranth contain nitrates?</summary>
-
-<p>
-
-Amaranth can accumulate nitrates, particularly under heavy nitrogen fertility, drought, low light, cold stress, or disrupted growth. Appearance alone cannot confirm concentration.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Does amaranth contain oxalates?</summary>
-
-<p>
-
-Amaranth leaves may contain oxalates, with concentrations varying by species, variety, plant part, age, and environment. This supports conservative supplemental use.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Can amaranth replace commercial chicken feed?</summary>
-
-<p>
-
-No. Amaranth does not provide the complete nutrient balance required by chicks, laying hens, breeding birds, or meat birds.</p>
-
-</details>
-
-<details>
-
-<summary>
-
-Is amaranth worth growing for chickens?</summary>
-
-<p>
-
-It can be worthwhile as a multipurpose crop providing household food, planting seed, summer resilience, ornamental value, and limited poultry supplementation. It is less practical as a direct replacement for inexpensive complete feed.</p>
-
-</details>
+</div>
 
 </div>
 
