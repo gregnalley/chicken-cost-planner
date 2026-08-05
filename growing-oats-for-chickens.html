@@ -26,497 +26,34 @@
 
 <link rel="stylesheet" href="assets/css/bcp-style.css">
 
+
 <style>
 
 /*
-  ==================================================
-  Oats Guide
-  ==================================================
+  Oats-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
 */
 
+.oats-guide-page
 .crop-guide-hero {
-  padding:
-    30px;
-
-  color:
-    #ffffff;
-
   background:
     linear-gradient(
       135deg,
-      rgba(
-        47,
-        89,
-        52,
-        0.98
-      ),
-      rgba(
-        156,
-        119,
-        49,
-        0.95
-      )
+      rgba(47, 89, 52, 0.98),
+      rgba(156, 119, 49, 0.95)
     );
-
-  border-radius:
-    20px;
 
   box-shadow:
     0 16px 36px
-    rgba(
-      48,
-      79,
-      47,
-      0.18
-    );
+    rgba(48, 79, 47, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin:
-    0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width:
-    760px;
-
-  margin:
-    0;
-
-  line-height:
-    1.7;
-}
-
-.crop-guide-tags {
-  display:
-    flex;
-
-  flex-wrap:
-    wrap;
-
-  gap:
-    9px;
-
-  margin-top:
-    18px;
-}
-
+.oats-guide-page
 .crop-guide-tag {
-  display:
-    inline-block;
-
-  padding:
-    7px 12px;
-
-  color:
-    #3f351d;
-
-  background:
-    #f2dda8;
-
-  border-radius:
-    999px;
-
-  font-size:
-    0.86rem;
-
-  font-weight:
-    750;
-}
-
-.quick-facts-grid {
-  display:
-    grid;
-
-  grid-template-columns:
-    repeat(
-      3,
-      minmax(
-        0,
-        1fr
-      )
-    );
-
-  gap:
-    16px;
-}
-
-.quick-fact {
-  padding:
-    18px;
-
-  background:
-    #f8fbf7;
-
-  border:
-    1px solid
-    #d7e3d6;
-
-  border-radius:
-    13px;
-}
-
-.quick-fact strong {
-  display:
-    block;
-
-  margin-bottom:
-    6px;
-
-  color:
-    #194f2a;
-}
-
-.crop-notice-box {
-  padding:
-    20px;
-
-  color:
-    #5d4217;
-
-  background:
-    #fff8e8;
-
-  border:
-    1px solid
-    #ead7aa;
-
-  border-left:
-    6px solid
-    #c99735;
-
-  border-radius:
-    12px;
-}
-
-.crop-success-box {
-  padding:
-    20px;
-
-  background:
-    #f1f8f2;
-
-  border:
-    1px solid
-    #cae0ce;
-
-  border-left:
-    6px solid
-    #4c8b5d;
-
-  border-radius:
-    12px;
-}
-
-.crop-warning-box {
-  padding:
-    20px;
-
-  color:
-    #613e19;
-
-  background:
-    #fff5e9;
-
-  border:
-    1px solid
-    #ead1af;
-
-  border-left:
-    6px solid
-    #b46b2e;
-
-  border-radius:
-    12px;
-}
-
-.crop-danger-box {
-  padding:
-    20px;
-
-  color:
-    #5d2929;
-
-  background:
-    #fff1f1;
-
-  border:
-    1px solid
-    #e4bcbc;
-
-  border-left:
-    6px solid
-    #9d4444;
-
-  border-radius:
-    12px;
-}
-
-.crop-steps {
-  counter-reset:
-    oats-step;
-
-  margin:
-    0;
-
-  padding:
-    0;
-
-  list-style:
-    none;
-}
-
-.crop-steps li {
-  position:
-    relative;
-
-  margin-bottom:
-    15px;
-
-  padding:
-    18px 18px 18px 62px;
-
-  background:
-    #f8fbf8;
-
-  border:
-    1px solid
-    #d8e4d9;
-
-  border-radius:
-    12px;
-}
-
-.crop-steps li::before {
-  counter-increment:
-    oats-step;
-
-  content:
-    counter(
-      oats-step
-    );
-
-  position:
-    absolute;
-
-  top:
-    16px;
-
-  left:
-    17px;
-
-  display:
-    flex;
-
-  width:
-    30px;
-
-  height:
-    30px;
-
-  align-items:
-    center;
-
-  justify-content:
-    center;
-
-  color:
-    #ffffff;
-
-  background:
-    #337747;
-
-  border-radius:
-    50%;
-
-  font-weight:
-    800;
-}
-
-.crop-steps strong {
-  display:
-    block;
-
-  margin-bottom:
-    5px;
-
-  color:
-    #194f2a;
-}
-
-.crop-comparison-grid {
-  display:
-    grid;
-
-  grid-template-columns:
-    repeat(
-      3,
-      minmax(
-        0,
-        1fr
-      )
-    );
-
-  gap:
-    16px;
-}
-
-.crop-comparison-card {
-  padding:
-    18px;
-
-  background:
-    #fafcf9;
-
-  border:
-    1px solid
-    #d8e4d9;
-
-  border-radius:
-    13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top:
-    0;
-
-  color:
-    #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom:
-    0;
-}
-
-.crop-calendar {
-  width:
-    100%;
-
-  border-collapse:
-    collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding:
-    13px;
-
-  text-align:
-    left;
-
-  vertical-align:
-    top;
-
-  border:
-    1px solid
-    #d8e2d8;
-}
-
-.crop-calendar th {
-  color:
-    #ffffff;
-
-  background:
-    #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background:
-    #f7faf7;
-}
-
-.source-card {
-  margin-bottom:
-    12px;
-
-  padding:
-    15px;
-
-  background:
-    #f7faf7;
-
-  border:
-    1px solid
-    #dbe5dc;
-
-  border-radius:
-    10px;
-}
-
-.source-card strong {
-  display:
-    block;
-
-  margin-bottom:
-    4px;
-}
-
-.source-card p {
-  margin:
-    5px 0 0;
-}
-
-.next-guide-grid {
-  display:
-    grid;
-
-  grid-template-columns:
-    repeat(
-      2,
-      minmax(
-        0,
-        1fr
-      )
-    );
-
-  gap:
-    17px;
-}
-
-.next-guide-card {
-  padding:
-    19px;
-
-  background:
-    #f8fbf8;
-
-  border:
-    1px solid
-    #d7e3d8;
-
-  border-radius:
-    13px;
-}
-
-.next-guide-card h3 {
-  margin-top:
-    0;
-
-  color:
-    #194f2a;
-}
-
-@media
-(max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns:
-      1fr;
-  }
-
-  .crop-guide-hero {
-    padding:
-      23px;
-  }
-
-  .crop-calendar {
-    font-size:
-      0.92rem;
-  }
-
+  color: #3f351d;
+  background: #f2dda8;
+  border-color:
+    rgba(63, 53, 29, 0.16);
 }
 
 </style>
@@ -821,55 +358,76 @@ Dry Grain Storage
 <div class="section">
 
 <h2>
-🌾 Are Oats a Good Crop for Chickens?
+🌾 Can Chickens Eat Oats?
 </h2>
 
 <p>
-Oats are a cool-season cereal crop that can be grown for leafy forage, mature seed heads, dry grain, ground cover, erosion control, and soil-building biomass. They are one part of a larger backyard feed garden system that also includes crops such as <a href="growing-grain-sorghum-for-chickens.html">grain sorghum</a>, <a href="growing-proso-millet-for-chickens.html">proso millet</a>, and <a href="growing-field-corn-for-chickens.html">field corn</a>.
+<strong>Yes.</strong> Chickens can eat clean oats in several forms, including whole raw oats, plain cooked oatmeal, oat sprouts, tender oat grass, and thoroughly dried mature seed heads. Oats should remain a supplemental food alongside a complete poultry ration rather than replacing balanced feed.
 </p>
 
 <p>
-For backyard chicken keepers, oats may provide:
+Adult chickens may eat clean whole raw oats when appropriate insoluble grit is available. Oats do not need to be cooked before feeding, although their attached hull makes ordinary whole oats relatively high in fiber and lower in usable energy than grains such as corn or grain sorghum.
+</p>
+
+<p>
+Chickens may also eat <strong>plain cooked oatmeal</strong> after it has cooled. Serve it <u>without</u> sugar, salt, milk, butter, oils, sweeteners, flavorings, or other added ingredients. Cooked oatmeal is best offered occasionally because it is easy to overfeed and does not provide complete poultry nutrition.
+</p>
+
+<p>
+Other practical oat options include:
 </p>
 
 <ul>
 
 <li>
-Young green leaves and shoots for controlled forage
+<strong>Young oat grass:</strong>
+Tender leaves and shoots may be offered through controlled grazing, cut-and-carry feeding, or a protected forage frame.
 </li>
 
 <li>
-Whole mature seed heads for pecking enrichment
+<strong>Oat sprouts:</strong>
+Clean, untreated oats may be sprouted and offered as supplemental green forage when sanitation, rinsing, drainage, and mold prevention are carefully maintained.
 </li>
 
 <li>
-Threshed whole grain for measured supplemental feeding
+<strong>Whole mature seed heads:</strong>
+Thoroughly dried, untreated seed heads may be offered as pecking enrichment.
 </li>
 
 <li>
-A cool-season crop that complements warm-season grains
+<strong>Loose whole grain:</strong>
+Mature oats may be dried, threshed, cleaned, and offered in measured amounts to adult chickens.
 </li>
 
 <li>
-Seasonal ground cover for unused garden areas
-</li>
-
-<li>
-A grain that can be stored after careful drying
-</li>
-
-<li>
-Cover-crop residue and organic matter
-</li>
-
-<li>
-A possible household grain where food-grade varieties and suitable processing are used
+<strong>Coarsely processed oats:</strong>
+Grinding or cracking can change particle size, but it does not remove the hull, reduce beta-glucans, or make oats nutritionally complete.
 </li>
 
 </ul>
 
+<div class="crop-warning-box">
+
+<strong>
+Keep all forms of oats supplemental.
+</strong>
+
+<p style="margin-bottom:0;">
+Oats do not provide enough calcium, balanced amino acids, vitamins, minerals, or concentrated energy to replace chick starter, grower feed, layer feed, or another properly formulated poultry ration. Never feed moldy, musty, heated, rancid, chemically treated, or contaminated oats.
+</p>
+
+</div>
+
+<h3>
+Are Oats a Good Crop to Grow for Chickens?
+</h3>
+
 <p>
-The main limitations are high hull fiber, lower usable poultry energy than corn or sorghum, beta-glucans, winter-kill risk, lodging, disease, wild-bird pressure, grain-processing labor, and the need for careful drying and storage.
+Oats are a versatile cool-season cereal crop that can provide leafy forage, mature seed heads, dry grain, seasonal ground cover, erosion control, and soil-building biomass. They complement warm-season feed crops such as <a href="growing-grain-sorghum-for-chickens.html">grain sorghum</a>, <a href="growing-proso-millet-for-chickens.html">proso millet</a>, and <a href="growing-field-corn-for-chickens.html">field corn</a>.
+</p>
+
+<p>
+Their main limitations are high hull fiber, lower usable poultry energy than corn or sorghum, beta-glucans, winter-kill risk, lodging, disease, wild-bird pressure, processing labor, and the need for careful drying and storage.
 </p>
 
 </div>
@@ -3727,6 +3285,18 @@ Can oats replace layer feed?
 
 <p>
 No. Oats do not provide enough calcium, balanced amino acids, vitamins, minerals, or concentrated energy to replace a complete layer feed.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are oats a winter crop?
+</summary>
+
+<p>
+Oats are a cool-season crop. They are commonly planted in spring in colder regions and during fall in mild-winter regions. Winter survival varies by variety and local conditions, and oats are generally less winter hardy than rye or wheat.
 </p>
 
 </details>
