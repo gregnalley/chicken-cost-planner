@@ -23,234 +23,36 @@
 
 <style>
 
+/*
+  Field Corn-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   FIELD CORN HERO THEME
+   -------------------------------------------------- */
+
+.field-corn-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(56, 91, 42, 0.97),
       rgba(176, 126, 28, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(70, 78, 35, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(70, 78, 35, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.field-corn-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #3f351d;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f5dfaa;
-  border-radius: 999px;
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.corn-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.corn-danger-box {
-  padding: 20px;
-  color: #5d2929;
-  background: #fff1f1;
-  border: 1px solid #e4bcbc;
-  border-left: 6px solid #9d4444;
-  border-radius: 12px;
-}
-
-.corn-steps {
-  counter-reset: corn-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.corn-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.corn-steps li::before {
-  counter-increment: corn-step;
-  content: counter(corn-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.corn-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(63, 53, 29, 0.16);
 }
 
 </style>
@@ -303,7 +105,7 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat field corn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can eat clean, sound field-corn kernels as supplemental grain. Corn is energy rich but does not provide complete protein, calcium, vitamins, or minerals."
+        "text": "Yes. Adult chickens can eat clean, mature field corn as a supplemental energy grain. It may be offered whole, cracked, coarsely ground, cooked, sprouted, or on a thoroughly dried ear, but it should not replace complete poultry feed."
       }
     },
     {
@@ -311,31 +113,71 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat whole corn kernels?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can generally consume whole dried corn kernels. Cracking or coarse grinding may make grain easier to mix with other ingredients, but processed corn deteriorates faster during storage."
+        "text": "Yes. Most healthy adult chickens can consume whole dried corn kernels when appropriate insoluble grit is available. Introduce unfamiliar grain gradually and offer it in measured amounts."
       }
     },
     {
       "@type": "Question",
-      "name": "Can chickens eat corn directly from a dried ear?",
+      "name": "Can chickens eat corn directly from the cob?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. A clean, thoroughly dried ear can be offered as pecking enrichment. It must be free from mold, insects, chemical contamination, and spoilage."
+        "text": "Yes. A clean, thoroughly dried ear can provide pecking enrichment. Remove leftover cobs before they become wet, moldy, or buried deeply in litter."
       }
     },
     {
       "@type": "Question",
-      "name": "Does corn keep chickens warm in winter?",
+      "name": "Does corn need to be cracked before feeding chickens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Corn supplies dietary energy, but it does not create a special warming effect beyond normal digestion. Chickens still require balanced feed, shelter, water, and appropriate cold-weather care."
+        "text": "No. Adult chickens can generally consume whole kernels. Cracking may make corn easier to scatter, mix, or eat for smaller birds, but cracked corn deteriorates faster during storage than intact grain."
       }
     },
     {
       "@type": "Question",
-      "name": "Can moldy corn be fed to chickens?",
+      "name": "Can chickens eat cracked corn every day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Moldy, musty, heated, wet, discolored, or questionable corn may contain harmful mycotoxins and should not be fed."
+        "text": "Cracked corn may be offered regularly in small amounts, but feeding too much can reduce the flock’s intake of complete poultry feed. It should remain a supplement rather than a major portion of the diet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat cooked corn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain cooked corn may be offered after it has cooled. Serve it without butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat fresh sweet corn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain fresh sweet corn and clean corn cobs may be offered in moderation. Sweet corn contains more moisture and is harvested earlier than field corn, so it is not intended for long-term dry storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sprouted corn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean, untreated corn kernels may be sprouted under sanitary conditions and offered as supplemental green feed. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, discoloration, fermentation, or foul odors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat fermented corn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Corn may be included in properly managed fermented feed. Use clean, untreated grain and discard any batch that develops mold, slime, rotten odors, unusual discoloration, or other signs of spoilage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat corn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental corn is better reserved for older birds unless it is included in a professionally formulated starter ration. Chicks given supplemental foods also need appropriately sized grit."
       }
     },
     {
@@ -343,25 +185,65 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can corn replace layer feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Corn is primarily an energy ingredient and is low in calcium and several essential amino acids. It cannot replace a nutritionally complete layer ration."
+        "text": "No. Corn is primarily an energy ingredient and contains very little calcium. It does not provide the complete amino-acid, vitamin, mineral, and protein balance required by laying hens."
       }
     },
     {
-  "@type": "Question",
-  "name": "Can chickens eat cracked corn every day?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Cracked corn can be offered as a supplemental grain, but feeding it every day in large amounts may reduce the intake of complete poultry feed. Cracked corn should complement a balanced diet rather than replace it."
-  }
-},
-{
-  "@type": "Question",
-  "name": "Is field corn better than sweet corn for chickens?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Field corn is better suited for long-term storage because it is harvested as mature dry grain. Sweet corn contains more moisture and sugar and is normally harvested earlier for fresh eating rather than dry feed storage."
-  }
-}
+      "@type": "Question",
+      "name": "Is field corn better than sweet corn for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Field corn is better suited for long-term storage because it is harvested as mature dry grain. Sweet corn is harvested earlier, contains more moisture and sugar, and is generally used as a fresh supplemental treat rather than stored feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is yellow corn better than white corn for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Their energy, protein, and mineral values are generally similar. Yellow corn contains more carotenoid pigments, which may contribute to deeper yolk color, while white corn provides fewer yellow pigments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does corn keep chickens warm in winter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Corn provides dietary energy, but it does not create a special warming effect beyond normal digestion. Chickens still require balanced feed, dry shelter, appropriate ventilation, protection from severe weather, and constant access to unfrozen water."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does corn make chickens too hot in summer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normal moderate supplementation does not create a unique overheating effect. However, excessive corn can unbalance the diet and reduce the intake of complete poultry feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat corn cobs and husks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chickens may peck remaining kernels from a cob, but the woody cob has little feed value. Corn husks are fibrous and provide little concentrated nutrition. Remove large leftovers before they become wet, moldy, tangled, or mixed deeply into litter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat moldy corn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Moldy, musty, heated, wet, discolored, insect-damaged, chemically treated, or otherwise questionable corn should not be fed. Corn may contain harmful mycotoxins even when contamination cannot be judged reliably by appearance or smell."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing field corn lower my chicken feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but the result depends on usable dry grain yield, seed cost, fertilizer, irrigation, wildlife losses, pollination, drying, shelling, storage, labor, and local grain prices. Small plantings may provide more value through enrichment, education, resilience, and crop diversity than through direct savings."
+      }
+    }
   ]
 }
 </script>
@@ -1772,65 +1654,231 @@ This trial will show whether pollination, wildlife pressure, drying conditions, 
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat field corn?</h3>
+<div class="faq-list">
+
+<details>
+
+<summary>
+Can chickens eat field corn?
+</summary>
 
 <p>
-Yes. Adult chickens may eat clean whole, cracked, or coarsely ground field corn as supplemental grain.</p>
+Yes. Adult chickens can eat clean, mature field corn as a supplemental energy grain. It may be offered whole, cracked, coarsely ground, cooked, sprouted, or on a thoroughly dried ear, but it should not replace complete poultry feed.
+</p>
 
-<h3>Can chickens eat corn directly from the cob?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat whole corn kernels?
+</summary>
 
 <p>
-Yes. A clean, thoroughly dried ear can provide pecking enrichment.</p>
+Yes. Most healthy adult chickens can consume whole dried corn kernels when appropriate insoluble grit is available. Introduce unfamiliar grain gradually and offer it in measured amounts.
+</p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat corn directly from the cob?
+</summary>
+
+<p>
+Yes. A clean, thoroughly dried ear can provide pecking enrichment. Remove leftover cobs before they become wet, moldy, or buried deeply in litter.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does corn need to be cracked before feeding chickens?
+</summary>
+
+<p>
+No. Adult chickens can generally consume whole kernels. Cracking may make corn easier to scatter, mix, or eat for smaller birds, but cracked corn deteriorates faster during storage than intact grain.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Can chickens eat cracked corn every day?
-</h3>
+</summary>
 
 <p>
-Cracked corn can be offered as a supplemental grain, but feeding it every day in large amounts may reduce the intake of complete poultry feed. Cracked corn should complement a balanced diet rather than replace it.
+Cracked corn may be offered regularly in small amounts, but feeding too much can reduce the flock’s intake of complete poultry feed. It should remain a supplement rather than a major portion of the diet.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat cooked corn?
+</summary>
+
+<p>
+Yes. Plain cooked corn may be offered after it has cooled. Serve it <u>without</u> butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat fresh sweet corn?
+</summary>
+
+<p>
+Yes. Plain fresh sweet corn and clean corn cobs may be offered in moderation. Sweet corn contains more moisture and is harvested earlier than field corn, so it is not intended for long-term dry storage.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sprouted corn?
+</summary>
+
+<p>
+Yes. Clean, untreated corn kernels may be sprouted under sanitary conditions and offered as supplemental green feed. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, discoloration, fermentation, or foul odors.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat fermented corn?
+</summary>
+
+<p>
+Corn may be included in properly managed fermented feed. Use clean, untreated grain and discard any batch that develops mold, slime, rotten odors, unusual discoloration, or other signs of spoilage.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat corn?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental corn is better reserved for older birds unless it is included in a professionally formulated starter ration. Chicks given supplemental foods also need appropriately sized grit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can corn replace layer feed?
+</summary>
+
+<p>
+No. Corn is primarily an energy ingredient and contains very little calcium. It does not provide the complete amino-acid, vitamin, mineral, and protein balance required by laying hens.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Is field corn better than sweet corn for chickens?
-</h3>
+</summary>
 
 <p>
-Field corn is better suited for long-term storage because it is harvested as mature dry grain. Sweet corn contains more moisture and sugar and is normally harvested earlier for fresh eating rather than dry feed storage.
+Field corn is better suited for long-term storage because it is harvested as mature dry grain. Sweet corn is harvested earlier, contains more moisture and sugar, and is generally used as a fresh supplemental treat rather than stored feed.
 </p>
 
-<h3>Does corn need to be cracked?</h3>
+</details>
+
+<details>
+
+<summary>
+Is yellow corn better than white corn for chickens?
+</summary>
 
 <p>
-Adult chickens can generally consume whole kernels. Cracking may make mixing easier, but cracked corn deteriorates faster during storage.</p>
+Their energy, protein, and mineral values are generally similar. Yellow corn contains more carotenoid pigments, which may contribute to deeper yolk color, while white corn provides fewer yellow pigments.
+</p>
 
-<h3>Can chickens eat fresh corn?</h3>
+</details>
 
-<p>
-Plain fresh corn may be offered in moderation, although this guide focuses on mature dry field corn.</p>
+<details>
 
-<h3>Can chickens eat moldy corn?</h3>
-
-<p>
-No. Moldy or questionable corn may contain dangerous mycotoxins and should be discarded or professionally tested.</p>
-
-<h3>Is yellow corn better than white corn?</h3>
+<summary>
+Does corn keep chickens warm in winter?
+</summary>
 
 <p>
-Their energy, protein, and mineral values are similar. Yellow corn contains more carotenoid pigments that may affect yolk color.</p>
+Corn provides dietary energy, but it does not create a special warming effect beyond normal digestion. Chickens still require balanced feed, dry shelter, appropriate ventilation, protection from severe weather, and constant access to unfrozen water.
+</p>
 
-<h3>Does corn make chickens too hot in summer?</h3>
+</details>
+
+<details>
+
+<summary>
+Does corn make chickens too hot in summer?
+</summary>
 
 <p>
-Corn is an energy ingredient, but normal moderate supplementation does not create a unique overheating effect. Excess grain can still unbalance the diet.</p>
+Normal moderate supplementation does not create a unique overheating effect. However, excessive corn can unbalance the diet and reduce the intake of complete poultry feed.
+</p>
 
-<h3>Will growing corn lower my feed bill?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat corn cobs and husks?
+</summary>
 
 <p>
-That depends on usable dry grain yield, fertilizer, irrigation, wildlife losses, drying, storage, labor, and the local price of purchased corn and complete feed.</p>
+Chickens may peck remaining kernels from a cob, but the woody cob has little feed value. Corn husks are fibrous and provide little concentrated nutrition. Remove large leftovers before they become wet, moldy, tangled, or mixed deeply into litter.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat moldy corn?
+</summary>
+
+<p>
+No. Moldy, musty, heated, wet, discolored, insect-damaged, chemically treated, or otherwise questionable corn should not be fed. Corn may contain harmful mycotoxins even when contamination cannot be judged reliably by appearance or smell.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will growing field corn lower my chicken feed bill?
+</summary>
+
+<p>
+Possibly, but the result depends on usable dry grain yield, seed cost, fertilizer, irrigation, wildlife losses, pollination, drying, shelling, storage, labor, and local grain prices. Small plantings may provide more value through enrichment, education, resilience, and crop diversity than through direct savings.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
