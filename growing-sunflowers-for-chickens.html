@@ -23,225 +23,36 @@
 
 <style>
 
+/*
+  Sunflower-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   SUNFLOWER HERO THEME
+   -------------------------------------------------- */
+
+.sunflower-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(73, 103, 38, 0.96),
       rgba(153, 112, 27, 0.94)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(55, 79, 33, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(55, 79, 33, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.sunflower-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #29411f;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f8e7ad;
-  border-radius: 999px;
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.sunflower-steps {
-  counter-reset: sunflower-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sunflower-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.sunflower-steps li::before {
-  counter-increment: sunflower-step;
-  content: counter(sunflower-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.sunflower-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(41, 65, 31, 0.16);
 }
 
 </style>
@@ -294,15 +105,7 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat sunflower seeds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can eat plain, sound sunflower seeds as a supplemental food. Sunflower seeds are energy-dense and should not replace a balanced poultry ration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What type of sunflower is best for chickens?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Black oil and other oilseed sunflowers are commonly chosen for bird and livestock feed because they produce oil-rich seeds. Large confection sunflowers are also edible but have larger hulls and are generally selected for human snack use."
+        "text": "Yes. Adult chickens can eat clean, plain sunflower seeds as a supplemental food. Whole seeds, shelled kernels, and thoroughly dried sunflower heads may all be offered in moderation alongside a complete poultry ration."
       }
     },
     {
@@ -310,23 +113,151 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat sunflower seeds with the shells?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can usually consume whole sunflower seeds with their hulls. The hull adds fiber, so whole seeds and shelled kernels have different nutritional values."
+        "text": "Yes. Most healthy adult chickens can consume whole sunflower seeds with their hulls when appropriate insoluble grit is available. Whole seeds contain more fiber than shelled kernels."
       }
     },
     {
       "@type": "Question",
-      "name": "How do you dry sunflower heads for chickens?",
+      "name": "Can chickens eat shelled sunflower seeds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Allow the back of the flower head to turn yellow-brown and the seeds to mature. Cut the head with part of the stalk attached and finish drying it in a protected, well-ventilated location before storage or feeding."
+        "text": "Yes. Shelled sunflower kernels are easy for chickens to eat, but they are more concentrated in fat and energy because the fibrous hull has been removed. Offer them in smaller amounts than whole seeds."
       }
     },
     {
       "@type": "Question",
-      "name": "Can sunflower seeds replace chicken feed?",
+      "name": "Can chickens eat black oil sunflower seeds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Sunflower seeds provide energy, fat, and moderate protein, but they do not supply the complete amino-acid, vitamin, mineral, and calcium balance required by laying hens."
+        "text": "Yes. Black oil sunflower seeds are commonly used for birds because they are oil rich and have relatively thin hulls. They are a practical supplemental seed for chickens but should not replace complete poultry feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are black oil sunflower seeds better than striped sunflower seeds for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Black oil sunflower seeds are often preferred when the goal is producing an energy-rich feed seed because they contain substantial oil and have thinner hulls. Striped or confection seeds are also edible but generally have larger hulls and are commonly selected for human snack use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do sunflower seeds need to be cooked for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Clean, mature sunflower seeds do not normally need to be cooked for adult chickens. Plain raw or naturally dried seeds are generally the most practical forms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat roasted sunflower seeds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but only when they are plain and unsalted. Do not feed sunflower seeds prepared with salt, oils, flavorings, sweeteners, spices, or other seasonings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sprouted sunflower seeds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean, untreated sunflower seeds may be sprouted under sanitary conditions and offered as supplemental green feed. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, discoloration, fermentation, or unpleasant odors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat sunflower seeds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental sunflower seed is better reserved for older birds unless it is appropriately processed and included in a professionally formulated starter ration. Chicks given supplemental foods also need suitably sized grit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat an entire sunflower head?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A mature, thoroughly dried sunflower head can provide natural pecking enrichment. It must be clean, untreated, and free from mold, insects, rodents, rancidity, and other contamination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sunflower petals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chickens may peck clean sunflower petals as occasional enrichment. Petals provide much less concentrated nutrition than mature seeds and should not be treated as a major feed source."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sunflower leaves and stalks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chickens may investigate or peck sunflower leaves and tender plant material, but mature stalks are fibrous and have little concentrated feed value. Do not offer plants treated with unsafe pesticides, herbicides, or other chemicals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are sunflowers safe for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean sunflower seeds and untreated plant material are generally safe when offered appropriately. Avoid moldy, damp, rancid, salted, seasoned, chemically treated, or otherwise contaminated sunflower products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sunflower seeds every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small amounts may be offered regularly, but sunflower seeds are high in fat and energy. Feeding too much can reduce the flock’s intake of complete poultry feed and dilute the overall nutritional balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can sunflower seeds replace scratch grain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sunflower seeds may be used as one supplemental ingredient, but both sunflower seeds and scratch grains can dilute a complete diet when fed excessively. Neither should become the foundation of the flock’s feeding program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can sunflower seeds replace layer feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Sunflower seeds provide fat, energy, and moderate protein but do not supply enough calcium or the complete amino-acid, vitamin, and mineral balance required by laying hens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat moldy or rancid sunflower seeds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed seeds that are moldy, musty, damp, heated, rancid, insect-infested, chemically treated, or contaminated by rodents. A sharp, stale, paint-like, or otherwise unpleasant odor may indicate rancidity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to grow sunflowers for chicken feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most sunflower varieties mature in approximately 60 to 120 days, depending on the variety, planting date, climate, and growing conditions. Seed-producing oilseed types may require a longer season than some ornamental varieties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should sunflower heads be dried for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harvest mature heads after the back has turned yellow-brown and the seeds are firm. Finish drying them under cover in a warm, shaded, well-ventilated location before feeding or storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing sunflowers noticeably lower my chicken feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but the result depends on planted area, seed yield, wildlife losses, labor, drying, storage success, and local feed prices. Small plantings are more likely to provide enrichment and modest supplementation than major feed-cost savings."
       }
     }
   ]
@@ -1527,75 +1458,255 @@ This trial will show how sunflowers perform in your soil and climate before you 
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat sunflower seeds?</h3>
+<div class="faq-list">
+
+<details>
+
+<summary>
+Can chickens eat sunflower seeds?
+</summary>
 
 <p>
-Yes. Adult chickens can eat plain, sound sunflower seeds as a supplemental food. They should continue receiving balanced poultry feed.
+Yes. Adult chickens can eat clean, plain sunflower seeds as a supplemental food. Whole seeds, shelled kernels, and thoroughly dried sunflower heads may all be offered in moderation alongside a complete poultry ration.
 </p>
 
-<h3>Can chickens eat sunflower shells?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sunflower seeds with the shells?
+</summary>
 
 <p>
-Adult chickens can generally consume whole sunflower seeds with their hulls. Whole seeds contain more fiber than shelled kernels.
+Yes. Most healthy adult chickens can consume whole sunflower seeds with their hulls when appropriate insoluble grit is available. Whole seeds contain more fiber than shelled kernels.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat shelled sunflower seeds?
+</summary>
+
+<p>
+Yes. Shelled sunflower kernels are easy for chickens to eat, but they are more concentrated in fat and energy because the fibrous hull has been removed. Offer them in smaller amounts than whole seeds.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat black oil sunflower seeds?
+</summary>
+
+<p>
+Yes. Black oil sunflower seeds are commonly used for birds because they are oil rich and have relatively thin hulls. They are a practical supplemental seed for chickens but should not replace complete poultry feed.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are black oil sunflower seeds better than striped sunflower seeds for chickens?
+</summary>
+
+<p>
+Black oil sunflower seeds are often preferred when the goal is producing an energy-rich feed seed because they contain substantial oil and have thinner hulls. Striped or confection seeds are also edible but generally have larger hulls and are commonly selected for human snack use.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Do sunflower seeds need to be cooked for chickens?
+</summary>
+
+<p>
+No. Clean, mature sunflower seeds do not normally need to be cooked for adult chickens. Plain raw or naturally dried seeds are generally the most practical forms.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat roasted sunflower seeds?
+</summary>
+
+<p>
+Yes, but only when they are plain and unsalted. Do not feed sunflower seeds prepared with salt, oils, flavorings, sweeteners, spices, or other seasonings.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sprouted sunflower seeds?
+</summary>
+
+<p>
+Yes. Clean, untreated sunflower seeds may be sprouted under sanitary conditions and offered as supplemental green feed. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, discoloration, fermentation, or unpleasant odors.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat sunflower seeds?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental sunflower seed is better reserved for older birds unless it is appropriately processed and included in a professionally formulated starter ration. Chicks given supplemental foods also need suitably sized grit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat an entire sunflower head?
+</summary>
+
+<p>
+Yes. A mature, thoroughly dried sunflower head can provide natural pecking enrichment. It must be clean, untreated, and free from mold, insects, rodents, rancidity, and other contamination.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sunflower petals?
+</summary>
+
+<p>
+Chickens may peck clean sunflower petals as occasional enrichment. Petals provide much less concentrated nutrition than mature seeds and should not be treated as a major feed source.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Can chickens eat sunflower leaves and stalks?
-</h3>
+</summary>
 
 <p>
-Chickens may investigate sunflower leaves, petals, and plant material, but the greatest nutritional value of sunflowers comes from the mature seeds. Leaves and stalks are better viewed as occasional enrichment or forage material rather than a significant feed source. Avoid offering plants that have been treated with pesticides or chemicals.
+Chickens may investigate or peck sunflower leaves and tender plant material, but mature stalks are fibrous and have little concentrated feed value. Do not offer plants treated with unsafe pesticides, herbicides, or other chemicals.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
 Are sunflowers safe for chickens?
-</h3>
+</summary>
 
 <p>
-Yes, mature sunflower seeds and clean sunflower plant material are generally considered safe for chickens when offered appropriately. Sunflower seeds should remain a supplemental food because their high fat content can dilute a balanced diet if fed excessively. Avoid moldy, spoiled, salted, or chemically treated sunflower products.
+Yes. Clean sunflower seeds and untreated plant material are generally safe when offered appropriately. Avoid moldy, damp, rancid, salted, seasoned, chemically treated, or otherwise contaminated sunflower products.
 </p>
 
-<h3>Are black oil sunflower seeds better for chickens?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sunflower seeds every day?
+</summary>
 
 <p>
-Black oil sunflower seeds are commonly used for birds because they contain substantial oil and have relatively thin hulls. They are a practical seed-producing choice, but they are still supplemental.
+Small amounts may be offered regularly, but sunflower seeds are high in fat and energy. Feeding too much can reduce the flock’s intake of complete poultry feed and dilute the overall nutritional balance.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can sunflower seeds replace scratch grain?
+</summary>
+
+<p>
+Sunflower seeds may be used as one supplemental ingredient, but both sunflower seeds and scratch grains can dilute a complete diet when fed excessively. Neither should become the foundation of the flock’s feeding program.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can sunflower seeds replace layer feed?
+</summary>
+
+<p>
+No. Sunflower seeds provide fat, energy, and moderate protein but do not supply enough calcium or the complete amino-acid, vitamin, and mineral balance required by laying hens.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat moldy or rancid sunflower seeds?
+</summary>
+
+<p>
+No. Do not feed seeds that are moldy, musty, damp, heated, rancid, insect-infested, chemically treated, or contaminated by rodents. A sharp, stale, paint-like, or otherwise unpleasant odor may indicate rancidity.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 How long does it take to grow sunflowers for chicken feed?
-</h3>
+</summary>
 
 <p>
-Most sunflower varieties mature in approximately 60 to 120 days depending on the variety, planting date, climate, and growing conditions. Oilseed varieties selected for seed production may require a longer growing period than some ornamental types.
+Most sunflower varieties mature in approximately 60 to 120 days, depending on the variety, planting date, climate, and growing conditions. Seed-producing oilseed types may require a longer season than some ornamental varieties.
 </p>
 
-<h3>Can I give chickens an entire sunflower head?</h3>
+</details>
+
+<details>
+
+<summary>
+How should sunflower heads be dried for chickens?
+</summary>
 
 <p>
-Yes, provided the head is mature, thoroughly dried, clean, and free from mold or chemical contamination. Whole heads can provide pecking enrichment.
+Harvest mature heads after the back has turned yellow-brown and the seeds are firm. Finish drying them under cover in a warm, shaded, well-ventilated location before feeding or storage.
 </p>
 
-<h3>Should sunflower seeds be cooked?</h3>
+</details>
+
+<details>
+
+<summary>
+Will growing sunflowers noticeably lower my chicken feed bill?
+</summary>
 
 <p>
-Plain mature sunflower seeds do not normally require cooking for adult chickens. They should be clean, dry, unsalted, and unseasoned.
+Possibly, but the result depends on planted area, seed yield, wildlife losses, labor, drying, storage success, and local feed prices. Small plantings are more likely to provide enrichment and modest supplementation than major feed-cost savings.
 </p>
 
-<h3>Can sunflower seeds replace scratch grain?</h3>
+</details>
 
-<p>
-They may be used as one supplemental ingredient, but both sunflower seeds and scratch grains can dilute a complete diet when fed excessively. A homegrown sunflower crop can reduce reliance on purchased treats or provide seasonal supplementation, but it should be part of a complete feeding plan rather than the foundation of the diet.
-</p>
-
-<h3>Will growing sunflowers noticeably lower my feed bill?</h3>
-
-<p>
-That depends on the planted area, seed yield, wildlife losses, labor, storage success, and local feed prices. Small plantings are more likely to provide enrichment and modest supplementation than major feed-cost savings.
-</p>
+</div>
 
 </div>
 
