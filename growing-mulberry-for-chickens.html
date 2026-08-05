@@ -23,328 +23,37 @@
 
 <style>
 
+/*
+  Mulberry-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   MULBERRY HERO THEME
+   -------------------------------------------------- */
+
+.mulberry-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(65, 78, 42, 0.97),
       rgba(104, 52, 84, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(56, 67, 39, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(56, 67, 39, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.mulberry-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #38243a;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #ead7e5;
-  border-radius: 999px;
+  border-color:
+    rgba(56, 36, 58, 0.16);
 }
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-danger-box {
-  padding: 20px;
-  color: #5d2929;
-  background: #fff1f1;
-  border: 1px solid #e4bcbc;
-  border-left: 6px solid #9d4444;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: mulberry-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: mulberry-step;
-  content: counter(mulberry-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
-}
-
-.crop-guide-hero-grid {
-
-  display:
-    grid;
-
-  grid-template-columns:
-    minmax(220px, 0.8fr)
-    minmax(0, 1.5fr);
-
-  gap:
-    28px;
-
-  align-items:
-    center;
-
-}
-
-
-.crop-guide-hero-image img {
-
-  width:
-    100%;
-
-  height:
-    260px;
-
-  object-fit:
-    cover;
-
-  border-radius:
-    18px;
-
-  display:
-    block;
-
-}
-
-
-.crop-guide-hero-content h1 {
-
-  margin-top:
-    0;
-
-}
-
-
-@media(max-width:760px){
-
-  .crop-guide-feature-card {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .crop-guide-feature-image {
-
-    width:
-      100%;
-
-  }
-
-
-  .crop-guide-feature-image img {
-
-    height:
-      220px;
-
-  }
-
-
-
-  .crop-guide-hero-grid {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .crop-guide-hero-image img {
-
-    height:
-      220px;
-
-  }
-
-}
-
-
-
 
 </style>
 
@@ -396,7 +105,39 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat mulberries?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may eat ripe, sound mulberry fruit as supplemental food. Fallen fruit should be removed before it ferments, molds, or attracts excessive insects."
+        "text": "Yes. Chickens can eat ripe, sound mulberries as a supplemental seasonal food. Mulberries provide moisture, natural sugars, and foraging enrichment but should not replace a complete poultry ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat fallen mulberries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, provided the fallen fruit is still fresh, clean, and free from mold, fermentation, insects, chemicals, or other contamination. Remove fruit that accumulates faster than the flock can consume it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat unripe mulberries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fully ripe, sound fruit is the better choice. Ripe mulberries are softer, more palatable, and easier for chickens to consume than firm unripe fruit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat frozen mulberries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain frozen mulberries may be thawed and offered in moderation. Do not add sugar, syrup, alcohol, sauces, or other ingredients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat dried mulberries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plain dried mulberries may be offered occasionally, but they are more concentrated in sugar and energy than fresh fruit. Avoid sweetened, flavored, moldy, or improperly stored dried fruit."
       }
     },
     {
@@ -404,7 +145,71 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat mulberry leaves?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may consume tender mulberry leaves in limited amounts. Leaves can be offered fresh, wilted, dried, or crumbled, but they should not replace a balanced poultry ration."
+        "text": "Yes. Chickens may eat clean, tender mulberry leaves as supplemental forage. Young leaves are generally easier to consume than older, tougher leaves and woody stems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat dried mulberry leaves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mulberry leaves may be dried rapidly and thoroughly for later use. Store them only after they are fully dry, and discard any material that becomes damp, musty, moldy, insect-infested, or contaminated by rodents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat mulberry branches or bark?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mulberry branches and bark are not intended as feed. Leafy branches may be placed where chickens can strip the leaves, but remove any branch that creates a sharp, falling, or entanglement hazard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat mulberries or mulberry leaves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Small amounts of soft ripe fruit or finely chopped tender leaves are better reserved until chicks are established on starter feed and old enough to consume supplemental foods safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat mulberries every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small amounts may be available regularly during the fruiting season, but heavy fruit consumption can reduce the flock's intake of complete feed. Remove excess fallen fruit and make sure balanced poultry feed remains readily available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens live beneath a mulberry tree?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A mature mulberry tree can provide useful shade, seasonal fruit, insects, leaf litter, and natural enrichment. The area still requires management for fallen limbs, exposed roots, sanitation, flies, rodents, staining, and accumulating fruit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can moldy or fermented mulberries be fed to chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed fruit that is moldy, sour, rotten, leaking, unintentionally fermented, chemically contaminated, or foul smelling. Spoiled fruit should be removed promptly from the chicken area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can moldy mulberry leaves be fed to chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed leaves that are moldy, musty, damp, heated, decomposing, chemically treated, or contaminated by insects or rodents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all mulberry trees produce fruit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Some landscape cultivars are fruitless, and seed-grown trees may have unpredictable sex and fruiting characteristics. Choose a named fruiting cultivar when seasonal berries are an important goal."
       }
     },
     {
@@ -412,7 +217,7 @@ gtag("config", "G-88486JDN1Z");
       "name": "How long does a mulberry tree take to produce fruit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fruiting time varies by species, cultivar, propagation method, climate, and tree age. Grafted or cutting-grown cultivars may fruit earlier than seed-grown trees."
+        "text": "Fruiting time varies by species, cultivar, propagation method, climate, and tree age. Grafted or cutting-grown fruiting cultivars may produce earlier and more predictably than seed-grown trees."
       }
     },
     {
@@ -420,7 +225,15 @@ gtag("config", "G-88486JDN1Z");
       "name": "Are white mulberry trees invasive?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White mulberry is naturalized and considered invasive or ecologically problematic in parts of North America. It can spread by seed and hybridize with native red mulberry, so local guidance should be checked before planting."
+        "text": "White mulberry is invasive or ecologically problematic in parts of North America. It can spread by seed and hybridize with native red mulberry, so check state and local guidance before planting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does fruit color identify the mulberry species?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. White, red, and black mulberry names do not reliably describe ripe fruit color. Depending on the species and cultivar, ripe berries may be white, pink, red, lavender, purple, or nearly black."
       }
     },
     {
@@ -428,7 +241,15 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can mulberry replace chicken feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Mulberry fruit is mostly water and carbohydrate, while leaves contain fiber and variable protein. Neither provides the complete energy, amino acids, calcium, vitamins, and minerals required by chickens."
+        "text": "No. Mulberry fruit is moisture rich and sugary, while the leaves contain fiber and variable protein. Neither provides the complete energy, amino-acid, calcium, vitamin, and mineral balance chickens require."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a mulberry tree lower my chicken-feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but savings depend on cultivar, tree size, age, fruit and leaf yield, wildlife losses, cleanup, harvesting labor, and continued complete-feed requirements. Mulberry often provides its greatest value through shade, enrichment, seasonal forage, and long-term production."
       }
     }
   ]
@@ -2080,18 +1901,6 @@ A healthy tree provides several different forms of value throughout the year—i
 
 </div>
 
-<div class="crop-guide-feature-card">
-
-  <div class="crop-guide-feature-image">
-
-    <img
-      src="assets/images/feed-crops/mulberry/chickens-under-mulberry.webp"
-      alt="Chickens foraging beneath a mature mulberry tree"
-      loading="lazy"
-    >
-
-  </div>
-
 
   <div class="section">
 
@@ -2448,49 +2257,243 @@ This single-tree trial will show whether mulberry fits your property before you 
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat mulberries?</h3>
+<div class="faq-list">
 
-<p>
-Yes. Chickens may eat ripe, sound mulberry fruit as supplemental food.</p>
+<details>
 
-<h3>Can chickens eat mulberry leaves?</h3>
-
-<p>
-Yes. Tender leaves may be offered fresh, wilted, or properly dried in limited amounts.</p>
-
-<h3>Can chickens live beneath a mulberry tree?</h3>
+<summary>
+Can chickens eat mulberries?
+</summary>
 
 <p>
-A mature tree can provide useful shade and seasonal fruit, but the area must be managed for sanitation, roots, fallen limbs, flies, and excess fruit.</p>
+Yes. Chickens can eat ripe, sound mulberries as a supplemental seasonal food. Mulberries provide moisture, natural sugars, and foraging enrichment but should not replace a complete poultry ration.
+</p>
 
-<h3>Are white mulberry trees invasive?</h3>
+</details>
 
-<p>
-White mulberry is invasive or ecologically problematic in parts of North America and can hybridize with native red mulberry. Check local guidance before planting.</p>
+<details>
 
-<h3>Do all mulberry trees produce fruit?</h3>
-
-<p>
-No. Some landscape cultivars are fruitless, and seed-grown trees may have unpredictable sex and fruiting characteristics.</p>
-
-<h3>Can chickens eat unripe mulberries?</h3>
+<summary>
+Can chickens eat fallen mulberries?
+</summary>
 
 <p>
-It is better to offer fully ripe, sound fruit. Chickens usually prefer soft ripe berries.</p>
+Yes, provided the fallen fruit is still fresh, clean, and free from mold, fermentation, insects, chemicals, or other contamination. Remove fruit that accumulates faster than the flock can consume it.
+</p>
 
-<h3>Can mulberry leaves be dried for winter?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat unripe mulberries?
+</summary>
 
 <p>
-Yes, provided they are dried rapidly and thoroughly and stored without moisture, mold, insects, or rodents.</p>
+Fully ripe, sound fruit is the better choice. Ripe mulberries are softer, more palatable, and easier for chickens to consume than firm unripe fruit.
+</p>
 
-<h3>Will mulberry lower my feed bill?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat frozen mulberries?
+</summary>
 
 <p>
-An established tree may provide substantial seasonal fruit and leaves, but savings depend on cultivar, yield, tree age, labor, losses, and continued complete-feed requirements.</p>
+Yes. Plain frozen mulberries may be thawed and offered in moderation. Do not add sugar, syrup, alcohol, sauces, or other ingredients.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat dried mulberries?
+</summary>
+
+<p>
+Plain dried mulberries may be offered occasionally, but they are more concentrated in sugar and energy than fresh fruit. Avoid sweetened, flavored, moldy, or improperly stored dried fruit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat mulberry leaves?
+</summary>
+
+<p>
+Yes. Chickens may eat clean, tender mulberry leaves as supplemental forage. Young leaves are generally easier to consume than older, tougher leaves and woody stems.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat dried mulberry leaves?
+</summary>
+
+<p>
+Yes. Mulberry leaves may be dried rapidly and thoroughly for later use. Store them only after they are fully dry, and discard any material that becomes damp, musty, moldy, insect-infested, or contaminated by rodents.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat mulberry branches or bark?
+</summary>
+
+<p>
+Mulberry branches and bark are not intended as feed. Leafy branches may be placed where chickens can strip the leaves, but remove any branch that creates a sharp, falling, or entanglement hazard.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat mulberries or mulberry leaves?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Small amounts of soft ripe fruit or finely chopped tender leaves are better reserved until chicks are established on starter feed and old enough to consume supplemental foods safely.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat mulberries every day?
+</summary>
+
+<p>
+Small amounts may be available regularly during the fruiting season, but heavy fruit consumption can reduce the flock’s intake of complete feed. Remove excess fallen fruit and make sure balanced poultry feed remains readily available.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens live beneath a mulberry tree?
+</summary>
+
+<p>
+A mature mulberry tree can provide useful shade, seasonal fruit, insects, leaf litter, and natural enrichment. The area still requires management for fallen limbs, exposed roots, sanitation, flies, rodents, staining, and accumulating fruit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can moldy or fermented mulberries be fed to chickens?
+</summary>
+
+<p>
+No. Do not feed fruit that is moldy, sour, rotten, leaking, unintentionally fermented, chemically contaminated, or foul smelling. Spoiled fruit should be removed promptly from the chicken area.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can moldy mulberry leaves be fed to chickens?
+</summary>
+
+<p>
+No. Do not feed leaves that are moldy, musty, damp, heated, decomposing, chemically treated, or contaminated by insects or rodents.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Do all mulberry trees produce fruit?
+</summary>
+
+<p>
+No. Some landscape cultivars are fruitless, and seed-grown trees may have unpredictable sex and fruiting characteristics. Choose a named fruiting cultivar when seasonal berries are an important goal.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+How long does a mulberry tree take to produce fruit?
+</summary>
+
+<p>
+Fruiting time varies by species, cultivar, propagation method, climate, and tree age. Grafted or cutting-grown fruiting cultivars may produce earlier and more predictably than seed-grown trees.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are white mulberry trees invasive?
+</summary>
+
+<p>
+White mulberry is invasive or ecologically problematic in parts of North America. It can spread by seed and hybridize with native red mulberry, so check state and local guidance before planting.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does fruit color identify the mulberry species?
+</summary>
+
+<p>
+No. White, red, and black mulberry names do not reliably describe ripe fruit color. Depending on the species and cultivar, ripe berries may be white, pink, red, lavender, purple, or nearly black.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can mulberry replace chicken feed?
+</summary>
+
+<p>
+No. Mulberry fruit is moisture rich and sugary, while the leaves contain fiber and variable protein. Neither provides the complete energy, amino-acid, calcium, vitamin, and mineral balance chickens require.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will a mulberry tree lower my chicken-feed bill?
+</summary>
+
+<p>
+Possibly, but savings depend on cultivar, tree size, age, fruit and leaf yield, wildlife losses, cleanup, harvesting labor, and continued complete-feed requirements. Mulberry often provides its greatest value through shade, enrichment, seasonal forage, and long-term production.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
