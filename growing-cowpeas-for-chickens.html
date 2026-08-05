@@ -82,7 +82,7 @@
   color: #194f2a;
 }
 
-.cowpea-notice {
+.crop-notice-box {
   padding: 20px;
   color: #5d4217;
   background: #fff8e8;
@@ -91,7 +91,7 @@
   border-radius: 12px;
 }
 
-.cowpea-success-box {
+.crop-success-box {
   padding: 20px;
   background: #f1f8f2;
   border: 1px solid #cae0ce;
@@ -99,7 +99,7 @@
   border-radius: 12px;
 }
 
-.cowpea-warning-box {
+.crop-warning-box {
   padding: 20px;
   color: #613e19;
   background: #fff5e9;
@@ -108,14 +108,14 @@
   border-radius: 12px;
 }
 
-.cowpea-steps {
+.crop-steps {
   counter-reset: cowpea-step;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.cowpea-steps li {
+.crop-steps li {
   position: relative;
   margin-bottom: 15px;
   padding: 18px 18px 18px 62px;
@@ -124,7 +124,7 @@
   border-radius: 12px;
 }
 
-.cowpea-steps li::before {
+.crop-steps li::before {
   counter-increment: cowpea-step;
   content: counter(cowpea-step);
   position: absolute;
@@ -141,7 +141,7 @@
   border-radius: 50%;
 }
 
-.cowpea-steps strong {
+.crop-steps strong {
   display: block;
   margin-bottom: 5px;
   color: #194f2a;
@@ -169,25 +169,25 @@
   margin-bottom: 0;
 }
 
-.cowpea-calendar {
+.crop-calendar {
   width: 100%;
   border-collapse: collapse;
 }
 
-.cowpea-calendar th,
-.cowpea-calendar td {
+.crop-calendar th,
+.crop-calendar td {
   padding: 13px;
   text-align: left;
   vertical-align: top;
   border: 1px solid #d8e2d8;
 }
 
-.cowpea-calendar th {
+.crop-calendar th {
   color: #ffffff;
   background: #356f44;
 }
 
-.cowpea-calendar tr:nth-child(even) td {
+.crop-calendar tr:nth-child(even) td {
   background: #f7faf7;
 }
 
@@ -238,7 +238,7 @@
     padding: 23px;
   }
 
-  .cowpea-calendar {
+  .crop-calendar {
     font-size: 0.92rem;
   }
 
@@ -349,11 +349,11 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+<div class="growing-guide-page cowpea-guide-page">
 
 <div class="content">
 
-<div class="crop-guide-hero">
+<header class="crop-guide-hero">
 
 <div class="crop-guide-hero-grid">
 
@@ -361,9 +361,10 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 <div class="crop-guide-hero-image">
 
 <img
-src="assets/images/feed-crops/cowpeas/cowpea-plant.webp"
-alt="Cowpea plants growing as a chicken feed crop"
-loading="lazy"
+  src="assets/images/feed-crops/cowpeas/cowpea-plant.webp"
+  alt="Cowpea plants growing as a warm-season supplemental crop for backyard chickens"
+  loading="eager"
+  fetchpriority="high"
 >
 
 </div>
@@ -373,7 +374,7 @@ loading="lazy"
 
 
 <h1>
-🫘 Growing Cowpeas for Chickens
+🫘 Can Chickens Eat Cowpeas? Growing Cowpeas for Chickens
 </h1>
 
 
@@ -408,6 +409,71 @@ Nitrogen-Fixing Crop
 
 </div>
 
+
+</header>
+
+<div class="section">
+
+<h2>
+🫘 Can Chickens Eat Cowpeas?
+</h2>
+
+<p>
+<strong>Yes.</strong> Chickens can eat properly prepared cowpeas as a supplemental food. Tender leaves, immature pods, fresh peas, and thoroughly cooked mature beans may all be offered in moderation alongside a complete poultry ration.
+</p>
+
+<p>
+Raw mature cowpea seeds are not the preferred form for meaningful feeding because they contain antinutritional compounds that can reduce protein digestion and nutrient use. For backyard flocks, <strong>plain thoroughly cooked cowpeas</strong> are generally the most practical way to use mature dry beans.
+</p>
+
+<p>
+Serve cooked cowpeas only after they have cooled and <u>without</u> salt, butter, oils, sauces, garlic, onions, seasonings, or other added ingredients.
+</p>
+
+<p>
+Practical feeding forms include:
+</p>
+
+<ul>
+
+<li>
+<strong>Tender leaves:</strong>
+Offer clean young foliage in small amounts as supplemental greens.
+</li>
+
+<li>
+<strong>Immature pods and fresh peas:</strong>
+Plain, clean pods or peas may provide occasional variety and enrichment.
+</li>
+
+<li>
+<strong>Cooked mature beans:</strong>
+Thorough cooking provides more dependable heat treatment than soaking alone.
+</li>
+
+<li>
+<strong>Sprouted cowpeas:</strong>
+Clean, untreated seed may be sprouted under controlled sanitary conditions, although sprouting should not automatically be assumed to remove every antinutritional concern.
+</li>
+
+<li>
+<strong>Processed meal:</strong>
+Heat-treated and ground cowpea may be used as part of a properly formulated ration.
+</li>
+
+</ul>
+
+<div class="crop-warning-box">
+
+<strong>
+Do not rely on raw mature cowpeas or use cowpeas as complete feed.
+</strong>
+
+<p style="margin-bottom:0;">
+Cowpeas contain useful protein and lysine but remain low in sulfur-containing amino acids such as methionine and cysteine. They also do not provide enough calcium, vitamins, minerals, or concentrated energy to replace chick starter, grower feed, layer feed, or another complete poultry ration.
+</p>
+
+</div>
 
 </div>
 
@@ -582,7 +648,7 @@ They may be useful for controlled poultry grazing, cover cropping, and soil impr
 
 </div>
 
-<div class="cowpea-success-box" style="margin-top:20px;">
+<div class="crop-success-box" style="margin-top:20px;">
 
 <strong>Practical beginner choice:</strong>
 
@@ -610,7 +676,7 @@ Cold, wet soil can slow germination and increase the risk of seed decay. Cowpeas
 For chicken keepers, planting date also affects how useful the crop will be. A longer growing season allows more time for leaf forage, fresh pods, and mature seed production, while shorter seasons may require selecting earlier varieties if dry seed harvest is a goal.
 </p>
 
-<table class="cowpea-calendar">
+<table class="crop-calendar">
 
 <tr>
 <th>Region</th>
@@ -755,7 +821,7 @@ Actual harvest value depends heavily on variety, weather, soil fertility, pest p
 
 <h2>🪴 How to Plant Cowpeas</h2>
 
-<ol class="cowpea-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Choose a sunny location.</strong>
@@ -892,18 +958,19 @@ Plain fresh peas or tender pods may be offered in small amounts, but they should
 
 </div>
 
+<div class="section">
+
 <div class="crop-guide-feature-card">
 
 <div class="crop-guide-feature-image">
 
 <img
-src="assets/images/feed-crops/cowpeas/harvest-cowpea.webp"
-alt="Harvested cowpeas ready for drying and storage"
-loading="lazy"
+  src="assets/images/feed-crops/cowpeas/harvest-cowpea.webp"
+  alt="Harvested mature cowpea pods and seeds ready for drying and storage"
+  loading="lazy"
 >
 
 </div>
-
 
 <div class="crop-guide-feature-content">
 
@@ -912,16 +979,12 @@ loading="lazy"
 </h2>
 
 <p>
-Cowpeas are harvested for chicken feed when the pods have matured and dried. Allowing the pods to dry properly helps protect seed quality and improves storage life. Mature seeds can be collected, cleaned, and prepared as a supplemental food source for backyard chickens.
+Cowpeas intended for chicken feed are harvested after the pods and seeds have fully matured. Proper timing, protected drying, shelling, cleaning, and storage help preserve seed quality and reduce losses from mold, insects, and pod shattering.
 </p>
 
 </div>
 
 </div>
-
-<div class="section">
-
-<h2>🫘 Harvesting Mature Dry Cowpeas</h2>
 
 <p>
 For dry seed, leave the pods on the plant until they have matured and become dry or nearly dry.
@@ -932,13 +995,13 @@ Common signs include:
 </p>
 
 <ul>
-<li>The pod changes from green to tan, brown, or another mature color</li>
-<li>The pod walls feel dry and papery</li>
-<li>The seeds feel firm and fully developed</li>
-<li>The pod may begin to rattle when shaken</li>
+<li>The pod changes from green to tan, brown, or another mature color.</li>
+<li>The pod walls feel dry and papery.</li>
+<li>The seeds feel firm and fully developed.</li>
+<li>The pod may begin to rattle when shaken.</li>
 </ul>
 
-<ol class="cowpea-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Harvest on a dry day.</strong>
@@ -1010,7 +1073,7 @@ Discard questionable seed rather than feeding it to the flock.
 
 <h2>⚠️ Why Mature Cowpeas Should Be Processed</h2>
 
-<div class="cowpea-warning-box">
+<div class="crop-warning-box">
 
 <strong>Raw mature cowpea seeds contain antinutritional compounds.</strong>
 
@@ -1047,18 +1110,19 @@ Home processing should not be assumed to make cowpeas suitable as a major replac
 
 </div>
 
+<div class="section">
+
 <div class="crop-guide-feature-card">
 
 <div class="crop-guide-feature-image">
 
 <img
-src="assets/images/feed-crops/cowpeas/chickens-eating-cowpeas.webp"
-alt="Chickens eating cowpeas as a supplemental feed crop"
-loading="lazy"
+  src="assets/images/feed-crops/cowpeas/chickens-eating-cowpeas.webp"
+  alt="Chickens eating properly prepared cowpeas as a supplemental food"
+  loading="lazy"
 >
 
 </div>
-
 
 <div class="crop-guide-feature-content">
 
@@ -1066,15 +1130,18 @@ loading="lazy"
 🐔 How to Feed Cowpeas to Chickens
 </h2>
 
-
 <p>
-Cowpeas can be offered to chickens as a supplemental food after proper preparation. Mature dry seeds should be cooked or heat-treated before feeding, while fresh leaves and pods may provide additional forage and enrichment when harvested from clean, chemical-free plants.
+Cowpeas can provide supplemental protein, fresh forage, and feeding variety when the plant part and preparation method are appropriate. Mature dry beans should be thoroughly cooked or otherwise properly heat-treated before meaningful backyard use.
 </p>
 
-<div class="cowpea-success-box">
+</div>
+
+</div>
+
+<div class="crop-success-box">
 
 <strong>
-Best backyard uses for cowpeas:
+Best Backyard Uses for Cowpeas
 </strong>
 
 <ul>
@@ -1086,70 +1153,54 @@ Offer small amounts as occasional forage or greens.
 
 <li>
 <strong>Fresh pods:</strong>
-Can provide variety and enrichment when harvested cleanly.
+Use clean tender pods for variety and enrichment.
 </li>
 
 <li>
 <strong>Cooked mature beans:</strong>
-The safest practical option for using dry cowpeas as a supplemental protein source.
+A practical backyard option for using dry cowpeas as a supplemental protein source.
 </li>
 
 <li>
 <strong>Processed seed:</strong>
-Ground or heat-treated seed may be used when properly prepared.
+Properly heat-treated and ground seed may be incorporated into a balanced ration.
 </li>
 
 </ul>
 
 </div>
 
+<p>
+Cowpeas may be offered as:
+</p>
 
 <ul>
 
-<li>
-Limited amounts of fresh tender leaves
-</li>
+<li>Limited amounts of fresh tender leaves</li>
 
-<li>
-Controlled access to established forage
-</li>
+<li>Controlled access to established forage</li>
 
-<li>
-Plain immature peas or tender pods
-</li>
+<li>Plain immature peas or tender pods</li>
 
-<li>
-Thoroughly cooked mature beans
-</li>
+<li>Thoroughly cooked mature beans</li>
 
-<li>
-Properly heat-treated and ground seed
-</li>
+<li>Properly heat-treated and ground seed</li>
 
-<li>
-A measured ingredient in a professionally formulated ration
-</li>
+<li>A measured ingredient in a professionally formulated ration</li>
 
 </ul>
 
-
-<div class="cowpea-notice">
+<div class="crop-notice-box">
 
 <strong>
 Keep cowpeas supplemental.
 </strong>
 
-
 <p style="margin-bottom:0;">
-Cowpeas contain useful protein but are low in methionine and cysteine and do not supply enough calcium or complete vitamins and minerals for laying hens. Continue providing an appropriately formulated poultry ration.
+Cowpeas contain useful protein but remain low in methionine and cysteine and do not supply enough calcium, energy, vitamins, or minerals for laying hens. Continue providing an appropriately formulated poultry ration.
 </p>
 
-
 </div>
-
-
-</div>
-
 
 </div>
 
@@ -1381,7 +1432,7 @@ Cowpeas are most likely to be worthwhile when they serve several purposes at onc
 
 <h2>🫘 A Simple Beginner Cowpea Plan</h2>
 
-<div class="cowpea-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 For a first planting, grow one or two short rows of an erect, early-maturing cowpea variety.
