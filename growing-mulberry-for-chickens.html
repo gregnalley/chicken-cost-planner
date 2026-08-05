@@ -82,7 +82,7 @@
   color: #194f2a;
 }
 
-.mulberry-notice {
+.crop-notice-box {
   padding: 20px;
   color: #5d4217;
   background: #fff8e8;
@@ -91,7 +91,7 @@
   border-radius: 12px;
 }
 
-.mulberry-success-box {
+.crop-success-box {
   padding: 20px;
   background: #f1f8f2;
   border: 1px solid #cae0ce;
@@ -99,7 +99,7 @@
   border-radius: 12px;
 }
 
-.mulberry-warning-box {
+.crop-warning-box {
   padding: 20px;
   color: #613e19;
   background: #fff5e9;
@@ -108,7 +108,7 @@
   border-radius: 12px;
 }
 
-.mulberry-invasive-box {
+.crop-danger-box {
   padding: 20px;
   color: #5d2929;
   background: #fff1f1;
@@ -117,14 +117,14 @@
   border-radius: 12px;
 }
 
-.mulberry-steps {
+.crop-steps {
   counter-reset: mulberry-step;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.mulberry-steps li {
+.crop-steps li {
   position: relative;
   margin-bottom: 15px;
   padding: 18px 18px 18px 62px;
@@ -133,7 +133,7 @@
   border-radius: 12px;
 }
 
-.mulberry-steps li::before {
+.crop-steps li::before {
   counter-increment: mulberry-step;
   content: counter(mulberry-step);
   position: absolute;
@@ -150,7 +150,7 @@
   border-radius: 50%;
 }
 
-.mulberry-steps strong {
+.crop-steps strong {
   display: block;
   margin-bottom: 5px;
   color: #194f2a;
@@ -178,25 +178,25 @@
   margin-bottom: 0;
 }
 
-.mulberry-calendar {
+.crop-calendar {
   width: 100%;
   border-collapse: collapse;
 }
 
-.mulberry-calendar th,
-.mulberry-calendar td {
+.crop-calendar th,
+.crop-calendar td {
   padding: 13px;
   text-align: left;
   vertical-align: top;
   border: 1px solid #d8e2d8;
 }
 
-.mulberry-calendar th {
+.crop-calendar th {
   color: #ffffff;
   background: #356f44;
 }
 
-.mulberry-calendar tr:nth-child(even) td {
+.crop-calendar tr:nth-child(even) td {
   background: #f7faf7;
 }
 
@@ -247,7 +247,7 @@
     padding: 23px;
   }
 
-  .mulberry-calendar {
+  .crop-calendar {
     font-size: 0.92rem;
   }
 
@@ -451,21 +451,22 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+<div class="growing-guide-page mulberry-guide-page">
 
 <div class="content">
 
-<div class="crop-guide-hero">
+<header class="crop-guide-hero">
 
 <div class="crop-guide-hero-grid">
 
   <div class="crop-guide-hero-image">
 
-    <img
-      src="assets/images/feed-crops/mulberry/mulberry-tree.webp"
-      alt="Mature mulberry tree growing outdoors for backyard chicken forage"
-      loading="lazy"
-    >
+  <img
+  src="assets/images/feed-crops/mulberry/mulberry-tree.webp"
+  alt="Mature mulberry tree providing fruit, leaves, shade, and enrichment for backyard chickens"
+  loading="eager"
+  fetchpriority="high"
+>
 
   </div>
 
@@ -504,80 +505,72 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 </div>
 
-</div>
+</header>
 
 <div class="section">
 
 <h2>
-✅ Quick Answer
+🌳 Can Chickens Eat Mulberries and Mulberry Leaves?
 </h2>
 
-<div class="mulberry-success-box">
-
-<p style="margin-top:0;">
-
-<strong>Yes.</strong> Chickens can safely eat ripe, sound mulberries and clean mulberry leaves in moderate amounts. Both should supplement—not replace—a nutritionally complete poultry ration.
-
+<p>
+<strong>Yes.</strong> Chickens can eat ripe, sound mulberries and clean mulberry leaves as supplemental foods. Fresh fruit, fallen ripe berries, tender leaves, wilted leaves, and properly dried leaves may all be offered in moderation alongside a complete poultry ration.
 </p>
 
-<table>
+<p>
+Ripe mulberries provide moisture, natural sugars, and seasonal enrichment. Chickens may eat fruit directly from a managed tree or forage beneath it as berries fall, provided spoiled fruit is removed before it molds or ferments.
+</p>
 
-<tr>
-<th>Question</th>
-<th>Answer</th>
-</tr>
+<p>
+Mulberry leaves may also be useful as supplemental forage. Tender young leaves are generally easier for chickens to consume than older, tougher leaves and woody stems.
+</p>
 
-<tr>
-<td>
-<strong>Can chickens eat ripe mulberries?</strong>
-</td>
-<td>
-Yes. Fresh, ripe fruit can be offered as a seasonal treat or eaten as it falls beneath a managed tree.
-</td>
-</tr>
+<p>
+Practical feeding forms include:
+</p>
 
-<tr>
-<td>
-<strong>Can chickens eat mulberry leaves?</strong>
-</td>
-<td>
-Yes. Clean tender leaves may be offered fresh, wilted, properly dried, or crumbled as supplemental forage.
-</td>
-</tr>
+<ul>
 
-<tr>
-<td>
-<strong>Can chickens eat fallen mulberries?</strong>
-</td>
-<td>
-Yes, provided the fruit remains fresh and has not become moldy, rotten, contaminated, or fermented.
-</td>
-</tr>
+<li>
+<strong>Fresh ripe fruit:</strong>
+Offer sound berries as a seasonal treat.
+</li>
 
-<tr>
-<td>
-<strong>Can mulberry replace complete chicken feed?</strong>
-</td>
-<td>
-No. The fruit and leaves do not provide the complete energy, amino acids, calcium, vitamins, and minerals chickens require.
-</td>
-</tr>
+<li>
+<strong>Fresh fallen fruit:</strong>
+Allow natural foraging only while the berries remain clean and unspoiled.
+</li>
 
-<tr>
-<td>
-<strong>Is a mulberry tree worth planting for chickens?</strong>
-</td>
-<td>
-For many properties, yes. A suitable tree can provide seasonal fruit, leafy forage, shade, enrichment, and long-term production from one planting.
-</td>
-</tr>
+<li>
+<strong>Frozen and thawed fruit:</strong>
+Plain frozen mulberries may be thawed and offered without sugar, syrup, or other additions.
+</li>
 
-</table>
+<li>
+<strong>Fresh tender leaves:</strong>
+Offer clean leaves or leafy shoots in modest amounts.
+</li>
+
+<li>
+<strong>Wilted or properly dried leaves:</strong>
+Leaves may be dried rapidly and thoroughly for later use.
+</li>
+
+<li>
+<strong>Crumbled leaf material:</strong>
+Properly dried leaves may be crumbled into small supplemental portions.
+</li>
+
+</ul>
+
+<div class="crop-warning-box">
+
+<strong>
+Keep mulberry fruit and leaves supplemental.
+</strong>
 
 <p style="margin-bottom:0;">
-
-Never offer moldy or fermented fruit, musty dried leaves, chemically treated foliage, or material collected from an unidentified tree.
-
+Mulberry fruit is moisture rich and contains natural sugars, while the leaves provide fiber and variable protein. Neither supplies the complete energy, amino-acid, calcium, vitamin, and mineral balance chickens require. Never feed moldy, sour, fermented, chemically treated, or otherwise contaminated fruit or leaves.
 </p>
 
 </div>
@@ -682,7 +675,7 @@ Unlike annual crops, one planting can continue producing for decades.
 ⭐ Backyard Chicken Planner Recommendation
 </h2>
 
-<div class="mulberry-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 
@@ -846,23 +839,23 @@ One planting may remain productive for decades.
 
 </div>
 
-<div class="mulberry-success-box">
+<div class="section">
+
+<div class="crop-success-box">
 
 <h3 style="margin-top:0;">
 💡 Did You Know?
 </h3>
 
 <p>
-
 Many backyard chicken keepers focus on annual crops such as corn, sunflowers, and pumpkins because they produce quickly. A mulberry tree takes longer to reach its full potential, but once established it may continue producing fruit, leafy forage, shade, and natural enrichment for decades.
-
 </p>
 
 <p style="margin-bottom:0;">
-
-That's why many experienced homesteaders consider mulberry one of the smartest long-term investments in a backyard feed garden.
-
+That is why many experienced homesteaders consider mulberry one of the smartest long-term investments in a backyard feed garden.
 </p>
+
+</div>
 
 </div>
 
@@ -1061,6 +1054,8 @@ Potentially many years
 
 </div>
 
+</div>
+
 <div class="section">
 
 <h2>
@@ -1196,7 +1191,7 @@ Hardiness and nursery identification should be verified before planting.</p>
 
 </div>
 
-<div class="mulberry-invasive-box" style="margin-top:20px;">
+<div class="crop-danger-box" style="margin-top:20px;">
 
 <strong>Check invasive-species guidance before purchasing white mulberry.</strong>
 
@@ -1276,7 +1271,7 @@ Some landscape mulberries are sold as fruitless trees. These may provide leaves 
 
 </table>
 
-<div class="mulberry-success-box">
+<div class="crop-success-box">
 
 <strong>Practical beginner choice:</strong>
 
@@ -1294,7 +1289,7 @@ Choose a named, fruiting cultivar with a mature size, cold tolerance, and growth
 <p>
 Dormant bare-root trees are commonly planted in late winter or early spring, while container-grown plants may be installed during a broader period when the soil is workable and adequate water is available.</p>
 
-<table class="mulberry-calendar">
+<table class="crop-calendar">
 
 <tr>
 <th>Region</th>
@@ -1396,7 +1391,7 @@ Required spacing depends on:</p>
 <li>Access for fruit cleanup and harvesting</li>
 </ul>
 
-<div class="mulberry-notice">
+<div class="crop-notice-box">
 
 <strong>Why the feed-crop database leaves plant density blank:</strong>
 
@@ -1441,7 +1436,7 @@ A location near—but not directly over—the chicken yard may provide shade and
 
 <h2>🪴 How to Plant a Mulberry Tree</h2>
 
-<ol class="mulberry-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Confirm the species and cultivar.</strong>
@@ -1606,7 +1601,7 @@ This system uses more plants but may simplify cut-and-carry harvesting.</p>
 
 </div>
 
-<div class="mulberry-warning-box" style="margin-top:20px;">
+<div class="crop-warning-box" style="margin-top:20px;">
 
 <strong>Do not impose severe repeated pruning without a management plan.</strong>
 
@@ -1664,45 +1659,35 @@ Color alone is not enough because some cultivars remain pale when ripe.</p>
 
 </div>
 
+<div class="section">
+
 <div class="crop-guide-feature-card">
 
-  <div class="crop-guide-feature-image">
+<div class="crop-guide-feature-image">
 
-    <img
-      src="assets/images/feed-crops/mulberry/ripe-mulberries.webp"
-      alt="Ripe mulberries ready for harvesting and feeding chickens"
-      loading="lazy"
-    >
-
-  </div>
-
-
-  <div class="crop-guide-feature-content">
-
-    <h2>
-      🍇 Harvesting Mulberry Fruit
-    </h2>
-
-    <p>
-      Mulberries are harvested when the fruit is fully ripe and naturally soft. 
-      For backyard chicken keepers, the easiest approach is often allowing ripe 
-      fruit to drop naturally where chickens can forage underneath the tree.
-    </p>
-
-    <p>
-      Harvested berries can also be collected and offered fresh as a seasonal 
-      treat.
-    </p>
-
-  </div>
+<img
+  src="assets/images/feed-crops/mulberry/ripe-mulberries.webp"
+  alt="Ripe mulberries ready for harvesting and feeding to backyard chickens"
+  loading="lazy"
+>
 
 </div>
 
-<div class="section">
+<div class="crop-guide-feature-content">
 
-<h2>🍇 Harvesting Mulberry Fruit</h2>
+<h2>
+🍇 Harvesting Mulberry Fruit
+</h2>
 
-<ol class="mulberry-steps">
+<p>
+Mulberries are ready when they are fully colored for the cultivar, naturally soft, and easily detached. Ripe fruit may be hand-picked, collected on a clean sheet, or allowed to fall in a managed chicken-foraging area.
+</p>
+
+</div>
+
+</div>
+
+<ol class="crop-steps">
 
 <li>
 <strong>Inspect the fruit daily.</strong>
@@ -1756,7 +1741,7 @@ This creates a simple feeding system, but the area still requires management.</p
 <li>Limit access if birds are ignoring their balanced ration.</li>
 </ul>
 
-<div class="mulberry-warning-box">
+<div class="crop-warning-box">
 
 <strong>Fruit drop can become a sanitation problem.</strong>
 
@@ -1829,7 +1814,7 @@ Possible approaches include:</p>
 <li>Collecting dropped fruit each morning</li>
 </ul>
 
-<div class="mulberry-warning-box">
+<div class="crop-warning-box">
 
 <strong>Use netting cautiously.</strong>
 
@@ -1847,7 +1832,7 @@ Loose netting may entangle wild birds, chickens, snakes, or other animals. It sh
 <p>
 Tender and mature leaves may be harvested during active growth, depending on how the tree is managed.</p>
 
-<ol class="mulberry-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Harvest from a correctly identified tree.</strong>
@@ -2077,7 +2062,7 @@ Provide habitat and shade but are not intended as food.
 
 </table>
 
-<div class="mulberry-notice">
+<div class="crop-notice-box">
 
 <strong>
 
@@ -2108,32 +2093,37 @@ A healthy tree provides several different forms of value throughout the year—i
   </div>
 
 
-  <div class="crop-guide-feature-content">
+  <div class="section">
 
-    <h2>
-      🐔 How Chickens Use Mulberry
-    </h2>
+<div class="crop-guide-feature-card">
 
-    <p>
-      Mulberry trees provide more than fruit. A mature tree creates shade, 
-      attracts insects, and gives chickens a natural area to explore and forage.
-    </p>
+<div class="crop-guide-feature-image">
 
-    <p>
-      Fallen berries, leaves, and insects beneath the canopy can all contribute 
-      to seasonal enrichment.
-    </p>
-
-  </div>
+<img
+  src="assets/images/feed-crops/mulberry/chickens-under-mulberry.webp"
+  alt="Chickens foraging beneath a mature mulberry tree"
+  loading="lazy"
+>
 
 </div>
 
-<div class="section">
+<div class="crop-guide-feature-content">
 
-<h2>🐔 How to Feed Mulberry to Chickens</h2>
+<h2>
+🐔 How to Feed Mulberry to Chickens
+</h2>
 
 <p>
-Mulberry may be offered in several forms:</p>
+A mature mulberry tree may provide seasonal fruit, tender leaves, shade, insects, leaf litter, and natural foraging opportunities. The fruit and leaves should remain supplemental while complete poultry feed continues to provide the flock’s primary nutrition.
+</p>
+
+</div>
+
+</div>
+
+<p>
+Mulberry may be offered in several forms:
+</p>
 
 <ul>
 <li>Ripe fresh fruit</li>
@@ -2149,7 +2139,7 @@ Mulberry may be offered in several forms:</p>
 <p>
 Whole leafy branches may also be placed where birds can strip leaves, provided the branch does not create a sharp, falling, or entanglement hazard.</p>
 
-<div class="mulberry-notice">
+<div class="crop-notice-box">
 
 <strong>Keep both fruit and leaves supplemental.</strong>
 
@@ -2433,7 +2423,7 @@ Mulberry is best viewed as a multipurpose perennial landscape crop—not as a qu
 
 <h2>🌳 A Simple Beginner Mulberry Plan</h2>
 
-<div class="mulberry-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 For a first planting, choose one named, fruiting cultivar with a documented mature size and regional suitability.</p>
