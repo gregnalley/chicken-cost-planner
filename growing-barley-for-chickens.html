@@ -64,12 +64,12 @@ How to Grow Barley for Chickens: Planting, Harvesting, Storage & Feeding Guide
 
 <meta
   property="og:image"
-  content="images/guides/growing-barley-for-chickens.jpg"
+  content="https://gregnalley.github.io/chicken-cost-planner/assets/images/feed-crops/barley/barley-plant.webp"
 >
 
 <meta
   property="og:image:alt"
-  content="Barley growing in a backyard garden for feeding chickens."
+  content="Barley plants growing as a cool-season grain and supplemental feed crop for backyard chickens"
 >
 
 <meta
@@ -89,7 +89,7 @@ How to Grow Barley for Chickens: Planting, Harvesting, Storage & Feeding Guide
 
 <meta
   name="twitter:image"
-  content="images/guides/growing-barley-for-chickens.jpg"
+  content="https://gregnalley.github.io/chicken-cost-planner/assets/images/feed-crops/barley/barley-plant.webp"
 >
 
 <link
@@ -99,410 +99,194 @@ How to Grow Barley for Chickens: Planting, Harvesting, Storage & Feeding Guide
 
 <style>
 
-.crop-hero {
+/*
+  Barley-specific presentation.
+  Shared growing-guide layout, hero, cards, FAQ,
+  related guides, and responsive behavior are
+  provided by bcp-style.css.
+*/
 
-background:
-linear-gradient(
-rgba(20,36,20,.72),
-rgba(20,36,20,.72)
-),
-url("images/guides/growing-barley-for-chickens.jpg")
-center/cover
-no-repeat;
 
-color:
-#fff;
-
-padding:
-70px 30px;
-
-border-radius:
-18px;
-
-margin-bottom:
-40px;
-
-}
-
-.crop-hero h1 {
-
-font-size:
-2.5rem;
-
-margin-bottom:
-20px;
-
-}
-
-.crop-hero p {
-
-font-size:
-1.15rem;
-
-max-width:
-900px;
-
-line-height:
-1.8;
-
-}
-
-.at-a-glance-grid {
-
-display:
-grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-
-gap:
-20px;
-
-margin:
-35px 0;
-
-}
+/* --------------------------------------------------
+   AT-A-GLANCE CARDS
+   -------------------------------------------------- */
 
 .glance-card {
-
-background:
-#ffffff;
-
-border-radius:
-12px;
-
-padding:
-20px;
-
-box-shadow:
-0 3px 12px
-rgba(0,0,0,.08);
-
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 12px
+    rgba(0, 0, 0, 0.08);
 }
 
 .glance-card h3 {
-
-margin-top:
-0;
-
-color:
-var(--primary-color);
-
+  margin-top: 0;
+  color: var(--primary-color);
 }
+
+
+/* --------------------------------------------------
+   BARLEY TABLES
+   -------------------------------------------------- */
 
 .snapshot-table,
 .feeding-table {
-
-width:
-100%;
-
-border-collapse:
-collapse;
-
-margin:
-25px 0;
-
+  width: 100%;
+  margin: 25px 0;
+  border-collapse: collapse;
 }
 
 .snapshot-table th,
 .snapshot-table td,
 .feeding-table th,
 .feeding-table td {
-
-border:
-1px solid #ddd;
-
-padding:
-12px;
-
-text-align:
-left;
-
-vertical-align:
-top;
-
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #dddddd;
 }
 
 .snapshot-table th,
 .feeding-table th {
-
-background:
-#f3f8f1;
-
+  background: #f3f8f1;
 }
+
+
+/* --------------------------------------------------
+   LEGACY INFORMATION BOXES
+   -------------------------------------------------- */
 
 .recommendation-box,
 .info-box,
 .tip-box,
 .warning-box {
-
-padding:
-22px;
-
-margin:
-30px 0;
-
-border-radius:
-12px;
-
+  margin: 30px 0;
+  padding: 22px;
+  border-radius: 12px;
 }
 
 .recommendation-box {
-
-background:
-#eef8eb;
-
-border-left:
-6px solid #3f8f3f;
-
+  background: #eef8eb;
+  border-left: 6px solid #3f8f3f;
 }
 
 .info-box {
-
-background:
-#eef6fc;
-
-border-left:
-6px solid #4b8dd6;
-
+  background: #eef6fc;
+  border-left: 6px solid #4b8dd6;
 }
 
 .tip-box {
-
-background:
-#fff9e8;
-
-border-left:
-6px solid #d2a500;
-
+  background: #fff9e8;
+  border-left: 6px solid #d2a500;
 }
 
 .warning-box {
-
-background:
-#fdeeee;
-
-border-left:
-6px solid #d9534f;
-
+  background: #fdeeee;
+  border-left: 6px solid #d9534f;
 }
 
+
+/* --------------------------------------------------
+   LEARNING CARDS
+   -------------------------------------------------- */
+
 .learning-grid {
-
-display:
-grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(260px,1fr));
-
-gap:
-24px;
-
-margin:
-35px 0;
-
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(260px, 1fr)
+    );
+  gap: 24px;
+  margin: 35px 0;
 }
 
 .learning-card {
-
-background:
-#fff;
-
-padding:
-22px;
-
-border-radius:
-12px;
-
-box-shadow:
-0 3px 10px
-rgba(0,0,0,.08);
-
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 3px 10px
+    rgba(0, 0, 0, 0.08);
 }
 
-.section-card {
-
-background:
-#fff;
-
-padding:
-30px;
-
-border-radius:
-14px;
-
-box-shadow:
-0 4px 15px
-rgba(0,0,0,.08);
-
-margin:
-40px 0;
-
+.learning-card h3 {
+  margin-top: 0;
 }
+
+
+/* --------------------------------------------------
+   BARLEY TIMELINE
+   -------------------------------------------------- */
 
 .timeline {
-
-display:
-grid;
-
-gap:
-18px;
-
-margin:
-35px 0;
-
+  display: grid;
+  gap: 18px;
+  margin: 35px 0;
 }
 
 .timeline-item {
-
-background:
-#fafafa;
-
-padding:
-20px;
-
-border-left:
-5px solid
-var(--primary-color);
-
-border-radius:
-8px;
-
+  padding: 20px;
+  background: #fafafa;
+  border-left:
+    5px solid
+    var(--primary-color);
+  border-radius: 8px;
 }
+
+
+/* --------------------------------------------------
+   STANDARD CHECKLISTS
+   -------------------------------------------------- */
 
 .checklist {
-
-padding-left:
-24px;
-
-line-height:
-1.9;
-
+  padding-left: 24px;
+  line-height: 1.9;
 }
 
-.faq-list {
 
-display:
-grid;
-
-gap:
-22px;
-
-margin:
-35px 0;
-
-}
-
-.faq-item {
-
-background:
-#fafafa;
-
-padding:
-22px;
-
-border-radius:
-12px;
-
-box-shadow:
-0 2px 8px
-rgba(0,0,0,.06);
-
-}
+/* --------------------------------------------------
+   SOURCE LIST
+   -------------------------------------------------- */
 
 .source-list {
-
-line-height:
-2;
-
+  line-height: 2;
 }
 
+
+/* --------------------------------------------------
+   BARLEY-SPECIFIC FLEXIBLE GRIDS
+   -------------------------------------------------- */
+
+.barley-guide-page
 .next-guide-grid {
-
-display:
-grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(260px,1fr));
-
-gap:
-25px;
-
-margin-top:
-35px;
-
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(260px, 1fr)
+    );
+  gap: 25px;
+  margin-top: 35px;
 }
 
-.next-guide-card {
 
-background:
-#fff;
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
 
-padding:
-24px;
+@media (max-width: 760px) {
 
-border-radius:
-14px;
+  .learning-grid,
+  .barley-guide-page
+  .next-guide-grid {
+    grid-template-columns: 1fr;
+  }
 
-box-shadow:
-0 4px 12px
-rgba(0,0,0,.08);
-
-}
-
-.crop-planner-button {
-
-display:
-inline-block;
-
-margin-top:
-16px;
-
-padding:
-12px 22px;
-
-background:
-var(--primary-color);
-
-color:
-#fff;
-
-text-decoration:
-none;
-
-border-radius:
-8px;
-
-font-weight:
-600;
-
-transition:
-.2s;
-
-}
-
-.crop-planner-button:hover {
-
-opacity:
-.92;
-
-}
-
-@media (max-width:768px){
-
-.crop-hero{
-
-padding:
-50px 20px;
-
-}
-
-.crop-hero h1{
-
-font-size:
-2rem;
-
-}
+  .snapshot-table,
+  .feeding-table {
+    font-size: 0.92rem;
+  }
 
 }
 
@@ -608,222 +392,132 @@ gtag(
 </script>
 
 <script type="application/ld+json">
-
 {
-  "@context":
-    "https://schema.org",
-
-  "@type":
-    "FAQPage",
-
-  "mainEntity":
-    [
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can chickens eat barley?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Yes. Chickens can eat clean, properly harvested barley as part of a balanced feeding program. Barley may be offered whole, cracked, ground, cooked, soaked, or sprouted depending on the age of the birds and how it is used in the overall ration."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can barley replace commercial chicken feed?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "No. Barley does not provide every nutrient chickens require in the correct proportions. It should be used as a supplemental ingredient or as part of a properly formulated ration rather than as the flock's only feed."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can chickens eat whole barley?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Many adult chickens can consume whole barley when it is introduced gradually and appropriate grit is available. Cracked or coarsely ground barley may be easier for chicks and smaller birds to consume."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Is hulled barley better than hulless barley for chickens?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Hulless barley generally contains less fibrous hull material than conventional covered barley, which can make it easier to use in poultry diets. The best choice depends on availability, yield, intended use, and how the remainder of the ration is formulated."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can barley be sprouted for chickens?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Yes. Clean, untreated barley may be sprouted for chickens when careful sanitation, rinsing, drainage, and mold prevention are maintained. Sprouted barley remains a supplemental feed rather than a complete ration."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Does barley need to be cooked before feeding it to chickens?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Barley does not normally require household-style cooking before being used as a poultry-feed ingredient. It may be fed whole, cracked, ground, soaked, or sprouted depending on bird age and ration design."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "When should barley be planted?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Spring barley is planted early enough to develop during cool weather, while winter barley is planted in fall where local winter conditions permit survival. Exact planting dates depend on climate, variety, soil conditions, and local extension guidance."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can barley tolerate frost?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Established barley tolerates cool weather, and winter varieties may survive substantial cold when properly established. Severe freezes can still injure seedlings, reproductive growth, and developing grain."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "How do I know when barley is ready to harvest?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Barley grown for dry grain is nearing harvest when the plants and heads have turned golden or straw-colored, kernels are firm, and grain moisture has declined sufficiently for harvesting and continued drying."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can chickens eat barley grass?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Chickens may graze tender young barley leaves or consume freshly cut barley forage in moderation. Mature stems become fibrous, and allowing birds into the crop too early can prevent grain production."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Can I grow barley in a backyard garden?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "Yes. Barley can be grown in garden beds or small plots when it receives adequate sunlight, drainage, fertility, and protection from poultry and wildlife. Harvesting, threshing, cleaning, and storing the grain require additional labor after the crop matures."
-          }
-      },
-
-      {
-        "@type":
-          "Question",
-
-        "name":
-          "Is moldy barley safe for chickens?",
-
-        "acceptedAnswer":
-          {
-            "@type":
-              "Answer",
-
-            "text":
-              "No. Barley that is moldy, musty, heated, fermented unintentionally, or contaminated by rodents should not be fed to chickens. Damaged grain should be separated from sound grain rather than mixed into the flock's feed."
-          }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can chickens eat barley?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean, properly stored barley can be fed to chickens as part of a balanced feeding program. It may be offered whole, cracked, ground, soaked, or sprouted depending on the age of the birds and how it fits into the overall diet."
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "Can barley replace commercial chicken feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. While barley supplies useful energy and moderate protein, it does not provide every nutrient chickens require. It should supplement—not replace—a nutritionally complete poultry ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat whole barley?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Healthy adult chickens can usually consume whole barley when appropriate insoluble grit is available. Young chicks and smaller birds often benefit from cracked or coarsely ground grain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is hulless barley better for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hulless barley contains less fibrous hull material than traditional covered barley, making it somewhat easier to incorporate into poultry diets. Both types can be useful depending on local availability, yield, growing conditions, and the overall ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can barley be sprouted for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean, untreated barley sprouts readily and can provide fresh green forage and enrichment when pasture is unavailable. Good sanitation, rinsing, drainage, airflow, and mold prevention are essential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat barley grass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tender young barley forage may be grazed or cut and offered as supplemental green feed. Mature stems become increasingly fibrous, and early unrestricted grazing may prevent the crop from producing grain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does barley tolerate frost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Established barley tolerates cool temperatures well, and adapted winter barley varieties may survive significant cold. Severe freezes can still damage poorly established plants, flowering heads, and developing grain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should barley be soaked before feeding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Soaking is optional. Some backyard keepers soak barley to soften the kernels or reduce dust, but it must be handled hygienically. Discard uneaten soaked grain before it ferments, molds, develops an unusual odor, or otherwise begins to spoil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does barley take to mature?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maturity varies according to variety, planting season, weather, and local growing conditions. Spring barley reaches harvest during the same growing season, while winter barley is planted in fall, overwinters, and matures the following year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can barley be grown in raised beds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Raised beds can provide excellent drainage and work well for small backyard barley plots when they receive full sun, adequate soil depth, and dependable moisture. The total grain harvest will still be limited by the available growing area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes barley to fall over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is called lodging. It may result from excessive nitrogen, heavy grain heads, storms, overly dense stands, weak straw, or unsuitable varieties. Balanced fertility and locally adapted lodging-resistant varieties help reduce the risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save barley seed for next year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Healthy, mature, disease-free barley can be saved for future planting. Store planting seed separately from feed grain, label it with the variety and harvest year, and perform a germination test before planting older seed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can moldy barley be fed to chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Barley that is moldy, musty, heated, unintentionally fermented, insect-damaged, or contaminated by rodents should not be fed to poultry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can barley be grown with other crops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Barley is commonly rotated with legumes and vegetables and may also be included in forage or cover-crop mixtures. Companion crops should be chosen according to whether the goal is grain, forage, soil improvement, or seasonal ground cover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is barley worth growing for backyard flocks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For many chicken keepers, yes. Barley is relatively easy to grow, stores well, sprouts readily, and can provide grain, tender forage, straw, bedding material, and crop diversity. Its value depends on available space, harvesting labor, storage capacity, and the intended role within the flock’s overall feeding program."
+      }
+    }
+  ]
 }
-
 </script>
 
 </head>
@@ -931,7 +625,7 @@ Yes. Chickens can eat clean, properly prepared barley as a supplemental feed sou
 
 <div class="crop-info-grid">
 
-<div class="crop-info-card">
+<div class="glance-card">
 
 <h3>
 
@@ -5913,255 +5607,193 @@ Discard grain that develops mold, strong musty odors, excessive heating, insect 
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
 <h2>
-
 ❓ Frequently Asked Questions
-
 </h2>
 
 <div class="faq-list">
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can chickens eat barley?
-
-</h3>
+</summary>
 
 <p>
-
 Yes. Clean, properly stored barley can be fed to chickens as part of a balanced feeding program. It may be offered whole, cracked, ground, soaked, or sprouted depending on the age of the birds and how it fits into the overall diet.
-
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can barley replace commercial chicken feed?
-
-</h3>
+</summary>
 
 <p>
-
 No. While barley supplies useful energy and moderate protein, it does not provide every nutrient chickens require. It should supplement—not replace—a nutritionally complete poultry ration.
-
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can chickens eat whole barley?
-
-</h3>
+</summary>
 
 <p>
-
-Healthy adult chickens can usually consume whole barley when grit is available. Young chicks and smaller birds often benefit from cracked or coarsely ground grain.
-
+Healthy adult chickens can usually consume whole barley when appropriate insoluble grit is available. Young chicks and smaller birds often benefit from cracked or coarsely ground grain.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Is hulless barley better for chickens?
-
-</h3>
+</summary>
 
 <p>
-
-Hulless barley contains less fibrous hull material than traditional covered barley, making it somewhat easier to incorporate into poultry diets. Both types can be useful depending on local availability and growing conditions.
-
+Hulless barley contains less fibrous hull material than traditional covered barley, making it somewhat easier to incorporate into poultry diets. Both types can be useful depending on local availability, yield, growing conditions, and the overall ration.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can barley be sprouted for chickens?
-
-</h3>
+</summary>
 
 <p>
-
-Yes. Clean, untreated barley sprouts readily and provides fresh green forage during periods when pasture is unavailable. Good sanitation and drainage are essential to prevent mold.
-
+Yes. Clean, untreated barley sprouts readily and can provide fresh green forage and enrichment when pasture is unavailable. Good sanitation, rinsing, drainage, airflow, and mold prevention are essential.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can chickens eat barley grass?
-
-</h3>
+</summary>
 
 <p>
-
-Yes. Tender young barley forage can be grazed or cut and offered as supplemental green feed before the crop begins producing mature grain.
-
+Yes. Tender young barley forage may be grazed or cut and offered as supplemental green feed. Mature stems become increasingly fibrous, and early unrestricted grazing may prevent the crop from producing grain.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Does barley tolerate frost?
-
-</h3>
+</summary>
 
 <p>
-
-Established barley tolerates cool temperatures well, and winter barley survives significant cold in suitable climates. Severe freezes may still damage flowering plants and developing grain.
-
+Established barley tolerates cool temperatures well, and adapted winter barley varieties may survive significant cold. Severe freezes can still damage poorly established plants, flowering heads, and developing grain.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Should barley be soaked before feeding?
-
-</h3>
+</summary>
 
 <p>
-
-Some backyard keepers soak barley to soften the kernels or reduce dust. While soaking may improve palatability for some flocks, it should be done hygienically and uneaten feed should be discarded before spoilage develops.
-
+Soaking is optional. Some backyard keepers soak barley to soften the kernels or reduce dust, but it must be handled hygienically. Discard uneaten soaked grain before it ferments, molds, develops an unusual odor, or otherwise begins to spoil.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 How long does barley take to mature?
-
-</h3>
+</summary>
 
 <p>
-
-Maturity varies according to variety, planting season, weather, and local growing conditions. Spring barley generally reaches harvest during the same growing season, while winter barley overwinters before maturing the following year.
-
+Maturity varies according to variety, planting season, weather, and local growing conditions. Spring barley reaches harvest during the same growing season, while winter barley is planted in fall, overwinters, and matures the following year.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can barley be grown in raised beds?
-
-</h3>
+</summary>
 
 <p>
-
-Yes. Raised beds provide excellent drainage and are well suited to small backyard grain plots when they receive full sun and adequate moisture.
-
+Yes. Raised beds can provide excellent drainage and work well for small backyard barley plots when they receive full sun, adequate soil depth, and dependable moisture. The total grain harvest will still be limited by the available growing area.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 What causes barley to fall over?
-
-</h3>
+</summary>
 
 <p>
-
-Lodging may result from excessive nitrogen, heavy grain heads, storms, overly dense stands, or weak straw. Selecting adapted varieties and avoiding excessive fertilization help reduce lodging.
-
+This is called lodging. It may result from excessive nitrogen, heavy grain heads, storms, overly dense stands, weak straw, or unsuitable varieties. Balanced fertility and locally adapted lodging-resistant varieties help reduce the risk.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can I save barley seed for next year?
-
-</h3>
+</summary>
 
 <p>
-
-Yes. Healthy, disease-free barley can be saved for future planting. Store seed separately from feed grain and test germination if the seed has been stored for an extended period.
-
+Yes. Healthy, mature, disease-free barley can be saved for future planting. Store planting seed separately from feed grain, label it with the variety and harvest year, and perform a germination test before planting older seed.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can moldy barley be fed to chickens?
-
-</h3>
+</summary>
 
 <p>
-
-No. Moldy, musty, heated, insect-infested, or rodent-contaminated grain should never be fed to poultry.
-
+No. Barley that is moldy, musty, heated, unintentionally fermented, insect-damaged, or contaminated by rodents should not be fed to poultry.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Can barley be grown with other crops?
-
-</h3>
+</summary>
 
 <p>
-
-Yes. Barley is commonly rotated with legumes and vegetables and may also be grown in certain forage mixtures depending on your production goals.
-
+Yes. Barley is commonly rotated with legumes and vegetables and may also be included in forage or cover-crop mixtures. Companion crops should be chosen according to whether the goal is grain, forage, soil improvement, or seasonal ground cover.
 </p>
 
-</div>
+</details>
 
-<div class="faq-item">
+<details>
 
-<h3>
-
+<summary>
 Is barley worth growing for backyard flocks?
-
-</h3>
+</summary>
 
 <p>
-
-For many chicken keepers, yes. Barley is relatively easy to grow, stores well, sprouts readily, and provides grain, forage, straw, and valuable diversity within a homegrown feed system.
-
+For many chicken keepers, yes. Barley is relatively easy to grow, stores well, sprouts readily, and can provide grain, tender forage, straw, bedding material, and crop diversity. Its value depends on available space, harvesting labor, storage capacity, and the intended role within the flock’s overall feeding program.
 </p>
 
-</div>
+</details>
 
 </div>
 
