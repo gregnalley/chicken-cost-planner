@@ -23,225 +23,36 @@
 
 <style>
 
+/*
+  Cowpea-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   COWPEA HERO THEME
+   -------------------------------------------------- */
+
+.cowpea-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(68, 92, 42, 0.97),
       rgba(120, 89, 46, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(52, 77, 34, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(52, 77, 34, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.cowpea-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #29411f;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f5dfad;
-  border-radius: 999px;
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: cowpea-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: cowpea-step;
-  content: counter(cowpea-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(41, 65, 31, 0.16);
 }
 
 </style>
@@ -294,7 +105,7 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat cowpeas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens can eat properly prepared cowpeas as a supplemental food. Mature dry seeds are best cooked or otherwise heat-treated because raw cowpeas contain antinutritional compounds that can reduce protein digestion and nutrient use."
+        "text": "Yes. Chickens can eat properly prepared cowpeas as a supplemental food. Tender leaves, immature pods, fresh peas, and thoroughly cooked mature beans may all be offered in moderation alongside complete poultry feed."
       }
     },
     {
@@ -302,7 +113,31 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat raw cowpeas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Raw mature cowpea seeds are not the preferred form for meaningful poultry supplementation. Cooking, roasting, dehulling, grinding, or another validated processing method can improve nutrient use and reduce antinutritional factors."
+        "text": "Raw mature cowpea seeds are not the preferred form for meaningful poultry supplementation because they contain antinutritional compounds that can reduce protein digestion and nutrient use. Thorough cooking or another validated heat-treatment method is safer and more practical."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat cooked cowpeas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain, thoroughly cooked cowpeas may be offered after they have cooled completely. Serve them without salt, butter, oils, sauces, garlic, onions, seasonings, or other added ingredients."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat black-eyed peas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Black-eyed peas are a type of cowpea. Plain cooked black-eyed peas may be offered in limited amounts after they have cooled completely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat canned black-eyed peas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canned black-eyed peas are often high in sodium and may contain seasonings or preservatives. Plain low-sodium peas that have been thoroughly rinsed may be offered occasionally, but home-cooked plain cowpeas are generally a better choice."
       }
     },
     {
@@ -310,23 +145,103 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat cowpea leaves?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may consume limited amounts of fresh tender cowpea leaves and forage. Plants should be free from unsafe pesticide residues, mold, and contamination."
+        "text": "Yes. Chickens may eat limited amounts of clean, tender cowpea leaves as supplemental forage. Heavy grazing or repeated leaf removal can reduce plant growth, pod formation, and mature seed production."
       }
     },
     {
       "@type": "Question",
-      "name": "Are cowpeas a complete protein source for chickens?",
+      "name": "Can chickens eat black-eyed pea plants?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Cowpeas contain useful protein and lysine but are low in sulfur-containing amino acids such as methionine and cysteine. They cannot replace a nutritionally complete poultry ration by themselves."
+        "text": "Yes, in moderation. Black-eyed peas are cowpeas, and chickens may consume clean, untreated leaves, tender stems, flowers, and immature pods. Mature fibrous plant material has less feed value, and chemically treated or contaminated plants should not be offered."
       }
     },
     {
       "@type": "Question",
-      "name": "Are cowpeas easy to grow?",
+      "name": "Can chickens eat cowpea pods?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cowpeas are generally well suited to warm climates and are comparatively tolerant of heat and drought after establishment. They require warm soil and are very sensitive to frost."
+        "text": "Yes. Clean immature pods and fresh peas may be offered in small amounts. Mature dry pods are fibrous and are usually better shelled so the seeds can be properly dried, processed, and inspected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do cowpeas need to be soaked before feeding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Soaking may be part of food preparation, but soaking alone should not be treated as adequate processing for mature dry cowpeas. Thorough cooking provides more dependable heat treatment and should follow soaking when dried beans are prepared."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sprouted cowpeas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean, untreated cowpeas may be sprouted under carefully controlled sanitary conditions. Sprouting may change digestibility, but it should not automatically be assumed to eliminate every antinutritional concern. Discard sprouts that develop mold, slime, discoloration, fermentation, or foul odors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat cowpeas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental cowpeas are better reserved for older birds unless they are properly processed and included in a professionally formulated starter ration. Chicks receiving supplemental foods also need appropriately sized grit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are cowpeas high in protein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mature dry cowpea seeds commonly contain approximately 25% crude protein on a dry-matter basis. However, they are low in sulfur-containing amino acids such as methionine and cysteine and cannot provide a complete poultry diet by themselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are cowpeas better than soybeans for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither is universally better. Properly processed soybeans generally provide more concentrated protein and oil and have a stronger role in commercial poultry feeds. Cowpeas may be easier to grow in hot climates and can provide useful protein, forage, household food, and soil-building benefits, but they are best treated as a supplemental crop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can cowpeas replace soybean meal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not directly in an informal backyard diet. Cowpeas have a different nutrient profile, lower concentrations of some essential amino acids, and their own processing requirements. Replacing soybean meal requires complete ration formulation rather than a simple one-for-one substitution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can cowpeas replace layer feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Cowpeas do not provide enough calcium, balanced amino acids, energy, vitamins, or minerals to replace a complete layer ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat cowpeas every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Properly prepared cowpeas may be offered regularly in small amounts, but they should remain supplemental. Feeding too much may reduce the flock’s intake of complete feed and create nutritional imbalances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat moldy or spoiled cowpeas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed cowpeas that are moldy, musty, heated, unintentionally fermented, insect-infested, chemically treated, or contaminated by rodents. Questionable beans should be discarded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing cowpeas lower my chicken-feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but savings depend on usable seed yield, growing costs, processing labor, storage losses, and local feed prices. Cowpeas may provide greater overall value as a multipurpose food, forage, cover crop, nitrogen-fixing legume, and soil-building crop."
       }
     }
   ]
@@ -1457,75 +1372,231 @@ This small trial will show how well cowpeas mature in your climate and how much 
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat cowpeas?</h3>
+<div class="faq-list">
+
+<details>
+
+<summary>
+Can chickens eat cowpeas?
+</summary>
 
 <p>
-Yes. Properly prepared cowpeas can be offered as a supplemental food. Mature dry beans should preferably be cooked or otherwise heat-treated.
+Yes. Chickens can eat properly prepared cowpeas as a supplemental food. Tender leaves, immature pods, fresh peas, and thoroughly cooked mature beans may all be offered in moderation alongside complete poultry feed.
 </p>
 
-<h3>Can chickens eat raw cowpeas?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat raw cowpeas?
+</summary>
 
 <p>
-Raw mature cowpea seeds contain antinutritional compounds and are not the preferred form for meaningful supplementation.
+Raw mature cowpea seeds are not the preferred form for meaningful poultry supplementation because they contain antinutritional compounds that can reduce protein digestion and nutrient use. Thorough cooking or another validated heat-treatment method is safer and more practical.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
 Can chickens eat cooked cowpeas?
-</h3>
+</summary>
 
 <p>
-Yes. Plain cooked cowpeas that have been cooled completely can be offered to chickens as a supplemental food. Avoid adding salt, oils, seasonings, onions, sauces, or other ingredients that are not appropriate for poultry.
+Yes. Plain, thoroughly cooked cowpeas may be offered after they have cooled completely. Serve them <u>without</u> salt, butter, oils, sauces, garlic, onions, seasonings, or other added ingredients.
 </p>
 
-<h3>Can chickens eat black-eyed peas?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat black-eyed peas?
+</summary>
 
 <p>
-Black-eyed peas are a type of cowpea. Plain cooked black-eyed peas may be offered in limited amounts after cooling completely.
+Yes. Black-eyed peas are a type of cowpea. Plain cooked black-eyed peas may be offered in limited amounts after they have cooled completely.
 </p>
 
-<h3>Can chickens eat cowpea leaves?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat canned black-eyed peas?
+</summary>
 
 <p>
-Chickens may eat limited amounts of clean, tender cowpea leaves. Heavy grazing can reduce pod and seed production.
+Canned black-eyed peas are often high in sodium and may contain seasonings or preservatives. Plain low-sodium peas that have been thoroughly rinsed may be offered occasionally, but home-cooked plain cowpeas are generally a better choice.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat cowpea leaves?
+</summary>
+
+<p>
+Yes. Chickens may eat limited amounts of clean, tender cowpea leaves as supplemental forage. Heavy grazing or repeated leaf removal can reduce plant growth, pod formation, and mature seed production.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Can chickens eat black-eyed pea plants?
-</h3>
+</summary>
 
 <p>
-Black-eyed peas are a type of cowpea. Chickens may consume limited amounts of clean, untreated leaves and plant material, but the greatest nutritional value of the crop comes from properly prepared mature seeds.
+Yes, in moderation. Black-eyed peas are cowpeas, and chickens may consume clean, untreated leaves, tender stems, flowers, and immature pods. Mature fibrous plant material has less feed value, and chemically treated or contaminated plants should not be offered.
 </p>
 
-<h3>Do cowpeas need to be soaked?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat cowpea pods?
+</summary>
 
 <p>
-Soaking may be part of food preparation, but soaking alone should not automatically be treated as adequate processing for mature beans. Thorough cooking provides more dependable heat treatment.
+Yes. Clean immature pods and fresh peas may be offered in small amounts. Mature dry pods are fibrous and are usually better shelled so the seeds can be properly dried, processed, and inspected.
 </p>
 
-<h3>Are cowpeas high in protein?</h3>
+</details>
+
+<details>
+
+<summary>
+Do cowpeas need to be soaked before feeding?
+</summary>
 
 <p>
-Mature dry seeds commonly contain approximately 25% crude protein on a dry-matter basis, but they remain low in methionine and cysteine and cannot provide a complete poultry diet alone.
+Soaking may be part of food preparation, but soaking alone should not be treated as adequate processing for mature dry cowpeas. Thorough cooking provides more dependable heat treatment and should follow soaking when dried beans are prepared.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat sprouted cowpeas?
+</summary>
+
+<p>
+Clean, untreated cowpeas may be sprouted under carefully controlled sanitary conditions. Sprouting may change digestibility, but it should not automatically be assumed to eliminate every antinutritional concern. Discard sprouts that develop mold, slime, discoloration, fermentation, or foul odors.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat cowpeas?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental cowpeas are better reserved for older birds unless they are properly processed and included in a professionally formulated starter ration. Chicks receiving supplemental foods also need appropriately sized grit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Are cowpeas high in protein?
+</summary>
+
+<p>
+Mature dry cowpea seeds commonly contain approximately 25% crude protein on a dry-matter basis. However, they are low in sulfur-containing amino acids such as methionine and cysteine and cannot provide a complete poultry diet by themselves.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Are cowpeas better than soybeans for chickens?
-</h3>
+</summary>
 
 <p>
-Cowpeas and soybeans serve different purposes in poultry nutrition. Cowpeas can provide useful protein and are easier for many backyard gardeners to grow in warm climates, but soybeans generally have a stronger role in formulated poultry feeds because they provide a more concentrated and consistent protein source after proper processing. Cowpeas are best viewed as a supplemental crop rather than a direct replacement for soybean meal.
+Neither is universally better. Properly processed soybeans generally provide more concentrated protein and oil and have a stronger role in commercial poultry feeds. Cowpeas may be easier to grow in hot climates and can provide useful protein, forage, household food, and soil-building benefits, but they are best treated as a supplemental crop.
 </p>
 
-<h3>Will cowpeas lower my chicken-feed bill?</h3>
+</details>
+
+<details>
+
+<summary>
+Can cowpeas replace soybean meal?
+</summary>
 
 <p>
-That depends on usable seed yield, processing labor, growing costs, storage losses, and local feed prices. Cowpeas may provide greater value as a multipurpose food, forage, cover, and soil-building crop.
+Not directly in an informal backyard diet. Cowpeas have a different nutrient profile, lower concentrations of some essential amino acids, and their own processing requirements. Replacing soybean meal requires complete ration formulation rather than a simple one-for-one substitution.
 </p>
+
+</details>
+
+<details>
+
+<summary>
+Can cowpeas replace layer feed?
+</summary>
+
+<p>
+No. Cowpeas do not provide enough calcium, balanced amino acids, energy, vitamins, or minerals to replace a complete layer ration.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat cowpeas every day?
+</summary>
+
+<p>
+Properly prepared cowpeas may be offered regularly in small amounts, but they should remain supplemental. Feeding too much may reduce the flock’s intake of complete feed and create nutritional imbalances.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat moldy or spoiled cowpeas?
+</summary>
+
+<p>
+No. Do not feed cowpeas that are moldy, musty, heated, unintentionally fermented, insect-infested, chemically treated, or contaminated by rodents. Questionable beans should be discarded.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will growing cowpeas lower my chicken-feed bill?
+</summary>
+
+<p>
+Possibly, but savings depend on usable seed yield, growing costs, processing labor, storage losses, and local feed prices. Cowpeas may provide greater overall value as a multipurpose food, forage, cover crop, nitrogen-fixing legume, and soil-building crop.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
