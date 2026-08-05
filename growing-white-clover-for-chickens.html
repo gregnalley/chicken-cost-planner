@@ -23,225 +23,36 @@
 
 <style>
 
+/*
+  White Clover-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   WHITE CLOVER HERO THEME
+   -------------------------------------------------- */
+
+.white-clover-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(35, 95, 52, 0.97),
       rgba(85, 143, 71, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(37, 82, 44, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(37, 82, 44, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.white-clover-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #21442a;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #dcefcf;
-  border-radius: 999px;
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.clover-steps {
-  counter-reset: clover-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.clover-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.clover-steps li::before {
-  counter-increment: clover-step;
-  content: counter(clover-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.clover-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(33, 68, 42, 0.16);
 }
 
 </style>
@@ -282,7 +93,6 @@ gtag("config", "G-88486JDN1Z");
     "@id": "https://gregnalley.github.io/chicken-cost-planner/growing-white-clover-for-chickens.html"
   }
 }
-</script>
 
 <script type="application/ld+json">
 {
@@ -294,23 +104,79 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat white clover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may eat clean white clover leaves and tender growth as supplemental forage. Clover should not replace a balanced poultry ration."
+        "text": "Yes. Chickens can eat clean white clover leaves, tender stems, and flowers as supplemental forage. White clover should complement a complete poultry ration rather than replace it."
       }
     },
     {
       "@type": "Question",
-      "name": "Will white clover grow back after chickens graze it?",
+      "name": "Can chickens eat clover flowers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Established white clover can regrow from creeping stolons and rooted nodes when grazing is controlled. Continuous heavy scratching and close grazing may destroy the stand."
+        "text": "Yes. Chickens may peck white clover flowers along with the leaves and tender stems. Offer only clean, untreated plants that are free from mold, manure buildup, roadside contamination, and unidentified weeds."
       }
     },
     {
       "@type": "Question",
-      "name": "Can white clover grow inside a chicken run?",
+      "name": "Can chickens eat dried white clover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White clover may survive light or rotational access, but chickens often scratch out roots and remove leaves faster than the plants can recover. Protected forage beds are usually more dependable."
+        "text": "Yes, in small amounts. White clover may be dried for later use, but it must be dried rapidly and thoroughly to prevent heating and mold. Dried forage is more concentrated than fresh clover and should be offered sparingly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat white clover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Small amounts of finely chopped, clean clover may be introduced only after chicks are established on starter feed and are old enough to safely consume supplemental forage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat white clover every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chickens may graze or receive small amounts of white clover regularly, but it should remain supplemental. Continuous access can also damage the plants through close grazing, scratching, trampling, and soil disturbance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will white clover survive in a chicken run?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It may survive light or rotational access, but continuous scratching and grazing commonly destroy an unprotected stand. Protected forage frames, rotational paddocks, or cut-and-carry harvesting are generally more dependable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does white clover grow back after chickens graze it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Established white clover can regrow from creeping stolons and rooted nodes when enough leaf area remains and the patch receives adequate moisture and rest. Repeated grazing down to bare soil may prevent recovery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should white clover rest after grazing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single fixed rest period. Recovery depends on temperature, moisture, season, variety, soil fertility, and how heavily the patch was grazed. Allow new leaves to develop before returning chickens to the area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should white clover be planted by spacing individual plants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. White clover is normally broadcast or shallow-seeded according to a recommended seeding rate. Mature plant density is difficult to measure because stolons spread and root at multiple nodes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can white clover be planted with grass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. White clover is commonly grown with pasture grasses. A mixed stand can provide more durable ground cover and seasonal forage, but the grass must be managed so it does not become tall and dense enough to shade the clover."
       }
     },
     {
@@ -318,15 +184,47 @@ gtag("config", "G-88486JDN1Z");
       "name": "Does white clover fix nitrogen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White clover is a legume that can form nitrogen-fixing root nodules when compatible Rhizobium bacteria are present."
+        "text": "Yes. White clover can form nitrogen-fixing root nodules when compatible Rhizobium bacteria are present and soil conditions are suitable. Inoculant may be useful where clover has not recently grown."
       }
     },
     {
       "@type": "Question",
-      "name": "Is white clover a complete chicken feed?",
+      "name": "Does white clover need full sun?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. White clover can provide supplemental forage and plant nutrients, but it does not supply the complete energy, amino-acid, calcium, vitamin, and mineral balance required by chickens."
+        "text": "White clover grows best in full sun but can tolerate some partial shade. Heavy shade usually reduces flowering, leaf production, spreading, and recovery after grazing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is white clover safe after herbicide or pesticide use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only when the product label specifically permits the intended forage or poultry use and all required waiting periods have passed. Do not feed clover from areas treated with unknown chemicals or products not labeled for forage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can moldy or fermented white clover be fed to chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed clover that is moldy, slimy, heated, unintentionally fermented, decomposing, or foul smelling. Wet piles of clover should be removed before they spoil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can white clover replace chicken feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. White clover provides fresh forage and enrichment but does not supply enough concentrated energy, balanced amino acids, calcium, vitamins, or minerals to replace complete poultry feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will white clover lower my chicken feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It may provide fresh forage and enrichment, but savings depend on stand size, growing season, flock pressure, recovery time, and how much balanced feed remains necessary. Its greatest value may be as a living forage and soil-support crop rather than a major feed replacement."
       }
     }
   ]
@@ -1339,49 +1237,207 @@ This trial will reveal whether white clover can persist under your climate, soil
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat white clover?</h3>
+<div class="faq-list">
 
-<p>
-Yes. Chickens may eat clean white clover leaves and tender growth as supplemental forage.</p>
+<details>
 
-<h3>Will white clover survive in a chicken run?</h3>
-
-<p>
-It may survive light or rotational access, but continuous scratching and grazing commonly destroy an unprotected stand.</p>
-
-<h3>Does white clover grow back after grazing?</h3>
+<summary>
+Can chickens eat white clover?
+</summary>
 
 <p>
-Established plants can regrow from stolons and rooted nodes when enough leaf area remains and the patch receives adequate rest.</p>
+Yes. Chickens can eat clean white clover leaves, tender stems, and flowers as supplemental forage. White clover should complement a complete poultry ration rather than replace it.
+</p>
 
-<h3>Should white clover be planted by spacing individual plants?</h3>
+</details>
 
-<p>
-No. It is normally broadcast or shallow-seeded according to a seeding rate.</p>
+<details>
 
-<h3>Does white clover fix nitrogen?</h3>
-
-<p>
-Yes, when compatible Rhizobium bacteria form functional root nodules and soil conditions are suitable.</p>
-
-<h3>Can chickens eat clover flowers?</h3>
+<summary>
+Can chickens eat clover flowers?
+</summary>
 
 <p>
-Chickens may peck white clover flowers along with the leaves. Offer only clean, untreated plants and keep the crop supplemental.</p>
+Yes. Chickens may peck white clover flowers along with the leaves and tender stems. Offer only clean, untreated plants that are free from mold, manure buildup, roadside contamination, and unidentified weeds.
+</p>
 
-<h3>Can I dry white clover for winter?</h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat dried white clover?
+</summary>
 
 <p>
-Small quantities may be dried, but home drying must be rapid and thorough to prevent mold. Dried material is more concentrated than fresh forage and should be offered sparingly.</p>
+Yes, in small amounts. White clover may be dried for later use, but it must be dried rapidly and thoroughly to prevent heating and mold. Dried forage is more concentrated than fresh clover and should be offered sparingly.
+</p>
 
-<h3>Will white clover lower my feed bill?</h3>
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat white clover?
+</summary>
 
 <p>
-It may provide fresh forage and enrichment, but savings depend on stand size, growing season, flock pressure, and how much balanced feed remains necessary.</p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Small amounts of finely chopped, clean clover may be introduced only after chicks are established on starter feed and are old enough to safely consume supplemental forage.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat white clover every day?
+</summary>
+
+<p>
+Chickens may graze or receive small amounts of white clover regularly, but it should remain supplemental. Continuous access can also damage the plants through close grazing, scratching, trampling, and soil disturbance.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will white clover survive in a chicken run?
+</summary>
+
+<p>
+It may survive light or rotational access, but continuous scratching and grazing commonly destroy an unprotected stand. Protected forage frames, rotational paddocks, or cut-and-carry harvesting are generally more dependable.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does white clover grow back after chickens graze it?
+</summary>
+
+<p>
+Established white clover can regrow from creeping stolons and rooted nodes when enough leaf area remains and the patch receives adequate moisture and rest. Repeated grazing down to bare soil may prevent recovery.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+How long should white clover rest after grazing?
+</summary>
+
+<p>
+There is no single fixed rest period. Recovery depends on temperature, moisture, season, variety, soil fertility, and how heavily the patch was grazed. Allow new leaves to develop before returning chickens to the area.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Should white clover be planted by spacing individual plants?
+</summary>
+
+<p>
+No. White clover is normally broadcast or shallow-seeded according to a recommended seeding rate. Mature plant density is difficult to measure because stolons spread and root at multiple nodes.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can white clover be planted with grass?
+</summary>
+
+<p>
+Yes. White clover is commonly grown with pasture grasses. A mixed stand can provide more durable ground cover and seasonal forage, but the grass must be managed so it does not become tall and dense enough to shade the clover.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does white clover fix nitrogen?
+</summary>
+
+<p>
+Yes. White clover can form nitrogen-fixing root nodules when compatible Rhizobium bacteria are present and soil conditions are suitable. Inoculant may be useful where clover has not recently grown.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does white clover need full sun?
+</summary>
+
+<p>
+White clover grows best in full sun but can tolerate some partial shade. Heavy shade usually reduces flowering, leaf production, spreading, and recovery after grazing.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Is white clover safe after herbicide or pesticide use?
+</summary>
+
+<p>
+Only when the product label specifically permits the intended forage or poultry use and all required waiting periods have passed. Do not feed clover from areas treated with unknown chemicals or products not labeled for forage.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can moldy or fermented white clover be fed to chickens?
+</summary>
+
+<p>
+No. Do not feed clover that is moldy, slimy, heated, unintentionally fermented, decomposing, or foul smelling. Wet piles of clover should be removed before they spoil.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can white clover replace chicken feed?
+</summary>
+
+<p>
+No. White clover provides fresh forage and enrichment but does not supply enough concentrated energy, balanced amino acids, calcium, vitamins, or minerals to replace complete poultry feed.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will white clover lower my chicken feed bill?
+</summary>
+
+<p>
+It may provide fresh forage and enrichment, but savings depend on stand size, growing season, flock pressure, recovery time, and how much balanced feed remains necessary. Its greatest value may be as a living forage and soil-support crop rather than a major feed replacement.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
