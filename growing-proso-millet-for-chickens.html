@@ -82,7 +82,7 @@
   color: #194f2a;
 }
 
-.millet-notice {
+.crop-notice-box {
   padding: 20px;
   color: #5d4217;
   background: #fff8e8;
@@ -91,7 +91,7 @@
   border-radius: 12px;
 }
 
-.millet-success-box {
+.crop-success-box {
   padding: 20px;
   background: #f1f8f2;
   border: 1px solid #cae0ce;
@@ -99,7 +99,7 @@
   border-radius: 12px;
 }
 
-.millet-warning-box {
+.crop-warning-box {
   padding: 20px;
   color: #613e19;
   background: #fff5e9;
@@ -108,14 +108,14 @@
   border-radius: 12px;
 }
 
-.millet-steps {
+.crop-steps {
   counter-reset: millet-step;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.millet-steps li {
+.crop-steps li {
   position: relative;
   margin-bottom: 15px;
   padding: 18px 18px 18px 62px;
@@ -124,7 +124,7 @@
   border-radius: 12px;
 }
 
-.millet-steps li::before {
+.crop-steps li::before {
   counter-increment: millet-step;
   content: counter(millet-step);
   position: absolute;
@@ -141,7 +141,7 @@
   border-radius: 50%;
 }
 
-.millet-steps strong {
+.crop-steps strong {
   display: block;
   margin-bottom: 5px;
   color: #194f2a;
@@ -169,25 +169,25 @@
   margin-bottom: 0;
 }
 
-.millet-calendar {
+.crop-calendar {
   width: 100%;
   border-collapse: collapse;
 }
 
-.millet-calendar th,
-.millet-calendar td {
+.crop-calendar th,
+.crop-calendar td {
   padding: 13px;
   text-align: left;
   vertical-align: top;
   border: 1px solid #d8e2d8;
 }
 
-.millet-calendar th {
+.crop-calendar th {
   color: #ffffff;
   background: #356f44;
 }
 
-.millet-calendar tr:nth-child(even) td {
+.crop-calendar tr:nth-child(even) td {
   background: #f7faf7;
 }
 
@@ -238,7 +238,7 @@
     padding: 23px;
   }
 
-  .millet-calendar {
+  .crop-calendar {
     font-size: 0.92rem;
   }
 
@@ -349,11 +349,11 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+<div class="growing-guide-page proso-millet-guide-page">
 
 <div class="content">
 
-<div class="crop-guide-hero">
+<header class="crop-guide-hero">
 
 <div class="crop-guide-hero-grid">
 
@@ -361,9 +361,10 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 <div class="crop-guide-hero-image">
 
 <img
-src="assets/images/feed-crops/proso-millet/proso-millet-plant.webp"
-alt="Proso millet plants growing as a chicken feed crop"
-loading="lazy"
+  src="assets/images/feed-crops/proso-millet/proso-millet-plant.webp"
+  alt="Proso millet plants growing as a short-season supplemental grain crop for backyard chickens"
+  loading="eager"
+  fetchpriority="high"
 >
 
 </div>
@@ -372,7 +373,7 @@ loading="lazy"
 <div class="crop-guide-hero-content">
 
 <h1>
-🌾 Growing Proso Millet for Chickens
+🌾 Can Chickens Eat Millet? Growing Proso Millet for Chickens
 </h1>
 
 
@@ -404,6 +405,71 @@ Dry Storage Potential
 
 </div>
 
+
+</div>
+
+</header>
+
+<div class="section">
+
+<h2>
+🌾 Can Chickens Eat Proso Millet?
+</h2>
+
+<p>
+<strong>Yes.</strong> Chickens can eat clean, mature proso millet as a supplemental grain. It may be offered whole, cracked, coarsely ground, sprouted, cooked, or on thoroughly dried seed heads.
+</p>
+
+<p>
+Most healthy adult chickens can eat <strong>whole raw proso millet</strong> because the seeds are small. Appropriate insoluble grit should still be available when chickens receive whole grains and do not otherwise have access to suitable grit.
+</p>
+
+<p>
+Proso millet does not normally need to be cooked before feeding adult chickens. Chickens may also eat <strong>plain cooked millet</strong> after it has cooled, provided it is served <u>without</u> butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings.
+</p>
+
+<p>
+Practical feeding forms include:
+</p>
+
+<ul>
+
+<li>
+<strong>Whole mature grain:</strong>
+The small seeds are suitable for most adult chickens and may be scattered in measured amounts for enrichment.
+</li>
+
+<li>
+<strong>Cracked or coarsely ground millet:</strong>
+Processing changes particle size but does not make millet nutritionally complete.
+</li>
+
+<li>
+<strong>Sprouted millet:</strong>
+Clean, untreated grain may be sprouted under sanitary conditions with good rinsing, drainage, airflow, and mold prevention.
+</li>
+
+<li>
+<strong>Cooked millet:</strong>
+Plain cooked grain may be offered after cooling as an occasional supplemental food.
+</li>
+
+<li>
+<strong>Millet spray or dried seed heads:</strong>
+Mature, thoroughly dried heads may be offered as natural pecking enrichment.
+</li>
+
+</ul>
+
+<div class="crop-warning-box">
+
+<strong>
+Keep proso millet supplemental.
+</strong>
+
+<p style="margin-bottom:0;">
+Proso millet is primarily an energy grain and is low in lysine. It does not provide enough calcium, balanced amino acids, vitamins, or minerals to replace chick starter, grower feed, layer feed, or another complete poultry ration. Never feed moldy, damp, heated, chemically treated, insect-damaged, or contaminated millet.
+</p>
 
 </div>
 
@@ -627,7 +693,7 @@ They should not be substituted directly into proso millet planting or nutrition 
 
 </div>
 
-<div class="millet-success-box" style="margin-top:20px;">
+<div class="crop-success-box" style="margin-top:20px;">
 
 <strong>Practical beginner choice:</strong>
 
@@ -655,7 +721,7 @@ Because it matures more quickly than many grain crops, it may fit into short gro
 For backyard chicken keepers, the best planting date is not only about reaching maturity. It also affects when the grain will be available for the flock. A planting timed for a dry harvest window can make threshing, drying, and storage much easier.
 </p>
 
-<div class="millet-success-box">
+<div class="crop-success-box">
 
 <strong>
 Beginner tip:
@@ -667,7 +733,7 @@ Because proso millet has small seed and shallow planting requirements, a well-pr
 
 </div>
 
-<table class="millet-calendar">
+<table class="crop-calendar">
 
 <tr>
 <th>Region</th>
@@ -768,7 +834,7 @@ Common planting approaches include:
 <li>Using somewhat wider rows where hand cultivation is necessary</li>
 </ul>
 
-<div class="millet-notice">
+<div class="crop-notice-box">
 
 <strong>Why the database does not list plants per square foot:</strong>
 
@@ -792,7 +858,7 @@ For a first backyard trial, a small planting area is usually more useful than at
 
 <h2>🪴 How to Plant Proso Millet</h2>
 
-<ol class="millet-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Choose a full-sun location.</strong>
@@ -936,7 +1002,7 @@ Possible protections include:
 <li>Finishing the drying process under protected cover</li>
 </ul>
 
-<div class="millet-warning-box">
+<div class="crop-warning-box">
 
 <strong>Check bird netting frequently.</strong>
 
@@ -1005,7 +1071,7 @@ Harvesting proso millet requires waiting until the grain is mature and firm whil
 
 </div>
 
-<div class="millet-success-box">
+<div class="crop-success-box">
 
 <strong>
 Small Backyard Millet Harvest Workflow:
@@ -1037,7 +1103,7 @@ Store clean, dry grain until it is needed for supplemental feeding.
 
 </div>
 
-<ol class="millet-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Choose a dry harvest period.</strong>
@@ -1100,7 +1166,7 @@ After threshing, the grain will be mixed with chaff, broken stems, dust, and imm
 Winnowing with a gentle fan or natural breeze can remove lighter debris. Work over a tarp or large container so usable seed is not lost.
 </p>
 
-<div class="millet-warning-box">
+<div class="crop-warning-box">
 
 <strong>Protect your eyes and lungs.</strong>
 
@@ -1219,7 +1285,7 @@ The best feeding method depends on how the millet was harvested and processed. W
 Adult chickens can generally consume whole millet seeds because the grain is small. Seed heads can also be hung or placed in a clean feeder area to encourage pecking and foraging.
 </p>
 
-<div class="millet-notice">
+<div class="crop-notice-box">
 
 <strong>Millet should remain supplemental.</strong>
 
@@ -1424,7 +1490,7 @@ On a very small plot, the crop may provide more educational and enrichment value
 
 <h2>🌾 A Simple Beginner Millet Plan</h2>
 
-<div class="millet-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 For a first attempt, plant a small bed of approximately 25–50 square feet using a named proso millet variety.
