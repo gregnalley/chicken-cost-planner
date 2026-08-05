@@ -23,234 +23,36 @@
 
 <style>
 
+/*
+  Grain Sorghum-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   GRAIN SORGHUM HERO THEME
+   -------------------------------------------------- */
+
+.sorghum-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(72, 91, 39, 0.97),
       rgba(156, 82, 38, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(69, 72, 35, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(69, 72, 35, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.sorghum-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #402d1d;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #f3d9aa;
-  border-radius: 999px;
-}
-
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.sorghum-notice {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.sorghum-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.sorghum-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.sorghum-danger-box {
-  padding: 20px;
-  color: #5d2929;
-  background: #fff1f1;
-  border: 1px solid #e4bcbc;
-  border-left: 6px solid #9d4444;
-  border-radius: 12px;
-}
-
-.sorghum-steps {
-  counter-reset: sorghum-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sorghum-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.sorghum-steps li::before {
-  counter-increment: sorghum-step;
-  content: counter(sorghum-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.sorghum-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.sorghum-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.sorghum-calendar th,
-.sorghum-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.sorghum-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.sorghum-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .sorghum-calendar {
-    font-size: 0.92rem;
-  }
-
+  border-color:
+    rgba(64, 45, 29, 0.16);
 }
 
 </style>
@@ -300,26 +102,74 @@ gtag("config", "G-88486JDN1Z");
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can chickens eat grain sorghum or milo?",
+      "name": "Can chickens eat grain sorghum?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can eat clean, mature grain sorghum as a supplemental energy grain. Low-tannin varieties are preferable, and sorghum should not replace a balanced poultry ration."
+        "text": "Yes. Adult chickens can eat clean, mature grain sorghum as a supplemental energy grain. Low-tannin or tannin-free varieties are generally preferred, and sorghum should be offered alongside a complete poultry ration rather than used as the flock’s entire diet."
       }
     },
     {
       "@type": "Question",
-      "name": "Can chickens eat whole sorghum seeds?",
+      "name": "Is milo the same as grain sorghum?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Adult chickens can generally consume whole mature sorghum grain. The grain may also be cracked, coarsely ground, sprouted, or offered on thoroughly dried seed heads."
+        "text": "Yes. Milo is a common name for grain sorghum, especially in the United States. Grain sorghum should not be confused with sweet sorghum, forage sorghum, sudangrass, or sorghum-sudangrass hybrids because those crops have different uses and safety considerations."
       }
     },
     {
       "@type": "Question",
-      "name": "Is sorghum the same as milo?",
+      "name": "Can chickens eat whole raw sorghum seeds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Milo is a common name used for grain sorghum. Grain sorghum should not be confused with sweet sorghum, forage sorghum, sudangrass, or sorghum-sudangrass hybrids."
+        "text": "Yes. Most healthy adult chickens can consume clean, mature whole sorghum grain when appropriate insoluble grit is available. Introduce unfamiliar grain gradually and offer it in measured amounts so it does not displace complete feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does sorghum need to be cooked for chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Clean, mature grain sorghum does not normally need to be cooked for adult chickens. It may be offered whole, cracked, or coarsely ground as a supplemental grain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat cooked grain sorghum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain cooked grain sorghum may be offered after it has cooled. Serve it without butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sprouted grain sorghum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clean, untreated sorghum grain may be sprouted under sanitary conditions and offered as supplemental green feed. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, fermentation, discoloration, or unpleasant odors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat fermented grain sorghum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Grain sorghum may be included in properly managed fermented feed. Use clean, untreated grain and discard any batch that develops mold, slime, rotten odors, unusual discoloration, or other signs of spoilage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat whole sorghum seed heads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mature sorghum seed heads may be offered as pecking enrichment when they are thoroughly dried, clean, untreated, and free from mold, ergot, insects, rodents, and other contamination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat grain sorghum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental sorghum is better reserved for older birds unless it is incorporated into a professionally formulated starter ration. Chicks given supplemental foods also need appropriately sized grit."
       }
     },
     {
@@ -327,7 +177,23 @@ gtag("config", "G-88486JDN1Z");
       "name": "Is grain sorghum better than corn for chickens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Low-tannin grain sorghum can provide energy comparable to corn in a properly balanced poultry diet. Corn provides more yellow carotenoid pigments, while sorghum often performs better under heat and drought."
+        "text": "Neither crop is universally better. Low-tannin grain sorghum can provide substantial dietary energy and often performs better under heat and drought, while yellow corn supplies more carotenoid pigments and may be easier to harvest and process. Both require nutritional balancing when used in poultry diets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is red sorghum high in tannins?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Grain color alone does not reliably identify tannin concentration. Tannin content depends on the genetics and characteristics of the variety, so growers should use supplier information and choose a named low-tannin or tannin-free grain sorghum when possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat sorghum leaves and stalks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do not treat green sorghum leaves and stalks as interchangeable with mature dry grain. Young, wilted, frost-damaged, drought-stressed, or regrowing sorghum forage may present prussic-acid or nitrate concerns and requires different management."
       }
     },
     {
@@ -335,7 +201,7 @@ gtag("config", "G-88486JDN1Z");
       "name": "Does grain sorghum contain prussic acid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prussic-acid concerns are mainly associated with green sorghum forage, regrowth, and stressed plants rather than clean mature dry grain. Do not treat green sorghum plants as interchangeable with harvested grain."
+        "text": "Prussic-acid concerns are primarily associated with green sorghum forage, stressed plants, regrowth, and frost-damaged plant material rather than properly harvested mature dry grain. Different sorghum plant parts should not be assumed to have the same safety profile."
       }
     },
     {
@@ -343,7 +209,23 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can sorghum replace layer feed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Sorghum is primarily an energy grain and does not provide enough calcium, balanced amino acids, vitamins, or minerals to replace complete layer feed."
+        "text": "No. Grain sorghum is primarily an energy source and does not provide enough calcium, balanced amino acids, vitamins, or minerals to replace a complete layer ration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat moldy sorghum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Moldy, musty, heated, ergot-contaminated, insect-infested, chemically treated, or rodent-contaminated grain should never be fed to chickens. Questionable grain may contain harmful contaminants even when damage is not obvious."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing grain sorghum lower my chicken feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but the result depends on seed cost, yield, water, fertility, bird losses, harvesting labor, threshing, storage, and local grain prices. Small plantings may provide more value through resilience, enrichment, education, and crop diversity than through direct financial savings."
       }
     }
   ]
@@ -366,7 +248,7 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 
 <div id="navigation"></div>
 
-<div style="max-width:900px; margin:40px auto; padding:0 16px;">
+<div class="growing-guide-page sorghum-guide-page">
 
 <div class="content">
 
@@ -380,7 +262,8 @@ Free calculators, planning tools, and practical guides for backyard chicken keep
 <img
 src="assets/images/feed-crops/grain-sorghum/grain-sorghum-plant.webp"
 alt="Grain sorghum plants producing mature seed heads for backyard chicken feed"
-loading="lazy"
+loading="eager"
+fetchpriority="high"
 >
 
 </div>
@@ -430,6 +313,71 @@ Dry Storage Potential
 </div>
 
 </header>
+
+<div class="section">
+
+<h2>
+🌾 Can Chickens Eat Grain Sorghum?
+</h2>
+
+<p>
+<strong>Yes.</strong> Chickens can safely eat clean, mature grain sorghum—often called <strong>milo</strong>—as a supplemental grain. It may be fed whole, cracked, coarsely ground, sprouted, fermented, or on thoroughly dried seed heads. Grain sorghum should supplement a complete poultry ration rather than replace it.
+</p>
+
+<p>
+Most healthy adult chickens readily eat <strong>whole raw grain sorghum</strong> when appropriate insoluble grit is available. Household cooking is not normally necessary before feeding mature grain.
+</p>
+
+<p>
+Chickens may also eat <strong>plain cooked grain sorghum</strong> after it has cooled. Serve it <u>without</u> butter, oils, salt, sugar, sauces, garlic, onions, or other seasonings.
+</p>
+
+<p>
+Other practical feeding methods include:
+</p>
+
+<ul>
+
+<li>
+<strong>Whole grain:</strong>
+Suitable for most adult chickens as a supplemental energy grain.
+</li>
+
+<li>
+<strong>Cracked or coarsely ground grain:</strong>
+May be useful for smaller birds or mixed grain blends.
+</li>
+
+<li>
+<strong>Sprouted grain:</strong>
+Clean, untreated grain may be sprouted under sanitary conditions and offered as supplemental green forage.
+</li>
+
+<li>
+<strong>Fermented grain:</strong>
+Grain sorghum may be included in properly managed fermented feed. Discard any batch showing mold, slime, foul odors, or other signs of spoilage.
+</li>
+
+<li>
+<strong>Whole dried seed heads:</strong>
+Excellent pecking enrichment that encourages natural foraging behavior.
+</li>
+
+</ul>
+
+<div class="crop-warning-box">
+
+<strong>
+Keep grain sorghum supplemental.
+</strong>
+
+<p style="margin-bottom:0;">
+Grain sorghum is primarily an energy grain. It does not provide the calcium, balanced amino acids, vitamins, or minerals required by laying hens and should never replace a complete poultry ration. Never feed moldy, heated, ergot-contaminated, chemically treated, or otherwise contaminated grain.
+</p>
+
+</div>
+
+</div>
 
 <div class="section">
 
@@ -593,7 +541,7 @@ Sweet sorghum is not the same crop as compact grain-producing milo.</p>
 
 </div>
 
-<div class="sorghum-warning-box" style="margin-top:20px;">
+<div class="crop-warning-box" style="margin-top:20px;">
 
 <strong>Do not substitute green sorghum forage for mature grain.</strong>
 
@@ -623,7 +571,7 @@ Tannins can:</p>
 <li>Produce inconsistent poultry performance</li>
 </ul>
 
-<div class="sorghum-success-box">
+<div class="crop-success-box">
 
 <strong>Practical beginner choice:</strong>
 
@@ -665,7 +613,7 @@ Use variety descriptions and supplier information rather than judging the grain 
 <p>
 Grain sorghum is frost sensitive and requires warm soil. Direct sow it after frost danger has passed and soil at planting depth has reached approximately 60°F or warmer.</p>
 
-<table class="sorghum-calendar">
+<table class="crop-calendar">
 
 <tr>
 <th>Region</th>
@@ -794,7 +742,7 @@ These figures estimate a manageable row-grown stand. They do not guarantee a cer
 
 <h2>🪴 How to Plant Grain Sorghum</h2>
 
-<ol class="sorghum-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Choose a full-sun location.</strong>
@@ -858,7 +806,7 @@ A soil test should guide:</p>
 <p>
 Sorghum may use water more efficiently than corn, but it is still a cereal grain that removes nutrients when the seed is harvested and carried away.</p>
 
-<div class="sorghum-warning-box">
+<div class="crop-warning-box">
 
 <strong>Do not place concentrated fertilizer against the seed.</strong>
 
@@ -958,7 +906,7 @@ Possible protections include:</p>
 <li>Finishing drying under protected cover</li>
 </ul>
 
-<div class="sorghum-warning-box">
+<div class="crop-warning-box">
 
 <strong>Inspect netting frequently.</strong>
 
@@ -1078,7 +1026,7 @@ Store only clean dry grain and inspect containers regularly.</td>
 
 </table>
 
-<div class="sorghum-danger-box">
+<div class="crop-danger-box">
 
 <strong>Discard moldy, ergot-contaminated, heated, or questionable grain.</strong>
 
@@ -1145,7 +1093,7 @@ Harvesting grain sorghum at the correct maturity stage is important for preservi
 
 </div>
 
-<ol class="sorghum-steps">
+<ol class="crop-steps">
 
 <li>
 <strong>Inspect several heads.</strong>
@@ -1199,7 +1147,7 @@ For a small harvest:</p>
 <li>Do not seal damp heads inside buckets or plastic bags</li>
 </ul>
 
-<div class="sorghum-danger-box">
+<div class="crop-danger-box">
 
 <strong>Dry outer branches do not guarantee dry kernels.</strong>
 
@@ -1231,7 +1179,7 @@ Small quantities may be threshed by:</p>
 <p>
 The threshed material will contain grain, stems, chaff, dust, damaged kernels, and immature seed.</p>
 
-<div class="sorghum-warning-box">
+<div class="crop-warning-box">
 
 <strong>Protect your eyes and lungs.</strong>
 
@@ -1305,18 +1253,19 @@ Whole grain usually stores longer than cracked or ground sorghum. Process only t
 
 </div>
 
-<div class="crop-guide-feature">
+<div class="section">
+
+<div class="crop-guide-feature-card">
 
 <div class="crop-guide-feature-image">
 
 <img
-src="assets/images/feed-crops/grain-sorghum/chickens-eating-grain-sorghum.webp"
-alt="Chickens eating grain sorghum as a supplemental backyard feed ingredient"
-loading="lazy"
+  src="assets/images/feed-crops/grain-sorghum/chickens-eating-grain-sorghum.webp"
+  alt="Chickens eating grain sorghum as a supplemental backyard feed ingredient"
+  loading="lazy"
 >
 
 </div>
-
 
 <div class="crop-guide-feature-content">
 
@@ -1332,24 +1281,51 @@ Clean, mature grain sorghum can provide supplemental energy for backyard chicken
 
 </div>
 
+<p>
+Grain sorghum may be offered in several forms:
+</p>
+
 <ul>
-<li>Whole dry grain</li>
-<li>Cracked grain</li>
-<li>Coarsely ground grain</li>
-<li>Whole thoroughly dried seed heads</li>
-<li>Sprouted grain produced under sanitary conditions</li>
-<li>A measured ingredient in a professionally balanced ration</li>
+
+<li>
+Whole dry grain
+</li>
+
+<li>
+Cracked grain
+</li>
+
+<li>
+Coarsely ground grain
+</li>
+
+<li>
+Whole thoroughly dried seed heads
+</li>
+
+<li>
+Sprouted grain produced under sanitary conditions
+</li>
+
+<li>
+A measured ingredient in a professionally balanced ration
+</li>
+
 </ul>
 
 <p>
-Whole seed heads may be secured inside the run so chickens can peck the grain loose as enrichment.</p>
+Whole seed heads may be secured inside the run so chickens can peck the grain loose as enrichment.
+</p>
 
-<div class="sorghum-notice">
+<div class="crop-notice-box">
 
-<strong>Keep grain sorghum supplemental.</strong>
+<strong>
+Keep grain sorghum supplemental.
+</strong>
 
 <p style="margin-bottom:0;">
-It is primarily an energy grain and does not supply the calcium, amino-acid balance, vitamins, or minerals required by laying hens.</p>
+It is primarily an energy grain and does not supply the calcium, balanced amino acids, vitamins, or minerals required by laying hens.
+</p>
 
 </div>
 
@@ -1494,7 +1470,7 @@ Low-tannin grain sorghum can serve a similar energy role to corn in a properly f
 
 <h2>☠️ Prussic Acid and Nitrate Concerns</h2>
 
-<div class="sorghum-danger-box">
+<div class="crop-danger-box">
 
 <strong>This guide covers mature dry grain—not green sorghum forage.</strong>
 
@@ -1552,7 +1528,7 @@ Like the other grain crops in this collection, sorghum offers the greatest value
 
 <h2>🌾 A Simple Beginner Grain Sorghum Plan</h2>
 
-<div class="sorghum-success-box">
+<div class="crop-success-box">
 
 <p style="margin-top:0;">
 For a first attempt, grow a small 50–100-square-foot block of a named low-tannin grain-sorghum variety.</p>
@@ -1577,204 +1553,205 @@ This trial will show whether heat, drought, bird pressure, harvesting, and thres
 
 </div>
 
-<div class="section-card faq-section">
+<div class="section faq-section">
 
 <h2>
-
 ❓ Frequently Asked Questions
-
 </h2>
-
 
 <div class="faq-list">
 
-
 <details>
 
 <summary>
-
 Can chickens eat grain sorghum?
-
 </summary>
 
 <p>
-
-Yes. Adult chickens can eat clean, mature grain sorghum as a supplemental energy grain. Low-tannin varieties are generally preferred, and sorghum should be offered as part of a balanced feeding program rather than used as a complete replacement for poultry feed.
-
+Yes. Adult chickens can eat clean, mature grain sorghum as a supplemental energy grain. Low-tannin or tannin-free varieties are generally preferred, and sorghum should be offered alongside a complete poultry ration rather than used as the flock’s entire diet.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
 Is milo the same as grain sorghum?
-
 </summary>
 
 <p>
-
-Yes. Milo is a common name used for grain sorghum, especially in the United States. However, grain sorghum should not be confused with sweet sorghum, forage sorghum, sudangrass, or sorghum-sudangrass hybrids because those crops are grown and managed differently.
-
+Yes. Milo is a common name for grain sorghum, especially in the United States. Grain sorghum should not be confused with sweet sorghum, forage sorghum, sudangrass, or sorghum-sudangrass hybrids because those crops have different uses and safety considerations.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
-Can chickens eat whole sorghum seeds?
-
+Can chickens eat whole raw sorghum seeds?
 </summary>
 
 <p>
-
-Adult chickens can generally consume whole mature sorghum grain. Whole kernels may be offered directly, cracked, coarsely ground, or included as part of a properly balanced ration. Grain should always be clean, dry, and free from mold or chemical treatment.
-
+Yes. Most healthy adult chickens can consume clean, mature whole sorghum grain when appropriate insoluble grit is available. Introduce unfamiliar grain gradually and offer it in measured amounts so it does not displace complete feed.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
-Does sorghum need to be cooked before chickens eat it?
-
+Does sorghum need to be cooked for chickens?
 </summary>
 
 <p>
-
-Clean mature grain sorghum does not normally require household-style cooking before feeding adult chickens. It may be offered whole, cracked, or ground depending on flock size and feeding goals. Processing methods should not be used to replace proper nutrition balance.
-
+No. Clean, mature grain sorghum does not normally need to be cooked for adult chickens. It may be offered whole, cracked, or coarsely ground as a supplemental grain.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
-Can chickens eat whole sorghum heads?
-
+Can chickens eat cooked grain sorghum?
 </summary>
 
 <p>
-
-Yes. Whole sorghum seed heads can be offered as enrichment when they are mature, thoroughly dried, clean, and free from mold, ergot, insects, and chemical treatments. Chickens may enjoy naturally foraging for the individual seeds.
-
+Yes. Plain cooked grain sorghum may be offered after it has cooled. Serve it <u>without</u> butter, oils, salt, sugar, milk, sauces, garlic, onions, or other seasonings.
 </p>
 
 </details>
 
+<details>
+
+<summary>
+Can chickens eat sprouted grain sorghum?
+</summary>
+
+<p>
+Yes. Clean, untreated sorghum grain may be sprouted under sanitary conditions and offered as supplemental green feed. Maintain good rinsing, drainage, and airflow, and discard sprouts that develop mold, slime, fermentation, discoloration, or unpleasant odors.
+</p>
+
+</details>
 
 <details>
 
 <summary>
+Can chickens eat fermented grain sorghum?
+</summary>
 
+<p>
+Grain sorghum may be included in properly managed fermented feed. Use clean, untreated grain and discard any batch that develops mold, slime, rotten odors, unusual discoloration, or other signs of spoilage.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat whole sorghum seed heads?
+</summary>
+
+<p>
+Yes. Mature sorghum seed heads may be offered as pecking enrichment when they are thoroughly dried, clean, untreated, and free from mold, ergot, insects, rodents, and other contamination.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat grain sorghum?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Supplemental sorghum is better reserved for older birds unless it is incorporated into a professionally formulated starter ration. Chicks given supplemental foods also need appropriately sized grit.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Is grain sorghum better than corn for chickens?
-
 </summary>
 
 <p>
-
-Neither crop is universally better. Grain sorghum can perform well in hot, dry conditions where corn may struggle, while corn provides more yellow carotenoid pigments and is often easier to process. Both crops are primarily energy sources and require balancing with other nutrients.
-
+Neither crop is universally better. Low-tannin grain sorghum can provide substantial dietary energy and often performs better under heat and drought, while yellow corn supplies more carotenoid pigments and may be easier to harvest and process. Both require nutritional balancing when used in poultry diets.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
 Is red sorghum high in tannins?
-
 </summary>
 
 <p>
-
-Not necessarily. Grain color alone does not reliably determine tannin concentration. Tannin levels depend on genetics and variety characteristics, so growers should select named low-tannin or tannin-free grain sorghum varieties when possible.
-
+Not necessarily. Grain color alone does not reliably identify tannin concentration. Tannin content depends on the genetics and characteristics of the variety, so growers should use supplier information and choose a named low-tannin or tannin-free grain sorghum when possible.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
 Can chickens eat sorghum leaves and stalks?
-
 </summary>
 
 <p>
-
-This guide focuses on mature dry grain sorghum rather than green forage. Green sorghum plants, stressed plants, and related forage sorghum crops may have different safety concerns and should not automatically be treated the same as harvested grain.
-
+Do not treat green sorghum leaves and stalks as interchangeable with mature dry grain. Young, wilted, frost-damaged, drought-stressed, or regrowing sorghum forage may present prussic-acid or nitrate concerns and requires different management.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
 Does grain sorghum contain prussic acid?
-
 </summary>
 
 <p>
-
-Prussic-acid concerns are primarily associated with green sorghum forage, regrowth, frost-damaged plants, and stressed plant material rather than properly harvested mature grain. Do not assume that all sorghum plant parts have the same safety profile.
-
+Prussic-acid concerns are primarily associated with green sorghum forage, stressed plants, regrowth, and frost-damaged plant material rather than properly harvested mature dry grain. Different sorghum plant parts should not be assumed to have the same safety profile.
 </p>
 
 </details>
 
-
 <details>
 
 <summary>
-
 Can sorghum replace layer feed?
-
 </summary>
 
 <p>
-
-No. Sorghum is primarily an energy grain and does not provide the complete balance of calcium, amino acids, vitamins, and minerals required by laying hens. It should supplement a complete poultry ration rather than replace it.
-
+No. Grain sorghum is primarily an energy source and does not provide enough calcium, balanced amino acids, vitamins, or minerals to replace a complete layer ration.
 </p>
 
 </details>
-
 
 <details>
 
 <summary>
-
-Will grain sorghum lower my chicken feed bill?
-
+Can chickens eat moldy sorghum?
 </summary>
 
 <p>
-
-Possibly, but it depends on yield, growing conditions, fertilizer, water, bird losses, harvesting labor, threshing, storage, and local feed prices. Small-scale production may provide value through resilience, education, enrichment, and reduced dependence on purchased grain rather than always producing the lowest-cost feed.
-
+No. Moldy, musty, heated, ergot-contaminated, insect-infested, chemically treated, or rodent-contaminated grain should never be fed to chickens. Questionable grain may contain harmful contaminants even when damage is not obvious.
 </p>
 
 </details>
 
+<details>
+
+<summary>
+Will growing grain sorghum lower my chicken feed bill?
+</summary>
+
+<p>
+Possibly, but the result depends on seed cost, yield, water, fertility, bird losses, harvesting labor, threshing, storage, and local grain prices. Small plantings may provide more value through resilience, enrichment, education, and crop diversity than through direct financial savings.
+</p>
+
+</details>
 
 </div>
 
