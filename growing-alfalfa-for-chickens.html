@@ -22,226 +22,39 @@ Learn how to grow alfalfa for chickens as a perennial forage crop. Discover plan
 
 <style>
 
+/*
+  Alfalfa-specific presentation.
+  Shared growing-guide components are in bcp-style.css.
+*/
+
+
+/* --------------------------------------------------
+   ALFALFA HERO THEME
+   -------------------------------------------------- */
+
+.alfalfa-guide-page
 .crop-guide-hero {
-  padding: 30px;
-  color: #ffffff;
   background:
     linear-gradient(
       135deg,
       rgba(38, 91, 50, 0.97),
       rgba(91, 133, 65, 0.95)
     );
-  border-radius: 20px;
-  box-shadow: 0 16px 36px rgba(38, 80, 43, 0.18);
+
+  box-shadow:
+    0 16px 36px
+    rgba(38, 80, 43, 0.18);
 }
 
-.crop-guide-hero h1 {
-  margin: 0 0 12px;
-}
-
-.crop-guide-hero p {
-  max-width: 760px;
-  margin: 0;
-  line-height: 1.7;
-}
-
-.crop-guide-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
+.alfalfa-guide-page
 .crop-guide-tag {
-  display: inline-block;
-  padding: 7px 12px;
   color: #21442a;
-  font-size: 0.86rem;
-  font-weight: 750;
   background: #dcefcf;
-  border-radius: 999px;
+  border-color:
+    rgba(33, 68, 42, 0.16);
 }
 
-.quick-facts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.quick-fact {
-  padding: 18px;
-  background: #f8fbf7;
-  border: 1px solid #d7e3d6;
-  border-radius: 13px;
-}
-
-.quick-fact strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #194f2a;
-}
-
-.crop-notice-box {
-  padding: 20px;
-  color: #5d4217;
-  background: #fff8e8;
-  border: 1px solid #ead7aa;
-  border-left: 6px solid #c99735;
-  border-radius: 12px;
-}
-
-.crop-success-box {
-  padding: 20px;
-  background: #f1f8f2;
-  border: 1px solid #cae0ce;
-  border-left: 6px solid #4c8b5d;
-  border-radius: 12px;
-}
-
-.crop-warning-box {
-  padding: 20px;
-  color: #613e19;
-  background: #fff5e9;
-  border: 1px solid #ead1af;
-  border-left: 6px solid #b46b2e;
-  border-radius: 12px;
-}
-
-.crop-steps {
-  counter-reset: alfalfa-step;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.crop-steps li {
-  position: relative;
-  margin-bottom: 15px;
-  padding: 18px 18px 18px 62px;
-  background: #f8fbf8;
-  border: 1px solid #d8e4d9;
-  border-radius: 12px;
-}
-
-.crop-steps li::before {
-  counter-increment: alfalfa-step;
-  content: counter(alfalfa-step);
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  background: #337747;
-  border-radius: 50%;
-}
-
-.crop-steps strong {
-  display: block;
-  margin-bottom: 5px;
-  color: #194f2a;
-}
-
-.crop-comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.crop-comparison-card {
-  padding: 18px;
-  background: #fafcf9;
-  border: 1px solid #d8e4d9;
-  border-radius: 13px;
-}
-
-.crop-comparison-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-.crop-comparison-card p:last-child {
-  margin-bottom: 0;
-}
-
-.crop-calendar {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.crop-calendar th,
-.crop-calendar td {
-  padding: 13px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #d8e2d8;
-}
-
-.crop-calendar th {
-  color: #ffffff;
-  background: #356f44;
-}
-
-.crop-calendar tr:nth-child(even) td {
-  background: #f7faf7;
-}
-
-.source-card {
-  margin-bottom: 12px;
-  padding: 15px;
-  background: #f7faf7;
-  border: 1px solid #dbe5dc;
-  border-radius: 10px;
-}
-
-.source-card strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.source-card p {
-  margin: 5px 0 0;
-}
-
-.next-guide-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 17px;
-}
-
-.next-guide-card {
-  padding: 19px;
-  background: #f8fbf8;
-  border: 1px solid #d7e3d8;
-  border-radius: 13px;
-}
-
-.next-guide-card h3 {
-  margin-top: 0;
-  color: #194f2a;
-}
-
-@media (max-width: 760px) {
-
-  .quick-facts-grid,
-  .crop-comparison-grid,
-  .next-guide-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .crop-guide-hero {
-    padding: 23px;
-  }
-
-  .crop-calendar {
-    font-size: 0.92rem;
-  }
-
-}
+</style>
 
 </style>
 
@@ -293,23 +106,79 @@ gtag("config", "G-88486JDN1Z");
       "name": "Can chickens eat alfalfa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chickens may eat clean alfalfa leaves, tender forage, properly dried hay, pellets, or meal as supplemental food. Alfalfa should not replace a balanced poultry ration."
+        "text": "Yes. Chickens can eat clean fresh alfalfa, properly dried leafy hay, plain alfalfa pellets, alfalfa meal, and fresh sprouts as supplemental foods. Alfalfa should complement a complete poultry ration rather than replace it."
       }
     },
     {
       "@type": "Question",
-      "name": "Does alfalfa grow back after cutting?",
+      "name": "Can chickens eat fresh alfalfa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Established alfalfa can regrow from its crown after cutting when enough recovery time, moisture, leaf area, and root reserves remain."
+        "text": "Yes. Chickens may eat clean young alfalfa leaves and tender stems as supplemental forage. Leafy growth is generally more useful than mature coarse stems, and access should be managed so the flock does not destroy the crowns and roots."
       }
     },
     {
       "@type": "Question",
-      "name": "Can alfalfa grow inside a chicken run?",
+      "name": "Can chickens eat alfalfa hay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alfalfa may tolerate limited clipping or rotational access, but continuous scratching and close grazing can damage crowns and roots. Protected or cut-and-carry systems are more dependable."
+        "text": "Yes. Choose clean, leafy, properly dried alfalfa hay that is free from mold, excessive dust, weeds, and chemical contamination. Chickens commonly select the leaves and finer pieces while leaving coarse stems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat alfalfa pellets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plain commercial alfalfa pellets may be offered in moderation. They may be fed dry or softened with clean water, but wet leftovers should be removed promptly before they heat, ferment, or spoil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat alfalfa meal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commercial dehydrated alfalfa meal may be used as a measured supplemental ingredient. Because it is concentrated and finely ground, it is best incorporated carefully rather than offered in unrestricted amounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat alfalfa sprouts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Alfalfa sprouts may be offered as fresh supplemental forage when they are produced from clean seed under sanitary conditions. Maintain good rinsing, drainage, airflow, and cleanliness, and discard sprouts that become slimy, moldy, discolored, heated, or foul smelling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can baby chicks eat alfalfa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby chicks should receive a complete chick starter feed as their primary diet. Small amounts of finely chopped fresh alfalfa may be introduced only after chicks are established on starter feed and are old enough to consume supplemental forage safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much alfalfa can chickens eat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single amount appropriate for every flock. Alfalfa should remain supplemental, with most nutrition coming from a complete poultry ration. Begin with small portions and avoid offering enough forage, pellets, or meal to reduce normal complete-feed intake."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chickens eat alfalfa every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small amounts may be offered regularly, but alfalfa should not become the main part of the diet. Its fiber and lower usable energy make it unsuitable as a replacement for nutritionally complete poultry feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can alfalfa replace commercial chicken feed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Alfalfa provides forage nutrients, protein, fiber, minerals, and carotenoid pigments, but it does not supply the complete energy, amino-acid, vitamin, mineral, and calcium balance chickens require."
       }
     },
     {
@@ -317,43 +186,57 @@ gtag("config", "G-88486JDN1Z");
       "name": "Is alfalfa high in protein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Leafy alfalfa can contain relatively high crude protein on a dry-matter basis, but protein and digestibility decline as stems mature and leaf loss increases."
+        "text": "Leafy, early-cut alfalfa can be relatively high in crude protein on a dry-matter basis. Protein concentration and digestibility decline as the crop becomes more mature, stem-heavy, weathered, or damaged during drying and storage."
       }
     },
     {
       "@type": "Question",
-      "name": "Is alfalfa a complete chicken feed?",
+      "name": "Does alfalfa make egg yolks darker?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Alfalfa provides forage nutrients, fiber, carotenoids, and some protein, but it does not provide the complete energy and amino-acid balance required by poultry."
+        "text": "Alfalfa contains carotenoid pigments that may contribute to deeper yellow or orange yolks. The actual result depends on the complete diet, the amount consumed, processing, storage, and each hen's intake."
       }
     },
     {
-  "@type": "Question",
-  "name": "How much alfalfa can chickens eat?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Alfalfa should be offered as a supplemental forage rather than the main part of a chicken's diet. Small amounts provided regularly can add variety, enrichment, and additional nutrients, but most nutrition should continue coming from a complete poultry ration."
-  }
-},
-
-{
-  "@type": "Question",
-  "name": "Can chickens eat fresh alfalfa?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Yes, chickens can eat fresh young alfalfa as a supplemental green forage. Tender leaves are generally more useful than mature stems, and access should be managed so birds do not destroy the entire planting."
-  }
-},
-
-{
-  "@type": "Question",
-  "name": "Can alfalfa replace commercial chicken feed?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "No. Alfalfa is best used as a supplemental crop that adds forage, enrichment, and additional nutrients. Chickens still require a balanced ration designed to provide the correct energy, amino acids, vitamins, and minerals needed for good health and production."
-  }
-}
+      "@type": "Question",
+      "name": "Does alfalfa grow back after cutting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Established alfalfa can regrow from crown buds when enough root reserves, moisture, leaf area, and recovery time remain. Cutting too frequently or too close to the crown may weaken the stand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can alfalfa grow inside a chicken run?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It may survive limited rotational access, but continuous scratching, close grazing, trampling, and dust bathing commonly damage crowns and roots. Cut-and-carry harvest or protected rotational paddocks are generally more dependable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should alfalfa rest after cutting or grazing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recovery time varies with temperature, moisture, stand age, cutting height, fertility, and season. Allow strong new growth to develop before cutting again or returning chickens to the area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can moldy or dusty alfalfa be fed to chickens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Do not feed alfalfa that is moldy, musty, damp, heated, excessively dusty, chemically contaminated, or spoiled. Questionable forage, pellets, meal, or sprouts should be discarded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will growing alfalfa lower my chicken-feed bill?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly, but savings depend on stand yield, soil preparation, harvesting and drying labor, storage losses, climate, and the price of purchased hay, pellets, and complete feed. Its greatest value may come from repeated forage harvests, soil improvement, pollinator support, and enrichment."
+      }
+    }
   ]
 }
 </script>
@@ -1691,79 +1574,219 @@ This trial will show whether your soil, drainage, climate, and available labor m
 
 </div>
 
-<div class="section">
+<div class="section faq-section">
 
-<h2>❓ Frequently Asked Questions</h2>
+<h2>
+❓ Frequently Asked Questions
+</h2>
 
-<h3>Can chickens eat fresh alfalfa?</h3>
+<div class="faq-list">
 
-<p>
-Yes. Chickens may eat clean fresh leaves and tender stems as supplemental forage.</p>
+<details>
 
-<h3>Can chickens eat alfalfa hay?</h3>
-
-<p>
-Yes, when it is clean, leafy, properly dried, and free from mold and excessive dust. Long coarse stems may be ignored.</p>
-
-<h3>Can chickens eat alfalfa pellets?</h3>
-
-<h3>
-How much alfalfa can chickens eat?
-</h3>
+<summary>
+Can chickens eat alfalfa?
+</summary>
 
 <p>
-
-Alfalfa should be offered as a supplemental forage rather than the main part of a chicken's diet. Small amounts provided regularly can add variety, enrichment, and additional nutrients, but the majority of the flock's nutrition should continue coming from a complete poultry ration.
-
+Yes. Chickens can eat clean fresh alfalfa, properly dried leafy hay, plain alfalfa pellets, alfalfa meal, and fresh sprouts as supplemental foods. Alfalfa should complement a complete poultry ration rather than replace it.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
 Can chickens eat fresh alfalfa?
-</h3>
+</summary>
 
 <p>
-
-Yes, chickens can eat fresh young alfalfa as a supplemental green forage. Tender leaves are generally more useful than mature stems, and access should be managed so birds do not destroy the entire planting.
-
+Yes. Chickens may eat clean young alfalfa leaves and tender stems as supplemental forage. Leafy growth is generally more useful than mature coarse stems, and access should be managed so the flock does not destroy the crowns and roots.
 </p>
 
-<h3>
+</details>
+
+<details>
+
+<summary>
+Can chickens eat alfalfa hay?
+</summary>
+
+<p>
+Yes. Choose clean, leafy, properly dried alfalfa hay that is free from mold, excessive dust, weeds, and chemical contamination. Chickens commonly select the leaves and finer pieces while leaving coarse stems.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat alfalfa pellets?
+</summary>
+
+<p>
+Yes. Plain commercial alfalfa pellets may be offered in moderation. They may be fed dry or softened with clean water, but wet leftovers should be removed promptly before they heat, ferment, or spoil.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat alfalfa meal?
+</summary>
+
+<p>
+Commercial dehydrated alfalfa meal may be used as a measured supplemental ingredient. Because it is concentrated and finely ground, it is best incorporated carefully rather than offered in unrestricted amounts.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat alfalfa sprouts?
+</summary>
+
+<p>
+Yes. Alfalfa sprouts may be offered as fresh supplemental forage when they are produced from clean seed under sanitary conditions. Maintain good rinsing, drainage, airflow, and cleanliness, and discard sprouts that become slimy, moldy, discolored, heated, or foul smelling.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can baby chicks eat alfalfa?
+</summary>
+
+<p>
+Baby chicks should receive a complete chick starter feed as their primary diet. Small amounts of finely chopped fresh alfalfa may be introduced only after chicks are established on starter feed and are old enough to consume supplemental forage safely.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+How much alfalfa can chickens eat?
+</summary>
+
+<p>
+There is no single amount appropriate for every flock. Alfalfa should remain supplemental, with most nutrition coming from a complete poultry ration. Begin with small portions and avoid offering enough forage, pellets, or meal to reduce normal complete-feed intake.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can chickens eat alfalfa every day?
+</summary>
+
+<p>
+Small amounts may be offered regularly, but alfalfa should not become the main part of the diet. Its fiber and lower usable energy make it unsuitable as a replacement for nutritionally complete poultry feed.
+</p>
+
+</details>
+
+<details>
+
+<summary>
 Can alfalfa replace commercial chicken feed?
-</h3>
+</summary>
 
 <p>
-
-No. Alfalfa is best used as a supplemental crop that adds forage, enrichment, and additional nutrients. Chickens still require a balanced ration designed to provide the correct energy, amino acids, vitamins, and minerals.
-
+No. Alfalfa provides forage nutrients, protein, fiber, minerals, and carotenoid pigments, but it does not supply the complete energy, amino-acid, vitamin, mineral, and calcium balance chickens require.
 </p>
 
-<p>
-Plain commercial alfalfa pellets may be offered in moderation. They can be softened with clean water, but wet leftovers should be removed before spoilage.</p>
+</details>
 
-<h3>Does alfalfa grow back after cutting?</h3>
+<details>
 
-<p>
-Yes. Established plants regrow from the crown when they retain sufficient root reserves and receive adequate recovery time.</p>
-
-<h3>Can alfalfa grow inside a chicken run?</h3>
+<summary>
+Is alfalfa high in protein?
+</summary>
 
 <p>
-It may survive limited rotational access, but continuous scratching and close grazing commonly damage crowns and roots.</p>
+Leafy, early-cut alfalfa can be relatively high in crude protein on a dry-matter basis. Protein concentration and digestibility decline as the crop becomes more mature, stem-heavy, weathered, or damaged during drying and storage.
+</p>
 
-<h3>Is alfalfa high in protein?</h3>
+</details>
 
-<p>
-Leafy early-cut alfalfa can be relatively high in protein on a dry-matter basis, but values fall as the crop becomes stemmier and more mature.</p>
+<details>
 
-<h3>Does alfalfa make egg yolks darker?</h3>
-
-<p>
-Its carotenoid pigments may contribute to darker yolk color, although the result depends on the complete diet and actual intake.</p>
-
-<h3>Will alfalfa lower my feed bill?</h3>
+<summary>
+Does alfalfa make egg yolks darker?
+</summary>
 
 <p>
-That depends on stand yield, harvesting and drying labor, storage losses, climate, and the price of purchased hay, pellets, or complete feed.</p>
+Alfalfa contains carotenoid pigments that may contribute to deeper yellow or orange yolks. The actual result depends on the complete diet, the amount consumed, processing, storage, and each hen’s intake.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Does alfalfa grow back after cutting?
+</summary>
+
+<p>
+Yes. Established alfalfa can regrow from crown buds when enough root reserves, moisture, leaf area, and recovery time remain. Cutting too frequently or too close to the crown may weaken the stand.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can alfalfa grow inside a chicken run?
+</summary>
+
+<p>
+It may survive limited rotational access, but continuous scratching, close grazing, trampling, and dust bathing commonly damage crowns and roots. Cut-and-carry harvest or protected rotational paddocks are generally more dependable.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+How long should alfalfa rest after cutting or grazing?
+</summary>
+
+<p>
+Recovery time varies with temperature, moisture, stand age, cutting height, fertility, and season. Allow strong new growth to develop before cutting again or returning chickens to the area.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Can moldy or dusty alfalfa be fed to chickens?
+</summary>
+
+<p>
+No. Do not feed alfalfa that is moldy, musty, damp, heated, excessively dusty, chemically contaminated, or spoiled. Questionable forage, pellets, meal, or sprouts should be discarded.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Will growing alfalfa lower my chicken-feed bill?
+</summary>
+
+<p>
+Possibly, but savings depend on stand yield, soil preparation, harvesting and drying labor, storage losses, climate, and the price of purchased hay, pellets, and complete feed. Its greatest value may come from repeated forage harvests, soil improvement, pollinator support, and enrichment.
+</p>
+
+</details>
+
+</div>
 
 </div>
 
