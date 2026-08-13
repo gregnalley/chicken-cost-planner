@@ -12784,6 +12784,444 @@ const aliasedGoalField =
   }
 
 
+  /*
+  ============================================================
+  STRICT SPECIALIZED-PROCESSING APPROVAL
+
+  These rules are intentionally stricter than the general
+  task-family matcher.
+
+  A visitor selecting one kind of processing work must not
+  automatically be treated as accepting a different grain
+  processing operation.
+  ============================================================
+*/
+
+
+function getStrictProcessingRequirement(
+  task
+) {
+
+  if (!task) {
+    return null;
+  }
+
+  const value =
+    String(task)
+      .toLowerCase();
+
+
+  if (
+    value.includes(
+      "winnow"
+    )
+  ) {
+
+    return "winnow";
+
+  }
+
+
+  if (
+    value.includes(
+      "thresh"
+    )
+  ) {
+
+    return "thresh";
+
+  }
+
+
+  if (
+    value.includes(
+      "shell-corn"
+    )
+  ) {
+
+    return "shell-corn";
+
+  }
+
+
+  if (
+    value.includes(
+      "shell-bean"
+    ) ||
+    value.includes(
+      "shell-cowpea"
+    )
+  ) {
+
+    return "shell-beans";
+
+  }
+
+
+  if (
+    value.includes(
+      "dehull"
+    ) ||
+    value.includes(
+      "de-hull"
+    ) ||
+    value.includes(
+      "de-awn"
+    )
+  ) {
+
+    return "specialized-grain-cleaning";
+
+  }
+
+
+  if (
+    value.includes(
+      "crack"
+    )
+  ) {
+
+    return "crack-grain";
+
+  }
+
+
+  if (
+    value.includes(
+      "grind"
+    ) ||
+    value.includes(
+      "mill"
+    )
+  ) {
+
+    return "grind-grain";
+
+  }
+
+
+  if (
+    value === "dry" ||
+    value.includes(
+      "dry-grain"
+    ) ||
+    value.includes(
+      "dry-seed"
+    ) ||
+    value.includes(
+      "dry-head"
+    ) ||
+    value.includes(
+      "inspect-moisture"
+    )
+  ) {
+
+    return "dry";
+
+  }
+
+
+  if (
+    value.includes(
+      "cook"
+    ) ||
+    value.includes(
+      "boil"
+    ) ||
+    value.includes(
+      "heat-treat"
+    )
+  ) {
+
+    return "cook";
+
+  }
+
+
+  if (
+    value.includes(
+      "ferment"
+    )
+  ) {
+
+    return "ferment";
+
+  }
+
+
+  if (
+    value.includes(
+      "extract-oil"
+    )
+  ) {
+
+    return "extract-oil";
+
+  }
+
+
+  if (
+    value.includes(
+      "mix"
+    ) ||
+    value.includes(
+      "blend"
+    )
+  ) {
+
+    return "mix";
+
+  }
+
+
+  return null;
+
+}
+
+
+function userExplicitlyAcceptsStrictProcessing(
+  requirement,
+  acceptedTasks
+) {
+
+  if (
+    !requirement ||
+    !Array.isArray(
+      acceptedTasks
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  const accepted =
+    new Set(
+      acceptedTasks.map(
+        task =>
+          String(task)
+            .toLowerCase()
+      )
+    );
+
+
+  switch (
+    requirement
+  ) {
+
+    case "dry":
+
+      return accepted.has(
+        "dry"
+      );
+
+
+    case "thresh":
+
+      return accepted.has(
+        "thresh"
+      );
+
+
+    case "winnow":
+
+      return accepted.has(
+        "winnow"
+      );
+
+
+    case "shell-corn":
+
+      return accepted.has(
+        "shell-corn"
+      );
+
+
+    case "shell-beans":
+
+      return accepted.has(
+        "shell-beans"
+      );
+
+
+    case "crack-grain":
+
+      return accepted.has(
+        "crack-grain"
+      );
+
+
+    case "grind-grain":
+
+      return accepted.has(
+        "crack-grain"
+      );
+
+
+    case "cook":
+
+      return accepted.has(
+        "cook"
+      );
+
+
+    case "ferment":
+
+      return accepted.has(
+        "ferment"
+      );
+
+
+    case "mix":
+
+      return accepted.has(
+        "mix"
+      );
+
+
+    case "extract-oil":
+
+      return accepted.has(
+        "extract-oil"
+      );
+
+
+    /*
+      No questionnaire choice currently represents these
+      specialized operations directly, so they are not assumed.
+    */
+
+    case "specialized-grain-cleaning":
+
+      return false;
+
+
+    default:
+
+      return false;
+
+  }
+
+}
+
+
+function usePathDependsOnPrimaryHarvest(
+  usePath
+) {
+
+  const requiredTasks =
+    Array.isArray(
+      usePath
+        ?.requiredProcessingTasks
+    )
+      ? usePath
+          .requiredProcessingTasks
+      : [];
+
+
+  if (
+    requiredTasks.includes(
+      "complete-intended-harvest"
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  return [
+    "after-primary-harvest",
+    "postharvest",
+    "post-harvest"
+  ].includes(
+    usePath?.harvestPattern
+  );
+
+}
+
+
+function visitorAcceptsPrimaryGrainProcessing(
+  answers
+) {
+
+  const acceptedTasks =
+    answers.labor
+      ?.acceptedProcessingTasks ||
+    [];
+
+
+  const dryingCapability =
+    answers.labor
+      ?.dryingCapability;
+
+
+  const acceptsDrying =
+    acceptedTasks.includes(
+      "dry"
+    ) &&
+    dryingCapability !==
+      "none";
+
+
+  const acceptsThreshing =
+    acceptedTasks.includes(
+      "thresh"
+    );
+
+
+  const acceptsWinnowing =
+    acceptedTasks.includes(
+      "winnow"
+    );
+
+
+  return (
+    acceptsDrying &&
+    acceptsThreshing &&
+    acceptsWinnowing
+  );
+
+}
+
+
+function evaluateUsePathPrimaryHarvestDependency(
+  usePath,
+  answers,
+  eligibility
+) {
+
+  if (
+    !usePathDependsOnPrimaryHarvest(
+      usePath
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  if (
+    visitorAcceptsPrimaryGrainProcessing(
+      answers
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  rejectUsePath(
+    eligibility,
+    "primary-harvest-processing-unavailable",
+    "This use path depends on completing a primary grain harvest, but the visitor did not accept the drying, threshing, and winnowing needed for that harvest."
+  );
+
+}
+
 
   /*
     ============================================================
@@ -12811,44 +13249,39 @@ const aliasedGoalField =
           .requiredProcessingTasks
       : [];
 
+
   const acceptedTasks =
     answers.labor
       ?.acceptedProcessingTasks ||
     [];
 
-  const approvalRequiredFamilies =
-    new Set([
-
-      "cook",
-
-      "grind",
-
-      "mix",
-
-      "ferment",
-
-      "extract-oil"
-
-    ]);
 
   return requiredTasks.filter(
     task => {
 
-      const taskFamily =
-        getProcessingTaskFamily(
+      const strictRequirement =
+        getStrictProcessingRequirement(
           task
         );
 
+
+      /*
+        Normal harvesting, inspection, cutting, picking,
+        portioning, and ordinary crop handling remain allowed
+        without explicit specialized-processing approval.
+      */
+
       if (
-        !approvalRequiredFamilies.has(
-          taskFamily
-        )
+        !strictRequirement
       ) {
+
         return false;
+
       }
 
-      return !userAcceptsProcessingTask(
-        task,
+
+      return !userExplicitlyAcceptsStrictProcessing(
+        strictRequirement,
         acceptedTasks
       );
 
@@ -13356,6 +13789,12 @@ const aliasedGoalField =
     );
 
     evaluateUsePathTaskEligibility(
+      usePath,
+      answers,
+      eligibility
+    );
+
+    evaluateUsePathPrimaryHarvestDependency(
       usePath,
       answers,
       eligibility
