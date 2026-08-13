@@ -15166,6 +15166,199 @@ function evaluateSecondarySupportIntentEligibility(
 
 }
 
+
+/*
+  ============================================================
+  WOODY PERENNIAL INTENT
+
+  Trees and large shrubs are long-term landscape commitments.
+
+  Merely allowing permanent planting does not mean the visitor
+  specifically wants a woody perennial crop to occupy part of
+  a small feed-garden space.
+
+  Woody crops remain eligible when the visitor expresses
+  meaningful perennial/tree intent or has a space type that
+  naturally supports woody planting.
+  ============================================================
+*/
+
+
+function evaluateWoodyPerennialIntentEligibility(
+  crop,
+  usePath,
+  answers,
+  eligibility
+) {
+
+  const lifecycle =
+    crop?.plannerData?.lifecycle ||
+    {};
+
+
+  const space =
+    crop?.plannerData?.space ||
+    {};
+
+
+  const site =
+    crop?.plannerData?.site ||
+    {};
+
+
+  const isWoodyPerennial =
+    lifecycle.isTreeOrShrub ===
+      true ||
+    String(
+      site?.directFacts?.growthHabit ||
+      space?.growthHabit ||
+      ""
+    )
+      .toLowerCase()
+      .includes(
+        "tree"
+      ) ||
+    String(
+      site?.directFacts?.growthHabit ||
+      space?.growthHabit ||
+      ""
+    )
+      .toLowerCase()
+      .includes(
+        "large-shrub"
+      );
+
+
+  if (
+    !isWoodyPerennial
+  ) {
+
+    return;
+
+  }
+
+
+  const selectedGoals =
+    Array.isArray(
+      answers.preferences
+        ?.plannerGoals
+    )
+      ? answers.preferences
+          .plannerGoals
+      : [];
+
+
+  const availableSpaceTypes =
+    Array.isArray(
+      answers.space
+        ?.availableSpaceTypes
+    )
+      ? answers.space
+          .availableSpaceTypes
+      : [];
+
+
+  const annualPerennialPreference =
+    answers.preferences
+      ?.annualPerennialPreference;
+
+
+  const reversibilityRequirement =
+    answers.preferences
+      ?.plantingReversibilityRequirement;
+
+
+  const explicitPerennialGoal =
+    selectedGoals.includes(
+      "perennial"
+    );
+
+
+  const explicitPerennialPreference =
+    [
+      "perennial",
+      "prefer-perennial",
+      "perennials"
+    ].includes(
+      annualPerennialPreference
+    );
+
+
+  const woodyFriendlySpace =
+    availableSpaceTypes.some(
+      spaceType =>
+        [
+          "orchard",
+          "hedgerow",
+          "silvopasture",
+          "rotational-paddock"
+        ].includes(
+          spaceType
+        )
+    );
+
+
+  /*
+    "Permanent allowed" permits woody planting,
+    but does not by itself count as positive tree intent.
+  */
+
+  const permanentPlantingAllowed =
+    reversibilityRequirement ===
+      "permanent-allowed";
+
+
+  const hasWoodyIntent =
+    explicitPerennialGoal ||
+    explicitPerennialPreference ||
+    woodyFriendlySpace;
+
+
+  if (
+    hasWoodyIntent
+  ) {
+
+    return;
+
+  }
+
+
+  /*
+    Very small general garden areas should not automatically
+    receive a permanent tree merely because permanent planting
+    happens to be allowed.
+  */
+
+  const totalArea =
+    Number(
+      answers.space
+        ?.totalGrowingAreaSqFt
+    );
+
+
+  const smallGeneralGarden =
+    Number.isFinite(
+      totalArea
+    ) &&
+    totalArea <=
+      250;
+
+
+  if (
+    smallGeneralGarden ||
+    !permanentPlantingAllowed
+  ) {
+
+    rejectUsePath(
+      eligibility,
+      "woody-perennial-intent-not-selected",
+      "This crop is a permanent tree or large shrub, but the visitor did not specifically select a perennial or woody planting system appropriate for that commitment."
+    );
+
+  }
+
+}
+
   /*
     ============================================================
     USE PATH ELIGIBILITY ORCHESTRATOR
@@ -15224,6 +15417,13 @@ function evaluateSecondarySupportIntentEligibility(
     );
 
     evaluateSecondarySupportIntentEligibility(
+      usePath,
+      answers,
+      eligibility
+    );
+
+    evaluateWoodyPerennialIntentEligibility(
+      crop,
       usePath,
       answers,
       eligibility
