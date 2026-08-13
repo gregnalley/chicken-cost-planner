@@ -6220,6 +6220,256 @@ const restrictions =
   }
 
 
+  /*
+  ============================================================
+  USE-PATH DIFFICULTY SCORE
+
+  Measures how simple or demanding a specific use path is.
+
+  Higher score = easier and more beginner-friendly.
+  Lower score = more skill, processing, or concentrated work.
+  ============================================================
+*/
+
+
+function getUsePathDifficultyScore(
+  usePath
+) {
+
+  if (!usePath) {
+    return null;
+  }
+
+
+  const beginnerSuitability =
+    convertFivePointScore(
+      usePath
+        ?.beginnerSuitabilityScore
+    );
+
+
+  const harvestEase =
+    convertFivePointScore(
+      usePath
+        ?.harvestEaseScore
+    );
+
+
+  const preparationEase =
+    convertFivePointScore(
+      usePath
+        ?.preparationEaseScore
+    );
+
+
+  const processingEfficiency =
+    convertFivePointScore(
+      usePath
+        ?.processingEfficiencyScore
+    );
+
+
+  const requiredTasks =
+    Array.isArray(
+      usePath
+        ?.requiredProcessingTasks
+    )
+      ? usePath
+          .requiredProcessingTasks
+      : [];
+
+
+  let easeScore =
+    averageKnownValues([
+
+      beginnerSuitability,
+
+      harvestEase,
+
+      preparationEase,
+
+      processingEfficiency
+
+    ]);
+
+
+  if (
+    !Number.isFinite(
+      easeScore
+    )
+  ) {
+
+    easeScore =
+      60;
+
+  }
+
+
+  /*
+    Specialized processing reduces practical simplicity.
+  */
+
+  const specializedTaskCount =
+    requiredTasks.filter(
+      task => {
+
+        return (
+          getStrictProcessingRequirement(
+            task
+          ) !== null
+        );
+
+      }
+    ).length;
+
+
+  easeScore -=
+    specializedTaskCount *
+      8;
+
+
+  /*
+    Concentrated processing workload also matters.
+  */
+
+  const processingTime =
+    usePath
+      ?.expectedProcessingTimeLevel;
+
+
+  if (
+    [
+      "high",
+      "very-high",
+      "moderate-to-high"
+    ].includes(
+      processingTime
+    )
+  ) {
+
+    easeScore -=
+      12;
+
+  } else if (
+    processingTime ===
+      "moderate"
+  ) {
+
+    easeScore -=
+      5;
+
+  }
+
+
+  return clamp(
+    easeScore,
+    0,
+    100
+  );
+
+}
+
+
+/*
+  ============================================================
+  USE-PATH EXPERIENCE FIT
+
+  Compares pathway difficulty with the visitor's gardening
+  experience.
+
+  Simple pathways remain strong for everyone.
+
+  More difficult pathways become more acceptable as the
+  visitor's experience increases.
+  ============================================================
+*/
+
+
+function getUsePathExperienceFitScore(
+  usePath,
+  answers
+) {
+
+  const pathEase =
+    getUsePathDifficultyScore(
+      usePath
+    );
+
+
+  if (
+    !Number.isFinite(
+      pathEase
+    )
+  ) {
+
+    return null;
+
+  }
+
+
+  const experience =
+    answers.labor
+      ?.gardeningExperience;
+
+
+  switch (
+    experience
+  ) {
+
+    case "none":
+
+      return clamp(
+        pathEase -
+          10,
+        0,
+        100
+      );
+
+
+    case "beginner":
+
+      return pathEase;
+
+
+    case "intermediate":
+
+      return clamp(
+        pathEase +
+          10,
+        0,
+        100
+      );
+
+
+    case "experienced":
+
+      return clamp(
+        pathEase +
+          20,
+        0,
+        100
+      );
+
+
+    case "advanced":
+
+      return clamp(
+        pathEase +
+          30,
+        0,
+        100
+      );
+
+
+    default:
+
+      return pathEase;
+
+  }
+
+}
+
+
 
   /*
     ============================================================
@@ -7717,6 +7967,311 @@ const restrictions =
       100;
 
   }
+
+
+  /*
+  ============================================================
+  USE-PATH INTENT MATCHING
+
+  Measures whether the actual feeding/use method of a path
+  matches the way the visitor indicated they want to use
+  crops in their flock-feeding system.
+
+  This is separate from harvest-product matching.
+
+  Example:
+  Wheat leaves may technically count as fresh greens, but
+  a protected Wheat forage frame should score strongly only
+  when the visitor has shown interest in living forage,
+  forage enrichment, or a forage-frame growing method.
+  ============================================================
+*/
+
+
+function getUsePathIntentMatchScore(
+  usePath,
+  answers
+) {
+
+  if (!usePath) {
+    return null;
+  }
+
+
+  const selectedGoals =
+    Array.isArray(
+      answers.preferences
+        ?.plannerGoals
+    )
+      ? answers.preferences
+          .plannerGoals
+      : [];
+
+
+  const desiredProducts =
+    Array.isArray(
+      answers.harvestStorage
+        ?.desiredHarvestProducts
+    )
+      ? answers.harvestStorage
+          .desiredHarvestProducts
+      : [];
+
+
+  const availableSpaceTypes =
+    Array.isArray(
+      answers.space
+        ?.availableSpaceTypes
+    )
+      ? answers.space
+          .availableSpaceTypes
+      : [];
+
+
+  const feedingMethods =
+    Array.isArray(
+      usePath
+        ?.suitableFeedingMethods
+    )
+      ? usePath
+          .suitableFeedingMethods
+      : [];
+
+
+  const harvestProducts =
+    Array.isArray(
+      usePath
+        ?.harvestProducts
+    )
+      ? usePath
+          .harvestProducts
+      : [];
+
+
+  let score =
+    50;
+
+
+  /*
+    ------------------------------------------------------------
+    LIVING / PROTECTED FORAGE
+    ------------------------------------------------------------
+  */
+
+  const livingForagePath =
+    feedingMethods.some(
+      method =>
+        [
+          "living-forage",
+          "protected-forage",
+          "protected-grazing",
+          "managed-living-supplement"
+        ].includes(
+          method
+        )
+    ) ||
+    harvestProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "living-forage"
+    );
+
+
+  if (
+    livingForagePath
+  ) {
+
+    const explicitForageIntent =
+      selectedGoals.includes(
+        "living-forage"
+      ) ||
+      selectedGoals.includes(
+        "forage-enrichment"
+      ) ||
+      desiredProducts.some(
+        product =>
+          getHarvestProductFamily(
+            product
+          ) ===
+            "living-forage"
+      ) ||
+      availableSpaceTypes.some(
+        spaceType =>
+          [
+            "forage-frame",
+            "protected-forage-frame"
+          ].includes(
+            spaceType
+          )
+      );
+
+
+    if (
+      explicitForageIntent
+    ) {
+
+      score +=
+        40;
+
+    } else {
+
+      score -=
+        30;
+
+    }
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    ORDINARY FRESH GREENS / LEAVES
+    ------------------------------------------------------------
+  */
+
+  const freshGreenPath =
+    harvestProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "fresh-greens"
+    );
+
+
+  if (
+    freshGreenPath
+  ) {
+
+    const wantsFreshGreens =
+      desiredProducts.some(
+        product =>
+          getHarvestProductFamily(
+            product
+          ) ===
+            "fresh-greens"
+      ) ||
+      selectedGoals.includes(
+        "fresh-greens"
+      );
+
+
+    if (
+      wantsFreshGreens
+    ) {
+
+      score +=
+        30;
+
+    }
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    STORAGE PRODUCE
+    ------------------------------------------------------------
+  */
+
+  const storageProducePath =
+    harvestProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "storage-produce"
+    );
+
+
+  if (
+    storageProducePath
+  ) {
+
+    const wantsStorageProduce =
+      desiredProducts.some(
+        product =>
+          getHarvestProductFamily(
+            product
+          ) ===
+            "storage-produce"
+      ) ||
+      selectedGoals.includes(
+        "long-storage"
+      ) ||
+      selectedGoals.includes(
+        "winter-feed"
+      );
+
+
+    if (
+      wantsStorageProduce
+    ) {
+
+      score +=
+        35;
+
+    }
+
+  }
+
+
+  /*
+    ------------------------------------------------------------
+    DRY GRAIN
+    ------------------------------------------------------------
+  */
+
+  const grainPath =
+    harvestProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "dry-grain"
+    );
+
+
+  if (
+    grainPath
+  ) {
+
+    const wantsGrain =
+      desiredProducts.some(
+        product =>
+          getHarvestProductFamily(
+            product
+          ) ===
+            "dry-grain"
+      );
+
+
+    if (
+      wantsGrain
+    ) {
+
+      score +=
+        35;
+
+    } else {
+
+      score -=
+        25;
+
+    }
+
+  }
+
+
+  return clamp(
+    score,
+    0,
+    100
+  );
+
+}
 
 
 
@@ -14771,46 +15326,52 @@ function evaluateUsePathPrimaryHarvestDependency(
 
     return {
 
-      productMatch:
-        0.16,
+  productMatch:
+    0.18,
 
-      goalAlignment:
-        0.15,
+  intentMatch:
+    0.12,
 
-      nutritionalRole:
-        0.07,
+  experienceFit:
+    0.10,
 
-      taskFit:
-        0.10,
+  goalAlignment:
+    0.11,
 
-      equipmentFit:
-        0.07,
+  nutritionalRole:
+    0.06,
 
-      processingTime:
-        0.08,
+  taskFit:
+    0.08,
 
-      harvestPattern:
-        0.05,
+  equipmentFit:
+    0.06,
 
-      storageDuration:
-        0.07,
+  processingTime:
+    0.06,
 
-      dryingFit:
-        0.06,
+  harvestPattern:
+    0.04,
 
-      storageSafety:
-        0.07,
+  storageDuration:
+    0.05,
 
-      feedingPracticality:
-        0.07,
+  dryingFit:
+    0.05,
 
-      wasteEfficiency:
-        0.03,
+  storageSafety:
+    0.04,
 
-      pathRisk:
-        0.02
+  feedingPracticality:
+    0.03,
 
-    };
+  wasteEfficiency:
+    0.01,
+
+  pathRisk:
+    0.01
+
+};
 
   }
 
@@ -15017,6 +15578,19 @@ function evaluateUsePathPrimaryHarvestDependency(
         answers
       );
 
+      const intentMatchScore =
+  getUsePathIntentMatchScore(
+    usePath,
+    answers
+  );
+
+
+const experienceFitScore =
+  getUsePathExperienceFitScore(
+    usePath,
+    answers
+  );
+
     const goalAlignmentScore =
       getUsePathGoalAlignmentScore(
         crop,
@@ -15100,6 +15674,25 @@ function evaluateUsePathPrimaryHarvestDependency(
         "This path provides the type of harvest product the visitor requested.",
         "This path does not closely match the requested harvest product."
       ),
+
+      createUsePathFactor(
+  "intent-match",
+  "Use-Path Intent Match",
+  intentMatchScore,
+  weights.intentMatch,
+  "This feeding method closely matches how the visitor intends to use the crop.",
+  "This feeding method is technically possible but does not closely match the visitor's selected crop-use preferences."
+),
+
+
+createUsePathFactor(
+  "experience-fit",
+  "Difficulty and Experience Fit",
+  experienceFitScore,
+  weights.experienceFit,
+  "The difficulty of this feeding pathway fits the visitor's gardening experience.",
+  "This feeding pathway may require more skill or processing than is ideal for the visitor's experience level."
+),
 
       createUsePathFactor(
         "goal-alignment",
