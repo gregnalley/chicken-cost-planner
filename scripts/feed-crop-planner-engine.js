@@ -14355,6 +14355,19 @@ function isSpecializedForageUsePath(
       ? usePath.harvestProducts
       : [];
 
+    const primaryFeedRole =
+  String(
+    usePath.primaryFeedRole || ""
+  ).toLowerCase();
+
+
+const requiredTasks =
+  Array.isArray(
+    usePath.requiredProcessingTasks
+  )
+    ? usePath.requiredProcessingTasks
+    : [];  
+
 
   if (
     id.includes(
