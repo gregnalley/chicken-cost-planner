@@ -890,7 +890,7 @@ const practicalRatings =
   */
 
 
-  function evaluateUsePathEligibility(
+  function evaluateCropUsePathAvailabilityEligibility(
     crop,
     answers,
     evaluation
@@ -985,7 +985,7 @@ const practicalRatings =
       return;
     }
 
-    evaluateUsePathEligibility(
+    evaluateCropUsePathAvailabilityEligibility(
       crop,
       answers,
       evaluation
