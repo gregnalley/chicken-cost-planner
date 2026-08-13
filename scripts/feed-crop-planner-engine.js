@@ -14960,6 +14960,212 @@ function evaluateMatureGrainIntentEligibility(
 }
 
 
+/*
+  ============================================================
+  SECONDARY BIOMASS / SUPPORT INTENT
+
+  Biomass, mulch, compost, residue, bedding, and similar
+  crop-system support pathways may be valuable secondary
+  benefits.
+
+  They should not drive a primary chicken-feed recommendation
+  unless the visitor actually expressed interest in those
+  support uses.
+  ============================================================
+*/
+
+
+function isSecondarySupportUsePath(
+  usePath
+) {
+
+  if (!usePath) {
+    return false;
+  }
+
+
+  const id =
+    String(
+      usePath.id || ""
+    ).toLowerCase();
+
+
+  const label =
+    String(
+      usePath.label || ""
+    ).toLowerCase();
+
+
+  const primaryRole =
+    String(
+      usePath.primaryFeedRole || ""
+    ).toLowerCase();
+
+
+  const harvestProducts =
+    Array.isArray(
+      usePath.harvestProducts
+    )
+      ? usePath.harvestProducts
+      : [];
+
+
+  const feedingMethods =
+    Array.isArray(
+      usePath.suitableFeedingMethods
+    )
+      ? usePath.suitableFeedingMethods
+      : [];
+
+
+  const supportTerms =
+    [
+      "biomass",
+      "residue",
+      "compost",
+      "mulch",
+      "bedding",
+      "cover-crop",
+      "cover crop",
+      "soil-improvement",
+      "soil-support"
+    ];
+
+
+  const supportIdentity =
+    supportTerms.some(
+      term =>
+        id.includes(term) ||
+        label.includes(term) ||
+        primaryRole.includes(term)
+    );
+
+
+  const supportProducts =
+    harvestProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "biomass"
+    );
+
+
+  const supportFeedingMethods =
+    feedingMethods.some(
+      method => {
+
+        const value =
+          String(method)
+            .toLowerCase();
+
+        return (
+          value.includes("compost") ||
+          value.includes("mulch") ||
+          value.includes("bedding") ||
+          value.includes("cover-crop") ||
+          value.includes("soil-improvement") ||
+          value.includes("indirect-flock")
+        );
+
+      }
+    );
+
+
+  return (
+    supportIdentity ||
+    supportProducts ||
+    supportFeedingMethods
+  );
+
+}
+
+function evaluateSecondarySupportIntentEligibility(
+  usePath,
+  answers,
+  eligibility
+) {
+
+  if (
+    !isSecondarySupportUsePath(
+      usePath
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  const selectedGoals =
+    Array.isArray(
+      answers.preferences
+        ?.plannerGoals
+    )
+      ? answers.preferences
+          .plannerGoals
+      : [];
+
+
+  const desiredProducts =
+    Array.isArray(
+      answers.harvestStorage
+        ?.desiredHarvestProducts
+    )
+      ? answers.harvestStorage
+          .desiredHarvestProducts
+      : [];
+
+
+  const supportGoalTerms =
+    [
+      "soil-improvement",
+      "soil-building",
+      "cover-crop",
+      "compost",
+      "mulch",
+      "bedding",
+      "biomass"
+    ];
+
+
+  const explicitSupportGoal =
+    selectedGoals.some(
+      goal =>
+        supportGoalTerms.includes(
+          goal
+        )
+    );
+
+
+  const explicitSupportProduct =
+    desiredProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "biomass"
+    );
+
+
+  if (
+    explicitSupportGoal ||
+    explicitSupportProduct
+  ) {
+
+    return;
+
+  }
+
+
+  rejectUsePath(
+    eligibility,
+    "secondary-support-intent-not-selected",
+    "This path is primarily a biomass, residue, mulch, compost, bedding, or soil-support pathway, but the visitor did not select that type of crop use."
+  );
+
+}
+
   /*
     ============================================================
     USE PATH ELIGIBILITY ORCHESTRATOR
@@ -15012,6 +15218,12 @@ function evaluateMatureGrainIntentEligibility(
     );
 
     evaluateMatureGrainIntentEligibility(
+      usePath,
+      answers,
+      eligibility
+    );
+
+    evaluateSecondarySupportIntentEligibility(
       usePath,
       answers,
       eligibility
