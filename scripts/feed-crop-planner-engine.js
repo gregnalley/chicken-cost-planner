@@ -15345,23 +15345,23 @@ if (pathResults.length > 0) {
       rejectedPaths;
 
     usePathEvaluation.bestPath =
-      eligiblePaths[0] ||
-      null;
+  directFeedPaths[0] ||
+  null;
 
-    usePathEvaluation.alternativePaths =
-      eligiblePaths.slice(
-        1,
-        4
-      );
+usePathEvaluation.alternativePaths =
+  directFeedPaths.slice(
+    1,
+    4
+  );
 
     usePathEvaluation.score =
       calculateOverallUsePathScore(
-        eligiblePaths
+        directFeedPaths
       );
 
     usePathEvaluation.evidenceCoverage =
       calculateOverallUsePathCoverage(
-        eligiblePaths
+        directFeedPaths
       );
 
     usePathEvaluation.directFeedPaths =
