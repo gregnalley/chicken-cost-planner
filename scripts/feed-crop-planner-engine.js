@@ -14340,6 +14340,12 @@ function isSpecializedForageUsePath(
     ).toLowerCase();
 
 
+  const primaryFeedRole =
+    String(
+      usePath.primaryFeedRole || ""
+    ).toLowerCase();
+
+
   const feedingMethods =
     Array.isArray(
       usePath.suitableFeedingMethods
@@ -14355,19 +14361,27 @@ function isSpecializedForageUsePath(
       ? usePath.harvestProducts
       : [];
 
-    const primaryFeedRole =
-  String(
-    usePath.primaryFeedRole || ""
-  ).toLowerCase();
+
+  const requiredTasks =
+    Array.isArray(
+      usePath.requiredProcessingTasks
+    )
+      ? usePath.requiredProcessingTasks
+      : [];
 
 
-const requiredTasks =
-  Array.isArray(
-    usePath.requiredProcessingTasks
-  )
-    ? usePath.requiredProcessingTasks
-    : [];  
+  const directFacts =
+    usePath.directFacts &&
+    typeof usePath.directFacts === "object"
+      ? usePath.directFacts
+      : {};
 
+
+  /*
+    -------------------------------------------------------
+    1. Protected forage-frame systems
+    -------------------------------------------------------
+  */
 
   if (
     id.includes(
@@ -14383,6 +14397,12 @@ const requiredTasks =
   }
 
 
+  /*
+    -------------------------------------------------------
+    2. Explicit specialized living-forage feeding methods
+    -------------------------------------------------------
+  */
+
   if (
     feedingMethods.some(
       method =>
@@ -14392,7 +14412,8 @@ const requiredTasks =
           "protected-grazing",
           "managed-living-supplement"
         ].includes(
-          method
+          String(method)
+            .toLowerCase()
         )
     )
   ) {
@@ -14401,6 +14422,12 @@ const requiredTasks =
 
   }
 
+
+  /*
+    -------------------------------------------------------
+    3. Harvest products classified as living forage
+    -------------------------------------------------------
+  */
 
   if (
     harvestProducts.some(
@@ -14418,46 +14445,88 @@ const requiredTasks =
 
 
   /*
-  A deliberately established living forage stand is a
-  specialized forage system even when it does not require
-  a physical forage frame.
-*/
+    -------------------------------------------------------
+    4. Deliberately established living forage stands
 
-const establishesLivingForageStand =
-  requiredTasks.some(
-    task => {
+    A deliberately established living forage stand is a
+    specialized forage system even when it does not require
+    a physical forage frame.
+    -------------------------------------------------------
+  */
 
-      const value =
-        String(task)
-          .toLowerCase();
+  const establishesLivingForageStand =
+    requiredTasks.some(
+      task => {
 
-      return (
-        value.startsWith(
-          "establish-living-"
-        ) &&
-        value.includes(
-          "-stand"
-        )
-      );
+        const value =
+          String(
+            task
+          ).toLowerCase();
 
-    }
-  );
+        return (
+          value.startsWith(
+            "establish-living-"
+          ) &&
+          value.includes(
+            "-stand"
+          )
+        );
+
+      }
+    );
 
 
-const foragePrimaryRole =
-  primaryFeedRole.includes(
-    "forage"
-  );
+  const foragePrimaryRole =
+    primaryFeedRole.includes(
+      "forage"
+    );
 
 
-if (
-  establishesLivingForageStand &&
-  foragePrimaryRole
-) {
+  if (
+    establishesLivingForageStand &&
+    foragePrimaryRole
+  ) {
 
-  return true;
+    return true;
 
-}
+  }
+
+
+  /*
+    -------------------------------------------------------
+    5. Hydroponic fodder systems
+
+    Hydroponic fodder is a specialized production system,
+    not ordinary fresh-cut forage.
+
+    It should therefore require explicit compatibility
+    with the user's labor, equipment, and management
+    preferences rather than automatically rescuing a crop
+    simply because the final product is fresh forage.
+    -------------------------------------------------------
+  */
+
+  const hydroponicSystem =
+    id.includes(
+      "hydroponic"
+    ) ||
+    label.includes(
+      "hydroponic"
+    ) ||
+    primaryFeedRole.includes(
+      "hydroponic"
+    ) ||
+    directFacts.hydroponicProduction ===
+      true;
+
+
+  if (
+    hydroponicSystem
+  ) {
+
+    return true;
+
+  }
 
 
   return false;
