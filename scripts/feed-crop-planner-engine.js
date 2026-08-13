@@ -15591,15 +15591,27 @@ function isDirectFeedUsePath(
 
 
   const indirectFeedingMethods =
-    new Set([
+  new Set([
 
-      "not-directly-fed",
+    "not-directly-fed",
 
-      "indirect-flock-support",
+    "indirect-flock-support",
 
-      "indirect-flock-benefit"
+    "indirect-flock-benefit",
 
-    ]);
+    "non-feed-soil-improvement",
+
+    "cover-cropping",
+
+    "mulch-production",
+
+    "compost-production",
+
+    "carbon-source",
+
+    "crop-rotation"
+
+  ]);
 
 
   if (
@@ -15626,7 +15638,9 @@ function isDirectFeedUsePath(
 
       "soil-improvement",
 
-      "soil-support-system"
+      "soil-support-system",
+
+      "indirect-soil-cover-and-biomass-support"
 
     ]);
 
