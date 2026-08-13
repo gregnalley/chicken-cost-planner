@@ -15096,6 +15096,117 @@ const aliasedGoalField =
   }
 
 
+  /*
+  ============================================================
+  DIRECT FEED USE-PATH CLASSIFICATION
+
+  A use path may be agronomically useful without producing
+  something that chickens actually consume.
+
+  Indirect-support paths remain available for diagnostics and
+  secondary benefits, but they cannot drive the primary crop
+  recommendation in the Feed Crop Planner.
+  ============================================================
+*/
+
+
+function isDirectFeedUsePath(
+  pathResult
+) {
+
+  const usePath =
+    pathResult?.usePath ||
+    pathResult;
+
+  if (!usePath) {
+    return false;
+  }
+
+
+  /*
+    Respect explicit crop-record classification first.
+  */
+
+  if (
+    usePath.directFacts
+      ?.directFeedPath ===
+        false
+  ) {
+
+    return false;
+
+  }
+
+
+  /*
+    Some existing use paths identify indirect use through
+    their feeding-method metadata.
+  */
+
+  const feedingMethods =
+    Array.isArray(
+      usePath.suitableFeedingMethods
+    )
+      ? usePath.suitableFeedingMethods
+      : [];
+
+
+  const indirectFeedingMethods =
+    new Set([
+
+      "not-directly-fed",
+
+      "indirect-flock-support",
+
+      "indirect-flock-benefit"
+
+    ]);
+
+
+  if (
+    feedingMethods.some(
+      method =>
+        indirectFeedingMethods.has(
+          method
+        )
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  /*
+    Soil-service roles are useful crop-system benefits,
+    not direct poultry-feed products.
+  */
+
+  const indirectPrimaryRoles =
+    new Set([
+
+      "soil-improvement",
+
+      "soil-support-system"
+
+    ]);
+
+
+  if (
+    indirectPrimaryRoles.has(
+      usePath.primaryFeedRole
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  return true;
+
+}
+
 
   /*
     ============================================================
@@ -15205,6 +15316,18 @@ if (pathResults.length > 0) {
           compareUsePathResults
         );
 
+     const directFeedPaths =
+  eligiblePaths
+    .filter(
+      path =>
+        isDirectFeedUsePath(
+          path
+        )
+    )
+    .sort(
+      compareUsePathResults
+    );   
+
     const rejectedPaths =
       pathResults
         .filter(
@@ -15241,24 +15364,27 @@ if (pathResults.length > 0) {
         eligiblePaths
       );
 
+    usePathEvaluation.directFeedPaths =
+      directFeedPaths;
+
     if (
-  eligiblePaths.length === 0
+  directFeedPaths.length === 0
 ) {
 
   usePathEvaluation.warnings.push(
-    "No eligible use path remains after processing, equipment, drying, storage, and feeding requirements were evaluated."
+    "No eligible direct-feed use path remains after processing, equipment, drying, storage, feeding, and practical-use requirements were evaluated."
   );
 
   failEligibility(
     evaluation,
-    "No practical harvest-and-feed pathway remains under the visitor's selected processing, equipment, drying, storage, and feeding constraints."
+    "No practical direct chicken-feed pathway remains under the visitor's selected processing, equipment, drying, storage, and feeding constraints."
   );
 
 }
 
     if (
-      eligiblePaths.length === 1
-    ) {
+  directFeedPaths.length === 1
+) {
 
       usePathEvaluation.warnings.push(
         "Only one use path is practical under the selected conditions."
