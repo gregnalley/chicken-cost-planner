@@ -14304,6 +14304,257 @@ function evaluateUsePathPrimaryHarvestDependency(
   }
 
 
+  /*
+  ============================================================
+  SPECIALIZED FORAGE INTENT
+
+  Living-forage and protected-forage systems are legitimate
+  direct-feed pathways, but they should not become the crop's
+  practical recommendation path unless the visitor actually
+  expressed interest in using that kind of system.
+
+  Ordinary fresh leaves and cut greens are NOT treated as
+  specialized forage here.
+  ============================================================
+*/
+
+
+function isSpecializedForageUsePath(
+  usePath
+) {
+
+  if (!usePath) {
+    return false;
+  }
+
+
+  const id =
+    String(
+      usePath.id || ""
+    ).toLowerCase();
+
+
+  const label =
+    String(
+      usePath.label || ""
+    ).toLowerCase();
+
+
+  const feedingMethods =
+    Array.isArray(
+      usePath.suitableFeedingMethods
+    )
+      ? usePath.suitableFeedingMethods
+      : [];
+
+
+  const harvestProducts =
+    Array.isArray(
+      usePath.harvestProducts
+    )
+      ? usePath.harvestProducts
+      : [];
+
+
+  if (
+    id.includes(
+      "forage-frame"
+    ) ||
+    label.includes(
+      "forage frame"
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  if (
+    feedingMethods.some(
+      method =>
+        [
+          "living-forage",
+          "protected-forage",
+          "protected-grazing",
+          "managed-living-supplement"
+        ].includes(
+          method
+        )
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  if (
+    harvestProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "living-forage"
+    )
+  ) {
+
+    return true;
+
+  }
+
+
+  return false;
+
+}
+
+
+function evaluateSpecializedForageIntentEligibility(
+  usePath,
+  answers,
+  eligibility
+) {
+
+  if (
+    !isSpecializedForageUsePath(
+      usePath
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  const selectedGoals =
+    Array.isArray(
+      answers.preferences
+        ?.plannerGoals
+    )
+      ? answers.preferences
+          .plannerGoals
+      : [];
+
+
+  const desiredProducts =
+    Array.isArray(
+      answers.harvestStorage
+        ?.desiredHarvestProducts
+    )
+      ? answers.harvestStorage
+          .desiredHarvestProducts
+      : [];
+
+
+  const availableSpaceTypes =
+    Array.isArray(
+      answers.space
+        ?.availableSpaceTypes
+    )
+      ? answers.space
+          .availableSpaceTypes
+      : [];
+
+
+  const ownedEquipment =
+    Array.isArray(
+      answers.labor
+        ?.ownedEquipment
+    )
+      ? answers.labor
+          .ownedEquipment
+      : [];
+
+
+  const equipmentWillingness =
+    Array.isArray(
+      answers.labor
+        ?.equipmentPurchaseWillingness
+    )
+      ? answers.labor
+          .equipmentPurchaseWillingness
+      : [];
+
+
+  const explicitForageGoal =
+    selectedGoals.includes(
+      "living-forage"
+    ) ||
+    selectedGoals.includes(
+      "forage-enrichment"
+    );
+
+
+  const explicitForageProduct =
+    desiredProducts.some(
+      product =>
+        getHarvestProductFamily(
+          product
+        ) ===
+          "living-forage"
+    );
+
+
+  const explicitForageSpace =
+    availableSpaceTypes.some(
+      spaceType =>
+        [
+          "forage-frame",
+          "protected-forage-frame"
+        ].includes(
+          spaceType
+        )
+    );
+
+
+  const forageEquipmentTerms =
+    [
+      "forage-frame",
+      "protected-forage-frame",
+      "forage-frame-or-wire-panel"
+    ];
+
+
+  const explicitForageEquipment =
+    ownedEquipment.some(
+      equipment =>
+        forageEquipmentTerms.includes(
+          equipment
+        )
+    ) ||
+    equipmentWillingness.some(
+      equipment =>
+        forageEquipmentTerms.includes(
+          equipment
+        )
+    );
+
+
+  const hasExplicitForageIntent =
+    explicitForageGoal ||
+    explicitForageProduct ||
+    explicitForageSpace ||
+    explicitForageEquipment;
+
+
+  if (
+    hasExplicitForageIntent
+  ) {
+
+    return;
+
+  }
+
+
+  rejectUsePath(
+    eligibility,
+    "specialized-forage-intent-not-selected",
+    "This path requires a living or protected forage system, but the visitor did not select a forage-based growing or feeding method."
+  );
+
+}
+
+
 
   /*
     ============================================================
@@ -14339,6 +14590,12 @@ function evaluateUsePathPrimaryHarvestDependency(
     }
 
     evaluateUsePathProductEligibility(
+      usePath,
+      answers,
+      eligibility
+    );
+
+    evaluateSpecializedForageIntentEligibility(
       usePath,
       answers,
       eligibility
