@@ -8142,8 +8142,9 @@ function getUsePathIntentMatchScore(
 
 
   if (
-    freshGreenPath
-  ) {
+  freshGreenPath &&
+  !livingForagePath
+) {
 
     const wantsFreshGreens =
       desiredProducts.some(
@@ -8163,7 +8164,7 @@ function getUsePathIntentMatchScore(
     ) {
 
       score +=
-        30;
+        40;
 
     }
 
