@@ -22320,16 +22320,15 @@ if (pathResults.length > 0) {
 
 
   function isCropEligible(
-    evaluation
-  ) {
+  evaluation
+) {
 
-    return (
-      evaluation.eligibility
-        ?.eligible !==
-          false
-    );
+  return (
+    evaluation?.eligible !== false &&
+    evaluation?.eligibility?.passed !== false
+  );
 
-  }
+}
 
 
 
