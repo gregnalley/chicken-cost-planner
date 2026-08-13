@@ -1755,65 +1755,6 @@ const practicalRatings =
       factors
     );
 
-    const practicalSpaceTypeIsPoor =
-  Number.isFinite(
-    spaceTypeScore
-  ) &&
-  spaceTypeScore <
-    50;
-
-const practicalAreaIsPoor =
-  Number.isFinite(
-    areaScore
-  ) &&
-  areaScore <
-    50;
-
-
-if (
-  practicalSpaceTypeIsPoor &&
-  practicalAreaIsPoor
-) {
-
-  evidence.score =
-    Math.min(
-      evidence.score ?? 100,
-      55
-    );
-
-  evidence.warnings.push(
-    "The crop is both poorly suited to the selected growing-space type and below its practical production-area requirement."
-  );
-
-} else if (
-  practicalAreaIsPoor
-) {
-
-  evidence.score =
-    Math.min(
-      evidence.score ?? 100,
-      62
-    );
-
-  evidence.warnings.push(
-    "The available growing area is below this crop's practical production threshold."
-  );
-
-} else if (
-  practicalSpaceTypeIsPoor
-) {
-
-  evidence.score =
-    Math.min(
-      evidence.score ?? 100,
-      65
-    );
-
-  evidence.warnings.push(
-    "The selected growing-space type is a poor practical fit for this crop."
-  );
-
-}
 
     if (
       climateType ===
@@ -5368,14 +5309,73 @@ const preferredArea =
     ];
 
     finalizeEvidenceObject(
-      evidence,
-      factors
+  evidence,
+  factors
+);
+
+const practicalSpaceTypeIsPoor =
+  Number.isFinite(
+    spaceTypeScore
+  ) &&
+  spaceTypeScore <
+    50;
+
+const practicalAreaIsPoor =
+  Number.isFinite(
+    areaScore
+  ) &&
+  areaScore <
+    50;
+
+if (
+  practicalSpaceTypeIsPoor &&
+  practicalAreaIsPoor
+) {
+
+  evidence.score =
+    Math.min(
+      evidence.score ?? 100,
+      55
     );
 
-    const restrictions =
-      answers.space
-        ?.plantBehaviorRestrictions ||
-      [];
+  evidence.warnings.push(
+    "The crop is both poorly suited to the selected growing-space type and below its practical production-area requirement."
+  );
+
+} else if (
+  practicalAreaIsPoor
+) {
+
+  evidence.score =
+    Math.min(
+      evidence.score ?? 100,
+      62
+    );
+
+  evidence.warnings.push(
+    "The available growing area is below this crop's practical production threshold."
+  );
+
+} else if (
+  practicalSpaceTypeIsPoor
+) {
+
+  evidence.score =
+    Math.min(
+      evidence.score ?? 100,
+      65
+    );
+
+  evidence.warnings.push(
+    "The selected growing-space type is a poor practical fit for this crop."
+  );
+
+}
+
+const restrictions =
+  answers.space
+    ?.plantBehaviorRestrictions ||
+  [];
 
     if (
       restrictions.includes(
