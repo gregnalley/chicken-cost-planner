@@ -14786,6 +14786,180 @@ function evaluateSpecializedProcessedFeedIntentEligibility(
 }
 
 
+
+/*
+  ============================================================
+  MATURE GRAIN HARVEST INTENT
+
+  A visitor's willingness to perform grain-related tasks is
+  permission, not intent.
+
+  Dry-grain and mature-grain pathways may drive a crop
+  recommendation only when the visitor actually selected
+  a compatible grain harvest product.
+  ============================================================
+*/
+
+
+function evaluateMatureGrainIntentEligibility(
+  usePath,
+  answers,
+  eligibility
+) {
+
+  if (!usePath) {
+    return;
+  }
+
+
+  const harvestProducts =
+    Array.isArray(
+      usePath.harvestProducts
+    )
+      ? usePath.harvestProducts
+      : [];
+
+
+  const desiredProducts =
+    Array.isArray(
+      answers.harvestStorage
+        ?.desiredHarvestProducts
+    )
+      ? answers.harvestStorage
+          .desiredHarvestProducts
+      : [];
+
+
+  /*
+    Determine whether this use path actually produces
+    mature grain.
+  */
+
+  const grainHarvestPath =
+    harvestProducts.some(
+      product => {
+
+        const family =
+          getHarvestProductFamily(
+            product
+          );
+
+
+        const value =
+          String(product)
+            .toLowerCase();
+
+
+        return (
+          family ===
+            "dry-grain" ||
+
+          value.includes(
+            "dry-grain"
+          ) ||
+
+          value.includes(
+            "whole-grain"
+          ) ||
+
+          value.includes(
+            "stored-grain"
+          ) ||
+
+          value.includes(
+            "grain-kernel"
+          ) ||
+
+          value.includes(
+            "corn-kernel"
+          ) ||
+
+          value.includes(
+            "shelled-corn"
+          )
+        );
+
+      }
+    );
+
+
+  if (
+    !grainHarvestPath
+  ) {
+
+    return;
+
+  }
+
+
+  /*
+    Look for actual grain-product intent.
+
+    The fact that the visitor accepts shelling, cracking,
+    threshing, or other processing tasks does NOT count here.
+  */
+
+  const wantsGrain =
+    desiredProducts.some(
+      product => {
+
+        const family =
+          getHarvestProductFamily(
+            product
+          );
+
+
+        const value =
+          String(product)
+            .toLowerCase();
+
+
+        return (
+          family ===
+            "dry-grain" ||
+
+          family ===
+            "processed-feed" ||
+
+          value.includes(
+            "grain"
+          ) ||
+
+          value.includes(
+            "corn-kernel"
+          ) ||
+
+          value.includes(
+            "shelled-corn"
+          ) ||
+
+          value.includes(
+            "processed-corn"
+          )
+        );
+
+      }
+    );
+
+
+  if (
+    wantsGrain
+  ) {
+
+    return;
+
+  }
+
+
+  rejectUsePath(
+    eligibility,
+    "mature-grain-intent-not-selected",
+    "This path produces mature grain, but the visitor did not select grain as a desired harvest product."
+  );
+
+}
+
+
   /*
     ============================================================
     USE PATH ELIGIBILITY ORCHESTRATOR
@@ -14832,6 +15006,12 @@ function evaluateSpecializedProcessedFeedIntentEligibility(
     );
 
     evaluateSpecializedProcessedFeedIntentEligibility(
+      usePath,
+      answers,
+      eligibility
+    );
+
+    evaluateMatureGrainIntentEligibility(
       usePath,
       answers,
       eligibility
