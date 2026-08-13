@@ -14555,6 +14555,236 @@ function evaluateSpecializedForageIntentEligibility(
 }
 
 
+/*
+  ============================================================
+  SPECIALIZED PROCESSED-FEED INTENT
+
+  A visitor being willing to perform a processing task does
+  not mean they want the planner to recommend crops whose
+  primary practical pathway depends on that processing.
+
+  Cracked, ground, milled, or otherwise processed-feed paths
+  require explicit harvest-product intent before they may
+  drive a recommendation.
+  ============================================================
+*/
+
+
+function isSpecializedProcessedFeedUsePath(
+  usePath
+) {
+
+  if (!usePath) {
+    return false;
+  }
+
+
+  const id =
+    String(
+      usePath.id || ""
+    ).toLowerCase();
+
+
+  const label =
+    String(
+      usePath.label || ""
+    ).toLowerCase();
+
+
+  const harvestProducts =
+    Array.isArray(
+      usePath.harvestProducts
+    )
+      ? usePath.harvestProducts
+      : [];
+
+
+  const requiredTasks =
+    Array.isArray(
+      usePath.requiredProcessingTasks
+    )
+      ? usePath.requiredProcessingTasks
+      : [];
+
+
+  const processedProduct =
+    harvestProducts.some(
+      product => {
+
+        const value =
+          String(product)
+            .toLowerCase();
+
+        return (
+          value.includes("crack") ||
+          value.includes("ground") ||
+          value.includes("meal") ||
+          value.includes("processed-grain") ||
+          value.includes("processed-corn")
+        );
+
+      }
+    );
+
+
+  const processedTask =
+    requiredTasks.some(
+      task => {
+
+        const requirement =
+          getStrictProcessingRequirement(
+            task
+          );
+
+        return (
+          requirement ===
+            "crack-grain" ||
+          requirement ===
+            "grind-grain"
+        );
+
+      }
+    );
+
+
+  const processedIdentity =
+    id.includes(
+      "cracked"
+    ) ||
+    id.includes(
+      "ground"
+    ) ||
+    label.includes(
+      "cracked"
+    ) ||
+    label.includes(
+      "ground"
+    );
+
+
+  return (
+    processedProduct ||
+    processedTask ||
+    processedIdentity
+  );
+
+}
+
+
+function evaluateSpecializedProcessedFeedIntentEligibility(
+  usePath,
+  answers,
+  eligibility
+) {
+
+  if (
+    !isSpecializedProcessedFeedUsePath(
+      usePath
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  const desiredProducts =
+    Array.isArray(
+      answers.harvestStorage
+        ?.desiredHarvestProducts
+    )
+      ? answers.harvestStorage
+          .desiredHarvestProducts
+      : [];
+
+
+  const harvestProducts =
+    Array.isArray(
+      usePath.harvestProducts
+    )
+      ? usePath.harvestProducts
+      : [];
+
+
+  /*
+    First accept a normal product match when one exists.
+  */
+
+  const directProductIntent =
+    desiredProducts.some(
+      desiredProduct =>
+        harvestProducts.some(
+          pathProduct =>
+            harvestProductMatches(
+              desiredProduct,
+              pathProduct
+            )
+        )
+    );
+
+
+  /*
+    Also recognize explicit processed-feed selections whose
+    wording may not fall into exactly the same product family.
+  */
+
+  const explicitProcessedIntent =
+    desiredProducts.some(
+      product => {
+
+        const value =
+          String(product)
+            .toLowerCase();
+
+        return (
+          value.includes(
+            "cracked-grain"
+          ) ||
+          value.includes(
+            "cracked-corn"
+          ) ||
+          value.includes(
+            "processed-corn"
+          ) ||
+          value.includes(
+            "processed-grain"
+          ) ||
+          value.includes(
+            "ground-corn"
+          ) ||
+          value.includes(
+            "ground-grain"
+          ) ||
+          value.includes(
+            "corn-meal"
+          ) ||
+          value.includes(
+            "cornmeal"
+          )
+        );
+
+      }
+    );
+
+
+  if (
+    directProductIntent ||
+    explicitProcessedIntent
+  ) {
+
+    return;
+
+  }
+
+
+  rejectUsePath(
+    eligibility,
+    "specialized-processed-feed-intent-not-selected",
+    "This path depends on producing cracked, ground, or otherwise processed feed, but the visitor did not select that type of harvest product."
+  );
+
+}
+
 
   /*
     ============================================================
@@ -14596,6 +14826,12 @@ function evaluateSpecializedForageIntentEligibility(
     );
 
     evaluateSpecializedForageIntentEligibility(
+      usePath,
+      answers,
+      eligibility
+    );
+
+    evaluateSpecializedProcessedFeedIntentEligibility(
       usePath,
       answers,
       eligibility
