@@ -14404,6 +14404,49 @@ function isSpecializedForageUsePath(
   }
 
 
+  /*
+  A deliberately established living forage stand is a
+  specialized forage system even when it does not require
+  a physical forage frame.
+*/
+
+const establishesLivingForageStand =
+  requiredTasks.some(
+    task => {
+
+      const value =
+        String(task)
+          .toLowerCase();
+
+      return (
+        value.startsWith(
+          "establish-living-"
+        ) &&
+        value.includes(
+          "-stand"
+        )
+      );
+
+    }
+  );
+
+
+const foragePrimaryRole =
+  primaryFeedRole.includes(
+    "forage"
+  );
+
+
+if (
+  establishesLivingForageStand &&
+  foragePrimaryRole
+) {
+
+  return true;
+
+}
+
+
   return false;
 
 }
