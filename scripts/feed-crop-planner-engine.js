@@ -15242,14 +15242,19 @@ if (pathResults.length > 0) {
       );
 
     if (
-      eligiblePaths.length === 0
-    ) {
+  eligiblePaths.length === 0
+) {
 
-      usePathEvaluation.warnings.push(
-        "No eligible use path remains after processing, equipment, drying, storage, and feeding requirements were evaluated."
-      );
+  usePathEvaluation.warnings.push(
+    "No eligible use path remains after processing, equipment, drying, storage, and feeding requirements were evaluated."
+  );
 
-    }
+  failEligibility(
+    evaluation,
+    "No practical harvest-and-feed pathway remains under the visitor's selected processing, equipment, drying, storage, and feeding constraints."
+  );
+
+}
 
     if (
       eligiblePaths.length === 1
