@@ -1176,16 +1176,16 @@ console.log(
   */
 
   function getRequestedRecommendationCount(
-    answers
-  ) {
-    const format =
-      answers.preferences
-        ?.desiredRecommendationFormat;
+  answers
+) {
+  const format =
+    answers.preferences
+      ?.desiredRecommendationFormat;
 
-    return format === "single"
-      ? 1
-      : 3;
-  }
+  return format === "single"
+    ? 1
+    : 5;
+}
 
   function getDisplayedRecommendations(
     report,
