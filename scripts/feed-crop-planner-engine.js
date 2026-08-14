@@ -7743,20 +7743,30 @@ function getUsePathExperienceFitScore(
     const productFamilies = [
 
       {
-        family:
-          "fresh-greens",
+  family:
+    "fresh-greens",
 
-        patterns: [
-          "fresh-green",
-          "fresh-leaf",
-          "fresh-leaves",
-          "young-leaf",
-          "young-shoot",
-          "green-forage",
-          "fresh-forage",
-          "fresh-cereal-forage"
-        ]
-      },
+  patterns: [
+    "fresh-green",
+    "fresh-leaf",
+    "fresh-leaves",
+
+    "fresh-mature-leaf",
+    "mature-leaf",
+
+    "young-leaf",
+    "young-tender-leaf",
+
+    "tender-leaf",
+    "baby-green",
+    "leafy-green",
+
+    "young-shoot",
+    "green-forage",
+    "fresh-forage",
+    "fresh-cereal-forage"
+  ]
+},
 
       {
         family:
