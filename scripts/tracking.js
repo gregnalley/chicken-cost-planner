@@ -29,8 +29,15 @@ document.addEventListener("click", function (event) {
   const collection =
     clickedLink.closest("[data-collection-id]");
 
-    const placementContainer =
-    clickedLink.closest("[id]");
+  const explicitPlacement =
+    clickedLink.closest(
+      "[data-affiliate-placement]"
+  );
+
+  const placementContainer =
+    clickedLink.closest("[id]"
+
+  );
 
   const displayMode =
     productCard
@@ -38,9 +45,13 @@ document.addEventListener("click", function (event) {
       : "unknown";
 
   const affiliatePlacement =
-    placementContainer
+    explicitPlacement
+      ? explicitPlacement.getAttribute(
+        "data-affiliate-placement"
+      )
+    : placementContainer
       ? placementContainer.id
-      : "unknown";  
+      : "unknown"; 
 
   const productId =
     productCard
