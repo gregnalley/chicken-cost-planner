@@ -29,6 +29,19 @@ document.addEventListener("click", function (event) {
   const collection =
     clickedLink.closest("[data-collection-id]");
 
+    const placementContainer =
+    clickedLink.closest("[id]");
+
+  const displayMode =
+    productCard
+      ? productCard.getAttribute("data-product-display")
+      : "unknown";
+
+  const affiliatePlacement =
+    placementContainer
+      ? placementContainer.id
+      : "unknown";  
+
   const productId =
     productCard
       ? productCard.getAttribute("data-product-id")
@@ -66,6 +79,12 @@ document.addEventListener("click", function (event) {
       collection_id:
         collectionId,
 
+      affiliate_placement:
+        affiliatePlacement,
+
+      affiliate_display:
+        displayMode,
+
       page_location:
         window.location.href,
 
@@ -84,6 +103,11 @@ document.addEventListener("click", function (event) {
       productCategory,
       productTitle,
       collectionId,
+      placement:
+        affiliatePlacement,
+
+      display:
+        displayMode,
 
       url:
         clickedLink.href
