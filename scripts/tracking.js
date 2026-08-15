@@ -119,6 +119,21 @@ document.addEventListener("click", function (event) {
 
   if (!button) return;
 
+    let buttonUrl;
+
+  try {
+    buttonUrl = new URL(
+      button.href,
+      window.location.href
+    );
+  } catch (error) {
+    return;
+  }
+
+  if (buttonUrl.hostname.toLowerCase() === "amzn.to") {
+    return;
+  }
+
   if (typeof gtag === "function") {
     gtag("event", "cta_click", {
       link_text: button.innerText,
