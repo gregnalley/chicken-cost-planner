@@ -2204,6 +2204,33 @@ function renderProductRecommendationCard(
       ? "tile"
       : "full"
   }"
+
+  ${
+    options.affiliatePlacement
+      ? `data-affiliate-placement="${escapeHTML(
+          options.affiliatePlacement
+        )}"`
+      : ""
+  }
+
+  ${
+    options.cropRank
+      ? `data-crop-rank="${escapeHTML(
+          String(
+            options.cropRank
+          )
+        )}"`
+      : ""
+  }
+
+  ${
+    options.cropId
+      ? `data-crop-id="${escapeHTML(
+          options.cropId
+        )}"`
+      : ""
+  }
+
 >
 
       <div class="feed-crop-product-card-header">
@@ -2435,14 +2462,27 @@ function renderTopCropProducts(
             }
 
             return renderProductRecommendationCard(
-              recommendation,
-              {
-                groupLabel,
+  recommendation,
+  {
+    groupLabel,
 
-                cropLabel:
-                  cropName
-              }
-            );
+    cropLabel:
+      cropName,
+
+    affiliatePlacement:
+      "feed-crop-planner-result",
+
+    cropRank:
+      1,
+
+    cropId:
+      firstDefined(
+        topResult?.cropId,
+        topResult?.id,
+        ""
+      )
+  }
+);
 
           })
           .join("")}
@@ -2560,17 +2600,46 @@ function renderAlternativePlanProducts(
                 "🛠️ Helpful Crop Tool";
             }
 
-            return renderProductRecommendationCard(
-              recommendation,
-              {
-                groupLabel,
+            const alternativeResult =
+  index <
+    alternativeResults.length
+      ? alternativeResults[index]
+      : null;
 
-                cropLabel,
+const cropRank =
+  alternativeResult
+    ? index + 2
+    : null;
 
-                compact:
-                  true
-              }
-            );
+const cropId =
+  alternativeResult
+    ? firstDefined(
+        alternativeResult?.cropId,
+        alternativeResult?.id,
+        ""
+      )
+    : null;
+
+return renderProductRecommendationCard(
+  recommendation,
+  {
+    groupLabel,
+
+    cropLabel,
+
+    compact:
+      true,
+
+    affiliatePlacement:
+      alternativeResult
+        ? "feed-crop-planner-result"
+        : "feed-crop-planner-shared",
+
+    cropRank,
+
+    cropId
+  }
+);
 
           })
           .join("")}
