@@ -36,6 +36,25 @@ document.addEventListener("click", function (event) {
       "[data-affiliate-placement]"
   );
 
+  const cropContext =
+    clickedLink.closest(
+      "[data-crop-id], [data-crop-rank]"
+    );
+
+  const cropId =
+    cropContext
+      ? cropContext.getAttribute(
+          "data-crop-id"
+        ) || "none"
+      : "none";
+
+  const cropRank =
+    cropContext
+      ? cropContext.getAttribute(
+          "data-crop-rank"
+        ) || "none"
+      : "none";
+
   const placementContainer =
     clickedLink.closest("[id]"
 
@@ -89,6 +108,12 @@ document.addEventListener("click", function (event) {
       product_title:
         productTitle,
 
+      crop_id:
+        cropId,
+
+      crop_rank:
+        cropRank,
+
       collection_id:
         collectionId,
 
@@ -115,6 +140,8 @@ document.addEventListener("click", function (event) {
       productId,
       productCategory,
       productTitle,
+      cropId,
+      cropRank,
       collectionId,
       placement:
         affiliatePlacement,
