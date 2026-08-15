@@ -115,7 +115,7 @@ document.addEventListener("click", function (event) {
 
 /* CTA/Button Tracking */
 document.addEventListener("click", function (event) {
-  const button = event.target.closest(".card a, .affiliate-button");
+  const button = event.target.closest(".card a");
 
   if (!button) return;
 
