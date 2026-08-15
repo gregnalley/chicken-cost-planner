@@ -24,7 +24,9 @@ document.addEventListener("click", function (event) {
   if (!isAmazonAffiliateLink) return;
 
   const productCard =
-    clickedLink.closest(".affiliate-card");
+    clickedLink.closest(
+      "[data-product-id]"
+  );
 
   const collection =
     clickedLink.closest("[data-collection-id]");

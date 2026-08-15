@@ -2188,12 +2188,23 @@ function renderProductRecommendationCard(
 
   return `
         <article
-      class="feed-crop-product-card${
-        compact
-          ? " feed-crop-product-card--compact"
-          : ""
-      }"
-    >
+  class="feed-crop-product-card${
+    compact
+      ? " feed-crop-product-card--compact"
+      : ""
+  }"
+  data-product-id="${escapeHTML(
+    product.id
+  )}"
+  data-product-category="${escapeHTML(
+    product.category || ""
+  )}"
+  data-product-display="${
+    compact
+      ? "tile"
+      : "full"
+  }"
+>
 
       <div class="feed-crop-product-card-header">
 
@@ -2363,7 +2374,18 @@ function renderTopCropProducts(
     );
 
   return `
-    <section class="feed-crop-results-product-section feed-crop-results-top-products">
+    <section
+  class="feed-crop-results-product-section feed-crop-results-top-products"
+  data-affiliate-placement="feed-crop-planner-result"
+  data-crop-rank="1"
+  data-crop-id="${escapeHTML(
+    firstDefined(
+      topResult?.cropId,
+      topResult?.id,
+      ""
+    )
+  )}"
+>
 
       <div class="feed-crop-results-section-heading">
 
