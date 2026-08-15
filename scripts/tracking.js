@@ -1,34 +1,94 @@
 /* Affiliate Click Tracking */
 document.addEventListener("click", function (event) {
-  const affiliateLink = event.target.closest(".affiliate-button");
+  const clickedLink = event.target.closest("a");
 
-  if (!affiliateLink) return;
+  if (!clickedLink) return;
 
-  const productCard = affiliateLink.closest(".affiliate-card");
-  const collection = affiliateLink.closest("[data-collection-id]");
+  let linkUrl;
 
-  const productId = productCard ? productCard.getAttribute("data-product-id") : "unknown";
-  const productCategory = productCard ? productCard.getAttribute("data-product-category") : "unknown";
-  const collectionId = collection ? collection.getAttribute("data-collection-id") : "none";
-  const productTitle = productCard ? productCard.querySelector("h3")?.innerText : affiliateLink.innerText;
+  try {
+    linkUrl = new URL(
+      clickedLink.href,
+      window.location.href
+    );
+  } catch (error) {
+    return;
+  }
+
+  const hostname =
+    linkUrl.hostname.toLowerCase();
+
+  const isAmazonAffiliateLink =
+    hostname === "amzn.to";
+
+  if (!isAmazonAffiliateLink) return;
+
+  const productCard =
+    clickedLink.closest(".affiliate-card");
+
+  const collection =
+    clickedLink.closest("[data-collection-id]");
+
+  const productId =
+    productCard
+      ? productCard.getAttribute("data-product-id")
+      : "unknown";
+
+  const productCategory =
+    productCard
+      ? productCard.getAttribute("data-product-category")
+      : "unknown";
+
+  const collectionId =
+    collection
+      ? collection.getAttribute("data-collection-id")
+      : "none";
+
+  const productTitle =
+    productCard
+      ? productCard.querySelector("h3")?.innerText
+      : clickedLink.innerText;
 
   if (typeof gtag === "function") {
     gtag("event", "affiliate_click", {
-      product_id: productId,
-      product_category: productCategory,
-      product_title: productTitle,
-      collection_id: collectionId,
-      page_location: window.location.href,
-      link_url: affiliateLink.href
+      affiliate_vendor:
+        "Amazon",
+
+      product_id:
+        productId,
+
+      product_category:
+        productCategory,
+
+      product_title:
+        productTitle,
+
+      collection_id:
+        collectionId,
+
+      page_location:
+        window.location.href,
+
+      link_url:
+        clickedLink.href
     });
   }
 
-  console.log("Affiliate click tracked:", {
-    productId,
-    productCategory,
-    productTitle,
-    collectionId
-  });
+  console.log(
+    "Affiliate click tracked:",
+    {
+      vendor:
+        "Amazon",
+
+      productId,
+      productCategory,
+      productTitle,
+      collectionId,
+
+      url:
+        clickedLink.href
+    }
+  );
 });
 
 /* Internal Link Tracking */
