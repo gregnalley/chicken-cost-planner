@@ -2152,7 +2152,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "https://amzn.to/4kYzW7h",
+    "https://amzn.to/4x9bbKb",
 
 
   image:
