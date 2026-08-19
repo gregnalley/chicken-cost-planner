@@ -412,7 +412,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "",
+    "https://amzn.to/4xTRXZ6",
 
 
   image:
@@ -751,7 +751,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "",
+    "https://amzn.to/4wAWWwq",
 
 
   image:
@@ -1101,7 +1101,7 @@ window.BCP_PRODUCTS = {
 
 
   url:
-    "",
+    "https://amzn.to/4hNZkfT",
 
 
   image:
