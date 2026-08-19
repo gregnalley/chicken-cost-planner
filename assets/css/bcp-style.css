@@ -5170,3 +5170,195 @@ summary::after {
   }
 
 }
+
+
+/*
+  ==================================================
+  Floating Backyard Chicken Planner Promo
+  ==================================================
+*/
+
+.bcp-planner-promo {
+  position:
+    fixed;
+
+  right:
+    14px;
+
+  bottom:
+    14px;
+
+  width:
+    185px;
+
+  max-width:
+    calc(
+      100vw - 28px
+    );
+
+  z-index:
+    9999;
+
+  border-radius:
+    12px;
+
+  box-shadow:
+    0 8px 24px
+    rgba(
+      0,
+      0,
+      0,
+      0.22
+    );
+
+  overflow:
+    visible;
+}
+
+.bcp-planner-promo__link {
+  display:
+    block;
+
+  border-radius:
+    12px;
+
+  overflow:
+    hidden;
+
+  text-decoration:
+    none;
+}
+
+.bcp-planner-promo__image {
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    auto;
+}
+
+.bcp-planner-promo__close {
+  position:
+    absolute;
+
+  top:
+    5px;
+
+  right:
+    5px;
+
+  display:
+    grid;
+
+  width:
+    24px;
+
+  height:
+    24px;
+
+  padding:
+    0;
+
+  place-items:
+    center;
+
+  color:
+    #ffffff;
+
+  background:
+    rgba(
+      20,
+      45,
+      27,
+      0.88
+    );
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.75
+    );
+
+  border-radius:
+    50%;
+
+  cursor:
+    pointer;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size:
+    16px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1;
+
+  z-index:
+    2;
+}
+
+.bcp-planner-promo__close:hover,
+.bcp-planner-promo__close:focus-visible {
+  background:
+    #173f25;
+
+  outline:
+    2px solid
+    #ffffff;
+
+  outline-offset:
+    2px;
+}
+
+/*
+  Mobile
+*/
+
+@media
+(max-width: 600px) {
+
+  .bcp-planner-promo {
+    right:
+      8px;
+
+    bottom:
+      8px;
+
+    width:
+      150px;
+
+    max-width:
+      calc(
+        100vw - 16px
+      );
+  }
+
+  .bcp-planner-promo__close {
+    top:
+      4px;
+
+    right:
+      4px;
+
+    width:
+      22px;
+
+    height:
+      22px;
+
+    font-size:
+      14px;
+  }
+
+}
