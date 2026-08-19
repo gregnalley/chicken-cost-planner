@@ -40718,4 +40718,1282 @@ window.BCP_PRODUCTS = {
 },
 
 
+"PRD-212": {
+
+  id:
+    "PRD-212",
+
+
+  category:
+    "Watering Systems",
+
+
+  subcategory:[
+
+    "waterers",
+
+    "gravity-waterers",
+
+    "beginner-waterers",
+
+    "flock-supplies"
+
+  ],
+
+
+  badge:
+    "🐣 Beginner-Friendly Waterer",
+
+
+  title:
+    "Farm TUFF 3 Gallon Plastic Poultry Drinker",
+
+
+  description:
+    "The Farm TUFF 3 Gallon Plastic Poultry Drinker is a simple gravity-style waterer well suited to new chicken keepers and small backyard flocks. Its translucent reservoir makes the water level easy to monitor, while the built-in handle and durable plastic construction keep everyday filling, carrying, and cleaning straightforward.",
+
+
+  shortDescription:
+    "Simple 3-gallon gravity waterer for beginners and small flocks.",
+
+
+  tileBadge:
+    "🐣 Beginner Pick",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Simple gravity design is easy for beginners to use",
+
+    "3-gallon capacity works well for small backyard flocks",
+
+    "Translucent reservoir makes water level easy to check",
+
+    "Built-in handle simplifies carrying and refilling"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/3TXsE9R",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "chicken-supplies",
+
+        "beginner-chicken-guide",
+
+        "coop-planning"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "clean-water-access",
+
+        "daily-watering",
+
+        "beginner-setup",
+
+        "small-flock-care"
+
+      ],
+
+
+      tags:[
+
+        "waterer",
+
+        "gravity-waterer",
+
+        "beginner-waterer",
+
+        "small-flock",
+
+        "poultry-drinker"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "small-flock",
+
+        "new-chicken-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "gravity-waterer",
+
+
+    relatedProducts:[
+
+      "PRD-007",
+
+      "PRD-213"
+
+    ],
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "new-owner",
+
+        "beginner-setup",
+
+        "starter-flock"
+
+      ],
+
+
+      commonProblems:[
+
+        "water-management",
+
+        "simple-watering-setup",
+
+        "clean-water-access"
+
+      ],
+
+
+      idealUsers:[
+
+        "new-chicken-owner",
+
+        "small-flock-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-002"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "best-chicken-waterers",
+
+      "flock-planner",
+
+      "beginner-chicken-guide",
+
+      "coop-planning"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium"
+
+      ]
+
+    },
+
+
+    priority:
+      82,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "chicken-care",
+
+      "watering",
+
+      "beginner-equipment"
+
+    ],
+
+
+    tags:[
+
+      "waterer",
+
+      "gravity-waterer",
+
+      "beginner-waterer",
+
+      "small-flock",
+
+      "poultry-drinker"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-213": {
+
+  id:
+    "PRD-213",
+
+
+  category:
+    "Watering Systems",
+
+
+  subcategory:[
+
+    "waterers",
+
+    "bucket-waterers",
+
+    "nipple-waterers",
+
+    "low-maintenance-waterers"
+
+  ],
+
+
+  badge:
+    "💧 Cleaner Water Pick",
+
+
+  title:
+    "5 Gallon Horizontal Nipple Chicken Waterer",
+
+
+  description:
+    "A 5 gallon horizontal nipple chicken waterer keeps the main water supply enclosed until birds drink, helping reduce contamination from bedding, dirt, droppings, and other coop debris. The larger bucket capacity also reduces refill frequency, making this style a strong choice for chicken keepers who want cleaner water with less daily maintenance.",
+
+
+  shortDescription:
+    "Enclosed 5-gallon nipple waterer for cleaner water and fewer refills.",
+
+
+  tileBadge:
+    "💧 Low-Maintenance Pick",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Enclosed design helps keep drinking water cleaner",
+
+    "Horizontal nipples reduce open-water contamination",
+
+    "5-gallon capacity reduces refill frequency",
+
+    "Good fit for medium and larger backyard flocks"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4g6JWtJ",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "chicken-supplies",
+
+        "coop-planning"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "clean-water-access",
+
+        "reduced-maintenance",
+
+        "reduced-contamination",
+
+        "daily-watering",
+
+        "medium-flock-care"
+
+      ],
+
+
+      tags:[
+
+        "waterer",
+
+        "bucket-waterer",
+
+        "horizontal-nipples",
+
+        "clean-water",
+
+        "low-maintenance"
+
+      ],
+
+
+      audiences:[
+
+        "intermediate",
+
+        "small-flock",
+
+        "medium-flock",
+
+        "large-flock",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "nipple-waterer",
+
+
+    relatedProducts:[
+
+      "PRD-006",
+
+      "PRD-212",
+
+      "PRD-215"
+
+    ],
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "equipment-upgrade",
+
+        "flock-expansion",
+
+        "maintenance-reduction"
+
+      ],
+
+
+      commonProblems:[
+
+        "dirty-water",
+
+        "water-contamination",
+
+        "frequent-cleaning",
+
+        "frequent-refilling"
+
+      ],
+
+
+      idealUsers:[
+
+        "busy-chicken-owner",
+
+        "medium-flock-owner",
+
+        "large-flock-owner",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-002"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "best-chicken-waterers",
+
+      "flock-planner",
+
+      "coop-planning"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    priority:
+      88,
+
+
+    universal:
+      true,
+
+
+    universalCategories:[
+
+      "chicken-care",
+
+      "watering",
+
+      "flock-management",
+
+      "maintenance-reduction"
+
+    ],
+
+
+    tags:[
+
+      "waterer",
+
+      "bucket-waterer",
+
+      "horizontal-nipples",
+
+      "clean-water",
+
+      "low-maintenance"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+"PRD-214": {
+
+  id:
+    "PRD-214",
+
+
+  category:
+    "Watering Systems",
+
+
+  subcategory:[
+
+    "waterers",
+
+    "heated-waterers",
+
+    "winter-waterers",
+
+    "cold-weather-supplies"
+
+  ],
+
+
+  badge:
+    "❄️ Winter Watering Pick",
+
+
+  title:
+    "API 3 Gallon Heated Chicken Waterer",
+
+
+  description:
+    "The API 3 Gallon Heated Chicken Waterer combines a 3 gallon poultry water reservoir with thermostatically controlled heating to help keep drinking water available during freezing weather. Its 100 watt heating system operates only when needed and is designed to keep water from freezing in temperatures down to 0°F.",
+
+
+  shortDescription:
+    "3-gallon thermostatically controlled heated poultry fountain for freezing weather.",
+
+
+  tileBadge:
+    "❄️ Winter Pick",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "3-gallon poultry watering capacity",
+
+    "100-watt thermostatically controlled heating",
+
+    "Designed to keep water from freezing down to 0°F",
+
+    "Reduces repeated winter ice-breaking chores"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4x5h2A3",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "chicken-supplies",
+
+        "cold-weather-chicken-guide",
+
+        "coop-planning"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "winter-watering",
+
+        "freeze-protection",
+
+        "clean-water-access",
+
+        "cold-weather-flock-care"
+
+      ],
+
+
+      tags:[
+
+        "waterer",
+
+        "heated-waterer",
+
+        "winter-waterer",
+
+        "freeze-protection",
+
+        "cold-weather"
+
+      ],
+
+
+      audiences:[
+
+        "beginner",
+
+        "cold-climate",
+
+        "homesteader",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "heated-waterer",
+
+
+    relatedProducts:[
+
+      "PRD-007",
+
+      "PRD-212",
+
+      "PRD-213"
+
+    ],
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "3-5 years",
+
+
+      affiliatePotential:
+        "high"
+
+    },
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "winter-preparation",
+
+        "equipment-upgrade",
+
+        "cold-weather-setup"
+
+      ],
+
+
+      commonProblems:[
+
+        "frozen-water",
+
+        "winter-water-management",
+
+        "cold-weather-hydration"
+
+      ],
+
+
+      idealUsers:[
+
+        "cold-climate-chicken-owner",
+
+        "winter-chicken-keeper",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-002"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "best-chicken-waterers",
+
+      "cold-weather-chicken-guide",
+
+      "flock-planner",
+
+      "coop-planning"
+
+    ],
+
+
+    productRole:
+      "primary",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    priority:
+      90,
+
+
+    universal:
+      false,
+
+
+    universalCategories:[
+
+      "chicken-care",
+
+      "watering",
+
+      "winter-care"
+
+    ],
+
+
+    tags:[
+
+      "waterer",
+
+      "heated-waterer",
+
+      "winter-waterer",
+
+      "freeze-protection",
+
+      "cold-weather"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+
+"PRD-215": {
+
+  id:
+    "PRD-215",
+
+
+  category:
+    "Watering Systems",
+
+
+  subcategory:[
+
+    "waterers",
+
+    "diy-waterers",
+
+    "watering-cups",
+
+    "automatic-waterers",
+
+    "waterer-parts"
+
+  ],
+
+
+  badge:
+    "🛠️ Backyard Chicken Planner DIY Pick",
+
+
+  title:
+    "RentACoop DIY Auto-Fill Poultry Waterer Cups with Anti-Dirt Covers",
+
+
+  description:
+    "The RentACoop DIY Auto-Fill Poultry Waterer Kit includes six large automatic watering cups with removable inserts and anti-dirt covers. The cups can be installed on buckets, barrels, or other suitable containers, making them a practical option for custom high-capacity chicken waterer projects while helping reduce debris and discourage birds from roosting over the drinking cups.",
+
+
+  shortDescription:
+    "Six auto-fill poultry cups with anti-dirt covers for DIY bucket and barrel waterers.",
+
+
+  tileBadge:
+    "🛠️ DIY Pick",
+
+
+  tileButtonText:
+    "View Price →",
+
+
+  bullets:[
+
+    "Six large automatic poultry watering cups",
+
+    "Anti-dirt covers help reduce debris and discourage roosting",
+
+    "Removable inserts simplify cup cleaning",
+
+    "Works with buckets, barrels, and custom poultry waterer builds"
+
+  ],
+
+
+  buttonText:
+    "View Current Price on Amazon →",
+
+
+  url:
+    "https://amzn.to/4xsudvn",
+
+
+  image:
+    "",
+
+
+  note:
+    "As an Amazon Associate, Backyard Chicken Planner may earn from qualifying purchases.",
+
+
+
+  recommendationData:{
+
+
+    recommendedFor:{
+
+
+      crops:[],
+
+
+      planners:[
+
+        "flock-planner"
+
+      ],
+
+
+      calculators:[],
+
+
+      pageTypes:[
+
+        "best-chicken-waterers",
+
+        "chicken-supplies",
+
+        "backyard-chicken-projects",
+
+        "coop-planning"
+
+      ],
+
+
+      cropStages:[],
+
+
+      useCases:[
+
+        "diy-waterer-build",
+
+        "automatic-watering",
+
+        "large-capacity-watering",
+
+        "reduced-contamination",
+
+        "flock-management"
+
+      ],
+
+
+      tags:[
+
+        "watering-cups",
+
+        "automatic-waterer",
+
+        "diy-waterer",
+
+        "barrel-waterer",
+
+        "bucket-waterer"
+
+      ],
+
+
+      audiences:[
+
+        "diy-owner",
+
+        "homesteader",
+
+        "medium-flock",
+
+        "large-flock",
+
+        "backyard-flock-owner"
+
+      ]
+
+    },
+
+
+    productType:
+      "waterer-component",
+
+
+    relatedProducts:[
+
+      "PRD-006",
+
+      "PRD-213"
+
+    ],
+
+
+    purchaseBehavior:{
+
+
+      purchaseType:
+        "one-time",
+
+
+      replacementFrequency:
+        "as-needed",
+
+
+      affiliatePotential:
+        "medium"
+
+    },
+
+
+    buyerIntent:{
+
+
+      buyerStages:[
+
+        "diy-project",
+
+        "equipment-upgrade",
+
+        "flock-expansion"
+
+      ],
+
+
+      commonProblems:[
+
+        "frequent-refilling",
+
+        "dirty-water",
+
+        "water-management",
+
+        "large-capacity-watering"
+
+      ],
+
+
+      idealUsers:[
+
+        "diy-chicken-owner",
+
+        "homesteader",
+
+        "medium-flock-owner",
+
+        "large-flock-owner"
+
+      ]
+
+    },
+
+
+    recommendedTogether:[
+
+      "PRD-001",
+
+      "PRD-002"
+
+    ],
+
+
+    recommendationContexts:[
+
+      "best-chicken-waterers",
+
+      "backyard-chicken-projects",
+
+      "flock-planner",
+
+      "coop-planning"
+
+    ],
+
+
+    productRole:
+      "supporting",
+
+
+    userCompatibility:{
+
+
+      minimumExperience:
+        "beginner",
+
+
+      advancedOnly:
+        false,
+
+
+      spaceConsiderations:[
+
+        "small",
+
+        "medium",
+
+        "large"
+
+      ]
+
+    },
+
+
+    priority:
+      78,
+
+
+    universal:
+      false,
+
+
+    universalCategories:[
+
+      "watering",
+
+      "diy-projects",
+
+      "flock-management"
+
+    ],
+
+
+    tags:[
+
+      "watering-cups",
+
+      "automatic-waterer",
+
+      "diy-waterer",
+
+      "barrel-waterer",
+
+      "bucket-waterer"
+
+    ],
+
+
+    enabled:
+      true
+
+  }
+
+},
+
+
     };  
