@@ -54,9 +54,46 @@ if (
 
 
 
+
+
+
   } catch (error) {
     console.error("Site script loading error:", error);
   }
 }
 
 loadSiteScripts();
+
+
+/*
+  ==================================================
+  Floating Planner Promo
+  ==================================================
+*/
+
+(function loadPlannerPromo() {
+
+  if (
+    document.querySelector(
+      'script[src="scripts/planner-promo.js"]'
+    )
+  ) {
+    return;
+  }
+
+  const script =
+    document.createElement(
+      "script"
+    );
+
+  script.src =
+    "scripts/planner-promo.js";
+
+  script.defer =
+    true;
+
+  document.body.appendChild(
+    script
+  );
+
+})();
