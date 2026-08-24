@@ -1285,6 +1285,33 @@
 
   }
 
+    /*
+    Purchase the first transportation upgrade.
+
+    By this stage egg production is beginning
+    to exceed the starter pickup's ability to
+    move eggs efficiently.
+
+    One truck upgrade reduces that bottleneck
+    before the strategy begins saving for land.
+  */
+
+  if (
+    state.truckUpgradeIndex === 0
+  ) {
+
+    if (
+      buyTruckUpgrade(
+        state
+      )
+    ) {
+
+      return;
+
+    }
+
+  }
+
 
   /*
     Once the basic income engine exists,
