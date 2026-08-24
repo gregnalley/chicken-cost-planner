@@ -931,6 +931,52 @@ Close
 
     }
 
+    const farmShopButton =
+  document.getElementById(
+    "farm-shop-button"
+  );
+
+
+if(farmShopButton){
+
+
+  farmShopButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.shopUI
+      .open();
+
+
+  };
+
+
+}
+
+const closeShopButton =
+  document.getElementById(
+    "close-shop-button"
+  );
+
+
+if(closeShopButton){
+
+
+  closeShopButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.shopUI
+      .close();
+
+
+  };
+
+
+}
+
 
 
   }
