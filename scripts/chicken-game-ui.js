@@ -33,145 +33,227 @@ BCPChickenGame.ui = {
 
     display.innerHTML =
 
-    `
 
-    <h2>
-    Farm Status
-    </h2>
+`
 
-
-    <p>
-    Day:
-    <span id="game-day"></span>
-    </p>
+<div class="game-container">
 
 
-    <p>
-    Time:
-    <span id="game-time"></span>
-    </p>
+<div class="game-section">
 
 
-    <p>
-    🐔 Chickens:
-    <span id="game-chickens"></span>
-    /
-    <span id="game-chicken-capacity"></span>
-    </p>
+<h2>
+Farm Status
+</h2>
 
 
-    <p>
-    🥚 Eggs:
-    <span id="game-eggs"></span>
-    /
-    <span id="game-egg-capacity"></span>
-    </p>
+<div class="status-grid">
 
 
-    <p>
-    💰 Money:
-    $
-    <span id="game-money"></span>
-    </p>
+<div class="status-card">
+
+🐔 Chickens:
+
+<br>
+
+<span id="game-chickens"></span>
+/
+<span id="game-chicken-capacity"></span>
+
+</div>
 
 
-    <hr>
+
+<div class="status-card">
+
+🥚 Eggs:
+
+<br>
+
+<span id="game-eggs"></span>
+/
+<span id="game-egg-capacity"></span>
+
+</div>
 
 
-    <h2 id="coop-name">
 
-    </h2>
+<div class="status-card">
 
+💰 Money:
 
-    <p>
-    Level:
-    <span id="coop-level"></span>
-    </p>
+<br>
 
+$
+<span id="game-money"></span>
 
-    <p>
-    Capacity:
-    <span id="coop-capacity"></span>
-    chickens
-    </p>
+</div>
 
 
-    <p>
-    Next Upgrade:
-    <br>
-    <span id="coop-upgrade"></span>
-    </p>
+</div>
 
 
-    <hr>
+</div>
 
 
-    <h2>
-    🥚 Egg Storage
-    </h2>
+
+<div class="game-section">
 
 
-    <p>
-    Level:
-    <span id="storage-level"></span>
-    </p>
+<h2>
+Buildings
+</h2>
 
 
-    <p>
-    Capacity:
-    <span id="storage-capacity"></span>
-    eggs
-    </p>
+<div class="building-grid">
 
 
-    <p>
-    Next Upgrade:
-    <br>
-    <span id="storage-upgrade"></span>
-    </p>
+
+<div class="building-card">
 
 
-    <hr>
+<h3 id="coop-name">
+
+</h3>
 
 
-    <button id="coop-button">
-
-      Click Coop
-
-    </button>
-
-
-    <br><br>
+<p>
+Level:
+<span id="coop-level"></span>
+</p>
 
 
-    <button id="sell-button">
-
-      Sell 25 Eggs
-
-    </button>
-
-
-    <br><br>
+<p>
+Capacity:
+<span id="coop-capacity"></span>
+chickens
+</p>
 
 
-    <button id="buy-chicken-button">
+<p>
+Next Upgrade:
 
-      Buy Hen ($50)
+<br>
 
-    </button>
+<span id="coop-upgrade"></span>
 
-
-    <br><br>
-
-
-    <button id="upgrade-coop-button">
-
-      Upgrade Coop
-
-    </button>
+</p>
 
 
-    `;
+<button
+id="upgrade-coop-button"
+class="game-button upgrade-button"
+>
+
+Upgrade Coop
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="building-card">
+
+
+<h3>
+🥚 Egg Storage
+</h3>
+
+
+<p>
+Level:
+<span id="storage-level"></span>
+</p>
+
+
+<p>
+Capacity:
+<span id="storage-capacity"></span>
+eggs
+</p>
+
+
+<p>
+Next Upgrade:
+
+<br>
+
+<span id="storage-upgrade"></span>
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="game-section">
+
+
+<h2>
+Farm Actions
+</h2>
+
+
+<div class="action-grid">
+
+
+<button
+id="coop-button"
+class="game-button"
+>
+
+Click Coop
+
+</button>
+
+
+
+<button
+id="sell-button"
+class="game-button"
+>
+
+Sell 25 Eggs
+
+</button>
+
+
+
+<button
+id="buy-chicken-button"
+class="game-button"
+>
+
+Buy Hen ($50)
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+`;
 
 
 
