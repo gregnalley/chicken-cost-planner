@@ -144,7 +144,7 @@ BCPChickenGame.economy
   BCPChickenGame.ui
 ){
 
-  BCPChickenGame.ui.render();
+  BCPChickenGame.ui.update();
 
 }
 
