@@ -52,6 +52,30 @@ Farm Status
 
 <div class="status-card">
 
+📅 Day:
+
+<br>
+
+<span id="game-day"></span>
+
+</div>
+
+
+
+<div class="status-card">
+
+⏰ Time:
+
+<br>
+
+<span id="game-time"></span>
+
+</div>
+
+
+
+<div class="status-card">
+
 🐔 Chickens:
 
 <br>
