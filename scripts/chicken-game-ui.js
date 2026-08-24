@@ -540,6 +540,39 @@ Upgrade Coop
 </div>
 
 
+<div class="shop-item">
+
+
+<h3>
+🥚 Egg Storage Upgrade
+</h3>
+
+
+<p>
+Increase egg storage capacity.
+</p>
+
+
+<p>
+Cost:
+<br>
+$300
+</p>
+
+
+<button
+id="shop-upgrade-storage-button"
+class="game-button"
+>
+
+Upgrade Storage
+
+</button>
+
+
+</div>
+
+
 
 <button
 id="close-shop-button"
@@ -1028,6 +1061,34 @@ if(shopUpgradeCoopButton){
 
     BCPChickenGame.actions
       .upgradeCoop(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+const shopUpgradeStorageButton =
+  document.getElementById(
+    "shop-upgrade-storage-button"
+  );
+
+
+if(shopUpgradeStorageButton){
+
+
+  shopUpgradeStorageButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .upgradeStorage(
         state
       );
 
