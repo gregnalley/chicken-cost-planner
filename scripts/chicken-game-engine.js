@@ -128,8 +128,8 @@ BCPChickenGame.engine = {
       state.chickens.length;
 
 
-    state.eggs +=
-      chickenCount;
+    BCPChickenGame.economy
+      .produceEggs(state);
 
 
 
