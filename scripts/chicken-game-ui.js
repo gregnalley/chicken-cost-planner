@@ -477,7 +477,7 @@ class="shop-modal"
 Purchase farm upgrades and animals.
 </p>
 
-
+<div class="shop-grid">
 
 <div class="shop-item">
 
