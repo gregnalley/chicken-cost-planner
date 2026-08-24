@@ -64,9 +64,13 @@ BCPChickenGame.ui = {
 
 
     <p>
-    🥚 Eggs:
-    ${state.eggs}
-    </p>
+🥚 Eggs:
+${state.eggs}
+/
+${BCPChickenGame.config
+  .eggs
+  .storageCapacity}
+</p>
 
 
     <p>
