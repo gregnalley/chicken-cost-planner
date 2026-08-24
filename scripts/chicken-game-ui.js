@@ -12,21 +12,15 @@ const BCPChickenGame =
 BCPChickenGame.ui = {
 
 
-  render:
+  initialize:
 
   function(){
-
-
-    const state =
-      BCPChickenGame.engine.state;
-
 
 
     const display =
       document.getElementById(
         "game-display"
       );
-
 
 
     if(!display){
@@ -48,26 +42,25 @@ BCPChickenGame.ui = {
 
     <p>
     Day:
-    ${state.time.day}
+    <span id="game-day"></span>
     </p>
 
 
     <p>
     Time:
-    ${String(state.time.minute)
-      .padStart(2,"0")}
+    <span id="game-time"></span>
     </p>
 
 
     <p>
     🐔 Chickens:
-    ${state.chickens.length}
+    <span id="game-chickens"></span>
     </p>
 
 
     <p>
     🥚 Eggs:
-    ${state.eggs}
+    <span id="game-eggs"></span>
     /
     ${BCPChickenGame.config
       .eggs
@@ -77,7 +70,8 @@ BCPChickenGame.ui = {
 
     <p>
     💰 Money:
-    $${state.money}
+    $
+    <span id="game-money"></span>
     </p>
 
 
@@ -123,6 +117,77 @@ BCPChickenGame.ui = {
     BCPChickenGame.ui.bindEvents();
 
 
+    BCPChickenGame.ui.update();
+
+
+  },
+
+
+
+  update:
+
+  function(){
+
+
+    const state =
+      BCPChickenGame.engine.state;
+
+
+
+    if(!state){
+
+      return;
+
+    }
+
+
+
+    document.getElementById(
+      "game-day"
+    )
+    .textContent =
+      state.time.day;
+
+
+
+    document.getElementById(
+      "game-time"
+    )
+    .textContent =
+      String(
+        state.time.minute
+      )
+      .padStart(
+        2,
+        "0"
+      );
+
+
+
+    document.getElementById(
+      "game-chickens"
+    )
+    .textContent =
+      state.chickens.length;
+
+
+
+    document.getElementById(
+      "game-eggs"
+    )
+    .textContent =
+      state.eggs;
+
+
+
+    document.getElementById(
+      "game-money"
+    )
+    .textContent =
+      state.money;
+
+
+
   },
 
 
@@ -148,19 +213,20 @@ BCPChickenGame.ui = {
 
 
       coopButton.onclick =
-        function(){
+
+      function(){
 
 
-          BCPChickenGame.economy
-            .coopClick(
-              state
-            );
+        BCPChickenGame.economy
+          .coopClick(
+            state
+          );
 
 
-          BCPChickenGame.ui.render();
+        BCPChickenGame.ui.update();
 
 
-        };
+      };
 
 
     }
@@ -178,20 +244,21 @@ BCPChickenGame.ui = {
 
 
       sellButton.onclick =
-        function(){
+
+      function(){
 
 
-          BCPChickenGame.market
-            .sellEggs(
-              state,
-              25
-            );
+        BCPChickenGame.market
+          .sellEggs(
+            state,
+            25
+          );
 
 
-          BCPChickenGame.ui.render();
+        BCPChickenGame.ui.update();
 
 
-        };
+      };
 
 
     }
@@ -209,19 +276,20 @@ BCPChickenGame.ui = {
 
 
       buyChickenButton.onclick =
-        function(){
+
+      function(){
 
 
-          BCPChickenGame.actions
-            .buyChicken(
-              state
-            );
+        BCPChickenGame.actions
+          .buyChicken(
+            state
+          );
 
 
-          BCPChickenGame.ui.render();
+        BCPChickenGame.ui.update();
 
 
-        };
+      };
 
 
     }
