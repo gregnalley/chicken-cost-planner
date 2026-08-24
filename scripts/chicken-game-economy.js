@@ -8,7 +8,42 @@ const BCPChickenGame =
   global.BCPChickenGame;
 
 
+
 BCPChickenGame.economy = {
+
+
+  getEggStorageCapacity:
+
+  function(state){
+
+
+    const storage =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type ===
+              "egg-storage"
+            );
+
+          }
+        );
+
+
+
+    if(!storage){
+
+      return 0;
+
+    }
+
+
+    return storage.capacity;
+
+
+  },
+
 
 
   produceEggs:
@@ -20,56 +55,77 @@ BCPChickenGame.economy = {
       state.chickens.length;
 
 
+
+    const storageCapacity =
+      BCPChickenGame.economy
+        .getEggStorageCapacity(
+          state
+        );
+
+
+
     const availableSpace =
-  BCPChickenGame.config
-    .eggs
-    .storageCapacity
-    -
-    state.eggs;
+      storageCapacity -
+      state.eggs;
 
 
-const eggsProduced =
-  Math.min(
-    chickens,
-    availableSpace
-  );
+
+    const eggsProduced =
+      Math.min(
+        chickens,
+        availableSpace
+      );
 
 
-state.eggs +=
-  eggsProduced;
+
+    if(
+      eggsProduced > 0
+    ){
+
+      state.eggs +=
+        eggsProduced;
+
+    }
 
 
   },
 
 
 
-coopClick:
+  coopClick:
 
-function(state){
-
-
-  const availableSpace =
-  BCPChickenGame.config
-    .eggs
-    .storageCapacity
-    -
-    state.eggs;
+  function(state){
 
 
-if(
-  availableSpace > 0
-){
-
-  state.eggs += 1;
-
-}
+    const storageCapacity =
+      BCPChickenGame.economy
+        .getEggStorageCapacity(
+          state
+        );
 
 
-}
+
+    const availableSpace =
+      storageCapacity -
+      state.eggs;
+
+
+
+    if(
+      availableSpace > 0
+    ){
+
+      state.eggs += 1;
+
+    }
+
+
+  }
 
 
 
 };
+
 
 
 })(window);
