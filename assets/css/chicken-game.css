@@ -1,0 +1,157 @@
+
+.game-container {
+
+  max-width:
+    1000px;
+
+  margin:
+    20px auto;
+
+  font-family:
+    Arial, sans-serif;
+
+}
+
+
+
+.game-section {
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid #ddd;
+
+  border-radius:
+    12px;
+
+  padding:
+    20px;
+
+  margin-bottom:
+    20px;
+
+}
+
+
+
+.game-section h2 {
+
+  margin-top:
+    0;
+
+}
+
+
+
+.status-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        180px,
+        1fr
+      )
+    );
+
+  gap:
+    15px;
+
+}
+
+
+
+.status-card {
+
+  background:
+    #f5f5f5;
+
+  border-radius:
+    10px;
+
+  padding:
+    15px;
+
+}
+
+
+
+.building-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        280px,
+        1fr
+      )
+    );
+
+  gap:
+    20px;
+
+}
+
+
+
+.building-card {
+
+  background:
+    #fafafa;
+
+  border:
+    1px solid #ccc;
+
+  border-radius:
+    12px;
+
+  padding:
+    20px;
+
+}
+
+
+
+.action-grid {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    15px;
+
+}
+
+
+
+.game-button {
+
+  padding:
+    10px 18px;
+
+  cursor:
+    pointer;
+
+  border-radius:
+    8px;
+
+}
+
+
+
+.upgrade-button {
+
+  margin-top:
+    15px;
+
+}
