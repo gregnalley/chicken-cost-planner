@@ -573,6 +573,7 @@ Upgrade Storage
 </div>
 
 
+</div>
 
 <button
 id="close-shop-button"
@@ -582,9 +583,6 @@ class="game-button"
 Close
 
 </button>
-
-
-</div>
 
 
 </div>
