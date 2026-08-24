@@ -31,6 +31,8 @@ BCPChickenGame.ui = {
 
 
 
+    display.innerHTML =
+
     `
 
 <div class="game-container">
