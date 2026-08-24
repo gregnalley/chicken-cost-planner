@@ -1296,12 +1296,12 @@
     before the strategy begins saving for land.
   */
 
-  if (
-    state.truckUpgradeIndex === 0
+    if (
+    state.transportationUpgradeIndex === 0
   ) {
 
     if (
-      buyTruckUpgrade(
+      buyTransportationUpgrade(
         state
       )
     ) {
