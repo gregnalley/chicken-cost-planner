@@ -16,14 +16,26 @@ BCPChickenGame.engine = {
     null,
 
 
+  isRunning:
+    false,
+
+
+  tickInterval:
+    null,
+
+
+
   start:
 
   function(){
 
 
     this.state =
-      BCPChickenGame
-        .createState();
+      BCPChickenGame.createState();
+
+
+    this.isRunning =
+      true;
 
 
     console.log(
@@ -36,7 +48,100 @@ BCPChickenGame.engine = {
     );
 
 
+    this.tickInterval =
+      setInterval(
+        function(){
+
+          BCPChickenGame.engine.tick();
+
+        },
+
+        BCPChickenGame.config.time.tickMilliseconds
+
+      );
+
+
+  },
+
+
+
+  stop:
+
+  function(){
+
+
+    if(
+      this.tickInterval
+    ){
+
+      clearInterval(
+        this.tickInterval
+      );
+
+    }
+
+
+    this.isRunning =
+      false;
+
+
+  },
+
+
+
+  tick:
+
+  function(){
+
+
+    const state =
+      this.state;
+
+
+    /*
+      Advance game clock
+    */
+
+
+    state.time.minute += 1;
+
+
+
+    if(
+      state.time.minute >= 60
+    ){
+
+      state.time.minute = 0;
+
+      state.time.day += 1;
+
+    }
+
+
+
+    /*
+      Produce eggs
+    */
+
+
+    const chickenCount =
+      state.chickens.length;
+
+
+    state.eggs +=
+      chickenCount;
+
+
+
+    console.log(
+      "Tick",
+      state
+    );
+
+
+
   }
+
 
 
 };
