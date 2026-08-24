@@ -441,7 +441,7 @@ id="buy-chicken-button"
 class="game-button"
 >
 
-Farm Shop
+Open Farm Shop
 
 </button>
 
