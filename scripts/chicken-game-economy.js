@@ -20,7 +20,23 @@ BCPChickenGame.economy = {
       state.chickens.length;
 
 
-    state.eggs += chickens;
+    const availableSpace =
+  BCPChickenGame.config
+    .eggs
+    .storageCapacity
+    -
+    state.eggs;
+
+
+const eggsProduced =
+  Math.min(
+    chickens,
+    availableSpace
+  );
+
+
+state.eggs +=
+  eggsProduced;
 
 
   },
