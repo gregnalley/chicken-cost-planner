@@ -441,7 +441,7 @@ id="buy-chicken-button"
 class="game-button"
 >
 
-Buy Hen ($50)
+Farm Shop
 
 </button>
 
