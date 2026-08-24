@@ -231,11 +231,122 @@ BCPChickenGame.actions = {
       message:
         "Coop upgraded!"
 
+     }
+
+    },
+
+
+  upgradeStorage:
+
+  function(state){
+
+
+    const storage =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type ===
+              "egg-storage"
+            );
+
+          }
+        );
+
+
+
+    if(!storage){
+
+      return {
+
+        success:false,
+
+        message:
+          "No egg storage found."
+
+      };
+
+    }
+
+
+
+    const nextUpgrade =
+      BCPChickenGame.config
+        .storage
+        .upgrades
+        .find(
+          function(upgrade){
+
+            return (
+              upgrade.level ===
+              storage.level + 1
+            );
+
+          }
+        );
+
+
+
+    if(!nextUpgrade){
+
+      return {
+
+        success:false,
+
+        message:
+          "No more storage upgrades available."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      nextUpgrade.cost
+    ){
+
+      return {
+
+        success:false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      nextUpgrade.cost;
+
+
+
+    storage.level =
+      nextUpgrade.level;
+
+
+
+    storage.capacity =
+      nextUpgrade.capacity;
+
+
+
+    return {
+
+      success:true,
+
+      message:
+        "Egg storage upgraded!"
+
     };
 
 
   }
-
 
 
 };
