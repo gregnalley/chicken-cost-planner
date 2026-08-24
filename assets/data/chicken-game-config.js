@@ -55,16 +55,64 @@ BCPChickenGame.config = {
 
   coop:
 
-  {
+{
 
-    startingLevel:
-      1,
+  startingLevel:
+    1,
 
 
-    startingCapacity:
-      10
+  startingCapacity:
+    10,
 
-  },
+
+  upgrades:
+
+  [
+
+    {
+
+      level:
+        2,
+
+      cost:
+        250,
+
+      capacity:
+        25
+
+    },
+
+
+    {
+
+      level:
+        3,
+
+      cost:
+        1000,
+
+      capacity:
+        50
+
+    },
+
+
+    {
+
+      level:
+        4,
+
+      cost:
+        5000,
+
+      capacity:
+        100
+
+    }
+
+  ]
+
+},
 
 
   time:
