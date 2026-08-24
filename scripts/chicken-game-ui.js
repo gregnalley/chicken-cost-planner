@@ -977,6 +977,34 @@ if(closeShopButton){
 
 }
 
+const shopBuyHenButton =
+  document.getElementById(
+    "shop-buy-hen-button"
+  );
+
+
+if(shopBuyHenButton){
+
+
+  shopBuyHenButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .purchaseHen(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
 
 
   }
