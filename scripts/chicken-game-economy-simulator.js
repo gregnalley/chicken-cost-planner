@@ -1120,54 +1120,64 @@
 
 
   function runExpansionStrategy(
-    state
+  state
+) {
+
+  /*
+    ==================================================
+    Expansion Strategy
+
+    Goal:
+    Build a modest early production engine,
+    then stop unnecessary spending and save
+    aggressively for East Pasture.
+
+    Target:
+    Reach East Pasture near the end of the
+    first 30-minute session.
+    ==================================================
+  */
+
+
+  /*
+    First production upgrade is the opening
+    tutorial purchase.
+  */
+
+  if (
+    state.nestingUpgradeIndex === 0
+  ) {
+
+    if (
+      buyNestingUpgrade(
+        state
+      )
+    ) {
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    Grow the starter flock only to 10 hens.
+
+    We deliberately stop here rather than
+    continuing to fill every available coop
+    slot.
+  */
+
+  if (
+    state.hens <
+    10
   ) {
 
     /*
-      Tutorial purchase.
-    */
-
-    if (
-      state.nestingUpgradeIndex === 0
-    ) {
-
-      if (
-        buyNestingUpgrade(
-          state
-        )
-      ) {
-
-        return;
-
-      }
-
-    }
-
-
-    /*
-      Keep filling available coop capacity.
-    */
-
-    if (
-      state.hens <
-      state.coopCapacity
-    ) {
-
-      if (
-        buyHen(
-          state
-        )
-      ) {
-
-        return;
-
-      }
-
-    }
-
-
-    /*
-      Expand coop when full.
+      Expand the coop only when the current
+      capacity prevents us from reaching
+      the 10-hen target.
     */
 
     if (
@@ -1188,57 +1198,117 @@
     }
 
 
-    /*
-      Get basic automation.
-    */
-
     if (
-      !state.automaticDriver
+      buyHen(
+        state
+      )
     ) {
 
-      if (
-        hireDriver(
-          state
-        )
-      ) {
-
-        return;
-
-      }
+      return;
 
     }
 
+  }
 
-    /*
-      Raise egg value once.
-    */
+
+  /*
+    Hire the automatic driver early.
+
+    This removes manual selling and allows
+    the farm to continue earning while the
+    player saves for land.
+  */
+
+  if (
+    !state.automaticDriver
+  ) {
 
     if (
-      state.eggValueUpgradeIndex === 0
+      hireDriver(
+        state
+      )
     ) {
 
-      if (
-        buyEggValueUpgrade(
-          state
-        )
-      ) {
-
-        return;
-
-      }
+      return;
 
     }
 
+  }
 
-    /*
-      Expansion player then aggressively saves for land.
-    */
+
+  /*
+    Purchase the first egg-value upgrade.
+
+    This is a relatively inexpensive way
+    to improve the income engine before
+    entering the saving phase.
+  */
+
+  if (
+    state.eggValueUpgradeIndex === 0
+  ) {
+
+    if (
+      buyEggValueUpgrade(
+        state
+      )
+    ) {
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    Ensure enough storage exists so eggs
+    are not constantly lost while saving.
+
+    Only the first storage upgrade is used
+    by this strategy before East Pasture.
+  */
+
+  if (
+    state.storageUpgradeIndex === 0
+  ) {
+
+    if (
+      buyStorageUpgrade(
+        state
+      )
+    ) {
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    Once the basic income engine exists,
+    stop buying hens, production upgrades,
+    protection, trucks, and additional
+    coop expansions.
+
+    Save every available dollar for the
+    first land expansion.
+  */
+
+  if (
+    !state.landUnlocked
+  ) {
 
     buyLandExpansion(
       state
     );
 
+    return;
+
   }
+
+}
 
 
   function runProductionStrategy(
