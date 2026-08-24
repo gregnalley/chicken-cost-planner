@@ -459,6 +459,67 @@ Farm Shop
 
 </div>
 
+<div
+id="farm-shop-modal"
+class="shop-modal"
+>
+
+
+<div class="shop-window">
+
+
+<h2>
+🏪 Farm Shop
+</h2>
+
+
+<p>
+Purchase farm upgrades and animals.
+</p>
+
+
+
+<div class="shop-item">
+
+
+<h3>
+🐔 Hen
+</h3>
+
+
+<p>
+Cost: $50
+</p>
+
+
+<button
+class="game-button"
+>
+
+Buy Hen
+
+</button>
+
+
+</div>
+
+
+
+<button
+id="close-shop-button"
+class="game-button"
+>
+
+Close
+
+</button>
+
+
+</div>
+
+
+</div>
+
 
 </div>
 
