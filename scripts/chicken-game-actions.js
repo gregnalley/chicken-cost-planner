@@ -121,6 +121,119 @@ BCPChickenGame.actions = {
     };
 
 
+  },
+
+
+
+  upgradeCoop:
+
+  function(state){
+
+
+    const coop =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type === "coop"
+            );
+
+          }
+        );
+
+
+
+    if(!coop){
+
+      return {
+
+        success:false,
+
+        message:
+          "No coop found."
+
+      };
+
+    }
+
+
+
+    const nextUpgrade =
+      BCPChickenGame.config
+        .coop
+        .upgrades
+        .find(
+          function(upgrade){
+
+            return (
+              upgrade.level ===
+              coop.level + 1
+            );
+
+          }
+        );
+
+
+
+    if(!nextUpgrade){
+
+      return {
+
+        success:false,
+
+        message:
+          "No more upgrades available."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      nextUpgrade.cost
+    ){
+
+      return {
+
+        success:false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      nextUpgrade.cost;
+
+
+
+    coop.level =
+      nextUpgrade.level;
+
+
+
+    coop.capacity =
+      nextUpgrade.capacity;
+
+
+
+    return {
+
+      success:true,
+
+      message:
+        "Coop upgraded!"
+
+    };
+
+
   }
 
 
