@@ -103,6 +103,15 @@ ${BCPChickenGame.config
 
 </button>
 
+<br><br>
+
+
+<button id="buy-chicken-button">
+
+  Buy Hen ($50)
+
+</button>
+
 
     `;
 
@@ -145,6 +154,27 @@ sellButton.onclick =
       .sellEggs(
         state,
         25
+      );
+
+
+    BCPChickenGame.ui.render();
+
+
+  };
+
+  const buyChickenButton =
+  document.getElementById(
+    "buy-chicken-button"
+  );
+
+
+buyChickenButton.onclick =
+  function(){
+
+
+    BCPChickenGame.actions
+      .buyChicken(
+        state
       );
 
 
