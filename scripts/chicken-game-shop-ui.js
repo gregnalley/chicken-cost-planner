@@ -31,7 +31,7 @@ BCPChickenGame.shopUI = {
 
 
     shop.style.display =
-      "block";
+      "flex";
 
 
   },
