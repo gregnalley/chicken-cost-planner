@@ -44,8 +44,8 @@ BCPChickenGame.market = {
 
     const eggValue =
       BCPChickenGame.config
-        .economy
-        .eggValue;
+       .eggs
+       .sellValue;
 
 
 
