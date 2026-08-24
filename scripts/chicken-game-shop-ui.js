@@ -34,6 +34,23 @@ BCPChickenGame.shopUI = {
       "flex";
 
 
+      const closeButton =
+  document.getElementById(
+    "close-shop-button"
+  );
+
+
+if(closeButton){
+
+  closeButton.onclick =
+  function(){
+
+    BCPChickenGame.shopUI.close();
+
+  };
+
+}
+
   },
 
 
