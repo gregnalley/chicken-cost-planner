@@ -30,7 +30,9 @@ BCPChickenGame.ui = {
 
 
     if(!display){
+
       return;
+
     }
 
 
@@ -64,13 +66,13 @@ BCPChickenGame.ui = {
 
 
     <p>
-🥚 Eggs:
-${state.eggs}
-/
-${BCPChickenGame.config
-  .eggs
-  .storageCapacity}
-</p>
+    🥚 Eggs:
+    ${state.eggs}
+    /
+    ${BCPChickenGame.config
+      .eggs
+      .storageCapacity}
+    </p>
 
 
     <p>
@@ -89,31 +91,49 @@ ${BCPChickenGame.config
 
     <button id="coop-button">
 
-  Click Coop
+      Click Coop
 
-</button>
-
-
-<br><br>
+    </button>
 
 
-<button id="sell-button">
-
-  Sell 25 Eggs
-
-</button>
-
-<br><br>
+    <br><br>
 
 
-<button id="buy-chicken-button">
+    <button id="sell-button">
 
-  Buy Hen ($50)
+      Sell 25 Eggs
 
-</button>
+    </button>
+
+
+    <br><br>
+
+
+    <button id="buy-chicken-button">
+
+      Buy Hen ($50)
+
+    </button>
 
 
     `;
+
+
+
+    BCPChickenGame.ui.bindEvents();
+
+
+  },
+
+
+
+  bindEvents:
+
+  function(){
+
+
+    const state =
+      BCPChickenGame.engine.state;
 
 
 
@@ -124,68 +144,92 @@ ${BCPChickenGame.config
 
 
 
-    coopButton.onclick =
-      function(){
+    if(coopButton){
 
 
-        BCPChickenGame.economy
-          .coopClick(
-            state
-          );
+      coopButton.onclick =
+        function(){
 
 
-        BCPChickenGame.ui.render();
+          BCPChickenGame.economy
+            .coopClick(
+              state
+            );
 
 
-      };
-
-      const sellButton =
-  document.getElementById(
-    "sell-button"
-  );
+          BCPChickenGame.ui.render();
 
 
-
-sellButton.onclick =
-  function(){
+        };
 
 
-    BCPChickenGame.market
-      .sellEggs(
-        state,
-        25
+    }
+
+
+
+    const sellButton =
+      document.getElementById(
+        "sell-button"
       );
 
 
-    BCPChickenGame.ui.render();
+
+    if(sellButton){
 
 
-  };
-
-  const buyChickenButton =
-  document.getElementById(
-    "buy-chicken-button"
-  );
+      sellButton.onclick =
+        function(){
 
 
-buyChickenButton.onclick =
-  function(){
+          BCPChickenGame.market
+            .sellEggs(
+              state,
+              25
+            );
 
 
-    BCPChickenGame.actions
-      .buyChicken(
-        state
+          BCPChickenGame.ui.render();
+
+
+        };
+
+
+    }
+
+
+
+    const buyChickenButton =
+      document.getElementById(
+        "buy-chicken-button"
       );
 
 
-    BCPChickenGame.ui.render();
+
+    if(buyChickenButton){
 
 
-  };
+      buyChickenButton.onclick =
+        function(){
+
+
+          BCPChickenGame.actions
+            .buyChicken(
+              state
+            );
+
+
+          BCPChickenGame.ui.render();
+
+
+        };
+
+
+    }
 
 
 
   }
+
 
 
 };
