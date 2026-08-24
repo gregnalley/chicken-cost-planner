@@ -493,6 +493,7 @@ Cost: $50
 
 
 <button
+id="shop-buy-hen-button"
 class="game-button"
 >
 
