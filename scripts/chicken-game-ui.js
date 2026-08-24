@@ -437,7 +437,7 @@ Sell 25 Eggs
 
 
 <button
-id="buy-chicken-button"
+id="farm-shop-button"
 class="game-button"
 >
 
