@@ -397,7 +397,123 @@ $
 
 </div>
 
+<div class="game-section">
 
+
+<h2>
+Farm Shop
+</h2>
+
+
+
+<div class="shop-grid">
+
+
+
+<div class="shop-card">
+
+
+<h3>
+🐔 Hen
+</h3>
+
+
+<p>
+Cost:
+<br>
+$50
+</p>
+
+
+<p>
+Available
+</p>
+
+
+<button
+class="game-button"
+id="buy-hen-shop-button"
+>
+
+Buy Hen
+
+</button>
+
+
+</div>
+
+
+
+<div class="shop-card">
+
+
+<h3>
+🏠 Coop Upgrade
+</h3>
+
+
+<p>
+Cost:
+<br>
+$250+
+</p>
+
+
+<p>
+Available
+</p>
+
+
+<button
+class="game-button"
+disabled
+>
+
+Coming Soon
+
+</button>
+
+
+</div>
+
+
+
+<div class="shop-card">
+
+
+<h3>
+🥚 Egg Storage
+</h3>
+
+
+<p>
+Upgrade Capacity
+</p>
+
+
+<p>
+Coming Soon
+</p>
+
+
+<button
+class="game-button"
+disabled
+>
+
+Coming Soon
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
 
 
 
@@ -827,10 +943,10 @@ Buy Hen ($50)
       function(){
 
 
-        BCPChickenGame.actions
-          .buyChicken(
-            state
-          );
+        BCPChickenGame.shopActions
+         .purchaseHen(
+           state
+        );
 
 
         BCPChickenGame.ui.update();
