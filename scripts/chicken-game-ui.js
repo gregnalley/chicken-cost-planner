@@ -993,10 +993,9 @@ if(shopBuyHenButton){
 
 
     BCPChickenGame.actions
-      .purchaseHen(
-        state
-      );
-
+  .buyChicken(
+    state
+  );
 
     BCPChickenGame.ui.update();
 
