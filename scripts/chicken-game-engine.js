@@ -124,12 +124,14 @@ BCPChickenGame.engine = {
     */
 
 
-    const chickenCount =
-      state.chickens.length;
+    /*
+  Economy update
+*/
 
-
-    BCPChickenGame.economy
-      .produceEggs(state);
+BCPChickenGame.economy
+  .produceEggs(
+    state
+  );
 
 
 
@@ -137,6 +139,14 @@ BCPChickenGame.engine = {
       "Tick",
       state
     );
+
+    if(
+  BCPChickenGame.ui
+){
+
+  BCPChickenGame.ui.render();
+
+}
 
 
 
