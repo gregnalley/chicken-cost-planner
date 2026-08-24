@@ -288,3 +288,54 @@
         6px 0;
 
 }
+
+
+
+.shop-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap:
+    10px;
+
+}
+
+
+
+.shop-card {
+
+  border:
+    1px solid #ccc;
+
+  border-radius:
+    8px;
+
+  padding:
+    10px;
+
+  text-align:
+    center;
+
+}
+
+
+
+.shop-card h3 {
+
+  margin:
+    5px 0;
+
+}
+
+
+
+.shop-card p {
+
+  margin:
+    5px 0;
+
+}
