@@ -25,12 +25,7 @@ function(){
     eggs:
       BCPChickenGame.config
         .startingFarm
-        .eggs,
-
-    eggStorage:
-      BCPChickenGame.config
-        .eggs
-        .storageCapacity,   
+        .eggs,   
 
 
     chickens:
@@ -84,28 +79,47 @@ function(){
 
     buildings:
 
-    [
+[
 
-      {
+  {
 
-        id:
-          "starter-coop",
+    id:
+      "starter-coop",
 
-        type:
-          "coop",
+    type:
+      "coop",
 
-        level:
-          1,
+    level:
+      1,
 
-        capacity:
-          BCPChickenGame.config
-            .coop
-            .startingCapacity
+    capacity:
+      BCPChickenGame.config
+        .coop
+        .startingCapacity
 
-      }
+  },
 
 
-    ],
+  {
+
+    id:
+      "starter-storage",
+
+    type:
+      "egg-storage",
+
+    level:
+      1,
+
+    capacity:
+      BCPChickenGame.config
+        .storage
+        .startingCapacity
+
+  }
+
+
+],
 
 
     time:

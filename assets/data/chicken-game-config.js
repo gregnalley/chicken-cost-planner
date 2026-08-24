@@ -48,8 +48,70 @@ BCPChickenGame.config = {
 
   eggs:
 {
-  sellValue: 1,
-  storageCapacity: 250
+  sellValue:
+    1
+},
+
+
+storage:
+
+{
+
+  startingLevel:
+    1,
+
+
+  startingCapacity:
+    250,
+
+
+  upgrades:
+
+  [
+
+    {
+
+      level:
+        2,
+
+      cost:
+        300,
+
+      capacity:
+        750
+
+    },
+
+
+    {
+
+      level:
+        3,
+
+      cost:
+        1000,
+
+      capacity:
+        2000
+
+    },
+
+
+    {
+
+      level:
+        4,
+
+      cost:
+        3000,
+
+      capacity:
+        5000
+
+    }
+
+  ]
+
 },
 
 
