@@ -55,6 +55,8 @@ BCPChickenGame.ui = {
     <p>
     🐔 Chickens:
     <span id="game-chickens"></span>
+    /
+    <span id="game-chicken-capacity"></span>
     </p>
 
 
@@ -62,9 +64,7 @@ BCPChickenGame.ui = {
     🥚 Eggs:
     <span id="game-eggs"></span>
     /
-    ${BCPChickenGame.config
-      .eggs
-      .storageCapacity}
+    <span id="game-egg-capacity"></span>
     </p>
 
 
@@ -92,6 +92,7 @@ BCPChickenGame.ui = {
     <p>
     Capacity:
     <span id="coop-capacity"></span>
+    chickens
     </p>
 
 
@@ -102,7 +103,35 @@ BCPChickenGame.ui = {
     </p>
 
 
+    <hr>
+
+
+    <h2>
+    🥚 Egg Storage
+    </h2>
+
+
+    <p>
+    Level:
+    <span id="storage-level"></span>
+    </p>
+
+
+    <p>
+    Capacity:
+    <span id="storage-capacity"></span>
+    eggs
+    </p>
+
+
+    <p>
+    Next Upgrade:
     <br>
+    <span id="storage-upgrade"></span>
+    </p>
+
+
+    <hr>
 
 
     <button id="coop-button">
@@ -197,22 +226,6 @@ BCPChickenGame.ui = {
 
 
     document.getElementById(
-      "game-chickens"
-    )
-    .textContent =
-      state.chickens.length;
-
-
-
-    document.getElementById(
-      "game-eggs"
-    )
-    .textContent =
-      state.eggs;
-
-
-
-    document.getElementById(
       "game-money"
     )
     .textContent =
@@ -238,10 +251,27 @@ BCPChickenGame.ui = {
 
 
       document.getElementById(
+        "game-chickens"
+      )
+      .textContent =
+        state.chickens.length;
+
+
+
+      document.getElementById(
+        "game-chicken-capacity"
+      )
+      .textContent =
+        coop.capacity;
+
+
+
+      document.getElementById(
         "coop-name"
       )
       .textContent =
         "🏠 Coop";
+
 
 
       document.getElementById(
@@ -251,42 +281,29 @@ BCPChickenGame.ui = {
         coop.level;
 
 
+
       document.getElementById(
         "coop-capacity"
       )
       .textContent =
-        coop.capacity +
-        " chickens";
+        coop.capacity;
 
 
 
-      let nextUpgrade =
-        null;
-
-
-
-      if(
+      const nextUpgrade =
         BCPChickenGame.config
           .coop
           .upgrades
-      ){
+          .find(
+            function(upgrade){
 
-        nextUpgrade =
-          BCPChickenGame.config
-            .coop
-            .upgrades
-            .find(
-              function(upgrade){
+              return (
+                upgrade.level ===
+                coop.level + 1
+              );
 
-                return (
-                  upgrade.level ===
-                  coop.level + 1
-                );
-
-              }
-            );
-
-      }
+            }
+          );
 
 
 
@@ -324,6 +341,109 @@ BCPChickenGame.ui = {
     }
 
 
+
+    const storage =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type ===
+              "egg-storage"
+            );
+
+          }
+        );
+
+
+
+    if(storage){
+
+
+      document.getElementById(
+        "game-eggs"
+      )
+      .textContent =
+        state.eggs;
+
+
+
+      document.getElementById(
+        "game-egg-capacity"
+      )
+      .textContent =
+        storage.capacity;
+
+
+
+      document.getElementById(
+        "storage-level"
+      )
+      .textContent =
+        storage.level;
+
+
+
+      document.getElementById(
+        "storage-capacity"
+      )
+      .textContent =
+        storage.capacity;
+
+
+
+      const nextStorageUpgrade =
+        BCPChickenGame.config
+          .storage
+          .upgrades
+          .find(
+            function(upgrade){
+
+              return (
+                upgrade.level ===
+                storage.level + 1
+              );
+
+            }
+          );
+
+
+
+      if(nextStorageUpgrade){
+
+
+        document.getElementById(
+          "storage-upgrade"
+        )
+        .textContent =
+
+          "Level " +
+          nextStorageUpgrade.level +
+          " - $" +
+          nextStorageUpgrade.cost +
+          " (" +
+          nextStorageUpgrade.capacity +
+          " eggs)";
+
+
+      }
+      else{
+
+
+        document.getElementById(
+          "storage-upgrade"
+        )
+        .textContent =
+          "Maximum Level";
+
+
+      }
+
+
+    }
+
+
+
   },
 
 
@@ -342,7 +462,6 @@ BCPChickenGame.ui = {
       document.getElementById(
         "coop-button"
       );
-
 
 
     if(coopButton){
@@ -373,7 +492,6 @@ BCPChickenGame.ui = {
       document.getElementById(
         "sell-button"
       );
-
 
 
     if(sellButton){
@@ -407,7 +525,6 @@ BCPChickenGame.ui = {
       );
 
 
-
     if(buyChickenButton){
 
 
@@ -436,7 +553,6 @@ BCPChickenGame.ui = {
       document.getElementById(
         "upgrade-coop-button"
       );
-
 
 
     if(upgradeCoopButton){
