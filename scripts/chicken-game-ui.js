@@ -78,9 +78,31 @@ BCPChickenGame.ui = {
     <hr>
 
 
-    <h2>
-    🏠 Starter Coop
+    <h2 id="coop-name">
+
     </h2>
+
+
+    <p>
+    Level:
+    <span id="coop-level"></span>
+    </p>
+
+
+    <p>
+    Capacity:
+    <span id="coop-capacity"></span>
+    </p>
+
+
+    <p>
+    Next Upgrade:
+    <br>
+    <span id="coop-upgrade"></span>
+    </p>
+
+
+    <br>
 
 
     <button id="coop-button">
@@ -106,6 +128,16 @@ BCPChickenGame.ui = {
     <button id="buy-chicken-button">
 
       Buy Hen ($50)
+
+    </button>
+
+
+    <br><br>
+
+
+    <button id="upgrade-coop-button">
+
+      Upgrade Coop
 
     </button>
 
@@ -186,6 +218,110 @@ BCPChickenGame.ui = {
     .textContent =
       state.money;
 
+
+
+    const coop =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type === "coop"
+            );
+
+          }
+        );
+
+
+
+    if(coop){
+
+
+      document.getElementById(
+        "coop-name"
+      )
+      .textContent =
+        "🏠 Coop";
+
+
+      document.getElementById(
+        "coop-level"
+      )
+      .textContent =
+        coop.level;
+
+
+      document.getElementById(
+        "coop-capacity"
+      )
+      .textContent =
+        coop.capacity +
+        " chickens";
+
+
+
+      let nextUpgrade =
+        null;
+
+
+
+      if(
+        BCPChickenGame.config
+          .coop
+          .upgrades
+      ){
+
+        nextUpgrade =
+          BCPChickenGame.config
+            .coop
+            .upgrades
+            .find(
+              function(upgrade){
+
+                return (
+                  upgrade.level ===
+                  coop.level + 1
+                );
+
+              }
+            );
+
+      }
+
+
+
+      if(nextUpgrade){
+
+
+        document.getElementById(
+          "coop-upgrade"
+        )
+        .textContent =
+
+          "Level " +
+          nextUpgrade.level +
+          " - $" +
+          nextUpgrade.cost +
+          " (" +
+          nextUpgrade.capacity +
+          " chickens)";
+
+
+      }
+      else{
+
+
+        document.getElementById(
+          "coop-upgrade"
+        )
+        .textContent =
+          "Maximum Level";
+
+
+      }
+
+
+    }
 
 
   },
@@ -282,6 +418,37 @@ BCPChickenGame.ui = {
 
         BCPChickenGame.actions
           .buyChicken(
+            state
+          );
+
+
+        BCPChickenGame.ui.update();
+
+
+      };
+
+
+    }
+
+
+
+    const upgradeCoopButton =
+      document.getElementById(
+        "upgrade-coop-button"
+      );
+
+
+
+    if(upgradeCoopButton){
+
+
+      upgradeCoopButton.onclick =
+
+      function(){
+
+
+        BCPChickenGame.actions
+          .upgradeCoop(
             state
           );
 
