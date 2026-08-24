@@ -27,6 +27,11 @@ function(){
         .startingFarm
         .eggs,
 
+    eggStorage:
+      BCPChickenGame.config
+        .eggs
+        .storageCapacity,   
+
 
     chickens:
 
