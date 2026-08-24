@@ -23,7 +23,20 @@ BCPChickenGame.economy = {
     state.eggs += chickens;
 
 
-  }
+  },
+
+
+
+coopClick:
+
+function(state){
+
+
+  state.eggs += 1;
+
+
+}
+
 
 
 };
