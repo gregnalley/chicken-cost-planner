@@ -31,98 +31,17 @@ BCPChickenGame.ui = {
 
 
 
-    display.innerHTML =
-
-
-`
+    `
 
 <div class="game-container">
 
+
 <div class="game-layout">
 
+
+<!-- MAIN CONTENT AREA -->
+
 <div class="game-main">
-
-
-<div class="game-section">
-
-
-<h2>
-Farm Status
-</h2>
-
-
-<div class="status-grid">
-
-
-<div class="status-card">
-
-📅 Day:
-
-<br>
-
-<span id="game-day"></span>
-
-</div>
-
-
-
-<div class="status-card">
-
-⏰ Time:
-
-<br>
-
-<span id="game-time"></span>
-
-</div>
-
-
-
-<div class="status-card">
-
-🐔 Chickens:
-
-<br>
-
-<span id="game-chickens"></span>
-/
-<span id="game-chicken-capacity"></span>
-
-</div>
-
-
-
-<div class="status-card">
-
-🥚 Eggs:
-
-<br>
-
-<span id="game-eggs"></span>
-/
-<span id="game-egg-capacity"></span>
-
-</div>
-
-
-
-<div class="status-card">
-
-💰 Money:
-
-<br>
-
-$
-<span id="game-money"></span>
-
-</div>
-
-
-</div>
-
-
-</div>
-
 
 
 <div class="game-section">
@@ -226,6 +145,8 @@ Next Upgrade:
 
 
 
+
+
 <div class="game-section">
 
 
@@ -257,9 +178,7 @@ Next Expansion:
 Locked
 </p>
 
-
 </div>
-
 
 
 
@@ -282,9 +201,7 @@ Health System:
 Coming Soon
 </p>
 
-
 </div>
-
 
 
 
@@ -307,9 +224,7 @@ Current Feed:
 Basic Feed
 </p>
 
-
 </div>
-
 
 
 
@@ -332,9 +247,7 @@ Efficiency:
 Normal
 </p>
 
-
 </div>
-
 
 
 
@@ -357,9 +270,7 @@ Unlocks:
 None
 </p>
 
-
 </div>
-
 
 
 
@@ -382,7 +293,6 @@ Orders:
 None
 </p>
 
-
 </div>
 
 
@@ -392,9 +302,102 @@ None
 
 </div>
 
+
 </div>
+
+
+
+<!-- SIDEBAR -->
 
 <div class="game-sidebar">
+
+
+
+<div class="game-section">
+
+
+<h2>
+Farm Status
+</h2>
+
+
+<div class="status-grid">
+
+
+
+<div class="status-card">
+
+📅 Day:
+
+<br>
+
+<span id="game-day"></span>
+
+</div>
+
+
+
+<div class="status-card">
+
+⏰ Time:
+
+<br>
+
+<span id="game-time"></span>
+
+</div>
+
+
+
+<div class="status-card">
+
+🐔 Chickens:
+
+<br>
+
+<span id="game-chickens"></span>
+/
+<span id="game-chicken-capacity"></span>
+
+</div>
+
+
+
+<div class="status-card">
+
+🥚 Eggs:
+
+<br>
+
+<span id="game-eggs"></span>
+/
+<span id="game-egg-capacity"></span>
+
+</div>
+
+
+
+<div class="status-card">
+
+💰 Money:
+
+<br>
+
+$
+<span id="game-money"></span>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
 
 <div class="game-section">
 
@@ -405,6 +408,7 @@ Farm Actions
 
 
 <div class="action-grid">
+
 
 
 <button
@@ -418,6 +422,7 @@ Click Coop
 
 
 
+
 <button
 id="sell-button"
 class="game-button"
@@ -426,6 +431,7 @@ class="game-button"
 Sell 25 Eggs
 
 </button>
+
 
 
 
@@ -444,13 +450,19 @@ Buy Hen ($50)
 
 </div>
 
+
+
+</div>
+
+
+
 </div>
 
 
 </div>
 
 
-`;
+`
 
 
 
