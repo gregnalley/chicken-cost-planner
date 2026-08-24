@@ -38,6 +38,10 @@ BCPChickenGame.ui = {
 
 <div class="game-container">
 
+<div class="game-layout">
+
+<div class="game-main">
+
 
 <div class="game-section">
 
@@ -388,7 +392,9 @@ None
 
 </div>
 
+</div>
 
+<div class="game-sidebar">
 
 <div class="game-section">
 
@@ -438,6 +444,7 @@ Buy Hen ($50)
 
 </div>
 
+</div>
 
 
 </div>
