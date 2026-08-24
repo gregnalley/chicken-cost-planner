@@ -49,60 +49,11 @@ BCPChickenGame.engine.start();
 
 <script>
 
-
 setInterval(function(){
 
-
-const state =
-  BCPChickenGame.engine.state;
-
-
-document.getElementById(
-  "game-display"
-)
-.innerHTML =
-
-`
-
-<h2>
-Farm Status
-</h2>
-
-<p>
-Day:
-${state.time.day}
-</p>
-
-<p>
-Time:
-${String(state.time.minute).padStart(2,"0")}
-</p>
-
-
-<p>
-🐔 Chickens:
-${state.chickens.length}
-</p>
-
-
-<p>
-🥚 Eggs:
-${state.eggs}
-</p>
-
-
-<p>
-💰 Money:
-$${state.money}
-</p>
-
-`;
-
-
+  BCPChickenGame.ui.render();
 
 },1000);
-
-
 
 </script>
 
