@@ -46,6 +46,12 @@ BCPChickenGame.config = {
 
   },
 
+  eggs:
+{
+  sellValue: 1,
+  storageCapacity: 250
+},
+
 
   coop:
 
