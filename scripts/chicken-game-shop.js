@@ -9,120 +9,151 @@ const BCPChickenGame =
 
 
 
-BCPChickenGame.shopActions = {
+BCPChickenGame.shop = {
 
 
+  items:
 
-purchaseHen:
-
-function(state){
-
-
-  const item =
-    BCPChickenGame.shop
-      .items
-      .hen;
+  {
 
 
-
-  if(
-    state.money < item.cost
-  ){
-
-    return {
-
-      success:false,
-
-      message:
-        "Not enough money."
-
-    };
-
-  }
-
-
-
-  const coop =
-    state.buildings
-      .find(
-        function(building){
-
-          return (
-            building.type === "coop"
-          );
-
-        }
-      );
-
-
-
-  if(
-    state.chickens.length >=
-    coop.capacity
-  ){
-
-    return {
-
-      success:false,
-
-      message:
-        "Coop is full."
-
-    };
-
-  }
-
-
-
-  state.money -=
-    item.cost;
-
-
-
-  const chickenNumber =
-    state.chickens.length + 1;
-
-
-
-  state.chickens.push(
+    hen:
 
     {
 
       id:
-        "hen-" +
-        String(
-          chickenNumber
-        )
-        .padStart(
-          3,
-          "0"
-        ),
+        "hen",
 
+      name:
+        "Hen",
 
-      breed:
-        "starter",
-
-
-      health:
-        100
+      cost:
+        50
 
     }
 
-  );
+
+  }
 
 
 
-  return {
+};
 
-    success:true,
-
-    message:
-      "Hen purchased."
-
-  };
+BCPChickenGame.shopActions = {
 
 
-}
+  purchaseHen:
+
+  function(state){
+
+
+    const item =
+      BCPChickenGame.shop
+        .items
+        .hen;
+
+
+
+    if(
+      state.money <
+      item.cost
+    ){
+
+      return {
+
+        success:false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    const coop =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type ===
+              "coop"
+            );
+
+          }
+        );
+
+
+
+    if(
+      state.chickens.length >=
+      coop.capacity
+    ){
+
+      return {
+
+        success:false,
+
+        message:
+          "Coop is full."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      item.cost;
+
+
+
+    const chickenNumber =
+      state.chickens.length + 1;
+
+
+
+    state.chickens.push(
+
+      {
+
+        id:
+          "hen-" +
+          String(
+            chickenNumber
+          )
+          .padStart(
+            3,
+            "0"
+          ),
+
+
+        breed:
+          "starter",
+
+
+        health:
+          100
+
+      }
+
+    );
+
+
+
+    return {
+
+      success:true,
+
+      message:
+        "Hen purchased."
+
+    };
+
+
+  }
 
 
 
