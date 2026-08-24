@@ -222,6 +222,172 @@ Next Upgrade:
 
 
 
+<div class="game-section">
+
+
+<h2>
+Farm Development
+</h2>
+
+
+
+<div class="development-grid">
+
+
+
+<div class="development-card">
+
+<h3>
+🌎 Land & Expansion
+</h3>
+
+<p>
+Owned Land:
+<br>
+1 Plot
+</p>
+
+<p>
+Next Expansion:
+<br>
+Locked
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="development-card">
+
+<h3>
+🐔 Chicken Management
+</h3>
+
+<p>
+Breeding:
+<br>
+Locked
+</p>
+
+<p>
+Health System:
+<br>
+Coming Soon
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="development-card">
+
+<h3>
+🌾 Feed & Resources
+</h3>
+
+<p>
+Feed Storage:
+<br>
+0 lbs
+</p>
+
+<p>
+Current Feed:
+<br>
+Basic Feed
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="development-card">
+
+<h3>
+⚙️ Production
+</h3>
+
+<p>
+Automation:
+<br>
+Locked
+</p>
+
+<p>
+Efficiency:
+<br>
+Normal
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="development-card">
+
+<h3>
+🔬 Research
+</h3>
+
+<p>
+Research Points:
+<br>
+0
+</p>
+
+<p>
+Unlocks:
+<br>
+None
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="development-card">
+
+<h3>
+🏪 Market
+</h3>
+
+<p>
+Egg Price:
+<br>
+$1
+</p>
+
+<p>
+Orders:
+<br>
+None
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
 
 
 <div class="game-section">
