@@ -506,6 +506,41 @@ Buy Hen
 
 
 
+
+<div class="shop-item">
+
+
+<h3>
+🏠 Coop Upgrade
+</h3>
+
+
+<p>
+Increase chicken capacity.
+</p>
+
+
+<p>
+Cost:
+<br>
+$250
+</p>
+
+
+<button
+id="shop-upgrade-coop-button"
+class="game-button"
+>
+
+Upgrade Coop
+
+</button>
+
+
+</div>
+
+
+
 <button
 id="close-shop-button"
 class="game-button"
@@ -874,34 +909,6 @@ Close
 
 
 
-    const buyChickenButton =
-      document.getElementById(
-        "buy-chicken-button"
-      );
-
-
-    if(buyChickenButton){
-
-
-      buyChickenButton.onclick =
-
-      function(){
-
-
-        BCPChickenGame.actions
-          .buyChicken(
-            state
-        );
-
-
-        BCPChickenGame.ui.update();
-
-
-      };
-
-
-    }
-
 
 
     const upgradeCoopButton =
@@ -996,6 +1003,34 @@ if(shopBuyHenButton){
   .buyChicken(
     state
   );
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+const shopUpgradeCoopButton =
+  document.getElementById(
+    "shop-upgrade-coop-button"
+  );
+
+
+if(shopUpgradeCoopButton){
+
+
+  shopUpgradeCoopButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .upgradeCoop(
+        state
+      );
+
 
     BCPChickenGame.ui.update();
 
