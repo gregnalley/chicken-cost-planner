@@ -48,7 +48,21 @@ coopClick:
 function(state){
 
 
+  const availableSpace =
+  BCPChickenGame.config
+    .eggs
+    .storageCapacity
+    -
+    state.eggs;
+
+
+if(
+  availableSpace > 0
+){
+
   state.eggs += 1;
+
+}
 
 
 }
