@@ -217,3 +217,41 @@
     0;
 
 }
+
+
+.game-layout {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr 260px;
+
+  gap:
+    20px;
+
+}
+
+
+
+.game-main {
+
+  min-width:
+    0;
+
+}
+
+
+
+.game-sidebar {
+
+  position:
+    sticky;
+
+  top:
+    20px;
+
+  height:
+    fit-content;
+
+}
