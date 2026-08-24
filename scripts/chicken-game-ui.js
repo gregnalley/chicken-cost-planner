@@ -888,9 +888,9 @@ Close
       function(){
 
 
-        BCPChickenGame.shopActions
-         .purchaseHen(
-           state
+        BCPChickenGame.actions
+          .buyChicken(
+            state
         );
 
 
