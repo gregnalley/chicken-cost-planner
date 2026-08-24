@@ -85,9 +85,19 @@ BCPChickenGame.ui = {
 
     <button id="coop-button">
 
-      Click Coop
+  Click Coop
 
-    </button>
+</button>
+
+
+<br><br>
+
+
+<button id="sell-button">
+
+  Sell 25 Eggs
+
+</button>
 
 
     `;
@@ -115,6 +125,29 @@ BCPChickenGame.ui = {
 
 
       };
+
+      const sellButton =
+  document.getElementById(
+    "sell-button"
+  );
+
+
+
+sellButton.onclick =
+  function(){
+
+
+    BCPChickenGame.market
+      .sellEggs(
+        state,
+        25
+      );
+
+
+    BCPChickenGame.ui.render();
+
+
+  };
 
 
 
