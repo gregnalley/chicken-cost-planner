@@ -465,7 +465,7 @@ class="shop-modal"
 >
 
 
-<div class="shop-grid">
+<div class="shop-window">
 
 
 <h2>
