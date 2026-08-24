@@ -563,7 +563,7 @@ window.BCPChickenGameConfig = {
     targetLandExpansionMinutes:
       30
 
-  }
+  },
 
     /*
     ==================================================
