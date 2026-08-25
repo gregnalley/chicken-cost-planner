@@ -209,8 +209,11 @@ function(
 */
 
 if(
-  state.minute % 10 === 0 &&
-  state.eggs >= 25
+  state.eggs >= 25 &&
+  (
+    state.minute % 10 === 0 ||
+    state.eggs >= state.eggCapacity * 0.75
+  )
 ){
 
   this.sellEggs(
