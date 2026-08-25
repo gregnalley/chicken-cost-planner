@@ -78,6 +78,38 @@ function(
 
 },
 
+
+  balancedStrategy:
+
+function(
+  state
+){
+
+  const config =
+    BCPChickenGame.config;
+
+
+  /*
+    Buy hens first
+  */
+
+  if(
+    state.chickens <
+    state.coopCapacity
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+},
+
   createState:
 
   function(){
@@ -255,9 +287,9 @@ function(
         state
       );
 
-      this.buyHen(
-  state
-);
+      this.balancedStrategy(
+        state
+      );
 
     }
 
