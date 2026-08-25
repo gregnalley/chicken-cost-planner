@@ -81,11 +81,30 @@ function(){
     ],
 
 
-    buildings:
+        buildings:
 
 [
 
-    {
+  {
+
+    id:
+      "starter-coop",
+
+    type:
+      "coop",
+
+    level:
+      1,
+
+    capacity:
+      BCPChickenGame.config
+        .coop
+        .startingCapacity
+
+  },
+
+
+  {
 
     id:
       "starter-storage",
