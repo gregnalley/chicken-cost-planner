@@ -32,64 +32,68 @@ const simulator = {
 
   createState:
 
-  function(){
+function(){
 
-    return {
+  return {
 
-      minute:
-        0,
-
-
-      gameDay:
-        1,
+    minute:
+      0,
 
 
-      cash:
-        config.startingFarm.cash,
+    gameDay:
+      1,
 
 
-      hens:
-        config.startingFarm.hens,
+    cash:
+      config.startingFarm.cash,
 
 
-      eggs:
-        0,
+    hens:
+      config.startingFarm.hens,
 
 
-      storageCapacity:
-        config.startingFarm.eggStorageCapacity,
+    eggs:
+      0,
 
 
-      coopCapacity:
-        config.chicken.startingHenCapacity,
+    eggsProduced:
+      0,
 
 
-      truckCapacity:
-        config.transportation.starterTruckCapacity,
+    eggsSold:
+      0,
 
 
-      totalEggsProduced:
-        0,
+    revenue:
+      0,
 
 
-      totalEggsSold:
-        0,
+    storageCapacity:
+      config.startingFarm.eggStorageCapacity,
 
 
-      totalRevenue:
-        0,
+    truckCapacity:
+      config.transportation.starterTruckCapacity,
 
 
-      transactions:
-        [],
+    lastTruckPickup:
+      0,
 
 
-      milestones:
-        []
+    transactions:
+      [],
 
-    };
 
-  },
+    milestones:
+      [],
+
+
+    hensLost:
+      0
+
+  };
+
+},
 
 
 
@@ -122,24 +126,171 @@ const simulator = {
 
   tick:
 
-  function(
-    state
+function(
+  state
+){
+
+  const eggRate =
+    config.eggs.secondsPerEggPerHen;
+
+
+  /*
+    Advance real minutes
+  */
+
+  state.minute++;
+
+
+  /*
+    Convert to game days
+
+    10 real minutes = 1 game day
+  */
+
+  state.gameDay =
+    Math.floor(
+      state.minute /
+      10
+    ) + 1;
+
+
+
+  /*
+    Egg production
+
+    Example:
+
+    3 hens
+    60 seconds per egg
+
+    = 3 eggs per minute
+
+  */
+
+
+  const eggsThisMinute =
+    state.hens *
+    (60 / eggRate);
+
+
+
+  state.eggs +=
+    eggsThisMinute;
+
+
+  state.eggsProduced +=
+    eggsThisMinute;
+
+
+
+  /*
+    Storage limit
+  */
+
+
+  if(
+    state.eggs >
+    state.storageCapacity
   ){
 
-    state.minute++;
+    state.eggs =
+      state.storageCapacity;
+
+  }
 
 
-    if(
-      state.minute %
-      14400 === 0
-    ){
 
-      state.gameDay++;
+  /*
+    Truck pickup
 
-    }
+    Every cycle seconds
+
+  */
 
 
-  },
+  const truckCycleMinutes =
+    config.transportation
+      .starterTruckCycleSeconds /
+      60;
+
+
+
+  if(
+    state.minute -
+    state.lastTruckPickup
+    >=
+    truckCycleMinutes
+  ){
+
+    this.pickupEggs(
+      state
+    );
+
+
+    state.lastTruckPickup =
+      state.minute;
+
+  }
+
+
+},
+
+
+  pickupEggs:
+
+function(
+  state
+){
+
+  const amount =
+    Math.min(
+      state.eggs,
+      state.truckCapacity
+    );
+
+
+  if(
+    amount <= 0
+  ){
+
+    return;
+
+  }
+
+
+  state.eggs -=
+    amount;
+
+
+  const value =
+    config.eggs.startingValue;
+
+
+  const revenue =
+    amount *
+    value;
+
+
+  state.cash +=
+    revenue;
+
+
+  state.eggsSold +=
+    amount;
+
+
+  state.revenue +=
+    revenue;
+
+
+  this.record(
+    state,
+    "Truck Pickup",
+    revenue
+  );
+
+
+},
 
 
 
