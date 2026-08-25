@@ -212,7 +212,7 @@ if(
   state.minute - state.lastSaleMinute >= 10 &&
   (
     state.minute % 10 === 0 ||
-    state.eggs >= state.eggCapacity * 0.75
+    state.eggs >= state.eggCapacity * 0.95
   )
 ){
 
