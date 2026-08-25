@@ -323,16 +323,13 @@
 
 
 
-.shop-window {
+ .shop-window {
 
   display:
     flex;
 
   flex-direction:
     column;
-
-  justify-content:
-    flex-start;
 
   background:
     white;
@@ -343,10 +340,16 @@
   height:
     520px;
 
+  padding:
+    20px;
+
   box-sizing:
     border-box;
 
-}    
+  overflow:
+    hidden;
+
+} 
 
 
 
@@ -364,8 +367,8 @@
   flex:
     1;
 
-  overflow:
-    hidden;
+  overflow-y:
+    auto;
 
 }
 
@@ -403,16 +406,13 @@
 
 #close-shop-button {
 
-  align-self:
-    flex-start;
-
-  width:
-    auto;
-
   margin-top:
     15px;
 
-  padding:
-    8px 18px;
+  align-self:
+    center;
+
+  width:
+    120px;
 
 }
