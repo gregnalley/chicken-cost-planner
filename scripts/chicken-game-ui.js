@@ -636,12 +636,13 @@ Close
       "game-time"
     )
     .textContent =
-      String(
-        state.time.minute
-      )
-      .padStart(
-        2,
-        "0"
+        String(state.time.hour)
+  .padStart(2,"0")
++
+":"
++
+String(state.time.minute)
+  .padStart(2,"0"
       );
 
 

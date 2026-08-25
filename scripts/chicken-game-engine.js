@@ -103,19 +103,36 @@ BCPChickenGame.engine = {
     */
 
 
-    state.time.minute += 1;
+    /*
+  Advance game clock
+*/
+
+
+state.time.minute += 1;
 
 
 
-    if(
-      state.time.minute >= 60
-    ){
+if(
+  state.time.minute >= 60
+){
 
-      state.time.minute = 0;
+  state.time.minute = 0;
 
-      state.time.day += 1;
+  state.time.hour += 1;
 
-    }
+}
+
+
+
+if(
+  state.time.hour >= 24
+){
+
+  state.time.hour = 0;
+
+  state.time.day += 1;
+
+}
 
 /*
   Morning feeding
@@ -123,7 +140,11 @@ BCPChickenGame.engine = {
 
 
 if(
-  state.time.minute === 360
+
+  state.time.hour === 6 &&
+
+  state.time.minute === 0
+
 ){
 
 console.log(
