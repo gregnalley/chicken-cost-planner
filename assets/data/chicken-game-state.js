@@ -85,26 +85,7 @@ function(){
 
 [
 
-  {
-
-    id:
-      "starter-coop",
-
-    type:
-      "coop",
-
-    level:
-      1,
-
-    capacity:
-      BCPChickenGame.config
-        .coop
-        .startingCapacity
-
-  },
-
-
-  {
+    {
 
     id:
       "starter-storage",
@@ -119,6 +100,23 @@ function(){
       BCPChickenGame.config
         .storage
         .startingCapacity
+
+  },
+
+
+  {
+
+    id:
+      "starter-feed-storage",
+
+    type:
+      "feed-storage",
+
+    level:
+      1,
+
+    capacity:
+      250
 
   }
 
