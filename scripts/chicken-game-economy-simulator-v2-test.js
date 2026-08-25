@@ -12,6 +12,33 @@ const BCPChickenGame =
 BCPChickenGame.economySimulatorV2 = {
 
 
+    recordTransaction:
+
+function(
+  state,
+  action,
+  amount
+){
+
+  state.transactions.push({
+
+    minute:
+      state.minute,
+
+    day:
+      state.day,
+
+    action:
+      action,
+
+    amount:
+      amount
+
+  });
+
+},
+
+
   createState:
 
   function(){
@@ -53,7 +80,10 @@ BCPChickenGame.economySimulatorV2 = {
 
 
       milestones:
-        []
+        [],
+
+      transactions:
+        [] 
 
     };
 
@@ -185,6 +215,18 @@ BCPChickenGame.economySimulatorV2 = {
       this.tick(
         state
       );
+
+      if(
+  state.minute === 10
+){
+
+  this.recordTransaction(
+    state,
+    "Test Event",
+    25
+  );
+
+}
 
     }
 
