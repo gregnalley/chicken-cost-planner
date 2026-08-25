@@ -217,13 +217,15 @@ Coming Soon
 <p>
 Feed Storage:
 <br>
-0 lbs
+<span id="feed-storage"></span>
 </p>
 
 <p>
 Current Feed:
 <br>
+<span id="current-feed">
 Basic Feed
+</span>
 </p>
 
 </div>
@@ -860,6 +862,32 @@ Close
 
 
     }
+
+
+    const feedStorage =
+  state.buildings.find(
+    function(building){
+
+      return (
+        building.type === "feed-storage"
+      );
+
+    }
+  );
+
+
+if(feedStorage){
+
+  document.getElementById(
+    "feed-storage"
+  )
+  .textContent =
+    state.feed +
+    " / " +
+    feedStorage.capacity +
+    " lbs";
+
+}
 
 
 
