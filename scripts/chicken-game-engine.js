@@ -126,6 +126,13 @@ if(
   state.time.minute === 360
 ){
 
+console.log(
+    "SUNRISE EVENT",
+    state.time.day,
+    state.time.minute
+  );
+
+
   if(
   BCPChickenGame.feeding
 ){
