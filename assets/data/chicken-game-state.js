@@ -29,7 +29,10 @@ function(){
         
         
     feed:
-      100,   
+      100,
+      
+      lastFedDay:
+        0,
 
 
     chickens:
