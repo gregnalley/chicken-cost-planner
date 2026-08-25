@@ -39,6 +39,45 @@ function(
 },
 
 
+  buyHen:
+
+function(
+  state
+){
+
+  const cost =
+    BCPChickenGame.config
+      .chicken
+      .purchaseCost;
+
+
+  if(
+    state.money >= cost &&
+    state.chickens < state.coopCapacity
+  ){
+
+    state.money -= cost;
+
+
+    state.chickens += 1;
+
+
+    this.recordTransaction(
+      state,
+      "Bought Hen",
+      cost
+    );
+
+
+    return true;
+
+  }
+
+
+  return false;
+
+},
+
   createState:
 
   function(){
@@ -216,17 +255,9 @@ function(
         state
       );
 
-      if(
-  state.minute === 10
-){
-
-  this.recordTransaction(
-    state,
-    "Test Event",
-    25
-  );
-
-}
+      this.buyHen(
+  state
+);
 
     }
 
