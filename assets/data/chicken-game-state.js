@@ -25,7 +25,11 @@ function(){
     eggs:
       BCPChickenGame.config
         .startingFarm
-        .eggs,   
+        .eggs,
+        
+        
+    feed:
+      100,   
 
 
     chickens:
