@@ -182,7 +182,7 @@ storage:
   {
 
     tickMilliseconds:
-      1000
+      417
 
   }
 
