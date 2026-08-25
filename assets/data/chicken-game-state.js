@@ -155,7 +155,7 @@ function(){
 
 
       minute:
-        0
+        359
 
     }
 
