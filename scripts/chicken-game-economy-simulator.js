@@ -153,34 +153,41 @@
 
 
   function recordMilestone(
-    state,
-    label
-  ) {
+  state,
+  label
+) {
 
-    state.milestones.push({
+  state.milestones.push({
 
-      second:
-        state.elapsedSeconds,
+    second:
+      state.elapsedSeconds || 0,
 
-      time:
-        formatTime(
-          state.elapsedSeconds
-        ),
+    time:
+      formatTime(
+        state.elapsedSeconds || 0
+      ),
 
-      label:
-        label,
+    label:
+      label,
 
-      cash:
-        Number(
-          state.cash.toFixed(2)
-        ),
+    cash:
+      Number(
+        (
+          state.cash ??
+          state.money ??
+          0
+        )
+        .toFixed(2)
+      ),
 
-      hens:
-        state.hens
+    hens:
+      state.hens ||
+      state.chickens ||
+      0
 
-    });
+  });
 
-  }
+}
 
 
   /*
