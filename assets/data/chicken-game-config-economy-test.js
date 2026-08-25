@@ -354,6 +354,10 @@ global.BCPChickenGameEconomyConfig =
   BCPChickenGame.economyConfig;
 
 
+global.BCPChickenGameConfig =
+  BCPChickenGame.economyConfig;
+
+
 BCPChickenGame.config =
   BCPChickenGame.economyConfig;
 
