@@ -110,21 +110,21 @@
   }
 
 
-  function calculateEggsPerSecond(
-    state
-  ) {
+  function calculateDailyEggProduction(
+  state
+){
 
-    const baseRatePerHen =
-      1 /
-      config.eggs.secondsPerEggPerHen;
+  const eggsPerHenPerDay =
+    config.chicken.eggsPerDay;
 
-    return (
-      state.hens *
-      baseRatePerHen *
-      state.productionMultiplier
-    );
 
-  }
+  return (
+    state.hens *
+    eggsPerHenPerDay *
+    state.productionMultiplier
+  );
+
+}
 
 
   function calculateFeedCostPerSecond(
@@ -199,7 +199,7 @@
       strategy:
         strategyName,
 
-      elapsedSeconds:
+      day:
         0,
 
       cash:
@@ -311,59 +311,40 @@
   */
 
 
-  function runProductionTick(
-    state,
-    deltaSeconds
-  ) {
+  function runDailyProduction(
+  state
+){
 
-    const eggsProduced =
-      calculateEggsPerSecond(
-        state
-      ) *
-      deltaSeconds;
-
-    const availableStorage =
-      Math.max(
-        0,
-        state.storageCapacity -
-        state.storedEggs
-      );
-
-    const eggsAccepted =
-      Math.min(
-        eggsProduced,
-        availableStorage
-      );
-
-    state.storedEggs +=
-      eggsAccepted;
-
-    state.totalEggsProduced +=
-      eggsAccepted;
+  const eggsProduced =
+    calculateDailyEggProduction(
+      state
+    );
 
 
-    const feedExpense =
-      calculateFeedCostPerSecond(
-        state
-      ) *
-      deltaSeconds;
+  const availableStorage =
+    Math.max(
+      0,
+      state.storageCapacity -
+      state.storedEggs
+    );
 
-    state.cash -=
-      feedExpense;
 
-    state.totalFeedCost +=
-      feedExpense;
+  const eggsAccepted =
+    Math.min(
+      eggsProduced,
+      availableStorage
+    );
 
-    if (
-      state.cash < 0
-    ) {
 
-      state.cash =
-        0;
+  state.storedEggs +=
+    eggsAccepted;
 
-    }
 
-  }
+  state.totalEggsProduced +=
+    eggsAccepted;
+
+
+}
 
 
   /*
@@ -1625,17 +1606,9 @@
         strategy
       );
 
-    const durationSeconds =
-      (
-        options.durationMinutes ||
-        config.firstSession
-          .durationMinutes
-      ) *
-      60;
-
-    const tickSeconds =
-      options.tickSeconds ||
-      1;
+    const durationDays =
+       options.durationDays ||
+         30;
 
     const henLossSecond =
       Number.isFinite(
@@ -1651,25 +1624,18 @@
     );
 
 
-    while (
-      state.elapsedSeconds <
-      durationSeconds
-    ) {
+    while(
+  state.day <
+  durationDays
+){
 
-      state.elapsedSeconds +=
-        tickSeconds;
-
-
-      runProductionTick(
-        state,
-        tickSeconds
-      );
+  state.day +=
+    1;
 
 
-      processTransportation(
-        state,
-        tickSeconds
-      );
+  runDailyProduction(
+    state
+  );
 
 
       if (
