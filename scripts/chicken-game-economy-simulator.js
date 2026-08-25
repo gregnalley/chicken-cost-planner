@@ -248,25 +248,6 @@
       feedUpgradeIndex:
         0,
 
-      protection:
-        config.predators
-          .startingProtection,
-
-      predatorUpgradeLatch:
-        false,
-
-      predatorUpgradeHardwareCloth:
-        false,
-
-      firstLossUsed:
-        false,
-
-      hensLost:
-        0,
-
-      firstReplacementDiscountUsed:
-        false,
-
       landUnlocked:
         false,
 
