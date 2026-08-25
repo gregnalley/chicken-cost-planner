@@ -190,4 +190,8 @@ storage:
 };
 
 
+global.BCPChickenGameConfig =
+  BCPChickenGame.config;
+
+
 })(window);
