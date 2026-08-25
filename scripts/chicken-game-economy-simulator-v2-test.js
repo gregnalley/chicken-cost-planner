@@ -209,6 +209,7 @@ function(
 */
 
 if(
+  state.minute % 15 === 0 &&
   state.eggs >= 25
 ){
 
