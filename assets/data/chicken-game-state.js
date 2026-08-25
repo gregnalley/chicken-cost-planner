@@ -150,12 +150,16 @@ function(){
 
     {
 
-      day:
-        1,
+     day:
+       1,
 
 
-      minute:
-        359
+     hour:
+       5,
+
+
+     minute:
+       59
 
     }
 
