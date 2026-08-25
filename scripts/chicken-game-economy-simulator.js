@@ -228,19 +228,6 @@
       feedCostMultiplier:
         1,
 
-      truckCapacity:
-        config.transportation
-          .starterTruckCapacity,
-
-      truckCycleSeconds:
-        config.transportation
-          .starterTruckCycleSeconds,
-
-      truckTimer:
-        0,
-
-      automaticDriver:
-        false,
 
       manualSellingEnabled:
         true,
@@ -257,8 +244,6 @@
       storageUpgradeIndex:
         0,
 
-      transportationUpgradeIndex:
-        0,
 
       feedUpgradeIndex:
         0,
