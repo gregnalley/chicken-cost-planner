@@ -354,5 +354,9 @@ global.BCPChickenGameEconomyConfig =
   BCPChickenGame.economyConfig;
 
 
+BCPChickenGame.config =
+  BCPChickenGame.economyConfig;
+
+
 
 })(window);
