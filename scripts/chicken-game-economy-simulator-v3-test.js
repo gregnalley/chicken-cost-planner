@@ -318,6 +318,11 @@ function(
     }
 
 
+    console.log(
+  "SIMULATION FINAL STATE",
+  state
+);
+
     return {
 
   ...state,
