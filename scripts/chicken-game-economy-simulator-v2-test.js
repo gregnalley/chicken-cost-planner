@@ -209,7 +209,7 @@ function(
 */
 
 if(
-  state.eggs >= 25 &&
+  state.minute - state.lastSaleMinute >= 10 &&
   (
     state.minute % 10 === 0 ||
     state.eggs >= state.eggCapacity * 0.75
@@ -220,6 +220,10 @@ if(
     state,
     25
   );
+
+
+  state.lastSaleMinute =
+    state.minute;
 
 }
 
@@ -280,6 +284,9 @@ if(
       minute:
         0,
 
+      lastSaleMinute:
+        0,  
+
 
       money:
         config.startingFarm.money,
@@ -301,7 +308,7 @@ if(
 
 
       eggStorage:
-        config.storage.startingCapacity,
+        config.storage.startingCapacity, 
 
 
       milestones:
