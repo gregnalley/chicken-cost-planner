@@ -117,7 +117,27 @@ BCPChickenGame.engine = {
 
     }
 
+/*
+  Morning feeding
+*/
 
+
+if(
+  state.time.minute === 360
+){
+
+  if(
+  BCPChickenGame.feeding
+){
+
+  BCPChickenGame.feeding
+    .consumeDailyFeed(
+      state
+    );
+
+}
+
+}
 
     /*
       Produce eggs
