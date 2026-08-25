@@ -209,7 +209,7 @@ function(
 */
 
 if(
-  state.minute % 60 === 0
+  state.eggs >= 25
 ){
 
   this.sellEggs(
