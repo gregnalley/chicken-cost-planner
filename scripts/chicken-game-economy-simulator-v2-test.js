@@ -146,12 +146,78 @@ function(
 
 },
 
+  sellEggs:
+
+function(
+  state,
+  amount
+){
+
+  const config =
+    BCPChickenGame.config;
+
+
+  const eggsToSell =
+    Math.min(
+      amount,
+      state.eggs
+    );
+
+
+  if(
+    eggsToSell <= 0
+  ){
+
+    return false;
+
+  }
+
+
+  state.eggs -=
+    eggsToSell;
+
+
+  const income =
+    eggsToSell *
+    config.eggs.sellValue;
+
+
+  state.money +=
+    income;
+
+
+  this.recordTransaction(
+    state,
+    "Sold Eggs",
+    income
+  );
+
+
+  return true;
+
+},
+
 
   balancedStrategy:
 
 function(
   state
 ){
+
+    /*
+  Sell eggs every hour
+*/
+
+if(
+  state.minute % 60 === 0
+){
+
+  this.sellEggs(
+    state,
+    25
+  );
+
+}
 
   /*
     Buy chickens while space exists
@@ -217,6 +283,9 @@ function(
 
       eggs:
         config.startingFarm.eggs,
+
+      eggCapacity:
+        config.storage.startingCapacity,
 
 
       chickens:
@@ -290,13 +359,24 @@ function(
 
 
     const eggsProduced =
-      state.chickens *
-      config.chicken.eggsPerMinute;
+  state.chickens *
+  config.chicken.eggsPerMinute;
+
+
+state.eggs +=
+  eggsProduced;
 
 
 
-    state.eggs +=
-      eggsProduced;
+if(
+  state.eggs >
+  state.eggCapacity
+){
+
+  state.eggs =
+    state.eggCapacity;
+
+}
 
 
 
@@ -315,7 +395,7 @@ function(
 
     }
 
-
+  },
 
 
 
@@ -324,23 +404,7 @@ function(
     */
 
 
-    const income =
-      state.eggs *
-      config.eggs.sellValue;
-
-
-
-    state.money +=
-      income;
-
-
-
-    state.eggs =
-      0;
-
-
-
-  },
+   
 
 
 
