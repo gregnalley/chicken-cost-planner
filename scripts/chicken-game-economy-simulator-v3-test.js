@@ -323,13 +323,17 @@ function(
   state
 );
 
-    return {
+   return {
 
   ...state,
 
 
   finalCash:
     state.cash,
+
+
+  day:
+    state.gameDay,
 
 
   coopCapacity:
@@ -340,32 +344,16 @@ function(
     config.eggs.startingValue,
 
 
-  totalEggsProduced:
-    state.eggsProduced,
-
-
-  totalEggsSold:
-    state.eggsSold,
-
-
-  totalRevenue:
-    state.revenue,
-
-
-  feedCost:
-    0,
+  storedEggs:
+    state.eggs,
 
 
   protection:
-    0,
+    config.predators.startingProtection,
 
 
-  truckCapacity:
-    state.truckCapacity,
-
-
-  hensLost:
-    state.hensLost
+  truck:
+    state.truckCapacity
 
 };
 
