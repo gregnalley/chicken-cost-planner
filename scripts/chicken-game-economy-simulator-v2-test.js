@@ -79,7 +79,7 @@ function(
 },
 
 
-  balancedStrategy:
+  upgradeCoop:
 
 function(
   state
@@ -89,8 +89,72 @@ function(
     BCPChickenGame.config;
 
 
+  const currentCapacity =
+    state.coopCapacity;
+
+
+  const upgrade =
+    config.coop.upgrades.find(
+      function(item){
+
+        return (
+          item.capacity >
+          currentCapacity
+        );
+
+      }
+    );
+
+
+  if(
+    !upgrade
+  ){
+
+    return false;
+
+  }
+
+
+
+  if(
+    state.money >= upgrade.cost
+  ){
+
+    state.money -=
+      upgrade.cost;
+
+
+    state.coopCapacity =
+      upgrade.capacity;
+
+
+
+    this.recordTransaction(
+      state,
+      "Upgraded Coop",
+      upgrade.cost
+    );
+
+
+    return true;
+
+  }
+
+
+  return false;
+
+
+},
+
+
+  balancedStrategy:
+
+function(
+  state
+){
+
   /*
-    Buy hens first
+    Buy chickens while space exists
   */
 
   if(
@@ -106,6 +170,23 @@ function(
 
   }
 
+
+
+  /*
+    Coop is full.
+    Try upgrading.
+  */
+
+
+  if(
+    this.upgradeCoop(
+      state
+    )
+  ){
+
+    return;
+
+  }
 
 
 },
