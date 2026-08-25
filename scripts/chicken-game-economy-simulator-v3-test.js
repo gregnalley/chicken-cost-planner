@@ -318,7 +318,51 @@ function(
     }
 
 
-    return state;
+    return {
+
+  ...state,
+
+
+  finalCash:
+    state.cash,
+
+
+  coopCapacity:
+    config.chicken.startingHenCapacity,
+
+
+  eggValue:
+    config.eggs.startingValue,
+
+
+  totalEggsProduced:
+    state.eggsProduced,
+
+
+  totalEggsSold:
+    state.eggsSold,
+
+
+  totalRevenue:
+    state.revenue,
+
+
+  feedCost:
+    0,
+
+
+  protection:
+    0,
+
+
+  truckCapacity:
+    state.truckCapacity,
+
+
+  hensLost:
+    state.hensLost
+
+};
 
   },
 
