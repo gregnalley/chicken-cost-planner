@@ -47,6 +47,13 @@ function(){
     gameDay:
       1,
 
+     dayPhase:
+      "day",
+
+
+    dayPhaseProgress:
+      0, 
+
 
     cash:
       config.startingFarm.cash,
@@ -125,6 +132,13 @@ function(){
 
 
     hensLost:
+      0,
+
+    predatorFeedLossTriggered:
+      false,
+
+
+    predatorFeedLost:
       0
 
   };
@@ -370,6 +384,196 @@ function(
 
 
 
+processEarlyPredatorEvent:
+
+function(
+  state
+){
+
+  const predatorConfig =
+    config.feed
+      .predatorFeedLoss;
+
+
+  if(
+    !predatorConfig ||
+    predatorConfig.enabled !== true
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Only trigger once.
+  */
+
+  if(
+    state.predatorFeedLossTriggered
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    First-pass timing:
+
+    Trigger halfway through
+    the 30-minute test.
+
+    Later this can become
+    randomized within a safe
+    early-game window.
+  */
+
+  const triggerSecond =
+    15 *
+    60;
+
+
+  if(
+    state.elapsedSeconds <
+    triggerSecond
+  ){
+
+    return;
+
+  }
+
+
+  const feedLost =
+    Math.min(
+      predatorConfig.poundsLost,
+      state.feedAmount
+    );
+
+
+  state.feedAmount -=
+    feedLost;
+
+
+  state.predatorFeedLost +=
+    feedLost;
+
+
+  state.predatorFeedLossTriggered =
+    true;
+
+
+  this.record(
+    state,
+    "Predator Scattered Feed",
+    feedLost
+  );
+
+},
+
+
+
+updateDayNightCycle:
+
+function(
+  state
+){
+
+  const secondsPerGameDay =
+    config.time
+      .realMinutesPerGameDay *
+    60;
+
+
+  /*
+    Position within the current
+    10-minute game day.
+
+    0.00 = start of day
+    1.00 = end of day
+  */
+
+  const secondsIntoDay =
+    state.elapsedSeconds %
+    secondsPerGameDay;
+
+
+  const progress =
+    secondsIntoDay /
+    secondsPerGameDay;
+
+
+  state.dayPhaseProgress =
+    progress;
+
+
+
+  /*
+    First-pass day/night cycle.
+
+    60% daylight
+    10% dusk
+    20% night
+    10% dawn
+
+    With a 10-minute game day:
+
+    Day:
+      0:00 - 6:00
+
+    Dusk:
+      6:00 - 7:00
+
+    Night:
+      7:00 - 9:00
+
+    Dawn:
+      9:00 - 10:00
+  */
+
+
+  if(
+    progress <
+    0.60
+  ){
+
+    state.dayPhase =
+      "day";
+
+  }
+
+  else if(
+    progress <
+    0.70
+  ){
+
+    state.dayPhase =
+      "dusk";
+
+  }
+
+  else if(
+    progress <
+    0.90
+  ){
+
+    state.dayPhase =
+      "night";
+
+  }
+
+  else
+  {
+
+    state.dayPhase =
+      "dawn";
+
+  }
+
+},
+
+
+
   tick:
 
 function(
@@ -427,6 +631,10 @@ function(
     ) + 1;
 
 
+
+    this.updateDayNightCycle(
+      state
+    );
 
     /*
   Feed consumption
@@ -1664,6 +1872,11 @@ function(
   ){
 
     this.tick(
+      state
+    );
+
+
+    this.processEarlyPredatorEvent(
       state
     );
 
