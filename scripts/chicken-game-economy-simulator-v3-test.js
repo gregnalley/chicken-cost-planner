@@ -1247,16 +1247,208 @@ function(
 ){
 
   /*
-    Balanced player:
+    ==================================================
+    BALANCED PLAYER — PHASE 2
+    ==================================================
 
-    Moderate flock growth.
+    Philosophy:
 
-    For this first strategy
-    test, stop at 7 hens.
+    Grow the flock steadily,
+    but invest in production
+    and egg value along the way.
+
+    Progression:
+
+    4 hens
+      ↓
+    Production Upgrade 1
+      ↓
+    5 hens
+      ↓
+    Egg Value Upgrade 1
+      ↓
+    6 hens
+      ↓
+    Production Upgrade 2
+      ↓
+    7 hens
 
     Later this strategy will
-    mix coop, truck, storage,
-    protection, and land.
+    also mix in storage,
+    transportation,
+    feed,
+    protection,
+    and land.
+  */
+
+
+
+  /*
+    STEP 1
+
+    Reach four hens.
+  */
+
+  if(
+    state.hens <
+    4
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 2
+
+    First production upgrade.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    1
+  ){
+
+    if(
+      this.upgradeProduction(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 3
+
+    Reach five hens.
+  */
+
+  if(
+    state.hens <
+    5
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 4
+
+    First egg-value upgrade.
+  */
+
+  if(
+    state.eggValueUpgradeIndex <
+    1
+  ){
+
+    if(
+      this.upgradeEggValue(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 5
+
+    Reach six hens.
+  */
+
+  if(
+    state.hens <
+    6
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 6
+
+    Second production upgrade.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    2
+  ){
+
+    if(
+      this.upgradeProduction(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 7
+
+    Reach seven hens.
   */
 
   if(
@@ -1264,11 +1456,20 @@ function(
     7
   ){
 
-    this.buyHen(
-      state
-    );
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
 
   }
+
 
 },
 
