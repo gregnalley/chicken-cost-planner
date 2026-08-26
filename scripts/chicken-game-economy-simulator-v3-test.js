@@ -60,7 +60,14 @@ function(){
 
 
     eggValue:
-      config.eggs.startingValue,  
+      config.eggs.startingValue,
+      
+    nestingUpgradeIndex:
+      0,
+
+
+    eggValueUpgradeIndex:
+      0, 
 
     coopCapacity:
       config.chicken.startingHenCapacity,  
@@ -476,6 +483,127 @@ function(
 },
 
 
+upgradeProduction:
+
+function(
+  state
+){
+
+  const upgrade =
+    config.productionUpgrades
+      .nestingBoxes[
+        state.nestingUpgradeIndex
+      ];
+
+
+  if(
+    !upgrade
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    upgrade.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    upgrade.cost;
+
+
+  /*
+    A 1.5 multiplier means
+    the hen produces eggs
+    1.5 times faster.
+
+    60 sec / 1.5 =
+    40 sec per egg.
+  */
+
+  state.eggRate /=
+    upgrade.multiplier;
+
+
+  state.nestingUpgradeIndex +=
+    1;
+
+
+  this.record(
+    state,
+    "Production Upgrade",
+    upgrade.cost
+  );
+
+
+  return true;
+
+},
+
+
+
+upgradeEggValue:
+
+function(
+  state
+){
+
+  const upgrade =
+    config.eggValueUpgrades[
+      state.eggValueUpgradeIndex
+    ];
+
+
+  if(
+    !upgrade
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    upgrade.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    upgrade.cost;
+
+
+  state.eggValue =
+    upgrade.eggValue;
+
+
+  state.eggValueUpgradeIndex +=
+    1;
+
+
+  this.record(
+    state,
+    "Egg Value Upgrade",
+    upgrade.cost
+  );
+
+
+  return true;
+
+},
+
+
 upgradeStorage:
 
 function(
@@ -808,62 +936,79 @@ function(
 ){
 
   /*
-    Production Focus
-
-    Build a modest flock first,
-    then preserve cash for
-    production infrastructure.
-
-    Later we will add true
-    egg-production and egg-value
-    upgrades here.
+    Step 1:
+    Establish a four-hen flock.
   */
-
 
   if(
     state.hens <
     4
   ){
 
-    this.buyHen(
-      state
-    );
+    if(
+      this.buyHen(
+        state
+      )
+    ){
 
-    return;
+      return;
+
+    }
 
   }
+
 
 
   /*
-    Upgrade storage once
-    affordable.
+    Step 2:
+    Buy the first production
+    upgrade as soon as it
+    becomes affordable.
   */
 
   if(
-    this.upgradeStorage(
-      state
-    )
+    state.nestingUpgradeIndex <
+    1
   ){
 
-    return;
+    if(
+      this.upgradeProduction(
+        state
+      )
+    ){
+
+      return;
+
+    }
 
   }
+
 
 
   /*
-    Then upgrade transportation
-    once affordable.
+    Step 3:
+    After production has been
+    improved, work toward the
+    first egg-value upgrade.
   */
 
   if(
-    this.upgradeTruck(
-      state
-    )
+    state.eggValueUpgradeIndex <
+    1
   ){
 
-    return;
+    if(
+      this.upgradeEggValue(
+        state
+      )
+    ){
+
+      return;
+
+    }
 
   }
+
 
 },
 
