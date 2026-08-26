@@ -80,6 +80,140 @@ BCPChickenGame.economyConfig = {
 
 
   /*
+  Production upgrades
+
+  First-pass V3 balance values.
+*/
+
+productionUpgrades:
+
+{
+
+  nestingBoxes:
+
+  [
+
+    {
+
+      level:
+        1,
+
+      name:
+        "Basic Nesting Boxes",
+
+      cost:
+        75,
+
+      multiplier:
+        1.5
+
+    },
+
+
+    {
+
+      level:
+        2,
+
+      name:
+        "Improved Nesting Boxes",
+
+      cost:
+        250,
+
+      multiplier:
+        1.35
+
+    },
+
+
+    {
+
+      level:
+        3,
+
+      name:
+        "Premium Nesting System",
+
+      cost:
+        750,
+
+      multiplier:
+        1.25
+
+    }
+
+  ]
+
+},
+
+
+
+/*
+  Egg-value upgrades
+
+  Also first-pass V3 values.
+*/
+
+eggValueUpgrades:
+
+[
+
+  {
+
+    level:
+      1,
+
+    name:
+      "Farm Fresh Branding",
+
+    cost:
+      150,
+
+    eggValue:
+      1.25
+
+  },
+
+
+  {
+
+    level:
+      2,
+
+    name:
+      "Premium Egg Market",
+
+    cost:
+      500,
+
+    eggValue:
+      1.50
+
+  },
+
+
+  {
+
+    level:
+      3,
+
+    name:
+      "Specialty Egg Contracts",
+
+    cost:
+      1500,
+
+    eggValue:
+      2.00
+
+  }
+
+],
+
+
+
+  /*
     Storage system
   */
 
