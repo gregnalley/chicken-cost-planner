@@ -950,8 +950,49 @@ function(
 ){
 
   /*
-    Step 1:
-    Establish a four-hen flock.
+    ==================================================
+    PRODUCTION FOCUS — PHASE 2
+    ==================================================
+
+    Philosophy:
+
+    This player prefers making
+    each hen more productive
+    before aggressively growing
+    the flock.
+
+    Progression:
+
+    4 hens
+      ↓
+    Production Upgrade 1
+      ↓
+    Egg Value Upgrade 1
+      ↓
+    5 hens
+      ↓
+    Production Upgrade 2
+      ↓
+    Egg Value Upgrade 2
+      ↓
+    6 hens
+      ↓
+    Production Upgrade 3
+      ↓
+    Egg Value Upgrade 3
+
+    Later we will add truck,
+    storage, feed, automation,
+    and land decisions.
+  */
+
+
+
+  /*
+    STEP 1
+
+    Establish a small
+    four-hen flock.
   */
 
   if(
@@ -974,10 +1015,9 @@ function(
 
 
   /*
-    Step 2:
-    Buy the first production
-    upgrade as soon as it
-    becomes affordable.
+    STEP 2
+
+    First production upgrade.
   */
 
   if(
@@ -995,15 +1035,22 @@ function(
 
     }
 
+    /*
+      If we cannot afford it yet,
+      save for it rather than
+      buying something else.
+    */
+
+    return;
+
   }
 
 
 
   /*
-    Step 3:
-    After production has been
-    improved, work toward the
-    first egg-value upgrade.
+    STEP 3
+
+    First egg-value upgrade.
   */
 
   if(
@@ -1020,6 +1067,172 @@ function(
       return;
 
     }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 4
+
+    Add one more hen after
+    establishing the first
+    production/value upgrades.
+  */
+
+  if(
+    state.hens <
+    5
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 5
+
+    Second production upgrade.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    2
+  ){
+
+    if(
+      this.upgradeProduction(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 6
+
+    Second egg-value upgrade.
+  */
+
+  if(
+    state.eggValueUpgradeIndex <
+    2
+  ){
+
+    if(
+      this.upgradeEggValue(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 7
+
+    Add a sixth hen.
+  */
+
+  if(
+    state.hens <
+    6
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 8
+
+    Third production upgrade.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    if(
+      this.upgradeProduction(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 9
+
+    Third egg-value upgrade.
+  */
+
+  if(
+    state.eggValueUpgradeIndex <
+    3
+  ){
+
+    if(
+      this.upgradeEggValue(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+    return;
 
   }
 
@@ -1200,11 +1413,6 @@ function(){
 BCPChickenGame.economySimulatorV3 =
   simulator;
 
-
-
-console.log(
-  "Chicken Economy Simulator V3 Loaded"
-);
 
 
 
