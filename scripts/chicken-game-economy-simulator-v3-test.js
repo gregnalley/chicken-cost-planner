@@ -536,6 +536,20 @@ function(
     1;
 
 
+ console.log(
+  "PRODUCTION UPGRADE PURCHASED",
+  this.formatTime(
+    state.elapsedSeconds
+  ),
+  "cash:",
+  state.cash,
+  "hens:",
+  state.hens,
+  "eggRate:",
+  state.eggRate
+);   
+
+
   this.record(
     state,
     "Production Upgrade",
