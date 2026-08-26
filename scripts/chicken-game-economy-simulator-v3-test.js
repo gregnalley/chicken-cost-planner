@@ -154,7 +154,14 @@ predatorFeedLossEvents:
 
 
 predatorFeedLost:
-  0,  
+  0,
+  
+landUnlocked:
+  false,
+
+
+landUnlockSecond:
+  null
 
   };
 
@@ -597,29 +604,73 @@ function(
     No hen loss.
   */
 
-  const severityRoll =
-    Math.random();
+  /*
+  Game Day 1 is the predator
+  introduction period.
+
+  Predator encounters may
+  happen, but they can only
+  generate warnings.
+
+  This teaches the player that
+  predator pressure exists
+  before actual losses begin.
+*/
+
+if(
+  state.gameDay <=
+  1
+){
+
+  state.predatorWarnings +=
+    1;
 
 
-  if(
-    severityRoll <
-    0.70
-  ){
-
-    state.predatorWarnings +=
-      1;
+  this.record(
+    state,
+    "Predator Warning",
+    0
+  );
 
 
-    this.record(
-      state,
-      "Predator Warning",
-      0
-    );
+  return;
+
+}
 
 
-    return;
 
-  }
+/*
+  Beginning on Game Day 2,
+  encounters can become minor
+  loss events.
+
+  Most encounters still remain
+  warnings.
+*/
+
+const severityRoll =
+  Math.random();
+
+
+if(
+  severityRoll <
+  0.70
+){
+
+  state.predatorWarnings +=
+    1;
+
+
+  this.record(
+    state,
+    "Predator Warning",
+    0
+  );
+
+
+  return;
+
+}
 
 
   const feedLost =
@@ -1292,6 +1343,112 @@ function(
 },
 
 
+
+purchaseFirstExpansion:
+
+function(
+  state
+){
+
+  /*
+    East Pasture can only
+    be purchased once.
+  */
+
+  if(
+    state.landUnlocked
+  ){
+
+    return false;
+
+  }
+
+
+  const expansion =
+    config.land
+      .firstExpansion;
+
+
+  if(
+    !expansion
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    expansion.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    expansion.cost;
+
+
+  state.landUnlocked =
+    true;
+
+
+  state.landUnlockSecond =
+    state.elapsedSeconds;
+
+
+  /*
+    The HTML test page already
+    looks for milestones that
+    begin with:
+
+    LAND UNLOCKED:
+  */
+
+  state.milestones.push({
+
+    second:
+      state.elapsedSeconds,
+
+
+    time:
+      this.formatTime(
+        state.elapsedSeconds
+      ),
+
+
+    label:
+      "LAND UNLOCKED: " +
+      expansion.name,
+
+
+    cash:
+      Number(
+        state.cash.toFixed(2)
+      ),
+
+
+    hens:
+      state.hens
+
+  });
+
+
+  this.record(
+    state,
+    "Purchased Land",
+    expansion.cost
+  );
+
+
+  return true;
+
+},
+
+
 runHenBuyingStrategy:
 
 function(
@@ -1477,18 +1634,99 @@ function(
 ){
 
   /*
-    Expansion player:
+    ==================================================
+    EXPANSION FOCUS — PHASE 2
+    ==================================================
 
-    Grow flock aggressively
-    until the starter coop
-    becomes the bottleneck.
+    Early objective:
 
-    Coop upgrading already
-    exists and will happen
-    when capacity is reached.
+    1. Fill the starter coop.
+    2. Buy the first coop expansion.
+    3. Stop spending.
+    4. Save aggressively for East Pasture.
+
+    This gives us a clean test of
+    whether the current economy can
+    approach the $3,000 land target
+    by the end of Game Day 3.
   */
 
-  this.runHenBuyingStrategy(
+
+
+  /*
+    If East Pasture is already
+    unlocked, this phase is done.
+  */
+
+  if(
+    state.landUnlocked
+  ){
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 1
+
+    Fill the starter coop
+    to 10 hens.
+  */
+
+  if(
+    state.coopCapacity <=
+      config.chicken.startingHenCapacity &&
+    state.hens <
+      config.chicken.startingHenCapacity
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 2
+
+    Once the starter coop is full,
+    buy the first coop expansion.
+  */
+
+  if(
+    state.coopCapacity <=
+      config.chicken.startingHenCapacity
+  ){
+
+    this.upgradeCoop(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 3
+
+    The first coop expansion is
+    complete.
+
+    Stop buying hens and upgrades.
+
+    Save every dollar toward
+    East Pasture.
+  */
+
+  this.purchaseFirstExpansion(
     state
   );
 
