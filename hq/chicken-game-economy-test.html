@@ -1536,14 +1536,16 @@ console.log(
                   <div class="summary-item">
 
                     <span class="summary-label">
-                      Feed Cost
+                      Feed Remaining
                     </span>
 
                     <span class="summary-value">
-                      ${formatMoney(state.totalFeedCost)}
+                      ${Number(
+                        state.feedAmount || 0
+                        ).toFixed(1)} lb
                     </span>
 
-                  </div>
+                    </div>
 
 
                   <div class="summary-item">
