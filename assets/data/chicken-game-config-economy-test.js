@@ -384,7 +384,7 @@ feed:
           2,
 
         cost:
-          250,
+          150,
 
         capacity:
           25
