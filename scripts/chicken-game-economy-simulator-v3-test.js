@@ -36,6 +36,10 @@ function(){
 
   return {
 
+    elapsedSeconds:
+      0,
+
+
     minute:
       0,
 
@@ -76,7 +80,11 @@ function(){
       config.transportation.starterTruckCapacity,
 
 
-    lastTruckPickup:
+    lastTruckPickupSecond:
+      0,
+
+
+    eggProductionAccumulator:
       0,
 
 
@@ -131,95 +139,147 @@ function(
 ){
 
   const eggRate =
-    config.eggs.secondsPerEggPerHen;
+    config.eggs
+      .secondsPerEggPerHen;
 
 
   /*
-    Advance real minutes
+    Advance real time.
+
+    One simulator tick =
+    one real second.
   */
 
-  state.minute++;
+  state.elapsedSeconds +=
+    1;
+
 
 
   /*
-    Convert to game days
-
-    10 real minutes = 1 game day
+    Keep minute available
+    for reports and later
+    strategy decisions.
   */
+
+  state.minute =
+    Math.floor(
+      state.elapsedSeconds /
+      60
+    );
+
+
+
+  /*
+    Convert real time
+    into game days.
+
+    10 real minutes =
+    1 game day.
+  */
+
+  const secondsPerGameDay =
+    config.time
+      .realMinutesPerGameDay *
+    60;
+
 
   state.gameDay =
     Math.floor(
-      state.minute /
-      10
+      state.elapsedSeconds /
+      secondsPerGameDay
     ) + 1;
 
 
 
   /*
-    Egg production
+    Egg production.
+
+    Each hen contributes a
+    fraction of an egg every
+    second.
 
     Example:
 
     3 hens
     60 seconds per egg
 
-    = 3 eggs per minute
-
+    3 / 60 =
+    0.05 egg progress
+    per second.
   */
 
-
-  const eggsThisMinute =
-    state.hens *
-    (60 / eggRate);
-
-
-
-  state.eggs +=
-    eggsThisMinute;
-
-
-  state.eggsProduced +=
-    eggsThisMinute;
+  state.eggProductionAccumulator +=
+    state.hens /
+    eggRate;
 
 
 
   /*
-    Storage limit
+    Only create whole eggs.
   */
+
+  const wholeEggsProduced =
+    Math.floor(
+      state.eggProductionAccumulator
+    );
 
 
   if(
-    state.eggs >
-    state.storageCapacity
+    wholeEggsProduced > 0
   ){
 
-    state.eggs =
-      state.storageCapacity;
+    state.eggProductionAccumulator -=
+      wholeEggsProduced;
+
+
+
+    /*
+      Respect storage capacity.
+    */
+
+    const availableStorage =
+      Math.max(
+        0,
+        state.storageCapacity -
+        state.eggs
+      );
+
+
+    const eggsAccepted =
+      Math.min(
+        wholeEggsProduced,
+        availableStorage
+      );
+
+
+    state.eggs +=
+      eggsAccepted;
+
+
+    state.eggsProduced +=
+      eggsAccepted;
 
   }
 
 
 
   /*
-    Truck pickup
+    Truck pickup.
 
-    Every cycle seconds
-
+    The starter truck really
+    arrives every 45 seconds.
   */
 
-
-  const truckCycleMinutes =
+  const truckCycleSeconds =
     config.transportation
-      .starterTruckCycleSeconds /
-      60;
-
+      .starterTruckCycleSeconds;
 
 
   if(
-    state.minute -
-    state.lastTruckPickup
+    state.elapsedSeconds -
+    state.lastTruckPickupSecond
     >=
-    truckCycleMinutes
+    truckCycleSeconds
   ){
 
     this.pickupEggs(
@@ -227,8 +287,8 @@ function(
     );
 
 
-    state.lastTruckPickup =
-      state.minute;
+    state.lastTruckPickupSecond =
+      state.elapsedSeconds;
 
   }
 
@@ -305,17 +365,22 @@ function(
 
 
 
-    for(
-      let i = 0;
-      i < minutes;
-      i++
-    ){
+    const totalSeconds =
+  minutes *
+  60;
 
-      this.tick(
-        state
-      );
 
-    }
+for(
+  let i = 0;
+  i < totalSeconds;
+  i++
+){
+
+  this.tick(
+    state
+  );
+
+}
 
 
     console.log(
