@@ -213,6 +213,110 @@ eggValueUpgrades:
 
 
 
+feed:
+
+{
+
+  /*
+    Starting feed inventory.
+
+    The player begins with enough
+    feed that the first few hens
+    are not immediately stressful.
+  */
+
+  startingAmount:
+    100,
+
+
+  /*
+    Feed consumed by one hen
+    per game day.
+
+    First-pass test value only.
+    We will tune this after the
+    simulator begins tracking feed.
+  */
+
+  poundsPerHenPerGameDay:
+    0.25,
+
+
+  /*
+    Basic feed purchase.
+
+    Later we can add:
+    - larger bags
+    - bulk feed
+    - discounted purchases
+    - storage limits
+    - feed efficiency upgrades
+  */
+
+  purchaseOptions:
+
+  [
+
+    {
+
+      id:
+        "basic-feed-bag",
+
+      label:
+        "Basic Feed Bag",
+
+      pounds:
+        50,
+
+      cost:
+        15
+
+    },
+
+
+    {
+
+      id:
+        "bulk-feed",
+
+      label:
+        "Bulk Feed",
+
+      pounds:
+        250,
+
+      cost:
+        65
+
+    }
+
+  ],
+
+
+  /*
+    Early predator nuisance event.
+
+    This does NOT kill hens.
+
+    Predator losses are initially
+    limited to feed/resource loss.
+  */
+
+  predatorFeedLoss:
+
+  {
+
+    enabled:
+      false,
+
+    poundsLost:
+      10
+
+  }
+
+},
+
+
   /*
     Storage system
   */
