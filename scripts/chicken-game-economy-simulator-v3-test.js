@@ -470,6 +470,128 @@ function(
 },
 
 
+upgradeStorage:
+
+function(
+  state
+){
+
+  const nextUpgrade =
+    config.storage.upgrades.find(
+      function(
+        upgrade
+      ){
+
+        return (
+          upgrade.capacity >
+          state.storageCapacity
+        );
+
+      }
+    );
+
+
+  if(
+    !nextUpgrade
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    nextUpgrade.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    nextUpgrade.cost;
+
+
+  state.storageCapacity =
+    nextUpgrade.capacity;
+
+
+  this.record(
+    state,
+    "Upgraded Storage",
+    nextUpgrade.cost
+  );
+
+
+  return true;
+
+},
+
+
+upgradeTruck:
+
+function(
+  state
+){
+
+  const nextUpgrade =
+    config.transportation
+      .upgrades
+      .find(
+        function(
+          upgrade
+        ){
+
+          return (
+            upgrade.capacity >
+            state.truckCapacity
+          );
+
+        }
+      );
+
+
+  if(
+    !nextUpgrade
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    nextUpgrade.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    nextUpgrade.cost;
+
+
+  state.truckCapacity =
+    nextUpgrade.capacity;
+
+
+  this.record(
+    state,
+    "Upgraded Truck",
+    nextUpgrade.cost
+  );
+
+
+  return true;
+
+},
+
+
 runHenBuyingStrategy:
 
 function(
@@ -680,25 +802,60 @@ function(
 ){
 
   /*
-    Production player:
+    Production Focus
 
-    For now, grow more
-    cautiously.
+    Build a modest flock first,
+    then preserve cash for
+    production infrastructure.
 
-    We will later replace
-    this with production,
-    egg-value, storage,
-    and truck upgrades.
+    Later we will add true
+    egg-production and egg-value
+    upgrades here.
   */
+
 
   if(
     state.hens <
-    5
+    4
   ){
 
     this.buyHen(
       state
     );
+
+    return;
+
+  }
+
+
+  /*
+    Upgrade storage once
+    affordable.
+  */
+
+  if(
+    this.upgradeStorage(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Then upgrade transportation
+    once affordable.
+  */
+
+  if(
+    this.upgradeTruck(
+      state
+    )
+  ){
+
+    return;
 
   }
 
