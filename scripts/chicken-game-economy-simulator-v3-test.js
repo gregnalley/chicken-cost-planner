@@ -55,6 +55,9 @@ function(){
     hens:
       config.startingFarm.hens,
 
+    coopCapacity:
+      config.chicken.startingHenCapacity,  
+
 
     eggs:
       0,
@@ -454,106 +457,98 @@ function(
 
   runSimulation:
 
-  function(
-    minutes
-  ){
-
-console.log(
-  "HEN STRATEGY",
-  state.second,
-  state.cash,
-  state.hens
-);
-
-
-    const state =
-      this.createState();
-
-
-
-    const totalSeconds =
-  minutes *
-  60;
-
-
-for(
-  let i = 0;
-  i < totalSeconds;
-  i++
+function(
+  minutes
 ){
 
-  this.tick(
+  const state =
+    this.createState();
+
+
+  const totalSeconds =
+    minutes *
+    60;
+
+
+  for(
+    let i = 0;
+    i < totalSeconds;
+    i++
+  ){
+
+    this.tick(
+      state
+    );
+
+
+    this.runHenBuyingStrategy(
+      state
+    );
+
+  }
+
+
+  console.log(
+    "SIMULATION FINAL STATE",
     state
   );
 
 
-  this.runHenBuyingStrategy(
-    state
-  );
+  return {
 
-}
+    ...state,
 
 
-    console.log(
-  "SIMULATION FINAL STATE",
-  state
-);
-
-   return {
-
-  ...state,
+    finalCash:
+      state.cash,
 
 
-  finalCash:
-    state.cash,
+    day:
+      state.gameDay,
 
 
-  day:
-    state.gameDay,
+    coopCapacity:
+      state.coopCapacity,
 
 
-  coopCapacity:
-    config.chicken.startingHenCapacity,
+    eggValue:
+      config.eggs.startingValue,
 
 
-  eggValue:
-    config.eggs.startingValue,
+    totalEggsProduced:
+      state.eggsProduced,
 
 
-  totalEggsProduced:
-    state.eggsProduced,
+    totalEggsSold:
+      state.eggsSold,
 
 
-  totalEggsSold:
-    state.eggsSold,
+    totalRevenue:
+      state.revenue,
 
 
-  totalRevenue:
-    state.revenue,
+    totalFeedCost:
+      0,
 
 
-  totalFeedCost:
-    0,
+    storedEggs:
+      state.eggs,
 
 
-  storedEggs:
-    state.eggs,
+    protection:
+      config.predators.startingProtection,
 
 
-  protection:
-    config.predators.startingProtection,
+    truckCapacity:
+      state.truckCapacity,
 
 
-  truckCapacity:
-    state.truckCapacity,
+    hensLost:
+      state.hensLost
 
+  };
 
-  hensLost:
-    state.hensLost
-
-};
-
-  },
+},
 
 
 
