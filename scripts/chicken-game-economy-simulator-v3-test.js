@@ -1754,13 +1754,53 @@ if(
 }
 
 
-
 /*
   STEP 4
 
-  With production improved,
-  continue expanding the flock
-  to 20 hens.
+  Increase egg value before
+  expanding the flock farther.
+
+  This lets the stronger egg
+  price help finance the
+  remaining hens and later
+  infrastructure.
+*/
+
+if(
+  state.eggValueUpgradeIndex <
+  1
+){
+
+  if(
+    this.upgradeEggValue(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Save until the first
+    egg-value upgrade is
+    affordable.
+  */
+
+  return;
+
+}
+
+
+
+/*
+  STEP 5
+
+  With production and egg
+  value improved, continue
+  expanding the flock to
+  20 hens.
 
   If another hen cannot be
   afforded yet, save until
@@ -1790,14 +1830,14 @@ if(
 
 
 /*
-  STEP 5
+  STEP 6
 
-  Production has now increased.
+  The expanded flock and
+  production improvements
+  now put more pressure on
+  transportation.
 
-  Upgrade transportation before
-  allowing the growing egg flow
-  to become a permanent
-  bottleneck.
+  Upgrade the starter truck.
 */
 
 if(
@@ -1828,16 +1868,16 @@ if(
 
 
 /*
-  STEP 6
+  STEP 7
 
   With the upgraded truck now
   capable of handling greater
   egg volume, purchase the
   second production upgrade.
 
-  This creates the final early
-  income boost before saving
-  for East Pasture.
+  This creates another income
+  boost before saving for
+  East Pasture.
 */
 
 if(
@@ -1868,7 +1908,7 @@ if(
 
 
 /*
-  STEP 7
+  STEP 8
 
   Early expansion infrastructure
   is now established.
@@ -1880,6 +1920,7 @@ if(
 this.purchaseFirstExpansion(
   state
 );
+
 
 },
 
