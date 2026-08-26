@@ -588,11 +588,162 @@ function(
 },
 
 
+runStrategy:
+
+function(
+  state,
+  strategy
+){
+
+  switch(
+    strategy
+  ){
+
+    case "expansion":
+
+      this.runExpansionStrategy(
+        state
+      );
+
+      break;
+
+
+    case "production":
+
+      this.runProductionStrategy(
+        state
+      );
+
+      break;
+
+
+    case "balanced":
+
+      this.runBalancedStrategy(
+        state
+      );
+
+      break;
+
+
+    case "earlyHenLoss":
+
+      this.runBalancedStrategy(
+        state
+      );
+
+      break;
+
+
+    default:
+
+      this.runBalancedStrategy(
+        state
+      );
+
+      break;
+
+  }
+
+},
+
+
+runExpansionStrategy:
+
+function(
+  state
+){
+
+  /*
+    Expansion player:
+
+    Grow flock aggressively
+    until the starter coop
+    becomes the bottleneck.
+
+    Coop upgrading already
+    exists and will happen
+    when capacity is reached.
+  */
+
+  this.runHenBuyingStrategy(
+    state
+  );
+
+},
+
+
+runProductionStrategy:
+
+function(
+  state
+){
+
+  /*
+    Production player:
+
+    For now, grow more
+    cautiously.
+
+    We will later replace
+    this with production,
+    egg-value, storage,
+    and truck upgrades.
+  */
+
+  if(
+    state.hens <
+    5
+  ){
+
+    this.buyHen(
+      state
+    );
+
+  }
+
+},
+
+
+runBalancedStrategy:
+
+function(
+  state
+){
+
+  /*
+    Balanced player:
+
+    Moderate flock growth.
+
+    For this first strategy
+    test, stop at 7 hens.
+
+    Later this strategy will
+    mix coop, truck, storage,
+    protection, and land.
+  */
+
+  if(
+    state.hens <
+    7
+  ){
+
+    this.buyHen(
+      state
+    );
+
+  }
+
+},
+
+
 
   runSimulation:
 
 function(
-  minutes
+  minutes,
+  strategy
 ){
 
   const state =
@@ -615,8 +766,9 @@ function(
     );
 
 
-    this.runHenBuyingStrategy(
-      state
+    this.runStrategy(
+      state,
+      strategy
     );
 
   }
@@ -682,28 +834,40 @@ function(
 
   runAll:
 
-  function(){
+function(){
 
-    return {
+  return {
 
-      expansion:
-        this.runSimulation(30),
-
-
-      production:
-        this.runSimulation(30),
-
-
-      balanced:
-        this.runSimulation(30),
+    expansion:
+      this.runSimulation(
+        30,
+        "expansion"
+      ),
 
 
-      earlyHenLoss:
-        this.runSimulation(30)
+    production:
+      this.runSimulation(
+        30,
+        "production"
+      ),
 
-    };
 
-  }
+    balanced:
+      this.runSimulation(
+        30,
+        "balanced"
+      ),
+
+
+    earlyHenLoss:
+      this.runSimulation(
+        30,
+        "earlyHenLoss"
+      )
+
+  };
+
+}
 
 
 
