@@ -1717,7 +1717,49 @@ function(
 /*
   STEP 3
 
-  Build the expanded flock
+  The first coop expansion
+  is complete.
+
+  Buy the first production
+  upgrade now so the stronger
+  production rate helps finance
+  the expanded flock.
+*/
+
+if(
+  state.nestingUpgradeIndex <
+  1
+){
+
+  if(
+    this.upgradeProduction(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Cannot afford it yet.
+
+    Save until the production
+    upgrade can be purchased.
+  */
+
+  return;
+
+}
+
+
+
+/*
+  STEP 4
+
+  With production improved,
+  continue expanding the flock
   to 20 hens.
 
   If another hen cannot be
@@ -1740,43 +1782,6 @@ if(
 
   }
 
-  return;
-
-}
-
-
-
-/*
-  STEP 4
-
-  Once the Expansion player
-  reaches 20 hens, buy the
-  first production upgrade.
-
-  This should push egg output
-  beyond the comfortable limit
-  of the starter truck.
-*/
-
-if(
-  state.nestingUpgradeIndex <
-  1
-){
-
-  if(
-    this.upgradeProduction(
-      state
-    )
-  ){
-
-    return;
-
-  }
-
-
-  /*
-    Save for this upgrade.
-  */
 
   return;
 
