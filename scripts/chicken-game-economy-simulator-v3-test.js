@@ -1830,15 +1830,50 @@ if(
 /*
   STEP 6
 
-  The early expansion engine
-  is established:
+  With the upgraded truck now
+  capable of handling greater
+  egg volume, purchase the
+  second production upgrade.
 
-  - 20 hens
-  - expanded coop
-  - production upgrade
-  - truck upgrade
+  This creates the final early
+  income boost before saving
+  for East Pasture.
+*/
 
-  Now save aggressively for
+if(
+  state.nestingUpgradeIndex <
+  2
+){
+
+  if(
+    this.upgradeProduction(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Save until Production
+    Level 2 is affordable.
+  */
+
+  return;
+
+}
+
+
+
+/*
+  STEP 7
+
+  Early expansion infrastructure
+  is now established.
+
+  Save aggressively for
   East Pasture.
 */
 
