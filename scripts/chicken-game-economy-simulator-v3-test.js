@@ -1715,20 +1715,51 @@ function(
 
 
   /*
-    STEP 3
+  STEP 3
 
-    The first coop expansion is
-    complete.
+  The first coop expansion is
+  complete.
 
-    Stop buying hens and upgrades.
+  Use part of the new capacity
+  to build a stronger income
+  engine before saving for land.
 
-    Save every dollar toward
-    East Pasture.
-  */
+  Expansion Focus stops at
+  20 hens for this balance test.
+*/
 
-  this.purchaseFirstExpansion(
-    state
-  );
+if(
+  state.hens <
+  20
+){
+
+  if(
+    this.buyHen(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+}
+
+
+
+/*
+  STEP 4
+
+  The early expansion engine
+  is now established.
+
+  Stop spending and save
+  aggressively for East Pasture.
+*/
+
+this.purchaseFirstExpansion(
+  state
+);
 
 },
 
