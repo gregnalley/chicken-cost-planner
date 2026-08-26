@@ -107,31 +107,78 @@ function(){
 },
 
 
+formatTime:
+
+function(
+  seconds
+){
+
+  const minutes =
+    Math.floor(
+      seconds /
+      60
+    );
+
+
+  const remainingSeconds =
+    Math.floor(
+      seconds %
+      60
+    );
+
+
+  return (
+    String(minutes)
+      .padStart(
+        2,
+        "0"
+      ) +
+    ":" +
+    String(remainingSeconds)
+      .padStart(
+        2,
+        "0"
+      )
+  );
+
+},
+
+
 
   record:
 
-  function(
-    state,
-    action,
-    amount
-  ){
+function(
+  state,
+  action,
+  amount
+){
 
-    state.transactions.push({
+  state.transactions.push({
 
-      minute:
-        state.minute,
-
-
-      action:
-        action,
+    elapsedSeconds:
+      state.elapsedSeconds,
 
 
-      amount:
-        amount
+    minute:
+      state.minute,
 
-    });
 
-  },
+    time:
+      this.formatTime(
+        state.elapsedSeconds
+      ),
+
+
+    action:
+      action,
+
+
+    amount:
+      amount
+
+  });
+
+},
 
 
 
@@ -351,11 +398,6 @@ function(
     "Bought Hen",
     henCost
   );
-
-
-console.table(
-  state.transactions
-);
 
 
   return true;
@@ -578,12 +620,6 @@ function(
     );
 
   }
-
-
-  console.log(
-    "SIMULATION FINAL STATE",
-    state
-  );
 
 
   return {
