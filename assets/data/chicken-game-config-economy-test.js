@@ -222,7 +222,7 @@ feed:
 
 
   poundsPerHenPerGameDay:
-    0.25,
+    0.75,
 
 
   purchaseOptions:
