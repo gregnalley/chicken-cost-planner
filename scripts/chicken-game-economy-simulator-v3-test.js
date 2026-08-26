@@ -1730,7 +1730,7 @@ function(
 
 if(
   state.hens <
-  20
+  15
 ){
 
   if(
