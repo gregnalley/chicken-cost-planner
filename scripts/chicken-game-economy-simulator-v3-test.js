@@ -88,6 +88,17 @@ function(){
     revenue:
       0,
 
+    feedAmount:
+      config.feed.startingAmount,
+
+
+    feedPurchased:
+      0,
+
+
+    feedCost:
+      0,
+
 
     storageCapacity:
       config.startingFarm.eggStorageCapacity,
@@ -196,6 +207,61 @@ function(
 
 
 
+consumeFeed:
+
+function(
+  state
+){
+
+  const poundsPerHenPerGameDay =
+    config.feed
+      .poundsPerHenPerGameDay;
+
+
+  const secondsPerGameDay =
+    config.time
+      .realMinutesPerGameDay *
+    60;
+
+
+  /*
+    Feed consumption per second.
+
+    Example:
+
+    3 hens
+    × 0.25 lb per game day
+    ÷ 600 seconds
+
+    = 0.00125 lb per second.
+  */
+
+  const feedUsedThisSecond =
+    (
+      state.hens *
+      poundsPerHenPerGameDay
+    ) /
+    secondsPerGameDay;
+
+
+  state.feedAmount -=
+    feedUsedThisSecond;
+
+
+  if(
+    state.feedAmount <
+    0
+  ){
+
+    state.feedAmount =
+      0;
+
+  }
+
+},
+
+
+
   tick:
 
 function(
@@ -251,6 +317,16 @@ function(
       state.elapsedSeconds /
       secondsPerGameDay
     ) + 1;
+
+
+
+    /*
+  Feed consumption
+*/
+
+this.consumeFeed(
+  state
+);
 
 
 
@@ -1544,8 +1620,15 @@ function(
 
 
     totalFeedCost:
-      0,
+      state.feedCost,
 
+    feedAmount:
+      state.feedAmount,
+
+
+    feedPurchased:
+      state.feedPurchased, 
+ 
 
     storedEggs:
       state.eggs,
