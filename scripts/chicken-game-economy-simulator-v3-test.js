@@ -55,6 +55,13 @@ function(){
     hens:
       config.startingFarm.hens,
 
+    eggRate:
+      config.eggs.secondsPerEggPerHen,
+
+
+    eggValue:
+      config.eggs.startingValue,  
+
     coopCapacity:
       config.chicken.startingHenCapacity,  
 
@@ -189,8 +196,7 @@ function(
 ){
 
   const eggRate =
-    config.eggs
-      .secondsPerEggPerHen;
+  state.eggRate;
 
 
   /*
@@ -680,7 +686,7 @@ function(
 
 
   const value =
-    config.eggs.startingValue;
+    state.eggValue;
 
 
   const revenue =
@@ -949,7 +955,7 @@ function(
 
 
     eggValue:
-      config.eggs.startingValue,
+      state.eggValue,
 
 
     totalEggsProduced:
