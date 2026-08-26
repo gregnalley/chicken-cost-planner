@@ -441,29 +441,27 @@ this.consumeFeed(
   /*
     Egg production.
 
-    Each hen contributes a
-    fraction of an egg every
-    second.
+  /*
+  Egg production requires feed.
 
-    Example:
+  If feed reaches zero,
+  hens stop producing eggs
+  until feed is available again.
 
-    3 hens
-    60 seconds per egg
+  No hen loss.
+  No permanent penalty.
+*/
 
-    3 / 60 =
-    0.05 egg progress
-    per second.
-  */
+if(
+  state.feedAmount >
+  0
+){
 
   state.eggProductionAccumulator +=
     state.hens /
     eggRate;
 
 
-
-  /*
-    Only create whole eggs.
-  */
 
   const wholeEggsProduced =
     Math.floor(
@@ -472,17 +470,13 @@ this.consumeFeed(
 
 
   if(
-    wholeEggsProduced > 0
+    wholeEggsProduced >
+    0
   ){
 
     state.eggProductionAccumulator -=
       wholeEggsProduced;
 
-
-
-    /*
-      Respect storage capacity.
-    */
 
     const availableStorage =
       Math.max(
@@ -507,6 +501,8 @@ this.consumeFeed(
       eggsAccepted;
 
   }
+
+}
 
 
 
