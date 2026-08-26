@@ -519,36 +519,13 @@ feed:
     henLossAmount:
       1
 
-  },
-
-
-
-  /*
-    Feed placeholder
-
-    Added now so the
-    simulator has room
-    to grow.
-
-  */
-
-  feed:
-
-  {
-
-    enabled:
-      false,
-
-
-    costPerHenPerDay:
-      0
-
   }
 
 
 
-};
 
+
+};
 
 
 global.BCPChickenGameEconomyConfig =
