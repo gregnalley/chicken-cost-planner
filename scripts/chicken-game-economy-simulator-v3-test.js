@@ -262,6 +262,114 @@ function(
 
 
 
+purchaseFeed:
+
+function(
+  state
+){
+
+  const basicFeed =
+    config.feed
+      .purchaseOptions
+      .find(
+        function(
+          option
+        ){
+
+          return (
+            option.id ===
+            "basic-feed-bag"
+          );
+
+        }
+      );
+
+
+  if(
+    !basicFeed
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    basicFeed.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    basicFeed.cost;
+
+
+  state.feedAmount +=
+    basicFeed.pounds;
+
+
+  state.feedPurchased +=
+    basicFeed.pounds;
+
+
+  state.feedCost +=
+    basicFeed.cost;
+
+
+  this.record(
+    state,
+    "Bought Feed",
+    basicFeed.cost
+  );
+
+
+  return true;
+
+},
+
+
+
+manageFeed:
+
+function(
+  state
+){
+
+  /*
+    Keep a basic reserve.
+
+    For now, the simulator
+    buys one 50-lb bag
+    whenever feed falls
+    below 25 lb.
+  */
+
+  const reserveThreshold =
+    25;
+
+
+  if(
+    state.feedAmount >
+    reserveThreshold
+  ){
+
+    return;
+
+  }
+
+
+  this.purchaseFeed(
+    state
+  );
+
+},
+
+
+
   tick:
 
 function(
@@ -609,21 +717,7 @@ function(
 
 
   state.nestingUpgradeIndex +=
-    1;
-
-
- console.log(
-  "PRODUCTION UPGRADE PURCHASED",
-  this.formatTime(
-    state.elapsedSeconds
-  ),
-  "cash:",
-  state.cash,
-  "hens:",
-  state.hens,
-  "eggRate:",
-  state.eggRate
-);   
+    1;   
 
 
   this.record(
@@ -1574,6 +1668,11 @@ function(
   ){
 
     this.tick(
+      state
+    );
+
+
+    this.manageFeed(
       state
     );
 
