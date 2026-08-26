@@ -139,7 +139,22 @@ function(){
 
 
     predatorFeedLost:
-      0
+      0,
+
+    lastPredatorCheckSecond:
+  0,
+
+
+predatorWarnings:
+  0,
+
+
+predatorFeedLossEvents:
+  0,
+
+
+predatorFeedLost:
+  0,  
 
   };
 
@@ -466,6 +481,169 @@ function(
   this.record(
     state,
     "Predator Scattered Feed",
+    feedLost
+  );
+
+},
+
+
+getPredatorRisk:
+
+function(
+  state
+){
+
+  const predatorConfig =
+    config.feed
+      .predatorFeedLoss;
+
+
+  if(
+    !predatorConfig ||
+    predatorConfig.enabled !== true
+  ){
+
+    return 0;
+
+  }
+
+
+  const riskByPhase =
+    predatorConfig.riskByPhase ||
+    {};
+
+
+  return (
+    Number(
+      riskByPhase[
+        state.dayPhase
+      ]
+    ) ||
+    0
+  );
+
+},
+
+
+processPredatorCheck:
+
+function(
+  state
+){
+
+  const predatorConfig =
+    config.feed
+      .predatorFeedLoss;
+
+
+  if(
+    !predatorConfig ||
+    predatorConfig.enabled !== true
+  ){
+
+    return;
+
+  }
+
+
+  const checkIntervalSeconds =
+    predatorConfig
+      .checkIntervalSeconds;
+
+
+  if(
+    state.elapsedSeconds -
+    state.lastPredatorCheckSecond
+    <
+    checkIntervalSeconds
+  ){
+
+    return;
+
+  }
+
+
+  state.lastPredatorCheckSecond =
+    state.elapsedSeconds;
+
+
+  const risk =
+    this.getPredatorRisk(
+      state
+    );
+
+
+  /*
+    No encounter this check.
+  */
+
+  if(
+    Math.random() >= risk
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    An encounter occurred.
+
+    Early-game severity model:
+
+    70% warning only
+    30% minor feed loss
+
+    No hen loss.
+  */
+
+  const severityRoll =
+    Math.random();
+
+
+  if(
+    severityRoll <
+    0.70
+  ){
+
+    state.predatorWarnings +=
+      1;
+
+
+    this.record(
+      state,
+      "Predator Warning",
+      0
+    );
+
+
+    return;
+
+  }
+
+
+  const feedLost =
+    Math.min(
+      predatorConfig.poundsLost,
+      state.feedAmount
+    );
+
+
+  state.feedAmount -=
+    feedLost;
+
+
+  state.predatorFeedLost +=
+    feedLost;
+
+
+  state.predatorFeedLossEvents +=
+    1;
+
+
+  this.record(
+    state,
+    "Predator Feed Loss",
     feedLost
   );
 
@@ -1876,7 +2054,7 @@ function(
     );
 
 
-    this.processEarlyPredatorEvent(
+    this.processPredatorCheck(
       state
     );
 
