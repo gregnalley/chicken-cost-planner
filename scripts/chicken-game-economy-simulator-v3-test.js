@@ -358,6 +358,71 @@ function(
 },
 
 
+upgradeCoop:
+
+function(
+  state
+){
+
+  const upgrades =
+    config.coop
+      .upgrades;
+
+
+  const nextUpgrade =
+    upgrades.find(
+      function(
+        upgrade
+      ){
+
+        return (
+          upgrade.capacity >
+          state.coopCapacity
+        );
+
+      }
+    );
+
+
+  if(
+    !nextUpgrade
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    nextUpgrade.cost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    nextUpgrade.cost;
+
+
+  state.coopCapacity =
+    nextUpgrade.capacity;
+
+
+  this.record(
+    state,
+    "Upgraded Coop",
+    nextUpgrade.cost
+  );
+
+
+  return true;
+
+},
+
+
 runHenBuyingStrategy:
 
 function(
@@ -365,36 +430,58 @@ function(
 ){
 
   /*
-    For this test phase,
-    buy a hen whenever:
-
-    1. There is room in the coop.
-    2. We have enough cash.
-
-    No coop upgrades yet.
-    No storage upgrades yet.
-    No truck upgrades yet.
-    No land purchase yet.
-
-    This deliberately isolates
-    flock growth.
+    If there is room in the coop,
+    keep buying hens whenever
+    enough cash is available.
   */
-
 
   if(
     state.hens <
-      state.coopCapacity &&
-    state.cash >=
-      config.chicken.purchaseCost
+    state.coopCapacity
   ){
 
-    this.buyHen(
-      state
-    );
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
 
   }
 
+
+  /*
+    If the coop is full,
+    stop buying hens and
+    save until the next
+    coop upgrade is affordable.
+  */
+
+  if(
+    state.hens >=
+    state.coopCapacity
+  ){
+
+    if(
+      this.upgradeCoop(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
 },
+
+
+
 
 
   pickupEggs:
