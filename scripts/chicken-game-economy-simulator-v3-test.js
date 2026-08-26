@@ -353,6 +353,11 @@ function(
   );
 
 
+console.table(
+  state.transactions
+);
+
+
   return true;
 
 },
