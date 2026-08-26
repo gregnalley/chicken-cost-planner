@@ -1714,18 +1714,15 @@ function(
 
 
 
-  /*
+/*
   STEP 3
 
-  The first coop expansion is
-  complete.
+  Build the expanded flock
+  to 20 hens.
 
-  Use part of the new capacity
-  to build a stronger income
-  engine before saving for land.
-
-  Expansion Focus stops at
-  20 hens for this balance test.
+  If another hen cannot be
+  afforded yet, save until
+  it can be purchased.
 */
 
 if(
@@ -1743,6 +1740,8 @@ if(
 
   }
 
+  return;
+
 }
 
 
@@ -1750,11 +1749,92 @@ if(
 /*
   STEP 4
 
-  The early expansion engine
-  is now established.
+  Once the Expansion player
+  reaches 20 hens, buy the
+  first production upgrade.
 
-  Stop spending and save
-  aggressively for East Pasture.
+  This should push egg output
+  beyond the comfortable limit
+  of the starter truck.
+*/
+
+if(
+  state.nestingUpgradeIndex <
+  1
+){
+
+  if(
+    this.upgradeProduction(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Save for this upgrade.
+  */
+
+  return;
+
+}
+
+
+
+/*
+  STEP 5
+
+  Production has now increased.
+
+  Upgrade transportation before
+  allowing the growing egg flow
+  to become a permanent
+  bottleneck.
+*/
+
+if(
+  state.truckCapacity <=
+  config.transportation
+    .starterTruckCapacity
+){
+
+  if(
+    this.upgradeTruck(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Save for the truck upgrade.
+  */
+
+  return;
+
+}
+
+
+
+/*
+  STEP 6
+
+  The early expansion engine
+  is established:
+
+  - 20 hens
+  - expanded coop
+  - production upgrade
+  - truck upgrade
+
+  Now save aggressively for
+  East Pasture.
 */
 
 this.purchaseFirstExpansion(
@@ -1762,6 +1842,8 @@ this.purchaseFirstExpansion(
 );
 
 },
+
+
 
 
 runProductionStrategy:
