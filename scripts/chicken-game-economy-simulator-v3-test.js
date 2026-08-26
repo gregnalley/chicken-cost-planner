@@ -344,6 +344,22 @@ function(
     config.eggs.startingValue,
 
 
+  totalEggsProduced:
+    state.eggsProduced,
+
+
+  totalEggsSold:
+    state.eggsSold,
+
+
+  totalRevenue:
+    state.revenue,
+
+
+  totalFeedCost:
+    0,
+
+
   storedEggs:
     state.eggs,
 
@@ -352,8 +368,12 @@ function(
     config.predators.startingProtection,
 
 
-  truck:
-    state.truckCapacity
+  truckCapacity:
+    state.truckCapacity,
+
+
+  hensLost:
+    state.hensLost
 
 };
 
