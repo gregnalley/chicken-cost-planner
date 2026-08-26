@@ -69,7 +69,7 @@ BCPChickenGame.economyConfig = {
   {
 
     secondsPerEggPerHen:
-      45,
+      20,
 
 
     startingValue:
