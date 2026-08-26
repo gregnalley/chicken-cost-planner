@@ -267,15 +267,42 @@ feed:
 
   predatorFeedLoss:
 
+{
+
+  enabled:
+    true,
+
+
+  poundsLost:
+    10,
+
+
+  checkIntervalSeconds:
+    60,
+
+
+  riskByPhase:
+
   {
 
-    enabled:
-      false,
+    day:
+      0.02,
 
-    poundsLost:
-      10
+
+    dusk:
+      0.08,
+
+
+    night:
+      0.18,
+
+
+    dawn:
+      0.06
 
   }
+
+}
 
 },
 
