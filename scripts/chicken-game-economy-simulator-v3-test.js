@@ -296,6 +296,104 @@ function(
 },
 
 
+buyHen:
+
+function(
+  state
+){
+
+  const henCost =
+    config.chicken
+      .purchaseCost;
+
+
+  /*
+    Cannot afford another hen.
+  */
+
+  if(
+    state.cash <
+    henCost
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    Coop is full.
+  */
+
+  if(
+    state.hens >=
+    state.coopCapacity
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    henCost;
+
+
+  state.hens +=
+    1;
+
+
+  this.record(
+    state,
+    "Bought Hen",
+    henCost
+  );
+
+
+  return true;
+
+},
+
+
+runHenBuyingStrategy:
+
+function(
+  state
+){
+
+  /*
+    For this test phase,
+    buy a hen whenever:
+
+    1. There is room in the coop.
+    2. We have enough cash.
+
+    No coop upgrades yet.
+    No storage upgrades yet.
+    No truck upgrades yet.
+    No land purchase yet.
+
+    This deliberately isolates
+    flock growth.
+  */
+
+
+  if(
+    state.hens <
+      state.coopCapacity &&
+    state.cash >=
+      config.chicken.purchaseCost
+  ){
+
+    this.buyHen(
+      state
+    );
+
+  }
+
+},
+
+
   pickupEggs:
 
 function(
@@ -377,6 +475,11 @@ for(
 ){
 
   this.tick(
+    state
+  );
+
+
+  this.runHenBuyingStrategy(
     state
   );
 
