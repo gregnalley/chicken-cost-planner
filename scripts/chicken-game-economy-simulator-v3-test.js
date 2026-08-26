@@ -458,6 +458,14 @@ function(
     minutes
   ){
 
+console.log(
+  "HEN STRATEGY",
+  state.second,
+  state.cash,
+  state.hens
+);
+
+
     const state =
       this.createState();
 
