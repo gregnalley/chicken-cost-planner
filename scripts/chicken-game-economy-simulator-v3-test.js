@@ -257,7 +257,7 @@ cropDefinitions:
     120,
 
   harvestPounds:
-    10
+    1.5
 },
 
 
@@ -276,7 +276,7 @@ sunflower:
     240,
 
   harvestPounds:
-    25
+    3
 },
 
 
@@ -295,7 +295,7 @@ pumpkin:
     360,
 
   harvestPounds:
-    45
+    5
 }
 
 },
