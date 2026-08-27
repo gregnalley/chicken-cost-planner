@@ -505,6 +505,452 @@ BCPChickenGame.actions = {
     };
 
 
+  },
+
+
+    upgradeProduction:
+
+  function(
+    state
+  ){
+
+
+    const upgrade =
+      BCPChickenGame.config
+        .productionUpgrades
+        .nestingBoxes[
+          state.nestingUpgradeIndex
+        ];
+
+
+
+    if(
+      !upgrade
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "No more production upgrades available."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      upgrade.cost
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      upgrade.cost;
+
+
+
+    /*
+      A production multiplier
+      makes each hen produce
+      eggs faster.
+
+      Example:
+
+      8 seconds per egg
+      ÷ 1.5
+      = 5.33 seconds per egg.
+    */
+
+    state.eggRate /=
+      upgrade.multiplier;
+
+
+
+    state.nestingUpgradeIndex +=
+      1;
+
+
+
+    return {
+
+      success:
+        true,
+
+      level:
+        upgrade.level,
+
+      name:
+        upgrade.name,
+
+      cost:
+        upgrade.cost,
+
+      multiplier:
+        upgrade.multiplier,
+
+      eggRate:
+        state.eggRate,
+
+      message:
+        upgrade.name +
+        " purchased."
+
+    };
+
+
+  },
+
+
+    upgradeEggValue:
+
+  function(
+    state
+  ){
+
+
+    const upgrade =
+      BCPChickenGame.config
+        .eggValueUpgrades[
+          state.eggValueUpgradeIndex
+        ];
+
+
+
+    if(
+      !upgrade
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "No more egg-value upgrades available."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      upgrade.cost
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      upgrade.cost;
+
+
+    state.eggValue =
+      upgrade.eggValue;
+
+
+    state.eggValueUpgradeIndex +=
+      1;
+
+
+
+    return {
+
+      success:
+        true,
+
+      level:
+        upgrade.level,
+
+      name:
+        upgrade.name,
+
+      cost:
+        upgrade.cost,
+
+      eggValue:
+        state.eggValue,
+
+      message:
+        upgrade.name +
+        " purchased."
+
+    };
+
+
+  },
+
+
+
+    upgradeTruck:
+
+  function(
+    state
+  ){
+
+
+    const nextUpgrade =
+      BCPChickenGame.config
+        .transportation
+        .upgrades
+        .find(
+          function(
+            upgrade
+          ){
+
+            return (
+              upgrade.capacity >
+              state.truckCapacity
+            );
+
+          }
+        );
+
+
+
+    if(
+      !nextUpgrade
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "No more truck upgrades available."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      nextUpgrade.cost
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      nextUpgrade.cost;
+
+
+    state.truckCapacity =
+      nextUpgrade.capacity;
+
+
+
+    return {
+
+      success:
+        true,
+
+      level:
+        nextUpgrade.level,
+
+      cost:
+        nextUpgrade.cost,
+
+      capacity:
+        nextUpgrade.capacity,
+
+      message:
+        "Truck upgraded to " +
+        nextUpgrade.capacity +
+        " egg capacity."
+
+    };
+
+
+  },
+
+
+
+    purchaseFirstExpansion:
+
+  function(
+    state
+  ){
+
+
+    /*
+      East Pasture can only
+      be purchased once.
+    */
+
+    if(
+      state.landUnlocked
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "East Pasture is already owned."
+
+      };
+
+    }
+
+
+
+    const expansion =
+      BCPChickenGame.config
+        .land
+        .firstExpansion;
+
+
+
+    if(
+      !expansion
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Land expansion is unavailable."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      expansion.cost
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      expansion.cost;
+
+
+    state.landUnlocked =
+      true;
+
+
+    state.eastPasture.unlocked =
+      true;
+
+
+    state.landUnlockSecond =
+      state.elapsedSeconds;
+
+
+
+    /*
+      Preserve the milestone
+      concept from the validated
+      simulator.
+
+      The playable game can later
+      display this through the UI.
+    */
+
+    state.milestones.push({
+
+      second:
+        state.elapsedSeconds,
+
+
+      label:
+        "LAND UNLOCKED: " +
+        expansion.name,
+
+
+      money:
+        Number(
+          state.money.toFixed(2)
+        ),
+
+
+      hens:
+        state.chickens.length
+
+    });
+
+
+
+    return {
+
+      success:
+        true,
+
+      name:
+        expansion.name,
+
+      cost:
+        expansion.cost,
+
+      message:
+        expansion.name +
+        " purchased!"
+
+    };
+
+
   }
 
 
