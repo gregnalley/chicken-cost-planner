@@ -336,12 +336,171 @@ BCPChickenGame.actions = {
 
 
 
-    return {
+        return {
 
       success:true,
 
       message:
         "Egg storage upgraded!"
+
+    };
+
+
+  },
+
+
+
+  buyFeed:
+
+  function(
+    state,
+    optionId
+  ){
+
+
+    const purchaseOption =
+      BCPChickenGame.config
+        .feed
+        .purchaseOptions
+        .find(
+          function(option){
+
+            return (
+              option.id ===
+              optionId
+            );
+
+          }
+        );
+
+
+
+    if(
+      !purchaseOption
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Feed option not found."
+
+      };
+
+    }
+
+
+
+    const feedStorage =
+      state.buildings
+        .find(
+          function(building){
+
+            return (
+              building.type ===
+              "feed-storage"
+            );
+
+          }
+        );
+
+
+
+    if(
+      !feedStorage
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "No feed storage found."
+
+      };
+
+    }
+
+
+
+    if(
+      state.money <
+      purchaseOption.cost
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough money."
+
+      };
+
+    }
+
+
+
+    const availableSpace =
+      feedStorage.capacity -
+      state.feed;
+
+
+
+    if(
+      availableSpace <
+      purchaseOption.pounds
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough feed storage space."
+
+      };
+
+    }
+
+
+
+    state.money -=
+      purchaseOption.cost;
+
+
+    state.feed +=
+      purchaseOption.pounds;
+
+
+    state.feedPurchased +=
+      purchaseOption.pounds;
+
+
+    state.feedCost +=
+      purchaseOption.cost;
+
+
+
+    return {
+
+      success:
+        true,
+
+      poundsPurchased:
+        purchaseOption.pounds,
+
+      cost:
+        purchaseOption.cost,
+
+      message:
+        purchaseOption.label +
+        " purchased."
 
     };
 
