@@ -8,30 +8,41 @@ const BCPChickenGame =
   global.BCPChickenGame;
 
 
+
 BCPChickenGame.config = {
 
 
   version:
-    "0.1.0",
+    "0.3.0-economy-test",
 
+
+
+  /*
+    Starting farm
+  */
 
   startingFarm:
 
   {
 
-    money:
+    cash:
       25,
 
 
-    eggs:
-      0,
+    hens:
+      3,
 
 
-    chickens:
-      3
+    eggStorageCapacity:
+      250
 
   },
 
+
+
+  /*
+    Chicken production
+  */
 
   chicken:
 
@@ -41,44 +52,138 @@ BCPChickenGame.config = {
       50,
 
 
-    eggsPerMinute:
+    startingHenCapacity:
+      10
+
+  },
+
+
+
+  /*
+    Egg production and value
+  */
+
+  eggs:
+
+  {
+
+    secondsPerEggPerHen:
+      8,
+
+
+    startingValue:
       1
 
   },
 
-  eggs:
-{
-  sellValue:
-    1
-},
 
 
-storage:
+  /*
+    Production upgrades
+  */
 
-{
+  productionUpgrades:
 
-  startingLevel:
-    1,
+  {
+
+    nestingBoxes:
+
+    [
+
+      {
+
+        level:
+          1,
+
+        name:
+          "Basic Nesting Boxes",
+
+        cost:
+          75,
+
+        multiplier:
+          1.5
+
+      },
 
 
-  startingCapacity:
-    250,
+      {
+
+        level:
+          2,
+
+        name:
+          "Improved Nesting Boxes",
+
+        cost:
+          250,
+
+        multiplier:
+          1.35
+
+      },
 
 
-  upgrades:
+      {
+
+        level:
+          3,
+
+        name:
+          "Premium Nesting System",
+
+        cost:
+          750,
+
+        multiplier:
+          1.25
+
+      }
+
+    ]
+
+  },
+
+
+
+  /*
+    Egg-value upgrades
+  */
+
+  eggValueUpgrades:
 
   [
 
     {
 
       level:
-        2,
+        1,
+
+      name:
+        "Farm Fresh Branding",
 
       cost:
-        300,
+        150,
 
-      capacity:
-        750
+      eggValue:
+        1.25
+
+    },
+
+
+    {
+
+      level:
+        2,
+
+      name:
+        "Premium Egg Market",
+
+      cost:
+        500,
+
+      eggValue:
+        1.50
 
     },
 
@@ -88,101 +193,363 @@ storage:
       level:
         3,
 
+      name:
+        "Specialty Egg Contracts",
+
       cost:
-        1000,
+        1500,
 
-      capacity:
-        2000
+      eggValue:
+        2.00
 
-    },
+    }
 
+  ],
+
+
+
+  /*
+    Feed system
+  */
+
+  feed:
+
+  {
+
+    startingAmount:
+      100,
+
+
+    poundsPerHenPerGameDay:
+      0.75,
+
+
+    purchaseOptions:
+
+    [
+
+      {
+
+        id:
+          "basic-feed-bag",
+
+        label:
+          "Basic Feed Bag",
+
+        pounds:
+          50,
+
+        cost:
+          15
+
+      },
+
+
+      {
+
+        id:
+          "bulk-feed",
+
+        label:
+          "Bulk Feed",
+
+        pounds:
+          250,
+
+        cost:
+          65
+
+      }
+
+    ],
+
+
+    predatorFeedLoss:
 
     {
 
-      level:
-        4,
+      enabled:
+        true,
+
+
+      poundsLost:
+        10,
+
+
+      checkIntervalSeconds:
+        60,
+
+
+      riskByPhase:
+
+      {
+
+        day:
+          0.02,
+
+
+        dusk:
+          0.08,
+
+
+        night:
+          0.18,
+
+
+        dawn:
+          0.06
+
+      }
+
+    }
+
+  },
+
+
+
+  /*
+    Egg storage
+  */
+
+  storage:
+
+  {
+
+    upgrades:
+
+    [
+
+      {
+
+        level:
+          2,
+
+        cost:
+          300,
+
+        capacity:
+          750
+
+      },
+
+
+      {
+
+        level:
+          3,
+
+        cost:
+          1000,
+
+        capacity:
+          2000
+
+      },
+
+
+      {
+
+        level:
+          4,
+
+        cost:
+          3000,
+
+        capacity:
+          5000
+
+      }
+
+    ]
+
+  },
+
+
+
+  /*
+    Coop upgrades
+  */
+
+  coop:
+
+  {
+
+    upgrades:
+
+    [
+
+      {
+
+        level:
+          2,
+
+        cost:
+          150,
+
+        capacity:
+          25
+
+      },
+
+
+      {
+
+        level:
+          3,
+
+        cost:
+          1000,
+
+        capacity:
+          50
+
+      },
+
+
+      {
+
+        level:
+          4,
+
+        cost:
+          5000,
+
+        capacity:
+          100
+
+      }
+
+    ]
+
+  },
+
+
+
+  /*
+    Transportation
+  */
+
+  transportation:
+
+  {
+
+    starterTruckCapacity:
+      100,
+
+
+    starterTruckCycleSeconds:
+      45,
+
+
+    upgrades:
+
+    [
+
+      {
+
+        level:
+          2,
+
+        cost:
+          500,
+
+        capacity:
+          250
+
+      },
+
+
+      {
+
+        level:
+          3,
+
+        cost:
+          1500,
+
+        capacity:
+          500
+
+      }
+
+    ]
+
+  },
+
+
+
+  /*
+    Land expansion
+  */
+
+  land:
+
+  {
+
+    firstExpansion:
+
+    {
+
+      name:
+        "East Pasture",
+
 
       cost:
         3000,
 
-      capacity:
-        5000
+
+      targetUnlockMinutes:
+        30
 
     }
 
-  ]
-
-},
+  },
 
 
-  coop:
 
-{
+  /*
+    Time conversion
 
-  startingLevel:
-    1,
-
-
-  startingCapacity:
-    10,
-
-
-  upgrades:
-
-  [
-
-    {
-
-      level:
-        2,
-
-      cost:
-        250,
-
-      capacity:
-        25
-
-    },
-
-
-    {
-
-      level:
-        3,
-
-      cost:
-        1000,
-
-      capacity:
-        50
-
-    },
-
-
-    {
-
-      level:
-        4,
-
-      cost:
-        5000,
-
-      capacity:
-        100
-
-    }
-
-  ]
-
-},
-
+    10 real minutes =
+    one full game day.
+  */
 
   time:
 
   {
 
-    tickMilliseconds:
-      417
+    realMinutesPerGameDay:
+      10
+
+  },
+
+
+
+  /*
+    Predator system
+
+    These are the existing
+    validated simulator values.
+
+    We will revisit predator
+    severity when that system
+    is transferred into the game.
+  */
+
+  predators:
+
+  {
+
+    startingProtection:
+      0,
+
+
+    henLossMinute:
+      20,
+
+
+    henLossAmount:
+      1
 
   }
 
