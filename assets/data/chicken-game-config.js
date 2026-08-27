@@ -507,6 +507,99 @@ BCPChickenGame.config = {
 
 
 
+    /*
+    East Pasture crops
+  */
+
+  crops:
+
+  {
+
+    eastPastureCropPlot:
+
+    {
+
+      unlockCost:
+        2500
+
+    },
+
+
+    definitions:
+
+    {
+
+      kale:
+
+      {
+
+        id:
+          "kale",
+
+        name:
+          "Kale",
+
+        plantingCost:
+          20,
+
+        growthSeconds:
+          120,
+
+        harvestPounds:
+          1.5
+
+      },
+
+
+      sunflower:
+
+      {
+
+        id:
+          "sunflower",
+
+        name:
+          "Sunflower",
+
+        plantingCost:
+          35,
+
+        growthSeconds:
+          240,
+
+        harvestPounds:
+          3
+
+      },
+
+
+      pumpkin:
+
+      {
+
+        id:
+          "pumpkin",
+
+        name:
+          "Pumpkin & Winter Squash",
+
+        plantingCost:
+          50,
+
+        growthSeconds:
+          360,
+
+        harvestPounds:
+          5
+
+      }
+
+    }
+
+  },
+
+
+
   /*
     Time conversion
 
