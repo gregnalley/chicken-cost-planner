@@ -161,7 +161,59 @@ landUnlocked:
 
 
 landUnlockSecond:
-  null
+  null,
+
+
+eastPasture:
+
+{
+  unlocked:
+    false,
+
+  barnA:
+  {
+    repaired:
+      false,
+
+    use:
+      null,
+
+    level:
+      0
+  },
+
+  barnB:
+  {
+    repaired:
+      false,
+
+    use:
+      null,
+
+    level:
+      0
+  },
+
+  transportDepot:
+  {
+    repaired:
+      false,
+
+    level:
+      0
+  },
+
+  cropPlot:
+  {
+    unlocked:
+      false,
+
+    level:
+      0
+  }
+},
+
+
 
   };
 
@@ -1344,6 +1396,178 @@ function(
 
 
 
+repairEastPastureBarnA:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    First-pass Phase 2
+    test price.
+
+    Not final.
+  */
+
+  const repairCost =
+    5000;
+
+
+  if(
+    state.cash <
+    repairCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    repairCost;
+
+
+  state.eastPasture
+    .barnA
+    .repaired =
+      true;
+
+
+  this.record(
+    state,
+    "Repaired East Pasture Barn A",
+    repairCost
+  );
+
+
+  return true;
+
+},
+
+
+
+convertBarnAToFarmStore:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .use !== null
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    First-pass conversion price.
+  */
+
+  const conversionCost =
+    3000;
+
+
+  if(
+    state.cash <
+    conversionCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    conversionCost;
+
+
+  state.eastPasture
+    .barnA
+    .use =
+      "farm-store";
+
+
+  state.eastPasture
+    .barnA
+    .level =
+      1;
+
+
+  /*
+    First-pass Farm Store effect:
+
+    Increase current egg value
+    by 25%.
+
+    We can later replace this
+    with a separate direct-sale
+    system rather than simply
+    multiplying all eggs.
+  */
+
+  state.eggValue *=
+    1.25;
+
+
+  this.record(
+    state,
+    "Converted Barn A to Farm Store",
+    conversionCost
+  );
+
+
+  return true;
+
+},
+
+
+
 purchaseFirstExpansion:
 
 function(
@@ -1393,6 +1617,9 @@ function(
 
 
   state.landUnlocked =
+    true;
+
+  state.eastPasture.unlocked =
     true;
 
 
@@ -1445,6 +1672,87 @@ function(
 
 
   return true;
+
+},
+
+
+runEastPastureStrategy:
+
+function(
+  state
+){
+
+  /*
+    First-pass Phase 2
+    aggressive strategy.
+
+    The starter Expansion strategy
+    gets us to East Pasture.
+
+    Once land is purchased:
+
+    1. Save $5,000 and repair Barn A.
+    2. Save $3,000 and convert it
+       to a Level 1 Farm Store.
+    3. Stop spending for now.
+
+    This lets us measure what
+    one Phase-2 income investment
+    does to the 40/50/60 minute
+    economy.
+  */
+
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    this.repairEastPastureBarnA(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .use === null
+  ){
+
+    this.convertBarnAToFarmStore(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Stop here for this test.
+
+    Do not add more Phase-2
+    purchases yet.
+  */
 
 },
 
@@ -1612,6 +1920,15 @@ function(
       );
 
       break;
+
+
+    case "eastPasture":
+
+      this.runEastPastureStrategy(
+        state
+      );
+
+  break;  
 
 
     default:
