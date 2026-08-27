@@ -113,12 +113,30 @@ function(){
 
     chickens:
 
-    [
+  Array.from(
+    {
+      length:
+        BCPChickenGame.config
+          .startingFarm
+          .hens
+    },
 
-      {
+    function(
+      unused,
+      index
+    ){
+
+      return {
 
         id:
-          "hen-001",
+          "hen-" +
+          String(
+            index + 1
+          )
+          .padStart(
+            3,
+            "0"
+          ),
 
         breed:
           "starter",
@@ -126,37 +144,10 @@ function(){
         health:
           100
 
-      },
+      };
 
-
-      {
-
-        id:
-          "hen-002",
-
-        breed:
-          "starter",
-
-        health:
-          100
-
-      },
-
-
-      {
-
-        id:
-          "hen-003",
-
-        breed:
-          "starter",
-
-        health:
-          100
-
-      }
-
-    ],
+    }
+  ),
 
 
 
