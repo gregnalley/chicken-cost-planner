@@ -1969,7 +1969,7 @@ function(
   ){
 
     if(
-      this.plantEastPastureCrop(
+      this.plantCrop(
         state,
         "sunflower"
       )
@@ -1980,6 +1980,26 @@ function(
     }
 
   }
+
+
+
+  if(
+  state.eastPasture
+    .cropPlot
+    .harvestReady === true
+){
+
+  if(
+    this.harvestCrop(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+}
 
 
 
