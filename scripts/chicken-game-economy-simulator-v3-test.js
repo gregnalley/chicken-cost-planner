@@ -109,6 +109,9 @@ function(){
     feedConsumptionMultiplier:
       1,  
 
+    supplementalFeedAmount:
+      0,
+
 
     storageCapacity:
       config.startingFarm.eggStorageCapacity,
@@ -207,13 +210,25 @@ eastPasture:
   },
 
   cropPlot:
-  {
-    unlocked:
-      false,
+{
+  unlocked:
+    false,
 
-    level:
-      0
-  }
+  level:
+    0,
+
+  plantedCrop:
+    null,
+
+  plantedSecond:
+    null,
+
+  harvestSecond:
+    null,
+
+  harvestReady:
+    false
+}
 },
 
 
@@ -221,6 +236,297 @@ eastPasture:
   };
 
 },
+
+
+cropDefinitions:
+
+{
+
+  kale:
+  {
+    id:
+      "kale",
+
+    name:
+      "Kale",
+
+    plantingCost:
+      20,
+
+    growthSeconds:
+      120,
+
+    harvestPounds:
+      40
+  },
+
+
+  sunflower:
+  {
+    id:
+      "sunflower",
+
+    name:
+      "Sunflower",
+
+    plantingCost:
+      35,
+
+    growthSeconds:
+      240,
+
+    harvestPounds:
+      100
+  },
+
+
+  pumpkin:
+  {
+    id:
+      "pumpkin",
+
+    name:
+      "Pumpkin & Winter Squash",
+
+    plantingCost:
+      50,
+
+    growthSeconds:
+      360,
+
+    harvestPounds:
+      180
+  }
+
+},
+
+
+
+plantCrop:
+
+function(
+  state,
+  cropId
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  if(
+    plot.plantedCrop !==
+    null
+  ){
+
+    return false;
+
+  }
+
+
+  const crop =
+    this.cropDefinitions[
+      cropId
+    ];
+
+
+  if(
+    !crop
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.cash <
+    crop.plantingCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    crop.plantingCost;
+
+
+  plot.plantedCrop =
+    crop.id;
+
+
+  plot.plantedSecond =
+    state.elapsedSeconds;
+
+
+  plot.harvestSecond =
+    state.elapsedSeconds +
+    crop.growthSeconds;
+
+
+  plot.harvestReady =
+    false;
+
+
+  this.record(
+    state,
+    "Planted " +
+      crop.name,
+    crop.plantingCost
+  );
+
+
+  return true;
+
+},
+
+
+
+processCropGrowth:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    return;
+
+  }
+
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  if(
+    plot.plantedCrop ===
+      null ||
+    plot.harvestReady ===
+      true
+  ){
+
+    return;
+
+  }
+
+
+  if(
+    state.elapsedSeconds >=
+    plot.harvestSecond
+  ){
+
+    plot.harvestReady =
+      true;
+
+  }
+
+},
+
+
+
+harvestCrop:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  if(
+    plot.harvestReady !==
+      true ||
+    plot.plantedCrop ===
+      null
+  ){
+
+    return false;
+
+  }
+
+
+  const crop =
+    this.cropDefinitions[
+      plot.plantedCrop
+    ];
+
+
+  if(
+    !crop
+  ){
+
+    return false;
+
+  }
+
+
+  state.supplementalFeedAmount +=
+    crop.harvestPounds;
+
+
+  this.record(
+    state,
+    "Harvested " +
+      crop.name,
+    crop.harvestPounds
+  );
+
+
+  plot.plantedCrop =
+    null;
+
+
+  plot.plantedSecond =
+    null;
+
+
+  plot.harvestSecond =
+    null;
+
+
+  plot.harvestReady =
+    false;
+
+
+  return true;
+
+},
+
 
 
 formatTime:
@@ -316,31 +622,78 @@ function(
 
 
   /*
-    Feed consumption per second.
-
-    Example:
-
-    3 hens
-    × 0.25 lb per game day
-    ÷ 600 seconds
-
-    = 0.00125 lb per second.
+    Total flock feed requirement
+    for this one simulated second.
   */
 
-  const feedUsedThisSecond =
-  (
-    state.hens *
-    poundsPerHenPerGameDay *
+  const totalFeedRequirement =
     (
-      state.feedConsumptionMultiplier ??
-      1
-    )
-  ) /
-  secondsPerGameDay;
+      state.hens *
+      poundsPerHenPerGameDay
+    ) /
+    secondsPerGameDay;
+
+
+
+  /*
+    Supplemental crops can cover
+    up to 25% of the flock's feed
+    requirement while harvested
+    supplement remains available.
+
+    Commercial feed supplies the
+    rest.
+
+    Later, individual crops can
+    have different supplementation
+    values if we decide we need
+    more detail.
+  */
+
+  let supplementalFeedUsed =
+    0;
+
+
+  if(
+    state.supplementalFeedAmount >
+      0
+  ){
+
+    const supplementalRequirement =
+      totalFeedRequirement *
+      0.25;
+
+
+    supplementalFeedUsed =
+      Math.min(
+        supplementalRequirement,
+        state.supplementalFeedAmount
+      );
+
+
+    state.supplementalFeedAmount -=
+      supplementalFeedUsed;
+
+  }
+
+
+
+  /*
+    Whatever requirement was not
+    supplied by harvested crops
+    comes from commercial feed.
+  */
+
+  const commercialFeedUsed =
+    Math.max(
+      0,
+      totalFeedRequirement -
+      supplementalFeedUsed
+    );
 
 
   state.feedAmount -=
-    feedUsedThisSecond;
+    commercialFeedUsed;
 
 
   if(
@@ -349,6 +702,17 @@ function(
   ){
 
     state.feedAmount =
+      0;
+
+  }
+
+
+  if(
+    state.supplementalFeedAmount <
+    0
+  ){
+
+    state.supplementalFeedAmount =
       0;
 
   }
@@ -924,6 +1288,11 @@ function(
       state
     );
 
+
+    this.processCropGrowth(
+      state
+    );
+
     /*
   Feed consumption
 */
@@ -1404,6 +1773,109 @@ function(
 
 
 
+runEastPastureCropLoopStrategy:
+
+function(
+  state
+){
+
+  /*
+    Phase 1:
+    Follow the validated
+    aggressive Expansion path
+    until East Pasture is owned.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Phase 2:
+    Unlock the first crop plot.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    this.unlockEastPastureCropPlot(
+      state
+    );
+
+    return;
+
+  }
+
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  /*
+    Harvest immediately when
+    the current crop is ready.
+  */
+
+  if(
+    plot.harvestReady === true
+  ){
+
+    this.harvestCrop(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    If the plot is empty,
+    plant Sunflower.
+
+    We are using one crop only
+    for this first repeating
+    crop-economy test.
+  */
+
+  if(
+    plot.plantedCrop === null
+  ){
+
+    this.plantCrop(
+      state,
+      "sunflower"
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Otherwise the crop is still
+    growing, so do nothing.
+  */
+
+},
+
+
+
+
 runEastPastureGrowthStrategy:
 
 function(
@@ -1705,9 +2177,6 @@ function(
     by actual planting, growth,
     harvest and supplementation.
   */
-
-  state.feedConsumptionMultiplier =
-    0.80;
 
 
   this.record(
@@ -2453,6 +2922,15 @@ function(
       );
 
       break; 
+
+
+      case "eastPastureCropLoop":
+
+        this.runEastPastureCropLoopStrategy(
+          state
+       );
+
+  break;
 
 
     default:
