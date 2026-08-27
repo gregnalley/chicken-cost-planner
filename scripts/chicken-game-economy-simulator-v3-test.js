@@ -2402,6 +2402,235 @@ function(
 
 
 
+convertBarnAToEggBarn:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .use !== null
+  ){
+
+    return false;
+
+  }
+
+
+  const conversionCost =
+    3000;
+
+
+  if(
+    state.cash <
+    conversionCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    conversionCost;
+
+
+  state.eastPasture
+    .barnA
+    .use =
+      "egg-barn";
+
+
+  state.eastPasture
+    .barnA
+    .level =
+      1;
+
+
+  /*
+    First-pass test effect.
+
+    Add 1,000 eggs of storage
+    to the existing capacity.
+  */
+
+  state.storageCapacity +=
+    1000;
+
+
+  this.record(
+    state,
+    "Converted Barn A to Egg Barn",
+    conversionCost
+  );
+
+
+  return true;
+
+},
+
+
+
+
+runEastPastureEggBarnStrategy:
+
+function(
+  state
+){
+
+  /*
+    Phase 1:
+    Reach East Pasture.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Continue strengthening
+    the original operation.
+  */
+
+  if(
+    state.coopCapacity <
+    50
+  ){
+
+    this.upgradeCoop(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    this.upgradeProduction(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.truckCapacity <
+    500
+  ){
+
+    this.upgradeTruck(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.hens <
+    40
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Repair Barn A.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    this.repairEastPastureBarnA(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Convert Barn A to
+    Egg Barn Level 1.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .use === null
+  ){
+
+    this.convertBarnAToEggBarn(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Stop spending.
+
+    We want to isolate the
+    storage benefit.
+  */
+
+},
+
+
+
 convertBarnAToHenHouse:
 
 function(
@@ -3693,7 +3922,16 @@ function(
           state
         );
 
-  break;
+       break;
+
+
+     case "eastPastureEggBarn":
+
+       this.runEastPastureEggBarnStrategy(
+         state
+       );
+
+      break;  
 
 
     default:
