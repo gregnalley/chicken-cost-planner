@@ -297,20 +297,29 @@ None
 <div class="development-card">
 
 <h3>
-🏪 Market
+🏪 Egg Market
 </h3>
 
 <p>
-Egg Price:
+Current Egg Value:
 <br>
-$1
+$<span id="egg-value"></span>
 </p>
 
 <p>
-Orders:
+Next Upgrade:
 <br>
-None
+<span id="egg-value-upgrade"></span>
 </p>
+
+<button
+id="upgrade-egg-value-button"
+class="game-button upgrade-button"
+>
+
+Upgrade Egg Value
+
+</button>
 
 </div>
 
@@ -965,6 +974,70 @@ if(
 
 
 
+const eggValue =
+  document.getElementById(
+    "egg-value"
+  );
+
+
+if(
+  eggValue
+){
+
+  eggValue.textContent =
+    state.eggValue
+      .toFixed(
+        2
+      );
+
+}
+
+
+
+const eggValueUpgrade =
+  document.getElementById(
+    "egg-value-upgrade"
+  );
+
+
+if(
+  eggValueUpgrade
+){
+
+  const nextEggValueUpgrade =
+    BCPChickenGame.config
+      .eggValueUpgrades[
+        state.eggValueUpgradeIndex
+      ];
+
+
+  if(
+    nextEggValueUpgrade
+  ){
+
+    eggValueUpgrade.textContent =
+      nextEggValueUpgrade.name +
+      " - $" +
+      nextEggValueUpgrade.cost +
+      " → $" +
+      nextEggValueUpgrade.eggValue
+        .toFixed(
+          2
+        ) +
+      " / egg";
+
+  }
+  else
+  {
+
+    eggValueUpgrade.textContent =
+      "Maximum Level";
+
+  }
+
+}
+
+
   },
 
 
@@ -1231,6 +1304,36 @@ if(
 
 
 }
+
+const upgradeEggValueButton =
+  document.getElementById(
+    "upgrade-egg-value-button"
+  );
+
+
+if(
+  upgradeEggValueButton
+){
+
+  upgradeEggValueButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .upgradeEggValue(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
 
 
 
