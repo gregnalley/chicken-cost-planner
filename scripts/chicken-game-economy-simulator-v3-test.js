@@ -106,6 +106,9 @@ function(){
     feedCost:
       0,
 
+    feedConsumptionMultiplier:
+      1,  
+
 
     storageCapacity:
       config.startingFarm.eggStorageCapacity,
@@ -325,11 +328,15 @@ function(
   */
 
   const feedUsedThisSecond =
+  (
+    state.hens *
+    poundsPerHenPerGameDay *
     (
-      state.hens *
-      poundsPerHenPerGameDay
-    ) /
-    secondsPerGameDay;
+      state.feedConsumptionMultiplier ??
+      1
+    )
+  ) /
+  secondsPerGameDay;
 
 
   state.feedAmount -=
@@ -1396,6 +1403,115 @@ function(
 
 
 
+
+unlockEastPastureCropPlot:
+
+function(
+  state
+){
+
+  /*
+    East Pasture must already
+    be owned.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    Plot can only be unlocked
+    once at this stage.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked === true
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    First-pass Phase 2
+    test price.
+
+    Not final.
+  */
+
+  const unlockCost =
+    2500;
+
+
+  if(
+    state.cash <
+    unlockCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    unlockCost;
+
+
+  state.eastPasture
+    .cropPlot
+    .unlocked =
+      true;
+
+
+  state.eastPasture
+    .cropPlot
+    .level =
+      1;
+
+
+  /*
+    TEMPORARY CROP EFFECT
+
+    Level 1 crop production
+    supplies approximately
+    20% of the flock's feed
+    requirement.
+
+    Commercial feed consumption
+    therefore becomes 80% of
+    normal.
+
+    Later this will be replaced
+    by actual planting, growth,
+    harvest and supplementation.
+  */
+
+  state.feedConsumptionMultiplier =
+    0.80;
+
+
+  this.record(
+    state,
+    "Unlocked East Pasture Crop Plot",
+    unlockCost
+  );
+
+
+  return true;
+
+},
+
+
+
 repairEastPastureBarnA:
 
 function(
@@ -1559,6 +1675,120 @@ function(
     state,
     "Converted Barn A to Farm Store",
     conversionCost
+  );
+
+
+  return true;
+
+},
+
+
+
+unlockEastPastureCropPlot:
+
+function(
+  state
+){
+
+  /*
+    ==================================================
+    EAST PASTURE — CROP PLOT UNLOCK
+    ==================================================
+
+    First-pass Phase 2 economy test.
+
+    The player must already own
+    East Pasture before the crop
+    plot can be cleared and prepared.
+  */
+
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    The first crop plot can only
+    be unlocked once.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked === true
+  ){
+
+    return false;
+
+  }
+
+
+  /*
+    Temporary test price.
+
+    This gives the player a smaller
+    East Pasture project before the
+    more expensive barn projects.
+  */
+
+  const unlockCost =
+    2500;
+
+
+  if(
+    state.cash <
+    unlockCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    unlockCost;
+
+
+  state.eastPasture
+    .cropPlot
+    .unlocked =
+      true;
+
+
+  state.eastPasture
+    .cropPlot
+    .level =
+      1;
+
+
+  /*
+    TEMPORARY CROP BENEFIT
+
+    For this economy test only,
+    the Level 1 crop plot supplies
+    approximately 20% of the flock's
+    feed requirements.
+
+    The future game will replace
+    this with actual crops, planting,
+    growth, harvesting and feed
+    supplementation.
+  */
+
+  state.feedConsumptionMultiplier =
+    0.80;
+
+
+  this.record(
+    state,
+    "Unlocked East Pasture Crop Plot",
+    unlockCost
   );
 
 
@@ -1757,6 +1987,71 @@ function(
 },
 
 
+
+runEastPastureCropStrategy:
+
+function(
+  state
+){
+
+  /*
+    ==================================================
+    EAST PASTURE — CROP-FIRST TEST STRATEGY
+    ==================================================
+
+    Phase 1:
+    Follow the validated aggressive
+    Expansion path until East Pasture
+    is purchased.
+
+    Phase 2:
+    Unlock the first crop plot before
+    investing in barns or the depot.
+
+    After that, stop spending so we can
+    isolate the economic effect of the
+    crop plot.
+  */
+
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    this.unlockEastPastureCropPlot(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Stop spending after the crop
+    plot unlock for this test.
+  */
+
+},
+
+
+
 runHenBuyingStrategy:
 
 function(
@@ -1928,7 +2223,16 @@ function(
         state
       );
 
-  break;  
+      break;  
+
+
+     case "eastPastureCrop":
+
+       this.runEastPastureCropStrategy(
+         state
+      );
+
+  break; 
 
 
     default:
