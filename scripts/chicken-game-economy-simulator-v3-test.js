@@ -1797,14 +1797,83 @@ if(
 /*
   STEP 5
 
-  With production and egg
-  value improved, continue
-  expanding the flock to
-  20 hens.
+  Continue flock growth to
+  15 hens.
 
-  If another hen cannot be
-  afforded yet, save until
-  it can be purchased.
+  At this point the starter
+  truck is beginning to become
+  a meaningful bottleneck.
+*/
+
+if(
+  state.hens <
+  15
+){
+
+  if(
+    this.buyHen(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  return;
+
+}
+
+
+
+/*
+  STEP 6
+
+  Upgrade transportation before
+  continuing the final push
+  toward 20 hens.
+
+  This should reduce the long
+  starter-truck bottleneck we
+  observed between roughly
+  14 and 19 minutes.
+*/
+
+if(
+  state.truckCapacity <=
+  config.transportation
+    .starterTruckCapacity
+){
+
+  if(
+    this.upgradeTruck(
+      state
+    )
+  ){
+
+    return;
+
+  }
+
+
+  /*
+    Save until the truck
+    upgrade is affordable.
+  */
+
+  return;
+
+}
+
+
+
+/*
+  STEP 7
+
+  With improved transportation,
+  continue expanding the flock
+  to 20 hens.
 */
 
 if(
@@ -1830,54 +1899,11 @@ if(
 
 
 /*
-  STEP 6
+  STEP 8
 
-  The expanded flock and
-  production improvements
-  now put more pressure on
-  transportation.
-
-  Upgrade the starter truck.
-*/
-
-if(
-  state.truckCapacity <=
-  config.transportation
-    .starterTruckCapacity
-){
-
-  if(
-    this.upgradeTruck(
-      state
-    )
-  ){
-
-    return;
-
-  }
-
-
-  /*
-    Save for the truck upgrade.
-  */
-
-  return;
-
-}
-
-
-
-/*
-  STEP 7
-
-  With the upgraded truck now
-  capable of handling greater
-  egg volume, purchase the
+  With 20 hens and the upgraded
+  truck in place, purchase the
   second production upgrade.
-
-  This creates another income
-  boost before saving for
-  East Pasture.
 */
 
 if(
@@ -1908,10 +1934,10 @@ if(
 
 
 /*
-  STEP 8
+  STEP 9
 
   Early expansion infrastructure
-  is now established.
+  is complete.
 
   Save aggressively for
   East Pasture.
