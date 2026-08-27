@@ -951,8 +951,122 @@ BCPChickenGame.actions = {
     };
 
 
+  },
+
+
+
+  unlockEastPastureCropPlot:
+
+function(
+  state
+){
+
+  /*
+    East Pasture must already
+    be owned.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return {
+      success:
+        false,
+
+      message:
+        "East Pasture is not unlocked."
+    };
+
   }
 
+
+  /*
+    Crop Plot can only be
+    unlocked once.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked === true
+  ){
+
+    return {
+      success:
+        false,
+
+      message:
+        "East Pasture Crop Plot is already unlocked."
+    };
+
+  }
+
+
+  const unlockCost =
+    BCPChickenGame.config
+      .crops
+      .eastPastureCropPlot
+      .unlockCost;
+
+
+  /*
+    Player must be able
+    to afford the plot.
+  */
+
+  if(
+    state.money <
+    unlockCost
+  ){
+
+    return {
+      success:
+        false,
+
+      message:
+        "Not enough money to unlock the East Pasture Crop Plot."
+    };
+
+  }
+
+
+  state.money -=
+    unlockCost;
+
+
+  state.eastPasture
+    .cropPlot
+    .unlocked =
+      true;
+
+
+  state.eastPasture
+    .cropPlot
+    .level =
+      1;
+
+
+  return {
+
+    success:
+      true,
+
+    cost:
+      unlockCost,
+
+    level:
+      state.eastPasture
+        .cropPlot
+        .level,
+
+    message:
+      "East Pasture Crop Plot unlocked."
+
+  }
+  
+},
 
 };
 
