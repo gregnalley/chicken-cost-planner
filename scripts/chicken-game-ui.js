@@ -1150,6 +1150,111 @@ if(
 }
 
 
+const ownedLand =
+  document.getElementById(
+    "owned-land"
+  );
+
+
+const nextLandExpansion =
+  document.getElementById(
+    "next-land-expansion"
+  );
+
+
+const purchaseLandButton =
+  document.getElementById(
+    "purchase-land-button"
+  );
+
+
+const firstExpansion =
+  BCPChickenGame.config
+    .land
+    .firstExpansion;
+
+
+if(
+  state.landUnlocked
+){
+
+  if(
+    ownedLand
+  ){
+
+    ownedLand.textContent =
+      "2 Plots";
+
+  }
+
+
+  if(
+    nextLandExpansion
+  ){
+
+    nextLandExpansion.textContent =
+      firstExpansion.name +
+      " Owned";
+
+  }
+
+
+  if(
+    purchaseLandButton
+  ){
+
+    purchaseLandButton.disabled =
+      true;
+
+
+    purchaseLandButton.textContent =
+      "East Pasture Purchased";
+
+  }
+
+}
+else
+{
+
+  if(
+    ownedLand
+  ){
+
+    ownedLand.textContent =
+      "1 Plot";
+
+  }
+
+
+  if(
+    nextLandExpansion
+  ){
+
+    nextLandExpansion.textContent =
+      firstExpansion.name +
+      " - $" +
+      firstExpansion.cost;
+
+  }
+
+
+  if(
+    purchaseLandButton
+  ){
+
+    purchaseLandButton.disabled =
+      false;
+
+
+    purchaseLandButton.textContent =
+      "Purchase " +
+      firstExpansion.name;
+
+  }
+
+}
+
+
   },
 
 
