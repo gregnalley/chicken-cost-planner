@@ -1436,6 +1436,35 @@ if(
 }
 
 
+const upgradeTruckButton =
+  document.getElementById(
+    "upgrade-truck-button"
+  );
+
+
+if(
+  upgradeTruckButton
+){
+
+  upgradeTruckButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .upgradeTruck(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
 
 
   }
