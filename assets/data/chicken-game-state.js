@@ -257,6 +257,122 @@ function(){
       for now.
     */
 
+
+          milestones:
+      [],
+
+
+    hensLost:
+      0,
+
+
+    predatorFeedLossTriggered:
+      false,
+
+
+    predatorFeedLost:
+      0,
+
+
+    lastPredatorCheckSecond:
+      0,
+
+
+    predatorWarnings:
+      0,
+
+
+    predatorFeedLossEvents:
+      0,
+
+
+    landUnlocked:
+      false,
+
+
+    landUnlockSecond:
+      null,
+
+
+    eastPasture:
+
+    {
+
+      unlocked:
+        false,
+
+
+      barnA:
+
+      {
+
+        repaired:
+          false,
+
+        use:
+          null,
+
+        level:
+          0
+
+      },
+
+
+      barnB:
+
+      {
+
+        repaired:
+          false,
+
+        use:
+          null,
+
+        level:
+          0
+
+      },
+
+
+      transportDepot:
+
+      {
+
+        repaired:
+          false,
+
+        level:
+          0
+
+      },
+
+
+      cropPlot:
+
+      {
+
+        unlocked:
+          false,
+
+        level:
+          0,
+
+        plantedCrop:
+          null,
+
+        plantedSecond:
+          null,
+
+        harvestSecond:
+          null,
+
+        harvestReady:
+          false
+
+      }
+
+    },
+
     time:
 
     {
