@@ -2827,6 +2827,279 @@ function(
 
 
 
+repairEastPastureTransportDepot:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .transportDepot
+      .repaired === true
+  ){
+
+    return false;
+
+  }
+
+
+  const repairCost =
+    6000;
+
+
+  if(
+    state.cash <
+    repairCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    repairCost;
+
+
+  state.eastPasture
+    .transportDepot
+    .repaired =
+      true;
+
+
+  state.eastPasture
+    .transportDepot
+    .level =
+      1;
+
+
+  this.record(
+    state,
+    "Repaired East Pasture Transport Depot",
+    repairCost
+  );
+
+
+  return true;
+
+},
+
+
+
+upgradeEastPastureTruck:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture
+      .transportDepot
+      .repaired !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.truckCapacity >=
+    1000
+  ){
+
+    return false;
+
+  }
+
+
+  const upgradeCost =
+    10000;
+
+
+  if(
+    state.cash <
+    upgradeCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    upgradeCost;
+
+
+  state.truckCapacity =
+    1000;
+
+
+  state.eastPasture
+    .transportDepot
+    .level =
+      2;
+
+
+  this.record(
+    state,
+    "Upgraded East Pasture Truck",
+    upgradeCost
+  );
+
+
+  return true;
+
+},
+
+
+
+
+runEastPastureTransportStrategy:
+
+function(
+  state
+){
+
+  /*
+    Phase 1:
+    Reach East Pasture.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Continue strengthening
+    the original farm first.
+  */
+
+  if(
+    state.coopCapacity <
+    50
+  ){
+
+    this.upgradeCoop(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    this.upgradeProduction(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.truckCapacity <
+    500
+  ){
+
+    this.upgradeTruck(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.hens <
+    40
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Repair the East Pasture
+    Transport Depot.
+  */
+
+  if(
+    state.eastPasture
+      .transportDepot
+      .repaired !== true
+  ){
+
+    this.repairEastPastureTransportDepot(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Unlock the first depot-based
+    truck upgrade.
+  */
+
+  if(
+    state.truckCapacity <
+    1000
+  ){
+
+    this.upgradeEastPastureTruck(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Stop spending.
+  */
+
+},
+
+
+
 unlockEastPastureCropPlot:
 
 function(
@@ -3412,6 +3685,15 @@ function(
        );
 
        break; 
+
+
+      case "eastPastureTransport":
+
+        this.runEastPastureTransportStrategy(
+          state
+        );
+
+  break;
 
 
     default:
