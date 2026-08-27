@@ -1772,6 +1772,357 @@ function(
 
 
 
+
+runPhase2StressStrategy:
+
+function(
+  state
+){
+
+  /*
+    ==================================================
+    FINAL PHASE 2 STRESS STRATEGY
+    ==================================================
+
+    Purpose:
+
+    Simulate a reasonably aggressive player
+    who reaches East Pasture, continues
+    developing the original farm, then
+    invests in several East Pasture systems.
+
+    This is NOT intended to represent
+    perfect play.
+
+    It is an economic stress test.
+  */
+
+
+  /*
+    PHASE 1
+
+    Reach East Pasture using our
+    validated expansion strategy.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    PHASE 2A
+
+    Continue improving the
+    original farm after purchasing
+    East Pasture.
+  */
+
+
+  /*
+    Expand original coop
+    toward 50 capacity.
+  */
+
+  if(
+    state.coopCapacity <
+    50
+  ){
+
+    if(
+      this.upgradeCoop(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    Reach Production Level 3.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    if(
+      this.upgradeProduction(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    Reach the 500-capacity truck.
+  */
+
+  if(
+    state.truckCapacity <
+    500
+  ){
+
+    if(
+      this.upgradeTruck(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    Grow original flock toward
+    40 hens.
+  */
+
+  if(
+    state.hens <
+    40
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    PHASE 2B
+
+    Begin East Pasture development.
+  */
+
+
+  /*
+    Unlock Crop Plot Level 1.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    if(
+      this.unlockEastPastureCropPlot(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+  /*
+    If the crop plot is available
+    and nothing is planted,
+    plant Sunflower.
+
+    Existing crop processing
+    handles growth and harvest.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked === true &&
+    state.eastPasture
+      .cropPlot
+      .plantedCrop === null
+  ){
+
+    if(
+      this.plantEastPastureCrop(
+        state,
+        "sunflower"
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    Repair Barn A.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    if(
+      this.repairEastPastureBarnA(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    Convert Barn A to Hen House.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .use === null
+  ){
+
+    if(
+      this.convertBarnAToHenHouse(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    PHASE 2C
+
+    Use the new Hen House capacity.
+
+    Grow toward 75 hens rather
+    than immediately filling the
+    entire 100-hen capacity.
+  */
+
+  if(
+    state.hens <
+    75
+  ){
+
+    if(
+      this.buyHen(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    PHASE 2D
+
+    Transportation becomes the
+    next major infrastructure goal.
+  */
+
+  if(
+    state.eastPasture
+      .transportDepot
+      .repaired !== true
+  ){
+
+    if(
+      this.repairEastPastureTransportDepot(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    Purchase the first
+    depot-based truck upgrade.
+  */
+
+  if(
+    state.truckCapacity <
+    1000
+  ){
+
+    if(
+      this.upgradeEastPastureTruck(
+        state
+      )
+    ){
+
+      return;
+
+    }
+
+  }
+
+
+
+  /*
+    Everything required by this
+    stress test has been purchased.
+
+    Continue operating normally
+    and accumulate cash.
+  */
+
+},
+
+
+
 runEastPastureGrowthCropStrategy:
 
 function(
@@ -3931,7 +4282,16 @@ function(
          state
        );
 
-      break;  
+      break;
+      
+      
+     case "phase2Stress":
+
+       this.runPhase2StressStrategy(
+         state
+       );
+
+  break; 
 
 
     default:
