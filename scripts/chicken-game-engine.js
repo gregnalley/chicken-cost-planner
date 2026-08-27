@@ -24,6 +24,10 @@ BCPChickenGame.engine = {
     null,
 
 
+  lastTickTimestamp:
+    null,
+
+
 
   start:
 
@@ -36,6 +40,10 @@ BCPChickenGame.engine = {
 
     this.isRunning =
       true;
+
+
+    this.lastTickTimestamp =
+      performance.now();
 
 
     console.log(
@@ -56,7 +64,9 @@ BCPChickenGame.engine = {
 
         },
 
-        BCPChickenGame.config.time.tickMilliseconds
+        BCPChickenGame.config
+          .time
+          .tickMilliseconds
 
       );
 
@@ -78,11 +88,146 @@ BCPChickenGame.engine = {
         this.tickInterval
       );
 
+
+      this.tickInterval =
+        null;
+
     }
 
 
     this.isRunning =
       false;
+
+
+    this.lastTickTimestamp =
+      null;
+
+
+  },
+
+
+
+  updateGameClock:
+
+  function(
+    state
+  ){
+
+
+    const secondsPerGameDay =
+      BCPChickenGame.config
+        .time
+        .realMinutesPerGameDay *
+      60;
+
+
+    /*
+      Convert total elapsed real
+      seconds into game-day progress.
+
+      One complete game day currently
+      equals 10 real minutes.
+    */
+
+    const totalGameDaysElapsed =
+      state.elapsedSeconds /
+      secondsPerGameDay;
+
+
+    state.time.day =
+      Math.floor(
+        totalGameDaysElapsed
+      ) + 1;
+
+
+    const progressWithinDay =
+      totalGameDaysElapsed %
+      1;
+
+
+    const totalMinutesIntoDay =
+      Math.floor(
+        progressWithinDay *
+        1440
+      );
+
+
+    state.time.hour =
+      Math.floor(
+        totalMinutesIntoDay /
+        60
+      );
+
+
+    state.time.minute =
+      totalMinutesIntoDay %
+      60;
+
+
+  },
+
+
+
+  updateDayPhase:
+
+  function(
+    state
+  ){
+
+
+    const hour =
+      state.time.hour;
+
+
+    /*
+      First-pass day/night phases.
+
+      These mirror the phase concept
+      validated in the economy
+      simulator.
+
+      Exact visual transitions can
+      be adjusted later when the
+      actual map is built.
+    */
+
+    if(
+      hour >= 6 &&
+      hour < 18
+    ){
+
+      state.dayPhase =
+        "day";
+
+    }
+
+    else if(
+      hour >= 18 &&
+      hour < 20
+    ){
+
+      state.dayPhase =
+        "dusk";
+
+    }
+
+    else if(
+      hour >= 20 ||
+      hour < 5
+    ){
+
+      state.dayPhase =
+        "night";
+
+    }
+
+    else
+    {
+
+      state.dayPhase =
+        "dawn";
+
+    }
 
 
   },
@@ -94,108 +239,136 @@ BCPChickenGame.engine = {
   function(){
 
 
+    if(
+      !this.isRunning ||
+      !this.state
+    ){
+
+      return;
+
+    }
+
+
+    const now =
+      performance.now();
+
+
+    if(
+      this.lastTickTimestamp ===
+      null
+    ){
+
+      this.lastTickTimestamp =
+        now;
+
+
+      return;
+
+    }
+
+
+    const elapsedSeconds =
+      (
+        now -
+        this.lastTickTimestamp
+      ) /
+      1000;
+
+
+    this.lastTickTimestamp =
+      now;
+
+
+
+    if(
+      elapsedSeconds <= 0
+    ){
+
+      return;
+
+    }
+
+
     const state =
       this.state;
 
 
+
     /*
-      Advance game clock
+      Track total real time.
     */
 
+    state.elapsedSeconds +=
+      elapsedSeconds;
+
+
 
     /*
-  Advance game clock
-*/
+      Update displayed game time.
+    */
 
-
-state.time.minute += 1;
-
-
-
-if(
-  state.time.minute >= 60
-){
-
-  state.time.minute = 0;
-
-  state.time.hour += 1;
-
-}
-
-
-
-if(
-  state.time.hour >= 24
-){
-
-  state.time.hour = 0;
-
-  state.time.day += 1;
-
-}
-
-/*
-  Morning feeding
-*/
-
-
-if(
-
-  state.time.hour === 6 &&
-
-  state.time.minute === 0
-
-){
-
-console.log(
-    "SUNRISE EVENT",
-    state.time.day,
-    state.time.minute
-  );
-
-
-  if(
-  BCPChickenGame.feeding
-){
-
-  BCPChickenGame.feeding
-    .consumeDailyFeed(
+    this.updateGameClock(
       state
     );
 
-}
 
-}
-
-    /*
-      Produce eggs
-    */
-
-
-    /*
-  Economy update
-*/
-
-BCPChickenGame.economy
-  .produceEggs(
-    state
-  );
-
-
-
-    console.log(
-      "Tick",
+    this.updateDayPhase(
       state
     );
+
+
+
+    /*
+      Continuous feed consumption.
+    */
 
     if(
-  BCPChickenGame.ui
-){
+      BCPChickenGame.feeding &&
+      BCPChickenGame.feeding
+        .consumeFeed
+    ){
 
-  BCPChickenGame.ui.update();
+      BCPChickenGame.feeding
+        .consumeFeed(
+          state,
+          elapsedSeconds
+        );
 
-}
+    }
 
+
+
+    /*
+      Continuous egg production.
+    */
+
+    if(
+      BCPChickenGame.economy &&
+      BCPChickenGame.economy
+        .produceEggs
+    ){
+
+      BCPChickenGame.economy
+        .produceEggs(
+          state,
+          elapsedSeconds
+        );
+
+    }
+
+
+
+    /*
+      Update the visible game state.
+    */
+
+    if(
+      BCPChickenGame.ui
+    ){
+
+      BCPChickenGame.ui.update();
+
+    }
 
 
   }
