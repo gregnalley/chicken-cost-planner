@@ -270,13 +270,13 @@ function(){
 
 
       minute:
-        59
+        0
 
     },
 
 
     dayPhase:
-      "dawn"
+      "night"
 
 
   };
