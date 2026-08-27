@@ -415,11 +415,11 @@ Farm Actions
 
 
 <button
-id="coop-button"
+id="buy-feed-button"
 class="game-button"
 >
 
-Click Coop
+Buy 50 lb Feed — $15
 
 </button>
 
@@ -525,7 +525,7 @@ Increase chicken capacity.
 <p>
 Cost:
 <br>
-$250
+$150
 </p>
 
 
@@ -906,33 +906,36 @@ if(feedStorage){
 
 
 
-    const coopButton =
-      document.getElementById(
-        "coop-button"
+    const buyFeedButton =
+  document.getElementById(
+    "buy-feed-button"
+  );
+
+
+if(
+  buyFeedButton
+){
+
+
+  buyFeedButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .buyFeed(
+        state,
+        "basic-feed-bag"
       );
 
 
-    if(coopButton){
+    BCPChickenGame.ui.update();
 
 
-      coopButton.onclick =
-
-      function(){
+  };
 
 
-        BCPChickenGame.economy
-          .coopClick(
-            state
-          );
-
-
-        BCPChickenGame.ui.update();
-
-
-      };
-
-
-    }
+}
 
 
 
