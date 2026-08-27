@@ -519,7 +519,10 @@ BCPChickenGame.config = {
   {
 
     realMinutesPerGameDay:
-      10
+      10,
+
+    tickMilliseconds:
+      417  
 
   },
 
