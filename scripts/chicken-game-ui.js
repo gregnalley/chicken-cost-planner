@@ -195,6 +195,42 @@ Purchase East Pasture
 
 
 
+<div
+id="east-pasture-crop-card"
+class="development-card"
+>
+
+<h3>
+🌻 East Pasture Crop Plot
+</h3>
+
+<p>
+Status:
+<br>
+<span id="crop-plot-status">
+Locked
+</span>
+</p>
+
+<p>
+Cost:
+<br>
+<span id="crop-plot-cost"></span>
+</p>
+
+<button
+id="unlock-crop-plot-button"
+class="game-button upgrade-button"
+>
+
+Unlock Crop Plot
+
+</button>
+
+</div>
+
+
+
 
 <div class="development-card">
 
