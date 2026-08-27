@@ -1583,6 +1583,37 @@ if(
 
 
 
+const purchaseLandButton =
+  document.getElementById(
+    "purchase-land-button"
+  );
+
+
+if(
+  purchaseLandButton
+){
+
+  purchaseLandButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .purchaseFirstExpansion(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+
+
   }
 
 
