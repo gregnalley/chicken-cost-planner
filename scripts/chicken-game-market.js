@@ -12,21 +12,40 @@ const BCPChickenGame =
 BCPChickenGame.market = {
 
 
+  /*
+    Manually sell a required
+    batch of eggs.
+
+    Early-game selling is manual.
+
+    If the player chooses to sell
+    25 eggs, at least 25 eggs must
+    be available.
+
+    Later transportation and
+    managers can introduce separate
+    automatic selling behavior.
+  */
+
   sellEggs:
 
-  function(state, amount){
+  function(
+    state,
+    amount
+  ){
 
 
     if(
-      state.eggs <= 0
+      !state
     ){
 
       return {
 
-        success:false,
+        success:
+          false,
 
         message:
-          "No eggs available."
+          "Game state unavailable."
 
       };
 
@@ -34,29 +53,61 @@ BCPChickenGame.market = {
 
 
 
-    const sellAmount =
-      Math.min(
-        amount,
-        state.eggs
-      );
+    if(
+      !Number.isFinite(
+        amount
+      ) ||
+      amount <= 0
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Invalid egg-sale amount."
+
+      };
+
+    }
+
+
+
+    if(
+      state.eggs <
+      amount
+    ){
+
+      return {
+
+        success:
+          false,
+
+        message:
+          "Not enough eggs. " +
+          amount +
+          " eggs are required."
+
+      };
+
+    }
 
 
 
     const eggValue =
-      BCPChickenGame.config
-       .eggs
-       .sellValue;
+      state.eggValue;
 
 
 
     const revenue =
-      sellAmount *
+      amount *
       eggValue;
 
 
 
     state.eggs -=
-      sellAmount;
+      amount;
 
 
     state.money +=
@@ -66,13 +117,21 @@ BCPChickenGame.market = {
 
     return {
 
-      success:true,
+      success:
+        true,
 
       eggsSold:
-        sellAmount,
+        amount,
 
       revenue:
-        revenue
+        revenue,
+
+      message:
+        "Sold " +
+        amount +
+        " eggs for $" +
+        revenue.toFixed(2) +
+        "."
 
     };
 
