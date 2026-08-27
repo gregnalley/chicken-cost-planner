@@ -2402,6 +2402,259 @@ function(
 
 
 
+convertBarnAToHenHouse:
+
+function(
+  state
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    return false;
+
+  }
+
+
+  if(
+    state.eastPasture
+      .barnA
+      .use !== null
+  ){
+
+    return false;
+
+  }
+
+
+  const conversionCost =
+    3000;
+
+
+  if(
+    state.cash <
+    conversionCost
+  ){
+
+    return false;
+
+  }
+
+
+  state.cash -=
+    conversionCost;
+
+
+  state.eastPasture
+    .barnA
+    .use =
+      "hen-house";
+
+
+  state.eastPasture
+    .barnA
+    .level =
+      1;
+
+
+  /*
+    First-pass test effect.
+
+    The repaired barn adds
+    room for 50 more hens.
+  */
+
+  state.coopCapacity +=
+    50;
+
+
+  this.record(
+    state,
+    "Converted Barn A to Hen House",
+    conversionCost
+  );
+
+
+  return true;
+
+},
+
+
+
+runEastPastureHenHouseStrategy:
+
+function(
+  state
+){
+
+  /*
+    Phase 1:
+    Reach East Pasture using
+    the validated aggressive path.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Continue strengthening
+    the original property first.
+  */
+
+  if(
+    state.coopCapacity <
+    50
+  ){
+
+    this.upgradeCoop(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    this.upgradeProduction(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    state.truckCapacity <
+    500
+  ){
+
+    this.upgradeTruck(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Grow to 40 hens before
+    beginning Barn A development.
+  */
+
+  if(
+    state.hens <
+    40
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Repair Barn A.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    this.repairEastPastureBarnA(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Convert Barn A to Hen House.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .use === null
+  ){
+
+    this.convertBarnAToHenHouse(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Stress-test the new capacity.
+
+    Grow to 75 hens for this
+    first pass rather than
+    immediately maxing at 100.
+  */
+
+  if(
+    state.hens <
+    75
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Stop spending.
+  */
+
+},
+
+
+
+
 repairEastPastureBarnA:
 
 function(
@@ -3149,7 +3402,16 @@ function(
          state
        );
 
-  break; 
+       break; 
+
+
+      case "eastPastureHenHouse":
+
+       this.runEastPastureHenHouseStrategy(
+         state
+       );
+
+       break; 
 
 
     default:
