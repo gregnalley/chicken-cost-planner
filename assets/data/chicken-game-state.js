@@ -10,30 +10,106 @@ const BCPChickenGame =
 
 
 BCPChickenGame.createState =
+
 function(){
 
 
   return {
 
 
+    /*
+      Core farm economy
+    */
+
     money:
       BCPChickenGame.config
         .startingFarm
-        .money,
+        .cash,
 
 
     eggs:
-      BCPChickenGame.config
-        .startingFarm
-        .eggs,
-        
-        
-    feed:
-      100,
-      
-      lastFedDay:
-        0,
+      0,
 
+
+    feed:
+      BCPChickenGame.config
+        .feed
+        .startingAmount,
+
+
+    supplementalFeedAmount:
+      0,
+
+
+
+    /*
+      Egg-production state
+    */
+
+    eggRate:
+      BCPChickenGame.config
+        .eggs
+        .secondsPerEggPerHen,
+
+
+    eggValue:
+      BCPChickenGame.config
+        .eggs
+        .startingValue,
+
+
+    eggProductionAccumulator:
+      0,
+
+
+    nestingUpgradeIndex:
+      0,
+
+
+    eggValueUpgradeIndex:
+      0,
+
+
+
+    /*
+      Feed tracking
+    */
+
+    feedPurchased:
+      0,
+
+
+    feedCost:
+      0,
+
+
+
+    /*
+      Transportation
+    */
+
+    truckCapacity:
+      BCPChickenGame.config
+        .transportation
+        .starterTruckCapacity,
+
+
+    lastTruckPickupSecond:
+      0,
+
+
+
+    /*
+      Chickens
+
+      Keep the existing individual
+      chicken structure for now.
+
+      We will revisit flock scaling
+      later if the real game begins
+      handling very large numbers
+      of hens.
+    */
 
     chickens:
 
@@ -80,88 +156,127 @@ function(){
 
       }
 
+    ],
+
+
+
+    /*
+      Starter-property buildings
+    */
+
+    buildings:
+
+    [
+
+      {
+
+        id:
+          "starter-coop",
+
+        type:
+          "coop",
+
+        level:
+          1,
+
+        capacity:
+          BCPChickenGame.config
+            .chicken
+            .startingHenCapacity
+
+      },
+
+
+      {
+
+        id:
+          "starter-storage",
+
+        type:
+          "egg-storage",
+
+        level:
+          1,
+
+        capacity:
+          BCPChickenGame.config
+            .startingFarm
+            .eggStorageCapacity
+
+      },
+
+
+      {
+
+        id:
+          "starter-feed-storage",
+
+        type:
+          "feed-storage",
+
+        level:
+          1,
+
+        /*
+          Existing test-game value.
+
+          This has not yet been moved
+          into chicken-game-config.js.
+        */
+
+        capacity:
+          250
+
+      }
 
     ],
 
 
-        buildings:
 
-[
+    /*
+      Real elapsed game time
 
-  {
+      This will be used by the rebuilt
+      engine for production, feed,
+      transportation, crops and other
+      timed systems.
+    */
 
-    id:
-      "starter-coop",
-
-    type:
-      "coop",
-
-    level:
-      1,
-
-    capacity:
-      BCPChickenGame.config
-        .coop
-        .startingCapacity
-
-  },
+    elapsedSeconds:
+      0,
 
 
-  {
 
-    id:
-      "starter-storage",
+    /*
+      Displayed game clock
 
-    type:
-      "egg-storage",
+      The existing test game starts
+      immediately before 6:00 AM.
 
-    level:
-      1,
-
-    capacity:
-      BCPChickenGame.config
-        .storage
-        .startingCapacity
-
-  },
-
-
-  {
-
-    id:
-      "starter-feed-storage",
-
-    type:
-      "feed-storage",
-
-    level:
-      1,
-
-    capacity:
-      250
-
-  }
-
-
-],
-
+      We are preserving that behavior
+      for now.
+    */
 
     time:
 
     {
 
-     day:
-       1,
+      day:
+        1,
 
 
-     hour:
-       5,
+      hour:
+        5,
 
 
-     minute:
-       59
+      minute:
+        59
 
-    }
+    },
+
+
+    dayPhase:
+      "dawn"
 
 
   };
