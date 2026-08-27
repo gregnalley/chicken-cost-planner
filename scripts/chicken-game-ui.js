@@ -240,15 +240,30 @@ Basic Feed
 </h3>
 
 <p>
-Automation:
+Current Rate:
 <br>
-Locked
+<span id="production-rate"></span>
 </p>
 
 <p>
-Efficiency:
+Next Upgrade:
 <br>
-Normal
+<span id="production-upgrade"></span>
+</p>
+
+<button
+id="upgrade-production-button"
+class="game-button upgrade-button"
+>
+
+Upgrade Production
+
+</button>
+
+<p>
+Automation:
+<br>
+Locked
 </p>
 
 </div>
@@ -892,6 +907,64 @@ if(feedStorage){
 
 
 
+const productionRate =
+  document.getElementById(
+    "production-rate"
+  );
+
+
+if(
+  productionRate
+){
+
+  productionRate.textContent =
+    state.eggRate.toFixed(2) +
+    " sec / egg / hen";
+
+}
+
+
+
+const productionUpgrade =
+  document.getElementById(
+    "production-upgrade"
+  );
+
+
+if(
+  productionUpgrade
+){
+
+  const nextProductionUpgrade =
+    BCPChickenGame.config
+      .productionUpgrades
+      .nestingBoxes[
+        state.nestingUpgradeIndex
+      ];
+
+
+  if(
+    nextProductionUpgrade
+  ){
+
+    productionUpgrade.textContent =
+      nextProductionUpgrade.name +
+      " - $" +
+      nextProductionUpgrade.cost;
+
+  }
+  else
+  {
+
+    productionUpgrade.textContent =
+      "Maximum Level";
+
+  }
+
+}
+
+
+
   },
 
 
@@ -1117,6 +1190,36 @@ if(shopUpgradeStorageButton){
 
     BCPChickenGame.actions
       .upgradeStorage(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+
+const upgradeProductionButton =
+  document.getElementById(
+    "upgrade-production-button"
+  );
+
+
+if(
+  upgradeProductionButton
+){
+
+  upgradeProductionButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .upgradeProduction(
         state
       );
 
