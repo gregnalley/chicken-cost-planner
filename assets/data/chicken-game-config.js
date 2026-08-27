@@ -30,7 +30,7 @@ BCPChickenGame.config = {
 
 
     hens:
-      3,
+      5,
 
 
     eggStorageCapacity:
