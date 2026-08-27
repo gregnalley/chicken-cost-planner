@@ -171,14 +171,25 @@ Farm Development
 <p>
 Owned Land:
 <br>
+<span id="owned-land">
 1 Plot
+</span>
 </p>
 
 <p>
 Next Expansion:
 <br>
-Locked
+<span id="next-land-expansion"></span>
 </p>
+
+<button
+id="purchase-land-button"
+class="game-button upgrade-button"
+>
+
+Purchase East Pasture
+
+</button>
 
 </div>
 
