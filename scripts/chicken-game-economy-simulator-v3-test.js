@@ -243,60 +243,60 @@ cropDefinitions:
 {
 
   kale:
-  {
-    id:
-      "kale",
+{
+  id:
+    "kale",
 
-    name:
-      "Kale",
+  name:
+    "Kale",
 
-    plantingCost:
-      20,
+  plantingCost:
+    20,
 
-    growthSeconds:
-      120,
+  growthSeconds:
+    120,
 
-    harvestPounds:
-      40
-  },
-
-
-  sunflower:
-  {
-    id:
-      "sunflower",
-
-    name:
-      "Sunflower",
-
-    plantingCost:
-      35,
-
-    growthSeconds:
-      240,
-
-    harvestPounds:
-      100
-  },
+  harvestPounds:
+    10
+},
 
 
-  pumpkin:
-  {
-    id:
-      "pumpkin",
+sunflower:
+{
+  id:
+    "sunflower",
 
-    name:
-      "Pumpkin & Winter Squash",
+  name:
+    "Sunflower",
 
-    plantingCost:
-      50,
+  plantingCost:
+    35,
 
-    growthSeconds:
-      360,
+  growthSeconds:
+    240,
 
-    harvestPounds:
-      180
-  }
+  harvestPounds:
+    25
+},
+
+
+pumpkin:
+{
+  id:
+    "pumpkin",
+
+  name:
+    "Pumpkin & Winter Squash",
+
+  plantingCost:
+    50,
+
+  growthSeconds:
+    360,
+
+  harvestPounds:
+    45
+}
 
 },
 
@@ -1772,6 +1772,216 @@ function(
 
 
 
+runEastPastureGrowthCropStrategy:
+
+function(
+  state
+){
+
+  /*
+    ==================================================
+    EAST PASTURE — GROWTH + CROP TEST
+    ==================================================
+
+    Phase 1:
+    Follow the validated Expansion path
+    until East Pasture is purchased.
+
+    Phase 2:
+    Continue strengthening the original
+    farm while also developing and using
+    the first crop plot.
+
+    This is a combined stress test.
+  */
+
+
+  /*
+    PHASE 1
+
+    Reach East Pasture first.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 1
+
+    Unlock Crop Plot Level 1
+    as the first East Pasture
+    side investment.
+  */
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    this.unlockEastPastureCropPlot(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 2
+
+    Keep the crop plot active.
+
+    For this test we use Sunflower
+    repeatedly.
+  */
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  if(
+    plot.harvestReady === true
+  ){
+
+    this.harvestCrop(
+      state
+    );
+
+    return;
+
+  }
+
+
+  if(
+    plot.plantedCrop === null
+  ){
+
+    this.plantCrop(
+      state,
+      "sunflower"
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 3
+
+    Continue upgrading the
+    original coop from 25
+    to 50 capacity.
+  */
+
+  if(
+    state.coopCapacity <
+    50
+  ){
+
+    this.upgradeCoop(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 4
+
+    Purchase Production Level 3.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    this.upgradeProduction(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 5
+
+    Upgrade the truck from
+    250 to 500 capacity.
+  */
+
+  if(
+    state.truckCapacity <
+    500
+  ){
+
+    this.upgradeTruck(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 6
+
+    Continue expanding the
+    original flock to 40 hens.
+  */
+
+  if(
+    state.hens <
+    40
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    Stop spending after reaching
+    40 hens.
+
+    We want to isolate the effect
+    of continued flock growth plus
+    repeated crop production.
+  */
+
+},
+
 
 runEastPastureCropLoopStrategy:
 
@@ -2930,7 +3140,16 @@ function(
           state
        );
 
-  break;
+       break;
+
+
+      case "eastPastureGrowthCrop":
+
+       this.runEastPastureGrowthCropStrategy(
+         state
+       );
+
+  break; 
 
 
     default:
