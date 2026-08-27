@@ -270,6 +270,37 @@ Locked
 
 
 
+<div class="development-card">
+
+<h3>
+🚚 Transportation
+</h3>
+
+<p>
+Truck Capacity:
+<br>
+<span id="truck-capacity"></span>
+eggs
+</p>
+
+<p>
+Next Upgrade:
+<br>
+<span id="truck-upgrade"></span>
+</p>
+
+<button
+id="upgrade-truck-button"
+class="game-button upgrade-button"
+>
+
+Upgrade Truck
+
+</button>
+
+</div>
+
+
 
 <div class="development-card">
 
@@ -1031,6 +1062,76 @@ if(
   {
 
     eggValueUpgrade.textContent =
+      "Maximum Level";
+
+  }
+
+}
+
+
+const truckCapacity =
+  document.getElementById(
+    "truck-capacity"
+  );
+
+
+if(
+  truckCapacity
+){
+
+  truckCapacity.textContent =
+    state.truckCapacity;
+
+}
+
+
+
+const truckUpgrade =
+  document.getElementById(
+    "truck-upgrade"
+  );
+
+
+if(
+  truckUpgrade
+){
+
+  const nextTruckUpgrade =
+    BCPChickenGame.config
+      .transportation
+      .upgrades
+      .find(
+        function(
+          upgrade
+        ){
+
+          return (
+            upgrade.capacity >
+            state.truckCapacity
+          );
+
+        }
+      );
+
+
+  if(
+    nextTruckUpgrade
+  ){
+
+    truckUpgrade.textContent =
+      "Level " +
+      nextTruckUpgrade.level +
+      " - $" +
+      nextTruckUpgrade.cost +
+      " → " +
+      nextTruckUpgrade.capacity +
+      " eggs";
+
+  }
+  else
+  {
+
+    truckUpgrade.textContent =
       "Maximum Level";
 
   }
