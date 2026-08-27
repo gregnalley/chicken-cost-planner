@@ -1404,6 +1404,217 @@ function(
 
 
 
+runEastPastureGrowthStrategy:
+
+function(
+  state
+){
+
+  /*
+    ==================================================
+    EAST PASTURE — CONTINUED GROWTH TEST
+    ==================================================
+
+    Phase 1:
+    Follow the validated aggressive
+    Expansion path until East Pasture
+    is purchased.
+
+    Phase 2:
+    Continue investing in the original
+    farm before developing the new barns.
+
+    Test sequence:
+
+    1. Upgrade coop from 25 to 50.
+    2. Buy Production Level 3.
+    3. Upgrade truck from 250 to 500.
+    4. Grow flock to 40 hens.
+    5. Repair Barn A.
+    6. Convert Barn A to Farm Store.
+    7. Stop spending.
+
+    This is a stress test, not a claim
+    that this is the "correct" way to play.
+  */
+
+
+  /*
+    PHASE 1
+
+    Reach East Pasture using the
+    validated Expansion strategy.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    this.runExpansionStrategy(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    PHASE 2 — STEP 1
+
+    Upgrade the original coop
+    from 25 to the next available
+    capacity level.
+  */
+
+  if(
+    state.coopCapacity <
+    50
+  ){
+
+    this.upgradeCoop(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 2
+
+    Purchase Production Level 3.
+
+    Levels 1 and 2 were already
+    purchased before East Pasture.
+  */
+
+  if(
+    state.nestingUpgradeIndex <
+    3
+  ){
+
+    this.upgradeProduction(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 3
+
+    Upgrade transportation from
+    the 250-capacity truck to the
+    next available truck.
+  */
+
+  if(
+    state.truckCapacity <
+    500
+  ){
+
+    this.upgradeTruck(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 4
+
+    Grow the original flock to
+    40 hens.
+
+    We stop short of the full
+    50-hen coop capacity for this
+    first Phase 2 stress test.
+  */
+
+  if(
+    state.hens <
+    40
+  ){
+
+    this.buyHen(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 5
+
+    Repair East Pasture Barn A.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .repaired !== true
+  ){
+
+    this.repairEastPastureBarnA(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    STEP 6
+
+    Convert Barn A into a
+    Level 1 Farm Store.
+  */
+
+  if(
+    state.eastPasture
+      .barnA
+      .use === null
+  ){
+
+    this.convertBarnAToFarmStore(
+      state
+    );
+
+    return;
+
+  }
+
+
+
+  /*
+    Stop spending here.
+
+    We want to measure what this
+    upgraded Phase 2 farm produces
+    at 40, 50 and 60 minutes.
+  */
+
+},
+
+
+
+
 unlockEastPastureCropPlot:
 
 function(
@@ -2232,7 +2443,16 @@ function(
          state
       );
 
-  break; 
+      break; 
+
+
+     case "eastPastureGrowth":
+
+       this.runEastPastureGrowthStrategy(
+        state
+      );
+
+      break; 
 
 
     default:
