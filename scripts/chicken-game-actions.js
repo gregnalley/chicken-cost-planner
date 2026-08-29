@@ -1236,6 +1236,154 @@ function(
 
 
 
+harvestCrop:
+
+function(
+  state
+){
+
+  /*
+    East Pasture Crop Plot
+    must exist and be unlocked.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true ||
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "East Pasture Crop Plot is not unlocked."
+
+    };
+
+  }
+
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  /*
+    Crop must be fully grown.
+  */
+
+  if(
+    plot.harvestReady !== true ||
+    plot.plantedCrop === null
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "No crop is ready to harvest."
+
+    };
+
+  }
+
+
+  const crop =
+    BCPChickenGame.config
+      .crops
+      .definitions[
+        plot.plantedCrop
+      ];
+
+
+  if(
+    !crop
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "Crop definition not found."
+
+    };
+
+  }
+
+
+  /*
+    Harvest becomes
+    supplemental chicken feed.
+  */
+
+  state.supplementalFeedAmount +=
+    crop.harvestPounds;
+
+
+  const harvestedCropName =
+    crop.name;
+
+
+  const harvestedPounds =
+    crop.harvestPounds;
+
+
+  /*
+    Clear the plot so another
+    crop can be planted manually.
+  */
+
+  plot.plantedCrop =
+    null;
+
+
+  plot.plantedSecond =
+    null;
+
+
+  plot.harvestSecond =
+    null;
+
+
+  plot.harvestReady =
+    false;
+
+
+  return {
+
+    success:
+      true,
+
+    cropName:
+      harvestedCropName,
+
+    harvestPounds:
+      harvestedPounds,
+
+    supplementalFeedAmount:
+      state.supplementalFeedAmount,
+
+    message:
+      "Harvested " +
+      harvestedCropName +
+      " - " +
+      harvestedPounds +
+      " lb supplemental feed."
+
+  };
+
+},
+
+
 };
 
 
