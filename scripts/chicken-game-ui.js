@@ -1793,6 +1793,37 @@ if(
 
 
 
+const unlockCropPlotButton =
+  document.getElementById(
+    "unlock-crop-plot-button"
+  );
+
+
+if(
+  unlockCropPlotButton
+){
+
+  unlockCropPlotButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .unlockEastPastureCropPlot(
+        state
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+
+
   }
 
 
