@@ -1065,8 +1065,176 @@ function(
       "East Pasture Crop Plot unlocked."
 
   }
-  
+
 },
+
+
+plantCrop:
+
+function(
+  state,
+  cropId
+){
+
+  /*
+    East Pasture and the Crop Plot
+    must already be unlocked.
+  */
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true ||
+    state.eastPasture
+      .cropPlot
+      .unlocked !== true
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "East Pasture Crop Plot is not unlocked."
+
+    };
+
+  }
+
+
+  const plot =
+    state.eastPasture
+      .cropPlot;
+
+
+  /*
+    Only one crop can occupy
+    the plot at a time.
+  */
+
+  if(
+    plot.plantedCrop !== null
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "A crop is already planted."
+
+    };
+
+  }
+
+
+  /*
+    Find the selected crop in
+    the game configuration.
+  */
+
+  const crop =
+    BCPChickenGame.config
+      .crops
+      .definitions[
+        cropId
+      ];
+
+
+  if(
+    !crop
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "Crop not found."
+
+    };
+
+  }
+
+
+  /*
+    Player must be able to
+    afford the planting cost.
+  */
+
+  if(
+    state.money <
+    crop.plantingCost
+  ){
+
+    return {
+
+      success:
+        false,
+
+      message:
+        "Not enough money to plant " +
+        crop.name +
+        "."
+
+    };
+
+  }
+
+
+  state.money -=
+    crop.plantingCost;
+
+
+  plot.plantedCrop =
+    crop.id;
+
+
+  plot.plantedSecond =
+    state.elapsedSeconds;
+
+
+  plot.harvestSecond =
+    state.elapsedSeconds +
+    crop.growthSeconds;
+
+
+  plot.harvestReady =
+    false;
+
+
+  return {
+
+    success:
+      true,
+
+    cropId:
+      crop.id,
+
+    cropName:
+      crop.name,
+
+    cost:
+      crop.plantingCost,
+
+    plantedSecond:
+      plot.plantedSecond,
+
+    harvestSecond:
+      plot.harvestSecond,
+
+    message:
+      "Planted " +
+      crop.name +
+      "."
+
+  };
+
+},
+
+
 
 };
 
