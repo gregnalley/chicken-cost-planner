@@ -234,6 +234,64 @@ BCPChickenGame.engine = {
 
 
 
+    processCropGrowth:
+
+  function(
+    state
+  ){
+
+
+    if(
+      !state.eastPasture ||
+      state.eastPasture.unlocked !== true
+    ){
+
+      return;
+
+    }
+
+
+    const plot =
+      state.eastPasture
+        .cropPlot;
+
+
+    if(
+      !plot ||
+      plot.unlocked !== true
+    ){
+
+      return;
+
+    }
+
+
+    if(
+      plot.plantedCrop === null ||
+      plot.harvestReady === true ||
+      plot.harvestSecond === null
+    ){
+
+      return;
+
+    }
+
+
+    if(
+      state.elapsedSeconds >=
+      plot.harvestSecond
+    ){
+
+      plot.harvestReady =
+        true;
+
+    }
+
+
+  },
+
+
+
   tick:
 
   function(){
@@ -313,6 +371,11 @@ BCPChickenGame.engine = {
 
 
     this.updateDayPhase(
+      state
+    );
+
+
+    this.processCropGrowth(
       state
     );
 
