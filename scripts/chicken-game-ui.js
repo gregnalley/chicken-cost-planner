@@ -2051,6 +2051,102 @@ if(
 
 
 
+const plantKaleButton =
+  document.getElementById(
+    "plant-kale-button"
+  );
+
+
+if(
+  plantKaleButton
+){
+
+  plantKaleButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .plantCrop(
+        state,
+        "kale"
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+
+
+const plantSunflowerButton =
+  document.getElementById(
+    "plant-sunflower-button"
+  );
+
+
+if(
+  plantSunflowerButton
+){
+
+  plantSunflowerButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .plantCrop(
+        state,
+        "sunflower"
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+
+
+const plantPumpkinButton =
+  document.getElementById(
+    "plant-pumpkin-button"
+  );
+
+
+if(
+  plantPumpkinButton
+){
+
+  plantPumpkinButton.onclick =
+
+  function(){
+
+
+    BCPChickenGame.actions
+      .plantCrop(
+        state,
+        "pumpkin"
+      );
+
+
+    BCPChickenGame.ui.update();
+
+
+  };
+
+
+}
+
+
+
   }
 
 
