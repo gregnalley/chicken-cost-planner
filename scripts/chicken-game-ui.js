@@ -1291,6 +1291,149 @@ else
 }
 
 
+const cropPlotCard =
+  document.getElementById(
+    "east-pasture-crop-card"
+  );
+
+
+const cropPlotStatus =
+  document.getElementById(
+    "crop-plot-status"
+  );
+
+
+const cropPlotCost =
+  document.getElementById(
+    "crop-plot-cost"
+  );
+
+
+const unlockCropPlotButton =
+  document.getElementById(
+    "unlock-crop-plot-button"
+  );
+
+
+const cropPlotConfig =
+  BCPChickenGame.config
+    .crops
+    .eastPastureCropPlot;
+
+
+if(
+  cropPlotCard
+){
+
+  if(
+    !state.eastPasture ||
+    state.eastPasture.unlocked !== true
+  ){
+
+    cropPlotCard.style.display =
+      "none";
+
+  }
+  else
+  {
+
+    cropPlotCard.style.display =
+      "";
+
+  }
+
+}
+
+
+if(
+  state.eastPasture &&
+  state.eastPasture.unlocked === true
+){
+
+  if(
+    state.eastPasture
+      .cropPlot
+      .unlocked === true
+  ){
+
+    if(
+      cropPlotStatus
+    ){
+
+      cropPlotStatus.textContent =
+        "Unlocked - Level " +
+        state.eastPasture
+          .cropPlot
+          .level;
+
+    }
+
+
+    if(
+      cropPlotCost
+    ){
+
+      cropPlotCost.textContent =
+        "Purchased";
+
+    }
+
+
+    if(
+      unlockCropPlotButton
+    ){
+
+      unlockCropPlotButton.disabled =
+        true;
+
+      unlockCropPlotButton.textContent =
+        "Crop Plot Unlocked";
+
+    }
+
+  }
+  else
+  {
+
+    if(
+      cropPlotStatus
+    ){
+
+      cropPlotStatus.textContent =
+        "Available";
+
+    }
+
+
+    if(
+      cropPlotCost
+    ){
+
+      cropPlotCost.textContent =
+        "$" +
+        cropPlotConfig.unlockCost;
+
+    }
+
+
+    if(
+      unlockCropPlotButton
+    ){
+
+      unlockCropPlotButton.disabled =
+        false;
+
+      unlockCropPlotButton.textContent =
+        "Unlock Crop Plot";
+
+    }
+
+  }
+
+}
+
+
+
   },
 
 
