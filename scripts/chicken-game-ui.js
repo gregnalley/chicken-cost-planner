@@ -277,6 +277,16 @@ Not Planted
 </span>
 </p>
 
+
+<button
+id="harvest-crop-button"
+class="game-button upgrade-button"
+>
+
+Harvest Crop
+
+</button>
+
 </div>
 
 
@@ -1523,6 +1533,12 @@ const plantPumpkinButton =
   );
 
 
+const harvestCropButton =
+  document.getElementById(
+    "harvest-crop-button"
+  ); 
+
+
 const cropPlot =
   state.eastPasture &&
   state.eastPasture.cropPlot
@@ -1618,6 +1634,41 @@ if(
 
       cropGrowthStatus.textContent =
         "Not Planted";
+
+    }
+
+  }
+
+
+    if(
+    harvestCropButton
+  ){
+
+    harvestCropButton.disabled =
+      cropPlot.harvestReady !== true;
+
+
+    if(
+      cropPlot.harvestReady === true
+    ){
+
+      harvestCropButton.textContent =
+        "Harvest Crop";
+
+    }
+    else if(
+      cropPlot.plantedCrop !== null
+    ){
+
+      harvestCropButton.textContent =
+        "Crop Growing";
+
+    }
+    else
+    {
+
+      harvestCropButton.textContent =
+        "Nothing to Harvest";
 
     }
 
