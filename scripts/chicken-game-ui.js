@@ -227,6 +227,59 @@ Unlock Crop Plot
 
 </button>
 
+
+<div id="crop-planting-controls">
+
+<p>
+Plant Crop:
+</p>
+
+<button
+id="plant-kale-button"
+class="game-button"
+>
+
+Plant Kale
+
+</button>
+
+<button
+id="plant-sunflower-button"
+class="game-button"
+>
+
+Plant Sunflower
+
+</button>
+
+<button
+id="plant-pumpkin-button"
+class="game-button"
+>
+
+Plant Pumpkin & Winter Squash
+
+</button>
+
+<p>
+Current Crop:
+<br>
+<span id="current-crop">
+None
+</span>
+</p>
+
+<p>
+Crop Status:
+<br>
+<span id="crop-growth-status">
+Not Planted
+</span>
+</p>
+
+</div>
+
+
 </div>
 
 
@@ -1427,6 +1480,180 @@ if(
         "Unlock Crop Plot";
 
     }
+
+  }
+
+}
+
+
+
+const cropPlantingControls =
+  document.getElementById(
+    "crop-planting-controls"
+  );
+
+
+const currentCrop =
+  document.getElementById(
+    "current-crop"
+  );
+
+
+const cropGrowthStatus =
+  document.getElementById(
+    "crop-growth-status"
+  );
+
+
+const plantKaleButton =
+  document.getElementById(
+    "plant-kale-button"
+  );
+
+
+const plantSunflowerButton =
+  document.getElementById(
+    "plant-sunflower-button"
+  );
+
+
+const plantPumpkinButton =
+  document.getElementById(
+    "plant-pumpkin-button"
+  );
+
+
+const cropPlot =
+  state.eastPasture &&
+  state.eastPasture.cropPlot
+    ? state.eastPasture.cropPlot
+    : null;
+
+
+if(
+  cropPlantingControls
+){
+
+  if(
+    !cropPlot ||
+    cropPlot.unlocked !== true
+  ){
+
+    cropPlantingControls.style.display =
+      "none";
+
+  }
+  else
+  {
+
+    cropPlantingControls.style.display =
+      "";
+
+  }
+
+}
+
+
+if(
+  cropPlot &&
+  cropPlot.unlocked === true
+){
+
+  const plantedCropDefinition =
+    cropPlot.plantedCrop
+      ? BCPChickenGame.config
+          .crops
+          .definitions[
+            cropPlot.plantedCrop
+          ]
+      : null;
+
+
+  if(
+    currentCrop
+  ){
+
+    currentCrop.textContent =
+      plantedCropDefinition
+        ? plantedCropDefinition.name
+        : "None";
+
+  }
+
+
+  if(
+    cropGrowthStatus
+  ){
+
+    if(
+      cropPlot.harvestReady === true
+    ){
+
+      cropGrowthStatus.textContent =
+        "Ready to Harvest";
+
+    }
+    else if(
+      plantedCropDefinition
+    ){
+
+      const remainingSeconds =
+        Math.max(
+          0,
+          cropPlot.harvestSecond -
+          state.elapsedSeconds
+        );
+
+
+      cropGrowthStatus.textContent =
+        "Growing - " +
+        Math.ceil(
+          remainingSeconds
+        ) +
+        " sec remaining";
+
+    }
+    else
+    {
+
+      cropGrowthStatus.textContent =
+        "Not Planted";
+
+    }
+
+  }
+
+
+  const cropIsPlanted =
+    cropPlot.plantedCrop !== null;
+
+
+  if(
+    plantKaleButton
+  ){
+
+    plantKaleButton.disabled =
+      cropIsPlanted;
+
+  }
+
+
+  if(
+    plantSunflowerButton
+  ){
+
+    plantSunflowerButton.disabled =
+      cropIsPlanted;
+
+  }
+
+
+  if(
+    plantPumpkinButton
+  ){
+
+    plantPumpkinButton.disabled =
+      cropIsPlanted;
 
   }
 
